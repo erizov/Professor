@@ -1,17 +1,276 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Strategy Pattern implementation."""
+"""
+Strategy Design Pattern.
+
+Defines a family of algorithms, encapsulates each one, and makes them
+interchangeable. Strategy lets the algorithm vary independently from
+clients that use it.
+"""
+
+import sys
+from pathlib import Path
+from abc import ABC, abstractmethod
+from typing import List
+
+sys.path.append(str(Path(__file__).parent.parent.parent.parent))
+from framework.performance_timer import PerformanceTimer
 
 
-def strategy():
-    """Implement Strategy Pattern."""
-    print("==" * 35)
-    print("Strategy Pattern")
-    print("==" * 35)
-    print(f"Time Complexity: O(1)")
-    print(f"Space Complexity: O(1)")
-    print("==" * 35)
+# Strategy Interface
+class PaymentStrategy(ABC):
+    """Abstract payment strategy."""
+    
+    @abstractmethod
+    def pay(self, amount: float) -> bool:
+        """Process payment."""
+        pass
+    
+    @abstractmethod
+    def get_name(self) -> str:
+        """Get strategy name."""
+        pass
+
+
+# Concrete Strategies
+class CreditCardStrategy(PaymentStrategy):
+    """Credit card payment strategy."""
+    
+    def __init__(self, card_number: str, cvv: str):
+        self.card_number = card_number
+        self.cvv = cvv
+    
+    def pay(self, amount: float) -> bool:
+        """Process credit card payment."""
+        print(f"Processing ${amount:.2f} payment using Credit Card")
+        print(f"Card: ****{self.card_number[-4:]}")
+        return True
+    
+    def get_name(self) -> str:
+        return "Credit Card"
+
+
+class PayPalStrategy(PaymentStrategy):
+    """PayPal payment strategy."""
+    
+    def __init__(self, email: str):
+        self.email = email
+    
+    def pay(self, amount: float) -> bool:
+        """Process PayPal payment."""
+        print(f"Processing ${amount:.2f} payment using PayPal")
+        print(f"Email: {self.email}")
+        return True
+    
+    def get_name(self) -> str:
+        return "PayPal"
+
+
+class CryptocurrencyStrategy(PaymentStrategy):
+    """Cryptocurrency payment strategy."""
+    
+    def __init__(self, wallet_address: str):
+        self.wallet_address = wallet_address
+    
+    def pay(self, amount: float) -> bool:
+        """Process cryptocurrency payment."""
+        print(f"Processing ${amount:.2f} payment using Cryptocurrency")
+        print(f"Wallet: {self.wallet_address[:10]}...")
+        return True
+    
+    def get_name(self) -> str:
+        return "Cryptocurrency"
+
+
+# Context
+class PaymentProcessor:
+    """Payment processor context."""
+    
+    def __init__(self, strategy: PaymentStrategy = None):
+        self.strategy = strategy
+    
+    def set_strategy(self, strategy: PaymentStrategy) -> None:
+        """Set payment strategy."""
+        self.strategy = strategy
+    
+    def process_payment(self, amount: float) -> bool:
+        """Process payment using current strategy."""
+        if not self.strategy:
+            raise ValueError("No payment strategy set")
+        return self.strategy.pay(amount)
+
+
+# Example 2: Sorting Strategy
+class SortingStrategy(ABC):
+    """Abstract sorting strategy."""
+    
+    @abstractmethod
+    def sort(self, data: List[int]) -> List[int]:
+        """Sort the data."""
+        pass
+
+
+class QuickSortStrategy(SortingStrategy):
+    """Quick sort strategy."""
+    
+    def sort(self, data: List[int]) -> List[int]:
+        """Sort using quick sort."""
+        if len(data) <= 1:
+            return data
+        
+        pivot = data[len(data) // 2]
+        left = [x for x in data if x < pivot]
+        middle = [x for x in data if x == pivot]
+        right = [x for x in data if x > pivot]
+        
+        return self.sort(left) + middle + self.sort(right)
+
+
+class MergeSortStrategy(SortingStrategy):
+    """Merge sort strategy."""
+    
+    def sort(self, data: List[int]) -> List[int]:
+        """Sort using merge sort."""
+        if len(data) <= 1:
+            return data
+        
+        mid = len(data) // 2
+        left = self.sort(data[:mid])
+        right = self.sort(data[mid:])
+        
+        return self._merge(left, right)
+    
+    def _merge(self, left: List[int], right: List[int]) -> List[int]:
+        """Merge two sorted lists."""
+        result = []
+        i = j = 0
+        
+        while i < len(left) and j < len(right):
+            if left[i] <= right[j]:
+                result.append(left[i])
+                i += 1
+            else:
+                result.append(right[j])
+                j += 1
+        
+        result.extend(left[i:])
+        result.extend(right[j:])
+        return result
+
+
+class Sorter:
+    """Sorter context."""
+    
+    def __init__(self, strategy: SortingStrategy):
+        self.strategy = strategy
+    
+    def set_strategy(self, strategy: SortingStrategy) -> None:
+        """Set sorting strategy."""
+        self.strategy = strategy
+    
+    def sort_data(self, data: List[int]) -> List[int]:
+        """Sort data using current strategy."""
+        return self.strategy.sort(data)
+
+
+def main() -> None:
+    """Demonstration of Strategy Pattern."""
+    print("=" * 70)
+    print("STRATEGY DESIGN PATTERN DEMONSTRATION")
+    print("=" * 70)
+    print()
+    
+    # Example 1: Payment Strategy
+    print("Example 1: Payment Strategy")
+    print("-" * 70)
+    
+    processor = PaymentProcessor()
+    
+    # Use credit card
+    processor.set_strategy(CreditCardStrategy("1234567890123456", "123"))
+    processor.process_payment(100.0)
+    print()
+    
+    # Switch to PayPal
+    processor.set_strategy(PayPalStrategy("user@paypal.com"))
+    processor.process_payment(50.0)
+    print()
+    
+    # Switch to cryptocurrency
+    processor.set_strategy(
+        CryptocurrencyStrategy("1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa")
+    )
+    processor.process_payment(25.0)
+    print()
+    
+    # Example 2: Sorting Strategy
+    print("Example 2: Sorting Strategy")
+    print("-" * 70)
+    
+    data = [64, 34, 25, 12, 22, 11, 90]
+    print(f"Original data: {data}")
+    
+    # Use quick sort
+    sorter = Sorter(QuickSortStrategy())
+    sorted_data = sorter.sort_data(data.copy())
+    print(f"Quick sorted: {sorted_data}")
+    
+    # Switch to merge sort
+    sorter.set_strategy(MergeSortStrategy())
+    sorted_data = sorter.sort_data(data.copy())
+    print(f"Merge sorted: {sorted_data}")
+    print()
+    
+    # Example 3: Performance measurement
+    print("Example 3: Performance Measurement")
+    print("-" * 70)
+    
+    timer = PerformanceTimer("Strategy")
+    
+    large_data = list(range(1000, 0, -1))
+    
+    def quick_sort_operation():
+        sorter = Sorter(QuickSortStrategy())
+        return sorter.sort_data(large_data.copy())
+    
+    def merge_sort_operation():
+        sorter = Sorter(MergeSortStrategy())
+        return sorter.sort_data(large_data.copy())
+    
+    result1, metrics1 = timer.measure(quick_sort_operation)
+    print(f"Quick Sort: {metrics1['execution_time_ms']:.3f} ms")
+    
+    result2, metrics2 = timer.measure(merge_sort_operation)
+    print(f"Merge Sort: {metrics2['execution_time_ms']:.3f} ms")
+    print()
+    
+    print("=" * 70)
+    print("\nPattern Summary:")
+    print("\nIntent:")
+    print("  Define a family of algorithms, encapsulate each one, and")
+    print("  make them interchangeable. Strategy lets the algorithm")
+    print("  vary independently from clients that use it.")
+    print("\nKey Advantages:")
+    print("  - Algorithms can be swapped at runtime")
+    print("  - Eliminates conditional statements")
+    print("  - Open/Closed Principle")
+    print("  - Easy to add new strategies")
+    print("\nKey Disadvantages:")
+    print("  - Clients must know about strategies")
+    print("  - Increased number of classes")
+    print("  - Communication overhead")
+    print("\nWhen to Use:")
+    print("  - Multiple ways to perform a task")
+    print("  - Want to avoid conditional statements")
+    print("  - Algorithms should be interchangeable")
+    print("  - Need runtime algorithm selection")
+    print("\nCommon Use Cases:")
+    print("  - Payment processing")
+    print("  - Sorting algorithms")
+    print("  - Compression algorithms")
+    print("  - Validation strategies")
+    print("=" * 70)
 
 
 if __name__ == "__main__":
-    strategy()
+    main()
