@@ -1,17 +1,353 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Load Balancing implementation."""
+"""
+Load Balancing Pattern.
+
+Distributes incoming requests across multiple servers to optimize
+resource utilization, maximize throughput, and minimize response time.
+"""
+
+import sys
+from pathlib import Path
+from abc import ABC, abstractmethod
+from typing import List, Optional
+from dataclasses import dataclass
+from enum import Enum
+import random
+import time
+
+sys.path.append(str(Path(__file__).parent.parent.parent.parent))
+from framework.performance_timer import PerformanceTimer
 
 
-def load_balancing():
-    """Implement Load Balancing."""
-    print("==" * 35)
-    print("Load Balancing")
-    print("==" * 35)
-    print(f"Time Complexity: O(1)")
-    print(f"Space Complexity: O(n)")
-    print("==" * 35)
+class LoadBalancingStrategy(Enum):
+    """Load balancing strategies."""
+    ROUND_ROBIN = "round_robin"
+    LEAST_CONNECTIONS = "least_connections"
+    WEIGHTED_ROUND_ROBIN = "weighted_round_robin"
+    RANDOM = "random"
+    IP_HASH = "ip_hash"
+
+
+@dataclass
+class Server:
+    """Server representation."""
+    id: str
+    address: str
+    weight: int = 1
+    active_connections: int = 0
+    is_healthy: bool = True
+    
+    def __str__(self) -> str:
+        return f"Server({self.id}, connections={self.active_connections}, healthy={self.is_healthy})"
+
+
+class LoadBalancer(ABC):
+    """Abstract load balancer."""
+    
+    def __init__(self, servers: List[Server]):
+        """
+        Initialize load balancer.
+        
+        Args:
+            servers: List of servers
+        """
+        self.servers = servers
+        self.current_index = 0
+    
+    @abstractmethod
+    def select_server(self, client_ip: str = None) -> Optional[Server]:
+        """
+        Select server for request.
+        
+        Args:
+            client_ip: Client IP address (for IP hash strategy)
+            
+        Returns:
+            Selected server or None if no healthy servers
+        """
+        pass
+    
+    def get_healthy_servers(self) -> List[Server]:
+        """Get list of healthy servers."""
+        return [s for s in self.servers if s.is_healthy]
+    
+    def mark_server_unhealthy(self, server_id: str) -> None:
+        """Mark server as unhealthy."""
+        for server in self.servers:
+            if server.id == server_id:
+                server.is_healthy = False
+    
+    def mark_server_healthy(self, server_id: str) -> None:
+        """Mark server as healthy."""
+        for server in self.servers:
+            if server.id == server_id:
+                server.is_healthy = True
+
+
+class RoundRobinLoadBalancer(LoadBalancer):
+    """Round-robin load balancer."""
+    
+    def select_server(self, client_ip: str = None) -> Optional[Server]:
+        """Select server using round-robin."""
+        healthy = self.get_healthy_servers()
+        if not healthy:
+            return None
+        
+        server = healthy[self.current_index % len(healthy)]
+        self.current_index += 1
+        return server
+
+
+class LeastConnectionsLoadBalancer(LoadBalancer):
+    """Least connections load balancer."""
+    
+    def select_server(self, client_ip: str = None) -> Optional[Server]:
+        """Select server with least connections."""
+        healthy = self.get_healthy_servers()
+        if not healthy:
+            return None
+        
+        return min(healthy, key=lambda s: s.active_connections)
+
+
+class WeightedRoundRobinLoadBalancer(LoadBalancer):
+    """Weighted round-robin load balancer."""
+    
+    def __init__(self, servers: List[Server]):
+        super().__init__(servers)
+        self.current_weight = 0
+        self.gcd = self._calculate_gcd([s.weight for s in servers])
+        self.max_weight = max(s.weight for s in servers) if servers else 0
+    
+    def _calculate_gcd(self, weights: List[int]) -> int:
+        """Calculate greatest common divisor."""
+        def gcd(a: int, b: int) -> int:
+            while b:
+                a, b = b, a % b
+            return a
+        
+        result = weights[0] if weights else 1
+        for w in weights[1:]:
+            result = gcd(result, w)
+        return result
+    
+    def select_server(self, client_ip: str = None) -> Optional[Server]:
+        """Select server using weighted round-robin."""
+        healthy = self.get_healthy_servers()
+        if not healthy:
+            return None
+        
+        while True:
+            self.current_index = (self.current_index + 1) % len(healthy)
+            if self.current_index == 0:
+                self.current_weight -= self.gcd
+                if self.current_weight <= 0:
+                    self.current_weight = self.max_weight
+            
+            if healthy[self.current_index].weight >= self.current_weight:
+                return healthy[self.current_index]
+
+
+class RandomLoadBalancer(LoadBalancer):
+    """Random load balancer."""
+    
+    def select_server(self, client_ip: str = None) -> Optional[Server]:
+        """Select random server."""
+        healthy = self.get_healthy_servers()
+        if not healthy:
+            return None
+        
+        return random.choice(healthy)
+
+
+class IPHashLoadBalancer(LoadBalancer):
+    """IP hash load balancer."""
+    
+    def select_server(self, client_ip: str = None) -> Optional[Server]:
+        """Select server based on IP hash."""
+        healthy = self.get_healthy_servers()
+        if not healthy:
+            return None
+        
+        if client_ip is None:
+            client_ip = "0.0.0.0"
+        
+        # Simple hash function
+        hash_value = hash(client_ip)
+        index = abs(hash_value) % len(healthy)
+        return healthy[index]
+
+
+class LoadBalancerFactory:
+    """Factory for creating load balancers."""
+    
+    @staticmethod
+    def create(strategy: LoadBalancingStrategy, servers: List[Server]) -> LoadBalancer:
+        """Create load balancer with specified strategy."""
+        if strategy == LoadBalancingStrategy.ROUND_ROBIN:
+            return RoundRobinLoadBalancer(servers)
+        elif strategy == LoadBalancingStrategy.LEAST_CONNECTIONS:
+            return LeastConnectionsLoadBalancer(servers)
+        elif strategy == LoadBalancingStrategy.WEIGHTED_ROUND_ROBIN:
+            return WeightedRoundRobinLoadBalancer(servers)
+        elif strategy == LoadBalancingStrategy.RANDOM:
+            return RandomLoadBalancer(servers)
+        elif strategy == LoadBalancingStrategy.IP_HASH:
+            return IPHashLoadBalancer(servers)
+        else:
+            raise ValueError(f"Unknown strategy: {strategy}")
+
+
+def main() -> None:
+    """Demonstration of Load Balancing Pattern."""
+    print("=" * 70)
+    print("LOAD BALANCING PATTERN DEMONSTRATION")
+    print("=" * 70)
+    print()
+    
+    # Example 1: Round-Robin Load Balancing
+    print("Example 1: Round-Robin Load Balancing")
+    print("-" * 70)
+    
+    servers = [
+        Server("server1", "192.168.1.1"),
+        Server("server2", "192.168.1.2"),
+        Server("server3", "192.168.1.3"),
+    ]
+    
+    lb = RoundRobinLoadBalancer(servers)
+    
+    print("Distributing 10 requests:")
+    for i in range(10):
+        server = lb.select_server()
+        server.active_connections += 1
+        print(f"  Request {i+1} -> {server.id} (connections: {server.active_connections})")
+    print()
+    
+    # Example 2: Least Connections
+    print("Example 2: Least Connections Load Balancing")
+    print("-" * 70)
+    
+    servers = [
+        Server("server1", "192.168.1.1", active_connections=5),
+        Server("server2", "192.168.1.2", active_connections=2),
+        Server("server3", "192.168.1.3", active_connections=8),
+    ]
+    
+    lb = LeastConnectionsLoadBalancer(servers)
+    
+    print("Distributing 5 requests:")
+    for i in range(5):
+        server = lb.select_server()
+        server.active_connections += 1
+        print(f"  Request {i+1} -> {server.id} (connections: {server.active_connections})")
+    print()
+    
+    # Example 3: Weighted Round-Robin
+    print("Example 3: Weighted Round-Robin Load Balancing")
+    print("-" * 70)
+    
+    servers = [
+        Server("server1", "192.168.1.1", weight=3),
+        Server("server2", "192.168.1.2", weight=2),
+        Server("server3", "192.168.1.3", weight=1),
+    ]
+    
+    lb = WeightedRoundRobinLoadBalancer(servers)
+    
+    print("Distributing 12 requests (weights: 3, 2, 1):")
+    distribution = {}
+    for i in range(12):
+        server = lb.select_server()
+        distribution[server.id] = distribution.get(server.id, 0) + 1
+        print(f"  Request {i+1} -> {server.id}")
+    
+    print("\nDistribution summary:")
+    for server_id, count in distribution.items():
+        print(f"  {server_id}: {count} requests")
+    print()
+    
+    # Example 4: Health Checks
+    print("Example 4: Health Checks and Failover")
+    print("-" * 70)
+    
+    servers = [
+        Server("server1", "192.168.1.1"),
+        Server("server2", "192.168.1.2"),
+        Server("server3", "192.168.1.3"),
+    ]
+    
+    lb = RoundRobinLoadBalancer(servers)
+    
+    print("Marking server2 as unhealthy:")
+    lb.mark_server_unhealthy("server2")
+    
+    print("Distributing 6 requests:")
+    for i in range(6):
+        server = lb.select_server()
+        if server:
+            print(f"  Request {i+1} -> {server.id}")
+        else:
+            print(f"  Request {i+1} -> No healthy servers")
+    print()
+    
+    # Example 5: Performance measurement
+    print("Example 5: Performance Measurement")
+    print("-" * 70)
+    
+    timer = PerformanceTimer("Load Balancing")
+    
+    def load_balancing_operations():
+        servers = [Server(f"server{i}", f"192.168.1.{i}") for i in range(1, 11)]
+        lb = RoundRobinLoadBalancer(servers)
+        
+        for _ in range(1000):
+            server = lb.select_server()
+            if server:
+                server.active_connections += 1
+        
+        return sum(s.active_connections for s in servers)
+    
+    result, metrics = timer.measure(load_balancing_operations)
+    print(f"Time to distribute 1000 requests: {metrics['execution_time_ms']:.3f} ms")
+    print(f"Total connections: {result}")
+    print()
+    
+    print("=" * 70)
+    print("\nPattern Summary:")
+    print("\nIntent:")
+    print("  Distributes incoming requests across multiple servers to")
+    print("  optimize resource utilization, maximize throughput, and")
+    print("  minimize response time.")
+    print("\nKey Advantages:")
+    print("  - Improved performance")
+    print("  - High availability")
+    print("  - Scalability")
+    print("  - Fault tolerance")
+    print("\nKey Disadvantages:")
+    print("  - Additional infrastructure")
+    print("  - Session affinity challenges")
+    print("  - Configuration complexity")
+    print("  - Single point of failure (if not redundant)")
+    print("\nWhen to Use:")
+    print("  - Multiple server instances")
+    print("  - High traffic applications")
+    print("  - Need for high availability")
+    print("  - Horizontal scaling")
+    print("\nCommon Use Cases:")
+    print("  - Web servers")
+    print("  - Application servers")
+    print("  - Database servers")
+    print("  - API gateways")
+    print("\nLoad Balancing Strategies:")
+    print("  - Round-Robin: Distribute sequentially")
+    print("  - Least Connections: Choose server with fewest connections")
+    print("  - Weighted Round-Robin: Distribute based on server capacity")
+    print("  - Random: Random selection")
+    print("  - IP Hash: Consistent hashing based on client IP")
+    print("=" * 70)
 
 
 if __name__ == "__main__":
-    load_balancing()
+    main()
