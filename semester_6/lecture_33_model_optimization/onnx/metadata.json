@@ -1,0 +1,14 @@
+{
+  "name": "ONNX Model Conversion",
+  "category": "Optimization",
+  "complexity": {
+    "time": "O(model_size)",
+    "space": "O(model_size)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

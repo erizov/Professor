@@ -1,0 +1,14 @@
+{
+  "name": "GloVe Embeddings",
+  "category": "NLP",
+  "complexity": {
+    "time": "O(V\u00b2*iterations)",
+    "space": "O(V*d)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

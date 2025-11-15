@@ -1,0 +1,14 @@
+{
+  "name": "Mobile Optimization",
+  "category": "Edge Computing",
+  "complexity": {
+    "time": "O(inference)",
+    "space": "O(mobile_model)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "low"
+  }
+}

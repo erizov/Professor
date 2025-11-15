@@ -1,0 +1,8 @@
+{
+  "name": "Decorator Pattern",
+  "category": "Structural Pattern",
+  "complexity": {
+    "time": "O(1)",
+    "space": "O(1)"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Deep Q-Network",
+  "category": "Reinforcement Learning",
+  "complexity": {
+    "time": "O(episodes*steps)",
+    "space": "O(replay_buffer)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

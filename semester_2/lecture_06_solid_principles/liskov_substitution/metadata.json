@@ -1,0 +1,8 @@
+{
+  "name": "Liskov Substitution Principle",
+  "category": "SOLID",
+  "complexity": {
+    "time": "N/A",
+    "space": "N/A"
+  }
+}

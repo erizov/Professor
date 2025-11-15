@@ -1,0 +1,14 @@
+{
+  "name": "Model Parallelism",
+  "category": "Distributed ML",
+  "complexity": {
+    "time": "O(n*layers/workers)",
+    "space": "O(model/workers)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": true,
+    "network_bandwidth": "medium"
+  }
+}

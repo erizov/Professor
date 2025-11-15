@@ -1,0 +1,8 @@
+{
+  "name": "Consistent Hashing",
+  "category": "Distributed Systems",
+  "complexity": {
+    "time": "O(log n)",
+    "space": "O(n)"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Grafana Dashboards",
+  "category": "Monitoring",
+  "complexity": {
+    "time": "O(queries)",
+    "space": "O(dashboards)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

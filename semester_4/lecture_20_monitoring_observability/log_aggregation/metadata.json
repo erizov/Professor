@@ -1,0 +1,8 @@
+{
+  "name": "Log Aggregation",
+  "category": "Observability",
+  "complexity": {
+    "time": "O(1)",
+    "space": "O(n)"
+  }
+}

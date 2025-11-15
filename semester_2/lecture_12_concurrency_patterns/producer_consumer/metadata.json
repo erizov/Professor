@@ -1,0 +1,8 @@
+{
+  "name": "Producer-Consumer Pattern",
+  "category": "Concurrency",
+  "complexity": {
+    "time": "O(1)",
+    "space": "O(n)"
+  }
+}

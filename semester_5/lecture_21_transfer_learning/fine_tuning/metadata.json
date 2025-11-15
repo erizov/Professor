@@ -1,0 +1,14 @@
+{
+  "name": "Fine-Tuning Pre-trained Models",
+  "category": "Deep Learning",
+  "complexity": {
+    "time": "O(n*d)",
+    "space": "O(d*h)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": true,
+    "gpu_recommended": true,
+    "network_bandwidth": "medium"
+  }
+}

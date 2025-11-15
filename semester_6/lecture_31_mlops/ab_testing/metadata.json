@@ -1,0 +1,14 @@
+{
+  "name": "A/B Testing for ML",
+  "category": "MLOps",
+  "complexity": {
+    "time": "O(requests)",
+    "space": "O(metrics)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": true,
+    "network_bandwidth": "medium"
+  }
+}

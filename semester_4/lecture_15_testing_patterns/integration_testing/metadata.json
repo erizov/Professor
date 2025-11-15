@@ -1,0 +1,8 @@
+{
+  "name": "Integration Testing",
+  "category": "Testing",
+  "complexity": {
+    "time": "O(n)",
+    "space": "O(1)"
+  }
+}

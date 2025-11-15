@@ -1,0 +1,8 @@
+{
+  "name": "Interpolation Search",
+  "category": "Searching",
+  "complexity": {
+    "time": "O(log log n)",
+    "space": "O(1)"
+  }
+}

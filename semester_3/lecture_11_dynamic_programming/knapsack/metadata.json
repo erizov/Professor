@@ -1,0 +1,8 @@
+{
+  "name": "Knapsack Problem",
+  "category": "Dynamic Programming",
+  "complexity": {
+    "time": "O(nW)",
+    "space": "O(nW)"
+  }
+}

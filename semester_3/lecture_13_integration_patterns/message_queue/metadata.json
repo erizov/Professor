@@ -1,0 +1,8 @@
+{
+  "name": "Message Queue Pattern",
+  "category": "Integration",
+  "complexity": {
+    "time": "O(1)",
+    "space": "O(n)"
+  }
+}

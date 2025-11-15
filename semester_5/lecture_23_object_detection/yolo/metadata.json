@@ -1,0 +1,14 @@
+{
+  "name": "YOLO Object Detection",
+  "category": "Computer Vision",
+  "complexity": {
+    "time": "O(S\u00b2*B*C)",
+    "space": "O(S\u00b2*B)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

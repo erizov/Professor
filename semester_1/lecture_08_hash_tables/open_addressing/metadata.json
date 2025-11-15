@@ -1,0 +1,8 @@
+{
+  "name": "Collision Resolution: Open Addressing",
+  "category": "Data Structure",
+  "complexity": {
+    "time": "O(1)",
+    "space": "O(n)"
+  }
+}

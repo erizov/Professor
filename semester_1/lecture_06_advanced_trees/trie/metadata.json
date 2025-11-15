@@ -1,0 +1,8 @@
+{
+  "name": "Trie",
+  "category": "Data Structure",
+  "complexity": {
+    "time": "O(m)",
+    "space": "O(n*m)"
+  }
+}

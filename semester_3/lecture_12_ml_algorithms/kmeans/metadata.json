@@ -1,0 +1,8 @@
+{
+  "name": "K-Means Clustering",
+  "category": "Machine Learning",
+  "complexity": {
+    "time": "O(nki)",
+    "space": "O(n + k)"
+  }
+}

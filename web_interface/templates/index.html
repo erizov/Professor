@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithms Course - Interactive Learning</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+        }
+        
+        .filters {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-group {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .filter-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        
+        .filter-group select, .filter-group input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        
+        .algorithms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .algorithm-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        
+        .algorithm-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .algorithm-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 15px;
+        }
+        
+        .algorithm-title {
+            font-size: 1.3em;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .semester-badge {
+            background: #667eea;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        
+        .algorithm-category {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        
+        .complexity {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 0.9em;
+        }
+        
+        .complexity-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+        }
+        
+        .complexity-label {
+            font-weight: bold;
+            color: #555;
+        }
+        
+        .complexity-value {
+            font-family: 'Courier New', monospace;
+            color: #764ba2;
+        }
+        
+        .algorithm-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .btn {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .btn-python {
+            background: #3776ab;
+            color: white;
+        }
+        
+        .btn-python:hover {
+            background: #2d5d8a;
+        }
+        
+        .btn-java {
+            background: #f89820;
+            color: white;
+        }
+        
+        .btn-java:hover {
+            background: #d67e1a;
+        }
+        
+        .btn-info {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-info:hover {
+            background: #5568d3;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+        
+        .modal-content {
+            background: white;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            position: relative;
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 2em;
+            cursor: pointer;
+            color: #999;
+        }
+        
+        .modal-close:hover {
+            color: #333;
+        }
+        
+        .output-section {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            max-height: 400px;
+            overflow-y: auto;
+            margin-top: 20px;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 1.2em;
+            color: #667eea;
+        }
+        
+        .stats {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        
+        .stat-item {
+            padding: 10px;
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .stat-label {
+            color: #888;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 Algorithms Course</h1>
+            <p class="subtitle">4 Semesters - Comprehensive Computer Science Education</p>
+        </header>
+        
+        <div class="stats" id="stats">
+            <div class="stat-item">
+                <div class="stat-number" id="totalAlgorithms">0</div>
+                <div class="stat-label">Total Algorithms</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Semesters</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="totalCategories">0</div>
+                <div class="stat-label">Categories</div>
+            </div>
+        </div>
+        
+        <div class="filters">
+            <div class="filter-group">
+                <label for="semesterFilter">Semester</label>
+                <select id="semesterFilter">
+                    <option value="">All Semesters</option>
+                    <option value="1">Semester 1: Foundations</option>
+                    <option value="2">Semester 2: Patterns</option>
+                    <option value="3">Semester 3: Advanced</option>
+                    <option value="4">Semester 4: Production</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="categoryFilter">Category</label>
+                <select id="categoryFilter">
+                    <option value="">All Categories</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="searchFilter">Search</label>
+                <input type="text" id="searchFilter" placeholder="Search algorithms...">
+            </div>
+        </div>
+        
+        <div class="algorithms-grid" id="algorithmsGrid">
+            <div class="loading">Loading algorithms...</div>
+        </div>
+    </div>
+    
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+    
+    <script>
+        let allAlgorithms = [];
+        
+        async function loadAlgorithms() {
+            try {
+                const response = await fetch('/api/algorithms');
+                allAlgorithms = await response.json();
+                updateStats();
+                populateFilters();
+                displayAlgorithms(allAlgorithms);
+            } catch (error) {
+                document.getElementById('algorithmsGrid').innerHTML = 
+                    '<div class="loading">Error loading algorithms: ' + error + '</div>';
+            }
+        }
+        
+        function updateStats() {
+            document.getElementById('totalAlgorithms').textContent = allAlgorithms.length;
+            const categories = new Set(allAlgorithms.map(a => a.category));
+            document.getElementById('totalCategories').textContent = categories.size;
+        }
+        
+        function populateFilters() {
+            const categories = [...new Set(allAlgorithms.map(a => a.category))].sort();
+            const categoryFilter = document.getElementById('categoryFilter');
+            categories.forEach(cat => {
+                const option = document.createElement('option');
+                option.value = cat;
+                option.textContent = cat;
+                categoryFilter.appendChild(option);
+            });
+        }
+        
+        function displayAlgorithms(algorithms) {
+            const grid = document.getElementById('algorithmsGrid');
+            
+            if (algorithms.length === 0) {
+                grid.innerHTML = '<div class="loading">No algorithms found</div>';
+                return;
+            }
+            
+            grid.innerHTML = algorithms.map(algo => `
+                <div class="algorithm-card">
+                    <div class="algorithm-header">
+                        <div class="algorithm-title">${algo.name}</div>
+                        <div class="semester-badge">S${algo.semester}</div>
+                    </div>
+                    <div class="algorithm-category">${algo.category}</div>
+                    <div class="complexity">
+                        <div class="complexity-item">
+                            <span class="complexity-label">Time:</span>
+                            <span class="complexity-value">${algo.complexity.time}</span>
+                        </div>
+                        <div class="complexity-item">
+                            <span class="complexity-label">Space:</span>
+                            <span class="complexity-value">${algo.complexity.space}</span>
+                        </div>
+                    </div>
+                    <div class="algorithm-actions">
+                        <button class="btn btn-python" onclick="runAlgorithm('${algo.semester}', '${algo.lecture}', '${algo.algorithm}', 'python')">
+                            🐍 Python
+                        </button>
+                        <button class="btn btn-java" onclick="runAlgorithm('${algo.semester}', '${algo.lecture}', '${algo.algorithm}', 'java')">
+                            ☕ Java
+                        </button>
+                        <button class="btn btn-info" onclick="showInfo('${algo.path}')">
+                            📖 Info
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        function filterAlgorithms() {
+            const semester = document.getElementById('semesterFilter').value;
+            const category = document.getElementById('categoryFilter').value;
+            const search = document.getElementById('searchFilter').value.toLowerCase();
+            
+            const filtered = allAlgorithms.filter(algo => {
+                const matchSemester = !semester || algo.semester == semester;
+                const matchCategory = !category || algo.category === category;
+                const matchSearch = !search || 
+                    algo.name.toLowerCase().includes(search) ||
+                    algo.category.toLowerCase().includes(search);
+                return matchSemester && matchCategory && matchSearch;
+            });
+            
+            displayAlgorithms(filtered);
+        }
+        
+        async function runAlgorithm(semester, lecture, algorithm, language) {
+            const modal = document.getElementById('modal');
+            const content = document.getElementById('modalContent');
+            
+            content.innerHTML = `
+                <h2>Running ${algorithm} (${language})</h2>
+                <div class="output-section">Executing...</div>
+            `;
+            modal.style.display = 'block';
+            
+            try {
+                const response = await fetch('/api/run', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({semester, lecture, algorithm, language})
+                });
+                
+                const result = await response.json();
+                
+                content.innerHTML = `
+                    <h2>${algorithm} (${language})</h2>
+                    <h3>Output:</h3>
+                    <div class="output-section">${result.stdout || 'No output'}</div>
+                    ${result.stderr ? '<h3>Errors:</h3><div class="output-section">' + result.stderr + '</div>' : ''}
+                    <p>Exit code: ${result.returncode}</p>
+                `;
+            } catch (error) {
+                content.innerHTML = `
+                    <h2>Error</h2>
+                    <div class="output-section">Failed to run algorithm: ${error}</div>
+                `;
+            }
+        }
+        
+        async function showInfo(path) {
+            const modal = document.getElementById('modal');
+            const content = document.getElementById('modalContent');
+            
+            content.innerHTML = '<h2>Loading...</h2>';
+            modal.style.display = 'block';
+            
+            try {
+                const response = await fetch(`/api/readme/${path}`);
+                const result = await response.json();
+                
+                // Simple markdown to HTML conversion
+                let html = result.content
+                    .replace(/### (.*)/g, '<h3>$1</h3>')
+                    .replace(/## (.*)/g, '<h2>$1</h2>')
+                    .replace(/# (.*)/g, '<h1>$1</h1>')
+                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                    .replace(/\*(.*?)\*/g, '<em>$1</em>')
+                    .replace(/```(.*?)```/gs, '<pre><code>$1</code></pre>')
+                    .replace(/\n/g, '<br>');
+                
+                content.innerHTML = html;
+            } catch (error) {
+                content.innerHTML = `<h2>Error</h2><p>Failed to load README: ${error}</p>`;
+            }
+        }
+        
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+        
+        // Event listeners
+        document.getElementById('semesterFilter').addEventListener('change', filterAlgorithms);
+        document.getElementById('categoryFilter').addEventListener('change', filterAlgorithms);
+        document.getElementById('searchFilter').addEventListener('input', filterAlgorithms);
+        
+        // Close modal on outside click
+        window.onclick = function(event) {
+            const modal = document.getElementById('modal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+        
+        // Load algorithms on page load
+        loadAlgorithms();
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,8 @@
+{
+  "name": "Fibonacci Sequence",
+  "category": "Dynamic Programming",
+  "complexity": {
+    "time": "O(n)",
+    "space": "O(n)"
+  }
+}

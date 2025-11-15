@@ -1,0 +1,8 @@
+{
+  "name": "KMP String Matching",
+  "category": "String Algorithm",
+  "complexity": {
+    "time": "O(n + m)",
+    "space": "O(m)"
+  }
+}

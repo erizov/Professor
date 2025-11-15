@@ -1,0 +1,14 @@
+{
+  "name": "Model Versioning",
+  "category": "MLOps",
+  "complexity": {
+    "time": "O(1)",
+    "space": "O(model_size)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": true,
+    "network_bandwidth": "medium"
+  }
+}

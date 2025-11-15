@@ -1,0 +1,8 @@
+{
+  "name": "Iterator Pattern",
+  "category": "Behavioral Pattern",
+  "complexity": {
+    "time": "O(n)",
+    "space": "O(1)"
+  }
+}

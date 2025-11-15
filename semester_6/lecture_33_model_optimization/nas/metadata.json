@@ -1,0 +1,14 @@
+{
+  "name": "Neural Architecture Search",
+  "category": "Optimization",
+  "complexity": {
+    "time": "O(search_space*trials)",
+    "space": "O(candidates)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

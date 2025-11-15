@@ -1,0 +1,8 @@
+{
+  "name": "Interface Segregation Principle",
+  "category": "SOLID",
+  "complexity": {
+    "time": "N/A",
+    "space": "N/A"
+  }
+}

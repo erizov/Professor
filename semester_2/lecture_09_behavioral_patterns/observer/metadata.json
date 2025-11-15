@@ -1,0 +1,8 @@
+{
+  "name": "Observer Pattern",
+  "category": "Behavioral Pattern",
+  "complexity": {
+    "time": "O(n)",
+    "space": "O(n)"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "LSTM for Time Series",
+  "category": "Time Series",
+  "complexity": {
+    "time": "O(n*timesteps*d)",
+    "space": "O(timesteps*d)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Unit of Work",
+  "category": "Data Access Pattern",
+  "complexity": {
+    "time": "O(1)",
+    "space": "O(n)"
+  }
+}

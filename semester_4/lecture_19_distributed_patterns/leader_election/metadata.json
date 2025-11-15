@@ -1,0 +1,8 @@
+{
+  "name": "Leader Election",
+  "category": "Distributed Systems",
+  "complexity": {
+    "time": "O(n)",
+    "space": "O(1)"
+  }
+}

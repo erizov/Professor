@@ -1,0 +1,14 @@
+{
+  "name": "Canary Deployment",
+  "category": "Deployment",
+  "complexity": {
+    "time": "O(1)",
+    "space": "O(model)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

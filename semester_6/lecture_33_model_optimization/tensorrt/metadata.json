@@ -1,0 +1,14 @@
+{
+  "name": "TensorRT Optimization",
+  "category": "Optimization",
+  "complexity": {
+    "time": "O(inference)",
+    "space": "O(optimized_model)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

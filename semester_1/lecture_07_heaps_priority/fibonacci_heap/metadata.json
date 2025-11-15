@@ -1,0 +1,8 @@
+{
+  "name": "Fibonacci Heap",
+  "category": "Data Structure",
+  "complexity": {
+    "time": "O(1)",
+    "space": "O(n)"
+  }
+}

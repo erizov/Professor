@@ -1,0 +1,14 @@
+{
+  "name": "Bayesian Optimization",
+  "category": "Optimization",
+  "complexity": {
+    "time": "O(n*iterations)",
+    "space": "O(iterations)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

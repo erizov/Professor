@@ -1,0 +1,8 @@
+{
+  "name": "Open/Closed Principle",
+  "category": "SOLID",
+  "complexity": {
+    "time": "N/A",
+    "space": "N/A"
+  }
+}

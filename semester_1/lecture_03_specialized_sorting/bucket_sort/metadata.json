@@ -1,0 +1,8 @@
+{
+  "name": "Bucket Sort",
+  "category": "Sorting",
+  "complexity": {
+    "time": "O(n + k)",
+    "space": "O(n)"
+  }
+}

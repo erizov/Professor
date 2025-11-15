@@ -1,0 +1,8 @@
+{
+  "name": "Jump Search",
+  "category": "Searching",
+  "complexity": {
+    "time": "O(\u221an)",
+    "space": "O(1)"
+  }
+}

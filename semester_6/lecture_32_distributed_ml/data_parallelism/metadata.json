@@ -1,0 +1,14 @@
+{
+  "name": "Data Parallelism",
+  "category": "Distributed ML",
+  "complexity": {
+    "time": "O(n/workers)",
+    "space": "O(model + n/workers)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": true,
+    "network_bandwidth": "medium"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Attention Mechanism",
+  "category": "NLP",
+  "complexity": {
+    "time": "O(n\u00b2*d)",
+    "space": "O(n\u00b2)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

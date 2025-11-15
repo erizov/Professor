@@ -1,0 +1,14 @@
+{
+  "name": "Serverless ML",
+  "category": "Cost Optimization",
+  "complexity": {
+    "time": "O(requests)",
+    "space": "O(0)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

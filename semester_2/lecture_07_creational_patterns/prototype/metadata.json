@@ -1,0 +1,8 @@
+{
+  "name": "Prototype Pattern",
+  "category": "Creational Pattern",
+  "complexity": {
+    "time": "O(n)",
+    "space": "O(n)"
+  }
+}

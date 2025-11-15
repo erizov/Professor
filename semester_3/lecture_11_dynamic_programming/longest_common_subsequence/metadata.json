@@ -1,0 +1,8 @@
+{
+  "name": "Longest Common Subsequence",
+  "category": "Dynamic Programming",
+  "complexity": {
+    "time": "O(mn)",
+    "space": "O(mn)"
+  }
+}

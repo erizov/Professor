@@ -1,0 +1,8 @@
+{
+  "name": "Dependency Inversion Principle",
+  "category": "SOLID",
+  "complexity": {
+    "time": "N/A",
+    "space": "N/A"
+  }
+}

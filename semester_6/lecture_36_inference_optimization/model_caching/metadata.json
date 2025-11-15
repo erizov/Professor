@@ -1,0 +1,14 @@
+{
+  "name": "Model Caching",
+  "category": "Inference",
+  "complexity": {
+    "time": "O(1)",
+    "space": "O(cache_size)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

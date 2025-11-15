@@ -1,0 +1,14 @@
+{
+  "name": "Inference Pipeline",
+  "category": "Inference",
+  "complexity": {
+    "time": "O(stages)",
+    "space": "O(pipeline)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

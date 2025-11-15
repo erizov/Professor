@@ -1,0 +1,8 @@
+{
+  "name": "K-Nearest Neighbors",
+  "category": "Machine Learning",
+  "complexity": {
+    "time": "O(nd)",
+    "space": "O(nd)"
+  }
+}

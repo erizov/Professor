@@ -1,0 +1,8 @@
+{
+  "name": "Hexagonal Architecture",
+  "category": "Architectural Pattern",
+  "complexity": {
+    "time": "N/A",
+    "space": "N/A"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Linear Search",
+  "category": "Searching",
+  "complexity": {
+    "time": "O(n)",
+    "space": "O(1)"
+  }
+}

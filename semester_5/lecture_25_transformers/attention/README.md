@@ -1,0 +1,22 @@
+# Attention Mechanism
+
+**Category**: NLP
+
+**Time Complexity**: O(n²*d)
+
+**Space Complexity**: O(n²)
+
+## Resource Requirements
+
+- **Memory**: varies
+- **CPU Intensive**: No
+- **GPU Recommended**: No
+- **Network**: medium
+
+## Implementation
+
+See algorithm.py and Algorithm.java for implementations.
+
+## Performance Considerations
+
+This algorithm is part of NLP and requires careful consideration of resource constraints.

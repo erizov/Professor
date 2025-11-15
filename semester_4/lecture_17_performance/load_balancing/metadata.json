@@ -1,0 +1,8 @@
+{
+  "name": "Load Balancing",
+  "category": "Performance",
+  "complexity": {
+    "time": "O(1)",
+    "space": "O(n)"
+  }
+}

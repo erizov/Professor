@@ -1,0 +1,8 @@
+{
+  "name": "Model-View-Controller",
+  "category": "Architectural Pattern",
+  "complexity": {
+    "time": "N/A",
+    "space": "N/A"
+  }
+}

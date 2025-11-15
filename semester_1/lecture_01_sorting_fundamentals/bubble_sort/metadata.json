@@ -1,0 +1,8 @@
+{
+  "name": "Bubble Sort",
+  "category": "Sorting",
+  "complexity": {
+    "time": "O(n\u00b2)",
+    "space": "O(1)"
+  }
+}

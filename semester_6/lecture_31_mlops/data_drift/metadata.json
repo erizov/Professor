@@ -1,0 +1,14 @@
+{
+  "name": "Data Drift Detection",
+  "category": "MLOps",
+  "complexity": {
+    "time": "O(n*features)",
+    "space": "O(n)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": true,
+    "network_bandwidth": "medium"
+  }
+}

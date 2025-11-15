@@ -1,0 +1,8 @@
+{
+  "name": "Two-Phase Commit",
+  "category": "Distributed Systems",
+  "complexity": {
+    "time": "O(n)",
+    "space": "O(n)"
+  }
+}

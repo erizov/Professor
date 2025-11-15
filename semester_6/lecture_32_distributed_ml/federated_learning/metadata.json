@@ -1,0 +1,14 @@
+{
+  "name": "Federated Learning",
+  "category": "Distributed ML",
+  "complexity": {
+    "time": "O(rounds*clients)",
+    "space": "O(model)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": true,
+    "network_bandwidth": "medium"
+  }
+}

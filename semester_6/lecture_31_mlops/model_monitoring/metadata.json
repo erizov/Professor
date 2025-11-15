@@ -1,0 +1,14 @@
+{
+  "name": "Model Monitoring",
+  "category": "MLOps",
+  "complexity": {
+    "time": "O(predictions)",
+    "space": "O(logs)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": true,
+    "network_bandwidth": "medium"
+  }
+}

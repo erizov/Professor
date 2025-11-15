@@ -1,0 +1,8 @@
+{
+  "name": "Singleton Pattern",
+  "category": "Creational Pattern",
+  "complexity": {
+    "time": "O(1)",
+    "space": "O(1)"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Fully Convolutional Networks",
+  "category": "Computer Vision",
+  "complexity": {
+    "time": "O(n*H*W)",
+    "space": "O(H*W)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

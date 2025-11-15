@@ -1,0 +1,8 @@
+{
+  "name": "Huffman Coding",
+  "category": "Greedy Algorithm",
+  "complexity": {
+    "time": "O(n log n)",
+    "space": "O(n)"
+  }
+}

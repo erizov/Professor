@@ -1,0 +1,14 @@
+{
+  "name": "ResNet Architecture",
+  "category": "Deep Learning",
+  "complexity": {
+    "time": "O(n*d*layers)",
+    "space": "O(d*layers)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": true,
+    "gpu_recommended": true,
+    "network_bandwidth": "medium"
+  }
+}

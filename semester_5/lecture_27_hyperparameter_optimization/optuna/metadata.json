@@ -1,0 +1,14 @@
+{
+  "name": "Optuna Framework",
+  "category": "Optimization",
+  "complexity": {
+    "time": "O(n*trials)",
+    "space": "O(trials)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Neural Network Basics",
+  "category": "Machine Learning",
+  "complexity": {
+    "time": "O(n*d*h)",
+    "space": "O(d*h)"
+  }
+}

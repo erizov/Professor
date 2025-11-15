@@ -1,0 +1,14 @@
+{
+  "name": "Feature Store Pattern",
+  "category": "MLOps",
+  "complexity": {
+    "time": "O(features)",
+    "space": "O(features*time)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": true,
+    "network_bandwidth": "medium"
+  }
+}

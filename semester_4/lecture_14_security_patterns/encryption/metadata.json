@@ -1,0 +1,8 @@
+{
+  "name": "Encryption Algorithms",
+  "category": "Security",
+  "complexity": {
+    "time": "O(n)",
+    "space": "O(n)"
+  }
+}

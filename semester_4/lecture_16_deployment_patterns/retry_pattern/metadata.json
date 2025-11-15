@@ -1,0 +1,8 @@
+{
+  "name": "Retry Pattern",
+  "category": "Deployment",
+  "complexity": {
+    "time": "O(k)",
+    "space": "O(1)"
+  }
+}

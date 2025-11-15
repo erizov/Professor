@@ -1,0 +1,14 @@
+{
+  "name": "Actor-Critic",
+  "category": "Reinforcement Learning",
+  "complexity": {
+    "time": "O(episodes*steps)",
+    "space": "O(2*network_params)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

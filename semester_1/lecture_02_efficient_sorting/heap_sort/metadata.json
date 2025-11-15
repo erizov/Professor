@@ -1,0 +1,8 @@
+{
+  "name": "Heap Sort",
+  "category": "Sorting",
+  "complexity": {
+    "time": "O(n log n)",
+    "space": "O(1)"
+  }
+}

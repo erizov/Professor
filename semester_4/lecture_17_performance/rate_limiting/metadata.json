@@ -1,0 +1,8 @@
+{
+  "name": "Rate Limiting",
+  "category": "Performance",
+  "complexity": {
+    "time": "O(1)",
+    "space": "O(n)"
+  }
+}

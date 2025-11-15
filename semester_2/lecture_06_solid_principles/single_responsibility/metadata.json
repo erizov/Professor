@@ -1,0 +1,8 @@
+{
+  "name": "Single Responsibility Principle",
+  "category": "SOLID",
+  "complexity": {
+    "time": "N/A",
+    "space": "N/A"
+  }
+}

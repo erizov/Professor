@@ -1,0 +1,8 @@
+{
+  "name": "Metrics Collection",
+  "category": "Observability",
+  "complexity": {
+    "time": "O(1)",
+    "space": "O(n)"
+  }
+}

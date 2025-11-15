@@ -1,0 +1,8 @@
+{
+  "name": "Canary Deployment",
+  "category": "Deployment",
+  "complexity": {
+    "time": "O(1)",
+    "space": "O(n)"
+  }
+}

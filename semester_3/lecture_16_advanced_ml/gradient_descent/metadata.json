@@ -1,0 +1,8 @@
+{
+  "name": "Gradient Descent",
+  "category": "Machine Learning",
+  "complexity": {
+    "time": "O(n*d*i)",
+    "space": "O(d)"
+  }
+}

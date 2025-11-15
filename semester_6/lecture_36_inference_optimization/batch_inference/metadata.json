@@ -1,0 +1,14 @@
+{
+  "name": "Batch Inference",
+  "category": "Inference",
+  "complexity": {
+    "time": "O(n/batch)",
+    "space": "O(batch_size)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

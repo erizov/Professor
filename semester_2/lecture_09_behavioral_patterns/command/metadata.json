@@ -1,0 +1,8 @@
+{
+  "name": "Command Pattern",
+  "category": "Behavioral Pattern",
+  "complexity": {
+    "time": "O(1)",
+    "space": "O(n)"
+  }
+}

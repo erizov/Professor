@@ -1,0 +1,14 @@
+{
+  "name": "AllReduce Algorithm",
+  "category": "Distributed ML",
+  "complexity": {
+    "time": "O(log(workers))",
+    "space": "O(params)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": true,
+    "network_bandwidth": "medium"
+  }
+}

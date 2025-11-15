@@ -1,0 +1,8 @@
+{
+  "name": "Binary Search",
+  "category": "Searching",
+  "complexity": {
+    "time": "O(log n)",
+    "space": "O(1)"
+  }
+}

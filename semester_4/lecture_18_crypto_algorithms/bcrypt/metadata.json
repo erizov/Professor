@@ -1,0 +1,8 @@
+{
+  "name": "Bcrypt Password Hashing",
+  "category": "Cryptography",
+  "complexity": {
+    "time": "O(2^cost)",
+    "space": "O(1)"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Counting Sort",
+  "category": "Sorting",
+  "complexity": {
+    "time": "O(n + k)",
+    "space": "O(k)"
+  }
+}

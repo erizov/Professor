@@ -1,0 +1,14 @@
+{
+  "name": "ML Cost Analysis",
+  "category": "Cost Optimization",
+  "complexity": {
+    "time": "O(resources)",
+    "space": "O(logs)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

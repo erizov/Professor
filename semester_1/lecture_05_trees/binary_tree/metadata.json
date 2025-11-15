@@ -1,0 +1,8 @@
+{
+  "name": "Binary Tree",
+  "category": "Data Structure",
+  "complexity": {
+    "time": "O(n)",
+    "space": "O(n)"
+  }
+}

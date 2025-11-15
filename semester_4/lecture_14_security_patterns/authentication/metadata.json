@@ -1,0 +1,8 @@
+{
+  "name": "Authentication Pattern",
+  "category": "Security",
+  "complexity": {
+    "time": "O(1)",
+    "space": "O(1)"
+  }
+}

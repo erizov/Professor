@@ -1,0 +1,8 @@
+{
+  "name": "Binary Heap",
+  "category": "Data Structure",
+  "complexity": {
+    "time": "O(log n)",
+    "space": "O(n)"
+  }
+}

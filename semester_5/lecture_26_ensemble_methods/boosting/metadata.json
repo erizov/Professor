@@ -1,0 +1,14 @@
+{
+  "name": "Boosting",
+  "category": "Ensemble Learning",
+  "complexity": {
+    "time": "O(n*m*iterations)",
+    "space": "O(n*iterations)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Word2Vec",
+  "category": "NLP",
+  "complexity": {
+    "time": "O(V*d*corpus)",
+    "space": "O(V*d)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

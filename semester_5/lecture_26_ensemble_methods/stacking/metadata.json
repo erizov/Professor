@@ -1,0 +1,14 @@
+{
+  "name": "Stacking",
+  "category": "Ensemble Learning",
+  "complexity": {
+    "time": "O(n*m*models)",
+    "space": "O(n*models)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

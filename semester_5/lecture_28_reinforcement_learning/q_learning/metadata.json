@@ -1,0 +1,14 @@
+{
+  "name": "Q-Learning",
+  "category": "Reinforcement Learning",
+  "complexity": {
+    "time": "O(states*actions)",
+    "space": "O(states*actions)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

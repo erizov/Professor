@@ -1,0 +1,8 @@
+{
+  "name": "SHA-256 Hashing",
+  "category": "Cryptography",
+  "complexity": {
+    "time": "O(n)",
+    "space": "O(1)"
+  }
+}

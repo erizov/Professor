@@ -1,0 +1,14 @@
+{
+  "name": "Single Shot Detector",
+  "category": "Computer Vision",
+  "complexity": {
+    "time": "O(n*anchors)",
+    "space": "O(anchors)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

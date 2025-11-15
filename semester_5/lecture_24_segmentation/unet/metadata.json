@@ -1,0 +1,14 @@
+{
+  "name": "U-Net Segmentation",
+  "category": "Computer Vision",
+  "complexity": {
+    "time": "O(n*H*W)",
+    "space": "O(H*W*channels)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

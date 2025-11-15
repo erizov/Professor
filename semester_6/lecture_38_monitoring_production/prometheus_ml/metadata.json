@@ -1,0 +1,14 @@
+{
+  "name": "Prometheus for ML",
+  "category": "Monitoring",
+  "complexity": {
+    "time": "O(metrics)",
+    "space": "O(time_series)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

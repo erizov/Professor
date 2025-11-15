@@ -1,0 +1,14 @@
+{
+  "name": "Facebook Prophet",
+  "category": "Time Series",
+  "complexity": {
+    "time": "O(n*iterations)",
+    "space": "O(n)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}

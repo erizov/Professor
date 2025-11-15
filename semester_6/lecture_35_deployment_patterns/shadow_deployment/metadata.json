@@ -1,0 +1,14 @@
+{
+  "name": "Shadow Deployment",
+  "category": "Deployment",
+  "complexity": {
+    "time": "O(2*requests)",
+    "space": "O(2*model)"
+  },
+  "resources": {
+    "memory_requirement": "varies",
+    "cpu_intensive": false,
+    "gpu_recommended": false,
+    "network_bandwidth": "medium"
+  }
+}
