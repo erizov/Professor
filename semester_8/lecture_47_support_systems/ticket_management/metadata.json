@@ -1,0 +1,7 @@
+{
+  "name": "ticket_management",
+  "category": "Support Systems",
+  "description": "Ticket Management for support systems",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

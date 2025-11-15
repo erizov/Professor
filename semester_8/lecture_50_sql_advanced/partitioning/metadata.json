@@ -1,0 +1,7 @@
+{
+  "name": "partitioning",
+  "category": "Advanced SQL",
+  "description": "Partitioning for advanced sql",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

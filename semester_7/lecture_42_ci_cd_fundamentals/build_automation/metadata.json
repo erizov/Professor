@@ -1,0 +1,7 @@
+{
+  "name": "build_automation",
+  "category": "CI/CD Fundamentals",
+  "description": "Build Automation for ci/cd fundamentals",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

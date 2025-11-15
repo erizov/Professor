@@ -1,0 +1,7 @@
+{
+  "name": "infrastructure_as_code",
+  "category": "Advanced CI/CD",
+  "description": "Infrastructure As Code for advanced ci/cd",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

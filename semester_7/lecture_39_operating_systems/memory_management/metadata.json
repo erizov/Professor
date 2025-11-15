@@ -1,0 +1,7 @@
+{
+  "name": "memory_management",
+  "category": "Operating Systems Fundamentals",
+  "description": "Memory Management for operating systems fundamentals",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

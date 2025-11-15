@@ -1,0 +1,7 @@
+{
+  "name": "etl_processes",
+  "category": "Data Modeling",
+  "description": "Etl Processes for data modeling",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

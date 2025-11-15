@@ -1,0 +1,7 @@
+{
+  "name": "database_security",
+  "category": "Database Operations",
+  "description": "Database Security for database operations",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

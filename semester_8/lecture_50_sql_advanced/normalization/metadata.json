@@ -1,0 +1,7 @@
+{
+  "name": "normalization",
+  "category": "Advanced SQL",
+  "description": "Normalization for advanced sql",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

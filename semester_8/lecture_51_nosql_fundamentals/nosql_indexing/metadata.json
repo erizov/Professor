@@ -1,0 +1,7 @@
+{
+  "name": "nosql_indexing",
+  "category": "NoSQL Database Fundamentals",
+  "description": "Nosql Indexing for nosql database fundamentals",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

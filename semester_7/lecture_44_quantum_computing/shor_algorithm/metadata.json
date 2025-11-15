@@ -1,0 +1,7 @@
+{
+  "name": "shor_algorithm",
+  "category": "Quantum Computing Fundamentals",
+  "description": "Shor Algorithm for quantum computing fundamentals",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

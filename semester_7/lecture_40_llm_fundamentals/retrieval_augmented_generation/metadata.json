@@ -1,0 +1,7 @@
+{
+  "name": "retrieval_augmented_generation",
+  "category": "Large Language Models Fundamentals",
+  "description": "Retrieval Augmented Generation for large language models fundamentals",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

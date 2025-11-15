@@ -1,0 +1,7 @@
+{
+  "name": "data_lakes",
+  "category": "Data Modeling",
+  "description": "Data Lakes for data modeling",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

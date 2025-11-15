@@ -1,0 +1,7 @@
+{
+  "name": "grover_algorithm",
+  "category": "Quantum Computing Fundamentals",
+  "description": "Grover Algorithm for quantum computing fundamentals",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

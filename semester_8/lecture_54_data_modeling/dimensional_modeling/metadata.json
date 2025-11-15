@@ -1,0 +1,7 @@
+{
+  "name": "dimensional_modeling",
+  "category": "Data Modeling",
+  "description": "Dimensional Modeling for data modeling",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "chain_of_thought",
+  "category": "Advanced LLM Techniques",
+  "description": "Chain Of Thought for advanced llm techniques",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

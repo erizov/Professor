@@ -1,0 +1,115 @@
+import java.util.*;
+
+/**
+ * Longest Common Subsequence (LCS) - Dynamic Programming.
+ * 
+ * Time Complexity: O(m * n)
+ * Space Complexity: O(m * n)
+ */
+public class Algorithm {
+    
+    static int lcsLength(String s1, String s2) {
+        int m = s1.length();
+        int n = s2.length();
+        int[][] dp = new int[m + 1][n + 1];
+        
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (s1.charAt(i - 1) == s2.charAt(j - 1)) {
+                    dp[i][j] = dp[i - 1][j - 1] + 1;
+                } else {
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+                }
+            }
+        }
+        
+        return dp[m][n];
+    }
+    
+    static String lcsSequence(String s1, String s2) {
+        int m = s1.length();
+        int n = s2.length();
+        int[][] dp = new int[m + 1][n + 1];
+        
+        // Build DP table
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (s1.charAt(i - 1) == s2.charAt(j - 1)) {
+                    dp[i][j] = dp[i - 1][j - 1] + 1;
+                } else {
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+                }
+            }
+        }
+        
+        // Reconstruct LCS
+        StringBuilder lcs = new StringBuilder();
+        int i = m, j = n;
+        
+        while (i > 0 && j > 0) {
+            if (s1.charAt(i - 1) == s2.charAt(j - 1)) {
+                lcs.append(s1.charAt(i - 1));
+                i--;
+                j--;
+            } else if (dp[i - 1][j] > dp[i][j - 1]) {
+                i--;
+            } else {
+                j--;
+            }
+        }
+        
+        return lcs.reverse().toString();
+    }
+    
+    public static void main(String[] args) {
+        long startTime = System.nanoTime();
+        
+        System.out.println("=".repeat(70));
+        System.out.println("LONGEST COMMON SUBSEQUENCE (LCS) DEMONSTRATION");
+        System.out.println("=".repeat(70));
+        System.out.println();
+        
+        // Example 1
+        System.out.println("Example 1: Basic LCS");
+        System.out.println("-".repeat(70));
+        
+        String s1 = "ABCDGH";
+        String s2 = "AEDFHR";
+        
+        int length = lcsLength(s1, s2);
+        String sequence = lcsSequence(s1, s2);
+        
+        System.out.println("String 1: " + s1);
+        System.out.println("String 2: " + s2);
+        System.out.println("LCS Length: " + length);
+        System.out.println("LCS Sequence: " + sequence);
+        System.out.println();
+        
+        // Example 2
+        System.out.println("Example 2: Another Example");
+        System.out.println("-".repeat(70));
+        
+        String s3 = "AGGTAB";
+        String s4 = "GXTXAYB";
+        
+        int length2 = lcsLength(s3, s4);
+        String sequence2 = lcsSequence(s3, s4);
+        
+        System.out.println("String 1: " + s3);
+        System.out.println("String 2: " + s4);
+        System.out.println("LCS Length: " + length2);
+        System.out.println("LCS Sequence: " + sequence2);
+        System.out.println();
+        
+        long endTime = System.nanoTime();
+        
+        System.out.println("=".repeat(70));
+        System.out.println("\nComplexity Summary:");
+        System.out.println("  Time:  O(m * n)");
+        System.out.println("  Space: O(m * n)");
+        System.out.println("=".repeat(70));
+        System.out.printf("\nTotal time: %.3f ms%n",
+                        (endTime - startTime) / 1_000_000.0);
+    }
+}
+

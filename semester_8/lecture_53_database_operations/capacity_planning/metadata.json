@@ -1,0 +1,7 @@
+{
+  "name": "capacity_planning",
+  "category": "Database Operations",
+  "description": "Capacity Planning for database operations",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

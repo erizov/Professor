@@ -1,0 +1,7 @@
+{
+  "name": "continuous_integration",
+  "category": "CI/CD Fundamentals",
+  "description": "Continuous Integration for ci/cd fundamentals",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "blue_green_deployment",
+  "category": "Advanced CI/CD",
+  "description": "Blue Green Deployment for advanced ci/cd",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

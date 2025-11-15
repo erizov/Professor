@@ -1,0 +1,7 @@
+{
+  "name": "deployment_strategies",
+  "category": "CI/CD Fundamentals",
+  "description": "Deployment Strategies for ci/cd fundamentals",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

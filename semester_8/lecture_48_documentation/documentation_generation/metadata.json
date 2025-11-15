@@ -1,0 +1,7 @@
+{
+  "name": "documentation_generation",
+  "category": "Documentation Systems",
+  "description": "Documentation Generation for documentation systems",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

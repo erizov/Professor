@@ -1,0 +1,7 @@
+{
+  "name": "knowledge_base",
+  "category": "Support Systems",
+  "description": "Knowledge Base for support systems",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

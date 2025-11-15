@@ -1,0 +1,7 @@
+{
+  "name": "escalation_procedures",
+  "category": "Support Systems",
+  "description": "Escalation Procedures for support systems",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

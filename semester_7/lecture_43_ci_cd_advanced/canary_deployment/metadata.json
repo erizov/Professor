@@ -1,0 +1,7 @@
+{
+  "name": "canary_deployment",
+  "category": "Advanced CI/CD",
+  "description": "Canary Deployment for advanced ci/cd",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

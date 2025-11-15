@@ -1,0 +1,7 @@
+{
+  "name": "nosql_sharding",
+  "category": "Advanced NoSQL",
+  "description": "Nosql Sharding for advanced nosql",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "data_governance",
+  "category": "Data Modeling",
+  "description": "Data Governance for data modeling",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

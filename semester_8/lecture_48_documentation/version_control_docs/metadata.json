@@ -1,0 +1,7 @@
+{
+  "name": "version_control_docs",
+  "category": "Documentation Systems",
+  "description": "Version Control Docs for documentation systems",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

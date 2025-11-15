@@ -1,0 +1,7 @@
+{
+  "name": "incident_response",
+  "category": "Support Systems",
+  "description": "Incident Response for support systems",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

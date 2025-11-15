@@ -1,0 +1,7 @@
+{
+  "name": "proof_of_work",
+  "category": "Blockchain Fundamentals",
+  "description": "Proof Of Work for blockchain fundamentals",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

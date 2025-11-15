@@ -1,0 +1,7 @@
+{
+  "name": "process_scheduling",
+  "category": "Operating Systems Fundamentals",
+  "description": "Process Scheduling for operating systems fundamentals",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

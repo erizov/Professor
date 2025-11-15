@@ -1,0 +1,7 @@
+{
+  "name": "key_value_stores",
+  "category": "NoSQL Database Fundamentals",
+  "description": "Key Value Stores for nosql database fundamentals",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

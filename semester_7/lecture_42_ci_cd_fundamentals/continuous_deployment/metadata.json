@@ -1,0 +1,7 @@
+{
+  "name": "continuous_deployment",
+  "category": "CI/CD Fundamentals",
+  "description": "Continuous Deployment for ci/cd fundamentals",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

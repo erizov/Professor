@@ -1,0 +1,7 @@
+{
+  "name": "database_monitoring",
+  "category": "Database Operations",
+  "description": "Database Monitoring for database operations",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "transactions",
+  "category": "SQL Database Fundamentals",
+  "description": "Transactions for sql database fundamentals",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "few_shot_learning",
+  "category": "Advanced LLM Techniques",
+  "description": "Few Shot Learning for advanced llm techniques",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

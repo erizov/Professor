@@ -1,0 +1,7 @@
+{
+  "name": "entity_relationship",
+  "category": "Data Modeling",
+  "description": "Entity Relationship for data modeling",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

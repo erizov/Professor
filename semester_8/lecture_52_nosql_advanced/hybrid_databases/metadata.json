@@ -1,0 +1,7 @@
+{
+  "name": "hybrid_databases",
+  "category": "Advanced NoSQL",
+  "description": "Hybrid Databases for advanced nosql",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

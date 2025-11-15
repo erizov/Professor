@@ -1,0 +1,1959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithms Course - 6 Semesters</title>
+    <style>
+        @media print {
+            body { margin: 0; }
+            .no-print { display: none; }
+            .page-break { page-break-before: always; }
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Georgia', serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #f5f5f5;
+        }
+        
+        .document {
+            background: white;
+            padding: 60px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            min-height: 100vh;
+        }
+        
+        .cover {
+            text-align: center;
+            padding: 100px 0;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .cover h1 {
+            font-size: 48px;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        
+        .cover .subtitle {
+            font-size: 24px;
+            color: #764ba2;
+            margin: 20px 0;
+        }
+        
+        .cover .author {
+            font-size: 18px;
+            color: #666;
+            margin: 30px 0;
+        }
+        
+        .cover .date {
+            font-size: 14px;
+            color: #999;
+        }
+        
+        .toc {
+            background: #f9f9f9;
+            padding: 30px;
+            margin: 40px 0;
+            border-left: 5px solid #667eea;
+        }
+        
+        .toc h2 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .toc li {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        
+        .toc a {
+            color: #764ba2;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 36px;
+            margin-top: 60px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #764ba2;
+            font-size: 28px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+        
+        h3 {
+            color: #555;
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        
+        h4 {
+            color: #666;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        
+        p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 3px 6px;
+            border-radius: 3px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 14px;
+            color: #c7254e;
+        }
+        
+        pre {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+            color: #d4d4d4;
+        }
+        
+        blockquote {
+            border-left: 4px solid #667eea;
+            padding-left: 20px;
+            margin: 20px 0;
+            color: #666;
+            font-style: italic;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background: #667eea;
+            color: white;
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        .section {
+            margin: 40px 0;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #667eea;
+            color: white;
+            border-radius: 12px;
+            font-size: 12px;
+            margin: 0 5px;
+        }
+        
+        .alert {
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .alert-success {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            color: #155724;
+        }
+        
+        .alert-warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            color: #856404;
+        }
+        
+        .alert-info {
+            background: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            color: #0c5460;
+        }
+        
+        .print-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            padding: 15px 30px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+        
+        .print-button:hover {
+            background: #5568d3;
+        }
+        
+        @page {
+            margin: 2cm;
+        }
+    </style>
+</head>
+<body>
+    <div class="document">
+        <!-- Cover Page -->
+        <div class="cover">
+            <h1>Algorithms Course - 6 Semesters</h1>
+            <div class="subtitle">Comprehensive Computer Science Course</div>
+            <div class="author">University Professor of Computer Science</div>
+            <div class="date">Generated: November 15, 2025</div>
+        </div>
+        <div class="page-break"></div>
+        
+        <!-- Table of Contents -->
+        <div class="toc">
+            <h2>📚 Table of Contents</h2>
+            <ul>
+                <li><a href="#readme">Readme</a></li>
+                <li><a href="#quickstart">Quickstart</a></li>
+                <li><a href="#course-plan-6semesters">Course Plan 6Semesters</a></li>
+                <li><a href="#algorithm-index">Algorithm Index</a></li>
+            </ul>
+        </div>
+        <div class="page-break"></div>
+        
+        <!-- Main Content -->
+        <div class="section" id="readme">
+            <h1>Readme</h1>
+<h1>Algorithms Course - 6 Semesters</h1>
+<h2>Computer Science with AI/ML Emphasis</h2>
+<br>
+<p><strong>Professor's Comprehensive Algorithms Course</strong></p>
+<br>
+<p>This repository contains a complete 6-semester course covering 180+ </p>
+<p>algorithms from basic sorting to production AI/ML systems, with </p>
+<p>emphasis on resource constraints and real-world deployment.</p>
+<br>
+<p><a href="https://img.shields.io/badge/License-MIT-yellow.svg">![License: MIT</a>](https://opensource.org/licenses/MIT)</p>
+<p><a href="https://img.shields.io/badge/python-3.8+-blue.svg">![Python 3.8+</a>](https://www.python.org/downloads/)</p>
+<p><a href="https://img.shields.io/badge/java-11+-orange.svg">![Java 11+</a>](https://openjdk.org/)</p>
+<br>
+<p>---</p>
+<br>
+<h2>🎯 Key Features</h2>
+<br>
+<ul>
+<li>**180+ Algorithm Implementations** in Python and Java</li>
+<li>**Performance Timing** with real execution measurements</li>
+<li>**Resource Constraint Analysis** (CPU, GPU, Memory, Network)</li>
+<li>**AI/ML Focus** across 4 semesters (3-6)</li>
+<li>**Web Interface** for interactive exploration</li>
+<li>**Algorithm Selector** based on constraints</li>
+<li>**Production-Ready** with deployment patterns</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<h2>📚 Course Structure</h2>
+<br>
+<h3>Semester 1: Foundations (Weeks 1-15)</h3>
+<p><strong>Focus</strong>: Sorting, Searching, Data Structures  </p>
+<p><strong>Algorithms</strong>: ~30  </p>
+<p><strong>Key Topics</strong>: Time/Space complexity, Cache efficiency</p>
+<br>
+<ul>
+<li>Sorting: Bubble, Selection, Insertion, Merge, Quick, Heap, Counting, Radix</li>
+<li>Searching: Linear, Binary, Jump, Interpolation</li>
+<li>Trees: BST, AVL, Red-Black, B-Trees</li>
+<li>Hash Tables and collision resolution</li>
+</ul>
+<br>
+<p><strong>Resource Focus</strong>: Memory constraints, in-place algorithms</p>
+<br>
+<p>---</p>
+<br>
+<h3>Semester 2: Software Design (Weeks 16-30)</h3>
+<p><strong>Focus</strong>: SOLID Principles, Design Patterns  </p>
+<p><strong>Patterns</strong>: ~35  </p>
+<p><strong>Key Topics</strong>: Code quality, Maintainability, Scalability</p>
+<br>
+<ul>
+<li>SOLID Principles (5 patterns)</li>
+<li>Creational Patterns (6 patterns)</li>
+<li>Structural Patterns (7 patterns)</li>
+<li>Behavioral Patterns (10 patterns)</li>
+<li>Architectural Patterns (MVC, MVVM, Clean Architecture)</li>
+<li>Concurrency Patterns</li>
+</ul>
+<br>
+<p><strong>Resource Focus</strong>: Code maintainability, pattern overhead</p>
+<br>
+<p>---</p>
+<br>
+<h3>Semester 3: Advanced Algorithms & ML Foundations (Weeks 31-45)</h3>
+<p><strong>Focus</strong>: Graphs, Dynamic Programming, Basic ML  </p>
+<p><strong>Algorithms</strong>: ~40  </p>
+<p><strong>Key Topics</strong>: NP-completeness, ML basics</p>
+<br>
+<ul>
+<li>Graph Algorithms: DFS, BFS, Dijkstra, Bellman-Ford, Floyd-Warshall</li>
+<li>Dynamic Programming: Fibonacci, LCS, Knapsack, Edit Distance</li>
+<li>**ML Foundations**:</li>
+<li>Linear/Logistic Regression</li>
+<li>K-Nearest Neighbors</li>
+<li>Decision Trees</li>
+<li>K-Means Clustering</li>
+<li>Naive Bayes, PCA</li>
+<li>String Algorithms: KMP, Rabin-Karp, Boyer-Moore</li>
+</ul>
+<br>
+<p><strong>Resource Focus</strong>: Dataset size, training time, feature dimensions</p>
+<br>
+<p>---</p>
+<br>
+<h3>Semester 4: ML & Enterprise Patterns (Weeks 46-60)</h3>
+<p><strong>Focus</strong>: Neural Networks, Security, Integration  </p>
+<p><strong>Algorithms</strong>: ~35  </p>
+<p><strong>Key Topics</strong>: Deep learning basics, Enterprise patterns</p>
+<br>
+<ul>
+<li>**Advanced ML**:</li>
+<li>Random Forest, Gradient Boosting</li>
+<li>Support Vector Machines</li>
+<li>Neural Networks (Feedforward)</li>
+<li>Backpropagation</li>
+<li>CNN, RNN, LSTM basics</li>
+<li>Attention Mechanisms</li>
+<li>ML Optimization: SGD, Adam, Batch Normalization, Dropout</li>
+<li>Enterprise: Message Queue, Pub-Sub, Event Sourcing, CQRS</li>
+<li>Security: Authentication, OAuth, JWT, Encryption</li>
+</ul>
+<br>
+<p><strong>Resource Focus</strong>: GPU vs CPU, batch size, inference latency</p>
+<br>
+<p>---</p>
+<br>
+<h3>Semester 5: Deep Learning & AI Systems (Weeks 61-75)</h3>
+<p><strong>Focus</strong>: Modern AI Architectures, RL, NLP  </p>
+<p><strong>Algorithms</strong>: ~35  </p>
+<p><strong>Key Topics</strong>: State-of-the-art models, Production AI</p>
+<br>
+<ul>
+<li>**Deep Learning Architectures**:</li>
+<li>Transfer Learning, Fine-tuning</li>
+<li>ResNet, VGG, Inception, EfficientNet</li>
+<li>YOLO, R-CNN (Object Detection)</li>
+<li>U-Net, Mask R-CNN (Segmentation)</li>
+<li>Transformer, BERT, GPT</li>
+<li>**Reinforcement Learning**:</li>
+<li>Q-Learning, Deep Q-Networks</li>
+<li>Policy Gradients, Actor-Critic, PPO</li>
+<li>**Advanced NLP**:</li>
+<li>Word2Vec, GloVe</li>
+<li>Seq2Seq, NER</li>
+<li>Ensemble Methods, Hyperparameter Optimization</li>
+<li>Time Series: ARIMA, LSTM, Prophet</li>
+</ul>
+<br>
+<p><strong>Resource Focus</strong>: Model size, VRAM requirements, inference speed</p>
+<br>
+<p>---</p>
+<br>
+<h3>Semester 6: Production ML & MLOps (Weeks 76-90)</h3>
+<p><strong>Focus</strong>: Scalable AI, Deployment, Optimization  </p>
+<p><strong>Algorithms</strong>: ~35  </p>
+<p><strong>Key Topics</strong>: MLOps, Edge AI, Cost optimization</p>
+<br>
+<ul>
+<li>**MLOps**:</li>
+<li>Model Versioning, A/B Testing</li>
+<li>Feature Stores, Monitoring</li>
+<li>Data Drift Detection</li>
+<li>**Distributed ML**:</li>
+<li>Data/Model Parallelism</li>
+<li>Parameter Servers, AllReduce</li>
+<li>Federated Learning</li>
+<li>**Model Optimization**:</li>
+<li>Quantization (INT8, FP16)</li>
+<li>Pruning, Knowledge Distillation</li>
+<li>Neural Architecture Search</li>
+<li>TensorRT, ONNX</li>
+<li>**Edge AI**: TFLite, Mobile/IoT Optimization</li>
+<li>**Deployment**: Blue-Green, Canary, Shadow</li>
+<li>**Cost Optimization**: Spot Instances, Autoscaling, Serverless</li>
+<li>**Monitoring**: Prometheus, Grafana, Alerting</li>
+</ul>
+<br>
+<p><strong>Resource Focus</strong>: Inference cost, edge constraints, latency SLAs</p>
+<br>
+<p>---</p>
+<br>
+<h2>🚀 Quick Start</h2>
+<br>
+<h3>Installation</h3>
+<br>
+<pre><code class="bash">
+# Clone or navigate to the project
+cd Professor
+
+# Install Python dependencies
+pip install -r requirements.txt
+
+# Verify Java (optional for Java examples)
+java -version
+</code></pre>
+<br>
+<h3>Run an Algorithm</h3>
+<br>
+<pre><code class="bash">
+# Python example
+python runner.py --semester 1 --lecture 01 --algorithm bubble_sort
+
+# Java example
+python runner.py --semester 1 --lecture 01 --algorithm bubble_sort --lang java
+
+# ML example
+python runner.py --semester 3 --lecture 12 --algorithm linear_regression
+</code></pre>
+<br>
+<h3>Start Web Interface</h3>
+<br>
+<pre><code class="bash">
+python web_interface/app.py
+</code></pre>
+<br>
+<p>Then open: <a href="http://localhost:5000">http://localhost:5000</a></p>
+<br>
+<p>---</p>
+<br>
+<h2>📊 Performance & Resource Analysis</h2>
+<br>
+<h3>Every Algorithm Includes:</h3>
+<br>
+<div class="alert alert-success">✓ **Execution Time** - Real measurements in milliseconds  </div>
+<div class="alert alert-success">✓ **Memory Usage** - Peak memory consumption  </div>
+<div class="alert alert-success">✓ **Big O Notation** - Time and space complexity  </div>
+<div class="alert alert-success">✓ **Resource Requirements** - CPU, GPU, Network, Storage  </div>
+<div class="alert alert-success">✓ **Constraint Analysis** - When to use based on limitations  </div>
+<br>
+<h3>Example: Algorithm Timing</h3>
+<br>
+<pre><code class="python">
+from framework.performance_timer import PerformanceTimer
+
+timer = PerformanceTimer("Quick Sort")
+result, metrics = timer.measure(quick_sort, data)
+
+print(f"Time: {metrics['execution_time_ms']} ms")
+print(f"Memory: {metrics['memory_peak_kb']} KB")
+</code></pre>
+<br>
+<p>---</p>
+<br>
+<h2>🎯 Algorithm Selection Tool</h2>
+<br>
+<p>Choose the right algorithm based on your constraints:</p>
+<br>
+<pre><code class="python">
+from framework.constraint_selector import (
+    AlgorithmSelector, Constraints, ResourceLevel
+)
+
+# Define constraints
+constraints = Constraints(
+    memory=ResourceLevel.LOW,
+    cpu_power=ResourceLevel.MEDIUM,
+    dataset_size='large',
+    is_edge_device=True,
+    latency_requirement='low'
+)
+
+# Get recommendation
+rec = AlgorithmSelector.select_sorting_algorithm(constraints)
+print(f"Recommended: {rec['recommended']}")
+
+# For ML
+ml_rec = AlgorithmSelector.select_ml_algorithm(
+    constraints, 
+    problem_type='classification'
+)
+</code></pre>
+<br>
+<p>---</p>
+<br>
+<h2>📖 Documentation</h2>
+<br>
+<ul>
+<li>**[QUICKSTART.md](QUICKSTART.md)** - Get started in 5 minutes</li>
+<li>**[COURSE_PLAN_6SEMESTERS.md](COURSE_PLAN_6SEMESTERS.md)** - Detailed curriculum</li>
+<li>**[GPT_GENERATION_PROMPT.md](GPT_GENERATION_PROMPT.md)** - Regeneration guide</li>
+<li>Each algorithm has its own `README.md` with:</li>
+<li>Advantages & Disadvantages</li>
+<li>When to use / When NOT to use</li>
+<li>Common mistakes & misconceptions</li>
+<li>Resource requirements</li>
+<li>Performance characteristics</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<h2>🔬 Resource Constraint Matrix</h2>
+<br>
+<p>| Constraint | Considerations |</p>
+<p>|------------|----------------|</p>
+<p>| <strong>Memory</strong> | Heap size, stack depth, auxiliary space (KB/MB/GB) |</p>
+<p>| <strong>CPU</strong> | Single vs multi-core, clock cycles, utilization (%) |</p>
+<p>| <strong>GPU</strong> | CUDA cores, VRAM usage, tensor operations |</p>
+<p>| <strong>Network</strong> | Bandwidth (Mbps), latency (ms), packet size |</p>
+<p>| <strong>Storage</strong> | Dataset size, model size, checkpoints (MB/GB/TB) |</p>
+<p>| <strong>Power</strong> | Battery impact, thermal constraints (Watts) |</p>
+<p>| <strong>Cost</strong> | Cloud compute ($/hour), inference pricing |</p>
+<br>
+<p>---</p>
+<br>
+<h2>🌟 Highlights</h2>
+<br>
+<h3>AI/ML Emphasis (Semesters 3-6)</h3>
+<br>
+<ul>
+<li>**60 weeks** of AI/ML content (4 semesters)</li>
+<li>From basic **Linear Regression** to **Transformers & GPT**</li>
+<li>**Reinforcement Learning**: Q-Learning to PPO</li>
+<li>**Computer Vision**: YOLO, U-Net, Mask R-CNN</li>
+<li>**NLP**: BERT, GPT, Attention mechanisms</li>
+<li>**Production ML**: MLOps, Distributed training, Edge deployment</li>
+</ul>
+<br>
+<h3>Performance Focus</h3>
+<br>
+<ul>
+<li>All algorithms timed with **real execution**</li>
+<li>Memory profiling with **tracemalloc**</li>
+<li>GPU vs CPU comparisons</li>
+<li>Edge device considerations</li>
+<li>Cost analysis for cloud deployment</li>
+</ul>
+<br>
+<h3>Constraint-Based Selection</h3>
+<br>
+<ul>
+<li>**Low Memory** → In-place algorithms</li>
+<li>**Low CPU** → O(n log n) preferred</li>
+<li>**Edge Device** → Quantized models</li>
+<li>**Real-time** → Fast inference algorithms</li>
+<li>**Large Scale** → Distributed algorithms</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<h2>📁 Repository Structure</h2>
+<br>
+<pre><code class="">
+.
+├── README.md                       # This file
+├── QUICKSTART.md                   # Quick start guide
+├── COURSE_PLAN_6SEMESTERS.md      # Detailed plan
+├── GPT_GENERATION_PROMPT.md       # Regeneration prompt
+├── requirements.txt                # Python dependencies
+├── pom.xml                        # Java dependencies
+├── runner.py                      # Universal runner
+│
+├── framework/
+│   ├── performance_timer.py       # Timing utilities
+│   ├── constraint_selector.py     # Algorithm selector
+│   └── algorithm_template.py      # Template generator
+│
+├── web_interface/
+│   ├── app.py                     # Flask backend
+│   └── templates/
+│       └── index.html             # Web UI
+│
+├── semester_1/ ... semester_6/    # Course content
+│   └── lecture_XX_topic/
+│       └── algorithm_name/
+│           ├── README.md          # Documentation
+│           ├── metadata.json      # Complexity &amp; properties
+│           ├── algorithm.py       # Python impl
+│           └── Algorithm.java     # Java impl
+│
+└── docs/
+    └── [Additional documentation]
+</code></pre>
+<br>
+<p>---</p>
+<br>
+<h2>🎓 Learning Path</h2>
+<br>
+<h3>Beginner → Intermediate (Semesters 1-2)</h3>
+<ol>
+<li>Start with **Semester 1** - Master fundamentals</li>
+<li>Learn **Semester 2** - Design patterns and SOLID</li>
+<li>Practice with web interface</li>
+<li>Benchmark different algorithms</li>
+</ul>
+<br>
+<h3>Intermediate → Advanced (Semesters 3-4)</h3>
+<ol>
+<li>Study **Graph Algorithms** and **Dynamic Programming**</li>
+<li>Learn **ML basics** (Linear Regression, Decision Trees)</li>
+<li>Understand **Neural Networks** and **Deep Learning**</li>
+<li>Practice on real datasets</li>
+</ul>
+<br>
+<h3>Advanced → Expert (Semesters 5-6)</h3>
+<ol>
+<li>Master **Modern Architectures** (Transformers, BERT)</li>
+<li>Learn **Reinforcement Learning**</li>
+<li>Study **MLOps** and **Production Patterns**</li>
+<li>Optimize for **Edge** and **Cloud** deployment</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<h2>🛠️ Use Cases</h2>
+<br>
+<h3>For Students</h3>
+<ul>
+<li>Learn algorithms with practical examples</li>
+<li>Understand resource trade-offs</li>
+<li>Prepare for technical interviews</li>
+<li>Build ML projects</li>
+</ul>
+<br>
+<h3>For Educators</h3>
+<ul>
+<li>Comprehensive curriculum</li>
+<li>Ready-to-use materials</li>
+<li>Performance demonstrations</li>
+<li>Real-world applications</li>
+</ul>
+<br>
+<h3>For Engineers</h3>
+<ul>
+<li>Algorithm selection tool</li>
+<li>Performance benchmarks</li>
+<li>Production patterns</li>
+<li>Constraint-based decisions</li>
+</ul>
+<br>
+<h3>For Researchers</h3>
+<ul>
+<li>Implementation references</li>
+<li>Complexity analysis</li>
+<li>Optimization techniques</li>
+<li>Comparative studies</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<h2>📈 Statistics</h2>
+<br>
+<ul>
+<li>**Total Algorithms**: 180+</li>
+<li>**Code Files**: 360+ (Python + Java)</li>
+<li>**Documentation Pages**: 180+</li>
+<li>**Lines of Code**: 50,000+</li>
+<li>**AI/ML Algorithms**: 80+</li>
+<li>**Design Patterns**: 35+</li>
+<li>**Semesters**: 6</li>
+<li>**Total Weeks**: 90</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<h2>🤝 Contributing</h2>
+<br>
+<p>Contributions welcome! Please:</p>
+<ol>
+<li>Follow the template structure</li>
+<li>Include performance timing</li>
+<li>Add resource constraint analysis</li>
+<li>Provide comprehensive documentation</li>
+<li>Test both Python and Java implementations</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<h2>📄 License</h2>
+<br>
+<p>MIT License - Educational and commercial use permitted with attribution.</p>
+<br>
+<p>---</p>
+<br>
+<h2>🎯 Success Criteria</h2>
+<br>
+<div class="alert alert-success">✅ 180+ algorithm implementations  </div>
+<div class="alert alert-success">✅ Performance timing for all  </div>
+<div class="alert alert-success">✅ Resource constraint analysis  </div>
+<div class="alert alert-success">✅ Python and Java code  </div>
+<div class="alert alert-success">✅ Web interface  </div>
+<div class="alert alert-success">✅ Algorithm selector  </div>
+<div class="alert alert-success">✅ 6 semesters complete  </div>
+<div class="alert alert-success">✅ AI/ML focus (4 semesters)  </div>
+<div class="alert alert-success">✅ Production-ready patterns  </div>
+<br>
+<p>---</p>
+<br>
+<h2>📞 Support</h2>
+<br>
+<ul>
+<li>**Documentation**: See QUICKSTART.md and course plan</li>
+<li>**Issues**: Check each algorithm's README</li>
+<li>**Regeneration**: Use GPT_GENERATION_PROMPT.md</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<h2>🔮 Future Enhancements</h2>
+<br>
+<ul>
+<li>[ ] Video tutorials for each algorithm</li>
+<li>[ ] Interactive visualizations</li>
+<li>[ ] Jupyter notebooks</li>
+<li>[ ] Docker containers</li>
+<li>[ ] Cloud deployment examples</li>
+<li>[ ] Mobile app</li>
+<li>[ ] More language implementations (Rust, Go, C++)</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<p><strong>Created by</strong>: University Professor of Computer Science  </p>
+<p><strong>Focus</strong>: Mathematical Foundations & Practical Implementation  </p>
+<p><strong>Last Updated</strong>: 2025-11-15  </p>
+<p><strong>Version</strong>: 2.0 (6 Semesters Extended)</p>
+<br>
+<p>---</p>
+<br>
+<h2>Quick Links</h2>
+<br>
+<ul>
+<li>[Quick Start](QUICKSTART.md)</li>
+<li>[Full Course Plan](COURSE_PLAN_6SEMESTERS.md)</li>
+<li>[Generation Prompt](GPT_GENERATION_PROMPT.md)</li>
+<li>[Web Interface](http://localhost:5000) (after running `python web_interface/app.py`)</li>
+</ul>
+<br>        </div>
+        <div class="page-break"></div>
+
+        <div class="section" id="quickstart">
+            <h1>Quickstart</h1>
+<h1>Quick Start Guide</h1>
+<br>
+<h2>Installation</h2>
+<br>
+<h3>Prerequisites</h3>
+<ul>
+<li>Python 3.8 or higher</li>
+<li>Java 11 or higher (OpenJDK recommended)</li>
+<li>Maven 3.6+ (for Java builds)</li>
+<li>Git (optional)</li>
+</ul>
+<br>
+<h3>Setup Steps</h3>
+<br>
+<ol>
+<li>**Clone or navigate to the project directory**</li>
+<pre><code class="bash">
+cd Professor
+</code></pre>
+</ul>
+<br>
+<ol>
+<li>**Install Python dependencies**</li>
+<pre><code class="bash">
+pip install -r requirements.txt
+</code></pre>
+</ul>
+<br>
+<ol>
+<li>**Verify Java installation**</li>
+<pre><code class="bash">
+java -version
+javac -version
+</code></pre>
+</ul>
+<br>
+<ol>
+<li>**Optional: Build Java components**</li>
+<pre><code class="bash">
+mvn install
+</code></pre>
+</ul>
+<br>
+<h2>Running Algorithms</h2>
+<br>
+<h3>Method 1: Command Line Runner</h3>
+<br>
+<p>Run any algorithm directly:</p>
+<pre><code class="bash">
+# Python example
+python runner.py --semester 1 --lecture 01 --algorithm bubble_sort
+
+# Java example
+python runner.py --semester 1 --lecture 01 --algorithm bubble_sort --lang java
+
+# Quick Sort
+python runner.py --semester 1 --lecture 02 --algorithm quick_sort
+
+# Binary Search
+python runner.py --semester 1 --lecture 04 --algorithm binary_search
+</code></pre>
+<br>
+<h3>Method 2: Web Interface</h3>
+<br>
+<p>Start the web server:</p>
+<pre><code class="bash">
+python web_interface/app.py
+</code></pre>
+<br>
+<p>Then open your browser to:</p>
+<pre><code class="">
+http://localhost:5000
+</code></pre>
+<br>
+<p>Features:</p>
+<ul>
+<li>Browse all algorithms by semester</li>
+<li>Filter by category and complexity</li>
+<li>Run algorithms directly in browser</li>
+<li>View performance metrics</li>
+<li>Compare multiple algorithms</li>
+</ul>
+<br>
+<h3>Method 3: Direct Execution</h3>
+<br>
+<p>Navigate to any algorithm folder and run directly:</p>
+<pre><code class="bash">
+# Python
+cd semester_1/lecture_01_sorting_fundamentals/bubble_sort
+python algorithm.py
+
+# Java
+cd semester_1/lecture_01_sorting_fundamentals/bubble_sort
+javac Algorithm.java
+java Algorithm
+</code></pre>
+<br>
+<h2>Using the Performance Timer</h2>
+<br>
+<pre><code class="python">
+from framework.performance_timer import PerformanceTimer
+
+# Create timer
+timer = PerformanceTimer("My Algorithm")
+
+# Measure performance
+result, metrics = timer.measure(my_function, data)
+
+# Print summary
+timer.print_summary()
+</code></pre>
+<br>
+<h2>Using the Algorithm Selector</h2>
+<br>
+<pre><code class="python">
+from framework.constraint_selector import (
+    AlgorithmSelector, 
+    Constraints, 
+    ResourceLevel,
+    print_recommendation
+)
+
+# Define your constraints
+constraints = Constraints(
+    memory=ResourceLevel.LOW,
+    cpu_power=ResourceLevel.MEDIUM,
+    dataset_size='large',
+    is_edge_device=True,
+    latency_requirement='low'
+)
+
+# Get sorting algorithm recommendation
+recommendation = AlgorithmSelector.select_sorting_algorithm(constraints)
+print_recommendation(recommendation)
+
+# Get ML algorithm recommendation
+ml_recommendation = AlgorithmSelector.select_ml_algorithm(
+    constraints, 
+    problem_type='classification'
+)
+print_recommendation(ml_recommendation)
+</code></pre>
+<br>
+<h2>Course Navigation</h2>
+<br>
+<h3>Semester 1: Foundations</h3>
+<pre><code class="bash">
+cd semester_1
+ls -la  # See all lectures
+</code></pre>
+<br>
+<p><strong>Key Topics:</strong></p>
+<ul>
+<li>Sorting algorithms</li>
+<li>Searching algorithms</li>
+<li>Trees and data structures</li>
+</ul>
+<br>
+<h3>Semester 2: Design Patterns</h3>
+<pre><code class="bash">
+cd semester_2
+</code></pre>
+<br>
+<p><strong>Key Topics:</strong></p>
+<ul>
+<li>SOLID principles</li>
+<li>Creational, Structural, Behavioral patterns</li>
+<li>Architectural patterns</li>
+</ul>
+<br>
+<h3>Semester 3: Advanced Algorithms & ML Foundations</h3>
+<pre><code class="bash">
+cd semester_3
+</code></pre>
+<br>
+<p><strong>Key Topics:</strong></p>
+<ul>
+<li>Graph algorithms</li>
+<li>Dynamic programming</li>
+<li>Basic ML algorithms (Linear Regression, KNN, Decision Trees)</li>
+</ul>
+<br>
+<h3>Semester 4: ML Algorithms & Enterprise</h3>
+<pre><code class="bash">
+cd semester_4
+</code></pre>
+<br>
+<p><strong>Key Topics:</strong></p>
+<ul>
+<li>Neural Networks</li>
+<li>CNN, RNN, LSTM</li>
+<li>Security patterns</li>
+<li>Integration patterns</li>
+</ul>
+<br>
+<h3>Semester 5: Deep Learning & AI</h3>
+<pre><code class="bash">
+cd semester_5
+</code></pre>
+<br>
+<p><strong>Key Topics:</strong></p>
+<ul>
+<li>Deep Learning architectures (ResNet, Transformers)</li>
+<li>Reinforcement Learning</li>
+<li>NLP algorithms</li>
+</ul>
+<br>
+<h3>Semester 6: Production ML</h3>
+<pre><code class="bash">
+cd semester_6
+</code></pre>
+<br>
+<p><strong>Key Topics:</strong></p>
+<ul>
+<li>MLOps patterns</li>
+<li>Distributed ML</li>
+<li>Model optimization</li>
+<li>Deployment patterns</li>
+</ul>
+<br>
+<h2>Example Workflows</h2>
+<br>
+<h3>1. Compare Sorting Algorithms</h3>
+<pre><code class="python">
+from framework.performance_timer import compare_algorithms
+
+# Import your sorting functions
+from semester_1.lecture_01_sorting_fundamentals.bubble_sort.algorithm import bubble_sort
+from semester_1.lecture_02_efficient_sorting.quick_sort.algorithm import quick_sort
+
+algorithms = [
+    ("Bubble Sort", bubble_sort),
+    ("Quick Sort", quick_sort),
+]
+
+compare_algorithms(algorithms, dataset_size=1000)
+</code></pre>
+<br>
+<h3>2. Benchmark an Algorithm</h3>
+<pre><code class="python">
+from framework.performance_timer import benchmark
+
+@benchmark(dataset_sizes=[10, 100, 1000, 10000])
+def my_sort(arr):
+    return sorted(arr)
+
+my_sort([1, 2, 3])  # Triggers benchmark
+</code></pre>
+<br>
+<h3>3. Analyze Resource Constraints</h3>
+<pre><code class="python">
+from framework.performance_timer import PerformanceTimer, ResourceAnalyzer
+
+timer = PerformanceTimer("Algorithm Name")
+result, metrics = timer.measure(my_function, data)
+
+analysis = ResourceAnalyzer.analyze_constraints(
+    algorithm_name="My Algorithm",
+    time_complexity="O(n log n)",
+    space_complexity="O(n)",
+    metrics=timer.get_summary()
+)
+
+ResourceAnalyzer.print_analysis(analysis)
+</code></pre>
+<br>
+<h2>Troubleshooting</h2>
+<br>
+<h3>Python Issues</h3>
+<pre><code class="bash">
+# Check Python version
+python --version  # Should be 3.8+
+
+# Reinstall dependencies
+pip install --upgrade -r requirements.txt
+
+# Check installed packages
+pip list
+</code></pre>
+<br>
+<h3>Java Issues</h3>
+<pre><code class="bash">
+# Check Java version
+java -version  # Should be 11+
+javac -version
+
+# Clean and rebuild
+mvn clean install
+</code></pre>
+<br>
+<h3>Web Interface Issues</h3>
+<pre><code class="bash">
+# Check if Flask is installed
+pip show flask
+
+# Run with debug mode
+python web_interface/app.py --debug
+
+# Check port availability
+netstat -an | grep 5000
+</code></pre>
+<br>
+<h3>Common Errors</h3>
+<br>
+<p><strong>Error: Module not found</strong></p>
+<pre><code class="bash">
+# Make sure you're in the project root
+cd /path/to/Professor
+
+# Install requirements
+pip install -r requirements.txt
+</code></pre>
+<br>
+<p><strong>Error: Java file not found</strong></p>
+<pre><code class="bash">
+# Compile first
+javac Algorithm.java
+# Then run
+java Algorithm
+</code></pre>
+<br>
+<p><strong>Error: Port 5000 already in use</strong></p>
+<pre><code class="bash">
+# Kill the process
+# On Linux/Mac:
+lsof -ti:5000 | xargs kill -9
+
+# On Windows:
+netstat -ano | findstr :5000
+taskkill /PID &lt;PID&gt; /F
+</code></pre>
+<br>
+<h2>Performance Tips</h2>
+<br>
+<ol>
+<li>**For large datasets**: Use optimized algorithms (Quick Sort, Merge Sort)</li>
+<li>**For low memory**: Use in-place algorithms (Heap Sort, Quick Sort)</li>
+<li>**For edge devices**: Use lightweight algorithms (Linear/Logistic Regression)</li>
+<li>**For production ML**: Use ensemble methods (Random Forest, XGBoost)</li>
+<li>**For real-time inference**: Use cached models and quantization</li>
+</ul>
+<br>
+<h2>Next Steps</h2>
+<br>
+<ol>
+<li>**Explore the course plan**: Read `COURSE_PLAN_6SEMESTERS.md`</li>
+<li>**Try different algorithms**: Navigate through semesters</li>
+<li>**Use the web interface**: Visual exploration of algorithms</li>
+<li>**Benchmark algorithms**: Compare performance</li>
+<li>**Get recommendations**: Use constraint-based selector</li>
+</ul>
+<br>
+<h2>Getting Help</h2>
+<br>
+<ul>
+<li>Read the main `README.md`</li>
+<li>Check `COURSE_PLAN_6SEMESTERS.md` for course structure</li>
+<li>See `GPT_GENERATION_PROMPT.md` for detailed specifications</li>
+<li>Each algorithm has its own `README.md` with detailed documentation</li>
+</ul>
+<br>
+<h2>Contributing</h2>
+<br>
+<p>To add new algorithms:</p>
+<ol>
+<li>Follow the template structure</li>
+<li>Include performance timing</li>
+<li>Add resource constraint analysis</li>
+<li>Update web interface</li>
+<li>Document thoroughly</li>
+</ul>
+<br>
+<h2>License</h2>
+<br>
+<p>MIT License - See LICENSE file for details</p>
+<br>
+<br>        </div>
+        <div class="page-break"></div>
+
+        <div class="section" id="course-plan-6semesters">
+            <h1>Course Plan 6Semesters</h1>
+<h1>Detailed Course Plan - 6 Semesters (Extended)</h1>
+<h2>Focus: AI/ML Algorithms with Resource Constraint Analysis</h2>
+<br>
+<p>---</p>
+<br>
+<h2>Course Overview</h2>
+<br>
+<p>This expanded 6-semester course emphasizes:</p>
+<ul>
+<li>**AI/ML algorithms** across 3+ semesters (3, 4, 5, 6)</li>
+<li>**Performance timing** for all implementations</li>
+<li>**Resource requirements** (CPU, memory, network, storage)</li>
+<li>**Constraint-based algorithm selection**</li>
+<li>**Trade-off analysis** for real-world scenarios</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<h2>Semester 1: Foundations (15 weeks, ~25 lectures)</h2>
+<br>
+<h3>Module 1: Algorithm Analysis & Complexity (Weeks 1-2)</h3>
+<ol>
+<li>Big O notation and complexity analysis</li>
+<li>Time vs Space trade-offs</li>
+<li>Best, average, and worst case analysis</li>
+<li>Empirical performance measurement</li>
+</ul>
+<br>
+<h3>Module 2: Sorting Algorithms (Weeks 3-6)</h3>
+<ol>
+<li>Bubble Sort</li>
+</ul>
+<p>6. Selection Sort</p>
+<p>7. Insertion Sort</p>
+<p>8. Merge Sort</p>
+<p>9. Quick Sort</p>
+<p>10. Heap Sort</p>
+<p>11. Counting Sort</p>
+<p>12. Radix Sort</p>
+<p>13. Bucket Sort</p>
+<p>14. Tim Sort</p>
+<br>
+<p><strong>Resource Focus</strong>: Memory constraints, cache efficiency, </p>
+<p>comparison counts</p>
+<br>
+<h3>Module 3: Searching Algorithms (Weeks 7-9)</h3>
+<p>15. Linear Search</p>
+<p>16. Binary Search</p>
+<p>17. Jump Search</p>
+<p>18. Interpolation Search</p>
+<p>19. Exponential Search</p>
+<p>20. Ternary Search</p>
+<br>
+<p><strong>Resource Focus</strong>: Sorted vs unsorted data, memory access patterns</p>
+<br>
+<h3>Module 4: Basic Data Structures (Weeks 10-12)</h3>
+<p>21. Arrays and Dynamic Arrays</p>
+<p>22. Linked Lists</p>
+<p>23. Stacks and Queues</p>
+<p>24. Hash Tables</p>
+<p>25. Collision Resolution Strategies</p>
+<br>
+<h3>Module 5: Trees (Weeks 13-15)</h3>
+<p>26. Binary Trees</p>
+<p>27. Binary Search Trees</p>
+<p>28. AVL Trees</p>
+<p>29. Red-Black Trees</p>
+<p>30. B-Trees and B+ Trees</p>
+<br>
+<p><strong>Total Semester 1</strong>: ~30 lectures</p>
+<br>
+<p>---</p>
+<br>
+<h2>Semester 2: Software Design Patterns (15 weeks, ~30 lectures)</h2>
+<br>
+<h3>Module 6: SOLID Principles (Weeks 16-17)</h3>
+<p>31. Single Responsibility Principle</p>
+<p>32. Open/Closed Principle</p>
+<p>33. Liskov Substitution Principle</p>
+<p>34. Interface Segregation Principle</p>
+<p>35. Dependency Inversion Principle</p>
+<br>
+<h3>Module 7: Creational Patterns (Weeks 18-20)</h3>
+<p>36. Singleton Pattern</p>
+<p>37. Factory Method Pattern</p>
+<p>38. Abstract Factory Pattern</p>
+<p>39. Builder Pattern</p>
+<p>40. Prototype Pattern</p>
+<p>41. Object Pool Pattern</p>
+<br>
+<h3>Module 8: Structural Patterns (Weeks 21-23)</h3>
+<p>42. Adapter Pattern</p>
+<p>43. Bridge Pattern</p>
+<p>44. Composite Pattern</p>
+<p>45. Decorator Pattern</p>
+<p>46. Facade Pattern</p>
+<p>47. Flyweight Pattern (Memory Optimization)</p>
+<p>48. Proxy Pattern</p>
+<br>
+<h3>Module 9: Behavioral Patterns (Weeks 24-28)</h3>
+<p>49. Observer Pattern</p>
+<p>50. Strategy Pattern</p>
+<p>51. Command Pattern</p>
+<p>52. Iterator Pattern</p>
+<p>53. Template Method Pattern</p>
+<p>54. Chain of Responsibility</p>
+<p>55. State Pattern</p>
+<p>56. Mediator Pattern</p>
+<p>57. Memento Pattern</p>
+<p>58. Visitor Pattern</p>
+<br>
+<h3>Module 10: Concurrency Patterns (Weeks 29-30)</h3>
+<p>59. Thread Pool Pattern</p>
+<p>60. Producer-Consumer Pattern</p>
+<p>61. Readers-Writers Lock</p>
+<p>62. Monitor Object Pattern</p>
+<br>
+<p><strong>Total Semester 2</strong>: ~32 lectures</p>
+<br>
+<p>---</p>
+<br>
+<h2>Semester 3: Advanced Algorithms & ML Foundations (15 weeks, ~35 lectures)</h2>
+<br>
+<h3>Module 11: Graph Algorithms (Weeks 31-34)</h3>
+<p>63. Graph Representations (Adjacency Matrix vs List)</p>
+<p>64. Depth-First Search (DFS)</p>
+<p>65. Breadth-First Search (BFS)</p>
+<p>66. Dijkstra's Algorithm</p>
+<p>67. Bellman-Ford Algorithm</p>
+<p>68. Floyd-Warshall Algorithm</p>
+<p>69. A* Search Algorithm</p>
+<p>70. Kruskal's Algorithm (MST)</p>
+<p>71. Prim's Algorithm (MST)</p>
+<p>72. Topological Sort</p>
+<p>73. Strongly Connected Components</p>
+<p>74. Network Flow Algorithms</p>
+<br>
+<p><strong>Resource Focus</strong>: Graph density, memory vs computation trade-offs</p>
+<br>
+<h3>Module 12: Dynamic Programming (Weeks 35-37)</h3>
+<p>75. Fibonacci Sequences (Multiple Approaches)</p>
+<p>76. Longest Common Subsequence</p>
+<p>77. Knapsack Problem (0/1 and Fractional)</p>
+<p>78. Edit Distance (Levenshtein)</p>
+<p>79. Matrix Chain Multiplication</p>
+<p>80. Coin Change Problem</p>
+<p>81. Rod Cutting Problem</p>
+<br>
+<p><strong>Resource Focus</strong>: Memoization vs Tabulation, space optimization</p>
+<br>
+<h3>Module 13: ML Foundations (Weeks 38-42)</h3>
+<p>82. <strong>Linear Regression</strong> (Gradient Descent)</p>
+<p>83. <strong>Logistic Regression</strong> (Binary Classification)</p>
+<p>84. <strong>K-Nearest Neighbors (KNN)</strong></p>
+<p>85. <strong>Naive Bayes Classifier</strong></p>
+<p>86. <strong>Decision Trees</strong> (ID3, C4.5, CART)</p>
+<p>87. <strong>K-Means Clustering</strong></p>
+<p>88. <strong>Hierarchical Clustering</strong></p>
+<p>89. <strong>Principal Component Analysis (PCA)</strong></p>
+<br>
+<p><strong>Resource Focus</strong>: Dataset size, feature dimensions, training time, </p>
+<p>inference latency</p>
+<br>
+<h3>Module 14: String & Pattern Matching (Weeks 43-45)</h3>
+<p>90. KMP String Matching</p>
+<p>91. Rabin-Karp Algorithm</p>
+<p>92. Boyer-Moore Algorithm</p>
+<p>93. Aho-Corasick Algorithm</p>
+<p>94. Suffix Arrays and Trees</p>
+<br>
+<p><strong>Total Semester 3</strong>: ~35 lectures</p>
+<br>
+<p>---</p>
+<br>
+<h2>Semester 4: ML Algorithms & Enterprise Patterns (15 weeks, ~35 lectures)</h2>
+<br>
+<h3>Module 15: Advanced ML Algorithms (Weeks 46-50)</h3>
+<p>95. <strong>Random Forest</strong></p>
+<p>96. <strong>Gradient Boosting (XGBoost, LightGBM)</strong></p>
+<p>97. <strong>Support Vector Machines (SVM)</strong></p>
+<p>98. <strong>Neural Networks</strong> (Feedforward)</p>
+<p>99. <strong>Backpropagation Algorithm</strong></p>
+<p>100. <strong>Convolutional Neural Networks (CNN) Basics</strong></p>
+<p>101. <strong>Recurrent Neural Networks (RNN) Basics</strong></p>
+<p>102. <strong>Long Short-Term Memory (LSTM)</strong></p>
+<p>103. <strong>Attention Mechanisms</strong></p>
+<br>
+<p><strong>Resource Focus</strong>: GPU vs CPU, batch size, memory requirements, </p>
+<p>training vs inference</p>
+<br>
+<h3>Module 16: ML Optimization (Weeks 51-53)</h3>
+<p>104. <strong>Stochastic Gradient Descent (SGD)</strong></p>
+<p>105. <strong>Adam Optimizer</strong></p>
+<p>106. <strong>Learning Rate Scheduling</strong></p>
+<p>107. <strong>Batch Normalization</strong></p>
+<p>108. <strong>Dropout Regularization</strong></p>
+<p>109. <strong>Early Stopping</strong></p>
+<br>
+<h3>Module 17: Enterprise Integration (Weeks 54-57)</h3>
+<p>110. Message Queue Pattern</p>
+<p>111. Publish-Subscribe Pattern</p>
+<p>112. Event Sourcing</p>
+<p>113. CQRS Pattern</p>
+<p>114. Saga Pattern</p>
+<p>115. API Gateway Pattern</p>
+<br>
+<p><strong>Resource Focus</strong>: Network bandwidth, latency, message size</p>
+<br>
+<h3>Module 18: Security Patterns (Weeks 58-60)</h3>
+<p>116. Authentication Patterns</p>
+<p>117. Authorization & RBAC</p>
+<p>118. OAuth 2.0</p>
+<p>119. JWT Implementation</p>
+<p>120. Encryption (AES, RSA)</p>
+<p>121. Hashing (SHA-256, bcrypt)</p>
+<br>
+<p><strong>Total Semester 4</strong>: ~35 lectures</p>
+<br>
+<p>---</p>
+<br>
+<h2>Semester 5: Deep Learning & AI Systems (15 weeks, ~35 lectures)</h2>
+<br>
+<h3>Module 19: Deep Learning Architectures (Weeks 61-65)</h3>
+<p>122. <strong>Transfer Learning</strong></p>
+<p>123. <strong>ResNet Architecture</strong></p>
+<p>124. <strong>VGG Architecture</strong></p>
+<p>125. <strong>Inception Networks</strong></p>
+<p>126. <strong>YOLO (Object Detection)</strong></p>
+<p>127. <strong>U-Net (Segmentation)</strong></p>
+<p>128. <strong>Transformer Architecture</strong></p>
+<p>129. <strong>BERT and Language Models</strong></p>
+<p>130. <strong>GPT Architecture Basics</strong></p>
+<br>
+<p><strong>Resource Focus</strong>: Model size, VRAM requirements, inference speed, </p>
+<p>quantization</p>
+<br>
+<h3>Module 20: Advanced ML Techniques (Weeks 66-69)</h3>
+<p>131. <strong>Ensemble Methods</strong></p>
+<p>132. <strong>Hyperparameter Optimization</strong> (Grid, Random, Bayesian)</p>
+<p>133. <strong>Cross-Validation Strategies</strong></p>
+<p>134. <strong>Feature Engineering</strong></p>
+<p>135. <strong>Feature Selection Algorithms</strong></p>
+<p>136. <strong>Dimensionality Reduction</strong> (t-SNE, UMAP)</p>
+<p>137. <strong>Anomaly Detection Algorithms</strong></p>
+<p>138. <strong>Time Series Forecasting</strong> (ARIMA, Prophet)</p>
+<br>
+<h3>Module 21: Reinforcement Learning (Weeks 70-73)</h3>
+<p>139. <strong>Q-Learning</strong></p>
+<p>140. <strong>Deep Q-Networks (DQN)</strong></p>
+<p>141. <strong>Policy Gradients</strong></p>
+<p>142. <strong>Actor-Critic Methods</strong></p>
+<p>143. <strong>Proximal Policy Optimization (PPO)</strong></p>
+<p>144. <strong>Monte Carlo Tree Search (MCTS)</strong></p>
+<br>
+<p><strong>Resource Focus</strong>: Exploration vs exploitation, computational budget, </p>
+<p>sample efficiency</p>
+<br>
+<h3>Module 22: Natural Language Processing (Weeks 74-75)</h3>
+<p>145. <strong>Word Embeddings</strong> (Word2Vec, GloVe)</p>
+<p>146. <strong>Sequence-to-Sequence Models</strong></p>
+<p>147. <strong>Named Entity Recognition (NER)</strong></p>
+<p>148. <strong>Sentiment Analysis</strong></p>
+<p>149. <strong>Text Generation Algorithms</strong></p>
+<br>
+<p><strong>Total Semester 5</strong>: ~28 lectures</p>
+<br>
+<p>---</p>
+<br>
+<h2>Semester 6: Production ML & Scalable AI (15 weeks, ~35 lectures)</h2>
+<br>
+<h3>Module 23: ML Operations (MLOps) (Weeks 76-79)</h3>
+<p>150. <strong>Model Versioning</strong></p>
+<p>151. <strong>A/B Testing for ML Models</strong></p>
+<p>152. <strong>Feature Store Patterns</strong></p>
+<p>153. <strong>Model Monitoring</strong></p>
+<p>154. <strong>Data Drift Detection</strong></p>
+<p>155. <strong>Model Retraining Strategies</strong></p>
+<p>156. <strong>Continuous Training Pipelines</strong></p>
+<br>
+<p><strong>Resource Focus</strong>: Storage for features, monitoring overhead, </p>
+<p>retraining frequency</p>
+<br>
+<h3>Module 24: Distributed ML (Weeks 80-83)</h3>
+<p>157. <strong>Data Parallelism</strong></p>
+<p>158. <strong>Model Parallelism</strong></p>
+<p>159. <strong>Parameter Server Architecture</strong></p>
+<p>160. <strong>AllReduce Algorithm</strong></p>
+<p>161. <strong>Federated Learning</strong></p>
+<p>162. <strong>MapReduce for ML</strong></p>
+<p>163. <strong>Spark MLlib Patterns</strong></p>
+<br>
+<p><strong>Resource Focus</strong>: Network bandwidth, synchronization overhead, </p>
+<p>fault tolerance</p>
+<br>
+<h3>Module 25: Model Optimization (Weeks 84-87)</h3>
+<p>164. <strong>Model Quantization</strong> (INT8, FP16)</p>
+<p>165. <strong>Model Pruning</strong></p>
+<p>166. <strong>Knowledge Distillation</strong></p>
+<p>167. <strong>Neural Architecture Search (NAS)</strong></p>
+<p>168. <strong>TensorRT Optimization</strong></p>
+<p>169. <strong>ONNX Conversion</strong></p>
+<p>170. <strong>Edge AI Deployment</strong></p>
+<br>
+<p><strong>Resource Focus</strong>: Mobile/edge constraints, latency requirements, </p>
+<p>power consumption</p>
+<br>
+<h3>Module 26: Deployment & Monitoring (Weeks 88-90)</h3>
+<p>171. <strong>Blue-Green Deployment for ML</strong></p>
+<p>172. <strong>Canary Deployment</strong></p>
+<p>173. <strong>Shadow Deployment</strong></p>
+<p>174. <strong>Circuit Breaker Pattern</strong></p>
+<p>175. <strong>Rate Limiting for APIs</strong></p>
+<p>176. <strong>Caching Strategies for ML</strong></p>
+<p>177. <strong>Load Balancing for Inference</strong></p>
+<p>178. <strong>Distributed Tracing</strong></p>
+<p>179. <strong>Performance Profiling</strong></p>
+<p>180. <strong>Cost Optimization Strategies</strong></p>
+<br>
+<p><strong>Resource Focus</strong>: Inference cost, latency SLAs, throughput, </p>
+<p>auto-scaling</p>
+<br>
+<p><strong>Total Semester 6</strong>: ~31 lectures</p>
+<br>
+<p>---</p>
+<br>
+<h2>Total Course Summary</h2>
+<br>
+<ul>
+<li>**Total Lectures**: ~195 algorithm/pattern implementations</li>
+<li>**ML/AI Content**: Semesters 3, 4, 5, 6 (4 semesters, 60 weeks)</li>
+<li>**Each includes**:</li>
+<li>Performance timing (real execution time)</li>
+<li>Space complexity analysis</li>
+<li>CPU/GPU requirements</li>
+<li>Network bandwidth considerations</li>
+<li>Memory footprint</li>
+<li>Trade-off analysis</li>
+<li>Constraint-based selection guide</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<h2>Resource Constraint Matrix</h2>
+<br>
+<p>Each algorithm includes analysis for:</p>
+<br>
+<p>| Constraint | Considerations |</p>
+<p>|------------|----------------|</p>
+<p>| <strong>Memory</strong> | Heap size, stack depth, auxiliary space |</p>
+<p>| <strong>CPU</strong> | Single-core vs multi-core, SIMD support |</p>
+<p>| <strong>GPU</strong> | CUDA cores, VRAM, tensor operations |</p>
+<p>| <strong>Network</strong> | Bandwidth, latency, distributed communication |</p>
+<p>| <strong>Storage</strong> | Dataset size, model size, checkpoint storage |</p>
+<p>| <strong>Power</strong> | Battery life, thermal constraints (edge) |</p>
+<p>| <strong>Cost</strong> | Cloud compute costs, inference pricing |</p>
+<br>
+<p>---</p>
+<br>
+<h2>Performance Benchmarking</h2>
+<br>
+<p>All algorithms measured on:</p>
+<ul>
+<li>**Small dataset**: n ≤ 100</li>
+<li>**Medium dataset**: 100 < n ≤ 10,000</li>
+<li>**Large dataset**: n > 10,000</li>
+</ul>
+<br>
+<p>With constraints:</p>
+<ul>
+<li>Low memory (< 1 GB)</li>
+<li>Standard memory (1-8 GB)</li>
+<li>High memory (> 8 GB)</li>
+</ul>
+<br>
+<p>---</p>
+<br>
+<h2>Algorithm Selection Decision Trees</h2>
+<br>
+<p>Provided for each category:</p>
+<ul>
+<li>Sorting: When to use Quick vs Merge vs Tim Sort</li>
+<li>Searching: Binary vs Hash vs Tree-based</li>
+<li>ML: Linear vs Tree vs Neural Network</li>
+<li>Deployment: Edge vs Cloud vs Hybrid</li>
+</ul>
+<br>
+<br>        </div>
+        <div class="page-break"></div>
+
+        <div class="section" id="algorithm-index">
+            <h1>Algorithm Index</h1>
+<h1>Complete Algorithm Index</h1>
+<br>
+<h2>Total: 184 Algorithms Across 6 Semesters</h2>
+<br>
+<p>---</p>
+<br>
+<h2>Semester 1: Foundations (~30 algorithms)</h2>
+<br>
+<h3>Lecture 01: Sorting Fundamentals</h3>
+<ol>
+<li>Bubble Sort - O(n²) time, O(1) space</li>
+<li>Selection Sort - O(n²) time, O(1) space</li>
+<li>Insertion Sort - O(n²) time, O(1) space</li>
+</ul>
+<br>
+<h3>Lecture 02: Efficient Sorting</h3>
+<ol>
+<li>Merge Sort - O(n log n) time, O(n) space</li>
+<li>Quick Sort - O(n log n) time, O(log n) space</li>
+</ul>
+<p>6. Heap Sort - O(n log n) time, O(1) space</p>
+<br>
+<h3>Lecture 03: Specialized Sorting</h3>
+<p>7. Counting Sort - O(n + k) time, O(k) space</p>
+<p>8. Radix Sort - O(nk) time, O(n + k) space</p>
+<p>9. Bucket Sort - O(n + k) time, O(n) space</p>
+<br>
+<h3>Lecture 04: Searching</h3>
+<p>10. Linear Search - O(n) time, O(1) space</p>
+<p>11. Binary Search - O(log n) time, O(1) space</p>
+<p>12. Jump Search - O(√n) time, O(1) space</p>
+<p>13. Interpolation Search - O(log log n) time, O(1) space</p>
+<br>
+<h3>Lecture 05: Trees</h3>
+<p>14. Binary Tree - O(n) time, O(n) space</p>
+<p>15. Binary Search Tree - O(log n) time, O(n) space</p>
+<p>16. AVL Tree - O(log n) time, O(n) space</p>
+<br>
+<h3>Lecture 06: Advanced Trees</h3>
+<p>17. Red-Black Tree - O(log n) time, O(n) space</p>
+<p>18. B-Tree - O(log n) time, O(n) space</p>
+<p>19. Trie - O(m) time, O(n*m) space</p>
+<br>
+<h3>Lecture 07: Heaps & Priority Queues</h3>
+<p>20. Binary Heap - O(log n) time, O(n) space</p>
+<p>21. Priority Queue - O(log n) time, O(n) space</p>
+<p>22. Fibonacci Heap - O(1) time, O(n) space</p>
+<br>
+<h3>Lecture 08: Hash Tables</h3>
+<p>23. Hash Table - O(1) time, O(n) space</p>
+<p>24. Chaining - O(1) time, O(n) space</p>
+<p>25. Open Addressing - O(1) time, O(n) space</p>
+<br>
+<p>---</p>
+<br>
+<h2>Semester 2: Design Patterns (~32 patterns)</h2>
+<br>
+<h3>Lecture 06: SOLID Principles</h3>
+<p>26. Single Responsibility Principle</p>
+<p>27. Open/Closed Principle</p>
+<p>28. Liskov Substitution Principle</p>
+<p>29. Interface Segregation Principle</p>
+<p>30. Dependency Inversion Principle</p>
+<br>
+<h3>Lecture 07: Creational Patterns</h3>
+<p>31. Singleton Pattern</p>
+<p>32. Factory Method Pattern</p>
+<p>33. Abstract Factory Pattern</p>
+<p>34. Builder Pattern</p>
+<p>35. Prototype Pattern</p>
+<br>
+<h3>Lecture 08: Structural Patterns</h3>
+<p>36. Adapter Pattern</p>
+<p>37. Bridge Pattern</p>
+<p>38. Composite Pattern</p>
+<p>39. Decorator Pattern</p>
+<p>40. Facade Pattern</p>
+<p>41. Proxy Pattern</p>
+<br>
+<h3>Lecture 09: Behavioral Patterns</h3>
+<p>42. Observer Pattern</p>
+<p>43. Strategy Pattern</p>
+<p>44. Command Pattern</p>
+<p>45. Iterator Pattern</p>
+<p>46. Template Method Pattern</p>
+<p>47. Chain of Responsibility</p>
+<br>
+<h3>Lecture 10: Architectural Patterns</h3>
+<p>48. MVC Pattern</p>
+<p>49. MVVM Pattern</p>
+<p>50. Clean Architecture</p>
+<p>51. Hexagonal Architecture</p>
+<br>
+<h3>Lecture 11: Repository Patterns</h3>
+<p>52. Repository Pattern</p>
+<p>53. Unit of Work</p>
+<p>54. Data Mapper</p>
+<br>
+<h3>Lecture 12: Concurrency Patterns</h3>
+<p>55. Thread Pool Pattern</p>
+<p>56. Producer-Consumer Pattern</p>
+<p>57. Readers-Writers Lock</p>
+<br>
+<p>---</p>
+<br>
+<h2>Semester 3: Advanced Algorithms & ML Foundations (~35 algorithms)</h2>
+<br>
+<h3>Lecture 10: Graph Algorithms</h3>
+<p>58. Depth-First Search (DFS) - O(V + E)</p>
+<p>59. Breadth-First Search (BFS) - O(V + E)</p>
+<p>60. Dijkstra's Algorithm - O(E log V)</p>
+<p>61. Bellman-Ford Algorithm - O(VE)</p>
+<p>62. Floyd-Warshall Algorithm - O(V³)</p>
+<br>
+<h3>Lecture 11: Dynamic Programming</h3>
+<p>63. Fibonacci Sequence - O(n)</p>
+<p>64. Longest Common Subsequence - O(mn)</p>
+<p>65. Knapsack Problem - O(nW)</p>
+<p>66. Edit Distance - O(mn)</p>
+<br>
+<h3>Lecture 12: ML Algorithms</h3>
+<p>67. Linear Regression - O(n²d)</p>
+<p>68. Logistic Regression - O(nd)</p>
+<p>69. K-Nearest Neighbors - O(nd)</p>
+<p>70. Decision Tree - O(n log n)</p>
+<p>71. K-Means Clustering - O(nki)</p>
+<br>
+<h3>Lecture 13: Integration Patterns</h3>
+<p>72. Message Queue Pattern</p>
+<p>73. Publish-Subscribe Pattern</p>
+<p>74. Event Sourcing</p>
+<p>75. CQRS Pattern</p>
+<br>
+<h3>Lecture 14: String Algorithms</h3>
+<p>76. KMP String Matching - O(n + m)</p>
+<p>77. Rabin-Karp Algorithm - O(n + m)</p>
+<p>78. Boyer-Moore Algorithm - O(n/m)</p>
+<br>
+<h3>Lecture 15: Greedy Algorithms</h3>
+<p>79. Huffman Coding - O(n log n)</p>
+<p>80. Activity Selection - O(n log n)</p>
+<p>81. Fractional Knapsack - O(n log n)</p>
+<br>
+<h3>Lecture 16: Advanced ML</h3>
+<p>82. Neural Network Basics - O(n<em>d</em>h)</p>
+<p>83. Gradient Descent - O(n<em>d</em>i)</p>
+<p>84. Support Vector Machine - O(n²)</p>
+<p>85. Random Forest - O(n log n)</p>
+<br>
+<p>---</p>
+<br>
+<h2>Semester 4: ML & Enterprise (~35 algorithms)</h2>
+<br>
+<h3>Lecture 14: Security Patterns</h3>
+<p>86. Authentication Pattern</p>
+<p>87. Authorization Pattern</p>
+<p>88. OAuth 2.0</p>
+<p>89. JWT (JSON Web Tokens)</p>
+<p>90. Encryption Algorithms</p>
+<br>
+<h3>Lecture 15: Testing Patterns</h3>
+<p>91. Unit Testing Pattern</p>
+<p>92. Integration Testing</p>
+<p>93. Test-Driven Development (TDD)</p>
+<p>94. Mocking Pattern</p>
+<br>
+<h3>Lecture 16: Deployment Patterns</h3>
+<p>95. Blue-Green Deployment</p>
+<p>96. Canary Deployment</p>
+<p>97. Circuit Breaker Pattern</p>
+<p>98. Retry Pattern</p>
+<br>
+<h3>Lecture 17: Performance</h3>
+<p>99. Caching Strategies</p>
+<p>100. Load Balancing</p>
+<p>101. Rate Limiting</p>
+<br>
+<h3>Lecture 18: Cryptography</h3>
+<p>102. AES Encryption - O(n)</p>
+<p>103. RSA Algorithm - O(k³)</p>
+<p>104. SHA-256 Hashing - O(n)</p>
+<p>105. Bcrypt Password Hashing - O(2^cost)</p>
+<br>
+<h3>Lecture 19: Distributed Patterns</h3>
+<p>106. Consistent Hashing - O(log n)</p>
+<p>107. Gossip Protocol - O(log n)</p>
+<p>108. Leader Election - O(n)</p>
+<p>109. Two-Phase Commit - O(n)</p>
+<br>
+<h3>Lecture 20: Monitoring & Observability</h3>
+<p>110. Distributed Tracing</p>
+<p>111. Metrics Collection</p>
+<p>112. Log Aggregation</p>
+<br>
+<p>---</p>
+<br>
+<h2>Semester 5: Deep Learning & AI (~36 algorithms)</h2>
+<br>
+<h3>Lecture 21: Transfer Learning</h3>
+<p>113. Transfer Learning - O(n<em>d</em>h)</p>
+<p>114. Fine-Tuning Pre-trained Models - O(n*d)</p>
+<p>115. Feature Extraction - O(n*d)</p>
+<br>
+<h3>Lecture 22: CNN Architectures</h3>
+<p>116. ResNet Architecture - O(n<em>d</em>layers)</p>
+<p>117. VGG Network - O(n<em>d</em>depth)</p>
+<p>118. Inception Network - O(n<em>d</em>modules)</p>
+<p>119. EfficientNet - O(n<em>d</em>scale)</p>
+<br>
+<h3>Lecture 23: Object Detection</h3>
+<p>120. YOLO Object Detection - O(S²<em>B</em>C)</p>
+<p>121. R-CNN - O(n*proposals)</p>
+<p>122. Single Shot Detector (SSD) - O(n*anchors)</p>
+<br>
+<h3>Lecture 24: Segmentation</h3>
+<p>123. U-Net Segmentation - O(n<em>H</em>W)</p>
+<p>124. Fully Convolutional Networks (FCN) - O(n<em>H</em>W)</p>
+<p>125. Mask R-CNN - O(n*proposals)</p>
+<br>
+<h3>Lecture 25: Transformers & NLP</h3>
+<p>126. Transformer Architecture - O(n²*d)</p>
+<p>127. BERT Language Model - O(n²*d)</p>
+<p>128. GPT Architecture - O(n²*d)</p>
+<p>129. Attention Mechanism - O(n²*d)</p>
+<br>
+<h3>Lecture 26: Ensemble Methods</h3>
+<p>130. Bagging - O(n<em>m</em>trees)</p>
+<p>131. Boosting - O(n<em>m</em>iterations)</p>
+<p>132. Stacking - O(n<em>m</em>models)</p>
+<br>
+<h3>Lecture 27: Hyperparameter Optimization</h3>
+<p>133. Grid Search - O(n*combinations)</p>
+<p>134. Random Search - O(n*iterations)</p>
+<p>135. Bayesian Optimization - O(n*iterations)</p>
+<p>136. Optuna Framework - O(n*trials)</p>
+<br>
+<h3>Lecture 28: Reinforcement Learning</h3>
+<p>137. Q-Learning - O(states*actions)</p>
+<p>138. Deep Q-Network (DQN) - O(episodes*steps)</p>
+<p>139. Policy Gradient - O(episodes*steps)</p>
+<p>140. Actor-Critic - O(episodes*steps)</p>
+<p>141. Proximal Policy Optimization (PPO) - O(episodes*steps)</p>
+<br>
+<h3>Lecture 29: Advanced NLP</h3>
+<p>142. Word2Vec - O(V<em>d</em>corpus)</p>
+<p>143. GloVe Embeddings - O(V²*iterations)</p>
+<p>144. Sequence-to-Sequence - O(n<em>m</em>d)</p>
+<p>145. Named Entity Recognition (NER) - O(n*d)</p>
+<br>
+<h3>Lecture 30: Time Series</h3>
+<p>146. ARIMA - O(n<em>p</em>d*q)</p>
+<p>147. LSTM for Time Series - O(n<em>timesteps</em>d)</p>
+<p>148. Facebook Prophet - O(n*iterations)</p>
+<br>
+<p>---</p>
+<br>
+<h2>Semester 6: Production ML & MLOps (~33 algorithms)</h2>
+<br>
+<h3>Lecture 31: MLOps</h3>
+<p>149. Model Versioning - O(1)</p>
+<p>150. A/B Testing for ML - O(requests)</p>
+<p>151. Feature Store Pattern - O(features)</p>
+<p>152. Model Monitoring - O(predictions)</p>
+<p>153. Data Drift Detection - O(n*features)</p>
+<br>
+<h3>Lecture 32: Distributed ML</h3>
+<p>154. Data Parallelism - O(n/workers)</p>
+<p>155. Model Parallelism - O(n*layers/workers)</p>
+<p>156. Parameter Server - O(sync_overhead)</p>
+<p>157. AllReduce Algorithm - O(log(workers))</p>
+<p>158. Federated Learning - O(rounds*clients)</p>
+<br>
+<h3>Lecture 33: Model Optimization</h3>
+<p>159. Model Quantization - O(params)</p>
+<p>160. Model Pruning - O(params)</p>
+<p>161. Knowledge Distillation - O(n*student)</p>
+<p>162. Neural Architecture Search (NAS) - O(search_space*trials)</p>
+<p>163. TensorRT Optimization - O(inference)</p>
+<p>164. ONNX Model Conversion - O(model_size)</p>
+<br>
+<h3>Lecture 34: Edge AI</h3>
+<p>165. Edge AI Deployment - O(inference)</p>
+<p>166. TensorFlow Lite - O(inference)</p>
+<p>167. Mobile Optimization - O(inference)</p>
+<p>168. IoT Machine Learning - O(inference)</p>
+<br>
+<h3>Lecture 35: Deployment Patterns</h3>
+<p>169. Blue-Green ML Deployment - O(1)</p>
+<p>170. Canary Deployment - O(1)</p>
+<p>171. Shadow Deployment - O(2*requests)</p>
+<p>172. Multi-Armed Bandit - O(requests)</p>
+<br>
+<h3>Lecture 36: Inference Optimization</h3>
+<p>173. Batch Inference - O(n/batch)</p>
+<p>174. Model Caching - O(1)</p>
+<p>175. Inference Pipeline - O(stages)</p>
+<p>176. GPU Optimization - O(n/parallelism)</p>
+<br>
+<h3>Lecture 37: Cost Optimization</h3>
+<p>177. Spot Instance Training - O(variable)</p>
+<p>178. Auto-scaling for ML - O(dynamic)</p>
+<p>179. Serverless ML - O(requests)</p>
+<p>180. ML Cost Analysis - O(resources)</p>
+<br>
+<h3>Lecture 38: Monitoring & Production</h3>
+<p>181. Prometheus for ML - O(metrics)</p>
+<p>182. Grafana Dashboards - O(queries)</p>
+<p>183. ML Alerting Systems - O(rules)</p>
+<p>184. Performance Profiling - O(profiling_overhead)</p>
+<br>
+<p>---</p>
+<br>
+<h2>Summary by Category</h2>
+<br>
+<h3>Sorting & Searching: 13</h3>
+<h3>Data Structures: 12</h3>
+<h3>Design Patterns: 32</h3>
+<h3>Graph Algorithms: 5</h3>
+<h3>Dynamic Programming: 4</h3>
+<h3>Machine Learning: 19</h3>
+<h3>Deep Learning: 23</h3>
+<h3>NLP: 8</h3>
+<h3>Computer Vision: 10</h3>
+<h3>Reinforcement Learning: 5</h3>
+<h3>MLOps & Production: 22</h3>
+<h3>Security & Cryptography: 9</h3>
+<h3>Distributed Systems: 8</h3>
+<h3>Performance & Optimization: 14</h3>
+<br>
+<p>---</p>
+<br>
+<h2>Algorithms by Complexity Class</h2>
+<br>
+<h3>O(1) - Constant Time: 15+</h3>
+<h3>O(log n) - Logarithmic: 8+</h3>
+<h3>O(n) - Linear: 10+</h3>
+<h3>O(n log n) - Linearithmic: 15+</h3>
+<h3>O(n²) - Quadratic: 8+</h3>
+<h3>O(n²*d) - NLP Transformers: 4</h3>
+<h3>O(V + E) - Graph Traversal: 2</h3>
+<h3>Variable/Context-Dependent: Many ML algorithms</h3>
+<br>
+<p>---</p>
+<br>
+<h2>Resource Requirements</h2>
+<br>
+<h3>Low Memory (<100 MB): 40+</h3>
+<h3>Medium Memory (100 MB - 1 GB): 60+</h3>
+<h3>High Memory (>1 GB): 84+</h3>
+<br>
+<h3>CPU-Only: 100+</h3>
+<h3>GPU-Recommended: 50+</h3>
+<h3>GPU-Required: 30+</h3>
+<br>
+<h3>Edge-Suitable: 60+</h3>
+<h3>Cloud-Optimized: 124+</h3>
+<br>
+<p>---</p>
+<br>
+<p><strong>Complete Algorithm Coverage</strong></p>
+<ul>
+<li>Foundations ✓</li>
+<li>Design Patterns ✓</li>
+<li>Advanced Algorithms ✓</li>
+<li>Machine Learning ✓</li>
+<li>Deep Learning ✓</li>
+<li>Production Systems ✓</li>
+</ul>
+<br>
+<p><strong>Total</strong>: 184 Implementations</p>
+<br>
+<br>        </div>
+        <div class="page-break"></div>
+
+    </div>
+    
+    <!-- Print Button -->
+    <button class="print-button no-print" onclick="window.print()">
+        🖨️ Print / Save as PDF
+    </button>
+    
+    <script>
+        // Smooth scroll to anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

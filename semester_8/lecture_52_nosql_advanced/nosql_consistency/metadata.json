@@ -1,0 +1,7 @@
+{
+  "name": "nosql_consistency",
+  "category": "Advanced NoSQL",
+  "description": "Nosql Consistency for advanced nosql",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

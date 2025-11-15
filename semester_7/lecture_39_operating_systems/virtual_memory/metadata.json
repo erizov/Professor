@@ -1,0 +1,7 @@
+{
+  "name": "virtual_memory",
+  "category": "Operating Systems Fundamentals",
+  "description": "Virtual Memory for operating systems fundamentals",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

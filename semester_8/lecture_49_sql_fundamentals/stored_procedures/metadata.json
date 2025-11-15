@@ -1,0 +1,7 @@
+{
+  "name": "stored_procedures",
+  "category": "SQL Database Fundamentals",
+  "description": "Stored Procedures for sql database fundamentals",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

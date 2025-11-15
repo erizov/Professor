@@ -1,0 +1,7 @@
+{
+  "name": "merkle_trees",
+  "category": "Blockchain Fundamentals",
+  "description": "Merkle Trees for blockchain fundamentals",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "chaos_engineering",
+  "category": "Advanced CI/CD",
+  "description": "Chaos Engineering for advanced ci/cd",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

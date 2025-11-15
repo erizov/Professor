@@ -1,0 +1,7 @@
+{
+  "name": "data_warehousing",
+  "category": "Data Modeling",
+  "description": "Data Warehousing for data modeling",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "user_guides",
+  "category": "Documentation Systems",
+  "description": "User Guides for documentation systems",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

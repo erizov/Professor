@@ -1,0 +1,7 @@
+{
+  "name": "cryptocurrency_wallets",
+  "category": "Advanced Blockchain",
+  "description": "Cryptocurrency Wallets for advanced blockchain",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

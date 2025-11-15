@@ -1,0 +1,7 @@
+{
+  "name": "gitops",
+  "category": "Advanced CI/CD",
+  "description": "Gitops for advanced ci/cd",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}

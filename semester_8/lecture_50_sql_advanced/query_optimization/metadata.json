@@ -1,0 +1,7 @@
+{
+  "name": "query_optimization",
+  "category": "Advanced SQL",
+  "description": "Query Optimization for advanced sql",
+  "time_complexity": "Varies",
+  "space_complexity": "Varies"
+}
