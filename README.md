@@ -31,6 +31,8 @@ This repository contains a **complete 16-semester course** (8 undergraduate + 8 
 - ✅ **Learning paths** (Interview Prep, Full Stack, CI Engineer, Complete)
 - ✅ **Worked examples** with step-by-step walkthroughs
 - ✅ **Testing framework** for algorithm validation
+- ✅ **Assessment framework** with grading rubrics
+- ✅ **Metacognitive strategies** guide for effective learning
 
 ## 🎯 Current Status
 
