@@ -208,3 +208,64 @@ if (index >= 0) {
 
 **Purpose**: .NET Framework uses this pattern for dependency injection, ASP.NET Core, and enterprise application development.
 
+## Assessment
+
+### Self-Assessment Questions
+
+**Comprehension:**
+1. What is the time complexity of this algorithm?
+2. What is the space complexity of this algorithm?
+
+**Analysis:**
+3. Why does this algorithm work correctly?
+4. What are the key steps in this algorithm?
+
+**Application:**
+5. When would you choose this algorithm over alternatives?
+6. What are the constraints for using this algorithm?
+
+**Debugging:**
+7. What would happen if [common mistake]?
+8. How would you fix [common error]?
+
+### Grading Rubric
+
+| Criterion | Excellent (5) | Good (4) | Adequate (3) | Poor (2) |
+|-----------|---------------|----------|--------------|----------|
+| **Correctness** | All tests pass, handles edge cases | 90%+ tests pass | 70%+ tests pass | <70% tests pass |
+| **Efficiency** | Optimal complexity | Near optimal | Works but inefficient | Very inefficient |
+| **Code Quality** | Excellent style, very readable | Good style, readable | Adequate style | Poor style |
+| **Testing** | 90%+ coverage, comprehensive | 70%+ coverage, good | 50%+ coverage, basic | <50% coverage |
+| **Documentation** | Complete, clear, examples | Mostly complete | Some gaps | Missing key parts |
+
+**Scoring Guide:**
+- Excellent (90-100%): Mastery demonstrated
+- Good (80-89%): Solid understanding
+- Adequate (70-79%): Basic understanding
+- Poor (60-69%): Needs improvement
+- Fail (<60%): Insufficient understanding
+
+### Practice Exercises
+
+**Level 1 - Beginner (3 exercises):**
+1. Trace the algorithm execution on [simple example]
+2. Fill in the missing code in [partial implementation]
+3. Identify the output for [given input]
+
+**Level 2 - Intermediate (4 exercises):**
+4. Fix the bug in [buggy implementation]
+5. Implement a variation that [specific requirement]
+6. Optimize the algorithm for [specific constraint]
+7. Compare this algorithm with [alternative algorithm]
+
+**Level 3 - Advanced (3 exercises):**
+8. Design an improved version that [enhancement]
+9. Implement the algorithm for [different data type]
+10. Analyze the algorithm's behavior with [edge case]
+
+**Level 4 - Expert (2 exercises):**
+11. Research and implement [advanced variant]
+12. Design a new algorithm inspired by this one
+
+**Solutions**: See `solutions/` directory for detailed solutions.
+
