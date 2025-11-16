@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Linear Regression is a fundamental algorithm.
+Linear Regression addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Linear Regression is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A machine learning algorithm that learns patterns from data to make predictions or decisions.
+A supervised learning algorithm that models the relationship between a dependent variable and one or more independent variables using a linear equation. Solves problems like price prediction, sales forecasting, and trend analysis. Example: Predicting house prices based on size, location, and number of bedrooms. Works by finding the best-fit line that minimizes the sum of squared differences between predicted and actual values.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

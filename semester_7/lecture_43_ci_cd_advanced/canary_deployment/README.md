@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Canary Deployment is a fundamental concept in advanced ci/cd.
+Canary Deployment addresses concept in advanced ci/cd.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: A deployment strategy that gradually rolls out changes to a small subset of users before full deployment, monitoring for issues.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+A deployment strategy that gradually rolls out changes to a small subset of users before full deployment, monitoring for issues. Solves problems like deployment risk, early error detection, and user impact minimization. Example: Releasing new feature to 5% of users, monitoring metrics, then gradually increasing to 100% if successful. Works by splitting traffic between old and new versions, monitoring new version performance, and increasing traffic proportionally.
 
 **Key Characteristics:**
 - **Category**: Advanced CI/CD

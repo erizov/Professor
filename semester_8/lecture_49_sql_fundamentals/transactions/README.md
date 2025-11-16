@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Transactions is a fundamental concept in sql database fundamentals.
+Transactions addresses concept in sql database fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: Database operations that execute as atomic units, ensuring all-or-nothing execution and maintaining data consistency.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+Database operations that execute as atomic units, ensuring all-or-nothing execution and maintaining data consistency. Solves problems like data integrity, concurrent access conflicts, and partial updates. Example: Transferring money between accounts where both debit and credit must succeed or both must fail. Works by grouping operations, maintaining isolation, and using commit/rollback to ensure atomicity and consistency.
 
 **Key Characteristics:**
 - **Category**: SQL Database Fundamentals

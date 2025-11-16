@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Quantum Entanglement is a fundamental concept in quantum computing fundamentals.
+Quantum Entanglement addresses concept in quantum computing fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: A quantum phenomenon where particles become correlated such that measuring one instantly affects the other, regardless of distance.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+A quantum phenomenon where particles become correlated such that measuring one instantly affects the other, regardless of distance. Solves problems in quantum communication, cryptography, and computing. Example: Two entangled qubits where measuring one as 0 instantly makes the other 1, even if separated. Works by creating quantum states that cannot be described independently, with measurement of one particle determining the other's state.
 
 **Key Characteristics:**
 - **Category**: Quantum Computing Fundamentals

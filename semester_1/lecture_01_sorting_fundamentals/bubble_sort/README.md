@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Bubble Sort is a fundamental algorithm.
+Bubble Sort addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Bubble Sort is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A simple comparison-based sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order.
+A comparison-based sorting algorithm that repeatedly compares adjacent elements and swaps them if they are in the wrong order. Solves the problem of arranging elements in ascending or descending order. Example: Sorting student grades [85, 92, 78, 95] → [78, 85, 92, 95]. Works by making multiple passes through the array, 'bubbling' larger elements to the end with each pass.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

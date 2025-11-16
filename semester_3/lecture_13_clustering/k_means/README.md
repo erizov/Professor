@@ -2,13 +2,13 @@
 
 ## Introduction
 
-K Means is a fundamental algorithm.
+K Means addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding K Means is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: An unsupervised clustering algorithm that partitions data into k clusters by minimizing within-cluster variance.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -34,7 +34,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+An unsupervised clustering algorithm that partitions data into k clusters by minimizing within-cluster variance. Solves problems like customer segmentation, image compression, and data exploration. Example: Grouping customers into 5 segments based on purchase behavior and demographics. Works by randomly initializing k centroids, assigning points to nearest centroid, updating centroids, and repeating until convergence.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

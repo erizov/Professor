@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Ticket Management is a fundamental concept in support systems.
+Ticket Management addresses concept in support systems.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: Systems for tracking, prioritizing, and resolving customer support requests or IT incidents.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+Systems for tracking, prioritizing, and resolving customer support requests or IT incidents. Solves problems like request organization, SLA tracking, and support team coordination. Example: Creating ticket for 'server down' issue, assigning to infrastructure team, tracking resolution time. Works by creating tickets with metadata (priority, category, assignee), routing to appropriate teams, and tracking lifecycle until resolution.
 
 **Key Characteristics:**
 - **Category**: Support Systems

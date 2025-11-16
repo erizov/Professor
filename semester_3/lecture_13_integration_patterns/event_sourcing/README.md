@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Event Sourcing is a fundamental algorithm.
+Event Sourcing addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Event Sourcing is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -43,7 +43,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A reusable solution to a commonly occurring problem in software design.
+A pattern that stores all changes to application state as a sequence of events, rather than storing current state. Solves problems like audit trails, time travel debugging, and complex state reconstruction. Example: Storing bank account transactions as events (deposit, withdrawal) rather than just current balance, enabling full history reconstruction. Works by appending events to an event store and replaying them to reconstruct current state.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

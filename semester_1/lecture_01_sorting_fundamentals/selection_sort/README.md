@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Selection Sort is a fundamental algorithm.
+Selection Sort addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Selection Sort is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A sorting algorithm that finds the minimum element from the unsorted portion and places it at the beginning, repeating until sorted.
+A sorting algorithm that finds the minimum element from the unsorted portion and places it at the beginning, repeating until sorted. Solves the problem of sorting with minimal memory writes. Example: Sorting test scores [88, 92, 75, 95] → [75, 88, 92, 95]. Works by repeatedly finding the smallest remaining element and swapping it with the first unsorted element.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

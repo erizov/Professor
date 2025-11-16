@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Abstract Factory is a fundamental algorithm.
+Abstract Factory addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Abstract Factory is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A reusable solution to a commonly occurring problem in software design.
+A creational design pattern that provides an interface for creating objects without specifying their exact classes. Solves problems like object creation complexity, dependency management, and runtime object selection. Example: Creating different payment processors (CreditCard, PayPal) based on user selection without exposing implementation details. Works by delegating object instantiation to factory methods that return appropriate concrete implementations.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

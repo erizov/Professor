@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Blue Green Deployment is a fundamental concept in advanced ci/cd.
+Blue Green Deployment addresses concept in advanced ci/cd.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: A deployment strategy that maintains two identical production environments (blue and green), switching traffic between them for zero-downtime deployments.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+A deployment strategy that maintains two identical production environments (blue and green), switching traffic between them for zero-downtime deployments. Solves problems like deployment risk, rollback complexity, and service interruption. Example: Deploying new version to green environment, testing it, then switching all traffic from blue to green instantly. Works by maintaining parallel environments and using load balancer to route traffic, enabling instant rollback by switching back.
 
 **Key Characteristics:**
 - **Category**: Advanced CI/CD

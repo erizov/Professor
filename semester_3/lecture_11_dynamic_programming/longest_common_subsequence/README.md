@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Longest Common Subsequence is a fundamental algorithm.
+Longest Common Subsequence addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Longest Common Subsequence is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -42,7 +42,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An optimization technique that solves complex problems by breaking them into simpler subproblems and storing results.
+A dynamic programming algorithm that finds the longest subsequence common to two sequences (not necessarily contiguous). Solves problems like version control diff, plagiarism detection, and bioinformatics sequence comparison. Example: LCS of 'ABCDGH' and 'AEDFHR' is 'ADH' (length 3). Works by comparing characters and building a table of longest common subsequences for all prefix pairs.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

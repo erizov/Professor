@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Tdd is tdd is a fundamental algorithm.
+Tdd is tdd addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Tdd is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -42,7 +42,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A software testing technique that validates the correctness and quality of code implementations.
+A software testing technique that validates the correctness and quality of code implementations. Solves problems like bug detection, quality assurance, and regression prevention. Example: Writing unit tests to verify that a sorting function correctly sorts arrays. Works by executing code with test inputs, comparing actual outputs with expected results, and reporting discrepancies.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

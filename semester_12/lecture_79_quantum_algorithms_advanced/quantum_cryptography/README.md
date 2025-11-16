@@ -10,13 +10,13 @@
 
 ## Introduction
 
-Quantum Cryptography is an advanced graduate-level algorithm.
+Quantum Cryptography addresses advanced computational challenges in specialized domains.
 
-This algorithm is part of the advanced curriculum covering cutting-edge topics in computer science and software engineering.
+This topic covers advanced techniques and methodologies used in modern software systems.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: A graph algorithm that processes relationships between entities.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -25,7 +25,7 @@ This algorithm is part of the advanced curriculum covering cutting-edge topics i
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+A graph algorithm that processes relationships between entities. Solves problems like path finding, network analysis, and relationship mapping. Example: Finding connections in social networks or routes in transportation systems. Works by traversing vertices and edges to discover patterns or paths.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

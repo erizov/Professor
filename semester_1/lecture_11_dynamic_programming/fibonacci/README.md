@@ -2,9 +2,9 @@
 
 ## Introduction
 
-Fibonacci is a fundamental algorithm.
+Fibonacci addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Fibonacci is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -34,7 +34,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An optimization technique that solves complex problems by breaking them into simpler subproblems and storing results.
+An optimization technique that solves complex problems by breaking them into simpler subproblems and storing results to avoid redundant calculations. Solves problems like optimization, sequence alignment, and resource allocation. Example: Finding the longest increasing subsequence by building solutions for smaller subsequences. Works by identifying overlapping subproblems, storing solutions in tables, and building up to the final solution.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

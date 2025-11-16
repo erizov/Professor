@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Graph Databases is a fundamental concept in nosql database fundamentals.
+Graph Databases addresses concept in nosql database fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: NoSQL databases optimized for storing and querying graph structures with nodes and relationships.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+NoSQL databases optimized for storing and querying graph structures with nodes and relationships. Solves problems like social networks, recommendation engines, and relationship analysis. Example: Finding friends of friends in social network by traversing relationships between user nodes. Works by storing nodes (entities) and edges (relationships) as first-class citizens, enabling efficient graph traversal queries.
 
 **Key Characteristics:**
 - **Category**: NoSQL Database Fundamentals

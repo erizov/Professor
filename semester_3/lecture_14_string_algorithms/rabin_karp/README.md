@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Rabin Karp is rabin karp is a fundamental algorithm.
+Rabin Karp is rabin karp addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Rabin Karp is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -42,7 +42,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that processes and manipulates sequences of characters to solve string-related problems.
+An algorithm that processes and manipulates sequences of characters to solve string-related problems. Solves problems like pattern matching, text processing, and string transformation. Example: Finding all occurrences of a word in a document for search functionality. Works by analyzing character sequences, applying pattern matching techniques, and performing string operations efficiently.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

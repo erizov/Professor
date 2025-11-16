@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Multi Armed Bandit is multi armed bandit is a fundamental algorithm.
+Multi Armed Bandit is multi armed bandit addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Multi Armed Bandit is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -43,7 +43,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A strategy for releasing software updates to production environments with minimal disruption.
+A strategy for releasing software updates to production environments with minimal disruption. Solves problems like zero-downtime deployments, risk mitigation, and rollback capabilities. Example: Using blue-green deployment to switch traffic between old and new versions instantly. Works by maintaining parallel environments and using load balancers or routing mechanisms to control traffic flow.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

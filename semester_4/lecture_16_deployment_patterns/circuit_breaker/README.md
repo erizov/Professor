@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Circuit Breaker is a fundamental algorithm.
+Circuit Breaker addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Circuit Breaker is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -43,7 +43,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A design pattern that prevents cascading failures by stopping requests to a failing service until it recovers.
+A design pattern that prevents cascading failures by stopping requests to a failing service until it recovers. Solves problems like system resilience, failure isolation, and resource protection. Example: Stopping requests to a payment service after 5 consecutive failures, returning error immediately instead of waiting for timeout. Works by tracking failure counts, opening circuit after threshold, and periodically attempting to close circuit when service recovers.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

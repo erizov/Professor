@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Memory Management is a fundamental concept in operating systems fundamentals.
+Memory Management addresses concept in operating systems fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: OS techniques for allocating and managing computer memory among processes.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+OS techniques for allocating and managing computer memory among processes. Solves problems like memory fragmentation, protection, and efficient utilization. Example: Allocating memory to new process, tracking usage, and reclaiming memory when process terminates. Works by maintaining memory maps, allocating/deallocating blocks, and using techniques like paging or segmentation to manage physical and virtual memory.
 
 **Key Characteristics:**
 - **Category**: Operating Systems Fundamentals

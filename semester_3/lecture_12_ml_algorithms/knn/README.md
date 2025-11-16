@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Knn is knn is a fundamental algorithm.
+Knn is knn addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Knn is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A machine learning algorithm that learns patterns from data to make predictions or decisions.
+K-Nearest Neighbors, a classification and regression algorithm that predicts based on the k closest training examples. Solves problems like recommendation systems, pattern recognition, and similarity-based classification. Example: Classifying a new flower species by finding the 5 most similar flowers in the training set. Works by calculating distances to all training examples, selecting k nearest neighbors, and using majority vote (classification) or average (regression).
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Column Family is a fundamental concept in nosql database fundamentals.
+Column Family addresses concept in nosql database fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: A computational method for column family.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+A computational method for column family. Solves specific problems in this domain through systematic processing. Works by applying algorithmic techniques to transform input data into desired outputs.
 
 **Key Characteristics:**
 - **Category**: NoSQL Database Fundamentals

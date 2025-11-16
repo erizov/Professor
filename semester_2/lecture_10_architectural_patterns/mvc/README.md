@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Mvc is mvc is a fundamental algorithm.
+Mvc is mvc addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Mvc is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An architectural pattern that separates an application into three interconnected components: Model, View, and Controller.
+An architectural pattern that separates an application into three interconnected components: Model (data), View (presentation), and Controller (logic). Solves problems like code organization, maintainability, and separation of concerns in user interfaces. Example: Web applications where database (Model), HTML templates (View), and request handling (Controller) are separated. Works by routing user input through the controller, which updates the model and refreshes the view.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Indexes is a fundamental concept in sql database fundamentals.
+Indexes addresses concept in sql database fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: Database structures that improve query performance by providing fast lookup paths to data.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+Database structures that improve query performance by providing fast lookup paths to data. Solves problems like slow query performance, full table scans, and search optimization. Example: Creating index on email column to find users by email in milliseconds instead of scanning entire table. Works by maintaining sorted data structures (B-trees, hash tables) that map key values to row locations, enabling logarithmic-time lookups.
 
 **Key Characteristics:**
 - **Category**: SQL Database Fundamentals

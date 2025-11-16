@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Consensus Mechanisms is a fundamental concept in blockchain fundamentals.
+Consensus Mechanisms addresses concept in blockchain fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: Algorithms that enable distributed network nodes to agree on the state of the blockchain without central authority.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+Algorithms that enable distributed network nodes to agree on the state of the blockchain without central authority. Solves problems like Byzantine fault tolerance, network coordination, and preventing double-spending. Example: Proof of Work requiring miners to solve cryptographic puzzles to validate blocks and reach consensus. Works by requiring nodes to perform computational work or stake resources, with majority agreement determining valid transactions.
 
 **Key Characteristics:**
 - **Category**: Blockchain Fundamentals

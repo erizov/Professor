@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Log Aggregation is a fundamental algorithm.
+Log Aggregation addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Log Aggregation is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -42,7 +42,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-The process of collecting, centralizing, and storing log data from multiple sources for analysis and monitoring.
+A technique for observing and tracking system behavior, performance, and health. Solves problems like issue detection, performance optimization, and system reliability. Example: Monitoring API response times to detect performance degradation. Works by collecting metrics, logs, and traces, analyzing patterns, and alerting on anomalies.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

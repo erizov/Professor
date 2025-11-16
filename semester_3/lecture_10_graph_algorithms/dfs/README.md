@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Dfs is dfs is a fundamental algorithm.
+Dfs is dfs addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Dfs is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -43,7 +43,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A graph traversal algorithm that explores as far as possible along each branch before backtracking.
+A graph traversal algorithm that explores as far as possible along each branch before backtracking. Solves problems like maze solving, topological sorting, and cycle detection. Example: Finding a path through a maze by exploring one route completely before trying alternatives. Works by recursively visiting unvisited neighbors, marking visited nodes, and backtracking when no unvisited neighbors exist.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

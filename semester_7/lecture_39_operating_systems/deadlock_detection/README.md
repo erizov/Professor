@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Deadlock Detection is a fundamental concept in operating systems fundamentals.
+Deadlock Detection addresses concept in operating systems fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: Algorithms that identify situations where processes are waiting indefinitely for resources held by each other.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+Algorithms that identify situations where processes are waiting indefinitely for resources held by each other. Solves problems like system hangs, resource starvation, and process coordination failures. Example: Process A holding lock 1 and waiting for lock 2, while Process B holds lock 2 and waits for lock 1. Works by building resource allocation graphs and detecting cycles that indicate circular wait conditions.
 
 **Key Characteristics:**
 - **Category**: Operating Systems Fundamentals

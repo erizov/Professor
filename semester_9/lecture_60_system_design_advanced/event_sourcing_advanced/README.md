@@ -10,13 +10,13 @@
 
 ## Introduction
 
-Event Sourcing Advanced is an advanced graduate-level algorithm.
+Event Sourcing Advanced addresses advanced computational challenges in specialized domains.
 
-This algorithm is part of the advanced curriculum covering cutting-edge topics in computer science and software engineering.
+This topic covers advanced techniques and methodologies used in modern software systems.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: A pattern that stores all changes to application state as a sequence of events, rather than storing current state.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -25,7 +25,7 @@ This algorithm is part of the advanced curriculum covering cutting-edge topics i
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+A pattern that stores all changes to application state as a sequence of events, rather than storing current state. Solves problems like audit trails, time travel debugging, and complex state reconstruction. Example: Storing bank account transactions as events (deposit, withdrawal) rather than just current balance, enabling full history reconstruction. Works by appending events to an event store and replaying them to reconstruct current state.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

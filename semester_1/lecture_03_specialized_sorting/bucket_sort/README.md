@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Bucket Sort is a fundamental algorithm.
+Bucket Sort addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Bucket Sort is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A comparison-based algorithm that arranges elements in a specific order (ascending or descending).
+A comparison-based algorithm that arranges elements in ascending or descending order by comparing and swapping elements. Solves the problem of organizing data for efficient searching, display, or processing. Example: Sorting student records by grade to identify top performers. Works by repeatedly comparing elements and reordering them until the entire collection is sorted.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

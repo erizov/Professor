@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Process Scheduling is a fundamental concept in operating systems fundamentals.
+Process Scheduling addresses concept in operating systems fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: OS algorithms that determine which process runs on CPU at any given time, managing resource allocation.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+OS algorithms that determine which process runs on CPU at any given time, managing resource allocation. Solves problems like CPU utilization, fairness, and responsiveness in multitasking systems. Example: Round-robin scheduling giving each process equal time slices, ensuring all processes make progress. Works by maintaining process queues, selecting next process based on scheduling algorithm, and context switching between processes.
 
 **Key Characteristics:**
 - **Category**: Operating Systems Fundamentals

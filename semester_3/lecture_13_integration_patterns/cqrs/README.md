@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Cqrs is a fundamental algorithm.
+Cqrs addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Cqrs is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -43,7 +43,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A reusable solution to a commonly occurring problem in software design.
+Command Query Responsibility Segregation pattern that separates read and write operations into different models. Solves problems like read/write optimization, scalability, and complex domain models. Example: Using separate databases for reading (optimized for queries) and writing (optimized for transactions) in an e-commerce system. Works by routing commands (writes) to command handlers and queries (reads) to query handlers, with eventual consistency between models.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

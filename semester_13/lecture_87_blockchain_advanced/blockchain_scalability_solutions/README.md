@@ -10,13 +10,13 @@
 
 ## Introduction
 
-Blockchain Scalability Solutions is an advanced graduate-level algorithm.
+Blockchain Scalability Solutions addresses advanced computational challenges in specialized domains.
 
-This algorithm is part of the advanced curriculum covering cutting-edge topics in computer science and software engineering.
+This topic covers advanced techniques and methodologies used in modern software systems.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: Techniques and protocols designed to increase blockchain network throughput, reduce transaction costs, and improve performance.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -25,7 +25,7 @@ This algorithm is part of the advanced curriculum covering cutting-edge topics i
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+Techniques and protocols designed to increase blockchain network throughput, reduce transaction costs, and improve performance. Solves problems like slow transaction processing, high fees, and network congestion in blockchain systems. Example: Layer 2 solutions like Lightning Network enabling millions of transactions per second off-chain, or sharding that splits blockchain into parallel chains. Works by processing transactions off-chain, using sidechains, implementing sharding, or optimizing consensus mechanisms to handle more transactions.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

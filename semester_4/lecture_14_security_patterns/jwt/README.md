@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Jwt is jwt is a fundamental algorithm.
+Jwt is jwt addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Jwt is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A compact, URL-safe token format for securely transmitting information between parties as a JSON object.
+A compact, URL-safe token format for securely transmitting information between parties as a JSON object. Solves problems like stateless authentication, API security, and cross-domain authentication. Example: Authenticating API requests without server-side session storage, enabling scalable microservices. Works by encoding user claims in a signed token that can be verified without database lookups.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

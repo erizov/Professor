@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Fine Tuning Llm is a fundamental concept in large language models fundamentals.
+Fine Tuning Llm addresses concept in large language models fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: A computational intelligence algorithm that learns patterns from data to make predictions or decisions.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+A computational intelligence algorithm that learns patterns from data to make predictions or decisions. Solves problems like classification, regression, clustering, and pattern recognition. Example: Predicting house prices based on historical sales data and property features. Works by training on labeled or unlabeled data, learning patterns, and applying learned knowledge to new examples.
 
 **Key Characteristics:**
 - **Category**: Large Language Models Fundamentals

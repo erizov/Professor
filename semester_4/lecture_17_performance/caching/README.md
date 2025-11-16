@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Caching is a fundamental algorithm.
+Caching addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Caching is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -42,7 +42,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A performance optimization technique that stores frequently accessed data in fast storage to reduce access time.
+A performance optimization technique that stores frequently accessed data in fast storage to reduce access time and system load. Solves problems like slow database queries, expensive computations, and API rate limits. Example: Storing product details in Redis cache to serve 1000x faster than database queries. Works by checking cache first, returning cached data if available, otherwise fetching from source and storing in cache.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

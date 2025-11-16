@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Tokenization is a fundamental concept in large language models fundamentals.
+Tokenization addresses concept in large language models fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: The process of breaking text into smaller units (tokens) that can be processed by language models.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+The process of breaking text into smaller units (tokens) that can be processed by language models. Solves problems like text preprocessing, vocabulary management, and handling different languages. Example: Converting 'Hello, world!' into tokens ['Hello', ',', ' world', '!'] for processing by language models. Works by splitting text using rules (whitespace, punctuation) or learned subword units (BPE, WordPiece) to balance vocabulary size and representation quality.
 
 **Key Characteristics:**
 - **Category**: Large Language Models Fundamentals

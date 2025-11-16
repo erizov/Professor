@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Kmp is a fundamental algorithm.
+Kmp addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Kmp is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -42,7 +42,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A string matching algorithm that uses a precomputed failure function to avoid unnecessary character comparisons.
+A string matching algorithm that uses a precomputed failure function to avoid unnecessary character comparisons when searching for patterns. Solves the problem of efficiently finding pattern occurrences in text. Example: Finding 'ABABC' in 'ABABABCABABC' without rechecking matched characters. Works by building a prefix table that indicates where to resume matching after a mismatch.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

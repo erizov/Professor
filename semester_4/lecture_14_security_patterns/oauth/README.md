@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Oauth is a fundamental algorithm.
+Oauth addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Oauth is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An authorization framework that enables applications to obtain limited access to user accounts on HTTP services.
+An authorization framework that enables applications to obtain limited access to user accounts on HTTP services. Solves problems like third-party authentication, delegated access, and secure API authorization. Example: Allowing a photo printing app to access your Google Photos without sharing your password. Works by redirecting users to authorization servers, exchanging authorization codes for access tokens.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

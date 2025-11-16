@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Authorization is a fundamental algorithm.
+Authorization addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Authorization is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-The process of determining what actions an authenticated user is permitted to perform on resources.
+The process of determining what actions an authenticated user is permitted to perform on resources. Solves problems like access control, role-based permissions, and resource protection. Example: Allowing admins to delete users while regular users can only view profiles. Works by checking user roles and permissions against resource access rules before allowing operations.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

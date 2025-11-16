@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Continuous Deployment is a fundamental concept in ci/cd fundamentals.
+Continuous Deployment addresses concept in ci/cd fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: A practice where code changes that pass automated tests are automatically deployed to production.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+A practice where code changes that pass automated tests are automatically deployed to production. Solves problems like deployment delays, manual errors, and release bottlenecks. Example: Automatically deploying new features to production after passing all tests, without manual intervention. Works by extending CI pipeline to include deployment steps, automatically releasing to production when all quality gates pass.
 
 **Key Characteristics:**
 - **Category**: CI/CD Fundamentals

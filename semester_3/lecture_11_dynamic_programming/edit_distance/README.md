@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Edit Distance is a fundamental algorithm.
+Edit Distance addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Edit Distance is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -42,7 +42,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A dynamic programming algorithm that calculates the minimum number of operations needed to transform one string into another.
+A dynamic programming algorithm that calculates the minimum number of operations (insertions, deletions, substitutions) needed to transform one string into another. Solves problems like spell checking, DNA sequence alignment, and version control diff algorithms. Example: Converting 'kitten' to 'sitting' requires 3 operations (k→s, e→i, add g). Works by building a matrix of edit distances between all prefixes of both strings.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Api Documentation is a fundamental concept in documentation systems.
+Api Documentation addresses concept in documentation systems.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: Documentation that describes how to use APIs, including endpoints, parameters, responses, and examples.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+Documentation that describes how to use APIs, including endpoints, parameters, responses, and examples. Solves problems like API discoverability, integration guidance, and developer onboarding. Example: Swagger/OpenAPI documentation showing all endpoints, request/response formats, and code examples. Works by providing structured descriptions of API contracts, including schemas, examples, and interactive testing interfaces.
 
 **Key Characteristics:**
 - **Category**: Documentation Systems

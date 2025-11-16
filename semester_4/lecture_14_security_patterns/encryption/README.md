@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Encryption is a fundamental algorithm.
+Encryption addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Encryption is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A security mechanism that protects data, systems, or communications from unauthorized access or attacks.
+A security mechanism that protects data, systems, or communications from unauthorized access or attacks. Solves problems like confidentiality, integrity, authentication, and authorization. Example: Encrypting sensitive data before storage to prevent unauthorized access. Works by applying cryptographic techniques, access controls, and security protocols to protect resources.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Heap Sort is a fundamental algorithm.
+Heap Sort addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Heap Sort is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An in-place sorting algorithm that uses a binary heap data structure to sort elements by repeatedly extracting the maximum element.
+An in-place sorting algorithm that uses a binary heap data structure to sort elements. Solves the problem of sorting without requiring additional memory space. Example: Sorting employee IDs [1005, 1001, 1008, 1002] → [1001, 1002, 1005, 1008]. Works by building a max-heap, then repeatedly extracting the maximum element and placing it at the end of the array.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

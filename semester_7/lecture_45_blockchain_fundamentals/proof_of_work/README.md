@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Proof Of Work is a fundamental concept in blockchain fundamentals.
+Proof Of Work addresses concept in blockchain fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: A consensus mechanism where miners compete to solve cryptographic puzzles, with the first solver earning the right to add a block.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+A consensus mechanism where miners compete to solve cryptographic puzzles, with the first solver earning the right to add a block. Solves problems like preventing Sybil attacks, ensuring network security, and achieving distributed consensus. Example: Bitcoin miners using computational power to find hash values below target, with winner adding block and receiving reward. Works by requiring miners to find nonce values that produce block hashes meeting difficulty criteria, making attacks computationally expensive.
 
 **Key Characteristics:**
 - **Category**: Blockchain Fundamentals

@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Linear Search is a fundamental algorithm.
+Linear Search addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Linear Search is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -43,7 +43,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that finds the location of a target value within a data structure.
+A simple search algorithm that sequentially checks each element in a list until the target is found or the list ends. Solves the problem of finding elements in unsorted collections. Example: Finding a name in an unsorted phone directory by checking each entry sequentially. Works by iterating through elements one by one until match is found or end is reached.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

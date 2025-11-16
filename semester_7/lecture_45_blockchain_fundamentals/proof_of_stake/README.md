@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Proof Of Stake is a fundamental concept in blockchain fundamentals.
+Proof Of Stake addresses concept in blockchain fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: A consensus mechanism where validators are chosen based on the amount of cryptocurrency they stake, rather than computational work.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+A consensus mechanism where validators are chosen based on the amount of cryptocurrency they stake, rather than computational work. Solves problems like energy consumption, scalability, and centralization in blockchain networks. Example: Ethereum 2.0 selecting validators based on staked ETH amount, with higher stakes increasing selection probability. Works by validators locking cryptocurrency as stake, being randomly selected to propose blocks, and losing stake if they validate incorrectly.
 
 **Key Characteristics:**
 - **Category**: Blockchain Fundamentals

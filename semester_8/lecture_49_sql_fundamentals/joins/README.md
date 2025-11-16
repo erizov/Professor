@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Joins is a fundamental concept in sql database fundamentals.
+Joins addresses concept in sql database fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: SQL operations that combine rows from two or more tables based on related columns.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+SQL operations that combine rows from two or more tables based on related columns. Solves problems like querying related data across multiple tables and avoiding data duplication. Example: Joining customers table with orders table to get customer names with their order details. Works by matching rows from different tables based on join conditions (equality, inequality, or complex predicates), creating result sets with combined columns.
 
 **Key Characteristics:**
 - **Category**: SQL Database Fundamentals

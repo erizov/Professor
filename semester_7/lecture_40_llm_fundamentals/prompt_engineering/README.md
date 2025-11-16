@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Prompt Engineering is a fundamental concept in large language models fundamentals.
+Prompt Engineering addresses concept in large language models fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: The practice of designing input prompts to guide language models toward desired outputs.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+The practice of designing input prompts to guide language models toward desired outputs. Solves problems like controlling model behavior, improving accuracy, and reducing hallucinations. Example: Using 'You are a helpful assistant. Explain quantum computing in simple terms:' to get clear explanations. Works by crafting prompts with context, examples, and instructions that steer the model's generation toward specific formats or styles.
 
 **Key Characteristics:**
 - **Category**: Large Language Models Fundamentals

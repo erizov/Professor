@@ -10,13 +10,13 @@
 
 ## Introduction
 
-Advanced Joins is an advanced graduate-level algorithm.
+Advanced Joins addresses advanced computational challenges in specialized domains.
 
-This algorithm is part of the advanced curriculum covering cutting-edge topics in computer science and software engineering.
+This topic covers advanced techniques and methodologies used in modern software systems.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: SQL operations that combine rows from two or more tables based on related columns.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -25,7 +25,7 @@ This algorithm is part of the advanced curriculum covering cutting-edge topics i
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+SQL operations that combine rows from two or more tables based on related columns. Solves problems like querying related data across multiple tables and avoiding data duplication. Example: Joining customers table with orders table to get customer names with their order details. Works by matching rows from different tables based on join conditions (equality, inequality, or complex predicates), creating result sets with combined columns.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

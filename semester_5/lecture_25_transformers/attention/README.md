@@ -10,13 +10,13 @@
 
 ## Introduction
 
-Attention is a fundamental algorithm.
+Attention addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Attention is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: Neural network components that allow models to focus on relevant parts of input when making predictions.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -42,7 +42,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+Neural network components that allow models to focus on relevant parts of input when making predictions. Solves problems like long-range dependencies, context understanding, and translation alignment. Example: When translating 'The cat sat on the mat', attention helps align 'cat' with 'gato' and 'mat' with 'alfombra'. Works by computing attention scores between all input positions, creating weighted combinations that emphasize relevant information.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

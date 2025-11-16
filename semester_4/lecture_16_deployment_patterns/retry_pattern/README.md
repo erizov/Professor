@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Retry Pattern is a fundamental algorithm.
+Retry Pattern addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Retry Pattern is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -43,7 +43,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A design pattern that automatically retries failed operations with exponential backoff to handle transient failures.
+A design pattern that automatically retries failed operations with exponential backoff to handle transient failures. Solves problems like temporary network issues, service unavailability, and intermittent errors. Example: Retrying a failed API call 3 times with increasing delays (1s, 2s, 4s) before giving up. Works by catching exceptions, waiting with exponential backoff, and retrying up to a maximum number of attempts.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

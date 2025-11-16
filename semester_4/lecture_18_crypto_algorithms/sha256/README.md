@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Sha256 is sha256 is a fundamental algorithm.
+Sha256 is sha256 addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Sha256 is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A cryptographic hash function that produces a 256-bit hash value, commonly used for data integrity verification.
+Secure Hash Algorithm 256-bit, a cryptographic hash function that produces a fixed-size 256-bit hash value. Solves problems like data integrity verification, password hashing, and digital signatures. Example: Verifying file integrity by comparing SHA-256 hash before and after download to detect corruption or tampering. Works by processing input data through multiple rounds of compression functions to produce a unique, fixed-size hash that changes dramatically with any input modification.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

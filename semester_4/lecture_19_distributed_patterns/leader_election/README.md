@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Leader Election is a fundamental algorithm.
+Leader Election addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Leader Election is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -43,7 +43,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A distributed computing algorithm that selects a single node to coordinate activities in a cluster.
+A distributed computing algorithm that selects a single node to coordinate activities in a cluster, ensuring only one leader exists at a time. Solves problems like coordination in distributed systems, avoiding split-brain scenarios, and centralized decision-making. Example: Electing a leader in a database cluster to handle write operations, preventing conflicts. Works by nodes participating in election process, with majority vote determining leader, and automatic re-election if leader fails.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

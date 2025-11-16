@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Singleton is a fundamental algorithm.
+Singleton addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Singleton is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A creational design pattern that ensures a class has only one instance and provides global access to that instance.
+A creational design pattern that ensures a class has only one instance and provides global access to that instance. Solves problems like database connection management, logging systems, and configuration managers. Example: A single database connection pool shared across an application to avoid resource exhaustion. Works by making the constructor private and providing a static method that returns the same instance.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

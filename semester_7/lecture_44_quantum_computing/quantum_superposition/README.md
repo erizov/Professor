@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Quantum Superposition is a fundamental concept in quantum computing fundamentals.
+Quantum Superposition addresses concept in quantum computing fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: A quantum mechanical property where a quantum system exists in multiple states simultaneously until measured.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+A quantum mechanical property where a quantum system exists in multiple states simultaneously until measured. Solves problems in quantum computing by enabling parallel computation and quantum algorithms. Example: A qubit in superposition can represent both 0 and 1 simultaneously, unlike classical bits. Works by maintaining quantum state as linear combination of basis states, collapsing to single state only upon measurement.
 
 **Key Characteristics:**
 - **Category**: Quantum Computing Fundamentals

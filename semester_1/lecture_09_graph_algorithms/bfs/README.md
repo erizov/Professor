@@ -2,9 +2,9 @@
 
 ## Introduction
 
-Bfs is a fundamental algorithm.
+Bfs addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Bfs is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -35,7 +35,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A graph traversal algorithm that explores all vertices at the current depth level before moving to vertices at the next depth level.
+A graph traversal algorithm that explores all vertices at the current depth level before moving to vertices at the next depth level. Solves problems like finding shortest paths in unweighted graphs, social network analysis, and web crawling. Example: Finding the minimum number of connections between two LinkedIn users. Works by using a queue to process vertices level by level, ensuring shortest path discovery.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

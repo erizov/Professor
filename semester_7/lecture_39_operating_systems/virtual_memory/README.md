@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Virtual Memory is a fundamental concept in operating systems fundamentals.
+Virtual Memory addresses concept in operating systems fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: A memory management technique that uses disk storage to extend available RAM, creating illusion of larger memory.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+A memory management technique that uses disk storage to extend available RAM, creating illusion of larger memory. Solves problems like running programs larger than physical RAM and memory isolation. Example: Running 8GB program on 4GB RAM by swapping unused pages to disk. Works by dividing memory into pages, keeping active pages in RAM, and swapping inactive pages to disk storage.
 
 **Key Characteristics:**
 - **Category**: Operating Systems Fundamentals

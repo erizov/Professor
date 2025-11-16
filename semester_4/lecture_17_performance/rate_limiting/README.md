@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Rate Limiting is a fundamental algorithm.
+Rate Limiting addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Rate Limiting is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -42,7 +42,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A technique for controlling the rate of requests sent or received by a network interface controller.
+A technique for controlling the rate of requests sent or received by a network interface controller to prevent abuse and ensure fair resource usage. Solves problems like API abuse, DDoS protection, and resource exhaustion. Example: Limiting API calls to 100 requests per minute per user to prevent system overload. Works by tracking request counts per identifier and rejecting requests that exceed thresholds.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

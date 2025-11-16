@@ -2,9 +2,9 @@
 
 ## Introduction
 
-Naive Bayes is a fundamental algorithm.
+Naive Bayes addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Naive Bayes is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -36,7 +36,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A machine learning algorithm that learns patterns from data to make predictions or decisions.
+A probabilistic classification algorithm based on Bayes' theorem with strong independence assumptions between features. Solves problems like text classification, spam filtering, and sentiment analysis. Example: Classifying documents into topics (sports, technology) based on word frequencies, assuming words are independent. Works by calculating probability of each class given features, using Bayes' theorem and multiplying feature probabilities.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

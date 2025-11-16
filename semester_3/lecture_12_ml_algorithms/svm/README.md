@@ -2,9 +2,9 @@
 
 ## Introduction
 
-Svm is a fundamental algorithm.
+Svm addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Svm is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -36,7 +36,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A machine learning algorithm that learns patterns from data to make predictions or decisions.
+Support Vector Machine, a classification algorithm that finds the optimal hyperplane separating classes with maximum margin. Solves problems like text classification, image recognition, and non-linear classification with kernel tricks. Example: Classifying emails as spam or not by finding the best boundary in high-dimensional feature space. Works by identifying support vectors (critical training examples) that define the optimal separating hyperplane.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

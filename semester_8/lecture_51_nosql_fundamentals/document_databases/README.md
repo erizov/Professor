@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Document Databases is a fundamental concept in nosql database fundamentals.
+Document Databases addresses concept in nosql database fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: NoSQL databases that store data as documents (typically JSON) rather than rows and columns.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+NoSQL databases that store data as documents (typically JSON) rather than rows and columns. Solves problems like flexible schemas, nested data structures, and rapid development. Example: Storing user profiles with varying fields (some users have addresses, others don't) without schema constraints. Works by storing self-describing documents with embedded data, enabling schema evolution and complex nested structures.
 
 **Key Characteristics:**
 - **Category**: NoSQL Database Fundamentals

@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Blue Green is blue green is a fundamental algorithm.
+Blue Green is blue green addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Blue Green is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -43,7 +43,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A deployment strategy that maintains two identical production environments, switching traffic between them for zero-downtime deployments.
+A deployment strategy that maintains two identical production environments (blue and green), switching traffic between them for zero-downtime deployments. Solves problems like deployment risk, rollback complexity, and service interruption. Example: Deploying new version to green environment, testing it, then switching all traffic from blue to green instantly. Works by maintaining parallel environments and using load balancer to route traffic, enabling instant rollback by switching back.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

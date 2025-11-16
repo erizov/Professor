@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Blockchain Scalability is a fundamental concept in advanced blockchain.
+Blockchain Scalability addresses concept in advanced blockchain.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: Methods to improve blockchain network capacity and transaction processing speed.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+Methods to improve blockchain network capacity and transaction processing speed. Solves problems like network congestion, high transaction fees, and slow confirmation times. Example: Implementing sharding to split Ethereum into 64 parallel chains, each processing transactions independently. Works by dividing network into smaller segments, using off-chain processing, or optimizing consensus algorithms to increase throughput.
 
 **Key Characteristics:**
 - **Category**: Advanced Blockchain

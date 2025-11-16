@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Insertion Sort is a fundamental algorithm.
+Insertion Sort addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Insertion Sort is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A simple sorting algorithm that builds the final sorted array one item at a time, similar to how you sort playing cards in your hands.
+A simple sorting algorithm that builds the final sorted array one element at a time by inserting each element into its correct position. Solves the problem of sorting small datasets or nearly-sorted arrays efficiently. Example: Sorting playing cards in hand [7, 3, 9, 2] → [2, 3, 7, 9]. Works by maintaining a sorted subarray and inserting each new element in the correct position.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Knowledge Base is a fundamental concept in support systems.
+Knowledge Base addresses concept in support systems.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: Centralized repositories of information, documentation, and solutions for common problems.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+Centralized repositories of information, documentation, and solutions for common problems. Solves problems like information accessibility, reducing support load, and enabling self-service. Example: Searchable database of troubleshooting guides, FAQs, and solutions for software issues. Works by organizing information into searchable articles, categorizing by topic, and providing search and navigation interfaces.
 
 **Key Characteristics:**
 - **Category**: Support Systems

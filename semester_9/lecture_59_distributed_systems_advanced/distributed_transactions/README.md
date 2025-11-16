@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Distributed Transactions is an advanced graduate-level algorithm.
+Distributed Transactions addresses advanced computational challenges in specialized domains.
 
-This algorithm is part of the advanced curriculum covering cutting-edge topics in computer science and software engineering.
+This topic covers advanced techniques and methodologies used in modern software systems.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -25,7 +25,7 @@ This algorithm is part of the advanced curriculum covering cutting-edge topics i
 
 ### Short Description
 
-An algorithm designed to work across multiple networked computers or nodes.
+Database operations that execute as atomic units, ensuring all-or-nothing execution and maintaining data consistency. Solves problems like data integrity, concurrent access conflicts, and partial updates. Example: Transferring money between accounts where both debit and credit must succeed or both must fail. Works by grouping operations, maintaining isolation, and using commit/rollback to ensure atomicity and consistency.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

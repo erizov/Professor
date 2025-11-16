@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Strategy is a fundamental algorithm.
+Strategy addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Strategy is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A behavioral design pattern that defines a family of algorithms, encapsulates each one, and makes them interchangeable.
+A behavioral design pattern that defines a family of algorithms, encapsulates each one, and makes them interchangeable at runtime. Solves problems like algorithm selection, payment method handling, and compression strategy selection. Example: Choosing between different sorting algorithms (QuickSort, MergeSort) based on data characteristics. Works by defining a common interface for algorithms and allowing clients to select and use them interchangeably.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

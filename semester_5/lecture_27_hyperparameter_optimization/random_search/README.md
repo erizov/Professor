@@ -10,13 +10,13 @@
 
 ## Introduction
 
-Random Search is a fundamental algorithm.
+Random Search addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Random Search is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: A search algorithm that finds target values in data structures.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -42,7 +42,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+A search algorithm that finds target values in data structures. Solves the problem of locating specific information efficiently. Example: Finding a record in a database or a word in a document. Works by systematically examining data until the target is found.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

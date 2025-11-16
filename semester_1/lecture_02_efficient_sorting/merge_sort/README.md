@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Merge Sort is a fundamental algorithm.
+Merge Sort addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Merge Sort is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A stable, divide-and-conquer sorting algorithm that divides the array into halves, recursively sorts them, and merges the sorted halves.
+A stable, divide-and-conquer sorting algorithm that divides the array into halves, recursively sorts each half, then merges the sorted halves. Solves the problem of sorting with guaranteed O(n log n) performance. Example: Sorting file sizes [1024, 512, 2048, 256] → [256, 512, 1024, 2048]. Works by repeatedly splitting arrays until single elements remain, then merging them in sorted order.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

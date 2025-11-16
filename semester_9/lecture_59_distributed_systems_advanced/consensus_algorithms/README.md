@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Consensus Algorithms is an advanced graduate-level algorithm.
+Consensus Algorithms addresses advanced computational challenges in specialized domains.
 
-This algorithm is part of the advanced curriculum covering cutting-edge topics in computer science and software engineering.
+This topic covers advanced techniques and methodologies used in modern software systems.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -25,7 +25,7 @@ This algorithm is part of the advanced curriculum covering cutting-edge topics i
 
 ### Short Description
 
-An algorithm designed to work across multiple networked computers or nodes.
+An algorithm designed to work across multiple networked computers or nodes. Solves problems like scalability, fault tolerance, and coordination in distributed systems. Example: Distributed consensus algorithm ensuring all nodes agree on system state. Works by coordinating actions across multiple nodes, handling network partitions, and maintaining consistency.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

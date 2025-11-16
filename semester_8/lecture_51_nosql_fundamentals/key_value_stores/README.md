@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Key Value Stores is a fundamental concept in nosql database fundamentals.
+Key Value Stores addresses concept in nosql database fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: NoSQL databases that store data as key-value pairs, providing simple and fast access.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+NoSQL databases that store data as key-value pairs, providing simple and fast access. Solves problems like caching, session storage, and high-performance lookups. Example: Storing user sessions as key (session_id) and value (user_data JSON) for fast retrieval. Works by maintaining hash tables or similar structures that map keys directly to values, enabling O(1) lookup time.
 
 **Key Characteristics:**
 - **Category**: NoSQL Database Fundamentals

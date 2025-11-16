@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Logistic Regression is a fundamental algorithm.
+Logistic Regression addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Logistic Regression is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A machine learning algorithm that learns patterns from data to make predictions or decisions.
+A classification algorithm that predicts the probability of a binary outcome using a logistic function. Solves problems like spam detection, medical diagnosis, and customer churn prediction. Example: Predicting whether an email is spam (1) or not (0) based on word frequencies. Works by applying a sigmoid function to linear combination of features, producing probabilities between 0 and 1.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

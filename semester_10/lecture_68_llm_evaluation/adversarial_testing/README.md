@@ -10,13 +10,13 @@
 
 ## Introduction
 
-Adversarial Testing is an advanced graduate-level algorithm.
+Adversarial Testing addresses advanced computational challenges in specialized domains.
 
-This algorithm is part of the advanced curriculum covering cutting-edge topics in computer science and software engineering.
+This topic covers advanced techniques and methodologies used in modern software systems.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: Rivest-Shamir-Adleman, an asymmetric encryption algorithm that uses a public-private key pair for secure data transmission.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -25,7 +25,7 @@ This algorithm is part of the advanced curriculum covering cutting-edge topics i
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+Rivest-Shamir-Adleman, an asymmetric encryption algorithm that uses a public-private key pair for secure data transmission. Solves problems like secure key exchange, digital signatures, and encrypted communication without shared secrets. Example: HTTPS uses RSA to establish secure connection by encrypting symmetric key with server's public key. Works by using mathematical properties of large prime numbers to create key pairs where data encrypted with public key can only be decrypted with private key.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

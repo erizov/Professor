@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Repository is a fundamental algorithm.
+Repository addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Repository is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A design pattern that abstracts data access logic, providing a collection-like interface for accessing domain objects.
+A design pattern that abstracts data access logic, providing a collection-like interface for accessing domain objects. Solves problems like data access complexity, testability, and switching between data sources. Example: Accessing user data through a UserRepository interface, whether data comes from database, API, or cache. Works by encapsulating data access operations behind a simple interface, hiding implementation details.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

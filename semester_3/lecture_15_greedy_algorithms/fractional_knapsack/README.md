@@ -10,13 +10,13 @@
 
 ## Introduction
 
-Fractional Knapsack is a fundamental algorithm.
+Fractional Knapsack addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Fractional Knapsack is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: An optimization algorithm that determines the most valuable combination of items that fit within a weight constraint.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -42,7 +42,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+An optimization algorithm that determines the most valuable combination of items that fit within a weight constraint. Solves problems like resource allocation, portfolio optimization, and cutting stock problems. Example: Selecting items for a backpack with weight limit 15kg to maximize value. Works by building a table of optimal solutions for subproblems, using previous results to compute larger problems.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

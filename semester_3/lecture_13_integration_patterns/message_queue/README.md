@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Message Queue is a fundamental algorithm.
+Message Queue addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Message Queue is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -43,7 +43,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An asynchronous communication pattern where messages are stored in a queue until they can be processed.
+An asynchronous communication pattern where messages are stored in a queue until they can be processed by consumers. Solves problems like system decoupling, load leveling, and reliable message delivery. Example: Processing order notifications asynchronously so the main order service doesn't wait for email sending. Works by producers sending messages to queues, which store them until consumers are ready to process, ensuring reliable delivery.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

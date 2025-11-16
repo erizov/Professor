@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Dependency Inversion is a fundamental algorithm.
+Dependency Inversion addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Dependency Inversion is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A reusable solution to a commonly occurring problem in software design.
+A reusable solution to a commonly occurring problem in software design. Solves problems like code organization, maintainability, and design consistency. Example: Using Factory pattern to create different types of payment processors without exposing creation logic. Works by providing proven design structures that address specific design problems in object-oriented programming.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

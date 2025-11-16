@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Code Documentation is a fundamental concept in documentation systems.
+Code Documentation addresses concept in documentation systems.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: In-code comments and external documentation explaining how code works, its purpose, and usage.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+In-code comments and external documentation explaining how code works, its purpose, and usage. Solves problems like code maintainability, knowledge transfer, and reducing onboarding time. Example: Docstrings in Python functions explaining parameters, return values, and usage examples. Works by embedding documentation in code (comments, docstrings) and generating external docs (Sphinx, Javadoc) from code annotations.
 
 **Key Characteristics:**
 - **Category**: Documentation Systems

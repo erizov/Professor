@@ -10,13 +10,13 @@
 
 ## Introduction
 
-Cqrs Advanced is an advanced graduate-level algorithm.
+Cqrs Advanced addresses advanced computational challenges in specialized domains.
 
-This algorithm is part of the advanced curriculum covering cutting-edge topics in computer science and software engineering.
+This topic covers advanced techniques and methodologies used in modern software systems.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: Command Query Responsibility Segregation pattern that separates read and write operations into different models.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -25,7 +25,7 @@ This algorithm is part of the advanced curriculum covering cutting-edge topics i
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+Command Query Responsibility Segregation pattern that separates read and write operations into different models. Solves problems like read/write optimization, scalability, and complex domain models. Example: Using separate databases for reading (optimized for queries) and writing (optimized for transactions) in an e-commerce system. Works by routing commands (writes) to command handlers and queries (reads) to query handlers, with eventual consistency between models.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

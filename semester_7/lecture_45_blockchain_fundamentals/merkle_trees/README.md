@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Merkle Trees is a fundamental concept in blockchain fundamentals.
+Merkle Trees addresses concept in blockchain fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: A tree-based algorithm that processes hierarchical data structures.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+A tree-based algorithm that processes hierarchical data structures. Solves problems involving parent-child relationships and hierarchical organization. Example: Organizing file systems or representing organizational charts. Works by traversing nodes and edges in tree structures.
 
 **Key Characteristics:**
 - **Category**: Blockchain Fundamentals

@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Continuous Integration is a fundamental concept in ci/cd fundamentals.
+Continuous Integration addresses concept in ci/cd fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: A development practice where code changes are automatically built, tested, and merged frequently.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+A development practice where code changes are automatically built, tested, and merged frequently. Solves problems like integration conflicts, early bug detection, and code quality maintenance. Example: Automatically running tests and building application whenever developer pushes code to repository. Works by triggering automated pipelines on code commits, running tests and builds, and providing immediate feedback on code quality.
 
 **Key Characteristics:**
 - **Category**: CI/CD Fundamentals

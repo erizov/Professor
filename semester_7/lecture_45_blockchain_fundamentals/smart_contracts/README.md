@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Smart Contracts is a fundamental concept in blockchain fundamentals.
+Smart Contracts addresses concept in blockchain fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: Self-executing contracts with terms directly written into code, automatically executing when conditions are met.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+Self-executing contracts with terms directly written into code, automatically executing when conditions are met. Solves problems like trustless agreements, automated transactions, and reducing intermediaries. Example: Escrow contract that automatically releases payment to seller when buyer confirms receipt of goods. Works by deploying code to blockchain that executes automatically when triggered by transactions, with results recorded immutably.
 
 **Key Characteristics:**
 - **Category**: Blockchain Fundamentals

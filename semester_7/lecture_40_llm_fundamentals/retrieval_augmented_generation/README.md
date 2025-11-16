@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Retrieval Augmented Generation is a fundamental concept in large language models fundamentals.
+Retrieval Augmented Generation addresses concept in large language models fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: A technique that combines information retrieval with language generation to produce accurate, up-to-date responses.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+A technique that combines information retrieval with language generation to produce accurate, up-to-date responses. Solves problems like knowledge cutoff limitations, factual accuracy, and domain-specific information. Example: Answering questions about recent events by retrieving relevant documents, then generating answers based on retrieved content. Works by searching knowledge base for relevant information, then using retrieved context to guide language model generation.
 
 **Key Characteristics:**
 - **Category**: Large Language Models Fundamentals

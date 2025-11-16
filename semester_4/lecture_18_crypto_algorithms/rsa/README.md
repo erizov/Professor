@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Rsa is a fundamental algorithm.
+Rsa addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Rsa is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An asymmetric encryption algorithm that uses a public-private key pair for secure data transmission.
+Rivest-Shamir-Adleman, an asymmetric encryption algorithm that uses a public-private key pair for secure data transmission. Solves problems like secure key exchange, digital signatures, and encrypted communication without shared secrets. Example: HTTPS uses RSA to establish secure connection by encrypting symmetric key with server's public key. Works by using mathematical properties of large prime numbers to create key pairs where data encrypted with public key can only be decrypted with private key.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

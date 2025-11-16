@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Publish Subscribe is publish subscribe is a fundamental algorithm.
+Publish Subscribe is publish subscribe addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Publish Subscribe is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -43,7 +43,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A messaging pattern where publishers send messages to topics without knowing who the subscribers are.
+A messaging pattern where publishers send messages to topics without knowing who the subscribers are, enabling decoupled communication. Solves problems like event-driven architectures, real-time notifications, and system decoupling. Example: Publishing 'order.created' event that multiple subscribers (email service, inventory service, analytics) receive independently. Works by publishers sending to topics, and subscribers receiving all messages from subscribed topics.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

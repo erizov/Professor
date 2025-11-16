@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Blockchain Structure is a fundamental concept in blockchain fundamentals.
+Blockchain Structure addresses concept in blockchain fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: A distributed ledger technology that stores transactions in blocks linked cryptographically in a chain.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+A distributed ledger technology that stores transactions in blocks linked cryptographically in a chain. Solves problems like trustless transactions, immutability, and decentralized record-keeping. Example: Bitcoin blockchain recording all transactions in linked blocks, creating tamper-proof history. Works by grouping transactions into blocks, hashing each block with previous block's hash, and distributing copies across network nodes.
 
 **Key Characteristics:**
 - **Category**: Blockchain Fundamentals

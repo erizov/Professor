@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Authentication is a fundamental algorithm.
+Authentication addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Authentication is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -44,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-The process of verifying the identity of a user, device, or system attempting to access resources.
+The process of verifying the identity of a user, device, or system attempting to access resources. Solves problems like access control, security, and user management. Example: Logging into email by providing username and password to prove identity. Works by comparing provided credentials against stored credentials, issuing session tokens upon successful verification.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

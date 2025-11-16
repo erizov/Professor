@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Sql Queries is a fundamental concept in sql database fundamentals.
+Sql Queries addresses concept in sql database fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: Structured Query Language commands for retrieving, manipulating, and managing data in relational databases.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+Structured Query Language commands for retrieving, manipulating, and managing data in relational databases. Solves problems like data retrieval, filtering, aggregation, and joining related data. Example: Finding all customers who purchased products in the last month: SELECT * FROM customers WHERE last_purchase_date > DATE_SUB(NOW(), INTERVAL 1 MONTH). Works by parsing SQL statements, optimizing execution plans, and returning results from database tables.
 
 **Key Characteristics:**
 - **Category**: SQL Database Fundamentals

@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Trie is a fundamental algorithm.
+Trie addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Trie is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -42,7 +42,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A hierarchical data structure algorithm that organizes data in a tree-like structure with nodes and edges.
+A technique that combines information retrieval with language generation to produce accurate, up-to-date responses. Solves problems like knowledge cutoff limitations, factual accuracy, and domain-specific information. Example: Answering questions about recent events by retrieving relevant documents, then generating answers based on retrieved content. Works by searching knowledge base for relevant information, then using retrieved context to guide language model generation.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

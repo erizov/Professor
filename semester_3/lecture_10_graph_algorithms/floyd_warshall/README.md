@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Floyd Warshall is floyd warshall is a fundamental algorithm.
+Floyd Warshall is floyd warshall addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Floyd Warshall is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -43,7 +43,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that processes graph data structures, exploring relationships between vertices and edges.
+An algorithm that processes graph data structures, exploring relationships between vertices and edges. Solves problems like network analysis, path finding, and relationship mapping. Example: Finding the shortest route between cities on a road network. Works by traversing vertices and edges, maintaining visited states, and applying graph theory algorithms to solve specific problems.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

@@ -8,11 +8,12 @@
 
 ## Implementation
 
-## Introduction
+## Introduction## Introduction
+## Introduction## Introduction
 
-Quick Sort is a fundamental algorithm.
+Quick Sort addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Quick Sort is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -43,7 +44,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A divide-and-conquer sorting algorithm that partitions an array around a pivot element, recursively sorting subarrays.
+A divide-and-conquer sorting algorithm that partitions an array around a pivot element, then recursively sorts the subarrays. Solves the problem of efficiently sorting large datasets. Example: Sorting product prices [29.99, 15.50, 45.00, 12.99] → [12.99, 15.50, 29.99, 45.00]. Works by selecting a pivot, partitioning elements smaller/larger than pivot, then recursively sorting partitions.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

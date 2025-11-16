@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Model Parallelism is a fundamental algorithm.
+Model Parallelism addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Model Parallelism is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -42,7 +42,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm designed to work across multiple networked computers or nodes.
+An algorithm designed to work across multiple networked computers or nodes. Solves problems like scalability, fault tolerance, and coordination in distributed systems. Example: Distributed consensus algorithm ensuring all nodes agree on system state. Works by coordinating actions across multiple nodes, handling network partitions, and maintaining consistency.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

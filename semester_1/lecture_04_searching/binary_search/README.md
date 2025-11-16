@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Binary Search is a fundamental algorithm.
+Binary Search addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Binary Search is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -43,7 +43,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An efficient search algorithm that finds the position of a target value within a sorted array by repeatedly dividing the search interval in half.
+An efficient search algorithm that finds the position of a target value within a sorted array by repeatedly dividing the search interval in half. Solves the problem of quickly locating items in sorted collections. Example: Finding page 250 in a 500-page book by checking middle (250), then narrowing search. Works by comparing target with middle element, eliminating half the search space each iteration.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

@@ -2,9 +2,9 @@
 
 ## Introduction
 
-Observer is a fundamental algorithm.
+Observer addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Observer is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -36,7 +36,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A behavioral design pattern that defines a one-to-many dependency between objects, so when one object changes state, all dependents are notified.
+A behavioral design pattern that defines a one-to-many dependency between objects, so when one object changes state, all dependents are notified automatically. Solves problems like event handling, model-view architectures, and publish-subscribe systems. Example: Updating multiple UI components when data changes, like refreshing charts and tables when a stock price updates. Works by maintaining a list of observers and notifying them when the subject's state changes.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

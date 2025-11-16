@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Dijkstra is dijkstra is a fundamental algorithm.
+Dijkstra is dijkstra addresses specific computational challenges.
 
-This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Dijkstra is essential for building performant and scalable applications.
+This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
 ## TL;DR (Too Long; Didn't Read)
 
@@ -43,7 +43,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A shortest path algorithm that finds the minimum distance from a source vertex to all other vertices in a weighted graph.
+A shortest path algorithm that finds the minimum distance from a source vertex to all other vertices in a weighted graph with non-negative edges. Solves problems like GPS navigation, network routing, and social network analysis. Example: Finding the shortest route from your location to a destination considering traffic and road distances. Works by maintaining a priority queue of vertices, always processing the closest unvisited vertex first.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Llm Architecture is a fundamental concept in large language models fundamentals.
+Llm Architecture addresses concept in large language models fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR (Too Long; Didn't Read)
 
-**One Sentence**: An algorithm that solves a specific computational problem efficiently.
+**One Sentence**: Large Language System architecture based on transformer neural networks that process sequences of tokens to generate text.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -40,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that solves a specific computational problem efficiently.
+Large Language System architecture based on transformer neural networks that process sequences of tokens to generate text. Solves problems like natural language understanding, text generation, and language translation. Example: GPT models that can write essays, answer questions, and translate languages based on training on vast text corpora. Works by processing input tokens through multiple transformer layers with attention mechanisms, generating output tokens autoregressively.
 
 **Key Characteristics:**
 - **Category**: Large Language Models Fundamentals
