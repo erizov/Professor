@@ -107,7 +107,8 @@ def remove_duplicate_sections(content: str) -> Tuple[str, bool]:
     changed = False
     
     # First, fix cases where headers are concatenated (e.g., "## Introduction## Introduction")
-    content = re.sub(r'(##+\s+[^\n]+)(##+\s+\1)', r'\1', content, flags=re.IGNORECASE)
+    # Match pattern like "## Introduction## Introduction" or "## Introduction## Introduction## Introduction"
+    content = re.sub(r'(##+\s+[^\n#]+)(##+\s+\1)+', r'\1', content, flags=re.IGNORECASE)
     
     lines = content.split('\n')
     seen_sections = set()
