@@ -107,8 +107,13 @@ def remove_duplicate_sections(content: str) -> Tuple[str, bool]:
     changed = False
     
     # First, fix cases where headers are concatenated (e.g., "## Introduction## Introduction")
-    # Match pattern like "## Introduction## Introduction" or "## Introduction## Introduction## Introduction"
-    content = re.sub(r'(##+\s+[^\n#]+)(##+\s+\1)+', r'\1', content, flags=re.IGNORECASE)
+    # Match pattern like "## Introduction## Introduction" - find repeated header text
+    def fix_concatenated_header(match):
+        header_text = match.group(1)
+        return header_text
+    
+    # Pattern: ##+ followed by text, then same pattern repeated
+    content = re.sub(r'(##+\s+)([^\n#]+?)(\1\2)+', r'\1\2', content, flags=re.IGNORECASE)
     
     lines = content.split('\n')
     seen_sections = set()

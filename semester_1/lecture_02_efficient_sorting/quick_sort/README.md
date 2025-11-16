@@ -8,7 +8,7 @@
 
 ## Implementation
 
-## Introduction## Introduction
+## Introduction
 
 ## TL;DR
 
