@@ -65,7 +65,7 @@ Test your understanding with these questions:
 ### Comprehension
 
 1. Can you explain how Dfs works in your own words?
-2. What is the key insight or algorithm that makes Dfs efficient?
+2. What is the key insight or strategy that makes Dfs efficient?
 
 ### Analysis
 
@@ -111,7 +111,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Dfs to solve a production issue
+10. Design a system that uses Dfs to tackle a production issue
 11. Create unit tests with 100% code coverage for Dfs
 12. Write a technical blog post explaining Dfs to beginners
 
@@ -124,7 +124,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Dfs is the best solution for all problems"
-✓ **CORRECT**: Dfs has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Dfs has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Dfs is too complex to understand"
 ✓ **CORRECT**: Dfs can be understood by breaking it down into smaller steps

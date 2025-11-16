@@ -101,11 +101,11 @@ Test your understanding with these questions:
 
 4. Implement Document Databases from scratch using only the function signature
 5. Modify Document Databases to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the strategy's execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Document Databases for a specific use case (e.g., nearly sortdatasetata)
+7. Optimize Document Databases for a specific employ case (e.g., nearly sortdatasetata)
 8. Implement a parallel or distributed version of Document Databases
 9. Compare Document Databases performance with alternative algorithms on large datasets
 

@@ -120,7 +120,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Jwt to solve a production problem
+10. Design a system that uses Jwt to tackle a production problem
 11. Create unit tests with 100% code coverage for Jwt
 12. Write a technical blog post explaining Jwt to beginners
 
@@ -133,12 +133,12 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Jwt is the best solution for all problems"
-✓ **CORRECT**: Jwt has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Jwt has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Jwt is too complex to understand"
 ✓ **CORRECT**: Jwt can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis strategy/pattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 

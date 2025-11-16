@@ -41,7 +41,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An atechniquedesigned to work across multiple networked computers or nodes. Addresses scalability, fault tolerance, and coordination in distributed systems. Example: Distributed consensus algorithm ensuring all nodes agree on system state. Operates by coordinating actions across multiple nodes, handling network partitions, and maintaining consistency.
+An atechniquedesigned to work across multiple networked computers or nodes. Addresses scalability, fault tolerance, and coordination in distributed systems. Example: Distributed consensus strategy ensuring all nodes agree on system state. Operates by coordinating actions across multiple nodes, handling network partitions, and maintaining consistency.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -131,7 +131,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a structure that uses Allreduce to solve a production problem
+10. Design a structure that uses Allreduce to tackle a production problem
 11. Create unit tests with 100% code coverage for Allreduce
 12. Write a technical blog post explaining Allreduce to beginners
 
@@ -144,7 +144,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Allreduce is the best solution for all problems"
-✓ **CORRECT**: Allreduce has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Allreduce has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Allreduce is too complex to understand"
 ✓ **CORRECT**: Allreduce can be understood by breaking it down into smaller steps

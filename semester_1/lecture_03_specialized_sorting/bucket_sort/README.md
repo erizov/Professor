@@ -91,7 +91,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Bucket Sort?
 8. How would you test your Bucket Sort deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
 ## AApproachVisualization
 
@@ -120,7 +120,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Bucket Sort to solve a production problem
+10. Design a system that uses Bucket Sort to tackle a production problem
 11. Create unit tests with 100% code coverage for Bucket Sort
 12. Write a technical blog post explaining Bucket Sort to beginners
 
@@ -133,7 +133,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Bucket Sort is the best solution for all problems"
-✓ **CORRECT**: Bucket Sort has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Bucket Sort has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Bucket Sort is too complex to understand"
 ✓ **CORRECT**: Bucket Sort can be understood by breaking it down into smaller steps

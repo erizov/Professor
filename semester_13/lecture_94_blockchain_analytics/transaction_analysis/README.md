@@ -128,11 +128,11 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Transaction Analysis is the best solution for all problems"
-✓ **CORRECT**: Transaction Analysis has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Transaction Analysis has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Transaction Analysis is too complex to understand"
 ✓ **CORRECT**: Transaction Analysis can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in various advanced frameworks and technologies.
+## Examples of ImplRealizationis strategy/pattern is implemented in various advanced frameworks and technologies.
 
 *Note: Framework-specific examples will be added based on actual implementations.*

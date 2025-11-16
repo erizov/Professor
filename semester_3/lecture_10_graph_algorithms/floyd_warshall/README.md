@@ -42,7 +42,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that processes graph content structures, exploring relationships between vertices and edges. Addresses network analysis, path finding, and relationship mapping. Example: Finding the shortest route between cities on a road network. Operates by traversing vertices and edges, maintaining visited states, and applying graph theory algorithms to tackle specific problems.
+An strategy that processes graph content structures, exploring relationships between vertices and edges. Addresses network analysis, path finding, and relationship mapping. Example: Finding the shortest route between cities on a road network. Operates by traversing vertices and edges, maintaining visited states, and applying graph theory algorithms to tackle specific problems.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -83,7 +83,7 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Floyd Warshall from memory without looking at the code?
-6. What real-world problem could you solve using Floyd Warshall?
+6. What real-world problem could you tackle using Floyd Warshall?
 
 ### Debugging
 
@@ -131,7 +131,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Floyd Warshall is the best solution for all problems"
-✓ **CORRECT**: Floyd Warshall has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Floyd Warshall has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Floyd Warshall is too complex to understand"
 ✓ **CORRECT**: Floyd Warshall can be understood by breaking it down into smaller steps

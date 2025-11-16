@@ -86,7 +86,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Huffman would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -107,7 +107,7 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Huffman for a specific use case (e.g., nearly sorted content)
+7. Optimize Huffman for a specific employ case (e.g., nearly sorted content)
 8. Implement a parallel or distributed version of Huffman
 9. Compare Huffman performance with alternative algorithms on large datasets
 

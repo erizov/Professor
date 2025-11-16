@@ -120,7 +120,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Factory to solve a production problem
+10. Design a system that uses Factory to tackle a production problem
 11. Create unit tests with 100% code coverage for Factory
 12. Write a technical blog post explaining Factory to beginners
 
@@ -133,14 +133,14 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Factory is the best solution for all problems"
-✓ **CORRECT**: Factory has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Factory has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Factory is too complex to understand"
 ✓ **CORRECT**: Factory can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
+## Examples of Deployment
 
-This algorithm/pattern is implemented in the following frameworks and technologies:
+This strategy/pattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 

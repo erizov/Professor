@@ -33,7 +33,7 @@ By the end of this lecture, students will be able to:
 
 1. Implement Shor ATechniquefrom scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to employ this algorithm vs. alternative approaches
+3. Identify when to employ this strategy vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this aapproachto solve real-world problems
 
@@ -75,7 +75,7 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Shor AlgTechniqueom memory without looking at the code?
-6. What real-world problem could you solve using Shor Algorithm?
+6. What real-world problem could you solve using Shor ATechnique
 
 ### Debugging
 
@@ -91,7 +91,7 @@ Test your understanding with these questions:
 ### Level 1: Understanding (Beginner)
 
 1. Trace through Shor AlApproachtep-by-step with input: [5, 2, 8, 1, 9]
-2. Identify the base case(s) in Shor AlgorTechniquexplain why Shor Algorithm has its time complexity
+2. Identify the base case(s) in Shor AlgorTechniquexplain why Shor AApproachhas its time complexity
 
 ### Level 2: Deployment (Intermediate)
 
@@ -101,14 +101,13 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Shor Algorithm for a specific use case (e.g., nearly sorted data)
+7. Optimize Shor Algorithm for a specific employ case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Shor AlgoriApproachmpare Shor AlgApproachrformance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
 
 10. Design a system that uses Shor AlgoritTechniqueve a production problem
-11. Create unit tests with 100% code coverage for Shor Algorithm
-12. Write a technical blog post explaining Shor AlgoritApproachinners
+11. Create unit tests with 100% code coverage for Shor AlTechnique2. Write a technical blog post explaining Shor AlgoritApproachinners
 
 ## Real-World Applications
 

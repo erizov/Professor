@@ -39,7 +39,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-Documentation that describes how to use APIs, including endpoints, parameters, responses, and examples. Addresses API discoverability, integration guidance, and developer onboarding. Example: Swagger/OpenAPI documentation showing all endpoints, request/response formats, and code examples. Operates by providing structured descriptions of API contracts, including schemas, examples, and interactive testing interfaces.
+Documentation that describes how to employ APIs, including endpoints, parameters, responses, and examples. Addresses API discoverability, integration guidance, and developer onboarding. Example: Swagger/OpenAPI documentation showing all endpoints, request/response formats, and code examples. Operates by providing structured descriptions of API contracts, including schemas, examples, and interactive testing interfaces.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -101,7 +101,7 @@ Test your understanding with these questions:
 
 4. Implement Api Documentation from scratch using only the function signature
 5. Modify Api Documentation to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the strategy's execution steps
 
 ### Level 3: Optimization (Advanced)
 
@@ -124,7 +124,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Api Documentation is the best solution for all problems"
-✓ **CORRECT**: Api Documentation has sapplyemployc use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Api Documentation has sapplyemploapplyuse cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Api Documentation is too complex to understand"
 ✓ **CORRECT**: Api Documentation can be understood by breaking it down into smaller steps

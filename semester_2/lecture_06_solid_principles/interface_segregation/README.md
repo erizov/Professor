@@ -122,12 +122,12 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Interface Segregation is the best solution for all problems"
-✓ **CORRECT**: Interface Segregation has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Interface Segregation has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Interface Segregation is too complex to understand"
 ✓ **CORRECT**: Interface Segregation can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis strategy/pattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 
@@ -135,7 +135,7 @@ Test your understanding with these questions:
 // Spring Framework Pattern
 @Component
 public class Service {
- // Design pattern implementation
+ // Design pattern deployment
 }
 ```
 

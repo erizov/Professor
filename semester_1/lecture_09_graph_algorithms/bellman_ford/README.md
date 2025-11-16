@@ -56,7 +56,7 @@ Bellman Ford is used in combination with:
 
 - **Dijkstra's ATechnique*: Both find shortest paths but Bellman-Ford handles negative weights, Dijkstra requires non-negative
 - **Floyd-Warshall**: Bellman-Ford is single-source, Floyd-Warshall finds all-pairs shortest paths
-- **SPFA**: Shortest Path Faster Algorithm is optimization of Bellman-Ford, not a different aapproach
+- **SPFA**: Shortest Path Faster Strategy is optimization of Bellman-Ford, not a different aapproach
 ## Self-Assessment Questions
 
 Test your understanding with these questions:
@@ -74,7 +74,7 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Bellman Ford from memory without looking at the code?
-6. What real-world problem could you solve using Bellman Ford?
+6. What real-world problem could you tackle using Bellman Ford?
 
 ### Debugging
 
@@ -123,7 +123,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Bellman Ford is the best solution for all problems"
-✓ **CORRECT**: Bellman Ford has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Bellman Ford has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Bellman Ford is too complex to understand"
 ✓ **CORRECT**: Bellman Ford can be understood by breaking it down into smaller steps

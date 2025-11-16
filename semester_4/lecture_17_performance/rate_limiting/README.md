@@ -41,7 +41,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A approach for controlling the rate of requests sent or received by a network interface controller to prevent abuse and ensure fair resource usage. Addresses API abuse, DDoS protection, and resource exhaustion. Example: Limiting API calls to 100 requests per minute per user to prevent system overload. Operates by tracking request counts per identifier and rejecting requests that exceed thresholds.
+An approach for controlling the rate of requests sent or received by a network interface controller to prevent abuse and ensure fair resource usage. Addresses API abuse, DDoS protection, and resource exhaustion. Example: Limiting API calls to 100 requests per minute per user to prevent system overload. Operates by tracking request counts per identifier and rejecting requests that exceed thresholds.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -61,7 +61,7 @@ Test your understanding with these questions:
 ### Comprehension
 
 1. Can you explain how Rate Limiting works in your own words?
-2. What is the key insight or algorithm that makes Rate Limiting efficient?
+2. What is the key insight or strategy that makes Rate Limiting efficient?
 
 ### Analysis
 
@@ -120,7 +120,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Rate Limiting is the best solution for all problems"
-✓ **CORRECT**: Rate Limiting has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Rate Limiting has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Rate Limiting is too complex to understand"
 ✓ **CORRECT**: Rate Limiting can be understood by breaking it down into smaller steps

@@ -122,7 +122,7 @@ Test your understanding with these questions:
 
 4. Implement Blue Green CI from scratch using only the function signature
 5. Modify Blue Green CI to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the strategy's execution steps
 
 ### Level 3: Optimization (Advanced)
 
@@ -132,7 +132,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Blue Green CI to solve a production problem
+10. Design a system that uses Blue Green CI to tackle a production problem
 11. Create unit tests with 100% code coverage for Blue Green CI
 12. Write a technical blog post explaining Blue Green CI to beginners
 
@@ -145,7 +145,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Blue Green CI is the best solution for all problems"
-✓ **CORRECT**: Blue Green CI has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Blue Green CI has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Blue Green CI is too complex to understand"
 ✓ **CORRECT**: Blue Green CI can be understood by breaking it down into smaller steps
@@ -162,7 +162,7 @@ metadata:
  name: app
 spec:
  replicas: 3
- # Deployment pattern implementation
+ # Deployment pattern deployment
 ```
 
 **Purpose**: Kubernetes uses this pattern for container orchestration, service discovery, and resource management.

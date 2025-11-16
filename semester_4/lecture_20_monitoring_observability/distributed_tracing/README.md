@@ -41,7 +41,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A approach for observing and tracking structure behavior, performance, and health. Addresses issue detection, capability optimization, and structure reliability. Example: Monitoring API response times to detect capability degradation. Operates by collecting metrics, logs, and traces, analyzing patterns, and alerting on anomalies.
+An approach for observing and tracking structure behavior, performance, and health. Addresses issue detection, capability optimization, and structure reliability. Example: Monitoring API response times to detect capability degradation. Operates by collecting metrics, logs, and traces, analyzing patterns, and alerting on anomalies.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -67,7 +67,7 @@ Test your understanding with these questions:
 ### Comprehension
 
 1. Can you explain how Distributed Tracing works in your own words?
-2. What is the key insight or algorithm that makes Distributed Tracing efficient?
+2. What is the key insight or strategy that makes Distributed Tracing efficient?
 
 ### Analysis
 
@@ -107,7 +107,7 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Distributed Tracing for a specific use case (e.g., nearly sorted data)
+7. Optimize Distributed Tracing for a specific employ case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Distributed Tracing
 9. Compare Distributed Tracing peffectivenesswith alternative algorithms on large datasets
 
@@ -120,7 +120,7 @@ Test your understanding with these questions:
 ## Real-World Applications
 
 - **Enterprise Applications**: Distributed Tracing is used in production systems
-- **Performance Optimization**: Applied to improve system efficiFrameworkArchitecturetem Design**: Integral part of scalable architecture patterns
+- **Capability Optimization**: Applied to improve structure efficiFrameworkArchitecturetem Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 

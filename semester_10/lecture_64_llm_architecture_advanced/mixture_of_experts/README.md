@@ -88,7 +88,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Mixture Of Experts would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -128,7 +128,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Mixture Of Experts is the best solution for all problems"
-✓ **CORRECT**: Mixture Of Experts has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Mixture Of Experts has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Mixture Of Experts is too complex to understand"
 ✓ **CORRECT**: Mixture Of Experts can be understood by breaking it down into smaller steps

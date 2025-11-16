@@ -101,11 +101,11 @@ Test your understanding with these questions:
 
 4. Implement Cross Chain from scratch using only the function signature
 5. Modify Cross Chain to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the strategy's execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Cross Chain for a specific use case (e.g., nearly sorted data)
+7. Optimize Cross Chain for a specific employ case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Cross Chain
 9. Compare Cross Chain performance with alternative algorithms on large datasets
 

@@ -110,7 +110,7 @@ Test your understanding with these questions:
 
 4. Implement Generative pre-configured from scratch using only the function signature
 5. Modify Generative pre-configured to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the strategy's execution steps
 
 ### Level 3: Optimization (Advanced)
 
@@ -133,7 +133,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Generative pre-configured is the best solution for all problems"
-✓ **CORRECT**: Generative pre-configured has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Generative pre-configured has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Generative pre-configured is too complex to understand"
 ✓ **CORRECT**: Generative pre-configured can be understood by breaking it down into smaller steps

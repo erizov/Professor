@@ -88,7 +88,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Transformation architecture Optimization would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -128,7 +128,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Transformation architecture Optimization is the best solution for all problems"
-✓ **CORRECT**: Transformation architecture Optimization has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Transformation architecture Optimization has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Transformation architecture Optimization is too complex to understand"
 ✓ **CORRECT**: Transformation architecture Optimization can be understood by breaking it down into smaller steps

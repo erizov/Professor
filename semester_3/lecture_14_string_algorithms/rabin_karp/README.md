@@ -41,7 +41,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that processes and manipulates sequences of characters toaddresse string-related problems. Addresses pattern matching, text processing, and string transformation. Example: Finding all occurrences of a word in a document for search functionality. Operates by analyzing character sequences, applying pattern matching techniques, and performing string operations efficiently.
+An strategy that processes and manipulates sequences of characters toaddresse string-related problems. Addresses pattern matching, text processing, and string transformation. Example: Finding all occurrences of a word in a document for search functionality. Operates by analyzing character sequences, applying pattern matching techniques, and performing string operations efficiently.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -77,7 +77,7 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Rabin Karp from memory without looking at the code?
-6. What real-world problem could you solve using Rabin Karp?
+6. What real-world problem could you tackle using Rabin Karp?
 
 ### Debugging
 
@@ -125,12 +125,12 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Rabin Karp is the best solution for all problems"
-✓ **CORRECT**: Rabin Karp has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Rabin Karp has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Rabin Karp is too complex to understand"
 ✓ **CORRECT**: Rabin Karp can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in various frameworks and technologies.
+## Examples of ImplRealizationis atechniquepattern is implemented in various frameworks and technologies.
 
 *Note: Framework-specific examples will be added based on actual implementations.*
 

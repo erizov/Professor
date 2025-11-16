@@ -110,7 +110,7 @@ Test your understanding with these questions:
 
 4. Implement Attention from scratch using only the function signature
 5. Modify Attention to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the strategy's execution steps
 
 ### Level 3: Optimization (Advanced)
 
@@ -128,12 +128,12 @@ Test your understanding with these questions:
 
 - **Enterprise Applications**: Attention is used in production systems
 - **Capability Optimization**: Applied to improarchitecturetem efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
 ❌ **WRONG**: "Attention is the best solution for all problems"
-✓ **CORRECT**: Attention has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Attention has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Attention is too complex to understand"
 ✓ **CORRECT**: Attention can be understood by breaking it down into smaller steps

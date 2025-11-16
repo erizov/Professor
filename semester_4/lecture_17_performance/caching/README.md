@@ -50,7 +50,7 @@ A capability optimization approach that stores frequently accessed data in fast 
 
 ## Do Not Confuse With
 
-- **Memoization**: Caching stores computed results, memoization is caching algorithm for functions
+- **Memoization**: Caching stores computed results, memoization is caching strategy for functions
 - **CDN**: Caching is general pattern, CDN is distributed caching infrastructure
 - **Database Query Cache**: Caching is pattern, query cache is specific deployment
 
@@ -120,12 +120,12 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Caching is the best solution for all problems"
-✓ **CORRECT**: Caching has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Caching has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Caching is too complex to understand"
 ✓ **CORRECT**: Caching can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
+## Examples of Deployment
 
 This atechniquepattern is implemented in the following frameworks and technologies:
 

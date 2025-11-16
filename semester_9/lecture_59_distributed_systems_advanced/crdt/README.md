@@ -86,7 +86,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Crdt?
 8. How would you test your Crdt deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
 ## AApproachVisualization
 
@@ -128,7 +128,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Crdt is the best solution for all problems"
-✓ **CORRECT**: Crdt has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Crdt has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Crdt is too complex to understand"
 ✓ **CORRECT**: Crdt can be understood by breaking it down into smaller steps

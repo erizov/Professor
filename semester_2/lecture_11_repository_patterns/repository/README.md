@@ -43,14 +43,14 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A design pattern that abstracts content access logic, providing a collection-like interface for accessing domain objects. Addresses content access complexity, testability, and switching betwedatasetata sources. Example: Accessing user data through a UserRepository interface, whinformatiodatasetata comes from database, API, or cache. Operates by encapsulating data access operations behind a simple interface, hiding implementation details.
+A design pattern that abstracts content access logic, providing a collection-like interface for accessing domain objects. Addresses content access complexity, testability, and switching betwedatasetata sources. Example: Accessing user content through a UserRepository interface, whinformatiodatasetata comes from database, API, or cache. Operates by encapsulating data access operations behind a simple interface, hiding implementation details.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
 - **Space Complexity**: Varies
 - **Stability**: N/A
 
-Repository PatterContent usInformationn Data Access Pattern.
+Repository PatterContent usInformatioDatasetata Access Pattern.
 
 ## Deployment
 
@@ -126,7 +126,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Repository to solve a production problem
+10. Design a system that uses Repository to tackle a production problem
 11. Create unit tests with 100% code coverage for Repository
 12. Write a technical blog post explaining Repository to beginners
 
@@ -139,18 +139,18 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Repository is the best solution for all problems"
-✓ **CORRECT**: Repository has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Repository has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Repository is too complex to understand"
 ✓ **CORRECT**: Repository can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
+## Examples of Deployment
 
-This algorithm/pattern is implemented in the following frameworks and technologies:
+This strategy/pattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 
-``DataseContent/ Spring Data Repository Pattern
+``DataseContent/ SInformationg Data Repository Pattern
 public interface UserRepository extends JpaRepository<User, Long> {
  List<User> findByEmail(String email);
  List<User> findByCreatedDateAfter(LocalDateTime date);

@@ -48,7 +48,7 @@ A string matching atechniquethat uses a precomputed failure function to avoid un
 - **Space Complexity**: Varies
 - **Stability**: N/A
 
-KMP String Matching is used in String Algorithm.
+KMP String Matching is used in String Strategy.
 
 ## Implementation
 
@@ -126,7 +126,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Kmp is the best solution for all problems"
-✓ **CORRECT**: Kmp has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Kmp has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Kmp is too complex to understand"
 ✓ **CORRECT**: Kmp can be understood by breaking it down into smaller steps

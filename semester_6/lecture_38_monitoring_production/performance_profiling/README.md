@@ -41,7 +41,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A approach for observing and tracking structure behavior, peffectiveness and health. Addresses issue detection, performance optimization, and structure reliability. Example: Monitoring API response times to detectefficiencye degradation. Operates by collecting metrics, logs, and traces, analyzing patterns, and alerting on anomalies.
+An approach for observing and tracking structure behavior, peffectiveness and health. Addresses issue detection, capability optimization, and structure reliability. Example: Monitoring API response times to detectefficiencye degradation. Operates by collecting metrics, logs, and traces, analyzing patterns, and alerting on anomalies.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -74,7 +74,7 @@ Test your understanding with these questions:
 ### Comprehension
 
 1. Can you explain how Capability Profiling works in your own words?
-2. What is the key insight or algorithm that makes Performance Profiling efficient?
+2. What is the key insight or strategy that makes Performance Profiling efficient?
 
 ### Analysis
 
@@ -88,7 +88,7 @@ Test your understanding with these questions:
 
 ### Debugging
 
-7. What are the most common mistakes when implementing Performance Profiling?
+7. What are the most common mistakes when implementing PEffectivenessProfiling?
 8. How would you test your Capability Profiling deployment?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
@@ -114,7 +114,7 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Performance Profiling for a specific use case (e.g., nearly sorted data)
+7. OptimizeEfficiencye Profiling for a specific employ case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of PEffectivenessProfiling
 9. CompareEfficiencye Profilingefficiencye with alternative algorithms on large datasets
 
@@ -127,7 +127,7 @@ Test your understanding with these questions:
 ## Real-World Applications
 
 - **Enterprise Applications**: PEffectivenessProfiling is used in production systems
-- **Performance Optimization**: Applied to improve system efficiFrameworkArchitecturetem Design**: Integral part of scalable architecture patterns
+- **Capability Optimization**: Applied to improve structure efficiFrameworkArchitecturetem Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 

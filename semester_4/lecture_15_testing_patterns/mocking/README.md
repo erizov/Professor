@@ -72,7 +72,7 @@ Test your understanding with these questions:
 ### Comprehension
 
 1. Can you explain how Mocking works in your own words?
-2. What is the key insight or algorithm that makes Mocking efficient?
+2. What is the key insight or strategy that makes Mocking efficient?
 
 ### Analysis
 
@@ -118,7 +118,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Mocking to solve a production problem
+10. Design a system that uses Mocking to tackle a production problem
 11. Create unit tests with 100% code coverage for Mocking
 12. Write a technical blog post explaining Mocking to beginners
 
@@ -131,12 +131,12 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Mocking is the best solution for all problems"
-✓ **CORRECT**: Mocking has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Mocking has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Mocking is too complex to understand"
 ✓ **CORRECT**: Mocking can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
+## Examples of Deployment
 
 This atechniquepattern is implemented in the following frameworks and technologies:
 

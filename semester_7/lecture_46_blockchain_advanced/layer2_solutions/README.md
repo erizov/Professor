@@ -101,11 +101,11 @@ Test your understanding with these questions:
 
 4. Implement Layer2 Solutions from scratch using only the function signature
 5. Modify Layer2 Solutions to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the strategy's execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Layer2 Solutions for a specific use case (e.g., nearly sorted data)
+7. Optimize Layer2 Solutions for a specific employ case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Layer2 Solutions
 9. Compare Layer2 Solutions performance with alternative algorithms on large datasets
 

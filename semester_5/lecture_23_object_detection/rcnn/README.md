@@ -110,11 +110,11 @@ Test your understanding with these questions:
 
 4. Implement Rcnn from scratch using only the function signature
 5. Modify Rcnn to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the strategy's execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Rcnn for a specific use case (e.g., nearly sorted data)
+7. Optimize Rcnn for a specific employ case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Rcnn
 9. Compare Rcnn performance with alternative algorithms on large datasets
 

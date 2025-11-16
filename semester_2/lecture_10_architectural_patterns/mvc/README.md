@@ -126,7 +126,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Mvc to solve a production problem
+10. Design a system that uses Mvc to tackle a production problem
 11. Create unit tests with 100% code coverage for Mvc
 12. Write a technical blog post explaining Mvc to beginners
 
@@ -139,12 +139,12 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Mvc is the best solution for all problems"
-✓ **CORRECT**: Mvc has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Mvc has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Mvc is too complex to understand"
 ✓ **CORRECT**: Mvc can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis strategy/pattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 

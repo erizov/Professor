@@ -110,7 +110,7 @@ Test your understanding with these questions:
 
 4. Implement Bidirectional encoder from scratch using only the function signature
 5. Modify Bidirectional encoder to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the strategy's execution steps
 
 ### Level 3: Optimization (Advanced)
 
@@ -133,7 +133,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Bidirectional encoder is the best solution for all problems"
-✓ **CORRECT**: Bidirectional encoder has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Bidirectional encoder has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Bidirectional encoder is too complex to understand"
 ✓ **CORRECT**: Bidirectional encoder can be understood by breaking it down into smaller steps

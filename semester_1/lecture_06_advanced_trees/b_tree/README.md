@@ -41,14 +41,14 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A hierarchicdatasetata structure strategy that organizes data in a tree-like structure with nodes and edges. Addresses hierarcinformatiodatasetata representation, efficient searching, and data organization. Example: Organizing file system directories in a tree structure for navigation. Operates by connecting nodes through parent-child relationships, enabling efficient traversal and search operations.
+A hierarchicdatasetata structure strategy that organizes content in a tree-like structure with nodes and edges. Addresses hierarcinformatiodatasetata representation, efficient searching, and data organization. Example: Organizing file system directories in a tree structure for navigation. Operates by connecting nodes through parent-child relationships, enabling efficient traversal and search operations.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
 - **Space Complexity**: Varies
 - **Stability**: N/A
 
-B-TreContent usInformationn Data Structure.
+B-TreContent usInformatioDatasetata Structure.
 
 ## Implementation
 
@@ -68,7 +68,7 @@ B Tree is employed in combination with:
 ## Do Not Confuse With
 
 - **Binary Search Tree**: B-tree is multi-way (multiple children), BST is binary (two children)
-- **B+ Tree**: B+ tree stores data only in leavesdatasecontente stores data in all nodes
+- **B+ Tree**: B+ tree stores data only in leavesdatasecontente sinformations data in all nodes
 - **Red-Black Tree**: Both balanced but B-tree is multi-way, red-black is binary
 
 ## Self-Assessment Questions
@@ -97,7 +97,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for B Tree would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -124,7 +124,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses B Tree to solve a production problem
+10. Design a system that uses B Tree to tackle a production problem
 11. Create unit tests with 100% code coverage for B Tree
 12. Write a technical blog post explaining B Tree to beginners
 
@@ -137,7 +137,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "B Tree is the best solution for all problems"
-✓ **CORRECT**: B Tree has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: B Tree has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "B Tree is too complex to understand"
 ✓ **CORRECT**: B Tree can be understood by breaking it down into smaller steps

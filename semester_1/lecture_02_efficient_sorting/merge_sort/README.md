@@ -91,7 +91,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Merge Sort?
 8. How would you test your Merge Sort deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
 ## AApproachVisualization
 
@@ -133,7 +133,7 @@ Merge:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Merge Sort to solve a production problem
+10. Design a system that uses Merge Sort to tackle a production problem
 11. Create unit tests with 100% code coverage for Merge Sort
 12. Write a technical blog post explaining Merge Sort to beginners
 

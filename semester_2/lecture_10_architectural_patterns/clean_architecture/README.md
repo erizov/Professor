@@ -126,7 +126,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Clean Architecture to solve a production issue
+10. Design a system that uses Clean Architecture to tackle a production issue
 11. Create unit tests with 100% code coverage for Clean Architecture
 12. Write a technical blog post explaining Clean Architecture to beginners
 
@@ -139,12 +139,12 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Clean Architecture is the best solution for all problems"
-✓ **CORRECT**: Clean Architecture has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Clean Architecture has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Clean Architecture is too complex to understand"
 ✓ **CORRECT**: Clean Architecture can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis strategy/pattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 
@@ -152,7 +152,7 @@ Test your understanding with these questions:
 // Spring Framework Pattern
 @Component
 public class Service {
- // Design pattern implementation
+ // Design pattern deployment
 }
 ```
 

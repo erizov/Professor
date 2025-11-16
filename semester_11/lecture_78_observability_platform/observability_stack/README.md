@@ -88,7 +88,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Observability Stack would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -122,12 +122,12 @@ Test your understanding with these questions:
 ## Real-World Applications
 
 - **Enterprise Applications**: Observability Stack is employed in production systems
-- **Performance Optimization**: Applied to improve system efficiFrameworkArchitecturetem Design**: Integral part of scalable architecture patterns
+- **Capability Optimization**: Applied to improve structure efficiFrameworkArchitecturetem Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
 ❌ **WRONG**: "Observability Stack is the best solution for all problems"
-✓ **CORRECT**: Observability Stack has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Observability Stack has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Observability Stack is too complex to understand"
 ✓ **CORRECT**: Observability Stack can be understood by breaking it down into smaller steps

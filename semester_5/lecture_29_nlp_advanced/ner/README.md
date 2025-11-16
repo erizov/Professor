@@ -41,7 +41,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A approach that combines information retrieval with language generation to produce accurate, up-to-date responses. Addresses knowledge cutoff limitations, factual accuracy, and domain-specific information. Example: Answering questions about recent events by retrieving relevant documents, then generating answers based on retrieved content. Operates by searching knowledge base for relevant information, then using retrieved context to guide language model generation.
+An approach that combines information retrieval with language generation to produce accurate, up-to-date responses. Addresses knowledge cutoff limitations, factual accuracy, and domain-specific information. Example: Answering questions about recent events by retrieving relevant documents, then generating answers based on retrieved content. Operates by searching knowledge base for relevant information, then using retrieved context to guide language model generation.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -74,7 +74,7 @@ Test your understanding with these questions:
 ### Comprehension
 
 1. Can you explain how Ner works in your own words?
-2. What is the key insight or algorithm that makes Ner efficient?
+2. What is the key insight or strategy that makes Ner efficient?
 
 ### Analysis
 
@@ -114,7 +114,7 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Ner for a specific use case (e.g., nearly sorted data)
+7. Optimize Ner for a specific employ case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Ner
 9. Compare Ner performance with alternative algorithms on large datasets
 

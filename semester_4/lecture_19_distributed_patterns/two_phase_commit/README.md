@@ -125,7 +125,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a structure that uses Two Phase Commit to solve a production issue
+10. Design a structure that uses Two Phase Commit to tackle a production issue
 11. Create unit tests with 100% code coverage for Two Phase Commit
 12. Write a technical blog post explaining Two Phase Commit to beginners
 
@@ -138,12 +138,12 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Two Phase Commit is the best solution for all problems"
-✓ **CORRECT**: Two Phase Commit has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Two Phase Commit has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Two Phase Commit is too complex to understand"
 ✓ **CORRECT**: Two Phase Commit can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis strategy/pattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 
@@ -151,7 +151,7 @@ Test your understanding with these questions:
 // Spring Framework Pattern
 @Component
 public class Service {
- // Design pattern implementation
+ // Design pattern deployment
 }
 ```
 

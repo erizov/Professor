@@ -101,11 +101,11 @@ Test your understanding with these questions:
 
 4. Implement Build Automation from scratch using only the function signature
 5. Modify Build Automation to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the strategy's execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Build Automation for a specific use case (e.g., nearly sorted data)
+7. Optimize Build Automation for a specific employ case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Build Automation
 9. Compare Build Automation performance with alternative algorithms on large datasets
 

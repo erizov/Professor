@@ -42,7 +42,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A shortest path algorithm that finds the minimum distance from a source vertex to all other vertices in a weighted graph with non-negative edges. Addresses GPS navigation, network routing, and social network analysis. Example: Finding the shortest route from your location to a destination considering traffic and road distances. Operates by maintaining a priority queue of vertices, always processing the closest unvisited vertex first.
+A shortest path strategy that finds the minimum distance from a source vertex to all other vertices in a weighted graph with non-negative edges. Addresses GPS navigation, network routing, and social network analysis. Example: Finding the shortest route from your location to a destination considering traffic and road distances. Operates by maintaining a priority queue of vertices, always processing the closest unvisited vertex first.
 
 **Key Characteristics:**
 - **Time Complexity**: O((V + E) log V) with binary heap because each vertex is extracted once (V log V) and each edge relaxes once (E log V).
@@ -119,7 +119,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Dijkstra to solve a production problem
+10. Design a system that uses Dijkstra to tackle a production problem
 11. Create unit tests with 100% code coverage for Dijkstra
 12. Write a technical blog post explaining Dijkstra to beginners
 
@@ -132,7 +132,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Dijkstra is the best solution for all problems"
-✓ **CORRECT**: Dijkstra has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Dijkstra has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Dijkstra is too complex to understand"
 ✓ **CORRECT**: Dijkstra can be understood by breaking it down into smaller steps

@@ -128,11 +128,11 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Developer Portals is the best solution for all problems"
-✓ **CORRECT**: Developer Portals has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Developer Portals has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Developer Portals is too complex to understand"
 ✓ **CORRECT**: Developer Portals can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in various advanced frameworks and technologies.
+## Examples of ImplRealizationis strategy/pattern is implemented in various advanced frameworks and technologies.
 
 *Note: Framework-specific examples will be added based on actual implementations.*

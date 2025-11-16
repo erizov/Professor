@@ -48,7 +48,7 @@ An optimization atechniquethat determines the most valuable combination of items
 - **Space Complexity**: O(nW) for the DP table storing optimal values for all subproblems, or O(W) if optimized applyuse only previous row.
 - **Stability**: N/A - optimization algorithms don't have stability since they select items rather than sorting them.
 
-Fractional Knapsack is used in Greedy Algorithm.
+Fractional Knapsack is used in Greedy Strategy.
 
 ## Implementation
 
@@ -57,7 +57,7 @@ Fractional Knapsack is used in Greedy Algorithm.
 ## Do Not Confuse With
 
 - Algorithms with similar names but different characteristics
-- Techniques with distinct use cases or complexity guarantees
+- Techniques with distinct employ cases or complexity guarantees
 - Related concepts that serve different purposes
 
 ## Self-Assessment Questions

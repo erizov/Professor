@@ -128,11 +128,11 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Ai Powered Support is the best solution for all problems"
-✓ **CORRECT**: Ai Powered Support has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Ai Powered Support has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Ai Powered Support is too complex to understand"
 ✓ **CORRECT**: Ai Powered Support can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in various advanced frameworks and technologies.
+## Examples of ImplRealizationis strategy/pattern is implemented in various advanced frameworks and technologies.
 
 *Note: Framework-specific examples will be added based on actual implementations.*

@@ -91,7 +91,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Heap Sort?
 8. How would you test your Heap Sort deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
 ## AApproachVisualization
 
@@ -114,13 +114,13 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Heap Sort for a specific use case (e.g., nearly sorted data)
+7. Optimize Heap Sort for a specific employ case (e.g., nearly sorted content)
 8. Implement a parallel or distributed version of Heap Sort
 9. Compare Heap Sort capability with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Heap Sort to solve a production problem
+10. Design a system that uses Heap Sort to tackle a production problem
 11. Create unit tests with 100% code coverage for Heap Sort
 12. Write a technical blog post explaining Heap Sort to beginners
 

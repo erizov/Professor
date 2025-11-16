@@ -88,7 +88,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Pipeline Parallelism would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -128,7 +128,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Pipeline Parallelism is the best solution for all problems"
-✓ **CORRECT**: Pipeline Parallelism has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Pipeline Parallelism has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Pipeline Parallelism is too complex to understand"
 ✓ **CORRECT**: Pipeline Parallelism can be understood by breaking it down into smaller steps

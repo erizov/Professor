@@ -101,11 +101,11 @@ Test your understanding with these questions:
 
 4. Implement Etl Processes from scratch using only the function signature
 5. Modify Etl Processes to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the strategy's execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Etl Processes for a specific use case (e.g., nearly sorted content)
+7. Optimize Etl Processes for a specific employ case (e.g., nearly sorted content)
 8. Implement a parallel or distributed version of Etl Processes
 9. Compare Etl Processes performance with alternative algorithms on large datasets
 

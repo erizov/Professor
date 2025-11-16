@@ -41,7 +41,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A approach for distributing incoming network traffic across multiple servers to ensure reliability, capability, and availability. Addresses server overload, single points of failure, and traffic spikes. Example: Distributing web requests across 5 servers so no single server handles more than 20% of traffic. Operates by routing requests to available servers based on algorithms like round-robin, least connections, or geographic proximity.
+An approach for distributing incoming network traffic across multiple servers to ensure reliability, capability, and availability. Addresses server overload, single points of failure, and traffic spikes. Example: Distributing web requests across 5 servers so no single server handles more than 20% of traffic. Operates by routing requests to available servers based on algorithms like round-robin, least connections, or geographic proximity.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -61,7 +61,7 @@ Test your understanding with these questions:
 ### Comprehension
 
 1. Can you explain how Load Balancing works in your own words?
-2. What is the key insight or algorithm that makes Load Balancing efficient?
+2. What is the key insight or strategy that makes Load Balancing efficient?
 
 ### Analysis
 
@@ -120,7 +120,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Load Balancing is the best solution for all problems"
-✓ **CORRECT**: Load Balancing has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Load Balancing has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Load Balancing is too complex to understand"
 ✓ **CORRECT**: Load Balancing can be understood by breaking it down into smaller steps

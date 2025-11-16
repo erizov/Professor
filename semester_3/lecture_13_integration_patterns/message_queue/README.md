@@ -119,7 +119,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a structure that uses Message Queue to solve a production problem
+10. Design a structure that uses Message Queue to tackle a production problem
 11. Create unit tests with 100% code coverage for Message Queue
 12. Write a technical blog post explaining Message Queue to beginners
 
@@ -132,12 +132,12 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Message Queue is the best solution for all problems"
-✓ **CORRECT**: Message Queue has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Message Queue has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Message Queue is too complex to understand"
 ✓ **CORRECT**: Message Queue can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis strategy/pattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 
@@ -192,5 +192,5 @@ for (ConsumerRecord<String, String> record : records) {
 }
 ```
 
-**Purpose**: Apache Kafka uses this pattern for event streaming, message queuing, and distributed system communication.
+**Purpose**: Apache Kafka uses this pattern for event streaming, message queuing, and distributed structure communication.
 

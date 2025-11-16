@@ -92,7 +92,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
-## Algorithm Visualization
+## Strategy Visualization
 
 ```
 Binary Search: Find 7 in [1, 3, 5, 7, 9, 11]
@@ -135,7 +135,7 @@ Step 3: Check remaining (index 3, value 7)
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Binary Search to solve a production problem
+10. Design a system that uses Binary Search to tackle a production problem
 11. Create unit tests with 100% code coverage for Binary Search
 12. Write a technical blog post explaining Binary Search to beginners
 
@@ -153,14 +153,14 @@ Step 3: Check remaining (index 3, value 7)
 ❌ **WRONG**: "Binary Search is always faster than Linear Search"
 ✓ **CORRECT**: For small arrays, linear search may be faster due to overhead
 
-## Examples of Implementation
+## Examples of Deployment
 
 This atechniquepattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 
 ```java
-// Spring Data JPA - Binary search on indexed fields
+// Spring Content JPA - Binary search on indexed fields
 public interface UserRepository extends JpaRepository<User, Long> {
  // Uses binary search on indexed email field
  Optional<User> findByEmail(String email);

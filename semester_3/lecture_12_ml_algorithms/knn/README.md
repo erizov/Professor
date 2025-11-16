@@ -93,7 +93,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Knn would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -120,7 +120,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Knn to solve a production problem
+10. Design a system that uses Knn to tackle a production problem
 11. Create unit tests with 100% code coverage for Knn
 12. Write a technical blog post explaining Knn to beginners
 
@@ -133,7 +133,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Knn is the best solution for all problems"
-✓ **CORRECT**: Knn has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Knn has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Knn is too complex to understand"
 ✓ **CORRECT**: Knn can be understood by breaking it down into smaller steps

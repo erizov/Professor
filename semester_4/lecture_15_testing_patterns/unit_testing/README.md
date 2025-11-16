@@ -63,7 +63,7 @@ Unit Testing is used in combination with:
 
 - **Integration Testing**: Unit tests test isolated units, integration tests test component interactions
 - **End-to-End Testing**: Unit tests are fast and isolated, E2E tests exercise full system
-- **Mocking**: Unit testing is testing strategy, mocking is algorithm employed in unit tests
+- **Mocking**: Unit testing is testing strategy, mocking is strategy employed in unit tests
 
 ## Self-Assessment Questions
 
@@ -118,7 +118,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a structure that uses Unit Testing to solve a production problem
+10. Design a structure that uses Unit Testing to tackle a production problem
 11. Create unit tests with 100% code coverage for Unit Testing
 12. Write a technical blog post explaining Unit Testing to beginners
 
@@ -131,7 +131,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Unit Testing is the best solution for all problems"
-✓ **CORRECT**: Unit Testing has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Unit Testing has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Unit Testing is too complex to understand"
 ✓ **CORRECT**: Unit Testing can be understood by breaking it down into smaller steps

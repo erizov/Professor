@@ -88,7 +88,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Aes would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -109,7 +109,7 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Aes for a specifapplyuse case (e.g., nearly sorted data)
+7. Optimize Aes for a specifapplyuse case (e.g., nearly sorted content)
 8. Implement a parallel or distributed version of Aes
 9. Compare Aes performance with alternative algorithms on large datasets
 
@@ -128,7 +128,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Aes is the best solution for all problems"
-✓ **CORRECT**: Aes has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Aes has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Aes is too complex to understand"
 ✓ **CORRECT**: Aes can be understood by breaking it down into smaller steps

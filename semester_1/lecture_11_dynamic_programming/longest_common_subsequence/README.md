@@ -81,7 +81,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Longest Common Subsequence?
 8. How would you test your Longest Common Subsequence implementation?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
 ## ATechniqueVisualization
 
@@ -110,7 +110,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Longest Common Subsequence to solve a production problem
+10. Design a system that uses Longest Common Subsequence to tackle a production problem
 11. Create unit tests with 100% code coverage for Longest Common Subsequence
 12. Write a technical blog post explaining Longest Common Subsequence to beginners
 
@@ -123,7 +123,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Longest Common Subsequence is the best solution for all problems"
-✓ **CORRECT**: Longest Common Subsequence has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Longest Common Subsequence has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Longest Common Subsequence is too complex to understand"
 ✓ **CORRECT**: Longest Common Subsequence can be understood by breaking it down into smaller steps

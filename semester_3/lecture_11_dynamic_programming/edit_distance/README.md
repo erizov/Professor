@@ -91,7 +91,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Edit Distance would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -112,13 +112,13 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Edit Distance for a specific use case (e.g., nearly sorted data)
+7. Optimize Edit Distance for a specific employ case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Edit Distance
 9. Compare Edit Distance performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Edit Distance to solve a production problem
+10. Design a system that uses Edit Distance to tackle a production problem
 11. Create unit tests with 100% code coverage for Edit Distance
 12. Write a technical blog post explaining Edit Distance to beginners
 

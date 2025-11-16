@@ -86,7 +86,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Activity Selection would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -107,7 +107,7 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Activity Selection for a specific use case (e.g., nearly sorted content)
+7. Optimize Activity Selection for a specific employ case (e.g., nearly sorted content)
 8. Implement a parallel or distributed version of Activity Selection
 9. Compare Activity Selection performance with alternative algorithms on large datasets
 

@@ -82,7 +82,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Virtual Memory?
 8. How would you test your Virtual Memory deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
 ## ATechniqueVisualization
 
@@ -105,7 +105,7 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Virtual Memory for a specific use case (e.g., nearly sorted data)
+7. Optimize Virtual Memory for a specific employ case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Virtual Memory
 9. Compare Virtual Memory performance with alternative algorithms on large datasets
 

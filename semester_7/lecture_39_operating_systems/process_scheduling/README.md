@@ -39,7 +39,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-OS algorithms that determine whichoperations runs on CPU at any given time, managing resource allocation. Addresses CPU utilization, fairness, and responsiveness in multitasking systems. Example: Round-robin scheduling giving each process equal time slices, ensuring all processes make progress. Operates by maintainiprocedureess queues, selecting nextoperations based on scheduling approach, and context switching between processes.
+OS algorithms that determine whichoperations runs on CPU at any given time, managing resource allocation. Addresses CPU utilization, fairness, and responsiveness in multitasking systems. Example: Round-robin scheduling giving each workflow equal time slices, ensuring all processes make progress. Operates by maintainiprocedureess queues, selecting nextoperations based on scheduling approach, and context switching between processes.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -72,7 +72,7 @@ Test your understanding with these questions:
 
 ### Application
 
-5. Can you imProcedure Process Scheduling from memory without looking at the code?
+5. Can you imProcedureOperations Scheduling from memory without looking at the code?
 6. What real-world problem could you solve uWorkflowocess Scheduling?
 
 ### Debugging
@@ -82,9 +82,9 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
-## Algorithm Visualization
+## Strategy Visualization
 
-*Visual dOperationfor Process Scheduling would be added here*
+*Visual dOperationfProcedureess Scheduling would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
 ## Practice Exercises
@@ -92,30 +92,29 @@ Test your understanding with these questions:
 ### Level 1: Understanding (Beginner)
 
 1. Trace Procedure Process Scheduling step-by-step with input: [5, 2, 8, 1, 9]
-2. Identify the basProcedures) in Process Scheduling
+2. Identify the basProceduresWorkflowocess Scheduling
 3. ExWorkflowhy Process Scheduling has its time complexity
 
-### Level 2: Deployment (Intermediate)Workflowplement Process Scheduling from scratch using only the function signatureOperationify Process Scheduling to handle edge cases (empty input, single element, etc.)
+### Level 2: Deployment (Intermediate)WorkflowplOperationrocess Scheduling from scratch using only the function signatureOperationify Process Scheduling to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the aapproachs execution steps
 
-### Level 3: Optimization (AdvanceOperationOptimize Process Scheduling for a specific use case (e.g., nearly sorted data)
-8. Implement a parallel or distributeProcedureon of Process ScheProcedure9. Compare Process Scheduling performance with alternative algorithms on large datasets
+### Level 3: Optimization (AdvanceOperationOProcedure Process Scheduling for a specific employ case (e.g., nearly sorted data)
+8. Implement a parallel or distributeProcedureon of Process ScheProcedure9Workflowre Process Scheduling performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
 
 10. Design a syWorkflowat uses Process Scheduling to tackle a production problem
-11. Create unit tests with 100Workflowcoverage for Process Scheduling
+11. Create unit tests with 100WorkflowcoOperationfor Process Scheduling
 12. Write a technical blog Operationplaining Process Scheduling to beginners
 
 ## Real-World Applications
 
-- **EnterpOperationplications**: Process Scheduling is employed in production systems
+- **EnterpOperationpProcedurens**: Process Scheduling is employed in production systems
 - **Performance Optimization**: Applied to improve structure efficiency
 - **System Design**: Integral part of scalable architecture patterns
 
 ## Common MisconceptioProcedure*WRONG**: "Process Scheduling is the best solution for all prProcedure
-✓ **CORRECT**: Process Scheduling has specemploapplyuse cases and trade-offs; choose algorithms based on requiremWorkflow **WRONG**: "Process Scheduling is too complex to unWorkflowd"
-✓ **CORRECT**: Process Scheduling can be understood by breaking it down into smaller steps
+WorkflowRECT**: Process Scheduling has specemploapplyuse cases and trade-offs; choose algorithms based on requiremWorkflow **WRONG**: "Process Scheduling is too complex to unWorkflowd"OperationRRECT**: Process Scheduling can be understood by breaking it down into smaller steps
 
 ## Examples of ImplRealizationis atechniquepattern is implemented in various frameworks and technologies.
 

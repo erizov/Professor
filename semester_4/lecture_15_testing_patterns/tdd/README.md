@@ -72,7 +72,7 @@ Test your understanding with these questions:
 ### Comprehension
 
 1. Can you explain how Tdd works in your own words?
-2. What is the key insight or algorithm that makes Tdd efficient?
+2. What is the key insight or strategy that makes Tdd efficient?
 
 ### Analysis
 
@@ -118,7 +118,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Tdd to solve a production problem
+10. Design a system that uses Tdd to tackle a production problem
 11. Create unit tests with 100% code coverage for Tdd
 12. Write a technical blog post explaining Tdd to beginners
 
@@ -131,7 +131,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Tdd is the best solution for all problems"
-✓ **CORRECT**: Tdd has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Tdd has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Tdd is too complex to understand"
 ✓ **CORRECT**: Tdd can be understood by breaking it down into smaller steps
@@ -146,7 +146,7 @@ Test your understanding with these questions:
 class ServiceTest {
  @Test
  void testMethod() {
- // Testing pattern implementation
+ // Testing pattern deployment
  }
 }
 ```

@@ -53,7 +53,7 @@ Fibonacci is used in combination with:
 
 ## Do Not Confuse With
 
-- **Memoization**: Fibonacci capplyuse memoization, but memoization is An algorithm, not the strategy
+- **Memoization**: Fibonacci capplyuse memoization, but memoization is An strategy, not the strategy
 - **Dynamic Programming**: Fibonacci is a DP problem, but DP is a paradigm, not this specific algorithm
 - **Matrix Exponentiation**: Fibonacci can be computed via matrix exponentiation, but that's an optimization method
 
@@ -64,7 +64,7 @@ Test your understanding with these questions:
 ### Comprehension
 
 1. Can you explain how Fibonacci works in your own words?
-2. What is the key insight or technique that makes Fibonacci efficient?
+2. What is the key insight or algorithm that makes Fibonacci efficient?
 
 ### Analysis
 
@@ -104,13 +104,13 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Fibonacci for a specific use case (e.g., nearly sorted data)
+7. Optimize Fibonacci for a specific employ case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Fibonacci
 9. Compare Fibonacci performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Fibonacci to solve a production issue
+10. Design a system that uses Fibonacci to tackle a production issue
 11. Create unit tests with 100% code coverage for Fibonacci
 12. Write a technical blog post explaining Fibonacci to beginners
 
@@ -130,7 +130,7 @@ Test your understanding with these questions:
 
 ## Examples of Deployment
 
-This algorithm/pattern is implemented in various frameworks and technologies.
+This atechniquepattern is implemented in various frameworks and technologies.
 
 *Note: Framework-specific examples will be added based on actual implementations.*
 

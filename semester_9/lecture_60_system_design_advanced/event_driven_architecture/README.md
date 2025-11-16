@@ -128,11 +128,11 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Event Driven Architecture is the best solution for all problems"
-✓ **CORRECT**: Event Driven Architecture has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Event Driven Architecture has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Event Driven Architecture is too complex to understand"
 ✓ **CORRECT**: Event Driven Architecture can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in various advanced frameworks and technologies.
+## Examples of ImplRealizationis strategy/pattern is implemented in various advanced frameworks and technologies.
 
 *Note: Framework-specific examples will be added based on actual implementations.*

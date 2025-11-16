@@ -56,7 +56,7 @@ Floyd Warshall is used in combination with:
 
 - **Dijkstra's ATechnique*: Floyd-Warshall finds all-pairs shortest paths, Dijkstra is single-source
 - **Bellman-Ford**: Floyd-Warshall finds all-pairs, Bellman-Ford is single-source
-- **Johnson's Algorithm**: Both find all-pairs but Johnson's uses Dijkstra as subroutine, Floyd-Warshall uses dynamic programming
+- **Johnson's Strategy**: Both find all-pairs but Johnson's uses Dijkstra as subroutine, Floyd-Warshall uses dynamic programming
 
 ## Self-Assessment Questions
 
@@ -75,7 +75,7 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Floyd Warshall from memory without looking at the code?
-6. What real-world problem could you solve using Floyd Warshall?
+6. What real-world problem could you tackle using Floyd Warshall?
 
 ### Debugging
 
@@ -124,7 +124,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Floyd Warshall is the best solution for all problems"
-✓ **CORRECT**: Floyd Warshall has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Floyd Warshall has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Floyd Warshall is too complex to understand"
 ✓ **CORRECT**: Floyd Warshall can be understood by breaking it down into smaller steps

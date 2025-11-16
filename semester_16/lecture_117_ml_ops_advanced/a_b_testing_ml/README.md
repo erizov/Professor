@@ -88,7 +88,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for A B Testing CI would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -128,7 +128,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "A B Testing CI is the best solution for all problems"
-✓ **CORRECT**: A B Testing CI has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: A B Testing CI has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "A B Testing CI is too complex to understand"
 ✓ **CORRECT**: A B Testing CI can be understood by breaking it down into smaller steps

@@ -59,7 +59,7 @@ An strategy designed to work across multiple networked computers or nodes. Addre
 
 ## Performance Considerations
 
-This algorithm is part of Distributed CI and requires careful consideration of resource constraints.
+This strategy is part of Distributed CI and requires careful consideration of resource constraints.
 
 ## Often Used Together With
 
@@ -131,7 +131,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a structure that uses Model Parallelism to solve a production problem
+10. Design a structure that uses Model Parallelism to tackle a production problem
 11. Create unit tests with 100% code coverage for Model Parallelism
 12. Write a technical blog post explaining Model Parallelism to beginners
 
@@ -144,7 +144,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Model Parallelism is the best solution for all problems"
-✓ **CORRECT**: Model Parallelism has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Model Parallelism has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Model Parallelism is too complex to understand"
 ✓ **CORRECT**: Model Parallelism can be understood by breaking it down into smaller steps

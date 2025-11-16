@@ -102,7 +102,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Model Versioning?
 8. How would you test your Model Versioning deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
 ## AApproachVisualization
 
@@ -131,7 +131,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Model Versioning to solve a production problem
+10. Design a system that uses Model Versioning to tackle a production problem
 11. Create unit tests with 100% code coverage for Model Versioning
 12. Write a technical blog post explaining Model Versioning to beginners
 
@@ -144,7 +144,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Model Versioning is the best solution for all problems"
-✓ **CORRECT**: Model Versioning has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Model Versioning has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Model Versioning is too complex to understand"
 ✓ **CORRECT**: Model Versioning can be understood by breaking it down into smaller steps

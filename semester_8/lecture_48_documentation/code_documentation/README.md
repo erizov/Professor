@@ -101,11 +101,11 @@ Test your understanding with these questions:
 
 4. Implement Code Documentation from scratch using only the function signature
 5. Modify Code Documentation to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the strategy's execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Code Documentation for a specific use case (e.g., nearly sorted data)
+7. Optimize Code Documentation for a specific employ case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Code Documentation
 9. Compare Code Documentation performance with alternative algorithms on large datasets
 

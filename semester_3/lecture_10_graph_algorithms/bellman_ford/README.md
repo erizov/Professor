@@ -42,7 +42,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An algorithm that processes graph content structures, exploring relationships between vertices and edges. Addresses network analysis, path finding, and relationship mapping. Example: Finding the shortest route between cities on a road network. Operates by traversing vertices and edges, maintaining visited states, and applying graph theory algorithms to tackle specific problems.
+An strategy that processes graph content structures, exploring relationships between vertices and edges. Addresses network analysis, path finding, and relationship mapping. Example: Finding the shortest route between cities on a road network. Operates by traversing vertices and edges, maintaining visited states, and applying graph theory algorithms to tackle specific problems.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -81,7 +81,7 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Bellman Ford from memory without looking at the code?
-6. What real-world problem could you solve using Bellman Ford?
+6. What real-world problem could you tackle using Bellman Ford?
 
 ### Debugging
 
@@ -130,7 +130,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Bellman Ford is the best solution for all problems"
-✓ **CORRECT**: Bellman Ford has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Bellman Ford has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Bellman Ford is too complex to understand"
 ✓ **CORRECT**: Bellman Ford can be understood by breaking it down into smaller steps

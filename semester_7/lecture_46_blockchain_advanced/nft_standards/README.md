@@ -101,11 +101,11 @@ Test your understanding with these questions:
 
 4. Implement Nft Standards from scratch using only the function signature
 5. Modify Nft Standards to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the strategy's execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Nft Standards for a specific use case (e.g., nearly sorted data)
+7. Optimize Nft Standards for a specific employ case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Nft Standards
 9. Compare Nft Standards performance with alternative algorithms on large datasets
 

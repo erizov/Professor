@@ -82,7 +82,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Merkle Trees?
 8. How would you test your Merkle Trees deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
 ## AApproachVisualization
 
@@ -105,7 +105,7 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Merkle Trees for a specific use case (e.g., nearly sorted content)
+7. Optimize Merkle Trees for a specific employ case (e.g., nearly sorted content)
 8. Implement a parallel or distributed version of Merkle Trees
 9. Compare Merkle Trees performance with alternative algorithms on large datasets
 

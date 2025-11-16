@@ -59,7 +59,7 @@ An strategy designed to work across multiple networked computers or nodes. Addre
 
 ## Performance Considerations
 
-This algorithm is part of Distributed CI and requires careful consideration of resource constraints.
+This strategy is part of Distributed CI and requires careful consideration of resource constraints.
 
 ## Often Used Together With
 
@@ -131,7 +131,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a structure that uses Parameter Server to solve a production problem
+10. Design a structure that uses Parameter Server to tackle a production problem
 11. Create unit tests with 100% code coverage for Parameter Server
 12. Write a technical blog post explaining Parameter Server to beginners
 
@@ -144,7 +144,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Parameter Server is the best solution for all problems"
-✓ **CORRECT**: Parameter Server has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Parameter Server has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Parameter Server is too complex to understand"
 ✓ **CORRECT**: Parameter Server can be understood by breaking it down into smaller steps

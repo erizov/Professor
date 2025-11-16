@@ -71,7 +71,7 @@ Random Forest is employed in combination with:
 
 - **Decision Tree**: Random forest is combined strategy of decision trees, not a single tree
 - **Gradient Boosting**: Both combined method methods but random forest uses bagging, gradient boosting uses boosting
-- **Extra Trees**: Both combined approach methods but extra trees uses random splits, random forest uses best splits
+- **Extra Trees**: Both combined strategy methods but extra trees uses random splits, random forest uses best splits
 
 ## Self-Assessment Questions
 
@@ -97,7 +97,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Random Forest?
 8. How would you test your Random Forest deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this method!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
 
 ## ATechniqueVisualization
 
@@ -116,7 +116,7 @@ Test your understanding with these questions:
 
 4. Implement Random Forest from scratch using only the function signature
 5. Modify Random Forest to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the approach's execution steps
 
 ### Level 3: Optimization (Advanced)
 
@@ -126,7 +126,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Random Forest to solve a production problem
+10. Design a system that uses Random Forest to tackle a production problem
 11. Create unit tests with 100% code coverage for Random Forest
 12. Write a technical blog post explaining Random Forest to beginners
 
@@ -139,7 +139,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Random Forest is the best solution for all problems"
-✓ **CORRECT**: Random Forest has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Random Forest has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Random Forest is too complex to understand"
 ✓ **CORRECT**: Random Forest can be understood by breaking it down into smaller steps

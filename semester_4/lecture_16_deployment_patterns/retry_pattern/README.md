@@ -119,7 +119,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Retry Pattern to solve a production problem
+10. Design a system that uses Retry Pattern to tackle a production problem
 11. Create unit tests with 100% code coverage for Retry Pattern
 12. Write a technical blog post explaining Retry Pattern to beginners
 
@@ -132,12 +132,12 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Retry Pattern is the best solution for all problems"
-✓ **CORRECT**: Retry Pattern has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Retry Pattern has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Retry Pattern is too complex to understand"
 ✓ **CORRECT**: Retry Pattern can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis strategy/pattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 

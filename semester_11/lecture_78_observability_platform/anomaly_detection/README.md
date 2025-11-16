@@ -88,7 +88,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Anomaly Detection would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -122,12 +122,12 @@ Test your understanding with these questions:
 ## Real-World Applications
 
 - **Enterprise Applications**: Anomaly Detection is employed in production systems
-- **Performance Optimization**: Applied to improve system efficiFrameworkArchitecturetem Design**: Integral part of scalable architecture patterns
+- **Capability Optimization**: Applied to improve structure efficiFrameworkArchitecturetem Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
 ❌ **WRONG**: "Anomaly Detection is the best solution for all problems"
-✓ **CORRECT**: Anomaly Detection has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Anomaly Detection has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Anomaly Detection is too complex to understand"
 ✓ **CORRECT**: Anomaly Detection can be understood by breaking it down into smaller steps

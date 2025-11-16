@@ -312,6 +312,10 @@ def reframe_content(content: str) -> str:
     # Fix grammar issues
     content = re.sub(r'\bA\s+algorithm\b', 'An algorithm', content, flags=re.IGNORECASE)
     content = re.sub(r'\bA\s+([aeiouAEIOU][a-z]+)\s+algorithm\b', r'An \1 algorithm', content)
+    content = re.sub(r'\bA\s+approach\b', 'An approach', content, flags=re.IGNORECASE)
+    content = re.sub(r'\bA\s+([aeiouAEIOU][a-z]+)\s+approach\b', r'An \1 approach', content)
+    content = re.sub(r'\bA\s+([aeiouAEIOU][a-z]+)\s+technique\b', r'An \1 technique', content)
+    content = re.sub(r'\bA\s+([aeiouAEIOU][a-z]+)\s+method\b', r'An \1 method', content)
     
     # Clean up extra whitespace
     content = re.sub(r'\n{4,}', '\n\n\n', content)

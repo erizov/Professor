@@ -82,7 +82,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Instruction Tuning?
 8. How would you test your Instruction Tuning deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
 ## AApproachVisualization
 
@@ -105,7 +105,7 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Instruction Tuning for a specific use case (e.g., nearly sortdatasetata)
+7. Optimize Instruction Tuning for a specific employ case (e.g., nearly sortdatasetata)
 8. Implement a parallel or distributed version of Instruction Tuning
 9. Compare Instruction Tuning performance with alternative algorithms on large datasets
 
@@ -119,7 +119,7 @@ Test your understanding with these questions:
 
 - **Enterprise Applications**: Instruction Tuning is employed in production systems
 - **Performance Optimization**: Applied to improarchitecturetem efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 

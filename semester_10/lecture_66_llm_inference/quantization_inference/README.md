@@ -88,7 +88,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Quantization Estimation would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -128,7 +128,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Quantization Estimation is the best solution for all problems"
-✓ **CORRECT**: Quantization Estimation has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Quantization Estimation has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Quantization Estimation is too complex to understand"
 ✓ **CORRECT**: Quantization Estimation can be understood by breaking it down into smaller steps

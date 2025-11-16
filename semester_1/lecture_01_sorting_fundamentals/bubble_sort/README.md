@@ -90,7 +90,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Bubble Sort?
 8. How would you test your Bubble Sort deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
 ## AApproachVisualization
 
@@ -119,7 +119,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Bubble Sort to solve a production problem
+10. Design a system that uses Bubble Sort to tackle a production problem
 11. Create unit tests with 100% code coverage for Bubble Sort
 12. Write a technical blog post explaining Bubble Sort to beginners
 
@@ -132,7 +132,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Bubble Sort is the best solution for all problems"
-✓ **CORRECT**: Bubble Sort has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Bubble Sort has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Bubble Sort is too complex to understand"
 ✓ **CORRECT**: Bubble Sort can be understood by breaking it down into smaller steps

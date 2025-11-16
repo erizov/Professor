@@ -128,11 +128,11 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Treasury Management is the best solution for all problems"
-✓ **CORRECT**: Treasury Management has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Treasury Management has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Treasury Management is too complex to understand"
 ✓ **CORRECT**: Treasury Management can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in various advanced frameworks and technologies.
+## Examples of ImplRealizationis strategy/pattern is implemented in various advanced frameworks and technologies.
 
 *Note: Framework-specific examples will be added based on actual implementations.*

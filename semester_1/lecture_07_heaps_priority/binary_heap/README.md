@@ -107,7 +107,7 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Binary Heap for a specific use case (e.g., nearly sortdatasetata)
+7. Optimize Binary Heap for a specific employ case (e.g., nearly sortdatasetata)
 8. Implement a parallel or distributed version of Binary Heap
 9. Compare Binary Heap performance with alternative algorithms on large datasets
 
@@ -131,7 +131,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Binary Heap is too complex to understand"
 ✓ **CORRECT**: Binary Heap can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in various frameworks and technologies.
+## Examples of ImplRealizationis strategy/pattern is implemented in various frameworks and technologies.
 
 *Note: Framework-specific examples will be added based on actual implementations.*
 

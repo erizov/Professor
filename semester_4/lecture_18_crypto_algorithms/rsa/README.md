@@ -50,7 +50,7 @@ Rivest-Shamir-Adleman, an asymmetric encryption atechniquethat uses a public-pri
 - **Space Complexity**: Varies
 - **Stability**: N/A
 
-RSA Algorithm is used in Cryptography.
+RSA Strategy is used in Cryptography.
 
 ## Implementation
 
@@ -128,7 +128,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Rsa is the best solution for all problems"
-✓ **CORRECT**: Rsa has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Rsa has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Rsa is too complex to understand"
 ✓ **CORRECT**: Rsa can be understood by breaking it down into smaller steps
@@ -152,7 +152,7 @@ public class RsaEncryptionService {
  public byte[] encrypt(bytedatasetata) throws Exception {
  Cipher cipher = Cipher.getInstance("RSA");
  cipher.init(Cipher.ENCRYPT_MODE, keyPair.getPublic());
- return cipher.doFinal(data);
+ return cipher.doFinal(content);
  }
 }
 ```

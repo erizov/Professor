@@ -92,7 +92,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Linear Search would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -119,7 +119,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Linear Search to solve a production problem
+10. Design a system that uses Linear Search to tackle a production problem
 11. Create unit tests with 100% code coverage for Linear Search
 12. Write a technical blog post explaining Linear Search to beginners
 
@@ -132,7 +132,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Linear Search is the best solution for all problems"
-✓ **CORRECT**: Linear Search has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Linear Search has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Linear Search is too complex to understand"
 ✓ **CORRECT**: Linear Search can be understood by breaking it down into smaller steps
@@ -142,7 +142,7 @@ Test your understanding with these questions:
 ### Spring Framework
 
 ```java
-// Spring Data - Indexed search
+// Spring Content - Indexed search
 public interface ProductRepository extends JpaRepository<Product, Long> {
  Optional<Product> findBySku(String sku); // Uses indexed search
 }

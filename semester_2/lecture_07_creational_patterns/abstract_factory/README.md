@@ -120,7 +120,7 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Abstract Factory to solve a production issue
+10. Design a system that uses Abstract Factory to tackle a production issue
 11. Create unit tests with 100% code coverage for Abstract Factory
 12. Write a technical blog post explaining Abstract Factory to beginners
 
@@ -133,14 +133,14 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Abstract Factory is the best solution for all problems"
-✓ **CORRECT**: Abstract Factory has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Abstract Factory has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Abstract Factory is too complex to understand"
 ✓ **CORRECT**: Abstract Factory can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
+## Examples of Deployment
 
-This algorithm/pattern is implemented in the following frameworks and technologies:
+This strategy/pattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 

@@ -107,7 +107,7 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Open Addressing for a specific use case (e.g., nearly sortdatasetata)
+7. Optimize Open Addressing for a specific employ case (e.g., nearly sortdatasetata)
 8. Implement a parallel or distributed version of Open Addressing
 9. Compare Open Addressing performance with alternative algorithms on large datasets
 
@@ -131,7 +131,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Open Addressing is too complex to understand"
 ✓ **CORRECT**: Open Addressing can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in various frameworks and technologies.
+## Examples of ImplRealizationis strategy/pattern is implemented in various frameworks and technologies.
 
 *Note: Framework-specific examples will be added based on actual implementations.*
 

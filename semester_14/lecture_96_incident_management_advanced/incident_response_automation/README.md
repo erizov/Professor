@@ -128,11 +128,11 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Incident Response Automation is the best solution for all problems"
-✓ **CORRECT**: Incident Response Automation has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Incident Response Automation has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Incident Response Automation is too complex to understand"
 ✓ **CORRECT**: Incident Response Automation can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in various advanced frameworks and technologies.
+## Examples of ImplRealizationis strategy/pattern is implemented in various advanced frameworks and technologies.
 
 *Note: Framework-specific examples will be added based on actual implementations.*

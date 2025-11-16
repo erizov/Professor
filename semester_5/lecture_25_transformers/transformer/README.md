@@ -110,7 +110,7 @@ Test your understanding with these questions:
 
 4. Implement Transformation architecture from scratch using only the function signature
 5. Modify Transformation architecture to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the strategy's execution steps
 
 ### Level 3: Optimization (Advanced)
 
@@ -133,7 +133,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Transformation architecture is the best solution for all problems"
-✓ **CORRECT**: Transformation architecture has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Transformation architecture has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Transformation architecture is too complex to understand"
 ✓ **CORRECT**: Transformation architecture can be understood by breaking it down into smaller steps

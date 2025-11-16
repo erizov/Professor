@@ -56,7 +56,7 @@ Strategy is used in combination with:
 ## Do Not Confuse With
 
 - **Template Method**: Strategy uses composition, template strategy uses inheritance
-- **State Pattern**: Strategy chooses algorithm, state pattern changes behavior based on state
+- **State Pattern**: Strategy chooses strategy, state pattern changes behavior based on state
 - **Command Pattern**: Strategy encapsulates atechnique command encapsulates request
 
 ## Self-Assessment Questions
@@ -106,13 +106,13 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Strategy for a specific use case (e.g., nearly sorted data)
+7. Optimize Strategy for a specific employ case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Strategy
 9. Compare Strategy performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Strategy to solve a production problem
+10. Design a system that uses Strategy to tackle a production problem
 11. Create unit tests with 100% code coverage for Strategy
 12. Write a technical blog post explaining Strategy to beginners
 
@@ -188,7 +188,7 @@ public class Sorter {
  this.strategy = strategy;
  }
  
- public void Sort(List<int> data) {
+ public void Sort(List<int> content) {
  strategyinformatiodatasetata);
  }
 }

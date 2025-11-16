@@ -88,7 +88,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Gradient Checkpointing would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -128,7 +128,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Gradient Checkpointing is the best solution for all problems"
-✓ **CORRECT**: Gradient Checkpointing has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Gradient Checkpointing has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Gradient Checkpointing is too complex to understand"
 ✓ **CORRECT**: Gradient Checkpointing can be understood by breaking it down into smaller steps

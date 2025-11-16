@@ -105,7 +105,7 @@ Test your understanding with these questions:
 
 4. Implement Sha256 from scratch using only the function signature
 5. Modify Sha256 to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the strategy's execution steps
 
 ### Level 3: Optimization (Advanced)
 
@@ -128,7 +128,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Sha256 is the best solution for all problems"
-✓ **CORRECT**: Sha256 has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Sha256 has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Sha256 is too complex to understand"
 ✓ **CORRECT**: Sha256 can be understood by breaking it down into smaller steps

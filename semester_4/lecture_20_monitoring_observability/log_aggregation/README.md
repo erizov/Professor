@@ -86,7 +86,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Log Aggregation would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -107,7 +107,7 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Log Aggregation for a specific use case (e.g., nearly sorted data)
+7. Optimize Log Aggregation for a specific employ case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Log Aggregation
 9. Compare Log Aggregation capability with alternative algorithms on large datasets
 
@@ -121,7 +121,7 @@ Test your understanding with these questions:
 
 - **Enterprise Applications**: Log Aggregation is used in production systems
 - **PEffectivenessOptimization**: Applied to improarchitecturetem efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 

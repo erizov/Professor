@@ -88,7 +88,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Mixed Positive accuracy Training would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -128,7 +128,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Mixed Positive accuracy Training is the best solution for all problems"
-✓ **CORRECT**: Mixed Positive accuracy Training has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Mixed Positive accuracy Training has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Mixed Positive accuracy Training is too complex to understand"
 ✓ **CORRECT**: Mixed Positive accuracy Training can be understood by breaking it down into smaller steps

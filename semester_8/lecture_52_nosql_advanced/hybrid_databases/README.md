@@ -101,11 +101,11 @@ Test your understanding with these questions:
 
 4. Implement Hybrid Databases from scratch using only the function signature
 5. Modify Hybrid Databases to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the strategy's execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Hybrid Databases for a specific use case (e.g., nearly sorted data)
+7. Optimize Hybrid Databases for a specific employ case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Hybrid Databases
 9. Compare Hybrid Databases performance with alternative algorithms on large datasets
 

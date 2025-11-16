@@ -91,7 +91,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Attribute extraction?
 8. How would you test your Attribute extraction deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
 ## AApproachVisualization
 
@@ -114,7 +114,7 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Attribute extraction for a specific use case (e.g., nearly sortdatasetata)
+7. Optimize Attribute extraction for a specific employ case (e.g., nearly sortdatasetata)
 8. Implement a parallel or distributed version of Attribute extraction
 9. Compare Attribute extraction performance with alternative algorithms on large datasets
 

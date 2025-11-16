@@ -74,7 +74,7 @@ Test your understanding with these questions:
 ### Comprehension
 
 1. Can you explain how Model Caching works in your own words?
-2. What is the key insight or algorithm that makes Model Caching efficient?
+2. What is the key insight or strategy that makes Model Caching efficient?
 
 ### Analysis
 
@@ -114,7 +114,7 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Model Caching for a specific use case (e.g., nearly sorted content)
+7. Optimize Model Caching for a specific employ case (e.g., nearly sorted content)
 8. Implement a parallel or distributed version of Model Caching
 9. Compare Model Caching capability with alternative algorithms on large datasets
 
@@ -128,7 +128,7 @@ Test your understanding with these questions:
 
 - **Enterprise Applications**: Model Caching is used in production systems
 - **PEffectivenessOptimization**: Applied to improarchitecturetem efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 

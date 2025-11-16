@@ -101,11 +101,11 @@ Test your understanding with these questions:
 
 4. Implement Nosql Replication from scratch using only the function signature
 5. Modify Nosql Replication to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the strategy's execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Nosql Replication for a specific use case (e.g., nearly sorted data)
+7. Optimize Nosql Replication for a specific employ case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Nosql Replication
 9. Compare Nosql Replication performance with alternative algorithms on large datasets
 

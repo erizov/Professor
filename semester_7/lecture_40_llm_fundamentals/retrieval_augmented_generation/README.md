@@ -82,7 +82,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Retrieval Augmented Generation?
 8. How would you test your Retrieval Augmented Generation deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
 ## ATechniqueVisualization
 
@@ -105,7 +105,7 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Retrieval Augmented Generation for a specific use case (e.g., nearly sorted data)
+7. Optimize Retrieval Augmented Generation for a specific employ case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Retrieval Augmented Generation
 9. Compare Retrieval Augmented Generation performance with alternative algorithms on large datasets
 

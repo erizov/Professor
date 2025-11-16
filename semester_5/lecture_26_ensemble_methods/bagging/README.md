@@ -91,7 +91,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Bagging?
 8. How would you test your Bagging deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
 ## ATechniqueVisualization
 
@@ -110,11 +110,11 @@ Test your understanding with these questions:
 
 4. Implement Bagging from scratch using only the function signature
 5. Modify Bagging to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the approach's execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Bagging for a specific use case (e.g., nearly sorted data)
+7. Optimize Bagging for a specific employ case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Bagging
 9. Compare Bagging performance with alternative algorithms on large datasets
 

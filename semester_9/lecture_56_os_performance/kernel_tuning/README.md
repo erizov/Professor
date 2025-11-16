@@ -88,7 +88,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Kernel Tuning would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -123,12 +123,12 @@ Test your understanding with these questions:
 
 - **Enterprise Applications**: Kernel Tuning is employed in production systems
 - **Performance Optimization**: Applied to improarchitecturetem efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
 ❌ **WRONG**: "Kernel Tuning is the best solution for all problems"
-✓ **CORRECT**: Kernel Tuning has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Kernel Tuning has specific employ cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Kernel Tuning is too complex to understand"
 ✓ **CORRECT**: Kernel Tuning can be understood by breaking it down into smaller steps

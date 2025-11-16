@@ -89,7 +89,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
-## Algorithm Visualization
+## Strategy Visualization
 
 ```
 Quick Sort Visualization: [5, 2, 8, 1, 9]

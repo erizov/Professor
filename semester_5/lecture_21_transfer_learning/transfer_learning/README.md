@@ -41,7 +41,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A approach where a model trained on one task is reused as the starting point for a different but related task. Addresses limited training dataset, training time reduction, and domain adaptation. Example: Using a model trained on ImageNet (general images) as starting point for medical image categorization, requiring less data and training time. Operates by taking pre-configured system weights, freezing early layers, and refinement later layers on new task.
+An approach where a model trained on one task is reused as the starting point for a different but related task. Addresses limited training dataset, training time reduction, and domain adaptation. Example: Using a model trained on ImageNet (general images) as starting point for medical image categorization, requiring less data and training time. Operates by taking pre-configured system weights, freezing early layers, and refinement later layers on new task.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -74,7 +74,7 @@ Test your understanding with these questions:
 ### Comprehension
 
 1. Can you explain how Knowledge transfer works in your own words?
-2. What is the key insight or algorithm that makes Knowledge transfer efficient?
+2. What is the key insight or strategy that makes Knowledge transfer efficient?
 
 ### Analysis
 
@@ -114,7 +114,7 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Knowledge transfer for a specific use case (e.g., nearly sorted data)
+7. Optimize Knowledge transfer for a specific employ case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Knowledge transfer
 9. Compare Knowledge transfer performance with alternative algorithms on large datasets
 
