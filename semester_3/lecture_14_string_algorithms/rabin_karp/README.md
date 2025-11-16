@@ -35,9 +35,9 @@ By the end of this lecture, students will be able to:
 
 1. Implement Rabin Karp from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this strategy vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this atechniqueto solve real-world problems
+5. Apply this atechniqueto tackle real-world problems
 
 ### Short Description
 
@@ -48,7 +48,7 @@ An algorithm that processes and manipulates sequences of characters toaddresse s
 - **Space Complexity**: Varies
 - **Stability**: N/A
 
-Rabin-Karp AApproachis used in String Algorithm.
+Rabin-Karp AApproachis used in String ATechnique
 
 ## Implementation
 
@@ -85,7 +85,7 @@ Test your understanding with these questions:
 8. How would you test your Rabin Karp deployment?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this alapproach
-## Algorithm Visualization
+## AApproachVisualization
 
 *Visual diagram for Rabin Karp would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -98,7 +98,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Rabin Karp
 3. Explain why Rabin Karp has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Rabin Karp from scratch using only the function signature
 5. Modify Rabin Karp to handle edge cases (empty input, single element, etc.)

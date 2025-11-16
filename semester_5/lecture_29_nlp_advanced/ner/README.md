@@ -35,13 +35,13 @@ By the end of this lecture, students will be able to:
 
 1. Implement Ner from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this algorithm to tackle real-world problems
 
 ### Short Description
 
-A algorithm that combines information retrieval with language generation to produce accurate, up-to-date responses. Addresses knowledge cutoff limitations, factual accuracy, and domain-specific information. Example: Answering questions about recent events by retrieving relevant documents, then generating answers based on retrieved content. Operates by searching knowledge base for relevant information, then using retrieved context to guide language model generation.
+A approach that combines information retrieval with language generation to produce accurate, up-to-date responses. Addresses knowledge cutoff limitations, factual accuracy, and domain-specific information. Example: Answering questions about recent events by retrieving relevant documents, then generating answers based on retrieved content. Operates by searching knowledge base for relevant information, then using retrieved context to guide language model generation.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -59,7 +59,7 @@ A algorithm that combines information retrieval with language generation to prod
 
 ## Performance Considerations
 
-This approach is part of NLP and requires careful consideration of resource constraints.
+This strategy is part of NLP and requires careful consideration of resource constraints.
 
 ## Do Not Confuse With
 
@@ -74,7 +74,7 @@ Test your understanding with these questions:
 ### Comprehension
 
 1. Can you explain how Ner works in your own words?
-2. What is the key insight or technique that makes Ner efficient?
+2. What is the key insight or algorithm that makes Ner efficient?
 
 ### Analysis
 
@@ -84,7 +84,7 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Ner from memory without looking at the code?
-6. What real-world problem could you solve using Ner?
+6. What real-world problem could you tackle using Ner?
 
 ### Debugging
 
@@ -106,11 +106,11 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Ner
 3. Explain why Ner has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Ner from scratch using only the function signature
 5. Modify Ner to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the atechniques execution steps
 
 ### Level 3: Optimization (Advanced)
 
@@ -128,12 +128,12 @@ Test your understanding with these questions:
 
 - **Enterprise Applications**: Ner is used in production systems
 - **Capability Optimization**: Applied to improve structure efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
 ❌ **WRONG**: "Ner is the best solution for all problems"
-✓ **CORRECT**: Ner has specemployc use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Ner has specemploapplyuse cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Ner is too complex to understand"
 ✓ **CORRECT**: Ner can be understood by breaking it down into smaller steps

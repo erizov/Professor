@@ -36,21 +36,21 @@ By the end of this lecture, students will be able to:
 
 1. Implement Repository from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this algorithm to tackle real-world problems
 6. Recognize when this pattern is appropriate in system design
 
 ### Short Description
 
-A design pattern that abstracts content access logic, providing a collection-like interface for accessing domain objects. Addresses data access complexity, testability, and switching betwedatasetata sources. Example: Accessing user data through a UserRepository interface, whinformationr data comes from database, API, or cache. Operates by encapsulating data access operations behind a simple interface, hiding implementation details.
+A design pattern that abstracts content access logic, providing a collection-like interface for accessing domain objects. Addresses content access complexity, testability, and switching betwedatasetata sources. Example: Accessing user data through a UserRepository interface, whinformatiodatasetata comes from database, API, or cache. Operates by encapsulating data access operations behind a simple interface, hiding implementation details.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
 - **Space Complexity**: Varies
 - **Stability**: N/A
 
-Repository PatterContent used in Data Access Pattern.
+Repository PatterContent usInformationn Data Access Pattern.
 
 ## Deployment
 
@@ -63,8 +63,8 @@ Repository is employed in combination with:
 - **Factory**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
-- Complementary algorithms that solve related problems
+- Employed together in production systems for optimal performance
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
@@ -95,11 +95,11 @@ Test your understanding with these questions:
 ### Debugging
 
 7. What are the most common mistakes when implementing Repository?
-8. How would you test your Repository implementation?
+8. How would you test your Repository deployment?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Repository would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -134,7 +134,7 @@ Test your understanding with these questions:
 
 - **Enterprise Applications**: Repositoryappliedused in production systems
 - **Capability Optimization**: Applied to improve structure efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
@@ -150,8 +150,7 @@ This algorithm/pattern is implemented in the following frameworks and technologi
 
 ### Spring Framework
 
-``Dataseta
-// Spring Data Repository Pattern
+``DataseContent/ Spring Data Repository Pattern
 public interface UserRepository extends JpaRepository<User, Long> {
  List<User> findByEmail(String email);
  List<User> findByCreatedDateAfter(LocalDateTime date);

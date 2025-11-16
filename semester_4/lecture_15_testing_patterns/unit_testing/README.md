@@ -35,13 +35,13 @@ By the end of this lecture, students will be able to:
 
 1. Implement Unit Testing from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this algorithm to tackle real-world problems
 
 ### Short Description
 
-A software testing algorithm that validates the correctness and quality of code implementations. Addresses bug detection, quality assurance, and value estimation prevention. Example: Writing unit tests to verify that a sorting function correctly sorts arrays. Operates by executing code with test inputs, comparing actual outputs with expected results, and reporting discrepancies.
+A software testing approach that validates the correctness and quality of code implementations. Addresses bug detection, quality assurance, and value estimation prevention. Example: Writing unit tests to verify that a sorting function correctly sorts arrays. Operates by executing code with test inputs, comparing actual outputs with expected results, and reporting discrepancies.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -56,14 +56,14 @@ Unit Testing is used in combination with:
 
 **Common Combinations:**
 - Employed together in production systems for optimal performance
-- Complementary algorithms that solve related problems
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
 
 - **Integration Testing**: Unit tests test isolated units, integration tests test component interactions
 - **End-to-End Testing**: Unit tests are fast and isolated, E2E tests exercise full system
-- **Mocking**: Unit testing is testing approach, mocking is technique used in unit tests
+- **Mocking**: Unit testing is testing strategy, mocking is algorithm employed in unit tests
 
 ## Self-Assessment Questions
 
@@ -104,7 +104,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Unit Testing
 3. Explain why Unit Testing has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Unit Testing from scratch using only the function signature
 5. Modify Unit Testing to handle edge cases (empty input, single element, etc.)
@@ -125,7 +125,7 @@ Test your understanding with these questions:
 ## Real-World Applications
 
 - **Enterprise Applications**: Unit Testingappliedused in production systems
-- **Capability Optimization**: Applied to improve system efficiency
+- **Capability Optimization**: Applied to improve structure efficiency
 -Architecturetem Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
@@ -136,7 +136,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Unit Testing is too complex to understand"
 ✓ **CORRECT**: Unit Testing can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis atechniquepattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 

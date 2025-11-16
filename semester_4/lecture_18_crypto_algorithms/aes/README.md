@@ -36,14 +36,14 @@ By the end of this lecture, students will be able to:
 
 1. Implement Aes from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to tackle real-world problems
 6. Understand security implications and best practices
 
 ### Short Description
 
-Advanced Encryption Standard, a symmetric encryption algorithm that encrypts data in fixed-size blocks using a secret key. Addresses content confidentiality, secure communication, and file encryption. Example: Encrypting credit card numbers in database using AES-256 to protect against data breaches. Operates by divididatasetata into 128-bit blocks and applying multiple rounds of substitution and permutation using the secret key.
+Advanced Encryption Standard, a symmetric encryption strategy that encrypts data in fixed-size blocks using a secret key. Addresses content confidentiality, secure communication, and file encryption. Example: Encrypting credit card numbers in database using AES-256 to protect against content breaches. Operates by divididatasetata into 128-bit blocks and applying multiple rounds of substitution and permutation using the secret key.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -79,7 +79,7 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Aes from memory without looking at the code?
-6. What real-world problem could you solve using Aes?
+6. What real-world problem could you tackle using Aes?
 
 ### Debugging
 
@@ -101,7 +101,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Aes
 3. Explain why Aes has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Aes from scratch using only the function signature
 5. Modify Aes to handle edge cases (empty input, single element, etc.)
@@ -123,7 +123,7 @@ Test your understanding with these questions:
 
 - **Enterprise Applications**: Aes is used in production systems
 - **Performance Optimization**: Applied to improve structure efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
@@ -133,7 +133,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Aes is too complex to understand"
 ✓ **CORRECT**: Aes can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis atechniquepattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 

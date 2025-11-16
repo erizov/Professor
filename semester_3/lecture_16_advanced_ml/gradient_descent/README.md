@@ -37,13 +37,13 @@ By the end of this lecture, students will be able to:
 
 1. Implement Gradient optimization from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to tackle real-world problems
 
 ### Short Description
 
-A computational intelligence algorithm that learns patterns from content to make predictions or decisions. Addresses categorization, value estimation, grouping, and pattern recognition. Example: Predicting house prices based on historical sales data and property features. Operates by training on labeled or unlabeldatasetata, learning patterns, and applying learned knowledge to new examples.
+A computational intelligence strategy that learns patterns from content to make predictions or decisions. Addresses categorization, value estimation, grouping, and pattern recognition. Example: Predicting house prices based on historical sales content and property features. Operates by training on labeled or unlabeldatasetata, learning patterns, and applying learned knowledge to new examples.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -63,8 +63,8 @@ Gradient optimization is employed in combination with:
 - **Linear Value estimation**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
-- Complementary algorithms that solve related problems
+- Employed together in production systems for optimal performance
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
@@ -112,7 +112,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Gradient optimization
 3. Explain why Gradient optimization has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Gradient optimization from scratch using only the function signature
 5. Modify Gradient optimization to handle edge cases (empty input, single element, etc.)
@@ -144,7 +144,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Gradient optimization is too complex to understand"
 ✓ **CORRECT**: Gradient optimization can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in various frameworks and technologies.
+## Examples of ImplRealizationis atechniquepattern is implemented in various frameworks and technologies.
 
 *Note: Framework-specific examples will be added based on actual implementations.*
 

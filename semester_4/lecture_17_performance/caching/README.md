@@ -35,13 +35,13 @@ By the end of this lecture, students will be able to:
 
 1. Implement Caching from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this algorithm to tackle real-world problems
 
 ### Short Description
 
-A capability optimization algorithm that stores frequently accessed data in fast storage to reduce access time and system load. Addresses slow database queries, expensive computations, and API rate limits. Example: Storing product details in Redis cache to serve 1000x faster than database queries. Operates by checking cache first, returning cached content if available, otherwise fetching from source and storing in cache.
+A capability optimization approach that stores frequently accessed data in fast storage to reduce access time and system load. Addresses slow database queries, expensive computations, and API rate limits. Example: Storing product details in Redis cache to serve 1000x faster than database queries. Operates by checking cache first, returning cached content if available, otherwise fetching from source and storing in cache.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -50,7 +50,7 @@ A capability optimization algorithm that stores frequently accessed data in fast
 
 ## Do Not Confuse With
 
-- **Memoization**: Caching stores computed results, memoization is caching technique for functions
+- **Memoization**: Caching stores computed results, memoization is caching algorithm for functions
 - **CDN**: Caching is general pattern, CDN is distributed caching infrastructure
 - **Database Query Cache**: Caching is pattern, query cache is specific deployment
 
@@ -71,14 +71,14 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Caching from memory without looking at the code?
-6. What real-world problem could you solve using Caching?
+6. What real-world problem could you tackle using Caching?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Caching?
-8. How would you test your Caching implementation?
+8. How would you test your Caching deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
 ## Algorithm Visualization
 
@@ -101,9 +101,9 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Caching for a specifapplyuse case (e.g., nearly sorted data)
+7. Optimize Caching for a specifapplyuse case (e.g., nearly sorted content)
 8. Implement a parallel or distributed version of Caching
-9. Compare Caching performance with alternative algorithms on large datasets
+9. Compare Caching capability with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
 
@@ -127,7 +127,7 @@ Test your understanding with these questions:
 
 ## Examples of Implementation
 
-This algorithm/pattern is implemented in the following frameworks and technologies:
+This atechniquepattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 

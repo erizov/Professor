@@ -33,7 +33,7 @@ By the end of this lecture, students will be able to:
 
 1. Implement Database Security from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to solve real-world problems
 
@@ -82,7 +82,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Database Security?
 8. How would you test your Database Security deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
 ## ATechniqueVisualization
 
@@ -97,7 +97,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Database Security
 3. Explain why Database Security has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Database Security from scratch using only the function signature
 5. Modify Database Security to handle edge cases (empty input, single element, etc.)
@@ -117,14 +117,14 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Database Security is used in production systems
+- **Enterprise Applications**: Database Security is employed in production systems
 - **Performance Optimization**: Applied to improve structure efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
 ❌ **WRONG**: "Database Security is the best solution for all problems"
-✓ **CORRECT**: Database Security has specemployc use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Database Security has specemploapplyuse cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Database Security is too complex to understand"
 ✓ **CORRECT**: Database Security can be understood by breaking it down into smaller steps

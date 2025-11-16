@@ -35,7 +35,7 @@ By the end of this lecture, students will be able to:
 
 1. Implement Iot CI from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this algorithm to tackle real-world problems
 
@@ -84,14 +84,14 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Iot CI from memory without looking at the code?
-6. What real-world problem could you solve using Iot CI?
+6. What real-world problem could you tackle using Iot CI?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Iot CI?
 8. How would you test your Iot CI deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
 ## ATechniqueVisualization
 
@@ -106,7 +106,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Iot CI
 3. Explain why Iot CI has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Iot CI from scratch using only the function signature
 5. Modify Iot CI to handle edge cases (empty input, single element, etc.)
@@ -128,12 +128,12 @@ Test your understanding with these questions:
 
 - **Enterprise Applications**: Iot CI is used in production systems
 - **Capability Optimization**: Applied to improve structure efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
 ❌ **WRONG**: "Iot CI is the best solution for all problems"
-✓ **CORRECT**: Iot CI has specemployc use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Iot CI has specemploapplyuse cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Iot CI is too complex to understand"
 ✓ **CORRECT**: Iot CI can be understood by breaking it down into smaller steps

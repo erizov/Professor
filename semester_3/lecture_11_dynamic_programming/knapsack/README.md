@@ -35,13 +35,13 @@ By the end of this lecture, students will be able to:
 
 1. Implement Knapsack from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to tackle real-world problems
 
 ### Short Description
 
-An optimization algorithm that determines the most valuable combination of items that fit within a weight constraint. Addresses resource allocation, portfolio optimization, and cutting stock problems. Example: Selecting items for a backpack with weight limit 15kg to maximize value. Operates by building a table of optimal solutions for subproblems, using previous results to compute larger problems.
+An optimization strategy that determines the most valuable combination of items that fit within a weight constraint. Addresses resource allocation, portfolio optimization, and cutting stock problems. Example: Selecting items for a backpack with weight limit 15kg to maximize value. Operates by building a table of optimal solutions for subproblems, using previous results to compute larger problems.
 
 **Key Characteristics:**
 - **Time Complexity**: O(nW) where n is items and W is capacity, because the DP table has n×W cells, each computed in constant time.
@@ -56,14 +56,14 @@ Knapsack is used in combination with:
 
 **Common Combinations:**
 - Employed together in production systems for optimal performance
-- Complementary algorithms that solve related problems
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
 
 - **Fractional Knapsack**: 0/1 knapsack takes items whole, fractional knapsack can take fractions (greedy solution)
 - **Subset Sum**: Subset sum is special case of knapsack with value=weight, but different issue formulation
-- **Bin Packing**: Knapsack maximizes value, bin packing minimizes bins used
+- **Bin Packing**: Knapsack maximizes value, bin packing minimizes bins employed
 
 ## Self-Assessment Questions
 
@@ -82,7 +82,7 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Knapsack from memory without looking at the code?
-6. What real-world problem could youaddresse using Knapsack?
+6. What real-world issue could youaddresse using Knapsack?
 
 ### Debugging
 
@@ -104,7 +104,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Knapsack
 3. Explain why Knapsack has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Knapsack from scratch using only the function signature
 5. Modify Knapsack to handle edge cases (empty input, single element, etc.)
@@ -130,12 +130,12 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Knapsack is the best solution for all problems"
-✓ **CORRECT**: Knapsack has specemployc use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Knapsack has specemploapplyuse cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Knapsack is too complex to understand"
 ✓ **CORRECT**: Knapsack can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis atechniquepattern is implemented in the following frameworks and technologies:
 
 ### Kubernetes
 

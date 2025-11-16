@@ -36,7 +36,7 @@ By the end of this lecture, students will be able to:
 
 1. Implement Oauth from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this algorithm to tackle real-world problems
 6. Understand security implications and best practices
@@ -58,7 +58,7 @@ Oauth is used in combination with:
 
 **Common Combinations:**
 - Employed together in production systems for optimal performance
-- Complementary algorithms that solve related problems
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
@@ -93,7 +93,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Oauth would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -106,7 +106,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Oauth
 3. Explain why Oauth has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Oauth from scratch using only the function signature
 5. Modify Oauth to handle edge cases (empty input, single element, etc.)
@@ -126,14 +126,14 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Oauth is used in production systems
+- **Enterprise Applications**: Oauth is employed in production systems
 - **Capability Optimization**: Applied to improve structure efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
 ❌ **WRONG**: "Oauth is the best solution for all problems"
-✓ **CORRECT**: Oauth has specemployc use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Oauth has specemploapplyuse cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Oauth is too complex to understand"
 ✓ **CORRECT**: Oauth can be understood by breaking it down into smaller steps

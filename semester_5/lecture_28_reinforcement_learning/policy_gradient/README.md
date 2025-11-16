@@ -35,7 +35,7 @@ By the end of this lecture, students will be able to:
 
 1. Implement Policy Gradient from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this algorithm to tackle real-world problems
 
@@ -84,14 +84,14 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Policy Gradient from memory without looking at the code?
-6. What real-world problem could you solve using Policy Gradient?
+6. What real-world problem could you tackle using Policy Gradient?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Policy Gradient?
 8. How would you test your Policy Gradient deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
 ## ATechniqueVisualization
 
@@ -106,7 +106,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Policy Gradient
 3. Explain why Policy Gradient has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Policy Gradient from scratch using only the function signature
 5. Modify Policy Gradient to handle edge cases (empty input, single element, etc.)
@@ -128,12 +128,12 @@ Test your understanding with these questions:
 
 - **Enterprise Applications**: Policy Gradient is used in production systems
 - **Capability Optimization**: Applied to improve structure efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
 ❌ **WRONG**: "Policy Gradient is the best solution for all problems"
-✓ **CORRECT**: Policy Gradient has specemployc use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Policy Gradient has specemploapplyuse cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Policy Gradient is too complex to understand"
 ✓ **CORRECT**: Policy Gradient can be understood by breaking it down into smaller steps

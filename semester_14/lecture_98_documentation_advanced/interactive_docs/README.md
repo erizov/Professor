@@ -38,7 +38,7 @@ By the end of this lecture, students will be able to:
 
 1. Implement Interactive Docs from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this algorithm to solve real-world problems
 
@@ -88,7 +88,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
-## Algorithm Visualization
+## Approach Visualization
 
 *Visual diagram for Interactive Docs would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -101,7 +101,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Interactive Docs
 3. Explain why Interactive Docs has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Interactive Docs from scratch using only the function signature
 5. Modify Interactive Docs to handle edge cases (empty input, single element, etc.)
@@ -121,9 +121,9 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Interactive Docs is used in production systems
+- **Enterprise Applications**: Interactive Docs is employed in production systems
 - **Performance Optimization**: Applied to improve structure efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 

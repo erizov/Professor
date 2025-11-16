@@ -36,14 +36,14 @@ By the end of this lecture, students will be able to:
 
 1. Implement Bubble Sort from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to tackle real-world problems
 6. Compare stability, in-place properties, and performance characteristics
 
 ### Short Description
 
-A comparison-based sorting algorithm that repeatedly compares adjacent elements and swaps them if they are in the wrong order. Addresses arranging elements in ascending or descending order. Example: Sorting student grades [85, 92, 78, 95] → [78, 85, 92, 95]. Operates by making multiple passes through the array, 'bubbling' larger elements to the end with each pass.
+A comparison-based sorting strategy that repeatedly compares adjacent elements and swaps them if they are in the wrong order. Addresses arranging elements in ascending or descending order. Example: Sorting student grades [85, 92, 78, 95] → [78, 85, 92, 95]. Operates by making multiple passes through the array, 'bubbling' larger elements to the end with each pass.
 
 **Key Characteristics:**
 - **Time Complexity**: O(n²) because it makes n passes through the array, and each pass compares and potentially swaps adjacent elements.
@@ -58,7 +58,7 @@ Bubble Sort is used in combination with:
 
 **Common Combinations:**
 - Employed together in production systems for optimal performance
-- Complementary algorithms that solve related problems
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
@@ -105,11 +105,11 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Bubble Sort
 3. Explain why Bubble Sort has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Bubble Sort from scratch using only the function signature
 5. Modify Bubble Sort to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the atechniques execution steps
 
 ### Level 3: Optimization (Advanced)
 
@@ -125,8 +125,8 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Bubble Sort is used in production systems
-- **Performance Optimization**: Applied to improve system efficiency
+- **Enterprise Applications**: Bubble Sort is employed in production systems
+- **Capability Optimization**: Applied to improve system efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions

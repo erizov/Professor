@@ -35,13 +35,13 @@ By the end of this lecture, students will be able to:
 
 1. Implement Rate Limiting from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this algorithm to tackle real-world problems
 
 ### Short Description
 
-A algorithm for controlling the rate of requests sent or received by a network interface controller to prevent abuse and ensure fair resource usage. Addresses API abuse, DDoS protection, and resource exhaustion. Example: Limiting API calls to 100 requests per minute per user to prevent system overload. Operates by tracking request counts per identifier and rejecting requests that exceed thresholds.
+A approach for controlling the rate of requests sent or received by a network interface controller to prevent abuse and ensure fair resource usage. Addresses API abuse, DDoS protection, and resource exhaustion. Example: Limiting API calls to 100 requests per minute per user to prevent system overload. Operates by tracking request counts per identifier and rejecting requests that exceed thresholds.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -61,7 +61,7 @@ Test your understanding with these questions:
 ### Comprehension
 
 1. Can you explain how Rate Limiting works in your own words?
-2. What is the key insight or technique that makes Rate Limiting efficient?
+2. What is the key insight or algorithm that makes Rate Limiting efficient?
 
 ### Analysis
 
@@ -71,14 +71,14 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Rate Limiting from memory without looking at the code?
-6. What real-world problem could you solve using Rate Limiting?
+6. What real-world problem could you tackle using Rate Limiting?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Rate Limiting?
 8. How would you test your Rate Limiting deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
 ## Algorithm Visualization
 
@@ -93,7 +93,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Rate Limiting
 3. Explain why Rate Limiting has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Rate Limiting from scratch using only the function signature
 5. Modify Rate Limiting to handle edge cases (empty input, single element, etc.)
@@ -114,7 +114,7 @@ Test your understanding with these questions:
 ## Real-World Applications
 
 - **Enterprise Applications**: Rate Limiting is used in production systems
-- **Capability Optimization**: Applied to improve system efficiency
+- **Capability Optimization**: Applied to improve structure efficiency
 -Architecturetem Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
@@ -125,7 +125,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Rate Limiting is too complex to understand"
 ✓ **CORRECT**: Rate Limiting can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis atechniquepattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 

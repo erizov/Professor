@@ -25,7 +25,7 @@ By the end of this lecture, students will be able to:
 
 1. Implement Quick Sort from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to solve real-world problems
 6. Compare stability, in-place properties, and performance characteristics
@@ -39,7 +39,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A divide-and-conquer sorting algorithm that partitions an array around a pivot element, then recursively sorts the subarrays. Addresses efficiently sorting large datasets. Example: Sorting product prices [29.99, 15.50, 45.00, 12.99] → [12.99, 15.50, 29.99, 45.00]. Operates by selecting a pivot, partitioning elements smaller/larger than pivot, then recursively sorting partitions.
+A divide-and-conquer sorting approach that partitions an array around a pivot element, then recursively sorts the subarrays. Addresses efficiently sorting large datasets. Example: Sorting product prices [29.99, 15.50, 45.00, 12.99] → [12.99, 15.50, 29.99, 45.00]. Operates by selecting a pivot, partitioning elements smaller/larger than pivot, then recursively sorting partitions.
 
 **Key Characteristics:**
 - **Time Complexity**: O(n log n) average case because it divides the array in half on average each recursion, but O(n²) worst case when pivot is always the smallest/largest element.
@@ -111,7 +111,7 @@ Combine: [1, 2, 5, 8, 9]
 2. Identify the base case(s) in Quick Sort
 3. Explain why Quick Sort has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Quick Sort from scratch using only the function signature
 5. Modify Quick Sort to handle edge cases (empty input, single element, etc.)
@@ -121,17 +121,17 @@ Combine: [1, 2, 5, 8, 9]
 
 7. Optimize Quick Sort for a specifapplyuse case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Quick Sort
-9. Compare Quick Sort performance with alternative algorithms on large datasets
+9. Compare Quick Sort capability with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Quick Sort to solve a production problem
+10. Design a system that uses Quick Sort to tackle a production problem
 11. Create unit tests with 100% code coverage for Quick Sort
 12. Write a technical blog post explaining Quick Sort to beginners
 
 ## Real-World Applications
 
-- **Database Systems**: Used in SQL ORDER BY operations for efficient query result sorting
+- **Database Systems**: Employed in SQL ORDER BY operations for efficient query result sorting
 - **Operating Systems**: Process scheduling and file system organization
 - **Gaming**: Leaderboard ranking and score sorting
 
@@ -143,7 +143,7 @@ Combine: [1, 2, 5, 8, 9]
 ❌ **WRONG**: "Quick Sort requires O(n) extra space"
 ✓ **CORRECT**: Quick Sort is in-place with O(log n) space for recursion stack
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis atechniquepattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 

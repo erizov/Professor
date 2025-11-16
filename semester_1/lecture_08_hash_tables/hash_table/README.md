@@ -35,7 +35,7 @@ By the end of this lecture, students will be able to:
 
 1. Implement Hash Table from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this algorithm to tackle real-world problems
 
@@ -48,7 +48,7 @@ A computational method for hash table. Solves specific problems in this domain t
 - **Space Complexity**: Varies
 - **Stability**: N/A
 
-Hash Table is used in Data Structure.
+Hash Table is used in Content Structure.
 
 ## Implementation
 
@@ -77,7 +77,7 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Hash Table from memory without looking at the code?
-6. What real-world problem could you solve using Hash Table?
+6. What real-world problem could you tackle using Hash Table?
 
 ### Debugging
 
@@ -86,7 +86,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Hash Table would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -99,7 +99,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Hash Table
 3. Explain why Hash Table has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Hash Table from scratch using only the function signature
 5. Modify Hash Table to handle edge cases (empty input, single element, etc.)
@@ -126,7 +126,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Hash Table is the best solution for all problems"
-✓ **CORRECT**: Hash Table has specemployc use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Hash Table has specemploapplyuse cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Hash Table is too complex to understand"
 ✓ **CORRECT**: Hash Table can be understood by breaking it down into smaller steps

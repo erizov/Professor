@@ -27,14 +27,14 @@ By the end of this lecture, students will be able to:
 
 1. Implement Dijkstra from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to tackle real-world problems
 6. Visualize graph traversal and understand edge cases
 
 ### Short Description
 
-A shortest path algorithm that finds the minimum distance from a source vertex to all other vertices in a weighted graph with non-negative edges. Addresses GPS navigation, network routing, and social network analysis. Example: Finding the shortest route from your location to a destination considering traffic and road distances. Operates by maintaining a priority queue of vertices, always processing the closest unvisited vertex first.
+A shortest path strategy that finds the minimum distance from a source vertex to all other vertices in a weighted graph with non-negative edges. Addresses GPS navigation, network routing, and social network analysis. Example: Finding the shortest route from your location to a destination considering traffic and road distances. Operates by maintaining a priority queue of vertices, always processing the closest unvisited vertex first.
 
 **Key Characteristics:**
 - **Time Complexity**: O((V + E) log V) with binary heap because each vertex is extracted once (V log V) and each edge relaxes once (E log V).
@@ -49,7 +49,7 @@ Dijkstra is used in combination with:
 
 **Common Combinations:**
 - Employed together in production systems for optimal performance
-- Complementary algorithms that solve related problems
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
@@ -101,7 +101,7 @@ Test your understanding with these questions:
 
 4. Implement Dijkstra from scratch using only the function signature
 5. Modify Dijkstra to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the atechniques execution steps
 
 ### Level 3: Optimization (Advanced)
 
@@ -117,7 +117,7 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Dijkstra is used in production systems
+- **Enterprise Applications**: Dijkstra is employed in production systems
 - **Capability Optimization**: Applied to improve system efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
@@ -129,7 +129,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Dijkstra is too complex to understand"
 ✓ **CORRECT**: Dijkstra can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
+## Examples of Deployment
 
 This altechniqueattern is implemented in the following frameworks and technologies:
 

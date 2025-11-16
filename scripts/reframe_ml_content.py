@@ -163,19 +163,35 @@ def apply_ml_replacements(content: str) -> Tuple[str, bool]:
     original = content
     
     # Apply phrase replacements (case-insensitive, whole word)
-    for phrase, replacement in ML_PHRASE_REPLACEMENTS.items():
-        # Case-insensitive replacement with word boundaries
-        pattern = r'\b' + re.escape(phrase) + r'\b'
-        if re.search(pattern, content, re.IGNORECASE):
-            # Preserve original case for first letter
-            def replace_func(match):
-                matched = match.group(0)
-                if matched[0].isupper():
-                    return replacement[0].upper() + replacement[1:]
-                return replacement
-            
-            content = re.sub(pattern, replace_func, content, flags=re.IGNORECASE)
-            changed = True
+    # Don't replace in titles (lines starting with #)
+    lines = content.split('\n')
+    new_lines = []
+    
+    for line in lines:
+        # Skip title lines (starting with #)
+        if re.match(r'^#+\s+', line):
+            new_lines.append(line)
+            continue
+        
+        # Apply replacements to non-title lines
+        original_line = line
+        for phrase, replacement in ML_PHRASE_REPLACEMENTS.items():
+            # Case-insensitive replacement with word boundaries
+            pattern = r'\b' + re.escape(phrase) + r'\b'
+            if re.search(pattern, line, re.IGNORECASE):
+                # Preserve original case for first letter
+                def replace_func(match):
+                    matched = match.group(0)
+                    if matched[0].isupper():
+                        return replacement[0].upper() + replacement[1:]
+                    return replacement
+                
+                line = re.sub(pattern, replace_func, line, flags=re.IGNORECASE)
+                changed = True
+        
+        new_lines.append(line)
+    
+    content = '\n'.join(new_lines)
     
     return content, changed or (content != original)
 
@@ -292,6 +308,10 @@ def reframe_content(content: str) -> str:
     content, _ = apply_synonyms(content)
     content, _ = remove_duplicate_concepts(content)
     content, _ = consolidate_repetitive_lists(content)
+    
+    # Fix grammar issues
+    content = re.sub(r'\bA\s+algorithm\b', 'An algorithm', content, flags=re.IGNORECASE)
+    content = re.sub(r'\bA\s+([aeiouAEIOU][a-z]+)\s+algorithm\b', r'An \1 algorithm', content)
     
     # Clean up extra whitespace
     content = re.sub(r'\n{4,}', '\n\n\n', content)

@@ -28,7 +28,7 @@ By the end of this lecture, students will be able to:
 
 1. Implement Observer from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this algorithm to tackle real-world problems
 6. Recognize when this pattern is appropriate in system design
@@ -50,7 +50,7 @@ Observer is used in combination with:
 
 **Common Combinations:**
 - Employed together in production systems for optimal performance
-- Complementary algorithms that solve related problems
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
@@ -85,7 +85,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Observer would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -130,7 +130,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Observer is too complex to understand"
 ✓ **CORRECT**: Observer can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
+## Examples of Deployment
 
 This algorithm/pattern is implemented in the following frameworks and technologies:
 

@@ -27,14 +27,14 @@ By the end of this lecture, students will be able to:
 
 1. Implement Dfs from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to tackle real-world problems
 6. Visualize graph traversal and understand edge cases
 
 ### Short Description
 
-A graph traversal algorithm that explores as far as possible along each branch before backtracking. Addresses maze solving, topological sorting, and cycle detection. Example: Finding a path through a maze by exploring one route completely before trying alternatives. Operates by recursively visiting unvisited neighbors, marking visited nodes, and backtracking when no unvisited neighbors exist.
+A graph traversal strategy that explores as far as possible along each branch before backtracking. Addresses maze solving, topological sorting, and cycle detection. Example: Finding a path through a maze by exploring one route completely before trying alternatives. Operates by recursively visiting unvisited neighbors, marking visited nodes, and backtracking when no unvisited neighbors exist.
 
 **Key Characteristics:**
 - **Time Complexity**: O(V + E) where V is vertices and E is edges, because each vertex and edge is visited exactly once.
@@ -49,7 +49,7 @@ Dfs is used in combination with:
 
 **Common Combinations:**
 - Employed together in production systems for optimal performance
-- Complementary algorithms that solve related problems
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
@@ -82,7 +82,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Dfs?
 8. How would you test your Dfs implementation?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
 ## AApproachVisualization
 
@@ -129,7 +129,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Dfs is too complex to understand"
 ✓ **CORRECT**: Dfs can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
+## Examples of Deployment
 
 This altechniqueattern is implemented in the following frameworks and technologies:
 

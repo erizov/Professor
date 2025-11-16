@@ -35,7 +35,7 @@ By the end of this lecture, students will be able to:
 
 1. Implement Activity Selection from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to tackle real-world problems
 
@@ -48,7 +48,7 @@ A computational method for activity selection. Solves specific problems in this 
 - **Space Complexity**: Varies
 - **Stability**: N/A
 
-Activity Selection is used in Greedy Algorithm.
+Activity Selection is used in Greedy Strategy.
 
 ## Implementation
 
@@ -77,7 +77,7 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Activity Selection from memory without looking at the code?
-6. What real-world problem could you solve using Activity Selection?
+6. What real-world problem could you tackle using Activity Selection?
 
 ### Debugging
 
@@ -99,7 +99,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Activity Selection
 3. Explain why Activity Selection has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Activity Selection from scratch using only the function signature
 5. Modify Activity Selection to handle edge cases (empty input, single element, etc.)
@@ -126,12 +126,12 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Activity Selection is the best solution for all problems"
-✓ **CORRECT**: Activity Selection has specemployc use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Activity Selection has specemploapplyuse cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Activity Selection is too complex to understand"
 ✓ **CORRECT**: Activity Selection can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in various frameworks and technologies.
+## Examples of ImplRealizationis atechniquepattern is implemented in various frameworks and technologies.
 
 *Note: Framework-specific examples will be added based on actual implementations.*
 

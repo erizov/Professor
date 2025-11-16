@@ -36,14 +36,14 @@ By the end of this lecture, students will be able to:
 
 1. Implement Merge Sort from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to tackle real-world problems
 6. Compare stability, in-place properties, and performance characteristics
 
 ### Short Description
 
-A stable, divide-and-conquer sorting algorithm that divides the array into halves, recursively sorts each half, then merges the sorted halves. Addresses sorting with guaranteed O(n log n) performance. Example: Sorting file sizes [1024, 512, 2048, 256] → [256, 512, 1024, 2048]. Operates by repeatedly splitting arrays until single elements remain, then merging them in sorted order.
+A stable, divide-and-conquer sorting strategy that divides the array into halves, recursively sorts each half, then merges the sorted halves. Addresses sorting with guaranteed O(n log n) performance. Example: Sorting file sizes [1024, 512, 2048, 256] → [256, 512, 1024, 2048]. Operates by repeatedly splitting arrays until single elements remain, then merging them in sorted order.
 
 **Key Characteristics:**
 - **Time Complexity**: O(n log n) guaranteed because it always divides the array exactly in half, creating a balanced recursion tree of depth log n.
@@ -58,7 +58,7 @@ Merge Sort is used in combination with:
 
 **Common Combinations:**
 - Employed together in production systems for optimal capability
-- Complementary algorithms that solve related problems
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
@@ -119,17 +119,17 @@ Merge:
 2. Identify the base case(s) in Merge Sort
 3. Explain why Merge Sort has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Merge Sort from scratch using only the function signature
 5. Modify Merge Sort to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the atechniques execution steps
 
 ### Level 3: Optimization (Advanced)
 
 7. Optimize Merge Sort for a specifapplyuse case (e.g., nearly sorted content)
 8. Implement a parallel or distributed version of Merge Sort
-9. Compare Merge Sort performance with alternative algorithms on large datasets
+9. Compare Merge Sort capability with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
 
@@ -141,7 +141,7 @@ Merge:
 
 - **External Sorting**: Sorting large files that don't fit in memory
 - **Version Control**: Git uses merge sort for three-way merges
-- **Inversion Counting**: Counting inversions in arrays (used in recommendation systems)
+- **Inversion Counting**: Counting inversions in arrays (employed in recommendation systems)
 
 ## Common Misconceptions
 
@@ -156,7 +156,7 @@ Merge:
 ### Spring Framework
 
 ```java
-// Spring Data - Merge Sort for stable sorting
+// Spring Content - Merge Sort for stable sorting
 public interface ProductRepository extends JpaRepository<Product, Long> {
  // Spring uses merge sort for stable, predictable ordering
  List<Product> findAllByCategoryOrderByNameAsc(String category);

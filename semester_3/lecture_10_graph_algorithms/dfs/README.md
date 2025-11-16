@@ -35,9 +35,9 @@ By the end of this lecture, students will be able to:
 
 1. Implement Dfs from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this approach vs. alternative approaches
+3. Identify when to employ this approach vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to tackle real-world problems
+5. Apply this strategy to tackle real-world problems
 6. Visualize graph traversal and understand edge cases
 
 ### Short Description
@@ -57,7 +57,7 @@ Dfs is used in combination with:
 
 **Common Combinations:**
 - Employed together in production systems for optimal performance
-- Complementary algorithms that solve related problems
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
@@ -73,7 +73,7 @@ Test your understanding with these questions:
 ### Comprehension
 
 1. Can you explain how Dfs works in your own words?
-2. What is the key insight or algorithm that makes Dfs efficient?
+2. What is the key insight or atechniquethat makes Dfs efficient?
 
 ### Analysis
 
@@ -105,7 +105,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Dfs
 3. Explain why Dfs has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Dfs from scratch using only the function signature
 5. Modify Dfs to handle edge cases (empty input, single element, etc.)
@@ -137,7 +137,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Dfs is too complex to understand"
 ✓ **CORRECT**: Dfs can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis aapproachpattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 

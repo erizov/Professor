@@ -36,13 +36,13 @@ By the end of this lecture, students will be able to:
 
 1. Implement Binary Search from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to tackle real-world problems
 
 ### Short Description
 
-An efficient search algorithm that finds the position of a target value within a sorted array by repeatedly dividing the search interval in half. Addresses quickly locating items in sorted collections. Example: Finding page 250 in a 500-page book by checking middle (250), then narrowing search. Operates by comparing target with middle element, eliminating half the search space each iteration.
+An efficient search strategy that finds the position of a target value within a sorted array by repeatedly dividing the search interval in half. Addresses quickly locating items in sorted collections. Example: Finding page 250 in a 500-page book by checking middle (250), then narrowing search. Operates by comparing target with middle element, eliminating half the search space each iteration.
 
 **Key Characteristics:**
 - **Time Complexity**: O(log n) because each comparison eliminates half of the remaining search space, requiring at most log₂(n) comparisons.
@@ -57,13 +57,13 @@ Binary Search is used in combination with:
 
 **Common Combinations:**
 - Employed together in production systems for optimal performance
-- Complementary algorithms that solve related problems
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
 
 - **Linear Search**: Binary search requires sorted data O(log n), linear search works on any content O(n)
-- **Interpolation Search**: Both require sorted data but interpolation assumes uniform distribution for better average case
+- **Interpolation Search**: Both require sorted content but interpolation assumes uniform distribution for better average case
 - **Ternary Search**: Divides into three parts instead of two, similar concept but different deployment
 
 ## Self-Assessment Questions
@@ -88,7 +88,7 @@ Test your understanding with these questions:
 ### Debugging
 
 7. What are the most common mistakes when implementing Binary Search?
-8. How would you test your Binary Search implementation?
+8. How would you test your Binary Search deployment?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
@@ -155,7 +155,7 @@ Step 3: Check remaining (index 3, value 7)
 
 ## Examples of Implementation
 
-This algorithm/pattern is implemented in the following frameworks and technologies:
+This atechniquepattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 

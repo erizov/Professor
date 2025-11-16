@@ -33,7 +33,7 @@ By the end of this lecture, students will be able to:
 
 1. Implement Backup Strategies from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to solve real-world problems
 
@@ -82,7 +82,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Backup Strategies?
 8. How would you test your Backup Strategies deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
 ## ATechniqueVisualization
 
@@ -97,7 +97,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Backup Strategies
 3. Explain why Backup Strategies has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Backup Strategies from scratch using only the function signature
 5. Modify Backup Strategies to handle edge cases (empty input, single element, etc.)
@@ -117,14 +117,14 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Backup Strategies is used in production systems
+- **Enterprise Applications**: Backup Strategies is employed in production systems
 - **Performance Optimization**: Applied to improve structure efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
 ❌ **WRONG**: "Backup Strategies is the best solution for all problems"
-✓ **CORRECT**: Backup Strategies has specemployc use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Backup Strategies has specemploapplyuse cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Backup Strategies is too complex to understand"
 ✓ **CORRECT**: Backup Strategies can be understood by breaking it down into smaller steps

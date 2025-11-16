@@ -35,13 +35,13 @@ By the end of this lecture, students will be able to:
 
 1. Implement Load Balancing from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this algorithm to tackle real-world problems
 
 ### Short Description
 
-A algorithm for distributing incoming network traffic across multiple servers to ensure reliability, capability, and availability. Addresses server overload, single points of failure, and traffic spikes. Example: Distributing web requests across 5 servers so no single server handles more than 20% of traffic. Operates by routing requests to available servers based on algorithms like round-robin, least connections, or geographic proximity.
+A approach for distributing incoming network traffic across multiple servers to ensure reliability, capability, and availability. Addresses server overload, single points of failure, and traffic spikes. Example: Distributing web requests across 5 servers so no single server handles more than 20% of traffic. Operates by routing requests to available servers based on algorithms like round-robin, least connections, or geographic proximity.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -61,7 +61,7 @@ Test your understanding with these questions:
 ### Comprehension
 
 1. Can you explain how Load Balancing works in your own words?
-2. What is the key insight or technique that makes Load Balancing efficient?
+2. What is the key insight or algorithm that makes Load Balancing efficient?
 
 ### Analysis
 
@@ -71,14 +71,14 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Load Balancing from memory without looking at the code?
-6. What real-world problem could you solve using Load Balancing?
+6. What real-world problem could you tackle using Load Balancing?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Load Balancing?
 8. How would you test your Load Balancing deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
 ## Algorithm Visualization
 
@@ -93,7 +93,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Load Balancing
 3. Explain why Load Balancing has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Load Balancing from scratch using only the function signature
 5. Modify Load Balancing to handle edge cases (empty input, single element, etc.)
@@ -103,7 +103,7 @@ Test your understanding with these questions:
 
 7. Optimize Load Balancing for a specifapplyuse case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Load Balancing
-9. Compare Load Balancing performance with alternative algorithms on large datasets
+9. Compare Load Balancing capability with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
 
@@ -125,7 +125,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Load Balancing is too complex to understand"
 ✓ **CORRECT**: Load Balancing can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis atechniquepattern is implemented in the following frameworks and technologies:
 
 ### Docker
 

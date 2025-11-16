@@ -36,14 +36,14 @@ By the end of this lecture, students will be able to:
 
 1. Implement Selection Sort from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to tackle real-world problems
 6. Compare stability, in-place properties, and performance characteristics
 
 ### Short Description
 
-A sorting algorithm that finds the minimum element from the unsorted portion and places it at the beginning, repeating until sorted. Addresses sorting with minimal memory writes. Example: Sorting test scores [88, 92, 75, 95] → [75, 88, 92, 95]. Operates by repeatedly finding the smallest remaining element and swapping it with the first unsorted element.
+A sorting strategy that finds the minimum element from the unsorted portion and places it at the beginning, repeating until sorted. Addresses sorting with minimal memory writes. Example: Sorting test scores [88, 92, 75, 95] → [75, 88, 92, 95]. Operates by repeatedly finding the smallest remaining element and swapping it with the first unsorted element.
 
 **Key Characteristics:**
 - **Time Complexity**: O(n²) because it must scan the remaining unsorted portion n times, each scan taking O(n) to find the minimum.
@@ -58,7 +58,7 @@ Selection Sort is used in combination with:
 
 **Common Combinations:**
 - Employed together in production systems for optimal performance
-- Complementary algorithms that solve related problems
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
@@ -106,7 +106,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Selection Sort
 3. Explain why Selection Sort has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Selection Sort from scratch using only the function signature
 5. Modify Selection Sort to handle edge cases (empty input, single element, etc.)
@@ -126,8 +126,8 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Selection Sort is used in production systems
-- **Performance Optimization**: Applied to improve system efficiency
+- **Enterprise Applications**: Selection Sort is employed in production systems
+- **Capability Optimization**: Applied to improve system efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
@@ -138,12 +138,12 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Selection Sort is too complex to understand"
 ✓ **CORRECT**: Selection Sort can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis atechniquepattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 
 ```java
-// Spring Data JPA - Sorting
+// Spring Content JPA - Sorting
 public interface UserRepository extends JpaRepository<User, Long> {
  List<User> findAll(Sort sort);
  // Spring uses efficient sorting algorithms for query results

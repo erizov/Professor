@@ -36,14 +36,14 @@ By the end of this lecture, students will be able to:
 
 1. Implement Insertion Sort from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to tackle real-world problems
 6. Compare stability, in-place properties, and performance characteristics
 
 ### Short Description
 
-A simple sorting algorithm that builds the final sorted array one element at a time by inserting each element into its correct position. Addresses sorting small datasets or nearly-sorted arrays efficiently. Example: Sorting playing cards in hand [7, 3, 9, 2] → [2, 3, 7, 9]. Operates by maintaining a sorted subarray and inserting each new element in the correct position.
+A simple sorting strategy that builds the final sorted array one element at a time by inserting each element into its correct position. Addresses sorting small datasets or nearly-sorted arrays efficiently. Example: Sorting playing cards in hand [7, 3, 9, 2] → [2, 3, 7, 9]. Operates by maintaining a sorted subarray and inserting each new element in the correct position.
 
 **Key Characteristics:**
 - **Time Complexity**: O(n²) worst case because each element may need to be compared with all previous elements, but O(n) for nearly sorted arrays.
@@ -58,7 +58,7 @@ Insertion Sort is used in combination with:
 
 **Common Combinations:**
 - Employed together in production systems for optimal performance
-- Complementary algorithms that solve related problems
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
@@ -106,7 +106,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Insertion Sort
 3. Explain why Insertion Sort has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Insertion Sort from scratch using only the function signature
 5. Modify Insertion Sort to handle edge cases (empty input, single element, etc.)
@@ -116,7 +116,7 @@ Test your understanding with these questions:
 
 7. Optimize Insertion Sort for a specifapplyuse case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Insertion Sort
-9. Compare Insertion Sort performance with alternative algorithms on large datasets
+9. Compare Insertion Sort capability with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
 
@@ -126,7 +126,7 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Insertion Sort is used in production systems
+- **Enterprise Applications**: Insertion Sort is employed in production systems
 - **PEffectivenessOptimization**: Applied to improve system efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
@@ -138,7 +138,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Insertion Sort is too complex to understand"
 ✓ **CORRECT**: Insertion Sort can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis atechniquepattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 

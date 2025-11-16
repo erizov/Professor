@@ -35,7 +35,7 @@ By the end of this lecture, students will be able to:
 
 1. Implement Actor Critic from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this algorithm to tackle real-world problems
 
@@ -84,14 +84,14 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Actor Critic from memory without looking at the code?
-6. What real-world problem could you solve using Actor Critic?
+6. What real-world problem could you tackle using Actor Critic?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Actor Critic?
 8. How would you test your Actor Critic deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
 ## ATechniqueVisualization
 
@@ -106,7 +106,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Actor Critic
 3. Explain why Actor Critic has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Actor Critic from scratch using only the function signature
 5. Modify Actor Critic to handle edge cases (empty input, single element, etc.)
@@ -128,12 +128,12 @@ Test your understanding with these questions:
 
 - **Enterprise Applications**: Actor Critic is used in production systems
 - **Capability Optimization**: Applied to improve structure efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
 ❌ **WRONG**: "Actor Critic is the best solution for all problems"
-✓ **CORRECT**: Actor Critic has specemployc use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Actor Critic has specemploapplyuse cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Actor Critic is too complex to understand"
 ✓ **CORRECT**: Actor Critic can be understood by breaking it down into smaller steps

@@ -35,9 +35,9 @@ By the end of this lecture, students will be able to:
 
 1. Implement Kmp from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this approach vs. alternative approaches
+3. Identify when to employ this approach vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to tackle real-world problems
+5. Apply this strategy to tackle real-world problems
 
 ### Short Description
 
@@ -77,7 +77,7 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Kmp from memory without looking at the code?
-6. What real-world problem could you solve using Kmp?
+6. What real-world problem could you tackle using Kmp?
 
 ### Debugging
 
@@ -86,7 +86,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this aapproach
 
-## Algorithm Visualization
+## ATechniqueVisualization
 
 *Visual diagram for Kmp would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -99,7 +99,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Kmp
 3. Explain why Kmp has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Kmp from scratch using only the function signature
 5. Modify Kmp to handle edge cases (empty input, single element, etc.)
@@ -143,5 +143,5 @@ Pattern pattern = Pattern.compile("user-.*");
 // KMP alapproachor streamlined pattern matching
 ```
 
-**Purpose**: Apache Kafka uses this pattern for event streaming, message queuing, and distributed system communication.
+**Purpose**: Apache Kafka uses this pattern for event streaming, message queuing, and distributed structure communication.
 

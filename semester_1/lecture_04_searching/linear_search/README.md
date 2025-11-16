@@ -36,13 +36,13 @@ By the end of this lecture, students will be able to:
 
 1. Implement Linear Search from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to tackle real-world problems
 
 ### Short Description
 
-A simple search algorithm that sequentially checks each element in a list until the target is found or the list ends. Addresses finding elements in unsorted collections. Example: Finding a name in an unsorted phone directory by checking each entry sequentially. Operates by iterating through elements one by one until match is found or end is reached.
+A simple search strategy that sequentially checks each element in a list until the target is found or the list ends. Addresses finding elements in unsorted collections. Example: Finding a name in an unsorted phone directory by checking each entry sequentially. Operates by iterating through elements one by one until match is found or end is reached.
 
 **Key Characteristics:**
 - **Time Complexity**: O(n) because in the worst case, it must examine every element in the array until finding the target or reaching the end.
@@ -57,12 +57,12 @@ Linear Search is used in combination with:
 
 **Common Combinations:**
 - Employed together in production systems for optimal performance
-- Complementary algorithms that solve related problems
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
 
-- **Binary Search**: Linear search works on unsorted content O(n), binary search requires sorted data O(log n)
+- **Binary Search**: Linear search works on unsorted content O(n), binary search requires sorted content O(log n)
 - **Interpolation Search**: Both search but interpolation assumes uniform distribution, linear search makes no assumptions
 - **Hash Table Lookup**: Hash tables provide O(1) average lookup, linear search is O(n) sequential
 
@@ -105,7 +105,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Linear Search
 3. Explain why Linear Search has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Linear Search from scratch using only the function signature
 5. Modify Linear Search to handle edge cases (empty input, single element, etc.)
@@ -125,7 +125,7 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Linear Search is used in production systems
+- **Enterprise Applications**: Linear Search is employed in production systems
 - **Capability Optimization**: Applied to improve system efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
@@ -137,7 +137,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Linear Search is too complex to understand"
 ✓ **CORRECT**: Linear Search can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis atechniquepattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 

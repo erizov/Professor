@@ -36,7 +36,7 @@ By the end of this lecture, students will be able to:
 
 1. Implement Canary CI from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this algorithm to tackle real-world problems
 
@@ -70,7 +70,7 @@ Canary CI is used in combination with:
 
 **Common Combinations:**
 - Employed together in production systems for optimal capability
-- Complementary algorithms that solve related problems
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
@@ -103,7 +103,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Canary CI?
 8. How would you test your Canary CI deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
 ## ATechniqueVisualization
 
@@ -118,7 +118,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Canary CI
 3. Explain why Canary CI has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Canary CI from scratch using only the function signature
 5. Modify Canary CI to handle edge cases (empty input, single element, etc.)
@@ -128,7 +128,7 @@ Test your understanding with these questions:
 
 7. Optimize Canary CI for a specifapplyuse case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Canary CI
-9. Compare Canary CI performance with alternative algorithms on large datasets
+9. Compare Canary CI capability with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
 
@@ -138,9 +138,9 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Canary CI is used in production systems
+- **Enterprise Applications**: Canary CI is employed in production systems
 - **PEffectivenessOptimization**: Applied to improve structure efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 

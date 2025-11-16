@@ -35,7 +35,7 @@ By the end of this lecture, students will be able to:
 
 1. Implement Chaining from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this algorithm to tackle real-world problems
 
@@ -48,7 +48,7 @@ A computational method for chaining. Solves specific problems in this domain thr
 - **Space Complexity**: Varies
 - **Stability**: N/A
 
-Collision Resolution: Chaining is used in Data Structure.
+Collision Resolution: Chaining is used in Content Structure.
 
 ## Implementation
 
@@ -77,7 +77,7 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Chaining from memory without looking at the code?
-6. What real-world problem could you solve using Chaining?
+6. What real-world problem could you tackle using Chaining?
 
 ### Debugging
 
@@ -86,7 +86,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Chaining would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -99,7 +99,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Chaining
 3. Explain why Chaining has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Chaining from scratch using only the function signature
 5. Modify Chaining to handle edge cases (empty input, single element, etc.)
@@ -126,7 +126,7 @@ Test your understanding with these questions:
 ## Common Misconceptions
 
 ❌ **WRONG**: "Chaining is the best solution for all problems"
-✓ **CORRECT**: Chaining has specemployc use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Chaining has specemploapplyuse cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Chaining is too complex to understand"
 ✓ **CORRECT**: Chaining can be understood by breaking it down into smaller steps

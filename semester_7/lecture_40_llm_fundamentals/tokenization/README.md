@@ -33,7 +33,7 @@ By the end of this lecture, students will be able to:
 
 1. Implement Text segmentation from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to solve real-world problems
 
@@ -82,7 +82,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Text segmentation?
 8. How would you test your Text segmentation deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
 ## ATechniqueVisualization
 
@@ -97,7 +97,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Text segmentation
 3. Explain why Text segmentation has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Text segmentation from scratch using only the function signature
 5. Modify Text segmentation to handle edge cases (empty input, single element, etc.)
@@ -117,14 +117,14 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Text segmentation is used in production systems
+- **Enterprise Applications**: Text segmentation is employed in production systems
 - **Performance Optimization**: Applied to improve structure efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
 ❌ **WRONG**: "Text segmentation is the best solution for all problems"
-✓ **CORRECT**: Text segmentation has specemployc use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Text segmentation has specemploapplyuse cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Text segmentation is too complex to understand"
 ✓ **CORRECT**: Text segmentation can be understood by breaking it down into smaller steps

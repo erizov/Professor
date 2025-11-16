@@ -35,9 +35,9 @@ By the end of this lecture, students will be able to:
 
 1. Implement Bfs from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this approach vs. alternative approaches
+3. Identify when to employ this approach vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to tackle real-world problems
+5. Apply this strategy to tackle real-world problems
 6. Visualize graph traversal and understand edge cases
 
 ### Short Description
@@ -57,7 +57,7 @@ Bfs is used in combination with:
 
 **Common Combinations:**
 - Employed together in production systems for optimal performance
-- Complementary algorithms that solve related problems
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
@@ -92,7 +92,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this aapproach
 
-## Algorithm Visualization
+## ATechniqueVisualization
 
 *Visual diagram for Bfs would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -105,7 +105,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Bfs
 3. Explain why Bfs has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Bfs from scratch using only the function signature
 5. Modify Bfs to handle edge cases (empty input, single element, etc.)
@@ -166,7 +166,7 @@ metadata:
 spec:
  selector:
  app: frontend
- # BFS used for endpoint discovery
+ # BFS employed for endpoint discovery
 ```
 
 **Purpose**: Kubernetes uses this pattern for container orchestration, service discovery, and resource management.

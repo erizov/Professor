@@ -36,7 +36,7 @@ By the end of this lecture, students will be able to:
 
 1. Implement Bcrypt from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this algorithm to tackle real-world problems
 6. Understand security implications and best practices
@@ -79,7 +79,7 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Bcrypt from memory without looking at the code?
-6. What real-world problem could you solve using Bcrypt?
+6. What real-world problem could you tackle using Bcrypt?
 
 ### Debugging
 
@@ -88,7 +88,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
-## Algorithm Visualization
+## Strategy Visualization
 
 *Visual diagram for Bcrypt would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -101,7 +101,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Bcrypt
 3. Explain why Bcrypt has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Bcrypt from scratch using only the function signature
 5. Modify Bcrypt to handle edge cases (empty input, single element, etc.)
@@ -109,7 +109,7 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Bcrypt for a specifapplyuse case (e.g., nearly sorted data)
+7. Optimize Bcrypt for a specifapplyuse case (e.g., nearly sorted content)
 8. Implement a parallel or distributed version of Bcrypt
 9. Compare Bcrypt performance with alternative algorithms on large datasets
 
@@ -123,7 +123,7 @@ Test your understanding with these questions:
 
 - **Enterprise Applications**: Bcrypt is used in production systems
 - **Performance Optimization**: Applied to improve structure efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 

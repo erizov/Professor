@@ -35,14 +35,14 @@ By the end of this lecture, students will be able to:
 
 1. Implement Leader Election from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to tackle real-world problems
 6. Recognize when this pattern is appropriate in system design
 
 ### Short Description
 
-A distributed computing algorithm that selects a single node to coordinate activities in a cluster, ensuring only one leader exists at a time. Addresses coordination in distributed systems, avoiding split-brain scenarios, and centralized decision-making. Example: Electing a leader in a database cluster to handle write operations, preventing conflicts. Operates by nodes participating in election process, with majority vote determining leader, and automatic re-election if leader fails.
+A distributed computing strategy that selects a single node to coordinate activities in a cluster, ensuring only one leader exists at a time. Addresses coordination in distributed systems, avoiding split-brain scenarios, and centralized decision-making. Example: Electing a leader in a database cluster to handle write operations, preventing conflicts. Operates by nodes participating in election process, with majority vote determining leader, and automatic re-election if leader fails.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -62,8 +62,8 @@ Leader Election is employed in combination with:
 - **Factory**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
-- Complementary algorithms that solve related problems
+- Employed together in production systems for optimal performance
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
@@ -111,11 +111,11 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Leader Election
 3. Explain why Leader Election has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Leader Election from scratch using only the function signature
 5. Modify Leader Election to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the atechniques execution steps
 
 ### Level 3: Optimization (Advanced)
 
@@ -132,7 +132,7 @@ Test your understanding with these questions:
 ## Real-World Applications
 
 - **Enterprise Applications**: Leader Electionappliedused in production systems
-- **Capability Optimization**: Applied to improve system efficiency
+- **Capability Optimization**: Applied to improve structure efficiency
 -Architecturetem Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions

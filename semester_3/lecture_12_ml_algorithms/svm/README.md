@@ -29,13 +29,13 @@ By the end of this lecture, students will be able to:
 
 1. Implement Svm from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to tackle real-world problems
 
 ### Short Description
 
-Support Vector Machine, a categorization algorithm that finds the optimal hyperplane separating classes with maximum margin. Addresses text categorization, image recognition, and non-linear categorization with kernel tricks. Example: Classifying emails as spam or not by finding the best boundary in high-dimensional feature space. Operates by identifying support vectors (critical training examples) that define the optimal separating hyperplane.
+Support Vector Machine, a categorization strategy that finds the optimal hyperplane separating classes with maximum margin. Addresses text categorization, image recognition, and non-linear categorization with kernel tricks. Example: Classifying emails as spam or not by finding the best boundary in high-dimensional feature space. Operates by identifying support vectors (critical training examples) that define the optimal separating hyperplane.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -50,7 +50,7 @@ Svm is used in combination with:
 
 **Common Combinations:**
 - Employed together in production systems for optimal performance
-- Complementary algorithms that solve related problems
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
@@ -118,7 +118,7 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Svm is used in production systems
+- **Enterprise Applications**: Svm is employed in production systems
 - **Capability Optimization**: Applied to improve system efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
@@ -130,9 +130,9 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Svm is too complex to understand"
 ✓ **CORRECT**: Svm can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
+## Examples of Deployment
 
-This algorithm/pattern is implemented in the following frameworks and technologies:
+This atechniquepattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 

@@ -37,13 +37,13 @@ By the end of this lecture, students will be able to:
 
 1. Implement Svm from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to tackle real-world problems
 
 ### Short Description
 
-Support Vector Machine, a categorization algorithm that finds the optimal hyperplane separating classes with maximum margin. Addresses text categorization, image recognition, and non-linear categorization with kernel tricks. Example: Classifying emails as spam or not by finding the best boundary in high-dimensional feature space. Operates by identifying support vectors (critical training examples) that define the optimal separating hyperplane.
+Support Vector Machine, a categorization strategy that finds the optimal hyperplane separating classes with maximum margin. Addresses text categorization, image recognition, and non-linear categorization with kernel tricks. Example: Classifying emails as spam or not by finding the best boundary in high-dimensional feature space. Operates by identifying support vectors (critical training examples) that define the optimal separating hyperplane.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -63,8 +63,8 @@ Svm is employed in combination with:
 - **Linear Value estimation**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
-- Complementary algorithms that solve related problems
+- Employed together in production systems for optimal performance
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
@@ -112,7 +112,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Svm
 3. Explain why Svm has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Svm from scratch using only the function signature
 5. Modify Svm to handle edge cases (empty input, single element, etc.)
@@ -144,7 +144,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Svm is too complex to understand"
 ✓ **CORRECT**: Svm can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis atechniquepattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 

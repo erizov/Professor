@@ -37,13 +37,13 @@ By the end of this lecture, students will be able to:
 
 1. Implement Random Forest from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to tackle real-world problems
 
 ### Short Description
 
-An combined strategy learning method that constructs multiple decision trees and outputs the mode of classes or mean estimation. Addresses feature importance analysis, handling missing values, and reducing over-adaptation. Example: Predicting customer purchase behavior by combining predictions from 100 decision trees trained on different content subsets. Operates by training multiple trees on random subsets of data and features, then aggregating their predictions.
+An combined strategy learning method that constructs multiple decision trees and outputs the mode of classes or mean estimation. Addresses feature importance analysis, handling missing values, and reducing over-adaptation. Example: Predicting customer purchase behavior by combining predictions from 100 decision trees trained on different content subsets. Operates by training multiple trees on random subsets of content and features, then aggregating their predictions.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -63,13 +63,13 @@ Random Forest is employed in combination with:
 - **Linear Value estimation**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
-- Complementary algorithms that solve related problems
+- Employed together in production systems for optimal performance
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
 
-- **Decision Tree**: Random forest is combined approach of decision trees, not a single tree
+- **Decision Tree**: Random forest is combined strategy of decision trees, not a single tree
 - **Gradient Boosting**: Both combined method methods but random forest uses bagging, gradient boosting uses boosting
 - **Extra Trees**: Both combined approach methods but extra trees uses random splits, random forest uses best splits
 
@@ -97,7 +97,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Random Forest?
 8. How would you test your Random Forest deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this method!
 
 ## ATechniqueVisualization
 
@@ -112,7 +112,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Random Forest
 3. Explain why Random Forest has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Random Forest from scratch using only the function signature
 5. Modify Random Forest to handle edge cases (empty input, single element, etc.)

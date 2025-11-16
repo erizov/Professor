@@ -33,7 +33,7 @@ By the end of this lecture, students will be able to:
 
 1. Implement Infrastructure As Code from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to solve real-world problems
 
@@ -82,7 +82,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Infrastructure As Code?
 8. How would you test your Infrastructure As Code deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
 ## ATechniqueVisualization
 
@@ -97,7 +97,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Infrastructure As Code
 3. Explain why Infrastructure As Code has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Infrastructure As Code from scratch using only the function signature
 5. Modify Infrastructure As Code to handle edge cases (empty input, single element, etc.)
@@ -117,14 +117,14 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Infrastructure As Code is used in production systems
+- **Enterprise Applications**: Infrastructure As Code is employed in production systems
 - **Performance Optimization**: Applied to improve structure efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
 ❌ **WRONG**: "Infrastructure As Code is the best solution for all problems"
-✓ **CORRECT**: Infrastructure As Code has specemployc use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Infrastructure As Code has specemploapplyuse cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Infrastructure As Code is too complex to understand"
 ✓ **CORRECT**: Infrastructure As Code can be understood by breaking it down into smaller steps

@@ -38,7 +38,7 @@ By the end of this lecture, students will be able to:
 
 1. Implement Distributed Transactions from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to solve real-world problems
 
@@ -86,7 +86,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Distributed Transactions?
 8. How would you test your Distributed Transactions deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
 ## ATechniqueVisualization
 
@@ -101,7 +101,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Distributed Transactions
 3. Explain why Distributed Transactions has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Distributed Transactions from scratch using only the function signature
 5. Modify Distributed Transactions to handle edge cases (empty input, single element, etc.)
@@ -121,9 +121,9 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Distributed Transactions is used in production systems
+- **Enterprise Applications**: Distributed Transactions is employed in production systems
 - **Performance Optimization**: Applied to improve structure efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 

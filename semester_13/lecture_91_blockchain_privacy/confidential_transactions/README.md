@@ -38,7 +38,7 @@ By the end of this lecture, students will be able to:
 
 1. Implement Confidential Transactions from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this algorithm to solve real-world problems
 
@@ -88,7 +88,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
-## Algorithm Visualization
+## Approach Visualization
 
 *Visual diagram for Confidential Transactions would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -101,7 +101,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Confidential Transactions
 3. Explain why Confidential Transactions has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Confidential Transactions from scratch using only the function signature
 5. Modify Confidential Transactions to handle edge cases (empty input, single element, etc.)
@@ -109,7 +109,7 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Confidential Transactions for a specifapplyuse case (e.g., nearly sorted data)
+7. Optimize Confidential Transactions for a specifapplyuse case (e.g., nearly sorted content)
 8. Implement a parallel or distributed version of Confidential Transactions
 9. Compare Confidential Transactions performance with alternative algorithms on large datasets
 
@@ -121,9 +121,9 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Confidential Transactions is used in production systems
+- **Enterprise Applications**: Confidential Transactions is employed in production systems
 - **Performance Optimization**: Applied to improve structure efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 

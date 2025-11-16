@@ -35,14 +35,14 @@ By the end of this lecture, students will be able to:
 
 1. Implement Floyd Warshall from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this strategy vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this atechniqueto tackle real-world problems
 6. Visualize graph traversal and understand edge cases
 
 ### Short Description
 
-An algorithm that processes graph content structures, exploring relationships between vertices and edges. Addresses network analysis, path finding, and relationship mapping. Example: Finding the shortest route between cities on a road network. Operates by traversing vertices and edges, maintaining visited states, and applying graph theory algorithms to solve specific problems.
+An algorithm that processes graph content structures, exploring relationships between vertices and edges. Addresses network analysis, path finding, and relationship mapping. Example: Finding the shortest route between cities on a road network. Operates by traversing vertices and edges, maintaining visited states, and applying graph theory algorithms to tackle specific problems.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -64,7 +64,7 @@ Floyd Warshall is used in combination with:
 
 - **Dijkstra's AApproach*: Floyd-Warshall finds all-pairs shortest paths, Dijkstra is single-source
 - **Bellman-Ford**: Floyd-Warshall finds all-pairs, Bellman-Ford is single-source
-- **Johnson's Algorithm**: Both find all-pairs but Johnson's uses Dijkstra as subroutine, Floyd-Warshall uses dynamic programming
+- **Johnson's ATechnique*: Both find all-pairs but Johnson's uses Dijkstra as subroutine, Floyd-Warshall uses dynamic programming
 
 ## Self-Assessment Questions
 
@@ -104,7 +104,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Floyd Warshall
 3. Explain why Floyd Warshall has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Floyd Warshall from scratch using only the function signature
 5. Modify Floyd Warshall to handle edge cases (empty input, single element, etc.)
@@ -112,7 +112,7 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Floyd Warshall for a specifapplyuse case (e.g., nearly sorted data)
+7. Optimize Floyd Warshall for a specifapplyuse case (e.g., nearly sorted content)
 8. Implement a parallel or distributed version of Floyd Warshall
 9. Compare Floyd Warshall performance with alternative algorithms on large datasets
 
@@ -124,7 +124,7 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Floyd Warshall is used in production systems
+- **Enterprise Applications**: Floyd Warshall is employed in production systems
 - **Capability Optimization**: Applied to improve system efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
@@ -136,7 +136,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Floyd Warshall is too complex to understand"
 ✓ **CORRECT**: Floyd Warshall can be understood by breaking it down into smaller steps
 
-## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis aapproachpattern is implemented in the following frameworks and technologies:
 
 ### Kubernetes
 

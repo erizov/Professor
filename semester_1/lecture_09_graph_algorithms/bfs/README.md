@@ -27,14 +27,14 @@ By the end of this lecture, students will be able to:
 
 1. Implement Bfs from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to tackle real-world problems
 6. Visualize graph traversal and understand edge cases
 
 ### Short Description
 
-A graph traversal algorithm that explores all vertices at the current depth level before moving to vertices at the next depth level. Addresses finding shortest paths in unweighted graphs, social network analysis, and web crawling. Example: Finding the minimum number of connections between two LinkedIn users. Operates by using a queue to process vertices level by level, ensuring shortest path discovery.
+A graph traversal strategy that explores all vertices at the current depth level before moving to vertices at the next depth level. Addresses finding shortest paths in unweighted graphs, social network analysis, and web crawling. Example: Finding the minimum number of connections between two LinkedIn users. Operates by using a queue to process vertices level by level, ensuring shortest path discovery.
 
 **Key Characteristics:**
 - **Time Complexity**: O(V + E) where V is vertices and E is edges, because each vertex and edge is visited exactly once.
@@ -49,7 +49,7 @@ Bfs is used in combination with:
 
 **Common Combinations:**
 - Employed together in production systems for optimal performance
-- Complementary algorithms that solve related problems
+- Complementary algorithms that tackle related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
@@ -101,7 +101,7 @@ Test your understanding with these questions:
 
 4. Implement Bfs from scratch using only the function signature
 5. Modify Bfs to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the atechniques execution steps
 
 ### Level 3: Optimization (Advanced)
 
@@ -129,7 +129,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Bfs is too complex to understand"
 ✓ **CORRECT**: Bfs can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
+## Examples of Deployment
 
 This altechniqueattern is implemented in the following frameworks and technologies:
 
@@ -160,7 +160,7 @@ metadata:
 spec:
  selector:
  app: frontend
- # BFS used for endpoint discovery
+ # BFS employed for endpoint discovery
 ```
 
 **Purpose**: Kubernetes uses this pattern for container orchestration, service discovery, and resource management.

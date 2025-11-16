@@ -27,14 +27,14 @@ By the end of this lecture, students will be able to:
 
 1. Implement Floyd Warshall from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this approach to tackle real-world problems
 6. Visualize graph traversal and understand edge cases
 
 ### Short Description
 
-An algorithm that processes graph content structures, exploring relationships between vertices and edges. Addresses network analysis, path finding, and relationship mapping. Example: Finding the shortest route between cities on a road network. Operates by traversing vertices and edges, maintaining visited states, and applying graph theory algorithms to solve specific problems.
+An strategy that processes graph content structures, exploring relationships between vertices and edges. Addresses network analysis, path finding, and relationship mapping. Example: Finding the shortest route between cities on a road network. Operates by traversing vertices and edges, maintaining visited states, and applying graph theory algorithms to tackle specific problems.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -84,7 +84,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this aapproach
 
-## Algorithm Visualization
+## ATechniqueVisualization
 
 *Visual diagram for Floyd Warshall would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -105,7 +105,7 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Floyd Warshall for a specifapplyuse case (e.g., nearly sorted data)
+7. Optimize Floyd Warshall for a specifapplyuse case (e.g., nearly sorted content)
 8. Implement a parallel or distributed version of Floyd Warshall
 9. Compare Floyd Warshall performance with alternative algorithms on large datasets
 
@@ -117,7 +117,7 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Floyd Warshall is used in production systems
+- **Enterprise Applications**: Floyd Warshall is employed in production systems
 - **Capability Optimization**: Applied to improve system efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
@@ -129,7 +129,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Floyd Warshall is too complex to understand"
 ✓ **CORRECT**: Floyd Warshall can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
+## Examples of Deployment
 
 This algorithm/pattern is implemented in the following frameworks and technologies:
 

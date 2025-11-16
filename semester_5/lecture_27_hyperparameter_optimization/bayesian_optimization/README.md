@@ -35,7 +35,7 @@ By the end of this lecture, students will be able to:
 
 1. Implement Bayesian Optimization from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to employ this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this algorithm to tackle real-world problems
 
@@ -84,14 +84,14 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Bayesian Optimization from memory without looking at the code?
-6. What real-world problem could you solve using Bayesian Optimization?
+6. What real-world problem could you tackle using Bayesian Optimization?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Bayesian Optimization?
 8. How would you test your Bayesian Optimization deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
 
 ## ATechniqueVisualization
 
@@ -106,7 +106,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Bayesian Optimization
 3. Explain why Bayesian Optimization has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Bayesian Optimization from scratch using only the function signature
 5. Modify Bayesian Optimization to handle edge cases (empty input, single element, etc.)
@@ -128,12 +128,12 @@ Test your understanding with these questions:
 
 - **Enterprise Applications**: Bayesian Optimization is used in production systems
 - **Capability Optimization**: Applied to improve structure efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
 ❌ **WRONG**: "Bayesian Optimization is the best solution for all problems"
-✓ **CORRECT**: Bayesian Optimization has specemployc use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Bayesian Optimization has specemploapplyuse cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Bayesian Optimization is too complex to understand"
 ✓ **CORRECT**: Bayesian Optimization can be understood by breaking it down into smaller steps
