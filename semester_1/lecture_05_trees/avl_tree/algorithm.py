@@ -8,6 +8,9 @@ subtrees differ by at most 1.
 """
 
 import sys
+
+# Setup logging
+logger = logging.getLogger(__name__)
 from pathlib import Path
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
@@ -15,6 +18,8 @@ from framework.performance_timer import PerformanceTimer
 
 from typing import Optional, List, Any
 from framework.logging_utils import get_logger
+import logging
+
 logger = get_logger(__name__)
 
 

@@ -177,6 +177,106 @@ Find shortest path from A to all nodes.
 - Final distances: A=0, B=3, C=1, D=5
 
 **Key Insight**: Always process the closest unvisited vertex first, guaranteeing shortest paths.""",
+
+    "heap_sort": """## Worked Example: Sorting [5, 2, 8, 1, 9] with Heap Sort
+
+**Step 1: Build Max Heap**
+- Array: [5, 2, 8, 1, 9]
+- Heapify from bottom up:
+  - Index 2 (8): Already max
+  - Index 1 (2): Swap with 9 → [5, 9, 8, 1, 2]
+  - Index 0 (5): Swap with 9 → [9, 5, 8, 1, 2]
+- Max heap: [9, 5, 8, 1, 2]
+
+**Step 2: Extract Max (9)**
+- Swap 9 with last element: [2, 5, 8, 1, 9]
+- Heapify: [8, 5, 2, 1, 9]
+- Sorted: [9]
+
+**Step 3: Extract Max (8)**
+- Swap 8 with last: [1, 5, 2, 8, 9]
+- Heapify: [5, 1, 2, 8, 9]
+- Sorted: [8, 9]
+
+**Step 4: Continue**
+- Extract 5: [2, 1, 5, 8, 9]
+- Extract 2: [1, 2, 5, 8, 9]
+- Extract 1: [1, 2, 5, 8, 9]
+- Final: [1, 2, 5, 8, 9]
+
+**Key Insight**: Build max heap, then repeatedly extract maximum and heapify remaining elements.""",
+
+    "dfs": """## Worked Example: DFS on Graph
+
+Graph:
+```
+     A
+    / \\
+   B   C
+  / \\ / \\
+ D   E   F
+```
+
+**Step 1: Start at A**
+- Stack: [A]
+- Visited: {A}
+- Result: [A]
+
+**Step 2: Process A**
+- Neighbors: B, C
+- Push C, then B: Stack: [B, C]
+- Visited: {A, B, C}
+- Result: [A, B]
+
+**Step 3: Process B**
+- Neighbors: D, E (A already visited)
+- Push E, then D: Stack: [D, E, C]
+- Visited: {A, B, D, E, C}
+- Result: [A, B, D]
+
+**Step 4: Process D**
+- No unvisited neighbors
+- Pop D: Stack: [E, C]
+- Result: [A, B, D, E]
+
+**Step 5: Process E**
+- Neighbors all visited
+- Pop E: Stack: [C]
+- Result: [A, B, D, E, C]
+
+**Step 6: Process C**
+- Neighbor F: Stack: [F, C]
+- Visited: {A, B, D, E, C, F}
+- Result: [A, B, D, E, C, F]
+
+**Key Insight**: DFS explores as deep as possible before backtracking, using a stack (recursion) to track path.""",
+
+    "knapsack": """## Worked Example: 0/1 Knapsack
+
+Items: [(weight, value)] = [(2, 10), (3, 15), (4, 20), (5, 25)]
+Capacity: 7
+
+**DP Table Construction:**
+
+```
+        Capacity: 0  1  2  3  4  5  6  7
+Item 0 (2,10):   0  0 10 10 10 10 10 10
+Item 1 (3,15):   0  0 10 15 15 25 25 25
+Item 2 (4,20):   0  0 10 15 20 25 30 35
+Item 3 (5,25):   0  0 10 15 20 25 30 35
+```
+
+**Step-by-step:**
+- Item 0: Can fit (weight 2), value 10
+- Item 1: Compare (take item 1: 15) vs (item 0: 10) → 15
+- Item 2: Compare (take item 2: 20) vs (item 0+1: 25) → 25
+- Item 3: Compare (take item 3: 25) vs (item 0+2: 30) → 30
+
+**Optimal Solution:**
+- Items: Item 0 (2,10) + Item 2 (4,20) = weight 6, value 30
+- Or: Item 1 (3,15) + Item 2 (4,20) = weight 7, value 35
+
+**Key Insight**: Build table considering each item and capacity, choosing max value between taking or skipping item.""",
 }
 
 def get_worked_example(algorithm_name: str) -> Optional[str]:
@@ -231,9 +331,19 @@ def main():
     top_algorithms = [
         ("semester_1/lecture_02_efficient_sorting/quick_sort", "quick_sort"),
         ("semester_1/lecture_02_efficient_sorting/merge_sort", "merge_sort"),
+        ("semester_1/lecture_02_efficient_sorting/heap_sort", "heap_sort"),
         ("semester_1/lecture_04_searching/binary_search", "binary_search"),
         ("semester_1/lecture_09_graph_algorithms/bfs", "bfs"),
+        ("semester_1/lecture_09_graph_algorithms/dfs", "dfs"),
         ("semester_1/lecture_09_graph_algorithms/dijkstra", "dijkstra"),
+        ("semester_1/lecture_10_dynamic_programming/knapsack", "knapsack"),
+        ("semester_1/lecture_10_dynamic_programming/edit_distance", "edit_distance"),
+        ("semester_1/lecture_10_dynamic_programming/longest_common_subsequence", "longest_common_subsequence"),
+        ("semester_1/lecture_11_string_algorithms/kmp", "kmp"),
+        ("semester_1/lecture_01_sorting_fundamentals/bubble_sort", "bubble_sort"),
+        ("semester_1/lecture_01_sorting_fundamentals/insertion_sort", "insertion_sort"),
+        ("semester_1/lecture_05_trees/binary_search_tree", "binary_search_tree"),
+        ("semester_1/lecture_05_trees/avl_tree", "avl_tree"),
     ]
     
     for algo_path, algo_name in top_algorithms:

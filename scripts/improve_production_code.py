@@ -11,13 +11,32 @@ from typing import List, Optional
 
 ROOT = Path(__file__).resolve().parents[1]
 
-# Algorithms to improve (top 20)
+# Algorithms to improve (top 50 - first batch)
 ALGORITHMS_TO_IMPROVE = [
+    # Sorting
     "semester_1/lecture_02_efficient_sorting/quick_sort",
     "semester_1/lecture_02_efficient_sorting/merge_sort",
+    "semester_1/lecture_02_efficient_sorting/heap_sort",
+    "semester_1/lecture_01_sorting_fundamentals/bubble_sort",
+    "semester_1/lecture_01_sorting_fundamentals/insertion_sort",
+    "semester_1/lecture_01_sorting_fundamentals/selection_sort",
+    # Searching
     "semester_1/lecture_04_searching/binary_search",
+    "semester_1/lecture_04_searching/linear_search",
+    # Graphs
     "semester_1/lecture_09_graph_algorithms/bfs",
+    "semester_1/lecture_09_graph_algorithms/dfs",
     "semester_1/lecture_09_graph_algorithms/dijkstra",
+    # Trees
+    "semester_1/lecture_05_trees/binary_search_tree",
+    "semester_1/lecture_05_trees/avl_tree",
+    # Dynamic Programming
+    "semester_1/lecture_10_dynamic_programming/knapsack",
+    "semester_1/lecture_10_dynamic_programming/edit_distance",
+    # Design Patterns
+    "semester_2/lecture_06_creational_patterns/singleton",
+    "semester_2/lecture_06_creational_patterns/factory",
+    # Add more as needed
 ]
 
 def improve_python_code(py_path: Path) -> bool:

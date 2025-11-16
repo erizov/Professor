@@ -98,7 +98,35 @@ Test your understanding with these questions:
 *Visual diagram for Heap Sort would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-## Practice Exercises
+## Worked Example: Sorting [5, 2, 8, 1, 9] with Heap Sort
+
+**Step 1: Build Max Heap**
+- Array: [5, 2, 8, 1, 9]
+- Heapify from bottom up:
+  - Index 2 (8): Already max
+  - Index 1 (2): Swap with 9 → [5, 9, 8, 1, 2]
+  - Index 0 (5): Swap with 9 → [9, 5, 8, 1, 2]
+- Max heap: [9, 5, 8, 1, 2]
+
+**Step 2: Extract Max (9)**
+- Swap 9 with last element: [2, 5, 8, 1, 9]
+- Heapify: [8, 5, 2, 1, 9]
+- Sorted: [9]
+
+**Step 3: Extract Max (8)**
+- Swap 8 with last: [1, 5, 2, 8, 9]
+- Heapify: [5, 1, 2, 8, 9]
+- Sorted: [8, 9]
+
+**Step 4: Continue**
+- Extract 5: [2, 1, 5, 8, 9]
+- Extract 2: [1, 2, 5, 8, 9]
+- Extract 1: [1, 2, 5, 8, 9]
+- Final: [1, 2, 5, 8, 9]
+
+**Key Insight**: Build max heap, then repeatedly extract maximum and heapify remaining elements.
+
+
 
 ### Level 1: Understanding (Beginner)
 

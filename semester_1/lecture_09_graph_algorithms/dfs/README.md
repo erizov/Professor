@@ -89,7 +89,52 @@ Test your understanding with these questions:
 *Visual diagram for Dfs would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-## Practice Exercises
+## Worked Example: DFS on Graph
+
+Graph:
+```
+     A
+    / \
+   B   C
+  / \ / \
+ D   E   F
+```
+
+**Step 1: Start at A**
+- Stack: [A]
+- Visited: {A}
+- Result: [A]
+
+**Step 2: Process A**
+- Neighbors: B, C
+- Push C, then B: Stack: [B, C]
+- Visited: {A, B, C}
+- Result: [A, B]
+
+**Step 3: Process B**
+- Neighbors: D, E (A already visited)
+- Push E, then D: Stack: [D, E, C]
+- Visited: {A, B, D, E, C}
+- Result: [A, B, D]
+
+**Step 4: Process D**
+- No unvisited neighbors
+- Pop D: Stack: [E, C]
+- Result: [A, B, D, E]
+
+**Step 5: Process E**
+- Neighbors all visited
+- Pop E: Stack: [C]
+- Result: [A, B, D, E, C]
+
+**Step 6: Process C**
+- Neighbor F: Stack: [F, C]
+- Visited: {A, B, D, E, C, F}
+- Result: [A, B, D, E, C, F]
+
+**Key Insight**: DFS explores as deep as possible before backtracking, using a stack (recursion) to track path.
+
+
 
 ### Level 1: Understanding (Beginner)
 

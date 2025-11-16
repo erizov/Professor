@@ -4,6 +4,8 @@
 
 from typing import List, TypeVar
 from framework.logging_utils import get_logger
+import logging
+
 logger = get_logger(__name__)
 
 T = TypeVar('T')
@@ -47,7 +49,24 @@ def main():
     logger.info(f"Sorted:   {result}")
     
     logger.info("\nComplexity: O(n²) worst, O(n) best, O(1) space")
-
+    try:
+            """Demonstration."""
+            logger.info("=" * 70)
+            logger.info("INSERTION SORT")
+            logger.info("=" * 70)
+            
+            data = [64, 34, 25, 12, 22, 11, 90]
+            logger.info(f"Original: {data}")
+            result = insertion_sort(data.copy())
+            logger.info(f"Sorted:   {result}")
+            
+            logger.info("\nComplexity: O(n²) worst, O(n) best, O(1) space")
+        
+        
+        
+    except Exception as e:
+        logger.error(f"Error: {e}", exc_info=True)
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()

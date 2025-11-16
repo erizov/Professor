@@ -7,6 +7,9 @@ Ordered binary tree where left subtree < node < right subtree.
 """
 
 import sys
+
+# Setup logging
+logger = logging.getLogger(__name__)
 from pathlib import Path
 from typing import Optional, List
 import random
@@ -14,6 +17,8 @@ import random
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
 from framework.logging_utils import get_logger
+import logging
+
 logger = get_logger(__name__)
 
 

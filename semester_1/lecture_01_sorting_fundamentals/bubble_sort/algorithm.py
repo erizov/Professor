@@ -8,6 +8,9 @@ the list, compares adjacent elements and swaps them if they are in wrong order.
 """
 
 import sys
+
+# Setup logging
+logger = logging.getLogger(__name__)
 from pathlib import Path
 import random
 
@@ -15,7 +18,9 @@ sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
 from framework.logging_utils import get_logger
 
-from typing import List, TypeVar
+from typing import
+import logging
+ List, TypeVar
 
 logger = get_logger(__name__)
 
