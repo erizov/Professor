@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Model Monitoring is model monitoring is a fundamental algorithm.
+Model Monitoring is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Model Monitoring is essential for building performant and scalable applications.
 

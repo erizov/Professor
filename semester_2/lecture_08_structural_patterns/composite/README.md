@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Composite is composite is a fundamental algorithm.
+Composite is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Composite is essential for building performant and scalable applications.
 

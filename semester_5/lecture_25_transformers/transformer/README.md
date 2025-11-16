@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Transformer is transformer is a fundamental algorithm.
+Transformer is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Transformer is essential for building performant and scalable applications.
 

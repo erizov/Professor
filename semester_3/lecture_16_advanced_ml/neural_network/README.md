@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Neural Network is neural network is a fundamental algorithm.
+Neural Network is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Neural Network is essential for building performant and scalable applications.
 

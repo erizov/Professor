@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Metrics Collection is metrics collection is a fundamental algorithm.
+Metrics Collection is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Metrics Collection is essential for building performant and scalable applications.
 

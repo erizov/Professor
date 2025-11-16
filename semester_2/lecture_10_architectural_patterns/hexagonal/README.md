@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Hexagonal is hexagonal is a fundamental algorithm.
+Hexagonal is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Hexagonal is essential for building performant and scalable applications.
 

@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Knowledge Distillation is knowledge distillation is a fundamental algorithm.
+Knowledge Distillation is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Knowledge Distillation is essential for building performant and scalable applications.
 

@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Transfer Learning is transfer learning is a fundamental algorithm.
+Transfer Learning is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Transfer Learning is essential for building performant and scalable applications.
 

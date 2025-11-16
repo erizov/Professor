@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Decorator is decorator is a fundamental algorithm.
+Decorator is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Decorator is essential for building performant and scalable applications.
 

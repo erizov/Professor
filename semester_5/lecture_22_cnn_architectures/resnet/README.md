@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Resnet is resnet is a fundamental algorithm.
+Resnet is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Resnet is essential for building performant and scalable applications.
 

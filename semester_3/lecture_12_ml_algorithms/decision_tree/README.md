@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Decision Tree is decision tree is a fundamental algorithm.
+Decision Tree is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Decision Tree is essential for building performant and scalable applications.
 

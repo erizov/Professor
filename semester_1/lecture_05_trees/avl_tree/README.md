@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Avl Tree is avl tree is a fundamental algorithm.
+Avl Tree is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Avl Tree is essential for building performant and scalable applications.
 

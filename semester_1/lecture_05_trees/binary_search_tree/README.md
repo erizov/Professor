@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Binary Search Tree is binary search tree is a fundamental algorithm.
+Binary Search Tree is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Binary Search Tree is essential for building performant and scalable applications.
 

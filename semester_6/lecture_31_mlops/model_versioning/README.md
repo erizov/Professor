@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Model Versioning is model versioning is a fundamental algorithm.
+Model Versioning is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Model Versioning is essential for building performant and scalable applications.
 

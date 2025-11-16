@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Unit Testing is unit testing is a fundamental algorithm.
+Unit Testing is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Unit Testing is essential for building performant and scalable applications.
 

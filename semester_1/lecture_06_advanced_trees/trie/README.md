@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Trie is trie is a fundamental algorithm.
+Trie is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Trie is essential for building performant and scalable applications.
 

@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Tensorrt is tensorrt is a fundamental algorithm.
+Tensorrt is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Tensorrt is essential for building performant and scalable applications.
 

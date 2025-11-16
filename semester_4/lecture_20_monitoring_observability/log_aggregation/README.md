@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Log Aggregation is log aggregation is a fundamental algorithm.
+Log Aggregation is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Log Aggregation is essential for building performant and scalable applications.
 

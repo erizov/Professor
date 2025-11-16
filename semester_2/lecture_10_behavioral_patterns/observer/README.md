@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Observer is observer is a fundamental algorithm.
+Observer is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Observer is essential for building performant and scalable applications.
 

@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Cqrs is cqrs is a fundamental algorithm.
+Cqrs is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Cqrs is essential for building performant and scalable applications.
 

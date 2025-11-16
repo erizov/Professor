@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Radix Sort is radix sort is a fundamental algorithm.
+Radix Sort is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Radix Sort is essential for building performant and scalable applications.
 

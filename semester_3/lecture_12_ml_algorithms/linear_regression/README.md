@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Linear Regression is linear regression is a fundamental algorithm.
+Linear Regression is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Linear Regression is essential for building performant and scalable applications.
 

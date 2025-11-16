@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Dfs is dfs is a fundamental algorithm.
+Dfs is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Dfs is essential for building performant and scalable applications.
 

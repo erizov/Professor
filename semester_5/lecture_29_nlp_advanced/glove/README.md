@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Glove is glove is a fundamental algorithm.
+Glove is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Glove is essential for building performant and scalable applications.
 

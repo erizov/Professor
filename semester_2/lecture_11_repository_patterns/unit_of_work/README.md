@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Unit Of Work is unit of work is a fundamental algorithm.
+Unit Of Work is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Unit Of Work is essential for building performant and scalable applications.
 

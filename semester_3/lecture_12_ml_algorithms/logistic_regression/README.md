@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Logistic Regression is logistic regression is a fundamental algorithm.
+Logistic Regression is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Logistic Regression is essential for building performant and scalable applications.
 

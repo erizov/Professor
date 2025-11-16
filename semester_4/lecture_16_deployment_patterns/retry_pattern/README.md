@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Retry Pattern is retry pattern is a fundamental algorithm.
+Retry Pattern is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Retry Pattern is essential for building performant and scalable applications.
 

@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Message Queue is message queue is a fundamental algorithm.
+Message Queue is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Message Queue is essential for building performant and scalable applications.
 

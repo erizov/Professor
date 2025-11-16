@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Arima is arima is a fundamental algorithm.
+Arima is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Arima is essential for building performant and scalable applications.
 

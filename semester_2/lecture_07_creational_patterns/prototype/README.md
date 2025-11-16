@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Prototype is prototype is a fundamental algorithm.
+Prototype is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Prototype is essential for building performant and scalable applications.
 

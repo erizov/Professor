@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Svm is svm is a fundamental algorithm.
+Svm is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Svm is essential for building performant and scalable applications.
 

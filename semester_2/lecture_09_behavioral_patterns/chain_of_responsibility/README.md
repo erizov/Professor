@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Chain Of Responsibility is chain of responsibility is a fundamental algorithm.
+Chain Of Responsibility is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Chain Of Responsibility is essential for building performant and scalable applications.
 

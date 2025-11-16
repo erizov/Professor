@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Linear Search is linear search is a fundamental algorithm.
+Linear Search is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Linear Search is essential for building performant and scalable applications.
 

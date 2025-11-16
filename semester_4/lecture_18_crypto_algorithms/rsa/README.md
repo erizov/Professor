@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Rsa is rsa is a fundamental algorithm.
+Rsa is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Rsa is essential for building performant and scalable applications.
 

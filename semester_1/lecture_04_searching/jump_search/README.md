@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Jump Search is jump search is a fundamental algorithm.
+Jump Search is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Jump Search is essential for building performant and scalable applications.
 

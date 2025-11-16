@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Longest Common Subsequence is longest common subsequence is a fundamental algorithm.
+Longest Common Subsequence is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Longest Common Subsequence is essential for building performant and scalable applications.
 

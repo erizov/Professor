@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Adapter is adapter is a fundamental algorithm.
+Adapter is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Adapter is essential for building performant and scalable applications.
 

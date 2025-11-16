@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Bfs is bfs is a fundamental algorithm.
+Bfs is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Bfs is essential for building performant and scalable applications.
 

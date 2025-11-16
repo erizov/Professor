@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Abstract Factory is abstract factory is a fundamental algorithm.
+Abstract Factory is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Abstract Factory is essential for building performant and scalable applications.
 

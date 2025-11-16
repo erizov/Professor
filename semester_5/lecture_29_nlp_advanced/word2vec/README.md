@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Word2Vec is word2vec is a fundamental algorithm.
+Word2Vec is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Word2Vec is essential for building performant and scalable applications.
 

@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Yolo is yolo is a fundamental algorithm.
+Yolo is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Yolo is essential for building performant and scalable applications.
 

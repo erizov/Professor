@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Attention is attention is a fundamental algorithm.
+Attention is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Attention is essential for building performant and scalable applications.
 

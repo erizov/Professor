@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Model Parallelism is model parallelism is a fundamental algorithm.
+Model Parallelism is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Model Parallelism is essential for building performant and scalable applications.
 

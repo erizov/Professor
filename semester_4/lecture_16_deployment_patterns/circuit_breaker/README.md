@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Circuit Breaker is circuit breaker is a fundamental algorithm.
+Circuit Breaker is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Circuit Breaker is essential for building performant and scalable applications.
 

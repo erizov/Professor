@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Single Responsibility is single responsibility is a fundamental algorithm.
+Single Responsibility is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Single Responsibility is essential for building performant and scalable applications.
 

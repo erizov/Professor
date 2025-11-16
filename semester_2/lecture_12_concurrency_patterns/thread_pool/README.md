@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Thread Pool is thread pool is a fundamental algorithm.
+Thread Pool is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Thread Pool is essential for building performant and scalable applications.
 

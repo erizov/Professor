@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Encryption is encryption is a fundamental algorithm.
+Encryption is a fundamental algorithm.
 
 This algorithm is widely used in computer science and software engineering for solving a specific class of problems efficiently. Understanding Encryption is essential for building performant and scalable applications.
 
