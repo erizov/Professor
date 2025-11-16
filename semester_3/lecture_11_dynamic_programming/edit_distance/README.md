@@ -46,7 +46,7 @@ A dynamic programming algorithm that calculates the minimum number of operations
 **Key Characteristics:**
 - **Time Complexity**: O(mn) where m and n are string lengths, because the DP table has m×n cells, each computed in constant time.
 - **Space Complexity**: O(mn) for the DP table, or O(min(m,n)) if optimized to use only two rows at a time.
-- **Stability**: N/A N/A - string algorithms don't have stability since they compute distances rather than sorting.. N/A - string algorithms don't have stability since they compute distances rather than sorting.
+- **Stability**: N/A - string algorithms don't have stability since they compute distances rather than sorting.
 
 ## Often Used Together With
 

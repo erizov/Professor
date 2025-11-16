@@ -48,7 +48,7 @@ An in-place sorting algorithm that uses a binary heap data structure to sort ele
 **Key Characteristics:**
 - **Time Complexity**: O(n log n) because building the heap takes O(n) and each of the n extract-max operations takes O(log n).
 - **Space Complexity**: O(1) because it sorts in-place by rearranging elements within the original array without additional data structures.
-- **Stability**: N/A Not stable because heap operations can swap elements that are far apart, potentially changing the relative order of equal elements.. Not stable because heap operations can swap elements that are far apart, potentially changing the relative order of equal elements.
+- **Stability**: Not stable because heap operations can swap elements that are far apart, potentially changing the relative order of equal elements.
 
 ## Often Used Together With
 

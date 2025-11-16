@@ -238,15 +238,21 @@ def add_complexity_explanations(content: str, algorithm_name: str) -> Tuple[str,
         
         if stability_match:
             stability_value = stability_match.group(1).strip()
+            # Remove any existing explanation from stability_value
+            stability_value = re.sub(r'\s+Not stable.*|N/A\s+Not stable.*', '', stability_value).strip()
             explanation = get_complexity_explanation(algorithm_name, "stability")
             if explanation:
-                if stability_value == "N/A":
+                # Check if explanation is already in the value
+                if explanation.lower() in stability_value.lower() or stability_value.lower() in explanation.lower():
+                    # Already has explanation, just use it
+                    new_characteristics.append(f"- **Stability**: {explanation}")
+                elif stability_value == "N/A" or stability_value == "":
                     new_characteristics.append(f"- **Stability**: {explanation}")
                 else:
                     new_characteristics.append(f"- **Stability**: {stability_value}. {explanation}")
                 changed = True
             else:
-                new_characteristics.append(f"- **Stability**: {stability_value}")
+                new_characteristics.append(f"- **Stability**: {stability_value if stability_value else 'N/A'}")
         else:
             explanation = get_complexity_explanation(algorithm_name, "stability")
             if explanation:

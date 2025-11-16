@@ -47,7 +47,7 @@ A graph traversal algorithm that explores all vertices at the current depth leve
 **Key Characteristics:**
 - **Time Complexity**: O(V + E) where V is vertices and E is edges, because each vertex and edge is visited exactly once.
 - **Space Complexity**: O(V) because the queue can contain at most all vertices, and visited set stores all vertices.
-- **Stability**: N/A N/A - graph traversal algorithms don't have stability since they don't sort or rearrange elements.. N/A - graph traversal algorithms don't have stability since they don't sort or rearrange elements.
+- **Stability**: N/A - graph traversal algorithms don't have stability since they don't sort or rearrange elements.
 
 ## Often Used Together With
 

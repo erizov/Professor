@@ -38,7 +38,7 @@ An optimization algorithm that determines the most valuable combination of items
 **Key Characteristics:**
 - **Time Complexity**: O(nW) where n is items and W is capacity, because the DP table has n×W cells, each computed in constant time.
 - **Space Complexity**: O(nW) for the DP table storing optimal values for all subproblems, or O(W) if optimized to use only previous row.
-- **Stability**: N/A N/A - optimization algorithms don't have stability since they select items rather than sorting them.. N/A - optimization algorithms don't have stability since they select items rather than sorting them.
+- **Stability**: N/A - optimization algorithms don't have stability since they select items rather than sorting them.
 
 ## Often Used Together With
 

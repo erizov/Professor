@@ -47,7 +47,7 @@ An efficient search algorithm that finds the position of a target value within a
 **Key Characteristics:**
 - **Time Complexity**: O(log n) because each comparison eliminates half of the remaining search space, requiring at most log₂(n) comparisons.
 - **Space Complexity**: O(1) for iterative version because it only uses a few variables, or O(log n) for recursive version due to call stack.
-- **Stability**: N/A N/A - searching algorithms don't have stability since they don't rearrange elements.. N/A - searching algorithms don't have stability since they don't rearrange elements.
+- **Stability**: N/A - searching algorithms don't have stability since they don't rearrange elements.
 
 ## Often Used Together With
 

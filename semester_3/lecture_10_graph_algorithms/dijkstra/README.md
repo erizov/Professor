@@ -47,7 +47,7 @@ A shortest path algorithm that finds the minimum distance from a source vertex t
 **Key Characteristics:**
 - **Time Complexity**: O((V + E) log V) with binary heap because each vertex is extracted once (V log V) and each edge relaxes once (E log V).
 - **Space Complexity**: O(V) for the priority queue, distance array, and visited set, each storing at most V elements.
-- **Stability**: N/A N/A - shortest path algorithms don't have stability since they don't sort or rearrange elements.. N/A - shortest path algorithms don't have stability since they don't sort or rearrange elements.
+- **Stability**: N/A - shortest path algorithms don't have stability since they don't sort or rearrange elements.
 
 ## Often Used Together With
 

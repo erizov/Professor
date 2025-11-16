@@ -44,7 +44,7 @@ A divide-and-conquer sorting algorithm that partitions an array around a pivot e
 **Key Characteristics:**
 - **Time Complexity**: O(n log n) average case because it divides the array in half on average each recursion, but O(n²) worst case when pivot is always the smallest/largest element.
 - **Space Complexity**: O(log n) for the recursion stack since the depth of recursion is logarithmic in the average case.
-- **Stability**: N/A Not stable because equal elements may be swapped during partitioning, changing their relative order.. Not stable because equal elements may be swapped during partitioning, changing their relative order.
+- **Stability**: Not stable because equal elements may be swapped during partitioning, changing their relative order.
 
 ## Often Used Together With
 

@@ -48,7 +48,7 @@ A sorting algorithm that finds the minimum element from the unsorted portion and
 **Key Characteristics:**
 - **Time Complexity**: O(n²) because it must scan the remaining unsorted portion n times, each scan taking O(n) to find the minimum.
 - **Space Complexity**: O(1) because it only uses a constant amount of extra space for storing indices and temporary swap variables.
-- **Stability**: N/A Not stable because selecting the minimum and swapping it to the front can move an element past equal elements, changing their order.. Not stable because selecting the minimum and swapping it to the front can move an element past equal elements, changing their order.
+- **Stability**: Not stable because selecting the minimum and swapping it to the front can move an element past equal elements, changing their order.
 
 ## Often Used Together With
 

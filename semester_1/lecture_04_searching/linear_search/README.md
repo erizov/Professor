@@ -47,7 +47,7 @@ A simple search algorithm that sequentially checks each element in a list until 
 **Key Characteristics:**
 - **Time Complexity**: O(n) because in the worst case, it must examine every element in the array until finding the target or reaching the end.
 - **Space Complexity**: O(1) because it only uses a constant amount of extra space for loop variables and comparisons.
-- **Stability**: N/A N/A - searching algorithms don't have stability since they don't rearrange elements.. N/A - searching algorithms don't have stability since they don't rearrange elements.
+- **Stability**: N/A - searching algorithms don't have stability since they don't rearrange elements.
 
 ## Often Used Together With
 

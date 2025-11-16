@@ -48,7 +48,7 @@ A comparison-based sorting algorithm that repeatedly compares adjacent elements 
 **Key Characteristics:**
 - **Time Complexity**: O(n²) because it makes n passes through the array, and each pass compares and potentially swaps adjacent elements.
 - **Space Complexity**: O(1) because it only uses a constant amount of extra space for temporary variables during swapping.
-- **Stability**: N/A Stable because it only swaps adjacent elements when they are out of order, preserving the relative order of equal elements.. Stable because it only swaps adjacent elements when they are out of order, preserving the relative order of equal elements.
+- **Stability**: Stable because it only swaps adjacent elements when they are out of order, preserving the relative order of equal elements.
 
 ## Often Used Together With
 

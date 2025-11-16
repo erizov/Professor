@@ -48,7 +48,7 @@ A stable, divide-and-conquer sorting algorithm that divides the array into halve
 **Key Characteristics:**
 - **Time Complexity**: O(n log n) guaranteed because it always divides the array exactly in half, creating a balanced recursion tree of depth log n.
 - **Space Complexity**: O(n) because it requires a temporary array of the same size as the input to merge sorted subarrays.
-- **Stability**: N/A Stable because when merging, equal elements from the left subarray are always placed before those from the right, preserving original order.. Stable because when merging, equal elements from the left subarray are always placed before those from the right, preserving original order.
+- **Stability**: Stable because when merging, equal elements from the left subarray are always placed before those from the right, preserving original order.
 
 ## Often Used Together With
 

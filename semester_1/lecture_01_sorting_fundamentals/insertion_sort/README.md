@@ -48,7 +48,7 @@ A simple sorting algorithm that builds the final sorted array one element at a t
 **Key Characteristics:**
 - **Time Complexity**: O(n²) worst case because each element may need to be compared with all previous elements, but O(n) for nearly sorted arrays.
 - **Space Complexity**: O(1) because it sorts in-place by shifting elements within the array without requiring additional memory.
-- **Stability**: N/A Stable because it inserts elements in their correct position without swapping equal elements, maintaining their original order.. Stable because it inserts elements in their correct position without swapping equal elements, maintaining their original order.
+- **Stability**: Stable because it inserts elements in their correct position without swapping equal elements, maintaining their original order.
 
 ## Often Used Together With
 

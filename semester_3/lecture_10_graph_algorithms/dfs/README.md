@@ -47,7 +47,7 @@ A graph traversal algorithm that explores as far as possible along each branch b
 **Key Characteristics:**
 - **Time Complexity**: O(V + E) where V is vertices and E is edges, because each vertex and edge is visited exactly once.
 - **Space Complexity**: O(V) for the recursion stack in worst case (linear graph), or O(h) where h is the maximum depth for tree-like graphs.
-- **Stability**: N/A N/A - graph traversal algorithms don't have stability since they don't sort or rearrange elements.. N/A - graph traversal algorithms don't have stability since they don't sort or rearrange elements.
+- **Stability**: N/A - graph traversal algorithms don't have stability since they don't sort or rearrange elements.
 
 ## Often Used Together With
 
