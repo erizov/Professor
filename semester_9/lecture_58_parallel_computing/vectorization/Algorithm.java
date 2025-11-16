@@ -1,20 +1,27 @@
 /**
- * Advanced implementation of Vectorization
+ * Vectorization implementation.
  */
 public class Algorithm {
     
     /**
-     * Advanced Vectorization implementation.
+     * Vectorization.
      * 
      * @param args Variable arguments
      * @return Result of the algorithm
      */
     public static Object vectorization(Object... args) {
-        // TODO: Implement advanced vectorization
+        // TODO: Implement vectorization
+        System.out.println("Executing vectorization");
         return null;
     }
     
     public static void main(String[] args) {
-        System.out.println("Vectorization - Advanced Implementation");
+        System.out.println("=".repeat(70));
+        System.out.println("Vectorization");
+        System.out.println("=".repeat(70));
+        
+        // Example usage
+        Object result = vectorization(1, 2, 3, 4, 5);
+        System.out.println("Result: " + result);
     }
 }

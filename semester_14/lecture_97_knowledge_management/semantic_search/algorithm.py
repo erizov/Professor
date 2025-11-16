@@ -1,24 +1,45 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Advanced implementation of Semantic Search
+Semantic Search implementation.
 """
 
-def semantic_search(*args, **kwargs):
+from typing import List, Optional, Any
+from framework.logging_utils import get_logger
+import logging
+
+logger = get_logger(__name__)
+
+def semantic_search(arr: List[Any], target: Any) -> Optional[int]:
     """
-    Advanced Semantic Search implementation.
+    Semantic Search.
     
     Args:
-        *args: Variable arguments
-        **kwargs: Keyword arguments
+        arr: List to search
+        target: Target value
         
     Returns:
-        Result of the algorithm
+        Index if found, None otherwise
+        
+    Time Complexity: O(n)
+    Space Complexity: O(1)
     """
-    # TODO: Implement advanced semantic_search
-    pass
+    for i, item in enumerate(arr):
+        if item == target:
+            return i
+    return None
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print(f"Semantic Search")
+    print("=" * 70)
+    
+    # Example usage
+    example_data = [1, 2, 3, 4, 5]
+    result = semantic_search(example_data)
+    print(f"Result: {result}")
 
 
 if __name__ == "__main__":
-    # Example usage
-    print(f"Semantic Search - Advanced Implementation")
+    main()

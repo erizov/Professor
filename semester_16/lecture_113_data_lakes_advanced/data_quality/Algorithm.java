@@ -1,20 +1,27 @@
 /**
- * Advanced implementation of Data Quality
+ * Data Quality implementation.
  */
 public class Algorithm {
     
     /**
-     * Advanced Data Quality implementation.
+     * Data Quality.
      * 
      * @param args Variable arguments
      * @return Result of the algorithm
      */
     public static Object data_quality(Object... args) {
-        // TODO: Implement advanced data_quality
+        // TODO: Implement data_quality
+        System.out.println("Executing data_quality");
         return null;
     }
     
     public static void main(String[] args) {
-        System.out.println("Data Quality - Advanced Implementation");
+        System.out.println("=".repeat(70));
+        System.out.println("Data Quality");
+        System.out.println("=".repeat(70));
+        
+        // Example usage
+        Object result = data_quality(1, 2, 3, 4, 5);
+        System.out.println("Result: " + result);
     }
 }

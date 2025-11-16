@@ -1,20 +1,27 @@
 /**
- * Advanced implementation of Hotstuff
+ * Hotstuff implementation.
  */
 public class Algorithm {
     
     /**
-     * Advanced Hotstuff implementation.
+     * Hotstuff.
      * 
      * @param args Variable arguments
      * @return Result of the algorithm
      */
     public static Object hotstuff(Object... args) {
-        // TODO: Implement advanced hotstuff
+        // TODO: Implement hotstuff
+        System.out.println("Executing hotstuff");
         return null;
     }
     
     public static void main(String[] args) {
-        System.out.println("Hotstuff - Advanced Implementation");
+        System.out.println("=".repeat(70));
+        System.out.println("Hotstuff");
+        System.out.println("=".repeat(70));
+        
+        // Example usage
+        Object result = hotstuff(1, 2, 3, 4, 5);
+        System.out.println("Result: " + result);
     }
 }

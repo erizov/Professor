@@ -1,20 +1,27 @@
 /**
- * Advanced implementation of Content Generation
+ * Content Generation implementation.
  */
 public class Algorithm {
     
     /**
-     * Advanced Content Generation implementation.
+     * Content Generation.
      * 
      * @param args Variable arguments
      * @return Result of the algorithm
      */
     public static Object content_generation(Object... args) {
-        // TODO: Implement advanced content_generation
+        // TODO: Implement content_generation
+        System.out.println("Executing content_generation");
         return null;
     }
     
     public static void main(String[] args) {
-        System.out.println("Content Generation - Advanced Implementation");
+        System.out.println("=".repeat(70));
+        System.out.println("Content Generation");
+        System.out.println("=".repeat(70));
+        
+        // Example usage
+        Object result = content_generation(1, 2, 3, 4, 5);
+        System.out.println("Result: " + result);
     }
 }

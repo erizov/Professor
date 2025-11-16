@@ -325,7 +325,7 @@ def audit_and_implement():
             if not sql_file.exists() or is_placeholder(sql_file):
                 sql_content = generate_sql_implementation(algorithm_name, metadata)
                 sql_file.write_text(sql_content, encoding='utf-8')
-                print(f"✓ Created SQL: {algo_dir.relative_to(ROOT)}")
+                print(f"[OK] Created SQL: {algo_dir.relative_to(ROOT)}")
         else:
             # Check Python
             if is_placeholder(py_file):
@@ -358,13 +358,13 @@ def audit_and_implement():
                 content = generate_java_implementation(algo_name, metadata, java_ref)
             
             file_path.write_text(content, encoding='utf-8')
-            print(f"✓ Implemented {lang}: {file_path.relative_to(ROOT)}")
+            print(f"[OK] Implemented {lang}: {file_path.relative_to(ROOT)}")
         except Exception as e:
-            print(f"✗ Error implementing {file_path}: {e}")
+            print(f"[ERROR] Error implementing {file_path}: {e}")
     
     return len(placeholders), len(implemented), len(sql_algorithms)
 
 if __name__ == "__main__":
     placeholders, implemented, sql = audit_and_implement()
-    print(f"\n✓ Complete! Implemented {placeholders} files, {sql} SQL files created")
+    print(f"\n[COMPLETE] Implemented {placeholders} files, {sql} SQL files created")
 

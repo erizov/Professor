@@ -1,20 +1,27 @@
 /**
- * Advanced implementation of Fault Injection
+ * Fault Injection implementation.
  */
 public class Algorithm {
     
     /**
-     * Advanced Fault Injection implementation.
+     * Fault Injection.
      * 
      * @param args Variable arguments
      * @return Result of the algorithm
      */
     public static Object fault_injection(Object... args) {
-        // TODO: Implement advanced fault_injection
+        // TODO: Implement fault_injection
+        System.out.println("Executing fault_injection");
         return null;
     }
     
     public static void main(String[] args) {
-        System.out.println("Fault Injection - Advanced Implementation");
+        System.out.println("=".repeat(70));
+        System.out.println("Fault Injection");
+        System.out.println("=".repeat(70));
+        
+        // Example usage
+        Object result = fault_injection(1, 2, 3, 4, 5);
+        System.out.println("Result: " + result);
     }
 }

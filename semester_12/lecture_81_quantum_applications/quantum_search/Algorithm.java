@@ -1,20 +1,27 @@
 /**
- * Advanced implementation of Quantum Search
+ * Quantum Search implementation.
  */
 public class Algorithm {
     
     /**
-     * Advanced Quantum Search implementation.
+     * Quantum Search.
      * 
      * @param args Variable arguments
      * @return Result of the algorithm
      */
     public static Object quantum_search(Object... args) {
-        // TODO: Implement advanced quantum_search
+        // TODO: Implement quantum_search
+        System.out.println("Executing quantum_search");
         return null;
     }
     
     public static void main(String[] args) {
-        System.out.println("Quantum Search - Advanced Implementation");
+        System.out.println("=".repeat(70));
+        System.out.println("Quantum Search");
+        System.out.println("=".repeat(70));
+        
+        // Example usage
+        Object result = quantum_search(1, 2, 3, 4, 5);
+        System.out.println("Result: " + result);
     }
 }

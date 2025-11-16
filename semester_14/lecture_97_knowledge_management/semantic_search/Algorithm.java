@@ -1,20 +1,27 @@
 /**
- * Advanced implementation of Semantic Search
+ * Semantic Search implementation.
  */
 public class Algorithm {
     
     /**
-     * Advanced Semantic Search implementation.
+     * Semantic Search.
      * 
      * @param args Variable arguments
      * @return Result of the algorithm
      */
     public static Object semantic_search(Object... args) {
-        // TODO: Implement advanced semantic_search
+        // TODO: Implement semantic_search
+        System.out.println("Executing semantic_search");
         return null;
     }
     
     public static void main(String[] args) {
-        System.out.println("Semantic Search - Advanced Implementation");
+        System.out.println("=".repeat(70));
+        System.out.println("Semantic Search");
+        System.out.println("=".repeat(70));
+        
+        // Example usage
+        Object result = semantic_search(1, 2, 3, 4, 5);
+        System.out.println("Result: " + result);
     }
 }
