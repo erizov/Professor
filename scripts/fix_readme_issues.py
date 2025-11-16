@@ -105,6 +105,10 @@ def get_complexity_explanation(algorithm_name: str, complexity_type: str) -> Opt
 def remove_duplicate_sections(content: str) -> Tuple[str, bool]:
     """Remove duplicate sections (e.g., ## Introduction appearing twice)."""
     changed = False
+    
+    # First, fix cases where headers are concatenated (e.g., "## Introduction## Introduction")
+    content = re.sub(r'(##+\s+[^\n]+)(##+\s+\1)', r'\1', content, flags=re.IGNORECASE)
+    
     lines = content.split('\n')
     seen_sections = set()
     new_lines = []
@@ -123,6 +127,9 @@ def remove_duplicate_sections(content: str) -> Tuple[str, bool]:
                 # Skip this duplicate section and its content until next section
                 changed = True
                 i += 1
+                # Skip blank line after header
+                if i < len(lines) and lines[i].strip() == '':
+                    i += 1
                 # Skip content until next section or end
                 while i < len(lines):
                     if re.match(r'^##+\s+', lines[i]):
