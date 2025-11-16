@@ -13,7 +13,7 @@ import sys
 
 def collect_all_content():
     """Collect all course content from all semesters."""
-    base_path = Path(".")
+    base_path = Path(__file__).resolve().parents[1]
     content_parts = []
     
     # Add main README

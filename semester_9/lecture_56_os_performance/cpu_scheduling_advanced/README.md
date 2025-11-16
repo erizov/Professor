@@ -14,7 +14,7 @@ Cpu Scheduling Advanced addresses advanced computational challenges in specializ
 
 This topic covers advanced techniques and methodologies used in modern software systems.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: An optimization technique that improves system efficiency, speed, or resource utilization.
 
@@ -31,9 +31,6 @@ An optimization technique that improves system efficiency, speed, or resource ut
 - **Time Complexity**: Varies
 - **Space Complexity**: Varies
 - **Stability**: N/A
-- **Best Use Case**: Advanced applications
-
-See algorithm.py and Algorithm.java
 
 ## Learning Objectives
 
@@ -45,13 +42,11 @@ By the end of this lecture, students will be able to:
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this algorithm to solve real-world problems
 
-
 ## Prerequisites
 
 - Completed previous semesters
 - Understanding of distributed systems concepts
 - Knowledge of system design principles
-
 
 ## Often Used Together With
 
@@ -72,59 +67,63 @@ Cpu Scheduling Advanced is commonly used in combination with:
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Cpu Scheduling Advanced works in your own words?
 2. What is the key insight or technique that makes Cpu Scheduling Advanced efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Cpu Scheduling Advanced over alternative algorithms?
 
 ### Application
+
 5. Can you implement Cpu Scheduling Advanced from memory without looking at the code?
 6. What real-world problem could you solve using Cpu Scheduling Advanced?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Cpu Scheduling Advanced?
 8. How would you test your Cpu Scheduling Advanced implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Cpu Scheduling Advanced would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Cpu Scheduling Advanced step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Cpu Scheduling Advanced
 3. Explain why Cpu Scheduling Advanced has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Cpu Scheduling Advanced from scratch using only the function signature
 5. Modify Cpu Scheduling Advanced to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Cpu Scheduling Advanced for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Cpu Scheduling Advanced
 9. Compare Cpu Scheduling Advanced performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Cpu Scheduling Advanced to solve a production problem
 11. Create unit tests with 100% code coverage for Cpu Scheduling Advanced
 12. Write a technical blog post explaining Cpu Scheduling Advanced to beginners
-
 
 ## Real-World Applications
 
 - **Enterprise Applications**: Cpu Scheduling Advanced is widely used in production systems
 - **Performance Optimization**: Applied to improve system efficiency
 - **System Design**: Integral part of scalable architecture patterns
-
 
 ## Common Misconceptions
 
@@ -133,7 +132,6 @@ Test your understanding with these questions:
 
 ❌ **WRONG**: "Cpu Scheduling Advanced is too complex to understand"
 ✓ **CORRECT**: Cpu Scheduling Advanced can be understood by breaking it down into smaller steps
-
 
 ## Examples of Implementation
 

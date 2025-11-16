@@ -12,7 +12,7 @@ Virtual Memory addresses concept in operating systems fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: A memory management technique that uses disk storage to extend available RAM, creating illusion of larger memory.
 
@@ -22,13 +22,12 @@ This algorithm/pattern is widely used in computer science and software engineeri
 **When NOT to Use**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
+
 ## Prerequisites
 
 - Completed previous semesters
 - Understanding of distributed systems concepts
 - Knowledge of system design principles
-
-
 
 By the end of this lecture, students will be able to:
 
@@ -43,13 +42,11 @@ By the end of this lecture, students will be able to:
 A memory management technique that uses disk storage to extend available RAM, creating illusion of larger memory. Solves problems like running programs larger than physical RAM and memory isolation. Example: Running 8GB program on 4GB RAM by swapping unused pages to disk. Works by dividing memory into pages, keeping active pages in RAM, and swapping inactive pages to disk storage.
 
 **Key Characteristics:**
-- **Category**: Operating Systems Fundamentals
-- **Use Case**: Production systems
-- **Complexity**: Varies by implementation
+- **Time Complexity**: Varies
+- **Space Complexity**: Varies
+- **Stability**: N/A
 
 ## Implementation
-
-See algorithm.py and Algorithm.java
 
 ## Often Used Together With
 
@@ -61,65 +58,68 @@ Virtual Memory is commonly used in combination with related algorithms and patte
 - Techniques with distinct use cases or complexity guarantees
 - Related concepts that serve different purposes
 
-
 ## Self-Assessment Questions
 
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Virtual Memory works in your own words?
 2. What is the key insight or technique that makes Virtual Memory efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Virtual Memory over alternative algorithms?
 
 ### Application
+
 5. Can you implement Virtual Memory from memory without looking at the code?
 6. What real-world problem could you solve using Virtual Memory?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Virtual Memory?
 8. How would you test your Virtual Memory implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Virtual Memory would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Virtual Memory step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Virtual Memory
 3. Explain why Virtual Memory has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Virtual Memory from scratch using only the function signature
 5. Modify Virtual Memory to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Virtual Memory for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Virtual Memory
 9. Compare Virtual Memory performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Virtual Memory to solve a production problem
 11. Create unit tests with 100% code coverage for Virtual Memory
 12. Write a technical blog post explaining Virtual Memory to beginners
-
 
 ## Real-World Applications
 
 - **Enterprise Applications**: Virtual Memory is widely used in production systems
 - **Performance Optimization**: Applied to improve system efficiency
 - **System Design**: Integral part of scalable architecture patterns
-
 
 ## Common Misconceptions
 
@@ -129,10 +129,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Virtual Memory is too complex to understand"
 ✓ **CORRECT**: Virtual Memory can be understood by breaking it down into smaller steps
 
-
 ## Examples of Implementation
-
-
 
 This algorithm/pattern is implemented in various frameworks and technologies.
 

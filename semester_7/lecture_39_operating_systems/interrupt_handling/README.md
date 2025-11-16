@@ -12,7 +12,7 @@ Interrupt Handling addresses concept in operating systems fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: A computational method for interrupt handling.
 
@@ -22,13 +22,12 @@ This algorithm/pattern is widely used in computer science and software engineeri
 **When NOT to Use**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
+
 ## Prerequisites
 
 - Completed previous semesters
 - Understanding of distributed systems concepts
 - Knowledge of system design principles
-
-
 
 By the end of this lecture, students will be able to:
 
@@ -43,13 +42,11 @@ By the end of this lecture, students will be able to:
 A computational method for interrupt handling. Solves specific problems in this domain through systematic processing. Works by applying algorithmic techniques to transform input data into desired outputs.
 
 **Key Characteristics:**
-- **Category**: Operating Systems Fundamentals
-- **Use Case**: Production systems
-- **Complexity**: Varies by implementation
+- **Time Complexity**: Varies
+- **Space Complexity**: Varies
+- **Stability**: N/A
 
 ## Implementation
-
-See algorithm.py and Algorithm.java
 
 ## Often Used Together With
 
@@ -61,65 +58,68 @@ Interrupt Handling is commonly used in combination with related algorithms and p
 - Techniques with distinct use cases or complexity guarantees
 - Related concepts that serve different purposes
 
-
 ## Self-Assessment Questions
 
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Interrupt Handling works in your own words?
 2. What is the key insight or technique that makes Interrupt Handling efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Interrupt Handling over alternative algorithms?
 
 ### Application
+
 5. Can you implement Interrupt Handling from memory without looking at the code?
 6. What real-world problem could you solve using Interrupt Handling?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Interrupt Handling?
 8. How would you test your Interrupt Handling implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Interrupt Handling would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Interrupt Handling step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Interrupt Handling
 3. Explain why Interrupt Handling has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Interrupt Handling from scratch using only the function signature
 5. Modify Interrupt Handling to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Interrupt Handling for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Interrupt Handling
 9. Compare Interrupt Handling performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Interrupt Handling to solve a production problem
 11. Create unit tests with 100% code coverage for Interrupt Handling
 12. Write a technical blog post explaining Interrupt Handling to beginners
-
 
 ## Real-World Applications
 
 - **Enterprise Applications**: Interrupt Handling is widely used in production systems
 - **Performance Optimization**: Applied to improve system efficiency
 - **System Design**: Integral part of scalable architecture patterns
-
 
 ## Common Misconceptions
 
@@ -129,10 +129,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Interrupt Handling is too complex to understand"
 ✓ **CORRECT**: Interrupt Handling can be understood by breaking it down into smaller steps
 
-
 ## Examples of Implementation
-
-
 
 This algorithm/pattern is implemented in various frameworks and technologies.
 

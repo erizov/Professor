@@ -529,7 +529,7 @@ def update_readme(readme_path: Path, algorithm_name: str, lecture_path: str) -> 
 
 def main():
     """Main function."""
-    base_path = Path(".")
+    base_path = Path(__file__).resolve().parents[1]
     
     # Find all README files
     readme_files = list(base_path.rglob("README.md"))

@@ -12,7 +12,7 @@ Attention Mechanisms addresses concept in large language models fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: Neural network components that allow models to focus on relevant parts of input when making predictions.
 
@@ -22,13 +22,12 @@ This algorithm/pattern is widely used in computer science and software engineeri
 **When NOT to Use**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
+
 ## Prerequisites
 
 - Completed previous semesters
 - Understanding of distributed systems concepts
 - Knowledge of system design principles
-
-
 
 By the end of this lecture, students will be able to:
 
@@ -43,13 +42,11 @@ By the end of this lecture, students will be able to:
 Neural network components that allow models to focus on relevant parts of input when making predictions. Solves problems like long-range dependencies, context understanding, and translation alignment. Example: When translating 'The cat sat on the mat', attention helps align 'cat' with 'gato' and 'mat' with 'alfombra'. Works by computing attention scores between all input positions, creating weighted combinations that emphasize relevant information.
 
 **Key Characteristics:**
-- **Category**: Large Language Models Fundamentals
-- **Use Case**: Production systems
-- **Complexity**: Varies by implementation
+- **Time Complexity**: Varies
+- **Space Complexity**: Varies
+- **Stability**: N/A
 
 ## Implementation
-
-See algorithm.py and Algorithm.java
 
 ## Often Used Together With
 
@@ -61,65 +58,68 @@ Attention Mechanisms is commonly used in combination with related algorithms and
 - Techniques with distinct use cases or complexity guarantees
 - Related concepts that serve different purposes
 
-
 ## Self-Assessment Questions
 
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Attention Mechanisms works in your own words?
 2. What is the key insight or technique that makes Attention Mechanisms efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Attention Mechanisms over alternative algorithms?
 
 ### Application
+
 5. Can you implement Attention Mechanisms from memory without looking at the code?
 6. What real-world problem could you solve using Attention Mechanisms?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Attention Mechanisms?
 8. How would you test your Attention Mechanisms implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Attention Mechanisms would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Attention Mechanisms step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Attention Mechanisms
 3. Explain why Attention Mechanisms has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Attention Mechanisms from scratch using only the function signature
 5. Modify Attention Mechanisms to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Attention Mechanisms for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Attention Mechanisms
 9. Compare Attention Mechanisms performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Attention Mechanisms to solve a production problem
 11. Create unit tests with 100% code coverage for Attention Mechanisms
 12. Write a technical blog post explaining Attention Mechanisms to beginners
-
 
 ## Real-World Applications
 
 - **Enterprise Applications**: Attention Mechanisms is widely used in production systems
 - **Performance Optimization**: Applied to improve system efficiency
 - **System Design**: Integral part of scalable architecture patterns
-
 
 ## Common Misconceptions
 
@@ -129,10 +129,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Attention Mechanisms is too complex to understand"
 ✓ **CORRECT**: Attention Mechanisms can be understood by breaking it down into smaller steps
 
-
 ## Examples of Implementation
-
-
 
 This algorithm/pattern is implemented in various frameworks and technologies.
 

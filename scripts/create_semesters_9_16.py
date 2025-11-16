@@ -17,7 +17,7 @@ import os
 from pathlib import Path
 import json
 
-BASE_PATH = Path(".")
+BASE_PATH = Path(__file__).resolve().parents[1]
 
 # Semester 9: Advanced Operating Systems & Concurrency
 SEMESTER_9_LECTURES = {

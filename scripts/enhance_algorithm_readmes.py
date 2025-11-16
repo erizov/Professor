@@ -277,7 +277,7 @@ def enhance_readme(readme_path: Path, algorithm_name: str, lecture_path: str) ->
 
 def main():
     """Main function to enhance all README files."""
-    base_path = Path(".")
+    base_path = Path(__file__).resolve().parents[1]
     
     # Find all algorithm directories
     algorithm_dirs = []

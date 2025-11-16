@@ -64,7 +64,7 @@ def scan_implementations() -> Dict[str, Dict]:
         'details': []
     }
     
-    base_path = Path('.')
+    base_path = Path(__file__).resolve().parents[1]
     
     for semester in range(1, 7):
         semester_path = base_path / f"semester_{semester}"

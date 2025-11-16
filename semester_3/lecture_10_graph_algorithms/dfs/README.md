@@ -14,7 +14,7 @@ Dfs is dfs addresses specific computational challenges.
 
 This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: A graph traversal algorithm that explores as far as possible along each branch before backtracking.
 
@@ -24,13 +24,12 @@ This technique is applied in various domains to solve specific problems efficien
 **When NOT to Use**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
+
 ## Prerequisites
 
 - Completed Semesters 1-2
 - Understanding of graph data structures
 - Basic knowledge of recursion
-
-
 
 By the end of this lecture, students will be able to:
 
@@ -46,14 +45,9 @@ By the end of this lecture, students will be able to:
 A graph traversal algorithm that explores as far as possible along each branch before backtracking. Solves problems like maze solving, topological sorting, and cycle detection. Example: Finding a path through a maze by exploring one route completely before trying alternatives. Works by recursively visiting unvisited neighbors, marking visited nodes, and backtracking when no unvisited neighbors exist.
 
 **Key Characteristics:**
-- **Time Complexity**: Varies
-- **Space Complexity**: Varies
-- **Stability**: N/A
-- **Best Use Case**: General purpose
-
-
-See algorithm.py and Algorithm.java
-
+- **Time Complexity**: O(V + E) where V is vertices and E is edges, because each vertex and edge is visited exactly once.
+- **Space Complexity**: O(V) for the recursion stack in worst case (linear graph), or O(h) where h is the maximum depth for tree-like graphs.
+- **Stability**: N/A N/A - graph traversal algorithms don't have stability since they don't sort or rearrange elements.. N/A - graph traversal algorithms don't have stability since they don't sort or rearrange elements.
 
 ## Often Used Together With
 
@@ -68,72 +62,74 @@ Dfs is commonly used in combination with:
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
-
 ## Do Not Confuse With
 
 - **BFS**: DFS explores deep first (stack-based), BFS explores level by level (queue-based)
 - **Backtracking**: DFS is traversal algorithm, backtracking is problem-solving technique using DFS
 - **Topological Sort**: Topological sort uses DFS but is a specific application, not the same as DFS
 
-
 ## Self-Assessment Questions
 
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Dfs works in your own words?
 2. What is the key insight or technique that makes Dfs efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Dfs over alternative algorithms?
 
 ### Application
+
 5. Can you implement Dfs from memory without looking at the code?
 6. What real-world problem could you solve using Dfs?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Dfs?
 8. How would you test your Dfs implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Dfs would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Dfs step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Dfs
 3. Explain why Dfs has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Dfs from scratch using only the function signature
 5. Modify Dfs to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Dfs for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Dfs
 9. Compare Dfs performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Dfs to solve a production problem
 11. Create unit tests with 100% code coverage for Dfs
 12. Write a technical blog post explaining Dfs to beginners
-
 
 ## Real-World Applications
 
 - **Maze Solving**: Finding paths through mazes
 - **Dependency Resolution**: Resolving package dependencies
 - **Topological Sorting**: Task scheduling and build systems
-
 
 ## Common Misconceptions
 
@@ -143,10 +139,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Dfs is too complex to understand"
 ✓ **CORRECT**: Dfs can be understood by breaking it down into smaller steps
 
-
 ## Examples of Implementation
-
-
 
 This algorithm/pattern is implemented in the following frameworks and technologies:
 
@@ -169,5 +162,4 @@ public class PaymentService {
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
-
 

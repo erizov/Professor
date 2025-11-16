@@ -14,7 +14,7 @@ Model Registry addresses advanced computational challenges in specialized domain
 
 This topic covers advanced techniques and methodologies used in modern software systems.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: A computational method for model registry.
 
@@ -31,9 +31,6 @@ A computational method for model registry. Solves specific problems in this doma
 - **Time Complexity**: Varies
 - **Space Complexity**: Varies
 - **Stability**: N/A
-- **Best Use Case**: Advanced applications
-
-See algorithm.py and Algorithm.java
 
 ## Learning Objectives
 
@@ -45,13 +42,11 @@ By the end of this lecture, students will be able to:
 4. Recognize common implementation pitfalls and how to avoid them
 5. Apply this algorithm to solve real-world problems
 
-
 ## Prerequisites
 
 - Completed previous semesters
 - Understanding of distributed systems concepts
 - Knowledge of system design principles
-
 
 ## Often Used Together With
 
@@ -72,59 +67,63 @@ Model Registry is commonly used in combination with:
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Model Registry works in your own words?
 2. What is the key insight or technique that makes Model Registry efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Model Registry over alternative algorithms?
 
 ### Application
+
 5. Can you implement Model Registry from memory without looking at the code?
 6. What real-world problem could you solve using Model Registry?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Model Registry?
 8. How would you test your Model Registry implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Model Registry would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Model Registry step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Model Registry
 3. Explain why Model Registry has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Model Registry from scratch using only the function signature
 5. Modify Model Registry to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Model Registry for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Model Registry
 9. Compare Model Registry performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Model Registry to solve a production problem
 11. Create unit tests with 100% code coverage for Model Registry
 12. Write a technical blog post explaining Model Registry to beginners
-
 
 ## Real-World Applications
 
 - **Enterprise Applications**: Model Registry is widely used in production systems
 - **Performance Optimization**: Applied to improve system efficiency
 - **System Design**: Integral part of scalable architecture patterns
-
 
 ## Common Misconceptions
 
@@ -133,7 +132,6 @@ Test your understanding with these questions:
 
 ❌ **WRONG**: "Model Registry is too complex to understand"
 ✓ **CORRECT**: Model Registry can be understood by breaking it down into smaller steps
-
 
 ## Examples of Implementation
 

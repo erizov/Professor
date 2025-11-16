@@ -14,7 +14,7 @@ Singleton addresses specific computational challenges.
 
 This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: A creational design pattern that ensures a class has only one instance and provides global access to that instance.
 
@@ -24,14 +24,13 @@ This technique is applied in various domains to solve specific problems efficien
 **When NOT to Use**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
+
 ## Prerequisites
 
 - Completed Semester 1 algorithms course
 - Understanding of object-oriented programming concepts
 - Familiarity with design principles (SOLID)
 - Knowledge of interfaces, inheritance, and polymorphism
-
-
 
 By the end of this lecture, students will be able to:
 
@@ -50,11 +49,6 @@ A creational design pattern that ensures a class has only one instance and provi
 - **Time Complexity**: Varies
 - **Space Complexity**: Varies
 - **Stability**: N/A
-- **Best Use Case**: General purpose
-
-
-See algorithm.py and Algorithm.java
-
 
 ## Often Used Together With
 
@@ -69,72 +63,74 @@ Singleton is commonly used in combination with:
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
-
 ## Do Not Confuse With
 
 - **Factory Pattern**: Singleton ensures single instance, factory creates objects
 - **Static Class**: Singleton allows inheritance and interfaces, static class cannot
 - **Global Variable**: Singleton is object-oriented pattern, global variable is procedural approach
 
-
 ## Self-Assessment Questions
 
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Singleton works in your own words?
 2. What is the key insight or technique that makes Singleton efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Singleton over alternative algorithms?
 
 ### Application
+
 5. Can you implement Singleton from memory without looking at the code?
 6. What real-world problem could you solve using Singleton?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Singleton?
 8. How would you test your Singleton implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Singleton would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Singleton step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Singleton
 3. Explain why Singleton has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Singleton from scratch using only the function signature
 5. Modify Singleton to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Singleton for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Singleton
 9. Compare Singleton performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Singleton to solve a production problem
 11. Create unit tests with 100% code coverage for Singleton
 12. Write a technical blog post explaining Singleton to beginners
-
 
 ## Real-World Applications
 
 - **Database Connections**: Managing single connection pool instance
 - **Logging Systems**: Centralized logger instance
 - **Configuration Managers**: Single source of truth for application settings
-
 
 ## Common Misconceptions
 
@@ -144,10 +140,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Singleton is too complex to understand"
 ✓ **CORRECT**: Singleton can be understood by breaking it down into smaller steps
 
-
 ## Examples of Implementation
-
-
 
 This algorithm/pattern is implemented in the following frameworks and technologies:
 
@@ -206,5 +199,4 @@ services.AddSingleton<CacheService>();
 ```
 
 **Purpose**: .NET Framework uses this pattern for dependency injection, ASP.NET Core, and enterprise application development.
-
 

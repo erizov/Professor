@@ -12,7 +12,7 @@ Database Design addresses concept in advanced sql.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: A computational method for database design.
 
@@ -22,13 +22,12 @@ This algorithm/pattern is widely used in computer science and software engineeri
 **When NOT to Use**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
+
 ## Prerequisites
 
 - Completed previous semesters
 - Understanding of distributed systems concepts
 - Knowledge of system design principles
-
-
 
 By the end of this lecture, students will be able to:
 
@@ -43,13 +42,11 @@ By the end of this lecture, students will be able to:
 A computational method for database design. Solves specific problems in this domain through systematic processing. Works by applying algorithmic techniques to transform input data into desired outputs.
 
 **Key Characteristics:**
-- **Category**: Advanced SQL
-- **Use Case**: Production systems
-- **Complexity**: Varies by implementation
+- **Time Complexity**: Varies
+- **Space Complexity**: Varies
+- **Stability**: N/A
 
 ## Implementation
-
-See algorithm.py and Algorithm.java
 
 ## Often Used Together With
 
@@ -61,65 +58,68 @@ Database Design is commonly used in combination with related algorithms and patt
 - Techniques with distinct use cases or complexity guarantees
 - Related concepts that serve different purposes
 
-
 ## Self-Assessment Questions
 
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Database Design works in your own words?
 2. What is the key insight or technique that makes Database Design efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Database Design over alternative algorithms?
 
 ### Application
+
 5. Can you implement Database Design from memory without looking at the code?
 6. What real-world problem could you solve using Database Design?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Database Design?
 8. How would you test your Database Design implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Database Design would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Database Design step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Database Design
 3. Explain why Database Design has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Database Design from scratch using only the function signature
 5. Modify Database Design to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Database Design for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Database Design
 9. Compare Database Design performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Database Design to solve a production problem
 11. Create unit tests with 100% code coverage for Database Design
 12. Write a technical blog post explaining Database Design to beginners
-
 
 ## Real-World Applications
 
 - **Enterprise Applications**: Database Design is widely used in production systems
 - **Performance Optimization**: Applied to improve system efficiency
 - **System Design**: Integral part of scalable architecture patterns
-
 
 ## Common Misconceptions
 
@@ -129,9 +129,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Database Design is too complex to understand"
 ✓ **CORRECT**: Database Design can be understood by breaking it down into smaller steps
 
-
 ## Examples of Implementation
-
 
 This algorithm/pattern is implemented in various frameworks and technologies.
 

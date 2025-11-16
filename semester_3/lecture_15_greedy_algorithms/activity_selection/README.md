@@ -14,7 +14,7 @@ Activity Selection addresses specific computational challenges.
 
 This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: A computational method for activity selection.
 
@@ -24,13 +24,12 @@ This technique is applied in various domains to solve specific problems efficien
 **When NOT to Use**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
+
 ## Prerequisites
 
 - Completed Semesters 1-2
 - Understanding of graph data structures
 - Basic knowledge of recursion
-
-
 
 By the end of this lecture, students will be able to:
 
@@ -48,19 +47,12 @@ A computational method for activity selection. Solves specific problems in this 
 - **Time Complexity**: Varies
 - **Space Complexity**: Varies
 - **Stability**: N/A
-- **Best Use Case**: General purpose
-
 
 Activity Selection is used in Greedy Algorithm.
 
 ## Implementation
 
-See algorithm.py and Algorithm.java for implementations.
-
-
-
-
-
+ for implementations.
 
 ## Do Not Confuse With
 
@@ -73,59 +65,63 @@ See algorithm.py and Algorithm.java for implementations.
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Activity Selection works in your own words?
 2. What is the key insight or technique that makes Activity Selection efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Activity Selection over alternative algorithms?
 
 ### Application
+
 5. Can you implement Activity Selection from memory without looking at the code?
 6. What real-world problem could you solve using Activity Selection?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Activity Selection?
 8. How would you test your Activity Selection implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Activity Selection would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Activity Selection step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Activity Selection
 3. Explain why Activity Selection has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Activity Selection from scratch using only the function signature
 5. Modify Activity Selection to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Activity Selection for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Activity Selection
 9. Compare Activity Selection performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Activity Selection to solve a production problem
 11. Create unit tests with 100% code coverage for Activity Selection
 12. Write a technical blog post explaining Activity Selection to beginners
-
 
 ## Real-World Applications
 
 - **Enterprise Applications**: Activity Selection is widely used in production systems
 - **Performance Optimization**: Applied to improve system efficiency
 - **System Design**: Integral part of scalable architecture patterns
-
 
 ## Common Misconceptions
 
@@ -135,10 +131,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Activity Selection is too complex to understand"
 ✓ **CORRECT**: Activity Selection can be understood by breaking it down into smaller steps
 
-
 ## Examples of Implementation
-
-
 
 This algorithm/pattern is implemented in various frameworks and technologies.
 

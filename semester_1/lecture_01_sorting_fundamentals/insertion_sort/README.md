@@ -14,7 +14,7 @@ Insertion Sort addresses specific computational challenges.
 
 This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: A simple sorting algorithm that builds the final sorted array one item at a time, similar to how you sort playing cards in your hands.
 
@@ -24,14 +24,13 @@ This technique is applied in various domains to solve specific problems efficien
 **When NOT to Use**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
+
 ## Prerequisites
 
 - Basic programming knowledge in Python or Java
 - Understanding of arrays, lists, and basic data structures
 - Familiarity with loops, conditionals, and functions
 - Basic understanding of comparison operations
-
-
 
 By the end of this lecture, students will be able to:
 
@@ -47,14 +46,9 @@ By the end of this lecture, students will be able to:
 A simple sorting algorithm that builds the final sorted array one element at a time by inserting each element into its correct position. Solves the problem of sorting small datasets or nearly-sorted arrays efficiently. Example: Sorting playing cards in hand [7, 3, 9, 2] → [2, 3, 7, 9]. Works by maintaining a sorted subarray and inserting each new element in the correct position.
 
 **Key Characteristics:**
-- **Time Complexity**: Varies
-- **Space Complexity**: Varies
-- **Stability**: N/A
-- **Best Use Case**: General purpose
-
-
-See algorithm.py and Algorithm.java
-
+- **Time Complexity**: O(n²) worst case because each element may need to be compared with all previous elements, but O(n) for nearly sorted arrays.
+- **Space Complexity**: O(1) because it sorts in-place by shifting elements within the array without requiring additional memory.
+- **Stability**: N/A Stable because it inserts elements in their correct position without swapping equal elements, maintaining their original order.. Stable because it inserts elements in their correct position without swapping equal elements, maintaining their original order.
 
 ## Often Used Together With
 
@@ -69,9 +63,6 @@ Insertion Sort is commonly used in combination with:
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
-
-
-
 ## Do Not Confuse With
 
 - **Bubble Sort**: Similar O(n²) complexity but insertion sort inserts into sorted prefix, bubble sort swaps adjacent pairs
@@ -83,59 +74,63 @@ Insertion Sort is commonly used in combination with:
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Insertion Sort works in your own words?
 2. What is the key insight or technique that makes Insertion Sort efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Insertion Sort over alternative algorithms?
 
 ### Application
+
 5. Can you implement Insertion Sort from memory without looking at the code?
 6. What real-world problem could you solve using Insertion Sort?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Insertion Sort?
 8. How would you test your Insertion Sort implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Insertion Sort would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Insertion Sort step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Insertion Sort
 3. Explain why Insertion Sort has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Insertion Sort from scratch using only the function signature
 5. Modify Insertion Sort to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Insertion Sort for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Insertion Sort
 9. Compare Insertion Sort performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Insertion Sort to solve a production problem
 11. Create unit tests with 100% code coverage for Insertion Sort
 12. Write a technical blog post explaining Insertion Sort to beginners
-
 
 ## Real-World Applications
 
 - **Enterprise Applications**: Insertion Sort is widely used in production systems
 - **Performance Optimization**: Applied to improve system efficiency
 - **System Design**: Integral part of scalable architecture patterns
-
 
 ## Common Misconceptions
 
@@ -145,10 +140,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Insertion Sort is too complex to understand"
 ✓ **CORRECT**: Insertion Sort can be understood by breaking it down into smaller steps
 
-
 ## Examples of Implementation
-
-
 
 This algorithm/pattern is implemented in the following frameworks and technologies:
 
@@ -174,5 +166,4 @@ Collections.sort(orders, Comparator.comparing(Order::getDate));
 ```
 
 **Purpose**: J2EE implements this pattern for enterprise Java applications, EJB containers, and Java EE specifications.
-
 

@@ -14,7 +14,7 @@ Boyer Moore is boyer moore addresses specific computational challenges.
 
 This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: An algorithm that processes and manipulates sequences of characters to solve string-related problems.
 
@@ -24,13 +24,12 @@ This technique is applied in various domains to solve specific problems efficien
 **When NOT to Use**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
+
 ## Prerequisites
 
 - Completed Semesters 1-2
 - Understanding of graph data structures
 - Basic knowledge of recursion
-
-
 
 By the end of this lecture, students will be able to:
 
@@ -48,19 +47,12 @@ An algorithm that processes and manipulates sequences of characters to solve str
 - **Time Complexity**: Varies
 - **Space Complexity**: Varies
 - **Stability**: N/A
-- **Best Use Case**: General purpose
-
 
 Boyer-Moore Algorithm is used in String Algorithm.
 
 ## Implementation
 
-See algorithm.py and Algorithm.java for implementations.
-
-
-
-
-
+ for implementations.
 
 ## Do Not Confuse With
 
@@ -73,59 +65,63 @@ See algorithm.py and Algorithm.java for implementations.
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Boyer Moore works in your own words?
 2. What is the key insight or technique that makes Boyer Moore efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Boyer Moore over alternative algorithms?
 
 ### Application
+
 5. Can you implement Boyer Moore from memory without looking at the code?
 6. What real-world problem could you solve using Boyer Moore?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Boyer Moore?
 8. How would you test your Boyer Moore implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Boyer Moore would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Boyer Moore step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Boyer Moore
 3. Explain why Boyer Moore has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Boyer Moore from scratch using only the function signature
 5. Modify Boyer Moore to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Boyer Moore for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Boyer Moore
 9. Compare Boyer Moore performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Boyer Moore to solve a production problem
 11. Create unit tests with 100% code coverage for Boyer Moore
 12. Write a technical blog post explaining Boyer Moore to beginners
-
 
 ## Real-World Applications
 
 - **Enterprise Applications**: Boyer Moore is widely used in production systems
 - **Performance Optimization**: Applied to improve system efficiency
 - **System Design**: Integral part of scalable architecture patterns
-
 
 ## Common Misconceptions
 
@@ -135,10 +131,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Boyer Moore is too complex to understand"
 ✓ **CORRECT**: Boyer Moore can be understood by breaking it down into smaller steps
 
-
 ## Examples of Implementation
-
-
 
 This algorithm/pattern is implemented in various frameworks and technologies.
 

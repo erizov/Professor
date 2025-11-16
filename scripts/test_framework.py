@@ -34,7 +34,8 @@ except Exception as e:
 # Test 3: Check algorithms exist
 try:
     from pathlib import Path
-    count = len(list(Path('.').glob('semester_*/lecture_*/*')))
+    base_path = Path(__file__).resolve().parents[1]
+    count = len(list(base_path.glob('semester_*/lecture_*/*')))
     print(f"✓ Found {count} algorithm folders")
 except Exception as e:
     print(f"✗ Algorithm count error: {e}")

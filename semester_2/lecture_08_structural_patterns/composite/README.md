@@ -14,7 +14,7 @@ Composite addresses specific computational challenges.
 
 This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: A reusable solution to a commonly occurring problem in software design.
 
@@ -24,14 +24,13 @@ This technique is applied in various domains to solve specific problems efficien
 **When NOT to Use**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
+
 ## Prerequisites
 
 - Completed Semester 1 algorithms course
 - Understanding of object-oriented programming concepts
 - Familiarity with design principles (SOLID)
 - Knowledge of interfaces, inheritance, and polymorphism
-
-
 
 By the end of this lecture, students will be able to:
 
@@ -50,11 +49,6 @@ A reusable solution to a commonly occurring problem in software design. Solves p
 - **Time Complexity**: Varies
 - **Space Complexity**: Varies
 - **Stability**: N/A
-- **Best Use Case**: General purpose
-
-
-See algorithm.py and Algorithm.java
-
 
 ## Often Used Together With
 
@@ -70,9 +64,6 @@ Composite is commonly used in combination with:
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
-
-
-
 ## Do Not Confuse With
 
 - Creational vs structural vs behavioral patterns
@@ -84,59 +75,63 @@ Composite is commonly used in combination with:
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Composite works in your own words?
 2. What is the key insight or technique that makes Composite efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Composite over alternative algorithms?
 
 ### Application
+
 5. Can you implement Composite from memory without looking at the code?
 6. What real-world problem could you solve using Composite?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Composite?
 8. How would you test your Composite implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Composite would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Composite step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Composite
 3. Explain why Composite has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Composite from scratch using only the function signature
 5. Modify Composite to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Composite for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Composite
 9. Compare Composite performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Composite to solve a production problem
 11. Create unit tests with 100% code coverage for Composite
 12. Write a technical blog post explaining Composite to beginners
-
 
 ## Real-World Applications
 
 - **Enterprise Applications**: Composite is widely used in production systems
 - **Performance Optimization**: Applied to improve system efficiency
 - **System Design**: Integral part of scalable architecture patterns
-
 
 ## Common Misconceptions
 
@@ -146,10 +141,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Composite is too complex to understand"
 ✓ **CORRECT**: Composite can be understood by breaking it down into smaller steps
 
-
 ## Examples of Implementation
-
-
 
 This algorithm/pattern is implemented in the following frameworks and technologies:
 
@@ -164,5 +156,4 @@ public class Service {
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
-
 

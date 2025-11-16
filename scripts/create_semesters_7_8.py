@@ -15,7 +15,7 @@ import os
 from pathlib import Path
 import json
 
-BASE_PATH = Path(".")
+BASE_PATH = Path(__file__).resolve().parents[1]
 
 # Semester 7: Operating Systems, LLM, CI/CD, Quantum Computing
 SEMESTER_7_LECTURES = {

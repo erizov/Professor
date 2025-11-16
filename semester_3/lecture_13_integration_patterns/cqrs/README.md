@@ -14,7 +14,7 @@ Cqrs addresses specific computational challenges.
 
 This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: A reusable solution to a commonly occurring problem in software design.
 
@@ -24,13 +24,12 @@ This technique is applied in various domains to solve specific problems efficien
 **When NOT to Use**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
+
 ## Prerequisites
 
 - Completed Semesters 1-2
 - Understanding of graph data structures
 - Basic knowledge of recursion
-
-
 
 By the end of this lecture, students will be able to:
 
@@ -49,11 +48,6 @@ Command Query Responsibility Segregation pattern that separates read and write o
 - **Time Complexity**: Varies
 - **Space Complexity**: Varies
 - **Stability**: N/A
-- **Best Use Case**: General purpose
-
-
-See algorithm.py and Algorithm.java
-
 
 ## Often Used Together With
 
@@ -69,9 +63,6 @@ Cqrs is commonly used in combination with:
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
-
-
-
 ## Do Not Confuse With
 
 - **Event Sourcing**: CQRS separates read/write, event sourcing stores events (often used together)
@@ -83,59 +74,63 @@ Cqrs is commonly used in combination with:
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Cqrs works in your own words?
 2. What is the key insight or technique that makes Cqrs efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Cqrs over alternative algorithms?
 
 ### Application
+
 5. Can you implement Cqrs from memory without looking at the code?
 6. What real-world problem could you solve using Cqrs?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Cqrs?
 8. How would you test your Cqrs implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Cqrs would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Cqrs step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Cqrs
 3. Explain why Cqrs has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Cqrs from scratch using only the function signature
 5. Modify Cqrs to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Cqrs for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Cqrs
 9. Compare Cqrs performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Cqrs to solve a production problem
 11. Create unit tests with 100% code coverage for Cqrs
 12. Write a technical blog post explaining Cqrs to beginners
-
 
 ## Real-World Applications
 
 - **Enterprise Applications**: Cqrs is widely used in production systems
 - **Performance Optimization**: Applied to improve system efficiency
 - **System Design**: Integral part of scalable architecture patterns
-
 
 ## Common Misconceptions
 
@@ -145,10 +140,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Cqrs is too complex to understand"
 ✓ **CORRECT**: Cqrs can be understood by breaking it down into smaller steps
 
-
 ## Examples of Implementation
-
-
 
 This algorithm/pattern is implemented in the following frameworks and technologies:
 
@@ -163,5 +155,4 @@ public class Service {
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
-
 

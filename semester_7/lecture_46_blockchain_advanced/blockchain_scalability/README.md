@@ -12,7 +12,7 @@ Blockchain Scalability addresses concept in advanced blockchain.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: Methods to improve blockchain network capacity and transaction processing speed.
 
@@ -22,13 +22,12 @@ This algorithm/pattern is widely used in computer science and software engineeri
 **When NOT to Use**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
+
 ## Prerequisites
 
 - Completed previous semesters
 - Understanding of distributed systems concepts
 - Knowledge of system design principles
-
-
 
 By the end of this lecture, students will be able to:
 
@@ -43,13 +42,11 @@ By the end of this lecture, students will be able to:
 Methods to improve blockchain network capacity and transaction processing speed. Solves problems like network congestion, high transaction fees, and slow confirmation times. Example: Implementing sharding to split Ethereum into 64 parallel chains, each processing transactions independently. Works by dividing network into smaller segments, using off-chain processing, or optimizing consensus algorithms to increase throughput.
 
 **Key Characteristics:**
-- **Category**: Advanced Blockchain
-- **Use Case**: Production systems
-- **Complexity**: Varies by implementation
+- **Time Complexity**: Varies
+- **Space Complexity**: Varies
+- **Stability**: N/A
 
 ## Implementation
-
-See algorithm.py and Algorithm.java
 
 ## Often Used Together With
 
@@ -61,65 +58,68 @@ Blockchain Scalability is commonly used in combination with related algorithms a
 - Techniques with distinct use cases or complexity guarantees
 - Related concepts that serve different purposes
 
-
 ## Self-Assessment Questions
 
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Blockchain Scalability works in your own words?
 2. What is the key insight or technique that makes Blockchain Scalability efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Blockchain Scalability over alternative algorithms?
 
 ### Application
+
 5. Can you implement Blockchain Scalability from memory without looking at the code?
 6. What real-world problem could you solve using Blockchain Scalability?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Blockchain Scalability?
 8. How would you test your Blockchain Scalability implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Blockchain Scalability would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Blockchain Scalability step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Blockchain Scalability
 3. Explain why Blockchain Scalability has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Blockchain Scalability from scratch using only the function signature
 5. Modify Blockchain Scalability to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Blockchain Scalability for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Blockchain Scalability
 9. Compare Blockchain Scalability performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Blockchain Scalability to solve a production problem
 11. Create unit tests with 100% code coverage for Blockchain Scalability
 12. Write a technical blog post explaining Blockchain Scalability to beginners
-
 
 ## Real-World Applications
 
 - **Enterprise Applications**: Blockchain Scalability is widely used in production systems
 - **Performance Optimization**: Applied to improve system efficiency
 - **System Design**: Integral part of scalable architecture patterns
-
 
 ## Common Misconceptions
 
@@ -129,9 +129,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Blockchain Scalability is too complex to understand"
 ✓ **CORRECT**: Blockchain Scalability can be understood by breaking it down into smaller steps
 
-
 ## Examples of Implementation
-
 
 This algorithm/pattern is implemented in various frameworks and technologies.
 

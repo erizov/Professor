@@ -12,7 +12,7 @@ Merkle Trees addresses concept in blockchain fundamentals.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: A tree-based algorithm that processes hierarchical data structures.
 
@@ -22,13 +22,12 @@ This algorithm/pattern is widely used in computer science and software engineeri
 **When NOT to Use**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
+
 ## Prerequisites
 
 - Completed previous semesters
 - Understanding of distributed systems concepts
 - Knowledge of system design principles
-
-
 
 By the end of this lecture, students will be able to:
 
@@ -43,13 +42,11 @@ By the end of this lecture, students will be able to:
 A tree-based algorithm that processes hierarchical data structures. Solves problems involving parent-child relationships and hierarchical organization. Example: Organizing file systems or representing organizational charts. Works by traversing nodes and edges in tree structures.
 
 **Key Characteristics:**
-- **Category**: Blockchain Fundamentals
-- **Use Case**: Production systems
-- **Complexity**: Varies by implementation
+- **Time Complexity**: Varies
+- **Space Complexity**: Varies
+- **Stability**: N/A
 
 ## Implementation
-
-See algorithm.py and Algorithm.java
 
 ## Often Used Together With
 
@@ -61,65 +58,68 @@ Merkle Trees is commonly used in combination with related algorithms and pattern
 - Techniques with distinct use cases or complexity guarantees
 - Related concepts that serve different purposes
 
-
 ## Self-Assessment Questions
 
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Merkle Trees works in your own words?
 2. What is the key insight or technique that makes Merkle Trees efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Merkle Trees over alternative algorithms?
 
 ### Application
+
 5. Can you implement Merkle Trees from memory without looking at the code?
 6. What real-world problem could you solve using Merkle Trees?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Merkle Trees?
 8. How would you test your Merkle Trees implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Merkle Trees would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Merkle Trees step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Merkle Trees
 3. Explain why Merkle Trees has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Merkle Trees from scratch using only the function signature
 5. Modify Merkle Trees to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Merkle Trees for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Merkle Trees
 9. Compare Merkle Trees performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Merkle Trees to solve a production problem
 11. Create unit tests with 100% code coverage for Merkle Trees
 12. Write a technical blog post explaining Merkle Trees to beginners
-
 
 ## Real-World Applications
 
 - **Enterprise Applications**: Merkle Trees is widely used in production systems
 - **Performance Optimization**: Applied to improve system efficiency
 - **System Design**: Integral part of scalable architecture patterns
-
 
 ## Common Misconceptions
 
@@ -129,9 +129,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Merkle Trees is too complex to understand"
 ✓ **CORRECT**: Merkle Trees can be understood by breaking it down into smaller steps
 
-
 ## Examples of Implementation
-
 
 This algorithm/pattern is implemented in various frameworks and technologies.
 

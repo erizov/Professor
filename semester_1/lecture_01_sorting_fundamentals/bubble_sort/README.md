@@ -14,7 +14,7 @@ Bubble Sort addresses specific computational challenges.
 
 This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: A simple comparison-based sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order.
 
@@ -24,14 +24,13 @@ This technique is applied in various domains to solve specific problems efficien
 **When NOT to Use**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
+
 ## Prerequisites
 
 - Basic programming knowledge in Python or Java
 - Understanding of arrays, lists, and basic data structures
 - Familiarity with loops, conditionals, and functions
 - Basic understanding of comparison operations
-
-
 
 By the end of this lecture, students will be able to:
 
@@ -47,14 +46,9 @@ By the end of this lecture, students will be able to:
 A comparison-based sorting algorithm that repeatedly compares adjacent elements and swaps them if they are in the wrong order. Solves the problem of arranging elements in ascending or descending order. Example: Sorting student grades [85, 92, 78, 95] → [78, 85, 92, 95]. Works by making multiple passes through the array, 'bubbling' larger elements to the end with each pass.
 
 **Key Characteristics:**
-- **Time Complexity**: Varies
-- **Space Complexity**: Varies
-- **Stability**: N/A
-- **Best Use Case**: General purpose
-
-
-See algorithm.py and Algorithm.java
-
+- **Time Complexity**: O(n²) because it makes n passes through the array, and each pass compares and potentially swaps adjacent elements.
+- **Space Complexity**: O(1) because it only uses a constant amount of extra space for temporary variables during swapping.
+- **Stability**: N/A Stable because it only swaps adjacent elements when they are out of order, preserving the relative order of equal elements.. Stable because it only swaps adjacent elements when they are out of order, preserving the relative order of equal elements.
 
 ## Often Used Together With
 
@@ -70,72 +64,74 @@ Bubble Sort is commonly used in combination with:
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
-
 ## Do Not Confuse With
 
 - **Insertion Sort**: Both O(n²) but insertion sort builds sorted prefix by inserting elements, while bubble sort swaps adjacent pairs
 - **Selection Sort**: Both O(n²) but selection sort finds minimum each pass, bubble sort uses adjacent swaps
 - **Cocktail Sort**: Bidirectional bubble sort variant, not the same algorithm
 
-
 ## Self-Assessment Questions
 
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Bubble Sort works in your own words?
 2. What is the key insight or technique that makes Bubble Sort efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Bubble Sort over alternative algorithms?
 
 ### Application
+
 5. Can you implement Bubble Sort from memory without looking at the code?
 6. What real-world problem could you solve using Bubble Sort?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Bubble Sort?
 8. How would you test your Bubble Sort implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Bubble Sort would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Bubble Sort step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Bubble Sort
 3. Explain why Bubble Sort has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Bubble Sort from scratch using only the function signature
 5. Modify Bubble Sort to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Bubble Sort for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Bubble Sort
 9. Compare Bubble Sort performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Bubble Sort to solve a production problem
 11. Create unit tests with 100% code coverage for Bubble Sort
 12. Write a technical blog post explaining Bubble Sort to beginners
-
 
 ## Real-World Applications
 
 - **Enterprise Applications**: Bubble Sort is widely used in production systems
 - **Performance Optimization**: Applied to improve system efficiency
 - **System Design**: Integral part of scalable architecture patterns
-
 
 ## Common Misconceptions
 
@@ -145,10 +141,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Bubble Sort is too complex to understand"
 ✓ **CORRECT**: Bubble Sort can be understood by breaking it down into smaller steps
 
-
 ## Examples of Implementation
-
-
 
 This algorithm/pattern is implemented in the following frameworks and technologies:
 
@@ -174,5 +167,4 @@ Collections.sort(orders, Comparator.comparing(Order::getDate));
 ```
 
 **Purpose**: J2EE implements this pattern for enterprise Java applications, EJB containers, and Java EE specifications.
-
 

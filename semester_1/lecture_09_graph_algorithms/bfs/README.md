@@ -6,7 +6,7 @@ Bfs addresses specific computational challenges.
 
 This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: A graph traversal algorithm that explores all vertices at the current depth level before moving to vertices at the next depth level.
 
@@ -16,13 +16,12 @@ This technique is applied in various domains to solve specific problems efficien
 **When NOT to Use**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
+
 ## Prerequisites
 
 - Basic programming knowledge in Python or Java
 - Understanding of arrays, lists, and basic data structures
 - Familiarity with loops, conditionals, and functions
-
-
 
 By the end of this lecture, students will be able to:
 
@@ -38,13 +37,9 @@ By the end of this lecture, students will be able to:
 A graph traversal algorithm that explores all vertices at the current depth level before moving to vertices at the next depth level. Solves problems like finding shortest paths in unweighted graphs, social network analysis, and web crawling. Example: Finding the minimum number of connections between two LinkedIn users. Works by using a queue to process vertices level by level, ensuring shortest path discovery.
 
 **Key Characteristics:**
-- **Time Complexity**: Varies
-- **Space Complexity**: Varies
-- **Stability**: N/A
-- **Best Use Case**: General purpose
-
-
-
+- **Time Complexity**: O(V + E) where V is vertices and E is edges, because each vertex and edge is visited exactly once.
+- **Space Complexity**: O(V) because the queue can contain at most all vertices, and visited set stores all vertices.
+- **Stability**: N/A N/A - graph traversal algorithms don't have stability since they don't sort or rearrange elements.. N/A - graph traversal algorithms don't have stability since they don't sort or rearrange elements.
 
 ## Often Used Together With
 
@@ -59,72 +54,74 @@ Bfs is commonly used in combination with:
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
-
 ## Do Not Confuse With
 
 - **DFS**: BFS explores level by level (queue-based), DFS goes deep first (stack-based)
 - **Dijkstra's Algorithm**: BFS finds shortest path in unweighted graphs, Dijkstra handles weighted graphs
 - **Level-Order Traversal**: BFS is level-order traversal for trees, but BFS works on any graph
 
-
 ## Self-Assessment Questions
 
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Bfs works in your own words?
 2. What is the key insight or technique that makes Bfs efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Bfs over alternative algorithms?
 
 ### Application
+
 5. Can you implement Bfs from memory without looking at the code?
 6. What real-world problem could you solve using Bfs?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Bfs?
 8. How would you test your Bfs implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Bfs would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Bfs step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Bfs
 3. Explain why Bfs has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Bfs from scratch using only the function signature
 5. Modify Bfs to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Bfs for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Bfs
 9. Compare Bfs performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Bfs to solve a production problem
 11. Create unit tests with 100% code coverage for Bfs
 12. Write a technical blog post explaining Bfs to beginners
-
 
 ## Real-World Applications
 
 - **Social Networks**: Finding shortest path between users (degrees of separation)
 - **Web Crawling**: Discovering all pages on a website
 - **GPS Navigation**: Finding shortest route between locations
-
 
 ## Common Misconceptions
 
@@ -134,10 +131,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Bfs is too complex to understand"
 ✓ **CORRECT**: Bfs can be understood by breaking it down into smaller steps
 
-
 ## Examples of Implementation
-
-
 
 This algorithm/pattern is implemented in the following frameworks and technologies:
 
@@ -172,5 +166,4 @@ spec:
 ```
 
 **Purpose**: Kubernetes uses this pattern for container orchestration, service discovery, and resource management.
-
 

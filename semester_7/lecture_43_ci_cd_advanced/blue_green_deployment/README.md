@@ -12,7 +12,7 @@ Blue Green Deployment addresses concept in advanced ci/cd.
 
 This algorithm/pattern is widely used in computer science and software engineering for solving a specific class of problems efficiently.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: A deployment strategy that maintains two identical production environments (blue and green), switching traffic between them for zero-downtime deployments.
 
@@ -22,13 +22,12 @@ This algorithm/pattern is widely used in computer science and software engineeri
 **When NOT to Use**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
+
 ## Prerequisites
 
 - Completed previous semesters
 - Understanding of distributed systems concepts
 - Knowledge of system design principles
-
-
 
 By the end of this lecture, students will be able to:
 
@@ -43,13 +42,11 @@ By the end of this lecture, students will be able to:
 A deployment strategy that maintains two identical production environments (blue and green), switching traffic between them for zero-downtime deployments. Solves problems like deployment risk, rollback complexity, and service interruption. Example: Deploying new version to green environment, testing it, then switching all traffic from blue to green instantly. Works by maintaining parallel environments and using load balancer to route traffic, enabling instant rollback by switching back.
 
 **Key Characteristics:**
-- **Category**: Advanced CI/CD
-- **Use Case**: Production systems
-- **Complexity**: Varies by implementation
+- **Time Complexity**: Varies
+- **Space Complexity**: Varies
+- **Stability**: N/A
 
 ## Implementation
-
-See algorithm.py and Algorithm.java
 
 ## Often Used Together With
 
@@ -61,65 +58,68 @@ Blue Green Deployment is commonly used in combination with related algorithms an
 - Techniques with distinct use cases or complexity guarantees
 - Related concepts that serve different purposes
 
-
 ## Self-Assessment Questions
 
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Blue Green Deployment works in your own words?
 2. What is the key insight or technique that makes Blue Green Deployment efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Blue Green Deployment over alternative algorithms?
 
 ### Application
+
 5. Can you implement Blue Green Deployment from memory without looking at the code?
 6. What real-world problem could you solve using Blue Green Deployment?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Blue Green Deployment?
 8. How would you test your Blue Green Deployment implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Blue Green Deployment would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Blue Green Deployment step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Blue Green Deployment
 3. Explain why Blue Green Deployment has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Blue Green Deployment from scratch using only the function signature
 5. Modify Blue Green Deployment to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Blue Green Deployment for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Blue Green Deployment
 9. Compare Blue Green Deployment performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Blue Green Deployment to solve a production problem
 11. Create unit tests with 100% code coverage for Blue Green Deployment
 12. Write a technical blog post explaining Blue Green Deployment to beginners
-
 
 ## Real-World Applications
 
 - **Enterprise Applications**: Blue Green Deployment is widely used in production systems
 - **Performance Optimization**: Applied to improve system efficiency
 - **System Design**: Integral part of scalable architecture patterns
-
 
 ## Common Misconceptions
 
@@ -129,10 +129,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Blue Green Deployment is too complex to understand"
 ✓ **CORRECT**: Blue Green Deployment can be understood by breaking it down into smaller steps
 
-
 ## Examples of Implementation
-
-
 
 This algorithm/pattern is implemented in various frameworks and technologies.
 

@@ -9,13 +9,8 @@
 ## Implementation
 
 ## Introduction## Introduction
-## Introduction## Introduction
 
-Quick Sort addresses specific computational challenges.
-
-This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
-
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: A divide-and-conquer sorting algorithm that partitions an array around a pivot element, recursively sorting subarrays.
 
@@ -47,14 +42,9 @@ By the end of this lecture, students will be able to:
 A divide-and-conquer sorting algorithm that partitions an array around a pivot element, then recursively sorts the subarrays. Solves the problem of efficiently sorting large datasets. Example: Sorting product prices [29.99, 15.50, 45.00, 12.99] → [12.99, 15.50, 29.99, 45.00]. Works by selecting a pivot, partitioning elements smaller/larger than pivot, then recursively sorting partitions.
 
 **Key Characteristics:**
-- **Time Complexity**: Varies
-- **Space Complexity**: Varies
-- **Stability**: N/A
-- **Best Use Case**: General purpose
-
-
-See algorithm.py and Algorithm.java
-
+- **Time Complexity**: O(n log n) average case because it divides the array in half on average each recursion, but O(n²) worst case when pivot is always the smallest/largest element.
+- **Space Complexity**: O(log n) for the recursion stack since the depth of recursion is logarithmic in the average case.
+- **Stability**: N/A Not stable because equal elements may be swapped during partitioning, changing their relative order.. Not stable because equal elements may be swapped during partitioning, changing their relative order.
 
 ## Often Used Together With
 
@@ -69,39 +59,39 @@ Quick Sort is commonly used in combination with:
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
-
 ## Do Not Confuse With
 
 - **Merge Sort**: Both divide-and-conquer O(n log n) but quick sort is in-place and unstable, merge sort requires O(n) space and is stable
 - **Heap Sort**: Both O(n log n) but heap sort guarantees O(n log n) worst-case, quick sort can degrade to O(n²)
 - **Intro Sort**: Hybrid that uses quick sort but falls back to heap sort to avoid worst-case performance
 
-
 ## Self-Assessment Questions
 
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Quick Sort works in your own words?
 2. What is the key insight or technique that makes Quick Sort efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Quick Sort over alternative algorithms?
 
 ### Application
+
 5. Can you implement Quick Sort from memory without looking at the code?
 6. What real-world problem could you solve using Quick Sort?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Quick Sort?
 8. How would you test your Quick Sort implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
 
-
 ## Algorithm Visualization
-
 
 ```
 Quick Sort Visualization: [5, 2, 8, 1, 9]
@@ -115,36 +105,37 @@ Recurse left:      [1, 2]  [5]  [8, 9]
 Combine:           [1, 2, 5, 8, 9]
 ```
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Quick Sort step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Quick Sort
 3. Explain why Quick Sort has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Quick Sort from scratch using only the function signature
 5. Modify Quick Sort to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Quick Sort for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Quick Sort
 9. Compare Quick Sort performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Quick Sort to solve a production problem
 11. Create unit tests with 100% code coverage for Quick Sort
 12. Write a technical blog post explaining Quick Sort to beginners
-
 
 ## Real-World Applications
 
 - **Database Systems**: Used in SQL ORDER BY operations for efficient query result sorting
 - **Operating Systems**: Process scheduling and file system organization
 - **Gaming**: Leaderboard ranking and score sorting
-
 
 ## Common Misconceptions
 
@@ -154,10 +145,7 @@ Combine:           [1, 2, 5, 8, 9]
 ❌ **WRONG**: "Quick Sort requires O(n) extra space"
 ✓ **CORRECT**: Quick Sort is in-place with O(log n) space for recursion stack
 
-
 ## Examples of Implementation
-
-
 
 This algorithm/pattern is implemented in the following frameworks and technologies:
 
@@ -186,5 +174,4 @@ Collections.sort(orders, Comparator.comparing(Order::getDate));
 ```
 
 **Purpose**: J2EE implements this pattern for enterprise Java applications, EJB containers, and Java EE specifications.
-
 

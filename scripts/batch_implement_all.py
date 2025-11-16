@@ -221,7 +221,7 @@ def implement_algorithm(algo_path):
 
 def main():
     """Generate implementations for all pending algorithms."""
-    base_path = Path(".")
+    base_path = Path(__file__).resolve().parents[1]
     
     pending_algorithms = []
     

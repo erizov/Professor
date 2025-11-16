@@ -14,7 +14,7 @@ Observer addresses specific computational challenges.
 
 This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: A behavioral design pattern that defines a one-to-many dependency between objects, so when one object changes state, all dependents are notified.
 
@@ -24,14 +24,13 @@ This technique is applied in various domains to solve specific problems efficien
 **When NOT to Use**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
+
 ## Prerequisites
 
 - Completed Semester 1 algorithms course
 - Understanding of object-oriented programming concepts
 - Familiarity with design principles (SOLID)
 - Knowledge of interfaces, inheritance, and polymorphism
-
-
 
 By the end of this lecture, students will be able to:
 
@@ -50,11 +49,6 @@ A behavioral design pattern that defines a one-to-many dependency between object
 - **Time Complexity**: Varies
 - **Space Complexity**: Varies
 - **Stability**: N/A
-- **Best Use Case**: General purpose
-
-
-See algorithm.py and Algorithm.java
-
 
 ## Often Used Together With
 
@@ -69,72 +63,74 @@ Observer is commonly used in combination with:
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
-
 ## Do Not Confuse With
 
 - **Pub-Sub Pattern**: Observer is synchronous push model, pub-sub is asynchronous message-based
 - **Mediator Pattern**: Observer has direct subject-observer relationship, mediator centralizes communication
 - **Chain of Responsibility**: Observer notifies all, chain of responsibility passes request along chain
 
-
 ## Self-Assessment Questions
 
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Observer works in your own words?
 2. What is the key insight or technique that makes Observer efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Observer over alternative algorithms?
 
 ### Application
+
 5. Can you implement Observer from memory without looking at the code?
 6. What real-world problem could you solve using Observer?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Observer?
 8. How would you test your Observer implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Observer would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Observer step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Observer
 3. Explain why Observer has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Observer from scratch using only the function signature
 5. Modify Observer to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Observer for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Observer
 9. Compare Observer performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Observer to solve a production problem
 11. Create unit tests with 100% code coverage for Observer
 12. Write a technical blog post explaining Observer to beginners
-
 
 ## Real-World Applications
 
 - **Model-View Architectures**: UI updates when data changes
 - **Event Systems**: Pub-sub messaging in distributed systems
 - **Reactive Programming**: RxJava, React.js state management
-
 
 ## Common Misconceptions
 
@@ -144,10 +140,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Observer is too complex to understand"
 ✓ **CORRECT**: Observer can be understood by breaking it down into smaller steps
 
-
 ## Examples of Implementation
-
-
 
 This algorithm/pattern is implemented in the following frameworks and technologies:
 
@@ -211,5 +204,4 @@ public class EmailService {
 ```
 
 **Purpose**: .NET Framework uses this pattern for dependency injection, ASP.NET Core, and enterprise application development.
-
 

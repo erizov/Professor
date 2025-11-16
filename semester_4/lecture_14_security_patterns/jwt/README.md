@@ -14,7 +14,7 @@ Jwt is jwt addresses specific computational challenges.
 
 This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: A compact, URL-safe token format for securely transmitting information between parties as a JSON object.
 
@@ -24,14 +24,13 @@ This technique is applied in various domains to solve specific problems efficien
 **When NOT to Use**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
+
 ## Prerequisites
 
 - Completed previous semesters
 - Understanding of distributed systems concepts
 - Knowledge of system design principles
 - Basic understanding of cryptography
-
-
 
 By the end of this lecture, students will be able to:
 
@@ -50,11 +49,6 @@ A compact, URL-safe token format for securely transmitting information between p
 - **Time Complexity**: Varies
 - **Space Complexity**: Varies
 - **Stability**: N/A
-- **Best Use Case**: General purpose
-
-
-See algorithm.py and Algorithm.java
-
 
 ## Often Used Together With
 
@@ -70,9 +64,6 @@ Jwt is commonly used in combination with:
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
-
-
-
 ## Do Not Confuse With
 
 - **Session Tokens**: JWT is stateless and self-contained, session tokens require server-side storage
@@ -84,59 +75,63 @@ Jwt is commonly used in combination with:
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Jwt works in your own words?
 2. What is the key insight or technique that makes Jwt efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Jwt over alternative algorithms?
 
 ### Application
+
 5. Can you implement Jwt from memory without looking at the code?
 6. What real-world problem could you solve using Jwt?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Jwt?
 8. How would you test your Jwt implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Jwt would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Jwt step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Jwt
 3. Explain why Jwt has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Jwt from scratch using only the function signature
 5. Modify Jwt to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Jwt for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Jwt
 9. Compare Jwt performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Jwt to solve a production problem
 11. Create unit tests with 100% code coverage for Jwt
 12. Write a technical blog post explaining Jwt to beginners
-
 
 ## Real-World Applications
 
 - **REST APIs**: Stateless authentication for microservices
 - **Single Sign-On (SSO)**: Cross-domain authentication
 - **Mobile Apps**: Secure token-based authentication
-
 
 ## Common Misconceptions
 
@@ -146,10 +141,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Jwt is too complex to understand"
 ✓ **CORRECT**: Jwt can be understood by breaking it down into smaller steps
 
-
 ## Examples of Implementation
-
-
 
 This algorithm/pattern is implemented in the following frameworks and technologies:
 
@@ -207,5 +199,4 @@ public class JwtTokenService {
 ```
 
 **Purpose**: .NET Framework uses this pattern for dependency injection, ASP.NET Core, and enterprise application development.
-
 

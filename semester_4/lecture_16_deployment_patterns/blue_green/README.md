@@ -14,7 +14,7 @@ Blue Green is blue green addresses specific computational challenges.
 
 This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: A deployment strategy that maintains two identical production environments, switching traffic between them for zero-downtime deployments.
 
@@ -24,14 +24,13 @@ This technique is applied in various domains to solve specific problems efficien
 **When NOT to Use**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
+
 ## Prerequisites
 
 - Completed previous semesters
 - Understanding of distributed systems concepts
 - Knowledge of system design principles
 - Familiarity with containerization (Docker)
-
-
 
 By the end of this lecture, students will be able to:
 
@@ -49,11 +48,6 @@ A deployment strategy that maintains two identical production environments (blue
 - **Time Complexity**: Varies
 - **Space Complexity**: Varies
 - **Stability**: N/A
-- **Best Use Case**: General purpose
-
-
-See algorithm.py and Algorithm.java
-
 
 ## Often Used Together With
 
@@ -69,9 +63,6 @@ Blue Green is commonly used in combination with:
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
-
-
-
 ## Do Not Confuse With
 
 - **Canary Deployment**: Blue-green switches all traffic instantly, canary gradually increases traffic
@@ -83,59 +74,63 @@ Blue Green is commonly used in combination with:
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Blue Green works in your own words?
 2. What is the key insight or technique that makes Blue Green efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Blue Green over alternative algorithms?
 
 ### Application
+
 5. Can you implement Blue Green from memory without looking at the code?
 6. What real-world problem could you solve using Blue Green?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Blue Green?
 8. How would you test your Blue Green implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Blue Green would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Blue Green step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Blue Green
 3. Explain why Blue Green has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Blue Green from scratch using only the function signature
 5. Modify Blue Green to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Blue Green for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Blue Green
 9. Compare Blue Green performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Blue Green to solve a production problem
 11. Create unit tests with 100% code coverage for Blue Green
 12. Write a technical blog post explaining Blue Green to beginners
-
 
 ## Real-World Applications
 
 - **Enterprise Applications**: Blue Green is widely used in production systems
 - **Performance Optimization**: Applied to improve system efficiency
 - **System Design**: Integral part of scalable architecture patterns
-
 
 ## Common Misconceptions
 
@@ -145,10 +140,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Blue Green is too complex to understand"
 ✓ **CORRECT**: Blue Green can be understood by breaking it down into smaller steps
 
-
 ## Examples of Implementation
-
-
 
 This algorithm/pattern is implemented in the following frameworks and technologies:
 
@@ -222,5 +214,4 @@ spec:
 ```
 
 **Purpose**: Kubernetes uses this pattern for container orchestration, service discovery, and resource management.
-
 

@@ -14,7 +14,7 @@ Heap Sort addresses specific computational challenges.
 
 This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
 
-## TL;DR (Too Long; Didn't Read)
+## TL;DR
 
 **One Sentence**: An in-place sorting algorithm that uses a binary heap data structure to sort elements by repeatedly extracting the maximum element.
 
@@ -24,14 +24,13 @@ This technique is applied in various domains to solve specific problems efficien
 **When NOT to Use**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
+
 ## Prerequisites
 
 - Basic programming knowledge in Python or Java
 - Understanding of arrays, lists, and basic data structures
 - Familiarity with loops, conditionals, and functions
 - Basic understanding of comparison operations
-
-
 
 By the end of this lecture, students will be able to:
 
@@ -47,14 +46,9 @@ By the end of this lecture, students will be able to:
 An in-place sorting algorithm that uses a binary heap data structure to sort elements. Solves the problem of sorting without requiring additional memory space. Example: Sorting employee IDs [1005, 1001, 1008, 1002] → [1001, 1002, 1005, 1008]. Works by building a max-heap, then repeatedly extracting the maximum element and placing it at the end of the array.
 
 **Key Characteristics:**
-- **Time Complexity**: Varies
-- **Space Complexity**: Varies
-- **Stability**: N/A
-- **Best Use Case**: General purpose
-
-
-See algorithm.py and Algorithm.java
-
+- **Time Complexity**: O(n log n) because building the heap takes O(n) and each of the n extract-max operations takes O(log n).
+- **Space Complexity**: O(1) because it sorts in-place by rearranging elements within the original array without additional data structures.
+- **Stability**: N/A Not stable because heap operations can swap elements that are far apart, potentially changing the relative order of equal elements.. Not stable because heap operations can swap elements that are far apart, potentially changing the relative order of equal elements.
 
 ## Often Used Together With
 
@@ -69,9 +63,6 @@ Heap Sort is commonly used in combination with:
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
-
-
-
 ## Do Not Confuse With
 
 - **Selection Sort**: Both use selection principle but heap sort achieves O(n log n) via heap, selection sort is O(n²)
@@ -83,59 +74,63 @@ Heap Sort is commonly used in combination with:
 Test your understanding with these questions:
 
 ### Comprehension
+
 1. Can you explain how Heap Sort works in your own words?
 2. What is the key insight or technique that makes Heap Sort efficient?
 
 ### Analysis
+
 3. What are the best-case, average-case, and worst-case time complexities?
 4. When would you choose Heap Sort over alternative algorithms?
 
 ### Application
+
 5. Can you implement Heap Sort from memory without looking at the code?
 6. What real-world problem could you solve using Heap Sort?
 
 ### Debugging
+
 7. What are the most common mistakes when implementing Heap Sort?
 8. How would you test your Heap Sort implementation?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
-
 
 ## Algorithm Visualization
 
 *Visual diagram for Heap Sort would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-
 ## Practice Exercises
 
 ### Level 1: Understanding (Beginner)
+
 1. Trace through Heap Sort step-by-step with input: [5, 2, 8, 1, 9]
 2. Identify the base case(s) in Heap Sort
 3. Explain why Heap Sort has its time complexity
 
 ### Level 2: Implementation (Intermediate)
+
 4. Implement Heap Sort from scratch using only the function signature
 5. Modify Heap Sort to handle edge cases (empty input, single element, etc.)
 6. Add logging to track the algorithm's execution steps
 
 ### Level 3: Optimization (Advanced)
+
 7. Optimize Heap Sort for a specific use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Heap Sort
 9. Compare Heap Sort performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
+
 10. Design a system that uses Heap Sort to solve a production problem
 11. Create unit tests with 100% code coverage for Heap Sort
 12. Write a technical blog post explaining Heap Sort to beginners
-
 
 ## Real-World Applications
 
 - **Enterprise Applications**: Heap Sort is widely used in production systems
 - **Performance Optimization**: Applied to improve system efficiency
 - **System Design**: Integral part of scalable architecture patterns
-
 
 ## Common Misconceptions
 
@@ -145,10 +140,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Heap Sort is too complex to understand"
 ✓ **CORRECT**: Heap Sort can be understood by breaking it down into smaller steps
 
-
 ## Examples of Implementation
-
-
 
 This algorithm/pattern is implemented in the following frameworks and technologies:
 
@@ -165,5 +157,4 @@ value: 1000
 ```
 
 **Purpose**: Kubernetes uses this pattern for container orchestration, service discovery, and resource management.
-
 
