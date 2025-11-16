@@ -155,8 +155,6 @@ public class EncryptionService {
  cipher.init(Cipher.ENCRYPT_MODE, secretKey);
  byte[] encrypted = cipher.doFinal(plaintext.getBytes());
  return Base64.getEncoder().encodeToString(encrypted);
- }
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
@@ -165,7 +163,6 @@ public class EncryptionService {
 
 ```csharp
 // .NET AES Encryption
-public class EncryptionService {
  public string Encrypt(string plaintext) {
  using (Aes aes = Aes.Create()) {
  aes.Key = Encoding.UTF8.GetBytes("32-byte-key-here-123456789012");
@@ -176,14 +173,7 @@ public class EncryptionService {
  using (CryptoStream cs = new CryptoStream(ms, encryptor, CryptoStreamMode.Write)) {
  using (StreamWriter sw = new StreamWriter(cs)) {
  sw.Write(plaintext);
- }
- }
  return Convert.ToBase64String(ms.ToArray());
- }
- }
- }
-}
-```
 
 **Purpose**: .NET Framework uses this pattern for dependency injection, ASP.NET Core, and enterprise application development.
 

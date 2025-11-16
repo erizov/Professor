@@ -162,14 +162,11 @@ public class OrderController { // View
  model.addAttribute("order", order);
  return "order-detail"; // View name
  }
-}
 
 @Service
 public class OrderService { // Model
  public Order findById(Long id) {
  return orderRepository.findById(id).orElseThrow();
- }
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
@@ -184,20 +181,15 @@ public class OrderController : Controller {
  
  public OrderController(IOrderService orderService) {
  this.orderService = orderService;
- }
  
  public IActionResult Details(int id) {
  var order = orderService.GetById(id);
  return View(order); // View
- }
-}
 
 // Model
 public class Order {
  public int Id { get; set; }
  public decimal Total { get; set; }
-}
-```
 
 **Purpose**: .NET Framework uses this pattern for dependency injection, ASP.NET Core, and enterprise application development.
 

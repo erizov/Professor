@@ -104,14 +104,11 @@ Step 1: Check middle (index 2, value 5)
 
 Step 2: Check middle of right half (index 4, value 9)
 [7, 9, 11]
- ↑
  9 > 7, search left
 
 Step 3: Check remaining (index 3, value 7)
 [7]
- ↑
  Found! Index 3
-```
 
 ## Worked Example: Finding 7 in [1, 3, 5, 7, 9, 11, 13]
 
@@ -191,7 +188,6 @@ public interface UserRepository extends JpaRepository<User, Long> {
  // Binary search for range queries
  List<User> findByIdBetween(Long start, Long end);
 }
-```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
 
@@ -203,8 +199,6 @@ int[] sortedIds = GetSortedUserIds();
 int index = Array.BinarySearch(sortedIds, userId);
 if (index >= 0) {
  return users[index];
-}
-```
 
 **Purpose**: .NET Framework uses this pattern for dependency injection, ASP.NET Core, and enterprise application development.
 
@@ -233,8 +227,8 @@ if (index >= 0) {
 | Criterion | Excellent (5) | Good (4) | Adequate (3) | Poor (2) |
 |-----------|---------------|----------|--------------|----------|
 | **Correctness** | All tests pass, handles edge cases | 90%+ tests pass | 70%+ tests pass | <70% tests pass |
-| **Efficiency** | Optimal complexity | Near optimal | Works but inefficient | Very inefficient |
-| **Code Quality** | Excellent style, very readable | Good style, readable | Adequate style | Poor style |
+| **Efficiency** | Optimal complexity | Near optimal | Works but inefficient | inefficient |
+| **Code Quality** | Excellent style, readable | Good style, readable | Adequate style | Poor style |
 | **Testing** | 90%+ coverage, comprehensive | 70%+ coverage, good | 50%+ coverage, basic | <50% coverage |
 | **Documentation** | Complete, clear, examples | Mostly complete | Some gaps | Missing key parts |
 

@@ -158,7 +158,6 @@ class UserServiceTest {
  User found = userService.findUser(1L);
  assertEquals("test", found.getUsername());
  }
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
@@ -174,7 +173,6 @@ public class UserServiceTests {
  public UserServiceTests() {
  mockRepository = new Mock<IUserRepository>();
  userService = new UserService(mockRepository.Object);
- }
  
  [Fact]
  public void GetUser_ReturnsUser_WhenExists() {
@@ -184,9 +182,6 @@ public class UserServiceTests {
  var result = userService.GetUser(1);
  
  Assert.Equal("test", result.Username);
- }
-}
-```
 
 **Purpose**: .NET Framework uses this pattern for dependency injection, ASP.NET Core, and enterprise application development.
 

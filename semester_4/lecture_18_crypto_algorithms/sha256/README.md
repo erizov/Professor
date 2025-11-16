@@ -149,8 +149,6 @@ public class PasswordEncoder {
  } catch (NoSuchAlgorithmException e) {
  throw new RuntimeException(e);
  }
- }
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
@@ -164,10 +162,6 @@ public class PasswordHasher {
  using (SHA256 sha256 = SHA256.Create()) {
  byte[] hashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
  return Convert.ToBase64String(hashBytes);
- }
- }
-}
-```
 
 **Purpose**: .NET Framework uses this pattern for dependency injection, ASP.NET Core, and enterprise application development.
 

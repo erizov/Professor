@@ -160,7 +160,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
  .authorities(getAuthorities(user))
  .build();
  }
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
@@ -174,13 +173,9 @@ public class AuthenticationService {
  var user = await userRepository.FindByUsernameAsync(username);
  if (user == null || !VerifyPassword(password, user.PasswordHash)) {
  return AuthResult.Failed();
- }
  
  var token = jwtTokenService.GenerateToken(user);
  return AuthResult.Success(token);
- }
-}
-```
 
 **Purpose**: .NET Framework uses this pattern for dependency injection, ASP.NET Core, and enterprise application development.
 

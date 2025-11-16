@@ -96,9 +96,7 @@ Graph (weighted):
     A --3-- B
     |       |
     1       2
-    |       |
     C --4-- D
-```
 
 Find shortest path from A to all nodes.
 
@@ -185,7 +183,6 @@ kind: NetworkPolicy
 metadata:
  name: allow-frontend
 # Shortest path routing for network policies
-```
 
 **Purpose**: Kubernetes uses this pattern for container orchestration, service discovery, and resource management.
 
@@ -214,8 +211,8 @@ metadata:
 | Criterion | Excellent (5) | Good (4) | Adequate (3) | Poor (2) |
 |-----------|---------------|----------|--------------|----------|
 | **Correctness** | All tests pass, handles edge cases | 90%+ tests pass | 70%+ tests pass | <70% tests pass |
-| **Efficiency** | Optimal complexity | Near optimal | Works but inefficient | Very inefficient |
-| **Code Quality** | Excellent style, very readable | Good style, readable | Adequate style | Poor style |
+| **Efficiency** | Optimal complexity | Near optimal | Works but inefficient | inefficient |
+| **Code Quality** | Excellent style, readable | Good style, readable | Adequate style | Poor style |
 | **Testing** | 90%+ coverage, comprehensive | 70%+ coverage, good | 50%+ coverage, basic | <50% coverage |
 | **Documentation** | Complete, clear, examples | Mostly complete | Some gaps | Missing key parts |
 

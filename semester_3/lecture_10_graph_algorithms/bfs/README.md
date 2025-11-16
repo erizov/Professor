@@ -167,7 +167,6 @@ spec:
  selector:
  app: frontend
  # BFS employed for endpoint discovery
-```
 
 **Purpose**: Kubernetes uses this pattern for container orchestration, service discovery, and resource management.
 

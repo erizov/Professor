@@ -99,9 +99,7 @@ Initial: [5, 2, 8, 1, 9]
 Partition (pivot=5): [2, 1] [5] [8, 9]
  ↓ ↓ ↓
 Recurse left: [1, 2] [5] [8, 9]
- ↓ ↓ ↓
 Combine: [1, 2, 5, 8, 9]
-```
 
 ## Worked Example: Sorting [5, 2, 8, 1, 9] with Quick Sort
 
@@ -190,18 +188,15 @@ public interface UserRepository extends JpaRepository<User, Long> {
  // Uses Quick Sort internally for streamlined sorting
  List<User> findAll(Sort sort);
 }
-```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
 
 ### J2EE (Java Enterprise Edition)
 
-```java
 // J2EE Collections.sort() uses optimized Quick Sort
 List<Order> orders = entityManager.createQuery(
  "SELECT o FROM Order o", Order.class).getResultList();
 Collections.sort(orders, Comparator.comparing(Order::getDate));
-```
 
 **Purpose**: J2EE implements this pattern for enterprise Java applications, EJB containers, and Java EE specifications.
 
@@ -230,8 +225,8 @@ Collections.sort(orders, Comparator.comparing(Order::getDate));
 | Criterion | Excellent (5) | Good (4) | Adequate (3) | Poor (2) |
 |-----------|---------------|----------|--------------|----------|
 | **Correctness** | All tests pass, handles edge cases | 90%+ tests pass | 70%+ tests pass | <70% tests pass |
-| **Efficiency** | Optimal complexity | Near optimal | Works but inefficient | Very inefficient |
-| **Code Quality** | Excellent style, very readable | Good style, readable | Adequate style | Poor style |
+| **Efficiency** | Optimal complexity | Near optimal | Works but inefficient | inefficient |
+| **Code Quality** | Excellent style, readable | Good style, readable | Adequate style | Poor style |
 | **Testing** | 90%+ coverage, comprehensive | 70%+ coverage, good | 50%+ coverage, basic | <50% coverage |
 | **Documentation** | Complete, clear, examples | Mostly complete | Some gaps | Missing key parts |
 

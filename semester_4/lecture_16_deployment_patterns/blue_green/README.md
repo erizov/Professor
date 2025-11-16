@@ -152,11 +152,7 @@ services:
  - "version=blue"
 
 # docker-compose.green.yml 
-version: '3'
-services:
- app:
  image: myapp:v1.1
- labels:
  - "version=green"
 
 # Switch traffic by updating load balancer configuration
@@ -180,33 +176,15 @@ spec:
  app: myapp
  version: blue
  template:
- metadata:
- labels:
- app: myapp
- version: blue
 ---
 # Green deployment (new)
-apiVersion: apps/v1
-kind: Deployment
-metadata:
  name: app-green
-spec:
- replicas: 3
- selector:
- matchLabels:
- app: myapp
  version: green
----
 # Service switches between blue/green
 apiVersion: v1
 kind: Service
-metadata:
  name: app-service
-spec:
- selector:
- app: myapp
  version: blue # Switch to 'green' for deployment
-```
 
 **Purpose**: Kubernetes uses this pattern for container orchestration, service discovery, and resource management.
 

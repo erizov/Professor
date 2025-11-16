@@ -153,7 +153,6 @@ public class OrderService {
  // ... create order
  eventPublisher.publishEvent(new OrderCreatedEvent(order));
  }
-}
 
 // Multiple Subscribers
 @Component
@@ -161,29 +160,19 @@ public class EmailService {
  @EventListener
  public void handleOrderCreated(OrderCreatedEvent event) {
  sendEmail(event.getOrder());
- }
-}
 
-@Component
 public class NotificationService {
- @EventListener
- public void handleOrderCreated(OrderCreatedEvent event) {
  sendNotification(event.getOrder());
- }
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
 
 ### Apache Kafka
 
-```java
 // Apache Kafka Pub-Sub
-// Publisher
 KafkaProducer<String, String> producer = new KafkaProducer<>(props);
 producer.send(new ProducerRecord<>("events", "order.created", eventJson));
 
-// Multiple Subscribers
 // Subscriber 1: Email Service
 KafkaConsumer<String, String> emailConsumer = new KafkaConsumer<>(props);
 emailConsumer.subscribe(Collections.singletonList("events"));
@@ -193,7 +182,6 @@ KafkaConsumer<String, String> notifConsumer = new KafkaConsumer<>(props);
 notifConsumer.subscribe(Collections.singletonList("events"));
 
 // Both receive the same message
-```
 
 **Purpose**: Apache Kafka uses this pattern for event streaming, message queuing, and distributed structure communication.
 

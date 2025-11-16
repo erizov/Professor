@@ -16,7 +16,7 @@ This topic covers advanced techniques and methodologies used in modern software 
 
 ## TL;DR
 
-**One Sentence**: A pattern that stores all changes to application state as a sequence of events, rather than storing current state.
+**One Sentence**: A pattern that stores all changes to application state as a sequence of events, than storing current state.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -25,7 +25,7 @@ This topic covers advanced techniques and methodologies used in modern software 
 
 ### Short Description
 
-A pattern that stores all changes to application state as a sequence of events, rather than storing current state. Addresses audit trails, time travel debugging, and complex state reconstruction. Example: Storing bank account transactions as events (deposit, withdrawal) rather than just current balance, enabling full history reconstruction. Operates by appending events to an event store and replaying them to reconstruct current state.
+A pattern that stores all changes to application state as a sequence of events, than storing current state. Addresses audit trails, time travel debugging, and complex state reconstruction. Example: Storing bank account transactions as events (deposit, withdrawal) than just current balance, enabling full history reconstruction. Operates by appending events to an event store and replaying them to reconstruct current state.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

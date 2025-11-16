@@ -156,7 +156,6 @@ public class OAuth2Config extends AuthorizationServerConfigurerAdapter {
  .scopes("read", "write")
  .redirectUris("http://localhost:8080/callback");
  }
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.

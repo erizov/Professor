@@ -98,7 +98,6 @@ Graph:
    B   C
   / \ / \
  D   E   F
-```
 
 **Step 1: Start at A**
 - Stack: [A]
@@ -189,12 +188,8 @@ public class OrderService {
  private PaymentService paymentService; // DFS resolves dependencies
 }
 
-@Component
 public class PaymentService {
- @Autowired
  private NotificationService notificationService;
-}
-```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
 

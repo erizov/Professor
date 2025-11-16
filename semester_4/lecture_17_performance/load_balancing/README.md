@@ -158,11 +158,9 @@ spec:
  type: LoadBalancer
  selector:
  app: myapp
- ports:
  - port: 80
  targetPort: 8080
  # Kubernetes automatically load balances across pods
-```
 
 **Purpose**: Kubernetes uses this pattern for container orchestration, service discovery, and resource management.
 

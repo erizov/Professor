@@ -154,12 +154,10 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
 ### J2EE (Java Enterprise Edition)
 
-```java
 // J2EE Collections.sort()
 List<Order> orders = getOrders();
 Collections.sort(orders, Comparator.comparing(Order::getDate));
 // Uses optimized sorting algorithms
-```
 
 **Purpose**: J2EE implements this pattern for enterprise Java applications, EJB containers, and Java EE specifications.
 

@@ -146,7 +146,6 @@ public class ClassificationService {
  // appliedused for binary/multi-class categorization
  return classifier.predict(features);
  }
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.

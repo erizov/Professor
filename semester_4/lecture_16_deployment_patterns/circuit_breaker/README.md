@@ -160,8 +160,6 @@ public class ExternalServiceClient {
  // Call external service
  return restTemplate.getForObject("http://external/api", String.class);
  });
- }
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.

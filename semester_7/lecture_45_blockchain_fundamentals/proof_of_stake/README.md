@@ -14,7 +14,7 @@ This algorithm/pattern is used in computer science and software engineering for 
 
 ## TL;DR
 
-**One Sentence**: A consensus mechanism where validators are chosen based on the amount of cryptocurrency they stake, rather than computational work.
+**One Sentence**: A consensus mechanism where validators are chosen based on the amount of cryptocurrency they stake, than computational work.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -39,7 +39,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A consensus mechanism where validators are chosen based on the amount of cryptocurrency they stake, rather than computational work. Addresses energy consumption, scalability, and centralization in blockchain networks. Example: Ethereum 2.0 selecting validators based on staked ETH amount, with higher stakes increasing selection probability. Operates by validators locking cryptocurrency as stake, being randomly selected to propose blocks, and losing stake if they validate incorrectly.
+A consensus mechanism where validators are chosen based on the amount of cryptocurrency they stake, than computational work. Addresses energy consumption, scalability, and centralization in blockchain networks. Example: Ethereum 2.0 selecting validators based on staked ETH amount, with higher stakes increasing selection probability. Operates by validators locking cryptocurrency as stake, being randomly selected to propose blocks, and losing stake if they validate incorrectly.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

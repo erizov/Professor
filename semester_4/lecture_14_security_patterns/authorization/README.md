@@ -155,7 +155,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
  .antMatchers("/public/**").permitAll()
  .anyRequest().authenticated();
  }
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
@@ -169,16 +168,12 @@ public class AdminController : Controller {
  [Authorize(Policy = "RequireAdminRole")]
  public IActionResult ManageUsers() {
  return View();
- }
-}
 
 // Startup.cs
 services.AddAuthorization(options => {
  options.AddPolicy("RequireAdminRole", policy => {
  policy.RequireRole("Admin");
  });
-});
-```
 
 **Purpose**: .NET Framework uses this pattern for dependency injection, ASP.NET Core, and enterprise application development.
 

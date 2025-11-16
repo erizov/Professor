@@ -150,7 +150,6 @@ public class JmsConfig {
  public JmsTemplate jmsTemplate(ConnectionFactory connectionFactory) {
  return new JmsTemplate(connectionFactory);
  }
-}
 
 @Service
 public class OrderService {
@@ -159,20 +158,16 @@ public class OrderService {
  
  public void createOrder(Order order) {
  jmsTemplate.convertAndSend("order.queue", order);
- }
-}
 
 @JmsListener(destination = "order.queue")
 public void processOrder(Order order) {
  // Process order from queue
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
 
 ### Apache Kafka
 
-```java
 // Apache Kafka Producer/Consumer
 // Producer
 Properties props = new Properties();
@@ -189,8 +184,6 @@ consumer.subscribe(Collections.singletonList("orders"));
 ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
 for (ConsumerRecord<String, String> record : records) {
  processOrder(record.value());
-}
-```
 
 **Purpose**: Apache Kafka uses this pattern for event streaming, message queuing, and distributed structure communication.
 

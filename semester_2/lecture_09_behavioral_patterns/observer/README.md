@@ -153,7 +153,6 @@ public class OrderEventListener {
  sendEmail(event.getOrder());
  updateInventory(event.getOrder());
  }
-}
 
 // Publisher
 @Service
@@ -164,8 +163,6 @@ public class OrderService {
  public void createOrder(Order order) {
  // ... create order
  eventPublisher.publishEvent(new OrderCreatedEvent(order));
- }
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
@@ -174,30 +171,21 @@ public class OrderService {
 
 ```csharp
 // .NET Event Handler (Observer Pattern)
-public class OrderService {
  public event EventHandler<OrderCreatedEventArgs> OrderCreated;
  
- public void CreateOrder(Order order) {
  // Create order logic
  OnOrderCreated(new OrderCreatedEventArgs(order));
- }
  
  protected virtual void OnOrderCreated(OrderCreatedEventArgs e) {
  OrderCreated?.Invoke(this, e);
- }
-}
 
 // Observer
 public class EmailService {
  public void Subscribe(OrderService orderService) {
  orderService.OrderCreated += HandleOrderCreated;
- }
  
  private void HandleOrderCreated(object sender, OrderCreatedEventArgs e) {
  SendEmail(e.Order);
- }
-}
-```
 
 **Purpose**: .NET Framework uses this pattern for dependency injection, ASP.NET Core, and enterprise application development.
 

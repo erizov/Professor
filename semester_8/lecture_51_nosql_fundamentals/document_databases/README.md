@@ -14,7 +14,7 @@ This algorithm/pattern is used in computer science and software engineering for 
 
 ## TL;DR
 
-**One Sentence**: NoSQL databases that store data as documents (typically JSON) rather than rows and columns.
+**One Sentence**: NoSQL databases that store data as documents (typically JSON) than rows and columns.
 
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
@@ -39,7 +39,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-NoSQL databases that store data as documents (typically JSON) rather than rows and columns. Addresses flexible schemas, nested content structures, and rapid development. Example: Storing user profiles with varying fields (some users have addresses, others don't) without schema constraints. Operates by storing self-describing documents with embedded content, enabling schema evolution and complex nested structures.
+NoSQL databases that store data as documents (typically JSON) than rows and columns. Addresses flexible schemas, nested content structures, and rapid development. Example: Storing user profiles with varying fields (some users have addresses, others don't) without schema constraints. Operates by storing self-describing documents with embedded content, enabling schema evolution and complex nested structures.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies

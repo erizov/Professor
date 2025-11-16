@@ -137,7 +137,6 @@ public class RateLimitConfig {
  public RateLimiter rateLimiter() {
  return RateLimiter.create(100.0); // 100 requests per second
  }
-}
 
 @RestController
 public class ApiController {
@@ -148,10 +147,7 @@ public class ApiController {
  public ResponseEntity<?> getData() {
  if (!rateLimiter.tryAcquire()) {
  return ResponseEntity.status(429).build();
- }
  return ResponseEntity.ok(content);
- }
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
@@ -181,7 +177,6 @@ spec:
  percentage:
  value: 0.1
  fixedDelay: 5s
-```
 
 **Purpose**: Kubernetes uses this pattern for container orchestration, service discovery, and resource management.
 

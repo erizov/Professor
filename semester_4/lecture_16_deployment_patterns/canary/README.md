@@ -152,19 +152,12 @@ spec:
  replicas: 9
 ---
 # Canary deployment (10% traffic)
-apiVersion: apps/v1
-kind: Deployment
-metadata:
  name: app-canary
-spec:
  replicas: 1
----
 # Service with traffic splitting
 apiVersion: v1
 kind: Service
-metadata:
  name: app-service
-spec:
  selector:
  app: myapp
  # Istio/Linkerd handles traffic splitting

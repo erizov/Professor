@@ -161,15 +161,12 @@ public class PaymentProcessorFactory {
  
  public PaymentProcessor getProcessor(String type) {
  return processors.get(type);
- }
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
 
 ### J2EE (Java Enterprise Edition)
 
-```java
 // J2EE Factory Pattern
 @Stateless
 public class ConnectionFactory {
@@ -178,9 +175,6 @@ public class ConnectionFactory {
  
  public Connection createConnection() {
  return dataSource.getConnection();
- }
-}
-```
 
 **Purpose**: J2EE implements this pattern for enterprise Java applications, EJB containers, and Java EE specifications.
 
@@ -190,18 +184,13 @@ public class ConnectionFactory {
 // .NET Factory Pattern
 public interface IPaymentProcessor {
  void ProcessPayment(decimal amount);
-}
 
-public class PaymentProcessorFactory {
  public IPaymentProcessor Create(string type) {
  return type switch {
  "credit" => new CreditCardProcessor(),
  "paypal" => new PayPalProcessor(),
  _ => throw new ArgumentException()
  };
- }
-}
-```
 
 **Purpose**: .NET Framework uses this pattern for dependency injection, ASP.NET Core, and enterprise application development.
 

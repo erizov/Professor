@@ -154,11 +154,7 @@ public class DatabaseConfig {
  return new HikariDataSource();
  }
  
- @Bean
  public DataSource secondaryDataSource() {
- return new HikariDataSource();
- }
-}
 
 // Factory creates families of related objects
 ```
@@ -172,13 +168,10 @@ public class DatabaseConfig {
 public interface IDatabaseFactory {
  IConnection CreateConnection();
  ICommand CreateCommand();
-}
 
 public class SqlServerFactory : IDatabaseFactory {
  public IConnection CreateConnection() => new SqlConnection();
  public ICommand CreateCommand() => new SqlCommand();
-}
-```
 
 **Purpose**: .NET Framework uses this pattern for dependency injection, ASP.NET Core, and enterprise application development.
 

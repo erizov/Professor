@@ -155,12 +155,10 @@ public class ServiceA {
 
 ### J2EE (Java Enterprise Edition)
 
-```java
 // J2EE JNDI uses tree structure for naming
 InitialContext ctx = new InitialContext();
 // Tree-based naming: java:comp/env/jdbc/MyDB
 DataSource ds = (DataSource) ctx.lookup("java:comp/env/jdbc/MyDB");
-```
 
 **Purpose**: J2EE implements this pattern for enterprise Java applications, EJB containers, and Java EE specifications.
 

@@ -161,7 +161,6 @@ class PaymentServiceTest {
  assertTrue(result);
  verify(paymentGateway).process(any());
  }
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
@@ -181,9 +180,6 @@ public class PaymentServiceTests {
  
  Assert.True(consequence);
  mockGateway.Verify(g => g.Workflow(100m), Times.Once);
- }
-}
-```
 
 **Purpose**: .NET Framework uses this pattern for dependency injection, ASP.NET Core, and enterprise application development.
 

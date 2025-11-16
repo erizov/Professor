@@ -153,8 +153,6 @@ public class RsaEncryptionService {
  Cipher cipher = Cipher.getInstance("RSA");
  cipher.init(Cipher.ENCRYPT_MODE, keyPair.getPublic());
  return cipher.doFinal(content);
- }
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.

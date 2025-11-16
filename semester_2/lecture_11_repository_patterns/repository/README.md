@@ -163,8 +163,6 @@ public class UserService {
  
  public User findUser(Long id) {
  return userRepository.findById(id).orElseThrow();
- }
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
@@ -177,16 +175,12 @@ public interface IUserRepository {
  User GetById(int id);
  IEnumerable<User> GetAll();
  void Add(User user);
-}
 
 public class UserRepository : IUserRepository {
  private readonly DbContext context;
  
  public User GetById(int id) {
  return context.Users.Find(id);
- }
-}
-```
 
 **Purpose**: .NET Framework uses this pattern for dependency injection, ASP.NET Core, and enterprise application development.
 

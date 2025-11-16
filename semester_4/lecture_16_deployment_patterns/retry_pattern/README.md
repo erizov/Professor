@@ -154,13 +154,10 @@ public class PaymentService {
  @Recover
  public void recover(PaymentException e, Payment payment) {
  // Handle failure after all retries
- }
-}
 
 @Configuration
 @EnableRetry
 public class RetryConfig {
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.

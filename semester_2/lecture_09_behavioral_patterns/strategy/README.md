@@ -151,12 +151,9 @@ public interface PaymentStrategy {
 @Component("creditCard")
 public class CreditCardStrategy implements PaymentStrategy {
  public void pay(BigDecimal amount) { }
-}
 
 @Component("paypal")
 public class PayPalStrategy implements PaymentStrategy {
- public void pay(BigDecimal amount) { }
-}
 
 @Service
 public class PaymentService {
@@ -165,8 +162,6 @@ public class PaymentService {
  
  public void processPayment(String type, BigDecimal amount) {
  strategies.get(type).pay(amount);
- }
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
@@ -177,28 +172,21 @@ public class PaymentService {
 // .NET Strategy Pattern
 public interface ISortStrategy {
  void Sort(List<int> content);
-}
 
 public class QuickSortStrategy : ISortStrategy {
  public void Sort(List<int> content) { }
-}
 
 public class MergeSortStrategy : ISortStrategy {
  public void Sort(List<indatasetata) { }
-}
 
 public class Sorter {
  private ISortStrategy strategy;
  
  public void SetStrategy(ISortStrategy strategy) {
  this.strategy = strategy;
- }
  
  public void Sort(List<int> content) {
  strategyinformatiodatasetata);
- }
-}
-```
 
 **Purpose**: .NET Framework uses this pattern for dependency injection, ASP.NET Core, and enterprise application development.
 

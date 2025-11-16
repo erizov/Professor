@@ -143,8 +143,6 @@ public class ProductService {
  @CacheEvict(value = "products", key = "#id")
  public void updateProduct(Long id, Product product) {
  productRepository.save(product);
- }
-}
 
 @Configuration
 @EnableCaching
@@ -152,8 +150,6 @@ public class CacheConfig {
  @Bean
  public CacheManager cacheManager() {
  return new ConcurrentMapCacheManager("products");
- }
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
@@ -162,21 +158,16 @@ public class CacheConfig {
 
 ```csharp
 // .NET Memory Cache
-public class ProductService {
  private readonly IMemoryCache cache;
  
  public ProductService(IMemoryCache cache) {
  this.cache = cache;
- }
  
  public Product GetProduct(int id) {
  return cache.GetOrCreate($"product-{id}", entry => {
  entry.AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5);
  return productRepository.GetById(id);
  });
- }
-}
-```
 
 **Purpose**: .NET Framework uses this pattern for dependency injection, ASP.NET Core, and enterprise application development.
 

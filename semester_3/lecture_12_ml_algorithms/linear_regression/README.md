@@ -150,7 +150,6 @@ public class PredictionService {
  // Linear value estimation model: price = a * size + b * location + c
  return model.predict(size, location);
  }
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.

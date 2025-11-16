@@ -153,14 +153,12 @@ public class DatabaseConnectionManager {
  public Connection getConnection() throws SQLException {
  return dataSource.getConnection();
  }
-}
 ```
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
 
 ### J2EE (Java Enterprise Edition)
 
-```java
 // J2EE Singleton EJB
 @Singleton
 @Startup
@@ -171,13 +169,9 @@ public class ApplicationCache {
  @PostConstruct
  public void init() {
  // Single instance initialized at startup
- }
  
  public void put(String key, Object value) {
  cache.put(key, value);
- }
-}
-```
 
 **Purpose**: J2EE implements this pattern for enterprise Java applications, EJB containers, and Java EE specifications.
 
@@ -188,11 +182,9 @@ public class ApplicationCache {
 public class CacheService {
  // Registered as singleton in Startup.cs
  public void Add(string key, object value) { }
-}
 
 // Startup.cs
 services.AddSingleton<CacheService>();
-```
 
 **Purpose**: .NET Framework uses this pattern for dependency injection, ASP.NET Core, and enterprise application development.
 

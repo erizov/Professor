@@ -179,15 +179,12 @@ content:
 # DaemonSet collects logs from all pods
 apiVersion: apps/v1
 kind: DaemonSet
-metadata:
  name: fluentd
 spec:
  template:
- spec:
  containers:
  - name: fluentd
  image: fluent/fluentd-kubernetes-daemonset
-```
 
 **Purpose**: Kubernetes uses this pattern for container orchestration, service discovery, and resource management.
 

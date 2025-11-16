@@ -156,7 +156,6 @@ metadata:
 spec:
  replicas: 3
  template:
- spec:
  containers:
  - name: app
  # Uses Kubernetes endpoints for leader election
@@ -178,7 +177,6 @@ props.put("group.id", "my-consumer-group");
 // Leader coordinates partition assignment
 KafkaConsumer<String, String> consumer = new KafkaConsumer<>(props);
 consumer.subscribe(Collections.singletonList("topic"));
-```
 
 **Purpose**: Apache Kafka uses this pattern for event streaming, message queuing, and distributed structure communication.
 
