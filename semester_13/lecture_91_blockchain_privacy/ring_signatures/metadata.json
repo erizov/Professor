@@ -1,0 +1,12 @@
+{
+  "name": "ring_signatures",
+  "display_name": "Ring Signatures",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_91_blockchain_privacy",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

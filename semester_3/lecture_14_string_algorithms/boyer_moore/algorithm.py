@@ -1,3 +1,5 @@
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Boyer-Moore Algorithm implementation."""
@@ -10,13 +12,13 @@ def boyer_moore():
     Time Complexity: O(n/m)
     Space Complexity: O(m)
     """
-    print("==" * 35)
-    print("Boyer-Moore Algorithm")
-    print("==" * 35)
-    print(f"Category: String Algorithm")
-    print(f"Time Complexity: O(n/m)")
-    print(f"Space Complexity: O(m)")
-    print("==" * 35)
+    logger.info("==" * 35)
+    logger.info("Boyer-Moore Algorithm")
+    logger.info("==" * 35)
+    logger.info(f"Category: String Algorithm")
+    logger.info(f"Time Complexity: O(n/m)")
+    logger.info(f"Space Complexity: O(m)")
+    logger.info("==" * 35)
 
 
 if __name__ == "__main__":

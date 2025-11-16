@@ -1,0 +1,12 @@
+{
+  "name": "nosql_data_modeling",
+  "display_name": "Nosql Data Modeling",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_106_nosql_advanced_topics",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

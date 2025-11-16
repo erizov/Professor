@@ -3,7 +3,10 @@
  * 
  * Ensures class has only one instance.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     // Eager initialization (thread-safe)
     static class EagerSingleton {
@@ -98,14 +101,14 @@ public class Algorithm {
             if (!connected) {
                 this.connectionString = connectionString;
                 this.connected = true;
-                System.out.println("Connected to: " + connectionString);
+                logger.info("Connected to: " + connectionString);
             }
         }
         
         public void disconnect() {
             if (connected) {
                 connected = false;
-                System.out.println("Disconnected from database");
+                logger.info("Disconnected from database");
             }
         }
         
@@ -120,58 +123,58 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("SINGLETON DESIGN PATTERN DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("SINGLETON DESIGN PATTERN DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Configuration Manager
-        System.out.println("Example 1: Configuration Manager");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Configuration Manager");
+        logger.info("-".repeat(70));
         
         ConfigurationManager config1 = ConfigurationManager.getInstance();
         config1.set("database_url", "localhost:5432");
         config1.set("debug", "true");
         
         ConfigurationManager config2 = ConfigurationManager.getInstance();
-        System.out.println("config1 == config2: " + (config1 == config2));
-        System.out.println("config2.get('database_url'): " + 
+        logger.info("config1 == config2: " + (config1 == config2));
+        logger.info("config2.get('database_url'): " + 
                          config2.get("database_url"));
-        System.out.println();
+        logger.info();
         
         // Example 2: Database Connection
-        System.out.println("Example 2: Database Connection");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Database Connection");
+        logger.info("-".repeat(70));
         
         DatabaseConnection db1 = DatabaseConnection.getInstance();
         db1.connect("postgresql://localhost:5432/mydb");
         
         DatabaseConnection db2 = DatabaseConnection.getInstance();
-        System.out.println("db1 == db2: " + (db1 == db2));
-        System.out.println(db2.executeQuery("SELECT * FROM users"));
+        logger.info("db1 == db2: " + (db1 == db2));
+        logger.info(db2.executeQuery("SELECT * FROM users"));
         db1.disconnect();
-        System.out.println();
+        logger.info();
         
         // Example 3: Different implementations
-        System.out.println("Example 3: Different Implementations");
-        System.out.println("-".repeat(70));
+        logger.info("Example 3: Different Implementations");
+        logger.info("-".repeat(70));
         
         EagerSingleton eager1 = EagerSingleton.getInstance();
         EagerSingleton eager2 = EagerSingleton.getInstance();
-        System.out.println("Eager: " + (eager1 == eager2));
+        logger.info("Eager: " + (eager1 == eager2));
         
         LazySingleton lazy1 = LazySingleton.getInstance();
         LazySingleton lazy2 = LazySingleton.getInstance();
-        System.out.println("Lazy: " + (lazy1 == lazy2));
+        logger.info("Lazy: " + (lazy1 == lazy2));
         
         BillPughSingleton bp1 = BillPughSingleton.getInstance();
         BillPughSingleton bp2 = BillPughSingleton.getInstance();
-        System.out.println("Bill Pugh: " + (bp1 == bp2));
-        System.out.println();
+        logger.info("Bill Pugh: " + (bp1 == bp2));
+        logger.info();
         
         // Example 4: Thread Safety
-        System.out.println("Example 4: Thread Safety Test");
-        System.out.println("-".repeat(70));
+        logger.info("Example 4: Thread Safety Test");
+        logger.info("-".repeat(70));
         
         final java.util.Set<ConfigurationManager> instances = 
             new java.util.HashSet<>();
@@ -192,24 +195,24 @@ public class Algorithm {
             }
         }
         
-        System.out.println("Created 10 threads");
-        System.out.println("Unique instances: " + instances.size());
-        System.out.println("All same: " + (instances.size() == 1));
-        System.out.println();
+        logger.info("Created 10 threads");
+        logger.info("Unique instances: " + instances.size());
+        logger.info("All same: " + (instances.size() == 1));
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern Summary:");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Single instance guaranteed");
-        System.out.println("  - Global access point");
-        System.out.println("  - Lazy initialization");
-        System.out.println("\nWhen to Use:");
-        System.out.println("  - Configuration management");
-        System.out.println("  - Connection pools");
-        System.out.println("  - Logging");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern Summary:");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Single instance guaranteed");
+        logger.info("  - Global access point");
+        logger.info("  - Lazy initialization");
+        logger.info("\nWhen to Use:");
+        logger.info("  - Configuration management");
+        logger.info("  - Connection pools");
+        logger.info("  - Logging");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

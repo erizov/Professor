@@ -9,7 +9,10 @@ import java.util.Random;
  * Time Complexity: O(n*k*d*iter)
  * Space Complexity: O(n + k*d)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class KMeans {
         private int nClusters;
@@ -156,14 +159,14 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("K-MEANS CLUSTERING DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("K-MEANS CLUSTERING DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Simple clustering
-        System.out.println("Example 1: Simple 2D Clustering");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Simple 2D Clustering");
+        logger.info("-".repeat(70));
         
         Random rand = new Random(42);
         int n = 90;
@@ -189,14 +192,14 @@ public class Algorithm {
         System.out.printf("Converged in %d iterations%n", kmeans.nIter);
         System.out.printf("Inertia: %.2f%n", kmeans.inertia);
         
-        System.out.println("\nCentroids:");
+        logger.info("\nCentroids:");
         for (int i = 0; i < kmeans.centroids.length; i++) {
             System.out.printf("  Cluster %d: [%.2f, %.2f]%n",
                             i, kmeans.centroids[i][0], 
                             kmeans.centroids[i][1]);
         }
         
-        System.out.println("\nCluster sizes:");
+        logger.info("\nCluster sizes:");
         int[] counts = new int[3];
         for (int label : kmeans.labels) {
             counts[label]++;
@@ -204,11 +207,11 @@ public class Algorithm {
         for (int i = 0; i < 3; i++) {
             System.out.printf("  Cluster %d: %d points%n", i, counts[i]);
         }
-        System.out.println();
+        logger.info();
         
         // Example 2: Prediction
-        System.out.println("Example 2: Predicting New Points");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Predicting New Points");
+        logger.info("-".repeat(70));
         
         double[][] newPoints = {
             {5.5, 5.5},
@@ -223,20 +226,19 @@ public class Algorithm {
                             newPoints[i][0], newPoints[i][1], 
                             predictions[i]);
         }
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Time:  O(n*k*d*iter)");
-        System.out.println("  Space: O(n + k*d)");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Simple and fast");
-        System.out.println("  - Scales well");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Time:  O(n*k*d*iter)");
+        logger.info("  Space: O(n + k*d)");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Simple and fast");
+        logger.info("  - Scales well");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }
 }
-

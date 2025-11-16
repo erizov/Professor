@@ -3,7 +3,10 @@
  * 
  * Adds behavior to objects dynamically.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     // Component interface
     interface Coffee {
@@ -152,14 +155,14 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("DECORATOR DESIGN PATTERN DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("DECORATOR DESIGN PATTERN DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Coffee
-        System.out.println("Example 1: Coffee Ordering System");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Coffee Ordering System");
+        logger.info("-".repeat(70));
         
         Coffee coffee = new SimpleCoffee();
         System.out.printf("%s: $%.2f%n", 
@@ -180,43 +183,43 @@ public class Algorithm {
         System.out.printf("%s: $%.2f%n",
                         fancyCoffee.getDescription(),
                         fancyCoffee.getCost());
-        System.out.println();
+        logger.info();
         
         // Example 2: Text formatting
-        System.out.println("Example 2: Text Formatting");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Text Formatting");
+        logger.info("-".repeat(70));
         
         String text = "Hello, World!";
         
         TextProcessor plain = new PlainText();
-        System.out.println("Plain: " + plain.process(text));
+        logger.info("Plain: " + plain.process(text));
         
         TextProcessor bold = new BoldDecorator(new PlainText());
-        System.out.println("Bold: " + bold.process(text));
+        logger.info("Bold: " + bold.process(text));
         
         TextProcessor boldItalic = new ItalicDecorator(
             new BoldDecorator(new PlainText())
         );
-        System.out.println("Bold + Italic: " + boldItalic.process(text));
+        logger.info("Bold + Italic: " + boldItalic.process(text));
         
         TextProcessor formatted = new UnderlineDecorator(
             new BoldDecorator(new PlainText())
         );
-        System.out.println("Underline + Bold: " + formatted.process(text));
-        System.out.println();
+        logger.info("Underline + Bold: " + formatted.process(text));
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern Summary:");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Add behavior dynamically");
-        System.out.println("  - Compose behaviors");
-        System.out.println("  - Flexible alternative to inheritance");
-        System.out.println("\nWhen to Use:");
-        System.out.println("  - Add responsibilities dynamically");
-        System.out.println("  - Avoid feature explosion");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern Summary:");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Add behavior dynamically");
+        logger.info("  - Compose behaviors");
+        logger.info("  - Flexible alternative to inheritance");
+        logger.info("\nWhen to Use:");
+        logger.info("  - Add responsibilities dynamically");
+        logger.info("  - Avoid feature explosion");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

@@ -11,7 +11,10 @@ import java.util.Random;
  * Stable: Yes
  * Adaptive: No
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     /**
      * Sort array using merge sort.
@@ -118,17 +121,17 @@ public class Algorithm {
      */
     public static int[] visualizeMergeSort(int[] arr, int depth) {
         String indent = "  ".repeat(depth);
-        System.out.println(indent + "Sorting: " + 
+        logger.info(indent + "Sorting: " + 
                          Arrays.toString(arr));
         
         if (arr.length <= 1) {
-            System.out.println(indent + "Base case: " + 
+            logger.info(indent + "Base case: " + 
                              Arrays.toString(arr));
             return arr;
         }
         
         int mid = arr.length / 2;
-        System.out.println(indent + "Dividing at index " + mid);
+        logger.info(indent + "Dividing at index " + mid);
         
         int[] left = Arrays.copyOfRange(arr, 0, mid);
         int[] right = Arrays.copyOfRange(arr, mid, arr.length);
@@ -137,7 +140,7 @@ public class Algorithm {
         right = visualizeMergeSort(right, depth + 1);
         
         int[] result = merge(left, right);
-        System.out.println(indent + "Merged: " + 
+        logger.info(indent + "Merged: " + 
                          Arrays.toString(result));
         
         return result;
@@ -149,50 +152,50 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("MERGE SORT DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("MERGE SORT DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Basic sorting
-        System.out.println("Example 1: Basic Integer Sorting");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Basic Integer Sorting");
+        logger.info("-".repeat(70));
         int[] data1 = {64, 34, 25, 12, 22, 11, 90, 88};
-        System.out.println("Original: " + Arrays.toString(data1));
+        logger.info("Original: " + Arrays.toString(data1));
         int[] result1 = mergeSort(data1.clone());
-        System.out.println("Sorted:   " + Arrays.toString(result1));
-        System.out.println();
+        logger.info("Sorted:   " + Arrays.toString(result1));
+        logger.info();
         
         // Example 2: Already sorted
-        System.out.println("Example 2: Already Sorted Array");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Already Sorted Array");
+        logger.info("-".repeat(70));
         int[] data2 = {1, 2, 3, 4, 5, 6, 7, 8};
-        System.out.println("Original: " + Arrays.toString(data2));
+        logger.info("Original: " + Arrays.toString(data2));
         int[] result2 = mergeSort(data2.clone());
-        System.out.println("Sorted:   " + Arrays.toString(result2));
-        System.out.println("Note: Still O(n log n) even when sorted!");
-        System.out.println();
+        logger.info("Sorted:   " + Arrays.toString(result2));
+        logger.info("Note: Still O(n log n) even when sorted!");
+        logger.info();
         
         // Example 3: Reverse sorted
-        System.out.println("Example 3: Reverse Sorted Array");
-        System.out.println("-".repeat(70));
+        logger.info("Example 3: Reverse Sorted Array");
+        logger.info("-".repeat(70));
         int[] data3 = {8, 7, 6, 5, 4, 3, 2, 1};
-        System.out.println("Original: " + Arrays.toString(data3));
+        logger.info("Original: " + Arrays.toString(data3));
         int[] result3 = mergeSort(data3.clone());
-        System.out.println("Sorted:   " + Arrays.toString(result3));
-        System.out.println();
+        logger.info("Sorted:   " + Arrays.toString(result3));
+        logger.info();
         
         // Example 4: Visualization
-        System.out.println("Example 4: Visualized Merge Sort Process");
-        System.out.println("-".repeat(70));
-        System.out.println("Watch the divide-and-conquer process:\n");
+        logger.info("Example 4: Visualized Merge Sort Process");
+        logger.info("-".repeat(70));
+        logger.info("Watch the divide-and-conquer process:\n");
         int[] data4 = {5, 2, 8, 1, 9, 3};
         visualizeMergeSort(data4, 0);
-        System.out.println();
+        logger.info();
         
         // Example 5: Performance
-        System.out.println("Example 5: Performance Measurement");
-        System.out.println("-".repeat(70));
+        logger.info("Example 5: Performance Measurement");
+        logger.info("-".repeat(70));
         
         Random rand = new Random(42);
         
@@ -204,7 +207,7 @@ public class Algorithm {
         long t1 = System.nanoTime();
         mergeSort(small);
         long t2 = System.nanoTime();
-        System.out.println("Small (100 elements):");
+        logger.info("Small (100 elements):");
         System.out.printf("  Time: %.3f ms%n", (t2-t1)/1_000_000.0);
         
         // Medium
@@ -215,7 +218,7 @@ public class Algorithm {
         t1 = System.nanoTime();
         mergeSort(medium);
         t2 = System.nanoTime();
-        System.out.println("\nMedium (1,000 elements):");
+        logger.info("\nMedium (1,000 elements):");
         System.out.printf("  Time: %.3f ms%n", (t2-t1)/1_000_000.0);
         
         // Large
@@ -226,33 +229,33 @@ public class Algorithm {
         t1 = System.nanoTime();
         mergeSort(large);
         t2 = System.nanoTime();
-        System.out.println("\nLarge (10,000 elements):");
+        logger.info("\nLarge (10,000 elements):");
         System.out.printf("  Time: %.3f ms%n", (t2-t1)/1_000_000.0);
-        System.out.println();
+        logger.info();
         
         // Example 6: In-place
-        System.out.println("Example 6: In-place Merge Sort");
-        System.out.println("-".repeat(70));
+        logger.info("Example 6: In-place Merge Sort");
+        logger.info("-".repeat(70));
         int[] data6 = {64, 34, 25, 12, 22, 11, 90};
-        System.out.println("Original: " + Arrays.toString(data6));
+        logger.info("Original: " + Arrays.toString(data6));
         mergeSortInPlace(data6);
-        System.out.println("Sorted:   " + Arrays.toString(data6));
-        System.out.println();
+        logger.info("Sorted:   " + Arrays.toString(data6));
+        logger.info();
         
         long endTime = System.nanoTime();
         double duration = (endTime - startTime) / 1_000_000.0;
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Time:  O(n log n) - all cases");
-        System.out.println("  Space: O(n) - auxiliary array");
-        System.out.println("  Stable: Yes");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Guaranteed O(n log n)");
-        System.out.println("  - Stable sorting");
-        System.out.println("  - Good for linked lists");
-        System.out.println("  - Parallelizable");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Time:  O(n log n) - all cases");
+        logger.info("  Space: O(n) - auxiliary array");
+        logger.info("  Stable: Yes");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Guaranteed O(n log n)");
+        logger.info("  - Stable sorting");
+        logger.info("  - Good for linked lists");
+        logger.info("  - Parallelizable");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal execution time: %.3f ms%n", duration);
     }
 }

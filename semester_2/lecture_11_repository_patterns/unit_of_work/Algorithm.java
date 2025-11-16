@@ -5,7 +5,10 @@ import java.util.*;
  * 
  * Tracks changes and commits atomically.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class User {
         private int userId;
@@ -45,17 +48,17 @@ public class Algorithm {
                 user = new User(nextId++, user.getName(), user.getEmail());
             }
             users.put(user.getUserId(), user);
-            System.out.println("  Added: " + user.getName());
+            logger.info("  Added: " + user.getName());
         }
         
         public void update(User user) {
             users.put(user.getUserId(), user);
-            System.out.println("  Updated: " + user.getName());
+            logger.info("  Updated: " + user.getName());
         }
         
         public void delete(User user) {
             users.remove(user.getUserId());
-            System.out.println("  Deleted: " + user.getName());
+            logger.info("  Deleted: " + user.getName());
         }
     }
     
@@ -101,17 +104,17 @@ public class Algorithm {
             modifiedEntities.clear();
             deletedEntities.clear();
             
-            System.out.println("Unit of Work committed");
+            logger.info("Unit of Work committed");
         }
     }
     
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("UNIT OF WORK DESIGN PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("UNIT OF WORK DESIGN PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         IUserRepository repository = new InMemoryUserRepository();
         UnitOfWork uow = new UnitOfWork(repository);
@@ -122,15 +125,15 @@ public class Algorithm {
         uow.registerNew(user1);
         uow.registerNew(user2);
         
-        System.out.println("Committing changes:");
+        logger.info("Committing changes:");
         uow.commit();
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: Tracks changes atomically");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: Tracks changes atomically");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

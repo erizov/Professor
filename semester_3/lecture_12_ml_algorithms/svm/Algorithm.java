@@ -3,7 +3,10 @@
  * 
  * Binary classifier with maximum margin.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class SVM {
         private double[] weights;
@@ -82,14 +85,14 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("SUPPORT VECTOR MACHINE (SVM) DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("SUPPORT VECTOR MACHINE (SVM) DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example
-        System.out.println("Example: Basic SVM");
-        System.out.println("-".repeat(70));
+        logger.info("Example: Basic SVM");
+        logger.info("-".repeat(70));
         
         double[][] X = {
             {1, 1}, {2, 2}, {3, 3},
@@ -106,18 +109,17 @@ public class Algorithm {
             if (predictions[i] == y[i]) correct++;
         }
         
-        System.out.println("Accuracy: " + (double)correct / y.length);
-        System.out.println();
+        logger.info("Accuracy: " + (double)correct / y.length);
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Training: O(n*d*iter)");
-        System.out.println("  Prediction: O(d)");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Training: O(n*d*iter)");
+        logger.info("  Prediction: O(d)");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }
 }
-

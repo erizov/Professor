@@ -1,0 +1,12 @@
+{
+  "name": "multi_cloud_strategies",
+  "display_name": "Multi Cloud Strategies",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_72_infrastructure_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

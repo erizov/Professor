@@ -1,0 +1,12 @@
+{
+  "name": "on_chain_analytics",
+  "display_name": "On Chain Analytics",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_94_blockchain_analytics",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "semantic_search",
+  "display_name": "Semantic Search",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_97_knowledge_management",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

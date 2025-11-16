@@ -1,0 +1,12 @@
+{
+  "name": "self_service_platforms",
+  "display_name": "Self Service Platforms",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_76_platform_engineering",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

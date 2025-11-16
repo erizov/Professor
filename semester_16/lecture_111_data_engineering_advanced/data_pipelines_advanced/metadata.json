@@ -1,0 +1,12 @@
+{
+  "name": "data_pipelines_advanced",
+  "display_name": "Data Pipelines Advanced",
+  "category": "Advanced Graduate Level",
+  "semester": 16,
+  "lecture": "lecture_111_data_engineering_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

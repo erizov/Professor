@@ -13,6 +13,8 @@ import heapq
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 T = TypeVar('T')
 
@@ -103,14 +105,14 @@ class Task:
 
 def main() -> None:
     """Demonstration of Priority Queue."""
-    print("=" * 70)
-    print("PRIORITY QUEUE DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("PRIORITY QUEUE DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Min priority queue
-    print("Example 1: Min Priority Queue (Lower = Higher Priority)")
-    print("-" * 70)
+    logger.info("Example 1: Min Priority Queue (Lower = Higher Priority)")
+    logger.info("-" * 70)
     
     pq = PriorityQueue(max_priority=False)
     
@@ -120,15 +122,15 @@ def main() -> None:
     pq.push("Task D", 2)
     pq.push("Task E", 4)
     
-    print("Processing tasks in priority order:")
+    logger.info("Processing tasks in priority order:")
     while not pq.is_empty():
         task = pq.pop()
-        print(f"  Processing: {task}")
-    print()
+        logger.info(f"  Processing: {task}")
+    logger.info()
     
     # Example 2: Max priority queue
-    print("Example 2: Max Priority Queue (Higher = Higher Priority)")
-    print("-" * 70)
+    logger.info("Example 2: Max Priority Queue (Higher = Higher Priority)")
+    logger.info("-" * 70)
     
     pq2 = PriorityQueue(max_priority=True)
     
@@ -137,15 +139,15 @@ def main() -> None:
     pq2.push("Medium Priority", 3)
     pq2.push("Very High Priority", 10)
     
-    print("Processing tasks in priority order:")
+    logger.info("Processing tasks in priority order:")
     while not pq2.is_empty():
         task = pq2.pop()
-        print(f"  Processing: {task}")
-    print()
+        logger.info(f"  Processing: {task}")
+    logger.info()
     
     # Example 3: Task scheduling
-    print("Example 3: Task Scheduling")
-    print("-" * 70)
+    logger.info("Example 3: Task Scheduling")
+    logger.info("-" * 70)
     
     tasks = [
         Task("Email", 3),
@@ -159,29 +161,29 @@ def main() -> None:
     for task in tasks:
         pq3.push(task, task.priority)
     
-    print("Task execution order:")
+    logger.info("Task execution order:")
     order = 1
     while not pq3.is_empty():
         task = pq3.pop()
-        print(f"  {order}. {task}")
+        logger.info(f"  {order}. {task}")
         order += 1
-    print()
+    logger.info()
     
     # Example 4: Dijkstra's algorithm usage
-    print("Example 4: Usage in Dijkstra's Algorithm")
-    print("-" * 70)
+    logger.info("Example 4: Usage in Dijkstra's Algorithm")
+    logger.info("-" * 70)
     
-    print("Priority queues are essential for:")
-    print("  - Dijkstra's shortest path algorithm")
-    print("  - A* pathfinding")
-    print("  - Huffman coding")
-    print("  - Task scheduling")
-    print("  - Event simulation")
-    print()
+    logger.info("Priority queues are essential for:")
+    logger.info("  - Dijkstra's shortest path algorithm")
+    logger.info("  - A* pathfinding")
+    logger.info("  - Huffman coding")
+    logger.info("  - Task scheduling")
+    logger.info("  - Event simulation")
+    logger.info()
     
     # Example 5: Performance measurement
-    print("Example 5: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 5: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Priority Queue")
     
@@ -197,43 +199,43 @@ def main() -> None:
     
     for n in [100, 1000, 10000]:
         _, metrics = timer.measure(test_operations, n)
-        print(f"Operations on {n} elements:")
-        print(f"  Time: {metrics['execution_time_ms']:.3f} ms")
-        print(f"  Memory: {metrics['memory_peak_kb']:.2f} KB")
+        logger.info(f"Operations on {n} elements:")
+        logger.info(f"  Time: {metrics['execution_time_ms']:.3f} ms")
+        logger.info(f"  Memory: {metrics['memory_peak_kb']:.2f} KB")
     
-    print()
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Push: O(log n)")
-    print("  Pop: O(log n)")
-    print("  Peek: O(1)")
-    print("  Space: O(n)")
-    print("\nKey Advantages:")
-    print("  - Efficient priority-based access")
-    print("  - O(log n) insertions and deletions")
-    print("  - O(1) peek operation")
-    print("  - Used in many algorithms")
-    print("\nKey Disadvantages:")
-    print("  - Not efficient for random access")
-    print("  - No efficient search operation")
-    print("  - Slower than regular queue for FIFO")
-    print("\nWhen to Use:")
-    print("  - Task scheduling")
-    print("  - Dijkstra's algorithm")
-    print("  - A* pathfinding")
-    print("  - Huffman coding")
-    print("  - Event-driven simulation")
-    print("\nWhen NOT to Use:")
-    print("  - Simple FIFO queue (use regular queue)")
-    print("  - Need random access")
-    print("  - Need to search for specific items")
-    print("\nCommon Use Cases:")
-    print("  - Operating system task scheduling")
-    print("  - Network packet routing")
-    print("  - Graph algorithms (Dijkstra, Prim)")
-    print("  - Data compression (Huffman)")
-    print("  - Discrete event simulation")
-    print("=" * 70)
+    logger.info()
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Push: O(log n)")
+    logger.info("  Pop: O(log n)")
+    logger.info("  Peek: O(1)")
+    logger.info("  Space: O(n)")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Efficient priority-based access")
+    logger.info("  - O(log n) insertions and deletions")
+    logger.info("  - O(1) peek operation")
+    logger.info("  - Used in many algorithms")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Not efficient for random access")
+    logger.info("  - No efficient search operation")
+    logger.info("  - Slower than regular queue for FIFO")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Task scheduling")
+    logger.info("  - Dijkstra's algorithm")
+    logger.info("  - A* pathfinding")
+    logger.info("  - Huffman coding")
+    logger.info("  - Event-driven simulation")
+    logger.info("\nWhen NOT to Use:")
+    logger.info("  - Simple FIFO queue (use regular queue)")
+    logger.info("  - Need random access")
+    logger.info("  - Need to search for specific items")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Operating system task scheduling")
+    logger.info("  - Network packet routing")
+    logger.info("  - Graph algorithms (Dijkstra, Prim)")
+    logger.info("  - Data compression (Huffman)")
+    logger.info("  - Discrete event simulation")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

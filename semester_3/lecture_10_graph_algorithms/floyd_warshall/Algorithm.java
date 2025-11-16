@@ -8,7 +8,10 @@ import java.util.*;
  * Time Complexity: O(V³)
  * Space Complexity: O(V²)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class Graph {
         private int numVertices;
@@ -79,7 +82,7 @@ public class Algorithm {
             FloydWarshallResult result = floydWarshall();
             
             if (result.hasNegativeCycle) {
-                System.out.println("Warning: Negative cycle detected!");
+                logger.info("Warning: Negative cycle detected!");
                 return null;
             }
             
@@ -129,14 +132,14 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("FLOYD-WARSHALL ALGORITHM DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("FLOYD-WARSHALL ALGORITHM DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: All-pairs shortest paths
-        System.out.println("Example 1: All-Pairs Shortest Paths");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: All-Pairs Shortest Paths");
+        logger.info("-".repeat(70));
         
         Graph g1 = new Graph(4, true);
         g1.addEdge(0, 1, 3.0);
@@ -149,12 +152,12 @@ public class Algorithm {
         
         FloydWarshallResult result = g1.floydWarshall();
         
-        System.out.println("Shortest distances between all pairs:");
+        logger.info("Shortest distances between all pairs:");
         System.out.print("    ");
         for (int j = 0; j < 4; j++) {
             System.out.printf("  %d", j);
         }
-        System.out.println();
+        logger.info();
         
         for (int i = 0; i < 4; i++) {
             System.out.printf("  %d:", i);
@@ -166,13 +169,13 @@ public class Algorithm {
                     System.out.printf(" %3.0f", dist);
                 }
             }
-            System.out.println();
+            logger.info();
         }
-        System.out.println();
+        logger.info();
         
         // Example 2: Path reconstruction
-        System.out.println("Example 2: Path Reconstruction");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Path Reconstruction");
+        logger.info("-".repeat(70));
         
         int[][] paths = {{0, 3}, {1, 0}, {2, 3}};
         for (int[] p : paths) {
@@ -187,18 +190,18 @@ public class Algorithm {
                 System.out.printf(" (distance: %.0f)%n", distance);
             }
         }
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Time:  O(V³)");
-        System.out.println("  Space: O(V²)");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - All-pairs shortest paths");
-        System.out.println("  - Works with negative weights");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Time:  O(V³)");
+        logger.info("  Space: O(V²)");
+        logger.info("\nKey Advantages:");
+        logger.info("  - All-pairs shortest paths");
+        logger.info("  - Works with negative weights");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

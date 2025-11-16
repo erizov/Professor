@@ -10,7 +10,10 @@ import java.util.*;
  *   Prediction: O(n*d) per sample - n training samples, d dimensions
  * Space Complexity: O(n*d) - stores all training data
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     /**
      * KNN Classifier class.
@@ -128,14 +131,14 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("K-NEAREST NEIGHBORS (KNN) DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("K-NEAREST NEIGHBORS (KNN) DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Simple 2D classification
-        System.out.println("Example 1: 2D Classification");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: 2D Classification");
+        logger.info("-".repeat(70));
         
         // Training data
         List<double[]> xTrain = new ArrayList<>();
@@ -170,11 +173,11 @@ public class Algorithm {
         List<Integer> predictions = knn.predict(xTest);
         double accuracy = knn.score(xTest, yTest);
         
-        System.out.println("Training samples: " + xTrain.size());
-        System.out.println("Test samples: " + xTest.size());
-        System.out.println("k = " + knn.k);
-        System.out.println();
-        System.out.println("Predictions:");
+        logger.info("Training samples: " + xTrain.size());
+        logger.info("Test samples: " + xTest.size());
+        logger.info("k = " + knn.k);
+        logger.info();
+        logger.info("Predictions:");
         for (int i = 0; i < xTest.size(); i++) {
             double[] x = xTest.get(i);
             int pred = predictions.get(i);
@@ -187,8 +190,8 @@ public class Algorithm {
         System.out.printf("%nAccuracy: %.0f%%%n%n", accuracy * 100);
         
         // Example 2: Effect of k
-        System.out.println("Example 2: Effect of Different k Values");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Effect of Different k Values");
+        logger.info("-".repeat(70));
         
         for (int k : new int[]{1, 3, 5, 7}) {
             KNNClassifier knnK = new KNNClassifier(k);
@@ -196,22 +199,22 @@ public class Algorithm {
             double acc = knnK.score(xTest, yTest);
             System.out.printf("k=%d: Accuracy = %.0f%%%n", k, acc * 100);
         }
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         double durationMs = (endTime - startTime) / 1_000_000.0;
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Training Time:  O(1) - just stores data");
-        System.out.println("  Prediction Time: O(n*d) per sample");
-        System.out.println("  Space: O(n*d) - stores all training data");
-        System.out.println("\nKey Points:");
-        System.out.println("  - No training phase (lazy learning)");
-        System.out.println("  - Slow prediction for large datasets");
-        System.out.println("  - Sensitive to feature scaling");
-        System.out.println("  - Works well for small datasets");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Training Time:  O(1) - just stores data");
+        logger.info("  Prediction Time: O(n*d) per sample");
+        logger.info("  Space: O(n*d) - stores all training data");
+        logger.info("\nKey Points:");
+        logger.info("  - No training phase (lazy learning)");
+        logger.info("  - Slow prediction for large datasets");
+        logger.info("  - Sensitive to feature scaling");
+        logger.info("  - Works well for small datasets");
+        logger.info("=".repeat(70));
         System.out.printf("%nTotal execution time: %.3f ms%n", durationMs);
     }
 }

@@ -13,7 +13,10 @@ import java.util.stream.Collectors;
  * Time Complexity: O(n*d*log(n)) training
  * Space Complexity: O(n) for tree
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class Node {
         Integer feature;
@@ -218,10 +221,10 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("DECISION TREE CLASSIFIER DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("DECISION TREE CLASSIFIER DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Generate data
         Random rand = new Random(42);
@@ -241,8 +244,8 @@ public class Algorithm {
             y[i] = 1;
         }
         
-        System.out.println("Generated " + n + " training samples");
-        System.out.println();
+        logger.info("Generated " + n + " training samples");
+        logger.info();
         
         // Train
         DecisionTreeClassifier tree = 
@@ -251,27 +254,27 @@ public class Algorithm {
         
         double accuracy = tree.score(X, y);
         System.out.printf("Training Accuracy: %.4f%n", accuracy);
-        System.out.println();
+        logger.info();
         
         // Predictions
         double[][] X_test = {{1.0, 1.0}, {6.0, 6.0}, {3.5, 3.5}};
         int[] predictions = tree.predict(X_test);
         
-        System.out.println("Predictions:");
+        logger.info("Predictions:");
         for (int i = 0; i < X_test.length; i++) {
             System.out.printf("  [%.1f, %.1f] → Class %d%n",
                             X_test[i][0], X_test[i][1], predictions[i]);
         }
         
-        System.out.println();
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity: O(n*d*log(n)) training");
-        System.out.println("Space: O(n)");
-        System.out.println("\nKey Points:");
-        System.out.println("  + Interpretable");
-        System.out.println("  + No scaling needed");
-        System.out.println("  + Handles non-linear");
-        System.out.println("  - Can overfit");
-        System.out.println("=".repeat(70));
+        logger.info();
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity: O(n*d*log(n)) training");
+        logger.info("Space: O(n)");
+        logger.info("\nKey Points:");
+        logger.info("  + Interpretable");
+        logger.info("  + No scaling needed");
+        logger.info("  + Handles non-linear");
+        logger.info("  - Can overfit");
+        logger.info("=".repeat(70));
     }
 }

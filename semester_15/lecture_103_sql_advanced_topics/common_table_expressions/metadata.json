@@ -1,0 +1,12 @@
+{
+  "name": "common_table_expressions",
+  "display_name": "Common Table Expressions",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_103_sql_advanced_topics",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

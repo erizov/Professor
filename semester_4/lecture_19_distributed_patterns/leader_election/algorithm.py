@@ -19,6 +19,8 @@ import random
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class NodeState(Enum):
@@ -76,7 +78,7 @@ class LeaderElection:
             candidate.term += 1
             candidate.votes_received = 1  # Vote for self
             
-            print(f"Node {candidate_id} starting election (term {candidate.term})")
+            logger.info(f"Node {candidate_id} starting election (term {candidate.term})")
             
             # Request votes from other nodes
             votes_needed = (len(self.nodes) // 2) + 1
@@ -88,7 +90,7 @@ class LeaderElection:
                 # Simulate vote (in real system, would send network request)
                 if self._request_vote(node_id, candidate.term):
                     candidate.votes_received += 1
-                    print(f"  Node {node_id} voted for {candidate_id}")
+                    logger.info(f"  Node {node_id} voted for {candidate_id}")
             
             # Check if majority
             if candidate.votes_received >= votes_needed:
@@ -96,7 +98,7 @@ class LeaderElection:
                 return True
             else:
                 candidate.state = NodeState.FOLLOWER
-                print(f"  Election failed: {candidate.votes_received}/{votes_needed} votes")
+                logger.info(f"  Election failed: {candidate.votes_received}/{votes_needed} votes")
                 return False
     
     def _request_vote(self, node_id: str, term: int) -> bool:
@@ -132,14 +134,14 @@ class LeaderElection:
             if self.current_leader and self.current_leader != node_id:
                 old_leader = self.nodes[self.current_leader]
                 old_leader.state = NodeState.FOLLOWER
-                print(f"  Node {self.current_leader} demoted from leader")
+                logger.info(f"  Node {self.current_leader} demoted from leader")
             
             # Promote new leader
             leader = self.nodes[node_id]
             leader.state = NodeState.LEADER
             self.current_leader = node_id
             
-            print(f"  Node {node_id} elected as leader (term {leader.term})")
+            logger.info(f"  Node {node_id} elected as leader (term {leader.term})")
     
     def send_heartbeat(self, leader_id: str) -> None:
         """
@@ -213,37 +215,37 @@ class LeaderElection:
 
 def main() -> None:
     """Demonstration of Leader Election Pattern."""
-    print("=" * 70)
-    print("LEADER ELECTION PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("LEADER ELECTION PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Initial Election
-    print("Example 1: Initial Leader Election")
-    print("-" * 70)
+    logger.info("Example 1: Initial Leader Election")
+    logger.info("-" * 70)
     
     nodes = ["node1", "node2", "node3", "node4", "node5"]
     election = LeaderElection(nodes)
     
     # Node 1 starts election
     elected = election.start_election("node1")
-    print(f"Election result: {'Success' if elected else 'Failed'}")
-    print(f"Current leader: {election.get_leader()}")
-    print()
+    logger.info(f"Election result: {'Success' if elected else 'Failed'}")
+    logger.info(f"Current leader: {election.get_leader()}")
+    logger.info()
     
     # Example 2: Leader Heartbeat
-    print("Example 2: Leader Sending Heartbeat")
-    print("-" * 70)
+    logger.info("Example 2: Leader Sending Heartbeat")
+    logger.info("-" * 70)
     
     if election.get_leader():
         election.send_heartbeat(election.get_leader())
-        print("Heartbeat sent to all followers")
-        print(f"Status: {election.get_status()}")
-    print()
+        logger.info("Heartbeat sent to all followers")
+        logger.info(f"Status: {election.get_status()}")
+    logger.info()
     
     # Example 3: Leader Failure and Re-election
-    print("Example 3: Leader Failure and Re-election")
-    print("-" * 70)
+    logger.info("Example 3: Leader Failure and Re-election")
+    logger.info("-" * 70)
     
     # Simulate leader failure (remove heartbeat)
     leader_id = election.get_leader()
@@ -255,14 +257,14 @@ def main() -> None:
         
         # Node 2 detects timeout and starts election
         if election.check_leader_timeout("node2"):
-            print(f"Node 2 detected leader timeout, starting election...")
+            logger.info(f"Node 2 detected leader timeout, starting election...")
             elected = election.start_election("node2")
-            print(f"New leader: {election.get_leader()}")
-    print()
+            logger.info(f"New leader: {election.get_leader()}")
+    logger.info()
     
     # Example 4: Multiple Concurrent Elections
-    print("Example 4: Multiple Concurrent Elections (Split Vote)")
-    print("-" * 70)
+    logger.info("Example 4: Multiple Concurrent Elections (Split Vote)")
+    logger.info("-" * 70)
     
     election2 = LeaderElection(["node1", "node2", "node3"])
     
@@ -270,14 +272,14 @@ def main() -> None:
     result1 = election2.start_election("node1")
     result2 = election2.start_election("node2")
     
-    print(f"Node 1 election: {'Success' if result1 else 'Failed'}")
-    print(f"Node 2 election: {'Success' if result2 else 'Failed'}")
-    print(f"Final leader: {election2.get_leader()}")
-    print()
+    logger.info(f"Node 1 election: {'Success' if result1 else 'Failed'}")
+    logger.info(f"Node 2 election: {'Success' if result2 else 'Failed'}")
+    logger.info(f"Final leader: {election2.get_leader()}")
+    logger.info()
     
     # Example 5: Performance measurement
-    print("Example 5: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 5: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Leader Election")
     
@@ -289,46 +291,46 @@ def main() -> None:
         return election.get_leader()
     
     result, metrics = timer.measure(election_operations)
-    print(f"Time for leader election: {metrics['execution_time_ms']:.3f} ms")
-    print()
+    logger.info(f"Time for leader election: {metrics['execution_time_ms']:.3f} ms")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Algorithm for selecting a leader among distributed nodes.")
-    print("  Ensures only one leader exists at a time for coordination.")
-    print("\nKey Advantages:")
-    print("  - Single point of coordination")
-    print("  - Prevents split-brain scenarios")
-    print("  - Automatic failover")
-    print("  - Consensus-based selection")
-    print("\nKey Disadvantages:")
-    print("  - Single point of failure (mitigated by re-election)")
-    print("  - Network overhead for heartbeats")
-    print("  - Election can cause temporary unavailability")
-    print("  - Complexity in implementation")
-    print("\nWhen to Use:")
-    print("  - Distributed systems requiring coordination")
-    print("  - Master-slave architectures")
-    print("  - Consensus algorithms (Raft, Paxos)")
-    print("  - Cluster management")
-    print("\nCommon Use Cases:")
-    print("  - Database replication (primary/secondary)")
-    print("  - Distributed locks")
-    print("  - Service discovery")
-    print("  - Configuration management")
-    print("  - Load balancer coordination")
-    print("\nLeader Election Algorithms:")
-    print("  - Raft: Leader election with log replication")
-    print("  - Paxos: Consensus algorithm")
-    print("  - Bully: Highest ID wins")
-    print("  - Ring: Token passing")
-    print("\nImplementation Considerations:")
-    print("  - Use majority voting to prevent split-brain")
-    print("  - Implement heartbeat mechanism")
-    print("  - Handle network partitions")
-    print("  - Use timeouts for failure detection")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Algorithm for selecting a leader among distributed nodes.")
+    logger.info("  Ensures only one leader exists at a time for coordination.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Single point of coordination")
+    logger.info("  - Prevents split-brain scenarios")
+    logger.info("  - Automatic failover")
+    logger.info("  - Consensus-based selection")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Single point of failure (mitigated by re-election)")
+    logger.info("  - Network overhead for heartbeats")
+    logger.info("  - Election can cause temporary unavailability")
+    logger.info("  - Complexity in implementation")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Distributed systems requiring coordination")
+    logger.info("  - Master-slave architectures")
+    logger.info("  - Consensus algorithms (Raft, Paxos)")
+    logger.info("  - Cluster management")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Database replication (primary/secondary)")
+    logger.info("  - Distributed locks")
+    logger.info("  - Service discovery")
+    logger.info("  - Configuration management")
+    logger.info("  - Load balancer coordination")
+    logger.info("\nLeader Election Algorithms:")
+    logger.info("  - Raft: Leader election with log replication")
+    logger.info("  - Paxos: Consensus algorithm")
+    logger.info("  - Bully: Highest ID wins")
+    logger.info("  - Ring: Token passing")
+    logger.info("\nImplementation Considerations:")
+    logger.info("  - Use majority voting to prevent split-brain")
+    logger.info("  - Implement heartbeat mechanism")
+    logger.info("  - Handle network partitions")
+    logger.info("  - Use timeouts for failure detection")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

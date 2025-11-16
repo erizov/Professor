@@ -5,14 +5,17 @@
  * Time Complexity: O(n)
  * Space Complexity: O(1)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     public static void main(String[] args) {
-        System.out.println("==".repeat(35));
-        System.out.println("Leader Election");
-        System.out.println("==".repeat(35));
-        System.out.println("Category: Distributed Systems");
-        System.out.println("Time: O(n)");
-        System.out.println("Space: O(1)");
-        System.out.println("==".repeat(35));
+        logger.info("==".repeat(35));
+        logger.info("Leader Election");
+        logger.info("==".repeat(35));
+        logger.info("Category: Distributed Systems");
+        logger.info("Time: O(n)");
+        logger.info("Space: O(1)");
+        logger.info("==".repeat(35));
     }
 }

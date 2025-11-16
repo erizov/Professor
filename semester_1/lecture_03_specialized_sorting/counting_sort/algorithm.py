@@ -14,6 +14,8 @@ import random
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 def counting_sort(arr: List[int]) -> List[int]:
@@ -104,7 +106,7 @@ def counting_sort_visualized(arr: List[int]) -> List[int]:
     Returns:
         Sorted list
     """
-    print(f"Original array: {arr}")
+    logger.info(f"Original array: {arr}")
     
     if not arr:
         return arr
@@ -113,23 +115,23 @@ def counting_sort_visualized(arr: List[int]) -> List[int]:
     min_val = min(arr)
     range_size = max_val - min_val + 1
     
-    print(f"Range: {min_val} to {max_val} (size {range_size})")
+    logger.info(f"Range: {min_val} to {max_val} (size {range_size})")
     
     # Count occurrences
     count = [0] * range_size
     for num in arr:
         count[num - min_val] += 1
     
-    print(f"\nCount array:")
+    logger.info(f"\nCount array:")
     for i in range(range_size):
         if count[i] > 0:
-            print(f"  {i + min_val}: {'*' * count[i]} ({count[i]})")
+            logger.info(f"  {i + min_val}: {'*' * count[i]} ({count[i]})")
     
     # Cumulative count
     for i in range(1, len(count)):
         count[i] += count[i - 1]
     
-    print(f"\nCumulative count: {count}")
+    logger.info(f"\nCumulative count: {count}")
     
     # Build output array
     output = [0] * len(arr)
@@ -139,64 +141,64 @@ def counting_sort_visualized(arr: List[int]) -> List[int]:
         output[index] = num
         count[num - min_val] -= 1
     
-    print(f"Sorted array: {output}")
+    logger.info(f"Sorted array: {output}")
     
     return output
 
 
 def main() -> None:
     """Demonstration of Counting Sort."""
-    print("=" * 70)
-    print("COUNTING SORT DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("COUNTING SORT DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic sorting
-    print("Example 1: Basic Integer Sorting")
-    print("-" * 70)
+    logger.info("Example 1: Basic Integer Sorting")
+    logger.info("-" * 70)
     data1 = [4, 2, 2, 8, 3, 3, 1]
-    print(f"Original: {data1}")
+    logger.info(f"Original: {data1}")
     result1 = counting_sort(data1.copy())
-    print(f"Sorted:   {result1}")
-    print()
+    logger.info(f"Sorted:   {result1}")
+    logger.info()
     
     # Example 2: Large range
-    print("Example 2: Larger Range")
-    print("-" * 70)
+    logger.info("Example 2: Larger Range")
+    logger.info("-" * 70)
     data2 = [64, 34, 25, 12, 22, 11, 90, 88]
-    print(f"Original: {data2}")
+    logger.info(f"Original: {data2}")
     result2 = counting_sort(data2.copy())
-    print(f"Sorted:   {result2}")
-    print()
+    logger.info(f"Sorted:   {result2}")
+    logger.info()
     
     # Example 3: Negative numbers
-    print("Example 3: With Negative Numbers")
-    print("-" * 70)
+    logger.info("Example 3: With Negative Numbers")
+    logger.info("-" * 70)
     data3 = [3, -1, 2, -5, 0, 4, -3]
-    print(f"Original: {data3}")
+    logger.info(f"Original: {data3}")
     result3 = counting_sort(data3.copy())
-    print(f"Sorted:   {result3}")
-    print()
+    logger.info(f"Sorted:   {result3}")
+    logger.info()
     
     # Example 4: Duplicates
-    print("Example 4: Many Duplicates")
-    print("-" * 70)
+    logger.info("Example 4: Many Duplicates")
+    logger.info("-" * 70)
     data4 = [5, 2, 2, 2, 9, 1, 5, 5, 5]
-    print(f"Original: {data4}")
+    logger.info(f"Original: {data4}")
     result4 = counting_sort(data4.copy())
-    print(f"Sorted:   {result4}")
-    print()
+    logger.info(f"Sorted:   {result4}")
+    logger.info()
     
     # Example 5: Visualization
-    print("Example 5: Visualized Counting Sort")
-    print("-" * 70)
+    logger.info("Example 5: Visualized Counting Sort")
+    logger.info("-" * 70)
     data5 = [1, 4, 1, 2, 7, 5, 2]
     result5 = counting_sort_visualized(data5)
-    print()
+    logger.info()
     
     # Example 6: Performance measurement
-    print("Example 6: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 6: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Counting Sort")
     
@@ -205,36 +207,36 @@ def main() -> None:
     for size in sizes:
         data = [random.randint(0, 100) for _ in range(size)]
         _, metrics = timer.measure(counting_sort, data.copy())
-        print(f"n={size:5d}, k=100: {metrics['execution_time_ms']:8.3f} ms, "
+        logger.info(f"n={size:5d}, k=100: {metrics['execution_time_ms']:8.3f} ms, "
               f"{metrics['memory_peak_kb']:8.2f} KB")
     
-    print()
+    logger.info()
     timer.print_summary()
     
-    print("\n" + "=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O(n + k) where k is the range")
-    print("  Space: O(n + k)")
-    print("  Stable: Yes (standard implementation)")
-    print("  Adaptive: No")
-    print("\nKey Points:")
-    print("  + Linear time complexity O(n+k)")
-    print("  + Stable sorting")
-    print("  + Good for small range of integers")
-    print("  + No comparisons needed")
-    print("  - Only works with integers")
-    print("  - Inefficient for large ranges")
-    print("  - Requires extra memory O(k)")
-    print("\nWhen to use:")
-    print("  • Sorting integers")
-    print("  • Range k is not too large (k ≤ n)")
-    print("  • Need linear time sort")
-    print("  • Stable sort required")
-    print("\nWhen NOT to use:")
-    print("  • Range is very large (k >> n)")
-    print("  • Sorting floats or strings")
-    print("  • Memory is limited")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  O(n + k) where k is the range")
+    logger.info("  Space: O(n + k)")
+    logger.info("  Stable: Yes (standard implementation)")
+    logger.info("  Adaptive: No")
+    logger.info("\nKey Points:")
+    logger.info("  + Linear time complexity O(n+k)")
+    logger.info("  + Stable sorting")
+    logger.info("  + Good for small range of integers")
+    logger.info("  + No comparisons needed")
+    logger.info("  - Only works with integers")
+    logger.info("  - Inefficient for large ranges")
+    logger.info("  - Requires extra memory O(k)")
+    logger.info("\nWhen to use:")
+    logger.info("  • Sorting integers")
+    logger.info("  • Range k is not too large (k ≤ n)")
+    logger.info("  • Need linear time sort")
+    logger.info("  • Stable sort required")
+    logger.info("\nWhen NOT to use:")
+    logger.info("  • Range is very large (k >> n)")
+    logger.info("  • Sorting floats or strings")
+    logger.info("  • Memory is limited")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

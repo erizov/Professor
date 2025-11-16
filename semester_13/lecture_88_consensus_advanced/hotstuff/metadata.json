@@ -1,0 +1,12 @@
+{
+  "name": "hotstuff",
+  "display_name": "Hotstuff",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_88_consensus_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

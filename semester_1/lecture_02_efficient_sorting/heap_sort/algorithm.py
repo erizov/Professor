@@ -15,6 +15,8 @@ sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
 
 from typing import List, TypeVar
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 T = TypeVar('T')
 
@@ -87,26 +89,26 @@ def heap_sort_visualized(arr: List[int]) -> List[int]:
         Sorted list
     """
     n = len(arr)
-    print(f"Initial array: {arr}")
-    print()
+    logger.info(f"Initial array: {arr}")
+    logger.info()
     
     # Build max heap
-    print("Building max heap:")
+    logger.info("Building max heap:")
     for i in range(n // 2 - 1, -1, -1):
         heapify(arr, n, i)
-        print(f"  After heapifying at index {i}: {arr}")
-    print(f"Max heap built: {arr}")
-    print()
+        logger.info(f"  After heapifying at index {i}: {arr}")
+    logger.info(f"Max heap built: {arr}")
+    logger.info()
     
     # Extract elements
-    print("Extracting elements:")
+    logger.info("Extracting elements:")
     for i in range(n - 1, 0, -1):
         arr[0], arr[i] = arr[i], arr[0]
-        print(f"  Moved {arr[i]} to position {i}: {arr[:i]} | [{arr[i:]}]")
+        logger.info(f"  Moved {arr[i]} to position {i}: {arr[:i]} | [{arr[i:]}]")
         heapify(arr, i, 0)
-        print(f"  After heapify: {arr[:i]} | [{arr[i:]}]")
+        logger.info(f"  After heapify: {arr[:i]} | [{arr[i:]}]")
     
-    print(f"\nFinal sorted array: {arr}")
+    logger.info(f"\nFinal sorted array: {arr}")
     return arr
 
 
@@ -163,100 +165,100 @@ def heap_sort_descending(arr: List[T]) -> List[T]:
 
 def main() -> None:
     """Demonstration of Heap Sort."""
-    print("=" * 70)
-    print("HEAP SORT DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("HEAP SORT DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic sorting
-    print("Example 1: Basic Integer Sorting")
-    print("-" * 70)
+    logger.info("Example 1: Basic Integer Sorting")
+    logger.info("-" * 70)
     data1 = [64, 34, 25, 12, 22, 11, 90]
-    print(f"Original: {data1}")
+    logger.info(f"Original: {data1}")
     result1 = heap_sort(data1.copy())
-    print(f"Sorted:   {result1}")
-    print()
+    logger.info(f"Sorted:   {result1}")
+    logger.info()
     
     # Example 2: Already sorted
-    print("Example 2: Already Sorted Array")
-    print("-" * 70)
+    logger.info("Example 2: Already Sorted Array")
+    logger.info("-" * 70)
     data2 = [1, 2, 3, 4, 5, 6, 7]
-    print(f"Original: {data2}")
+    logger.info(f"Original: {data2}")
     result2 = heap_sort(data2.copy())
-    print(f"Sorted:   {result2}")
-    print("Note: Still O(n log n) - not adaptive")
-    print()
+    logger.info(f"Sorted:   {result2}")
+    logger.info("Note: Still O(n log n) - not adaptive")
+    logger.info()
     
     # Example 3: Reverse sorted
-    print("Example 3: Reverse Sorted Array")
-    print("-" * 70)
+    logger.info("Example 3: Reverse Sorted Array")
+    logger.info("-" * 70)
     data3 = [7, 6, 5, 4, 3, 2, 1]
-    print(f"Original: {data3}")
+    logger.info(f"Original: {data3}")
     result3 = heap_sort(data3.copy())
-    print(f"Sorted:   {result3}")
-    print()
+    logger.info(f"Sorted:   {result3}")
+    logger.info()
     
     # Example 4: Descending order
-    print("Example 4: Descending Order")
-    print("-" * 70)
+    logger.info("Example 4: Descending Order")
+    logger.info("-" * 70)
     data4 = [64, 34, 25, 12, 22, 11, 90]
-    print(f"Original: {data4}")
+    logger.info(f"Original: {data4}")
     result4 = heap_sort_descending(data4.copy())
-    print(f"Sorted (desc): {result4}")
-    print()
+    logger.info(f"Sorted (desc): {result4}")
+    logger.info()
     
     # Example 5: Visualization
-    print("Example 5: Visualized Heap Sort Process")
-    print("-" * 70)
+    logger.info("Example 5: Visualized Heap Sort Process")
+    logger.info("-" * 70)
     data5 = [12, 11, 13, 5, 6, 7]
     heap_sort_visualized(data5)
-    print()
+    logger.info()
     
     # Example 6: Performance measurement
-    print("Example 6: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 6: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Heap Sort")
     
     # Small dataset
     data_small = [random.randint(1, 100) for _ in range(100)]
     _, metrics_small = timer.measure(heap_sort, data_small.copy())
-    print(f"Small (100 elements):")
-    print(f"  Time: {metrics_small['execution_time_ms']:.3f} ms")
-    print(f"  Memory: {metrics_small['memory_peak_kb']:.2f} KB")
+    logger.info(f"Small (100 elements):")
+    logger.info(f"  Time: {metrics_small['execution_time_ms']:.3f} ms")
+    logger.info(f"  Memory: {metrics_small['memory_peak_kb']:.2f} KB")
     
     # Medium dataset
     data_medium = [random.randint(1, 1000) for _ in range(1000)]
     _, metrics_medium = timer.measure(heap_sort, data_medium.copy())
-    print(f"\nMedium (1,000 elements):")
-    print(f"  Time: {metrics_medium['execution_time_ms']:.3f} ms")
-    print(f"  Memory: {metrics_medium['memory_peak_kb']:.2f} KB")
+    logger.info(f"\nMedium (1,000 elements):")
+    logger.info(f"  Time: {metrics_medium['execution_time_ms']:.3f} ms")
+    logger.info(f"  Memory: {metrics_medium['memory_peak_kb']:.2f} KB")
     
     # Large dataset
     data_large = [random.randint(1, 10000) for _ in range(10000)]
     _, metrics_large = timer.measure(heap_sort, data_large.copy())
-    print(f"\nLarge (10,000 elements):")
-    print(f"  Time: {metrics_large['execution_time_ms']:.3f} ms")
-    print(f"  Memory: {metrics_large['memory_peak_kb']:.2f} KB")
-    print()
+    logger.info(f"\nLarge (10,000 elements):")
+    logger.info(f"  Time: {metrics_large['execution_time_ms']:.3f} ms")
+    logger.info(f"  Memory: {metrics_large['memory_peak_kb']:.2f} KB")
+    logger.info()
     
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O(n log n) - all cases")
-    print("  Space: O(1) - in-place (O(log n) recursion stack)")
-    print("  Stable: No - relative order not preserved")
-    print("  Adaptive: No - always O(n log n)")
-    print("\nKey Advantages:")
-    print("  - Guaranteed O(n log n) performance")
-    print("  - In-place sorting (O(1) auxiliary space)")
-    print("  - No worst-case quadratic time")
-    print("  - Good for memory-constrained systems")
-    print("\nKey Disadvantages:")
-    print("  - Not stable")
-    print("  - Not cache-friendly")
-    print("  - Slower than quick sort in practice")
-    print("  - Not adaptive")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  O(n log n) - all cases")
+    logger.info("  Space: O(1) - in-place (O(log n) recursion stack)")
+    logger.info("  Stable: No - relative order not preserved")
+    logger.info("  Adaptive: No - always O(n log n)")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Guaranteed O(n log n) performance")
+    logger.info("  - In-place sorting (O(1) auxiliary space)")
+    logger.info("  - No worst-case quadratic time")
+    logger.info("  - Good for memory-constrained systems")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Not stable")
+    logger.info("  - Not cache-friendly")
+    logger.info("  - Slower than quick sort in practice")
+    logger.info("  - Not adaptive")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

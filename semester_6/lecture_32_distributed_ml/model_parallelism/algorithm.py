@@ -10,6 +10,8 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 def model_parallelism():
@@ -20,21 +22,21 @@ def model_parallelism():
     Time Complexity: O(n*layers/workers)
     Space Complexity: O(model/workers)
     """
-    print("==" * 35)
-    print("Model Parallelism")
-    print("==" * 35)
-    print(f"Category: Distributed ML")
-    print(f"Time Complexity: O(n*layers/workers)")
-    print(f"Space Complexity: O(model/workers)")
-    print()
-    print("Resource Requirements:")
-    print("  - GPU: Optional")
-    print("  - Memory: Medium")
-    print("==" * 35)
+    logger.info("==" * 35)
+    logger.info("Model Parallelism")
+    logger.info("==" * 35)
+    logger.info(f"Category: Distributed ML")
+    logger.info(f"Time Complexity: O(n*layers/workers)")
+    logger.info(f"Space Complexity: O(model/workers)")
+    logger.info()
+    logger.info("Resource Requirements:")
+    logger.info("  - GPU: Optional")
+    logger.info("  - Memory: Medium")
+    logger.info("==" * 35)
 
 
 if __name__ == "__main__":
     timer = PerformanceTimer("Model Parallelism")
     _, metrics = timer.measure(model_parallelism)
-    print(f"\nExecution time: {metrics['execution_time_ms']:.3f} ms")
-    print(f"Memory used: {metrics['memory_peak_kb']:.2f} KB")
+    logger.info(f"\nExecution time: {metrics['execution_time_ms']:.3f} ms")
+    logger.info(f"Memory used: {metrics['memory_peak_kb']:.2f} KB")

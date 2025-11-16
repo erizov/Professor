@@ -1,0 +1,12 @@
+{
+  "name": "content_generation",
+  "display_name": "Content Generation",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_99_technical_writing_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

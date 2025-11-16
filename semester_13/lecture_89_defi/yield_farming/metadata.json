@@ -1,0 +1,12 @@
+{
+  "name": "yield_farming",
+  "display_name": "Yield Farming",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_89_defi",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

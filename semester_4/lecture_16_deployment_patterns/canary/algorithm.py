@@ -17,6 +17,8 @@ import random
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class DeploymentStatus(Enum):
@@ -69,7 +71,7 @@ class CanaryDeploymentManager:
         )
         
         self.traffic_split = initial_traffic
-        print(f"Deployed canary version {version} with {initial_traffic}% traffic")
+        logger.info(f"Deployed canary version {version} with {initial_traffic}% traffic")
         return self.canary
     
     def increase_traffic(self, increment: float = 10.0) -> bool:
@@ -80,7 +82,7 @@ class CanaryDeploymentManager:
             increment: Percentage to increase (default 10%)
         """
         if not self.canary:
-            print("Error: No canary deployment")
+            logger.info("Error: No canary deployment")
             return False
         
         new_percentage = min(100.0, self.traffic_split + increment)
@@ -89,10 +91,10 @@ class CanaryDeploymentManager:
         
         if new_percentage >= 100.0:
             self.canary.status = DeploymentStatus.COMPLETE
-            print(f"Canary deployment complete: {self.canary.version}")
+            logger.info(f"Canary deployment complete: {self.canary.version}")
         else:
             self.canary.status = DeploymentStatus.ROLLING_OUT
-            print(f"Increased canary traffic to {new_percentage}%")
+            logger.info(f"Increased canary traffic to {new_percentage}%")
         
         return True
     
@@ -139,12 +141,12 @@ class CanaryDeploymentManager:
     def rollback(self) -> bool:
         """Rollback canary deployment."""
         if not self.canary:
-            print("Error: No canary deployment to rollback")
+            logger.info("Error: No canary deployment to rollback")
             return False
         
         self.canary.status = DeploymentStatus.ROLLED_BACK
         self.traffic_split = 0.0
-        print(f"Rolled back canary version {self.canary.version}")
+        logger.info(f"Rolled back canary version {self.canary.version}")
         return True
     
     def route_request(self, user_id: str) -> str:
@@ -182,33 +184,33 @@ class CanaryDeploymentManager:
 
 def main() -> None:
     """Demonstration of Canary Deployment Pattern."""
-    print("=" * 70)
-    print("CANARY DEPLOYMENT PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("CANARY DEPLOYMENT PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Initial Canary Deployment
-    print("Example 1: Deploy Canary with 5% Traffic")
-    print("-" * 70)
+    logger.info("Example 1: Deploy Canary with 5% Traffic")
+    logger.info("-" * 70)
     
     manager = CanaryDeploymentManager(baseline_version="v1.0.0")
     manager.deploy_canary("v1.1.0", initial_traffic=5.0)
-    print(f"Status: {manager.get_status()}")
-    print()
+    logger.info(f"Status: {manager.get_status()}")
+    logger.info()
     
     # Example 2: Request Routing
-    print("Example 2: Request Routing Based on Traffic Split")
-    print("-" * 70)
+    logger.info("Example 2: Request Routing Based on Traffic Split")
+    logger.info("-" * 70)
     
     users = ["user1", "user2", "user3", "user4", "user5"]
     for user in users:
         version = manager.route_request(user)
-        print(f"User {user} -> {version}")
-    print()
+        logger.info(f"User {user} -> {version}")
+    logger.info()
     
     # Example 3: Monitor Metrics
-    print("Example 3: Monitor Canary Metrics")
-    print("-" * 70)
+    logger.info("Example 3: Monitor Canary Metrics")
+    logger.info("-" * 70)
     
     baseline_metrics = {"error_rate": 0.01, "latency_ms": 100.0, "throughput": 1000.0}
     canary_metrics = {"error_rate": 0.005, "latency_ms": 95.0, "throughput": 1050.0}
@@ -220,23 +222,23 @@ def main() -> None:
     )
     
     should_rollback = manager.should_rollback(baseline_metrics)
-    print(f"Canary metrics: {canary_metrics}")
-    print(f"Should rollback: {should_rollback} (canary is performing well)")
-    print()
+    logger.info(f"Canary metrics: {canary_metrics}")
+    logger.info(f"Should rollback: {should_rollback} (canary is performing well)")
+    logger.info()
     
     # Example 4: Increase Traffic
-    print("Example 4: Gradually Increase Traffic")
-    print("-" * 70)
+    logger.info("Example 4: Gradually Increase Traffic")
+    logger.info("-" * 70)
     
     manager.increase_traffic(10.0)  # 15%
     manager.increase_traffic(15.0)  # 30%
     manager.increase_traffic(20.0)  # 50%
     manager.increase_traffic(50.0)  # 100%
-    print()
+    logger.info()
     
     # Example 5: Rollback on Issues
-    print("Example 5: Rollback on High Error Rate")
-    print("-" * 70)
+    logger.info("Example 5: Rollback on High Error Rate")
+    logger.info("-" * 70)
     
     manager2 = CanaryDeploymentManager(baseline_version="v1.0.0")
     manager2.deploy_canary("v1.2.0", initial_traffic=10.0)
@@ -245,16 +247,16 @@ def main() -> None:
     manager2.update_metrics(error_rate=0.15, latency_ms=200.0, throughput=800.0)
     should_rollback = manager2.should_rollback(baseline_metrics, threshold=0.1)
     
-    print(f"Canary error rate: 15% (baseline: 1%)")
-    print(f"Should rollback: {should_rollback}")
+    logger.info(f"Canary error rate: 15% (baseline: 1%)")
+    logger.info(f"Should rollback: {should_rollback}")
     
     if should_rollback:
         manager2.rollback()
-    print()
+    logger.info()
     
     # Example 6: Performance measurement
-    print("Example 6: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 6: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Canary Deployment")
     
@@ -269,41 +271,41 @@ def main() -> None:
         return mgr.get_status()
     
     result, metrics = timer.measure(canary_operations)
-    print(f"Time for canary operations: {metrics['execution_time_ms']:.3f} ms")
-    print()
+    logger.info(f"Time for canary operations: {metrics['execution_time_ms']:.3f} ms")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Gradually roll out new version to a small subset of users")
-    print("  before full deployment. Monitor metrics and rollback if needed.")
-    print("\nKey Advantages:")
-    print("  - Reduced risk of bad deployments")
-    print("  - Real-world testing with production traffic")
-    print("  - Gradual rollout")
-    print("  - Automatic rollback capability")
-    print("\nKey Disadvantages:")
-    print("  - Requires monitoring infrastructure")
-    print("  - More complex than blue-green")
-    print("  - Slower deployment process")
-    print("  - Traffic routing complexity")
-    print("\nWhen to Use:")
-    print("  - High-traffic applications")
-    print("  - When gradual rollout is preferred")
-    print("  - When monitoring is available")
-    print("  - Risk-averse deployments")
-    print("\nCommon Use Cases:")
-    print("  - Large-scale web applications")
-    print("  - API service deployments")
-    print("  - Feature flag rollouts")
-    print("  - A/B testing")
-    print("\nDeployment Flow:")
-    print("  1. Deploy canary with small traffic (5-10%)")
-    print("  2. Monitor metrics (error rate, latency, throughput)")
-    print("  3. Gradually increase traffic (10% -> 25% -> 50% -> 100%)")
-    print("  4. Rollback if metrics degrade")
-    print("  5. Complete deployment if metrics are good")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Gradually roll out new version to a small subset of users")
+    logger.info("  before full deployment. Monitor metrics and rollback if needed.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Reduced risk of bad deployments")
+    logger.info("  - Real-world testing with production traffic")
+    logger.info("  - Gradual rollout")
+    logger.info("  - Automatic rollback capability")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Requires monitoring infrastructure")
+    logger.info("  - More complex than blue-green")
+    logger.info("  - Slower deployment process")
+    logger.info("  - Traffic routing complexity")
+    logger.info("\nWhen to Use:")
+    logger.info("  - High-traffic applications")
+    logger.info("  - When gradual rollout is preferred")
+    logger.info("  - When monitoring is available")
+    logger.info("  - Risk-averse deployments")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Large-scale web applications")
+    logger.info("  - API service deployments")
+    logger.info("  - Feature flag rollouts")
+    logger.info("  - A/B testing")
+    logger.info("\nDeployment Flow:")
+    logger.info("  1. Deploy canary with small traffic (5-10%)")
+    logger.info("  2. Monitor metrics (error rate, latency, throughput)")
+    logger.info("  3. Gradually increase traffic (10% -> 25% -> 50% -> 100%)")
+    logger.info("  4. Rollback if metrics degrade")
+    logger.info("  5. Complete deployment if metrics are good")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

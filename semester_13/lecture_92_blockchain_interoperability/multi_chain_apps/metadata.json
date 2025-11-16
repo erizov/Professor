@@ -1,0 +1,12 @@
+{
+  "name": "multi_chain_apps",
+  "display_name": "Multi Chain Apps",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_92_blockchain_interoperability",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

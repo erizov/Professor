@@ -1,0 +1,12 @@
+{
+  "name": "postmortem_automation",
+  "display_name": "Postmortem Automation",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_96_incident_management_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

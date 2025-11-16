@@ -1,0 +1,12 @@
+{
+  "name": "unified_observability",
+  "display_name": "Unified Observability",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_78_observability_platform",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

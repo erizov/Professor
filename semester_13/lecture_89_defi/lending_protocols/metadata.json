@@ -1,0 +1,12 @@
+{
+  "name": "lending_protocols",
+  "display_name": "Lending Protocols",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_89_defi",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

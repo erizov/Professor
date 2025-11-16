@@ -1,0 +1,12 @@
+{
+  "name": "dynamic_pipelines",
+  "display_name": "Dynamic Pipelines",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_71_cicd_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

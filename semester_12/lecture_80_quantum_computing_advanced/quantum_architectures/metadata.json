@@ -1,0 +1,12 @@
+{
+  "name": "quantum_architectures",
+  "display_name": "Quantum Architectures",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_80_quantum_computing_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

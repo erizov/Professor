@@ -10,6 +10,7 @@ enum Permission {
     READ, WRITE, DELETE, ADMIN
 }
 
+import java.util.logging.Logger;
 class Role {
     String name;
     Set<Permission> permissions;
@@ -105,18 +106,20 @@ class RBAC {
 }
 
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("AUTHORIZATION PATTERN DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("AUTHORIZATION PATTERN DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Role-based Authorization
-        System.out.println("Example 1: Role-based Authorization");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Role-based Authorization");
+        logger.info("-".repeat(70));
         
         AuthorizationService authz = new AuthorizationService();
         
@@ -126,17 +129,17 @@ public class Algorithm {
             Permission.READ, Permission.WRITE));
         Role viewerRole = authz.createRole("viewer", EnumSet.of(Permission.READ));
         
-        System.out.println("Created roles:");
+        logger.info("Created roles:");
         System.out.printf("  Admin: %s%n", adminRole.permissions);
         System.out.printf("  Editor: %s%n", editorRole.permissions);
         System.out.printf("  Viewer: %s%n", viewerRole.permissions);
-        System.out.println();
+        logger.info();
         
         User adminUser = authz.createUser("u1", "alice", Arrays.asList("admin"));
         User editorUser = authz.createUser("u2", "bob", Arrays.asList("editor"));
         User viewerUser = authz.createUser("u3", "charlie", Arrays.asList("viewer"));
         
-        System.out.println("Permission checks:");
+        logger.info("Permission checks:");
         System.out.printf("Alice (admin) can delete: %s%n",
                          authz.authorize("u1", Permission.DELETE));
         System.out.printf("Bob (editor) can write: %s%n",
@@ -147,11 +150,11 @@ public class Algorithm {
                          authz.authorize("u3", Permission.READ));
         System.out.printf("Charlie (viewer) can write: %s%n",
                          authz.authorize("u3", Permission.WRITE));
-        System.out.println();
+        logger.info();
         
         // Example 2: RBAC
-        System.out.println("Example 2: RBAC (Role-Based Access Control)");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: RBAC (Role-Based Access Control)");
+        logger.info("-".repeat(70));
         
         RBAC rbac = new RBAC();
         
@@ -163,7 +166,7 @@ public class Algorithm {
         rbac.assignRole("user2", "user");
         rbac.assignRole("user3", "guest");
         
-        System.out.println("Permission checks:");
+        logger.info("Permission checks:");
         System.out.printf("User1 (admin) can delete: %s%n",
                          rbac.hasPermission("user1", "delete"));
         System.out.printf("User2 (user) can write: %s%n",
@@ -172,25 +175,25 @@ public class Algorithm {
                          rbac.hasPermission("user2", "delete"));
         System.out.printf("User3 (guest) can read: %s%n",
                          rbac.hasPermission("user3", "read"));
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern Summary:");
-        System.out.println("\nIntent:");
-        System.out.println("  Determines what actions a user is allowed to perform");
-        System.out.println("  after authentication. Controls access to resources.");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Fine-grained access control");
-        System.out.println("  - Role-based management");
-        System.out.println("  - Centralized authorization");
-        System.out.println("  - Scalable permissions");
-        System.out.println("\nWhen to Use:");
-        System.out.println("  - Multi-user systems");
-        System.out.println("  - Need fine-grained permissions");
-        System.out.println("  - Role-based access");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern Summary:");
+        logger.info("\nIntent:");
+        logger.info("  Determines what actions a user is allowed to perform");
+        logger.info("  after authentication. Controls access to resources.");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Fine-grained access control");
+        logger.info("  - Role-based management");
+        logger.info("  - Centralized authorization");
+        logger.info("  - Scalable permissions");
+        logger.info("\nWhen to Use:");
+        logger.info("  - Multi-user systems");
+        logger.info("  - Need fine-grained permissions");
+        logger.info("  - Role-based access");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

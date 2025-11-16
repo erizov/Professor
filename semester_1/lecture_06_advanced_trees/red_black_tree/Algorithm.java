@@ -6,7 +6,10 @@
  * Time Complexity: O(log n) - all operations
  * Space Complexity: O(n)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     enum Color {
         RED, BLACK
@@ -170,7 +173,7 @@ public class Algorithm {
         
         void printInorder() {
             printInorderHelper(root);
-            System.out.println();
+            logger.info();
         }
         
         private void printInorderHelper(RBNode node) {
@@ -189,7 +192,7 @@ public class Algorithm {
             if (node != NIL) {
                 printTreeHelper(node.right, level + 1);
                 String color = node.color == Color.RED ? "R" : "B";
-                System.out.println(" ".repeat(4 * level) + 
+                logger.info(" ".repeat(4 * level) + 
                                  "→ " + node.key + "(" + color + ")");
                 printTreeHelper(node.left, level + 1);
             }
@@ -199,14 +202,14 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("RED-BLACK TREE DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("RED-BLACK TREE DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1
-        System.out.println("Example 1: Basic Insert and Search");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Basic Insert and Search");
+        logger.info("-".repeat(70));
         RedBlackTree tree = new RedBlackTree();
         int[] keys = {7, 3, 18, 10, 22, 8, 11, 26};
         
@@ -216,41 +219,41 @@ public class Algorithm {
             tree.insert(key);
         }
         
-        System.out.println("\n\nTree structure (R=Red, B=Black):");
+        logger.info("\n\nTree structure (R=Red, B=Black):");
         tree.printTree();
         
         System.out.print("\nInorder traversal: ");
         tree.printInorder();
         
-        System.out.println("Search for 10: " + tree.search(10));
-        System.out.println("Search for 15: " + tree.search(15));
-        System.out.println();
+        logger.info("Search for 10: " + tree.search(10));
+        logger.info("Search for 15: " + tree.search(15));
+        logger.info();
         
         // Example 2
-        System.out.println("Example 2: Sequential Insertion");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Sequential Insertion");
+        logger.info("-".repeat(70));
         RedBlackTree tree2 = new RedBlackTree();
-        System.out.println("Inserting 1 through 10...");
+        logger.info("Inserting 1 through 10...");
         for (int i = 1; i <= 10; i++) {
             tree2.insert(i);
         }
         
-        System.out.println("\nBalanced tree:");
+        logger.info("\nBalanced tree:");
         tree2.printTree();
         System.out.print("Inorder: ");
         tree2.printInorder();
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Time:  O(log n)");
-        System.out.println("  Space: O(n)");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Guaranteed O(log n)");
-        System.out.println("  - Fewer rotations than AVL");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Time:  O(log n)");
+        logger.info("  Space: O(n)");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Guaranteed O(log n)");
+        logger.info("  - Fewer rotations than AVL");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

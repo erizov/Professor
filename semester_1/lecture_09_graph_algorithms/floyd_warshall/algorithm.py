@@ -13,6 +13,8 @@ from typing import List, Tuple, Optional
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class Graph:
@@ -94,7 +96,7 @@ class Graph:
         dist, has_cycle = self.floyd_warshall()
         
         if has_cycle:
-            print("Warning: Negative cycle detected!")
+            logger.info("Warning: Negative cycle detected!")
             return None
         
         if dist[start][end] == float('inf'):
@@ -135,14 +137,14 @@ class Graph:
 
 def main() -> None:
     """Demonstration of Floyd-Warshall Algorithm."""
-    print("=" * 70)
-    print("FLOYD-WARSHALL ALGORITHM DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("FLOYD-WARSHALL ALGORITHM DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic all-pairs shortest paths
-    print("Example 1: All-Pairs Shortest Paths")
-    print("-" * 70)
+    logger.info("Example 1: All-Pairs Shortest Paths")
+    logger.info("-" * 70)
     
     g1 = Graph(4, directed=True)
     g1.add_edge(0, 1, 3.0)
@@ -155,67 +157,67 @@ def main() -> None:
     
     distances, has_cycle = g1.floyd_warshall()
     
-    print("Shortest distances between all pairs:")
-    print("    ", end="")
+    logger.info("Shortest distances between all pairs:")
+    logger.info("    ")
     for j in range(4):
-        print(f"  {j}", end="")
-    print()
+        logger.info(f"  {j}")
+    logger.info()
     
     for i in range(4):
-        print(f"  {i}:", end="")
+        logger.info(f"  {i}:")
         for j in range(4):
             dist = distances[i][j]
             if dist == float('inf'):
-                print("  ∞", end="")
+                logger.info("  ∞")
             else:
-                print(f" {dist:3.0f}", end="")
-        print()
-    print()
+                logger.info(f" {dist:3.0f}")
+        logger.info()
+    logger.info()
     
     # Example 2: Path reconstruction
-    print("Example 2: Path Reconstruction")
-    print("-" * 70)
+    logger.info("Example 2: Path Reconstruction")
+    logger.info("-" * 70)
     
     paths_to_show = [(0, 3), (1, 0), (2, 3)]
     for start, end in paths_to_show:
         path = g1.shortest_path(start, end)
         distance = g1.shortest_distance(start, end)
         if path:
-            print(f"Path from {start} to {end}: "
+            logger.info(f"Path from {start} to {end}: "
                   f"{' → '.join(map(str, path))} "
                   f"(distance: {distance})")
-    print()
+    logger.info()
     
     # Example 3: Comparison with Dijkstra
-    print("Example 3: Floyd-Warshall vs Dijkstra vs Bellman-Ford")
-    print("-" * 70)
+    logger.info("Example 3: Floyd-Warshall vs Dijkstra vs Bellman-Ford")
+    logger.info("-" * 70)
     
-    print("Algorithm Comparison:")
-    print("  Floyd-Warshall:")
-    print("    ✓ All-pairs shortest paths")
-    print("    ✓ Works with negative weights (no cycles)")
-    print("    ✗ O(V³) time complexity")
-    print("    ✗ O(V²) space complexity")
-    print()
-    print("  Dijkstra (run V times):")
-    print("    ✓ All-pairs shortest paths")
-    print("    ✗ Does NOT work with negative weights")
-    print("    ✓ O(V * (V + E) log V) - better for sparse graphs")
-    print()
-    print("  Bellman-Ford (run V times):")
-    print("    ✓ All-pairs shortest paths")
-    print("    ✓ Works with negative weights")
-    print("    ✗ O(V² * E) - slower than Floyd-Warshall")
-    print()
-    print("  Recommendation:")
-    print("    - Use Floyd-Warshall for dense graphs or all-pairs")
-    print("    - Use Dijkstra for sparse graphs with non-negative weights")
-    print("    - Use Bellman-Ford for sparse graphs with negative weights")
-    print()
+    logger.info("Algorithm Comparison:")
+    logger.info("  Floyd-Warshall:")
+    logger.info("    ✓ All-pairs shortest paths")
+    logger.info("    ✓ Works with negative weights (no cycles)")
+    logger.info("    ✗ O(V³) time complexity")
+    logger.info("    ✗ O(V²) space complexity")
+    logger.info()
+    logger.info("  Dijkstra (run V times):")
+    logger.info("    ✓ All-pairs shortest paths")
+    logger.info("    ✗ Does NOT work with negative weights")
+    logger.info("    ✓ O(V * (V + E) log V) - better for sparse graphs")
+    logger.info()
+    logger.info("  Bellman-Ford (run V times):")
+    logger.info("    ✓ All-pairs shortest paths")
+    logger.info("    ✓ Works with negative weights")
+    logger.info("    ✗ O(V² * E) - slower than Floyd-Warshall")
+    logger.info()
+    logger.info("  Recommendation:")
+    logger.info("    - Use Floyd-Warshall for dense graphs or all-pairs")
+    logger.info("    - Use Dijkstra for sparse graphs with non-negative weights")
+    logger.info("    - Use Bellman-Ford for sparse graphs with negative weights")
+    logger.info()
     
     # Example 4: Negative weights (no cycle)
-    print("Example 4: Graph with Negative Weights (No Cycle)")
-    print("-" * 70)
+    logger.info("Example 4: Graph with Negative Weights (No Cycle)")
+    logger.info("-" * 70)
     
     g2 = Graph(4, directed=True)
     g2.add_edge(0, 1, 1.0)
@@ -226,20 +228,20 @@ def main() -> None:
     
     distances2, has_cycle2 = g2.floyd_warshall()
     
-    print("Graph with negative weights (no negative cycle):")
-    print(f"Negative cycle detected: {has_cycle2}")
-    print("Shortest distances:")
+    logger.info("Graph with negative weights (no negative cycle):")
+    logger.info(f"Negative cycle detected: {has_cycle2}")
+    logger.info("Shortest distances:")
     for i in range(4):
         for j in range(4):
             if i != j:
                 dist = distances2[i][j]
                 if dist != float('inf'):
-                    print(f"  {i} → {j}: {dist}")
-    print()
+                    logger.info(f"  {i} → {j}: {dist}")
+    logger.info()
     
     # Example 5: Negative cycle detection
-    print("Example 5: Negative Cycle Detection")
-    print("-" * 70)
+    logger.info("Example 5: Negative Cycle Detection")
+    logger.info("-" * 70)
     
     g3 = Graph(3, directed=True)
     g3.add_edge(0, 1, 1.0)
@@ -248,16 +250,16 @@ def main() -> None:
     
     distances3, has_cycle3 = g3.floyd_warshall()
     
-    print("Graph with negative cycle:")
-    print(f"Negative cycle detected: {has_cycle3}")
+    logger.info("Graph with negative cycle:")
+    logger.info(f"Negative cycle detected: {has_cycle3}")
     if has_cycle3:
-        print("⚠️  Warning: Graph contains negative cycle!")
-        print("   Shortest paths are undefined")
-    print()
+        logger.info("⚠️  Warning: Graph contains negative cycle!")
+        logger.info("   Shortest paths are undefined")
+    logger.info()
     
     # Example 6: Performance measurement
-    print("Example 6: Performance on Different Graph Sizes")
-    print("-" * 70)
+    logger.info("Example 6: Performance on Different Graph Sizes")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Floyd-Warshall Algorithm")
     
@@ -270,49 +272,49 @@ def main() -> None:
                     g_large.add_edge(i, j, float(i + j))
         
         _, metrics = timer.measure(g_large.floyd_warshall)
-        print(f"Graph with {n} vertices:")
-        print(f"  Time: {metrics['execution_time_ms']:.3f} ms")
-        print(f"  Memory: {metrics['memory_peak_kb']:.2f} KB")
-        print(f"  Note: O(V³) complexity - grows quickly!")
+        logger.info(f"Graph with {n} vertices:")
+        logger.info(f"  Time: {metrics['execution_time_ms']:.3f} ms")
+        logger.info(f"  Memory: {metrics['memory_peak_kb']:.2f} KB")
+        logger.info(f"  Note: O(V³) complexity - grows quickly!")
     
-    print()
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O(V³) - V vertices")
-    print("  Space: O(V²) - distance matrix")
-    print("\nKey Advantages:")
-    print("  - Finds all-pairs shortest paths in one run")
-    print("  - Works with negative edge weights (no cycles)")
-    print("  - Simple implementation")
-    print("  - Good for dense graphs")
-    print("\nKey Disadvantages:")
-    print("  - O(V³) time complexity (slow for large graphs)")
-    print("  - O(V²) space complexity")
-    print("  - Cannot handle negative cycles")
-    print("  - Less efficient than Dijkstra for sparse graphs")
-    print("\nWhen to Use:")
-    print("  - Need all-pairs shortest paths")
-    print("  - Dense graphs")
-    print("  - Graphs with negative weights (no cycles)")
-    print("  - Small to medium graphs (V < 1000)")
-    print("\nWhen NOT to Use:")
-    print("  - Very large graphs (V > 1000)")
-    print("  - Sparse graphs (use Dijkstra instead)")
-    print("  - Only need single-source shortest paths")
-    print("  - Graphs with negative cycles")
-    print("\nCommon Use Cases:")
-    print("  - Network routing (all pairs)")
-    print("  - Social network analysis (shortest paths)")
-    print("  - Transportation networks")
-    print("  - Game pathfinding (precomputed paths)")
-    print("  - Distance matrix computation")
-    print("\nAlgorithm Steps:")
-    print("  1. Initialize distance matrix (direct edges)")
-    print("  2. For each intermediate vertex k:")
-    print("     For each pair (i, j):")
-    print("       Update: dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j])")
-    print("  3. Check for negative cycles (diagonal < 0)")
-    print("=" * 70)
+    logger.info()
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  O(V³) - V vertices")
+    logger.info("  Space: O(V²) - distance matrix")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Finds all-pairs shortest paths in one run")
+    logger.info("  - Works with negative edge weights (no cycles)")
+    logger.info("  - Simple implementation")
+    logger.info("  - Good for dense graphs")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - O(V³) time complexity (slow for large graphs)")
+    logger.info("  - O(V²) space complexity")
+    logger.info("  - Cannot handle negative cycles")
+    logger.info("  - Less efficient than Dijkstra for sparse graphs")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Need all-pairs shortest paths")
+    logger.info("  - Dense graphs")
+    logger.info("  - Graphs with negative weights (no cycles)")
+    logger.info("  - Small to medium graphs (V < 1000)")
+    logger.info("\nWhen NOT to Use:")
+    logger.info("  - Very large graphs (V > 1000)")
+    logger.info("  - Sparse graphs (use Dijkstra instead)")
+    logger.info("  - Only need single-source shortest paths")
+    logger.info("  - Graphs with negative cycles")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Network routing (all pairs)")
+    logger.info("  - Social network analysis (shortest paths)")
+    logger.info("  - Transportation networks")
+    logger.info("  - Game pathfinding (precomputed paths)")
+    logger.info("  - Distance matrix computation")
+    logger.info("\nAlgorithm Steps:")
+    logger.info("  1. Initialize distance matrix (direct edges)")
+    logger.info("  2. For each intermediate vertex k:")
+    logger.info("     For each pair (i, j):")
+    logger.info("       Update: dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j])")
+    logger.info("  3. Check for negative cycles (diagonal < 0)")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

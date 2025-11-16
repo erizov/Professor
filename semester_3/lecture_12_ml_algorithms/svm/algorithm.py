@@ -13,6 +13,8 @@ import numpy as np
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class SVM:
@@ -105,14 +107,14 @@ class SVM:
 
 def main() -> None:
     """Demonstration of SVM."""
-    print("=" * 70)
-    print("SUPPORT VECTOR MACHINE (SVM) DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("SUPPORT VECTOR MACHINE (SVM) DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Linearly separable data
-    print("Example 1: Linearly Separable Data")
-    print("-" * 70)
+    logger.info("Example 1: Linearly Separable Data")
+    logger.info("-" * 70)
     
     np.random.seed(42)
     
@@ -132,14 +134,14 @@ def main() -> None:
     predictions = svm.predict(X)
     accuracy = np.mean(predictions == y)
     
-    print(f"Training accuracy: {accuracy:.4f}")
-    print(f"Weights: {svm.weights}")
-    print(f"Bias: {svm.bias:.4f}")
-    print()
+    logger.info(f"Training accuracy: {accuracy:.4f}")
+    logger.info(f"Weights: {svm.weights}")
+    logger.info(f"Bias: {svm.bias:.4f}")
+    logger.info()
     
     # Example 2: Decision boundary
-    print("Example 2: Decision Boundary")
-    print("-" * 70)
+    logger.info("Example 2: Decision Boundary")
+    logger.info("-" * 70)
     
     test_points = np.array([
         [3, 3],    # Should be class 1
@@ -152,14 +154,14 @@ def main() -> None:
     
     for i, (point, decision, pred) in enumerate(
         zip(test_points, decisions, predictions2)):
-        print(f"Point {point}:")
-        print(f"  Decision value: {decision:.4f}")
-        print(f"  Predicted class: {pred}")
-    print()
+        logger.info(f"Point {point}:")
+        logger.info(f"  Decision value: {decision:.4f}")
+        logger.info(f"  Predicted class: {pred}")
+    logger.info()
     
     # Example 3: Performance measurement
-    print("Example 3: Performance on Different Dataset Sizes")
-    print("-" * 70)
+    logger.info("Example 3: Performance on Different Dataset Sizes")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("SVM")
     
@@ -175,41 +177,40 @@ def main() -> None:
         
         result, metrics = timer.measure(train_svm)
         accuracy = np.mean(result.predict(X) == y)
-        print(f"Dataset size: {n}")
-        print(f"  Time: {metrics['execution_time_ms']:.3f} ms")
-        print(f"  Accuracy: {accuracy:.4f}")
+        logger.info(f"Dataset size: {n}")
+        logger.info(f"  Time: {metrics['execution_time_ms']:.3f} ms")
+        logger.info(f"  Accuracy: {accuracy:.4f}")
     
-    print()
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Training: O(n * d * iter) - n samples, d features, iter iterations")
-    print("  Prediction: O(d) - per sample")
-    print("  Space: O(d) - weights and bias")
-    print("\nKey Advantages:")
-    print("  - Effective in high-dimensional spaces")
-    print("  - Memory efficient (uses support vectors)")
-    print("  - Versatile (different kernel functions)")
-    print("  - Good generalization")
-    print("\nKey Disadvantages:")
-    print("  - Doesn't perform well with large datasets")
-    print("  - Sensitive to feature scaling")
-    print("  - No probabilistic output")
-    print("  - Can be slow for very large datasets")
-    print("\nWhen to Use:")
-    print("  - Text classification")
-    print("  - Image classification")
-    print("  - Handwriting recognition")
-    print("  - Bioinformatics")
-    print("  - Small to medium datasets")
-    print("\nCommon Use Cases:")
-    print("  - Text categorization")
-    print("  - Image recognition")
-    print("  - Handwriting recognition")
-    print("  - Bioinformatics (protein classification)")
-    print("  - Face detection")
-    print("=" * 70)
+    logger.info()
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Training: O(n * d * iter) - n samples, d features, iter iterations")
+    logger.info("  Prediction: O(d) - per sample")
+    logger.info("  Space: O(d) - weights and bias")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Effective in high-dimensional spaces")
+    logger.info("  - Memory efficient (uses support vectors)")
+    logger.info("  - Versatile (different kernel functions)")
+    logger.info("  - Good generalization")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Doesn't perform well with large datasets")
+    logger.info("  - Sensitive to feature scaling")
+    logger.info("  - No probabilistic output")
+    logger.info("  - Can be slow for very large datasets")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Text classification")
+    logger.info("  - Image classification")
+    logger.info("  - Handwriting recognition")
+    logger.info("  - Bioinformatics")
+    logger.info("  - Small to medium datasets")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Text categorization")
+    logger.info("  - Image recognition")
+    logger.info("  - Handwriting recognition")
+    logger.info("  - Bioinformatics (protein classification)")
+    logger.info("  - Face detection")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":
     main()
-

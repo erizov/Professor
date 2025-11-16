@@ -16,6 +16,8 @@ from typing import List, Optional
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 # Model
@@ -83,28 +85,28 @@ class UserView:
     
     def display_user(self, user: User) -> None:
         """Display single user."""
-        print(f"User Details:")
-        print(f"  ID: {user.user_id}")
-        print(f"  Name: {user.name}")
-        print(f"  Email: {user.email}")
-        print()
+        logger.info(f"User Details:")
+        logger.info(f"  ID: {user.user_id}")
+        logger.info(f"  Name: {user.name}")
+        logger.info(f"  Email: {user.email}")
+        logger.info()
     
     def display_users(self, users: List[User]) -> None:
         """Display list of users."""
-        print("Users List:")
+        logger.info("Users List:")
         for user in users:
-            print(f"  {user}")
-        print()
+            logger.info(f"  {user}")
+        logger.info()
     
     def display_message(self, message: str) -> None:
         """Display message."""
-        print(f"Message: {message}")
-        print()
+        logger.info(f"Message: {message}")
+        logger.info()
     
     def display_error(self, error: str) -> None:
         """Display error."""
-        print(f"Error: {error}")
-        print()
+        logger.info(f"Error: {error}")
+        logger.info()
 
 
 # Controller
@@ -201,10 +203,10 @@ class TaskView:
     
     def render_tasks(self, tasks: List[Task]) -> None:
         """Render tasks."""
-        print("Tasks:")
+        logger.info("Tasks:")
         for task in tasks:
-            print(f"  {task}")
-        print()
+            logger.info(f"  {task}")
+        logger.info()
 
 
 class TaskController:
@@ -232,14 +234,14 @@ class TaskController:
 
 def main() -> None:
     """Demonstration of MVC Pattern."""
-    print("=" * 70)
-    print("MODEL-VIEW-CONTROLLER (MVC) PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("MODEL-VIEW-CONTROLLER (MVC) PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: User MVC
-    print("Example 1: User Management MVC")
-    print("-" * 70)
+    logger.info("Example 1: User Management MVC")
+    logger.info("-" * 70)
     
     # Create MVC components
     user_model = UserModel()
@@ -261,8 +263,8 @@ def main() -> None:
     user_controller.show_all_users()
     
     # Example 2: Task MVC
-    print("Example 2: Task Management MVC")
-    print("-" * 70)
+    logger.info("Example 2: Task Management MVC")
+    logger.info("-" * 70)
     
     task_model = TaskModel()
     task_view = TaskView()
@@ -276,8 +278,8 @@ def main() -> None:
     task_controller.toggle_task(3)
     
     # Example 3: Performance measurement
-    print("Example 3: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 3: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("MVC")
     
@@ -289,37 +291,37 @@ def main() -> None:
         return controller
     
     result, metrics = timer.measure(mvc_operation)
-    print(f"Time to create MVC and perform operation: "
+    logger.info(f"Time to create MVC and perform operation: "
           f"{metrics['execution_time_ms']:.3f} ms")
-    print()
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Separate application into three interconnected components:")
-    print("  - Model: Data and business logic")
-    print("  - View: User interface")
-    print("  - Controller: Handles input and coordinates Model/View")
-    print("\nKey Advantages:")
-    print("  - Separation of concerns")
-    print("  - Multiple views for same model")
-    print("  - Easy to test")
-    print("  - Reusable components")
-    print("\nKey Disadvantages:")
-    print("  - Can be complex for simple applications")
-    print("  - Tight coupling between components")
-    print("  - View updates can be inefficient")
-    print("\nWhen to Use:")
-    print("  - Web applications")
-    print("  - Desktop GUI applications")
-    print("  - Applications with multiple views")
-    print("  - Need separation of concerns")
-    print("\nCommon Use Cases:")
-    print("  - Web frameworks (Spring MVC, ASP.NET MVC)")
-    print("  - Desktop applications")
-    print("  - Mobile applications")
-    print("  - RESTful APIs")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Separate application into three interconnected components:")
+    logger.info("  - Model: Data and business logic")
+    logger.info("  - View: User interface")
+    logger.info("  - Controller: Handles input and coordinates Model/View")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Separation of concerns")
+    logger.info("  - Multiple views for same model")
+    logger.info("  - Easy to test")
+    logger.info("  - Reusable components")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Can be complex for simple applications")
+    logger.info("  - Tight coupling between components")
+    logger.info("  - View updates can be inefficient")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Web applications")
+    logger.info("  - Desktop GUI applications")
+    logger.info("  - Applications with multiple views")
+    logger.info("  - Need separation of concerns")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Web frameworks (Spring MVC, ASP.NET MVC)")
+    logger.info("  - Desktop applications")
+    logger.info("  - Mobile applications")
+    logger.info("  - RESTful APIs")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

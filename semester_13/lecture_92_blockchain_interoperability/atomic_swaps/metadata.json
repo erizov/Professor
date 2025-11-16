@@ -1,0 +1,12 @@
+{
+  "name": "atomic_swaps",
+  "display_name": "Atomic Swaps",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_92_blockchain_interoperability",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

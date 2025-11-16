@@ -8,6 +8,7 @@ import java.util.*;
 import java.security.MessageDigest;
 import java.security.SecureRandom;
 
+import java.util.logging.Logger;
 class User {
     String userId;
     String username;
@@ -148,18 +149,20 @@ class TokenAuth {
 import java.util.Base64;
 
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("AUTHENTICATION PATTERN DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("AUTHENTICATION PATTERN DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Session-based Authentication
-        System.out.println("Example 1: Session-based Authentication");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Session-based Authentication");
+        logger.info("-".repeat(70));
         
         AuthenticationService authService = new AuthenticationService();
         
@@ -167,7 +170,7 @@ public class Algorithm {
         User user2 = authService.registerUser("bob", "secret456");
         
         System.out.printf("Registered users: %s, %s%n", user1.username, user2.username);
-        System.out.println();
+        logger.info();
         
         String session1 = authService.authenticate("alice", "password123");
         String session2 = authService.authenticate("bob", "wrong_password");
@@ -175,20 +178,20 @@ public class Algorithm {
         System.out.printf("Alice login: %s%n", session1 != null ? "Success" : "Failed");
         System.out.printf("Bob login (wrong password): %s%n",
                          session2 != null ? "Success" : "Failed");
-        System.out.println();
+        logger.info();
         
         if (session1 != null) {
             User user = authService.validateSession(session1);
             System.out.printf("Session validated: %s%n",
                             user != null ? user.username : "Invalid");
             authService.logout(session1);
-            System.out.println("Logged out");
+            logger.info("Logged out");
         }
-        System.out.println();
+        logger.info();
         
         // Example 2: Token-based Authentication
-        System.out.println("Example 2: Token-based Authentication");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Token-based Authentication");
+        logger.info("-".repeat(70));
         
         TokenAuth tokenAuth = new TokenAuth();
         tokenAuth.createUser("user1", "password123");
@@ -202,25 +205,25 @@ public class Algorithm {
             String userId = tokenAuth.validateToken(token);
             System.out.printf("Token validated: %s%n", userId);
         }
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern Summary:");
-        System.out.println("\nIntent:");
-        System.out.println("  Verify the identity of a user, process, or device.");
-        System.out.println("  Ensures entities are who they claim to be.");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Security and access control");
-        System.out.println("  - User identification");
-        System.out.println("  - Session management");
-        System.out.println("  - Audit trail");
-        System.out.println("\nWhen to Use:");
-        System.out.println("  - User login systems");
-        System.out.println("  - API authentication");
-        System.out.println("  - Secure access control");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern Summary:");
+        logger.info("\nIntent:");
+        logger.info("  Verify the identity of a user, process, or device.");
+        logger.info("  Ensures entities are who they claim to be.");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Security and access control");
+        logger.info("  - User identification");
+        logger.info("  - Session management");
+        logger.info("  - Audit trail");
+        logger.info("\nWhen to Use:");
+        logger.info("  - User login systems");
+        logger.info("  - API authentication");
+        logger.info("  - Secure access control");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

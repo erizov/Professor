@@ -14,6 +14,8 @@ import math
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class Node:
@@ -205,32 +207,32 @@ def generate_classification_data(n: int, seed: int = 42) \
 
 def main() -> None:
     """Demonstration of Decision Tree."""
-    print("=" * 70)
-    print("DECISION TREE CLASSIFIER DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("DECISION TREE CLASSIFIER DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic classification
-    print("Example 1: Binary Classification")
-    print("-" * 70)
+    logger.info("Example 1: Binary Classification")
+    logger.info("-" * 70)
     
     X_train, y_train = generate_classification_data(40)
     
-    print(f"Generated {len(X_train)} training samples")
-    print(f"Class 0: {sum(1 for label in y_train if label == 0)}")
-    print(f"Class 1: {sum(1 for label in y_train if label == 1)}")
-    print()
+    logger.info(f"Generated {len(X_train)} training samples")
+    logger.info(f"Class 0: {sum(1 for label in y_train if label == 0)}")
+    logger.info(f"Class 1: {sum(1 for label in y_train if label == 1)}")
+    logger.info()
     
     tree = DecisionTreeClassifier(max_depth=5, min_samples_split=2)
     tree.fit(X_train, y_train)
     
     accuracy = tree.score(X_train, y_train)
-    print(f"Training Accuracy: {accuracy:.4f}")
-    print()
+    logger.info(f"Training Accuracy: {accuracy:.4f}")
+    logger.info()
     
     # Example 2: Predictions
-    print("Example 2: Making Predictions")
-    print("-" * 70)
+    logger.info("Example 2: Making Predictions")
+    logger.info("-" * 70)
     
     X_test = [
         [1.0, 1.0],  # Should be class 0
@@ -240,14 +242,14 @@ def main() -> None:
     
     predictions = tree.predict(X_test)
     
-    print("Predictions:")
+    logger.info("Predictions:")
     for x, pred in zip(X_test, predictions):
-        print(f"  Sample {x} → Class {pred}")
-    print()
+        logger.info(f"  Sample {x} → Class {pred}")
+    logger.info()
     
     # Example 3: Performance measurement
-    print("Example 3: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 3: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Decision Tree")
     
@@ -258,33 +260,33 @@ def main() -> None:
         
         _, metrics = timer.measure(model.fit, X, y)
         
-        print(f"n={size*2:4d}: {metrics['execution_time_ms']:8.3f} ms, "
+        logger.info(f"n={size*2:4d}: {metrics['execution_time_ms']:8.3f} ms, "
               f"{metrics['memory_peak_kb']:8.2f} KB")
     
-    print()
+    logger.info()
     timer.print_summary()
     
-    print("\n" + "=" * 70)
-    print("\nComplexity Summary:")
-    print("  Training Time:  O(n*d*log(n))")
-    print("  Prediction Time: O(log(n)) per sample")
-    print("  Space: O(n) for storing tree")
-    print("\nKey Points:")
-    print("  + Easy to interpret")
-    print("  + No feature scaling needed")
-    print("  + Handles non-linear relationships")
-    print("  + Can handle missing values")
-    print("  + Fast prediction")
-    print("  - Prone to overfitting")
-    print("  - Unstable (small changes = different tree)")
-    print("  - Biased towards features with more levels")
-    print("\nWhen to use:")
-    print("  • Need interpretable model")
-    print("  • Mixed data types")
-    print("  • Non-linear relationships")
-    print("  • No feature engineering")
-    print("  • Fast predictions needed")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Training Time:  O(n*d*log(n))")
+    logger.info("  Prediction Time: O(log(n)) per sample")
+    logger.info("  Space: O(n) for storing tree")
+    logger.info("\nKey Points:")
+    logger.info("  + Easy to interpret")
+    logger.info("  + No feature scaling needed")
+    logger.info("  + Handles non-linear relationships")
+    logger.info("  + Can handle missing values")
+    logger.info("  + Fast prediction")
+    logger.info("  - Prone to overfitting")
+    logger.info("  - Unstable (small changes = different tree)")
+    logger.info("  - Biased towards features with more levels")
+    logger.info("\nWhen to use:")
+    logger.info("  • Need interpretable model")
+    logger.info("  • Mixed data types")
+    logger.info("  • Non-linear relationships")
+    logger.info("  • No feature engineering")
+    logger.info("  • Fast predictions needed")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

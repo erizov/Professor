@@ -1,0 +1,12 @@
+{
+  "name": "liquidity_pools",
+  "display_name": "Liquidity Pools",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_89_defi",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

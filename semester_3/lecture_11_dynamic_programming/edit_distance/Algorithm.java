@@ -6,7 +6,10 @@
  */
 import java.util.*;
 
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     /**
      * Calculate edit distance (Levenshtein distance).
@@ -109,14 +112,14 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("EDIT DISTANCE (LEVENSHTEIN DISTANCE) DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("EDIT DISTANCE (LEVENSHTEIN DISTANCE) DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Basic edit distance
-        System.out.println("Example 1: Basic Edit Distance");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Basic Edit Distance");
+        logger.info("-".repeat(70));
         
         String[][] testCases = {
             {"kitten", "sitting"},
@@ -130,11 +133,11 @@ public class Algorithm {
             System.out.printf("'%s' -> '%s': %d operations%n",
                             test[0], test[1], distance);
         }
-        System.out.println();
+        logger.info();
         
         // Example 2: Similarity
-        System.out.println("Example 2: String Similarity");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: String Similarity");
+        logger.info("-".repeat(70));
         
         String[][] pairs = {
             {"hello", "hello"},
@@ -150,11 +153,11 @@ public class Algorithm {
             System.out.printf("  Distance: %d, Similarity: %.2f%%%n", 
                             dist, sim * 100);
         }
-        System.out.println();
+        logger.info();
         
         // Example 3: Space-optimized version
-        System.out.println("Example 3: Space-Optimized Version");
-        System.out.println("-".repeat(70));
+        logger.info("Example 3: Space-Optimized Version");
+        logger.info("-".repeat(70));
         
         String s1 = "saturday";
         String s2 = "sunday";
@@ -164,26 +167,26 @@ public class Algorithm {
         System.out.printf("'%s' -> '%s':%n", s1, s2);
         System.out.printf("  Standard: %d%n", distStandard);
         System.out.printf("  Optimized: %d%n", distOptimized);
-        System.out.println("Note: Optimized uses O(min(m,n)) space instead of O(m*n)");
-        System.out.println();
+        logger.info("Note: Optimized uses O(min(m,n)) space instead of O(m*n)");
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Time:  O(m * n) - m and n are string lengths");
-        System.out.println("  Space: O(m * n) - standard");
-        System.out.println("        O(min(m, n)) - optimized");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Optimal solution");
-        System.out.println("  - Can be space-optimized");
-        System.out.println("  - Useful for many applications");
-        System.out.println("\nWhen to Use:");
-        System.out.println("  - Spell checking");
-        System.out.println("  - DNA sequence alignment");
-        System.out.println("  - Fuzzy string matching");
-        System.out.println("  - Autocorrect systems");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Time:  O(m * n) - m and n are string lengths");
+        logger.info("  Space: O(m * n) - standard");
+        logger.info("        O(min(m, n)) - optimized");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Optimal solution");
+        logger.info("  - Can be space-optimized");
+        logger.info("  - Useful for many applications");
+        logger.info("\nWhen to Use:");
+        logger.info("  - Spell checking");
+        logger.info("  - DNA sequence alignment");
+        logger.info("  - Fuzzy string matching");
+        logger.info("  - Autocorrect systems");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

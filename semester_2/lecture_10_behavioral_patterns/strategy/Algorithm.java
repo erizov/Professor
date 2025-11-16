@@ -5,7 +5,10 @@ import java.util.*;
  * 
  * Encapsulates algorithms and makes them interchangeable.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     // Strategy interface
     interface SortingStrategy {
@@ -133,7 +136,7 @@ public class Algorithm {
         public boolean pay(double amount) {
             System.out.printf("Processing $%.2f payment via Credit Card%n", 
                             amount);
-            System.out.println("Card: ****" + 
+            logger.info("Card: ****" + 
                             cardNumber.substring(cardNumber.length() - 4));
             return true;
         }
@@ -152,7 +155,7 @@ public class Algorithm {
         
         public boolean pay(double amount) {
             System.out.printf("Processing $%.2f payment via PayPal%n", amount);
-            System.out.println("Email: " + email);
+            logger.info("Email: " + email);
             return true;
         }
         
@@ -175,12 +178,12 @@ public class Algorithm {
         
         boolean checkout() {
             if (items.isEmpty()) {
-                System.out.println("Cart is empty!");
+                logger.info("Cart is empty!");
                 return false;
             }
             
             if (paymentStrategy == null) {
-                System.out.println("No payment method selected!");
+                logger.info("No payment method selected!");
                 return false;
             }
             
@@ -189,7 +192,7 @@ public class Algorithm {
                                .sum();
             
             System.out.printf("%nTotal: $%.2f%n", total);
-            System.out.println("Payment method: " + 
+            logger.info("Payment method: " + 
                              paymentStrategy.getName());
             
             return paymentStrategy.pay(total);
@@ -209,17 +212,17 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("STRATEGY DESIGN PATTERN DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("STRATEGY DESIGN PATTERN DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Sorting Strategies
-        System.out.println("Example 1: Sorting Strategies");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Sorting Strategies");
+        logger.info("-".repeat(70));
         
         List<Integer> data = Arrays.asList(64, 34, 25, 12, 22, 11, 90);
-        System.out.println("Original data: " + data);
+        logger.info("Original data: " + data);
         
         Sorter sorter = new Sorter();
         
@@ -232,13 +235,13 @@ public class Algorithm {
         for (SortingStrategy strategy : strategies) {
             sorter.setStrategy(strategy);
             List<Integer> sorted = sorter.sort(data);
-            System.out.println(strategy.getName() + ": " + sorted);
+            logger.info(strategy.getName() + ": " + sorted);
         }
-        System.out.println();
+        logger.info();
         
         // Example 2: Payment Strategies
-        System.out.println("Example 2: Payment Strategies");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Payment Strategies");
+        logger.info("-".repeat(70));
         
         ShoppingCart cart = new ShoppingCart();
         cart.addItem("Laptop", 999.99);
@@ -253,23 +256,22 @@ public class Algorithm {
         for (PaymentStrategy payment : payments) {
             cart.setPaymentStrategy(payment);
             cart.checkout();
-            System.out.println();
+            logger.info();
         }
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern Summary:");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Algorithms interchangeable at runtime");
-        System.out.println("  - Eliminates conditional statements");
-        System.out.println("  - Easy to add new strategies");
-        System.out.println("\nWhen to Use:");
-        System.out.println("  - Multiple ways to perform task");
-        System.out.println("  - Want to avoid conditionals");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern Summary:");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Algorithms interchangeable at runtime");
+        logger.info("  - Eliminates conditional statements");
+        logger.info("  - Easy to add new strategies");
+        logger.info("\nWhen to Use:");
+        logger.info("  - Multiple ways to perform task");
+        logger.info("  - Want to avoid conditionals");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }
 }
-

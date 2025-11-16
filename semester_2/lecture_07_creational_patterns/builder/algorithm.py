@@ -11,6 +11,8 @@ import sys
 from pathlib import Path
 from abc import ABC, abstractmethod
 from typing import Optional, List
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
@@ -309,14 +311,14 @@ class SQLQueryBuilder:
 
 def main() -> None:
     """Demonstration of Builder Pattern."""
-    print("=" * 70)
-    print("BUILDER DESIGN PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("BUILDER DESIGN PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Computer Builder
-    print("Example 1: Computer Builder")
-    print("-" * 70)
+    logger.info("Example 1: Computer Builder")
+    logger.info("-" * 70)
     
     gaming_builder = GamingComputerBuilder()
     gaming_pc = (gaming_builder
@@ -327,8 +329,8 @@ def main() -> None:
                  .build_motherboard("ASUS ROG Strix Z790")
                  .get_computer())
     
-    print("Gaming PC:")
-    print(f"  {gaming_pc}")
+    logger.info("Gaming PC:")
+    logger.info(f"  {gaming_pc}")
     
     office_builder = OfficeComputerBuilder()
     office_pc = (office_builder
@@ -338,26 +340,26 @@ def main() -> None:
                  .build_gpu("Integrated Graphics")
                  .get_computer())
     
-    print("\nOffice PC:")
-    print(f"  {office_pc}")
-    print()
+    logger.info("\nOffice PC:")
+    logger.info(f"  {office_pc}")
+    logger.info()
     
     # Example 2: Using Director
-    print("Example 2: Using Director")
-    print("-" * 70)
+    logger.info("Example 2: Using Director")
+    logger.info("-" * 70)
     
     director = ComputerDirector(GamingComputerBuilder())
     pc1 = director.build_gaming_pc()
-    print(f"Director-built Gaming PC: {pc1}")
+    logger.info(f"Director-built Gaming PC: {pc1}")
     
     director2 = ComputerDirector(OfficeComputerBuilder())
     pc2 = director2.build_office_pc()
-    print(f"Director-built Office PC: {pc2}")
-    print()
+    logger.info(f"Director-built Office PC: {pc2}")
+    logger.info()
     
     # Example 3: Fluent Pizza Builder
-    print("Example 3: Fluent Pizza Builder")
-    print("-" * 70)
+    logger.info("Example 3: Fluent Pizza Builder")
+    logger.info("-" * 70)
     
     pizza1 = (PizzaBuilder()
               .size("Large")
@@ -367,7 +369,7 @@ def main() -> None:
               .add_mushrooms()
               .build())
     
-    print(f"Pizza 1: {pizza1}")
+    logger.info(f"Pizza 1: {pizza1}")
     
     pizza2 = (PizzaBuilder()
               .size("Medium")
@@ -378,12 +380,12 @@ def main() -> None:
               .add_peppers()
               .build())
     
-    print(f"Pizza 2: {pizza2}")
-    print()
+    logger.info(f"Pizza 2: {pizza2}")
+    logger.info()
     
     # Example 4: SQL Query Builder
-    print("Example 4: SQL Query Builder")
-    print("-" * 70)
+    logger.info("Example 4: SQL Query Builder")
+    logger.info("-" * 70)
     
     query1 = (SQLQueryBuilder()
               .select("id", "name", "email")
@@ -394,7 +396,7 @@ def main() -> None:
               .limit(10)
               .build())
     
-    print(f"Query 1: {query1}")
+    logger.info(f"Query 1: {query1}")
     
     query2 = (SQLQueryBuilder()
               .select("*")
@@ -403,12 +405,12 @@ def main() -> None:
               .order_by("price", "name")
               .build())
     
-    print(f"Query 2: {query2}")
-    print()
+    logger.info(f"Query 2: {query2}")
+    logger.info()
     
     # Example 5: Step-by-step building
-    print("Example 5: Step-by-step Building")
-    print("-" * 70)
+    logger.debug("Example 5: Step-by-step Building")
+    logger.info("-" * 70)
     
     builder = PizzaBuilder()
     builder.size("Large")
@@ -420,50 +422,50 @@ def main() -> None:
     builder.add_bacon()
     
     pizza = builder.build()
-    print(f"Step-by-step built pizza: {pizza}")
-    print()
+    logger.debug(f"Step-by-step built pizza: {pizza}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Separate the construction of a complex object from its")
-    print("  representation, allowing the same construction process")
-    print("  to create different representations.")
-    print("\nKey Advantages:")
-    print("  - Step-by-step construction")
-    print("  - Reusable construction code")
-    print("  - Isolates complex construction")
-    print("  - Allows different representations")
-    print("  - Fluent interface support")
-    print("\nKey Disadvantages:")
-    print("  - More classes to maintain")
-    print("  - Can be overkill for simple objects")
-    print("  - Requires creating builder for each product type")
-    print("\nWhen to Use:")
-    print("  - Complex object construction")
-    print("  - Many optional parameters")
-    print("  - Need different representations")
-    print("  - Step-by-step construction needed")
-    print("  - Immutable object construction")
-    print("\nWhen NOT to Use:")
-    print("  - Simple objects with few parameters")
-    print("  - All parameters are required")
-    print("  - Construction is straightforward")
-    print("\nBuilder vs Factory:")
-    print("  - Builder: Step-by-step, complex objects")
-    print("  - Factory: Single-step, simple objects")
-    print("\nCommon Use Cases:")
-    print("  - Configuration objects")
-    print("  - Query builders (SQL, MongoDB)")
-    print("  - HTTP request builders")
-    print("  - Test data builders")
-    print("  - Document builders (HTML, XML)")
-    print("\nReal-world Examples:")
-    print("  - Java: StringBuilder, HttpRequest.Builder")
-    print("  - Python: SQLAlchemy query builder")
-    print("  - JavaScript: jQuery, Axios request builder")
-    print("  - Android: AlertDialog.Builder")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Separate the construction of a complex object from its")
+    logger.info("  representation, allowing the same construction process")
+    logger.info("  to create different representations.")
+    logger.info("\nKey Advantages:")
+    logger.debug("  - Step-by-step construction")
+    logger.info("  - Reusable construction code")
+    logger.info("  - Isolates complex construction")
+    logger.info("  - Allows different representations")
+    logger.info("  - Fluent interface support")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - More classes to maintain")
+    logger.info("  - Can be overkill for simple objects")
+    logger.info("  - Requires creating builder for each product type")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Complex object construction")
+    logger.info("  - Many optional parameters")
+    logger.info("  - Need different representations")
+    logger.debug("  - Step-by-step construction needed")
+    logger.info("  - Immutable object construction")
+    logger.info("\nWhen NOT to Use:")
+    logger.info("  - Simple objects with few parameters")
+    logger.info("  - All parameters are required")
+    logger.info("  - Construction is straightforward")
+    logger.info("\nBuilder vs Factory:")
+    logger.debug("  - Builder: Step-by-step, complex objects")
+    logger.debug("  - Factory: Single-step, simple objects")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Configuration objects")
+    logger.info("  - Query builders (SQL, MongoDB)")
+    logger.info("  - HTTP request builders")
+    logger.info("  - Test data builders")
+    logger.info("  - Document builders (HTML, XML)")
+    logger.info("\nReal-world Examples:")
+    logger.info("  - Java: StringBuilder, HttpRequest.Builder")
+    logger.info("  - Python: SQLAlchemy query builder")
+    logger.info("  - JavaScript: jQuery, Axios request builder")
+    logger.info("  - Android: AlertDialog.Builder")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

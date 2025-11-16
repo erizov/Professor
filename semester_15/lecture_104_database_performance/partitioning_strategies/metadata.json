@@ -1,0 +1,12 @@
+{
+  "name": "partitioning_strategies",
+  "display_name": "Partitioning Strategies",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_104_database_performance",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

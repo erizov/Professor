@@ -11,6 +11,8 @@ import sys
 from pathlib import Path
 from abc import ABC, abstractmethod
 from typing import List, Optional
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
@@ -158,14 +160,14 @@ class NumberRangeIterator:
 
 def main() -> None:
     """Demonstration of Iterator Pattern."""
-    print("=" * 70)
-    print("ITERATOR DESIGN PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("ITERATOR DESIGN PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Book Collection
-    print("Example 1: Book Collection Iterator")
-    print("-" * 70)
+    logger.info("Example 1: Book Collection Iterator")
+    logger.info("-" * 70)
     
     collection = BookCollection()
     collection.add_book("Design Patterns")
@@ -173,15 +175,15 @@ def main() -> None:
     collection.add_book("Refactoring")
     
     iterator = collection.create_iterator()
-    print("Books in collection:")
+    logger.info("Books in collection:")
     while iterator.has_next():
         book = iterator.next()
-        print(f"  - {book}")
-    print()
+        logger.info(f"  - {book}")
+    logger.info()
     
     # Example 2: Tree Iterator
-    print("Example 2: Binary Tree Iterator")
-    print("-" * 70)
+    logger.info("Example 2: Binary Tree Iterator")
+    logger.info("-" * 70)
     
     # Create tree:     4
     #                 / \
@@ -199,63 +201,63 @@ def main() -> None:
     tree = BinaryTree(root)
     tree_iterator = tree.create_iterator()
     
-    print("In-order traversal:")
+    logger.info("In-order traversal:")
     values = []
     while tree_iterator.has_next():
         values.append(tree_iterator.next())
-    print(f"  {values}")
-    print()
+    logger.info(f"  {values}")
+    logger.info()
     
     # Example 3: Python Iterator Protocol
-    print("Example 3: Python Iterator Protocol")
-    print("-" * 70)
+    logger.info("Example 3: Python Iterator Protocol")
+    logger.info("-" * 70)
     
     number_range = NumberRange(1, 10, 2)
-    print("Numbers from 1 to 10 (step 2):")
+    logger.debug("Numbers from 1 to 10 (step 2):")
     for num in number_range:
-        print(f"  {num}", end=" ")
-    print("\n")
+        logger.info(f"  {num}", end=" ")
+    logger.info("\n")
     
     # Example 4: Using built-in iterators
-    print("Example 4: Built-in Python Iterators")
-    print("-" * 70)
+    logger.info("Example 4: Built-in Python Iterators")
+    logger.info("-" * 70)
     
     data = [1, 2, 3, 4, 5]
     iterator = iter(data)
     
-    print("Iterating over list:")
+    logger.info("Iterating over list:")
     try:
         while True:
             value = next(iterator)
-            print(f"  {value}", end=" ")
+            logger.info(f"  {value}", end=" ")
     except StopIteration:
         pass
-    print("\n")
+    logger.info("\n")
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Provide a way to access elements of an aggregate object")
-    print("  sequentially without exposing its underlying representation.")
-    print("\nKey Advantages:")
-    print("  - Supports multiple traversal methods")
-    print("  - Simplifies aggregate interface")
-    print("  - Allows multiple iterators on same aggregate")
-    print("  - Encapsulates traversal logic")
-    print("\nKey Disadvantages:")
-    print("  - Can be overkill for simple collections")
-    print("  - Adds complexity")
-    print("\nWhen to Use:")
-    print("  - Need to traverse aggregate in different ways")
-    print("  - Want to hide aggregate's internal structure")
-    print("  - Need multiple iterators on same aggregate")
-    print("  - Lazy evaluation needed")
-    print("\nCommon Use Cases:")
-    print("  - Collections (lists, trees, graphs)")
-    print("  - Database result sets")
-    print("  - File system traversal")
-    print("  - Stream processing")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Provide a way to access elements of an aggregate object")
+    logger.info("  sequentially without exposing its underlying representation.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Supports multiple traversal methods")
+    logger.info("  - Simplifies aggregate interface")
+    logger.info("  - Allows multiple iterators on same aggregate")
+    logger.info("  - Encapsulates traversal logic")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Can be overkill for simple collections")
+    logger.info("  - Adds complexity")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Need to traverse aggregate in different ways")
+    logger.info("  - Want to hide aggregate's internal structure")
+    logger.info("  - Need multiple iterators on same aggregate")
+    logger.info("  - Lazy evaluation needed")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Collections (lists, trees, graphs)")
+    logger.info("  - Database result sets")
+    logger.info("  - File system traversal")
+    logger.info("  - Stream processing")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

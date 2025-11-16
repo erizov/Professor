@@ -1,0 +1,12 @@
+{
+  "name": "data_quality",
+  "display_name": "Data Quality",
+  "category": "Advanced Graduate Level",
+  "semester": 16,
+  "lecture": "lecture_113_data_lakes_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

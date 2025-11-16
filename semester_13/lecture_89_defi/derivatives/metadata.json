@@ -1,0 +1,12 @@
+{
+  "name": "derivatives",
+  "display_name": "Derivatives",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_89_defi",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

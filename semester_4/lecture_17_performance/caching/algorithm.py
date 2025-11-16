@@ -17,6 +17,8 @@ import time
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 @dataclass
@@ -161,70 +163,70 @@ def expensive_database_query(user_id: int) -> dict:
 
 def main() -> None:
     """Demonstration of Caching Pattern."""
-    print("=" * 70)
-    print("CACHING PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("CACHING PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic LRU Cache
-    print("Example 1: Basic LRU Cache")
-    print("-" * 70)
+    logger.info("Example 1: Basic LRU Cache")
+    logger.info("-" * 70)
     
     cache = LRUCache(capacity=3)
     
-    print("Adding items to cache:")
+    logger.info("Adding items to cache:")
     for i in range(5):
         cache.put(f"key{i}", f"value{i}")
-        print(f"  Added key{i}, Cache size: {cache.size()}")
-    print()
+        logger.info(f"  Added key{i}, Cache size: {cache.size()}")
+    logger.info()
     
-    print("Accessing items:")
+    logger.info("Accessing items:")
     for i in range(5):
         value = cache.get(f"key{i}")
         if value:
-            print(f"  key{i}: {value} (HIT)")
+            logger.info(f"  key{i}: {value} (HIT)")
         else:
-            print(f"  key{i}: None (MISS)")
-    print()
+            logger.info(f"  key{i}: None (MISS)")
+    logger.info()
     
     # Example 2: Cache with TTL
-    print("Example 2: Cache with Time-to-Live (TTL)")
-    print("-" * 70)
+    logger.info("Example 2: Cache with Time-to-Live (TTL)")
+    logger.info("-" * 70)
     
     cache = LRUCache(capacity=10, ttl=2.0)  # 2 second TTL
     
     cache.put("temp", "temporary_value")
-    print("Added entry with 2s TTL")
-    print(f"  Immediate get: {cache.get('temp')}")
+    logger.info("Added entry with 2s TTL")
+    logger.info(f"  Immediate get: {cache.get('temp')}")
     
     time.sleep(2.1)
-    print(f"  After 2.1s: {cache.get('temp')} (expired)")
-    print()
+    logger.info(f"  After 2.1s: {cache.get('temp')} (expired)")
+    logger.info()
     
     # Example 3: Function Caching
-    print("Example 3: Function Caching Decorator")
-    print("-" * 70)
+    logger.info("Example 3: Function Caching Decorator")
+    logger.info("-" * 70)
     
     cache = LRUCache(capacity=100)
     cached_func = CacheDecorator(cache)(expensive_computation)
     
-    print("First call (cache miss):")
+    logger.info("First call (cache miss):")
     start = time.time()
     result1 = cached_func(5)
     time1 = time.time() - start
-    print(f"  Result: {result1}, Time: {time1:.3f}s")
+    logger.info(f"  Result: {result1}, Time: {time1:.3f}s")
     
-    print("Second call (cache hit):")
+    logger.info("Second call (cache hit):")
     start = time.time()
     result2 = cached_func(5)
     time2 = time.time() - start
-    print(f"  Result: {result2}, Time: {time2:.3f}s")
-    print(f"  Speedup: {time1/time2:.1f}x")
-    print()
+    logger.info(f"  Result: {result2}, Time: {time2:.3f}s")
+    logger.info(f"  Speedup: {time1/time2:.1f}x")
+    logger.info()
     
     # Example 4: Database Query Caching
-    print("Example 4: Database Query Caching")
-    print("-" * 70)
+    logger.info("Example 4: Database Query Caching")
+    logger.info("-" * 70)
     
     query_cache = LRUCache(capacity=50, ttl=60.0)  # 1 minute TTL
     
@@ -239,17 +241,17 @@ def main() -> None:
         query_cache.put(cache_key, result)
         return result
     
-    print("Querying users:")
+    logger.info("Querying users:")
     for user_id in [1, 2, 1, 3, 1]:  # User 1 queried multiple times
         start = time.time()
         user = get_user_cached(user_id)
         elapsed = time.time() - start
-        print(f"  User {user_id}: {user['name']} ({elapsed:.3f}s)")
-    print()
+        logger.info(f"  User {user_id}: {user['name']} ({elapsed:.3f}s)")
+    logger.info()
     
     # Example 5: Performance measurement
-    print("Example 5: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 5: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Caching")
     
@@ -269,43 +271,43 @@ def main() -> None:
         return hits
     
     result, metrics = timer.measure(cache_operations)
-    print(f"Time to perform 1000 cache operations: "
+    logger.info(f"Time to perform 1000 cache operations: "
           f"{metrics['execution_time_ms']:.3f} ms")
-    print(f"Cache hits: {result}/1000")
-    print()
+    logger.info(f"Cache hits: {result}/1000")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Stores frequently accessed data in fast storage to improve")
-    print("  performance and reduce load on primary data source.")
-    print("\nKey Advantages:")
-    print("  - Faster response times")
-    print("  - Reduced load on data source")
-    print("  - Better scalability")
-    print("  - Cost reduction")
-    print("\nKey Disadvantages:")
-    print("  - Memory usage")
-    print("  - Stale data risk")
-    print("  - Cache invalidation complexity")
-    print("  - Additional complexity")
-    print("\nWhen to Use:")
-    print("  - Expensive computations")
-    print("  - Database queries")
-    print("  - API responses")
-    print("  - Frequently accessed data")
-    print("\nCommon Use Cases:")
-    print("  - Redis")
-    print("  - Memcached")
-    print("  - In-memory caches")
-    print("  - CDN caching")
-    print("  - Browser caching")
-    print("\nCache Strategies:")
-    print("  - LRU (Least Recently Used)")
-    print("  - LFU (Least Frequently Used)")
-    print("  - FIFO (First In First Out)")
-    print("  - TTL (Time To Live)")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Stores frequently accessed data in fast storage to improve")
+    logger.info("  performance and reduce load on primary data source.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Faster response times")
+    logger.info("  - Reduced load on data source")
+    logger.info("  - Better scalability")
+    logger.info("  - Cost reduction")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Memory usage")
+    logger.info("  - Stale data risk")
+    logger.info("  - Cache invalidation complexity")
+    logger.info("  - Additional complexity")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Expensive computations")
+    logger.info("  - Database queries")
+    logger.info("  - API responses")
+    logger.info("  - Frequently accessed data")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Redis")
+    logger.info("  - Memcached")
+    logger.info("  - In-memory caches")
+    logger.info("  - CDN caching")
+    logger.info("  - Browser caching")
+    logger.info("\nCache Strategies:")
+    logger.info("  - LRU (Least Recently Used)")
+    logger.info("  - LFU (Least Frequently Used)")
+    logger.info("  - FIFO (First In First Out)")
+    logger.info("  - TTL (Time To Live)")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

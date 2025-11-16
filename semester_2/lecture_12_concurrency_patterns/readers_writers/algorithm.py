@@ -1,3 +1,5 @@
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Readers-Writers Lock implementation."""
@@ -10,13 +12,13 @@ def readers_writers():
     Time Complexity: O(1)
     Space Complexity: O(1)
     """
-    print("==" * 35)
-    print("Readers-Writers Lock")
-    print("==" * 35)
-    print(f"Category: Concurrency")
-    print(f"Time Complexity: O(1)")
-    print(f"Space Complexity: O(1)")
-    print("==" * 35)
+    logger.info("==" * 35)
+    logger.info("Readers-Writers Lock")
+    logger.info("==" * 35)
+    logger.info(f"Category: Concurrency")
+    logger.info(f"Time Complexity: O(1)")
+    logger.info(f"Space Complexity: O(1)")
+    logger.info("==" * 35)
 
 
 if __name__ == "__main__":

@@ -14,6 +14,8 @@ import math
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 def euclidean_distance(point1: List[float], point2: List[float]) -> float:
@@ -172,48 +174,48 @@ def generate_clusters(n_samples: int, n_clusters: int,
 
 def main() -> None:
     """Demonstration of K-Means Clustering."""
-    print("=" * 70)
-    print("K-MEANS CLUSTERING DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("K-MEANS CLUSTERING DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic clustering
-    print("Example 1: Basic Clustering")
-    print("-" * 70)
+    logger.info("Example 1: Basic Clustering")
+    logger.info("-" * 70)
     
     X, true_labels = generate_clusters(30, 3)
     
-    print(f"Generated {len(X)} samples in 3 clusters")
-    print(f"First few samples: {X[:5]}")
-    print()
+    logger.info(f"Generated {len(X)} samples in 3 clusters")
+    logger.info(f"First few samples: {X[:5]}")
+    logger.info()
     
     kmeans = KMeans(k=3, max_iters=100)
     kmeans.fit(X)
     
-    print(f"Converged in {len(kmeans.history)} iterations")
-    print(f"Final inertia: {kmeans.inertia:.2f}")
-    print()
+    logger.info(f"Converged in {len(kmeans.history)} iterations")
+    logger.info(f"Final inertia: {kmeans.inertia:.2f}")
+    logger.info()
     
-    print("Cluster centroids:")
+    logger.info("Cluster centroids:")
     for i, centroid in enumerate(kmeans.centroids):
-        print(f"  Cluster {i}: {[f'{x:.2f}' for x in centroid]}")
-    print()
+        logger.info(f"  Cluster {i}: {[f'{x:.2f}' for x in centroid]}")
+    logger.info()
     
     # Example 2: Cluster sizes
-    print("Example 2: Cluster Sizes")
-    print("-" * 70)
+    logger.info("Example 2: Cluster Sizes")
+    logger.info("-" * 70)
     
     cluster_counts = [0] * kmeans.k
     for label in kmeans.labels:
         cluster_counts[label] += 1
     
     for i, count in enumerate(cluster_counts):
-        print(f"  Cluster {i}: {count} samples")
-    print()
+        logger.info(f"  Cluster {i}: {count} samples")
+    logger.info()
     
     # Example 3: Predict new points
-    print("Example 3: Predicting New Points")
-    print("-" * 70)
+    logger.info("Example 3: Predicting New Points")
+    logger.info("-" * 70)
     
     X_test = [
         [0.0, 0.0],   # Should be cluster 0
@@ -223,25 +225,25 @@ def main() -> None:
     
     predictions = kmeans.predict(X_test)
     
-    print("Predictions:")
+    logger.info("Predictions:")
     for point, pred in zip(X_test, predictions):
-        print(f"  Point {point} → Cluster {pred}")
-    print()
+        logger.info(f"  Point {point} → Cluster {pred}")
+    logger.info()
     
     # Example 4: Training progress
-    print("Example 4: Training Progress")
-    print("-" * 70)
+    logger.info("Example 4: Training Progress")
+    logger.info("-" * 70)
     
-    print("Inertia over iterations:")
+    logger.info("Inertia over iterations:")
     for iteration, inertia in kmeans.history[:10]:  # First 10
-        print(f"  Iteration {iteration}: Inertia = {inertia:.2f}")
+        logger.debug(f"  Iteration {iteration}: Inertia = {inertia:.2f}")
     if len(kmeans.history) > 10:
-        print(f"  ... ({len(kmeans.history) - 10} more iterations)")
-    print()
+        logger.info(f"  ... ({len(kmeans.history) - 10} more iterations)")
+    logger.info()
     
     # Example 5: Performance measurement
-    print("Example 5: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 5: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("K-Means")
     
@@ -252,37 +254,37 @@ def main() -> None:
         
         _, metrics = timer.measure(model.fit, X_perf)
         
-        print(f"n={size:4d}: {metrics['execution_time_ms']:8.3f} ms, "
+        logger.info(f"n={size:4d}: {metrics['execution_time_ms']:8.3f} ms, "
               f"{metrics['memory_peak_kb']:8.2f} KB")
     
-    print()
+    logger.info()
     timer.print_summary()
     
-    print("\n" + "=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O(n*k*d*i)")
-    print("         n=samples, k=clusters, d=features, i=iterations")
-    print("  Space: O(n + k*d)")
-    print("\nKey Points:")
-    print("  + Simple and fast")
-    print("  + Works well for spherical clusters")
-    print("  + Scalable to large datasets")
-    print("  + Easy to interpret")
-    print("  - Requires knowing K in advance")
-    print("  - Sensitive to initialization")
-    print("  - Assumes spherical clusters")
-    print("  - Sensitive to outliers")
-    print("\nWhen to use:")
-    print("  • Know number of clusters")
-    print("  • Spherical, similar-sized clusters")
-    print("  • Large datasets")
-    print("  • Need fast clustering")
-    print("\nWhen NOT to use:")
-    print("  • Unknown number of clusters")
-    print("  • Non-spherical clusters")
-    print("  • Many outliers")
-    print("  • Very different cluster sizes")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  O(n*k*d*i)")
+    logger.info("         n=samples, k=clusters, d=features, i=iterations")
+    logger.info("  Space: O(n + k*d)")
+    logger.info("\nKey Points:")
+    logger.info("  + Simple and fast")
+    logger.info("  + Works well for spherical clusters")
+    logger.info("  + Scalable to large datasets")
+    logger.info("  + Easy to interpret")
+    logger.info("  - Requires knowing K in advance")
+    logger.info("  - Sensitive to initialization")
+    logger.info("  - Assumes spherical clusters")
+    logger.info("  - Sensitive to outliers")
+    logger.info("\nWhen to use:")
+    logger.info("  • Know number of clusters")
+    logger.info("  • Spherical, similar-sized clusters")
+    logger.info("  • Large datasets")
+    logger.info("  • Need fast clustering")
+    logger.info("\nWhen NOT to use:")
+    logger.info("  • Unknown number of clusters")
+    logger.info("  • Non-spherical clusters")
+    logger.info("  • Many outliers")
+    logger.info("  • Very different cluster sizes")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

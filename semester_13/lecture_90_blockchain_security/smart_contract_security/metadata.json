@@ -1,0 +1,12 @@
+{
+  "name": "smart_contract_security",
+  "display_name": "Smart Contract Security",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_90_blockchain_security",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

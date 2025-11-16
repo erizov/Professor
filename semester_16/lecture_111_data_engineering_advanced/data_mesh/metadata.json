@@ -1,0 +1,12 @@
+{
+  "name": "data_mesh",
+  "display_name": "Data Mesh",
+  "category": "Advanced Graduate Level",
+  "semester": 16,
+  "lecture": "lecture_111_data_engineering_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

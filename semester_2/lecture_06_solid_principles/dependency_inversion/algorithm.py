@@ -11,6 +11,8 @@ Details should depend on abstractions.
 import sys
 from pathlib import Path
 from abc import ABC, abstractmethod
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
@@ -20,10 +22,10 @@ class BadMySQLConnection:
     """Low-level MySQL connection."""
     
     def connect(self) -> None:
-        print("Connecting to MySQL database...")
+        logger.info("Connecting to MySQL database...")
     
     def query(self, sql: str) -> list:
-        print(f"Executing MySQL query: {sql}")
+        logger.info(f"Executing MySQL query: {sql}")
         return []
 
 
@@ -31,10 +33,10 @@ class BadPostgreSQLConnection:
     """Low-level PostgreSQL connection."""
     
     def connect(self) -> None:
-        print("Connecting to PostgreSQL database...")
+        logger.info("Connecting to PostgreSQL database...")
     
     def query(self, sql: str) -> list:
-        print(f"Executing PostgreSQL query: {sql}")
+        logger.info(f"Executing PostgreSQL query: {sql}")
         return []
 
 
@@ -69,10 +71,10 @@ class MySQLConnection(DatabaseConnection):
     """MySQL implementation (detail)."""
     
     def connect(self) -> None:
-        print("Connecting to MySQL database...")
+        logger.info("Connecting to MySQL database...")
     
     def query(self, sql: str) -> list:
-        print(f"Executing MySQL query: {sql}")
+        logger.info(f"Executing MySQL query: {sql}")
         return []
 
 
@@ -80,10 +82,10 @@ class PostgreSQLConnection(DatabaseConnection):
     """PostgreSQL implementation (detail)."""
     
     def connect(self) -> None:
-        print("Connecting to PostgreSQL database...")
+        logger.info("Connecting to PostgreSQL database...")
     
     def query(self, sql: str) -> list:
-        print(f"Executing PostgreSQL query: {sql}")
+        logger.info(f"Executing PostgreSQL query: {sql}")
         return []
 
 
@@ -105,14 +107,14 @@ class BadEmailService:
     """Email service - concrete implementation."""
     
     def send(self, message: str) -> None:
-        print(f"Sending email: {message}")
+        logger.info(f"Sending email: {message}")
 
 
 class BadSMSService:
     """SMS service - concrete implementation."""
     
     def send(self, message: str) -> None:
-        print(f"Sending SMS: {message}")
+        logger.info(f"Sending SMS: {message}")
 
 
 class BadNotificationService:
@@ -140,21 +142,21 @@ class EmailService(MessageService):
     """Email implementation (detail)."""
     
     def send(self, message: str) -> None:
-        print(f"Sending email: {message}")
+        logger.info(f"Sending email: {message}")
 
 
 class SMSService(MessageService):
     """SMS implementation (detail)."""
     
     def send(self, message: str) -> None:
-        print(f"Sending SMS: {message}")
+        logger.info(f"Sending SMS: {message}")
 
 
 class PushNotificationService(MessageService):
     """Push notification implementation (detail)."""
     
     def send(self, message: str) -> None:
-        print(f"Sending push notification: {message}")
+        logger.info(f"Sending push notification: {message}")
 
 
 class NotificationService:
@@ -182,7 +184,7 @@ class CreditCardProcessor(PaymentProcessor):
     """Credit card processor (detail)."""
     
     def process_payment(self, amount: float) -> bool:
-        print(f"Processing ${amount} via credit card")
+        logger.info(f"Processing ${amount} via credit card")
         return True
 
 
@@ -190,7 +192,7 @@ class PayPalProcessor(PaymentProcessor):
     """PayPal processor (detail)."""
     
     def process_payment(self, amount: float) -> bool:
-        print(f"Processing ${amount} via PayPal")
+        logger.info(f"Processing ${amount} via PayPal")
         return True
 
 
@@ -207,21 +209,21 @@ class OrderService:
 
 def main() -> None:
     """Demonstration of Dependency Inversion Principle."""
-    print("=" * 70)
-    print("DEPENDENCY INVERSION PRINCIPLE (DIP) DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("DEPENDENCY INVERSION PRINCIPLE (DIP) DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Database Connection
-    print("Example 1: Database Connection")
-    print("-" * 70)
+    logger.info("Example 1: Database Connection")
+    logger.info("-" * 70)
     
-    print("❌ BAD: High-level depends on low-level")
+    logger.info("❌ BAD: High-level depends on low-level")
     bad_service = BadUserService()
     bad_service.get_users()
-    print()
+    logger.info()
     
-    print("✅ GOOD: Both depend on abstraction")
+    logger.info("✅ GOOD: Both depend on abstraction")
     # Can easily switch implementations
     mysql_db = MySQLConnection()
     user_service_mysql = UserService(mysql_db)
@@ -230,11 +232,11 @@ def main() -> None:
     postgres_db = PostgreSQLConnection()
     user_service_postgres = UserService(postgres_db)
     user_service_postgres.get_users()
-    print()
+    logger.info()
     
     # Example 2: Notification System
-    print("Example 2: Notification System")
-    print("-" * 70)
+    logger.info("Example 2: Notification System")
+    logger.info("-" * 70)
     
     # Can inject any implementation
     email_service = EmailService()
@@ -248,11 +250,11 @@ def main() -> None:
     push_service = PushNotificationService()
     notification = NotificationService(push_service)
     notification.notify("Hello via push")
-    print()
+    logger.info()
     
     # Example 3: Payment Processing
-    print("Example 3: Payment Processing")
-    print("-" * 70)
+    logger.info("Example 3: Payment Processing")
+    logger.info("-" * 70)
     
     credit_card = CreditCardProcessor()
     order_service = OrderService(credit_card)
@@ -261,35 +263,35 @@ def main() -> None:
     paypal = PayPalProcessor()
     order_service = OrderService(paypal)
     order_service.place_order(50.0)
-    print()
+    logger.info()
     
-    print("=" * 70)
-    print("\nPrinciple Summary:")
-    print("\nDefinition:")
-    print("  High-level modules should not depend on low-level modules.")
-    print("  Both should depend on abstractions. Abstractions should not")
-    print("  depend on details. Details should depend on abstractions.")
-    print("\nKey Benefits:")
-    print("  - Loose coupling")
-    print("  - Easy to test (can inject mocks)")
-    print("  - Easy to extend (add new implementations)")
-    print("  - Flexible and maintainable")
-    print("\nHow to Apply:")
-    print("  1. Use dependency injection")
-    print("  2. Depend on interfaces/abstractions")
-    print("  3. Avoid direct instantiation of concrete classes")
-    print("  4. Use inversion of control (IoC) containers")
-    print("\nCommon Violations:")
-    print("  - Direct instantiation of concrete classes")
-    print("  - High-level modules importing low-level modules")
-    print("  - Hard-coded dependencies")
-    print("  - Difficult to test")
-    print("\nDesign Patterns that Help:")
-    print("  - Dependency Injection")
-    print("  - Strategy Pattern")
-    print("  - Factory Pattern")
-    print("  - Service Locator Pattern")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPrinciple Summary:")
+    logger.info("\nDefinition:")
+    logger.info("  High-level modules should not depend on low-level modules.")
+    logger.info("  Both should depend on abstractions. Abstractions should not")
+    logger.info("  depend on details. Details should depend on abstractions.")
+    logger.info("\nKey Benefits:")
+    logger.info("  - Loose coupling")
+    logger.info("  - Easy to test (can inject mocks)")
+    logger.info("  - Easy to extend (add new implementations)")
+    logger.info("  - Flexible and maintainable")
+    logger.info("\nHow to Apply:")
+    logger.info("  1. Use dependency injection")
+    logger.info("  2. Depend on interfaces/abstractions")
+    logger.info("  3. Avoid direct instantiation of concrete classes")
+    logger.info("  4. Use inversion of control (IoC) containers")
+    logger.info("\nCommon Violations:")
+    logger.info("  - Direct instantiation of concrete classes")
+    logger.info("  - High-level modules importing low-level modules")
+    logger.info("  - Hard-coded dependencies")
+    logger.info("  - Difficult to test")
+    logger.info("\nDesign Patterns that Help:")
+    logger.info("  - Dependency Injection")
+    logger.info("  - Strategy Pattern")
+    logger.info("  - Factory Pattern")
+    logger.info("  - Service Locator Pattern")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

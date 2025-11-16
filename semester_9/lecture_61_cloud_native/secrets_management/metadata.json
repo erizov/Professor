@@ -1,0 +1,12 @@
+{
+  "name": "secrets_management",
+  "display_name": "Secrets Management",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_61_cloud_native",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

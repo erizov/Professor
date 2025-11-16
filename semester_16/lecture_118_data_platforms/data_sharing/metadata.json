@@ -1,0 +1,12 @@
+{
+  "name": "data_sharing",
+  "display_name": "Data Sharing",
+  "category": "Advanced Graduate Level",
+  "semester": 16,
+  "lecture": "lecture_118_data_platforms",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

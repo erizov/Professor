@@ -1,0 +1,12 @@
+{
+  "name": "audit_trails",
+  "display_name": "Audit Trails",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_70_ai_governance",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

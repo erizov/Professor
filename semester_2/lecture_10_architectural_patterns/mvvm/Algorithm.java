@@ -5,7 +5,10 @@ import java.util.*;
  * 
  * Separates View from Model using ViewModel.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class User {
         private int userId;
@@ -76,10 +79,10 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("MODEL-VIEW-VIEWMODEL (MVVM) PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("MODEL-VIEW-VIEWMODEL (MVVM) PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         UserModel model = new UserModel();
         UserViewModel viewModel = new UserViewModel(model);
@@ -88,14 +91,14 @@ public class Algorithm {
         viewModel.createUser("Bob", "bob@example.com");
         viewModel.loadUsers();
         
-        System.out.println("Users: " + viewModel.getUserCount());
-        System.out.println();
+        logger.info("Users: " + viewModel.getUserCount());
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: Separates View from Model");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: Separates View from Model");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

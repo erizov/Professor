@@ -1,0 +1,12 @@
+{
+  "name": "quantum_compilation",
+  "display_name": "Quantum Compilation",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_80_quantum_computing_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

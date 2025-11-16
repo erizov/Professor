@@ -1,0 +1,12 @@
+{
+  "name": "parallel_algorithms",
+  "display_name": "Parallel Algorithms",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_58_parallel_computing",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "log_aggregation_advanced",
+  "display_name": "Log Aggregation Advanced",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_62_observability_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

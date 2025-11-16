@@ -11,7 +11,10 @@ import java.util.Random;
  * Stable: Yes
  * Adaptive: No
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     /**
      * Sort array using radix sort (LSD).
@@ -94,50 +97,50 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("RADIX SORT DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("RADIX SORT DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Basic sorting
-        System.out.println("Example 1: Basic Integer Sorting");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Basic Integer Sorting");
+        logger.info("-".repeat(70));
         int[] data1 = {170, 45, 75, 90, 802, 24, 2, 66};
-        System.out.println("Original: " + Arrays.toString(data1));
+        logger.info("Original: " + Arrays.toString(data1));
         int[] result1 = radixSort(data1.clone());
-        System.out.println("Sorted:   " + Arrays.toString(result1));
-        System.out.println();
+        logger.info("Sorted:   " + Arrays.toString(result1));
+        logger.info();
         
         // Example 2: Small numbers
-        System.out.println("Example 2: Small Numbers");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Small Numbers");
+        logger.info("-".repeat(70));
         int[] data2 = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
-        System.out.println("Original: " + Arrays.toString(data2));
+        logger.info("Original: " + Arrays.toString(data2));
         int[] result2 = radixSort(data2.clone());
-        System.out.println("Sorted:   " + Arrays.toString(result2));
-        System.out.println();
+        logger.info("Sorted:   " + Arrays.toString(result2));
+        logger.info();
         
         // Example 3: Large numbers
-        System.out.println("Example 3: Large Numbers");
-        System.out.println("-".repeat(70));
+        logger.info("Example 3: Large Numbers");
+        logger.info("-".repeat(70));
         int[] data3 = {1234, 5678, 9012, 3456, 7890};
-        System.out.println("Original: " + Arrays.toString(data3));
+        logger.info("Original: " + Arrays.toString(data3));
         int[] result3 = radixSort(data3.clone());
-        System.out.println("Sorted:   " + Arrays.toString(result3));
-        System.out.println();
+        logger.info("Sorted:   " + Arrays.toString(result3));
+        logger.info();
         
         // Example 4: Duplicates
-        System.out.println("Example 4: With Duplicates");
-        System.out.println("-".repeat(70));
+        logger.info("Example 4: With Duplicates");
+        logger.info("-".repeat(70));
         int[] data4 = {321, 123, 321, 456, 123, 789};
-        System.out.println("Original: " + Arrays.toString(data4));
+        logger.info("Original: " + Arrays.toString(data4));
         int[] result4 = radixSort(data4.clone());
-        System.out.println("Sorted:   " + Arrays.toString(result4));
-        System.out.println();
+        logger.info("Sorted:   " + Arrays.toString(result4));
+        logger.info();
         
         // Example 5: Performance measurement
-        System.out.println("Example 5: Performance Measurement");
-        System.out.println("-".repeat(70));
+        logger.info("Example 5: Performance Measurement");
+        logger.info("-".repeat(70));
         
         Random rand = new Random(42);
         int[] sizes = {100, 1000, 10000};
@@ -156,29 +159,29 @@ public class Algorithm {
             System.out.printf("n=%5d: %8.3f ms%n", size, ms);
         }
         
-        System.out.println();
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Time:  O(d * (n + k))");
-        System.out.println("         d = digits, k = radix (10)");
-        System.out.println("  Space: O(n + k)");
-        System.out.println("  Stable: Yes");
-        System.out.println("  Adaptive: No");
-        System.out.println("\nKey Points:");
-        System.out.println("  + Linear time when d is constant");
-        System.out.println("  + Stable sorting");
-        System.out.println("  + No comparisons");
-        System.out.println("  + Good for fixed-length integers");
-        System.out.println("  - Only for integers");
-        System.out.println("  - Not in-place");
-        System.out.println("\nWhen to use:");
-        System.out.println("  • Sorting integers with limited digits");
-        System.out.println("  • n is large, d is small");
-        System.out.println("  • Need stable sort");
-        System.out.println("\nWhen NOT to use:");
-        System.out.println("  • Variable-length keys");
-        System.out.println("  • Small datasets");
-        System.out.println("=".repeat(70));
+        logger.info();
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Time:  O(d * (n + k))");
+        logger.info("         d = digits, k = radix (10)");
+        logger.info("  Space: O(n + k)");
+        logger.info("  Stable: Yes");
+        logger.info("  Adaptive: No");
+        logger.info("\nKey Points:");
+        logger.info("  + Linear time when d is constant");
+        logger.info("  + Stable sorting");
+        logger.info("  + No comparisons");
+        logger.info("  + Good for fixed-length integers");
+        logger.info("  - Only for integers");
+        logger.info("  - Not in-place");
+        logger.info("\nWhen to use:");
+        logger.info("  • Sorting integers with limited digits");
+        logger.info("  • n is large, d is small");
+        logger.info("  • Need stable sort");
+        logger.info("\nWhen NOT to use:");
+        logger.info("  • Variable-length keys");
+        logger.info("  • Small datasets");
+        logger.info("=".repeat(70));
         
         long endTime = System.nanoTime();
         double totalMs = (endTime - startTime) / 1_000_000.0;

@@ -1,0 +1,12 @@
+{
+  "name": "chatbot_advanced",
+  "display_name": "Chatbot Advanced",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_95_support_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

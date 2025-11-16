@@ -5,14 +5,17 @@
  * Time Complexity: O(n*d*h)
  * Space Complexity: O(d*h)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     public static void main(String[] args) {
-        System.out.println("==".repeat(35));
-        System.out.println("Neural Network Basics");
-        System.out.println("==".repeat(35));
-        System.out.println("Category: Machine Learning");
-        System.out.println("Time: O(n*d*h)");
-        System.out.println("Space: O(d*h)");
-        System.out.println("==".repeat(35));
+        logger.info("==".repeat(35));
+        logger.info("Neural Network Basics");
+        logger.info("==".repeat(35));
+        logger.info("Category: Machine Learning");
+        logger.info("Time: O(n*d*h)");
+        logger.info("Space: O(d*h)");
+        logger.info("==".repeat(35));
     }
 }

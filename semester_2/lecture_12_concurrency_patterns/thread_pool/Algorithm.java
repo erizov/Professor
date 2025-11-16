@@ -5,7 +5,10 @@ import java.util.concurrent.*;
  * 
  * Maintains pool of worker threads.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class Task implements Runnable {
         private int taskId;
@@ -19,7 +22,7 @@ public class Algorithm {
         public void run() {
             try {
                 Thread.sleep(duration);
-                System.out.println("Task " + taskId + " completed");
+                logger.info("Task " + taskId + " completed");
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
@@ -29,18 +32,18 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("THREAD POOL DESIGN PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("THREAD POOL DESIGN PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Using ExecutorService (Java's thread pool)
         ExecutorService executor = Executors.newFixedThreadPool(4);
         
-        System.out.println("Submitting tasks to thread pool:");
+        logger.info("Submitting tasks to thread pool:");
         for (int i = 1; i <= 5; i++) {
             executor.submit(new Task(i, 100));
-            System.out.println("  Submitted task " + i);
+            logger.info("  Submitted task " + i);
         }
         
         executor.shutdown();
@@ -50,14 +53,14 @@ public class Algorithm {
             Thread.currentThread().interrupt();
         }
         
-        System.out.println("All tasks completed!");
-        System.out.println();
+        logger.info("All tasks completed!");
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: Reuses threads for tasks");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: Reuses threads for tasks");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

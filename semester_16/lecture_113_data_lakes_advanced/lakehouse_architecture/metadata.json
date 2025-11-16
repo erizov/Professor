@@ -1,0 +1,12 @@
+{
+  "name": "lakehouse_architecture",
+  "display_name": "Lakehouse Architecture",
+  "category": "Advanced Graduate Level",
+  "semester": 16,
+  "lecture": "lecture_113_data_lakes_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

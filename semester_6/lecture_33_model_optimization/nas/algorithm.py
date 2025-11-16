@@ -10,6 +10,8 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 def nas():
@@ -20,21 +22,21 @@ def nas():
     Time Complexity: O(search_space*trials)
     Space Complexity: O(candidates)
     """
-    print("==" * 35)
-    print("Neural Architecture Search")
-    print("==" * 35)
-    print(f"Category: Optimization")
-    print(f"Time Complexity: O(search_space*trials)")
-    print(f"Space Complexity: O(candidates)")
-    print()
-    print("Resource Requirements:")
-    print("  - GPU: Optional")
-    print("  - Memory: Medium")
-    print("==" * 35)
+    logger.info("==" * 35)
+    logger.info("Neural Architecture Search")
+    logger.info("==" * 35)
+    logger.info(f"Category: Optimization")
+    logger.info(f"Time Complexity: O(search_space*trials)")
+    logger.info(f"Space Complexity: O(candidates)")
+    logger.info()
+    logger.info("Resource Requirements:")
+    logger.info("  - GPU: Optional")
+    logger.info("  - Memory: Medium")
+    logger.info("==" * 35)
 
 
 if __name__ == "__main__":
     timer = PerformanceTimer("Neural Architecture Search")
     _, metrics = timer.measure(nas)
-    print(f"\nExecution time: {metrics['execution_time_ms']:.3f} ms")
-    print(f"Memory used: {metrics['memory_peak_kb']:.2f} KB")
+    logger.info(f"\nExecution time: {metrics['execution_time_ms']:.3f} ms")
+    logger.info(f"Memory used: {metrics['memory_peak_kb']:.2f} KB")

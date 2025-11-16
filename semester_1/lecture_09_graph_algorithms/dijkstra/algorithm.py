@@ -15,6 +15,8 @@ from typing import Dict, List, Tuple, Optional
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class Graph:
@@ -124,14 +126,14 @@ class Graph:
 
 def main() -> None:
     """Demonstration of Dijkstra's Algorithm."""
-    print("=" * 70)
-    print("DIJKSTRA'S ALGORITHM DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("DIJKSTRA'S ALGORITHM DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic shortest path
-    print("Example 1: Basic Shortest Path Finding")
-    print("-" * 70)
+    logger.info("Example 1: Basic Shortest Path Finding")
+    logger.info("-" * 70)
     
     g1 = Graph(directed=False)
     # Graph: 0-1-2-3 with weights
@@ -142,32 +144,32 @@ def main() -> None:
     
     distances, previous = g1.dijkstra(0)
     
-    print("Graph edges (weighted):")
-    print("  0 --4-- 1")
-    print("  |       |")
-    print("  5       2")
-    print("  |       |")
-    print("  2 --1-- 3")
-    print()
-    print("Shortest distances from vertex 0:")
+    logger.info("Graph edges (weighted):")
+    logger.info("  0 --4-- 1")
+    logger.info("  |       |")
+    logger.info("  5       2")
+    logger.info("  |       |")
+    logger.info("  2 --1-- 3")
+    logger.info()
+    logger.info("Shortest distances from vertex 0:")
     for vertex in sorted(distances.keys()):
-        print(f"  To vertex {vertex}: {distances[vertex]}")
-    print()
+        logger.info(f"  To vertex {vertex}: {distances[vertex]}")
+    logger.info()
     
     # Example 2: Path reconstruction
-    print("Example 2: Path Reconstruction")
-    print("-" * 70)
+    logger.info("Example 2: Path Reconstruction")
+    logger.info("-" * 70)
     
     path = g1.shortest_path(0, 3)
     distance = g1.shortest_distance(0, 3)
     
-    print(f"Shortest path from 0 to 3: {' → '.join(map(str, path))}")
-    print(f"Total distance: {distance}")
-    print()
+    logger.info(f"Shortest path from 0 to 3: {' → '.join(map(str, path))}")
+    logger.info(f"Total distance: {distance}")
+    logger.info()
     
     # Example 3: More complex graph
-    print("Example 3: Complex Weighted Graph")
-    print("-" * 70)
+    logger.info("Example 3: Complex Weighted Graph")
+    logger.info("-" * 70)
     
     g2 = Graph(directed=True)
     # Directed graph with multiple paths
@@ -181,23 +183,23 @@ def main() -> None:
     
     distances2, _ = g2.dijkstra(0)
     
-    print("Directed graph with multiple paths:")
-    print("Shortest distances from vertex 0:")
+    logger.info("Directed graph with multiple paths:")
+    logger.info("Shortest distances from vertex 0:")
     for vertex in sorted(distances2.keys()):
-        print(f"  To vertex {vertex}: {distances2[vertex]}")
+        logger.info(f"  To vertex {vertex}: {distances2[vertex]}")
     
     # Show all paths
-    print("\nShortest paths:")
+    logger.info("\nShortest paths:")
     for target in [1, 2, 3, 4]:
         path = g2.shortest_path(0, target)
         if path:
-            print(f"  0 → {target}: {' → '.join(map(str, path))} "
+            logger.info(f"  0 → {target}: {' → '.join(map(str, path))} "
                   f"(distance: {distances2[target]})")
-    print()
+    logger.info()
     
     # Example 4: Comparison with unweighted BFS
-    print("Example 4: Dijkstra vs BFS (Weighted vs Unweighted)")
-    print("-" * 70)
+    logger.info("Example 4: Dijkstra vs BFS (Weighted vs Unweighted)")
+    logger.info("-" * 70)
     
     g3 = Graph(directed=False)
     # Same structure, but weighted
@@ -206,22 +208,22 @@ def main() -> None:
     g3.add_edge(2, 1, 1.0)   # Short edge
     
     dijkstra_dist = g3.shortest_distance(0, 1)
-    print(f"Graph: 0 --10-- 1, 0 --1-- 2 --1-- 1")
-    print(f"Dijkstra (weighted): 0 → 1 distance = {dijkstra_dist}")
-    print("BFS (unweighted) would find: 0 → 1 (1 hop, but wrong for weights)")
-    print("Dijkstra correctly finds: 0 → 2 → 1 (2 hops, but shorter total)")
-    print()
+    logger.info(f"Graph: 0 --10-- 1, 0 --1-- 2 --1-- 1")
+    logger.info(f"Dijkstra (weighted): 0 → 1 distance = {dijkstra_dist}")
+    logger.info("BFS (unweighted) would find: 0 → 1 (1 hop, but wrong for weights)")
+    logger.info("Dijkstra correctly finds: 0 → 2 → 1 (2 hops, but shorter total)")
+    logger.info()
     
     # Example 5: Negative weights warning
-    print("Example 5: Important Limitation")
-    print("-" * 70)
-    print("⚠️  Dijkstra's algorithm does NOT work with negative weights!")
-    print("    For graphs with negative weights, use Bellman-Ford algorithm.")
-    print()
+    logger.info("Example 5: Important Limitation")
+    logger.info("-" * 70)
+    logger.info("⚠️  Dijkstra's algorithm does NOT work with negative weights!")
+    logger.info("    For graphs with negative weights, use Bellman-Ford algorithm.")
+    logger.info()
     
     # Example 6: Performance measurement
-    print("Example 6: Performance on Different Graph Sizes")
-    print("-" * 70)
+    logger.info("Example 6: Performance on Different Graph Sizes")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Dijkstra's Algorithm")
     
@@ -239,44 +241,43 @@ def main() -> None:
             return g_large.dijkstra(0)
         
         _, metrics = timer.measure(run_dijkstra)
-        print(f"Graph with {n} vertices:")
-        print(f"  Time: {metrics['execution_time_ms']:.3f} ms")
-        print(f"  Memory: {metrics['memory_peak_kb']:.2f} KB")
+        logger.info(f"Graph with {n} vertices:")
+        logger.info(f"  Time: {metrics['execution_time_ms']:.3f} ms")
+        logger.info(f"  Memory: {metrics['memory_peak_kb']:.2f} KB")
     
-    print()
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O((V + E) log V) with binary heap")
-    print("        O(V²) with array (simpler implementation)")
-    print("  Space: O(V) - distances and priority queue")
-    print("        V = vertices, E = edges")
-    print("\nKey Advantages:")
-    print("  - Finds shortest path in weighted graphs")
-    print("  - Efficient with priority queue")
-    print("  - Works for both directed and undirected")
-    print("  - Single-source shortest paths")
-    print("\nKey Disadvantages:")
-    print("  - Does NOT work with negative weights")
-    print("  - Slower than BFS for unweighted graphs")
-    print("  - Requires non-negative edge weights")
-    print("\nWhen to Use:")
-    print("  - Weighted graphs with non-negative weights")
-    print("  - GPS navigation (shortest route)")
-    print("  - Network routing")
-    print("  - Social network analysis (weighted connections)")
-    print("\nWhen NOT to Use:")
-    print("  - Graphs with negative weights (use Bellman-Ford)")
-    print("  - Unweighted graphs (use BFS - faster)")
-    print("  - All-pairs shortest paths (use Floyd-Warshall)")
-    print("\nCommon Use Cases:")
-    print("  - GPS navigation systems")
-    print("  - Network routing protocols")
-    print("  - Social network analysis")
-    print("  - Resource allocation")
-    print("  - Game pathfinding (with weights)")
-    print("=" * 70)
+    logger.info()
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  O((V + E) log V) with binary heap")
+    logger.info("        O(V²) with array (simpler implementation)")
+    logger.info("  Space: O(V) - distances and priority queue")
+    logger.info("        V = vertices, E = edges")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Finds shortest path in weighted graphs")
+    logger.info("  - Efficient with priority queue")
+    logger.info("  - Works for both directed and undirected")
+    logger.info("  - Single-source shortest paths")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Does NOT work with negative weights")
+    logger.info("  - Slower than BFS for unweighted graphs")
+    logger.info("  - Requires non-negative edge weights")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Weighted graphs with non-negative weights")
+    logger.info("  - GPS navigation (shortest route)")
+    logger.info("  - Network routing")
+    logger.info("  - Social network analysis (weighted connections)")
+    logger.info("\nWhen NOT to Use:")
+    logger.info("  - Graphs with negative weights (use Bellman-Ford)")
+    logger.info("  - Unweighted graphs (use BFS - faster)")
+    logger.info("  - All-pairs shortest paths (use Floyd-Warshall)")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - GPS navigation systems")
+    logger.info("  - Network routing protocols")
+    logger.info("  - Social network analysis")
+    logger.info("  - Resource allocation")
+    logger.info("  - Game pathfinding (with weights)")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":
     main()
-

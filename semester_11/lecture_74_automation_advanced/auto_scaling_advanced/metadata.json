@@ -1,0 +1,12 @@
+{
+  "name": "auto_scaling_advanced",
+  "display_name": "Auto Scaling Advanced",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_74_automation_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "interoperability_protocols",
+  "display_name": "Interoperability Protocols",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_92_blockchain_interoperability",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

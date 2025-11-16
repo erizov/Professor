@@ -3,21 +3,24 @@
  * 
  * Blockchain Structure for blockchain fundamentals.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("BLOCKCHAIN STRUCTURE DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("BLOCKCHAIN STRUCTURE DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
-        System.out.println("Implementation in progress...");
-        System.out.println();
+        logger.info("Implementation in progress...");
+        logger.info();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Time:  Varies");
-        System.out.println("  Space: Varies");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Time:  Varies");
+        logger.info("  Space: Varies");
+        logger.info("=".repeat(70));
     }
 }

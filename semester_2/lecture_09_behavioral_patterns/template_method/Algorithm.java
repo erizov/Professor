@@ -3,7 +3,10 @@
  * 
  * Defines algorithm skeleton in method.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     abstract static class DataProcessor {
         void process() {
@@ -16,32 +19,32 @@ public class Algorithm {
         abstract void processData();
         
         void saveData() {
-            System.out.println("Saving processed data...");
+            logger.info("Saving processed data...");
         }
     }
     
     static class CSVProcessor extends DataProcessor {
         void readData() {
-            System.out.println("Reading CSV file...");
+            logger.info("Reading CSV file...");
         }
         
         void processData() {
-            System.out.println("Processing CSV data...");
+            logger.info("Processing CSV data...");
         }
     }
     
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("TEMPLATE METHOD DESIGN PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("TEMPLATE METHOD DESIGN PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         DataProcessor processor = new CSVProcessor();
         processor.process();
-        System.out.println();
+        logger.info();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: Defines algorithm skeleton");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: Defines algorithm skeleton");
+        logger.info("=".repeat(70));
     }
 }

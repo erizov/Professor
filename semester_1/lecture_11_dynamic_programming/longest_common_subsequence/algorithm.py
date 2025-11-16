@@ -14,6 +14,8 @@ from typing import List, Tuple
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 def lcs_length(s1: str, s2: str) -> int:
@@ -158,14 +160,14 @@ def lcs_all_sequences(s1: str, s2: str) -> List[str]:
 
 def main() -> None:
     """Demonstration of LCS algorithm."""
-    print("=" * 70)
-    print("LONGEST COMMON SUBSEQUENCE (LCS) DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("LONGEST COMMON SUBSEQUENCE (LCS) DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic LCS
-    print("Example 1: Basic LCS")
-    print("-" * 70)
+    logger.info("Example 1: Basic LCS")
+    logger.info("-" * 70)
     
     s1 = "ABCDGH"
     s2 = "AEDFHR"
@@ -173,15 +175,15 @@ def main() -> None:
     length = lcs_length(s1, s2)
     sequence = lcs_sequence(s1, s2)
     
-    print(f"String 1: {s1}")
-    print(f"String 2: {s2}")
-    print(f"LCS Length: {length}")
-    print(f"LCS Sequence: {sequence}")
-    print()
+    logger.info(f"String 1: {s1}")
+    logger.info(f"String 2: {s2}")
+    logger.info(f"LCS Length: {length}")
+    logger.info(f"LCS Sequence: {sequence}")
+    logger.info()
     
     # Example 2: Another example
-    print("Example 2: Another Example")
-    print("-" * 70)
+    logger.info("Example 2: Another Example")
+    logger.info("-" * 70)
     
     s3 = "AGGTAB"
     s4 = "GXTXAYB"
@@ -189,29 +191,29 @@ def main() -> None:
     length2 = lcs_length(s3, s4)
     sequence2 = lcs_sequence(s3, s4)
     
-    print(f"String 1: {s3}")
-    print(f"String 2: {s4}")
-    print(f"LCS Length: {length2}")
-    print(f"LCS Sequence: {sequence2}")
-    print()
+    logger.info(f"String 1: {s3}")
+    logger.info(f"String 2: {s4}")
+    logger.info(f"LCS Length: {length2}")
+    logger.info(f"LCS Sequence: {sequence2}")
+    logger.info()
     
     # Example 3: DNA sequence comparison
-    print("Example 3: DNA Sequence Comparison")
-    print("-" * 70)
+    logger.info("Example 3: DNA Sequence Comparison")
+    logger.info("-" * 70)
     
     dna1 = "ACGTACGT"
     dna2 = "ACCTACGT"
     
     lcs_dna = lcs_sequence(dna1, dna2)
-    print(f"DNA Sequence 1: {dna1}")
-    print(f"DNA Sequence 2: {dna2}")
-    print(f"LCS: {lcs_dna}")
-    print(f"Similarity: {len(lcs_dna) / max(len(dna1), len(dna2)) * 100:.1f}%")
-    print()
+    logger.info(f"DNA Sequence 1: {dna1}")
+    logger.info(f"DNA Sequence 2: {dna2}")
+    logger.info(f"LCS: {lcs_dna}")
+    logger.info(f"Similarity: {len(lcs_dna) / max(len(dna1), len(dna2)) * 100:.1f}%")
+    logger.info()
     
     # Example 4: Space-optimized version
-    print("Example 4: Space-Optimized Version")
-    print("-" * 70)
+    logger.info("Example 4: Space-Optimized Version")
+    logger.info("-" * 70)
     
     s5 = "ABCDEFGHIJKLMNOP"
     s6 = "ACEGIKMOQ"
@@ -219,30 +221,30 @@ def main() -> None:
     length_standard = lcs_length(s5, s6)
     length_optimized = lcs_optimized(s5, s6)
     
-    print(f"String 1: {s5}")
-    print(f"String 2: {s6}")
-    print(f"LCS Length (standard): {length_standard}")
-    print(f"LCS Length (optimized): {length_optimized}")
-    print("Note: Optimized version uses O(min(m,n)) space instead of O(m*n)")
-    print()
+    logger.info(f"String 1: {s5}")
+    logger.info(f"String 2: {s6}")
+    logger.info(f"LCS Length (standard): {length_standard}")
+    logger.info(f"LCS Length (optimized): {length_optimized}")
+    logger.info("Note: Optimized version uses O(min(m,n)) space instead of O(m*n)")
+    logger.info()
     
     # Example 5: All LCS sequences
-    print("Example 5: All LCS Sequences")
-    print("-" * 70)
+    logger.info("Example 5: All LCS Sequences")
+    logger.info("-" * 70)
     
     s7 = "ABCBDAB"
     s8 = "BDCABA"
     
     all_lcs = lcs_all_sequences(s7, s8)
-    print(f"String 1: {s7}")
-    print(f"String 2: {s8}")
-    print(f"LCS Length: {lcs_length(s7, s8)}")
-    print(f"All LCS sequences: {all_lcs}")
-    print()
+    logger.info(f"String 1: {s7}")
+    logger.info(f"String 2: {s8}")
+    logger.info(f"LCS Length: {lcs_length(s7, s8)}")
+    logger.info(f"All LCS sequences: {all_lcs}")
+    logger.info()
     
     # Example 6: Performance measurement
-    print("Example 6: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 6: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("LCS")
     
@@ -254,44 +256,43 @@ def main() -> None:
     
     for s1, s2 in test_cases:
         _, metrics = timer.measure(lcs_length, s1, s2)
-        print(f"Strings of length {len(s1)} and {len(s2)}:")
-        print(f"  Time: {metrics['execution_time_ms']:.3f} ms")
-        print(f"  LCS Length: {lcs_length(s1, s2)}")
+        logger.info(f"Strings of length {len(s1)} and {len(s2)}:")
+        logger.info(f"  Time: {metrics['execution_time_ms']:.3f} ms")
+        logger.info(f"  LCS Length: {lcs_length(s1, s2)}")
     
-    print()
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O(m * n) - m and n are string lengths")
-    print("  Space: O(m * n) - standard")
-    print("        O(min(m, n)) - optimized")
-    print("\nKey Advantages:")
-    print("  - Efficient dynamic programming solution")
-    print("  - Can be space-optimized")
-    print("  - Handles sequences of any type")
-    print("  - Can find all LCS sequences")
-    print("\nKey Disadvantages:")
-    print("  - Quadratic time complexity")
-    print("  - Not suitable for very long sequences")
-    print("  - Standard version uses O(m*n) space")
-    print("\nWhen to Use:")
-    print("  - String similarity comparison")
-    print("  - DNA sequence alignment")
-    print("  - Version control (diff algorithms)")
-    print("  - Plagiarism detection")
-    print("  - Text comparison")
-    print("\nCommon Use Cases:")
-    print("  - Git diff algorithm")
-    print("  - DNA sequence alignment")
-    print("  - Spell checkers")
-    print("  - File comparison tools")
-    print("  - Bioinformatics")
-    print("\nVariations:")
-    print("  - Longest Common Substring (contiguous)")
-    print("  - Edit Distance (Levenshtein)")
-    print("  - Longest Increasing Subsequence")
-    print("=" * 70)
+    logger.info()
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  O(m * n) - m and n are string lengths")
+    logger.info("  Space: O(m * n) - standard")
+    logger.info("        O(min(m, n)) - optimized")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Efficient dynamic programming solution")
+    logger.info("  - Can be space-optimized")
+    logger.info("  - Handles sequences of any type")
+    logger.info("  - Can find all LCS sequences")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Quadratic time complexity")
+    logger.info("  - Not suitable for very long sequences")
+    logger.info("  - Standard version uses O(m*n) space")
+    logger.info("\nWhen to Use:")
+    logger.info("  - String similarity comparison")
+    logger.info("  - DNA sequence alignment")
+    logger.info("  - Version control (diff algorithms)")
+    logger.info("  - Plagiarism detection")
+    logger.info("  - Text comparison")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Git diff algorithm")
+    logger.info("  - DNA sequence alignment")
+    logger.info("  - Spell checkers")
+    logger.info("  - File comparison tools")
+    logger.info("  - Bioinformatics")
+    logger.info("\nVariations:")
+    logger.info("  - Longest Common Substring (contiguous)")
+    logger.info("  - Edit Distance (Levenshtein)")
+    logger.info("  - Longest Increasing Subsequence")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":
     main()
-

@@ -1,0 +1,12 @@
+{
+  "name": "quantum_chemistry",
+  "display_name": "Quantum Chemistry",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_81_quantum_applications",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

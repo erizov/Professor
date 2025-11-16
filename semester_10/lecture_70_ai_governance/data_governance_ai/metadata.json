@@ -1,0 +1,12 @@
+{
+  "name": "data_governance_ai",
+  "display_name": "Data Governance Ai",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_70_ai_governance",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

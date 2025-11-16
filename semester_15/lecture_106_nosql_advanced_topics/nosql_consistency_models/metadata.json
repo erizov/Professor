@@ -1,0 +1,12 @@
+{
+  "name": "nosql_consistency_models",
+  "display_name": "Nosql Consistency Models",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_106_nosql_advanced_topics",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

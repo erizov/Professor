@@ -1,0 +1,12 @@
+{
+  "name": "infrastructure_monitoring",
+  "display_name": "Infrastructure Monitoring",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_72_infrastructure_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

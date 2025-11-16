@@ -15,6 +15,8 @@ from typing import List, Optional
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 # Model
@@ -124,53 +126,53 @@ class UserView:
     
     def render(self) -> None:
         """Render the view."""
-        print("=" * 70)
-        print("USER MANAGEMENT VIEW")
-        print("=" * 70)
-        print()
+        logger.info("=" * 70)
+        logger.info("USER MANAGEMENT VIEW")
+        logger.info("=" * 70)
+        logger.info()
         
         # Display users
-        print(f"Total Users: {self.view_model.get_user_count()}")
+        logger.info(f"Total Users: {self.view_model.get_user_count()}")
         if self.view_model.users:
-            print("\nUsers List:")
+            logger.info("\nUsers List:")
             for user in self.view_model.users:
-                print(f"  {user}")
+                logger.info(f"  {user}")
         else:
-            print("\nNo users yet.")
-        print()
+            logger.info("\nNo users yet.")
+        logger.info()
         
         # Display selected user
         if self.view_model.selected_user:
-            print("Selected User:")
-            print(f"  Name: {self.view_model.get_selected_user_name()}")
-            print(f"  Email: {self.view_model.get_selected_user_email()}")
-            print()
+            logger.info("Selected User:")
+            logger.info(f"  Name: {self.view_model.get_selected_user_name()}")
+            logger.info(f"  Email: {self.view_model.get_selected_user_email()}")
+            logger.info()
         
         # Display errors
         if self.view_model.has_error():
-            print(f"Error: {self.view_model.error_message}")
-            print()
+            logger.info(f"Error: {self.view_model.error_message}")
+            logger.info()
     
     def show_create_user_form(self, name: str, email: str) -> None:
         """Show create user form (simulated)."""
-        print(f"Creating user: {name} ({email})")
+        logger.info(f"Creating user: {name} ({email})")
         success = self.view_model.create_user(name, email)
         if success:
-            print("User created successfully!")
+            logger.info("User created successfully!")
         else:
-            print(f"Failed: {self.view_model.error_message}")
-        print()
+            logger.info(f"Failed: {self.view_model.error_message}")
+        logger.info()
     
     def show_user_details(self, user_id: int) -> None:
         """Show user details (simulated)."""
         self.view_model.select_user(user_id)
         if self.view_model.selected_user:
-            print(f"User Details (ID: {user_id}):")
-            print(f"  Name: {self.view_model.get_selected_user_name()}")
-            print(f"  Email: {self.view_model.get_selected_user_email()}")
+            logger.info(f"User Details (ID: {user_id}):")
+            logger.info(f"  Name: {self.view_model.get_selected_user_name()}")
+            logger.info(f"  Email: {self.view_model.get_selected_user_email()}")
         else:
-            print(f"User {user_id} not found")
-        print()
+            logger.info(f"User {user_id} not found")
+        logger.info()
 
 
 # Example 2: Task MVVM
@@ -263,25 +265,25 @@ class TaskView:
     def render(self) -> None:
         """Render view."""
         tasks = self.view_model.get_filtered_tasks()
-        print(f"Tasks ({self.view_model.filter}):")
+        logger.info(f"Tasks ({self.view_model.filter}):")
         for task in tasks:
             status = "✓" if task.completed else "○"
-            print(f"  {status} [{task.task_id}] {task.title}")
-        print(f"Active: {self.view_model.get_active_count()}, "
+            logger.info(f"  {status} [{task.task_id}] {task.title}")
+        logger.info(f"Active: {self.view_model.get_active_count()}, "
               f"Completed: {self.view_model.get_completed_count()}")
-        print()
+        logger.info()
 
 
 def main() -> None:
     """Demonstration of MVVM Pattern."""
-    print("=" * 70)
-    print("MODEL-VIEW-VIEWMODEL (MVVM) PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("MODEL-VIEW-VIEWMODEL (MVVM) PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: User MVVM
-    print("Example 1: User Management MVVM")
-    print("-" * 70)
+    logger.info("Example 1: User Management MVVM")
+    logger.info("-" * 70)
     
     # Create MVVM components
     user_model = UserModel()
@@ -301,11 +303,11 @@ def main() -> None:
     
     # Select user
     user_view.show_user_details(1)
-    print()
+    logger.info()
     
     # Example 2: Task MVVM
-    print("Example 2: Task Management MVVM")
-    print("-" * 70)
+    logger.info("Example 2: Task Management MVVM")
+    logger.info("-" * 70)
     
     task_model = TaskModel()
     task_view_model = TaskViewModel(task_model)
@@ -322,17 +324,17 @@ def main() -> None:
     
     # Filter tasks
     task_view_model.set_filter("active")
-    print("Active tasks:")
+    logger.info("Active tasks:")
     task_view.render()
     
     task_view_model.set_filter("completed")
-    print("Completed tasks:")
+    logger.info("Completed tasks:")
     task_view.render()
-    print()
+    logger.info()
     
     # Example 3: Performance measurement
-    print("Example 3: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 3: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("MVVM")
     
@@ -347,36 +349,36 @@ def main() -> None:
         return view_model.get_user_count()
     
     result, metrics = timer.measure(mvvm_operations)
-    print(f"Time to create 10 users via MVVM: "
+    logger.info(f"Time to create 10 users via MVVM: "
           f"{metrics['execution_time_ms']:.3f} ms")
-    print()
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Separate the development of the graphical user interface")
-    print("  from the development of the business logic. The ViewModel")
-    print("  acts as a value converter and presentation logic.")
-    print("\nKey Advantages:")
-    print("  - Clear separation of concerns")
-    print("  - Testable ViewModel")
-    print("  - View is independent of Model")
-    print("  - Two-way data binding support")
-    print("\nKey Disadvantages:")
-    print("  - More complex than MVC")
-    print("  - Can be overkill for simple UIs")
-    print("  - ViewModel can become large")
-    print("\nWhen to Use:")
-    print("  - Rich client applications")
-    print("  - Need two-way data binding")
-    print("  - Complex presentation logic")
-    print("  - Want to test UI logic separately")
-    print("\nCommon Use Cases:")
-    print("  - WPF applications (.NET)")
-    print("  - Angular applications")
-    print("  - Vue.js applications")
-    print("  - Mobile applications (Xamarin)")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Separate the development of the graphical user interface")
+    logger.info("  from the development of the business logic. The ViewModel")
+    logger.info("  acts as a value converter and presentation logic.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Clear separation of concerns")
+    logger.info("  - Testable ViewModel")
+    logger.info("  - View is independent of Model")
+    logger.info("  - Two-way data binding support")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - More complex than MVC")
+    logger.info("  - Can be overkill for simple UIs")
+    logger.info("  - ViewModel can become large")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Rich client applications")
+    logger.info("  - Need two-way data binding")
+    logger.info("  - Complex presentation logic")
+    logger.info("  - Want to test UI logic separately")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - WPF applications (.NET)")
+    logger.info("  - Angular applications")
+    logger.info("  - Vue.js applications")
+    logger.info("  - Mobile applications (Xamarin)")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

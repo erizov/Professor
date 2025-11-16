@@ -1,4 +1,7 @@
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     public static int[] selectionSort(int[] arr) {
         int n = arr.length;
         
@@ -20,8 +23,8 @@ public class Algorithm {
     
     public static void main(String[] args) {
         int[] data = {64, 34, 25, 12, 22, 11, 90};
-        System.out.println("Selection Sort");
-        System.out.println("Complexity: O(n²) time, O(1) space");
+        logger.info("Selection Sort");
+        logger.info("Complexity: O(n²) time, O(1) space");
         selectionSort(data);
     }
 }

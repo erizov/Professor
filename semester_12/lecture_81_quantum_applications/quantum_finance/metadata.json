@@ -1,0 +1,12 @@
+{
+  "name": "quantum_finance",
+  "display_name": "Quantum Finance",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_81_quantum_applications",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

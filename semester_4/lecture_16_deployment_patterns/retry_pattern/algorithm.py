@@ -17,6 +17,8 @@ from enum import Enum
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class RetryStrategy(Enum):
@@ -79,10 +81,10 @@ class RetryHandler:
                 # Don't wait after last attempt
                 if attempt < self.config.max_attempts:
                     delay = self._calculate_delay(attempt)
-                    print(f"Attempt {attempt} failed: {e}. Retrying in {delay:.2f}s...")
+                    logger.info(f"Attempt {attempt} failed: {e}. Retrying in {delay:.2f}s...")
                     time.sleep(delay)
                 else:
-                    print(f"Attempt {attempt} failed: {e}. Max attempts reached.")
+                    logger.info(f"Attempt {attempt} failed: {e}. Max attempts reached.")
         
         raise last_exception
     
@@ -148,14 +150,14 @@ class UnreliableService:
 
 def main() -> None:
     """Demonstration of Retry Pattern."""
-    print("=" * 70)
-    print("RETRY PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("RETRY PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic Retry
-    print("Example 1: Basic Retry with Exponential Backoff")
-    print("-" * 70)
+    logger.info("Example 1: Basic Retry with Exponential Backoff")
+    logger.info("-" * 70)
     
     config = RetryConfig(
         max_attempts=5,
@@ -168,14 +170,14 @@ def main() -> None:
     
     try:
         result = handler.execute(service.call)
-        print(f"Final result: {result}")
+        logger.info(f"Final result: {result}")
     except Exception as e:
-        print(f"All retries failed: {e}")
-    print()
+        logger.info(f"All retries failed: {e}")
+    logger.info()
     
     # Example 2: Fixed Delay Retry
-    print("Example 2: Fixed Delay Retry")
-    print("-" * 70)
+    logger.info("Example 2: Fixed Delay Retry")
+    logger.info("-" * 70)
     
     config = RetryConfig(
         max_attempts=3,
@@ -188,14 +190,14 @@ def main() -> None:
     
     try:
         result = handler.execute(service.call)
-        print(f"Final result: {result}")
+        logger.info(f"Final result: {result}")
     except Exception as e:
-        print(f"All retries failed: {e}")
-    print()
+        logger.info(f"All retries failed: {e}")
+    logger.info()
     
     # Example 3: Retry Decorator
-    print("Example 3: Retry Decorator")
-    print("-" * 70)
+    logger.info("Example 3: Retry Decorator")
+    logger.info("-" * 70)
     
     @retry(config=RetryConfig(max_attempts=3, initial_delay=0.3))
     def unreliable_function():
@@ -205,14 +207,14 @@ def main() -> None:
     
     try:
         result = unreliable_function()
-        print(f"Result: {result}")
+        logger.info(f"Result: {result}")
     except Exception as e:
-        print(f"Failed: {e}")
-    print()
+        logger.info(f"Failed: {e}")
+    logger.info()
     
     # Example 4: Performance measurement
-    print("Example 4: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 4: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Retry Pattern")
     
@@ -231,41 +233,41 @@ def main() -> None:
         return success_count
     
     result, metrics = timer.measure(retry_operations)
-    print(f"Time to process 10 operations with retries: "
+    logger.info(f"Time to process 10 operations with retries: "
           f"{metrics['execution_time_ms']:.3f} ms")
-    print(f"Successful operations: {result}/10")
-    print()
+    logger.info(f"Successful operations: {result}/10")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Automatically retries failed operations with configurable")
-    print("  strategies like exponential backoff, maximum attempts, and jitter.")
-    print("\nKey Advantages:")
-    print("  - Handles transient failures")
-    print("  - Configurable retry strategies")
-    print("  - Exponential backoff reduces load")
-    print("  - Jitter prevents thundering herd")
-    print("\nKey Disadvantages:")
-    print("  - Can delay failure detection")
-    print("  - May increase load on failing service")
-    print("  - Configuration complexity")
-    print("\nWhen to Use:")
-    print("  - Network operations")
-    print("  - External service calls")
-    print("  - Transient failures expected")
-    print("  - Idempotent operations")
-    print("\nCommon Use Cases:")
-    print("  - HTTP requests")
-    print("  - Database connections")
-    print("  - API calls")
-    print("  - File operations")
-    print("\nRetry Strategies:")
-    print("  - Fixed: Constant delay between retries")
-    print("  - Linear: Delay increases linearly")
-    print("  - Exponential: Delay doubles each retry")
-    print("  - Jitter: Random variation to prevent synchronization")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Automatically retries failed operations with configurable")
+    logger.info("  strategies like exponential backoff, maximum attempts, and jitter.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Handles transient failures")
+    logger.info("  - Configurable retry strategies")
+    logger.info("  - Exponential backoff reduces load")
+    logger.info("  - Jitter prevents thundering herd")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Can delay failure detection")
+    logger.info("  - May increase load on failing service")
+    logger.info("  - Configuration complexity")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Network operations")
+    logger.info("  - External service calls")
+    logger.info("  - Transient failures expected")
+    logger.info("  - Idempotent operations")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - HTTP requests")
+    logger.info("  - Database connections")
+    logger.info("  - API calls")
+    logger.info("  - File operations")
+    logger.info("\nRetry Strategies:")
+    logger.info("  - Fixed: Constant delay between retries")
+    logger.info("  - Linear: Delay increases linearly")
+    logger.info("  - Exponential: Delay doubles each retry")
+    logger.info("  - Jitter: Random variation to prevent synchronization")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

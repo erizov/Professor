@@ -1,0 +1,12 @@
+{
+  "name": "gdpr_compliance",
+  "display_name": "Gdpr Compliance",
+  "category": "Advanced Graduate Level",
+  "semester": 16,
+  "lecture": "lecture_115_data_governance_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

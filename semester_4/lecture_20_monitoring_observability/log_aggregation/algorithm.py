@@ -19,6 +19,8 @@ from collections import deque
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class LogLevel(Enum):
@@ -279,14 +281,14 @@ class LogProducer:
 
 def main() -> None:
     """Demonstration of Log Aggregation Pattern."""
-    print("=" * 70)
-    print("LOG AGGREGATION PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("LOG AGGREGATION PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic Log Aggregation
-    print("Example 1: Basic Log Aggregation")
-    print("-" * 70)
+    logger.info("Example 1: Basic Log Aggregation")
+    logger.info("-" * 70)
     
     aggregator = LogAggregator()
     
@@ -303,46 +305,46 @@ def main() -> None:
     cache_service.error("Cache miss", {"key": "user:123"})
     api_service.error("Request failed", {"status_code": 500, "error": "Internal error"})
     
-    print(f"Total logs collected: {len(aggregator.logs)}")
-    print()
+    logger.info(f"Total logs collected: {len(aggregator.logs)}")
+    logger.info()
     
     # Example 2: Query Logs
-    print("Example 2: Query Logs by Service")
-    print("-" * 70)
+    logger.info("Example 2: Query Logs by Service")
+    logger.info("-" * 70)
     
     api_logs = aggregator.get_logs_by_service("api-service")
-    print(f"API service logs: {len(api_logs)}")
+    logger.info(f"API service logs: {len(api_logs)}")
     for log in api_logs:
-        print(f"  [{log.level.value}] {log.message}")
-    print()
+        logger.info(f"  [{log.level.value}] {log.message}")
+    logger.info()
     
     # Example 3: Query by Level
-    print("Example 3: Query Error Logs")
-    print("-" * 70)
+    logger.info("Example 3: Query Error Logs")
+    logger.info("-" * 70)
     
     error_logs = aggregator.get_error_logs()
-    print(f"Error/Critical logs: {len(error_logs)}")
+    logger.info(f"Error/Critical logs: {len(error_logs)}")
     for log in error_logs:
-        print(f"  [{log.service}] {log.message}")
-    print()
+        logger.info(f"  [{log.service}] {log.message}")
+    logger.info()
     
     # Example 4: Statistics
-    print("Example 4: Log Statistics")
-    print("-" * 70)
+    logger.info("Example 4: Log Statistics")
+    logger.info("-" * 70)
     
     stats = aggregator.get_statistics()
-    print(f"Total logs: {stats['total_logs']}")
-    print("By level:")
+    logger.info(f"Total logs: {stats['total_logs']}")
+    logger.info("By level:")
     for level, count in stats['by_level'].items():
-        print(f"  {level}: {count}")
-    print("By service:")
+        logger.info(f"  {level}: {count}")
+    logger.info("By service:")
     for service, count in stats['by_service'].items():
-        print(f"  {service}: {count}")
-    print()
+        logger.info(f"  {service}: {count}")
+    logger.info()
     
     # Example 5: Time-based Query
-    print("Example 5: Time-based Query")
-    print("-" * 70)
+    logger.info("Example 5: Time-based Query")
+    logger.info("-" * 70)
     
     # Add more logs with time gap
     import time
@@ -356,21 +358,21 @@ def main() -> None:
     end_time = datetime.now()
     
     recent_logs = aggregator.query_logs(start_time=start_time, end_time=end_time)
-    print(f"Logs between {start_time.isoformat()} and {end_time.isoformat()}: {len(recent_logs)}")
-    print()
+    logger.info(f"Logs between {start_time.isoformat()} and {end_time.isoformat()}: {len(recent_logs)}")
+    logger.info()
     
     # Example 6: Export Logs
-    print("Example 6: Export Logs")
-    print("-" * 70)
+    logger.info("Example 6: Export Logs")
+    logger.info("-" * 70)
     
     json_export = aggregator.export_logs("json")
-    print(f"JSON export length: {len(json_export)} characters")
-    print(f"First 200 chars: {json_export[:200]}...")
-    print()
+    logger.info(f"JSON export length: {len(json_export)} characters")
+    logger.info(f"First 200 chars: {json_export[:200]}...")
+    logger.info()
     
     # Example 7: Performance measurement
-    print("Example 7: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 7: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Log Aggregation")
     
@@ -384,48 +386,48 @@ def main() -> None:
         return len(agg.logs)
     
     result, metrics = timer.measure(log_operations)
-    print(f"Time to process 1000 logs: {metrics['execution_time_ms']:.3f} ms")
-    print()
+    logger.info(f"Time to process 1000 logs: {metrics['execution_time_ms']:.3f} ms")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Collects, centralizes, and stores logs from multiple sources")
-    print("  for analysis, monitoring, and troubleshooting.")
-    print("\nKey Advantages:")
-    print("  - Centralized log storage")
-    print("  - Easy search and analysis")
-    print("  - Correlation across services")
-    print("  - Historical data retention")
-    print("\nKey Disadvantages:")
-    print("  - Storage requirements")
-    print("  - Network overhead")
-    print("  - Potential single point of failure")
-    print("  - Performance impact on services")
-    print("\nWhen to Use:")
-    print("  - Distributed systems")
-    print("  - Microservices architecture")
-    print("  - Multi-server deployments")
-    print("  - When debugging across services")
-    print("\nCommon Use Cases:")
-    print("  - Application logging")
-    print("  - System monitoring")
-    print("  - Security auditing")
-    print("  - Performance analysis")
-    print("  - Troubleshooting")
-    print("\nPopular Tools:")
-    print("  - ELK Stack (Elasticsearch, Logstash, Kibana)")
-    print("  - Splunk")
-    print("  - Fluentd")
-    print("  - Loki (Grafana)")
-    print("  - CloudWatch Logs")
-    print("\nBest Practices:")
-    print("  - Use structured logging (JSON)")
-    print("  - Include correlation IDs")
-    print("  - Set appropriate log levels")
-    print("  - Implement log rotation")
-    print("  - Monitor log volume")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Collects, centralizes, and stores logs from multiple sources")
+    logger.info("  for analysis, monitoring, and troubleshooting.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Centralized log storage")
+    logger.info("  - Easy search and analysis")
+    logger.info("  - Correlation across services")
+    logger.info("  - Historical data retention")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Storage requirements")
+    logger.info("  - Network overhead")
+    logger.info("  - Potential single point of failure")
+    logger.info("  - Performance impact on services")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Distributed systems")
+    logger.info("  - Microservices architecture")
+    logger.info("  - Multi-server deployments")
+    logger.info("  - When debugging across services")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Application logging")
+    logger.info("  - System monitoring")
+    logger.info("  - Security auditing")
+    logger.info("  - Performance analysis")
+    logger.info("  - Troubleshooting")
+    logger.info("\nPopular Tools:")
+    logger.info("  - ELK Stack (Elasticsearch, Logstash, Kibana)")
+    logger.info("  - Splunk")
+    logger.info("  - Fluentd")
+    logger.info("  - Loki (Grafana)")
+    logger.info("  - CloudWatch Logs")
+    logger.info("\nBest Practices:")
+    logger.info("  - Use structured logging (JSON)")
+    logger.info("  - Include correlation IDs")
+    logger.info("  - Set appropriate log levels")
+    logger.info("  - Implement log rotation")
+    logger.info("  - Monitor log volume")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

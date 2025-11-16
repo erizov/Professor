@@ -13,6 +13,8 @@ import random
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class TreeNode:
@@ -188,61 +190,61 @@ class BST:
 
 def main() -> None:
     """Demonstration of Binary Search Tree."""
-    print("=" * 70)
-    print("BINARY SEARCH TREE DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("BINARY SEARCH TREE DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic operations
-    print("Example 1: Building a BST")
-    print("-" * 70)
+    logger.info("Example 1: Building a BST")
+    logger.info("-" * 70)
     
     bst = BST()
     values = [50, 30, 70, 20, 40, 60, 80]
     
-    print(f"Inserting values: {values}")
+    logger.info(f"Inserting values: {values}")
     for val in values:
         bst.insert(val)
     
-    print(f"Size: {bst.size()}")
-    print(f"Height: {bst.height()}")
-    print(f"Inorder (sorted): {bst.inorder()}")
-    print(f"Min value: {bst.find_min()}")
-    print(f"Max value: {bst.find_max()}")
-    print()
+    logger.info(f"Size: {bst.size()}")
+    logger.info(f"Height: {bst.height()}")
+    logger.info(f"Inorder (sorted): {bst.inorder()}")
+    logger.info(f"Min value: {bst.find_min()}")
+    logger.info(f"Max value: {bst.find_max()}")
+    logger.info()
     
     # Example 2: Search
-    print("Example 2: Searching")
-    print("-" * 70)
+    logger.info("Example 2: Searching")
+    logger.info("-" * 70)
     
     search_values = [40, 25, 70, 100]
     for val in search_values:
         found = bst.search(val)
-        print(f"Search {val}: {'Found' if found else 'Not found'}")
-    print()
+        logger.info(f"Search {val}: {'Found' if found else 'Not found'}")
+    logger.info()
     
     # Example 3: Deletion
-    print("Example 3: Deletion")
-    print("-" * 70)
+    logger.info("Example 3: Deletion")
+    logger.info("-" * 70)
     
-    print(f"Before deletion: {bst.inorder()}")
+    logger.info(f"Before deletion: {bst.inorder()}")
     
     # Delete leaf node
     bst.delete(20)
-    print(f"After deleting 20 (leaf): {bst.inorder()}")
+    logger.info(f"After deleting 20 (leaf): {bst.inorder()}")
     
     # Delete node with one child
     bst.delete(30)
-    print(f"After deleting 30 (one child): {bst.inorder()}")
+    logger.info(f"After deleting 30 (one child): {bst.inorder()}")
     
     # Delete node with two children
     bst.delete(50)
-    print(f"After deleting 50 (two children): {bst.inorder()}")
-    print()
+    logger.info(f"After deleting 50 (two children): {bst.inorder()}")
+    logger.info()
     
     # Example 4: Balanced vs Unbalanced
-    print("Example 4: Balanced vs Unbalanced Trees")
-    print("-" * 70)
+    logger.info("Example 4: Balanced vs Unbalanced Trees")
+    logger.info("-" * 70)
     
     # Balanced insertion
     balanced = BST()
@@ -250,9 +252,9 @@ def main() -> None:
     for val in balanced_vals:
         balanced.insert(val)
     
-    print(f"Balanced BST: {balanced_vals}")
-    print(f"  Height: {balanced.height()}")
-    print(f"  Sorted: {balanced.inorder()}")
+    logger.info(f"Balanced BST: {balanced_vals}")
+    logger.info(f"  Height: {balanced.height()}")
+    logger.info(f"  Sorted: {balanced.inorder()}")
     
     # Unbalanced insertion (sorted order)
     unbalanced = BST()
@@ -260,18 +262,18 @@ def main() -> None:
     for val in unbalanced_vals:
         unbalanced.insert(val)
     
-    print(f"\nUnbalanced BST: {unbalanced_vals}")
-    print(f"  Height: {unbalanced.height()} (becomes a linked list!)")
-    print(f"  Sorted: {unbalanced.inorder()}")
-    print()
+    logger.info(f"\nUnbalanced BST: {unbalanced_vals}")
+    logger.info(f"  Height: {unbalanced.height()} (becomes a linked list!)")
+    logger.info(f"  Sorted: {unbalanced.inorder()}")
+    logger.info()
     
     # Example 5: Performance measurement
-    print("Example 5: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 5: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("BST")
     
-    print("Random insertion (balanced):")
+    logger.info("Random insertion (balanced):")
     sizes = [100, 500, 1000]
     for size in sizes:
         bst_perf = BST()
@@ -284,39 +286,39 @@ def main() -> None:
         
         _, metrics = timer.measure(insert_all)
         
-        print(f"n={size:4d}: {metrics['execution_time_ms']:8.3f} ms, "
+        logger.info(f"n={size:4d}: {metrics['execution_time_ms']:8.3f} ms, "
               f"height={bst_perf.height()}")
     
-    print()
+    logger.info()
     timer.print_summary()
     
-    print("\n" + "=" * 70)
-    print("\nComplexity Summary:")
-    print("  Search:    O(h) - h is height")
-    print("  Insert:    O(h)")
-    print("  Delete:    O(h)")
-    print("  Min/Max:   O(h)")
-    print("  Traversal: O(n)")
-    print("\nBalanced tree: h = O(log n)")
-    print("Unbalanced tree: h = O(n) (worst case)")
-    print("\nKey Points:")
-    print("  + Fast search, insert, delete (if balanced)")
-    print("  + Inorder traversal gives sorted order")
-    print("  + Simple to implement")
-    print("  + Dynamic size")
-    print("  - Can become unbalanced")
-    print("  - No balancing guarantee")
-    print("  - Worst case O(n) operations")
-    print("\nWhen to use:")
-    print("  • Need sorted data")
-    print("  • Dynamic insertions/deletions")
-    print("  • Range queries")
-    print("  • Don't need guaranteed balance")
-    print("\nWhen NOT to use:")
-    print("  • Need guaranteed O(log n) (use AVL/Red-Black)")
-    print("  • Sorted input (becomes unbalanced)")
-    print("  • Need frequent rotations")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Search:    O(h) - h is height")
+    logger.info("  Insert:    O(h)")
+    logger.info("  Delete:    O(h)")
+    logger.info("  Min/Max:   O(h)")
+    logger.info("  Traversal: O(n)")
+    logger.info("\nBalanced tree: h = O(log n)")
+    logger.info("Unbalanced tree: h = O(n) (worst case)")
+    logger.info("\nKey Points:")
+    logger.info("  + Fast search, insert, delete (if balanced)")
+    logger.info("  + Inorder traversal gives sorted order")
+    logger.info("  + Simple to implement")
+    logger.info("  + Dynamic size")
+    logger.info("  - Can become unbalanced")
+    logger.info("  - No balancing guarantee")
+    logger.info("  - Worst case O(n) operations")
+    logger.info("\nWhen to use:")
+    logger.info("  • Need sorted data")
+    logger.info("  • Dynamic insertions/deletions")
+    logger.info("  • Range queries")
+    logger.info("  • Don't need guaranteed balance")
+    logger.info("\nWhen NOT to use:")
+    logger.info("  • Need guaranteed O(log n) (use AVL/Red-Black)")
+    logger.info("  • Sorted input (becomes unbalanced)")
+    logger.info("  • Need frequent rotations")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

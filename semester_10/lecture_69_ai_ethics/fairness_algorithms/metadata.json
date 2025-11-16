@@ -1,0 +1,12 @@
+{
+  "name": "fairness_algorithms",
+  "display_name": "Fairness Algorithms",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_69_ai_ethics",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

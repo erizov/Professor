@@ -15,6 +15,8 @@ import math
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 T = TypeVar('T')
@@ -84,17 +86,17 @@ def jump_search_visualized(arr: List[int], target: int) -> int:
     n = len(arr)
     step = int(math.sqrt(n))
     
-    print(f"Array: {arr}")
-    print(f"Target: {target}")
-    print(f"Jump size: {step} (√{n})")
-    print()
+    logger.info(f"Array: {arr}")
+    logger.info(f"Target: {target}")
+    logger.debug(f"Jump size: {step} (√{n})")
+    logger.info()
     
-    print("Jumping phase:")
+    logger.info("Jumping phase:")
     prev = 0
     jump_count = 0
     
     while arr[min(step, n) - 1] < target:
-        print(f"  Jump {jump_count + 1}: "
+        logger.info(f"  Jump {jump_count + 1}: "
               f"Check arr[{min(step, n) - 1}] = "
               f"{arr[min(step, n) - 1]} < {target}")
         prev = step
@@ -102,93 +104,93 @@ def jump_search_visualized(arr: List[int], target: int) -> int:
         jump_count += 1
         
         if prev >= n:
-            print(f"  Went beyond array. Target not found.")
+            logger.info(f"  Went beyond array. Target not found.")
             return -1
     
-    print(f"  Found block: indices [{prev}:{min(step, n)}]")
-    print()
+    logger.debug(f"  Found block: indices [{prev}:{min(step, n)}]")
+    logger.info()
     
-    print("Linear search phase:")
+    logger.info("Linear search phase:")
     while arr[prev] < target:
-        print(f"  Check arr[{prev}] = {arr[prev]} < {target}")
+        logger.info(f"  Check arr[{prev}] = {arr[prev]} < {target}")
         prev += 1
         
         if prev == min(step, n):
-            print(f"  Reached end of block. Target not found.")
+            logger.info(f"  Reached end of block. Target not found.")
             return -1
     
     if arr[prev] == target:
-        print(f"  Found! arr[{prev}] = {target}")
+        logger.info(f"  Found! arr[{prev}] = {target}")
         return prev
     else:
-        print(f"  arr[{prev}] = {arr[prev]} > {target}. Not found.")
+        logger.info(f"  arr[{prev}] = {arr[prev]} > {target}. Not found.")
         return -1
 
 
 def main() -> None:
     """Demonstration of Jump Search."""
-    print("=" * 70)
-    print("JUMP SEARCH DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("JUMP SEARCH DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic search - found
-    print("Example 1: Element Found")
-    print("-" * 70)
+    logger.info("Example 1: Element Found")
+    logger.info("-" * 70)
     data1 = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
     target1 = 13
     result1 = jump_search(data1, target1)
-    print(f"Array: {data1}")
-    print(f"Target: {target1}")
-    print(f"Result: Index {result1}")
+    logger.info(f"Array: {data1}")
+    logger.info(f"Target: {target1}")
+    logger.info(f"Result: Index {result1}")
     if result1 != -1:
-        print(f"Verification: arr[{result1}] = {data1[result1]}")
-    print()
+        logger.info(f"Verification: arr[{result1}] = {data1[result1]}")
+    logger.info()
     
     # Example 2: Element not found
-    print("Example 2: Element Not Found")
-    print("-" * 70)
+    logger.info("Example 2: Element Not Found")
+    logger.info("-" * 70)
     data2 = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
     target2 = 10
     result2 = jump_search(data2, target2)
-    print(f"Array: {data2}")
-    print(f"Target: {target2}")
-    print(f"Result: {'Not found' if result2 == -1 else f'Index {result2}'}")
-    print()
+    logger.info(f"Array: {data2}")
+    logger.info(f"Target: {target2}")
+    logger.info(f"Result: {'Not found' if result2 == -1 else f'Index {result2}'}")
+    logger.info()
     
     # Example 3: First element
-    print("Example 3: First Element")
-    print("-" * 70)
+    logger.info("Example 3: First Element")
+    logger.info("-" * 70)
     data3 = [10, 20, 30, 40, 50, 60, 70, 80, 90]
     target3 = 10
     result3 = jump_search(data3, target3)
-    print(f"Array: {data3}")
-    print(f"Target: {target3}")
-    print(f"Result: Index {result3}")
-    print()
+    logger.info(f"Array: {data3}")
+    logger.info(f"Target: {target3}")
+    logger.info(f"Result: Index {result3}")
+    logger.info()
     
     # Example 4: Last element
-    print("Example 4: Last Element")
-    print("-" * 70)
+    logger.info("Example 4: Last Element")
+    logger.info("-" * 70)
     data4 = [10, 20, 30, 40, 50, 60, 70, 80, 90]
     target4 = 90
     result4 = jump_search(data4, target4)
-    print(f"Array: {data4}")
-    print(f"Target: {target4}")
-    print(f"Result: Index {result4}")
-    print()
+    logger.info(f"Array: {data4}")
+    logger.info(f"Target: {target4}")
+    logger.info(f"Result: Index {result4}")
+    logger.info()
     
     # Example 5: Visualization
-    print("Example 5: Visualized Jump Search")
-    print("-" * 70)
+    logger.info("Example 5: Visualized Jump Search")
+    logger.info("-" * 70)
     data5 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     target5 = 11
     result5 = jump_search_visualized(data5, target5)
-    print()
+    logger.info()
     
     # Example 6: Performance comparison
-    print("Example 6: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 6: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Jump Search")
     
@@ -198,35 +200,35 @@ def main() -> None:
         target = random.choice(data)
         
         _, metrics = timer.measure(jump_search, data, target)
-        print(f"n={size:6d}: {metrics['execution_time_ms']:8.3f} ms")
+        logger.info(f"n={size:6d}: {metrics['execution_time_ms']:8.3f} ms")
     
-    print()
+    logger.info()
     timer.print_summary()
     
-    print("\n" + "=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O(√n)")
-    print("  Space: O(1)")
-    print("\nKey Points:")
-    print("  + Better than linear search O(n)")
-    print("  + Simpler than binary search")
-    print("  + Works well on sorted arrays")
-    print("  + Good for systems with expensive comparisons")
-    print("  - Requires sorted array")
-    print("  - Slower than binary search O(log n)")
-    print("  - Jump size affects performance")
-    print("\nComparison with other searches:")
-    print("  Linear Search:  O(n)")
-    print("  Jump Search:    O(√n)")
-    print("  Binary Search:  O(log n)")
-    print("\nWhen to use:")
-    print("  • Sorted array")
-    print("  • Middle ground between linear and binary")
-    print("  • Backward jumping not possible (tape storage)")
-    print("\nWhen NOT to use:")
-    print("  • Unsorted array")
-    print("  • Need fastest possible search (use binary)")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  O(√n)")
+    logger.info("  Space: O(1)")
+    logger.info("\nKey Points:")
+    logger.info("  + Better than linear search O(n)")
+    logger.info("  + Simpler than binary search")
+    logger.info("  + Works well on sorted arrays")
+    logger.info("  + Good for systems with expensive comparisons")
+    logger.info("  - Requires sorted array")
+    logger.info("  - Slower than binary search O(log n)")
+    logger.info("  - Jump size affects performance")
+    logger.info("\nComparison with other searches:")
+    logger.info("  Linear Search:  O(n)")
+    logger.info("  Jump Search:    O(√n)")
+    logger.info("  Binary Search:  O(log n)")
+    logger.info("\nWhen to use:")
+    logger.info("  • Sorted array")
+    logger.info("  • Middle ground between linear and binary")
+    logger.info("  • Backward jumping not possible (tape storage)")
+    logger.info("\nWhen NOT to use:")
+    logger.info("  • Unsorted array")
+    logger.info("  • Need fastest possible search (use binary)")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

@@ -16,6 +16,8 @@ from dataclasses import dataclass
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class PaymentGateway(ABC):
@@ -114,28 +116,28 @@ class DatabaseStub:
 
 def main() -> None:
     """Demonstration of Mocking Pattern."""
-    print("=" * 70)
-    print("MOCKING PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("MOCKING PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Manual Mock
-    print("Example 1: Manual Mock Object")
-    print("-" * 70)
+    logger.info("Example 1: Manual Mock Object")
+    logger.info("-" * 70)
     
     mock_gateway = MockPaymentGateway()
     order_service = OrderService(mock_gateway)
     
     result = order_service.place_order(100.0, "1234-5678-9012-3456")
     
-    print(f"Order placed: {result}")
-    print(f"Payment gateway called: {mock_gateway.call_count} times")
-    print(f"Last amount: ${mock_gateway.last_amount}")
-    print()
+    logger.info(f"Order placed: {result}")
+    logger.info(f"Payment gateway called: {mock_gateway.call_count} times")
+    logger.info(f"Last amount: ${mock_gateway.last_amount}")
+    logger.info()
     
     # Example 2: Mock with unittest.mock
-    print("Example 2: Using unittest.mock")
-    print("-" * 70)
+    logger.info("Example 2: Using unittest.mock")
+    logger.info("-" * 70)
     
     mock_email = Mock(spec=EmailService)
     mock_email.send_email.return_value = True
@@ -143,60 +145,60 @@ def main() -> None:
     notification_service = NotificationService(mock_email)
     result = notification_service.notify_user("user@example.com", "Test message")
     
-    print(f"Notification sent: {result}")
-    print(f"Email service called: {mock_email.send_email.called}")
+    logger.info(f"Notification sent: {result}")
+    logger.info(f"Email service called: {mock_email.send_email.called}")
     mock_email.send_email.assert_called_once_with(
         to="user@example.com",
         subject="Notification",
         body="Test message"
     )
-    print("Mock assertions passed")
-    print()
+    logger.info("Mock assertions passed")
+    logger.info()
     
     # Example 3: Mock with patch
-    print("Example 3: Using patch decorator")
-    print("-" * 70)
+    logger.info("Example 3: Using patch decorator")
+    logger.info("-" * 70)
     
     with patch('builtins.print') as mock_print:
-        print("This won't actually print")
+        logger.info("This won't actually print")
         mock_print.assert_called_once_with("This won't actually print")
     
-    print("Patch test completed")
-    print()
+    logger.info("Patch test completed")
+    logger.info()
     
     # Example 4: Stub implementation
-    print("Example 4: Stub Implementation")
-    print("-" * 70)
+    logger.info("Example 4: Stub Implementation")
+    logger.info("-" * 70)
     
     db_stub = DatabaseStub()
     db_stub.save("user:123", {"name": "Alice", "email": "alice@example.com"})
     
     user = db_stub.get("user:123")
-    print(f"Retrieved user: {user}")
+    logger.info(f"Retrieved user: {user}")
     
     deleted = db_stub.delete("user:123")
-    print(f"User deleted: {deleted}")
-    print(f"User still exists: {db_stub.get('user:123') is not None}")
-    print()
+    logger.info(f"User deleted: {deleted}")
+    logger.info(f"User still exists: {db_stub.get('user:123') is not None}")
+    logger.info()
     
     # Example 5: Mock with side effects
-    print("Example 5: Mock with Side Effects")
-    print("-" * 70)
+    logger.info("Example 5: Mock with Side Effects")
+    logger.info("-" * 70)
     
     mock_service = Mock()
     mock_service.process.side_effect = [True, False, Exception("Error")]
     
-    print(f"First call: {mock_service.process()}")
-    print(f"Second call: {mock_service.process()}")
+    logger.info(f"First call: {mock_service.process()}")
+    logger.info(f"Second call: {mock_service.process()}")
     try:
         mock_service.process()
     except Exception as e:
-        print(f"Third call raised: {e}")
-    print()
+        logger.info(f"Third call raised: {e}")
+    logger.info()
     
     # Example 6: Performance measurement
-    print("Example 6: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 6: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Mocking")
     
@@ -210,41 +212,41 @@ def main() -> None:
         return mock_gateway.call_count
     
     result, metrics = timer.measure(mock_operations)
-    print(f"Time to process 100 orders with mock: {metrics['execution_time_ms']:.3f} ms")
-    print(f"Mock calls: {result}")
-    print()
+    logger.info(f"Time to process 100 orders with mock: {metrics['execution_time_ms']:.3f} ms")
+    logger.info(f"Mock calls: {result}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Creates mock objects that simulate the behavior of real")
-    print("  objects for testing. Allows testing in isolation.")
-    print("\nKey Advantages:")
-    print("  - Fast test execution")
-    print("  - Isolated testing")
-    print("  - No external dependencies")
-    print("  - Predictable behavior")
-    print("\nKey Disadvantages:")
-    print("  - Mocks may not match real behavior")
-    print("  - Maintenance overhead")
-    print("  - Can hide integration issues")
-    print("  - May make tests less realistic")
-    print("\nWhen to Use:")
-    print("  - External service dependencies")
-    print("  - Slow operations")
-    print("  - Unpredictable behavior")
-    print("  - Isolated unit testing")
-    print("\nCommon Use Cases:")
-    print("  - API mocking")
-    print("  - Database mocking")
-    print("  - File system mocking")
-    print("  - Network mocking")
-    print("\nMock Types:")
-    print("  - Mock: Generic mock object")
-    print("  - Stub: Returns predefined values")
-    print("  - Spy: Wraps real object, records calls")
-    print("  - Fake: Working implementation for testing")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Creates mock objects that simulate the behavior of real")
+    logger.info("  objects for testing. Allows testing in isolation.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Fast test execution")
+    logger.info("  - Isolated testing")
+    logger.info("  - No external dependencies")
+    logger.info("  - Predictable behavior")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Mocks may not match real behavior")
+    logger.info("  - Maintenance overhead")
+    logger.info("  - Can hide integration issues")
+    logger.info("  - May make tests less realistic")
+    logger.info("\nWhen to Use:")
+    logger.info("  - External service dependencies")
+    logger.info("  - Slow operations")
+    logger.info("  - Unpredictable behavior")
+    logger.info("  - Isolated unit testing")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - API mocking")
+    logger.info("  - Database mocking")
+    logger.info("  - File system mocking")
+    logger.info("  - Network mocking")
+    logger.info("\nMock Types:")
+    logger.info("  - Mock: Generic mock object")
+    logger.info("  - Stub: Returns predefined values")
+    logger.info("  - Spy: Wraps real object, records calls")
+    logger.info("  - Fake: Working implementation for testing")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

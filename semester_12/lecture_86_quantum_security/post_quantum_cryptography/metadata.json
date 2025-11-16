@@ -1,0 +1,12 @@
+{
+  "name": "post_quantum_cryptography",
+  "display_name": "Post Quantum Cryptography",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_86_quantum_security",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

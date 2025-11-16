@@ -1,0 +1,12 @@
+{
+  "name": "metrics_collection",
+  "display_name": "Metrics Collection",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_62_observability_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

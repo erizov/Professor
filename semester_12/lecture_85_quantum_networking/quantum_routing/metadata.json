@@ -1,0 +1,12 @@
+{
+  "name": "quantum_routing",
+  "display_name": "Quantum Routing",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_85_quantum_networking",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

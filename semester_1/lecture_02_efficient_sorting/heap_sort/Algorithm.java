@@ -11,7 +11,10 @@ import java.util.Random;
  * Stable: No
  * Adaptive: No
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     /**
      * Heapify subtree rooted at index i.
@@ -79,21 +82,21 @@ public class Algorithm {
      */
     public static int[] heapSortVisualized(int[] arr) {
         int n = arr.length;
-        System.out.println("Initial array: " + Arrays.toString(arr));
-        System.out.println();
+        logger.info("Initial array: " + Arrays.toString(arr));
+        logger.info();
         
         // Build max heap
-        System.out.println("Building max heap:");
+        logger.info("Building max heap:");
         for (int i = n / 2 - 1; i >= 0; i--) {
             heapify(arr, n, i);
-            System.out.println("  After heapifying at index " + i + 
+            logger.info("  After heapifying at index " + i + 
                              ": " + Arrays.toString(arr));
         }
-        System.out.println("Max heap built: " + Arrays.toString(arr));
-        System.out.println();
+        logger.info("Max heap built: " + Arrays.toString(arr));
+        logger.info();
         
         // Extract elements
-        System.out.println("Extracting elements:");
+        logger.info("Extracting elements:");
         for (int i = n - 1; i > 0; i--) {
             int temp = arr[0];
             arr[0] = arr[i];
@@ -103,18 +106,18 @@ public class Algorithm {
                            " to position " + i + ": ");
             System.out.print(Arrays.toString(
                 Arrays.copyOfRange(arr, 0, i)));
-            System.out.println(" | [" + Arrays.toString(
+            logger.info(" | [" + Arrays.toString(
                 Arrays.copyOfRange(arr, i, n)) + "]");
             
             heapify(arr, i, 0);
             System.out.print("  After heapify: ");
             System.out.print(Arrays.toString(
                 Arrays.copyOfRange(arr, 0, i)));
-            System.out.println(" | [" + Arrays.toString(
+            logger.info(" | [" + Arrays.toString(
                 Arrays.copyOfRange(arr, i, n)) + "]");
         }
         
-        System.out.println("\nFinal sorted array: " + 
+        logger.info("\nFinal sorted array: " + 
                          Arrays.toString(arr));
         return arr;
     }
@@ -171,49 +174,49 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("HEAP SORT DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("HEAP SORT DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Basic sorting
-        System.out.println("Example 1: Basic Integer Sorting");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Basic Integer Sorting");
+        logger.info("-".repeat(70));
         int[] data1 = {64, 34, 25, 12, 22, 11, 90};
-        System.out.println("Original: " + Arrays.toString(data1));
+        logger.info("Original: " + Arrays.toString(data1));
         int[] result1 = heapSort(data1.clone());
-        System.out.println("Sorted:   " + Arrays.toString(result1));
-        System.out.println();
+        logger.info("Sorted:   " + Arrays.toString(result1));
+        logger.info();
         
         // Example 2: Already sorted
-        System.out.println("Example 2: Already Sorted Array");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Already Sorted Array");
+        logger.info("-".repeat(70));
         int[] data2 = {1, 2, 3, 4, 5, 6, 7};
-        System.out.println("Original: " + Arrays.toString(data2));
+        logger.info("Original: " + Arrays.toString(data2));
         int[] result2 = heapSort(data2.clone());
-        System.out.println("Sorted:   " + Arrays.toString(result2));
-        System.out.println("Note: Still O(n log n) - not adaptive");
-        System.out.println();
+        logger.info("Sorted:   " + Arrays.toString(result2));
+        logger.info("Note: Still O(n log n) - not adaptive");
+        logger.info();
         
         // Example 3: Descending
-        System.out.println("Example 3: Descending Order");
-        System.out.println("-".repeat(70));
+        logger.info("Example 3: Descending Order");
+        logger.info("-".repeat(70));
         int[] data3 = {64, 34, 25, 12, 22, 11, 90};
-        System.out.println("Original: " + Arrays.toString(data3));
+        logger.info("Original: " + Arrays.toString(data3));
         int[] result3 = heapSortDescending(data3.clone());
-        System.out.println("Sorted (desc): " + Arrays.toString(result3));
-        System.out.println();
+        logger.info("Sorted (desc): " + Arrays.toString(result3));
+        logger.info();
         
         // Example 4: Visualization
-        System.out.println("Example 4: Visualized Heap Sort Process");
-        System.out.println("-".repeat(70));
+        logger.info("Example 4: Visualized Heap Sort Process");
+        logger.info("-".repeat(70));
         int[] data4 = {12, 11, 13, 5, 6, 7};
         heapSortVisualized(data4);
-        System.out.println();
+        logger.info();
         
         // Example 5: Performance
-        System.out.println("Example 5: Performance Measurement");
-        System.out.println("-".repeat(70));
+        logger.info("Example 5: Performance Measurement");
+        logger.info("-".repeat(70));
         
         Random rand = new Random(42);
         
@@ -225,7 +228,7 @@ public class Algorithm {
         long t1 = System.nanoTime();
         heapSort(small);
         long t2 = System.nanoTime();
-        System.out.println("Small (100 elements):");
+        logger.info("Small (100 elements):");
         System.out.printf("  Time: %.3f ms%n", (t2-t1)/1_000_000.0);
         
         // Medium
@@ -236,23 +239,23 @@ public class Algorithm {
         t1 = System.nanoTime();
         heapSort(medium);
         t2 = System.nanoTime();
-        System.out.println("\nMedium (1,000 elements):");
+        logger.info("\nMedium (1,000 elements):");
         System.out.printf("  Time: %.3f ms%n", (t2-t1)/1_000_000.0);
         
         long endTime = System.nanoTime();
         double duration = (endTime - startTime) / 1_000_000.0;
         
-        System.out.println();
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Time:  O(n log n) - all cases");
-        System.out.println("  Space: O(1) - in-place");
-        System.out.println("  Stable: No");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Guaranteed O(n log n)");
-        System.out.println("  - In-place sorting");
-        System.out.println("  - No worst-case quadratic time");
-        System.out.println("=".repeat(70));
+        logger.info();
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Time:  O(n log n) - all cases");
+        logger.info("  Space: O(1) - in-place");
+        logger.info("  Stable: No");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Guaranteed O(n log n)");
+        logger.info("  - In-place sorting");
+        logger.info("  - No worst-case quadratic time");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal execution time: %.3f ms%n", duration);
     }
 }

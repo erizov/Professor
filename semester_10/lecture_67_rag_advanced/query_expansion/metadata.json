@@ -1,0 +1,12 @@
+{
+  "name": "query_expansion",
+  "display_name": "Query Expansion",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_67_rag_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -5,14 +5,17 @@
  * Time Complexity: O(1)
  * Space Complexity: O(n)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     public static void main(String[] args) {
-        System.out.println("==".repeat(35));
-        System.out.println("Collision Resolution: Open Addressing");
-        System.out.println("==".repeat(35));
-        System.out.println("Category: Data Structure");
-        System.out.println("Time: O(1)");
-        System.out.println("Space: O(n)");
-        System.out.println("==".repeat(35));
+        logger.info("==".repeat(35));
+        logger.info("Collision Resolution: Open Addressing");
+        logger.info("==".repeat(35));
+        logger.info("Category: Data Structure");
+        logger.info("Time: O(1)");
+        logger.info("Space: O(n)");
+        logger.info("==".repeat(35));
     }
 }

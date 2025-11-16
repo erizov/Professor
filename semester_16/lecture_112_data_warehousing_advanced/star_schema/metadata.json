@@ -1,0 +1,12 @@
+{
+  "name": "star_schema",
+  "display_name": "Star Schema",
+  "category": "Advanced Graduate Level",
+  "semester": 16,
+  "lecture": "lecture_112_data_warehousing_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

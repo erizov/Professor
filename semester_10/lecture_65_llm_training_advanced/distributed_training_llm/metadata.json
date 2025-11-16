@@ -1,0 +1,12 @@
+{
+  "name": "distributed_training_llm",
+  "display_name": "Distributed Training Llm",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_65_llm_training_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

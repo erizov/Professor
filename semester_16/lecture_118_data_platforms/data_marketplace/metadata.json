@@ -1,0 +1,12 @@
+{
+  "name": "data_marketplace",
+  "display_name": "Data Marketplace",
+  "category": "Advanced Graduate Level",
+  "semester": 16,
+  "lecture": "lecture_118_data_platforms",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

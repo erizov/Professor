@@ -11,6 +11,8 @@ from pathlib import Path
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 def database_security():
@@ -20,19 +22,19 @@ def database_security():
     Time Complexity: Varies
     Space Complexity: Varies
     """
-    print("=" * 70)
-    print("DATABASE SECURITY DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("DATABASE SECURITY DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
-    print("Implementation in progress...")
-    print()
+    logger.info("Implementation in progress...")
+    logger.info()
     
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  Varies")
-    print("  Space: Varies")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  Varies")
+    logger.info("  Space: Varies")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

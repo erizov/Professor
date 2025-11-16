@@ -1,0 +1,12 @@
+{
+  "name": "support_analytics",
+  "display_name": "Support Analytics",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_95_support_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

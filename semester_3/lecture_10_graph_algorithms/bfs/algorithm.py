@@ -14,6 +14,8 @@ from typing import List, Set, Dict, Optional
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class Graph:
@@ -187,14 +189,14 @@ class Graph:
 
 def main() -> None:
     """Demonstration of BFS."""
-    print("=" * 70)
-    print("BREADTH-FIRST SEARCH (BFS) DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("BREADTH-FIRST SEARCH (BFS) DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic BFS
-    print("Example 1: Basic BFS Traversal")
-    print("-" * 70)
+    logger.info("Example 1: Basic BFS Traversal")
+    logger.info("-" * 70)
     
     g1 = Graph(directed=False)
     edges = [(0, 1), (0, 2), (1, 3), (1, 4), (2, 5), (2, 6)]
@@ -202,14 +204,14 @@ def main() -> None:
     for u, v in edges:
         g1.add_edge(u, v)
     
-    print("Graph edges:", edges)
-    print(f"BFS from node 0: {g1.bfs(0)}")
-    print("Note: BFS visits level by level")
-    print()
+    logger.info("Graph edges:", edges)
+    logger.info(f"BFS from node 0: {g1.bfs(0)}")
+    logger.info("Note: BFS visits level by level")
+    logger.info()
     
     # Example 2: Shortest path
-    print("Example 2: Finding Shortest Path")
-    print("-" * 70)
+    logger.info("Example 2: Finding Shortest Path")
+    logger.info("-" * 70)
     
     g2 = Graph(directed=False)
     g2.add_edge(0, 1)
@@ -221,17 +223,17 @@ def main() -> None:
     
     path = g2.shortest_path(0, 4)
     dist = g2.shortest_distance(0, 4)
-    print(f"Shortest path from 0 to 4: {path}")
-    print(f"Distance: {dist} edges")
+    logger.info(f"Shortest path from 0 to 4: {path}")
+    logger.info(f"Distance: {dist} edges")
     
     # Alternative path
     alt_path = g2.shortest_path(0, 3)
-    print(f"Shortest path from 0 to 3: {alt_path}")
-    print()
+    logger.info(f"Shortest path from 0 to 3: {alt_path}")
+    logger.info()
     
     # Example 3: All distances from source
-    print("Example 3: Distances to All Nodes")
-    print("-" * 70)
+    logger.info("Example 3: Distances to All Nodes")
+    logger.info("-" * 70)
     
     g3 = Graph(directed=False)
     g3.add_edge(0, 1)
@@ -242,14 +244,14 @@ def main() -> None:
     g3.add_edge(4, 5)
     
     distances = g3.all_paths_distance(0)
-    print("Distances from node 0:")
+    logger.info("Distances from node 0:")
     for node, dist in sorted(distances.items()):
-        print(f"  Node {node}: distance = {dist}")
-    print()
+        logger.info(f"  Node {node}: distance = {dist}")
+    logger.info()
     
     # Example 4: Bipartite check
-    print("Example 4: Bipartite Graph Detection")
-    print("-" * 70)
+    logger.info("Example 4: Bipartite Graph Detection")
+    logger.info("-" * 70)
     
     # Bipartite graph (alternating colors possible)
     g4_bi = Graph(directed=False)
@@ -258,8 +260,8 @@ def main() -> None:
     g4_bi.add_edge(1, 2)
     g4_bi.add_edge(3, 2)
     
-    print("Graph 1: [(0,1), (0,3), (1,2), (3,2)]")
-    print(f"Is bipartite: {g4_bi.is_bipartite()}")
+    logger.info("Graph 1: [(0,1), (0,3), (1,2), (3,2)]")
+    logger.info(f"Is bipartite: {g4_bi.is_bipartite()}")
     
     # Not bipartite (odd cycle)
     g4_not = Graph(directed=False)
@@ -267,13 +269,13 @@ def main() -> None:
     g4_not.add_edge(1, 2)
     g4_not.add_edge(2, 0)  # Triangle
     
-    print("\nGraph 2: [(0,1), (1,2), (2,0)] - Triangle")
-    print(f"Is bipartite: {g4_not.is_bipartite()}")
-    print()
+    logger.info("\nGraph 2: [(0,1), (1,2), (2,0)] - Triangle")
+    logger.info(f"Is bipartite: {g4_not.is_bipartite()}")
+    logger.info()
     
     # Example 5: BFS on directed graph
-    print("Example 5: BFS on Directed Graph")
-    print("-" * 70)
+    logger.info("Example 5: BFS on Directed Graph")
+    logger.info("-" * 70)
     
     g5 = Graph(directed=True)
     g5.add_edge(0, 1)
@@ -282,13 +284,13 @@ def main() -> None:
     g5.add_edge(2, 3)
     g5.add_edge(1, 3)
     
-    print("Directed edges: 0→1, 0→2, 1→2, 2→3, 1→3")
-    print(f"BFS from 0: {g5.bfs(0)}")
-    print()
+    logger.info("Directed edges: 0→1, 0→2, 1→2, 2→3, 1→3")
+    logger.info(f"BFS from 0: {g5.bfs(0)}")
+    logger.info()
     
     # Example 6: Level-order traversal
-    print("Example 6: Level-Order Grouping")
-    print("-" * 70)
+    logger.info("Example 6: Level-Order Grouping")
+    logger.info("-" * 70)
     
     g6 = Graph(directed=False)
     g6.add_edge(0, 1)
@@ -303,14 +305,14 @@ def main() -> None:
     for node, dist in distances.items():
         levels[dist].append(node)
     
-    print("Nodes grouped by level:")
+    logger.info("Nodes grouped by level:")
     for level in sorted(levels.keys()):
-        print(f"  Level {level}: {levels[level]}")
-    print()
+        logger.info(f"  Level {level}: {levels[level]}")
+    logger.info()
     
     # Example 7: Performance measurement
-    print("Example 7: Performance on Different Graph Sizes")
-    print("-" * 70)
+    logger.info("Example 7: Performance on Different Graph Sizes")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("BFS")
     
@@ -321,37 +323,36 @@ def main() -> None:
             g_large.add_edge(i, i + 1)
         
         _, metrics = timer.measure(g_large.bfs, 0)
-        print(f"Graph with {n} nodes:")
-        print(f"  Time: {metrics['execution_time_ms']:.3f} ms")
+        logger.info(f"Graph with {n} nodes:")
+        logger.info(f"  Time: {metrics['execution_time_ms']:.3f} ms")
     
-    print()
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O(V + E) - V vertices, E edges")
-    print("  Space: O(V) - queue storage")
-    print("\nKey Advantages:")
-    print("  - Finds shortest path (unweighted)")
-    print("  - Level-order traversal")
-    print("  - Good for nearby nodes")
-    print("  - Iterative (no stack overflow)")
-    print("\nKey Disadvantages:")
-    print("  - More memory than DFS")
-    print("  - Not suitable for deep graphs")
-    print("  - Queue operations overhead")
-    print("\nBFS vs DFS:")
-    print("  - BFS: Shortest path, level-order")
-    print("  - DFS: Memory efficient, path exists")
-    print("  - Choose based on problem needs")
-    print("\nCommon Use Cases:")
-    print("  - Shortest path (unweighted)")
-    print("  - Level-order traversal")
-    print("  - Bipartite checking")
-    print("  - Finding connected components")
-    print("  - Web crawling")
-    print("  - Social network analysis")
-    print("=" * 70)
+    logger.info()
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  O(V + E) - V vertices, E edges")
+    logger.info("  Space: O(V) - queue storage")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Finds shortest path (unweighted)")
+    logger.info("  - Level-order traversal")
+    logger.info("  - Good for nearby nodes")
+    logger.info("  - Iterative (no stack overflow)")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - More memory than DFS")
+    logger.info("  - Not suitable for deep graphs")
+    logger.info("  - Queue operations overhead")
+    logger.info("\nBFS vs DFS:")
+    logger.info("  - BFS: Shortest path, level-order")
+    logger.info("  - DFS: Memory efficient, path exists")
+    logger.info("  - Choose based on problem needs")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Shortest path (unweighted)")
+    logger.info("  - Level-order traversal")
+    logger.info("  - Bipartite checking")
+    logger.info("  - Finding connected components")
+    logger.info("  - Web crawling")
+    logger.info("  - Social network analysis")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":
     main()
-

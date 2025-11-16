@@ -13,6 +13,8 @@ from typing import Dict
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 def fibonacci_naive(n: int) -> int:
@@ -202,130 +204,129 @@ def fibonacci_sequence(n: int, method: str = 'optimized') -> list:
 
 def main() -> None:
     """Demonstration of Fibonacci implementations."""
-    print("=" * 70)
-    print("FIBONACCI SEQUENCE - DYNAMIC PROGRAMMING DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("FIBONACCI SEQUENCE - DYNAMIC PROGRAMMING DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Compare different approaches
-    print("Example 1: Comparing Different Approaches")
-    print("-" * 70)
+    logger.debug("Example 1: Comparing Different Approaches")
+    logger.info("-" * 70)
     
     n = 10
-    print(f"Computing Fibonacci({n}):")
+    logger.info(f"Computing Fibonacci({n}):")
     
-    print(f"  Naive recursive: {fibonacci_naive(n)}")
-    print(f"  Memoized: {fibonacci_memoized(n)}")
-    print(f"  LRU Cache: {fibonacci_lru_cache(n)}")
-    print(f"  Bottom-up DP: {fibonacci_bottom_up(n)}")
-    print(f"  Optimized (O(1) space): {fibonacci_optimized(n)}")
-    print(f"  Matrix exponentiation: {fibonacci_matrix(n)}")
-    print()
+    logger.info(f"  Naive recursive: {fibonacci_naive(n)}")
+    logger.info(f"  Memoized: {fibonacci_memoized(n)}")
+    logger.info(f"  LRU Cache: {fibonacci_lru_cache(n)}")
+    logger.info(f"  Bottom-up DP: {fibonacci_bottom_up(n)}")
+    logger.info(f"  Optimized (O(1) space): {fibonacci_optimized(n)}")
+    logger.info(f"  Matrix exponentiation: {fibonacci_matrix(n)}")
+    logger.info()
     
     # Example 2: Performance comparison
-    print("Example 2: Performance Comparison")
-    print("-" * 70)
+    logger.info("Example 2: Performance Comparison")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Fibonacci")
     
     test_values = [20, 30, 35]
     
     for n_val in test_values:
-        print(f"\nComputing Fibonacci({n_val}):")
+        logger.info(f"\nComputing Fibonacci({n_val}):")
         
         # Naive (only for small n)
         if n_val <= 30:
             _, metrics_naive = timer.measure(fibonacci_naive, n_val)
-            print(f"  Naive: {metrics_naive['execution_time_ms']:.3f} ms")
+            logger.info(f"  Naive: {metrics_naive['execution_time_ms']:.3f} ms")
         
         # Memoized
         fibonacci_memoized.cache_clear() if hasattr(fibonacci_memoized, 'cache_clear') else None
         _, metrics_memo = timer.measure(fibonacci_memoized, n_val)
-        print(f"  Memoized: {metrics_memo['execution_time_ms']:.3f} ms")
+        logger.info(f"  Memoized: {metrics_memo['execution_time_ms']:.3f} ms")
         
         # Bottom-up
         _, metrics_bottom = timer.measure(fibonacci_bottom_up, n_val)
-        print(f"  Bottom-up: {metrics_bottom['execution_time_ms']:.3f} ms")
+        logger.info(f"  Bottom-up: {metrics_bottom['execution_time_ms']:.3f} ms")
         
         # Optimized
         _, metrics_opt = timer.measure(fibonacci_optimized, n_val)
-        print(f"  Optimized: {metrics_opt['execution_time_ms']:.3f} ms")
+        logger.info(f"  Optimized: {metrics_opt['execution_time_ms']:.3f} ms")
         
         # Matrix (for larger n)
         if n_val >= 30:
             _, metrics_matrix = timer.measure(fibonacci_matrix, n_val)
-            print(f"  Matrix: {metrics_matrix['execution_time_ms']:.3f} ms")
-    print()
+            logger.info(f"  Matrix: {metrics_matrix['execution_time_ms']:.3f} ms")
+    logger.info()
     
     # Example 3: Generate sequence
-    print("Example 3: Generating Fibonacci Sequence")
-    print("-" * 70)
+    logger.info("Example 3: Generating Fibonacci Sequence")
+    logger.info("-" * 70)
     
     sequence = fibonacci_sequence(15)
-    print(f"First 15 Fibonacci numbers:")
-    print(f"  {sequence}")
-    print()
+    logger.info(f"First 15 Fibonacci numbers:")
+    logger.info(f"  {sequence}")
+    logger.info()
     
     # Example 4: Large values
-    print("Example 4: Large Fibonacci Numbers")
-    print("-" * 70)
+    logger.info("Example 4: Large Fibonacci Numbers")
+    logger.info("-" * 70)
     
     large_n = [50, 100, 200]
     for n_val in large_n:
         result = fibonacci_optimized(n_val)
-        print(f"Fibonacci({n_val}) = {result}")
-        print(f"  (digits: {len(str(result))})")
-    print()
+        logger.info(f"Fibonacci({n_val}) = {result}")
+        logger.info(f"  (digits: {len(str(result))})")
+    logger.info()
     
     # Example 5: Space complexity comparison
-    print("Example 5: Space Complexity Analysis")
-    print("-" * 70)
+    logger.info("Example 5: Space Complexity Analysis")
+    logger.info("-" * 70)
     
-    print("Space Complexity:")
-    print("  Naive recursive: O(n) - recursion stack")
-    print("  Memoized: O(n) - memoization table + stack")
-    print("  Bottom-up DP: O(n) - DP array")
-    print("  Optimized: O(1) - only two variables")
-    print("  Matrix: O(log n) - recursion depth")
-    print()
+    logger.info("Space Complexity:")
+    logger.info("  Naive recursive: O(n) - recursion stack")
+    logger.info("  Memoized: O(n) - memoization table + stack")
+    logger.info("  Bottom-up DP: O(n) - DP array")
+    logger.info("  Optimized: O(1) - only two variables")
+    logger.info("  Matrix: O(log n) - recursion depth")
+    logger.info()
     
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Naive Recursive:")
-    print("    Time:  O(2^n) - exponential!")
-    print("    Space: O(n)")
-    print("  Memoized (Top-down DP):")
-    print("    Time:  O(n)")
-    print("    Space: O(n)")
-    print("  Bottom-up DP:")
-    print("    Time:  O(n)")
-    print("    Space: O(n)")
-    print("  Optimized:")
-    print("    Time:  O(n)")
-    print("    Space: O(1) - best space complexity")
-    print("  Matrix Exponentiation:")
-    print("    Time:  O(log n) - best time complexity")
-    print("    Space: O(log n)")
-    print("\nKey Advantages:")
-    print("  - Demonstrates DP concepts clearly")
-    print("  - Multiple optimization strategies")
-    print("  - Shows space-time trade-offs")
-    print("\nKey Disadvantages:")
-    print("  - Naive approach is extremely slow")
-    print("  - Integer overflow for large n")
-    print("\nWhen to Use:")
-    print("  - Learning dynamic programming")
-    print("  - When Fibonacci numbers are needed")
-    print("  - Pattern matching problems")
-    print("  - Golden ratio applications")
-    print("\nOptimization Tips:")
-    print("  1. Always use memoization or bottom-up for production")
-    print("  2. Use optimized version for space-constrained systems")
-    print("  3. Use matrix exponentiation for very large n")
-    print("  4. Consider modulo arithmetic for huge numbers")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Naive Recursive:")
+    logger.info("    Time:  O(2^n) - exponential!")
+    logger.info("    Space: O(n)")
+    logger.info("  Memoized (Top-down DP):")
+    logger.info("    Time:  O(n)")
+    logger.info("    Space: O(n)")
+    logger.info("  Bottom-up DP:")
+    logger.info("    Time:  O(n)")
+    logger.info("    Space: O(n)")
+    logger.info("  Optimized:")
+    logger.info("    Time:  O(n)")
+    logger.info("    Space: O(1) - best space complexity")
+    logger.info("  Matrix Exponentiation:")
+    logger.info("    Time:  O(log n) - best time complexity")
+    logger.info("    Space: O(log n)")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Demonstrates DP concepts clearly")
+    logger.info("  - Multiple optimization strategies")
+    logger.info("  - Shows space-time trade-offs")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Naive approach is extremely slow")
+    logger.info("  - Integer overflow for large n")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Learning dynamic programming")
+    logger.info("  - When Fibonacci numbers are needed")
+    logger.info("  - Pattern matching problems")
+    logger.info("  - Golden ratio applications")
+    logger.info("\nOptimization Tips:")
+    logger.info("  1. Always use memoization or bottom-up for production")
+    logger.info("  2. Use optimized version for space-constrained systems")
+    logger.info("  3. Use matrix exponentiation for very large n")
+    logger.info("  4. Consider modulo arithmetic for huge numbers")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":
     main()
-

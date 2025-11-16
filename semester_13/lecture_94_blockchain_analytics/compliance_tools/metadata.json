@@ -1,0 +1,12 @@
+{
+  "name": "compliance_tools",
+  "display_name": "Compliance Tools",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_94_blockchain_analytics",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

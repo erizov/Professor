@@ -9,7 +9,10 @@ import java.util.List;
  * Time Complexity: O(log_t n) where t is minimum degree
  * Space Complexity: O(n)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class BTreeNode {
         List<Integer> keys;
@@ -129,7 +132,7 @@ public class Algorithm {
         }
         
         private void printTreeHelper(BTreeNode node, int level) {
-            System.out.println(" ".repeat(4 * level) + "→ " + 
+            logger.info(" ".repeat(4 * level) + "→ " + 
                              node.keys);
             
             if (!node.leaf) {
@@ -164,14 +167,14 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("B-TREE DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("B-TREE DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1
-        System.out.println("Example 1: Basic Insert and Search (t=3)");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Basic Insert and Search (t=3)");
+        logger.info("-".repeat(70));
         BTree btree = new BTree(3);
         int[] keys = {10, 20, 5, 6, 12, 30, 7, 17};
         
@@ -181,17 +184,17 @@ public class Algorithm {
             btree.insert(key);
         }
         
-        System.out.println("\n\nTree structure:");
+        logger.info("\n\nTree structure:");
         btree.printTree();
         
-        System.out.println("\nInorder: " + btree.inorder());
-        System.out.println("Search for 12: " + btree.search(12));
-        System.out.println("Search for 15: " + btree.search(15));
-        System.out.println();
+        logger.info("\nInorder: " + btree.inorder());
+        logger.info("Search for 12: " + btree.search(12));
+        logger.info("Search for 15: " + btree.search(15));
+        logger.info();
         
         // Example 2
-        System.out.println("Example 2: Larger Tree (t=2)");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Larger Tree (t=2)");
+        logger.info("-".repeat(70));
         BTree btree2 = new BTree(2);
         
         System.out.print("Inserting 1-10: ");
@@ -199,21 +202,21 @@ public class Algorithm {
             btree2.insert(i);
         }
         
-        System.out.println("\n\nTree structure:");
+        logger.info("\n\nTree structure:");
         btree2.printTree();
-        System.out.println("\nInorder: " + btree2.inorder());
-        System.out.println();
+        logger.info("\nInorder: " + btree2.inorder());
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Time:  O(log_t n)");
-        System.out.println("  Space: O(n)");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Optimized for disk I/O");
-        System.out.println("  - Used in databases");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Time:  O(log_t n)");
+        logger.info("  Space: O(n)");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Optimized for disk I/O");
+        logger.info("  - Used in databases");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

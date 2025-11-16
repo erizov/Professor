@@ -1,0 +1,12 @@
+{
+  "name": "sparse_attention",
+  "display_name": "Sparse Attention",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_64_llm_architecture_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

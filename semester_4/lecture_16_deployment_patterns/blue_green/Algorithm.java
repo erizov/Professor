@@ -11,6 +11,7 @@ enum Environment {
     BLUE, GREEN
 }
 
+import java.util.logging.Logger;
 class Deployment {
     Environment environment;
     String version;
@@ -44,13 +45,13 @@ class BlueGreenDeployment {
     
     boolean switchToBlue() {
         if (blue == null) {
-            System.out.println("Error: Blue environment not deployed");
+            logger.info("Error: Blue environment not deployed");
             return false;
         }
         
         if (currentLive == Environment.GREEN && green != null) {
             green.isLive = false;
-            System.out.println("Deactivated GREEN environment");
+            logger.info("Deactivated GREEN environment");
         }
         
         blue.isLive = true;
@@ -61,13 +62,13 @@ class BlueGreenDeployment {
     
     boolean switchToGreen() {
         if (green == null) {
-            System.out.println("Error: Green environment not deployed");
+            logger.info("Error: Green environment not deployed");
             return false;
         }
         
         if (currentLive == Environment.BLUE && blue != null) {
             blue.isLive = false;
-            System.out.println("Deactivated BLUE environment");
+            logger.info("Deactivated BLUE environment");
         }
         
         green.isLive = true;
@@ -82,7 +83,7 @@ class BlueGreenDeployment {
         } else if (currentLive == Environment.GREEN) {
             return switchToBlue();
         } else {
-            System.out.println("Error: No live environment to rollback from");
+            logger.info("Error: No live environment to rollback from");
             return false;
         }
     }
@@ -118,78 +119,80 @@ class BlueGreenDeployment {
 }
 
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("BLUE-GREEN DEPLOYMENT PATTERN DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("BLUE-GREEN DEPLOYMENT PATTERN DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Initial Deployment
-        System.out.println("Example 1: Initial Deployment to Blue");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Initial Deployment to Blue");
+        logger.info("-".repeat(70));
         
         BlueGreenDeployment deployment = new BlueGreenDeployment();
         deployment.deployToBlue("v1.0.0");
         deployment.switchToBlue();
-        System.out.println();
+        logger.info();
         
         // Example 2: Deploy New Version to Green
-        System.out.println("Example 2: Deploy New Version to Green");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Deploy New Version to Green");
+        logger.info("-".repeat(70));
         
         deployment.deployToGreen("v1.1.0");
         System.out.printf("Status: %s%n", deployment.getStatus());
-        System.out.println();
+        logger.info();
         
         // Example 3: Switch to Green
-        System.out.println("Example 3: Switch Traffic to Green (New Version)");
-        System.out.println("-".repeat(70));
+        logger.info("Example 3: Switch Traffic to Green (New Version)");
+        logger.info("-".repeat(70));
         
         deployment.switchToGreen();
         Deployment live = deployment.getLiveEnvironment();
         System.out.printf("Live environment: %s (version %s)%n",
                         live.environment.name(), live.version);
-        System.out.println();
+        logger.info();
         
         // Example 4: Rollback
-        System.out.println("Example 4: Rollback to Blue");
-        System.out.println("-".repeat(70));
+        logger.info("Example 4: Rollback to Blue");
+        logger.info("-".repeat(70));
         
         deployment.rollback();
         live = deployment.getLiveEnvironment();
         System.out.printf("After rollback: %s (version %s)%n",
                         live.environment.name(), live.version);
-        System.out.println();
+        logger.info();
         
         // Example 5: Deploy Another Version
-        System.out.println("Example 5: Deploy Another Version to Blue");
-        System.out.println("-".repeat(70));
+        logger.info("Example 5: Deploy Another Version to Blue");
+        logger.info("-".repeat(70));
         
         deployment.deployToBlue("v1.2.0");
         deployment.switchToBlue();
         System.out.printf("Status: %s%n", deployment.getStatus());
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern Summary:");
-        System.out.println("\nIntent:");
-        System.out.println("  Maintains two identical production environments (blue and green).");
-        System.out.println("  Only one environment is live at a time, allowing instant rollback.");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Zero-downtime deployments");
-        System.out.println("  - Instant rollback");
-        System.out.println("  - Easy testing of new version");
-        System.out.println("  - Reduced deployment risk");
-        System.out.println("\nWhen to Use:");
-        System.out.println("  - Zero-downtime requirements");
-        System.out.println("  - Critical production systems");
-        System.out.println("  - When rollback speed is important");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern Summary:");
+        logger.info("\nIntent:");
+        logger.info("  Maintains two identical production environments (blue and green).");
+        logger.info("  Only one environment is live at a time, allowing instant rollback.");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Zero-downtime deployments");
+        logger.info("  - Instant rollback");
+        logger.info("  - Easy testing of new version");
+        logger.info("  - Reduced deployment risk");
+        logger.info("\nWhen to Use:");
+        logger.info("  - Zero-downtime requirements");
+        logger.info("  - Critical production systems");
+        logger.info("  - When rollback speed is important");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

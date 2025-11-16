@@ -13,6 +13,8 @@ from typing import List, Optional, Any
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class BTreeNode:
@@ -136,7 +138,7 @@ class BTree:
         if node is None:
             node = self.root
         
-        print(' ' * 4 * level + '→ ' + str(node.keys))
+        logger.info(' ' * 4 * level + '→ ' + str(node.keys))
         
         if not node.leaf:
             for child in node.children:
@@ -162,63 +164,63 @@ class BTree:
 
 def main() -> None:
     """Demonstration of B-Tree."""
-    print("=" * 70)
-    print("B-TREE DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("B-TREE DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic operations
-    print("Example 1: Basic Insert and Search (t=3)")
-    print("-" * 70)
+    logger.info("Example 1: Basic Insert and Search (t=3)")
+    logger.info("-" * 70)
     btree = BTree(t=3)
     keys = [10, 20, 5, 6, 12, 30, 7, 17]
     
-    print(f"Inserting: {keys}")
+    logger.info(f"Inserting: {keys}")
     for key in keys:
         btree.insert(key)
     
-    print("\nTree structure:")
+    logger.info("\nTree structure:")
     btree.print_tree()
     
-    print(f"\nInorder traversal: {btree.inorder()}")
-    print(f"Search for 12: {btree.search(12)}")
-    print(f"Search for 15: {btree.search(15)}")
-    print()
+    logger.info(f"\nInorder traversal: {btree.inorder()}")
+    logger.info(f"Search for 12: {btree.search(12)}")
+    logger.info(f"Search for 15: {btree.search(15)}")
+    logger.info()
     
     # Example 2: More insertions to show splitting
-    print("Example 2: Node Splitting (t=2)")
-    print("-" * 70)
+    logger.info("Example 2: Node Splitting (t=2)")
+    logger.info("-" * 70)
     btree2 = BTree(t=2)
     keys2 = list(range(1, 11))
     
-    print(f"Inserting: {keys2}")
+    logger.info(f"Inserting: {keys2}")
     for key in keys2:
         btree2.insert(key)
-        print(f"  After inserting {key}:")
+        logger.info(f"  After inserting {key}:")
         btree2.print_tree()
-        print()
+        logger.info()
     
-    print("Final inorder:", btree2.inorder())
-    print()
+    logger.info("Final inorder:", btree2.inorder())
+    logger.info()
     
     # Example 3: Larger tree
-    print("Example 3: Larger Tree (t=3)")
-    print("-" * 70)
+    logger.info("Example 3: Larger Tree (t=3)")
+    logger.info("-" * 70)
     btree3 = BTree(t=3)
     keys3 = [i for i in range(1, 21)]
     
-    print(f"Inserting: {keys3}")
+    logger.info(f"Inserting: {keys3}")
     for key in keys3:
         btree3.insert(key)
     
-    print("\nTree structure:")
+    logger.info("\nTree structure:")
     btree3.print_tree()
-    print(f"\nInorder: {btree3.inorder()}")
-    print()
+    logger.info(f"\nInorder: {btree3.inorder()}")
+    logger.info()
     
     # Example 4: Performance
-    print("Example 4: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 4: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("B-Tree")
     
@@ -229,33 +231,33 @@ def main() -> None:
         return tree
     
     _, metrics_100 = timer.measure(test_insertions, 100)
-    print(f"100 insertions:")
-    print(f"  Time: {metrics_100['execution_time_ms']:.3f} ms")
+    logger.info(f"100 insertions:")
+    logger.info(f"  Time: {metrics_100['execution_time_ms']:.3f} ms")
     
     _, metrics_1000 = timer.measure(test_insertions, 1000)
-    print(f"\n1,000 insertions:")
-    print(f"  Time: {metrics_1000['execution_time_ms']:.3f} ms")
+    logger.info(f"\n1,000 insertions:")
+    logger.info(f"  Time: {metrics_1000['execution_time_ms']:.3f} ms")
     
-    print()
-    print("=" * 70)
-    print("\nComplexity Summary (t = minimum degree):")
-    print("  Time:  O(log_t n) - search, insert")
-    print("  Space: O(n) - storage")
-    print("  Height: O(log_t n)")
-    print("\nKey Advantages:")
-    print("  - Optimized for disk I/O")
-    print("  - Fewer disk reads (wide nodes)")
-    print("  - Used in databases and filesystems")
-    print("  - Guaranteed logarithmic height")
-    print("\nKey Disadvantages:")
-    print("  - Complex implementation")
-    print("  - Higher space overhead")
-    print("  - Not cache-friendly for in-memory")
-    print("\nCommon Use Cases:")
-    print("  - Database indexes (MySQL InnoDB)")
-    print("  - File systems (NTFS, ext4)")
-    print("  - Block storage systems")
-    print("=" * 70)
+    logger.info()
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary (t = minimum degree):")
+    logger.info("  Time:  O(log_t n) - search, insert")
+    logger.info("  Space: O(n) - storage")
+    logger.info("  Height: O(log_t n)")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Optimized for disk I/O")
+    logger.info("  - Fewer disk reads (wide nodes)")
+    logger.info("  - Used in databases and filesystems")
+    logger.info("  - Guaranteed logarithmic height")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Complex implementation")
+    logger.info("  - Higher space overhead")
+    logger.info("  - Not cache-friendly for in-memory")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Database indexes (MySQL InnoDB)")
+    logger.info("  - File systems (NTFS, ext4)")
+    logger.info("  - Block storage systems")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,12 @@
+{
+  "name": "byzantine_fault_tolerance",
+  "display_name": "Byzantine Fault Tolerance",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_59_distributed_systems_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

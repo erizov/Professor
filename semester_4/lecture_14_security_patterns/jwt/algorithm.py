@@ -18,6 +18,8 @@ from datetime import datetime, timedelta
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class JWT:
@@ -124,14 +126,14 @@ class JWT:
 
 def main() -> None:
     """Demonstration of JWT Pattern."""
-    print("=" * 70)
-    print("JSON WEB TOKEN (JWT) PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("JSON WEB TOKEN (JWT) PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Create and verify JWT
-    print("Example 1: Create and Verify JWT")
-    print("-" * 70)
+    logger.info("Example 1: Create and Verify JWT")
+    logger.info("-" * 70)
     
     jwt = JWT(secret="my-secret-key")
     
@@ -142,50 +144,50 @@ def main() -> None:
     }
     
     token = jwt.encode(payload, expires_in=3600)
-    print(f"Token: {token[:50]}...")
-    print()
+    logger.info(f"Token: {token[:50]}...")
+    logger.info()
     
     decoded = jwt.decode(token)
     if decoded:
-        print("Decoded payload:")
+        logger.info("Decoded payload:")
         for key, value in decoded.items():
             if key not in ["exp", "iat"]:
-                print(f"  {key}: {value}")
-        print(f"  Issued at: {datetime.fromtimestamp(decoded['iat'])}")
-        print(f"  Expires at: {datetime.fromtimestamp(decoded['exp'])}")
+                logger.info(f"  {key}: {value}")
+        logger.info(f"  Issued at: {datetime.fromtimestamp(decoded['iat'])}")
+        logger.info(f"  Expires at: {datetime.fromtimestamp(decoded['exp'])}")
     else:
-        print("Token invalid or expired")
-    print()
+        logger.info("Token invalid or expired")
+    logger.info()
     
     # Example 2: Token expiration
-    print("Example 2: Token Expiration")
-    print("-" * 70)
+    logger.info("Example 2: Token Expiration")
+    logger.info("-" * 70)
     
     short_token = jwt.encode({"test": "data"}, expires_in=1)
-    print("Created token with 1 second expiration")
+    logger.info("Created token with 1 second expiration")
     
     decoded1 = jwt.decode(short_token)
-    print(f"Immediate decode: {'Valid' if decoded1 else 'Invalid'}")
+    logger.info(f"Immediate decode: {'Valid' if decoded1 else 'Invalid'}")
     
     import time
     time.sleep(1.1)
     
     decoded2 = jwt.decode(short_token)
-    print(f"After 1.1s: {'Valid' if decoded2 else 'Invalid (expired)'}")
-    print()
+    logger.info(f"After 1.1s: {'Valid' if decoded2 else 'Invalid (expired)'}")
+    logger.info()
     
     # Example 3: Invalid token
-    print("Example 3: Invalid Token Detection")
-    print("-" * 70)
+    logger.info("Example 3: Invalid Token Detection")
+    logger.info("-" * 70)
     
     invalid_token = "invalid.token.here"
     decoded = jwt.decode(invalid_token)
-    print(f"Invalid token decode: {'Valid' if decoded else 'Invalid (as expected)'}")
-    print()
+    logger.info(f"Invalid token decode: {'Valid' if decoded else 'Invalid (as expected)'}")
+    logger.info()
     
     # Example 4: Performance measurement
-    print("Example 4: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 4: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("JWT")
     
@@ -196,45 +198,45 @@ def main() -> None:
         return decoded is not None
     
     result, metrics = timer.measure(jwt_operations)
-    print(f"Time to encode and decode JWT: {metrics['execution_time_ms']:.3f} ms")
-    print()
+    logger.info(f"Time to encode and decode JWT: {metrics['execution_time_ms']:.3f} ms")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Compact, URL-safe token format for securely transmitting")
-    print("  information between parties.")
-    print("\nToken Structure:")
-    print("  - Header: Algorithm and token type")
-    print("  - Payload: Claims (data)")
-    print("  - Signature: Verification signature")
-    print("\nKey Advantages:")
-    print("  - Stateless authentication")
-    print("  - Compact format")
-    print("  - Self-contained")
-    print("  - Widely supported")
-    print("\nKey Disadvantages:")
-    print("  - Cannot revoke tokens easily")
-    print("  - Size limitations")
-    print("  - Secret key management")
-    print("  - XSS vulnerabilities if stored in localStorage")
-    print("\nWhen to Use:")
-    print("  - Stateless authentication")
-    print("  - API authentication")
-    print("  - Microservices communication")
-    print("  - Single Sign-On (SSO)")
-    print("\nCommon Use Cases:")
-    print("  - REST API authentication")
-    print("  - OAuth 2.0")
-    print("  - Session management")
-    print("  - Information exchange")
-    print("\nSecurity Best Practices:")
-    print("  - Use strong secret keys")
-    print("  - Set appropriate expiration times")
-    print("  - Use HTTPS only")
-    print("  - Validate all claims")
-    print("  - Store tokens securely")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Compact, URL-safe token format for securely transmitting")
+    logger.info("  information between parties.")
+    logger.info("\nToken Structure:")
+    logger.info("  - Header: Algorithm and token type")
+    logger.info("  - Payload: Claims (data)")
+    logger.info("  - Signature: Verification signature")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Stateless authentication")
+    logger.info("  - Compact format")
+    logger.info("  - Self-contained")
+    logger.info("  - Widely supported")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Cannot revoke tokens easily")
+    logger.info("  - Size limitations")
+    logger.info("  - Secret key management")
+    logger.info("  - XSS vulnerabilities if stored in localStorage")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Stateless authentication")
+    logger.info("  - API authentication")
+    logger.info("  - Microservices communication")
+    logger.info("  - Single Sign-On (SSO)")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - REST API authentication")
+    logger.info("  - OAuth 2.0")
+    logger.info("  - Session management")
+    logger.info("  - Information exchange")
+    logger.info("\nSecurity Best Practices:")
+    logger.info("  - Use strong secret keys")
+    logger.info("  - Set appropriate expiration times")
+    logger.info("  - Use HTTPS only")
+    logger.info("  - Validate all claims")
+    logger.info("  - Store tokens securely")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

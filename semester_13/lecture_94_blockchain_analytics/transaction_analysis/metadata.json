@@ -1,0 +1,12 @@
+{
+  "name": "transaction_analysis",
+  "display_name": "Transaction Analysis",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_94_blockchain_analytics",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

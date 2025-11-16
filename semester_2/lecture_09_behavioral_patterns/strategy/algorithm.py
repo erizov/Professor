@@ -15,6 +15,8 @@ from typing import List
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 # Strategy Interface
@@ -42,8 +44,8 @@ class CreditCardStrategy(PaymentStrategy):
     
     def pay(self, amount: float) -> bool:
         """Process credit card payment."""
-        print(f"Processing ${amount:.2f} payment using Credit Card")
-        print(f"Card: ****{self.card_number[-4:]}")
+        logger.info(f"Processing ${amount:.2f} payment using Credit Card")
+        logger.info(f"Card: ****{self.card_number[-4:]}")
         return True
     
     def get_name(self) -> str:
@@ -58,8 +60,8 @@ class PayPalStrategy(PaymentStrategy):
     
     def pay(self, amount: float) -> bool:
         """Process PayPal payment."""
-        print(f"Processing ${amount:.2f} payment using PayPal")
-        print(f"Email: {self.email}")
+        logger.info(f"Processing ${amount:.2f} payment using PayPal")
+        logger.info(f"Email: {self.email}")
         return True
     
     def get_name(self) -> str:
@@ -74,8 +76,8 @@ class CryptocurrencyStrategy(PaymentStrategy):
     
     def pay(self, amount: float) -> bool:
         """Process cryptocurrency payment."""
-        print(f"Processing ${amount:.2f} payment using Cryptocurrency")
-        print(f"Wallet: {self.wallet_address[:10]}...")
+        logger.info(f"Processing ${amount:.2f} payment using Cryptocurrency")
+        logger.info(f"Wallet: {self.wallet_address[:10]}...")
         return True
     
     def get_name(self) -> str:
@@ -175,55 +177,55 @@ class Sorter:
 
 def main() -> None:
     """Demonstration of Strategy Pattern."""
-    print("=" * 70)
-    print("STRATEGY DESIGN PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("STRATEGY DESIGN PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Payment Strategy
-    print("Example 1: Payment Strategy")
-    print("-" * 70)
+    logger.info("Example 1: Payment Strategy")
+    logger.info("-" * 70)
     
     processor = PaymentProcessor()
     
     # Use credit card
     processor.set_strategy(CreditCardStrategy("1234567890123456", "123"))
     processor.process_payment(100.0)
-    print()
+    logger.info()
     
     # Switch to PayPal
     processor.set_strategy(PayPalStrategy("user@paypal.com"))
     processor.process_payment(50.0)
-    print()
+    logger.info()
     
     # Switch to cryptocurrency
     processor.set_strategy(
         CryptocurrencyStrategy("1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa")
     )
     processor.process_payment(25.0)
-    print()
+    logger.info()
     
     # Example 2: Sorting Strategy
-    print("Example 2: Sorting Strategy")
-    print("-" * 70)
+    logger.info("Example 2: Sorting Strategy")
+    logger.info("-" * 70)
     
     data = [64, 34, 25, 12, 22, 11, 90]
-    print(f"Original data: {data}")
+    logger.info(f"Original data: {data}")
     
     # Use quick sort
     sorter = Sorter(QuickSortStrategy())
     sorted_data = sorter.sort_data(data.copy())
-    print(f"Quick sorted: {sorted_data}")
+    logger.info(f"Quick sorted: {sorted_data}")
     
     # Switch to merge sort
     sorter.set_strategy(MergeSortStrategy())
     sorted_data = sorter.sort_data(data.copy())
-    print(f"Merge sorted: {sorted_data}")
-    print()
+    logger.info(f"Merge sorted: {sorted_data}")
+    logger.info()
     
     # Example 3: Performance measurement
-    print("Example 3: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 3: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Strategy")
     
@@ -238,38 +240,38 @@ def main() -> None:
         return sorter.sort_data(large_data.copy())
     
     result1, metrics1 = timer.measure(quick_sort_operation)
-    print(f"Quick Sort: {metrics1['execution_time_ms']:.3f} ms")
+    logger.info(f"Quick Sort: {metrics1['execution_time_ms']:.3f} ms")
     
     result2, metrics2 = timer.measure(merge_sort_operation)
-    print(f"Merge Sort: {metrics2['execution_time_ms']:.3f} ms")
-    print()
+    logger.info(f"Merge Sort: {metrics2['execution_time_ms']:.3f} ms")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Define a family of algorithms, encapsulate each one, and")
-    print("  make them interchangeable. Strategy lets the algorithm")
-    print("  vary independently from clients that use it.")
-    print("\nKey Advantages:")
-    print("  - Algorithms can be swapped at runtime")
-    print("  - Eliminates conditional statements")
-    print("  - Open/Closed Principle")
-    print("  - Easy to add new strategies")
-    print("\nKey Disadvantages:")
-    print("  - Clients must know about strategies")
-    print("  - Increased number of classes")
-    print("  - Communication overhead")
-    print("\nWhen to Use:")
-    print("  - Multiple ways to perform a task")
-    print("  - Want to avoid conditional statements")
-    print("  - Algorithms should be interchangeable")
-    print("  - Need runtime algorithm selection")
-    print("\nCommon Use Cases:")
-    print("  - Payment processing")
-    print("  - Sorting algorithms")
-    print("  - Compression algorithms")
-    print("  - Validation strategies")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Define a family of algorithms, encapsulate each one, and")
+    logger.info("  make them interchangeable. Strategy lets the algorithm")
+    logger.info("  vary independently from clients that use it.")
+    logger.info("\nKey Advantages:")
+    logger.debug("  - Algorithms can be swapped at runtime")
+    logger.info("  - Eliminates conditional statements")
+    logger.info("  - Open/Closed Principle")
+    logger.info("  - Easy to add new strategies")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Clients must know about strategies")
+    logger.info("  - Increased number of classes")
+    logger.info("  - Communication overhead")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Multiple ways to perform a task")
+    logger.info("  - Want to avoid conditional statements")
+    logger.info("  - Algorithms should be interchangeable")
+    logger.info("  - Need runtime algorithm selection")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Payment processing")
+    logger.info("  - Sorting algorithms")
+    logger.info("  - Compression algorithms")
+    logger.info("  - Validation strategies")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

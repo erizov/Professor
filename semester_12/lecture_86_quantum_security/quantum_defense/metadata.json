@@ -1,0 +1,12 @@
+{
+  "name": "quantum_defense",
+  "display_name": "Quantum Defense",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_86_quantum_security",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

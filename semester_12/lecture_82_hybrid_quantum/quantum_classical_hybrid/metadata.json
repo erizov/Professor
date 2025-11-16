@@ -1,0 +1,12 @@
+{
+  "name": "quantum_classical_hybrid",
+  "display_name": "Quantum Classical Hybrid",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_82_hybrid_quantum",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

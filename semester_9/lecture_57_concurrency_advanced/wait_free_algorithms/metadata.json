@@ -1,0 +1,12 @@
+{
+  "name": "wait_free_algorithms",
+  "display_name": "Wait Free Algorithms",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_57_concurrency_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

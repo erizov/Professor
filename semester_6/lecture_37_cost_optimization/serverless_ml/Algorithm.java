@@ -5,24 +5,27 @@
  * Time Complexity: O(requests)
  * Space Complexity: O(0)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("==".repeat(35));
-        System.out.println("Serverless ML");
-        System.out.println("==".repeat(35));
-        System.out.println("Category: Cost Optimization");
-        System.out.println("Time: O(requests)");
-        System.out.println("Space: O(0)");
-        System.out.println();
-        System.out.println("Resource Requirements:");
-        System.out.println("  - GPU: Optional");
-        System.out.println("  - Memory: Medium");
-        System.out.println("==".repeat(35));
+        logger.info("==".repeat(35));
+        logger.info("Serverless ML");
+        logger.info("==".repeat(35));
+        logger.info("Category: Cost Optimization");
+        logger.info("Time: O(requests)");
+        logger.info("Space: O(0)");
+        logger.info();
+        logger.info("Resource Requirements:");
+        logger.info("  - GPU: Optional");
+        logger.info("  - Memory: Medium");
+        logger.info("==".repeat(35));
         
         long endTime = System.nanoTime();
         double durationMs = (endTime - startTime) / 1_000_000.0;
-        System.out.println(String.format("\nExecution time: %.3f ms", durationMs));
+        logger.info(String.format("\nExecution time: %.3f ms", durationMs));
     }
 }

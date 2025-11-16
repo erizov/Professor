@@ -1,0 +1,12 @@
+{
+  "name": "chaos_engineering_advanced",
+  "display_name": "Chaos Engineering Advanced",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_62_observability_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

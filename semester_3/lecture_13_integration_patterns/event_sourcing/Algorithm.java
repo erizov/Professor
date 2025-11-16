@@ -5,7 +5,10 @@ import java.util.*;
  * 
  * Stores state changes as events.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     interface Event {
         String getEventType();
@@ -68,7 +71,7 @@ public class Algorithm {
             events.add(event);
             aggregateEvents.computeIfAbsent(aggregateId, k -> new ArrayList<>())
                           .add(event);
-            System.out.println("[EventStore] Stored: " + event.getEventType());
+            logger.info("[EventStore] Stored: " + event.getEventType());
         }
         
         List<Event> getEvents(int aggregateId) {
@@ -79,30 +82,30 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("EVENT SOURCING PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("EVENT SOURCING PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         EventStore store = new EventStore();
         int userId = 1;
         
         store.append(userId, new UserCreatedEvent(userId, "Alice", "alice@example.com"));
-        System.out.println();
+        logger.info();
         
         User user = new User();
         for (Event event : store.getEvents(userId)) {
             user.applyEvent(event);
         }
         
-        System.out.println("Reconstructed user: " + user.getName());
-        System.out.println();
+        logger.info("Reconstructed user: " + user.getName());
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: Stores state as events");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: Stores state as events");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

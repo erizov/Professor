@@ -6,6 +6,7 @@
  */
 import java.util.*;
 
+import java.util.logging.Logger;
 class Calculator {
     double add(double a, double b) {
         return a + b;
@@ -85,13 +86,13 @@ class TestCalculator {
     }
     
     void runAllTests() {
-        System.out.println("Running unit tests...");
-        System.out.println();
+        logger.info("Running unit tests...");
+        logger.info();
         testAdd();
         testSubtract();
         testMultiply();
         testDivide();
-        System.out.println();
+        logger.info();
         System.out.printf("Tests passed: %d%n", testsPassed);
         System.out.printf("Tests failed: %d%n", testsFailed);
         System.out.printf("Total: %d%n", testsPassed + testsFailed);
@@ -182,62 +183,64 @@ class UserServiceTest {
     }
     
     void runAllTests() {
-        System.out.println("Running UserService unit tests...");
-        System.out.println();
+        logger.info("Running UserService unit tests...");
+        logger.info();
         testCreateUser();
         testCreateUserInvalid();
         testGetUser();
         testGetUserNotFound();
-        System.out.println();
+        logger.info();
         System.out.printf("Tests passed: %d%n", testsPassed);
         System.out.printf("Tests failed: %d%n", testsFailed);
     }
 }
 
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("UNIT TESTING PATTERN DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("UNIT TESTING PATTERN DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Manual Unit Tests
-        System.out.println("Example 1: Manual Unit Tests");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Manual Unit Tests");
+        logger.info("-".repeat(70));
         
         TestCalculator testSuite = new TestCalculator();
         testSuite.runAllTests();
-        System.out.println();
+        logger.info();
         
         // Example 2: User Service Tests
-        System.out.println("Example 2: User Service Unit Tests");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: User Service Unit Tests");
+        logger.info("-".repeat(70));
         
         UserServiceTest userTest = new UserServiceTest();
         userTest.runAllTests();
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern Summary:");
-        System.out.println("\nIntent:");
-        System.out.println("  Test individual units of code (functions, methods, classes)");
-        System.out.println("  in isolation. Ensures each unit works correctly.");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Early bug detection");
-        System.out.println("  - Confidence in code");
-        System.out.println("  - Documentation through tests");
-        System.out.println("  - Regression prevention");
-        System.out.println("\nWhen to Use:");
-        System.out.println("  - All production code");
-        System.out.println("  - Critical business logic");
-        System.out.println("  - Complex algorithms");
-        System.out.println("  - API endpoints");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern Summary:");
+        logger.info("\nIntent:");
+        logger.info("  Test individual units of code (functions, methods, classes)");
+        logger.info("  in isolation. Ensures each unit works correctly.");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Early bug detection");
+        logger.info("  - Confidence in code");
+        logger.info("  - Documentation through tests");
+        logger.info("  - Regression prevention");
+        logger.info("\nWhen to Use:");
+        logger.info("  - All production code");
+        logger.info("  - Critical business logic");
+        logger.info("  - Complex algorithms");
+        logger.info("  - API endpoints");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

@@ -1,0 +1,12 @@
+{
+  "name": "cache_optimization",
+  "display_name": "Cache Optimization",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_56_os_performance",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

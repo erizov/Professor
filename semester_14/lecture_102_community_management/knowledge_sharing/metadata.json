@@ -1,0 +1,12 @@
+{
+  "name": "knowledge_sharing",
+  "display_name": "Knowledge Sharing",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_102_community_management",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

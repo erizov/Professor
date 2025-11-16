@@ -10,6 +10,8 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 def serverless_ml():
@@ -20,21 +22,21 @@ def serverless_ml():
     Time Complexity: O(requests)
     Space Complexity: O(0)
     """
-    print("==" * 35)
-    print("Serverless ML")
-    print("==" * 35)
-    print(f"Category: Cost Optimization")
-    print(f"Time Complexity: O(requests)")
-    print(f"Space Complexity: O(0)")
-    print()
-    print("Resource Requirements:")
-    print("  - GPU: Optional")
-    print("  - Memory: Medium")
-    print("==" * 35)
+    logger.info("==" * 35)
+    logger.info("Serverless ML")
+    logger.info("==" * 35)
+    logger.info(f"Category: Cost Optimization")
+    logger.info(f"Time Complexity: O(requests)")
+    logger.info(f"Space Complexity: O(0)")
+    logger.info()
+    logger.info("Resource Requirements:")
+    logger.info("  - GPU: Optional")
+    logger.info("  - Memory: Medium")
+    logger.info("==" * 35)
 
 
 if __name__ == "__main__":
     timer = PerformanceTimer("Serverless ML")
     _, metrics = timer.measure(serverless_ml)
-    print(f"\nExecution time: {metrics['execution_time_ms']:.3f} ms")
-    print(f"Memory used: {metrics['memory_peak_kb']:.2f} KB")
+    logger.info(f"\nExecution time: {metrics['execution_time_ms']:.3f} ms")
+    logger.info(f"Memory used: {metrics['memory_peak_kb']:.2f} KB")

@@ -5,14 +5,17 @@
  * Time Complexity: O(m)
  * Space Complexity: O(n*m)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     public static void main(String[] args) {
-        System.out.println("==".repeat(35));
-        System.out.println("Trie");
-        System.out.println("==".repeat(35));
-        System.out.println("Category: Data Structure");
-        System.out.println("Time: O(m)");
-        System.out.println("Space: O(n*m)");
-        System.out.println("==".repeat(35));
+        logger.info("==".repeat(35));
+        logger.info("Trie");
+        logger.info("==".repeat(35));
+        logger.info("Category: Data Structure");
+        logger.info("Time: O(m)");
+        logger.info("Space: O(n*m)");
+        logger.info("==".repeat(35));
     }
 }

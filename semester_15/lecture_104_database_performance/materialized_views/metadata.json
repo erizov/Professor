@@ -1,0 +1,12 @@
+{
+  "name": "materialized_views",
+  "display_name": "Materialized Views",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_104_database_performance",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

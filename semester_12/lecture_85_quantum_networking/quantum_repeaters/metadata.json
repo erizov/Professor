@@ -1,0 +1,12 @@
+{
+  "name": "quantum_repeaters",
+  "display_name": "Quantum Repeaters",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_85_quantum_networking",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "zero_downtime_migration",
+  "display_name": "Zero Downtime Migration",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_110_database_migration",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

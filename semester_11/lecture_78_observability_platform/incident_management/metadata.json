@@ -1,0 +1,12 @@
+{
+  "name": "incident_management",
+  "display_name": "Incident Management",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_78_observability_platform",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

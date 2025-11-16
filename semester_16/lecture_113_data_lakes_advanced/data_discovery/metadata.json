@@ -1,0 +1,12 @@
+{
+  "name": "data_discovery",
+  "display_name": "Data Discovery",
+  "category": "Advanced Graduate Level",
+  "semester": 16,
+  "lecture": "lecture_113_data_lakes_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

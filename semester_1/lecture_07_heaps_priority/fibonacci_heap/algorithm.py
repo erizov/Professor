@@ -15,6 +15,8 @@ from dataclasses import dataclass
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 @dataclass
@@ -290,51 +292,51 @@ class FibonacciHeap:
 
 def main() -> None:
     """Demonstration of Fibonacci Heap."""
-    print("=" * 70)
-    print("FIBONACCI HEAP DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("FIBONACCI HEAP DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic operations
-    print("Example 1: Basic Operations")
-    print("-" * 70)
+    logger.info("Example 1: Basic Operations")
+    logger.info("-" * 70)
     
     heap = FibonacciHeap()
     
     # Insert elements
-    print("Inserting elements:")
+    logger.info("Inserting elements:")
     nodes = []
     for key in [5, 3, 7, 1, 9, 2, 6]:
         node = heap.insert(key, f"Value{key}")
         nodes.append(node)
-        print(f"  Inserted: {key}, Min: {heap.find_min()}")
-    print()
+        logger.info(f"  Inserted: {key}, Min: {heap.find_min()}")
+    logger.info()
     
     # Extract min
-    print("Extracting minimum elements:")
+    logger.info("Extracting minimum elements:")
     while not heap.is_empty():
         min_node = heap.extract_min()
-        print(f"  Extracted: {min_node.key}, Remaining: {heap.size()}")
-    print()
+        logger.info(f"  Extracted: {min_node.key}, Remaining: {heap.size()}")
+    logger.info()
     
     # Example 2: Decrease key
-    print("Example 2: Decrease Key Operation")
-    print("-" * 70)
+    logger.info("Example 2: Decrease Key Operation")
+    logger.info("-" * 70)
     
     heap = FibonacciHeap()
     node5 = heap.insert(5, "Five")
     node10 = heap.insert(10, "Ten")
     node15 = heap.insert(15, "Fifteen")
     
-    print(f"Initial min: {heap.find_min()}")
-    print(f"Decreasing key 10 to 2...")
+    logger.info(f"Initial min: {heap.find_min()}")
+    logger.info(f"Decreasing key 10 to 2...")
     heap.decrease_key(node10, 2)
-    print(f"New min: {heap.find_min()}")
-    print()
+    logger.info(f"New min: {heap.find_min()}")
+    logger.info()
     
     # Example 3: Priority queue simulation
-    print("Example 3: Priority Queue Simulation")
-    print("-" * 70)
+    logger.info("Example 3: Priority Queue Simulation")
+    logger.info("-" * 70)
     
     heap = FibonacciHeap()
     
@@ -346,23 +348,23 @@ def main() -> None:
         (1, "Another high priority task"),
     ]
     
-    print("Inserting tasks:")
+    logger.info("Inserting tasks:")
     task_nodes = []
     for priority, description in tasks:
         node = heap.insert(priority, description)
         task_nodes.append(node)
-        print(f"  Priority {priority}: {description}")
-    print()
+        logger.info(f"  Priority {priority}: {description}")
+    logger.info()
     
-    print("Processing tasks in priority order:")
+    logger.info("Processing tasks in priority order:")
     while not heap.is_empty():
         task = heap.extract_min()
-        print(f"  Processing: {task.value} (priority: {task.key})")
-    print()
+        logger.info(f"  Processing: {task.value} (priority: {task.key})")
+    logger.info()
     
     # Example 4: Performance measurement
-    print("Example 4: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 4: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Fibonacci Heap")
     
@@ -382,38 +384,38 @@ def main() -> None:
         return heap.size()
     
     result, metrics = timer.measure(heap_operations)
-    print(f"Time to insert and extract 100 elements: "
+    logger.info(f"Time to insert and extract 100 elements: "
           f"{metrics['execution_time_ms']:.3f} ms")
-    print()
+    logger.info()
     
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Insert:       O(1) amortized")
-    print("  Find Min:     O(1)")
-    print("  Extract Min:  O(log n) amortized")
-    print("  Decrease Key: O(1) amortized")
-    print("  Delete:       O(log n) amortized")
-    print("\nKey Advantages:")
-    print("  - O(1) insert and decrease-key")
-    print("  - Better than binary heap for some operations")
-    print("  - Useful for Dijkstra's algorithm")
-    print("  - Lazy consolidation")
-    print("\nKey Disadvantages:")
-    print("  - Complex implementation")
-    print("  - Higher constant factors")
-    print("  - Not cache-friendly")
-    print("  - More memory overhead")
-    print("\nWhen to Use:")
-    print("  - Many decrease-key operations")
-    print("  - Dijkstra's algorithm")
-    print("  - Prim's algorithm")
-    print("  - Priority queue with frequent updates")
-    print("\nCommon Use Cases:")
-    print("  - Graph algorithms (Dijkstra, Prim)")
-    print("  - Network routing")
-    print("  - Task scheduling")
-    print("  - Event simulation")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Insert:       O(1) amortized")
+    logger.info("  Find Min:     O(1)")
+    logger.info("  Extract Min:  O(log n) amortized")
+    logger.info("  Decrease Key: O(1) amortized")
+    logger.info("  Delete:       O(log n) amortized")
+    logger.info("\nKey Advantages:")
+    logger.info("  - O(1) insert and decrease-key")
+    logger.info("  - Better than binary heap for some operations")
+    logger.info("  - Useful for Dijkstra's algorithm")
+    logger.info("  - Lazy consolidation")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Complex implementation")
+    logger.info("  - Higher constant factors")
+    logger.info("  - Not cache-friendly")
+    logger.info("  - More memory overhead")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Many decrease-key operations")
+    logger.info("  - Dijkstra's algorithm")
+    logger.info("  - Prim's algorithm")
+    logger.info("  - Priority queue with frequent updates")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Graph algorithms (Dijkstra, Prim)")
+    logger.info("  - Network routing")
+    logger.info("  - Task scheduling")
+    logger.info("  - Event simulation")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

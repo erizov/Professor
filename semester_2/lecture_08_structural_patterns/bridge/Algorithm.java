@@ -3,7 +3,10 @@
  * 
  * Decouples abstraction from implementation.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     interface DrawingAPI {
         void drawCircle(double x, double y, double radius);
@@ -49,20 +52,20 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("BRIDGE DESIGN PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("BRIDGE DESIGN PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         Shape circle1 = new CircleShape(1, 2, 3, new DrawingAPI1());
         Shape circle2 = new CircleShape(5, 7, 11, new DrawingAPI2());
         
         circle1.draw();
         circle2.draw();
-        System.out.println();
+        logger.info();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPrinciple: Decouples abstraction from implementation");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPrinciple: Decouples abstraction from implementation");
+        logger.info("=".repeat(70));
     }
 }

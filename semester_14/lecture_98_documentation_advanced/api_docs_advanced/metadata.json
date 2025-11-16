@@ -1,0 +1,12 @@
+{
+  "name": "api_docs_advanced",
+  "display_name": "Api Docs Advanced",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_98_documentation_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

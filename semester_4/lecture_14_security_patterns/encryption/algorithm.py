@@ -15,6 +15,8 @@ import os
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class EncryptionAlgorithm(ABC):
@@ -74,10 +76,10 @@ class EncryptionService:
 
 def main() -> None:
     """Demonstration of Encryption Pattern."""
-    print("=" * 70)
-    print("ENCRYPTION PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("ENCRYPTION PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     algorithm = SimpleXOREncryption()
     service = EncryptionService(algorithm)
@@ -86,14 +88,14 @@ def main() -> None:
     ciphertext, iv = service.encrypt_data(plaintext)
     decrypted = service.decrypt_data(ciphertext, iv)
     
-    print(f"Plaintext: {plaintext.decode()}")
-    print(f"Decrypted: {decrypted.decode()}")
-    print(f"Match: {plaintext == decrypted}")
-    print()
+    logger.info(f"Plaintext: {plaintext.decode()}")
+    logger.info(f"Decrypted: {decrypted.decode()}")
+    logger.info(f"Match: {plaintext == decrypted}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern: Secure data encryption")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern: Secure data encryption")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

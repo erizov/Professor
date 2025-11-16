@@ -3,7 +3,10 @@
  * 
  * Makes incompatible interfaces work together.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     // Target interface
     interface MediaPlayer {
@@ -19,7 +22,7 @@ public class Algorithm {
     // Concrete adaptees
     static class VlcPlayer implements AdvancedMediaPlayer {
         public void playVlc(String fileName) {
-            System.out.println("Playing VLC file: " + fileName);
+            logger.info("Playing VLC file: " + fileName);
         }
         
         public void playMp4(String fileName) {
@@ -33,7 +36,7 @@ public class Algorithm {
         }
         
         public void playMp4(String fileName) {
-            System.out.println("Playing MP4 file: " + fileName);
+            logger.info("Playing MP4 file: " + fileName);
         }
     }
     
@@ -62,13 +65,13 @@ public class Algorithm {
     static class AudioPlayer implements MediaPlayer {
         public void play(String audioType, String fileName) {
             if (audioType.equalsIgnoreCase("mp3")) {
-                System.out.println("Playing MP3 file: " + fileName);
+                logger.info("Playing MP3 file: " + fileName);
             } else if (audioType.equalsIgnoreCase("vlc") || 
                       audioType.equalsIgnoreCase("mp4")) {
                 MediaAdapter adapter = new MediaAdapter(audioType);
                 adapter.play(audioType, fileName);
             } else {
-                System.out.println("Invalid media type: " + audioType);
+                logger.info("Invalid media type: " + audioType);
             }
         }
     }
@@ -113,46 +116,46 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("ADAPTER DESIGN PATTERN DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("ADAPTER DESIGN PATTERN DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Media Player
-        System.out.println("Example 1: Media Player Adapter");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Media Player Adapter");
+        logger.info("-".repeat(70));
         
         AudioPlayer player = new AudioPlayer();
         player.play("mp3", "song.mp3");
         player.play("mp4", "video.mp4");
         player.play("vlc", "movie.vlc");
-        System.out.println();
+        logger.info();
         
         // Example 2: Square to Rectangle
-        System.out.println("Example 2: Square to Rectangle Adapter");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Square to Rectangle Adapter");
+        logger.info("-".repeat(70));
         
         Square square = new Square(5.0);
         SquareToRectangleAdapter adapter = 
             new SquareToRectangleAdapter(square);
         
-        System.out.println("Square side: " + square.getSide());
-        System.out.println("Rectangle width: " + adapter.getWidth());
-        System.out.println("Rectangle height: " + adapter.getHeight());
-        System.out.println("Rectangle area: " + adapter.getArea());
-        System.out.println();
+        logger.info("Square side: " + square.getSide());
+        logger.info("Rectangle width: " + adapter.getWidth());
+        logger.info("Rectangle height: " + adapter.getHeight());
+        logger.info("Rectangle area: " + adapter.getArea());
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern Summary:");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Makes incompatible interfaces work together");
-        System.out.println("  - Reuses existing classes");
-        System.out.println("\nWhen to Use:");
-        System.out.println("  - Integrating third-party libraries");
-        System.out.println("  - Legacy code integration");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern Summary:");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Makes incompatible interfaces work together");
+        logger.info("  - Reuses existing classes");
+        logger.info("\nWhen to Use:");
+        logger.info("  - Integrating third-party libraries");
+        logger.info("  - Legacy code integration");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

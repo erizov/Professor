@@ -1,0 +1,12 @@
+{
+  "name": "platform_abstraction",
+  "display_name": "Platform Abstraction",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_76_platform_engineering",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

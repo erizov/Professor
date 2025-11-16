@@ -11,6 +11,8 @@ import sys
 from pathlib import Path
 from abc import ABC, abstractmethod
 from typing import List
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
@@ -45,7 +47,7 @@ class VlcPlayer(AdvancedMediaPlayer):
     """VLC player implementation."""
     
     def play_vlc(self, filename: str) -> None:
-        print(f"Playing VLC file: {filename}")
+        logger.info(f"Playing VLC file: {filename}")
     
     def play_mp4(self, filename: str) -> None:
         pass  # Not supported
@@ -58,7 +60,7 @@ class Mp4Player(AdvancedMediaPlayer):
         pass  # Not supported
     
     def play_mp4(self, filename: str) -> None:
-        print(f"Playing MP4 file: {filename}")
+        logger.info(f"Playing MP4 file: {filename}")
 
 
 # Adapter (translates between interfaces)
@@ -94,12 +96,12 @@ class AudioPlayer(MediaPlayer):
     def play(self, audio_type: str, filename: str) -> None:
         """Play audio file, using adapter for advanced formats."""
         if audio_type == "mp3":
-            print(f"Playing MP3 file: {filename}")
+            logger.info(f"Playing MP3 file: {filename}")
         elif audio_type in ["vlc", "mp4"]:
             adapter = MediaAdapter(audio_type)
             adapter.play(audio_type, filename)
         else:
-            print(f"Invalid media type: {audio_type}")
+            logger.info(f"Invalid media type: {audio_type}")
 
 
 # Object Adapter Example (using composition)
@@ -144,7 +146,7 @@ class LegacyPrinter:
     """Legacy printer (adaptee)."""
     
     def print_legacy(self, text: str) -> None:
-        print(f"[LEGACY] {text}")
+        logger.info(f"[LEGACY] {text}")
 
 
 class ModernPrinter:
@@ -169,7 +171,7 @@ class ThirdPartyPaymentGateway:
     def process_payment_third_party(self, amount: float, 
                                     currency: str) -> bool:
         """Process payment using third-party format."""
-        print(f"Processing {currency} {amount} via third-party gateway")
+        logger.info(f"Processing {currency} {amount} via third-party gateway")
         return True
 
 
@@ -202,55 +204,55 @@ class PaymentGatewayAdapter(PaymentProcessor):
 
 def main() -> None:
     """Demonstration of Adapter Pattern."""
-    print("=" * 70)
-    print("ADAPTER DESIGN PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("ADAPTER DESIGN PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Media Player Adapter
-    print("Example 1: Media Player Adapter")
-    print("-" * 70)
+    logger.info("Example 1: Media Player Adapter")
+    logger.info("-" * 70)
     
     player = AudioPlayer()
     player.play("mp3", "song.mp3")
     player.play("mp4", "video.mp4")
     player.play("vlc", "movie.vlc")
-    print()
+    logger.info()
     
     # Example 2: Object Adapter (Square to Rectangle)
-    print("Example 2: Object Adapter (Square to Rectangle)")
-    print("-" * 70)
+    logger.info("Example 2: Object Adapter (Square to Rectangle)")
+    logger.info("-" * 70)
     
     square = Square(5.0)
     rectangle_adapter = SquareToRectangleAdapter(square)
     
-    print(f"Square side: {square.get_side()}")
-    print(f"Rectangle width: {rectangle_adapter.get_width()}")
-    print(f"Rectangle height: {rectangle_adapter.get_height()}")
-    print(f"Rectangle area: {rectangle_adapter.get_area()}")
-    print()
+    logger.info(f"Square side: {square.get_side()}")
+    logger.info(f"Rectangle width: {rectangle_adapter.get_width()}")
+    logger.info(f"Rectangle height: {rectangle_adapter.get_height()}")
+    logger.info(f"Rectangle area: {rectangle_adapter.get_area()}")
+    logger.info()
     
     # Example 3: Class Adapter (Printer)
-    print("Example 3: Class Adapter (Printer)")
-    print("-" * 70)
+    logger.info("Example 3: Class Adapter (Printer)")
+    logger.info("-" * 70)
     
     modern_printer = PrinterAdapter()
     modern_printer.print_document("Hello, World!")
-    print()
+    logger.info()
     
     # Example 4: Third-party API Adapter
-    print("Example 4: Third-party Payment Gateway Adapter")
-    print("-" * 70)
+    logger.info("Example 4: Third-party Payment Gateway Adapter")
+    logger.info("-" * 70)
     
     payment_processor = PaymentGatewayAdapter()
     payment_processor.pay(100.0, "USD")
     payment_processor.pay(85.0, "EUR")
     payment_processor.pay(75.0, "GBP")
-    print()
+    logger.info()
     
     # Example 5: Multiple adapters
-    print("Example 5: Using Multiple Adapters")
-    print("-" * 70)
+    logger.info("Example 5: Using Multiple Adapters")
+    logger.info("-" * 70)
     
     # Different media types
     media_files = [
@@ -262,48 +264,48 @@ def main() -> None:
     
     for media_type, filename in media_files:
         player.play(media_type, filename)
-    print()
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Convert the interface of a class into another interface")
-    print("  clients expect. Adapter lets classes work together that")
-    print("  couldn't otherwise because of incompatible interfaces.")
-    print("\nKey Advantages:")
-    print("  - Allows incompatible interfaces to work together")
-    print("  - Reuses existing classes without modification")
-    print("  - Single Responsibility (separation of concerns)")
-    print("  - Open/Closed Principle (can add new adapters)")
-    print("\nKey Disadvantages:")
-    print("  - Adds complexity (extra layer)")
-    print("  - Can make code harder to understand")
-    print("  - Performance overhead (indirection)")
-    print("\nWhen to Use:")
-    print("  - Integrating third-party libraries")
-    print("  - Working with legacy code")
-    print("  - Making incompatible interfaces compatible")
-    print("  - Wrapping APIs for consistent interface")
-    print("\nWhen NOT to Use:")
-    print("  - Can modify source code directly")
-    print("  - Interfaces are already compatible")
-    print("  - Performance is critical")
-    print("\nAdapter Types:")
-    print("  - Object Adapter: Uses composition (preferred)")
-    print("  - Class Adapter: Uses multiple inheritance")
-    print("\nCommon Use Cases:")
-    print("  - Integrating third-party libraries")
-    print("  - Legacy code integration")
-    print("  - API wrappers")
-    print("  - Data format conversion")
-    print("  - Database adapters (ODBC, JDBC)")
-    print("  - UI framework adapters")
-    print("\nReal-world Examples:")
-    print("  - Java: Arrays.asList() adapts array to List")
-    print("  - Python: io.TextIOWrapper adapts bytes to text")
-    print("  - Database: JDBC adapters for different databases")
-    print("  - Payment: Payment gateway adapters")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Convert the interface of a class into another interface")
+    logger.info("  clients expect. Adapter lets classes work together that")
+    logger.info("  couldn't otherwise because of incompatible interfaces.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Allows incompatible interfaces to work together")
+    logger.info("  - Reuses existing classes without modification")
+    logger.info("  - Single Responsibility (separation of concerns)")
+    logger.info("  - Open/Closed Principle (can add new adapters)")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Adds complexity (extra layer)")
+    logger.info("  - Can make code harder to understand")
+    logger.info("  - Performance overhead (indirection)")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Integrating third-party libraries")
+    logger.info("  - Working with legacy code")
+    logger.info("  - Making incompatible interfaces compatible")
+    logger.info("  - Wrapping APIs for consistent interface")
+    logger.info("\nWhen NOT to Use:")
+    logger.info("  - Can modify source code directly")
+    logger.info("  - Interfaces are already compatible")
+    logger.info("  - Performance is critical")
+    logger.info("\nAdapter Types:")
+    logger.info("  - Object Adapter: Uses composition (preferred)")
+    logger.info("  - Class Adapter: Uses multiple inheritance")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Integrating third-party libraries")
+    logger.info("  - Legacy code integration")
+    logger.info("  - API wrappers")
+    logger.info("  - Data format conversion")
+    logger.info("  - Database adapters (ODBC, JDBC)")
+    logger.info("  - UI framework adapters")
+    logger.info("\nReal-world Examples:")
+    logger.info("  - Java: Arrays.asList() adapts array to List")
+    logger.info("  - Python: io.TextIOWrapper adapts bytes to text")
+    logger.info("  - Database: JDBC adapters for different databases")
+    logger.info("  - Payment: Payment gateway adapters")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

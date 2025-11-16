@@ -1,0 +1,12 @@
+{
+  "name": "database_federation",
+  "display_name": "Database Federation",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_105_database_architecture",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

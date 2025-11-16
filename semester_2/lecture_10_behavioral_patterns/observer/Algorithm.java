@@ -5,7 +5,10 @@ import java.util.*;
  * 
  * One-to-many dependency: when subject changes, observers are notified.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     // Observer interface
     interface Observer {
@@ -27,13 +30,13 @@ public class Algorithm {
         public void attach(Observer observer) {
             if (!observers.contains(observer)) {
                 observers.add(observer);
-                System.out.println("Observer attached: " + observer);
+                logger.info("Observer attached: " + observer);
             }
         }
         
         public void detach(Observer observer) {
             observers.remove(observer);
-            System.out.println("Observer detached: " + observer);
+            logger.info("Observer detached: " + observer);
         }
         
         public void notifyObservers() {
@@ -44,7 +47,7 @@ public class Algorithm {
         
         public void setNews(String news) {
             this.news = news;
-            System.out.println("\nNews Agency: Publishing news - '" + news + "'");
+            logger.info("\nNews Agency: Publishing news - '" + news + "'");
             notifyObservers();
         }
     }
@@ -61,7 +64,7 @@ public class Algorithm {
         public void update(Object data) {
             if (data instanceof String) {
                 this.news = (String) data;
-                System.out.println("  " + name + ": Received news - '" + news + "'");
+                logger.info("  " + name + ": Received news - '" + news + "'");
             }
         }
         
@@ -82,7 +85,7 @@ public class Algorithm {
         public void update(Object data) {
             if (data instanceof String) {
                 this.news = (String) data;
-                System.out.println("  Email to " + email + ": '" + news + "'");
+                logger.info("  Email to " + email + ": '" + news + "'");
             }
         }
         
@@ -142,7 +145,7 @@ public class Algorithm {
                 WeatherData weather = (WeatherData) data;
                 this.temperature = weather.getTemperature();
                 this.humidity = weather.getHumidity();
-                System.out.println("  " + name + " Display:");
+                logger.info("  " + name + " Display:");
                 System.out.printf("    Temperature: %.1f°F%n", temperature);
                 System.out.printf("    Humidity: %.1f%%%n", humidity);
             }
@@ -214,11 +217,11 @@ public class Algorithm {
                 System.out.printf("  %s: %s = $%.2f", name, stock.getSymbol(), price);
                 
                 if (buyThreshold != null && price <= buyThreshold) {
-                    System.out.println(" → BUY SIGNAL!");
+                    logger.info(" → BUY SIGNAL!");
                 } else if (sellThreshold != null && price >= sellThreshold) {
-                    System.out.println(" → SELL SIGNAL!");
+                    logger.info(" → SELL SIGNAL!");
                 } else {
-                    System.out.println();
+                    logger.info();
                 }
                 
                 lastPrice = price;
@@ -229,14 +232,14 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("OBSERVER DESIGN PATTERN DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("OBSERVER DESIGN PATTERN DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: News Agency
-        System.out.println("Example 1: News Agency");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: News Agency");
+        logger.info("-".repeat(70));
         
         NewsAgency agency = new NewsAgency();
         NewsChannel channel1 = new NewsChannel("CNN");
@@ -248,15 +251,15 @@ public class Algorithm {
         agency.attach(email1);
         
         agency.setNews("Breaking: New algorithm discovered!");
-        System.out.println();
+        logger.info();
         
         agency.detach(channel2);
         agency.setNews("Update: Algorithm implementation complete!");
-        System.out.println();
+        logger.info();
         
         // Example 2: Weather Station
-        System.out.println("Example 2: Weather Station");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Weather Station");
+        logger.info("-".repeat(70));
         
         WeatherData weather = new WeatherData();
         CurrentConditionsDisplay display1 = 
@@ -268,14 +271,14 @@ public class Algorithm {
         weather.attach(display2);
         
         weather.setMeasurements(75.0, 65.0, 30.4);
-        System.out.println();
+        logger.info();
         
         weather.setMeasurements(80.0, 70.0, 30.2);
-        System.out.println();
+        logger.info();
         
         // Example 3: Stock Market
-        System.out.println("Example 3: Stock Market Trading");
-        System.out.println("-".repeat(70));
+        logger.info("Example 3: Stock Market Trading");
+        logger.info("-".repeat(70));
         
         Stock apple = new Stock("AAPL", 150.00);
         StockTrader trader1 = new StockTrader("Alice", 145.0, 160.0);
@@ -288,23 +291,22 @@ public class Algorithm {
         apple.setPrice(142.00);
         apple.setPrice(155.00);
         apple.setPrice(162.00);
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern Summary:");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Loose coupling");
-        System.out.println("  - Dynamic subscription");
-        System.out.println("  - Broadcast communication");
-        System.out.println("\nWhen to Use:");
-        System.out.println("  - Event-driven systems");
-        System.out.println("  - MVC architecture");
-        System.out.println("  - Publish-Subscribe");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern Summary:");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Loose coupling");
+        logger.info("  - Dynamic subscription");
+        logger.info("  - Broadcast communication");
+        logger.info("\nWhen to Use:");
+        logger.info("  - Event-driven systems");
+        logger.info("  - MVC architecture");
+        logger.info("  - Publish-Subscribe");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }
 }
-

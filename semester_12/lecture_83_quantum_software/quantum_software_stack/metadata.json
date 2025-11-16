@@ -1,0 +1,12 @@
+{
+  "name": "quantum_software_stack",
+  "display_name": "Quantum Software Stack",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_83_quantum_software",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

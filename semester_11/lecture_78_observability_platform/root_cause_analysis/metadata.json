@@ -1,0 +1,12 @@
+{
+  "name": "root_cause_analysis",
+  "display_name": "Root Cause Analysis",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_78_observability_platform",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

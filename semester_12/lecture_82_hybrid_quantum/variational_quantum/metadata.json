@@ -1,0 +1,12 @@
+{
+  "name": "variational_quantum",
+  "display_name": "Variational Quantum",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_82_hybrid_quantum",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

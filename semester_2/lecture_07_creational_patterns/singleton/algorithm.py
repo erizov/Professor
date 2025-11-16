@@ -10,6 +10,8 @@ import sys
 from pathlib import Path
 from threading import Lock
 from typing import Optional
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
@@ -68,13 +70,13 @@ class DatabaseConnection(Singleton):
         if not self.connected:
             self.connection_string = connection_string
             self.connected = True
-            print(f"Connected to database: {connection_string}")
+            logger.info(f"Connected to database: {connection_string}")
     
     def disconnect(self) -> None:
         """Close database connection."""
         if self.connected:
             self.connected = False
-            print("Disconnected from database")
+            logger.info("Disconnected from database")
     
     def execute_query(self, query: str) -> str:
         """Execute database query."""
@@ -111,7 +113,7 @@ class Logger:
         """Log a message."""
         log_entry = f"[{level}] {message}"
         self.logs.append(log_entry)
-        print(log_entry)
+        logger.info(log_entry)
     
     def get_logs(self) -> list:
         """Get all logs."""
@@ -158,44 +160,44 @@ class CacheManager(metaclass=SingletonMeta):
 
 def main() -> None:
     """Demonstration of Singleton Pattern."""
-    print("=" * 70)
-    print("SINGLETON DESIGN PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("SINGLETON DESIGN PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic Singleton
-    print("Example 1: Configuration Manager Singleton")
-    print("-" * 70)
+    logger.info("Example 1: Configuration Manager Singleton")
+    logger.info("-" * 70)
     
     config1 = ConfigurationManager()
     config1.set("database_url", "localhost:5432")
     config1.set("debug", True)
     
     config2 = ConfigurationManager()
-    print(f"config1 is config2: {config1 is config2}")
-    print(f"config1 ID: {id(config1)}")
-    print(f"config2 ID: {id(config2)}")
-    print(f"config2.get('database_url'): {config2.get('database_url')}")
-    print(f"config2.get('debug'): {config2.get('debug')}")
-    print()
+    logger.info(f"config1 is config2: {config1 is config2}")
+    logger.info(f"config1 ID: {id(config1)}")
+    logger.info(f"config2 ID: {id(config2)}")
+    logger.info(f"config2.get('database_url'): {config2.get('database_url')}")
+    logger.info(f"config2.get('debug'): {config2.get('debug')}")
+    logger.info()
     
     # Example 2: Database Connection Singleton
-    print("Example 2: Database Connection Singleton")
-    print("-" * 70)
+    logger.info("Example 2: Database Connection Singleton")
+    logger.info("-" * 70)
     
     db1 = DatabaseConnection()
     db1.connect("postgresql://localhost:5432/mydb")
     
     db2 = DatabaseConnection()
-    print(f"db1 is db2: {db1 is db2}")
-    print(db2.execute_query("SELECT * FROM users"))
+    logger.info(f"db1 is db2: {db1 is db2}")
+    logger.info(db2.execute_query("SELECT * FROM users"))
     
     db1.disconnect()
-    print()
+    logger.info()
     
     # Example 3: Logger with Decorator
-    print("Example 3: Logger Singleton (Decorator Pattern)")
-    print("-" * 70)
+    logger.info("Example 3: Logger Singleton (Decorator Pattern)")
+    logger.info("-" * 70)
     
     logger1 = Logger()
     logger1.log("Application started")
@@ -204,27 +206,27 @@ def main() -> None:
     logger2 = Logger()
     logger2.log("Processing request", "DEBUG")
     
-    print(f"\nlogger1 is logger2: {logger1 is logger2}")
-    print(f"Total logs: {len(logger1.get_logs())}")
-    print()
+    logger.info(f"\nlogger1 is logger2: {logger1 is logger2}")
+    logger.info(f"Total logs: {len(logger1.get_logs())}")
+    logger.info()
     
     # Example 4: Cache Manager with Metaclass
-    print("Example 4: Cache Manager (Metaclass Implementation)")
-    print("-" * 70)
+    logger.info("Example 4: Cache Manager (Metaclass Implementation)")
+    logger.info("-" * 70)
     
     cache1 = CacheManager()
     cache1.set("user_123", {"name": "John", "age": 30})
     cache1.set("user_456", {"name": "Jane", "age": 25})
     
     cache2 = CacheManager()
-    print(f"cache1 is cache2: {cache1 is cache2}")
-    print(f"cache2.get('user_123'): {cache2.get('user_123')}")
-    print(f"Cache contents: {cache2.cache}")
-    print()
+    logger.info(f"cache1 is cache2: {cache1 is cache2}")
+    logger.info(f"cache2.get('user_123'): {cache2.get('user_123')}")
+    logger.info(f"Cache contents: {cache2.cache}")
+    logger.info()
     
     # Example 5: Thread Safety Demonstration
-    print("Example 5: Thread Safety")
-    print("-" * 70)
+    logger.info("Example 5: Thread Safety")
+    logger.info("-" * 70)
     
     import threading
     
@@ -245,41 +247,41 @@ def main() -> None:
     
     # Check all instances are the same
     all_same = all(inst is instances[0] for inst in instances)
-    print(f"Created {len(instances)} instances")
-    print(f"All instances are the same: {all_same}")
-    print(f"Unique IDs: {len(set(id(inst) for inst in instances))}")
-    print()
+    logger.info(f"Created {len(instances)} instances")
+    logger.info(f"All instances are the same: {all_same}")
+    logger.info(f"Unique IDs: {len(set(id(inst) for inst in instances))}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Ensure a class has only one instance and provide")
-    print("  global access to it.")
-    print("\nKey Advantages:")
-    print("  - Controlled access to sole instance")
-    print("  - Reduced namespace pollution")
-    print("  - Lazy initialization possible")
-    print("  - Can be subclassed")
-    print("\nKey Disadvantages:")
-    print("  - Violates Single Responsibility Principle")
-    print("  - Can make unit testing difficult")
-    print("  - Hides dependencies")
-    print("  - Requires special care in multithreaded environments")
-    print("\nWhen to Use:")
-    print("  - Logging")
-    print("  - Configuration management")
-    print("  - Connection pools")
-    print("  - Cache managers")
-    print("  - Thread pools")
-    print("\nWhen Not to Use:")
-    print("  - When multiple instances are needed")
-    print("  - For objects with no shared state")
-    print("  - When it complicates testing")
-    print("\nImplementation Notes:")
-    print("  - Python: Use __new__, decorator, or metaclass")
-    print("  - Thread safety: Use locks for thread-safe access")
-    print("  - Lazy vs Eager: Choose based on initialization cost")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Ensure a class has only one instance and provide")
+    logger.info("  global access to it.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Controlled access to sole instance")
+    logger.info("  - Reduced namespace pollution")
+    logger.info("  - Lazy initialization possible")
+    logger.info("  - Can be subclassed")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Violates Single Responsibility Principle")
+    logger.info("  - Can make unit testing difficult")
+    logger.info("  - Hides dependencies")
+    logger.info("  - Requires special care in multithreaded environments")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Logging")
+    logger.info("  - Configuration management")
+    logger.info("  - Connection pools")
+    logger.info("  - Cache managers")
+    logger.info("  - Thread pools")
+    logger.info("\nWhen Not to Use:")
+    logger.info("  - When multiple instances are needed")
+    logger.info("  - For objects with no shared state")
+    logger.info("  - When it complicates testing")
+    logger.info("\nImplementation Notes:")
+    logger.info("  - Python: Use __new__, decorator, or metaclass")
+    logger.info("  - Thread safety: Use locks for thread-safe access")
+    logger.info("  - Lazy vs Eager: Choose based on initialization cost")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,12 @@
+{
+  "name": "lambda_architecture",
+  "display_name": "Lambda Architecture",
+  "category": "Advanced Graduate Level",
+  "semester": 16,
+  "lecture": "lecture_111_data_engineering_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

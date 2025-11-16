@@ -3,6 +3,8 @@
 """Selection Sort implementation."""
 
 from typing import List, TypeVar
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 T = TypeVar('T')
 
@@ -36,16 +38,16 @@ def selection_sort(arr: List[T]) -> List[T]:
 
 def main():
     """Demonstration."""
-    print("=" * 70)
-    print("SELECTION SORT")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("SELECTION SORT")
+    logger.info("=" * 70)
     
     data = [64, 34, 25, 12, 22, 11, 90]
-    print(f"Original: {data}")
+    logger.info(f"Original: {data}")
     result = selection_sort(data.copy())
-    print(f"Sorted:   {result}")
+    logger.info(f"Sorted:   {result}")
     
-    print("\nComplexity: O(n²) time, O(1) space")
+    logger.info("\nComplexity: O(n²) time, O(1) space")
 
 
 if __name__ == "__main__":

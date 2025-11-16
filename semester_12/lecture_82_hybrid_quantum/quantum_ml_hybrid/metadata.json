@@ -1,0 +1,12 @@
+{
+  "name": "quantum_ml_hybrid",
+  "display_name": "Quantum Ml Hybrid",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_82_hybrid_quantum",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

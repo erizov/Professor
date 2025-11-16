@@ -1,0 +1,12 @@
+{
+  "name": "quantum_circuits",
+  "display_name": "Quantum Circuits",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_80_quantum_computing_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

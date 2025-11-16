@@ -5,7 +5,10 @@ import java.util.*;
  * 
  * Separates read and write operations.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class User {
         private int userId;
@@ -45,7 +48,7 @@ public class Algorithm {
         int handleCreateUser(CreateUserCommand command) {
             User user = new User(nextId++, command.name, command.email);
             writeStore.put(user.getUserId(), user);
-            System.out.println("[Command] Created user: " + user.getName());
+            logger.info("[Command] Created user: " + user.getName());
             return user.getUserId();
         }
     }
@@ -60,7 +63,7 @@ public class Algorithm {
         User handleGetUser(int userId) {
             User user = readStore.get(userId);
             if (user != null) {
-                System.out.println("[Query] Retrieved user: " + user.getName());
+                logger.info("[Query] Retrieved user: " + user.getName());
             }
             return user;
         }
@@ -69,10 +72,10 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("CQRS PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("CQRS PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         CommandHandler commandHandler = new CommandHandler();
         QueryHandler queryHandler = new QueryHandler(commandHandler.writeStore);
@@ -80,16 +83,16 @@ public class Algorithm {
         int userId = commandHandler.handleCreateUser(
             new CreateUserCommand("Alice", "alice@example.com")
         );
-        System.out.println();
+        logger.info();
         
         queryHandler.handleGetUser(userId);
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: Separates commands and queries");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: Separates commands and queries");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

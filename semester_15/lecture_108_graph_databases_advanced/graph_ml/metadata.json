@@ -1,0 +1,12 @@
+{
+  "name": "graph_ml",
+  "display_name": "Graph Ml",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_108_graph_databases_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

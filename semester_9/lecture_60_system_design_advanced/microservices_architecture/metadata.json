@@ -1,0 +1,12 @@
+{
+  "name": "microservices_architecture",
+  "display_name": "Microservices Architecture",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_60_system_design_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -10,6 +10,8 @@ vary independently.
 import sys
 from pathlib import Path
 from abc import ABC, abstractmethod
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
@@ -29,14 +31,14 @@ class DrawingAPI1(DrawingAPI):
     """First drawing API implementation."""
     
     def draw_circle(self, x: float, y: float, radius: float) -> None:
-        print(f"API1.circle at ({x:.2f}, {y:.2f}) radius {radius:.2f}")
+        logger.info(f"API1.circle at ({x:.2f}, {y:.2f}) radius {radius:.2f}")
 
 
 class DrawingAPI2(DrawingAPI):
     """Second drawing API implementation."""
     
     def draw_circle(self, x: float, y: float, radius: float) -> None:
-        print(f"API2.circle at ({x:.2f}, {y:.2f}) radius {radius:.2f}")
+        logger.info(f"API2.circle at ({x:.2f}, {y:.2f}) radius {radius:.2f}")
 
 
 # Abstraction
@@ -103,15 +105,15 @@ class TV(Device):
     
     def turn_on(self) -> None:
         self.is_on = True
-        print("TV is ON")
+        logger.info("TV is ON")
     
     def turn_off(self) -> None:
         self.is_on = False
-        print("TV is OFF")
+        logger.info("TV is OFF")
     
     def set_volume(self, volume: int) -> None:
         self.volume = max(0, min(100, volume))
-        print(f"TV volume set to {self.volume}")
+        logger.info(f"TV volume set to {self.volume}")
 
 
 class Radio(Device):
@@ -123,15 +125,15 @@ class Radio(Device):
     
     def turn_on(self) -> None:
         self.is_on = True
-        print("Radio is ON")
+        logger.info("Radio is ON")
     
     def turn_off(self) -> None:
         self.is_on = False
-        print("Radio is OFF")
+        logger.info("Radio is OFF")
     
     def set_volume(self, volume: int) -> None:
         self.volume = max(0, min(100, volume))
-        print(f"Radio volume set to {self.volume}")
+        logger.info(f"Radio volume set to {self.volume}")
 
 
 class RemoteControl(ABC):
@@ -182,19 +184,19 @@ class AdvancedRemote(RemoteControl):
     def mute(self) -> None:
         """Mute device."""
         self.device.set_volume(0)
-        print("Device muted")
+        logger.info("Device muted")
 
 
 def main() -> None:
     """Demonstration of Bridge Pattern."""
-    print("=" * 70)
-    print("BRIDGE DESIGN PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("BRIDGE DESIGN PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Drawing Shapes
-    print("Example 1: Drawing Shapes with Different APIs")
-    print("-" * 70)
+    logger.info("Example 1: Drawing Shapes with Different APIs")
+    logger.info("-" * 70)
     
     shapes = [
         CircleShape(1, 2, 3, DrawingAPI1()),
@@ -205,11 +207,11 @@ def main() -> None:
         shape.draw()
         shape.resize_by_percentage(50)
         shape.draw()
-    print()
+    logger.info()
     
     # Example 2: Remote Control and Devices
-    print("Example 2: Remote Control and Devices")
-    print("-" * 70)
+    logger.info("Example 2: Remote Control and Devices")
+    logger.info("-" * 70)
     
     tv = TV()
     radio = Radio()
@@ -217,58 +219,58 @@ def main() -> None:
     basic_tv_remote = BasicRemote(tv)
     advanced_radio_remote = AdvancedRemote(radio)
     
-    print("Using basic remote with TV:")
+    logger.info("Using basic remote with TV:")
     basic_tv_remote.toggle_power()
     basic_tv_remote.volume_up()
     basic_tv_remote.volume_up()
     basic_tv_remote.volume_down()
-    print()
+    logger.info()
     
-    print("Using advanced remote with radio:")
+    logger.info("Using advanced remote with radio:")
     advanced_radio_remote.toggle_power()
     advanced_radio_remote.volume_up()
     advanced_radio_remote.volume_up()
     advanced_radio_remote.mute()
-    print()
+    logger.info()
     
     # Example 3: Switch device
-    print("Example 3: Same Remote, Different Device")
-    print("-" * 70)
+    logger.info("Example 3: Same Remote, Different Device")
+    logger.info("-" * 70)
     
     # Same remote can work with different devices
     basic_radio_remote = BasicRemote(radio)
     basic_radio_remote.toggle_power()
     basic_radio_remote.volume_up()
-    print()
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Decouple an abstraction from its implementation so")
-    print("  that the two can vary independently.")
-    print("\nKey Advantages:")
-    print("  - Separates abstraction from implementation")
-    print("  - Implementation can vary independently")
-    print("  - Hides implementation details from clients")
-    print("  - Can switch implementations at runtime")
-    print("\nKey Disadvantages:")
-    print("  - Increases complexity")
-    print("  - Can be overkill for simple cases")
-    print("  - Requires careful design")
-    print("\nWhen to Use:")
-    print("  - Want to avoid permanent binding between abstraction and implementation")
-    print("  - Both abstraction and implementation should be extensible")
-    print("  - Changes in implementation should not affect clients")
-    print("  - Want to share implementation among multiple objects")
-    print("\nBridge vs Adapter:")
-    print("  - Bridge: Design-time decision, separates concerns")
-    print("  - Adapter: Runtime decision, makes incompatible interfaces work")
-    print("\nCommon Use Cases:")
-    print("  - GUI frameworks (platform independence)")
-    print("  - Database drivers")
-    print("  - Device drivers")
-    print("  - Remote controls")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Decouple an abstraction from its implementation so")
+    logger.info("  that the two can vary independently.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Separates abstraction from implementation")
+    logger.info("  - Implementation can vary independently")
+    logger.info("  - Hides implementation details from clients")
+    logger.info("  - Can switch implementations at runtime")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Increases complexity")
+    logger.info("  - Can be overkill for simple cases")
+    logger.info("  - Requires careful design")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Want to avoid permanent binding between abstraction and implementation")
+    logger.info("  - Both abstraction and implementation should be extensible")
+    logger.info("  - Changes in implementation should not affect clients")
+    logger.info("  - Want to share implementation among multiple objects")
+    logger.info("\nBridge vs Adapter:")
+    logger.info("  - Bridge: Design-time decision, separates concerns")
+    logger.info("  - Adapter: Runtime decision, makes incompatible interfaces work")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - GUI frameworks (platform independence)")
+    logger.info("  - Database drivers")
+    logger.info("  - Device drivers")
+    logger.info("  - Remote controls")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

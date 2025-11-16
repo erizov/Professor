@@ -6,7 +6,10 @@ import java.time.LocalDateTime;
  * 
  * Prevents cascading failures.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     enum CircuitState {
         CLOSED, OPEN, HALF_OPEN
@@ -74,28 +77,28 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("CIRCUIT BREAKER PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("CIRCUIT BREAKER PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         CircuitBreaker breaker = new CircuitBreaker();
         
         try {
             String result = breaker.call(() -> "Service response");
-            System.out.println("Result: " + result);
+            logger.info("Result: " + result);
         } catch (Exception e) {
-            System.out.println("Error: " + e.getMessage());
+            logger.info("Error: " + e.getMessage());
         }
         
-        System.out.println("State: " + breaker.getState());
-        System.out.println();
+        logger.info("State: " + breaker.getState());
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: Prevents cascading failures");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: Prevents cascading failures");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

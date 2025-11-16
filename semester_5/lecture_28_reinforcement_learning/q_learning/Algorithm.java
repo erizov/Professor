@@ -5,24 +5,27 @@
  * Time Complexity: O(states*actions)
  * Space Complexity: O(states*actions)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("==".repeat(35));
-        System.out.println("Q-Learning");
-        System.out.println("==".repeat(35));
-        System.out.println("Category: Reinforcement Learning");
-        System.out.println("Time: O(states*actions)");
-        System.out.println("Space: O(states*actions)");
-        System.out.println();
-        System.out.println("Resource Requirements:");
-        System.out.println("  - GPU: Optional");
-        System.out.println("  - Memory: Medium");
-        System.out.println("==".repeat(35));
+        logger.info("==".repeat(35));
+        logger.info("Q-Learning");
+        logger.info("==".repeat(35));
+        logger.info("Category: Reinforcement Learning");
+        logger.info("Time: O(states*actions)");
+        logger.info("Space: O(states*actions)");
+        logger.info();
+        logger.info("Resource Requirements:");
+        logger.info("  - GPU: Optional");
+        logger.info("  - Memory: Medium");
+        logger.info("==".repeat(35));
         
         long endTime = System.nanoTime();
         double durationMs = (endTime - startTime) / 1_000_000.0;
-        System.out.println(String.format("\nExecution time: %.3f ms", durationMs));
+        logger.info(String.format("\nExecution time: %.3f ms", durationMs));
     }
 }

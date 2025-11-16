@@ -16,6 +16,8 @@ from collections import Counter
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class HuffmanNode:
@@ -157,44 +159,44 @@ class HuffmanCoding:
 
 def main() -> None:
     """Demonstration of Huffman Coding."""
-    print("=" * 70)
-    print("HUFFMAN CODING DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("HUFFMAN CODING DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic encoding/decoding
-    print("Example 1: Basic Encoding and Decoding")
-    print("-" * 70)
+    logger.info("Example 1: Basic Encoding and Decoding")
+    logger.info("-" * 70)
     
     text = "hello world"
     huffman = HuffmanCoding()
     huffman.build_tree(text)
     
-    print(f"Original text: '{text}'")
-    print(f"Character frequencies: {Counter(text)}")
-    print()
+    logger.info(f"Original text: '{text}'")
+    logger.info(f"Character frequencies: {Counter(text)}")
+    logger.info()
     
     codes = huffman.get_codes()
-    print("Huffman codes:")
+    logger.info("Huffman codes:")
     for char, code in sorted(codes.items()):
-        print(f"  '{char}': {code}")
-    print()
+        logger.info(f"  '{char}': {code}")
+    logger.info()
     
     encoded = huffman.encode(text)
-    print(f"Encoded: {encoded}")
-    print(f"Original size: {len(text) * 8} bits")
-    print(f"Encoded size: {len(encoded)} bits")
-    print(f"Compression ratio: {huffman.compression_ratio(text, encoded):.2%}")
-    print()
+    logger.info(f"Encoded: {encoded}")
+    logger.info(f"Original size: {len(text) * 8} bits")
+    logger.info(f"Encoded size: {len(encoded)} bits")
+    logger.info(f"Compression ratio: {huffman.compression_ratio(text, encoded):.2%}")
+    logger.info()
     
     decoded = huffman.decode(encoded)
-    print(f"Decoded: '{decoded}'")
-    print(f"Match: {text == decoded}")
-    print()
+    logger.info(f"Decoded: '{decoded}'")
+    logger.info(f"Match: {text == decoded}")
+    logger.info()
     
     # Example 2: Different texts
-    print("Example 2: Different Text Examples")
-    print("-" * 70)
+    logger.info("Example 2: Different Text Examples")
+    logger.info("-" * 70)
     
     texts = [
         "aabbcc",
@@ -208,15 +210,15 @@ def main() -> None:
         encoded = huff.encode(text)
         decoded = huff.decode(encoded)
         
-        print(f"Text: '{text}'")
-        print(f"  Encoded: {encoded}")
-        print(f"  Compression: {huff.compression_ratio(text, encoded):.2%}")
-        print(f"  Decoded correctly: {text == decoded}")
-        print()
+        logger.info(f"Text: '{text}'")
+        logger.info(f"  Encoded: {encoded}")
+        logger.info(f"  Compression: {huff.compression_ratio(text, encoded):.2%}")
+        logger.info(f"  Decoded correctly: {text == decoded}")
+        logger.info()
     
     # Example 3: Performance measurement
-    print("Example 3: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 3: Performance Measurement")
+    logger.info("-" * 70)
     
     text = "the quick brown fox jumps over the lazy dog" * 100
     
@@ -230,14 +232,14 @@ def main() -> None:
         return len(encoded)
     
     result, metrics = timer.measure(huffman_operations)
-    print(f"Text length: {len(text)} characters")
-    print(f"Time: {metrics['execution_time_ms']:.3f} ms")
-    print(f"Encoded size: {result} bits")
-    print()
+    logger.info(f"Text length: {len(text)} characters")
+    logger.info(f"Time: {metrics['execution_time_ms']:.3f} ms")
+    logger.info(f"Encoded size: {result} bits")
+    logger.info()
     
     # Example 4: Compression efficiency
-    print("Example 4: Compression Efficiency")
-    print("-" * 70)
+    logger.info("Example 4: Compression Efficiency")
+    logger.info("-" * 70)
     
     test_texts = [
         ("Repeated", "aaaaabbbbbccccc"),
@@ -251,38 +253,38 @@ def main() -> None:
         encoded = huff.encode(text)
         ratio = huff.compression_ratio(text, encoded)
         
-        print(f"{name}:")
-        print(f"  Original: {len(text) * 8} bits")
-        print(f"  Encoded: {len(encoded)} bits")
-        print(f"  Ratio: {ratio:.2%}")
-        print()
+        logger.info(f"{name}:")
+        logger.info(f"  Original: {len(text) * 8} bits")
+        logger.info(f"  Encoded: {len(encoded)} bits")
+        logger.info(f"  Ratio: {ratio:.2%}")
+        logger.info()
     
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Build Tree: O(n log n) - n is number of unique characters")
-    print("  Encode:     O(m) - m is text length")
-    print("  Decode:     O(m) - m is encoded length")
-    print("  Space:      O(n) - for tree and codes")
-    print("\nKey Advantages:")
-    print("  - Optimal prefix code")
-    print("  - Lossless compression")
-    print("  - Efficient for skewed frequencies")
-    print("  - Widely used")
-    print("\nKey Disadvantages:")
-    print("  - Requires frequency analysis")
-    print("  - Not optimal for all distributions")
-    print("  - Tree overhead")
-    print("\nWhen to Use:")
-    print("  - Text compression")
-    print("  - File compression")
-    print("  - Data transmission")
-    print("  - Skewed frequency distributions")
-    print("\nCommon Use Cases:")
-    print("  - ZIP compression")
-    print("  - Image compression (JPEG)")
-    print("  - Network protocols")
-    print("  - Data storage")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Build Tree: O(n log n) - n is number of unique characters")
+    logger.info("  Encode:     O(m) - m is text length")
+    logger.info("  Decode:     O(m) - m is encoded length")
+    logger.info("  Space:      O(n) - for tree and codes")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Optimal prefix code")
+    logger.info("  - Lossless compression")
+    logger.info("  - Efficient for skewed frequencies")
+    logger.info("  - Widely used")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Requires frequency analysis")
+    logger.info("  - Not optimal for all distributions")
+    logger.info("  - Tree overhead")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Text compression")
+    logger.info("  - File compression")
+    logger.info("  - Data transmission")
+    logger.info("  - Skewed frequency distributions")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - ZIP compression")
+    logger.info("  - Image compression (JPEG)")
+    logger.info("  - Network protocols")
+    logger.info("  - Data storage")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

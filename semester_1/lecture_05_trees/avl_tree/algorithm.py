@@ -14,6 +14,8 @@ sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
 
 from typing import Optional, List, Any
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class AVLNode:
@@ -244,64 +246,64 @@ class AVLTree:
         
         if node is not None:
             self.print_tree(node.right, level + 1)
-            print(' ' * 4 * level + '→ ' + 
+            logger.info(' ' * 4 * level + '→ ' + 
                   f"{node.key} (h={node.height})")
             self.print_tree(node.left, level + 1)
 
 
 def main() -> None:
     """Demonstration of AVL Tree."""
-    print("=" * 70)
-    print("AVL TREE DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("AVL TREE DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic operations
-    print("Example 1: Basic Insert and Search")
-    print("-" * 70)
+    logger.info("Example 1: Basic Insert and Search")
+    logger.info("-" * 70)
     avl = AVLTree()
     keys = [10, 20, 30, 40, 50, 25]
     
-    print(f"Inserting: {keys}")
+    logger.info(f"Inserting: {keys}")
     for key in keys:
         avl.insert(key)
     
-    print("\nTree structure:")
+    logger.info("\nTree structure:")
     avl.print_tree()
     
-    print(f"\nInorder traversal: {avl.inorder()}")
-    print(f"Search for 30: {avl.search(30)}")
-    print(f"Search for 35: {avl.search(35)}")
-    print()
+    logger.info(f"\nInorder traversal: {avl.inorder()}")
+    logger.info(f"Search for 30: {avl.search(30)}")
+    logger.info(f"Search for 35: {avl.search(35)}")
+    logger.info()
     
     # Example 2: Deletion
-    print("Example 2: Deletion")
-    print("-" * 70)
-    print("Deleting 10, 30...")
+    logger.info("Example 2: Deletion")
+    logger.info("-" * 70)
+    logger.info("Deleting 10, 30...")
     avl.delete(10)
     avl.delete(30)
     
-    print("\nTree structure after deletion:")
+    logger.info("\nTree structure after deletion:")
     avl.print_tree()
-    print(f"Inorder traversal: {avl.inorder()}")
-    print()
+    logger.info(f"Inorder traversal: {avl.inorder()}")
+    logger.info()
     
     # Example 3: Left-Left rotation
-    print("Example 3: Left-Left Rotation")
-    print("-" * 70)
+    logger.info("Example 3: Left-Left Rotation")
+    logger.info("-" * 70)
     avl2 = AVLTree()
-    print("Inserting 30, 20, 10 (triggers LL rotation)")
+    logger.info("Inserting 30, 20, 10 (triggers LL rotation)")
     avl2.insert(30)
     avl2.insert(20)
     avl2.insert(10)  # Triggers rotation
     
-    print("\nBalanced tree:")
+    logger.info("\nBalanced tree:")
     avl2.print_tree()
-    print()
+    logger.info()
     
     # Example 4: Performance
-    print("Example 4: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 4: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("AVL Tree")
     
@@ -313,28 +315,28 @@ def main() -> None:
         return tree
     
     _, metrics_100 = timer.measure(test_insertions, 100)
-    print(f"100 insertions:")
-    print(f"  Time: {metrics_100['execution_time_ms']:.3f} ms")
+    logger.info(f"100 insertions:")
+    logger.info(f"  Time: {metrics_100['execution_time_ms']:.3f} ms")
     
     _, metrics_1000 = timer.measure(test_insertions, 1000)
-    print(f"\n1,000 insertions:")
-    print(f"  Time: {metrics_1000['execution_time_ms']:.3f} ms")
+    logger.info(f"\n1,000 insertions:")
+    logger.info(f"  Time: {metrics_1000['execution_time_ms']:.3f} ms")
     
-    print()
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O(log n) - insert, delete, search")
-    print("  Space: O(n) - storage")
-    print("  Height: O(log n) - guaranteed balanced")
-    print("\nKey Advantages:")
-    print("  - Guaranteed O(log n) operations")
-    print("  - Self-balancing")
-    print("  - Better worst-case than BST")
-    print("\nKey Disadvantages:")
-    print("  - More complex than BST")
-    print("  - Extra storage for height")
-    print("  - More rotations than Red-Black trees")
-    print("=" * 70)
+    logger.info()
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  O(log n) - insert, delete, search")
+    logger.info("  Space: O(n) - storage")
+    logger.info("  Height: O(log n) - guaranteed balanced")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Guaranteed O(log n) operations")
+    logger.info("  - Self-balancing")
+    logger.info("  - Better worst-case than BST")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - More complex than BST")
+    logger.info("  - Extra storage for height")
+    logger.info("  - More rotations than Red-Black trees")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

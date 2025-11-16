@@ -1,0 +1,12 @@
+{
+  "name": "address_clustering",
+  "display_name": "Address Clustering",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_94_blockchain_analytics",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

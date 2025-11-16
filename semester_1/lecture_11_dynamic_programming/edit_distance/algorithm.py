@@ -13,6 +13,8 @@ from typing import List, Tuple
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 def edit_distance(s1: str, s2: str) -> int:
@@ -162,14 +164,14 @@ def similarity(s1: str, s2: str) -> float:
 
 def main() -> None:
     """Demonstration of Edit Distance Algorithm."""
-    print("=" * 70)
-    print("EDIT DISTANCE (LEVENSHTEIN DISTANCE) DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("EDIT DISTANCE (LEVENSHTEIN DISTANCE) DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic edit distance
-    print("Example 1: Basic Edit Distance")
-    print("-" * 70)
+    logger.info("Example 1: Basic Edit Distance")
+    logger.info("-" * 70)
     
     test_cases = [
         ("kitten", "sitting"),
@@ -180,25 +182,25 @@ def main() -> None:
     
     for s1, s2 in test_cases:
         distance = edit_distance(s1, s2)
-        print(f"'{s1}' -> '{s2}': {distance} operations")
-    print()
+        logger.info(f"'{s1}' -> '{s2}': {distance} operations")
+    logger.info()
     
     # Example 2: Edit operations
-    print("Example 2: Edit Operations")
-    print("-" * 70)
+    logger.info("Example 2: Edit Operations")
+    logger.info("-" * 70)
     
     s1, s2 = "kitten", "sitting"
     distance = edit_distance(s1, s2)
     operations = edit_operations(s1, s2)
     
-    print(f"'{s1}' -> '{s2}' (distance: {distance}):")
+    logger.info(f"'{s1}' -> '{s2}' (distance: {distance}):")
     for i, op in enumerate(operations, 1):
-        print(f"  {i}. {op}")
-    print()
+        logger.info(f"  {i}. {op}")
+    logger.info()
     
     # Example 3: Similarity
-    print("Example 3: String Similarity")
-    print("-" * 70)
+    logger.info("Example 3: String Similarity")
+    logger.info("-" * 70)
     
     pairs = [
         ("hello", "hello"),
@@ -210,19 +212,19 @@ def main() -> None:
     for s1, s2 in pairs:
         sim = similarity(s1, s2)
         dist = edit_distance(s1, s2)
-        print(f"'{s1}' vs '{s2}':")
-        print(f"  Distance: {dist}, Similarity: {sim:.2%}")
-    print()
+        logger.info(f"'{s1}' vs '{s2}':")
+        logger.info(f"  Distance: {dist}, Similarity: {sim:.2%}")
+    logger.info()
     
     # Example 4: Spell checking simulation
-    print("Example 4: Spell Checking Simulation")
-    print("-" * 70)
+    logger.info("Example 4: Spell Checking Simulation")
+    logger.info("-" * 70)
     
     dictionary = ["hello", "world", "python", "algorithm", "computer"]
     word = "algoritm"
     
-    print(f"Checking word: '{word}'")
-    print("Suggestions (sorted by edit distance):")
+    logger.info(f"Checking word: '{word}'")
+    logger.info("Suggestions (sorted by edit distance):")
     
     suggestions = []
     for dict_word in dictionary:
@@ -231,12 +233,12 @@ def main() -> None:
     
     suggestions.sort(key=lambda x: x[1])
     for word_suggest, dist in suggestions[:3]:
-        print(f"  '{word_suggest}' (distance: {dist})")
-    print()
+        logger.info(f"  '{word_suggest}' (distance: {dist})")
+    logger.info()
     
     # Example 5: Performance measurement
-    print("Example 5: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 5: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Edit Distance")
     
@@ -248,55 +250,54 @@ def main() -> None:
     
     for s1, s2 in test_strings:
         _, metrics = timer.measure(edit_distance, s1, s2)
-        print(f"Strings of length {len(s1)}:")
-        print(f"  Time: {metrics['execution_time_ms']:.3f} ms")
-        print(f"  Distance: {edit_distance(s1, s2)}")
+        logger.info(f"Strings of length {len(s1)}:")
+        logger.info(f"  Time: {metrics['execution_time_ms']:.3f} ms")
+        logger.info(f"  Distance: {edit_distance(s1, s2)}")
     
-    print()
+    logger.info()
     
     # Example 6: Space-optimized version
-    print("Example 6: Space-Optimized Version")
-    print("-" * 70)
+    logger.info("Example 6: Space-Optimized Version")
+    logger.info("-" * 70)
     
     s1, s2 = "saturday", "sunday"
     dist_standard = edit_distance(s1, s2)
     dist_optimized = edit_distance_optimized(s1, s2)
     
-    print(f"'{s1}' -> '{s2}':")
-    print(f"  Standard: {dist_standard}")
-    print(f"  Optimized: {dist_optimized}")
-    print("Note: Optimized uses O(min(m,n)) space instead of O(m*n)")
-    print()
+    logger.info(f"'{s1}' -> '{s2}':")
+    logger.info(f"  Standard: {dist_standard}")
+    logger.info(f"  Optimized: {dist_optimized}")
+    logger.info("Note: Optimized uses O(min(m,n)) space instead of O(m*n)")
+    logger.info()
     
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O(m * n) - m and n are string lengths")
-    print("  Space: O(m * n) - standard")
-    print("        O(min(m, n)) - optimized")
-    print("\nKey Advantages:")
-    print("  - Optimal solution")
-    print("  - Can be space-optimized")
-    print("  - Can reconstruct operations")
-    print("  - Useful for many applications")
-    print("\nKey Disadvantages:")
-    print("  - Quadratic time complexity")
-    print("  - Not suitable for very long strings")
-    print("  - Standard version uses O(m*n) space")
-    print("\nWhen to Use:")
-    print("  - Spell checking")
-    print("  - DNA sequence alignment")
-    print("  - Fuzzy string matching")
-    print("  - Autocorrect systems")
-    print("  - Plagiarism detection")
-    print("\nCommon Use Cases:")
-    print("  - Spell checkers")
-    print("  - Autocorrect")
-    print("  - DNA sequence comparison")
-    print("  - Fuzzy search")
-    print("  - String similarity")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  O(m * n) - m and n are string lengths")
+    logger.info("  Space: O(m * n) - standard")
+    logger.info("        O(min(m, n)) - optimized")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Optimal solution")
+    logger.info("  - Can be space-optimized")
+    logger.info("  - Can reconstruct operations")
+    logger.info("  - Useful for many applications")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Quadratic time complexity")
+    logger.info("  - Not suitable for very long strings")
+    logger.info("  - Standard version uses O(m*n) space")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Spell checking")
+    logger.info("  - DNA sequence alignment")
+    logger.info("  - Fuzzy string matching")
+    logger.info("  - Autocorrect systems")
+    logger.info("  - Plagiarism detection")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Spell checkers")
+    logger.info("  - Autocorrect")
+    logger.info("  - DNA sequence comparison")
+    logger.info("  - Fuzzy search")
+    logger.info("  - String similarity")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":
     main()
-

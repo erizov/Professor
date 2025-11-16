@@ -17,6 +17,8 @@ import base64
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class AESEncryption:
@@ -129,32 +131,32 @@ class AESEncryption:
 
 def main() -> None:
     """Demonstration of AES Encryption."""
-    print("=" * 70)
-    print("AES (ADVANCED ENCRYPTION STANDARD) DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("AES (ADVANCED ENCRYPTION STANDARD) DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic AES Encryption
-    print("Example 1: Basic AES-256 Encryption")
-    print("-" * 70)
+    logger.info("Example 1: Basic AES-256 Encryption")
+    logger.info("-" * 70)
     
     aes = AESEncryption(key_size=256)
     
     plaintext = b"Hello, this is a secret message!"
-    print(f"Plaintext: {plaintext.decode()}")
+    logger.info(f"Plaintext: {plaintext.decode()}")
     
     ciphertext, iv = aes.encrypt(plaintext)
-    print(f"Ciphertext (hex): {ciphertext.hex()[:64]}...")
-    print(f"IV (hex): {iv.hex()}")
+    logger.info(f"Ciphertext (hex): {ciphertext.hex()[:64]}...")
+    logger.info(f"IV (hex): {iv.hex()}")
     
     decrypted = aes.decrypt(ciphertext, iv)
-    print(f"Decrypted: {decrypted.decode()}")
-    print(f"Match: {plaintext == decrypted}")
-    print()
+    logger.info(f"Decrypted: {decrypted.decode()}")
+    logger.info(f"Match: {plaintext == decrypted}")
+    logger.info()
     
     # Example 2: String Encryption
-    print("Example 2: String Encryption/Decryption")
-    print("-" * 70)
+    logger.info("Example 2: String Encryption/Decryption")
+    logger.info("-" * 70)
     
     messages = [
         "Sensitive user data",
@@ -165,15 +167,15 @@ def main() -> None:
     for message in messages:
         encrypted = aes.encrypt_string(message)
         decrypted = aes.decrypt_string(encrypted)
-        print(f"Original: {message}")
-        print(f"Encrypted: {encrypted[:50]}...")
-        print(f"Decrypted: {decrypted}")
-        print(f"Match: {message == decrypted}")
-        print()
+        logger.info(f"Original: {message}")
+        logger.info(f"Encrypted: {encrypted[:50]}...")
+        logger.info(f"Decrypted: {decrypted}")
+        logger.info(f"Match: {message == decrypted}")
+        logger.info()
     
     # Example 3: Different Key Sizes
-    print("Example 3: Different AES Key Sizes")
-    print("-" * 70)
+    logger.info("Example 3: Different AES Key Sizes")
+    logger.info("-" * 70)
     
     plaintext = b"Test message for different key sizes"
     
@@ -182,15 +184,15 @@ def main() -> None:
         ciphertext, iv = aes.encrypt(plaintext)
         decrypted = aes.decrypt(ciphertext, iv)
         
-        print(f"AES-{key_size}:")
-        print(f"  Key size: {len(aes.key)} bytes")
-        print(f"  Ciphertext size: {len(ciphertext)} bytes")
-        print(f"  Decryption successful: {plaintext == decrypted}")
-    print()
+        logger.info(f"AES-{key_size}:")
+        logger.info(f"  Key size: {len(aes.key)} bytes")
+        logger.info(f"  Ciphertext size: {len(ciphertext)} bytes")
+        logger.info(f"  Decryption successful: {plaintext == decrypted}")
+    logger.info()
     
     # Example 4: Performance measurement
-    print("Example 4: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 4: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("AES Encryption")
     
@@ -204,47 +206,47 @@ def main() -> None:
         return len(decrypted)
     
     result, metrics = timer.measure(encryption_operations)
-    print(f"Time to encrypt/decrypt 1KB: {metrics['execution_time_ms']:.3f} ms")
-    print()
+    logger.info(f"Time to encrypt/decrypt 1KB: {metrics['execution_time_ms']:.3f} ms")
+    logger.info()
     
-    print("=" * 70)
-    print("\nAlgorithm Summary:")
-    print("\nDescription:")
-    print("  Advanced Encryption Standard (AES) is a symmetric encryption")
-    print("  algorithm widely used for secure data transmission.")
-    print("\nKey Sizes:")
-    print("  - AES-128: 128-bit key (16 bytes)")
-    print("  - AES-192: 192-bit key (24 bytes)")
-    print("  - AES-256: 256-bit key (32 bytes)")
-    print("\nTime Complexity:")
-    print("  - Encryption: O(n) where n is data size")
-    print("  - Decryption: O(n) where n is data size")
-    print("\nKey Advantages:")
-    print("  - Fast encryption/decryption")
-    print("  - Secure (NIST approved)")
-    print("  - Widely supported")
-    print("  - Hardware acceleration available")
-    print("\nKey Disadvantages:")
-    print("  - Requires secure key exchange")
-    print("  - Key management complexity")
-    print("  - Not quantum-resistant")
-    print("\nWhen to Use:")
-    print("  - Data at rest encryption")
-    print("  - Secure communication")
-    print("  - Database encryption")
-    print("  - File encryption")
-    print("\nCommon Use Cases:")
-    print("  - TLS/SSL")
-    print("  - VPN protocols")
-    print("  - Disk encryption")
-    print("  - Database encryption")
-    print("  - Secure messaging")
-    print("\nSecurity Notes:")
-    print("  - Always use random IVs")
-    print("  - Use authenticated encryption (AES-GCM) when possible")
-    print("  - Protect keys securely")
-    print("  - Use appropriate key sizes (256-bit recommended)")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nAlgorithm Summary:")
+    logger.info("\nDescription:")
+    logger.info("  Advanced Encryption Standard (AES) is a symmetric encryption")
+    logger.info("  algorithm widely used for secure data transmission.")
+    logger.info("\nKey Sizes:")
+    logger.info("  - AES-128: 128-bit key (16 bytes)")
+    logger.info("  - AES-192: 192-bit key (24 bytes)")
+    logger.info("  - AES-256: 256-bit key (32 bytes)")
+    logger.info("\nTime Complexity:")
+    logger.info("  - Encryption: O(n) where n is data size")
+    logger.info("  - Decryption: O(n) where n is data size")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Fast encryption/decryption")
+    logger.info("  - Secure (NIST approved)")
+    logger.info("  - Widely supported")
+    logger.info("  - Hardware acceleration available")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Requires secure key exchange")
+    logger.info("  - Key management complexity")
+    logger.info("  - Not quantum-resistant")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Data at rest encryption")
+    logger.info("  - Secure communication")
+    logger.info("  - Database encryption")
+    logger.info("  - File encryption")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - TLS/SSL")
+    logger.info("  - VPN protocols")
+    logger.info("  - Disk encryption")
+    logger.info("  - Database encryption")
+    logger.info("  - Secure messaging")
+    logger.info("\nSecurity Notes:")
+    logger.info("  - Always use random IVs")
+    logger.info("  - Use authenticated encryption (AES-GCM) when possible")
+    logger.info("  - Protect keys securely")
+    logger.info("  - Use appropriate key sizes (256-bit recommended)")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

@@ -5,7 +5,10 @@ import java.util.*;
  * 
  * Separates application into Model, View, and Controller.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     // Model
     static class User {
@@ -71,22 +74,22 @@ public class Algorithm {
     // View
     static class UserView {
         void displayUser(User user) {
-            System.out.println("User Details:");
-            System.out.println("  ID: " + user.getUserId());
-            System.out.println("  Name: " + user.getName());
-            System.out.println("  Email: " + user.getEmail());
-            System.out.println();
+            logger.info("User Details:");
+            logger.info("  ID: " + user.getUserId());
+            logger.info("  Name: " + user.getName());
+            logger.info("  Email: " + user.getEmail());
+            logger.info();
         }
         
         void displayUsers(List<User> users) {
-            System.out.println("Users List:");
-            users.forEach(u -> System.out.println("  " + u));
-            System.out.println();
+            logger.info("Users List:");
+            users.forEach(u -> logger.info("  " + u));
+            logger.info();
         }
         
         void displayMessage(String message) {
-            System.out.println("Message: " + message);
-            System.out.println();
+            logger.info("Message: " + message);
+            logger.info();
         }
     }
     
@@ -122,10 +125,10 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("MODEL-VIEW-CONTROLLER (MVC) PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("MODEL-VIEW-CONTROLLER (MVC) PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         UserModel model = new UserModel();
         UserView view = new UserView();
@@ -136,13 +139,13 @@ public class Algorithm {
         controller.showAllUsers();
         controller.showUser(1);
         
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: Separates Model, View, and Controller");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: Separates Model, View, and Controller");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

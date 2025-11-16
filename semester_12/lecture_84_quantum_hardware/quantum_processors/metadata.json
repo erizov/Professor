@@ -1,0 +1,12 @@
+{
+  "name": "quantum_processors",
+  "display_name": "Quantum Processors",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_84_quantum_hardware",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "column_level_security",
+  "display_name": "Column Level Security",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_109_database_security_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

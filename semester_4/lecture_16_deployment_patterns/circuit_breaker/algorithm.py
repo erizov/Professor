@@ -17,6 +17,8 @@ import time
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class CircuitState(Enum):
@@ -165,14 +167,14 @@ def fallback_function() -> str:
 
 def main() -> None:
     """Demonstration of Circuit Breaker Pattern."""
-    print("=" * 70)
-    print("CIRCUIT BREAKER PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("CIRCUIT BREAKER PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic Circuit Breaker
-    print("Example 1: Basic Circuit Breaker")
-    print("-" * 70)
+    logger.info("Example 1: Basic Circuit Breaker")
+    logger.info("-" * 70)
     
     config = CircuitBreakerConfig(
         failure_threshold=3,
@@ -182,41 +184,41 @@ def main() -> None:
     breaker = CircuitBreaker(config)
     service = ExternalService(failure_rate=0.7)  # 70% failure rate
     
-    print("Making calls through circuit breaker:")
+    logger.info("Making calls through circuit breaker:")
     for i in range(10):
         try:
             result = breaker.call(service.call)
-            print(f"  Call {i+1}: {result} (State: {breaker.get_state().value})")
+            logger.info(f"  Call {i+1}: {result} (State: {breaker.get_state().value})")
         except CircuitBreakerOpenError:
-            print(f"  Call {i+1}: Circuit OPEN - using fallback")
+            logger.info(f"  Call {i+1}: Circuit OPEN - using fallback")
             result = fallback_function()
-            print(f"  Fallback: {result}")
+            logger.info(f"  Fallback: {result}")
         except Exception as e:
-            print(f"  Call {i+1}: Failed - {e} (State: {breaker.get_state().value})")
+            logger.info(f"  Call {i+1}: Failed - {e} (State: {breaker.get_state().value})")
         
         time.sleep(0.1)
-    print()
+    logger.info()
     
     # Example 2: Circuit Breaker Recovery
-    print("Example 2: Circuit Breaker Recovery")
-    print("-" * 70)
+    logger.info("Example 2: Circuit Breaker Recovery")
+    logger.info("-" * 70)
     
     breaker.reset()
     service = ExternalService(failure_rate=0.0)  # No failures
     
-    print("Testing recovery (service now working):")
+    logger.info("Testing recovery (service now working):")
     for i in range(5):
         try:
             result = breaker.call(service.call)
-            print(f"  Call {i+1}: {result} (State: {breaker.get_state().value})")
+            logger.info(f"  Call {i+1}: {result} (State: {breaker.get_state().value})")
         except Exception as e:
-            print(f"  Call {i+1}: {e}")
+            logger.info(f"  Call {i+1}: {e}")
         time.sleep(0.1)
-    print()
+    logger.info()
     
     # Example 3: Performance measurement
-    print("Example 3: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 3: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Circuit Breaker")
     
@@ -235,35 +237,35 @@ def main() -> None:
         return success_count
     
     result, metrics = timer.measure(circuit_breaker_operations)
-    print(f"Time to process 100 calls: {metrics['execution_time_ms']:.3f} ms")
-    print(f"Successful calls: {result}")
-    print()
+    logger.info(f"Time to process 100 calls: {metrics['execution_time_ms']:.3f} ms")
+    logger.info(f"Successful calls: {result}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Prevents cascading failures by stopping requests to a")
-    print("  failing service and allowing it time to recover.")
-    print("\nKey Advantages:")
-    print("  - Prevents cascading failures")
-    print("  - Fast failure detection")
-    print("  - Automatic recovery")
-    print("  - Fallback mechanisms")
-    print("\nKey Disadvantages:")
-    print("  - Additional complexity")
-    print("  - Configuration tuning needed")
-    print("  - May delay legitimate requests")
-    print("\nWhen to Use:")
-    print("  - External service calls")
-    print("  - Network operations")
-    print("  - Database connections")
-    print("  - Microservices communication")
-    print("\nCommon Use Cases:")
-    print("  - Netflix Hystrix")
-    print("  - Resilience4j")
-    print("  - Polly (.NET)")
-    print("  - API gateway patterns")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Prevents cascading failures by stopping requests to a")
+    logger.info("  failing service and allowing it time to recover.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Prevents cascading failures")
+    logger.info("  - Fast failure detection")
+    logger.info("  - Automatic recovery")
+    logger.info("  - Fallback mechanisms")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Additional complexity")
+    logger.info("  - Configuration tuning needed")
+    logger.info("  - May delay legitimate requests")
+    logger.info("\nWhen to Use:")
+    logger.info("  - External service calls")
+    logger.info("  - Network operations")
+    logger.info("  - Database connections")
+    logger.info("  - Microservices communication")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Netflix Hystrix")
+    logger.info("  - Resilience4j")
+    logger.info("  - Polly (.NET)")
+    logger.info("  - API gateway patterns")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

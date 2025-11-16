@@ -14,6 +14,8 @@ from typing import Optional, List, Dict
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 # Domain Object (no database knowledge)
@@ -103,7 +105,7 @@ class UserDataAccess:
             self.next_id += 1
         
         self.storage[dto.user_id] = dto.to_dict()
-        print(f"  Database: Inserted user {dto.user_id}")
+        logger.info(f"  Database: Inserted user {dto.user_id}")
         return dto.user_id
     
     def find_by_id(self, user_id: int) -> Optional[UserDTO]:
@@ -122,7 +124,7 @@ class UserDataAccess:
         """Update DTO in database."""
         if dto.user_id in self.storage:
             self.storage[dto.user_id] = dto.to_dict()
-            print(f"  Database: Updated user {dto.user_id}")
+            logger.info(f"  Database: Updated user {dto.user_id}")
             return True
         return False
     
@@ -130,7 +132,7 @@ class UserDataAccess:
         """Delete DTO from database."""
         if user_id in self.storage:
             del self.storage[user_id]
-            print(f"  Database: Deleted user {user_id}")
+            logger.info(f"  Database: Deleted user {user_id}")
             return True
         return False
 
@@ -227,14 +229,14 @@ class ProductMapper:
 
 def main() -> None:
     """Demonstration of Data Mapper Pattern."""
-    print("=" * 70)
-    print("DATA MAPPER DESIGN PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("DATA MAPPER DESIGN PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: User Data Mapper
-    print("Example 1: User Data Mapper")
-    print("-" * 70)
+    logger.info("Example 1: User Data Mapper")
+    logger.info("-" * 70)
     
     data_access = UserDataAccess()
     repository = UserRepository(data_access)
@@ -243,36 +245,36 @@ def main() -> None:
     user1 = User(0, "Alice", "alice@example.com")
     user2 = User(0, "Bob", "bob@example.com")
     
-    print("Saving domain objects:")
+    logger.info("Saving domain objects:")
     saved_user1 = repository.save(user1)
     saved_user2 = repository.save(user2)
-    print()
+    logger.info()
     
     # Retrieve as domain objects
-    print("Retrieving domain objects:")
+    logger.info("Retrieving domain objects:")
     found = repository.find_by_id(1)
-    print(f"  Found: {found}")
-    print()
+    logger.info(f"  Found: {found}")
+    logger.info()
     
     # Get all users
     all_users = repository.find_all()
-    print("All users:")
+    logger.info("All users:")
     for user in all_users:
-        print(f"  {user}")
-    print()
+        logger.info(f"  {user}")
+    logger.info()
     
     # Update domain object
     saved_user1.name = "Alice Smith"
     repository.update(saved_user1)
-    print()
+    logger.info()
     
     updated = repository.find_by_id(1)
-    print(f"Updated user: {updated}")
-    print()
+    logger.info(f"Updated user: {updated}")
+    logger.info()
     
     # Example 2: Product Data Mapper
-    print("Example 2: Product Data Mapper")
-    print("-" * 70)
+    logger.info("Example 2: Product Data Mapper")
+    logger.info("-" * 70)
     
     product_data = {}
     product_next_id = 1
@@ -300,18 +302,18 @@ def main() -> None:
     product2 = Product(0, "Mouse", 29.99)
     product2 = save_product(product2)
     
-    print("Products saved:")
-    print(f"  {product1}")
-    print(f"  {product2}")
-    print()
+    logger.info("Products saved:")
+    logger.info(f"  {product1}")
+    logger.info(f"  {product2}")
+    logger.info()
     
     found_product = find_product(1)
-    print(f"Retrieved product: {found_product}")
-    print()
+    logger.info(f"Retrieved product: {found_product}")
+    logger.info()
     
     # Example 3: Performance measurement
-    print("Example 3: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 3: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Data Mapper")
     
@@ -326,36 +328,36 @@ def main() -> None:
         return len(repo.find_all())
     
     result, metrics = timer.measure(mapper_operations)
-    print(f"Time to save and retrieve 50 users: "
+    logger.info(f"Time to save and retrieve 50 users: "
           f"{metrics['execution_time_ms']:.3f} ms")
-    print(f"Users processed: {result}")
-    print()
+    logger.info(f"Users processed: {result}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  A layer of mappers that moves data between objects and")
-    print("  a database while keeping them independent of each other.")
-    print("\nKey Advantages:")
-    print("  - Domain objects have no database dependencies")
-    print("  - Database schema changes don't affect domain")
-    print("  - Clear separation of concerns")
-    print("  - Easy to test domain objects")
-    print("\nKey Disadvantages:")
-    print("  - More code to maintain")
-    print("  - Additional mapping layer")
-    print("  - Can be complex for simple cases")
-    print("\nWhen to Use:")
-    print("  - Domain objects should be database-agnostic")
-    print("  - Complex domain model")
-    print("  - Database schema differs from domain model")
-    print("  - Need to support multiple data sources")
-    print("\nCommon Use Cases:")
-    print("  - ORM frameworks")
-    print("  - Domain-Driven Design")
-    print("  - Legacy database integration")
-    print("  - Multi-database support")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  A layer of mappers that moves data between objects and")
+    logger.info("  a database while keeping them independent of each other.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Domain objects have no database dependencies")
+    logger.info("  - Database schema changes don't affect domain")
+    logger.info("  - Clear separation of concerns")
+    logger.info("  - Easy to test domain objects")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - More code to maintain")
+    logger.info("  - Additional mapping layer")
+    logger.info("  - Can be complex for simple cases")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Domain objects should be database-agnostic")
+    logger.info("  - Complex domain model")
+    logger.info("  - Database schema differs from domain model")
+    logger.info("  - Need to support multiple data sources")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - ORM frameworks")
+    logger.info("  - Domain-Driven Design")
+    logger.info("  - Legacy database integration")
+    logger.info("  - Multi-database support")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

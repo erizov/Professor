@@ -11,6 +11,8 @@ import sys
 from pathlib import Path
 from abc import ABC, abstractmethod
 from typing import List
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
@@ -45,7 +47,7 @@ class File(FileSystemComponent):
         return self.size
     
     def display(self, indent: str = "") -> None:
-        print(f"{indent}📄 {self.name} ({self.size} bytes)")
+        logger.info(f"{indent}📄 {self.name} ({self.size} bytes)")
 
 
 # Composite
@@ -70,7 +72,7 @@ class Directory(FileSystemComponent):
         return sum(child.get_size() for child in self.children)
     
     def display(self, indent: str = "") -> None:
-        print(f"{indent}📁 {self.name}/ ({self.get_size()} bytes)")
+        logger.info(f"{indent}📁 {self.name}/ ({self.get_size()} bytes)")
         for child in self.children:
             child.display(indent + "  ")
 
@@ -103,7 +105,7 @@ class IndividualEmployee(Employee):
         return self.salary
     
     def show_details(self, indent: str = "") -> None:
-        print(f"{indent}{self.name} - {self.position} (${self.salary:,.2f})")
+        logger.info(f"{indent}{self.name} - {self.position} (${self.salary:,.2f})")
 
 
 class Department(Employee):
@@ -122,7 +124,7 @@ class Department(Employee):
         return sum(member.get_salary() for member in self.members)
     
     def show_details(self, indent: str = "") -> None:
-        print(f"{indent}📊 {self.name} (Total: ${self.get_salary():,.2f})")
+        logger.info(f"{indent}📊 {self.name} (Total: ${self.get_salary():,.2f})")
         for member in self.members:
             member.show_details(indent + "  ")
 
@@ -144,7 +146,7 @@ class MenuItem(MenuComponent):
         self.price = price
     
     def display(self, indent: str = "") -> None:
-        print(f"{indent}• {self.name} - ${self.price:.2f}")
+        logger.info(f"{indent}• {self.name} - ${self.price:.2f}")
 
 
 class Menu(MenuComponent):
@@ -159,21 +161,21 @@ class Menu(MenuComponent):
         self.items.append(component)
     
     def display(self, indent: str = "") -> None:
-        print(f"{indent}📋 {self.name}")
+        logger.info(f"{indent}📋 {self.name}")
         for item in self.items:
             item.display(indent + "  ")
 
 
 def main() -> None:
     """Demonstration of Composite Pattern."""
-    print("=" * 70)
-    print("COMPOSITE DESIGN PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("COMPOSITE DESIGN PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: File System
-    print("Example 1: File System Structure")
-    print("-" * 70)
+    logger.info("Example 1: File System Structure")
+    logger.info("-" * 70)
     
     root = Directory("root")
     
@@ -191,11 +193,11 @@ def main() -> None:
     root.add(File("readme.txt", 512))
     
     root.display()
-    print()
+    logger.info()
     
     # Example 2: Organization Structure
-    print("Example 2: Organization Structure")
-    print("-" * 70)
+    logger.info("Example 2: Organization Structure")
+    logger.info("-" * 70)
     
     engineering = Department("Engineering")
     engineering.add(IndividualEmployee("Alice", "Developer", 80000))
@@ -214,11 +216,11 @@ def main() -> None:
     company.add(sales)
     
     company.show_details()
-    print()
+    logger.info()
     
     # Example 3: Menu System
-    print("Example 3: Restaurant Menu")
-    print("-" * 70)
+    logger.info("Example 3: Restaurant Menu")
+    logger.info("-" * 70)
     
     breakfast = Menu("Breakfast")
     breakfast.add(MenuItem("Pancakes", 8.99))
@@ -238,35 +240,35 @@ def main() -> None:
     main_menu.add(dinner)
     
     main_menu.display()
-    print()
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Compose objects into tree structures to represent")
-    print("  part-whole hierarchies. Lets clients treat individual")
-    print("  objects and compositions uniformly.")
-    print("\nKey Advantages:")
-    print("  - Uniform treatment of individual and composite objects")
-    print("  - Easy to add new component types")
-    print("  - Simplifies client code")
-    print("  - Makes complex tree structures easier to work with")
-    print("\nKey Disadvantages:")
-    print("  - Can make design overly general")
-    print("  - Hard to restrict component types")
-    print("  - Can be difficult to implement")
-    print("\nWhen to Use:")
-    print("  - Represent part-whole hierarchies")
-    print("  - Want clients to ignore composition/individual differences")
-    print("  - Tree structures")
-    print("  - Recursive structures")
-    print("\nCommon Use Cases:")
-    print("  - File systems")
-    print("  - GUI components (containers)")
-    print("  - Organization structures")
-    print("  - Menu systems")
-    print("  - Expression trees")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Compose objects into tree structures to represent")
+    logger.info("  part-whole hierarchies. Lets clients treat individual")
+    logger.info("  objects and compositions uniformly.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Uniform treatment of individual and composite objects")
+    logger.info("  - Easy to add new component types")
+    logger.info("  - Simplifies client code")
+    logger.info("  - Makes complex tree structures easier to work with")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Can make design overly general")
+    logger.info("  - Hard to restrict component types")
+    logger.info("  - Can be difficult to implement")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Represent part-whole hierarchies")
+    logger.info("  - Want clients to ignore composition/individual differences")
+    logger.info("  - Tree structures")
+    logger.info("  - Recursive structures")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - File systems")
+    logger.info("  - GUI components (containers)")
+    logger.info("  - Organization structures")
+    logger.info("  - Menu systems")
+    logger.info("  - Expression trees")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

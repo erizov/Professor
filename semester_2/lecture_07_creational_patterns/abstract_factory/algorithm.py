@@ -13,6 +13,8 @@ from abc import ABC, abstractmethod
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 # Abstract Products
@@ -117,8 +119,8 @@ class Application:
     def render_ui(self) -> None:
         """Render UI."""
         if self.button and self.dialog:
-            print(self.button.render())
-            print(self.dialog.render())
+            logger.info(self.button.render())
+            logger.info(self.dialog.render())
 
 
 # Example 2: Database Factory
@@ -200,56 +202,56 @@ class PostgreSQLFactory(DatabaseFactory):
 
 def main() -> None:
     """Demonstration of Abstract Factory Pattern."""
-    print("=" * 70)
-    print("ABSTRACT FACTORY DESIGN PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("ABSTRACT FACTORY DESIGN PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: GUI Factory
-    print("Example 1: GUI Factory")
-    print("-" * 70)
+    logger.info("Example 1: GUI Factory")
+    logger.info("-" * 70)
     
     # Windows application
     windows_factory = WindowsFactory()
     windows_app = Application(windows_factory)
     windows_app.create_ui()
-    print("Windows UI:")
+    logger.info("Windows UI:")
     windows_app.render_ui()
-    print()
+    logger.info()
     
     # Mac application
     mac_factory = MacFactory()
     mac_app = Application(mac_factory)
     mac_app.create_ui()
-    print("Mac UI:")
+    logger.info("Mac UI:")
     mac_app.render_ui()
-    print()
+    logger.info()
     
     # Example 2: Database Factory
-    print("Example 2: Database Factory")
-    print("-" * 70)
+    logger.info("Example 2: Database Factory")
+    logger.info("-" * 70)
     
     # MySQL
     mysql_factory = MySQLFactory()
     mysql_conn = mysql_factory.create_connection()
     mysql_query = mysql_factory.create_query()
     
-    print(mysql_conn.connect())
-    print(mysql_query.execute("SELECT * FROM users"))
-    print()
+    logger.info(mysql_conn.connect())
+    logger.info(mysql_query.execute("SELECT * FROM users"))
+    logger.info()
     
     # PostgreSQL
     postgres_factory = PostgreSQLFactory()
     postgres_conn = postgres_factory.create_connection()
     postgres_query = postgres_factory.create_query()
     
-    print(postgres_conn.connect())
-    print(postgres_query.execute("SELECT * FROM users"))
-    print()
+    logger.info(postgres_conn.connect())
+    logger.info(postgres_query.execute("SELECT * FROM users"))
+    logger.info()
     
     # Example 3: Performance measurement
-    print("Example 3: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 3: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Abstract Factory")
     
@@ -260,34 +262,34 @@ def main() -> None:
         return app
     
     result, metrics = timer.measure(create_windows_ui)
-    print(f"Time to create Windows UI: {metrics['execution_time_ms']:.3f} ms")
-    print()
+    logger.info(f"Time to create Windows UI: {metrics['execution_time_ms']:.3f} ms")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Provide an interface for creating families of related")
-    print("  or dependent objects without specifying their concrete classes.")
-    print("\nKey Advantages:")
-    print("  - Ensures products from one family are used together")
-    print("  - Isolates concrete classes from client")
-    print("  - Easy to add new product families")
-    print("  - Promotes consistency among products")
-    print("\nKey Disadvantages:")
-    print("  - Complex to implement")
-    print("  - Hard to extend with new product types")
-    print("  - Can be overkill for simple cases")
-    print("\nWhen to Use:")
-    print("  - System should be independent of product creation")
-    print("  - System configured with multiple product families")
-    print("  - Products from same family must be used together")
-    print("  - Want to provide product class library")
-    print("\nCommon Use Cases:")
-    print("  - Cross-platform GUI toolkits")
-    print("  - Database abstraction layers")
-    print("  - Theme systems")
-    print("  - Plugin architectures")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Provide an interface for creating families of related")
+    logger.info("  or dependent objects without specifying their concrete classes.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Ensures products from one family are used together")
+    logger.info("  - Isolates concrete classes from client")
+    logger.info("  - Easy to add new product families")
+    logger.info("  - Promotes consistency among products")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Complex to implement")
+    logger.info("  - Hard to extend with new product types")
+    logger.info("  - Can be overkill for simple cases")
+    logger.info("\nWhen to Use:")
+    logger.info("  - System should be independent of product creation")
+    logger.info("  - System configured with multiple product families")
+    logger.info("  - Products from same family must be used together")
+    logger.info("  - Want to provide product class library")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Cross-platform GUI toolkits")
+    logger.info("  - Database abstraction layers")
+    logger.info("  - Theme systems")
+    logger.info("  - Plugin architectures")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

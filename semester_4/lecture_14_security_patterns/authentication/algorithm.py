@@ -16,6 +16,8 @@ import secrets
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class User:
@@ -124,14 +126,14 @@ class TokenAuth:
 
 def main() -> None:
     """Demonstration of Authentication Pattern."""
-    print("=" * 70)
-    print("AUTHENTICATION PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("AUTHENTICATION PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Session-based Authentication
-    print("Example 1: Session-based Authentication")
-    print("-" * 70)
+    logger.info("Example 1: Session-based Authentication")
+    logger.info("-" * 70)
     
     auth_service = AuthenticationService()
     
@@ -139,44 +141,44 @@ def main() -> None:
     user1 = auth_service.register_user("alice", "password123")
     user2 = auth_service.register_user("bob", "secret456")
     
-    print(f"Registered users: {user1.username}, {user2.username}")
-    print()
+    logger.info(f"Registered users: {user1.username}, {user2.username}")
+    logger.info()
     
     # Authenticate
     session1 = auth_service.authenticate("alice", "password123")
     session2 = auth_service.authenticate("bob", "wrong_password")
     
-    print(f"Alice login: {'Success' if session1 else 'Failed'}")
-    print(f"Bob login (wrong password): {'Success' if session2 else 'Failed'}")
-    print()
+    logger.info(f"Alice login: {'Success' if session1 else 'Failed'}")
+    logger.info(f"Bob login (wrong password): {'Success' if session2 else 'Failed'}")
+    logger.info()
     
     # Validate session
     if session1:
         user = auth_service.validate_session(session1)
-        print(f"Session validated: {user.username if user else 'Invalid'}")
+        logger.info(f"Session validated: {user.username if user else 'Invalid'}")
         auth_service.logout(session1)
-        print("Logged out")
-    print()
+        logger.info("Logged out")
+    logger.info()
     
     # Example 2: Token-based Authentication
-    print("Example 2: Token-based Authentication")
-    print("-" * 70)
+    logger.info("Example 2: Token-based Authentication")
+    logger.info("-" * 70)
     
     token_auth = TokenAuth()
     token_auth.create_user("user1", "password123")
     token_auth.create_user("user2", "secret456")
     
     token = token_auth.login("user1", "password123")
-    print(f"Login token: {token[:20]}..." if token else "Login failed")
+    logger.info(f"Login token: {token[:20]}..." if token else "Login failed")
     
     if token:
         user_id = token_auth.validate_token(token)
-        print(f"Token validated: {user_id}")
-    print()
+        logger.info(f"Token validated: {user_id}")
+    logger.info()
     
     # Example 3: Performance measurement
-    print("Example 3: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 3: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Authentication")
     
@@ -187,34 +189,34 @@ def main() -> None:
         return len(auth.users)
     
     result, metrics = timer.measure(auth_operations)
-    print(f"Time to register 100 users: {metrics['execution_time_ms']:.3f} ms")
-    print()
+    logger.info(f"Time to register 100 users: {metrics['execution_time_ms']:.3f} ms")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Verify the identity of a user, process, or device.")
-    print("  Ensures entities are who they claim to be.")
-    print("\nKey Advantages:")
-    print("  - Security and access control")
-    print("  - User identification")
-    print("  - Session management")
-    print("  - Audit trail")
-    print("\nKey Disadvantages:")
-    print("  - Password management complexity")
-    print("  - Security vulnerabilities if not implemented correctly")
-    print("  - Session management overhead")
-    print("\nWhen to Use:")
-    print("  - User login systems")
-    print("  - API authentication")
-    print("  - Secure access control")
-    print("  - Multi-user applications")
-    print("\nCommon Use Cases:")
-    print("  - Web applications")
-    print("  - REST APIs")
-    print("  - Mobile applications")
-    print("  - Enterprise systems")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Verify the identity of a user, process, or device.")
+    logger.info("  Ensures entities are who they claim to be.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Security and access control")
+    logger.info("  - User identification")
+    logger.info("  - Session management")
+    logger.info("  - Audit trail")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Password management complexity")
+    logger.info("  - Security vulnerabilities if not implemented correctly")
+    logger.info("  - Session management overhead")
+    logger.info("\nWhen to Use:")
+    logger.info("  - User login systems")
+    logger.info("  - API authentication")
+    logger.info("  - Secure access control")
+    logger.info("  - Multi-user applications")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Web applications")
+    logger.info("  - REST APIs")
+    logger.info("  - Mobile applications")
+    logger.info("  - Enterprise systems")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

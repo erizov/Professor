@@ -3,23 +3,26 @@
  * 
  * Provides unified interface to subsystem.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class CPU {
-        void freeze() { System.out.println("CPU: Freezing..."); }
-        void jump(int pos) { System.out.println("CPU: Jumping to " + pos); }
-        void execute() { System.out.println("CPU: Executing..."); }
+        void freeze() { logger.info("CPU: Freezing..."); }
+        void jump(int pos) { logger.info("CPU: Jumping to " + pos); }
+        void execute() { logger.info("CPU: Executing..."); }
     }
     
     static class Memory {
         void load(int pos, String data) {
-            System.out.println("Memory: Loading '" + data + "' at " + pos);
+            logger.info("Memory: Loading '" + data + "' at " + pos);
         }
     }
     
     static class HardDrive {
         String read(int lba, int size) {
-            System.out.println("HardDrive: Reading " + size + " bytes from LBA " + lba);
+            logger.info("HardDrive: Reading " + size + " bytes from LBA " + lba);
             return "Data from LBA " + lba;
         }
     }
@@ -37,28 +40,28 @@ public class Algorithm {
         }
         
         void start() {
-            System.out.println("Starting computer...");
+            logger.info("Starting computer...");
             cpu.freeze();
             String bootData = hardDrive.read(0, 512);
             memory.load(BOOT_ADDRESS, bootData);
             cpu.jump(BOOT_ADDRESS);
             cpu.execute();
-            System.out.println("Computer started!");
+            logger.info("Computer started!");
         }
     }
     
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("FACADE DESIGN PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("FACADE DESIGN PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         ComputerFacade computer = new ComputerFacade();
         computer.start();
-        System.out.println();
+        logger.info();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: Provides unified interface to subsystem");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: Provides unified interface to subsystem");
+        logger.info("=".repeat(70));
     }
 }

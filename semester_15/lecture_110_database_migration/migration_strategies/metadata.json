@@ -1,0 +1,12 @@
+{
+  "name": "migration_strategies",
+  "display_name": "Migration Strategies",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_110_database_migration",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "incident_prediction",
+  "display_name": "Incident Prediction",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_96_incident_management_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

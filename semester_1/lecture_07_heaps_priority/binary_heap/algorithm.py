@@ -14,6 +14,8 @@ from typing import List, Optional, Callable
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class BinaryHeap:
@@ -126,57 +128,57 @@ class BinaryHeap:
 
 def main() -> None:
     """Demonstration of Binary Heap."""
-    print("=" * 70)
-    print("BINARY HEAP DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("BINARY HEAP DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Min Heap
-    print("Example 1: Min Heap Operations")
-    print("-" * 70)
+    logger.info("Example 1: Min Heap Operations")
+    logger.info("-" * 70)
     
     min_heap = BinaryHeap('min')
     values = [10, 20, 15, 30, 40, 5, 25]
     
-    print(f"Inserting: {values}")
+    logger.info(f"Inserting: {values}")
     for val in values:
         min_heap.insert(val)
-        print(f"  After inserting {val}: root = {min_heap.peek()}")
+        logger.info(f"  After inserting {val}: root = {min_heap.peek()}")
     
-    print(f"\nExtracting all elements:")
+    logger.info(f"\nExtracting all elements:")
     while not min_heap.is_empty():
-        print(f"  Extracted: {min_heap.extract()}")
-    print()
+        logger.info(f"  Extracted: {min_heap.extract()}")
+    logger.info()
     
     # Example 2: Max Heap
-    print("Example 2: Max Heap Operations")
-    print("-" * 70)
+    logger.info("Example 2: Max Heap Operations")
+    logger.info("-" * 70)
     
     max_heap = BinaryHeap('max')
     for val in values:
         max_heap.insert(val)
     
-    print(f"Extracting from max heap:")
+    logger.info(f"Extracting from max heap:")
     while not max_heap.is_empty():
-        print(f"  Extracted: {max_heap.extract()}")
-    print()
+        logger.info(f"  Extracted: {max_heap.extract()}")
+    logger.info()
     
     # Example 3: Build heap from array
-    print("Example 3: Build Heap from Array")
-    print("-" * 70)
+    logger.info("Example 3: Build Heap from Array")
+    logger.info("-" * 70)
     
     arr = [4, 10, 3, 5, 1]
     heap = BinaryHeap('min')
     heap.build_heap(arr)
     
-    print(f"Array: {arr}")
-    print(f"Heap structure: {heap.heap}")
-    print(f"Extracting: {[heap.extract() for _ in range(heap.size())]}")
-    print()
+    logger.info(f"Array: {arr}")
+    logger.info(f"Heap structure: {heap.heap}")
+    logger.info(f"Extracting: {[heap.extract() for _ in range(heap.size())]}")
+    logger.info()
     
     # Example 4: Performance
-    print("Example 4: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 4: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Binary Heap")
     
@@ -189,23 +191,23 @@ def main() -> None:
         return heap
     
     _, metrics = timer.measure(test_operations, 1000)
-    print(f"1000 insertions + 1000 extractions:")
-    print(f"  Time: {metrics['execution_time_ms']:.3f} ms")
+    logger.info(f"1000 insertions + 1000 extractions:")
+    logger.info(f"  Time: {metrics['execution_time_ms']:.3f} ms")
     
-    print()
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Insert: O(log n)")
-    print("  Extract: O(log n)")
-    print("  Peek: O(1)")
-    print("  Build Heap: O(n)")
-    print("  Space: O(n)")
-    print("\nKey Advantages:")
-    print("  - Efficient priority queue")
-    print("  - O(log n) insert/extract")
-    print("  - O(1) peek")
-    print("  - Used in heap sort, Dijkstra's algorithm")
-    print("=" * 70)
+    logger.info()
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Insert: O(log n)")
+    logger.info("  Extract: O(log n)")
+    logger.info("  Peek: O(1)")
+    logger.info("  Build Heap: O(n)")
+    logger.info("  Space: O(n)")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Efficient priority queue")
+    logger.info("  - O(log n) insert/extract")
+    logger.info("  - O(1) peek")
+    logger.info("  - Used in heap sort, Dijkstra's algorithm")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

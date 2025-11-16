@@ -1,0 +1,12 @@
+{
+  "name": "quantum_optimization_tools",
+  "display_name": "Quantum Optimization Tools",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_83_quantum_software",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

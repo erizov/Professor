@@ -5,7 +5,10 @@ import java.util.*;
  * 
  * Abstracts data access layer.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class User {
         private int userId;
@@ -95,10 +98,10 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("REPOSITORY DESIGN PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("REPOSITORY DESIGN PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         IUserRepository repository = new InMemoryUserRepository();
         UserService service = new UserService(repository);
@@ -106,15 +109,15 @@ public class Algorithm {
         service.createUser("Alice", "alice@example.com");
         service.createUser("Bob", "bob@example.com");
         
-        System.out.println("Users:");
-        service.getAllUsers().forEach(u -> System.out.println("  " + u));
-        System.out.println();
+        logger.info("Users:");
+        service.getAllUsers().forEach(u -> logger.info("  " + u));
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: Abstracts data access");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: Abstracts data access");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

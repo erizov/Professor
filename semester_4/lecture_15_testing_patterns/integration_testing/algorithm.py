@@ -14,6 +14,8 @@ from dataclasses import dataclass
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 @dataclass
@@ -200,57 +202,57 @@ class TestRunner:
     
     def print_results(self) -> None:
         """Print test results."""
-        print("Integration Test Results:")
-        print("-" * 70)
+        logger.info("Integration Test Results:")
+        logger.info("-" * 70)
         
         passed = sum(1 for r in self.results if r.passed)
         total = len(self.results)
         
         for result in self.results:
             status = "✓ PASS" if result.passed else "✗ FAIL"
-            print(f"{status}: {result.test_name}")
+            logger.info(f"{status}: {result.test_name}")
             if not result.passed:
-                print(f"  Error: {result.message}")
-            print(f"  Time: {result.execution_time*1000:.2f} ms")
+                logger.info(f"  Error: {result.message}")
+            logger.info(f"  Time: {result.execution_time*1000:.2f} ms")
         
-        print("-" * 70)
-        print(f"Total: {passed}/{total} passed")
-        print()
+        logger.info("-" * 70)
+        logger.info(f"Total: {passed}/{total} passed")
+        logger.info()
 
 
 def main() -> None:
     """Demonstration of Integration Testing Pattern."""
-    print("=" * 70)
-    print("INTEGRATION TESTING PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("INTEGRATION TESTING PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Database Integration Test
-    print("Example 1: Database Integration Test")
-    print("-" * 70)
+    logger.info("Example 1: Database Integration Test")
+    logger.info("-" * 70)
     
     db_test = DatabaseIntegrationTest()
     result = db_test.run()
     
-    print(f"Test: {result.test_name}")
-    print(f"Result: {'PASSED' if result.passed else 'FAILED'}")
-    print(f"Message: {result.message}")
-    print()
+    logger.info(f"Test: {result.test_name}")
+    logger.info(f"Result: {'PASSED' if result.passed else 'FAILED'}")
+    logger.info(f"Message: {result.message}")
+    logger.info()
     
     # Example 2: API Integration Test
-    print("Example 2: API Integration Test")
-    print("-" * 70)
+    logger.info("Example 2: API Integration Test")
+    logger.info("-" * 70)
     
     api_test = APIIntegrationTest()
     result = api_test.run()
     
-    print(f"Test: {result.test_name}")
-    print(f"Result: {'PASSED' if result.passed else 'FAILED'}")
-    print()
+    logger.info(f"Test: {result.test_name}")
+    logger.info(f"Result: {'PASSED' if result.passed else 'FAILED'}")
+    logger.info()
     
     # Example 3: Test Suite
-    print("Example 3: Integration Test Suite")
-    print("-" * 70)
+    logger.info("Example 3: Integration Test Suite")
+    logger.info("-" * 70)
     
     runner = TestRunner()
     runner.add_test(DatabaseIntegrationTest())
@@ -260,8 +262,8 @@ def main() -> None:
     runner.print_results()
     
     # Example 4: Performance measurement
-    print("Example 4: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 4: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Integration Testing")
     
@@ -272,40 +274,40 @@ def main() -> None:
         return len(runner.run_all())
     
     result, metrics = timer.measure(test_suite_execution)
-    print(f"Time to run integration test suite: {metrics['execution_time_ms']:.3f} ms")
-    print(f"Tests executed: {result}")
-    print()
+    logger.info(f"Time to run integration test suite: {metrics['execution_time_ms']:.3f} ms")
+    logger.info(f"Tests executed: {result}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Tests the integration between different components, modules,")
-    print("  or systems to ensure they work together correctly.")
-    print("\nKey Advantages:")
-    print("  - Catches integration issues early")
-    print("  - Tests real interactions")
-    print("  - Validates system behavior")
-    print("  - Confidence in deployments")
-    print("\nKey Disadvantages:")
-    print("  - Slower than unit tests")
-    print("  - More complex setup")
-    print("  - Harder to debug")
-    print("  - May require external dependencies")
-    print("\nWhen to Use:")
-    print("  - Testing component interactions")
-    print("  - API integration")
-    print("  - Database integration")
-    print("  - End-to-end workflows")
-    print("\nCommon Use Cases:")
-    print("  - API integration tests")
-    print("  - Database integration tests")
-    print("  - Service integration tests")
-    print("  - End-to-end tests")
-    print("\nTesting Pyramid:")
-    print("  - Unit Tests: 70% (fast, isolated)")
-    print("  - Integration Tests: 20% (component interactions)")
-    print("  - E2E Tests: 10% (full system)")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Tests the integration between different components, modules,")
+    logger.info("  or systems to ensure they work together correctly.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Catches integration issues early")
+    logger.info("  - Tests real interactions")
+    logger.info("  - Validates system behavior")
+    logger.info("  - Confidence in deployments")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Slower than unit tests")
+    logger.info("  - More complex setup")
+    logger.info("  - Harder to debug")
+    logger.info("  - May require external dependencies")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Testing component interactions")
+    logger.info("  - API integration")
+    logger.info("  - Database integration")
+    logger.info("  - End-to-end workflows")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - API integration tests")
+    logger.info("  - Database integration tests")
+    logger.info("  - Service integration tests")
+    logger.info("  - End-to-end tests")
+    logger.info("\nTesting Pyramid:")
+    logger.info("  - Unit Tests: 70% (fast, isolated)")
+    logger.info("  - Integration Tests: 20% (component interactions)")
+    logger.info("  - E2E Tests: 10% (full system)")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

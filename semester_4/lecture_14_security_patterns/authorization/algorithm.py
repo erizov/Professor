@@ -15,6 +15,8 @@ from enum import Enum
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class Permission(Enum):
@@ -116,14 +118,14 @@ class RBAC:
 
 def main() -> None:
     """Demonstration of Authorization Pattern."""
-    print("=" * 70)
-    print("AUTHORIZATION PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("AUTHORIZATION PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Role-based Authorization
-    print("Example 1: Role-based Authorization")
-    print("-" * 70)
+    logger.info("Example 1: Role-based Authorization")
+    logger.info("-" * 70)
     
     authz = AuthorizationService()
     
@@ -136,11 +138,11 @@ def main() -> None:
     })
     viewer_role = authz.create_role("viewer", {Permission.READ})
     
-    print("Created roles:")
-    print(f"  Admin: {[p.value for p in admin_role.permissions]}")
-    print(f"  Editor: {[p.value for p in editor_role.permissions]}")
-    print(f"  Viewer: {[p.value for p in viewer_role.permissions]}")
-    print()
+    logger.info("Created roles:")
+    logger.info(f"  Admin: {[p.value for p in admin_role.permissions]}")
+    logger.info(f"  Editor: {[p.value for p in editor_role.permissions]}")
+    logger.info(f"  Viewer: {[p.value for p in viewer_role.permissions]}")
+    logger.info()
     
     # Create users
     admin_user = authz.create_user("u1", "alice", ["admin"])
@@ -148,17 +150,17 @@ def main() -> None:
     viewer_user = authz.create_user("u3", "charlie", ["viewer"])
     
     # Check permissions
-    print("Permission checks:")
-    print(f"Alice (admin) can delete: {authz.authorize('u1', Permission.DELETE)}")
-    print(f"Bob (editor) can write: {authz.authorize('u2', Permission.WRITE)}")
-    print(f"Bob (editor) can delete: {authz.authorize('u2', Permission.DELETE)}")
-    print(f"Charlie (viewer) can read: {authz.authorize('u3', Permission.READ)}")
-    print(f"Charlie (viewer) can write: {authz.authorize('u3', Permission.WRITE)}")
-    print()
+    logger.info("Permission checks:")
+    logger.info(f"Alice (admin) can delete: {authz.authorize('u1', Permission.DELETE)}")
+    logger.info(f"Bob (editor) can write: {authz.authorize('u2', Permission.WRITE)}")
+    logger.info(f"Bob (editor) can delete: {authz.authorize('u2', Permission.DELETE)}")
+    logger.info(f"Charlie (viewer) can read: {authz.authorize('u3', Permission.READ)}")
+    logger.info(f"Charlie (viewer) can write: {authz.authorize('u3', Permission.WRITE)}")
+    logger.info()
     
     # Example 2: RBAC
-    print("Example 2: RBAC (Role-Based Access Control)")
-    print("-" * 70)
+    logger.info("Example 2: RBAC (Role-Based Access Control)")
+    logger.info("-" * 70)
     
     rbac = RBAC()
     
@@ -170,16 +172,16 @@ def main() -> None:
     rbac.assign_role("user2", "user")
     rbac.assign_role("user3", "guest")
     
-    print("Permission checks:")
-    print(f"User1 (admin) can delete: {rbac.has_permission('user1', 'delete')}")
-    print(f"User2 (user) can write: {rbac.has_permission('user2', 'write')}")
-    print(f"User2 (user) can delete: {rbac.has_permission('user2', 'delete')}")
-    print(f"User3 (guest) can read: {rbac.has_permission('user3', 'read')}")
-    print()
+    logger.info("Permission checks:")
+    logger.info(f"User1 (admin) can delete: {rbac.has_permission('user1', 'delete')}")
+    logger.info(f"User2 (user) can write: {rbac.has_permission('user2', 'write')}")
+    logger.info(f"User2 (user) can delete: {rbac.has_permission('user2', 'delete')}")
+    logger.info(f"User3 (guest) can read: {rbac.has_permission('user3', 'read')}")
+    logger.info()
     
     # Example 3: Performance measurement
-    print("Example 3: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 3: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Authorization")
     
@@ -191,35 +193,35 @@ def main() -> None:
         return authz.authorize("u50", Permission.READ)
     
     result, metrics = timer.measure(authz_operations)
-    print(f"Time to create 100 users and check permission: "
+    logger.info(f"Time to create 100 users and check permission: "
           f"{metrics['execution_time_ms']:.3f} ms")
-    print()
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Determines what actions a user is allowed to perform")
-    print("  after authentication. Controls access to resources.")
-    print("\nKey Advantages:")
-    print("  - Fine-grained access control")
-    print("  - Role-based management")
-    print("  - Centralized authorization")
-    print("  - Scalable permissions")
-    print("\nKey Disadvantages:")
-    print("  - Complex permission management")
-    print("  - Performance overhead")
-    print("  - Can be over-engineered")
-    print("\nWhen to Use:")
-    print("  - Multi-user systems")
-    print("  - Need fine-grained permissions")
-    print("  - Role-based access")
-    print("  - Enterprise applications")
-    print("\nCommon Use Cases:")
-    print("  - Web applications")
-    print("  - Enterprise systems")
-    print("  - Cloud services")
-    print("  - API access control")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Determines what actions a user is allowed to perform")
+    logger.info("  after authentication. Controls access to resources.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Fine-grained access control")
+    logger.info("  - Role-based management")
+    logger.info("  - Centralized authorization")
+    logger.info("  - Scalable permissions")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Complex permission management")
+    logger.info("  - Performance overhead")
+    logger.info("  - Can be over-engineered")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Multi-user systems")
+    logger.info("  - Need fine-grained permissions")
+    logger.info("  - Role-based access")
+    logger.info("  - Enterprise applications")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Web applications")
+    logger.info("  - Enterprise systems")
+    logger.info("  - Cloud services")
+    logger.info("  - API access control")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

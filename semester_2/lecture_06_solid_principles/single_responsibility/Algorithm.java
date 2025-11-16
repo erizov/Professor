@@ -3,7 +3,10 @@
  * 
  * A class should have only one reason to change.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     // BAD: Multiple responsibilities
     static class BadEmployee {
@@ -20,11 +23,11 @@ public class Algorithm {
         }
         
         void saveToDatabase() {
-            System.out.println("Saving " + name + " to database...");
+            logger.info("Saving " + name + " to database...");
         }
         
         void sendEmail(String message) {
-            System.out.println("Sending email to " + name + ": " + message);
+            logger.info("Sending email to " + name + ": " + message);
         }
     }
     
@@ -50,26 +53,26 @@ public class Algorithm {
     
     static class EmailService {
         static void sendEmail(Employee emp, String message) {
-            System.out.println("Sending email to " + emp.getName() + 
+            logger.info("Sending email to " + emp.getName() + 
                              ": " + message);
         }
     }
     
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("SINGLE RESPONSIBILITY PRINCIPLE");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("SINGLE RESPONSIBILITY PRINCIPLE");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Good example
         Employee emp = new Employee("John", 50000);
         double pay = PayCalculator.calculatePay(emp);
-        System.out.println("Pay: $" + pay);
+        logger.info("Pay: $" + pay);
         EmailService.sendEmail(emp, "Welcome!");
-        System.out.println();
+        logger.info();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPrinciple: A class should have only one reason to change");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPrinciple: A class should have only one reason to change");
+        logger.info("=".repeat(70));
     }
 }

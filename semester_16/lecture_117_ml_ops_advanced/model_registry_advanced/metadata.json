@@ -1,0 +1,12 @@
+{
+  "name": "model_registry_advanced",
+  "display_name": "Model Registry Advanced",
+  "category": "Advanced Graduate Level",
+  "semester": 16,
+  "lecture": "lecture_117_ml_ops_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

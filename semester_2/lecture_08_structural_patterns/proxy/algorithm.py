@@ -11,6 +11,8 @@ import sys
 from pathlib import Path
 from abc import ABC, abstractmethod
 import time
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
@@ -35,12 +37,12 @@ class RealImage(Image):
     
     def _load_from_disk(self) -> None:
         """Simulate loading from disk."""
-        print(f"Loading {self.filename} from disk...")
+        logger.info(f"Loading {self.filename} from disk...")
         time.sleep(0.1)  # Simulate slow loading
     
     def display(self) -> None:
         """Display image."""
-        print(f"Displaying {self.filename}")
+        logger.info(f"Displaying {self.filename}")
 
 
 # Proxy
@@ -69,10 +71,10 @@ class BankAccount:
         """Withdraw money."""
         if amount <= self.balance:
             self.balance -= amount
-            print(f"Withdrew ${amount}. New balance: ${self.balance:.2f}")
+            logger.info(f"Withdrew ${amount}. New balance: ${self.balance:.2f}")
             return True
         else:
-            print("Insufficient funds")
+            logger.info("Insufficient funds")
             return False
     
     def get_balance(self) -> float:
@@ -92,7 +94,7 @@ class AccountProxy:
         if self.user_role == "admin":
             return self.account.withdraw(amount)
         else:
-            print("Access denied: Only admins can withdraw")
+            logger.info("Access denied: Only admins can withdraw")
             return False
     
     def get_balance(self) -> float:
@@ -105,7 +107,7 @@ class ExpensiveObject:
     """Expensive object to create."""
     
     def __init__(self):
-        print("Creating expensive object...")
+        logger.info("Creating expensive object...")
         time.sleep(0.1)  # Simulate expensive creation
         self.data = "Expensive data loaded"
     
@@ -133,7 +135,7 @@ class RemoteService:
     
     def expensive_operation(self) -> str:
         """Expensive remote operation."""
-        print("Calling remote service...")
+        logger.info("Calling remote service...")
         time.sleep(0.2)  # Simulate network delay
         return "Result from remote service"
 
@@ -150,116 +152,116 @@ class RemoteServiceProxy:
         if self.cache is None:
             self.cache = self.service.expensive_operation()
         else:
-            print("Returning cached result")
+            logger.info("Returning cached result")
         return self.cache
 
 
 def main() -> None:
     """Demonstration of Proxy Pattern."""
-    print("=" * 70)
-    print("PROXY DESIGN PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("PROXY DESIGN PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Virtual Proxy (Lazy Loading)
-    print("Example 1: Virtual Proxy - Lazy Loading")
-    print("-" * 70)
+    logger.info("Example 1: Virtual Proxy - Lazy Loading")
+    logger.info("-" * 70)
     
-    print("Creating proxy (no loading yet)...")
+    logger.info("Creating proxy (no loading yet)...")
     image1 = ProxyImage("photo1.jpg")
     image2 = ProxyImage("photo2.jpg")
     
-    print("\nDisplaying image 1 (loads now):")
+    logger.info("\nDisplaying image 1 (loads now):")
     image1.display()
     
-    print("\nDisplaying image 1 again (already loaded):")
+    logger.info("\nDisplaying image 1 again (already loaded):")
     image1.display()
     
-    print("\nDisplaying image 2 (loads now):")
+    logger.info("\nDisplaying image 2 (loads now):")
     image2.display()
-    print()
+    logger.info()
     
     # Example 2: Protection Proxy
-    print("Example 2: Protection Proxy")
-    print("-" * 70)
+    logger.info("Example 2: Protection Proxy")
+    logger.info("-" * 70)
     
     account = BankAccount(1000.0)
     
     admin_proxy = AccountProxy(account, "admin")
     user_proxy = AccountProxy(account, "user")
     
-    print("Admin trying to withdraw:")
+    logger.info("Admin trying to withdraw:")
     admin_proxy.withdraw(100.0)
     
-    print("\nUser trying to withdraw:")
+    logger.info("\nUser trying to withdraw:")
     user_proxy.withdraw(50.0)
     
-    print(f"\nBalance (accessible to all): ${account.get_balance():.2f}")
-    print()
+    logger.info(f"\nBalance (accessible to all): ${account.get_balance():.2f}")
+    logger.info()
     
     # Example 3: Virtual Proxy
-    print("Example 3: Virtual Proxy - Lazy Initialization")
-    print("-" * 70)
+    logger.info("Example 3: Virtual Proxy - Lazy Initialization")
+    logger.info("-" * 70)
     
-    print("Creating proxy (no object created yet)...")
+    logger.info("Creating proxy (no object created yet)...")
     proxy = ExpensiveObjectProxy()
     
-    print("Calling process (creates object now):")
+    logger.info("Calling process (creates object now):")
     result = proxy.process()
-    print(result)
+    logger.info(result)
     
-    print("\nCalling process again (object already created):")
+    logger.info("\nCalling process again (object already created):")
     result = proxy.process()
-    print(result)
-    print()
+    logger.info(result)
+    logger.info()
     
     # Example 4: Remote Proxy with Caching
-    print("Example 4: Remote Proxy with Caching")
-    print("-" * 70)
+    logger.info("Example 4: Remote Proxy with Caching")
+    logger.info("-" * 70)
     
     remote_proxy = RemoteServiceProxy()
     
-    print("First call (calls remote service):")
+    logger.info("First call (calls remote service):")
     result1 = remote_proxy.expensive_operation()
-    print(f"Result: {result1}")
+    logger.info(f"Result: {result1}")
     
-    print("\nSecond call (uses cache):")
+    logger.info("\nSecond call (uses cache):")
     result2 = remote_proxy.expensive_operation()
-    print(f"Result: {result2}")
-    print()
+    logger.info(f"Result: {result2}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Provide a surrogate or placeholder for another object")
-    print("  to control access to it.")
-    print("\nTypes of Proxies:")
-    print("  1. Virtual Proxy: Lazy initialization")
-    print("  2. Protection Proxy: Access control")
-    print("  3. Remote Proxy: Local representative for remote object")
-    print("  4. Smart Proxy: Additional functionality (caching, logging)")
-    print("\nKey Advantages:")
-    print("  - Control access to real subject")
-    print("  - Lazy initialization")
-    print("  - Additional functionality (caching, logging)")
-    print("  - Security and access control")
-    print("\nKey Disadvantages:")
-    print("  - Additional layer of indirection")
-    print("  - Can complicate code")
-    print("  - Performance overhead")
-    print("\nWhen to Use:")
-    print("  - Lazy initialization")
-    print("  - Access control")
-    print("  - Remote object access")
-    print("  - Caching")
-    print("  - Logging and monitoring")
-    print("\nCommon Use Cases:")
-    print("  - Lazy loading (images, data)")
-    print("  - Access control")
-    print("  - Caching")
-    print("  - Remote method invocation")
-    print("  - Logging and monitoring")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Provide a surrogate or placeholder for another object")
+    logger.info("  to control access to it.")
+    logger.info("\nTypes of Proxies:")
+    logger.info("  1. Virtual Proxy: Lazy initialization")
+    logger.info("  2. Protection Proxy: Access control")
+    logger.info("  3. Remote Proxy: Local representative for remote object")
+    logger.info("  4. Smart Proxy: Additional functionality (caching, logging)")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Control access to real subject")
+    logger.info("  - Lazy initialization")
+    logger.info("  - Additional functionality (caching, logging)")
+    logger.info("  - Security and access control")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Additional layer of indirection")
+    logger.info("  - Can complicate code")
+    logger.info("  - Performance overhead")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Lazy initialization")
+    logger.info("  - Access control")
+    logger.info("  - Remote object access")
+    logger.info("  - Caching")
+    logger.info("  - Logging and monitoring")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Lazy loading (images, data)")
+    logger.info("  - Access control")
+    logger.info("  - Caching")
+    logger.info("  - Remote method invocation")
+    logger.info("  - Logging and monitoring")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

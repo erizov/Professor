@@ -13,6 +13,8 @@ import random
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class TreeNode:
@@ -214,49 +216,49 @@ class BinaryTree:
 
 def main() -> None:
     """Demonstration of Binary Tree."""
-    print("=" * 70)
-    print("BINARY TREE DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("BINARY TREE DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic operations
-    print("Example 1: Building a Binary Tree")
-    print("-" * 70)
+    logger.info("Example 1: Building a Binary Tree")
+    logger.info("-" * 70)
     
     tree = BinaryTree()
     values = [1, 2, 3, 4, 5, 6, 7]
     
-    print(f"Inserting values: {values}")
+    logger.info(f"Inserting values: {values}")
     for val in values:
         tree.insert(val)
     
-    print(f"Tree size: {tree.size()}")
-    print(f"Tree height: {tree.height()}")
-    print()
+    logger.info(f"Tree size: {tree.size()}")
+    logger.info(f"Tree height: {tree.height()}")
+    logger.info()
     
     # Example 2: Traversals
-    print("Example 2: Tree Traversals")
-    print("-" * 70)
+    logger.info("Example 2: Tree Traversals")
+    logger.info("-" * 70)
     
-    print(f"Inorder:     {tree.inorder_traversal()}")
-    print(f"Preorder:    {tree.preorder_traversal()}")
-    print(f"Postorder:   {tree.postorder_traversal()}")
-    print(f"Level-order: {tree.levelorder_traversal()}")
-    print()
+    logger.info(f"Inorder:     {tree.inorder_traversal()}")
+    logger.info(f"Preorder:    {tree.preorder_traversal()}")
+    logger.info(f"Postorder:   {tree.postorder_traversal()}")
+    logger.info(f"Level-order: {tree.levelorder_traversal()}")
+    logger.info()
     
     # Example 3: Search
-    print("Example 3: Searching")
-    print("-" * 70)
+    logger.info("Example 3: Searching")
+    logger.info("-" * 70)
     
     search_values = [5, 10, 1, 8]
     for val in search_values:
         found = tree.search(val)
-        print(f"Search {val}: {'Found' if found else 'Not found'}")
-    print()
+        logger.info(f"Search {val}: {'Found' if found else 'Not found'}")
+    logger.info()
     
     # Example 4: Larger tree
-    print("Example 4: Larger Tree")
-    print("-" * 70)
+    logger.info("Example 4: Larger Tree")
+    logger.info("-" * 70)
     
     tree2 = BinaryTree()
     values2 = list(range(1, 16))
@@ -264,15 +266,15 @@ def main() -> None:
     for val in values2:
         tree2.insert(val)
     
-    print(f"Inserted {len(values2)} values")
-    print(f"Size: {tree2.size()}")
-    print(f"Height: {tree2.height()}")
-    print(f"Level-order: {tree2.levelorder_traversal()}")
-    print()
+    logger.info(f"Inserted {len(values2)} values")
+    logger.info(f"Size: {tree2.size()}")
+    logger.info(f"Height: {tree2.height()}")
+    logger.info(f"Level-order: {tree2.levelorder_traversal()}")
+    logger.info()
     
     # Example 5: Performance measurement
-    print("Example 5: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 5: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Binary Tree")
     
@@ -287,38 +289,38 @@ def main() -> None:
         
         _, metrics = timer.measure(insert_all)
         
-        print(f"n={size:4d}: Insert {metrics['execution_time_ms']:8.3f} ms, "
+        logger.info(f"n={size:4d}: Insert {metrics['execution_time_ms']:8.3f} ms, "
               f"{metrics['memory_peak_kb']:8.2f} KB")
     
-    print()
+    logger.info()
     timer.print_summary()
     
-    print("\n" + "=" * 70)
-    print("\nComplexity Summary:")
-    print("  Insertion: O(n) - level-order")
-    print("  Search: O(n) - must check all nodes")
-    print("  Traversal: O(n)")
-    print("  Height: O(n)")
-    print("  Space: O(n) - storing nodes")
-    print("\nKey Points:")
-    print("  + Simple hierarchical structure")
-    print("  + Foundation for other trees")
-    print("  + Natural recursive operations")
-    print("  + Good for hierarchical data")
-    print("  - No ordering guarantee")
-    print("  - Search is O(n)")
-    print("  - Can become unbalanced")
-    print("\nWhen to use:")
-    print("  • Hierarchical data")
-    print("  • Expression trees")
-    print("  • Decision trees")
-    print("  • File systems")
-    print("\nCommon Applications:")
-    print("  • Binary heap")
-    print("  • Binary search tree")
-    print("  • Expression parsing")
-    print("  • Huffman coding")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Insertion: O(n) - level-order")
+    logger.info("  Search: O(n) - must check all nodes")
+    logger.info("  Traversal: O(n)")
+    logger.info("  Height: O(n)")
+    logger.info("  Space: O(n) - storing nodes")
+    logger.info("\nKey Points:")
+    logger.info("  + Simple hierarchical structure")
+    logger.info("  + Foundation for other trees")
+    logger.info("  + Natural recursive operations")
+    logger.info("  + Good for hierarchical data")
+    logger.info("  - No ordering guarantee")
+    logger.info("  - Search is O(n)")
+    logger.info("  - Can become unbalanced")
+    logger.info("\nWhen to use:")
+    logger.info("  • Hierarchical data")
+    logger.info("  • Expression trees")
+    logger.info("  • Decision trees")
+    logger.info("  • File systems")
+    logger.info("\nCommon Applications:")
+    logger.info("  • Binary heap")
+    logger.info("  • Binary search tree")
+    logger.info("  • Expression parsing")
+    logger.info("  • Huffman coding")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

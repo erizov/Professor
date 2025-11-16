@@ -8,6 +8,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.time.LocalDateTime;
 
+import java.util.logging.Logger;
 class Message {
     int id;
     String topic;
@@ -169,18 +170,20 @@ class TopicQueue {
 }
 
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     public static void main(String[] args) throws InterruptedException {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("MESSAGE QUEUE PATTERN DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("MESSAGE QUEUE PATTERN DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Basic Message Queue
-        System.out.println("Example 1: Basic Message Queue");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Basic Message Queue");
+        logger.info("-".repeat(70));
         
         MessageQueue mq = new MessageQueue(100);
         Producer producer = new Producer("Producer1", mq);
@@ -199,11 +202,11 @@ public class Algorithm {
         
         consumer1.stop();
         consumer2.stop();
-        System.out.println();
+        logger.info();
         
         // Example 2: Topic-based Queue
-        System.out.println("Example 2: Topic-based Message Queue");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Topic-based Message Queue");
+        logger.info("-".repeat(70));
         
         TopicQueue topicQueue = new TopicQueue();
         
@@ -217,25 +220,25 @@ public class Algorithm {
         topicQueue.publish("orders", "Order #2002");
         
         Thread.sleep(500);
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern Summary:");
-        System.out.println("\nIntent:");
-        System.out.println("  Asynchronous communication pattern where messages are");
-        System.out.println("  sent to a queue and processed by consumers.");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Decouples producers and consumers");
-        System.out.println("  - Asynchronous processing");
-        System.out.println("  - Load balancing");
-        System.out.println("  - Reliability (messages persist)");
-        System.out.println("\nWhen to Use:");
-        System.out.println("  - Asynchronous processing needed");
-        System.out.println("  - Decouple components");
-        System.out.println("  - Event-driven architecture");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern Summary:");
+        logger.info("\nIntent:");
+        logger.info("  Asynchronous communication pattern where messages are");
+        logger.info("  sent to a queue and processed by consumers.");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Decouples producers and consumers");
+        logger.info("  - Asynchronous processing");
+        logger.info("  - Load balancing");
+        logger.info("  - Reliability (messages persist)");
+        logger.info("\nWhen to Use:");
+        logger.info("  - Asynchronous processing needed");
+        logger.info("  - Decouple components");
+        logger.info("  - Event-driven architecture");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

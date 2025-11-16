@@ -1,0 +1,12 @@
+{
+  "name": "quantum_simulation",
+  "display_name": "Quantum Simulation",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_79_quantum_algorithms_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

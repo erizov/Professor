@@ -1,0 +1,12 @@
+{
+  "name": "downsampling",
+  "display_name": "Downsampling",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_107_time_series_databases",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

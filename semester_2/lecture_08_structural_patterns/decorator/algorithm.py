@@ -10,6 +10,8 @@ affecting the behavior of other objects from the same class.
 import sys
 from pathlib import Path
 from abc import ABC, abstractmethod
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
@@ -177,11 +179,11 @@ class FileDataSource(DataSource):
         self.filename = filename
     
     def write_data(self, data: str) -> None:
-        print(f"Writing to {self.filename}: {data}")
+        logger.info(f"Writing to {self.filename}: {data}")
         # In real implementation: with open(self.filename, 'w') as f: f.write(data)
     
     def read_data(self) -> str:
-        print(f"Reading from {self.filename}")
+        logger.info(f"Reading from {self.filename}")
         return "data from file"  # In real: return open(self.filename).read()
 
 
@@ -203,12 +205,12 @@ class EncryptionDecorator(DataSourceDecorator):
     
     def write_data(self, data: str) -> None:
         encrypted = self._encrypt(data)
-        print(f"  Encrypting data...")
+        logger.info(f"  Encrypting data...")
         self._source.write_data(encrypted)
     
     def read_data(self) -> str:
         encrypted = self._source.read_data()
-        print(f"  Decrypting data...")
+        logger.info(f"  Decrypting data...")
         return self._decrypt(encrypted)
     
     def _encrypt(self, data: str) -> str:
@@ -225,12 +227,12 @@ class CompressionDecorator(DataSourceDecorator):
     
     def write_data(self, data: str) -> None:
         compressed = self._compress(data)
-        print(f"  Compressing data...")
+        logger.info(f"  Compressing data...")
         self._source.write_data(compressed)
     
     def read_data(self) -> str:
         compressed = self._source.read_data()
-        print(f"  Decompressing data...")
+        logger.info(f"  Decompressing data...")
         return self._decompress(compressed)
     
     def _compress(self, data: str) -> str:
@@ -244,22 +246,22 @@ class CompressionDecorator(DataSourceDecorator):
 
 def main() -> None:
     """Demonstration of Decorator Pattern."""
-    print("=" * 70)
-    print("DECORATOR DESIGN PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("DECORATOR DESIGN PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Coffee Decorator
-    print("Example 1: Coffee Ordering System")
-    print("-" * 70)
+    logger.info("Example 1: Coffee Ordering System")
+    logger.info("-" * 70)
     
     # Simple coffee
     coffee = SimpleCoffee()
-    print(f"{coffee.get_description()}: ${coffee.get_cost():.2f}")
+    logger.info(f"{coffee.get_description()}: ${coffee.get_cost():.2f}")
     
     # Coffee with milk
     coffee_with_milk = MilkDecorator(SimpleCoffee())
-    print(f"{coffee_with_milk.get_description()}: "
+    logger.info(f"{coffee_with_milk.get_description()}: "
           f"${coffee_with_milk.get_cost():.2f}")
     
     # Coffee with multiple additions
@@ -270,24 +272,24 @@ def main() -> None:
             )
         )
     )
-    print(f"{fancy_coffee.get_description()}: "
+    logger.info(f"{fancy_coffee.get_description()}: "
           f"${fancy_coffee.get_cost():.2f}")
-    print()
+    logger.info()
     
     # Example 2: Text Formatting
-    print("Example 2: Text Formatting")
-    print("-" * 70)
+    logger.info("Example 2: Text Formatting")
+    logger.info("-" * 70)
     
     text = "Hello, World!"
     
     plain = PlainText()
-    print(f"Plain: {plain.process(text)}")
+    logger.info(f"Plain: {plain.process(text)}")
     
     bold = BoldDecorator(PlainText())
-    print(f"Bold: {bold.process(text)}")
+    logger.info(f"Bold: {bold.process(text)}")
     
     bold_italic = ItalicDecorator(BoldDecorator(PlainText()))
-    print(f"Bold + Italic: {bold_italic.process(text)}")
+    logger.info(f"Bold + Italic: {bold_italic.process(text)}")
     
     formatted = ColorDecorator(
         UnderlineDecorator(
@@ -295,36 +297,36 @@ def main() -> None:
         ),
         "red"
     )
-    print(f"Red + Underline + Bold: {formatted.process(text)}")
-    print()
+    logger.info(f"Red + Underline + Bold: {formatted.process(text)}")
+    logger.info()
     
     # Example 3: File I/O with Decorators
-    print("Example 3: File I/O with Encryption and Compression")
-    print("-" * 70)
+    logger.info("Example 3: File I/O with Encryption and Compression")
+    logger.info("-" * 70)
     
     # Plain file
     file = FileDataSource("data.txt")
     file.write_data("Sensitive information")
-    print(f"Read: {file.read_data()}")
-    print()
+    logger.info(f"Read: {file.read_data()}")
+    logger.info()
     
     # Encrypted file
     encrypted_file = EncryptionDecorator(FileDataSource("encrypted.txt"))
     encrypted_file.write_data("Sensitive information")
-    print(f"Read: {encrypted_file.read_data()}")
-    print()
+    logger.info(f"Read: {encrypted_file.read_data()}")
+    logger.info()
     
     # Compressed and encrypted file
     secure_file = CompressionDecorator(
         EncryptionDecorator(FileDataSource("secure.txt"))
     )
     secure_file.write_data("Sensitive information")
-    print(f"Read: {secure_file.read_data()}")
-    print()
+    logger.info(f"Read: {secure_file.read_data()}")
+    logger.info()
     
     # Example 4: Dynamic Composition
-    print("Example 4: Dynamic Decorator Composition")
-    print("-" * 70)
+    logger.info("Example 4: Dynamic Decorator Composition")
+    logger.info("-" * 70)
     
     def create_custom_coffee(additions: list) -> Coffee:
         """Create coffee with specified additions."""
@@ -350,51 +352,51 @@ def main() -> None:
     
     for order in orders:
         custom = create_custom_coffee(order)
-        print(f"Order {order}: {custom.get_description()} "
+        logger.info(f"Order {order}: {custom.get_description()} "
               f"(${custom.get_cost():.2f})")
-    print()
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Attach additional responsibilities to an object dynamically.")
-    print("  Decorators provide a flexible alternative to subclassing")
-    print("  for extending functionality.")
-    print("\nKey Advantages:")
-    print("  - Add behavior without modifying existing code")
-    print("  - Compose behaviors dynamically")
-    print("  - Single Responsibility Principle")
-    print("  - Open/Closed Principle")
-    print("  - More flexible than inheritance")
-    print("\nKey Disadvantages:")
-    print("  - Can result in many small objects")
-    print("  - Hard to debug (many layers)")
-    print("  - Order of decorators matters")
-    print("  - Can be overused (complexity)")
-    print("\nWhen to Use:")
-    print("  - Add responsibilities to objects dynamically")
-    print("  - When subclassing is impractical")
-    print("  - When you need to add/remove features at runtime")
-    print("  - When you want to avoid feature explosion in classes")
-    print("\nWhen NOT to Use:")
-    print("  - Simple additions (use inheritance)")
-    print("  - When decorator order doesn't matter")
-    print("  - When performance is critical (overhead)")
-    print("\nCommon Use Cases:")
-    print("  - I/O streams (Java, Python)")
-    print("  - GUI components (borders, scrollbars)")
-    print("  - Web frameworks (middleware)")
-    print("  - Text formatting")
-    print("  - Data processing pipelines")
-    print("  - Caching, logging, validation")
-    print("\nComparison with Other Patterns:")
-    print("  - Decorator vs Adapter: Decorator adds behavior,")
-    print("    Adapter changes interface")
-    print("  - Decorator vs Strategy: Decorator composes,")
-    print("    Strategy replaces algorithm")
-    print("  - Decorator vs Chain of Responsibility:")
-    print("    Decorator composes, Chain passes request")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Attach additional responsibilities to an object dynamically.")
+    logger.info("  Decorators provide a flexible alternative to subclassing")
+    logger.info("  for extending functionality.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Add behavior without modifying existing code")
+    logger.info("  - Compose behaviors dynamically")
+    logger.info("  - Single Responsibility Principle")
+    logger.info("  - Open/Closed Principle")
+    logger.info("  - More flexible than inheritance")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Can result in many small objects")
+    logger.info("  - Hard to debug (many layers)")
+    logger.info("  - Order of decorators matters")
+    logger.info("  - Can be overused (complexity)")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Add responsibilities to objects dynamically")
+    logger.info("  - When subclassing is impractical")
+    logger.info("  - When you need to add/remove features at runtime")
+    logger.info("  - When you want to avoid feature explosion in classes")
+    logger.info("\nWhen NOT to Use:")
+    logger.info("  - Simple additions (use inheritance)")
+    logger.info("  - When decorator order doesn't matter")
+    logger.info("  - When performance is critical (overhead)")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - I/O streams (Java, Python)")
+    logger.info("  - GUI components (borders, scrollbars)")
+    logger.info("  - Web frameworks (middleware)")
+    logger.info("  - Text formatting")
+    logger.info("  - Data processing pipelines")
+    logger.info("  - Caching, logging, validation")
+    logger.info("\nComparison with Other Patterns:")
+    logger.info("  - Decorator vs Adapter: Decorator adds behavior,")
+    logger.info("    Adapter changes interface")
+    logger.info("  - Decorator vs Strategy: Decorator composes,")
+    logger.info("    Strategy replaces algorithm")
+    logger.info("  - Decorator vs Chain of Responsibility:")
+    logger.info("    Decorator composes, Chain passes request")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

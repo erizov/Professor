@@ -11,7 +11,10 @@ import java.util.Base64;
  * 
  * Advanced Encryption Standard.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class AESEncryption {
         private SecretKey key;
@@ -56,35 +59,35 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("AES ENCRYPTION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("AES ENCRYPTION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         try {
             AESEncryption aes = new AESEncryption();
             
             String plaintext = "Hello, this is a secret message!";
-            System.out.println("Plaintext: " + plaintext);
+            logger.info("Plaintext: " + plaintext);
             
             String encrypted = aes.encrypt(plaintext);
-            System.out.println("Encrypted: " + encrypted.substring(0, 
+            logger.info("Encrypted: " + encrypted.substring(0, 
                 Math.min(50, encrypted.length())) + "...");
             
             String decrypted = aes.decrypt(encrypted);
-            System.out.println("Decrypted: " + decrypted);
-            System.out.println("Match: " + plaintext.equals(decrypted));
+            logger.info("Decrypted: " + decrypted);
+            logger.info("Match: " + plaintext.equals(decrypted));
         } catch (Exception e) {
-            System.out.println("Error: " + e.getMessage());
+            logger.info("Error: " + e.getMessage());
         }
         
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nAlgorithm: AES-256 encryption");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nAlgorithm: AES-256 encryption");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

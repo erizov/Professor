@@ -6,7 +6,10 @@
  * Time Complexity: O(n*d*iter) for gradient descent
  * Space Complexity: O(d) where d is number of features
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class LinearRegression {
         private double[] weights;
@@ -99,14 +102,14 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("LINEAR REGRESSION DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("LINEAR REGRESSION DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Simple regression
-        System.out.println("Example 1: Simple Linear Regression");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Simple Linear Regression");
+        logger.info("-".repeat(70));
         
         // Generate data: y = 3x + 5
         int n = 100;
@@ -121,15 +124,15 @@ public class Algorithm {
         LinearRegression model = new LinearRegression(0.01, 1000);
         model.fit(X, y);
         
-        System.out.println("True equation: y = 3x + 5");
+        logger.info("True equation: y = 3x + 5");
         System.out.printf("Learned: y = %.2fx + %.2f%n", 
                         model.weights[0], model.bias);
         System.out.printf("R² score: %.4f%n", model.score(X, y));
-        System.out.println();
+        logger.info();
         
         // Example 2: Multiple regression
-        System.out.println("Example 2: Multiple Linear Regression");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Multiple Linear Regression");
+        logger.info("-".repeat(70));
         
         double[][] X2 = new double[n][3];
         double[] y2 = new double[n];
@@ -145,23 +148,23 @@ public class Algorithm {
         LinearRegression model2 = new LinearRegression(0.01, 1000);
         model2.fit(X2, y2);
         
-        System.out.println("True: y = 2x₁ + 3x₂ - 1x₃ + 10");
+        logger.info("True: y = 2x₁ + 3x₂ - 1x₃ + 10");
         System.out.printf("Learned: y = %.2fx₁ + %.2fx₂ + %.2fx₃ + %.2f%n",
                         model2.weights[0], model2.weights[1],
                         model2.weights[2], model2.bias);
         System.out.printf("R² score: %.4f%n", model2.score(X2, y2));
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Time:  O(n*d*iter)");
-        System.out.println("  Space: O(d)");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Simple and interpretable");
-        System.out.println("  - Fast training");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Time:  O(n*d*iter)");
+        logger.info("  Space: O(d)");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Simple and interpretable");
+        logger.info("  - Fast training");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

@@ -1,0 +1,12 @@
+{
+  "name": "continual_learning",
+  "display_name": "Continual Learning",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_63_ai_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

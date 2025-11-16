@@ -1,0 +1,12 @@
+{
+  "name": "model_governance",
+  "display_name": "Model Governance",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_70_ai_governance",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

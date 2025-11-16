@@ -12,6 +12,7 @@ interface Subscriber {
     void update(String topic, Object message);
 }
 
+import java.util.logging.Logger;
 class Publisher {
     private final MessageBroker broker;
     
@@ -139,18 +140,20 @@ class EventBus {
 import java.time.LocalDateTime;
 
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("PUBLISH-SUBSCRIBE (PUB-SUB) PATTERN DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("PUBLISH-SUBSCRIBE (PUB-SUB) PATTERN DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Basic Pub-Sub
-        System.out.println("Example 1: Basic Publish-Subscribe");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Basic Publish-Subscribe");
+        logger.info("-".repeat(70));
         
         MessageBroker broker = new MessageBroker();
         Publisher publisher = new Publisher(broker);
@@ -164,15 +167,15 @@ public class Algorithm {
         broker.subscribe("notifications", notifSub);
         broker.subscribe("notifications", logSub);
         
-        System.out.println("Publishing messages:");
+        logger.info("Publishing messages:");
         publisher.publish("orders", "New order #1001");
         publisher.publish("notifications", "User logged in");
         publisher.publish("orders", "Order #1001 shipped");
-        System.out.println();
+        logger.info();
         
         // Example 2: Event-driven Pub-Sub
-        System.out.println("Example 2: Event-driven Pub-Sub");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Event-driven Pub-Sub");
+        logger.info("-".repeat(70));
         
         EventBus eventBus = new EventBus();
         
@@ -181,28 +184,28 @@ public class Algorithm {
         eventBus.subscribe("user.registered", event ->
             System.out.printf("User handler: %s%n", event.data));
         
-        System.out.println("Publishing events:");
+        logger.info("Publishing events:");
         eventBus.publish(new Event("order.created", "Order #2001"));
         eventBus.publish(new Event("user.registered", "User: alice"));
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern Summary:");
-        System.out.println("\nIntent:");
-        System.out.println("  Decouples publishers from subscribers.");
-        System.out.println("  Publishers send messages to topics without knowing subscribers.");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Loose coupling");
-        System.out.println("  - Scalable");
-        System.out.println("  - Dynamic subscription");
-        System.out.println("  - Multiple subscribers per topic");
-        System.out.println("\nWhen to Use:");
-        System.out.println("  - Event-driven architecture");
-        System.out.println("  - Microservices communication");
-        System.out.println("  - Real-time notifications");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern Summary:");
+        logger.info("\nIntent:");
+        logger.info("  Decouples publishers from subscribers.");
+        logger.info("  Publishers send messages to topics without knowing subscribers.");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Loose coupling");
+        logger.info("  - Scalable");
+        logger.info("  - Dynamic subscription");
+        logger.info("  - Multiple subscribers per topic");
+        logger.info("\nWhen to Use:");
+        logger.info("  - Event-driven architecture");
+        logger.info("  - Microservices communication");
+        logger.info("  - Real-time notifications");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

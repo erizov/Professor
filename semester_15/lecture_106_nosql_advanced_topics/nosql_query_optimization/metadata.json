@@ -1,0 +1,12 @@
+{
+  "name": "nosql_query_optimization",
+  "display_name": "Nosql Query Optimization",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_106_nosql_advanced_topics",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

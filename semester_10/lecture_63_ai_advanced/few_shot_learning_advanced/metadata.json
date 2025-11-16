@@ -1,0 +1,12 @@
+{
+  "name": "few_shot_learning_advanced",
+  "display_name": "Few Shot Learning Advanced",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_63_ai_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

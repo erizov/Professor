@@ -1,0 +1,12 @@
+{
+  "name": "proposal_systems",
+  "display_name": "Proposal Systems",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_93_blockchain_governance",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

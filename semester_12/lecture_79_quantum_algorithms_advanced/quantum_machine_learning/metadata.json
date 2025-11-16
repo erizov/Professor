@@ -1,0 +1,12 @@
+{
+  "name": "quantum_machine_learning",
+  "display_name": "Quantum Machine Learning",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_79_quantum_algorithms_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

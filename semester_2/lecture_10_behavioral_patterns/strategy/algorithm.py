@@ -12,6 +12,8 @@ import sys
 from pathlib import Path
 from abc import ABC, abstractmethod
 from typing import List
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
@@ -159,8 +161,8 @@ class CreditCardPayment(PaymentStrategy):
     
     def pay(self, amount: float) -> bool:
         """Process credit card payment."""
-        print(f"Processing ${amount:.2f} payment via Credit Card")
-        print(f"Card: ****{self.card_number[-4:]}")
+        logger.info(f"Processing ${amount:.2f} payment via Credit Card")
+        logger.info(f"Card: ****{self.card_number[-4:]}")
         # Simulate payment processing
         return True
     
@@ -176,8 +178,8 @@ class PayPalPayment(PaymentStrategy):
     
     def pay(self, amount: float) -> bool:
         """Process PayPal payment."""
-        print(f"Processing ${amount:.2f} payment via PayPal")
-        print(f"Email: {self.email}")
+        logger.info(f"Processing ${amount:.2f} payment via PayPal")
+        logger.info(f"Email: {self.email}")
         # Simulate payment processing
         return True
     
@@ -193,8 +195,8 @@ class CryptocurrencyPayment(PaymentStrategy):
     
     def pay(self, amount: float) -> bool:
         """Process cryptocurrency payment."""
-        print(f"Processing ${amount:.2f} payment via Cryptocurrency")
-        print(f"Wallet: {self.wallet_address[:10]}...")
+        logger.info(f"Processing ${amount:.2f} payment via Cryptocurrency")
+        logger.info(f"Wallet: {self.wallet_address[:10]}...")
         # Simulate payment processing
         return True
     
@@ -220,16 +222,16 @@ class ShoppingCart:
     def checkout(self) -> bool:
         """Checkout using payment strategy."""
         if not self.items:
-            print("Cart is empty!")
+            logger.info("Cart is empty!")
             return False
         
         if self.payment_strategy is None:
-            print("No payment method selected!")
+            logger.info("No payment method selected!")
             return False
         
         total = sum(price for _, price in self.items)
-        print(f"\nTotal: ${total:.2f}")
-        print(f"Payment method: {self.payment_strategy.get_name()}")
+        logger.info(f"\nTotal: ${total:.2f}")
+        logger.info(f"Payment method: {self.payment_strategy.get_name()}")
         
         return self.payment_strategy.pay(total)
 
@@ -291,28 +293,28 @@ class FileCompressor:
     
     def compress_file(self, content: str) -> bytes:
         """Compress file content."""
-        print(f"Compressing using {self.strategy}...")
+        logger.info(f"Compressing using {self.strategy}...")
         return self.strategy.compress(content)
     
     def decompress_file(self, data: bytes) -> str:
         """Decompress file data."""
-        print(f"Decompressing using {self.strategy}...")
+        logger.info(f"Decompressing using {self.strategy}...")
         return self.strategy.decompress(data)
 
 
 def main() -> None:
     """Demonstration of Strategy Pattern."""
-    print("=" * 70)
-    print("STRATEGY DESIGN PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("STRATEGY DESIGN PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Sorting Strategies
-    print("Example 1: Sorting Strategies")
-    print("-" * 70)
+    logger.info("Example 1: Sorting Strategies")
+    logger.info("-" * 70)
     
     data = [64, 34, 25, 12, 22, 11, 90]
-    print(f"Original data: {data}")
+    logger.info(f"Original data: {data}")
     
     sorter = Sorter()
     
@@ -326,12 +328,12 @@ def main() -> None:
     for strategy in strategies:
         sorter.set_strategy(strategy)
         sorted_data = sorter.sort(data)
-        print(f"{strategy.get_name()}: {sorted_data}")
-    print()
+        logger.info(f"{strategy.get_name()}: {sorted_data}")
+    logger.info()
     
     # Example 2: Payment Strategies
-    print("Example 2: Payment Strategies")
-    print("-" * 70)
+    logger.info("Example 2: Payment Strategies")
+    logger.info("-" * 70)
     
     cart = ShoppingCart()
     cart.add_item("Laptop", 999.99)
@@ -348,14 +350,14 @@ def main() -> None:
     for payment in payment_methods:
         cart.set_payment_strategy(payment)
         cart.checkout()
-        print()
+        logger.info()
     
     # Example 3: Compression Strategies
-    print("Example 3: Compression Strategies")
-    print("-" * 70)
+    logger.info("Example 3: Compression Strategies")
+    logger.info("-" * 70)
     
     content = "This is a test file with some content. " * 10
-    print(f"Original size: {len(content)} bytes")
+    logger.info(f"Original size: {len(content)} bytes")
     
     compression_strategies = [
         ZipCompression(),
@@ -367,14 +369,14 @@ def main() -> None:
         compressed = compressor.compress_file(content)
         decompressed = compressor.decompress_file(compressed)
         
-        print(f"  Compressed size: {len(compressed)} bytes")
-        print(f"  Compression ratio: {len(compressed)/len(content)*100:.1f}%")
-        print(f"  Decompressed matches original: {decompressed == content}")
-        print()
+        logger.info(f"  Compressed size: {len(compressed)} bytes")
+        logger.info(f"  Compression ratio: {len(compressed)/len(content)*100:.1f}%")
+        logger.info(f"  Decompressed matches original: {decompressed == content}")
+        logger.info()
     
     # Example 4: Runtime Strategy Selection
-    print("Example 4: Runtime Strategy Selection")
-    print("-" * 70)
+    logger.info("Example 4: Runtime Strategy Selection")
+    logger.info("-" * 70)
     
     def select_sorting_strategy(data_size: int) -> SortingStrategy:
         """Select strategy based on data size."""
@@ -392,49 +394,48 @@ def main() -> None:
         sorter.set_strategy(strategy)
         
         sorted_result = sorter.sort(test_data)
-        print(f"Data size: {size}, Strategy: {strategy.get_name()}")
-        print(f"  First 5: {sorted_result[:5]}")
-    print()
+        logger.info(f"Data size: {size}, Strategy: {strategy.get_name()}")
+        logger.info(f"  First 5: {sorted_result[:5]}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Define a family of algorithms, encapsulate each one,")
-    print("  and make them interchangeable. Strategy lets the")
-    print("  algorithm vary independently from clients.")
-    print("\nKey Advantages:")
-    print("  - Algorithms can be swapped at runtime")
-    print("  - Eliminates conditional statements for algorithm selection")
-    print("  - Open/Closed Principle (easy to add new strategies)")
-    print("  - Single Responsibility (each strategy is independent)")
-    print("\nKey Disadvantages:")
-    print("  - Clients must be aware of different strategies")
-    print("  - Increased number of classes")
-    print("  - Communication overhead between context and strategy")
-    print("\nWhen to Use:")
-    print("  - Multiple ways to perform a task")
-    print("  - Want to avoid conditional statements for algorithm selection")
-    print("  - Algorithms should be interchangeable")
-    print("  - Hide algorithm implementation from clients")
-    print("\nWhen NOT to Use:")
-    print("  - Only one way to perform task")
-    print("  - Algorithms are not interchangeable")
-    print("  - Strategy selection is compile-time only")
-    print("\nCommon Use Cases:")
-    print("  - Sorting algorithms (as shown)")
-    print("  - Payment processing (credit card, PayPal, etc.)")
-    print("  - Compression algorithms (ZIP, GZIP, etc.)")
-    print("  - Validation strategies")
-    print("  - Caching strategies (LRU, LFU, etc.)")
-    print("  - Rendering strategies (HTML, PDF, etc.)")
-    print("\nComparison with Other Patterns:")
-    print("  - Strategy vs State: Strategy is about algorithms,")
-    print("    State is about object behavior")
-    print("  - Strategy vs Template Method: Strategy uses composition,")
-    print("    Template Method uses inheritance")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Define a family of algorithms, encapsulate each one,")
+    logger.info("  and make them interchangeable. Strategy lets the")
+    logger.info("  algorithm vary independently from clients.")
+    logger.info("\nKey Advantages:")
+    logger.debug("  - Algorithms can be swapped at runtime")
+    logger.info("  - Eliminates conditional statements for algorithm selection")
+    logger.info("  - Open/Closed Principle (easy to add new strategies)")
+    logger.info("  - Single Responsibility (each strategy is independent)")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Clients must be aware of different strategies")
+    logger.info("  - Increased number of classes")
+    logger.info("  - Communication overhead between context and strategy")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Multiple ways to perform a task")
+    logger.info("  - Want to avoid conditional statements for algorithm selection")
+    logger.info("  - Algorithms should be interchangeable")
+    logger.info("  - Hide algorithm implementation from clients")
+    logger.info("\nWhen NOT to Use:")
+    logger.info("  - Only one way to perform task")
+    logger.info("  - Algorithms are not interchangeable")
+    logger.info("  - Strategy selection is compile-time only")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Sorting algorithms (as shown)")
+    logger.info("  - Payment processing (credit card, PayPal, etc.)")
+    logger.info("  - Compression algorithms (ZIP, GZIP, etc.)")
+    logger.info("  - Validation strategies")
+    logger.info("  - Caching strategies (LRU, LFU, etc.)")
+    logger.info("  - Rendering strategies (HTML, PDF, etc.)")
+    logger.info("\nComparison with Other Patterns:")
+    logger.info("  - Strategy vs State: Strategy is about algorithms,")
+    logger.info("    State is about object behavior")
+    logger.info("  - Strategy vs Template Method: Strategy uses composition,")
+    logger.info("    Template Method uses inheritance")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":
     main()
-

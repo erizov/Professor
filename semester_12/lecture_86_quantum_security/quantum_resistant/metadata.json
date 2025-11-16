@@ -1,0 +1,12 @@
+{
+  "name": "quantum_resistant",
+  "display_name": "Quantum Resistant",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_86_quantum_security",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

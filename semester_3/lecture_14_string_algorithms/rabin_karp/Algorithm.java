@@ -5,14 +5,17 @@
  * Time Complexity: O(n + m)
  * Space Complexity: O(1)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     public static void main(String[] args) {
-        System.out.println("==".repeat(35));
-        System.out.println("Rabin-Karp Algorithm");
-        System.out.println("==".repeat(35));
-        System.out.println("Category: String Algorithm");
-        System.out.println("Time: O(n + m)");
-        System.out.println("Space: O(1)");
-        System.out.println("==".repeat(35));
+        logger.info("==".repeat(35));
+        logger.info("Rabin-Karp Algorithm");
+        logger.info("==".repeat(35));
+        logger.info("Category: String Algorithm");
+        logger.info("Time: O(n + m)");
+        logger.info("Space: O(1)");
+        logger.info("==".repeat(35));
     }
 }

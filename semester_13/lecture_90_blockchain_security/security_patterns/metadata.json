@@ -1,0 +1,12 @@
+{
+  "name": "security_patterns",
+  "display_name": "Security Patterns",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_90_blockchain_security",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

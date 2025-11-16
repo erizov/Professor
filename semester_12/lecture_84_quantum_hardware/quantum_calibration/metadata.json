@@ -1,0 +1,12 @@
+{
+  "name": "quantum_calibration",
+  "display_name": "Quantum Calibration",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_84_quantum_hardware",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

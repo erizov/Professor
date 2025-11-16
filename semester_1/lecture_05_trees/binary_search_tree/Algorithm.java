@@ -12,7 +12,10 @@ import java.util.Random;
  *   Unbalanced: O(n)
  * Space Complexity: O(n)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class TreeNode {
         int val;
@@ -129,55 +132,55 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("BINARY SEARCH TREE DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("BINARY SEARCH TREE DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1
-        System.out.println("Example 1: Building a BST");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Building a BST");
+        logger.info("-".repeat(70));
         
         BST bst = new BST();
         int[] values = {50, 30, 70, 20, 40, 60, 80};
         
-        System.out.println("Inserting: " + Arrays.toString(values));
+        logger.info("Inserting: " + Arrays.toString(values));
         for (int val : values) {
             bst.insert(val);
         }
         
-        System.out.println("Size: " + bst.size());
-        System.out.println("Height: " + bst.height());
-        System.out.println("Inorder (sorted): " + bst.inorder());
-        System.out.println();
+        logger.info("Size: " + bst.size());
+        logger.info("Height: " + bst.height());
+        logger.info("Inorder (sorted): " + bst.inorder());
+        logger.info();
         
         // Example 2: Search
-        System.out.println("Example 2: Searching");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Searching");
+        logger.info("-".repeat(70));
         
         int[] searchVals = {40, 25, 70, 100};
         for (int val : searchVals) {
             System.out.printf("Search %d: %s%n", val,
                             bst.search(val) ? "Found" : "Not found");
         }
-        System.out.println();
+        logger.info();
         
         // Example 3: Deletion
-        System.out.println("Example 3: Deletion");
-        System.out.println("-".repeat(70));
+        logger.info("Example 3: Deletion");
+        logger.info("-".repeat(70));
         
-        System.out.println("Before: " + bst.inorder());
+        logger.info("Before: " + bst.inorder());
         bst.delete(20);
-        System.out.println("After deleting 20: " + bst.inorder());
+        logger.info("After deleting 20: " + bst.inorder());
         bst.delete(30);
-        System.out.println("After deleting 30: " + bst.inorder());
+        logger.info("After deleting 30: " + bst.inorder());
         bst.delete(50);
-        System.out.println("After deleting 50: " + bst.inorder());
-        System.out.println();
+        logger.info("After deleting 50: " + bst.inorder());
+        logger.info();
         
         // Example 4: Performance
-        System.out.println("Example 4: Performance (Random Insertion)");
-        System.out.println("-".repeat(70));
+        logger.info("Example 4: Performance (Random Insertion)");
+        logger.info("-".repeat(70));
         
         int[] sizes = {100, 500, 1000};
         Random rand = new Random(42);
@@ -201,19 +204,19 @@ public class Algorithm {
                             size, ms, perfBst.height());
         }
         
-        System.out.println();
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Search/Insert/Delete: O(h)");
-        System.out.println("  Balanced: O(log n)");
-        System.out.println("  Unbalanced: O(n)");
-        System.out.println("\nKey Points:");
-        System.out.println("  + Fast operations if balanced");
-        System.out.println("  + Inorder = sorted");
-        System.out.println("  + Simple implementation");
-        System.out.println("  - Can become unbalanced");
-        System.out.println("  - Worst case O(n)");
-        System.out.println("=".repeat(70));
+        logger.info();
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Search/Insert/Delete: O(h)");
+        logger.info("  Balanced: O(log n)");
+        logger.info("  Unbalanced: O(n)");
+        logger.info("\nKey Points:");
+        logger.info("  + Fast operations if balanced");
+        logger.info("  + Inorder = sorted");
+        logger.info("  + Simple implementation");
+        logger.info("  - Can become unbalanced");
+        logger.info("  - Worst case O(n)");
+        logger.info("=".repeat(70));
         
         long endTime = System.nanoTime();
         double totalMs = (endTime - startTime) / 1_000_000.0;

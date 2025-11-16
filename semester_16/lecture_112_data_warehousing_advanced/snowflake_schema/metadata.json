@@ -1,0 +1,12 @@
+{
+  "name": "snowflake_schema",
+  "display_name": "Snowflake Schema",
+  "category": "Advanced Graduate Level",
+  "semester": 16,
+  "lecture": "lecture_112_data_warehousing_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

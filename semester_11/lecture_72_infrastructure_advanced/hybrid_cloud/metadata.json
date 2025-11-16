@@ -1,0 +1,12 @@
+{
+  "name": "hybrid_cloud",
+  "display_name": "Hybrid Cloud",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_72_infrastructure_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

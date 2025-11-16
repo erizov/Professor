@@ -1,0 +1,12 @@
+{
+  "name": "benchmark_suites",
+  "display_name": "Benchmark Suites",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_68_llm_evaluation",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -5,7 +5,10 @@ import java.util.*;
  * 
  * Distributes requests across servers.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class Server {
         String id;
@@ -37,10 +40,10 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("LOAD BALANCING PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("LOAD BALANCING PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         List<Server> servers = Arrays.asList(
             new Server("server1"),
@@ -53,15 +56,15 @@ public class Algorithm {
         for (int i = 0; i < 5; i++) {
             Server server = lb.selectServer();
             server.connections++;
-            System.out.println("Request " + (i+1) + " -> " + server.id);
+            logger.info("Request " + (i+1) + " -> " + server.id);
         }
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: Distributes requests");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: Distributes requests");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

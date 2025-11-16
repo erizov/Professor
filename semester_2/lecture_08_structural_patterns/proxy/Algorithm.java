@@ -3,7 +3,10 @@
  * 
  * Provides surrogate for another object.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     interface Image {
         void display();
@@ -18,11 +21,11 @@ public class Algorithm {
         }
         
         private void loadFromDisk() {
-            System.out.println("Loading " + filename + " from disk...");
+            logger.info("Loading " + filename + " from disk...");
         }
         
         public void display() {
-            System.out.println("Displaying " + filename);
+            logger.info("Displaying " + filename);
         }
     }
     
@@ -43,18 +46,18 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("PROXY DESIGN PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("PROXY DESIGN PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         Image image = new ProxyImage("photo.jpg");
-        System.out.println("Image proxy created (not loaded yet)");
+        logger.info("Image proxy created (not loaded yet)");
         image.display();
-        System.out.println();
+        logger.info();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: Provides surrogate for object");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: Provides surrogate for object");
+        logger.info("=".repeat(70));
     }
 }

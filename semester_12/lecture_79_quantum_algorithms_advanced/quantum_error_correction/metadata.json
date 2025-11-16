@@ -1,0 +1,12 @@
+{
+  "name": "quantum_error_correction",
+  "display_name": "Quantum Error Correction",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_79_quantum_algorithms_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

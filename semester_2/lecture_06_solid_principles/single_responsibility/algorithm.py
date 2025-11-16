@@ -9,6 +9,8 @@ a single, well-defined responsibility.
 
 import sys
 from pathlib import Path
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
@@ -27,11 +29,11 @@ class BadEmployee:
     
     def save_to_database(self) -> None:
         """Save employee to database."""
-        print(f"Saving {self.name} to database...")
+        logger.info(f"Saving {self.name} to database...")
     
     def send_email(self, message: str) -> None:
         """Send email to employee."""
-        print(f"Sending email to {self.name}: {message}")
+        logger.info(f"Sending email to {self.name}: {message}")
     
     def generate_report(self) -> str:
         """Generate employee report."""
@@ -62,7 +64,7 @@ class EmployeeRepository:
     @staticmethod
     def save(employee: Employee) -> None:
         """Save employee to database."""
-        print(f"Saving {self.name} to database...")
+        logger.info(f"Saving {self.name} to database...")
 
 
 class EmailService:
@@ -71,7 +73,7 @@ class EmailService:
     @staticmethod
     def send_email(employee: Employee, message: str) -> None:
         """Send email to employee."""
-        print(f"Sending email to {employee.name}: {message}")
+        logger.info(f"Sending email to {employee.name}: {message}")
 
 
 class ReportGenerator:
@@ -100,11 +102,11 @@ class BadFileManager:
     
     def compress_file(self, filename: str) -> None:
         """Compress file."""
-        print(f"Compressing {filename}...")
+        logger.info(f"Compressing {filename}...")
     
     def encrypt_file(self, filename: str) -> None:
         """Encrypt file."""
-        print(f"Encrypting {filename}...")
+        logger.info(f"Encrypting {filename}...")
 
 
 # ✅ GOOD: Separate responsibilities
@@ -134,7 +136,7 @@ class FileCompressor:
     @staticmethod
     def compress(filename: str) -> None:
         """Compress file."""
-        print(f"Compressing {filename}...")
+        logger.info(f"Compressing {filename}...")
 
 
 class FileEncryptor:
@@ -143,7 +145,7 @@ class FileEncryptor:
     @staticmethod
     def encrypt(filename: str) -> None:
         """Encrypt file."""
-        print(f"Encrypting {filename}...")
+        logger.info(f"Encrypting {filename}...")
 
 
 # Example 3: Order Processing
@@ -166,11 +168,11 @@ class BadOrder:
     
     def save(self) -> None:
         """Save order to database."""
-        print(f"Saving order for {self.customer}...")
+        logger.info(f"Saving order for {self.customer}...")
     
     def send_confirmation(self) -> None:
         """Send confirmation email."""
-        print(f"Sending confirmation to {self.customer}...")
+        logger.info(f"Sending confirmation to {self.customer}...")
 
 
 # ✅ GOOD: Separate responsibilities
@@ -206,7 +208,7 @@ class OrderRepository:
     @staticmethod
     def save(order: Order) -> None:
         """Save order to database."""
-        print(f"Saving order for {order.customer}...")
+        logger.info(f"Saving order for {order.customer}...")
 
 
 class OrderNotifier:
@@ -215,39 +217,39 @@ class OrderNotifier:
     @staticmethod
     def send_confirmation(order: Order) -> None:
         """Send confirmation email."""
-        print(f"Sending confirmation to {order.customer}...")
+        logger.info(f"Sending confirmation to {order.customer}...")
 
 
 def main() -> None:
     """Demonstration of Single Responsibility Principle."""
-    print("=" * 70)
-    print("SINGLE RESPONSIBILITY PRINCIPLE (SRP) DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("SINGLE RESPONSIBILITY PRINCIPLE (SRP) DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Employee Management
-    print("Example 1: Employee Management")
-    print("-" * 70)
+    logger.info("Example 1: Employee Management")
+    logger.info("-" * 70)
     
-    print("❌ BAD: Single class with multiple responsibilities")
+    logger.info("❌ BAD: Single class with multiple responsibilities")
     bad_emp = BadEmployee("John", 50000)
     bad_emp.calculate_pay()
     bad_emp.save_to_database()
     bad_emp.send_email("Welcome!")
-    print()
+    logger.info()
     
-    print("✅ GOOD: Separate classes with single responsibilities")
+    logger.info("✅ GOOD: Separate classes with single responsibilities")
     emp = Employee("John", 50000)
     pay = PayCalculator.calculate_pay(emp)
-    print(f"Pay: ${pay:.2f}")
+    logger.info(f"Pay: ${pay:.2f}")
     EmailService.send_email(emp, "Welcome!")
     report = ReportGenerator.generate_report(emp)
-    print(f"Report: {report}")
-    print()
+    logger.info(f"Report: {report}")
+    logger.info()
     
     # Example 2: Order Processing
-    print("Example 2: Order Processing")
-    print("-" * 70)
+    logger.info("Example 2: Order Processing")
+    logger.info("-" * 70)
     
     items = [
         {'name': 'Laptop', 'price': 999.99},
@@ -260,41 +262,41 @@ def main() -> None:
     total = OrderCalculator.calculate_total(order)
     is_valid = OrderValidator.validate(order)
     
-    print(f"Order total: ${total:.2f}")
-    print(f"Order valid: {is_valid}")
+    logger.info(f"Order total: ${total:.2f}")
+    logger.info(f"Order valid: {is_valid}")
     
     if is_valid:
         OrderRepository.save(order)
         OrderNotifier.send_confirmation(order)
-    print()
+    logger.info()
     
-    print("=" * 70)
-    print("\nPrinciple Summary:")
-    print("\nDefinition:")
-    print("  A class should have only one reason to change.")
-    print("  Each class should have a single, well-defined responsibility.")
-    print("\nKey Benefits:")
-    print("  - Easier to understand and maintain")
-    print("  - Easier to test")
-    print("  - Reduced coupling")
-    print("  - Better code organization")
-    print("  - Easier to modify")
-    print("\nSigns of Violation:")
-    print("  - Class has multiple reasons to change")
-    print("  - Class does too many things")
-    print("  - Methods are unrelated")
-    print("  - Hard to name the class clearly")
-    print("\nHow to Apply:")
-    print("  1. Identify responsibilities")
-    print("  2. Separate concerns")
-    print("  3. Create focused classes")
-    print("  4. Use composition")
-    print("\nCommon Violations:")
-    print("  - God classes (do everything)")
-    print("  - Mixed data and behavior")
-    print("  - Business logic in data classes")
-    print("  - Multiple unrelated methods")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPrinciple Summary:")
+    logger.info("\nDefinition:")
+    logger.info("  A class should have only one reason to change.")
+    logger.info("  Each class should have a single, well-defined responsibility.")
+    logger.info("\nKey Benefits:")
+    logger.info("  - Easier to understand and maintain")
+    logger.info("  - Easier to test")
+    logger.info("  - Reduced coupling")
+    logger.info("  - Better code organization")
+    logger.info("  - Easier to modify")
+    logger.info("\nSigns of Violation:")
+    logger.info("  - Class has multiple reasons to change")
+    logger.info("  - Class does too many things")
+    logger.info("  - Methods are unrelated")
+    logger.info("  - Hard to name the class clearly")
+    logger.info("\nHow to Apply:")
+    logger.info("  1. Identify responsibilities")
+    logger.info("  2. Separate concerns")
+    logger.info("  3. Create focused classes")
+    logger.info("  4. Use composition")
+    logger.info("\nCommon Violations:")
+    logger.info("  - God classes (do everything)")
+    logger.info("  - Mixed data and behavior")
+    logger.info("  - Business logic in data classes")
+    logger.info("  - Multiple unrelated methods")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

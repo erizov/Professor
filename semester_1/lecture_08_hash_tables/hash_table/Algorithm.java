@@ -5,7 +5,10 @@ import java.util.*;
  * 
  * Average O(1) operations for insert, lookup, delete.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class HashTable<K, V> {
         private static class Entry<K, V> {
@@ -138,14 +141,14 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("HASH TABLE DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("HASH TABLE DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Basic operations
-        System.out.println("Example 1: Basic Operations");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Basic Operations");
+        logger.info("-".repeat(70));
         
         HashTable<String, Integer> ht = new HashTable<>();
         
@@ -154,27 +157,27 @@ public class Algorithm {
         ht.put("cherry", 8);
         ht.put("date", 2);
         
-        System.out.println("Hash table: " + ht);
-        System.out.println("Size: " + ht.size());
-        System.out.println("Get 'apple': " + ht.get("apple"));
-        System.out.println("Contains 'cherry': " + ht.containsKey("cherry"));
-        System.out.println();
+        logger.info("Hash table: " + ht);
+        logger.info("Size: " + ht.size());
+        logger.info("Get 'apple': " + ht.get("apple"));
+        logger.info("Contains 'cherry': " + ht.containsKey("cherry"));
+        logger.info();
         
         // Example 2: Update and remove
-        System.out.println("Example 2: Update and Remove");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Update and Remove");
+        logger.info("-".repeat(70));
         
         ht.put("apple", 10);
-        System.out.println("After updating 'apple' to 10: " + ht);
+        logger.info("After updating 'apple' to 10: " + ht);
         
         ht.remove("banana");
-        System.out.println("After removing 'banana': " + ht);
-        System.out.println("Size: " + ht.size());
-        System.out.println();
+        logger.info("After removing 'banana': " + ht);
+        logger.info("Size: " + ht.size());
+        logger.info();
         
         // Example 3: Integer keys
-        System.out.println("Example 3: Integer Keys");
-        System.out.println("-".repeat(70));
+        logger.info("Example 3: Integer Keys");
+        logger.info("-".repeat(70));
         
         HashTable<Integer, String> ht2 = new HashTable<>();
         ht2.put(1, "one");
@@ -182,21 +185,21 @@ public class Algorithm {
         ht2.put(3, "three");
         ht2.put(100, "hundred");
         
-        System.out.println("Hash table with integers: " + ht2);
-        System.out.println("Get key 100: " + ht2.get(100));
-        System.out.println();
+        logger.info("Hash table with integers: " + ht2);
+        logger.info("Get key 100: " + ht2.get(100));
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Average: O(1) for all operations");
-        System.out.println("  Worst: O(n) with collisions");
-        System.out.println("  Space: O(n)");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Fast average-case operations");
-        System.out.println("  - Flexible key types");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Average: O(1) for all operations");
+        logger.info("  Worst: O(n) with collisions");
+        logger.info("  Space: O(n)");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Fast average-case operations");
+        logger.info("  - Flexible key types");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

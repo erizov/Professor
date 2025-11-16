@@ -5,14 +5,17 @@
  * Time Complexity: O(n*d*i)
  * Space Complexity: O(d)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     public static void main(String[] args) {
-        System.out.println("==".repeat(35));
-        System.out.println("Gradient Descent");
-        System.out.println("==".repeat(35));
-        System.out.println("Category: Machine Learning");
-        System.out.println("Time: O(n*d*i)");
-        System.out.println("Space: O(d)");
-        System.out.println("==".repeat(35));
+        logger.info("==".repeat(35));
+        logger.info("Gradient Descent");
+        logger.info("==".repeat(35));
+        logger.info("Category: Machine Learning");
+        logger.info("Time: O(n*d*i)");
+        logger.info("Space: O(d)");
+        logger.info("==".repeat(35));
     }
 }

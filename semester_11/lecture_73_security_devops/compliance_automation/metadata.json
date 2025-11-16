@@ -1,0 +1,12 @@
+{
+  "name": "compliance_automation",
+  "display_name": "Compliance Automation",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_73_security_devops",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

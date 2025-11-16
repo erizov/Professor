@@ -14,6 +14,8 @@ from typing import List, Optional
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 # Domain Entity
@@ -216,14 +218,14 @@ class InMemoryProductRepository(IProductRepository):
 
 def main() -> None:
     """Demonstration of Repository Pattern."""
-    print("=" * 70)
-    print("REPOSITORY DESIGN PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("REPOSITORY DESIGN PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: User Repository
-    print("Example 1: User Repository")
-    print("-" * 70)
+    logger.info("Example 1: User Repository")
+    logger.info("-" * 70)
     
     repository = InMemoryUserRepository()
     service = UserService(repository)
@@ -233,31 +235,31 @@ def main() -> None:
     user2 = service.create_user("Bob", "bob@example.com")
     user3 = service.create_user("Charlie", "charlie@example.com")
     
-    print(f"Created users:")
+    logger.info(f"Created users:")
     for user in service.get_all_users():
-        print(f"  {user}")
-    print()
+        logger.info(f"  {user}")
+    logger.info()
     
     # Get user by ID
     found = service.get_user(2)
-    print(f"User 2: {found}")
-    print()
+    logger.info(f"User 2: {found}")
+    logger.info()
     
     # Update user
     service.update_user_email(2, "robert@example.com")
-    print(f"Updated user 2: {service.get_user(2)}")
-    print()
+    logger.info(f"Updated user 2: {service.get_user(2)}")
+    logger.info()
     
     # Delete user
     service.delete_user(1)
-    print(f"After deleting user 1:")
+    logger.info(f"After deleting user 1:")
     for user in service.get_all_users():
-        print(f"  {user}")
-    print()
+        logger.info(f"  {user}")
+    logger.info()
     
     # Example 2: Product Repository
-    print("Example 2: Product Repository")
-    print("-" * 70)
+    logger.info("Example 2: Product Repository")
+    logger.info("-" * 70)
     
     product_repo = InMemoryProductRepository()
     
@@ -268,21 +270,21 @@ def main() -> None:
     
     # Find by name
     laptops = product_repo.find_by_name("laptop")
-    print("Products with 'laptop' in name:")
+    logger.info("Products with 'laptop' in name:")
     for p in laptops:
-        print(f"  {p}")
-    print()
+        logger.info(f"  {p}")
+    logger.info()
     
     # Find by price range
     affordable = product_repo.find_by_price_range(0, 100)
-    print("Products under $100:")
+    logger.info("Products under $100:")
     for p in affordable:
-        print(f"  {p}")
-    print()
+        logger.info(f"  {p}")
+    logger.info()
     
     # Example 3: Performance measurement
-    print("Example 3: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 3: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Repository")
     
@@ -294,35 +296,35 @@ def main() -> None:
         return len(svc.get_all_users())
     
     result, metrics = timer.measure(repository_operations)
-    print(f"Time to create 100 users: {metrics['execution_time_ms']:.3f} ms")
-    print(f"Users created: {result}")
-    print()
+    logger.info(f"Time to create 100 users: {metrics['execution_time_ms']:.3f} ms")
+    logger.info(f"Users created: {result}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Mediates between domain and data mapping layers, acting")
-    print("  like an in-memory domain object collection.")
-    print("\nKey Advantages:")
-    print("  - Abstraction over data access")
-    print("  - Testable (can use in-memory repository)")
-    print("  - Centralized data access logic")
-    print("  - Easy to swap implementations")
-    print("\nKey Disadvantages:")
-    print("  - Additional abstraction layer")
-    print("  - Can be overkill for simple CRUD")
-    print("  - May hide important data access details")
-    print("\nWhen to Use:")
-    print("  - Complex data access logic")
-    print("  - Need to test business logic independently")
-    print("  - Multiple data sources")
-    print("  - Want to abstract data access")
-    print("\nCommon Use Cases:")
-    print("  - Domain-Driven Design (DDD)")
-    print("  - ORM abstraction")
-    print("  - Testing with mock repositories")
-    print("  - Multi-database support")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Mediates between domain and data mapping layers, acting")
+    logger.info("  like an in-memory domain object collection.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Abstraction over data access")
+    logger.info("  - Testable (can use in-memory repository)")
+    logger.info("  - Centralized data access logic")
+    logger.info("  - Easy to swap implementations")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Additional abstraction layer")
+    logger.info("  - Can be overkill for simple CRUD")
+    logger.info("  - May hide important data access details")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Complex data access logic")
+    logger.info("  - Need to test business logic independently")
+    logger.info("  - Multiple data sources")
+    logger.info("  - Want to abstract data access")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Domain-Driven Design (DDD)")
+    logger.info("  - ORM abstraction")
+    logger.info("  - Testing with mock repositories")
+    logger.info("  - Multi-database support")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

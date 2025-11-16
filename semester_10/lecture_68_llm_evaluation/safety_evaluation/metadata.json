@@ -1,0 +1,12 @@
+{
+  "name": "safety_evaluation",
+  "display_name": "Safety Evaluation",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_68_llm_evaluation",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

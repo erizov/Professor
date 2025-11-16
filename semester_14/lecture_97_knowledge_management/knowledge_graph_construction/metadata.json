@@ -1,0 +1,12 @@
+{
+  "name": "knowledge_graph_construction",
+  "display_name": "Knowledge Graph Construction",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_97_knowledge_management",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

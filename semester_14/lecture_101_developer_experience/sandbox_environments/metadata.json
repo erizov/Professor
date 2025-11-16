@@ -1,0 +1,12 @@
+{
+  "name": "sandbox_environments",
+  "display_name": "Sandbox Environments",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_101_developer_experience",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

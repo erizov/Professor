@@ -1,0 +1,12 @@
+{
+  "name": "ticket_routing_ai",
+  "display_name": "Ticket Routing Ai",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_95_support_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

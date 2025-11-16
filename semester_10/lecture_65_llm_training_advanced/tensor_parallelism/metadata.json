@@ -1,0 +1,12 @@
+{
+  "name": "tensor_parallelism",
+  "display_name": "Tensor Parallelism",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_65_llm_training_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

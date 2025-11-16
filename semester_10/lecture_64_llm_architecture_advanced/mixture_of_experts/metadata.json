@@ -1,0 +1,12 @@
+{
+  "name": "mixture_of_experts",
+  "display_name": "Mixture Of Experts",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_64_llm_architecture_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

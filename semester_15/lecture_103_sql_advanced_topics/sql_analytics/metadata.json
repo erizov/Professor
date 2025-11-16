@@ -1,0 +1,12 @@
+{
+  "name": "sql_analytics",
+  "display_name": "Sql Analytics",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_103_sql_advanced_topics",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

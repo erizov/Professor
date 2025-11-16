@@ -1,0 +1,12 @@
+{
+  "name": "plasma",
+  "display_name": "Plasma",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_87_blockchain_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

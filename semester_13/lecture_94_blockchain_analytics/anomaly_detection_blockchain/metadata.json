@@ -1,0 +1,12 @@
+{
+  "name": "anomaly_detection_blockchain",
+  "display_name": "Anomaly Detection Blockchain",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_94_blockchain_analytics",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

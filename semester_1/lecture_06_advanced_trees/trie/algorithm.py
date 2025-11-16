@@ -13,6 +13,8 @@ import random
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class TrieNode:
@@ -196,82 +198,82 @@ class Trie:
 
 def main() -> None:
     """Demonstration of Trie."""
-    print("=" * 70)
-    print("TRIE (PREFIX TREE) DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("TRIE (PREFIX TREE) DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic operations
-    print("Example 1: Insert and Search")
-    print("-" * 70)
+    logger.info("Example 1: Insert and Search")
+    logger.info("-" * 70)
     
     trie = Trie()
     words = ["apple", "app", "apricot", "banana", "band", "bandana"]
     
-    print(f"Inserting words: {words}")
+    logger.info(f"Inserting words: {words}")
     for word in words:
         trie.insert(word)
     
-    print(f"\nTotal words: {trie.count_words()}")
+    logger.info(f"\nTotal words: {trie.count_words()}")
     
     search_words = ["app", "apple", "apples", "ban", "banana"]
-    print("\nSearching:")
+    logger.info("\nSearching:")
     for word in search_words:
         found = trie.search(word)
-        print(f"  '{word}': {'Found' if found else 'Not found'}")
-    print()
+        logger.info(f"  '{word}': {'Found' if found else 'Not found'}")
+    logger.info()
     
     # Example 2: Prefix matching
-    print("Example 2: Prefix Matching")
-    print("-" * 70)
+    logger.info("Example 2: Prefix Matching")
+    logger.info("-" * 70)
     
     prefixes = ["app", "ban", "cat", "b"]
     for prefix in prefixes:
         has_prefix = trie.starts_with(prefix)
-        print(f"Starts with '{prefix}': {has_prefix}")
-    print()
+        logger.info(f"Starts with '{prefix}': {has_prefix}")
+    logger.info()
     
     # Example 3: Autocomplete
-    print("Example 3: Autocomplete (Words with Prefix)")
-    print("-" * 70)
+    logger.info("Example 3: Autocomplete (Words with Prefix)")
+    logger.info("-" * 70)
     
     prefixes_auto = ["app", "ban", "b"]
     for prefix in prefixes_auto:
         matches = trie.get_words_with_prefix(prefix)
-        print(f"Words starting with '{prefix}': {matches}")
-    print()
+        logger.info(f"Words starting with '{prefix}': {matches}")
+    logger.info()
     
     # Example 4: Deletion
-    print("Example 4: Deletion")
-    print("-" * 70)
+    logger.info("Example 4: Deletion")
+    logger.info("-" * 70)
     
-    print(f"Before deletion: {trie.get_words_with_prefix('app')}")
+    logger.info(f"Before deletion: {trie.get_words_with_prefix('app')}")
     
     trie.delete("app")
-    print(f"After deleting 'app': {trie.get_words_with_prefix('app')}")
+    logger.info(f"After deleting 'app': {trie.get_words_with_prefix('app')}")
     
     trie.delete("apple")
-    print(f"After deleting 'apple': {trie.get_words_with_prefix('app')}")
-    print()
+    logger.info(f"After deleting 'apple': {trie.get_words_with_prefix('app')}")
+    logger.info()
     
     # Example 5: Longest common prefix
-    print("Example 5: Longest Common Prefix")
-    print("-" * 70)
+    logger.info("Example 5: Longest Common Prefix")
+    logger.info("-" * 70)
     
     trie2 = Trie()
     similar_words = ["flower", "flow", "flight"]
     
-    print(f"Words: {similar_words}")
+    logger.info(f"Words: {similar_words}")
     for word in similar_words:
         trie2.insert(word)
     
     lcp = trie2.longest_common_prefix()
-    print(f"Longest common prefix: '{lcp}'")
-    print()
+    logger.info(f"Longest common prefix: '{lcp}'")
+    logger.info()
     
     # Example 6: Performance measurement
-    print("Example 6: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 6: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Trie")
     
@@ -296,47 +298,47 @@ def main() -> None:
         
         _, metrics = timer.measure(insert_all)
         
-        print(f"n={size:4d}: {metrics['execution_time_ms']:8.3f} ms, "
+        logger.info(f"n={size:4d}: {metrics['execution_time_ms']:8.3f} ms, "
               f"{metrics['memory_peak_kb']:8.2f} KB")
     
-    print()
+    logger.info()
     timer.print_summary()
     
-    print("\n" + "=" * 70)
-    print("\nComplexity Summary:")
-    print("  Insert:  O(m) - m is word length")
-    print("  Search:  O(m)")
-    print("  Delete:  O(m)")
-    print("  Prefix:  O(m)")
-    print("  Autocomplete: O(m + n) - n is # results")
-    print("  Space:   O(ALPHABET_SIZE * m * n)")
-    print("\nKey Points:")
-    print("  + Fast string operations")
-    print("  + Efficient prefix matching")
-    print("  + Space sharing for common prefixes")
-    print("  + Great for autocomplete")
-    print("  + Dictionary operations")
-    print("  - Space intensive")
-    print("  - Only efficient for strings")
-    print("  - Cache unfriendly")
-    print("\nApplications:")
-    print("  • Autocomplete systems")
-    print("  • Spell checkers")
-    print("  • IP routing (longest prefix match)")
-    print("  • Dictionary implementation")
-    print("  • Word games (Scrabble, Boggle)")
-    print("  • String matching")
-    print("\nWhen to use:")
-    print("  • Prefix matching needed")
-    print("  • Many string operations")
-    print("  • Autocomplete feature")
-    print("  • Large dictionaries")
-    print("\nWhen NOT to use:")
-    print("  • Space is critical")
-    print("  • Few strings")
-    print("  • Random access more important")
-    print("  • Need approximate matching")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Insert:  O(m) - m is word length")
+    logger.info("  Search:  O(m)")
+    logger.info("  Delete:  O(m)")
+    logger.info("  Prefix:  O(m)")
+    logger.info("  Autocomplete: O(m + n) - n is # results")
+    logger.info("  Space:   O(ALPHABET_SIZE * m * n)")
+    logger.info("\nKey Points:")
+    logger.info("  + Fast string operations")
+    logger.info("  + Efficient prefix matching")
+    logger.info("  + Space sharing for common prefixes")
+    logger.info("  + Great for autocomplete")
+    logger.info("  + Dictionary operations")
+    logger.info("  - Space intensive")
+    logger.info("  - Only efficient for strings")
+    logger.info("  - Cache unfriendly")
+    logger.info("\nApplications:")
+    logger.info("  • Autocomplete systems")
+    logger.info("  • Spell checkers")
+    logger.info("  • IP routing (longest prefix match)")
+    logger.info("  • Dictionary implementation")
+    logger.info("  • Word games (Scrabble, Boggle)")
+    logger.info("  • String matching")
+    logger.info("\nWhen to use:")
+    logger.info("  • Prefix matching needed")
+    logger.info("  • Many string operations")
+    logger.info("  • Autocomplete feature")
+    logger.info("  • Large dictionaries")
+    logger.info("\nWhen NOT to use:")
+    logger.info("  • Space is critical")
+    logger.info("  • Few strings")
+    logger.info("  • Random access more important")
+    logger.info("  • Need approximate matching")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

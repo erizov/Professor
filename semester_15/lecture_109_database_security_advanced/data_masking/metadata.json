@@ -1,0 +1,12 @@
+{
+  "name": "data_masking",
+  "display_name": "Data Masking",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_109_database_security_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

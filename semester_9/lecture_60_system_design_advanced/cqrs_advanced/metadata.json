@@ -1,0 +1,12 @@
+{
+  "name": "cqrs_advanced",
+  "display_name": "Cqrs Advanced",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_60_system_design_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "chaos_experiments",
+  "display_name": "Chaos Experiments",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_77_chaos_engineering_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

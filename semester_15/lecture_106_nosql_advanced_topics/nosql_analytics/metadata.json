@@ -1,0 +1,12 @@
+{
+  "name": "nosql_analytics",
+  "display_name": "Nosql Analytics",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_106_nosql_advanced_topics",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

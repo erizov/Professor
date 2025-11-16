@@ -6,6 +6,7 @@
  */
 import java.util.*;
 
+import java.util.logging.Logger;
 class TestResult {
     String testName;
     boolean passed;
@@ -195,8 +196,8 @@ class TestRunner {
     }
     
     void printResults() {
-        System.out.println("Integration Test Results:");
-        System.out.println("-".repeat(70));
+        logger.info("Integration Test Results:");
+        logger.info("-".repeat(70));
         
         long passed = results.stream().filter(r -> r.passed).count();
         long total = results.size();
@@ -210,25 +211,27 @@ class TestRunner {
             System.out.printf("  Time: %.2f ms%n", result.executionTime);
         }
         
-        System.out.println("-".repeat(70));
+        logger.info("-".repeat(70));
         System.out.printf("Total: %d/%d passed%n", passed, total);
-        System.out.println();
+        logger.info();
     }
 }
 
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("INTEGRATION TESTING PATTERN DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("INTEGRATION TESTING PATTERN DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Database Integration Test
-        System.out.println("Example 1: Database Integration Test");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Database Integration Test");
+        logger.info("-".repeat(70));
         
         DatabaseIntegrationTest dbTest = new DatabaseIntegrationTest();
         TestResult result = dbTest.run();
@@ -236,22 +239,22 @@ public class Algorithm {
         System.out.printf("Test: %s%n", result.testName);
         System.out.printf("Result: %s%n", result.passed ? "PASSED" : "FAILED");
         System.out.printf("Message: %s%n", result.message);
-        System.out.println();
+        logger.info();
         
         // Example 2: API Integration Test
-        System.out.println("Example 2: API Integration Test");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: API Integration Test");
+        logger.info("-".repeat(70));
         
         APIIntegrationTest apiTest = new APIIntegrationTest();
         result = apiTest.run();
         
         System.out.printf("Test: %s%n", result.testName);
         System.out.printf("Result: %s%n", result.passed ? "PASSED" : "FAILED");
-        System.out.println();
+        logger.info();
         
         // Example 3: Test Suite
-        System.out.println("Example 3: Integration Test Suite");
-        System.out.println("-".repeat(70));
+        logger.info("Example 3: Integration Test Suite");
+        logger.info("-".repeat(70));
         
         TestRunner runner = new TestRunner();
         runner.addTest(new DatabaseIntegrationTest());
@@ -262,22 +265,22 @@ public class Algorithm {
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern Summary:");
-        System.out.println("\nIntent:");
-        System.out.println("  Tests the integration between different components,");
-        System.out.println("  modules, or systems to ensure they work together correctly.");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Catches integration issues early");
-        System.out.println("  - Tests real interactions");
-        System.out.println("  - Validates system behavior");
-        System.out.println("  - Confidence in deployments");
-        System.out.println("\nWhen to Use:");
-        System.out.println("  - Testing component interactions");
-        System.out.println("  - API integration");
-        System.out.println("  - Database integration");
-        System.out.println("  - End-to-end workflows");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern Summary:");
+        logger.info("\nIntent:");
+        logger.info("  Tests the integration between different components,");
+        logger.info("  modules, or systems to ensure they work together correctly.");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Catches integration issues early");
+        logger.info("  - Tests real interactions");
+        logger.info("  - Validates system behavior");
+        logger.info("  - Confidence in deployments");
+        logger.info("\nWhen to Use:");
+        logger.info("  - Testing component interactions");
+        logger.info("  - API integration");
+        logger.info("  - Database integration");
+        logger.info("  - End-to-end workflows");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

@@ -1,0 +1,12 @@
+{
+  "name": "microkernel_architecture",
+  "display_name": "Microkernel Architecture",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_55_advanced_os",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

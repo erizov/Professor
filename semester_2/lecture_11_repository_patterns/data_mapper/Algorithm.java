@@ -5,7 +5,10 @@ import java.util.*;
  * 
  * Maps between domain objects and database.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class User {
         private int userId;
@@ -97,10 +100,10 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("DATA MAPPER DESIGN PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("DATA MAPPER DESIGN PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         UserDataAccess dataAccess = new UserDataAccess();
         UserRepository repository = new UserRepository(dataAccess);
@@ -108,17 +111,17 @@ public class Algorithm {
         User user = new User(0, "Alice", "alice@example.com");
         User saved = repository.save(user);
         
-        System.out.println("Saved: " + saved.getName());
+        logger.info("Saved: " + saved.getName());
         
         User found = repository.findById(saved.getUserId());
-        System.out.println("Found: " + found.getName());
-        System.out.println();
+        logger.info("Found: " + found.getName());
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: Maps between domain and database");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: Maps between domain and database");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

@@ -14,6 +14,8 @@ import unittest
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 # Code to test
@@ -51,10 +53,10 @@ class TestCalculator:
     def assert_equal(self, actual: Any, expected: Any, test_name: str) -> None:
         """Assert that actual equals expected."""
         if actual == expected:
-            print(f"✓ {test_name}: PASSED")
+            logger.info(f"✓ {test_name}: PASSED")
             self.tests_passed += 1
         else:
-            print(f"✗ {test_name}: FAILED (expected {expected}, got {actual})")
+            logger.info(f"✗ {test_name}: FAILED (expected {expected}, got {actual})")
             self.tests_failed += 1
     
     def assert_raises(self, func: Callable, exception_type: type, 
@@ -62,13 +64,13 @@ class TestCalculator:
         """Assert that function raises exception."""
         try:
             func(*args, **kwargs)
-            print(f"✗ {test_name}: FAILED (expected {exception_type.__name__})")
+            logger.info(f"✗ {test_name}: FAILED (expected {exception_type.__name__})")
             self.tests_failed += 1
         except exception_type:
-            print(f"✓ {test_name}: PASSED")
+            logger.info(f"✓ {test_name}: PASSED")
             self.tests_passed += 1
         except Exception as e:
-            print(f"✗ {test_name}: FAILED (got {type(e).__name__})")
+            logger.info(f"✗ {test_name}: FAILED (got {type(e).__name__})")
             self.tests_failed += 1
     
     def test_add(self) -> None:
@@ -98,16 +100,16 @@ class TestCalculator:
     
     def run_all_tests(self) -> None:
         """Run all tests."""
-        print("Running unit tests...")
-        print()
+        logger.info("Running unit tests...")
+        logger.info()
         self.test_add()
         self.test_subtract()
         self.test_multiply()
         self.test_divide()
-        print()
-        print(f"Tests passed: {self.tests_passed}")
-        print(f"Tests failed: {self.tests_failed}")
-        print(f"Total: {self.tests_passed + self.tests_failed}")
+        logger.info()
+        logger.info(f"Tests passed: {self.tests_passed}")
+        logger.info(f"Tests failed: {self.tests_failed}")
+        logger.info(f"Total: {self.tests_passed + self.tests_failed}")
 
 
 # Using unittest framework
@@ -193,40 +195,40 @@ class UserServiceTest(unittest.TestCase):
 
 def main() -> None:
     """Demonstration of Unit Testing Pattern."""
-    print("=" * 70)
-    print("UNIT TESTING PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("UNIT TESTING PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Manual Unit Tests
-    print("Example 1: Manual Unit Tests")
-    print("-" * 70)
+    logger.info("Example 1: Manual Unit Tests")
+    logger.info("-" * 70)
     
     test_suite = TestCalculator()
     test_suite.run_all_tests()
-    print()
+    logger.info()
     
     # Example 2: Using unittest Framework
-    print("Example 2: Using unittest Framework")
-    print("-" * 70)
+    logger.info("Example 2: Using unittest Framework")
+    logger.info("-" * 70)
     
     suite = unittest.TestLoader().loadTestsFromTestCase(CalculatorTest)
     runner = unittest.TextTestRunner(verbosity=2)
     result = runner.run(suite)
-    print()
+    logger.info()
     
     # Example 3: User Service Tests
-    print("Example 3: User Service Unit Tests")
-    print("-" * 70)
+    logger.info("Example 3: User Service Unit Tests")
+    logger.info("-" * 70)
     
     suite = unittest.TestLoader().loadTestsFromTestCase(UserServiceTest)
     runner = unittest.TextTestRunner(verbosity=2)
     result = runner.run(suite)
-    print()
+    logger.info()
     
     # Example 4: Performance measurement
-    print("Example 4: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 4: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Unit Testing")
     
@@ -238,35 +240,35 @@ def main() -> None:
         return len(results)
     
     result, metrics = timer.measure(test_execution)
-    print(f"Time to execute 1000 test operations: "
+    logger.info(f"Time to execute 1000 test operations: "
           f"{metrics['execution_time_ms']:.3f} ms")
-    print()
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Test individual units of code (functions, methods, classes)")
-    print("  in isolation. Ensures each unit works correctly.")
-    print("\nKey Advantages:")
-    print("  - Early bug detection")
-    print("  - Confidence in code")
-    print("  - Documentation through tests")
-    print("  - Regression prevention")
-    print("\nKey Disadvantages:")
-    print("  - Time investment")
-    print("  - Maintenance overhead")
-    print("  - May not catch integration issues")
-    print("\nWhen to Use:")
-    print("  - All production code")
-    print("  - Critical business logic")
-    print("  - Complex algorithms")
-    print("  - API endpoints")
-    print("\nCommon Use Cases:")
-    print("  - JUnit (Java)")
-    print("  - pytest (Python)")
-    print("  - Jest (JavaScript)")
-    print("  - xUnit (.NET)")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Test individual units of code (functions, methods, classes)")
+    logger.info("  in isolation. Ensures each unit works correctly.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Early bug detection")
+    logger.info("  - Confidence in code")
+    logger.info("  - Documentation through tests")
+    logger.info("  - Regression prevention")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Time investment")
+    logger.info("  - Maintenance overhead")
+    logger.info("  - May not catch integration issues")
+    logger.info("\nWhen to Use:")
+    logger.info("  - All production code")
+    logger.info("  - Critical business logic")
+    logger.info("  - Complex algorithms")
+    logger.info("  - API endpoints")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - JUnit (Java)")
+    logger.info("  - pytest (Python)")
+    logger.info("  - Jest (JavaScript)")
+    logger.info("  - xUnit (.NET)")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

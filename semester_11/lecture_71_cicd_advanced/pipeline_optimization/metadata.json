@@ -1,0 +1,12 @@
+{
+  "name": "pipeline_optimization",
+  "display_name": "Pipeline Optimization",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_71_cicd_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

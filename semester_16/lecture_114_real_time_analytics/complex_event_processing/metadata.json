@@ -1,0 +1,12 @@
+{
+  "name": "complex_event_processing",
+  "display_name": "Complex Event Processing",
+  "category": "Advanced Graduate Level",
+  "semester": 16,
+  "lecture": "lecture_114_real_time_analytics",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

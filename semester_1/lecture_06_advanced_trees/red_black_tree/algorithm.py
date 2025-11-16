@@ -14,6 +14,8 @@ from typing import Optional, List, Any
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class Color(Enum):
@@ -199,7 +201,7 @@ class RedBlackTree:
         if node != self.NIL:
             self.print_tree(node.right, level + 1)
             color = "R" if node.color == Color.RED else "B"
-            print(' ' * 4 * level + '→ ' + 
+            logger.info(' ' * 4 * level + '→ ' + 
                   f"{node.key}({color})")
             self.print_tree(node.left, level + 1)
     
@@ -221,68 +223,68 @@ class RedBlackTree:
 
 def main() -> None:
     """Demonstration of Red-Black Tree."""
-    print("=" * 70)
-    print("RED-BLACK TREE DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("RED-BLACK TREE DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic operations
-    print("Example 1: Basic Insert and Search")
-    print("-" * 70)
+    logger.info("Example 1: Basic Insert and Search")
+    logger.info("-" * 70)
     rb_tree = RedBlackTree()
     keys = [7, 3, 18, 10, 22, 8, 11, 26]
     
-    print(f"Inserting: {keys}")
+    logger.info(f"Inserting: {keys}")
     for key in keys:
         rb_tree.insert(key)
     
-    print("\nTree structure (R=Red, B=Black):")
+    logger.info("\nTree structure (R=Red, B=Black):")
     rb_tree.print_tree()
     
-    print(f"\nInorder traversal: {rb_tree.inorder()}")
-    print(f"Search for 10: {rb_tree.search(10)}")
-    print(f"Search for 15: {rb_tree.search(15)}")
-    print(f"Black height: {rb_tree.get_black_height()}")
-    print()
+    logger.info(f"\nInorder traversal: {rb_tree.inorder()}")
+    logger.info(f"Search for 10: {rb_tree.search(10)}")
+    logger.info(f"Search for 15: {rb_tree.search(15)}")
+    logger.info(f"Black height: {rb_tree.get_black_height()}")
+    logger.info()
     
     # Example 2: Sequential insertion
-    print("Example 2: Sequential Insertion (1-10)")
-    print("-" * 70)
+    logger.info("Example 2: Sequential Insertion (1-10)")
+    logger.info("-" * 70)
     rb_tree2 = RedBlackTree()
-    print("Inserting 1 through 10 sequentially...")
+    logger.info("Inserting 1 through 10 sequentially...")
     for i in range(1, 11):
         rb_tree2.insert(i)
     
-    print("\nBalanced tree structure:")
+    logger.info("\nBalanced tree structure:")
     rb_tree2.print_tree()
-    print(f"Inorder: {rb_tree2.inorder()}")
-    print(f"Black height: {rb_tree2.get_black_height()}")
-    print("Note: Tree remains balanced despite sequential input")
-    print()
+    logger.info(f"Inorder: {rb_tree2.inorder()}")
+    logger.info(f"Black height: {rb_tree2.get_black_height()}")
+    logger.info("Note: Tree remains balanced despite sequential input")
+    logger.info()
     
     # Example 3: Properties verification
-    print("Example 3: Red-Black Properties")
-    print("-" * 70)
+    logger.info("Example 3: Red-Black Properties")
+    logger.info("-" * 70)
     rb_tree3 = RedBlackTree()
     test_keys = [20, 15, 25, 10, 5, 1, 30, 35]
     
-    print(f"Inserting: {test_keys}")
+    logger.info(f"Inserting: {test_keys}")
     for key in test_keys:
         rb_tree3.insert(key)
     
-    print("\nTree structure:")
+    logger.info("\nTree structure:")
     rb_tree3.print_tree()
     
-    print("\nVerifying properties:")
-    print("  1. Root is black:", 
+    logger.info("\nVerifying properties:")
+    logger.info("  1. Root is black:", 
           rb_tree3.root.color == Color.BLACK)
-    print(f"  2. Black height: {rb_tree3.get_black_height()}")
-    print("  3. All paths have same black height: True (by design)")
-    print()
+    logger.info(f"  2. Black height: {rb_tree3.get_black_height()}")
+    logger.info("  3. All paths have same black height: True (by design)")
+    logger.info()
     
     # Example 4: Performance measurement
-    print("Example 4: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 4: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Red-Black Tree")
     
@@ -293,29 +295,29 @@ def main() -> None:
         return tree
     
     _, metrics_100 = timer.measure(test_insertions, 100)
-    print(f"100 insertions:")
-    print(f"  Time: {metrics_100['execution_time_ms']:.3f} ms")
+    logger.info(f"100 insertions:")
+    logger.info(f"  Time: {metrics_100['execution_time_ms']:.3f} ms")
     
     _, metrics_1000 = timer.measure(test_insertions, 1000)
-    print(f"\n1,000 insertions:")
-    print(f"  Time: {metrics_1000['execution_time_ms']:.3f} ms")
+    logger.info(f"\n1,000 insertions:")
+    logger.info(f"  Time: {metrics_1000['execution_time_ms']:.3f} ms")
     
-    print()
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O(log n) - insert, delete, search")
-    print("  Space: O(n) - storage")
-    print("  Height: O(log n) - guaranteed")
-    print("\nKey Advantages:")
-    print("  - Guaranteed O(log n) operations")
-    print("  - Fewer rotations than AVL tree")
-    print("  - Used in many standard libraries")
-    print("  - Better for frequent insertions/deletions")
-    print("\nKey Disadvantages:")
-    print("  - More complex than AVL tree")
-    print("  - Extra storage for color")
-    print("  - Slightly less balanced than AVL")
-    print("=" * 70)
+    logger.info()
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  O(log n) - insert, delete, search")
+    logger.info("  Space: O(n) - storage")
+    logger.info("  Height: O(log n) - guaranteed")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Guaranteed O(log n) operations")
+    logger.info("  - Fewer rotations than AVL tree")
+    logger.info("  - Used in many standard libraries")
+    logger.info("  - Better for frequent insertions/deletions")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - More complex than AVL tree")
+    logger.info("  - Extra storage for color")
+    logger.info("  - Slightly less balanced than AVL")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

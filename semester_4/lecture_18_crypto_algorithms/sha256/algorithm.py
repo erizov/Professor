@@ -14,6 +14,8 @@ import struct
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 # SHA-256 constants
@@ -146,24 +148,24 @@ def sha256_hex(message: bytes) -> str:
 
 def main() -> None:
     """Demonstration of SHA-256 Algorithm."""
-    print("=" * 70)
-    print("SHA-256 (SECURE HASH ALGORITHM 256-BIT) DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("SHA-256 (SECURE HASH ALGORITHM 256-BIT) DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Hash a simple string
-    print("Example 1: Hash Simple String")
-    print("-" * 70)
+    logger.info("Example 1: Hash Simple String")
+    logger.info("-" * 70)
     
     message1 = b"Hello, World!"
     hash1 = sha256_hex(message1)
-    print(f"Message: {message1.decode()}")
-    print(f"SHA-256: {hash1}")
-    print()
+    logger.info(f"Message: {message1.decode()}")
+    logger.info(f"SHA-256: {hash1}")
+    logger.info()
     
     # Example 2: Hash different messages
-    print("Example 2: Hash Different Messages")
-    print("-" * 70)
+    logger.info("Example 2: Hash Different Messages")
+    logger.info("-" * 70)
     
     messages = [
         b"",
@@ -175,12 +177,12 @@ def main() -> None:
     
     for msg in messages:
         hash_val = sha256_hex(msg)
-        print(f"'{msg.decode()}' -> {hash_val[:32]}...")
-    print()
+        logger.info(f"'{msg.decode()}' -> {hash_val[:32]}...")
+    logger.info()
     
     # Example 3: Avalanche effect
-    print("Example 3: Avalanche Effect (Small Change)")
-    print("-" * 70)
+    logger.info("Example 3: Avalanche Effect (Small Change)")
+    logger.info("-" * 70)
     
     msg1 = b"Hello, World!"
     msg2 = b"Hello, World?"
@@ -188,32 +190,32 @@ def main() -> None:
     hash1 = sha256_hex(msg1)
     hash2 = sha256_hex(msg2)
     
-    print(f"Message 1: {msg1.decode()}")
-    print(f"Hash 1:    {hash1}")
-    print(f"Message 2: {msg2.decode()}")
-    print(f"Hash 2:    {hash2}")
-    print(f"Different: {hash1 != hash2}")
-    print()
+    logger.info(f"Message 1: {msg1.decode()}")
+    logger.info(f"Hash 1:    {hash1}")
+    logger.info(f"Message 2: {msg2.decode()}")
+    logger.info(f"Hash 2:    {hash2}")
+    logger.info(f"Different: {hash1 != hash2}")
+    logger.info()
     
     # Example 4: Deterministic hashing
-    print("Example 4: Deterministic Hashing")
-    print("-" * 70)
+    logger.info("Example 4: Deterministic Hashing")
+    logger.info("-" * 70)
     
     message = b"Test message"
     hash1 = sha256_hex(message)
     hash2 = sha256_hex(message)
     hash3 = sha256_hex(message)
     
-    print(f"Message: {message.decode()}")
-    print(f"Hash 1: {hash1}")
-    print(f"Hash 2: {hash2}")
-    print(f"Hash 3: {hash3}")
-    print(f"All equal: {hash1 == hash2 == hash3}")
-    print()
+    logger.info(f"Message: {message.decode()}")
+    logger.info(f"Hash 1: {hash1}")
+    logger.info(f"Hash 2: {hash2}")
+    logger.info(f"Hash 3: {hash3}")
+    logger.info(f"All equal: {hash1 == hash2 == hash3}")
+    logger.info()
     
     # Example 5: Performance measurement
-    print("Example 5: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 5: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("SHA-256")
     
@@ -223,61 +225,61 @@ def main() -> None:
         return len(hashes)
     
     result, metrics = timer.measure(hash_operations)
-    print(f"Time to hash 99 messages: {metrics['execution_time_ms']:.3f} ms")
-    print()
+    logger.info(f"Time to hash 99 messages: {metrics['execution_time_ms']:.3f} ms")
+    logger.info()
     
     # Example 6: Hash length verification
-    print("Example 6: Hash Length Verification")
-    print("-" * 70)
+    logger.info("Example 6: Hash Length Verification")
+    logger.info("-" * 70)
     
     test_messages = [b"", b"a", b"Hello, World!", b"x" * 1000]
     for msg in test_messages:
         hash_bytes = sha256(msg)
         hash_hex = hash_bytes.hex()
-        print(f"Message length: {len(msg)} bytes")
-        print(f"Hash length: {len(hash_bytes)} bytes ({len(hash_hex)} hex chars)")
-        print()
+        logger.info(f"Message length: {len(msg)} bytes")
+        logger.info(f"Hash length: {len(hash_bytes)} bytes ({len(hash_hex)} hex chars)")
+        logger.info()
     
-    print("=" * 70)
-    print("\nAlgorithm Summary:")
-    print("\nIntent:")
-    print("  Cryptographic hash function that produces a 256-bit (32-byte)")
-    print("  hash value. One-way function for data integrity verification.")
-    print("\nKey Properties:")
-    print("  - Deterministic: Same input always produces same output")
-    print("  - Fast computation")
-    print("  - Avalanche effect: Small input change = large output change")
-    print("  - One-way: Cannot reverse hash to get original message")
-    print("  - Collision resistant: Hard to find two inputs with same hash")
-    print("\nTime Complexity: O(n) where n is message length")
-    print("Space Complexity: O(1) - fixed output size")
-    print("\nKey Advantages:")
-    print("  - Fast computation")
-    print("  - Fixed output size (256 bits)")
-    print("  - Widely used and trusted")
-    print("  - Good avalanche effect")
-    print("\nKey Disadvantages:")
-    print("  - Vulnerable to quantum computing (Grover's algorithm)")
-    print("  - Not suitable for password hashing (use bcrypt/argon2)")
-    print("  - No key (use HMAC for keyed hashing)")
-    print("\nWhen to Use:")
-    print("  - Data integrity verification")
-    print("  - Digital signatures")
-    print("  - Blockchain (Bitcoin)")
-    print("  - File checksums")
-    print("  - Merkle trees")
-    print("\nCommon Use Cases:")
-    print("  - Git commit hashes")
-    print("  - Blockchain transactions")
-    print("  - File integrity checks")
-    print("  - Digital signatures")
-    print("  - Certificate fingerprints")
-    print("\nSecurity Considerations:")
-    print("  - Use SHA-256 or SHA-3 for new applications")
-    print("  - Don't use for password hashing (use bcrypt/argon2)")
-    print("  - Use HMAC-SHA256 for keyed hashing")
-    print("  - Consider post-quantum alternatives for long-term security")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nAlgorithm Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Cryptographic hash function that produces a 256-bit (32-byte)")
+    logger.info("  hash value. One-way function for data integrity verification.")
+    logger.info("\nKey Properties:")
+    logger.info("  - Deterministic: Same input always produces same output")
+    logger.info("  - Fast computation")
+    logger.info("  - Avalanche effect: Small input change = large output change")
+    logger.info("  - One-way: Cannot reverse hash to get original message")
+    logger.info("  - Collision resistant: Hard to find two inputs with same hash")
+    logger.info("\nTime Complexity: O(n) where n is message length")
+    logger.info("Space Complexity: O(1) - fixed output size")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Fast computation")
+    logger.info("  - Fixed output size (256 bits)")
+    logger.info("  - Widely used and trusted")
+    logger.info("  - Good avalanche effect")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Vulnerable to quantum computing (Grover's algorithm)")
+    logger.info("  - Not suitable for password hashing (use bcrypt/argon2)")
+    logger.info("  - No key (use HMAC for keyed hashing)")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Data integrity verification")
+    logger.info("  - Digital signatures")
+    logger.info("  - Blockchain (Bitcoin)")
+    logger.info("  - File checksums")
+    logger.info("  - Merkle trees")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Git commit hashes")
+    logger.info("  - Blockchain transactions")
+    logger.info("  - File integrity checks")
+    logger.info("  - Digital signatures")
+    logger.info("  - Certificate fingerprints")
+    logger.info("\nSecurity Considerations:")
+    logger.info("  - Use SHA-256 or SHA-3 for new applications")
+    logger.info("  - Don't use for password hashing (use bcrypt/argon2)")
+    logger.info("  - Use HMAC-SHA256 for keyed hashing")
+    logger.info("  - Consider post-quantum alternatives for long-term security")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

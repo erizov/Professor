@@ -7,6 +7,8 @@ Efficient search algorithm for sorted arrays using divide-and-conquer.
 """
 
 from typing import List, TypeVar, Optional
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 T = TypeVar('T')
@@ -133,84 +135,84 @@ def binary_search_rightmost(arr: List[T], target: T) -> int:
 
 def main() -> None:
     """Demonstration of Binary Search."""
-    print("=" * 70)
-    print("BINARY SEARCH DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("BINARY SEARCH DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic search
-    print("Example 1: Basic Search")
-    print("-" * 70)
+    logger.info("Example 1: Basic Search")
+    logger.info("-" * 70)
     data1 = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
     target1 = 7
-    print(f"Array:  {data1}")
-    print(f"Target: {target1}")
+    logger.info(f"Array:  {data1}")
+    logger.info(f"Target: {target1}")
     result1 = binary_search(data1, target1)
-    print(f"Found at index: {result1}")
-    print()
+    logger.info(f"Found at index: {result1}")
+    logger.info()
     
     # Example 2: Not found
-    print("Example 2: Element Not Found")
-    print("-" * 70)
+    logger.info("Example 2: Element Not Found")
+    logger.info("-" * 70)
     target2 = 8
-    print(f"Array:  {data1}")
-    print(f"Target: {target2}")
+    logger.info(f"Array:  {data1}")
+    logger.info(f"Target: {target2}")
     result2 = binary_search(data1, target2)
-    print(f"Result: {result2} (not found)")
-    print()
+    logger.info(f"Result: {result2} (not found)")
+    logger.info()
     
     # Example 3: Recursive
-    print("Example 3: Recursive Binary Search")
-    print("-" * 70)
+    logger.info("Example 3: Recursive Binary Search")
+    logger.info("-" * 70)
     target3 = 15
-    print(f"Array:  {data1}")
-    print(f"Target: {target3}")
+    logger.info(f"Array:  {data1}")
+    logger.info(f"Target: {target3}")
     result3 = binary_search_recursive(data1, target3)
-    print(f"Found at index: {result3}")
-    print()
+    logger.info(f"Found at index: {result3}")
+    logger.info()
     
     # Example 4: Duplicates - leftmost
-    print("Example 4: Find Leftmost Occurrence")
-    print("-" * 70)
+    logger.info("Example 4: Find Leftmost Occurrence")
+    logger.info("-" * 70)
     data4 = [1, 2, 2, 2, 3, 4, 5, 5, 5, 6]
     target4 = 5
-    print(f"Array:  {data4}")
-    print(f"Target: {target4}")
+    logger.info(f"Array:  {data4}")
+    logger.info(f"Target: {target4}")
     result4 = binary_search_leftmost(data4, target4)
-    print(f"Leftmost index: {result4}")
-    print()
+    logger.info(f"Leftmost index: {result4}")
+    logger.info()
     
     # Example 5: Duplicates - rightmost
-    print("Example 5: Find Rightmost Occurrence")
-    print("-" * 70)
-    print(f"Array:  {data4}")
-    print(f"Target: {target4}")
+    logger.info("Example 5: Find Rightmost Occurrence")
+    logger.info("-" * 70)
+    logger.info(f"Array:  {data4}")
+    logger.info(f"Target: {target4}")
     result5 = binary_search_rightmost(data4, target4)
-    print(f"Rightmost index: {result5}")
-    print()
+    logger.info(f"Rightmost index: {result5}")
+    logger.info()
     
     # Example 6: Strings
-    print("Example 6: Search in Strings")
-    print("-" * 70)
+    logger.info("Example 6: Search in Strings")
+    logger.info("-" * 70)
     data6 = ["apple", "banana", "cherry", "date", "elderberry"]
     target6 = "cherry"
-    print(f"Array:  {data6}")
-    print(f"Target: {target6}")
+    logger.info(f"Array:  {data6}")
+    logger.info(f"Target: {target6}")
     result6 = binary_search(data6, target6)
-    print(f"Found at index: {result6}")
-    print()
+    logger.info(f"Found at index: {result6}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O(log n)")
-    print("  Space: O(1) iterative, O(log n) recursive")
-    print("\nKey Requirements:")
-    print("  - Array must be SORTED")
-    print("  - Random access required (arrays, not linked lists)")
-    print("\nAdvantages:")
-    print("  - Very fast for large datasets")
-    print("  - Simple and elegant")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  O(log n)")
+    logger.info("  Space: O(1) iterative, O(log n) recursive")
+    logger.info("\nKey Requirements:")
+    logger.info("  - Array must be SORTED")
+    logger.info("  - Random access required (arrays, not linked lists)")
+    logger.info("\nAdvantages:")
+    logger.info("  - Very fast for large datasets")
+    logger.info("  - Simple and elegant")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

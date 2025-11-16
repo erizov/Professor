@@ -1,0 +1,12 @@
+{
+  "name": "quantum_debugging",
+  "display_name": "Quantum Debugging",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_83_quantum_software",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -11,6 +11,8 @@ import sys
 from pathlib import Path
 from abc import ABC, abstractmethod
 from typing import List
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
@@ -40,11 +42,11 @@ class Light:
     
     def on(self) -> None:
         self.is_on = True
-        print(f"{self.location} light is ON")
+        logger.info(f"{self.location} light is ON")
     
     def off(self) -> None:
         self.is_on = False
-        print(f"{self.location} light is OFF")
+        logger.info(f"{self.location} light is OFF")
 
 
 # Concrete Commands
@@ -171,14 +173,14 @@ class MacroCommand(Command):
 
 def main() -> None:
     """Demonstration of Command Pattern."""
-    print("=" * 70)
-    print("COMMAND DESIGN PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("COMMAND DESIGN PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Light Control
-    print("Example 1: Light Control")
-    print("-" * 70)
+    logger.info("Example 1: Light Control")
+    logger.info("-" * 70)
     
     living_room_light = Light("Living Room")
     kitchen_light = Light("Kitchen")
@@ -194,13 +196,13 @@ def main() -> None:
     remote.set_command(LightOffCommand(living_room_light))
     remote.press_button()
     
-    print("\nUndoing last command:")
+    logger.info("\nUndoing last command:")
     remote.press_undo()
-    print()
+    logger.info()
     
     # Example 2: Text Editor
-    print("Example 2: Text Editor with Undo")
-    print("-" * 70)
+    logger.info("Example 2: Text Editor with Undo")
+    logger.info("-" * 70)
     
     editor = TextEditor()
     history: List[Command] = []
@@ -214,18 +216,18 @@ def main() -> None:
     write2.execute()
     history.append(write2)
     
-    print(f"Text: '{editor.get_text()}'")
+    logger.info(f"Text: '{editor.get_text()}'")
     
     # Undo
     if history:
         cmd = history.pop()
         cmd.undo()
-        print(f"After undo: '{editor.get_text()}'")
-    print()
+        logger.info(f"After undo: '{editor.get_text()}'")
+    logger.info()
     
     # Example 3: Macro Commands
-    print("Example 3: Macro Commands")
-    print("-" * 70)
+    logger.info("Example 3: Macro Commands")
+    logger.info("-" * 70)
     
     bedroom_light = Light("Bedroom")
     bathroom_light = Light("Bathroom")
@@ -238,41 +240,41 @@ def main() -> None:
         LightOnCommand(bathroom_light),
     ])
     
-    print("Executing party mode (macro command):")
+    logger.info("Executing party mode (macro command):")
     party_mode.execute()
     
-    print("\nUndoing party mode:")
+    logger.info("\nUndoing party mode:")
     party_mode.undo()
-    print()
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Encapsulate a request as an object, thereby letting you")
-    print("  parameterize clients with different requests, queue")
-    print("  operations, and support undo operations.")
-    print("\nKey Advantages:")
-    print("  - Decouples invoker from receiver")
-    print("  - Easy to add new commands")
-    print("  - Supports undo/redo")
-    print("  - Supports macro commands")
-    print("  - Can queue and log requests")
-    print("\nKey Disadvantages:")
-    print("  - Increases number of classes")
-    print("  - Can be overkill for simple operations")
-    print("\nWhen to Use:")
-    print("  - Need to parameterize objects with operations")
-    print("  - Need to queue operations")
-    print("  - Need undo/redo functionality")
-    print("  - Need to log operations")
-    print("  - Need macro commands")
-    print("\nCommon Use Cases:")
-    print("  - GUI buttons and menu items")
-    print("  - Undo/redo functionality")
-    print("  - Transaction systems")
-    print("  - Macro recording")
-    print("  - Job queues")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Encapsulate a request as an object, thereby letting you")
+    logger.info("  parameterize clients with different requests, queue")
+    logger.info("  operations, and support undo operations.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Decouples invoker from receiver")
+    logger.info("  - Easy to add new commands")
+    logger.info("  - Supports undo/redo")
+    logger.info("  - Supports macro commands")
+    logger.info("  - Can queue and log requests")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Increases number of classes")
+    logger.info("  - Can be overkill for simple operations")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Need to parameterize objects with operations")
+    logger.info("  - Need to queue operations")
+    logger.info("  - Need undo/redo functionality")
+    logger.info("  - Need to log operations")
+    logger.info("  - Need macro commands")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - GUI buttons and menu items")
+    logger.info("  - Undo/redo functionality")
+    logger.info("  - Transaction systems")
+    logger.info("  - Macro recording")
+    logger.info("  - Job queues")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

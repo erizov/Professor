@@ -9,6 +9,8 @@ Facade defines a higher-level interface that makes the subsystem easier to use.
 
 import sys
 from pathlib import Path
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
@@ -18,27 +20,27 @@ class CPU:
     """CPU subsystem."""
     
     def freeze(self) -> None:
-        print("CPU: Freezing...")
+        logger.info("CPU: Freezing...")
     
     def jump(self, position: int) -> None:
-        print(f"CPU: Jumping to position {position}")
+        logger.info(f"CPU: Jumping to position {position}")
     
     def execute(self) -> None:
-        print("CPU: Executing...")
+        logger.info("CPU: Executing...")
 
 
 class Memory:
     """Memory subsystem."""
     
     def load(self, position: int, data: str) -> None:
-        print(f"Memory: Loading data '{data}' at position {position}")
+        logger.info(f"Memory: Loading data '{data}' at position {position}")
 
 
 class HardDrive:
     """Hard drive subsystem."""
     
     def read(self, lba: int, size: int) -> str:
-        print(f"HardDrive: Reading {size} bytes from LBA {lba}")
+        logger.info(f"HardDrive: Reading {size} bytes from LBA {lba}")
         return f"Data from LBA {lba}"
 
 
@@ -56,14 +58,14 @@ class ComputerFacade:
     
     def start(self) -> None:
         """Start computer - simplified interface."""
-        print("Starting computer...")
+        logger.info("Starting computer...")
         self.cpu.freeze()
         boot_data = self.hard_drive.read(self.BOOT_SECTOR, self.SECTOR_SIZE)
         self.memory.load(self.BOOT_ADDRESS, boot_data)
         self.cpu.jump(self.BOOT_ADDRESS)
         self.cpu.execute()
-        print("Computer started successfully!")
-        print()
+        logger.info("Computer started successfully!")
+        logger.info()
 
 
 # Example 2: Home Theater System
@@ -71,55 +73,55 @@ class Amplifier:
     """Amplifier subsystem."""
     
     def on(self) -> None:
-        print("Amplifier: ON")
+        logger.info("Amplifier: ON")
     
     def set_volume(self, level: int) -> None:
-        print(f"Amplifier: Volume set to {level}")
+        logger.info(f"Amplifier: Volume set to {level}")
     
     def off(self) -> None:
-        print("Amplifier: OFF")
+        logger.info("Amplifier: OFF")
 
 
 class Tuner:
     """Tuner subsystem."""
     
     def on(self) -> None:
-        print("Tuner: ON")
+        logger.info("Tuner: ON")
     
     def set_frequency(self, freq: float) -> None:
-        print(f"Tuner: Frequency set to {freq} MHz")
+        logger.info(f"Tuner: Frequency set to {freq} MHz")
     
     def off(self) -> None:
-        print("Tuner: OFF")
+        logger.info("Tuner: OFF")
 
 
 class DVDPlayer:
     """DVD player subsystem."""
     
     def on(self) -> None:
-        print("DVD Player: ON")
+        logger.info("DVD Player: ON")
     
     def play(self, movie: str) -> None:
-        print(f"DVD Player: Playing '{movie}'")
+        logger.info(f"DVD Player: Playing '{movie}'")
     
     def stop(self) -> None:
-        print("DVD Player: STOP")
+        logger.info("DVD Player: STOP")
     
     def off(self) -> None:
-        print("DVD Player: OFF")
+        logger.info("DVD Player: OFF")
 
 
 class Projector:
     """Projector subsystem."""
     
     def on(self) -> None:
-        print("Projector: ON")
+        logger.info("Projector: ON")
     
     def wide_screen_mode(self) -> None:
-        print("Projector: Wide screen mode")
+        logger.info("Projector: Wide screen mode")
     
     def off(self) -> None:
-        print("Projector: OFF")
+        logger.info("Projector: OFF")
 
 
 class HomeTheaterFacade:
@@ -133,23 +135,23 @@ class HomeTheaterFacade:
     
     def watch_movie(self, movie: str) -> None:
         """Watch movie - simplified interface."""
-        print("Get ready to watch a movie...")
+        logger.info("Get ready to watch a movie...")
         self.projector.on()
         self.projector.wide_screen_mode()
         self.amp.on()
         self.amp.set_volume(5)
         self.dvd.on()
         self.dvd.play(movie)
-        print()
+        logger.info()
     
     def end_movie(self) -> None:
         """End movie - simplified interface."""
-        print("Shutting movie theater down...")
+        logger.info("Shutting movie theater down...")
         self.dvd.stop()
         self.dvd.off()
         self.amp.off()
         self.projector.off()
-        print()
+        logger.info()
 
 
 # Example 3: Order Processing
@@ -157,18 +159,18 @@ class InventoryService:
     """Inventory service."""
     
     def check_availability(self, product_id: str, quantity: int) -> bool:
-        print(f"Inventory: Checking availability of {quantity} x {product_id}")
+        logger.info(f"Inventory: Checking availability of {quantity} x {product_id}")
         return True
     
     def reserve(self, product_id: str, quantity: int) -> None:
-        print(f"Inventory: Reserving {quantity} x {product_id}")
+        logger.info(f"Inventory: Reserving {quantity} x {product_id}")
 
 
 class PaymentService:
     """Payment service."""
     
     def process_payment(self, amount: float, method: str) -> bool:
-        print(f"Payment: Processing ${amount} via {method}")
+        logger.info(f"Payment: Processing ${amount} via {method}")
         return True
 
 
@@ -176,7 +178,7 @@ class ShippingService:
     """Shipping service."""
     
     def create_shipment(self, address: str, items: list) -> str:
-        print(f"Shipping: Creating shipment to {address}")
+        logger.info(f"Shipping: Creating shipment to {address}")
         return "SHIP-12345"
 
 
@@ -191,7 +193,7 @@ class OrderFacade:
     def place_order(self, product_id: str, quantity: int, 
                    amount: float, address: str) -> str:
         """Place order - simplified interface."""
-        print("Processing order...")
+        logger.info("Processing order...")
         
         # Check inventory
         if not self.inventory.check_availability(product_id, quantity):
@@ -210,35 +212,35 @@ class OrderFacade:
             [{"product": product_id, "quantity": quantity}]
         )
         
-        print("Order placed successfully!")
+        logger.info("Order placed successfully!")
         return shipment_id
 
 
 def main() -> None:
     """Demonstration of Facade Pattern."""
-    print("=" * 70)
-    print("FACADE DESIGN PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("FACADE DESIGN PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Computer Boot
-    print("Example 1: Computer Boot Process")
-    print("-" * 70)
+    logger.info("Example 1: Computer Boot Process")
+    logger.info("-" * 70)
     
     computer = ComputerFacade()
     computer.start()
     
     # Example 2: Home Theater
-    print("Example 2: Home Theater System")
-    print("-" * 70)
+    logger.info("Example 2: Home Theater System")
+    logger.info("-" * 70)
     
     theater = HomeTheaterFacade()
     theater.watch_movie("The Matrix")
     theater.end_movie()
     
     # Example 3: Order Processing
-    print("Example 3: E-commerce Order Processing")
-    print("-" * 70)
+    logger.info("Example 3: E-commerce Order Processing")
+    logger.info("-" * 70)
     
     order_system = OrderFacade()
     shipment_id = order_system.place_order(
@@ -247,36 +249,36 @@ def main() -> None:
         amount=999.99,
         address="123 Main St"
     )
-    print(f"Shipment ID: {shipment_id}")
-    print()
+    logger.info(f"Shipment ID: {shipment_id}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Provide a unified interface to a set of interfaces in")
-    print("  a subsystem. Facade defines a higher-level interface")
-    print("  that makes the subsystem easier to use.")
-    print("\nKey Advantages:")
-    print("  - Simplifies complex subsystem")
-    print("  - Reduces coupling between clients and subsystem")
-    print("  - Provides convenient interface")
-    print("  - Hides subsystem complexity")
-    print("\nKey Disadvantages:")
-    print("  - Can become a god object")
-    print("  - May limit flexibility")
-    print("  - Can hide important functionality")
-    print("\nWhen to Use:")
-    print("  - Want to provide simple interface to complex subsystem")
-    print("  - Want to decouple clients from subsystem")
-    print("  - Want to layer subsystems")
-    print("  - Need entry point to subsystem")
-    print("\nCommon Use Cases:")
-    print("  - API wrappers")
-    print("  - Library interfaces")
-    print("  - System initialization")
-    print("  - Complex workflows")
-    print("  - Legacy system integration")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Provide a unified interface to a set of interfaces in")
+    logger.info("  a subsystem. Facade defines a higher-level interface")
+    logger.info("  that makes the subsystem easier to use.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Simplifies complex subsystem")
+    logger.info("  - Reduces coupling between clients and subsystem")
+    logger.info("  - Provides convenient interface")
+    logger.info("  - Hides subsystem complexity")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Can become a god object")
+    logger.info("  - May limit flexibility")
+    logger.info("  - Can hide important functionality")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Want to provide simple interface to complex subsystem")
+    logger.info("  - Want to decouple clients from subsystem")
+    logger.info("  - Want to layer subsystems")
+    logger.info("  - Need entry point to subsystem")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - API wrappers")
+    logger.info("  - Library interfaces")
+    logger.info("  - System initialization")
+    logger.info("  - Complex workflows")
+    logger.info("  - Legacy system integration")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

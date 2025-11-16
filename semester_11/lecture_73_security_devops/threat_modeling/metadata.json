@@ -1,0 +1,12 @@
+{
+  "name": "threat_modeling",
+  "display_name": "Threat Modeling",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_73_security_devops",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

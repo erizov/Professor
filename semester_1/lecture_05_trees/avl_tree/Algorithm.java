@@ -6,7 +6,10 @@
  * Time Complexity: O(log n) - insert, delete, search
  * Space Complexity: O(n)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class AVLNode {
         int key;
@@ -193,7 +196,7 @@ public class Algorithm {
         
         void printInorder() {
             printInorderHelper(root);
-            System.out.println();
+            logger.info();
         }
         
         void printInorderHelper(AVLNode node) {
@@ -211,7 +214,7 @@ public class Algorithm {
         void printTreeHelper(AVLNode node, int level) {
             if (node != null) {
                 printTreeHelper(node.right, level + 1);
-                System.out.println(" ".repeat(4 * level) + "→ " + 
+                logger.info(" ".repeat(4 * level) + "→ " + 
                                  node.key + " (h=" + node.height + ")");
                 printTreeHelper(node.left, level + 1);
             }
@@ -221,14 +224,14 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("AVL TREE DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("AVL TREE DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Basic operations
-        System.out.println("Example 1: Basic Insert and Search");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Basic Insert and Search");
+        logger.info("-".repeat(70));
         AVLTree avl = new AVLTree();
         int[] keys = {10, 20, 30, 40, 50, 25};
         
@@ -237,52 +240,52 @@ public class Algorithm {
             System.out.print(key + " ");
             avl.insert(key);
         }
-        System.out.println("\n\nTree structure:");
+        logger.info("\n\nTree structure:");
         avl.printTree();
         
         System.out.print("\nInorder traversal: ");
         avl.printInorder();
         
-        System.out.println("Search for 30: " + avl.search(30));
-        System.out.println("Search for 35: " + avl.search(35));
-        System.out.println();
+        logger.info("Search for 30: " + avl.search(30));
+        logger.info("Search for 35: " + avl.search(35));
+        logger.info();
         
         // Example 2: Deletion
-        System.out.println("Example 2: Deletion");
-        System.out.println("-".repeat(70));
-        System.out.println("Deleting 10, 30...");
+        logger.info("Example 2: Deletion");
+        logger.info("-".repeat(70));
+        logger.info("Deleting 10, 30...");
         avl.delete(10);
         avl.delete(30);
         
-        System.out.println("\nTree structure after deletion:");
+        logger.info("\nTree structure after deletion:");
         avl.printTree();
         System.out.print("Inorder traversal: ");
         avl.printInorder();
-        System.out.println();
+        logger.info();
         
         // Example 3: Left-Left rotation
-        System.out.println("Example 3: Left-Left Rotation");
-        System.out.println("-".repeat(70));
+        logger.info("Example 3: Left-Left Rotation");
+        logger.info("-".repeat(70));
         AVLTree avl2 = new AVLTree();
-        System.out.println("Inserting 30, 20, 10 (triggers LL rotation)");
+        logger.info("Inserting 30, 20, 10 (triggers LL rotation)");
         avl2.insert(30);
         avl2.insert(20);
         avl2.insert(10);
         
-        System.out.println("\nBalanced tree:");
+        logger.info("\nBalanced tree:");
         avl2.printTree();
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Time:  O(log n) - all operations");
-        System.out.println("  Space: O(n)");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Guaranteed O(log n) operations");
-        System.out.println("  - Self-balancing");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Time:  O(log n) - all operations");
+        logger.info("  Space: O(n)");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Guaranteed O(log n) operations");
+        logger.info("  - Self-balancing");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n", 
                         (endTime - startTime) / 1_000_000.0);
     }

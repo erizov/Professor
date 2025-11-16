@@ -12,7 +12,10 @@ import java.util.Queue;
  *   Traversal: O(n)
  * Space Complexity: O(n)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     /**
      * Node in a binary tree.
@@ -188,41 +191,41 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("BINARY TREE DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("BINARY TREE DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Basic operations
-        System.out.println("Example 1: Building a Binary Tree");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Building a Binary Tree");
+        logger.info("-".repeat(70));
         
         BinaryTree tree = new BinaryTree();
         int[] values = {1, 2, 3, 4, 5, 6, 7};
         
-        System.out.println("Inserting values: " + 
+        logger.info("Inserting values: " + 
                           java.util.Arrays.toString(values));
         for (int val : values) {
             tree.insert(val);
         }
         
-        System.out.println("Tree size: " + tree.size());
-        System.out.println("Tree height: " + tree.height());
-        System.out.println();
+        logger.info("Tree size: " + tree.size());
+        logger.info("Tree height: " + tree.height());
+        logger.info();
         
         // Example 2: Traversals
-        System.out.println("Example 2: Tree Traversals");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Tree Traversals");
+        logger.info("-".repeat(70));
         
-        System.out.println("Inorder:     " + tree.inorder());
-        System.out.println("Preorder:    " + tree.preorder());
-        System.out.println("Postorder:   " + tree.postorder());
-        System.out.println("Level-order: " + tree.levelOrder());
-        System.out.println();
+        logger.info("Inorder:     " + tree.inorder());
+        logger.info("Preorder:    " + tree.preorder());
+        logger.info("Postorder:   " + tree.postorder());
+        logger.info("Level-order: " + tree.levelOrder());
+        logger.info();
         
         // Example 3: Search
-        System.out.println("Example 3: Searching");
-        System.out.println("-".repeat(70));
+        logger.info("Example 3: Searching");
+        logger.info("-".repeat(70));
         
         int[] searchVals = {5, 10, 1, 8};
         for (int val : searchVals) {
@@ -230,11 +233,11 @@ public class Algorithm {
             System.out.printf("Search %d: %s%n", val, 
                             found ? "Found" : "Not found");
         }
-        System.out.println();
+        logger.info();
         
         // Example 4: Performance
-        System.out.println("Example 4: Performance Measurement");
-        System.out.println("-".repeat(70));
+        logger.info("Example 4: Performance Measurement");
+        logger.info("-".repeat(70));
         
         int[] sizes = {100, 500, 1000};
         
@@ -252,20 +255,20 @@ public class Algorithm {
                             size, ms, perfTree.height());
         }
         
-        System.out.println();
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Insertion: O(n)");
-        System.out.println("  Search: O(n)");
-        System.out.println("  Traversal: O(n)");
-        System.out.println("  Space: O(n)");
-        System.out.println("\nKey Points:");
-        System.out.println("  + Simple hierarchical structure");
-        System.out.println("  + Foundation for other trees");
-        System.out.println("  + Natural recursive operations");
-        System.out.println("  - No ordering guarantee");
-        System.out.println("  - Search is O(n)");
-        System.out.println("=".repeat(70));
+        logger.info();
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Insertion: O(n)");
+        logger.info("  Search: O(n)");
+        logger.info("  Traversal: O(n)");
+        logger.info("  Space: O(n)");
+        logger.info("\nKey Points:");
+        logger.info("  + Simple hierarchical structure");
+        logger.info("  + Foundation for other trees");
+        logger.info("  + Natural recursive operations");
+        logger.info("  - No ordering guarantee");
+        logger.info("  - Search is O(n)");
+        logger.info("=".repeat(70));
         
         long endTime = System.nanoTime();
         double totalMs = (endTime - startTime) / 1_000_000.0;

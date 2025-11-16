@@ -1,0 +1,12 @@
+{
+  "name": "multimodal_llms",
+  "display_name": "Multimodal Llms",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_64_llm_architecture_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -5,7 +5,10 @@ import java.util.*;
  * 
  * Creates objects by cloning prototypes.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     interface Prototype {
         Prototype clone();
@@ -101,10 +104,10 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("PROTOTYPE DESIGN PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("PROTOTYPE DESIGN PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Document prototype
         Document original = new Document("Design Patterns", 
@@ -113,30 +116,30 @@ public class Algorithm {
         original.addPage("Page 1");
         original.addPage("Page 2");
         
-        System.out.println("Original: " + original);
+        logger.info("Original: " + original);
         
         Document cloned = original.clone();
         cloned.setTitle("Advanced Patterns");
         cloned.addPage("Page 3");
         
-        System.out.println("Original: " + original);
-        System.out.println("Clone: " + cloned);
-        System.out.println();
+        logger.info("Original: " + original);
+        logger.info("Clone: " + cloned);
+        logger.info();
         
         // Shape prototype
         Circle circle = new Circle(10, 20, "red", 5);
         Circle circle2 = circle.clone();
         circle2.x = 50;
         
-        System.out.println("Original: " + circle);
-        System.out.println("Clone: " + circle2);
-        System.out.println();
+        logger.info("Original: " + circle);
+        logger.info("Clone: " + circle2);
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: Creates objects by cloning");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: Creates objects by cloning");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

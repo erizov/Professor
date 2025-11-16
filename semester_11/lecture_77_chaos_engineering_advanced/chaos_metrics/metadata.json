@@ -1,0 +1,12 @@
+{
+  "name": "chaos_metrics",
+  "display_name": "Chaos Metrics",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_77_chaos_engineering_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

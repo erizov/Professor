@@ -12,6 +12,8 @@ from typing import Optional, List, Tuple, Any
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class HashTable:
@@ -178,14 +180,14 @@ class HashTable:
 
 def main() -> None:
     """Demonstration of Hash Table."""
-    print("=" * 70)
-    print("HASH TABLE DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("HASH TABLE DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic operations
-    print("Example 1: Basic Operations")
-    print("-" * 70)
+    logger.info("Example 1: Basic Operations")
+    logger.info("-" * 70)
     
     ht = HashTable()
     
@@ -195,29 +197,29 @@ def main() -> None:
     ht.put("cherry", 8)
     ht.put("date", 2)
     
-    print(f"Hash table: {ht}")
-    print(f"Size: {len(ht)}")
-    print(f"Get 'apple': {ht.get('apple')}")
-    print(f"Get 'banana': {ht.get('banana')}")
-    print(f"Contains 'cherry': {ht.contains('cherry')}")
-    print(f"Contains 'grape': {ht.contains('grape')}")
-    print()
+    logger.info(f"Hash table: {ht}")
+    logger.info(f"Size: {len(ht)}")
+    logger.info(f"Get 'apple': {ht.get('apple')}")
+    logger.info(f"Get 'banana': {ht.get('banana')}")
+    logger.info(f"Contains 'cherry': {ht.contains('cherry')}")
+    logger.info(f"Contains 'grape': {ht.contains('grape')}")
+    logger.info()
     
     # Example 2: Update and remove
-    print("Example 2: Update and Remove")
-    print("-" * 70)
+    logger.info("Example 2: Update and Remove")
+    logger.info("-" * 70)
     
     ht.put("apple", 10)  # Update
-    print(f"After updating 'apple' to 10: {ht}")
+    logger.info(f"After updating 'apple' to 10: {ht}")
     
     ht.remove("banana")
-    print(f"After removing 'banana': {ht}")
-    print(f"Size: {len(ht)}")
-    print()
+    logger.info(f"After removing 'banana': {ht}")
+    logger.info(f"Size: {len(ht)}")
+    logger.info()
     
     # Example 3: Integer keys
-    print("Example 3: Integer Keys")
-    print("-" * 70)
+    logger.info("Example 3: Integer Keys")
+    logger.info("-" * 70)
     
     ht2 = HashTable()
     ht2.put(1, "one")
@@ -225,13 +227,13 @@ def main() -> None:
     ht2.put(3, "three")
     ht2.put(100, "hundred")
     
-    print(f"Hash table with integers: {ht2}")
-    print(f"Get key 100: {ht2.get(100)}")
-    print()
+    logger.info(f"Hash table with integers: {ht2}")
+    logger.info(f"Get key 100: {ht2.get(100)}")
+    logger.info()
     
     # Example 4: Collision handling
-    print("Example 4: Collision Handling")
-    print("-" * 70)
+    logger.info("Example 4: Collision Handling")
+    logger.info("-" * 70)
     
     ht3 = HashTable(initial_capacity=5)  # Small capacity to force collisions
     test_keys = ["a", "b", "c", "d", "e", "f", "g"]
@@ -239,21 +241,21 @@ def main() -> None:
     for i, key in enumerate(test_keys):
         ht3.put(key, i * 10)
     
-    print(f"Hash table with collisions (capacity={ht3.capacity}):")
-    print(f"  Size: {len(ht3)}")
-    print(f"  All keys: {ht3.keys()}")
-    print(f"  All values: {ht3.values()}")
+    logger.info(f"Hash table with collisions (capacity={ht3.capacity}):")
+    logger.info(f"  Size: {len(ht3)}")
+    logger.info(f"  All keys: {ht3.keys()}")
+    logger.info(f"  All values: {ht3.values()}")
     
     # Verify all keys are retrievable
-    print("\nVerifying all keys are retrievable:")
+    logger.info("\nVerifying all keys are retrievable:")
     for key in test_keys:
         value = ht3.get(key)
-        print(f"  {key} -> {value}")
-    print()
+        logger.info(f"  {key} -> {value}")
+    logger.info()
     
     # Example 5: Performance measurement
-    print("Example 5: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 5: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Hash Table")
     
@@ -272,48 +274,48 @@ def main() -> None:
     
     for n in [100, 1000, 10000]:
         _, metrics = timer.measure(test_operations, n)
-        print(f"Operations on {n} elements:")
-        print(f"  Time: {metrics['execution_time_ms']:.3f} ms")
-        print(f"  Memory: {metrics['memory_peak_kb']:.2f} KB")
+        logger.info(f"Operations on {n} elements:")
+        logger.info(f"  Time: {metrics['execution_time_ms']:.3f} ms")
+        logger.info(f"  Memory: {metrics['memory_peak_kb']:.2f} KB")
     
-    print()
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Average Case:")
-    print("    Insert: O(1)")
-    print("    Lookup: O(1)")
-    print("    Delete: O(1)")
-    print("  Worst Case (all collisions):")
-    print("    All operations: O(n)")
-    print("  Space: O(n)")
-    print("\nKey Advantages:")
-    print("  - Fast average-case operations")
-    print("  - Flexible key types")
-    print("  - Dynamic resizing")
-    print("  - Simple implementation")
-    print("\nKey Disadvantages:")
-    print("  - Worst-case O(n) with many collisions")
-    print("  - Memory overhead (buckets)")
-    print("  - Not ordered")
-    print("  - Hash function quality matters")
-    print("\nWhen to Use:")
-    print("  - Fast key-value lookups")
-    print("  - Dictionary/map data structure")
-    print("  - Caching")
-    print("  - Counting frequencies")
-    print("  - Removing duplicates")
-    print("\nWhen NOT to Use:")
-    print("  - Need ordered data (use TreeMap)")
-    print("  - Need range queries")
-    print("  - Memory is very constrained")
-    print("  - Keys have poor hash distribution")
-    print("\nCommon Use Cases:")
-    print("  - Database indexing")
-    print("  - Caching (LRU cache)")
-    print("  - Symbol tables")
-    print("  - Counting word frequencies")
-    print("  - Implementing sets")
-    print("=" * 70)
+    logger.info()
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Average Case:")
+    logger.info("    Insert: O(1)")
+    logger.info("    Lookup: O(1)")
+    logger.info("    Delete: O(1)")
+    logger.info("  Worst Case (all collisions):")
+    logger.info("    All operations: O(n)")
+    logger.info("  Space: O(n)")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Fast average-case operations")
+    logger.info("  - Flexible key types")
+    logger.info("  - Dynamic resizing")
+    logger.info("  - Simple implementation")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Worst-case O(n) with many collisions")
+    logger.info("  - Memory overhead (buckets)")
+    logger.info("  - Not ordered")
+    logger.info("  - Hash function quality matters")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Fast key-value lookups")
+    logger.info("  - Dictionary/map data structure")
+    logger.info("  - Caching")
+    logger.info("  - Counting frequencies")
+    logger.info("  - Removing duplicates")
+    logger.info("\nWhen NOT to Use:")
+    logger.info("  - Need ordered data (use TreeMap)")
+    logger.info("  - Need range queries")
+    logger.info("  - Memory is very constrained")
+    logger.info("  - Keys have poor hash distribution")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Database indexing")
+    logger.info("  - Caching (LRU cache)")
+    logger.info("  - Symbol tables")
+    logger.info("  - Counting word frequencies")
+    logger.info("  - Implementing sets")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

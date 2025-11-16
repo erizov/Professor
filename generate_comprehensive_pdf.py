@@ -75,9 +75,9 @@ toc-depth: 3
 \\newpage
 
 # Algorithms and Design Patterns Course
-## Complete 8-Semester Comprehensive Textbook
+## Complete 16-Semester Comprehensive Textbook
 
-This document contains all lessons, algorithms, and patterns from the complete 8-semester course.
+This document contains all lessons, algorithms, and patterns from the complete 16-semester course covering undergraduate and graduate-level topics.
 
 \\newpage
 
@@ -94,11 +94,12 @@ This document contains all lessons, algorithms, and patterns from the complete 8
 
 ## Course Statistics
 
-- **Total Semesters**: 8
-- **Total Lectures**: 54+
-- **Total Algorithms**: 300+
+- **Total Semesters**: 16 (8 undergraduate + 8 graduate)
+- **Total Lectures**: 118+
+- **Total Algorithms**: 600+
 - **Programming Languages**: Python, Java
 - **Frameworks Covered**: Spring, J2EE, .NET, Docker, Kubernetes, Kafka
+- **Topics**: Algorithms, Data Structures, Design Patterns, Computational Intelligence, Operating Systems, Concurrency, CI/CD, Quantum Computing, Blockchain, Databases, and more
 
 ## References
 

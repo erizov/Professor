@@ -1,0 +1,12 @@
+{
+  "name": "data_vault",
+  "display_name": "Data Vault",
+  "category": "Advanced Graduate Level",
+  "semester": 16,
+  "lecture": "lecture_112_data_warehousing_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

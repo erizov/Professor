@@ -13,6 +13,8 @@ from typing import List, Optional, Callable, Any
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 # TDD Example: Calculator
@@ -85,8 +87,8 @@ class TDDTestRunner:
             return True
         else:
             self.failed += 1
-            print(f"  ✗ FAIL: {message}")
-            print(f"    Expected: {expected}, Got: {actual}")
+            logger.info(f"  ✗ FAIL: {message}")
+            logger.info(f"    Expected: {expected}, Got: {actual}")
             return False
     
     def assert_raises(self, func: Callable, exception_type: type, message: str = "") -> bool:
@@ -94,20 +96,20 @@ class TDDTestRunner:
         try:
             func()
             self.failed += 1
-            print(f"  ✗ FAIL: {message} - Expected {exception_type.__name__}")
+            logger.info(f"  ✗ FAIL: {message} - Expected {exception_type.__name__}")
             return False
         except exception_type:
             self.passed += 1
             return True
         except Exception as e:
             self.failed += 1
-            print(f"  ✗ FAIL: {message} - Got {type(e).__name__} instead of {exception_type.__name__}")
+            logger.info(f"  ✗ FAIL: {message} - Got {type(e).__name__} instead of {exception_type.__name__}")
             return False
     
     def run_tests(self) -> None:
         """Run all tests."""
-        print("Running TDD Tests:")
-        print("-" * 70)
+        logger.info("Running TDD Tests:")
+        logger.info("-" * 70)
         
         # Calculator tests
         calc = Calculator()
@@ -147,38 +149,38 @@ class TDDTestRunner:
             "Pop from empty stack raises IndexError"
         )
         
-        print("-" * 70)
-        print(f"Tests: {self.passed} passed, {self.failed} failed")
-        print()
+        logger.info("-" * 70)
+        logger.info(f"Tests: {self.passed} passed, {self.failed} failed")
+        logger.info()
 
 
 def main() -> None:
     """Demonstration of TDD Pattern."""
-    print("=" * 70)
-    print("TEST-DRIVEN DEVELOPMENT (TDD) PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("TEST-DRIVEN DEVELOPMENT (TDD) PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: TDD Cycle Demonstration
-    print("Example 1: TDD Red-Green-Refactor Cycle")
-    print("-" * 70)
+    logger.info("Example 1: TDD Red-Green-Refactor Cycle")
+    logger.info("-" * 70)
     
-    print("TDD Cycle:")
-    print("  1. RED: Write failing test")
-    print("  2. GREEN: Write minimal code to pass")
-    print("  3. REFACTOR: Improve code while keeping tests green")
-    print()
+    logger.info("TDD Cycle:")
+    logger.info("  1. RED: Write failing test")
+    logger.info("  2. GREEN: Write minimal code to pass")
+    logger.info("  3. REFACTOR: Improve code while keeping tests green")
+    logger.info()
     
     # Example 2: Running TDD Tests
-    print("Example 2: Running TDD Tests")
-    print("-" * 70)
+    logger.info("Example 2: Running TDD Tests")
+    logger.info("-" * 70)
     
     runner = TDDTestRunner()
     runner.run_tests()
     
     # Example 3: TDD Benefits
-    print("Example 3: TDD Benefits Demonstration")
-    print("-" * 70)
+    logger.info("Example 3: TDD Benefits Demonstration")
+    logger.info("-" * 70)
     
     # Well-tested code
     calc = Calculator()
@@ -190,16 +192,16 @@ def main() -> None:
         (calc.divide, (15, 3), 5.0),
     ]
     
-    print("Testing calculator with multiple scenarios:")
+    logger.info("Testing calculator with multiple scenarios:")
     for func, args, expected in test_cases:
         result = func(*args)
         status = "✓" if result == expected else "✗"
-        print(f"  {status} {func.__name__}{args} = {result} (expected {expected})")
-    print()
+        logger.info(f"  {status} {func.__name__}{args} = {result} (expected {expected})")
+    logger.info()
     
     # Example 4: Performance measurement
-    print("Example 4: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 4: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("TDD")
     
@@ -215,46 +217,46 @@ def main() -> None:
         return stack.size()
     
     result, metrics = timer.measure(tdd_operations)
-    print(f"Time to perform TDD operations: {metrics['execution_time_ms']:.3f} ms")
-    print()
+    logger.info(f"Time to perform TDD operations: {metrics['execution_time_ms']:.3f} ms")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Development approach where tests are written before")
-    print("  implementation. Follows Red-Green-Refactor cycle.")
-    print("\nTDD Cycle:")
-    print("  1. RED: Write failing test")
-    print("  2. GREEN: Write minimal code to make test pass")
-    print("  3. REFACTOR: Improve code while keeping tests green")
-    print("  4. Repeat")
-    print("\nKey Advantages:")
-    print("  - Better code design")
-    print("  - Comprehensive test coverage")
-    print("  - Confidence in refactoring")
-    print("  - Documentation through tests")
-    print("\nKey Disadvantages:")
-    print("  - Slower initial development")
-    print("  - Learning curve")
-    print("  - Can be overkill for simple code")
-    print("  - Requires discipline")
-    print("\nWhen to Use:")
-    print("  - Complex logic")
-    print("  - Critical functionality")
-    print("  - API development")
-    print("  - When requirements are clear")
-    print("\nCommon Use Cases:")
-    print("  - Algorithm implementation")
-    print("  - API development")
-    print("  - Business logic")
-    print("  - Library development")
-    print("\nBest Practices:")
-    print("  - Write one test at a time")
-    print("  - Keep tests simple")
-    print("  - Test behavior, not implementation")
-    print("  - Refactor regularly")
-    print("  - Maintain test quality")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Development approach where tests are written before")
+    logger.info("  implementation. Follows Red-Green-Refactor cycle.")
+    logger.info("\nTDD Cycle:")
+    logger.info("  1. RED: Write failing test")
+    logger.info("  2. GREEN: Write minimal code to make test pass")
+    logger.info("  3. REFACTOR: Improve code while keeping tests green")
+    logger.info("  4. Repeat")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Better code design")
+    logger.info("  - Comprehensive test coverage")
+    logger.info("  - Confidence in refactoring")
+    logger.info("  - Documentation through tests")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Slower initial development")
+    logger.info("  - Learning curve")
+    logger.info("  - Can be overkill for simple code")
+    logger.info("  - Requires discipline")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Complex logic")
+    logger.info("  - Critical functionality")
+    logger.info("  - API development")
+    logger.info("  - When requirements are clear")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Algorithm implementation")
+    logger.info("  - API development")
+    logger.info("  - Business logic")
+    logger.info("  - Library development")
+    logger.info("\nBest Practices:")
+    logger.info("  - Write one test at a time")
+    logger.info("  - Keep tests simple")
+    logger.info("  - Test behavior, not implementation")
+    logger.info("  - Refactor regularly")
+    logger.info("  - Maintain test quality")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

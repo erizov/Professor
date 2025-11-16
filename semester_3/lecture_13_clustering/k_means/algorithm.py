@@ -13,6 +13,8 @@ import numpy as np
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class KMeans:
@@ -141,21 +143,21 @@ def elbow_method(X: np.ndarray, max_k: int = 10) -> None:
         kmeans.fit(X)
         inertias.append(kmeans.inertia_)
     
-    print("K vs Inertia:")
+    logger.info("K vs Inertia:")
     for k, inertia in enumerate(inertias, 1):
-        print(f"  K={k}: {inertia:.2f}")
+        logger.info(f"  K={k}: {inertia:.2f}")
 
 
 def main() -> None:
     """Demonstration of K-Means Clustering."""
-    print("=" * 70)
-    print("K-MEANS CLUSTERING DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("K-MEANS CLUSTERING DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Simple clustering
-    print("Example 1: Simple 2D Clustering")
-    print("-" * 70)
+    logger.info("Example 1: Simple 2D Clustering")
+    logger.info("-" * 70)
     
     np.random.seed(42)
     
@@ -168,27 +170,27 @@ def main() -> None:
     kmeans = KMeans(n_clusters=3, random_state=42)
     kmeans.fit(X)
     
-    print(f"Converged in {kmeans.n_iter_} iterations")
-    print(f"Inertia: {kmeans.inertia_:.2f}")
-    print(f"\nCentroids:")
+    logger.info(f"Converged in {kmeans.n_iter_} iterations")
+    logger.info(f"Inertia: {kmeans.inertia_:.2f}")
+    logger.info(f"\nCentroids:")
     for i, centroid in enumerate(kmeans.centroids):
-        print(f"  Cluster {i}: {centroid}")
-    print(f"\nCluster sizes:")
+        logger.info(f"  Cluster {i}: {centroid}")
+    logger.info(f"\nCluster sizes:")
     for i in range(3):
         count = np.sum(kmeans.labels_ == i)
-        print(f"  Cluster {i}: {count} points")
-    print()
+        logger.info(f"  Cluster {i}: {count} points")
+    logger.info()
     
     # Example 2: Elbow method
-    print("Example 2: Elbow Method (Finding Optimal K)")
-    print("-" * 70)
+    logger.info("Example 2: Elbow Method (Finding Optimal K)")
+    logger.info("-" * 70)
     elbow_method(X, max_k=8)
-    print("Note: Look for 'elbow' where inertia starts decreasing slowly")
-    print()
+    logger.info("Note: Look for 'elbow' where inertia starts decreasing slowly")
+    logger.info()
     
     # Example 3: Prediction on new data
-    print("Example 3: Predicting Clusters for New Data")
-    print("-" * 70)
+    logger.info("Example 3: Predicting Clusters for New Data")
+    logger.info("-" * 70)
     
     new_points = np.array([
         [5.5, 5.5],  # Should be cluster 0
@@ -200,24 +202,24 @@ def main() -> None:
     
     for i, (point, label) in enumerate(
         zip(new_points, predictions)):
-        print(f"Point {point} → Cluster {label}")
-    print()
+        logger.info(f"Point {point} → Cluster {label}")
+    logger.info()
     
     # Example 4: Different K values
-    print("Example 4: Effect of Different K Values")
-    print("-" * 70)
+    logger.info("Example 4: Effect of Different K Values")
+    logger.info("-" * 70)
     
     for k in [2, 3, 5]:
         kmeans_k = KMeans(n_clusters=k, random_state=42)
         kmeans_k.fit(X)
-        print(f"K={k}:")
-        print(f"  Iterations: {kmeans_k.n_iter_}")
-        print(f"  Inertia: {kmeans_k.inertia_:.2f}")
-    print()
+        logger.info(f"K={k}:")
+        logger.info(f"  Iterations: {kmeans_k.n_iter_}")
+        logger.info(f"  Inertia: {kmeans_k.inertia_:.2f}")
+    logger.info()
     
     # Example 5: Performance measurement
-    print("Example 5: Performance on Different Dataset Sizes")
-    print("-" * 70)
+    logger.info("Example 5: Performance on Different Dataset Sizes")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("K-Means")
     
@@ -230,41 +232,40 @@ def main() -> None:
             return model
         
         result, metrics = timer.measure(train_model)
-        print(f"Dataset size: {n}")
-        print(f"  Time: {metrics['execution_time_ms']:.3f} ms")
-        print(f"  Iterations: {result.n_iter_}")
-        print(f"  Inertia: {result.inertia_:.2f}")
+        logger.info(f"Dataset size: {n}")
+        logger.info(f"  Time: {metrics['execution_time_ms']:.3f} ms")
+        logger.info(f"  Iterations: {result.n_iter_}")
+        logger.info(f"  Inertia: {result.inertia_:.2f}")
     
-    print()
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O(n * k * d * iter)")
-    print("    n = samples, k = clusters, d = features, iter = iterations")
-    print("  Space: O(n + k*d)")
-    print("\nKey Advantages:")
-    print("  - Simple and easy to implement")
-    print("  - Scales well to large datasets")
-    print("  - Fast convergence")
-    print("  - Works well with spherical clusters")
-    print("\nKey Disadvantages:")
-    print("  - Must specify K in advance")
-    print("  - Sensitive to initial centroids")
-    print("  - Assumes spherical clusters")
-    print("  - Sensitive to outliers")
-    print("  - Only finds local optimum")
-    print("\nCommon Use Cases:")
-    print("  - Customer segmentation")
-    print("  - Image compression")
-    print("  - Document clustering")
-    print("  - Anomaly detection")
-    print("\nTips:")
-    print("  - Use elbow method to find optimal K")
-    print("  - Run multiple times with different initializations")
-    print("  - Scale features before clustering")
-    print("  - Consider K-Means++ initialization")
-    print("=" * 70)
+    logger.info()
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  O(n * k * d * iter)")
+    logger.info("    n = samples, k = clusters, d = features, iter = iterations")
+    logger.info("  Space: O(n + k*d)")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Simple and easy to implement")
+    logger.info("  - Scales well to large datasets")
+    logger.info("  - Fast convergence")
+    logger.info("  - Works well with spherical clusters")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Must specify K in advance")
+    logger.info("  - Sensitive to initial centroids")
+    logger.info("  - Assumes spherical clusters")
+    logger.info("  - Sensitive to outliers")
+    logger.info("  - Only finds local optimum")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Customer segmentation")
+    logger.info("  - Image compression")
+    logger.info("  - Document clustering")
+    logger.info("  - Anomaly detection")
+    logger.info("\nTips:")
+    logger.info("  - Use elbow method to find optimal K")
+    logger.info("  - Run multiple times with different initializations")
+    logger.info("  - Scale features before clustering")
+    logger.info("  - Consider K-Means++ initialization")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":
     main()
-

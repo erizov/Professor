@@ -10,6 +10,8 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 def allreduce():
@@ -20,21 +22,21 @@ def allreduce():
     Time Complexity: O(log(workers))
     Space Complexity: O(params)
     """
-    print("==" * 35)
-    print("AllReduce Algorithm")
-    print("==" * 35)
-    print(f"Category: Distributed ML")
-    print(f"Time Complexity: O(log(workers))")
-    print(f"Space Complexity: O(params)")
-    print()
-    print("Resource Requirements:")
-    print("  - GPU: Optional")
-    print("  - Memory: Medium")
-    print("==" * 35)
+    logger.info("==" * 35)
+    logger.info("AllReduce Algorithm")
+    logger.info("==" * 35)
+    logger.info(f"Category: Distributed ML")
+    logger.info(f"Time Complexity: O(log(workers))")
+    logger.info(f"Space Complexity: O(params)")
+    logger.info()
+    logger.info("Resource Requirements:")
+    logger.info("  - GPU: Optional")
+    logger.info("  - Memory: Medium")
+    logger.info("==" * 35)
 
 
 if __name__ == "__main__":
     timer = PerformanceTimer("AllReduce Algorithm")
     _, metrics = timer.measure(allreduce)
-    print(f"\nExecution time: {metrics['execution_time_ms']:.3f} ms")
-    print(f"Memory used: {metrics['memory_peak_kb']:.2f} KB")
+    logger.info(f"\nExecution time: {metrics['execution_time_ms']:.3f} ms")
+    logger.info(f"Memory used: {metrics['memory_peak_kb']:.2f} KB")

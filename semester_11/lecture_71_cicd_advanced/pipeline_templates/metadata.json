@@ -1,0 +1,12 @@
+{
+  "name": "pipeline_templates",
+  "display_name": "Pipeline Templates",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_71_cicd_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

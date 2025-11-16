@@ -1,0 +1,12 @@
+{
+  "name": "environment_management",
+  "display_name": "Environment Management",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_75_gitops_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

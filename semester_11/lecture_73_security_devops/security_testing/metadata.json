@@ -1,0 +1,12 @@
+{
+  "name": "security_testing",
+  "display_name": "Security Testing",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_73_security_devops",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -5,24 +5,27 @@
  * Time Complexity: O(n*iterations)
  * Space Complexity: O(n)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("==".repeat(35));
-        System.out.println("Facebook Prophet");
-        System.out.println("==".repeat(35));
-        System.out.println("Category: Time Series");
-        System.out.println("Time: O(n*iterations)");
-        System.out.println("Space: O(n)");
-        System.out.println();
-        System.out.println("Resource Requirements:");
-        System.out.println("  - GPU: Optional");
-        System.out.println("  - Memory: Medium");
-        System.out.println("==".repeat(35));
+        logger.info("==".repeat(35));
+        logger.info("Facebook Prophet");
+        logger.info("==".repeat(35));
+        logger.info("Category: Time Series");
+        logger.info("Time: O(n*iterations)");
+        logger.info("Space: O(n)");
+        logger.info();
+        logger.info("Resource Requirements:");
+        logger.info("  - GPU: Optional");
+        logger.info("  - Memory: Medium");
+        logger.info("==".repeat(35));
         
         long endTime = System.nanoTime();
         double durationMs = (endTime - startTime) / 1_000_000.0;
-        System.out.println(String.format("\nExecution time: %.3f ms", durationMs));
+        logger.info(String.format("\nExecution time: %.3f ms", durationMs));
     }
 }

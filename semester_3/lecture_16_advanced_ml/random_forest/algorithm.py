@@ -16,6 +16,8 @@ from collections import Counter
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class DecisionTree:
@@ -223,14 +225,14 @@ class RandomForest:
 
 def main() -> None:
     """Demonstration of Random Forest Algorithm."""
-    print("=" * 70)
-    print("RANDOM FOREST ALGORITHM DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("RANDOM FOREST ALGORITHM DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Simple Classification
-    print("Example 1: Simple Classification")
-    print("-" * 70)
+    logger.info("Example 1: Simple Classification")
+    logger.info("-" * 70)
     
     # Simple dataset: [feature1, feature2] -> label
     X = [
@@ -249,27 +251,27 @@ def main() -> None:
     test_X = [[1.2, 2.3], [5.8, 6.2]]
     predictions = rf.predict(test_X)
     
-    print("Training samples: 12")
-    print("Number of trees: 10")
-    print("\nPredictions:")
+    logger.info("Training samples: 12")
+    logger.info("Number of trees: 10")
+    logger.info("\nPredictions:")
     for i, (x, pred) in enumerate(zip(test_X, predictions)):
-        print(f"  Sample {i+1} {x}: {pred}")
-    print()
+        logger.info(f"  Sample {i+1} {x}: {pred}")
+    logger.info()
     
     # Example 2: Feature Importance (simplified)
-    print("Example 2: Prediction Probabilities")
-    print("-" * 70)
+    logger.info("Example 2: Prediction Probabilities")
+    logger.info("-" * 70)
     
     probabilities = rf.predict_proba(test_X)
     for i, proba in enumerate(probabilities):
-        print(f"Sample {i+1} probabilities:")
+        logger.info(f"Sample {i+1} probabilities:")
         for label, prob in proba.items():
-            print(f"  {label}: {prob:.2%}")
-    print()
+            logger.info(f"  {label}: {prob:.2%}")
+    logger.info()
     
     # Example 3: Performance measurement
-    print("Example 3: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 3: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Random Forest")
     
@@ -283,42 +285,42 @@ def main() -> None:
         return len(rf.trees)
     
     result, metrics = timer.measure(train_forest)
-    print(f"Time to train Random Forest with 20 trees: "
+    logger.info(f"Time to train Random Forest with 20 trees: "
           f"{metrics['execution_time_ms']:.3f} ms")
-    print(f"Trees trained: {result}")
-    print()
+    logger.info(f"Trees trained: {result}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nAlgorithm Summary:")
-    print("\nDescription:")
-    print("  Ensemble learning method that constructs multiple decision")
-    print("  trees and outputs the mode (classification) or mean (regression).")
-    print("\nTime Complexity:")
-    print("  Training: O(n * m * log(n) * k) where:")
-    print("    n = number of samples")
-    print("    m = number of features")
-    print("    k = number of trees")
-    print("  Prediction: O(k * log(n))")
-    print("\nKey Advantages:")
-    print("  - Reduces overfitting")
-    print("  - Handles missing values")
-    print("  - Feature importance")
-    print("  - Works well with default parameters")
-    print("\nKey Disadvantages:")
-    print("  - Less interpretable than single tree")
-    print("  - Can be slow for large datasets")
-    print("  - Memory intensive")
-    print("\nWhen to Use:")
-    print("  - Classification and regression")
-    print("  - Need feature importance")
-    print("  - Large datasets")
-    print("  - Want robust predictions")
-    print("\nCommon Use Cases:")
-    print("  - Image classification")
-    print("  - Feature selection")
-    print("  - Anomaly detection")
-    print("  - Bioinformatics")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nAlgorithm Summary:")
+    logger.info("\nDescription:")
+    logger.info("  Ensemble learning method that constructs multiple decision")
+    logger.info("  trees and outputs the mode (classification) or mean (regression).")
+    logger.info("\nTime Complexity:")
+    logger.info("  Training: O(n * m * log(n) * k) where:")
+    logger.info("    n = number of samples")
+    logger.info("    m = number of features")
+    logger.info("    k = number of trees")
+    logger.info("  Prediction: O(k * log(n))")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Reduces overfitting")
+    logger.info("  - Handles missing values")
+    logger.info("  - Feature importance")
+    logger.info("  - Works well with default parameters")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Less interpretable than single tree")
+    logger.info("  - Can be slow for large datasets")
+    logger.info("  - Memory intensive")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Classification and regression")
+    logger.info("  - Need feature importance")
+    logger.info("  - Large datasets")
+    logger.info("  - Want robust predictions")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Image classification")
+    logger.info("  - Feature selection")
+    logger.info("  - Anomaly detection")
+    logger.info("  - Bioinformatics")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

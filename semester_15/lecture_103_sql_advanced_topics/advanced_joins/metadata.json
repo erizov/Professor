@@ -1,0 +1,12 @@
+{
+  "name": "advanced_joins",
+  "display_name": "Advanced Joins",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_103_sql_advanced_topics",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

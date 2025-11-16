@@ -15,6 +15,8 @@ import math
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 def is_prime(n: int) -> bool:
@@ -243,69 +245,69 @@ class RSA:
 
 def main() -> None:
     """Demonstration of RSA Algorithm."""
-    print("=" * 70)
-    print("RSA (RIVEST-SHAMIR-ADLEMAN) ALGORITHM DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("RSA (RIVEST-SHAMIR-ADLEMAN) ALGORITHM DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Key Generation
-    print("Example 1: Generate RSA Key Pair")
-    print("-" * 70)
+    logger.info("Example 1: Generate RSA Key Pair")
+    logger.info("-" * 70)
     
     rsa = RSA()
     public_key = rsa.get_public_key()
     private_key = rsa.get_private_key()
     
-    print(f"Public key (n, e): ({public_key[0]}, {public_key[1]})")
-    print(f"Private key (n, d): ({private_key[0]}, {private_key[1]})")
-    print(f"Key size: {public_key[0].bit_length()} bits")
-    print()
+    logger.info(f"Public key (n, e): ({public_key[0]}, {public_key[1]})")
+    logger.info(f"Private key (n, d): ({private_key[0]}, {private_key[1]})")
+    logger.info(f"Key size: {public_key[0].bit_length()} bits")
+    logger.info()
     
     # Example 2: Encrypt/Decrypt Integer
-    print("Example 2: Encrypt and Decrypt Integer")
-    print("-" * 70)
+    logger.info("Example 2: Encrypt and Decrypt Integer")
+    logger.info("-" * 70)
     
     message = 42
     encrypted = rsa.encrypt(message)
     decrypted = rsa.decrypt(encrypted)
     
-    print(f"Original message: {message}")
-    print(f"Encrypted: {encrypted}")
-    print(f"Decrypted: {decrypted}")
-    print(f"Match: {message == decrypted}")
-    print()
+    logger.info(f"Original message: {message}")
+    logger.info(f"Encrypted: {encrypted}")
+    logger.info(f"Decrypted: {decrypted}")
+    logger.info(f"Match: {message == decrypted}")
+    logger.info()
     
     # Example 3: Encrypt/Decrypt String
-    print("Example 3: Encrypt and Decrypt String")
-    print("-" * 70)
+    logger.info("Example 3: Encrypt and Decrypt String")
+    logger.info("-" * 70)
     
     text = "HELLO"
     encrypted_text = rsa.encrypt_string(text)
     decrypted_text = rsa.decrypt_string(encrypted_text)
     
-    print(f"Original text: {text}")
-    print(f"Encrypted: {encrypted_text}")
-    print(f"Decrypted: {decrypted_text}")
-    print(f"Match: {text == decrypted_text}")
-    print()
+    logger.info(f"Original text: {text}")
+    logger.info(f"Encrypted: {encrypted_text}")
+    logger.info(f"Decrypted: {decrypted_text}")
+    logger.info(f"Match: {text == decrypted_text}")
+    logger.info()
     
     # Example 4: Multiple Messages
-    print("Example 4: Encrypt Multiple Messages")
-    print("-" * 70)
+    logger.info("Example 4: Encrypt Multiple Messages")
+    logger.info("-" * 70)
     
     messages = [10, 20, 30, 40, 50]
     encrypted_messages = [rsa.encrypt(m) for m in messages]
     decrypted_messages = [rsa.decrypt(e) for e in encrypted_messages]
     
-    print("Messages:", messages)
-    print("Encrypted:", encrypted_messages)
-    print("Decrypted:", decrypted_messages)
-    print(f"All match: {messages == decrypted_messages}")
-    print()
+    logger.info("Messages:", messages)
+    logger.info("Encrypted:", encrypted_messages)
+    logger.info("Decrypted:", decrypted_messages)
+    logger.info(f"All match: {messages == decrypted_messages}")
+    logger.info()
     
     # Example 5: Performance measurement
-    print("Example 5: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 5: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("RSA")
     
@@ -317,50 +319,50 @@ def main() -> None:
         return decrypted == message
     
     result, metrics = timer.measure(rsa_operations)
-    print(f"Time to encrypt and decrypt: {metrics['execution_time_ms']:.3f} ms")
-    print()
+    logger.info(f"Time to encrypt and decrypt: {metrics['execution_time_ms']:.3f} ms")
+    logger.info()
     
-    print("=" * 70)
-    print("\nAlgorithm Summary:")
-    print("\nIntent:")
-    print("  Asymmetric cryptographic algorithm for secure data transmission.")
-    print("  Uses public and private key pairs for encryption and decryption.")
-    print("\nKey Generation:")
-    print("  1. Choose two large prime numbers p and q")
-    print("  2. Calculate n = p * q")
-    print("  3. Calculate φ(n) = (p-1) * (q-1)")
-    print("  4. Choose public exponent e (usually 65537)")
-    print("  5. Calculate private exponent d = e^(-1) mod φ(n)")
-    print("\nEncryption:")
-    print("  c = m^e mod n (where m is message, c is ciphertext)")
-    print("\nDecryption:")
-    print("  m = c^d mod n")
-    print("\nKey Advantages:")
-    print("  - Asymmetric (public/private key pair)")
-    print("  - Secure for key exchange")
-    print("  - Digital signatures")
-    print("  - Widely used and trusted")
-    print("\nKey Disadvantages:")
-    print("  - Slow compared to symmetric encryption")
-    print("  - Requires large key sizes (2048+ bits)")
-    print("  - Vulnerable to quantum computing")
-    print("  - Key management complexity")
-    print("\nWhen to Use:")
-    print("  - Key exchange")
-    print("  - Digital signatures")
-    print("  - Secure communication setup")
-    print("  - Certificate-based authentication")
-    print("\nCommon Use Cases:")
-    print("  - SSL/TLS handshakes")
-    print("  - SSH key authentication")
-    print("  - Digital signatures")
-    print("  - Email encryption (PGP)")
-    print("\nSecurity Considerations:")
-    print("  - Use key sizes >= 2048 bits for production")
-    print("  - Protect private keys")
-    print("  - Use proper padding (OAEP)")
-    print("  - Consider post-quantum cryptography")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nAlgorithm Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Asymmetric cryptographic algorithm for secure data transmission.")
+    logger.info("  Uses public and private key pairs for encryption and decryption.")
+    logger.info("\nKey Generation:")
+    logger.info("  1. Choose two large prime numbers p and q")
+    logger.info("  2. Calculate n = p * q")
+    logger.info("  3. Calculate φ(n) = (p-1) * (q-1)")
+    logger.info("  4. Choose public exponent e (usually 65537)")
+    logger.info("  5. Calculate private exponent d = e^(-1) mod φ(n)")
+    logger.info("\nEncryption:")
+    logger.info("  c = m^e mod n (where m is message, c is ciphertext)")
+    logger.info("\nDecryption:")
+    logger.info("  m = c^d mod n")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Asymmetric (public/private key pair)")
+    logger.info("  - Secure for key exchange")
+    logger.info("  - Digital signatures")
+    logger.info("  - Widely used and trusted")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Slow compared to symmetric encryption")
+    logger.info("  - Requires large key sizes (2048+ bits)")
+    logger.info("  - Vulnerable to quantum computing")
+    logger.info("  - Key management complexity")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Key exchange")
+    logger.info("  - Digital signatures")
+    logger.info("  - Secure communication setup")
+    logger.info("  - Certificate-based authentication")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - SSL/TLS handshakes")
+    logger.info("  - SSH key authentication")
+    logger.info("  - Digital signatures")
+    logger.info("  - Email encryption (PGP)")
+    logger.info("\nSecurity Considerations:")
+    logger.info("  - Use key sizes >= 2048 bits for production")
+    logger.info("  - Protect private keys")
+    logger.info("  - Use proper padding (OAEP)")
+    logger.info("  - Consider post-quantum cryptography")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

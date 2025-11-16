@@ -8,7 +8,10 @@ import java.util.*;
  * Time Complexity: O(n + m)
  * Space Complexity: O(m)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static int[] computeLPS(String pattern) {
         int m = pattern.length();
@@ -72,46 +75,45 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("KNUTH-MORRIS-PRATT (KMP) ALGORITHM");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("KNUTH-MORRIS-PRATT (KMP) ALGORITHM");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1
-        System.out.println("Example 1: Basic Pattern Matching");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Basic Pattern Matching");
+        logger.info("-".repeat(70));
         
         String text1 = "ABABDABACDABABCABCABAB";
         String pattern1 = "ABABCABAB";
         
         List<Integer> matches = kmpSearch(text1, pattern1);
-        System.out.println("Text: " + text1);
-        System.out.println("Pattern: " + pattern1);
-        System.out.println("Matches found at indices: " + matches);
-        System.out.println();
+        logger.info("Text: " + text1);
+        logger.info("Pattern: " + pattern1);
+        logger.info("Matches found at indices: " + matches);
+        logger.info();
         
         // Example 2
-        System.out.println("Example 2: Multiple Occurrences");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Multiple Occurrences");
+        logger.info("-".repeat(70));
         
         String text2 = "AABAACAADAABAABA";
         String pattern2 = "AABA";
         
         List<Integer> matches2 = kmpSearch(text2, pattern2);
-        System.out.println("Text: " + text2);
-        System.out.println("Pattern: " + pattern2);
-        System.out.println("Matches: " + matches2);
-        System.out.println();
+        logger.info("Text: " + text2);
+        logger.info("Pattern: " + pattern2);
+        logger.info("Matches: " + matches2);
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Time:  O(n + m)");
-        System.out.println("  Space: O(m)");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Time:  O(n + m)");
+        logger.info("  Space: O(m)");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }
 }
-

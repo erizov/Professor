@@ -1,18 +1,26 @@
 # Algorithms and Design Patterns Course
-## 8-Semester Comprehensive Computer Science Curriculum
+## 16-Semester Comprehensive Computer Science Curriculum
 
 [![Status](https://img.shields.io/badge/Status-Active%20Development-green)]()
 [![Progress](https://img.shields.io/badge/Progress-40%25%20Complete-yellow)]()
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)]()
 [![Java](https://img.shields.io/badge/Java-11%2B-orange)]()
 
-> **A production-ready, educational resource** covering 300+ algorithms, design patterns, and ML techniques with implementations in Python and Java.
+> **A production-ready, educational resource** covering 600+ algorithms, design patterns, and computational intelligence techniques with implementations in Python and Java.
 
 ## 📚 Course Overview
 
-This repository contains a **complete 8-semester course** in algorithms, data structures, design patterns, machine learning, system design, operating systems, LLMs, CI/CD, quantum computing, blockchain, and database systems. Each algorithm includes:
+This repository contains a **complete 16-semester course** (8 undergraduate + 8 graduate) in algorithms, data structures, design patterns, computational intelligence, system design, operating systems, LLMs, CI/CD, quantum computing, blockchain, and database systems. Each algorithm includes:
 
 - ✅ **Full Python & Java implementations**
+- ✅ **TL;DR sections** for quick understanding
+- ✅ **Learning Objectives** clearly defined
+- ✅ **Prerequisites** listed for each algorithm
+- ✅ **Self-Assessment Questions** to test understanding
+- ✅ **Algorithm Visualizations** with ASCII diagrams
+- ✅ **Practice Exercises** with graduated difficulty levels
+- ✅ **Real-World Applications** with industry examples
+- ✅ **Common Misconceptions** clarified
 - ✅ **Real-world examples** and use cases
 - ✅ **Performance measurements** and complexity analysis
 - ✅ **Common mistakes** and best practices
@@ -23,10 +31,12 @@ This repository contains a **complete 8-semester course** in algorithms, data st
 
 ## 🎯 Current Status
 
-**Implementation Progress**: 78+ / 300+ algorithms (40%+)
+**Implementation Progress**: 78+ / 600+ algorithms (13%+)
 - **Fully Implemented**: 78 algorithms (Python + Java)
-- **Placeholders Remaining**: ~90 algorithms
-- **Total Algorithms**: 300+ across 8 semesters
+- **Placeholders Remaining**: ~520 algorithms (mostly graduate-level)
+- **Total Algorithms**: 600+ across 16 semesters
+- **Undergraduate Semesters (1-8)**: 300+ algorithms
+- **Graduate Semesters (9-16)**: 300+ advanced algorithms
 
 ### Completed Sections
 

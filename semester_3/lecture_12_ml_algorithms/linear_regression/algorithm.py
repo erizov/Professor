@@ -16,6 +16,8 @@ import os
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class LinearRegression:
@@ -133,14 +135,14 @@ class LinearRegression:
 
 def main() -> None:
     """Demonstration of Linear Regression."""
-    print("=" * 70)
-    print("LINEAR REGRESSION DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("LINEAR REGRESSION DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Simple linear regression
-    print("Example 1: Simple Linear Regression (1 feature)")
-    print("-" * 70)
+    logger.info("Example 1: Simple Linear Regression (1 feature)")
+    logger.info("-" * 70)
     
     # Generate synthetic data: y = 3x + 5 + noise
     np.random.seed(42)
@@ -150,15 +152,15 @@ def main() -> None:
     model1 = LinearRegression(learning_rate=0.01, n_iterations=1000)
     model1.fit(X_simple, y_simple)
     
-    print(f"True equation: y = 3x + 5")
-    print(f"Learned: y = {model1.weights[0]:.2f}x + {model1.bias:.2f}")
-    print(f"R² score: {model1.score(X_simple, y_simple):.4f}")
-    print(f"Final loss: {model1.losses[-1]:.4f}")
-    print()
+    logger.info(f"True equation: y = 3x + 5")
+    logger.info(f"Learned: y = {model1.weights[0]:.2f}x + {model1.bias:.2f}")
+    logger.info(f"R² score: {model1.score(X_simple, y_simple):.4f}")
+    logger.info(f"Final loss: {model1.losses[-1]:.4f}")
+    logger.info()
     
     # Example 2: Multiple linear regression
-    print("Example 2: Multiple Linear Regression (3 features)")
-    print("-" * 70)
+    logger.info("Example 2: Multiple Linear Regression (3 features)")
+    logger.info("-" * 70)
     
     # Generate data: y = 2x1 + 3x2 - 1x3 + 10
     X_multi = np.random.rand(100, 3) * 10
@@ -170,16 +172,16 @@ def main() -> None:
     model2 = LinearRegression(learning_rate=0.01, n_iterations=1000)
     model2.fit(X_multi, y_multi)
     
-    print(f"True equation: y = 2x₁ + 3x₂ - 1x₃ + 10")
-    print(f"Learned: y = {model2.weights[0]:.2f}x₁ + " + 
+    logger.info(f"True equation: y = 2x₁ + 3x₂ - 1x₃ + 10")
+    logger.info(f"Learned: y = {model2.weights[0]:.2f}x₁ + " + 
           f"{model2.weights[1]:.2f}x₂ + " +
           f"{model2.weights[2]:.2f}x₃ + {model2.bias:.2f}")
-    print(f"R² score: {model2.score(X_multi, y_multi):.4f}")
-    print()
+    logger.info(f"R² score: {model2.score(X_multi, y_multi):.4f}")
+    logger.info()
     
     # Example 3: Normal equation vs Gradient Descent
-    print("Example 3: Normal Equation vs Gradient Descent")
-    print("-" * 70)
+    logger.info("Example 3: Normal Equation vs Gradient Descent")
+    logger.info("-" * 70)
     
     X_test = np.random.rand(100, 2) * 10
     y_test = 5 * X_test[:, 0] + 2 * X_test[:, 1] + 3
@@ -197,20 +199,20 @@ def main() -> None:
     model_ne.fit(X_test, y_test)
     time_ne = time.perf_counter() - start_time
     
-    print("Gradient Descent:")
-    print(f"  Time: {time_gd*1000:.3f} ms")
-    print(f"  Weights: {model_gd.weights}")
-    print(f"  R² score: {model_gd.score(X_test, y_test):.4f}")
+    logger.info("Gradient Descent:")
+    logger.info(f"  Time: {time_gd*1000:.3f} ms")
+    logger.info(f"  Weights: {model_gd.weights}")
+    logger.info(f"  R² score: {model_gd.score(X_test, y_test):.4f}")
     
-    print("\nNormal Equation:")
-    print(f"  Time: {time_ne*1000:.3f} ms")
-    print(f"  Weights: {model_ne.weights}")
-    print(f"  R² score: {model_ne.score(X_test, y_test):.4f}")
-    print()
+    logger.info("\nNormal Equation:")
+    logger.info(f"  Time: {time_ne*1000:.3f} ms")
+    logger.info(f"  Weights: {model_ne.weights}")
+    logger.info(f"  R² score: {model_ne.score(X_test, y_test):.4f}")
+    logger.info()
     
     # Example 4: Performance measurement
-    print("Example 4: Performance on Different Dataset Sizes")
-    print("-" * 70)
+    logger.info("Example 4: Performance on Different Dataset Sizes")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Linear Regression")
     
@@ -224,30 +226,30 @@ def main() -> None:
             return model
         
         _, metrics = timer.measure(train_model)
-        print(f"Dataset size: {n}")
-        print(f"  Time: {metrics['execution_time_ms']:.3f} ms")
-        print(f"  Memory: {metrics['memory_peak_kb']:.2f} KB")
+        logger.info(f"Dataset size: {n}")
+        logger.info(f"  Time: {metrics['execution_time_ms']:.3f} ms")
+        logger.info(f"  Memory: {metrics['memory_peak_kb']:.2f} KB")
     
-    print()
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Gradient Descent:")
-    print("    Time:  O(n * d * iter) - n=samples, d=features")
-    print("    Space: O(d)")
-    print("  Normal Equation:")
-    print("    Time:  O(d³ + d²n) - matrix inversion")
-    print("    Space: O(d²)")
-    print("\nKey Advantages:")
-    print("  - Simple and interpretable")
-    print("  - Fast training (normal equation)")
-    print("  - No hyperparameters (normal equation)")
-    print("  - Works well for linear relationships")
-    print("\nKey Disadvantages:")
-    print("  - Assumes linear relationship")
-    print("  - Sensitive to outliers")
-    print("  - Cannot handle non-linear patterns")
-    print("  - Normal equation expensive for large features")
-    print("=" * 70)
+    logger.info()
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Gradient Descent:")
+    logger.info("    Time:  O(n * d * iter) - n=samples, d=features")
+    logger.info("    Space: O(d)")
+    logger.info("  Normal Equation:")
+    logger.info("    Time:  O(d³ + d²n) - matrix inversion")
+    logger.info("    Space: O(d²)")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Simple and interpretable")
+    logger.info("  - Fast training (normal equation)")
+    logger.info("  - No hyperparameters (normal equation)")
+    logger.info("  - Works well for linear relationships")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Assumes linear relationship")
+    logger.info("  - Sensitive to outliers")
+    logger.info("  - Cannot handle non-linear patterns")
+    logger.info("  - Normal equation expensive for large features")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

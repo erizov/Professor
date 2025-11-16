@@ -1,0 +1,12 @@
+{
+  "name": "dpos_advanced",
+  "display_name": "Dpos Advanced",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_88_consensus_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

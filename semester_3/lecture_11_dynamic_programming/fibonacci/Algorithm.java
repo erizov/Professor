@@ -5,7 +5,10 @@ import java.util.*;
  * 
  * Multiple approaches: naive, memoized, bottom-up, optimized.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     // Naive recursive (exponential time)
     static int fibonacciNaive(int n) {
@@ -92,32 +95,32 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("FIBONACCI SEQUENCE - DYNAMIC PROGRAMMING");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("FIBONACCI SEQUENCE - DYNAMIC PROGRAMMING");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Compare approaches
-        System.out.println("Example 1: Comparing Different Approaches");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Comparing Different Approaches");
+        logger.info("-".repeat(70));
         
         int n = 10;
-        System.out.println("Computing Fibonacci(" + n + "):");
-        System.out.println("  Naive recursive: " + fibonacciNaive(n));
-        System.out.println("  Memoized: " + 
+        logger.info("Computing Fibonacci(" + n + "):");
+        logger.info("  Naive recursive: " + fibonacciNaive(n));
+        logger.info("  Memoized: " + 
                          fibonacciMemoized(n, new HashMap<>()));
-        System.out.println("  Bottom-up DP: " + fibonacciBottomUp(n));
-        System.out.println("  Optimized: " + fibonacciOptimized(n));
-        System.out.println();
+        logger.info("  Bottom-up DP: " + fibonacciBottomUp(n));
+        logger.info("  Optimized: " + fibonacciOptimized(n));
+        logger.info();
         
         // Example 2: Performance
-        System.out.println("Example 2: Performance Comparison");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Performance Comparison");
+        logger.info("-".repeat(70));
         
         int[] testValues = {20, 30, 35};
         
         for (int nVal : testValues) {
-            System.out.println("\nComputing Fibonacci(" + nVal + "):");
+            logger.info("\nComputing Fibonacci(" + nVal + "):");
             
             // Naive (only for small n)
             if (nVal <= 30) {
@@ -149,43 +152,42 @@ public class Algorithm {
             System.out.printf("  Optimized: %.3f ms%n", 
                             (t2 - t1) / 1_000_000.0);
         }
-        System.out.println();
+        logger.info();
         
         // Example 3: Generate sequence
-        System.out.println("Example 3: Generating Fibonacci Sequence");
-        System.out.println("-".repeat(70));
+        logger.info("Example 3: Generating Fibonacci Sequence");
+        logger.info("-".repeat(70));
         
         List<Long> sequence = fibonacciSequence(15, "optimized");
-        System.out.println("First 15 Fibonacci numbers:");
-        System.out.println("  " + sequence);
-        System.out.println();
+        logger.info("First 15 Fibonacci numbers:");
+        logger.info("  " + sequence);
+        logger.info();
         
         // Example 4: Large values
-        System.out.println("Example 4: Large Fibonacci Numbers");
-        System.out.println("-".repeat(70));
+        logger.info("Example 4: Large Fibonacci Numbers");
+        logger.info("-".repeat(70));
         
         int[] largeN = {50, 100};
         for (int nVal : largeN) {
             long result = fibonacciOptimized(nVal);
-            System.out.println("Fibonacci(" + nVal + ") = " + result);
-            System.out.println("  (digits: " + String.valueOf(result).length() + ")");
+            logger.info("Fibonacci(" + nVal + ") = " + result);
+            logger.info("  (digits: " + String.valueOf(result).length() + ")");
         }
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Naive: O(2^n) time, O(n) space");
-        System.out.println("  Memoized: O(n) time, O(n) space");
-        System.out.println("  Bottom-up: O(n) time, O(n) space");
-        System.out.println("  Optimized: O(n) time, O(1) space");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Demonstrates DP concepts");
-        System.out.println("  - Multiple optimization strategies");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Naive: O(2^n) time, O(n) space");
+        logger.info("  Memoized: O(n) time, O(n) space");
+        logger.info("  Bottom-up: O(n) time, O(n) space");
+        logger.info("  Optimized: O(n) time, O(1) space");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Demonstrates DP concepts");
+        logger.info("  - Multiple optimization strategies");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }
 }
-

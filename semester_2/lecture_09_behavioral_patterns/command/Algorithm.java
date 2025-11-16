@@ -5,7 +5,10 @@ import java.util.*;
  * 
  * Encapsulates requests as objects.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     interface Command {
         void execute();
@@ -23,12 +26,12 @@ public class Algorithm {
         
         void on() {
             isOn = true;
-            System.out.println(location + " light is ON");
+            logger.info(location + " light is ON");
         }
         
         void off() {
             isOn = false;
-            System.out.println(location + " light is OFF");
+            logger.info(location + " light is OFF");
         }
     }
     
@@ -65,10 +68,10 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("COMMAND DESIGN PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("COMMAND DESIGN PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         Light light = new Light("Living Room");
         Command onCommand = new LightOnCommand(light);
@@ -77,10 +80,10 @@ public class Algorithm {
         onCommand.execute();
         offCommand.execute();
         onCommand.undo();
-        System.out.println();
+        logger.info();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: Encapsulates requests as objects");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: Encapsulates requests as objects");
+        logger.info("=".repeat(70));
     }
 }

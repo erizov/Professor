@@ -1,0 +1,12 @@
+{
+  "name": "automated_remediation",
+  "display_name": "Automated Remediation",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_74_automation_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

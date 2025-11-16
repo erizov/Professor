@@ -1,0 +1,12 @@
+{
+  "name": "dimensional_modeling_advanced",
+  "display_name": "Dimensional Modeling Advanced",
+  "category": "Advanced Graduate Level",
+  "semester": 16,
+  "lecture": "lecture_112_data_warehousing_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

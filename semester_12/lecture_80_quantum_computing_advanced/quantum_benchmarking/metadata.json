@@ -1,0 +1,12 @@
+{
+  "name": "quantum_benchmarking",
+  "display_name": "Quantum Benchmarking",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_80_quantum_computing_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -11,6 +11,8 @@ substitutable for their base types.
 import sys
 from pathlib import Path
 from abc import ABC, abstractmethod
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
@@ -85,7 +87,7 @@ class BadBird:
     """Bird that violates LSP."""
     
     def fly(self) -> None:
-        print("Flying...")
+        logger.info("Flying...")
 
 
 class BadPenguin(BadBird):
@@ -112,7 +114,7 @@ class FlyingBird(Bird):
         self.fly()
     
     def fly(self) -> None:
-        print("Flying...")
+        logger.info("Flying...")
 
 
 class NonFlyingBird(Bird):
@@ -122,7 +124,7 @@ class NonFlyingBird(Bird):
         self.swim()
     
     def swim(self) -> None:
-        print("Swimming...")
+        logger.info("Swimming...")
 
 
 class Sparrow(FlyingBird):
@@ -198,69 +200,69 @@ class ImmutableList(ReadOnlyCollection):
 
 def process_collection(collection: ReadOnlyCollection) -> None:
     """Process any read-only collection - LSP allows substitution."""
-    print(f"Collection size: {collection.size()}")
+    logger.info(f"Collection size: {collection.size()}")
     if collection.size() > 0:
-        print(f"First item: {collection.get(0)}")
+        logger.info(f"First item: {collection.get(0)}")
 
 
 def main() -> None:
     """Demonstration of Liskov Substitution Principle."""
-    print("=" * 70)
-    print("LISKOV SUBSTITUTION PRINCIPLE (LSP) DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("LISKOV SUBSTITUTION PRINCIPLE (LSP) DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Rectangle/Square
-    print("Example 1: Rectangle and Square")
-    print("-" * 70)
+    logger.info("Example 1: Rectangle and Square")
+    logger.info("-" * 70)
     
-    print("❌ BAD: Square breaks Rectangle behavior")
+    logger.info("❌ BAD: Square breaks Rectangle behavior")
     rect = BadRectangle(5, 4)
-    print(f"Rectangle area: {rect.get_area()}")
+    logger.info(f"Rectangle area: {rect.get_area()}")
     
     # This should work but breaks expectations
     square = BadSquare(5)
-    print(f"Square area: {square.get_area()}")
+    logger.info(f"Square area: {square.get_area()}")
     square.set_width(10)  # This changes height too - unexpected!
-    print(f"After set_width(10): {square.get_area()}")
-    print()
+    logger.info(f"After set_width(10): {square.get_area()}")
+    logger.info()
     
-    print("✅ GOOD: Both are substitutable as Shapes")
+    logger.info("✅ GOOD: Both are substitutable as Shapes")
     shapes = [
         Rectangle(5, 4),
         Square(5),
     ]
     
     for shape in shapes:
-        print(f"{shape.__class__.__name__} area: {shape.get_area()}")
-    print()
+        logger.info(f"{shape.__class__.__name__} area: {shape.get_area()}")
+    logger.info()
     
     # Example 2: Birds
-    print("Example 2: Bird Hierarchy")
-    print("-" * 70)
+    logger.info("Example 2: Bird Hierarchy")
+    logger.info("-" * 70)
     
-    print("❌ BAD: Penguin cannot substitute Bird")
+    logger.info("❌ BAD: Penguin cannot substitute Bird")
     try:
         penguin = BadPenguin()
         penguin.fly()  # This will raise exception!
     except NotImplementedError as e:
-        print(f"Error: {e}")
-    print()
+        logger.info(f"Error: {e}")
+    logger.info()
     
-    print("✅ GOOD: All birds can move (substitutable)")
+    logger.info("✅ GOOD: All birds can move (substitutable)")
     birds = [
         Sparrow(),
         Penguin(),
     ]
     
     for bird in birds:
-        print(f"{bird.__class__.__name__}: ", end="")
+        logger.info(f"{bird.__class__.__name__}: ")
         bird.move()
-    print()
+    logger.info()
     
     # Example 3: Collections
-    print("Example 3: Collection Substitution")
-    print("-" * 70)
+    logger.info("Example 3: Collection Substitution")
+    logger.info("-" * 70)
     
     mutable = ListCollection()
     mutable.add("Item 1")
@@ -269,40 +271,40 @@ def main() -> None:
     immutable = ImmutableList(["Item A", "Item B"])
     
     # Both can be used as ReadOnlyCollection
-    print("Processing mutable collection:")
+    logger.info("Processing mutable collection:")
     process_collection(mutable)
     
-    print("\nProcessing immutable collection:")
+    logger.info("\nProcessing immutable collection:")
     process_collection(immutable)
-    print()
+    logger.info()
     
-    print("=" * 70)
-    print("\nPrinciple Summary:")
-    print("\nDefinition:")
-    print("  Objects of a superclass should be replaceable with")
-    print("  objects of its subclasses without breaking the application.")
-    print("  Subtypes must be substitutable for their base types.")
-    print("\nKey Rules:")
-    print("  - Preconditions cannot be strengthened in subtypes")
-    print("  - Postconditions cannot be weakened in subtypes")
-    print("  - Invariants of supertype must be preserved")
-    print("  - Subtypes should not throw new exceptions")
-    print("\nKey Benefits:")
-    print("  - Polymorphism works correctly")
-    print("  - Code reuse without breaking behavior")
-    print("  - Easier to maintain and extend")
-    print("  - Fewer bugs from unexpected behavior")
-    print("\nCommon Violations:")
-    print("  - Throwing exceptions in overridden methods")
-    print("  - Changing method behavior unexpectedly")
-    print("  - Strengthening preconditions")
-    print("  - Weakening postconditions")
-    print("\nHow to Apply:")
-    print("  1. Design contracts carefully")
-    print("  2. Use abstract base classes")
-    print("  3. Test substitutability")
-    print("  4. Avoid inheritance when composition is better")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPrinciple Summary:")
+    logger.info("\nDefinition:")
+    logger.info("  Objects of a superclass should be replaceable with")
+    logger.info("  objects of its subclasses without breaking the application.")
+    logger.info("  Subtypes must be substitutable for their base types.")
+    logger.info("\nKey Rules:")
+    logger.info("  - Preconditions cannot be strengthened in subtypes")
+    logger.info("  - Postconditions cannot be weakened in subtypes")
+    logger.info("  - Invariants of supertype must be preserved")
+    logger.info("  - Subtypes should not throw new exceptions")
+    logger.info("\nKey Benefits:")
+    logger.info("  - Polymorphism works correctly")
+    logger.info("  - Code reuse without breaking behavior")
+    logger.info("  - Easier to maintain and extend")
+    logger.info("  - Fewer bugs from unexpected behavior")
+    logger.info("\nCommon Violations:")
+    logger.info("  - Throwing exceptions in overridden methods")
+    logger.info("  - Changing method behavior unexpectedly")
+    logger.info("  - Strengthening preconditions")
+    logger.info("  - Weakening postconditions")
+    logger.info("\nHow to Apply:")
+    logger.info("  1. Design contracts carefully")
+    logger.info("  2. Use abstract base classes")
+    logger.info("  3. Test substitutability")
+    logger.info("  4. Avoid inheritance when composition is better")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

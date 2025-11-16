@@ -1,0 +1,12 @@
+{
+  "name": "knowledge_extraction",
+  "display_name": "Knowledge Extraction",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_97_knowledge_management",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

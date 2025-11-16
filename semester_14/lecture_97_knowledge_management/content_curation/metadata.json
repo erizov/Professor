@@ -1,0 +1,12 @@
+{
+  "name": "content_curation",
+  "display_name": "Content Curation",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_97_knowledge_management",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

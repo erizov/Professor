@@ -1,0 +1,12 @@
+{
+  "name": "contribution_management",
+  "display_name": "Contribution Management",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_102_community_management",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

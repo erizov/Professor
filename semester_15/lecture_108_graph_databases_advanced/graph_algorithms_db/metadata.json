@@ -1,0 +1,12 @@
+{
+  "name": "graph_algorithms_db",
+  "display_name": "Graph Algorithms Db",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_108_graph_databases_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

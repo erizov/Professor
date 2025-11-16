@@ -6,7 +6,10 @@ import java.util.*;
  * Time Complexity: O(m * n)
  * Space Complexity: O(m * n)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static int lcsLength(String s1, String s2) {
         int m = s1.length();
@@ -64,14 +67,14 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("LONGEST COMMON SUBSEQUENCE (LCS) DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("LONGEST COMMON SUBSEQUENCE (LCS) DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1
-        System.out.println("Example 1: Basic LCS");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Basic LCS");
+        logger.info("-".repeat(70));
         
         String s1 = "ABCDGH";
         String s2 = "AEDFHR";
@@ -79,15 +82,15 @@ public class Algorithm {
         int length = lcsLength(s1, s2);
         String sequence = lcsSequence(s1, s2);
         
-        System.out.println("String 1: " + s1);
-        System.out.println("String 2: " + s2);
-        System.out.println("LCS Length: " + length);
-        System.out.println("LCS Sequence: " + sequence);
-        System.out.println();
+        logger.info("String 1: " + s1);
+        logger.info("String 2: " + s2);
+        logger.info("LCS Length: " + length);
+        logger.info("LCS Sequence: " + sequence);
+        logger.info();
         
         // Example 2
-        System.out.println("Example 2: Another Example");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Another Example");
+        logger.info("-".repeat(70));
         
         String s3 = "AGGTAB";
         String s4 = "GXTXAYB";
@@ -95,21 +98,20 @@ public class Algorithm {
         int length2 = lcsLength(s3, s4);
         String sequence2 = lcsSequence(s3, s4);
         
-        System.out.println("String 1: " + s3);
-        System.out.println("String 2: " + s4);
-        System.out.println("LCS Length: " + length2);
-        System.out.println("LCS Sequence: " + sequence2);
-        System.out.println();
+        logger.info("String 1: " + s3);
+        logger.info("String 2: " + s4);
+        logger.info("LCS Length: " + length2);
+        logger.info("LCS Sequence: " + sequence2);
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Time:  O(m * n)");
-        System.out.println("  Space: O(m * n)");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Time:  O(m * n)");
+        logger.info("  Space: O(m * n)");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }
 }
-

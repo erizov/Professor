@@ -1,0 +1,12 @@
+{
+  "name": "mixed_precision_training",
+  "display_name": "Mixed Precision Training",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_65_llm_training_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

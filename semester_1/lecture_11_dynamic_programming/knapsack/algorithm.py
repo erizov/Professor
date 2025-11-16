@@ -13,6 +13,8 @@ from typing import List, Tuple
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 def knapsack_01(weights: List[int], values: List[int], 
@@ -120,14 +122,14 @@ def knapsack_fractional(weights: List[int], values: List[int],
 
 def main() -> None:
     """Demonstration of Knapsack Problem."""
-    print("=" * 70)
-    print("0/1 KNAPSACK PROBLEM DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("0/1 KNAPSACK PROBLEM DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic 0/1 knapsack
-    print("Example 1: Basic 0/1 Knapsack")
-    print("-" * 70)
+    logger.info("Example 1: Basic 0/1 Knapsack")
+    logger.info("-" * 70)
     
     weights1 = [10, 20, 30]
     values1 = [60, 100, 120]
@@ -135,19 +137,19 @@ def main() -> None:
     
     max_value, selected = knapsack_01(weights1, values1, capacity1)
     
-    print(f"Weights: {weights1}")
-    print(f"Values: {values1}")
-    print(f"Capacity: {capacity1}")
-    print(f"Maximum value: {max_value}")
-    print(f"Selected items (indices): {selected}")
-    print(f"Selected weights: {[weights1[i] for i in selected]}")
-    print(f"Selected values: {[values1[i] for i in selected]}")
-    print(f"Total weight: {sum(weights1[i] for i in selected)}")
-    print()
+    logger.info(f"Weights: {weights1}")
+    logger.info(f"Values: {values1}")
+    logger.info(f"Capacity: {capacity1}")
+    logger.info(f"Maximum value: {max_value}")
+    logger.info(f"Selected items (indices): {selected}")
+    logger.info(f"Selected weights: {[weights1[i] for i in selected]}")
+    logger.info(f"Selected values: {[values1[i] for i in selected]}")
+    logger.info(f"Total weight: {sum(weights1[i] for i in selected)}")
+    logger.info()
     
     # Example 2: Larger example
-    print("Example 2: Larger Example")
-    print("-" * 70)
+    logger.info("Example 2: Larger Example")
+    logger.info("-" * 70)
     
     weights2 = [2, 3, 4, 5]
     values2 = [3, 4, 5, 6]
@@ -155,16 +157,16 @@ def main() -> None:
     
     max_value2, selected2 = knapsack_01(weights2, values2, capacity2)
     
-    print(f"Weights: {weights2}")
-    print(f"Values: {values2}")
-    print(f"Capacity: {capacity2}")
-    print(f"Maximum value: {max_value2}")
-    print(f"Selected items: {selected2}")
-    print()
+    logger.info(f"Weights: {weights2}")
+    logger.info(f"Values: {values2}")
+    logger.info(f"Capacity: {capacity2}")
+    logger.info(f"Maximum value: {max_value2}")
+    logger.info(f"Selected items: {selected2}")
+    logger.info()
     
     # Example 3: Space-optimized version
-    print("Example 3: Space-Optimized Version")
-    print("-" * 70)
+    logger.info("Example 3: Space-Optimized Version")
+    logger.info("-" * 70)
     
     weights3 = [1, 3, 4, 5]
     values3 = [1, 4, 5, 7]
@@ -173,17 +175,17 @@ def main() -> None:
     value_standard = knapsack_01(weights3, values3, capacity3)[0]
     value_optimized = knapsack_01_optimized(weights3, values3, capacity3)
     
-    print(f"Weights: {weights3}")
-    print(f"Values: {values3}")
-    print(f"Capacity: {capacity3}")
-    print(f"Max value (standard): {value_standard}")
-    print(f"Max value (optimized): {value_optimized}")
-    print("Note: Optimized uses O(capacity) space instead of O(n*capacity)")
-    print()
+    logger.info(f"Weights: {weights3}")
+    logger.info(f"Values: {values3}")
+    logger.info(f"Capacity: {capacity3}")
+    logger.info(f"Max value (standard): {value_standard}")
+    logger.info(f"Max value (optimized): {value_optimized}")
+    logger.info("Note: Optimized uses O(capacity) space instead of O(n*capacity)")
+    logger.info()
     
     # Example 4: 0/1 vs Fractional
-    print("Example 4: 0/1 Knapsack vs Fractional Knapsack")
-    print("-" * 70)
+    logger.info("Example 4: 0/1 Knapsack vs Fractional Knapsack")
+    logger.info("-" * 70)
     
     weights4 = [10, 20, 30]
     values4 = [60, 100, 120]
@@ -192,17 +194,17 @@ def main() -> None:
     value_01 = knapsack_01(weights4, values4, capacity4)[0]
     value_fractional = knapsack_fractional(weights4, values4, capacity4)
     
-    print(f"Weights: {weights4}")
-    print(f"Values: {values4}")
-    print(f"Capacity: {capacity4}")
-    print(f"0/1 Knapsack (DP): {value_01}")
-    print(f"Fractional Knapsack (Greedy): {value_fractional}")
-    print("Note: Fractional allows taking parts of items (higher value)")
-    print()
+    logger.info(f"Weights: {weights4}")
+    logger.info(f"Values: {values4}")
+    logger.info(f"Capacity: {capacity4}")
+    logger.info(f"0/1 Knapsack (DP): {value_01}")
+    logger.info(f"Fractional Knapsack (Greedy): {value_fractional}")
+    logger.info("Note: Fractional allows taking parts of items (higher value)")
+    logger.info()
     
     # Example 5: Real-world scenario
-    print("Example 5: Real-world Scenario - Resource Allocation")
-    print("-" * 70)
+    logger.info("Example 5: Real-world Scenario - Resource Allocation")
+    logger.info("-" * 70)
     
     # Projects with costs and profits
     project_costs = [5, 10, 15, 20, 25]  # Budget required
@@ -213,19 +215,19 @@ def main() -> None:
                                                 project_profits, 
                                                 budget)
     
-    print("Projects:")
+    logger.info("Projects:")
     for i in range(len(project_costs)):
-        print(f"  Project {i}: Cost={project_costs[i]}, "
+        logger.info(f"  Project {i}: Cost={project_costs[i]}, "
               f"Profit={project_profits[i]}")
-    print(f"\nBudget: {budget}")
-    print(f"Maximum profit: {max_profit}")
-    print(f"Selected projects: {selected_projects}")
-    print(f"Total cost: {sum(project_costs[i] for i in selected_projects)}")
-    print()
+    logger.info(f"\nBudget: {budget}")
+    logger.info(f"Maximum profit: {max_profit}")
+    logger.info(f"Selected projects: {selected_projects}")
+    logger.info(f"Total cost: {sum(project_costs[i] for i in selected_projects)}")
+    logger.info()
     
     # Example 6: Performance measurement
-    print("Example 6: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 6: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Knapsack")
     
@@ -242,44 +244,43 @@ def main() -> None:
     
     for n, cap in test_cases:
         _, metrics = timer.measure(test_knapsack, n, cap)
-        print(f"n={n}, capacity={cap}:")
-        print(f"  Time: {metrics['execution_time_ms']:.3f} ms")
+        logger.info(f"n={n}, capacity={cap}:")
+        logger.info(f"  Time: {metrics['execution_time_ms']:.3f} ms")
     
-    print()
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O(n * capacity)")
-    print("  Space: O(n * capacity) - standard")
-    print("        O(capacity) - optimized")
-    print("\nKey Advantages:")
-    print("  - Optimal solution")
-    print("  - Can be space-optimized")
-    print("  - Handles integer weights/values")
-    print("  - Can reconstruct solution")
-    print("\nKey Disadvantages:")
-    print("  - Pseudo-polynomial (depends on capacity)")
-    print("  - Not efficient for large capacities")
-    print("  - Only works for integer weights")
-    print("\nWhen to Use:")
-    print("  - Resource allocation")
-    print("  - Budget optimization")
-    print("  - Portfolio selection")
-    print("  - Cutting stock problem")
-    print("  - Project selection")
-    print("\nVariations:")
-    print("  - Unbounded Knapsack (unlimited items)")
-    print("  - Multiple Knapsack")
-    print("  - Fractional Knapsack (greedy)")
-    print("  - Subset Sum (special case)")
-    print("\nCommon Use Cases:")
-    print("  - Resource allocation")
-    print("  - Budget planning")
-    print("  - Investment portfolio")
-    print("  - Project selection")
-    print("  - Cutting stock problem")
-    print("=" * 70)
+    logger.info()
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  O(n * capacity)")
+    logger.info("  Space: O(n * capacity) - standard")
+    logger.info("        O(capacity) - optimized")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Optimal solution")
+    logger.info("  - Can be space-optimized")
+    logger.info("  - Handles integer weights/values")
+    logger.info("  - Can reconstruct solution")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Pseudo-polynomial (depends on capacity)")
+    logger.info("  - Not efficient for large capacities")
+    logger.info("  - Only works for integer weights")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Resource allocation")
+    logger.info("  - Budget optimization")
+    logger.info("  - Portfolio selection")
+    logger.info("  - Cutting stock problem")
+    logger.info("  - Project selection")
+    logger.info("\nVariations:")
+    logger.info("  - Unbounded Knapsack (unlimited items)")
+    logger.info("  - Multiple Knapsack")
+    logger.info("  - Fractional Knapsack (greedy)")
+    logger.info("  - Subset Sum (special case)")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Resource allocation")
+    logger.info("  - Budget planning")
+    logger.info("  - Investment portfolio")
+    logger.info("  - Project selection")
+    logger.info("  - Cutting stock problem")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":
     main()
-

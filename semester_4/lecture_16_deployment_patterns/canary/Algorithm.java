@@ -11,6 +11,7 @@ enum DeploymentStatus {
     PENDING, CANARY, ROLLING_OUT, COMPLETE, ROLLED_BACK
 }
 
+import java.util.logging.Logger;
 class CanaryDeployment {
     String version;
     DeploymentStatus status;
@@ -52,7 +53,7 @@ class CanaryDeploymentManager {
     
     boolean increaseTraffic(double increment) {
         if (canary == null) {
-            System.out.println("Error: No canary deployment");
+            logger.info("Error: No canary deployment");
             return false;
         }
         
@@ -105,7 +106,7 @@ class CanaryDeploymentManager {
     
     boolean rollback() {
         if (canary == null) {
-            System.out.println("Error: No canary deployment to rollback");
+            logger.info("Error: No canary deployment to rollback");
             return false;
         }
         
@@ -151,38 +152,40 @@ class CanaryDeploymentManager {
 }
 
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("CANARY DEPLOYMENT PATTERN DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("CANARY DEPLOYMENT PATTERN DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Initial Canary Deployment
-        System.out.println("Example 1: Deploy Canary with 5% Traffic");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Deploy Canary with 5% Traffic");
+        logger.info("-".repeat(70));
         
         CanaryDeploymentManager manager = new CanaryDeploymentManager("v1.0.0");
         manager.deployCanary("v1.1.0", 5.0);
         System.out.printf("Status: %s%n", manager.getStatus());
-        System.out.println();
+        logger.info();
         
         // Example 2: Request Routing
-        System.out.println("Example 2: Request Routing Based on Traffic Split");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Request Routing Based on Traffic Split");
+        logger.info("-".repeat(70));
         
         String[] users = {"user1", "user2", "user3", "user4", "user5"};
         for (String user : users) {
             String version = manager.routeRequest(user);
             System.out.printf("User %s -> %s%n", user, version);
         }
-        System.out.println();
+        logger.info();
         
         // Example 3: Monitor Metrics
-        System.out.println("Example 3: Monitor Canary Metrics");
-        System.out.println("-".repeat(70));
+        logger.info("Example 3: Monitor Canary Metrics");
+        logger.info("-".repeat(70));
         
         Map<String, Double> baselineMetrics = new HashMap<>();
         baselineMetrics.put("error_rate", 0.01);
@@ -192,23 +195,23 @@ public class Algorithm {
         manager.updateMetrics(0.005, 95.0, 1050.0);
         boolean shouldRollback = manager.shouldRollback(baselineMetrics, 0.1);
         
-        System.out.println("Canary metrics: error_rate=0.005, latency_ms=95.0, throughput=1050.0");
+        logger.info("Canary metrics: error_rate=0.005, latency_ms=95.0, throughput=1050.0");
         System.out.printf("Should rollback: %s (canary is performing well)%n", shouldRollback);
-        System.out.println();
+        logger.info();
         
         // Example 4: Increase Traffic
-        System.out.println("Example 4: Gradually Increase Traffic");
-        System.out.println("-".repeat(70));
+        logger.info("Example 4: Gradually Increase Traffic");
+        logger.info("-".repeat(70));
         
         manager.increaseTraffic(10.0);  // 15%
         manager.increaseTraffic(15.0);  // 30%
         manager.increaseTraffic(20.0);  // 50%
         manager.increaseTraffic(50.0);  // 100%
-        System.out.println();
+        logger.info();
         
         // Example 5: Rollback on Issues
-        System.out.println("Example 5: Rollback on High Error Rate");
-        System.out.println("-".repeat(70));
+        logger.info("Example 5: Rollback on High Error Rate");
+        logger.info("-".repeat(70));
         
         CanaryDeploymentManager manager2 = new CanaryDeploymentManager("v1.0.0");
         manager2.deployCanary("v1.2.0", 10.0);
@@ -216,31 +219,31 @@ public class Algorithm {
         manager2.updateMetrics(0.15, 200.0, 800.0);
         shouldRollback = manager2.shouldRollback(baselineMetrics, 0.1);
         
-        System.out.println("Canary error rate: 15% (baseline: 1%)");
+        logger.info("Canary error rate: 15% (baseline: 1%)");
         System.out.printf("Should rollback: %s%n", shouldRollback);
         
         if (shouldRollback) {
             manager2.rollback();
         }
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern Summary:");
-        System.out.println("\nIntent:");
-        System.out.println("  Gradually roll out new version to a small subset of users");
-        System.out.println("  before full deployment. Monitor metrics and rollback if needed.");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Reduced risk of bad deployments");
-        System.out.println("  - Real-world testing with production traffic");
-        System.out.println("  - Gradual rollout");
-        System.out.println("  - Automatic rollback capability");
-        System.out.println("\nWhen to Use:");
-        System.out.println("  - High-traffic applications");
-        System.out.println("  - When gradual rollout is preferred");
-        System.out.println("  - When monitoring is available");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern Summary:");
+        logger.info("\nIntent:");
+        logger.info("  Gradually roll out new version to a small subset of users");
+        logger.info("  before full deployment. Monitor metrics and rollback if needed.");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Reduced risk of bad deployments");
+        logger.info("  - Real-world testing with production traffic");
+        logger.info("  - Gradual rollout");
+        logger.info("  - Automatic rollback capability");
+        logger.info("\nWhen to Use:");
+        logger.info("  - High-traffic applications");
+        logger.info("  - When gradual rollout is preferred");
+        logger.info("  - When monitoring is available");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

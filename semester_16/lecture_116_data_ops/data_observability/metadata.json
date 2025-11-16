@@ -1,0 +1,12 @@
+{
+  "name": "data_observability",
+  "display_name": "Data Observability",
+  "category": "Advanced Graduate Level",
+  "semester": 16,
+  "lecture": "lecture_116_data_ops",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

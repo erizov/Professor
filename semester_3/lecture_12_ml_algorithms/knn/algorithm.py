@@ -17,6 +17,8 @@ import math
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 def euclidean_distance(point1: List[float], point2: List[float]) -> float:
@@ -112,14 +114,14 @@ class KNNClassifier:
 
 def main() -> None:
     """Demonstration of K-Nearest Neighbors."""
-    print("=" * 70)
-    print("K-NEAREST NEIGHBORS (KNN) DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("K-NEAREST NEIGHBORS (KNN) DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Simple 2D classification
-    print("Example 1: 2D Classification")
-    print("-" * 70)
+    logger.info("Example 1: 2D Classification")
+    logger.info("-" * 70)
     
     # Training data: [x, y] coordinates with labels (0 or 1)
     X_train = [
@@ -146,33 +148,33 @@ def main() -> None:
     predictions = knn.predict(X_test)
     accuracy = knn.score(X_test, y_test)
     
-    print(f"Training samples: {len(X_train)}")
-    print(f"Test samples: {len(X_test)}")
-    print(f"k = {knn.k}")
-    print()
-    print("Predictions:")
+    logger.info(f"Training samples: {len(X_train)}")
+    logger.info(f"Test samples: {len(X_test)}")
+    logger.info(f"k = {knn.k}")
+    logger.info()
+    logger.info("Predictions:")
     for i, (x, pred, true) in enumerate(
         zip(X_test, predictions, y_test), 1
     ):
         match = "✓" if pred == true else "✗"
-        print(f"  {i}. {x} → Predicted: {pred}, True: {true} {match}")
-    print(f"\nAccuracy: {accuracy:.2%}")
-    print()
+        logger.info(f"  {i}. {x} → Predicted: {pred}, True: {true} {match}")
+    logger.info(f"\nAccuracy: {accuracy:.2%}")
+    logger.info()
     
     # Example 2: Effect of k
-    print("Example 2: Effect of Different k Values")
-    print("-" * 70)
+    logger.info("Example 2: Effect of Different k Values")
+    logger.info("-" * 70)
     
     for k in [1, 3, 5, 7]:
         knn_k = KNNClassifier(k=k)
         knn_k.fit(X_train, y_train)
         acc = knn_k.score(X_test, y_test)
-        print(f"k={k}: Accuracy = {acc:.2%}")
-    print()
+        logger.info(f"k={k}: Accuracy = {acc:.2%}")
+    logger.info()
     
     # Example 3: Performance measurement
-    print("Example 3: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 3: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("KNN Classification")
     
@@ -219,24 +221,24 @@ def main() -> None:
     
     accuracy_large = knn_large.score(X_test_large, y_test_large)
     
-    print(f"Dataset size: {len(X_large)} samples")
-    print(f"Training time: {train_metrics['execution_time_ms']:.3f} ms")
-    print(f"Prediction time: {test_metrics['execution_time_ms']:.3f} ms")
-    print(f"Memory used: {test_metrics['memory_peak_kb']:.2f} KB")
-    print(f"Accuracy: {accuracy_large:.2%}")
-    print()
+    logger.info(f"Dataset size: {len(X_large)} samples")
+    logger.info(f"Training time: {train_metrics['execution_time_ms']:.3f} ms")
+    logger.info(f"Prediction time: {test_metrics['execution_time_ms']:.3f} ms")
+    logger.info(f"Memory used: {test_metrics['memory_peak_kb']:.2f} KB")
+    logger.info(f"Accuracy: {accuracy_large:.2%}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Training Time:  O(1) - just stores data")
-    print("  Prediction Time: O(n*d) - n samples, d dimensions")
-    print("  Space: O(n*d) - stores all training data")
-    print("\nKey Points:")
-    print("  - No training phase (lazy learning)")
-    print("  - Slow prediction for large datasets")
-    print("  - Sensitive to feature scaling")
-    print("  - Works well for small datasets")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Training Time:  O(1) - just stores data")
+    logger.info("  Prediction Time: O(n*d) - n samples, d dimensions")
+    logger.info("  Space: O(n*d) - stores all training data")
+    logger.info("\nKey Points:")
+    logger.info("  - No training phase (lazy learning)")
+    logger.info("  - Slow prediction for large datasets")
+    logger.info("  - Sensitive to feature scaling")
+    logger.info("  - Works well for small datasets")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

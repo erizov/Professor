@@ -1,0 +1,12 @@
+{
+  "name": "community_platforms",
+  "display_name": "Community Platforms",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_102_community_management",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

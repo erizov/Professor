@@ -1,0 +1,12 @@
+{
+  "name": "event_sourcing_advanced",
+  "display_name": "Event Sourcing Advanced",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_60_system_design_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

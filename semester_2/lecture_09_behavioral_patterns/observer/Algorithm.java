@@ -5,7 +5,10 @@ import java.util.*;
  * 
  * One-to-many dependency between objects.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     interface Observer {
         void update(String data);
@@ -53,30 +56,30 @@ public class Algorithm {
         }
         
         public void update(String data) {
-            System.out.println(name + " received: " + data);
+            logger.info(name + " received: " + data);
         }
     }
     
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("OBSERVER DESIGN PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("OBSERVER DESIGN PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         NewsAgency agency = new NewsAgency();
         agency.attach(new NewsChannel("CNN"));
         agency.attach(new NewsChannel("BBC"));
         
         agency.setNews("Breaking: New technology breakthrough!");
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: One-to-many dependency");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: One-to-many dependency");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

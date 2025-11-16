@@ -3,7 +3,10 @@
  * 
  * Passes request along chain of handlers.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     abstract static class Handler {
         protected Handler nextHandler;
@@ -39,21 +42,21 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("CHAIN OF RESPONSIBILITY PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("CHAIN OF RESPONSIBILITY PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         Handler monkey = new MonkeyHandler();
         Handler dog = new DogHandler();
         monkey.setNext(dog);
         
-        System.out.println(monkey.handle("Banana"));
-        System.out.println(monkey.handle("MeatBall"));
-        System.out.println();
+        logger.info(monkey.handle("Banana"));
+        logger.info(monkey.handle("MeatBall"));
+        logger.info();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: Passes request along chain");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: Passes request along chain");
+        logger.info("=".repeat(70));
     }
 }

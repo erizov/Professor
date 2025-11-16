@@ -1,0 +1,12 @@
+{
+  "name": "os_security_models",
+  "display_name": "Os Security Models",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_55_advanced_os",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -11,6 +11,8 @@ from pathlib import Path
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 def nft_standards():
@@ -20,19 +22,19 @@ def nft_standards():
     Time Complexity: Varies
     Space Complexity: Varies
     """
-    print("=" * 70)
-    print("NFT STANDARDS DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("NFT STANDARDS DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
-    print("Implementation in progress...")
-    print()
+    logger.info("Implementation in progress...")
+    logger.info()
     
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  Varies")
-    print("  Space: Varies")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  Varies")
+    logger.info("  Space: Varies")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

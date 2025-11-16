@@ -1,0 +1,12 @@
+{
+  "name": "streaming_analytics",
+  "display_name": "Streaming Analytics",
+  "category": "Advanced Graduate Level",
+  "semester": 16,
+  "lecture": "lecture_114_real_time_analytics",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -14,7 +14,10 @@ import java.util.Random;
  * Stable: Yes (with stable sub-sort)
  * Adaptive: No
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     /**
      * Sort array using bucket sort.
@@ -126,42 +129,42 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("BUCKET SORT DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("BUCKET SORT DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Floating point numbers
-        System.out.println("Example 1: Sorting Floating Point Numbers");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Sorting Floating Point Numbers");
+        logger.info("-".repeat(70));
         double[] data1 = {0.78, 0.17, 0.39, 0.26, 0.72, 0.94, 
                          0.21, 0.12, 0.23, 0.68};
-        System.out.println("Original: " + Arrays.toString(data1));
+        logger.info("Original: " + Arrays.toString(data1));
         double[] result1 = bucketSort(data1.clone(), 5);
-        System.out.println("Sorted:   " + Arrays.toString(result1));
-        System.out.println();
+        logger.info("Sorted:   " + Arrays.toString(result1));
+        logger.info();
         
         // Example 2: Integers
-        System.out.println("Example 2: Sorting Integers");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Sorting Integers");
+        logger.info("-".repeat(70));
         int[] data2 = {42, 32, 33, 52, 37, 47, 51};
-        System.out.println("Original: " + Arrays.toString(data2));
+        logger.info("Original: " + Arrays.toString(data2));
         int[] result2 = bucketSortIntegers(data2.clone());
-        System.out.println("Sorted:   " + Arrays.toString(result2));
-        System.out.println();
+        logger.info("Sorted:   " + Arrays.toString(result2));
+        logger.info();
         
         // Example 3: Large range
-        System.out.println("Example 3: Large Range");
-        System.out.println("-".repeat(70));
+        logger.info("Example 3: Large Range");
+        logger.info("-".repeat(70));
         double[] data3 = {1.5, 8.9, 3.2, 7.4, 2.1, 9.8, 4.6};
-        System.out.println("Original: " + Arrays.toString(data3));
+        logger.info("Original: " + Arrays.toString(data3));
         double[] result3 = bucketSort(data3.clone(), 5);
-        System.out.println("Sorted:   " + Arrays.toString(result3));
-        System.out.println();
+        logger.info("Sorted:   " + Arrays.toString(result3));
+        logger.info();
         
         // Example 4: Performance measurement
-        System.out.println("Example 4: Performance Measurement");
-        System.out.println("-".repeat(70));
+        logger.info("Example 4: Performance Measurement");
+        logger.info("-".repeat(70));
         
         Random rand = new Random(42);
         int[] sizes = {100, 1000, 10000};
@@ -180,29 +183,29 @@ public class Algorithm {
             System.out.printf("n=%5d: %8.3f ms%n", size, ms);
         }
         
-        System.out.println();
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Time:  O(n + k) average");
-        System.out.println("         O(n²) worst case");
-        System.out.println("  Space: O(n + k)");
-        System.out.println("  Stable: Yes");
-        System.out.println("  Adaptive: No");
-        System.out.println("\nKey Points:");
-        System.out.println("  + Linear average time");
-        System.out.println("  + Good for floating points");
-        System.out.println("  + Can be stable");
-        System.out.println("  + Parallelizable");
-        System.out.println("  - Depends on distribution");
-        System.out.println("  - Requires knowledge of range");
-        System.out.println("\nWhen to use:");
-        System.out.println("  • Uniform distribution");
-        System.out.println("  • Know input range");
-        System.out.println("  • Sorting floats");
-        System.out.println("\nWhen NOT to use:");
-        System.out.println("  • Non-uniform distribution");
-        System.out.println("  • Unknown range");
-        System.out.println("=".repeat(70));
+        logger.info();
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Time:  O(n + k) average");
+        logger.info("         O(n²) worst case");
+        logger.info("  Space: O(n + k)");
+        logger.info("  Stable: Yes");
+        logger.info("  Adaptive: No");
+        logger.info("\nKey Points:");
+        logger.info("  + Linear average time");
+        logger.info("  + Good for floating points");
+        logger.info("  + Can be stable");
+        logger.info("  + Parallelizable");
+        logger.info("  - Depends on distribution");
+        logger.info("  - Requires knowledge of range");
+        logger.info("\nWhen to use:");
+        logger.info("  • Uniform distribution");
+        logger.info("  • Know input range");
+        logger.info("  • Sorting floats");
+        logger.info("\nWhen NOT to use:");
+        logger.info("  • Non-uniform distribution");
+        logger.info("  • Unknown range");
+        logger.info("=".repeat(70));
         
         long endTime = System.nanoTime();
         double totalMs = (endTime - startTime) / 1_000_000.0;

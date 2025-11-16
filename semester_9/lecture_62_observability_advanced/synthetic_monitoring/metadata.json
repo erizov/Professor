@@ -1,0 +1,12 @@
+{
+  "name": "synthetic_monitoring",
+  "display_name": "Synthetic Monitoring",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_62_observability_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

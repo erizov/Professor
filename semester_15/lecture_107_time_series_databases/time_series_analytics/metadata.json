@@ -1,0 +1,12 @@
+{
+  "name": "time_series_analytics",
+  "display_name": "Time Series Analytics",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_107_time_series_databases",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -5,7 +5,10 @@ import java.util.function.Supplier;
  * 
  * Automatically retries failed operations.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class RetryHandler {
         private int maxAttempts;
@@ -38,26 +41,26 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("RETRY PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("RETRY PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         RetryHandler retry = new RetryHandler(3, 100);
         
         try {
             String result = retry.execute(() -> "Success");
-            System.out.println("Result: " + result);
+            logger.info("Result: " + result);
         } catch (Exception e) {
-            System.out.println("Failed: " + e.getMessage());
+            logger.info("Failed: " + e.getMessage());
         }
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: Retries failed operations");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: Retries failed operations");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

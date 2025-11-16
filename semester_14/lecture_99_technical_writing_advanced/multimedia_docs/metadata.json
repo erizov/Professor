@@ -1,0 +1,12 @@
+{
+  "name": "multimedia_docs",
+  "display_name": "Multimedia Docs",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_99_technical_writing_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

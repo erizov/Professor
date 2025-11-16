@@ -1,0 +1,12 @@
+{
+  "name": "zero_knowledge_proofs",
+  "display_name": "Zero Knowledge Proofs",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_91_blockchain_privacy",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

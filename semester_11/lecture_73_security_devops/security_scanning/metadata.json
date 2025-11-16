@@ -1,0 +1,12 @@
+{
+  "name": "security_scanning",
+  "display_name": "Security Scanning",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_73_security_devops",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

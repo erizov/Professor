@@ -1,0 +1,12 @@
+{
+  "name": "quantum_verification",
+  "display_name": "Quantum Verification",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_83_quantum_software",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

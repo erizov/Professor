@@ -1,0 +1,12 @@
+{
+  "name": "kernel_tuning",
+  "display_name": "Kernel Tuning",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_56_os_performance",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

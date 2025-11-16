@@ -5,7 +5,10 @@ import java.util.*;
  * 
  * Provides way to access elements sequentially.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     interface Iterator<T> {
         boolean hasNext();
@@ -51,10 +54,10 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("ITERATOR DESIGN PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("ITERATOR DESIGN PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         BookCollection collection = new BookCollection();
         collection.addBook("Design Patterns");
@@ -62,14 +65,14 @@ public class Algorithm {
         collection.addBook("Refactoring");
         
         Iterator<String> iterator = collection.createIterator();
-        System.out.println("Books:");
+        logger.info("Books:");
         while (iterator.hasNext()) {
-            System.out.println("  - " + iterator.next());
+            logger.info("  - " + iterator.next());
         }
-        System.out.println();
+        logger.info();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: Sequential access to elements");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: Sequential access to elements");
+        logger.info("=".repeat(70));
     }
 }

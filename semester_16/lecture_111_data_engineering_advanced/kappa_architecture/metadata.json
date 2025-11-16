@@ -1,0 +1,12 @@
+{
+  "name": "kappa_architecture",
+  "display_name": "Kappa Architecture",
+  "category": "Advanced Graduate Level",
+  "semester": 16,
+  "lecture": "lecture_111_data_engineering_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

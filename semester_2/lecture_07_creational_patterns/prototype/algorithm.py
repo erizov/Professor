@@ -14,6 +14,8 @@ import copy
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 # Prototype Interface
@@ -120,14 +122,14 @@ class PrototypeRegistry:
 
 def main() -> None:
     """Demonstration of Prototype Pattern."""
-    print("=" * 70)
-    print("PROTOTYPE DESIGN PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("PROTOTYPE DESIGN PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Document Prototype
-    print("Example 1: Document Prototype")
-    print("-" * 70)
+    logger.info("Example 1: Document Prototype")
+    logger.info("-" * 70)
     
     # Create original document
     original_doc = Document(
@@ -138,21 +140,21 @@ def main() -> None:
     original_doc.add_page("Page 1: Introduction")
     original_doc.add_page("Page 2: Creational Patterns")
     
-    print(f"Original: {original_doc}")
-    print()
+    logger.info(f"Original: {original_doc}")
+    logger.info()
     
     # Clone document
     cloned_doc = original_doc.clone()
     cloned_doc.title = "Advanced Design Patterns"
     cloned_doc.add_page("Page 3: Advanced Patterns")
     
-    print(f"Original (unchanged): {original_doc}")
-    print(f"Clone (modified): {cloned_doc}")
-    print()
+    logger.info(f"Original (unchanged): {original_doc}")
+    logger.info(f"Clone (modified): {cloned_doc}")
+    logger.info()
     
     # Example 2: Shape Prototype
-    print("Example 2: Shape Prototype")
-    print("-" * 70)
+    logger.info("Example 2: Shape Prototype")
+    logger.info("-" * 70)
     
     # Create prototype shapes
     circle_prototype = Circle(10, 20, "red", 5)
@@ -168,18 +170,18 @@ def main() -> None:
     rect2 = rectangle_prototype.clone()
     rect2.y = 60
     
-    print(f"Original circle: {circle_prototype}")
-    print(f"Clone 1: {circle1}")
-    print(f"Clone 2 (modified): {circle2}")
-    print()
-    print(f"Original rectangle: {rectangle_prototype}")
-    print(f"Clone 1: {rect1}")
-    print(f"Clone 2 (modified): {rect2}")
-    print()
+    logger.info(f"Original circle: {circle_prototype}")
+    logger.info(f"Clone 1: {circle1}")
+    logger.info(f"Clone 2 (modified): {circle2}")
+    logger.info()
+    logger.info(f"Original rectangle: {rectangle_prototype}")
+    logger.info(f"Clone 1: {rect1}")
+    logger.info(f"Clone 2 (modified): {rect2}")
+    logger.info()
     
     # Example 3: Prototype Registry
-    print("Example 3: Prototype Registry")
-    print("-" * 70)
+    logger.info("Example 3: Prototype Registry")
+    logger.info("-" * 70)
     
     registry = PrototypeRegistry()
     
@@ -197,13 +199,13 @@ def main() -> None:
     rect3.width = 20
     rect3.height = 30
     
-    print(f"Created from registry: {circle3}")
-    print(f"Created from registry: {rect3}")
-    print()
+    logger.info(f"Created from registry: {circle3}")
+    logger.info(f"Created from registry: {rect3}")
+    logger.info()
     
     # Example 4: Performance measurement
-    print("Example 4: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 4: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Prototype")
     
@@ -214,34 +216,34 @@ def main() -> None:
         return doc.clone()
     
     result, metrics = timer.measure(clone_document)
-    print(f"Time to clone document: {metrics['execution_time_ms']:.3f} ms")
-    print()
+    logger.info(f"Time to clone document: {metrics['execution_time_ms']:.3f} ms")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Specify the kinds of objects to create using a prototypical")
-    print("  instance, and create new objects by copying this prototype.")
-    print("\nKey Advantages:")
-    print("  - Reduces object creation cost")
-    print("  - Hides complexity of creating new instances")
-    print("  - Allows adding/removing objects at runtime")
-    print("  - Alternative to inheritance for object configuration")
-    print("\nKey Disadvantages:")
-    print("  - Cloning complex objects can be difficult")
-    print("  - Deep vs shallow copy considerations")
-    print("  - Circular references can be problematic")
-    print("\nWhen to Use:")
-    print("  - Object creation is expensive")
-    print("  - Want to avoid subclassing")
-    print("  - Classes instantiated at runtime")
-    print("  - Need to configure objects dynamically")
-    print("\nCommon Use Cases:")
-    print("  - Document editors (clone templates)")
-    print("  - Game development (clone game objects)")
-    print("  - Database record copying")
-    print("  - Configuration objects")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Specify the kinds of objects to create using a prototypical")
+    logger.info("  instance, and create new objects by copying this prototype.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Reduces object creation cost")
+    logger.info("  - Hides complexity of creating new instances")
+    logger.info("  - Allows adding/removing objects at runtime")
+    logger.info("  - Alternative to inheritance for object configuration")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Cloning complex objects can be difficult")
+    logger.info("  - Deep vs shallow copy considerations")
+    logger.info("  - Circular references can be problematic")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Object creation is expensive")
+    logger.info("  - Want to avoid subclassing")
+    logger.info("  - Classes instantiated at runtime")
+    logger.info("  - Need to configure objects dynamically")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Document editors (clone templates)")
+    logger.info("  - Game development (clone game objects)")
+    logger.info("  - Database record copying")
+    logger.info("  - Configuration objects")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

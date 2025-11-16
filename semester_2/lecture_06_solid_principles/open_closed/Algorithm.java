@@ -3,7 +3,10 @@
  * 
  * Open for extension, closed for modification.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     // GOOD: Open for extension
     interface Shape {
@@ -57,10 +60,10 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("OPEN/CLOSED PRINCIPLE");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("OPEN/CLOSED PRINCIPLE");
+        logger.info("=".repeat(70));
+        logger.info();
         
         java.util.List<Shape> shapes = new java.util.ArrayList<>();
         shapes.add(new Rectangle(5, 3));
@@ -69,11 +72,11 @@ public class Algorithm {
         
         AreaCalculator calc = new AreaCalculator();
         double total = calc.calculateTotalArea(shapes);
-        System.out.println("Total area: " + total);
-        System.out.println();
+        logger.info("Total area: " + total);
+        logger.info();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPrinciple: Open for extension, closed for modification");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPrinciple: Open for extension, closed for modification");
+        logger.info("=".repeat(70));
     }
 }

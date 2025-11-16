@@ -6,7 +6,10 @@
  * Time Complexity: O(n*d*iter)
  * Space Complexity: O(d)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class LogisticRegression {
         private double[] weights;
@@ -107,14 +110,14 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("LOGISTIC REGRESSION DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("LOGISTIC REGRESSION DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Binary classification
-        System.out.println("Example 1: Binary Classification");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Binary Classification");
+        logger.info("-".repeat(70));
         
         int n = 100;
         double[][] X = new double[n][2];
@@ -141,13 +144,13 @@ public class Algorithm {
             System.out.printf("%.4f", model.weights[i]);
             if (i < model.weights.length - 1) System.out.print(", ");
         }
-        System.out.println("]");
+        logger.info("]");
         System.out.printf("Bias: %.4f%n", model.bias);
-        System.out.println();
+        logger.info();
         
         // Example 2: Probability predictions
-        System.out.println("Example 2: Probability Predictions");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Probability Predictions");
+        logger.info("-".repeat(70));
         
         double[][] testSamples = {
             {3, 3},
@@ -164,18 +167,18 @@ public class Algorithm {
             System.out.printf("  P(class=1) = %.4f%n", probas[i]);
             System.out.printf("  Predicted class: %d%n", predictions[i]);
         }
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Time:  O(n*d*iter)");
-        System.out.println("  Space: O(d)");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Probabilistic predictions");
-        System.out.println("  - Interpretable");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Time:  O(n*d*iter)");
+        logger.info("  Space: O(d)");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Probabilistic predictions");
+        logger.info("  - Interpretable");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

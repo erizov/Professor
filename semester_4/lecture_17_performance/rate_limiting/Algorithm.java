@@ -9,6 +9,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
+import java.util.logging.Logger;
 class RateLimitConfig {
     int maxRequests;
     double windowSeconds;
@@ -185,18 +186,20 @@ class FixedWindowRateLimiter implements RateLimiter {
 }
 
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     public static void main(String[] args) throws InterruptedException {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("RATE LIMITING PATTERN DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("RATE LIMITING PATTERN DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Token Bucket
-        System.out.println("Example 1: Token Bucket Rate Limiter");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Token Bucket Rate Limiter");
+        logger.info("-".repeat(70));
         
         RateLimitConfig config = new RateLimitConfig(5, 10.0);
         RateLimiter limiter = new TokenBucketRateLimiter(config);
@@ -214,11 +217,11 @@ public class Algorithm {
                             i + 1, status, remaining);
             Thread.sleep(100);
         }
-        System.out.println();
+        logger.info();
         
         // Example 2: Sliding Window
-        System.out.println("Example 2: Sliding Window Rate Limiter");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Sliding Window Rate Limiter");
+        logger.info("-".repeat(70));
         
         config = new RateLimitConfig(3, 5.0);
         limiter = new SlidingWindowRateLimiter(config);
@@ -236,16 +239,16 @@ public class Algorithm {
                             i + 1, status, remaining);
             Thread.sleep(500);
         }
-        System.out.println();
+        logger.info();
         
         // Example 3: Multiple Clients
-        System.out.println("Example 3: Rate Limiting Multiple Clients");
-        System.out.println("-".repeat(70));
+        logger.info("Example 3: Rate Limiting Multiple Clients");
+        logger.info("-".repeat(70));
         
         limiter = new TokenBucketRateLimiter(new RateLimitConfig(3, 5.0));
         
         String[] clients = {"client_a", "client_b", "client_c"};
-        System.out.println("Distributing requests across clients:");
+        logger.info("Distributing requests across clients:");
         
         for (int i = 0; i < 12; i++) {
             String client = clients[i % clients.length];
@@ -255,26 +258,26 @@ public class Algorithm {
             System.out.printf("  Request %d (%s): %s (remaining: %d)%n",
                             i + 1, client, status, remaining);
         }
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern Summary:");
-        System.out.println("\nIntent:");
-        System.out.println("  Controls the rate of requests sent or received to prevent");
-        System.out.println("  abuse, ensure fair usage, and protect system resources.");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Prevents abuse");
-        System.out.println("  - Protects system resources");
-        System.out.println("  - Ensures fair usage");
-        System.out.println("  - DDoS protection");
-        System.out.println("\nWhen to Use:");
-        System.out.println("  - API rate limiting");
-        System.out.println("  - DDoS protection");
-        System.out.println("  - Fair resource allocation");
-        System.out.println("  - Cost control");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern Summary:");
+        logger.info("\nIntent:");
+        logger.info("  Controls the rate of requests sent or received to prevent");
+        logger.info("  abuse, ensure fair usage, and protect system resources.");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Prevents abuse");
+        logger.info("  - Protects system resources");
+        logger.info("  - Ensures fair usage");
+        logger.info("  - DDoS protection");
+        logger.info("\nWhen to Use:");
+        logger.info("  - API rate limiting");
+        logger.info("  - DDoS protection");
+        logger.info("  - Fair resource allocation");
+        logger.info("  - Cost control");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

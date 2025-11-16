@@ -1,0 +1,12 @@
+{
+  "name": "code_to_docs",
+  "display_name": "Code To Docs",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_100_documentation_ai",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

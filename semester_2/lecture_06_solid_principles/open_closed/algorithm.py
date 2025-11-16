@@ -11,6 +11,8 @@ import sys
 from pathlib import Path
 from abc import ABC, abstractmethod
 from typing import List
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
@@ -111,11 +113,11 @@ class BadPaymentProcessor:
             raise ValueError(f"Unknown payment method: {method}")
     
     def _process_credit_card(self, amount: float) -> bool:
-        print(f"Processing ${amount} via credit card")
+        logger.info(f"Processing ${amount} via credit card")
         return True
     
     def _process_paypal(self, amount: float) -> bool:
-        print(f"Processing ${amount} via PayPal")
+        logger.info(f"Processing ${amount} via PayPal")
         return True
 
 
@@ -133,7 +135,7 @@ class CreditCardPayment(PaymentMethod):
     """Credit card payment."""
     
     def process(self, amount: float) -> bool:
-        print(f"Processing ${amount} via credit card")
+        logger.info(f"Processing ${amount} via credit card")
         return True
 
 
@@ -141,7 +143,7 @@ class PayPalPayment(PaymentMethod):
     """PayPal payment."""
     
     def process(self, amount: float) -> bool:
-        print(f"Processing ${amount} via PayPal")
+        logger.info(f"Processing ${amount} via PayPal")
         return True
 
 
@@ -150,7 +152,7 @@ class CryptocurrencyPayment(PaymentMethod):
     """Cryptocurrency payment - added without modification."""
     
     def process(self, amount: float) -> bool:
-        print(f"Processing ${amount} via cryptocurrency")
+        logger.info(f"Processing ${amount} via cryptocurrency")
         return True
 
 
@@ -218,21 +220,21 @@ class PriceCalculator:
 
 def main() -> None:
     """Demonstration of Open/Closed Principle."""
-    print("=" * 70)
-    print("OPEN/CLOSED PRINCIPLE (OCP) DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("OPEN/CLOSED PRINCIPLE (OCP) DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Shape Area Calculation
-    print("Example 1: Shape Area Calculation")
-    print("-" * 70)
+    logger.info("Example 1: Shape Area Calculation")
+    logger.info("-" * 70)
     
-    print("❌ BAD: Must modify AreaCalculator to add new shapes")
+    logger.info("❌ BAD: Must modify AreaCalculator to add new shapes")
     bad_calc = BadAreaCalculator()
-    print(f"Rectangle area: {bad_calc.calculate_area({'type': 'rectangle', 'width': 5, 'height': 3})}")
-    print()
+    logger.info(f"Rectangle area: {bad_calc.calculate_area({'type': 'rectangle', 'width': 5, 'height': 3})}")
+    logger.info()
     
-    print("✅ GOOD: Can add new shapes without modifying AreaCalculator")
+    logger.info("✅ GOOD: Can add new shapes without modifying AreaCalculator")
     shapes = [
         Rectangle(5, 3),
         Circle(2),
@@ -242,12 +244,12 @@ def main() -> None:
     
     calc = AreaCalculator()
     total = calc.calculate_total_area(shapes)
-    print(f"Total area of all shapes: {total:.2f}")
-    print()
+    logger.info(f"Total area of all shapes: {total:.2f}")
+    logger.info()
     
     # Example 2: Payment Processing
-    print("Example 2: Payment Processing")
-    print("-" * 70)
+    logger.info("Example 2: Payment Processing")
+    logger.info("-" * 70)
     
     processor = PaymentProcessor()
     
@@ -257,11 +259,11 @@ def main() -> None:
     
     # New payment method - no modification needed!
     processor.process_payment(CryptocurrencyPayment(), 75.0)
-    print()
+    logger.info()
     
     # Example 3: Discount System
-    print("Example 3: Discount System")
-    print("-" * 70)
+    logger.info("Example 3: Discount System")
+    logger.info("-" * 70)
     
     base_price = 100.0
     
@@ -275,35 +277,35 @@ def main() -> None:
     calculator = PriceCalculator()
     for discount in discounts:
         final = calculator.calculate_final_price(base_price, discount)
-        print(f"Base: ${base_price:.2f}, Final: ${final:.2f} ({discount.__class__.__name__})")
-    print()
+        logger.info(f"Base: ${base_price:.2f}, Final: ${final:.2f} ({discount.__class__.__name__})")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPrinciple Summary:")
-    print("\nDefinition:")
-    print("  Software entities should be open for extension but")
-    print("  closed for modification.")
-    print("\nKey Benefits:")
-    print("  - Add new features without breaking existing code")
-    print("  - Reduce risk of introducing bugs")
-    print("  - Better code stability")
-    print("  - Easier to maintain")
-    print("\nHow to Apply:")
-    print("  1. Use abstraction (interfaces/abstract classes)")
-    print("  2. Use polymorphism")
-    print("  3. Use strategy pattern")
-    print("  4. Avoid if/else chains for types")
-    print("\nCommon Violations:")
-    print("  - if/else chains for type checking")
-    print("  - switch statements for types")
-    print("  - Modifying existing classes for new features")
-    print("  - God classes that do everything")
-    print("\nDesign Patterns that Help:")
-    print("  - Strategy Pattern")
-    print("  - Template Method")
-    print("  - Decorator Pattern")
-    print("  - Factory Pattern")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPrinciple Summary:")
+    logger.info("\nDefinition:")
+    logger.info("  Software entities should be open for extension but")
+    logger.info("  closed for modification.")
+    logger.info("\nKey Benefits:")
+    logger.info("  - Add new features without breaking existing code")
+    logger.info("  - Reduce risk of introducing bugs")
+    logger.info("  - Better code stability")
+    logger.info("  - Easier to maintain")
+    logger.info("\nHow to Apply:")
+    logger.info("  1. Use abstraction (interfaces/abstract classes)")
+    logger.info("  2. Use polymorphism")
+    logger.info("  3. Use strategy pattern")
+    logger.info("  4. Avoid if/else chains for types")
+    logger.info("\nCommon Violations:")
+    logger.info("  - if/else chains for type checking")
+    logger.info("  - switch statements for types")
+    logger.info("  - Modifying existing classes for new features")
+    logger.info("  - God classes that do everything")
+    logger.info("\nDesign Patterns that Help:")
+    logger.info("  - Strategy Pattern")
+    logger.info("  - Template Method")
+    logger.info("  - Decorator Pattern")
+    logger.info("  - Factory Pattern")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

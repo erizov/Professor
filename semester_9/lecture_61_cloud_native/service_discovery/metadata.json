@@ -1,0 +1,12 @@
+{
+  "name": "service_discovery",
+  "display_name": "Service Discovery",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_61_cloud_native",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

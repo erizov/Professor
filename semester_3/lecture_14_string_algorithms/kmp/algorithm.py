@@ -14,6 +14,8 @@ from typing import List
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 def compute_lps(pattern: str) -> List[int]:
@@ -103,14 +105,14 @@ def count_occurrences(text: str, pattern: str) -> int:
 
 def main() -> None:
     """Demonstration of KMP Algorithm."""
-    print("=" * 70)
-    print("KNUTH-MORRIS-PRATT (KMP) STRING MATCHING DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("KNUTH-MORRIS-PRATT (KMP) STRING MATCHING DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic search
-    print("Example 1: Basic String Search")
-    print("-" * 70)
+    logger.info("Example 1: Basic String Search")
+    logger.info("-" * 70)
     
     test_cases = [
         ("ABABDABACDABABCABCABAB", "ABABCABAB"),
@@ -121,41 +123,41 @@ def main() -> None:
     
     for text, pattern in test_cases:
         indices = kmp_search(text, pattern)
-        print(f"Text: '{text}'")
-        print(f"Pattern: '{pattern}'")
-        print(f"Found at indices: {indices}")
-        print(f"Count: {len(indices)}")
-        print()
+        logger.info(f"Text: '{text}'")
+        logger.info(f"Pattern: '{pattern}'")
+        logger.info(f"Found at indices: {indices}")
+        logger.info(f"Count: {len(indices)}")
+        logger.info()
     
     # Example 2: Multiple occurrences
-    print("Example 2: Multiple Occurrences")
-    print("-" * 70)
+    logger.info("Example 2: Multiple Occurrences")
+    logger.info("-" * 70)
     
     text = "ABABDABACDABABCABCABAB"
     pattern = "AB"
     
     indices = kmp_search_all(text, pattern)
-    print(f"Text: '{text}'")
-    print(f"Pattern: '{pattern}'")
-    print(f"All occurrences at: {indices}")
-    print(f"Total count: {count_occurrences(text, pattern)}")
-    print()
+    logger.info(f"Text: '{text}'")
+    logger.info(f"Pattern: '{pattern}'")
+    logger.info(f"All occurrences at: {indices}")
+    logger.info(f"Total count: {count_occurrences(text, pattern)}")
+    logger.info()
     
     # Example 3: LPS array demonstration
-    print("Example 3: LPS Array (Longest Proper Prefix which is also Suffix)")
-    print("-" * 70)
+    logger.info("Example 3: LPS Array (Longest Proper Prefix which is also Suffix)")
+    logger.info("-" * 70)
     
     patterns = ["ABABCABAB", "AAAA", "ABCDE", "AABAACAABAA"]
     
     for pattern in patterns:
         lps = compute_lps(pattern)
-        print(f"Pattern: '{pattern}'")
-        print(f"LPS:     {lps}")
-        print()
+        logger.info(f"Pattern: '{pattern}'")
+        logger.info(f"LPS:     {lps}")
+        logger.info()
     
     # Example 4: Performance comparison
-    print("Example 4: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 4: Performance Measurement")
+    logger.info("-" * 70)
     
     text = "A" * 10000 + "B" + "A" * 10000
     pattern = "A" * 100 + "B"
@@ -166,15 +168,15 @@ def main() -> None:
         return kmp_search(text, pattern)
     
     result, metrics = timer.measure(kmp_operation)
-    print(f"Text length: {len(text)}")
-    print(f"Pattern length: {len(pattern)}")
-    print(f"Time: {metrics['execution_time_ms']:.3f} ms")
-    print(f"Found: {len(result)} occurrence(s)")
-    print()
+    logger.info(f"Text length: {len(text)}")
+    logger.info(f"Pattern length: {len(pattern)}")
+    logger.info(f"Time: {metrics['execution_time_ms']:.3f} ms")
+    logger.info(f"Found: {len(result)} occurrence(s)")
+    logger.info()
     
     # Example 5: Real-world use case - text search
-    print("Example 5: Text Search Use Case")
-    print("-" * 70)
+    logger.info("Example 5: Text Search Use Case")
+    logger.info("-" * 70)
     
     document = """
     The quick brown fox jumps over the lazy dog.
@@ -186,34 +188,34 @@ def main() -> None:
     
     for term in search_terms:
         indices = kmp_search(document.lower(), term.lower())
-        print(f"Searching for '{term}':")
-        print(f"  Found {len(indices)} occurrence(s) at positions: {indices}")
-    print()
+        logger.info(f"Searching for '{term}':")
+        logger.info(f"  Found {len(indices)} occurrence(s) at positions: {indices}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O(n + m) - n is text length, m is pattern length")
-    print("  Space: O(m) - for LPS array")
-    print("\nKey Advantages:")
-    print("  - Linear time complexity")
-    print("  - No backtracking in text")
-    print("  - Efficient for repeated patterns")
-    print("  - Better than naive O(n*m) approach")
-    print("\nKey Disadvantages:")
-    print("  - More complex than naive algorithm")
-    print("  - Requires preprocessing")
-    print("  - Extra space for LPS array")
-    print("\nWhen to Use:")
-    print("  - Text search in large documents")
-    print("  - Pattern matching")
-    print("  - String search libraries")
-    print("  - DNA sequence matching")
-    print("\nCommon Use Cases:")
-    print("  - Text editors (find/replace)")
-    print("  - Search engines")
-    print("  - Bioinformatics")
-    print("  - String matching libraries")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  O(n + m) - n is text length, m is pattern length")
+    logger.info("  Space: O(m) - for LPS array")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Linear time complexity")
+    logger.info("  - No backtracking in text")
+    logger.info("  - Efficient for repeated patterns")
+    logger.info("  - Better than naive O(n*m) approach")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - More complex than naive algorithm")
+    logger.info("  - Requires preprocessing")
+    logger.info("  - Extra space for LPS array")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Text search in large documents")
+    logger.info("  - Pattern matching")
+    logger.info("  - String search libraries")
+    logger.info("  - DNA sequence matching")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Text editors (find/replace)")
+    logger.info("  - Search engines")
+    logger.info("  - Bioinformatics")
+    logger.info("  - String matching libraries")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

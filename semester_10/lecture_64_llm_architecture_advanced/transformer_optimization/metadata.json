@@ -1,0 +1,12 @@
+{
+  "name": "transformer_optimization",
+  "display_name": "Transformer Optimization",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_64_llm_architecture_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "stream_processing_advanced",
+  "display_name": "Stream Processing Advanced",
+  "category": "Advanced Graduate Level",
+  "semester": 16,
+  "lecture": "lecture_111_data_engineering_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

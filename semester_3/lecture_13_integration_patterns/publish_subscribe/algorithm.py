@@ -16,6 +16,8 @@ import threading
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class Subscriber(ABC):
@@ -79,7 +81,7 @@ class EmailSubscriber(Subscriber):
     def update(self, topic: str, message: Any) -> None:
         """Receive message."""
         self.messages.append((topic, message))
-        print(f"[Email to {self.email}] Topic: {topic}, Message: {message}")
+        logger.info(f"[Email to {self.email}] Topic: {topic}, Message: {message}")
 
 
 class LogSubscriber(Subscriber):
@@ -91,7 +93,7 @@ class LogSubscriber(Subscriber):
     def update(self, topic: str, message: Any) -> None:
         """Receive message."""
         self.logs.append((topic, message))
-        print(f"[LOG] {topic}: {message}")
+        logger.info(f"[LOG] {topic}: {message}")
 
 
 class NotificationSubscriber(Subscriber):
@@ -104,7 +106,7 @@ class NotificationSubscriber(Subscriber):
     def update(self, topic: str, message: Any) -> None:
         """Receive message."""
         self.notifications.append((topic, message))
-        print(f"[Notification to User {self.user_id}] {topic}: {message}")
+        logger.info(f"[Notification to User {self.user_id}] {topic}: {message}")
 
 
 # Example 2: Event-driven Pub-Sub
@@ -142,14 +144,14 @@ class EventBus:
 
 def main() -> None:
     """Demonstration of Publish-Subscribe Pattern."""
-    print("=" * 70)
-    print("PUBLISH-SUBSCRIBE (PUB-SUB) PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("PUBLISH-SUBSCRIBE (PUB-SUB) PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic Pub-Sub
-    print("Example 1: Basic Publish-Subscribe")
-    print("-" * 70)
+    logger.info("Example 1: Basic Publish-Subscribe")
+    logger.info("-" * 70)
     
     broker = MessageBroker()
     publisher = Publisher(broker)
@@ -166,35 +168,35 @@ def main() -> None:
     broker.subscribe("notifications", log_sub)
     
     # Publish messages
-    print("Publishing messages:")
+    logger.info("Publishing messages:")
     publisher.publish("orders", "New order #1001")
     publisher.publish("notifications", "User logged in")
     publisher.publish("orders", "Order #1001 shipped")
-    print()
+    logger.info()
     
     # Example 2: Event-driven Pub-Sub
-    print("Example 2: Event-driven Pub-Sub")
-    print("-" * 70)
+    logger.info("Example 2: Event-driven Pub-Sub")
+    logger.info("-" * 70)
     
     event_bus = EventBus()
     
     def order_handler(event: Event) -> None:
-        print(f"Order handler: {event.data}")
+        logger.info(f"Order handler: {event.data}")
     
     def user_handler(event: Event) -> None:
-        print(f"User handler: {event.data}")
+        logger.info(f"User handler: {event.data}")
     
     event_bus.subscribe("order.created", order_handler)
     event_bus.subscribe("user.registered", user_handler)
     
-    print("Publishing events:")
+    logger.info("Publishing events:")
     event_bus.publish(Event("order.created", "Order #2001"))
     event_bus.publish(Event("user.registered", "User: alice"))
-    print()
+    logger.info()
     
     # Example 3: Performance measurement
-    print("Example 3: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 3: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Pub-Sub")
     
@@ -214,35 +216,35 @@ def main() -> None:
         return len(broker.subscribers.get("test", []))
     
     result, metrics = timer.measure(pub_sub_operations)
-    print(f"Time to publish 100 messages to 10 subscribers: "
+    logger.info(f"Time to publish 100 messages to 10 subscribers: "
           f"{metrics['execution_time_ms']:.3f} ms")
-    print()
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Decouples publishers from subscribers. Publishers send")
-    print("  messages to topics without knowing subscribers.")
-    print("\nKey Advantages:")
-    print("  - Loose coupling")
-    print("  - Scalable")
-    print("  - Dynamic subscription")
-    print("  - Multiple subscribers per topic")
-    print("\nKey Disadvantages:")
-    print("  - Message delivery not guaranteed")
-    print("  - Ordering challenges")
-    print("  - Debugging complexity")
-    print("\nWhen to Use:")
-    print("  - Event-driven architecture")
-    print("  - Microservices communication")
-    print("  - Real-time notifications")
-    print("  - Decoupled systems")
-    print("\nCommon Use Cases:")
-    print("  - Apache Kafka")
-    print("  - RabbitMQ")
-    print("  - Redis Pub/Sub")
-    print("  - Event-driven systems")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Decouples publishers from subscribers. Publishers send")
+    logger.info("  messages to topics without knowing subscribers.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Loose coupling")
+    logger.info("  - Scalable")
+    logger.info("  - Dynamic subscription")
+    logger.info("  - Multiple subscribers per topic")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Message delivery not guaranteed")
+    logger.info("  - Ordering challenges")
+    logger.info("  - Debugging complexity")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Event-driven architecture")
+    logger.info("  - Microservices communication")
+    logger.info("  - Real-time notifications")
+    logger.info("  - Decoupled systems")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Apache Kafka")
+    logger.info("  - RabbitMQ")
+    logger.info("  - Redis Pub/Sub")
+    logger.info("  - Event-driven systems")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

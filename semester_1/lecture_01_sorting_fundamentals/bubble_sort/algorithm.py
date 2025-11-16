@@ -13,8 +13,11 @@ import random
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
 
 from typing import List, TypeVar
+
+logger = get_logger(__name__)
 
 T = TypeVar('T')
 
@@ -61,120 +64,101 @@ def bubble_sort_visualized(arr: List[int]) -> List[int]:
         Sorted list
     """
     n = len(arr)
-    print(f"Initial array: {arr}")
-    print()
+    logger.info(f"Initial array: {arr}")
     
     for i in range(n):
         swapped = False
-        print(f"Pass {i + 1}:")
+        logger.info(f"Pass {i + 1}:")
         
         for j in range(0, n - i - 1):
-            print(f"  Comparing {arr[j]} and {arr[j + 1]}", end="")
+            logger.debug(f"Comparing {arr[j]} and {arr[j + 1]}")
             if arr[j] > arr[j + 1]:
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
                 swapped = True
-                print(f" → Swapped: {arr}")
-            else:
-                print(f" → No swap")
-        
+                logger.info(f"Swapped: {arr}")
+            
         if not swapped:
-            print(f"  No swaps in this pass. Array is sorted!")
+            logger.info("No swaps in this pass. Array is sorted!")
             break
-        print()
     
-    print(f"Final sorted array: {arr}")
+    logger.info(f"Final sorted array: {arr}")
     return arr
 
 
 def main() -> None:
     """Demonstration of Bubble Sort."""
-    print("=" * 70)
-    print("BUBBLE SORT DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("BUBBLE SORT DEMONSTRATION")
     
     # Example 1: Basic sorting
-    print("Example 1: Basic Integer Sorting")
-    print("-" * 70)
+    logger.info("Example 1: Basic Integer Sorting")
     data1 = [64, 34, 25, 12, 22, 11, 90]
-    print(f"Original: {data1}")
+    logger.info(f"Original: {data1}")
     result1 = bubble_sort(data1.copy())
-    print(f"Sorted:   {result1}")
-    print()
+    logger.info(f"Sorted:   {result1}")
     
     # Example 2: Already sorted (best case)
-    print("Example 2: Already Sorted Array (Best Case)")
-    print("-" * 70)
+    logger.info("Example 2: Already Sorted Array (Best Case)")
     data2 = [1, 2, 3, 4, 5, 6, 7]
-    print(f"Original: {data2}")
+    logger.info(f"Original: {data2}")
     result2 = bubble_sort(data2.copy())
-    print(f"Sorted:   {result2}")
-    print("Note: O(n) with early termination optimization!")
-    print()
+    logger.info(f"Sorted:   {result2}")
+    logger.info("Note: O(n) with early termination optimization!")
     
     # Example 3: Reverse sorted (worst case)
-    print("Example 3: Reverse Sorted Array (Worst Case)")
-    print("-" * 70)
+    logger.info("Example 3: Reverse Sorted Array (Worst Case)")
     data3 = [7, 6, 5, 4, 3, 2, 1]
-    print(f"Original: {data3}")
+    logger.info(f"Original: {data3}")
     result3 = bubble_sort(data3.copy())
-    print(f"Sorted:   {result3}")
-    print()
+    logger.info(f"Sorted:   {result3}")
     
     # Example 4: Visualization
-    print("Example 4: Visualized Bubble Sort Process")
-    print("-" * 70)
+    logger.info("Example 4: Visualized Bubble Sort Process")
     data4 = [5, 2, 8, 1, 9]
     bubble_sort_visualized(data4.copy())
-    print()
     
     # Example 5: Performance measurement
-    print("Example 5: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 5: Performance Measurement")
     
     timer = PerformanceTimer("Bubble Sort")
     
     # Small dataset
     data_small = [random.randint(1, 100) for _ in range(100)]
     _, metrics_small = timer.measure(bubble_sort, data_small.copy())
-    print(f"Small (100 elements):")
-    print(f"  Time: {metrics_small['execution_time_ms']:.3f} ms")
-    print(f"  Memory: {metrics_small['memory_peak_kb']:.2f} KB")
+    logger.info("Small (100 elements):")
+    logger.info(f"  Time: {metrics_small['execution_time_ms']:.3f} ms")
+    logger.info(f"  Memory: {metrics_small['memory_peak_kb']:.2f} KB")
     
     # Medium dataset
     data_medium = [random.randint(1, 1000) for _ in range(1000)]
     _, metrics_medium = timer.measure(bubble_sort, data_medium.copy())
-    print(f"\nMedium (1,000 elements):")
-    print(f"  Time: {metrics_medium['execution_time_ms']:.3f} ms")
-    print(f"  Memory: {metrics_medium['memory_peak_kb']:.2f} KB")
+    logger.info("Medium (1,000 elements):")
+    logger.info(f"  Time: {metrics_medium['execution_time_ms']:.3f} ms")
+    logger.info(f"  Memory: {metrics_medium['memory_peak_kb']:.2f} KB")
     
-    print()
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O(n²) - average and worst case")
-    print("         O(n) - best case (with optimization)")
-    print("  Space: O(1) - in-place sorting")
-    print("  Stable: Yes - preserves relative order")
-    print("  Adaptive: Yes - detects sorted data")
-    print("\nKey Advantages:")
-    print("  - Simple to understand and implement")
-    print("  - Adaptive - detects sorted data")
-    print("  - Stable sort")
-    print("  - In-place sorting")
-    print("\nKey Disadvantages:")
-    print("  - Very slow on large datasets")
-    print("  - O(n²) average and worst case")
-    print("  - Not suitable for production use on large data")
-    print("\nWhen to Use:")
-    print("  - Educational purposes")
-    print("  - Very small datasets (n < 10)")
-    print("  - Nearly sorted data")
-    print("  - When simplicity is critical")
-    print("\nWhen NOT to Use:")
-    print("  - Large datasets")
-    print("  - Performance-critical applications")
-    print("  - When O(n log n) algorithms are available")
-    print("=" * 70)
+    logger.info("Complexity Summary:")
+    logger.info("  Time:  O(n²) - average and worst case")
+    logger.info("         O(n) - best case (with optimization)")
+    logger.info("  Space: O(1) - in-place sorting")
+    logger.info("  Stable: Yes - preserves relative order")
+    logger.info("  Adaptive: Yes - detects sorted data")
+    logger.info("Key Advantages:")
+    logger.info("  - Simple to understand and implement")
+    logger.info("  - Adaptive - detects sorted data")
+    logger.info("  - Stable sort")
+    logger.info("  - In-place sorting")
+    logger.info("Key Disadvantages:")
+    logger.info("  - Very slow on large datasets")
+    logger.info("  - O(n²) average and worst case")
+    logger.info("  - Not suitable for production use on large data")
+    logger.info("When to Use:")
+    logger.info("  - Educational purposes")
+    logger.info("  - Very small datasets (n < 10)")
+    logger.info("  - Nearly sorted data")
+    logger.info("  - When simplicity is critical")
+    logger.info("When NOT to Use:")
+    logger.info("  - Large datasets")
+    logger.info("  - Performance-critical applications")
+    logger.info("  - When O(n log n) algorithms are available")
 
 
 if __name__ == "__main__":

@@ -11,6 +11,8 @@ import sys
 from pathlib import Path
 from abc import ABC, abstractmethod
 from typing import Dict, Type
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
@@ -103,10 +105,10 @@ class Document(ABC):
     
     def print_document(self) -> None:
         """Print document with multiple pages."""
-        print(f"Creating {self.__class__.__name__}")
+        logger.info(f"Creating {self.__class__.__name__}")
         for i in range(3):
             page = self.create_page()
-            print(f"  Page {i+1}: {page.render()}")
+            logger.info(f"  Page {i+1}: {page.render()}")
 
 
 class Page(ABC):
@@ -206,58 +208,58 @@ VehicleFactory.register('truck', Truck)
 
 def main() -> None:
     """Demonstration of Factory Pattern."""
-    print("=" * 70)
-    print("FACTORY DESIGN PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("FACTORY DESIGN PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Simple Factory
-    print("Example 1: Simple Factory Pattern")
-    print("-" * 70)
+    logger.info("Example 1: Simple Factory Pattern")
+    logger.info("-" * 70)
     
     circle = ShapeFactory.create_shape('circle', 5.0)
-    print(circle.draw())
-    print(f"Area: {circle.area():.2f}")
+    logger.info(circle.draw())
+    logger.info(f"Area: {circle.area():.2f}")
     
     rectangle = ShapeFactory.create_shape('rectangle', 4.0, 6.0)
-    print(rectangle.draw())
-    print(f"Area: {rectangle.area():.2f}")
+    logger.info(rectangle.draw())
+    logger.info(f"Area: {rectangle.area():.2f}")
     
     triangle = ShapeFactory.create_shape('triangle', 3.0, 4.0)
-    print(triangle.draw())
-    print(f"Area: {triangle.area():.2f}")
-    print()
+    logger.info(triangle.draw())
+    logger.info(f"Area: {triangle.area():.2f}")
+    logger.info()
     
     # Example 2: Factory Method Pattern
-    print("Example 2: Factory Method Pattern")
-    print("-" * 70)
+    logger.info("Example 2: Factory Method Pattern")
+    logger.info("-" * 70)
     
     pdf_doc = PDFDocument()
     pdf_doc.print_document()
     
-    print()
+    logger.info()
     
     word_doc = WordDocument()
     word_doc.print_document()
-    print()
+    logger.info()
     
     # Example 3: Registry-based Factory
-    print("Example 3: Registry-based Factory")
-    print("-" * 70)
+    logger.info("Example 3: Registry-based Factory")
+    logger.info("-" * 70)
     
     car = VehicleFactory.create('car', 'Toyota')
-    print(car.start())
+    logger.info(car.start())
     
     motorcycle = VehicleFactory.create('motorcycle', 'Harley-Davidson')
-    print(motorcycle.start())
+    logger.info(motorcycle.start())
     
     truck = VehicleFactory.create('truck', 'Volvo')
-    print(truck.start())
-    print()
+    logger.info(truck.start())
+    logger.info()
     
     # Example 4: Multiple shapes
-    print("Example 4: Creating Multiple Objects")
-    print("-" * 70)
+    logger.info("Example 4: Creating Multiple Objects")
+    logger.info("-" * 70)
     
     shape_specs = [
         ('circle', [3.0]),
@@ -269,62 +271,62 @@ def main() -> None:
     total_area = 0
     for shape_type, args in shape_specs:
         shape = ShapeFactory.create_shape(shape_type, *args)
-        print(shape.draw())
+        logger.info(shape.draw())
         area = shape.area()
-        print(f"  Area: {area:.2f}")
+        logger.info(f"  Area: {area:.2f}")
         total_area += area
     
-    print(f"\nTotal area of all shapes: {total_area:.2f}")
-    print()
+    logger.info(f"\nTotal area of all shapes: {total_area:.2f}")
+    logger.info()
     
     # Example 5: Error handling
-    print("Example 5: Error Handling")
-    print("-" * 70)
+    logger.info("Example 5: Error Handling")
+    logger.info("-" * 70)
     
     try:
         invalid_shape = ShapeFactory.create_shape('hexagon', 5.0)
     except ValueError as e:
-        print(f"Error: {e}")
+        logger.info(f"Error: {e}")
     
     try:
         invalid_vehicle = VehicleFactory.create('airplane', 'Boeing')
     except ValueError as e:
-        print(f"Error: {e}")
-    print()
+        logger.info(f"Error: {e}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Define an interface for creating objects, but let")
-    print("  subclasses decide which class to instantiate.")
-    print("\nKey Advantages:")
-    print("  - Loose coupling between client and concrete classes")
-    print("  - Single Responsibility Principle")
-    print("  - Open/Closed Principle (easy to add new types)")
-    print("  - Centralizes object creation logic")
-    print("\nKey Disadvantages:")
-    print("  - Can add complexity")
-    print("  - May require many subclasses")
-    print("\nWhen to Use:")
-    print("  - Class can't anticipate objects it must create")
-    print("  - Class wants subclasses to specify objects")
-    print("  - Need to delegate creation to helper subclasses")
-    print("  - Want to provide library/framework hook")
-    print("\nWhen Not to Use:")
-    print("  - Only one type of object")
-    print("  - Object creation is simple")
-    print("  - Adds unnecessary complexity")
-    print("\nVariations:")
-    print("  - Simple Factory: Not true pattern, but useful")
-    print("  - Factory Method: Subclasses decide which class")
-    print("  - Abstract Factory: Families of related objects")
-    print("  - Registry Factory: Dynamic registration")
-    print("\nReal-world Examples:")
-    print("  - GUI frameworks (creating widgets)")
-    print("  - Database drivers (creating connections)")
-    print("  - Document processors (PDF, Word, etc.)")
-    print("  - Game engines (creating game objects)")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Define an interface for creating objects, but let")
+    logger.info("  subclasses decide which class to instantiate.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Loose coupling between client and concrete classes")
+    logger.info("  - Single Responsibility Principle")
+    logger.info("  - Open/Closed Principle (easy to add new types)")
+    logger.info("  - Centralizes object creation logic")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Can add complexity")
+    logger.info("  - May require many subclasses")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Class can't anticipate objects it must create")
+    logger.info("  - Class wants subclasses to specify objects")
+    logger.info("  - Need to delegate creation to helper subclasses")
+    logger.info("  - Want to provide library/framework hook")
+    logger.info("\nWhen Not to Use:")
+    logger.info("  - Only one type of object")
+    logger.info("  - Object creation is simple")
+    logger.info("  - Adds unnecessary complexity")
+    logger.info("\nVariations:")
+    logger.info("  - Simple Factory: Not true pattern, but useful")
+    logger.info("  - Factory Method: Subclasses decide which class")
+    logger.info("  - Abstract Factory: Families of related objects")
+    logger.info("  - Registry Factory: Dynamic registration")
+    logger.info("\nReal-world Examples:")
+    logger.info("  - GUI frameworks (creating widgets)")
+    logger.info("  - Database drivers (creating connections)")
+    logger.info("  - Document processors (PDF, Word, etc.)")
+    logger.info("  - Game engines (creating game objects)")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

@@ -6,7 +6,10 @@ import java.util.*;
  * Time Complexity: O(n * capacity)
  * Space Complexity: O(n * capacity) or O(capacity) optimized
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class KnapsackResult {
         int maxValue;
@@ -68,14 +71,14 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("0/1 KNAPSACK PROBLEM DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("0/1 KNAPSACK PROBLEM DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1
-        System.out.println("Example 1: Basic 0/1 Knapsack");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Basic 0/1 Knapsack");
+        logger.info("-".repeat(70));
         
         int[] weights1 = {10, 20, 30};
         int[] values1 = {60, 100, 120};
@@ -83,16 +86,16 @@ public class Algorithm {
         
         KnapsackResult result = knapsack01(weights1, values1, capacity1);
         
-        System.out.println("Weights: " + Arrays.toString(weights1));
-        System.out.println("Values: " + Arrays.toString(values1));
-        System.out.println("Capacity: " + capacity1);
-        System.out.println("Maximum value: " + result.maxValue);
-        System.out.println("Selected items: " + result.selectedItems);
-        System.out.println();
+        logger.info("Weights: " + Arrays.toString(weights1));
+        logger.info("Values: " + Arrays.toString(values1));
+        logger.info("Capacity: " + capacity1);
+        logger.info("Maximum value: " + result.maxValue);
+        logger.info("Selected items: " + result.selectedItems);
+        logger.info();
         
         // Example 2
-        System.out.println("Example 2: Space-Optimized Version");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Space-Optimized Version");
+        logger.info("-".repeat(70));
         
         int[] weights2 = {1, 3, 4, 5};
         int[] values2 = {1, 4, 5, 7};
@@ -101,22 +104,21 @@ public class Algorithm {
         int valueStandard = knapsack01(weights2, values2, capacity2).maxValue;
         int valueOptimized = knapsack01Optimized(weights2, values2, capacity2);
         
-        System.out.println("Weights: " + Arrays.toString(weights2));
-        System.out.println("Values: " + Arrays.toString(values2));
-        System.out.println("Capacity: " + capacity2);
-        System.out.println("Max value (standard): " + valueStandard);
-        System.out.println("Max value (optimized): " + valueOptimized);
-        System.out.println();
+        logger.info("Weights: " + Arrays.toString(weights2));
+        logger.info("Values: " + Arrays.toString(values2));
+        logger.info("Capacity: " + capacity2);
+        logger.info("Max value (standard): " + valueStandard);
+        logger.info("Max value (optimized): " + valueOptimized);
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Time:  O(n * capacity)");
-        System.out.println("  Space: O(n * capacity) or O(capacity)");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Time:  O(n * capacity)");
+        logger.info("  Space: O(n * capacity) or O(capacity)");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }
 }
-

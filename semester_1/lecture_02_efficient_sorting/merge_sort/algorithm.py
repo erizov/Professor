@@ -15,6 +15,8 @@ sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
 
 from typing import List, TypeVar
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 T = TypeVar('T')
 
@@ -136,130 +138,130 @@ def visualize_merge_sort(arr: List[int], depth: int = 0) -> List[int]:
         Sorted list
     """
     indent = "  " * depth
-    print(f"{indent}Sorting: {arr}")
+    logger.info(f"{indent}Sorting: {arr}")
     
     if len(arr) <= 1:
-        print(f"{indent}Base case: {arr}")
+        logger.info(f"{indent}Base case: {arr}")
         return arr
     
     mid = len(arr) // 2
-    print(f"{indent}Dividing at index {mid}")
+    logger.info(f"{indent}Dividing at index {mid}")
     
     left = visualize_merge_sort(arr[:mid], depth + 1)
     right = visualize_merge_sort(arr[mid:], depth + 1)
     
     result = merge(left, right)
-    print(f"{indent}Merged: {result}")
+    logger.info(f"{indent}Merged: {result}")
     
     return result
 
 
 def main() -> None:
     """Demonstration of Merge Sort."""
-    print("=" * 70)
-    print("MERGE SORT DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("MERGE SORT DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic sorting
-    print("Example 1: Basic Integer Sorting")
-    print("-" * 70)
+    logger.info("Example 1: Basic Integer Sorting")
+    logger.info("-" * 70)
     data1 = [64, 34, 25, 12, 22, 11, 90, 88]
-    print(f"Original: {data1}")
+    logger.info(f"Original: {data1}")
     result1 = merge_sort(data1.copy())
-    print(f"Sorted:   {result1}")
-    print()
+    logger.info(f"Sorted:   {result1}")
+    logger.info()
     
     # Example 2: Already sorted (best case)
-    print("Example 2: Already Sorted Array")
-    print("-" * 70)
+    logger.info("Example 2: Already Sorted Array")
+    logger.info("-" * 70)
     data2 = [1, 2, 3, 4, 5, 6, 7, 8]
-    print(f"Original: {data2}")
+    logger.info(f"Original: {data2}")
     result2 = merge_sort(data2.copy())
-    print(f"Sorted:   {result2}")
-    print("Note: Still O(n log n) even when sorted!")
-    print()
+    logger.info(f"Sorted:   {result2}")
+    logger.info("Note: Still O(n log n) even when sorted!")
+    logger.info()
     
     # Example 3: Reverse sorted (worst case for some algorithms)
-    print("Example 3: Reverse Sorted Array")
-    print("-" * 70)
+    logger.info("Example 3: Reverse Sorted Array")
+    logger.info("-" * 70)
     data3 = [8, 7, 6, 5, 4, 3, 2, 1]
-    print(f"Original: {data3}")
+    logger.info(f"Original: {data3}")
     result3 = merge_sort(data3.copy())
-    print(f"Sorted:   {result3}")
-    print()
+    logger.info(f"Sorted:   {result3}")
+    logger.info()
     
     # Example 4: Strings
-    print("Example 4: Sorting Strings")
-    print("-" * 70)
+    logger.info("Example 4: Sorting Strings")
+    logger.info("-" * 70)
     data4 = ["banana", "apple", "cherry", "date", "elderberry"]
-    print(f"Original: {data4}")
+    logger.info(f"Original: {data4}")
     result4 = merge_sort(data4.copy())
-    print(f"Sorted:   {result4}")
-    print()
+    logger.info(f"Sorted:   {result4}")
+    logger.info()
     
     # Example 5: Visualization
-    print("Example 5: Visualized Merge Sort Process")
-    print("-" * 70)
+    logger.info("Example 5: Visualized Merge Sort Process")
+    logger.info("-" * 70)
     data5 = [5, 2, 8, 1, 9, 3]
-    print("Watch the divide-and-conquer process:\n")
+    logger.info("Watch the divide-and-conquer process:\n")
     result5 = visualize_merge_sort(data5)
-    print()
+    logger.info()
     
     # Example 6: Performance comparison
-    print("Example 6: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 6: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Merge Sort")
     
     # Small dataset
     data_small = [random.randint(1, 100) for _ in range(100)]
     _, metrics_small = timer.measure(merge_sort, data_small.copy())
-    print(f"Small (100 elements):")
-    print(f"  Time: {metrics_small['execution_time_ms']:.3f} ms")
-    print(f"  Memory: {metrics_small['memory_peak_kb']:.2f} KB")
+    logger.info(f"Small (100 elements):")
+    logger.info(f"  Time: {metrics_small['execution_time_ms']:.3f} ms")
+    logger.info(f"  Memory: {metrics_small['memory_peak_kb']:.2f} KB")
     
     # Medium dataset
     data_medium = [random.randint(1, 1000) for _ in range(1000)]
     _, metrics_medium = timer.measure(merge_sort, data_medium.copy())
-    print(f"\nMedium (1,000 elements):")
-    print(f"  Time: {metrics_medium['execution_time_ms']:.3f} ms")
-    print(f"  Memory: {metrics_medium['memory_peak_kb']:.2f} KB")
+    logger.info(f"\nMedium (1,000 elements):")
+    logger.info(f"  Time: {metrics_medium['execution_time_ms']:.3f} ms")
+    logger.info(f"  Memory: {metrics_medium['memory_peak_kb']:.2f} KB")
     
     # Large dataset
     data_large = [random.randint(1, 10000) for _ in range(10000)]
     _, metrics_large = timer.measure(merge_sort, data_large.copy())
-    print(f"\nLarge (10,000 elements):")
-    print(f"  Time: {metrics_large['execution_time_ms']:.3f} ms")
-    print(f"  Memory: {metrics_large['memory_peak_kb']:.2f} KB")
-    print()
+    logger.info(f"\nLarge (10,000 elements):")
+    logger.info(f"  Time: {metrics_large['execution_time_ms']:.3f} ms")
+    logger.info(f"  Memory: {metrics_large['memory_peak_kb']:.2f} KB")
+    logger.info()
     
     # Example 7: In-place version
-    print("Example 7: In-place Merge Sort")
-    print("-" * 70)
+    logger.info("Example 7: In-place Merge Sort")
+    logger.info("-" * 70)
     data7 = [64, 34, 25, 12, 22, 11, 90]
-    print(f"Original: {data7}")
+    logger.info(f"Original: {data7}")
     merge_sort_inplace(data7)
-    print(f"Sorted:   {data7}")
-    print("(Uses less memory but still O(n) auxiliary space)")
-    print()
+    logger.info(f"Sorted:   {data7}")
+    logger.info("(Uses less memory but still O(n) auxiliary space)")
+    logger.info()
     
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O(n log n) - all cases (best, average, worst)")
-    print("  Space: O(n) - requires auxiliary array")
-    print("  Stable: Yes - preserves relative order")
-    print("  Adaptive: No - always O(n log n)")
-    print("\nKey Advantages:")
-    print("  - Guaranteed O(n log n) performance")
-    print("  - Stable sorting algorithm")
-    print("  - Good for linked lists")
-    print("  - Parallelizable")
-    print("\nKey Disadvantages:")
-    print("  - Requires O(n) extra space")
-    print("  - Slower than quick sort in practice")
-    print("  - Not in-place")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  O(n log n) - all cases (best, average, worst)")
+    logger.info("  Space: O(n) - requires auxiliary array")
+    logger.info("  Stable: Yes - preserves relative order")
+    logger.info("  Adaptive: No - always O(n log n)")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Guaranteed O(n log n) performance")
+    logger.info("  - Stable sorting algorithm")
+    logger.info("  - Good for linked lists")
+    logger.info("  - Parallelizable")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Requires O(n) extra space")
+    logger.info("  - Slower than quick sort in practice")
+    logger.info("  - Not in-place")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

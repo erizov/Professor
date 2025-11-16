@@ -1,0 +1,12 @@
+{
+  "name": "quantum_key_management",
+  "display_name": "Quantum Key Management",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_86_quantum_security",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

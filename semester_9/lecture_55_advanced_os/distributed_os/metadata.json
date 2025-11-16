@@ -1,0 +1,12 @@
+{
+  "name": "distributed_os",
+  "display_name": "Distributed Os",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_55_advanced_os",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

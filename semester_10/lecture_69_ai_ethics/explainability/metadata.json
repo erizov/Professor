@@ -1,0 +1,12 @@
+{
+  "name": "explainability",
+  "display_name": "Explainability",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_69_ai_ethics",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

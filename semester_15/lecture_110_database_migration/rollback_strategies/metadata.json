@@ -1,0 +1,12 @@
+{
+  "name": "rollback_strategies",
+  "display_name": "Rollback Strategies",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_110_database_migration",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

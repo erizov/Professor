@@ -3,7 +3,10 @@
  * 
  * Provides interface for creating families of related objects.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     // Abstract Products
     interface Button {
@@ -84,8 +87,8 @@ public class Algorithm {
         
         void renderUI() {
             if (button != null && dialog != null) {
-                System.out.println(button.render());
-                System.out.println(dialog.render());
+                logger.info(button.render());
+                logger.info(dialog.render());
             }
         }
     }
@@ -93,32 +96,32 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("ABSTRACT FACTORY DESIGN PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("ABSTRACT FACTORY DESIGN PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Windows application
         GUIFactory windowsFactory = new WindowsFactory();
         Application windowsApp = new Application(windowsFactory);
         windowsApp.createUI();
-        System.out.println("Windows UI:");
+        logger.info("Windows UI:");
         windowsApp.renderUI();
-        System.out.println();
+        logger.info();
         
         // Mac application
         GUIFactory macFactory = new MacFactory();
         Application macApp = new Application(macFactory);
         macApp.createUI();
-        System.out.println("Mac UI:");
+        logger.info("Mac UI:");
         macApp.renderUI();
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: Creates families of related objects");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: Creates families of related objects");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

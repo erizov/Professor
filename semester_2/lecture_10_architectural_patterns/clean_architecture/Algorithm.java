@@ -5,14 +5,17 @@
  * Time Complexity: N/A
  * Space Complexity: N/A
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     public static void main(String[] args) {
-        System.out.println("==".repeat(35));
-        System.out.println("Clean Architecture");
-        System.out.println("==".repeat(35));
-        System.out.println("Category: Architectural Pattern");
-        System.out.println("Time: N/A");
-        System.out.println("Space: N/A");
-        System.out.println("==".repeat(35));
+        logger.info("==".repeat(35));
+        logger.info("Clean Architecture");
+        logger.info("==".repeat(35));
+        logger.info("Category: Architectural Pattern");
+        logger.info("Time: N/A");
+        logger.info("Space: N/A");
+        logger.info("==".repeat(35));
     }
 }

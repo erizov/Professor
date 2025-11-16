@@ -1,0 +1,12 @@
+{
+  "name": "write_scaling",
+  "display_name": "Write Scaling",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_105_database_architecture",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

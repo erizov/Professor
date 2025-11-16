@@ -1,0 +1,12 @@
+{
+  "name": "actor_model",
+  "display_name": "Actor Model",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_57_concurrency_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

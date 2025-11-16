@@ -1,0 +1,12 @@
+{
+  "name": "zk_snarks",
+  "display_name": "Zk Snarks",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_91_blockchain_privacy",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

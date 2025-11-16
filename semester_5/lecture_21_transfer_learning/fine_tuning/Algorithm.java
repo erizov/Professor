@@ -5,24 +5,27 @@
  * Time Complexity: O(n*d)
  * Space Complexity: O(d*h)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("==".repeat(35));
-        System.out.println("Fine-Tuning Pre-trained Models");
-        System.out.println("==".repeat(35));
-        System.out.println("Category: Deep Learning");
-        System.out.println("Time: O(n*d)");
-        System.out.println("Space: O(d*h)");
-        System.out.println();
-        System.out.println("Resource Requirements:");
-        System.out.println("  - GPU: Recommended");
-        System.out.println("  - Memory: High");
-        System.out.println("==".repeat(35));
+        logger.info("==".repeat(35));
+        logger.info("Fine-Tuning Pre-trained Models");
+        logger.info("==".repeat(35));
+        logger.info("Category: Deep Learning");
+        logger.info("Time: O(n*d)");
+        logger.info("Space: O(d*h)");
+        logger.info();
+        logger.info("Resource Requirements:");
+        logger.info("  - GPU: Recommended");
+        logger.info("  - Memory: High");
+        logger.info("==".repeat(35));
         
         long endTime = System.nanoTime();
         double durationMs = (endTime - startTime) / 1_000_000.0;
-        System.out.println(String.format("\nExecution time: %.3f ms", durationMs));
+        logger.info(String.format("\nExecution time: %.3f ms", durationMs));
     }
 }

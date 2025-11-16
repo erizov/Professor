@@ -1,0 +1,12 @@
+{
+  "name": "quantum_control_systems",
+  "display_name": "Quantum Control Systems",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_84_quantum_hardware",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

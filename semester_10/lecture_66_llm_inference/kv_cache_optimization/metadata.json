@@ -1,0 +1,12 @@
+{
+  "name": "kv_cache_optimization",
+  "display_name": "Kv Cache Optimization",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_66_llm_inference",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

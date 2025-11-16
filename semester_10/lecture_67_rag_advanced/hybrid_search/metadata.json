@@ -1,0 +1,12 @@
+{
+  "name": "hybrid_search",
+  "display_name": "Hybrid Search",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_67_rag_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "voting_mechanisms",
+  "display_name": "Voting Mechanisms",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_93_blockchain_governance",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

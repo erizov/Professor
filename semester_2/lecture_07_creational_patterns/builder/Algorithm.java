@@ -5,7 +5,10 @@ import java.util.*;
  * 
  * Constructs complex objects step by step.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     // Product
     static class Computer {
@@ -230,14 +233,14 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("BUILDER DESIGN PATTERN DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("BUILDER DESIGN PATTERN DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Computer Builder
-        System.out.println("Example 1: Computer Builder");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Computer Builder");
+        logger.info("-".repeat(70));
         
         GamingComputerBuilder gamingBuilder = new GamingComputerBuilder();
         Computer gamingPc = gamingBuilder
@@ -248,7 +251,7 @@ public class Algorithm {
             .buildMotherboard("ASUS ROG Strix Z790")
             .getComputer();
         
-        System.out.println("Gaming PC: " + gamingPc);
+        logger.info("Gaming PC: " + gamingPc);
         
         OfficeComputerBuilder officeBuilder = new OfficeComputerBuilder();
         Computer officePc = officeBuilder
@@ -258,21 +261,21 @@ public class Algorithm {
             .buildGpu("Integrated Graphics")
             .getComputer();
         
-        System.out.println("Office PC: " + officePc);
-        System.out.println();
+        logger.info("Office PC: " + officePc);
+        logger.info();
         
         // Example 2: Using Director
-        System.out.println("Example 2: Using Director");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Using Director");
+        logger.info("-".repeat(70));
         
         ComputerDirector director = new ComputerDirector(new GamingComputerBuilder());
         Computer pc1 = director.buildGamingPc();
-        System.out.println("Director-built Gaming PC: " + pc1);
-        System.out.println();
+        logger.info("Director-built Gaming PC: " + pc1);
+        logger.info();
         
         // Example 3: Fluent Pizza Builder
-        System.out.println("Example 3: Fluent Pizza Builder");
-        System.out.println("-".repeat(70));
+        logger.info("Example 3: Fluent Pizza Builder");
+        logger.info("-".repeat(70));
         
         Pizza pizza1 = new PizzaBuilder()
             .size("Large")
@@ -282,7 +285,7 @@ public class Algorithm {
             .addMushrooms()
             .build();
         
-        System.out.println("Pizza 1: " + pizza1);
+        logger.info("Pizza 1: " + pizza1);
         
         Pizza pizza2 = new PizzaBuilder()
             .size("Medium")
@@ -293,21 +296,21 @@ public class Algorithm {
             .addPeppers()
             .build();
         
-        System.out.println("Pizza 2: " + pizza2);
-        System.out.println();
+        logger.info("Pizza 2: " + pizza2);
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern Summary:");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Step-by-step construction");
-        System.out.println("  - Reusable construction code");
-        System.out.println("  - Fluent interface");
-        System.out.println("\nWhen to Use:");
-        System.out.println("  - Complex object construction");
-        System.out.println("  - Many optional parameters");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern Summary:");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Step-by-step construction");
+        logger.info("  - Reusable construction code");
+        logger.info("  - Fluent interface");
+        logger.info("\nWhen to Use:");
+        logger.info("  - Complex object construction");
+        logger.info("  - Many optional parameters");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

@@ -18,6 +18,8 @@ from datetime import datetime
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 @dataclass
@@ -98,7 +100,7 @@ class Producer:
     def send(self, topic: str, payload: Any) -> int:
         """Send message."""
         msg_id = self.queue.publish(topic, payload)
-        print(f"[{self.name}] Published: {topic} - {payload}")
+        logger.info(f"[{self.name}] Published: {topic} - {payload}")
         return msg_id
 
 
@@ -135,7 +137,7 @@ class Consumer:
     
     def process(self, message: Message) -> None:
         """Process message."""
-        print(f"[{self.name}] Consumed: {message}")
+        logger.info(f"[{self.name}] Consumed: {message}")
         # Mark message as processed
         self.queue.queue.task_done()
 
@@ -185,14 +187,14 @@ class TopicQueue:
 
 def main() -> None:
     """Demonstration of Message Queue Pattern."""
-    print("=" * 70)
-    print("MESSAGE QUEUE PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("MESSAGE QUEUE PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic Message Queue
-    print("Example 1: Basic Message Queue")
-    print("-" * 70)
+    logger.info("Example 1: Basic Message Queue")
+    logger.info("-" * 70)
     
     mq = MessageQueue()
     
@@ -215,19 +217,19 @@ def main() -> None:
     
     consumer1.stop()
     consumer2.stop()
-    print()
+    logger.info()
     
     # Example 2: Topic-based Queue
-    print("Example 2: Topic-based Message Queue")
-    print("-" * 70)
+    logger.info("Example 2: Topic-based Message Queue")
+    logger.info("-" * 70)
     
     topic_queue = TopicQueue()
     
     def order_handler(topic: str, payload: Any) -> None:
-        print(f"Order handler received: {payload}")
+        logger.info(f"Order handler received: {payload}")
     
     def notification_handler(topic: str, payload: Any) -> None:
-        print(f"Notification handler received: {payload}")
+        logger.info(f"Notification handler received: {payload}")
     
     # Subscribe to topics
     topic_queue.subscribe("orders", order_handler)
@@ -239,11 +241,11 @@ def main() -> None:
     topic_queue.publish("orders", "Order #2002")
     
     time.sleep(0.5)
-    print()
+    logger.info()
     
     # Example 3: Performance measurement
-    print("Example 3: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 3: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Message Queue")
     
@@ -256,38 +258,38 @@ def main() -> None:
         return mq.size()
     
     result, metrics = timer.measure(queue_operations)
-    print(f"Time to publish 100 messages: {metrics['execution_time_ms']:.3f} ms")
-    print(f"Queue size: {result}")
-    print()
+    logger.info(f"Time to publish 100 messages: {metrics['execution_time_ms']:.3f} ms")
+    logger.info(f"Queue size: {result}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Asynchronous communication pattern where messages are")
-    print("  sent to a queue and processed by consumers. Decouples")
-    print("  producers from consumers.")
-    print("\nKey Advantages:")
-    print("  - Decouples producers and consumers")
-    print("  - Asynchronous processing")
-    print("  - Load balancing")
-    print("  - Reliability (messages persist)")
-    print("\nKey Disadvantages:")
-    print("  - Additional infrastructure")
-    print("  - Message ordering challenges")
-    print("  - Complexity in error handling")
-    print("  - Potential message loss")
-    print("\nWhen to Use:")
-    print("  - Asynchronous processing needed")
-    print("  - Decouple components")
-    print("  - Load balancing")
-    print("  - Event-driven architecture")
-    print("\nCommon Use Cases:")
-    print("  - Apache Kafka")
-    print("  - RabbitMQ")
-    print("  - Amazon SQS")
-    print("  - Azure Service Bus")
-    print("  - Microservices communication")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Asynchronous communication pattern where messages are")
+    logger.info("  sent to a queue and processed by consumers. Decouples")
+    logger.info("  producers from consumers.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Decouples producers and consumers")
+    logger.info("  - Asynchronous processing")
+    logger.info("  - Load balancing")
+    logger.info("  - Reliability (messages persist)")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Additional infrastructure")
+    logger.info("  - Message ordering challenges")
+    logger.info("  - Complexity in error handling")
+    logger.info("  - Potential message loss")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Asynchronous processing needed")
+    logger.info("  - Decouple components")
+    logger.info("  - Load balancing")
+    logger.info("  - Event-driven architecture")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Apache Kafka")
+    logger.info("  - RabbitMQ")
+    logger.info("  - Amazon SQS")
+    logger.info("  - Azure Service Bus")
+    logger.info("  - Microservices communication")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

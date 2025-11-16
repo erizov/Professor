@@ -5,7 +5,10 @@ import java.util.*;
  * 
  * Advanced heap with O(1) insert and decrease-key.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class FibonacciNode {
         int key;
@@ -87,32 +90,32 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("FIBONACCI HEAP");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("FIBONACCI HEAP");
+        logger.info("=".repeat(70));
+        logger.info();
         
         FibonacciHeap heap = new FibonacciHeap();
         
-        System.out.println("Inserting elements:");
+        logger.info("Inserting elements:");
         for (int key : new int[]{5, 3, 7, 1, 9, 2}) {
             heap.insert(key);
-            System.out.println("  Inserted: " + key + ", Min: " + heap.findMin());
+            logger.info("  Inserted: " + key + ", Min: " + heap.findMin());
         }
-        System.out.println();
+        logger.info();
         
-        System.out.println("Extracting minimum:");
+        logger.info("Extracting minimum:");
         while (!heap.isEmpty()) {
             FibonacciNode min = heap.extractMin();
-            System.out.println("  Extracted: " + min.key);
+            logger.info("  Extracted: " + min.key);
         }
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity: O(1) insert, O(log n) extract");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity: O(1) insert, O(log n) extract");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

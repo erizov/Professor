@@ -3,7 +3,10 @@
  * 
  * Creates objects without specifying exact class.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     // Product interface
     interface Shape {
@@ -83,10 +86,10 @@ public class Algorithm {
         Page createPage();
         
         default void printDocument() {
-            System.out.println("Creating " + this.getClass().getSimpleName());
+            logger.info("Creating " + this.getClass().getSimpleName());
             for (int i = 0; i < 3; i++) {
                 Page page = createPage();
-                System.out.println("  Page " + (i + 1) + ": " + page.render());
+                logger.info("  Page " + (i + 1) + ": " + page.render());
             }
         }
     }
@@ -122,44 +125,44 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("FACTORY DESIGN PATTERN DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("FACTORY DESIGN PATTERN DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Simple Factory
-        System.out.println("Example 1: Simple Factory Pattern");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Simple Factory Pattern");
+        logger.info("-".repeat(70));
         
         Shape circle = ShapeFactory.createShape("circle", 5.0);
-        System.out.println(circle.draw());
+        logger.info(circle.draw());
         System.out.printf("Area: %.2f%n", circle.area());
         
         Shape rectangle = ShapeFactory.createShape("rectangle", 4.0, 6.0);
-        System.out.println(rectangle.draw());
+        logger.info(rectangle.draw());
         System.out.printf("Area: %.2f%n", rectangle.area());
         
         Shape triangle = ShapeFactory.createShape("triangle", 3.0, 4.0);
-        System.out.println(triangle.draw());
+        logger.info(triangle.draw());
         System.out.printf("Area: %.2f%n", triangle.area());
-        System.out.println();
+        logger.info();
         
         // Example 2: Factory Method
-        System.out.println("Example 2: Factory Method Pattern");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Factory Method Pattern");
+        logger.info("-".repeat(70));
         
         Document pdfDoc = new PDFDocument();
         pdfDoc.printDocument();
         
-        System.out.println();
+        logger.info();
         
         Document wordDoc = new WordDocument();
         wordDoc.printDocument();
-        System.out.println();
+        logger.info();
         
         // Example 3: Multiple shapes
-        System.out.println("Example 3: Creating Multiple Objects");
-        System.out.println("-".repeat(70));
+        logger.info("Example 3: Creating Multiple Objects");
+        logger.info("-".repeat(70));
         
         Object[][] specs = {
             {"circle", new double[]{3.0}},
@@ -172,39 +175,39 @@ public class Algorithm {
             String type = (String) spec[0];
             double[] args = (double[]) spec[1];
             Shape shape = ShapeFactory.createShape(type, args);
-            System.out.println(shape.draw());
+            logger.info(shape.draw());
             double area = shape.area();
             System.out.printf("  Area: %.2f%n", area);
             totalArea += area;
         }
         
         System.out.printf("%nTotal area: %.2f%n", totalArea);
-        System.out.println();
+        logger.info();
         
         // Example 4: Error handling
-        System.out.println("Example 4: Error Handling");
-        System.out.println("-".repeat(70));
+        logger.info("Example 4: Error Handling");
+        logger.info("-".repeat(70));
         
         try {
             Shape invalid = ShapeFactory.createShape("hexagon", 5.0);
         } catch (IllegalArgumentException e) {
-            System.out.println("Error: " + e.getMessage());
+            logger.info("Error: " + e.getMessage());
         }
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern Summary:");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Loose coupling");
-        System.out.println("  - Easy to extend");
-        System.out.println("  - Centralized creation");
-        System.out.println("\nWhen to Use:");
-        System.out.println("  - Multiple related types");
-        System.out.println("  - Runtime type determination");
-        System.out.println("  - Delegation to subclasses");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern Summary:");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Loose coupling");
+        logger.info("  - Easy to extend");
+        logger.info("  - Centralized creation");
+        logger.info("\nWhen to Use:");
+        logger.info("  - Multiple related types");
+        logger.info("  - Runtime type determination");
+        logger.info("  - Delegation to subclasses");
+        logger.info("=".repeat(70));
         System.out.printf("%nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

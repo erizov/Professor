@@ -8,7 +8,10 @@ import java.util.Random;
  * Time Complexity: O(√n)
  * Space Complexity: O(1)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     /**
      * Search for target using jump search.
@@ -63,12 +66,12 @@ public class Algorithm {
         int n = arr.length;
         int step = (int)Math.sqrt(n);
         
-        System.out.println("Array length: " + n);
-        System.out.println("Target: " + target);
-        System.out.println("Jump size: " + step + " (√" + n + ")");
-        System.out.println();
+        logger.info("Array length: " + n);
+        logger.info("Target: " + target);
+        logger.info("Jump size: " + step + " (√" + n + ")");
+        logger.info();
         
-        System.out.println("Jumping phase:");
+        logger.info("Jumping phase:");
         int prev = 0;
         int jumpCount = 0;
         
@@ -81,23 +84,23 @@ public class Algorithm {
             jumpCount++;
             
             if (prev >= n) {
-                System.out.println("  Went beyond array. Not found.");
+                logger.info("  Went beyond array. Not found.");
                 return -1;
             }
         }
         
         System.out.printf("  Found block: indices [%d:%d]%n", 
                          prev, Math.min(step, n));
-        System.out.println();
+        logger.info();
         
-        System.out.println("Linear search phase:");
+        logger.info("Linear search phase:");
         while (arr[prev] < target) {
             System.out.printf("  Check arr[%d] = %d < %d%n",
                             prev, arr[prev], target);
             prev++;
             
             if (prev == Math.min(step, n)) {
-                System.out.println("  Reached end of block. Not found.");
+                logger.info("  Reached end of block. Not found.");
                 return -1;
             }
         }
@@ -118,47 +121,47 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("JUMP SEARCH DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("JUMP SEARCH DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Element found
-        System.out.println("Example 1: Element Found");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Element Found");
+        logger.info("-".repeat(70));
         int[] data1 = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19};
         int target1 = 13;
         int result1 = jumpSearch(data1, target1);
-        System.out.println("Target: " + target1);
-        System.out.println("Result: Index " + result1);
+        logger.info("Target: " + target1);
+        logger.info("Result: Index " + result1);
         if (result1 != -1) {
             System.out.printf("Verification: arr[%d] = %d%n",
                             result1, data1[result1]);
         }
-        System.out.println();
+        logger.info();
         
         // Example 2: Element not found
-        System.out.println("Example 2: Element Not Found");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Element Not Found");
+        logger.info("-".repeat(70));
         int[] data2 = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19};
         int target2 = 10;
         int result2 = jumpSearch(data2, target2);
-        System.out.println("Target: " + target2);
-        System.out.println("Result: " + 
+        logger.info("Target: " + target2);
+        logger.info("Result: " + 
                           (result2 == -1 ? "Not found" : "Index " + result2));
-        System.out.println();
+        logger.info();
         
         // Example 3: Visualization
-        System.out.println("Example 3: Visualized Jump Search");
-        System.out.println("-".repeat(70));
+        logger.info("Example 3: Visualized Jump Search");
+        logger.info("-".repeat(70));
         int[] data3 = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
         int target3 = 11;
         jumpSearchVisualized(data3, target3);
-        System.out.println();
+        logger.info();
         
         // Example 4: Performance measurement
-        System.out.println("Example 4: Performance Measurement");
-        System.out.println("-".repeat(70));
+        logger.info("Example 4: Performance Measurement");
+        logger.info("-".repeat(70));
         
         Random rand = new Random(42);
         int[] sizes = {1000, 10000, 100000};
@@ -179,26 +182,26 @@ public class Algorithm {
             System.out.printf("n=%6d: %8.3f ms%n", size, ms);
         }
         
-        System.out.println();
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Time:  O(√n)");
-        System.out.println("  Space: O(1)");
-        System.out.println("\nKey Points:");
-        System.out.println("  + Better than linear O(n)");
-        System.out.println("  + Simpler than binary");
-        System.out.println("  + Works on sorted arrays");
-        System.out.println("  - Requires sorted array");
-        System.out.println("  - Slower than binary O(log n)");
-        System.out.println("\nComparison:");
-        System.out.println("  Linear:  O(n)");
-        System.out.println("  Jump:    O(√n)");
-        System.out.println("  Binary:  O(log n)");
-        System.out.println("\nWhen to use:");
-        System.out.println("  • Sorted array");
-        System.out.println("  • Middle ground search");
-        System.out.println("  • Backward jumping not possible");
-        System.out.println("=".repeat(70));
+        logger.info();
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Time:  O(√n)");
+        logger.info("  Space: O(1)");
+        logger.info("\nKey Points:");
+        logger.info("  + Better than linear O(n)");
+        logger.info("  + Simpler than binary");
+        logger.info("  + Works on sorted arrays");
+        logger.info("  - Requires sorted array");
+        logger.info("  - Slower than binary O(log n)");
+        logger.info("\nComparison:");
+        logger.info("  Linear:  O(n)");
+        logger.info("  Jump:    O(√n)");
+        logger.info("  Binary:  O(log n)");
+        logger.info("\nWhen to use:");
+        logger.info("  • Sorted array");
+        logger.info("  • Middle ground search");
+        logger.info("  • Backward jumping not possible");
+        logger.info("=".repeat(70));
         
         long endTime = System.nanoTime();
         double totalMs = (endTime - startTime) / 1_000_000.0;

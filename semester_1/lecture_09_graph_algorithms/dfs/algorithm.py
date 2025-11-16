@@ -14,6 +14,8 @@ from typing import List, Set, Dict, Callable
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class Graph:
@@ -187,14 +189,14 @@ class Graph:
 
 def main() -> None:
     """Demonstration of DFS."""
-    print("=" * 70)
-    print("DEPTH-FIRST SEARCH (DFS) DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("DEPTH-FIRST SEARCH (DFS) DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic DFS on undirected graph
-    print("Example 1: Basic DFS on Undirected Graph")
-    print("-" * 70)
+    logger.info("Example 1: Basic DFS on Undirected Graph")
+    logger.info("-" * 70)
     
     g1 = Graph(directed=False)
     edges = [(0, 1), (0, 2), (1, 3), (1, 4), (2, 5), (2, 6)]
@@ -202,14 +204,14 @@ def main() -> None:
     for u, v in edges:
         g1.add_edge(u, v)
     
-    print("Graph edges:", edges)
-    print(f"DFS from node 0 (recursive): {g1.dfs(0)}")
-    print(f"DFS from node 0 (iterative): {g1.dfs_iterative(0)}")
-    print()
+    logger.info("Graph edges:", edges)
+    logger.info(f"DFS from node 0 (recursive): {g1.dfs(0)}")
+    logger.info(f"DFS from node 0 (iterative): {g1.dfs_iterative(0)}")
+    logger.info()
     
     # Example 2: DFS on directed graph
-    print("Example 2: DFS on Directed Graph")
-    print("-" * 70)
+    logger.info("Example 2: DFS on Directed Graph")
+    logger.info("-" * 70)
     
     g2 = Graph(directed=True)
     edges2 = [(0, 1), (0, 2), (1, 3), (2, 3), (3, 4)]
@@ -217,13 +219,13 @@ def main() -> None:
     for u, v in edges2:
         g2.add_edge(u, v)
     
-    print("Graph edges:", edges2)
-    print(f"DFS from node 0: {g2.dfs(0)}")
-    print()
+    logger.info("Graph edges:", edges2)
+    logger.info(f"DFS from node 0: {g2.dfs(0)}")
+    logger.info()
     
     # Example 3: Connected components
-    print("Example 3: Finding Connected Components")
-    print("-" * 70)
+    logger.info("Example 3: Finding Connected Components")
+    logger.info("-" * 70)
     
     g3 = Graph(directed=False)
     # Two separate components
@@ -234,14 +236,14 @@ def main() -> None:
     g3.add_edge(4, 6)
     
     components = g3.dfs_all()
-    print(f"Number of components: {len(components)}")
+    logger.info(f"Number of components: {len(components)}")
     for i, comp in enumerate(components):
-        print(f"  Component {i+1}: {comp}")
-    print()
+        logger.info(f"  Component {i+1}: {comp}")
+    logger.info()
     
     # Example 4: Cycle detection
-    print("Example 4: Cycle Detection")
-    print("-" * 70)
+    logger.info("Example 4: Cycle Detection")
+    logger.info("-" * 70)
     
     # Graph with cycle
     g4_cycle = Graph(directed=False)
@@ -249,8 +251,8 @@ def main() -> None:
     g4_cycle.add_edge(1, 2)
     g4_cycle.add_edge(2, 0)  # Creates cycle
     
-    print("Graph with cycle: [(0,1), (1,2), (2,0)]")
-    print(f"Has cycle: {g4_cycle.has_cycle()}")
+    logger.info("Graph with cycle: [(0,1), (1,2), (2,0)]")
+    logger.info(f"Has cycle: {g4_cycle.has_cycle()}")
     
     # Graph without cycle
     g4_no_cycle = Graph(directed=False)
@@ -258,13 +260,13 @@ def main() -> None:
     g4_no_cycle.add_edge(1, 2)
     g4_no_cycle.add_edge(0, 3)
     
-    print("\nGraph without cycle: [(0,1), (1,2), (0,3)]")
-    print(f"Has cycle: {g4_no_cycle.has_cycle()}")
-    print()
+    logger.info("\nGraph without cycle: [(0,1), (1,2), (0,3)]")
+    logger.info(f"Has cycle: {g4_no_cycle.has_cycle()}")
+    logger.info()
     
     # Example 5: Topological sort
-    print("Example 5: Topological Sort (DAG)")
-    print("-" * 70)
+    logger.info("Example 5: Topological Sort (DAG)")
+    logger.info("-" * 70)
     
     g5 = Graph(directed=True)
     # Task dependencies
@@ -275,32 +277,32 @@ def main() -> None:
     g5.add_edge(2, 3)  # Task 2 before 3
     g5.add_edge(3, 1)  # Task 3 before 1
     
-    print("Task dependencies (DAG):")
-    print("  5 → 2, 5 → 0, 4 → 0, 4 → 1, 2 → 3, 3 → 1")
+    logger.info("Task dependencies (DAG):")
+    logger.info("  5 → 2, 5 → 0, 4 → 0, 4 → 1, 2 → 3, 3 → 1")
     top_sort = g5.topological_sort()
-    print(f"Topological order: {top_sort}")
-    print("(Tasks should be executed in this order)")
-    print()
+    logger.info(f"Topological order: {top_sort}")
+    logger.info("(Tasks should be executed in this order)")
+    logger.info()
     
     # Example 6: DFS with callback
-    print("Example 6: DFS with Visit Callback")
-    print("-" * 70)
+    logger.info("Example 6: DFS with Visit Callback")
+    logger.info("-" * 70)
     
     g6 = Graph(directed=False)
     g6.add_edge(0, 1)
     g6.add_edge(0, 2)
     g6.add_edge(1, 3)
     
-    print("DFS traversal with callback:")
+    logger.info("DFS traversal with callback:")
     def visit_node(node):
-        print(f"  Visiting node: {node}")
+        logger.info(f"  Visiting node: {node}")
     
     g6.dfs(0, visit_callback=visit_node)
-    print()
+    logger.info()
     
     # Example 7: Performance measurement
-    print("Example 7: Performance on Different Graph Sizes")
-    print("-" * 70)
+    logger.info("Example 7: Performance on Different Graph Sizes")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("DFS")
     
@@ -311,34 +313,33 @@ def main() -> None:
             g_large.add_edge(i, i + 1)
         
         _, metrics = timer.measure(g_large.dfs, 0)
-        print(f"Graph with {n} nodes:")
-        print(f"  Time: {metrics['execution_time_ms']:.3f} ms")
-        print(f"  Nodes visited: {n}")
+        logger.info(f"Graph with {n} nodes:")
+        logger.info(f"  Time: {metrics['execution_time_ms']:.3f} ms")
+        logger.info(f"  Nodes visited: {n}")
     
-    print()
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O(V + E) - V vertices, E edges")
-    print("  Space: O(V) - recursion stack or explicit stack")
-    print("\nKey Advantages:")
-    print("  - Memory efficient for deep graphs")
-    print("  - Good for finding paths")
-    print("  - Can detect cycles")
-    print("  - Natural for recursive problems")
-    print("\nKey Disadvantages:")
-    print("  - May not find shortest path")
-    print("  - Stack overflow risk (recursive)")
-    print("  - Order depends on edge order")
-    print("\nCommon Use Cases:")
-    print("  - Topological sorting")
-    print("  - Cycle detection")
-    print("  - Path finding")
-    print("  - Connected components")
-    print("  - Maze solving")
-    print("  - Dependency resolution")
-    print("=" * 70)
+    logger.info()
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  O(V + E) - V vertices, E edges")
+    logger.info("  Space: O(V) - recursion stack or explicit stack")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Memory efficient for deep graphs")
+    logger.info("  - Good for finding paths")
+    logger.info("  - Can detect cycles")
+    logger.info("  - Natural for recursive problems")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - May not find shortest path")
+    logger.info("  - Stack overflow risk (recursive)")
+    logger.info("  - Order depends on edge order")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Topological sorting")
+    logger.info("  - Cycle detection")
+    logger.info("  - Path finding")
+    logger.info("  - Connected components")
+    logger.info("  - Maze solving")
+    logger.info("  - Dependency resolution")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":
     main()
-

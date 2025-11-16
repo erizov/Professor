@@ -1,0 +1,12 @@
+{
+  "name": "simd_optimization",
+  "display_name": "Simd Optimization",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_58_parallel_computing",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

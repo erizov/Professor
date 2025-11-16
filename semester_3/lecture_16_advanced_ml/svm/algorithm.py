@@ -15,6 +15,8 @@ from typing import List, Tuple, Optional
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class SVM:
@@ -98,14 +100,14 @@ class SVM:
 
 def main() -> None:
     """Demonstration of SVM Algorithm."""
-    print("=" * 70)
-    print("SUPPORT VECTOR MACHINE (SVM) DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("SUPPORT VECTOR MACHINE (SVM) DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Simple Binary Classification
-    print("Example 1: Binary Classification")
-    print("-" * 70)
+    logger.info("Example 1: Binary Classification")
+    logger.info("-" * 70)
     
     # Linearly separable data
     X = [
@@ -118,34 +120,34 @@ def main() -> None:
     svm = SVM(learning_rate=0.001, lambda_param=0.01, n_iters=1000)
     svm.fit(X, y)
     
-    print(f"Weights: {[f'{w:.3f}' for w in svm.w]}")
-    print(f"Bias: {svm.b:.3f}")
-    print()
+    logger.info(f"Weights: {[f'{w:.3f}' for w in svm.w]}")
+    logger.info(f"Bias: {svm.b:.3f}")
+    logger.info()
     
     # Predict
     test_X = [[1.5, 2.5], [7.5, 6.5]]
     predictions = svm.predict(test_X)
     
-    print("Predictions:")
+    logger.info("Predictions:")
     for i, (x, pred) in enumerate(zip(test_X, predictions)):
-        print(f"  Sample {i+1} {x}: {pred}")
-    print()
+        logger.info(f"  Sample {i+1} {x}: {pred}")
+    logger.info()
     
     # Example 2: Decision Function
-    print("Example 2: Decision Function Values")
-    print("-" * 70)
+    logger.info("Example 2: Decision Function Values")
+    logger.info("-" * 70)
     
     decision_values = svm.decision_function(test_X)
     for i, (x, dv) in enumerate(zip(test_X, decision_values)):
         margin = abs(dv)
-        print(f"Sample {i+1} {x}:")
-        print(f"  Decision value: {dv:.3f}")
-        print(f"  Margin: {margin:.3f}")
-    print()
+        logger.info(f"Sample {i+1} {x}:")
+        logger.info(f"  Decision value: {dv:.3f}")
+        logger.info(f"  Margin: {margin:.3f}")
+    logger.info()
     
     # Example 3: Performance measurement
-    print("Example 3: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 3: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("SVM")
     
@@ -166,46 +168,46 @@ def main() -> None:
         return len(svm.w)
     
     result, metrics = timer.measure(train_svm)
-    print(f"Time to train SVM on 50 samples: {metrics['execution_time_ms']:.3f} ms")
-    print(f"Features: {result}")
-    print()
+    logger.info(f"Time to train SVM on 50 samples: {metrics['execution_time_ms']:.3f} ms")
+    logger.info(f"Features: {result}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nAlgorithm Summary:")
-    print("\nDescription:")
-    print("  Supervised learning algorithm that finds optimal hyperplane")
-    print("  separating classes with maximum margin.")
-    print("\nTime Complexity:")
-    print("  Training: O(n² * m) to O(n³ * m) where:")
-    print("    n = number of samples")
-    print("    m = number of features")
-    print("  Prediction: O(m)")
-    print("\nKey Advantages:")
-    print("  - Effective in high dimensions")
-    print("  - Memory efficient")
-    print("  - Versatile (different kernels)")
-    print("  - Works well with clear margin")
-    print("\nKey Disadvantages:")
-    print("  - Poor performance on large datasets")
-    print("  - Doesn't work well with noise")
-    print("  - No probability estimates")
-    print("  - Sensitive to feature scaling")
-    print("\nWhen to Use:")
-    print("  - Binary classification")
-    print("  - High-dimensional data")
-    print("  - Clear margin of separation")
-    print("  - Text classification")
-    print("\nCommon Use Cases:")
-    print("  - Text classification")
-    print("  - Image classification")
-    print("  - Handwriting recognition")
-    print("  - Bioinformatics")
-    print("\nKernel Types:")
-    print("  - Linear: For linearly separable data")
-    print("  - Polynomial: For non-linear data")
-    print("  - RBF: For complex non-linear patterns")
-    print("  - Sigmoid: Neural network-like")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nAlgorithm Summary:")
+    logger.info("\nDescription:")
+    logger.info("  Supervised learning algorithm that finds optimal hyperplane")
+    logger.info("  separating classes with maximum margin.")
+    logger.info("\nTime Complexity:")
+    logger.info("  Training: O(n² * m) to O(n³ * m) where:")
+    logger.info("    n = number of samples")
+    logger.info("    m = number of features")
+    logger.info("  Prediction: O(m)")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Effective in high dimensions")
+    logger.info("  - Memory efficient")
+    logger.info("  - Versatile (different kernels)")
+    logger.info("  - Works well with clear margin")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Poor performance on large datasets")
+    logger.info("  - Doesn't work well with noise")
+    logger.info("  - No probability estimates")
+    logger.info("  - Sensitive to feature scaling")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Binary classification")
+    logger.info("  - High-dimensional data")
+    logger.info("  - Clear margin of separation")
+    logger.info("  - Text classification")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Text classification")
+    logger.info("  - Image classification")
+    logger.info("  - Handwriting recognition")
+    logger.info("  - Bioinformatics")
+    logger.info("\nKernel Types:")
+    logger.info("  - Linear: For linearly separable data")
+    logger.info("  - Polynomial: For non-linear data")
+    logger.info("  - RBF: For complex non-linear patterns")
+    logger.info("  - Sigmoid: Neural network-like")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

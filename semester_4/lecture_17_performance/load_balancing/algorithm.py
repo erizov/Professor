@@ -18,6 +18,8 @@ import time
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class LoadBalancingStrategy(Enum):
@@ -201,14 +203,14 @@ class LoadBalancerFactory:
 
 def main() -> None:
     """Demonstration of Load Balancing Pattern."""
-    print("=" * 70)
-    print("LOAD BALANCING PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("LOAD BALANCING PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Round-Robin Load Balancing
-    print("Example 1: Round-Robin Load Balancing")
-    print("-" * 70)
+    logger.info("Example 1: Round-Robin Load Balancing")
+    logger.info("-" * 70)
     
     servers = [
         Server("server1", "192.168.1.1"),
@@ -218,16 +220,16 @@ def main() -> None:
     
     lb = RoundRobinLoadBalancer(servers)
     
-    print("Distributing 10 requests:")
+    logger.info("Distributing 10 requests:")
     for i in range(10):
         server = lb.select_server()
         server.active_connections += 1
-        print(f"  Request {i+1} -> {server.id} (connections: {server.active_connections})")
-    print()
+        logger.info(f"  Request {i+1} -> {server.id} (connections: {server.active_connections})")
+    logger.info()
     
     # Example 2: Least Connections
-    print("Example 2: Least Connections Load Balancing")
-    print("-" * 70)
+    logger.info("Example 2: Least Connections Load Balancing")
+    logger.info("-" * 70)
     
     servers = [
         Server("server1", "192.168.1.1", active_connections=5),
@@ -237,16 +239,16 @@ def main() -> None:
     
     lb = LeastConnectionsLoadBalancer(servers)
     
-    print("Distributing 5 requests:")
+    logger.info("Distributing 5 requests:")
     for i in range(5):
         server = lb.select_server()
         server.active_connections += 1
-        print(f"  Request {i+1} -> {server.id} (connections: {server.active_connections})")
-    print()
+        logger.info(f"  Request {i+1} -> {server.id} (connections: {server.active_connections})")
+    logger.info()
     
     # Example 3: Weighted Round-Robin
-    print("Example 3: Weighted Round-Robin Load Balancing")
-    print("-" * 70)
+    logger.info("Example 3: Weighted Round-Robin Load Balancing")
+    logger.info("-" * 70)
     
     servers = [
         Server("server1", "192.168.1.1", weight=3),
@@ -256,21 +258,21 @@ def main() -> None:
     
     lb = WeightedRoundRobinLoadBalancer(servers)
     
-    print("Distributing 12 requests (weights: 3, 2, 1):")
+    logger.info("Distributing 12 requests (weights: 3, 2, 1):")
     distribution = {}
     for i in range(12):
         server = lb.select_server()
         distribution[server.id] = distribution.get(server.id, 0) + 1
-        print(f"  Request {i+1} -> {server.id}")
+        logger.info(f"  Request {i+1} -> {server.id}")
     
-    print("\nDistribution summary:")
+    logger.info("\nDistribution summary:")
     for server_id, count in distribution.items():
-        print(f"  {server_id}: {count} requests")
-    print()
+        logger.info(f"  {server_id}: {count} requests")
+    logger.info()
     
     # Example 4: Health Checks
-    print("Example 4: Health Checks and Failover")
-    print("-" * 70)
+    logger.info("Example 4: Health Checks and Failover")
+    logger.info("-" * 70)
     
     servers = [
         Server("server1", "192.168.1.1"),
@@ -280,21 +282,21 @@ def main() -> None:
     
     lb = RoundRobinLoadBalancer(servers)
     
-    print("Marking server2 as unhealthy:")
+    logger.info("Marking server2 as unhealthy:")
     lb.mark_server_unhealthy("server2")
     
-    print("Distributing 6 requests:")
+    logger.info("Distributing 6 requests:")
     for i in range(6):
         server = lb.select_server()
         if server:
-            print(f"  Request {i+1} -> {server.id}")
+            logger.info(f"  Request {i+1} -> {server.id}")
         else:
-            print(f"  Request {i+1} -> No healthy servers")
-    print()
+            logger.info(f"  Request {i+1} -> No healthy servers")
+    logger.info()
     
     # Example 5: Performance measurement
-    print("Example 5: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 5: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Load Balancing")
     
@@ -310,43 +312,43 @@ def main() -> None:
         return sum(s.active_connections for s in servers)
     
     result, metrics = timer.measure(load_balancing_operations)
-    print(f"Time to distribute 1000 requests: {metrics['execution_time_ms']:.3f} ms")
-    print(f"Total connections: {result}")
-    print()
+    logger.info(f"Time to distribute 1000 requests: {metrics['execution_time_ms']:.3f} ms")
+    logger.info(f"Total connections: {result}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Distributes incoming requests across multiple servers to")
-    print("  optimize resource utilization, maximize throughput, and")
-    print("  minimize response time.")
-    print("\nKey Advantages:")
-    print("  - Improved performance")
-    print("  - High availability")
-    print("  - Scalability")
-    print("  - Fault tolerance")
-    print("\nKey Disadvantages:")
-    print("  - Additional infrastructure")
-    print("  - Session affinity challenges")
-    print("  - Configuration complexity")
-    print("  - Single point of failure (if not redundant)")
-    print("\nWhen to Use:")
-    print("  - Multiple server instances")
-    print("  - High traffic applications")
-    print("  - Need for high availability")
-    print("  - Horizontal scaling")
-    print("\nCommon Use Cases:")
-    print("  - Web servers")
-    print("  - Application servers")
-    print("  - Database servers")
-    print("  - API gateways")
-    print("\nLoad Balancing Strategies:")
-    print("  - Round-Robin: Distribute sequentially")
-    print("  - Least Connections: Choose server with fewest connections")
-    print("  - Weighted Round-Robin: Distribute based on server capacity")
-    print("  - Random: Random selection")
-    print("  - IP Hash: Consistent hashing based on client IP")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Distributes incoming requests across multiple servers to")
+    logger.info("  optimize resource utilization, maximize throughput, and")
+    logger.info("  minimize response time.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Improved performance")
+    logger.info("  - High availability")
+    logger.info("  - Scalability")
+    logger.info("  - Fault tolerance")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Additional infrastructure")
+    logger.info("  - Session affinity challenges")
+    logger.info("  - Configuration complexity")
+    logger.info("  - Single point of failure (if not redundant)")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Multiple server instances")
+    logger.info("  - High traffic applications")
+    logger.info("  - Need for high availability")
+    logger.info("  - Horizontal scaling")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Web servers")
+    logger.info("  - Application servers")
+    logger.info("  - Database servers")
+    logger.info("  - API gateways")
+    logger.info("\nLoad Balancing Strategies:")
+    logger.info("  - Round-Robin: Distribute sequentially")
+    logger.info("  - Least Connections: Choose server with fewest connections")
+    logger.info("  - Weighted Round-Robin: Distribute based on server capacity")
+    logger.info("  - Random: Random selection")
+    logger.info("  - IP Hash: Consistent hashing based on client IP")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

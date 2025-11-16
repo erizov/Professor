@@ -1,0 +1,12 @@
+{
+  "name": "query_hints",
+  "display_name": "Query Hints",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_104_database_performance",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

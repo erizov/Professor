@@ -1,0 +1,12 @@
+{
+  "name": "database_sharding_advanced",
+  "display_name": "Database Sharding Advanced",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_105_database_architecture",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

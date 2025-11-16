@@ -1,0 +1,12 @@
+{
+  "name": "ai_powered_support",
+  "display_name": "Ai Powered Support",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_95_support_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

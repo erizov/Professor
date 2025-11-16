@@ -1,0 +1,12 @@
+{
+  "name": "privacy_coins",
+  "display_name": "Privacy Coins",
+  "category": "Advanced Graduate Level",
+  "semester": 13,
+  "lecture": "lecture_91_blockchain_privacy",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

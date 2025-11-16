@@ -1,0 +1,12 @@
+{
+  "name": "csp_model",
+  "display_name": "Csp Model",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_57_concurrency_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

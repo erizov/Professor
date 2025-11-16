@@ -12,6 +12,8 @@ from pathlib import Path
 from abc import ABC, abstractmethod
 from typing import List, Any
 from enum import Enum
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
@@ -58,13 +60,13 @@ class NewsAgency(Subject):
         """Attach an observer."""
         if observer not in self._observers:
             self._observers.append(observer)
-            print(f"Observer {observer} attached")
+            logger.info(f"Observer {observer} attached")
     
     def detach(self, observer: Observer) -> None:
         """Detach an observer."""
         if observer in self._observers:
             self._observers.remove(observer)
-            print(f"Observer {observer} detached")
+            logger.info(f"Observer {observer} detached")
     
     def notify(self) -> None:
         """Notify all observers."""
@@ -74,7 +76,7 @@ class NewsAgency(Subject):
     def set_news(self, news: str) -> None:
         """Set news and notify observers."""
         self._news = news
-        print(f"\nNews Agency: Publishing news - '{news}'")
+        logger.info(f"\nNews Agency: Publishing news - '{news}'")
         self.notify()
 
 
@@ -89,7 +91,7 @@ class NewsChannel(Observer):
     def update(self, data: str) -> None:
         """Update with new news."""
         self.news = data
-        print(f"  {self.name}: Received news - '{self.news}'")
+        logger.info(f"  {self.name}: Received news - '{self.news}'")
     
     def __repr__(self) -> str:
         return f"NewsChannel({self.name})"
@@ -105,7 +107,7 @@ class EmailSubscriber(Observer):
     def update(self, data: str) -> None:
         """Update with new news."""
         self.news = data
-        print(f"  Email to {self.email}: '{self.news}'")
+        logger.info(f"  Email to {self.email}: '{self.news}'")
     
     def __repr__(self) -> str:
         return f"EmailSubscriber({self.email})"
@@ -167,9 +169,9 @@ class CurrentConditionsDisplay(Observer):
         if isinstance(data, WeatherData):
             self.temperature = data.get_temperature()
             self.humidity = data.get_humidity()
-            print(f"  {self.name} Display:")
-            print(f"    Temperature: {self.temperature}°F")
-            print(f"    Humidity: {self.humidity}%")
+            logger.info(f"  {self.name} Display:")
+            logger.info(f"    Temperature: {self.temperature}°F")
+            logger.info(f"    Humidity: {self.humidity}%")
     
     def __repr__(self) -> str:
         return f"CurrentConditionsDisplay({self.name})"
@@ -206,7 +208,7 @@ class Stock(Subject):
         change = price - old_price
         change_pct = (change / old_price * 100) if old_price > 0 else 0
         
-        print(f"\n{self.symbol}: ${old_price:.2f} → ${price:.2f} "
+        logger.info(f"\n{self.symbol}: ${old_price:.2f} → ${price:.2f} "
               f"({change:+.2f}, {change_pct:+.2f}%)")
         self.notify()
     
@@ -230,14 +232,14 @@ class StockTrader(Observer):
             price = data.get_price()
             change = price - self.last_price if self.last_price > 0 else 0
             
-            print(f"  {self.name}: {data.symbol} = ${price:.2f}", end="")
+            logger.info(f"  {self.name}: {data.symbol} = ${price:.2f}")
             
             if self.buy_threshold and price <= self.buy_threshold:
-                print(" → BUY SIGNAL!")
+                logger.info(" → BUY SIGNAL!")
             elif self.sell_threshold and price >= self.sell_threshold:
-                print(" → SELL SIGNAL!")
+                logger.info(" → SELL SIGNAL!")
             else:
-                print()
+                logger.info()
             
             self.last_price = price
     
@@ -247,14 +249,14 @@ class StockTrader(Observer):
 
 def main() -> None:
     """Demonstration of Observer Pattern."""
-    print("=" * 70)
-    print("OBSERVER DESIGN PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("OBSERVER DESIGN PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: News Agency
-    print("Example 1: News Agency (Publisher-Subscriber)")
-    print("-" * 70)
+    logger.info("Example 1: News Agency (Publisher-Subscriber)")
+    logger.info("-" * 70)
     
     agency = NewsAgency()
     
@@ -267,15 +269,15 @@ def main() -> None:
     agency.attach(email1)
     
     agency.set_news("Breaking: New algorithm discovered!")
-    print()
+    logger.info()
     
     agency.detach(channel2)
     agency.set_news("Update: Algorithm implementation complete!")
-    print()
+    logger.info()
     
     # Example 2: Weather Station
-    print("Example 2: Weather Station")
-    print("-" * 70)
+    logger.info("Example 2: Weather Station")
+    logger.info("-" * 70)
     
     weather = WeatherData()
     
@@ -286,14 +288,14 @@ def main() -> None:
     weather.attach(display2)
     
     weather.set_measurements(75.0, 65.0, 30.4)
-    print()
+    logger.info()
     
     weather.set_measurements(80.0, 70.0, 30.2)
-    print()
+    logger.info()
     
     # Example 3: Stock Market
-    print("Example 3: Stock Market Trading")
-    print("-" * 70)
+    logger.info("Example 3: Stock Market Trading")
+    logger.info("-" * 70)
     
     apple = Stock("AAPL", 150.00)
     
@@ -308,11 +310,11 @@ def main() -> None:
     apple.set_price(142.00)  # Below buy threshold
     apple.set_price(155.00)  # Price rise
     apple.set_price(162.00)  # Above sell threshold
-    print()
+    logger.info()
     
     # Example 4: Multiple subjects, multiple observers
-    print("Example 4: Multiple Subjects and Observers")
-    print("-" * 70)
+    logger.info("Example 4: Multiple Subjects and Observers")
+    logger.info("-" * 70)
     
     google = Stock("GOOGL", 2500.00)
     microsoft = Stock("MSFT", 350.00)
@@ -324,46 +326,45 @@ def main() -> None:
     
     google.set_price(2550.00)
     microsoft.set_price(345.00)
-    print()
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Define a one-to-many dependency between objects so")
-    print("  that when one object changes state, all dependents")
-    print("  are notified and updated automatically.")
-    print("\nKey Advantages:")
-    print("  - Loose coupling between subject and observers")
-    print("  - Dynamic subscription/unsubscription")
-    print("  - Open/Closed Principle (easy to add observers)")
-    print("  - Broadcast communication")
-    print("\nKey Disadvantages:")
-    print("  - Unexpected updates (observers don't know about each other)")
-    print("  - Performance overhead (many notifications)")
-    print("  - Memory leaks if observers not properly detached")
-    print("\nWhen to Use:")
-    print("  - When change to one object requires changing others")
-    print("  - When number of dependents is unknown or dynamic")
-    print("  - When objects should be loosely coupled")
-    print("  - Event-driven systems")
-    print("\nWhen NOT to Use:")
-    print("  - When updates are too frequent (performance)")
-    print("  - When tight coupling is acceptable")
-    print("  - When order of notifications matters critically")
-    print("\nCommon Use Cases:")
-    print("  - Model-View-Controller (MVC) architecture")
-    print("  - Event handling systems")
-    print("  - Publish-Subscribe systems")
-    print("  - Stock market monitoring")
-    print("  - Weather monitoring systems")
-    print("  - GUI frameworks (button clicks, etc.)")
-    print("\nVariations:")
-    print("  - Push model: Subject sends data to observers")
-    print("  - Pull model: Observers request data from subject")
-    print("  - Event bus: Centralized event distribution")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Define a one-to-many dependency between objects so")
+    logger.info("  that when one object changes state, all dependents")
+    logger.info("  are notified and updated automatically.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Loose coupling between subject and observers")
+    logger.info("  - Dynamic subscription/unsubscription")
+    logger.info("  - Open/Closed Principle (easy to add observers)")
+    logger.info("  - Broadcast communication")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Unexpected updates (observers don't know about each other)")
+    logger.info("  - Performance overhead (many notifications)")
+    logger.info("  - Memory leaks if observers not properly detached")
+    logger.info("\nWhen to Use:")
+    logger.info("  - When change to one object requires changing others")
+    logger.info("  - When number of dependents is unknown or dynamic")
+    logger.info("  - When objects should be loosely coupled")
+    logger.info("  - Event-driven systems")
+    logger.info("\nWhen NOT to Use:")
+    logger.info("  - When updates are too frequent (performance)")
+    logger.info("  - When tight coupling is acceptable")
+    logger.info("  - When order of notifications matters critically")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Model-View-Controller (MVC) architecture")
+    logger.info("  - Event handling systems")
+    logger.info("  - Publish-Subscribe systems")
+    logger.info("  - Stock market monitoring")
+    logger.info("  - Weather monitoring systems")
+    logger.info("  - GUI frameworks (button clicks, etc.)")
+    logger.info("\nVariations:")
+    logger.info("  - Push model: Subject sends data to observers")
+    logger.info("  - Pull model: Observers request data from subject")
+    logger.info("  - Event bus: Centralized event distribution")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":
     main()
-

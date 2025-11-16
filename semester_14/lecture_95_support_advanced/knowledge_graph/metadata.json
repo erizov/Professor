@@ -1,0 +1,12 @@
+{
+  "name": "knowledge_graph",
+  "display_name": "Knowledge Graph",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_95_support_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

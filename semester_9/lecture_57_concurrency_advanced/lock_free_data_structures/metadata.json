@@ -1,0 +1,12 @@
+{
+  "name": "lock_free_data_structures",
+  "display_name": "Lock Free Data Structures",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_57_concurrency_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

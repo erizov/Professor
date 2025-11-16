@@ -13,6 +13,8 @@ import random
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class AVLNode:
@@ -199,60 +201,60 @@ class AVLTree:
 
 def main() -> None:
     """Demonstration of AVL Tree."""
-    print("=" * 70)
-    print("AVL TREE DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("AVL TREE DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic operations
-    print("Example 1: Building an AVL Tree")
-    print("-" * 70)
+    logger.info("Example 1: Building an AVL Tree")
+    logger.info("-" * 70)
     
     avl = AVLTree()
     values = [50, 30, 70, 20, 40, 60, 80]
     
-    print(f"Inserting values: {values}")
+    logger.info(f"Inserting values: {values}")
     for val in values:
         avl.insert(val)
     
-    print(f"Size: {avl.size()}")
-    print(f"Height: {avl.height()}")
-    print(f"Inorder (sorted): {avl.inorder()}")
-    print()
+    logger.info(f"Size: {avl.size()}")
+    logger.info(f"Height: {avl.height()}")
+    logger.info(f"Inorder (sorted): {avl.inorder()}")
+    logger.info()
     
     # Example 2: Search
-    print("Example 2: Searching")
-    print("-" * 70)
+    logger.info("Example 2: Searching")
+    logger.info("-" * 70)
     
     search_values = [40, 25, 70, 100]
     for val in search_values:
         found = avl.search(val)
-        print(f"Search {val}: {'Found' if found else 'Not found'}")
-    print()
+        logger.info(f"Search {val}: {'Found' if found else 'Not found'}")
+    logger.info()
     
     # Example 3: Balance demonstration
-    print("Example 3: Self-Balancing Demonstration")
-    print("-" * 70)
+    logger.info("Example 3: Self-Balancing Demonstration")
+    logger.info("-" * 70)
     
     # Sequential insertion (would create skewed tree in BST)
     avl_balanced = AVLTree()
     sequential = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     
-    print(f"Inserting sequential values: {sequential}")
+    logger.info(f"Inserting sequential values: {sequential}")
     for val in sequential:
         avl_balanced.insert(val)
     
-    print(f"Size: {avl_balanced.size()}")
-    print(f"Height: {avl_balanced.height()} (balanced!)")
-    print(f"Compare to BST height which would be: {len(sequential)}")
-    print(f"Inorder: {avl_balanced.inorder()}")
-    print()
+    logger.info(f"Size: {avl_balanced.size()}")
+    logger.info(f"Height: {avl_balanced.height()} (balanced!)")
+    logger.info(f"Compare to BST height which would be: {len(sequential)}")
+    logger.info(f"Inorder: {avl_balanced.inorder()}")
+    logger.info()
     
     # Example 4: Performance comparison
-    print("Example 4: Performance vs BST")
-    print("-" * 70)
+    logger.info("Example 4: Performance vs BST")
+    logger.info("-" * 70)
     
-    print("Sequential insertion (worst case for BST):")
+    logger.info("Sequential insertion (worst case for BST):")
     timer = PerformanceTimer("AVL Tree")
     
     sizes = [100, 500, 1000]
@@ -266,48 +268,47 @@ def main() -> None:
         
         _, metrics = timer.measure(insert_all)
         
-        print(f"n={size:4d}: {metrics['execution_time_ms']:8.3f} ms, "
+        logger.info(f"n={size:4d}: {metrics['execution_time_ms']:8.3f} ms, "
               f"height={avl_perf.height()} (optimal: ~{size.bit_length()})")
     
-    print()
+    logger.info()
     timer.print_summary()
     
-    print("\n" + "=" * 70)
-    print("\nComplexity Summary:")
-    print("  Search:  O(log n) - GUARANTEED")
-    print("  Insert:  O(log n) - GUARANTEED")
-    print("  Delete:  O(log n) - GUARANTEED")
-    print("  Space:   O(n)")
-    print("  Height:  O(log n) - self-balancing")
-    print("\nKey Points:")
-    print("  + Guaranteed O(log n) operations")
-    print("  + Self-balancing after each operation")
-    print("  + Better than BST for sorted/skewed data")
-    print("  + Predictable performance")
-    print("  - More complex implementation")
-    print("  - Extra space for height storage")
-    print("  - More rotations than Red-Black trees")
-    print("\nBalance Factor:")
-    print("  Range: [-1, 0, 1]")
-    print("  Formula: height(left) - height(right)")
-    print("  Rebalance if |balance_factor| > 1")
-    print("\nRotations:")
-    print("  LL Case: Right rotation")
-    print("  RR Case: Left rotation")
-    print("  LR Case: Left-Right rotation")
-    print("  RL Case: Right-Left rotation")
-    print("\nWhen to use:")
-    print("  • Need guaranteed O(log n)")
-    print("  • Frequent searches")
-    print("  • Sorted/near-sorted insertions")
-    print("  • Predictable performance critical")
-    print("\nWhen NOT to use:")
-    print("  • Frequent insertions/deletions")
-    print("  • Simpler BST sufficient")
-    print("  • Memory constrained (extra height storage)")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Search:  O(log n) - GUARANTEED")
+    logger.info("  Insert:  O(log n) - GUARANTEED")
+    logger.info("  Delete:  O(log n) - GUARANTEED")
+    logger.info("  Space:   O(n)")
+    logger.info("  Height:  O(log n) - self-balancing")
+    logger.info("\nKey Points:")
+    logger.info("  + Guaranteed O(log n) operations")
+    logger.info("  + Self-balancing after each operation")
+    logger.info("  + Better than BST for sorted/skewed data")
+    logger.info("  + Predictable performance")
+    logger.info("  - More complex implementation")
+    logger.info("  - Extra space for height storage")
+    logger.info("  - More rotations than Red-Black trees")
+    logger.info("\nBalance Factor:")
+    logger.info("  Range: [-1, 0, 1]")
+    logger.info("  Formula: height(left) - height(right)")
+    logger.info("  Rebalance if |balance_factor| > 1")
+    logger.info("\nRotations:")
+    logger.info("  LL Case: Right rotation")
+    logger.info("  RR Case: Left rotation")
+    logger.info("  LR Case: Left-Right rotation")
+    logger.info("  RL Case: Right-Left rotation")
+    logger.info("\nWhen to use:")
+    logger.info("  • Need guaranteed O(log n)")
+    logger.info("  • Frequent searches")
+    logger.info("  • Sorted/near-sorted insertions")
+    logger.info("  • Predictable performance critical")
+    logger.info("\nWhen NOT to use:")
+    logger.info("  • Frequent insertions/deletions")
+    logger.info("  • Simpler BST sufficient")
+    logger.info("  • Memory constrained (extra height storage)")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":
     main()
-

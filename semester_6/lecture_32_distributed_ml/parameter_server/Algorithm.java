@@ -5,24 +5,27 @@
  * Time Complexity: O(sync_overhead)
  * Space Complexity: O(params)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("==".repeat(35));
-        System.out.println("Parameter Server");
-        System.out.println("==".repeat(35));
-        System.out.println("Category: Distributed ML");
-        System.out.println("Time: O(sync_overhead)");
-        System.out.println("Space: O(params)");
-        System.out.println();
-        System.out.println("Resource Requirements:");
-        System.out.println("  - GPU: Optional");
-        System.out.println("  - Memory: Medium");
-        System.out.println("==".repeat(35));
+        logger.info("==".repeat(35));
+        logger.info("Parameter Server");
+        logger.info("==".repeat(35));
+        logger.info("Category: Distributed ML");
+        logger.info("Time: O(sync_overhead)");
+        logger.info("Space: O(params)");
+        logger.info();
+        logger.info("Resource Requirements:");
+        logger.info("  - GPU: Optional");
+        logger.info("  - Memory: Medium");
+        logger.info("==".repeat(35));
         
         long endTime = System.nanoTime();
         double durationMs = (endTime - startTime) / 1_000_000.0;
-        System.out.println(String.format("\nExecution time: %.3f ms", durationMs));
+        logger.info(String.format("\nExecution time: %.3f ms", durationMs));
     }
 }

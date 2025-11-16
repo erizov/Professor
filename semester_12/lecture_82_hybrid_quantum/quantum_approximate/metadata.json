@@ -1,0 +1,12 @@
+{
+  "name": "quantum_approximate",
+  "display_name": "Quantum Approximate",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_82_hybrid_quantum",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

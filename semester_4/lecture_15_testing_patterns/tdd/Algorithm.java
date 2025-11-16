@@ -6,6 +6,7 @@
  */
 import java.util.*;
 
+import java.util.logging.Logger;
 class Calculator {
     double add(double a, double b) {
         return a + b;
@@ -93,8 +94,8 @@ class TDDTestRunner {
     }
     
     void runTests() {
-        System.out.println("Running TDD Tests:");
-        System.out.println("-".repeat(70));
+        logger.info("Running TDD Tests:");
+        logger.info("-".repeat(70));
         
         // Calculator tests
         Calculator calc = new Calculator();
@@ -128,73 +129,75 @@ class TDDTestRunner {
         assertRaises(() -> new Stack<Integer>().pop(), IndexOutOfBoundsException.class,
                     "Pop from empty stack raises IndexOutOfBoundsException");
         
-        System.out.println("-".repeat(70));
+        logger.info("-".repeat(70));
         System.out.printf("Tests: %d passed, %d failed%n", passed, failed);
-        System.out.println();
+        logger.info();
     }
 }
 
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("TEST-DRIVEN DEVELOPMENT (TDD) PATTERN DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("TEST-DRIVEN DEVELOPMENT (TDD) PATTERN DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: TDD Cycle Demonstration
-        System.out.println("Example 1: TDD Red-Green-Refactor Cycle");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: TDD Red-Green-Refactor Cycle");
+        logger.info("-".repeat(70));
         
-        System.out.println("TDD Cycle:");
-        System.out.println("  1. RED: Write failing test");
-        System.out.println("  2. GREEN: Write minimal code to pass");
-        System.out.println("  3. REFACTOR: Improve code while keeping tests green");
-        System.out.println();
+        logger.info("TDD Cycle:");
+        logger.info("  1. RED: Write failing test");
+        logger.info("  2. GREEN: Write minimal code to pass");
+        logger.info("  3. REFACTOR: Improve code while keeping tests green");
+        logger.info();
         
         // Example 2: Running TDD Tests
-        System.out.println("Example 2: Running TDD Tests");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Running TDD Tests");
+        logger.info("-".repeat(70));
         
         TDDTestRunner runner = new TDDTestRunner();
         runner.runTests();
         
         // Example 3: TDD Benefits
-        System.out.println("Example 3: TDD Benefits Demonstration");
-        System.out.println("-".repeat(70));
+        logger.info("Example 3: TDD Benefits Demonstration");
+        logger.info("-".repeat(70));
         
         Calculator calc = new Calculator();
         
-        System.out.println("Testing calculator with multiple scenarios:");
+        logger.info("Testing calculator with multiple scenarios:");
         System.out.printf("  ✓ add(1, 2) = %.0f (expected 3)%n", calc.add(1, 2));
         System.out.printf("  ✓ multiply(4, 5) = %.0f (expected 20)%n", calc.multiply(4, 5));
         System.out.printf("  ✓ divide(15, 3) = %.0f (expected 5)%n", calc.divide(15, 3));
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern Summary:");
-        System.out.println("\nIntent:");
-        System.out.println("  Development approach where tests are written before");
-        System.out.println("  implementation. Follows Red-Green-Refactor cycle.");
-        System.out.println("\nTDD Cycle:");
-        System.out.println("  1. RED: Write failing test");
-        System.out.println("  2. GREEN: Write minimal code to make test pass");
-        System.out.println("  3. REFACTOR: Improve code while keeping tests green");
-        System.out.println("  4. Repeat");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Better code design");
-        System.out.println("  - Comprehensive test coverage");
-        System.out.println("  - Confidence in refactoring");
-        System.out.println("  - Documentation through tests");
-        System.out.println("\nWhen to Use:");
-        System.out.println("  - Complex logic");
-        System.out.println("  - Critical functionality");
-        System.out.println("  - API development");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern Summary:");
+        logger.info("\nIntent:");
+        logger.info("  Development approach where tests are written before");
+        logger.info("  implementation. Follows Red-Green-Refactor cycle.");
+        logger.info("\nTDD Cycle:");
+        logger.info("  1. RED: Write failing test");
+        logger.info("  2. GREEN: Write minimal code to make test pass");
+        logger.info("  3. REFACTOR: Improve code while keeping tests green");
+        logger.info("  4. Repeat");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Better code design");
+        logger.info("  - Comprehensive test coverage");
+        logger.info("  - Confidence in refactoring");
+        logger.info("  - Documentation through tests");
+        logger.info("\nWhen to Use:");
+        logger.info("  - Complex logic");
+        logger.info("  - Critical functionality");
+        logger.info("  - API development");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

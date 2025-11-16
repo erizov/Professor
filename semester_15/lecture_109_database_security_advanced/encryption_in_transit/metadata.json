@@ -1,0 +1,12 @@
+{
+  "name": "encryption_in_transit",
+  "display_name": "Encryption In Transit",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_109_database_security_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "data_lineage_tracking",
+  "display_name": "Data Lineage Tracking",
+  "category": "Advanced Graduate Level",
+  "semester": 16,
+  "lecture": "lecture_115_data_governance_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

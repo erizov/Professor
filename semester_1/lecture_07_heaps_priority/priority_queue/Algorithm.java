@@ -5,7 +5,10 @@ import java.util.*;
  * 
  * O(log n) insert and delete, O(1) peek.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class PriorityQueue<T> {
         private List<Entry<T>> heap;
@@ -131,14 +134,14 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("PRIORITY QUEUE DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("PRIORITY QUEUE DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Min priority queue
-        System.out.println("Example 1: Min Priority Queue");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Min Priority Queue");
+        logger.info("-".repeat(70));
         
         PriorityQueue<String> pq = new PriorityQueue<>(false);
         
@@ -147,15 +150,15 @@ public class Algorithm {
         pq.push("Task C", 3);
         pq.push("Task D", 2);
         
-        System.out.println("Processing tasks in priority order:");
+        logger.info("Processing tasks in priority order:");
         while (!pq.isEmpty()) {
-            System.out.println("  Processing: " + pq.pop());
+            logger.info("  Processing: " + pq.pop());
         }
-        System.out.println();
+        logger.info();
         
         // Example 2: Task scheduling
-        System.out.println("Example 2: Task Scheduling");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Task Scheduling");
+        logger.info("-".repeat(70));
         
         PriorityQueue<Task> taskQueue = new PriorityQueue<>(false);
         taskQueue.push(new Task("Email", 3), 3);
@@ -163,22 +166,22 @@ public class Algorithm {
         taskQueue.push(new Task("Code Review", 4), 4);
         taskQueue.push(new Task("Critical Issue", 0), 0);
         
-        System.out.println("Task execution order:");
+        logger.info("Task execution order:");
         int order = 1;
         while (!taskQueue.isEmpty()) {
-            System.out.println("  " + order + ". " + taskQueue.pop());
+            logger.info("  " + order + ". " + taskQueue.pop());
             order++;
         }
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Push: O(log n)");
-        System.out.println("  Pop: O(log n)");
-        System.out.println("  Peek: O(1)");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Push: O(log n)");
+        logger.info("  Pop: O(log n)");
+        logger.info("  Peek: O(1)");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

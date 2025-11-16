@@ -5,7 +5,10 @@ import java.util.*;
  * 
  * Composes objects into tree structures.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     interface FileSystemComponent {
         int getSize();
@@ -26,7 +29,7 @@ public class Algorithm {
         }
         
         public void display(String indent) {
-            System.out.println(indent + "📄 " + name + " (" + size + " bytes)");
+            logger.info(indent + "📄 " + name + " (" + size + " bytes)");
         }
     }
     
@@ -50,7 +53,7 @@ public class Algorithm {
         }
         
         public void display(String indent) {
-            System.out.println(indent + "📁 " + name + "/ (" + getSize() + " bytes)");
+            logger.info(indent + "📁 " + name + "/ (" + getSize() + " bytes)");
             for (FileSystemComponent child : children) {
                 child.display(indent + "  ");
             }
@@ -58,10 +61,10 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("COMPOSITE DESIGN PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("COMPOSITE DESIGN PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         Directory root = new Directory("root");
         Directory home = new Directory("home");
@@ -71,10 +74,10 @@ public class Algorithm {
         root.add(new File("readme.txt", 512));
         
         root.display("");
-        System.out.println();
+        logger.info();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: Composes objects into tree structures");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: Composes objects into tree structures");
+        logger.info("=".repeat(70));
     }
 }

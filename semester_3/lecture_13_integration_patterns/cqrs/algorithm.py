@@ -17,6 +17,8 @@ from datetime import datetime
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 # Domain Models
@@ -74,7 +76,7 @@ class CommandHandler:
         )
         self.next_id += 1
         self.write_store[user.user_id] = user
-        print(f"[Command] Created user: {user}")
+        logger.info(f"[Command] Created user: {user}")
         return user.user_id
     
     def handle_update_user(self, command: UpdateUserCommand) -> bool:
@@ -87,14 +89,14 @@ class CommandHandler:
             user.name = command.name
         if command.email:
             user.email = command.email
-        print(f"[Command] Updated user: {user}")
+        logger.info(f"[Command] Updated user: {user}")
         return True
     
     def handle_delete_user(self, command: DeleteUserCommand) -> bool:
         """Handle delete user command."""
         if command.user_id in self.write_store:
             del self.write_store[command.user_id]
-            print(f"[Command] Deleted user: {command.user_id}")
+            logger.info(f"[Command] Deleted user: {command.user_id}")
             return True
         return False
 
@@ -136,13 +138,13 @@ class QueryHandler:
         """Handle get user query."""
         user = self.read_store.get(query.user_id)
         if user:
-            print(f"[Query] Retrieved user: {user}")
+            logger.info(f"[Query] Retrieved user: {user}")
         return user
     
     def handle_get_all_users(self, query: GetAllUsersQuery) -> List[User]:
         """Handle get all users query."""
         users = list(self.read_store.values())
-        print(f"[Query] Retrieved {len(users)} users")
+        logger.info(f"[Query] Retrieved {len(users)} users")
         return users
     
     def handle_search_users(self, query: SearchUsersQuery) -> List[User]:
@@ -156,7 +158,7 @@ class QueryHandler:
                 match = False
             if match:
                 results.append(user)
-        print(f"[Query] Found {len(results)} users matching search")
+        logger.info(f"[Query] Found {len(results)} users matching search")
         return results
 
 
@@ -234,54 +236,54 @@ class OrderCQRSService:
         )
         self.next_id += 1
         self.orders[order.order_id] = order
-        print(f"[Command] Created order: {order.order_id}")
+        logger.info(f"[Command] Created order: {order.order_id}")
         return order.order_id
     
     def get_order(self, query: GetOrderQuery) -> Optional[Order]:
         """Get order (query)."""
         order = self.orders.get(query.order_id)
         if order:
-            print(f"[Query] Retrieved order: {order.order_id}")
+            logger.info(f"[Query] Retrieved order: {order.order_id}")
         return order
 
 
 def main() -> None:
     """Demonstration of CQRS Pattern."""
-    print("=" * 70)
-    print("CQRS (COMMAND QUERY RESPONSIBILITY SEGREGATION) PATTERN")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("CQRS (COMMAND QUERY RESPONSIBILITY SEGREGATION) PATTERN")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: User CQRS
-    print("Example 1: User Management CQRS")
-    print("-" * 70)
+    logger.info("Example 1: User Management CQRS")
+    logger.info("-" * 70)
     
     service = CQRSService()
     
     # Commands (Write)
-    print("Executing Commands (Write Operations):")
+    logger.info("Executing Commands (Write Operations):")
     user_id1 = service.execute_command(CreateUserCommand("Alice", "alice@example.com"))
     user_id2 = service.execute_command(CreateUserCommand("Bob", "bob@example.com"))
     user_id3 = service.execute_command(CreateUserCommand("Charlie", "charlie@example.com"))
-    print()
+    logger.info()
     
     service.execute_command(UpdateUserCommand(user_id2, name="Robert"))
-    print()
+    logger.info()
     
     # Queries (Read)
-    print("Executing Queries (Read Operations):")
+    logger.info("Executing Queries (Read Operations):")
     user = service.execute_query(GetUserQuery(user_id1))
-    print()
+    logger.info()
     
     all_users = service.execute_query(GetAllUsersQuery())
-    print()
+    logger.info()
     
     search_results = service.execute_query(SearchUsersQuery(name_pattern="al"))
-    print()
+    logger.info()
     
     # Example 2: Order CQRS
-    print("Example 2: Order Management CQRS")
-    print("-" * 70)
+    logger.info("Example 2: Order Management CQRS")
+    logger.info("-" * 70)
     
     order_service = OrderCQRSService()
     
@@ -292,16 +294,16 @@ def main() -> None:
             total=999.99
         )
     )
-    print()
+    logger.info()
     
     order = order_service.get_order(GetOrderQuery(order_id))
     if order:
-        print(f"Order details: {order}")
-    print()
+        logger.info(f"Order details: {order}")
+    logger.info()
     
     # Example 3: Performance measurement
-    print("Example 3: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 3: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("CQRS")
     
@@ -312,36 +314,36 @@ def main() -> None:
         return len(svc.execute_query(GetAllUsersQuery()))
     
     result, metrics = timer.measure(cqrs_operations)
-    print(f"Time to create 50 users via CQRS: {metrics['execution_time_ms']:.3f} ms")
-    print(f"Users created: {result}")
-    print()
+    logger.info(f"Time to create 50 users via CQRS: {metrics['execution_time_ms']:.3f} ms")
+    logger.info(f"Users created: {result}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Separate read and write operations into different models.")
-    print("  Commands change state, queries read state.")
-    print("\nKey Advantages:")
-    print("  - Independent scaling of read/write")
-    print("  - Optimize read and write separately")
-    print("  - Clear separation of concerns")
-    print("  - Can use different data stores")
-    print("\nKey Disadvantages:")
-    print("  - Increased complexity")
-    print("  - Eventual consistency challenges")
-    print("  - More infrastructure needed")
-    print("  - Learning curve")
-    print("\nWhen to Use:")
-    print("  - High read/write ratio")
-    print("  - Need to scale reads independently")
-    print("  - Complex domain models")
-    print("  - Different read/write requirements")
-    print("\nCommon Use Cases:")
-    print("  - Event-driven architectures")
-    print("  - Microservices")
-    print("  - High-traffic applications")
-    print("  - Complex reporting requirements")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Separate read and write operations into different models.")
+    logger.info("  Commands change state, queries read state.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Independent scaling of read/write")
+    logger.info("  - Optimize read and write separately")
+    logger.info("  - Clear separation of concerns")
+    logger.info("  - Can use different data stores")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Increased complexity")
+    logger.info("  - Eventual consistency challenges")
+    logger.info("  - More infrastructure needed")
+    logger.info("  - Learning curve")
+    logger.info("\nWhen to Use:")
+    logger.info("  - High read/write ratio")
+    logger.info("  - Need to scale reads independently")
+    logger.info("  - Complex domain models")
+    logger.info("  - Different read/write requirements")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Event-driven architectures")
+    logger.info("  - Microservices")
+    logger.info("  - High-traffic applications")
+    logger.info("  - Complex reporting requirements")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

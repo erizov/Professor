@@ -1,0 +1,12 @@
+{
+  "name": "container_orchestration",
+  "display_name": "Container Orchestration",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_61_cloud_native",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

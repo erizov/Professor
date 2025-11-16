@@ -9,6 +9,8 @@ element and partitions the array around it.
 
 from typing import List, TypeVar
 import random
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 T = TypeVar('T')
@@ -108,69 +110,69 @@ def quick_sort_randomized(arr: List[T]) -> List[T]:
 
 def main() -> None:
     """Demonstration of Quick Sort."""
-    print("=" * 70)
-    print("QUICK SORT DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("QUICK SORT DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic sorting
-    print("Example 1: Basic Integer Sorting")
-    print("-" * 70)
+    logger.info("Example 1: Basic Integer Sorting")
+    logger.info("-" * 70)
     data1 = [64, 34, 25, 12, 22, 11, 90, 88, 45, 50]
-    print(f"Original: {data1}")
+    logger.info(f"Original: {data1}")
     result1 = quick_sort(data1.copy())
-    print(f"Sorted:   {result1}")
-    print()
+    logger.info(f"Sorted:   {result1}")
+    logger.info()
     
     # Example 2: Already sorted
-    print("Example 2: Already Sorted")
-    print("-" * 70)
+    logger.info("Example 2: Already Sorted")
+    logger.info("-" * 70)
     data2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    print(f"Original: {data2}")
+    logger.info(f"Original: {data2}")
     result2 = quick_sort(data2.copy())
-    print(f"Sorted:   {result2}")
-    print("Note: May have worst-case O(n²) performance")
-    print()
+    logger.info(f"Sorted:   {result2}")
+    logger.info("Note: May have worst-case O(n²) performance")
+    logger.info()
     
     # Example 3: Randomized pivot
-    print("Example 3: Randomized Pivot Selection")
-    print("-" * 70)
+    logger.info("Example 3: Randomized Pivot Selection")
+    logger.info("-" * 70)
     data3 = [64, 34, 25, 12, 22, 11, 90, 88, 45, 50]
-    print(f"Original: {data3}")
+    logger.info(f"Original: {data3}")
     result3 = quick_sort_randomized(data3.copy())
-    print(f"Sorted:   {result3}")
-    print("Randomization helps avoid worst case")
-    print()
+    logger.info(f"Sorted:   {result3}")
+    logger.info("Randomization helps avoid worst case")
+    logger.info()
     
     # Example 4: Strings
-    print("Example 4: Sorting Strings")
-    print("-" * 70)
+    logger.info("Example 4: Sorting Strings")
+    logger.info("-" * 70)
     data4 = ["banana", "apple", "cherry", "date", "elderberry"]
-    print(f"Original: {data4}")
+    logger.info(f"Original: {data4}")
     result4 = quick_sort(data4.copy())
-    print(f"Sorted:   {result4}")
-    print()
+    logger.info(f"Sorted:   {result4}")
+    logger.info()
     
     # Example 5: Large dataset
-    print("Example 5: Large Random Dataset")
-    print("-" * 70)
+    logger.info("Example 5: Large Random Dataset")
+    logger.info("-" * 70)
     data5 = [random.randint(1, 1000) for _ in range(20)]
-    print(f"Original (20 elements): {data5[:10]}...")
+    logger.info(f"Original (20 elements): {data5[:10]}...")
     result5 = quick_sort(data5.copy())
-    print(f"Sorted (first 10):      {result5[:10]}...")
-    print()
+    logger.info(f"Sorted (first 10):      {result5[:10]}...")
+    logger.info()
     
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O(n log n) average, O(n²) worst")
-    print("  Space: O(log n) recursion stack")
-    print("  Stable: No")
-    print("  In-place: Yes")
-    print("\nKey Points:")
-    print("  - Very fast in practice")
-    print("  - Randomized pivot avoids worst case")
-    print("  - Most common general-purpose sort")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  O(n log n) average, O(n²) worst")
+    logger.info("  Space: O(log n) recursion stack")
+    logger.info("  Stable: No")
+    logger.info("  In-place: Yes")
+    logger.info("\nKey Points:")
+    logger.info("  - Very fast in practice")
+    logger.info("  - Randomized pivot avoids worst case")
+    logger.info("  - Most common general-purpose sort")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

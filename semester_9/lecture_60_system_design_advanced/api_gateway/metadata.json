@@ -1,0 +1,12 @@
+{
+  "name": "api_gateway",
+  "display_name": "Api Gateway",
+  "category": "Advanced Graduate Level",
+  "semester": 9,
+  "lecture": "lecture_60_system_design_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "alert_fatigue_reduction",
+  "display_name": "Alert Fatigue Reduction",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_96_incident_management_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

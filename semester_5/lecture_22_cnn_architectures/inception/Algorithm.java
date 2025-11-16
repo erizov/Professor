@@ -5,24 +5,27 @@
  * Time Complexity: O(n*d*modules)
  * Space Complexity: O(d*modules)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("==".repeat(35));
-        System.out.println("Inception Network");
-        System.out.println("==".repeat(35));
-        System.out.println("Category: Deep Learning");
-        System.out.println("Time: O(n*d*modules)");
-        System.out.println("Space: O(d*modules)");
-        System.out.println();
-        System.out.println("Resource Requirements:");
-        System.out.println("  - GPU: Recommended");
-        System.out.println("  - Memory: High");
-        System.out.println("==".repeat(35));
+        logger.info("==".repeat(35));
+        logger.info("Inception Network");
+        logger.info("==".repeat(35));
+        logger.info("Category: Deep Learning");
+        logger.info("Time: O(n*d*modules)");
+        logger.info("Space: O(d*modules)");
+        logger.info();
+        logger.info("Resource Requirements:");
+        logger.info("  - GPU: Recommended");
+        logger.info("  - Memory: High");
+        logger.info("==".repeat(35));
         
         long endTime = System.nanoTime();
         double durationMs = (endTime - startTime) / 1_000_000.0;
-        System.out.println(String.format("\nExecution time: %.3f ms", durationMs));
+        logger.info(String.format("\nExecution time: %.3f ms", durationMs));
     }
 }

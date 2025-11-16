@@ -1,0 +1,12 @@
+{
+  "name": "doc_as_code",
+  "display_name": "Doc As Code",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_98_documentation_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

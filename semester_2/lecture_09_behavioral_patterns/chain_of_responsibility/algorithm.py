@@ -12,6 +12,8 @@ import sys
 from pathlib import Path
 from abc import ABC, abstractmethod
 from typing import Optional
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
@@ -102,7 +104,7 @@ class ConsoleLogger(Logger):
         super().__init__(level)
     
     def write(self, message: str) -> None:
-        print(f"Console Logger: {message}")
+        logger.info(f"Console Logger: {message}")
 
 
 class FileLogger(Logger):
@@ -112,7 +114,7 @@ class FileLogger(Logger):
         super().__init__(level)
     
     def write(self, message: str) -> None:
-        print(f"File Logger: {message}")
+        logger.info(f"File Logger: {message}")
 
 
 class ErrorLogger(Logger):
@@ -122,7 +124,7 @@ class ErrorLogger(Logger):
         super().__init__(level)
     
     def write(self, message: str) -> None:
-        print(f"Error Logger: {message}")
+        logger.info(f"Error Logger: {message}")
 
 
 # Example 3: Purchase Approval
@@ -188,14 +190,14 @@ class VPHandler(PurchaseHandler):
 
 def main() -> None:
     """Demonstration of Chain of Responsibility Pattern."""
-    print("=" * 70)
-    print("CHAIN OF RESPONSIBILITY DESIGN PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("CHAIN OF RESPONSIBILITY DESIGN PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Animal Handler Chain
-    print("Example 1: Animal Handler Chain")
-    print("-" * 70)
+    logger.info("Example 1: Animal Handler Chain")
+    logger.info("-" * 70)
     
     monkey = MonkeyHandler()
     squirrel = SquirrelHandler()
@@ -208,14 +210,14 @@ def main() -> None:
     for food in foods:
         result = monkey.handle(food)
         if result:
-            print(f"  {result}")
+            logger.info(f"  {result}")
         else:
-            print(f"  {food} was left untouched")
-    print()
+            logger.info(f"  {food} was left untouched")
+    logger.info()
     
     # Example 2: Logger Chain
-    print("Example 2: Logger Chain")
-    print("-" * 70)
+    logger.info("Example 2: Logger Chain")
+    logger.info("-" * 70)
     
     # Levels: 1=INFO, 2=DEBUG, 3=ERROR
     console_logger = ConsoleLogger(1)
@@ -227,11 +229,11 @@ def main() -> None:
     console_logger.log_message(1, "This is an information.")
     console_logger.log_message(2, "This is a debug level information.")
     console_logger.log_message(3, "This is an error information.")
-    print()
+    logger.info()
     
     # Example 3: Purchase Approval
-    print("Example 3: Purchase Approval Chain")
-    print("-" * 70)
+    logger.info("Example 3: Purchase Approval Chain")
+    logger.info("-" * 70)
     
     manager = ManagerHandler()
     director = DirectorHandler()
@@ -243,37 +245,37 @@ def main() -> None:
     
     for amount in amounts:
         result = manager.handle(amount)
-        print(f"  Purchase ${amount:.2f}: {result}")
-    print()
+        logger.info(f"  Purchase ${amount:.2f}: {result}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Avoid coupling the sender of a request to its receiver")
-    print("  by giving more than one object a chance to handle the")
-    print("  request. Chain the receiving objects and pass the request")
-    print("  along the chain until an object handles it.")
-    print("\nKey Advantages:")
-    print("  - Decouples sender and receiver")
-    print("  - Dynamic chain composition")
-    print("  - Flexible request handling")
-    print("  - Can add/remove handlers easily")
-    print("\nKey Disadvantages:")
-    print("  - No guarantee request will be handled")
-    print("  - Performance overhead (chain traversal)")
-    print("  - Can be hard to debug")
-    print("\nWhen to Use:")
-    print("  - Multiple objects can handle request")
-    print("  - Don't know which handler will process")
-    print("  - Want to decouple sender and receivers")
-    print("  - Need dynamic chain composition")
-    print("\nCommon Use Cases:")
-    print("  - Event handling systems")
-    print("  - Exception handling")
-    print("  - Request processing pipelines")
-    print("  - Approval workflows")
-    print("  - Middleware in web frameworks")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Avoid coupling the sender of a request to its receiver")
+    logger.info("  by giving more than one object a chance to handle the")
+    logger.info("  request. Chain the receiving objects and pass the request")
+    logger.info("  along the chain until an object handles it.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Decouples sender and receiver")
+    logger.info("  - Dynamic chain composition")
+    logger.info("  - Flexible request handling")
+    logger.info("  - Can add/remove handlers easily")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - No guarantee request will be handled")
+    logger.info("  - Performance overhead (chain traversal)")
+    logger.info("  - Can be hard to debug")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Multiple objects can handle request")
+    logger.info("  - Don't know which handler will process")
+    logger.info("  - Want to decouple sender and receivers")
+    logger.info("  - Need dynamic chain composition")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Event handling systems")
+    logger.info("  - Exception handling")
+    logger.info("  - Request processing pipelines")
+    logger.info("  - Approval workflows")
+    logger.info("  - Middleware in web frameworks")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

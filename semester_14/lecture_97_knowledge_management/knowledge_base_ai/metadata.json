@@ -1,0 +1,12 @@
+{
+  "name": "knowledge_base_ai",
+  "display_name": "Knowledge Base Ai",
+  "category": "Advanced Graduate Level",
+  "semester": 14,
+  "lecture": "lecture_97_knowledge_management",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

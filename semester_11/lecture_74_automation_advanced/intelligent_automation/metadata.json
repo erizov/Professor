@@ -1,0 +1,12 @@
+{
+  "name": "intelligent_automation",
+  "display_name": "Intelligent Automation",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_74_automation_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

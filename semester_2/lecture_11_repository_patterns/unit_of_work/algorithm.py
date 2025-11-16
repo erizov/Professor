@@ -15,6 +15,8 @@ from enum import Enum
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class EntityState(Enum):
@@ -110,9 +112,9 @@ class UnitOfWork:
             self.modified_entities.clear()
             self.deleted_entities.clear()
             
-            print("Unit of Work committed successfully")
+            logger.info("Unit of Work committed successfully")
         except Exception as e:
-            print(f"Error committing Unit of Work: {e}")
+            logger.info(f"Error committing Unit of Work: {e}")
             raise
     
     def rollback(self) -> None:
@@ -120,7 +122,7 @@ class UnitOfWork:
         self.new_entities.clear()
         self.modified_entities.clear()
         self.deleted_entities.clear()
-        print("Unit of Work rolled back")
+        logger.info("Unit of Work rolled back")
 
 
 # In-Memory Repository
@@ -137,7 +139,7 @@ class InMemoryUserRepository(IUserRepository):
             user.user_id = self.next_id
             self.next_id += 1
         self.users[user.user_id] = user
-        print(f"  Added: {user}")
+        logger.info(f"  Added: {user}")
     
     def get_by_id(self, user_id: int) -> Optional[User]:
         """Get user by ID."""
@@ -147,13 +149,13 @@ class InMemoryUserRepository(IUserRepository):
         """Update user."""
         if user.user_id in self.users:
             self.users[user.user_id] = user
-            print(f"  Updated: {user}")
+            logger.info(f"  Updated: {user}")
     
     def delete(self, user: User) -> None:
         """Delete user."""
         if user.user_id in self.users:
             del self.users[user.user_id]
-            print(f"  Deleted: {user}")
+            logger.info(f"  Deleted: {user}")
 
 
 # Service using Unit of Work
@@ -189,14 +191,14 @@ class UserService:
 
 def main() -> None:
     """Demonstration of Unit of Work Pattern."""
-    print("=" * 70)
-    print("UNIT OF WORK DESIGN PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("UNIT OF WORK DESIGN PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic Unit of Work
-    print("Example 1: Basic Unit of Work")
-    print("-" * 70)
+    logger.info("Example 1: Basic Unit of Work")
+    logger.info("-" * 70)
     
     repository = InMemoryUserRepository()
     unit_of_work = UnitOfWork(repository)
@@ -207,18 +209,18 @@ def main() -> None:
     user2 = service.create_user("Bob", "bob@example.com")
     user3 = service.create_user("Charlie", "charlie@example.com")
     
-    print("Changes registered (not yet committed):")
-    print(f"  New entities: {len(unit_of_work.new_entities)}")
-    print()
+    logger.info("Changes registered (not yet committed):")
+    logger.info(f"  New entities: {len(unit_of_work.new_entities)}")
+    logger.info()
     
     # Commit all changes atomically
-    print("Committing Unit of Work:")
+    logger.info("Committing Unit of Work:")
     service.commit()
-    print()
+    logger.info()
     
     # Example 2: Update and Delete
-    print("Example 2: Update and Delete Operations")
-    print("-" * 70)
+    logger.info("Example 2: Update and Delete Operations")
+    logger.info("-" * 70)
     
     # Get existing user
     existing_user = repository.get_by_id(2)
@@ -231,39 +233,39 @@ def main() -> None:
         if user_to_delete:
             service.delete_user(user_to_delete)
         
-        print("Changes registered:")
-        print(f"  Modified: {len(unit_of_work.modified_entities)}")
-        print(f"  Deleted: {len(unit_of_work.deleted_entities)}")
-        print()
+        logger.info("Changes registered:")
+        logger.info(f"  Modified: {len(unit_of_work.modified_entities)}")
+        logger.info(f"  Deleted: {len(unit_of_work.deleted_entities)}")
+        logger.info()
         
-        print("Committing changes:")
+        logger.info("Committing changes:")
         service.commit()
-        print()
+        logger.info()
     
     # Example 3: Transaction Rollback
-    print("Example 3: Transaction Rollback")
-    print("-" * 70)
+    logger.info("Example 3: Transaction Rollback")
+    logger.info("-" * 70)
     
     # Register some changes
     user4 = service.create_user("Diana", "diana@example.com")
     user5 = service.create_user("Eve", "eve@example.com")
     
-    print(f"Changes registered: {len(unit_of_work.new_entities)} new entities")
-    print("Rolling back (not committing):")
+    logger.info(f"Changes registered: {len(unit_of_work.new_entities)} new entities")
+    logger.info("Rolling back (not committing):")
     unit_of_work.rollback()
-    print()
+    logger.info()
     
     # Verify nothing was committed
     all_users = [repository.get_by_id(i) for i in range(1, 10)]
     all_users = [u for u in all_users if u]
-    print(f"Users in repository after rollback: {len(all_users)}")
+    logger.info(f"Users in repository after rollback: {len(all_users)}")
     for user in all_users:
-        print(f"  {user}")
-    print()
+        logger.info(f"  {user}")
+    logger.info()
     
     # Example 4: Performance measurement
-    print("Example 4: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 4: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Unit of Work")
     
@@ -278,37 +280,37 @@ def main() -> None:
         return len(repo.users)
     
     result, metrics = timer.measure(unit_of_work_operations)
-    print(f"Time to create and commit 50 users: "
+    logger.info(f"Time to create and commit 50 users: "
           f"{metrics['execution_time_ms']:.3f} ms")
-    print(f"Users committed: {result}")
-    print()
+    logger.info(f"Users committed: {result}")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Maintains a list of objects affected by a business")
-    print("  transaction and coordinates writing out changes and")
-    print("  resolving concurrency problems.")
-    print("\nKey Advantages:")
-    print("  - Atomic transactions")
-    print("  - Tracks all changes")
-    print("  - Prevents inconsistent state")
-    print("  - Batch operations")
-    print("\nKey Disadvantages:")
-    print("  - More complex than simple repository")
-    print("  - Memory overhead for tracking")
-    print("  - Can be overkill for simple operations")
-    print("\nWhen to Use:")
-    print("  - Need atomic transactions")
-    print("  - Multiple related changes")
-    print("  - Complex business transactions")
-    print("  - Need to track all changes")
-    print("\nCommon Use Cases:")
-    print("  - ORM frameworks (Entity Framework, Hibernate)")
-    print("  - Domain-Driven Design")
-    print("  - Complex business transactions")
-    print("  - Batch operations")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Maintains a list of objects affected by a business")
+    logger.info("  transaction and coordinates writing out changes and")
+    logger.info("  resolving concurrency problems.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Atomic transactions")
+    logger.info("  - Tracks all changes")
+    logger.info("  - Prevents inconsistent state")
+    logger.info("  - Batch operations")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - More complex than simple repository")
+    logger.info("  - Memory overhead for tracking")
+    logger.info("  - Can be overkill for simple operations")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Need atomic transactions")
+    logger.info("  - Multiple related changes")
+    logger.info("  - Complex business transactions")
+    logger.info("  - Need to track all changes")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - ORM frameworks (Entity Framework, Hibernate)")
+    logger.info("  - Domain-Driven Design")
+    logger.info("  - Complex business transactions")
+    logger.info("  - Batch operations")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

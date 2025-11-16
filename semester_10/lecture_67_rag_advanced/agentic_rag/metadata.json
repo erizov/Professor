@@ -1,0 +1,12 @@
+{
+  "name": "agentic_rag",
+  "display_name": "Agentic Rag",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_67_rag_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

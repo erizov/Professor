@@ -14,6 +14,8 @@ from typing import List, Any
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 # Observer Interface
@@ -86,7 +88,7 @@ class NewsChannel(Observer):
     def update(self, data: Any) -> None:
         """Update with new news."""
         self.latest_news = data
-        print(f"{self.name} received: {data}")
+        logger.info(f"{self.name} received: {data}")
     
     def get_latest_news(self) -> str:
         """Get latest news."""
@@ -103,7 +105,7 @@ class EmailSubscriber(Observer):
     def update(self, data: Any) -> None:
         """Update with new news."""
         self.news_updates.append(data)
-        print(f"Email sent to {self.email}: {data}")
+        logger.info(f"Email sent to {self.email}: {data}")
 
 
 # Example 2: Weather Station
@@ -161,20 +163,20 @@ class CurrentConditionsDisplay(Observer):
     
     def display(self) -> None:
         """Display current conditions."""
-        print(f"Current conditions: {self.temperature}°F, "
+        logger.info(f"Current conditions: {self.temperature}°F, "
               f"{self.humidity}% humidity")
 
 
 def main() -> None:
     """Demonstration of Observer Pattern."""
-    print("=" * 70)
-    print("OBSERVER DESIGN PATTERN DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("OBSERVER DESIGN PATTERN DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: News Agency
-    print("Example 1: News Agency")
-    print("-" * 70)
+    logger.info("Example 1: News Agency")
+    logger.info("-" * 70)
     
     agency = NewsAgency()
     
@@ -186,34 +188,34 @@ def main() -> None:
     agency.attach(channel2)
     agency.attach(subscriber)
     
-    print("Breaking news published:")
+    logger.info("Breaking news published:")
     agency.set_news("Breaking: New technology breakthrough!")
-    print()
+    logger.info()
     
     agency.detach(channel2)
-    print("BBC unsubscribed. Publishing another news:")
+    logger.info("BBC unsubscribed. Publishing another news:")
     agency.set_news("Update: Technology details released")
-    print()
+    logger.info()
     
     # Example 2: Weather Station
-    print("Example 2: Weather Station")
-    print("-" * 70)
+    logger.info("Example 2: Weather Station")
+    logger.info("-" * 70)
     
     weather_station = WeatherData()
     display = CurrentConditionsDisplay()
     
     weather_station.attach(display)
     
-    print("Weather measurements updated:")
+    logger.info("Weather measurements updated:")
     weather_station.set_measurements(75.0, 65.0, 30.4)
-    print()
+    logger.info()
     
     weather_station.set_measurements(80.0, 70.0, 29.2)
-    print()
+    logger.info()
     
     # Example 3: Performance measurement
-    print("Example 3: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 3: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Observer")
     
@@ -226,35 +228,35 @@ def main() -> None:
         return len(agency.observers)
     
     result, metrics = timer.measure(observer_operations)
-    print(f"Time to notify 10 observers: {metrics['execution_time_ms']:.3f} ms")
-    print()
+    logger.info(f"Time to notify 10 observers: {metrics['execution_time_ms']:.3f} ms")
+    logger.info()
     
-    print("=" * 70)
-    print("\nPattern Summary:")
-    print("\nIntent:")
-    print("  Define a one-to-many dependency between objects so that")
-    print("  when one object changes state, all its dependents are")
-    print("  notified and updated automatically.")
-    print("\nKey Advantages:")
-    print("  - Loose coupling between subject and observers")
-    print("  - Dynamic subscription/unsubscription")
-    print("  - Broadcast communication")
-    print("  - Open/Closed Principle support")
-    print("\nKey Disadvantages:")
-    print("  - Unexpected updates")
-    print("  - Memory leaks if observers not detached")
-    print("  - Order of notification not guaranteed")
-    print("\nWhen to Use:")
-    print("  - Change to one object requires changing others")
-    print("  - Number of dependent objects is unknown")
-    print("  - Objects should be loosely coupled")
-    print("  - Event-driven systems")
-    print("\nCommon Use Cases:")
-    print("  - Model-View architectures")
-    print("  - Event handling systems")
-    print("  - Publish-Subscribe systems")
-    print("  - GUI frameworks")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPattern Summary:")
+    logger.info("\nIntent:")
+    logger.info("  Define a one-to-many dependency between objects so that")
+    logger.info("  when one object changes state, all its dependents are")
+    logger.info("  notified and updated automatically.")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Loose coupling between subject and observers")
+    logger.info("  - Dynamic subscription/unsubscription")
+    logger.info("  - Broadcast communication")
+    logger.info("  - Open/Closed Principle support")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Unexpected updates")
+    logger.info("  - Memory leaks if observers not detached")
+    logger.info("  - Order of notification not guaranteed")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Change to one object requires changing others")
+    logger.info("  - Number of dependent objects is unknown")
+    logger.info("  - Objects should be loosely coupled")
+    logger.info("  - Event-driven systems")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Model-View architectures")
+    logger.info("  - Event handling systems")
+    logger.info("  - Publish-Subscribe systems")
+    logger.info("  - GUI frameworks")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

@@ -13,6 +13,8 @@ from typing import Dict, List, Tuple, Optional
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class Edge:
@@ -111,7 +113,7 @@ class Graph:
         distances, previous, has_negative_cycle = self.bellman_ford(start)
         
         if has_negative_cycle:
-            print("Warning: Negative cycle detected! Path may not be valid.")
+            logger.info("Warning: Negative cycle detected! Path may not be valid.")
             return None
         
         if end not in distances or distances[end] == float('inf'):
@@ -149,14 +151,14 @@ class Graph:
 
 def main() -> None:
     """Demonstration of Bellman-Ford Algorithm."""
-    print("=" * 70)
-    print("BELLMAN-FORD ALGORITHM DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("BELLMAN-FORD ALGORITHM DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Basic shortest path
-    print("Example 1: Basic Shortest Path Finding")
-    print("-" * 70)
+    logger.info("Example 1: Basic Shortest Path Finding")
+    logger.info("-" * 70)
     
     g1 = Graph(5, directed=True)
     g1.add_edge(0, 1, -1.0)
@@ -170,33 +172,33 @@ def main() -> None:
     
     distances, previous, has_cycle = g1.bellman_ford(0)
     
-    print("Graph with negative weights (no negative cycle):")
-    print("Shortest distances from vertex 0:")
+    logger.info("Graph with negative weights (no negative cycle):")
+    logger.info("Shortest distances from vertex 0:")
     for vertex in sorted(distances.keys()):
         dist = distances[vertex]
         if dist == float('inf'):
-            print(f"  To vertex {vertex}: ∞ (unreachable)")
+            logger.info(f"  To vertex {vertex}: ∞ (unreachable)")
         else:
-            print(f"  To vertex {vertex}: {dist}")
+            logger.info(f"  To vertex {vertex}: {dist}")
     
-    print(f"\nNegative cycle detected: {has_cycle}")
-    print()
+    logger.info(f"\nNegative cycle detected: {has_cycle}")
+    logger.info()
     
     # Example 2: Path reconstruction
-    print("Example 2: Path Reconstruction")
-    print("-" * 70)
+    logger.info("Example 2: Path Reconstruction")
+    logger.info("-" * 70)
     
     path = g1.shortest_path(0, 3)
     distance = g1.shortest_distance(0, 3)
     
     if path:
-        print(f"Shortest path from 0 to 3: {' → '.join(map(str, path))}")
-        print(f"Total distance: {distance}")
-    print()
+        logger.info(f"Shortest path from 0 to 3: {' → '.join(map(str, path))}")
+        logger.info(f"Total distance: {distance}")
+    logger.info()
     
     # Example 3: Negative cycle detection
-    print("Example 3: Negative Cycle Detection")
-    print("-" * 70)
+    logger.info("Example 3: Negative Cycle Detection")
+    logger.info("-" * 70)
     
     g2 = Graph(4, directed=True)
     # Create a negative cycle: 1 → 2 → 3 → 1 with negative total
@@ -207,47 +209,47 @@ def main() -> None:
     
     distances2, _, has_cycle2 = g2.bellman_ford(0)
     
-    print("Graph with negative cycle:")
-    print(f"Negative cycle detected: {has_cycle2}")
+    logger.info("Graph with negative cycle:")
+    logger.info(f"Negative cycle detected: {has_cycle2}")
     
     if has_cycle2:
-        print("⚠️  Warning: Graph contains negative cycle!")
-        print("   Shortest paths are undefined (can be infinitely negative)")
+        logger.info("⚠️  Warning: Graph contains negative cycle!")
+        logger.info("   Shortest paths are undefined (can be infinitely negative)")
     else:
-        print("Shortest distances:")
+        logger.info("Shortest distances:")
         for vertex in sorted(distances2.keys()):
             dist = distances2[vertex]
             if dist == float('inf'):
-                print(f"  To vertex {vertex}: ∞")
+                logger.info(f"  To vertex {vertex}: ∞")
             else:
-                print(f"  To vertex {vertex}: {dist}")
-    print()
+                logger.info(f"  To vertex {vertex}: {dist}")
+    logger.info()
     
     # Example 4: Comparison with Dijkstra
-    print("Example 4: Bellman-Ford vs Dijkstra")
-    print("-" * 70)
+    logger.info("Example 4: Bellman-Ford vs Dijkstra")
+    logger.info("-" * 70)
     
-    print("Key Differences:")
-    print("  Bellman-Ford:")
-    print("    ✓ Works with negative weights")
-    print("    ✓ Detects negative cycles")
-    print("    ✗ Slower: O(V*E)")
-    print("    ✗ Works on any graph structure")
-    print()
-    print("  Dijkstra:")
-    print("    ✗ Does NOT work with negative weights")
-    print("    ✗ Cannot detect negative cycles")
-    print("    ✓ Faster: O((V+E) log V)")
-    print("    ✓ More efficient for non-negative weights")
-    print()
-    print("  Recommendation:")
-    print("    - Use Dijkstra for non-negative weights (faster)")
-    print("    - Use Bellman-Ford for negative weights or cycle detection")
-    print()
+    logger.info("Key Differences:")
+    logger.info("  Bellman-Ford:")
+    logger.info("    ✓ Works with negative weights")
+    logger.info("    ✓ Detects negative cycles")
+    logger.info("    ✗ Slower: O(V*E)")
+    logger.info("    ✗ Works on any graph structure")
+    logger.info()
+    logger.info("  Dijkstra:")
+    logger.info("    ✗ Does NOT work with negative weights")
+    logger.info("    ✗ Cannot detect negative cycles")
+    logger.info("    ✓ Faster: O((V+E) log V)")
+    logger.info("    ✓ More efficient for non-negative weights")
+    logger.info()
+    logger.info("  Recommendation:")
+    logger.info("    - Use Dijkstra for non-negative weights (faster)")
+    logger.info("    - Use Bellman-Ford for negative weights or cycle detection")
+    logger.info()
     
     # Example 5: All paths from source
-    print("Example 5: All Shortest Paths from Source")
-    print("-" * 70)
+    logger.info("Example 5: All Shortest Paths from Source")
+    logger.info("-" * 70)
     
     g3 = Graph(6, directed=True)
     g3.add_edge(0, 1, 5.0)
@@ -262,21 +264,21 @@ def main() -> None:
     
     distances3, _, has_cycle3 = g3.bellman_ford(0)
     
-    print("All shortest paths from vertex 0:")
+    logger.info("All shortest paths from vertex 0:")
     for target in range(1, 6):
         path = g3.shortest_path(0, target)
         dist = distances3.get(target, float('inf'))
         
         if path:
-            print(f"  0 → {target}: {' → '.join(map(str, path))} "
+            logger.info(f"  0 → {target}: {' → '.join(map(str, path))} "
                   f"(distance: {dist})")
         elif dist == float('inf'):
-            print(f"  0 → {target}: No path")
-    print()
+            logger.info(f"  0 → {target}: No path")
+    logger.info()
     
     # Example 6: Performance measurement
-    print("Example 6: Performance on Different Graph Sizes")
-    print("-" * 70)
+    logger.info("Example 6: Performance on Different Graph Sizes")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Bellman-Ford Algorithm")
     
@@ -295,47 +297,46 @@ def main() -> None:
             return g_large.bellman_ford(0)
         
         _, metrics = timer.measure(run_bellman_ford)
-        print(f"Graph with {n} vertices, {len(g_large.edges)} edges:")
-        print(f"  Time: {metrics['execution_time_ms']:.3f} ms")
-        print(f"  Memory: {metrics['memory_peak_kb']:.2f} KB")
+        logger.info(f"Graph with {n} vertices, {len(g_large.edges)} edges:")
+        logger.info(f"  Time: {metrics['execution_time_ms']:.3f} ms")
+        logger.info(f"  Memory: {metrics['memory_peak_kb']:.2f} KB")
     
-    print()
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O(V * E) - V vertices, E edges")
-    print("  Space: O(V) - distances and previous arrays")
-    print("\nKey Advantages:")
-    print("  - Works with negative edge weights")
-    print("  - Detects negative cycles")
-    print("  - Simpler than Dijkstra (no priority queue needed)")
-    print("  - Works on any graph structure")
-    print("\nKey Disadvantages:")
-    print("  - Slower than Dijkstra for non-negative weights")
-    print("  - O(V*E) time complexity")
-    print("  - Less efficient for sparse graphs")
-    print("\nWhen to Use:")
-    print("  - Graphs with negative edge weights")
-    print("  - Need to detect negative cycles")
-    print("  - Currency exchange rate calculations")
-    print("  - Network routing with negative costs")
-    print("  - When Dijkstra cannot be used")
-    print("\nWhen NOT to Use:")
-    print("  - Graphs with only non-negative weights (use Dijkstra)")
-    print("  - Very large graphs (consider Floyd-Warshall for all-pairs)")
-    print("  - When performance is critical and weights are non-negative")
-    print("\nCommon Use Cases:")
-    print("  - Currency arbitrage detection")
-    print("  - Network routing with negative costs")
-    print("  - Distance-vector routing protocols")
-    print("  - Finding longest paths (by negating weights)")
-    print("  - Cycle detection in weighted graphs")
-    print("\nAlgorithm Steps:")
-    print("  1. Initialize distances (source = 0, others = ∞)")
-    print("  2. Relax all edges (V-1) times")
-    print("  3. Check for negative cycles (one more relaxation)")
-    print("=" * 70)
+    logger.info()
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  O(V * E) - V vertices, E edges")
+    logger.info("  Space: O(V) - distances and previous arrays")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Works with negative edge weights")
+    logger.info("  - Detects negative cycles")
+    logger.info("  - Simpler than Dijkstra (no priority queue needed)")
+    logger.info("  - Works on any graph structure")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Slower than Dijkstra for non-negative weights")
+    logger.info("  - O(V*E) time complexity")
+    logger.info("  - Less efficient for sparse graphs")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Graphs with negative edge weights")
+    logger.info("  - Need to detect negative cycles")
+    logger.info("  - Currency exchange rate calculations")
+    logger.info("  - Network routing with negative costs")
+    logger.info("  - When Dijkstra cannot be used")
+    logger.info("\nWhen NOT to Use:")
+    logger.info("  - Graphs with only non-negative weights (use Dijkstra)")
+    logger.info("  - Very large graphs (consider Floyd-Warshall for all-pairs)")
+    logger.info("  - When performance is critical and weights are non-negative")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Currency arbitrage detection")
+    logger.info("  - Network routing with negative costs")
+    logger.info("  - Distance-vector routing protocols")
+    logger.info("  - Finding longest paths (by negating weights)")
+    logger.info("  - Cycle detection in weighted graphs")
+    logger.info("\nAlgorithm Steps:")
+    logger.info("  1. Initialize distances (source = 0, others = ∞)")
+    logger.info("  2. Relax all edges (V-1) times")
+    logger.info("  3. Check for negative cycles (one more relaxation)")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":
     main()
-

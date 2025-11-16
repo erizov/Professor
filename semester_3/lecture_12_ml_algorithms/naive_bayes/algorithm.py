@@ -15,6 +15,8 @@ from typing import Dict, List, Any
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class NaiveBayes:
@@ -143,14 +145,14 @@ class NaiveBayes:
 
 def main() -> None:
     """Demonstration of Naive Bayes."""
-    print("=" * 70)
-    print("NAIVE BAYES CLASSIFIER DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("NAIVE BAYES CLASSIFIER DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Simple classification
-    print("Example 1: Simple Classification")
-    print("-" * 70)
+    logger.info("Example 1: Simple Classification")
+    logger.info("-" * 70)
     
     # Weather dataset example
     X = np.array([
@@ -177,14 +179,14 @@ def main() -> None:
     ])
     
     predictions = nb.predict(X_test)
-    print("Test predictions:")
+    logger.info("Test predictions:")
     for i, pred in enumerate(predictions):
-        print(f"  Sample {i+1}: {pred} ({'Yes' if pred == 1 else 'No'})")
-    print()
+        logger.info(f"  Sample {i+1}: {pred} ({'Yes' if pred == 1 else 'No'})")
+    logger.info()
     
     # Example 2: Text classification (simplified)
-    print("Example 2: Text Classification (Simplified)")
-    print("-" * 70)
+    logger.info("Example 2: Text Classification (Simplified)")
+    logger.info("-" * 70)
     
     # Simple word-based features
     # Features: [word1_present, word2_present, word3_present]
@@ -202,12 +204,12 @@ def main() -> None:
     
     test_text = np.array([[1, 0, 0]])  # Contains "good"
     pred_text = nb_text.predict(test_text)
-    print(f"Text with 'good': {'Positive' if pred_text[0] == 1 else 'Negative'}")
-    print()
+    logger.info(f"Text with 'good': {'Positive' if pred_text[0] == 1 else 'Negative'}")
+    logger.info()
     
     # Example 3: Performance measurement
-    print("Example 3: Performance Measurement")
-    print("-" * 70)
+    logger.info("Example 3: Performance Measurement")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Naive Bayes")
     
@@ -222,42 +224,41 @@ def main() -> None:
         
         result, metrics = timer.measure(train_model)
         accuracy = np.mean(result.predict(X) == y)
-        print(f"Dataset size: {n}")
-        print(f"  Time: {metrics['execution_time_ms']:.3f} ms")
-        print(f"  Accuracy: {accuracy:.4f}")
+        logger.info(f"Dataset size: {n}")
+        logger.info(f"  Time: {metrics['execution_time_ms']:.3f} ms")
+        logger.info(f"  Accuracy: {accuracy:.4f}")
     
-    print()
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Training: O(n * d) - n samples, d features")
-    print("  Prediction: O(d * c) - c classes")
-    print("  Space: O(d * c * v) - v unique values per feature")
-    print("\nKey Advantages:")
-    print("  - Fast training and prediction")
-    print("  - Works well with small datasets")
-    print("  - Handles multiple classes")
-    print("  - Probabilistic predictions")
-    print("  - Not sensitive to irrelevant features")
-    print("\nKey Disadvantages:")
-    print("  - Strong independence assumption (often violated)")
-    print("  - Requires feature independence")
-    print("  - Can be outperformed by more complex models")
-    print("  - Zero probability problem (needs smoothing)")
-    print("\nWhen to Use:")
-    print("  - Text classification (spam detection)")
-    print("  - Document classification")
-    print("  - Sentiment analysis")
-    print("  - Medical diagnosis")
-    print("  - Real-time prediction (fast)")
-    print("\nCommon Use Cases:")
-    print("  - Spam email detection")
-    print("  - Text categorization")
-    print("  - Sentiment analysis")
-    print("  - Medical diagnosis")
-    print("  - News article classification")
-    print("=" * 70)
+    logger.info()
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Training: O(n * d) - n samples, d features")
+    logger.info("  Prediction: O(d * c) - c classes")
+    logger.info("  Space: O(d * c * v) - v unique values per feature")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Fast training and prediction")
+    logger.info("  - Works well with small datasets")
+    logger.info("  - Handles multiple classes")
+    logger.info("  - Probabilistic predictions")
+    logger.info("  - Not sensitive to irrelevant features")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Strong independence assumption (often violated)")
+    logger.info("  - Requires feature independence")
+    logger.info("  - Can be outperformed by more complex models")
+    logger.info("  - Zero probability problem (needs smoothing)")
+    logger.info("\nWhen to Use:")
+    logger.info("  - Text classification (spam detection)")
+    logger.info("  - Document classification")
+    logger.info("  - Sentiment analysis")
+    logger.info("  - Medical diagnosis")
+    logger.info("  - Real-time prediction (fast)")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Spam email detection")
+    logger.info("  - Text categorization")
+    logger.info("  - Sentiment analysis")
+    logger.info("  - Medical diagnosis")
+    logger.info("  - News article classification")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":
     main()
-

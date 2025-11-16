@@ -8,7 +8,10 @@ import java.util.*;
  * Time Complexity: O((V + E) log V) with priority queue
  * Space Complexity: O(V)
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class Edge {
         int to;
@@ -145,14 +148,14 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("DIJKSTRA'S ALGORITHM DEMONSTRATION");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("DIJKSTRA'S ALGORITHM DEMONSTRATION");
+        logger.info("=".repeat(70));
+        logger.info();
         
         // Example 1: Basic shortest path
-        System.out.println("Example 1: Basic Shortest Path Finding");
-        System.out.println("-".repeat(70));
+        logger.info("Example 1: Basic Shortest Path Finding");
+        logger.info("-".repeat(70));
         
         Graph g1 = new Graph(false);
         g1.addEdge(0, 1, 4.0);
@@ -162,33 +165,33 @@ public class Algorithm {
         
         Map<Integer, Double> distances = g1.dijkstra(0);
         
-        System.out.println("Shortest distances from vertex 0:");
+        logger.info("Shortest distances from vertex 0:");
         distances.entrySet().stream()
                  .sorted(Map.Entry.comparingByKey())
                  .forEach(entry -> 
                      System.out.printf("  To vertex %d: %.1f%n", 
                                      entry.getKey(), entry.getValue()));
-        System.out.println();
+        logger.info();
         
         // Example 2: Path reconstruction
-        System.out.println("Example 2: Path Reconstruction");
-        System.out.println("-".repeat(70));
+        logger.info("Example 2: Path Reconstruction");
+        logger.info("-".repeat(70));
         
         List<Integer> path = g1.shortestPath(0, 3);
         if (path != null) {
             System.out.print("Shortest path from 0 to 3: ");
-            System.out.println(path.stream()
+            logger.info(path.stream()
                                   .map(String::valueOf)
                                   .reduce((a, b) -> a + " → " + b)
                                   .orElse(""));
             System.out.printf("Total distance: %.1f%n", 
                             distances.get(3));
         }
-        System.out.println();
+        logger.info();
         
         // Example 3: Complex graph
-        System.out.println("Example 3: Complex Weighted Graph");
-        System.out.println("-".repeat(70));
+        logger.info("Example 3: Complex Weighted Graph");
+        logger.info("-".repeat(70));
         
         Graph g2 = new Graph(true);
         g2.addEdge(0, 1, 1.0);
@@ -201,14 +204,14 @@ public class Algorithm {
         
         Map<Integer, Double> distances2 = g2.dijkstra(0);
         
-        System.out.println("Shortest distances from vertex 0:");
+        logger.info("Shortest distances from vertex 0:");
         distances2.entrySet().stream()
                   .sorted(Map.Entry.comparingByKey())
                   .forEach(entry -> 
                       System.out.printf("  To vertex %d: %.1f%n", 
                                       entry.getKey(), entry.getValue()));
         
-        System.out.println("\nShortest paths:");
+        logger.info("\nShortest paths:");
         for (int target = 1; target <= 4; target++) {
             List<Integer> p = g2.shortestPath(0, target);
             if (p != null) {
@@ -221,22 +224,21 @@ public class Algorithm {
                                 distances2.get(target));
             }
         }
-        System.out.println();
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nComplexity Summary:");
-        System.out.println("  Time:  O((V + E) log V)");
-        System.out.println("  Space: O(V)");
-        System.out.println("\nKey Advantages:");
-        System.out.println("  - Finds shortest path in weighted graphs");
-        System.out.println("  - Efficient with priority queue");
-        System.out.println("\nLimitations:");
-        System.out.println("  - Does NOT work with negative weights");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nComplexity Summary:");
+        logger.info("  Time:  O((V + E) log V)");
+        logger.info("  Space: O(V)");
+        logger.info("\nKey Advantages:");
+        logger.info("  - Finds shortest path in weighted graphs");
+        logger.info("  - Efficient with priority queue");
+        logger.info("\nLimitations:");
+        logger.info("  - Does NOT work with negative weights");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }
 }
-

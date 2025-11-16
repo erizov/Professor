@@ -1,0 +1,12 @@
+{
+  "name": "batch_inference",
+  "display_name": "Batch Inference",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_66_llm_inference",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

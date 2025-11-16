@@ -14,6 +14,8 @@ import random
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 def interpolation_search(arr: List[int], target: int) -> int:
@@ -74,9 +76,9 @@ def interpolation_search_visualized(arr: List[int], target: int) -> int:
     Returns:
         Index of target if found, -1 otherwise
     """
-    print(f"Array: {arr}")
-    print(f"Target: {target}")
-    print()
+    logger.info(f"Array: {arr}")
+    logger.info(f"Target: {target}")
+    logger.info()
     
     left = 0
     right = len(arr) - 1
@@ -84,15 +86,15 @@ def interpolation_search_visualized(arr: List[int], target: int) -> int:
     
     while left <= right and target >= arr[left] and target <= arr[right]:
         iteration += 1
-        print(f"Iteration {iteration}:")
-        print(f"  Range: [{left}, {right}]")
-        print(f"  arr[{left}] = {arr[left]}, arr[{right}] = {arr[right]}")
+        logger.debug(f"Iteration {iteration}:")
+        logger.info(f"  Range: [{left}, {right}]")
+        logger.info(f"  arr[{left}] = {arr[left]}, arr[{right}] = {arr[right]}")
         
         if left == right:
             if arr[left] == target:
-                print(f"  Found at index {left}!")
+                logger.info(f"  Found at index {left}!")
                 return left
-            print(f"  Not found.")
+            logger.info(f"  Not found.")
             return -1
         
         # Calculate interpolated position
@@ -100,90 +102,90 @@ def interpolation_search_visualized(arr: List[int], target: int) -> int:
                         (arr[right] - arr[left]) * 
                         (right - left))
         
-        print(f"  Interpolated position: {pos}")
-        print(f"  arr[{pos}] = {arr[pos]}")
+        logger.info(f"  Interpolated position: {pos}")
+        logger.info(f"  arr[{pos}] = {arr[pos]}")
         
         if arr[pos] == target:
-            print(f"  Found at index {pos}!")
+            logger.info(f"  Found at index {pos}!")
             return pos
         
         if arr[pos] < target:
-            print(f"  {arr[pos]} < {target}, search right half")
+            logger.info(f"  {arr[pos]} < {target}, search right half")
             left = pos + 1
         else:
-            print(f"  {arr[pos]} > {target}, search left half")
+            logger.info(f"  {arr[pos]} > {target}, search left half")
             right = pos - 1
-        print()
+        logger.info()
     
-    print("Target out of range or not found.")
+    logger.info("Target out of range or not found.")
     return -1
 
 
 def main() -> None:
     """Demonstration of Interpolation Search."""
-    print("=" * 70)
-    print("INTERPOLATION SEARCH DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("INTERPOLATION SEARCH DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Uniformly distributed data
-    print("Example 1: Uniformly Distributed (Best Case)")
-    print("-" * 70)
+    logger.info("Example 1: Uniformly Distributed (Best Case)")
+    logger.info("-" * 70)
     data1 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
     target1 = 70
     result1 = interpolation_search(data1, target1)
-    print(f"Array: {data1}")
-    print(f"Target: {target1}")
-    print(f"Result: Index {result1}")
+    logger.info(f"Array: {data1}")
+    logger.info(f"Target: {target1}")
+    logger.info(f"Result: Index {result1}")
     if result1 != -1:
-        print(f"Verification: arr[{result1}] = {data1[result1]}")
-    print()
+        logger.info(f"Verification: arr[{result1}] = {data1[result1]}")
+    logger.info()
     
     # Example 2: Element not found
-    print("Example 2: Element Not Found")
-    print("-" * 70)
+    logger.info("Example 2: Element Not Found")
+    logger.info("-" * 70)
     data2 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
     target2 = 35
     result2 = interpolation_search(data2, target2)
-    print(f"Array: {data2}")
-    print(f"Target: {target2}")
-    print(f"Result: {'Not found' if result2 == -1 else f'Index {result2}'}")
-    print()
+    logger.info(f"Array: {data2}")
+    logger.info(f"Target: {target2}")
+    logger.info(f"Result: {'Not found' if result2 == -1 else f'Index {result2}'}")
+    logger.info()
     
     # Example 3: First element
-    print("Example 3: First Element")
-    print("-" * 70)
+    logger.info("Example 3: First Element")
+    logger.info("-" * 70)
     data3 = [1, 5, 10, 15, 20, 25, 30, 35, 40]
     target3 = 1
     result3 = interpolation_search(data3, target3)
-    print(f"Array: {data3}")
-    print(f"Target: {target3}")
-    print(f"Result: Index {result3}")
-    print()
+    logger.info(f"Array: {data3}")
+    logger.info(f"Target: {target3}")
+    logger.info(f"Result: Index {result3}")
+    logger.info()
     
     # Example 4: Last element
-    print("Example 4: Last Element")
-    print("-" * 70)
+    logger.info("Example 4: Last Element")
+    logger.info("-" * 70)
     data4 = [1, 5, 10, 15, 20, 25, 30, 35, 40]
     target4 = 40
     result4 = interpolation_search(data4, target4)
-    print(f"Array: {data4}")
-    print(f"Target: {target4}")
-    print(f"Result: Index {result4}")
-    print()
+    logger.info(f"Array: {data4}")
+    logger.info(f"Target: {target4}")
+    logger.info(f"Result: Index {result4}")
+    logger.info()
     
     # Example 5: Visualization
-    print("Example 5: Visualized Interpolation Search")
-    print("-" * 70)
+    logger.info("Example 5: Visualized Interpolation Search")
+    logger.info("-" * 70)
     data5 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
     target5 = 55
     result5 = interpolation_search_visualized(data5, target5)
-    print()
+    logger.info()
     
     # Example 6: Performance comparison
-    print("Example 6: Performance Measurement")
-    print("-" * 70)
-    print("With uniformly distributed data:")
+    logger.info("Example 6: Performance Measurement")
+    logger.info("-" * 70)
+    logger.info("With uniformly distributed data:")
     
     timer = PerformanceTimer("Interpolation Search")
     
@@ -194,40 +196,40 @@ def main() -> None:
         target = random.choice(data)
         
         _, metrics = timer.measure(interpolation_search, data, target)
-        print(f"n={size:6d}: {metrics['execution_time_ms']:8.3f} ms")
+        logger.info(f"n={size:6d}: {metrics['execution_time_ms']:8.3f} ms")
     
-    print()
+    logger.info()
     timer.print_summary()
     
-    print("\n" + "=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O(log log n) - uniform distribution (best case)")
-    print("         O(n) - non-uniform distribution (worst case)")
-    print("  Space: O(1)")
-    print("\nKey Points:")
-    print("  + Faster than binary search for uniform data")
-    print("  + O(log log n) average case")
-    print("  + Works on sorted arrays")
-    print("  + Good for large uniformly distributed datasets")
-    print("  - Requires uniformly distributed data")
-    print("  - Worst case O(n) for skewed data")
-    print("  - More complex than binary search")
-    print("\nComparison with other searches:")
-    print("  Linear Search:        O(n)")
-    print("  Jump Search:          O(√n)")
-    print("  Binary Search:        O(log n)")
-    print("  Interpolation Search: O(log log n) average")
-    print("\nWhen to use:")
-    print("  • Sorted array")
-    print("  • Uniformly distributed data")
-    print("  • Large datasets")
-    print("  • Need fastest possible search")
-    print("\nWhen NOT to use:")
-    print("  • Non-uniform distribution")
-    print("  • Small datasets")
-    print("  • Unsorted array")
-    print("  • Data with large gaps")
-    print("=" * 70)
+    logger.info("\n" + "=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  O(log log n) - uniform distribution (best case)")
+    logger.info("         O(n) - non-uniform distribution (worst case)")
+    logger.info("  Space: O(1)")
+    logger.info("\nKey Points:")
+    logger.info("  + Faster than binary search for uniform data")
+    logger.info("  + O(log log n) average case")
+    logger.info("  + Works on sorted arrays")
+    logger.info("  + Good for large uniformly distributed datasets")
+    logger.info("  - Requires uniformly distributed data")
+    logger.info("  - Worst case O(n) for skewed data")
+    logger.info("  - More complex than binary search")
+    logger.info("\nComparison with other searches:")
+    logger.info("  Linear Search:        O(n)")
+    logger.info("  Jump Search:          O(√n)")
+    logger.info("  Binary Search:        O(log n)")
+    logger.info("  Interpolation Search: O(log log n) average")
+    logger.info("\nWhen to use:")
+    logger.info("  • Sorted array")
+    logger.info("  • Uniformly distributed data")
+    logger.info("  • Large datasets")
+    logger.info("  • Need fastest possible search")
+    logger.info("\nWhen NOT to use:")
+    logger.info("  • Non-uniform distribution")
+    logger.info("  • Small datasets")
+    logger.info("  • Unsorted array")
+    logger.info("  • Data with large gaps")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

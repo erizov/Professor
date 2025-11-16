@@ -1,0 +1,12 @@
+{
+  "name": "quantum_ai",
+  "display_name": "Quantum Ai",
+  "category": "Advanced Graduate Level",
+  "semester": 12,
+  "lecture": "lecture_81_quantum_applications",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

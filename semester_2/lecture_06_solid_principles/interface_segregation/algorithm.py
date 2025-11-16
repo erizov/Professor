@@ -10,6 +10,8 @@ Many client-specific interfaces are better than one general-purpose interface.
 import sys
 from pathlib import Path
 from abc import ABC, abstractmethod
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
@@ -38,20 +40,20 @@ class BadHumanWorker(BadWorker):
     """Human worker - implements all methods."""
     
     def work(self) -> None:
-        print("Human working...")
+        logger.info("Human working...")
     
     def eat(self) -> None:
-        print("Human eating...")
+        logger.info("Human eating...")
     
     def sleep(self) -> None:
-        print("Human sleeping...")
+        logger.info("Human sleeping...")
 
 
 class BadRobotWorker(BadWorker):
     """Robot worker - forced to implement unused methods!"""
     
     def work(self) -> None:
-        print("Robot working...")
+        logger.info("Robot working...")
     
     def eat(self) -> None:
         raise NotImplementedError("Robots don't eat!")  # Forced!
@@ -92,20 +94,20 @@ class HumanWorker(Workable, Eatable, Sleepable):
     """Human worker - implements all relevant interfaces."""
     
     def work(self) -> None:
-        print("Human working...")
+        logger.info("Human working...")
     
     def eat(self) -> None:
-        print("Human eating...")
+        logger.info("Human eating...")
     
     def sleep(self) -> None:
-        print("Human sleeping...")
+        logger.info("Human sleeping...")
 
 
 class RobotWorker(Workable):
     """Robot worker - only implements work interface."""
     
     def work(self) -> None:
-        print("Robot working...")
+        logger.info("Robot working...")
 
 
 # Example 2: Document Operations
@@ -130,7 +132,7 @@ class BadSimplePrinter(BadPrinter):
     """Simple printer - forced to implement unused methods."""
     
     def print_document(self, document: str) -> None:
-        print(f"Printing: {document}")
+        logger.info(f"Printing: {document}")
     
     def scan_document(self) -> str:
         raise NotImplementedError("Simple printer cannot scan!")
@@ -168,20 +170,20 @@ class SimplePrinter(Printer):
     """Simple printer - only prints."""
     
     def print_document(self, document: str) -> None:
-        print(f"Printing: {document}")
+        logger.info(f"Printing: {document}")
 
 
 class MultiFunctionPrinter(Printer, Scanner, Fax):
     """Multi-function printer - implements all interfaces."""
     
     def print_document(self, document: str) -> None:
-        print(f"Printing: {document}")
+        logger.info(f"Printing: {document}")
     
     def scan_document(self) -> str:
         return "Scanned document"
     
     def fax_document(self, document: str) -> None:
-        print(f"Faxing: {document}")
+        logger.info(f"Faxing: {document}")
 
 
 # Example 3: Repository Pattern
@@ -255,7 +257,7 @@ class ReadOnlyRepository(Readable):
     """Read-only repository."""
     
     def read(self, id: int) -> any:
-        print(f"Reading entity {id}")
+        logger.info(f"Reading entity {id}")
         return f"Entity {id}"
 
 
@@ -263,44 +265,44 @@ class FullRepository(Readable, Writable, Deletable, Searchable):
     """Full repository with all operations."""
     
     def read(self, id: int) -> any:
-        print(f"Reading entity {id}")
+        logger.info(f"Reading entity {id}")
         return f"Entity {id}"
     
     def create(self, entity: any) -> None:
-        print(f"Creating {entity}")
+        logger.info(f"Creating {entity}")
     
     def update(self, entity: any) -> None:
-        print(f"Updating {entity}")
+        logger.info(f"Updating {entity}")
     
     def delete(self, id: int) -> None:
-        print(f"Deleting entity {id}")
+        logger.info(f"Deleting entity {id}")
     
     def find_by_name(self, name: str) -> list:
-        print(f"Finding entities with name: {name}")
+        logger.info(f"Finding entities with name: {name}")
         return []
 
 
 def main() -> None:
     """Demonstration of Interface Segregation Principle."""
-    print("=" * 70)
-    print("INTERFACE SEGREGATION PRINCIPLE (ISP) DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("INTERFACE SEGREGATION PRINCIPLE (ISP) DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Workers
-    print("Example 1: Worker Interfaces")
-    print("-" * 70)
+    logger.info("Example 1: Worker Interfaces")
+    logger.info("-" * 70)
     
-    print("❌ BAD: Robot forced to implement unused methods")
+    logger.info("❌ BAD: Robot forced to implement unused methods")
     try:
         robot = BadRobotWorker()
         robot.work()
         robot.eat()  # This will fail!
     except NotImplementedError as e:
-        print(f"Error: {e}")
-    print()
+        logger.info(f"Error: {e}")
+    logger.info()
     
-    print("✅ GOOD: Segregated interfaces")
+    logger.info("✅ GOOD: Segregated interfaces")
     human = HumanWorker()
     robot = RobotWorker()
     
@@ -308,11 +310,11 @@ def main() -> None:
     human.eat()
     robot.work()
     # robot.eat()  # Not available - correct!
-    print()
+    logger.info()
     
     # Example 2: Printers
-    print("Example 2: Printer Interfaces")
-    print("-" * 70)
+    logger.info("Example 2: Printer Interfaces")
+    logger.info("-" * 70)
     
     simple = SimplePrinter()
     simple.print_document("Document 1")
@@ -321,11 +323,11 @@ def main() -> None:
     multi.print_document("Document 2")
     multi.scan_document()
     multi.fax_document("Document 3")
-    print()
+    logger.info()
     
     # Example 3: Repositories
-    print("Example 3: Repository Interfaces")
-    print("-" * 70)
+    logger.info("Example 3: Repository Interfaces")
+    logger.info("-" * 70)
     
     read_only = ReadOnlyRepository()
     read_only.read(1)
@@ -336,35 +338,35 @@ def main() -> None:
     full.update("Updated Entity")
     full.find_by_name("Test")
     full.delete(1)
-    print()
+    logger.info()
     
-    print("=" * 70)
-    print("\nPrinciple Summary:")
-    print("\nDefinition:")
-    print("  Clients should not be forced to depend on interfaces")
-    print("  they do not use. Many client-specific interfaces are")
-    print("  better than one general-purpose interface.")
-    print("\nKey Benefits:")
-    print("  - Clients only depend on what they use")
-    print("  - No forced implementation of unused methods")
-    print("  - Better code organization")
-    print("  - Easier to maintain and extend")
-    print("\nCommon Violations:")
-    print("  - Fat interfaces (too many methods)")
-    print("  - Clients implementing unused methods")
-    print("  - Throwing NotImplementedError")
-    print("  - Empty method implementations")
-    print("\nHow to Apply:")
-    print("  1. Split large interfaces into smaller ones")
-    print("  2. Group related methods together")
-    print("  3. Use composition of interfaces")
-    print("  4. Keep interfaces focused and cohesive")
-    print("\nSigns of Violation:")
-    print("  - Classes implementing unused methods")
-    print("  - NotImplementedError exceptions")
-    print("  - Empty method implementations")
-    print("  - Clients depending on unused functionality")
-    print("=" * 70)
+    logger.info("=" * 70)
+    logger.info("\nPrinciple Summary:")
+    logger.info("\nDefinition:")
+    logger.info("  Clients should not be forced to depend on interfaces")
+    logger.info("  they do not use. Many client-specific interfaces are")
+    logger.info("  better than one general-purpose interface.")
+    logger.info("\nKey Benefits:")
+    logger.info("  - Clients only depend on what they use")
+    logger.info("  - No forced implementation of unused methods")
+    logger.info("  - Better code organization")
+    logger.info("  - Easier to maintain and extend")
+    logger.info("\nCommon Violations:")
+    logger.info("  - Fat interfaces (too many methods)")
+    logger.info("  - Clients implementing unused methods")
+    logger.info("  - Throwing NotImplementedError")
+    logger.info("  - Empty method implementations")
+    logger.info("\nHow to Apply:")
+    logger.info("  1. Split large interfaces into smaller ones")
+    logger.info("  2. Group related methods together")
+    logger.info("  3. Use composition of interfaces")
+    logger.info("  4. Keep interfaces focused and cohesive")
+    logger.info("\nSigns of Violation:")
+    logger.info("  - Classes implementing unused methods")
+    logger.info("  - NotImplementedError exceptions")
+    logger.info("  - Empty method implementations")
+    logger.info("  - Clients depending on unused functionality")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":

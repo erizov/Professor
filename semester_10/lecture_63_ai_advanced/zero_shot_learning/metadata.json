@@ -1,0 +1,12 @@
+{
+  "name": "zero_shot_learning",
+  "display_name": "Zero Shot Learning",
+  "category": "Advanced Graduate Level",
+  "semester": 10,
+  "lecture": "lecture_63_ai_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

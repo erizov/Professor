@@ -1,0 +1,12 @@
+{
+  "name": "feature_management",
+  "display_name": "Feature Management",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_75_gitops_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

@@ -5,7 +5,10 @@ import java.util.*;
  * 
  * Stores frequently accessed data.
  */
+import java.util.logging.Logger;
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     
     static class LRUCache {
         private final int capacity;
@@ -36,10 +39,10 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("CACHING PATTERN");
-        System.out.println("=".repeat(70));
-        System.out.println();
+        logger.info("=".repeat(70));
+        logger.info("CACHING PATTERN");
+        logger.info("=".repeat(70));
+        logger.info();
         
         LRUCache cache = new LRUCache(3);
         
@@ -47,15 +50,15 @@ public class Algorithm {
         cache.put("key2", "value2");
         cache.put("key3", "value3");
         
-        System.out.println("Cache size: " + cache.size());
-        System.out.println("key1: " + cache.get("key1"));
-        System.out.println();
+        logger.info("Cache size: " + cache.size());
+        logger.info("key1: " + cache.get("key1"));
+        logger.info();
         
         long endTime = System.nanoTime();
         
-        System.out.println("=".repeat(70));
-        System.out.println("\nPattern: Stores frequently accessed data");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("\nPattern: Stores frequently accessed data");
+        logger.info("=".repeat(70));
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

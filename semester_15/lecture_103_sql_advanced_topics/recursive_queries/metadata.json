@@ -1,0 +1,12 @@
+{
+  "name": "recursive_queries",
+  "display_name": "Recursive Queries",
+  "category": "Advanced Graduate Level",
+  "semester": 15,
+  "lecture": "lecture_103_sql_advanced_topics",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

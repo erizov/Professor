@@ -1,0 +1,12 @@
+{
+  "name": "cost_optimization",
+  "display_name": "Cost Optimization",
+  "category": "Advanced Graduate Level",
+  "semester": 11,
+  "lecture": "lecture_72_infrastructure_advanced",
+  "complexity": {
+    "time": "Varies",
+    "space": "Varies"
+  },
+  "status": "placeholder"
+}

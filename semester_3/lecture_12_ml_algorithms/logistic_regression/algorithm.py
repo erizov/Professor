@@ -13,6 +13,8 @@ import numpy as np
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
+from framework.logging_utils import get_logger
+logger = get_logger(__name__)
 
 
 class LogisticRegression:
@@ -141,14 +143,14 @@ class LogisticRegression:
 
 def main() -> None:
     """Demonstration of Logistic Regression."""
-    print("=" * 70)
-    print("LOGISTIC REGRESSION DEMONSTRATION")
-    print("=" * 70)
-    print()
+    logger.info("=" * 70)
+    logger.info("LOGISTIC REGRESSION DEMONSTRATION")
+    logger.info("=" * 70)
+    logger.info()
     
     # Example 1: Simple binary classification
-    print("Example 1: Simple Binary Classification")
-    print("-" * 70)
+    logger.info("Example 1: Simple Binary Classification")
+    logger.info("-" * 70)
     
     np.random.seed(42)
     
@@ -165,15 +167,15 @@ def main() -> None:
     model = LogisticRegression(learning_rate=0.1, n_iterations=1000)
     model.fit(X, y)
     
-    print(f"Accuracy: {model.score(X, y):.4f}")
-    print(f"Final loss: {model.losses[-1]:.4f}")
-    print(f"Weights: {model.weights}")
-    print(f"Bias: {model.bias:.4f}")
-    print()
+    logger.info(f"Accuracy: {model.score(X, y):.4f}")
+    logger.info(f"Final loss: {model.losses[-1]:.4f}")
+    logger.info(f"Weights: {model.weights}")
+    logger.info(f"Bias: {model.bias:.4f}")
+    logger.info()
     
     # Example 2: With regularization
-    print("Example 2: L2 Regularization")
-    print("-" * 70)
+    logger.info("Example 2: L2 Regularization")
+    logger.info("-" * 70)
     
     # Add some noise to make it harder
     X_noise = np.hstack([X, np.random.randn(100, 3)])
@@ -188,18 +190,18 @@ def main() -> None:
                                    regularization=0.1)
     model_reg.fit(X_noise, y)
     
-    print("Without regularization:")
-    print(f"  Accuracy: {model_no_reg.score(X_noise, y):.4f}")
-    print(f"  Weight magnitude: {np.linalg.norm(model_no_reg.weights):.4f}")
+    logger.info("Without regularization:")
+    logger.info(f"  Accuracy: {model_no_reg.score(X_noise, y):.4f}")
+    logger.info(f"  Weight magnitude: {np.linalg.norm(model_no_reg.weights):.4f}")
     
-    print("\nWith regularization:")
-    print(f"  Accuracy: {model_reg.score(X_noise, y):.4f}")
-    print(f"  Weight magnitude: {np.linalg.norm(model_reg.weights):.4f}")
-    print()
+    logger.info("\nWith regularization:")
+    logger.info(f"  Accuracy: {model_reg.score(X_noise, y):.4f}")
+    logger.info(f"  Weight magnitude: {np.linalg.norm(model_reg.weights):.4f}")
+    logger.info()
     
     # Example 3: Probability predictions
-    print("Example 3: Probability Predictions")
-    print("-" * 70)
+    logger.info("Example 3: Probability Predictions")
+    logger.info("-" * 70)
     
     test_samples = np.array([
         [3, 3],   # Should be class 0
@@ -212,14 +214,14 @@ def main() -> None:
     
     for i, (sample, proba, pred) in enumerate(
         zip(test_samples, probas, predictions)):
-        print(f"Sample {sample}:")
-        print(f"  P(class=1) = {proba:.4f}")
-        print(f"  Predicted class: {pred}")
-    print()
+        logger.info(f"Sample {sample}:")
+        logger.info(f"  P(class=1) = {proba:.4f}")
+        logger.info(f"  Predicted class: {pred}")
+    logger.info()
     
     # Example 4: Performance measurement
-    print("Example 4: Performance on Different Dataset Sizes")
-    print("-" * 70)
+    logger.info("Example 4: Performance on Different Dataset Sizes")
+    logger.info("-" * 70)
     
     timer = PerformanceTimer("Logistic Regression")
     
@@ -233,31 +235,31 @@ def main() -> None:
             return model
         
         result, metrics = timer.measure(train_model)
-        print(f"Dataset size: {n}")
-        print(f"  Time: {metrics['execution_time_ms']:.3f} ms")
-        print(f"  Accuracy: {result.score(X, y):.4f}")
+        logger.info(f"Dataset size: {n}")
+        logger.info(f"  Time: {metrics['execution_time_ms']:.3f} ms")
+        logger.info(f"  Accuracy: {result.score(X, y):.4f}")
     
-    print()
-    print("=" * 70)
-    print("\nComplexity Summary:")
-    print("  Time:  O(n * d * iter) - gradient descent")
-    print("  Space: O(d) - n=samples, d=features")
-    print("\nKey Advantages:")
-    print("  - Probabilistic predictions")
-    print("  - Works well with linearly separable data")
-    print("  - Regularization prevents overfitting")
-    print("  - Interpretable coefficients")
-    print("\nKey Disadvantages:")
-    print("  - Assumes linear decision boundary")
-    print("  - Sensitive to outliers")
-    print("  - Requires feature scaling")
-    print("  - Only for binary classification (basic version)")
-    print("\nCommon Use Cases:")
-    print("  - Spam detection")
-    print("  - Medical diagnosis (disease/no disease)")
-    print("  - Credit risk assessment")
-    print("  - Click-through rate prediction")
-    print("=" * 70)
+    logger.info()
+    logger.info("=" * 70)
+    logger.info("\nComplexity Summary:")
+    logger.info("  Time:  O(n * d * iter) - gradient descent")
+    logger.info("  Space: O(d) - n=samples, d=features")
+    logger.info("\nKey Advantages:")
+    logger.info("  - Probabilistic predictions")
+    logger.info("  - Works well with linearly separable data")
+    logger.info("  - Regularization prevents overfitting")
+    logger.info("  - Interpretable coefficients")
+    logger.info("\nKey Disadvantages:")
+    logger.info("  - Assumes linear decision boundary")
+    logger.info("  - Sensitive to outliers")
+    logger.info("  - Requires feature scaling")
+    logger.info("  - Only for binary classification (basic version)")
+    logger.info("\nCommon Use Cases:")
+    logger.info("  - Spam detection")
+    logger.info("  - Medical diagnosis (disease/no disease)")
+    logger.info("  - Credit risk assessment")
+    logger.info("  - Click-through rate prediction")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":
