@@ -44,6 +44,12 @@ Jump Search is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Binary Search**: Both require sorted data but jump search uses fixed jump size, binary search halves the search space
+- **Linear Search**: Both sequential but jump search skips elements, linear search checks every element
+- **Exponential Search**: Similar jumping concept but exponential search doubles jump size, jump search uses fixed size
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

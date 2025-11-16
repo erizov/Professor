@@ -45,6 +45,12 @@ Message Queue is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Pub-Sub**: Message queue is point-to-point, pub-sub is one-to-many messaging
+- **Event Bus**: Message queue stores messages, event bus broadcasts events immediately
+- **Stream Processing**: Message queue is messaging, stream processing is continuous data processing
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in the following frameworks:

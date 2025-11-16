@@ -31,7 +31,10 @@ Data Lakes is commonly used in combination with related algorithms and patterns.
 
 ## Do Not Confuse With
 
-**Data Lakes** should not be confused with similar concepts.
+- Algorithms with similar names but different characteristics
+- Techniques with distinct use cases or complexity guarantees
+- Related concepts that serve different purposes
+
 
 ## Examples of Implementation
 

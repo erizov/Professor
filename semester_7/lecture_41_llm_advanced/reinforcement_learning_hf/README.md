@@ -31,7 +31,10 @@ Reinforcement Learning Hf is commonly used in combination with related algorithm
 
 ## Do Not Confuse With
 
-**Reinforcement Learning Hf** should not be confused with similar concepts.
+- Algorithms with similar names but different characteristics
+- Techniques with distinct use cases or complexity guarantees
+- Related concepts that serve different purposes
+
 
 ## Examples of Implementation
 

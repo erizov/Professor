@@ -35,15 +35,9 @@ Dijkstra is commonly used in combination with:
 
 ## Do Not Confuse With
 
-**Dijkstra** should not be confused with:
-
-- **Bellman Ford**: Different approach/use case, though related
-- **Floyd Warshall**: Different approach/use case, though related
-
-**Key Differences:**
-- Each algorithm has distinct characteristics and use cases
-- Understanding the differences is crucial for correct application
-- Similar names don't imply similar implementations
+- **BFS**: Dijkstra handles weighted graphs with priority queue, BFS is for unweighted graphs with queue
+- **Bellman-Ford**: Both find shortest paths but Dijkstra requires non-negative weights, Bellman-Ford handles negative weights
+- **A* Algorithm**: A* uses heuristic function, Dijkstra explores uniformly in all directions
 
 
 ## Examples of Implementation

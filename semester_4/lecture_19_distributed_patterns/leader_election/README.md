@@ -49,6 +49,12 @@ Leader Election is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Consensus Algorithms**: Leader election chooses leader, consensus ensures agreement (Raft/Paxos do both)
+- **Master-Slave**: Leader election is algorithm, master-slave is architecture pattern
+- **Primary-Backup**: Leader election chooses primary, primary-backup is replication strategy
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

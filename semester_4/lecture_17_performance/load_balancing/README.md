@@ -32,6 +32,12 @@ See algorithm.py and Algorithm.java
 
 
 
+## Do Not Confuse With
+
+- **Reverse Proxy**: Load balancing distributes requests, reverse proxy forwards requests (can include load balancing)
+- **API Gateway**: Load balancing is traffic distribution, API gateway provides routing and more features
+- **Failover**: Load balancing distributes load, failover switches to backup on failure
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

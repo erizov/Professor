@@ -44,6 +44,12 @@ Fibonacci is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Memoization**: Fibonacci can use memoization, but memoization is a technique, not the algorithm
+- **Dynamic Programming**: Fibonacci is a DP problem, but DP is a paradigm, not this specific algorithm
+- **Matrix Exponentiation**: Fibonacci can be computed via matrix exponentiation, but that's an optimization technique
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

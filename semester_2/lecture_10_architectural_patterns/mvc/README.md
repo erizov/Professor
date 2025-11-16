@@ -49,6 +49,12 @@ Mvc is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **MVVM**: MVC has controller, MVVM has view model with data binding
+- **MVP**: MVC has passive view, MVP has presenter that updates view
+- **MVI**: MVC is imperative, MVI (Model-View-Intent) is reactive
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in the following frameworks:

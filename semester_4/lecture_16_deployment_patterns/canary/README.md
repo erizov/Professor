@@ -45,6 +45,12 @@ Canary is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Blue-Green Deployment**: Canary gradually increases traffic, blue-green switches all traffic instantly
+- **Rolling Deployment**: Canary routes percentage of traffic, rolling updates instances one by one
+- **Feature Flags**: Canary is deployment strategy, feature flags control feature visibility
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

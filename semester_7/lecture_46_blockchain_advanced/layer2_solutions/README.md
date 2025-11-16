@@ -31,7 +31,10 @@ Layer2 Solutions is commonly used in combination with related algorithms and pat
 
 ## Do Not Confuse With
 
-**Layer2 Solutions** should not be confused with similar concepts.
+- Algorithms with similar names but different characteristics
+- Techniques with distinct use cases or complexity guarantees
+- Related concepts that serve different purposes
+
 
 ## Examples of Implementation
 

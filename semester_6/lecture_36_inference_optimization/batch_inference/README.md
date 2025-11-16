@@ -43,6 +43,12 @@ This algorithm is part of Inference and requires careful consideration of resour
 
 
 
+## Do Not Confuse With
+
+- Algorithms with similar names but different characteristics
+- Techniques with distinct use cases or complexity guarantees
+- Related concepts that serve different purposes
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

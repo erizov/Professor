@@ -32,6 +32,12 @@ See algorithm.py and Algorithm.java
 
 
 
+## Do Not Confuse With
+
+- **Memoization**: Caching stores computed results, memoization is caching technique for functions
+- **CDN**: Caching is general pattern, CDN is distributed caching infrastructure
+- **Database Query Cache**: Caching is pattern, query cache is specific implementation
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

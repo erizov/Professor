@@ -45,6 +45,12 @@ Unit Testing is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Integration Testing**: Unit tests test isolated units, integration tests test component interactions
+- **End-to-End Testing**: Unit tests are fast and isolated, E2E tests exercise full system
+- **Mocking**: Unit testing is testing approach, mocking is technique used in unit tests
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

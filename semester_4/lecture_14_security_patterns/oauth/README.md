@@ -45,6 +45,12 @@ Oauth is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **JWT**: OAuth is authorization framework, JWT is token format (OAuth can use JWT)
+- **SAML**: OAuth is for authorization, SAML is for authentication/SSO
+- **OpenID Connect**: OAuth is authorization, OpenID Connect adds authentication layer on top
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in the following frameworks:

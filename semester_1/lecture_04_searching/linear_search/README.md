@@ -43,6 +43,12 @@ Linear Search is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Binary Search**: Linear search works on unsorted data O(n), binary search requires sorted data O(log n)
+- **Interpolation Search**: Both search but interpolation assumes uniform distribution, linear search makes no assumptions
+- **Hash Table Lookup**: Hash tables provide O(1) average lookup, linear search is O(n) sequential
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

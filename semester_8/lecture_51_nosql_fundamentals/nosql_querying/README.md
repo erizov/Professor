@@ -31,7 +31,10 @@ Nosql Querying is commonly used in combination with related algorithms and patte
 
 ## Do Not Confuse With
 
-**Nosql Querying** should not be confused with similar concepts.
+- Algorithms with similar names but different characteristics
+- Techniques with distinct use cases or complexity guarantees
+- Related concepts that serve different purposes
+
 
 ## Examples of Implementation
 

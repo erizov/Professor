@@ -48,6 +48,12 @@ Svm is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Logistic Regression**: Both classifiers but SVM finds maximum margin hyperplane, logistic regression finds probability distribution
+- **Perceptron**: Both linear classifiers but SVM maximizes margin, perceptron just finds separating hyperplane
+- **Neural Networks**: SVM is single-layer with kernel trick, neural networks are multi-layer
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

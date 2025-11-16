@@ -45,6 +45,12 @@ Radix Sort is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Counting Sort**: Radix sort uses counting sort as subroutine, but radix processes digits, counting sort counts occurrences
+- **Bucket Sort**: Both distribute elements but radix sort processes digits, bucket sort uses hash function
+- **LSD vs MSD**: Least Significant Digit vs Most Significant Digit are variants, not different algorithms
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

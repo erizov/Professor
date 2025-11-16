@@ -44,6 +44,12 @@ Logistic Regression is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Linear Regression**: Logistic regression is for classification, linear regression is for regression
+- **Perceptron**: Both linear classifiers but logistic regression uses sigmoid, perceptron uses step function
+- **SVM**: Both classifiers but SVM finds maximum margin, logistic regression finds probability distribution
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

@@ -31,7 +31,10 @@ Smart Contracts is commonly used in combination with related algorithms and patt
 
 ## Do Not Confuse With
 
-**Smart Contracts** should not be confused with similar concepts.
+- Algorithms with similar names but different characteristics
+- Techniques with distinct use cases or complexity guarantees
+- Related concepts that serve different purposes
+
 
 ## Examples of Implementation
 

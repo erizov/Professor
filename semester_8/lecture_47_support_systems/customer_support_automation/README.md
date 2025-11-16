@@ -31,7 +31,10 @@ Customer Support Automation is commonly used in combination with related algorit
 
 ## Do Not Confuse With
 
-**Customer Support Automation** should not be confused with similar concepts.
+- Algorithms with similar names but different characteristics
+- Techniques with distinct use cases or complexity guarantees
+- Related concepts that serve different purposes
+
 
 ## Examples of Implementation
 

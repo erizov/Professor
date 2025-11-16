@@ -48,6 +48,12 @@ B Tree is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Binary Search Tree**: B-tree is multi-way (multiple children), BST is binary (two children)
+- **B+ Tree**: B+ tree stores data only in leaves, B-tree stores data in all nodes
+- **Red-Black Tree**: Both balanced but B-tree is multi-way, red-black is binary
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

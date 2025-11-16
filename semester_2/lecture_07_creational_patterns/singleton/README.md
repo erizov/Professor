@@ -44,15 +44,9 @@ Singleton is commonly used in combination with:
 
 ## Do Not Confuse With
 
-**Singleton** should not be confused with:
-
-- **Factory**: Different approach/use case, though related
-- **Builder**: Different approach/use case, though related
-
-**Key Differences:**
-- Each algorithm has distinct characteristics and use cases
-- Understanding the differences is crucial for correct application
-- Similar names don't imply similar implementations
+- **Factory Pattern**: Singleton ensures single instance, factory creates objects
+- **Static Class**: Singleton allows inheritance and interfaces, static class cannot
+- **Global Variable**: Singleton is object-oriented pattern, global variable is procedural approach
 
 
 ## Examples of Implementation

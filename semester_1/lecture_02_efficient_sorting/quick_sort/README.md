@@ -44,15 +44,9 @@ Quick Sort is commonly used in combination with:
 
 ## Do Not Confuse With
 
-**Quick Sort** should not be confused with:
-
-- **Merge Sort**: Different approach/use case, though related
-- **Heap Sort**: Different approach/use case, though related
-
-**Key Differences:**
-- Each algorithm has distinct characteristics and use cases
-- Understanding the differences is crucial for correct application
-- Similar names don't imply similar implementations
+- **Merge Sort**: Both divide-and-conquer O(n log n) but quick sort is in-place and unstable, merge sort requires O(n) space and is stable
+- **Heap Sort**: Both O(n log n) but heap sort guarantees O(n log n) worst-case, quick sort can degrade to O(n²)
+- **Intro Sort**: Hybrid that uses quick sort but falls back to heap sort to avoid worst-case performance
 
 
 ## Examples of Implementation

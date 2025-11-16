@@ -35,6 +35,12 @@ Knapsack is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Fractional Knapsack**: 0/1 knapsack takes items whole, fractional knapsack can take fractions (greedy solution)
+- **Subset Sum**: Subset sum is special case of knapsack with value=weight, but different problem formulation
+- **Bin Packing**: Knapsack maximizes value, bin packing minimizes bins used
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

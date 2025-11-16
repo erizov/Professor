@@ -45,6 +45,12 @@ Kmeans is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- Supervised vs unsupervised learning algorithms
+- Parametric vs non-parametric models
+- Classification vs regression problems
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

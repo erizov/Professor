@@ -45,6 +45,12 @@ Circuit Breaker is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Retry Pattern**: Circuit breaker stops requests on failure, retry pattern retries failed requests
+- **Bulkhead**: Circuit breaker prevents cascading failures, bulkhead isolates resources
+- **Timeout**: Circuit breaker opens on failures, timeout limits request duration
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in the following frameworks:

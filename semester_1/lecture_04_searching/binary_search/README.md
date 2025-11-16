@@ -43,15 +43,9 @@ Binary Search is commonly used in combination with:
 
 ## Do Not Confuse With
 
-**Binary Search** should not be confused with:
-
-- **Linear Search**: Different approach/use case, though related
-- **Jump Search**: Different approach/use case, though related
-
-**Key Differences:**
-- Each algorithm has distinct characteristics and use cases
-- Understanding the differences is crucial for correct application
-- Similar names don't imply similar implementations
+- **Linear Search**: Binary search requires sorted data O(log n), linear search works on any data O(n)
+- **Interpolation Search**: Both require sorted data but interpolation assumes uniform distribution for better average case
+- **Ternary Search**: Divides into three parts instead of two, similar concept but different implementation
 
 
 ## Examples of Implementation

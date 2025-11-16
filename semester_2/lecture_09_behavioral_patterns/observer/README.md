@@ -44,15 +44,9 @@ Observer is commonly used in combination with:
 
 ## Do Not Confuse With
 
-**Observer** should not be confused with:
-
-- **Pub Sub**: Different approach/use case, though related
-- **Mediator**: Different approach/use case, though related
-
-**Key Differences:**
-- Each algorithm has distinct characteristics and use cases
-- Understanding the differences is crucial for correct application
-- Similar names don't imply similar implementations
+- **Pub-Sub Pattern**: Observer is synchronous push model, pub-sub is asynchronous message-based
+- **Mediator Pattern**: Observer has direct subject-observer relationship, mediator centralizes communication
+- **Chain of Responsibility**: Observer notifies all, chain of responsibility passes request along chain
 
 
 ## Examples of Implementation

@@ -36,6 +36,12 @@ See algorithm.py and Algorithm.java for implementations.
 
 
 
+## Do Not Confuse With
+
+- **RSA**: AES is symmetric encryption (same key), RSA is asymmetric (public/private keys)
+- **DES/3DES**: AES is modern standard (128/192/256 bits), DES is deprecated (56 bits)
+- **ChaCha20**: Both symmetric but AES is block cipher, ChaCha20 is stream cipher
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

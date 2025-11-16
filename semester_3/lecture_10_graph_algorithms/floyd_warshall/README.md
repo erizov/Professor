@@ -45,6 +45,12 @@ Floyd Warshall is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Dijkstra's Algorithm**: Floyd-Warshall finds all-pairs shortest paths, Dijkstra is single-source
+- **Bellman-Ford**: Floyd-Warshall finds all-pairs, Bellman-Ford is single-source
+- **Johnson's Algorithm**: Both find all-pairs but Johnson's uses Dijkstra as subroutine, Floyd-Warshall uses dynamic programming
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

@@ -45,6 +45,12 @@ Counting Sort is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Radix Sort**: Counting sort is used as subroutine in radix sort, but they're different algorithms
+- **Bucket Sort**: Both non-comparison sorts but counting sort counts occurrences, bucket sort distributes into buckets
+- **Pigeonhole Sort**: Similar to counting sort but for integer keys with small range
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

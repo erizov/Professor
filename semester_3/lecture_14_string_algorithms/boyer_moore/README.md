@@ -36,6 +36,12 @@ See algorithm.py and Algorithm.java for implementations.
 
 
 
+## Do Not Confuse With
+
+- **KMP Algorithm**: Both pattern matching but Boyer-Moore processes right-to-left, KMP processes left-to-right
+- **Rabin-Karp**: Both pattern matching but Boyer-Moore uses character skipping, Rabin-Karp uses hashing
+- **Sunday Algorithm**: Sunday is variant of Boyer-Moore with different bad character rule
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

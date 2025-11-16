@@ -44,6 +44,12 @@ Bellman Ford is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Dijkstra's Algorithm**: Both find shortest paths but Bellman-Ford handles negative weights, Dijkstra requires non-negative
+- **Floyd-Warshall**: Bellman-Ford is single-source, Floyd-Warshall finds all-pairs shortest paths
+- **SPFA**: Shortest Path Faster Algorithm is optimization of Bellman-Ford, not a different algorithm
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

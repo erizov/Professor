@@ -45,6 +45,12 @@ Mocking is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Stubbing**: Mocking verifies interactions, stubbing provides predefined responses
+- **Faking**: Mocking is for testing, faking is lightweight implementation for testing
+- **Spying**: Mocking replaces object, spying wraps real object to record calls
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

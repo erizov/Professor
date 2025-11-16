@@ -44,6 +44,12 @@ Linear Regression is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Logistic Regression**: Linear regression predicts continuous values, logistic regression predicts probabilities/classification
+- **Polynomial Regression**: Linear regression uses linear relationship, polynomial regression uses polynomial features
+- **Ridge/Lasso Regression**: These are regularized variants, not the base algorithm
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

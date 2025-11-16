@@ -36,6 +36,12 @@ Longest Common Subsequence is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Edit Distance**: LCS finds common subsequence, edit distance finds transformation cost
+- **Longest Common Substring**: LCS is subsequence (non-contiguous), substring must be contiguous
+- **Longest Increasing Subsequence**: LIS finds increasing sequence, LCS finds common sequence
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

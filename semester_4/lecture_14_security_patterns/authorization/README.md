@@ -45,6 +45,12 @@ Authorization is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- Encryption vs hashing (reversible vs one-way)
+- Symmetric vs asymmetric encryption
+- Authentication vs authorization
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in the following frameworks:

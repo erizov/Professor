@@ -44,15 +44,9 @@ Merge Sort is commonly used in combination with:
 
 ## Do Not Confuse With
 
-**Merge Sort** should not be confused with:
-
-- **Quick Sort**: Different approach/use case, though related
-- **Heap Sort**: Different approach/use case, though related
-
-**Key Differences:**
-- Each algorithm has distinct characteristics and use cases
-- Understanding the differences is crucial for correct application
-- Similar names don't imply similar implementations
+- **Quick Sort**: Both divide-and-conquer O(n log n) but merge sort is stable and requires O(n) space, quick sort is in-place but unstable
+- **Heap Sort**: Both O(n log n) but heap sort is in-place, merge sort requires extra space
+- **Tim Sort**: Hybrid algorithm that uses merge sort as a component but optimizes for real-world data
 
 
 ## Examples of Implementation

@@ -43,6 +43,12 @@ This algorithm is part of NLP and requires careful consideration of resource con
 
 
 
+## Do Not Confuse With
+
+- Supervised vs unsupervised learning algorithms
+- Parametric vs non-parametric models
+- Classification vs regression problems
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

@@ -45,6 +45,12 @@ Integration Testing is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Unit Testing**: Integration tests test interactions, unit tests test isolated units
+- **End-to-End Testing**: Integration tests test components, E2E tests test full user workflows
+- **System Testing**: Integration tests focus on interfaces, system tests focus on complete system
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

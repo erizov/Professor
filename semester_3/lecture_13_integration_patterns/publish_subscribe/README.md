@@ -45,6 +45,12 @@ Publish Subscribe is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Message Queue**: Pub-sub is one-to-many, message queue is point-to-point
+- **Observer Pattern**: Pub-sub is messaging infrastructure, observer is design pattern
+- **Event Sourcing**: Pub-sub is messaging, event sourcing is data storage pattern
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

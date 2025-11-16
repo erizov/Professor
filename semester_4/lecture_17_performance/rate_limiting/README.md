@@ -32,6 +32,12 @@ See algorithm.py and Algorithm.java
 
 
 
+## Do Not Confuse With
+
+- **Throttling**: Rate limiting limits request rate, throttling limits resource usage
+- **Quotas**: Rate limiting is per-time-window, quotas are total limits over period
+- **Circuit Breaker**: Rate limiting prevents overload, circuit breaker prevents cascading failures
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

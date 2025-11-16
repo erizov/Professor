@@ -44,15 +44,9 @@ Strategy is commonly used in combination with:
 
 ## Do Not Confuse With
 
-**Strategy** should not be confused with:
-
-- **State**: Different approach/use case, though related
-- **Template Method**: Different approach/use case, though related
-
-**Key Differences:**
-- Each algorithm has distinct characteristics and use cases
-- Understanding the differences is crucial for correct application
-- Similar names don't imply similar implementations
+- **Template Method**: Strategy uses composition, template method uses inheritance
+- **State Pattern**: Strategy chooses algorithm, state pattern changes behavior based on state
+- **Command Pattern**: Strategy encapsulates algorithm, command encapsulates request
 
 
 ## Examples of Implementation

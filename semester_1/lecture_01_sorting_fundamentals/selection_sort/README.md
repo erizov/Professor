@@ -45,6 +45,12 @@ Selection Sort is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Bubble Sort**: Both O(n²) but selection sort finds minimum each pass, bubble sort uses adjacent swaps
+- **Insertion Sort**: Both O(n²) but insertion sort builds sorted prefix, selection sort finds minimum each iteration
+- **Heap Sort**: Uses selection principle but with O(n log n) complexity via heap data structure
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

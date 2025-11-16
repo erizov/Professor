@@ -44,6 +44,12 @@ Interpolation Search is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Binary Search**: Both require sorted data but interpolation assumes uniform distribution, binary search always halves
+- **Linear Search**: Both sequential but interpolation uses position estimation, linear search checks sequentially
+- **Exponential Search**: Both use position estimation but exponential search for unbounded arrays
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

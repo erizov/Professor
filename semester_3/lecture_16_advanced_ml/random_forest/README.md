@@ -49,6 +49,12 @@ Random Forest is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Decision Tree**: Random forest is ensemble of decision trees, not a single tree
+- **Gradient Boosting**: Both ensemble methods but random forest uses bagging, gradient boosting uses boosting
+- **Extra Trees**: Both ensemble methods but extra trees uses random splits, random forest uses best splits
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

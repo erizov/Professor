@@ -36,6 +36,12 @@ Naive Bayes is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Bayesian Networks**: Naive Bayes assumes feature independence, Bayesian networks model dependencies
+- **Logistic Regression**: Both probabilistic but naive Bayes uses Bayes' theorem, logistic regression uses sigmoid
+- **Gaussian Mixture Models**: Naive Bayes is classifier, GMM is clustering/unsupervised learning
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

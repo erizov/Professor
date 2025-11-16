@@ -45,6 +45,12 @@ Bucket Sort is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Counting Sort**: Both non-comparison sorts but bucket sort distributes into buckets, counting sort counts occurrences
+- **Radix Sort**: Both distribute elements but bucket sort uses hash function, radix sort processes digits
+- **Hash Table**: Bucket sort uses buckets but is a sorting algorithm, not a lookup data structure
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

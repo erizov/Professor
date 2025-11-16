@@ -44,6 +44,12 @@ Heap Sort is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Selection Sort**: Both use selection principle but heap sort achieves O(n log n) via heap, selection sort is O(n²)
+- **Quick Sort**: Both O(n log n) but heap sort guarantees worst-case performance, quick sort can degrade
+- **Priority Queue**: Heap sort uses heap structure but is a sorting algorithm, not a data structure
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

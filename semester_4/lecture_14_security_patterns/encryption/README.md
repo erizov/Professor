@@ -45,6 +45,12 @@ Encryption is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Hashing**: Encryption is reversible (decrypt), hashing is one-way (cannot reverse)
+- **Encoding**: Encryption requires key and provides security, encoding is reversible without security
+- **Compression**: Encryption protects data, compression reduces size
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

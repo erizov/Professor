@@ -56,6 +56,12 @@ Shadow Deployment is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- Zero-downtime deployment strategies
+- Traffic routing vs instance management
+- Deployment patterns vs feature flags
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

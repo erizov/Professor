@@ -36,6 +36,12 @@ See algorithm.py and Algorithm.java for implementations.
 
 
 
+## Do Not Confuse With
+
+- **MD5/SHA-1**: SHA-256 is secure, MD5 and SHA-1 are cryptographically broken
+- **SHA-3**: SHA-256 is SHA-2 family, SHA-3 uses different construction (Keccak)
+- **HMAC**: SHA-256 is hash function, HMAC is message authentication code using hash function
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

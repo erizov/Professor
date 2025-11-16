@@ -44,15 +44,9 @@ Factory is commonly used in combination with:
 
 ## Do Not Confuse With
 
-**Factory** should not be confused with:
-
-- **Abstract Factory**: Different approach/use case, though related
-- **Builder**: Different approach/use case, though related
-
-**Key Differences:**
-- Each algorithm has distinct characteristics and use cases
-- Understanding the differences is crucial for correct application
-- Similar names don't imply similar implementations
+- **Abstract Factory**: Factory creates single product type, abstract factory creates families of products
+- **Builder Pattern**: Factory creates objects directly, builder constructs complex objects step by step
+- **Singleton**: Factory creates multiple instances, singleton ensures single instance
 
 
 ## Examples of Implementation

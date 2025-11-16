@@ -31,7 +31,10 @@ Nosql Consistency is commonly used in combination with related algorithms and pa
 
 ## Do Not Confuse With
 
-**Nosql Consistency** should not be confused with similar concepts.
+- Algorithms with similar names but different characteristics
+- Techniques with distinct use cases or complexity guarantees
+- Related concepts that serve different purposes
+
 
 ## Examples of Implementation
 

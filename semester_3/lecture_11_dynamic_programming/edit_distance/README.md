@@ -44,6 +44,12 @@ Edit Distance is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Hamming Distance**: Edit distance allows insertions/deletions, Hamming distance only allows substitutions
+- **Longest Common Subsequence**: LCS finds common subsequence, edit distance finds transformation cost
+- **String Matching**: Edit distance measures similarity, string matching finds exact occurrences
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

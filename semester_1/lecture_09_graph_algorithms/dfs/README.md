@@ -35,14 +35,9 @@ Dfs is commonly used in combination with:
 
 ## Do Not Confuse With
 
-**Dfs** should not be confused with:
-
-- **Bfs**: Different approach/use case, though related
-
-**Key Differences:**
-- Each algorithm has distinct characteristics and use cases
-- Understanding the differences is crucial for correct application
-- Similar names don't imply similar implementations
+- **BFS**: DFS explores deep first (stack-based), BFS explores level by level (queue-based)
+- **Backtracking**: DFS is traversal algorithm, backtracking is problem-solving technique using DFS
+- **Topological Sort**: Topological sort uses DFS but is a specific application, not the same as DFS
 
 
 ## Examples of Implementation

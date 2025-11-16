@@ -45,6 +45,12 @@ Retry Pattern is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Circuit Breaker**: Retry attempts again, circuit breaker stops on repeated failures
+- **Exponential Backoff**: Retry pattern includes backoff, exponential backoff is specific backoff strategy
+- **Idempotency**: Retry pattern retries operations, idempotency ensures safe retries
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in the following frameworks:

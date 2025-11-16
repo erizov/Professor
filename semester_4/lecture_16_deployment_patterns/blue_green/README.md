@@ -45,6 +45,12 @@ Blue Green is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Canary Deployment**: Blue-green switches all traffic instantly, canary gradually increases traffic
+- **Rolling Deployment**: Blue-green uses two environments, rolling updates instances gradually
+- **A/B Testing**: Blue-green is deployment strategy, A/B testing is feature experimentation
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

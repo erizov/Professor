@@ -32,6 +32,12 @@ See algorithm.py and Algorithm.java
 
 
 
+## Do Not Confuse With
+
+- Creational vs structural vs behavioral patterns
+- Design patterns vs architectural patterns
+- Patterns vs principles (SOLID)
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

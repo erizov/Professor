@@ -45,6 +45,12 @@ Abstract Factory is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Factory Pattern**: Abstract factory creates families of products, factory creates single product type
+- **Builder Pattern**: Abstract factory creates families, builder constructs complex objects
+- **Prototype Pattern**: Abstract factory uses inheritance, prototype uses cloning
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in the following frameworks:

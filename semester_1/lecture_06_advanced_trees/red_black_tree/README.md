@@ -48,6 +48,12 @@ Red Black Tree is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **AVL Tree**: Both self-balancing BSTs but red-black uses color properties, AVL maintains strict height balance
+- **Binary Search Tree**: Red-black is a balanced BST variant, regular BST has no balancing
+- **B-Tree**: Both balanced but B-tree is multi-way, red-black is binary
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

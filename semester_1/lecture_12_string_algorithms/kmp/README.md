@@ -23,6 +23,12 @@ Kmp is a fundamental algorithm.
 
 
 
+## Do Not Confuse With
+
+- **Rabin-Karp**: KMP uses prefix function for O(n+m), Rabin-Karp uses hashing for average O(n+m)
+- **Boyer-Moore**: Both pattern matching but Boyer-Moore skips characters right-to-left, KMP processes left-to-right
+- **Naive String Matching**: KMP avoids redundant comparisons, naive matching checks every position
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

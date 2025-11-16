@@ -44,6 +44,12 @@ Knn is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **K-Means Clustering**: KNN is supervised classification/regression, K-means is unsupervised clustering
+- **Decision Trees**: Both classifiers but KNN is instance-based, decision trees are model-based
+- **Naive Bayes**: Both classifiers but KNN uses distance, naive Bayes uses probability
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

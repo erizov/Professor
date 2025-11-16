@@ -36,6 +36,12 @@ See algorithm.py and Algorithm.java for implementations.
 
 
 
+## Do Not Confuse With
+
+- **AES**: RSA is asymmetric encryption, AES is symmetric encryption
+- **ECC**: Both asymmetric but RSA uses large integers, ECC uses elliptic curves (smaller keys)
+- **Diffie-Hellman**: RSA is encryption/signing, Diffie-Hellman is key exchange
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

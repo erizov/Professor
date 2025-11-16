@@ -44,6 +44,12 @@ Binary Search Tree is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Binary Tree**: BST enforces ordering property (left < root < right), binary tree has no ordering requirement
+- **AVL Tree**: AVL is a self-balancing BST with height balance, BST can become unbalanced
+- **Red-Black Tree**: Red-black is a self-balancing BST with color properties, BST has no balancing mechanism
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

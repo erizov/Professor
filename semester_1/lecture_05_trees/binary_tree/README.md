@@ -45,6 +45,12 @@ Binary Tree is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- Balanced vs unbalanced tree structures
+- Binary vs multi-way trees
+- Self-balancing mechanisms (AVL, red-black, etc.)
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

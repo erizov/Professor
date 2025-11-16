@@ -31,7 +31,10 @@ Blue Green Deployment is commonly used in combination with related algorithms an
 
 ## Do Not Confuse With
 
-**Blue Green Deployment** should not be confused with similar concepts.
+- Algorithms with similar names but different characteristics
+- Techniques with distinct use cases or complexity guarantees
+- Related concepts that serve different purposes
+
 
 ## Examples of Implementation
 

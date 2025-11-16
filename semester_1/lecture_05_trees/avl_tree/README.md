@@ -44,15 +44,9 @@ Avl Tree is commonly used in combination with:
 
 ## Do Not Confuse With
 
-**Avl Tree** should not be confused with:
-
-- **Red Black Tree**: Different approach/use case, though related
-- **Bst**: Different approach/use case, though related
-
-**Key Differences:**
-- Each algorithm has distinct characteristics and use cases
-- Understanding the differences is crucial for correct application
-- Similar names don't imply similar implementations
+- **Red-Black Tree**: Both self-balancing BSTs but AVL maintains strict height balance, red-black uses color properties
+- **Binary Search Tree**: AVL is a balanced BST variant, regular BST can become unbalanced
+- **Splay Tree**: Both self-adjusting but AVL maintains balance, splay tree moves accessed nodes to root
 
 
 ## Examples of Implementation

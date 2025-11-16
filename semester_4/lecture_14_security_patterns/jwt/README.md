@@ -45,6 +45,12 @@ Jwt is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Session Tokens**: JWT is stateless and self-contained, session tokens require server-side storage
+- **OAuth**: JWT is token format, OAuth is authorization framework (JWT can be used in OAuth)
+- **API Keys**: JWT contains claims and is signed, API keys are simple identifiers
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in the following frameworks:

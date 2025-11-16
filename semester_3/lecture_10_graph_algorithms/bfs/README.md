@@ -44,14 +44,9 @@ Bfs is commonly used in combination with:
 
 ## Do Not Confuse With
 
-**Bfs** should not be confused with:
-
-- **Dfs**: Different approach/use case, though related
-
-**Key Differences:**
-- Each algorithm has distinct characteristics and use cases
-- Understanding the differences is crucial for correct application
-- Similar names don't imply similar implementations
+- **DFS**: BFS explores level by level (queue-based), DFS goes deep first (stack-based)
+- **Dijkstra's Algorithm**: BFS finds shortest path in unweighted graphs, Dijkstra handles weighted graphs
+- **Level-Order Traversal**: BFS is level-order traversal for trees, but BFS works on any graph
 
 
 ## Examples of Implementation

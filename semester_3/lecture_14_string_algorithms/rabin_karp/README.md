@@ -36,6 +36,12 @@ See algorithm.py and Algorithm.java for implementations.
 
 
 
+## Do Not Confuse With
+
+- **KMP Algorithm**: Both pattern matching but Rabin-Karp uses hashing, KMP uses prefix function
+- **Boyer-Moore**: Both pattern matching but Boyer-Moore skips characters, Rabin-Karp uses rolling hash
+- **Hash Table**: Rabin-Karp uses hashing but is a string matching algorithm, not a data structure
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

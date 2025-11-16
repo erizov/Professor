@@ -44,6 +44,12 @@ Insertion Sort is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Bubble Sort**: Similar O(n²) complexity but insertion sort inserts into sorted prefix, bubble sort swaps adjacent pairs
+- **Selection Sort**: Both in-place O(n²) but selection sort selects minimum, insertion sort builds sorted prefix incrementally
+- **Shell Sort**: Uses insertion sort as subroutine but with gap sequences for better performance
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

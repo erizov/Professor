@@ -45,15 +45,9 @@ Bubble Sort is commonly used in combination with:
 
 ## Do Not Confuse With
 
-**Bubble Sort** should not be confused with:
-
-- **Selection Sort**: Different approach/use case, though related
-- **Insertion Sort**: Different approach/use case, though related
-
-**Key Differences:**
-- Each algorithm has distinct characteristics and use cases
-- Understanding the differences is crucial for correct application
-- Similar names don't imply similar implementations
+- **Insertion Sort**: Both O(n²) but insertion sort builds sorted prefix by inserting elements, while bubble sort swaps adjacent pairs
+- **Selection Sort**: Both O(n²) but selection sort finds minimum each pass, bubble sort uses adjacent swaps
+- **Cocktail Sort**: Bidirectional bubble sort variant, not the same algorithm
 
 
 ## Examples of Implementation

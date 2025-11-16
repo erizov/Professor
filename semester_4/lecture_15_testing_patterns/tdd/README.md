@@ -45,6 +45,12 @@ Tdd is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **BDD**: TDD is test-driven development, BDD is behavior-driven development (different focus)
+- **Test-First Development**: TDD includes refactoring cycle, test-first is just writing tests first
+- **Unit Testing**: TDD is development methodology, unit testing is testing approach
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

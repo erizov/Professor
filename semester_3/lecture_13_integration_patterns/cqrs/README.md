@@ -45,6 +45,12 @@ Cqrs is commonly used in combination with:
 
 
 
+## Do Not Confuse With
+
+- **Event Sourcing**: CQRS separates read/write, event sourcing stores events (often used together)
+- **Repository Pattern**: CQRS separates models, repository abstracts data access
+- **Microservices**: CQRS is pattern, microservices is architecture style (CQRS fits well)
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.

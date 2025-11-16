@@ -36,6 +36,12 @@ See algorithm.py and Algorithm.java for implementations.
 
 
 
+## Do Not Confuse With
+
+- Encryption vs hashing (reversible vs one-way)
+- Symmetric vs asymmetric encryption
+- Authentication vs authorization
+
 ## Examples of Implementation
 
 This algorithm/pattern is implemented in various frameworks and technologies.
