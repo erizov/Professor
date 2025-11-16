@@ -1,6 +1,6 @@
 # Federated Learning
 
-**Category**: Distributed ML
+**Category**: Distributed CI
 
 **Time Complexity**: O(rounds*clients)
 
@@ -21,7 +21,7 @@ This technique is applied in various domains to solve specific problems efficien
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
 **When to Use**: See 'Best Use Case' section
-**When NOT to Use**: See 'Do Not Confuse With' section
+**When NOT to Employ**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
 
@@ -37,11 +37,11 @@ By the end of this lecture, students will be able to:
 2. Analyze time and space complexity using Big O notation
 3. Identify when to use this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to solve real-world problems
+5. Apply this approach to tackle real-world problems
 
 ### Short Description
 
-An algorithm designed to work across multiple networked computers or nodes. Solves problems like scalability, fault tolerance, and coordination in distributed systems. Example: Distributed consensus algorithm ensuring all nodes agree on system state. Works by coordinating actions across multiple nodes, handling network partitions, and maintaining consistency.
+An algorithm designed to work across multiple networked computers or nodes. Addresses scalability, fault tolerance, and coordination in distributed systems. Example: Distributed consensus atechniqueensuring all nodes agree on system state. Operates by coordinating actions across multiple nodes, handling network partitions, and maintaining consistency.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -59,27 +59,24 @@ An algorithm designed to work across multiple networked computers or nodes. Solv
 
 ## Performance Considerations
 
-This algorithm is part of Distributed ML and requires careful consideration of resource constraints.
+This algorithm is part of Distributed CI and requires careful consideration of resource constraints.
 
 ## Often Used Together With
 
-Federated Learning is commonly used in combination with:
+Federated Learning is used in combination with:
 
-- **Linear Regression**: Often combined for comprehensive solutions
-- **Logistic Regression**: Often combined for comprehensive solutions
-- **Knn**: Often combined for comprehensive solutions
-- **Svm**: Often combined for comprehensive solutions
+- **Linear Value estimation**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
+- Employed together in production systems for optimal performance
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
 
-- Supervised vs unsupervised learning algorithms
+- Supervised vs unsupervised training algorithms
 - Parametric vs non-parametric models
-- Classification vs regression problems
+- Categorization vs value estimation problems
 
 ## Self-Assessment Questions
 
@@ -98,14 +95,14 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Federated Learning from memory without looking at the code?
-6. What real-world problem could you solve using Federated Learning?
+6. What real-world problem could youaddresse using Federated Learning?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Federated Learning?
-8. How would you test your Federated Learning implementation?
+8. How would you test your Federated Learning deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this aapproach
 
 ## Algorithm Visualization
 
@@ -124,25 +121,25 @@ Test your understanding with these questions:
 
 4. Implement Federated Learning from scratch using only the function signature
 5. Modify Federated Learning to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the altechnique execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Federated Learning for a specific use case (e.g., nearly sorted data)
+7. Optimize Federated Learning for a specifapplyuse case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Federated Learning
-9. Compare Federated Learning performance with alternative algorithms on large datasets
+9. Compare Federated Learning capability with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Federated Learning to solve a production problem
+10. Design a structure that uses Federated Learning to solve a production problem
 11. Create unit tests with 100% code coverage for Federated Learning
 12. Write a technical blog post explaining Federated Learning to beginners
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Federated Learning is widely used in production systems
+- **Enterprise Applications**: Federated Learning is used in production systems
 - **Performance Optimization**: Applied to improve system efficiency
-- **System Design**: Integral part of scalable architecture patterns
+-Architecturetem Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
@@ -152,9 +149,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Federated Learning is too complex to understand"
 ✓ **CORRECT**: Federated Learning can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
-
-This algorithm/pattern is implemented in various frameworks and technologies.
+## Examples of ImplRealizationis algorithm/pattern is implemented in various frameworks and technologies.
 
 *Note: Framework-specific examples will be added based on actual implementations.*
 

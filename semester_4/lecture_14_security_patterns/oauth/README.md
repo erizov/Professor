@@ -21,7 +21,7 @@ This technique is applied in various domains to solve specific problems efficien
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
 **When to Use**: See 'Best Use Case' section
-**When NOT to Use**: See 'Do Not Confuse With' section
+**When NOT to Employ**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
 
@@ -38,12 +38,12 @@ By the end of this lecture, students will be able to:
 2. Analyze time and space complexity using Big O notation
 3. Identify when to use this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to solve real-world problems
+5. Apply this algorithm to tackle real-world problems
 6. Understand security implications and best practices
 
 ### Short Description
 
-An authorization framework that enables applications to obtain limited access to user accounts on HTTP services. Solves problems like third-party authentication, delegated access, and secure API authorization. Example: Allowing a photo printing app to access your Google Photos without sharing your password. Works by redirecting users to authorization servers, exchanging authorization codes for access tokens.
+An authorization framework that enables applications to obtain limited access to user accounts on HTTP services. Addresses third-party authentication, delegated access, and secure API authorization. Example: Allowing a photo printing app to access your Google Photos without sharing your password. Operates by redirecting users to authorization servers, exchanging authorization codes for access tokens.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -52,21 +52,18 @@ An authorization framework that enables applications to obtain limited access to
 
 ## Often Used Together With
 
-Oauth is commonly used in combination with:
+Oauth is used in combination with:
 
 - **Factory**: Often combined for comprehensive solutions
-- **Singleton**: Often combined for comprehensive solutions
-- **Observer**: Often combined for comprehensive solutions
-- **Strategy**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
+- Employed together in production systems for optimal performance
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
 
-- **JWT**: OAuth is authorization framework, JWT is token format (OAuth can use JWT)
+- **JWT**: OAuth is authorization framework, JWT is token format (OAuth capplyuse JWT)
 - **SAML**: OAuth is for authorization, SAML is for authentication/SSO
 - **OpenID Connect**: OAuth is authorization, OpenID Connect adds authentication layer on top
 
@@ -87,14 +84,14 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Oauth from memory without looking at the code?
-6. What real-world problem could you solve using Oauth?
+6. What real-world problem could youaddresse using Oauth?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Oauth?
-8. How would you test your Oauth implementation?
+8. How would you test your Oauth deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
 ## Algorithm Visualization
 
@@ -113,7 +110,7 @@ Test your understanding with these questions:
 
 4. Implement Oauth from scratch using only the function signature
 5. Modify Oauth to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the atechniques execution steps
 
 ### Level 3: Optimization (Advanced)
 
@@ -129,21 +126,19 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Oauth is widely used in production systems
-- **Performance Optimization**: Applied to improve system efficiency
+- **Enterprise Applications**: Oauth is used in production systems
+- **Capability Optimization**: Applied to improve structure efficiency
 - **System Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
 ❌ **WRONG**: "Oauth is the best solution for all problems"
-✓ **CORRECT**: Oauth has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Oauth has specemployc use cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Oauth is too complex to understand"
 ✓ **CORRECT**: Oauth can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
-
-This algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 
@@ -152,15 +147,15 @@ This algorithm/pattern is implemented in the following frameworks and technologi
 @Configuration
 @EnableAuthorizationServer
 public class OAuth2Config extends AuthorizationServerConfigurerAdapter {
-    @Override
-    public void configure(ClientDetailsServiceConfigurer clients) {
-        clients.inMemory()
-            .withClient("client-id")
-            .secret("client-secret")
-            .authorizedGrantTypes("authorization_code", "refresh_token")
-            .scopes("read", "write")
-            .redirectUris("http://localhost:8080/callback");
-    }
+ @Override
+ public void configure(ClientDetailsServiceConfigurer clients) {
+ clients.inMemory()
+ .withClient("client-id")
+ .secret("client-secret")
+ .authorizedGrantTypes("authorization_code", "refresh_token")
+ .scopes("read", "write")
+ .redirectUris("http://localhost:8080/callback");
+ }
 }
 ```
 

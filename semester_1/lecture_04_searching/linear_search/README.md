@@ -21,7 +21,7 @@ This technique is applied in various domains to solve specific problems efficien
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
 **When to Use**: See 'Best Use Case' section
-**When NOT to Use**: See 'Do Not Confuse With' section
+**When NOT to Employ**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
 
@@ -38,11 +38,11 @@ By the end of this lecture, students will be able to:
 2. Analyze time and space complexity using Big O notation
 3. Identify when to use this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to solve real-world problems
+5. Apply this approach to tackle real-world problems
 
 ### Short Description
 
-A simple search algorithm that sequentially checks each element in a list until the target is found or the list ends. Solves the problem of finding elements in unsorted collections. Example: Finding a name in an unsorted phone directory by checking each entry sequentially. Works by iterating through elements one by one until match is found or end is reached.
+A simple search algorithm that sequentially checks each element in a list until the target is found or the list ends. Addresses finding elements in unsorted collections. Example: Finding a name in an unsorted phone directory by checking each entry sequentially. Operates by iterating through elements one by one until match is found or end is reached.
 
 **Key Characteristics:**
 - **Time Complexity**: O(n) because in the worst case, it must examine every element in the array until finding the target or reaching the end.
@@ -51,19 +51,18 @@ A simple search algorithm that sequentially checks each element in a list until 
 
 ## Often Used Together With
 
-Linear Search is commonly used in combination with:
+Linear Search is used in combination with:
 
 - **Binary Search**: Often combined for comprehensive solutions
-- **Hash Table**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
+- Employed together in production systems for optimal performance
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
 
-- **Binary Search**: Linear search works on unsorted data O(n), binary search requires sorted data O(log n)
+- **Binary Search**: Linear search works on unsorted content O(n), binary search requires sorted data O(log n)
 - **Interpolation Search**: Both search but interpolation assumes uniform distribution, linear search makes no assumptions
 - **Hash Table Lookup**: Hash tables provide O(1) average lookup, linear search is O(n) sequential
 
@@ -84,14 +83,14 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Linear Search from memory without looking at the code?
-6. What real-world problem could you solve using Linear Search?
+6. What real-world problem could youaddresse using Linear Search?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Linear Search?
-8. How would you test your Linear Search implementation?
+8. How would you test your Linear Search deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
 ## Algorithm Visualization
 
@@ -110,11 +109,11 @@ Test your understanding with these questions:
 
 4. Implement Linear Search from scratch using only the function signature
 5. Modify Linear Search to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the aapproachs execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Linear Search for a specific use case (e.g., nearly sorted data)
+7. Optimize Linear Search for a specifapplyuse case (e.g., nearly sortdatasetata)
 8. Implement a parallel or distributed version of Linear Search
 9. Compare Linear Search performance with alternative algorithms on large datasets
 
@@ -126,9 +125,9 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Linear Search is widely used in production systems
-- **Performance Optimization**: Applied to improve system efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Enterprise Applications**: Linear Search is used in production systems
+- **Capability Optimization**: Applied to improve system efficiency
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
@@ -138,16 +137,14 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Linear Search is too complex to understand"
 ✓ **CORRECT**: Linear Search can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
-
-This algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 
 ```java
 // Spring Data - Indexed search
 public interface ProductRepository extends JpaRepository<Product, Long> {
-    Optional<Product> findBySku(String sku);  // Uses indexed search
+ Optional<Product> findBySku(String sku); // Uses indexed search
 }
 ```
 

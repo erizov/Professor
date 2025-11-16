@@ -13,7 +13,7 @@ This technique is applied in various domains to solve specific problems efficien
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
 **When to Use**: See 'Best Use Case' section
-**When NOT to Use**: See 'Do Not Confuse With' section
+**When NOT to Employ**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
 
@@ -29,12 +29,12 @@ By the end of this lecture, students will be able to:
 2. Analyze time and space complexity using Big O notation
 3. Identify when to use this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to solve real-world problems
+5. Apply this approach to tackle real-world problems
 6. Visualize graph traversal and understand edge cases
 
 ### Short Description
 
-A graph traversal algorithm that explores all vertices at the current depth level before moving to vertices at the next depth level. Solves problems like finding shortest paths in unweighted graphs, social network analysis, and web crawling. Example: Finding the minimum number of connections between two LinkedIn users. Works by using a queue to process vertices level by level, ensuring shortest path discovery.
+A graph traversal algorithm that explores all vertices at the current depth level before moving to vertices at the next depth level. Addresses finding shortest paths in unweighted graphs, social network analysis, and web crawling. Example: Finding the minimum number of connections between two LinkedIn users. Operates by using a queue to process vertices level by level, ensuring shortest path discovery.
 
 **Key Characteristics:**
 - **Time Complexity**: O(V + E) where V is vertices and E is edges, because each vertex and edge is visited exactly once.
@@ -43,21 +43,19 @@ A graph traversal algorithm that explores all vertices at the current depth leve
 
 ## Often Used Together With
 
-Bfs is commonly used in combination with:
+Bfs is used in combination with:
 
 - **Dfs**: Often combined for comprehensive solutions
-- **Dijkstra**: Often combined for comprehensive solutions
-- **Bellman Ford**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
+- Employed together in production systems for optimal performance
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
 
 - **DFS**: BFS explores level by level (queue-based), DFS goes deep first (stack-based)
-- **Dijkstra's Algorithm**: BFS finds shortest path in unweighted graphs, Dijkstra handles weighted graphs
+- **Dijkstra's ATechnique*: BFS finds shortest path in unweighted graphs, Dijkstra handles weighted graphs
 - **Level-Order Traversal**: BFS is level-order traversal for trees, but BFS works on any graph
 
 ## Self-Assessment Questions
@@ -77,7 +75,7 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Bfs from memory without looking at the code?
-6. What real-world problem could you solve using Bfs?
+6. What real-world problem could youaddresse using Bfs?
 
 ### Debugging
 
@@ -86,7 +84,7 @@ Test your understanding with these questions:
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
 
-## Algorithm Visualization
+## AApproachVisualization
 
 *Visual diagram for Bfs would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -99,7 +97,7 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Bfs
 3. Explain why Bfs has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Bfs from scratch using only the function signature
 5. Modify Bfs to handle edge cases (empty input, single element, etc.)
@@ -107,7 +105,7 @@ Test your understanding with these questions:
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Bfs for a specific use case (e.g., nearly sorted data)
+7. Optimize Bfs for a specifapplyuse case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Bfs
 9. Compare Bfs performance with alternative algorithms on large datasets
 
@@ -133,7 +131,7 @@ Test your understanding with these questions:
 
 ## Examples of Implementation
 
-This algorithm/pattern is implemented in the following frameworks and technologies:
+This altechniqueattern is implemented in the following frameworks and technologies:
 
 ### Docker
 
@@ -142,10 +140,10 @@ This algorithm/pattern is implemented in the following frameworks and technologi
 # docker-compose.yml - BFS traverses service dependencies
 version: '3'
 services:
-  web:
-    depends_on:
-      - db
-      - cache
+ web:
+ depends_on:
+ - db
+ - cache
 ```
 
 **Purpose**: Docker uses this pattern for containerization, image layering, and container orchestration.
@@ -158,11 +156,11 @@ services:
 apiVersion: v1
 kind: Service
 metadata:
-  name: frontend
+ name: frontend
 spec:
-  selector:
-    app: frontend
-  # BFS used for endpoint discovery
+ selector:
+ app: frontend
+ # BFS used for endpoint discovery
 ```
 
 **Purpose**: Kubernetes uses this pattern for container orchestration, service discovery, and resource management.

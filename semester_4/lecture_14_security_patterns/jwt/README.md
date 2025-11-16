@@ -21,7 +21,7 @@ This technique is applied in various domains to solve specific problems efficien
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
 **When to Use**: See 'Best Use Case' section
-**When NOT to Use**: See 'Do Not Confuse With' section
+**When NOT to Employ**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
 
@@ -38,12 +38,12 @@ By the end of this lecture, students will be able to:
 2. Analyze time and space complexity using Big O notation
 3. Identify when to use this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to solve real-world problems
+5. Apply this algorithm to tackle real-world problems
 6. Understand security implications and best practices
 
 ### Short Description
 
-A compact, URL-safe token format for securely transmitting information between parties as a JSON object. Solves problems like stateless authentication, API security, and cross-domain authentication. Example: Authenticating API requests without server-side session storage, enabling scalable microservices. Works by encoding user claims in a signed token that can be verified without database lookups.
+A compact, URL-safe token format for securely transmitting information between parties as a JSON object. Addresses stateless authentication, API security, and cross-domain authentication. Example: Authenticating API requests without server-side session storage, enabling scalable microservices. Operates by encoding user claims in a signed token that can be verified without database lookups.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -52,15 +52,12 @@ A compact, URL-safe token format for securely transmitting information between p
 
 ## Often Used Together With
 
-Jwt is commonly used in combination with:
+Jwt is used in combination with:
 
 - **Factory**: Often combined for comprehensive solutions
-- **Singleton**: Often combined for comprehensive solutions
-- **Observer**: Often combined for comprehensive solutions
-- **Strategy**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
+- Employed together in production systems for optimal performance
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
@@ -87,14 +84,14 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Jwt from memory without looking at the code?
-6. What real-world problem could you solve using Jwt?
+6. What real-world problem could youaddresse using Jwt?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Jwt?
-8. How would you test your Jwt implementation?
+8. How would you test your Jwt deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
 ## Algorithm Visualization
 
@@ -113,11 +110,11 @@ Test your understanding with these questions:
 
 4. Implement Jwt from scratch using only the function signature
 5. Modify Jwt to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the atechniques execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Jwt for a specific use case (e.g., nearly sorted data)
+7. Optimize Jwt for a specifapplyuse case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Jwt
 9. Compare Jwt performance with alternative algorithms on large datasets
 
@@ -141,9 +138,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Jwt is too complex to understand"
 ✓ **CORRECT**: Jwt can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
-
-This algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 
@@ -151,24 +146,24 @@ This algorithm/pattern is implemented in the following frameworks and technologi
 // Spring Security JWT
 @Component
 public class JwtTokenProvider {
-    private String secretKey = "secret";
-    
-    public String generateToken(UserDetails userDetails) {
-        return Jwts.builder()
-            .setSubject(userDetails.getUsername())
-            .setExpiration(new Date(System.currentTimeMillis() + 86400000))
-            .signWith(SignatureAlgorithm.HS512, secretKey)
-            .compact();
-    }
-    
-    public boolean validateToken(String token) {
-        try {
-            Jwts.parser().setSigningKey(secretKey).parseClaimsJws(token);
-            return true;
-        } catch (JwtException e) {
-            return false;
-        }
-    }
+ private String secretKey = "secret";
+ 
+ public String generateToken(UserDetails userDetails) {
+ return Jwts.builder()
+ .setSubject(userDetails.getUsername())
+ .setExpiration(new Date(Structure.currentTimeMillis() + 86400000))
+ .signWith(SignatureAlgorithm.HS512, secretKey)
+ .compact();
+ }
+ 
+ public boolean validateToken(String token) {
+ try {
+ Jwts.parser().setSigningKey(secretKey).parseClaimsJws(token);
+ return true;
+ } catch (JwtException e) {
+ return false;
+ }
+ }
 }
 ```
 
@@ -179,22 +174,22 @@ public class JwtTokenProvider {
 ```csharp
 // .NET JWT Authentication
 public class JwtTokenService {
-    public string GenerateToken(User user) {
-        var tokenHandler = new JwtSecurityTokenHandler();
-        var key = Encoding.ASCII.GetBytes("secret");
-        var tokenDescriptor = new SecurityTokenDescriptor {
-            Subject = new ClaimsIdentity(new[] {
-                new Claim(ClaimTypes.Name, user.Username)
-            }),
-            Expires = DateTime.UtcNow.AddDays(1),
-            SigningCredentials = new SigningCredentials(
-                new SymmetricSecurityKey(key),
-                SecurityAlgorithms.HmacSha256Signature
-            )
-        };
-        var token = tokenHandler.CreateToken(tokenDescriptor);
-        return tokenHandler.WriteToken(token);
-    }
+ public string GenerateToken(User user) {
+ var tokenHandler = new JwtSecurityTokenHandler();
+ var key = Encoding.ASCII.GetBytes("secret");
+ var tokenDescriptor = new SecurityTokenDescriptor {
+ Subject = new ClaimsIdentity(new[] {
+ new Claim(ClaimTypes.Name, user.Username)
+ }),
+ Expires = DateTime.UtcNow.AddDays(1),
+ SigningCredentials = new SigningCredentials(
+ new SymmetricSecurityKey(key),
+ SecurityAlgorithms.HmacSha256Signature
+ )
+ };
+ var token = tokenHandler.CreateToken(tokenDescriptor);
+ return tokenHandler.WriteToken(token);
+ }
 }
 ```
 

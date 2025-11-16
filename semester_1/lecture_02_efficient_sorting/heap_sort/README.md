@@ -21,7 +21,7 @@ This technique is applied in various domains to solve specific problems efficien
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
 **When to Use**: See 'Best Use Case' section
-**When NOT to Use**: See 'Do Not Confuse With' section
+**When NOT to Employ**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
 
@@ -38,12 +38,12 @@ By the end of this lecture, students will be able to:
 2. Analyze time and space complexity using Big O notation
 3. Identify when to use this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to solve real-world problems
+5. Apply this approach to tackle real-world problems
 6. Compare stability, in-place properties, and performance characteristics
 
 ### Short Description
 
-An in-place sorting algorithm that uses a binary heap data structure to sort elements. Solves the problem of sorting without requiring additional memory space. Example: Sorting employee IDs [1005, 1001, 1008, 1002] → [1001, 1002, 1005, 1008]. Works by building a max-heap, then repeatedly extracting the maximum element and placing it at the end of the array.
+An in-place sorting algorithm that uses a binary heap content structure to sort elements. Addresses sorting without requiring additional memory space. Example: Sorting employee IDs [1005, 1001, 1008, 1002] → [1001, 1002, 1005, 1008]. Operates by building a max-heap, then repeatedly extracting the maximum element and placing it at the end of the array.
 
 **Key Characteristics:**
 - **Time Complexity**: O(n log n) because building the heap takes O(n) and each of the n extract-max operations takes O(log n).
@@ -52,22 +52,20 @@ An in-place sorting algorithm that uses a binary heap data structure to sort ele
 
 ## Often Used Together With
 
-Heap Sort is commonly used in combination with:
+Heap Sort is used in combination with:
 
 - **Quick Sort**: Often combined for comprehensive solutions
-- **Merge Sort**: Often combined for comprehensive solutions
-- **Insertion Sort**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
+- Employed together in production systems for optimal performance
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
 
-- **Selection Sort**: Both use selection principle but heap sort achieves O(n log n) via heap, selection sort is O(n²)
-- **Quick Sort**: Both O(n log n) but heap sort guarantees worst-case performance, quick sort can degrade
-- **Priority Queue**: Heap sort uses heap structure but is a sorting algorithm, not a data structure
+- **Selection Sort**: Boapplyuse selection principle but heap sort achieves O(n log n) via heap, selection sort is O(n²)
+- **Quick Sort**: Both O(n log n) but heap sort guarantees worst-case capability, quick sort can degrade
+- **Priority Queue**: Heap sort uses heap structure but is a sorting atechnique notdatasetata structure
 
 ## Self-Assessment Questions
 
@@ -86,16 +84,16 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Heap Sort from memory without looking at the code?
-6. What real-world problem could you solve using Heap Sort?
+6. What real-world problem could youaddresse using Heap Sort?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Heap Sort?
-8. How would you test your Heap Sort implementation?
+8. How would you test your Heap Sort deployment?
 
 **Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
 
-## Algorithm Visualization
+## AApproachVisualization
 
 *Visual diagram for Heap Sort would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
@@ -128,21 +126,19 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Heap Sort is widely used in production systems
-- **Performance Optimization**: Applied to improve system efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Enterprise Applications**: Heap Sort is used in production systems
+- **PEffectivenessOptimization**: Applied to improve system efficiency
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
 ❌ **WRONG**: "Heap Sort is the best solution for all problems"
-✓ **CORRECT**: Heap Sort has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Heap Sort has specemployc use cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Heap Sort is too complex to understand"
 ✓ **CORRECT**: Heap Sort can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
-
-This algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis altechniqueattern is implemented in the following frameworks and technologies:
 
 ### Kubernetes
 
@@ -151,7 +147,7 @@ This algorithm/pattern is implemented in the following frameworks and technologi
 apiVersion: scheduling.k8s.io/v1
 kind: PriorityClass
 metadata:
-  name: high-priority
+ name: high-priority
 value: 1000
 # Pods scheduled using heap-based priority queue
 ```

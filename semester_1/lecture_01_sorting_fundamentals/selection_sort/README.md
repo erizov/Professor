@@ -21,7 +21,7 @@ This technique is applied in various domains to solve specific problems efficien
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
 **When to Use**: See 'Best Use Case' section
-**When NOT to Use**: See 'Do Not Confuse With' section
+**When NOT to Employ**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
 
@@ -38,12 +38,12 @@ By the end of this lecture, students will be able to:
 2. Analyze time and space complexity using Big O notation
 3. Identify when to use this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to solve real-world problems
+5. Apply this approach to tackle real-world problems
 6. Compare stability, in-place properties, and performance characteristics
 
 ### Short Description
 
-A sorting algorithm that finds the minimum element from the unsorted portion and places it at the beginning, repeating until sorted. Solves the problem of sorting with minimal memory writes. Example: Sorting test scores [88, 92, 75, 95] → [75, 88, 92, 95]. Works by repeatedly finding the smallest remaining element and swapping it with the first unsorted element.
+A sorting algorithm that finds the minimum element from the unsorted portion and places it at the beginning, repeating until sorted. Addresses sorting with minimal memory writes. Example: Sorting test scores [88, 92, 75, 95] → [75, 88, 92, 95]. Operates by repeatedly finding the smallest remaining element and swapping it with the first unsorted element.
 
 **Key Characteristics:**
 - **Time Complexity**: O(n²) because it must scan the remaining unsorted portion n times, each scan taking O(n) to find the minimum.
@@ -52,15 +52,12 @@ A sorting algorithm that finds the minimum element from the unsorted portion and
 
 ## Often Used Together With
 
-Selection Sort is commonly used in combination with:
+Selection Sort is used in combination with:
 
 - **Quick Sort**: Often combined for comprehensive solutions
-- **Merge Sort**: Often combined for comprehensive solutions
-- **Heap Sort**: Often combined for comprehensive solutions
-- **Insertion Sort**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
+- Employed together in production systems for optimal performance
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
@@ -87,14 +84,14 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Selection Sort from memory without looking at the code?
-6. What real-world problem could you solve using Selection Sort?
+6. What real-world problem could youaddresse using Selection Sort?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Selection Sort?
-8. How would you test your Selection Sort implementation?
+8. How would you test your Selection Sort deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
 ## Algorithm Visualization
 
@@ -113,13 +110,13 @@ Test your understanding with these questions:
 
 4. Implement Selection Sort from scratch using only the function signature
 5. Modify Selection Sort to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the aapproachs execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Selection Sort for a specific use case (e.g., nearly sorted data)
+7. Optimize Selection Sort for a specifapplyuse case (e.g., nearly sorted content)
 8. Implement a parallel or distributed version of Selection Sort
-9. Compare Selection Sort performance with alternative algorithms on large datasets
+9. Compare Selection Sort capability with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
 
@@ -129,9 +126,9 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Selection Sort is widely used in production systems
+- **Enterprise Applications**: Selection Sort is used in production systems
 - **Performance Optimization**: Applied to improve system efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
@@ -141,17 +138,15 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Selection Sort is too complex to understand"
 ✓ **CORRECT**: Selection Sort can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
-
-This algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 
 ```java
 // Spring Data JPA - Sorting
 public interface UserRepository extends JpaRepository<User, Long> {
-    List<User> findAll(Sort sort);
-    // Spring uses efficient sorting algorithms for query results
+ List<User> findAll(Sort sort);
+ // Spring uses efficient sorting algorithms for query results
 }
 ```
 

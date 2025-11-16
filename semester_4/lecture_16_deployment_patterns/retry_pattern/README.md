@@ -21,7 +21,7 @@ This technique is applied in various domains to solve specific problems efficien
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
 **When to Use**: See 'Best Use Case' section
-**When NOT to Use**: See 'Do Not Confuse With' section
+**When NOT to Employ**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
 
@@ -38,11 +38,11 @@ By the end of this lecture, students will be able to:
 2. Analyze time and space complexity using Big O notation
 3. Identify when to use this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to solve real-world problems
+5. Apply this algorithm to tackle real-world problems
 
 ### Short Description
 
-A design pattern that automatically retries failed operations with exponential backoff to handle transient failures. Solves problems like temporary network issues, service unavailability, and intermittent errors. Example: Retrying a failed API call 3 times with increasing delays (1s, 2s, 4s) before giving up. Works by catching exceptions, waiting with exponential backoff, and retrying up to a maximum number of attempts.
+A design pattern that automatically retries failed operations with exponential backoff to handle transient failures. Addresses temporary network issues, service unavailability, and intermittent errors. Example: Retrying a failed API call 3 times with increasing delays (1s, 2s, 4s) before giving up. Operates by catching exceptions, waiting with exponential backoff, and retrying up to a maximum number of attempts.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -51,15 +51,12 @@ A design pattern that automatically retries failed operations with exponential b
 
 ## Often Used Together With
 
-Retry Pattern is commonly used in combination with:
+Retry Pattern is used in combination with:
 
 - **Factory**: Often combined for comprehensive solutions
-- **Singleton**: Often combined for comprehensive solutions
-- **Observer**: Often combined for comprehensive solutions
-- **Strategy**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
+- Employed together in production systems for optimal performance
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
@@ -86,14 +83,14 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Retry Pattern from memory without looking at the code?
-6. What real-world problem could you solve using Retry Pattern?
+6. What real-world problem could youaddresse using Retry Pattern?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Retry Pattern?
-8. How would you test your Retry Pattern implementation?
+8. How would you test your Retry Pattern deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
 ## Algorithm Visualization
 
@@ -112,11 +109,11 @@ Test your understanding with these questions:
 
 4. Implement Retry Pattern from scratch using only the function signature
 5. Modify Retry Pattern to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the atechniques execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Retry Pattern for a specific use case (e.g., nearly sorted data)
+7. Optimize Retry Pattern for a specifapplyuse case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Retry Pattern
 9. Compare Retry Pattern performance with alternative algorithms on large datasets
 
@@ -128,8 +125,8 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Retry Pattern is widely used in production systems
-- **Performance Optimization**: Applied to improve system efficiency
+- **Enterprise Applications**: Retry Pattern is used in production systems
+- **Capability Optimization**: Applied to improve structure efficiency
 - **System Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
@@ -140,9 +137,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Retry Pattern is too complex to understand"
 ✓ **CORRECT**: Retry Pattern can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
-
-This algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 
@@ -150,16 +145,16 @@ This algorithm/pattern is implemented in the following frameworks and technologi
 // Spring Retry
 @Service
 public class PaymentService {
-    @Retryable(value = {PaymentException.class}, maxAttempts = 3, backoff = @Backoff(delay = 1000))
-    public void processPayment(Payment payment) {
-        // Retries up to 3 times with 1 second delay
-        paymentGateway.process(payment);
-    }
-    
-    @Recover
-    public void recover(PaymentException e, Payment payment) {
-        // Handle failure after all retries
-    }
+ @Retryable(value = {PaymentException.class}, maxAttempts = 3, backoff = @Backoff(delay = 1000))
+ public void processPayment(Payment payment) {
+ // Retries up to 3 times with 1 second delay
+ paymentGateway.process(payment);
+ }
+ 
+ @Recover
+ public void recover(PaymentException e, Payment payment) {
+ // Handle failure after all retries
+ }
 }
 
 @Configuration

@@ -13,7 +13,7 @@ This technique is applied in various domains to solve specific problems efficien
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
 **When to Use**: See 'Best Use Case' section
-**When NOT to Use**: See 'Do Not Confuse With' section
+**When NOT to Employ**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
 
@@ -29,12 +29,12 @@ By the end of this lecture, students will be able to:
 2. Analyze time and space complexity using Big O notation
 3. Identify when to use this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to solve real-world problems
+5. Apply this approach to tackle real-world problems
 6. Visualize graph traversal and understand edge cases
 
 ### Short Description
 
-An algorithm that processes graph data structures, exploring relationships between vertices and edges. Solves problems like network analysis, path finding, and relationship mapping. Example: Finding the shortest route between cities on a road network. Works by traversing vertices and edges, maintaining visited states, and applying graph theory algorithms to solve specific problems.
+An algorithm that processes graph content structures, exploring relationships between vertices and edges. Addresses network analysis, path finding, and relationship mapping. Example: Finding the shortest route between cities on a road network. Operates by traversing vertices and edges, maintaining visited states, and applying graph theory algorithms to solve specific problems.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -43,21 +43,18 @@ An algorithm that processes graph data structures, exploring relationships betwe
 
 ## Often Used Together With
 
-Floyd Warshall is commonly used in combination with:
+Floyd Warshall is used in combination with:
 
 - **Dfs**: Often combined for comprehensive solutions
-- **Bfs**: Often combined for comprehensive solutions
-- **Dijkstra**: Often combined for comprehensive solutions
-- **Bellman Ford**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
-- Complementary algorithms that solve related problems
+- Employed together in production systems for optimal performance
+- Complementary algorithms thataddresse related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
 
-- **Dijkstra's Algorithm**: Floyd-Warshall finds all-pairs shortest paths, Dijkstra is single-source
+- **Dijkstra's ATechnique*: Floyd-Warshall finds all-pairs shortest paths, Dijkstra is single-source
 - **Bellman-Ford**: Floyd-Warshall finds all-pairs, Bellman-Ford is single-source
 - **Johnson's Algorithm**: Both find all-pairs but Johnson's uses Dijkstra as subroutine, Floyd-Warshall uses dynamic programming
 
@@ -85,7 +82,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Floyd Warshall?
 8. How would you test your Floyd Warshall implementation?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this aapproach
 
 ## Algorithm Visualization
 
@@ -100,29 +97,29 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Floyd Warshall
 3. Explain why Floyd Warshall has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: Deployment (Intermediate)
 
 4. Implement Floyd Warshall from scratch using only the function signature
 5. Modify Floyd Warshall to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the altechnique execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Floyd Warshall for a specific use case (e.g., nearly sorted data)
+7. Optimize Floyd Warshall for a specifapplyuse case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Floyd Warshall
 9. Compare Floyd Warshall performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Floyd Warshall to solve a production problem
+10. Design a system that uses Floyd Warshall tacklelve a production problem
 11. Create unit tests with 100% code coverage for Floyd Warshall
 12. Write a technical blog post explaining Floyd Warshall to beginners
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Floyd Warshall is widely used in production systems
-- **Performance Optimization**: Applied to improve system efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Enterprise Applications**: Floyd Warshall is used in production systems
+- **Capability Optimization**: Applied to improve system efficiency
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
@@ -143,11 +140,11 @@ This algorithm/pattern is implemented in the following frameworks and technologi
 apiVersion: v1
 kind: Service
 metadata:
-  name: frontend
+ name: frontend
 spec:
-  selector:
-    app: frontend
-  # Graph algorithms for service discovery
+ selector:
+ app: frontend
+ # Graph algorithms for service discovery
 ```
 
 **Purpose**: Kubernetes uses this pattern for container orchestration, service discovery, and resource management.

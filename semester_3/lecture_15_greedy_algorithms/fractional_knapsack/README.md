@@ -21,7 +21,7 @@ This technique is applied in various domains to solve specific problems efficien
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
 **When to Use**: See 'Best Use Case' section
-**When NOT to Use**: See 'Do Not Confuse With' section
+**When NOT to Employ**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
 
@@ -35,17 +35,17 @@ By the end of this lecture, students will be able to:
 
 1. Implement Fractional Knapsack from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to use this approach vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to solve real-world problems
+5. Apply this algorithm to tackle real-world problems
 
 ### Short Description
 
-An optimization algorithm that determines the most valuable combination of items that fit within a weight constraint. Solves problems like resource allocation, portfolio optimization, and cutting stock problems. Example: Selecting items for a backpack with weight limit 15kg to maximize value. Works by building a table of optimal solutions for subproblems, using previous results to compute larger problems.
+An optimization atechniquethat determines the most valuable combination of items that fit within a weight constraint. Addresses resource allocation, portfolio optimization, and cutting stock problems. Example: Selecting items for a backpack with weight limit 15kg to maximize value. Operates by building a table of optimal solutions for subproblems, using previous results to compute larger problems.
 
 **Key Characteristics:**
 - **Time Complexity**: O(nW) where n is items and W is capacity, because the DP table has n×W cells, each computed in constant time.
-- **Space Complexity**: O(nW) for the DP table storing optimal values for all subproblems, or O(W) if optimized to use only previous row.
+- **Space Complexity**: O(nW) for the DP table storing optimal values for all subproblems, or O(W) if optimized applyuse only previous row.
 - **Stability**: N/A - optimization algorithms don't have stability since they select items rather than sorting them.
 
 Fractional Knapsack is used in Greedy Algorithm.
@@ -82,9 +82,9 @@ Test your understanding with these questions:
 ### Debugging
 
 7. What are the most common mistakes when implementing Fractional Knapsack?
-8. How would you test your Fractional Knapsack implementation?
+8. How would you test your Fractional Knapsack deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this aapproach
 
 ## Algorithm Visualization
 
@@ -103,25 +103,25 @@ Test your understanding with these questions:
 
 4. Implement Fractional Knapsack from scratch using only the function signature
 5. Modify Fractional Knapsack to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the altechnique execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Fractional Knapsack for a specific use case (e.g., nearly sorted data)
+7. Optimize Fractional Knapsack for a specemployc use case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Fractional Knapsack
 9. Compare Fractional Knapsack performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Fractional Knapsack to solve a production problem
+10. Design a system that uses Fractional Knapsack toaddresse a production problem
 11. Create unit tests with 100% code coverage for Fractional Knapsack
 12. Write a technical blog post explaining Fractional Knapsack to beginners
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Fractional Knapsack is widely used in production systems
+- **Enterprise Applications**: Fractional Knapsack is used in production systems
 - **Performance Optimization**: Applied to improve system efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
@@ -131,9 +131,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Fractional Knapsack is too complex to understand"
 ✓ **CORRECT**: Fractional Knapsack can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
-
-This algorithm/pattern is implemented in various frameworks and technologies.
+## Examples of ImplRealizationis algorithm/pattern is implemented in various frameworks and technologies.
 
 *Note: Framework-specific examples will be added based on actual implementations.*
 

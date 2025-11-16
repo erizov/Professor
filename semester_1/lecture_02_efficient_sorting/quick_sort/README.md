@@ -17,7 +17,7 @@
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
 **When to Use**: See 'Best Use Case' section
-**When NOT to Use**: See 'Do Not Confuse With' section
+**When NOT to Employ**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
 
@@ -27,7 +27,7 @@ By the end of this lecture, students will be able to:
 2. Analyze time and space complexity using Big O notation
 3. Identify when to use this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to solve real-world problems
+5. Apply this approach to solve real-world problems
 6. Compare stability, in-place properties, and performance characteristics
 
 ## Prerequisites
@@ -39,7 +39,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A divide-and-conquer sorting algorithm that partitions an array around a pivot element, then recursively sorts the subarrays. Solves the problem of efficiently sorting large datasets. Example: Sorting product prices [29.99, 15.50, 45.00, 12.99] → [12.99, 15.50, 29.99, 45.00]. Works by selecting a pivot, partitioning elements smaller/larger than pivot, then recursively sorting partitions.
+A divide-and-conquer sorting algorithm that partitions an array around a pivot element, then recursively sorts the subarrays. Addresses efficiently sorting large datasets. Example: Sorting product prices [29.99, 15.50, 45.00, 12.99] → [12.99, 15.50, 29.99, 45.00]. Operates by selecting a pivot, partitioning elements smaller/larger than pivot, then recursively sorting partitions.
 
 **Key Characteristics:**
 - **Time Complexity**: O(n log n) average case because it divides the array in half on average each recursion, but O(n²) worst case when pivot is always the smallest/largest element.
@@ -48,14 +48,12 @@ A divide-and-conquer sorting algorithm that partitions an array around a pivot e
 
 ## Often Used Together With
 
-Quick Sort is commonly used in combination with:
+Quick Sort is used in combination with:
 
 - **Merge Sort**: Often combined for comprehensive solutions
-- **Heap Sort**: Often combined for comprehensive solutions
-- **Insertion Sort**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
+- Employed together in production systems for optimal performance
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
@@ -63,7 +61,7 @@ Quick Sort is commonly used in combination with:
 
 - **Merge Sort**: Both divide-and-conquer O(n log n) but quick sort is in-place and unstable, merge sort requires O(n) space and is stable
 - **Heap Sort**: Both O(n log n) but heap sort guarantees O(n log n) worst-case, quick sort can degrade to O(n²)
-- **Intro Sort**: Hybrid that uses quick sort but falls back to heap sort to avoid worst-case performance
+- **Intro Sort**: Hybrid that uses quick sort but falls back to heap sort to avoid worst-case capability
 
 ## Self-Assessment Questions
 
@@ -82,27 +80,27 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Quick Sort from memory without looking at the code?
-6. What real-world problem could you solve using Quick Sort?
+6. What real-world problem could you tackle using Quick Sort?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Quick Sort?
-8. How would you test your Quick Sort implementation?
+8. How would you test your Quick Sort deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
 ## Algorithm Visualization
 
 ```
 Quick Sort Visualization: [5, 2, 8, 1, 9]
 
-Initial:           [5, 2, 8, 1, 9]
-                    ↓
+Initial: [5, 2, 8, 1, 9]
+ ↓
 Partition (pivot=5): [2, 1] [5] [8, 9]
-                    ↓        ↓      ↓
-Recurse left:      [1, 2]  [5]  [8, 9]
-                    ↓        ↓      ↓
-Combine:           [1, 2, 5, 8, 9]
+ ↓ ↓ ↓
+Recurse left: [1, 2] [5] [8, 9]
+ ↓ ↓ ↓
+Combine: [1, 2, 5, 8, 9]
 ```
 
 ## Practice Exercises
@@ -117,11 +115,11 @@ Combine:           [1, 2, 5, 8, 9]
 
 4. Implement Quick Sort from scratch using only the function signature
 5. Modify Quick Sort to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the aapproachs execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Quick Sort for a specific use case (e.g., nearly sorted data)
+7. Optimize Quick Sort for a specifapplyuse case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Quick Sort
 9. Compare Quick Sort performance with alternative algorithms on large datasets
 
@@ -145,20 +143,18 @@ Combine:           [1, 2, 5, 8, 9]
 ❌ **WRONG**: "Quick Sort requires O(n) extra space"
 ✓ **CORRECT**: Quick Sort is in-place with O(log n) space for recursion stack
 
-## Examples of Implementation
-
-This algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 
 ```java
-// Spring Data JPA - Sorting query results
+// Spring Content JPA - Sorting query results
 public interface UserRepository extends JpaRepository<User, Long> {
-    @Query("SELECT u FROM User u ORDER BY u.createdDate DESC")
-    List<User> findRecentUsers();
-    
-    // Uses Quick Sort internally for efficient sorting
-    List<User> findAll(Sort sort);
+ @Query("SELECT u FROM User u ORDER BY u.createdDate DESC")
+ List<User> findRecentUsers();
+ 
+ // Uses Quick Sort internally for streamlined sorting
+ List<User> findAll(Sort sort);
 }
 ```
 
@@ -169,7 +165,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
 ```java
 // J2EE Collections.sort() uses optimized Quick Sort
 List<Order> orders = entityManager.createQuery(
-    "SELECT o FROM Order o", Order.class).getResultList();
+ "SELECT o FROM Order o", Order.class).getResultList();
 Collections.sort(orders, Comparator.comparing(Order::getDate));
 ```
 

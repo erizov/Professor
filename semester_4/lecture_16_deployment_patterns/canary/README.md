@@ -21,7 +21,7 @@ This technique is applied in various domains to solve specific problems efficien
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
 **When to Use**: See 'Best Use Case' section
-**When NOT to Use**: See 'Do Not Confuse With' section
+**When NOT to Employ**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
 
@@ -38,11 +38,11 @@ By the end of this lecture, students will be able to:
 2. Analyze time and space complexity using Big O notation
 3. Identify when to use this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to solve real-world problems
+5. Apply this algorithm to tackle real-world problems
 
 ### Short Description
 
-A deployment strategy that gradually rolls out changes to a small subset of users before full deployment, monitoring for issues. Solves problems like deployment risk, early error detection, and user impact minimization. Example: Releasing new feature to 5% of users, monitoring metrics, then gradually increasing to 100% if successful. Works by splitting traffic between old and new versions, monitoring new version performance, and increasing traffic proportionally.
+A deployment strategy that gradually rolls out changes to a small subset of users before full deployment, monitoring for issues. Addresses deployment risk, early error detection, and user impact minimization. Example: Releasing new feature to 5% of users, monitoring metrics, then gradually increasing to 100% if successful. Operates by splitting traffic between old and new versions, monitoring new version performance, and increasing traffic proportionally.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -51,15 +51,12 @@ A deployment strategy that gradually rolls out changes to a small subset of user
 
 ## Often Used Together With
 
-Canary is commonly used in combination with:
+Canary is used in combination with:
 
 - **Factory**: Often combined for comprehensive solutions
-- **Singleton**: Often combined for comprehensive solutions
-- **Observer**: Often combined for comprehensive solutions
-- **Strategy**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
+- Employed together in production systems for optimal performance
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
@@ -86,14 +83,14 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Canary from memory without looking at the code?
-6. What real-world problem could you solve using Canary?
+6. What real-world problem could youaddresse using Canary?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Canary?
-8. How would you test your Canary implementation?
+8. How would you test your Canary deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
 ## Algorithm Visualization
 
@@ -112,13 +109,13 @@ Test your understanding with these questions:
 
 4. Implement Canary from scratch using only the function signature
 5. Modify Canary to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the atechniques execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Canary for a specific use case (e.g., nearly sorted data)
+7. Optimize Canary for a specifapplyuse case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Canary
-9. Compare Canary performance with alternative algorithms on large datasets
+9. Compare Canary capability with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
 
@@ -128,8 +125,8 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Canary is widely used in production systems
-- **Performance Optimization**: Applied to improve system efficiency
+- **Enterprise Applications**: Canary is used in production systems
+- **Performance Optimization**: Applied to improve structure efficiency
 - **System Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
@@ -140,9 +137,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Canary is too complex to understand"
 ✓ **CORRECT**: Canary can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
-
-This algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
 
 ### Kubernetes
 
@@ -152,27 +147,27 @@ This algorithm/pattern is implemented in the following frameworks and technologi
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-main
+ name: app-main
 spec:
-  replicas: 9
+ replicas: 9
 ---
 # Canary deployment (10% traffic)
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-canary
+ name: app-canary
 spec:
-  replicas: 1
+ replicas: 1
 ---
 # Service with traffic splitting
 apiVersion: v1
 kind: Service
 metadata:
-  name: app-service
+ name: app-service
 spec:
-  selector:
-    app: myapp
-  # Istio/Linkerd handles traffic splitting
+ selector:
+ app: myapp
+ # Istio/Linkerd handles traffic splitting
 ```
 
 **Purpose**: Kubernetes uses this pattern for container orchestration, service discovery, and resource management.

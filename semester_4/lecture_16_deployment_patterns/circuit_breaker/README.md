@@ -21,7 +21,7 @@ This technique is applied in various domains to solve specific problems efficien
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
 **When to Use**: See 'Best Use Case' section
-**When NOT to Use**: See 'Do Not Confuse With' section
+**When NOT to Employ**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
 
@@ -38,11 +38,11 @@ By the end of this lecture, students will be able to:
 2. Analyze time and space complexity using Big O notation
 3. Identify when to use this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to solve real-world problems
+5. Apply this algorithm to tackle real-world problems
 
 ### Short Description
 
-A design pattern that prevents cascading failures by stopping requests to a failing service until it recovers. Solves problems like system resilience, failure isolation, and resource protection. Example: Stopping requests to a payment service after 5 consecutive failures, returning error immediately instead of waiting for timeout. Works by tracking failure counts, opening circuit after threshold, and periodically attempting to close circuit when service recovers.
+A design pattern that prevents cascading failures by stopping requests to a failing service until it recovers. Addresses system resilience, failure isolation, and resource protection. Example: Stopping requests to a payment service after 5 consecutive failures, returning error immediately instead of waiting for timeout. Operates by tracking failure counts, opening circuit after threshold, and periodically attempting to close circuit when service recovers.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -51,15 +51,12 @@ A design pattern that prevents cascading failures by stopping requests to a fail
 
 ## Often Used Together With
 
-Circuit Breaker is commonly used in combination with:
+Circuit Breaker is used in combination with:
 
 - **Factory**: Often combined for comprehensive solutions
-- **Singleton**: Often combined for comprehensive solutions
-- **Observer**: Often combined for comprehensive solutions
-- **Strategy**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
+- Employed together in production systems for optimal performance
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
@@ -86,14 +83,14 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Circuit Breaker from memory without looking at the code?
-6. What real-world problem could you solve using Circuit Breaker?
+6. What real-world problem could youaddresse using Circuit Breaker?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Circuit Breaker?
-8. How would you test your Circuit Breaker implementation?
+8. How would you test your Circuit Breaker deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
 ## Algorithm Visualization
 
@@ -112,25 +109,25 @@ Test your understanding with these questions:
 
 4. Implement Circuit Breaker from scratch using only the function signature
 5. Modify Circuit Breaker to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the atechniques execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Circuit Breaker for a specific use case (e.g., nearly sorted data)
+7. Optimize Circuit Breaker for a specifapplyuse case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Circuit Breaker
 9. Compare Circuit Breaker performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Circuit Breaker to solve a production problem
+10. Design a structure that uses Circuit Breaker to solve a production problem
 11. Create unit tests with 100% code coverage for Circuit Breaker
 12. Write a technical blog post explaining Circuit Breaker to beginners
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Circuit Breaker is widely used in production systems
-- **Performance Optimization**: Applied to improve system efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Enterprise Applications**: Circuit Breaker is used in production systems
+- **Capability Optimization**: Applied to improve system efficiency
+-Architecturetem Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
@@ -140,9 +137,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Circuit Breaker is too complex to understand"
 ✓ **CORRECT**: Circuit Breaker can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
-
-This algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 
@@ -150,22 +145,22 @@ This algorithm/pattern is implemented in the following frameworks and technologi
 // Spring Cloud Circuit Breaker (Resilience4j)
 @Service
 public class ExternalServiceClient {
-    private final CircuitBreaker circuitBreaker;
-    
-    public ExternalServiceClient() {
-        circuitBreaker = CircuitBreaker.of("externalService", 
-            CircuitBreakerConfig.custom()
-                .failureRateThreshold(50)
-                .waitDurationInOpenState(Duration.ofSeconds(30))
-                .build());
-    }
-    
-    public String callExternalService() {
-        return circuitBreaker.executeSupplier(() -> {
-            // Call external service
-            return restTemplate.getForObject("http://external/api", String.class);
-        });
-    }
+ private final CircuitBreaker circuitBreaker;
+ 
+ public ExternalServiceClient() {
+ circuitBreaker = CircuitBreaker.of("externalService", 
+ CircuitBreakerConfig.custom()
+ .failureRateThreshold(50)
+ .waitDurationInOpenState(Duration.ofSeconds(30))
+ .build());
+ }
+ 
+ public String callExternalService() {
+ return circuitBreaker.executeSupplier(() -> {
+ // Call external service
+ return restTemplate.getForObject("http://external/api", String.class);
+ });
+ }
 }
 ```
 

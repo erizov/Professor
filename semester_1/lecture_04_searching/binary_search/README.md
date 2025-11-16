@@ -21,7 +21,7 @@ This technique is applied in various domains to solve specific problems efficien
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
 **When to Use**: See 'Best Use Case' section
-**When NOT to Use**: See 'Do Not Confuse With' section
+**When NOT to Employ**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
 
@@ -38,11 +38,11 @@ By the end of this lecture, students will be able to:
 2. Analyze time and space complexity using Big O notation
 3. Identify when to use this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to solve real-world problems
+5. Apply this approach to tackle real-world problems
 
 ### Short Description
 
-An efficient search algorithm that finds the position of a target value within a sorted array by repeatedly dividing the search interval in half. Solves the problem of quickly locating items in sorted collections. Example: Finding page 250 in a 500-page book by checking middle (250), then narrowing search. Works by comparing target with middle element, eliminating half the search space each iteration.
+An efficient search algorithm that finds the position of a target value within a sorted array by repeatedly dividing the search interval in half. Addresses quickly locating items in sorted collections. Example: Finding page 250 in a 500-page book by checking middle (250), then narrowing search. Operates by comparing target with middle element, eliminating half the search space each iteration.
 
 **Key Characteristics:**
 - **Time Complexity**: O(log n) because each comparison eliminates half of the remaining search space, requiring at most log₂(n) comparisons.
@@ -51,21 +51,20 @@ An efficient search algorithm that finds the position of a target value within a
 
 ## Often Used Together With
 
-Binary Search is commonly used in combination with:
+Binary Search is used in combination with:
 
 - **Linear Search**: Often combined for comprehensive solutions
-- **Hash Table**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
+- Employed together in production systems for optimal performance
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
 
-- **Linear Search**: Binary search requires sorted data O(log n), linear search works on any data O(n)
+- **Linear Search**: Binary search requires sorted data O(log n), linear search works on any content O(n)
 - **Interpolation Search**: Both require sorted data but interpolation assumes uniform distribution for better average case
-- **Ternary Search**: Divides into three parts instead of two, similar concept but different implementation
+- **Ternary Search**: Divides into three parts instead of two, similar concept but different deployment
 
 ## Self-Assessment Questions
 
@@ -74,7 +73,7 @@ Test your understanding with these questions:
 ### Comprehension
 
 1. Can you explain how Binary Search works in your own words?
-2. What is the key insight or technique that makes Binary Search efficient?
+2. What is the key insight or technique that makes Binary Search streamlined?
 
 ### Analysis
 
@@ -84,14 +83,14 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Binary Search from memory without looking at the code?
-6. What real-world problem could you solve using Binary Search?
+6. What real-world problem could youaddresse using Binary Search?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Binary Search?
 8. How would you test your Binary Search implementation?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
 ## Algorithm Visualization
 
@@ -100,13 +99,13 @@ Binary Search: Find 7 in [1, 3, 5, 7, 9, 11]
 
 Step 1: Check middle (index 2, value 5)
 [1, 3, 5, 7, 9, 11]
-         ↑
-        5 < 7, search right
+ ↑
+ 5 < 7, search right
 
 Step 2: Check middle of right half (index 4, value 9)
 [7, 9, 11]
-    ↑
-    9 > 7, search left
+ ↑
+ 9 > 7, search left
 
 Step 3: Check remaining (index 3, value 7)
 [7]
@@ -122,15 +121,15 @@ Step 3: Check remaining (index 3, value 7)
 2. Identify the base case(s) in Binary Search
 3. Explain why Binary Search has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: ImplRealizationtermediate)
 
 4. Implement Binary Search from scratch using only the function signature
 5. Modify Binary Search to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the aapproachs execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Binary Search for a specific use case (e.g., nearly sorted data)
+7. Optimize Binary Search for a specifapplyuse case (e.g., nearly sortdatasetata)
 8. Implement a parallel or distributed version of Binary Search
 9. Compare Binary Search performance with alternative algorithms on large datasets
 
@@ -163,11 +162,11 @@ This algorithm/pattern is implemented in the following frameworks and technologi
 ```java
 // Spring Data JPA - Binary search on indexed fields
 public interface UserRepository extends JpaRepository<User, Long> {
-    // Uses binary search on indexed email field
-    Optional<User> findByEmail(String email);
-    
-    // Binary search for range queries
-    List<User> findByIdBetween(Long start, Long end);
+ // Uses binary search on indexed email field
+ Optional<User> findByEmail(String email);
+ 
+ // Binary search for range queries
+ List<User> findByIdBetween(Long start, Long end);
 }
 ```
 
@@ -180,7 +179,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
 int[] sortedIds = GetSortedUserIds();
 int index = Array.BinarySearch(sortedIds, userId);
 if (index >= 0) {
-    return users[index];
+ return users[index];
 }
 ```
 

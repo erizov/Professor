@@ -21,7 +21,7 @@ This technique is applied in various domains to solve specific problems efficien
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
 **When to Use**: See 'Best Use Case' section
-**When NOT to Use**: See 'Do Not Confuse With' section
+**When NOT to Employ**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
 
@@ -37,11 +37,11 @@ By the end of this lecture, students will be able to:
 2. Analyze time and space complexity using Big O notation
 3. Identify when to use this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to solve real-world problems
+5. Apply this algorithm to tackle real-world problems
 
 ### Short Description
 
-A technique for controlling the rate of requests sent or received by a network interface controller to prevent abuse and ensure fair resource usage. Solves problems like API abuse, DDoS protection, and resource exhaustion. Example: Limiting API calls to 100 requests per minute per user to prevent system overload. Works by tracking request counts per identifier and rejecting requests that exceed thresholds.
+A algorithm for controlling the rate of requests sent or received by a network interface controller to prevent abuse and ensure fair resource usage. Addresses API abuse, DDoS protection, and resource exhaustion. Example: Limiting API calls to 100 requests per minute per user to prevent system overload. Operates by tracking request counts per identifier and rejecting requests that exceed thresholds.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -76,9 +76,9 @@ Test your understanding with these questions:
 ### Debugging
 
 7. What are the most common mistakes when implementing Rate Limiting?
-8. How would you test your Rate Limiting implementation?
+8. How would you test your Rate Limiting deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
 ## Algorithm Visualization
 
@@ -97,25 +97,25 @@ Test your understanding with these questions:
 
 4. Implement Rate Limiting from scratch using only the function signature
 5. Modify Rate Limiting to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the atechniques execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Rate Limiting for a specific use case (e.g., nearly sorted data)
+7. Optimize Rate Limiting for a specifapplyuse case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Rate Limiting
 9. Compare Rate Limiting performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Rate Limiting to solve a production problem
+10. Design a structure that uses Rate Limiting toaddresse a production problem
 11. Create unit tests with 100% code coverage for Rate Limiting
 12. Write a technical blog post explaining Rate Limiting to beginners
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Rate Limiting is widely used in production systems
-- **Performance Optimization**: Applied to improve system efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Enterprise Applications**: Rate Limiting is used in production systems
+- **Capability Optimization**: Applied to improve system efficiency
+-Architecturetem Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
@@ -125,9 +125,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Rate Limiting is too complex to understand"
 ✓ **CORRECT**: Rate Limiting can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
-
-This algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 
@@ -135,24 +133,24 @@ This algorithm/pattern is implemented in the following frameworks and technologi
 // Spring Rate Limiting with Bucket4j
 @Configuration
 public class RateLimitConfig {
-    @Bean
-    public RateLimiter rateLimiter() {
-        return RateLimiter.create(100.0);  // 100 requests per second
-    }
+ @Bean
+ public RateLimiter rateLimiter() {
+ return RateLimiter.create(100.0); // 100 requests per second
+ }
 }
 
 @RestController
 public class ApiController {
-    @Autowired
-    private RateLimiter rateLimiter;
-    
-    @GetMapping("/api/data")
-    public ResponseEntity<?> getData() {
-        if (!rateLimiter.tryAcquire()) {
-            return ResponseEntity.status(429).build();
-        }
-        return ResponseEntity.ok(data);
-    }
+ @Autowired
+ private RateLimiter rateLimiter;
+ 
+ @GetMapping("/api/data")
+ public ResponseEntity<?> getData() {
+ if (!rateLimiter.tryAcquire()) {
+ return ResponseEntity.status(429).build();
+ }
+ return ResponseEntity.ok(content);
+ }
 }
 ```
 
@@ -165,24 +163,24 @@ public class ApiController {
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
-  name: ratings
+ name: ratings
 spec:
-  hosts:
-  - ratings
-  http:
-  - match:
-    - headers:
-        end-user:
-          exact: jason
-    route:
-    - destination:
-        host: ratings
-        subset: v1
-    fault:
-      delay:
-        percentage:
-          value: 0.1
-        fixedDelay: 5s
+ hosts:
+ - ratings
+ http:
+ - match:
+ - headers:
+ end-user:
+ exact: jason
+ route:
+ - destination:
+ host: ratings
+ subset: v1
+ fault:
+ delay:
+ percentage:
+ value: 0.1
+ fixedDelay: 5s
 ```
 
 **Purpose**: Kubernetes uses this pattern for container orchestration, service discovery, and resource management.

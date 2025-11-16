@@ -21,7 +21,7 @@ This technique is applied in various domains to solve specific problems efficien
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
 **When to Use**: See 'Best Use Case' section
-**When NOT to Use**: See 'Do Not Confuse With' section
+**When NOT to Employ**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
 
@@ -37,11 +37,11 @@ By the end of this lecture, students will be able to:
 2. Analyze time and space complexity using Big O notation
 3. Identify when to use this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to solve real-world problems
+5. Apply this algorithm to tackle real-world problems
 
 ### Short Description
 
-A performance optimization technique that stores frequently accessed data in fast storage to reduce access time and system load. Solves problems like slow database queries, expensive computations, and API rate limits. Example: Storing product details in Redis cache to serve 1000x faster than database queries. Works by checking cache first, returning cached data if available, otherwise fetching from source and storing in cache.
+A capability optimization algorithm that stores frequently accessed data in fast storage to reduce access time and system load. Addresses slow database queries, expensive computations, and API rate limits. Example: Storing product details in Redis cache to serve 1000x faster than database queries. Operates by checking cache first, returning cached content if available, otherwise fetching from source and storing in cache.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -52,7 +52,7 @@ A performance optimization technique that stores frequently accessed data in fas
 
 - **Memoization**: Caching stores computed results, memoization is caching technique for functions
 - **CDN**: Caching is general pattern, CDN is distributed caching infrastructure
-- **Database Query Cache**: Caching is pattern, query cache is specific implementation
+- **Database Query Cache**: Caching is pattern, query cache is specific deployment
 
 ## Self-Assessment Questions
 
@@ -61,7 +61,7 @@ Test your understanding with these questions:
 ### Comprehension
 
 1. Can you explain how Caching works in your own words?
-2. What is the key insight or technique that makes Caching efficient?
+2. What is the key insight or method that makes Caching efficient?
 
 ### Analysis
 
@@ -78,7 +78,7 @@ Test your understanding with these questions:
 7. What are the most common mistakes when implementing Caching?
 8. How would you test your Caching implementation?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
 ## Algorithm Visualization
 
@@ -93,21 +93,21 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Caching
 3. Explain why Caching has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: ImplRealizationtermediate)
 
 4. Implement Caching from scratch using only the function signature
 5. Modify Caching to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the atechniques execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Caching for a specific use case (e.g., nearly sorted data)
+7. Optimize Caching for a specifapplyuse case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Caching
 9. Compare Caching performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Caching to solve a production problem
+10. Design a structure that uses Caching toaddresse a production problem
 11. Create unit tests with 100% code coverage for Caching
 12. Write a technical blog post explaining Caching to beginners
 
@@ -135,24 +135,24 @@ This algorithm/pattern is implemented in the following frameworks and technologi
 // Spring Cache Abstraction
 @Service
 public class ProductService {
-    @Cacheable(value = "products", key = "#id")
-    public Product getProduct(Long id) {
-        return productRepository.findById(id).orElseThrow();
-    }
-    
-    @CacheEvict(value = "products", key = "#id")
-    public void updateProduct(Long id, Product product) {
-        productRepository.save(product);
-    }
+ @Cacheable(value = "products", key = "#id")
+ public Product getProduct(Long id) {
+ return productRepository.findById(id).orElseThrow();
+ }
+ 
+ @CacheEvict(value = "products", key = "#id")
+ public void updateProduct(Long id, Product product) {
+ productRepository.save(product);
+ }
 }
 
 @Configuration
 @EnableCaching
 public class CacheConfig {
-    @Bean
-    public CacheManager cacheManager() {
-        return new ConcurrentMapCacheManager("products");
-    }
+ @Bean
+ public CacheManager cacheManager() {
+ return new ConcurrentMapCacheManager("products");
+ }
 }
 ```
 
@@ -163,18 +163,18 @@ public class CacheConfig {
 ```csharp
 // .NET Memory Cache
 public class ProductService {
-    private readonly IMemoryCache cache;
-    
-    public ProductService(IMemoryCache cache) {
-        this.cache = cache;
-    }
-    
-    public Product GetProduct(int id) {
-        return cache.GetOrCreate($"product-{id}", entry => {
-            entry.AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5);
-            return productRepository.GetById(id);
-        });
-    }
+ private readonly IMemoryCache cache;
+ 
+ public ProductService(IMemoryCache cache) {
+ this.cache = cache;
+ }
+ 
+ public Product GetProduct(int id) {
+ return cache.GetOrCreate($"product-{id}", entry => {
+ entry.AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5);
+ return productRepository.GetById(id);
+ });
+ }
 }
 ```
 

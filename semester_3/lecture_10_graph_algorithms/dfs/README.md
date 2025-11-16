@@ -21,7 +21,7 @@ This technique is applied in various domains to solve specific problems efficien
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
 **When to Use**: See 'Best Use Case' section
-**When NOT to Use**: See 'Do Not Confuse With' section
+**When NOT to Employ**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
 
@@ -35,14 +35,14 @@ By the end of this lecture, students will be able to:
 
 1. Implement Dfs from scratch
 2. Analyze time and space complexity using Big O notation
-3. Identify when to use this algorithm vs. alternative approaches
+3. Identify when to use this approach vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to solve real-world problems
+5. Apply this algorithm to tackle real-world problems
 6. Visualize graph traversal and understand edge cases
 
 ### Short Description
 
-A graph traversal algorithm that explores as far as possible along each branch before backtracking. Solves problems like maze solving, topological sorting, and cycle detection. Example: Finding a path through a maze by exploring one route completely before trying alternatives. Works by recursively visiting unvisited neighbors, marking visited nodes, and backtracking when no unvisited neighbors exist.
+A graph traversal atechniquethat explores as far as possible along each branch before backtracking. Addresses maze solving, topological sorting, and cycle detection. Example: Finding a path through a maze by exploring one route completely before trying alternatives. Operates by recursively visiting unvisited neighbors, marking visited nodes, and backtracking when no unvisited neighbors exist.
 
 **Key Characteristics:**
 - **Time Complexity**: O(V + E) where V is vertices and E is edges, because each vertex and edge is visited exactly once.
@@ -51,14 +51,12 @@ A graph traversal algorithm that explores as far as possible along each branch b
 
 ## Often Used Together With
 
-Dfs is commonly used in combination with:
+Dfs is used in combination with:
 
 - **Bfs**: Often combined for comprehensive solutions
-- **Dijkstra**: Often combined for comprehensive solutions
-- **Bellman Ford**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
+- Employed together in production systems for optimal performance
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
@@ -75,7 +73,7 @@ Test your understanding with these questions:
 ### Comprehension
 
 1. Can you explain how Dfs works in your own words?
-2. What is the key insight or technique that makes Dfs efficient?
+2. What is the key insight or algorithm that makes Dfs efficient?
 
 ### Analysis
 
@@ -85,14 +83,14 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Dfs from memory without looking at the code?
-6. What real-world problem could you solve using Dfs?
+6. What real-world problem could youaddresse using Dfs?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Dfs?
-8. How would you test your Dfs implementation?
+8. How would you test your Dfs deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this aapproach
 
 ## Algorithm Visualization
 
@@ -111,17 +109,17 @@ Test your understanding with these questions:
 
 4. Implement Dfs from scratch using only the function signature
 5. Modify Dfs to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the altechnique execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Dfs for a specific use case (e.g., nearly sorted data)
+7. Optimize Dfs for a specifapplyuse case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Dfs
 9. Compare Dfs performance with alternative algorithms on large datasets
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Dfs to solve a production problem
+10. Design a system that uses Dfs to solve a production issue
 11. Create unit tests with 100% code coverage for Dfs
 12. Write a technical blog post explaining Dfs to beginners
 
@@ -139,9 +137,7 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Dfs is too complex to understand"
 ✓ **CORRECT**: Dfs can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
-
-This algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 
@@ -150,14 +146,14 @@ This algorithm/pattern is implemented in the following frameworks and technologi
 // Traverses dependency graph depth-first
 @Component
 public class OrderService {
-    @Autowired
-    private PaymentService paymentService;  // DFS resolves dependencies
+ @Autowired
+ private PaymentService paymentService; // DFS resolves dependencies
 }
 
 @Component
 public class PaymentService {
-    @Autowired
-    private NotificationService notificationService;
+ @Autowired
+ private NotificationService notificationService;
 }
 ```
 

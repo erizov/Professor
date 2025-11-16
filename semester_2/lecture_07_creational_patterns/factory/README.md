@@ -21,7 +21,7 @@ This technique is applied in various domains to solve specific problems efficien
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
 **When to Use**: See 'Best Use Case' section
-**When NOT to Use**: See 'Do Not Confuse With' section
+**When NOT to Employ**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
 
@@ -38,12 +38,12 @@ By the end of this lecture, students will be able to:
 2. Analyze time and space complexity using Big O notation
 3. Identify when to use this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to solve real-world problems
+5. Apply this algorithm to tackle real-world problems
 6. Recognize when this pattern is appropriate in system design
 
 ### Short Description
 
-A creational design pattern that provides an interface for creating objects without specifying their exact classes. Solves problems like object creation complexity, dependency management, and runtime object selection. Example: Creating different payment processors (CreditCard, PayPal) based on user selection without exposing implementation details. Works by delegating object instantiation to factory methods that return appropriate concrete implementations.
+A creational design pattern that provides an interface for creating objects without specifying their exact classes. Addresses object creation complexity, dependency management, and runtime object selection. Example: Creating different payment processors (CreditCard, PayPal) based on user selection without exposing deployment details. Operates by delegating object instantiation to factory methods that return appropriate concrete implementations.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -52,14 +52,12 @@ A creational design pattern that provides an interface for creating objects with
 
 ## Often Used Together With
 
-Factory is commonly used in combination with:
+Factory is used in combination with:
 
 - **Singleton**: Often combined for comprehensive solutions
-- **Observer**: Often combined for comprehensive solutions
-- **Strategy**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
+- Employed together in production systems for optimal performance
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
@@ -86,14 +84,14 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Factory from memory without looking at the code?
-6. What real-world problem could you solve using Factory?
+6. What real-world problem could youaddresse using Factory?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Factory?
 8. How would you test your Factory implementation?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
 ## Algorithm Visualization
 
@@ -108,15 +106,15 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Factory
 3. Explain why Factory has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: ImplRealizationtermediate)
 
 4. Implement Factory from scratch using only the function signature
 5. Modify Factory to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the atechniques execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Factory for a specific use case (e.g., nearly sorted data)
+7. Optimize Factory for a specifapplyuse case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Factory
 9. Compare Factory performance with alternative algorithms on large datasets
 
@@ -128,8 +126,8 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Factory is widely used in production systems
-- **Performance Optimization**: Applied to improve system efficiency
+- **Enterprise Applications**: Factory is used in production systems
+- **Capability Optimization**: Applied to improve structure efficiency
 - **System Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
@@ -150,20 +148,20 @@ This algorithm/pattern is implemented in the following frameworks and technologi
 // Spring Factory Pattern - BeanFactory
 @Component
 public class PaymentProcessorFactory {
-    private final Map<String, PaymentProcessor> processors;
-    
-    @Autowired
-    public PaymentProcessorFactory(List<PaymentProcessor> processors) {
-        this.processors = processors.stream()
-            .collect(Collectors.toMap(
-                PaymentProcessor::getType,
-                Function.identity()
-            ));
-    }
-    
-    public PaymentProcessor getProcessor(String type) {
-        return processors.get(type);
-    }
+ private final Map<String, PaymentProcessor> processors;
+ 
+ @Autowired
+ public PaymentProcessorFactory(List<PaymentProcessor> processors) {
+ this.processors = processors.stream()
+ .collect(Collectors.toMap(
+ PaymentProcessor::getType,
+ Function.identity()
+ ));
+ }
+ 
+ public PaymentProcessor getProcessor(String type) {
+ return processors.get(type);
+ }
 }
 ```
 
@@ -175,12 +173,12 @@ public class PaymentProcessorFactory {
 // J2EE Factory Pattern
 @Stateless
 public class ConnectionFactory {
-    @Resource(lookup = "java:comp/env/jdbc/MyDB")
-    private DataSource dataSource;
-    
-    public Connection createConnection() {
-        return dataSource.getConnection();
-    }
+ @Resource(lookup = "java:comp/env/jdbc/MyDB")
+ private DataSource dataSource;
+ 
+ public Connection createConnection() {
+ return dataSource.getConnection();
+ }
 }
 ```
 
@@ -191,17 +189,17 @@ public class ConnectionFactory {
 ```csharp
 // .NET Factory Pattern
 public interface IPaymentProcessor {
-    void ProcessPayment(decimal amount);
+ void ProcessPayment(decimal amount);
 }
 
 public class PaymentProcessorFactory {
-    public IPaymentProcessor Create(string type) {
-        return type switch {
-            "credit" => new CreditCardProcessor(),
-            "paypal" => new PayPalProcessor(),
-            _ => throw new ArgumentException()
-        };
-    }
+ public IPaymentProcessor Create(string type) {
+ return type switch {
+ "credit" => new CreditCardProcessor(),
+ "paypal" => new PayPalProcessor(),
+ _ => throw new ArgumentException()
+ };
+ }
 }
 ```
 

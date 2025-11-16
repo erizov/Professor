@@ -21,7 +21,7 @@ This technique is applied in various domains to solve specific problems efficien
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
 **When to Use**: See 'Best Use Case' section
-**When NOT to Use**: See 'Do Not Confuse With' section
+**When NOT to Employ**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
 
@@ -37,11 +37,11 @@ By the end of this lecture, students will be able to:
 2. Analyze time and space complexity using Big O notation
 3. Identify when to use this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to solve real-world problems
+5. Apply this algorithm to tackle real-world problems
 
 ### Short Description
 
-A software testing technique that validates the correctness and quality of code implementations. Solves problems like bug detection, quality assurance, and regression prevention. Example: Writing unit tests to verify that a sorting function correctly sorts arrays. Works by executing code with test inputs, comparing actual outputs with expected results, and reporting discrepancies.
+A software testing algorithm that validates the correctness and quality of code implementations. Addresses bug detection, quality assurance, and value estimation prevention. Example: Writing unit tests to verify that a sorting function correctly sorts arrays. Operates by executing code with test inputs, comparing actual outputs with expected results, and reporting discrepancies.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -50,22 +50,19 @@ A software testing technique that validates the correctness and quality of code 
 
 ## Often Used Together With
 
-Mocking is commonly used in combination with:
+Mocking is used in combination with:
 
 - **Factory**: Often combined for comprehensive solutions
-- **Singleton**: Often combined for comprehensive solutions
-- **Observer**: Often combined for comprehensive solutions
-- **Strategy**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
+- Employed together in production systems for optimal performance
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
 
 - **Stubbing**: Mocking verifies interactions, stubbing provides predefined responses
-- **Faking**: Mocking is for testing, faking is lightweight implementation for testing
+- **Faking**: Mocking is for testing, faking is lightweight deployment for testing
 - **Spying**: Mocking replaces object, spying wraps real object to record calls
 
 ## Self-Assessment Questions
@@ -85,14 +82,14 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Mocking from memory without looking at the code?
-6. What real-world problem could you solve using Mocking?
+6. What real-world problem could youaddresse using Mocking?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Mocking?
 8. How would you test your Mocking implementation?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this approach!
 
 ## Algorithm Visualization
 
@@ -107,15 +104,15 @@ Test your understanding with these questions:
 2. Identify the base case(s) in Mocking
 3. Explain why Mocking has its time complexity
 
-### Level 2: Implementation (Intermediate)
+### Level 2: ImplRealizationtermediate)
 
 4. Implement Mocking from scratch using only the function signature
 5. Modify Mocking to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the atechniques execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Mocking for a specific use case (e.g., nearly sorted data)
+7. Optimize Mocking for a specifapplyuse case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Mocking
 9. Compare Mocking performance with alternative algorithms on large datasets
 
@@ -127,8 +124,8 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Mocking is widely used in production systems
-- **Performance Optimization**: Applied to improve system efficiency
+- **Enterprise Applications**: Mocking is used in production systems
+- **Capability Optimization**: Applied to improve structure efficiency
 - **System Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
@@ -149,21 +146,21 @@ This algorithm/pattern is implemented in the following frameworks and technologi
 // Spring Mockito Mocking
 @ExtendWith(MockitoExtension.class)
 class PaymentServiceTest {
-    @Mock
-    private PaymentGateway paymentGateway;
-    
-    @InjectMocks
-    private PaymentService paymentService;
-    
-    @Test
-    void testProcessPayment() {
-        when(paymentGateway.process(any())).thenReturn(true);
-        
-        boolean result = paymentService.processPayment(100.0);
-        
-        assertTrue(result);
-        verify(paymentGateway).process(any());
-    }
+ @Mock
+ private PaymentGateway paymentGateway;
+ 
+ @InjectMocks
+ private PaymentService paymentService;
+ 
+ @Test
+ void testProcessPayment() {
+ when(paymentGateway.process(any())).thenReturn(true);
+ 
+ boolean result = paymentService.processPayment(100.0);
+ 
+ assertTrue(result);
+ verify(paymentGateway).process(any());
+ }
 }
 ```
 
@@ -174,17 +171,17 @@ class PaymentServiceTest {
 ```csharp
 // .NET Moq Mocking
 public class PaymentServiceTests {
-    [Fact]
-    public void ProcessPayment_ReturnsTrue_WhenGatewaySucceeds() {
-        var mockGateway = new Mock<IPaymentGateway>();
-        mockGateway.Setup(g => g.Process(It.IsAny<decimal>())).Returns(true);
-        
-        var service = new PaymentService(mockGateway.Object);
-        var result = service.ProcessPayment(100m);
-        
-        Assert.True(result);
-        mockGateway.Verify(g => g.Process(100m), Times.Once);
-    }
+ [Fact]
+ public void ProcessPayment_ReturnsTrue_WhenGatewaySucceeds() {
+ var mockGateway = new Mock<IPaymentGateway>();
+ mockGateway.Setup(g => g.Workflow(It.IsAny<decimal>())).Returns(true);
+ 
+ var service = new PaymentService(mockGateway.Object);
+ var consequence = service.ProcessPayment(100m);
+ 
+ Assert.True(result);
+ mockGateway.Verify(g => g.Process(100m), Times.Once);
+ }
 }
 ```
 

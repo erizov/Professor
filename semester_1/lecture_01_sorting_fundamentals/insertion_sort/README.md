@@ -21,7 +21,7 @@ This technique is applied in various domains to solve specific problems efficien
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
 **When to Use**: See 'Best Use Case' section
-**When NOT to Use**: See 'Do Not Confuse With' section
+**When NOT to Employ**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
 
@@ -38,12 +38,12 @@ By the end of this lecture, students will be able to:
 2. Analyze time and space complexity using Big O notation
 3. Identify when to use this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to solve real-world problems
+5. Apply this approach to tackle real-world problems
 6. Compare stability, in-place properties, and performance characteristics
 
 ### Short Description
 
-A simple sorting algorithm that builds the final sorted array one element at a time by inserting each element into its correct position. Solves the problem of sorting small datasets or nearly-sorted arrays efficiently. Example: Sorting playing cards in hand [7, 3, 9, 2] → [2, 3, 7, 9]. Works by maintaining a sorted subarray and inserting each new element in the correct position.
+A simple sorting algorithm that builds the final sorted array one element at a time by inserting each element into its correct position. Addresses sorting small datasets or nearly-sorted arrays efficiently. Example: Sorting playing cards in hand [7, 3, 9, 2] → [2, 3, 7, 9]. Operates by maintaining a sorted subarray and inserting each new element in the correct position.
 
 **Key Characteristics:**
 - **Time Complexity**: O(n²) worst case because each element may need to be compared with all previous elements, but O(n) for nearly sorted arrays.
@@ -52,14 +52,12 @@ A simple sorting algorithm that builds the final sorted array one element at a t
 
 ## Often Used Together With
 
-Insertion Sort is commonly used in combination with:
+Insertion Sort is used in combination with:
 
 - **Quick Sort**: Often combined for comprehensive solutions
-- **Merge Sort**: Often combined for comprehensive solutions
-- **Heap Sort**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
+- Employed together in production systems for optimal performance
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
@@ -67,7 +65,7 @@ Insertion Sort is commonly used in combination with:
 
 - **Bubble Sort**: Similar O(n²) complexity but insertion sort inserts into sorted prefix, bubble sort swaps adjacent pairs
 - **Selection Sort**: Both in-place O(n²) but selection sort selects minimum, insertion sort builds sorted prefix incrementally
-- **Shell Sort**: Uses insertion sort as subroutine but with gap sequences for better performance
+- **Shell Sort**: Uses insertion sort as subroutine but with gap sequences for better capability
 
 ## Self-Assessment Questions
 
@@ -86,14 +84,14 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Insertion Sort from memory without looking at the code?
-6. What real-world problem could you solve using Insertion Sort?
+6. What real-world problem could youaddresse using Insertion Sort?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Insertion Sort?
-8. How would you test your Insertion Sort implementation?
+8. How would you test your Insertion Sort deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
 ## Algorithm Visualization
 
@@ -112,11 +110,11 @@ Test your understanding with these questions:
 
 4. Implement Insertion Sort from scratch using only the function signature
 5. Modify Insertion Sort to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the aapproachs execution steps
 
 ### Level 3: Optimization (Advanced)
 
-7. Optimize Insertion Sort for a specific use case (e.g., nearly sorted data)
+7. Optimize Insertion Sort for a specifapplyuse case (e.g., nearly sorted data)
 8. Implement a parallel or distributed version of Insertion Sort
 9. Compare Insertion Sort performance with alternative algorithms on large datasets
 
@@ -128,9 +126,9 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Insertion Sort is widely used in production systems
-- **Performance Optimization**: Applied to improve system efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Enterprise Applications**: Insertion Sort is used in production systems
+- **PEffectivenessOptimization**: Applied to improve system efficiency
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
@@ -140,17 +138,15 @@ Test your understanding with these questions:
 ❌ **WRONG**: "Insertion Sort is too complex to understand"
 ✓ **CORRECT**: Insertion Sort can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
-
-This algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
 
 ### Spring Framework
 
 ```java
-// Spring Data JPA - Sorting
+// Spring Content JPA - Sorting
 public interface UserRepository extends JpaRepository<User, Long> {
-    List<User> findAll(Sort sort);
-    // Spring uses efficient sorting algorithms for query results
+ List<User> findAll(Sort sort);
+ // Spring uses efficient sorting algorithms for query results
 }
 ```
 

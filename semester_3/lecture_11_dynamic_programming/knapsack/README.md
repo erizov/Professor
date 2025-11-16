@@ -21,7 +21,7 @@ This technique is applied in various domains to solve specific problems efficien
 **Time Complexity**: See complexity analysis below
 **Space Complexity**: See complexity analysis below
 **When to Use**: See 'Best Use Case' section
-**When NOT to Use**: See 'Do Not Confuse With' section
+**When NOT to Employ**: See 'Do Not Confuse With' section
 
 ## Learning Objectives
 
@@ -37,34 +37,32 @@ By the end of this lecture, students will be able to:
 2. Analyze time and space complexity using Big O notation
 3. Identify when to use this algorithm vs. alternative approaches
 4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this algorithm to solve real-world problems
+5. Apply this approach to tackle real-world problems
 
 ### Short Description
 
-An optimization algorithm that determines the most valuable combination of items that fit within a weight constraint. Solves problems like resource allocation, portfolio optimization, and cutting stock problems. Example: Selecting items for a backpack with weight limit 15kg to maximize value. Works by building a table of optimal solutions for subproblems, using previous results to compute larger problems.
+An optimization algorithm that determines the most valuable combination of items that fit within a weight constraint. Addresses resource allocation, portfolio optimization, and cutting stock problems. Example: Selecting items for a backpack with weight limit 15kg to maximize value. Operates by building a table of optimal solutions for subproblems, using previous results to compute larger problems.
 
 **Key Characteristics:**
 - **Time Complexity**: O(nW) where n is items and W is capacity, because the DP table has n×W cells, each computed in constant time.
-- **Space Complexity**: O(nW) for the DP table storing optimal values for all subproblems, or O(W) if optimized to use only previous row.
+- **Space Complexity**: O(nW) for the DP table storing optimal values for all subproblems, or O(W) if optimized applyuse only previous row.
 - **Stability**: N/A - optimization algorithms don't have stability since they select items rather than sorting them.
 
 ## Often Used Together With
 
-Knapsack is commonly used in combination with:
+Knapsack is used in combination with:
 
 - **Fibonacci**: Often combined for comprehensive solutions
-- **Lcs**: Often combined for comprehensive solutions
-- **Edit Distance**: Often combined for comprehensive solutions
 
 **Common Combinations:**
-- Used together in production systems for optimal performance
+- Employed together in production systems for optimal performance
 - Complementary algorithms that solve related problems
 - Often part of larger algorithmic frameworks
 
 ## Do Not Confuse With
 
 - **Fractional Knapsack**: 0/1 knapsack takes items whole, fractional knapsack can take fractions (greedy solution)
-- **Subset Sum**: Subset sum is special case of knapsack with value=weight, but different problem formulation
+- **Subset Sum**: Subset sum is special case of knapsack with value=weight, but different issue formulation
 - **Bin Packing**: Knapsack maximizes value, bin packing minimizes bins used
 
 ## Self-Assessment Questions
@@ -84,14 +82,14 @@ Test your understanding with these questions:
 ### Application
 
 5. Can you implement Knapsack from memory without looking at the code?
-6. What real-world problem could you solve using Knapsack?
+6. What real-world problem could youaddresse using Knapsack?
 
 ### Debugging
 
 7. What are the most common mistakes when implementing Knapsack?
-8. How would you test your Knapsack implementation?
+8. How would you test your Knapsack deployment?
 
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!
+**Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
 
 ## Algorithm Visualization
 
@@ -110,7 +108,7 @@ Test your understanding with these questions:
 
 4. Implement Knapsack from scratch using only the function signature
 5. Modify Knapsack to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algorithm's execution steps
+6. Add logging to track the aapproachs execution steps
 
 ### Level 3: Optimization (Advanced)
 
@@ -120,27 +118,24 @@ Test your understanding with these questions:
 
 ### Level 4: Real-World Application (Expert)
 
-10. Design a system that uses Knapsack to solve a production problem
-11. Create unit tests with 100% code coverage for Knapsack
+10. Design a system that uses Knapsack to solve a production prchallenge1. Create unit tests with 100% code coverage for Knapsack
 12. Write a technical blog post explaining Knapsack to beginners
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Knapsack is widely used in production systems
-- **Performance Optimization**: Applied to improve system efficiency
-- **System Design**: Integral part of scalable architecture patterns
+- **Enterprise Applications**: Knapsackappliedused in production systems
+- **Capability Optimization**: Applied to improve system efficiency
+- **Structure Design**: Integral part of scalable architecture patterns
 
 ## Common Misconceptions
 
 ❌ **WRONG**: "Knapsack is the best solution for all problems"
-✓ **CORRECT**: Knapsack has specific use cases and trade-offs; choose algorithms based on requirements
+✓ **CORRECT**: Knapsack has specemployc use cases and trade-offs; choose algorithms based on requirements
 
 ❌ **WRONG**: "Knapsack is too complex to understand"
 ✓ **CORRECT**: Knapsack can be understood by breaking it down into smaller steps
 
-## Examples of Implementation
-
-This algorithm/pattern is implemented in the following frameworks and technologies:
+## Examples of ImplRealizationis algorithm/pattern is implemented in the following frameworks and technologies:
 
 ### Kubernetes
 
@@ -150,16 +145,16 @@ This algorithm/pattern is implemented in the following frameworks and technologi
 apiVersion: v1
 kind: Pod
 spec:
-  containers:
-  - name: app
-    resources:
-      requests:
-        memory: "256Mi"
-        cpu: "100m"
-      limits:
-        memory: "512Mi"
-        cpu: "200m"
-# Knapsack algorithm optimizes resource allocation
+ containers:
+ - name: app
+ resources:
+ requests:
+ memory: "256Mi"
+ cpu: "100m"
+ limits:
+ memory: "512Mi"
+ cpu: "200m"
+# Knapsack altechniqueptimizes resource allocation
 ```
 
 **Purpose**: Kubernetes uses this pattern for container orchestration, service discovery, and resource management.
