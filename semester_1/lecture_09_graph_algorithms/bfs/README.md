@@ -89,7 +89,49 @@ Test your understanding with these questions:
 *Visual diagram for Bfs would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-## Practice Exercises
+## Worked Example: BFS on Graph
+
+Graph:
+```
+     A
+    / \
+   B   C
+  / \ / \
+ D   E   F
+```
+
+**Step 1: Start at A**
+- Queue: [A]
+- Visited: {A}
+- Result: [A]
+
+**Step 2: Process A**
+- Neighbors: B, C
+- Queue: [B, C]
+- Visited: {A, B, C}
+- Result: [A, B, C]
+
+**Step 3: Process B**
+- Neighbors: D, E (A already visited)
+- Queue: [C, D, E]
+- Visited: {A, B, C, D, E}
+- Result: [A, B, C, D, E]
+
+**Step 4: Process C**
+- Neighbors: E, F (A already visited)
+- E already visited, add F
+- Queue: [D, E, F]
+- Visited: {A, B, C, D, E, F}
+- Result: [A, B, C, D, E, F]
+
+**Step 5: Process Remaining**
+- D, E, F have no unvisited neighbors
+- Queue becomes empty
+- Final: [A, B, C, D, E, F]
+
+**Key Insight**: BFS explores level by level, ensuring shortest path discovery in unweighted graphs.
+
+
 
 ### Level 1: Understanding (Beginner)
 

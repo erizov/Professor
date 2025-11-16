@@ -8,6 +8,9 @@ into halves, sorts them recursively, and merges the sorted halves.
 """
 
 import sys
+
+# Setup logging
+logger = logging.getLogger(__name__)
 from pathlib import Path
 import random
 
@@ -16,6 +19,8 @@ from framework.performance_timer import PerformanceTimer
 
 from typing import List, TypeVar
 from framework.logging_utils import get_logger
+import logging
+
 logger = get_logger(__name__)
 
 T = TypeVar('T')

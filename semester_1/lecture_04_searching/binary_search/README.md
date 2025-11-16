@@ -113,7 +113,30 @@ Step 3: Check remaining (index 3, value 7)
  Found! Index 3
 ```
 
-## Practice Exercises
+## Worked Example: Finding 7 in [1, 3, 5, 7, 9, 11, 13]
+
+**Step 1: Initialize**
+- Array: [1, 3, 5, 7, 9, 11, 13]
+- Target: 7
+- Left: 0, Right: 6
+
+**Step 2: First Iteration**
+- Middle: (0 + 6) / 2 = 3
+- Array[3] = 7
+- 7 == 7? Yes → Found at index 3!
+
+**Example: Finding 4 (not present)**
+- Step 1: Left=0, Right=6, Middle=3, Array[3]=7
+- 4 < 7 → search left: Left=0, Right=2
+- Step 2: Middle=1, Array[1]=3
+- 4 > 3 → search right: Left=2, Right=2
+- Step 3: Middle=2, Array[2]=5
+- 4 < 5 → search left: Left=2, Right=1
+- Left > Right → Not found
+
+**Key Insight**: Each comparison eliminates half the search space, giving O(log n) performance.
+
+
 
 ### Level 1: Understanding (Beginner)
 

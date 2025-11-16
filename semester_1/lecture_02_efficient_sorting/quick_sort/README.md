@@ -103,7 +103,41 @@ Recurse left: [1, 2] [5] [8, 9]
 Combine: [1, 2, 5, 8, 9]
 ```
 
-## Practice Exercises
+## Worked Example: Sorting [5, 2, 8, 1, 9] with Quick Sort
+
+**Step 1: Choose Pivot**
+- Array: [5, 2, 8, 1, 9]
+- Pivot: 5 (first element)
+- Why: Simple choice for demonstration
+
+**Step 2: Partition**
+- Compare 2 < 5? Yes → move to left
+- Compare 8 < 5? No → move to right
+- Compare 1 < 5? Yes → move to left
+- Compare 9 < 5? No → move to right
+- Result: [2, 1] [5] [8, 9]
+
+**Step 3: Recursively Sort Left Subarray [2, 1]**
+- Pivot: 2
+- Partition: [1] [2] []
+- Left [1] is sorted (single element)
+- Result: [1, 2]
+
+**Step 4: Recursively Sort Right Subarray [8, 9]**
+- Pivot: 8
+- Partition: [] [8] [9]
+- Right [9] is sorted (single element)
+- Result: [8, 9]
+
+**Step 5: Combine**
+- Left: [1, 2]
+- Pivot: [5]
+- Right: [8, 9]
+- Final: [1, 2, 5, 8, 9]
+
+**Key Insight**: Each partition places the pivot in its final position, then we recursively sort the subarrays.
+
+
 
 ### Level 1: Understanding (Beginner)
 

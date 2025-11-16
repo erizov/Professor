@@ -8,6 +8,8 @@ Efficient search algorithm for sorted arrays using divide-and-conquer.
 
 from typing import List, TypeVar, Optional
 from framework.logging_utils import get_logger
+import logging
+
 logger = get_logger(__name__)
 
 

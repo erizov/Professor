@@ -8,6 +8,9 @@ before moving to next depth level.
 """
 
 import sys
+
+# Setup logging
+logger = logging.getLogger(__name__)
 from pathlib import Path
 from collections import defaultdict, deque
 from typing import List, Set, Dict, Optional
@@ -15,6 +18,8 @@ from typing import List, Set, Dict, Optional
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
 from framework.logging_utils import get_logger
+import logging
+
 logger = get_logger(__name__)
 
 

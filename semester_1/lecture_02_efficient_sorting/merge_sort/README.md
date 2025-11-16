@@ -111,7 +111,31 @@ Merge:
 [1, 2, 5, 8]
 ```
 
-## Practice Exercises
+## Worked Example: Sorting [5, 2, 8, 1] with Merge Sort
+
+**Step 1: Divide**
+- Split [5, 2, 8, 1] into [5, 2] and [8, 1]
+- Split [5, 2] into [5] and [2]
+- Split [8, 1] into [8] and [1]
+
+**Step 2: Conquer (Base Case)**
+- Single elements are already sorted: [5], [2], [8], [1]
+
+**Step 3: Merge [5] and [2]**
+- Compare 5 and 2: 2 < 5 → [2, 5]
+
+**Step 4: Merge [8] and [1]**
+- Compare 8 and 1: 1 < 8 → [1, 8]
+
+**Step 5: Merge [2, 5] and [1, 8]**
+- Compare 2 and 1: 1 < 2 → [1]
+- Compare 2 and 8: 2 < 8 → [1, 2]
+- Compare 5 and 8: 5 < 8 → [1, 2, 5]
+- Add remaining: [1, 2, 5, 8]
+
+**Key Insight**: Merge sort guarantees O(n log n) by always dividing in half and merging in linear time.
+
+
 
 ### Level 1: Understanding (Beginner)
 

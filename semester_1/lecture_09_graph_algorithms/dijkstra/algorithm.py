@@ -8,6 +8,9 @@ weighted graph with non-negative edge weights.
 """
 
 import sys
+
+# Setup logging
+logger = logging.getLogger(__name__)
 from pathlib import Path
 from collections import defaultdict
 from heapq import heappush, heappop
@@ -16,6 +19,8 @@ from typing import Dict, List, Tuple, Optional
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
 from framework.logging_utils import get_logger
+import logging
+
 logger = get_logger(__name__)
 
 

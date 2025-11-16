@@ -89,7 +89,49 @@ Test your understanding with these questions:
 *Visual diagram for Dijkstra would be added here*
 *Consider using online visualization tools or drawing step-by-step execution*
 
-## Practice Exercises
+## Worked Example: Dijkstra's Shortest Path
+
+Graph (weighted):
+```
+    A --3-- B
+    |       |
+    1       2
+    |       |
+    C --4-- D
+```
+
+Find shortest path from A to all nodes.
+
+**Step 1: Initialize**
+- Distances: A=0, B=∞, C=∞, D=∞
+- Priority Queue: [(0, A)]
+- Visited: {}
+
+**Step 2: Process A (distance 0)**
+- Neighbors: B (weight 3), C (weight 1)
+- Update: B = min(∞, 0+3) = 3, C = min(∞, 0+1) = 1
+- Queue: [(1, C), (3, B)]
+- Visited: {A}
+
+**Step 3: Process C (distance 1)**
+- Neighbors: A (visited), D (weight 4)
+- Update: D = min(∞, 1+4) = 5
+- Queue: [(3, B), (5, D)]
+- Visited: {A, C}
+
+**Step 4: Process B (distance 3)**
+- Neighbors: A (visited), D (weight 2)
+- Update: D = min(5, 3+2) = 5 (no change)
+- Queue: [(5, D)]
+- Visited: {A, C, B}
+
+**Step 5: Process D (distance 5)**
+- All neighbors visited
+- Final distances: A=0, B=3, C=1, D=5
+
+**Key Insight**: Always process the closest unvisited vertex first, guaranteeing shortest paths.
+
+
 
 ### Level 1: Understanding (Beginner)
 
