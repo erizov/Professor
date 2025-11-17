@@ -28,9 +28,42 @@ def factory(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing {algorithm_name}")
-    # TODO: Implement factory based on README.md
-    return None
+    
+class ProductFactory:
+    """
+    Factory pattern implementation.
+    """
+    @staticmethod
+    def create_product(product_type: str):
+        """
+        Create product based on type.
+        
+        Args:
+            product_type: Type of product to create
+            
+        Returns:
+            Product instance
+        """
+        if product_type == "A":
+            return ProductA()
+        elif product_type == "B":
+            return ProductB()
+        else:
+            raise ValueError(f"Unknown product type: {product_type}")
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Factory")
+    print("=" * 70)
+    
+    # Example usage
+    result = factory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
 def main():
     """Demonstration."""
     print("=" * 70)
