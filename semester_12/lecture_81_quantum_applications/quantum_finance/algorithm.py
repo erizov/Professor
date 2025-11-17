@@ -41,6 +41,7 @@ def quantum_finance(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Quantum Finance implementation.
     

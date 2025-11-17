@@ -41,6 +41,7 @@ def quantum_architectures(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Quantum Architectures implementation.
     
