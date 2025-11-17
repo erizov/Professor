@@ -149,7 +149,33 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis atechniquepattern is implemented in various advanced frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Elastic APM
+
+```python
+# Elastic APM - Application Performance Monitoring
+from elasticapm import Client
+
+# Initialize APM client
+apm_client = Client(
+    service_name='my-service',
+    server_url='http://apm-server:8200',
+    environment='production'
+)
+
+# Transaction tracking
+with apm_client.begin_transaction('request'):
+    # Your code
+    apm_client.capture_message('Processing request')
+    
+    try:
+        # Your logic
+        pass
+    except Exception as e:
+        apm_client.capture_exception()
+```
+
+**Purpose**: Elastic APM provides application performance monitoring.
+
 
 ## Algorithm Steps
 

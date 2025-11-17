@@ -150,7 +150,29 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis strategy/pattern is implemented in various advanced frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Apache Kafka
+
+```python
+# Lambda Architecture - Batch + Stream
+# Batch Layer (Hadoop/Spark)
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder.appName("BatchProcessing").getOrCreate()
+df = spark.read.parquet("s3://data/batch/")
+batch_results = df.groupBy("key").agg({"value": "sum"})
+
+# Speed Layer (Kafka Streams)
+from kafka import KafkaConsumer
+consumer = KafkaConsumer('stream-topic')
+for message in consumer:
+    # Real-time processing
+    process_stream(message)
+
+# Serving Layer - Merge batch + stream results
+```
+
+**Purpose**: Apache Kafka enables stream processing and event-driven architectures.
+
 
 ## Algorithm Steps
 

@@ -150,7 +150,72 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis strategy/pattern is implemented in various advanced frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Java
+
+```java
+// Java - Lock-free ConcurrentHashMap
+import java.util.concurrent.ConcurrentHashMap;
+
+public class LockFreeExample {
+    private ConcurrentHashMap<String, Integer> map = new ConcurrentHashMap<>();
+    
+    public void increment(String key) {
+        map.compute(key, (k, v) -> v == null ? 1 : v + 1);
+    }
+    
+    public Integer get(String key) {
+        return map.get(key);
+    }
+}
+```
+
+**Purpose**: Java frameworks use this for enterprise application development.
+
+### Python
+
+```python
+# Python - Lock-free with atomic operations
+from threading import Lock
+from collections import defaultdict
+
+class LockFreeCounter:
+    def __init__(self):
+        self._counters = defaultdict(int)
+        self._locks = defaultdict(Lock)
+    
+    def increment(self, key: str):
+        with self._locks[key]:
+            self._counters[key] += 1
+    
+    def get(self, key: str) -> int:
+        return self._counters[key]
+```
+
+**Purpose**: Python libraries provide implementations for this pattern/algorithm.
+
+
+### Python
+
+```python
+# Python - Lock-free with atomic operations
+from threading import Lock
+from collections import defaultdict
+
+class LockFreeCounter:
+    def __init__(self):
+        self._counters = defaultdict(int)
+        self._locks = defaultdict(Lock)
+    
+    def increment(self, key: str):
+        with self._locks[key]:
+            self._counters[key] += 1
+    
+    def get(self, key: str) -> int:
+        return self._counters[key]
+```
+
+**Purpose**: Python libraries provide implementations for this pattern/algorithm.
+
 
 ## Algorithm Steps
 

@@ -150,7 +150,36 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis strategy/pattern is implemented in various advanced frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Kubernetes
+
+```yaml
+# Kubernetes - Microkernel-like Architecture
+# Core API server (kernel) with pluggable components
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: system-config
+data:
+  scheduler: "default-scheduler"
+  kube-proxy: "iptables"
+  cni: "calico"
+
+# Pluggable components as separate pods
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: custom-scheduler
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - name: scheduler
+        image: custom-scheduler:latest
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and cluster management.
+
 
 ## Algorithm Steps
 

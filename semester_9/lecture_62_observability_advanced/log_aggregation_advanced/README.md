@@ -167,6 +167,31 @@ data:
 
 **Purpose**: Kubernetes uses this for container orchestration and service management.
 
+### Prometheus
+
+```python
+# Prometheus - Metrics Collection
+from prometheus_client import Counter, Histogram, start_http_server
+import time
+
+# Define metrics
+request_count = Counter('http_requests_total', 'Total HTTP requests')
+request_duration = Histogram('http_request_duration_seconds', 'HTTP request duration')
+
+# Usage
+@request_duration.time()
+def handle_request():
+    request_count.inc()
+    # Your request handling logic
+    time.sleep(0.1)
+
+# Start metrics server
+start_http_server(8000)
+```
+
+**Purpose**: Prometheus collects and stores metrics for monitoring.
+
+
 ### Docker
 
 ```dockerfile

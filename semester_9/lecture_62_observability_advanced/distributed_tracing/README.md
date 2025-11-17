@@ -165,6 +165,30 @@ with tracer.start_as_current_span("operation"):
 
 **Purpose**: Python libraries use this technique for production implementations.
 
+### Kubernetes
+
+```yaml
+# Kubernetes - Distributed Tracing with Jaeger
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-with-tracing
+spec:
+  template:
+    spec:
+      containers:
+      - name: app
+        image: myapp:latest
+        env:
+        - name: JAEGER_AGENT_HOST
+          value: jaeger-agent
+        - name: JAEGER_AGENT_PORT
+          value: "6831"
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and cluster management.
+
+
 ### Java / Spring Cloud
 
 ```java

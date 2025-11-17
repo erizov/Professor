@@ -150,7 +150,72 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis altechniqueattern is implemented in various advanced frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Kubernetes
+
+```yaml
+# Kubernetes - Raft Consensus (etcd)
+# etcd uses Raft for consensus
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: etcd-config
+data:
+  etcd.conf: |
+    name: etcd-0
+    initial-cluster: etcd-0=http://etcd-0:2380,etcd-1=http://etcd-1:2380,etcd-2=http://etcd-2:2380
+    initial-cluster-state: new
+    initial-cluster-token: etcd-cluster-1
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and cluster management.
+
+### Python
+
+```python
+# Python - Raft Consensus Implementation
+class RaftNode:
+    def __init__(self, node_id: int, peers: List[int]):
+        self.node_id = node_id
+        self.peers = peers
+        self.state = "follower"
+        self.current_term = 0
+        self.voted_for = None
+        self.log = []
+    
+    def request_vote(self, term: int, candidate_id: int):
+        if term > self.current_term:
+            self.current_term = term
+            self.voted_for = candidate_id
+            return True
+        return False
+```
+
+**Purpose**: Python libraries provide implementations for this pattern/algorithm.
+
+
+### Python
+
+```python
+# Python - Raft Consensus Implementation
+class RaftNode:
+    def __init__(self, node_id: int, peers: List[int]):
+        self.node_id = node_id
+        self.peers = peers
+        self.state = "follower"
+        self.current_term = 0
+        self.voted_for = None
+        self.log = []
+    
+    def request_vote(self, term: int, candidate_id: int):
+        if term > self.current_term:
+            self.current_term = term
+            self.voted_for = candidate_id
+            return True
+        return False
+```
+
+**Purpose**: Python libraries provide implementations for this pattern/algorithm.
+
 
 ## Algorithm Steps
 

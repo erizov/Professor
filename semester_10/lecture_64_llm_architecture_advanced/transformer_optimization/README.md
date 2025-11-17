@@ -170,6 +170,56 @@ outputs = model(**inputs)
 
 ```python
 # PyTorch - Transformer Architecture
+import torch
+import torch.nn as nn
+from torch.nn import TransformerEncoder, TransformerEncoderLayer
+
+class TransformerModel(nn.Module):
+    def __init__(self, vocab_size, d_model, nhead, num_layers):
+        super().__init__()
+        self.embedding = nn.Embedding(vocab_size, d_model)
+        encoder_layers = TransformerEncoderLayer(d_model, nhead)
+        self.transformer = TransformerEncoder(encoder_layers, num_layers)
+        self.fc = nn.Linear(d_model, vocab_size)
+    
+    def forward(self, src):
+        src = self.embedding(src)
+        output = self.transformer(src)
+        return self.fc(output)
+```
+
+**Purpose**: PyTorch provides deep learning capabilities for this algorithm.
+
+
+### PyTorch
+
+```python
+# PyTorch - Transformer Architecture
+import torch
+import torch.nn as nn
+from torch.nn import TransformerEncoder, TransformerEncoderLayer
+
+class TransformerModel(nn.Module):
+    def __init__(self, vocab_size, d_model, nhead, num_layers):
+        super().__init__()
+        self.embedding = nn.Embedding(vocab_size, d_model)
+        encoder_layers = TransformerEncoderLayer(d_model, nhead)
+        self.transformer = TransformerEncoder(encoder_layers, num_layers)
+        self.fc = nn.Linear(d_model, vocab_size)
+    
+    def forward(self, src):
+        src = self.embedding(src)
+        output = self.transformer(src)
+        return self.fc(output)
+```
+
+**Purpose**: PyTorch provides deep learning capabilities for this algorithm.
+
+
+### PyTorch
+
+```python
+# PyTorch - Transformer Architecture
 import torch.nn as nn
 from torch.nn import Transformer
 

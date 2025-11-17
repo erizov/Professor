@@ -137,6 +137,31 @@ public class GraphExample {
 
 **Purpose**: Java standard library uses this algorithm for core data structure operations.
 
+### PostgreSQL
+
+```sql
+-- PostgreSQL - Query Optimization
+-- Create indexes
+CREATE INDEX idx_orders_customer_id ON orders(customer_id);
+CREATE INDEX idx_orders_created_at ON orders(created_at);
+
+-- Analyze query plan
+EXPLAIN ANALYZE
+SELECT o.*, c.name
+FROM orders o
+JOIN customers c ON o.customer_id = c.id
+WHERE o.created_at > '2024-01-01'
+ORDER BY o.total DESC
+LIMIT 10;
+
+-- Use covering index
+CREATE INDEX idx_covering ON orders(customer_id, created_at, total)
+INCLUDE (id, status);
+```
+
+**Purpose**: PostgreSQL database uses this for data management and optimization.
+
+
 ### Python Standard Library
 
 ```python

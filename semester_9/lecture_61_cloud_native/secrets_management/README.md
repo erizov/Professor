@@ -150,7 +150,26 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis strategy/pattern is implemented in various advanced frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Kubernetes
+
+```yaml
+# Kubernetes - Service Mesh with Linkerd
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+  annotations:
+    linkerd.io/inject: enabled
+spec:
+  selector:
+    app: my-app
+  ports:
+  - port: 80
+    targetPort: 8080
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and cluster management.
+
 
 ## Algorithm Steps
 

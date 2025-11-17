@@ -150,7 +150,27 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis strategy/pattern is implemented in various advanced frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Kubernetes
+
+```yaml
+# Kubernetes - Container Runtime Interface (CRI)
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-pod
+spec:
+  runtimeClassName: runc
+  containers:
+  - name: app
+    image: myapp:latest
+    resources:
+      requests:
+        memory: "128Mi"
+        cpu: "100m"
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and cluster management.
+
 
 ## Algorithm Steps
 

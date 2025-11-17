@@ -150,7 +150,86 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis strategy/pattern is implemented in various advanced frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Apache Kafka
+
+```python
+# Apache Kafka - Stream Processing
+from kafka import KafkaConsumer, KafkaProducer
+import json
+
+# Consumer
+consumer = KafkaConsumer(
+    'input-topic',
+    bootstrap_servers=['localhost:9092'],
+    value_deserializer=lambda m: json.loads(m.decode('utf-8'))
+)
+
+# Producer
+producer = KafkaProducer(
+    bootstrap_servers=['localhost:9092'],
+    value_serializer=lambda v: json.dumps(v).encode('utf-8')
+)
+
+# Stream processing
+for message in consumer:
+    data = message.value
+    # Process
+    result = process_data(data)
+    # Produce to output topic
+    producer.send('output-topic', result)
+```
+
+**Purpose**: Apache Kafka enables stream processing and event-driven architectures.
+
+### Kubernetes
+
+```yaml
+# Kubernetes - Kafka Streams
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kafka-streams-app
+spec:
+  replicas: 3
+  template:
+    spec:
+      containers:
+      - name: streams
+        image: kafka-streams:latest
+        env:
+        - name: KAFKA_BOOTSTRAP_SERVERS
+          value: "kafka:9092"
+        - name: APPLICATION_ID
+          value: "streams-app"
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and cluster management.
+
+
+### Kubernetes
+
+```yaml
+# Kubernetes - Kafka Streams
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kafka-streams-app
+spec:
+  replicas: 3
+  template:
+    spec:
+      containers:
+      - name: streams
+        image: kafka-streams:latest
+        env:
+        - name: KAFKA_BOOTSTRAP_SERVERS
+          value: "kafka:9092"
+        - name: APPLICATION_ID
+          value: "streams-app"
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and cluster management.
+
 
 ## Algorithm Steps
 

@@ -149,7 +149,71 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis atechniquepattern is implemented in various advanced frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Prometheus
+
+```python
+# Prometheus - Metrics Collection
+from prometheus_client import Counter, Histogram, start_http_server
+import time
+
+# Define metrics
+request_count = Counter('http_requests_total', 'Total HTTP requests')
+request_duration = Histogram('http_request_duration_seconds', 'HTTP request duration')
+
+# Usage
+@request_duration.time()
+def handle_request():
+    request_count.inc()
+    # Your request handling logic
+    time.sleep(0.1)
+
+# Start metrics server
+start_http_server(8000)
+```
+
+**Purpose**: Prometheus collects and stores metrics for monitoring.
+
+### Kubernetes
+
+```yaml
+# Kubernetes - Prometheus ServiceMonitor
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: app-metrics
+spec:
+  selector:
+    matchLabels:
+      app: my-app
+  endpoints:
+  - port: metrics
+    interval: 30s
+    path: /metrics
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and cluster management.
+
+
+### Kubernetes
+
+```yaml
+# Kubernetes - Prometheus ServiceMonitor
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: app-metrics
+spec:
+  selector:
+    matchLabels:
+      app: my-app
+  endpoints:
+  - port: metrics
+    interval: 30s
+    path: /metrics
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and cluster management.
+
 
 ## Algorithm Steps
 

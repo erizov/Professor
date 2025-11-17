@@ -150,7 +150,32 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis altechniqueattern is implemented in various advanced frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Python
+
+```python
+# Python - Vector Clocks
+from typing import Dict
+
+class VectorClock:
+    def __init__(self, node_id: str):
+        self.node_id = node_id
+        self.clock: Dict[str, int] = {node_id: 0}
+    
+    def tick(self):
+        self.clock[self.node_id] += 1
+    
+    def update(self, other_clock: Dict[str, int]):
+        for node, time in other_clock.items():
+            self.clock[node] = max(self.clock.get(node, 0), time)
+        self.tick()
+    
+    def happens_before(self, other: 'VectorClock') -> bool:
+        return all(self.clock.get(k, 0) <= other.clock.get(k, 0) 
+                  for k in set(self.clock.keys()) | set(other.clock.keys()))
+```
+
+**Purpose**: Python libraries provide implementations for this pattern/algorithm.
+
 
 ## Algorithm Steps
 

@@ -150,7 +150,90 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis strategy/pattern is implemented in various advanced frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### AWS Lambda
+
+```python
+# AWS Lambda - Serverless Function
+import json
+import boto3
+
+def lambda_handler(event, context):
+    """
+    AWS Lambda handler function
+    """
+    # Process event
+    records = event.get('Records', [])
+    
+    for record in records:
+        # Process each record
+        data = json.loads(record['body'])
+        process_data(data)
+    
+    return {
+        'statusCode': 200,
+        'body': json.dumps('Success')
+    }
+
+def process_data(data):
+    # Your processing logic
+    pass
+```
+
+**Purpose**: AWS Lambda provides serverless execution for this pattern.
+
+### Kubernetes
+
+```yaml
+# Kubernetes - Knative Serverless
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: serverless-app
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/minScale: "1"
+        autoscaling.knative.dev/maxScale: "10"
+    spec:
+      containers:
+      - image: myapp:latest
+        ports:
+        - containerPort: 8080
+        env:
+        - name: ENV_VAR
+          value: "value"
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and cluster management.
+
+
+### Kubernetes
+
+```yaml
+# Kubernetes - Knative Serverless
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: serverless-app
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/minScale: "1"
+        autoscaling.knative.dev/maxScale: "10"
+    spec:
+      containers:
+      - image: myapp:latest
+        ports:
+        - containerPort: 8080
+        env:
+        - name: ENV_VAR
+          value: "value"
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and cluster management.
+
 
 ## Algorithm Steps
 

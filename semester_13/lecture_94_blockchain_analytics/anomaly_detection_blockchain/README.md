@@ -174,6 +174,21 @@ contract SimpleStorage {
 
 **Purpose**: Blockchain platforms use this for smart contract development.
 
+### Hugging Face
+
+```python
+# Hugging Face - LLM Architecture
+from transformers import AutoModel, AutoTokenizer
+
+model = AutoModel.from_pretrained("bert-base-uncased")
+tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+
+inputs = tokenizer("Hello world", return_tensors="pt")
+outputs = model(**inputs)
+```
+
+**Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
+
 
 ## Algorithm Steps
 

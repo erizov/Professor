@@ -150,7 +150,81 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis strategy/pattern is implemented in various advanced frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Kubernetes
+
+```yaml
+# Kubernetes - FaaS with OpenFaaS
+apiVersion: openfaas.com/v1
+kind: Function
+metadata:
+  name: my-function
+spec:
+  name: my-function
+  image: my-function:latest
+  handler: handler
+  language: python3
+  fprocess: python3 index.py
+  environment:
+    write_debug: "true"
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and cluster management.
+
+### Python
+
+```python
+# Python - FaaS Handler
+def handler(event, context):
+    """
+    FaaS function handler
+    """
+    # Extract data from event
+    data = event.get('data', {})
+    
+    # Process
+    result = process(data)
+    
+    # Return response
+    return {
+        'statusCode': 200,
+        'body': result
+    }
+
+def process(data):
+    # Your processing logic
+    return {"processed": True}
+```
+
+**Purpose**: Python libraries provide implementations for this pattern/algorithm.
+
+
+### Python
+
+```python
+# Python - FaaS Handler
+def handler(event, context):
+    """
+    FaaS function handler
+    """
+    # Extract data from event
+    data = event.get('data', {})
+    
+    # Process
+    result = process(data)
+    
+    # Return response
+    return {
+        'statusCode': 200,
+        'body': result
+    }
+
+def process(data):
+    # Your processing logic
+    return {"processed": True}
+```
+
+**Purpose**: Python libraries provide implementations for this pattern/algorithm.
+
 
 ## Algorithm Steps
 

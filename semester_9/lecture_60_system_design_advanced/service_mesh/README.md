@@ -150,7 +150,90 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis strategy/pattern is implemented in various advanced frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Istio
+
+```yaml
+# Istio - Service Mesh
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: reviews
+spec:
+  hosts:
+  - reviews
+  http:
+  - match:
+    - headers:
+        end-user:
+          exact: jason
+    route:
+    - destination:
+        host: reviews
+        subset: v2
+  - route:
+    - destination:
+        host: reviews
+        subset: v1
+
+---
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: reviews
+spec:
+  host: reviews
+  subsets:
+  - name: v1
+    labels:
+      version: v1
+  - name: v2
+    labels:
+      version: v2
+```
+
+**Purpose**: Istio service mesh uses this for traffic management and observability.
+
+### Kubernetes
+
+```yaml
+# Kubernetes - Service Mesh with Linkerd
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+  annotations:
+    linkerd.io/inject: enabled
+spec:
+  selector:
+    app: my-app
+  ports:
+  - port: 80
+    targetPort: 8080
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and cluster management.
+
+
+### Kubernetes
+
+```yaml
+# Kubernetes - Service Mesh with Linkerd
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+  annotations:
+    linkerd.io/inject: enabled
+spec:
+  selector:
+    app: my-app
+  ports:
+  - port: 80
+    targetPort: 8080
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and cluster management.
+
 
 ## Algorithm Steps
 
