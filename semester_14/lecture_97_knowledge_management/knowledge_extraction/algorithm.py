@@ -29,6 +29,7 @@ def knowledge_extraction(*args, **kwargs) -> Any:
     Space Complexity: See README.md
     """
     
+
 def knowledge_extraction(*args, **kwargs) -> Any:
     """
     Knowledge Extraction implementation.
@@ -44,6 +45,32 @@ def knowledge_extraction(*args, **kwargs) -> Any:
     logger.info(f"Executing knowledge_extraction")
     # TODO: Add specific implementation logic
     return None
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Knowledge Extraction")
+    print("=" * 70)
+    
+    # Example usage
+    result = knowledge_extraction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Knowledge Extraction")
+    print("=" * 70)
+    
+    # Example usage
+    result = knowledge_extraction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
 
 def main():
     """Demonstration."""
