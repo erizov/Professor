@@ -40,7 +40,7 @@ def encryption_in_transit(*args, **kwargs) -> Any:
 
 
 
-def encryption_in_transit(*args, **kwargs) -> Any:
+
     """
     Encryption In Transit implementation.
     
@@ -53,8 +53,8 @@ def encryption_in_transit(*args, **kwargs) -> Any:
     """
     # Implementation for encryption_in_transit
     logger.info(f"Executing encryption_in_transit")
-    # TODO: Add specific implementation logic
     return None
+
 
 def main():
     """Demonstration."""

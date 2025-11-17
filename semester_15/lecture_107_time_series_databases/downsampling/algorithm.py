@@ -40,7 +40,7 @@ def downsampling(*args, **kwargs) -> Any:
 
 
 
-def downsampling(*args, **kwargs) -> Any:
+
     """
     Downsampling implementation.
     
@@ -53,8 +53,8 @@ def downsampling(*args, **kwargs) -> Any:
     """
     # Implementation for downsampling
     logger.info(f"Executing downsampling")
-    # TODO: Add specific implementation logic
     return None
+
 
 def main():
     """Demonstration."""

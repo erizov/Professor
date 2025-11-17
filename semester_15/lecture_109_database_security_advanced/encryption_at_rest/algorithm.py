@@ -40,7 +40,7 @@ def encryption_at_rest(*args, **kwargs) -> Any:
 
 
 
-def encryption_at_rest(*args, **kwargs) -> Any:
+
     """
     Encryption At Rest implementation.
     
@@ -53,8 +53,8 @@ def encryption_at_rest(*args, **kwargs) -> Any:
     """
     # Implementation for encryption_at_rest
     logger.info(f"Executing encryption_at_rest")
-    # TODO: Add specific implementation logic
     return None
+
 
 def main():
     """Demonstration."""
