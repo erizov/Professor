@@ -41,6 +41,7 @@ def api_gateway(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Api Gateway implementation.
     

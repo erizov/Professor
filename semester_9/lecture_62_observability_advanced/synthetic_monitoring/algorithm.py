@@ -41,6 +41,7 @@ def synthetic_monitoring(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Synthetic Monitoring implementation.
     
