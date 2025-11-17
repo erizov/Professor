@@ -146,7 +146,25 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis algorithm/pattern is implemented in various frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Kubernetes
+
+```yaml
+# Kubernetes - Raft Consensus (etcd)
+# etcd uses Raft for consensus
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: etcd-config
+data:
+  etcd.conf: |
+    name: etcd-0
+    initial-cluster: etcd-0=http://etcd-0:2380,etcd-1=http://etcd-1:2380,etcd-2=http://etcd-2:2380
+    initial-cluster-state: new
+    initial-cluster-token: etcd-cluster-1
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and cluster management.
+
 
 ## Algorithm Steps
 

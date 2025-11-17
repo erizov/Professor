@@ -129,7 +129,33 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis altechniqueattern is implemented in various frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Hugging Face
+
+```python
+# Hugging Face - Fine-tuning LLM
+from transformers import Trainer, TrainingArguments, AutoModelForSequenceClassification
+
+model = AutoModelForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=2)
+
+training_args = TrainingArguments(
+    output_dir="./results",
+    num_train_epochs=3,
+    per_device_train_batch_size=16,
+    learning_rate=2e-5,
+)
+
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    train_dataset=train_dataset,
+    eval_dataset=eval_dataset,
+)
+
+trainer.train()
+```
+
+**Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
+
 
 ## Algorithm Steps
 

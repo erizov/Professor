@@ -138,7 +138,49 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis aapproachpattern is implemented in various frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Docker
+
+```dockerfile
+# Docker - Container Runtime
+FROM ubuntu:20.04
+RUN apt-get update && apt-get install -y python3
+COPY app.py /app/
+WORKDIR /app
+CMD ["python3", "app.py"]
+
+# docker-compose.yml
+version: '3.8'
+services:
+  app:
+    build: .
+    runtime: runc
+    ports:
+      - "8080:8080"
+```
+
+**Purpose**: Docker uses this for containerization and runtime management.
+
+### Kubernetes
+
+```yaml
+# Kubernetes - Container Runtime Interface (CRI)
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-pod
+spec:
+  runtimeClassName: runc
+  containers:
+  - name: app
+    image: myapp:latest
+    resources:
+      requests:
+        memory: "128Mi"
+        cpu: "100m"
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and cluster management.
+
 
 ## Algorithm Steps
 

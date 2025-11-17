@@ -155,6 +155,26 @@ public class Service {
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
 
+### Kubernetes
+
+```yaml
+# Kubernetes - Raft Consensus (etcd)
+# etcd uses Raft for consensus
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: etcd-config
+data:
+  etcd.conf: |
+    name: etcd-0
+    initial-cluster: etcd-0=http://etcd-0:2380,etcd-1=http://etcd-1:2380,etcd-2=http://etcd-2:2380
+    initial-cluster-state: new
+    initial-cluster-token: etcd-cluster-1
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and cluster management.
+
+
 ## Algorithm Steps
 
 1. **Initialization**: Set up initial state and data structures

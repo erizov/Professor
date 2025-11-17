@@ -156,6 +156,21 @@ CREATE INDEX idx_orders_customer_id ON orders(customer_id);
 
 **Purpose**: Database systems use this for data management and optimization.
 
+### Hugging Face
+
+```python
+# Hugging Face - LLM Architecture
+from transformers import AutoModel, AutoTokenizer
+
+model = AutoModel.from_pretrained("bert-base-uncased")
+tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+
+inputs = tokenizer("Hello world", return_tensors="pt")
+outputs = model(**inputs)
+```
+
+**Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
+
 
 ## Algorithm Steps
 
