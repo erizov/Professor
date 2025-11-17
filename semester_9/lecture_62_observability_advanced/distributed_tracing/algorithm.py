@@ -29,6 +29,7 @@ def distributed_tracing(*args, **kwargs) -> Any:
     Space Complexity: See README.md
     """
     
+
 def distributed_tracing(*args, **kwargs) -> Any:
     """
     Distributed Tracing implementation.
@@ -44,6 +45,32 @@ def distributed_tracing(*args, **kwargs) -> Any:
     logger.info(f"Executing distributed_tracing")
     # TODO: Add specific implementation logic
     return None
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Distributed Tracing")
+    print("=" * 70)
+    
+    # Example usage
+    result = distributed_tracing()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Distributed Tracing")
+    print("=" * 70)
+    
+    # Example usage
+    result = distributed_tracing()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
 
 def main():
     """Demonstration."""

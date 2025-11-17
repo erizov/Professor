@@ -29,6 +29,7 @@ def function_as_service(*args, **kwargs) -> Any:
     Space Complexity: See README.md
     """
     
+
 def function_as_service(*args, **kwargs) -> Any:
     """
     Function As Service implementation.
@@ -44,6 +45,32 @@ def function_as_service(*args, **kwargs) -> Any:
     logger.info(f"Executing function_as_service")
     # TODO: Add specific implementation logic
     return None
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Function As Service")
+    print("=" * 70)
+    
+    # Example usage
+    result = function_as_service()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Function As Service")
+    print("=" * 70)
+    
+    # Example usage
+    result = function_as_service()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
 
 def main():
     """Demonstration."""
