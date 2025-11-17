@@ -41,6 +41,7 @@ def csp_model(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Csp Model implementation.
     
