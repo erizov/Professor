@@ -4,11 +4,15 @@
 Model Registry implementation.
 """
 
-from typing import List, Optional, Any
+from typing import List, Optional, Any, Dict
 from framework.logging_utils import get_logger
-import logging
+from framework.performance_timer import PerformanceTimer
+import sys
+from pathlib import Path
 
+sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
+
 
 def model_registry(*args, **kwargs) -> Any:
     """
@@ -20,21 +24,25 @@ def model_registry(*args, **kwargs) -> Any:
         
     Returns:
         Result of the algorithm
+        
+    Time Complexity: See README.md
+    Space Complexity: See README.md
     """
-    # TODO: Implement model_registry
     logger.info(f"Executing model_registry")
+    # TODO: Implement model_registry based on README.md
     return None
+
 
 def main():
     """Demonstration."""
     print("=" * 70)
-    print(f"Model Registry")
+    print("Model Registry")
     print("=" * 70)
     
     # Example usage
-    example_data = [1, 2, 3, 4, 5]
-    result = model_registry(example_data)
+    result = model_registry()
     print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
 
 
 if __name__ == "__main__":

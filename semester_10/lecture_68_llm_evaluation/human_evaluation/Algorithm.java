@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Human Evaluation implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Human Evaluation.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object human_evaluation(Object... args) {
-        // TODO: Implement human_evaluation
-        System.out.println("Executing human_evaluation");
+        logger.info("Executing human_evaluation");
+        // TODO: Implement human_evaluation based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Human Evaluation");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = human_evaluation(1, 2, 3, 4, 5);
+        Object result = human_evaluation();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

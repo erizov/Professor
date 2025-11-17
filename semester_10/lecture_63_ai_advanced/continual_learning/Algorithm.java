@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Continual Learning implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Continual Learning.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object continual_learning(Object... args) {
-        // TODO: Implement continual_learning
-        System.out.println("Executing continual_learning");
+        logger.info("Executing continual_learning");
+        // TODO: Implement continual_learning based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Continual Learning");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = continual_learning(1, 2, 3, 4, 5);
+        Object result = continual_learning();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

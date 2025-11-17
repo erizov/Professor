@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Tendermint implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Tendermint.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object tendermint(Object... args) {
-        // TODO: Implement tendermint
-        System.out.println("Executing tendermint");
+        logger.info("Executing tendermint");
+        // TODO: Implement tendermint based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Tendermint");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = tendermint(1, 2, 3, 4, 5);
+        Object result = tendermint();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

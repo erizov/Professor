@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Container Runtimes implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Container Runtimes.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object container_runtimes(Object... args) {
-        // TODO: Implement container_runtimes
-        System.out.println("Executing container_runtimes");
+        logger.info("Executing container_runtimes");
+        // TODO: Implement container_runtimes based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Container Runtimes");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = container_runtimes(1, 2, 3, 4, 5);
+        Object result = container_runtimes();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Zero Knowledge Proofs implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Zero Knowledge Proofs.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object zero_knowledge_proofs(Object... args) {
-        // TODO: Implement zero_knowledge_proofs
-        System.out.println("Executing zero_knowledge_proofs");
+        logger.info("Executing zero_knowledge_proofs");
+        // TODO: Implement zero_knowledge_proofs based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Zero Knowledge Proofs");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = zero_knowledge_proofs(1, 2, 3, 4, 5);
+        Object result = zero_knowledge_proofs();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Content Curation implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Content Curation.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object content_curation(Object... args) {
-        // TODO: Implement content_curation
-        System.out.println("Executing content_curation");
+        logger.info("Executing content_curation");
+        // TODO: Implement content_curation based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Content Curation");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = content_curation(1, 2, 3, 4, 5);
+        Object result = content_curation();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

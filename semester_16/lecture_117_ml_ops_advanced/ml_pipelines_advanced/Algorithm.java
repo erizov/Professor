@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Ml Pipelines Advanced implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Ml Pipelines Advanced.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object ml_pipelines_advanced(Object... args) {
-        // TODO: Implement ml_pipelines_advanced
-        System.out.println("Executing ml_pipelines_advanced");
+        logger.info("Executing ml_pipelines_advanced");
+        // TODO: Implement ml_pipelines_advanced based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Ml Pipelines Advanced");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = ml_pipelines_advanced(1, 2, 3, 4, 5);
+        Object result = ml_pipelines_advanced();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Interpretability implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Interpretability.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object interpretability(Object... args) {
-        // TODO: Implement interpretability
-        System.out.println("Executing interpretability");
+        logger.info("Executing interpretability");
+        // TODO: Implement interpretability based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Interpretability");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = interpretability(1, 2, 3, 4, 5);
+        Object result = interpretability();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

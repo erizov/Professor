@@ -164,3 +164,251 @@ spec:
 
 **Purpose**: Kubernetes uses this pattern for container orchestration, service discovery, and resource management.
 
+
+
+### Spring Framework
+
+### .NET Framework
+
+### Docker
+
+```yaml
+# Docker Swarm - Load Balancing
+docker service create \
+  --name backend \
+  --replicas 3 \
+  --publish 80:8080 \
+  backend:latest
+
+# Docker Swarm automatically load balances across replicas
+# Access via: http://localhost (load balanced across 3 containers)
+```
+
+**Purpose**: Docker uses this pattern for container orchestration and service management.
+
+### Kubernetes
+
+```yaml
+# Kubernetes - Load Balancing (Service)
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+spec:
+  selector:
+    app: backend
+  ports:
+  - port: 80
+    targetPort: 8080
+  type: LoadBalancer
+  # Kubernetes automatically load balances across pods
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+spec:
+  replicas: 3  # 3 instances for load balancing
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        image: backend:latest
+        ports:
+        - containerPort: 8080
+```
+
+**Purpose**: Kubernetes implements this pattern for pod management, service discovery, and orchestration.
+
+
+
+### Spring Framework
+
+### .NET Framework
+
+### Docker
+
+```yaml
+# Docker Swarm - Load Balancing
+docker service create \
+  --name backend \
+  --replicas 3 \
+  --publish 80:8080 \
+  backend:latest
+
+# Docker Swarm automatically load balances across replicas
+# Access via: http://localhost (load balanced across 3 containers)
+```
+
+**Purpose**: Docker uses this pattern for container orchestration and service management.
+
+### Kubernetes
+
+```yaml
+# Kubernetes - Load Balancing (Service)
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+spec:
+  selector:
+    app: backend
+  ports:
+  - port: 80
+    targetPort: 8080
+  type: LoadBalancer
+  # Kubernetes automatically load balances across pods
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+spec:
+  replicas: 3  # 3 instances for load balancing
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        image: backend:latest
+        ports:
+        - containerPort: 8080
+```
+
+**Purpose**: Kubernetes implements this pattern for pod management, service discovery, and orchestration.
+
+
+
+### Spring Framework
+
+### .NET Framework
+
+### Docker
+
+```yaml
+# Docker Swarm - Load Balancing
+docker service create \
+  --name backend \
+  --replicas 3 \
+  --publish 80:8080 \
+  backend:latest
+
+# Docker Swarm automatically load balances across replicas
+# Access via: http://localhost (load balanced across 3 containers)
+```
+
+**Purpose**: Docker uses this pattern for container orchestration and service management.
+
+### Kubernetes
+
+```yaml
+# Kubernetes - Load Balancing (Service)
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+spec:
+  selector:
+    app: backend
+  ports:
+  - port: 80
+    targetPort: 8080
+  type: LoadBalancer
+  # Kubernetes automatically load balances across pods
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+spec:
+  replicas: 3  # 3 instances for load balancing
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        image: backend:latest
+        ports:
+        - containerPort: 8080
+```
+
+**Purpose**: Kubernetes implements this pattern for pod management, service discovery, and orchestration.
+
+
+
+### Spring Framework
+
+### .NET Framework
+
+### Docker
+
+```yaml
+# Docker Swarm - Load Balancing
+docker service create \
+  --name backend \
+  --replicas 3 \
+  --publish 80:8080 \
+  backend:latest
+
+# Docker Swarm automatically load balances across replicas
+# Access via: http://localhost (load balanced across 3 containers)
+```
+
+**Purpose**: Docker uses this pattern for container orchestration and service management.
+
+### Kubernetes
+
+```yaml
+# Kubernetes - Load Balancing (Service)
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+spec:
+  selector:
+    app: backend
+  ports:
+  - port: 80
+    targetPort: 8080
+  type: LoadBalancer
+  # Kubernetes automatically load balances across pods
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+spec:
+  replicas: 3  # 3 instances for load balancing
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        image: backend:latest
+        ports:
+        - containerPort: 8080
+```
+
+**Purpose**: Kubernetes implements this pattern for pod management, service discovery, and orchestration.
+

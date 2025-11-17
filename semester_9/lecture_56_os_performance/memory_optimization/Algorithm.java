@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Memory Optimization implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Memory Optimization.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object memory_optimization(Object... args) {
-        // TODO: Implement memory_optimization
-        System.out.println("Executing memory_optimization");
+        logger.info("Executing memory_optimization");
+        // TODO: Implement memory_optimization based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Memory Optimization");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = memory_optimization(1, 2, 3, 4, 5);
+        Object result = memory_optimization();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Multi Stage Pipelines implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Multi Stage Pipelines.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object multi_stage_pipelines(Object... args) {
-        // TODO: Implement multi_stage_pipelines
-        System.out.println("Executing multi_stage_pipelines");
+        logger.info("Executing multi_stage_pipelines");
+        // TODO: Implement multi_stage_pipelines based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Multi Stage Pipelines");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = multi_stage_pipelines(1, 2, 3, 4, 5);
+        Object result = multi_stage_pipelines();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

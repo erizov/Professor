@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Continuous Batching implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Continuous Batching.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object continuous_batching(Object... args) {
-        // TODO: Implement continuous_batching
-        System.out.println("Executing continuous_batching");
+        logger.info("Executing continuous_batching");
+        // TODO: Implement continuous_batching based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Continuous Batching");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = continuous_batching(1, 2, 3, 4, 5);
+        Object result = continuous_batching();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

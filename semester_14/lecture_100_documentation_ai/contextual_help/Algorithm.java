@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Contextual Help implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Contextual Help.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object contextual_help(Object... args) {
-        // TODO: Implement contextual_help
-        System.out.println("Executing contextual_help");
+        logger.info("Executing contextual_help");
+        // TODO: Implement contextual_help based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Contextual Help");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = contextual_help(1, 2, 3, 4, 5);
+        Object result = contextual_help();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Flow Analysis implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Flow Analysis.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object flow_analysis(Object... args) {
-        // TODO: Implement flow_analysis
-        System.out.println("Executing flow_analysis");
+        logger.info("Executing flow_analysis");
+        // TODO: Implement flow_analysis based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Flow Analysis");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = flow_analysis(1, 2, 3, 4, 5);
+        Object result = flow_analysis();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

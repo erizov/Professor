@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Raft Blockchain implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Raft Blockchain.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object raft_blockchain(Object... args) {
-        // TODO: Implement raft_blockchain
-        System.out.println("Executing raft_blockchain");
+        logger.info("Executing raft_blockchain");
+        // TODO: Implement raft_blockchain based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Raft Blockchain");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = raft_blockchain(1, 2, 3, 4, 5);
+        Object result = raft_blockchain();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Parallel Reduction implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Parallel Reduction.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object parallel_reduction(Object... args) {
-        // TODO: Implement parallel_reduction
-        System.out.println("Executing parallel_reduction");
+        logger.info("Executing parallel_reduction");
+        // TODO: Implement parallel_reduction based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Parallel Reduction");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = parallel_reduction(1, 2, 3, 4, 5);
+        Object result = parallel_reduction();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

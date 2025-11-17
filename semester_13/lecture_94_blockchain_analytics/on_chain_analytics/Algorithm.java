@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * On Chain Analytics implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * On Chain Analytics.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object on_chain_analytics(Object... args) {
-        // TODO: Implement on_chain_analytics
-        System.out.println("Executing on_chain_analytics");
+        logger.info("Executing on_chain_analytics");
+        // TODO: Implement on_chain_analytics based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("On Chain Analytics");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = on_chain_analytics(1, 2, 3, 4, 5);
+        Object result = on_chain_analytics();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

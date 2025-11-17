@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Incident Management implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Incident Management.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object incident_management(Object... args) {
-        // TODO: Implement incident_management
-        System.out.println("Executing incident_management");
+        logger.info("Executing incident_management");
+        // TODO: Implement incident_management based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Incident Management");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = incident_management(1, 2, 3, 4, 5);
+        Object result = incident_management();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

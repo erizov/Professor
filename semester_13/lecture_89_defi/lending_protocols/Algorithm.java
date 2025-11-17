@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Lending Protocols implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Lending Protocols.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object lending_protocols(Object... args) {
-        // TODO: Implement lending_protocols
-        System.out.println("Executing lending_protocols");
+        logger.info("Executing lending_protocols");
+        // TODO: Implement lending_protocols based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Lending Protocols");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = lending_protocols(1, 2, 3, 4, 5);
+        Object result = lending_protocols();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

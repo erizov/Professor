@@ -1,27 +1,43 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Dfs implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
-    /**
-     * Dfs.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object dfs(Object... args) {
-        // TODO: Implement dfs
-        System.out.println("Executing dfs");
-        return null;
+public static List<Integer> dfs(Map<Integer, List<Integer>> graph, int start) {
+    List<Integer> visited = new ArrayList<>();
+    Stack<Integer> stack = new Stack<>();
+    Set<Integer> seen = new HashSet<>();
+    
+    stack.push(start);
+    seen.add(start);
+    
+    while (!stack.isEmpty()) {
+        int vertex = stack.pop();
+        visited.add(vertex);
+        
+        List<Integer> neighbors = graph.getOrDefault(vertex, new ArrayList<>());
+        for (int neighbor : neighbors) {
+            if (!seen.contains(neighbor)) {
+                seen.add(neighbor);
+                stack.push(neighbor);
+            }
+        }
     }
     
+    return visited;
+}
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
-        System.out.println("Dfs");
+        System.out.println("DFS");
         System.out.println("=".repeat(70));
         
         // Example usage
-        Object result = dfs(1, 2, 3, 4, 5);
-        System.out.println("Result: " + result);
+        // Add example calls based on function signature
+        System.out.println("See function implementation for usage examples");
     }
+
 }

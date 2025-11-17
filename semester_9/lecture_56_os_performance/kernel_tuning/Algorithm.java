@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Kernel Tuning implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Kernel Tuning.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object kernel_tuning(Object... args) {
-        // TODO: Implement kernel_tuning
-        System.out.println("Executing kernel_tuning");
+        logger.info("Executing kernel_tuning");
+        // TODO: Implement kernel_tuning based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Kernel Tuning");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = kernel_tuning(1, 2, 3, 4, 5);
+        Object result = kernel_tuning();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

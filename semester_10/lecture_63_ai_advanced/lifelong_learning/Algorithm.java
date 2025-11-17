@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Lifelong Learning implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Lifelong Learning.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object lifelong_learning(Object... args) {
-        // TODO: Implement lifelong_learning
-        System.out.println("Executing lifelong_learning");
+        logger.info("Executing lifelong_learning");
+        // TODO: Implement lifelong_learning based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Lifelong Learning");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = lifelong_learning(1, 2, 3, 4, 5);
+        Object result = lifelong_learning();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Ai Safety implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Ai Safety.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object ai_safety(Object... args) {
-        // TODO: Implement ai_safety
-        System.out.println("Executing ai_safety");
+        logger.info("Executing ai_safety");
+        // TODO: Implement ai_safety based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Ai Safety");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = ai_safety(1, 2, 3, 4, 5);
+        Object result = ai_safety();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

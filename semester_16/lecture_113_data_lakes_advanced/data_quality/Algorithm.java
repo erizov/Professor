@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Data Quality implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Data Quality.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object data_quality(Object... args) {
-        // TODO: Implement data_quality
-        System.out.println("Executing data_quality");
+        logger.info("Executing data_quality");
+        // TODO: Implement data_quality based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Data Quality");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = data_quality(1, 2, 3, 4, 5);
+        Object result = data_quality();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

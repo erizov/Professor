@@ -1,20 +1,31 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
- * Advanced implementation of Downsampling
+ * Downsampling implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
-     * Advanced Downsampling implementation.
+     * Downsampling.
      * 
      * @param args Variable arguments
      * @return Result of the algorithm
      */
     public static Object downsampling(Object... args) {
-        // TODO: Implement advanced downsampling
+        logger.info("Executing downsampling");
+        // TODO: Implement downsampling based on README.md
         return null;
     }
     
     public static void main(String[] args) {
-        System.out.println("Downsampling - Advanced Implementation");
+        System.out.println("=".repeat(70));
+        System.out.println("Downsampling");
+        System.out.println("=".repeat(70));
+        
+        Object result = downsampling();
+        System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

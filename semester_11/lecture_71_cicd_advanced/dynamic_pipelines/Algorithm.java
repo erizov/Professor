@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Dynamic Pipelines implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Dynamic Pipelines.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object dynamic_pipelines(Object... args) {
-        // TODO: Implement dynamic_pipelines
-        System.out.println("Executing dynamic_pipelines");
+        logger.info("Executing dynamic_pipelines");
+        // TODO: Implement dynamic_pipelines based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Dynamic Pipelines");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = dynamic_pipelines(1, 2, 3, 4, 5);
+        Object result = dynamic_pipelines();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

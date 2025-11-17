@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Threat Modeling implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Threat Modeling.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object threat_modeling(Object... args) {
-        // TODO: Implement threat_modeling
-        System.out.println("Executing threat_modeling");
+        logger.info("Executing threat_modeling");
+        // TODO: Implement threat_modeling based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Threat Modeling");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = threat_modeling(1, 2, 3, 4, 5);
+        Object result = threat_modeling();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

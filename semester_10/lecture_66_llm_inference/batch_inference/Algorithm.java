@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Batch Inference implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Batch Inference.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object batch_inference(Object... args) {
-        // TODO: Implement batch_inference
-        System.out.println("Executing batch_inference");
+        logger.info("Executing batch_inference");
+        // TODO: Implement batch_inference based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Batch Inference");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = batch_inference(1, 2, 3, 4, 5);
+        Object result = batch_inference();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

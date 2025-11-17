@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Speculative Decoding implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Speculative Decoding.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object speculative_decoding(Object... args) {
-        // TODO: Implement speculative_decoding
-        System.out.println("Executing speculative_decoding");
+        logger.info("Executing speculative_decoding");
+        // TODO: Implement speculative_decoding based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Speculative Decoding");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = speculative_decoding(1, 2, 3, 4, 5);
+        Object result = speculative_decoding();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

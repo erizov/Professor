@@ -4,11 +4,15 @@
 On Chain Analytics implementation.
 """
 
-from typing import List, Optional, Any
+from typing import List, Optional, Any, Dict
 from framework.logging_utils import get_logger
-import logging
+from framework.performance_timer import PerformanceTimer
+import sys
+from pathlib import Path
 
+sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
+
 
 def on_chain_analytics(*args, **kwargs) -> Any:
     """
@@ -20,21 +24,25 @@ def on_chain_analytics(*args, **kwargs) -> Any:
         
     Returns:
         Result of the algorithm
+        
+    Time Complexity: See README.md
+    Space Complexity: See README.md
     """
-    # TODO: Implement on_chain_analytics
     logger.info(f"Executing on_chain_analytics")
+    # TODO: Implement on_chain_analytics based on README.md
     return None
+
 
 def main():
     """Demonstration."""
     print("=" * 70)
-    print(f"On Chain Analytics")
+    print("On Chain Analytics")
     print("=" * 70)
     
     # Example usage
-    example_data = [1, 2, 3, 4, 5]
-    result = on_chain_analytics(example_data)
+    result = on_chain_analytics()
     print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
 
 
 if __name__ == "__main__":

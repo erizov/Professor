@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Multi Hop Rag implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Multi Hop Rag.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object multi_hop_rag(Object... args) {
-        // TODO: Implement multi_hop_rag
-        System.out.println("Executing multi_hop_rag");
+        logger.info("Executing multi_hop_rag");
+        // TODO: Implement multi_hop_rag based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Multi Hop Rag");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = multi_hop_rag(1, 2, 3, 4, 5);
+        Object result = multi_hop_rag();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

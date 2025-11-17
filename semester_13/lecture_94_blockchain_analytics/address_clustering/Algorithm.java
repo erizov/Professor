@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Address Clustering implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Address Clustering.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object address_clustering(Object... args) {
-        // TODO: Implement address_clustering
-        System.out.println("Executing address_clustering");
+        logger.info("Executing address_clustering");
+        // TODO: Implement address_clustering based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Address Clustering");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = address_clustering(1, 2, 3, 4, 5);
+        Object result = address_clustering();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

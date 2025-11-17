@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Security Testing implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Security Testing.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object security_testing(Object... args) {
-        // TODO: Implement security_testing
-        System.out.println("Executing security_testing");
+        logger.info("Executing security_testing");
+        // TODO: Implement security_testing based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Security Testing");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = security_testing(1, 2, 3, 4, 5);
+        Object result = security_testing();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

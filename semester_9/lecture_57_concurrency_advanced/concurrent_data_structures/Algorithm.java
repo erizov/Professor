@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Concurrent Data Structures implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Concurrent Data Structures.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object concurrent_data_structures(Object... args) {
-        // TODO: Implement concurrent_data_structures
-        System.out.println("Executing concurrent_data_structures");
+        logger.info("Executing concurrent_data_structures");
+        // TODO: Implement concurrent_data_structures based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Concurrent Data Structures");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = concurrent_data_structures(1, 2, 3, 4, 5);
+        Object result = concurrent_data_structures();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

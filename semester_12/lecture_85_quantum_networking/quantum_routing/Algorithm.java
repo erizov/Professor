@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Quantum Routing implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Quantum Routing.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object quantum_routing(Object... args) {
-        // TODO: Implement quantum_routing
-        System.out.println("Executing quantum_routing");
+        logger.info("Executing quantum_routing");
+        // TODO: Implement quantum_routing based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Quantum Routing");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = quantum_routing(1, 2, 3, 4, 5);
+        Object result = quantum_routing();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

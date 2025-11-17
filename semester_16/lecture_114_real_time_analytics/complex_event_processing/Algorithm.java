@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Complex Event Processing implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Complex Event Processing.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object complex_event_processing(Object... args) {
-        // TODO: Implement complex_event_processing
-        System.out.println("Executing complex_event_processing");
+        logger.info("Executing complex_event_processing");
+        // TODO: Implement complex_event_processing based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Complex Event Processing");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = complex_event_processing(1, 2, 3, 4, 5);
+        Object result = complex_event_processing();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

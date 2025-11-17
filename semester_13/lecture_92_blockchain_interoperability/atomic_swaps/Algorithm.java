@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Atomic Swaps implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Atomic Swaps.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object atomic_swaps(Object... args) {
-        // TODO: Implement atomic_swaps
-        System.out.println("Executing atomic_swaps");
+        logger.info("Executing atomic_swaps");
+        // TODO: Implement atomic_swaps based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Atomic Swaps");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = atomic_swaps(1, 2, 3, 4, 5);
+        Object result = atomic_swaps();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

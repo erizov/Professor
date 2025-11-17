@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Data Discovery implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Data Discovery.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object data_discovery(Object... args) {
-        // TODO: Implement data_discovery
-        System.out.println("Executing data_discovery");
+        logger.info("Executing data_discovery");
+        // TODO: Implement data_discovery based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Data Discovery");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = data_discovery(1, 2, 3, 4, 5);
+        Object result = data_discovery();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

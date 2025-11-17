@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Universal Protocols implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Universal Protocols.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object universal_protocols(Object... args) {
-        // TODO: Implement universal_protocols
-        System.out.println("Executing universal_protocols");
+        logger.info("Executing universal_protocols");
+        // TODO: Implement universal_protocols based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Universal Protocols");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = universal_protocols(1, 2, 3, 4, 5);
+        Object result = universal_protocols();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

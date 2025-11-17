@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Pbft implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Pbft.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object pbft(Object... args) {
-        // TODO: Implement pbft
-        System.out.println("Executing pbft");
+        logger.info("Executing pbft");
+        // TODO: Implement pbft based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Pbft");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = pbft(1, 2, 3, 4, 5);
+        Object result = pbft();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

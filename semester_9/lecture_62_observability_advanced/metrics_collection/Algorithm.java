@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Metrics Collection implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Metrics Collection.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object metrics_collection(Object... args) {
-        // TODO: Implement metrics_collection
-        System.out.println("Executing metrics_collection");
+        logger.info("Executing metrics_collection");
+        // TODO: Implement metrics_collection based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Metrics Collection");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = metrics_collection(1, 2, 3, 4, 5);
+        Object result = metrics_collection();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

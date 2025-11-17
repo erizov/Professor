@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Stablecoins implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Stablecoins.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object stablecoins(Object... args) {
-        // TODO: Implement stablecoins
-        System.out.println("Executing stablecoins");
+        logger.info("Executing stablecoins");
+        // TODO: Implement stablecoins based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Stablecoins");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = stablecoins(1, 2, 3, 4, 5);
+        Object result = stablecoins();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

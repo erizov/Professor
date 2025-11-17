@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Canary Analysis implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Canary Analysis.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object canary_analysis(Object... args) {
-        // TODO: Implement canary_analysis
-        System.out.println("Executing canary_analysis");
+        logger.info("Executing canary_analysis");
+        // TODO: Implement canary_analysis based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Canary Analysis");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = canary_analysis(1, 2, 3, 4, 5);
+        Object result = canary_analysis();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Pipeline Templates implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Pipeline Templates.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object pipeline_templates(Object... args) {
-        // TODO: Implement pipeline_templates
-        System.out.println("Executing pipeline_templates");
+        logger.info("Executing pipeline_templates");
+        // TODO: Implement pipeline_templates based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Pipeline Templates");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = pipeline_templates(1, 2, 3, 4, 5);
+        Object result = pipeline_templates();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

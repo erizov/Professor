@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Edge Computing implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Edge Computing.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object edge_computing(Object... args) {
-        // TODO: Implement edge_computing
-        System.out.println("Executing edge_computing");
+        logger.info("Executing edge_computing");
+        // TODO: Implement edge_computing based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Edge Computing");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = edge_computing(1, 2, 3, 4, 5);
+        Object result = edge_computing();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

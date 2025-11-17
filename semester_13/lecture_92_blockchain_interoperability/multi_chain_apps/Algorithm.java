@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Multi Chain Apps implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Multi Chain Apps.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object multi_chain_apps(Object... args) {
-        // TODO: Implement multi_chain_apps
-        System.out.println("Executing multi_chain_apps");
+        logger.info("Executing multi_chain_apps");
+        // TODO: Implement multi_chain_apps based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Multi Chain Apps");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = multi_chain_apps(1, 2, 3, 4, 5);
+        Object result = multi_chain_apps();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

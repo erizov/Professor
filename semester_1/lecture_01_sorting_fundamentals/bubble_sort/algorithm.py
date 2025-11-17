@@ -18,9 +18,8 @@ sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 from framework.performance_timer import PerformanceTimer
 from framework.logging_utils import get_logger
 
-from typing import
+from typing import List, TypeVar
 import logging
- List, TypeVar
 
 logger = get_logger(__name__)
 

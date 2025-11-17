@@ -4,11 +4,15 @@
 Unit Of Work implementation.
 """
 
-from typing import List, Optional, Any
+from typing import List, Optional, Any, Dict
 from framework.logging_utils import get_logger
-import logging
+from framework.performance_timer import PerformanceTimer
+import sys
+from pathlib import Path
 
+sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
+
 
 def unit_of_work(*args, **kwargs) -> Any:
     """
@@ -20,21 +24,25 @@ def unit_of_work(*args, **kwargs) -> Any:
         
     Returns:
         Result of the algorithm
+        
+    Time Complexity: See README.md
+    Space Complexity: See README.md
     """
-    # TODO: Implement unit_of_work
     logger.info(f"Executing unit_of_work")
+    # TODO: Implement unit_of_work based on README.md
     return None
+
 
 def main():
     """Demonstration."""
     print("=" * 70)
-    print(f"Unit Of Work")
+    print("Unit Of Work")
     print("=" * 70)
     
     # Example usage
-    example_data = [1, 2, 3, 4, 5]
-    result = unit_of_work(example_data)
+    result = unit_of_work()
     print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
 
 
 if __name__ == "__main__":

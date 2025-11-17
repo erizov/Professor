@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Gitops Security implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Gitops Security.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object gitops_security(Object... args) {
-        // TODO: Implement gitops_security
-        System.out.println("Executing gitops_security");
+        logger.info("Executing gitops_security");
+        // TODO: Implement gitops_security based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Gitops Security");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = gitops_security(1, 2, 3, 4, 5);
+        Object result = gitops_security();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

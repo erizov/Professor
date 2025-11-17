@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Data Privacy implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Data Privacy.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object data_privacy(Object... args) {
-        // TODO: Implement data_privacy
-        System.out.println("Executing data_privacy");
+        logger.info("Executing data_privacy");
+        // TODO: Implement data_privacy based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Data Privacy");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = data_privacy(1, 2, 3, 4, 5);
+        Object result = data_privacy();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

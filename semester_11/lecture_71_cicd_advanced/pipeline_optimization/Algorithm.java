@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Pipeline Optimization implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Pipeline Optimization.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object pipeline_optimization(Object... args) {
-        // TODO: Implement pipeline_optimization
-        System.out.println("Executing pipeline_optimization");
+        logger.info("Executing pipeline_optimization");
+        // TODO: Implement pipeline_optimization based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Pipeline Optimization");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = pipeline_optimization(1, 2, 3, 4, 5);
+        Object result = pipeline_optimization();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

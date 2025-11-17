@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Real Time Systems implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Real Time Systems.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object real_time_systems(Object... args) {
-        // TODO: Implement real_time_systems
-        System.out.println("Executing real_time_systems");
+        logger.info("Executing real_time_systems");
+        // TODO: Implement real_time_systems based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Real Time Systems");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = real_time_systems(1, 2, 3, 4, 5);
+        Object result = real_time_systems();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

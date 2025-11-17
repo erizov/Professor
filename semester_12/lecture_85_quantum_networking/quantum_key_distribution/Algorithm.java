@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Quantum Key Distribution implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Quantum Key Distribution.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object quantum_key_distribution(Object... args) {
-        // TODO: Implement quantum_key_distribution
-        System.out.println("Executing quantum_key_distribution");
+        logger.info("Executing quantum_key_distribution");
+        // TODO: Implement quantum_key_distribution based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Quantum Key Distribution");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = quantum_key_distribution(1, 2, 3, 4, 5);
+        Object result = quantum_key_distribution();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

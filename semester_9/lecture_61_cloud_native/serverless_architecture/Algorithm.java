@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Serverless Architecture implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Serverless Architecture.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object serverless_architecture(Object... args) {
-        // TODO: Implement serverless_architecture
-        System.out.println("Executing serverless_architecture");
+        logger.info("Executing serverless_architecture");
+        // TODO: Implement serverless_architecture based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Serverless Architecture");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = serverless_architecture(1, 2, 3, 4, 5);
+        Object result = serverless_architecture();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

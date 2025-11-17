@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Ring Signatures implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Ring Signatures.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object ring_signatures(Object... args) {
-        // TODO: Implement ring_signatures
-        System.out.println("Executing ring_signatures");
+        logger.info("Executing ring_signatures");
+        // TODO: Implement ring_signatures based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Ring Signatures");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = ring_signatures(1, 2, 3, 4, 5);
+        Object result = ring_signatures();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Hybrid Search implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Hybrid Search.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object hybrid_search(Object... args) {
-        // TODO: Implement hybrid_search
-        System.out.println("Executing hybrid_search");
+        logger.info("Executing hybrid_search");
+        // TODO: Implement hybrid_search based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Hybrid Search");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = hybrid_search(1, 2, 3, 4, 5);
+        Object result = hybrid_search();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

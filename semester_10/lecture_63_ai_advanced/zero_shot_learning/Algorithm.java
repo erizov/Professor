@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Zero Shot Learning implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Zero Shot Learning.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object zero_shot_learning(Object... args) {
-        // TODO: Implement zero_shot_learning
-        System.out.println("Executing zero_shot_learning");
+        logger.info("Executing zero_shot_learning");
+        // TODO: Implement zero_shot_learning based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Zero Shot Learning");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = zero_shot_learning(1, 2, 3, 4, 5);
+        Object result = zero_shot_learning();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

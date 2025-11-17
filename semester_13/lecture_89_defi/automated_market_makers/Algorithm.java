@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Automated Market Makers implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Automated Market Makers.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object automated_market_makers(Object... args) {
-        // TODO: Implement automated_market_makers
-        System.out.println("Executing automated_market_makers");
+        logger.info("Executing automated_market_makers");
+        // TODO: Implement automated_market_makers based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Automated Market Makers");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = automated_market_makers(1, 2, 3, 4, 5);
+        Object result = automated_market_makers();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

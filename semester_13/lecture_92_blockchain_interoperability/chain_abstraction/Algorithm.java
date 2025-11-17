@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Chain Abstraction implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Chain Abstraction.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object chain_abstraction(Object... args) {
-        // TODO: Implement chain_abstraction
-        System.out.println("Executing chain_abstraction");
+        logger.info("Executing chain_abstraction");
+        // TODO: Implement chain_abstraction based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Chain Abstraction");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = chain_abstraction(1, 2, 3, 4, 5);
+        Object result = chain_abstraction();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

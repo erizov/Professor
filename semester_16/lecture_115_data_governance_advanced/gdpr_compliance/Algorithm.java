@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Gdpr Compliance implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Gdpr Compliance.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object gdpr_compliance(Object... args) {
-        // TODO: Implement gdpr_compliance
-        System.out.println("Executing gdpr_compliance");
+        logger.info("Executing gdpr_compliance");
+        // TODO: Implement gdpr_compliance based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Gdpr Compliance");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = gdpr_compliance(1, 2, 3, 4, 5);
+        Object result = gdpr_compliance();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

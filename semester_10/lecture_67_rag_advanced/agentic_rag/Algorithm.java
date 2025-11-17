@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Agentic Rag implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Agentic Rag.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object agentic_rag(Object... args) {
-        // TODO: Implement agentic_rag
-        System.out.println("Executing agentic_rag");
+        logger.info("Executing agentic_rag");
+        // TODO: Implement agentic_rag based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Agentic Rag");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = agentic_rag(1, 2, 3, 4, 5);
+        Object result = agentic_rag();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Style Guides implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Style Guides.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object style_guides(Object... args) {
-        // TODO: Implement style_guides
-        System.out.println("Executing style_guides");
+        logger.info("Executing style_guides");
+        // TODO: Implement style_guides based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Style Guides");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = style_guides(1, 2, 3, 4, 5);
+        Object result = style_guides();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

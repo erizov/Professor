@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Byzantine Fault Tolerance implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Byzantine Fault Tolerance.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object byzantine_fault_tolerance(Object... args) {
-        // TODO: Implement byzantine_fault_tolerance
-        System.out.println("Executing byzantine_fault_tolerance");
+        logger.info("Executing byzantine_fault_tolerance");
+        // TODO: Implement byzantine_fault_tolerance based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Byzantine Fault Tolerance");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = byzantine_fault_tolerance(1, 2, 3, 4, 5);
+        Object result = byzantine_fault_tolerance();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

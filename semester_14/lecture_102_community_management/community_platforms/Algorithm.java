@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Community Platforms implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Community Platforms.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object community_platforms(Object... args) {
-        // TODO: Implement community_platforms
-        System.out.println("Executing community_platforms");
+        logger.info("Executing community_platforms");
+        // TODO: Implement community_platforms based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Community Platforms");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = community_platforms(1, 2, 3, 4, 5);
+        Object result = community_platforms();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

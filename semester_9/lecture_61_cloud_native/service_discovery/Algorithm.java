@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Service Discovery implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Service Discovery.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object service_discovery(Object... args) {
-        // TODO: Implement service_discovery
-        System.out.println("Executing service_discovery");
+        logger.info("Executing service_discovery");
+        // TODO: Implement service_discovery based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Service Discovery");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = service_discovery(1, 2, 3, 4, 5);
+        Object result = service_discovery();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

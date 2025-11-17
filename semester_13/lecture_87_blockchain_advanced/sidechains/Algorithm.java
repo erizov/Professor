@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Sidechains implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Sidechains.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object sidechains(Object... args) {
-        // TODO: Implement sidechains
-        System.out.println("Executing sidechains");
+        logger.info("Executing sidechains");
+        // TODO: Implement sidechains based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Sidechains");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = sidechains(1, 2, 3, 4, 5);
+        Object result = sidechains();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

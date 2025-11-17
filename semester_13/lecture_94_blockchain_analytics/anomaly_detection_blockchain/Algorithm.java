@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Anomaly Detection Blockchain implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Anomaly Detection Blockchain.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object anomaly_detection_blockchain(Object... args) {
-        // TODO: Implement anomaly_detection_blockchain
-        System.out.println("Executing anomaly_detection_blockchain");
+        logger.info("Executing anomaly_detection_blockchain");
+        // TODO: Implement anomaly_detection_blockchain based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Anomaly Detection Blockchain");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = anomaly_detection_blockchain(1, 2, 3, 4, 5);
+        Object result = anomaly_detection_blockchain();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

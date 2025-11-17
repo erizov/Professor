@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Writing Automation implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Writing Automation.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object writing_automation(Object... args) {
-        // TODO: Implement writing_automation
-        System.out.println("Executing writing_automation");
+        logger.info("Executing writing_automation");
+        // TODO: Implement writing_automation based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Writing Automation");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = writing_automation(1, 2, 3, 4, 5);
+        Object result = writing_automation();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

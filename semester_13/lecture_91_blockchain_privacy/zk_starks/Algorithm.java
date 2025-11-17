@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Zk Starks implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Zk Starks.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object zk_starks(Object... args) {
-        // TODO: Implement zk_starks
-        System.out.println("Executing zk_starks");
+        logger.info("Executing zk_starks");
+        // TODO: Implement zk_starks based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Zk Starks");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = zk_starks(1, 2, 3, 4, 5);
+        Object result = zk_starks();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

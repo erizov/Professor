@@ -1,7 +1,11 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
  * Aiops implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
      * Aiops.
@@ -10,8 +14,8 @@ public class Algorithm {
      * @return Result of the algorithm
      */
     public static Object aiops(Object... args) {
-        // TODO: Implement aiops
-        System.out.println("Executing aiops");
+        logger.info("Executing aiops");
+        // TODO: Implement aiops based on README.md
         return null;
     }
     
@@ -20,8 +24,8 @@ public class Algorithm {
         System.out.println("Aiops");
         System.out.println("=".repeat(70));
         
-        // Example usage
-        Object result = aiops(1, 2, 3, 4, 5);
+        Object result = aiops();
         System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }

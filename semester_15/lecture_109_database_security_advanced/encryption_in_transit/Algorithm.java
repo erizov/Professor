@@ -1,20 +1,31 @@
+import java.util.*;
+import java.util.logging.Logger;
+
 /**
- * Advanced implementation of Encryption In Transit
+ * Encryption In Transit implementation.
  */
 public class Algorithm {
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
     
     /**
-     * Advanced Encryption In Transit implementation.
+     * Encryption In Transit.
      * 
      * @param args Variable arguments
      * @return Result of the algorithm
      */
     public static Object encryption_in_transit(Object... args) {
-        // TODO: Implement advanced encryption_in_transit
+        logger.info("Executing encryption_in_transit");
+        // TODO: Implement encryption_in_transit based on README.md
         return null;
     }
     
     public static void main(String[] args) {
-        System.out.println("Encryption In Transit - Advanced Implementation");
+        System.out.println("=".repeat(70));
+        System.out.println("Encryption In Transit");
+        System.out.println("=".repeat(70));
+        
+        Object result = encryption_in_transit();
+        System.out.println("Result: " + result);
+        System.out.println("\nSee README.md for implementation details");
     }
 }
