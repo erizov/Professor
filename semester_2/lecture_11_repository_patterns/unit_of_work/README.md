@@ -156,6 +156,28 @@ public class Service {
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
 
+### Kubernetes
+
+```yaml
+# Kubernetes - Container Runtime Interface (CRI)
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-pod
+spec:
+  runtimeClassName: runc
+  containers:
+  - name: app
+    image: myapp:latest
+    resources:
+      requests:
+        memory: "128Mi"
+        cpu: "100m"
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and cluster management.
+
+
 ## Algorithm Steps
 
 1. **Initialization**: Set up initial state and data structures

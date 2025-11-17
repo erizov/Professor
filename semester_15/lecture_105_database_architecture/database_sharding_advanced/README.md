@@ -236,6 +236,39 @@ $$ LANGUAGE plpgsql;
 **Purpose**: PostgreSQL database uses this for data management and optimization.
 
 
+### PostgreSQL
+
+```sql
+-- PostgreSQL - Database Sharding
+-- Shard by user_id (modulo 4)
+CREATE TABLE orders_shard_0 (
+    CHECK (user_id % 4 = 0)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_1 (
+    CHECK (user_id % 4 = 1)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_2 (
+    CHECK (user_id % 4 = 2)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_3 (
+    CHECK (user_id % 4 = 3)
+) INHERITS (orders);
+
+-- Routing function
+CREATE OR REPLACE FUNCTION route_to_shard(user_id INT)
+RETURNS TEXT AS $$
+BEGIN
+    RETURN 'orders_shard_' || (user_id % 4);
+END;
+$$ LANGUAGE plpgsql;
+```
+
+**Purpose**: PostgreSQL database uses this for data management and optimization.
+
+
 ## Algorithm Steps
 
 1. **Initialization**: Set up initial state and data structures
