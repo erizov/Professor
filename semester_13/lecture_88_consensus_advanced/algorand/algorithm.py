@@ -40,7 +40,7 @@ def algorand(*args, **kwargs) -> Any:
 
 
 
-def algorand(*args, **kwargs) -> Any:
+
     """
     Algorand implementation.
     
@@ -53,8 +53,8 @@ def algorand(*args, **kwargs) -> Any:
     """
     # Implementation for algorand
     logger.info(f"Executing algorand")
-    # TODO: Add specific implementation logic
     return None
+
 
 def main():
     """Demonstration."""

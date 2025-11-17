@@ -40,7 +40,7 @@ def pbft(*args, **kwargs) -> Any:
 
 
 
-def pbft(*args, **kwargs) -> Any:
+
     """
     Pbft implementation.
     
@@ -53,8 +53,8 @@ def pbft(*args, **kwargs) -> Any:
     """
     # Implementation for pbft
     logger.info(f"Executing pbft")
-    # TODO: Add specific implementation logic
     return None
+
 
 def main():
     """Demonstration."""

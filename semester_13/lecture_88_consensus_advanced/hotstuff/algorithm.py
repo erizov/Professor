@@ -40,7 +40,7 @@ def hotstuff(*args, **kwargs) -> Any:
 
 
 
-def hotstuff(*args, **kwargs) -> Any:
+
     """
     Hotstuff implementation.
     
@@ -53,8 +53,8 @@ def hotstuff(*args, **kwargs) -> Any:
     """
     # Implementation for hotstuff
     logger.info(f"Executing hotstuff")
-    # TODO: Add specific implementation logic
     return None
+
 
 def main():
     """Demonstration."""
