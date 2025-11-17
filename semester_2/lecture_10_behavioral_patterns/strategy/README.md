@@ -136,6 +136,77 @@ Test your understanding with these questions:
 ## Examples of Deployment
 
 This altechniqueattern is implemented in the following frameworks and technologies:
+### Spring Framework
+
+```java
+// Spring Framework - Strategy Pattern with @Qualifier
+public interface PaymentStrategy {
+    void pay(double amount);
+}
+
+@Component("creditCard")
+public class CreditCardStrategy implements PaymentStrategy {
+    public void pay(double amount) {
+        // Credit card payment logic
+    }
+}
+
+@Component("paypal")
+public class PayPalStrategy implements PaymentStrategy {
+    public void pay(double amount) {
+        // PayPal payment logic
+    }
+}
+
+@Service
+public class PaymentService {
+    @Autowired
+    @Qualifier("creditCard")
+    private PaymentStrategy strategy;
+    
+    public void processPayment(double amount) {
+        strategy.pay(amount);
+    }
+}
+```
+
+**Purpose**: Spring Framework uses this pattern/algorithm for enterprise application development.
+
+### .NET Framework
+
+```csharp
+// .NET - Strategy Pattern
+public interface IPaymentStrategy
+{
+    void Pay(decimal amount);
+}
+
+public class CreditCardStrategy : IPaymentStrategy
+{
+    public void Pay(decimal amount)
+    {
+        // Credit card payment logic
+    }
+}
+
+public class PaymentService
+{
+    private readonly IPaymentStrategy _strategy;
+    
+    public PaymentService(IPaymentStrategy strategy)
+    {
+        _strategy = strategy;
+    }
+    
+    public void ProcessPayment(decimal amount)
+    {
+        _strategy.Pay(amount);
+    }
+}
+```
+
+**Purpose**: .NET Framework implements this pattern/algorithm for service architecture.
+
 
 ### Spring Framework
 

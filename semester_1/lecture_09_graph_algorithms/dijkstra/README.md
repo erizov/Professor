@@ -175,6 +175,44 @@ Find shortest path from A to all nodes.
 ## Examples of Deployment
 
 This altechniqueattern is implemented in the following frameworks and technologies:
+### Java Standard Library
+
+```java
+// Java - Dijkstra's Algorithm for Shortest Path
+import java.util.*;
+
+public class DijkstraExample {
+    public Map<Node, Integer> shortestPaths(Graph graph, Node start) {
+        PriorityQueue<Node> pq = new PriorityQueue<>(
+            Comparator.comparingInt(n -> distances.get(n))
+        );
+        Map<Node, Integer> distances = new HashMap<>();
+        Set<Node> visited = new HashSet<>();
+        
+        distances.put(start, 0);
+        pq.offer(start);
+        
+        while (!pq.isEmpty()) {
+            Node current = pq.poll();
+            if (visited.contains(current)) continue;
+            
+            visited.add(current);
+            
+            for (Edge edge : graph.getEdges(current)) {
+                int newDist = distances.get(current) + edge.weight;
+                if (newDist < distances.getOrDefault(edge.to, Integer.MAX_VALUE)) {
+                    distances.put(edge.to, newDist);
+                    pq.offer(edge.to);
+                }
+            }
+        }
+        return distances;
+    }
+}
+```
+
+**Purpose**: Java standard library uses this algorithm for core data structure operations.
+
 
 ### Kubernetes
 
