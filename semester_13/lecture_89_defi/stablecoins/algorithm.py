@@ -41,6 +41,7 @@ def stablecoins(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Stablecoins implementation.
     

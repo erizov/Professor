@@ -41,6 +41,7 @@ def quantum_attacks(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Quantum Attacks implementation.
     
