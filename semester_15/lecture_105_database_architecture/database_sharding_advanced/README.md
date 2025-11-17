@@ -183,21 +183,24 @@ CREATE TABLE orders_shard_1 (
 
 ## Detailed Explanation
 
-The Database Sharding Advanced algorithm works by systematically processing the input data according to its specific strategy.
+The Database Sharding Advanced technique is a critical component of modern software systems.
 
-**Key Concepts**:
-- Core principle: [Describe main idea]
-- Data structures used: [List structures]
-- Termination condition: [When algorithm stops]
+**Core Principles**:
+Database sharding horizontally partitions data across multiple databases
 
-**Process Flow**:
-1. Initialize necessary data structures
-2. Process input elements according to algorithm logic
-3. Update state after each operation
-4. Continue until termination condition is met
-5. Return final result
+**How It Works**:
+ Solves problems of database scalability and performance at scale
 
-For detailed implementation, see `algorithm.py` and `Algorithm.java`.
+**Key Components**:
+- Implementation details vary based on specific use case
+- Performance characteristics depend on system configuration
+- Scalability considerations are essential for production deployment
+
+**Real-World Considerations**:
+- Production systems require careful tuning and monitoring
+- Error handling and edge cases must be thoroughly tested
+- Documentation and maintenance are critical for long-term success
+
 
 ## Advantages
 
