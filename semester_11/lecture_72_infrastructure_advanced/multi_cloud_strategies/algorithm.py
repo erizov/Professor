@@ -41,6 +41,7 @@ def multi_cloud_strategies(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Multi Cloud Strategies implementation.
     

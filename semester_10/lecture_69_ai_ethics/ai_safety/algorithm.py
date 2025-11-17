@@ -41,6 +41,7 @@ def ai_safety(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Ai Safety implementation.
     

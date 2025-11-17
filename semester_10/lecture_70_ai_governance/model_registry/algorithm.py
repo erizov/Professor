@@ -41,6 +41,7 @@ def model_registry(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Model Registry implementation.
     
