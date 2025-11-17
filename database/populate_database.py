@@ -116,6 +116,120 @@ def get_file_info(file_path: Path) -> Dict:
         'last_modified': datetime.fromtimestamp(stat.st_mtime).isoformat()
     }
 
+def create_schema(cursor):
+    """Create database schema."""
+    # Create tables
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS algorithms (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL UNIQUE,
+            display_name TEXT NOT NULL,
+            folder_path TEXT NOT NULL,
+            semester_number INTEGER,
+            lecture_name TEXT,
+            category TEXT,
+            description TEXT,
+            short_description TEXT,
+            time_complexity TEXT,
+            space_complexity TEXT,
+            stability TEXT,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        )
+    ''')
+    
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS algorithm_files (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            algorithm_id INTEGER NOT NULL,
+            file_type TEXT NOT NULL,
+            file_path TEXT NOT NULL,
+            file_name TEXT NOT NULL,
+            file_size INTEGER,
+            last_modified TIMESTAMP,
+            FOREIGN KEY (algorithm_id) REFERENCES algorithms(id) ON DELETE CASCADE,
+            UNIQUE(algorithm_id, file_type)
+        )
+    ''')
+    
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS test_files (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            algorithm_id INTEGER NOT NULL,
+            test_file_path TEXT NOT NULL,
+            test_count INTEGER DEFAULT 0,
+            coverage_percentage REAL DEFAULT 0.0,
+            last_run TIMESTAMP,
+            status TEXT,
+            FOREIGN KEY (algorithm_id) REFERENCES algorithms(id) ON DELETE CASCADE
+        )
+    ''')
+    
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS performance_metrics (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            algorithm_id INTEGER NOT NULL,
+            input_size INTEGER NOT NULL,
+            execution_time_ms REAL,
+            memory_usage_mb REAL,
+            operations_per_sec REAL,
+            language TEXT,
+            test_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (algorithm_id) REFERENCES algorithms(id) ON DELETE CASCADE
+        )
+    ''')
+    
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS framework_usage (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            algorithm_id INTEGER NOT NULL,
+            framework_name TEXT NOT NULL,
+            framework_type TEXT,
+            example_code TEXT,
+            purpose TEXT,
+            FOREIGN KEY (algorithm_id) REFERENCES algorithms(id) ON DELETE CASCADE,
+            UNIQUE(algorithm_id, framework_name)
+        )
+    ''')
+    
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS algorithm_usage (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            algorithm_id INTEGER NOT NULL,
+            usage_count INTEGER DEFAULT 0,
+            last_used TIMESTAMP,
+            usage_context TEXT,
+            FOREIGN KEY (algorithm_id) REFERENCES algorithms(id) ON DELETE CASCADE
+        )
+    ''')
+    
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS algorithm_advantages (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            algorithm_id INTEGER NOT NULL,
+            advantage TEXT NOT NULL,
+            FOREIGN KEY (algorithm_id) REFERENCES algorithms(id) ON DELETE CASCADE
+        )
+    ''')
+    
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS algorithm_shortcomings (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            algorithm_id INTEGER NOT NULL,
+            shortcoming TEXT NOT NULL,
+            FOREIGN KEY (algorithm_id) REFERENCES algorithms(id) ON DELETE CASCADE
+        )
+    ''')
+    
+    # Create indexes
+    cursor.execute('CREATE INDEX IF NOT EXISTS idx_algorithms_name ON algorithms(name)')
+    cursor.execute('CREATE INDEX IF NOT EXISTS idx_algorithms_semester ON algorithms(semester_number)')
+    cursor.execute('CREATE INDEX IF NOT EXISTS idx_algorithms_category ON algorithms(category)')
+    cursor.execute('CREATE INDEX IF NOT EXISTS idx_files_algorithm ON algorithm_files(algorithm_id)')
+    cursor.execute('CREATE INDEX IF NOT EXISTS idx_tests_algorithm ON test_files(algorithm_id)')
+    cursor.execute('CREATE INDEX IF NOT EXISTS idx_performance_algorithm ON performance_metrics(algorithm_id)')
+    cursor.execute('CREATE INDEX IF NOT EXISTS idx_framework_algorithm ON framework_usage(algorithm_id)')
+
 def populate_database():
     """Populate database with algorithm information."""
     # Create database directory
@@ -125,23 +239,8 @@ def populate_database():
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     
-    # Read and execute schema
-    schema_file = ROOT / "database" / "schema.sql"
-    if schema_file.exists():
-        schema = schema_file.read_text(encoding='utf-8')
-        # Split by semicolons and execute each statement
-        statements = [s.strip() for s in schema.split(';') if s.strip() and not s.strip().startswith('--')]
-        
-        for statement in statements:
-            try:
-                cursor.execute(statement)
-            except sqlite3.OperationalError as e:
-                error_msg = str(e).lower()
-                if 'already exists' not in error_msg and 'duplicate column' not in error_msg:
-                    # Only print if it's not a harmless "already exists" error
-                    if 'no such table' not in error_msg:
-                        print(f"Schema warning: {e}")
-    
+    # Create schema
+    create_schema(cursor)
     conn.commit()
     
     # Find all algorithm directories
@@ -285,12 +384,28 @@ def populate_database():
     
     conn.commit()
     
-    # Get statistics
-    cursor.execute('SELECT * FROM algorithm_statistics')
+    # Get statistics (using direct query since view might not exist)
+    cursor.execute('''
+        SELECT 
+            COUNT(DISTINCT a.id) as total_algorithms,
+            COUNT(DISTINCT a.semester_number) as total_semesters,
+            COUNT(DISTINCT a.category) as total_categories,
+            COUNT(DISTINCT CASE WHEN af.file_type = 'python' THEN af.id END) as python_files,
+            COUNT(DISTINCT CASE WHEN af.file_type = 'java' THEN af.id END) as java_files,
+            COUNT(DISTINCT CASE WHEN af.file_type = 'sql' THEN af.id END) as sql_files,
+            COUNT(DISTINCT tf.id) as total_tests,
+            COUNT(DISTINCT fw.id) as total_framework_examples
+        FROM algorithms a
+        LEFT JOIN algorithm_files af ON a.id = af.algorithm_id
+        LEFT JOIN test_files tf ON a.id = tf.algorithm_id
+        LEFT JOIN framework_usage fw ON a.id = fw.algorithm_id
+    ''')
     stats = cursor.fetchone()
     
     print(f"\n[COMPLETE] Processed {algorithms_processed} algorithms")
     print(f"Database saved to: {DB_PATH}")
+    if stats:
+        print(f"Statistics: {stats[0]} algorithms, {stats[1]} semesters, {stats[2]} categories")
     
     conn.close()
     return algorithms_processed
