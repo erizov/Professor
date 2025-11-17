@@ -115,6 +115,41 @@ Test your understanding with these questions:
 11. Create unit tests with 100% code coverage for Fractional Knapsack
 12. Write a technical blog post explaining Fractional Knapsack to beginners
 
+## Examples of Implementation
+
+### Java Standard Library
+
+```java
+// Java - Dynamic programming pattern
+public class DPExample {
+    public int fibonacci(int n) {
+        int[] dp = new int[n + 1];
+        dp[0] = 0;
+        dp[1] = 1;
+        for (int i = 2; i <= n; i++) {
+            dp[i] = dp[i - 1] + dp[i - 2];
+        }
+        return dp[n];
+    }
+}
+```
+
+**Purpose**: Java standard library uses this algorithm for core data structure operations.
+
+### Python Standard Library
+
+```python
+# Python - Dynamic programming
+def fibonacci(n):
+    dp = [0] * (n + 1)
+    dp[1] = 1
+    for i in range(2, n + 1):
+        dp[i] = dp[i - 1] + dp[i - 2]
+    return dp[n]
+```
+
+**Purpose**: Python standard library uses this algorithm for efficient data operations.
+
 ## Real-World Applications
 
 - **Optimization Problems**: Resource allocation and scheduling

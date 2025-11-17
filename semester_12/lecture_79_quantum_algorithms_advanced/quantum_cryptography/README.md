@@ -117,6 +117,39 @@ Test your understanding with these questions:
 11. Create unit tests with 100% code coverage for Quantum Cryptography
 12. Write a technical blog post explaining Quantum Cryptography to beginners
 
+## Examples of Implementation
+
+### Java Standard Library
+
+```java
+// Java - Graph representation and traversal
+import java.util.*;
+
+public class GraphExample {
+    private Map<Integer, List<Integer>> graph = new HashMap<>();
+    
+    public void addEdge(int from, int to) {
+        graph.computeIfAbsent(from, k -> new ArrayList<>()).add(to);
+    }
+}
+```
+
+**Purpose**: Java standard library uses this algorithm for core data structure operations.
+
+### Python Standard Library
+
+```python
+# NetworkX - Graph library
+import networkx as nx
+
+G = nx.Graph()
+G.add_edge(1, 2)
+G.add_edge(2, 3)
+# NetworkX uses efficient graph algorithms internally
+```
+
+**Purpose**: Python standard library uses this algorithm for efficient data operations.
+
 ## Real-World Applications
 
 - **Social Networks**: Friend recommendations, shortest path between users

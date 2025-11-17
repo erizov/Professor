@@ -115,6 +115,55 @@ Test your understanding with these questions:
 11. Create unit tests with 100% code coverage for Fibonacci Heap
 12. Write a technical blog post explaining Fibonacci Heap to beginners
 
+## Examples of Implementation
+
+### Java Standard Library
+
+```java
+// Java Arrays.sort() uses optimized sorting
+import java.util.Arrays;
+
+public class SortingExample {
+    public static void main(String[] args) {
+        int[] arr = {64, 34, 25, 12, 22, 11, 90};
+        Arrays.sort(arr);  // Uses dual-pivot quicksort
+        System.out.println(Arrays.toString(arr));
+    }
+}
+```
+
+**Purpose**: Java standard library uses this algorithm for core data structure operations.
+
+### Python Standard Library
+
+```python
+# Python list.sort() uses Timsort
+arr = [64, 34, 25, 12, 22, 11, 90]
+arr.sort()  # Timsort: hybrid of merge sort and insertion sort
+print(arr)
+```
+
+**Purpose**: Python standard library uses this algorithm for efficient data operations.
+
+### Spring Framework
+
+```java
+// Spring Framework - Sorting in Data Access
+@Service
+public class UserService {
+    @Autowired
+    private UserRepository userRepository;
+    
+    public List<User> getUsersSorted(String sortBy) {
+        List<User> users = userRepository.findAll();
+        users.sort(Comparator.comparing(User::getName));
+        return users;
+    }
+}
+```
+
+**Purpose**: Spring Framework uses this pattern/algorithm for enterprise application development.
+
 ## Real-World Applications
 
 - **Optimization Problems**: Resource allocation and scheduling

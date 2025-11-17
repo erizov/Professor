@@ -134,6 +134,50 @@ Test your understanding with these questions:
 ## Examples of Deployment
 
 This atechniquepattern is implemented in the following frameworks and technologies:
+### Java Standard Library
+
+```java
+// Java TreeMap uses Red-Black Tree
+import java.util.*;
+
+TreeMap<String, Integer> tree = new TreeMap<>();
+tree.put("apple", 1);
+tree.put("banana", 2);
+tree.put("cherry", 3);
+// Maintains sorted order using Red-Black Tree
+```
+
+**Purpose**: Java standard library uses this algorithm for core data structure operations.
+
+### Python Standard Library
+
+```python
+# Python - Tree structures in libraries
+from collections import defaultdict
+
+# Tree-like structure using nested dictionaries
+tree = defaultdict(dict)
+tree['root']['left'] = {'value': 1}
+tree['root']['right'] = {'value': 2}
+```
+
+**Purpose**: Python standard library uses this algorithm for efficient data operations.
+
+### Spring Framework
+
+```java
+// Spring Framework - Tree structure in BeanFactory
+@Component
+public class ServiceTree {
+    @Autowired
+    private ServiceA serviceA;  // Tree-based dependency graph
+    @Autowired
+    private ServiceB serviceB;
+}
+```
+
+**Purpose**: Spring Framework uses this pattern/algorithm for enterprise application development.
+
 
 ### Kubernetes
 

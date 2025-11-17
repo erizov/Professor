@@ -117,6 +117,34 @@ Test your understanding with these questions:
 11. Create unit tests with 100% code coverage for Hybrid Search
 12. Write a technical blog post explaining Hybrid Search to beginners
 
+## Examples of Implementation
+
+### Java Standard Library
+
+```java
+// Java Collections.binarySearch()
+import java.util.*;
+
+List<Integer> list = Arrays.asList(1, 3, 5, 7, 9, 11, 13);
+int index = Collections.binarySearch(list, 7);
+System.out.println("Found at index: " + index);
+```
+
+**Purpose**: Java standard library uses this algorithm for core data structure operations.
+
+### Python Standard Library
+
+```python
+# Python bisect module for binary search
+import bisect
+
+arr = [1, 3, 5, 7, 9, 11, 13]
+index = bisect.bisect_left(arr, 7)
+print(f"Insert position: {index}")
+```
+
+**Purpose**: Python standard library uses this algorithm for efficient data operations.
+
 ## Real-World Applications
 
 - **Search Engines**: Index lookups and search result retrieval
