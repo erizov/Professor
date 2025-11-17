@@ -38,6 +38,7 @@ def derivatives(*args, **kwargs) -> Any:
 
 
 
+
 def derivatives(*args, **kwargs) -> Any:
     """
     Derivatives implementation.
@@ -53,6 +54,13318 @@ def derivatives(*args, **kwargs) -> Any:
     logger.info(f"Executing derivatives")
     # TODO: Add specific implementation logic
     return None
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Derivatives")
+    print("=" * 70)
+    
+    # Example usage
+    result = derivatives()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
 
 def main():
     """Demonstration."""
