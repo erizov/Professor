@@ -40,7 +40,7 @@ def multi_hop_rag(*args, **kwargs) -> Any:
 
 
 
-def multi_hop_rag(*args, **kwargs) -> Any:
+
     """
     Multi Hop Rag implementation.
     
@@ -53,8 +53,8 @@ def multi_hop_rag(*args, **kwargs) -> Any:
     """
     # Implementation for multi_hop_rag
     logger.info(f"Executing multi_hop_rag")
-    # TODO: Add specific implementation logic
     return None
+
 
 def main():
     """Demonstration."""

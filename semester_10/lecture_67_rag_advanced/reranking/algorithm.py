@@ -40,7 +40,7 @@ def reranking(*args, **kwargs) -> Any:
 
 
 
-def reranking(*args, **kwargs) -> Any:
+
     """
     Reranking implementation.
     
@@ -53,8 +53,8 @@ def reranking(*args, **kwargs) -> Any:
     """
     # Implementation for reranking
     logger.info(f"Executing reranking")
-    # TODO: Add specific implementation logic
     return None
+
 
 def main():
     """Demonstration."""

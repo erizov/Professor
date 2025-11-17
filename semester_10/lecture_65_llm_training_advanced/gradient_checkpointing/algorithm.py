@@ -40,7 +40,7 @@ def gradient_checkpointing(*args, **kwargs) -> Any:
 
 
 
-def gradient_checkpointing(*args, **kwargs) -> Any:
+
     """
     Gradient Checkpointing implementation.
     
@@ -53,8 +53,8 @@ def gradient_checkpointing(*args, **kwargs) -> Any:
     """
     # Implementation for gradient_checkpointing
     logger.info(f"Executing gradient_checkpointing")
-    # TODO: Add specific implementation logic
     return None
+
 
 def main():
     """Demonstration."""

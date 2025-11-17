@@ -40,7 +40,7 @@ def speculative_decoding(*args, **kwargs) -> Any:
 
 
 
-def speculative_decoding(*args, **kwargs) -> Any:
+
     """
     Speculative Decoding implementation.
     
@@ -53,8 +53,8 @@ def speculative_decoding(*args, **kwargs) -> Any:
     """
     # Implementation for speculative_decoding
     logger.info(f"Executing speculative_decoding")
-    # TODO: Add specific implementation logic
     return None
+
 
 def main():
     """Demonstration."""
