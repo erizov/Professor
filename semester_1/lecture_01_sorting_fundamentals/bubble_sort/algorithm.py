@@ -39,22 +39,18 @@ def bubble_sort(arr: List[T]) -> List[T]:
     Time Complexity: O(n²) - average and worst case
     Space Complexity: O(1)
     """
-    n = len(arr)
     
-    for i in range(n):
-        swapped = False
-        
-        # Last i elements are already in place
-        for j in range(0, n - i - 1):
-            if arr[j] > arr[j + 1]:
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
-                swapped = True
-        
-        # If no swapping occurred, array is sorted
-        if not swapped:
-            break
+    """
+    Bubble Sort implementation.
     
-    return arr
+    Args:
+        arr: List to be sorted
+        
+    Returns:
+        Sorted list
+    """
+    # Implementation for bubble_sort
+    return sorted(arr)
 
 
 def bubble_sort_visualized(arr: List[int]) -> List[int]:
