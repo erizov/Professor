@@ -160,3 +160,90 @@ Collections.sort(orders, Comparator.comparing(Order::getDate));
 
 **Purpose**: J2EE implements this pattern for enterprise Java applications, EJB containers, and Java EE specifications.
 
+## Algorithm Steps
+
+1. **Start**: Begin with the first element of the array
+2. **Compare**: Compare the current element with the next element
+3. **Swap if needed**: If current element is greater than next, swap them
+4. **Move forward**: Move to the next pair of elements
+5. **Repeat**: Continue until the end of the array
+6. **Next pass**: Start again from the beginning (one less element each time)
+7. **Terminate**: Stop when no swaps occur in a complete pass
+
+**Visual Example**:
+```
+Initial: [64, 34, 25, 12, 22, 11, 90]
+Pass 1:  [34, 25, 12, 22, 11, 64, 90]  (64 bubbles up)
+Pass 2:  [25, 12, 22, 11, 34, 64, 90]  (34 bubbles up)
+...
+Final:   [11, 12, 22, 25, 34, 64, 90]
+```
+
+## Detailed Explanation
+
+The Bubble Sort algorithm works by systematically processing the input data according to its specific strategy.
+
+**Key Concepts**:
+- Core principle: [Describe main idea]
+- Data structures used: [List structures]
+- Termination condition: [When algorithm stops]
+
+**Process Flow**:
+1. Initialize necessary data structures
+2. Process input elements according to algorithm logic
+3. Update state after each operation
+4. Continue until termination condition is met
+5. Return final result
+
+For detailed implementation, see `algorithm.py` and `Algorithm.java`.
+
+## Advantages
+
+- **Simplicity**: Very easy to understand and implement
+- **In-place sorting**: Requires only O(1) extra space
+- **Stable**: Maintains relative order of equal elements
+- **Adaptive**: Can detect if array is already sorted (optimized version)
+- **No recursion**: Avoids stack overflow issues
+- **Good for small datasets**: Efficient for small arrays (< 10 elements)
+
+## Disadvantages
+
+- **Slow**: O(n²) time complexity makes it inefficient for large arrays
+- **Many comparisons**: Compares every pair of elements
+- **Not practical**: Rarely used in production code
+- **Poor cache performance**: Not cache-friendly
+- **Not optimal**: Better algorithms exist for most cases
+- **Worst case**: Same as average case (no early termination benefit)
+
+## When to Use
+
+Use Bubble Sort when:
+
+- **Specific scenario 1**: [When this is appropriate]
+- **Specific scenario 2**: [Another use case]
+- **Data characteristics**: [What kind of data works best]
+- **Performance requirements**: [When performance is acceptable]
+- **Constraints**: [When constraints are met]
+
+**Ideal conditions**:
+- Input size: [Small/Medium/Large]
+- Data type: [Sorted/Unsorted, etc.]
+- Memory constraints: [Available memory]
+- Time constraints: [Acceptable time]
+
+## When NOT to Use
+
+Avoid Bubble Sort when:
+
+- **Scenario 1**: [When this is not appropriate]
+- **Scenario 2**: [Another case to avoid]
+- **Data characteristics**: [What kind of data doesn't work]
+- **Performance requirements**: [When performance is insufficient]
+- **Constraints**: [When constraints are not met]
+
+**Poor fit conditions**:
+- Input size: [Too large/small]
+- Data type: [Incompatible data]
+- Memory constraints: [Insufficient memory]
+- Time constraints: [Too strict]
+

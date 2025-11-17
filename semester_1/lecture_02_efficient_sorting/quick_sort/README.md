@@ -261,3 +261,88 @@ Collections.sort(orders, Comparator.comparing(Order::getDate));
 
 **Solutions**: See `solutions/` directory for detailed solutions.
 
+## Algorithm Steps
+
+1. **Choose pivot**: Select a pivot element (typically last element)
+2. **Partition**: Rearrange array so elements < pivot are left, > pivot are right
+3. **Place pivot**: Put pivot in its correct sorted position
+4. **Recurse left**: Apply quick sort to left subarray (elements < pivot)
+5. **Recurse right**: Apply quick sort to right subarray (elements > pivot)
+6. **Base case**: When subarray has 0 or 1 element, it's already sorted
+
+**Partition Process**:
+```
+Array: [10, 80, 30, 90, 40, 50, 70]
+Pivot: 70
+After partition: [10, 30, 40, 50, 70, 90, 80]
+                  [< 70]  [70]  [> 70]
+```
+
+## Detailed Explanation
+
+The Quick Sort algorithm works by systematically processing the input data according to its specific strategy.
+
+**Key Concepts**:
+- Core principle: [Describe main idea]
+- Data structures used: [List structures]
+- Termination condition: [When algorithm stops]
+
+**Process Flow**:
+1. Initialize necessary data structures
+2. Process input elements according to algorithm logic
+3. Update state after each operation
+4. Continue until termination condition is met
+5. Return final result
+
+For detailed implementation, see `algorithm.py` and `Algorithm.java`.
+
+## Advantages
+
+- **Fast average case**: O(n log n) average time complexity
+- **In-place sorting**: Low memory overhead
+- **Cache efficient**: Good locality of reference
+- **Widely used**: Standard sorting algorithm in many libraries
+- **Parallelizable**: Can be easily parallelized
+- **Efficient for large datasets**: Performs well on large arrays
+
+## Disadvantages
+
+- **Worst case**: O(n²) if pivot is always smallest/largest
+- **Unstable**: May change relative order of equal elements
+- **Pivot selection**: Performance depends on good pivot choice
+- **Recursion overhead**: Stack space for recursive calls
+- **Not adaptive**: Doesn't take advantage of partially sorted arrays
+- **Complex implementation**: More complex than simple sorts
+
+## When to Use
+
+Use Quick Sort when:
+
+- **Specific scenario 1**: [When this is appropriate]
+- **Specific scenario 2**: [Another use case]
+- **Data characteristics**: [What kind of data works best]
+- **Performance requirements**: [When performance is acceptable]
+- **Constraints**: [When constraints are met]
+
+**Ideal conditions**:
+- Input size: [Small/Medium/Large]
+- Data type: [Sorted/Unsorted, etc.]
+- Memory constraints: [Available memory]
+- Time constraints: [Acceptable time]
+
+## When NOT to Use
+
+Avoid Quick Sort when:
+
+- **Scenario 1**: [When this is not appropriate]
+- **Scenario 2**: [Another case to avoid]
+- **Data characteristics**: [What kind of data doesn't work]
+- **Performance requirements**: [When performance is insufficient]
+- **Constraints**: [When constraints are not met]
+
+**Poor fit conditions**:
+- Input size: [Too large/small]
+- Data type: [Incompatible data]
+- Memory constraints: [Insufficient memory]
+- Time constraints: [Too strict]
+

@@ -162,3 +162,88 @@ DataSource ds = (DataSource) ctx.lookup("java:comp/env/jdbc/MyDB");
 
 **Purpose**: J2EE implements this pattern for enterprise Java applications, EJB containers, and Java EE specifications.
 
+## Algorithm Steps
+
+1. **Start**: Set left = 0, right = array.length - 1
+2. **Calculate mid**: mid = (left + right) / 2
+3. **Compare**: Compare target with array[mid]
+4. **If equal**: Return mid (found!)
+5. **If target < array[mid]**: Search left half (right = mid - 1)
+6. **If target > array[mid]**: Search right half (left = mid + 1)
+7. **Repeat**: Continue until left > right
+8. **Not found**: Return -1 or None
+
+**Example**:
+```
+Array: [1, 3, 5, 7, 9, 11, 13], Target: 7
+Step 1: mid = 3, array[3] = 7, found!
+```
+
+## Detailed Explanation
+
+The Binary Search Tree algorithm works by systematically processing the input data according to its specific strategy.
+
+**Key Concepts**:
+- Core principle: [Describe main idea]
+- Data structures used: [List structures]
+- Termination condition: [When algorithm stops]
+
+**Process Flow**:
+1. Initialize necessary data structures
+2. Process input elements according to algorithm logic
+3. Update state after each operation
+4. Continue until termination condition is met
+5. Return final result
+
+For detailed implementation, see `algorithm.py` and `Algorithm.java`.
+
+## Advantages
+
+- **Very fast**: O(log n) time complexity
+- **Efficient**: Only examines log(n) elements
+- **Memory efficient**: O(1) space complexity (iterative version)
+- **Deterministic**: Always finds element if it exists
+- **Scalable**: Performance doesn't degrade much with large arrays
+- **Foundation**: Basis for many advanced algorithms
+
+## Disadvantages
+
+- **Requires sorted array**: Input must be sorted beforehand
+- **Not suitable for unsorted data**: Cannot be used directly
+- **Static data**: Less efficient if data changes frequently
+- **Memory access**: May have poor cache performance
+- **Integer overflow**: (left + right) / 2 can overflow (use left + (right - left) / 2)
+- **Limited to arrays**: Not directly applicable to linked lists
+
+## When to Use
+
+Use Binary Search Tree when:
+
+- **Specific scenario 1**: [When this is appropriate]
+- **Specific scenario 2**: [Another use case]
+- **Data characteristics**: [What kind of data works best]
+- **Performance requirements**: [When performance is acceptable]
+- **Constraints**: [When constraints are met]
+
+**Ideal conditions**:
+- Input size: [Small/Medium/Large]
+- Data type: [Sorted/Unsorted, etc.]
+- Memory constraints: [Available memory]
+- Time constraints: [Acceptable time]
+
+## When NOT to Use
+
+Avoid Binary Search Tree when:
+
+- **Scenario 1**: [When this is not appropriate]
+- **Scenario 2**: [Another case to avoid]
+- **Data characteristics**: [What kind of data doesn't work]
+- **Performance requirements**: [When performance is insufficient]
+- **Constraints**: [When constraints are not met]
+
+**Poor fit conditions**:
+- Input size: [Too large/small]
+- Data type: [Incompatible data]
+- Memory constraints: [Insufficient memory]
+- Time constraints: [Too strict]
+
