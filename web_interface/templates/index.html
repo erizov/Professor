@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Algorithms Course - Interactive Learning</title>
+    <title>Algorithms and Design Patterns Course</title>
     <style>
         * {
             margin: 0;
@@ -12,493 +12,593 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
             color: #333;
+            line-height: 1.6;
+        }
+        
+        .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
+            color: white;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
         }
         
         .container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        
-        h1 {
-            color: #667eea;
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        
-        .subtitle {
-            color: #666;
-            font-size: 1.2em;
+            padding: 2rem;
         }
         
         .filters {
             background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
         }
         
         .filter-group {
-            flex: 1;
-            min-width: 200px;
+            display: flex;
+            flex-direction: column;
         }
         
         .filter-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
             color: #555;
         }
         
-        .filter-group select, .filter-group input {
-            width: 100%;
-            padding: 10px;
-            border: 2px solid #ddd;
-            border-radius: 5px;
-            font-size: 1em;
+        .filter-group input,
+        .filter-group select {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .filter-group input:focus,
+        .filter-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .sort-controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        
+        .btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #5568d3;
+        }
+        
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
         }
         
         .algorithms-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
         }
         
         .algorithm-card {
             background: white;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             transition: transform 0.3s, box-shadow 0.3s;
             cursor: pointer;
         }
         
         .algorithm-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
         
-        .algorithm-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: start;
-            margin-bottom: 15px;
-        }
-        
-        .algorithm-title {
-            font-size: 1.3em;
+        .algorithm-card h3 {
             color: #667eea;
-            font-weight: bold;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
         }
         
-        .semester-badge {
-            background: #667eea;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 20px;
-            font-size: 0.8em;
-            font-weight: bold;
+        .algorithm-card .meta {
+            display: flex;
+            gap: 1rem;
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+            color: #666;
         }
         
-        .algorithm-category {
-            color: #888;
-            font-size: 0.9em;
-            margin-bottom: 10px;
-        }
-        
-        .complexity {
+        .algorithm-card .meta span {
             background: #f0f0f0;
-            padding: 10px;
-            border-radius: 5px;
-            margin: 10px 0;
-            font-size: 0.9em;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
         }
         
-        .complexity-item {
-            display: flex;
-            justify-content: space-between;
-            margin: 5px 0;
-        }
-        
-        .complexity-label {
-            font-weight: bold;
+        .algorithm-card .description {
             color: #555;
+            margin: 1rem 0;
+            line-height: 1.5;
         }
         
-        .complexity-value {
-            font-family: 'Courier New', monospace;
-            color: #764ba2;
+        .algorithm-card .frameworks {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
         }
         
-        .algorithm-actions {
+        .algorithm-card .frameworks span {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin: 0.2rem;
+        }
+        
+        .pagination {
             display: flex;
-            gap: 10px;
-            margin-top: 15px;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
         }
         
-        .btn {
-            flex: 1;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
+        .pagination button {
+            padding: 0.5rem 1rem;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 4px;
             cursor: pointer;
-            font-weight: bold;
-            transition: all 0.3s;
         }
         
-        .btn-python {
-            background: #3776ab;
-            color: white;
+        .pagination button:hover:not(:disabled) {
+            background: #f0f0f0;
         }
         
-        .btn-python:hover {
-            background: #2d5d8a;
+        .pagination button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
         }
         
-        .btn-java {
-            background: #f89820;
-            color: white;
-        }
-        
-        .btn-java:hover {
-            background: #d67e1a;
-        }
-        
-        .btn-info {
+        .pagination .active {
             background: #667eea;
             color: white;
+            border-color: #667eea;
         }
         
-        .btn-info:hover {
-            background: #5568d3;
+        .statistics {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-item .value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .stat-item .label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
         }
         
         .modal {
             display: none;
             position: fixed;
-            top: 0;
+            z-index: 1000;
             left: 0;
+            top: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.7);
-            z-index: 1000;
-            overflow-y: auto;
+            background: rgba(0,0,0,0.5);
+            overflow: auto;
         }
         
         .modal-content {
             background: white;
+            margin: 2% auto;
+            padding: 2rem;
+            border-radius: 8px;
             max-width: 900px;
-            margin: 50px auto;
-            padding: 30px;
-            border-radius: 10px;
-            position: relative;
-        }
-        
-        .modal-close {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 2em;
-            cursor: pointer;
-            color: #999;
-        }
-        
-        .modal-close:hover {
-            color: #333;
-        }
-        
-        .output-section {
-            background: #1e1e1e;
-            color: #d4d4d4;
-            padding: 20px;
-            border-radius: 5px;
-            font-family: 'Courier New', monospace;
-            white-space: pre-wrap;
-            max-height: 400px;
+            max-height: 90vh;
             overflow-y: auto;
-            margin-top: 20px;
         }
         
-        .loading {
-            text-align: center;
-            padding: 50px;
-            font-size: 1.2em;
-            color: #667eea;
-        }
-        
-        .stats {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            display: flex;
-            justify-content: space-around;
-            text-align: center;
-        }
-        
-        .stat-item {
-            padding: 10px;
-        }
-        
-        .stat-number {
-            font-size: 2em;
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
             font-weight: bold;
-            color: #667eea;
+            cursor: pointer;
         }
         
-        .stat-label {
-            color: #888;
-            font-size: 0.9em;
+        .close:hover {
+            color: #000;
+        }
+        
+        .preview-section {
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        
+        .preview-section h4 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
         }
     </style>
 </head>
 <body>
+    <div class="header">
+        <div class="container">
+            <h1>Algorithms and Design Patterns Course</h1>
+            <p>Comprehensive collection of 600+ algorithms with implementations, tests, and framework examples</p>
+        </div>
+    </div>
+    
     <div class="container">
-        <header>
-            <h1>🎓 Algorithms Course</h1>
-            <p class="subtitle">4 Semesters - Comprehensive Computer Science Education</p>
-        </header>
-        
-        <div class="stats" id="stats">
+        <div class="statistics" id="statistics">
             <div class="stat-item">
-                <div class="stat-number" id="totalAlgorithms">0</div>
-                <div class="stat-label">Total Algorithms</div>
+                <div class="value" id="total-algorithms">-</div>
+                <div class="label">Total Algorithms</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">4</div>
-                <div class="stat-label">Semesters</div>
+                <div class="value" id="total-tests">-</div>
+                <div class="label">Test Files</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number" id="totalCategories">0</div>
-                <div class="stat-label">Categories</div>
+                <div class="value" id="total-frameworks">-</div>
+                <div class="label">Framework Examples</div>
+            </div>
+            <div class="stat-item">
+                <div class="value" id="total-semesters">-</div>
+                <div class="label">Semesters</div>
             </div>
         </div>
         
         <div class="filters">
             <div class="filter-group">
-                <label for="semesterFilter">Semester</label>
-                <select id="semesterFilter">
-                    <option value="">All Semesters</option>
-                    <option value="1">Semester 1: Foundations</option>
-                    <option value="2">Semester 2: Patterns</option>
-                    <option value="3">Semester 3: Advanced</option>
-                    <option value="4">Semester 4: Production</option>
-                </select>
+                <label for="search">Search</label>
+                <input type="text" id="search" placeholder="Search algorithms...">
             </div>
             <div class="filter-group">
-                <label for="categoryFilter">Category</label>
-                <select id="categoryFilter">
+                <label for="category">Category</label>
+                <select id="category">
                     <option value="">All Categories</option>
                 </select>
             </div>
             <div class="filter-group">
-                <label for="searchFilter">Search</label>
-                <input type="text" id="searchFilter" placeholder="Search algorithms...">
+                <label for="semester">Semester</label>
+                <select id="semester">
+                    <option value="">All Semesters</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="sort">Sort By</label>
+                <select id="sort">
+                    <option value="name">Name</option>
+                    <option value="semester">Semester</option>
+                    <option value="category">Category</option>
+                    <option value="complexity">Complexity</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="order">Order</label>
+                <select id="order">
+                    <option value="asc">Ascending</option>
+                    <option value="desc">Descending</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>&nbsp;</label>
+                <button class="btn btn-primary" onclick="loadAlgorithms()">Apply Filters</button>
             </div>
         </div>
         
-        <div class="algorithms-grid" id="algorithmsGrid">
+        <div id="algorithms-container">
             <div class="loading">Loading algorithms...</div>
         </div>
+        
+        <div class="pagination" id="pagination"></div>
     </div>
     
-    <div class="modal" id="modal">
+    <!-- Modal for algorithm preview -->
+    <div id="previewModal" class="modal">
         <div class="modal-content">
-            <span class="modal-close" onclick="closeModal()">&times;</span>
-            <div id="modalContent"></div>
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="preview-content"></div>
         </div>
     </div>
     
     <script>
-        let allAlgorithms = [];
+        let currentPage = 1;
+        let currentFilters = {};
         
-        async function loadAlgorithms() {
+        // Load statistics
+        async function loadStatistics() {
             try {
-                const response = await fetch('/api/algorithms');
-                allAlgorithms = await response.json();
-                updateStats();
-                populateFilters();
-                displayAlgorithms(allAlgorithms);
+                const response = await fetch('/api/statistics');
+                const stats = await response.json();
+                document.getElementById('total-algorithms').textContent = stats.total_algorithms || 0;
+                document.getElementById('total-tests').textContent = stats.total_tests || 0;
+                document.getElementById('total-frameworks').textContent = stats.total_framework_examples || 0;
+                document.getElementById('total-semesters').textContent = stats.total_semesters || 0;
             } catch (error) {
-                document.getElementById('algorithmsGrid').innerHTML = 
-                    '<div class="loading">Error loading algorithms: ' + error + '</div>';
+                console.error('Error loading statistics:', error);
             }
         }
         
-        function updateStats() {
-            document.getElementById('totalAlgorithms').textContent = allAlgorithms.length;
-            const categories = new Set(allAlgorithms.map(a => a.category));
-            document.getElementById('totalCategories').textContent = categories.size;
-        }
-        
-        function populateFilters() {
-            const categories = [...new Set(allAlgorithms.map(a => a.category))].sort();
-            const categoryFilter = document.getElementById('categoryFilter');
-            categories.forEach(cat => {
-                const option = document.createElement('option');
-                option.value = cat;
-                option.textContent = cat;
-                categoryFilter.appendChild(option);
-            });
-        }
-        
-        function displayAlgorithms(algorithms) {
-            const grid = document.getElementById('algorithmsGrid');
-            
-            if (algorithms.length === 0) {
-                grid.innerHTML = '<div class="loading">No algorithms found</div>';
-                return;
-            }
-            
-            grid.innerHTML = algorithms.map(algo => `
-                <div class="algorithm-card">
-                    <div class="algorithm-header">
-                        <div class="algorithm-title">${algo.name}</div>
-                        <div class="semester-badge">S${algo.semester}</div>
-                    </div>
-                    <div class="algorithm-category">${algo.category}</div>
-                    <div class="complexity">
-                        <div class="complexity-item">
-                            <span class="complexity-label">Time:</span>
-                            <span class="complexity-value">${algo.complexity.time}</span>
-                        </div>
-                        <div class="complexity-item">
-                            <span class="complexity-label">Space:</span>
-                            <span class="complexity-value">${algo.complexity.space}</span>
-                        </div>
-                    </div>
-                    <div class="algorithm-actions">
-                        <button class="btn btn-python" onclick="runAlgorithm('${algo.semester}', '${algo.lecture}', '${algo.algorithm}', 'python')">
-                            🐍 Python
-                        </button>
-                        <button class="btn btn-java" onclick="runAlgorithm('${algo.semester}', '${algo.lecture}', '${algo.algorithm}', 'java')">
-                            ☕ Java
-                        </button>
-                        <button class="btn btn-info" onclick="showInfo('${algo.path}')">
-                            📖 Info
-                        </button>
-                    </div>
-                </div>
-            `).join('');
-        }
-        
-        function filterAlgorithms() {
-            const semester = document.getElementById('semesterFilter').value;
-            const category = document.getElementById('categoryFilter').value;
-            const search = document.getElementById('searchFilter').value.toLowerCase();
-            
-            const filtered = allAlgorithms.filter(algo => {
-                const matchSemester = !semester || algo.semester == semester;
-                const matchCategory = !category || algo.category === category;
-                const matchSearch = !search || 
-                    algo.name.toLowerCase().includes(search) ||
-                    algo.category.toLowerCase().includes(search);
-                return matchSemester && matchCategory && matchSearch;
-            });
-            
-            displayAlgorithms(filtered);
-        }
-        
-        async function runAlgorithm(semester, lecture, algorithm, language) {
-            const modal = document.getElementById('modal');
-            const content = document.getElementById('modalContent');
-            
-            content.innerHTML = `
-                <h2>Running ${algorithm} (${language})</h2>
-                <div class="output-section">Executing...</div>
-            `;
-            modal.style.display = 'block';
-            
+        // Load categories and semesters
+        async function loadFilters() {
             try {
-                const response = await fetch('/api/run', {
-                    method: 'POST',
-                    headers: {'Content-Type': 'application/json'},
-                    body: JSON.stringify({semester, lecture, algorithm, language})
+                const [categories, semesters] = await Promise.all([
+                    fetch('/api/categories').then(r => r.json()),
+                    fetch('/api/semesters').then(r => r.json())
+                ]);
+                
+                const categorySelect = document.getElementById('category');
+                categories.forEach(cat => {
+                    const option = document.createElement('option');
+                    option.value = cat;
+                    option.textContent = cat;
+                    categorySelect.appendChild(option);
                 });
                 
-                const result = await response.json();
-                
-                content.innerHTML = `
-                    <h2>${algorithm} (${language})</h2>
-                    <h3>Output:</h3>
-                    <div class="output-section">${result.stdout || 'No output'}</div>
-                    ${result.stderr ? '<h3>Errors:</h3><div class="output-section">' + result.stderr + '</div>' : ''}
-                    <p>Exit code: ${result.returncode}</p>
-                `;
+                const semesterSelect = document.getElementById('semester');
+                semesters.forEach(sem => {
+                    const option = document.createElement('option');
+                    option.value = sem;
+                    option.textContent = `Semester ${sem}`;
+                    semesterSelect.appendChild(option);
+                });
             } catch (error) {
-                content.innerHTML = `
-                    <h2>Error</h2>
-                    <div class="output-section">Failed to run algorithm: ${error}</div>
-                `;
+                console.error('Error loading filters:', error);
             }
         }
         
-        async function showInfo(path) {
-            const modal = document.getElementById('modal');
-            const content = document.getElementById('modalContent');
+        // Load algorithms
+        async function loadAlgorithms(page = 1) {
+            const container = document.getElementById('algorithms-container');
+            container.innerHTML = '<div class="loading">Loading algorithms...</div>';
             
-            content.innerHTML = '<h2>Loading...</h2>';
+            const search = document.getElementById('search').value;
+            const category = document.getElementById('category').value;
+            const semester = document.getElementById('semester').value;
+            const sort = document.getElementById('sort').value;
+            const order = document.getElementById('order').value;
+            
+            const params = new URLSearchParams({
+                page: page,
+                per_page: 50,
+                search: search,
+                category: category,
+                semester: semester,
+                sort: sort,
+                order: order
+            });
+            
+            try {
+                const response = await fetch(`/api/algorithms?${params}`);
+                const data = await response.json();
+                
+                currentPage = page;
+                currentFilters = { search, category, semester, sort, order };
+                
+                if (data.algorithms.length === 0) {
+                    container.innerHTML = '<div class="loading">No algorithms found.</div>';
+                    return;
+                }
+                
+                container.innerHTML = '<div class="algorithms-grid"></div>';
+                const grid = container.querySelector('.algorithms-grid');
+                
+                data.algorithms.forEach(algo => {
+                    const card = document.createElement('div');
+                    card.className = 'algorithm-card';
+                    card.onclick = () => showPreview(algo.id);
+                    
+                    const frameworks = algo.frameworks ? algo.frameworks.split(',') : [];
+                    
+                    card.innerHTML = `
+                        <h3>${algo.display_name}</h3>
+                        <div class="meta">
+                            ${algo.semester_number ? `<span>Semester ${algo.semester_number}</span>` : ''}
+                            ${algo.category ? `<span>${algo.category}</span>` : ''}
+                            ${algo.time_complexity ? `<span>${algo.time_complexity}</span>` : ''}
+                        </div>
+                        <div class="description">
+                            ${algo.short_description || algo.description || 'No description available.'}
+                        </div>
+                        ${frameworks.length > 0 ? `
+                            <div class="frameworks">
+                                ${frameworks.map(f => `<span>${f.trim()}</span>`).join('')}
+                            </div>
+                        ` : ''}
+                    `;
+                    
+                    grid.appendChild(card);
+                });
+                
+                // Update pagination
+                updatePagination(data.pagination);
+            } catch (error) {
+                console.error('Error loading algorithms:', error);
+                container.innerHTML = '<div class="loading">Error loading algorithms.</div>';
+            }
+        }
+        
+        // Update pagination
+        function updatePagination(pagination) {
+            const paginationDiv = document.getElementById('pagination');
+            paginationDiv.innerHTML = '';
+            
+            const totalPages = pagination.pages;
+            if (totalPages <= 1) return;
+            
+            // Previous button
+            const prevBtn = document.createElement('button');
+            prevBtn.textContent = 'Previous';
+            prevBtn.disabled = currentPage === 1;
+            prevBtn.onclick = () => loadAlgorithms(currentPage - 1);
+            paginationDiv.appendChild(prevBtn);
+            
+            // Page numbers
+            const startPage = Math.max(1, currentPage - 2);
+            const endPage = Math.min(totalPages, currentPage + 2);
+            
+            for (let i = startPage; i <= endPage; i++) {
+                const pageBtn = document.createElement('button');
+                pageBtn.textContent = i;
+                pageBtn.className = i === currentPage ? 'active' : '';
+                pageBtn.onclick = () => loadAlgorithms(i);
+                paginationDiv.appendChild(pageBtn);
+            }
+            
+            // Next button
+            const nextBtn = document.createElement('button');
+            nextBtn.textContent = 'Next';
+            nextBtn.disabled = currentPage === totalPages;
+            nextBtn.onclick = () => loadAlgorithms(currentPage + 1);
+            paginationDiv.appendChild(nextBtn);
+        }
+        
+        // Show algorithm preview
+        async function showPreview(algorithmId) {
+            const modal = document.getElementById('previewModal');
+            const content = document.getElementById('preview-content');
+            content.innerHTML = '<div class="loading">Loading details...</div>';
             modal.style.display = 'block';
             
             try {
-                const response = await fetch(`/api/readme/${path}`);
-                const result = await response.json();
+                const response = await fetch(`/api/algorithm/${algorithmId}`);
+                const algo = await response.json();
                 
-                // Simple markdown to HTML conversion
-                let html = result.content
-                    .replace(/### (.*)/g, '<h3>$1</h3>')
-                    .replace(/## (.*)/g, '<h2>$1</h2>')
-                    .replace(/# (.*)/g, '<h1>$1</h1>')
-                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                    .replace(/\*(.*?)\*/g, '<em>$1</em>')
-                    .replace(/```(.*?)```/gs, '<pre><code>$1</code></pre>')
-                    .replace(/\n/g, '<br>');
-                
-                content.innerHTML = html;
+                content.innerHTML = `
+                    <h2>${algo.display_name}</h2>
+                    <div class="preview-section">
+                        <h4>Basic Information</h4>
+                        <p><strong>Semester:</strong> ${algo.semester_number || 'N/A'}</p>
+                        <p><strong>Lecture:</strong> ${algo.lecture_name || 'N/A'}</p>
+                        <p><strong>Category:</strong> ${algo.category || 'N/A'}</p>
+                        <p><strong>Time Complexity:</strong> ${algo.time_complexity || 'N/A'}</p>
+                        <p><strong>Space Complexity:</strong> ${algo.space_complexity || 'N/A'}</p>
+                    </div>
+                    ${algo.description ? `
+                        <div class="preview-section">
+                            <h4>Description</h4>
+                            <p>${algo.description}</p>
+                        </div>
+                    ` : ''}
+                    ${algo.advantages && algo.advantages.length > 0 ? `
+                        <div class="preview-section">
+                            <h4>Advantages</h4>
+                            <ul>
+                                ${algo.advantages.map(a => `<li>${a}</li>`).join('')}
+                            </ul>
+                        </div>
+                    ` : ''}
+                    ${algo.shortcomings && algo.shortcomings.length > 0 ? `
+                        <div class="preview-section">
+                            <h4>Shortcomings</h4>
+                            <ul>
+                                ${algo.shortcomings.map(s => `<li>${s}</li>`).join('')}
+                            </ul>
+                        </div>
+                    ` : ''}
+                    ${algo.frameworks && algo.frameworks.length > 0 ? `
+                        <div class="preview-section">
+                            <h4>Framework Examples</h4>
+                            <p>${algo.frameworks.map(f => f.framework_name).join(', ')}</p>
+                        </div>
+                    ` : ''}
+                    ${algo.files && algo.files.length > 0 ? `
+                        <div class="preview-section">
+                            <h4>Files</h4>
+                            <ul>
+                                ${algo.files.map(f => `<li>${f.file_name} (${f.file_type})</li>`).join('')}
+                            </ul>
+                        </div>
+                    ` : ''}
+                `;
             } catch (error) {
-                content.innerHTML = `<h2>Error</h2><p>Failed to load README: ${error}</p>`;
+                content.innerHTML = '<div class="loading">Error loading algorithm details.</div>';
             }
         }
         
+        // Close modal
         function closeModal() {
-            document.getElementById('modal').style.display = 'none';
+            document.getElementById('previewModal').style.display = 'none';
         }
         
-        // Event listeners
-        document.getElementById('semesterFilter').addEventListener('change', filterAlgorithms);
-        document.getElementById('categoryFilter').addEventListener('change', filterAlgorithms);
-        document.getElementById('searchFilter').addEventListener('input', filterAlgorithms);
-        
-        // Close modal on outside click
+        // Close modal when clicking outside
         window.onclick = function(event) {
-            const modal = document.getElementById('modal');
+            const modal = document.getElementById('previewModal');
             if (event.target === modal) {
-                modal.style.display = 'none';
+                closeModal();
             }
         }
         
-        // Load algorithms on page load
+        // Search on Enter key
+        document.getElementById('search').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                loadAlgorithms(1);
+            }
+        });
+        
+        // Initialize
+        loadStatistics();
+        loadFilters();
         loadAlgorithms();
     </script>
 </body>
 </html>
-
