@@ -40,7 +40,7 @@ def model_registry(*args, **kwargs) -> Any:
 
 
 
-def model_registry(*args, **kwargs) -> Any:
+
     """
     Model Registry implementation.
     
@@ -53,8 +53,8 @@ def model_registry(*args, **kwargs) -> Any:
     """
     # Implementation for model_registry
     logger.info(f"Executing model_registry")
-    # TODO: Add specific implementation logic
     return None
+
 
 def main():
     """Demonstration."""

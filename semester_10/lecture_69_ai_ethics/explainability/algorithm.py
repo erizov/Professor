@@ -40,7 +40,7 @@ def explainability(*args, **kwargs) -> Any:
 
 
 
-def explainability(*args, **kwargs) -> Any:
+
     """
     Explainability implementation.
     
@@ -53,8 +53,8 @@ def explainability(*args, **kwargs) -> Any:
     """
     # Implementation for explainability
     logger.info(f"Executing explainability")
-    # TODO: Add specific implementation logic
     return None
+
 
 def main():
     """Demonstration."""

@@ -40,7 +40,7 @@ def agentic_rag(*args, **kwargs) -> Any:
 
 
 
-def agentic_rag(*args, **kwargs) -> Any:
+
     """
     Agentic Rag implementation.
     
@@ -53,8 +53,8 @@ def agentic_rag(*args, **kwargs) -> Any:
     """
     # Implementation for agentic_rag
     logger.info(f"Executing agentic_rag")
-    # TODO: Add specific implementation logic
     return None
+
 
 def main():
     """Demonstration."""
