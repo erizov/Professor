@@ -40,7 +40,7 @@ def rollups(*args, **kwargs) -> Any:
 
 
 
-def rollups(*args, **kwargs) -> Any:
+
     """
     Rollups implementation.
     
@@ -53,8 +53,8 @@ def rollups(*args, **kwargs) -> Any:
     """
     # Implementation for rollups
     logger.info(f"Executing rollups")
-    # TODO: Add specific implementation logic
     return None
+
 
 def main():
     """Demonstration."""

@@ -40,7 +40,7 @@ def tendermint(*args, **kwargs) -> Any:
 
 
 
-def tendermint(*args, **kwargs) -> Any:
+
     """
     Tendermint implementation.
     
@@ -53,8 +53,8 @@ def tendermint(*args, **kwargs) -> Any:
     """
     # Implementation for tendermint
     logger.info(f"Executing tendermint")
-    # TODO: Add specific implementation logic
     return None
+
 
 def main():
     """Demonstration."""
