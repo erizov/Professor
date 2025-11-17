@@ -8561,6 +8561,65 @@ Graph:
 ## Examples of Deployment
 
 This altechniqueattern is implemented in the following frameworks and technologies:
+### Python Standard Library
+
+```python
+# NetworkX uses BFS for graph traversal
+import networkx as nx
+from collections import deque
+
+def bfs_example(graph, start):
+    queue = deque([start])
+    visited = {start}
+    result = []
+    
+    while queue:
+        node = queue.popleft()
+        result.append(node)
+        
+        for neighbor in graph.neighbors(node):
+            if neighbor not in visited:
+                visited.add(neighbor)
+                queue.append(neighbor)
+    
+    return result
+```
+
+**Purpose**: Python standard library uses this algorithm for efficient data operations.
+
+### Spring Framework
+
+```java
+// Spring Framework - BFS in Dependency Resolution
+@Component
+public class DependencyResolver {
+    public List<Component> resolveDependencies(Component root) {
+        Queue<Component> queue = new LinkedList<>();
+        Set<Component> visited = new HashSet<>();
+        List<Component> result = new ArrayList<>();
+        
+        queue.offer(root);
+        visited.add(root);
+        
+        while (!queue.isEmpty()) {
+            Component current = queue.poll();
+            result.add(current);
+            
+            // BFS: Add all dependencies
+            for (Component dep : current.getDependencies()) {
+                if (!visited.contains(dep)) {
+                    visited.add(dep);
+                    queue.offer(dep);
+                }
+            }
+        }
+        return result;
+    }
+}
+```
+
+**Purpose**: Spring Framework uses this pattern/algorithm for enterprise application development.
+
 
 ### Docker
 
@@ -8970,7 +9029,101 @@ Graph:
 
 ## Examples of Deployment
 
-This altechniqueattern is implemented in the following frameworks and technologies:
+This altechniqueattern is implemented in the following frameworks and technologies:### Python Standard Library
+
+```python
+# Python - DFS implementation
+def dfs(graph, start, visited=None):
+    if visited is None:
+        visited = set()
+    
+    visited.add(start)
+    result = [start]
+    
+    for neighbor in graph.get(start, []):
+        if neighbor not in visited:
+            result.extend(dfs(graph, neighbor, visited))
+    
+    return result
+```
+
+**Purpose**: Python standard library uses this algorithm for efficient data operations.
+
+### Spring Framework
+
+```java
+// Spring Framework - DFS in Bean Initialization
+@Component
+public class BeanInitializer {
+    private Set<Bean> visited = new HashSet<>();
+    
+    public void initializeBeans(Bean root) {
+        if (visited.contains(root)) {
+            return; // Cycle detection
+        }
+        
+        visited.add(root);
+        
+        // DFS: Initialize dependencies first
+        for (Bean dependency : root.getDependencies()) {
+            initializeBeans(dependency);
+        }
+        
+        root.initialize();
+    }
+}
+```
+
+**Purpose**: Spring Framework uses this pattern/algorithm for enterprise application development.
+
+
+### Python Standard Library
+
+```python
+# Python - DFS implementation
+def dfs(graph, start, visited=None):
+    if visited is None:
+        visited = set()
+    
+    visited.add(start)
+    result = [start]
+    
+    for neighbor in graph.get(start, []):
+        if neighbor not in visited:
+            result.extend(dfs(graph, neighbor, visited))
+    
+    return result
+```
+
+**Purpose**: Python standard library uses this algorithm for efficient data operations.
+
+### Spring Framework
+
+```java
+// Spring Framework - DFS in Bean Initialization
+@Component
+public class BeanInitializer {
+    private Set<Bean> visited = new HashSet<>();
+    
+    public void initializeBeans(Bean root) {
+        if (visited.contains(root)) {
+            return; // Cycle detection
+        }
+        
+        visited.add(root);
+        
+        // DFS: Initialize dependencies first
+        for (Bean dependency : root.getDependencies()) {
+            initializeBeans(dependency);
+        }
+        
+        root.initialize();
+    }
+}
+```
+
+**Purpose**: Spring Framework uses this pattern/algorithm for enterprise application development.
+
 
 ### Spring Framework
 
@@ -9296,7 +9449,83 @@ Find shortest path from A to all nodes.
 
 ## Examples of Deployment
 
-This altechniqueattern is implemented in the following frameworks and technologies:
+This altechniqueattern is implemented in the following frameworks and technologies:### Java Standard Library
+
+```java
+// Java - Dijkstra's Algorithm for Shortest Path
+import java.util.*;
+
+public class DijkstraExample {
+    public Map<Node, Integer> shortestPaths(Graph graph, Node start) {
+        PriorityQueue<Node> pq = new PriorityQueue<>(
+            Comparator.comparingInt(n -> distances.get(n))
+        );
+        Map<Node, Integer> distances = new HashMap<>();
+        Set<Node> visited = new HashSet<>();
+        
+        distances.put(start, 0);
+        pq.offer(start);
+        
+        while (!pq.isEmpty()) {
+            Node current = pq.poll();
+            if (visited.contains(current)) continue;
+            
+            visited.add(current);
+            
+            for (Edge edge : graph.getEdges(current)) {
+                int newDist = distances.get(current) + edge.weight;
+                if (newDist < distances.getOrDefault(edge.to, Integer.MAX_VALUE)) {
+                    distances.put(edge.to, newDist);
+                    pq.offer(edge.to);
+                }
+            }
+        }
+        return distances;
+    }
+}
+```
+
+**Purpose**: Java standard library uses this algorithm for core data structure operations.
+
+
+### Java Standard Library
+
+```java
+// Java - Dijkstra's Algorithm for Shortest Path
+import java.util.*;
+
+public class DijkstraExample {
+    public Map<Node, Integer> shortestPaths(Graph graph, Node start) {
+        PriorityQueue<Node> pq = new PriorityQueue<>(
+            Comparator.comparingInt(n -> distances.get(n))
+        );
+        Map<Node, Integer> distances = new HashMap<>();
+        Set<Node> visited = new HashSet<>();
+        
+        distances.put(start, 0);
+        pq.offer(start);
+        
+        while (!pq.isEmpty()) {
+            Node current = pq.poll();
+            if (visited.contains(current)) continue;
+            
+            visited.add(current);
+            
+            for (Edge edge : graph.getEdges(current)) {
+                int newDist = distances.get(current) + edge.weight;
+                if (newDist < distances.getOrDefault(edge.to, Integer.MAX_VALUE)) {
+                    distances.put(edge.to, newDist);
+                    pq.offer(edge.to);
+                }
+            }
+        }
+        return distances;
+    }
+}
+```
+
+**Purpose**: Java standard library uses this algorithm for core data structure operations.
+
 
 ### Kubernetes
 
@@ -103461,7 +103690,149 @@ Test your understanding with these questions:
 
 ## Examples of Deployment
 
-This altechniqueattern is implemented in the following frameworks and technologies:
+This altechniqueattern is implemented in the following frameworks and technologies:### Spring Framework
+
+```java
+// Spring Framework - Strategy Pattern with @Qualifier
+public interface PaymentStrategy {
+    void pay(double amount);
+}
+
+@Component("creditCard")
+public class CreditCardStrategy implements PaymentStrategy {
+    public void pay(double amount) {
+        // Credit card payment logic
+    }
+}
+
+@Component("paypal")
+public class PayPalStrategy implements PaymentStrategy {
+    public void pay(double amount) {
+        // PayPal payment logic
+    }
+}
+
+@Service
+public class PaymentService {
+    @Autowired
+    @Qualifier("creditCard")
+    private PaymentStrategy strategy;
+    
+    public void processPayment(double amount) {
+        strategy.pay(amount);
+    }
+}
+```
+
+**Purpose**: Spring Framework uses this pattern/algorithm for enterprise application development.
+
+### .NET Framework
+
+```csharp
+// .NET - Strategy Pattern
+public interface IPaymentStrategy
+{
+    void Pay(decimal amount);
+}
+
+public class CreditCardStrategy : IPaymentStrategy
+{
+    public void Pay(decimal amount)
+    {
+        // Credit card payment logic
+    }
+}
+
+public class PaymentService
+{
+    private readonly IPaymentStrategy _strategy;
+    
+    public PaymentService(IPaymentStrategy strategy)
+    {
+        _strategy = strategy;
+    }
+    
+    public void ProcessPayment(decimal amount)
+    {
+        _strategy.Pay(amount);
+    }
+}
+```
+
+**Purpose**: .NET Framework implements this pattern/algorithm for service architecture.
+
+
+### Spring Framework
+
+```java
+// Spring Framework - Strategy Pattern with @Qualifier
+public interface PaymentStrategy {
+    void pay(double amount);
+}
+
+@Component("creditCard")
+public class CreditCardStrategy implements PaymentStrategy {
+    public void pay(double amount) {
+        // Credit card payment logic
+    }
+}
+
+@Component("paypal")
+public class PayPalStrategy implements PaymentStrategy {
+    public void pay(double amount) {
+        // PayPal payment logic
+    }
+}
+
+@Service
+public class PaymentService {
+    @Autowired
+    @Qualifier("creditCard")
+    private PaymentStrategy strategy;
+    
+    public void processPayment(double amount) {
+        strategy.pay(amount);
+    }
+}
+```
+
+**Purpose**: Spring Framework uses this pattern/algorithm for enterprise application development.
+
+### .NET Framework
+
+```csharp
+// .NET - Strategy Pattern
+public interface IPaymentStrategy
+{
+    void Pay(decimal amount);
+}
+
+public class CreditCardStrategy : IPaymentStrategy
+{
+    public void Pay(decimal amount)
+    {
+        // Credit card payment logic
+    }
+}
+
+public class PaymentService
+{
+    private readonly IPaymentStrategy _strategy;
+    
+    public PaymentService(IPaymentStrategy strategy)
+    {
+        _strategy = strategy;
+    }
+    
+    public void ProcessPayment(decimal amount)
+    {
+        _strategy.Pay(amount);
+    }
+}
+```
+
+**Purpose**: .NET Framework implements this pattern/algorithm for service architecture.
+
 
 ### Spring Framework
 

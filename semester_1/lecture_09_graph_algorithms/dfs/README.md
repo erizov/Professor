@@ -178,7 +178,54 @@ Graph:
 
 ## Examples of Deployment
 
-This altechniqueattern is implemented in the following frameworks and technologies:
+This altechniqueattern is implemented in the following frameworks and technologies:### Python Standard Library
+
+```python
+# Python - DFS implementation
+def dfs(graph, start, visited=None):
+    if visited is None:
+        visited = set()
+    
+    visited.add(start)
+    result = [start]
+    
+    for neighbor in graph.get(start, []):
+        if neighbor not in visited:
+            result.extend(dfs(graph, neighbor, visited))
+    
+    return result
+```
+
+**Purpose**: Python standard library uses this algorithm for efficient data operations.
+
+### Spring Framework
+
+```java
+// Spring Framework - DFS in Bean Initialization
+@Component
+public class BeanInitializer {
+    private Set<Bean> visited = new HashSet<>();
+    
+    public void initializeBeans(Bean root) {
+        if (visited.contains(root)) {
+            return; // Cycle detection
+        }
+        
+        visited.add(root);
+        
+        // DFS: Initialize dependencies first
+        for (Bean dependency : root.getDependencies()) {
+            initializeBeans(dependency);
+        }
+        
+        root.initialize();
+    }
+}
+```
+
+**Purpose**: Spring Framework uses this pattern/algorithm for enterprise application development.
+
+
 ### Python Standard Library
 
 ```python
