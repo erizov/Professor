@@ -29,6 +29,7 @@ def pbft(*args, **kwargs) -> Any:
     Space Complexity: See README.md
     """
     
+
 def pbft(*args, **kwargs) -> Any:
     """
     Pbft implementation.
@@ -44,6 +45,32 @@ def pbft(*args, **kwargs) -> Any:
     logger.info(f"Executing pbft")
     # TODO: Add specific implementation logic
     return None
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Pbft")
+    print("=" * 70)
+    
+    # Example usage
+    result = pbft()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Pbft")
+    print("=" * 70)
+    
+    # Example usage
+    result = pbft()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
 
 def main():
     """Demonstration."""
