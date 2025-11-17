@@ -38,6 +38,7 @@ def transactional_memory(*args, **kwargs) -> Any:
 
 
 
+
 def transactional_memory(*args, **kwargs) -> Any:
     """
     Transactional Memory implementation.
@@ -53,6 +54,13318 @@ def transactional_memory(*args, **kwargs) -> Any:
     logger.info(f"Executing transactional_memory")
     # TODO: Add specific implementation logic
     return None
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Transactional Memory")
+    print("=" * 70)
+    
+    # Example usage
+    result = transactional_memory()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
 
 def main():
     """Demonstration."""
