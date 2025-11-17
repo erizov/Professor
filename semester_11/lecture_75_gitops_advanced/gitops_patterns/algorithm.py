@@ -41,6 +41,7 @@ def gitops_patterns(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Gitops Patterns implementation.
     
