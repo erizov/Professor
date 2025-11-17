@@ -1,16 +1,21 @@
-import java.util.*;
+import java.util.Arrays;
+import java.util.Random;
+
 import java.util.logging.Logger;
-
-/**
- * Crdt implementation.
- */
+public class Algorithm {
+    private static final Logger logger = Logger.getLogger
+    /**
+     * Crdt.
+     * 
+     * @param args Variable arguments
+     * @return Result of the algorithm
+     */
     public static Object crdt(Object... args) {
-    // TODO: Implement crdt based on README.md
-    logger.info("Executing crdt");
-    return null;
-}
-
-public static void main(String[] args) {
+        logger.info("Executing crdt");
+        // TODO: Implement crdt based on README.md
+        return null;
+    }
+    public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Crdt");
         System.out.println("=".repeat(70));

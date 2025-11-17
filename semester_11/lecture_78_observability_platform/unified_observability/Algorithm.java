@@ -1,21 +1,26 @@
-import java.util.*;
+import java.util.Arrays;
+import java.util.Random;
+
 import java.util.logging.Logger;
-
-/**
- * Unified Observability implementation.
- */
+public class Algorithm {
+    private static final Logger logger = Logger.getLogger
+    /**
+     * Unified Observability.
+     * 
+     * @param args Variable arguments
+     * @return Result of the algorithm
+     */
     public static Object unifiedobservability(Object... args) {
-    // TODO: Implement unifiedobservability based on README.md
-    logger.info("Executing unifiedobservability");
-    return null;
-}
-
-public static void main(String[] args) {
+        logger.info("Executing unified_observability");
+        // TODO: Implement unified_observability based on README.md
+        return null;
+    }
+    public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Unified Observability");
         System.out.println("=".repeat(70));
         
-        Object result = unified_observability();
+        Object result = unifiedobservability();
         System.out.println("Result: " + result);
         System.out.println("\nSee README.md for implementation details");
     }

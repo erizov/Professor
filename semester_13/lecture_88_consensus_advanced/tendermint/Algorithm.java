@@ -1,16 +1,21 @@
-import java.util.*;
+import java.util.Arrays;
+import java.util.Random;
+
 import java.util.logging.Logger;
-
-/**
- * Tendermint implementation.
- */
+public class Algorithm {
+    private static final Logger logger = Logger.getLogger
+    /**
+     * Tendermint.
+     * 
+     * @param args Variable arguments
+     * @return Result of the algorithm
+     */
     public static Object tendermint(Object... args) {
-    // TODO: Implement tendermint based on README.md
-    logger.info("Executing tendermint");
-    return null;
-}
-
-public static void main(String[] args) {
+        logger.info("Executing tendermint");
+        // TODO: Implement tendermint based on README.md
+        return null;
+    }
+    public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Tendermint");
         System.out.println("=".repeat(70));

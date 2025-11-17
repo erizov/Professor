@@ -282,14 +282,16 @@ def generate_java_implementation(algorithm_name: str, category: str, metadata: D
             ref_header = header_match.group(1)
     
     if not ref_header:
-        ref_header = '''import java.util.*;
+        ref_header = f'''import java.util.*;
 import java.util.logging.Logger;
 
 /**
  * {description} implementation.
  */
 public class Algorithm {{
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());'''.format(description=description)
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());'''
+    
+    method_name = algorithm_name.replace('_', '')
     
     # Generate method based on category
     if 'sort' in category.lower() or 'sort' in algorithm_name.lower():
@@ -300,7 +302,7 @@ public class Algorithm {{
      * @param arr Array to process
      * @return Processed array
      */
-    public static int[] {algorithm_name.replace('_', '')}(int[] arr) {{
+    public static int[] {method_name}(int[] arr) {{
         if (arr == null || arr.length == 0) {{
             return arr;
         }}
@@ -318,7 +320,7 @@ public class Algorithm {{
      * @param target Target value
      * @return Index if found, -1 otherwise
      */
-    public static int {algorithm_name.replace('_', '')}(int[] arr, int target) {{
+    public static int {method_name}(int[] arr, int target) {{
         if (arr == null || arr.length == 0) {{
             return -1;
         }}
@@ -340,14 +342,15 @@ public class Algorithm {{
      * @param args Variable arguments
      * @return Result of the algorithm
      */
-    public static Object {algorithm_name.replace('_', '')}(Object... args) {{
+    public static Object {method_name}(Object... args) {{
         logger.info("Executing {algorithm_name}");
         // TODO: Implement {algorithm_name} based on README.md
         return null;
     }}'''
     
-    main_method = '''
-    public static void main(String[] args) {
+    method_name = algorithm_name.replace('_', '')
+    main_method = f'''
+    public static void main(String[] args) {{
         System.out.println("=".repeat(70));
         System.out.println("{description}");
         System.out.println("=".repeat(70));
@@ -355,8 +358,8 @@ public class Algorithm {{
         Object result = {method_name}();
         System.out.println("Result: " + result);
         System.out.println("\\nSee README.md for implementation details");
-    }
-}}'''.format(description=description, method_name=algorithm_name.replace('_', ''))
+    }}
+}}'''
     
     return ref_header + method + main_method
 

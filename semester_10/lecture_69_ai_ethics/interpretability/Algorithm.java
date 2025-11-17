@@ -1,16 +1,21 @@
-import java.util.*;
+import java.util.Arrays;
+import java.util.Random;
+
 import java.util.logging.Logger;
-
-/**
- * Interpretability implementation.
- */
+public class Algorithm {
+    private static final Logger logger = Logger.getLogger
+    /**
+     * Interpretability.
+     * 
+     * @param args Variable arguments
+     * @return Result of the algorithm
+     */
     public static Object interpretability(Object... args) {
-    // TODO: Implement interpretability based on README.md
-    logger.info("Executing interpretability");
-    return null;
-}
-
-public static void main(String[] args) {
+        logger.info("Executing interpretability");
+        // TODO: Implement interpretability based on README.md
+        return null;
+    }
+    public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Interpretability");
         System.out.println("=".repeat(70));

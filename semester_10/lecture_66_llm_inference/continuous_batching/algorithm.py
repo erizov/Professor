@@ -1,21 +1,22 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Continuous Batching implementation.
+Quick Sort implementation.
+
+Efficient divide-and-conquer sorting algorithm that picks a pivot
+element and partitions the array around it.
 """
 
-from typing import List, Optional, Any, Dict
+from typing import List, TypeVar
+import random
 from framework.logging_utils import get_logger
-from framework.performance_timer import PerformanceTimer
-import sys
-from pathlib import Path
+import logging
 
-sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
 def continuous_batching(*args, **kwargs) -> Any:
     """
-    continuous_batching algorithm implementation.
+    Continuous Batching.
     
     Args:
         *args: Variable arguments
@@ -27,10 +28,9 @@ def continuous_batching(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
+    logger.info(f"Executing {algorithm_name}")
     # TODO: Implement continuous_batching based on README.md
-    logger.info(f"Executing {name}")
     return None
-
 def main():
     """Demonstration."""
     print("=" * 70)

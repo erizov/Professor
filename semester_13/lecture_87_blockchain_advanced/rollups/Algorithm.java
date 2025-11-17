@@ -1,16 +1,21 @@
-import java.util.*;
+import java.util.Arrays;
+import java.util.Random;
+
 import java.util.logging.Logger;
-
-/**
- * Rollups implementation.
- */
+public class Algorithm {
+    private static final Logger logger = Logger.getLogger
+    /**
+     * Rollups.
+     * 
+     * @param args Variable arguments
+     * @return Result of the algorithm
+     */
     public static Object rollups(Object... args) {
-    // TODO: Implement rollups based on README.md
-    logger.info("Executing rollups");
-    return null;
-}
-
-public static void main(String[] args) {
+        logger.info("Executing rollups");
+        // TODO: Implement rollups based on README.md
+        return null;
+    }
+    public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Rollups");
         System.out.println("=".repeat(70));

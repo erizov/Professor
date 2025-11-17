@@ -1,16 +1,21 @@
-import java.util.*;
+import java.util.Arrays;
+import java.util.Random;
+
 import java.util.logging.Logger;
-
-/**
- * Pbft implementation.
- */
+public class Algorithm {
+    private static final Logger logger = Logger.getLogger
+    /**
+     * Pbft.
+     * 
+     * @param args Variable arguments
+     * @return Result of the algorithm
+     */
     public static Object pbft(Object... args) {
-    // TODO: Implement pbft based on README.md
-    logger.info("Executing pbft");
-    return null;
-}
-
-public static void main(String[] args) {
+        logger.info("Executing pbft");
+        // TODO: Implement pbft based on README.md
+        return null;
+    }
+    public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Pbft");
         System.out.println("=".repeat(70));

@@ -1,21 +1,26 @@
-import java.util.*;
+import java.util.Arrays;
+import java.util.Random;
+
 import java.util.logging.Logger;
-
-/**
- * Data Discovery implementation.
- */
+public class Algorithm {
+    private static final Logger logger = Logger.getLogger
+    /**
+     * Data Discovery.
+     * 
+     * @param args Variable arguments
+     * @return Result of the algorithm
+     */
     public static Object datadiscovery(Object... args) {
-    // TODO: Implement datadiscovery based on README.md
-    logger.info("Executing datadiscovery");
-    return null;
-}
-
-public static void main(String[] args) {
+        logger.info("Executing data_discovery");
+        // TODO: Implement data_discovery based on README.md
+        return null;
+    }
+    public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Data Discovery");
         System.out.println("=".repeat(70));
         
-        Object result = data_discovery();
+        Object result = datadiscovery();
         System.out.println("Result: " + result);
         System.out.println("\nSee README.md for implementation details");
     }

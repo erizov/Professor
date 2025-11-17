@@ -1,16 +1,21 @@
-import java.util.*;
+import java.util.Arrays;
+import java.util.Random;
+
 import java.util.logging.Logger;
-
-/**
- * Vectorization implementation.
- */
+public class Algorithm {
+    private static final Logger logger = Logger.getLogger
+    /**
+     * Vectorization.
+     * 
+     * @param args Variable arguments
+     * @return Result of the algorithm
+     */
     public static Object vectorization(Object... args) {
-    // TODO: Implement vectorization based on README.md
-    logger.info("Executing vectorization");
-    return null;
-}
-
-public static void main(String[] args) {
+        logger.info("Executing vectorization");
+        // TODO: Implement vectorization based on README.md
+        return null;
+    }
+    public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Vectorization");
         System.out.println("=".repeat(70));

@@ -1,21 +1,26 @@
-import java.util.*;
+import java.util.Arrays;
+import java.util.Random;
+
 import java.util.logging.Logger;
-
-/**
- * Community Analytics implementation.
- */
+public class Algorithm {
+    private static final Logger logger = Logger.getLogger
+    /**
+     * Community Analytics.
+     * 
+     * @param args Variable arguments
+     * @return Result of the algorithm
+     */
     public static Object communityanalytics(Object... args) {
-    // TODO: Implement communityanalytics based on README.md
-    logger.info("Executing communityanalytics");
-    return null;
-}
-
-public static void main(String[] args) {
+        logger.info("Executing community_analytics");
+        // TODO: Implement community_analytics based on README.md
+        return null;
+    }
+    public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Community Analytics");
         System.out.println("=".repeat(70));
         
-        Object result = community_analytics();
+        Object result = communityanalytics();
         System.out.println("Result: " + result);
         System.out.println("\nSee README.md for implementation details");
     }

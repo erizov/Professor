@@ -1,16 +1,21 @@
-import java.util.*;
+import java.util.Arrays;
+import java.util.Random;
+
 import java.util.logging.Logger;
-
-/**
- * Plasma implementation.
- */
+public class Algorithm {
+    private static final Logger logger = Logger.getLogger
+    /**
+     * Plasma.
+     * 
+     * @param args Variable arguments
+     * @return Result of the algorithm
+     */
     public static Object plasma(Object... args) {
-    // TODO: Implement plasma based on README.md
-    logger.info("Executing plasma");
-    return null;
-}
-
-public static void main(String[] args) {
+        logger.info("Executing plasma");
+        // TODO: Implement plasma based on README.md
+        return null;
+    }
+    public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Plasma");
         System.out.println("=".repeat(70));
