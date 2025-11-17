@@ -40,7 +40,7 @@ def personalized_docs(*args, **kwargs) -> Any:
 
 
 
-def personalized_docs(*args, **kwargs) -> Any:
+
     """
     Personalized Docs implementation.
     
@@ -53,8 +53,8 @@ def personalized_docs(*args, **kwargs) -> Any:
     """
     # Implementation for personalized_docs
     logger.info(f"Executing personalized_docs")
-    # TODO: Add specific implementation logic
     return None
+
 
 def main():
     """Demonstration."""

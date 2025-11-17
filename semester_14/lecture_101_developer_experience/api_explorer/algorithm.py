@@ -40,7 +40,7 @@ def api_explorer(*args, **kwargs) -> Any:
 
 
 
-def api_explorer(*args, **kwargs) -> Any:
+
     """
     Api Explorer implementation.
     
@@ -53,8 +53,8 @@ def api_explorer(*args, **kwargs) -> Any:
     """
     # Implementation for api_explorer
     logger.info(f"Executing api_explorer")
-    # TODO: Add specific implementation logic
     return None
+
 
 def main():
     """Demonstration."""
