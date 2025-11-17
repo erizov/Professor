@@ -29,6 +29,7 @@ def encryption_at_rest(*args, **kwargs) -> Any:
     Space Complexity: See README.md
     """
     
+
 def encryption_at_rest(*args, **kwargs) -> Any:
     """
     Encryption At Rest implementation.
@@ -44,6 +45,32 @@ def encryption_at_rest(*args, **kwargs) -> Any:
     logger.info(f"Executing encryption_at_rest")
     # TODO: Add specific implementation logic
     return None
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Encryption At Rest")
+    print("=" * 70)
+    
+    # Example usage
+    result = encryption_at_rest()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Encryption At Rest")
+    print("=" * 70)
+    
+    # Example usage
+    result = encryption_at_rest()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
 
 def main():
     """Demonstration."""
