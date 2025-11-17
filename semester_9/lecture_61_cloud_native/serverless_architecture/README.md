@@ -263,6 +263,33 @@ spec:
 **Purpose**: Kubernetes uses this for container orchestration and cluster management.
 
 
+### Kubernetes
+
+```yaml
+# Kubernetes - Knative Serverless
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: serverless-app
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/minScale: "1"
+        autoscaling.knative.dev/maxScale: "10"
+    spec:
+      containers:
+      - image: myapp:latest
+        ports:
+        - containerPort: 8080
+        env:
+        - name: ENV_VAR
+          value: "value"
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and cluster management.
+
+
 ## Algorithm Steps
 
 1. **Initialization**: Set up initial state and data structures
