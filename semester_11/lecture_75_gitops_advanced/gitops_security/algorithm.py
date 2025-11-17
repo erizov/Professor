@@ -40,7 +40,7 @@ def gitops_security(*args, **kwargs) -> Any:
 
 
 
-def gitops_security(*args, **kwargs) -> Any:
+
     """
     Gitops Security implementation.
     
@@ -53,8 +53,8 @@ def gitops_security(*args, **kwargs) -> Any:
     """
     # Implementation for gitops_security
     logger.info(f"Executing gitops_security")
-    # TODO: Add specific implementation logic
     return None
+
 
 def main():
     """Demonstration."""
