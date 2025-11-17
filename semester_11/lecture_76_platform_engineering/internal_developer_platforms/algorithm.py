@@ -41,6 +41,7 @@ def internal_developer_platforms(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Internal Developer Platforms implementation.
     
