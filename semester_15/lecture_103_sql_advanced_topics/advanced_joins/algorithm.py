@@ -35,6 +35,7 @@ def advanced_joins(*args, **kwargs) -> Any:
 
 
 
+
 def advanced_joins(*args, **kwargs) -> Any:
     """
     Advanced Joins implementation.
@@ -50,6 +51,1670 @@ def advanced_joins(*args, **kwargs) -> Any:
     logger.info(f"Executing advanced_joins")
     # TODO: Add specific implementation logic
     return None
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Advanced Joins")
+    print("=" * 70)
+    
+    # Example usage
+    result = advanced_joins()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
 
 def main():
     """Demonstration."""
