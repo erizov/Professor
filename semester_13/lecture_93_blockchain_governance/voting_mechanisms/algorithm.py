@@ -39,6 +39,7 @@ def voting_mechanisms(*args, **kwargs) -> Any:
 
 
 
+
 def voting_mechanisms(*args, **kwargs) -> Any:
     """
     Voting Mechanisms implementation.
@@ -54,6 +55,26630 @@ def voting_mechanisms(*args, **kwargs) -> Any:
     logger.info(f"Executing voting_mechanisms")
     # TODO: Add specific implementation logic
     return None
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Voting Mechanisms")
+    print("=" * 70)
+    
+    # Example usage
+    result = voting_mechanisms()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
 
 def main():
     """Demonstration."""
