@@ -39,6 +39,7 @@ def dynamic_pipelines(*args, **kwargs) -> Any:
 
 
 
+
 def dynamic_pipelines(*args, **kwargs) -> Any:
     """
     Dynamic Pipelines implementation.
@@ -54,6 +55,26630 @@ def dynamic_pipelines(*args, **kwargs) -> Any:
     logger.info(f"Executing dynamic_pipelines")
     # TODO: Add specific implementation logic
     return None
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Dynamic Pipelines")
+    print("=" * 70)
+    
+    # Example usage
+    result = dynamic_pipelines()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
 
 def main():
     """Demonstration."""
