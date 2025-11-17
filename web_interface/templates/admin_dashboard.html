@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Algorithms Course</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            min-height: 100vh;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 1.8rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem 4rem;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+        .card h2 {
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            background: #f8f9ff;
+            color: #667eea;
+            font-weight: 600;
+        }
+        tr:hover {
+            background: #fdfdfd;
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .badge-admin { background: #ffd166; color: #7a5b00; }
+        .badge-professor { background: #8ecae6; color: #014f86; }
+        .badge-student { background: #a7c957; color: #2d6a4f; }
+        .badge-reader { background: #dad7cd; color: #344e41; }
+        .status-active { color: #2d6a4f; font-weight: 600; }
+        .status-inactive { color: #b91c1c; font-weight: 600; }
+        .controls {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+        .controls input, .controls select {
+            padding: 0.5rem 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+        .btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 6px;
+            background: #667eea;
+            color: white;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #667eea;
+            color: #667eea;
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .form-grid input, .form-grid select {
+            width: 100%;
+        }
+        .toast {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            background: #1b5e20;
+            color: white;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: all 0.3s;
+        }
+        .toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <div>
+            <button class="btn btn-outline" onclick="window.location.href='/'">Home</button>
+            <button class="btn btn-outline" onclick="logout()">Logout</button>
+        </div>
+    </header>
+    <div class="container">
+        <div class="card">
+            <h2>Create New User</h2>
+            <form id="create-user-form">
+                <div class="form-grid">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="full_name" placeholder="Full Name">
+                    <select name="role" required>
+                        <option value="reader">Reader</option>
+                        <option value="student">Student</option>
+                        <option value="professor">Professor</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn">Create User</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>User Management</h2>
+            <div class="controls">
+                <input type="text" id="search" placeholder="Search users...">
+                <select id="role-filter">
+                    <option value="">All Roles</option>
+                    <option value="admin">Admin</option>
+                    <option value="professor">Professor</option>
+                    <option value="student">Student</option>
+                    <option value="reader">Reader</option>
+                </select>
+                <select id="status-filter">
+                    <option value="">All Status</option>
+                    <option value="active">Active</option>
+                    <option value="inactive">Inactive</option>
+                </select>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                        <th>Last Login</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="users-table"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script>
+        const toast = document.getElementById('toast');
+
+        function showToast(message, success = true) {
+            toast.textContent = message;
+            toast.style.background = success ? '#1b5e20' : '#b91c1c';
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 3000);
+        }
+
+        async function fetchUsers() {
+            try {
+                const response = await fetch('/admin/users');
+                const users = await response.json();
+                renderUsers(users);
+            } catch (error) {
+                showToast('Failed to load users', false);
+            }
+        }
+
+        function renderUsers(users) {
+            const searchTerm = document.getElementById('search').value.toLowerCase();
+            const roleFilter = document.getElementById('role-filter').value;
+            const statusFilter = document.getElementById('status-filter').value;
+            const tbody = document.getElementById('users-table');
+            tbody.innerHTML = '';
+
+            users
+                .filter(user => {
+                    const matchesSearch =
+                        user.username.toLowerCase().includes(searchTerm) ||
+                        (user.full_name && user.full_name.toLowerCase().includes(searchTerm));
+                    const matchesRole = !roleFilter || user.role === roleFilter;
+                    const matchesStatus =
+                        !statusFilter ||
+                        (statusFilter === 'active' && user.is_active) ||
+                        (statusFilter === 'inactive' && !user.is_active);
+                    return matchesSearch && matchesRole && matchesStatus;
+                })
+                .forEach(user => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>${user.username}</td>
+                        <td>${user.full_name || '-'}</td>
+                        <td><span class="badge badge-${user.role}">${user.role}</span></td>
+                        <td><span class="${user.is_active ? 'status-active' : 'status-inactive'}">
+                            ${user.is_active ? 'Active' : 'Inactive'}
+                        </span></td>
+                        <td>${user.last_login ? new Date(user.last_login).toLocaleString() : 'Never'}</td>
+                        <td>
+                            <button class="btn btn-outline" onclick="toggleUser(${user.id}, ${user.is_active})">
+                                ${user.is_active ? 'Deactivate' : 'Activate'}
+                            </button>
+                        </td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+        }
+
+        async function toggleUser(userId, currentStatus) {
+            try {
+                const response = await fetch(`/admin/users/${userId}`, {
+                    method: 'PUT',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ is_active: !currentStatus })
+                });
+                if (response.ok) {
+                    showToast('User updated');
+                    fetchUsers();
+                } else {
+                    throw new Error();
+                }
+            } catch {
+                showToast('Failed to update user', false);
+            }
+        }
+
+        document.getElementById('create-user-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const payload = Object.fromEntries(formData.entries());
+
+            try {
+                const response = await fetch('/admin/users', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                if (response.ok) {
+                    e.target.reset();
+                    showToast('User created');
+                    fetchUsers();
+                } else {
+                    const data = await response.json();
+                    showToast(data.error || 'Failed to create user', false);
+                }
+            } catch {
+                showToast('Failed to create user', false);
+            }
+        });
+
+        document.getElementById('search').addEventListener('input', fetchUsers);
+        document.getElementById('role-filter').addEventListener('change', fetchUsers);
+        document.getElementById('status-filter').addEventListener('change', fetchUsers);
+
+        async function logout() {
+            await fetch('/auth/logout', { method: 'POST' });
+            window.location.href = '/login';
+        }
+
+        fetchUsers();
+    </script>
+</body>
+</html>
+

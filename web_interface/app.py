@@ -5,7 +5,7 @@ Web interface for algorithm course.
 Provides sorting, searching, and preview functionality.
 """
 
-from flask import Flask, render_template, request, jsonify, session
+from flask import Flask, render_template, request, jsonify, session, redirect, url_for
 from flask_cors import CORS
 import sqlite3
 from pathlib import Path
@@ -22,16 +22,43 @@ CORS(app)
 from web_interface.dashboard import dashboard_bp
 from web_interface.auth import auth_bp
 from web_interface.reports import reports_bp
+from web_interface.admin import admin_bp
 
 app.register_blueprint(dashboard_bp)
 app.register_blueprint(auth_bp)
 app.register_blueprint(reports_bp)
+app.register_blueprint(admin_bp)
 
 # Login route
 @app.route('/login')
 def login_page():
     """Login page."""
     return render_template('login.html')
+
+
+def require_session(roles=None):
+    """Ensure user logged in and optionally has allowed role."""
+    if 'user_id' not in session:
+        return False
+    if roles and session.get('role') not in roles:
+        return False
+    return True
+
+
+@app.route('/admin')
+def admin_page():
+    """Admin dashboard page."""
+    if not require_session(['admin', 'professor']):
+        return redirect(url_for('login_page'))
+    return render_template('admin_dashboard.html')
+
+
+@app.route('/reports')
+def reports_page():
+    """Reports dashboard page."""
+    if not require_session(['admin', 'professor']):
+        return redirect(url_for('login_page'))
+    return render_template('reports_dashboard.html')
 
 def get_db_connection():
     """Get database connection."""
