@@ -1,21 +1,22 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Encryption In Transit implementation.
+Quick Sort implementation.
+
+Efficient divide-and-conquer sorting algorithm that picks a pivot
+element and partitions the array around it.
 """
 
-from typing import List, Optional, Any, Dict
+from typing import List, TypeVar
+import random
 from framework.logging_utils import get_logger
-from framework.performance_timer import PerformanceTimer
-import sys
-from pathlib import Path
+import logging
 
-sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
 def encryption_in_transit(*args, **kwargs) -> Any:
     """
-    encryption_in_transit algorithm implementation.
+    Encryption In Transit.
     
     Args:
         *args: Variable arguments
@@ -27,10 +28,9 @@ def encryption_in_transit(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
+    logger.info(f"Executing {algorithm_name}")
     # TODO: Implement encryption_in_transit based on README.md
-    logger.info(f"Executing {name}")
     return None
-
 def main():
     """Demonstration."""
     print("=" * 70)
