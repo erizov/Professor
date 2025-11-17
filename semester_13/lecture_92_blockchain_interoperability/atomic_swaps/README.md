@@ -331,6 +331,22 @@ outputs = model(**inputs)
 **Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
 
 
+### Hugging Face
+
+```python
+# Hugging Face - LLM Architecture
+from transformers import AutoModel, AutoTokenizer
+
+model = AutoModel.from_pretrained("bert-base-uncased")
+tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+
+inputs = tokenizer("Hello world", return_tensors="pt")
+outputs = model(**inputs)
+```
+
+**Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
+
+
 ## Algorithm Steps
 
 1. **Initialization**: Set up initial state and data structures
