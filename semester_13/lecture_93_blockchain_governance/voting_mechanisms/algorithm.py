@@ -41,6 +41,7 @@ def voting_mechanisms(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Voting Mechanisms implementation.
     
