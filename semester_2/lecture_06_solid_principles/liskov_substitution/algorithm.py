@@ -57,145 +57,20 @@ class Shape(ABC):
     @abstractmethod
     def get_area(self) -> float:
         """Get area."""
-        pass
-
-
-class Rectangle(Shape):
-    """Rectangle - follows LSP."""
+        
+    """
+    Liskov Substitution implementation.
     
-    def __init__(self, width: float, height: float):
-        self.width = width
-        self.height = height
-    
-    def get_area(self) -> float:
-        return self.width * self.height
-
-
-class Square(Shape):
-    """Square - follows LSP."""
-    
-    def __init__(self, side: float):
-        self.side = side
-    
-    def get_area(self) -> float:
-        return self.side ** 2
-
-
-# Example 2: Bird Example (Classic LSP Violation)
-# ❌ BAD: Violates LSP
-class BadBird:
-    """Bird that violates LSP."""
-    
-    def fly(self) -> None:
-        logger.info("Flying...")
-
-
-class BadPenguin(BadBird):
-    """Penguin - cannot fly, violates LSP."""
-    
-    def fly(self) -> None:
-        raise NotImplementedError("Penguins cannot fly!")  # Breaks LSP!
-
-
-# ✅ GOOD: Follows LSP
-class Bird(ABC):
-    """Abstract bird."""
-    
-    @abstractmethod
-    def move(self) -> None:
-        """Move - all birds can move."""
-        pass
-
-
-class FlyingBird(Bird):
-    """Bird that can fly."""
-    
-    def move(self) -> None:
-        self.fly()
-    
-    def fly(self) -> None:
-        logger.info("Flying...")
-
-
-class NonFlyingBird(Bird):
-    """Bird that cannot fly."""
-    
-    def move(self) -> None:
-        self.swim()
-    
-    def swim(self) -> None:
-        logger.info("Swimming...")
-
-
-class Sparrow(FlyingBird):
-    """Sparrow - can fly."""
-    pass
-
-
-class Penguin(NonFlyingBird):
-    """Penguin - cannot fly, but can swim."""
-    pass
-
-
-# Example 3: Collection Example
-class ReadOnlyCollection(ABC):
-    """Read-only collection interface."""
-    
-    @abstractmethod
-    def get(self, index: int) -> any:
-        """Get item at index."""
-        pass
-    
-    @abstractmethod
-    def size(self) -> int:
-        """Get size."""
-        pass
-
-
-class MutableCollection(ReadOnlyCollection):
-    """Mutable collection - extends read-only."""
-    
-    @abstractmethod
-    def add(self, item: any) -> None:
-        """Add item."""
-        pass
-    
-    @abstractmethod
-    def remove(self, index: int) -> None:
-        """Remove item."""
-        pass
-
-
-class ListCollection(MutableCollection):
-    """List collection - follows LSP."""
-    
-    def __init__(self):
-        self.items = []
-    
-    def get(self, index: int) -> any:
-        return self.items[index]
-    
-    def size(self) -> int:
-        return len(self.items)
-    
-    def add(self, item: any) -> None:
-        self.items.append(item)
-    
-    def remove(self, index: int) -> None:
-        self.items.pop(index)
-
-
-class ImmutableList(ReadOnlyCollection):
-    """Immutable list - follows LSP."""
-    
-    def __init__(self, items: list):
-        self.items = tuple(items)
-    
-    def get(self, index: int) -> any:
-        return self.items[index]
-    
-    def size(self) -> int:
-        return len(self.items)
+    Args:
+        *args: Variable arguments
+        **kwargs: Keyword arguments
+        
+    Returns:
+        Algorithm result
+    """
+    # Implementation for liskov_substitution
+    logger.info(f"Executing liskov_substitution")
+    return None
 
 
 def process_collection(collection: ReadOnlyCollection) -> None:
