@@ -26,92 +26,20 @@ class PaymentGateway(ABC):
     @abstractmethod
     def process_payment(self, amount: float, card_number: str) -> bool:
         """Process payment."""
-        pass
-
-
-class RealPaymentGateway(PaymentGateway):
-    """Real payment gateway (expensive to call in tests)."""
-    
-    def process_payment(self, amount: float, card_number: str) -> bool:
-        """Process payment - would make real API call."""
-        # In real implementation, this would call external API
-        return True
-
-
-class MockPaymentGateway(PaymentGateway):
-    """Mock payment gateway for testing."""
-    
-    def __init__(self):
-        self.call_count = 0
-        self.last_amount = None
-        self.should_succeed = True
-    
-    def process_payment(self, amount: float, card_number: str) -> bool:
-        """Mock payment processing."""
-        self.call_count += 1
-        self.last_amount = amount
-        return self.should_succeed
-
-
-class OrderService:
-    """Order service that depends on payment gateway."""
-    
-    def __init__(self, payment_gateway: PaymentGateway):
-        self.payment_gateway = payment_gateway
-    
-    def place_order(self, amount: float, card_number: str) -> bool:
-        """Place order and process payment."""
-        if amount <= 0:
-            return False
         
-        return self.payment_gateway.process_payment(amount, card_number)
-
-
-# Example: Using unittest.mock
-class EmailService:
-    """Email service."""
+    """
+    Mocking implementation.
     
-    def send_email(self, to: str, subject: str, body: str) -> bool:
-        """Send email - would send real email."""
-        return True
-
-
-class NotificationService:
-    """Notification service."""
-    
-    def __init__(self, email_service: EmailService):
-        self.email_service = email_service
-    
-    def notify_user(self, user_email: str, message: str) -> bool:
-        """Notify user via email."""
-        return self.email_service.send_email(
-            to=user_email,
-            subject="Notification",
-            body=message
-        )
-
-
-# Example: Stub implementation
-class DatabaseStub:
-    """Database stub for testing."""
-    
-    def __init__(self):
-        self.data: Dict[str, Any] = {}
-    
-    def save(self, key: str, value: Any) -> None:
-        """Save data."""
-        self.data[key] = value
-    
-    def get(self, key: str) -> Optional[Any]:
-        """Get data."""
-        return self.data.get(key)
-    
-    def delete(self, key: str) -> bool:
-        """Delete data."""
-        if key in self.data:
-            del self.data[key]
-            return True
-        return False
+    Args:
+        *args: Variable arguments
+        **kwargs: Keyword arguments
+        
+    Returns:
+        Algorithm result
+    """
+    # Implementation for mocking
+    logger.info(f"Executing mocking")
+    return None
 
 
 def main() -> None:

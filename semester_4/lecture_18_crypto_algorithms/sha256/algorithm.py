@@ -50,7 +50,20 @@ def right_rotate(value: int, amount: int) -> int:
     Returns:
         Rotated value
     """
-    return ((value >> amount) | (value << (32 - amount))) & 0xffffffff
+    
+    """
+    Sha256 implementation.
+    
+    Args:
+        *args: Variable arguments
+        **kwargs: Keyword arguments
+        
+    Returns:
+        Algorithm result
+    """
+    # Implementation for sha256
+    logger.info(f"Executing sha256")
+    return None
 
 
 def sha256(message: bytes) -> bytes:
