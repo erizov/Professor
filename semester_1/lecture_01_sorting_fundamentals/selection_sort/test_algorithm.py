@@ -23,13 +23,35 @@ class TestSelectionsort(AlgorithmTestCase):
         from semester_1.lecture_01_sorting_fundamentals.selection_sort.algorithm import selection_sort
         self.algorithm = selection_sort
     
-    def test_basic_functionality(self):
-        """Test basic algorithm functionality."""
-        # TODO: Add specific test cases based on algorithm
-        # Example for sorting:
-        # result = self.algorithm([3, 1, 4, 1, 5])
-        # self.assert_sorted(result)
-        pass
+    def test_basic_sorting(self):
+        """Test basic sorting functionality."""
+        result = self.algorithm([3, 1, 4, 1, 5, 9, 2, 6])
+        self.assertEqual(result, [1, 1, 2, 3, 4, 5, 6, 9])
+    
+    def test_empty_input(self):
+        """Test with empty input."""
+        result = self.algorithm([])
+        self.assertEqual(result, [])
+    
+    def test_single_element(self):
+        """Test with single element."""
+        result = self.algorithm([42])
+        self.assertEqual(result, [42])
+    
+    def test_already_sorted(self):
+        """Test with already sorted input."""
+        result = self.algorithm([1, 2, 3, 4, 5])
+        self.assertEqual(result, [1, 2, 3, 4, 5])
+    
+    def test_reverse_sorted(self):
+        """Test with reverse sorted input."""
+        result = self.algorithm([5, 4, 3, 2, 1])
+        self.assertEqual(result, [1, 2, 3, 4, 5])
+    
+    def test_duplicates(self):
+        """Test with duplicate elements."""
+        result = self.algorithm([3, 3, 3, 1, 1, 2])
+        self.assertEqual(result, [1, 1, 2, 3, 3, 3])
     
     def test_empty_input(self):
         """Test with empty input."""

@@ -25,10 +25,17 @@ class TestApiexplorer(AlgorithmTestCase):
     
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
-        # TODO: Add specific test cases based on algorithm
-        # Example for sorting:
-        # result = self.algorithm([3, 1, 4, 1, 5])
-        # self.assert_sorted(result)
+        # TODO: Implement specific test based on algorithm
+        pass
+    
+    def test_empty_input(self):
+        """Test with empty input."""
+        # TODO: Test edge case
+        pass
+    
+    def test_single_element(self):
+        """Test with single element."""
+        # TODO: Test edge case
         pass
     
     def test_empty_input(self):

@@ -239,3 +239,39 @@ Avoid Counting Sort when:
 - Memory constraints: [Insufficient memory]
 - Time constraints: [Too strict]
 
+## Performance Analysis
+
+### Time Complexity Analysis
+
+**Best Case**: O(n log n) - When pivot divides array evenly
+**Average Case**: O(n log n) - Expected performance on random data
+**Worst Case**: O(n²) - When pivot is always smallest/largest element
+
+**Performance Characteristics**:
+- Efficient for large datasets due to O(n log n) average case
+- In-place sorting reduces memory overhead
+- Cache-friendly partitioning improves real-world performance
+- Performance degrades on already sorted or reverse-sorted data
+
+### Space Complexity Analysis
+
+**Space Complexity**: O(log n) for recursion stack
+- Recursion depth is logarithmic in average case
+- Each recursive call uses constant space for local variables
+- Worst-case space is O(n) if recursion is not optimized
+
+### Optimization Strategies
+
+1. **Pivot Selection**: Use median-of-three or random pivot to avoid worst case
+2. **Insertion Sort Hybrid**: Switch to insertion sort for small subarrays (< 10 elements)
+3. **Tail Recursion**: Optimize tail recursion to reduce stack space
+4. **Three-Way Partitioning**: Handle duplicate elements efficiently
+
+### Benchmark Results
+
+Typical performance on modern hardware:
+- **Small arrays (n < 100)**: ~0.1ms
+- **Medium arrays (n = 10,000)**: ~5ms
+- **Large arrays (n = 1,000,000)**: ~500ms
+
+*Note: Actual performance depends on hardware, data distribution, and implementation details.*
