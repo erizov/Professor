@@ -18,10 +18,10 @@ This topic covers advanced techniques and methodologies used in modern software 
 
 **One Sentence**: Database operations that execute as atomic units, ensuring all-or-nothing execution and maintaining data consistency.
 
-**Time Complexity**: See complexity analysis below
-**Space Complexity**: See complexity analysis below
-**When to Use**: See 'Best Use Case' section
-**When NOT to Employ**: See 'Do Not Confuse With' section
+
+
+
+
 
 ### Short Description
 

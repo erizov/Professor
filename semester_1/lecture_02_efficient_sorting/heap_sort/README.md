@@ -18,10 +18,10 @@ This technique is applied in various domains to solve specific problems efficien
 
 **One Sentence**: An in-place sorting algorithm that uses a binary heap data structure to sort elements by repeatedly extracting the maximum element.
 
-**Time Complexity**: See complexity analysis below
-**Space Complexity**: See complexity analysis below
-**When to Use**: See 'Best Use Case' section
-**When NOT to Employ**: See 'Do Not Confuse With' section
+
+
+
+
 
 ## Learning Objectives
 

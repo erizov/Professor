@@ -16,10 +16,10 @@ This approach/pattern is used in computer science and software engineering for s
 
 **One Sentence**: A computational method for shor approach.
 
-**Time Complexity**: See complexity analysis below
-**Space Complexity**: See complexity analysis below
-**When to Use**: See 'Best Use Case' section
-**When NOT to Employ**: See 'Do Not Confuse With' section
+
+
+
+
 
 ## Learning Objectives
 

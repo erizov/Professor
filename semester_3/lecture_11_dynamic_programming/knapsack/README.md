@@ -18,10 +18,10 @@ This technique is applied in various domains to solve specific problems efficien
 
 **One Sentence**: An optimization problem-solving algorithm that determines the most valuable combination of items that fit within a weight constraint.
 
-**Time Complexity**: See complexity analysis below
-**Space Complexity**: See complexity analysis below
-**When to Use**: See 'Best Use Case' section
-**When NOT to Employ**: See 'Do Not Confuse With' section
+
+
+
+
 
 ## Learning Objectives
 

@@ -18,10 +18,10 @@ This technique is applied in various domains to solve specific problems efficien
 
 **One Sentence**: A symmetric encryption algorithm that encrypts data in fixed-size blocks using a secret key.
 
-**Time Complexity**: See complexity analysis below
-**Space Complexity**: See complexity analysis below
-**When to Use**: See 'Best Use Case' section
-**When NOT to Employ**: See 'Do Not Confuse With' section
+
+
+
+
 
 ## Learning Objectives
 

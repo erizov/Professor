@@ -16,10 +16,10 @@ This algorithm/pattern is used in computer science and software engineering for 
 
 **One Sentence**: Self-executing contracts with terms directly written into code, automatically executing when conditions are met.
 
-**Time Complexity**: See complexity analysis below
-**Space Complexity**: See complexity analysis below
-**When to Use**: See 'Best Use Case' section
-**When NOT to Employ**: See 'Do Not Confuse With' section
+
+
+
+
 
 ## Learning Objectives
 

@@ -16,10 +16,10 @@ This algorithm/pattern is used in computer science and software engineering for 
 
 **One Sentence**: A deployment strategy that gradually rolls out changes to a small subset of users before full deployment, monitoring for issues.
 
-**Time Complexity**: See complexity analysis below
-**Space Complexity**: See complexity analysis below
-**When to Use**: See 'Best Use Case' section
-**When NOT to Employ**: See 'Do Not Confuse With' section
+
+
+
+
 
 ## Learning Objectives
 

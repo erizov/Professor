@@ -14,10 +14,10 @@
 
 **One Sentence**: A divide-and-conquer sorting algorithm that partitions an array around a pivot element, recursively sorting subarrays.
 
-**Time Complexity**: See complexity analysis below
-**Space Complexity**: See complexity analysis below
-**When to Use**: See 'Best Use Case' section
-**When NOT to Employ**: See 'Do Not Confuse With' section
+
+
+
+
 
 ## Learning Objectives
 
@@ -166,6 +166,18 @@ Combine: [1, 2, 5, 8, 9]
 - **Database Systems**: Employed in SQL ORDER BY operations for efficient query result sorting
 - **Operating Systems**: Process scheduling and file system organization
 - **Gaming**: Leaderboard ranking and score sorting
+
+- **Standard library implementations (C++ std::sort, Java Arrays.sort)**
+- **Large datasets requiring efficient sorting**
+- **In-memory sorting operations**
+
+- **Standard library implementations (C++ std::sort, Java Arrays.sort)**
+- **Large datasets requiring efficient sorting**
+- **In-memory sorting operations**
+
+- **Standard library implementations (C++ std::sort, Java Arrays.sort)**
+- **Large datasets requiring efficient sorting**
+- **In-memory sorting operations**
 
 ## Common Misconceptions
 
@@ -345,4 +357,16 @@ Avoid Quick Sort when:
 - Data type: [Incompatible data]
 - Memory constraints: [Insufficient memory]
 - Time constraints: [Too strict]
+
+## Historical Context
+
+Quick sort was developed by Tony Hoare in 1959. It is one of the most efficient general-purpose sorting algorithms.
+
+## Algorithm Variants
+
+Several variants and improvements of this algorithm exist:
+
+- **Dual-pivot quick sort**: [Description]
+- **3-way quick sort**: [Description]
+- **Randomized quick sort**: [Description]
 

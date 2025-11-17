@@ -18,10 +18,10 @@ This technique is applied in various domains to solve specific problems efficien
 
 **One Sentence**: A design pattern that automatically retries failed operations with exponential backoff to handle transient failures.
 
-**Time Complexity**: See complexity analysis below
-**Space Complexity**: See complexity analysis below
-**When to Use**: See 'Best Use Case' section
-**When NOT to Employ**: See 'Do Not Confuse With' section
+
+
+
+
 
 ## Learning Objectives
 

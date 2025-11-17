@@ -10,10 +10,10 @@ This technique is applied in various domains to solve specific problems efficien
 
 **One Sentence**: A graph traversal algorithm that explores as far as possible along each branch before backtracking.
 
-**Time Complexity**: See complexity analysis below
-**Space Complexity**: See complexity analysis below
-**When to Use**: See 'Best Use Case' section
-**When NOT to Employ**: See 'Do Not Confuse With' section
+
+
+
+
 
 ## Learning Objectives
 
@@ -165,6 +165,21 @@ Graph:
 - **Dependency Resolution**: Resolving package dependencies
 - **Topological Sorting**: Task scheduling and build systems
 
+- **Topological sorting**
+- **Finding connected components**
+- **Solving puzzles and mazes**
+- **Tree/graph traversal**
+
+- **Topological sorting**
+- **Finding connected components**
+- **Solving puzzles and mazes**
+- **Tree/graph traversal**
+
+- **Topological sorting**
+- **Finding connected components**
+- **Solving puzzles and mazes**
+- **Tree/graph traversal**
+
 ## Common Misconceptions
 
 ❌ **WRONG**: "Dfs is the best solution for all problems"
@@ -269,4 +284,16 @@ Avoid Dfs when:
 - Data type: [Incompatible data]
 - Memory constraints: [Insufficient memory]
 - Time constraints: [Too strict]
+
+## Historical Context
+
+Depth-first search was described in the 19th century for solving mazes. It explores as far as possible before backtracking.
+
+## Algorithm Variants
+
+Several variants and improvements of this algorithm exist:
+
+- **Iterative DFS**: [Description]
+- **DFS with timestamps**: [Description]
+- **Post-order DFS**: [Description]
 

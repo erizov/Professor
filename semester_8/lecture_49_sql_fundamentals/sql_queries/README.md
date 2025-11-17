@@ -16,10 +16,10 @@ This algorithm/pattern is used in computer science and software engineering for 
 
 **One Sentence**: Structured Query Language commands for retrieving, manipulating, and managing data in relational databases.
 
-**Time Complexity**: See complexity analysis below
-**Space Complexity**: See complexity analysis below
-**When to Use**: See 'Best Use Case' section
-**When NOT to Employ**: See 'Do Not Confuse With' section
+
+
+
+
 
 ## Learning Objectives
 

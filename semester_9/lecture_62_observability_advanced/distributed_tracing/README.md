@@ -18,10 +18,10 @@ This topic covers advanced techniques and methodologies used in modern software 
 
 **One Sentence**: A technique for observing and tracking system behavior, performance, and health.
 
-**Time Complexity**: See complexity analysis below
-**Space Complexity**: See complexity analysis below
-**When to Use**: See 'Best Use Case' section
-**When NOT to Employ**: See 'Do Not Confuse With' section
+
+
+
+
 
 ### Short Description
 

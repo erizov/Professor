@@ -16,10 +16,10 @@ This algorithm/pattern is used in computer science and software engineering for 
 
 **One Sentence**: Database structures that improve query performance by providing fast lookup paths to data.
 
-**Time Complexity**: See complexity analysis below
-**Space Complexity**: See complexity analysis below
-**When to Use**: See 'Best Use Case' section
-**When NOT to Employ**: See 'Do Not Confuse With' section
+
+
+
+
 
 ## Learning Objectives
 

@@ -18,10 +18,10 @@ This technique is applied in various domains to solve specific problems efficien
 
 **One Sentence**: A stable, divide-and-conquer sorting algorithm that divides the array into halves, recursively sorts them, and merges the sorted halves.
 
-**Time Complexity**: See complexity analysis below
-**Space Complexity**: See complexity analysis below
-**When to Use**: See 'Best Use Case' section
-**When NOT to Employ**: See 'Do Not Confuse With' section
+
+
+
+
 
 ## Learning Objectives
 
@@ -164,6 +164,18 @@ Merge:
 - **External Sorting**: Sorting large files that don't fit in memory
 - **Version Control**: Git uses merge sort for three-way merges
 - **Inversion Counting**: Counting inversions in arrays (employed in recommendation systems)
+
+- **External sorting (sorting data too large for memory)**
+- **Stable sorting requirements**
+- **Parallel processing implementations**
+
+- **External sorting (sorting data too large for memory)**
+- **Stable sorting requirements**
+- **Parallel processing implementations**
+
+- **External sorting (sorting data too large for memory)**
+- **Stable sorting requirements**
+- **Parallel processing implementations**
 
 ## Common Misconceptions
 
@@ -334,4 +346,16 @@ Avoid Merge Sort when:
 - Data type: [Incompatible data]
 - Memory constraints: [Insufficient memory]
 - Time constraints: [Too strict]
+
+## Historical Context
+
+Merge sort was invented by John von Neumann in 1945. It is a stable, divide-and-conquer algorithm.
+
+## Algorithm Variants
+
+Several variants and improvements of this algorithm exist:
+
+- **Bottom-up merge sort**: [Description]
+- **Natural merge sort**: [Description]
+- **In-place merge sort**: [Description]
 

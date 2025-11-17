@@ -16,10 +16,10 @@ This algorithm/pattern is used in computer science and software engineering for 
 
 **One Sentence**: Methods to improve blockchain network capacity and transaction processing speed.
 
-**Time Complexity**: See complexity analysis below
-**Space Complexity**: See complexity analysis below
-**When to Use**: See 'Best Use Case' section
-**When NOT to Employ**: See 'Do Not Confuse With' section
+
+
+
+
 
 ## Learning Objectives
 

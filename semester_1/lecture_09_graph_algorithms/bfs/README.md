@@ -10,10 +10,10 @@ This technique is applied in various domains to solve specific problems efficien
 
 **One Sentence**: A graph traversal algorithm that explores all vertices at the current depth level before moving to vertices at the next depth level.
 
-**Time Complexity**: See complexity analysis below
-**Space Complexity**: See complexity analysis below
-**When to Use**: See 'Best Use Case' section
-**When NOT to Employ**: See 'Do Not Confuse With' section
+
+
+
+
 
 ## Learning Objectives
 
@@ -161,6 +161,21 @@ Graph:
 - **Social Networks**: Finding shortest path between users (degrees of separation)
 - **Web Crawling**: Discovering all pages on a website
 - **GPS Navigation**: Finding shortest route between locations
+
+- **Shortest path in unweighted graphs**
+- **Level-order tree traversal**
+- **Social network analysis**
+- **Web crawling**
+
+- **Shortest path in unweighted graphs**
+- **Level-order tree traversal**
+- **Social network analysis**
+- **Web crawling**
+
+- **Shortest path in unweighted graphs**
+- **Level-order tree traversal**
+- **Social network analysis**
+- **Web crawling**
 
 ## Common Misconceptions
 
@@ -347,4 +362,15 @@ Avoid Bfs when:
 - Data type: [Incompatible data]
 - Memory constraints: [Insufficient memory]
 - Time constraints: [Too strict]
+
+## Historical Context
+
+Breadth-first search was formalized in the 1950s. It explores all nodes at the current depth before moving to the next level.
+
+## Algorithm Variants
+
+Several variants and improvements of this algorithm exist:
+
+- **Bidirectional BFS**: [Description]
+- **Multi-source BFS**: [Description]
 

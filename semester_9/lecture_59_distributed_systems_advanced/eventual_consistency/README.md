@@ -18,10 +18,10 @@ This topic covers advanced techniques and methodologies used in modern software 
 
 **One Sentence**: An algorithm designed to work across multiple networked computers or nodes.
 
-**Time Complexity**: See complexity analysis below
-**Space Complexity**: See complexity analysis below
-**When to Use**: See 'Best Use Case' section
-**When NOT to Employ**: See 'Do Not Confuse With' section
+
+
+
+
 
 ### Short Description
 

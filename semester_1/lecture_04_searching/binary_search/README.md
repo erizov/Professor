@@ -18,10 +18,10 @@ This technique is applied in various domains to solve specific problems efficien
 
 **One Sentence**: An efficient search algorithm that finds the position of a target value within a sorted array by repeatedly dividing the search interval in half.
 
-**Time Complexity**: See complexity analysis below
-**Space Complexity**: See complexity analysis below
-**When to Use**: See 'Best Use Case' section
-**When NOT to Employ**: See 'Do Not Confuse With' section
+
+
+
+
 
 ## Learning Objectives
 
@@ -164,6 +164,18 @@ Step 3: Check remaining (index 3, value 7)
 - **Search Engines**: Finding documents in sorted indexes
 - **Databases**: Index lookups in B-trees
 - **Debugging**: Binary search for finding bugs (git bisect)
+
+- **Searching in sorted arrays**
+- **Finding insertion points**
+- **Range queries in databases**
+
+- **Searching in sorted arrays**
+- **Finding insertion points**
+- **Range queries in databases**
+
+- **Searching in sorted arrays**
+- **Finding insertion points**
+- **Range queries in databases**
 
 ## Common Misconceptions
 
@@ -347,4 +359,16 @@ Avoid Binary Search when:
 - Data type: [Incompatible data]
 - Memory constraints: [Insufficient memory]
 - Time constraints: [Too strict]
+
+## Historical Context
+
+Binary search was first described in 1946 by John Mauchly. It requires the array to be sorted.
+
+## Algorithm Variants
+
+Several variants and improvements of this algorithm exist:
+
+- **Interpolation search**: [Description]
+- **Exponential search**: [Description]
+- **Ternary search**: [Description]
 
