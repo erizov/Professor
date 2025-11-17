@@ -41,6 +41,7 @@ def schema_migration(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Schema Migration implementation.
     

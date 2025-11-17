@@ -41,6 +41,7 @@ def kappa_architecture(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Kappa Architecture implementation.
     

@@ -41,6 +41,7 @@ def row_level_security(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Row Level Security implementation.
     
