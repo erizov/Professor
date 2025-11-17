@@ -150,7 +150,42 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis atechniquepattern is implemented in various advanced frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Python / Libraries
+
+```python
+# Hugging Face Transformers - LLM Architecture
+from transformers import AutoModel, AutoTokenizer
+
+model = AutoModel.from_pretrained("bert-base-uncased")
+tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+
+# Transformer architecture with attention mechanisms
+inputs = tokenizer("Hello world", return_tensors="pt")
+outputs = model(**inputs)
+```
+
+**Purpose**: Python libraries use this technique for production implementations.
+
+### PyTorch
+
+```python
+# PyTorch - Transformer Architecture
+import torch.nn as nn
+from torch.nn import Transformer
+
+class LLMModel(nn.Module):
+    def __init__(self, vocab_size, d_model, nhead):
+        super().__init__()
+        self.transformer = Transformer(d_model, nhead)
+        self.embedding = nn.Embedding(vocab_size, d_model)
+    
+    def forward(self, src):
+        src = self.embedding(src)
+        return self.transformer(src, src)
+```
+
+**Purpose**: PyTorch implements this for deep learning and computational intelligence.
+
 
 ## Algorithm Steps
 

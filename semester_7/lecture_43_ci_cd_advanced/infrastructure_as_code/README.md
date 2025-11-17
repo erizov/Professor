@@ -129,7 +129,22 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis aapproachpattern is implemented in various frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Terraform
+
+```hcl
+# Terraform - Infrastructure as Code
+resource "aws_instance" "app" {
+  ami           = "ami-0c55b159cbfafe1f0"
+  instance_type = "t2.micro"
+  
+  tags = {
+    Name = "app-server"
+  }
+}
+```
+
+**Purpose**: Terraform uses this for infrastructure as code and cloud provisioning.
+
 
 ## Algorithm Steps
 

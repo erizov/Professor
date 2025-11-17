@@ -129,7 +129,23 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis aapproachpattern is implemented in various frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Python / Libraries
+
+```python
+# LangChain - Advanced RAG
+from langchain.vectorstores import Chroma
+from langchain.embeddings import OpenAIEmbeddings
+from langchain.chains import RetrievalQA
+
+vectorstore = Chroma.from_documents(documents, embeddings)
+qa_chain = RetrievalQA.from_chain_type(
+    llm=llm,
+    retriever=vectorstore.as_retriever()
+)
+```
+
+**Purpose**: Python libraries use this technique for production implementations.
+
 
 ## Algorithm Steps
 

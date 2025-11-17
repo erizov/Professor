@@ -150,7 +150,38 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis atechniquepattern is implemented in various advanced frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Kubernetes
+
+```yaml
+# Kubernetes - Model Serving
+apiVersion: serving.kubeflow.org/v1beta1
+kind: InferenceService
+metadata:
+  name: model-serving
+spec:
+  predictor:
+    tensorflow:
+      storageUri: gs://model-bucket/model
+      resources:
+        requests:
+          cpu: "2"
+          memory: 4Gi
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and service management.
+
+### Docker
+
+```dockerfile
+# Docker - Model Serving
+FROM tensorflow/serving:latest
+COPY model /models/my_model
+ENV MODEL_NAME=my_model
+EXPOSE 8501
+```
+
+**Purpose**: Docker uses this for containerization and deployment.
+
 
 ## Algorithm Steps
 

@@ -132,7 +132,22 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis aapproachpattern is implemented in various frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### SQL / Database
+
+```sql
+-- Database Sharding Strategy
+-- Shard by user_id
+CREATE TABLE orders_shard_0 (
+    CHECK (user_id % 4 = 0)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_1 (
+    CHECK (user_id % 4 = 1)
+) INHERITS (orders);
+```
+
+**Purpose**: Database systems use this for data management and optimization.
+
 
 ## Algorithm Steps
 

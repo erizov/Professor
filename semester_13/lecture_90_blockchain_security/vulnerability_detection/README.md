@@ -152,7 +152,27 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis strategy/pattern is implemented in various advanced frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Solidity / Blockchain
+
+```solidity
+// Solidity - Smart Contract
+pragma solidity ^0.8.0;
+
+contract SimpleStorage {
+    uint256 public storedData;
+    
+    function set(uint256 x) public {
+        storedData = x;
+    }
+    
+    function get() public view returns (uint256) {
+        return storedData;
+    }
+}
+```
+
+**Purpose**: Blockchain platforms use this for smart contract development.
+
 
 ## Algorithm Steps
 

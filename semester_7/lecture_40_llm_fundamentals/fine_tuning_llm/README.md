@@ -127,7 +127,28 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis altechniqueattern is implemented in various frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Python / Libraries
+
+```python
+# Hugging Face - Fine-tuning LLM
+from transformers import Trainer, TrainingArguments
+
+training_args = TrainingArguments(
+    output_dir="./results",
+    num_train_epochs=3,
+    per_device_train_batch_size=16,
+)
+
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    train_dataset=train_dataset,
+)
+trainer.train()
+```
+
+**Purpose**: Python libraries use this technique for production implementations.
+
 
 ## Algorithm Steps
 

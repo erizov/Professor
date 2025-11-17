@@ -130,7 +130,46 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis atechniquepattern is implemented in various frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Python / Libraries
+
+```python
+# OpenTelemetry - Distributed Tracing
+from opentelemetry import trace
+from opentelemetry.exporter.jaeger import JaegerExporter
+
+tracer = trace.get_tracer(__name__)
+
+with tracer.start_as_current_span("operation"):
+    # Your code here
+    pass
+```
+
+**Purpose**: Python libraries use this technique for production implementations.
+
+### Java / Spring Cloud
+
+```java
+// Spring Cloud Sleuth - Distributed Tracing
+@RestController
+public class Controller {
+    @Autowired
+    private Tracer tracer;
+    
+    @GetMapping("/api/data")
+    public String getData() {
+        Span span = tracer.nextSpan().name("getData").start();
+        try {
+            // Your code
+            return "data";
+        } finally {
+            span.end();
+        }
+    }
+}
+```
+
+**Purpose**: Java frameworks use this for enterprise application development.
+
 
 ## Algorithm Steps
 

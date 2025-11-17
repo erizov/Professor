@@ -129,7 +129,26 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis aapproachpattern is implemented in various frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Kubernetes
+
+```yaml
+# GitOps with ArgoCD
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-app
+spec:
+  source:
+    repoURL: https://github.com/user/repo
+    path: k8s
+    targetRevision: main
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and service management.
+
 
 ## Algorithm Steps
 

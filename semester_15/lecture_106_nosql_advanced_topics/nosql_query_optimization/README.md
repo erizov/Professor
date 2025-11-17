@@ -153,7 +153,24 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis strategy/pattern is implemented in various advanced frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### SQL / Database
+
+```sql
+-- PostgreSQL - Query Optimization
+EXPLAIN ANALYZE
+SELECT * FROM orders o
+JOIN customers c ON o.customer_id = c.id
+WHERE o.created_at > '2024-01-01'
+ORDER BY o.total DESC
+LIMIT 10;
+
+-- Create index for optimization
+CREATE INDEX idx_orders_created_at ON orders(created_at);
+CREATE INDEX idx_orders_customer_id ON orders(customer_id);
+```
+
+**Purpose**: Database systems use this for data management and optimization.
+
 
 ## Algorithm Steps
 

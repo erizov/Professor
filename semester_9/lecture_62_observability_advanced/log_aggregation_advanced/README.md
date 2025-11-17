@@ -149,7 +149,46 @@ Test your understanding with these questions:
 
 ## Examples of ImplRealizationis atechniquepattern is implemented in various advanced frameworks and technologies.
 
-*Note: Framework-specific examples will be added based on actual implementations.*
+### Kubernetes
+
+```yaml
+# Kubernetes - Log Aggregation
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: fluentd-config
+data:
+  fluent.conf: |
+    <source>
+      @type tail
+      path /var/log/containers/*.log
+    </source>
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and service management.
+
+### Docker
+
+```dockerfile
+# Docker - Log Aggregation
+version: '3'
+services:
+  app:
+    image: myapp
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+  
+  fluentd:
+    image: fluent/fluentd
+    volumes:
+      - ./logs:/var/log
+```
+
+**Purpose**: Docker uses this for containerization and deployment.
+
 
 ## Algorithm Steps
 
