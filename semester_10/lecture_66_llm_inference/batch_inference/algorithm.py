@@ -41,6 +41,7 @@ def batch_inference(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Batch Inference implementation.
     
