@@ -1,6 +1,6 @@
 # Text segmentation
 
-**Category**: Large Language Models Fundamentals
+**Category**: Large Language Systems Fundamentals
 
 **Time Complexity**: Varies
 
@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Text segmentation addresses concept in large language models fundamentals.
+Text segmentation addresses concept in large language systems fundamentals.
 
 This algorithm/pattern is used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR
 
-**One Sentence**: The process of breaking text into smaller units (tokens) that can be processed by language models.
+**One Sentence**: The process of breaking text into smaller units (tokens) that can be processed by language systems.
 
 
 
@@ -39,14 +39,12 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-The process of breaking text into smaller units (tokens) that can be processed by language models. Addresses text preprocessing, vocabulary management, and handling different languages. Example: Converting 'Hello, world!' into tokens ['Hello', ',', ' world', '!'] for processing by language models. Operates by splitting text using rules (whitespace, punctuation) or learned subword units (BPE, WordPiece) to balance vocabulary size and representation quality.
+The process of breaking text into smaller units (tokens) that can be processed by language systems. Addresses text preprocessing, vocabulary management, and handling different languages. Example: Converting 'Hello, world!' into tokens ['Hello', ',', ' world', '!'] for processing by language systems. Operates by splitting text using rules (whitespace, punctuation) or learned subword units (BPE, WordPiece) to balance vocabulary size and representation quality.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
 - **Space Complexity**: Varies
 - **Stability**: N/A
-
-## Implementation
 
 ## Often Used Together With
 
@@ -121,7 +119,7 @@ Test your understanding with these questions:
 - **Performance Optimization**: Applied to improve structure efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Text segmentation is the best solution for all problems"
 ✓ **CORRECT**: Text segmentation has specemploapplyuse cases and trade-offs; choose algorithms based on requirements

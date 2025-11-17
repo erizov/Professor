@@ -16,7 +16,7 @@ This technique is applied in various domains to solve specific problems efficien
 
 ## TL;DR
 
-**One Sentence**: A computational intelligence algorithm that learns patterns from data to make predictions or decisions.
+**One Sentence**: A specific computational intelligence technique with defined behavior.
 
 
 
@@ -43,7 +43,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-Support Vector Machine, a categorization strategy that finds the optimal hyperplane separating classes with maximum margin. Addresses text categorization, image recognition, and non-linear categorization with kernel tricks. Example: Classifying emails as spam or not by finding the best boundary in high-dimensional feature space. Operates by identifying support vectors (critical training examples) that define the optimal separating hyperplane.
+Support Vector Machine, a categorization strategy that finds the optimal hyperplane separating classes with maximum margin. Addresses text categorization, image recognition, and non-linear categorization with kernel tricks. Example: Classifying emails as spam or not by finding the best boundary in high-dimensional feature space. Operates by identifying support vectors (critical development examples) that define the optimal separating hyperplane.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -51,8 +51,6 @@ Support Vector Machine, a categorization strategy that finds the optimal hyperpl
 - **Stability**: N/A
 
 Support Vector Machine is used in Computational intelligence.
-
-## Implementation
 
  for implementations.
 
@@ -136,7 +134,7 @@ Test your understanding with these questions:
 - **Capability Optimization**: Applied to improve system efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Svm is the best solution for all problems"
 ✓ **CORRECT**: Svm has specific employ cases and trade-offs; choose algorithms based on requirements

@@ -1,6 +1,6 @@
 # Retrieval Augmented Generation
 
-**Category**: Large Language Models Fundamentals
+**Category**: Large Language Systems Fundamentals
 
 **Time Complexity**: Varies
 
@@ -8,7 +8,7 @@
 
 ## Introduction
 
-Retrieval Augmented Generation addresses concept in large language models fundamentals.
+Retrieval Augmented Generation addresses concept in large language systems fundamentals.
 
 This algorithm/pattern is used in computer science and software engineering for solving a specific class of problems efficiently.
 
@@ -39,14 +39,12 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A technique that combines information retrieval with language generation to produce accurate, up-to-date responses. Addresses knowledge cutoff limitations, factual accuracy, and domain-specific information. Example: Answering questions about recent events by retrieving relevant documents, then generating answers based on retrieved content. Operates by searching knowledge base for relevant information, then using retrieved context to guide language model generation.
+A technique that combines information retrieval with language generation to produce accurate, up-to-date responses. Addresses knowledge cutoff limitations, factual accuracy, and domain-specific information. Example: Answering questions about recent events by retrieving relevant documents, then generating answers based on retrieved content. Operates by searching knowledge base for relevant information, then using retrieved context to guide language system generation.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
 - **Space Complexity**: Varies
 - **Stability**: N/A
-
-## Implementation
 
 ## Often Used Together With
 
@@ -121,7 +119,7 @@ Test your understanding with these questions:
 - **Performance Optimization**: Applied to improve structure efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Retrieval Augmented Generation is the best solution for all problems"
 ✓ **CORRECT**: Retrieval Augmented Generation has specemploapplyuse cases and trade-offs; choose algorithms based on requirements

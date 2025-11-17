@@ -6,8 +6,6 @@
 
 **Space Complexity**: O(1)
 
-## Implementation
-
 ## Introduction
 
 Singleton addresses specific computational challenges.
@@ -130,7 +128,7 @@ Test your understanding with these questions:
 - **Logging Systems**: Centralized logger instance
 - **Configuration Managers**: Single source of truth for application settings
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Singleton is the best solution for all problems"
 ✓ **CORRECT**: Singleton has specific employ cases and trade-offs; choose algorithms based on requirements

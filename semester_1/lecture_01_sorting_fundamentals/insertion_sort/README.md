@@ -6,8 +6,6 @@
 
 **Space Complexity**: O(1)
 
-## Implementation
-
 ## Introduction
 
 Insertion Sort addresses specific computational challenges.
@@ -130,7 +128,7 @@ Test your understanding with these questions:
 - **PEffectivenessOptimization**: Applied to improve system efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Insertion Sort is the best solution for all problems"
 ✓ **CORRECT**: Insertion Sort has specific employ cases and trade-offs; choose algorithms based on requirements

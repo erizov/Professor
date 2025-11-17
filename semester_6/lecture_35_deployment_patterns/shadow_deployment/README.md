@@ -4,7 +4,7 @@
 
 **Time Complexity**: O(2*requests)
 
-**Space Complexity**: O(2*model)
+**Space Complexity**: O(2*system)
 
 ## Resource Requirements
 
@@ -53,8 +53,6 @@ A strategy for releasing software updates to production environments with minima
 - **CPU Intensive**: No
 - **GPU Recommended**: No
 - **Network**: medium
-
-## Implementation
 
  for implementations.
 
@@ -142,7 +140,7 @@ Test your understanding with these questions:
 - **Capability Optimization**: Applied to improve structure efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Shadow Deployment is the best solution for all problems"
 ✓ **CORRECT**: Shadow Deployment has specific employ cases and trade-offs; choose algorithms based on requirements

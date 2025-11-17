@@ -6,8 +6,6 @@
 
 **Space Complexity**: O(n)
 
-## Implementation
-
 ## Introduction
 
 Binary Search Tree addresses specific computational challenges.
@@ -140,7 +138,7 @@ Test your understanding with these questions:
 - **Finding insertion points**
 - **Range queries in databases**
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Binary Search Tree is the best solution for all problems"
 ✓ **CORRECT**: Binary Search Tree has specific employ cases and trade-offs; choose algorithms based on requirements

@@ -52,8 +52,6 @@ A reusable solution to a commonly occurring problem in software design. Addresse
 
 Hexagonal Architecture is used in Architectural Pattern.
 
-## Implementation
-
  for implementations.
 
 ## Often Used Together With
@@ -136,7 +134,7 @@ Test your understanding with these questions:
 - **Capability Optimization**: Applied to improve structure efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Hexagonal is the best solution for all problems"
 ✓ **CORRECT**: Hexagonal has specific employ cases and trade-offs; choose algorithms based on requirements

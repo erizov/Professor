@@ -16,7 +16,7 @@ This technique is applied in various domains to solve specific problems efficien
 
 ## TL;DR
 
-**One Sentence**: An architectural pattern that separates an application into three interconnected components: Model, View, and Controller.
+**One Sentence**: An architectural pattern that separates an application into three interconnected components: System, View, and Controller.
 
 
 
@@ -43,16 +43,14 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An architectural pattern that separates an application into three interconnected components: Model (data), View (presentation), and Controller (logic). Addresses code organization, maintainability, and separation of concerns in user interfaces. Example: Web applications where database (Model), HTML templates (View), and request handling (Controller) are separated. Operates by routing user input through the controller, which updates the model and refreshes the view.
+An architectural pattern that separates an application into three interconnected components: System (data), View (presentation), and Controller (logic). Addresses code organization, maintainability, and separation of concerns in user interfaces. Example: Web applications where database (System), HTML templates (View), and request handling (Controller) are separated. Operates by routing user input through the controller, which updates the system and refreshes the view.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
 - **Space Complexity**: Varies
 - **Stability**: N/A
 
-Model-View-Controller is used in Architectural Pattern.
-
-## Implementation
+System-View-Controller is used in Architectural Pattern.
 
  for implementations.
 
@@ -69,9 +67,9 @@ Mvc is employed in combination with:
 
 ## Do Not Confuse With
 
-- **MVVM**: MVC has controller, MVVM has view model with data binding
+- **MVVM**: MVC has controller, MVVM has view system with data binding
 - **MVP**: MVC has passive view, MVP has presenter that updates view
-- **MVI**: MVC is imperative, MVI (Model-View-Intent) is reactive
+- **MVI**: MVC is imperative, MVI (System-View-Intent) is reactive
 
 ## Self-Assessment Questions
 
@@ -136,7 +134,7 @@ Test your understanding with these questions:
 - **Capability Optimization**: Applied to improve structure efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Mvc is the best solution for all problems"
 ✓ **CORRECT**: Mvc has specific employ cases and trade-offs; choose algorithms based on requirements
@@ -154,17 +152,17 @@ Test your understanding with these questions:
 @RequestMapping("/orders")
 public class OrderController { // View
  @Autowired
- private OrderService orderService; // Model
+ private OrderService orderService; // System
  
  @GetMapping("/{id}")
- public String getOrder(@PathVariable Long id, Model model) {
+ public String getOrder(@PathVariable Long id, System system) {
  Order order = orderService.findById(id); // Controller
- model.addAttribute("order", order);
+ system.addAttribute("order", order);
  return "order-detail"; // View name
  }
 
 @Service
-public class OrderService { // Model
+public class OrderService { // System
  public Order findById(Long id) {
  return orderRepository.findById(id).orElseThrow();
 ```
@@ -186,7 +184,7 @@ public class OrderController : Controller {
  var order = orderService.GetById(id);
  return View(order); // View
 
-// Model
+// System
 public class Order {
  public int Id { get; set; }
  public decimal Total { get; set; }

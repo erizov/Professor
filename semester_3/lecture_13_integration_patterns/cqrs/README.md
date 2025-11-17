@@ -6,8 +6,6 @@
 
 **Space Complexity**: O(1)
 
-## Implementation
-
 ## Introduction
 
 Cqrs addresses specific computational challenges.
@@ -42,7 +40,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-Command Query Responsibility Segregation pattern that separates read and write operations into different models. Addresses read/write optimization, scalability, and complex domain models. Example: Using separate databases for reading (optimized for queries) and writing (optimized for transactions) in an e-commerce system. Operates by routing commands (writes) to command handlers and queries (reads) to query handlers, with eventual consistency between models.
+Command Query Responsibility Segregation pattern that separates read and write operations into different systems. Addresses read/write optimization, scalability, and complex domain systems. Example: Using separate databases for reading (optimized for queries) and writing (optimized for transactions) in an e-commerce system. Operates by routing commands (writes) to command handlers and queries (reads) to query handlers, with eventual consistency between systems.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -53,17 +51,17 @@ Command Query Responsibility Segregation pattern that separates read and write o
 
 Cqrs is used in combination with:
 
-- **Factory**: Often combined for comprehensive solutions
+- **Factory**: combined for comprehensive solutions
 
 **Common Combinations:**
 - Employed together in production systems for optimal performance
 - Complementary algorithms that tackle related problems
-- Often part of larger algorithmic frameworks
+- Often f larger algorithmic frameworks
 
 ## Do Not Confuse With
 
-- **Event Sourcing**: CQRS separates read/write, event sourcing stores events (often employed together)
-- **Repository Pattern**: CQRS separates models, repository abstracts data access
+- **Event Sourcing**: CQRS separates read/write, event sourcing stores events (often employether)
+- **Repository Pattern**: CQRS separates systems, repository abstracts data access
 - **Microservices**: CQRS is pattern, microservices is architecture style (CQRS fits well)
 
 ## Self-Assessment Questions
@@ -129,7 +127,7 @@ Test your understanding with these questions:
 - **Capability Optimization**: Applied to improve structure efficiency
 -Architecturetem Design**: Integral part of scalable architecture patterns
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Cqrs is the best solution for all problems"
 ✓ **CORRECT**: Cqrs has specific employ cases and trade-offs; choose algorithms based on requirements

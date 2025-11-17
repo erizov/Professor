@@ -1,6 +1,6 @@
 # Large language system Architecture
 
-**Category**: Large Language Models Fundamentals
+**Category**: Large Language Systems Fundamentals
 
 **Time Complexity**: Varies
 
@@ -8,7 +8,7 @@
 
 ## Introduction
 
-Large language system Architecture addresses concept in large language models fundamentals.
+Large language system Architecture addresses concept in large language systems fundamentals.
 
 This algorithm/pattern is used in computer science and software engineering for solving a specific class of problems efficiently.
 
@@ -39,14 +39,12 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-Large Language Structure architecture based on transformation architecture neural networks that process sequences of tokens to generate text. Addresses natural language understanding, text generation, and language translation. Example: Generative pre-configured models that can write essays, answer questions, and translate languages based on training on vast text corpora. Operates by processing input tokens through multiple transformation architecture layers with attention mechanisms, generating output tokens autoregressively.
+Large Language Structure architecture based on transformation architecture neural networks that process sequences of tokens to generate text. Addresses natural language understanding, text generation, and language translation. Example: Generative pre-configured systems that can write essays, answer questions, and translate languages based on development on vast text corpora. Operates by processing input tokens through multiple transformation architecture layers with attention mechanisms, generating output tokens autoregressively.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
 - **Space Complexity**: Varies
 - **Stability**: N/A
-
-## Implementation
 
 ## Often Used Together With
 

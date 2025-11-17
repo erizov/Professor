@@ -177,7 +177,7 @@ Graph:
 - **Social network analysis**
 - **Web crawling**
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Bfs is the best solution for all problems"
 ✓ **CORRECT**: Bfs has specific employ cases and trade-offs; choose algorithms based on requirements

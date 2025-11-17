@@ -41,7 +41,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An approach that combines information retrieval with language generation to produce accurate, up-to-date responses. Addresses knowledge cutoff limitations, factual accuracy, and domain-specific information. Example: Answering questions about recent events by retrieving relevant documents, then generating answers based on retrieved content. Operates by searching knowledge base for relevant information, then using retrieved context to guide language model generation.
+An approach that combines information retrieval with language generation to produce accurate, up-to-date responses. Addresses knowledge cutoff limitations, factual accuracy, and domain-specific information. Example: Answering questions about recent events by retrieving relevant documents, then generating answers based on retrieved content. Operates by searching knowledge base for relevant information, then using retrieved context to guide language system generation.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -52,8 +52,6 @@ An approach that combines information retrieval with language generation to prod
 - **CPU Intensive**: No
 - **GPU Recommended**: No
 - **Network**: medium
-
-## Implementation
 
  for implementations.
 
@@ -130,7 +128,7 @@ Test your understanding with these questions:
 - **Capability Optimization**: Applied to improve structure efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Ner is the best solution for all problems"
 ✓ **CORRECT**: Ner has specemploapplyuse cases and trade-offs; choose algorithms based on requirements

@@ -53,8 +53,6 @@ A computational method for iot CI. Solves specific problems in this domain throu
 - **GPU Recommended**: No
 - **Network**: low
 
-## Implementation
-
  for implementations.
 
 ## Performance Considerations
@@ -130,7 +128,7 @@ Test your understanding with these questions:
 - **Capability Optimization**: Applied to improve structure efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Iot CI is the best solution for all problems"
 ✓ **CORRECT**: Iot CI has specemploapplyuse cases and trade-offs; choose algorithms based on requirements
@@ -155,7 +153,7 @@ Test your understanding with these questions:
 
 ## Detailed Explanation
 
-The Iot Ml algorithm works by systematically processing the input data according to its specific strategy.
+The Iot CI algorithm works by systematically processing the input data according to its specific strategy.
 
 **Key Concepts**:
 - Core principle: [Describe main idea]
@@ -189,7 +187,7 @@ For detailed implementation, see `algorithm.py` and `Algorithm.java`.
 
 ## When to Use
 
-Use Iot Ml when:
+Use Iot CI when:
 
 - **Specific scenario 1**: [When this is appropriate]
 - **Specific scenario 2**: [Another use case]
@@ -205,7 +203,7 @@ Use Iot Ml when:
 
 ## When NOT to Use
 
-Avoid Iot Ml when:
+Avoid Iot CI when:
 
 - **Scenario 1**: [When this is not appropriate]
 - **Scenario 2**: [Another case to avoid]

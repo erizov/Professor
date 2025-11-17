@@ -46,8 +46,6 @@ OS algorithms that determine whichoperations runs on CPU at any given time, mana
 - **Space Complexity**: Varies
 - **Stability**: N/A
 
-## Implementation
-
 ## Often Used Together WWorkflowocess Scheduling is employed in combination with related algorithms and patterns.
 
 ## Do Not Confuse With

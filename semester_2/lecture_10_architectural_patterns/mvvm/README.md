@@ -50,9 +50,7 @@ A reusable solution to a commonly occurring problem in software design. Addresse
 - **Space Complexity**: Varies
 - **Stability**: N/A
 
-Model-View-ViewModel is used in Architectural Pattern.
-
-## Implementation
+System-View-ViewModel is used in Architectural Pattern.
 
  for implementations.
 
@@ -136,7 +134,7 @@ Test your understanding with these questions:
 - **Capability Optimization**: Applied to improve structure efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Mvvm is the best solution for all problems"
 ✓ **CORRECT**: Mvvm has specific employ cases and trade-offs; choose algorithms based on requirements

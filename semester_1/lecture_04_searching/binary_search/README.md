@@ -6,8 +6,6 @@
 
 **Space Complexity**: O(1)
 
-## Implementation
-
 ## Introduction
 
 Binary Search addresses specific computational challenges.
@@ -177,7 +175,7 @@ Step 3: Check remaining (index 3, value 7)
 - **Finding insertion points**
 - **Range queries in databases**
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Binary Search works on any array"
 ✓ **CORRECT**: Binary Search requires the array to be sorted

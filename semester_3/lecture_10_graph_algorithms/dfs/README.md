@@ -6,8 +6,6 @@
 
 **Space Complexity**: O(V)
 
-## Implementation
-
 ## Introduction
 
 Dfs is dfs addresses specific computational challenges.
@@ -144,7 +142,7 @@ Test your understanding with these questions:
 - **Solving puzzles and mazes**
 - **Tree/graph traversal**
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Dfs is the best solution for all problems"
 ✓ **CORRECT**: Dfs has specific employ cases and trade-offs; choose algorithms based on requirements

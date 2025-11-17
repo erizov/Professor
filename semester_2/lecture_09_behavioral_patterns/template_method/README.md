@@ -6,8 +6,6 @@
 
 **Space Complexity**: O(1)
 
-## Implementation
-
 ## Introduction
 
 Template Method addresses specific computational challenges.

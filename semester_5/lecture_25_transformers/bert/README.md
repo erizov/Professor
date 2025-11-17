@@ -53,8 +53,6 @@ A computational method for bidirectional encoder. Solves specific problems in th
 - **GPU Recommended**: No
 - **Network**: medium
 
-## Implementation
-
  for implementations.
 
 ## Performance Considerations
@@ -63,8 +61,8 @@ This approach is part of NLP and requires careful consideration of resource cons
 
 ## Do Not Confuse With
 
-- Supervised vs unsupervised training algorithms
-- Parametric vs non-parametric models
+- Supervised vs unsupervised development algorithms
+- Parametric vs non-parametric systems
 - Categorization vs value estimation problems
 
 ## Self-Assessment Questions
@@ -130,7 +128,7 @@ Test your understanding with these questions:
 - **Capability Optimization**: Applied to improve structure efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Bidirectional encoder is the best solution for all problems"
 ✓ **CORRECT**: Bidirectional encoder has specific employ cases and trade-offs; choose algorithms based on requirements

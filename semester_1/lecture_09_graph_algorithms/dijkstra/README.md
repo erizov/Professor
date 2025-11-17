@@ -161,7 +161,7 @@ Find shortest path from A to all nodes.
 - **Capability Optimization**: Applied to improve system efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Dijkstra is the best solution for all problems"
 ✓ **CORRECT**: Dijkstra has specific employ cases and trade-offs; choose algorithms based on requirements

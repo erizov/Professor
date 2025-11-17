@@ -4,7 +4,7 @@
 
 **Time Complexity**: O(n/workers)
 
-**Space Complexity**: O(model + n/workers)
+**Space Complexity**: O(system + n/workers)
 
 ## Resource Requirements
 
@@ -53,8 +53,6 @@ An strategy designed to work across multiple networked computers or nodes. Addre
 - **GPU Recommended**: Yes
 - **Network**: medium
 
-## Implementation
-
  for implementations.
 
 ## Performance Considerations
@@ -74,8 +72,8 @@ Content Parallelism is used in combination with:
 
 ## Do Not Confuse With
 
-- Supervised vs unsupervised training algorithms
-- Parametric vs non-parametric models
+- Supervised vs unsupervised development algorithms
+- Parametric vs non-parametric systems
 - Categorization vs value estimation problems
 
 ## Self-Assessment Questions

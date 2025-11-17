@@ -50,8 +50,6 @@ An approach for observing and tracking structure behavior, performance, and heal
 
 Metrics Collection is used in Observability.
 
-## Implementation
-
  for implementations.
 
 ## Do Not Confuse With
@@ -122,7 +120,7 @@ Test your understanding with these questions:
 - **Enterprise Applications**: Metrics Collection is used in production systems
 - **Capability Optimization**: Applied to improve structure efficiFrameworkArchitecturetem Design**: Integral part of scalable architecture patterns
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Metrics Collection is the best solution for all problems"
 ✓ **CORRECT**: Metrics Collection has specemploapplyuse cases and trade-offs; choose algorithms based on requirements

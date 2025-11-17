@@ -6,8 +6,6 @@
 
 **Space Complexity**: O(V)
 
-## Implementation
-
 ## Introduction
 
 Bfs is bfs addresses specific computational challenges.
@@ -144,7 +142,7 @@ Test your understanding with these questions:
 - **Social network analysis**
 - **Web crawling**
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Bfs is the best solution for all problems"
 ✓ **CORRECT**: Bfs has specific employ cases and trade-offs; choose algorithms based on requirements

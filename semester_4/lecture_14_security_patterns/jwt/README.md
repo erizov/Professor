@@ -6,8 +6,6 @@
 
 **Space Complexity**: O(1)
 
-## Implementation
-
 ## Introduction
 
 Jwt is jwt addresses specific computational challenges.
@@ -130,7 +128,7 @@ Test your understanding with these questions:
 - **Single Sign-On (SSO)**: Cross-domain authentication
 - **Mobile Apps**: Secure token-based authentication
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Jwt is the best solution for all problems"
 ✓ **CORRECT**: Jwt has specific employ cases and trade-offs; choose algorithms based on requirements

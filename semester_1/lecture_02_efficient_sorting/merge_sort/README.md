@@ -6,8 +6,6 @@
 
 **Space Complexity**: O(n)
 
-## Implementation
-
 ## Introduction
 
 Merge Sort addresses specific computational challenges.
@@ -177,7 +175,7 @@ Merge:
 - **Stable sorting requirements**
 - **Parallel processing implementations**
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Merge Sort is always faster than Quick Sort"
 ✓ **CORRECT**: Quick Sort is usually faster in practice due to better cache locality

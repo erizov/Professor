@@ -6,8 +6,6 @@
 
 **Space Complexity**: O(1)
 
-## Implementation
-
 ## Introduction
 
 Bubble Sort addresses specific computational challenges.
@@ -141,7 +139,7 @@ Test your understanding with these questions:
 - **Small datasets where simplicity is preferred**
 - **Nearly sorted data (optimized version)**
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Bubble Sort is the best solution for all problems"
 ✓ **CORRECT**: Bubble Sort has specific employ cases and trade-offs; choose algorithms based on requirements

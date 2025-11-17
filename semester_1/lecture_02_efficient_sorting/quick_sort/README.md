@@ -6,8 +6,6 @@
 
 **Space Complexity**: O(log n)
 
-## Implementation
-
 ## Introduction
 
 ## TL;DR
@@ -179,7 +177,7 @@ Combine: [1, 2, 5, 8, 9]
 - **Large datasets requiring efficient sorting**
 - **In-memory sorting operations**
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Quick Sort is always O(n log n)"
 ✓ **CORRECT**: Quick Sort is O(n²) in worst case (already sorted input), but O(n log n) average case

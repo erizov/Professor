@@ -16,7 +16,7 @@ This technique is applied in various domains to solve specific problems efficien
 
 ## TL;DR
 
-**One Sentence**: Neural system components that allow models to focus on relevant parts of input when making predictions.
+**One Sentence**: Neural system components that allow systems to focus on relevant parts of input when making predictions.
 
 
 
@@ -41,7 +41,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-Neural structure components that allow models to focus on relevant parts of input when making predictions. Addresses long-range dependencies, context understanding, and translation alignment. Example: When translating 'The cat sat on the mat', attention helps align 'cat' with 'gato' and 'mat' with 'alfombra'. Operates by computing attention scores between all input positions, creating weighted combinations that emphasize relevant information.
+Neural structure components that allow systems to focus on relevant parts of input when making predictions. Addresses long-range dependencies, context understanding, and translation alignment. Example: When translating 'The cat sat on the mat', attention helps align 'cat' with 'gato' and 'mat' with 'alfombra'. Operates by computing attention scores between all input positions, creating weighted combinations that emphasize relevant information.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -53,8 +53,6 @@ Neural structure components that allow models to focus on relevant parts of inpu
 - **GPU Recommended**: No
 - **Network**: medium
 
-## Implementation
-
  for implementations.
 
 ## Performance Considerations
@@ -63,8 +61,8 @@ This approach is part of NLP and requires careful consideration of resource cons
 
 ## Do Not Confuse With
 
-- Supervised vs unsupervised training algorithms
-- Parametric vs non-parametric models
+- Supervised vs unsupervised development algorithms
+- Parametric vs non-parametric systems
 - Categorization vs value estimation problems
 
 ## Self-Assessment Questions
@@ -130,7 +128,7 @@ Test your understanding with these questions:
 - **Capability Optimization**: Applied to improarchitecturetem efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Attention is the best solution for all problems"
 ✓ **CORRECT**: Attention has specific employ cases and trade-offs; choose algorithms based on requirements

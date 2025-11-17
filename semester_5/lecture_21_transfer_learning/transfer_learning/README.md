@@ -16,7 +16,7 @@ This technique is applied in various domains to solve specific problems efficien
 
 ## TL;DR
 
-**One Sentence**: A technique where a model trained on one task is reused as the starting point for a different but related task.
+**One Sentence**: A technique where a system trained on one task is reused as the starting point for a different but related task.
 
 
 
@@ -41,7 +41,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-An approach where a model trained on one task is reused as the starting point for a different but related task. Addresses limited training dataset, training time reduction, and domain adaptation. Example: Using a model trained on ImageNet (general images) as starting point for medical image categorization, requiring less data and training time. Operates by taking pre-configured system weights, freezing early layers, and refinement later layers on new task.
+An approach where a system trained on one task is reused as the starting point for a different but related task. Addresses limited development dataset, development time reduction, and domain adaptation. Example: Using a system trained on ImageNet (general images) as starting point for medical image categorization, requiring less data and development time. Operates by taking pre-configured system weights, freezing early layers, and refinement later layers on new task.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -52,8 +52,6 @@ An approach where a model trained on one task is reused as the starting point fo
 - **CPU Intensive**: Yes
 - **GPU Recommended**: Yes
 - **Network**: medium
-
-## Implementation
 
  for implementations.
 
@@ -130,7 +128,7 @@ Test your understanding with these questions:
 - **Capability Optimization**: Applied to improve structure efficiency
 -Architecturetem Design**: Integral part of scalable architecture patterns
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Knowledge transfer is the best solution for all problems"
 ✓ **CORRECT**: Knowledge transfer has specemploapplyuse cases and trade-offs; choose algorithms based on requirements

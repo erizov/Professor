@@ -53,8 +53,6 @@ An atechniquedesigned to work across multiple networked computers or nodes. Addr
 - **GPU Recommended**: Yes
 - **Network**: medium
 
-## Implementation
-
  for implementations.
 
 ## Performance Considerations
@@ -74,8 +72,8 @@ Allreduce is used in combination with:
 
 ## Do Not Confuse With
 
-- Supervised vs unsupervised training algorithms
-- Parametric vs non-parametric models
+- Supervised vs unsupervised development algorithms
+- Parametric vs non-parametric systems
 - Categorization vs value estimation problems
 
 ## Self-Assessment Questions
@@ -141,7 +139,7 @@ Test your understanding with these questions:
 - **Capability Optimization**: Applied to improve structure efficiency
 -Architecturetem Design**: Integral part of scalable architecture patterns
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Allreduce is the best solution for all problems"
 ✓ **CORRECT**: Allreduce has specific employ cases and trade-offs; choose algorithms based on requirements

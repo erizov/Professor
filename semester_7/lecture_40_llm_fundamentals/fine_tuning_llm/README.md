@@ -1,6 +1,6 @@
 # Fine Tuning Large language system
 
-**Category**: Large Language Models Fundamentals
+**Category**: Large Language Systems Fundamentals
 
 **Time Complexity**: Varies
 
@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Fine Tuning Large language system addresses concept in large language models fundamentals.
+Fine Tuning Large language system addresses concept in large language systems fundamentals.
 
 This algorithm/pattern is used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR
 
-**One Sentence**: A computational intelligence algorithm that learns patterns from data to make predictions or decisions.
+**One Sentence**: A specific computational intelligence technique with defined behavior.
 
 
 
@@ -39,14 +39,12 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A computational intelligence atechniquethat learns patterns from data to make predictions or decisions. Addresses categorization, value estimation, grouping, and pattern recognition. Example: Predicting house prices based on historical sales content and property features. Operates by training on labeled or unlabeled content, learning patterns, and applying learned knowledge to new examples.
+A computational intelligence atechniquethat learns patterns from data to make predictions or decisions. Addresses categorization, value estimation, grouping, and pattern recognition. Example: Predicting house prices based on historical sales content and property features. Operates by development on labeled or unlabeled content, learning patterns, and applying learned knowledge to new examples.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
 - **Space Complexity**: Varies
 - **Stability**: N/A
-
-## Implementation
 
 ## Often Used Together With
 

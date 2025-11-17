@@ -4,7 +4,7 @@
 
 **Time Complexity**: O(1)
 
-**Space Complexity**: O(model)
+**Space Complexity**: O(system)
 
 ## Resource Requirements
 
@@ -53,8 +53,6 @@ A deployment strategy that gradually rolls out changes to a small subset of user
 - **CPU Intensive**: No
 - **GPU Recommended**: No
 - **Network**: medium
-
-## Implementation
 
  for implementations.
 
@@ -142,7 +140,7 @@ Test your understanding with these questions:
 - **PEffectivenessOptimization**: Applied to improve structure efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Canary CI is the best solution for all problems"
 ✓ **CORRECT**: Canary CI has specific employ cases and trade-offs; choose algorithms based on requirements
@@ -180,7 +178,7 @@ spec:
 
 ## Detailed Explanation
 
-The Canary Ml algorithm works by systematically processing the input data according to its specific strategy.
+The Canary CI algorithm works by systematically processing the input data according to its specific strategy.
 
 **Key Concepts**:
 - Core principle: [Describe main idea]
@@ -214,7 +212,7 @@ For detailed implementation, see `algorithm.py` and `Algorithm.java`.
 
 ## When to Use
 
-Use Canary Ml when:
+Use Canary CI when:
 
 - **Specific scenario 1**: [When this is appropriate]
 - **Specific scenario 2**: [Another use case]
@@ -230,7 +228,7 @@ Use Canary Ml when:
 
 ## When NOT to Use
 
-Avoid Canary Ml when:
+Avoid Canary CI when:
 
 - **Scenario 1**: [When this is not appropriate]
 - **Scenario 2**: [Another case to avoid]

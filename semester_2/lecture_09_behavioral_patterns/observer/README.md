@@ -6,8 +6,6 @@
 
 **Space Complexity**: O(n)
 
-## Implementation
-
 ## Introduction
 
 Observer addresses specific computational challenges.
@@ -43,7 +41,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-A behavioral design pattern that defines a one-to-many dependency between objects, so when one object changes state, all dependents are notified automatically. Addresses event handling, model-view architectures, and publish-subscribe systems. Example: Updating multiple UI components when data changes, like refreshing charts and tables when a stock price updates. Operates by maintaining a list of observers and notifying them when the subject's state changes.
+A behavioral design pattern that defines a one-to-many dependency between objects, so when one object changes state, all dependents are notified automatically. Addresses event handling, system-view architectures, and publish-subscribe systems. Example: Updating multiple UI components when data changes, like refreshing charts and tables when a stock price updates. Operates by maintaining a list of observers and notifying them when the subject's state changes.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -63,7 +61,7 @@ Observer is used in combination with:
 
 ## Do Not Confuse With
 
-- **Pub-Sub Pattern**: Observer is synchronous push model, pub-sub is asynchronous message-based
+- **Pub-Sub Pattern**: Observer is synchronous push system, pub-sub is asynchronous message-based
 - **Mediator Pattern**: Observer has direct subject-observer relationship, mediator centralizes communication
 - **Chain of Responsibility**: Observer notifies all, chain of responsibility passes request along chain
 
@@ -126,11 +124,11 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Model-View Architectures**: UI updates when content changes
+- **System-View Architectures**: UI updates when content changes
 - **Event Systems**: Pub-sub messaging in distributed systems
 - **Reactive Programming**: RxJava, React.js state management
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Observer is the best solution for all problems"
 ✓ **CORRECT**: Observer has specific employ cases and trade-offs; choose algorithms based on requirements

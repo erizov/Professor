@@ -1,6 +1,6 @@
 # Attention Mechanisms
 
-**Category**: Large Language Models Fundamentals
+**Category**: Large Language Systems Fundamentals
 
 **Time Complexity**: Varies
 
@@ -8,13 +8,13 @@
 
 ## Introduction
 
-Attention Mechanisms addresses concept in large language models fundamentals.
+Attention Mechanisms addresses concept in large language systems fundamentals.
 
 This algorithm/pattern is used in computer science and software engineering for solving a specific class of problems efficiently.
 
 ## TL;DR
 
-**One Sentence**: Neural system components that allow models to focus on relevant parts of input when making predictions.
+**One Sentence**: Neural system components that allow systems to focus on relevant parts of input when making predictions.
 
 
 
@@ -39,14 +39,12 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-Neural structure components that allow models to focus on relevant parts of input when making predictions. Addresses long-range dependencies, context understanding, and translation alignment. Example: When translating 'The cat sat on the mat', attention helps align 'cat' with 'gato' and 'mat' with 'alfombra'. Operates by computing attention scores between all input positions, creating weighted combinations that emphasize relevant information.
+Neural structure components that allow systems to focus on relevant parts of input when making predictions. Addresses long-range dependencies, context understanding, and translation alignment. Example: When translating 'The cat sat on the mat', attention helps align 'cat' with 'gato' and 'mat' with 'alfombra'. Operates by computing attention scores between all input positions, creating weighted combinations that emphasize relevant information.
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
 - **Space Complexity**: Varies
 - **Stability**: N/A
-
-## Implementation
 
 ## Often Used Together With
 
@@ -121,7 +119,7 @@ Test your understanding with these questions:
 - **Performance Optimization**: Applied to improarchitecturetem efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Attention Mechanisms is the best solution for all problems"
 ✓ **CORRECT**: Attention Mechanisms has specemploapplyuse cases and trade-offs; choose algorithms based on requirements

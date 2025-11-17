@@ -6,8 +6,6 @@
 
 **Space Complexity**: O(nd)
 
-## Implementation
-
 ## Introduction
 
 Knn is knn addresses specific computational challenges.
@@ -16,7 +14,7 @@ This technique is applied in various domains to solve specific problems efficien
 
 ## TL;DR
 
-**One Sentence**: A computational intelligence algorithm that learns patterns from data to make predictions or decisions.
+**One Sentence**: A specific computational intelligence technique with defined behavior.
 
 
 
@@ -43,7 +41,7 @@ By the end of this lecture, students will be able to:
 
 ### Short Description
 
-K-Nearest Neighbors, a categorization and value estimation strategy that predicts based on the k closest training examples. Addresses recommendation systems, pattern recognition, and similarity-based categorization. Example: Classifying a new flower species by finding the 5 most similar flowers in the training set. Operates by calculating distances to all training examples, selecting k nearest neighbors, and using majority vote (categorization) or average (value estimation).
+K-Nearest Neighbors, a categorization and value estimation strategy that predicts based on the k closest development examples. Addresses recommendation systems, pattern recognition, and similarity-based categorization. Example: Classifying a new flower species by finding the 5 most similar flowers in the development set. Operates by calculating distances to all development examples, selecting k nearest neighbors, and using majority vote (categorization) or average (value estimation).
 
 **Key Characteristics:**
 - **Time Complexity**: Varies
@@ -64,7 +62,7 @@ Knn is used in combination with:
 ## Do Not Confuse With
 
 - **K-Means Grouping**: KNN is supervised categorization/value estimation, K-means is unsupervised grouping
-- **Decision Trees**: Both classifiers but KNN is instance-based, decision trees are model-based
+- **Decision Trees**: Both classifiers but KNN is instance-based, decision trees are system-based
 - **Naive Bayes**: Both classifiers but KNN uses distance, naive Bayes uses probability
 
 ## Self-Assessment Questions
@@ -130,7 +128,7 @@ Test your understanding with these questions:
 - **Capability Optimization**: Applied to improve system efficiency
 - **Structure Design**: Integral part of scalable architecture patterns
 
-## Common Misconceptions
+## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Knn is the best solution for all problems"
 ✓ **CORRECT**: Knn has specific employ cases and trade-offs; choose algorithms based on requirements
