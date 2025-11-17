@@ -39,34 +39,39 @@ def insertion_sort(arr: List[T]) -> List[T]:
 
 def main():
     """Demonstration."""
-    logger.info("=" * 70)
-    logger.info("INSERTION SORT")
-    logger.info("=" * 70)
+    import sys
+    from framework.performance_timer import PerformanceTimer
     
-    data = [64, 34, 25, 12, 22, 11, 90]
-    logger.info(f"Original: {data}")
-    result = insertion_sort(data.copy())
-    logger.info(f"Sorted:   {result}")
+    print("=" * 70)
+    print("INSERTION SORT")
+    print("=" * 70)
     
-    logger.info("\nComplexity: O(n²) worst, O(n) best, O(1) space")
-    try:
-            """Demonstration."""
-            logger.info("=" * 70)
-            logger.info("INSERTION SORT")
-            logger.info("=" * 70)
-            
-            data = [64, 34, 25, 12, 22, 11, 90]
-            logger.info(f"Original: {data}")
-            result = insertion_sort(data.copy())
-            logger.info(f"Sorted:   {result}")
-            
-            logger.info("\nComplexity: O(n²) worst, O(n) best, O(1) space")
-        
-        
-        
-    except Exception as e:
-        logger.error(f"Error: {e}", exc_info=True)
-        sys.exit(1)
+    # Example 1: Basic sorting
+    data1 = [64, 34, 25, 12, 22, 11, 90]
+    print(f"\nExample 1: Basic Integer Sorting")
+    print(f"Original: {data1}")
+    
+    with PerformanceTimer() as timer:
+        result1 = insertion_sort(data1.copy())
+    print(f"Sorted:   {result1}")
+    print(f"Time: {timer.elapsed_time:.6f} seconds")
+    
+    # Example 2: Already sorted
+    data2 = [1, 2, 3, 4, 5]
+    print(f"\nExample 2: Already Sorted Array")
+    print(f"Original: {data2}")
+    result2 = insertion_sort(data2.copy())
+    print(f"Sorted:   {result2}")
+    
+    # Example 3: Reverse sorted
+    data3 = [5, 4, 3, 2, 1]
+    print(f"\nExample 3: Reverse Sorted Array")
+    print(f"Original: {data3}")
+    result3 = insertion_sort(data3.copy())
+    print(f"Sorted:   {result3}")
+    
+    print(f"\nComplexity: O(n²) worst, O(n) best, O(1) space")
+
 
 if __name__ == "__main__":
     main()

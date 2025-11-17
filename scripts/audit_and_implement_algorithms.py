@@ -13,12 +13,42 @@ import json
 
 ROOT = Path(__file__).resolve().parents[1]
 
-# Algorithms that should use SQL
+# Algorithms that should use SQL (more specific to avoid false positives)
 SQL_ALGORITHMS = {
-    'sql', 'database', 'query', 'join', 'select', 'insert', 'update', 
-    'delete', 'transaction', 'index', 'view', 'stored_procedure',
-    'trigger', 'schema', 'migration', 'nosql', 'mongodb', 'cassandra',
-    'redis', 'postgresql', 'mysql', 'oracle', 'sqlite'
+    'sql_', 'database_', 'query_', 'join', 'joins', 'select_', 'insert_', 
+    'update_', 'delete_', 'transaction', 'transactions', 'index', 'indexes',
+    'view', 'views', 'stored_procedure', 'stored_procedures', 'trigger', 
+    'triggers', 'schema_', 'migration', 'migrations', 'nosql_', 'mongodb',
+    'cassandra', 'redis', 'postgresql', 'mysql', 'oracle', 'sqlite',
+    'normalization', 'denormalization', 'partitioning', 'replication',
+    'sharding', 'backup_', 'disaster_recovery', 'data_migration',
+    'schema_migration', 'zero_downtime_migration', 'audit_logging',
+    'encryption_at_rest', 'encryption_in_transit', 'row_level_security',
+    'column_level_security', 'data_masking', 'gdpr_compliance',
+    'data_retention', 'data_catalog', 'data_lineage', 'data_quality',
+    'warehouse_', 'data_warehouse', 'data_lake', 'lakehouse',
+    'star_schema', 'snowflake_schema', 'data_vault', 'dimensional_modeling',
+    'time_series_', 'graph_database', 'graph_analytics', 'graph_ml',
+    'graph_traversal', 'graph_pattern_matching', 'graph_visualization',
+    'graph_algorithms_db', 'window_functions', 'common_table_expressions',
+    'recursive_queries', 'pivot_unpivot', 'sql_analytics', 'query_optimization',
+    'materialized_views', 'query_hints', 'statistics_management',
+    'database_clustering', 'database_federation', 'database_sharding',
+    'multi_tenant_databases', 'read_replicas', 'write_scaling',
+    'nosql_aggregation', 'nosql_analytics', 'nosql_consistency',
+    'nosql_data_modeling', 'nosql_query_optimization', 'nosql_transactions',
+    'downsampling', 'retention_policies', 'time_series_analytics',
+    'time_series_compression', 'time_series_queries', 'time_series_storage',
+    'distributed_transactions', 'query_expansion', 'quantum_database',
+    'transaction_analysis', 'confidential_transactions'
+}
+
+# Exclude these from SQL (they're sorting/searching algorithms)
+SQL_EXCLUDE = {
+    'insertion_sort', 'selection_sort', 'bubble_sort', 'quick_sort',
+    'merge_sort', 'heap_sort', 'counting_sort', 'radix_sort',
+    'bucket_sort', 'linear_search', 'binary_search', 'jump_search',
+    'interpolation_search', 'exponential_search'
 }
 
 # Reference implementations to use as style guides
@@ -60,8 +90,19 @@ def is_placeholder(file_path: Path) -> bool:
 
 def should_use_sql(algorithm_name: str, lecture_name: str) -> bool:
     """Determine if algorithm should use SQL."""
+    # Exclude sorting/searching algorithms
+    if algorithm_name.lower() in SQL_EXCLUDE:
+        return False
+    
+    # Check if it's a SQL-related algorithm
     combined = f"{algorithm_name} {lecture_name}".lower()
-    return any(keyword in combined for keyword in SQL_ALGORITHMS)
+    # Use word boundaries to avoid false matches
+    for keyword in SQL_ALGORITHMS:
+        # Check for exact word match or as part of algorithm name
+        if keyword in algorithm_name.lower() or keyword in lecture_name.lower():
+            return True
+    
+    return False
 
 def get_algorithm_category(algorithm_path: Path) -> str:
     """Get algorithm category from path."""
