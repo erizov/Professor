@@ -5,7 +5,8 @@ Web interface for algorithm course.
 Provides sorting, searching, and preview functionality.
 """
 
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, session
+from flask_cors import CORS
 import sqlite3
 from pathlib import Path
 import json
@@ -14,6 +15,12 @@ ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = ROOT / "database" / "algorithms.db"
 
 app = Flask(__name__)
+app.secret_key = 'your-secret-key-here'  # Change in production
+CORS(app)
+
+# Register dashboard blueprint
+from web_interface.dashboard import dashboard_bp
+app.register_blueprint(dashboard_bp)
 
 def get_db_connection():
     """Get database connection."""
