@@ -41,6 +41,7 @@ def index_strategies(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Index Strategies implementation.
     

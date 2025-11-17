@@ -41,6 +41,7 @@ def nosql_analytics(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Nosql Analytics implementation.
     

@@ -41,6 +41,7 @@ def time_series_queries(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Time Series Queries implementation.
     
