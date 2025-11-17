@@ -218,6 +218,30 @@ class RaftNode:
 **Purpose**: Python libraries provide implementations for this pattern/algorithm.
 
 
+### Python
+
+```python
+# Python - Raft Consensus Implementation
+class RaftNode:
+    def __init__(self, node_id: int, peers: List[int]):
+        self.node_id = node_id
+        self.peers = peers
+        self.state = "follower"
+        self.current_term = 0
+        self.voted_for = None
+        self.log = []
+    
+    def request_vote(self, term: int, candidate_id: int):
+        if term > self.current_term:
+            self.current_term = term
+            self.voted_for = candidate_id
+            return True
+        return False
+```
+
+**Purpose**: Python libraries provide implementations for this pattern/algorithm.
+
+
 ## Algorithm Steps
 
 1. **Initialization**: Set up initial state and data structures

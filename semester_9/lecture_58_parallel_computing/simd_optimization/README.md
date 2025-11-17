@@ -201,6 +201,39 @@ message = actor.receive()
 **Purpose**: Python libraries provide implementations for this pattern/algorithm.
 
 
+### Python
+
+```python
+# Python - Actor Model with Akka-style
+from typing import Protocol
+from dataclasses import dataclass
+
+@dataclass
+class Message:
+    content: str
+
+class Actor:
+    def __init__(self, name: str):
+        self.name = name
+        self.mailbox = []
+    
+    def send(self, message: Message):
+        self.mailbox.append(message)
+    
+    def receive(self):
+        if self.mailbox:
+            return self.mailbox.pop(0)
+        return None
+
+# Usage
+actor = Actor("worker")
+actor.send(Message("process data"))
+message = actor.receive()
+```
+
+**Purpose**: Python libraries provide implementations for this pattern/algorithm.
+
+
 ## Algorithm Steps
 
 1. **Initialization**: Set up initial state and data structures

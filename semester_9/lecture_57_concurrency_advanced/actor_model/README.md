@@ -235,6 +235,32 @@ public class WorkerActor extends AbstractActor {
 **Purpose**: Java frameworks use this for enterprise application development.
 
 
+### Java
+
+```java
+// Java - Akka Actor Model
+import akka.actor.AbstractActor;
+import akka.actor.Props;
+
+public class WorkerActor extends AbstractActor {
+    public static Props props() {
+        return Props.create(WorkerActor.class);
+    }
+    
+    @Override
+    public Receive createReceive() {
+        return receiveBuilder()
+            .match(String.class, message -> {
+                System.out.println("Received: " + message);
+            })
+            .build();
+    }
+}
+```
+
+**Purpose**: Java frameworks use this for enterprise application development.
+
+
 ## Algorithm Steps
 
 1. **Initialization**: Set up initial state and data structures

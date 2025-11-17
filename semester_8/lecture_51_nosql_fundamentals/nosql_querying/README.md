@@ -150,6 +150,27 @@ CREATE INDEX idx_orders_customer_id ON orders(customer_id);
 
 **Purpose**: Database systems use this for data management and optimization.
 
+### Kubernetes
+
+```yaml
+# Kubernetes - Container Runtime Interface (CRI)
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-pod
+spec:
+  runtimeClassName: runc
+  containers:
+  - name: app
+    image: myapp:latest
+    resources:
+      requests:
+        memory: "128Mi"
+        cpu: "100m"
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and cluster management.
+
 
 ## Algorithm Steps
 

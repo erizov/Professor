@@ -132,6 +132,28 @@ public class GraphExample {
 
 **Purpose**: Java standard library uses this algorithm for core data structure operations.
 
+### Kubernetes
+
+```yaml
+# Kubernetes - Container Runtime Interface (CRI)
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-pod
+spec:
+  runtimeClassName: runc
+  containers:
+  - name: app
+    image: myapp:latest
+    resources:
+      requests:
+        memory: "128Mi"
+        cpu: "100m"
+```
+
+**Purpose**: Kubernetes uses this for container orchestration and cluster management.
+
+
 ### Python Standard Library
 
 ```python

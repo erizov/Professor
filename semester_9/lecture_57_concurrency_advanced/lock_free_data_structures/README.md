@@ -212,6 +212,29 @@ class LockFreeCounter:
 **Purpose**: Python libraries provide implementations for this pattern/algorithm.
 
 
+### Python
+
+```python
+# Python - Lock-free with atomic operations
+from threading import Lock
+from collections import defaultdict
+
+class LockFreeCounter:
+    def __init__(self):
+        self._counters = defaultdict(int)
+        self._locks = defaultdict(Lock)
+    
+    def increment(self, key: str):
+        with self._locks[key]:
+            self._counters[key] += 1
+    
+    def get(self, key: str) -> int:
+        return self._counters[key]
+```
+
+**Purpose**: Python libraries provide implementations for this pattern/algorithm.
+
+
 ## Algorithm Steps
 
 1. **Initialization**: Set up initial state and data structures
