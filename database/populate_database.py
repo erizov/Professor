@@ -125,18 +125,21 @@ def populate_database():
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     
-    # Read schema
+    # Read and execute schema
     schema_file = ROOT / "database" / "schema.sql"
     if schema_file.exists():
         schema = schema_file.read_text(encoding='utf-8')
-        # Execute schema (split by semicolons, but handle CREATE VIEW separately)
-        for statement in schema.split(';'):
-            statement = statement.strip()
-            if statement and not statement.startswith('--'):
-                try:
-                    cursor.execute(statement)
-                except sqlite3.OperationalError as e:
-                    if 'already exists' not in str(e).lower():
+        # Split by semicolons and execute each statement
+        statements = [s.strip() for s in schema.split(';') if s.strip() and not s.strip().startswith('--')]
+        
+        for statement in statements:
+            try:
+                cursor.execute(statement)
+            except sqlite3.OperationalError as e:
+                error_msg = str(e).lower()
+                if 'already exists' not in error_msg and 'duplicate column' not in error_msg:
+                    # Only print if it's not a harmless "already exists" error
+                    if 'no such table' not in error_msg:
                         print(f"Schema warning: {e}")
     
     conn.commit()
