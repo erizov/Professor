@@ -29,6 +29,7 @@ def self_service_analytics(*args, **kwargs) -> Any:
     Space Complexity: See README.md
     """
     
+
 def self_service_analytics(*args, **kwargs) -> Any:
     """
     Self Service Analytics implementation.
@@ -44,6 +45,32 @@ def self_service_analytics(*args, **kwargs) -> Any:
     logger.info(f"Executing self_service_analytics")
     # TODO: Add specific implementation logic
     return None
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Self Service Analytics")
+    print("=" * 70)
+    
+    # Example usage
+    result = self_service_analytics()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Self Service Analytics")
+    print("=" * 70)
+    
+    # Example usage
+    result = self_service_analytics()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
 
 def main():
     """Demonstration."""

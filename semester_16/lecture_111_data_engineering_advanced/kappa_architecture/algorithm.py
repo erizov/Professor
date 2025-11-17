@@ -29,6 +29,7 @@ def kappa_architecture(*args, **kwargs) -> Any:
     Space Complexity: See README.md
     """
     
+
 def kappa_architecture(*args, **kwargs) -> Any:
     """
     Kappa Architecture implementation.
@@ -44,6 +45,32 @@ def kappa_architecture(*args, **kwargs) -> Any:
     logger.info(f"Executing kappa_architecture")
     # TODO: Add specific implementation logic
     return None
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Kappa Architecture")
+    print("=" * 70)
+    
+    # Example usage
+    result = kappa_architecture()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Kappa Architecture")
+    print("=" * 70)
+    
+    # Example usage
+    result = kappa_architecture()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
 
 def main():
     """Demonstration."""
