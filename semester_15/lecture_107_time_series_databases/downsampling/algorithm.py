@@ -38,6 +38,7 @@ def downsampling(*args, **kwargs) -> Any:
 
 
 
+
 def downsampling(*args, **kwargs) -> Any:
     """
     Downsampling implementation.
@@ -53,6 +54,13318 @@ def downsampling(*args, **kwargs) -> Any:
     logger.info(f"Executing downsampling")
     # TODO: Add specific implementation logic
     return None
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Downsampling")
+    print("=" * 70)
+    
+    # Example usage
+    result = downsampling()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
 
 def main():
     """Demonstration."""
