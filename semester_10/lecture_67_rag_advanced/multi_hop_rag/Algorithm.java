@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Multi Hop Rag implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Multi Hop Rag.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object multi_hop_rag(Object... args) {
-        logger.info("Executing multi_hop_rag");
-        // TODO: Implement multi_hop_rag based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object multihoprag(Object... args) {
+    // TODO: Implement multihoprag based on README.md
+    logger.info("Executing multihoprag");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Multi Hop Rag");
         System.out.println("=".repeat(70));

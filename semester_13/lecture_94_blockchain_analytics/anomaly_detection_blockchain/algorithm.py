@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def anomaly_detection_blockchain(*args, **kwargs) -> Any:
     """
-    Anomaly Detection Blockchain.
+    anomaly_detection_blockchain algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def anomaly_detection_blockchain(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing anomaly_detection_blockchain")
     # TODO: Implement anomaly_detection_blockchain based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

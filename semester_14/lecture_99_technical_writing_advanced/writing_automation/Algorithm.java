@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Writing Automation implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Writing Automation.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object writing_automation(Object... args) {
-        logger.info("Executing writing_automation");
-        // TODO: Implement writing_automation based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object writingautomation(Object... args) {
+    // TODO: Implement writingautomation based on README.md
+    logger.info("Executing writingautomation");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Writing Automation");
         System.out.println("=".repeat(70));

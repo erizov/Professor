@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Multi Chain Apps implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Multi Chain Apps.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object multi_chain_apps(Object... args) {
-        logger.info("Executing multi_chain_apps");
-        // TODO: Implement multi_chain_apps based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object multichainapps(Object... args) {
+    // TODO: Implement multichainapps based on README.md
+    logger.info("Executing multichainapps");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Multi Chain Apps");
         System.out.println("=".repeat(70));

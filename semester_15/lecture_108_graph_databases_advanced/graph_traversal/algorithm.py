@@ -13,25 +13,36 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
-def graph_traversal(*args, **kwargs) -> Any:
+def graph_traversal(graph: Dict[int, List[int]], start: int) -> List[int]:
     """
-    Graph Traversal.
+    graph_traversal algorithm for graph traversal.
     
     Args:
-        *args: Variable arguments
-        **kwargs: Keyword arguments
+        graph: Adjacency list representation
+        start: Starting vertex
         
     Returns:
-        Result of the algorithm
+        List of visited vertices
         
-    Time Complexity: See README.md
-    Space Complexity: See README.md
+    Time Complexity: O(V + E)
+    Space Complexity: O(V)
     """
-    logger.info(f"Executing graph_traversal")
-    # TODO: Implement graph_traversal based on README.md
-    return None
-
+    visited = []
+    # TODO: Implement graph_traversal algorithm
+    # Basic DFS implementation
+    stack = [start]
+    seen = {start}
+    
+    while stack:
+        vertex = stack.pop()
+        visited.append(vertex)
+        
+        for neighbor in graph.get(vertex, []):
+            if neighbor not in seen:
+                seen.add(neighbor)
+                stack.append(neighbor)
+    
+    return visited
 
 def main():
     """Demonstration."""

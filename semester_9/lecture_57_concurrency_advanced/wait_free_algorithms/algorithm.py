@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def wait_free_algorithms(*args, **kwargs) -> Any:
     """
-    Wait Free Algorithms.
+    wait_free_algorithms algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def wait_free_algorithms(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing wait_free_algorithms")
     # TODO: Implement wait_free_algorithms based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

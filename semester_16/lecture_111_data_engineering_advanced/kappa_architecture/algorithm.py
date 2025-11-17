@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def kappa_architecture(*args, **kwargs) -> Any:
     """
-    Kappa Architecture.
+    kappa_architecture algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def kappa_architecture(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing kappa_architecture")
     # TODO: Implement kappa_architecture based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

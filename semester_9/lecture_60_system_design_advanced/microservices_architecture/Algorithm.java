@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Microservices Architecture implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Microservices Architecture.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object microservices_architecture(Object... args) {
-        logger.info("Executing microservices_architecture");
-        // TODO: Implement microservices_architecture based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object microservicesarchitecture(Object... args) {
+    // TODO: Implement microservicesarchitecture based on README.md
+    logger.info("Executing microservicesarchitecture");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Microservices Architecture");
         System.out.println("=".repeat(70));

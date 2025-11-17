@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def column_level_security(*args, **kwargs) -> Any:
     """
-    Column Level Security.
+    column_level_security algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def column_level_security(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing column_level_security")
     # TODO: Implement column_level_security based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

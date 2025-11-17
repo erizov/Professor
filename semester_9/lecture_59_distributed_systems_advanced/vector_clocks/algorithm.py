@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def vector_clocks(*args, **kwargs) -> Any:
     """
-    Vector Clocks.
+    vector_clocks algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def vector_clocks(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing vector_clocks")
     # TODO: Implement vector_clocks based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

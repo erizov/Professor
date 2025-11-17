@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def style_guides(*args, **kwargs) -> Any:
     """
-    Style Guides.
+    style_guides algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def style_guides(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing style_guides")
     # TODO: Implement style_guides based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

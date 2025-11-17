@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Transformer Optimization implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Transformer Optimization.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object transformer_optimization(Object... args) {
-        logger.info("Executing transformer_optimization");
-        // TODO: Implement transformer_optimization based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object transformeroptimization(Object... args) {
+    // TODO: Implement transformeroptimization based on README.md
+    logger.info("Executing transformeroptimization");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Transformer Optimization");
         System.out.println("=".repeat(70));

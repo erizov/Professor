@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Observability Stack implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Observability Stack.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object observability_stack(Object... args) {
-        logger.info("Executing observability_stack");
-        // TODO: Implement observability_stack based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object observabilitystack(Object... args) {
+    // TODO: Implement observabilitystack based on README.md
+    logger.info("Executing observabilitystack");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Observability Stack");
         System.out.println("=".repeat(70));

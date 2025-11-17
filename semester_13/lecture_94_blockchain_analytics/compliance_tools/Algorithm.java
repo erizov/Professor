@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Compliance Tools implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Compliance Tools.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object compliance_tools(Object... args) {
-        logger.info("Executing compliance_tools");
-        // TODO: Implement compliance_tools based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object compliancetools(Object... args) {
+    // TODO: Implement compliancetools based on README.md
+    logger.info("Executing compliancetools");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Compliance Tools");
         System.out.println("=".repeat(70));

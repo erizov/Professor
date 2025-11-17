@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def long_context_models(*args, **kwargs) -> Any:
     """
-    Long Context Models.
+    long_context_models algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def long_context_models(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing long_context_models")
     # TODO: Implement long_context_models based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

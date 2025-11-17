@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def alert_fatigue_reduction(*args, **kwargs) -> Any:
     """
-    Alert Fatigue Reduction.
+    alert_fatigue_reduction algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def alert_fatigue_reduction(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing alert_fatigue_reduction")
     # TODO: Implement alert_fatigue_reduction based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

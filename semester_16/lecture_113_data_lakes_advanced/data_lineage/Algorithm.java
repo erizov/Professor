@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Data Lineage implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Data Lineage.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object data_lineage(Object... args) {
-        logger.info("Executing data_lineage");
-        // TODO: Implement data_lineage based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object datalineage(Object... args) {
+    // TODO: Implement datalineage based on README.md
+    logger.info("Executing datalineage");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Data Lineage");
         System.out.println("=".repeat(70));

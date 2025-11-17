@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Secrets Rotation implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Secrets Rotation.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object secrets_rotation(Object... args) {
-        logger.info("Executing secrets_rotation");
-        // TODO: Implement secrets_rotation based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object secretsrotation(Object... args) {
+    // TODO: Implement secretsrotation based on README.md
+    logger.info("Executing secretsrotation");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Secrets Rotation");
         System.out.println("=".repeat(70));

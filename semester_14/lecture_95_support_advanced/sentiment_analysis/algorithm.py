@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def sentiment_analysis(*args, **kwargs) -> Any:
     """
-    Sentiment Analysis.
+    sentiment_analysis algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def sentiment_analysis(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing sentiment_analysis")
     # TODO: Implement sentiment_analysis based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

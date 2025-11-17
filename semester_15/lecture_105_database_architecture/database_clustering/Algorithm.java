@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Database Clustering implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Database Clustering.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object database_clustering(Object... args) {
-        logger.info("Executing database_clustering");
-        // TODO: Implement database_clustering based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object databaseclustering(Object... args) {
+    // TODO: Implement databaseclustering based on README.md
+    logger.info("Executing databaseclustering");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Database Clustering");
         System.out.println("=".repeat(70));

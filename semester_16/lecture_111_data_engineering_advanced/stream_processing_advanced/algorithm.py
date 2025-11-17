@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def stream_processing_advanced(*args, **kwargs) -> Any:
     """
-    Stream Processing Advanced.
+    stream_processing_advanced algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def stream_processing_advanced(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing stream_processing_advanced")
     # TODO: Implement stream_processing_advanced based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def liquidity_pools(*args, **kwargs) -> Any:
     """
-    Liquidity Pools.
+    liquidity_pools algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def liquidity_pools(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing liquidity_pools")
     # TODO: Implement liquidity_pools based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

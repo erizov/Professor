@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def code_to_docs(*args, **kwargs) -> Any:
     """
-    Code To Docs.
+    code_to_docs algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def code_to_docs(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing code_to_docs")
     # TODO: Implement code_to_docs based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

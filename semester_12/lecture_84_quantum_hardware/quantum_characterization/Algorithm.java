@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Quantum Characterization implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Quantum Characterization.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object quantum_characterization(Object... args) {
-        logger.info("Executing quantum_characterization");
-        // TODO: Implement quantum_characterization based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object quantumcharacterization(Object... args) {
+    // TODO: Implement quantumcharacterization based on README.md
+    logger.info("Executing quantumcharacterization");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Quantum Characterization");
         System.out.println("=".repeat(70));

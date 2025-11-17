@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def database_clustering(*args, **kwargs) -> Any:
     """
-    Database Clustering.
+    database_clustering algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def database_clustering(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing database_clustering")
     # TODO: Implement database_clustering based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

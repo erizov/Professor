@@ -152,3 +152,139 @@ public class Service {
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
 
+
+
+## Examples of Implementation
+
+This pattern/algorithm is implemented in the following frameworks and technologies:
+
+### Spring Framework
+
+```java
+// Spring Framework - Proxy Pattern
+public interface ImageService {
+    Image loadImage(String filename);
+}
+
+// Real Subject
+@Service
+public class RealImageService implements ImageService {
+    @Override
+    public Image loadImage(String filename) {
+        // Expensive operation: load from disk
+        return new Image(filename);
+    }
+}
+
+// Proxy
+@Service
+public class ImageServiceProxy implements ImageService {
+    private final ImageService realService;
+    private final Map<String, Image> cache = new ConcurrentHashMap<>();
+    
+    @Autowired
+    public ImageServiceProxy(@Qualifier("realImageService") ImageService realService) {
+        this.realService = realService;
+    }
+    
+    @Override
+    public Image loadImage(String filename) {
+        return cache.computeIfAbsent(filename, realService::loadImage);
+    }
+}
+
+// Spring AOP Proxy
+@Aspect
+@Component
+public class ImageServiceAspect {
+    @Around("execution(* ImageService.loadImage(..))")
+    public Object cacheImage(ProceedingJoinPoint joinPoint) throws Throwable {
+        String filename = (String) joinPoint.getArgs()[0];
+        // Caching logic
+        return joinPoint.proceed();
+    }
+}
+```
+
+**Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
+
+### .NET Framework
+
+```csharp
+// .NET - Proxy Pattern
+public interface IImageService
+{
+    Image LoadImage(string filename);
+}
+
+// Real Subject
+public class RealImageService : IImageService
+{
+    public Image LoadImage(string filename)
+    {
+        // Expensive operation
+        return new Image(filename);
+    }
+}
+
+// Proxy
+public class ImageServiceProxy : IImageService
+{
+    private readonly IImageService _realService;
+    private readonly IMemoryCache _cache;
+    
+    public ImageServiceProxy(IImageService realService, IMemoryCache cache)
+    {
+        _realService = realService;
+        _cache = cache;
+    }
+    
+    public Image LoadImage(string filename)
+    {
+        return _cache.GetOrCreate(filename, entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5);
+            return _realService.LoadImage(filename);
+        });
+    }
+}
+
+// .NET Core DI
+services.AddSingleton<RealImageService>();
+services.AddSingleton<IImageService, ImageServiceProxy>();
+```
+
+**Purpose**: .NET Framework implements this pattern for service registration, dependency injection, and application architecture.
+
+### Nginx
+
+```nginx
+# Nginx - Proxy Pattern (Reverse Proxy)
+# nginx.conf
+server {
+    listen 80;
+    server_name example.com;
+    
+    location / {
+        # Proxy to backend service
+        proxy_pass http://backend-servers;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        
+        # Proxy features
+        proxy_cache my_cache;
+        proxy_cache_valid 200 10m;
+        proxy_buffering on;
+    }
+}
+
+upstream backend-servers {
+    server backend1:8080;
+    server backend2:8080;
+    server backend3:8080;
+}
+```
+
+**Purpose**: Nginx implements this pattern for reverse proxying, load balancing, and request routing.
+

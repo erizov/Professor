@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def treasury_management(*args, **kwargs) -> Any:
     """
-    Treasury Management.
+    treasury_management algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def treasury_management(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing treasury_management")
     # TODO: Implement treasury_management based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

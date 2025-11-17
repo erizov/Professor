@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Api Explorer implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Api Explorer.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object api_explorer(Object... args) {
-        logger.info("Executing api_explorer");
-        // TODO: Implement api_explorer based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object apiexplorer(Object... args) {
+    // TODO: Implement apiexplorer based on README.md
+    logger.info("Executing apiexplorer");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Api Explorer");
         System.out.println("=".repeat(70));

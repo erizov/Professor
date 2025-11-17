@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def function_as_service(*args, **kwargs) -> Any:
     """
-    Function As Service.
+    function_as_service algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def function_as_service(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing function_as_service")
     # TODO: Implement function_as_service based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

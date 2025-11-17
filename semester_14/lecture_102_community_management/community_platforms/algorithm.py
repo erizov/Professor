@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def community_platforms(*args, **kwargs) -> Any:
     """
-    Community Platforms.
+    community_platforms algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def community_platforms(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing community_platforms")
     # TODO: Implement community_platforms based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

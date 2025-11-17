@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def schema_migration(*args, **kwargs) -> Any:
     """
-    Schema Migration.
+    schema_migration algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def schema_migration(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing schema_migration")
     # TODO: Implement schema_migration based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

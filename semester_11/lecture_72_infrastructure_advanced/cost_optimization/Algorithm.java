@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Cost Optimization implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Cost Optimization.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object cost_optimization(Object... args) {
-        logger.info("Executing cost_optimization");
-        // TODO: Implement cost_optimization based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object costoptimization(Object... args) {
+    // TODO: Implement costoptimization based on README.md
+    logger.info("Executing costoptimization");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Cost Optimization");
         System.out.println("=".repeat(70));

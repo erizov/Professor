@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Mixture Of Experts implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Mixture Of Experts.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object mixture_of_experts(Object... args) {
-        logger.info("Executing mixture_of_experts");
-        // TODO: Implement mixture_of_experts based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object mixtureofexperts(Object... args) {
+    // TODO: Implement mixtureofexperts based on README.md
+    logger.info("Executing mixtureofexperts");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Mixture Of Experts");
         System.out.println("=".repeat(70));

@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def sandbox_environments(*args, **kwargs) -> Any:
     """
-    Sandbox Environments.
+    sandbox_environments algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def sandbox_environments(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing sandbox_environments")
     # TODO: Implement sandbox_environments based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

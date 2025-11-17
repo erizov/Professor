@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Data Vault implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Data Vault.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object data_vault(Object... args) {
-        logger.info("Executing data_vault");
-        // TODO: Implement data_vault based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object datavault(Object... args) {
+    // TODO: Implement datavault based on README.md
+    logger.info("Executing datavault");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Data Vault");
         System.out.println("=".repeat(70));

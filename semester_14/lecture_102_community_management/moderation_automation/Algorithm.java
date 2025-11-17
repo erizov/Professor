@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Moderation Automation implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Moderation Automation.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object moderation_automation(Object... args) {
-        logger.info("Executing moderation_automation");
-        // TODO: Implement moderation_automation based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object moderationautomation(Object... args) {
+    // TODO: Implement moderationautomation based on README.md
+    logger.info("Executing moderationautomation");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Moderation Automation");
         System.out.println("=".repeat(70));

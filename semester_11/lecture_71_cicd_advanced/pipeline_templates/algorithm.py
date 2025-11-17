@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def pipeline_templates(*args, **kwargs) -> Any:
     """
-    Pipeline Templates.
+    pipeline_templates algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def pipeline_templates(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing pipeline_templates")
     # TODO: Implement pipeline_templates based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

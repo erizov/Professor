@@ -152,3 +152,156 @@ public class Service {
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
 
+
+
+## Examples of Implementation
+
+This pattern/algorithm is implemented in the following frameworks and technologies:
+
+### Spring Framework
+
+```java
+// Spring Framework - Decorator Pattern
+public interface DataService {
+    String fetchData(String key);
+}
+
+// Concrete Component
+@Service
+public class BasicDataService implements DataService {
+    @Override
+    public String fetchData(String key) {
+        return "Data for " + key;
+    }
+}
+
+// Decorator
+@Service
+public class CachingDataServiceDecorator implements DataService {
+    private final DataService dataService;
+    private final Cache cache;
+    
+    @Autowired
+    public CachingDataServiceDecorator(
+            @Qualifier("basicDataService") DataService dataService,
+            Cache cache) {
+        this.dataService = dataService;
+        this.cache = cache;
+    }
+    
+    @Override
+    public String fetchData(String key) {
+        String cached = cache.get(key);
+        if (cached != null) {
+            return cached;
+        }
+        String data = dataService.fetchData(key);
+        cache.put(key, data);
+        return data;
+    }
+}
+
+// Another Decorator
+@Service
+public class LoggingDataServiceDecorator implements DataService {
+    private final DataService dataService;
+    
+    @Autowired
+    public LoggingDataServiceDecorator(
+            @Qualifier("cachingDataServiceDecorator") DataService dataService) {
+        this.dataService = dataService;
+    }
+    
+    @Override
+    public String fetchData(String key) {
+        logger.info("Fetching data for key: " + key);
+        String data = dataService.fetchData(key);
+        logger.info("Fetched data: " + data);
+        return data;
+    }
+}
+```
+
+**Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
+
+### .NET Framework
+
+```csharp
+// .NET - Decorator Pattern
+public interface IDataService
+{
+    string FetchData(string key);
+}
+
+// Concrete Component
+public class BasicDataService : IDataService
+{
+    public string FetchData(string key)
+    {
+        return $"Data for {key}";
+    }
+}
+
+// Decorator
+public class CachingDataServiceDecorator : IDataService
+{
+    private readonly IDataService _dataService;
+    private readonly IMemoryCache _cache;
+    
+    public CachingDataServiceDecorator(IDataService dataService, IMemoryCache cache)
+    {
+        _dataService = dataService;
+        _cache = cache;
+    }
+    
+    public string FetchData(string key)
+    {
+        if (_cache.TryGetValue(key, out string cached))
+        {
+            return cached;
+        }
+        
+        var data = _dataService.FetchData(key);
+        _cache.Set(key, data);
+        return data;
+    }
+}
+
+// .NET Core DI - Decorator Chain
+services.AddSingleton<BasicDataService>();
+services.Decorate<IDataService, CachingDataServiceDecorator>();
+services.Decorate<IDataService, LoggingDataServiceDecorator>();
+```
+
+**Purpose**: .NET Framework implements this pattern for service registration, dependency injection, and application architecture.
+
+### Nginx
+
+```nginx
+# Nginx - Decorator Pattern (Middleware)
+# nginx.conf
+server {
+    listen 80;
+    
+    # Decorator 1: Logging
+    access_log /var/log/nginx/access.log;
+    
+    # Decorator 2: Caching
+    proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=my_cache:10m;
+    
+    location / {
+        # Decorator 3: Compression
+        gzip on;
+        gzip_types text/plain application/json;
+        
+        # Decorator 4: Rate Limiting
+        limit_req zone=api_limit burst=10;
+        
+        proxy_pass http://backend;
+        proxy_cache my_cache;
+    }
+}
+```
+
+**Purpose**: Nginx implements this pattern for reverse proxying, load balancing, and request routing.
+

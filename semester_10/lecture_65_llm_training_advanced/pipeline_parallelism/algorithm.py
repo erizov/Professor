@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def pipeline_parallelism(*args, **kwargs) -> Any:
     """
-    Pipeline Parallelism.
+    pipeline_parallelism algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def pipeline_parallelism(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing pipeline_parallelism")
     # TODO: Implement pipeline_parallelism based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

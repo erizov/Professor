@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Quantum Machine Learning implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Quantum Machine Learning.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object quantum_machine_learning(Object... args) {
-        logger.info("Executing quantum_machine_learning");
-        // TODO: Implement quantum_machine_learning based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object quantummachinelearning(Object... args) {
+    // TODO: Implement quantummachinelearning based on README.md
+    logger.info("Executing quantummachinelearning");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Quantum Machine Learning");
         System.out.println("=".repeat(70));

@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Query Hints implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Query Hints.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object query_hints(Object... args) {
-        logger.info("Executing query_hints");
-        // TODO: Implement query_hints based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object queryhints(Object... args) {
+    // TODO: Implement queryhints based on README.md
+    logger.info("Executing queryhints");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Query Hints");
         System.out.println("=".repeat(70));

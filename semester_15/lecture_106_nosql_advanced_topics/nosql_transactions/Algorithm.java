@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Nosql Transactions implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Nosql Transactions.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object nosql_transactions(Object... args) {
-        logger.info("Executing nosql_transactions");
-        // TODO: Implement nosql_transactions based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object nosqltransactions(Object... args) {
+    // TODO: Implement nosqltransactions based on README.md
+    logger.info("Executing nosqltransactions");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Nosql Transactions");
         System.out.println("=".repeat(70));

@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def privacy_coins(*args, **kwargs) -> Any:
     """
-    Privacy Coins.
+    privacy_coins algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def privacy_coins(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing privacy_coins")
     # TODO: Implement privacy_coins based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

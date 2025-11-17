@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def lambda_architecture(*args, **kwargs) -> Any:
     """
-    Lambda Architecture.
+    lambda_architecture algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def lambda_architecture(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing lambda_architecture")
     # TODO: Implement lambda_architecture based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

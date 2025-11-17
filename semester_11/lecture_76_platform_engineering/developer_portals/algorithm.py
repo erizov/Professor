@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def developer_portals(*args, **kwargs) -> Any:
     """
-    Developer Portals.
+    developer_portals algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def developer_portals(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing developer_portals")
     # TODO: Implement developer_portals based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

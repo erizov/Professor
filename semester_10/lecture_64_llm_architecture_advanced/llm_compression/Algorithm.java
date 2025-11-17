@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Llm Compression implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Llm Compression.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object llm_compression(Object... args) {
-        logger.info("Executing llm_compression");
-        // TODO: Implement llm_compression based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object llmcompression(Object... args) {
+    // TODO: Implement llmcompression based on README.md
+    logger.info("Executing llmcompression");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Llm Compression");
         System.out.println("=".repeat(70));

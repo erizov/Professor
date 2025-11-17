@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Multi Cloud Strategies implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Multi Cloud Strategies.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object multi_cloud_strategies(Object... args) {
-        logger.info("Executing multi_cloud_strategies");
-        // TODO: Implement multi_cloud_strategies based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object multicloudstrategies(Object... args) {
+    // TODO: Implement multicloudstrategies based on README.md
+    logger.info("Executing multicloudstrategies");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Multi Cloud Strategies");
         System.out.println("=".repeat(70));

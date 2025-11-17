@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def llm_compression(*args, **kwargs) -> Any:
     """
-    Llm Compression.
+    llm_compression algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def llm_compression(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing llm_compression")
     # TODO: Implement llm_compression based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

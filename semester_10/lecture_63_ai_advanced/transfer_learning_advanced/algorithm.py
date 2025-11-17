@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def transfer_learning_advanced(*args, **kwargs) -> Any:
     """
-    Transfer Learning Advanced.
+    transfer_learning_advanced algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def transfer_learning_advanced(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing transfer_learning_advanced")
     # TODO: Implement transfer_learning_advanced based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

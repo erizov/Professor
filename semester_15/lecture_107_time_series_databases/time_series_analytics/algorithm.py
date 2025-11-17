@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def time_series_analytics(*args, **kwargs) -> Any:
     """
-    Time Series Analytics.
+    time_series_analytics algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def time_series_analytics(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing time_series_analytics")
     # TODO: Implement time_series_analytics based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

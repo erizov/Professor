@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def service_mesh(*args, **kwargs) -> Any:
     """
-    Service Mesh.
+    service_mesh algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def service_mesh(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing service_mesh")
     # TODO: Implement service_mesh based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

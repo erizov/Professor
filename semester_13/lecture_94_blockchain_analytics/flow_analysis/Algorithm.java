@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Flow Analysis implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Flow Analysis.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object flow_analysis(Object... args) {
-        logger.info("Executing flow_analysis");
-        // TODO: Implement flow_analysis based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object flowanalysis(Object... args) {
+    // TODO: Implement flowanalysis based on README.md
+    logger.info("Executing flowanalysis");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Flow Analysis");
         System.out.println("=".repeat(70));

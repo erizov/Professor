@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Data Platform Architecture implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Data Platform Architecture.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object data_platform_architecture(Object... args) {
-        logger.info("Executing data_platform_architecture");
-        // TODO: Implement data_platform_architecture based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object dataplatformarchitecture(Object... args) {
+    // TODO: Implement dataplatformarchitecture based on README.md
+    logger.info("Executing dataplatformarchitecture");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Data Platform Architecture");
         System.out.println("=".repeat(70));

@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def container_orchestration(*args, **kwargs) -> Any:
     """
-    Container Orchestration.
+    container_orchestration algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def container_orchestration(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing container_orchestration")
     # TODO: Implement container_orchestration based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

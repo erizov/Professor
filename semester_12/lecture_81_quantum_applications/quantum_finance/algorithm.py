@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def quantum_finance(*args, **kwargs) -> Any:
     """
-    Quantum Finance.
+    quantum_finance algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def quantum_finance(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing quantum_finance")
     # TODO: Implement quantum_finance based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

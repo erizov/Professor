@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Lambda Architecture implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Lambda Architecture.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object lambda_architecture(Object... args) {
-        logger.info("Executing lambda_architecture");
-        // TODO: Implement lambda_architecture based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object lambdaarchitecture(Object... args) {
+    // TODO: Implement lambdaarchitecture based on README.md
+    logger.info("Executing lambdaarchitecture");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Lambda Architecture");
         System.out.println("=".repeat(70));

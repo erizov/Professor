@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def quantum_software_stack(*args, **kwargs) -> Any:
     """
-    Quantum Software Stack.
+    quantum_software_stack algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def quantum_software_stack(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing quantum_software_stack")
     # TODO: Implement quantum_software_stack based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

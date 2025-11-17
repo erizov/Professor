@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def contextual_help(*args, **kwargs) -> Any:
     """
-    Contextual Help.
+    contextual_help algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def contextual_help(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing contextual_help")
     # TODO: Implement contextual_help based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

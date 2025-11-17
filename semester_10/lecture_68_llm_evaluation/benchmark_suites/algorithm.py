@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def benchmark_suites(*args, **kwargs) -> Any:
     """
-    Benchmark Suites.
+    benchmark_suites algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def benchmark_suites(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing benchmark_suites")
     # TODO: Implement benchmark_suites based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

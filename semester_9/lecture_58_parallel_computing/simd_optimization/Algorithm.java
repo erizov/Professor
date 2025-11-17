@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Simd Optimization implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Simd Optimization.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object simd_optimization(Object... args) {
-        logger.info("Executing simd_optimization");
-        // TODO: Implement simd_optimization based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object simdoptimization(Object... args) {
+    // TODO: Implement simdoptimization based on README.md
+    logger.info("Executing simdoptimization");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Simd Optimization");
         System.out.println("=".repeat(70));

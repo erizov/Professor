@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Model Monitoring Advanced implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Model Monitoring Advanced.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object model_monitoring_advanced(Object... args) {
-        logger.info("Executing model_monitoring_advanced");
-        // TODO: Implement model_monitoring_advanced based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object modelmonitoringadvanced(Object... args) {
+    // TODO: Implement modelmonitoringadvanced based on README.md
+    logger.info("Executing modelmonitoringadvanced");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Model Monitoring Advanced");
         System.out.println("=".repeat(70));

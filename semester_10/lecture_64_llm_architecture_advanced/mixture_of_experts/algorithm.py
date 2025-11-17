@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def mixture_of_experts(*args, **kwargs) -> Any:
     """
-    Mixture Of Experts.
+    mixture_of_experts algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def mixture_of_experts(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing mixture_of_experts")
     # TODO: Implement mixture_of_experts based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

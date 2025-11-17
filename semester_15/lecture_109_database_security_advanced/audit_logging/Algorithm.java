@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Audit Logging implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Audit Logging.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object audit_logging(Object... args) {
-        logger.info("Executing audit_logging");
-        // TODO: Implement audit_logging based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object auditlogging(Object... args) {
+    // TODO: Implement auditlogging based on README.md
+    logger.info("Executing auditlogging");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Audit Logging");
         System.out.println("=".repeat(70));

@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def time_series_compression(*args, **kwargs) -> Any:
     """
-    Time Series Compression.
+    time_series_compression algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def time_series_compression(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing time_series_compression")
     # TODO: Implement time_series_compression based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Api Gateway implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Api Gateway.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object api_gateway(Object... args) {
-        logger.info("Executing api_gateway");
-        // TODO: Implement api_gateway based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object apigateway(Object... args) {
+    // TODO: Implement apigateway based on README.md
+    logger.info("Executing apigateway");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Api Gateway");
         System.out.println("=".repeat(70));

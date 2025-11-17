@@ -63,5 +63,17 @@ class TestCountingsort(AlgorithmTestCase):
         pass
 
 
-if __name__ == '__main__':
+    def test_already_sorted(self):
+        """Test with already sorted input."""
+        arr = [1, 2, 3, 4, 5]
+        result = self.algorithm(arr.copy())
+        self.assertEqual(result, arr)
+
+    def test_negative_numbers(self):
+        """Test with negative numbers."""
+        arr = [-5, -2, -8, -1, -9]
+        result = self.algorithm(arr.copy())
+        self.assertEqual(result, [-9, -8, -5, -2, -1])
+
+    if __name__ == '__main__':
     unittest.main()

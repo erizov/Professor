@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Pipeline Parallelism implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Pipeline Parallelism.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object pipeline_parallelism(Object... args) {
-        logger.info("Executing pipeline_parallelism");
-        // TODO: Implement pipeline_parallelism based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object pipelineparallelism(Object... args) {
+    // TODO: Implement pipelineparallelism based on README.md
+    logger.info("Executing pipelineparallelism");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Pipeline Parallelism");
         System.out.println("=".repeat(70));

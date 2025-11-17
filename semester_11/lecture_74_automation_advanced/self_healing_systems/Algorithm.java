@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Self Healing Systems implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Self Healing Systems.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object self_healing_systems(Object... args) {
-        logger.info("Executing self_healing_systems");
-        // TODO: Implement self_healing_systems based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object selfhealingsystems(Object... args) {
+    // TODO: Implement selfhealingsystems based on README.md
+    logger.info("Executing selfhealingsystems");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Self Healing Systems");
         System.out.println("=".repeat(70));

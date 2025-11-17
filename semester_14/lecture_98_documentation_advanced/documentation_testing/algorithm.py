@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def documentation_testing(*args, **kwargs) -> Any:
     """
-    Documentation Testing.
+    documentation_testing algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def documentation_testing(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing documentation_testing")
     # TODO: Implement documentation_testing based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

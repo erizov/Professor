@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Parallel Pipelines implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Parallel Pipelines.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object parallel_pipelines(Object... args) {
-        logger.info("Executing parallel_pipelines");
-        // TODO: Implement parallel_pipelines based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object parallelpipelines(Object... args) {
+    // TODO: Implement parallelpipelines based on README.md
+    logger.info("Executing parallelpipelines");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Parallel Pipelines");
         System.out.println("=".repeat(70));

@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Star Schema implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Star Schema.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object star_schema(Object... args) {
-        logger.info("Executing star_schema");
-        // TODO: Implement star_schema based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object starschema(Object... args) {
+    // TODO: Implement starschema based on README.md
+    logger.info("Executing starschema");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Star Schema");
         System.out.println("=".repeat(70));

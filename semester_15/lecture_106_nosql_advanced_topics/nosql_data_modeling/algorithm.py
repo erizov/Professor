@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def nosql_data_modeling(*args, **kwargs) -> Any:
     """
-    Nosql Data Modeling.
+    nosql_data_modeling algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def nosql_data_modeling(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing nosql_data_modeling")
     # TODO: Implement nosql_data_modeling based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Data Mesh implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Data Mesh.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object data_mesh(Object... args) {
-        logger.info("Executing data_mesh");
-        // TODO: Implement data_mesh based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object datamesh(Object... args) {
+    // TODO: Implement datamesh based on README.md
+    logger.info("Executing datamesh");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Data Mesh");
         System.out.println("=".repeat(70));

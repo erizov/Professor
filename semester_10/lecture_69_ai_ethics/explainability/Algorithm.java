@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Explainability implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Explainability.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
     public static Object explainability(Object... args) {
-        logger.info("Executing explainability");
-        // TODO: Implement explainability based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    // TODO: Implement explainability based on README.md
+    logger.info("Executing explainability");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Explainability");
         System.out.println("=".repeat(70));

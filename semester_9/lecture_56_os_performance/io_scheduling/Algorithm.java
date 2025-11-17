@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Io Scheduling implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Io Scheduling.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object io_scheduling(Object... args) {
-        logger.info("Executing io_scheduling");
-        // TODO: Implement io_scheduling based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object ioscheduling(Object... args) {
+    // TODO: Implement ioscheduling based on README.md
+    logger.info("Executing ioscheduling");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Io Scheduling");
         System.out.println("=".repeat(70));

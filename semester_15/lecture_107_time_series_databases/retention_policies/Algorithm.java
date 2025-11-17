@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Retention Policies implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Retention Policies.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object retention_policies(Object... args) {
-        logger.info("Executing retention_policies");
-        // TODO: Implement retention_policies based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object retentionpolicies(Object... args) {
+    // TODO: Implement retentionpolicies based on README.md
+    logger.info("Executing retentionpolicies");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Retention Policies");
         System.out.println("=".repeat(70));

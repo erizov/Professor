@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Partitioning Strategies implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Partitioning Strategies.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object partitioning_strategies(Object... args) {
-        logger.info("Executing partitioning_strategies");
-        // TODO: Implement partitioning_strategies based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object partitioningstrategies(Object... args) {
+    // TODO: Implement partitioningstrategies based on README.md
+    logger.info("Executing partitioningstrategies");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Partitioning Strategies");
         System.out.println("=".repeat(70));

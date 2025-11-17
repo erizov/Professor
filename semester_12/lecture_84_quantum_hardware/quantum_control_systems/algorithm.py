@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def quantum_control_systems(*args, **kwargs) -> Any:
     """
-    Quantum Control Systems.
+    quantum_control_systems algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def quantum_control_systems(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing quantum_control_systems")
     # TODO: Implement quantum_control_systems based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

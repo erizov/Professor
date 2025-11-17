@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def blameless_culture(*args, **kwargs) -> Any:
     """
-    Blameless Culture.
+    blameless_culture algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def blameless_culture(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing blameless_culture")
     # TODO: Implement blameless_culture based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

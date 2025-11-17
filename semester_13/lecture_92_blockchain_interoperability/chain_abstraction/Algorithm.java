@@ -4,22 +4,33 @@ import java.util.logging.Logger;
 /**
  * Chain Abstraction implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Chain Abstraction.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object chain_abstraction(Object... args) {
-        logger.info("Executing chain_abstraction");
-        // TODO: Implement chain_abstraction based on README.md
-        return null;
+    public static class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode(int val) { this.val = val; }
+}
+
+public static List<Integer> chainabstraction(TreeNode root) {
+    List<Integer> result = new ArrayList<>();
+    if (root == null) {
+        return result;
     }
     
-    public static void main(String[] args) {
+    // TODO: Implement chainabstraction traversal
+    inOrder(root, result);
+    return result;
+}
+
+private static void inOrder(TreeNode node, List<Integer> result) {
+    if (node != null) {
+        inOrder(node.left, result);
+        result.add(node.val);
+        inOrder(node.right, result);
+    }
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Chain Abstraction");
         System.out.println("=".repeat(70));

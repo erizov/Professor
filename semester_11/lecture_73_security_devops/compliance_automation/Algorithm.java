@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Compliance Automation implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Compliance Automation.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object compliance_automation(Object... args) {
-        logger.info("Executing compliance_automation");
-        // TODO: Implement compliance_automation based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object complianceautomation(Object... args) {
+    // TODO: Implement complianceautomation based on README.md
+    logger.info("Executing complianceautomation");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Compliance Automation");
         System.out.println("=".repeat(70));

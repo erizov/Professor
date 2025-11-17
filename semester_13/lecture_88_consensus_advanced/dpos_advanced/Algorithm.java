@@ -4,22 +4,22 @@ import java.util.logging.Logger;
 /**
  * Dpos Advanced implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Dpos Advanced.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object dpos_advanced(Object... args) {
-        logger.info("Executing dpos_advanced");
-        // TODO: Implement dpos_advanced based on README.md
-        return null;
+    public static int dposadvanced(int n) {
+    if (n <= 1) {
+        return n;
     }
     
-    public static void main(String[] args) {
+    int[] dp = new int[n + 1];
+    dp[1] = 1;
+    
+    for (int i = 2; i <= n; i++) {
+        dp[i] = dp[i - 1] + dp[i - 2];
+    }
+    
+    return dp[n];
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Dpos Advanced");
         System.out.println("=".repeat(70));

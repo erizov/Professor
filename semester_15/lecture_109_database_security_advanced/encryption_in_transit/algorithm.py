@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def encryption_in_transit(*args, **kwargs) -> Any:
     """
-    Encryption In Transit.
+    encryption_in_transit algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def encryption_in_transit(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing encryption_in_transit")
     # TODO: Implement encryption_in_transit based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

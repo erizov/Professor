@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Parallel Algorithms implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Parallel Algorithms.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object parallel_algorithms(Object... args) {
-        logger.info("Executing parallel_algorithms");
-        // TODO: Implement parallel_algorithms based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object parallelalgorithms(Object... args) {
+    // TODO: Implement parallelalgorithms based on README.md
+    logger.info("Executing parallelalgorithms");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Parallel Algorithms");
         System.out.println("=".repeat(70));

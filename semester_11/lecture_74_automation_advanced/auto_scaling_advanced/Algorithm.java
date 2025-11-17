@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Auto Scaling Advanced implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Auto Scaling Advanced.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object auto_scaling_advanced(Object... args) {
-        logger.info("Executing auto_scaling_advanced");
-        // TODO: Implement auto_scaling_advanced based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object autoscalingadvanced(Object... args) {
+    // TODO: Implement autoscalingadvanced based on README.md
+    logger.info("Executing autoscalingadvanced");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Auto Scaling Advanced");
         System.out.println("=".repeat(70));

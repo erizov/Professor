@@ -4,22 +4,22 @@ import java.util.logging.Logger;
 /**
  * Gdpr Compliance implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Gdpr Compliance.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object gdpr_compliance(Object... args) {
-        logger.info("Executing gdpr_compliance");
-        // TODO: Implement gdpr_compliance based on README.md
-        return null;
+    public static int gdprcompliance(int n) {
+    if (n <= 1) {
+        return n;
     }
     
-    public static void main(String[] args) {
+    int[] dp = new int[n + 1];
+    dp[1] = 1;
+    
+    for (int i = 2; i <= n; i++) {
+        dp[i] = dp[i - 1] + dp[i - 2];
+    }
+    
+    return dp[n];
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Gdpr Compliance");
         System.out.println("=".repeat(70));

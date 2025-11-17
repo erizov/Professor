@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def event_driven_architecture(*args, **kwargs) -> Any:
     """
-    Event Driven Architecture.
+    event_driven_architecture algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def event_driven_architecture(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing event_driven_architecture")
     # TODO: Implement event_driven_architecture based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

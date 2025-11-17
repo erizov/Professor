@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def progressive_delivery(*args, **kwargs) -> Any:
     """
-    Progressive Delivery.
+    progressive_delivery algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def progressive_delivery(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing progressive_delivery")
     # TODO: Implement progressive_delivery based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

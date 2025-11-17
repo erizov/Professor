@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def quantum_error_correction(*args, **kwargs) -> Any:
     """
-    Quantum Error Correction.
+    quantum_error_correction algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def quantum_error_correction(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing quantum_error_correction")
     # TODO: Implement quantum_error_correction based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

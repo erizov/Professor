@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Transactional Memory implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Transactional Memory.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object transactional_memory(Object... args) {
-        logger.info("Executing transactional_memory");
-        // TODO: Implement transactional_memory based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object transactionalmemory(Object... args) {
+    // TODO: Implement transactionalmemory based on README.md
+    logger.info("Executing transactionalmemory");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Transactional Memory");
         System.out.println("=".repeat(70));

@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Data Collaboration implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Data Collaboration.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object data_collaboration(Object... args) {
-        logger.info("Executing data_collaboration");
-        // TODO: Implement data_collaboration based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object datacollaboration(Object... args) {
+    // TODO: Implement datacollaboration based on README.md
+    logger.info("Executing datacollaboration");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Data Collaboration");
         System.out.println("=".repeat(70));

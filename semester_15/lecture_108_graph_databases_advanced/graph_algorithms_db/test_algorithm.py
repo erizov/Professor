@@ -63,5 +63,16 @@ class TestGraphalgorithmsdb(AlgorithmTestCase):
         pass
 
 
-if __name__ == '__main__':
+    def test_disconnected_graph(self):
+        """Test with disconnected components."""
+        graph = {
+            0: [1],
+            1: [0],
+            2: [3],
+            3: [2]
+        }
+        result = self.algorithm(graph, 0)
+        self.assertIn(0, result)
+
+    if __name__ == '__main__':
     unittest.main()

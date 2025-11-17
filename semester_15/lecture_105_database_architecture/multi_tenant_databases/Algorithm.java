@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Multi Tenant Databases implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Multi Tenant Databases.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object multi_tenant_databases(Object... args) {
-        logger.info("Executing multi_tenant_databases");
-        // TODO: Implement multi_tenant_databases based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object multitenantdatabases(Object... args) {
+    // TODO: Implement multitenantdatabases based on README.md
+    logger.info("Executing multitenantdatabases");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Multi Tenant Databases");
         System.out.println("=".repeat(70));

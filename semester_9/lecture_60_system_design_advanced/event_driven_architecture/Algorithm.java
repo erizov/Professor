@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Event Driven Architecture implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Event Driven Architecture.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object event_driven_architecture(Object... args) {
-        logger.info("Executing event_driven_architecture");
-        // TODO: Implement event_driven_architecture based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object eventdrivenarchitecture(Object... args) {
+    // TODO: Implement eventdrivenarchitecture based on README.md
+    logger.info("Executing eventdrivenarchitecture");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Event Driven Architecture");
         System.out.println("=".repeat(70));

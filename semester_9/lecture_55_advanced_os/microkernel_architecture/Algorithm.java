@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Microkernel Architecture implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Microkernel Architecture.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object microkernel_architecture(Object... args) {
-        logger.info("Executing microkernel_architecture");
-        // TODO: Implement microkernel_architecture based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object microkernelarchitecture(Object... args) {
+    // TODO: Implement microkernelarchitecture based on README.md
+    logger.info("Executing microkernelarchitecture");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Microkernel Architecture");
         System.out.println("=".repeat(70));

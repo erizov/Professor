@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def dimensional_modeling_advanced(*args, **kwargs) -> Any:
     """
-    Dimensional Modeling Advanced.
+    dimensional_modeling_advanced algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def dimensional_modeling_advanced(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing dimensional_modeling_advanced")
     # TODO: Implement dimensional_modeling_advanced based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

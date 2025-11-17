@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def eventual_consistency(*args, **kwargs) -> Any:
     """
-    Eventual Consistency.
+    eventual_consistency algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def eventual_consistency(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing eventual_consistency")
     # TODO: Implement eventual_consistency based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

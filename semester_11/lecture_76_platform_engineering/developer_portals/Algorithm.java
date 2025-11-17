@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Developer Portals implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Developer Portals.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object developer_portals(Object... args) {
-        logger.info("Executing developer_portals");
-        // TODO: Implement developer_portals based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object developerportals(Object... args) {
+    // TODO: Implement developerportals based on README.md
+    logger.info("Executing developerportals");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Developer Portals");
         System.out.println("=".repeat(70));

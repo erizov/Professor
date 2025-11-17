@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Adversarial Robustness implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Adversarial Robustness.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object adversarial_robustness(Object... args) {
-        logger.info("Executing adversarial_robustness");
-        // TODO: Implement adversarial_robustness based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object adversarialrobustness(Object... args) {
+    // TODO: Implement adversarialrobustness based on README.md
+    logger.info("Executing adversarialrobustness");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Adversarial Robustness");
         System.out.println("=".repeat(70));

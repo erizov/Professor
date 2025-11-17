@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def mixed_precision_training(*args, **kwargs) -> Any:
     """
-    Mixed Precision Training.
+    mixed_precision_training algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def mixed_precision_training(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing mixed_precision_training")
     # TODO: Implement mixed_precision_training based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

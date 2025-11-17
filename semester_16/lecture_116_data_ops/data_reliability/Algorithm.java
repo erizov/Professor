@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Data Reliability implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Data Reliability.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object data_reliability(Object... args) {
-        logger.info("Executing data_reliability");
-        // TODO: Implement data_reliability based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object datareliability(Object... args) {
+    // TODO: Implement datareliability based on README.md
+    logger.info("Executing datareliability");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Data Reliability");
         System.out.println("=".repeat(70));

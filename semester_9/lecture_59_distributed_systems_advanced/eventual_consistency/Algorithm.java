@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Eventual Consistency implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Eventual Consistency.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object eventual_consistency(Object... args) {
-        logger.info("Executing eventual_consistency");
-        // TODO: Implement eventual_consistency based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object eventualconsistency(Object... args) {
+    // TODO: Implement eventualconsistency based on README.md
+    logger.info("Executing eventualconsistency");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Eventual Consistency");
         System.out.println("=".repeat(70));

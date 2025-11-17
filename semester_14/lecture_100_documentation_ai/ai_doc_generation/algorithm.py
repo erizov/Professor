@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def ai_doc_generation(*args, **kwargs) -> Any:
     """
-    Ai Doc Generation.
+    ai_doc_generation algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def ai_doc_generation(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing ai_doc_generation")
     # TODO: Implement ai_doc_generation based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

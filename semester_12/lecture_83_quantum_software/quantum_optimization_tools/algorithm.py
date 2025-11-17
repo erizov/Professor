@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def quantum_optimization_tools(*args, **kwargs) -> Any:
     """
-    Quantum Optimization Tools.
+    quantum_optimization_tools algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def quantum_optimization_tools(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing quantum_optimization_tools")
     # TODO: Implement quantum_optimization_tools based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def multi_tenant_databases(*args, **kwargs) -> Any:
     """
-    Multi Tenant Databases.
+    multi_tenant_databases algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def multi_tenant_databases(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing multi_tenant_databases")
     # TODO: Implement multi_tenant_databases based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

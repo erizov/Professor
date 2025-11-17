@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Data Masking implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Data Masking.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object data_masking(Object... args) {
-        logger.info("Executing data_masking");
-        // TODO: Implement data_masking based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object datamasking(Object... args) {
+    // TODO: Implement datamasking based on README.md
+    logger.info("Executing datamasking");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Data Masking");
         System.out.println("=".repeat(70));

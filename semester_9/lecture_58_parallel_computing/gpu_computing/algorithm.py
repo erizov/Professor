@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def gpu_computing(*args, **kwargs) -> Any:
     """
-    Gpu Computing.
+    gpu_computing algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def gpu_computing(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing gpu_computing")
     # TODO: Implement gpu_computing based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

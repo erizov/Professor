@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def support_analytics(*args, **kwargs) -> Any:
     """
-    Support Analytics.
+    support_analytics algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def support_analytics(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing support_analytics")
     # TODO: Implement support_analytics based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

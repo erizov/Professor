@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Recursive Queries implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Recursive Queries.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object recursive_queries(Object... args) {
-        logger.info("Executing recursive_queries");
-        // TODO: Implement recursive_queries based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object recursivequeries(Object... args) {
+    // TODO: Implement recursivequeries based on README.md
+    logger.info("Executing recursivequeries");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Recursive Queries");
         System.out.println("=".repeat(70));

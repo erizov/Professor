@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Nosql Consistency Models implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Nosql Consistency Models.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object nosql_consistency_models(Object... args) {
-        logger.info("Executing nosql_consistency_models");
-        // TODO: Implement nosql_consistency_models based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object nosqlconsistencymodels(Object... args) {
+    // TODO: Implement nosqlconsistencymodels based on README.md
+    logger.info("Executing nosqlconsistencymodels");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Nosql Consistency Models");
         System.out.println("=".repeat(70));

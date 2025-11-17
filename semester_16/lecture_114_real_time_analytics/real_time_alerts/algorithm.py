@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def real_time_alerts(*args, **kwargs) -> Any:
     """
-    Real Time Alerts.
+    real_time_alerts algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def real_time_alerts(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing real_time_alerts")
     # TODO: Implement real_time_alerts based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

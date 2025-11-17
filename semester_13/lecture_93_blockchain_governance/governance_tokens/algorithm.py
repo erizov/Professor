@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def governance_tokens(*args, **kwargs) -> Any:
     """
-    Governance Tokens.
+    governance_tokens algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def governance_tokens(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing governance_tokens")
     # TODO: Implement governance_tokens based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def workflow_automation(*args, **kwargs) -> Any:
     """
-    Workflow Automation.
+    workflow_automation algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def workflow_automation(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing workflow_automation")
     # TODO: Implement workflow_automation based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

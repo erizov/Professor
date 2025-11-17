@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def secrets_management(*args, **kwargs) -> Any:
     """
-    Secrets Management.
+    secrets_management algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def secrets_management(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing secrets_management")
     # TODO: Implement secrets_management based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

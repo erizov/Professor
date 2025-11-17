@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Chaos Automation implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Chaos Automation.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object chaos_automation(Object... args) {
-        logger.info("Executing chaos_automation");
-        // TODO: Implement chaos_automation based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object chaosautomation(Object... args) {
+    // TODO: Implement chaosautomation based on README.md
+    logger.info("Executing chaosautomation");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Chaos Automation");
         System.out.println("=".repeat(70));

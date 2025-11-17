@@ -13,25 +13,36 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
-def knowledge_graph_construction(*args, **kwargs) -> Any:
+def knowledge_graph_construction(graph: Dict[int, List[int]], start: int) -> List[int]:
     """
-    Knowledge Graph Construction.
+    knowledge_graph_construction algorithm for graph traversal.
     
     Args:
-        *args: Variable arguments
-        **kwargs: Keyword arguments
+        graph: Adjacency list representation
+        start: Starting vertex
         
     Returns:
-        Result of the algorithm
+        List of visited vertices
         
-    Time Complexity: See README.md
-    Space Complexity: See README.md
+    Time Complexity: O(V + E)
+    Space Complexity: O(V)
     """
-    logger.info(f"Executing knowledge_graph_construction")
-    # TODO: Implement knowledge_graph_construction based on README.md
-    return None
-
+    visited = []
+    # TODO: Implement knowledge_graph_construction algorithm
+    # Basic DFS implementation
+    stack = [start]
+    seen = {start}
+    
+    while stack:
+        vertex = stack.pop()
+        visited.append(vertex)
+        
+        for neighbor in graph.get(vertex, []):
+            if neighbor not in seen:
+                seen.add(neighbor)
+                stack.append(neighbor)
+    
+    return visited
 
 def main():
     """Demonstration."""

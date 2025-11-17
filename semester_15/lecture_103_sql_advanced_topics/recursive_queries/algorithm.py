@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def recursive_queries(*args, **kwargs) -> Any:
     """
-    Recursive Queries.
+    recursive_queries algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def recursive_queries(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing recursive_queries")
     # TODO: Implement recursive_queries based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

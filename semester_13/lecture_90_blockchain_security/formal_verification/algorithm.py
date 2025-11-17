@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def formal_verification(*args, **kwargs) -> Any:
     """
-    Formal Verification.
+    formal_verification algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def formal_verification(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing formal_verification")
     # TODO: Implement formal_verification based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

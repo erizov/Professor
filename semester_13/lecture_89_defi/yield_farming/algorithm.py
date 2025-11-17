@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def yield_farming(*args, **kwargs) -> Any:
     """
-    Yield Farming.
+    yield_farming algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def yield_farming(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing yield_farming")
     # TODO: Implement yield_farming based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def common_table_expressions(*args, **kwargs) -> Any:
     """
-    Common Table Expressions.
+    common_table_expressions algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def common_table_expressions(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing common_table_expressions")
     # TODO: Implement common_table_expressions based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

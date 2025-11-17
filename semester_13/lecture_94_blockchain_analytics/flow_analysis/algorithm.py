@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def flow_analysis(*args, **kwargs) -> Any:
     """
-    Flow Analysis.
+    flow_analysis algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def flow_analysis(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing flow_analysis")
     # TODO: Implement flow_analysis based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

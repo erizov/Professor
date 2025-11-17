@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def bias_detection(*args, **kwargs) -> Any:
     """
-    Bias Detection.
+    bias_detection algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def bias_detection(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing bias_detection")
     # TODO: Implement bias_detection based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

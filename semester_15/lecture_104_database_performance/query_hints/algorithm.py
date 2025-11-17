@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def query_hints(*args, **kwargs) -> Any:
     """
-    Query Hints.
+    query_hints algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def query_hints(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing query_hints")
     # TODO: Implement query_hints based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

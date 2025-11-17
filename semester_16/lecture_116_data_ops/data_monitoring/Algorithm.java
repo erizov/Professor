@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Data Monitoring implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Data Monitoring.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object data_monitoring(Object... args) {
-        logger.info("Executing data_monitoring");
-        // TODO: Implement data_monitoring based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object datamonitoring(Object... args) {
+    // TODO: Implement datamonitoring based on README.md
+    logger.info("Executing datamonitoring");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Data Monitoring");
         System.out.println("=".repeat(70));

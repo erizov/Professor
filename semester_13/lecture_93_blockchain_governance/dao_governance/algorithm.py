@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def dao_governance(*args, **kwargs) -> Any:
     """
-    Dao Governance.
+    dao_governance algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def dao_governance(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing dao_governance")
     # TODO: Implement dao_governance based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

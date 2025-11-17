@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def upgrade_mechanisms(*args, **kwargs) -> Any:
     """
-    Upgrade Mechanisms.
+    upgrade_mechanisms algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def upgrade_mechanisms(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing upgrade_mechanisms")
     # TODO: Implement upgrade_mechanisms based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

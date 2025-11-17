@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def observability_stack(*args, **kwargs) -> Any:
     """
-    Observability Stack.
+    observability_stack algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def observability_stack(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing observability_stack")
     # TODO: Implement observability_stack based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

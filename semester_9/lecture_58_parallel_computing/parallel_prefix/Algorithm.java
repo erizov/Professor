@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Parallel Prefix implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Parallel Prefix.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object parallel_prefix(Object... args) {
-        logger.info("Executing parallel_prefix");
-        // TODO: Implement parallel_prefix based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object parallelprefix(Object... args) {
+    // TODO: Implement parallelprefix based on README.md
+    logger.info("Executing parallelprefix");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Parallel Prefix");
         System.out.println("=".repeat(70));

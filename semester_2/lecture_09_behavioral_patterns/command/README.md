@@ -152,3 +152,123 @@ public class Service {
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
 
+
+
+## Examples of Implementation
+
+This pattern/algorithm is implemented in the following frameworks and technologies:
+
+### Spring Framework
+
+```java
+// Spring Framework - Command Pattern
+public interface Command {
+    void execute();
+    void undo();
+}
+
+@Component
+public class CreateOrderCommand implements Command {
+    private final OrderService orderService;
+    private final Order order;
+    private Long orderId;
+    
+    public CreateOrderCommand(OrderService orderService, Order order) {
+        this.orderService = orderService;
+        this.order = order;
+    }
+    
+    @Override
+    public void execute() {
+        orderId = orderService.createOrder(order);
+    }
+    
+    @Override
+    public void undo() {
+        if (orderId != null) {
+            orderService.deleteOrder(orderId);
+        }
+    }
+}
+
+// Invoker
+@Service
+public class CommandInvoker {
+    private final Stack<Command> history = new Stack<>();
+    
+    public void executeCommand(Command command) {
+        command.execute();
+        history.push(command);
+    }
+    
+    public void undo() {
+        if (!history.isEmpty()) {
+            Command command = history.pop();
+            command.undo();
+        }
+    }
+}
+```
+
+**Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
+
+### .NET Framework
+
+```csharp
+// .NET - Command Pattern
+public interface ICommand
+{
+    void Execute();
+    void Undo();
+}
+
+public class CreateOrderCommand : ICommand
+{
+    private readonly OrderService _orderService;
+    private readonly Order _order;
+    private long? _orderId;
+    
+    public CreateOrderCommand(OrderService orderService, Order order)
+    {
+        _orderService = orderService;
+        _order = order;
+    }
+    
+    public void Execute()
+    {
+        _orderId = _orderService.CreateOrder(_order);
+    }
+    
+    public void Undo()
+    {
+        if (_orderId.HasValue)
+        {
+            _orderService.DeleteOrder(_orderId.Value);
+        }
+    }
+}
+
+// Invoker
+public class CommandInvoker
+{
+    private readonly Stack<ICommand> _history = new Stack<ICommand>();
+    
+    public void ExecuteCommand(ICommand command)
+    {
+        command.Execute();
+        _history.Push(command);
+    }
+    
+    public void Undo()
+    {
+        if (_history.Count > 0)
+        {
+            var command = _history.Pop();
+            command.Undo();
+        }
+    }
+}
+```
+
+**Purpose**: .NET Framework implements this pattern for service registration, dependency injection, and application architecture.
+

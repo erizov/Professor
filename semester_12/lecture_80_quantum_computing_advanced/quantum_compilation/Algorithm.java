@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Quantum Compilation implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Quantum Compilation.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object quantum_compilation(Object... args) {
-        logger.info("Executing quantum_compilation");
-        // TODO: Implement quantum_compilation based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object quantumcompilation(Object... args) {
+    // TODO: Implement quantumcompilation based on README.md
+    logger.info("Executing quantumcompilation");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Quantum Compilation");
         System.out.println("=".repeat(70));

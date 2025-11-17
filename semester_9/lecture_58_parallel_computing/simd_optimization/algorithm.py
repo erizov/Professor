@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def simd_optimization(*args, **kwargs) -> Any:
     """
-    Simd Optimization.
+    simd_optimization algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def simd_optimization(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing simd_optimization")
     # TODO: Implement simd_optimization based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

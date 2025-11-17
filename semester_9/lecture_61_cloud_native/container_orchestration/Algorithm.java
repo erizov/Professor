@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Container Orchestration implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Container Orchestration.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object container_orchestration(Object... args) {
-        logger.info("Executing container_orchestration");
-        // TODO: Implement container_orchestration based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object containerorchestration(Object... args) {
+    // TODO: Implement containerorchestration based on README.md
+    logger.info("Executing containerorchestration");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Container Orchestration");
         System.out.println("=".repeat(70));

@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def multi_cloud_strategies(*args, **kwargs) -> Any:
     """
-    Multi Cloud Strategies.
+    multi_cloud_strategies algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def multi_cloud_strategies(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing multi_cloud_strategies")
     # TODO: Implement multi_cloud_strategies based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

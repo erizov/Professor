@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def proposal_systems(*args, **kwargs) -> Any:
     """
-    Proposal Systems.
+    proposal_systems algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def proposal_systems(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing proposal_systems")
     # TODO: Implement proposal_systems based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

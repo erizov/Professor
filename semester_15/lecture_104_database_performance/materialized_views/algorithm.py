@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def materialized_views(*args, **kwargs) -> Any:
     """
-    Materialized Views.
+    materialized_views algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def materialized_views(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing materialized_views")
     # TODO: Implement materialized_views based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

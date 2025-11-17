@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Quantum Communication implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Quantum Communication.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object quantum_communication(Object... args) {
-        logger.info("Executing quantum_communication");
-        // TODO: Implement quantum_communication based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object quantumcommunication(Object... args) {
+    // TODO: Implement quantumcommunication based on README.md
+    logger.info("Executing quantumcommunication");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Quantum Communication");
         System.out.println("=".repeat(70));

@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Documentation Testing implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Documentation Testing.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object documentation_testing(Object... args) {
-        logger.info("Executing documentation_testing");
-        // TODO: Implement documentation_testing based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object documentationtesting(Object... args) {
+    // TODO: Implement documentationtesting based on README.md
+    logger.info("Executing documentationtesting");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Documentation Testing");
         System.out.println("=".repeat(70));

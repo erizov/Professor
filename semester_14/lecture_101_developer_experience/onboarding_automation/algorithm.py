@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def onboarding_automation(*args, **kwargs) -> Any:
     """
-    Onboarding Automation.
+    onboarding_automation algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def onboarding_automation(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing onboarding_automation")
     # TODO: Implement onboarding_automation based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

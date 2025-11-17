@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def nosql_consistency_models(*args, **kwargs) -> Any:
     """
-    Nosql Consistency Models.
+    nosql_consistency_models algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def nosql_consistency_models(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing nosql_consistency_models")
     # TODO: Implement nosql_consistency_models based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

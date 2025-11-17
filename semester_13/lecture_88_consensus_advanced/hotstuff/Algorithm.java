@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Hotstuff implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Hotstuff.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
     public static Object hotstuff(Object... args) {
-        logger.info("Executing hotstuff");
-        // TODO: Implement hotstuff based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    // TODO: Implement hotstuff based on README.md
+    logger.info("Executing hotstuff");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Hotstuff");
         System.out.println("=".repeat(70));

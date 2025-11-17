@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def migration_strategies(*args, **kwargs) -> Any:
     """
-    Migration Strategies.
+    migration_strategies algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def migration_strategies(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing migration_strategies")
     # TODO: Implement migration_strategies based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

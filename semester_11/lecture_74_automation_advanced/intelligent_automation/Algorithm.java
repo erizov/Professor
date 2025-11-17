@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Intelligent Automation implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Intelligent Automation.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object intelligent_automation(Object... args) {
-        logger.info("Executing intelligent_automation");
-        // TODO: Implement intelligent_automation based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object intelligentautomation(Object... args) {
+    // TODO: Implement intelligentautomation based on README.md
+    logger.info("Executing intelligentautomation");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Intelligent Automation");
         System.out.println("=".repeat(70));

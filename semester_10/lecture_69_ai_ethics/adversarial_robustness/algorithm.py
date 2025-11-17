@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def adversarial_robustness(*args, **kwargs) -> Any:
     """
-    Adversarial Robustness.
+    adversarial_robustness algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def adversarial_robustness(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing adversarial_robustness")
     # TODO: Implement adversarial_robustness based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

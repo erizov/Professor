@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Statistics Management implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Statistics Management.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object statistics_management(Object... args) {
-        logger.info("Executing statistics_management");
-        // TODO: Implement statistics_management based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object statisticsmanagement(Object... args) {
+    // TODO: Implement statisticsmanagement based on README.md
+    logger.info("Executing statisticsmanagement");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Statistics Management");
         System.out.println("=".repeat(70));

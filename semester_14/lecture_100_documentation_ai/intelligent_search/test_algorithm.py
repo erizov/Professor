@@ -63,5 +63,23 @@ class TestIntelligentsearch(AlgorithmTestCase):
         pass
 
 
-if __name__ == '__main__':
+    def test_not_found(self):
+        """Test when target not found."""
+        arr = [1, 2, 3, 4, 5]
+        result = self.algorithm(arr, 6)
+        self.assert_search_result(result, 6, arr, found=False)
+
+    def test_first_element(self):
+        """Test searching for first element."""
+        arr = [1, 2, 3, 4, 5]
+        result = self.algorithm(arr, 1)
+        self.assert_search_result(result, 1, arr, found=True)
+
+    def test_last_element(self):
+        """Test searching for last element."""
+        arr = [1, 2, 3, 4, 5]
+        result = self.algorithm(arr, 5)
+        self.assert_search_result(result, 5, arr, found=True)
+
+    if __name__ == '__main__':
     unittest.main()

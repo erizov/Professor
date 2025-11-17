@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Dimensional Modeling Advanced implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Dimensional Modeling Advanced.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object dimensional_modeling_advanced(Object... args) {
-        logger.info("Executing dimensional_modeling_advanced");
-        // TODO: Implement dimensional_modeling_advanced based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object dimensionalmodelingadvanced(Object... args) {
+    // TODO: Implement dimensionalmodelingadvanced based on README.md
+    logger.info("Executing dimensionalmodelingadvanced");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Dimensional Modeling Advanced");
         System.out.println("=".repeat(70));

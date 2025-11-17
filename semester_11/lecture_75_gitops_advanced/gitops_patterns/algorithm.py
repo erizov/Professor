@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def gitops_patterns(*args, **kwargs) -> Any:
     """
-    Gitops Patterns.
+    gitops_patterns algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def gitops_patterns(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing gitops_patterns")
     # TODO: Implement gitops_patterns based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

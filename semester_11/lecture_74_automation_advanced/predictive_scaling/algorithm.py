@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def predictive_scaling(*args, **kwargs) -> Any:
     """
-    Predictive Scaling.
+    predictive_scaling algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def predictive_scaling(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing predictive_scaling")
     # TODO: Implement predictive_scaling based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

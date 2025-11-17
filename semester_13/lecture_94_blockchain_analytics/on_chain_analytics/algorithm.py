@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def on_chain_analytics(*args, **kwargs) -> Any:
     """
-    On Chain Analytics.
+    on_chain_analytics algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def on_chain_analytics(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing on_chain_analytics")
     # TODO: Implement on_chain_analytics based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

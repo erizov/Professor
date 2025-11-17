@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Quantum Logistics implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Quantum Logistics.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object quantum_logistics(Object... args) {
-        logger.info("Executing quantum_logistics");
-        // TODO: Implement quantum_logistics based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object quantumlogistics(Object... args) {
+    // TODO: Implement quantumlogistics based on README.md
+    logger.info("Executing quantumlogistics");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Quantum Logistics");
         System.out.println("=".repeat(70));

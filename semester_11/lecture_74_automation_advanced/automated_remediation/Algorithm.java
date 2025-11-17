@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Automated Remediation implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Automated Remediation.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object automated_remediation(Object... args) {
-        logger.info("Executing automated_remediation");
-        // TODO: Implement automated_remediation based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object automatedremediation(Object... args) {
+    // TODO: Implement automatedremediation based on README.md
+    logger.info("Executing automatedremediation");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Automated Remediation");
         System.out.println("=".repeat(70));

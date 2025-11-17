@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Meta Learning implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Meta Learning.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object meta_learning(Object... args) {
-        logger.info("Executing meta_learning");
-        // TODO: Implement meta_learning based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object metalearning(Object... args) {
+    // TODO: Implement metalearning based on README.md
+    logger.info("Executing metalearning");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Meta Learning");
         System.out.println("=".repeat(70));

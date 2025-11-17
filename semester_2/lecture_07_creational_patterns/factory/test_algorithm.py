@@ -63,5 +63,13 @@ class TestFactory(AlgorithmTestCase):
         pass
 
 
-if __name__ == '__main__':
+    def test_multiple_instances(self):
+        """Test multiple instance creation."""
+        instance1 = self.algorithm()
+        instance2 = self.algorithm()
+        # Pattern-specific assertion
+        self.assertIsNotNone(instance1)
+        self.assertIsNotNone(instance2)
+
+    if __name__ == '__main__':
     unittest.main()

@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def chaos_engineering_advanced(*args, **kwargs) -> Any:
     """
-    Chaos Engineering Advanced.
+    chaos_engineering_advanced algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def chaos_engineering_advanced(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing chaos_engineering_advanced")
     # TODO: Implement chaos_engineering_advanced based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

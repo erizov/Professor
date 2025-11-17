@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def api_explorer(*args, **kwargs) -> Any:
     """
-    Api Explorer.
+    api_explorer algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def api_explorer(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing api_explorer")
     # TODO: Implement api_explorer based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

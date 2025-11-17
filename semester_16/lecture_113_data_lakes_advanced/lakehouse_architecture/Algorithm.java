@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Lakehouse Architecture implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Lakehouse Architecture.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object lakehouse_architecture(Object... args) {
-        logger.info("Executing lakehouse_architecture");
-        // TODO: Implement lakehouse_architecture based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object lakehousearchitecture(Object... args) {
+    // TODO: Implement lakehousearchitecture based on README.md
+    logger.info("Executing lakehousearchitecture");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Lakehouse Architecture");
         System.out.println("=".repeat(70));

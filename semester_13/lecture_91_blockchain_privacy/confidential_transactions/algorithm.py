@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def confidential_transactions(*args, **kwargs) -> Any:
     """
-    Confidential Transactions.
+    confidential_transactions algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def confidential_transactions(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing confidential_transactions")
     # TODO: Implement confidential_transactions based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

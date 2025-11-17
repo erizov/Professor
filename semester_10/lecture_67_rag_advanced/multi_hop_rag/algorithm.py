@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def multi_hop_rag(*args, **kwargs) -> Any:
     """
-    Multi Hop Rag.
+    multi_hop_rag algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def multi_hop_rag(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing multi_hop_rag")
     # TODO: Implement multi_hop_rag based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

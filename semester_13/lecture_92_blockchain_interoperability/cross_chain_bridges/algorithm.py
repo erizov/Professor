@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def cross_chain_bridges(*args, **kwargs) -> Any:
     """
-    Cross Chain Bridges.
+    cross_chain_bridges algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def cross_chain_bridges(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing cross_chain_bridges")
     # TODO: Implement cross_chain_bridges based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

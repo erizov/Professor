@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def knowledge_validation(*args, **kwargs) -> Any:
     """
-    Knowledge Validation.
+    knowledge_validation algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def knowledge_validation(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing knowledge_validation")
     # TODO: Implement knowledge_validation based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def security_scanning(*args, **kwargs) -> Any:
     """
-    Security Scanning.
+    security_scanning algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def security_scanning(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing security_scanning")
     # TODO: Implement security_scanning based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

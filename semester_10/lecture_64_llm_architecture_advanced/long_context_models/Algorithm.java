@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Long Context Models implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Long Context Models.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object long_context_models(Object... args) {
-        logger.info("Executing long_context_models");
-        // TODO: Implement long_context_models based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object longcontextmodels(Object... args) {
+    // TODO: Implement longcontextmodels based on README.md
+    logger.info("Executing longcontextmodels");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Long Context Models");
         System.out.println("=".repeat(70));

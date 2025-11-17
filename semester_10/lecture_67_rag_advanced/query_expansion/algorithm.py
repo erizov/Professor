@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def query_expansion(*args, **kwargs) -> Any:
     """
-    Query Expansion.
+    query_expansion algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def query_expansion(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing query_expansion")
     # TODO: Implement query_expansion based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

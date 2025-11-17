@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def continuous_batching(*args, **kwargs) -> Any:
     """
-    Continuous Batching.
+    continuous_batching algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def continuous_batching(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing continuous_batching")
     # TODO: Implement continuous_batching based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

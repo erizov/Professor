@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Streaming Analytics implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Streaming Analytics.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object streaming_analytics(Object... args) {
-        logger.info("Executing streaming_analytics");
-        // TODO: Implement streaming_analytics based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object streaminganalytics(Object... args) {
+    // TODO: Implement streaminganalytics based on README.md
+    logger.info("Executing streaminganalytics");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Streaming Analytics");
         System.out.println("=".repeat(70));

@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def complex_event_processing(*args, **kwargs) -> Any:
     """
-    Complex Event Processing.
+    complex_event_processing algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def complex_event_processing(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing complex_event_processing")
     # TODO: Implement complex_event_processing based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

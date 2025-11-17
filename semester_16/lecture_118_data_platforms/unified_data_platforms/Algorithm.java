@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Unified Data Platforms implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Unified Data Platforms.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object unified_data_platforms(Object... args) {
-        logger.info("Executing unified_data_platforms");
-        // TODO: Implement unified_data_platforms based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object unifieddataplatforms(Object... args) {
+    // TODO: Implement unifieddataplatforms based on README.md
+    logger.info("Executing unifieddataplatforms");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Unified Data Platforms");
         System.out.println("=".repeat(70));

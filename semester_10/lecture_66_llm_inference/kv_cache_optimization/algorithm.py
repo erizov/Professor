@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def kv_cache_optimization(*args, **kwargs) -> Any:
     """
-    Kv Cache Optimization.
+    kv_cache_optimization algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def kv_cache_optimization(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing kv_cache_optimization")
     # TODO: Implement kv_cache_optimization based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

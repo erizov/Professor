@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Chaos Experiments implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Chaos Experiments.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object chaos_experiments(Object... args) {
-        logger.info("Executing chaos_experiments");
-        // TODO: Implement chaos_experiments based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object chaosexperiments(Object... args) {
+    // TODO: Implement chaosexperiments based on README.md
+    logger.info("Executing chaosexperiments");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Chaos Experiments");
         System.out.println("=".repeat(70));

@@ -152,3 +152,120 @@ public class Service {
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
 
+
+
+## Examples of Implementation
+
+This pattern/algorithm is implemented in the following frameworks and technologies:
+
+### Spring Framework
+
+```java
+// Spring Framework - Adapter Pattern
+// Target Interface
+public interface PaymentGateway {
+    void processPayment(BigDecimal amount);
+}
+
+// Adaptee (Third-party library)
+public class LegacyPaymentSystem {
+    public void pay(String amount) {
+        // Legacy payment processing
+    }
+}
+
+// Adapter
+@Component
+public class LegacyPaymentAdapter implements PaymentGateway {
+    private final LegacyPaymentSystem legacySystem;
+    
+    public LegacyPaymentAdapter(LegacyPaymentSystem legacySystem) {
+        this.legacySystem = legacySystem;
+    }
+    
+    @Override
+    public void processPayment(BigDecimal amount) {
+        // Adapt BigDecimal to String
+        legacySystem.pay(amount.toString());
+    }
+}
+
+// Usage
+@Service
+public class PaymentService {
+    @Autowired
+    private PaymentGateway paymentGateway;
+    
+    public void pay(BigDecimal amount) {
+        paymentGateway.processPayment(amount);
+    }
+}
+```
+
+**Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
+
+### .NET Framework
+
+```csharp
+// .NET - Adapter Pattern
+// Target Interface
+public interface IPaymentGateway
+{
+    void ProcessPayment(decimal amount);
+}
+
+// Adaptee (Third-party)
+public class LegacyPaymentSystem
+{
+    public void Pay(string amount)
+    {
+        // Legacy implementation
+    }
+}
+
+// Adapter
+public class LegacyPaymentAdapter : IPaymentGateway
+{
+    private readonly LegacyPaymentSystem _legacySystem;
+    
+    public LegacyPaymentAdapter(LegacyPaymentSystem legacySystem)
+    {
+        _legacySystem = legacySystem;
+    }
+    
+    public void ProcessPayment(decimal amount)
+    {
+        _legacySystem.Pay(amount.ToString());
+    }
+}
+
+// .NET Core DI
+services.AddSingleton<LegacyPaymentSystem>();
+services.AddSingleton<IPaymentGateway, LegacyPaymentAdapter>();
+```
+
+**Purpose**: .NET Framework implements this pattern for service registration, dependency injection, and application architecture.
+
+### Docker
+
+```yaml
+# Docker - Adapter Pattern (Service Adapter)
+# docker-compose.yml
+version: '3.8'
+services:
+  legacy-service:
+    image: legacy-payment:1.0
+    ports:
+      - "8080:8080"
+  
+  adapter-service:
+    image: payment-adapter:latest
+    environment:
+      - LEGACY_SERVICE_URL=http://legacy-service:8080
+    depends_on:
+      - legacy-service
+    # Adapter translates between new API and legacy service
+```
+
+**Purpose**: Docker uses this pattern for container orchestration and service management.
+

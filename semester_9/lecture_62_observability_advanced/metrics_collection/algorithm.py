@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def metrics_collection(*args, **kwargs) -> Any:
     """
-    Metrics Collection.
+    metrics_collection algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def metrics_collection(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing metrics_collection")
     # TODO: Implement metrics_collection based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

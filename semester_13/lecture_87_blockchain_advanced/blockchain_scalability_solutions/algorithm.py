@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def blockchain_scalability_solutions(*args, **kwargs) -> Any:
     """
-    Blockchain Scalability Solutions.
+    blockchain_scalability_solutions algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def blockchain_scalability_solutions(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing blockchain_scalability_solutions")
     # TODO: Implement blockchain_scalability_solutions based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

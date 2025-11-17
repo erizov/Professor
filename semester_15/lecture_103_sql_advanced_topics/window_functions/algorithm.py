@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def window_functions(*args, **kwargs) -> Any:
     """
-    Window Functions.
+    window_functions algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def window_functions(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing window_functions")
     # TODO: Implement window_functions based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

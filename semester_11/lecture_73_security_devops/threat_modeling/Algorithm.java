@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Threat Modeling implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Threat Modeling.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object threat_modeling(Object... args) {
-        logger.info("Executing threat_modeling");
-        // TODO: Implement threat_modeling based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object threatmodeling(Object... args) {
+    // TODO: Implement threatmodeling based on README.md
+    logger.info("Executing threatmodeling");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Threat Modeling");
         System.out.println("=".repeat(70));

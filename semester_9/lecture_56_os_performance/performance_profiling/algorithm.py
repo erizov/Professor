@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def performance_profiling(*args, **kwargs) -> Any:
     """
-    Performance Profiling.
+    performance_profiling algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def performance_profiling(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing performance_profiling")
     # TODO: Implement performance_profiling based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

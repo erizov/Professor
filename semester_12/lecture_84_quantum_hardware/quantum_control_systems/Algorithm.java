@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Quantum Control Systems implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Quantum Control Systems.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object quantum_control_systems(Object... args) {
-        logger.info("Executing quantum_control_systems");
-        // TODO: Implement quantum_control_systems based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object quantumcontrolsystems(Object... args) {
+    // TODO: Implement quantumcontrolsystems based on README.md
+    logger.info("Executing quantumcontrolsystems");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Quantum Control Systems");
         System.out.println("=".repeat(70));

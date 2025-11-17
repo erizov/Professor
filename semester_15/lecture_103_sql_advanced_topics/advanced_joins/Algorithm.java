@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Advanced Joins implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Advanced Joins.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object advanced_joins(Object... args) {
-        logger.info("Executing advanced_joins");
-        // TODO: Implement advanced_joins based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object advancedjoins(Object... args) {
+    // TODO: Implement advancedjoins based on README.md
+    logger.info("Executing advancedjoins");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Advanced Joins");
         System.out.println("=".repeat(70));

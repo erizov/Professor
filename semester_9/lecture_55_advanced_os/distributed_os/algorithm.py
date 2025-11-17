@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def distributed_os(*args, **kwargs) -> Any:
     """
-    Distributed Os.
+    distributed_os algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def distributed_os(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing distributed_os")
     # TODO: Implement distributed_os based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

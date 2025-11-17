@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def real_time_ml(*args, **kwargs) -> Any:
     """
-    Real Time Ml.
+    real_time_ml algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def real_time_ml(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing real_time_ml")
     # TODO: Implement real_time_ml based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

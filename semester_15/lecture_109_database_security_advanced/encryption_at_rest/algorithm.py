@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def encryption_at_rest(*args, **kwargs) -> Any:
     """
-    Encryption At Rest.
+    encryption_at_rest algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def encryption_at_rest(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing encryption_at_rest")
     # TODO: Implement encryption_at_rest based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

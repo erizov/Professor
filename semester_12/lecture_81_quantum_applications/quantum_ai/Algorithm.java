@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Quantum Ai implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Quantum Ai.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object quantum_ai(Object... args) {
-        logger.info("Executing quantum_ai");
-        // TODO: Implement quantum_ai based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object quantumai(Object... args) {
+    // TODO: Implement quantumai based on README.md
+    logger.info("Executing quantumai");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Quantum Ai");
         System.out.println("=".repeat(70));

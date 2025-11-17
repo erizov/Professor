@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Fairness Algorithms implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Fairness Algorithms.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object fairness_algorithms(Object... args) {
-        logger.info("Executing fairness_algorithms");
-        // TODO: Implement fairness_algorithms based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object fairnessalgorithms(Object... args) {
+    // TODO: Implement fairnessalgorithms based on README.md
+    logger.info("Executing fairnessalgorithms");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Fairness Algorithms");
         System.out.println("=".repeat(70));

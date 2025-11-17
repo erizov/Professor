@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def lifelong_learning(*args, **kwargs) -> Any:
     """
-    Lifelong Learning.
+    lifelong_learning algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def lifelong_learning(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing lifelong_learning")
     # TODO: Implement lifelong_learning based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

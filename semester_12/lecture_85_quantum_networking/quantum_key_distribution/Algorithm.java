@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Quantum Key Distribution implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Quantum Key Distribution.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object quantum_key_distribution(Object... args) {
-        logger.info("Executing quantum_key_distribution");
-        // TODO: Implement quantum_key_distribution based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object quantumkeydistribution(Object... args) {
+    // TODO: Implement quantumkeydistribution based on README.md
+    logger.info("Executing quantumkeydistribution");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Quantum Key Distribution");
         System.out.println("=".repeat(70));

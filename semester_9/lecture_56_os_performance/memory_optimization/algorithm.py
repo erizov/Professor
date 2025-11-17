@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def memory_optimization(*args, **kwargs) -> Any:
     """
-    Memory Optimization.
+    memory_optimization algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def memory_optimization(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing memory_optimization")
     # TODO: Implement memory_optimization based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

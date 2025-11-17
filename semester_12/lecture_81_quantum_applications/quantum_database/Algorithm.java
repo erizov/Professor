@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Quantum Database implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Quantum Database.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object quantum_database(Object... args) {
-        logger.info("Executing quantum_database");
-        // TODO: Implement quantum_database based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object quantumdatabase(Object... args) {
+    // TODO: Implement quantumdatabase based on README.md
+    logger.info("Executing quantumdatabase");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Quantum Database");
         System.out.println("=".repeat(70));

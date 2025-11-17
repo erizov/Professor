@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def variational_quantum(*args, **kwargs) -> Any:
     """
-    Variational Quantum.
+    variational_quantum algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def variational_quantum(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing variational_quantum")
     # TODO: Implement variational_quantum based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

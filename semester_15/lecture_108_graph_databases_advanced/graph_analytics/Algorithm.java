@@ -4,22 +4,31 @@ import java.util.logging.Logger;
 /**
  * Graph Analytics implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+    public static List<Integer> graphanalytics(Map<Integer, List<Integer>> graph, int start) {
+    List<Integer> visited = new ArrayList<>();
+    Stack<Integer> stack = new Stack<>();
+    Set<Integer> seen = new HashSet<>();
     
-    /**
-     * Graph Analytics.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object graph_analytics(Object... args) {
-        logger.info("Executing graph_analytics");
-        // TODO: Implement graph_analytics based on README.md
-        return null;
+    stack.push(start);
+    seen.add(start);
+    
+    while (!stack.isEmpty()) {
+        int vertex = stack.pop();
+        visited.add(vertex);
+        
+        List<Integer> neighbors = graph.getOrDefault(vertex, new ArrayList<>());
+        for (int neighbor : neighbors) {
+            if (!seen.contains(neighbor)) {
+                seen.add(neighbor);
+                stack.push(neighbor);
+            }
+        }
     }
     
-    public static void main(String[] args) {
+    return visited;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Graph Analytics");
         System.out.println("=".repeat(70));

@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def ticket_routing_ai(*args, **kwargs) -> Any:
     """
-    Ticket Routing Ai.
+    ticket_routing_ai algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def ticket_routing_ai(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing ticket_routing_ai")
     # TODO: Implement ticket_routing_ai based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

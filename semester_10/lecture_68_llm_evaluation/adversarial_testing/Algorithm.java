@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Adversarial Testing implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Adversarial Testing.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object adversarial_testing(Object... args) {
-        logger.info("Executing adversarial_testing");
-        // TODO: Implement adversarial_testing based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object adversarialtesting(Object... args) {
+    // TODO: Implement adversarialtesting based on README.md
+    logger.info("Executing adversarialtesting");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Adversarial Testing");
         System.out.println("=".repeat(70));

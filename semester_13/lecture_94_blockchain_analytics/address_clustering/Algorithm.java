@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Address Clustering implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Address Clustering.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object address_clustering(Object... args) {
-        logger.info("Executing address_clustering");
-        // TODO: Implement address_clustering based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object addressclustering(Object... args) {
+    // TODO: Implement addressclustering based on README.md
+    logger.info("Executing addressclustering");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Address Clustering");
         System.out.println("=".repeat(70));

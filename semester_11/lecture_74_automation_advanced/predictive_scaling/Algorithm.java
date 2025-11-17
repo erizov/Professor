@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Predictive Scaling implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Predictive Scaling.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object predictive_scaling(Object... args) {
-        logger.info("Executing predictive_scaling");
-        // TODO: Implement predictive_scaling based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object predictivescaling(Object... args) {
+    // TODO: Implement predictivescaling based on README.md
+    logger.info("Executing predictivescaling");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Predictive Scaling");
         System.out.println("=".repeat(70));

@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Smart Contract Security implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Smart Contract Security.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object smart_contract_security(Object... args) {
-        logger.info("Executing smart_contract_security");
-        // TODO: Implement smart_contract_security based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object smartcontractsecurity(Object... args) {
+    // TODO: Implement smartcontractsecurity based on README.md
+    logger.info("Executing smartcontractsecurity");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Smart Contract Security");
         System.out.println("=".repeat(70));

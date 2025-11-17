@@ -152,3 +152,131 @@ public class Service {
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
 
+
+
+## Examples of Implementation
+
+This pattern/algorithm is implemented in the following frameworks and technologies:
+
+### Spring Framework
+
+```java
+// Spring Framework - Iterator Pattern
+public interface CustomIterator<T> {
+    boolean hasNext();
+    T next();
+}
+
+@Component
+public class UserRepository {
+    private final List<User> users = new ArrayList<>();
+    
+    public CustomIterator<User> iterator() {
+        return new UserIterator(users);
+    }
+}
+
+// Custom Iterator
+public class UserIterator implements CustomIterator<User> {
+    private final List<User> users;
+    private int position = 0;
+    
+    public UserIterator(List<User> users) {
+        this.users = users;
+    }
+    
+    @Override
+    public boolean hasNext() {
+        return position < users.size();
+    }
+    
+    @Override
+    public User next() {
+        if (!hasNext()) {
+            throw new NoSuchElementException();
+        }
+        return users.get(position++);
+    }
+}
+
+// Usage
+@Service
+public class UserService {
+    @Autowired
+    private UserRepository userRepository;
+    
+    public void processAllUsers() {
+        CustomIterator<User> iterator = userRepository.iterator();
+        while (iterator.hasNext()) {
+            User user = iterator.next();
+            // Process user
+        }
+    }
+}
+```
+
+**Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
+
+### .NET Framework
+
+```csharp
+// .NET - Iterator Pattern (IEnumerable/IEnumerator)
+public class UserCollection : IEnumerable<User>
+{
+    private readonly List<User> _users = new List<User>();
+    
+    public void Add(User user)
+    {
+        _users.Add(user);
+    }
+    
+    public IEnumerator<User> GetEnumerator()
+    {
+        return new UserIterator(_users);
+    }
+    
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return GetEnumerator();
+    }
+}
+
+// Iterator
+public class UserIterator : IEnumerator<User>
+{
+    private readonly List<User> _users;
+    private int _position = -1;
+    
+    public UserIterator(List<User> users)
+    {
+        _users = users;
+    }
+    
+    public User Current => _users[_position];
+    
+    object IEnumerator.Current => Current;
+    
+    public bool MoveNext()
+    {
+        _position++;
+        return _position < _users.Count;
+    }
+    
+    public void Reset()
+    {
+        _position = -1;
+    }
+    
+    public void Dispose() { }
+}
+
+// Usage
+var users = new UserCollection();
+foreach (var user in users)
+{
+    // Process user
+}
+```
+
+**Purpose**: .NET Framework implements this pattern for service registration, dependency injection, and application architecture.
+

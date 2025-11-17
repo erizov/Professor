@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def event_sourcing_advanced(*args, **kwargs) -> Any:
     """
-    Event Sourcing Advanced.
+    event_sourcing_advanced algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def event_sourcing_advanced(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing event_sourcing_advanced")
     # TODO: Implement event_sourcing_advanced based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

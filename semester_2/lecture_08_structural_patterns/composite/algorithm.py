@@ -13,25 +13,18 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
-def composite(*args, **kwargs) -> Any:
+class Composite:
     """
-    Composite.
+    composite design pattern implementation.
+    """
+    def __init__(self, *args, **kwargs):
+        # TODO: Implement composite pattern
+        pass
     
-    Args:
-        *args: Variable arguments
-        **kwargs: Keyword arguments
-        
-    Returns:
-        Result of the algorithm
-        
-    Time Complexity: See README.md
-    Space Complexity: See README.md
-    """
-    logger.info(f"Executing composite")
-    # TODO: Implement composite based on README.md
-    return None
-
+    def execute(self, *args, **kwargs):
+        """Execute pattern logic."""
+        # TODO: Implement
+        pass
 
 def main():
     """Demonstration."""

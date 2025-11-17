@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Support Analytics implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Support Analytics.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object support_analytics(Object... args) {
-        logger.info("Executing support_analytics");
-        // TODO: Implement support_analytics based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object supportanalytics(Object... args) {
+    // TODO: Implement supportanalytics based on README.md
+    logger.info("Executing supportanalytics");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Support Analytics");
         System.out.println("=".repeat(70));

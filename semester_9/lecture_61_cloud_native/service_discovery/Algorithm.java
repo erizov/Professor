@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Service Discovery implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Service Discovery.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object service_discovery(Object... args) {
-        logger.info("Executing service_discovery");
-        // TODO: Implement service_discovery based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object servicediscovery(Object... args) {
+    // TODO: Implement servicediscovery based on README.md
+    logger.info("Executing servicediscovery");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Service Discovery");
         System.out.println("=".repeat(70));

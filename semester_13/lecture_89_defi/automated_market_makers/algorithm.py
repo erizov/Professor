@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def automated_market_makers(*args, **kwargs) -> Any:
     """
-    Automated Market Makers.
+    automated_market_makers algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def automated_market_makers(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing automated_market_makers")
     # TODO: Implement automated_market_makers based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def transformer_optimization(*args, **kwargs) -> Any:
     """
-    Transformer Optimization.
+    transformer_optimization algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def transformer_optimization(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing transformer_optimization")
     # TODO: Implement transformer_optimization based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

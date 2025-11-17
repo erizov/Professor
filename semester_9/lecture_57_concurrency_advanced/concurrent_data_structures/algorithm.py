@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def concurrent_data_structures(*args, **kwargs) -> Any:
     """
-    Concurrent Data Structures.
+    concurrent_data_structures algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def concurrent_data_structures(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing concurrent_data_structures")
     # TODO: Implement concurrent_data_structures based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

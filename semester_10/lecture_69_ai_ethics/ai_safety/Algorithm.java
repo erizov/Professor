@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Ai Safety implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Ai Safety.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object ai_safety(Object... args) {
-        logger.info("Executing ai_safety");
-        // TODO: Implement ai_safety based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object aisafety(Object... args) {
+    // TODO: Implement aisafety based on README.md
+    logger.info("Executing aisafety");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Ai Safety");
         System.out.println("=".repeat(70));

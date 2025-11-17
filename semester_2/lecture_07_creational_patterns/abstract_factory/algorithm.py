@@ -13,25 +13,39 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
 
-def abstract_factory(*args, **kwargs) -> Any:
+def abstract_factory(root: Optional[TreeNode]) -> List[int]:
     """
-    Abstract Factory.
+    abstract_factory tree traversal.
     
     Args:
-        *args: Variable arguments
-        **kwargs: Keyword arguments
+        root: Root of binary tree
         
     Returns:
-        Result of the algorithm
+        List of node values in traversal order
         
-    Time Complexity: See README.md
-    Space Complexity: See README.md
+    Time Complexity: O(n)
+    Space Complexity: O(h) where h is height
     """
-    logger.info(f"Executing abstract_factory")
-    # TODO: Implement abstract_factory based on README.md
-    return None
-
+    if not root:
+        return []
+    
+    result = []
+    # TODO: Implement abstract_factory traversal
+    # Basic in-order traversal
+    def traverse(node):
+        if node:
+            traverse(node.left)
+            result.append(node.val)
+            traverse(node.right)
+    
+    traverse(root)
+    return result
 
 def main():
     """Demonstration."""

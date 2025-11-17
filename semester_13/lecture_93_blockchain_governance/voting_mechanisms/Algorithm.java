@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Voting Mechanisms implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Voting Mechanisms.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object voting_mechanisms(Object... args) {
-        logger.info("Executing voting_mechanisms");
-        // TODO: Implement voting_mechanisms based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object votingmechanisms(Object... args) {
+    // TODO: Implement votingmechanisms based on README.md
+    logger.info("Executing votingmechanisms");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Voting Mechanisms");
         System.out.println("=".repeat(70));

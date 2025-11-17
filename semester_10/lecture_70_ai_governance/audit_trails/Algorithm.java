@@ -4,22 +4,13 @@ import java.util.logging.Logger;
 /**
  * Audit Trails implementation.
  */
-public class Algorithm {
-    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-    
-    /**
-     * Audit Trails.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object audit_trails(Object... args) {
-        logger.info("Executing audit_trails");
-        // TODO: Implement audit_trails based on README.md
-        return null;
-    }
-    
-    public static void main(String[] args) {
+    public static Object audittrails(Object... args) {
+    // TODO: Implement audittrails based on README.md
+    logger.info("Executing audittrails");
+    return null;
+}
+
+public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Audit Trails");
         System.out.println("=".repeat(70));

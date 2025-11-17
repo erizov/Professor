@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def smart_contract_security(*args, **kwargs) -> Any:
     """
-    Smart Contract Security.
+    smart_contract_security algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def smart_contract_security(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing smart_contract_security")
     # TODO: Implement smart_contract_security based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""

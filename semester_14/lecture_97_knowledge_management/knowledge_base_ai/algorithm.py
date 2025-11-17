@@ -13,10 +13,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 logger = get_logger(__name__)
 
-
 def knowledge_base_ai(*args, **kwargs) -> Any:
     """
-    Knowledge Base Ai.
+    knowledge_base_ai algorithm implementation.
     
     Args:
         *args: Variable arguments
@@ -28,10 +27,9 @@ def knowledge_base_ai(*args, **kwargs) -> Any:
     Time Complexity: See README.md
     Space Complexity: See README.md
     """
-    logger.info(f"Executing knowledge_base_ai")
     # TODO: Implement knowledge_base_ai based on README.md
+    logger.info(f"Executing {name}")
     return None
-
 
 def main():
     """Demonstration."""
