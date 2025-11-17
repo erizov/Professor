@@ -63,5 +63,12 @@ class TestKmp(AlgorithmTestCase):
         pass
 
 
-if __name__ == '__main__':
+    def test_pattern_not_found(self):
+        """Test when pattern not found."""
+        text = "ABCDEFG"
+        pattern = "XYZ"
+        result = self.algorithm(text, pattern)
+        self.assertIsNone(result) or self.assertEqual(result, -1)
+
+    if __name__ == '__main__':
     unittest.main()

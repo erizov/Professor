@@ -152,3 +152,104 @@ public class Service {
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
 
+
+
+## Examples of Implementation
+
+This pattern is implemented in the following frameworks and technologies:
+
+### Spring Framework
+
+```java
+// Spring Framework - Facade Pattern
+@Service
+public class OrderFacade {
+    @Autowired
+    private InventoryService inventoryService;
+    
+    @Autowired
+    private PaymentService paymentService;
+    
+    @Autowired
+    private ShippingService shippingService;
+    
+    @Autowired
+    private NotificationService notificationService;
+    
+    public OrderResult processOrder(Order order) {
+        // Facade simplifies complex subsystem interactions
+        // 1. Check inventory
+        if (!inventoryService.checkAvailability(order.getItems())) {
+            return OrderResult.failure("Items not available");
+        }
+        
+        // 2. Process payment
+        PaymentResult payment = paymentService.processPayment(order.getPayment());
+        if (!payment.isSuccess()) {
+            return OrderResult.failure("Payment failed");
+        }
+        
+        // 3. Reserve inventory
+        inventoryService.reserveItems(order.getItems());
+        
+        // 4. Create shipment
+        Shipment shipment = shippingService.createShipment(order);
+        
+        // 5. Send notifications
+        notificationService.sendOrderConfirmation(order);
+        
+        return OrderResult.success(shipment);
+    }
+}
+```
+
+**Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
+
+### .NET Framework
+
+```csharp
+// .NET - Facade Pattern
+public class OrderFacade
+{
+    private readonly IInventoryService _inventoryService;
+    private readonly IPaymentService _paymentService;
+    private readonly IShippingService _shippingService;
+    private readonly INotificationService _notificationService;
+    
+    public OrderFacade(
+        IInventoryService inventoryService,
+        IPaymentService paymentService,
+        IShippingService shippingService,
+        INotificationService notificationService)
+    {
+        _inventoryService = inventoryService;
+        _paymentService = paymentService;
+        _shippingService = shippingService;
+        _notificationService = notificationService;
+    }
+    
+    public OrderResult ProcessOrder(Order order)
+    {
+        // Facade simplifies complex subsystem
+        if (!_inventoryService.CheckAvailability(order.Items))
+        {
+            return OrderResult.Failure("Items not available");
+        }
+        
+        var payment = _paymentService.ProcessPayment(order.Payment);
+        if (!payment.IsSuccess)
+        {
+            return OrderResult.Failure("Payment failed");
+        }
+        
+        _inventoryService.ReserveItems(order.Items);
+        var shipment = _shippingService.CreateShipment(order);
+        _notificationService.SendOrderConfirmation(order);
+        
+        return OrderResult.Success(shipment);
+    }
+}
+```
+
+**Purpose**: .NET Framework implements this pattern for service registration, dependency injection, and application architecture.
+

@@ -152,3 +152,143 @@ public class Service {
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
 
+
+
+## Examples of Implementation
+
+This pattern is implemented in the following frameworks and technologies:
+
+### Spring Framework
+
+```java
+// Spring Framework - Composite Pattern
+public interface Component {
+    void operation();
+    void add(Component component);
+    void remove(Component component);
+}
+
+@Component
+public class Leaf implements Component {
+    private String name;
+    
+    public Leaf(String name) {
+        this.name = name;
+    }
+    
+    @Override
+    public void operation() {
+        System.out.println("Leaf: " + name);
+    }
+    
+    @Override
+    public void add(Component component) {
+        throw new UnsupportedOperationException();
+    }
+    
+    @Override
+    public void remove(Component component) {
+        throw new UnsupportedOperationException();
+    }
+}
+
+@Component
+public class Composite implements Component {
+    private List<Component> children = new ArrayList<>();
+    private String name;
+    
+    public Composite(String name) {
+        this.name = name;
+    }
+    
+    @Override
+    public void operation() {
+        System.out.println("Composite: " + name);
+        for (Component child : children) {
+            child.operation();
+        }
+    }
+    
+    @Override
+    public void add(Component component) {
+        children.add(component);
+    }
+    
+    @Override
+    public void remove(Component component) {
+        children.remove(component);
+    }
+}
+```
+
+**Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
+
+### .NET Framework
+
+```csharp
+// .NET - Composite Pattern
+public interface IComponent
+{
+    void Operation();
+    void Add(IComponent component);
+    void Remove(IComponent component);
+}
+
+public class Leaf : IComponent
+{
+    private readonly string _name;
+    
+    public Leaf(string name)
+    {
+        _name = name;
+    }
+    
+    public void Operation()
+    {
+        Console.WriteLine($"Leaf: {_name}");
+    }
+    
+    public void Add(IComponent component)
+    {
+        throw new NotSupportedException();
+    }
+    
+    public void Remove(IComponent component)
+    {
+        throw new NotSupportedException();
+    }
+}
+
+public class Composite : IComponent
+{
+    private readonly List<IComponent> _children = new List<IComponent>();
+    private readonly string _name;
+    
+    public Composite(string name)
+    {
+        _name = name;
+    }
+    
+    public void Operation()
+    {
+        Console.WriteLine($"Composite: {_name}");
+        foreach (var child in _children)
+        {
+            child.Operation();
+        }
+    }
+    
+    public void Add(IComponent component)
+    {
+        _children.Add(component);
+    }
+    
+    public void Remove(IComponent component)
+    {
+        _children.Remove(component);
+    }
+}
+```
+
+**Purpose**: .NET Framework implements this pattern for service registration, dependency injection, and application architecture.
+

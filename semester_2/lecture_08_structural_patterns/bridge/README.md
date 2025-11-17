@@ -152,3 +152,125 @@ public class Service {
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
 
+
+
+## Examples of Implementation
+
+This pattern is implemented in the following frameworks and technologies:
+
+### Spring Framework
+
+```java
+// Spring Framework - Bridge Pattern
+public interface Renderer {
+    void renderCircle(float radius);
+    void renderSquare(float side);
+}
+
+@Component("vectorRenderer")
+public class VectorRenderer implements Renderer {
+    @Override
+    public void renderCircle(float radius) {
+        System.out.println("Drawing circle with radius " + radius + " using vectors");
+    }
+    
+    @Override
+    public void renderSquare(float side) {
+        System.out.println("Drawing square with side " + side + " using vectors");
+    }
+}
+
+@Component("rasterRenderer")
+public class RasterRenderer implements Renderer {
+    @Override
+    public void renderCircle(float radius) {
+        System.out.println("Drawing circle with radius " + radius + " using pixels");
+    }
+    
+    @Override
+    public void renderSquare(float side) {
+        System.out.println("Drawing square with side " + side + " using pixels");
+    }
+}
+
+public abstract class Shape {
+    protected Renderer renderer;
+    
+    public Shape(Renderer renderer) {
+        this.renderer = renderer;
+    }
+    
+    public abstract void draw();
+}
+
+@Component
+public class Circle extends Shape {
+    private float radius;
+    
+    @Autowired
+    public Circle(@Qualifier("vectorRenderer") Renderer renderer) {
+        super(renderer);
+    }
+    
+    @Override
+    public void draw() {
+        renderer.renderCircle(radius);
+    }
+}
+```
+
+**Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
+
+### .NET Framework
+
+```csharp
+// .NET - Bridge Pattern
+public interface IRenderer
+{
+    void RenderCircle(float radius);
+    void RenderSquare(float side);
+}
+
+public class VectorRenderer : IRenderer
+{
+    public void RenderCircle(float radius)
+    {
+        Console.WriteLine($"Drawing circle with radius {radius} using vectors");
+    }
+    
+    public void RenderSquare(float side)
+    {
+        Console.WriteLine($"Drawing square with side {side} using vectors");
+    }
+}
+
+public abstract class Shape
+{
+    protected IRenderer Renderer;
+    
+    protected Shape(IRenderer renderer)
+    {
+        Renderer = renderer;
+    }
+    
+    public abstract void Draw();
+}
+
+public class Circle : Shape
+{
+    private readonly float _radius;
+    
+    public Circle(IRenderer renderer, float radius) : base(renderer)
+    {
+        _radius = radius;
+    }
+    
+    public override void Draw()
+    {
+        Renderer.RenderCircle(_radius);
+    }
+}
+```
+
+**Purpose**: .NET Framework implements this pattern for service registration, dependency injection, and application architecture.
+

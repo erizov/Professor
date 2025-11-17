@@ -148,3 +148,125 @@ public class Service {
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
 
+
+
+## Examples of Implementation
+
+This pattern is implemented in the following frameworks and technologies:
+
+### Spring Framework
+
+```java
+// Spring Framework - Template Method Pattern
+public abstract class DataProcessor {
+    // Template method
+    public final void process(Data data) {
+        validate(data);
+        Data transformed = transform(data);
+        save(transformed);
+        notify(transformed);
+    }
+    
+    protected abstract void validate(Data data);
+    protected abstract Data transform(Data data);
+    
+    protected void save(Data data) {
+        // Default implementation
+        repository.save(data);
+    }
+    
+    protected void notify(Data data) {
+        // Default implementation
+        notificationService.send(data);
+    }
+}
+
+@Component
+public class CSVDataProcessor extends DataProcessor {
+    @Override
+    protected void validate(Data data) {
+        // CSV-specific validation
+    }
+    
+    @Override
+    protected Data transform(Data data) {
+        // CSV-specific transformation
+        return csvParser.parse(data);
+    }
+}
+
+@Component
+public class JSONDataProcessor extends DataProcessor {
+    @Override
+    protected void validate(Data data) {
+        // JSON-specific validation
+    }
+    
+    @Override
+    protected Data transform(Data data) {
+        // JSON-specific transformation
+        return jsonParser.parse(data);
+    }
+}
+```
+
+**Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
+
+### .NET Framework
+
+```csharp
+// .NET - Template Method Pattern
+public abstract class DataProcessor
+{
+    // Template method
+    public void Process(Data data)
+    {
+        Validate(data);
+        var transformed = Transform(data);
+        Save(transformed);
+        Notify(transformed);
+    }
+    
+    protected abstract void Validate(Data data);
+    protected abstract Data Transform(Data data);
+    
+    protected virtual void Save(Data data)
+    {
+        _repository.Save(data);
+    }
+    
+    protected virtual void Notify(Data data)
+    {
+        _notificationService.Send(data);
+    }
+}
+
+public class CsvDataProcessor : DataProcessor
+{
+    protected override void Validate(Data data)
+    {
+        // CSV validation
+    }
+    
+    protected override Data Transform(Data data)
+    {
+        return _csvParser.Parse(data);
+    }
+}
+
+public class JsonDataProcessor : DataProcessor
+{
+    protected override void Validate(Data data)
+    {
+        // JSON validation
+    }
+    
+    protected override Data Transform(Data data)
+    {
+        return _jsonParser.Parse(data);
+    }
+}
+```
+
+**Purpose**: .NET Framework implements this pattern for service registration, dependency injection, and application architecture.
+

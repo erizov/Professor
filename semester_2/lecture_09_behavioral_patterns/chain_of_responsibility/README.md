@@ -152,3 +152,148 @@ public class Service {
 
 **Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
 
+
+
+## Examples of Implementation
+
+This pattern is implemented in the following frameworks and technologies:
+
+### Spring Framework
+
+```java
+// Spring Framework - Chain of Responsibility Pattern
+public abstract class Handler {
+    protected Handler next;
+    
+    public Handler setNext(Handler next) {
+        this.next = next;
+        return next;
+    }
+    
+    public abstract boolean handle(Request request);
+    
+    protected boolean handleNext(Request request) {
+        if (next == null) {
+            return true;
+        }
+        return next.handle(request);
+    }
+}
+
+@Component
+public class AuthenticationHandler extends Handler {
+    @Override
+    public boolean handle(Request request) {
+        if (!isAuthenticated(request)) {
+            return false;
+        }
+        return handleNext(request);
+    }
+    
+    private boolean isAuthenticated(Request request) {
+        // Authentication logic
+        return request.getToken() != null;
+    }
+}
+
+@Component
+public class AuthorizationHandler extends Handler {
+    @Override
+    public boolean handle(Request request) {
+        if (!isAuthorized(request)) {
+            return false;
+        }
+        return handleNext(request);
+    }
+    
+    private boolean isAuthorized(Request request) {
+        // Authorization logic
+        return request.getUser().hasPermission(request.getResource());
+    }
+}
+
+@Component
+public class ValidationHandler extends Handler {
+    @Override
+    public boolean handle(Request request) {
+        if (!isValid(request)) {
+            return false;
+        }
+        return handleNext(request);
+    }
+    
+    private boolean isValid(Request request) {
+        // Validation logic
+        return request.getData() != null;
+    }
+}
+
+// Usage
+@Autowired
+private AuthenticationHandler authHandler;
+@Autowired
+private AuthorizationHandler authzHandler;
+@Autowired
+private ValidationHandler validationHandler;
+
+// Build chain
+authHandler.setNext(authzHandler).setNext(validationHandler);
+authHandler.handle(request);
+```
+
+**Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
+
+### .NET Framework
+
+```csharp
+// .NET - Chain of Responsibility Pattern
+public abstract class Handler
+{
+    protected Handler _next;
+    
+    public Handler SetNext(Handler next)
+    {
+        _next = next;
+        return next;
+    }
+    
+    public abstract bool Handle(Request request);
+    
+    protected bool HandleNext(Request request)
+    {
+        if (_next == null)
+        {
+            return true;
+        }
+        return _next.Handle(request);
+    }
+}
+
+public class AuthenticationHandler : Handler
+{
+    public override bool Handle(Request request)
+    {
+        if (!IsAuthenticated(request))
+        {
+            return false;
+        }
+        return HandleNext(request);
+    }
+    
+    private bool IsAuthenticated(Request request)
+    {
+        return request.Token != null;
+    }
+}
+
+// Usage
+var authHandler = new AuthenticationHandler();
+var authzHandler = new AuthorizationHandler();
+var validationHandler = new ValidationHandler();
+
+authHandler.SetNext(authzHandler).SetNext(validationHandler);
+authHandler.Handle(request);
+```
+
+**Purpose**: .NET Framework implements this pattern for service registration, dependency injection, and application architecture.
+

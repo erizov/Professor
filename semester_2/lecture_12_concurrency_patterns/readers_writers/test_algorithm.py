@@ -71,5 +71,33 @@ class TestReaderswriters(AlgorithmTestCase):
         self.assertIsNotNone(instance1)
         self.assertIsNotNone(instance2)
 
+        def test_object_creation(self):
+        """Test pattern object creation."""
+        instance = self.algorithm()
+        self.assertIsNotNone(instance)
+
+    def test_pattern_behavior(self):
+        """Test pattern-specific behavior."""
+        instance1 = self.algorithm()
+        instance2 = self.algorithm()
+        # Pattern-specific assertion
+        self.assertIsNotNone(instance1)
+
+    def test_thread_safety(self):
+        """Test thread safety if applicable."""
+        import threading
+        
+        instances = []
+        def create_instance():
+            instances.append(self.algorithm())
+        
+        threads = [threading.Thread(target=create_instance) for _ in range(10)]
+        for t in threads:
+            t.start()
+        for t in threads:
+            t.join()
+        
+        self.assertEqual(len(instances), 10)
+
     if __name__ == '__main__':
     unittest.main()

@@ -63,5 +63,37 @@ class TestFractionalknapsack(AlgorithmTestCase):
         pass
 
 
-if __name__ == '__main__':
+    def test_small_input(self):
+        """Test with small input."""
+        result = self.algorithm(1)
+        self.assertEqual(result, 1)
+
+    def test_zero_input(self):
+        """Test with zero input."""
+        result = self.algorithm(0)
+        self.assertEqual(result, 0)
+
+    def test_large_input(self):
+        """Test with large input."""
+        result = self.algorithm(100)
+        self.assertIsNotNone(result)
+        self.assertGreater(result, 0)
+
+    def test_memoization(self):
+        """Test that DP uses memoization."""
+        import time
+        
+        start = time.time()
+        result1 = self.algorithm(30)
+        time1 = time.time() - start
+        
+        start = time.time()
+        result2 = self.algorithm(30)
+        time2 = time.time() - start
+        
+        self.assertEqual(result1, result2)
+        # Second call should be faster (memoized)
+        self.assertLessEqual(time2, time1)
+
+    if __name__ == '__main__':
     unittest.main()
