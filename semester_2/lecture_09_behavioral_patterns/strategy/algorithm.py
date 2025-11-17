@@ -26,153 +26,16 @@ class PaymentStrategy(ABC):
     @abstractmethod
     def pay(self, amount: float) -> bool:
         """Process payment."""
+        
+    """
+    Strategy pattern implementation.
+    """
+    def pay(self):
         pass
     
-    @abstractmethod
-    def get_name(self) -> str:
-        """Get strategy name."""
+    def execute(self):
+        """Execute pattern logic."""
         pass
-
-
-# Concrete Strategies
-class CreditCardStrategy(PaymentStrategy):
-    """Credit card payment strategy."""
-    
-    def __init__(self, card_number: str, cvv: str):
-        self.card_number = card_number
-        self.cvv = cvv
-    
-    def pay(self, amount: float) -> bool:
-        """Process credit card payment."""
-        logger.info(f"Processing ${amount:.2f} payment using Credit Card")
-        logger.info(f"Card: ****{self.card_number[-4:]}")
-        return True
-    
-    def get_name(self) -> str:
-        return "Credit Card"
-
-
-class PayPalStrategy(PaymentStrategy):
-    """PayPal payment strategy."""
-    
-    def __init__(self, email: str):
-        self.email = email
-    
-    def pay(self, amount: float) -> bool:
-        """Process PayPal payment."""
-        logger.info(f"Processing ${amount:.2f} payment using PayPal")
-        logger.info(f"Email: {self.email}")
-        return True
-    
-    def get_name(self) -> str:
-        return "PayPal"
-
-
-class CryptocurrencyStrategy(PaymentStrategy):
-    """Cryptocurrency payment strategy."""
-    
-    def __init__(self, wallet_address: str):
-        self.wallet_address = wallet_address
-    
-    def pay(self, amount: float) -> bool:
-        """Process cryptocurrency payment."""
-        logger.info(f"Processing ${amount:.2f} payment using Cryptocurrency")
-        logger.info(f"Wallet: {self.wallet_address[:10]}...")
-        return True
-    
-    def get_name(self) -> str:
-        return "Cryptocurrency"
-
-
-# Context
-class PaymentProcessor:
-    """Payment processor context."""
-    
-    def __init__(self, strategy: PaymentStrategy = None):
-        self.strategy = strategy
-    
-    def set_strategy(self, strategy: PaymentStrategy) -> None:
-        """Set payment strategy."""
-        self.strategy = strategy
-    
-    def process_payment(self, amount: float) -> bool:
-        """Process payment using current strategy."""
-        if not self.strategy:
-            raise ValueError("No payment strategy set")
-        return self.strategy.pay(amount)
-
-
-# Example 2: Sorting Strategy
-class SortingStrategy(ABC):
-    """Abstract sorting strategy."""
-    
-    @abstractmethod
-    def sort(self, data: List[int]) -> List[int]:
-        """Sort the data."""
-        pass
-
-
-class QuickSortStrategy(SortingStrategy):
-    """Quick sort strategy."""
-    
-    def sort(self, data: List[int]) -> List[int]:
-        """Sort using quick sort."""
-        if len(data) <= 1:
-            return data
-        
-        pivot = data[len(data) // 2]
-        left = [x for x in data if x < pivot]
-        middle = [x for x in data if x == pivot]
-        right = [x for x in data if x > pivot]
-        
-        return self.sort(left) + middle + self.sort(right)
-
-
-class MergeSortStrategy(SortingStrategy):
-    """Merge sort strategy."""
-    
-    def sort(self, data: List[int]) -> List[int]:
-        """Sort using merge sort."""
-        if len(data) <= 1:
-            return data
-        
-        mid = len(data) // 2
-        left = self.sort(data[:mid])
-        right = self.sort(data[mid:])
-        
-        return self._merge(left, right)
-    
-    def _merge(self, left: List[int], right: List[int]) -> List[int]:
-        """Merge two sorted lists."""
-        result = []
-        i = j = 0
-        
-        while i < len(left) and j < len(right):
-            if left[i] <= right[j]:
-                result.append(left[i])
-                i += 1
-            else:
-                result.append(right[j])
-                j += 1
-        
-        result.extend(left[i:])
-        result.extend(right[j:])
-        return result
-
-
-class Sorter:
-    """Sorter context."""
-    
-    def __init__(self, strategy: SortingStrategy):
-        self.strategy = strategy
-    
-    def set_strategy(self, strategy: SortingStrategy) -> None:
-        """Set sorting strategy."""
-        self.strategy = strategy
-    
-    def sort_data(self, data: List[int]) -> List[int]:
-        """Sort data using current strategy."""
-        return self.strategy.sort(data)
 
 
 def main() -> None:

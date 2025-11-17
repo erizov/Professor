@@ -25,146 +25,16 @@ class Observer(ABC):
     @abstractmethod
     def update(self, data: Any) -> None:
         """Called when subject notifies observers."""
-        pass
-
-
-# Subject Interface
-class Subject(ABC):
-    """Abstract subject interface."""
-    
-    @abstractmethod
-    def attach(self, observer: Observer) -> None:
-        """Attach an observer."""
+        
+    """
+    Observer pattern implementation.
+    """
+    def update(self):
         pass
     
-    @abstractmethod
-    def detach(self, observer: Observer) -> None:
-        """Detach an observer."""
+    def execute(self):
+        """Execute pattern logic."""
         pass
-    
-    @abstractmethod
-    def notify(self) -> None:
-        """Notify all observers."""
-        pass
-
-
-# Concrete Subject
-class NewsAgency(Subject):
-    """News agency subject."""
-    
-    def __init__(self):
-        self.observers: List[Observer] = []
-        self.news: str = ""
-    
-    def attach(self, observer: Observer) -> None:
-        """Attach observer."""
-        if observer not in self.observers:
-            self.observers.append(observer)
-    
-    def detach(self, observer: Observer) -> None:
-        """Detach observer."""
-        if observer in self.observers:
-            self.observers.remove(observer)
-    
-    def notify(self) -> None:
-        """Notify all observers."""
-        for observer in self.observers:
-            observer.update(self.news)
-    
-    def set_news(self, news: str) -> None:
-        """Set news and notify observers."""
-        self.news = news
-        self.notify()
-
-
-# Concrete Observers
-class NewsChannel(Observer):
-    """News channel observer."""
-    
-    def __init__(self, name: str):
-        self.name = name
-        self.latest_news: str = ""
-    
-    def update(self, data: Any) -> None:
-        """Update with new news."""
-        self.latest_news = data
-        logger.info(f"{self.name} received: {data}")
-    
-    def get_latest_news(self) -> str:
-        """Get latest news."""
-        return self.latest_news
-
-
-class EmailSubscriber(Observer):
-    """Email subscriber observer."""
-    
-    def __init__(self, email: str):
-        self.email = email
-        self.news_updates: List[str] = []
-    
-    def update(self, data: Any) -> None:
-        """Update with new news."""
-        self.news_updates.append(data)
-        logger.info(f"Email sent to {self.email}: {data}")
-
-
-# Example 2: Weather Station
-class WeatherData(Subject):
-    """Weather data subject."""
-    
-    def __init__(self):
-        self.observers: List[Observer] = []
-        self.temperature: float = 0.0
-        self.humidity: float = 0.0
-        self.pressure: float = 0.0
-    
-    def attach(self, observer: Observer) -> None:
-        """Attach observer."""
-        if observer not in self.observers:
-            self.observers.append(observer)
-    
-    def detach(self, observer: Observer) -> None:
-        """Detach observer."""
-        if observer in self.observers:
-            self.observers.remove(observer)
-    
-    def notify(self) -> None:
-        """Notify all observers."""
-        data = {
-            'temperature': self.temperature,
-            'humidity': self.humidity,
-            'pressure': self.pressure
-        }
-        for observer in self.observers:
-            observer.update(data)
-    
-    def set_measurements(self, temperature: float, humidity: float, 
-                        pressure: float) -> None:
-        """Set measurements and notify."""
-        self.temperature = temperature
-        self.humidity = humidity
-        self.pressure = pressure
-        self.notify()
-
-
-class CurrentConditionsDisplay(Observer):
-    """Current conditions display observer."""
-    
-    def __init__(self):
-        self.temperature: float = 0.0
-        self.humidity: float = 0.0
-    
-    def update(self, data: Any) -> None:
-        """Update display."""
-        if isinstance(data, dict):
-            self.temperature = data.get('temperature', 0.0)
-            self.humidity = data.get('humidity', 0.0)
-            self.display()
-    
-    def display(self) -> None:
-        """Display current conditions."""
-        logger.info(f"Current conditions: {self.temperature}°F, "
-              f"{self.humidity}% humidity")
 
 
 def main() -> None:

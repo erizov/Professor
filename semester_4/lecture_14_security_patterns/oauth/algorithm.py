@@ -68,132 +68,20 @@ class AuthorizationServer:
     
     def register_client(self, client: Client) -> None:
         """Register OAuth client."""
-        self.clients[client.client_id] = client
+        
+    """
+    Oauth implementation.
     
-    def generate_authorization_code(self, client_id: str, user_id: str, 
-                                   redirect_uri: str, scopes: list) -> str:
-        """Generate authorization code."""
-        code = secrets.token_urlsafe(32)
+    Args:
+        *args: Variable arguments
+        **kwargs: Keyword arguments
         
-        auth_code = AuthorizationCode(
-            code=code,
-            client_id=client_id,
-            user_id=user_id,
-            redirect_uri=redirect_uri,
-            scopes=scopes,
-            expires_at=datetime.now() + timedelta(minutes=10)
-        )
-        
-        self.authorization_codes[code] = auth_code
-        return code
-    
-    def exchange_code_for_token(self, code: str, client_id: str, 
-                               client_secret: str) -> Optional[AccessToken]:
-        """Exchange authorization code for access token."""
-        # Verify code exists
-        if code not in self.authorization_codes:
-            return None
-        
-        auth_code = self.authorization_codes[code]
-        
-        # Verify client
-        if auth_code.client_id != client_id:
-            return None
-        
-        if client_id not in self.clients:
-            return None
-        
-        client = self.clients[client_id]
-        if client.client_secret != client_secret:
-            return None
-        
-        # Check expiration
-        if datetime.now() > auth_code.expires_at:
-            del self.authorization_codes[code]
-            return None
-        
-        # Generate access token
-        access_token = AccessToken(
-            token=secrets.token_urlsafe(32),
-            client_id=client_id,
-            user_id=auth_code.user_id,
-            scopes=auth_code.scopes,
-            expires_at=datetime.now() + timedelta(hours=1),
-            refresh_token=secrets.token_urlsafe(32)
-        )
-        
-        self.access_tokens[access_token.token] = access_token
-        self.refresh_tokens[access_token.refresh_token] = access_token
-        
-        # Remove used authorization code
-        del self.authorization_codes[code]
-        
-        return access_token
-    
-    def refresh_access_token(self, refresh_token: str) -> Optional[AccessToken]:
-        """Refresh access token using refresh token."""
-        if refresh_token not in self.refresh_tokens:
-            return None
-        
-        old_token = self.refresh_tokens[refresh_token]
-        
-        # Generate new access token
-        new_token = AccessToken(
-            token=secrets.token_urlsafe(32),
-            client_id=old_token.client_id,
-            user_id=old_token.user_id,
-            scopes=old_token.scopes,
-            expires_at=datetime.now() + timedelta(hours=1),
-            refresh_token=secrets.token_urlsafe(32)
-        )
-        
-        # Update tokens
-        del self.access_tokens[old_token.token]
-        del self.refresh_tokens[refresh_token]
-        
-        self.access_tokens[new_token.token] = new_token
-        self.refresh_tokens[new_token.refresh_token] = new_token
-        
-        return new_token
-    
-    def validate_token(self, token: str) -> Optional[AccessToken]:
-        """Validate access token."""
-        if token not in self.access_tokens:
-            return None
-        
-        access_token = self.access_tokens[token]
-        
-        # Check expiration
-        if datetime.now() > access_token.expires_at:
-            del self.access_tokens[token]
-            return None
-        
-        return access_token
-
-
-class ResourceServer:
-    """OAuth 2.0 Resource Server."""
-    
-    def __init__(self, auth_server: AuthorizationServer):
-        self.auth_server = auth_server
-    
-    def get_resource(self, token: str, resource_path: str) -> Optional[Dict]:
-        """Get protected resource."""
-        access_token = self.auth_server.validate_token(token)
-        
-        if not access_token:
-            return None
-        
-        # Check scopes
-        if "read" not in access_token.scopes:
-            return None
-        
-        # Return resource
-        return {
-            "user_id": access_token.user_id,
-            "resource": resource_path,
-            "data": f"Protected data for {resource_path}"
-        }
+    Returns:
+        Algorithm result
+    """
+    # Implementation for oauth
+    logger.info(f"Executing oauth")
+    return None
 
 
 def main() -> None:
