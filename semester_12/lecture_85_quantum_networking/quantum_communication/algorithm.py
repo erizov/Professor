@@ -41,6 +41,7 @@ def quantum_communication(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Quantum Communication implementation.
     

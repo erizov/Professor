@@ -41,6 +41,7 @@ def quantum_internet(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Quantum Internet implementation.
     

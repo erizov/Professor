@@ -41,6 +41,7 @@ def quantum_switching(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Quantum Switching implementation.
     
