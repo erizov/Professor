@@ -18,9 +18,20 @@ app = Flask(__name__)
 app.secret_key = 'your-secret-key-here'  # Change in production
 CORS(app)
 
-# Register dashboard blueprint
+# Register blueprints
 from web_interface.dashboard import dashboard_bp
+from web_interface.auth import auth_bp
+from web_interface.reports import reports_bp
+
 app.register_blueprint(dashboard_bp)
+app.register_blueprint(auth_bp)
+app.register_blueprint(reports_bp)
+
+# Login route
+@app.route('/login')
+def login_page():
+    """Login page."""
+    return render_template('login.html')
 
 def get_db_connection():
     """Get database connection."""
