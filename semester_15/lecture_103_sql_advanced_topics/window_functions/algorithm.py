@@ -41,6 +41,7 @@ def window_functions(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Window Functions implementation.
     

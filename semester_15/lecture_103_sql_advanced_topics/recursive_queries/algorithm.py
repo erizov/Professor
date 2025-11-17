@@ -41,6 +41,7 @@ def recursive_queries(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Recursive Queries implementation.
     

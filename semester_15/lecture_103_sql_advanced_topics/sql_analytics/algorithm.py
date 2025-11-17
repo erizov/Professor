@@ -41,6 +41,7 @@ def sql_analytics(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Sql Analytics implementation.
     

@@ -41,6 +41,7 @@ def doc_analytics(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Doc Analytics implementation.
     
