@@ -41,6 +41,7 @@ def data_catalog(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Data Catalog implementation.
     
