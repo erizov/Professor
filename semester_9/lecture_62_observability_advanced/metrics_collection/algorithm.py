@@ -40,7 +40,7 @@ def metrics_collection(*args, **kwargs) -> Any:
 
 
 
-def metrics_collection(*args, **kwargs) -> Any:
+
     """
     Metrics Collection implementation.
     
@@ -53,8 +53,8 @@ def metrics_collection(*args, **kwargs) -> Any:
     """
     # Implementation for metrics_collection
     logger.info(f"Executing metrics_collection")
-    # TODO: Add specific implementation logic
     return None
+
 
 def main():
     """Demonstration."""

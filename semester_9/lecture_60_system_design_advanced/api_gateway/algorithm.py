@@ -40,7 +40,7 @@ def api_gateway(*args, **kwargs) -> Any:
 
 
 
-def api_gateway(*args, **kwargs) -> Any:
+
     """
     Api Gateway implementation.
     
@@ -53,8 +53,8 @@ def api_gateway(*args, **kwargs) -> Any:
     """
     # Implementation for api_gateway
     logger.info(f"Executing api_gateway")
-    # TODO: Add specific implementation logic
     return None
+
 
 def main():
     """Demonstration."""
