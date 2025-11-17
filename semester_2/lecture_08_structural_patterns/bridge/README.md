@@ -124,9 +124,12 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Bridge is employed in production systems
-- **Capability Optimization**: Applied to improve structure efficiency
-- **Structure Design**: Integral part of scalable architecture patterns
+- **Enterprise Frameworks**: Spring Framework, .NET Core extensively use design patterns
+- **UI Frameworks**: React, Angular, Vue.js implement patterns for component management
+- **Game Development**: Patterns for game object management and behavior
+- **Web Development**: MVC, MVVM patterns in web applications
+- **Microservices**: Patterns for service communication and coordination
+
 
 ## Specific misconceptions with corrections
 
@@ -154,8 +157,45 @@ public class Service {
 
 ## Examples of Implementation
 
-This pattern is implemented in the following frameworks and technologies:
+### Spring Framework
 
+```java
+// Spring Framework - Bridge Pattern
+@Component
+public class bridgeService {
+    // Spring uses this pattern for dependency injection and bean management
+    @Autowired
+    private Dependency dependency;
+    
+    public void execute() {
+        // Implementation using bridge pattern
+    }
+}
+```
+
+**Purpose**: Spring Framework uses this pattern/algorithm for dependency injection, bean management, and enterprise application development.
+
+### .NET Framework
+
+```csharp
+// .NET Core - Bridge Pattern
+public class bridgeService
+{
+    private readonly IDependency _dependency;
+    
+    public bridgeService(IDependency dependency)
+    {
+        _dependency = dependency;
+    }
+    
+    public void Execute()
+    {
+        // Implementation using bridge pattern
+    }
+}
+```
+
+**Purpose**: .NET Framework implements this pattern/algorithm for service registration, dependency injection, and application architecture.
 ### Spring Framework
 
 ```java
@@ -271,6 +311,14 @@ public class Circle : Shape
 ```
 
 **Purpose**: .NET Framework implements this pattern for service registration, dependency injection, and application architecture.
+
+
+## Related Algorithms
+
+- **Dependency Injection**: Modern alternative to many design patterns
+- **Service Locator**: Related pattern for accessing shared services
+- **Repository Pattern**: Data access pattern often used with other patterns
+
 
 ## Algorithm Steps
 

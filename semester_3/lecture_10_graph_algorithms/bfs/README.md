@@ -123,24 +123,12 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Social Networks**: Finding shortest path between users (degrees of separation)
-- **Web Crawling**: Discovering all pages on a website
-- **GPS Navigation**: Finding shortest route between locations
+- **Social Networks**: Friend recommendations, shortest path between users
+- **Navigation Systems**: GPS routing and shortest path calculations
+- **Network Analysis**: Network topology analysis and routing
+- **Game AI**: Pathfinding in games and NPC movement
+- **Web Crawling**: Search engines use graph algorithms for web crawling
 
-- **Shortest path in unweighted graphs**
-- **Level-order tree traversal**
-- **Social network analysis**
-- **Web crawling**
-
-- **Shortest path in unweighted graphs**
-- **Level-order tree traversal**
-- **Social network analysis**
-- **Web crawling**
-
-- **Shortest path in unweighted graphs**
-- **Level-order tree traversal**
-- **Social network analysis**
-- **Web crawling**
 
 ## Specific misconceptions with corrections
 

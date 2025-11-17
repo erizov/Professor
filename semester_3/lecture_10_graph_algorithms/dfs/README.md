@@ -123,24 +123,12 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Maze Solving**: Finding paths through mazes
-- **Dependency Resolution**: Resolving package dependencies
-- **Topological Sorting**: Task scheduling and build systems
+- **Social Networks**: Friend recommendations, shortest path between users
+- **Navigation Systems**: GPS routing and shortest path calculations
+- **Network Analysis**: Network topology analysis and routing
+- **Game AI**: Pathfinding in games and NPC movement
+- **Web Crawling**: Search engines use graph algorithms for web crawling
 
-- **Topological sorting**
-- **Finding connected components**
-- **Solving puzzles and mazes**
-- **Tree/graph traversal**
-
-- **Topological sorting**
-- **Finding connected components**
-- **Solving puzzles and mazes**
-- **Tree/graph traversal**
-
-- **Topological sorting**
-- **Finding connected components**
-- **Solving puzzles and mazes**
-- **Tree/graph traversal**
 
 ## Specific misconceptions with corrections
 

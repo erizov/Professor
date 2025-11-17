@@ -116,9 +116,12 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Rabin Karp is used in production systems
-- **Performance Optimization**: Applied to improve system efficiency
-- **Structure Design**: Integral part of scalable architecture patterns
+- **Text Editors**: Find and replace functionality
+- **Search Engines**: Pattern matching in search queries
+- **Bioinformatics**: DNA and protein sequence matching
+- **Network Security**: Intrusion detection and pattern matching
+- **Compilers**: Lexical analysis and tokenization
+
 
 ## Specific misconceptions with corrections
 

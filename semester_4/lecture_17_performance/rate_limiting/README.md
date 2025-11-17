@@ -111,9 +111,13 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Rate Limiting is used in production systems
-- **Capability Optimization**: Applied to improve structure efficiency
--Architecturetem Design**: Integral part of scalable architecture patterns
+- **API Gateways (Kong, AWS API Gateway)**: Rate limiting to prevent abuse
+- **Nginx**: Rate limiting module for DDoS protection
+- **Redis**: Used for distributed rate limiting
+- **Spring Cloud Gateway**: Rate limiting filters
+- **Twitter API**: Rate limits API calls per user
+- **GitHub API**: Rate limits API requests to prevent abuse
+
 
 ## Specific misconceptions with corrections
 

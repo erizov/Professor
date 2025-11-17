@@ -124,9 +124,13 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Database Connections**: Managing single connection pool instance
-- **Logging Systems**: Centralized logger instance
-- **Configuration Managers**: Single source of truth for application settings
+- **Spring Framework**: ApplicationContext is a singleton managing all beans
+- **.NET Core**: Service container uses singleton pattern for shared services
+- **Database Connection Pools**: Connection pool managers are typically singletons
+- **Logging Frameworks**: Logger instances are often singletons (SLF4J, Log4j)
+- **Configuration Managers**: Application configuration is typically a singleton
+- **Cache Managers**: Redis, Memcached clients are often singletons
+
 
 ## Specific misconceptions with corrections
 

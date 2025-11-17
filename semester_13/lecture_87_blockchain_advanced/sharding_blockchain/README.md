@@ -119,9 +119,12 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Sharding Blockchain is employed in production systems
-- **Performance Optimization**: Applied to improve structure efficiency
-- **Structure Design**: Integral part of scalable architecture patterns
+- **Enterprise Frameworks**: Spring Framework, .NET Core extensively use design patterns
+- **UI Frameworks**: React, Angular, Vue.js implement patterns for component management
+- **Game Development**: Patterns for game object management and behavior
+- **Web Development**: MVC, MVVM patterns in web applications
+- **Microservices**: Patterns for service communication and coordination
+
 
 ## Specific misconceptions with corrections
 

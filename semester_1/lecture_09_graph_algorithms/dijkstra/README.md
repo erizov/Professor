@@ -157,9 +157,12 @@ Find shortest path from A to all nodes.
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Dijkstra is employed in production systems
-- **Capability Optimization**: Applied to improve system efficiency
-- **Structure Design**: Integral part of scalable architecture patterns
+- **Social Networks**: Friend recommendations, shortest path between users
+- **Navigation Systems**: GPS routing and shortest path calculations
+- **Network Analysis**: Network topology analysis and routing
+- **Game AI**: Pathfinding in games and NPC movement
+- **Web Crawling**: Search engines use graph algorithms for web crawling
+
 
 ## Specific misconceptions with corrections
 

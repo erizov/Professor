@@ -111,9 +111,13 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Web Browsers**: Browser cache for faster page loads
-- **CDNs**: Content delivery networks cache static assets
-- **Databases**: Query result caching (Redis, Memcached)
+- **Spring Cache**: @Cacheable annotation provides caching abstraction
+- **Redis**: In-memory data store used for caching in production systems
+- **CDN (CloudFlare, Akamai)**: Caches static content globally
+- **Browser Caching**: HTTP cache headers control browser caching
+- **Database Query Cache**: MySQL, PostgreSQL cache query results
+- **Application-Level Cache**: Memcached, Hazelcast for distributed caching
+
 
 ## Specific misconceptions with corrections
 

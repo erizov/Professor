@@ -124,9 +124,13 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **System-View Architectures**: UI updates when content changes
-- **Event Systems**: Pub-sub messaging in distributed systems
-- **Reactive Programming**: RxJava, React.js state management
+- **Spring Framework**: ApplicationEventPublisher implements observer pattern
+- **JavaScript**: Event listeners use observer pattern (addEventListener)
+- **Reactive Extensions (RxJava, RxJS)**: Built on observer pattern
+- **Model-View-Controller**: Views observe model changes
+- **Message Queues**: Pub/Sub systems use observer pattern
+- **GUI Frameworks**: Button clicks, window events use observer pattern
+
 
 ## Specific misconceptions with corrections
 

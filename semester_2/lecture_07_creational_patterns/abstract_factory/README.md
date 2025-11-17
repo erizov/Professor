@@ -124,9 +124,13 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Abstract Factory is employed in production systems
-- **Capability Optimization**: Applied to improve structure efficiency
-- **Structure Design**: Integral part of scalable architecture patterns
+- **Spring Framework**: BeanFactory and ApplicationContext use factory pattern
+- **.NET Core**: IServiceProvider acts as a factory for creating services
+- **JDBC**: DriverManager.getConnection() uses factory pattern
+- **XML Parsers**: DocumentBuilderFactory creates parser instances
+- **UI Frameworks**: Widget factories create UI components
+- **Payment Processors**: Payment gateway factories create processor instances
+
 
 ## Specific misconceptions with corrections
 

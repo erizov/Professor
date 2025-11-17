@@ -161,21 +161,13 @@ Combine: [1, 2, 5, 8, 9]
 
 ## Real-World Applications
 
-- **Database Systems**: Employed in SQL ORDER BY operations for efficient query result sorting
-- **Operating Systems**: Process scheduling and file system organization
-- **Gaming**: Leaderboard ranking and score sorting
+- **Google Chrome**: Uses Quick Sort in V8 JavaScript engine for array sorting operations
+- **PostgreSQL**: Implements Quick Sort for ORDER BY queries when data fits in memory
+- **Java Standard Library**: Arrays.sort() uses Dual-Pivot Quick Sort (optimized variant)
+- **C++ STL**: std::sort() uses Introsort (hybrid of Quick Sort and Heap Sort)
+- **Python**: list.sort() uses Timsort (hybrid of Merge Sort and Insertion Sort)
+- **Apache Spark**: Uses Quick Sort for in-memory sorting of RDD partitions
 
-- **Standard library implementations (C++ std::sort, Java Arrays.sort)**
-- **Large datasets requiring efficient sorting**
-- **In-memory sorting operations**
-
-- **Standard library implementations (C++ std::sort, Java Arrays.sort)**
-- **Large datasets requiring efficient sorting**
-- **In-memory sorting operations**
-
-- **Standard library implementations (C++ std::sort, Java Arrays.sort)**
-- **Large datasets requiring efficient sorting**
-- **In-memory sorting operations**
 
 ## Specific misconceptions with corrections
 

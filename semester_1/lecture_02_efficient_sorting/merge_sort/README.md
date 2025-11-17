@@ -159,21 +159,13 @@ Merge:
 
 ## Real-World Applications
 
-- **External Sorting**: Sorting large files that don't fit in memory
-- **Version Control**: Git uses merge sort for three-way merges
-- **Inversion Counting**: Counting inversions in arrays (employed in recommendation systems)
+- **Git**: Uses Merge Sort for merging branches and commit history
+- **Apache Hadoop**: MapReduce uses Merge Sort for sorting intermediate key-value pairs
+- **Database Systems**: External sorting uses Merge Sort for large datasets that don't fit in memory
+- **Java Arrays.parallelSort()**: Uses parallel merge sort for multi-threaded sorting
+- **Facebook**: Uses merge sort variants in their data processing pipelines
+- **Amazon**: Uses merge sort for sorting product listings and search results
 
-- **External sorting (sorting data too large for memory)**
-- **Stable sorting requirements**
-- **Parallel processing implementations**
-
-- **External sorting (sorting data too large for memory)**
-- **Stable sorting requirements**
-- **Parallel processing implementations**
-
-- **External sorting (sorting data too large for memory)**
-- **Stable sorting requirements**
-- **Parallel processing implementations**
 
 ## Specific misconceptions with corrections
 

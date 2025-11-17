@@ -159,21 +159,13 @@ Step 3: Check remaining (index 3, value 7)
 
 ## Real-World Applications
 
-- **Search Engines**: Finding documents in sorted indexes
-- **Databases**: Index lookups in B-trees
-- **Debugging**: Binary search for finding bugs (git bisect)
+- **Google Search**: Uses binary search in search index lookups
+- **Database Indexes**: B-tree indexes use binary search for key lookups
+- **Git**: Uses binary search for finding commits by timestamp
+- **Python bisect module**: Provides binary search functionality for sorted lists
+- **Redis**: Uses binary search in sorted sets (ZSET) operations
+- **Elasticsearch**: Uses binary search in inverted index lookups
 
-- **Searching in sorted arrays**
-- **Finding insertion points**
-- **Range queries in databases**
-
-- **Searching in sorted arrays**
-- **Finding insertion points**
-- **Range queries in databases**
-
-- **Searching in sorted arrays**
-- **Finding insertion points**
-- **Range queries in databases**
 
 ## Specific misconceptions with corrections
 

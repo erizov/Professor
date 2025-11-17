@@ -124,9 +124,12 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Adapter is employed in production systems
-- **Capability Optimization**: Applied to improve structure efficiency
-- **Structure Design**: Integral part of scalable architecture patterns
+- **Enterprise Frameworks**: Spring Framework, .NET Core extensively use design patterns
+- **UI Frameworks**: React, Angular, Vue.js implement patterns for component management
+- **Game Development**: Patterns for game object management and behavior
+- **Web Development**: MVC, MVVM patterns in web applications
+- **Microservices**: Patterns for service communication and coordination
+
 
 ## Specific misconceptions with corrections
 
@@ -154,8 +157,45 @@ public class Service {
 
 ## Examples of Implementation
 
-This pattern/algorithm is implemented in the following frameworks and technologies:
+### Spring Framework
 
+```java
+// Spring Framework - Adapter Pattern
+@Component
+public class adapterService {
+    // Spring uses this pattern for dependency injection and bean management
+    @Autowired
+    private Dependency dependency;
+    
+    public void execute() {
+        // Implementation using adapter pattern
+    }
+}
+```
+
+**Purpose**: Spring Framework uses this pattern/algorithm for dependency injection, bean management, and enterprise application development.
+
+### .NET Framework
+
+```csharp
+// .NET Core - Adapter Pattern
+public class adapterService
+{
+    private readonly IDependency _dependency;
+    
+    public adapterService(IDependency dependency)
+    {
+        _dependency = dependency;
+    }
+    
+    public void Execute()
+    {
+        // Implementation using adapter pattern
+    }
+}
+```
+
+**Purpose**: .NET Framework implements this pattern/algorithm for service registration, dependency injection, and application architecture.
 ### Spring Framework
 
 ```java
@@ -266,6 +306,14 @@ services:
 ```
 
 **Purpose**: Docker uses this pattern for container orchestration and service management.
+
+
+## Related Algorithms
+
+- **Dependency Injection**: Modern alternative to many design patterns
+- **Service Locator**: Related pattern for accessing shared services
+- **Repository Pattern**: Data access pattern often used with other patterns
+
 
 ## Algorithm Steps
 

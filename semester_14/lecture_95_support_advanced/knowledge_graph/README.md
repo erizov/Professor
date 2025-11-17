@@ -119,9 +119,12 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Enterprise Applications**: Knowledge Graph is employed in production systems
-- **Performance Optimization**: Applied to improve structure efficiency
-- **Structure Design**: Integral part of scalable architecture patterns
+- **Social Networks**: Friend recommendations, shortest path between users
+- **Navigation Systems**: GPS routing and shortest path calculations
+- **Network Analysis**: Network topology analysis and routing
+- **Game AI**: Pathfinding in games and NPC movement
+- **Web Crawling**: Search engines use graph algorithms for web crawling
+
 
 ## Specific misconceptions with corrections
 

@@ -111,9 +111,13 @@ Test your understanding with these questions:
 
 ## Real-World Applications
 
-- **Web Servers**: Distributing HTTP requests across multiple servers
-- **API Gateways**: Routing traffic to backend services
-- **Database Clusters**: Distributing queries across database replicas
+- **AWS ELB (Elastic Load Balancer)**: Distributes traffic across EC2 instances
+- **Nginx**: Reverse proxy with load balancing capabilities
+- **Kubernetes**: Service load balancing across pods
+- **HAProxy**: High availability load balancer
+- **CloudFlare**: Global load balancing for websites
+- **Azure Load Balancer**: Distributes traffic in Azure cloud
+
 
 ## Specific misconceptions with corrections
 
