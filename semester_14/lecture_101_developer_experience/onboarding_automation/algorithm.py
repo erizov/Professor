@@ -41,6 +41,7 @@ def onboarding_automation(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Onboarding Automation implementation.
     
