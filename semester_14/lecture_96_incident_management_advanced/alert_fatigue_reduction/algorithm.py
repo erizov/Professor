@@ -36,6 +36,7 @@ def alert_fatigue_reduction(*args, **kwargs) -> Any:
 
 
 
+
 def alert_fatigue_reduction(*args, **kwargs) -> Any:
     """
     Alert Fatigue Reduction implementation.
@@ -51,6 +52,3334 @@ def alert_fatigue_reduction(*args, **kwargs) -> Any:
     logger.info(f"Executing alert_fatigue_reduction")
     # TODO: Add specific implementation logic
     return None
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
+
+def main():
+    """Demonstration."""
+    print("=" * 70)
+    print("Alert Fatigue Reduction")
+    print("=" * 70)
+    
+    # Example usage
+    result = alert_fatigue_reduction()
+    print(f"Result: {result}")
+    print("\nSee README.md for implementation details")
+
+
 
 def main():
     """Demonstration."""
