@@ -64,6 +64,16 @@
             border: none;
             cursor: pointer;
         }
+        .btn.secondary {
+            background: #0f172a;
+            margin-left: 0.5rem;
+        }
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+            margin-top: 0.75rem;
+        }
         .chart-container {
             position: relative;
             height: 300px;
@@ -109,22 +119,38 @@
                 <h2>Student Progress Report</h2>
                 <p>View individual student progress, completion rates, test scores, and recent activity.</p>
                 <input type="number" id="student-id" placeholder="Student ID" style="width: 100%; padding: 0.5rem;">
-                <button class="btn" onclick="loadStudentReport()">View Report</button>
+                <div class="btn-group">
+                    <button class="btn" onclick="loadStudentReport()">View Report</button>
+                    <button class="btn secondary" onclick="exportStudentReport('csv')">Export CSV</button>
+                    <button class="btn secondary" onclick="exportStudentReport('json')">Export JSON</button>
+                </div>
             </div>
             <div class="card">
                 <h2>Class Performance</h2>
                 <p>Analyze class-wide statistics, algorithm adoption, and difficulty metrics.</p>
-                <button class="btn" onclick="loadClassReport()">View Report</button>
+                <div class="btn-group">
+                    <button class="btn" onclick="loadClassReport()">View Report</button>
+                    <button class="btn secondary" onclick="downloadReport('class-performance', 'csv')">Export CSV</button>
+                    <button class="btn secondary" onclick="downloadReport('class-performance', 'json')">Export JSON</button>
+                </div>
             </div>
             <div class="card">
                 <h2>Algorithm Performance</h2>
                 <p>Compare execution time, memory usage, and language performance for benchmarked algorithms.</p>
-                <button class="btn" onclick="loadAlgorithmReport()">View Report</button>
+                <div class="btn-group">
+                    <button class="btn" onclick="loadAlgorithmReport()">View Report</button>
+                    <button class="btn secondary" onclick="downloadReport('algorithm-performance', 'csv')">Export CSV</button>
+                    <button class="btn secondary" onclick="downloadReport('algorithm-performance', 'json')">Export JSON</button>
+                </div>
             </div>
             <div class="card">
                 <h2>Content Quality</h2>
                 <p>Track documentation completeness, test coverage, and framework examples.</p>
-                <button class="btn" onclick="loadContentReport()">View Report</button>
+                <div class="btn-group">
+                    <button class="btn" onclick="loadContentReport()">View Report</button>
+                    <button class="btn secondary" onclick="downloadReport('content-quality', 'csv')">Export CSV</button>
+                    <button class="btn secondary" onclick="downloadReport('content-quality', 'json')">Export JSON</button>
+                </div>
             </div>
         </div>
 
@@ -190,6 +216,25 @@
             const data = await fetchJSON('/reports/usage-statistics');
             renderPopularAlgorithms(data.popular_algorithms);
             renderActivityChart(data.activity_over_time);
+        }
+
+        function downloadReport(type, format, params = {}) {
+            const qs = new URLSearchParams({ format });
+            Object.entries(params).forEach(([key, value]) => {
+                if (value !== undefined && value !== null && value !== '') {
+                    qs.append(key, value);
+                }
+            });
+            window.open(`/reports/export/${type}?${qs.toString()}`, '_blank');
+        }
+
+        function exportStudentReport(format) {
+            const studentId = document.getElementById('student-id').value;
+            if (!studentId) {
+                alert('Enter a student ID before exporting');
+                return;
+            }
+            downloadReport('student-progress', format, { student_id: studentId });
         }
 
         function renderPopularAlgorithms(algorithms) {

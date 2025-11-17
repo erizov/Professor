@@ -16,6 +16,40 @@
             background: #f5f5f5;
             color: #333;
         }
+        .role-banner {
+            margin: 1rem 2rem 0;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            background: #1f2937;
+            color: #f8fafc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .role-pill {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.3rem 0.8rem;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.15);
+            font-size: 0.9rem;
+            margin-left: 0.5rem;
+        }
+        .alert {
+            margin: 1rem 2rem;
+            padding: 0.9rem 1.2rem;
+            border-radius: 8px;
+            background: #fff7ed;
+            border: 1px solid #fdba74;
+            color: #7c2d12;
+            font-size: 0.95rem;
+        }
+        .alert.info {
+            background: #e0f2fe;
+            border-color: #38bdf8;
+            color: #0c4a6e;
+        }
         
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -138,8 +172,31 @@
             <p>Track your progress through the Algorithms Course</p>
         </div>
     </div>
+
+    <div class="role-banner">
+        <div>
+            <strong>{{ username or 'Guest' }}</strong>
+            <span class="role-pill">{{ user_role|default('reader')|title }}</span>
+        </div>
+        <div>
+            {% if read_only %}
+            <span class="role-pill">Read-only overview</span>
+            {% else %}
+            <span class="role-pill" style="background:#22c55e;">Interactive student mode</span>
+            {% endif %}
+        </div>
+    </div>
+    {% if not student_id %}
+    <div class="alert warning">
+        This dashboard needs a specific student context. Add <code>?student_id=&lt;student_id&gt;</code> to the URL or sign in with a student account.
+    </div>
+    {% elif read_only %}
+    <div class="alert info">
+        You are viewing this dashboard in read-only mode. Data entry and progress updates are disabled.
+    </div>
+    {% endif %}
     
-    <div class="container">
+    <div class="container" id="dashboard-sections">
         <div class="stats-grid" id="stats-grid">
             <div class="stat-card">
                 <div class="value" id="completed">-</div>
@@ -204,7 +261,9 @@
     </div>
     
     <script>
-        const studentId = '{{ student_id }}' || 'guest';
+        const studentId = '{{ student_id }}';
+        const readOnlyMode = {{ 'true' if read_only else 'false' }};
+        const hasStudentContext = Boolean(studentId);
         
         // Load progress summary
         async function loadProgress() {
@@ -354,16 +413,25 @@
         }
         
         // Initialize
-        loadProgress();
-        loadRecentActivity();
-        loadStatistics();
-        loadAchievements();
-        
-        // Refresh every 30 seconds
-        setInterval(() => {
+        if (hasStudentContext) {
             loadProgress();
             loadRecentActivity();
-        }, 30000);
+            loadStatistics();
+            loadAchievements();
+
+            // Refresh every 30 seconds
+            setInterval(() => {
+                loadProgress();
+                loadRecentActivity();
+            }, 30000);
+        } else {
+            console.info('Dashboard running in overview mode without student context.');
+            document.getElementById('stats-grid').innerHTML = `
+                <div class="stat-card">
+                    <h3>Read-only Overview</h3>
+                    <p>Provide a student identifier or sign in as a student to view personalized progress.</p>
+                </div>`;
+        }
     </script>
 </body>
 </html>

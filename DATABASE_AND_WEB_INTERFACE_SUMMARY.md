@@ -114,6 +114,30 @@ Successfully implemented a comprehensive database system and web interface for t
 - Framework tags
 - Preview modal with detailed information
 
+### Authentication & Role Management
+
+- Secure login experience (`/login`) powered by `web_interface/auth.py`
+- Session-backed RBAC with four personas:
+  - **Admin** – full system access plus account management and exports
+  - **Professor** – read-only dashboards and reporting tools
+  - **Student** – interactive progress dashboard with update APIs
+  - **Reader** – catalog-only access for lightweight evaluations
+- `database/setup_user_tables.py` seeds default users and builds user/session/audit tables
+- Every privileged action is written to `audit_log` with timestamps and IP metadata
+
+### Reporting Dashboards & Exports
+
+- **Admin portal** (`/admin`):
+  - Manage users, toggle roles, view status at a glance
+  - Inline activation/deactivation and role changes with audit logging
+- **Reports suite** (`/reports`):
+  - Student progress, class performance, algorithm benchmarks, content quality, usage analytics
+  - Chart.js visualizations for popular algorithms and daily active learners
+  - CSV/JSON export buttons for every report
+- REST exports: `GET /reports/export/<type>?format=csv|json[&student_id=...]`
+  - Supported types: `student-progress`, `class-performance`, `algorithm-performance`, `content-quality`, `usage-statistics`
+  - Student exports require `student_id` (admins/professors supply the ID, students get their own)
+
 ---
 
 ## Usage
@@ -145,6 +169,23 @@ python app.py
 
 Then open: `http://localhost:5000`
 
+### Authentication & Default Accounts
+
+The setup script provisions four demo accounts (update passwords for production):
+
+| Role      | Username   | Password   | Capabilities                              |
+|-----------|------------|------------|-------------------------------------------|
+| Admin     | `admin`    | `admin123` | User management, reporting, exports       |
+| Professor | `professor`| `prof123`  | Read-only dashboards + data exports       |
+| Student   | `student`  | `student123` | Full dashboard with progress updates   |
+| Reader    | `reader`   | `reader123` | Catalog browsing only                    |
+
+Key routes:
+- `GET /login` – Sign-in form
+- `GET /admin` – Admin console (admin/professor)
+- `GET /reports` – Reporting suite (admin/professor)
+- `GET /dashboard` – Student progress dashboard (student accounts)
+
 ---
 
 ## Features
@@ -174,6 +215,18 @@ Then open: `http://localhost:5000`
 - Total test files
 - Total framework examples
 - Total semesters
+
+### Authentication & Roles
+- Role-aware navigation for admin, professor, student, and reader personas
+- Session-backed permissions guard all dashboards and APIs
+- Admins/professors manage users without leaving the browser
+- Students receive dedicated interactive dashboards; others stay read-only
+
+### Reporting & Exports
+- Dedicated reports hub with Chart.js visualizations
+- One-click CSV/JSON export buttons for every report
+- REST exports: `/reports/export/<type>?format=csv|json`
+- Instructor dashboards highlight progress, content quality, and usage trends
 
 ---
 

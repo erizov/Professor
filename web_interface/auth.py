@@ -164,6 +164,10 @@ def login():
     session['full_name'] = user['full_name']
     session['role'] = user['role']
     session['session_token'] = session_token
+    if user['role'] == 'student':
+        session['student_id'] = str(user['id'])
+    else:
+        session.pop('student_id', None)
     
     # Log audit
     log_audit(user['id'], 'login', details='Successful login',

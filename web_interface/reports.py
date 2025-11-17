@@ -5,11 +5,9 @@ Report generation system based on database usage cases.
 Generates various reports for different user roles.
 """
 
-from flask import Blueprint, request, jsonify, render_template
-from functools import wraps
+from flask import Blueprint, request, jsonify, Response
 import sqlite3
 from pathlib import Path
-from datetime import datetime, timedelta
 import json
 import csv
 import io
@@ -29,23 +27,21 @@ def get_db_connection():
     return conn
 
 
-@reports_bp.route('/student-progress/<student_id>')
-@require_role('admin', 'professor', 'student')
-def student_progress_report(student_id):
-    """Generate student progress report."""
+def fetch_student_progress(student_id: int):
+    """Fetch student progress data."""
     conn = get_db_connection()
-    
-    # Get student info
-    student = conn.execute('''
+    student = conn.execute(
+        '''
         SELECT * FROM users WHERE id = ? AND role = 'student'
-    ''', (student_id,)).fetchone()
-    
+        ''',
+        (student_id,),
+    ).fetchone()
     if not student:
         conn.close()
-        return jsonify({'error': 'Student not found'}), 404
-    
-    # Get progress summary
-    progress = conn.execute('''
+        return None
+
+    progress = conn.execute(
+        '''
         SELECT 
             COUNT(*) as total,
             SUM(CASE WHEN status = 'completed' THEN 1 ELSE 0 END) as completed,
@@ -55,10 +51,12 @@ def student_progress_report(student_id):
             SUM(time_spent_minutes) as total_time
         FROM algorithm_progress
         WHERE student_id = ?
-    ''', (student_id,)).fetchone()
-    
-    # Get progress by category
-    by_category = conn.execute('''
+        ''',
+        (student_id,),
+    ).fetchone()
+
+    by_category = conn.execute(
+        '''
         SELECT 
             a.category,
             COUNT(*) as total,
@@ -67,10 +65,12 @@ def student_progress_report(student_id):
         LEFT JOIN algorithm_progress ap ON a.id = ap.algorithm_id AND ap.student_id = ?
         GROUP BY a.category
         ORDER BY a.category
-    ''', (student_id,)).fetchall()
-    
-    # Get test scores
-    test_scores = conn.execute('''
+        ''',
+        (student_id,),
+    ).fetchall()
+
+    test_scores = conn.execute(
+        '''
         SELECT 
             a.name,
             AVG(tr.test_score) as avg_score,
@@ -81,36 +81,45 @@ def student_progress_report(student_id):
         GROUP BY a.id
         ORDER BY avg_score DESC
         LIMIT 20
-    ''', (student_id,)).fetchall()
-    
-    # Get recent activity
-    recent = conn.execute('''
+        ''',
+        (student_id,),
+    ).fetchall()
+
+    recent = conn.execute(
+        '''
         SELECT a.name, ap.status, ap.last_accessed
         FROM algorithm_progress ap
         JOIN algorithms a ON ap.algorithm_id = a.id
         WHERE ap.student_id = ?
         ORDER BY ap.last_accessed DESC
         LIMIT 10
-    ''', (student_id,)).fetchall()
-    
+        ''',
+        (student_id,),
+    ).fetchall()
+
     conn.close()
-    
-    return jsonify({
+    return {
         'student': dict(student),
         'progress': dict(progress),
         'by_category': [dict(row) for row in by_category],
         'test_scores': [dict(row) for row in test_scores],
-        'recent_activity': [dict(row) for row in recent]
-    })
+        'recent_activity': [dict(row) for row in recent],
+    }
 
 
-@reports_bp.route('/class-performance')
-@require_role('admin', 'professor')
-def class_performance_report():
-    """Generate class performance report."""
+@reports_bp.route('/student-progress/<student_id>')
+@require_role('admin', 'professor', 'student')
+def student_progress_report(student_id):
+    """Generate student progress report."""
+    data = fetch_student_progress(student_id)
+    if not data:
+        return jsonify({'error': 'Student not found'}), 404
+    return jsonify(data)
+
+
+def fetch_class_performance():
+    """Fetch class performance report data."""
     conn = get_db_connection()
-    
-    # Overall statistics
     stats = conn.execute('''
         SELECT 
             COUNT(DISTINCT u.id) as total_students,
@@ -122,8 +131,7 @@ def class_performance_report():
         LEFT JOIN test_results tr ON u.id = tr.student_id
         WHERE u.role = 'student'
     ''').fetchone()
-    
-    # Progress by algorithm
+
     algorithm_progress = conn.execute('''
         SELECT 
             a.name,
@@ -140,8 +148,7 @@ def class_performance_report():
         ORDER BY completions DESC
         LIMIT 50
     ''').fetchall()
-    
-    # Difficulty analysis
+
     difficulty = conn.execute('''
         SELECT 
             a.name,
@@ -157,23 +164,24 @@ def class_performance_report():
         ORDER BY avg_attempts DESC
         LIMIT 20
     ''').fetchall()
-    
     conn.close()
-    
-    return jsonify({
+    return {
         'statistics': dict(stats),
         'algorithm_progress': [dict(row) for row in algorithm_progress],
-        'difficult_algorithms': [dict(row) for row in difficulty]
-    })
+        'difficult_algorithms': [dict(row) for row in difficulty],
+    }
 
 
-@reports_bp.route('/algorithm-performance')
+@reports_bp.route('/class-performance')
 @require_role('admin', 'professor')
-def algorithm_performance_report():
-    """Generate algorithm performance benchmark report."""
+def class_performance_report():
+    """Generate class performance report."""
+    return jsonify(fetch_class_performance())
+
+
+def fetch_algorithm_performance():
+    """Fetch algorithm performance benchmark data."""
     conn = get_db_connection()
-    
-    # Performance metrics
     performance = conn.execute('''
         SELECT 
             a.name,
@@ -189,8 +197,7 @@ def algorithm_performance_report():
         GROUP BY a.id, pm.input_size, pm.language
         ORDER BY a.name, pm.input_size
     ''').fetchall()
-    
-    # Comparison by language
+
     language_comparison = conn.execute('''
         SELECT 
             a.name,
@@ -203,22 +210,23 @@ def algorithm_performance_report():
         GROUP BY a.id, pm.language
         ORDER BY a.name, pm.language
     ''').fetchall()
-    
     conn.close()
-    
-    return jsonify({
+    return {
         'performance_metrics': [dict(row) for row in performance],
-        'language_comparison': [dict(row) for row in language_comparison]
-    })
+        'language_comparison': [dict(row) for row in language_comparison],
+    }
 
 
-@reports_bp.route('/content-quality')
+@reports_bp.route('/algorithm-performance')
 @require_role('admin', 'professor')
-def content_quality_report():
-    """Generate content quality report."""
+def algorithm_performance_report():
+    """Generate algorithm performance benchmark report."""
+    return jsonify(fetch_algorithm_performance())
+
+
+def fetch_content_quality():
+    """Fetch content quality data."""
     conn = get_db_connection()
-    
-    # Algorithms without tests
     no_tests = conn.execute('''
         SELECT a.name, a.category, a.semester_number
         FROM algorithms a
@@ -226,8 +234,7 @@ def content_quality_report():
         WHERE tf.id IS NULL
         ORDER BY a.semester_number, a.category
     ''').fetchall()
-    
-    # Algorithms without framework examples
+
     no_frameworks = conn.execute('''
         SELECT a.name, a.category
         FROM algorithms a
@@ -235,8 +242,7 @@ def content_quality_report():
         WHERE fw.id IS NULL
         ORDER BY a.category
     ''').fetchall()
-    
-    # Algorithms with incomplete files
+
     incomplete = conn.execute('''
         SELECT 
             a.name,
@@ -249,8 +255,7 @@ def content_quality_report():
         HAVING has_python = 0 OR has_java = 0 OR has_readme = 0
         ORDER BY a.name
     ''').fetchall()
-    
-    # Overall statistics
+
     stats = conn.execute('''
         SELECT 
             COUNT(DISTINCT a.id) as total_algorithms,
@@ -263,24 +268,25 @@ def content_quality_report():
         LEFT JOIN framework_usage fw ON a.id = fw.algorithm_id
         LEFT JOIN algorithm_files af ON a.id = af.algorithm_id
     ''').fetchone()
-    
     conn.close()
-    
-    return jsonify({
+    return {
         'statistics': dict(stats),
         'algorithms_without_tests': [dict(row) for row in no_tests],
         'algorithms_without_frameworks': [dict(row) for row in no_frameworks],
-        'incomplete_algorithms': [dict(row) for row in incomplete]
-    })
+        'incomplete_algorithms': [dict(row) for row in incomplete],
+    }
 
 
-@reports_bp.route('/usage-statistics')
+@reports_bp.route('/content-quality')
 @require_role('admin', 'professor')
-def usage_statistics_report():
-    """Generate usage statistics report."""
+def content_quality_report():
+    """Generate content quality report."""
+    return jsonify(fetch_content_quality())
+
+
+def fetch_usage_statistics():
+    """Fetch usage statistics report."""
     conn = get_db_connection()
-    
-    # Algorithm popularity
     popularity = conn.execute('''
         SELECT 
             a.name,
@@ -293,8 +299,7 @@ def usage_statistics_report():
         ORDER BY student_count DESC
         LIMIT 30
     ''').fetchall()
-    
-    # Activity over time
+
     activity = conn.execute('''
         SELECT 
             DATE(ap.last_accessed) as date,
@@ -305,8 +310,7 @@ def usage_statistics_report():
         GROUP BY DATE(ap.last_accessed)
         ORDER BY date DESC
     ''').fetchall()
-    
-    # Category usage
+
     category_usage = conn.execute('''
         SELECT 
             a.category,
@@ -318,35 +322,108 @@ def usage_statistics_report():
         GROUP BY a.category
         ORDER BY students DESC
     ''').fetchall()
-    
     conn.close()
-    
-    return jsonify({
+    return {
         'popular_algorithms': [dict(row) for row in popularity],
         'activity_over_time': [dict(row) for row in activity],
-        'category_usage': [dict(row) for row in category_usage]
-    })
+        'category_usage': [dict(row) for row in category_usage],
+    }
+
+
+@reports_bp.route('/usage-statistics')
+@require_role('admin', 'professor')
+def usage_statistics_report():
+    """Generate usage statistics report."""
+    return jsonify(fetch_usage_statistics())
+
+
+def generate_csv(sections):
+    """Generate CSV string with section headers."""
+    output = io.StringIO()
+    writer = csv.writer(output)
+    for section in sections:
+        title = section.get('title')
+        rows = section.get('rows', [])
+        if not rows:
+            continue
+        if title:
+            writer.writerow([title])
+        headers = list(rows[0].keys())
+        writer.writerow(headers)
+        for row in rows:
+            writer.writerow([row.get(h, '') for h in headers])
+        writer.writerow([])
+    return output.getvalue()
 
 
 @reports_bp.route('/export/<report_type>')
 @require_role('admin', 'professor')
 def export_report(report_type):
-    """Export report as CSV."""
-    # Get report data based on type
+    """Export report as CSV or JSON."""
+    fmt = request.args.get('format', 'csv').lower()
+    filename = f'{report_type}.{"json" if fmt == "json" else "csv"}'
+    data = None
+    sections = []
+
     if report_type == 'student-progress':
-        data = student_progress_report(request.args.get('student_id'))
-        # Convert to CSV format
-        # ... implementation
-        pass
-    
-    # Return CSV file
-    output = io.StringIO()
-    writer = csv.writer(output)
-    # Write CSV data
-    # ...
-    
-    return output.getvalue(), 200, {
-        'Content-Type': 'text/csv',
-        'Content-Disposition': f'attachment; filename={report_type}.csv'
-    }
+        student_id = request.args.get('student_id')
+        if not student_id:
+            return jsonify({'error': 'student_id required'}), 400
+        try:
+            student_id = int(student_id)
+        except ValueError:
+            return jsonify({'error': 'Invalid student_id'}), 400
+        data = fetch_student_progress(student_id)
+        if not data:
+            return jsonify({'error': 'Student not found'}), 404
+        sections = [
+            {'title': 'Summary', 'rows': [data['progress']]},
+            {'title': 'Progress By Category', 'rows': data['by_category']},
+            {'title': 'Test Scores', 'rows': data['test_scores']},
+            {'title': 'Recent Activity', 'rows': data['recent_activity']},
+        ]
+    elif report_type == 'class-performance':
+        data = fetch_class_performance()
+        sections = [
+            {'title': 'Class Statistics', 'rows': [data['statistics']]},
+            {'title': 'Algorithm Progress', 'rows': data['algorithm_progress']},
+            {'title': 'Difficult Algorithms', 'rows': data['difficult_algorithms']},
+        ]
+    elif report_type == 'algorithm-performance':
+        data = fetch_algorithm_performance()
+        sections = [
+            {'title': 'Performance Metrics', 'rows': data['performance_metrics']},
+            {'title': 'Language Comparison', 'rows': data['language_comparison']},
+        ]
+    elif report_type == 'content-quality':
+        data = fetch_content_quality()
+        sections = [
+            {'title': 'Overall Statistics', 'rows': [data['statistics']]},
+            {'title': 'Without Tests', 'rows': data['algorithms_without_tests']},
+            {'title': 'Without Frameworks', 'rows': data['algorithms_without_frameworks']},
+            {'title': 'Incomplete Files', 'rows': data['incomplete_algorithms']},
+        ]
+    elif report_type == 'usage-statistics':
+        data = fetch_usage_statistics()
+        sections = [
+            {'title': 'Popular Algorithms', 'rows': data['popular_algorithms']},
+            {'title': 'Recent Activity', 'rows': data['activity_over_time']},
+            {'title': 'Category Usage', 'rows': data['category_usage']},
+        ]
+    else:
+        return jsonify({'error': 'Unknown report type'}), 400
+
+    if fmt == 'json':
+        return Response(
+            json.dumps(data, indent=2),
+            mimetype='application/json',
+            headers={'Content-Disposition': f'attachment; filename={filename}'},
+        )
+
+    csv_data = generate_csv(sections)
+    return Response(
+        csv_data,
+        mimetype='text/csv',
+        headers={'Content-Disposition': f'attachment; filename={filename}'},
+    )
 
