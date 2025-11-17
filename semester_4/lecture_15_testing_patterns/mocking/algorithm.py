@@ -27,6 +27,7 @@ class PaymentGateway(ABC):
     def process_payment(self, amount: float, card_number: str) -> bool:
         """Process payment."""
         
+    
     """
     Mocking implementation.
     

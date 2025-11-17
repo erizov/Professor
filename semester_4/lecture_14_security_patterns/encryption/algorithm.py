@@ -26,6 +26,7 @@ class EncryptionAlgorithm(ABC):
     def encrypt(self, plaintext: bytes, key: bytes) -> Tuple[bytes, bytes]:
         """Encrypt plaintext."""
         
+    
     """
     Encryption implementation.
     

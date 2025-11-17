@@ -69,6 +69,7 @@ class CommandHandler:
     def handle_create_user(self, command: CreateUserCommand) -> int:
         """Handle create user command."""
         
+    
     """
     Cqrs implementation.
     

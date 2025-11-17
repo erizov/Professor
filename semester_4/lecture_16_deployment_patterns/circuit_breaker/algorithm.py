@@ -48,6 +48,7 @@ class CircuitBreaker:
             config: Circuit breaker configuration
         """
         
+    
     """
     Circuit Breaker implementation.
     

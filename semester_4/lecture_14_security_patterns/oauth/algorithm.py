@@ -69,6 +69,7 @@ class AuthorizationServer:
     def register_client(self, client: Client) -> None:
         """Register OAuth client."""
         
+    
     """
     Oauth implementation.
     
