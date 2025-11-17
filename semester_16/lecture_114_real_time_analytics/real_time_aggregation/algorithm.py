@@ -41,6 +41,7 @@ def real_time_aggregation(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Real Time Aggregation implementation.
     

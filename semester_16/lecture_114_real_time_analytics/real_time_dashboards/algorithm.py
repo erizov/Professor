@@ -41,6 +41,7 @@ def real_time_dashboards(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Real Time Dashboards implementation.
     

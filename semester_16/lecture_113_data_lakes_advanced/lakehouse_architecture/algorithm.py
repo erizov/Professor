@@ -41,6 +41,7 @@ def lakehouse_architecture(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Lakehouse Architecture implementation.
     

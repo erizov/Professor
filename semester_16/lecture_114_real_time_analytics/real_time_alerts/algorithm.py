@@ -41,6 +41,7 @@ def real_time_alerts(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Real Time Alerts implementation.
     
