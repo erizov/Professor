@@ -41,6 +41,7 @@ def knowledge_extraction(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Knowledge Extraction implementation.
     

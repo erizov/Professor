@@ -41,6 +41,7 @@ def knowledge_validation(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Knowledge Validation implementation.
     

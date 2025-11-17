@@ -41,6 +41,7 @@ def community_platforms(*args, **kwargs) -> Any:
 
 
 
+    
     """
     Community Platforms implementation.
     
