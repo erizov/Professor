@@ -25,6 +25,7 @@ class Iterator(ABC):
     def has_next(self) -> bool:
         """Check if there are more elements."""
         
+    
     """
     Iterator implementation.
     

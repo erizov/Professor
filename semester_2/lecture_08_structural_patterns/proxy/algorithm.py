@@ -25,6 +25,7 @@ class Image(ABC):
     def display(self) -> None:
         """Display image."""
         
+    
     """
     Proxy implementation.
     

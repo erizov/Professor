@@ -28,6 +28,7 @@ class Handler(ABC):
     def set_next(self, handler: 'Handler') -> 'Handler':
         """Set next handler in chain."""
         
+    
     """
     Chain Of Responsibility implementation.
     

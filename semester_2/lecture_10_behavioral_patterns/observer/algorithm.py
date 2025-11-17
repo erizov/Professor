@@ -26,6 +26,7 @@ class Observer(ABC):
     def update(self, data: Any) -> None:
         """Called when subject notifies observers."""
         
+    
     """
     Observer pattern implementation.
     """

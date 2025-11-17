@@ -24,6 +24,7 @@ class BadAreaCalculator:
     def calculate_area(self, shape: dict) -> float:
         """Calculate area - requires modification for new shapes."""
         
+    
     """
     Open Closed implementation.
     

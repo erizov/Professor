@@ -27,6 +27,7 @@ class PaymentStrategy(ABC):
     def pay(self, amount: float) -> bool:
         """Process payment."""
         
+    
     """
     Strategy pattern implementation.
     """

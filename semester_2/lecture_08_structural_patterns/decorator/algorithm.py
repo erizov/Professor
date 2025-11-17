@@ -24,6 +24,7 @@ class Coffee(ABC):
     def get_description(self) -> str:
         """Get coffee description."""
         
+    
     """
     Decorator implementation.
     

@@ -26,6 +26,7 @@ class SortingStrategy(ABC):
     def sort(self, data: List[int]) -> List[int]:
         """Sort the data."""
         
+    
     """
     Strategy pattern implementation.
     """

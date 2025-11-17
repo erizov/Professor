@@ -25,6 +25,7 @@ class Command(ABC):
     def execute(self) -> None:
         """Execute command."""
         
+    
     """
     Command implementation.
     
