@@ -42,6 +42,7 @@ def quantum_resistant(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Quantum Resistant implementation.
     

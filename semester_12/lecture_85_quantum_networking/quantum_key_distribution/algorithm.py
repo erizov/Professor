@@ -42,6 +42,7 @@ def quantum_key_distribution(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Quantum Key Distribution implementation.
     
