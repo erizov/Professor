@@ -36,6 +36,9 @@ This repository contains a **complete 16-semester course** (8 undergraduate + 8 
 - ✅ **Spaced repetition system** for long-term retention
 - ✅ **Gamification system** with badges, points, and challenges
 - ✅ **Client-ready templates** for professional services
+- ✅ **Interactive HTML textbook** with search and filters
+- ✅ **Table of contents** with multiple navigation views
+- ✅ **Bidirectional sync** for amendment files
 
 ## 🎯 Current Status
 
@@ -120,6 +123,66 @@ python app.py
 
 # Open browser to http://localhost:5000
 ```
+
+### 📚 Interactive Textbook
+
+The comprehensive textbook includes search and filter functionality:
+
+**To regenerate TOC:**
+```bash
+python scripts/generate_textbook_toc.py
+```
+
+**To regenerate interactive HTML:**
+```bash
+python scripts/generate_interactive_textbook.py
+```
+
+**To use the interactive textbook:**
+1. Open `COMPREHENSIVE_COURSE_TEXTBOOK.html` in your web browser
+2. Use the search box to find algorithms by name
+3. Use the dropdown filters to narrow down by semester or category
+4. Check/uncheck language or difficulty boxes to filter
+5. The results counter shows how many algorithms match your criteria
+6. Click "Clear All Filters" to reset
+
+The interactive textbook features:
+- 🔍 **Search by Name**: Real-time search as you type
+- 📅 **Filter by Semester**: Select specific semesters (1-16)
+- 🏷️ **Filter by Category**: Sort by algorithm type (Sorting, Searching, etc.)
+- 💻 **Filter by Language**: Python, Java, SQL
+- 📊 **Filter by Difficulty**: Undergraduate or Graduate level
+
+See [scripts/TEXTBOOK_FEATURES_README.md](scripts/TEXTBOOK_FEATURES_README.md) for detailed documentation.
+
+### 📝 Amendment Files (Bidirectional Sync)
+
+The following amendment files are bidirectionally synchronized with the comprehensive textbook:
+
+- **ASSESSMENT_FRAMEWORK.md** - Comprehensive evaluation system
+- **CLIENT_READY_TEMPLATES.md** - Professional service templates
+- **CODE_OF_CONDUCT.md** - Community guidelines
+- **COLLABORATION_TOOLS.md** - Collaboration and communication tools
+- **GAMIFICATION_SYSTEM.md** - Gamification and engagement system
+- **LEARNING_PATHS.md** - Learning path guides
+- **METACOGNITIVE_STRATEGIES.md** - Learning strategies
+- **MLOPS_INTEGRATION_GUIDE.md** - MLOps integration guide
+- **STRATEGIC_DOCUMENTATION.md** - Documentation strategies
+- **TEACHING_RESOURCES.md** - Teaching resources and materials
+
+**To sync amendment files with textbook:**
+```bash
+# Sync from amendment files to textbook (default)
+python scripts/sync_amendments_bidirectional.py --sync-to-textbook
+
+# Sync from textbook to amendment files
+python scripts/sync_amendments_bidirectional.py --sync-from-textbook
+
+# Sync in both directions
+python scripts/sync_amendments_bidirectional.py --sync-both
+```
+
+**Note**: Changes to either the amendment files or the textbook sync sections will be reflected in both locations. See [scripts/AMENDMENT_SYNC_README.md](scripts/AMENDMENT_SYNC_README.md) for detailed documentation.
 
 ## 📖 Course Structure
 

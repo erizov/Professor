@@ -746,9 +746,21 @@ When generating the comprehensive textbook:
    - Maintain hierarchy (Semester → Lecture → Algorithm)
    - Preserve code blocks and formatting
    - Include all sections from each README
-5. **Add table of contents** at the beginning
-6. **Add course statistics** at the end
-7. **Generate both Markdown and HTML** versions
+5. **Add table of contents** at the beginning (use `scripts/generate_textbook_toc.py`)
+6. **Sync code from algorithm files** (use `scripts/sync_code_to_textbook.py`)
+7. **Sync amendment files** (use `scripts/sync_amendments_bidirectional.py`)
+8. **Add course statistics** at the end
+9. **Generate both Markdown and HTML** versions:
+   - Markdown: `COMPREHENSIVE_COURSE_TEXTBOOK.md`
+   - Interactive HTML: `scripts/generate_interactive_textbook.py` (includes search and filters)
+10. **Generate PDF** (optional, use `scripts/generate_comprehensive_pdf.py`)
+
+### Scripts Available:
+- `scripts/generate_textbook_toc.py` - Generate/update table of contents
+- `scripts/sync_code_to_textbook.py` - One-directional sync: algorithm files → textbook
+- `scripts/sync_amendments_bidirectional.py` - Bidirectional sync: amendment files ↔ textbook
+- `scripts/generate_interactive_textbook.py` - Generate interactive HTML with search/filters
+- `scripts/generate_comprehensive_pdf.py` - Generate PDF version
 
 ---
 
@@ -857,10 +869,36 @@ When generating the comprehensive textbook:
 - ✅ Admin dashboard for user management
 
 ### Comprehensive Textbook (Updated ✅)
-- ✅ COMPREHENSIVE_COURSE_TEXTBOOK.md generated (5.1 MB)
-- ✅ COMPREHENSIVE_COURSE_TEXTBOOK.html generated
-- ✅ All 693 algorithms included
+- ✅ COMPREHENSIVE_COURSE_TEXTBOOK.md generated (5.1 MB+)
+- ✅ COMPREHENSIVE_COURSE_TEXTBOOK.html generated with interactive search and filters
+- ✅ All 693+ algorithms included
 - ✅ Updated with Phase 1 improvements
+- ✅ Table of Contents (TOC) with multiple navigation views:
+  - Algorithms by Semester
+  - Algorithms by Category
+  - Algorithms by Language
+  - Algorithms by Difficulty
+  - Full Algorithm List
+- ✅ Interactive HTML version with:
+  - Real-time search by algorithm name
+  - Filter by semester (1-16)
+  - Filter by category/type
+  - Filter by programming language (Python, Java, SQL)
+  - Filter by difficulty (Undergraduate/Graduate)
+  - Results counter
+- ✅ Bidirectional sync for amendment files:
+  - ASSESSMENT_FRAMEWORK.md
+  - CLIENT_READY_TEMPLATES.md
+  - CODE_OF_CONDUCT.md
+  - COLLABORATION_TOOLS.md
+  - GAMIFICATION_SYSTEM.md
+  - LEARNING_PATHS.md
+  - METACOGNITIVE_STRATEGIES.md
+  - MLOPS_INTEGRATION_GUIDE.md
+  - STRATEGIC_DOCUMENTATION.md
+  - TEACHING_RESOURCES.md
+- ✅ One-directional code sync from algorithm files to textbook
+- ✅ PDF generation script updated to use synced content
 
 ### Remaining Work
 - ⏳ Complete algorithm-specific logic in template implementations
