@@ -27,6 +27,7 @@ class SortingStrategy(ABC):
         """Sort the data."""
         
     
+    
     """
     Strategy pattern implementation.
     """

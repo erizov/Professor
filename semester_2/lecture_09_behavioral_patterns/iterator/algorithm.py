@@ -26,6 +26,7 @@ class Iterator(ABC):
         """Check if there are more elements."""
         
     
+    
     """
     Iterator implementation.
     

@@ -25,6 +25,7 @@ class BadAreaCalculator:
         """Calculate area - requires modification for new shapes."""
         
     
+    
     """
     Open Closed implementation.
     

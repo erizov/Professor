@@ -31,6 +31,7 @@ def adapter(*args, **kwargs) -> Any:
     
 
     
+    
     """
     Adapter implementation.
     

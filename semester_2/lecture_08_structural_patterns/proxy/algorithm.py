@@ -26,6 +26,7 @@ class Image(ABC):
         """Display image."""
         
     
+    
     """
     Proxy implementation.
     

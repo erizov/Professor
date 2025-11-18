@@ -26,6 +26,7 @@ class Command(ABC):
         """Execute command."""
         
     
+    
     """
     Command implementation.
     

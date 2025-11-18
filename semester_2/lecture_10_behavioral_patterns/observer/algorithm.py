@@ -27,6 +27,7 @@ class Observer(ABC):
         """Called when subject notifies observers."""
         
     
+    
     """
     Observer pattern implementation.
     """

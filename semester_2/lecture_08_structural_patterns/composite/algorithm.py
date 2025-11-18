@@ -31,6 +31,7 @@ def composite(*args, **kwargs) -> Any:
     
 
     
+    
     """
     Composite implementation.
     

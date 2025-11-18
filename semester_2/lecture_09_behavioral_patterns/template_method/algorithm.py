@@ -31,6 +31,7 @@ def template_method(*args, **kwargs) -> Any:
     
 
     
+    
     """
     Template Method implementation.
     

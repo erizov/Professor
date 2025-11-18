@@ -29,6 +29,7 @@ class Handler(ABC):
         """Set next handler in chain."""
         
     
+    
     """
     Chain Of Responsibility implementation.
     
