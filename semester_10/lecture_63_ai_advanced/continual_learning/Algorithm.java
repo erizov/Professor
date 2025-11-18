@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object add_task(String task_id, List<Object> task_data) {
         logger.info("Executing add_task");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -47,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_task("", null);
+        Object result = algo.add_task("", new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

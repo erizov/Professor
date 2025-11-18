@@ -38,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        List[int] result = algo.tokenize("");
+        int result = algo.tokenize("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -25,7 +25,7 @@ public class Algorithm {
      */
     public boolean write(String key, Object value) {
         logger.info("Executing write");
-        return null;
+        return false;
     }
 
     /**
@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.set_consistency_level("");
+        Object result = algo.set_consistency_level("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

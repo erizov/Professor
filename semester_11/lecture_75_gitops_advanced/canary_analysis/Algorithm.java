@@ -25,8 +25,7 @@ public class Algorithm {
      */
     public Map<String, Object> compare_metrics() {
         logger.info("Executing compare_metrics");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -34,7 +33,7 @@ public class Algorithm {
      */
     public boolean should_rollback(Object threshold) {
         logger.info("Executing should_rollback");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -47,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_metric("", "", null);
+        Object result = algo.add_metric("", "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

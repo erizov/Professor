@@ -26,10 +26,8 @@ public class Algorithm {
      */
     public String generate_authorization_code(String client_id, String user_id) {
         logger.info("Executing generate_authorization_code");
-        long currentTime = System.currentTimeMillis();
         long timestamp = System.currentTimeMillis();
-        String shareId = "SHARE-" + timestamp;
-        return "";
+        return "SHARE-" + timestamp;
     }
 
     /**
@@ -37,10 +35,8 @@ public class Algorithm {
      */
     public String exchange_code_for_token(String code, String client_id, String client_secret) {
         logger.info("Executing exchange_code_for_token");
-        long currentTime = System.currentTimeMillis();
         long timestamp = System.currentTimeMillis();
-        String shareId = "SHARE-" + timestamp;
-        return "";
+        return "SHARE-" + timestamp;
     }
 
     /**
@@ -48,7 +44,7 @@ public class Algorithm {
      */
     public Map<String, Object> validate_token(String token) {
         logger.info("Executing validate_token");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         return null;
     }
 
@@ -62,7 +58,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_client("", "", "");
+        Object result = algo.register_client("", "", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

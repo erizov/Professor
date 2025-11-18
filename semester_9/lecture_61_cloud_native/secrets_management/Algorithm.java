@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public String retrieve_secret(String secret_id, String requester) {
         logger.info("Executing retrieve_secret");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
         return result;
     }
@@ -41,7 +41,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.store_secret("", "", null);
+        Object result = algo.store_secret("", "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

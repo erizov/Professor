@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public Object invoke(String function_id, Object event) {
         logger.info("Executing invoke");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
         return result;
     }
@@ -41,7 +41,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.deploy_function("", "", "");
+        Object result = algo.deploy_function("", "", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -25,8 +25,7 @@ public class Algorithm {
      */
     public String action(String message) {
         logger.info("Executing action");
-        String result = "Receiver action: " + message + "";
-        return "";
+        return null;
     }
 
     /**
@@ -63,7 +62,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.execute();
+        Object result = algo.execute();
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public boolean _strong_consistency(Object operation) {
         logger.info("Executing _strong_consistency");
-        return null;
+        return false;
     }
 
     /**
@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public boolean _eventual_consistency(Object operation) {
         logger.info("Executing _eventual_consistency");
-        return null;
+        return false;
     }
 
     /**
@@ -42,7 +42,7 @@ public class Algorithm {
      */
     public boolean _causal_consistency(Object operation) {
         logger.info("Executing _causal_consistency");
-        return null;
+        return false;
     }
 
     /**
@@ -50,7 +50,7 @@ public class Algorithm {
      */
     public boolean _session_consistency(Object operation) {
         logger.info("Executing _session_consistency");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -63,7 +63,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.implement_model("", null);
+        Object result = algo.implement_model("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

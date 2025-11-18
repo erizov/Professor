@@ -54,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        tuple result = algo.get_state_key(null);
+        Object result = algo.get_state_key(new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

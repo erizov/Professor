@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public boolean promote_canary(String deployment_id) {
         logger.info("Executing promote_canary");
-        return null;
+        return false;
     }
 
     /**
@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public boolean rollback(String deployment_id) {
         logger.info("Executing rollback");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.deploy_canary("", "", null);
+        Object result = algo.deploy_canary("", "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

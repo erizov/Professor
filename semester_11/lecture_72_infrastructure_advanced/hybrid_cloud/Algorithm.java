@@ -35,7 +35,7 @@ public class Algorithm {
      */
     public boolean migrate_workload(String workload_id, String target_cloud) {
         logger.info("Executing migrate_workload");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -48,7 +48,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_cloud("", "", null);
+        Object result = algo.register_cloud("", "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -25,7 +25,7 @@ public class Algorithm {
      */
     public boolean validate(String user) {
         logger.info("Executing validate");
-        return null;
+        return false;
     }
 
     /**
@@ -46,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        dict result = algo.get_user("");
+        Object result = algo.get_user("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -25,8 +25,8 @@ public class Algorithm {
      */
     public Map<String, Object> run_tests(Object source_data, Object target_data) {
         logger.info("Executing run_tests");
-        String result = "" + test_name + ": ";
-        return "";
+        Map<String, Object> result = new HashMap<>();
+        return result;
     }
 
     public static Algorithm create() {
@@ -39,7 +39,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_test("", null);
+        Object result = algo.add_test("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

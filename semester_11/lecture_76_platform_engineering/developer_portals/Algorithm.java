@@ -49,7 +49,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_api("", "", "");
+        Object result = algo.register_api("", "", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

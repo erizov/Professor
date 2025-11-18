@@ -46,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        bytes result = algo.encrypt(null);
+        Object result = algo.encrypt(null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

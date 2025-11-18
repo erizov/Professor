@@ -35,7 +35,7 @@ public class Algorithm {
      */
     public boolean finalize_channel(String channel_id) {
         logger.info("Executing finalize_channel");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -48,7 +48,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_channel("", null);
+        Object result = algo.create_channel("", new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

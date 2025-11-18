@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public String trigger_build(String commit_hash, String branch) {
         logger.info("Executing trigger_build");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -26,9 +25,8 @@ public class Algorithm {
      */
     public Map<String, Object> run_tests(String build_id, List<String> test_suite) {
         logger.info("Executing run_tests");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -36,7 +34,7 @@ public class Algorithm {
      */
     public boolean update_build_status(String build_id, String status) {
         logger.info("Executing update_build_status");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -49,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.trigger_build("", "");
+        String result = algo.trigger_build("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

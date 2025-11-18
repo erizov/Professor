@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object add_help_topic(String topic_id, String title, String content, List<String> keywords) {
         logger.info("Executing add_help_topic");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -26,8 +25,7 @@ public class Algorithm {
      */
     public List<Object> get_help(String context) {
         logger.info("Executing get_help");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -40,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_help_topic("", "", "", null);
+        Object result = algo.add_help_topic("", "", "", new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

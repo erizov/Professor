@@ -48,7 +48,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.index_document("", "", null);
+        Object result = algo.index_document("", "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public boolean propose(String proposer, Object value) {
         logger.info("Executing propose");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return false;
     }
 
     /**
@@ -26,8 +25,7 @@ public class Algorithm {
      */
     public boolean prepare(String node, Object value) {
         logger.info("Executing prepare");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return false;
     }
 
     /**
@@ -35,7 +33,7 @@ public class Algorithm {
      */
     public boolean commit(String node, Object value) {
         logger.info("Executing commit");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -48,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        bool result = algo.propose("", null);
+        boolean result = algo.propose("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Map<String, Object> implement_sharding(Object shard_count) {
         logger.info("Executing implement_sharding");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -26,8 +25,7 @@ public class Algorithm {
      */
     public Map<String, Object> implement_layer2(String layer_type) {
         logger.info("Executing implement_layer2");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -48,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        dict result = algo.implement_sharding(null);
+        Object result = algo.implement_sharding(null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

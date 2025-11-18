@@ -17,9 +17,8 @@ public class Algorithm {
      */
     public Object create_project(String project_id, String name, String owner) {
         logger.info("Executing create_project");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -56,7 +55,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_project("", "", "");
+        Object result = algo.create_project("", "", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

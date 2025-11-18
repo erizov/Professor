@@ -40,7 +40,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        List[dict] result = algo.identify_threats(null);
+        List<Object> result = algo.identify_threats(null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

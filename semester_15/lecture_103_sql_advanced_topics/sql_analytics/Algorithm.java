@@ -40,7 +40,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        List[dict] result = algo.execute_analytics_query("");
+        List<Object> result = algo.execute_analytics_query("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -17,7 +17,7 @@ public class Algorithm {
      */
     public Object set_rotation_schedule(String secret_id, Object rotation_interval_days) {
         logger.info("Executing set_rotation_schedule");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         return null;
     }
 
@@ -26,9 +26,9 @@ public class Algorithm {
      */
     public boolean rotate_secret(String secret_id) {
         logger.info("Executing rotate_secret");
-        long currentTime = System.currentTimeMillis();
-        String result = "NEW_SECRET_" + random.randint(1000, 9999) + "";
-        return "";
+        long timestamp = System.currentTimeMillis();
+        Map<String, Object> result = new HashMap<>();
+        return result;
     }
 
     /**
@@ -36,7 +36,7 @@ public class Algorithm {
      */
     public String check_rotation_needed() {
         logger.info("Executing check_rotation_needed");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         return null;
     }
 
@@ -50,7 +50,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.set_rotation_schedule("", null);
+        Object result = algo.set_rotation_schedule("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object write(String node, String key, Object value) {
         logger.info("Executing write");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -55,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.write("", "", null);
+        Object result = algo.write("", "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

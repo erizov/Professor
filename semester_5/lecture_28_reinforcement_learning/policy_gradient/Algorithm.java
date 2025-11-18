@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        int result = algo.select_action(null);
+        int result = algo.select_action(new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

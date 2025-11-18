@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public String get_cache_key(Object layer, Object position) {
         logger.info("Executing get_cache_key");
-        String result = "layer_" + layer + "_pos_";
-        return "";
+        return null;
     }
 
     /**
@@ -56,7 +55,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.get_cache_key(null, null);
+        String result = algo.get_cache_key(null, null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -17,9 +17,8 @@ public class Algorithm {
      */
     public Object create_ticket(String ticket_id, String issue, String customer) {
         logger.info("Executing create_ticket");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -43,7 +42,7 @@ public class Algorithm {
      */
     public boolean auto_resolve(String ticket_id) {
         logger.info("Executing auto_resolve");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -56,7 +55,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_ticket("", "", "");
+        Object result = algo.create_ticket("", "", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

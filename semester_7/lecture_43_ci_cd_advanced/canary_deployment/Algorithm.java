@@ -41,7 +41,7 @@ public class Algorithm {
      */
     public boolean should_promote_canary() {
         logger.info("Executing should_promote_canary");
-        return null;
+        return false;
     }
 
     /**
@@ -49,7 +49,7 @@ public class Algorithm {
      */
     public boolean should_rollback() {
         logger.info("Executing should_rollback");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -62,7 +62,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.deploy_canary("", "");
+        Object result = algo.deploy_canary("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

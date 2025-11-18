@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object register_source(String source_id, String name, String location, Object schema) {
         logger.info("Executing register_source");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -55,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_source("", "", "", null);
+        Object result = algo.register_source("", "", "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

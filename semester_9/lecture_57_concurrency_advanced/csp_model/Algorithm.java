@@ -62,7 +62,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_process("", null);
+        Object result = algo.create_process("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

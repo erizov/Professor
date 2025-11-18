@@ -35,7 +35,7 @@ public class Algorithm {
      */
     public boolean distribute_workload(String workload_id, String strategy) {
         logger.info("Executing distribute_workload");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -48,7 +48,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_cloud("", "", "");
+        Object result = algo.register_cloud("", "", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

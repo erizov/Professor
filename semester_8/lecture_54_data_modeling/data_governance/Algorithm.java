@@ -41,7 +41,7 @@ public class Algorithm {
      */
     public boolean can_access(String user, String data_id) {
         logger.info("Executing can_access");
-        return null;
+        return false;
     }
 
     /**
@@ -49,7 +49,7 @@ public class Algorithm {
      */
     public boolean enforce_policy(String data_id, String action) {
         logger.info("Executing enforce_policy");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -62,7 +62,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.define_policy("", null);
+        Object result = algo.define_policy("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

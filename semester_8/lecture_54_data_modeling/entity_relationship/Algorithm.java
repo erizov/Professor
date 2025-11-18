@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object add_entity(String entity_name, List<String> attributes) {
         logger.info("Executing add_entity");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -26,8 +25,7 @@ public class Algorithm {
      */
     public Object add_relationship(String entity1, String entity2, String relationship_type) {
         logger.info("Executing add_relationship");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -35,8 +33,7 @@ public class Algorithm {
      */
     public String create_instance(String entity_name, Object values) {
         logger.info("Executing create_instance");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -57,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_entity("", null);
+        Object result = algo.add_entity("", new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

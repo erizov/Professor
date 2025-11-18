@@ -33,7 +33,7 @@ public class Algorithm {
      */
     public Map<String, Object> create_block(String shard_idx) {
         logger.info("Executing create_block");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
         return result;
     }

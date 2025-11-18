@@ -25,7 +25,7 @@ public class Algorithm {
      */
     public boolean wait_free_write(List<Object> data, Object index, Object value) {
         logger.info("Executing wait_free_write");
-        return null;
+        return false;
     }
 
     /**
@@ -46,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        any result = algo.wait_free_read(null, null);
+        Object result = algo.wait_free_read(new ArrayList<>(), null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

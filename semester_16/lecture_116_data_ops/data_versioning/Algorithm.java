@@ -17,9 +17,9 @@ public class Algorithm {
      */
     public String create_version(String dataset_id, Object data, Object metadata) {
         logger.info("Executing create_version");
-        long currentTime = System.currentTimeMillis();
-        String result = "v" + len(self.versions.get(dataset_id, [])) + 1 + "";
-        return "";
+        long timestamp = System.currentTimeMillis();
+        Map<String, Object> result = new HashMap<>();
+        return result;
     }
 
     /**
@@ -40,7 +40,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.create_version("", null, null);
+        String result = algo.create_version("", null, null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

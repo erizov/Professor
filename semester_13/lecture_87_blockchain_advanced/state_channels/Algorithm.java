@@ -34,8 +34,7 @@ public class Algorithm {
      */
     public Map<String, Object> close_channel(String channel_id) {
         logger.info("Executing close_channel");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -48,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.open_channel("", null, null);
+        Object result = algo.open_channel("", new ArrayList<>(), null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

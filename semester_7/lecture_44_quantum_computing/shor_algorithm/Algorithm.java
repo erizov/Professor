@@ -38,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        tuple result = algo.factor(null);
+        Object result = algo.factor(null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object create_flag(String flag_name, Object default_value) {
         logger.info("Executing create_flag");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -58,7 +57,7 @@ public class Algorithm {
      */
     public boolean is_enabled(String flag_name, String user_id) {
         logger.info("Executing is_enabled");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -71,7 +70,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_flag("", null);
+        Object result = algo.create_flag("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

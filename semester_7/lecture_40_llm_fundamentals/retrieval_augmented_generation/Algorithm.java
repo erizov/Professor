@@ -33,8 +33,8 @@ public class Algorithm {
      */
     public String generate(String query, List<String> context) {
         logger.info("Executing generate");
-        String result = "Answer to '" + query + "' based on ";
-        return "";
+        Map<String, Object> result = new HashMap<>();
+        return result;
     }
 
     public static Algorithm create() {
@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_document("", "");
+        Object result = algo.add_document("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -17,9 +17,7 @@ public class Algorithm {
      */
     public String translate(String text, String source_lang, String target_lang) {
         logger.info("Executing translate");
-        String result = "" + source_lang + ":";
-        String result = "[" + target_lang + "] ";
-        return "";
+        return null;
     }
 
     /**
@@ -40,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.translate("", "", "");
+        String result = algo.translate("", "", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

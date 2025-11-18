@@ -17,9 +17,8 @@ public class Algorithm {
      */
     public Object log_event(String user, String action, String resource, String status, Object details) {
         logger.info("Executing log_event");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -40,7 +39,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.log_event("", "", "", "", null);
+        Object result = algo.log_event("", "", "", "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

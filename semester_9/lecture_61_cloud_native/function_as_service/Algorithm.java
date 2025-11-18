@@ -25,9 +25,8 @@ public class Algorithm {
      */
     public Object invoke(String function_name, Object *args, Object **kwargs) {
         logger.info("Executing invoke");
-        long currentTime = System.currentTimeMillis();
-        String result = "Function " + function_name + " not found";
-        return "";
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -35,8 +34,7 @@ public class Algorithm {
      */
     public Map<String, Object> get_invocation_stats(String function_name) {
         logger.info("Executing get_invocation_stats");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -49,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_function("", null);
+        Object result = algo.register_function("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

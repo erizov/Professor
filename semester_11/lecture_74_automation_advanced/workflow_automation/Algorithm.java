@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public Object execute_workflow(String workflow_id, Object input_data) {
         logger.info("Executing execute_workflow");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
         return result;
     }
@@ -41,7 +41,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_workflow("", null);
+        Object result = algo.create_workflow("", new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

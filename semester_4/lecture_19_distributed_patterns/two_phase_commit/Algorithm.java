@@ -17,7 +17,7 @@ public class Algorithm {
      */
     public boolean prepare(String transaction_id) {
         logger.info("Executing prepare");
-        return null;
+        return false;
     }
 
     /**
@@ -25,7 +25,7 @@ public class Algorithm {
      */
     public boolean commit(String transaction_id) {
         logger.info("Executing commit");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -38,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        bool result = algo.prepare("");
+        boolean result = algo.prepare("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

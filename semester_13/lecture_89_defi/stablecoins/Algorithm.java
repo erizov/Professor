@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public boolean mint(String coin_id, Object amount) {
         logger.info("Executing mint");
-        return null;
+        return false;
     }
 
     /**
@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public boolean redeem(String coin_id, Object amount) {
         logger.info("Executing redeem");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_stablecoin("", null, null);
+        Object result = algo.create_stablecoin("", null, null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

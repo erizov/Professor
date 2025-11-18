@@ -35,7 +35,7 @@ public class Algorithm {
      */
     public boolean sync(String repo_name) {
         logger.info("Executing sync");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -48,7 +48,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_repo("", "");
+        Object result = algo.register_repo("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

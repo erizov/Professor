@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public boolean liquidate(String loan_id) {
         logger.info("Executing liquidate");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_loan("", "", null, null);
+        Object result = algo.create_loan("", "", null, null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

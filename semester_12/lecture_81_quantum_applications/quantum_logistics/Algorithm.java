@@ -38,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        List[str] result = algo.optimize_route(null, "");
+        String result = algo.optimize_route(new ArrayList<>(), "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

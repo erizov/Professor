@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object create_circuit(Object num_qubits) {
         logger.info("Executing create_circuit");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -55,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_circuit(null);
+        Object result = algo.create_circuit(null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

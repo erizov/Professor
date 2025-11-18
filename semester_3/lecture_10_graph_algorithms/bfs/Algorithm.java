@@ -46,8 +46,7 @@ public class Algorithm {
      */
     public int shortest_path(Object start, Object end) {
         logger.info("Executing shortest_path");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -62,8 +61,7 @@ public class Algorithm {
      */
     public int shortest_distance(Object start, Object end) {
         logger.info("Executing shortest_distance");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -77,8 +75,7 @@ public class Algorithm {
      */
     public int all_paths_distance(Object start) {
         logger.info("Executing all_paths_distance");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -89,8 +86,7 @@ public class Algorithm {
      */
     public boolean is_bipartite() {
         logger.info("Executing is_bipartite");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return false;
     }
 
     public static Algorithm create() {
@@ -103,7 +99,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_edge(null, null);
+        Object result = algo.add_edge(null, null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

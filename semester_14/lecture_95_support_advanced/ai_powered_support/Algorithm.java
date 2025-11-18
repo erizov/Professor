@@ -25,10 +25,8 @@ public class Algorithm {
      */
     public String create_ticket(String issue, String user) {
         logger.info("Executing create_ticket");
-        long currentTime = System.currentTimeMillis();
         long timestamp = System.currentTimeMillis();
-        String shareId = "SHARE-" + timestamp;
-        return "";
+        return "SHARE-" + timestamp;
     }
 
     /**
@@ -49,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_knowledge("", "");
+        Object result = algo.add_knowledge("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

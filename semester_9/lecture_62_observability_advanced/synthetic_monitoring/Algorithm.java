@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public Map<String, Object> run_check(String check_id) {
         logger.info("Executing run_check");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
         return result;
     }
@@ -41,7 +41,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_check("", "", null);
+        Object result = algo.add_check("", "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

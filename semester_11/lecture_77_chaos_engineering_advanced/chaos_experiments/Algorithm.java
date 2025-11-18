@@ -25,8 +25,7 @@ public class Algorithm {
      */
     public Object create_experiment(String exp_id, String name) {
         logger.info("Executing create_experiment");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -34,9 +33,8 @@ public class Algorithm {
      */
     public Map<String, Object> run_experiment(String exp_id) {
         logger.info("Executing run_experiment");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     public static Algorithm create() {
@@ -49,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.define_hypothesis("", "");
+        Object result = algo.define_hypothesis("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

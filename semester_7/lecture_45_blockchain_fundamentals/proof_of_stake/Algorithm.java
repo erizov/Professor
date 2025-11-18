@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public boolean validate_block(String validator_id, Object block) {
         logger.info("Executing validate_block");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_validator("", null);
+        Object result = algo.register_validator("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

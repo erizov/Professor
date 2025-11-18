@@ -26,9 +26,9 @@ public class Algorithm {
      */
     public Map<String, Object> prove(String circuit_id, List<Object> inputs, List<Object> witness) {
         logger.info("Executing prove");
-        long currentTime = System.currentTimeMillis();
-        String result = "SNARK_PROOF_" + hash(str(inputs + witness)) + "";
-        return "";
+        long timestamp = System.currentTimeMillis();
+        Map<String, Object> result = new HashMap<>();
+        return result;
     }
 
     /**
@@ -36,7 +36,7 @@ public class Algorithm {
      */
     public boolean verify(String circuit_id, Object proof, List<Object> public_inputs) {
         logger.info("Executing verify");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -49,7 +49,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        tuple result = algo.setup("");
+        Object result = algo.setup("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

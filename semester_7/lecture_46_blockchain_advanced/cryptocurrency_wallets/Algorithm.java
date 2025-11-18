@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object create_address(String address) {
         logger.info("Executing create_address");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -34,9 +33,8 @@ public class Algorithm {
      */
     public String send_transaction(String from_address, String to_address, Object amount) {
         logger.info("Executing send_transaction");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -57,7 +55,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_address("");
+        Object result = algo.create_address("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

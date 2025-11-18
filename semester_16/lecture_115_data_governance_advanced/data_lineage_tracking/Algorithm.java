@@ -40,7 +40,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.track_transformation("", "", null);
+        Object result = algo.track_transformation("", "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -41,7 +41,7 @@ public class Algorithm {
      */
     public boolean is_empty() {
         logger.info("Executing is_empty");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -54,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.push(null, null);
+        Object result = algo.push(null, null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

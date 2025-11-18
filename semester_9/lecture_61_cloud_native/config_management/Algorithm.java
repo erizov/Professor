@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object set_config(String key, Object value, String environment) {
         logger.info("Executing set_config");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -55,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.set_config("", null, "");
+        Object result = algo.set_config("", null, "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

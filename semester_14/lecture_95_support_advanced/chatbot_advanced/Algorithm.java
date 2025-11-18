@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object add_intent(String intent_name, List<String> keywords, List<String> responses) {
         logger.info("Executing add_intent");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -47,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_intent("", null, null);
+        Object result = algo.add_intent("", new ArrayList<>(), new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

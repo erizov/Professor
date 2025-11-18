@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public String deploy(String version, String environment) {
         logger.info("Executing deploy");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -26,7 +25,7 @@ public class Algorithm {
      */
     public boolean verify_deployment(String deployment_id) {
         logger.info("Executing verify_deployment");
-        return null;
+        return false;
     }
 
     /**
@@ -34,7 +33,7 @@ public class Algorithm {
      */
     public boolean rollback(String environment) {
         logger.info("Executing rollback");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -47,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.deploy("", "");
+        String result = algo.deploy("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

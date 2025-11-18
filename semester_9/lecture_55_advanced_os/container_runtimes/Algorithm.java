@@ -17,9 +17,8 @@ public class Algorithm {
      */
     public Object pull_image(String image_name, String tag) {
         logger.info("Executing pull_image");
-        long currentTime = System.currentTimeMillis();
-        String result = "" + image_name + ":";
-        return "";
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -27,8 +26,7 @@ public class Algorithm {
      */
     public Object create_container(String container_id, String image_id, List<String> command) {
         logger.info("Executing create_container");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -36,7 +34,7 @@ public class Algorithm {
      */
     public boolean start_container(String container_id) {
         logger.info("Executing start_container");
-        return null;
+        return false;
     }
 
     /**
@@ -44,7 +42,7 @@ public class Algorithm {
      */
     public boolean stop_container(String container_id) {
         logger.info("Executing stop_container");
-        return null;
+        return false;
     }
 
     /**
@@ -65,7 +63,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.pull_image("", "");
+        Object result = algo.pull_image("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

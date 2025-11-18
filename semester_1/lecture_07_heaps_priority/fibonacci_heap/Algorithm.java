@@ -38,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        FibonacciHeapNode result = algo.insert(null);
+        Object result = algo.insert(null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

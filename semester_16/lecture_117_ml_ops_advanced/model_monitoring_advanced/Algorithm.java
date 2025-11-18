@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public boolean detect_concept_drift(String model_id) {
         logger.info("Executing detect_concept_drift");
-        return null;
+        return false;
     }
 
     /**
@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public boolean detect_data_drift(String model_id) {
         logger.info("Executing detect_data_drift");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.monitor_model("", null);
+        Object result = algo.monitor_model("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

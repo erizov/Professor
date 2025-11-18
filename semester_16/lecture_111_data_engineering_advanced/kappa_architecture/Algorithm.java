@@ -25,7 +25,7 @@ public class Algorithm {
      */
     public Object publish_event(String stream_name, Object event) {
         logger.info("Executing publish_event");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         return null;
     }
 
@@ -55,7 +55,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_stream("");
+        Object result = algo.create_stream("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

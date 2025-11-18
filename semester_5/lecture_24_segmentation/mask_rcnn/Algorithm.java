@@ -39,7 +39,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        dict result = algo.forward(null);
+        Object result = algo.forward(new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

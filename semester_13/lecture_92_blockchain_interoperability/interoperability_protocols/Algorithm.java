@@ -25,8 +25,7 @@ public class Algorithm {
      */
     public Object create_adapter(String from_protocol, String to_protocol, Object adapter_func) {
         logger.info("Executing create_adapter");
-        String result = "" + from_protocol + "_to_";
-        return "";
+        return null;
     }
 
     /**
@@ -34,8 +33,7 @@ public class Algorithm {
      */
     public Object translate(String from_protocol, String to_protocol, Object data) {
         logger.info("Executing translate");
-        String result = "" + from_protocol + "_to_";
-        return "";
+        return null;
     }
 
     public static Algorithm create() {
@@ -48,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_protocol("", null);
+        Object result = algo.register_protocol("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

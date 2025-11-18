@@ -39,7 +39,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        List[dict] result = algo.query_range("", null, null);
+        List<Object> result = algo.query_range("", null, null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

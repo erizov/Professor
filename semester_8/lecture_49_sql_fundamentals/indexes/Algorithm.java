@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object create_index(List<Object> column_values) {
         logger.info("Executing create_index");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -63,7 +62,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_index(null);
+        Object result = algo.create_index(new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

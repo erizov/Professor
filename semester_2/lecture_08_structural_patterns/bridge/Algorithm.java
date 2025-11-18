@@ -41,8 +41,7 @@ public class Algorithm {
      */
     public String operation() {
         logger.info("Executing operation");
-        String result = "Abstraction(" + self.implementor.operation_impl() + ")";
-        return "";
+        return null;
     }
 
     /**
@@ -50,8 +49,7 @@ public class Algorithm {
      */
     public String operation() {
         logger.info("Executing operation");
-        String result = "RefinedAbstraction(" + self.implementor.operation_impl() + ")";
-        return "";
+        return null;
     }
 
     public static Algorithm create() {
@@ -64,7 +62,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.operation_impl();
+        String result = algo.operation_impl();
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

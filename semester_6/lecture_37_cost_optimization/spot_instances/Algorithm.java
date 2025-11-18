@@ -17,10 +17,8 @@ public class Algorithm {
      */
     public String request_spot_instance(String instance_type, Object max_price) {
         logger.info("Executing request_spot_instance");
-        long currentTime = System.currentTimeMillis();
         long timestamp = System.currentTimeMillis();
-        String shareId = "SHARE-" + timestamp;
-        return "";
+        return "SHARE-" + timestamp;
     }
 
     /**
@@ -28,7 +26,7 @@ public class Algorithm {
      */
     public boolean check_interruption(String instance_id) {
         logger.info("Executing check_interruption");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -41,7 +39,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        Optional[str] result = algo.request_spot_instance("", null);
+        String result = algo.request_spot_instance("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

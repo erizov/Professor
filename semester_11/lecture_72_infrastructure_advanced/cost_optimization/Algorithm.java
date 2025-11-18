@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object register_resource(String resource_id, String resource_type, Object cost_per_hour) {
         logger.info("Executing register_resource");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -26,9 +25,8 @@ public class Algorithm {
      */
     public Object record_usage(String resource_id, Object hours) {
         logger.info("Executing record_usage");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -44,8 +42,7 @@ public class Algorithm {
      */
     public String get_cost_recommendations() {
         logger.info("Executing get_cost_recommendations");
-        String result = "Consider removing underutilized resource: " + resource_id + "";
-        return "";
+        return null;
     }
 
     public static Algorithm create() {
@@ -58,7 +55,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_resource("", "", null);
+        Object result = algo.register_resource("", "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

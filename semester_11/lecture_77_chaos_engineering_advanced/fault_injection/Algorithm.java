@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public boolean inject_fault(String fault_id, Object context) {
         logger.info("Executing inject_fault");
-        return null;
+        return false;
     }
 
     /**
@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_fault("", "", null, null);
+        Object result = algo.add_fault("", "", null, null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

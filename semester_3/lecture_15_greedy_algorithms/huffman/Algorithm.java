@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object build_huffman_tree(String text) {
         logger.info("Executing build_huffman_tree");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -26,8 +25,7 @@ public class Algorithm {
      */
     public Map<String, Object> build_huffman_codes(Object root, String code, Object codes) {
         logger.info("Executing build_huffman_codes");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -40,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        HuffmanNode result = algo.build_huffman_tree("");
+        Object result = algo.build_huffman_tree("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

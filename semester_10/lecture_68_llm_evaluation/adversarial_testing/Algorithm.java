@@ -25,8 +25,7 @@ public class Algorithm {
      */
     public Map<String, Object> test_robustness(Object model, List<Object> test_data, List<Object> labels, Object epsilon) {
         logger.info("Executing test_robustness");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -39,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        List[float] result = algo.generate_adversarial_example(null, null, null);
+        int result = algo.generate_adversarial_example(null, new ArrayList<>(), null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

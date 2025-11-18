@@ -25,8 +25,7 @@ public class Algorithm {
      */
     public String generate(String template_id, Object variables) {
         logger.info("Executing generate");
-        String result = "" +  + "";
-        return "";
+        return null;
     }
 
     public static Algorithm create() {
@@ -39,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_template("", "");
+        Object result = algo.create_template("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

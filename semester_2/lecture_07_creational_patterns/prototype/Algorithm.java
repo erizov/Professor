@@ -25,8 +25,7 @@ public class Algorithm {
      */
     public String __str__() {
         logger.info("Executing __str__");
-        String result = "ConcretePrototype(value=" + self.value + ")";
-        return "";
+        return null;
     }
 
     public static Algorithm create() {
@@ -39,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        'ConcretePrototype' result = algo.clone();
+        Object result = algo.clone();
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

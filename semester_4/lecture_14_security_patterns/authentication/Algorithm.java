@@ -17,7 +17,7 @@ public class Algorithm {
      */
     public boolean register(String username, String password) {
         logger.info("Executing register");
-        return null;
+        return false;
     }
 
     /**
@@ -41,7 +41,7 @@ public class Algorithm {
      */
     public boolean logout(String session_id) {
         logger.info("Executing logout");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -54,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        bool result = algo.register("", "");
+        boolean result = algo.register("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

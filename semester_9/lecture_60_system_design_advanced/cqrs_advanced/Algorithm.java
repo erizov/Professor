@@ -25,9 +25,8 @@ public class Algorithm {
      */
     public String publish_event(String event_type, Object payload) {
         logger.info("Executing publish_event");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -35,8 +34,7 @@ public class Algorithm {
      */
     public Object rebuild_read_model(String model_name) {
         logger.info("Executing rebuild_read_model");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -44,8 +42,7 @@ public class Algorithm {
      */
     public Map<String, Object> get_read_model(String model_name) {
         logger.info("Executing get_read_model");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -58,7 +55,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_event_handler("", null);
+        Object result = algo.register_event_handler("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

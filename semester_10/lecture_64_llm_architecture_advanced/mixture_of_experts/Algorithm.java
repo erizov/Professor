@@ -46,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        List[float] result = algo.route(null);
+        int result = algo.route(null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

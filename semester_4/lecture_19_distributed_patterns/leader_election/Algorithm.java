@@ -25,7 +25,7 @@ public class Algorithm {
      */
     public boolean is_leader() {
         logger.info("Executing is_leader");
-        return null;
+        return false;
     }
 
     /**

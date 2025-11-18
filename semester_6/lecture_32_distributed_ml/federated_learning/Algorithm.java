@@ -25,8 +25,7 @@ public class Algorithm {
      */
     public Map<String, Object> train_client(String client_id, List<Object> local_data, Object epochs) {
         logger.info("Executing train_client");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -34,8 +33,7 @@ public class Algorithm {
      */
     public Map<String, Object> aggregate_models(List<Object> client_models) {
         logger.info("Executing aggregate_models");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -56,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.initialize_global_model(null);
+        Object result = algo.initialize_global_model(null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

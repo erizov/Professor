@@ -38,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        dict result = algo.fit(null, null);
+        Object result = algo.fit(new ArrayList<>(), new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

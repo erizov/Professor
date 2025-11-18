@@ -25,10 +25,8 @@ public class Algorithm {
      */
     public String establish_secure_channel(String protocol, List<String> participants) {
         logger.info("Executing establish_secure_channel");
-        long currentTime = System.currentTimeMillis();
         long timestamp = System.currentTimeMillis();
-        String shareId = "SHARE-" + timestamp;
-        return "";
+        return "SHARE-" + timestamp;
     }
 
     public static Algorithm create() {
@@ -41,7 +39,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.implement_protocol("", null);
+        Object result = algo.implement_protocol("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

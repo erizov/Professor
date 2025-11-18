@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public String create_pod(String pod_name, String image, Object replicas) {
         logger.info("Executing create_pod");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -26,8 +25,7 @@ public class Algorithm {
      */
     public String create_service(String service_name, Object selector, List<Object> ports) {
         logger.info("Executing create_service");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -35,8 +33,7 @@ public class Algorithm {
      */
     public String create_deployment(String deployment_name, String image, Object replicas) {
         logger.info("Executing create_deployment");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -44,7 +41,7 @@ public class Algorithm {
      */
     public boolean scale_deployment(String deployment_name, Object replicas) {
         logger.info("Executing scale_deployment");
-        return null;
+        return false;
     }
 
     /**
@@ -65,7 +62,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.create_pod("", "", null);
+        String result = algo.create_pod("", "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -48,7 +48,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_hub("", "");
+        Object result = algo.add_hub("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -17,10 +17,8 @@ public class Algorithm {
      */
     public String submit_transaction(Object tx) {
         logger.info("Executing submit_transaction");
-        long currentTime = System.currentTimeMillis();
         long timestamp = System.currentTimeMillis();
-        String shareId = "SHARE-" + timestamp;
-        return "";
+        return "SHARE-" + timestamp;
     }
 
     /**
@@ -36,7 +34,7 @@ public class Algorithm {
      */
     public boolean commit_to_layer1(List<String> batch) {
         logger.info("Executing commit_to_layer1");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -49,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.submit_transaction(null);
+        String result = algo.submit_transaction(null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

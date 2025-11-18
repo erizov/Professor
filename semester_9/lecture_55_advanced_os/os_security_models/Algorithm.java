@@ -35,7 +35,7 @@ public class Algorithm {
      */
     public boolean check_access(String subject_id, String object_id, String permission) {
         logger.info("Executing check_access");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -48,7 +48,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_subject("", null);
+        Object result = algo.create_subject("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

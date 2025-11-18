@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public String hash_password(String password) {
         logger.info("Executing hash_password");
-        String result = "$2b$" + self.rounds + "$";
-        return "";
+        return null;
     }
 
     /**
@@ -26,7 +25,7 @@ public class Algorithm {
      */
     public boolean verify_password(String password, String hashed) {
         logger.info("Executing verify_password");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -39,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.hash_password("");
+        String result = algo.hash_password("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

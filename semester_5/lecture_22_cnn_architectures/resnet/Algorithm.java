@@ -46,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        List[List[List[float]]] result = algo.forward(null);
+        int result = algo.forward(new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

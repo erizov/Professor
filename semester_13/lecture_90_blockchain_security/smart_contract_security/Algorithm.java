@@ -31,7 +31,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        dict result = algo.analyze_contract("", "");
+        Object result = algo.analyze_contract("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

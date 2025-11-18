@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public boolean _enable_caching(Object config) {
         logger.info("Executing _enable_caching");
-        return null;
+        return false;
     }
 
     /**
@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public boolean _add_indexes(Object config) {
         logger.info("Executing _add_indexes");
-        return null;
+        return false;
     }
 
     /**
@@ -42,7 +42,7 @@ public class Algorithm {
      */
     public boolean _enable_compression(Object config) {
         logger.info("Executing _enable_compression");
-        return null;
+        return false;
     }
 
     /**
@@ -63,7 +63,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        bool result = algo.apply_optimization("", null);
+        boolean result = algo.apply_optimization("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

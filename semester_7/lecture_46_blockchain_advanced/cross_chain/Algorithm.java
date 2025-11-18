@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object register_chain(String chain_id, String chain_name) {
         logger.info("Executing register_chain");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -26,8 +25,7 @@ public class Algorithm {
      */
     public String create_bridge(String from_chain, String to_chain) {
         logger.info("Executing create_bridge");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -35,8 +33,7 @@ public class Algorithm {
      */
     public String lock_asset(String chain_id, String asset_id, Object amount) {
         logger.info("Executing lock_asset");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -44,7 +41,7 @@ public class Algorithm {
      */
     public boolean mint_asset(String chain_id, String asset_id, Object amount, String lock_id) {
         logger.info("Executing mint_asset");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -57,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_chain("", "");
+        Object result = algo.register_chain("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

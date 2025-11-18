@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object add_rule(String rule_id, String rule_name, Object check_func) {
         logger.info("Executing add_rule");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -26,9 +25,8 @@ public class Algorithm {
      */
     public boolean run_check(String rule_id, Object data) {
         logger.info("Executing run_check");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return false;
     }
 
     /**
@@ -49,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_rule("", "", null);
+        Object result = algo.add_rule("", "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

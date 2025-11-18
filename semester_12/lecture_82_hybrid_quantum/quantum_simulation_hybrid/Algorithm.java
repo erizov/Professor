@@ -31,7 +31,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        dict result = algo.simulate_hybrid(null, null);
+        Object result = algo.simulate_hybrid(null, null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

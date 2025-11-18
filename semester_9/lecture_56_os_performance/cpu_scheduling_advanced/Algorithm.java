@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object add_process(String process_id, Object arrival_time, Object burst_time, Object priority) {
         logger.info("Executing add_process");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -55,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_process("", null, null, null);
+        Object result = algo.add_process("", null, null, null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

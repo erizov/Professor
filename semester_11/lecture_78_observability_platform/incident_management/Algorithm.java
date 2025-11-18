@@ -17,10 +17,8 @@ public class Algorithm {
      */
     public String create_incident(String title, String severity, String description) {
         logger.info("Executing create_incident");
-        long currentTime = System.currentTimeMillis();
         long timestamp = System.currentTimeMillis();
-        String shareId = "SHARE-" + timestamp;
-        return "";
+        return "SHARE-" + timestamp;
     }
 
     /**
@@ -28,7 +26,7 @@ public class Algorithm {
      */
     public boolean assign_responder(String incident_id, String responder) {
         logger.info("Executing assign_responder");
-        return null;
+        return false;
     }
 
     /**
@@ -36,7 +34,7 @@ public class Algorithm {
      */
     public boolean resolve_incident(String incident_id, String resolution) {
         logger.info("Executing resolve_incident");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -49,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.create_incident("", "", "");
+        String result = algo.create_incident("", "", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -17,7 +17,7 @@ public class Algorithm {
      */
     public boolean send_qubit(String channel_id, List<Object> qubit) {
         logger.info("Executing send_qubit");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
         return result;
     }
@@ -40,7 +40,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        bool result = algo.send_qubit("", null);
+        boolean result = algo.send_qubit("", new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

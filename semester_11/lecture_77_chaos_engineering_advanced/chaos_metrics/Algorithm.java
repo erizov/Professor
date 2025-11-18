@@ -33,8 +33,7 @@ public class Algorithm {
      */
     public Map<String, Object> calculate_impact(String metric_name) {
         logger.info("Executing calculate_impact");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -47,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.record_metric("", null);
+        Object result = algo.record_metric("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -31,7 +31,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        dict result = algo.assess_risk("", null, null);
+        Object result = algo.assess_risk("", null, null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

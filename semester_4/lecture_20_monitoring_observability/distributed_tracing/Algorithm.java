@@ -17,9 +17,8 @@ public class Algorithm {
      */
     public Object start_trace(String trace_id, String service_name) {
         logger.info("Executing start_trace");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -27,9 +26,8 @@ public class Algorithm {
      */
     public Object start_span(String trace_id, String span_id, String operation, String service) {
         logger.info("Executing start_span");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -37,7 +35,7 @@ public class Algorithm {
      */
     public Object end_span(String span_id, Object tags) {
         logger.info("Executing end_span");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         return null;
     }
 
@@ -59,7 +57,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.start_trace("", "");
+        Object result = algo.start_trace("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

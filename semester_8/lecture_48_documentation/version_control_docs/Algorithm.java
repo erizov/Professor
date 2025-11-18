@@ -33,8 +33,7 @@ public class Algorithm {
      */
     public String diff(String doc_id, Object version1, Object version2) {
         logger.info("Executing diff");
-        String result = "Diff between version " + version1 + " and ";
-        return "";
+        return null;
     }
 
     public static Algorithm create() {
@@ -47,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.commit_doc("", "");
+        Object result = algo.commit_doc("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

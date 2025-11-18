@@ -33,7 +33,7 @@ public class Algorithm {
      */
     public boolean execute_migration(String source_collection, String target_collection) {
         logger.info("Executing execute_migration");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -46,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_migration("", null);
+        Object result = algo.add_migration("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

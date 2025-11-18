@@ -25,7 +25,7 @@ public class Algorithm {
      */
     public boolean rollback(String entity_id, Object target_version) {
         logger.info("Executing rollback");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
         return result;
     }
@@ -40,7 +40,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.save_version("", null);
+        Object result = algo.save_version("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

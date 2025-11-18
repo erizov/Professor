@@ -17,7 +17,7 @@ public class Algorithm {
      */
     public boolean verify_circuit(String circuit_id, List<Object> gates) {
         logger.info("Executing verify_circuit");
-        return null;
+        return false;
     }
 
     /**
@@ -25,7 +25,7 @@ public class Algorithm {
      */
     public boolean check_equivalence(String circuit1, String circuit2) {
         logger.info("Executing check_equivalence");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -38,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        bool result = algo.verify_circuit("", null);
+        boolean result = algo.verify_circuit("", new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

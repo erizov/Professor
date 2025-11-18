@@ -38,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        List[List[List[float]]] result = algo.shard_tensor(null, null);
+        int result = algo.shard_tensor(new ArrayList<>(), null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

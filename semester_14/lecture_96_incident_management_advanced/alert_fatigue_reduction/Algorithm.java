@@ -17,9 +17,8 @@ public class Algorithm {
      */
     public Object add_alert(String alert_id, String severity, String message, String source) {
         logger.info("Executing add_alert");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -27,9 +26,9 @@ public class Algorithm {
      */
     public List<Object> group_similar_alerts(Object time_window) {
         logger.info("Executing group_similar_alerts");
-        long currentTime = System.currentTimeMillis();
-        String result = "" + alert['source'] + ":";
-        return "";
+        long timestamp = System.currentTimeMillis();
+        Map<String, Object> result = new HashMap<>();
+        return result;
     }
 
     /**
@@ -37,7 +36,7 @@ public class Algorithm {
      */
     public boolean should_suppress(String alert_id) {
         logger.info("Executing should_suppress");
-        return null;
+        return false;
     }
 
     /**
@@ -58,7 +57,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_alert("", "", "", "");
+        Object result = algo.add_alert("", "", "", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

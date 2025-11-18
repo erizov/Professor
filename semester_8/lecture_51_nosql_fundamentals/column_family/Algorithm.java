@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object create_column_family(String family_name) {
         logger.info("Executing create_column_family");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -26,8 +25,7 @@ public class Algorithm {
      */
     public Object put(String family_name, String row_key, String column, Object value) {
         logger.info("Executing put");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -43,8 +41,7 @@ public class Algorithm {
      */
     public List<Object> scan(String family_name, String start_key, String end_key) {
         logger.info("Executing scan");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -57,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_column_family("");
+        Object result = algo.create_column_family("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

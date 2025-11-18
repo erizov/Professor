@@ -62,7 +62,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.template_method();
+        String result = algo.template_method();
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

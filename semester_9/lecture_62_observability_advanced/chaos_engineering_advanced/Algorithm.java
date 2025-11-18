@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object create_scenario(String scenario_id, String name, List<Object> faults) {
         logger.info("Executing create_scenario");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -26,9 +25,8 @@ public class Algorithm {
      */
     public Map<String, Object> execute_scenario(String scenario_id) {
         logger.info("Executing execute_scenario");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     public static Algorithm create() {
@@ -41,7 +39,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_scenario("", "", null);
+        Object result = algo.create_scenario("", "", new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

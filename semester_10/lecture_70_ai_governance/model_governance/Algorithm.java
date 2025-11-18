@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public boolean approve_model(String model_id) {
         logger.info("Executing approve_model");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_model("", null);
+        Object result = algo.register_model("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

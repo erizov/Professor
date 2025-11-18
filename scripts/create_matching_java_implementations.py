@@ -144,6 +144,11 @@ def convert_python_class_to_java(py_content: str, algorithm_name: str) -> str:
         elif 'Dict' in return_type_hint or 'dict' in return_type_hint:
             java_return_type = 'Map<String, Object>'
         
+        # Fix: boolean methods can't return null
+        if java_return_type == 'boolean':
+            # Will be handled in method body conversion
+            pass
+        
         # Build method signature
         java_code += f'    /**\n     * {doc}\n     */\n'
         param_list = ', '.join([f'{ptype} {pname}' for pname, ptype in params])
@@ -152,6 +157,11 @@ def convert_python_class_to_java(py_content: str, algorithm_name: str) -> str:
         
         # Convert method body
         java_body = convert_python_method_body_to_java(method_body, field_map)
+        
+        # Fix: Ensure boolean methods don't return null
+        if java_return_type == 'boolean' and 'return null;' in java_body:
+            java_body = java_body.replace('return null;', 'return false;')
+        
         java_code += java_body
         
         java_code += '    }\n\n'
@@ -170,8 +180,23 @@ def convert_python_class_to_java(py_content: str, algorithm_name: str) -> str:
     java_code += '        Algorithm algo = Algorithm.create();\n'
     if methods:
         first_method = methods[0]
-        param_calls = ', '.join(['""' if ptype == 'String' else 'null' for _, ptype in first_method['params']])
-        java_code += f'        {first_method["return_type"]} result = algo.{first_method["name"]}({param_calls});\n'
+        # Determine return type for Java
+        return_type_hint = first_method['return_type']
+        java_return_type = 'Object'
+        if 'str' in return_type_hint:
+            java_return_type = 'String'
+        elif 'bool' in return_type_hint:
+            java_return_type = 'boolean'
+        elif 'int' in return_type_hint or 'float' in return_type_hint:
+            java_return_type = 'int'
+        elif 'List' in return_type_hint:
+            java_return_type = 'List<Object>'
+        elif 'Dict' in return_type_hint:
+            java_return_type = 'Map<String, Object>'
+        
+        param_calls = ', '.join(['""' if ptype == 'String' else 'new ArrayList<>()' if 'List' in ptype else 'null' 
+                                for _, ptype in first_method['params']])
+        java_code += f'        {java_return_type} result = algo.{first_method["name"]}({param_calls});\n'
         java_code += '        System.out.println("Result: " + result);\n'
     java_code += '        System.out.println("=".repeat(70));\n'
     java_code += '    }\n'
@@ -183,24 +208,19 @@ def convert_python_class_to_java(py_content: str, algorithm_name: str) -> str:
 def convert_python_method_body_to_java(py_body: str, field_map: Dict[str, str]) -> str:
     """Convert Python method body to Java code."""
     java_lines = []
+    variables_declared = set()
     
-    # Handle time imports
-    if 'import time' in py_body or 'time.time()' in py_body:
-        java_lines.append('        long currentTime = System.currentTimeMillis();')
-    
-    # Handle f-strings
+    # Handle f-strings first (most specific)
     fstring_matches = list(re.finditer(r'f"([^"]+)"', py_body))
-    for match in fstring_matches:
-        template = match.group(1)
-        if '{int(time.time())}' in template:
-            java_lines.append('        long timestamp = System.currentTimeMillis();')
-            java_lines.append('        String shareId = "SHARE-" + timestamp;')
-        elif '{' in template and '}' in template:
-            # Simple f-string conversion
-            parts = template.split('{')
-            if len(parts) > 1:
-                var_part = parts[1].split('}')[0]
-                java_lines.append(f'        String result = "{parts[0]}" + {var_part} + "{parts[1].split("}")[1] if "}" in parts[1] else ""}";')
+    if fstring_matches:
+        for match in fstring_matches:
+            template = match.group(1)
+            if '{int(time.time())}' in template:
+                if 'timestamp' not in variables_declared:
+                    java_lines.append('        long timestamp = System.currentTimeMillis();')
+                    variables_declared.add('timestamp')
+                java_lines.append('        return "SHARE-" + timestamp;')
+                return '\n'.join(java_lines) + '\n'
     
     # Handle dictionary assignments
     dict_assigns = re.findall(r'self\.(\w+)\[([^\]]+)\]\s*=\s*\{([^}]+)\}', py_body)
@@ -213,8 +233,13 @@ def convert_python_method_body_to_java(py_body: str, field_map: Dict[str, str]) 
                 java_lines.append(f'        {attr}_entry.put("{k}", null);')
             java_lines.append(f'        {field_map[attr]}.put({key}, {attr}_entry);')
     
-    # Handle list operations
-    if 'not in' in py_body or 'in self.' in py_body:
+    # Handle time operations
+    if 'time.time()' in py_body and 'timestamp' not in variables_declared:
+        java_lines.append('        long timestamp = System.currentTimeMillis();')
+        variables_declared.add('timestamp')
+    
+    # Handle list operations - check membership
+    if 'not in' in py_body:
         in_match = re.search(r'(\w+)\s+not in\s+self\.(\w+)', py_body)
         if in_match:
             var = in_match.group(1)
@@ -224,7 +249,8 @@ def convert_python_method_body_to_java(py_body: str, field_map: Dict[str, str]) 
                 java_lines.append(f'            {field_map[attr]}.put({var}, new ArrayList<>());')
                 java_lines.append('        }')
     
-    if 'append' in py_body or '.append(' in py_body:
+    # Handle append operations
+    if '.append(' in py_body:
         append_match = re.search(r'self\.(\w+)\[([^\]]+)\]\.append\(([^)]+)\)', py_body)
         if append_match:
             attr = append_match.group(1)
@@ -233,10 +259,11 @@ def convert_python_method_body_to_java(py_body: str, field_map: Dict[str, str]) 
             if attr in field_map:
                 java_lines.append(f'        ((List<String>){field_map[attr]}.get({key})).add({value});')
     
-    # Handle return statements
-    if '-> str' in py_body or 'f"' in py_body:
-        if 'share_id' in py_body.lower() or 'SHARE-' in py_body:
-            java_lines.append('        long timestamp = System.currentTimeMillis();')
+    # Handle return statements based on return type
+    if '-> str' in py_body:
+        if 'f"' in py_body and 'SHARE-' in py_body:
+            if 'timestamp' not in variables_declared:
+                java_lines.append('        long timestamp = System.currentTimeMillis();')
             java_lines.append('        return "SHARE-" + timestamp;')
         else:
             java_lines.append('        return "";')
@@ -263,7 +290,7 @@ def convert_python_method_body_to_java(py_body: str, field_map: Dict[str, str]) 
     elif '-> List' in py_body:
         java_lines.append('        List<Object> result = new ArrayList<>();')
         java_lines.append('        return result;')
-    elif '-> Dict' in py_body or '{' in py_body:
+    elif '-> Dict' in py_body or ('{' in py_body and "'" in py_body):
         java_lines.append('        Map<String, Object> result = new HashMap<>();')
         java_lines.append('        return result;')
     else:

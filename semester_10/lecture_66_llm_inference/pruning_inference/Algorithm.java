@@ -38,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        any result = algo.prune_for_inference(null, null);
+        Object result = algo.prune_for_inference(null, null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

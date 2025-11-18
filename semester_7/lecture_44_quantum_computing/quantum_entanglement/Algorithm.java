@@ -17,8 +17,8 @@ public class Algorithm {
      */
     public Object create_bell_pair() {
         logger.info("Executing create_bell_pair");
-        String result = "BELL-" + random.randint(1000, 9999) + "";
-        return "";
+        Map<String, Object> result = new HashMap<>();
+        return result;
     }
 
     /**
@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        tuple result = algo.create_bell_pair();
+        Object result = algo.create_bell_pair();
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

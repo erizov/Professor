@@ -25,10 +25,8 @@ public class Algorithm {
      */
     public String insert_document(String collection, Object document) {
         logger.info("Executing insert_document");
-        long currentTime = System.currentTimeMillis();
         long timestamp = System.currentTimeMillis();
-        String shareId = "SHARE-" + timestamp;
-        return "";
+        return "SHARE-" + timestamp;
     }
 
     /**
@@ -49,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_collection("");
+        Object result = algo.create_collection("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -26,8 +26,7 @@ public class Algorithm {
      */
     public Map<String, Object> optimize_pulse(String pulse_id, Object objective) {
         logger.info("Executing optimize_pulse");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -40,7 +39,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        dict result = algo.design_pulse("", null);
+        Object result = algo.design_pulse("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

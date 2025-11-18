@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public String calculate_hash() {
         logger.info("Executing calculate_hash");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -58,7 +57,7 @@ public class Algorithm {
      */
     public boolean is_valid() {
         logger.info("Executing is_valid");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -71,7 +70,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.calculate_hash();
+        String result = algo.calculate_hash();
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

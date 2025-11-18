@@ -25,8 +25,7 @@ public class Algorithm {
      */
     public List<Object> inner_join(String table1, String table2, String on) {
         logger.info("Executing inner_join");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -34,8 +33,7 @@ public class Algorithm {
      */
     public List<Object> left_join(String table1, String table2, String on) {
         logger.info("Executing left_join");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -48,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_table("", null);
+        Object result = algo.create_table("", new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

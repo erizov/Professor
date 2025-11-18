@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public String inject_fault(String fault_type, String target, Object fault_func) {
         logger.info("Executing inject_fault");
-        String result = "" + fault_type + "_";
-        return "";
+        return null;
     }
 
     /**
@@ -26,7 +25,7 @@ public class Algorithm {
      */
     public boolean remove_fault(String fault_id) {
         logger.info("Executing remove_fault");
-        return null;
+        return false;
     }
 
     /**
@@ -34,7 +33,6 @@ public class Algorithm {
      */
     public Object latency_fault(Object delay_ms) {
         logger.info("Executing latency_fault");
-        long currentTime = System.currentTimeMillis();
         return null;
     }
 
@@ -51,9 +49,8 @@ public class Algorithm {
      */
     public Map<String, Object> run_experiment(String name, Object duration, Object fault_func) {
         logger.info("Executing run_experiment");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     public static Algorithm create() {
@@ -66,7 +63,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.inject_fault("", "", null);
+        String result = algo.inject_fault("", "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

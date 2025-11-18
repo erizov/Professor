@@ -33,8 +33,8 @@ public class Algorithm {
      */
     public String check_alerts() {
         logger.info("Executing check_alerts");
-        String result = "" + metric + " exceeded threshold";
-        return "";
+        Map<String, Object> result = new HashMap<>();
+        return result;
     }
 
     public static Algorithm create() {
@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_metric("", null);
+        Object result = algo.add_metric("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

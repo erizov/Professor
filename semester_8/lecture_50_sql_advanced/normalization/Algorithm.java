@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public boolean normalize_to_1nf(String table_name) {
         logger.info("Executing normalize_to_1nf");
-        return null;
+        return false;
     }
 
     /**
@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public boolean normalize_to_2nf(String table_name) {
         logger.info("Executing normalize_to_2nf");
-        return null;
+        return false;
     }
 
     /**
@@ -42,7 +42,7 @@ public class Algorithm {
      */
     public boolean normalize_to_3nf(String table_name) {
         logger.info("Executing normalize_to_3nf");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -55,7 +55,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_table("", null);
+        Object result = algo.add_table("", new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

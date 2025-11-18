@@ -26,8 +26,8 @@ public class Algorithm {
      */
     public boolean bridge_asset(String from_chain, String to_chain, String asset, Object amount) {
         logger.info("Executing bridge_asset");
-        String result = "" + from_chain + "_";
-        return "";
+        Map<String, Object> result = new HashMap<>();
+        return result;
     }
 
     /**
@@ -48,7 +48,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_chain("", "");
+        Object result = algo.register_chain("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

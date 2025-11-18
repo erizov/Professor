@@ -33,7 +33,7 @@ public class Algorithm {
      */
     public boolean establish_secure_connection() {
         logger.info("Executing establish_secure_connection");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -46,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        bytes result = algo.encrypt_message(null);
+        Object result = algo.encrypt_message(null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

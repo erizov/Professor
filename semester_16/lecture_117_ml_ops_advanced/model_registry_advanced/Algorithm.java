@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_model("", null, null);
+        Object result = algo.register_model("", null, new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

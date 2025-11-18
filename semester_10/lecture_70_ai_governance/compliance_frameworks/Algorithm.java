@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object register_standard(String standard_id, String name, List<String> controls) {
         logger.info("Executing register_standard");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -26,9 +25,8 @@ public class Algorithm {
      */
     public Map<String, Object> assess_compliance(String standard_id, String control_results, Object bool]) {
         logger.info("Executing assess_compliance");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     public static Algorithm create() {
@@ -41,7 +39,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_standard("", "", null);
+        Object result = algo.register_standard("", "", new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

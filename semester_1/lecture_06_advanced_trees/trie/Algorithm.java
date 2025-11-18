@@ -25,7 +25,7 @@ public class Algorithm {
      */
     public boolean search(String word) {
         logger.info("Executing search");
-        return null;
+        return false;
     }
 
     /**
@@ -33,7 +33,7 @@ public class Algorithm {
      */
     public boolean starts_with(String prefix) {
         logger.info("Executing starts_with");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -46,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.insert("");
+        Object result = algo.insert("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

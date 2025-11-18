@@ -25,7 +25,7 @@ public class Algorithm {
      */
     public boolean transfer(String from_asset, String to_asset, Object amount) {
         logger.info("Executing transfer");
-        return null;
+        return false;
     }
 
     /**
@@ -46,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_asset("", null);
+        Object result = algo.add_asset("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

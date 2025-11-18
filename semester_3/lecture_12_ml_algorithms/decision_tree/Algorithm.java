@@ -38,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        DecisionTreeNode result = algo.build_decision_tree(null, null, null);
+        Object result = algo.build_decision_tree(new ArrayList<>(), new ArrayList<>(), null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

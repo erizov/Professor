@@ -17,9 +17,8 @@ public class Algorithm {
      */
     public Object catalog_data(String data_id, String name, String location, String format) {
         logger.info("Executing catalog_data");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -56,7 +55,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.catalog_data("", "", "", "");
+        Object result = algo.catalog_data("", "", "", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

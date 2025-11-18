@@ -17,7 +17,7 @@ public class Algorithm {
      */
     public boolean propose(Object value) {
         logger.info("Executing propose");
-        return null;
+        return false;
     }
 
     /**
@@ -33,8 +33,7 @@ public class Algorithm {
      */
     public boolean propose(Object value) {
         logger.info("Executing propose");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return false;
     }
 
     /**
@@ -55,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        bool result = algo.propose(null);
+        boolean result = algo.propose(null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

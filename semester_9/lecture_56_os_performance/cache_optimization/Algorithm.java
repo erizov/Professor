@@ -17,7 +17,7 @@ public class Algorithm {
      */
     public Object get(String key) {
         logger.info("Executing get");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         return null;
     }
 
@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public Object put(String key, Object value) {
         logger.info("Executing put");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         return null;
     }
 
@@ -48,7 +48,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        Optional[any] result = algo.get("");
+        Object result = algo.get("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

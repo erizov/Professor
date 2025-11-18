@@ -33,8 +33,7 @@ public class Algorithm {
      */
     public Object add_rule(String rule_name, String condition_name, String action_name) {
         logger.info("Executing add_rule");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -55,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_condition("", null);
+        Object result = algo.add_condition("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -31,7 +31,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        dict result = algo.optimize_pipeline("");
+        Object result = algo.optimize_pipeline("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

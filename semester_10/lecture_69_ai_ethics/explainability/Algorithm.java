@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Map<String, Object> explain_prediction(Object model, List<Object> instance, List<String> feature_names) {
         logger.info("Executing explain_prediction");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -31,7 +30,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        dict result = algo.explain_prediction(null, null, null);
+        Object result = algo.explain_prediction(null, new ArrayList<>(), new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object store(String key, Object data, Object metadata) {
         logger.info("Executing store");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -34,8 +33,7 @@ public class Algorithm {
      */
     public List<Object> query(Object filter_func) {
         logger.info("Executing query");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -48,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.store("", null, null);
+        Object result = algo.store("", null, null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

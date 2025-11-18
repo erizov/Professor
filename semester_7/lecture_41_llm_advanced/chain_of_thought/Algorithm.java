@@ -17,9 +17,8 @@ public class Algorithm {
      */
     public String reason(String problem, Object steps) {
         logger.info("Executing reason");
-        String result = "Step " + i+1 + ": Analyzing ";
-        String result = "Based on reasoning: " + ', '.join(self.reasoning_steps) + "";
-        return "";
+        Map<String, Object> result = new HashMap<>();
+        return result;
     }
 
     /**
@@ -40,7 +39,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.reason("", null);
+        String result = algo.reason("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -25,8 +25,7 @@ public class Algorithm {
      */
     public String generate(String template_name, Object variables) {
         logger.info("Executing generate");
-        String result = "" +  + "";
-        return "";
+        return null;
     }
 
     /**
@@ -34,8 +33,7 @@ public class Algorithm {
      */
     public String generate_from_prompt(String prompt, Object max_length) {
         logger.info("Executing generate_from_prompt");
-        String result = "Generated content based on: " + prompt[:50] + "...";
-        return "";
+        return null;
     }
 
     public static Algorithm create() {
@@ -48,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_template("", "");
+        Object result = algo.add_template("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

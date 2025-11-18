@@ -17,9 +17,8 @@ public class Algorithm {
      */
     public Object register_event(String event_id, String event_type, Object data) {
         logger.info("Executing register_event");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -35,7 +34,7 @@ public class Algorithm {
      */
     public List<Object> detect_pattern(String pattern_id, Object time_window) {
         logger.info("Executing detect_pattern");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         return null;
     }
 
@@ -49,7 +48,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_event("", "", null);
+        Object result = algo.register_event("", "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

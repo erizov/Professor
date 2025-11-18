@@ -48,7 +48,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        any result = algo.quantize(null, null);
+        Object result = algo.quantize(null, null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

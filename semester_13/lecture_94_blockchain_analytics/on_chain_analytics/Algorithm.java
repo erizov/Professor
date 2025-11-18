@@ -33,7 +33,7 @@ public class Algorithm {
      */
     public Map<String, Object> analyze_volume(Object time_window) {
         logger.info("Executing analyze_volume");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
         return result;
     }
@@ -57,7 +57,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_transaction(null);
+        Object result = algo.add_transaction(null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -35,7 +35,7 @@ public class Algorithm {
      */
     public boolean deploy_template(String template_name) {
         logger.info("Executing deploy_template");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -48,7 +48,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.define_resource("", "", null);
+        Object result = algo.define_resource("", "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

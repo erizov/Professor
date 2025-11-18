@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object create_account(String address, Object balance) {
         logger.info("Executing create_account");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -26,9 +25,8 @@ public class Algorithm {
      */
     public String propose_block(String proposer, List<Object> transactions) {
         logger.info("Executing propose_block");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -36,7 +34,7 @@ public class Algorithm {
      */
     public boolean verify_block(String block_id) {
         logger.info("Executing verify_block");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -49,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_account("", null);
+        Object result = algo.create_account("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object register_user(String user_id, String username) {
         logger.info("Executing register_user");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -26,9 +25,8 @@ public class Algorithm {
      */
     public Object create_post(String post_id, String user_id, String content) {
         logger.info("Executing create_post");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -36,9 +34,8 @@ public class Algorithm {
      */
     public Object add_comment(String post_id, String user_id, String content) {
         logger.info("Executing add_comment");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -46,8 +43,7 @@ public class Algorithm {
      */
     public Map<String, Object> get_user_stats(String user_id) {
         logger.info("Executing get_user_stats");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -60,7 +56,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_user("", "");
+        Object result = algo.register_user("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

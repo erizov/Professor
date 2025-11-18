@@ -17,10 +17,8 @@ public class Algorithm {
      */
     public String create_backup(String system_id, Object data) {
         logger.info("Executing create_backup");
-        long currentTime = System.currentTimeMillis();
         long timestamp = System.currentTimeMillis();
-        String shareId = "SHARE-" + timestamp;
-        return "";
+        return "SHARE-" + timestamp;
     }
 
     /**
@@ -36,7 +34,7 @@ public class Algorithm {
      */
     public boolean recover(String system_id, String backup_id) {
         logger.info("Executing recover");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -49,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.create_backup("", null);
+        String result = algo.create_backup("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

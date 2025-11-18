@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public boolean transform_and_load(String data_id, String table_name, Object transform) {
         logger.info("Executing transform_and_load");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.store_raw_data("", null);
+        Object result = algo.store_raw_data("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

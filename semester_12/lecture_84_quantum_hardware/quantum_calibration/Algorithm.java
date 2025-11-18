@@ -39,7 +39,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        dict result = algo.calibrate_gate("", "", null);
+        Object result = algo.calibrate_gate("", "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

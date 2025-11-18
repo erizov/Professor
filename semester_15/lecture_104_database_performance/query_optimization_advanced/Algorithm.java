@@ -17,8 +17,8 @@ public class Algorithm {
      */
     public Map<String, Object> collect_statistics(String table, String column) {
         logger.info("Executing collect_statistics");
-        String result = "" + table + ".";
-        return "";
+        Map<String, Object> result = new HashMap<>();
+        return result;
     }
 
     /**
@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        dict result = algo.collect_statistics("", "");
+        Object result = algo.collect_statistics("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

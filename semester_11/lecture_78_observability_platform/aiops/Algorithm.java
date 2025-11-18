@@ -25,7 +25,7 @@ public class Algorithm {
      */
     public boolean detect_anomalies(String metric_name, Object threshold) {
         logger.info("Executing detect_anomalies");
-        return null;
+        return false;
     }
 
     /**
@@ -46,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.collect_metrics("", null);
+        Object result = algo.collect_metrics("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

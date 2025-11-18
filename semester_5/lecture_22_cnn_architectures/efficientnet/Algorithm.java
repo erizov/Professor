@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object add_mbconv_block(Object in_channels, Object out_channels, Object kernel_size, String stride, Object expansion) {
         logger.info("Executing add_mbconv_block");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -47,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_mbconv_block(null, null, null, "", null);
+        Object result = algo.add_mbconv_block(null, null, null, "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

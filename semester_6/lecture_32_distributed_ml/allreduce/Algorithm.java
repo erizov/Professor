@@ -30,7 +30,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        List[float] result = algo.reduce(null, "");
+        int result = algo.reduce(new ArrayList<>(), "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -25,9 +25,8 @@ public class Algorithm {
      */
     public Object start_trace(String trace_id, String operation) {
         logger.info("Executing start_trace");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -35,9 +34,8 @@ public class Algorithm {
      */
     public String start_span(String trace_id, String span_name) {
         logger.info("Executing start_span");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -45,7 +43,7 @@ public class Algorithm {
      */
     public Object end_span(String span_id) {
         logger.info("Executing end_span");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         return null;
     }
 
@@ -54,8 +52,7 @@ public class Algorithm {
      */
     public Map<String, Object> get_metric_stats(String name) {
         logger.info("Executing get_metric_stats");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -68,7 +65,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.record_metric("", null);
+        Object result = algo.record_metric("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

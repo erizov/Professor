@@ -17,7 +17,7 @@ public class Algorithm {
      */
     public Object cache_model(String model_id, Object model) {
         logger.info("Executing cache_model");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         return null;
     }
 
@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public Object get_model(String model_id) {
         logger.info("Executing get_model");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         return null;
     }
 
@@ -40,7 +40,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.cache_model("", null);
+        Object result = algo.cache_model("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

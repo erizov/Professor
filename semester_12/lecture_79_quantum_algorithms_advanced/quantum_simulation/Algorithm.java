@@ -38,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        List[complex] result = algo.simulate_hamiltonian(null, null, null);
+        List<Object> result = algo.simulate_hamiltonian(null, new ArrayList<>(), null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

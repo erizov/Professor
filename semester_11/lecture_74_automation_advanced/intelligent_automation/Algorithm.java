@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public boolean execute_workflow(String workflow_id, Object context) {
         logger.info("Executing execute_workflow");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_workflow("", null);
+        Object result = algo.create_workflow("", new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

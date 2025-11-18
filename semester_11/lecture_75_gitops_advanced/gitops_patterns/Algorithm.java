@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public boolean _app_of_apps(Object config) {
         logger.info("Executing _app_of_apps");
-        return null;
+        return false;
     }
 
     /**
@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public boolean _monorepo(Object config) {
         logger.info("Executing _monorepo");
-        return null;
+        return false;
     }
 
     /**
@@ -42,7 +42,7 @@ public class Algorithm {
      */
     public boolean _multi_repo(Object config) {
         logger.info("Executing _multi_repo");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -55,7 +55,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        bool result = algo.apply_pattern("", null);
+        boolean result = algo.apply_pattern("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

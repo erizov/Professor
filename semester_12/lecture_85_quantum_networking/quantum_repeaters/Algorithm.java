@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public boolean establish_link(String source, String destination, Object distance) {
         logger.info("Executing establish_link");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -39,7 +39,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_repeater("", null);
+        Object result = algo.add_repeater("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

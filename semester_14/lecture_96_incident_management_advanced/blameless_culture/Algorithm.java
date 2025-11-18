@@ -17,10 +17,8 @@ public class Algorithm {
      */
     public String create_incident(String title, String description, String impact) {
         logger.info("Executing create_incident");
-        long currentTime = System.currentTimeMillis();
         long timestamp = System.currentTimeMillis();
-        String shareId = "SHARE-" + timestamp;
-        return "";
+        return "SHARE-" + timestamp;
     }
 
     /**
@@ -49,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.create_incident("", "", "");
+        String result = algo.create_incident("", "", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

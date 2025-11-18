@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object add_request(String request_id, String prompt, Object max_tokens) {
         logger.info("Executing add_request");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -47,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_request("", "", null);
+        Object result = algo.add_request("", "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

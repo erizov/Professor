@@ -31,7 +31,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        bool result = algo.apply_pattern("", null);
+        boolean result = algo.apply_pattern("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

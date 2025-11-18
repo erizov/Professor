@@ -17,7 +17,7 @@ public class Algorithm {
      */
     public Object add_policy(String data_type, Object retention_days) {
         logger.info("Executing add_policy");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
         return result;
     }
@@ -27,7 +27,7 @@ public class Algorithm {
      */
     public Object register_data(String data_id, String data_type) {
         logger.info("Executing register_data");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
         return result;
     }
@@ -37,7 +37,7 @@ public class Algorithm {
      */
     public String get_expired() {
         logger.info("Executing get_expired");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         return null;
     }
 
@@ -51,7 +51,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_policy("", null);
+        Object result = algo.add_policy("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

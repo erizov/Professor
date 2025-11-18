@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object register_feature(String feature_name, String feature_type, String description) {
         logger.info("Executing register_feature");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -26,8 +25,7 @@ public class Algorithm {
      */
     public Object store_feature(String feature_name, String entity_id, Object value, String version) {
         logger.info("Executing store_feature");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -43,8 +41,7 @@ public class Algorithm {
      */
     public String get_features(String entity_id, List<String> feature_names, String version) {
         logger.info("Executing get_features");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -57,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_feature("", "", "");
+        Object result = algo.register_feature("", "", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

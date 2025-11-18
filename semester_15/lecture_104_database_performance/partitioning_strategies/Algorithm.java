@@ -25,8 +25,7 @@ public class Algorithm {
      */
     public String partition(String strategy_name, List<Object> data, Object config) {
         logger.info("Executing partition");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -39,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_strategy("", "");
+        Object result = algo.register_strategy("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

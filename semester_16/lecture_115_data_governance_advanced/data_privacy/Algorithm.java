@@ -25,8 +25,7 @@ public class Algorithm {
      */
     public Object record_consent(String user_id, String policy_id, Object granted) {
         logger.info("Executing record_consent");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -48,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_policy("", null);
+        Object result = algo.add_policy("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

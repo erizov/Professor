@@ -46,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        float result = algo.get_price("");
+        int result = algo.get_price("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

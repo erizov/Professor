@@ -17,9 +17,8 @@ public class Algorithm {
      */
     public String initiate_swap(String swap_id, Object amount, String secret_hash, String recipient) {
         logger.info("Executing initiate_swap");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -27,7 +26,7 @@ public class Algorithm {
      */
     public boolean participate_swap(String swap_id, Object amount, String secret_hash) {
         logger.info("Executing participate_swap");
-        return null;
+        return false;
     }
 
     /**
@@ -35,7 +34,7 @@ public class Algorithm {
      */
     public boolean redeem_swap(String swap_id, String secret) {
         logger.info("Executing redeem_swap");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -48,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.initiate_swap("", null, "", "");
+        String result = algo.initiate_swap("", null, "", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

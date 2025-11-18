@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public boolean vote(String proposal_id, String voter, String choice) {
         logger.info("Executing vote");
-        return null;
+        return false;
     }
 
     /**
@@ -34,8 +34,7 @@ public class Algorithm {
      */
     public Map<String, Object> get_results(String proposal_id) {
         logger.info("Executing get_results");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -48,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_proposal("", "");
+        Object result = algo.create_proposal("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

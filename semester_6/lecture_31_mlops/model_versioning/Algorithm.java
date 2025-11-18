@@ -17,8 +17,8 @@ public class Algorithm {
      */
     public String create_version(String model_id, Object model, Object metadata) {
         logger.info("Executing create_version");
-        String result = "v" + len(self.versions.get(model_id, [])) + 1 + "";
-        return "";
+        Map<String, Object> result = new HashMap<>();
+        return result;
     }
 
     /**
@@ -39,7 +39,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.create_version("", null, null);
+        String result = algo.create_version("", null, null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

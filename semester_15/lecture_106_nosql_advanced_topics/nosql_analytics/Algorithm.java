@@ -26,8 +26,7 @@ public class Algorithm {
      */
     public Map<String, Object> query_analytics(String collection, Object query) {
         logger.info("Executing query_analytics");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -40,7 +39,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        dict result = algo.analyze_collection("");
+        Object result = algo.analyze_collection("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

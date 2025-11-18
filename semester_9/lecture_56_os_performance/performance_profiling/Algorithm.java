@@ -17,7 +17,7 @@ public class Algorithm {
      */
     public Object start_profile(String profile_id) {
         logger.info("Executing start_profile");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         return null;
     }
 
@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int end_profile(String profile_id) {
         logger.info("Executing end_profile");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         return null;
     }
 
@@ -49,7 +49,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.start_profile("");
+        Object result = algo.start_profile("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

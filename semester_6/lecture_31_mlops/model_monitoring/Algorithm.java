@@ -25,7 +25,7 @@ public class Algorithm {
      */
     public boolean check_drift(String metric_name, Object baseline, Object threshold) {
         logger.info("Executing check_drift");
-        return null;
+        return false;
     }
 
     /**
@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.record_metric("", null);
+        Object result = algo.record_metric("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

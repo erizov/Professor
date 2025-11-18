@@ -33,8 +33,7 @@ public class Algorithm {
      */
     public String establish_path(String source, String destination) {
         logger.info("Executing establish_path");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -47,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_node("");
+        Object result = algo.add_node("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

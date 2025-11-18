@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public boolean apply_policy(String data_id, String policy_id) {
         logger.info("Executing apply_policy");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
         return result;
     }
@@ -36,7 +36,7 @@ public class Algorithm {
      */
     public String cleanup_expired() {
         logger.info("Executing cleanup_expired");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         return null;
     }
 
@@ -50,7 +50,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_policy("", null);
+        Object result = algo.create_policy("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

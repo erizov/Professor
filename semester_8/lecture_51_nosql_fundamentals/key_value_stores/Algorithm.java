@@ -17,7 +17,7 @@ public class Algorithm {
      */
     public Object put(String key, Object value, Object ttl) {
         logger.info("Executing put");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         return null;
     }
 
@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public Object get(String key) {
         logger.info("Executing get");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         return null;
     }
 
@@ -35,7 +35,7 @@ public class Algorithm {
      */
     public boolean delete(String key) {
         logger.info("Executing delete");
-        return null;
+        return false;
     }
 
     /**
@@ -43,7 +43,7 @@ public class Algorithm {
      */
     public boolean exists(String key) {
         logger.info("Executing exists");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -56,7 +56,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.put("", null, null);
+        Object result = algo.put("", null, null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

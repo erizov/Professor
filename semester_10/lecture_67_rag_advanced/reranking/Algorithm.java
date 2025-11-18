@@ -31,7 +31,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        List[dict] result = algo.rerank(null, "");
+        List<Object> result = algo.rerank(new ArrayList<>(), "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object add_member(String member_id, Object join_date) {
         logger.info("Executing add_member");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -26,9 +25,8 @@ public class Algorithm {
      */
     public Object record_activity(String member_id, String activity_type) {
         logger.info("Executing record_activity");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -36,8 +34,7 @@ public class Algorithm {
      */
     public Map<String, Object> calculate_metrics() {
         logger.info("Executing calculate_metrics");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -50,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_member("", null);
+        Object result = algo.add_member("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

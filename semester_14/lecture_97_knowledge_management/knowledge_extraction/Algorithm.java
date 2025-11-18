@@ -40,7 +40,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        List[dict] result = algo.extract_entities("");
+        List<Object> result = algo.extract_entities("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

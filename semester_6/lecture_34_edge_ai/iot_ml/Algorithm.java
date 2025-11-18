@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public boolean deploy_model(String device_id, Object model) {
         logger.info("Executing deploy_model");
-        return null;
+        return false;
     }
 
     /**
@@ -55,7 +55,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_device("", "");
+        Object result = algo.register_device("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

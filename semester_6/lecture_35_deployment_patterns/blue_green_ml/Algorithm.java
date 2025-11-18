@@ -41,8 +41,7 @@ public class Algorithm {
      */
     public Map<String, Object> compare_models() {
         logger.info("Executing compare_models");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -55,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.deploy_green_model(null);
+        Object result = algo.deploy_green_model(null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

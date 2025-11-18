@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object create_tenant(String tenant_id, Object config) {
         logger.info("Executing create_tenant");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -55,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_tenant("", null);
+        Object result = algo.create_tenant("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

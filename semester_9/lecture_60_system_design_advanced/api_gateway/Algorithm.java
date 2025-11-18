@@ -33,8 +33,7 @@ public class Algorithm {
      */
     public Map<String, Object> handle_request(String path, String method, Object headers, Object body) {
         logger.info("Executing handle_request");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -55,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_route("", null);
+        Object result = algo.register_route("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

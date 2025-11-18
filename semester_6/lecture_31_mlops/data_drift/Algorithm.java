@@ -33,8 +33,7 @@ public class Algorithm {
      */
     public Map<String, Object> detect_drift(Object threshold) {
         logger.info("Executing detect_drift");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -47,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.set_reference(null);
+        Object result = algo.set_reference(new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

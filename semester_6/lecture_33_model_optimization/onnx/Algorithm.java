@@ -17,8 +17,8 @@ public class Algorithm {
      */
     public String export_model(String model_id, Object model) {
         logger.info("Executing export_model");
-        String result = "" + model_id + ".onnx";
-        return "";
+        Map<String, Object> result = new HashMap<>();
+        return result;
     }
 
     /**
@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.export_model("", null);
+        String result = algo.export_model("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

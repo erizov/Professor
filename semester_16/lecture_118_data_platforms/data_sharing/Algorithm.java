@@ -17,9 +17,6 @@ public class Algorithm {
      */
     public String share(String data_id, String recipient, List<String> permissions) {
         logger.info("Executing share");
-        long currentTime = System.currentTimeMillis();
-        long timestamp = System.currentTimeMillis();
-        String shareId = "SHARE-" + timestamp;
         long timestamp = System.currentTimeMillis();
         return "SHARE-" + timestamp;
     }
@@ -29,7 +26,7 @@ public class Algorithm {
      */
     public boolean check_permission(String data_id, String user, String permission) {
         logger.info("Executing check_permission");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -42,7 +39,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.share("", "", null);
+        String result = algo.share("", "", new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

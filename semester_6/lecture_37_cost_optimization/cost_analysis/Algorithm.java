@@ -17,9 +17,8 @@ public class Algorithm {
      */
     public Object record_cost(String cost_id, Object amount, String category, String description) {
         logger.info("Executing record_cost");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -35,8 +34,7 @@ public class Algorithm {
      */
     public String get_cost_by_category() {
         logger.info("Executing get_cost_by_category");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -57,7 +55,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.record_cost("", null, "", "");
+        Object result = algo.record_cost("", null, "", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

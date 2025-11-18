@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public String get_clock(String node_id) {
         logger.info("Executing get_clock");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -55,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        Dict[str, int] result = algo.get_clock("");
+        String result = algo.get_clock("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -35,7 +35,7 @@ public class Algorithm {
      */
     public boolean commit(String tx_id) {
         logger.info("Executing commit");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -48,7 +48,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.begin("");
+        Object result = algo.begin("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

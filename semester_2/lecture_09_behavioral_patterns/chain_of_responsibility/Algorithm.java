@@ -33,8 +33,7 @@ public class Algorithm {
      */
     public String handle(String request) {
         logger.info("Executing handle");
-        String result = "ConcreteHandlerA handled " + request + "";
-        return "";
+        return null;
     }
 
     /**
@@ -42,8 +41,7 @@ public class Algorithm {
      */
     public String handle(String request) {
         logger.info("Executing handle");
-        String result = "ConcreteHandlerB handled " + request + "";
-        return "";
+        return null;
     }
 
     public static Algorithm create() {
@@ -56,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        'Handler' result = algo.set_next(null);
+        Object result = algo.set_next(null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

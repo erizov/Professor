@@ -25,9 +25,8 @@ public class Algorithm {
      */
     public Object publish(String event_type, Object event_data) {
         logger.info("Executing publish");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -48,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.subscribe("", null);
+        Object result = algo.subscribe("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

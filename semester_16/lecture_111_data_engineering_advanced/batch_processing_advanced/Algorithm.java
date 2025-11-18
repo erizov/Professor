@@ -17,7 +17,7 @@ public class Algorithm {
      */
     public List<Object> add_item(Object item) {
         logger.info("Executing add_item");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         return null;
     }
 
@@ -39,7 +39,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        Optional[List[any]] result = algo.add_item(null);
+        List<Object> result = algo.add_item(null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

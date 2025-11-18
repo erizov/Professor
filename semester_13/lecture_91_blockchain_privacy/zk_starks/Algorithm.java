@@ -17,9 +17,9 @@ public class Algorithm {
      */
     public Map<String, Object> prove(Object computation, List<Object> witness) {
         logger.info("Executing prove");
-        long currentTime = System.currentTimeMillis();
-        String result = "STARK_PROOF_" + hash(str(computation) + str(witness)) + "";
-        return "";
+        long timestamp = System.currentTimeMillis();
+        Map<String, Object> result = new HashMap<>();
+        return result;
     }
 
     /**
@@ -27,7 +27,7 @@ public class Algorithm {
      */
     public boolean verify(Object proof, List<Object> public_inputs) {
         logger.info("Executing verify");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -40,7 +40,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        dict result = algo.prove(null, null);
+        Object result = algo.prove(null, new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

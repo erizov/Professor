@@ -17,9 +17,9 @@ public class Algorithm {
      */
     public Map<String, Object> generate_proof(String statement, String witness) {
         logger.info("Executing generate_proof");
-        long currentTime = System.currentTimeMillis();
-        String result = "ZK_PROOF_" + hash(statement + witness) + "";
-        return "";
+        long timestamp = System.currentTimeMillis();
+        Map<String, Object> result = new HashMap<>();
+        return result;
     }
 
     /**
@@ -27,7 +27,7 @@ public class Algorithm {
      */
     public boolean verify_proof(String statement, String proof) {
         logger.info("Executing verify_proof");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -40,7 +40,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        dict result = algo.generate_proof("", "");
+        Object result = algo.generate_proof("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

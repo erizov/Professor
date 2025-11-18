@@ -26,8 +26,8 @@ public class Algorithm {
      */
     public boolean deploy(String developer_id, String service_name, String version) {
         logger.info("Executing deploy");
-        String result = "" + service_name + "-";
-        return "";
+        Map<String, Object> result = new HashMap<>();
+        return result;
     }
 
     /**
@@ -48,7 +48,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_service("", null);
+        Object result = algo.register_service("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

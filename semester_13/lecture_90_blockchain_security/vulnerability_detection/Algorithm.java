@@ -17,7 +17,7 @@ public class Algorithm {
      */
     public Map<String, Object> scan(String target, String scan_type) {
         logger.info("Executing scan");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
         return result;
     }
@@ -41,7 +41,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        dict result = algo.scan("", "");
+        Object result = algo.scan("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

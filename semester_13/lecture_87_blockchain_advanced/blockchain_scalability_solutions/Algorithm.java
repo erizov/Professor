@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object add_solution(String solution_id, String name, String solution_type) {
         logger.info("Executing add_solution");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -39,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_solution("", "", "");
+        Object result = algo.add_solution("", "", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

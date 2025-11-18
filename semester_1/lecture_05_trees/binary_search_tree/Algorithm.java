@@ -33,7 +33,7 @@ public class Algorithm {
      */
     public boolean search(Object val) {
         logger.info("Executing search");
-        return null;
+        return false;
     }
 
     /**
@@ -41,7 +41,7 @@ public class Algorithm {
      */
     public boolean _search(Object root, Object val) {
         logger.info("Executing _search");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -54,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.insert(null);
+        Object result = algo.insert(null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

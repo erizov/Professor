@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public boolean launch_kernel(String kernel_name, String device_id, String grid_size, Object block_size) {
         logger.info("Executing launch_kernel");
-        return null;
+        return false;
     }
 
     /**
@@ -34,8 +34,8 @@ public class Algorithm {
      */
     public String allocate_memory(String device_id, Object size) {
         logger.info("Executing allocate_memory");
-        String result = "ptr_" + len(self.devices) + "";
-        return "";
+        Map<String, Object> result = new HashMap<>();
+        return result;
     }
 
     public static Algorithm create() {
@@ -48,7 +48,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_device("", null);
+        Object result = algo.register_device("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

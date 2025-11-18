@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public boolean check_permission(String username, String permission) {
         logger.info("Executing check_permission");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_user("", "", "");
+        Object result = algo.add_user("", "", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

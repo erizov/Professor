@@ -25,8 +25,8 @@ public class Algorithm {
      */
     public Map<String, Object> validate(String knowledge_id, Object knowledge) {
         logger.info("Executing validate");
-        String result = "" + validator_name + ": ";
-        return "";
+        Map<String, Object> result = new HashMap<>();
+        return result;
     }
 
     public static Algorithm create() {
@@ -39,7 +39,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_validator("", "");
+        Object result = algo.add_validator("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

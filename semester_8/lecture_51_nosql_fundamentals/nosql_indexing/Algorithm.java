@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object create_index(String collection, String field) {
         logger.info("Executing create_index");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -26,8 +25,7 @@ public class Algorithm {
      */
     public Object build_index(String collection, String field) {
         logger.info("Executing build_index");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -48,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_index("", "");
+        Object result = algo.create_index("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

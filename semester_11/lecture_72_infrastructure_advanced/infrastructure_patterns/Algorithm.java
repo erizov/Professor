@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public boolean _microservices(Object config) {
         logger.info("Executing _microservices");
-        return null;
+        return false;
     }
 
     /**
@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public boolean _serverless(Object config) {
         logger.info("Executing _serverless");
-        return null;
+        return false;
     }
 
     /**
@@ -42,7 +42,7 @@ public class Algorithm {
      */
     public boolean _event_driven(Object config) {
         logger.info("Executing _event_driven");
-        return null;
+        return false;
     }
 
     /**
@@ -50,7 +50,7 @@ public class Algorithm {
      */
     public boolean _caching(Object config) {
         logger.info("Executing _caching");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -63,7 +63,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        bool result = algo.apply_pattern("", null);
+        boolean result = algo.apply_pattern("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

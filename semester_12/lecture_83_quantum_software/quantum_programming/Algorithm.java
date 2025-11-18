@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public boolean compile_program(String program_id) {
         logger.info("Executing compile_program");
-        return null;
+        return false;
     }
 
     /**
@@ -48,7 +48,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_program("", "");
+        Object result = algo.create_program("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

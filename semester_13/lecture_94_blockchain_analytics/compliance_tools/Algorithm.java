@@ -17,9 +17,8 @@ public class Algorithm {
      */
     public Object log_audit_event(String event_id, String user, String action, String resource) {
         logger.info("Executing log_audit_event");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -35,7 +34,7 @@ public class Algorithm {
      */
     public boolean check_policy(String policy_id, Object context) {
         logger.info("Executing check_policy");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -48,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.log_audit_event("", "", "", "");
+        Object result = algo.log_audit_event("", "", "", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

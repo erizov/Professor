@@ -35,7 +35,7 @@ public class Algorithm {
      */
     public boolean request_vote(String candidate) {
         logger.info("Executing request_vote");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -48,7 +48,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_node("");
+        Object result = algo.add_node("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

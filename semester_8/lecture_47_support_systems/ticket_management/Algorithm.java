@@ -17,7 +17,7 @@ public class Algorithm {
      */
     public Object create_ticket(String ticket_id, String title, String priority) {
         logger.info("Executing create_ticket");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
         return result;
     }
@@ -27,7 +27,7 @@ public class Algorithm {
      */
     public boolean update_status(String ticket_id, String status) {
         logger.info("Executing update_status");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -40,7 +40,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_ticket("", "", "");
+        Object result = algo.create_ticket("", "", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

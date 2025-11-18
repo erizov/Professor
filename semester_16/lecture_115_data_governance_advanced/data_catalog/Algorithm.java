@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object register_dataset(String dataset_id, String name, String description, Object schema) {
         logger.info("Executing register_dataset");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -26,8 +25,7 @@ public class Algorithm {
      */
     public Object add_metadata(String dataset_id, Object metadata) {
         logger.info("Executing add_metadata");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -56,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_dataset("", "", "", null);
+        Object result = algo.register_dataset("", "", "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

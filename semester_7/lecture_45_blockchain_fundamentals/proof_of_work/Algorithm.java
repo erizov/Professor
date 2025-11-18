@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public boolean verify_block(Object block) {
         logger.info("Executing verify_block");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -39,7 +39,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        dict result = algo.mine_block(null);
+        Object result = algo.mine_block(null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

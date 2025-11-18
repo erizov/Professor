@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object add_lora_adapter(String layer_name, Object rank) {
         logger.info("Executing add_lora_adapter");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -34,8 +33,7 @@ public class Algorithm {
      */
     public String generate(String prompt, Object max_tokens) {
         logger.info("Executing generate");
-        String result = "Generated response for: " + prompt + "";
-        return "";
+        return null;
     }
 
     public static Algorithm create() {
@@ -48,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_lora_adapter("", null);
+        Object result = algo.add_lora_adapter("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public boolean is_enabled(String feature_name, String user_id) {
         logger.info("Executing is_enabled");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_feature("", null);
+        Object result = algo.create_feature("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

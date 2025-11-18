@@ -25,9 +25,8 @@ public class Algorithm {
      */
     public Object create_proposal(String proposal_id, String description, String proposer) {
         logger.info("Executing create_proposal");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -35,7 +34,7 @@ public class Algorithm {
      */
     public boolean vote(String proposal_id, String member, Object support) {
         logger.info("Executing vote");
-        return null;
+        return false;
     }
 
     /**
@@ -43,8 +42,7 @@ public class Algorithm {
      */
     public Map<String, Object> get_result(String proposal_id) {
         logger.info("Executing get_result");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -57,7 +55,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_member("", null);
+        Object result = algo.add_member("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

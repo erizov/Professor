@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public boolean _memory_coalescing(Object config) {
         logger.info("Executing _memory_coalescing");
-        return null;
+        return false;
     }
 
     /**
@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public boolean _shared_memory(Object config) {
         logger.info("Executing _shared_memory");
-        return null;
+        return false;
     }
 
     /**
@@ -42,7 +42,7 @@ public class Algorithm {
      */
     public boolean _warp_divergence(Object config) {
         logger.info("Executing _warp_divergence");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -55,7 +55,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        bool result = algo.apply_optimization("", null);
+        boolean result = algo.apply_optimization("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

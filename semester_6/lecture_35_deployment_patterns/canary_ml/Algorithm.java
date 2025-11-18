@@ -33,7 +33,7 @@ public class Algorithm {
      */
     public boolean should_promote() {
         logger.info("Executing should_promote");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -46,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.deploy_canary_model(null);
+        Object result = algo.deploy_canary_model(null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object add_content(String content_id, String title, String content, List<String> tags) {
         logger.info("Executing add_content");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -26,8 +25,7 @@ public class Algorithm {
      */
     public Object create_collection(String collection_id, String name) {
         logger.info("Executing create_collection");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -56,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_content("", "", "", null);
+        Object result = algo.add_content("", "", "", new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -49,7 +49,7 @@ public class Algorithm {
      */
     public boolean parallel_run_migration(Object source, Object target) {
         logger.info("Executing parallel_run_migration");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -62,7 +62,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_strategy("", "");
+        Object result = algo.register_strategy("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

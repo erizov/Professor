@@ -30,7 +30,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.hash("");
+        String result = algo.hash("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

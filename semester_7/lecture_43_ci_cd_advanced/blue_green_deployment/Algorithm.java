@@ -33,8 +33,7 @@ public class Algorithm {
      */
     public Object complete_switch() {
         logger.info("Executing complete_switch");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -42,8 +41,7 @@ public class Algorithm {
      */
     public Object rollback() {
         logger.info("Executing rollback");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -64,7 +62,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.deploy_green("");
+        Object result = algo.deploy_green("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -41,7 +41,7 @@ public class Algorithm {
      */
     public boolean delete(Object key) {
         logger.info("Executing delete");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {

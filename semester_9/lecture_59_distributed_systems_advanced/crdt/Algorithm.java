@@ -33,8 +33,7 @@ public class Algorithm {
      */
     public Object set_value(String key, Object value) {
         logger.info("Executing set_value");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -63,7 +62,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.set_node_id("");
+        Object result = algo.set_node_id("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

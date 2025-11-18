@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public boolean validate_deployment(Object deployment) {
         logger.info("Executing validate_deployment");
-        return null;
+        return false;
     }
 
     /**
@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public Object audit(String action, String user, Object details) {
         logger.info("Executing audit");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
         return result;
     }
@@ -49,7 +49,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_policy("", null);
+        Object result = algo.add_policy("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

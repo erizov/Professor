@@ -38,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        List[dict] result = algo.row_number(null, "");
+        List<Object> result = algo.row_number(new ArrayList<>(), "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

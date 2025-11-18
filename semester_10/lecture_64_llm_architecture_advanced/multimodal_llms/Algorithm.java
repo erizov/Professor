@@ -54,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        List[float] result = algo.encode_text("");
+        int result = algo.encode_text("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -17,7 +17,7 @@ public class Algorithm {
      */
     public Object log(String user, String action, String resource, Object details) {
         logger.info("Executing log");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
         return result;
     }
@@ -40,7 +40,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.log("", "", "", null);
+        Object result = algo.log("", "", "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public List<Object> pivot(String table_name, String index_col, List<String> columns, String values) {
         logger.info("Executing pivot");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -40,7 +39,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        List[dict] result = algo.pivot("", "", null, "");
+        List<Object> result = algo.pivot("", "", new ArrayList<>(), "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

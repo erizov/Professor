@@ -34,8 +34,7 @@ public class Algorithm {
      */
     public Object scale_horizontal(Object num_nodes) {
         logger.info("Executing scale_horizontal");
-        String result = "node_" + len(self.nodes) + i + "";
-        return "";
+        return null;
     }
 
     /**
@@ -57,7 +56,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_node("", null);
+        Object result = algo.add_node("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

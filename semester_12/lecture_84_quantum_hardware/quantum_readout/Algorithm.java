@@ -25,7 +25,7 @@ public class Algorithm {
      */
     public int measure_qubit(String qubit_id) {
         logger.info("Executing measure_qubit");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
         return result;
     }
@@ -48,7 +48,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.configure_readout("", null);
+        Object result = algo.configure_readout("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

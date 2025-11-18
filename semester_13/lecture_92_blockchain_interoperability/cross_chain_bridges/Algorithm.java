@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object create_bridge(String bridge_id, String chain_a, String chain_b) {
         logger.info("Executing create_bridge");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -26,9 +25,8 @@ public class Algorithm {
      */
     public String transfer(String bridge_id, String from_chain, String to_chain, String asset, Object amount) {
         logger.info("Executing transfer");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -36,7 +34,7 @@ public class Algorithm {
      */
     public boolean complete_transfer(String transfer_id) {
         logger.info("Executing complete_transfer");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -49,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_bridge("", "", "");
+        Object result = algo.create_bridge("", "", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

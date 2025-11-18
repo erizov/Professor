@@ -25,7 +25,7 @@ public class Algorithm {
      */
     public Map<String, Object> sign(String ring_id, String message, String signer_key) {
         logger.info("Executing sign");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
         return result;
     }
@@ -35,7 +35,7 @@ public class Algorithm {
      */
     public boolean verify(Object signature) {
         logger.info("Executing verify");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -48,7 +48,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_ring("", null);
+        Object result = algo.create_ring("", new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

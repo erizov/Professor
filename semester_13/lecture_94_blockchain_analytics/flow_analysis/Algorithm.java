@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object add_node(String node_id, String node_type) {
         logger.info("Executing add_node");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -63,7 +62,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_node("", "");
+        Object result = algo.add_node("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

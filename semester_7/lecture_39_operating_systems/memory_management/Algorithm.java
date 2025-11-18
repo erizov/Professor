@@ -17,10 +17,8 @@ public class Algorithm {
      */
     public String allocate(Object size) {
         logger.info("Executing allocate");
-        long currentTime = System.currentTimeMillis();
         long timestamp = System.currentTimeMillis();
-        String shareId = "SHARE-" + timestamp;
-        return "";
+        return "SHARE-" + timestamp;
     }
 
     /**
@@ -28,7 +26,7 @@ public class Algorithm {
      */
     public boolean deallocate(String block_id) {
         logger.info("Executing deallocate");
-        return null;
+        return false;
     }
 
     /**
@@ -50,7 +48,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        Optional[str] result = algo.allocate(null);
+        String result = algo.allocate(null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

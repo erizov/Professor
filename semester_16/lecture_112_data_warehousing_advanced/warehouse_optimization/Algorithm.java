@@ -39,7 +39,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.optimize_query("");
+        String result = algo.optimize_query("");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

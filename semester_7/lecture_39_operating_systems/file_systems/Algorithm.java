@@ -43,7 +43,7 @@ public class Algorithm {
      */
     public boolean delete_file(String path) {
         logger.info("Executing delete_file");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -56,7 +56,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_file("", "");
+        Object result = algo.create_file("", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

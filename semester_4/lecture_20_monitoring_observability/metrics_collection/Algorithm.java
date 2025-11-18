@@ -17,7 +17,7 @@ public class Algorithm {
      */
     public Object record_metric(String metric_name, Object value, Object tags) {
         logger.info("Executing record_metric");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
         return result;
     }
@@ -41,7 +41,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.record_metric("", null, null);
+        Object result = algo.record_metric("", null, null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

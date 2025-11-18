@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        tuple result = algo.generate_key_pair("", null);
+        Object result = algo.generate_key_pair("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

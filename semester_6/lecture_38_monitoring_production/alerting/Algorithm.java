@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object add_rule(String name, Object condition, String severity) {
         logger.info("Executing add_rule");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -34,9 +33,8 @@ public class Algorithm {
      */
     public List<Object> check_metrics(Object metrics) {
         logger.info("Executing check_metrics");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -57,7 +55,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_rule("", null, "");
+        Object result = algo.add_rule("", null, "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

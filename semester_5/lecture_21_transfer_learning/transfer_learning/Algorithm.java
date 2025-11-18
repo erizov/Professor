@@ -39,7 +39,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.load_pretrained("", null);
+        Object result = algo.load_pretrained("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

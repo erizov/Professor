@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public boolean transfer(String token_id, String from_address, String to_address) {
         logger.info("Executing transfer");
-        return null;
+        return false;
     }
 
     /**
@@ -47,7 +47,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.mint("", "", null);
+        Object result = algo.mint("", "", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

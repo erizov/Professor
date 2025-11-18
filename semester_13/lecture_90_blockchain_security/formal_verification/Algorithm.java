@@ -25,7 +25,7 @@ public class Algorithm {
      */
     public boolean verify(String spec_id, Object code) {
         logger.info("Executing verify");
-        return null;
+        return false;
     }
 
     /**
@@ -33,7 +33,7 @@ public class Algorithm {
      */
     public boolean get_proof(String spec_id) {
         logger.info("Executing get_proof");
-        return null;
+        return false;
     }
 
     public static Algorithm create() {
@@ -46,7 +46,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_specification("", null);
+        Object result = algo.add_specification("", null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

@@ -38,7 +38,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        List[float] result = algo.vectorize_operation(null, null);
+        int result = algo.vectorize_operation(null, new ArrayList<>());
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

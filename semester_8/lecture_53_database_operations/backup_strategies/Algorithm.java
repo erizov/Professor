@@ -17,9 +17,8 @@ public class Algorithm {
      */
     public String create_backup(Object data, String backup_type) {
         logger.info("Executing create_backup");
-        long currentTime = System.currentTimeMillis();
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        long timestamp = System.currentTimeMillis();
+        return null;
     }
 
     /**
@@ -35,7 +34,7 @@ public class Algorithm {
      */
     public int cleanup_old_backups() {
         logger.info("Executing cleanup_old_backups");
-        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
         return null;
     }
 
@@ -57,7 +56,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.create_backup(null, "");
+        String result = algo.create_backup(null, "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }

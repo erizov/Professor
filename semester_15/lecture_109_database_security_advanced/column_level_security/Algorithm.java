@@ -17,8 +17,7 @@ public class Algorithm {
      */
     public Object grant_access(String user, String table, String column) {
         logger.info("Executing grant_access");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     /**
@@ -34,7 +33,7 @@ public class Algorithm {
      */
     public boolean can_access(String user, String table, String column) {
         logger.info("Executing can_access");
-        return null;
+        return false;
     }
 
     /**
@@ -42,8 +41,7 @@ public class Algorithm {
      */
     public Map<String, Object> filter_columns(String user, String table, Object row) {
         logger.info("Executing filter_columns");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return null;
     }
 
     public static Algorithm create() {
@@ -56,7 +54,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.grant_access("", "", "");
+        Object result = algo.grant_access("", "", "");
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }
