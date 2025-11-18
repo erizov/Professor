@@ -1065,6 +1065,292 @@ class BTree:
             if index == start:
                 break
         return False''',
+    
+    'k_means': '''def k_means(data: List[List[float]], k: int, max_iters: int = 100) -> List[List[float]]:
+    """K-means clustering algorithm."""
+    import random
+    import math
+    
+    n = len(data)
+    dim = len(data[0]) if data else 0
+    
+    # Initialize centroids randomly
+    centroids = [data[random.randint(0, n - 1)][:] for _ in range(k)]
+    
+    for _ in range(max_iters):
+        # Assign points to nearest centroid
+        clusters = [[] for _ in range(k)]
+        for point in data:
+            distances = [math.sqrt(sum((point[i] - centroids[j][i]) ** 2 
+                                      for i in range(dim))) 
+                        for j in range(k)]
+            nearest = distances.index(min(distances))
+            clusters[nearest].append(point)
+        
+        # Update centroids
+        new_centroids = []
+        for cluster in clusters:
+            if cluster:
+                new_centroid = [sum(point[i] for point in cluster) / len(cluster) 
+                               for i in range(dim)]
+                new_centroids.append(new_centroid)
+            else:
+                new_centroids.append(centroids[clusters.index(cluster)])
+        
+        if new_centroids == centroids:
+            break
+        centroids = new_centroids
+    
+    return centroids''',
+    
+    'logistic_regression': '''def sigmoid(z: float) -> float:
+    """Sigmoid activation function."""
+    import math
+    return 1 / (1 + math.exp(-z))
+
+def logistic_regression(X: List[List[float]], y: List[int], 
+                       learning_rate: float = 0.01, iterations: int = 1000) -> List[float]:
+    """Logistic regression using gradient descent."""
+    m, n = len(X), len(X[0]) if X else 0
+    weights = [0.0] * n
+    bias = 0.0
+    
+    for _ in range(iterations):
+        z = [sum(weights[j] * X[i][j] for j in range(n)) + bias for i in range(m)]
+        predictions = [sigmoid(zi) for zi in z]
+        
+        dw = [sum((predictions[i] - y[i]) * X[i][j] for i in range(m)) / m 
+              for j in range(n)]
+        db = sum(predictions[i] - y[i] for i in range(m)) / m
+        
+        weights = [weights[j] - learning_rate * dw[j] for j in range(n)]
+        bias -= learning_rate * db
+    
+    return weights + [bias]
+
+def predict_logistic(weights: List[float], X: List[float]) -> float:
+    """Predict probability using logistic regression."""
+    bias = weights[-1]
+    z = sum(weights[i] * X[i] for i in range(len(X))) + bias
+    return sigmoid(z)''',
+    
+    'naive_bayes': '''def naive_bayes(X_train: List[List[any]], y_train: List[any], 
+                  X_test: List[any]) -> any:
+    """Naive Bayes classifier (simplified)."""
+    from collections import defaultdict, Counter
+    
+    # Calculate class priors
+    class_counts = Counter(y_train)
+    total = len(y_train)
+    priors = {cls: count / total for cls, count in class_counts.items()}
+    
+    # Calculate feature likelihoods (simplified - assumes categorical features)
+    likelihoods = defaultdict(lambda: defaultdict(lambda: defaultdict(float)))
+    
+    for cls in class_counts:
+        class_indices = [i for i, label in enumerate(y_train) if label == cls]
+        for feature_idx in range(len(X_train[0])):
+            feature_values = [X_train[i][feature_idx] for i in class_indices]
+            value_counts = Counter(feature_values)
+            for value, count in value_counts.items():
+                likelihoods[cls][feature_idx][value] = count / len(class_indices)
+    
+    # Predict for test instance
+    best_class = None
+    best_score = float('-inf')
+    
+    for cls in class_counts:
+        score = priors[cls]
+        for feature_idx, value in enumerate(X_test):
+            if value in likelihoods[cls][feature_idx]:
+                score *= likelihoods[cls][feature_idx][value]
+        if score > best_score:
+            best_score = score
+            best_class = cls
+    
+    return best_class''',
+    
+    'svm': '''def svm(X: List[List[float]], y: List[int], 
+         learning_rate: float = 0.01, lambda_param: float = 0.01, 
+         iterations: int = 1000) -> List[float]:
+    """Support Vector Machine using gradient descent (simplified)."""
+    m, n = len(X), len(X[0]) if X else 0
+    weights = [0.0] * n
+    bias = 0.0
+    
+    for _ in range(iterations):
+        for i in range(m):
+            condition = y[i] * (sum(weights[j] * X[i][j] for j in range(n)) + bias) >= 1
+            if condition:
+                weights = [weights[j] - learning_rate * (2 * lambda_param * weights[j]) 
+                          for j in range(n)]
+            else:
+                weights = [weights[j] - learning_rate * 
+                          (2 * lambda_param * weights[j] - y[i] * X[i][j]) 
+                          for j in range(n)]
+                bias -= learning_rate * y[i]
+    
+    return weights + [bias]''',
+    
+    'random_forest': '''class RandomForest:
+    """Random Forest classifier (simplified)."""
+    def __init__(self, n_trees: int = 10):
+        self.n_trees = n_trees
+        self.trees = []
+    
+    def fit(self, X: List[List[float]], y: List[any]) -> None:
+        """Train random forest."""
+        import random
+        from decision_tree import build_decision_tree
+        
+        n_samples = len(X)
+        for _ in range(self.n_trees):
+            # Bootstrap sampling
+            indices = [random.randint(0, n_samples - 1) for _ in range(n_samples)]
+            X_boot = [X[i] for i in indices]
+            y_boot = [y[i] for i in indices]
+            
+            # Build tree (simplified - would use decision_tree implementation)
+            tree = build_decision_tree(X_boot, y_boot)
+            self.trees.append(tree)
+    
+    def predict(self, x: List[float]) -> any:
+        """Predict using random forest."""
+        from decision_tree import predict_tree
+        predictions = [predict_tree(tree, x) for tree in self.trees]
+        return max(set(predictions), key=predictions.count)''',
+    
+    'gradient_descent': '''def gradient_descent(f, df, x0: float, learning_rate: float = 0.01, 
+                                iterations: int = 1000) -> float:
+    """Gradient descent optimization."""
+    x = x0
+    for _ in range(iterations):
+        gradient = df(x)
+        x = x - learning_rate * gradient
+    return x
+
+def gradient_descent_multi(f, df, x0: List[float], learning_rate: float = 0.01,
+                           iterations: int = 1000) -> List[float]:
+    """Multi-dimensional gradient descent."""
+    x = x0[:]
+    for _ in range(iterations):
+        gradient = df(x)
+        x = [x[i] - learning_rate * gradient[i] for i in range(len(x))]
+    return x''',
+    
+    'neural_network': '''class NeuralNetwork:
+    """Simple neural network (single hidden layer)."""
+    def __init__(self, input_size: int, hidden_size: int, output_size: int):
+        import random
+        self.W1 = [[random.random() - 0.5 for _ in range(hidden_size)] 
+                   for _ in range(input_size)]
+        self.b1 = [0.0] * hidden_size
+        self.W2 = [[random.random() - 0.5 for _ in range(output_size)] 
+                   for _ in range(hidden_size)]
+        self.b2 = [0.0] * output_size
+    
+    def sigmoid(self, x: float) -> float:
+        """Sigmoid activation."""
+        import math
+        return 1 / (1 + math.exp(-x))
+    
+    def forward(self, X: List[float]) -> List[float]:
+        """Forward propagation."""
+        # Hidden layer
+        z1 = [sum(self.W1[j][i] * X[j] for j in range(len(X))) + self.b1[i] 
+              for i in range(len(self.b1))]
+        a1 = [self.sigmoid(zi) for zi in z1]
+        
+        # Output layer
+        z2 = [sum(self.W2[j][i] * a1[j] for j in range(len(a1))) + self.b2[i] 
+              for i in range(len(self.b2))]
+        a2 = [self.sigmoid(zi) for zi in z2]
+        
+        return a2
+    
+    def train(self, X: List[List[float]], y: List[List[float]], 
+              learning_rate: float = 0.1, epochs: int = 1000) -> None:
+        """Train neural network (simplified)."""
+        # Simplified training - full implementation needs backpropagation
+        for epoch in range(epochs):
+            for i, x in enumerate(X):
+                output = self.forward(x)
+                # Update weights (simplified)
+                pass''',
+    
+    'boyer_moore': '''def boyer_moore_search(text: str, pattern: str) -> List[int]:
+    """Boyer-Moore string search algorithm."""
+    def build_bad_char_table(pattern: str) -> dict:
+        """Build bad character table."""
+        table = {}
+        for i in range(len(pattern)):
+            table[pattern[i]] = i
+        return table
+    
+    def build_good_suffix_table(pattern: str) -> List[int]:
+        """Build good suffix table (simplified)."""
+        m = len(pattern)
+        table = [0] * (m + 1)
+        # Simplified implementation
+        return table
+    
+    m, n = len(pattern), len(text)
+    if m == 0:
+        return list(range(n + 1))
+    
+    bad_char = build_bad_char_table(pattern)
+    good_suffix = build_good_suffix_table(pattern)
+    
+    result = []
+    s = 0
+    
+    while s <= n - m:
+        j = m - 1
+        while j >= 0 and pattern[j] == text[s + j]:
+            j -= 1
+        
+        if j < 0:
+            result.append(s)
+            s += good_suffix[0] if m > 1 else 1
+        else:
+            bad_char_shift = j - bad_char.get(text[s + j], -1)
+            good_suffix_shift = good_suffix[j + 1]
+            s += max(1, max(bad_char_shift, good_suffix_shift))
+    
+    return result''',
+    
+    'rabin_karp': '''def rabin_karp_search(text: str, pattern: str, base: int = 256, 
+                          mod: int = 101) -> List[int]:
+    """Rabin-Karp string search algorithm."""
+    m, n = len(pattern), len(text)
+    if m == 0 or m > n:
+        return []
+    
+    # Calculate hash of pattern and first window of text
+    pattern_hash = 0
+    text_hash = 0
+    h = 1
+    
+    for i in range(m - 1):
+        h = (h * base) % mod
+    
+    for i in range(m):
+        pattern_hash = (base * pattern_hash + ord(pattern[i])) % mod
+        text_hash = (base * text_hash + ord(text[i])) % mod
+    
+    result = []
+    
+    for i in range(n - m + 1):
+        if pattern_hash == text_hash:
+            if text[i:i + m] == pattern:
+                result.append(i)
+        
+        if i < n - m:
+            text_hash = (base * (text_hash - ord(text[i]) * h) + ord(text[i + m])) % mod
+            if text_hash < 0:
+                text_hash += mod
+    
+    return result''',
 }
 
 

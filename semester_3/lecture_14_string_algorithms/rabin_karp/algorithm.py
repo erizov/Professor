@@ -9,19 +9,38 @@ This file contains the implementation of the Rabin Karp algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def rabin_karp(data):
-    """
-    Rabin Karp algorithm implementation.
+def rabin_karp_search(text: str, pattern: str, base: int = 256, 
+                          mod: int = 101) -> List[int]:
+    """Rabin-Karp string search algorithm."""
+    m, n = len(pattern), len(text)
+    if m == 0 or m > n:
+        return []
     
-    Args:
-        data: Input data for the algorithm
+    # Calculate hash of pattern and first window of text
+    pattern_hash = 0
+    text_hash = 0
+    h = 1
+    
+    for i in range(m - 1):
+        h = (h * base) % mod
+    
+    for i in range(m):
+        pattern_hash = (base * pattern_hash + ord(pattern[i])) % mod
+        text_hash = (base * text_hash + ord(text[i])) % mod
+    
+    result = []
+    
+    for i in range(n - m + 1):
+        if pattern_hash == text_hash:
+            if text[i:i + m] == pattern:
+                result.append(i)
         
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Rabin Karp
-    return data
-
+        if i < n - m:
+            text_hash = (base * (text_hash - ord(text[i]) * h) + ord(text[i + m])) % mod
+            if text_hash < 0:
+                text_hash += mod
+    
+    return result
 
 
 def main() -> None:

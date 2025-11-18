@@ -9,19 +9,23 @@ This file contains the implementation of the Gradient Descent algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def gradient_descent(data):
-    """
-    Gradient Descent algorithm implementation.
-    
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Gradient Descent
-    return data
+def gradient_descent(f, df, x0: float, learning_rate: float = 0.01, 
+                                iterations: int = 1000) -> float:
+    """Gradient descent optimization."""
+    x = x0
+    for _ in range(iterations):
+        gradient = df(x)
+        x = x - learning_rate * gradient
+    return x
 
+def gradient_descent_multi(f, df, x0: List[float], learning_rate: float = 0.01,
+                           iterations: int = 1000) -> List[float]:
+    """Multi-dimensional gradient descent."""
+    x = x0[:]
+    for _ in range(iterations):
+        gradient = df(x)
+        x = [x[i] - learning_rate * gradient[i] for i in range(len(x))]
+    return x
 
 
 def main() -> None:

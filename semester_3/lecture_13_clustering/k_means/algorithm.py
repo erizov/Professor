@@ -9,7 +9,7 @@ This file contains the implementation of the K Means algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def kmeans(data: List[List[float]], k: int, max_iters: int = 100) -> List[List[float]]:
+def k_means(data: List[List[float]], k: int, max_iters: int = 100) -> List[List[float]]:
     """K-means clustering algorithm."""
     import random
     import math
