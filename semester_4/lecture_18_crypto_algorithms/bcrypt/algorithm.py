@@ -9,19 +9,33 @@ This file contains the implementation of the Bcrypt algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def bcrypt(data):
-    """
-    Bcrypt algorithm implementation.
-    
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Bcrypt
-    return data
+import hashlib
 
+class BCrypt:
+    """BCrypt password hashing (simplified)."""
+    def __init__(self, rounds: int = 12):
+        self.rounds = rounds
+    
+    def hash_password(self, password: str) -> str:
+        """Hash password."""
+        # Simplified BCrypt - in practice, use bcrypt library
+        # This uses SHA-256 as a simplified alternative
+        salt = hashlib.sha256(str(self.rounds).encode()).hexdigest()[:16]
+        hash_val = hashlib.sha256((password + salt).encode()).hexdigest()
+        return f"$2b${self.rounds}${salt}${hash_val}"
+    
+    def verify_password(self, password: str, hashed: str) -> bool:
+        """Verify password against hash."""
+        # Simplified verification
+        parts = hashed.split("$")
+        if len(parts) < 4:
+            return False
+        
+        salt = parts[2]
+        stored_hash = parts[3]
+        
+        computed_hash = hashlib.sha256((password + salt).encode()).hexdigest()
+        return computed_hash == stored_hash
 
 
 def main() -> None:

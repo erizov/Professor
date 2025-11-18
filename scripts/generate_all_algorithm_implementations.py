@@ -4754,6 +4754,506 @@ def fp_growth(transactions: List[List[str]], min_support: float = 0.5) -> List[t
         patterns.append((frozenset([item]), item_counts[item]))
     
     return patterns''',
+    
+    'avl_tree': '''class AVLNode:
+    """Node in AVL tree."""
+    def __init__(self, val: int):
+        self.val = val
+        self.left: Optional['AVLNode'] = None
+        self.right: Optional['AVLNode'] = None
+        self.height = 1
+
+class AVLTree:
+    """AVL tree (self-balancing BST) implementation."""
+    def __init__(self):
+        self.root: Optional[AVLNode] = None
+    
+    def _height(self, node: Optional[AVLNode]) -> int:
+        """Get height of node."""
+        return node.height if node else 0
+    
+    def _balance_factor(self, node: AVLNode) -> int:
+        """Get balance factor."""
+        return self._height(node.left) - self._height(node.right)
+    
+    def _update_height(self, node: AVLNode) -> None:
+        """Update height of node."""
+        node.height = 1 + max(self._height(node.left), self._height(node.right))
+    
+    def _rotate_right(self, y: AVLNode) -> AVLNode:
+        """Right rotation."""
+        x = y.left
+        T2 = x.right
+        
+        x.right = y
+        y.left = T2
+        
+        self._update_height(y)
+        self._update_height(x)
+        
+        return x
+    
+    def _rotate_left(self, x: AVLNode) -> AVLNode:
+        """Left rotation."""
+        y = x.right
+        T2 = y.left
+        
+        y.left = x
+        x.right = T2
+        
+        self._update_height(x)
+        self._update_height(y)
+        
+        return y
+    
+    def insert(self, val: int) -> None:
+        """Insert value."""
+        self.root = self._insert(self.root, val)
+    
+    def _insert(self, node: Optional[AVLNode], val: int) -> AVLNode:
+        """Insert helper."""
+        if not node:
+            return AVLNode(val)
+        
+        if val < node.val:
+            node.left = self._insert(node.left, val)
+        elif val > node.val:
+            node.right = self._insert(node.right, val)
+        else:
+            return node
+        
+        self._update_height(node)
+        balance = self._balance_factor(node)
+        
+        # Left Left
+        if balance > 1 and val < node.left.val:
+            return self._rotate_right(node)
+        
+        # Right Right
+        if balance < -1 and val > node.right.val:
+            return self._rotate_left(node)
+        
+        # Left Right
+        if balance > 1 and val > node.left.val:
+            node.left = self._rotate_left(node.left)
+            return self._rotate_right(node)
+        
+        # Right Left
+        if balance < -1 and val < node.right.val:
+            node.right = self._rotate_right(node.right)
+            return self._rotate_left(node)
+        
+        return node
+    
+    def search(self, val: int) -> bool:
+        """Search for value."""
+        return self._search(self.root, val)
+    
+    def _search(self, node: Optional[AVLNode], val: int) -> bool:
+        """Search helper."""
+        if not node:
+            return False
+        if val == node.val:
+            return True
+        if val < node.val:
+            return self._search(node.left, val)
+        return self._search(node.right, val)''',
+    
+    'bagging': '''class Bagging:
+    """Bagging (Bootstrap Aggregating) implementation."""
+    def __init__(self, n_estimators: int = 10):
+        self.n_estimators = n_estimators
+        self.estimators = []
+    
+    def fit(self, X: List[List[float]], y: List[any]) -> None:
+        """Train bagging model."""
+        import random
+        from decision_tree import build_decision_tree
+        
+        n_samples = len(X)
+        
+        for _ in range(self.n_estimators):
+            # Bootstrap sampling
+            indices = [random.randint(0, n_samples - 1) for _ in range(n_samples)]
+            X_boot = [X[i] for i in indices]
+            y_boot = [y[i] for i in indices]
+            
+            # Train estimator (simplified)
+            estimator = build_decision_tree(X_boot, y_boot)
+            self.estimators.append(estimator)
+    
+    def predict(self, x: List[float]) -> any:
+        """Predict using ensemble."""
+        from decision_tree import predict_tree
+        predictions = [predict_tree(est, x) for est in self.estimators]
+        return max(set(predictions), key=predictions.count)''',
+    
+    'bert': '''class BERT:
+    """BERT (Bidirectional Encoder Representations from Transformers) simplified."""
+    def __init__(self, vocab_size: int = 10000, hidden_size: int = 768, 
+                 num_layers: int = 12, num_heads: int = 12):
+        self.vocab_size = vocab_size
+        self.hidden_size = hidden_size
+        self.num_layers = num_layers
+        self.num_heads = num_heads
+        self.embeddings = {}  # Simplified embedding lookup
+        self.layers = []  # Transformer layers
+    
+    def encode(self, tokens: List[int]) -> List[List[float]]:
+        """Encode tokens."""
+        # Simplified encoding
+        embeddings = []
+        for token in tokens:
+            if token not in self.embeddings:
+                # Random embedding (in practice, would be learned)
+                self.embeddings[token] = [0.0] * self.hidden_size
+            embeddings.append(self.embeddings[token])
+        return embeddings
+    
+    def forward(self, input_ids: List[int]) -> List[List[float]]:
+        """Forward pass."""
+        # Get embeddings
+        hidden_states = self.encode(input_ids)
+        
+        # Apply transformer layers (simplified)
+        for _ in range(self.num_layers):
+            # Self-attention (simplified)
+            attention_output = self._self_attention(hidden_states)
+            # Feed-forward (simplified)
+            hidden_states = self._feed_forward(attention_output)
+        
+        return hidden_states
+    
+    def _self_attention(self, hidden_states: List[List[float]]) -> List[List[float]]:
+        """Self-attention (simplified)."""
+        # Simplified attention - would use multi-head attention
+        return hidden_states
+    
+    def _feed_forward(self, hidden_states: List[List[float]]) -> List[List[float]]:
+        """Feed-forward network (simplified)."""
+        # Simplified FFN
+        return hidden_states''',
+    
+    'autoscaling': '''class AutoScaling:
+    """Auto-scaling implementation."""
+    def __init__(self, min_instances: int = 1, max_instances: int = 10,
+                 scale_up_threshold: float = 0.8, scale_down_threshold: float = 0.3):
+        self.min_instances = min_instances
+        self.max_instances = max_instances
+        self.scale_up_threshold = scale_up_threshold
+        self.scale_down_threshold = scale_down_threshold
+        self.current_instances = min_instances
+        self.metrics_history: List[float] = []
+    
+    def update_metrics(self, cpu_usage: float, memory_usage: float) -> int:
+        """Update metrics and return scaling decision."""
+        avg_usage = (cpu_usage + memory_usage) / 2.0
+        self.metrics_history.append(avg_usage)
+        
+        # Keep only recent history
+        if len(self.metrics_history) > 10:
+            self.metrics_history.pop(0)
+        
+        # Calculate average
+        avg_metric = sum(self.metrics_history) / len(self.metrics_history)
+        
+        # Scale up
+        if avg_metric > self.scale_up_threshold and self.current_instances < self.max_instances:
+            self.current_instances += 1
+            return 1  # Scale up
+        
+        # Scale down
+        if avg_metric < self.scale_down_threshold and self.current_instances > self.min_instances:
+            self.current_instances -= 1
+            return -1  # Scale down
+        
+        return 0  # No scaling
+    
+    def get_current_instances(self) -> int:
+        """Get current number of instances."""
+        return self.current_instances''',
+    
+    'authentication': '''class Authentication:
+    """Authentication system implementation."""
+    def __init__(self):
+        self.users: Dict[str, str] = {}  # username -> password hash
+        self.sessions: Dict[str, str] = {}  # session_id -> username
+        import hashlib
+        self.hash_func = hashlib.sha256
+    
+    def register(self, username: str, password: str) -> bool:
+        """Register new user."""
+        if username in self.users:
+            return False
+        
+        password_hash = self.hash_func(password.encode()).hexdigest()
+        self.users[username] = password_hash
+        return True
+    
+    def login(self, username: str, password: str) -> Optional[str]:
+        """Login user and return session ID."""
+        if username not in self.users:
+            return None
+        
+        password_hash = self.hash_func(password.encode()).hexdigest()
+        if self.users[username] != password_hash:
+            return None
+        
+        # Generate session ID
+        import uuid
+        session_id = str(uuid.uuid4())
+        self.sessions[session_id] = username
+        return session_id
+    
+    def verify_session(self, session_id: str) -> Optional[str]:
+        """Verify session and return username."""
+        return self.sessions.get(session_id)
+    
+    def logout(self, session_id: str) -> bool:
+        """Logout user."""
+        if session_id in self.sessions:
+            del self.sessions[session_id]
+            return True
+        return False''',
+    
+    'authorization': '''class Authorization:
+    """Authorization system (RBAC - Role-Based Access Control)."""
+    def __init__(self):
+        self.user_roles: Dict[str, List[str]] = {}  # user -> roles
+        self.role_permissions: Dict[str, List[str]] = {}  # role -> permissions
+        self.resource_permissions: Dict[str, List[str]] = {}  # resource -> required permissions
+    
+    def assign_role(self, user: str, role: str) -> None:
+        """Assign role to user."""
+        if user not in self.user_roles:
+            self.user_roles[user] = []
+        if role not in self.user_roles[user]:
+            self.user_roles[user].append(role)
+    
+    def grant_permission(self, role: str, permission: str) -> None:
+        """Grant permission to role."""
+        if role not in self.role_permissions:
+            self.role_permissions[role] = []
+        if permission not in self.role_permissions[role]:
+            self.role_permissions[role].append(permission)
+    
+    def set_resource_permissions(self, resource: str, permissions: List[str]) -> None:
+        """Set required permissions for resource."""
+        self.resource_permissions[resource] = permissions
+    
+    def check_access(self, user: str, resource: str) -> bool:
+        """Check if user has access to resource."""
+        if resource not in self.resource_permissions:
+            return True  # No restrictions
+        
+        required_permissions = self.resource_permissions[resource]
+        user_roles = self.user_roles.get(user, [])
+        
+        user_permissions = set()
+        for role in user_roles:
+            user_permissions.update(self.role_permissions.get(role, []))
+        
+        return all(perm in user_permissions for perm in required_permissions)''',
+    
+    'aes': '''class AES:
+    """AES encryption (simplified - educational purposes only)."""
+    def __init__(self, key: bytes):
+        self.key = key
+        self.block_size = 16
+    
+    def encrypt(self, plaintext: bytes) -> bytes:
+        """Encrypt plaintext (simplified)."""
+        # Simplified AES - in practice, use cryptography library
+        # This is just a placeholder
+        import hashlib
+        cipher = hashlib.sha256(self.key + plaintext).digest()
+        return cipher[:len(plaintext)]
+    
+    def decrypt(self, ciphertext: bytes) -> bytes:
+        """Decrypt ciphertext (simplified)."""
+        # Simplified - would need proper AES implementation
+        # This is just a placeholder
+        return ciphertext  # Simplified
+    
+    @staticmethod
+    def generate_key(key_size: int = 32) -> bytes:
+        """Generate random key."""
+        import os
+        return os.urandom(key_size)''',
+    
+    'bcrypt': '''import hashlib
+
+class BCrypt:
+    """BCrypt password hashing (simplified)."""
+    def __init__(self, rounds: int = 12):
+        self.rounds = rounds
+    
+    def hash_password(self, password: str) -> str:
+        """Hash password."""
+        # Simplified BCrypt - in practice, use bcrypt library
+        # This uses SHA-256 as a simplified alternative
+        salt = hashlib.sha256(str(self.rounds).encode()).hexdigest()[:16]
+        hash_val = hashlib.sha256((password + salt).encode()).hexdigest()
+        return f"$2b${self.rounds}${salt}${hash_val}"
+    
+    def verify_password(self, password: str, hashed: str) -> bool:
+        """Verify password against hash."""
+        # Simplified verification
+        parts = hashed.split("$")
+        if len(parts) < 4:
+            return False
+        
+        salt = parts[2]
+        stored_hash = parts[3]
+        
+        computed_hash = hashlib.sha256((password + salt).encode()).hexdigest()
+        return computed_hash == stored_hash''',
+    
+    'api_gateway': '''class APIGateway:
+    """API Gateway implementation."""
+    def __init__(self):
+        self.routes: Dict[str, callable] = {}
+        self.middleware: List[callable] = []
+        self.rate_limiter = None
+    
+    def register_route(self, path: str, handler: callable) -> None:
+        """Register route."""
+        self.routes[path] = handler
+    
+    def add_middleware(self, middleware: callable) -> None:
+        """Add middleware."""
+        self.middleware.append(middleware)
+    
+    def handle_request(self, path: str, method: str, headers: dict, body: any) -> dict:
+        """Handle incoming request."""
+        # Apply middleware
+        request = {"path": path, "method": method, "headers": headers, "body": body}
+        
+        for mw in self.middleware:
+            request = mw(request)
+            if "error" in request:
+                return request
+        
+        # Route to handler
+        if path in self.routes:
+            handler = self.routes[path]
+            response = handler(request)
+            return response
+        
+        return {"status": 404, "error": "Not Found"}
+    
+    def set_rate_limiter(self, rate_limiter) -> None:
+        """Set rate limiter."""
+        self.rate_limiter = rate_limiter''',
+    
+    'consensus_algorithms': '''class ConsensusAlgorithm:
+    """Consensus algorithm base class."""
+    def __init__(self, nodes: List[str]):
+        self.nodes = nodes
+        self.current_leader: Optional[str] = None
+    
+    def propose(self, value: any) -> bool:
+        """Propose value (to be implemented by subclasses)."""
+        pass
+    
+    def get_consensus(self) -> Optional[any]:
+        """Get consensus value (to be implemented by subclasses)."""
+        pass
+
+class RaftConsensus(ConsensusAlgorithm):
+    """Raft consensus algorithm (simplified)."""
+    def __init__(self, nodes: List[str], node_id: str):
+        super().__init__(nodes)
+        self.node_id = node_id
+        self.state = "follower"  # follower, candidate, leader
+        self.current_term = 0
+        self.voted_for: Optional[str] = None
+        self.log: List[dict] = []
+        self.commit_index = 0
+    
+    def propose(self, value: any) -> bool:
+        """Propose value (only leader can propose)."""
+        if self.state != "leader":
+            return False
+        
+        entry = {"term": self.current_term, "value": value}
+        self.log.append(entry)
+        return True
+    
+    def get_consensus(self) -> Optional[any]:
+        """Get committed value."""
+        if self.commit_index < len(self.log):
+            return self.log[self.commit_index].get("value")
+        return None''',
+    
+    'blockchain_structure': '''class Block:
+    """Block in blockchain."""
+    def __init__(self, index: int, data: any, previous_hash: str):
+        import time
+        import hashlib
+        import json
+        
+        self.index = index
+        self.timestamp = time.time()
+        self.data = data
+        self.previous_hash = previous_hash
+        self.nonce = 0
+        self.hash = self.calculate_hash()
+    
+    def calculate_hash(self) -> str:
+        """Calculate block hash."""
+        import hashlib
+        import json
+        block_string = json.dumps({
+            "index": self.index,
+            "timestamp": self.timestamp,
+            "data": self.data,
+            "previous_hash": self.previous_hash,
+            "nonce": self.nonce
+        }, sort_keys=True)
+        return hashlib.sha256(block_string.encode()).hexdigest()
+    
+    def mine_block(self, difficulty: int) -> None:
+        """Mine block with given difficulty."""
+        target = "0" * difficulty
+        while self.hash[:difficulty] != target:
+            self.nonce += 1
+            self.hash = self.calculate_hash()
+
+class Blockchain:
+    """Blockchain implementation."""
+    def __init__(self, difficulty: int = 4):
+        self.chain: List[Block] = [self.create_genesis_block()]
+        self.difficulty = difficulty
+    
+    def create_genesis_block(self) -> Block:
+        """Create genesis block."""
+        return Block(0, "Genesis Block", "0")
+    
+    def get_latest_block(self) -> Block:
+        """Get latest block."""
+        return self.chain[-1]
+    
+    def add_block(self, data: any) -> None:
+        """Add new block."""
+        previous_hash = self.get_latest_block().hash
+        new_block = Block(len(self.chain), data, previous_hash)
+        new_block.mine_block(self.difficulty)
+        self.chain.append(new_block)
+    
+    def is_valid(self) -> bool:
+        """Validate blockchain."""
+        for i in range(1, len(self.chain)):
+            current = self.chain[i]
+            previous = self.chain[i - 1]
+            
+            if current.hash != current.calculate_hash():
+                return False
+            
+            if current.previous_hash != previous.hash:
+                return False
+        
+        return True''',
 }
 
 
