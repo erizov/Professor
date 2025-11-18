@@ -9,19 +9,39 @@ This file contains the implementation of the Log Aggregation algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def log_aggregation(data):
-    """
-    Log Aggregation algorithm implementation.
+class LogAggregation:
+    """Log aggregation system."""
+    def __init__(self):
+        self.logs: List[dict] = {}
+        self.aggregators: Dict[str, callable] = {}
     
-    Args:
-        data: Input data for the algorithm
+    def collect_log(self, source: str, level: str, message: str) -> None:
+        """Collect log."""
+        import time
+        log_entry = {
+            'source': source,
+            'level': level,
+            'message': message,
+            'timestamp': time.time()
+        }
+        if source not in self.logs:
+            self.logs[source] = []
+        self.logs[source].append(log_entry)
+    
+    def aggregate(self, source: str, aggregator: str) -> dict:
+        """Aggregate logs."""
+        if source not in self.logs:
+            return {}
         
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Log Aggregation
-    return data
-
+        if aggregator == 'count_by_level':
+            levels = {}
+            for log in self.logs[source]:
+                level = log['level']
+                levels[level] = levels.get(level, 0) + 1
+            return levels
+        elif aggregator == 'recent':
+            return {'recent_logs': self.logs[source][-10:]}
+        return {}
 
 
 def main() -> None:

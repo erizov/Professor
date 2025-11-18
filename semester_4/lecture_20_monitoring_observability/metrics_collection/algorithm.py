@@ -9,19 +9,35 @@ This file contains the implementation of the Metrics Collection algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def metrics_collection(data):
-    """
-    Metrics Collection algorithm implementation.
+class MetricsCollection:
+    """Metrics collection system."""
+    def __init__(self):
+        self.metrics: Dict[str, List[dict]] = {}
     
-    Args:
-        data: Input data for the algorithm
+    def record_metric(self, metric_name: str, value: float, 
+                     tags: dict = None) -> None:
+        """Record metric."""
+        import time
+        if metric_name not in self.metrics:
+            self.metrics[metric_name] = []
+        self.metrics[metric_name].append({
+            'value': value,
+            'tags': tags or {},
+            'timestamp': time.time()
+        })
+    
+    def get_metric_summary(self, metric_name: str) -> dict:
+        """Get metric summary."""
+        if metric_name not in self.metrics:
+            return {}
         
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Metrics Collection
-    return data
-
+        values = [m['value'] for m in self.metrics[metric_name]]
+        return {
+            'count': len(values),
+            'min': min(values) if values else 0,
+            'max': max(values) if values else 0,
+            'avg': sum(values) / len(values) if values else 0
+        }
 
 
 def main() -> None:
