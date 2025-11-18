@@ -9,19 +9,34 @@ This file contains the implementation of the Transactional Memory algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def transactional_memory(data):
-    """
-    Transactional Memory algorithm implementation.
+class TransactionalMemory:
+    """Transactional memory."""
+    def __init__(self):
+        self.transactions: List[dict] = {}
+        self.memory: Dict[str, any] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Transactional Memory
-    return data
-
+    def begin_transaction(self, tx_id: str) -> None:
+        """Begin transaction."""
+        self.transactions.append({
+            'id': tx_id,
+            'state': {},
+            'status': 'active'
+        })
+    
+    def write(self, tx_id: str, key: str, value: any) -> None:
+        """Write in transaction."""
+        tx = next((t for t in self.transactions if t['id'] == tx_id), None)
+        if tx:
+            tx['state'][key] = value
+    
+    def commit(self, tx_id: str) -> bool:
+        """Commit transaction."""
+        tx = next((t for t in self.transactions if t['id'] == tx_id), None)
+        if tx:
+            self.memory.update(tx['state'])
+            tx['status'] = 'committed'
+            return True
+        return False
 
 
 def main() -> None:

@@ -9,19 +9,30 @@ This file contains the implementation of the Window Functions algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def window_functions(data):
-    """
-    Window Functions algorithm implementation.
+class WindowFunctions:
+    """SQL window functions."""
+    def __init__(self):
+        self.data: List[dict] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Window Functions
-    return data
-
+    def row_number(self, data: List[dict], order_by: str) -> List[dict]:
+        """Row number window function."""
+        sorted_data = sorted(data, key=lambda x: x.get(order_by, 0))
+        for i, row in enumerate(sorted_data, 1):
+            row['row_number'] = i
+        return sorted_data
+    
+    def rank(self, data: List[dict], order_by: str) -> List[dict]:
+        """Rank window function."""
+        sorted_data = sorted(data, key=lambda x: x.get(order_by, 0), reverse=True)
+        current_rank = 1
+        prev_value = None
+        for row in sorted_data:
+            value = row.get(order_by, 0)
+            if prev_value is not None and value != prev_value:
+                current_rank += 1
+            row['rank'] = current_rank
+            prev_value = value
+        return sorted_data
 
 
 def main() -> None:

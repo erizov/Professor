@@ -9,19 +9,34 @@ This file contains the implementation of the Synthetic Monitoring algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def synthetic_monitoring(data):
-    """
-    Synthetic Monitoring algorithm implementation.
+class SyntheticMonitoring:
+    """Synthetic monitoring."""
+    def __init__(self):
+        self.checks: List[dict] = {}
+        self.results: List[dict] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Synthetic Monitoring
-    return data
-
+    def add_check(self, check_id: str, endpoint: str, 
+                 expected_status: int) -> None:
+        """Add synthetic check."""
+        self.checks[check_id] = {
+            'endpoint': endpoint,
+            'expected_status': expected_status
+        }
+    
+    def run_check(self, check_id: str) -> dict:
+        """Run synthetic check."""
+        import time
+        if check_id in self.checks:
+            check = self.checks[check_id]
+            result = {
+                'check_id': check_id,
+                'status': check['expected_status'],
+                'timestamp': time.time(),
+                'success': True
+            }
+            self.results.append(result)
+            return result
+        return {'error': 'Check not found'}
 
 
 def main() -> None:

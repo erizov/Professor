@@ -9,19 +9,27 @@ This file contains the implementation of the Write Scaling algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def write_scaling(data):
-    """
-    Write Scaling algorithm implementation.
+class WriteScaling:
+    """Write scaling strategies."""
+    def __init__(self):
+        self.shards: List[dict] = {}
+        self.write_strategies: Dict[str, dict] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Write Scaling
-    return data
-
+    def add_shard(self, shard_id: str) -> None:
+        """Add write shard."""
+        self.shards.append({
+            'id': shard_id,
+            'writes': 0
+        })
+    
+    def write(self, key: str, value: any, strategy: str = 'round_robin') -> None:
+        """Write with scaling strategy."""
+        if strategy == 'round_robin' and self.shards:
+            shard = self.shards[0]
+            shard['writes'] += 1
+        elif strategy == 'hash' and self.shards:
+            shard_idx = hash(key) % len(self.shards)
+            self.shards[shard_idx]['writes'] += 1
 
 
 def main() -> None:

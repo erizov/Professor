@@ -9,19 +9,34 @@ This file contains the implementation of the Transaction Analysis algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def transaction_analysis(data):
-    """
-    Transaction Analysis algorithm implementation.
+class TransactionAnalysis:
+    """Transaction analysis."""
+    def __init__(self):
+        self.transactions: List[dict] = {}
+        self.patterns: List[dict] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Transaction Analysis
-    return data
-
+    def add_transaction(self, transaction: dict) -> None:
+        """Add transaction."""
+        self.transactions.append(transaction)
+    
+    def detect_anomalies(self) -> List[dict]:
+        """Detect anomalous transactions."""
+        anomalies = []
+        for tx in self.transactions:
+            if tx.get('amount', 0) > 10000:
+                anomalies.append(tx)
+        return anomalies
+    
+    def analyze_patterns(self) -> dict:
+        """Analyze transaction patterns."""
+        if self.transactions:
+            amounts = [tx.get('amount', 0) for tx in self.transactions]
+            return {
+                'avg_amount': sum(amounts) / len(amounts),
+                'max_amount': max(amounts),
+                'min_amount': min(amounts)
+            }
+        return {}
 
 
 def main() -> None:

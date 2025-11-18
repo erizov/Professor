@@ -9,19 +9,34 @@ This file contains the implementation of the Time Series Compression algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def time_series_compression(data):
-    """
-    Time Series Compression algorithm implementation.
+class TimeSeriesCompression:
+    """Time series compression."""
+    def __init__(self):
+        self.compressed: Dict[str, List[dict]] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Time Series Compression
-    return data
-
+    def compress(self, series: List[dict], method: str = 'delta') -> List[dict]:
+        """Compress time series."""
+        if method == 'delta':
+            compressed = [series[0]]
+            for i in range(1, len(series)):
+                compressed.append({
+                    'timestamp': series[i]['timestamp'] - series[i-1]['timestamp'],
+                    'value': series[i]['value'] - series[i-1]['value']
+                })
+            return compressed
+        return series
+    
+    def decompress(self, compressed: List[dict], start_timestamp: float, 
+                  start_value: float) -> List[dict]:
+        """Decompress time series."""
+        decompressed = [{'timestamp': start_timestamp, 'value': start_value}]
+        current_ts = start_timestamp
+        current_val = start_value
+        for point in compressed[1:]:
+            current_ts += point['timestamp']
+            current_val += point['value']
+            decompressed.append({'timestamp': current_ts, 'value': current_val})
+        return decompressed
 
 
 def main() -> None:

@@ -22785,7 +22785,7 @@ class SHA256:
         # Simplified zero-shot prediction
         if unseen_classes:
             return unseen_classes[0]
-        return 'unknown'''',
+            return 'unknown' ''',
     
     'zk_snarks': '''class ZKSNARKs:
     """ZK-SNARKs (Zero-Knowledge Succinct Non-Interactive Arguments)."""

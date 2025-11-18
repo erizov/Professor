@@ -9,19 +9,24 @@ This file contains the implementation of the Zero Shot Learning algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def zero_shot_learning(data):
-    """
-    Zero Shot Learning algorithm implementation.
+class ZeroShotLearning:
+    """Zero-shot learning."""
+    def __init__(self):
+        self.model: dict = {}
+        self.embeddings: Dict[str, List[float]] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Zero Shot Learning
-    return data
-
+    def train(self, seen_classes: List[str], descriptions: Dict[str, str]) -> None:
+        """Train on seen classes."""
+        for class_name, desc in descriptions.items():
+            # Simplified embedding
+            self.embeddings[class_name] = [0.1] * 128
+    
+    def predict(self, input_data: List[float], unseen_classes: List[str]) -> str:
+        """Predict unseen class."""
+        # Simplified zero-shot prediction
+        if unseen_classes:
+            return unseen_classes[0]
+            return 'unknown' 
 
 
 def main() -> None:
