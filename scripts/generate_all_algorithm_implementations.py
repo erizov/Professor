@@ -22928,13 +22928,22 @@ def update_algorithm_file(algorithm_path: Path, algorithm_name: str) -> bool:
             func_name = implementation.split('(')[0].split('def ')[1].strip()
         except (IndexError, AttributeError):
             func_name = algorithm_name
+        # Check if it's a placeholder or generic
+        if ('# Implementation specific to' in existing or 
+            'return data' in existing or
+            'Implementation in progress' in existing or 
+            ('pass' in existing and len(existing) < 300)):
+            # It's a generic stub, replace it
+            new_content = create_algorithm_file_content(algorithm_name, implementation)
+            algorithm_path.write_text(new_content, encoding='utf-8')
+            return True
+        
+        # Check if it already has the correct implementation
+        try:
+            func_name = implementation.split('(')[0].split('def ')[1].strip()
+        except (IndexError, AttributeError):
+            func_name = algorithm_name
         if func_name in existing and 'def ' + func_name in existing:
-            # Check if it's a real implementation or just a stub
-            if '# Implementation specific to' in existing or 'return data' in existing:
-                # It's a generic stub, replace it
-                new_content = create_algorithm_file_content(algorithm_name, implementation)
-                algorithm_path.write_text(new_content, encoding='utf-8')
-                return True
             # Already has good implementation
             return False
         # Check if it's a placeholder or generic
