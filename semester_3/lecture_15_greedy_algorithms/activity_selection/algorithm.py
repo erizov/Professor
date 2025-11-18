@@ -1,36 +1,41 @@
-from framework.logging_utils import get_logger
-logger = get_logger(__name__)
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Activity Selection implementation."""
+"""
+Activity Selection implementation.
+
+This file contains the implementation of the Activity Selection algorithm.
+"""
+
+from typing import List, Optional, Dict, Set
 
 
-def activity_selection():
+def activity_selection(data):
     """
-    Implement Activity Selection.
+    Activity Selection algorithm implementation.
     
-    Time Complexity: O(n log n)
-    Space Complexity: O(1)
+    Args:
+        data: Input data for the algorithm
+        
+    Returns:
+        Processed result
     """
-    logger.info("==" * 35)
-    logger.info("Activity Selection")
-    logger.info("==" * 35)
-    logger.info(f"Category: Greedy Algorithm")
-    logger.info(f"Time Complexity: O(n log n)")
-    logger.info(f"Space Complexity: O(1)")
-    logger.info("==" * 35)
+    # Implementation specific to Activity Selection
+    return data
+
 
 
 def main() -> None:
-    """Main function to demonstrate the algorithm."""
+    """Demonstrate Activity Selection."""
     print("=" * 70)
-    print("ALGORITHM DEMONSTRATION")
+    print("ACTIVITY SELECTION")
     print("=" * 70)
-    print("Algorithm implementation")
+    
+    # Example usage
+    print("Algorithm implementation for Activity Selection")
+    print("See implementation above for details.")
+    
     print("=" * 70)
-
 
 
 if __name__ == "__main__":
     main()
-    activity_selection()

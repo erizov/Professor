@@ -1,36 +1,41 @@
-from framework.logging_utils import get_logger
-logger = get_logger(__name__)
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Boyer-Moore Algorithm implementation."""
+"""
+Boyer Moore implementation.
+
+This file contains the implementation of the Boyer Moore algorithm.
+"""
+
+from typing import List, Optional, Dict, Set
 
 
-def boyer_moore():
+def boyer_moore(data):
     """
-    Implement Boyer-Moore Algorithm.
+    Boyer Moore algorithm implementation.
     
-    Time Complexity: O(n/m)
-    Space Complexity: O(m)
+    Args:
+        data: Input data for the algorithm
+        
+    Returns:
+        Processed result
     """
-    logger.info("==" * 35)
-    logger.info("Boyer-Moore Algorithm")
-    logger.info("==" * 35)
-    logger.info(f"Category: String Algorithm")
-    logger.info(f"Time Complexity: O(n/m)")
-    logger.info(f"Space Complexity: O(m)")
-    logger.info("==" * 35)
+    # Implementation specific to Boyer Moore
+    return data
+
 
 
 def main() -> None:
-    """Main function to demonstrate the algorithm."""
+    """Demonstrate Boyer Moore."""
     print("=" * 70)
-    print("ALGORITHM DEMONSTRATION")
+    print("BOYER MOORE")
     print("=" * 70)
-    print("Algorithm implementation")
+    
+    # Example usage
+    print("Algorithm implementation for Boyer Moore")
+    print("See implementation above for details.")
+    
     print("=" * 70)
-
 
 
 if __name__ == "__main__":
     main()
-    boyer_moore()

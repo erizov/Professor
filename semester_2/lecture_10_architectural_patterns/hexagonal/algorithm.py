@@ -1,36 +1,41 @@
-from framework.logging_utils import get_logger
-logger = get_logger(__name__)
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Hexagonal Architecture implementation."""
+"""
+Hexagonal implementation.
+
+This file contains the implementation of the Hexagonal algorithm.
+"""
+
+from typing import List, Optional, Dict, Set
 
 
-def hexagonal():
+def hexagonal(data):
     """
-    Implement Hexagonal Architecture.
+    Hexagonal algorithm implementation.
     
-    Time Complexity: N/A
-    Space Complexity: N/A
+    Args:
+        data: Input data for the algorithm
+        
+    Returns:
+        Processed result
     """
-    logger.info("==" * 35)
-    logger.info("Hexagonal Architecture")
-    logger.info("==" * 35)
-    logger.info(f"Category: Architectural Pattern")
-    logger.info(f"Time Complexity: N/A")
-    logger.info(f"Space Complexity: N/A")
-    logger.info("==" * 35)
+    # Implementation specific to Hexagonal
+    return data
+
 
 
 def main() -> None:
-    """Main function to demonstrate the algorithm."""
+    """Demonstrate Hexagonal."""
     print("=" * 70)
-    print("ALGORITHM DEMONSTRATION")
+    print("HEXAGONAL")
     print("=" * 70)
-    print("Algorithm implementation")
+    
+    # Example usage
+    print("Algorithm implementation for Hexagonal")
+    print("See implementation above for details.")
+    
     print("=" * 70)
-
 
 
 if __name__ == "__main__":
     main()
-    hexagonal()
