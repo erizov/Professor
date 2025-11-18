@@ -42,6 +42,7 @@ def encryption_at_rest(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Encryption At Rest implementation.
     
