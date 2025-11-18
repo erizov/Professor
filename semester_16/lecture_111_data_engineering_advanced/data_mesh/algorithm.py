@@ -9,19 +9,34 @@ This file contains the implementation of the Data Mesh algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def data_mesh(data):
-    """
-    Data Mesh algorithm implementation.
+class DataMesh:
+    """Data mesh architecture."""
+    def __init__(self):
+        self.domains: Dict[str, dict] = {}
+        self.products: Dict[str, dict] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Data Mesh
-    return data
-
+    def add_domain(self, domain_name: str, owner: str) -> None:
+        """Add data domain."""
+        self.domains[domain_name] = {
+            'owner': owner,
+            'products': []
+        }
+    
+    def add_product(self, product_name: str, domain: str, 
+                   schema: dict) -> None:
+        """Add data product."""
+        self.products[product_name] = {
+            'domain': domain,
+            'schema': schema
+        }
+        if domain in self.domains:
+            self.domains[domain]['products'].append(product_name)
+    
+    def discover_products(self, domain: str = None) -> List[str]:
+        """Discover data products."""
+        if domain:
+            return self.domains.get(domain, {}).get('products', [])
+        return list(self.products.keys())
 
 
 def main() -> None:

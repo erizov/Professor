@@ -9,19 +9,25 @@ This file contains the implementation of the Data Lakes algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def data_lakes(data):
-    """
-    Data Lakes algorithm implementation.
+class DataLake:
+    """Data lake implementation."""
+    def __init__(self):
+        self.storage: Dict[str, any] = {}
+        self.metadata: Dict[str, dict] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Data Lakes
-    return data
-
+    def store(self, key: str, data: any, metadata: dict = None) -> None:
+        """Store data in lake."""
+        self.storage[key] = data
+        self.metadata[key] = metadata or {}
+    
+    def retrieve(self, key: str) -> Optional[any]:
+        """Retrieve data."""
+        return self.storage.get(key)
+    
+    def query(self, filter_func: callable) -> List[any]:
+        """Query data lake."""
+        return [self.storage[k] for k in self.storage 
+                if filter_func(self.metadata.get(k, {}))]
 
 
 def main() -> None:

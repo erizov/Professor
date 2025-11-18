@@ -9,19 +9,38 @@ This file contains the implementation of the Api Documentation algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def api_documentation(data):
-    """
-    Api Documentation algorithm implementation.
+class APIDocumentation:
+    """API documentation generator."""
+    def __init__(self):
+        self.endpoints: Dict[str, dict] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Api Documentation
-    return data
-
+    def add_endpoint(self, method: str, path: str, description: str, 
+                    params: List[dict] = None, response: dict = None) -> None:
+        """Add API endpoint."""
+        key = f"{method} {path}"
+        self.endpoints[key] = {
+            'method': method,
+            'path': path,
+            'description': description,
+            'parameters': params or [],
+            'response': response or {}
+        }
+    
+    def generate_markdown(self) -> str:
+        """Generate markdown documentation."""
+        lines = ["# API Documentation
+"]
+        for key, endpoint in self.endpoints.items():
+            lines.append(f"## {endpoint['method']} {endpoint['path']}")
+            lines.append(f"{endpoint['description']}
+")
+            if endpoint['parameters']:
+                lines.append("### Parameters")
+                for param in endpoint['parameters']:
+                    lines.append(f"- `{param.get('name', '')}`: {param.get('description', '')}")
+                lines.append("")
+        return "
+".join(lines)
 
 
 def main() -> None:
