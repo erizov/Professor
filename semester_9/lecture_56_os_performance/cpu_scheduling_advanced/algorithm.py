@@ -9,19 +9,74 @@ This file contains the implementation of the Cpu Scheduling Advanced algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def cpu_scheduling_advanced(data):
-    """
-    Cpu Scheduling Advanced algorithm implementation.
+class CPUSchedulerAdvanced:
+    """Advanced CPU scheduling algorithms."""
+    def __init__(self):
+        self.processes: List[dict] = []
+        self.current_time = 0
     
-    Args:
-        data: Input data for the algorithm
+    def add_process(self, process_id: str, arrival_time: float,
+                   burst_time: float, priority: int = 0) -> None:
+        """Add process."""
+        self.processes.append({
+            "id": process_id,
+            "arrival": arrival_time,
+            "burst": burst_time,
+            "priority": priority,
+            "remaining": burst_time,
+            "wait_time": 0.0,
+            "turnaround_time": 0.0
+        })
+    
+    def round_robin(self, time_quantum: float = 2.0) -> List[str]:
+        """Round-robin scheduling."""
+        queue = sorted(self.processes, key=lambda p: p["arrival"])
+        result = []
+        current_time = 0.0
         
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Cpu Scheduling Advanced
-    return data
-
+        while queue:
+            process = queue.pop(0)
+            if process["remaining"] <= time_quantum:
+                current_time += process["remaining"]
+                process["turnaround_time"] = current_time - process["arrival"]
+                result.append(process["id"])
+            else:
+                current_time += time_quantum
+                process["remaining"] -= time_quantum
+                queue.append(process)
+                result.append(process["id"])
+        
+        return result
+    
+    def priority_scheduling(self) -> List[str]:
+        """Priority scheduling."""
+        sorted_processes = sorted(self.processes, 
+                                 key=lambda p: (p["priority"], p["arrival"]))
+        result = []
+        current_time = 0.0
+        
+        for process in sorted_processes:
+            current_time += process["burst"]
+            process["turnaround_time"] = current_time - process["arrival"]
+            result.append(process["id"])
+        
+        return result
+    
+    def shortest_job_first(self) -> List[str]:
+        """Shortest Job First scheduling."""
+        sorted_processes = sorted(self.processes, 
+                                 key=lambda p: (p["arrival"], p["burst"]))
+        result = []
+        current_time = 0.0
+        
+        for process in sorted_processes:
+            if current_time < process["arrival"]:
+                current_time = process["arrival"]
+            current_time += process["burst"]
+            process["turnaround_time"] = current_time - process["arrival"]
+            result.append(process["id"])
+        
+        return result
 
 
 def main() -> None:

@@ -9,19 +9,33 @@ This file contains the implementation of the Blue Green algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def blue_green(data):
-    """
-    Blue Green algorithm implementation.
+class BlueGreen:
+    """Blue-Green deployment."""
+    def __init__(self):
+        self.blue_version = None
+        self.green_version = None
+        self.active = "blue"
+        self.traffic_split = {"blue": 1.0, "green": 0.0}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Blue Green
-    return data
-
+    def deploy_green(self, version: str) -> None:
+        """Deploy green version."""
+        self.green_version = version
+    
+    def switch_traffic(self, green_percentage: float) -> None:
+        """Switch traffic to green."""
+        self.traffic_split["green"] = green_percentage
+        self.traffic_split["blue"] = 1.0 - green_percentage
+    
+    def complete_switch(self) -> None:
+        """Complete switch to green."""
+        self.active = "green"
+        self.traffic_split = {"blue": 0.0, "green": 1.0}
+        self.blue_version, self.green_version = self.green_version, self.blue_version
+    
+    def rollback(self) -> None:
+        """Rollback to blue."""
+        self.active = "blue"
+        self.traffic_split = {"blue": 1.0, "green": 0.0}
 
 
 def main() -> None:
