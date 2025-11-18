@@ -9,19 +9,25 @@ This file contains the implementation of the Jump Search algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def jump_search(data):
-    """
-    Jump Search algorithm implementation.
+def jump_search(arr: List[int], target: int) -> Optional[int]:
+    """Jump search algorithm."""
+    n = len(arr)
+    if n == 0:
+        return None
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Jump Search
-    return data
-
+    step = int(n ** 0.5)
+    prev = 0
+    
+    while arr[min(step, n) - 1] < target:
+        prev = step
+        step += int(n ** 0.5)
+        if prev >= n:
+            return None
+    
+    for i in range(prev, min(step, n)):
+        if arr[i] == target:
+            return i
+    return None
 
 
 def main() -> None:

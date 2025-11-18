@@ -9,19 +9,28 @@ This file contains the implementation of the Bucket Sort algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def bucket_sort(data):
-    """
-    Bucket Sort algorithm implementation.
+def bucket_sort(arr: List[float]) -> List[float]:
+    """Bucket sort algorithm."""
+    if not arr:
+        return arr
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Bucket Sort
-    return data
-
+    n = len(arr)
+    buckets = [[] for _ in range(n)]
+    
+    for num in arr:
+        bucket_idx = int(n * num)
+        if bucket_idx == n:
+            bucket_idx = n - 1
+        buckets[bucket_idx].append(num)
+    
+    for bucket in buckets:
+        bucket.sort()
+    
+    result = []
+    for bucket in buckets:
+        result.extend(bucket)
+    
+    return result
 
 
 def main() -> None:

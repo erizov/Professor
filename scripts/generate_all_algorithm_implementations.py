@@ -353,21 +353,36 @@ if __name__ == "__main__":
 def update_algorithm_file(algorithm_path: Path, algorithm_name: str) -> bool:
     """Update algorithm.py with specific implementation."""
     implementation = get_algorithm_implementation(algorithm_name)
-    new_content = create_algorithm_file_content(algorithm_name, implementation)
+    
+    if not implementation:
+        # No specific implementation available, skip
+        return False
     
     if algorithm_path.exists():
         existing = algorithm_path.read_text(encoding='utf-8')
-        # Check if it's a placeholder
-        if 'Implementation in progress' in existing or 'pass' in existing and len(existing) < 200:
-            # Replace placeholder
+        # Check if it already has the correct implementation
+        func_name = implementation.split('(')[0].split('def ')[1].strip()
+        if func_name in existing and 'def ' + func_name in existing:
+            # Check if it's a real implementation or just a stub
+            if '# Implementation specific to' in existing or 'return data' in existing:
+                # It's a generic stub, replace it
+                new_content = create_algorithm_file_content(algorithm_name, implementation)
+                algorithm_path.write_text(new_content, encoding='utf-8')
+                return True
+            # Already has good implementation
+            return False
+        # Check if it's a placeholder or generic
+        if ('Implementation in progress' in existing or 
+            'pass' in existing and len(existing) < 300 or
+            '# Implementation specific to' in existing or
+            'return data' in existing):
+            # Replace placeholder/generic with specific implementation
+            new_content = create_algorithm_file_content(algorithm_name, implementation)
             algorithm_path.write_text(new_content, encoding='utf-8')
             return True
-        # Check if it already has a good implementation
-        if implementation and implementation.split('\n')[0].split('(')[0] in existing:
-            # Already has this implementation
-            return False
     
     # Write new content
+    new_content = create_algorithm_file_content(algorithm_name, implementation)
     algorithm_path.write_text(new_content, encoding='utf-8')
     return True
 
