@@ -3760,6 +3760,437 @@ def subset_sum_dp(nums: List[int], target: int) -> bool:
             dp[j] = dp[j] or dp[j - num]
     
     return dp[target]''',
+    
+    'circuit_breaker': '''class CircuitBreaker:
+    """Circuit breaker pattern implementation."""
+    def __init__(self, failure_threshold: int = 5, timeout: int = 60):
+        self.failure_threshold = failure_threshold
+        self.timeout = timeout
+        self.failure_count = 0
+        self.last_failure_time = None
+        self.state = "CLOSED"  # CLOSED, OPEN, HALF_OPEN
+    
+    def call(self, func: callable, *args, **kwargs):
+        """Call function with circuit breaker."""
+        if self.state == "OPEN":
+            if self._should_attempt_reset():
+                self.state = "HALF_OPEN"
+            else:
+                raise Exception("Circuit breaker is OPEN")
+        
+        try:
+            result = func(*args, **kwargs)
+            self._on_success()
+            return result
+        except Exception as e:
+            self._on_failure()
+            raise e
+    
+    def _on_success(self) -> None:
+        """Handle successful call."""
+        self.failure_count = 0
+        self.state = "CLOSED"
+    
+    def _on_failure(self) -> None:
+        """Handle failed call."""
+        import time
+        self.failure_count += 1
+        self.last_failure_time = time.time()
+        
+        if self.failure_count >= self.failure_threshold:
+            self.state = "OPEN"
+    
+    def _should_attempt_reset(self) -> bool:
+        """Check if should attempt reset."""
+        import time
+        if self.last_failure_time is None:
+            return True
+        return (time.time() - self.last_failure_time) >= self.timeout''',
+    
+    'rate_limiter': '''import time
+from collections import deque
+
+class RateLimiter:
+    """Rate limiter using sliding window."""
+    def __init__(self, max_requests: int, window_seconds: int):
+        self.max_requests = max_requests
+        self.window_seconds = window_seconds
+        self.requests: deque = deque()
+    
+    def allow(self) -> bool:
+        """Check if request is allowed."""
+        now = time.time()
+        
+        # Remove old requests outside window
+        while self.requests and self.requests[0] < now - self.window_seconds:
+            self.requests.popleft()
+        
+        if len(self.requests) < self.max_requests:
+            self.requests.append(now)
+            return True
+        
+        return False
+
+class TokenBucket:
+    """Token bucket rate limiter."""
+    def __init__(self, capacity: int, refill_rate: float):
+        self.capacity = capacity
+        self.refill_rate = refill_rate
+        self.tokens = capacity
+        self.last_refill = time.time()
+    
+    def allow(self, tokens: int = 1) -> bool:
+        """Check if request is allowed."""
+        self._refill()
+        
+        if self.tokens >= tokens:
+            self.tokens -= tokens
+            return True
+        
+        return False
+    
+    def _refill(self) -> None:
+        """Refill tokens."""
+        now = time.time()
+        elapsed = now - self.last_refill
+        self.tokens = min(self.capacity, 
+                         self.tokens + elapsed * self.refill_rate)
+        self.last_refill = now''',
+    
+    'load_balancer': '''import random
+import hashlib
+
+class LoadBalancer:
+    """Load balancer implementation."""
+    def __init__(self, servers: List[str]):
+        self.servers = servers
+        self.current_index = 0
+    
+    def round_robin(self) -> str:
+        """Round-robin selection."""
+        server = self.servers[self.current_index]
+        self.current_index = (self.current_index + 1) % len(self.servers)
+        return server
+    
+    def random(self) -> str:
+        """Random selection."""
+        return random.choice(self.servers)
+    
+    def weighted_round_robin(self, weights: List[float]) -> str:
+        """Weighted round-robin."""
+        total_weight = sum(weights)
+        r = random.uniform(0, total_weight)
+        
+        cumulative = 0
+        for i, weight in enumerate(weights):
+            cumulative += weight
+            if r <= cumulative:
+                return self.servers[i]
+        
+        return self.servers[-1]
+    
+    def consistent_hash(self, key: str) -> str:
+        """Consistent hashing selection."""
+        if not self.servers:
+            return None
+        
+        hash_val = int(hashlib.md5(key.encode()).hexdigest(), 16)
+        index = hash_val % len(self.servers)
+        return self.servers[index]''',
+    
+    'event_sourcing': '''class Event:
+    """Event in event sourcing."""
+    def __init__(self, event_type: str, data: dict, timestamp: float = None):
+        import time
+        self.event_type = event_type
+        self.data = data
+        self.timestamp = timestamp or time.time()
+        self.version = 0
+
+class EventStore:
+    """Event store for event sourcing."""
+    def __init__(self):
+        self.events: List[Event] = []
+        self.aggregates: Dict[str, List[Event]] = {}
+    
+    def append(self, aggregate_id: str, event: Event) -> None:
+        """Append event to store."""
+        event.version = len(self.events)
+        self.events.append(event)
+        
+        if aggregate_id not in self.aggregates:
+            self.aggregates[aggregate_id] = []
+        self.aggregates[aggregate_id].append(event)
+    
+    def get_events(self, aggregate_id: str) -> List[Event]:
+        """Get events for aggregate."""
+        return self.aggregates.get(aggregate_id, [])
+    
+    def replay(self, aggregate_id: str, handler: callable) -> any:
+        """Replay events to rebuild state."""
+        state = None
+        for event in self.get_events(aggregate_id):
+            state = handler(state, event)
+        return state''',
+    
+    'caching': '''class Cache:
+    """Simple cache implementation."""
+    def __init__(self, max_size: int = 100):
+        self.max_size = max_size
+        self.cache: Dict[str, any] = {}
+        self.access_order: List[str] = []
+    
+    def get(self, key: str) -> Optional[any]:
+        """Get value from cache."""
+        if key in self.cache:
+            # Move to end (most recently used)
+            self.access_order.remove(key)
+            self.access_order.append(key)
+            return self.cache[key]
+        return None
+    
+    def put(self, key: str, value: any) -> None:
+        """Put value in cache."""
+        if key in self.cache:
+            self.access_order.remove(key)
+        elif len(self.cache) >= self.max_size:
+            # Remove least recently used
+            lru_key = self.access_order.pop(0)
+            del self.cache[lru_key]
+        
+        self.cache[key] = value
+        self.access_order.append(key)
+    
+    def clear(self) -> None:
+        """Clear cache."""
+        self.cache.clear()
+        self.access_order.clear()''',
+    
+    'retry': '''import time
+import random
+
+class Retry:
+    """Retry mechanism with exponential backoff."""
+    def __init__(self, max_attempts: int = 3, base_delay: float = 1.0, 
+                 max_delay: float = 60.0, exponential_base: float = 2.0):
+        self.max_attempts = max_attempts
+        self.base_delay = base_delay
+        self.max_delay = max_delay
+        self.exponential_base = exponential_base
+    
+    def execute(self, func: callable, *args, **kwargs):
+        """Execute function with retry."""
+        last_exception = None
+        
+        for attempt in range(self.max_attempts):
+            try:
+                return func(*args, **kwargs)
+            except Exception as e:
+                last_exception = e
+                if attempt < self.max_attempts - 1:
+                    delay = min(
+                        self.base_delay * (self.exponential_base ** attempt),
+                        self.max_delay
+                    )
+                    # Add jitter
+                    delay += random.uniform(0, delay * 0.1)
+                    time.sleep(delay)
+        
+        raise last_exception''',
+    
+    'idempotency': '''class IdempotencyKey:
+    """Idempotency key handler."""
+    def __init__(self):
+        self.processed_keys: Dict[str, any] = {}
+    
+    def process(self, key: str, func: callable, *args, **kwargs) -> any:
+        """Process request with idempotency key."""
+        if key in self.processed_keys:
+            return self.processed_keys[key]
+        
+        result = func(*args, **kwargs)
+        self.processed_keys[key] = result
+        return result
+    
+    def clear(self, key: str) -> None:
+        """Clear idempotency key."""
+        if key in self.processed_keys:
+            del self.processed_keys[key]''',
+    
+    'message_queue': '''from queue import Queue
+import threading
+
+class MessageQueue:
+    """Simple message queue implementation."""
+    def __init__(self, max_size: int = 1000):
+        self.queue = Queue(maxsize=max_size)
+        self.subscribers: List[callable] = []
+        self.running = False
+        self.worker_thread = None
+    
+    def publish(self, message: any) -> bool:
+        """Publish message."""
+        try:
+            self.queue.put(message, block=False)
+            return True
+        except:
+            return False
+    
+    def subscribe(self, handler: callable) -> None:
+        """Subscribe to messages."""
+        self.subscribers.append(handler)
+    
+    def start(self) -> None:
+        """Start processing messages."""
+        self.running = True
+        self.worker_thread = threading.Thread(target=self._process_messages)
+        self.worker_thread.start()
+    
+    def stop(self) -> None:
+        """Stop processing messages."""
+        self.running = False
+        if self.worker_thread:
+            self.worker_thread.join()
+    
+    def _process_messages(self) -> None:
+        """Process messages in background."""
+        while self.running:
+            try:
+                message = self.queue.get(timeout=1)
+                for handler in self.subscribers:
+                    handler(message)
+            except:
+                continue''',
+    
+    'pub_sub': '''class PubSub:
+    """Publish-Subscribe pattern implementation."""
+    def __init__(self):
+        self.subscribers: Dict[str, List[callable]] = {}
+    
+    def subscribe(self, topic: str, handler: callable) -> None:
+        """Subscribe to topic."""
+        if topic not in self.subscribers:
+            self.subscribers[topic] = []
+        self.subscribers[topic].append(handler)
+    
+    def unsubscribe(self, topic: str, handler: callable) -> None:
+        """Unsubscribe from topic."""
+        if topic in self.subscribers:
+            self.subscribers[topic].remove(handler)
+    
+    def publish(self, topic: str, message: any) -> None:
+        """Publish message to topic."""
+        if topic in self.subscribers:
+            for handler in self.subscribers[topic]:
+                handler(message)''',
+    
+    'state_machine': '''class StateMachine:
+    """Finite state machine implementation."""
+    def __init__(self, initial_state: str):
+        self.current_state = initial_state
+        self.transitions: Dict[tuple, str] = {}  # (state, event) -> new_state
+        self.actions: Dict[tuple, callable] = {}  # (state, event) -> action
+    
+    def add_transition(self, state: str, event: str, 
+                      new_state: str, action: callable = None) -> None:
+        """Add state transition."""
+        self.transitions[(state, event)] = new_state
+        if action:
+            self.actions[(state, event)] = action
+    
+    def trigger(self, event: str) -> bool:
+        """Trigger event."""
+        key = (self.current_state, event)
+        if key in self.transitions:
+            if key in self.actions:
+                self.actions[key]()
+            self.current_state = self.transitions[key]
+            return True
+        return False
+    
+    def get_state(self) -> str:
+        """Get current state."""
+        return self.current_state''',
+    
+    'workflow_engine': '''class WorkflowStep:
+    """Step in workflow."""
+    def __init__(self, name: str, action: callable):
+        self.name = name
+        self.action = action
+        self.next_steps: List[str] = []
+    
+    def add_next(self, step_name: str) -> None:
+        """Add next step."""
+        self.next_steps.append(step_name)
+
+class WorkflowEngine:
+    """Workflow engine implementation."""
+    def __init__(self):
+        self.steps: Dict[str, WorkflowStep] = {}
+        self.start_step: Optional[str] = None
+    
+    def add_step(self, step: WorkflowStep) -> None:
+        """Add workflow step."""
+        self.steps[step.name] = step
+    
+    def set_start(self, step_name: str) -> None:
+        """Set start step."""
+        self.start_step = step_name
+    
+    def execute(self, context: dict) -> dict:
+        """Execute workflow."""
+        if not self.start_step:
+            return context
+        
+        current = self.start_step
+        while current:
+            if current not in self.steps:
+                break
+            
+            step = self.steps[current]
+            context = step.action(context)
+            
+            if step.next_steps:
+                current = step.next_steps[0]  # Simple: take first next step
+            else:
+                break
+        
+        return context''',
+    
+    'saga': '''class SagaStep:
+    """Step in saga pattern."""
+    def __init__(self, name: str, action: callable, compensate: callable):
+        self.name = name
+        self.action = action
+        self.compensate = compensate
+        self.completed = False
+
+class Saga:
+    """Saga pattern for distributed transactions."""
+    def __init__(self):
+        self.steps: List[SagaStep] = []
+        self.completed_steps: List[SagaStep] = []
+    
+    def add_step(self, step: SagaStep) -> None:
+        """Add saga step."""
+        self.steps.append(step)
+    
+    def execute(self, context: dict) -> dict:
+        """Execute saga."""
+        try:
+            for step in self.steps:
+                context = step.action(context)
+                step.completed = True
+                self.completed_steps.append(step)
+            return context
+        except Exception as e:
+            # Compensate in reverse order
+            for step in reversed(self.completed_steps):
+                try:
+                    step.compensate(context)
+                except:
+                    pass
+            raise e''',
 }
 
 

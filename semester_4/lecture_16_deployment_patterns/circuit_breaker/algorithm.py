@@ -9,19 +9,51 @@ This file contains the implementation of the Circuit Breaker algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def circuit_breaker(data):
-    """
-    Circuit Breaker algorithm implementation.
+class CircuitBreaker:
+    """Circuit breaker pattern implementation."""
+    def __init__(self, failure_threshold: int = 5, timeout: int = 60):
+        self.failure_threshold = failure_threshold
+        self.timeout = timeout
+        self.failure_count = 0
+        self.last_failure_time = None
+        self.state = "CLOSED"  # CLOSED, OPEN, HALF_OPEN
     
-    Args:
-        data: Input data for the algorithm
+    def call(self, func: callable, *args, **kwargs):
+        """Call function with circuit breaker."""
+        if self.state == "OPEN":
+            if self._should_attempt_reset():
+                self.state = "HALF_OPEN"
+            else:
+                raise Exception("Circuit breaker is OPEN")
         
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Circuit Breaker
-    return data
-
+        try:
+            result = func(*args, **kwargs)
+            self._on_success()
+            return result
+        except Exception as e:
+            self._on_failure()
+            raise e
+    
+    def _on_success(self) -> None:
+        """Handle successful call."""
+        self.failure_count = 0
+        self.state = "CLOSED"
+    
+    def _on_failure(self) -> None:
+        """Handle failed call."""
+        import time
+        self.failure_count += 1
+        self.last_failure_time = time.time()
+        
+        if self.failure_count >= self.failure_threshold:
+            self.state = "OPEN"
+    
+    def _should_attempt_reset(self) -> bool:
+        """Check if should attempt reset."""
+        import time
+        if self.last_failure_time is None:
+            return True
+        return (time.time() - self.last_failure_time) >= self.timeout
 
 
 def main() -> None:
