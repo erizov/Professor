@@ -9,19 +9,33 @@ This file contains the implementation of the Schema Migration algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def schema_migration(data):
-    """
-    Schema Migration algorithm implementation.
+class SchemaMigration:
+    """Database schema migration."""
+    def __init__(self):
+        self.migrations: List[dict] = {}
+        self.applied: List[str] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Schema Migration
-    return data
-
+    def add_migration(self, migration_id: str, 
+                    up_sql: str, down_sql: str) -> None:
+        """Add migration."""
+        self.migrations[migration_id] = {
+            'up': up_sql,
+            'down': down_sql
+        }
+    
+    def apply_migration(self, migration_id: str) -> bool:
+        """Apply migration."""
+        if migration_id in self.migrations:
+            self.applied.append(migration_id)
+            return True
+        return False
+    
+    def rollback_migration(self, migration_id: str) -> bool:
+        """Rollback migration."""
+        if migration_id in self.applied:
+            self.applied.remove(migration_id)
+            return True
+        return False
 
 
 def main() -> None:
