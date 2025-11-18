@@ -9,19 +9,38 @@ This file contains the implementation of the Event Driven Architecture algorithm
 from typing import List, Optional, Dict, Set
 
 
-def event_driven_architecture(data):
-    """
-    Event Driven Architecture algorithm implementation.
+class EventDrivenArchitecture:
+    """Event-driven architecture implementation."""
+    def __init__(self):
+        self.event_bus: Dict[str, List[callable]] = {}
+        self.event_history: List[dict] = []
     
-    Args:
-        data: Input data for the algorithm
+    def subscribe(self, event_type: str, handler: callable) -> None:
+        """Subscribe to event type."""
+        if event_type not in self.event_bus:
+            self.event_bus[event_type] = []
+        self.event_bus[event_type].append(handler)
+    
+    def publish(self, event_type: str, event_data: any) -> None:
+        """Publish event."""
+        import time
+        event = {
+            "type": event_type,
+            "data": event_data,
+            "timestamp": time.time()
+        }
+        self.event_history.append(event)
         
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Event Driven Architecture
-    return data
-
+        # Notify subscribers
+        if event_type in self.event_bus:
+            for handler in self.event_bus[event_type]:
+                handler(event)
+    
+    def get_event_history(self, event_type: Optional[str] = None) -> List[dict]:
+        """Get event history."""
+        if event_type:
+            return [e for e in self.event_history if e["type"] == event_type]
+        return self.event_history
 
 
 def main() -> None:
