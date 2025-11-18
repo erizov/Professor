@@ -42,6 +42,7 @@ def gdpr_compliance(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Gdpr Compliance implementation.
     

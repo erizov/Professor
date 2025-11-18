@@ -42,6 +42,7 @@ def data_quality(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Data Quality implementation.
     

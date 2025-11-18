@@ -42,6 +42,7 @@ def star_schema(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Star Schema implementation.
     

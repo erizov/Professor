@@ -42,6 +42,7 @@ def streaming_analytics(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Streaming Analytics implementation.
     
