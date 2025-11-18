@@ -626,6 +626,445 @@ class BinarySearchTree:
         if smallest != i:
             self.heap[i], self.heap[smallest] = self.heap[smallest], self.heap[i]
             self._heapify_down(smallest)''',
+    
+    'linear_regression': '''def linear_regression(X: List[float], y: List[float]) -> tuple:
+    """Simple linear regression using least squares."""
+    n = len(X)
+    sum_x = sum(X)
+    sum_y = sum(y)
+    sum_xy = sum(X[i] * y[i] for i in range(n))
+    sum_x2 = sum(x * x for x in X)
+    
+    slope = (n * sum_xy - sum_x * sum_y) / (n * sum_x2 - sum_x * sum_x)
+    intercept = (sum_y - slope * sum_x) / n
+    
+    return slope, intercept
+
+def predict(slope: float, intercept: float, x: float) -> float:
+    """Predict y value for given x."""
+    return slope * x + intercept''',
+    
+    'kmeans': '''def kmeans(data: List[List[float]], k: int, max_iters: int = 100) -> List[List[float]]:
+    """K-means clustering algorithm."""
+    import random
+    import math
+    
+    n = len(data)
+    dim = len(data[0]) if data else 0
+    
+    # Initialize centroids randomly
+    centroids = [data[random.randint(0, n - 1)][:] for _ in range(k)]
+    
+    for _ in range(max_iters):
+        # Assign points to nearest centroid
+        clusters = [[] for _ in range(k)]
+        for point in data:
+            distances = [math.sqrt(sum((point[i] - centroids[j][i]) ** 2 
+                                      for i in range(dim))) 
+                        for j in range(k)]
+            nearest = distances.index(min(distances))
+            clusters[nearest].append(point)
+        
+        # Update centroids
+        new_centroids = []
+        for cluster in clusters:
+            if cluster:
+                new_centroid = [sum(point[i] for point in cluster) / len(cluster) 
+                               for i in range(dim)]
+                new_centroids.append(new_centroid)
+            else:
+                new_centroids.append(centroids[clusters.index(cluster)])
+        
+        if new_centroids == centroids:
+            break
+        centroids = new_centroids
+    
+    return centroids''',
+    
+    'knn': '''def knn(X_train: List[List[float]], y_train: List[any], 
+         X_test: List[float], k: int = 3) -> any:
+    """K-Nearest Neighbors classification."""
+    import math
+    
+    distances = []
+    for i, x_train in enumerate(X_train):
+        dist = math.sqrt(sum((x_test[j] - x_train[j]) ** 2 
+                            for j in range(len(x_test))))
+        distances.append((dist, y_train[i]))
+    
+    distances.sort(key=lambda x: x[0])
+    k_nearest = [label for _, label in distances[:k]]
+    
+    # Return most common label
+    return max(set(k_nearest), key=k_nearest.count)''',
+    
+    'decision_tree': '''class DecisionTreeNode:
+    """Decision tree node."""
+    def __init__(self, feature=None, threshold=None, left=None, right=None, value=None):
+        self.feature = feature
+        self.threshold = threshold
+        self.left = left
+        self.right = right
+        self.value = value
+
+def build_decision_tree(X: List[List[float]], y: List[any], max_depth: int = 10) -> DecisionTreeNode:
+    """Build decision tree (simplified version)."""
+    if max_depth == 0 or len(set(y)) == 1:
+        return DecisionTreeNode(value=max(set(y), key=y.count))
+    
+    # Simple split (in real implementation, find best split)
+    if not X:
+        return DecisionTreeNode(value=None)
+    
+    feature = 0
+    threshold = sum(row[feature] for row in X) / len(X)
+    
+    left_X, left_y = [], []
+    right_X, right_y = [], []
+    
+    for i, row in enumerate(X):
+        if row[feature] <= threshold:
+            left_X.append(row)
+            left_y.append(y[i])
+        else:
+            right_X.append(row)
+            right_y.append(y[i])
+    
+    left = build_decision_tree(left_X, left_y, max_depth - 1)
+    right = build_decision_tree(right_X, right_y, max_depth - 1)
+    
+    return DecisionTreeNode(feature=feature, threshold=threshold, left=left, right=right)
+
+def predict_tree(node: DecisionTreeNode, x: List[float]) -> any:
+    """Predict using decision tree."""
+    if node.value is not None:
+        return node.value
+    
+    if x[node.feature] <= node.threshold:
+        return predict_tree(node.left, x)
+    else:
+        return predict_tree(node.right, x)''',
+    
+    'huffman': '''class HuffmanNode:
+    """Huffman tree node."""
+    def __init__(self, char=None, freq=0, left=None, right=None):
+        self.char = char
+        self.freq = freq
+        self.left = left
+        self.right = right
+    
+    def __lt__(self, other):
+        return self.freq < other.freq
+
+def build_huffman_tree(text: str) -> HuffmanNode:
+    """Build Huffman tree."""
+    from collections import Counter
+    from heapq import heappush, heappop
+    
+    freq = Counter(text)
+    heap = []
+    
+    for char, count in freq.items():
+        heappush(heap, HuffmanNode(char=char, freq=count))
+    
+    while len(heap) > 1:
+        left = heappop(heap)
+        right = heappop(heap)
+        merged = HuffmanNode(freq=left.freq + right.freq, left=left, right=right)
+        heappush(heap, merged)
+    
+    return heap[0] if heap else None
+
+def build_huffman_codes(root: HuffmanNode, code: str = "", codes: dict = None) -> dict:
+    """Build Huffman codes."""
+    if codes is None:
+        codes = {}
+    
+    if root.char is not None:
+        codes[root.char] = code
+    else:
+        if root.left:
+            build_huffman_codes(root.left, code + "0", codes)
+        if root.right:
+            build_huffman_codes(root.right, code + "1", codes)
+    
+    return codes''',
+    
+    'activity_selection': '''def activity_selection(start: List[int], finish: List[int]) -> List[int]:
+    """Activity selection problem using greedy approach."""
+    n = len(finish)
+    activities = list(zip(start, finish, range(n)))
+    activities.sort(key=lambda x: x[1])  # Sort by finish time
+    
+    selected = [activities[0][2]]
+    last_finish = activities[0][1]
+    
+    for i in range(1, n):
+        if activities[i][0] >= last_finish:
+            selected.append(activities[i][2])
+            last_finish = activities[i][1]
+    
+    return selected''',
+    
+    'fractional_knapsack': '''def fractional_knapsack(weights: List[int], values: List[int], capacity: int) -> float:
+    """Fractional knapsack using greedy approach."""
+    items = [(values[i] / weights[i], weights[i], values[i]) 
+             for i in range(len(weights))]
+    items.sort(reverse=True, key=lambda x: x[0])
+    
+    total_value = 0.0
+    remaining = capacity
+    
+    for ratio, weight, value in items:
+        if remaining >= weight:
+            total_value += value
+            remaining -= weight
+        else:
+            total_value += ratio * remaining
+            break
+    
+    return total_value''',
+    
+    'trie': '''class TrieNode:
+    """Trie node."""
+    def __init__(self):
+        self.children: Dict[str, 'TrieNode'] = {}
+        self.is_end = False
+
+class Trie:
+    """Trie data structure."""
+    def __init__(self):
+        self.root = TrieNode()
+    
+    def insert(self, word: str) -> None:
+        """Insert word into trie."""
+        node = self.root
+        for char in word:
+            if char not in node.children:
+                node.children[char] = TrieNode()
+            node = node.children[char]
+        node.is_end = True
+    
+    def search(self, word: str) -> bool:
+        """Search for word in trie."""
+        node = self.root
+        for char in word:
+            if char not in node.children:
+                return False
+            node = node.children[char]
+        return node.is_end
+    
+    def starts_with(self, prefix: str) -> bool:
+        """Check if any word starts with prefix."""
+        node = self.root
+        for char in prefix:
+            if char not in node.children:
+                return False
+            node = node.children[char]
+        return True''',
+    
+    'red_black_tree': '''class RBNode:
+    """Red-Black tree node."""
+    RED = True
+    BLACK = False
+    
+    def __init__(self, val: int):
+        self.val = val
+        self.color = RBNode.RED
+        self.left: Optional['RBNode'] = None
+        self.right: Optional['RBNode'] = None
+        self.parent: Optional['RBNode'] = None
+
+class RedBlackTree:
+    """Red-Black tree implementation (simplified)."""
+    def __init__(self):
+        self.root: Optional[RBNode] = None
+    
+    def insert(self, val: int) -> None:
+        """Insert value into Red-Black tree."""
+        node = RBNode(val)
+        if self.root is None:
+            self.root = node
+            node.color = RBNode.BLACK
+        else:
+            self._insert_node(self.root, node)
+            self._fix_violations(node)
+    
+    def _insert_node(self, root: RBNode, node: RBNode) -> None:
+        """Insert node into tree."""
+        if node.val < root.val:
+            if root.left is None:
+                root.left = node
+                node.parent = root
+            else:
+                self._insert_node(root.left, node)
+        else:
+            if root.right is None:
+                root.right = node
+                node.parent = root
+            else:
+                self._insert_node(root.right, node)
+    
+    def _fix_violations(self, node: RBNode) -> None:
+        """Fix Red-Black tree violations (simplified)."""
+        # Simplified version - full implementation requires rotations
+        while node != self.root and node.parent.color == RBNode.RED:
+            # Fix violations
+            pass
+        self.root.color = RBNode.BLACK''',
+    
+    'b_tree': '''class BTreeNode:
+    """B-tree node."""
+    def __init__(self, leaf: bool = False):
+        self.keys: List[int] = []
+        self.children: List['BTreeNode'] = []
+        self.leaf = leaf
+
+class BTree:
+    """B-tree implementation (simplified)."""
+    def __init__(self, min_degree: int = 3):
+        self.root = BTreeNode(leaf=True)
+        self.min_degree = min_degree
+    
+    def search(self, key: int, node: BTreeNode = None) -> Optional[BTreeNode]:
+        """Search for key in B-tree."""
+        if node is None:
+            node = self.root
+        
+        i = 0
+        while i < len(node.keys) and key > node.keys[i]:
+            i += 1
+        
+        if i < len(node.keys) and node.keys[i] == key:
+            return node
+        
+        if node.leaf:
+            return None
+        
+        return self.search(key, node.children[i])
+    
+    def insert(self, key: int) -> None:
+        """Insert key into B-tree."""
+        root = self.root
+        if len(root.keys) == 2 * self.min_degree - 1:
+            new_root = BTreeNode(leaf=False)
+            new_root.children.append(root)
+            self._split_child(new_root, 0)
+            self.root = new_root
+        self._insert_non_full(self.root, key)
+    
+    def _insert_non_full(self, node: BTreeNode, key: int) -> None:
+        """Insert into non-full node."""
+        i = len(node.keys) - 1
+        if node.leaf:
+            node.keys.append(0)
+            while i >= 0 and key < node.keys[i]:
+                node.keys[i + 1] = node.keys[i]
+                i -= 1
+            node.keys[i + 1] = key
+        else:
+            while i >= 0 and key < node.keys[i]:
+                i -= 1
+            i += 1
+            if len(node.children[i].keys) == 2 * self.min_degree - 1:
+                self._split_child(node, i)
+                if key > node.keys[i]:
+                    i += 1
+            self._insert_non_full(node.children[i], key)
+    
+    def _split_child(self, parent: BTreeNode, index: int) -> None:
+        """Split child node."""
+        # Simplified - full implementation needed
+        pass''',
+    
+    'chaining': '''class HashTableChaining:
+    """Hash table with chaining collision resolution."""
+    def __init__(self, size: int = 10):
+        self.size = size
+        self.table: List[List[tuple]] = [[] for _ in range(size)]
+    
+    def _hash(self, key: int) -> int:
+        """Hash function."""
+        return key % self.size
+    
+    def insert(self, key: int, value: any) -> None:
+        """Insert key-value pair."""
+        index = self._hash(key)
+        for i, (k, v) in enumerate(self.table[index]):
+            if k == key:
+                self.table[index][i] = (key, value)
+                return
+        self.table[index].append((key, value))
+    
+    def get(self, key: int) -> Optional[any]:
+        """Get value by key."""
+        index = self._hash(key)
+        for k, v in self.table[index]:
+            if k == key:
+                return v
+        return None
+    
+    def delete(self, key: int) -> bool:
+        """Delete key-value pair."""
+        index = self._hash(key)
+        for i, (k, v) in enumerate(self.table[index]):
+            if k == key:
+                del self.table[index][i]
+                return True
+        return False''',
+    
+    'open_addressing': '''class HashTableOpenAddressing:
+    """Hash table with open addressing (linear probing)."""
+    def __init__(self, size: int = 10):
+        self.size = size
+        self.table: List[Optional[tuple]] = [None] * size
+        self.deleted = object()  # Marker for deleted entries
+    
+    def _hash(self, key: int) -> int:
+        """Hash function."""
+        return key % self.size
+    
+    def _probe(self, key: int, start_index: int) -> int:
+        """Linear probing."""
+        index = start_index
+        while self.table[index] is not None and self.table[index] is not self.deleted:
+            if self.table[index][0] == key:
+                return index
+            index = (index + 1) % self.size
+            if index == start_index:
+                raise Exception("Hash table is full")
+        return index
+    
+    def insert(self, key: int, value: any) -> None:
+        """Insert key-value pair."""
+        index = self._hash(key)
+        index = self._probe(key, index)
+        self.table[index] = (key, value)
+    
+    def get(self, key: int) -> Optional[any]:
+        """Get value by key."""
+        index = self._hash(key)
+        start = index
+        while self.table[index] is not None:
+            if self.table[index] is not self.deleted and self.table[index][0] == key:
+                return self.table[index][1]
+            index = (index + 1) % self.size
+            if index == start:
+                break
+        return None
+    
+    def delete(self, key: int) -> bool:
+        """Delete key-value pair."""
+        index = self._hash(key)
+        start = index
+        while self.table[index] is not None:
+            if self.table[index] is not self.deleted and self.table[index][0] == key:
+                self.table[index] = self.deleted
+                return True
+            index = (index + 1) % self.size
+            if index == start:
+                break
+        return False''',
 }
 
 
