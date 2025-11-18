@@ -9,19 +9,36 @@ This file contains the implementation of the Data Marketplace algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def data_marketplace(data):
-    """
-    Data Marketplace algorithm implementation.
+class DataMarketplace:
+    """Data marketplace."""
+    def __init__(self):
+        self.datasets: Dict[str, dict] = {}
+        self.purchases: List[dict] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Data Marketplace
-    return data
-
+    def list_dataset(self, dataset_id: str, name: str, 
+                   price: float, description: str) -> None:
+        """List dataset for sale."""
+        self.datasets[dataset_id] = {
+            'name': name,
+            'price': price,
+            'description': description,
+            'available': True
+        }
+    
+    def purchase(self, dataset_id: str, buyer: str) -> bool:
+        """Purchase dataset."""
+        if dataset_id not in self.datasets:
+            return False
+        dataset = self.datasets[dataset_id]
+        if not dataset['available']:
+            return False
+        import time
+        self.purchases.append({
+            'dataset_id': dataset_id,
+            'buyer': buyer,
+            'timestamp': time.time()
+        })
+        return True
 
 
 def main() -> None:
