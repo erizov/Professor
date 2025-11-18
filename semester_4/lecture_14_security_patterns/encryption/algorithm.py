@@ -27,6 +27,7 @@ class EncryptionAlgorithm(ABC):
         """Encrypt plaintext."""
         
     
+    
     """
     Encryption implementation.
     

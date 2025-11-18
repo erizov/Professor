@@ -28,6 +28,7 @@ class PaymentGateway(ABC):
         """Process payment."""
         
     
+    
     """
     Mocking implementation.
     

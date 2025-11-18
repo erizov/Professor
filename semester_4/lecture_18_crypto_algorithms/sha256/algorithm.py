@@ -52,6 +52,7 @@ def right_rotate(value: int, amount: int) -> int:
     """
     
     
+    
     """
     Sha256 implementation.
     

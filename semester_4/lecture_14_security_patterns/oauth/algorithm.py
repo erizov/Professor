@@ -70,6 +70,7 @@ class AuthorizationServer:
         """Register OAuth client."""
         
     
+    
     """
     Oauth implementation.
     
