@@ -9,19 +9,40 @@ This file contains the implementation of the Real Time Aggregation algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def real_time_aggregation(data):
-    """
-    Real Time Aggregation algorithm implementation.
+class RealTimeAggregation:
+    """Real-time data aggregation."""
+    def __init__(self):
+        self.windows: Dict[str, List[dict]] = {}
+        self.aggregates: Dict[str, dict] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Real Time Aggregation
-    return data
-
+    def add_data(self, stream_id: str, data: dict, 
+                timestamp: float) -> None:
+        """Add data to stream."""
+        if stream_id not in self.windows:
+            self.windows[stream_id] = []
+        self.windows[stream_id].append({
+            'data': data,
+            'timestamp': timestamp
+        })
+    
+    def aggregate(self, stream_id: str, window_size: float) -> dict:
+        """Aggregate data in window."""
+        if stream_id not in self.windows:
+            return {}
+        import time
+        current_time = time.time()
+        window_data = [
+            entry for entry in self.windows[stream_id]
+            if current_time - entry['timestamp'] <= window_size
+        ]
+        if window_data:
+            values = [entry['data'].get('value', 0) for entry in window_data]
+            return {
+                'sum': sum(values),
+                'avg': sum(values) / len(values),
+                'count': len(values)
+            }
+        return {}
 
 
 def main() -> None:

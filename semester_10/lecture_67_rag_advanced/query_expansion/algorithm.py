@@ -9,19 +9,25 @@ This file contains the implementation of the Query Expansion algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def query_expansion(data):
-    """
-    Query Expansion algorithm implementation.
+class QueryExpansion:
+    """Query expansion for search."""
+    def __init__(self):
+        self.synonyms: Dict[str, List[str]] = {}
+        self.expansions: List[dict] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Query Expansion
-    return data
-
+    def add_synonyms(self, term: str, synonyms: List[str]) -> None:
+        """Add synonyms."""
+        self.synonyms[term] = synonyms
+    
+    def expand(self, query: str) -> List[str]:
+        """Expand query."""
+        terms = query.split()
+        expanded = []
+        for term in terms:
+            expanded.append(term)
+            if term in self.synonyms:
+                expanded.extend(self.synonyms[term])
+        return expanded
 
 
 def main() -> None:

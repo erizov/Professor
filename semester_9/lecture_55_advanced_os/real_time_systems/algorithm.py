@@ -9,19 +9,28 @@ This file contains the implementation of the Real Time Systems algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def real_time_systems(data):
-    """
-    Real Time Systems algorithm implementation.
+class RealTimeSystems:
+    """Real-time system."""
+    def __init__(self):
+        self.tasks: List[dict] = {}
+        self.scheduler: dict = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Real Time Systems
-    return data
-
+    def add_task(self, task_id: str, deadline: float, 
+                priority: int) -> None:
+        """Add real-time task."""
+        self.tasks[task_id] = {
+            'deadline': deadline,
+            'priority': priority,
+            'completed': False
+        }
+    
+    def schedule(self) -> List[str]:
+        """Schedule tasks by deadline."""
+        sorted_tasks = sorted(
+            self.tasks.items(),
+            key=lambda x: (x[1]['deadline'], -x[1]['priority'])
+        )
+        return [task_id for task_id, _ in sorted_tasks]
 
 
 def main() -> None:

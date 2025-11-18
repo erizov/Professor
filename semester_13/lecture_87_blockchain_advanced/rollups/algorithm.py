@@ -9,19 +9,32 @@ This file contains the implementation of the Rollups algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def rollups(data):
-    """
-    Rollups algorithm implementation.
+class Rollups:
+    """Data rollups."""
+    def __init__(self):
+        self.raw_data: List[dict] = {}
+        self.rollups: Dict[str, dict] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Rollups
-    return data
-
+    def add_data(self, timestamp: float, value: float) -> None:
+        """Add raw data."""
+        self.raw_data.append({
+            'timestamp': timestamp,
+            'value': value
+        })
+    
+    def create_rollup(self, interval: str, data: List[dict]) -> dict:
+        """Create rollup."""
+        if data:
+            values = [d['value'] for d in data]
+            rollup = {
+                'interval': interval,
+                'sum': sum(values),
+                'avg': sum(values) / len(values),
+                'count': len(values)
+            }
+            self.rollups[interval] = rollup
+            return rollup
+        return {}
 
 
 def main() -> None:

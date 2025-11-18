@@ -9,19 +9,32 @@ This file contains the implementation of the Read Replicas algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def read_replicas(data):
-    """
-    Read Replicas algorithm implementation.
+class ReadReplicas:
+    """Read replica management."""
+    def __init__(self):
+        self.primary: dict = {}
+        self.replicas: List[dict] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Read Replicas
-    return data
-
+    def add_replica(self, replica_id: str) -> None:
+        """Add read replica."""
+        self.replicas.append({
+            'id': replica_id,
+            'data': {},
+            'lag': 0
+        })
+    
+    def write(self, key: str, value: any) -> None:
+        """Write to primary."""
+        self.primary[key] = value
+        # Replicate to replicas
+        for replica in self.replicas:
+            replica['data'][key] = value
+    
+    def read(self, key: str, use_replica: bool = True) -> Optional[any]:
+        """Read from replica or primary."""
+        if use_replica and self.replicas:
+            return self.replicas[0]['data'].get(key)
+        return self.primary.get(key)
 
 
 def main() -> None:
