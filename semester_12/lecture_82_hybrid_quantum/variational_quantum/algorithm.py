@@ -42,6 +42,7 @@ def variational_quantum(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Variational Quantum implementation.
     

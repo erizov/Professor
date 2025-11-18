@@ -42,6 +42,7 @@ def quantum_noise(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Quantum Noise implementation.
     

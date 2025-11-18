@@ -42,6 +42,7 @@ def quantum_optimization_hybrid(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Quantum Optimization Hybrid implementation.
     
