@@ -9,19 +9,37 @@ This file contains the implementation of the Personalized Docs algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def personalized_docs(data):
-    """
-    Personalized Docs algorithm implementation.
+class PersonalizedDocs:
+    """Personalized documentation."""
+    def __init__(self):
+        self.docs: Dict[str, dict] = {}
+        self.user_profiles: Dict[str, dict] = {}
     
-    Args:
-        data: Input data for the algorithm
+    def add_document(self, doc_id: str, content: str, 
+                    tags: List[str] = None) -> None:
+        """Add document."""
+        self.docs[doc_id] = {
+            'content': content,
+            'tags': tags or []
+        }
+    
+    def create_user_profile(self, user_id: str, preferences: dict) -> None:
+        """Create user profile."""
+        self.user_profiles[user_id] = preferences
+    
+    def get_personalized_docs(self, user_id: str) -> List[dict]:
+        """Get personalized documents."""
+        if user_id not in self.user_profiles:
+            return []
         
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Personalized Docs
-    return data
-
+        profile = self.user_profiles[user_id]
+        preferred_tags = profile.get('tags', [])
+        
+        personalized = []
+        for doc_id, doc in self.docs.items():
+            if any(tag in doc['tags'] for tag in preferred_tags):
+                personalized.append(doc)
+        return personalized
 
 
 def main() -> None:

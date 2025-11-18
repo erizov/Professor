@@ -9,19 +9,39 @@ This file contains the implementation of the Process Scheduling algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def process_scheduling(data):
-    """
-    Process Scheduling algorithm implementation.
+class ProcessScheduler:
+    """Process scheduler."""
+    def __init__(self, algorithm: str = 'fcfs'):
+        self.processes: List[dict] = []
+        self.algorithm = algorithm
     
-    Args:
-        data: Input data for the algorithm
+    def add_process(self, process_id: str, arrival_time: float, 
+                   burst_time: float, priority: int = 0) -> None:
+        """Add process."""
+        self.processes.append({
+            'id': process_id,
+            'arrival': arrival_time,
+            'burst': burst_time,
+            'priority': priority,
+            'status': 'ready'
+        })
+    
+    def schedule(self) -> Optional[dict]:
+        """Schedule next process."""
+        if not self.processes:
+            return None
         
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Process Scheduling
-    return data
-
+        ready = [p for p in self.processes if p['status'] == 'ready']
+        if not ready:
+            return None
+        
+        if self.algorithm == 'fcfs':
+            return min(ready, key=lambda p: p['arrival'])
+        elif self.algorithm == 'sjf':
+            return min(ready, key=lambda p: p['burst'])
+        elif self.algorithm == 'priority':
+            return min(ready, key=lambda p: p['priority'])
+        return ready[0]
 
 
 def main() -> None:

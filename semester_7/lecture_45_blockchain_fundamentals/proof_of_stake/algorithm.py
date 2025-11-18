@@ -9,19 +9,41 @@ This file contains the implementation of the Proof Of Stake algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def proof_of_stake(data):
-    """
-    Proof Of Stake algorithm implementation.
+class ProofOfStake:
+    """Proof of Stake consensus."""
+    def __init__(self):
+        self.validators: Dict[str, dict] = {}
+        self.stakes: Dict[str, float] = {}
     
-    Args:
-        data: Input data for the algorithm
+    def register_validator(self, validator_id: str, stake: float) -> None:
+        """Register validator."""
+        self.validators[validator_id] = {
+            'stake': stake,
+            'selected': False
+        }
+        self.stakes[validator_id] = stake
+    
+    def select_validator(self) -> Optional[str]:
+        """Select validator based on stake."""
+        if not self.validators:
+            return None
         
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Proof Of Stake
-    return data
-
+        total_stake = sum(self.stakes.values())
+        import random
+        rand = random.random() * total_stake
+        
+        cumulative = 0.0
+        for validator_id, stake in self.stakes.items():
+            cumulative += stake
+            if rand <= cumulative:
+                return validator_id
+        return list(self.stakes.keys())[0]
+    
+    def validate_block(self, validator_id: str, block: dict) -> bool:
+        """Validate block."""
+        if validator_id in self.validators:
+            return True
+        return False
 
 
 def main() -> None:
