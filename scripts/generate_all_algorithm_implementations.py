@@ -631,8 +631,20 @@ class BinarySearchTree:
 
 def get_algorithm_implementation(algorithm_name: str) -> Optional[str]:
     """Get algorithm implementation code."""
+    # Try exact match
     if algorithm_name in ALGORITHM_IMPLEMENTATIONS:
         return ALGORITHM_IMPLEMENTATIONS[algorithm_name]
+    
+    # Try variations
+    variations = [
+        algorithm_name.replace('_', ''),
+        algorithm_name.replace('-', '_'),
+    ]
+    
+    for var in variations:
+        if var in ALGORITHM_IMPLEMENTATIONS:
+            return ALGORITHM_IMPLEMENTATIONS[var]
+    
     return None
 
 
@@ -702,7 +714,10 @@ def update_algorithm_file(algorithm_path: Path, algorithm_name: str) -> bool:
     if algorithm_path.exists():
         existing = algorithm_path.read_text(encoding='utf-8')
         # Check if it already has the correct implementation
-        func_name = implementation.split('(')[0].split('def ')[1].strip()
+        try:
+            func_name = implementation.split('(')[0].split('def ')[1].strip()
+        except (IndexError, AttributeError):
+            func_name = algorithm_name
         if func_name in existing and 'def ' + func_name in existing:
             # Check if it's a real implementation or just a stub
             if '# Implementation specific to' in existing or 'return data' in existing:
