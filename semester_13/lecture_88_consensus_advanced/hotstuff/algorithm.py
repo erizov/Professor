@@ -42,6 +42,7 @@ def hotstuff(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Hotstuff implementation.
     

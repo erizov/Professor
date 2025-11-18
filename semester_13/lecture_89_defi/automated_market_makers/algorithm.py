@@ -42,6 +42,7 @@ def automated_market_makers(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Automated Market Makers implementation.
     

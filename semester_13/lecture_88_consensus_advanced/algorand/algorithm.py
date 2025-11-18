@@ -42,6 +42,7 @@ def algorand(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Algorand implementation.
     
