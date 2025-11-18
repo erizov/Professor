@@ -42,6 +42,7 @@ def risk_assessment(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Risk Assessment implementation.
     
