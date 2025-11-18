@@ -42,6 +42,7 @@ def doc_as_code(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Doc As Code implementation.
     

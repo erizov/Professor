@@ -42,6 +42,7 @@ def api_docs_advanced(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Api Docs Advanced implementation.
     
