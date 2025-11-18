@@ -9,19 +9,50 @@ This file contains the implementation of the Graph Traversal algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def graph_traversal(data):
-    """
-    Graph Traversal algorithm implementation.
+class GraphTraversal:
+    """Graph traversal algorithms."""
+    def __init__(self):
+        self.graph: Dict[str, List[str]] = {}
     
-    Args:
-        data: Input data for the algorithm
+    def add_edge(self, u: str, v: str) -> None:
+        """Add edge."""
+        if u not in self.graph:
+            self.graph[u] = []
+        if v not in self.graph[u]:
+            self.graph[u].append(v)
+    
+    def dfs(self, start: str) -> List[str]:
+        """Depth-first search."""
+        visited = set()
+        result = []
         
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Graph Traversal
-    return data
-
+        def dfs_helper(node: str):
+            if node in visited:
+                return
+            visited.add(node)
+            result.append(node)
+            for neighbor in self.graph.get(node, []):
+                dfs_helper(neighbor)
+        
+        dfs_helper(start)
+        return result
+    
+    def bfs(self, start: str) -> List[str]:
+        """Breadth-first search."""
+        from collections import deque
+        queue = deque([start])
+        visited = {start}
+        result = []
+        
+        while queue:
+            node = queue.popleft()
+            result.append(node)
+            for neighbor in self.graph.get(node, []):
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    queue.append(neighbor)
+        
+        return result
 
 
 def main() -> None:

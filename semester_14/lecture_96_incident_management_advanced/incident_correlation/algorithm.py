@@ -9,19 +9,44 @@ This file contains the implementation of the Incident Correlation algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def incident_correlation(data):
-    """
-    Incident Correlation algorithm implementation.
+class IncidentCorrelation:
+    """Incident correlation system."""
+    def __init__(self):
+        self.incidents: List[dict] = {}
+        self.correlations: List[dict] = {}
     
-    Args:
-        data: Input data for the algorithm
+    def add_incident(self, incident_id: str, timestamp: float, 
+                    attributes: dict) -> None:
+        """Add incident."""
+        self.incidents[incident_id] = {
+            'timestamp': timestamp,
+            'attributes': attributes
+        }
+    
+    def correlate(self, time_window: float = 300.0) -> List[List[str]]:
+        """Correlate incidents."""
+        correlated = []
+        incident_list = sorted(self.incidents.items(), 
+                              key=lambda x: x[1]['timestamp'])
         
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Incident Correlation
-    return data
-
+        current_group = []
+        for incident_id, incident in incident_list:
+            if not current_group:
+                current_group = [incident_id]
+            else:
+                last_incident = self.incidents[current_group[-1]]
+                time_diff = incident['timestamp'] - last_incident['timestamp']
+                if time_diff <= time_window:
+                    current_group.append(incident_id)
+                else:
+                    if len(current_group) > 1:
+                        correlated.append(current_group)
+                    current_group = [incident_id]
+        
+        if len(current_group) > 1:
+            correlated.append(current_group)
+        
+        return correlated
 
 
 def main() -> None:

@@ -9,19 +9,40 @@ This file contains the implementation of the Gdpr Compliance algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def gdpr_compliance(data):
-    """
-    Gdpr Compliance algorithm implementation.
+class GDPRCompliance:
+    """GDPR compliance manager."""
+    def __init__(self):
+        self.data_subjects: Dict[str, dict] = {}
+        self.consents: Dict[str, dict] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Gdpr Compliance
-    return data
-
+    def register_data_subject(self, subject_id: str, data: dict) -> None:
+        """Register data subject."""
+        self.data_subjects[subject_id] = data
+    
+    def record_consent(self, subject_id: str, purpose: str, 
+                      granted: bool) -> None:
+        """Record consent."""
+        if subject_id not in self.consents:
+            self.consents[subject_id] = {}
+        self.consents[subject_id][purpose] = granted
+    
+    def request_data_deletion(self, subject_id: str) -> bool:
+        """Request data deletion (right to be forgotten)."""
+        if subject_id in self.data_subjects:
+            del self.data_subjects[subject_id]
+            if subject_id in self.consents:
+                del self.consents[subject_id]
+            return True
+        return False
+    
+    def export_data(self, subject_id: str) -> Optional[dict]:
+        """Export subject data (data portability)."""
+        if subject_id in self.data_subjects:
+            return {
+                'data': self.data_subjects[subject_id],
+                'consents': self.consents.get(subject_id, {})
+            }
+        return None
 
 
 def main() -> None:

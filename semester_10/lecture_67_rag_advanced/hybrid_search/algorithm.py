@@ -9,19 +9,30 @@ This file contains the implementation of the Hybrid Search algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def hybrid_search(data):
-    """
-    Hybrid Search algorithm implementation.
+class HybridSearch:
+    """Hybrid search combining multiple methods."""
+    def __init__(self):
+        self.searchers: List[dict] = {}
     
-    Args:
-        data: Input data for the algorithm
+    def add_searcher(self, name: str, searcher: callable, weight: float) -> None:
+        """Add search method."""
+        self.searchers[name] = {
+            'searcher': searcher,
+            'weight': weight
+        }
+    
+    def search(self, query: str, top_k: int = 10) -> List[tuple]:
+        """Hybrid search."""
+        all_results = []
+        for name, searcher_info in self.searchers.items():
+            results = searcher_info['searcher'](query)
+            weight = searcher_info['weight']
+            for result, score in results:
+                all_results.append((result, score * weight))
         
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Hybrid Search
-    return data
-
+        # Sort by weighted score
+        all_results.sort(key=lambda x: x[1], reverse=True)
+        return all_results[:top_k]
 
 
 def main() -> None:
