@@ -3162,6 +3162,604 @@ class SkipList:
             for i in range(new_level + 1):
                 new_node.forward[i] = update[i].forward[i]
                 update[i].forward[i] = new_node''',
+    
+    'lru_cache': '''from collections import OrderedDict
+
+class LRUCache:
+    """LRU Cache implementation."""
+    def __init__(self, capacity: int):
+        self.capacity = capacity
+        self.cache = OrderedDict()
+    
+    def get(self, key: int) -> Optional[int]:
+        """Get value by key."""
+        if key not in self.cache:
+            return None
+        # Move to end (most recently used)
+        self.cache.move_to_end(key)
+        return self.cache[key]
+    
+    def put(self, key: int, value: int) -> None:
+        """Put key-value pair."""
+        if key in self.cache:
+            # Update existing
+            self.cache.move_to_end(key)
+        else:
+            if len(self.cache) >= self.capacity:
+                # Remove least recently used (first item)
+                self.cache.popitem(last=False)
+        self.cache[key] = value''',
+    
+    'lfu_cache': '''class LFUNode:
+    """Node for LFU cache."""
+    def __init__(self, key: int, value: int):
+        self.key = key
+        self.value = value
+        self.freq = 1
+        self.prev = None
+        self.next = None
+
+class LFUCache:
+    """LFU Cache implementation."""
+    def __init__(self, capacity: int):
+        self.capacity = capacity
+        self.cache: Dict[int, LFUNode] = {}
+        self.freq_map: Dict[int, tuple] = {}  # (head, tail) for each frequency
+    
+    def _add_node(self, node: LFUNode, freq: int) -> None:
+        """Add node to frequency list."""
+        if freq not in self.freq_map:
+            self.freq_map[freq] = (node, node)
+            node.prev = None
+            node.next = None
+        else:
+            head, tail = self.freq_map[freq]
+            tail.next = node
+            node.prev = tail
+            node.next = None
+            self.freq_map[freq] = (head, node)
+    
+    def _remove_node(self, node: LFUNode) -> None:
+        """Remove node from frequency list."""
+        freq = node.freq
+        head, tail = self.freq_map[freq]
+        
+        if node == head and node == tail:
+            del self.freq_map[freq]
+        elif node == head:
+            self.freq_map[freq] = (node.next, tail)
+            node.next.prev = None
+        elif node == tail:
+            self.freq_map[freq] = (head, node.prev)
+            node.prev.next = None
+        else:
+            node.prev.next = node.next
+            node.next.prev = node.prev
+    
+    def get(self, key: int) -> Optional[int]:
+        """Get value by key."""
+        if key not in self.cache:
+            return None
+        
+        node = self.cache[key]
+        self._remove_node(node)
+        node.freq += 1
+        self._add_node(node, node.freq)
+        return node.value
+    
+    def put(self, key: int, value: int) -> None:
+        """Put key-value pair."""
+        if key in self.cache:
+            node = self.cache[key]
+            node.value = value
+            self._remove_node(node)
+            node.freq += 1
+            self._add_node(node, node.freq)
+        else:
+            if len(self.cache) >= self.capacity:
+                # Remove least frequently used
+                min_freq = min(self.freq_map.keys())
+                head, _ = self.freq_map[min_freq]
+                del self.cache[head.key]
+                self._remove_node(head)
+            
+            node = LFUNode(key, value)
+            self.cache[key] = node
+            self._add_node(node, 1)''',
+    
+    'circular_buffer': '''class CircularBuffer:
+    """Circular buffer (ring buffer) implementation."""
+    def __init__(self, capacity: int):
+        self.capacity = capacity
+        self.buffer: List[Optional[any]] = [None] * capacity
+        self.head = 0
+        self.tail = 0
+        self.size = 0
+    
+    def enqueue(self, item: any) -> bool:
+        """Add item to buffer."""
+        if self.size == self.capacity:
+            return False  # Buffer full
+        
+        self.buffer[self.tail] = item
+        self.tail = (self.tail + 1) % self.capacity
+        self.size += 1
+        return True
+    
+    def dequeue(self) -> Optional[any]:
+        """Remove item from buffer."""
+        if self.size == 0:
+            return None
+        
+        item = self.buffer[self.head]
+        self.buffer[self.head] = None
+        self.head = (self.head + 1) % self.capacity
+        self.size -= 1
+        return item
+    
+    def is_empty(self) -> bool:
+        """Check if buffer is empty."""
+        return self.size == 0
+    
+    def is_full(self) -> bool:
+        """Check if buffer is full."""
+        return self.size == self.capacity''',
+    
+    'stack': '''class Stack:
+    """Stack implementation."""
+    def __init__(self):
+        self.items: List[any] = []
+    
+    def push(self, item: any) -> None:
+        """Push item onto stack."""
+        self.items.append(item)
+    
+    def pop(self) -> Optional[any]:
+        """Pop item from stack."""
+        return self.items.pop() if self.items else None
+    
+    def peek(self) -> Optional[any]:
+        """Peek at top item."""
+        return self.items[-1] if self.items else None
+    
+    def is_empty(self) -> bool:
+        """Check if stack is empty."""
+        return len(self.items) == 0
+    
+    def size(self) -> int:
+        """Get stack size."""
+        return len(self.items)''',
+    
+    'queue': '''from collections import deque
+
+class Queue:
+    """Queue implementation."""
+    def __init__(self):
+        self.items: deque = deque()
+    
+    def enqueue(self, item: any) -> None:
+        """Add item to queue."""
+        self.items.append(item)
+    
+    def dequeue(self) -> Optional[any]:
+        """Remove item from queue."""
+        return self.items.popleft() if self.items else None
+    
+    def front(self) -> Optional[any]:
+        """Get front item."""
+        return self.items[0] if self.items else None
+    
+    def is_empty(self) -> bool:
+        """Check if queue is empty."""
+        return len(self.items) == 0
+    
+    def size(self) -> int:
+        """Get queue size."""
+        return len(self.items)''',
+    
+    'deque': '''from collections import deque as collections_deque
+
+class Deque:
+    """Deque (double-ended queue) implementation."""
+    def __init__(self):
+        self.items: collections_deque = collections_deque()
+    
+    def append_left(self, item: any) -> None:
+        """Add item to left end."""
+        self.items.appendleft(item)
+    
+    def append_right(self, item: any) -> None:
+        """Add item to right end."""
+        self.items.append(item)
+    
+    def pop_left(self) -> Optional[any]:
+        """Remove item from left end."""
+        return self.items.popleft() if self.items else None
+    
+    def pop_right(self) -> Optional[any]:
+        """Remove item from right end."""
+        return self.items.pop() if self.items else None
+    
+    def peek_left(self) -> Optional[any]:
+        """Peek at left end."""
+        return self.items[0] if self.items else None
+    
+    def peek_right(self) -> Optional[any]:
+        """Peek at right end."""
+        return self.items[-1] if self.items else None
+    
+    def is_empty(self) -> bool:
+        """Check if deque is empty."""
+        return len(self.items) == 0
+    
+    def size(self) -> int:
+        """Get deque size."""
+        return len(self.items)''',
+    
+    'linked_list': '''class ListNode:
+    """Node in linked list."""
+    def __init__(self, val: int = 0, next: Optional['ListNode'] = None):
+        self.val = val
+        self.next = next
+
+class LinkedList:
+    """Singly linked list implementation."""
+    def __init__(self):
+        self.head: Optional[ListNode] = None
+        self.size = 0
+    
+    def add_at_head(self, val: int) -> None:
+        """Add node at head."""
+        new_node = ListNode(val, self.head)
+        self.head = new_node
+        self.size += 1
+    
+    def add_at_tail(self, val: int) -> None:
+        """Add node at tail."""
+        new_node = ListNode(val)
+        if not self.head:
+            self.head = new_node
+        else:
+            current = self.head
+            while current.next:
+                current = current.next
+            current.next = new_node
+        self.size += 1
+    
+    def get(self, index: int) -> int:
+        """Get value at index."""
+        if index < 0 or index >= self.size:
+            return -1
+        current = self.head
+        for _ in range(index):
+            current = current.next
+        return current.val
+    
+    def delete_at_index(self, index: int) -> None:
+        """Delete node at index."""
+        if index < 0 or index >= self.size:
+            return
+        if index == 0:
+            self.head = self.head.next
+        else:
+            current = self.head
+            for _ in range(index - 1):
+                current = current.next
+            current.next = current.next.next
+        self.size -= 1''',
+    
+    'doubly_linked_list': '''class DoublyListNode:
+    """Node in doubly linked list."""
+    def __init__(self, val: int = 0):
+        self.val = val
+        self.prev: Optional['DoublyListNode'] = None
+        self.next: Optional['DoublyListNode'] = None
+
+class DoublyLinkedList:
+    """Doubly linked list implementation."""
+    def __init__(self):
+        self.head: Optional[DoublyListNode] = None
+        self.tail: Optional[DoublyListNode] = None
+        self.size = 0
+    
+    def add_at_head(self, val: int) -> None:
+        """Add node at head."""
+        new_node = DoublyListNode(val)
+        if not self.head:
+            self.head = self.tail = new_node
+        else:
+            new_node.next = self.head
+            self.head.prev = new_node
+            self.head = new_node
+        self.size += 1
+    
+    def add_at_tail(self, val: int) -> None:
+        """Add node at tail."""
+        new_node = DoublyListNode(val)
+        if not self.tail:
+            self.head = self.tail = new_node
+        else:
+            new_node.prev = self.tail
+            self.tail.next = new_node
+            self.tail = new_node
+        self.size += 1
+    
+    def delete_at_index(self, index: int) -> None:
+        """Delete node at index."""
+        if index < 0 or index >= self.size:
+            return
+        
+        if self.size == 1:
+            self.head = self.tail = None
+        elif index == 0:
+            self.head = self.head.next
+            self.head.prev = None
+        elif index == self.size - 1:
+            self.tail = self.tail.prev
+            self.tail.next = None
+        else:
+            current = self.head
+            for _ in range(index):
+                current = current.next
+            current.prev.next = current.next
+            current.next.prev = current.prev
+        self.size -= 1''',
+    
+    'graph_adjacency_list': '''class Graph:
+    """Graph using adjacency list."""
+    def __init__(self, directed: bool = False):
+        self.graph: Dict[int, List[tuple]] = {}
+        self.directed = directed
+    
+    def add_vertex(self, vertex: int) -> None:
+        """Add vertex."""
+        if vertex not in self.graph:
+            self.graph[vertex] = []
+    
+    def add_edge(self, u: int, v: int, weight: float = 1.0) -> None:
+        """Add edge."""
+        if u not in self.graph:
+            self.add_vertex(u)
+        if v not in self.graph:
+            self.add_vertex(v)
+        
+        self.graph[u].append((v, weight))
+        if not self.directed:
+            self.graph[v].append((u, weight))
+    
+    def get_neighbors(self, vertex: int) -> List[tuple]:
+        """Get neighbors of vertex."""
+        return self.graph.get(vertex, [])
+    
+    def get_vertices(self) -> List[int]:
+        """Get all vertices."""
+        return list(self.graph.keys())''',
+    
+    'graph_adjacency_matrix': '''class GraphMatrix:
+    """Graph using adjacency matrix."""
+    def __init__(self, num_vertices: int, directed: bool = False):
+        self.num_vertices = num_vertices
+        self.directed = directed
+        self.matrix: List[List[float]] = [[0.0] * num_vertices 
+                                         for _ in range(num_vertices)]
+    
+    def add_edge(self, u: int, v: int, weight: float = 1.0) -> None:
+        """Add edge."""
+        if 0 <= u < self.num_vertices and 0 <= v < self.num_vertices:
+            self.matrix[u][v] = weight
+            if not self.directed:
+                self.matrix[v][u] = weight
+    
+    def has_edge(self, u: int, v: int) -> bool:
+        """Check if edge exists."""
+        if 0 <= u < self.num_vertices and 0 <= v < self.num_vertices:
+            return self.matrix[u][v] != 0.0
+        return False
+    
+    def get_weight(self, u: int, v: int) -> float:
+        """Get edge weight."""
+        if 0 <= u < self.num_vertices and 0 <= v < self.num_vertices:
+            return self.matrix[u][v]
+        return 0.0''',
+    
+    'backtracking': '''def backtracking_solver(problem: List[List[any]], 
+                        constraints: callable, 
+                        is_complete: callable) -> Optional[List[any]]:
+    """Generic backtracking solver."""
+    def backtrack(solution: List[any], depth: int) -> Optional[List[any]]:
+        """Backtracking recursive function."""
+        if is_complete(solution, depth):
+            return solution
+        
+        candidates = problem[depth] if depth < len(problem) else []
+        
+        for candidate in candidates:
+            solution.append(candidate)
+            if constraints(solution):
+                result = backtrack(solution, depth + 1)
+                if result:
+                    return result
+            solution.pop()
+        
+        return None
+    
+    return backtrack([], 0)
+
+def n_queens(n: int) -> List[List[int]]:
+    """N-Queens problem using backtracking."""
+    def is_safe(board: List[int], row: int, col: int) -> bool:
+        """Check if queen can be placed."""
+        for i in range(row):
+            if board[i] == col or abs(board[i] - col) == abs(i - row):
+                return False
+        return True
+    
+    def solve(board: List[int], row: int) -> bool:
+        """Solve N-Queens."""
+        if row == n:
+            return True
+        
+        for col in range(n):
+            if is_safe(board, row, col):
+                board[row] = col
+                if solve(board, row + 1):
+                    return True
+                board[row] = -1
+        
+        return False
+    
+    board = [-1] * n
+    if solve(board, 0):
+        return [[i, board[i]] for i in range(n)]
+    return []''',
+    
+    'sudoku_solver': '''def sudoku_solver(board: List[List[int]]) -> bool:
+    """Solve Sudoku using backtracking."""
+    def is_valid(board: List[List[int]], row: int, col: int, num: int) -> bool:
+        """Check if number can be placed."""
+        # Check row
+        for c in range(9):
+            if board[row][c] == num:
+                return False
+        
+        # Check column
+        for r in range(9):
+            if board[r][col] == num:
+                return False
+        
+        # Check 3x3 box
+        box_row = (row // 3) * 3
+        box_col = (col // 3) * 3
+        for r in range(box_row, box_row + 3):
+            for c in range(box_col, box_col + 3):
+                if board[r][c] == num:
+                    return False
+        
+        return True
+    
+    def solve(board: List[List[int]]) -> bool:
+        """Solve Sudoku."""
+        for row in range(9):
+            for col in range(9):
+                if board[row][col] == 0:
+                    for num in range(1, 10):
+                        if is_valid(board, row, col, num):
+                            board[row][col] = num
+                            if solve(board):
+                                return True
+                            board[row][col] = 0
+                    return False
+        return True
+    
+    return solve(board)''',
+    
+    'permutations': '''def permutations(nums: List[int]) -> List[List[int]]:
+    """Generate all permutations."""
+    def backtrack(current: List[int], remaining: List[int], 
+                  result: List[List[int]]) -> None:
+        """Backtracking helper."""
+        if not remaining:
+            result.append(current[:])
+            return
+        
+        for i in range(len(remaining)):
+            current.append(remaining[i])
+            backtrack(current, remaining[:i] + remaining[i+1:], result)
+            current.pop()
+    
+    result = []
+    backtrack([], nums, result)
+    return result
+
+def next_permutation(nums: List[int]) -> bool:
+    """Get next lexicographical permutation."""
+    n = len(nums)
+    i = n - 2
+    
+    # Find first decreasing element
+    while i >= 0 and nums[i] >= nums[i + 1]:
+        i -= 1
+    
+    if i < 0:
+        return False  # Already last permutation
+    
+    # Find element to swap with
+    j = n - 1
+    while nums[j] <= nums[i]:
+        j -= 1
+    
+    # Swap
+    nums[i], nums[j] = nums[j], nums[i]
+    
+    # Reverse suffix
+    nums[i + 1:] = reversed(nums[i + 1:])
+    return True''',
+    
+    'combinations': '''def combinations(n: int, k: int) -> List[List[int]]:
+    """Generate all combinations of k elements from [1..n]."""
+    def backtrack(current: List[int], start: int, result: List[List[int]]) -> None:
+        """Backtracking helper."""
+        if len(current) == k:
+            result.append(current[:])
+            return
+        
+        for i in range(start, n + 1):
+            current.append(i)
+            backtrack(current, i + 1, result)
+            current.pop()
+    
+    result = []
+    backtrack([], 1, result)
+    return result
+
+def combinations_with_replacement(n: int, k: int) -> List[List[int]]:
+    """Generate combinations with replacement."""
+    def backtrack(current: List[int], start: int, result: List[List[int]]) -> None:
+        """Backtracking helper."""
+        if len(current) == k:
+            result.append(current[:])
+            return
+        
+        for i in range(start, n + 1):
+            current.append(i)
+            backtrack(current, i, result)  # Allow same element
+            current.pop()
+    
+    result = []
+    backtrack([], 1, result)
+    return result''',
+    
+    'subset_sum': '''def subset_sum(nums: List[int], target: int) -> List[List[int]]:
+    """Find all subsets that sum to target."""
+    def backtrack(current: List[int], start: int, current_sum: int, 
+                  result: List[List[int]]) -> None:
+        """Backtracking helper."""
+        if current_sum == target:
+            result.append(current[:])
+            return
+        
+        if current_sum > target:
+            return
+        
+        for i in range(start, len(nums)):
+            current.append(nums[i])
+            backtrack(current, i + 1, current_sum + nums[i], result)
+            current.pop()
+    
+    result = []
+    backtrack([], 0, 0, result)
+    return result
+
+def subset_sum_dp(nums: List[int], target: int) -> bool:
+    """Check if subset sum exists using DP."""
+    dp = [False] * (target + 1)
+    dp[0] = True
+    
+    for num in nums:
+        for j in range(target, num - 1, -1):
+            dp[j] = dp[j] or dp[j - num]
+    
+    return dp[target]''',
 }
 
 
