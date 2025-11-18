@@ -9,19 +9,29 @@ This file contains the implementation of the Single Responsibility algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def single_responsibility(data):
-    """
-    Single Responsibility algorithm implementation.
+class SingleResponsibility:
+    """Single Responsibility Principle example."""
+    class UserRepository:
+        """Handles user data."""
+        def get_user(self, user_id: str) -> dict:
+            return {'id': user_id, 'name': 'User'}
     
-    Args:
-        data: Input data for the algorithm
+    class UserValidator:
+        """Validates user data."""
+        def validate(self, user: dict) -> bool:
+            return 'name' in user and user['name']
+    
+    class UserService:
+        """Orchestrates user operations."""
+        def __init__(self):
+            self.repository = SingleResponsibility.UserRepository()
+            self.validator = SingleResponsibility.UserValidator()
         
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Single Responsibility
-    return data
-
+        def get_validated_user(self, user_id: str) -> Optional[dict]:
+            user = self.repository.get_user(user_id)
+            if self.validator.validate(user):
+                return user
+            return None
 
 
 def main() -> None:

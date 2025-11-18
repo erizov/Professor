@@ -9,19 +9,34 @@ This file contains the implementation of the Stablecoins algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def stablecoins(data):
-    """
-    Stablecoins algorithm implementation.
+class Stablecoins:
+    """Stablecoin system."""
+    def __init__(self):
+        self.coins: Dict[str, dict] = {}
+        self.reserves: Dict[str, float] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Stablecoins
-    return data
-
+    def create_stablecoin(self, coin_id: str, peg_value: float, 
+                         collateral: float) -> None:
+        """Create stablecoin."""
+        self.coins[coin_id] = {
+            'peg': peg_value,
+            'supply': 0.0
+        }
+        self.reserves[coin_id] = collateral
+    
+    def mint(self, coin_id: str, amount: float) -> bool:
+        """Mint stablecoin."""
+        if coin_id in self.coins:
+            self.coins[coin_id]['supply'] += amount
+            return True
+        return False
+    
+    def redeem(self, coin_id: str, amount: float) -> bool:
+        """Redeem stablecoin."""
+        if coin_id in self.coins and self.coins[coin_id]['supply'] >= amount:
+            self.coins[coin_id]['supply'] -= amount
+            return True
+        return False
 
 
 def main() -> None:

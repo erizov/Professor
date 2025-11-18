@@ -9,19 +9,26 @@ This file contains the implementation of the Style Guides algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def style_guides(data):
-    """
-    Style Guides algorithm implementation.
+class StyleGuides:
+    """Code style guide checker."""
+    def __init__(self):
+        self.rules: List[dict] = {}
+        self.violations: List[dict] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Style Guides
-    return data
-
+    def add_rule(self, rule_name: str, check_func: callable) -> None:
+        """Add style rule."""
+        self.rules.append({
+            'name': rule_name,
+            'check': check_func
+        })
+    
+    def check_code(self, code: str) -> List[dict]:
+        """Check code against style guide."""
+        violations = []
+        for rule in self.rules:
+            if not rule['check'](code):
+                violations.append({'rule': rule['name']})
+        return violations
 
 
 def main() -> None:

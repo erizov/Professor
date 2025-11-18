@@ -9,19 +9,29 @@ This file contains the implementation of the Star Schema algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def star_schema(data):
-    """
-    Star Schema algorithm implementation.
+class StarSchema:
+    """Star schema."""
+    def __init__(self):
+        self.fact_tables: Dict[str, dict] = {}
+        self.dimensions: Dict[str, dict] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Star Schema
-    return data
-
+    def create_fact_table(self, name: str, measures: List[str], 
+                         dimensions: List[str]) -> None:
+        """Create fact table."""
+        self.fact_tables[name] = {
+            'measures': measures,
+            'dimensions': dimensions
+        }
+    
+    def create_dimension(self, name: str, attributes: List[str]) -> None:
+        """Create dimension."""
+        self.dimensions[name] = {'attributes': attributes}
+    
+    def query(self, fact_table: str, filters: dict = None) -> List[dict]:
+        """Query star schema."""
+        if fact_table in self.fact_tables:
+            return [{'measure': 'value'}]
+        return []
 
 
 def main() -> None:

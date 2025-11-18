@@ -9,19 +9,30 @@ This file contains the implementation of the Support Analytics algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def support_analytics(data):
-    """
-    Support Analytics algorithm implementation.
+class SupportAnalytics:
+    """Support analytics."""
+    def __init__(self):
+        self.tickets: List[dict] = {}
+        self.metrics: Dict[str, float] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Support Analytics
-    return data
-
+    def add_ticket(self, ticket_id: str, category: str, 
+                  resolution_time: float) -> None:
+        """Add support ticket."""
+        self.tickets.append({
+            'id': ticket_id,
+            'category': category,
+            'resolution_time': resolution_time
+        })
+    
+    def calculate_metrics(self) -> dict:
+        """Calculate support metrics."""
+        if self.tickets:
+            avg_resolution = sum(t['resolution_time'] for t in self.tickets) / len(self.tickets)
+            return {
+                'total_tickets': len(self.tickets),
+                'avg_resolution_time': avg_resolution
+            }
+        return {}
 
 
 def main() -> None:

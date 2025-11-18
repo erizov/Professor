@@ -9,19 +9,19 @@ This file contains the implementation of the Sha256 algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def sha256(data):
-    """
-    Sha256 algorithm implementation.
-    
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Sha256
-    return data
+def sha256_hash(data: str) -> str:
+    """SHA-256 hash (simplified)."""
+    import hashlib
+    return hashlib.sha256(data.encode('utf-8')).hexdigest()
 
+class SHA256:
+    """SHA-256 hashing."""
+    def __init__(self):
+        self.hashes: List[str] = {}
+    
+    def hash(self, data: str) -> str:
+        """Hash data."""
+        return sha256_hash(data)
 
 
 def main() -> None:
