@@ -42,6 +42,7 @@ def security_scanning(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Security Scanning implementation.
     

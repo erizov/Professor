@@ -42,6 +42,7 @@ def secrets_rotation(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Secrets Rotation implementation.
     

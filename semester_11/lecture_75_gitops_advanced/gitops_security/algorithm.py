@@ -42,6 +42,7 @@ def gitops_security(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Gitops Security implementation.
     

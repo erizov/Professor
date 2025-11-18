@@ -42,6 +42,7 @@ def self_service_platforms(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Self Service Platforms implementation.
     
