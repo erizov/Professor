@@ -42,6 +42,7 @@ def transactional_memory(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Transactional Memory implementation.
     

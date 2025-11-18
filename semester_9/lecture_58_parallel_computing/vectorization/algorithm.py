@@ -42,6 +42,7 @@ def vectorization(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Vectorization implementation.
     
