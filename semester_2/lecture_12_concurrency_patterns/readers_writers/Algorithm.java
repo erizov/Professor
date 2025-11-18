@@ -1,21 +1,45 @@
-/**
- * Readers-Writers Lock implementation.
- * 
- * Category: Concurrency
- * Time Complexity: O(1)
- * Space Complexity: O(1)
- */
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Readers Writers implementation.
+ */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
 
+    public Algorithm() {
+        // Initialize
+    }
+
+    /**
+     * Read data.
+     */
+    public int read() {
+        logger.info("Executing read");
+        return null;
+    }
+
+    /**
+     * Write data.
+     */
+    public Object write(Object value) {
+        logger.info("Executing write");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
-        logger.info("==".repeat(35));
-        logger.info("Readers-Writers Lock");
-        logger.info("==".repeat(35));
-        logger.info("Category: Concurrency");
-        logger.info("Time: O(1)");
-        logger.info("Space: O(1)");
-        logger.info("==".repeat(35));
+        System.out.println("=".repeat(70));
+        System.out.println("Readers Writers");
+        System.out.println("=".repeat(70));
+        
+        Algorithm algo = Algorithm.create();
+        int result = algo.read();
+        System.out.println("Result: " + result);
+        System.out.println("=".repeat(70));
     }
 }

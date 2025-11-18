@@ -1,27 +1,45 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Window Functions implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Window Functions.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Row number window function.
      */
-    public static Object windowfunctions(Object... args) {
-        logger.info("Executing window_functions");
-        // TODO: Implement window_functions based on README.md
+    public List<Object> row_number(List<Object> data, String order_by) {
+        logger.info("Executing row_number");
         return null;
     }
+
+    /**
+     * Rank window function.
+     */
+    public List<Object> rank(List<Object> data, String order_by) {
+        logger.info("Executing rank");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Window Functions");
         System.out.println("=".repeat(70));
         
-        Object result = windowfunctions();
+        Algorithm algo = Algorithm.create();
+        List[dict] result = algo.row_number(null, "");
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

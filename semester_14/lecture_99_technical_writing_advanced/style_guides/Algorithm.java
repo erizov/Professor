@@ -1,27 +1,47 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Style Guides implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
-    /**
-     * Style Guides.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object styleguides(Object... args) {
-        logger.info("Executing style_guides");
-        // TODO: Implement style_guides based on README.md
-        return null;
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
     }
+
+    /**
+     * Add style rule.
+     */
+    public Object add_rule(String rule_name, Object check_func) {
+        logger.info("Executing add_rule");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Check code against style guide.
+     */
+    public List<Object> check_code(String code) {
+        logger.info("Executing check_code");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Style Guides");
         System.out.println("=".repeat(70));
         
-        Object result = styleguides();
+        Algorithm algo = Algorithm.create();
+        None result = algo.add_rule("", null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

@@ -1,27 +1,46 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Time Series Queries implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Time Series Queries.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Query time range.
      */
-    public static Object timeseriesqueries(Object... args) {
-        logger.info("Executing time_series_queries");
-        // TODO: Implement time_series_queries based on README.md
+    public List<Object> query_range(String series_id, Object start_time, Object end_time) {
+        logger.info("Executing query_range");
         return null;
     }
+
+    /**
+     * Aggregate time series.
+     */
+    public List<Object> aggregate(String series_id, String window, String function) {
+        logger.info("Executing aggregate");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Time Series Queries");
         System.out.println("=".repeat(70));
         
-        Object result = timeseriesqueries();
+        Algorithm algo = Algorithm.create();
+        List[dict] result = algo.query_range("", null, null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

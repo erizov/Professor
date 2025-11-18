@@ -1,21 +1,45 @@
+import java.util.*;
+import java.util.logging.Logger;
+import java.util.logging.Level;
+
 /**
  * Random Forest implementation.
- * 
- * Category: Machine Learning
- * Time Complexity: O(n log n)
- * Space Complexity: O(n)
  */
-import java.util.logging.Logger;
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
 
+    public Algorithm() {
+        // Initialize
+    }
+
+    /**
+     * Train random forest.
+     */
+    public Object fit(List<Object> X, List<Object> y) {
+        logger.info("Executing fit");
+        return null;
+    }
+
+    /**
+     * Predict using random forest.
+     */
+    public Object predict(List<Object> x) {
+        logger.info("Executing predict");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
-        logger.info("==".repeat(35));
-        logger.info("Random Forest");
-        logger.info("==".repeat(35));
-        logger.info("Category: Machine Learning");
-        logger.info("Time: O(n log n)");
-        logger.info("Space: O(n)");
-        logger.info("==".repeat(35));
+        System.out.println("=".repeat(70));
+        System.out.println("Random Forest");
+        System.out.println("=".repeat(70));
+        
+        Algorithm algo = Algorithm.create();
+        None result = algo.fit(null, null);
+        System.out.println("Result: " + result);
+        System.out.println("=".repeat(70));
     }
 }

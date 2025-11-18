@@ -1,27 +1,53 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Io Scheduling implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Io Scheduling.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Set scheduling algorithm.
      */
-    public static Object ioscheduling(Object... args) {
-        logger.info("Executing io_scheduling");
-        // TODO: Implement io_scheduling based on README.md
+    public Object set_algorithm(String algorithm) {
+        logger.info("Executing set_algorithm");
         return null;
     }
+
+    /**
+     * Enqueue I/O request.
+     */
+    public Object enqueue_request(Object request) {
+        logger.info("Executing enqueue_request");
+        return null;
+    }
+
+    /**
+     * Schedule next I/O request.
+     */
+    public Map<String, Object> schedule() {
+        logger.info("Executing schedule");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Io Scheduling");
         System.out.println("=".repeat(70));
         
-        Object result = ioscheduling();
+        Algorithm algo = Algorithm.create();
+        None result = algo.set_algorithm("");
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

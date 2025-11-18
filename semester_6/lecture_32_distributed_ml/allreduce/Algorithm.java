@@ -1,31 +1,37 @@
-/**
- * AllReduce Algorithm implementation.
- * 
- * Category: Distributed ML
- * Time Complexity: O(log(workers))
- * Space Complexity: O(params)
- */
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Allreduce implementation.
+ */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
 
+    public Algorithm() {
+        // Initialize
+    }
+
+    /**
+     * Reduce gradients across workers.
+     */
+    public int reduce(List<Object> gradients, String operation) {
+        logger.info("Executing reduce");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
-        long startTime = System.nanoTime();
+        System.out.println("=".repeat(70));
+        System.out.println("Allreduce");
+        System.out.println("=".repeat(70));
         
-        logger.info("==".repeat(35));
-        logger.info("AllReduce Algorithm");
-        logger.info("==".repeat(35));
-        logger.info("Category: Distributed ML");
-        logger.info("Time: O(log(workers))");
-        logger.info("Space: O(params)");
-        logger.info();
-        logger.info("Resource Requirements:");
-        logger.info("  - GPU: Optional");
-        logger.info("  - Memory: Medium");
-        logger.info("==".repeat(35));
-        
-        long endTime = System.nanoTime();
-        double durationMs = (endTime - startTime) / 1_000_000.0;
-        logger.info(String.format("\nExecution time: %.3f ms", durationMs));
+        Algorithm algo = Algorithm.create();
+        List[float] result = algo.reduce(null, "");
+        System.out.println("Result: " + result);
+        System.out.println("=".repeat(70));
     }
 }

@@ -1,27 +1,55 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Yield Farming implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Yield Farming.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Create yield farming pool.
      */
-    public static Object yieldfarming(Object... args) {
-        logger.info("Executing yield_farming");
-        // TODO: Implement yield_farming based on README.md
+    public Object create_pool(String pool_id, String token, Object apy) {
+        logger.info("Executing create_pool");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Deposit into pool.
+     */
+    public boolean deposit(String pool_id, Object amount, String user) {
+        logger.info("Executing deposit");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Calculate yield.
+     */
+    public int calculate_yield(String pool_id, Object amount) {
+        logger.info("Executing calculate_yield");
         return null;
     }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Yield Farming");
         System.out.println("=".repeat(70));
         
-        Object result = yieldfarming();
+        Algorithm algo = Algorithm.create();
+        None result = algo.create_pool("", "", null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

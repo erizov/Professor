@@ -1,27 +1,55 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Gpu Computing implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Gpu Computing.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Register GPU device.
      */
-    public static Object gpucomputing(Object... args) {
-        logger.info("Executing gpu_computing");
-        // TODO: Implement gpu_computing based on README.md
+    public Object register_device(String device_id, Object memory) {
+        logger.info("Executing register_device");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Launch GPU kernel.
+     */
+    public boolean launch_kernel(String kernel_name, String device_id, String grid_size, Object block_size) {
+        logger.info("Executing launch_kernel");
         return null;
     }
+
+    /**
+     * Allocate GPU memory.
+     */
+    public String allocate_memory(String device_id, Object size) {
+        logger.info("Executing allocate_memory");
+        String result = "ptr_" + len(self.devices) + "";
+        return "";
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Gpu Computing");
         System.out.println("=".repeat(70));
         
-        Object result = gpucomputing();
+        Algorithm algo = Algorithm.create();
+        None result = algo.register_device("", null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

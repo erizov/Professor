@@ -1,27 +1,46 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Doc As Code implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Doc As Code.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Add documentation.
      */
-    public static Object docascode(Object... args) {
-        logger.info("Executing doc_as_code");
-        // TODO: Implement doc_as_code based on README.md
+    public Object add_documentation(String path, String content) {
+        logger.info("Executing add_documentation");
         return null;
     }
+
+    /**
+     * Generate documentation site.
+     */
+    public Map<String, Object> generate_site() {
+        logger.info("Executing generate_site");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Doc As Code");
         System.out.println("=".repeat(70));
         
-        Object result = docascode();
+        Algorithm algo = Algorithm.create();
+        None result = algo.add_documentation("", "");
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

@@ -1,27 +1,54 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Continuous Batching implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Continuous Batching.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Add inference request.
      */
-    public static Object continuousbatching(Object... args) {
-        logger.info("Executing continuous_batching");
-        // TODO: Implement continuous_batching based on README.md
+    public Object add_request(String request_id, String prompt, Object max_tokens) {
+        logger.info("Executing add_request");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Process batch of requests.
+     */
+    public List<Object> process_batch() {
+        logger.info("Executing process_batch");
         return null;
     }
+
+    /**
+     * Get number of active requests.
+     */
+    public int get_active_count() {
+        logger.info("Executing get_active_count");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Continuous Batching");
         System.out.println("=".repeat(70));
         
-        Object result = continuousbatching();
+        Algorithm algo = Algorithm.create();
+        None result = algo.add_request("", "", null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

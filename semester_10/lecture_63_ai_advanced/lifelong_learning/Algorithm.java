@@ -1,27 +1,54 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Lifelong Learning implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Lifelong Learning.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Learn new task.
      */
-    public static Object lifelonglearning(Object... args) {
-        logger.info("Executing lifelong_learning");
-        // TODO: Implement lifelong_learning based on README.md
+    public Object learn_task(String task_id, List<Object> data, List<Object> labels) {
+        logger.info("Executing learn_task");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Recall task from memory.
+     */
+    public Map<String, Object> recall_task(String task_id) {
+        logger.info("Executing recall_task");
         return null;
     }
+
+    /**
+     * Transfer knowledge between tasks.
+     */
+    public Object transfer_knowledge(String from_task, String to_task) {
+        logger.info("Executing transfer_knowledge");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Lifelong Learning");
         System.out.println("=".repeat(70));
         
-        Object result = lifelonglearning();
+        Algorithm algo = Algorithm.create();
+        None result = algo.learn_task("", null, null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

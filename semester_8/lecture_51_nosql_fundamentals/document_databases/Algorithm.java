@@ -1,26 +1,56 @@
+import java.util.*;
+import java.util.logging.Logger;
+import java.util.logging.Level;
+
 /**
  * Document Databases implementation.
- * 
- * Document Databases for nosql database fundamentals.
  */
-import java.util.logging.Logger;
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
 
-    
+    public Algorithm() {
+        // Initialize
+    }
+
+    /**
+     * Create collection.
+     */
+    public Object create_collection(String name) {
+        logger.info("Executing create_collection");
+        return null;
+    }
+
+    /**
+     * Insert document.
+     */
+    public String insert_document(String collection, Object document) {
+        logger.info("Executing insert_document");
+        long currentTime = System.currentTimeMillis();
+        long timestamp = System.currentTimeMillis();
+        String shareId = "SHARE-" + timestamp;
+        return "";
+    }
+
+    /**
+     * Find documents.
+     */
+    public List<Object> find_documents(String collection, Object query) {
+        logger.info("Executing find_documents");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
-        logger.info("=".repeat(70));
-        logger.info("DOCUMENT DATABASES DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        System.out.println("=".repeat(70));
+        System.out.println("Document Databases");
+        System.out.println("=".repeat(70));
         
-        logger.info("Implementation in progress...");
-        logger.info();
-        
-        logger.info("=".repeat(70));
-        logger.info("\nComplexity Summary:");
-        logger.info("  Time:  Varies");
-        logger.info("  Space: Varies");
-        logger.info("=".repeat(70));
+        Algorithm algo = Algorithm.create();
+        None result = algo.create_collection("");
+        System.out.println("Result: " + result);
+        System.out.println("=".repeat(70));
     }
 }

@@ -1,27 +1,54 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Personalized Docs implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Personalized Docs.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Add document.
      */
-    public static Object personalizeddocs(Object... args) {
-        logger.info("Executing personalized_docs");
-        // TODO: Implement personalized_docs based on README.md
+    public Object add_document(String doc_id, String content, List<String> tags) {
+        logger.info("Executing add_document");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Create user profile.
+     */
+    public Object create_user_profile(String user_id, Object preferences) {
+        logger.info("Executing create_user_profile");
         return null;
     }
+
+    /**
+     * Get personalized documents.
+     */
+    public List<Object> get_personalized_docs(String user_id) {
+        logger.info("Executing get_personalized_docs");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Personalized Docs");
         System.out.println("=".repeat(70));
         
-        Object result = personalizeddocs();
+        Algorithm algo = Algorithm.create();
+        None result = algo.add_document("", "", null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

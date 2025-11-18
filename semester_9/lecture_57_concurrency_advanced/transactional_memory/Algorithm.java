@@ -1,27 +1,54 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Transactional Memory implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Transactional Memory.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Begin transaction.
      */
-    public static Object transactionalmemory(Object... args) {
-        logger.info("Executing transactional_memory");
-        // TODO: Implement transactional_memory based on README.md
+    public Object begin_transaction(String tx_id) {
+        logger.info("Executing begin_transaction");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Write in transaction.
+     */
+    public Object write(String tx_id, String key, Object value) {
+        logger.info("Executing write");
         return null;
     }
+
+    /**
+     * Commit transaction.
+     */
+    public boolean commit(String tx_id) {
+        logger.info("Executing commit");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Transactional Memory");
         System.out.println("=".repeat(70));
         
-        Object result = transactionalmemory();
+        Algorithm algo = Algorithm.create();
+        None result = algo.begin_transaction("");
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

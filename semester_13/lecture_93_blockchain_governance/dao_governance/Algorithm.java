@@ -1,27 +1,64 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Dao Governance implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Dao Governance.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Add DAO member.
      */
-    public static Object daogovernance(Object... args) {
-        logger.info("Executing dao_governance");
-        // TODO: Implement dao_governance based on README.md
+    public Object add_member(String member, Object voting_power) {
+        logger.info("Executing add_member");
         return null;
     }
+
+    /**
+     * Create governance proposal.
+     */
+    public Object create_proposal(String proposal_id, String description, String proposer) {
+        logger.info("Executing create_proposal");
+        long currentTime = System.currentTimeMillis();
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Vote on proposal.
+     */
+    public boolean vote(String proposal_id, String member, Object support) {
+        logger.info("Executing vote");
+        return null;
+    }
+
+    /**
+     * Get voting result.
+     */
+    public Map<String, Object> get_result(String proposal_id) {
+        logger.info("Executing get_result");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Dao Governance");
         System.out.println("=".repeat(70));
         
-        Object result = daogovernance();
+        Algorithm algo = Algorithm.create();
+        None result = algo.add_member("", null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

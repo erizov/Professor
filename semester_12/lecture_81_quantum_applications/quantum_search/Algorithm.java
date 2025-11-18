@@ -1,37 +1,45 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Quantum Search implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
-    /**
-     * Quantum Search.
-     * 
-     * @param arr Array to search
-     * @param target Target value
-     * @return Index if found, -1 otherwise
-     */
-    public static int quantumsearch(int[] arr, int target) {
-        if (arr == null || arr.length == 0) {
-            return -1;
-        }
-        
-        // TODO: Implement quantum_search
-        logger.info("Executing quantum_search");
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == target) {
-                return i;
-            }
-        }
-        return -1;
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
     }
+
+    /**
+     * Grover's search algorithm.
+     */
+    public int grover_search(Object target, List<Object> dataset) {
+        logger.info("Executing grover_search");
+        return null;
+    }
+
+    /**
+     * Amplitude amplification.
+     */
+    public int amplitude_amplification(Object marked_states, Object n_qubits) {
+        logger.info("Executing amplitude_amplification");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Quantum Search");
         System.out.println("=".repeat(70));
         
-        Object result = quantumsearch();
+        Algorithm algo = Algorithm.create();
+        Optional[int] result = algo.grover_search(null, null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

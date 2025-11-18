@@ -1,27 +1,54 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Lambda Architecture implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Lambda Architecture.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Add data to batch layer.
      */
-    public static Object lambdaarchitecture(Object... args) {
-        logger.info("Executing lambda_architecture");
-        // TODO: Implement lambda_architecture based on README.md
+    public Object add_batch_data(String stream_id, Object data) {
+        logger.info("Executing add_batch_data");
         return null;
     }
+
+    /**
+     * Add data to speed layer.
+     */
+    public Object add_stream_data(String stream_id, Object data) {
+        logger.info("Executing add_stream_data");
+        return null;
+    }
+
+    /**
+     * Merge batch and speed views.
+     */
+    public Map<String, Object> merge_views(String view_id) {
+        logger.info("Executing merge_views");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Lambda Architecture");
         System.out.println("=".repeat(70));
         
-        Object result = lambdaarchitecture();
+        Algorithm algo = Algorithm.create();
+        None result = algo.add_batch_data("", null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

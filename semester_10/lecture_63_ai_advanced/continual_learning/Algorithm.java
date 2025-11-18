@@ -1,27 +1,54 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Continual Learning implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Continual Learning.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Add new task.
      */
-    public static Object continuallearning(Object... args) {
-        logger.info("Executing continual_learning");
-        // TODO: Implement continual_learning based on README.md
+    public Object add_task(String task_id, List<Object> task_data) {
+        logger.info("Executing add_task");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Train on specific task.
+     */
+    public Object train_task(String task_id, Object epochs) {
+        logger.info("Executing train_task");
         return null;
     }
+
+    /**
+     * Predict using task-specific model.
+     */
+    public Object predict(List<Object> x, String task_id) {
+        logger.info("Executing predict");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Continual Learning");
         System.out.println("=".repeat(70));
         
-        Object result = continuallearning();
+        Algorithm algo = Algorithm.create();
+        None result = algo.add_task("", null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

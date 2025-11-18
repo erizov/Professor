@@ -1,71 +1,71 @@
-/**
- * Bridge Design Pattern.
- * 
- * Decouples abstraction from implementation.
- */
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Bridge implementation.
+ */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
 
-    
-    interface DrawingAPI {
-        void drawCircle(double x, double y, double radius);
+    public Algorithm() {
+        // Initialize
     }
-    
-    static class DrawingAPI1 implements DrawingAPI {
-        public void drawCircle(double x, double y, double radius) {
-            System.out.printf("API1.circle at (%.2f, %.2f) radius %.2f%n",
-                            x, y, radius);
-        }
+
+    /**
+     * Concrete implementor A.
+     */
+    public String operation_impl() {
+        logger.info("Executing operation_impl");
+        return null;
     }
-    
-    static class DrawingAPI2 implements DrawingAPI {
-        public void drawCircle(double x, double y, double radius) {
-            System.out.printf("API2.circle at (%.2f, %.2f) radius %.2f%n",
-                            x, y, radius);
-        }
+
+    /**
+     * Concrete implementor B.
+     */
+    public String operation_impl() {
+        logger.info("Executing operation_impl");
+        return null;
     }
-    
-    abstract static class Shape {
-        protected DrawingAPI drawingAPI;
-        
-        Shape(DrawingAPI api) {
-            this.drawingAPI = api;
-        }
-        
-        abstract void draw();
+
+    /**
+     * Abstraction.
+     */
+    public String operation_impl() {
+        logger.info("Executing operation_impl");
+        return null;
     }
-    
-    static class CircleShape extends Shape {
-        private double x, y, radius;
-        
-        CircleShape(double x, double y, double radius, DrawingAPI api) {
-            super(api);
-            this.x = x;
-            this.y = y;
-            this.radius = radius;
-        }
-        
-        void draw() {
-            drawingAPI.drawCircle(x, y, radius);
-        }
+
+    /**
+     * Refined abstraction.
+     */
+    public String operation() {
+        logger.info("Executing operation");
+        String result = "Abstraction(" + self.implementor.operation_impl() + ")";
+        return "";
     }
-    
+
+    /**
+     * Operation
+     */
+    public String operation() {
+        logger.info("Executing operation");
+        String result = "RefinedAbstraction(" + self.implementor.operation_impl() + ")";
+        return "";
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
-        logger.info("=".repeat(70));
-        logger.info("BRIDGE DESIGN PATTERN");
-        logger.info("=".repeat(70));
-        logger.info();
+        System.out.println("=".repeat(70));
+        System.out.println("Bridge");
+        System.out.println("=".repeat(70));
         
-        Shape circle1 = new CircleShape(1, 2, 3, new DrawingAPI1());
-        Shape circle2 = new CircleShape(5, 7, 11, new DrawingAPI2());
-        
-        circle1.draw();
-        circle2.draw();
-        logger.info();
-        
-        logger.info("=".repeat(70));
-        logger.info("\nPrinciple: Decouples abstraction from implementation");
-        logger.info("=".repeat(70));
+        Algorithm algo = Algorithm.create();
+        str result = algo.operation_impl();
+        System.out.println("Result: " + result);
+        System.out.println("=".repeat(70));
     }
 }

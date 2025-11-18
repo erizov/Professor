@@ -1,27 +1,51 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Automated Documentation implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
-    /**
-     * Automated Documentation.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object automateddocumentation(Object... args) {
-        logger.info("Executing automated_documentation");
-        // TODO: Implement automated_documentation based on README.md
-        return null;
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
     }
+
+    /**
+     * Add documentation source.
+     */
+    public Object add_source(String source_type, String path) {
+        logger.info("Executing add_source");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Generate documentation.
+     */
+    public String generate(String output_format) {
+        logger.info("Executing generate");
+        String result = "# Documentation from " + source['type'] + "
+
+";
+        String result = "Source: " + path + "
+";
+        return "";
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Automated Documentation");
         System.out.println("=".repeat(70));
         
-        Object result = automateddocumentation();
+        Algorithm algo = Algorithm.create();
+        None result = algo.add_source("", "");
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

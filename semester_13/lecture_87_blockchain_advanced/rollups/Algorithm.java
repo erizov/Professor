@@ -1,27 +1,47 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Rollups implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
-    /**
-     * Rollups.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object rollups(Object... args) {
-        logger.info("Executing rollups");
-        // TODO: Implement rollups based on README.md
-        return null;
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
     }
+
+    /**
+     * Add raw data.
+     */
+    public Object add_data(Object timestamp, Object value) {
+        logger.info("Executing add_data");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Create rollup.
+     */
+    public Map<String, Object> create_rollup(String interval, List<Object> data) {
+        logger.info("Executing create_rollup");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Rollups");
         System.out.println("=".repeat(70));
         
-        Object result = rollups();
+        Algorithm algo = Algorithm.create();
+        None result = algo.add_data(null, null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

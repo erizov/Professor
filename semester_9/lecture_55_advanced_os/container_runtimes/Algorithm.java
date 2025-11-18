@@ -1,27 +1,72 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Container Runtimes implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Container Runtimes.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Pull container image.
      */
-    public static Object containerruntimes(Object... args) {
-        logger.info("Executing container_runtimes");
-        // TODO: Implement container_runtimes based on README.md
+    public Object pull_image(String image_name, String tag) {
+        logger.info("Executing pull_image");
+        long currentTime = System.currentTimeMillis();
+        String result = "" + image_name + ":";
+        return "";
+    }
+
+    /**
+     * Create container.
+     */
+    public Object create_container(String container_id, String image_id, List<String> command) {
+        logger.info("Executing create_container");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Start container.
+     */
+    public boolean start_container(String container_id) {
+        logger.info("Executing start_container");
         return null;
     }
+
+    /**
+     * Stop container.
+     */
+    public boolean stop_container(String container_id) {
+        logger.info("Executing stop_container");
+        return null;
+    }
+
+    /**
+     * Get container status.
+     */
+    public String get_container_status(String container_id) {
+        logger.info("Executing get_container_status");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Container Runtimes");
         System.out.println("=".repeat(70));
         
-        Object result = containerruntimes();
+        Algorithm algo = Algorithm.create();
+        None result = algo.pull_image("", "");
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

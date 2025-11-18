@@ -1,37 +1,46 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Hybrid Search implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
-    /**
-     * Hybrid Search.
-     * 
-     * @param arr Array to search
-     * @param target Target value
-     * @return Index if found, -1 otherwise
-     */
-    public static int hybridsearch(int[] arr, int target) {
-        if (arr == null || arr.length == 0) {
-            return -1;
-        }
-        
-        // TODO: Implement hybrid_search
-        logger.info("Executing hybrid_search");
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == target) {
-                return i;
-            }
-        }
-        return -1;
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
     }
+
+    /**
+     * Add search method.
+     */
+    public Object add_searcher(String name, Object searcher, Object weight) {
+        logger.info("Executing add_searcher");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Hybrid search.
+     */
+    public List<Object> search(String query, Object top_k) {
+        logger.info("Executing search");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Hybrid Search");
         System.out.println("=".repeat(70));
         
-        Object result = hybridsearch();
+        Algorithm algo = Algorithm.create();
+        None result = algo.add_searcher("", null, null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

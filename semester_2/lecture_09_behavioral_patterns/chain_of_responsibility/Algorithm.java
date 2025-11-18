@@ -1,62 +1,63 @@
-/**
- * Chain of Responsibility Design Pattern.
- * 
- * Passes request along chain of handlers.
- */
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Chain Of Responsibility implementation.
+ */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
 
-    
-    abstract static class Handler {
-        protected Handler nextHandler;
-        
-        Handler setNext(Handler handler) {
-            nextHandler = handler;
-            return handler;
-        }
-        
-        abstract String handle(String request);
+    public Algorithm() {
+        // Initialize
     }
-    
-    static class MonkeyHandler extends Handler {
-        public String handle(String request) {
-            if ("Banana".equals(request)) {
-                return "Monkey: I'll eat the " + request;
-            } else if (nextHandler != null) {
-                return nextHandler.handle(request);
-            }
-            return null;
-        }
+
+    /**
+     * Set next handler.
+     */
+    public Object set_next(Object handler) {
+        logger.info("Executing set_next");
+        return null;
     }
-    
-    static class DogHandler extends Handler {
-        public String handle(String request) {
-            if ("MeatBall".equals(request)) {
-                return "Dog: I'll eat the " + request;
-            } else if (nextHandler != null) {
-                return nextHandler.handle(request);
-            }
-            return null;
-        }
+
+    /**
+     * Handle request.
+     */
+    public String handle(String request) {
+        logger.info("Executing handle");
+        return null;
     }
-    
+
+    /**
+     * Concrete handler B.
+     */
+    public String handle(String request) {
+        logger.info("Executing handle");
+        String result = "ConcreteHandlerA handled " + request + "";
+        return "";
+    }
+
+    /**
+     * Handle
+     */
+    public String handle(String request) {
+        logger.info("Executing handle");
+        String result = "ConcreteHandlerB handled " + request + "";
+        return "";
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
-        logger.info("=".repeat(70));
-        logger.info("CHAIN OF RESPONSIBILITY PATTERN");
-        logger.info("=".repeat(70));
-        logger.info();
+        System.out.println("=".repeat(70));
+        System.out.println("Chain Of Responsibility");
+        System.out.println("=".repeat(70));
         
-        Handler monkey = new MonkeyHandler();
-        Handler dog = new DogHandler();
-        monkey.setNext(dog);
-        
-        logger.info(monkey.handle("Banana"));
-        logger.info(monkey.handle("MeatBall"));
-        logger.info();
-        
-        logger.info("=".repeat(70));
-        logger.info("\nPattern: Passes request along chain");
-        logger.info("=".repeat(70));
+        Algorithm algo = Algorithm.create();
+        'Handler' result = algo.set_next(null);
+        System.out.println("Result: " + result);
+        System.out.println("=".repeat(70));
     }
 }

@@ -1,27 +1,55 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * State Channels implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * State Channels.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Open state channel.
      */
-    public static Object statechannels(Object... args) {
-        logger.info("Executing state_channels");
-        // TODO: Implement state_channels based on README.md
+    public Object open_channel(String channel_id, List<String> participants, Object deposit) {
+        logger.info("Executing open_channel");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Update channel state.
+     */
+    public Object update_state(String channel_id, Object state) {
+        logger.info("Executing update_state");
         return null;
     }
+
+    /**
+     * Close channel.
+     */
+    public Map<String, Object> close_channel(String channel_id) {
+        logger.info("Executing close_channel");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("State Channels");
         System.out.println("=".repeat(70));
         
-        Object result = statechannels();
+        Algorithm algo = Algorithm.create();
+        None result = algo.open_channel("", null, null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

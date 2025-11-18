@@ -1,27 +1,54 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Governance Tokens implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Governance Tokens.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Mint tokens.
      */
-    public static Object governancetokens(Object... args) {
-        logger.info("Executing governance_tokens");
-        // TODO: Implement governance_tokens based on README.md
+    public Object mint(String address, Object amount) {
+        logger.info("Executing mint");
         return null;
     }
+
+    /**
+     * Create governance proposal.
+     */
+    public Object create_proposal(String proposal_id, String description) {
+        logger.info("Executing create_proposal");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Vote on proposal.
+     */
+    public Object vote(String proposal_id, String voter, Object support) {
+        logger.info("Executing vote");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Governance Tokens");
         System.out.println("=".repeat(70));
         
-        Object result = governancetokens();
+        Algorithm algo = Algorithm.create();
+        None result = algo.mint("", null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

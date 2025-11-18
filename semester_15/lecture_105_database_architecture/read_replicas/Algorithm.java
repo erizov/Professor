@@ -1,27 +1,54 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Read Replicas implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Read Replicas.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Add read replica.
      */
-    public static Object readreplicas(Object... args) {
-        logger.info("Executing read_replicas");
-        // TODO: Implement read_replicas based on README.md
+    public Object add_replica(String replica_id) {
+        logger.info("Executing add_replica");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Write to primary.
+     */
+    public Object write(String key, Object value) {
+        logger.info("Executing write");
         return null;
     }
+
+    /**
+     * Read from replica or primary.
+     */
+    public Object read(String key, Object use_replica) {
+        logger.info("Executing read");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Read Replicas");
         System.out.println("=".repeat(70));
         
-        Object result = readreplicas();
+        Algorithm algo = Algorithm.create();
+        None result = algo.add_replica("");
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

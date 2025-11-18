@@ -1,27 +1,53 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Quantum Database implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Quantum Database.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Store data.
      */
-    public static Object quantumdatabase(Object... args) {
-        logger.info("Executing quantum_database");
-        // TODO: Implement quantum_database based on README.md
+    public Object store(String key, Object value) {
+        logger.info("Executing store");
         return null;
     }
+
+    /**
+     * Grover's search algorithm.
+     */
+    public Object grover_search(String target) {
+        logger.info("Executing grover_search");
+        return null;
+    }
+
+    /**
+     * Quantum query.
+     */
+    public String quantum_query(Object query_func) {
+        logger.info("Executing quantum_query");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Quantum Database");
         System.out.println("=".repeat(70));
         
-        Object result = quantumdatabase();
+        Algorithm algo = Algorithm.create();
+        None result = algo.store("", null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

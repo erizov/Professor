@@ -1,50 +1,69 @@
-/**
- * Template Method Design Pattern.
- * 
- * Defines algorithm skeleton in method.
- */
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Template Method implementation.
+ */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
 
-    
-    abstract static class DataProcessor {
-        void process() {
-            readData();
-            processData();
-            saveData();
-        }
-        
-        abstract void readData();
-        abstract void processData();
-        
-        void saveData() {
-            logger.info("Saving processed data...");
-        }
+    public Algorithm() {
+        // Initialize
     }
-    
-    static class CSVProcessor extends DataProcessor {
-        void readData() {
-            logger.info("Reading CSV file...");
-        }
-        
-        void processData() {
-            logger.info("Processing CSV data...");
-        }
+
+    /**
+     * Template method.
+     */
+    public String template_method() {
+        logger.info("Executing template_method");
+        return null;
     }
-    
+
+    /**
+     * Primitive operation 1.
+     */
+    public String operation1() {
+        logger.info("Executing operation1");
+        return null;
+    }
+
+    /**
+     * Primitive operation 2 (hook).
+     */
+    public String operation2() {
+        logger.info("Executing operation2");
+        return null;
+    }
+
+    /**
+     * Primitive operation 3.
+     */
+    public String operation3() {
+        logger.info("Executing operation3");
+        return null;
+    }
+
+    /**
+     * Override operation 2.
+     */
+    public String operation2() {
+        logger.info("Executing operation2");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
-        logger.info("=".repeat(70));
-        logger.info("TEMPLATE METHOD DESIGN PATTERN");
-        logger.info("=".repeat(70));
-        logger.info();
+        System.out.println("=".repeat(70));
+        System.out.println("Template Method");
+        System.out.println("=".repeat(70));
         
-        DataProcessor processor = new CSVProcessor();
-        processor.process();
-        logger.info();
-        
-        logger.info("=".repeat(70));
-        logger.info("\nPattern: Defines algorithm skeleton");
-        logger.info("=".repeat(70));
+        Algorithm algo = Algorithm.create();
+        str result = algo.template_method();
+        System.out.println("Result: " + result);
+        System.out.println("=".repeat(70));
     }
 }

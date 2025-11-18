@@ -1,31 +1,61 @@
-/**
- * Deep Q-Network implementation.
- * 
- * Category: Reinforcement Learning
- * Time Complexity: O(episodes*steps)
- * Space Complexity: O(replay_buffer)
- */
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Dqn implementation.
+ */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
 
+    public Algorithm() {
+        // Initialize
+    }
+
+    /**
+     * Get Q-values for state.
+     */
+    public int get_q_values(List<Object> state) {
+        logger.info("Executing get_q_values");
+        return null;
+    }
+
+    /**
+     * Choose action using epsilon-greedy.
+     */
+    public int choose_action(List<Object> state, Object epsilon) {
+        logger.info("Executing choose_action");
+        return null;
+    }
+
+    /**
+     * Store transition in replay buffer.
+     */
+    public Object store_transition(List<Object> state, Object action, Object reward, List<Object> next_state, Object done) {
+        logger.info("Executing store_transition");
+        return null;
+    }
+
+    /**
+     * Train DQN.
+     */
+    public Object train(Object batch_size, Object gamma) {
+        logger.info("Executing train");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
-        long startTime = System.nanoTime();
+        System.out.println("=".repeat(70));
+        System.out.println("Dqn");
+        System.out.println("=".repeat(70));
         
-        logger.info("==".repeat(35));
-        logger.info("Deep Q-Network");
-        logger.info("==".repeat(35));
-        logger.info("Category: Reinforcement Learning");
-        logger.info("Time: O(episodes*steps)");
-        logger.info("Space: O(replay_buffer)");
-        logger.info();
-        logger.info("Resource Requirements:");
-        logger.info("  - GPU: Optional");
-        logger.info("  - Memory: Medium");
-        logger.info("==".repeat(35));
-        
-        long endTime = System.nanoTime();
-        double durationMs = (endTime - startTime) / 1_000_000.0;
-        logger.info(String.format("\nExecution time: %.3f ms", durationMs));
+        Algorithm algo = Algorithm.create();
+        List[float] result = algo.get_q_values(null);
+        System.out.println("Result: " + result);
+        System.out.println("=".repeat(70));
     }
 }

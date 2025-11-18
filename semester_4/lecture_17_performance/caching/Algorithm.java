@@ -1,65 +1,53 @@
 import java.util.*;
+import java.util.logging.Logger;
+import java.util.logging.Level;
 
 /**
- * Caching Pattern.
- * 
- * Stores frequently accessed data.
+ * Caching implementation.
  */
-import java.util.logging.Logger;
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
 
-    
-    static class LRUCache {
-        private final int capacity;
-        private LinkedHashMap<String, String> cache;
-        
-        LRUCache(int capacity) {
-            this.capacity = capacity;
-            this.cache = new LinkedHashMap<String, String>(capacity, 0.75f, true) {
-                protected boolean removeEldestEntry(Map.Entry<String, String> eldest) {
-                    return size() > capacity;
-                }
-            };
-        }
-        
-        String get(String key) {
-            return cache.get(key);
-        }
-        
-        void put(String key, String value) {
-            cache.put(key, value);
-        }
-        
-        int size() {
-            return cache.size();
-        }
+    public Algorithm() {
+        // Initialize
     }
-    
+
+    /**
+     * Get value from cache.
+     */
+    public Object get(String key) {
+        logger.info("Executing get");
+        return null;
+    }
+
+    /**
+     * Put value in cache.
+     */
+    public Object put(String key, Object value) {
+        logger.info("Executing put");
+        return null;
+    }
+
+    /**
+     * Clear cache.
+     */
+    public Object clear() {
+        logger.info("Executing clear");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
-        long startTime = System.nanoTime();
+        System.out.println("=".repeat(70));
+        System.out.println("Caching");
+        System.out.println("=".repeat(70));
         
-        logger.info("=".repeat(70));
-        logger.info("CACHING PATTERN");
-        logger.info("=".repeat(70));
-        logger.info();
-        
-        LRUCache cache = new LRUCache(3);
-        
-        cache.put("key1", "value1");
-        cache.put("key2", "value2");
-        cache.put("key3", "value3");
-        
-        logger.info("Cache size: " + cache.size());
-        logger.info("key1: " + cache.get("key1"));
-        logger.info();
-        
-        long endTime = System.nanoTime();
-        
-        logger.info("=".repeat(70));
-        logger.info("\nPattern: Stores frequently accessed data");
-        logger.info("=".repeat(70));
-        System.out.printf("\nTotal time: %.3f ms%n",
-                        (endTime - startTime) / 1_000_000.0);
+        Algorithm algo = Algorithm.create();
+        Optional[any] result = algo.get("");
+        System.out.println("Result: " + result);
+        System.out.println("=".repeat(70));
     }
 }

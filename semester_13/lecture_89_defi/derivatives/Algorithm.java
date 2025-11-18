@@ -1,27 +1,28 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Derivatives implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
     /**
-     * Derivatives.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Calculate numerical derivative.
      */
-    public static Object derivatives(Object... args) {
-        logger.info("Executing derivatives");
-        // TODO: Implement derivatives based on README.md
-        return null;
+    public static Object numerical_derivative(Object... args) {
+        logger.info("Executing numerical_derivative");
+        List<Object> result = new ArrayList<>();
+        return new ArrayList<>();
     }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Derivatives");
         System.out.println("=".repeat(70));
-        
-        Object result = derivatives();
+        Object result = numerical_derivative();
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

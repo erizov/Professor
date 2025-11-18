@@ -1,27 +1,45 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Warehouse Architecture implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Warehouse Architecture.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Add component to layer.
      */
-    public static Object warehousearchitecture(Object... args) {
-        logger.info("Executing warehouse_architecture");
-        // TODO: Implement warehouse_architecture based on README.md
+    public Object add_component(String layer, Object component) {
+        logger.info("Executing add_component");
         return null;
     }
+
+    /**
+     * Get warehouse architecture.
+     */
+    public Map<String, Object> get_architecture() {
+        logger.info("Executing get_architecture");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Warehouse Architecture");
         System.out.println("=".repeat(70));
         
-        Object result = warehousearchitecture();
+        Algorithm algo = Algorithm.create();
+        None result = algo.add_component("", null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

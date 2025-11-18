@@ -1,27 +1,54 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Canary Analysis implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Canary Analysis.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Add metric.
      */
-    public static Object canaryanalysis(Object... args) {
-        logger.info("Executing canary_analysis");
-        // TODO: Implement canary_analysis based on README.md
+    public Object add_metric(String version, String metric_name, Object value) {
+        logger.info("Executing add_metric");
         return null;
     }
+
+    /**
+     * Compare canary vs stable metrics.
+     */
+    public Map<String, Object> compare_metrics() {
+        logger.info("Executing compare_metrics");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Check if should rollback.
+     */
+    public boolean should_rollback(Object threshold) {
+        logger.info("Executing should_rollback");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Canary Analysis");
         System.out.println("=".repeat(70));
         
-        Object result = canaryanalysis();
+        Algorithm algo = Algorithm.create();
+        None result = algo.add_metric("", "", null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

@@ -1,27 +1,47 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Real Time Ml implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Real Time Ml.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Load ML model.
      */
-    public static Object realtimeml(Object... args) {
-        logger.info("Executing real_time_ml");
-        // TODO: Implement real_time_ml based on README.md
+    public Object load_model(String model_id, Object model) {
+        logger.info("Executing load_model");
         return null;
     }
+
+    /**
+     * Real-time prediction.
+     */
+    public Object predict(String model_id, List<Object> features) {
+        logger.info("Executing predict");
+        long currentTime = System.currentTimeMillis();
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Real Time Ml");
         System.out.println("=".repeat(70));
         
-        Object result = realtimeml();
+        Algorithm algo = Algorithm.create();
+        None result = algo.load_model("", null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

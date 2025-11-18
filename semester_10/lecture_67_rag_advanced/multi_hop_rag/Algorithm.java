@@ -1,27 +1,55 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Multi Hop Rag implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Multi Hop Rag.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Add document.
      */
-    public static Object multihoprag(Object... args) {
-        logger.info("Executing multi_hop_rag");
-        // TODO: Implement multi_hop_rag based on README.md
+    public Object add_document(String doc_id, String content, Object metadata) {
+        logger.info("Executing add_document");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Multi-hop retrieval.
+     */
+    public List<Object> retrieve(String query, Object hop) {
+        logger.info("Executing retrieve");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Answer query with multi-hop reasoning.
+     */
+    public String answer(String query, Object max_hops) {
+        logger.info("Executing answer");
         return null;
     }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Multi Hop Rag");
         System.out.println("=".repeat(70));
         
-        Object result = multihoprag();
+        Algorithm algo = Algorithm.create();
+        None result = algo.add_document("", "", null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

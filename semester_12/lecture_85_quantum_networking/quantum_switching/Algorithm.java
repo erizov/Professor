@@ -1,27 +1,47 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Quantum Switching implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
-    /**
-     * Quantum Switching.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object quantumswitching(Object... args) {
-        logger.info("Executing quantum_switching");
-        // TODO: Implement quantum_switching based on README.md
-        return null;
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
     }
+
+    /**
+     * Add quantum switch.
+     */
+    public Object add_switch(String switch_id, Object ports) {
+        logger.info("Executing add_switch");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Route qubit through switch.
+     */
+    public boolean route_qubit(String source, String destination, List<Object> qubit) {
+        logger.info("Executing route_qubit");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Quantum Switching");
         System.out.println("=".repeat(70));
         
-        Object result = quantumswitching();
+        Algorithm algo = Algorithm.create();
+        None result = algo.add_switch("", null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

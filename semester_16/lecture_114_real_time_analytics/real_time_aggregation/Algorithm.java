@@ -1,27 +1,48 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Real Time Aggregation implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
-    /**
-     * Real Time Aggregation.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object realtimeaggregation(Object... args) {
-        logger.info("Executing real_time_aggregation");
-        // TODO: Implement real_time_aggregation based on README.md
-        return null;
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
     }
+
+    /**
+     * Add data to stream.
+     */
+    public Object add_data(String stream_id, Object data, Object timestamp) {
+        logger.info("Executing add_data");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Aggregate data in window.
+     */
+    public Map<String, Object> aggregate(String stream_id, Object window_size) {
+        logger.info("Executing aggregate");
+        long currentTime = System.currentTimeMillis();
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Real Time Aggregation");
         System.out.println("=".repeat(70));
         
-        Object result = realtimeaggregation();
+        Algorithm algo = Algorithm.create();
+        None result = algo.add_data("", null, null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

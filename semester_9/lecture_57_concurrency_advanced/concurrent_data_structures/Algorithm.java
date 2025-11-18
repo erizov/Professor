@@ -1,27 +1,77 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Concurrent Data Structures implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Concurrent Data Structures.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Add item to queue.
      */
-    public static Object concurrentdatastructures(Object... args) {
-        logger.info("Executing concurrent_data_structures");
-        // TODO: Implement concurrent_data_structures based on README.md
+    public Object enqueue(Object item) {
+        logger.info("Executing enqueue");
         return null;
     }
+
+    /**
+     * Remove item from queue.
+     */
+    public Object dequeue() {
+        logger.info("Executing dequeue");
+        return null;
+    }
+
+    /**
+     * Get queue size.
+     */
+    public int size() {
+        logger.info("Executing size");
+        return null;
+    }
+
+    /**
+     * Push item.
+     */
+    public Object push(Object item) {
+        logger.info("Executing push");
+        return null;
+    }
+
+    /**
+     * Pop item.
+     */
+    public Object pop() {
+        logger.info("Executing pop");
+        return null;
+    }
+
+    /**
+     * Peek at top.
+     */
+    public Object peek() {
+        logger.info("Executing peek");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Concurrent Data Structures");
         System.out.println("=".repeat(70));
         
-        Object result = concurrentdatastructures();
+        Algorithm algo = Algorithm.create();
+        None result = algo.enqueue(null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

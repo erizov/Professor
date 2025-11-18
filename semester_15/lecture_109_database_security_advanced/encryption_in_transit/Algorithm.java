@@ -1,27 +1,53 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Encryption In Transit implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Encryption In Transit.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Encrypt message for transit.
      */
-    public static Object encryptionintransit(Object... args) {
-        logger.info("Executing encryption_in_transit");
-        // TODO: Implement encryption_in_transit based on README.md
+    public Object encrypt_message(Object message) {
+        logger.info("Executing encrypt_message");
         return null;
     }
+
+    /**
+     * Decrypt message.
+     */
+    public Object decrypt_message(Object encrypted_message) {
+        logger.info("Executing decrypt_message");
+        return null;
+    }
+
+    /**
+     * Establish secure connection.
+     */
+    public boolean establish_secure_connection() {
+        logger.info("Executing establish_secure_connection");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Encryption In Transit");
         System.out.println("=".repeat(70));
         
-        Object result = encryptionintransit();
+        Algorithm algo = Algorithm.create();
+        bytes result = algo.encrypt_message(null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

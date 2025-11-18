@@ -1,27 +1,46 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Quantum Compilation implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Quantum Compilation.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Compile circuit to target gates.
      */
-    public static Object quantumcompilation(Object... args) {
-        logger.info("Executing quantum_compilation");
-        // TODO: Implement quantum_compilation based on README.md
+    public List<Object> compile(String circuit_id, List<Object> gates) {
+        logger.info("Executing compile");
         return null;
     }
+
+    /**
+     * Decompose gate into target gates.
+     */
+    public List<Object> _decompose_gate(Object gate) {
+        logger.info("Executing _decompose_gate");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Quantum Compilation");
         System.out.println("=".repeat(70));
         
-        Object result = quantumcompilation();
+        Algorithm algo = Algorithm.create();
+        List[dict] result = algo.compile("", null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

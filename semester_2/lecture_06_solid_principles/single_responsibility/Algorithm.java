@@ -1,78 +1,53 @@
-/**
- * Single Responsibility Principle (SRP).
- * 
- * A class should have only one reason to change.
- */
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Single Responsibility implementation.
+ */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
 
-    
-    // BAD: Multiple responsibilities
-    static class BadEmployee {
-        private String name;
-        private double salary;
-        
-        BadEmployee(String name, double salary) {
-            this.name = name;
-            this.salary = salary;
-        }
-        
-        double calculatePay() {
-            return salary * 0.8;
-        }
-        
-        void saveToDatabase() {
-            logger.info("Saving " + name + " to database...");
-        }
-        
-        void sendEmail(String message) {
-            logger.info("Sending email to " + name + ": " + message);
-        }
+    public Algorithm() {
+        // Initialize
     }
-    
-    // GOOD: Single responsibility
-    static class Employee {
-        private String name;
-        private double salary;
-        
-        Employee(String name, double salary) {
-            this.name = name;
-            this.salary = salary;
-        }
-        
-        String getName() { return name; }
-        double getSalary() { return salary; }
+
+    /**
+     * Validates user data.
+     */
+    public Map<String, Object> get_user(String user_id) {
+        logger.info("Executing get_user");
+        return false;
     }
-    
-    static class PayCalculator {
-        static double calculatePay(Employee emp) {
-            return emp.getSalary() * 0.8;
-        }
+
+    /**
+     * Orchestrates user operations.
+     */
+    public boolean validate(String user) {
+        logger.info("Executing validate");
+        return null;
     }
-    
-    static class EmailService {
-        static void sendEmail(Employee emp, String message) {
-            logger.info("Sending email to " + emp.getName() + 
-                             ": " + message);
-        }
+
+    /**
+     * Get Validated User
+     */
+    public Map<String, Object> get_validated_user(String user_id) {
+        logger.info("Executing get_validated_user");
+        return null;
     }
-    
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
-        logger.info("=".repeat(70));
-        logger.info("SINGLE RESPONSIBILITY PRINCIPLE");
-        logger.info("=".repeat(70));
-        logger.info();
+        System.out.println("=".repeat(70));
+        System.out.println("Single Responsibility");
+        System.out.println("=".repeat(70));
         
-        // Good example
-        Employee emp = new Employee("John", 50000);
-        double pay = PayCalculator.calculatePay(emp);
-        logger.info("Pay: $" + pay);
-        EmailService.sendEmail(emp, "Welcome!");
-        logger.info();
-        
-        logger.info("=".repeat(70));
-        logger.info("\nPrinciple: A class should have only one reason to change");
-        logger.info("=".repeat(70));
+        Algorithm algo = Algorithm.create();
+        dict result = algo.get_user("");
+        System.out.println("Result: " + result);
+        System.out.println("=".repeat(70));
     }
 }

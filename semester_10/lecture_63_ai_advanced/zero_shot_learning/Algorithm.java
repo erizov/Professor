@@ -1,27 +1,45 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Zero Shot Learning implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Zero Shot Learning.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Train on seen classes.
      */
-    public static Object zeroshotlearning(Object... args) {
-        logger.info("Executing zero_shot_learning");
-        // TODO: Implement zero_shot_learning based on README.md
+    public Object train(List<String> seen_classes, String descriptions, String str]) {
+        logger.info("Executing train");
         return null;
     }
+
+    /**
+     * Predict unseen class.
+     */
+    public String predict(List<Object> input_data, List<String> unseen_classes) {
+        logger.info("Executing predict");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Zero Shot Learning");
         System.out.println("=".repeat(70));
         
-        Object result = zeroshotlearning();
+        Algorithm algo = Algorithm.create();
+        None result = algo.train(null, "", "");
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

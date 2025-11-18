@@ -1,27 +1,38 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Explainability implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
-    /**
-     * Explainability.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object explainability(Object... args) {
-        logger.info("Executing explainability");
-        // TODO: Implement explainability based on README.md
-        return null;
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
     }
+
+    /**
+     * Explain model prediction.
+     */
+    public Map<String, Object> explain_prediction(Object model, List<Object> instance, List<String> feature_names) {
+        logger.info("Executing explain_prediction");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Explainability");
         System.out.println("=".repeat(70));
         
-        Object result = explainability();
+        Algorithm algo = Algorithm.create();
+        dict result = algo.explain_prediction(null, null, null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

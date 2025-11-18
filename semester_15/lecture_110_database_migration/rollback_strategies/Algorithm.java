@@ -1,27 +1,47 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Rollback Strategies implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Rollback Strategies.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Save version.
      */
-    public static Object rollbackstrategies(Object... args) {
-        logger.info("Executing rollback_strategies");
-        // TODO: Implement rollback_strategies based on README.md
+    public Object save_version(String entity_id, Object version) {
+        logger.info("Executing save_version");
         return null;
     }
+
+    /**
+     * Rollback to version.
+     */
+    public boolean rollback(String entity_id, Object target_version) {
+        logger.info("Executing rollback");
+        long currentTime = System.currentTimeMillis();
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Rollback Strategies");
         System.out.println("=".repeat(70));
         
-        Object result = rollbackstrategies();
+        Algorithm algo = Algorithm.create();
+        None result = algo.save_version("", null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

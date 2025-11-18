@@ -1,27 +1,55 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Edge Computing implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Edge Computing.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Register edge node.
      */
-    public static Object edgecomputing(Object... args) {
-        logger.info("Executing edge_computing");
-        // TODO: Implement edge_computing based on README.md
+    public Object register_edge_node(String node_id, Object location, Object capacity) {
+        logger.info("Executing register_edge_node");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Deploy task to edge node.
+     */
+    public boolean deploy_task(String task_id, String node_id, Object task_func) {
+        logger.info("Executing deploy_task");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Execute task on edge.
+     */
+    public Object execute_task(String task_id, Object data) {
+        logger.info("Executing execute_task");
         return null;
     }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Edge Computing");
         System.out.println("=".repeat(70));
         
-        Object result = edgecomputing();
+        Algorithm algo = Algorithm.create();
+        None result = algo.register_edge_node("", null, null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

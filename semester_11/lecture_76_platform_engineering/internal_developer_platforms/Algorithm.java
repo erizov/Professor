@@ -1,27 +1,55 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Internal Developer Platforms implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Internal Developer Platforms.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Register service.
      */
-    public static Object internaldeveloperplatforms(Object... args) {
-        logger.info("Executing internal_developer_platforms");
-        // TODO: Implement internal_developer_platforms based on README.md
+    public Object register_service(String service_name, Object config) {
+        logger.info("Executing register_service");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Deploy service.
+     */
+    public boolean deploy(String developer_id, String service_name, String version) {
+        logger.info("Executing deploy");
+        String result = "" + service_name + "-";
+        return "";
+    }
+
+    /**
+     * List available services.
+     */
+    public String list_services() {
+        logger.info("Executing list_services");
         return null;
     }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Internal Developer Platforms");
         System.out.println("=".repeat(70));
         
-        Object result = internaldeveloperplatforms();
+        Algorithm algo = Algorithm.create();
+        None result = algo.register_service("", null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

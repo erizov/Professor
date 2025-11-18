@@ -1,27 +1,46 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Time Series Storage implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Time Series Storage.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Write data point.
      */
-    public static Object timeseriesstorage(Object... args) {
-        logger.info("Executing time_series_storage");
-        // TODO: Implement time_series_storage based on README.md
+    public Object write(String series_id, Object timestamp, Object value) {
+        logger.info("Executing write");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Read time range.
+     */
+    public List<Object> read(String series_id, Object start_time, Object end_time) {
+        logger.info("Executing read");
         return null;
     }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Time Series Storage");
         System.out.println("=".repeat(70));
         
-        Object result = timeseriesstorage();
+        Algorithm algo = Algorithm.create();
+        None result = algo.write("", null, null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

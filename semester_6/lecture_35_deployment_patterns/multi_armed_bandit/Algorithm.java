@@ -1,31 +1,53 @@
-/**
- * Multi-Armed Bandit implementation.
- * 
- * Category: Deployment
- * Time Complexity: O(requests)
- * Space Complexity: O(arms)
- */
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Multi Armed Bandit implementation.
+ */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
 
+    public Algorithm() {
+        // Initialize
+    }
+
+    /**
+     * Select arm using epsilon-greedy.
+     */
+    public int select_arm(Object epsilon) {
+        logger.info("Executing select_arm");
+        return null;
+    }
+
+    /**
+     * Update arm value.
+     */
+    public Object update(Object arm, Object reward) {
+        logger.info("Executing update");
+        return null;
+    }
+
+    /**
+     * Upper Confidence Bound selection.
+     */
+    public int ucb(Object c) {
+        logger.info("Executing ucb");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
-        long startTime = System.nanoTime();
+        System.out.println("=".repeat(70));
+        System.out.println("Multi Armed Bandit");
+        System.out.println("=".repeat(70));
         
-        logger.info("==".repeat(35));
-        logger.info("Multi-Armed Bandit");
-        logger.info("==".repeat(35));
-        logger.info("Category: Deployment");
-        logger.info("Time: O(requests)");
-        logger.info("Space: O(arms)");
-        logger.info();
-        logger.info("Resource Requirements:");
-        logger.info("  - GPU: Optional");
-        logger.info("  - Memory: Medium");
-        logger.info("==".repeat(35));
-        
-        long endTime = System.nanoTime();
-        double durationMs = (endTime - startTime) / 1_000_000.0;
-        logger.info(String.format("\nExecution time: %.3f ms", durationMs));
+        Algorithm algo = Algorithm.create();
+        int result = algo.select_arm(null);
+        System.out.println("Result: " + result);
+        System.out.println("=".repeat(70));
     }
 }

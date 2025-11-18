@@ -1,27 +1,47 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Data Quality implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
-    /**
-     * Data Quality.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
-     */
-    public static Object dataquality(Object... args) {
-        logger.info("Executing data_quality");
-        // TODO: Implement data_quality based on README.md
-        return null;
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
     }
+
+    /**
+     * Add quality check.
+     */
+    public Object add_check(String name, Object check_func, String severity) {
+        logger.info("Executing add_check");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    /**
+     * Validate data quality.
+     */
+    public Map<String, Object> validate(List<Object> data) {
+        logger.info("Executing validate");
+        String result = "" + check['name'] + ": ";
+        return "";
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Data Quality");
         System.out.println("=".repeat(70));
         
-        Object result = dataquality();
+        Algorithm algo = Algorithm.create();
+        None result = algo.add_check("", null, "");
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

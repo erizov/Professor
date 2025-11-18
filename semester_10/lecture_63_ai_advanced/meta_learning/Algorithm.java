@@ -1,27 +1,45 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Meta Learning implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Meta Learning.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Fast adaptation to new task.
      */
-    public static Object metalearning(Object... args) {
-        logger.info("Executing meta_learning");
-        // TODO: Implement meta_learning based on README.md
+    public Map<String, Object> adapt(List<Object> support_set, Object steps) {
+        logger.info("Executing adapt");
         return null;
     }
+
+    /**
+     * Meta-train on distribution of tasks.
+     */
+    public Object meta_train(List<Object> tasks, Object meta_steps) {
+        logger.info("Executing meta_train");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Meta Learning");
         System.out.println("=".repeat(70));
         
-        Object result = metalearning();
+        Algorithm algo = Algorithm.create();
+        dict result = algo.adapt(null, null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

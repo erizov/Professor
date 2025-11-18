@@ -1,26 +1,54 @@
+import java.util.*;
+import java.util.logging.Logger;
+import java.util.logging.Level;
+
 /**
  * Nosql Consistency implementation.
- * 
- * Nosql Consistency for advanced nosql.
  */
-import java.util.logging.Logger;
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
 
-    
+    public Algorithm() {
+        // Initialize
+    }
+
+    /**
+     * Set consistency level.
+     */
+    public Object set_consistency_level(String level) {
+        logger.info("Executing set_consistency_level");
+        return null;
+    }
+
+    /**
+     * Write with consistency.
+     */
+    public boolean write(String key, Object value) {
+        logger.info("Executing write");
+        return null;
+    }
+
+    /**
+     * Read with consistency.
+     */
+    public Object read(String key) {
+        logger.info("Executing read");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
-        logger.info("=".repeat(70));
-        logger.info("NOSQL CONSISTENCY DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        System.out.println("=".repeat(70));
+        System.out.println("Nosql Consistency");
+        System.out.println("=".repeat(70));
         
-        logger.info("Implementation in progress...");
-        logger.info();
-        
-        logger.info("=".repeat(70));
-        logger.info("\nComplexity Summary:");
-        logger.info("  Time:  Varies");
-        logger.info("  Space: Varies");
-        logger.info("=".repeat(70));
+        Algorithm algo = Algorithm.create();
+        None result = algo.set_consistency_level("");
+        System.out.println("Result: " + result);
+        System.out.println("=".repeat(70));
     }
 }

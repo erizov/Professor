@@ -1,27 +1,46 @@
-import java.util.Arrays;
-import java.util.Random;
-
+import java.util.*;
 import java.util.logging.Logger;
+import java.util.logging.Level;
+
+/**
+ * Quantum Approximate implementation.
+ */
 public class Algorithm {
-    private static final Logger logger = Logger.getLogger
+    private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+
+    public Algorithm() {
+        // Initialize
+    }
+
     /**
-     * Quantum Approximate.
-     * 
-     * @param args Variable arguments
-     * @return Result of the algorithm
+     * Set optimization problem.
      */
-    public static Object quantumapproximate(Object... args) {
-        logger.info("Executing quantum_approximate");
-        // TODO: Implement quantum_approximate based on README.md
+    public Object set_problem(Object cost_hamiltonian, Object mixer_hamiltonian) {
+        logger.info("Executing set_problem");
         return null;
     }
+
+    /**
+     * Optimize using QAOA.
+     */
+    public Map<String, Object> optimize(Object p) {
+        logger.info("Executing optimize");
+        Map<String, Object> result = new HashMap<>();
+        return result;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
         System.out.println("=".repeat(70));
         System.out.println("Quantum Approximate");
         System.out.println("=".repeat(70));
         
-        Object result = quantumapproximate();
+        Algorithm algo = Algorithm.create();
+        None result = algo.set_problem(null, null);
         System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(70));
     }
 }

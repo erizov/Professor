@@ -1,71 +1,54 @@
 import java.util.*;
+import java.util.logging.Logger;
+import java.util.logging.Level;
 
 /**
- * Load Balancing Pattern.
- * 
- * Distributes requests across servers.
+ * Load Balancing implementation.
  */
-import java.util.logging.Logger;
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
 
-    
-    static class Server {
-        String id;
-        int connections;
-        
-        Server(String id) {
-            this.id = id;
-            this.connections = 0;
-        }
+    public Algorithm() {
+        // Initialize
     }
-    
-    static class RoundRobinLoadBalancer {
-        private List<Server> servers;
-        private int currentIndex;
-        
-        RoundRobinLoadBalancer(List<Server> servers) {
-            this.servers = servers;
-            this.currentIndex = 0;
-        }
-        
-        Server selectServer() {
-            if (servers.isEmpty()) return null;
-            Server server = servers.get(currentIndex % servers.size());
-            currentIndex++;
-            return server;
-        }
+
+    /**
+     * Add server.
+     */
+    public Object add_server(String server_id, Object capacity) {
+        logger.info("Executing add_server");
+        Map<String, Object> result = new HashMap<>();
+        return result;
     }
-    
+
+    /**
+     * Select server based on algorithm.
+     */
+    public String select_server() {
+        logger.info("Executing select_server");
+        return null;
+    }
+
+    /**
+     * Route request to server.
+     */
+    public String route_request(Object request) {
+        logger.info("Executing route_request");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
-        long startTime = System.nanoTime();
+        System.out.println("=".repeat(70));
+        System.out.println("Load Balancing");
+        System.out.println("=".repeat(70));
         
-        logger.info("=".repeat(70));
-        logger.info("LOAD BALANCING PATTERN");
-        logger.info("=".repeat(70));
-        logger.info();
-        
-        List<Server> servers = Arrays.asList(
-            new Server("server1"),
-            new Server("server2"),
-            new Server("server3")
-        );
-        
-        RoundRobinLoadBalancer lb = new RoundRobinLoadBalancer(servers);
-        
-        for (int i = 0; i < 5; i++) {
-            Server server = lb.selectServer();
-            server.connections++;
-            logger.info("Request " + (i+1) + " -> " + server.id);
-        }
-        logger.info();
-        
-        long endTime = System.nanoTime();
-        
-        logger.info("=".repeat(70));
-        logger.info("\nPattern: Distributes requests");
-        logger.info("=".repeat(70));
-        System.out.printf("\nTotal time: %.3f ms%n",
-                        (endTime - startTime) / 1_000_000.0);
+        Algorithm algo = Algorithm.create();
+        None result = algo.add_server("", null);
+        System.out.println("Result: " + result);
+        System.out.println("=".repeat(70));
     }
 }

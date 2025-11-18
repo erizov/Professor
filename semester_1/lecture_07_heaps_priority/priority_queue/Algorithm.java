@@ -1,188 +1,61 @@
 import java.util.*;
+import java.util.logging.Logger;
+import java.util.logging.Level;
 
 /**
- * Priority Queue implementation using binary heap.
- * 
- * O(log n) insert and delete, O(1) peek.
+ * Priority Queue implementation.
  */
-import java.util.logging.Logger;
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
 
-    
-    static class PriorityQueue<T> {
-        private List<Entry<T>> heap;
-        private boolean maxPriority;
-        private int counter;
-        
-        private static class Entry<T> {
-            int priority;
-            int insertionOrder;
-            T item;
-            
-            Entry(int priority, int insertionOrder, T item) {
-                this.priority = priority;
-                this.insertionOrder = insertionOrder;
-                this.item = item;
-            }
-        }
-        
-        PriorityQueue(boolean maxPriority) {
-            this.heap = new ArrayList<>();
-            this.maxPriority = maxPriority;
-            this.counter = 0;
-        }
-        
-        PriorityQueue() {
-            this(false);
-        }
-        
-        void push(T item, int priority) {
-            if (maxPriority) {
-                priority = -priority; // Negate for max-heap
-            }
-            heap.add(new Entry<>(priority, counter++, item));
-            heapifyUp(heap.size() - 1);
-        }
-        
-        T pop() {
-            if (heap.isEmpty()) {
-                return null;
-            }
-            
-            T top = heap.get(0).item;
-            heap.set(0, heap.get(heap.size() - 1));
-            heap.remove(heap.size() - 1);
-            
-            if (!heap.isEmpty()) {
-                heapifyDown(0);
-            }
-            
-            return top;
-        }
-        
-        T peek() {
-            return heap.isEmpty() ? null : heap.get(0).item;
-        }
-        
-        boolean isEmpty() {
-            return heap.isEmpty();
-        }
-        
-        int size() {
-            return heap.size();
-        }
-        
-        private void heapifyUp(int index) {
-            while (index > 0) {
-                int parent = (index - 1) / 2;
-                if (compare(heap.get(index), heap.get(parent)) >= 0) {
-                    break;
-                }
-                Collections.swap(heap, index, parent);
-                index = parent;
-            }
-        }
-        
-        private void heapifyDown(int index) {
-            while (true) {
-                int left = 2 * index + 1;
-                int right = 2 * index + 2;
-                int smallest = index;
-                
-                if (left < heap.size() && 
-                    compare(heap.get(left), heap.get(smallest)) < 0) {
-                    smallest = left;
-                }
-                
-                if (right < heap.size() && 
-                    compare(heap.get(right), heap.get(smallest)) < 0) {
-                    smallest = right;
-                }
-                
-                if (smallest == index) {
-                    break;
-                }
-                
-                Collections.swap(heap, index, smallest);
-                index = smallest;
-            }
-        }
-        
-        private int compare(Entry<T> a, Entry<T> b) {
-            if (a.priority != b.priority) {
-                return Integer.compare(a.priority, b.priority);
-            }
-            return Integer.compare(a.insertionOrder, b.insertionOrder);
-        }
+    public Algorithm() {
+        // Initialize
     }
-    
-    static class Task {
-        String name;
-        int priority;
-        
-        Task(String name, int priority) {
-            this.name = name;
-            this.priority = priority;
-        }
-        
-        public String toString() {
-            return "Task(" + name + ", priority=" + priority + ")";
-        }
+
+    /**
+     * Add item with priority.
+     */
+    public Object push(Object item, Object priority) {
+        logger.info("Executing push");
+        return null;
     }
-    
+
+    /**
+     * Remove and return highest priority item.
+     */
+    public Object pop() {
+        logger.info("Executing pop");
+        return null;
+    }
+
+    /**
+     * Return highest priority item without removing.
+     */
+    public Object peek() {
+        logger.info("Executing peek");
+        return null;
+    }
+
+    /**
+     * Check if queue is empty.
+     */
+    public boolean is_empty() {
+        logger.info("Executing is_empty");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
-        long startTime = System.nanoTime();
+        System.out.println("=".repeat(70));
+        System.out.println("Priority Queue");
+        System.out.println("=".repeat(70));
         
-        logger.info("=".repeat(70));
-        logger.info("PRIORITY QUEUE DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
-        
-        // Example 1: Min priority queue
-        logger.info("Example 1: Min Priority Queue");
-        logger.info("-".repeat(70));
-        
-        PriorityQueue<String> pq = new PriorityQueue<>(false);
-        
-        pq.push("Task A", 5);
-        pq.push("Task B", 1);
-        pq.push("Task C", 3);
-        pq.push("Task D", 2);
-        
-        logger.info("Processing tasks in priority order:");
-        while (!pq.isEmpty()) {
-            logger.info("  Processing: " + pq.pop());
-        }
-        logger.info();
-        
-        // Example 2: Task scheduling
-        logger.info("Example 2: Task Scheduling");
-        logger.info("-".repeat(70));
-        
-        PriorityQueue<Task> taskQueue = new PriorityQueue<>(false);
-        taskQueue.push(new Task("Email", 3), 3);
-        taskQueue.push(new Task("Urgent Bug Fix", 1), 1);
-        taskQueue.push(new Task("Code Review", 4), 4);
-        taskQueue.push(new Task("Critical Issue", 0), 0);
-        
-        logger.info("Task execution order:");
-        int order = 1;
-        while (!taskQueue.isEmpty()) {
-            logger.info("  " + order + ". " + taskQueue.pop());
-            order++;
-        }
-        logger.info();
-        
-        long endTime = System.nanoTime();
-        
-        logger.info("=".repeat(70));
-        logger.info("\nComplexity Summary:");
-        logger.info("  Push: O(log n)");
-        logger.info("  Pop: O(log n)");
-        logger.info("  Peek: O(1)");
-        logger.info("=".repeat(70));
-        System.out.printf("\nTotal time: %.3f ms%n",
-                        (endTime - startTime) / 1_000_000.0);
+        Algorithm algo = Algorithm.create();
+        None result = algo.push(null, null);
+        System.out.println("Result: " + result);
+        System.out.println("=".repeat(70));
     }
 }

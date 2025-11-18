@@ -1,89 +1,70 @@
 import java.util.*;
+import java.util.logging.Logger;
+import java.util.logging.Level;
 
 /**
- * Command Design Pattern.
- * 
- * Encapsulates requests as objects.
+ * Command implementation.
  */
-import java.util.logging.Logger;
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
 
-    
-    interface Command {
-        void execute();
-        void undo();
+    public Algorithm() {
+        // Initialize
     }
-    
-    static class Light {
-        private String location;
-        private boolean isOn;
-        
-        Light(String location) {
-            this.location = location;
-            this.isOn = false;
-        }
-        
-        void on() {
-            isOn = true;
-            logger.info(location + " light is ON");
-        }
-        
-        void off() {
-            isOn = false;
-            logger.info(location + " light is OFF");
-        }
+
+    /**
+     * Receiver class.
+     */
+    public Object execute() {
+        logger.info("Executing execute");
+        return null;
     }
-    
-    static class LightOnCommand implements Command {
-        private Light light;
-        
-        LightOnCommand(Light light) {
-            this.light = light;
-        }
-        
-        public void execute() {
-            light.on();
-        }
-        
-        public void undo() {
-            light.off();
-        }
+
+    /**
+     * Concrete command.
+     */
+    public String action(String message) {
+        logger.info("Executing action");
+        String result = "Receiver action: " + message + "";
+        return "";
     }
-    
-    static class LightOffCommand implements Command {
-        private Light light;
-        
-        LightOffCommand(Light light) {
-            this.light = light;
-        }
-        
-        public void execute() {
-            light.off();
-        }
-        
-        public void undo() {
-            light.on();
-        }
+
+    /**
+     * Invoker class.
+     */
+    public Object execute() {
+        logger.info("Executing execute");
+        return null;
     }
-    
+
+    /**
+     * Set command.
+     */
+    public Object set_command(Object command) {
+        logger.info("Executing set_command");
+        return null;
+    }
+
+    /**
+     * Execute command.
+     */
+    public Object execute_command() {
+        logger.info("Executing execute_command");
+        return null;
+    }
+
+    public static Algorithm create() {
+        return new Algorithm();
+    }
+
     public static void main(String[] args) {
-        logger.info("=".repeat(70));
-        logger.info("COMMAND DESIGN PATTERN");
-        logger.info("=".repeat(70));
-        logger.info();
+        System.out.println("=".repeat(70));
+        System.out.println("Command");
+        System.out.println("=".repeat(70));
         
-        Light light = new Light("Living Room");
-        Command onCommand = new LightOnCommand(light);
-        Command offCommand = new LightOffCommand(light);
-        
-        onCommand.execute();
-        offCommand.execute();
-        onCommand.undo();
-        logger.info();
-        
-        logger.info("=".repeat(70));
-        logger.info("\nPattern: Encapsulates requests as objects");
-        logger.info("=".repeat(70));
+        Algorithm algo = Algorithm.create();
+        None result = algo.execute();
+        System.out.println("Result: " + result);
+        System.out.println("=".repeat(70));
     }
 }
