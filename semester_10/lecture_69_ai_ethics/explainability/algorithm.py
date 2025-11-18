@@ -9,19 +9,50 @@ This file contains the implementation of the Explainability algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def explainability(data):
-    """
-    Explainability algorithm implementation.
+class Explainability:
+    """Model explainability (LIME-like simplified)."""
+    def __init__(self):
+        self.explanations: Dict[str, dict] = {}
     
-    Args:
-        data: Input data for the algorithm
+    def explain_prediction(self, model: callable, 
+                          instance: List[float],
+                          feature_names: List[str]) -> dict:
+        """Explain model prediction."""
+        import random
         
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Explainability
-    return data
-
+        # Get original prediction
+        original_pred = model(instance)
+        
+        # Generate perturbed instances
+        n_samples = 100
+        perturbed = []
+        predictions = []
+        
+        for _ in range(n_samples):
+            perturbed_instance = []
+            for val in instance:
+                # Add noise
+                noise = random.gauss(0, val * 0.1) if val != 0 else random.gauss(0, 0.1)
+                perturbed_instance.append(val + noise)
+            perturbed.append(perturbed_instance)
+            predictions.append(model(perturbed_instance))
+        
+        # Calculate feature importance (simplified)
+        import math
+        feature_importance = {}
+        for i, feature_name in enumerate(feature_names):
+            correlations = []
+            for j, (pert, pred) in enumerate(zip(perturbed, predictions)):
+                correlations.append((pert[i], pred))
+            
+            # Simple correlation
+            if correlations:
+                feature_importance[feature_name] = abs(correlations[0][1] - original_pred)
+        
+        return {
+            "prediction": original_pred,
+            "feature_importance": feature_importance
+        }
 
 
 def main() -> None:
