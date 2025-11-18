@@ -9,19 +9,18 @@ This file contains the implementation of the Bellman Ford algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def bellman_ford(data):
-    """
-    Bellman Ford algorithm implementation.
+def bellman_ford(graph: Dict[int, List[tuple]], start: int, n: int) -> Dict[int, int]:
+    """Bellman-Ford shortest path algorithm."""
+    distances = {i: float('inf') for i in range(n)}
+    distances[start] = 0
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Bellman Ford
-    return data
-
+    for _ in range(n - 1):
+        for u in graph:
+            for v, w in graph[u]:
+                if distances[u] != float('inf') and distances[u] + w < distances[v]:
+                    distances[v] = distances[u] + w
+    
+    return distances
 
 
 def main() -> None:

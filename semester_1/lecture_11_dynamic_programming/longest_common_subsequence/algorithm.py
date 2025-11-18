@@ -9,19 +9,19 @@ This file contains the implementation of the Longest Common Subsequence algorith
 from typing import List, Optional, Dict, Set
 
 
-def longest_common_subsequence(data):
-    """
-    Longest Common Subsequence algorithm implementation.
+def longest_common_subsequence(s1: str, s2: str) -> int:
+    """Longest Common Subsequence using dynamic programming."""
+    m, n = len(s1), len(s2)
+    dp = [[0] * (n + 1) for _ in range(m + 1)]
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Longest Common Subsequence
-    return data
-
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
+            if s1[i - 1] == s2[j - 1]:
+                dp[i][j] = dp[i - 1][j - 1] + 1
+            else:
+                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
+    
+    return dp[m][n]
 
 
 def main() -> None:

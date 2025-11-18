@@ -9,19 +9,32 @@ This file contains the implementation of the Priority Queue algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def priority_queue(data):
-    """
-    Priority Queue algorithm implementation.
+class PriorityQueue:
+    """Priority queue implementation using heap."""
+    def __init__(self):
+        self.heap: List[tuple] = []
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Priority Queue
-    return data
-
+    def push(self, item: any, priority: int) -> None:
+        """Add item with priority."""
+        from heapq import heappush
+        heappush(self.heap, (priority, item))
+    
+    def pop(self) -> Optional[any]:
+        """Remove and return highest priority item."""
+        from heapq import heappop
+        if self.heap:
+            return heappop(self.heap)[1]
+        return None
+    
+    def peek(self) -> Optional[any]:
+        """Return highest priority item without removing."""
+        if self.heap:
+            return self.heap[0][1]
+        return None
+    
+    def is_empty(self) -> bool:
+        """Check if queue is empty."""
+        return len(self.heap) == 0
 
 
 def main() -> None:

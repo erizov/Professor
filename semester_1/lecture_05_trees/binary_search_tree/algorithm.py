@@ -9,19 +9,44 @@ This file contains the implementation of the Binary Search Tree algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def binary_search_tree(data):
-    """
-    Binary Search Tree algorithm implementation.
-    
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Binary Search Tree
-    return data
+class BSTNode:
+    """Binary Search Tree node."""
+    def __init__(self, val: int):
+        self.val = val
+        self.left: Optional['BSTNode'] = None
+        self.right: Optional['BSTNode'] = None
 
+class BinarySearchTree:
+    """Binary Search Tree implementation."""
+    def __init__(self):
+        self.root: Optional[BSTNode] = None
+    
+    def insert(self, val: int) -> None:
+        """Insert value into BST."""
+        self.root = self._insert(self.root, val)
+    
+    def _insert(self, root: Optional[BSTNode], val: int) -> BSTNode:
+        if root is None:
+            return BSTNode(val)
+        if val < root.val:
+            root.left = self._insert(root.left, val)
+        elif val > root.val:
+            root.right = self._insert(root.right, val)
+        return root
+    
+    def search(self, val: int) -> bool:
+        """Search for value in BST."""
+        return self._search(self.root, val)
+    
+    def _search(self, root: Optional[BSTNode], val: int) -> bool:
+        if root is None:
+            return False
+        if root.val == val:
+            return True
+        elif val < root.val:
+            return self._search(root.left, val)
+        else:
+            return self._search(root.right, val)
 
 
 def main() -> None:

@@ -9,19 +9,39 @@ This file contains the implementation of the Binary Tree algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def binary_tree(data):
-    """
-    Binary Tree algorithm implementation.
-    
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Binary Tree
-    return data
+class TreeNode:
+    """Binary tree node."""
+    def __init__(self, val: int = 0):
+        self.val = val
+        self.left: Optional['TreeNode'] = None
+        self.right: Optional['TreeNode'] = None
 
+def inorder_traversal(root: Optional[TreeNode]) -> List[int]:
+    """Inorder traversal of binary tree."""
+    result = []
+    if root:
+        result.extend(inorder_traversal(root.left))
+        result.append(root.val)
+        result.extend(inorder_traversal(root.right))
+    return result
+
+def preorder_traversal(root: Optional[TreeNode]) -> List[int]:
+    """Preorder traversal of binary tree."""
+    result = []
+    if root:
+        result.append(root.val)
+        result.extend(preorder_traversal(root.left))
+        result.extend(preorder_traversal(root.right))
+    return result
+
+def postorder_traversal(root: Optional[TreeNode]) -> List[int]:
+    """Postorder traversal of binary tree."""
+    result = []
+    if root:
+        result.extend(postorder_traversal(root.left))
+        result.extend(postorder_traversal(root.right))
+        result.append(root.val)
+    return result
 
 
 def main() -> None:
