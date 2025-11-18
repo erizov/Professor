@@ -42,6 +42,7 @@ def confidential_transactions(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Confidential Transactions implementation.
     

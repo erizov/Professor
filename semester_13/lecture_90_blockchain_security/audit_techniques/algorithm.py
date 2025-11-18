@@ -42,6 +42,7 @@ def audit_techniques(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Audit Techniques implementation.
     
