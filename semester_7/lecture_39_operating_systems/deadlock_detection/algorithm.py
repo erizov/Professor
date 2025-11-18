@@ -9,19 +9,43 @@ This file contains the implementation of the Deadlock Detection algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def deadlock_detection(data):
-    """
-    Deadlock Detection algorithm implementation.
+class DeadlockDetection:
+    """Deadlock detection algorithm."""
+    def __init__(self):
+        self.wait_for_graph: Dict[int, List[int]] = {}
     
-    Args:
-        data: Input data for the algorithm
+    def add_wait(self, process: int, resource: int) -> None:
+        """Add wait relationship."""
+        if process not in self.wait_for_graph:
+            self.wait_for_graph[process] = []
+        self.wait_for_graph[process].append(resource)
+    
+    def detect_deadlock(self) -> List[List[int]]:
+        """Detect deadlocks using cycle detection."""
+        visited = set()
+        rec_stack = set()
+        cycles = []
         
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Deadlock Detection
-    return data
-
+        def dfs(node: int, path: List[int]) -> None:
+            visited.add(node)
+            rec_stack.add(node)
+            path.append(node)
+            
+            for neighbor in self.wait_for_graph.get(node, []):
+                if neighbor not in visited:
+                    dfs(neighbor, path[:])
+                elif neighbor in rec_stack:
+                    # Found cycle
+                    cycle_start = path.index(neighbor)
+                    cycles.append(path[cycle_start:] + [neighbor])
+            
+            rec_stack.remove(node)
+        
+        for node in self.wait_for_graph:
+            if node not in visited:
+                dfs(node, [])
+        
+        return cycles
 
 
 def main() -> None:

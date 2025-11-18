@@ -9,19 +9,26 @@ This file contains the implementation of the Dependency Inversion algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def dependency_inversion(data):
-    """
-    Dependency Inversion algorithm implementation.
+class DependencyInversion:
+    """Dependency inversion principle implementation."""
+    def __init__(self):
+        self.interfaces: Dict[str, List[str]] = {}
+        self.implementations: Dict[str, str] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Dependency Inversion
-    return data
-
+    def define_interface(self, interface_name: str, 
+                        methods: List[str]) -> None:
+        """Define interface."""
+        self.interfaces[interface_name] = methods
+    
+    def implement_interface(self, class_name: str, 
+                           interface_name: str) -> None:
+        """Implement interface."""
+        self.implementations[class_name] = interface_name
+    
+    def get_implementations(self, interface_name: str) -> List[str]:
+        """Get all implementations of interface."""
+        return [cls for cls, iface in self.implementations.items() 
+                if iface == interface_name]
 
 
 def main() -> None:

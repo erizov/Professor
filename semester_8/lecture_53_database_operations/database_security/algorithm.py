@@ -9,19 +9,30 @@ This file contains the implementation of the Database Security algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def database_security(data):
-    """
-    Database Security algorithm implementation.
+class DatabaseSecurity:
+    """Database security manager."""
+    def __init__(self):
+        self.users: Dict[str, dict] = {}
+        self.permissions: Dict[str, List[str]] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Database Security
-    return data
-
+    def add_user(self, username: str, password_hash: str, 
+                role: str) -> None:
+        """Add user."""
+        self.users[username] = {
+            'password_hash': password_hash,
+            'role': role
+        }
+    
+    def grant_permission(self, username: str, permission: str) -> None:
+        """Grant permission."""
+        if username not in self.permissions:
+            self.permissions[username] = []
+        if permission not in self.permissions[username]:
+            self.permissions[username].append(permission)
+    
+    def check_permission(self, username: str, permission: str) -> bool:
+        """Check permission."""
+        return permission in self.permissions.get(username, [])
 
 
 def main() -> None:

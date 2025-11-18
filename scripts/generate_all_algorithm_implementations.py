@@ -12181,7 +12181,7 @@ def hessian(f: callable, x: List[float], h: float = 1e-5) -> List[List[float]]:
     def rollback(self, tx_id: str) -> None:
         """Rollback transaction."""
         if tx_id in self.transactions:
-            self.transactions[tx_id]['status'] = 'rolled_back'''',
+            self.transactions[tx_id]['status'] = 'rolled_back' ''',
     
     'doc_analytics': '''class DocAnalytics:
     """Document analytics."""

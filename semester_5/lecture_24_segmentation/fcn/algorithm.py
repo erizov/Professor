@@ -9,19 +9,29 @@ This file contains the implementation of the Fcn algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def fcn(data):
-    """
-    Fcn algorithm implementation.
+class FCN:
+    """Fully Convolutional Network (simplified)."""
+    def __init__(self, num_classes: int = 10):
+        self.num_classes = num_classes
+        self.layers: List[dict] = []
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Fcn
-    return data
-
+    def add_conv_layer(self, filters: int, kernel_size: int) -> None:
+        """Add convolutional layer."""
+        self.layers.append({
+            'type': 'conv',
+            'filters': filters,
+            'kernel_size': kernel_size
+        })
+    
+    def forward(self, x: List[List[float]]) -> List[float]:
+        """Forward pass (simplified)."""
+        # Simplified: return class probabilities
+        return [1.0 / self.num_classes] * self.num_classes
+    
+    def predict(self, x: List[List[float]]) -> int:
+        """Predict class."""
+        probs = self.forward(x)
+        return probs.index(max(probs))
 
 
 def main() -> None:

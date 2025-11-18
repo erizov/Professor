@@ -9,19 +9,28 @@ This file contains the implementation of the Denormalization algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def denormalization(data):
-    """
-    Denormalization algorithm implementation.
+class Denormalization:
+    """Database denormalization."""
+    def __init__(self):
+        self.tables: Dict[str, dict] = {}
     
-    Args:
-        data: Input data for the algorithm
+    def denormalize(self, table_name: str, 
+                   denormalized_columns: List[str]) -> dict:
+        """Denormalize table."""
+        if table_name not in self.tables:
+            return {}
         
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Denormalization
-    return data
-
+        table = self.tables[table_name]
+        denormalized = {
+            'original_table': table_name,
+            'denormalized_columns': denormalized_columns,
+            'benefits': ['faster_reads', 'reduced_joins']
+        }
+        return denormalized
+    
+    def add_table(self, name: str, schema: dict) -> None:
+        """Add table."""
+        self.tables[name] = schema
 
 
 def main() -> None:
