@@ -1,38 +1,43 @@
 # Knapsack
 
-**Category**: Algorithm
+**Category**: Dynamic Programming
 
 ## Overview
 
-Knapsack is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
-
-## Description
-
-This algorithm is particularly useful for solving problems related to [specific domain]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+The knapsack problem is a problem in combinatorial optimization: Given a set of items, each with a weight and a value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible.
 
 ## How It Works
 
-[Algorithm description to be added]
+1. Use dynamic programming: create 2D table
+2. For each item, consider including or excluding it
+3. If weight allows, take maximum of (value with item, value without item)
+4. Fill table bottom-up
+5. Trace back to find selected items
 
 ## Complexity Analysis
 
-- **Time Complexity**: To be determined based on implementation
-- **Space Complexity**: To be determined based on implementation
+Time: O(n × W) where n is items, W is capacity. Space: O(n × W)
 
 ## Use Cases
 
-- [Use case 1]
-- [Use case 2]
-- [Use case 3]
+Resource allocation, portfolio optimization, cutting stock problem, budget allocation
+
+## Algorithm Details
+
+### Key Characteristics
+
+- **Stability**: Depends on implementation
+- **In-place**: Depends on implementation
+- **Adaptive**: Depends on implementation
 
 ## Implementation
 
-See `algorithm.py` for the complete implementation with examples.
+See `algorithm.py` for the complete implementation with examples and performance analysis.
 
 ## References
 
-- Wikipedia: Knapsack
-- Additional resources can be found in academic literature
+- Wikipedia: [Knapsack problem](https://en.wikipedia.org/wiki/Knapsack_problem)
+- Additional resources available in academic literature and algorithm textbooks
 
 ## Examples
 
@@ -40,3 +45,11 @@ Run the algorithm with:
 ```bash
 python algorithm.py
 ```
+
+## Learning Objectives
+
+By studying this algorithm, you will learn:
+1. The fundamental approach and logic
+2. Time and space complexity analysis
+3. When to use this algorithm vs alternatives
+4. Implementation details and optimizations

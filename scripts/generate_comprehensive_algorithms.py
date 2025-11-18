@@ -166,6 +166,102 @@ ALGORITHM_DESCRIPTIONS: Dict[str, Dict[str, str]] = {
         'wikipedia': 'Interpolation_search',
         'category': 'Searching'
     },
+    'avl_tree': {
+        'description': '''An AVL tree (named after inventors Adelson-Velsky and Landis) is a self-balancing binary search tree. In an AVL tree, the heights of the two child subtrees of any node differ by at most one; if at any time they differ by more than one, rebalancing is done to restore this property.''',
+        'how_it_works': '''1. Insert/search/delete like a regular BST
+2. After each operation, check balance factor (height difference)
+3. If imbalance detected, perform rotations (left, right, or double)
+4. Rotations restore AVL property while maintaining BST order
+5. Balance factor must be -1, 0, or 1 for all nodes''',
+        'complexity': 'Time: O(log n) for all operations. Space: O(n)',
+        'use_cases': 'When guaranteed O(log n) performance is needed, database indexing, priority queues',
+        'wikipedia': 'AVL_tree',
+        'category': 'Data Structure'
+    },
+    'binary_search_tree': {
+        'description': '''A binary search tree (BST) is a binary tree data structure where each node has a comparable key and satisfies the restriction that the key in any node is larger than the keys in all nodes in that node's left subtree and smaller than the keys in all nodes in that node's right subtree.''',
+        'how_it_works': '''1. Start at root
+2. Compare value with current node
+3. If smaller, go left; if larger, go right
+4. If equal, found; if null, not found
+5. Insert at null position; delete requires rebalancing''',
+        'complexity': 'Time: O(log n) average, O(n) worst case. Space: O(n)',
+        'use_cases': 'Dynamic sets, priority queues, symbol tables, database indexing',
+        'wikipedia': 'Binary_search_tree',
+        'category': 'Data Structure'
+    },
+    'dijkstra': {
+        'description': '''Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a weighted graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.''',
+        'how_it_works': '''1. Initialize distances: source = 0, all others = infinity
+2. Use priority queue to track unvisited nodes
+3. Extract node with minimum distance
+4. Relax edges: update distances to neighbors if shorter path found
+5. Mark node as visited, repeat until all nodes processed''',
+        'complexity': 'Time: O((V + E) log V) with binary heap. Space: O(V)',
+        'use_cases': 'GPS navigation, network routing, social networks, game pathfinding',
+        'wikipedia': "Dijkstra's_algorithm",
+        'category': 'Graph Algorithm'
+    },
+    'bfs': {
+        'description': '''Breadth-first search (BFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the tree root (or some arbitrary node of a graph) and explores all nodes at the present depth prior to moving on to nodes at the next depth level.''',
+        'how_it_works': '''1. Start from source node, mark as visited
+2. Add to queue
+3. While queue not empty: dequeue node, visit it
+4. Add all unvisited neighbors to queue
+5. Mark neighbors as visited, repeat''',
+        'complexity': 'Time: O(V + E) where V is vertices, E is edges. Space: O(V)',
+        'use_cases': 'Shortest path in unweighted graphs, level-order tree traversal, social networks, web crawling',
+        'wikipedia': 'Breadth-first_search',
+        'category': 'Graph Algorithm'
+    },
+    'dfs': {
+        'description': '''Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node and explores as far as possible along each branch before backtracking.''',
+        'how_it_works': '''1. Start from source node, mark as visited
+2. Recursively visit unvisited neighbors
+3. Explore as deep as possible before backtracking
+4. Use stack (recursion or explicit) to track path
+5. Mark nodes as visited to avoid cycles''',
+        'complexity': 'Time: O(V + E) where V is vertices, E is edges. Space: O(V)',
+        'use_cases': 'Topological sorting, cycle detection, maze solving, path finding, connected components',
+        'wikipedia': 'Depth-first_search',
+        'category': 'Graph Algorithm'
+    },
+    'kmp': {
+        'description': '''The Knuth–Morris–Pratt (KMP) algorithm is a string-searching algorithm that searches for occurrences of a "word" W within a main "text string" S by employing the observation that when a mismatch occurs, the word itself embodies sufficient information to determine where the next match could begin.''',
+        'how_it_works': '''1. Preprocess pattern to create longest prefix suffix (LPS) array
+2. Match pattern with text character by character
+3. On mismatch, use LPS array to skip characters already matched
+4. Avoid re-checking characters that are known to match
+5. Continue until pattern found or text exhausted''',
+        'complexity': 'Time: O(n + m) where n is text length, m is pattern length. Space: O(m)',
+        'use_cases': 'Text editors, search engines, DNA sequence matching, plagiarism detection',
+        'wikipedia': 'Knuth–Morris–Pratt_algorithm',
+        'category': 'String Algorithm'
+    },
+    'knapsack': {
+        'description': '''The knapsack problem is a problem in combinatorial optimization: Given a set of items, each with a weight and a value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible.''',
+        'how_it_works': '''1. Use dynamic programming: create 2D table
+2. For each item, consider including or excluding it
+3. If weight allows, take maximum of (value with item, value without item)
+4. Fill table bottom-up
+5. Trace back to find selected items''',
+        'complexity': 'Time: O(n × W) where n is items, W is capacity. Space: O(n × W)',
+        'use_cases': 'Resource allocation, portfolio optimization, cutting stock problem, budget allocation',
+        'wikipedia': 'Knapsack_problem',
+        'category': 'Dynamic Programming'
+    },
+    'longest_common_subsequence': {
+        'description': '''The longest common subsequence (LCS) problem is the problem of finding the longest subsequence common to all sequences in a set of sequences. It differs from the longest common substring problem: unlike substrings, subsequences are not required to occupy consecutive positions within the original sequences.''',
+        'how_it_works': '''1. Create 2D DP table
+2. Compare characters of both strings
+3. If characters match, LCS[i][j] = 1 + LCS[i-1][j-1]
+4. If no match, LCS[i][j] = max(LCS[i-1][j], LCS[i][j-1])
+5. Trace back to construct actual LCS string''',
+        'complexity': 'Time: O(m × n) where m, n are string lengths. Space: O(m × n)',
+        'use_cases': 'Version control (diff), DNA sequence comparison, plagiarism detection, text similarity',
+        'wikipedia': 'Longest_common_subsequence_problem',
+        'category': 'Dynamic Programming'
+    },
 }
 
 
