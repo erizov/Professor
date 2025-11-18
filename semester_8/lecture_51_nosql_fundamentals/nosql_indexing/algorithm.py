@@ -9,19 +9,44 @@ This file contains the implementation of the Nosql Indexing algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def nosql_indexing(data):
-    """
-    Nosql Indexing algorithm implementation.
+class NoSQLIndexing:
+    """NoSQL indexing."""
+    def __init__(self):
+        self.indexes: Dict[str, Dict[str, List[str]]] = {}
+        self.collections: Dict[str, List[dict]] = {}
     
-    Args:
-        data: Input data for the algorithm
+    def create_index(self, collection: str, field: str) -> None:
+        """Create index."""
+        if collection not in self.indexes:
+            self.indexes[collection] = {}
+        self.indexes[collection][field] = []
+    
+    def build_index(self, collection: str, field: str) -> None:
+        """Build index."""
+        if collection not in self.collections:
+            return
         
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Nosql Indexing
-    return data
-
+        if collection not in self.indexes:
+            self.indexes[collection] = {}
+        
+        index = {}
+        for i, doc in enumerate(self.collections[collection]):
+            value = doc.get(field)
+            if value not in index:
+                index[value] = []
+            index[value].append(i)
+        
+        self.indexes[collection][field] = index
+    
+    def query_with_index(self, collection: str, field: str, 
+                        value: any) -> List[dict]:
+        """Query using index."""
+        if collection in self.indexes and field in self.indexes[collection]:
+            index = self.indexes[collection][field]
+            if isinstance(index, dict) and value in index:
+                indices = index[value]
+                return [self.collections[collection][i] for i in indices]
+        return []
 
 
 def main() -> None:

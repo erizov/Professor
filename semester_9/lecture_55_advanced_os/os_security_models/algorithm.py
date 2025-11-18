@@ -9,19 +9,38 @@ This file contains the implementation of the Os Security Models algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def os_security_models(data):
-    """
-    Os Security Models algorithm implementation.
+class OSSecurityModel:
+    """Operating system security model."""
+    def __init__(self):
+        self.subjects: Dict[str, dict] = {}
+        self.objects: Dict[str, dict] = {}
+        self.permissions: Dict[tuple, List[str]] = {}
     
-    Args:
-        data: Input data for the algorithm
+    def create_subject(self, subject_id: str, level: int) -> None:
+        """Create security subject."""
+        self.subjects[subject_id] = {
+            'level': level,
+            'clearance': level
+        }
+    
+    def create_object(self, object_id: str, level: int) -> None:
+        """Create security object."""
+        self.objects[object_id] = {
+            'level': level,
+            'classification': level
+        }
+    
+    def check_access(self, subject_id: str, object_id: str, 
+                    permission: str) -> bool:
+        """Check access using Bell-LaPadula model."""
+        if subject_id not in self.subjects or object_id not in self.objects:
+            return False
         
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Os Security Models
-    return data
-
+        subject_level = self.subjects[subject_id]['level']
+        object_level = self.objects[object_id]['level']
+        
+        # Simple security check: subject level >= object level
+        return subject_level >= object_level
 
 
 def main() -> None:

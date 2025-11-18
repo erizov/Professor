@@ -9,19 +9,31 @@ This file contains the implementation of the Open Closed algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def open_closed(data):
-    """
-    Open Closed algorithm implementation.
+class OpenClosed:
+    """Open-Closed principle."""
+    def __init__(self):
+        self.base_classes: Dict[str, List[str]] = {}
+        self.extensions: Dict[str, str] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Open Closed
-    return data
-
+    def define_base(self, base_name: str, methods: List[str]) -> None:
+        """Define base class."""
+        self.base_classes[base_name] = methods
+    
+    def extend(self, extension_name: str, base_name: str, 
+              new_methods: List[str]) -> None:
+        """Extend base class."""
+        self.extensions[extension_name] = {
+            'base': base_name,
+            'methods': new_methods
+        }
+    
+    def get_methods(self, class_name: str) -> List[str]:
+        """Get all methods for class."""
+        if class_name in self.extensions:
+            ext = self.extensions[class_name]
+            base_methods = self.base_classes.get(ext['base'], [])
+            return base_methods + ext['methods']
+        return self.base_classes.get(class_name, [])
 
 
 def main() -> None:

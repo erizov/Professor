@@ -9,19 +9,40 @@ This file contains the implementation of the Multi Hop Rag algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def multi_hop_rag(data):
-    """
-    Multi Hop Rag algorithm implementation.
+class MultiHopRAG:
+    """Multi-hop RAG system."""
+    def __init__(self):
+        self.knowledge_base: Dict[str, dict] = {}
+        self.retrievers: List[callable] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Multi Hop Rag
-    return data
-
+    def add_document(self, doc_id: str, content: str, 
+                    metadata: dict = None) -> None:
+        """Add document."""
+        self.knowledge_base[doc_id] = {
+            'content': content,
+            'metadata': metadata or {}
+        }
+    
+    def retrieve(self, query: str, hop: int = 1) -> List[dict]:
+        """Multi-hop retrieval."""
+        results = []
+        for doc_id, doc in self.knowledge_base.items():
+            if query.lower() in doc['content'].lower():
+                results.append({
+                    'doc_id': doc_id,
+                    'content': doc['content'],
+                    'hop': hop
+                })
+        return results
+    
+    def answer(self, query: str, max_hops: int = 3) -> str:
+        """Answer query with multi-hop reasoning."""
+        context = []
+        for hop in range(1, max_hops + 1):
+            retrieved = self.retrieve(query, hop)
+            context.extend(retrieved)
+        # Simplified: return answer
+        return "Answer based on retrieved context"
 
 
 def main() -> None:
