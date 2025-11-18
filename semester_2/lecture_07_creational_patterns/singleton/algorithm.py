@@ -9,19 +9,19 @@ This file contains the implementation of the Singleton algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def singleton(data):
-    """
-    Singleton algorithm implementation.
+class Singleton:
+    """Singleton design pattern implementation."""
+    _instance = None
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Singleton
-    return data
-
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super(Singleton, cls).__new__(cls)
+        return cls._instance
+    
+    def __init__(self):
+        if not hasattr(self, 'initialized'):
+            self.value = None
+            self.initialized = True
 
 
 def main() -> None:

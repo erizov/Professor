@@ -9,19 +9,31 @@ This file contains the implementation of the Factory algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def factory(data):
-    """
-    Factory algorithm implementation.
-    
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Factory
-    return data
+class Product:
+    """Base product class."""
+    def operation(self) -> str:
+        return "Product operation"
 
+class ConcreteProductA(Product):
+    """Concrete product A."""
+    def operation(self) -> str:
+        return "ConcreteProductA operation"
+
+class ConcreteProductB(Product):
+    """Concrete product B."""
+    def operation(self) -> str:
+        return "ConcreteProductB operation"
+
+class Factory:
+    """Factory pattern implementation."""
+    @staticmethod
+    def create_product(product_type: str) -> Product:
+        if product_type == "A":
+            return ConcreteProductA()
+        elif product_type == "B":
+            return ConcreteProductB()
+        else:
+            raise ValueError(f"Unknown product type: {product_type}")
 
 
 def main() -> None:

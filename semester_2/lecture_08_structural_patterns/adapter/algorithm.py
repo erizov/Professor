@@ -9,19 +9,23 @@ This file contains the implementation of the Adapter algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def adapter(data):
-    """
-    Adapter algorithm implementation.
-    
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Adapter
-    return data
+class Target:
+    """Target interface."""
+    def request(self) -> str:
+        return "Target request"
 
+class Adaptee:
+    """Adaptee class with incompatible interface."""
+    def specific_request(self) -> str:
+        return "Adaptee specific request"
+
+class Adapter(Target):
+    """Adapter that adapts Adaptee to Target interface."""
+    def __init__(self, adaptee: Adaptee):
+        self.adaptee = adaptee
+    
+    def request(self) -> str:
+        return f"Adapter: {self.adaptee.specific_request()}"
 
 
 def main() -> None:

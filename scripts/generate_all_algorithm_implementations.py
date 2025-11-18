@@ -1351,6 +1351,324 @@ def gradient_descent_multi(f, df, x0: List[float], learning_rate: float = 0.01,
                 text_hash += mod
     
     return result''',
+    
+    'singleton': '''class Singleton:
+    """Singleton design pattern implementation."""
+    _instance = None
+    
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super(Singleton, cls).__new__(cls)
+        return cls._instance
+    
+    def __init__(self):
+        if not hasattr(self, 'initialized'):
+            self.value = None
+            self.initialized = True''',
+    
+    'factory': '''class Product:
+    """Base product class."""
+    def operation(self) -> str:
+        return "Product operation"
+
+class ConcreteProductA(Product):
+    """Concrete product A."""
+    def operation(self) -> str:
+        return "ConcreteProductA operation"
+
+class ConcreteProductB(Product):
+    """Concrete product B."""
+    def operation(self) -> str:
+        return "ConcreteProductB operation"
+
+class Factory:
+    """Factory pattern implementation."""
+    @staticmethod
+    def create_product(product_type: str) -> Product:
+        if product_type == "A":
+            return ConcreteProductA()
+        elif product_type == "B":
+            return ConcreteProductB()
+        else:
+            raise ValueError(f"Unknown product type: {product_type}")''',
+    
+    'observer': '''class Observer:
+    """Observer interface."""
+    def update(self, message: str) -> None:
+        pass
+
+class Subject:
+    """Subject class that notifies observers."""
+    def __init__(self):
+        self._observers: List[Observer] = []
+        self._state = None
+    
+    def attach(self, observer: Observer) -> None:
+        """Attach observer."""
+        if observer not in self._observers:
+            self._observers.append(observer)
+    
+    def detach(self, observer: Observer) -> None:
+        """Detach observer."""
+        self._observers.remove(observer)
+    
+    def notify(self, message: str) -> None:
+        """Notify all observers."""
+        for observer in self._observers:
+            observer.update(message)
+    
+    def set_state(self, state: any) -> None:
+        """Set state and notify observers."""
+        self._state = state
+        self.notify(f"State changed to: {state}")
+
+class ConcreteObserver(Observer):
+    """Concrete observer implementation."""
+    def __init__(self, name: str):
+        self.name = name
+    
+    def update(self, message: str) -> None:
+        print(f"{self.name} received: {message}")''',
+    
+    'strategy': '''class Strategy:
+    """Strategy interface."""
+    def execute(self, data: List[int]) -> List[int]:
+        pass
+
+class BubbleSortStrategy(Strategy):
+    """Bubble sort strategy."""
+    def execute(self, data: List[int]) -> List[int]:
+        arr = data.copy()
+        n = len(arr)
+        for i in range(n):
+            for j in range(0, n - i - 1):
+                if arr[j] > arr[j + 1]:
+                    arr[j], arr[j + 1] = arr[j + 1], arr[j]
+        return arr
+
+class QuickSortStrategy(Strategy):
+    """Quick sort strategy."""
+    def execute(self, data: List[int]) -> List[int]:
+        if len(data) <= 1:
+            return data
+        pivot = data[len(data) // 2]
+        left = [x for x in data if x < pivot]
+        middle = [x for x in data if x == pivot]
+        right = [x for x in data if x > pivot]
+        return QuickSortStrategy().execute(left) + middle + QuickSortStrategy().execute(right)
+
+class Context:
+    """Context that uses strategy."""
+    def __init__(self, strategy: Strategy):
+        self.strategy = strategy
+    
+    def set_strategy(self, strategy: Strategy) -> None:
+        """Set strategy."""
+        self.strategy = strategy
+    
+    def execute_strategy(self, data: List[int]) -> List[int]:
+        """Execute strategy."""
+        return self.strategy.execute(data)''',
+    
+    'adapter': '''class Target:
+    """Target interface."""
+    def request(self) -> str:
+        return "Target request"
+
+class Adaptee:
+    """Adaptee class with incompatible interface."""
+    def specific_request(self) -> str:
+        return "Adaptee specific request"
+
+class Adapter(Target):
+    """Adapter that adapts Adaptee to Target interface."""
+    def __init__(self, adaptee: Adaptee):
+        self.adaptee = adaptee
+    
+    def request(self) -> str:
+        return f"Adapter: {self.adaptee.specific_request()}"''',
+    
+    'decorator': '''class Component:
+    """Component interface."""
+    def operation(self) -> str:
+        return "Component"
+
+class ConcreteComponent(Component):
+    """Concrete component."""
+    def operation(self) -> str:
+        return "ConcreteComponent"
+
+class Decorator(Component):
+    """Base decorator."""
+    def __init__(self, component: Component):
+        self.component = component
+    
+    def operation(self) -> str:
+        return self.component.operation()
+
+class ConcreteDecoratorA(Decorator):
+    """Concrete decorator A."""
+    def operation(self) -> str:
+        return f"ConcreteDecoratorA({self.component.operation()})"
+
+class ConcreteDecoratorB(Decorator):
+    """Concrete decorator B."""
+    def operation(self) -> str:
+        return f"ConcreteDecoratorB({self.component.operation()})"''',
+    
+    'fibonacci_heap': '''class FibonacciHeapNode:
+    """Fibonacci heap node."""
+    def __init__(self, key: int):
+        self.key = key
+        self.degree = 0
+        self.parent = None
+        self.child = None
+        self.left = self
+        self.right = self
+        self.mark = False
+
+class FibonacciHeap:
+    """Fibonacci heap implementation (simplified)."""
+    def __init__(self):
+        self.min_node = None
+        self.n = 0
+    
+    def insert(self, key: int) -> FibonacciHeapNode:
+        """Insert key into heap."""
+        node = FibonacciHeapNode(key)
+        if self.min_node is None:
+            self.min_node = node
+        else:
+            # Add to root list
+            node.left = self.min_node
+            node.right = self.min_node.right
+            self.min_node.right.left = node
+            self.min_node.right = node
+            if key < self.min_node.key:
+                self.min_node = node
+        self.n += 1
+        return node
+    
+    def extract_min(self) -> Optional[int]:
+        """Extract minimum key."""
+        if self.min_node is None:
+            return None
+        
+        min_key = self.min_node.key
+        # Simplified - full implementation needs consolidation
+        self.n -= 1
+        return min_key''',
+    
+    'consistent_hashing': '''class ConsistentHash:
+    """Consistent hashing implementation."""
+    def __init__(self, nodes: List[str], replicas: int = 3):
+        self.replicas = replicas
+        self.ring: Dict[int, str] = {}
+        self.sorted_keys: List[int] = []
+        
+        for node in nodes:
+            for i in range(replicas):
+                key = self._hash(f"{node}:{i}")
+                self.ring[key] = node
+                self.sorted_keys.append(key)
+        
+        self.sorted_keys.sort()
+    
+    def _hash(self, key: str) -> int:
+        """Hash function."""
+        return hash(key) % (2 ** 32)
+    
+    def get_node(self, key: str) -> Optional[str]:
+        """Get node for given key."""
+        if not self.ring:
+            return None
+        
+        hash_key = self._hash(key)
+        
+        # Find first node with hash >= hash_key
+        for ring_key in self.sorted_keys:
+            if ring_key >= hash_key:
+                return self.ring[ring_key]
+        
+        # Wrap around
+        return self.ring[self.sorted_keys[0]]''',
+    
+    'leader_election': '''class LeaderElection:
+    """Leader election algorithm (simplified)."""
+    def __init__(self, node_id: int, nodes: List[int]):
+        self.node_id = node_id
+        self.nodes = sorted(nodes)
+        self.leader = None
+    
+    def elect_leader(self) -> int:
+        """Elect leader (highest ID wins)."""
+        self.leader = max(self.nodes)
+        return self.leader
+    
+    def is_leader(self) -> bool:
+        """Check if this node is leader."""
+        return self.node_id == self.leader
+    
+    def get_leader(self) -> Optional[int]:
+        """Get current leader."""
+        return self.leader''',
+    
+    'two_phase_commit': '''class TwoPhaseCommit:
+    """Two-phase commit protocol (simplified)."""
+    def __init__(self, participants: List[str]):
+        self.participants = participants
+        self.votes: Dict[str, str] = {}
+    
+    def prepare(self, transaction_id: str) -> bool:
+        """Phase 1: Prepare phase."""
+        # All participants vote
+        for participant in self.participants:
+            # Simplified - in real implementation, send prepare message
+            vote = "YES"  # Simplified
+            self.votes[participant] = vote
+        
+        # Check if all voted YES
+        return all(vote == "YES" for vote in self.votes.values())
+    
+    def commit(self, transaction_id: str) -> bool:
+        """Phase 2: Commit phase."""
+        if self.prepare(transaction_id):
+            # All participants commit
+            for participant in self.participants:
+                # Simplified - in real implementation, send commit message
+                pass
+            return True
+        else:
+            # Abort
+            for participant in self.participants:
+                # Simplified - in real implementation, send abort message
+                pass
+            return False''',
+    
+    'gossip_protocol': '''class GossipProtocol:
+    """Gossip protocol implementation (simplified)."""
+    def __init__(self, node_id: str, nodes: List[str]):
+        self.node_id = node_id
+        self.nodes = nodes
+        self.state: Dict[str, any] = {}
+        self.known_states: Dict[str, Dict[str, any]] = {node: {} for node in nodes}
+    
+    def update_state(self, key: str, value: any) -> None:
+        """Update local state."""
+        self.state[key] = value
+        self.known_states[self.node_id][key] = value
+    
+    def gossip(self, target_node: str) -> None:
+        """Gossip with target node."""
+        # Simplified - exchange states with target
+        # In real implementation, would send state to target
+        pass
+    
+    def merge_states(self, other_state: Dict[str, any]) -> None:
+        """Merge received state."""
+        for key, value in other_state.items():
+            if key not in self.state or value > self.state.get(key, 0):
+                self.state[key] = value''',
 }
 
 

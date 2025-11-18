@@ -9,19 +9,25 @@ This file contains the implementation of the Leader Election algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def leader_election(data):
-    """
-    Leader Election algorithm implementation.
+class LeaderElection:
+    """Leader election algorithm (simplified)."""
+    def __init__(self, node_id: int, nodes: List[int]):
+        self.node_id = node_id
+        self.nodes = sorted(nodes)
+        self.leader = None
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Leader Election
-    return data
-
+    def elect_leader(self) -> int:
+        """Elect leader (highest ID wins)."""
+        self.leader = max(self.nodes)
+        return self.leader
+    
+    def is_leader(self) -> bool:
+        """Check if this node is leader."""
+        return self.node_id == self.leader
+    
+    def get_leader(self) -> Optional[int]:
+        """Get current leader."""
+        return self.leader
 
 
 def main() -> None:
