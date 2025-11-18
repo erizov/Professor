@@ -6,13 +6,13 @@ from .data_sets import SEARCH_ARRAYS
 
 SEARCHING_ALGOS = {
     "linear_search": [
-        "semester_1",
+        "semester_01",
         "lecture_04_searching",
         "linear_search",
         "linear_search.py",
     ],
     "binary_search": [
-        "semester_1",
+        "semester_01",
         "lecture_04_searching",
         "binary_search",
         "binary_search.py",

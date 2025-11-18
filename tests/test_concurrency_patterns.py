@@ -6,19 +6,19 @@ from .conftest import algorithm_file_path, import_module_from_path
 
 CONCURRENCY_ALGOS = {
     "thread_pool": [
-        "semester_2",
+        "semester_02",
         "lecture_12_concurrency_patterns",
         "thread_pool",
         "algorithm.py",
     ],
     "producer_consumer": [
-        "semester_2",
+        "semester_02",
         "lecture_12_concurrency_patterns",
         "producer_consumer",
         "algorithm.py",
     ],
     "readers_writers": [
-        "semester_2",
+        "semester_02",
         "lecture_12_concurrency_patterns",
         "readers_writers",
         "algorithm.py",

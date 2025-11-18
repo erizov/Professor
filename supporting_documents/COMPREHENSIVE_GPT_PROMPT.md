@@ -890,7 +890,7 @@ When asked to generate or regenerate content:
 
 ## Example: Complete Algorithm README Structure
 
-See `semester_1/lecture_02_efficient_sorting/quick_sort/README.md` for a complete example of all required sections properly formatted.
+See `semester_01/lecture_02_efficient_sorting/quick_sort/README.md` for a complete example of all required sections properly formatted.
 
 ---
 

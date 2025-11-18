@@ -75,10 +75,10 @@
 
 ### Key Algorithms
 Check these directories for examples:
-- `semester_1/lecture_02_efficient_sorting/` - Sorting algorithms
-- `semester_1/lecture_04_searching/` - Searching algorithms
-- `semester_1/lecture_05_trees/` - Tree data structures
-- `semester_3/lecture_12_ml_algorithms/` - ML algorithms
+- `semester_01/lecture_02_efficient_sorting/` - Sorting algorithms
+- `semester_01/lecture_04_searching/` - Searching algorithms
+- `semester_01/lecture_05_trees/` - Tree data structures
+- `semester_03/lecture_12_ml_algorithms/` - ML algorithms
 
 ---
 
@@ -90,7 +90,7 @@ Use the AI to continue implementing algorithms from `NEXT_STEPS.md`
 ### Option 2: Test Existing Code
 ```bash
 # Run any algorithm
-cd semester_1/lecture_02_efficient_sorting/merge_sort
+cd semester_01/lecture_02_efficient_sorting/merge_sort
 python algorithm.py
 java Algorithm.java
 
@@ -129,7 +129,7 @@ python track_implementations.py --check
 ## 🎓 For Students
 
 ### How to Learn
-1. Start with `semester_1/lecture_01_sorting_fundamentals/`
+1. Start with `semester_01/lecture_01_sorting_fundamentals/`
 2. Run each algorithm: `python algorithm.py`
 3. Read the demonstrations and explanations
 4. Compare Python vs Java implementations

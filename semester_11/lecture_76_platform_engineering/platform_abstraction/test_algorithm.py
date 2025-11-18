@@ -72,7 +72,7 @@ class TestPlatformabstraction(AlgorithmTestCase):
 
     def test_insert_operation(self):
         """Test tree insertion."""
-        from semester_1.lecture_05_trees.binary_search_tree.algorithm import TreeNode, insert, search
+        from semester_01.lecture_05_trees.binary_search_tree.algorithm import TreeNode, insert, search
         
         root = None
         root = insert(root, 5)

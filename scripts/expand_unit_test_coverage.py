@@ -16,7 +16,7 @@ EXTENDED_TEST_CASES = {
     'tree': {
         'test_basic': '''def test_basic_functionality(self):
         """Test basic tree traversal."""
-        from semester_1.lecture_05_trees.binary_search_tree.algorithm import TreeNode, insert, inorder
+        from semester_01.lecture_05_trees.binary_search_tree.algorithm import TreeNode, insert, inorder
         
         root = None
         values = [5, 3, 7, 2, 4, 6, 8]
@@ -27,20 +27,20 @@ EXTENDED_TEST_CASES = {
         self.assertEqual(len(result), len(values))''',
         'test_empty': '''def test_empty_tree(self):
         """Test with empty tree."""
-        from semester_1.lecture_05_trees.binary_search_tree.algorithm import inorder
+        from semester_01.lecture_05_trees.binary_search_tree.algorithm import inorder
         
         result = inorder(None)
         self.assertEqual(result, [])''',
         'test_single': '''def test_single_node(self):
         """Test with single node."""
-        from semester_1.lecture_05_trees.binary_search_tree.algorithm import TreeNode, inorder
+        from semester_01.lecture_05_trees.binary_search_tree.algorithm import TreeNode, inorder
         
         root = TreeNode(5)
         result = inorder(root)
         self.assertEqual(result, [5])''',
         'test_insert': '''def test_insert_operation(self):
         """Test tree insertion."""
-        from semester_1.lecture_05_trees.binary_search_tree.algorithm import TreeNode, insert, search
+        from semester_01.lecture_05_trees.binary_search_tree.algorithm import TreeNode, insert, search
         
         root = None
         root = insert(root, 5)

@@ -48,11 +48,11 @@ def get_reference_implementation(algorithm_name: str) -> Optional[Path]:
     """Get reference implementation for similar algorithm."""
     # Map to known complete implementations
     reference_map = {
-        'bubble_sort': 'semester_1/lecture_01_sorting_fundamentals/bubble_sort/algorithm.py',
-        'quick_sort': 'semester_1/lecture_02_efficient_sorting/quick_sort/algorithm.py',
-        'merge_sort': 'semester_1/lecture_02_efficient_sorting/merge_sort/algorithm.py',
-        'binary_search': 'semester_1/lecture_04_searching/binary_search/algorithm.py',
-        'linear_search': 'semester_1/lecture_04_searching/linear_search/algorithm.py',
+        'bubble_sort': 'semester_01/lecture_01_sorting_fundamentals/bubble_sort/algorithm.py',
+        'quick_sort': 'semester_01/lecture_02_efficient_sorting/quick_sort/algorithm.py',
+        'merge_sort': 'semester_01/lecture_02_efficient_sorting/merge_sort/algorithm.py',
+        'binary_search': 'semester_01/lecture_04_searching/binary_search/algorithm.py',
+        'linear_search': 'semester_01/lecture_04_searching/linear_search/algorithm.py',
     }
     
     algo_lower = algorithm_name.lower()

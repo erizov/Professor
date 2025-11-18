@@ -249,7 +249,7 @@ Each decision includes:
 │   └── templates/
 │       └── index.html          # Frontend UI
 │
-├── semester_1/
+├── semester_01/
 │   ├── README.md
 │   ├── lecture_01_sorting_fundamentals/
 │   │   ├── README.md
@@ -258,7 +258,7 @@ Each decision includes:
 │   │   └── insertion_sort/
 │   └── ...
 │
-├── semester_2/ ... semester_6/
+├── semester_02/ ... semester_06/
 │
 └── docs/
     ├── algorithm_selection_guide.md

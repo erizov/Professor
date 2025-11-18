@@ -27,13 +27,13 @@ Open: **`AI_IMPLEMENTATION_GUIDE.md`**
 
 I recommend starting with **Merge Sort** (easy and educational):
 
-**Location**: `semester_1/lecture_02_efficient_sorting/merge_sort/`
+**Location**: `semester_01/lecture_02_efficient_sorting/merge_sort/`
 
 ### Step 3: Copy This Exact Prompt
 
 ```
 Implement a complete working Merge Sort following the pattern 
-in semester_1/lecture_01_sorting_fundamentals/bubble_sort/
+in semester_01/lecture_01_sorting_fundamentals/bubble_sort/
 
 Files to generate:
 1. algorithm.py (Python)
@@ -119,9 +119,9 @@ Generate complete, working code for both files.
 1. Open ChatGPT, Claude, or your preferred AI
 2. Paste the prompt above
 3. Copy the generated Python code
-4. Save to: `semester_1/lecture_02_efficient_sorting/merge_sort/algorithm.py`
+4. Save to: `semester_01/lecture_02_efficient_sorting/merge_sort/algorithm.py`
 5. Copy the generated Java code
-6. Save to: `semester_1/lecture_02_efficient_sorting/merge_sort/Algorithm.java`
+6. Save to: `semester_01/lecture_02_efficient_sorting/merge_sort/Algorithm.java`
 
 ### Step 5: Test It
 
@@ -146,25 +146,25 @@ python track_implementations.py --check
 After Merge Sort, implement these 4 more:
 
 ### Algorithm 2: Heap Sort (30 min)
-- Path: `semester_1/lecture_02_efficient_sorting/heap_sort/`
+- Path: `semester_01/lecture_02_efficient_sorting/heap_sort/`
 - Use same prompt template, replace "Merge Sort" with "Heap Sort"
 - Time: O(n log n), Space: O(1)
 - Key: Heapify function + extraction
 
 ### Algorithm 3: Linear Regression (40 min)
-- Path: `semester_3/lecture_12_ml_algorithms/linear_regression/`
+- Path: `semester_03/lecture_12_ml_algorithms/linear_regression/`
 - Use ML algorithm prompt from guide
 - Include gradient descent
 - Show training progress
 
 ### Algorithm 4: DFS (30 min)
-- Path: `semester_3/lecture_10_graph_algorithms/dfs/`
+- Path: `semester_03/lecture_10_graph_algorithms/dfs/`
 - Use graph algorithm prompt
 - Include recursive and iterative
 - Multiple graph examples
 
 ### Algorithm 5: Hash Table (30 min)
-- Path: `semester_1/lecture_08_hash_tables/hash_table/`
+- Path: `semester_01/lecture_08_hash_tables/hash_table/`
 - Include collision resolution
 - Demonstrate with examples
 
@@ -234,8 +234,8 @@ For any algorithm, use this template:
 Implement [ALGORITHM_NAME] in Python and Java.
 
 Follow the pattern in:
-- semester_1/lecture_01_sorting_fundamentals/bubble_sort/ (for sorting)
-- semester_3/lecture_12_ml_algorithms/knn/ (for ML)
+- semester_01/lecture_01_sorting_fundamentals/bubble_sort/ (for sorting)
+- semester_03/lecture_12_ml_algorithms/knn/ (for ML)
 
 Location: [PATH]
 

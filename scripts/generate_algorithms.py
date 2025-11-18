@@ -13,7 +13,7 @@ from typing import Dict, List, Any
 
 # Algorithm definitions for all semesters
 ALGORITHMS = {
-    "semester_1": {
+    "semester_01": {
         "lecture_01_sorting_fundamentals": [
             {
                 "folder": "bubble_sort",
@@ -137,7 +137,7 @@ ALGORITHMS = {
             },
         ],
     },
-    "semester_2": {
+    "semester_02": {
         "lecture_06_solid_principles": [
             {
                 "folder": "single_responsibility",
@@ -301,7 +301,7 @@ ALGORITHMS = {
             },
         ],
     },
-    "semester_3": {
+    "semester_03": {
         "lecture_10_graph_algorithms": [
             {
                 "folder": "dfs",
@@ -437,7 +437,7 @@ ALGORITHMS = {
             },
         ],
     },
-    "semester_4": {
+    "semester_04": {
         "lecture_14_security_patterns": [
             {
                 "folder": "authentication",

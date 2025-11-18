@@ -154,12 +154,12 @@ Professor/
 │   └── templates/index.html
 │
 └── Course Content (184 algorithm folders)
-    ├── semester_1/ (25 algorithms, 7 implemented)
-    ├── semester_2/ (32 algorithms)
-    ├── semester_3/ (28 algorithms)
-    ├── semester_4/ (27 algorithms)
-    ├── semester_5/ (36 algorithms)
-    └── semester_6/ (36 algorithms)
+    ├── semester_01/ (25 algorithms, 7 implemented)
+    ├── semester_02/ (32 algorithms)
+    ├── semester_03/ (28 algorithms)
+    ├── semester_04/ (27 algorithms)
+    ├── semester_05/ (36 algorithms)
+    └── semester_06/ (36 algorithms)
 ```
 
 ---

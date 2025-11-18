@@ -207,12 +207,12 @@ def generate_main_textbook():
         "README.md",
         "COURSE_PLAN_6SEMESTERS.md",
         "ALGORITHM_INDEX.md",
-        "semester_1/README.md",
-        "semester_2/README.md",
-        "semester_3/README.md",
-        "semester_4/README.md",
-        "semester_5/README.md",
-        "semester_6/README.md",
+        "semester_01/README.md",
+        "semester_02/README.md",
+        "semester_03/README.md",
+        "semester_04/README.md",
+        "semester_05/README.md",
+        "semester_06/README.md",
     ]
     
     for filepath in files_to_include:

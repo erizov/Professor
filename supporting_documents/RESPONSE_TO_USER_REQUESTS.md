@@ -7,13 +7,13 @@
 **Status**: COMPLETED - Implemented 2 more key algorithms
 
 #### Newly Implemented:
-1. **Merge Sort** (`semester_1/lecture_02_efficient_sorting/merge_sort/`)
+1. **Merge Sort** (`semester_01/lecture_02_efficient_sorting/merge_sort/`)
    - 250+ lines Python with multiple examples
    - Standard and in-place variants
    - Performance measurement
    - Complete documentation
    
-2. **Linear Regression** (`semester_3/lecture_12_ml_algorithms/linear_regression/`)
+2. **Linear Regression** (`semester_03/lecture_12_ml_algorithms/linear_regression/`)
    - 300+ lines Python implementation
    - Full ML classifier with fit/predict
    - Gradient descent optimization
@@ -267,7 +267,7 @@ md-to-pdf COMPLETE_TEXTBOOK.md
    - Common commands
 
 6. **Individual Semesters** (6 separate PDFs)
-   - `semester_1.pdf` through `semester_6.pdf`
+   - `semester_01.pdf` through `semester_06.pdf`
 
 ---
 

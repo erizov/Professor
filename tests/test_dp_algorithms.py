@@ -5,19 +5,19 @@ from .conftest import algorithm_file_path, import_module_from_path, find_callabl
 
 DP_ALGOS = {
     "fibonacci": [
-        "semester_1",
+        "semester_01",
         "lecture_11_dynamic_programming",
         "fibonacci",
         "fibonacci.py",
     ],
     "edit_distance": [
-        "semester_1",
+        "semester_01",
         "lecture_11_dynamic_programming",
         "edit_distance",
         "edit_distance.py",
     ],
     "knapsack": [
-        "semester_1",
+        "semester_01",
         "lecture_11_dynamic_programming",
         "knapsack",
         "knapsack.py",

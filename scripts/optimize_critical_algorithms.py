@@ -17,13 +17,13 @@ sys.path.insert(0, str(ROOT))
 
 # Critical algorithms to optimize
 CRITICAL_ALGORITHMS = [
-    ('semester_1/lecture_02_efficient_sorting/quick_sort', 'quick_sort'),
-    ('semester_1/lecture_02_efficient_sorting/merge_sort', 'merge_sort'),
-    ('semester_1/lecture_02_efficient_sorting/heap_sort', 'heap_sort'),
-    ('semester_1/lecture_04_searching/binary_search', 'binary_search'),
-    ('semester_1/lecture_09_graph_algorithms/bfs', 'bfs'),
-    ('semester_1/lecture_09_graph_algorithms/dfs', 'dfs'),
-    ('semester_1/lecture_09_graph_algorithms/dijkstra', 'dijkstra'),
+    ('semester_01/lecture_02_efficient_sorting/quick_sort', 'quick_sort'),
+    ('semester_01/lecture_02_efficient_sorting/merge_sort', 'merge_sort'),
+    ('semester_01/lecture_02_efficient_sorting/heap_sort', 'heap_sort'),
+    ('semester_01/lecture_04_searching/binary_search', 'binary_search'),
+    ('semester_01/lecture_09_graph_algorithms/bfs', 'bfs'),
+    ('semester_01/lecture_09_graph_algorithms/dfs', 'dfs'),
+    ('semester_01/lecture_09_graph_algorithms/dijkstra', 'dijkstra'),
 ]
 
 def profile_algorithm(module_path: str, func_name: str, test_data) -> Dict:

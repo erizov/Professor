@@ -182,7 +182,7 @@ semester_X/
 ```
 
 ### Naming Conventions:
-- Semesters: `semester_1`, `semester_2`, etc. (1-16)
+- Semesters: `semester_01`, `semester_02`, etc. (1-16)
 - Lectures: `lecture_XX_topic_name`
 - Algorithms: `algorithm_name` (snake_case)
 

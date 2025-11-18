@@ -768,10 +768,10 @@ excellent, production-ready, student-friendly learning resource.*
 - All algorithm.py/Algorithm.java files (placeholders)
 
 ✅ **Full Implementations** (Examples)
-- `semester_1/lecture_01_sorting_fundamentals/bubble_sort` ✓
-- `semester_1/lecture_02_efficient_sorting/quick_sort` ✓
-- `semester_1/lecture_04_searching/binary_search` ✓
-- `semester_3/lecture_12_ml_algorithms/knn` ✓ (just updated)
+- `semester_01/lecture_01_sorting_fundamentals/bubble_sort` ✓
+- `semester_01/lecture_02_efficient_sorting/quick_sort` ✓
+- `semester_01/lecture_04_searching/binary_search` ✓
+- `semester_03/lecture_12_ml_algorithms/knn` ✓ (just updated)
 
 ### What Needs Implementation
 
@@ -1006,23 +1006,23 @@ If you want to implement algorithms:
 
 ### Fully Implemented Algorithms
 
-1. **Bubble Sort** - `semester_1/lecture_01_sorting_fundamentals/bubble_sort/`
+1. **Bubble Sort** - `semester_01/lecture_01_sorting_fundamentals/bubble_sort/`
    - Multiple sorting modes
    - Visualization
    - Optimization techniques
    - ~200 lines Python, ~200 lines Java
 
-2. **Quick Sort** - `semester_1/lecture_02_efficient_sorting/quick_sort/`
+2. **Quick Sort** - `semester_01/lecture_02_efficient_sorting/quick_sort/`
    - Standard and randomized pivot
    - Multiple examples
    - ~150 lines Python
 
-3. **Binary Search** - `semester_1/lecture_04_searching/binary_search/`
+3. **Binary Search** - `semester_01/lecture_04_searching/binary_search/`
    - Iterative and recursive
    - Leftmost/rightmost variants
    - ~180 lines Python
 
-4. **K-Nearest Neighbors** - `semester_3/lecture_12_ml_algorithms/knn/`
+4. **K-Nearest Neighbors** - `semester_03/lecture_12_ml_algorithms/knn/`
    - Full classifier implementation
    - Distance calculations
    - Multiple examples
@@ -1078,8 +1078,8 @@ Implement a full working version with:
 5. Both Python and Java versions
 
 Follow the pattern from:
-- semester_1/lecture_01_sorting_fundamentals/bubble_sort/ (for sorting)
-- semester_3/lecture_12_ml_algorithms/knn/ (for ML)
+- semester_01/lecture_01_sorting_fundamentals/bubble_sort/ (for sorting)
+- semester_03/lecture_12_ml_algorithms/knn/ (for ML)
 ```
 
 ---
@@ -1142,23 +1142,23 @@ Follow the pattern from:
 
 #### Fully Implemented Algorithms:
 
-1. ✅ **Bubble Sort** (`semester_1/lecture_01.../bubble_sort/`)
+1. ✅ **Bubble Sort** (`semester_01/lecture_01.../bubble_sort/`)
    - 200+ lines Python with visualization
    - 200+ lines Java with examples
    - Multiple sorting modes
    - Performance timing
 
-2. ✅ **Quick Sort** (`semester_1/lecture_02.../quick_sort/`)
+2. ✅ **Quick Sort** (`semester_01/lecture_02.../quick_sort/`)
    - 150+ lines Python
    - Standard and randomized pivot
    - Multiple examples
 
-3. ✅ **Binary Search** (`semester_1/lecture_04.../binary_search/`)
+3. ✅ **Binary Search** (`semester_01/lecture_04.../binary_search/`)
    - 180+ lines Python
    - Iterative and recursive
    - Leftmost/rightmost variants
 
-4. ✅ **K-Nearest Neighbors** (`semester_3/lecture_12.../knn/`)
+4. ✅ **K-Nearest Neighbors** (`semester_03/lecture_12.../knn/`)
    - 220+ lines Python
    - 180+ lines Java
    - Full classifier implementation
@@ -1244,7 +1244,7 @@ Use the GPT prompt for each algorithm:
 
 ```
 Implement a full working version of [ALGORITHM_NAME] following the 
-pattern in semester_1/lecture_01_sorting_fundamentals/bubble_sort/
+pattern in semester_01/lecture_01_sorting_fundamentals/bubble_sort/
 
 Requirements:
 - Actual algorithm logic (not placeholder)
@@ -1341,8 +1341,8 @@ This would give you:
 
 ### 1. Working Examples
 Look at these for patterns:
-- `semester_1/lecture_01.../bubble_sort/algorithm.py`
-- `semester_3/lecture_12.../knn/algorithm.py`
+- `semester_01/lecture_01.../bubble_sort/algorithm.py`
+- `semester_03/lecture_12.../knn/algorithm.py`
 
 ### 2. Enhancement Script
 ```bash
@@ -1525,7 +1525,7 @@ I'll provide category-specific prompts below. For each algorithm:
 
 ```
 Implement a complete working [ALGORITHM_NAME] following the pattern 
-in semester_1/lecture_01_sorting_fundamentals/bubble_sort/
+in semester_01/lecture_01_sorting_fundamentals/bubble_sort/
 
 Files to generate:
 - algorithm.py (Python)
@@ -1593,7 +1593,7 @@ public class Algorithm {
 }
 ```
 
-Path: semester_1/lecture_0X_[topic]/[algorithm_name]/
+Path: semester_01/lecture_0X_[topic]/[algorithm_name]/
 ```
 
 **Use for**: Merge Sort, Heap Sort, Counting Sort, Radix Sort, Bucket Sort
@@ -1605,7 +1605,7 @@ Path: semester_1/lecture_0X_[topic]/[algorithm_name]/
 ```
 Implement a complete machine learning algorithm: [ALGORITHM_NAME]
 
-Follow the pattern in: semester_3/lecture_12_ml_algorithms/knn/
+Follow the pattern in: semester_03/lecture_12_ml_algorithms/knn/
 
 Requirements:
 ✓ Full classifier/regressor implementation
@@ -1672,7 +1672,7 @@ Include:
 5. Comparison with baselines
 6. Resource requirements (CPU/GPU/Memory)
 
-Path: semester_3/lecture_12_ml_algorithms/[algorithm_name]/
+Path: semester_03/lecture_12_ml_algorithms/[algorithm_name]/
 ```
 
 **Use for**: Linear Regression, Logistic Regression, Decision Tree, K-Means, Naive Bayes, SVM, Random Forest, Neural Network, etc.
@@ -1729,7 +1729,7 @@ Include:
 3. Path reconstruction
 4. Performance analysis
 
-Path: semester_3/lecture_10_graph_algorithms/[algorithm_name]/
+Path: semester_03/lecture_10_graph_algorithms/[algorithm_name]/
 ```
 
 **Use for**: DFS, BFS, Dijkstra, Bellman-Ford, Floyd-Warshall, Kruskal, Prim, Topological Sort
@@ -1800,7 +1800,7 @@ Include:
 5. Real-world examples
 6. Related patterns
 
-Path: semester_2/lecture_0X_[category]/[pattern_name]/
+Path: semester_02/lecture_0X_[category]/[pattern_name]/
 ```
 
 **Use for**: All SOLID principles, Gang of Four patterns, Architectural patterns
@@ -1877,7 +1877,7 @@ Include:
 5. When to use this architecture
 6. Limitations
 
-Path: semester_5/lecture_2X_[topic]/[algorithm_name]/
+Path: semester_05/lecture_2X_[topic]/[algorithm_name]/
 ```
 
 **Use for**: ResNet, VGG, Transformer, BERT, GPT, CNN, RNN, LSTM, Attention, etc.
@@ -1955,7 +1955,7 @@ Include:
 5. Monitoring strategy
 6. Real-world examples
 
-Path: semester_6/lecture_3X_[topic]/[pattern_name]/
+Path: semester_06/lecture_3X_[topic]/[pattern_name]/
 ```
 
 **Use for**: MLOps, Model Versioning, A/B Testing, Feature Stores, Quantization, Pruning, Edge Deployment, etc.
@@ -2012,7 +2012,7 @@ I'll create a script to help you batch process:
 python track_implementations.py --check
 
 # Mark as implemented
-python track_implementations.py --mark semester_1/lecture_01/merge_sort
+python track_implementations.py --mark semester_01/lecture_01/merge_sort
 
 # Generate report
 python track_implementations.py --report

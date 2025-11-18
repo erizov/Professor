@@ -20,8 +20,8 @@ class TestSortingIntegration(AlgorithmTestCase):
     
     def test_sorting_pipeline(self):
         """Test sorting algorithms in a pipeline."""
-        from semester_1.lecture_02_efficient_sorting.quick_sort.algorithm import quick_sort
-        from semester_1.lecture_02_efficient_sorting.merge_sort.algorithm import merge_sort
+        from semester_01.lecture_02_efficient_sorting.quick_sort.algorithm import quick_sort
+        from semester_01.lecture_02_efficient_sorting.merge_sort.algorithm import merge_sort
         
         data = [64, 34, 25, 12, 22, 11, 90]
         
@@ -38,8 +38,8 @@ class TestSortingIntegration(AlgorithmTestCase):
     
     def test_sorting_with_searching(self):
         """Test sorting followed by searching."""
-        from semester_1.lecture_02_efficient_sorting.quick_sort.algorithm import quick_sort
-        from semester_1.lecture_04_searching.binary_search.algorithm import binary_search
+        from semester_01.lecture_02_efficient_sorting.quick_sort.algorithm import quick_sort
+        from semester_01.lecture_04_searching.binary_search.algorithm import binary_search
         
         data = [64, 34, 25, 12, 22, 11, 90]
         sorted_data = quick_sort(data.copy())
@@ -55,8 +55,8 @@ class TestGraphIntegration(AlgorithmTestCase):
     
     def test_bfs_dfs_integration(self):
         """Test BFS and DFS working together."""
-        from semester_1.lecture_09_graph_algorithms.bfs.algorithm import Graph as BFSGraph
-        from semester_1.lecture_09_graph_algorithms.dfs.algorithm import Graph as DFSGraph
+        from semester_01.lecture_09_graph_algorithms.bfs.algorithm import Graph as BFSGraph
+        from semester_01.lecture_09_graph_algorithms.dfs.algorithm import Graph as DFSGraph
         
         edges = [(0, 1), (0, 2), (1, 3), (1, 4), (2, 5)]
         
@@ -79,8 +79,8 @@ class TestGraphIntegration(AlgorithmTestCase):
     
     def test_graph_with_shortest_path(self):
         """Test graph algorithms with shortest path."""
-        from semester_1.lecture_09_graph_algorithms.bfs.algorithm import Graph
-        from semester_1.lecture_09_graph_algorithms.dijkstra.algorithm import dijkstra
+        from semester_01.lecture_09_graph_algorithms.bfs.algorithm import Graph
+        from semester_01.lecture_09_graph_algorithms.dijkstra.algorithm import dijkstra
         
         graph = Graph()
         graph.add_edge(0, 1)
@@ -100,8 +100,8 @@ class TestDesignPatternIntegration(AlgorithmTestCase):
     
     def test_factory_with_singleton(self):
         """Test factory pattern creating singleton instances."""
-        from semester_2.lecture_07_creational_patterns.factory.algorithm import factory
-        from semester_2.lecture_07_creational_patterns.singleton.algorithm import Singleton
+        from semester_02.lecture_07_creational_patterns.factory.algorithm import factory
+        from semester_02.lecture_07_creational_patterns.singleton.algorithm import Singleton
         
         # Factory should create instances
         # Singleton should return same instance
@@ -121,7 +121,7 @@ class TestPerformanceIntegration(AlgorithmTestCase):
     def test_large_dataset_processing(self):
         """Test algorithms with large datasets."""
         import random
-        from semester_1.lecture_02_efficient_sorting.quick_sort.algorithm import quick_sort
+        from semester_01.lecture_02_efficient_sorting.quick_sort.algorithm import quick_sort
         
         # Large dataset
         large_data = [random.randint(0, 10000) for _ in range(10000)]
@@ -135,7 +135,7 @@ class TestPerformanceIntegration(AlgorithmTestCase):
     def test_memory_efficiency(self):
         """Test memory efficiency of algorithms."""
         import random
-        from semester_1.lecture_02_efficient_sorting.merge_sort.algorithm import merge_sort
+        from semester_01.lecture_02_efficient_sorting.merge_sort.algorithm import merge_sort
         
         data = [random.randint(0, 1000) for _ in range(1000)]
         
@@ -149,7 +149,7 @@ class TestErrorHandlingIntegration(AlgorithmTestCase):
     
     def test_invalid_input_handling(self):
         """Test algorithms handle invalid input gracefully."""
-        from semester_1.lecture_02_efficient_sorting.quick_sort.algorithm import quick_sort
+        from semester_01.lecture_02_efficient_sorting.quick_sort.algorithm import quick_sort
         
         # Empty input
         result = quick_sort([])
@@ -160,8 +160,8 @@ class TestErrorHandlingIntegration(AlgorithmTestCase):
     
     def test_edge_cases_integration(self):
         """Test edge cases across multiple algorithms."""
-        from semester_1.lecture_02_efficient_sorting.quick_sort.algorithm import quick_sort
-        from semester_1.lecture_04_searching.binary_search.algorithm import binary_search
+        from semester_01.lecture_02_efficient_sorting.quick_sort.algorithm import quick_sort
+        from semester_01.lecture_04_searching.binary_search.algorithm import binary_search
         
         # Single element
         single = [1]

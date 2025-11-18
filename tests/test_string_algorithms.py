@@ -5,7 +5,7 @@ from .conftest import algorithm_file_path, import_module_from_path, find_callabl
 
 STR_ALGOS = {
     "kmp_search": [
-        "semester_1",
+        "semester_01",
         "lecture_12_string_algorithms",
         "kmp",
         "kmp.py",

@@ -5,7 +5,7 @@ Track implementation progress across all algorithms.
 
 Usage:
     python track_implementations.py --check
-    python track_implementations.py --mark semester_1/lecture_01/merge_sort
+    python track_implementations.py --mark semester_01/lecture_01/merge_sort
     python track_implementations.py --report
 """
 

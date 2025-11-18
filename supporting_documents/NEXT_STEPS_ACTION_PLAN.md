@@ -271,10 +271,10 @@ python -c "from pathlib import Path; total = sum(1 for p in Path('.').rglob('alg
 ### Test an Algorithm
 ```bash
 # Python
-python semester_2/lecture_07_creational_patterns/abstract_factory/algorithm.py
+python semester_02/lecture_07_creational_patterns/abstract_factory/algorithm.py
 
 # Java
-cd semester_2/lecture_07_creational_patterns/abstract_factory
+cd semester_02/lecture_07_creational_patterns/abstract_factory
 javac Algorithm.java && java Algorithm
 ```
 

@@ -20,7 +20,7 @@ class TestSortingAlgorithms(AlgorithmTestCase):
     
     def test_insertion_sort(self):
         """Test insertion sort."""
-        from semester_1.lecture_01_sorting_fundamentals.insertion_sort.algorithm import insertion_sort
+        from semester_01.lecture_01_sorting_fundamentals.insertion_sort.algorithm import insertion_sort
         
         # Test basic sorting
         arr = [64, 34, 25, 12, 22, 11, 90]
@@ -40,7 +40,7 @@ class TestSortingAlgorithms(AlgorithmTestCase):
     
     def test_quick_sort(self):
         """Test quick sort."""
-        from semester_1.lecture_02_efficient_sorting.quick_sort.algorithm import quick_sort
+        from semester_01.lecture_02_efficient_sorting.quick_sort.algorithm import quick_sort
         
         arr = [64, 34, 25, 12, 22, 11, 90]
         result = quick_sort(arr.copy())
@@ -53,7 +53,7 @@ class TestSortingAlgorithms(AlgorithmTestCase):
     
     def test_bubble_sort(self):
         """Test bubble sort."""
-        from semester_1.lecture_01_sorting_fundamentals.bubble_sort.algorithm import bubble_sort
+        from semester_01.lecture_01_sorting_fundamentals.bubble_sort.algorithm import bubble_sort
         
         arr = [64, 34, 25, 12, 22, 11, 90]
         result = bubble_sort(arr.copy())
@@ -65,7 +65,7 @@ class TestSearchingAlgorithms(AlgorithmTestCase):
     
     def test_binary_search(self):
         """Test binary search."""
-        from semester_1.lecture_04_searching.binary_search.algorithm import binary_search
+        from semester_01.lecture_04_searching.binary_search.algorithm import binary_search
         
         arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         
@@ -79,7 +79,7 @@ class TestSearchingAlgorithms(AlgorithmTestCase):
     
     def test_linear_search(self):
         """Test linear search."""
-        from semester_1.lecture_04_searching.linear_search.algorithm import linear_search
+        from semester_01.lecture_04_searching.linear_search.algorithm import linear_search
         
         arr = [1, 2, 3, 4, 5]
         
@@ -97,7 +97,7 @@ class TestGraphAlgorithms(AlgorithmTestCase):
     
     def test_bfs(self):
         """Test BFS."""
-        from semester_1.lecture_09_graph_algorithms.bfs.algorithm import bfs
+        from semester_01.lecture_09_graph_algorithms.bfs.algorithm import bfs
         
         graph = {
             0: [1, 2],
@@ -124,7 +124,7 @@ class TestPerformance(AlgorithmTestCase):
     def test_sorting_performance(self):
         """Test sorting algorithm performance."""
         import random
-        from semester_1.lecture_02_efficient_sorting.quick_sort.algorithm import quick_sort
+        from semester_01.lecture_02_efficient_sorting.quick_sort.algorithm import quick_sort
         
         # Generate large array
         arr = [random.randint(0, 1000) for _ in range(1000)]

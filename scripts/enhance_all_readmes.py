@@ -147,7 +147,7 @@ def generate_usage_examples(algorithm_name: str, category: str) -> str:
     examples = {
         'sort': """### Example 1: Basic Sorting
 ```python
-from semester_1.lecture_01_sorting_fundamentals.bubble_sort.algorithm import bubble_sort
+from semester_01.lecture_01_sorting_fundamentals.bubble_sort.algorithm import bubble_sort
 
 # Sort a list of numbers
 numbers = [64, 34, 25, 12, 22, 11, 90]
@@ -175,7 +175,7 @@ sorted_products = bubble_sort([p.price for p in products])
         
         'search': """### Example 1: Basic Search
 ```python
-from semester_1.lecture_04_searching.binary_search.algorithm import binary_search
+from semester_01.lecture_04_searching.binary_search.algorithm import binary_search
 
 # Search in sorted array
 sorted_array = [1, 3, 5, 7, 9, 11, 13, 15]
@@ -206,7 +206,7 @@ if user_index != -1:
         
         'graph': """### Example 1: Basic Graph Traversal
 ```python
-from semester_1.lecture_09_graph_algorithms.bfs.algorithm import bfs
+from semester_01.lecture_09_graph_algorithms.bfs.algorithm import bfs
 
 # Graph as adjacency list
 graph = {

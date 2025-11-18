@@ -330,7 +330,7 @@ ml_rec = AlgorithmSelector.select_ml_algorithm(
 │   └── templates/
 │       └── index.html             # Web UI
 │
-├── semester_1/ ... semester_6/    # Course content
+├── semester_01/ ... semester_06/    # Course content
 │   └── lecture_XX_topic/
 │       └── algorithm_name/
 │           ├── README.md          # Documentation
@@ -1302,11 +1302,11 @@ Features:
 Navigate to any algorithm folder and run directly:
 ```bash
 # Python
-cd semester_1/lecture_01_sorting_fundamentals/bubble_sort
+cd semester_01/lecture_01_sorting_fundamentals/bubble_sort
 python algorithm.py
 
 # Java
-cd semester_1/lecture_01_sorting_fundamentals/bubble_sort
+cd semester_01/lecture_01_sorting_fundamentals/bubble_sort
 javac Algorithm.java
 java Algorithm
 ```
@@ -1361,7 +1361,7 @@ print_recommendation(ml_recommendation)
 
 ### Semester 1: Foundations
 ```bash
-cd semester_1
+cd semester_01
 ls -la  # See all lectures
 ```
 
@@ -1372,7 +1372,7 @@ ls -la  # See all lectures
 
 ### Semester 2: Design Patterns
 ```bash
-cd semester_2
+cd semester_02
 ```
 
 **Key Topics:**
@@ -1382,7 +1382,7 @@ cd semester_2
 
 ### Semester 3: Advanced Algorithms & ML Foundations
 ```bash
-cd semester_3
+cd semester_03
 ```
 
 **Key Topics:**
@@ -1392,7 +1392,7 @@ cd semester_3
 
 ### Semester 4: ML Algorithms & Enterprise
 ```bash
-cd semester_4
+cd semester_04
 ```
 
 **Key Topics:**
@@ -1403,7 +1403,7 @@ cd semester_4
 
 ### Semester 5: Deep Learning & AI
 ```bash
-cd semester_5
+cd semester_05
 ```
 
 **Key Topics:**
@@ -1413,7 +1413,7 @@ cd semester_5
 
 ### Semester 6: Production ML
 ```bash
-cd semester_6
+cd semester_06
 ```
 
 **Key Topics:**
@@ -1429,8 +1429,8 @@ cd semester_6
 from framework.performance_timer import compare_algorithms
 
 # Import your sorting functions
-from semester_1.lecture_01_sorting_fundamentals.bubble_sort.algorithm import bubble_sort
-from semester_1.lecture_02_efficient_sorting.quick_sort.algorithm import quick_sort
+from semester_01.lecture_01_sorting_fundamentals.bubble_sort.algorithm import bubble_sort
+from semester_01.lecture_02_efficient_sorting.quick_sort.algorithm import quick_sort
 
 algorithms = [
     ("Bubble Sort", bubble_sort),

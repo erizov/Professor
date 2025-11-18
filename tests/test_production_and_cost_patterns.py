@@ -6,51 +6,51 @@ from .conftest import algorithm_file_path, import_module_from_path
 PROD_COST_ALGOS = {
     # Inference optimization
     "model_caching": [
-        "semester_6",
+        "semester_06",
         "lecture_36_inference_optimization",
         "model_caching",
         "algorithm.py",
     ],
     # Cost optimization
     "autoscaling": [
-        "semester_6",
+        "semester_06",
         "lecture_37_cost_optimization",
         "autoscaling",
         "algorithm.py",
     ],
     "serverless_ml": [
-        "semester_6",
+        "semester_06",
         "lecture_37_cost_optimization",
         "serverless_ml",
         "algorithm.py",
     ],
     "cost_analysis": [
-        "semester_6",
+        "semester_06",
         "lecture_37_cost_optimization",
         "cost_analysis",
         "algorithm.py",
     ],
     # Monitoring production
     "prometheus_ml": [
-        "semester_6",
+        "semester_06",
         "lecture_38_monitoring_production",
         "prometheus_ml",
         "algorithm.py",
     ],
     "grafana_dashboards": [
-        "semester_6",
+        "semester_06",
         "lecture_38_monitoring_production",
         "grafana_dashboards",
         "algorithm.py",
     ],
     "performance_profiling": [
-        "semester_6",
+        "semester_06",
         "lecture_38_monitoring_production",
         "performance_profiling",
         "algorithm.py",
     ],
     "alerting": [
-        "semester_6",
+        "semester_06",
         "lecture_38_monitoring_production",
         "alerting",
         "algorithm.py",

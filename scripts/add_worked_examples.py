@@ -329,21 +329,21 @@ def main():
     
     # Top 20 algorithms for worked examples
     top_algorithms = [
-        ("semester_1/lecture_02_efficient_sorting/quick_sort", "quick_sort"),
-        ("semester_1/lecture_02_efficient_sorting/merge_sort", "merge_sort"),
-        ("semester_1/lecture_02_efficient_sorting/heap_sort", "heap_sort"),
-        ("semester_1/lecture_04_searching/binary_search", "binary_search"),
-        ("semester_1/lecture_09_graph_algorithms/bfs", "bfs"),
-        ("semester_1/lecture_09_graph_algorithms/dfs", "dfs"),
-        ("semester_1/lecture_09_graph_algorithms/dijkstra", "dijkstra"),
-        ("semester_1/lecture_10_dynamic_programming/knapsack", "knapsack"),
-        ("semester_1/lecture_10_dynamic_programming/edit_distance", "edit_distance"),
-        ("semester_1/lecture_10_dynamic_programming/longest_common_subsequence", "longest_common_subsequence"),
-        ("semester_1/lecture_11_string_algorithms/kmp", "kmp"),
-        ("semester_1/lecture_01_sorting_fundamentals/bubble_sort", "bubble_sort"),
-        ("semester_1/lecture_01_sorting_fundamentals/insertion_sort", "insertion_sort"),
-        ("semester_1/lecture_05_trees/binary_search_tree", "binary_search_tree"),
-        ("semester_1/lecture_05_trees/avl_tree", "avl_tree"),
+        ("semester_01/lecture_02_efficient_sorting/quick_sort", "quick_sort"),
+        ("semester_01/lecture_02_efficient_sorting/merge_sort", "merge_sort"),
+        ("semester_01/lecture_02_efficient_sorting/heap_sort", "heap_sort"),
+        ("semester_01/lecture_04_searching/binary_search", "binary_search"),
+        ("semester_01/lecture_09_graph_algorithms/bfs", "bfs"),
+        ("semester_01/lecture_09_graph_algorithms/dfs", "dfs"),
+        ("semester_01/lecture_09_graph_algorithms/dijkstra", "dijkstra"),
+        ("semester_01/lecture_10_dynamic_programming/knapsack", "knapsack"),
+        ("semester_01/lecture_10_dynamic_programming/edit_distance", "edit_distance"),
+        ("semester_01/lecture_10_dynamic_programming/longest_common_subsequence", "longest_common_subsequence"),
+        ("semester_01/lecture_11_string_algorithms/kmp", "kmp"),
+        ("semester_01/lecture_01_sorting_fundamentals/bubble_sort", "bubble_sort"),
+        ("semester_01/lecture_01_sorting_fundamentals/insertion_sort", "insertion_sort"),
+        ("semester_01/lecture_05_trees/binary_search_tree", "binary_search_tree"),
+        ("semester_01/lecture_05_trees/avl_tree", "avl_tree"),
     ]
     
     for algo_path, algo_name in top_algorithms:

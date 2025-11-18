@@ -115,11 +115,11 @@ def get_reference_implementation(algorithm_type: str) -> Optional[Tuple[Path, Pa
     """Get reference implementation for style guide."""
     # Find a good reference implementation
     references = {
-        'sorting': ('semester_1/lecture_02_efficient_sorting/quick_sort', 'quick_sort'),
-        'searching': ('semester_1/lecture_04_searching/binary_search', 'binary_search'),
-        'graph': ('semester_1/lecture_09_graph_algorithms/bfs', 'bfs'),
-        'tree': ('semester_1/lecture_05_trees/binary_search_tree', 'binary_search_tree'),
-        'pattern': ('semester_2/lecture_07_creational_patterns/singleton', 'singleton'),
+        'sorting': ('semester_01/lecture_02_efficient_sorting/quick_sort', 'quick_sort'),
+        'searching': ('semester_01/lecture_04_searching/binary_search', 'binary_search'),
+        'graph': ('semester_01/lecture_09_graph_algorithms/bfs', 'bfs'),
+        'tree': ('semester_01/lecture_05_trees/binary_search_tree', 'binary_search_tree'),
+        'pattern': ('semester_02/lecture_07_creational_patterns/singleton', 'singleton'),
         'sql': ('semester_15/lecture_103_sql_advanced_topics/advanced_joins', 'advanced_joins'),
     }
     
@@ -131,8 +131,8 @@ def get_reference_implementation(algorithm_type: str) -> Optional[Tuple[Path, Pa
                 return (py_ref, java_ref)
     
     # Default reference
-    default_py = ROOT / 'semester_1/lecture_02_efficient_sorting/quick_sort/algorithm.py'
-    default_java = ROOT / 'semester_1/lecture_02_efficient_sorting/quick_sort/Algorithm.java'
+    default_py = ROOT / 'semester_01/lecture_02_efficient_sorting/quick_sort/algorithm.py'
+    default_java = ROOT / 'semester_01/lecture_02_efficient_sorting/quick_sort/Algorithm.java'
     if default_py.exists() and default_java.exists():
         return (default_py, default_java)
     

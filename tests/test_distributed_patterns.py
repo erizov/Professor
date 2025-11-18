@@ -5,25 +5,25 @@ from .conftest import algorithm_file_path, import_module_from_path
 
 DISTRIBUTED_ALGOS = {
     "leader_election": [
-        "semester_4",
+        "semester_04",
         "lecture_19_distributed_patterns",
         "leader_election",
         "algorithm.py",
     ],
     "two_phase_commit": [
-        "semester_4",
+        "semester_04",
         "lecture_19_distributed_patterns",
         "two_phase_commit",
         "algorithm.py",
     ],
     "gossip_protocol": [
-        "semester_4",
+        "semester_04",
         "lecture_19_distributed_patterns",
         "gossip_protocol",
         "algorithm.py",
     ],
     "consistent_hashing": [
-        "semester_4",
+        "semester_04",
         "lecture_19_distributed_patterns",
         "consistent_hashing",
         "algorithm.py",

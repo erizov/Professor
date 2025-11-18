@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 SEMESTERS_5_6 = {
-    "semester_5": {
+    "semester_05": {
         "lecture_21_transfer_learning": [
             {"folder": "transfer_learning", "name": "Transfer Learning", 
              "category": "Deep Learning", "time": "O(n*d*h)", 
@@ -138,7 +138,7 @@ SEMESTERS_5_6 = {
              "space": "O(n)"},
         ],
     },
-    "semester_6": {
+    "semester_06": {
         "lecture_31_mlops": [
             {"folder": "model_versioning", "name": "Model Versioning", 
              "category": "MLOps", "time": "O(1)", 

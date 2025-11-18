@@ -165,19 +165,19 @@ Successfully implemented multiple algorithms across Python and Java, focusing on
 ## Files Created/Updated
 
 ### New Implementations
-- semester_1/lecture_02_efficient_sorting/merge_sort/
-- semester_1/lecture_02_efficient_sorting/heap_sort/
-- semester_1/lecture_03_specialized_sorting/counting_sort/
-- semester_1/lecture_03_specialized_sorting/radix_sort/
-- semester_1/lecture_03_specialized_sorting/bucket_sort/
-- semester_1/lecture_04_searching/jump_search/
-- semester_1/lecture_04_searching/interpolation_search/
-- semester_1/lecture_05_trees/binary_tree/
-- semester_1/lecture_05_trees/binary_search_tree/
-- semester_3/lecture_12_ml_algorithms/linear_regression/
-- semester_3/lecture_12_ml_algorithms/logistic_regression/
-- semester_3/lecture_12_ml_algorithms/kmeans/
-- semester_3/lecture_12_ml_algorithms/decision_tree/
+- semester_01/lecture_02_efficient_sorting/merge_sort/
+- semester_01/lecture_02_efficient_sorting/heap_sort/
+- semester_01/lecture_03_specialized_sorting/counting_sort/
+- semester_01/lecture_03_specialized_sorting/radix_sort/
+- semester_01/lecture_03_specialized_sorting/bucket_sort/
+- semester_01/lecture_04_searching/jump_search/
+- semester_01/lecture_04_searching/interpolation_search/
+- semester_01/lecture_05_trees/binary_tree/
+- semester_01/lecture_05_trees/binary_search_tree/
+- semester_03/lecture_12_ml_algorithms/linear_regression/
+- semester_03/lecture_12_ml_algorithms/logistic_regression/
+- semester_03/lecture_12_ml_algorithms/kmeans/
+- semester_03/lecture_12_ml_algorithms/decision_tree/
 
 ### Documentation Created
 - IMPLEMENTATION_PROGRESS.md

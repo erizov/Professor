@@ -5,19 +5,19 @@ from .conftest import algorithm_file_path, import_module_from_path, find_callabl
 
 GRAPH_ALGOS = {
     "bfs": [
-        "semester_1",
+        "semester_01",
         "lecture_09_graph_algorithms",
         "bfs",
         "bfs.py",
     ],
     "dfs": [
-        "semester_1",
+        "semester_01",
         "lecture_09_graph_algorithms",
         "dfs",
         "dfs.py",
     ],
     "dijkstra": [
-        "semester_1",
+        "semester_01",
         "lecture_09_graph_algorithms",
         "dijkstra",
         "dijkstra.py",

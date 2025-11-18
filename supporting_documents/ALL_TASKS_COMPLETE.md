@@ -7,7 +7,7 @@
 **COMPLETED** - Implemented 2 additional algorithms with full working code:
 
 #### Merge Sort
-- **Location**: `semester_1/lecture_02_efficient_sorting/merge_sort/algorithm.py`
+- **Location**: `semester_01/lecture_02_efficient_sorting/merge_sort/algorithm.py`
 - **Lines**: 250+ (Python)
 - **Features**:
   - Standard merge sort
@@ -17,7 +17,7 @@
   - Full documentation
 
 #### Linear Regression  
-- **Location**: `semester_3/lecture_12_ml_algorithms/linear_regression/algorithm.py`
+- **Location**: `semester_03/lecture_12_ml_algorithms/linear_regression/algorithm.py`
 - **Lines**: 300+ (Python)
 - **Features**:
   - Full ML classifier with fit/predict

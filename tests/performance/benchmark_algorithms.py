@@ -196,9 +196,9 @@ def main():
     
     # Benchmark sorting algorithms
     try:
-        from semester_1.lecture_02_efficient_sorting.quick_sort.algorithm import quick_sort
-        from semester_1.lecture_02_efficient_sorting.merge_sort.algorithm import merge_sort
-        from semester_1.lecture_01_sorting_fundamentals.bubble_sort.algorithm import bubble_sort
+        from semester_01.lecture_02_efficient_sorting.quick_sort.algorithm import quick_sort
+        from semester_01.lecture_02_efficient_sorting.merge_sort.algorithm import merge_sort
+        from semester_01.lecture_01_sorting_fundamentals.bubble_sort.algorithm import bubble_sort
         
         benchmark.benchmark_sorting(quick_sort, [100, 500, 1000, 5000])
         benchmark.benchmark_sorting(merge_sort, [100, 500, 1000, 5000])
@@ -211,8 +211,8 @@ def main():
     
     # Benchmark searching algorithms
     try:
-        from semester_1.lecture_04_searching.binary_search.algorithm import binary_search
-        from semester_1.lecture_04_searching.linear_search.algorithm import linear_search
+        from semester_01.lecture_04_searching.binary_search.algorithm import binary_search
+        from semester_01.lecture_04_searching.linear_search.algorithm import linear_search
         
         benchmark.benchmark_searching(binary_search, [100, 500, 1000, 5000, 10000])
         benchmark.benchmark_searching(linear_search, [100, 500, 1000, 5000])
@@ -224,8 +224,8 @@ def main():
     
     # Benchmark graph algorithms
     try:
-        from semester_1.lecture_09_graph_algorithms.bfs.algorithm import Graph as BFSGraph
-        from semester_1.lecture_09_graph_algorithms.dfs.algorithm import Graph as DFSGraph
+        from semester_01.lecture_09_graph_algorithms.bfs.algorithm import Graph as BFSGraph
+        from semester_01.lecture_09_graph_algorithms.dfs.algorithm import Graph as DFSGraph
         
         def bfs_wrapper(graph, start):
             g = BFSGraph()

@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 ADDITIONAL_ALGORITHMS = {
-    "semester_1": {
+    "semester_01": {
         "lecture_06_advanced_trees": [
             {"folder": "red_black_tree", "name": "Red-Black Tree", 
              "category": "Data Structure", "time": "O(log n)", 
@@ -43,7 +43,7 @@ ADDITIONAL_ALGORITHMS = {
              "space": "O(n)"},
         ],
     },
-    "semester_2": {
+    "semester_02": {
         "lecture_10_architectural_patterns": [
             {"folder": "mvc", "name": "Model-View-Controller", 
              "category": "Architectural Pattern", "time": "N/A", 
@@ -82,7 +82,7 @@ ADDITIONAL_ALGORITHMS = {
              "space": "O(1)"},
         ],
     },
-    "semester_3": {
+    "semester_03": {
         "lecture_14_string_algorithms": [
             {"folder": "kmp", "name": "KMP String Matching", 
              "category": "String Algorithm", "time": "O(n + m)", 
@@ -121,7 +121,7 @@ ADDITIONAL_ALGORITHMS = {
              "space": "O(n)"},
         ],
     },
-    "semester_4": {
+    "semester_04": {
         "lecture_18_crypto_algorithms": [
             {"folder": "aes", "name": "AES Encryption", 
              "category": "Cryptography", "time": "O(n)", 

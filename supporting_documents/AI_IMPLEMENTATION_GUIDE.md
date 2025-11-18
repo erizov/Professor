@@ -46,7 +46,7 @@ I'll provide category-specific prompts below. For each algorithm:
 
 ```
 Implement a complete working [ALGORITHM_NAME] following the pattern 
-in semester_1/lecture_01_sorting_fundamentals/bubble_sort/
+in semester_01/lecture_01_sorting_fundamentals/bubble_sort/
 
 Files to generate:
 - algorithm.py (Python)
@@ -114,7 +114,7 @@ public class Algorithm {
 }
 ```
 
-Path: semester_1/lecture_0X_[topic]/[algorithm_name]/
+Path: semester_01/lecture_0X_[topic]/[algorithm_name]/
 ```
 
 **Use for**: Merge Sort, Heap Sort, Counting Sort, Radix Sort, Bucket Sort
@@ -126,7 +126,7 @@ Path: semester_1/lecture_0X_[topic]/[algorithm_name]/
 ```
 Implement a complete machine learning algorithm: [ALGORITHM_NAME]
 
-Follow the pattern in: semester_3/lecture_12_ml_algorithms/knn/
+Follow the pattern in: semester_03/lecture_12_ml_algorithms/knn/
 
 Requirements:
 ✓ Full classifier/regressor implementation
@@ -193,7 +193,7 @@ Include:
 5. Comparison with baselines
 6. Resource requirements (CPU/GPU/Memory)
 
-Path: semester_3/lecture_12_ml_algorithms/[algorithm_name]/
+Path: semester_03/lecture_12_ml_algorithms/[algorithm_name]/
 ```
 
 **Use for**: Linear Regression, Logistic Regression, Decision Tree, K-Means, Naive Bayes, SVM, Random Forest, Neural Network, etc.
@@ -250,7 +250,7 @@ Include:
 3. Path reconstruction
 4. Performance analysis
 
-Path: semester_3/lecture_10_graph_algorithms/[algorithm_name]/
+Path: semester_03/lecture_10_graph_algorithms/[algorithm_name]/
 ```
 
 **Use for**: DFS, BFS, Dijkstra, Bellman-Ford, Floyd-Warshall, Kruskal, Prim, Topological Sort
@@ -321,7 +321,7 @@ Include:
 5. Real-world examples
 6. Related patterns
 
-Path: semester_2/lecture_0X_[category]/[pattern_name]/
+Path: semester_02/lecture_0X_[category]/[pattern_name]/
 ```
 
 **Use for**: All SOLID principles, Gang of Four patterns, Architectural patterns
@@ -398,7 +398,7 @@ Include:
 5. When to use this architecture
 6. Limitations
 
-Path: semester_5/lecture_2X_[topic]/[algorithm_name]/
+Path: semester_05/lecture_2X_[topic]/[algorithm_name]/
 ```
 
 **Use for**: ResNet, VGG, Transformer, BERT, GPT, CNN, RNN, LSTM, Attention, etc.
@@ -476,7 +476,7 @@ Include:
 5. Monitoring strategy
 6. Real-world examples
 
-Path: semester_6/lecture_3X_[topic]/[pattern_name]/
+Path: semester_06/lecture_3X_[topic]/[pattern_name]/
 ```
 
 **Use for**: MLOps, Model Versioning, A/B Testing, Feature Stores, Quantization, Pruning, Edge Deployment, etc.
@@ -533,7 +533,7 @@ I'll create a script to help you batch process:
 python track_implementations.py --check
 
 # Mark as implemented
-python track_implementations.py --mark semester_1/lecture_01/merge_sort
+python track_implementations.py --mark semester_01/lecture_01/merge_sort
 
 # Generate report
 python track_implementations.py --report

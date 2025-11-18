@@ -32,23 +32,23 @@
 
 #### Fully Implemented Algorithms:
 
-1. ✅ **Bubble Sort** (`semester_1/lecture_01.../bubble_sort/`)
+1. ✅ **Bubble Sort** (`semester_01/lecture_01.../bubble_sort/`)
    - 200+ lines Python with visualization
    - 200+ lines Java with examples
    - Multiple sorting modes
    - Performance timing
 
-2. ✅ **Quick Sort** (`semester_1/lecture_02.../quick_sort/`)
+2. ✅ **Quick Sort** (`semester_01/lecture_02.../quick_sort/`)
    - 150+ lines Python
    - Standard and randomized pivot
    - Multiple examples
 
-3. ✅ **Binary Search** (`semester_1/lecture_04.../binary_search/`)
+3. ✅ **Binary Search** (`semester_01/lecture_04.../binary_search/`)
    - 180+ lines Python
    - Iterative and recursive
    - Leftmost/rightmost variants
 
-4. ✅ **K-Nearest Neighbors** (`semester_3/lecture_12.../knn/`)
+4. ✅ **K-Nearest Neighbors** (`semester_03/lecture_12.../knn/`)
    - 220+ lines Python
    - 180+ lines Java
    - Full classifier implementation
@@ -134,7 +134,7 @@ Use the GPT prompt for each algorithm:
 
 ```
 Implement a full working version of [ALGORITHM_NAME] following the 
-pattern in semester_1/lecture_01_sorting_fundamentals/bubble_sort/
+pattern in semester_01/lecture_01_sorting_fundamentals/bubble_sort/
 
 Requirements:
 - Actual algorithm logic (not placeholder)
@@ -231,8 +231,8 @@ This would give you:
 
 ### 1. Working Examples
 Look at these for patterns:
-- `semester_1/lecture_01.../bubble_sort/algorithm.py`
-- `semester_3/lecture_12.../knn/algorithm.py`
+- `semester_01/lecture_01.../bubble_sort/algorithm.py`
+- `semester_03/lecture_12.../knn/algorithm.py`
 
 ### 2. Enhancement Script
 ```bash

@@ -5,13 +5,13 @@ from .conftest import algorithm_file_path, import_module_from_path, find_callabl
 
 CRYPTO_ALGOS = {
     "sha256": [
-        "semester_4",
+        "semester_04",
         "lecture_18_crypto_algorithms",
         "sha256",
         "algorithm.py",
     ],
     "rsa": [
-        "semester_4",
+        "semester_04",
         "lecture_18_crypto_algorithms",
         "rsa",
         "algorithm.py",

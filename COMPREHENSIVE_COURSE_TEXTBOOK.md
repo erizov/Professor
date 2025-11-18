@@ -112,7 +112,7 @@ mvn install
 #### Python
 ```bash
 # Run any algorithm
-python semester_1/lecture_02_efficient_sorting/merge_sort/algorithm.py
+python semester_01/lecture_02_efficient_sorting/merge_sort/algorithm.py
 
 # Run with performance timing
 python runner.py --algorithm merge_sort
@@ -124,7 +124,7 @@ python runner.py --lecture lecture_02_efficient_sorting
 #### Java
 ```bash
 # Compile and run
-cd semester_1/lecture_02_efficient_sorting/merge_sort
+cd semester_01/lecture_02_efficient_sorting/merge_sort
 javac Algorithm.java
 java Algorithm
 
@@ -397,7 +397,7 @@ Quick reference table for algorithm complexities:
 ### Project Structure
 ```
 Professor/
-├── semester_1/               # Fundamentals
+├── semester_01/               # Fundamentals
 │   ├── lecture_01_sorting_fundamentals/
 │   │   ├── bubble_sort/
 │   │   │   ├── algorithm.py
@@ -406,11 +406,11 @@ Professor/
 │   │   │   └── README.md
 │   │   └── ...
 │   └── ...
-├── semester_2/               # Design Patterns
-├── semester_3/               # Machine Learning
-├── semester_4/               # Integration & Security
-├── semester_5/               # Advanced AI/ML
-├── semester_6/               # MLOps
+├── semester_02/               # Design Patterns
+├── semester_03/               # Machine Learning
+├── semester_04/               # Integration & Security
+├── semester_05/               # Advanced AI/ML
+├── semester_06/               # MLOps
 ├── framework/                # Common utilities
 │   ├── performance_timer.py
 │   └── constraint_selector.py

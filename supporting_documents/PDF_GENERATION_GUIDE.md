@@ -262,7 +262,7 @@ pandoc COMPLETE_TEXTBOOK.md \
 mkdir -p pdf_chapters
 
 # Semester 1 chapters
-cd semester_1
+cd semester_01
 for lecture in lecture_*; do
   if [ -d "$lecture" ]; then
     echo "Generating PDF for $lecture"
@@ -434,12 +434,12 @@ pdfs/
 ├── course_plan.pdf (Detailed curriculum)
 ├── implementation_guide.pdf (AI implementation)
 ├── quickstart.pdf (Getting started)
-├── semester_1.pdf (Semester 1 only)
-├── semester_2.pdf (Semester 2 only)
-├── semester_3.pdf (Semester 3 only)
-├── semester_4.pdf (Semester 4 only)
-├── semester_5.pdf (Semester 5 only)
-└── semester_6.pdf (Semester 6 only)
+├── semester_01.pdf (Semester 1 only)
+├── semester_02.pdf (Semester 2 only)
+├── semester_03.pdf (Semester 3 only)
+├── semester_04.pdf (Semester 4 only)
+├── semester_05.pdf (Semester 5 only)
+└── semester_06.pdf (Semester 6 only)
 ```
 
 ---

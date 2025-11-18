@@ -620,7 +620,7 @@ ml_rec = AlgorithmSelector.select_ml_algorithm(
 │   └── templates/
 │       └── index.html             # Web UI
 │
-├── semester_1/ ... semester_6/    # Course content
+├── semester_01/ ... semester_06/    # Course content
 │   └── lecture_XX_topic/
 │       └── algorithm_name/
 │           ├── README.md          # Documentation
@@ -878,11 +878,11 @@ http://localhost:5000
 <p>Navigate to any algorithm folder and run directly:</p>
 <pre><code class="bash">
 # Python
-cd semester_1/lecture_01_sorting_fundamentals/bubble_sort
+cd semester_01/lecture_01_sorting_fundamentals/bubble_sort
 python algorithm.py
 
 # Java
-cd semester_1/lecture_01_sorting_fundamentals/bubble_sort
+cd semester_01/lecture_01_sorting_fundamentals/bubble_sort
 javac Algorithm.java
 java Algorithm
 </code></pre>
@@ -937,7 +937,7 @@ print_recommendation(ml_recommendation)
 <br>
 <h3>Semester 1: Foundations</h3>
 <pre><code class="bash">
-cd semester_1
+cd semester_01
 ls -la  # See all lectures
 </code></pre>
 <br>
@@ -950,7 +950,7 @@ ls -la  # See all lectures
 <br>
 <h3>Semester 2: Design Patterns</h3>
 <pre><code class="bash">
-cd semester_2
+cd semester_02
 </code></pre>
 <br>
 <p><strong>Key Topics:</strong></p>
@@ -962,7 +962,7 @@ cd semester_2
 <br>
 <h3>Semester 3: Advanced Algorithms & ML Foundations</h3>
 <pre><code class="bash">
-cd semester_3
+cd semester_03
 </code></pre>
 <br>
 <p><strong>Key Topics:</strong></p>
@@ -974,7 +974,7 @@ cd semester_3
 <br>
 <h3>Semester 4: ML Algorithms & Enterprise</h3>
 <pre><code class="bash">
-cd semester_4
+cd semester_04
 </code></pre>
 <br>
 <p><strong>Key Topics:</strong></p>
@@ -987,7 +987,7 @@ cd semester_4
 <br>
 <h3>Semester 5: Deep Learning & AI</h3>
 <pre><code class="bash">
-cd semester_5
+cd semester_05
 </code></pre>
 <br>
 <p><strong>Key Topics:</strong></p>
@@ -999,7 +999,7 @@ cd semester_5
 <br>
 <h3>Semester 6: Production ML</h3>
 <pre><code class="bash">
-cd semester_6
+cd semester_06
 </code></pre>
 <br>
 <p><strong>Key Topics:</strong></p>
@@ -1017,8 +1017,8 @@ cd semester_6
 from framework.performance_timer import compare_algorithms
 
 # Import your sorting functions
-from semester_1.lecture_01_sorting_fundamentals.bubble_sort.algorithm import bubble_sort
-from semester_1.lecture_02_efficient_sorting.quick_sort.algorithm import quick_sort
+from semester_01.lecture_01_sorting_fundamentals.bubble_sort.algorithm import bubble_sort
+from semester_01.lecture_02_efficient_sorting.quick_sort.algorithm import quick_sort
 
 algorithms = [
     ("Bubble Sort", bubble_sort),

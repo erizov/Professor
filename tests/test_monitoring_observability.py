@@ -5,19 +5,19 @@ from .conftest import algorithm_file_path, import_module_from_path
 
 MONITORING_ALGOS = {
     "metrics_collection": [
-        "semester_4",
+        "semester_04",
         "lecture_20_monitoring_observability",
         "metrics_collection",
         "algorithm.py",
     ],
     "log_aggregation": [
-        "semester_4",
+        "semester_04",
         "lecture_20_monitoring_observability",
         "log_aggregation",
         "algorithm.py",
     ],
     "distributed_tracing": [
-        "semester_4",
+        "semester_04",
         "lecture_20_monitoring_observability",
         "distributed_tracing",
         "algorithm.py",

@@ -2,8 +2,8 @@
   "algorithms": [
     {
       "name": "container_runtimes",
-      "path": "semester_9\\lecture_55_advanced_os\\container_runtimes",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_55_advanced_os\\container_runtimes",
+      "semester": "semester_09",
       "lecture": "lecture_55_advanced_os",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -19,8 +19,8 @@
     },
     {
       "name": "distributed_os",
-      "path": "semester_9\\lecture_55_advanced_os\\distributed_os",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_55_advanced_os\\distributed_os",
+      "semester": "semester_09",
       "lecture": "lecture_55_advanced_os",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -36,8 +36,8 @@
     },
     {
       "name": "exokernel_design",
-      "path": "semester_9\\lecture_55_advanced_os\\exokernel_design",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_55_advanced_os\\exokernel_design",
+      "semester": "semester_09",
       "lecture": "lecture_55_advanced_os",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -53,8 +53,8 @@
     },
     {
       "name": "microkernel_architecture",
-      "path": "semester_9\\lecture_55_advanced_os\\microkernel_architecture",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_55_advanced_os\\microkernel_architecture",
+      "semester": "semester_09",
       "lecture": "lecture_55_advanced_os",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -70,8 +70,8 @@
     },
     {
       "name": "os_security_models",
-      "path": "semester_9\\lecture_55_advanced_os\\os_security_models",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_55_advanced_os\\os_security_models",
+      "semester": "semester_09",
       "lecture": "lecture_55_advanced_os",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -87,8 +87,8 @@
     },
     {
       "name": "real_time_systems",
-      "path": "semester_9\\lecture_55_advanced_os\\real_time_systems",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_55_advanced_os\\real_time_systems",
+      "semester": "semester_09",
       "lecture": "lecture_55_advanced_os",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -104,8 +104,8 @@
     },
     {
       "name": "cache_optimization",
-      "path": "semester_9\\lecture_56_os_performance\\cache_optimization",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_56_os_performance\\cache_optimization",
+      "semester": "semester_09",
       "lecture": "lecture_56_os_performance",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -121,8 +121,8 @@
     },
     {
       "name": "cpu_scheduling_advanced",
-      "path": "semester_9\\lecture_56_os_performance\\cpu_scheduling_advanced",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_56_os_performance\\cpu_scheduling_advanced",
+      "semester": "semester_09",
       "lecture": "lecture_56_os_performance",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -138,8 +138,8 @@
     },
     {
       "name": "io_scheduling",
-      "path": "semester_9\\lecture_56_os_performance\\io_scheduling",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_56_os_performance\\io_scheduling",
+      "semester": "semester_09",
       "lecture": "lecture_56_os_performance",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -155,8 +155,8 @@
     },
     {
       "name": "kernel_tuning",
-      "path": "semester_9\\lecture_56_os_performance\\kernel_tuning",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_56_os_performance\\kernel_tuning",
+      "semester": "semester_09",
       "lecture": "lecture_56_os_performance",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -172,8 +172,8 @@
     },
     {
       "name": "memory_optimization",
-      "path": "semester_9\\lecture_56_os_performance\\memory_optimization",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_56_os_performance\\memory_optimization",
+      "semester": "semester_09",
       "lecture": "lecture_56_os_performance",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -189,8 +189,8 @@
     },
     {
       "name": "performance_profiling",
-      "path": "semester_9\\lecture_56_os_performance\\performance_profiling",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_56_os_performance\\performance_profiling",
+      "semester": "semester_09",
       "lecture": "lecture_56_os_performance",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -206,8 +206,8 @@
     },
     {
       "name": "actor_model",
-      "path": "semester_9\\lecture_57_concurrency_advanced\\actor_model",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_57_concurrency_advanced\\actor_model",
+      "semester": "semester_09",
       "lecture": "lecture_57_concurrency_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -223,8 +223,8 @@
     },
     {
       "name": "concurrent_data_structures",
-      "path": "semester_9\\lecture_57_concurrency_advanced\\concurrent_data_structures",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_57_concurrency_advanced\\concurrent_data_structures",
+      "semester": "semester_09",
       "lecture": "lecture_57_concurrency_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -240,8 +240,8 @@
     },
     {
       "name": "csp_model",
-      "path": "semester_9\\lecture_57_concurrency_advanced\\csp_model",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_57_concurrency_advanced\\csp_model",
+      "semester": "semester_09",
       "lecture": "lecture_57_concurrency_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -257,8 +257,8 @@
     },
     {
       "name": "lock_free_data_structures",
-      "path": "semester_9\\lecture_57_concurrency_advanced\\lock_free_data_structures",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_57_concurrency_advanced\\lock_free_data_structures",
+      "semester": "semester_09",
       "lecture": "lecture_57_concurrency_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -274,8 +274,8 @@
     },
     {
       "name": "transactional_memory",
-      "path": "semester_9\\lecture_57_concurrency_advanced\\transactional_memory",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_57_concurrency_advanced\\transactional_memory",
+      "semester": "semester_09",
       "lecture": "lecture_57_concurrency_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -292,8 +292,8 @@
     },
     {
       "name": "wait_free_algorithms",
-      "path": "semester_9\\lecture_57_concurrency_advanced\\wait_free_algorithms",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_57_concurrency_advanced\\wait_free_algorithms",
+      "semester": "semester_09",
       "lecture": "lecture_57_concurrency_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -309,8 +309,8 @@
     },
     {
       "name": "gpu_computing",
-      "path": "semester_9\\lecture_58_parallel_computing\\gpu_computing",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_58_parallel_computing\\gpu_computing",
+      "semester": "semester_09",
       "lecture": "lecture_58_parallel_computing",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -326,8 +326,8 @@
     },
     {
       "name": "parallel_algorithms",
-      "path": "semester_9\\lecture_58_parallel_computing\\parallel_algorithms",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_58_parallel_computing\\parallel_algorithms",
+      "semester": "semester_09",
       "lecture": "lecture_58_parallel_computing",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -343,8 +343,8 @@
     },
     {
       "name": "parallel_prefix",
-      "path": "semester_9\\lecture_58_parallel_computing\\parallel_prefix",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_58_parallel_computing\\parallel_prefix",
+      "semester": "semester_09",
       "lecture": "lecture_58_parallel_computing",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -360,8 +360,8 @@
     },
     {
       "name": "parallel_reduction",
-      "path": "semester_9\\lecture_58_parallel_computing\\parallel_reduction",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_58_parallel_computing\\parallel_reduction",
+      "semester": "semester_09",
       "lecture": "lecture_58_parallel_computing",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -377,8 +377,8 @@
     },
     {
       "name": "simd_optimization",
-      "path": "semester_9\\lecture_58_parallel_computing\\simd_optimization",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_58_parallel_computing\\simd_optimization",
+      "semester": "semester_09",
       "lecture": "lecture_58_parallel_computing",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -394,8 +394,8 @@
     },
     {
       "name": "vectorization",
-      "path": "semester_9\\lecture_58_parallel_computing\\vectorization",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_58_parallel_computing\\vectorization",
+      "semester": "semester_09",
       "lecture": "lecture_58_parallel_computing",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -411,8 +411,8 @@
     },
     {
       "name": "byzantine_fault_tolerance",
-      "path": "semester_9\\lecture_59_distributed_systems_advanced\\byzantine_fault_tolerance",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_59_distributed_systems_advanced\\byzantine_fault_tolerance",
+      "semester": "semester_09",
       "lecture": "lecture_59_distributed_systems_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -428,8 +428,8 @@
     },
     {
       "name": "consensus_algorithms",
-      "path": "semester_9\\lecture_59_distributed_systems_advanced\\consensus_algorithms",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_59_distributed_systems_advanced\\consensus_algorithms",
+      "semester": "semester_09",
       "lecture": "lecture_59_distributed_systems_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -445,8 +445,8 @@
     },
     {
       "name": "crdt",
-      "path": "semester_9\\lecture_59_distributed_systems_advanced\\crdt",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_59_distributed_systems_advanced\\crdt",
+      "semester": "semester_09",
       "lecture": "lecture_59_distributed_systems_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -462,8 +462,8 @@
     },
     {
       "name": "distributed_transactions",
-      "path": "semester_9\\lecture_59_distributed_systems_advanced\\distributed_transactions",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_59_distributed_systems_advanced\\distributed_transactions",
+      "semester": "semester_09",
       "lecture": "lecture_59_distributed_systems_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -480,8 +480,8 @@
     },
     {
       "name": "eventual_consistency",
-      "path": "semester_9\\lecture_59_distributed_systems_advanced\\eventual_consistency",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_59_distributed_systems_advanced\\eventual_consistency",
+      "semester": "semester_09",
       "lecture": "lecture_59_distributed_systems_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -497,8 +497,8 @@
     },
     {
       "name": "vector_clocks",
-      "path": "semester_9\\lecture_59_distributed_systems_advanced\\vector_clocks",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_59_distributed_systems_advanced\\vector_clocks",
+      "semester": "semester_09",
       "lecture": "lecture_59_distributed_systems_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -514,8 +514,8 @@
     },
     {
       "name": "api_gateway",
-      "path": "semester_9\\lecture_60_system_design_advanced\\api_gateway",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_60_system_design_advanced\\api_gateway",
+      "semester": "semester_09",
       "lecture": "lecture_60_system_design_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -531,8 +531,8 @@
     },
     {
       "name": "cqrs_advanced",
-      "path": "semester_9\\lecture_60_system_design_advanced\\cqrs_advanced",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_60_system_design_advanced\\cqrs_advanced",
+      "semester": "semester_09",
       "lecture": "lecture_60_system_design_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -548,8 +548,8 @@
     },
     {
       "name": "event_driven_architecture",
-      "path": "semester_9\\lecture_60_system_design_advanced\\event_driven_architecture",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_60_system_design_advanced\\event_driven_architecture",
+      "semester": "semester_09",
       "lecture": "lecture_60_system_design_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -565,8 +565,8 @@
     },
     {
       "name": "event_sourcing_advanced",
-      "path": "semester_9\\lecture_60_system_design_advanced\\event_sourcing_advanced",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_60_system_design_advanced\\event_sourcing_advanced",
+      "semester": "semester_09",
       "lecture": "lecture_60_system_design_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -582,8 +582,8 @@
     },
     {
       "name": "microservices_architecture",
-      "path": "semester_9\\lecture_60_system_design_advanced\\microservices_architecture",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_60_system_design_advanced\\microservices_architecture",
+      "semester": "semester_09",
       "lecture": "lecture_60_system_design_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -599,8 +599,8 @@
     },
     {
       "name": "service_mesh",
-      "path": "semester_9\\lecture_60_system_design_advanced\\service_mesh",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_60_system_design_advanced\\service_mesh",
+      "semester": "semester_09",
       "lecture": "lecture_60_system_design_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -616,8 +616,8 @@
     },
     {
       "name": "config_management",
-      "path": "semester_9\\lecture_61_cloud_native\\config_management",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_61_cloud_native\\config_management",
+      "semester": "semester_09",
       "lecture": "lecture_61_cloud_native",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -633,8 +633,8 @@
     },
     {
       "name": "container_orchestration",
-      "path": "semester_9\\lecture_61_cloud_native\\container_orchestration",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_61_cloud_native\\container_orchestration",
+      "semester": "semester_09",
       "lecture": "lecture_61_cloud_native",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -650,8 +650,8 @@
     },
     {
       "name": "function_as_service",
-      "path": "semester_9\\lecture_61_cloud_native\\function_as_service",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_61_cloud_native\\function_as_service",
+      "semester": "semester_09",
       "lecture": "lecture_61_cloud_native",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -667,8 +667,8 @@
     },
     {
       "name": "secrets_management",
-      "path": "semester_9\\lecture_61_cloud_native\\secrets_management",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_61_cloud_native\\secrets_management",
+      "semester": "semester_09",
       "lecture": "lecture_61_cloud_native",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -684,8 +684,8 @@
     },
     {
       "name": "serverless_architecture",
-      "path": "semester_9\\lecture_61_cloud_native\\serverless_architecture",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_61_cloud_native\\serverless_architecture",
+      "semester": "semester_09",
       "lecture": "lecture_61_cloud_native",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -701,8 +701,8 @@
     },
     {
       "name": "service_discovery",
-      "path": "semester_9\\lecture_61_cloud_native\\service_discovery",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_61_cloud_native\\service_discovery",
+      "semester": "semester_09",
       "lecture": "lecture_61_cloud_native",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -718,8 +718,8 @@
     },
     {
       "name": "apm",
-      "path": "semester_9\\lecture_62_observability_advanced\\apm",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_62_observability_advanced\\apm",
+      "semester": "semester_09",
       "lecture": "lecture_62_observability_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -735,8 +735,8 @@
     },
     {
       "name": "chaos_engineering_advanced",
-      "path": "semester_9\\lecture_62_observability_advanced\\chaos_engineering_advanced",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_62_observability_advanced\\chaos_engineering_advanced",
+      "semester": "semester_09",
       "lecture": "lecture_62_observability_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -752,8 +752,8 @@
     },
     {
       "name": "distributed_tracing",
-      "path": "semester_9\\lecture_62_observability_advanced\\distributed_tracing",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_62_observability_advanced\\distributed_tracing",
+      "semester": "semester_09",
       "lecture": "lecture_62_observability_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -769,8 +769,8 @@
     },
     {
       "name": "log_aggregation_advanced",
-      "path": "semester_9\\lecture_62_observability_advanced\\log_aggregation_advanced",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_62_observability_advanced\\log_aggregation_advanced",
+      "semester": "semester_09",
       "lecture": "lecture_62_observability_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -786,8 +786,8 @@
     },
     {
       "name": "metrics_collection",
-      "path": "semester_9\\lecture_62_observability_advanced\\metrics_collection",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_62_observability_advanced\\metrics_collection",
+      "semester": "semester_09",
       "lecture": "lecture_62_observability_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -803,8 +803,8 @@
     },
     {
       "name": "synthetic_monitoring",
-      "path": "semester_9\\lecture_62_observability_advanced\\synthetic_monitoring",
-      "semester": "semester_9",
+      "path": "semester_09\\lecture_62_observability_advanced\\synthetic_monitoring",
+      "semester": "semester_09",
       "lecture": "lecture_62_observability_advanced",
       "category": "Advanced Graduate Level",
       "complexity": {
@@ -820,8 +820,8 @@
     },
     {
       "name": "customer_support_automation",
-      "path": "semester_8\\lecture_47_support_systems\\customer_support_automation",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_47_support_systems\\customer_support_automation",
+      "semester": "semester_08",
       "lecture": "lecture_47_support_systems",
       "category": "Support Systems",
       "complexity": {
@@ -837,8 +837,8 @@
     },
     {
       "name": "escalation_procedures",
-      "path": "semester_8\\lecture_47_support_systems\\escalation_procedures",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_47_support_systems\\escalation_procedures",
+      "semester": "semester_08",
       "lecture": "lecture_47_support_systems",
       "category": "Support Systems",
       "complexity": {
@@ -854,8 +854,8 @@
     },
     {
       "name": "incident_response",
-      "path": "semester_8\\lecture_47_support_systems\\incident_response",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_47_support_systems\\incident_response",
+      "semester": "semester_08",
       "lecture": "lecture_47_support_systems",
       "category": "Support Systems",
       "complexity": {
@@ -871,8 +871,8 @@
     },
     {
       "name": "knowledge_base",
-      "path": "semester_8\\lecture_47_support_systems\\knowledge_base",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_47_support_systems\\knowledge_base",
+      "semester": "semester_08",
       "lecture": "lecture_47_support_systems",
       "category": "Support Systems",
       "complexity": {
@@ -888,8 +888,8 @@
     },
     {
       "name": "sla_management",
-      "path": "semester_8\\lecture_47_support_systems\\sla_management",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_47_support_systems\\sla_management",
+      "semester": "semester_08",
       "lecture": "lecture_47_support_systems",
       "category": "Support Systems",
       "complexity": {
@@ -905,8 +905,8 @@
     },
     {
       "name": "ticket_management",
-      "path": "semester_8\\lecture_47_support_systems\\ticket_management",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_47_support_systems\\ticket_management",
+      "semester": "semester_08",
       "lecture": "lecture_47_support_systems",
       "category": "Support Systems",
       "complexity": {
@@ -922,8 +922,8 @@
     },
     {
       "name": "api_documentation",
-      "path": "semester_8\\lecture_48_documentation\\api_documentation",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_48_documentation\\api_documentation",
+      "semester": "semester_08",
       "lecture": "lecture_48_documentation",
       "category": "Documentation Systems",
       "complexity": {
@@ -939,8 +939,8 @@
     },
     {
       "name": "code_documentation",
-      "path": "semester_8\\lecture_48_documentation\\code_documentation",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_48_documentation\\code_documentation",
+      "semester": "semester_08",
       "lecture": "lecture_48_documentation",
       "category": "Documentation Systems",
       "complexity": {
@@ -956,8 +956,8 @@
     },
     {
       "name": "documentation_generation",
-      "path": "semester_8\\lecture_48_documentation\\documentation_generation",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_48_documentation\\documentation_generation",
+      "semester": "semester_08",
       "lecture": "lecture_48_documentation",
       "category": "Documentation Systems",
       "complexity": {
@@ -973,8 +973,8 @@
     },
     {
       "name": "technical_writing",
-      "path": "semester_8\\lecture_48_documentation\\technical_writing",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_48_documentation\\technical_writing",
+      "semester": "semester_08",
       "lecture": "lecture_48_documentation",
       "category": "Documentation Systems",
       "complexity": {
@@ -990,8 +990,8 @@
     },
     {
       "name": "user_guides",
-      "path": "semester_8\\lecture_48_documentation\\user_guides",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_48_documentation\\user_guides",
+      "semester": "semester_08",
       "lecture": "lecture_48_documentation",
       "category": "Documentation Systems",
       "complexity": {
@@ -1007,8 +1007,8 @@
     },
     {
       "name": "version_control_docs",
-      "path": "semester_8\\lecture_48_documentation\\version_control_docs",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_48_documentation\\version_control_docs",
+      "semester": "semester_08",
       "lecture": "lecture_48_documentation",
       "category": "Documentation Systems",
       "complexity": {
@@ -1024,8 +1024,8 @@
     },
     {
       "name": "indexes",
-      "path": "semester_8\\lecture_49_sql_fundamentals\\indexes",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_49_sql_fundamentals\\indexes",
+      "semester": "semester_08",
       "lecture": "lecture_49_sql_fundamentals",
       "category": "SQL Database Fundamentals",
       "complexity": {
@@ -1042,8 +1042,8 @@
     },
     {
       "name": "joins",
-      "path": "semester_8\\lecture_49_sql_fundamentals\\joins",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_49_sql_fundamentals\\joins",
+      "semester": "semester_08",
       "lecture": "lecture_49_sql_fundamentals",
       "category": "SQL Database Fundamentals",
       "complexity": {
@@ -1060,8 +1060,8 @@
     },
     {
       "name": "sql_queries",
-      "path": "semester_8\\lecture_49_sql_fundamentals\\sql_queries",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_49_sql_fundamentals\\sql_queries",
+      "semester": "semester_08",
       "lecture": "lecture_49_sql_fundamentals",
       "category": "SQL Database Fundamentals",
       "complexity": {
@@ -1078,8 +1078,8 @@
     },
     {
       "name": "stored_procedures",
-      "path": "semester_8\\lecture_49_sql_fundamentals\\stored_procedures",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_49_sql_fundamentals\\stored_procedures",
+      "semester": "semester_08",
       "lecture": "lecture_49_sql_fundamentals",
       "category": "SQL Database Fundamentals",
       "complexity": {
@@ -1096,8 +1096,8 @@
     },
     {
       "name": "transactions",
-      "path": "semester_8\\lecture_49_sql_fundamentals\\transactions",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_49_sql_fundamentals\\transactions",
+      "semester": "semester_08",
       "lecture": "lecture_49_sql_fundamentals",
       "category": "SQL Database Fundamentals",
       "complexity": {
@@ -1114,8 +1114,8 @@
     },
     {
       "name": "triggers",
-      "path": "semester_8\\lecture_49_sql_fundamentals\\triggers",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_49_sql_fundamentals\\triggers",
+      "semester": "semester_08",
       "lecture": "lecture_49_sql_fundamentals",
       "category": "SQL Database Fundamentals",
       "complexity": {
@@ -1132,8 +1132,8 @@
     },
     {
       "name": "database_design",
-      "path": "semester_8\\lecture_50_sql_advanced\\database_design",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_50_sql_advanced\\database_design",
+      "semester": "semester_08",
       "lecture": "lecture_50_sql_advanced",
       "category": "Advanced SQL",
       "complexity": {
@@ -1150,8 +1150,8 @@
     },
     {
       "name": "denormalization",
-      "path": "semester_8\\lecture_50_sql_advanced\\denormalization",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_50_sql_advanced\\denormalization",
+      "semester": "semester_08",
       "lecture": "lecture_50_sql_advanced",
       "category": "Advanced SQL",
       "complexity": {
@@ -1168,8 +1168,8 @@
     },
     {
       "name": "normalization",
-      "path": "semester_8\\lecture_50_sql_advanced\\normalization",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_50_sql_advanced\\normalization",
+      "semester": "semester_08",
       "lecture": "lecture_50_sql_advanced",
       "category": "Advanced SQL",
       "complexity": {
@@ -1186,8 +1186,8 @@
     },
     {
       "name": "partitioning",
-      "path": "semester_8\\lecture_50_sql_advanced\\partitioning",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_50_sql_advanced\\partitioning",
+      "semester": "semester_08",
       "lecture": "lecture_50_sql_advanced",
       "category": "Advanced SQL",
       "complexity": {
@@ -1204,8 +1204,8 @@
     },
     {
       "name": "query_optimization",
-      "path": "semester_8\\lecture_50_sql_advanced\\query_optimization",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_50_sql_advanced\\query_optimization",
+      "semester": "semester_08",
       "lecture": "lecture_50_sql_advanced",
       "category": "Advanced SQL",
       "complexity": {
@@ -1222,8 +1222,8 @@
     },
     {
       "name": "replication",
-      "path": "semester_8\\lecture_50_sql_advanced\\replication",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_50_sql_advanced\\replication",
+      "semester": "semester_08",
       "lecture": "lecture_50_sql_advanced",
       "category": "Advanced SQL",
       "complexity": {
@@ -1240,8 +1240,8 @@
     },
     {
       "name": "column_family",
-      "path": "semester_8\\lecture_51_nosql_fundamentals\\column_family",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_51_nosql_fundamentals\\column_family",
+      "semester": "semester_08",
       "lecture": "lecture_51_nosql_fundamentals",
       "category": "NoSQL Database Fundamentals",
       "complexity": {
@@ -1258,8 +1258,8 @@
     },
     {
       "name": "document_databases",
-      "path": "semester_8\\lecture_51_nosql_fundamentals\\document_databases",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_51_nosql_fundamentals\\document_databases",
+      "semester": "semester_08",
       "lecture": "lecture_51_nosql_fundamentals",
       "category": "NoSQL Database Fundamentals",
       "complexity": {
@@ -1276,8 +1276,8 @@
     },
     {
       "name": "graph_databases",
-      "path": "semester_8\\lecture_51_nosql_fundamentals\\graph_databases",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_51_nosql_fundamentals\\graph_databases",
+      "semester": "semester_08",
       "lecture": "lecture_51_nosql_fundamentals",
       "category": "NoSQL Database Fundamentals",
       "complexity": {
@@ -1294,8 +1294,8 @@
     },
     {
       "name": "key_value_stores",
-      "path": "semester_8\\lecture_51_nosql_fundamentals\\key_value_stores",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_51_nosql_fundamentals\\key_value_stores",
+      "semester": "semester_08",
       "lecture": "lecture_51_nosql_fundamentals",
       "category": "NoSQL Database Fundamentals",
       "complexity": {
@@ -1312,8 +1312,8 @@
     },
     {
       "name": "nosql_indexing",
-      "path": "semester_8\\lecture_51_nosql_fundamentals\\nosql_indexing",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_51_nosql_fundamentals\\nosql_indexing",
+      "semester": "semester_08",
       "lecture": "lecture_51_nosql_fundamentals",
       "category": "NoSQL Database Fundamentals",
       "complexity": {
@@ -1330,8 +1330,8 @@
     },
     {
       "name": "nosql_querying",
-      "path": "semester_8\\lecture_51_nosql_fundamentals\\nosql_querying",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_51_nosql_fundamentals\\nosql_querying",
+      "semester": "semester_08",
       "lecture": "lecture_51_nosql_fundamentals",
       "category": "NoSQL Database Fundamentals",
       "complexity": {
@@ -1348,8 +1348,8 @@
     },
     {
       "name": "hybrid_databases",
-      "path": "semester_8\\lecture_52_nosql_advanced\\hybrid_databases",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_52_nosql_advanced\\hybrid_databases",
+      "semester": "semester_08",
       "lecture": "lecture_52_nosql_advanced",
       "category": "Advanced NoSQL",
       "complexity": {
@@ -1366,8 +1366,8 @@
     },
     {
       "name": "nosql_consistency",
-      "path": "semester_8\\lecture_52_nosql_advanced\\nosql_consistency",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_52_nosql_advanced\\nosql_consistency",
+      "semester": "semester_08",
       "lecture": "lecture_52_nosql_advanced",
       "category": "Advanced NoSQL",
       "complexity": {
@@ -1384,8 +1384,8 @@
     },
     {
       "name": "nosql_migration",
-      "path": "semester_8\\lecture_52_nosql_advanced\\nosql_migration",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_52_nosql_advanced\\nosql_migration",
+      "semester": "semester_08",
       "lecture": "lecture_52_nosql_advanced",
       "category": "Advanced NoSQL",
       "complexity": {
@@ -1402,8 +1402,8 @@
     },
     {
       "name": "nosql_replication",
-      "path": "semester_8\\lecture_52_nosql_advanced\\nosql_replication",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_52_nosql_advanced\\nosql_replication",
+      "semester": "semester_08",
       "lecture": "lecture_52_nosql_advanced",
       "category": "Advanced NoSQL",
       "complexity": {
@@ -1420,8 +1420,8 @@
     },
     {
       "name": "nosql_scalability",
-      "path": "semester_8\\lecture_52_nosql_advanced\\nosql_scalability",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_52_nosql_advanced\\nosql_scalability",
+      "semester": "semester_08",
       "lecture": "lecture_52_nosql_advanced",
       "category": "Advanced NoSQL",
       "complexity": {
@@ -1438,8 +1438,8 @@
     },
     {
       "name": "nosql_sharding",
-      "path": "semester_8\\lecture_52_nosql_advanced\\nosql_sharding",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_52_nosql_advanced\\nosql_sharding",
+      "semester": "semester_08",
       "lecture": "lecture_52_nosql_advanced",
       "category": "Advanced NoSQL",
       "complexity": {
@@ -1456,8 +1456,8 @@
     },
     {
       "name": "backup_strategies",
-      "path": "semester_8\\lecture_53_database_operations\\backup_strategies",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_53_database_operations\\backup_strategies",
+      "semester": "semester_08",
       "lecture": "lecture_53_database_operations",
       "category": "Database Operations",
       "complexity": {
@@ -1474,8 +1474,8 @@
     },
     {
       "name": "capacity_planning",
-      "path": "semester_8\\lecture_53_database_operations\\capacity_planning",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_53_database_operations\\capacity_planning",
+      "semester": "semester_08",
       "lecture": "lecture_53_database_operations",
       "category": "Database Operations",
       "complexity": {
@@ -1492,8 +1492,8 @@
     },
     {
       "name": "database_monitoring",
-      "path": "semester_8\\lecture_53_database_operations\\database_monitoring",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_53_database_operations\\database_monitoring",
+      "semester": "semester_08",
       "lecture": "lecture_53_database_operations",
       "category": "Database Operations",
       "complexity": {
@@ -1510,8 +1510,8 @@
     },
     {
       "name": "database_security",
-      "path": "semester_8\\lecture_53_database_operations\\database_security",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_53_database_operations\\database_security",
+      "semester": "semester_08",
       "lecture": "lecture_53_database_operations",
       "category": "Database Operations",
       "complexity": {
@@ -1528,8 +1528,8 @@
     },
     {
       "name": "disaster_recovery",
-      "path": "semester_8\\lecture_53_database_operations\\disaster_recovery",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_53_database_operations\\disaster_recovery",
+      "semester": "semester_08",
       "lecture": "lecture_53_database_operations",
       "category": "Database Operations",
       "complexity": {
@@ -1546,8 +1546,8 @@
     },
     {
       "name": "performance_tuning",
-      "path": "semester_8\\lecture_53_database_operations\\performance_tuning",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_53_database_operations\\performance_tuning",
+      "semester": "semester_08",
       "lecture": "lecture_53_database_operations",
       "category": "Database Operations",
       "complexity": {
@@ -1564,8 +1564,8 @@
     },
     {
       "name": "data_governance",
-      "path": "semester_8\\lecture_54_data_modeling\\data_governance",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_54_data_modeling\\data_governance",
+      "semester": "semester_08",
       "lecture": "lecture_54_data_modeling",
       "category": "Data Modeling",
       "complexity": {
@@ -1582,8 +1582,8 @@
     },
     {
       "name": "data_lakes",
-      "path": "semester_8\\lecture_54_data_modeling\\data_lakes",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_54_data_modeling\\data_lakes",
+      "semester": "semester_08",
       "lecture": "lecture_54_data_modeling",
       "category": "Data Modeling",
       "complexity": {
@@ -1600,8 +1600,8 @@
     },
     {
       "name": "data_warehousing",
-      "path": "semester_8\\lecture_54_data_modeling\\data_warehousing",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_54_data_modeling\\data_warehousing",
+      "semester": "semester_08",
       "lecture": "lecture_54_data_modeling",
       "category": "Data Modeling",
       "complexity": {
@@ -1618,8 +1618,8 @@
     },
     {
       "name": "dimensional_modeling",
-      "path": "semester_8\\lecture_54_data_modeling\\dimensional_modeling",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_54_data_modeling\\dimensional_modeling",
+      "semester": "semester_08",
       "lecture": "lecture_54_data_modeling",
       "category": "Data Modeling",
       "complexity": {
@@ -1636,8 +1636,8 @@
     },
     {
       "name": "entity_relationship",
-      "path": "semester_8\\lecture_54_data_modeling\\entity_relationship",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_54_data_modeling\\entity_relationship",
+      "semester": "semester_08",
       "lecture": "lecture_54_data_modeling",
       "category": "Data Modeling",
       "complexity": {
@@ -1654,8 +1654,8 @@
     },
     {
       "name": "etl_processes",
-      "path": "semester_8\\lecture_54_data_modeling\\etl_processes",
-      "semester": "semester_8",
+      "path": "semester_08\\lecture_54_data_modeling\\etl_processes",
+      "semester": "semester_08",
       "lecture": "lecture_54_data_modeling",
       "category": "Data Modeling",
       "complexity": {
@@ -1672,8 +1672,8 @@
     },
     {
       "name": "deadlock_detection",
-      "path": "semester_7\\lecture_39_operating_systems\\deadlock_detection",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_39_operating_systems\\deadlock_detection",
+      "semester": "semester_07",
       "lecture": "lecture_39_operating_systems",
       "category": "Operating Systems Fundamentals",
       "complexity": {
@@ -1689,8 +1689,8 @@
     },
     {
       "name": "file_systems",
-      "path": "semester_7\\lecture_39_operating_systems\\file_systems",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_39_operating_systems\\file_systems",
+      "semester": "semester_07",
       "lecture": "lecture_39_operating_systems",
       "category": "Operating Systems Fundamentals",
       "complexity": {
@@ -1706,8 +1706,8 @@
     },
     {
       "name": "interrupt_handling",
-      "path": "semester_7\\lecture_39_operating_systems\\interrupt_handling",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_39_operating_systems\\interrupt_handling",
+      "semester": "semester_07",
       "lecture": "lecture_39_operating_systems",
       "category": "Operating Systems Fundamentals",
       "complexity": {
@@ -1723,8 +1723,8 @@
     },
     {
       "name": "memory_management",
-      "path": "semester_7\\lecture_39_operating_systems\\memory_management",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_39_operating_systems\\memory_management",
+      "semester": "semester_07",
       "lecture": "lecture_39_operating_systems",
       "category": "Operating Systems Fundamentals",
       "complexity": {
@@ -1740,8 +1740,8 @@
     },
     {
       "name": "process_scheduling",
-      "path": "semester_7\\lecture_39_operating_systems\\process_scheduling",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_39_operating_systems\\process_scheduling",
+      "semester": "semester_07",
       "lecture": "lecture_39_operating_systems",
       "category": "Operating Systems Fundamentals",
       "complexity": {
@@ -1757,8 +1757,8 @@
     },
     {
       "name": "virtual_memory",
-      "path": "semester_7\\lecture_39_operating_systems\\virtual_memory",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_39_operating_systems\\virtual_memory",
+      "semester": "semester_07",
       "lecture": "lecture_39_operating_systems",
       "category": "Operating Systems Fundamentals",
       "complexity": {
@@ -1774,8 +1774,8 @@
     },
     {
       "name": "attention_mechanisms",
-      "path": "semester_7\\lecture_40_llm_fundamentals\\attention_mechanisms",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_40_llm_fundamentals\\attention_mechanisms",
+      "semester": "semester_07",
       "lecture": "lecture_40_llm_fundamentals",
       "category": "Large Language Models Fundamentals",
       "complexity": {
@@ -1791,8 +1791,8 @@
     },
     {
       "name": "fine_tuning_llm",
-      "path": "semester_7\\lecture_40_llm_fundamentals\\fine_tuning_llm",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_40_llm_fundamentals\\fine_tuning_llm",
+      "semester": "semester_07",
       "lecture": "lecture_40_llm_fundamentals",
       "category": "Large Language Models Fundamentals",
       "complexity": {
@@ -1808,8 +1808,8 @@
     },
     {
       "name": "llm_architecture",
-      "path": "semester_7\\lecture_40_llm_fundamentals\\llm_architecture",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_40_llm_fundamentals\\llm_architecture",
+      "semester": "semester_07",
       "lecture": "lecture_40_llm_fundamentals",
       "category": "Large Language Models Fundamentals",
       "complexity": {
@@ -1825,8 +1825,8 @@
     },
     {
       "name": "prompt_engineering",
-      "path": "semester_7\\lecture_40_llm_fundamentals\\prompt_engineering",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_40_llm_fundamentals\\prompt_engineering",
+      "semester": "semester_07",
       "lecture": "lecture_40_llm_fundamentals",
       "category": "Large Language Models Fundamentals",
       "complexity": {
@@ -1842,8 +1842,8 @@
     },
     {
       "name": "retrieval_augmented_generation",
-      "path": "semester_7\\lecture_40_llm_fundamentals\\retrieval_augmented_generation",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_40_llm_fundamentals\\retrieval_augmented_generation",
+      "semester": "semester_07",
       "lecture": "lecture_40_llm_fundamentals",
       "category": "Large Language Models Fundamentals",
       "complexity": {
@@ -1859,8 +1859,8 @@
     },
     {
       "name": "tokenization",
-      "path": "semester_7\\lecture_40_llm_fundamentals\\tokenization",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_40_llm_fundamentals\\tokenization",
+      "semester": "semester_07",
       "lecture": "lecture_40_llm_fundamentals",
       "category": "Large Language Models Fundamentals",
       "complexity": {
@@ -1876,8 +1876,8 @@
     },
     {
       "name": "chain_of_thought",
-      "path": "semester_7\\lecture_41_llm_advanced\\chain_of_thought",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_41_llm_advanced\\chain_of_thought",
+      "semester": "semester_07",
       "lecture": "lecture_41_llm_advanced",
       "category": "Advanced LLM Techniques",
       "complexity": {
@@ -1893,8 +1893,8 @@
     },
     {
       "name": "few_shot_learning",
-      "path": "semester_7\\lecture_41_llm_advanced\\few_shot_learning",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_41_llm_advanced\\few_shot_learning",
+      "semester": "semester_07",
       "lecture": "lecture_41_llm_advanced",
       "category": "Advanced LLM Techniques",
       "complexity": {
@@ -1910,8 +1910,8 @@
     },
     {
       "name": "instruction_tuning",
-      "path": "semester_7\\lecture_41_llm_advanced\\instruction_tuning",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_41_llm_advanced\\instruction_tuning",
+      "semester": "semester_07",
       "lecture": "lecture_41_llm_advanced",
       "category": "Advanced LLM Techniques",
       "complexity": {
@@ -1927,8 +1927,8 @@
     },
     {
       "name": "llm_distillation",
-      "path": "semester_7\\lecture_41_llm_advanced\\llm_distillation",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_41_llm_advanced\\llm_distillation",
+      "semester": "semester_07",
       "lecture": "lecture_41_llm_advanced",
       "category": "Advanced LLM Techniques",
       "complexity": {
@@ -1944,8 +1944,8 @@
     },
     {
       "name": "llm_quantization",
-      "path": "semester_7\\lecture_41_llm_advanced\\llm_quantization",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_41_llm_advanced\\llm_quantization",
+      "semester": "semester_07",
       "lecture": "lecture_41_llm_advanced",
       "category": "Advanced LLM Techniques",
       "complexity": {
@@ -1961,8 +1961,8 @@
     },
     {
       "name": "reinforcement_learning_hf",
-      "path": "semester_7\\lecture_41_llm_advanced\\reinforcement_learning_hf",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_41_llm_advanced\\reinforcement_learning_hf",
+      "semester": "semester_07",
       "lecture": "lecture_41_llm_advanced",
       "category": "Advanced LLM Techniques",
       "complexity": {
@@ -1978,8 +1978,8 @@
     },
     {
       "name": "build_automation",
-      "path": "semester_7\\lecture_42_ci_cd_fundamentals\\build_automation",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_42_ci_cd_fundamentals\\build_automation",
+      "semester": "semester_07",
       "lecture": "lecture_42_ci_cd_fundamentals",
       "category": "CI/CD Fundamentals",
       "complexity": {
@@ -1995,8 +1995,8 @@
     },
     {
       "name": "continuous_deployment",
-      "path": "semester_7\\lecture_42_ci_cd_fundamentals\\continuous_deployment",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_42_ci_cd_fundamentals\\continuous_deployment",
+      "semester": "semester_07",
       "lecture": "lecture_42_ci_cd_fundamentals",
       "category": "CI/CD Fundamentals",
       "complexity": {
@@ -2012,8 +2012,8 @@
     },
     {
       "name": "continuous_integration",
-      "path": "semester_7\\lecture_42_ci_cd_fundamentals\\continuous_integration",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_42_ci_cd_fundamentals\\continuous_integration",
+      "semester": "semester_07",
       "lecture": "lecture_42_ci_cd_fundamentals",
       "category": "CI/CD Fundamentals",
       "complexity": {
@@ -2029,8 +2029,8 @@
     },
     {
       "name": "deployment_strategies",
-      "path": "semester_7\\lecture_42_ci_cd_fundamentals\\deployment_strategies",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_42_ci_cd_fundamentals\\deployment_strategies",
+      "semester": "semester_07",
       "lecture": "lecture_42_ci_cd_fundamentals",
       "category": "CI/CD Fundamentals",
       "complexity": {
@@ -2046,8 +2046,8 @@
     },
     {
       "name": "pipeline_automation",
-      "path": "semester_7\\lecture_42_ci_cd_fundamentals\\pipeline_automation",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_42_ci_cd_fundamentals\\pipeline_automation",
+      "semester": "semester_07",
       "lecture": "lecture_42_ci_cd_fundamentals",
       "category": "CI/CD Fundamentals",
       "complexity": {
@@ -2063,8 +2063,8 @@
     },
     {
       "name": "test_automation",
-      "path": "semester_7\\lecture_42_ci_cd_fundamentals\\test_automation",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_42_ci_cd_fundamentals\\test_automation",
+      "semester": "semester_07",
       "lecture": "lecture_42_ci_cd_fundamentals",
       "category": "CI/CD Fundamentals",
       "complexity": {
@@ -2080,8 +2080,8 @@
     },
     {
       "name": "blue_green_deployment",
-      "path": "semester_7\\lecture_43_ci_cd_advanced\\blue_green_deployment",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_43_ci_cd_advanced\\blue_green_deployment",
+      "semester": "semester_07",
       "lecture": "lecture_43_ci_cd_advanced",
       "category": "Advanced CI/CD",
       "complexity": {
@@ -2097,8 +2097,8 @@
     },
     {
       "name": "canary_deployment",
-      "path": "semester_7\\lecture_43_ci_cd_advanced\\canary_deployment",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_43_ci_cd_advanced\\canary_deployment",
+      "semester": "semester_07",
       "lecture": "lecture_43_ci_cd_advanced",
       "category": "Advanced CI/CD",
       "complexity": {
@@ -2114,8 +2114,8 @@
     },
     {
       "name": "chaos_engineering",
-      "path": "semester_7\\lecture_43_ci_cd_advanced\\chaos_engineering",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_43_ci_cd_advanced\\chaos_engineering",
+      "semester": "semester_07",
       "lecture": "lecture_43_ci_cd_advanced",
       "category": "Advanced CI/CD",
       "complexity": {
@@ -2131,8 +2131,8 @@
     },
     {
       "name": "feature_flags",
-      "path": "semester_7\\lecture_43_ci_cd_advanced\\feature_flags",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_43_ci_cd_advanced\\feature_flags",
+      "semester": "semester_07",
       "lecture": "lecture_43_ci_cd_advanced",
       "category": "Advanced CI/CD",
       "complexity": {
@@ -2148,8 +2148,8 @@
     },
     {
       "name": "gitops",
-      "path": "semester_7\\lecture_43_ci_cd_advanced\\gitops",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_43_ci_cd_advanced\\gitops",
+      "semester": "semester_07",
       "lecture": "lecture_43_ci_cd_advanced",
       "category": "Advanced CI/CD",
       "complexity": {
@@ -2165,8 +2165,8 @@
     },
     {
       "name": "infrastructure_as_code",
-      "path": "semester_7\\lecture_43_ci_cd_advanced\\infrastructure_as_code",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_43_ci_cd_advanced\\infrastructure_as_code",
+      "semester": "semester_07",
       "lecture": "lecture_43_ci_cd_advanced",
       "category": "Advanced CI/CD",
       "complexity": {
@@ -2182,8 +2182,8 @@
     },
     {
       "name": "grover_algorithm",
-      "path": "semester_7\\lecture_44_quantum_computing\\grover_algorithm",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_44_quantum_computing\\grover_algorithm",
+      "semester": "semester_07",
       "lecture": "lecture_44_quantum_computing",
       "category": "Quantum Computing Fundamentals",
       "complexity": {
@@ -2199,8 +2199,8 @@
     },
     {
       "name": "quantum_algorithms",
-      "path": "semester_7\\lecture_44_quantum_computing\\quantum_algorithms",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_44_quantum_computing\\quantum_algorithms",
+      "semester": "semester_07",
       "lecture": "lecture_44_quantum_computing",
       "category": "Quantum Computing Fundamentals",
       "complexity": {
@@ -2216,8 +2216,8 @@
     },
     {
       "name": "quantum_entanglement",
-      "path": "semester_7\\lecture_44_quantum_computing\\quantum_entanglement",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_44_quantum_computing\\quantum_entanglement",
+      "semester": "semester_07",
       "lecture": "lecture_44_quantum_computing",
       "category": "Quantum Computing Fundamentals",
       "complexity": {
@@ -2233,8 +2233,8 @@
     },
     {
       "name": "quantum_gates",
-      "path": "semester_7\\lecture_44_quantum_computing\\quantum_gates",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_44_quantum_computing\\quantum_gates",
+      "semester": "semester_07",
       "lecture": "lecture_44_quantum_computing",
       "category": "Quantum Computing Fundamentals",
       "complexity": {
@@ -2250,8 +2250,8 @@
     },
     {
       "name": "quantum_superposition",
-      "path": "semester_7\\lecture_44_quantum_computing\\quantum_superposition",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_44_quantum_computing\\quantum_superposition",
+      "semester": "semester_07",
       "lecture": "lecture_44_quantum_computing",
       "category": "Quantum Computing Fundamentals",
       "complexity": {
@@ -2267,8 +2267,8 @@
     },
     {
       "name": "shor_algorithm",
-      "path": "semester_7\\lecture_44_quantum_computing\\shor_algorithm",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_44_quantum_computing\\shor_algorithm",
+      "semester": "semester_07",
       "lecture": "lecture_44_quantum_computing",
       "category": "Quantum Computing Fundamentals",
       "complexity": {
@@ -2284,8 +2284,8 @@
     },
     {
       "name": "blockchain_structure",
-      "path": "semester_7\\lecture_45_blockchain_fundamentals\\blockchain_structure",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_45_blockchain_fundamentals\\blockchain_structure",
+      "semester": "semester_07",
       "lecture": "lecture_45_blockchain_fundamentals",
       "category": "Blockchain Fundamentals",
       "complexity": {
@@ -2301,8 +2301,8 @@
     },
     {
       "name": "consensus_mechanisms",
-      "path": "semester_7\\lecture_45_blockchain_fundamentals\\consensus_mechanisms",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_45_blockchain_fundamentals\\consensus_mechanisms",
+      "semester": "semester_07",
       "lecture": "lecture_45_blockchain_fundamentals",
       "category": "Blockchain Fundamentals",
       "complexity": {
@@ -2318,8 +2318,8 @@
     },
     {
       "name": "merkle_trees",
-      "path": "semester_7\\lecture_45_blockchain_fundamentals\\merkle_trees",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_45_blockchain_fundamentals\\merkle_trees",
+      "semester": "semester_07",
       "lecture": "lecture_45_blockchain_fundamentals",
       "category": "Blockchain Fundamentals",
       "complexity": {
@@ -2335,8 +2335,8 @@
     },
     {
       "name": "proof_of_stake",
-      "path": "semester_7\\lecture_45_blockchain_fundamentals\\proof_of_stake",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_45_blockchain_fundamentals\\proof_of_stake",
+      "semester": "semester_07",
       "lecture": "lecture_45_blockchain_fundamentals",
       "category": "Blockchain Fundamentals",
       "complexity": {
@@ -2352,8 +2352,8 @@
     },
     {
       "name": "proof_of_work",
-      "path": "semester_7\\lecture_45_blockchain_fundamentals\\proof_of_work",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_45_blockchain_fundamentals\\proof_of_work",
+      "semester": "semester_07",
       "lecture": "lecture_45_blockchain_fundamentals",
       "category": "Blockchain Fundamentals",
       "complexity": {
@@ -2369,8 +2369,8 @@
     },
     {
       "name": "smart_contracts",
-      "path": "semester_7\\lecture_45_blockchain_fundamentals\\smart_contracts",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_45_blockchain_fundamentals\\smart_contracts",
+      "semester": "semester_07",
       "lecture": "lecture_45_blockchain_fundamentals",
       "category": "Blockchain Fundamentals",
       "complexity": {
@@ -2386,8 +2386,8 @@
     },
     {
       "name": "blockchain_scalability",
-      "path": "semester_7\\lecture_46_blockchain_advanced\\blockchain_scalability",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_46_blockchain_advanced\\blockchain_scalability",
+      "semester": "semester_07",
       "lecture": "lecture_46_blockchain_advanced",
       "category": "Advanced Blockchain",
       "complexity": {
@@ -2403,8 +2403,8 @@
     },
     {
       "name": "cross_chain",
-      "path": "semester_7\\lecture_46_blockchain_advanced\\cross_chain",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_46_blockchain_advanced\\cross_chain",
+      "semester": "semester_07",
       "lecture": "lecture_46_blockchain_advanced",
       "category": "Advanced Blockchain",
       "complexity": {
@@ -2420,8 +2420,8 @@
     },
     {
       "name": "cryptocurrency_wallets",
-      "path": "semester_7\\lecture_46_blockchain_advanced\\cryptocurrency_wallets",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_46_blockchain_advanced\\cryptocurrency_wallets",
+      "semester": "semester_07",
       "lecture": "lecture_46_blockchain_advanced",
       "category": "Advanced Blockchain",
       "complexity": {
@@ -2437,8 +2437,8 @@
     },
     {
       "name": "decentralized_storage",
-      "path": "semester_7\\lecture_46_blockchain_advanced\\decentralized_storage",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_46_blockchain_advanced\\decentralized_storage",
+      "semester": "semester_07",
       "lecture": "lecture_46_blockchain_advanced",
       "category": "Advanced Blockchain",
       "complexity": {
@@ -2454,8 +2454,8 @@
     },
     {
       "name": "layer2_solutions",
-      "path": "semester_7\\lecture_46_blockchain_advanced\\layer2_solutions",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_46_blockchain_advanced\\layer2_solutions",
+      "semester": "semester_07",
       "lecture": "lecture_46_blockchain_advanced",
       "category": "Advanced Blockchain",
       "complexity": {
@@ -2471,8 +2471,8 @@
     },
     {
       "name": "nft_standards",
-      "path": "semester_7\\lecture_46_blockchain_advanced\\nft_standards",
-      "semester": "semester_7",
+      "path": "semester_07\\lecture_46_blockchain_advanced\\nft_standards",
+      "semester": "semester_07",
       "lecture": "lecture_46_blockchain_advanced",
       "category": "Advanced Blockchain",
       "complexity": {
@@ -2488,8 +2488,8 @@
     },
     {
       "name": "ab_testing",
-      "path": "semester_6\\lecture_31_mlops\\ab_testing",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_31_mlops\\ab_testing",
+      "semester": "semester_06",
       "lecture": "lecture_31_mlops",
       "category": "MLOps",
       "complexity": {
@@ -2505,8 +2505,8 @@
     },
     {
       "name": "data_drift",
-      "path": "semester_6\\lecture_31_mlops\\data_drift",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_31_mlops\\data_drift",
+      "semester": "semester_06",
       "lecture": "lecture_31_mlops",
       "category": "MLOps",
       "complexity": {
@@ -2522,8 +2522,8 @@
     },
     {
       "name": "feature_store",
-      "path": "semester_6\\lecture_31_mlops\\feature_store",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_31_mlops\\feature_store",
+      "semester": "semester_06",
       "lecture": "lecture_31_mlops",
       "category": "MLOps",
       "complexity": {
@@ -2539,8 +2539,8 @@
     },
     {
       "name": "model_monitoring",
-      "path": "semester_6\\lecture_31_mlops\\model_monitoring",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_31_mlops\\model_monitoring",
+      "semester": "semester_06",
       "lecture": "lecture_31_mlops",
       "category": "MLOps",
       "complexity": {
@@ -2556,8 +2556,8 @@
     },
     {
       "name": "model_versioning",
-      "path": "semester_6\\lecture_31_mlops\\model_versioning",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_31_mlops\\model_versioning",
+      "semester": "semester_06",
       "lecture": "lecture_31_mlops",
       "category": "MLOps",
       "complexity": {
@@ -2573,8 +2573,8 @@
     },
     {
       "name": "allreduce",
-      "path": "semester_6\\lecture_32_distributed_ml\\allreduce",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_32_distributed_ml\\allreduce",
+      "semester": "semester_06",
       "lecture": "lecture_32_distributed_ml",
       "category": "Distributed ML",
       "complexity": {
@@ -2590,8 +2590,8 @@
     },
     {
       "name": "data_parallelism",
-      "path": "semester_6\\lecture_32_distributed_ml\\data_parallelism",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_32_distributed_ml\\data_parallelism",
+      "semester": "semester_06",
       "lecture": "lecture_32_distributed_ml",
       "category": "Distributed ML",
       "complexity": {
@@ -2607,8 +2607,8 @@
     },
     {
       "name": "federated_learning",
-      "path": "semester_6\\lecture_32_distributed_ml\\federated_learning",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_32_distributed_ml\\federated_learning",
+      "semester": "semester_06",
       "lecture": "lecture_32_distributed_ml",
       "category": "Distributed ML",
       "complexity": {
@@ -2624,8 +2624,8 @@
     },
     {
       "name": "model_parallelism",
-      "path": "semester_6\\lecture_32_distributed_ml\\model_parallelism",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_32_distributed_ml\\model_parallelism",
+      "semester": "semester_06",
       "lecture": "lecture_32_distributed_ml",
       "category": "Distributed ML",
       "complexity": {
@@ -2641,8 +2641,8 @@
     },
     {
       "name": "parameter_server",
-      "path": "semester_6\\lecture_32_distributed_ml\\parameter_server",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_32_distributed_ml\\parameter_server",
+      "semester": "semester_06",
       "lecture": "lecture_32_distributed_ml",
       "category": "Distributed ML",
       "complexity": {
@@ -2658,8 +2658,8 @@
     },
     {
       "name": "knowledge_distillation",
-      "path": "semester_6\\lecture_33_model_optimization\\knowledge_distillation",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_33_model_optimization\\knowledge_distillation",
+      "semester": "semester_06",
       "lecture": "lecture_33_model_optimization",
       "category": "Optimization",
       "complexity": {
@@ -2675,8 +2675,8 @@
     },
     {
       "name": "nas",
-      "path": "semester_6\\lecture_33_model_optimization\\nas",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_33_model_optimization\\nas",
+      "semester": "semester_06",
       "lecture": "lecture_33_model_optimization",
       "category": "Optimization",
       "complexity": {
@@ -2692,8 +2692,8 @@
     },
     {
       "name": "onnx",
-      "path": "semester_6\\lecture_33_model_optimization\\onnx",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_33_model_optimization\\onnx",
+      "semester": "semester_06",
       "lecture": "lecture_33_model_optimization",
       "category": "Optimization",
       "complexity": {
@@ -2709,8 +2709,8 @@
     },
     {
       "name": "pruning",
-      "path": "semester_6\\lecture_33_model_optimization\\pruning",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_33_model_optimization\\pruning",
+      "semester": "semester_06",
       "lecture": "lecture_33_model_optimization",
       "category": "Optimization",
       "complexity": {
@@ -2726,8 +2726,8 @@
     },
     {
       "name": "quantization",
-      "path": "semester_6\\lecture_33_model_optimization\\quantization",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_33_model_optimization\\quantization",
+      "semester": "semester_06",
       "lecture": "lecture_33_model_optimization",
       "category": "Optimization",
       "complexity": {
@@ -2743,8 +2743,8 @@
     },
     {
       "name": "tensorrt",
-      "path": "semester_6\\lecture_33_model_optimization\\tensorrt",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_33_model_optimization\\tensorrt",
+      "semester": "semester_06",
       "lecture": "lecture_33_model_optimization",
       "category": "Optimization",
       "complexity": {
@@ -2760,8 +2760,8 @@
     },
     {
       "name": "edge_deployment",
-      "path": "semester_6\\lecture_34_edge_ai\\edge_deployment",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_34_edge_ai\\edge_deployment",
+      "semester": "semester_06",
       "lecture": "lecture_34_edge_ai",
       "category": "Edge Computing",
       "complexity": {
@@ -2777,8 +2777,8 @@
     },
     {
       "name": "iot_ml",
-      "path": "semester_6\\lecture_34_edge_ai\\iot_ml",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_34_edge_ai\\iot_ml",
+      "semester": "semester_06",
       "lecture": "lecture_34_edge_ai",
       "category": "Edge Computing",
       "complexity": {
@@ -2794,8 +2794,8 @@
     },
     {
       "name": "mobile_optimization",
-      "path": "semester_6\\lecture_34_edge_ai\\mobile_optimization",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_34_edge_ai\\mobile_optimization",
+      "semester": "semester_06",
       "lecture": "lecture_34_edge_ai",
       "category": "Edge Computing",
       "complexity": {
@@ -2811,8 +2811,8 @@
     },
     {
       "name": "tflite",
-      "path": "semester_6\\lecture_34_edge_ai\\tflite",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_34_edge_ai\\tflite",
+      "semester": "semester_06",
       "lecture": "lecture_34_edge_ai",
       "category": "Edge Computing",
       "complexity": {
@@ -2828,8 +2828,8 @@
     },
     {
       "name": "blue_green_ml",
-      "path": "semester_6\\lecture_35_deployment_patterns\\blue_green_ml",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_35_deployment_patterns\\blue_green_ml",
+      "semester": "semester_06",
       "lecture": "lecture_35_deployment_patterns",
       "category": "Deployment",
       "complexity": {
@@ -2845,8 +2845,8 @@
     },
     {
       "name": "canary_ml",
-      "path": "semester_6\\lecture_35_deployment_patterns\\canary_ml",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_35_deployment_patterns\\canary_ml",
+      "semester": "semester_06",
       "lecture": "lecture_35_deployment_patterns",
       "category": "Deployment",
       "complexity": {
@@ -2862,8 +2862,8 @@
     },
     {
       "name": "multi_armed_bandit",
-      "path": "semester_6\\lecture_35_deployment_patterns\\multi_armed_bandit",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_35_deployment_patterns\\multi_armed_bandit",
+      "semester": "semester_06",
       "lecture": "lecture_35_deployment_patterns",
       "category": "Deployment",
       "complexity": {
@@ -2879,8 +2879,8 @@
     },
     {
       "name": "shadow_deployment",
-      "path": "semester_6\\lecture_35_deployment_patterns\\shadow_deployment",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_35_deployment_patterns\\shadow_deployment",
+      "semester": "semester_06",
       "lecture": "lecture_35_deployment_patterns",
       "category": "Deployment",
       "complexity": {
@@ -2896,8 +2896,8 @@
     },
     {
       "name": "batch_inference",
-      "path": "semester_6\\lecture_36_inference_optimization\\batch_inference",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_36_inference_optimization\\batch_inference",
+      "semester": "semester_06",
       "lecture": "lecture_36_inference_optimization",
       "category": "Inference",
       "complexity": {
@@ -2913,8 +2913,8 @@
     },
     {
       "name": "gpu_optimization",
-      "path": "semester_6\\lecture_36_inference_optimization\\gpu_optimization",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_36_inference_optimization\\gpu_optimization",
+      "semester": "semester_06",
       "lecture": "lecture_36_inference_optimization",
       "category": "Inference",
       "complexity": {
@@ -2930,8 +2930,8 @@
     },
     {
       "name": "inference_pipeline",
-      "path": "semester_6\\lecture_36_inference_optimization\\inference_pipeline",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_36_inference_optimization\\inference_pipeline",
+      "semester": "semester_06",
       "lecture": "lecture_36_inference_optimization",
       "category": "Inference",
       "complexity": {
@@ -2947,8 +2947,8 @@
     },
     {
       "name": "model_caching",
-      "path": "semester_6\\lecture_36_inference_optimization\\model_caching",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_36_inference_optimization\\model_caching",
+      "semester": "semester_06",
       "lecture": "lecture_36_inference_optimization",
       "category": "Inference",
       "complexity": {
@@ -2964,8 +2964,8 @@
     },
     {
       "name": "autoscaling",
-      "path": "semester_6\\lecture_37_cost_optimization\\autoscaling",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_37_cost_optimization\\autoscaling",
+      "semester": "semester_06",
       "lecture": "lecture_37_cost_optimization",
       "category": "Cost Optimization",
       "complexity": {
@@ -2981,8 +2981,8 @@
     },
     {
       "name": "cost_analysis",
-      "path": "semester_6\\lecture_37_cost_optimization\\cost_analysis",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_37_cost_optimization\\cost_analysis",
+      "semester": "semester_06",
       "lecture": "lecture_37_cost_optimization",
       "category": "Cost Optimization",
       "complexity": {
@@ -2998,8 +2998,8 @@
     },
     {
       "name": "serverless_ml",
-      "path": "semester_6\\lecture_37_cost_optimization\\serverless_ml",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_37_cost_optimization\\serverless_ml",
+      "semester": "semester_06",
       "lecture": "lecture_37_cost_optimization",
       "category": "Cost Optimization",
       "complexity": {
@@ -3015,8 +3015,8 @@
     },
     {
       "name": "spot_instances",
-      "path": "semester_6\\lecture_37_cost_optimization\\spot_instances",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_37_cost_optimization\\spot_instances",
+      "semester": "semester_06",
       "lecture": "lecture_37_cost_optimization",
       "category": "Cost Optimization",
       "complexity": {
@@ -3032,8 +3032,8 @@
     },
     {
       "name": "alerting",
-      "path": "semester_6\\lecture_38_monitoring_production\\alerting",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_38_monitoring_production\\alerting",
+      "semester": "semester_06",
       "lecture": "lecture_38_monitoring_production",
       "category": "Monitoring",
       "complexity": {
@@ -3049,8 +3049,8 @@
     },
     {
       "name": "grafana_dashboards",
-      "path": "semester_6\\lecture_38_monitoring_production\\grafana_dashboards",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_38_monitoring_production\\grafana_dashboards",
+      "semester": "semester_06",
       "lecture": "lecture_38_monitoring_production",
       "category": "Monitoring",
       "complexity": {
@@ -3066,8 +3066,8 @@
     },
     {
       "name": "performance_profiling",
-      "path": "semester_6\\lecture_38_monitoring_production\\performance_profiling",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_38_monitoring_production\\performance_profiling",
+      "semester": "semester_06",
       "lecture": "lecture_38_monitoring_production",
       "category": "Monitoring",
       "complexity": {
@@ -3083,8 +3083,8 @@
     },
     {
       "name": "prometheus_ml",
-      "path": "semester_6\\lecture_38_monitoring_production\\prometheus_ml",
-      "semester": "semester_6",
+      "path": "semester_06\\lecture_38_monitoring_production\\prometheus_ml",
+      "semester": "semester_06",
       "lecture": "lecture_38_monitoring_production",
       "category": "Monitoring",
       "complexity": {
@@ -3100,8 +3100,8 @@
     },
     {
       "name": "feature_extraction",
-      "path": "semester_5\\lecture_21_transfer_learning\\feature_extraction",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_21_transfer_learning\\feature_extraction",
+      "semester": "semester_05",
       "lecture": "lecture_21_transfer_learning",
       "category": "Deep Learning",
       "complexity": {
@@ -3117,8 +3117,8 @@
     },
     {
       "name": "fine_tuning",
-      "path": "semester_5\\lecture_21_transfer_learning\\fine_tuning",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_21_transfer_learning\\fine_tuning",
+      "semester": "semester_05",
       "lecture": "lecture_21_transfer_learning",
       "category": "Deep Learning",
       "complexity": {
@@ -3134,8 +3134,8 @@
     },
     {
       "name": "transfer_learning",
-      "path": "semester_5\\lecture_21_transfer_learning\\transfer_learning",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_21_transfer_learning\\transfer_learning",
+      "semester": "semester_05",
       "lecture": "lecture_21_transfer_learning",
       "category": "Deep Learning",
       "complexity": {
@@ -3151,8 +3151,8 @@
     },
     {
       "name": "efficientnet",
-      "path": "semester_5\\lecture_22_cnn_architectures\\efficientnet",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_22_cnn_architectures\\efficientnet",
+      "semester": "semester_05",
       "lecture": "lecture_22_cnn_architectures",
       "category": "Deep Learning",
       "complexity": {
@@ -3168,8 +3168,8 @@
     },
     {
       "name": "inception",
-      "path": "semester_5\\lecture_22_cnn_architectures\\inception",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_22_cnn_architectures\\inception",
+      "semester": "semester_05",
       "lecture": "lecture_22_cnn_architectures",
       "category": "Deep Learning",
       "complexity": {
@@ -3185,8 +3185,8 @@
     },
     {
       "name": "resnet",
-      "path": "semester_5\\lecture_22_cnn_architectures\\resnet",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_22_cnn_architectures\\resnet",
+      "semester": "semester_05",
       "lecture": "lecture_22_cnn_architectures",
       "category": "Deep Learning",
       "complexity": {
@@ -3202,8 +3202,8 @@
     },
     {
       "name": "vgg",
-      "path": "semester_5\\lecture_22_cnn_architectures\\vgg",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_22_cnn_architectures\\vgg",
+      "semester": "semester_05",
       "lecture": "lecture_22_cnn_architectures",
       "category": "Deep Learning",
       "complexity": {
@@ -3219,8 +3219,8 @@
     },
     {
       "name": "rcnn",
-      "path": "semester_5\\lecture_23_object_detection\\rcnn",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_23_object_detection\\rcnn",
+      "semester": "semester_05",
       "lecture": "lecture_23_object_detection",
       "category": "Computer Vision",
       "complexity": {
@@ -3236,8 +3236,8 @@
     },
     {
       "name": "ssd",
-      "path": "semester_5\\lecture_23_object_detection\\ssd",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_23_object_detection\\ssd",
+      "semester": "semester_05",
       "lecture": "lecture_23_object_detection",
       "category": "Computer Vision",
       "complexity": {
@@ -3253,8 +3253,8 @@
     },
     {
       "name": "yolo",
-      "path": "semester_5\\lecture_23_object_detection\\yolo",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_23_object_detection\\yolo",
+      "semester": "semester_05",
       "lecture": "lecture_23_object_detection",
       "category": "Computer Vision",
       "complexity": {
@@ -3270,8 +3270,8 @@
     },
     {
       "name": "fcn",
-      "path": "semester_5\\lecture_24_segmentation\\fcn",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_24_segmentation\\fcn",
+      "semester": "semester_05",
       "lecture": "lecture_24_segmentation",
       "category": "Computer Vision",
       "complexity": {
@@ -3287,8 +3287,8 @@
     },
     {
       "name": "mask_rcnn",
-      "path": "semester_5\\lecture_24_segmentation\\mask_rcnn",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_24_segmentation\\mask_rcnn",
+      "semester": "semester_05",
       "lecture": "lecture_24_segmentation",
       "category": "Computer Vision",
       "complexity": {
@@ -3304,8 +3304,8 @@
     },
     {
       "name": "unet",
-      "path": "semester_5\\lecture_24_segmentation\\unet",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_24_segmentation\\unet",
+      "semester": "semester_05",
       "lecture": "lecture_24_segmentation",
       "category": "Computer Vision",
       "complexity": {
@@ -3321,8 +3321,8 @@
     },
     {
       "name": "attention",
-      "path": "semester_5\\lecture_25_transformers\\attention",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_25_transformers\\attention",
+      "semester": "semester_05",
       "lecture": "lecture_25_transformers",
       "category": "NLP",
       "complexity": {
@@ -3338,8 +3338,8 @@
     },
     {
       "name": "bert",
-      "path": "semester_5\\lecture_25_transformers\\bert",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_25_transformers\\bert",
+      "semester": "semester_05",
       "lecture": "lecture_25_transformers",
       "category": "NLP",
       "complexity": {
@@ -3355,8 +3355,8 @@
     },
     {
       "name": "gpt",
-      "path": "semester_5\\lecture_25_transformers\\gpt",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_25_transformers\\gpt",
+      "semester": "semester_05",
       "lecture": "lecture_25_transformers",
       "category": "NLP",
       "complexity": {
@@ -3372,8 +3372,8 @@
     },
     {
       "name": "transformer",
-      "path": "semester_5\\lecture_25_transformers\\transformer",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_25_transformers\\transformer",
+      "semester": "semester_05",
       "lecture": "lecture_25_transformers",
       "category": "NLP",
       "complexity": {
@@ -3389,8 +3389,8 @@
     },
     {
       "name": "bagging",
-      "path": "semester_5\\lecture_26_ensemble_methods\\bagging",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_26_ensemble_methods\\bagging",
+      "semester": "semester_05",
       "lecture": "lecture_26_ensemble_methods",
       "category": "Ensemble Learning",
       "complexity": {
@@ -3406,8 +3406,8 @@
     },
     {
       "name": "boosting",
-      "path": "semester_5\\lecture_26_ensemble_methods\\boosting",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_26_ensemble_methods\\boosting",
+      "semester": "semester_05",
       "lecture": "lecture_26_ensemble_methods",
       "category": "Ensemble Learning",
       "complexity": {
@@ -3423,8 +3423,8 @@
     },
     {
       "name": "stacking",
-      "path": "semester_5\\lecture_26_ensemble_methods\\stacking",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_26_ensemble_methods\\stacking",
+      "semester": "semester_05",
       "lecture": "lecture_26_ensemble_methods",
       "category": "Ensemble Learning",
       "complexity": {
@@ -3440,8 +3440,8 @@
     },
     {
       "name": "bayesian_optimization",
-      "path": "semester_5\\lecture_27_hyperparameter_optimization\\bayesian_optimization",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_27_hyperparameter_optimization\\bayesian_optimization",
+      "semester": "semester_05",
       "lecture": "lecture_27_hyperparameter_optimization",
       "category": "Optimization",
       "complexity": {
@@ -3457,8 +3457,8 @@
     },
     {
       "name": "grid_search",
-      "path": "semester_5\\lecture_27_hyperparameter_optimization\\grid_search",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_27_hyperparameter_optimization\\grid_search",
+      "semester": "semester_05",
       "lecture": "lecture_27_hyperparameter_optimization",
       "category": "Optimization",
       "complexity": {
@@ -3474,8 +3474,8 @@
     },
     {
       "name": "optuna",
-      "path": "semester_5\\lecture_27_hyperparameter_optimization\\optuna",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_27_hyperparameter_optimization\\optuna",
+      "semester": "semester_05",
       "lecture": "lecture_27_hyperparameter_optimization",
       "category": "Optimization",
       "complexity": {
@@ -3491,8 +3491,8 @@
     },
     {
       "name": "random_search",
-      "path": "semester_5\\lecture_27_hyperparameter_optimization\\random_search",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_27_hyperparameter_optimization\\random_search",
+      "semester": "semester_05",
       "lecture": "lecture_27_hyperparameter_optimization",
       "category": "Optimization",
       "complexity": {
@@ -3508,8 +3508,8 @@
     },
     {
       "name": "actor_critic",
-      "path": "semester_5\\lecture_28_reinforcement_learning\\actor_critic",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_28_reinforcement_learning\\actor_critic",
+      "semester": "semester_05",
       "lecture": "lecture_28_reinforcement_learning",
       "category": "Reinforcement Learning",
       "complexity": {
@@ -3525,8 +3525,8 @@
     },
     {
       "name": "dqn",
-      "path": "semester_5\\lecture_28_reinforcement_learning\\dqn",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_28_reinforcement_learning\\dqn",
+      "semester": "semester_05",
       "lecture": "lecture_28_reinforcement_learning",
       "category": "Reinforcement Learning",
       "complexity": {
@@ -3542,8 +3542,8 @@
     },
     {
       "name": "policy_gradient",
-      "path": "semester_5\\lecture_28_reinforcement_learning\\policy_gradient",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_28_reinforcement_learning\\policy_gradient",
+      "semester": "semester_05",
       "lecture": "lecture_28_reinforcement_learning",
       "category": "Reinforcement Learning",
       "complexity": {
@@ -3559,8 +3559,8 @@
     },
     {
       "name": "ppo",
-      "path": "semester_5\\lecture_28_reinforcement_learning\\ppo",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_28_reinforcement_learning\\ppo",
+      "semester": "semester_05",
       "lecture": "lecture_28_reinforcement_learning",
       "category": "Reinforcement Learning",
       "complexity": {
@@ -3576,8 +3576,8 @@
     },
     {
       "name": "q_learning",
-      "path": "semester_5\\lecture_28_reinforcement_learning\\q_learning",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_28_reinforcement_learning\\q_learning",
+      "semester": "semester_05",
       "lecture": "lecture_28_reinforcement_learning",
       "category": "Reinforcement Learning",
       "complexity": {
@@ -3593,8 +3593,8 @@
     },
     {
       "name": "glove",
-      "path": "semester_5\\lecture_29_nlp_advanced\\glove",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_29_nlp_advanced\\glove",
+      "semester": "semester_05",
       "lecture": "lecture_29_nlp_advanced",
       "category": "NLP",
       "complexity": {
@@ -3610,8 +3610,8 @@
     },
     {
       "name": "ner",
-      "path": "semester_5\\lecture_29_nlp_advanced\\ner",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_29_nlp_advanced\\ner",
+      "semester": "semester_05",
       "lecture": "lecture_29_nlp_advanced",
       "category": "NLP",
       "complexity": {
@@ -3627,8 +3627,8 @@
     },
     {
       "name": "seq2seq",
-      "path": "semester_5\\lecture_29_nlp_advanced\\seq2seq",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_29_nlp_advanced\\seq2seq",
+      "semester": "semester_05",
       "lecture": "lecture_29_nlp_advanced",
       "category": "NLP",
       "complexity": {
@@ -3644,8 +3644,8 @@
     },
     {
       "name": "word2vec",
-      "path": "semester_5\\lecture_29_nlp_advanced\\word2vec",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_29_nlp_advanced\\word2vec",
+      "semester": "semester_05",
       "lecture": "lecture_29_nlp_advanced",
       "category": "NLP",
       "complexity": {
@@ -3661,8 +3661,8 @@
     },
     {
       "name": "arima",
-      "path": "semester_5\\lecture_30_time_series\\arima",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_30_time_series\\arima",
+      "semester": "semester_05",
       "lecture": "lecture_30_time_series",
       "category": "Time Series",
       "complexity": {
@@ -3679,8 +3679,8 @@
     },
     {
       "name": "lstm_timeseries",
-      "path": "semester_5\\lecture_30_time_series\\lstm_timeseries",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_30_time_series\\lstm_timeseries",
+      "semester": "semester_05",
       "lecture": "lecture_30_time_series",
       "category": "Time Series",
       "complexity": {
@@ -3697,8 +3697,8 @@
     },
     {
       "name": "prophet",
-      "path": "semester_5\\lecture_30_time_series\\prophet",
-      "semester": "semester_5",
+      "path": "semester_05\\lecture_30_time_series\\prophet",
+      "semester": "semester_05",
       "lecture": "lecture_30_time_series",
       "category": "Time Series",
       "complexity": {
@@ -3715,8 +3715,8 @@
     },
     {
       "name": "authentication",
-      "path": "semester_4\\lecture_14_security_patterns\\authentication",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_14_security_patterns\\authentication",
+      "semester": "semester_04",
       "lecture": "lecture_14_security_patterns",
       "category": "Security",
       "complexity": {
@@ -3732,8 +3732,8 @@
     },
     {
       "name": "authorization",
-      "path": "semester_4\\lecture_14_security_patterns\\authorization",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_14_security_patterns\\authorization",
+      "semester": "semester_04",
       "lecture": "lecture_14_security_patterns",
       "category": "Security",
       "complexity": {
@@ -3749,8 +3749,8 @@
     },
     {
       "name": "encryption",
-      "path": "semester_4\\lecture_14_security_patterns\\encryption",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_14_security_patterns\\encryption",
+      "semester": "semester_04",
       "lecture": "lecture_14_security_patterns",
       "category": "Security",
       "complexity": {
@@ -3766,8 +3766,8 @@
     },
     {
       "name": "jwt",
-      "path": "semester_4\\lecture_14_security_patterns\\jwt",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_14_security_patterns\\jwt",
+      "semester": "semester_04",
       "lecture": "lecture_14_security_patterns",
       "category": "Security",
       "complexity": {
@@ -3783,8 +3783,8 @@
     },
     {
       "name": "oauth",
-      "path": "semester_4\\lecture_14_security_patterns\\oauth",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_14_security_patterns\\oauth",
+      "semester": "semester_04",
       "lecture": "lecture_14_security_patterns",
       "category": "Security",
       "complexity": {
@@ -3800,8 +3800,8 @@
     },
     {
       "name": "integration_testing",
-      "path": "semester_4\\lecture_15_testing_patterns\\integration_testing",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_15_testing_patterns\\integration_testing",
+      "semester": "semester_04",
       "lecture": "lecture_15_testing_patterns",
       "category": "Testing",
       "complexity": {
@@ -3817,8 +3817,8 @@
     },
     {
       "name": "mocking",
-      "path": "semester_4\\lecture_15_testing_patterns\\mocking",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_15_testing_patterns\\mocking",
+      "semester": "semester_04",
       "lecture": "lecture_15_testing_patterns",
       "category": "Testing",
       "complexity": {
@@ -3834,8 +3834,8 @@
     },
     {
       "name": "tdd",
-      "path": "semester_4\\lecture_15_testing_patterns\\tdd",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_15_testing_patterns\\tdd",
+      "semester": "semester_04",
       "lecture": "lecture_15_testing_patterns",
       "category": "Testing",
       "complexity": {
@@ -3851,8 +3851,8 @@
     },
     {
       "name": "unit_testing",
-      "path": "semester_4\\lecture_15_testing_patterns\\unit_testing",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_15_testing_patterns\\unit_testing",
+      "semester": "semester_04",
       "lecture": "lecture_15_testing_patterns",
       "category": "Testing",
       "complexity": {
@@ -3868,8 +3868,8 @@
     },
     {
       "name": "blue_green",
-      "path": "semester_4\\lecture_16_deployment_patterns\\blue_green",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_16_deployment_patterns\\blue_green",
+      "semester": "semester_04",
       "lecture": "lecture_16_deployment_patterns",
       "category": "Deployment",
       "complexity": {
@@ -3885,8 +3885,8 @@
     },
     {
       "name": "canary",
-      "path": "semester_4\\lecture_16_deployment_patterns\\canary",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_16_deployment_patterns\\canary",
+      "semester": "semester_04",
       "lecture": "lecture_16_deployment_patterns",
       "category": "Deployment",
       "complexity": {
@@ -3902,8 +3902,8 @@
     },
     {
       "name": "circuit_breaker",
-      "path": "semester_4\\lecture_16_deployment_patterns\\circuit_breaker",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_16_deployment_patterns\\circuit_breaker",
+      "semester": "semester_04",
       "lecture": "lecture_16_deployment_patterns",
       "category": "Deployment",
       "complexity": {
@@ -3919,8 +3919,8 @@
     },
     {
       "name": "retry_pattern",
-      "path": "semester_4\\lecture_16_deployment_patterns\\retry_pattern",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_16_deployment_patterns\\retry_pattern",
+      "semester": "semester_04",
       "lecture": "lecture_16_deployment_patterns",
       "category": "Deployment",
       "complexity": {
@@ -3936,8 +3936,8 @@
     },
     {
       "name": "caching",
-      "path": "semester_4\\lecture_17_performance\\caching",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_17_performance\\caching",
+      "semester": "semester_04",
       "lecture": "lecture_17_performance",
       "category": "Performance",
       "complexity": {
@@ -3953,8 +3953,8 @@
     },
     {
       "name": "load_balancing",
-      "path": "semester_4\\lecture_17_performance\\load_balancing",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_17_performance\\load_balancing",
+      "semester": "semester_04",
       "lecture": "lecture_17_performance",
       "category": "Performance",
       "complexity": {
@@ -3970,8 +3970,8 @@
     },
     {
       "name": "rate_limiting",
-      "path": "semester_4\\lecture_17_performance\\rate_limiting",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_17_performance\\rate_limiting",
+      "semester": "semester_04",
       "lecture": "lecture_17_performance",
       "category": "Performance",
       "complexity": {
@@ -3987,8 +3987,8 @@
     },
     {
       "name": "aes",
-      "path": "semester_4\\lecture_18_crypto_algorithms\\aes",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_18_crypto_algorithms\\aes",
+      "semester": "semester_04",
       "lecture": "lecture_18_crypto_algorithms",
       "category": "Cryptography",
       "complexity": {
@@ -4004,8 +4004,8 @@
     },
     {
       "name": "bcrypt",
-      "path": "semester_4\\lecture_18_crypto_algorithms\\bcrypt",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_18_crypto_algorithms\\bcrypt",
+      "semester": "semester_04",
       "lecture": "lecture_18_crypto_algorithms",
       "category": "Cryptography",
       "complexity": {
@@ -4021,8 +4021,8 @@
     },
     {
       "name": "rsa",
-      "path": "semester_4\\lecture_18_crypto_algorithms\\rsa",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_18_crypto_algorithms\\rsa",
+      "semester": "semester_04",
       "lecture": "lecture_18_crypto_algorithms",
       "category": "Cryptography",
       "complexity": {
@@ -4038,8 +4038,8 @@
     },
     {
       "name": "sha256",
-      "path": "semester_4\\lecture_18_crypto_algorithms\\sha256",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_18_crypto_algorithms\\sha256",
+      "semester": "semester_04",
       "lecture": "lecture_18_crypto_algorithms",
       "category": "Cryptography",
       "complexity": {
@@ -4055,8 +4055,8 @@
     },
     {
       "name": "consistent_hashing",
-      "path": "semester_4\\lecture_19_distributed_patterns\\consistent_hashing",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_19_distributed_patterns\\consistent_hashing",
+      "semester": "semester_04",
       "lecture": "lecture_19_distributed_patterns",
       "category": "Distributed Systems",
       "complexity": {
@@ -4072,8 +4072,8 @@
     },
     {
       "name": "gossip_protocol",
-      "path": "semester_4\\lecture_19_distributed_patterns\\gossip_protocol",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_19_distributed_patterns\\gossip_protocol",
+      "semester": "semester_04",
       "lecture": "lecture_19_distributed_patterns",
       "category": "Distributed Systems",
       "complexity": {
@@ -4089,8 +4089,8 @@
     },
     {
       "name": "leader_election",
-      "path": "semester_4\\lecture_19_distributed_patterns\\leader_election",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_19_distributed_patterns\\leader_election",
+      "semester": "semester_04",
       "lecture": "lecture_19_distributed_patterns",
       "category": "Distributed Systems",
       "complexity": {
@@ -4106,8 +4106,8 @@
     },
     {
       "name": "two_phase_commit",
-      "path": "semester_4\\lecture_19_distributed_patterns\\two_phase_commit",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_19_distributed_patterns\\two_phase_commit",
+      "semester": "semester_04",
       "lecture": "lecture_19_distributed_patterns",
       "category": "Distributed Systems",
       "complexity": {
@@ -4123,8 +4123,8 @@
     },
     {
       "name": "distributed_tracing",
-      "path": "semester_4\\lecture_20_monitoring_observability\\distributed_tracing",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_20_monitoring_observability\\distributed_tracing",
+      "semester": "semester_04",
       "lecture": "lecture_20_monitoring_observability",
       "category": "Observability",
       "complexity": {
@@ -4140,8 +4140,8 @@
     },
     {
       "name": "log_aggregation",
-      "path": "semester_4\\lecture_20_monitoring_observability\\log_aggregation",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_20_monitoring_observability\\log_aggregation",
+      "semester": "semester_04",
       "lecture": "lecture_20_monitoring_observability",
       "category": "Observability",
       "complexity": {
@@ -4157,8 +4157,8 @@
     },
     {
       "name": "metrics_collection",
-      "path": "semester_4\\lecture_20_monitoring_observability\\metrics_collection",
-      "semester": "semester_4",
+      "path": "semester_04\\lecture_20_monitoring_observability\\metrics_collection",
+      "semester": "semester_04",
       "lecture": "lecture_20_monitoring_observability",
       "category": "Observability",
       "complexity": {
@@ -4174,8 +4174,8 @@
     },
     {
       "name": "bellman_ford",
-      "path": "semester_3\\lecture_10_graph_algorithms\\bellman_ford",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_10_graph_algorithms\\bellman_ford",
+      "semester": "semester_03",
       "lecture": "lecture_10_graph_algorithms",
       "category": "Graph Algorithm",
       "complexity": {
@@ -4191,8 +4191,8 @@
     },
     {
       "name": "bfs",
-      "path": "semester_3\\lecture_10_graph_algorithms\\bfs",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_10_graph_algorithms\\bfs",
+      "semester": "semester_03",
       "lecture": "lecture_10_graph_algorithms",
       "category": "Graph Algorithm",
       "complexity": {
@@ -4208,8 +4208,8 @@
     },
     {
       "name": "dfs",
-      "path": "semester_3\\lecture_10_graph_algorithms\\dfs",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_10_graph_algorithms\\dfs",
+      "semester": "semester_03",
       "lecture": "lecture_10_graph_algorithms",
       "category": "Graph Algorithm",
       "complexity": {
@@ -4225,8 +4225,8 @@
     },
     {
       "name": "dijkstra",
-      "path": "semester_3\\lecture_10_graph_algorithms\\dijkstra",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_10_graph_algorithms\\dijkstra",
+      "semester": "semester_03",
       "lecture": "lecture_10_graph_algorithms",
       "category": "Graph Algorithm",
       "complexity": {
@@ -4242,8 +4242,8 @@
     },
     {
       "name": "floyd_warshall",
-      "path": "semester_3\\lecture_10_graph_algorithms\\floyd_warshall",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_10_graph_algorithms\\floyd_warshall",
+      "semester": "semester_03",
       "lecture": "lecture_10_graph_algorithms",
       "category": "Graph Algorithm",
       "complexity": {
@@ -4259,8 +4259,8 @@
     },
     {
       "name": "edit_distance",
-      "path": "semester_3\\lecture_11_dynamic_programming\\edit_distance",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_11_dynamic_programming\\edit_distance",
+      "semester": "semester_03",
       "lecture": "lecture_11_dynamic_programming",
       "category": "Dynamic Programming",
       "complexity": {
@@ -4276,8 +4276,8 @@
     },
     {
       "name": "fibonacci",
-      "path": "semester_3\\lecture_11_dynamic_programming\\fibonacci",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_11_dynamic_programming\\fibonacci",
+      "semester": "semester_03",
       "lecture": "lecture_11_dynamic_programming",
       "category": "Dynamic Programming",
       "complexity": {
@@ -4293,8 +4293,8 @@
     },
     {
       "name": "knapsack",
-      "path": "semester_3\\lecture_11_dynamic_programming\\knapsack",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_11_dynamic_programming\\knapsack",
+      "semester": "semester_03",
       "lecture": "lecture_11_dynamic_programming",
       "category": "Dynamic Programming",
       "complexity": {
@@ -4310,8 +4310,8 @@
     },
     {
       "name": "longest_common_subsequence",
-      "path": "semester_3\\lecture_11_dynamic_programming\\longest_common_subsequence",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_11_dynamic_programming\\longest_common_subsequence",
+      "semester": "semester_03",
       "lecture": "lecture_11_dynamic_programming",
       "category": "Dynamic Programming",
       "complexity": {
@@ -4327,8 +4327,8 @@
     },
     {
       "name": "decision_tree",
-      "path": "semester_3\\lecture_12_ml_algorithms\\decision_tree",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_12_ml_algorithms\\decision_tree",
+      "semester": "semester_03",
       "lecture": "lecture_12_ml_algorithms",
       "category": "Machine Learning",
       "complexity": {
@@ -4344,8 +4344,8 @@
     },
     {
       "name": "kmeans",
-      "path": "semester_3\\lecture_12_ml_algorithms\\kmeans",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_12_ml_algorithms\\kmeans",
+      "semester": "semester_03",
       "lecture": "lecture_12_ml_algorithms",
       "category": "Machine Learning",
       "complexity": {
@@ -4361,8 +4361,8 @@
     },
     {
       "name": "knn",
-      "path": "semester_3\\lecture_12_ml_algorithms\\knn",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_12_ml_algorithms\\knn",
+      "semester": "semester_03",
       "lecture": "lecture_12_ml_algorithms",
       "category": "Machine Learning",
       "complexity": {
@@ -4378,8 +4378,8 @@
     },
     {
       "name": "linear_regression",
-      "path": "semester_3\\lecture_12_ml_algorithms\\linear_regression",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_12_ml_algorithms\\linear_regression",
+      "semester": "semester_03",
       "lecture": "lecture_12_ml_algorithms",
       "category": "Machine Learning",
       "complexity": {
@@ -4395,8 +4395,8 @@
     },
     {
       "name": "logistic_regression",
-      "path": "semester_3\\lecture_12_ml_algorithms\\logistic_regression",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_12_ml_algorithms\\logistic_regression",
+      "semester": "semester_03",
       "lecture": "lecture_12_ml_algorithms",
       "category": "Machine Learning",
       "complexity": {
@@ -4412,8 +4412,8 @@
     },
     {
       "name": "naive_bayes",
-      "path": "semester_3\\lecture_12_ml_algorithms\\naive_bayes",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_12_ml_algorithms\\naive_bayes",
+      "semester": "semester_03",
       "lecture": "lecture_12_ml_algorithms",
       "category": null,
       "complexity": {},
@@ -4426,8 +4426,8 @@
     },
     {
       "name": "svm",
-      "path": "semester_3\\lecture_12_ml_algorithms\\svm",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_12_ml_algorithms\\svm",
+      "semester": "semester_03",
       "lecture": "lecture_12_ml_algorithms",
       "category": null,
       "complexity": {},
@@ -4440,8 +4440,8 @@
     },
     {
       "name": "k_means",
-      "path": "semester_3\\lecture_13_clustering\\k_means",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_13_clustering\\k_means",
+      "semester": "semester_03",
       "lecture": "lecture_13_clustering",
       "category": null,
       "complexity": {},
@@ -4454,8 +4454,8 @@
     },
     {
       "name": "cqrs",
-      "path": "semester_3\\lecture_13_integration_patterns\\cqrs",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_13_integration_patterns\\cqrs",
+      "semester": "semester_03",
       "lecture": "lecture_13_integration_patterns",
       "category": "Integration",
       "complexity": {
@@ -4471,8 +4471,8 @@
     },
     {
       "name": "event_sourcing",
-      "path": "semester_3\\lecture_13_integration_patterns\\event_sourcing",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_13_integration_patterns\\event_sourcing",
+      "semester": "semester_03",
       "lecture": "lecture_13_integration_patterns",
       "category": "Integration",
       "complexity": {
@@ -4488,8 +4488,8 @@
     },
     {
       "name": "message_queue",
-      "path": "semester_3\\lecture_13_integration_patterns\\message_queue",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_13_integration_patterns\\message_queue",
+      "semester": "semester_03",
       "lecture": "lecture_13_integration_patterns",
       "category": "Integration",
       "complexity": {
@@ -4505,8 +4505,8 @@
     },
     {
       "name": "publish_subscribe",
-      "path": "semester_3\\lecture_13_integration_patterns\\publish_subscribe",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_13_integration_patterns\\publish_subscribe",
+      "semester": "semester_03",
       "lecture": "lecture_13_integration_patterns",
       "category": "Integration",
       "complexity": {
@@ -4522,8 +4522,8 @@
     },
     {
       "name": "boyer_moore",
-      "path": "semester_3\\lecture_14_string_algorithms\\boyer_moore",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_14_string_algorithms\\boyer_moore",
+      "semester": "semester_03",
       "lecture": "lecture_14_string_algorithms",
       "category": "String Algorithm",
       "complexity": {
@@ -4539,8 +4539,8 @@
     },
     {
       "name": "kmp",
-      "path": "semester_3\\lecture_14_string_algorithms\\kmp",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_14_string_algorithms\\kmp",
+      "semester": "semester_03",
       "lecture": "lecture_14_string_algorithms",
       "category": "String Algorithm",
       "complexity": {
@@ -4556,8 +4556,8 @@
     },
     {
       "name": "rabin_karp",
-      "path": "semester_3\\lecture_14_string_algorithms\\rabin_karp",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_14_string_algorithms\\rabin_karp",
+      "semester": "semester_03",
       "lecture": "lecture_14_string_algorithms",
       "category": "String Algorithm",
       "complexity": {
@@ -4573,8 +4573,8 @@
     },
     {
       "name": "activity_selection",
-      "path": "semester_3\\lecture_15_greedy_algorithms\\activity_selection",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_15_greedy_algorithms\\activity_selection",
+      "semester": "semester_03",
       "lecture": "lecture_15_greedy_algorithms",
       "category": "Greedy Algorithm",
       "complexity": {
@@ -4591,8 +4591,8 @@
     },
     {
       "name": "fractional_knapsack",
-      "path": "semester_3\\lecture_15_greedy_algorithms\\fractional_knapsack",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_15_greedy_algorithms\\fractional_knapsack",
+      "semester": "semester_03",
       "lecture": "lecture_15_greedy_algorithms",
       "category": "Greedy Algorithm",
       "complexity": {
@@ -4608,8 +4608,8 @@
     },
     {
       "name": "huffman",
-      "path": "semester_3\\lecture_15_greedy_algorithms\\huffman",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_15_greedy_algorithms\\huffman",
+      "semester": "semester_03",
       "lecture": "lecture_15_greedy_algorithms",
       "category": "Greedy Algorithm",
       "complexity": {
@@ -4625,8 +4625,8 @@
     },
     {
       "name": "gradient_descent",
-      "path": "semester_3\\lecture_16_advanced_ml\\gradient_descent",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_16_advanced_ml\\gradient_descent",
+      "semester": "semester_03",
       "lecture": "lecture_16_advanced_ml",
       "category": "Machine Learning",
       "complexity": {
@@ -4642,8 +4642,8 @@
     },
     {
       "name": "neural_network",
-      "path": "semester_3\\lecture_16_advanced_ml\\neural_network",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_16_advanced_ml\\neural_network",
+      "semester": "semester_03",
       "lecture": "lecture_16_advanced_ml",
       "category": "Machine Learning",
       "complexity": {
@@ -4659,8 +4659,8 @@
     },
     {
       "name": "random_forest",
-      "path": "semester_3\\lecture_16_advanced_ml\\random_forest",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_16_advanced_ml\\random_forest",
+      "semester": "semester_03",
       "lecture": "lecture_16_advanced_ml",
       "category": "Machine Learning",
       "complexity": {
@@ -4676,8 +4676,8 @@
     },
     {
       "name": "svm",
-      "path": "semester_3\\lecture_16_advanced_ml\\svm",
-      "semester": "semester_3",
+      "path": "semester_03\\lecture_16_advanced_ml\\svm",
+      "semester": "semester_03",
       "lecture": "lecture_16_advanced_ml",
       "category": "Machine Learning",
       "complexity": {
@@ -4693,8 +4693,8 @@
     },
     {
       "name": "dependency_inversion",
-      "path": "semester_2\\lecture_06_solid_principles\\dependency_inversion",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_06_solid_principles\\dependency_inversion",
+      "semester": "semester_02",
       "lecture": "lecture_06_solid_principles",
       "category": "SOLID",
       "complexity": {
@@ -4710,8 +4710,8 @@
     },
     {
       "name": "interface_segregation",
-      "path": "semester_2\\lecture_06_solid_principles\\interface_segregation",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_06_solid_principles\\interface_segregation",
+      "semester": "semester_02",
       "lecture": "lecture_06_solid_principles",
       "category": "SOLID",
       "complexity": {
@@ -4727,8 +4727,8 @@
     },
     {
       "name": "liskov_substitution",
-      "path": "semester_2\\lecture_06_solid_principles\\liskov_substitution",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_06_solid_principles\\liskov_substitution",
+      "semester": "semester_02",
       "lecture": "lecture_06_solid_principles",
       "category": "SOLID",
       "complexity": {
@@ -4744,8 +4744,8 @@
     },
     {
       "name": "open_closed",
-      "path": "semester_2\\lecture_06_solid_principles\\open_closed",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_06_solid_principles\\open_closed",
+      "semester": "semester_02",
       "lecture": "lecture_06_solid_principles",
       "category": "SOLID",
       "complexity": {
@@ -4761,8 +4761,8 @@
     },
     {
       "name": "single_responsibility",
-      "path": "semester_2\\lecture_06_solid_principles\\single_responsibility",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_06_solid_principles\\single_responsibility",
+      "semester": "semester_02",
       "lecture": "lecture_06_solid_principles",
       "category": "SOLID",
       "complexity": {
@@ -4778,8 +4778,8 @@
     },
     {
       "name": "abstract_factory",
-      "path": "semester_2\\lecture_07_creational_patterns\\abstract_factory",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_07_creational_patterns\\abstract_factory",
+      "semester": "semester_02",
       "lecture": "lecture_07_creational_patterns",
       "category": "Creational Pattern",
       "complexity": {
@@ -4795,8 +4795,8 @@
     },
     {
       "name": "builder",
-      "path": "semester_2\\lecture_07_creational_patterns\\builder",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_07_creational_patterns\\builder",
+      "semester": "semester_02",
       "lecture": "lecture_07_creational_patterns",
       "category": "Creational Pattern",
       "complexity": {
@@ -4812,8 +4812,8 @@
     },
     {
       "name": "factory",
-      "path": "semester_2\\lecture_07_creational_patterns\\factory",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_07_creational_patterns\\factory",
+      "semester": "semester_02",
       "lecture": "lecture_07_creational_patterns",
       "category": "Creational Pattern",
       "complexity": {
@@ -4829,8 +4829,8 @@
     },
     {
       "name": "prototype",
-      "path": "semester_2\\lecture_07_creational_patterns\\prototype",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_07_creational_patterns\\prototype",
+      "semester": "semester_02",
       "lecture": "lecture_07_creational_patterns",
       "category": "Creational Pattern",
       "complexity": {
@@ -4846,8 +4846,8 @@
     },
     {
       "name": "singleton",
-      "path": "semester_2\\lecture_07_creational_patterns\\singleton",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_07_creational_patterns\\singleton",
+      "semester": "semester_02",
       "lecture": "lecture_07_creational_patterns",
       "category": "Creational Pattern",
       "complexity": {
@@ -4863,8 +4863,8 @@
     },
     {
       "name": "adapter",
-      "path": "semester_2\\lecture_08_structural_patterns\\adapter",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_08_structural_patterns\\adapter",
+      "semester": "semester_02",
       "lecture": "lecture_08_structural_patterns",
       "category": "Structural Pattern",
       "complexity": {
@@ -4880,8 +4880,8 @@
     },
     {
       "name": "bridge",
-      "path": "semester_2\\lecture_08_structural_patterns\\bridge",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_08_structural_patterns\\bridge",
+      "semester": "semester_02",
       "lecture": "lecture_08_structural_patterns",
       "category": "Structural Pattern",
       "complexity": {
@@ -4897,8 +4897,8 @@
     },
     {
       "name": "composite",
-      "path": "semester_2\\lecture_08_structural_patterns\\composite",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_08_structural_patterns\\composite",
+      "semester": "semester_02",
       "lecture": "lecture_08_structural_patterns",
       "category": "Structural Pattern",
       "complexity": {
@@ -4914,8 +4914,8 @@
     },
     {
       "name": "decorator",
-      "path": "semester_2\\lecture_08_structural_patterns\\decorator",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_08_structural_patterns\\decorator",
+      "semester": "semester_02",
       "lecture": "lecture_08_structural_patterns",
       "category": "Structural Pattern",
       "complexity": {
@@ -4931,8 +4931,8 @@
     },
     {
       "name": "facade",
-      "path": "semester_2\\lecture_08_structural_patterns\\facade",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_08_structural_patterns\\facade",
+      "semester": "semester_02",
       "lecture": "lecture_08_structural_patterns",
       "category": "Structural Pattern",
       "complexity": {
@@ -4948,8 +4948,8 @@
     },
     {
       "name": "proxy",
-      "path": "semester_2\\lecture_08_structural_patterns\\proxy",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_08_structural_patterns\\proxy",
+      "semester": "semester_02",
       "lecture": "lecture_08_structural_patterns",
       "category": "Structural Pattern",
       "complexity": {
@@ -4965,8 +4965,8 @@
     },
     {
       "name": "chain_of_responsibility",
-      "path": "semester_2\\lecture_09_behavioral_patterns\\chain_of_responsibility",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_09_behavioral_patterns\\chain_of_responsibility",
+      "semester": "semester_02",
       "lecture": "lecture_09_behavioral_patterns",
       "category": "Behavioral Pattern",
       "complexity": {
@@ -4982,8 +4982,8 @@
     },
     {
       "name": "command",
-      "path": "semester_2\\lecture_09_behavioral_patterns\\command",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_09_behavioral_patterns\\command",
+      "semester": "semester_02",
       "lecture": "lecture_09_behavioral_patterns",
       "category": "Behavioral Pattern",
       "complexity": {
@@ -4999,8 +4999,8 @@
     },
     {
       "name": "iterator",
-      "path": "semester_2\\lecture_09_behavioral_patterns\\iterator",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_09_behavioral_patterns\\iterator",
+      "semester": "semester_02",
       "lecture": "lecture_09_behavioral_patterns",
       "category": "Behavioral Pattern",
       "complexity": {
@@ -5016,8 +5016,8 @@
     },
     {
       "name": "observer",
-      "path": "semester_2\\lecture_09_behavioral_patterns\\observer",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_09_behavioral_patterns\\observer",
+      "semester": "semester_02",
       "lecture": "lecture_09_behavioral_patterns",
       "category": "Behavioral Pattern",
       "complexity": {
@@ -5033,8 +5033,8 @@
     },
     {
       "name": "strategy",
-      "path": "semester_2\\lecture_09_behavioral_patterns\\strategy",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_09_behavioral_patterns\\strategy",
+      "semester": "semester_02",
       "lecture": "lecture_09_behavioral_patterns",
       "category": "Behavioral Pattern",
       "complexity": {
@@ -5050,8 +5050,8 @@
     },
     {
       "name": "template_method",
-      "path": "semester_2\\lecture_09_behavioral_patterns\\template_method",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_09_behavioral_patterns\\template_method",
+      "semester": "semester_02",
       "lecture": "lecture_09_behavioral_patterns",
       "category": "Behavioral Pattern",
       "complexity": {
@@ -5067,8 +5067,8 @@
     },
     {
       "name": "clean_architecture",
-      "path": "semester_2\\lecture_10_architectural_patterns\\clean_architecture",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_10_architectural_patterns\\clean_architecture",
+      "semester": "semester_02",
       "lecture": "lecture_10_architectural_patterns",
       "category": "Architectural Pattern",
       "complexity": {
@@ -5084,8 +5084,8 @@
     },
     {
       "name": "hexagonal",
-      "path": "semester_2\\lecture_10_architectural_patterns\\hexagonal",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_10_architectural_patterns\\hexagonal",
+      "semester": "semester_02",
       "lecture": "lecture_10_architectural_patterns",
       "category": "Architectural Pattern",
       "complexity": {
@@ -5101,8 +5101,8 @@
     },
     {
       "name": "mvc",
-      "path": "semester_2\\lecture_10_architectural_patterns\\mvc",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_10_architectural_patterns\\mvc",
+      "semester": "semester_02",
       "lecture": "lecture_10_architectural_patterns",
       "category": "Architectural Pattern",
       "complexity": {
@@ -5118,8 +5118,8 @@
     },
     {
       "name": "mvvm",
-      "path": "semester_2\\lecture_10_architectural_patterns\\mvvm",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_10_architectural_patterns\\mvvm",
+      "semester": "semester_02",
       "lecture": "lecture_10_architectural_patterns",
       "category": "Architectural Pattern",
       "complexity": {
@@ -5135,8 +5135,8 @@
     },
     {
       "name": "observer",
-      "path": "semester_2\\lecture_10_behavioral_patterns\\observer",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_10_behavioral_patterns\\observer",
+      "semester": "semester_02",
       "lecture": "lecture_10_behavioral_patterns",
       "category": null,
       "complexity": {},
@@ -5149,8 +5149,8 @@
     },
     {
       "name": "strategy",
-      "path": "semester_2\\lecture_10_behavioral_patterns\\strategy",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_10_behavioral_patterns\\strategy",
+      "semester": "semester_02",
       "lecture": "lecture_10_behavioral_patterns",
       "category": null,
       "complexity": {},
@@ -5163,8 +5163,8 @@
     },
     {
       "name": "data_mapper",
-      "path": "semester_2\\lecture_11_repository_patterns\\data_mapper",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_11_repository_patterns\\data_mapper",
+      "semester": "semester_02",
       "lecture": "lecture_11_repository_patterns",
       "category": "Data Access Pattern",
       "complexity": {
@@ -5180,8 +5180,8 @@
     },
     {
       "name": "repository",
-      "path": "semester_2\\lecture_11_repository_patterns\\repository",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_11_repository_patterns\\repository",
+      "semester": "semester_02",
       "lecture": "lecture_11_repository_patterns",
       "category": "Data Access Pattern",
       "complexity": {
@@ -5197,8 +5197,8 @@
     },
     {
       "name": "unit_of_work",
-      "path": "semester_2\\lecture_11_repository_patterns\\unit_of_work",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_11_repository_patterns\\unit_of_work",
+      "semester": "semester_02",
       "lecture": "lecture_11_repository_patterns",
       "category": "Data Access Pattern",
       "complexity": {
@@ -5214,8 +5214,8 @@
     },
     {
       "name": "producer_consumer",
-      "path": "semester_2\\lecture_12_concurrency_patterns\\producer_consumer",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_12_concurrency_patterns\\producer_consumer",
+      "semester": "semester_02",
       "lecture": "lecture_12_concurrency_patterns",
       "category": "Concurrency",
       "complexity": {
@@ -5231,8 +5231,8 @@
     },
     {
       "name": "readers_writers",
-      "path": "semester_2\\lecture_12_concurrency_patterns\\readers_writers",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_12_concurrency_patterns\\readers_writers",
+      "semester": "semester_02",
       "lecture": "lecture_12_concurrency_patterns",
       "category": "Concurrency",
       "complexity": {
@@ -5248,8 +5248,8 @@
     },
     {
       "name": "thread_pool",
-      "path": "semester_2\\lecture_12_concurrency_patterns\\thread_pool",
-      "semester": "semester_2",
+      "path": "semester_02\\lecture_12_concurrency_patterns\\thread_pool",
+      "semester": "semester_02",
       "lecture": "lecture_12_concurrency_patterns",
       "category": "Concurrency",
       "complexity": {
@@ -11047,8 +11047,8 @@
     },
     {
       "name": "bubble_sort",
-      "path": "semester_1\\lecture_01_sorting_fundamentals\\bubble_sort",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_01_sorting_fundamentals\\bubble_sort",
+      "semester": "semester_01",
       "lecture": "lecture_01_sorting_fundamentals",
       "category": "Sorting",
       "complexity": {
@@ -11064,8 +11064,8 @@
     },
     {
       "name": "insertion_sort",
-      "path": "semester_1\\lecture_01_sorting_fundamentals\\insertion_sort",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_01_sorting_fundamentals\\insertion_sort",
+      "semester": "semester_01",
       "lecture": "lecture_01_sorting_fundamentals",
       "category": "Sorting",
       "complexity": {
@@ -11081,8 +11081,8 @@
     },
     {
       "name": "selection_sort",
-      "path": "semester_1\\lecture_01_sorting_fundamentals\\selection_sort",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_01_sorting_fundamentals\\selection_sort",
+      "semester": "semester_01",
       "lecture": "lecture_01_sorting_fundamentals",
       "category": "Sorting",
       "complexity": {
@@ -11098,8 +11098,8 @@
     },
     {
       "name": "heap_sort",
-      "path": "semester_1\\lecture_02_efficient_sorting\\heap_sort",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_02_efficient_sorting\\heap_sort",
+      "semester": "semester_01",
       "lecture": "lecture_02_efficient_sorting",
       "category": "Sorting",
       "complexity": {
@@ -11115,8 +11115,8 @@
     },
     {
       "name": "merge_sort",
-      "path": "semester_1\\lecture_02_efficient_sorting\\merge_sort",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_02_efficient_sorting\\merge_sort",
+      "semester": "semester_01",
       "lecture": "lecture_02_efficient_sorting",
       "category": "Sorting",
       "complexity": {
@@ -11132,8 +11132,8 @@
     },
     {
       "name": "quick_sort",
-      "path": "semester_1\\lecture_02_efficient_sorting\\quick_sort",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_02_efficient_sorting\\quick_sort",
+      "semester": "semester_01",
       "lecture": "lecture_02_efficient_sorting",
       "category": "Sorting",
       "complexity": {
@@ -11149,8 +11149,8 @@
     },
     {
       "name": "bucket_sort",
-      "path": "semester_1\\lecture_03_specialized_sorting\\bucket_sort",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_03_specialized_sorting\\bucket_sort",
+      "semester": "semester_01",
       "lecture": "lecture_03_specialized_sorting",
       "category": "Sorting",
       "complexity": {
@@ -11166,8 +11166,8 @@
     },
     {
       "name": "counting_sort",
-      "path": "semester_1\\lecture_03_specialized_sorting\\counting_sort",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_03_specialized_sorting\\counting_sort",
+      "semester": "semester_01",
       "lecture": "lecture_03_specialized_sorting",
       "category": "Sorting",
       "complexity": {
@@ -11183,8 +11183,8 @@
     },
     {
       "name": "radix_sort",
-      "path": "semester_1\\lecture_03_specialized_sorting\\radix_sort",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_03_specialized_sorting\\radix_sort",
+      "semester": "semester_01",
       "lecture": "lecture_03_specialized_sorting",
       "category": "Sorting",
       "complexity": {
@@ -11200,8 +11200,8 @@
     },
     {
       "name": "binary_search",
-      "path": "semester_1\\lecture_04_searching\\binary_search",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_04_searching\\binary_search",
+      "semester": "semester_01",
       "lecture": "lecture_04_searching",
       "category": "Searching",
       "complexity": {
@@ -11217,8 +11217,8 @@
     },
     {
       "name": "interpolation_search",
-      "path": "semester_1\\lecture_04_searching\\interpolation_search",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_04_searching\\interpolation_search",
+      "semester": "semester_01",
       "lecture": "lecture_04_searching",
       "category": "Searching",
       "complexity": {
@@ -11234,8 +11234,8 @@
     },
     {
       "name": "jump_search",
-      "path": "semester_1\\lecture_04_searching\\jump_search",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_04_searching\\jump_search",
+      "semester": "semester_01",
       "lecture": "lecture_04_searching",
       "category": "Searching",
       "complexity": {
@@ -11251,8 +11251,8 @@
     },
     {
       "name": "linear_search",
-      "path": "semester_1\\lecture_04_searching\\linear_search",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_04_searching\\linear_search",
+      "semester": "semester_01",
       "lecture": "lecture_04_searching",
       "category": "Searching",
       "complexity": {
@@ -11268,8 +11268,8 @@
     },
     {
       "name": "avl_tree",
-      "path": "semester_1\\lecture_05_trees\\avl_tree",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_05_trees\\avl_tree",
+      "semester": "semester_01",
       "lecture": "lecture_05_trees",
       "category": "Data Structure",
       "complexity": {
@@ -11285,8 +11285,8 @@
     },
     {
       "name": "binary_search_tree",
-      "path": "semester_1\\lecture_05_trees\\binary_search_tree",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_05_trees\\binary_search_tree",
+      "semester": "semester_01",
       "lecture": "lecture_05_trees",
       "category": "Data Structure",
       "complexity": {
@@ -11302,8 +11302,8 @@
     },
     {
       "name": "binary_tree",
-      "path": "semester_1\\lecture_05_trees\\binary_tree",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_05_trees\\binary_tree",
+      "semester": "semester_01",
       "lecture": "lecture_05_trees",
       "category": "Data Structure",
       "complexity": {
@@ -11319,8 +11319,8 @@
     },
     {
       "name": "avl_tree",
-      "path": "semester_1\\lecture_06_advanced_trees\\avl_tree",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_06_advanced_trees\\avl_tree",
+      "semester": "semester_01",
       "lecture": "lecture_06_advanced_trees",
       "category": null,
       "complexity": {},
@@ -11333,8 +11333,8 @@
     },
     {
       "name": "b_tree",
-      "path": "semester_1\\lecture_06_advanced_trees\\b_tree",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_06_advanced_trees\\b_tree",
+      "semester": "semester_01",
       "lecture": "lecture_06_advanced_trees",
       "category": "Data Structure",
       "complexity": {
@@ -11350,8 +11350,8 @@
     },
     {
       "name": "red_black_tree",
-      "path": "semester_1\\lecture_06_advanced_trees\\red_black_tree",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_06_advanced_trees\\red_black_tree",
+      "semester": "semester_01",
       "lecture": "lecture_06_advanced_trees",
       "category": "Data Structure",
       "complexity": {
@@ -11367,8 +11367,8 @@
     },
     {
       "name": "trie",
-      "path": "semester_1\\lecture_06_advanced_trees\\trie",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_06_advanced_trees\\trie",
+      "semester": "semester_01",
       "lecture": "lecture_06_advanced_trees",
       "category": "Data Structure",
       "complexity": {
@@ -11384,8 +11384,8 @@
     },
     {
       "name": "binary_heap",
-      "path": "semester_1\\lecture_07_heaps_priority\\binary_heap",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_07_heaps_priority\\binary_heap",
+      "semester": "semester_01",
       "lecture": "lecture_07_heaps_priority",
       "category": "Data Structure",
       "complexity": {
@@ -11401,8 +11401,8 @@
     },
     {
       "name": "fibonacci_heap",
-      "path": "semester_1\\lecture_07_heaps_priority\\fibonacci_heap",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_07_heaps_priority\\fibonacci_heap",
+      "semester": "semester_01",
       "lecture": "lecture_07_heaps_priority",
       "category": "Data Structure",
       "complexity": {
@@ -11418,8 +11418,8 @@
     },
     {
       "name": "priority_queue",
-      "path": "semester_1\\lecture_07_heaps_priority\\priority_queue",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_07_heaps_priority\\priority_queue",
+      "semester": "semester_01",
       "lecture": "lecture_07_heaps_priority",
       "category": "Data Structure",
       "complexity": {
@@ -11435,8 +11435,8 @@
     },
     {
       "name": "chaining",
-      "path": "semester_1\\lecture_08_hash_tables\\chaining",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_08_hash_tables\\chaining",
+      "semester": "semester_01",
       "lecture": "lecture_08_hash_tables",
       "category": "Data Structure",
       "complexity": {
@@ -11452,8 +11452,8 @@
     },
     {
       "name": "hash_table",
-      "path": "semester_1\\lecture_08_hash_tables\\hash_table",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_08_hash_tables\\hash_table",
+      "semester": "semester_01",
       "lecture": "lecture_08_hash_tables",
       "category": "Data Structure",
       "complexity": {
@@ -11469,8 +11469,8 @@
     },
     {
       "name": "open_addressing",
-      "path": "semester_1\\lecture_08_hash_tables\\open_addressing",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_08_hash_tables\\open_addressing",
+      "semester": "semester_01",
       "lecture": "lecture_08_hash_tables",
       "category": "Data Structure",
       "complexity": {
@@ -11486,8 +11486,8 @@
     },
     {
       "name": "bellman_ford",
-      "path": "semester_1\\lecture_09_graph_algorithms\\bellman_ford",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_09_graph_algorithms\\bellman_ford",
+      "semester": "semester_01",
       "lecture": "lecture_09_graph_algorithms",
       "category": null,
       "complexity": {},
@@ -11500,8 +11500,8 @@
     },
     {
       "name": "bfs",
-      "path": "semester_1\\lecture_09_graph_algorithms\\bfs",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_09_graph_algorithms\\bfs",
+      "semester": "semester_01",
       "lecture": "lecture_09_graph_algorithms",
       "category": null,
       "complexity": {},
@@ -11514,8 +11514,8 @@
     },
     {
       "name": "dfs",
-      "path": "semester_1\\lecture_09_graph_algorithms\\dfs",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_09_graph_algorithms\\dfs",
+      "semester": "semester_01",
       "lecture": "lecture_09_graph_algorithms",
       "category": null,
       "complexity": {},
@@ -11528,8 +11528,8 @@
     },
     {
       "name": "dijkstra",
-      "path": "semester_1\\lecture_09_graph_algorithms\\dijkstra",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_09_graph_algorithms\\dijkstra",
+      "semester": "semester_01",
       "lecture": "lecture_09_graph_algorithms",
       "category": null,
       "complexity": {},
@@ -11542,8 +11542,8 @@
     },
     {
       "name": "floyd_warshall",
-      "path": "semester_1\\lecture_09_graph_algorithms\\floyd_warshall",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_09_graph_algorithms\\floyd_warshall",
+      "semester": "semester_01",
       "lecture": "lecture_09_graph_algorithms",
       "category": null,
       "complexity": {},
@@ -11556,8 +11556,8 @@
     },
     {
       "name": "fibonacci",
-      "path": "semester_1\\lecture_11_dynamic_programming\\fibonacci",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_11_dynamic_programming\\fibonacci",
+      "semester": "semester_01",
       "lecture": "lecture_11_dynamic_programming",
       "category": null,
       "complexity": {},
@@ -11570,8 +11570,8 @@
     },
     {
       "name": "knapsack",
-      "path": "semester_1\\lecture_11_dynamic_programming\\knapsack",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_11_dynamic_programming\\knapsack",
+      "semester": "semester_01",
       "lecture": "lecture_11_dynamic_programming",
       "category": null,
       "complexity": {},
@@ -11584,8 +11584,8 @@
     },
     {
       "name": "longest_common_subsequence",
-      "path": "semester_1\\lecture_11_dynamic_programming\\longest_common_subsequence",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_11_dynamic_programming\\longest_common_subsequence",
+      "semester": "semester_01",
       "lecture": "lecture_11_dynamic_programming",
       "category": null,
       "complexity": {},
@@ -11598,8 +11598,8 @@
     },
     {
       "name": "kmp",
-      "path": "semester_1\\lecture_12_string_algorithms\\kmp",
-      "semester": "semester_1",
+      "path": "semester_01\\lecture_12_string_algorithms\\kmp",
+      "semester": "semester_01",
       "lecture": "lecture_12_string_algorithms",
       "category": null,
       "complexity": {},
@@ -11612,7 +11612,7 @@
     }
   ],
   "by_semester": {
-    "semester_9": [
+    "semester_09": [
       "container_runtimes",
       "distributed_os",
       "exokernel_design",
@@ -11662,7 +11662,7 @@
       "metrics_collection",
       "synthetic_monitoring"
     ],
-    "semester_8": [
+    "semester_08": [
       "customer_support_automation",
       "escalation_procedures",
       "incident_response",
@@ -11712,7 +11712,7 @@
       "entity_relationship",
       "etl_processes"
     ],
-    "semester_7": [
+    "semester_07": [
       "deadlock_detection",
       "file_systems",
       "interrupt_handling",
@@ -11762,7 +11762,7 @@
       "layer2_solutions",
       "nft_standards"
     ],
-    "semester_6": [
+    "semester_06": [
       "ab_testing",
       "data_drift",
       "feature_store",
@@ -11800,7 +11800,7 @@
       "performance_profiling",
       "prometheus_ml"
     ],
-    "semester_5": [
+    "semester_05": [
       "feature_extraction",
       "fine_tuning",
       "transfer_learning",
@@ -11838,7 +11838,7 @@
       "lstm_timeseries",
       "prophet"
     ],
-    "semester_4": [
+    "semester_04": [
       "authentication",
       "authorization",
       "encryption",
@@ -11867,7 +11867,7 @@
       "log_aggregation",
       "metrics_collection"
     ],
-    "semester_3": [
+    "semester_03": [
       "bellman_ford",
       "bfs",
       "dfs",
@@ -11900,7 +11900,7 @@
       "random_forest",
       "svm"
     ],
-    "semester_2": [
+    "semester_02": [
       "dependency_inversion",
       "interface_segregation",
       "liskov_substitution",
@@ -12286,7 +12286,7 @@
       "model_registry",
       "risk_assessment"
     ],
-    "semester_1": [
+    "semester_01": [
       "bubble_sort",
       "insertion_sort",
       "selection_sort",

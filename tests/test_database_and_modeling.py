@@ -6,44 +6,44 @@ from .conftest import algorithm_file_path, import_module_from_path
 DATA_ALGOS = {
     # Database operations
     "performance_tuning": [
-        "semester_8",
+        "semester_08",
         "lecture_53_database_operations",
         "performance_tuning",
         "algorithm.py",
     ],
     # Data modeling
     "dimensional_modeling": [
-        "semester_8",
+        "semester_08",
         "lecture_54_data_modeling",
         "dimensional_modeling",
         "algorithm.py",
     ],
     "data_warehousing": [
-        "semester_8",
+        "semester_08",
         "lecture_54_data_modeling",
         "data_warehousing",
         "algorithm.py",
     ],
     "data_lakes": [
-        "semester_8",
+        "semester_08",
         "lecture_54_data_modeling",
         "data_lakes",
         "algorithm.py",
     ],
     "data_governance": [
-        "semester_8",
+        "semester_08",
         "lecture_54_data_modeling",
         "data_governance",
         "algorithm.py",
     ],
     "etl_processes": [
-        "semester_8",
+        "semester_08",
         "lecture_54_data_modeling",
         "etl_processes",
         "algorithm.py",
     ],
     "entity_relationship": [
-        "semester_8",
+        "semester_08",
         "lecture_54_data_modeling",
         "entity_relationship",
         "algorithm.py",

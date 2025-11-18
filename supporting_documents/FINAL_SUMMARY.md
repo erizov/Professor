@@ -315,7 +315,7 @@ python -c "from framework.constraint_selector import *; ..."
 - **Which prompts to use?** → See `AI_IMPLEMENTATION_GUIDE.md`
 - **How to track progress?** → Run `python track_implementations.py`
 - **How to test?** → Use `python runner.py`
-- **Need help?** → Check working examples in semester_1 and semester_3
+- **Need help?** → Check working examples in semester_01 and semester_03
 
 ---
 

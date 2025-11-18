@@ -106,11 +106,11 @@ def main():
     """Add assessment sections to top algorithms."""
     # Top 20 algorithms
     top_algorithms = [
-        "semester_1/lecture_02_efficient_sorting/quick_sort",
-        "semester_1/lecture_02_efficient_sorting/merge_sort",
-        "semester_1/lecture_04_searching/binary_search",
-        "semester_1/lecture_09_graph_algorithms/bfs",
-        "semester_1/lecture_09_graph_algorithms/dijkstra",
+        "semester_01/lecture_02_efficient_sorting/quick_sort",
+        "semester_01/lecture_02_efficient_sorting/merge_sort",
+        "semester_01/lecture_04_searching/binary_search",
+        "semester_01/lecture_09_graph_algorithms/bfs",
+        "semester_01/lecture_09_graph_algorithms/dijkstra",
     ]
     
     updated_count = 0

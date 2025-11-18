@@ -18,10 +18,10 @@
 - All algorithm.py/Algorithm.java files (placeholders)
 
 ✅ **Full Implementations** (Examples)
-- `semester_1/lecture_01_sorting_fundamentals/bubble_sort` ✓
-- `semester_1/lecture_02_efficient_sorting/quick_sort` ✓
-- `semester_1/lecture_04_searching/binary_search` ✓
-- `semester_3/lecture_12_ml_algorithms/knn` ✓ (just updated)
+- `semester_01/lecture_01_sorting_fundamentals/bubble_sort` ✓
+- `semester_01/lecture_02_efficient_sorting/quick_sort` ✓
+- `semester_01/lecture_04_searching/binary_search` ✓
+- `semester_03/lecture_12_ml_algorithms/knn` ✓ (just updated)
 
 ### What Needs Implementation
 
@@ -256,23 +256,23 @@ If you want to implement algorithms:
 
 ### Fully Implemented Algorithms
 
-1. **Bubble Sort** - `semester_1/lecture_01_sorting_fundamentals/bubble_sort/`
+1. **Bubble Sort** - `semester_01/lecture_01_sorting_fundamentals/bubble_sort/`
    - Multiple sorting modes
    - Visualization
    - Optimization techniques
    - ~200 lines Python, ~200 lines Java
 
-2. **Quick Sort** - `semester_1/lecture_02_efficient_sorting/quick_sort/`
+2. **Quick Sort** - `semester_01/lecture_02_efficient_sorting/quick_sort/`
    - Standard and randomized pivot
    - Multiple examples
    - ~150 lines Python
 
-3. **Binary Search** - `semester_1/lecture_04_searching/binary_search/`
+3. **Binary Search** - `semester_01/lecture_04_searching/binary_search/`
    - Iterative and recursive
    - Leftmost/rightmost variants
    - ~180 lines Python
 
-4. **K-Nearest Neighbors** - `semester_3/lecture_12_ml_algorithms/knn/`
+4. **K-Nearest Neighbors** - `semester_03/lecture_12_ml_algorithms/knn/`
    - Full classifier implementation
    - Distance calculations
    - Multiple examples
@@ -328,8 +328,8 @@ Implement a full working version with:
 5. Both Python and Java versions
 
 Follow the pattern from:
-- semester_1/lecture_01_sorting_fundamentals/bubble_sort/ (for sorting)
-- semester_3/lecture_12_ml_algorithms/knn/ (for ML)
+- semester_01/lecture_01_sorting_fundamentals/bubble_sort/ (for sorting)
+- semester_03/lecture_12_ml_algorithms/knn/ (for ML)
 ```
 
 ---

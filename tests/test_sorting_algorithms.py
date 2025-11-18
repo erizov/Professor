@@ -8,37 +8,37 @@ from .data_sets import SORT_CASES
 # Map of algorithm name to relative path parts under the project
 SORTING_ALGOS = {
     "bubble_sort": [
-        "semester_1",
+        "semester_01",
         "lecture_01_sorting_fundamentals",
         "bubble_sort",
         "bubble_sort.py",
     ],
     "insertion_sort": [
-        "semester_1",
+        "semester_01",
         "lecture_01_sorting_fundamentals",
         "insertion_sort",
         "insertion_sort.py",
     ],
     "selection_sort": [
-        "semester_1",
+        "semester_01",
         "lecture_01_sorting_fundamentals",
         "selection_sort",
         "selection_sort.py",
     ],
     "merge_sort": [
-        "semester_1",
+        "semester_01",
         "lecture_02_efficient_sorting",
         "merge_sort",
         "merge_sort.py",
     ],
     "quick_sort": [
-        "semester_1",
+        "semester_01",
         "lecture_02_efficient_sorting",
         "quick_sort",
         "quick_sort.py",
     ],
     "heap_sort": [
-        "semester_1",
+        "semester_01",
         "lecture_02_efficient_sorting",
         "heap_sort",
         "heap_sort.py",

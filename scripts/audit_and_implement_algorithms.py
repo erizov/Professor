@@ -53,8 +53,8 @@ SQL_EXCLUDE = {
 
 # Reference implementations to use as style guides
 REFERENCE_ALGORITHMS = {
-    'python': ROOT / 'semester_1/lecture_02_efficient_sorting/quick_sort/algorithm.py',
-    'java': ROOT / 'semester_1/lecture_02_efficient_sorting/quick_sort/Algorithm.java',
+    'python': ROOT / 'semester_01/lecture_02_efficient_sorting/quick_sort/algorithm.py',
+    'java': ROOT / 'semester_01/lecture_02_efficient_sorting/quick_sort/Algorithm.java',
 }
 
 def is_placeholder(file_path: Path) -> bool:

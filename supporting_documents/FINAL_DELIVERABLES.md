@@ -167,7 +167,7 @@ Professor/
 │   ├── app.py
 │   └── templates/index.html
 │
-├── semester_1/ through semester_6/
+├── semester_01/ through semester_06/
 │   └── 184 algorithm folders (6 fully implemented)
 │
 └── docs/ (optional)
