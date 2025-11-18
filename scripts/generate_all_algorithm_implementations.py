@@ -2759,6 +2759,409 @@ class AhoCorasick:
                 result.append((i - len(pattern) + 1, pattern))
         
         return result''',
+    
+    'ab_testing': '''class ABTest:
+    """A/B testing implementation."""
+    def __init__(self):
+        self.group_a: List[float] = []
+        self.group_b: List[float] = []
+    
+    def add_result_a(self, value: float) -> None:
+        """Add result to group A."""
+        self.group_a.append(value)
+    
+    def add_result_b(self, value: float) -> None:
+        """Add result to group B."""
+        self.group_b.append(value)
+    
+    def mean(self, group: List[float]) -> float:
+        """Calculate mean."""
+        return sum(group) / len(group) if group else 0.0
+    
+    def std_dev(self, group: List[float]) -> float:
+        """Calculate standard deviation."""
+        if not group:
+            return 0.0
+        mean_val = self.mean(group)
+        variance = sum((x - mean_val) ** 2 for x in group) / len(group)
+        return variance ** 0.5
+    
+    def t_test(self) -> float:
+        """Perform t-test."""
+        mean_a = self.mean(self.group_a)
+        mean_b = self.mean(self.group_b)
+        std_a = self.std_dev(self.group_a)
+        std_b = self.std_dev(self.group_b)
+        n_a = len(self.group_a)
+        n_b = len(self.group_b)
+        
+        if n_a == 0 or n_b == 0:
+            return 0.0
+        
+        pooled_std = ((std_a ** 2 / n_a) + (std_b ** 2 / n_b)) ** 0.5
+        if pooled_std == 0:
+            return 0.0
+        
+        t_stat = (mean_a - mean_b) / pooled_std
+        return t_stat''',
+    
+    'anomaly_detection': '''def anomaly_detection(data: List[float], threshold: float = 2.0) -> List[bool]:
+    """Anomaly detection using z-score."""
+    if not data:
+        return []
+    
+    mean = sum(data) / len(data)
+    variance = sum((x - mean) ** 2 for x in data) / len(data)
+    std_dev = variance ** 0.5
+    
+    if std_dev == 0:
+        return [False] * len(data)
+    
+    z_scores = [(x - mean) / std_dev for x in data]
+    return [abs(z) > threshold for z in z_scores]
+
+def isolation_forest(data: List[List[float]], n_trees: int = 100) -> List[float]:
+    """Isolation Forest for anomaly detection (simplified)."""
+    import random
+    import math
+    
+    n = len(data)
+    if n == 0:
+        return []
+    
+    scores = [0.0] * n
+    
+    for _ in range(n_trees):
+        # Random feature and split
+        feature_idx = random.randint(0, len(data[0]) - 1)
+        min_val = min(row[feature_idx] for row in data)
+        max_val = max(row[feature_idx] for row in data)
+        split_val = random.uniform(min_val, max_val)
+        
+        # Calculate isolation score
+        for i, row in enumerate(data):
+            if row[feature_idx] < split_val:
+                scores[i] += 1.0
+    
+    # Normalize scores
+    max_score = max(scores) if scores else 1.0
+    return [s / max_score for s in scores]''',
+    
+    'attention': '''def attention(query: List[float], keys: List[List[float]], 
+              values: List[List[float]]) -> List[float]:
+    """Attention mechanism (simplified)."""
+    import math
+    
+    # Calculate attention scores
+    scores = []
+    for key in keys:
+        # Dot product attention
+        score = sum(q * k for q, k in zip(query, key))
+        scores.append(score)
+    
+    # Softmax
+    max_score = max(scores)
+    exp_scores = [math.exp(s - max_score) for s in scores]
+    sum_exp = sum(exp_scores)
+    attention_weights = [exp / sum_exp for exp in exp_scores]
+    
+    # Weighted sum of values
+    result = [0.0] * len(values[0])
+    for i, weight in enumerate(attention_weights):
+        for j, val in enumerate(values[i]):
+            result[j] += weight * val
+    
+    return result
+
+def multi_head_attention(queries: List[List[float]], keys: List[List[float]], 
+                        values: List[List[float]], num_heads: int = 8) -> List[List[float]]:
+    """Multi-head attention (simplified)."""
+    head_size = len(queries[0]) // num_heads
+    outputs = []
+    
+    for query in queries:
+        head_outputs = []
+        for head in range(num_heads):
+            start = head * head_size
+            end = start + head_size
+            q = query[start:end]
+            k = [key[start:end] for key in keys]
+            v = [val[start:end] for val in values]
+            head_output = attention(q, k, v)
+            head_outputs.extend(head_output)
+        outputs.append(head_outputs)
+    
+    return outputs''',
+    
+    'actor_critic': '''class ActorCritic:
+    """Actor-Critic reinforcement learning algorithm."""
+    def __init__(self, state_size: int, action_size: int, lr: float = 0.01):
+        self.state_size = state_size
+        self.action_size = action_size
+        self.lr = lr
+        # Simplified: using simple weight matrices
+        self.actor_weights = [[0.0] * action_size for _ in range(state_size)]
+        self.critic_weights = [0.0] * state_size
+    
+    def actor_forward(self, state: List[float]) -> List[float]:
+        """Actor forward pass."""
+        action_probs = [0.0] * self.action_size
+        for a in range(self.action_size):
+            action_probs[a] = sum(state[i] * self.actor_weights[i][a] 
+                                 for i in range(self.state_size))
+        # Softmax
+        max_prob = max(action_probs)
+        exp_probs = [math.exp(p - max_prob) for p in action_probs]
+        sum_exp = sum(exp_probs)
+        return [exp / sum_exp for exp in exp_probs]
+    
+    def critic_forward(self, state: List[float]) -> float:
+        """Critic forward pass."""
+        return sum(state[i] * self.critic_weights[i] 
+                  for i in range(self.state_size))
+    
+    def update(self, state: List[float], action: int, reward: float, 
+              next_state: List[float], done: bool) -> None:
+        """Update actor and critic."""
+        import math
+        
+        # Critic update
+        value = self.critic_forward(state)
+        next_value = 0.0 if done else self.critic_forward(next_state)
+        td_error = reward + 0.99 * next_value - value
+        
+        for i in range(self.state_size):
+            self.critic_weights[i] += self.lr * td_error * state[i]
+        
+        # Actor update
+        action_probs = self.actor_forward(state)
+        for i in range(self.state_size):
+            self.actor_weights[i][action] += (self.lr * td_error * 
+                                            action_probs[action] * state[i])''',
+    
+    'q_learning': '''class QLearning:
+    """Q-Learning algorithm."""
+    def __init__(self, state_size: int, action_size: int, lr: float = 0.1, 
+                 gamma: float = 0.99, epsilon: float = 0.1):
+        self.state_size = state_size
+        self.action_size = action_size
+        self.lr = lr
+        self.gamma = gamma
+        self.epsilon = epsilon
+        self.q_table: Dict[tuple, List[float]] = {}
+    
+    def get_state_key(self, state: List[float]) -> tuple:
+        """Convert state to key."""
+        return tuple(round(s, 2) for s in state)
+    
+    def get_q_values(self, state: List[float]) -> List[float]:
+        """Get Q-values for state."""
+        key = self.get_state_key(state)
+        if key not in self.q_table:
+            self.q_table[key] = [0.0] * self.action_size
+        return self.q_table[key]
+    
+    def choose_action(self, state: List[float]) -> int:
+        """Choose action using epsilon-greedy."""
+        import random
+        if random.random() < self.epsilon:
+            return random.randint(0, self.action_size - 1)
+        
+        q_values = self.get_q_values(state)
+        return q_values.index(max(q_values))
+    
+    def update(self, state: List[float], action: int, reward: float, 
+              next_state: List[float], done: bool) -> None:
+        """Update Q-value."""
+        q_values = self.get_q_values(state)
+        next_q_values = self.get_q_values(next_state)
+        
+        max_next_q = max(next_q_values) if not done else 0.0
+        target = reward + self.gamma * max_next_q
+        
+        q_values[action] = q_values[action] + self.lr * (target - q_values[action])
+        self.q_table[self.get_state_key(state)] = q_values''',
+    
+    'pagerank': '''def pagerank(graph: Dict[int, List[int]], damping: float = 0.85, 
+              iterations: int = 100) -> Dict[int, float]:
+    """PageRank algorithm."""
+    n = len(graph)
+    if n == 0:
+        return {}
+    
+    # Initialize ranks
+    ranks = {node: 1.0 / n for node in graph}
+    
+    for _ in range(iterations):
+        new_ranks = {}
+        for node in graph:
+            rank = (1 - damping) / n
+            for other_node in graph:
+                if node in graph[other_node]:
+                    out_degree = len(graph[other_node])
+                    if out_degree > 0:
+                        rank += damping * ranks[other_node] / out_degree
+            new_ranks[node] = rank
+        ranks = new_ranks
+    
+    return ranks''',
+    
+    'bloom_filter': '''class BloomFilter:
+    """Bloom filter implementation."""
+    def __init__(self, size: int, num_hashes: int = 3):
+        self.size = size
+        self.num_hashes = num_hashes
+        self.bit_array = [False] * size
+    
+    def _hash(self, item: str, seed: int) -> int:
+        """Hash function."""
+        hash_val = hash(item + str(seed))
+        return abs(hash_val) % self.size
+    
+    def add(self, item: str) -> None:
+        """Add item to filter."""
+        for i in range(self.num_hashes):
+            index = self._hash(item, i)
+            self.bit_array[index] = True
+    
+    def contains(self, item: str) -> bool:
+        """Check if item might be in filter."""
+        for i in range(self.num_hashes):
+            index = self._hash(item, i)
+            if not self.bit_array[index]:
+                return False
+        return True''',
+    
+    'hyperloglog': '''class HyperLogLog:
+    """HyperLogLog for cardinality estimation."""
+    def __init__(self, precision: int = 4):
+        self.precision = precision
+        self.m = 1 << precision  # 2^precision
+        self.registers = [0] * self.m
+        self.alpha = self._get_alpha()
+    
+    def _get_alpha(self) -> float:
+        """Get alpha constant."""
+        if self.m == 16:
+            return 0.673
+        elif self.m == 32:
+            return 0.697
+        elif self.m == 64:
+            return 0.709
+        else:
+            return 0.7213 / (1 + 1.079 / self.m)
+    
+    def _hash(self, item: str) -> int:
+        """Hash function."""
+        return abs(hash(item))
+    
+    def add(self, item: str) -> None:
+        """Add item."""
+        hash_val = self._hash(item)
+        j = hash_val & ((1 << self.precision) - 1)
+        w = hash_val >> self.precision
+        leading_zeros = (w.bit_length() if w > 0 else 32) - self.precision
+        self.registers[j] = max(self.registers[j], leading_zeros)
+    
+    def count(self) -> int:
+        """Estimate cardinality."""
+        raw_estimate = self.alpha * (self.m ** 2) / sum(2 ** (-r) for r in self.registers)
+        
+        # Small range correction
+        if raw_estimate <= 2.5 * self.m:
+            zeros = sum(1 for r in self.registers if r == 0)
+            if zeros > 0:
+                return int(self.m * math.log(self.m / zeros))
+        
+        return int(raw_estimate)''',
+    
+    'count_min_sketch': '''class CountMinSketch:
+    """Count-Min Sketch for frequency estimation."""
+    def __init__(self, width: int = 1000, depth: int = 5):
+        self.width = width
+        self.depth = depth
+        self.table = [[0] * width for _ in range(depth)]
+        self.seeds = [i * 1000 for i in range(depth)]
+    
+    def _hash(self, item: str, seed: int) -> int:
+        """Hash function."""
+        hash_val = hash(item + str(seed))
+        return abs(hash_val) % self.width
+    
+    def add(self, item: str, count: int = 1) -> None:
+        """Add item count."""
+        for i in range(self.depth):
+            index = self._hash(item, self.seeds[i])
+            self.table[i][index] += count
+    
+    def estimate(self, item: str) -> int:
+        """Estimate frequency."""
+        estimates = []
+        for i in range(self.depth):
+            index = self._hash(item, self.seeds[i])
+            estimates.append(self.table[i][index])
+        return min(estimates)''',
+    
+    'skip_list': '''class SkipListNode:
+    """Node in skip list."""
+    def __init__(self, value: int, level: int):
+        self.value = value
+        self.forward: List[Optional['SkipListNode']] = [None] * (level + 1)
+
+class SkipList:
+    """Skip list implementation."""
+    def __init__(self, max_level: int = 16, p: float = 0.5):
+        self.max_level = max_level
+        self.p = p
+        self.level = 0
+        self.header = SkipListNode(-1, max_level)
+    
+    def _random_level(self) -> int:
+        """Generate random level."""
+        import random
+        level = 0
+        while random.random() < self.p and level < self.max_level:
+            level += 1
+        return level
+    
+    def search(self, value: int) -> bool:
+        """Search for value."""
+        current = self.header
+        
+        for i in range(self.level, -1, -1):
+            while (current.forward[i] and 
+                   current.forward[i].value < value):
+                current = current.forward[i]
+        
+        current = current.forward[0]
+        return current and current.value == value
+    
+    def insert(self, value: int) -> None:
+        """Insert value."""
+        update: List[Optional[SkipListNode]] = [None] * (self.max_level + 1)
+        current = self.header
+        
+        for i in range(self.level, -1, -1):
+            while (current.forward[i] and 
+                   current.forward[i].value < value):
+                current = current.forward[i]
+            update[i] = current
+        
+        current = current.forward[0]
+        
+        if not current or current.value != value:
+            new_level = self._random_level()
+            
+            if new_level > self.level:
+                for i in range(self.level + 1, new_level + 1):
+                    update[i] = self.header
+                self.level = new_level
+            
+            new_node = SkipListNode(value, new_level)
+            
+            for i in range(new_level + 1):
+                new_node.forward[i] = update[i].forward[i]
+                update[i].forward[i] = new_node''',
 }
 
 
