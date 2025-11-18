@@ -2,332 +2,53 @@
 
 **Category**: Sorting
 
-**Time Complexity**: O(n + k)
-
-**Space Complexity**: O(k)
-
-## Algorithm Description
-
-Counting Sort is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
-
-### Overview
-
-This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
-
-### Complexity Analysis
-
-- **Time Complexity**: To be determined based on implementation
-- **Space Complexity**: To be determined based on implementation
-
-### References
-
-- Wikipedia: Counting Sort
-- Additional resources can be found in academic literature
-
 ## Overview
 
-This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+Counting sort is an algorithm for sorting a collection of objects according to keys that are small positive integers. It operates by counting the number of objects that have each distinct key value, and using arithmetic on those counts to determine the positions of each key value in the output sequence.
 
-### References
+## How It Works
 
-- Wikipedia: Counting Sort
-- Additional resources can be found in academic literature
+1. Count the frequency of each distinct value
+2. Calculate cumulative counts to determine positions
+3. Place each element in its correct position based on counts
+4. Copy back to original array
 
-## Introduction
+## Complexity Analysis
 
-Counting sort is used to solve specific computational problems efficiently. 
-This algorithm is particularly useful when dealing with [describe use case].
-
-## Algorithm Details
-
-### How It Works
-
-The algorithm works by [describe the main approach]:
-
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-### Key Characteristics
-
-- **Time Complexity**: [To be determined]
-- **Space Complexity**: [To be determined]
-- **Stability**: [Stable/Unstable]
-- **In-place**: [Yes/No]
+Time: O(n + k) where k is the range of input. Space: O(k)
 
 ## Use Cases
 
-- [Use case 1]
-- [Use case 2]
-- [Use case 3]
+Sorting integers with small range, as subroutine in radix sort
 
-## References
+## Algorithm Details
 
-- Wikipedia: Counting sort
-- Additional resources can be found in academic literature
+### Key Characteristics
+
+- **Stability**: Depends on implementation
+- **In-place**: Depends on implementation
+- **Adaptive**: Depends on implementation
 
 ## Implementation
 
-See `algorithm.py` for the complete implementation with examples.
+See `algorithm.py` for the complete implementation with examples and performance analysis.
 
-Counting Sort addresses specific computational challenges.
+## References
 
-This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
+- Wikipedia: [Counting sort](https://en.wikipedia.org/wiki/Counting_sort)
+- Additional resources available in academic literature and algorithm textbooks
 
-## TL;DR
+## Examples
 
-**One Sentence**: A comparison-based algorithm that arranges elements in a specific order (ascending or descending).
+Run the algorithm with:
+```bash
+python algorithm.py
+```
 
 ## Learning Objectives
 
-## Prerequisites
-
-- Basic programming knowledge in Python or Java
-- Understanding of arrays, lists, and basic data structures
-- Familiarity with loops, conditionals, and functions
-- Basic understanding of comparison operations
-
-By the end of this lecture, students will be able to:
-
-1. Implement Counting Sort from scratch
-2. Analyze time and space complexity using Big O notation
-3. Identify when to employ this algorithm vs. alternative approaches
-4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this approach to tackle real-world problems
-6. Compare stability, in-place properties, and performance characteristics
-
-### Short Description
-
-A comparison-based strategy that arranges elements in ascending or descending order by comparing and swapping elements. Addresses organizing data for efficient searching, display, or processing. Example: Sorting student records by grade to identify top performers. Operates by repeatedly comparing elements and reordering them until the entire collection is sorted.
-
-**Key Characteristics:**
-- **Time Complexity**: Varies
-- **Space Complexity**: Varies
-- **Stability**: N/A
-
-## Often Used Together With
-
-Counting Sort is used in combination with:
-
-- **Quick Sort**: Often combined for comprehensive solutions
-
-**Common Combinations:**
-- Employed together in production systems for optimal performance
-- Complementary algorithms that tackle related problems
-- Often part of larger algorithmic frameworks
-
-## Do Not Confuse With
-
-- **Radix Sort**: Counting sort is employed as subroutine in radix sort, but they're different algorithms
-- **Bucket Sort**: Both non-comparison sorts but counting sort counts occurrences, bucket sort distributes into buckets
-- **Pigeonhole Sort**: Similar to counting sort but for integer keys with small range
-
-## Self-Assessment Questions
-
-Test your understanding with these questions:
-
-### Comprehension
-
-1. Can you explain how Counting Sort works in your own words?
-2. What is the key insight or technique that makes Counting Sort efficient?
-
-### Analysis
-
-3. What are the best-case, average-case, and worst-case time complexities?
-4. When would you choose Counting Sort over alternative algorithms?
-
-### Application
-
-5. Can you implement Counting Sort from memory without looking at the code?
-6. What real-world problem could youaddresse using Counting Sort?
-
-### Debugging
-
-7. What are the most common mistakes when implementing Counting Sort?
-8. How would you test your Counting Sort deployment?
-
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this atechnique
-
-## Strategy Visualization
-
-*Visual diagram for Counting Sort would be added here*
-*Consider using online visualization tools or drawing step-by-step execution*
-
-## Practice Exercises
-
-### Level 1: Understanding (Beginner)
-
-1. Trace through Counting Sort step-by-step with input: [5, 2, 8, 1, 9]
-2. Identify the base case(s) in Counting Sort
-3. Explain why Counting Sort has its time complexity
-
-### Level 2: Deployment (Intermediate)
-
-4. Implement Counting Sort from scratch using only the function signature
-5. Modify Counting Sort to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the aapproachs execution steps
-
-### Level 3: Optimization (Advanced)
-
-7. Optimize Counting Sort for a specifapplyuse case (e.g., nearly sorted content)
-8. Implement a parallel or distributed version of Counting Sort
-9. Compare Counting Sort capability with alternative algorithms on large datasets
-
-### Level 4: Real-World Application (Expert)
-
-10. Design a system that uses Counting Sort to tackle a production problem
-11. Create unit tests with 100% code coverage for Counting Sort
-12. Write a technical blog post explaining Counting Sort to beginners
-
-## Real-World Applications
-
-- **Standard Libraries**: Used in language standard libraries (Java Arrays.sort(), C++ std::sort(), Python list.sort())
-- **Database Systems**: SQL ORDER BY operations use sorting algorithms internally
-- **Search Engines**: Sorting search results by relevance, date, or popularity
-- **E-commerce Platforms**: Sorting products by price, rating, or popularity
-- **Operating Systems**: Process scheduling and file system organization
-
-## Specific misconceptions with corrections
-
-❌ **WRONG**: "Counting Sort is the best solution for all problems"
-✓ **CORRECT**: Counting Sort has specific employ cases and trade-offs; choose algorithms based on requirements
-
-❌ **WRONG**: "Counting Sort is too complex to understand"
-✓ **CORRECT**: Counting Sort can be understood by breaking it down into smaller steps
-
-## Examples of ImplRealizationis atechniquepattern is implemented in the following frameworks and technologies:
-
-### Spring Framework
-
-```java
-// Spring Content JPA - Sorting
-public interface UserRepository extends JpaRepository<User, Long> {
- List<User> findAll(Sort sort);
- // Spring uses streamlined sorting algorithms for query results
-}
-```
-
-**Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.
-
-### J2EE (Java Enterprise Edition)
-
-// J2EE Collections.sort()
-List<Order> orders = getOrders();
-Collections.sort(orders, Comparator.comparing(Order::getDate));
-// Uses optimized sorting algorithms
-
-**Purpose**: J2EE implements this pattern for enterprise Java applications, EJB containers, and Java EE specifications.
-
-## Algorithm Steps
-
-1. **Initialization**: Set up initial state and data structures
-2. **Main loop**: Process elements until termination condition
-3. **Comparison/Operation**: Perform core algorithm operation
-4. **Update state**: Modify data structures based on operation
-5. **Check termination**: Verify if algorithm should continue
-6. **Return result**: Output final result when complete
-
-*Note: Specific steps depend on the algorithm implementation. See code for details.*
-
-## Detailed Explanation
-
-The Counting Sort algorithm works by systematically processing the input data according to its specific strategy.
-
-**Key Concepts**:
-- Core principle: [Describe main idea]
-- Data structures used: [List structures]
-- Termination condition: [When algorithm stops]
-
-**Process Flow**:
-1. Initialize necessary data structures
-2. Process input elements according to algorithm logic
-3. Update state after each operation
-4. Continue until termination condition is met
-5. Return final result
-
-For detailed implementation, see `algorithm.py` and `Algorithm.java`.
-
-## Advantages
-
-- **Efficiency**: Optimized for specific use cases
-- **Reliability**: Well-tested and proven approach
-- **Scalability**: Handles large inputs effectively
-- **Flexibility**: Can be adapted for various scenarios
-- **Industry standard**: Widely recognized and used
-
-## Disadvantages
-
-- **Limitations**: May not work for all input types
-- **Complexity**: Can be complex to implement correctly
-- **Trade-offs**: May sacrifice one aspect for another
-- **Dependencies**: May require specific data structures
-- **Edge cases**: Requires careful handling of edge cases
-
-## When to Use
-
-Use Counting Sort when:
-
-- **Specific scenario 1**: [When this is appropriate]
-- **Specific scenario 2**: [Another use case]
-- **Data characteristics**: [What kind of data works best]
-- **Performance requirements**: [When performance is acceptable]
-- **Constraints**: [When constraints are met]
-
-**Ideal conditions**:
-- Input size: [Small/Medium/Large]
-- Data type: [Sorted/Unsorted, etc.]
-- Memory constraints: [Available memory]
-- Time constraints: [Acceptable time]
-
-## When NOT to Use
-
-Avoid Counting Sort when:
-
-- **Scenario 1**: [When this is not appropriate]
-- **Scenario 2**: [Another case to avoid]
-- **Data characteristics**: [What kind of data doesn't work]
-- **Performance requirements**: [When performance is insufficient]
-- **Constraints**: [When constraints are not met]
-
-**Poor fit conditions**:
-- Input size: [Too large/small]
-- Data type: [Incompatible data]
-- Memory constraints: [Insufficient memory]
-- Time constraints: [Too strict]
-
-## Performance Analysis
-
-### Time Complexity Analysis
-
-**Best Case**: O(n log n) - When pivot divides array evenly
-**Average Case**: O(n log n) - Expected performance on random data
-**Worst Case**: O(n²) - When pivot is always smallest/largest element
-
-**Performance Characteristics**:
-- Efficient for large datasets due to O(n log n) average case
-- In-place sorting reduces memory overhead
-- Cache-friendly partitioning improves real-world performance
-- Performance degrades on already sorted or reverse-sorted data
-
-### Space Complexity Analysis
-
-**Space Complexity**: O(log n) for recursion stack
-- Recursion depth is logarithmic in average case
-- Each recursive call uses constant space for local variables
-- Worst-case space is O(n) if recursion is not optimized
-
-### Optimization Strategies
-
-1. **Pivot Selection**: Use median-of-three or random pivot to avoid worst case
-2. **Insertion Sort Hybrid**: Switch to insertion sort for small subarrays (< 10 elements)
-3. **Tail Recursion**: Optimize tail recursion to reduce stack space
-4. **Three-Way Partitioning**: Handle duplicate elements efficiently
-
-### Benchmark Results
-
-Typical performance on modern hardware:
-- **Small arrays (n < 100)**: ~0.1ms
-- **Medium arrays (n = 10,000)**: ~5ms
-- **Large arrays (n = 1,000,000)**: ~500ms
-
-*Note: Actual performance depends on hardware, data distribution, and implementation details.*
+By studying this algorithm, you will learn:
+1. The fundamental approach and logic
+2. Time and space complexity analysis
+3. When to use this algorithm vs alternatives
+4. Implementation details and optimizations

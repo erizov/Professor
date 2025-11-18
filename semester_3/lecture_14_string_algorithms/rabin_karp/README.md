@@ -1,249 +1,42 @@
-# Rabin-Karp Algorithm
+# Rabin Karp
 
-**Category**: String Algorithm
+**Category**: Algorithm
 
-**Time Complexity**: O(n + m)
-
-**Space Complexity**: O(1)
-
-## Algorithm Description
+## Overview
 
 Rabin Karp is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
 
-### Overview
+## Description
 
-This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+This algorithm is particularly useful for solving problems related to [specific domain]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
 
-### Complexity Analysis
+## How It Works
+
+[Algorithm description to be added]
+
+## Complexity Analysis
 
 - **Time Complexity**: To be determined based on implementation
 - **Space Complexity**: To be determined based on implementation
 
-### References
+## Use Cases
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+## Implementation
+
+See `algorithm.py` for the complete implementation with examples.
+
+## References
 
 - Wikipedia: Rabin Karp
 - Additional resources can be found in academic literature
 
-## Overview
-
-## Introduction
-
-Rabin Karp is rabin karp addresses specific computational challenges.
-
-This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
-
-## TL;DR
-
-**One Sentence**: An approach that processes and manipulates sequences of characters to tackle string-related problems.
-
-## Learning Objectives
-
-## Prerequisites
-
-- Completed Semesters 1-2
-- Understanding of graph data structures
-- Basic knowledge of recursion
-
-By the end of this lecture, students will be able to:
-
-1. Implement Rabin Karp from scratch
-2. Analyze time and space complexity using Big O notation
-3. Identify when to employ this strategy vs. alternative approaches
-4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this atechniqueto tackle real-world problems
-
-### Short Description
-
-An strategy that processes and manipulates sequences of characters toaddresse string-related problems. Addresses pattern matching, text processing, and string transformation. Example: Finding all occurrences of a word in a document for search functionality. Operates by analyzing character sequences, applying pattern matching techniques, and performing string operations efficiently.
-
-**Key Characteristics:**
-- **Time Complexity**: Varies
-- **Space Complexity**: Varies
-- **Stability**: N/A
-
-Rabin-Karp AApproachis used in String ATechnique
-
- for implementations.
-
-## Do Not Confuse With
-
-- **KMP AlTechnique: Both pattern matching but Rabin-Karp uses hashing, KMP uses prefix function
-- **Boyer-Moore**: Both pattern matching but Boyer-Moore skips characters, Rabin-Karp uses rolling hash
-- **Hash Table**: Rabin-Karp uses hashing but is a string matching algorithm, not a data structure
-
-## Self-Assessment Questions
-
-Test your understanding with these questions:
-
-### Comprehension
-
-1. Can you explain how Rabin Karp works in your own words?
-2. What is the key insight or technique that makes Rabin Karp efficient?
-
-### Analysis
-
-3. What are the best-case, average-case, and worst-case time complexities?
-4. When would you choose Rabin Karp over alternative algorithms?
-
-### Application
-
-5. Can you implement Rabin Karp from memory without looking at the code?
-6. What real-world problem could you tackle using Rabin Karp?
-
-### Debugging
-
-7. What are the most common mistakes when implementing Rabin Karp?
-8. How would you test your Rabin Karp deployment?
-
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this alapproach
-## AApproachVisualization
-
-*Visual diagram for Rabin Karp would be added here*
-*Consider using online visualization tools or drawing step-by-step execution*
-
-## Practice Exercises
-
-### Level 1: Understanding (Beginner)
-
-1. Trace through Rabin Karp step-by-step with input: [5, 2, 8, 1, 9]
-2. Identify the base case(s) in Rabin Karp
-3. Explain why Rabin Karp has its time complexity
-
-### Level 2: Deployment (Intermediate)
-
-4. Implement Rabin Karp from scratch using only the function signature
-5. Modify Rabin Karp to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the algtechniqueexecution steps
-
-### Level 3: Optimization (Advanced)
-
-7. Optimize Rabin Karp for a specifapplyuse case (e.g., nearly sorted content)
-8. Implement a parallel or distributed version of Rabin Karp
-9. Compare Rabin Karp performance with alternative algorithms on large datasets
-
-### Level 4: Real-World Application (Expert)
-
-10. Design a system that uses Rabin Karp tacklelve a production problem
-11. Create unit tests with 100% code coverage for Rabin Karp
-12. Write a technical blog post explaining Rabin Karp to beginners
-
-## Real-World Applications
-
-- **Text Editors**: Find and replace functionality
-- **Search Engines**: Pattern matching in search queries
-- **Bioinformatics**: DNA and protein sequence matching
-- **Network Security**: Intrusion detection and pattern matching
-- **Compilers**: Lexical analysis and tokenization
-
-## Specific misconceptions with corrections
-
-❌ **WRONG**: "Rabin Karp is the best solution for all problems"
-✓ **CORRECT**: Rabin Karp has specific employ cases and trade-offs; choose algorithms based on requirements
-
-❌ **WRONG**: "Rabin Karp is too complex to understand"
-✓ **CORRECT**: Rabin Karp can be understood by breaking it down into smaller steps
-
-## Examples of ImplRealizationis atechniquepattern is implemented in various frameworks and technologies.
-
-*Note: Framework-specific examples will be added based on actual implementations.*
-
-## Algorithm Steps
-
-1. **Initialization**: Set up initial state and data structures
-2. **Main loop**: Process elements until termination condition
-3. **Comparison/Operation**: Perform core algorithm operation
-4. **Update state**: Modify data structures based on operation
-5. **Check termination**: Verify if algorithm should continue
-6. **Return result**: Output final result when complete
-
-*Note: Specific steps depend on the algorithm implementation. See code for details.*
-
-## Detailed Explanation
-
-The Rabin Karp algorithm works by systematically processing the input data according to its specific strategy.
-
-**Key Concepts**:
-- Core principle: [Describe main idea]
-- Data structures used: [List structures]
-- Termination condition: [When algorithm stops]
-
-**Process Flow**:
-1. Initialize necessary data structures
-2. Process input elements according to algorithm logic
-3. Update state after each operation
-4. Continue until termination condition is met
-5. Return final result
-
-For detailed implementation, see `algorithm.py` and `Algorithm.java`.
-
-## Advantages
-
-- **Efficiency**: Optimized for specific use cases
-- **Reliability**: Well-tested and proven approach
-- **Scalability**: Handles large inputs effectively
-- **Flexibility**: Can be adapted for various scenarios
-- **Industry standard**: Widely recognized and used
-
-## Disadvantages
-
-- **Limitations**: May not work for all input types
-- **Complexity**: Can be complex to implement correctly
-- **Trade-offs**: May sacrifice one aspect for another
-- **Dependencies**: May require specific data structures
-- **Edge cases**: Requires careful handling of edge cases
-
-## When to Use
-
-Use Rabin Karp when:
-
-- **Specific scenario 1**: [When this is appropriate]
-- **Specific scenario 2**: [Another use case]
-- **Data characteristics**: [What kind of data works best]
-- **Performance requirements**: [When performance is acceptable]
-- **Constraints**: [When constraints are met]
-
-**Ideal conditions**:
-- Input size: [Small/Medium/Large]
-- Data type: [Sorted/Unsorted, etc.]
-- Memory constraints: [Available memory]
-- Time constraints: [Acceptable time]
-
-## When NOT to Use
-
-Avoid Rabin Karp when:
-
-- **Scenario 1**: [When this is not appropriate]
-- **Scenario 2**: [Another case to avoid]
-- **Data characteristics**: [What kind of data doesn't work]
-- **Performance requirements**: [When performance is insufficient]
-- **Constraints**: [When constraints are not met]
-
-**Poor fit conditions**:
-- Input size: [Too large/small]
-- Data type: [Incompatible data]
-- Memory constraints: [Insufficient memory]
-- Time constraints: [Too strict]
-
-## Performance Analysis
-
-### Performance Analysis
-
-**Time Complexity**: See complexity analysis in Key Characteristics section
-**Space Complexity**: See complexity analysis in Key Characteristics section
-
-**Performance Characteristics**:
-- Performance depends on input size and data distribution
-- Real-world performance may vary from theoretical complexity
-- Consider cache effects, branch prediction, and memory access patterns
-- Profile with actual data to understand real-world performance
-
-### Optimization Strategies
-
-1. **Algorithm Selection**: Choose appropriate algorithm for data characteristics
-2. **Data Structure Choice**: Select optimal data structures for operations
-3. **Caching**: Cache frequently accessed data
-4. **Parallelization**: Consider parallel processing for large datasets
-
-### Benchmark Results
-
-*Note: Run benchmarks with your specific data and hardware to get accurate performance metrics.*
+## Examples
+
+Run the algorithm with:
+```bash
+python algorithm.py
+```

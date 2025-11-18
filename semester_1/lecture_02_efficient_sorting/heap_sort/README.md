@@ -2,34 +2,9 @@
 
 **Category**: Sorting
 
-**Time Complexity**: O(n log n)
-
-**Space Complexity**: O(1)
-
-## Algorithm Description
+## Overview
 
 Heapsort is a comparison-based sorting algorithm. Heapsort can be thought of as an improved selection sort: like selection sort, heapsort divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element from it and inserting it into the sorted region.
-
-### How It Works
-
-1. Build a max heap from the input array
-2. The largest element is at the root
-3. Swap the root with the last element and reduce heap size
-4. Heapify the root to maintain heap property
-5. Repeat until heap size is 1
-
-### Complexity Analysis
-
-Time: O(n log n) in all cases. Space: O(1)
-
-### Use Cases
-
-When worst-case O(n log n) is required, embedded systems, real-time systems
-
-### References
-
-- Wikipedia: [Heapsort](https://en.wikipedia.org/wiki/Heapsort)
-- Additional resources available in academic literature
 
 ## How It Works
 
@@ -39,368 +14,42 @@ When worst-case O(n log n) is required, embedded systems, real-time systems
 4. Heapify the root to maintain heap property
 5. Repeat until heap size is 1
 
-### References
+## Complexity Analysis
 
-- Wikipedia: [Heapsort](https://en.wikipedia.org/wiki/Heapsort)
-- Additional resources available in academic literature
+Time: O(n log n) in all cases. Space: O(1)
 
-## Introduction
+## Use Cases
 
-Heapsort is used to solve specific computational problems efficiently. 
-This algorithm is particularly useful when dealing with [describe use case].
+When worst-case O(n log n) is required, embedded systems, real-time systems
 
 ## Algorithm Details
 
 ### Key Characteristics
 
-- **Time Complexity**: [To be determined]
-- **Space Complexity**: [To be determined]
-- **Stability**: [Stable/Unstable]
-- **In-place**: [Yes/No]
-
-## Use Cases
-
-- [Use case 1]
-- [Use case 2]
-- [Use case 3]
-
-## References
-
-- Wikipedia: Heapsort
-- Additional resources can be found in academic literature
+- **Stability**: Depends on implementation
+- **In-place**: Depends on implementation
+- **Adaptive**: Depends on implementation
 
 ## Implementation
 
-See `algorithm.py` for the complete implementation with examples.
+See `algorithm.py` for the complete implementation with examples and performance analysis.
 
-Heap Sort addresses specific computational challenges.
+## References
 
-This technique is applied in various domains to solve specific problems efficiently. Understanding this approach enables developers to solve related problems effectively.
+- Wikipedia: [Heapsort](https://en.wikipedia.org/wiki/Heapsort)
+- Additional resources available in academic literature and algorithm textbooks
 
-## TL;DR
+## Examples
 
-**One Sentence**: An in-place sorting algorithm that uses a binary heap data structure to sort elements by repeatedly extracting the maximum element.
+Run the algorithm with:
+```bash
+python algorithm.py
+```
 
 ## Learning Objectives
 
-## Prerequisites
-
-- Basic programming knowledge in Python or Java
-- Understanding of arrays, lists, and basic data structures
-- Familiarity with loops, conditionals, and functions
-- Basic understanding of comparison operations
-
-By the end of this lecture, students will be able to:
-
-1. Implement Heap Sort from scratch
-2. Analyze time and space complexity using Big O notation
-3. Identify when to employ this algorithm vs. alternative approaches
-4. Recognize common implementation pitfalls and how to avoid them
-5. Apply this approach to tackle real-world problems
-6. Compare stability, in-place properties, and performance characteristics
-
-### Short Description
-
-An in-place sorting strategy that uses a binary heap content structure to sort elements. Addresses sorting without requiring additional memory space. Example: Sorting employee IDs [1005, 1001, 1008, 1002] → [1001, 1002, 1005, 1008]. Operates by building a max-heap, then repeatedly extracting the maximum element and placing it at the end of the array.
-
-**Key Characteristics:**
-- **Time Complexity**: O(n log n) because building the heap takes O(n) and each of the n extract-max operations takes O(log n).
-- **Space Complexity**: O(1) because it sorts in-place by rearranging elements within the original array without additional content structures.
-- **Stability**: Not stable because heap operations can swap elements that are far apart, potentially changing the relative order of equal elements.
-
-## Often Used Together With
-
-Heap Sort is used in combination with:
-
-- **Quick Sort**: Often combined for comprehensive solutions
-
-**Common Combinations:**
-- Employed together in production systems for optimal performance
-- Complementary algorithms that tackle related problems
-- Often part of larger algorithmic frameworks
-
-## Do Not Confuse With
-
-- **Selection Sort**: Boapplyuse selection principle but heap sort achieves O(n log n) via heap, selection sort is O(n²)
-- **Quick Sort**: Both O(n log n) but heap sort guarantees worst-case capability, quick sort can degrade
-- **Priority Queue**: Heap sort uses heap structure but is a sorting atechnique notdatasetata structure
-
-## Self-Assessment Questions
-
-Test your understanding with these questions:
-
-### Comprehension
-
-1. Can you explain how Heap Sort works in your own words?
-2. What is the key insight or technique that makes Heap Sort efficient?
-
-### Analysis
-
-3. What are the best-case, average-case, and worst-case time complexities?
-4. When would you choose Heap Sort over alternative algorithms?
-
-### Application
-
-5. Can you implement Heap Sort from memory without looking at the code?
-6. What real-world problem could youaddresse using Heap Sort?
-
-### Debugging
-
-7. What are the most common mistakes when implementing Heap Sort?
-8. How would you test your Heap Sort deployment?
-
-**Scoring**: If you can answer 6+ questions confidently, you've mastered this strategy!
-
-## AApproachVisualization
-
-*Visual diagram for Heap Sort would be added here*
-*Consider using online visualization tools or drawing step-by-step execution*
-
-## Worked Example: Sorting [5, 2, 8, 1, 9] with Heap Sort
-
-**Step 1: Build Max Heap**
-- Array: [5, 2, 8, 1, 9]
-- Heapify from bottom up:
-  - Index 2 (8): Already max
-  - Index 1 (2): Swap with 9 → [5, 9, 8, 1, 2]
-  - Index 0 (5): Swap with 9 → [9, 5, 8, 1, 2]
-- Max heap: [9, 5, 8, 1, 2]
-
-**Step 2: Extract Max (9)**
-- Swap 9 with last element: [2, 5, 8, 1, 9]
-- Heapify: [8, 5, 2, 1, 9]
-- Sorted: [9]
-
-**Step 3: Extract Max (8)**
-- Swap 8 with last: [1, 5, 2, 8, 9]
-- Heapify: [5, 1, 2, 8, 9]
-- Sorted: [8, 9]
-
-**Step 4: Continue**
-- Extract 5: [2, 1, 5, 8, 9]
-- Extract 2: [1, 2, 5, 8, 9]
-- Extract 1: [1, 2, 5, 8, 9]
-- Final: [1, 2, 5, 8, 9]
-
-**Key Insight**: Build max heap, then repeatedly extract maximum and heapify remaining elements.
-
-
-
-### Level 1: Understanding (Beginner)
-
-1. Trace through Heap Sort step-by-step with input: [5, 2, 8, 1, 9]
-2. Identify the base case(s) in Heap Sort
-3. Explain why Heap Sort has its time complexity
-
-### Level 2: Deployment (Intermediate)
-
-4. Implement Heap Sort from scratch using only the function signature
-5. Modify Heap Sort to handle edge cases (empty input, single element, etc.)
-6. Add logging to track the atechniques execution steps
-
-### Level 3: Optimization (Advanced)
-
-7. Optimize Heap Sort for a specific employ case (e.g., nearly sorted content)
-8. Implement a parallel or distributed version of Heap Sort
-9. Compare Heap Sort capability with alternative algorithms on large datasets
-
-### Level 4: Real-World Application (Expert)
-
-10. Design a system that uses Heap Sort to tackle a production problem
-11. Create unit tests with 100% code coverage for Heap Sort
-12. Write a technical blog post explaining Heap Sort to beginners
-
-## Examples of Implementation
-
-### Java Standard Library
-
-```java
-// Java Arrays.sort() uses optimized sorting
-import java.util.Arrays;
-
-public class SortingExample {
-    public static void main(String[] args) {
-        int[] arr = {64, 34, 25, 12, 22, 11, 90};
-        Arrays.sort(arr);  // Uses dual-pivot quicksort
-        System.out.println(Arrays.toString(arr));
-    }
-}
-```
-
-**Purpose**: Java standard library uses this algorithm for core data structure operations.
-
-### Python Standard Library
-
-```python
-# Python list.sort() uses Timsort
-arr = [64, 34, 25, 12, 22, 11, 90]
-arr.sort()  # Timsort: hybrid of merge sort and insertion sort
-print(arr)
-```
-
-**Purpose**: Python standard library uses this algorithm for efficient data operations.
-
-### Spring Framework
-
-```java
-// Spring Framework - Sorting in Data Access
-@Service
-public class UserService {
-    @Autowired
-    private UserRepository userRepository;
-    
-    public List<User> getUsersSorted(String sortBy) {
-        List<User> users = userRepository.findAll();
-        users.sort(Comparator.comparing(User::getName));
-        return users;
-    }
-}
-```
-
-**Purpose**: Spring Framework uses this pattern/algorithm for enterprise application development.
-
-## Real-World Applications
-
-- **Standard Libraries**: Used in language standard libraries (Java Arrays.sort(), C++ std::sort(), Python list.sort())
-- **Database Systems**: SQL ORDER BY operations use sorting algorithms internally
-- **Search Engines**: Sorting search results by relevance, date, or popularity
-- **E-commerce Platforms**: Sorting products by price, rating, or popularity
-- **Operating Systems**: Process scheduling and file system organization
-
-## Specific misconceptions with corrections
-
-❌ **WRONG**: "Heap Sort is the best solution for all problems"
-✓ **CORRECT**: Heap Sort has specemploapplyuse cases and trade-offs; choose algorithms based on requirements
-
-❌ **WRONG**: "Heap Sort is too complex to understand"
-✓ **CORRECT**: Heap Sort can be understood by breaking it down into smaller steps
-
-## Examples of ImplRealizationis altechniqueattern is implemented in the following frameworks and technologies:
-
-### Kubernetes
-
-```yaml
-# Kubernetes Priority Queue uses heap sort
-apiVersion: scheduling.k8s.io/v1
-kind: PriorityClass
-metadata:
- name: high-priority
-value: 1000
-# Pods scheduled using heap-based priority queue
-```
-
-**Purpose**: Kubernetes uses this pattern for container orchestration, service discovery, and resource management.
-
-## Algorithm Steps
-
-1. **Initialization**: Set up initial state and data structures
-2. **Main loop**: Process elements until termination condition
-3. **Comparison/Operation**: Perform core algorithm operation
-4. **Update state**: Modify data structures based on operation
-5. **Check termination**: Verify if algorithm should continue
-6. **Return result**: Output final result when complete
-
-*Note: Specific steps depend on the algorithm implementation. See code for details.*
-
-## Detailed Explanation
-
-The Heap Sort algorithm works by systematically processing the input data according to its specific strategy.
-
-**Key Concepts**:
-- Core principle: [Describe main idea]
-- Data structures used: [List structures]
-- Termination condition: [When algorithm stops]
-
-**Process Flow**:
-1. Initialize necessary data structures
-2. Process input elements according to algorithm logic
-3. Update state after each operation
-4. Continue until termination condition is met
-5. Return final result
-
-For detailed implementation, see `algorithm.py` and `Algorithm.java`.
-
-## Advantages
-
-- **Efficiency**: Optimized for specific use cases
-- **Reliability**: Well-tested and proven approach
-- **Scalability**: Handles large inputs effectively
-- **Flexibility**: Can be adapted for various scenarios
-- **Industry standard**: Widely recognized and used
-
-## Disadvantages
-
-- **Limitations**: May not work for all input types
-- **Complexity**: Can be complex to implement correctly
-- **Trade-offs**: May sacrifice one aspect for another
-- **Dependencies**: May require specific data structures
-- **Edge cases**: Requires careful handling of edge cases
-
-## When to Use
-
-Use Heap Sort when:
-
-- **Specific scenario 1**: [When this is appropriate]
-- **Specific scenario 2**: [Another use case]
-- **Data characteristics**: [What kind of data works best]
-- **Performance requirements**: [When performance is acceptable]
-- **Constraints**: [When constraints are met]
-
-**Ideal conditions**:
-- Input size: [Small/Medium/Large]
-- Data type: [Sorted/Unsorted, etc.]
-- Memory constraints: [Available memory]
-- Time constraints: [Acceptable time]
-
-## When NOT to Use
-
-Avoid Heap Sort when:
-
-- **Scenario 1**: [When this is not appropriate]
-- **Scenario 2**: [Another case to avoid]
-- **Data characteristics**: [What kind of data doesn't work]
-- **Performance requirements**: [When performance is insufficient]
-- **Constraints**: [When constraints are not met]
-
-**Poor fit conditions**:
-- Input size: [Too large/small]
-- Data type: [Incompatible data]
-- Memory constraints: [Insufficient memory]
-- Time constraints: [Too strict]
-
-## Performance Analysis
-
-### Time Complexity Analysis
-
-**Best Case**: O(n log n) - When pivot divides array evenly
-**Average Case**: O(n log n) - Expected performance on random data
-**Worst Case**: O(n²) - When pivot is always smallest/largest element
-
-**Performance Characteristics**:
-- Efficient for large datasets due to O(n log n) average case
-- In-place sorting reduces memory overhead
-- Cache-friendly partitioning improves real-world performance
-- Performance degrades on already sorted or reverse-sorted data
-
-### Space Complexity Analysis
-
-**Space Complexity**: O(log n) for recursion stack
-- Recursion depth is logarithmic in average case
-- Each recursive call uses constant space for local variables
-- Worst-case space is O(n) if recursion is not optimized
-
-### Optimization Strategies
-
-1. **Pivot Selection**: Use median-of-three or random pivot to avoid worst case
-2. **Insertion Sort Hybrid**: Switch to insertion sort for small subarrays (< 10 elements)
-3. **Tail Recursion**: Optimize tail recursion to reduce stack space
-4. **Three-Way Partitioning**: Handle duplicate elements efficiently
-
-### Benchmark Results
-
-Typical performance on modern hardware:
-- **Small arrays (n < 100)**: ~0.1ms
-- **Medium arrays (n = 10,000)**: ~5ms
-- **Large arrays (n = 1,000,000)**: ~500ms
-
-*Note: Actual performance depends on hardware, data distribution, and implementation details.*
+By studying this algorithm, you will learn:
+1. The fundamental approach and logic
+2. Time and space complexity analysis
+3. When to use this algorithm vs alternatives
+4. Implementation details and optimizations
