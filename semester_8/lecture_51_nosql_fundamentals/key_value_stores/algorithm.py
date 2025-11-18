@@ -9,19 +9,40 @@ This file contains the implementation of the Key Value Stores algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def key_value_stores(data):
-    """
-    Key Value Stores algorithm implementation.
+class KeyValueStore:
+    """Key-value store."""
+    def __init__(self):
+        self.store: Dict[str, any] = {}
+        self.ttl: Dict[str, float] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Key Value Stores
-    return data
-
+    def put(self, key: str, value: any, ttl: int = None) -> None:
+        """Put key-value pair."""
+        import time
+        self.store[key] = value
+        if ttl:
+            self.ttl[key] = time.time() + ttl
+    
+    def get(self, key: str) -> Optional[any]:
+        """Get value by key."""
+        import time
+        if key in self.ttl and time.time() > self.ttl[key]:
+            del self.store[key]
+            del self.ttl[key]
+            return None
+        return self.store.get(key)
+    
+    def delete(self, key: str) -> bool:
+        """Delete key."""
+        if key in self.store:
+            del self.store[key]
+            if key in self.ttl:
+                del self.ttl[key]
+            return True
+        return False
+    
+    def exists(self, key: str) -> bool:
+        """Check if key exists."""
+        return key in self.store
 
 
 def main() -> None:

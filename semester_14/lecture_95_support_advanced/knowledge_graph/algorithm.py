@@ -9,19 +9,37 @@ This file contains the implementation of the Knowledge Graph algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def knowledge_graph(data):
-    """
-    Knowledge Graph algorithm implementation.
+class KnowledgeGraph:
+    """Knowledge graph."""
+    def __init__(self):
+        self.nodes: Dict[str, dict] = {}
+        self.edges: List[dict] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Knowledge Graph
-    return data
-
+    def add_entity(self, entity_id: str, entity_type: str, 
+                  properties: dict) -> None:
+        """Add entity."""
+        self.nodes[entity_id] = {
+            'type': entity_type,
+            'properties': properties
+        }
+    
+    def add_relation(self, subject_id: str, predicate: str, 
+                    object_id: str) -> None:
+        """Add relation."""
+        relation_id = f"{subject_id}_{predicate}_{object_id}"
+        self.edges[relation_id] = {
+            'subject': subject_id,
+            'predicate': predicate,
+            'object': object_id
+        }
+    
+    def query(self, pattern: dict) -> List[dict]:
+        """Query knowledge graph."""
+        results = []
+        for edge_id, edge in self.edges.items():
+            if all(edge.get(k) == v for k, v in pattern.items()):
+                results.append(edge)
+        return results
 
 
 def main() -> None:

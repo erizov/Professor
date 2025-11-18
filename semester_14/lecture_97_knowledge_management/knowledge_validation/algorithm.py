@@ -9,19 +9,34 @@ This file contains the implementation of the Knowledge Validation algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def knowledge_validation(data):
-    """
-    Knowledge Validation algorithm implementation.
+class KnowledgeValidation:
+    """Knowledge validation system."""
+    def __init__(self):
+        self.validators: List[callable] = {}
+        self.validation_results: Dict[str, dict] = {}
     
-    Args:
-        data: Input data for the algorithm
+    def add_validator(self, validator_name: str, validator: callable) -> None:
+        """Add validation rule."""
+        self.validators[validator_name] = validator
+    
+    def validate(self, knowledge_id: str, knowledge: dict) -> dict:
+        """Validate knowledge."""
+        results = {
+            'valid': True,
+            'errors': [],
+            'warnings': []
+        }
         
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Knowledge Validation
-    return data
-
+        for validator_name, validator in self.validators.items():
+            try:
+                if not validator(knowledge):
+                    results['valid'] = False
+                    results['errors'].append(validator_name)
+            except Exception as e:
+                results['warnings'].append(f"{validator_name}: {str(e)}")
+        
+        self.validation_results[knowledge_id] = results
+        return results
 
 
 def main() -> None:

@@ -9,19 +9,27 @@ This file contains the implementation of the Interface Segregation algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def interface_segregation(data):
-    """
-    Interface Segregation algorithm implementation.
+class InterfaceSegregation:
+    """Interface segregation principle."""
+    def __init__(self):
+        self.interfaces: Dict[str, List[str]] = {}
+        self.implementations: Dict[str, List[str]] = {}
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Interface Segregation
-    return data
-
+    def define_interface(self, interface_name: str, 
+                        methods: List[str]) -> None:
+        """Define interface."""
+        self.interfaces[interface_name] = methods
+    
+    def implement_interface(self, class_name: str, 
+                           interface_name: str) -> None:
+        """Implement interface."""
+        if class_name not in self.implementations:
+            self.implementations[class_name] = []
+        self.implementations[class_name].append(interface_name)
+    
+    def get_interface_methods(self, interface_name: str) -> List[str]:
+        """Get interface methods."""
+        return self.interfaces.get(interface_name, [])
 
 
 def main() -> None:
