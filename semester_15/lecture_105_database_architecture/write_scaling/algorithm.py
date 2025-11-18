@@ -42,6 +42,7 @@ def write_scaling(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Write Scaling implementation.
     

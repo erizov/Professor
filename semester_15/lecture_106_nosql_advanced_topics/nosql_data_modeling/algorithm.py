@@ -42,6 +42,7 @@ def nosql_data_modeling(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Nosql Data Modeling implementation.
     

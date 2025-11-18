@@ -42,6 +42,7 @@ def nosql_consistency_models(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Nosql Consistency Models implementation.
     
