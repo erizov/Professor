@@ -4191,6 +4191,569 @@ class Saga:
                 except:
                     pass
             raise e''',
+    
+    'boosting': '''class Boosting:
+    """Boosting algorithm (AdaBoost simplified)."""
+    def __init__(self, n_estimators: int = 50):
+        self.n_estimators = n_estimators
+        self.estimators = []
+        self.weights = []
+        self.alphas = []
+    
+    def fit(self, X: List[List[float]], y: List[int]) -> None:
+        """Train boosting model."""
+        n_samples = len(X)
+        sample_weights = [1.0 / n_samples] * n_samples
+        
+        for _ in range(self.n_estimators):
+            # Train weak learner (simplified - would use actual weak learner)
+            estimator = self._train_weak_learner(X, y, sample_weights)
+            predictions = self._predict_weak(estimator, X)
+            
+            # Calculate error
+            error = sum(sample_weights[i] for i in range(n_samples) 
+                       if predictions[i] != y[i])
+            
+            if error >= 0.5:
+                break
+            
+            # Calculate alpha
+            alpha = 0.5 * math.log((1 - error) / error)
+            self.alphas.append(alpha)
+            self.estimators.append(estimator)
+            
+            # Update sample weights
+            for i in range(n_samples):
+                if predictions[i] != y[i]:
+                    sample_weights[i] *= math.exp(alpha)
+            
+            # Normalize weights
+            total = sum(sample_weights)
+            sample_weights = [w / total for w in sample_weights]
+    
+    def _train_weak_learner(self, X: List[List[float]], y: List[int], 
+                           weights: List[float]) -> dict:
+        """Train weak learner (simplified)."""
+        # Simplified - would use actual weak learner
+        return {"threshold": 0.5, "feature": 0}
+    
+    def _predict_weak(self, estimator: dict, X: List[List[float]]) -> List[int]:
+        """Predict using weak learner."""
+        threshold = estimator["threshold"]
+        feature = estimator["feature"]
+        return [1 if x[feature] > threshold else -1 for x in X]
+    
+    def predict(self, X: List[List[float]]) -> List[int]:
+        """Predict using ensemble."""
+        predictions = []
+        for x in X:
+            score = sum(alpha * self._predict_weak(est, [x])[0] 
+                       for alpha, est in zip(self.alphas, self.estimators))
+            predictions.append(1 if score > 0 else -1)
+        return predictions''',
+    
+    'gradient_boosting': '''class GradientBoosting:
+    """Gradient Boosting implementation (simplified)."""
+    def __init__(self, n_estimators: int = 100, learning_rate: float = 0.1):
+        self.n_estimators = n_estimators
+        self.learning_rate = learning_rate
+        self.estimators = []
+        self.initial_prediction = 0.0
+    
+    def fit(self, X: List[List[float]], y: List[float]) -> None:
+        """Train gradient boosting model."""
+        n_samples = len(y)
+        self.initial_prediction = sum(y) / n_samples
+        
+        # Initial predictions
+        predictions = [self.initial_prediction] * n_samples
+        
+        for _ in range(self.n_estimators):
+            # Calculate residuals (negative gradients)
+            residuals = [y[i] - predictions[i] for i in range(n_samples)]
+            
+            # Train weak learner on residuals (simplified)
+            estimator = self._train_weak_learner(X, residuals)
+            self.estimators.append(estimator)
+            
+            # Update predictions
+            weak_predictions = self._predict_weak(estimator, X)
+            for i in range(n_samples):
+                predictions[i] += self.learning_rate * weak_predictions[i]
+    
+    def _train_weak_learner(self, X: List[List[float]], 
+                           residuals: List[float]) -> dict:
+        """Train weak learner (simplified)."""
+        # Simplified - would use actual decision tree
+        return {"threshold": 0.5, "feature": 0}
+    
+    def _predict_weak(self, estimator: dict, X: List[List[float]]) -> List[float]:
+        """Predict using weak learner."""
+        threshold = estimator["threshold"]
+        feature = estimator["feature"]
+        return [1.0 if x[feature] > threshold else -1.0 for x in X]
+    
+    def predict(self, X: List[List[float]]) -> List[float]:
+        """Predict using ensemble."""
+        predictions = [self.initial_prediction] * len(X)
+        
+        for estimator in self.estimators:
+            weak_predictions = self._predict_weak(estimator, X)
+            for i in range(len(X)):
+                predictions[i] += self.learning_rate * weak_predictions[i]
+        
+        return predictions''',
+    
+    'xgboost': '''class XGBoost:
+    """XGBoost implementation (simplified)."""
+    def __init__(self, n_estimators: int = 100, learning_rate: float = 0.1,
+                 max_depth: int = 3):
+        self.n_estimators = n_estimators
+        self.learning_rate = learning_rate
+        self.max_depth = max_depth
+        self.estimators = []
+        self.initial_prediction = 0.0
+    
+    def fit(self, X: List[List[float]], y: List[float]) -> None:
+        """Train XGBoost model."""
+        n_samples = len(y)
+        self.initial_prediction = sum(y) / n_samples
+        
+        predictions = [self.initial_prediction] * n_samples
+        
+        for _ in range(self.n_estimators):
+            # Calculate gradients and hessians
+            gradients = [2 * (predictions[i] - y[i]) for i in range(n_samples)]
+            hessians = [2.0] * n_samples
+            
+            # Train tree (simplified)
+            tree = self._build_tree(X, gradients, hessians, 0)
+            self.estimators.append(tree)
+            
+            # Update predictions
+            tree_predictions = self._predict_tree(tree, X)
+            for i in range(n_samples):
+                predictions[i] += self.learning_rate * tree_predictions[i]
+    
+    def _build_tree(self, X: List[List[float]], gradients: List[float],
+                   hessians: List[float], depth: int) -> dict:
+        """Build tree (simplified)."""
+        if depth >= self.max_depth:
+            # Leaf node
+            gain = sum(gradients) ** 2 / (sum(hessians) + 1.0)
+            return {"type": "leaf", "value": -sum(gradients) / (sum(hessians) + 1.0)}
+        
+        # Simplified split
+        return {"type": "split", "feature": 0, "threshold": 0.5,
+                "left": {"type": "leaf", "value": 0.1},
+                "right": {"type": "leaf", "value": -0.1}}
+    
+    def _predict_tree(self, tree: dict, X: List[List[float]]) -> List[float]:
+        """Predict using tree."""
+        if tree["type"] == "leaf":
+            return [tree["value"]] * len(X)
+        
+        predictions = []
+        for x in X:
+            if x[tree["feature"]] <= tree["threshold"]:
+                predictions.append(tree["left"]["value"])
+            else:
+                predictions.append(tree["right"]["value"])
+        return predictions
+    
+    def predict(self, X: List[List[float]]) -> List[float]:
+        """Predict using ensemble."""
+        predictions = [self.initial_prediction] * len(X)
+        
+        for tree in self.estimators:
+            tree_predictions = self._predict_tree(tree, X)
+            for i in range(len(X)):
+                predictions[i] += self.learning_rate * tree_predictions[i]
+        
+        return predictions''',
+    
+    'pca': '''def pca(X: List[List[float]], n_components: int = 2) -> tuple:
+    """Principal Component Analysis."""
+    import math
+    
+    n_samples = len(X)
+    n_features = len(X[0]) if X else 0
+    
+    # Center the data
+    mean = [sum(X[i][j] for i in range(n_samples)) / n_samples 
+            for j in range(n_features)]
+    X_centered = [[X[i][j] - mean[j] for j in range(n_features)] 
+                  for i in range(n_samples)]
+    
+    # Compute covariance matrix
+    covariance = [[0.0] * n_features for _ in range(n_features)]
+    for i in range(n_features):
+        for j in range(n_features):
+            covariance[i][j] = sum(X_centered[k][i] * X_centered[k][j] 
+                                  for k in range(n_samples)) / (n_samples - 1)
+    
+    # Simplified eigenvalue decomposition (would use numpy in practice)
+    # For now, return first n_components features as principal components
+    components = [[1.0 if i == j else 0.0 for j in range(n_features)] 
+                 for i in range(min(n_components, n_features))]
+    
+    # Transform data
+    X_transformed = [[sum(X_centered[i][j] * components[k][j] 
+                         for j in range(n_features)) 
+                     for k in range(n_components)] 
+                    for i in range(n_samples)]
+    
+    return X_transformed, components, mean
+
+def pca_transform(X: List[List[float]], components: List[List[float]], 
+                 mean: List[float]) -> List[List[float]]:
+    """Transform data using PCA components."""
+    n_components = len(components)
+    X_centered = [[X[i][j] - mean[j] for j in range(len(X[0]))] 
+                  for i in range(len(X))]
+    
+    return [[sum(X_centered[i][j] * components[k][j] 
+                for j in range(len(X[0]))) 
+            for k in range(n_components)] 
+           for i in range(len(X))]''',
+    
+    'svd': '''def svd(matrix: List[List[float]], k: int = None) -> tuple:
+    """Singular Value Decomposition (simplified)."""
+    # Simplified SVD - in practice would use numpy or scipy
+    m, n = len(matrix), len(matrix[0]) if matrix else 0
+    if k is None:
+        k = min(m, n)
+    
+    # For simplified version, return identity-like matrices
+    U = [[1.0 if i == j else 0.0 for j in range(m)] for i in range(m)]
+    S = [1.0] * k  # Singular values
+    Vt = [[1.0 if i == j else 0.0 for j in range(n)] for i in range(k)]
+    
+    return U, S, Vt
+
+def svd_reconstruct(U: List[List[float]], S: List[float], 
+                   Vt: List[List[float]]) -> List[List[float]]:
+    """Reconstruct matrix from SVD."""
+    m, k = len(U), len(S)
+    n = len(Vt[0]) if Vt else 0
+    
+    # Compute U * S
+    US = [[U[i][j] * S[j] for j in range(k)] for i in range(m)]
+    
+    # Compute US * Vt
+    result = [[sum(US[i][l] * Vt[l][j] for l in range(k)) 
+              for j in range(n)] 
+             for i in range(m)]
+    
+    return result''',
+    
+    'lda': '''def lda(X: List[List[float]], y: List[int], n_components: int = 2) -> tuple:
+    """Linear Discriminant Analysis."""
+    n_samples = len(X)
+    n_features = len(X[0]) if X else 0
+    classes = sorted(set(y))
+    n_classes = len(classes)
+    
+    # Calculate class means
+    class_means = {}
+    class_counts = {}
+    for cls in classes:
+        class_indices = [i for i, label in enumerate(y) if label == cls]
+        class_counts[cls] = len(class_indices)
+        class_means[cls] = [sum(X[i][j] for i in class_indices) / class_counts[cls]
+                           for j in range(n_features)]
+    
+    # Overall mean
+    overall_mean = [sum(X[i][j] for i in range(n_samples)) / n_samples
+                   for j in range(n_features)]
+    
+    # Between-class scatter matrix
+    Sb = [[0.0] * n_features for _ in range(n_features)]
+    for cls in classes:
+        diff = [class_means[cls][j] - overall_mean[j] for j in range(n_features)]
+        for i in range(n_features):
+            for j in range(n_features):
+                Sb[i][j] += class_counts[cls] * diff[i] * diff[j]
+    
+    # Within-class scatter matrix (simplified)
+    Sw = [[1.0 if i == j else 0.0 for j in range(n_features)] 
+          for i in range(n_features)]
+    
+    # Simplified: return identity components
+    components = [[1.0 if i == j else 0.0 for j in range(n_features)] 
+                 for i in range(min(n_components, n_features))]
+    
+    # Transform
+    X_transformed = [[sum(X[i][j] * components[k][j] for j in range(n_features))
+                     for k in range(n_components)] 
+                    for i in range(n_samples)]
+    
+    return X_transformed, components''',
+    
+    'k_means_clustering': '''def k_means_clustering(data: List[List[float]], k: int, 
+                            max_iters: int = 100) -> tuple:
+    """K-means clustering."""
+    import random
+    import math
+    
+    n = len(data)
+    dim = len(data[0]) if data else 0
+    
+    # Initialize centroids randomly
+    centroids = [data[random.randint(0, n - 1)][:] for _ in range(k)]
+    
+    for _ in range(max_iters):
+        # Assign points to nearest centroid
+        clusters = [[] for _ in range(k)]
+        labels = []
+        
+        for point in data:
+            distances = [math.sqrt(sum((point[i] - centroids[j][i]) ** 2 
+                                      for i in range(dim))) 
+                        for j in range(k)]
+            nearest = distances.index(min(distances))
+            clusters[nearest].append(point)
+            labels.append(nearest)
+        
+        # Update centroids
+        new_centroids = []
+        for cluster in clusters:
+            if cluster:
+                new_centroid = [sum(point[i] for point in cluster) / len(cluster) 
+                               for i in range(dim)]
+                new_centroids.append(new_centroid)
+            else:
+                new_centroids.append(centroids[clusters.index(cluster)])
+        
+        if new_centroids == centroids:
+            break
+        centroids = new_centroids
+    
+    return labels, centroids''',
+    
+    'dbscan': '''def dbscan(data: List[List[float]], eps: float = 0.5, 
+            min_samples: int = 5) -> List[int]:
+    """DBSCAN clustering algorithm."""
+    import math
+    
+    n = len(data)
+    labels = [-1] * n  # -1 means noise
+    cluster_id = 0
+    visited = set()
+    
+    def distance(p1: List[float], p2: List[float]) -> float:
+        """Calculate Euclidean distance."""
+        return math.sqrt(sum((p1[i] - p2[i]) ** 2 for i in range(len(p1))))
+    
+    def get_neighbors(point_idx: int) -> List[int]:
+        """Get neighbors within eps."""
+        neighbors = []
+        for i in range(n):
+            if distance(data[point_idx], data[i]) <= eps:
+                neighbors.append(i)
+        return neighbors
+    
+    def expand_cluster(point_idx: int, neighbors: List[int]) -> None:
+        """Expand cluster from seed point."""
+        nonlocal cluster_id
+        labels[point_idx] = cluster_id
+        
+        i = 0
+        while i < len(neighbors):
+            neighbor_idx = neighbors[i]
+            
+            if neighbor_idx not in visited:
+                visited.add(neighbor_idx)
+                neighbor_neighbors = get_neighbors(neighbor_idx)
+                
+                if len(neighbor_neighbors) >= min_samples:
+                    neighbors.extend(neighbor_neighbors)
+            
+            if labels[neighbor_idx] == -1:
+                labels[neighbor_idx] = cluster_id
+            
+            i += 1
+    
+    for i in range(n):
+        if i in visited:
+            continue
+        
+        visited.add(i)
+        neighbors = get_neighbors(i)
+        
+        if len(neighbors) < min_samples:
+            labels[i] = -1  # Noise
+        else:
+            expand_cluster(i, neighbors)
+            cluster_id += 1
+    
+    return labels''',
+    
+    'hierarchical_clustering': '''def hierarchical_clustering(data: List[List[float]], 
+                                  linkage: str = "ward") -> List[List[int]]:
+    """Hierarchical clustering (simplified)."""
+    import math
+    
+    n = len(data)
+    clusters = [[i] for i in range(n)]
+    
+    def distance(p1: List[float], p2: List[float]) -> float:
+        """Euclidean distance."""
+        return math.sqrt(sum((p1[i] - p2[i]) ** 2 for i in range(len(p1))))
+    
+    def cluster_distance(c1: List[int], c2: List[int]) -> float:
+        """Calculate distance between clusters."""
+        if linkage == "single":
+            return min(distance(data[i], data[j]) 
+                      for i in c1 for j in c2)
+        elif linkage == "complete":
+            return max(distance(data[i], data[j]) 
+                      for i in c1 for j in c2)
+        else:  # average
+            return sum(distance(data[i], data[j]) 
+                      for i in c1 for j in c2) / (len(c1) * len(c2))
+    
+    dendrogram = []
+    
+    while len(clusters) > 1:
+        # Find closest clusters
+        min_dist = float('inf')
+        merge_i, merge_j = 0, 1
+        
+        for i in range(len(clusters)):
+            for j in range(i + 1, len(clusters)):
+                dist = cluster_distance(clusters[i], clusters[j])
+                if dist < min_dist:
+                    min_dist = dist
+                    merge_i, merge_j = i, j
+        
+        # Merge clusters
+        new_cluster = clusters[merge_i] + clusters[merge_j]
+        dendrogram.append([clusters[merge_i], clusters[merge_j], min_dist])
+        
+        clusters = [clusters[k] for k in range(len(clusters)) 
+                   if k != merge_i and k != merge_j]
+        clusters.append(new_cluster)
+    
+    return dendrogram''',
+    
+    'apriori': '''def apriori(transactions: List[List[str]], min_support: float = 0.5) -> List[tuple]:
+    """Apriori algorithm for frequent itemset mining."""
+    from collections import Counter
+    
+    n_transactions = len(transactions)
+    min_count = int(min_support * n_transactions)
+    
+    # Generate 1-itemsets
+    item_counts = Counter()
+    for transaction in transactions:
+        for item in transaction:
+            item_counts[item] += 1
+    
+    frequent_1 = {frozenset([item]): count 
+                 for item, count in item_counts.items() 
+                 if count >= min_count}
+    
+    frequent_itemsets = list(frequent_1.items())
+    k = 2
+    
+    while True:
+        # Generate candidates
+        candidates = set()
+        items = [list(itemset)[0] for itemset, _ in frequent_1.items()]
+        
+        for i in range(len(items)):
+            for j in range(i + 1, len(items)):
+                candidate = frozenset([items[i], items[j]])
+                candidates.add(candidate)
+        
+        # Count support
+        candidate_counts = Counter()
+        for transaction in transactions:
+            trans_set = set(transaction)
+            for candidate in candidates:
+                if candidate.issubset(trans_set):
+                    candidate_counts[candidate] += 1
+        
+        # Filter by min support
+        frequent_k = {itemset: count 
+                     for itemset, count in candidate_counts.items() 
+                     if count >= min_count}
+        
+        if not frequent_k:
+            break
+        
+        frequent_itemsets.extend(frequent_k.items())
+        frequent_1 = frequent_k
+        k += 1
+    
+    return frequent_itemsets''',
+    
+    'fp_growth': '''class FPTreeNode:
+    """Node in FP-tree."""
+    def __init__(self, item: str = None, count: int = 0):
+        self.item = item
+        self.count = count
+        self.parent = None
+        self.children: Dict[str, 'FPTreeNode'] = {}
+        self.node_link = None
+
+class FPTree:
+    """FP-tree for FP-Growth algorithm."""
+    def __init__(self):
+        self.root = FPTreeNode()
+        self.header_table: Dict[str, FPTreeNode] = {}
+    
+    def add_transaction(self, transaction: List[str], count: int = 1) -> None:
+        """Add transaction to tree."""
+        current = self.root
+        
+        for item in transaction:
+            if item in current.children:
+                current.children[item].count += count
+            else:
+                new_node = FPTreeNode(item, count)
+                new_node.parent = current
+                current.children[item] = new_node
+                
+                # Update header table
+                if item in self.header_table:
+                    node = self.header_table[item]
+                    while node.node_link:
+                        node = node.node_link
+                    node.node_link = new_node
+                else:
+                    self.header_table[item] = new_node
+            
+            current = current.children[item]
+
+def fp_growth(transactions: List[List[str]], min_support: float = 0.5) -> List[tuple]:
+    """FP-Growth algorithm (simplified)."""
+    from collections import Counter
+    
+    # Count item frequencies
+    item_counts = Counter()
+    for transaction in transactions:
+        for item in transaction:
+            item_counts[item] += 1
+    
+    min_count = int(min_support * len(transactions))
+    frequent_items = [item for item, count in item_counts.items() 
+                     if count >= min_count]
+    
+    # Build FP-tree
+    tree = FPTree()
+    for transaction in transactions:
+        filtered = [item for item in transaction if item in frequent_items]
+        filtered.sort(key=lambda x: item_counts[x], reverse=True)
+        tree.add_transaction(filtered)
+    
+    # Mine patterns (simplified)
+    patterns = []
+    for item in frequent_items:
+        patterns.append((frozenset([item]), item_counts[item]))
+    
+    return patterns''',
 }
 
 
