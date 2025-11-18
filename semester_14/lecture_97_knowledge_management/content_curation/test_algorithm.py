@@ -69,6 +69,5 @@ class TestContentcuration(AlgorithmTestCase):
         # self.assert_performance(lambda: self.algorithm([...]), max_time_seconds=1.0)
         pass
 
-
 if __name__ == '__main__':
     unittest.main()

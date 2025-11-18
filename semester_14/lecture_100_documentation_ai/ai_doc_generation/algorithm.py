@@ -18,20 +18,14 @@ class AIDocGeneration:
     def generate_from_code(self, code: str, doc_type: str = 'api') -> str:
         """Generate documentation from code."""
         # Simplified AI doc generation
-        doc = f"# {doc_type.upper()} Documentation
-
-"
-        doc += "Generated from code analysis.
-"
+        doc = f"# {doc_type.upper()} Documentation\n\n"
+        doc += "Generated from code analysis.\n"
         self.generated_docs[doc_type] = doc
         return doc
     
     def enhance_docs(self, existing_doc: str, context: dict) -> str:
         """Enhance existing documentation."""
-        return existing_doc + f"
-
-## Additional Context
-{context.get('description', '')}"
+        return existing_doc + f"\n\n## Additional Context\n{context.get('description', '')}"
 
 
 def main() -> None:

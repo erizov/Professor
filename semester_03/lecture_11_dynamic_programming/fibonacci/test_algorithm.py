@@ -102,5 +102,5 @@ class TestFibonacci(AlgorithmTestCase):
         # Second call should be faster (memoized)
         self.assertLessEqual(time2, time1)
 
-    if __name__ == '__main__':
+if __name__ == '__main__':
     unittest.main()

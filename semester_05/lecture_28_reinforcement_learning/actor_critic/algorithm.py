@@ -7,6 +7,7 @@ This file contains the implementation of the Actor Critic algorithm.
 """
 
 from typing import List, Optional, Dict, Set
+import math
 
 
 class ActorCritic:

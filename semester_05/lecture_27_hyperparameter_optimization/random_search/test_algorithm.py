@@ -96,5 +96,5 @@ class TestRandomsearch(AlgorithmTestCase):
         result = self.algorithm(arr, 5)
         self.assert_search_result(result, 5, arr, found=True)
 
-    if __name__ == '__main__':
+if __name__ == '__main__':
     unittest.main()

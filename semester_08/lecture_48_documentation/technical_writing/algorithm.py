@@ -17,23 +17,15 @@ class TechnicalWriting:
     
     def create_doc(self, doc_id: str, title: str, content: str) -> None:
         """Create technical document."""
-        self.docs[doc_id] = f"# {title}
-
-{content}"
+        self.docs[doc_id] = f"# {title}\n\n{content}"
     
     def generate_api_doc(self, function_name: str, 
                         description: str, params: List[dict]) -> str:
         """Generate API documentation."""
-        doc = f"## {function_name}
-
-{description}
-
-"
-        doc += "### Parameters
-"
+        doc = f"## {function_name}\n\n{description}\n\n"
+        doc += "### Parameters\n"
         for param in params:
-            doc += f"- `{param['name']}`: {param['description']}
-"
+            doc += f"- `{param['name']}`: {param['description']}\n"
         return doc
 
 

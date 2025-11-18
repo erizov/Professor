@@ -25,15 +25,12 @@ class AccessibilityDocs:
     
     def generate_docs(self) -> str:
         """Generate accessibility documentation."""
-        lines = ["# Accessibility Guidelines
-"]
+        lines = ["# Accessibility Guidelines\n"]
         for guideline in self.guidelines:
             lines.append(f"## {guideline['rule']}")
             lines.append(f"Level: {guideline['level']}")
-            lines.append(f"{guideline['description']}
-")
-        return "
-".join(lines)
+            lines.append(f"{guideline['description']}\n")
+        return "\n".join(lines)
 
 
 def main() -> None:

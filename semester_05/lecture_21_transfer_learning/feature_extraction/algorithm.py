@@ -7,6 +7,7 @@ This file contains the implementation of the Feature Extraction algorithm.
 """
 
 from typing import List, Optional, Dict, Set
+import math
 
 
 def feature_extraction(data: List[any], 

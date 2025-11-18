@@ -81,5 +81,5 @@ class TestKnowledgegraphconstruction(AlgorithmTestCase):
         result = self.algorithm(graph, 0)
         self.assertIn(0, result)
 
-    if __name__ == '__main__':
+if __name__ == '__main__':
     unittest.main()

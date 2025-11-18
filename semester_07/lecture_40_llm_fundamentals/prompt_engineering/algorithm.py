@@ -31,13 +31,9 @@ class PromptEngineering:
     def optimize_prompt(self, base_prompt: str, examples: List[dict]) -> str:
         """Optimize prompt using examples."""
         # Simplified: add few-shot examples
-        optimized = base_prompt + "
-
-Examples:
-"
+        optimized = base_prompt + "\n\nExamples:\n"
         for example in examples[:3]:
-            optimized += f"{example}
-"
+            optimized += f"{example}\n"
         return optimized
 
 

@@ -28,19 +28,16 @@ class APIDocumentation:
     
     def generate_markdown(self) -> str:
         """Generate markdown documentation."""
-        lines = ["# API Documentation
-"]
+        lines = ["# API Documentation\n"]
         for key, endpoint in self.endpoints.items():
             lines.append(f"## {endpoint['method']} {endpoint['path']}")
-            lines.append(f"{endpoint['description']}
-")
+            lines.append(f"{endpoint['description']}\n")
             if endpoint['parameters']:
                 lines.append("### Parameters")
                 for param in endpoint['parameters']:
                     lines.append(f"- `{param.get('name', '')}`: {param.get('description', '')}")
                 lines.append("")
-        return "
-".join(lines)
+        return "\n".join(lines)
 
 
 def main() -> None:

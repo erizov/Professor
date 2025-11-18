@@ -97,5 +97,5 @@ class TestRadixsort(AlgorithmTestCase):
         result = self.algorithm(arr.copy())
         self.assertEqual(result, [-9, -8, -5, -2, -1])
 
-    if __name__ == '__main__':
+if __name__ == '__main__':
     unittest.main()

@@ -78,7 +78,7 @@ class TestAbstractfactory(AlgorithmTestCase):
         self.assertIsNotNone(instance1)
         self.assertIsNotNone(instance2)
 
-        def test_insert_operation(self):
+    def test_insert_operation(self):
         """Test tree insertion."""
         from semester_01.lecture_05_trees.binary_search_tree.algorithm import TreeNode, insert, search
         
@@ -91,5 +91,5 @@ class TestAbstractfactory(AlgorithmTestCase):
         self.assertIsNotNone(search(root, 3))
         self.assertIsNone(search(root, 10))
 
-    if __name__ == '__main__':
+if __name__ == '__main__':
     unittest.main()

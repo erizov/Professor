@@ -78,7 +78,7 @@ class TestEventsourcing(AlgorithmTestCase):
         self.assertIsNotNone(instance1)
         self.assertIsNotNone(instance2)
 
-        def test_object_creation(self):
+    def test_object_creation(self):
         """Test pattern object creation."""
         instance = self.algorithm()
         self.assertIsNotNone(instance)
@@ -106,5 +106,5 @@ class TestEventsourcing(AlgorithmTestCase):
         
         self.assertEqual(len(instances), 10)
 
-    if __name__ == '__main__':
+if __name__ == '__main__':
     unittest.main()

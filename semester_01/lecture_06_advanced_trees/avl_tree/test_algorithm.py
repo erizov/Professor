@@ -83,5 +83,5 @@ class TestAvltree(AlgorithmTestCase):
         self.assertIsNotNone(search(root, 3))
         self.assertIsNone(search(root, 10))
 
-    if __name__ == '__main__':
+if __name__ == '__main__':
     unittest.main()

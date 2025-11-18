@@ -26,16 +26,11 @@ class AutomatedDocumentation:
         """Generate documentation."""
         docs = []
         for path, source in self.sources.items():
-            doc = f"# Documentation from {source['type']}
-
-"
-            doc += f"Source: {path}
-"
+            doc = f"# Documentation from {source['type']}\n\n"
+            doc += f"Source: {path}\n"
             docs.append(doc)
             self.generated[path] = doc
-        return "
-
-".join(docs)
+        return "\n".join(docs)
 
 
 def main() -> None:

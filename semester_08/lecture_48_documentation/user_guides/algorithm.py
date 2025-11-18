@@ -17,9 +17,7 @@ class UserGuides:
     
     def create_guide(self, guide_id: str, title: str) -> None:
         """Create user guide."""
-        self.guides[guide_id] = f"# {title}
-
-"
+        self.guides[guide_id] = f"# {title}\n\n"
         self.sections[guide_id] = []
     
     def add_section(self, guide_id: str, section_title: str, 
@@ -30,11 +28,7 @@ class UserGuides:
                 'title': section_title,
                 'content': content
             })
-            self.guides[guide_id] += f"## {section_title}
-
-{content}
-
-"
+            self.guides[guide_id] += f"## {section_title}\n\n{content}\n\n"
 
 
 def main() -> None:

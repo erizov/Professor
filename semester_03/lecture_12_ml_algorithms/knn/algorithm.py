@@ -16,8 +16,8 @@ def knn(X_train: List[List[float]], y_train: List[any],
     
     distances = []
     for i, x_train in enumerate(X_train):
-        dist = math.sqrt(sum((x_test[j] - x_train[j]) ** 2 
-                            for j in range(len(x_test))))
+        dist = math.sqrt(sum((X_test[j] - x_train[j]) ** 2 
+                            for j in range(len(X_test))))
         distances.append((dist, y_train[i]))
     
     distances.sort(key=lambda x: x[0])

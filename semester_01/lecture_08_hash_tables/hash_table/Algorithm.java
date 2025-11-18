@@ -17,7 +17,7 @@ public class Algorithm {
      */
     public int _hash(Object key) {
         logger.info("Executing _hash");
-        return null;
+        return key != null ? key.hashCode() : 0;
     }
 
     /**
