@@ -4,6 +4,10 @@
 **Version**: 1.0  
 **Purpose**: Standardized assessment tools for evaluating student understanding and progress
 
+> **📚 This document is part of the comprehensive course materials.**  
+> For the complete textbook, see: [COMPREHENSIVE_COURSE_TEXTBOOK.md](../COMPREHENSIVE_COURSE_TEXTBOOK.md)  
+> This content is also included in the textbook as Appendix: Assessment Framework.
+
 ---
 
 ## Assessment Types

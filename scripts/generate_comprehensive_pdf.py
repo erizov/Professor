@@ -86,13 +86,50 @@ This document contains all lessons, algorithms, and patterns from the complete 1
     for header, content in content_parts:
         full_content += header + content + "\n\n"
     
+    # Add supporting documents as appendices
+    full_content += """
+\\newpage
+
+# Appendices
+
+## Appendix A: Assessment Framework
+
+"""
+    
+    # Add supporting documents
+    supporting_docs = [
+        ("ASSESSMENT_FRAMEWORK.md", "Assessment Framework"),
+        ("LEARNING_PATHS.md", "Learning Paths"),
+        ("METACOGNITIVE_STRATEGIES.md", "Metacognitive Strategies"),
+        ("GAMIFICATION_SYSTEM.md", "Gamification System"),
+        ("TEACHING_RESOURCES.md", "Teaching Resources"),
+        ("CLIENT_READY_TEMPLATES.md", "Client-Ready Templates"),
+        ("MLOPS_INTEGRATION_GUIDE.md", "MLOps Integration Guide"),
+        ("STRATEGIC_DOCUMENTATION.md", "Strategic Documentation"),
+        ("COLLABORATION_TOOLS.md", "Collaboration Tools"),
+        ("CODE_OF_CONDUCT.md", "Code of Conduct"),
+    ]
+    
+    base_path = Path(__file__).resolve().parents[1]
+    
+    for doc_file, doc_title in supporting_docs:
+        doc_path = base_path / doc_file
+        if doc_path.exists():
+            full_content += f"\n\n## Appendix: {doc_title}\n\n"
+            full_content += f"*See also: [{doc_file}](../{doc_file})*\n\n"
+            with open(doc_path, 'r', encoding='utf-8') as f:
+                doc_content = f.read()
+                # Remove the main title if it exists (first # line)
+                lines = doc_content.split('\n')
+                if lines and lines[0].startswith('#'):
+                    doc_content = '\n'.join(lines[1:])
+                full_content += doc_content + "\n\n"
+    
     # Add footer
     full_content += """
 \\newpage
 
-# Appendix
-
-## Course Statistics
+# Course Statistics
 
 - **Total Semesters**: 16 (8 undergraduate + 8 graduate)
 - **Total Lectures**: 118+
@@ -107,9 +144,24 @@ This document contains all lessons, algorithms, and patterns from the complete 1
 - All patterns include real-world examples
 - All implementations include performance measurements
 
+## Related Documents
+
+For additional resources, see:
+- [Assessment Framework](ASSESSMENT_FRAMEWORK.md)
+- [Learning Paths](LEARNING_PATHS.md)
+- [Metacognitive Strategies](METACOGNITIVE_STRATEGIES.md)
+- [Gamification System](GAMIFICATION_SYSTEM.md)
+- [Teaching Resources](TEACHING_RESOURCES.md)
+- [Client-Ready Templates](CLIENT_READY_TEMPLATES.md)
+- [MLOps Integration Guide](MLOPS_INTEGRATION_GUIDE.md)
+- [Strategic Documentation](STRATEGIC_DOCUMENTATION.md)
+- [Collaboration Tools](COLLABORATION_TOOLS.md)
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+
 ---
 
-*Generated from comprehensive algorithms course repository*
+*Generated from comprehensive algorithms course repository*  
+*For the latest version, see: [COMPREHENSIVE_COURSE_TEXTBOOK.md](COMPREHENSIVE_COURSE_TEXTBOOK.md)*
 """
     
     return full_content

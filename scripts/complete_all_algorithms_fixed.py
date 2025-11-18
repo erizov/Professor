@@ -233,11 +233,30 @@ def find_algorithms_needing_work() -> Tuple[List[Tuple[Path, str, str]], List[Tu
     return need_implementation, need_framework_examples
 
 
+def check_todo_status():
+    """Check TODO status quickly."""
+    from scripts.check_todo_status import check_todo_status as check_status
+    return check_status()
+
+
 def commit_changes(message: str) -> bool:
-    """Commit changes to git."""
+    """Commit changes to git and report TODO status."""
     try:
         subprocess.run(["git", "add", "-A"], cwd=ROOT, check=True, capture_output=True)
         subprocess.run(["git", "commit", "-m", message], cwd=ROOT, check=True, capture_output=True)
+        
+        # Report TODO status after commit
+        try:
+            status = check_todo_status()
+            print(f"\n[TODO STATUS] After commit:")
+            print(f"  - Total TODO items: {status['total_todos']}")
+            print(f"  - Algorithms with TODO Implement: {status['todo_implement']}")
+            print(f"  - Missing implementations: {status['missing_impl']}")
+            print(f"  - Placeholders: {status['placeholders']}")
+            print(f"  - Multiple main() functions: {status['multiple_main']}")
+        except Exception:
+            pass
+        
         return True
     except Exception:
         return False
