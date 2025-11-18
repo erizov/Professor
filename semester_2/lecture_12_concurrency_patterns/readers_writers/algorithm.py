@@ -9,19 +9,37 @@ This file contains the implementation of the Readers Writers algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def readers_writers(data):
-    """
-    Readers Writers algorithm implementation.
-    
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Readers Writers
-    return data
+import threading
 
+class ReadersWriters:
+    """Readers-Writers problem solution."""
+    def __init__(self):
+        self.readers_count = 0
+        self.mutex = threading.Lock()
+        self.write_lock = threading.Lock()
+        self.data = 0
+    
+    def read(self) -> int:
+        """Read data."""
+        with self.mutex:
+            self.readers_count += 1
+            if self.readers_count == 1:
+                self.write_lock.acquire()
+        
+        # Read data
+        value = self.data
+        
+        with self.mutex:
+            self.readers_count -= 1
+            if self.readers_count == 0:
+                self.write_lock.release()
+        
+        return value
+    
+    def write(self, value: int) -> None:
+        """Write data."""
+        with self.write_lock:
+            self.data = value
 
 
 def main() -> None:

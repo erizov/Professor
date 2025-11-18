@@ -1669,6 +1669,628 @@ class FibonacciHeap:
         for key, value in other_state.items():
             if key not in self.state or value > self.state.get(key, 0):
                 self.state[key] = value''',
+    
+    'builder': '''class Product:
+    """Product class."""
+    def __init__(self):
+        self.parts: List[str] = []
+    
+    def add_part(self, part: str) -> None:
+        """Add part to product."""
+        self.parts.append(part)
+    
+    def show(self) -> str:
+        """Show product parts."""
+        return ", ".join(self.parts)
+
+class Builder:
+    """Builder interface."""
+    def build_part_a(self) -> None:
+        pass
+    
+    def build_part_b(self) -> None:
+        pass
+    
+    def get_result(self) -> Product:
+        pass
+
+class ConcreteBuilder(Builder):
+    """Concrete builder."""
+    def __init__(self):
+        self.product = Product()
+    
+    def build_part_a(self) -> None:
+        self.product.add_part("PartA")
+    
+    def build_part_b(self) -> None:
+        self.product.add_part("PartB")
+    
+    def get_result(self) -> Product:
+        return self.product
+
+class Director:
+    """Director that uses builder."""
+    def __init__(self, builder: Builder):
+        self.builder = builder
+    
+    def construct(self) -> Product:
+        """Construct product."""
+        self.builder.build_part_a()
+        self.builder.build_part_b()
+        return self.builder.get_result()''',
+    
+    'prototype': '''import copy
+
+class Prototype:
+    """Prototype interface."""
+    def clone(self):
+        pass
+
+class ConcretePrototype(Prototype):
+    """Concrete prototype."""
+    def __init__(self, value: str):
+        self.value = value
+    
+    def clone(self) -> 'ConcretePrototype':
+        """Clone prototype."""
+        return copy.deepcopy(self)
+    
+    def __str__(self) -> str:
+        return f"ConcretePrototype(value={self.value})"''',
+    
+    'abstract_factory': '''class AbstractProductA:
+    """Abstract product A."""
+    def operation_a(self) -> str:
+        pass
+
+class AbstractProductB:
+    """Abstract product B."""
+    def operation_b(self) -> str:
+        pass
+
+class ConcreteProductA1(AbstractProductA):
+    """Concrete product A1."""
+    def operation_a(self) -> str:
+        return "ConcreteProductA1 operation"
+
+class ConcreteProductB1(AbstractProductB):
+    """Concrete product B1."""
+    def operation_b(self) -> str:
+        return "ConcreteProductB1 operation"
+
+class AbstractFactory:
+    """Abstract factory interface."""
+    def create_product_a(self) -> AbstractProductA:
+        pass
+    
+    def create_product_b(self) -> AbstractProductB:
+        pass
+
+class ConcreteFactory1(AbstractFactory):
+    """Concrete factory 1."""
+    def create_product_a(self) -> AbstractProductA:
+        return ConcreteProductA1()
+    
+    def create_product_b(self) -> AbstractProductB:
+        return ConcreteProductB1()''',
+    
+    'command': '''class Command:
+    """Command interface."""
+    def execute(self) -> None:
+        pass
+
+class Receiver:
+    """Receiver class."""
+    def action(self, message: str) -> str:
+        return f"Receiver action: {message}"
+
+class ConcreteCommand(Command):
+    """Concrete command."""
+    def __init__(self, receiver: Receiver, message: str):
+        self.receiver = receiver
+        self.message = message
+    
+    def execute(self) -> None:
+        self.receiver.action(self.message)
+
+class Invoker:
+    """Invoker class."""
+    def __init__(self):
+        self.command: Optional[Command] = None
+    
+    def set_command(self, command: Command) -> None:
+        """Set command."""
+        self.command = command
+    
+    def execute_command(self) -> None:
+        """Execute command."""
+        if self.command:
+            self.command.execute()''',
+    
+    'iterator': '''class Iterator:
+    """Iterator interface."""
+    def has_next(self) -> bool:
+        pass
+    
+    def next(self) -> any:
+        pass
+
+class Aggregate:
+    """Aggregate interface."""
+    def create_iterator(self) -> Iterator:
+        pass
+
+class ConcreteIterator(Iterator):
+    """Concrete iterator."""
+    def __init__(self, collection: List[any]):
+        self.collection = collection
+        self.index = 0
+    
+    def has_next(self) -> bool:
+        return self.index < len(self.collection)
+    
+    def next(self) -> any:
+        if self.has_next():
+            item = self.collection[self.index]
+            self.index += 1
+            return item
+        raise StopIteration
+
+class ConcreteAggregate(Aggregate):
+    """Concrete aggregate."""
+    def __init__(self):
+        self.items: List[any] = []
+    
+    def add_item(self, item: any) -> None:
+        """Add item."""
+        self.items.append(item)
+    
+    def create_iterator(self) -> Iterator:
+        """Create iterator."""
+        return ConcreteIterator(self.items)''',
+    
+    'template_method': '''class AbstractClass:
+    """Abstract class with template method."""
+    def template_method(self) -> str:
+        """Template method."""
+        result = []
+        result.append(self.operation1())
+        result.append(self.operation2())
+        result.append(self.operation3())
+        return " -> ".join(result)
+    
+    def operation1(self) -> str:
+        """Primitive operation 1."""
+        return "AbstractClass.operation1"
+    
+    def operation2(self) -> str:
+        """Primitive operation 2 (hook)."""
+        return "AbstractClass.operation2"
+    
+    def operation3(self) -> str:
+        """Primitive operation 3."""
+        return "AbstractClass.operation3"
+
+class ConcreteClass(AbstractClass):
+    """Concrete class."""
+    def operation2(self) -> str:
+        """Override operation 2."""
+        return "ConcreteClass.operation2"''',
+    
+    'chain_of_responsibility': '''class Handler:
+    """Handler interface."""
+    def __init__(self):
+        self.next_handler: Optional['Handler'] = None
+    
+    def set_next(self, handler: 'Handler') -> 'Handler':
+        """Set next handler."""
+        self.next_handler = handler
+        return handler
+    
+    def handle(self, request: str) -> Optional[str]:
+        """Handle request."""
+        if self.next_handler:
+            return self.next_handler.handle(request)
+        return None
+
+class ConcreteHandlerA(Handler):
+    """Concrete handler A."""
+    def handle(self, request: str) -> Optional[str]:
+        if request == "A":
+            return f"ConcreteHandlerA handled {request}"
+        return super().handle(request)
+
+class ConcreteHandlerB(Handler):
+    """Concrete handler B."""
+    def handle(self, request: str) -> Optional[str]:
+        if request == "B":
+            return f"ConcreteHandlerB handled {request}"
+        return super().handle(request)''',
+    
+    'bridge': '''class Implementor:
+    """Implementor interface."""
+    def operation_impl(self) -> str:
+        pass
+
+class ConcreteImplementorA(Implementor):
+    """Concrete implementor A."""
+    def operation_impl(self) -> str:
+        return "ConcreteImplementorA"
+
+class ConcreteImplementorB(Implementor):
+    """Concrete implementor B."""
+    def operation_impl(self) -> str:
+        return "ConcreteImplementorB"
+
+class Abstraction:
+    """Abstraction."""
+    def __init__(self, implementor: Implementor):
+        self.implementor = implementor
+    
+    def operation(self) -> str:
+        return f"Abstraction({self.implementor.operation_impl()})"
+
+class RefinedAbstraction(Abstraction):
+    """Refined abstraction."""
+    def operation(self) -> str:
+        return f"RefinedAbstraction({self.implementor.operation_impl()})"''',
+    
+    'composite': '''class Component:
+    """Component interface."""
+    def operation(self) -> str:
+        pass
+
+class Leaf(Component):
+    """Leaf component."""
+    def __init__(self, name: str):
+        self.name = name
+    
+    def operation(self) -> str:
+        return f"Leaf({self.name})"
+
+class Composite(Component):
+    """Composite component."""
+    def __init__(self, name: str):
+        self.name = name
+        self.children: List[Component] = []
+    
+    def add(self, component: Component) -> None:
+        """Add child component."""
+        self.children.append(component)
+    
+    def remove(self, component: Component) -> None:
+        """Remove child component."""
+        self.children.remove(component)
+    
+    def operation(self) -> str:
+        results = [f"Composite({self.name})"]
+        for child in self.children:
+            results.append(child.operation())
+        return " -> ".join(results)''',
+    
+    'facade': '''class SubsystemA:
+    """Subsystem A."""
+    def operation_a(self) -> str:
+        return "SubsystemA.operation_a"
+
+class SubsystemB:
+    """Subsystem B."""
+    def operation_b(self) -> str:
+        return "SubsystemB.operation_b"
+
+class SubsystemC:
+    """Subsystem C."""
+    def operation_c(self) -> str:
+        return "SubsystemC.operation_c"
+
+class Facade:
+    """Facade that simplifies subsystem interface."""
+    def __init__(self):
+        self.subsystem_a = SubsystemA()
+        self.subsystem_b = SubsystemB()
+        self.subsystem_c = SubsystemC()
+    
+    def operation(self) -> str:
+        """Simplified operation."""
+        results = []
+        results.append(self.subsystem_a.operation_a())
+        results.append(self.subsystem_b.operation_b())
+        results.append(self.subsystem_c.operation_c())
+        return " -> ".join(results)''',
+    
+    'proxy': '''class Subject:
+    """Subject interface."""
+    def request(self) -> str:
+        pass
+
+class RealSubject(Subject):
+    """Real subject."""
+    def request(self) -> str:
+        return "RealSubject.request"
+
+class Proxy(Subject):
+    """Proxy that controls access to RealSubject."""
+    def __init__(self, real_subject: RealSubject):
+        self.real_subject = real_subject
+    
+    def request(self) -> str:
+        """Proxy request with access control."""
+        # Additional logic before request
+        result = self.real_subject.request()
+        # Additional logic after request
+        return f"Proxy({result})"''',
+    
+    'repository': '''class Entity:
+    """Entity class."""
+    def __init__(self, id: int, data: str):
+        self.id = id
+        self.data = data
+
+class Repository:
+    """Repository pattern implementation."""
+    def __init__(self):
+        self.entities: Dict[int, Entity] = {}
+    
+    def add(self, entity: Entity) -> None:
+        """Add entity."""
+        self.entities[entity.id] = entity
+    
+    def get_by_id(self, id: int) -> Optional[Entity]:
+        """Get entity by ID."""
+        return self.entities.get(id)
+    
+    def get_all(self) -> List[Entity]:
+        """Get all entities."""
+        return list(self.entities.values())
+    
+    def remove(self, id: int) -> bool:
+        """Remove entity."""
+        if id in self.entities:
+            del self.entities[id]
+            return True
+        return False''',
+    
+    'unit_of_work': '''class UnitOfWork:
+    """Unit of Work pattern implementation."""
+    def __init__(self):
+        self.new_entities: List[any] = []
+        self.modified_entities: List[any] = []
+        self.deleted_entities: List[any] = []
+    
+    def register_new(self, entity: any) -> None:
+        """Register new entity."""
+        if entity not in self.new_entities:
+            self.new_entities.append(entity)
+    
+    def register_modified(self, entity: any) -> None:
+        """Register modified entity."""
+        if entity not in self.modified_entities:
+            self.modified_entities.append(entity)
+    
+    def register_deleted(self, entity: any) -> None:
+        """Register deleted entity."""
+        if entity not in self.deleted_entities:
+            self.deleted_entities.append(entity)
+    
+    def commit(self) -> None:
+        """Commit all changes."""
+        # In real implementation, would persist changes
+        self.new_entities.clear()
+        self.modified_entities.clear()
+        self.deleted_entities.clear()
+    
+    def rollback(self) -> None:
+        """Rollback all changes."""
+        self.new_entities.clear()
+        self.modified_entities.clear()
+        self.deleted_entities.clear()''',
+    
+    'data_mapper': '''class DataMapper:
+    """Data Mapper pattern implementation."""
+    def __init__(self):
+        self.storage: Dict[int, dict] = {}
+    
+    def find(self, id: int) -> Optional[dict]:
+        """Find entity by ID."""
+        return self.storage.get(id)
+    
+    def insert(self, id: int, data: dict) -> None:
+        """Insert entity."""
+        self.storage[id] = data
+    
+    def update(self, id: int, data: dict) -> bool:
+        """Update entity."""
+        if id in self.storage:
+            self.storage[id].update(data)
+            return True
+        return False
+    
+    def delete(self, id: int) -> bool:
+        """Delete entity."""
+        if id in self.storage:
+            del self.storage[id]
+            return True
+        return False''',
+    
+    'mvc': '''class Model:
+    """Model in MVC pattern."""
+    def __init__(self):
+        self.data = ""
+        self.observers: List['View'] = []
+    
+    def set_data(self, data: str) -> None:
+        """Set data and notify observers."""
+        self.data = data
+        self.notify_observers()
+    
+    def get_data(self) -> str:
+        """Get data."""
+        return self.data
+    
+    def attach(self, observer: 'View') -> None:
+        """Attach observer."""
+        self.observers.append(observer)
+    
+    def notify_observers(self) -> None:
+        """Notify all observers."""
+        for observer in self.observers:
+            observer.update()
+
+class View:
+    """View in MVC pattern."""
+    def __init__(self, model: Model):
+        self.model = model
+        model.attach(self)
+    
+    def update(self) -> None:
+        """Update view."""
+        print(f"View updated: {self.model.get_data()}")
+
+class Controller:
+    """Controller in MVC pattern."""
+    def __init__(self, model: Model):
+        self.model = model
+    
+    def set_data(self, data: str) -> None:
+        """Set data in model."""
+        self.model.set_data(data)''',
+    
+    'thread_pool': '''from concurrent.futures import ThreadPoolExecutor
+import threading
+
+class ThreadPool:
+    """Thread pool implementation."""
+    def __init__(self, max_workers: int = 4):
+        self.max_workers = max_workers
+        self.executor = ThreadPoolExecutor(max_workers=max_workers)
+        self.tasks: List[callable] = []
+    
+    def submit(self, func: callable, *args, **kwargs):
+        """Submit task to thread pool."""
+        return self.executor.submit(func, *args, **kwargs)
+    
+    def shutdown(self, wait: bool = True) -> None:
+        """Shutdown thread pool."""
+        self.executor.shutdown(wait=wait)''',
+    
+    'producer_consumer': '''from queue import Queue
+import threading
+
+class ProducerConsumer:
+    """Producer-Consumer pattern implementation."""
+    def __init__(self, buffer_size: int = 10):
+        self.buffer = Queue(maxsize=buffer_size)
+        self.lock = threading.Lock()
+    
+    def produce(self, item: any) -> None:
+        """Produce item."""
+        self.buffer.put(item)
+        print(f"Produced: {item}")
+    
+    def consume(self) -> any:
+        """Consume item."""
+        item = self.buffer.get()
+        print(f"Consumed: {item}")
+        return item''',
+    
+    'readers_writers': '''import threading
+
+class ReadersWriters:
+    """Readers-Writers problem solution."""
+    def __init__(self):
+        self.readers_count = 0
+        self.mutex = threading.Lock()
+        self.write_lock = threading.Lock()
+        self.data = 0
+    
+    def read(self) -> int:
+        """Read data."""
+        with self.mutex:
+            self.readers_count += 1
+            if self.readers_count == 1:
+                self.write_lock.acquire()
+        
+        # Read data
+        value = self.data
+        
+        with self.mutex:
+            self.readers_count -= 1
+            if self.readers_count == 0:
+                self.write_lock.release()
+        
+        return value
+    
+    def write(self, value: int) -> None:
+        """Write data."""
+        with self.write_lock:
+            self.data = value''',
+    
+    'arima': '''def arima_forecast(data: List[float], p: int = 1, d: int = 1, 
+                    q: int = 1, steps: int = 1) -> List[float]:
+    """ARIMA forecasting (simplified)."""
+    # Simplified ARIMA implementation
+    # In practice, would use statsmodels or similar library
+    
+    # Differencing
+    diff_data = data[:]
+    for _ in range(d):
+        diff_data = [diff_data[i] - diff_data[i-1] 
+                    for i in range(1, len(diff_data))]
+    
+    # Simple moving average forecast
+    if len(diff_data) > 0:
+        forecast = [sum(diff_data[-q:]) / min(q, len(diff_data))] * steps
+    else:
+        forecast = [0.0] * steps
+    
+    return forecast''',
+    
+    'lstm_timeseries': '''class LSTMTimeseries:
+    """LSTM for time series (simplified)."""
+    def __init__(self, input_size: int = 1, hidden_size: int = 50):
+        self.input_size = input_size
+        self.hidden_size = hidden_size
+        self.hidden_state = [0.0] * hidden_size
+        self.cell_state = [0.0] * hidden_size
+    
+    def forward(self, input_seq: List[float]) -> List[float]:
+        """Forward pass (simplified)."""
+        # Simplified LSTM - real implementation would use PyTorch/TensorFlow
+        outputs = []
+        for x in input_seq:
+            # Simplified LSTM cell computation
+            output = sum(self.hidden_state) / len(self.hidden_state) * x
+            outputs.append(output)
+        return outputs
+    
+    def predict(self, input_seq: List[float], steps: int = 1) -> List[float]:
+        """Predict future values."""
+        outputs = self.forward(input_seq)
+        # Simple extension
+        last_output = outputs[-1] if outputs else 0.0
+        return [last_output] * steps''',
+    
+    'prophet': '''def prophet_forecast(data: List[float], periods: int = 30) -> List[float]:
+    """Prophet time series forecasting (simplified)."""
+    # Simplified Prophet implementation
+    # In practice, would use Facebook Prophet library
+    
+    if not data:
+        return [0.0] * periods
+    
+    # Simple trend + seasonality
+    trend = (data[-1] - data[0]) / len(data) if len(data) > 1 else 0.0
+    avg = sum(data) / len(data)
+    
+    forecast = []
+    for i in range(periods):
+        # Trend component
+        trend_value = data[-1] + trend * (i + 1)
+        # Simple seasonality (weekly pattern)
+        seasonal = avg * 0.1 * (i % 7 - 3.5) / 3.5
+        forecast.append(trend_value + seasonal)
+    
+    return forecast''',
 }
 
 

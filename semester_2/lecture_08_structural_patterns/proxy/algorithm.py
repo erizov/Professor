@@ -9,19 +9,27 @@ This file contains the implementation of the Proxy algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def proxy(data):
-    """
-    Proxy algorithm implementation.
-    
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Proxy
-    return data
+class Subject:
+    """Subject interface."""
+    def request(self) -> str:
+        pass
 
+class RealSubject(Subject):
+    """Real subject."""
+    def request(self) -> str:
+        return "RealSubject.request"
+
+class Proxy(Subject):
+    """Proxy that controls access to RealSubject."""
+    def __init__(self, real_subject: RealSubject):
+        self.real_subject = real_subject
+    
+    def request(self) -> str:
+        """Proxy request with access control."""
+        # Additional logic before request
+        result = self.real_subject.request()
+        # Additional logic after request
+        return f"Proxy({result})"
 
 
 def main() -> None:

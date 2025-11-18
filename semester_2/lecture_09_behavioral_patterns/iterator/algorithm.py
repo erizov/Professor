@@ -9,19 +9,47 @@ This file contains the implementation of the Iterator algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def iterator(data):
-    """
-    Iterator algorithm implementation.
+class Iterator:
+    """Iterator interface."""
+    def has_next(self) -> bool:
+        pass
     
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Iterator
-    return data
+    def next(self) -> any:
+        pass
 
+class Aggregate:
+    """Aggregate interface."""
+    def create_iterator(self) -> Iterator:
+        pass
+
+class ConcreteIterator(Iterator):
+    """Concrete iterator."""
+    def __init__(self, collection: List[any]):
+        self.collection = collection
+        self.index = 0
+    
+    def has_next(self) -> bool:
+        return self.index < len(self.collection)
+    
+    def next(self) -> any:
+        if self.has_next():
+            item = self.collection[self.index]
+            self.index += 1
+            return item
+        raise StopIteration
+
+class ConcreteAggregate(Aggregate):
+    """Concrete aggregate."""
+    def __init__(self):
+        self.items: List[any] = []
+    
+    def add_item(self, item: any) -> None:
+        """Add item."""
+        self.items.append(item)
+    
+    def create_iterator(self) -> Iterator:
+        """Create iterator."""
+        return ConcreteIterator(self.items)
 
 
 def main() -> None:

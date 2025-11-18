@@ -9,19 +9,25 @@ This file contains the implementation of the Producer Consumer algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def producer_consumer(data):
-    """
-    Producer Consumer algorithm implementation.
-    
-    Args:
-        data: Input data for the algorithm
-        
-    Returns:
-        Processed result
-    """
-    # Implementation specific to Producer Consumer
-    return data
+from queue import Queue
+import threading
 
+class ProducerConsumer:
+    """Producer-Consumer pattern implementation."""
+    def __init__(self, buffer_size: int = 10):
+        self.buffer = Queue(maxsize=buffer_size)
+        self.lock = threading.Lock()
+    
+    def produce(self, item: any) -> None:
+        """Produce item."""
+        self.buffer.put(item)
+        print(f"Produced: {item}")
+    
+    def consume(self) -> any:
+        """Consume item."""
+        item = self.buffer.get()
+        print(f"Consumed: {item}")
+        return item
 
 
 def main() -> None:
