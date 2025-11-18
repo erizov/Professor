@@ -42,6 +42,7 @@ def self_service_analytics(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Self Service Analytics implementation.
     
