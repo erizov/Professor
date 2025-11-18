@@ -2291,6 +2291,474 @@ class ReadersWriters:
         forecast.append(trend_value + seasonal)
     
     return forecast''',
+    
+    'topological_sort': '''def topological_sort(graph: Dict[int, List[int]]) -> List[int]:
+    """Topological sort using Kahn's algorithm."""
+    in_degree = {node: 0 for node in graph}
+    
+    # Calculate in-degrees
+    for node in graph:
+        for neighbor in graph[node]:
+            in_degree[neighbor] = in_degree.get(neighbor, 0) + 1
+    
+    # Find nodes with no incoming edges
+    queue = [node for node in in_degree if in_degree[node] == 0]
+    result = []
+    
+    while queue:
+        node = queue.pop(0)
+        result.append(node)
+        
+        # Reduce in-degree of neighbors
+        for neighbor in graph.get(node, []):
+            in_degree[neighbor] -= 1
+            if in_degree[neighbor] == 0:
+                queue.append(neighbor)
+    
+    return result''',
+    
+    'kruskal': '''class UnionFind:
+    """Union-Find data structure for Kruskal's algorithm."""
+    def __init__(self, n: int):
+        self.parent = list(range(n))
+        self.rank = [0] * n
+    
+    def find(self, x: int) -> int:
+        """Find root with path compression."""
+        if self.parent[x] != x:
+            self.parent[x] = self.find(self.parent[x])
+        return self.parent[x]
+    
+    def union(self, x: int, y: int) -> bool:
+        """Union by rank."""
+        root_x = self.find(x)
+        root_y = self.find(y)
+        
+        if root_x == root_y:
+            return False
+        
+        if self.rank[root_x] < self.rank[root_y]:
+            self.parent[root_x] = root_y
+        elif self.rank[root_x] > self.rank[root_y]:
+            self.parent[root_y] = root_x
+        else:
+            self.parent[root_y] = root_x
+            self.rank[root_x] += 1
+        
+        return True
+
+def kruskal(edges: List[tuple], n: int) -> List[tuple]:
+    """Kruskal's algorithm for MST."""
+    edges.sort(key=lambda x: x[2])  # Sort by weight
+    uf = UnionFind(n)
+    mst = []
+    
+    for u, v, weight in edges:
+        if uf.union(u, v):
+            mst.append((u, v, weight))
+    
+    return mst''',
+    
+    'prim': '''def prim(graph: Dict[int, List[tuple]], start: int) -> List[tuple]:
+    """Prim's algorithm for MST."""
+    import heapq
+    
+    mst = []
+    visited = {start}
+    edges = [(weight, start, v) for v, weight in graph.get(start, [])]
+    heapq.heapify(edges)
+    
+    while edges and len(visited) < len(graph):
+        weight, u, v = heapq.heappop(edges)
+        
+        if v not in visited:
+            visited.add(v)
+            mst.append((u, v, weight))
+            
+            for neighbor, w in graph.get(v, []):
+                if neighbor not in visited:
+                    heapq.heappush(edges, (w, v, neighbor))
+    
+    return mst''',
+    
+    'a_star': '''def a_star(start: int, goal: int, graph: Dict[int, List[tuple]], 
+            heuristic: callable) -> Optional[List[int]]:
+    """A* search algorithm."""
+    import heapq
+    
+    open_set = [(0, start)]
+    came_from: Dict[int, int] = {}
+    g_score = {start: 0}
+    f_score = {start: heuristic(start, goal)}
+    
+    while open_set:
+        current = heapq.heappop(open_set)[1]
+        
+        if current == goal:
+            # Reconstruct path
+            path = [current]
+            while current in came_from:
+                current = came_from[current]
+                path.append(current)
+            return path[::-1]
+        
+        for neighbor, weight in graph.get(current, []):
+            tentative_g = g_score[current] + weight
+            
+            if neighbor not in g_score or tentative_g < g_score[neighbor]:
+                came_from[neighbor] = current
+                g_score[neighbor] = tentative_g
+                f_score[neighbor] = tentative_g + heuristic(neighbor, goal)
+                heapq.heappush(open_set, (f_score[neighbor], neighbor))
+    
+    return None''',
+    
+    'ford_fulkerson': '''def ford_fulkerson(graph: Dict[int, Dict[int, int]], 
+                    source: int, sink: int) -> int:
+    """Ford-Fulkerson algorithm for max flow."""
+    def bfs(graph: Dict[int, Dict[int, int]], source: int, sink: int, 
+            parent: Dict[int, int]) -> bool:
+        """BFS to find augmenting path."""
+        visited = {source}
+        queue = [source]
+        parent[source] = -1
+        
+        while queue:
+            u = queue.pop(0)
+            for v, capacity in graph.get(u, {}).items():
+                if v not in visited and capacity > 0:
+                    visited.add(v)
+                    parent[v] = u
+                    queue.append(v)
+                    if v == sink:
+                        return True
+        return False
+    
+    max_flow = 0
+    parent: Dict[int, int] = {}
+    
+    while bfs(graph, source, sink, parent):
+        path_flow = float('inf')
+        v = sink
+        
+        while v != source:
+            u = parent[v]
+            path_flow = min(path_flow, graph[u][v])
+            v = u
+        
+        v = sink
+        while v != source:
+            u = parent[v]
+            graph[u][v] -= path_flow
+            if u not in graph.get(v, {}):
+                graph[v] = graph.get(v, {})
+            graph[v][u] = graph[v].get(u, 0) + path_flow
+            v = u
+        
+        max_flow += path_flow
+    
+    return max_flow''',
+    
+    'tarjan': '''def tarjan(graph: Dict[int, List[int]]) -> List[List[int]]:
+    """Tarjan's algorithm for strongly connected components."""
+    index = 0
+    stack: List[int] = []
+    indices: Dict[int, int] = {}
+    lowlinks: Dict[int, int] = {}
+    on_stack: Set[int] = set()
+    sccs: List[List[int]] = []
+    
+    def strongconnect(v: int) -> None:
+        nonlocal index
+        indices[v] = index
+        lowlinks[v] = index
+        index += 1
+        stack.append(v)
+        on_stack.add(v)
+        
+        for w in graph.get(v, []):
+            if w not in indices:
+                strongconnect(w)
+                lowlinks[v] = min(lowlinks[v], lowlinks[w])
+            elif w in on_stack:
+                lowlinks[v] = min(lowlinks[v], indices[w])
+        
+        if lowlinks[v] == indices[v]:
+            scc = []
+            while True:
+                w = stack.pop()
+                on_stack.remove(w)
+                scc.append(w)
+                if w == v:
+                    break
+            sccs.append(scc)
+    
+    for v in graph:
+        if v not in indices:
+            strongconnect(v)
+    
+    return sccs''',
+    
+    'union_find': '''class UnionFind:
+    """Union-Find (Disjoint Set) data structure."""
+    def __init__(self, n: int):
+        self.parent = list(range(n))
+        self.rank = [0] * n
+        self.components = n
+    
+    def find(self, x: int) -> int:
+        """Find root with path compression."""
+        if self.parent[x] != x:
+            self.parent[x] = self.find(self.parent[x])
+        return self.parent[x]
+    
+    def union(self, x: int, y: int) -> bool:
+        """Union by rank."""
+        root_x = self.find(x)
+        root_y = self.find(y)
+        
+        if root_x == root_y:
+            return False
+        
+        if self.rank[root_x] < self.rank[root_y]:
+            self.parent[root_x] = root_y
+        elif self.rank[root_x] > self.rank[root_y]:
+            self.parent[root_y] = root_x
+        else:
+            self.parent[root_y] = root_x
+            self.rank[root_x] += 1
+        
+        self.components -= 1
+        return True
+    
+    def connected(self, x: int, y: int) -> bool:
+        """Check if two elements are in same set."""
+        return self.find(x) == self.find(y)''',
+    
+    'segment_tree': '''class SegmentTree:
+    """Segment tree for range queries."""
+    def __init__(self, arr: List[int]):
+        self.n = len(arr)
+        self.size = 1
+        while self.size < self.n:
+            self.size *= 2
+        self.tree = [0] * (2 * self.size)
+        
+        # Build tree
+        for i in range(self.n):
+            self.tree[self.size + i] = arr[i]
+        for i in range(self.size - 1, 0, -1):
+            self.tree[i] = self.tree[2 * i] + self.tree[2 * i + 1]
+    
+    def update(self, index: int, value: int) -> None:
+        """Update value at index."""
+        index += self.size
+        self.tree[index] = value
+        while index > 1:
+            index //= 2
+            self.tree[index] = self.tree[2 * index] + self.tree[2 * index + 1]
+    
+    def query(self, l: int, r: int) -> int:
+        """Query sum in range [l, r)."""
+        l += self.size
+        r += self.size
+        result = 0
+        
+        while l < r:
+            if l % 2 == 1:
+                result += self.tree[l]
+                l += 1
+            if r % 2 == 1:
+                r -= 1
+                result += self.tree[r]
+            l //= 2
+            r //= 2
+        
+        return result''',
+    
+    'fenwick_tree': '''class FenwickTree:
+    """Fenwick Tree (Binary Indexed Tree)."""
+    def __init__(self, n: int):
+        self.n = n
+        self.tree = [0] * (n + 1)
+    
+    def update(self, index: int, delta: int) -> None:
+        """Update value at index."""
+        index += 1
+        while index <= self.n:
+            self.tree[index] += delta
+            index += index & -index
+    
+    def query(self, index: int) -> int:
+        """Query prefix sum up to index."""
+        index += 1
+        result = 0
+        while index > 0:
+            result += self.tree[index]
+            index -= index & -index
+        return result
+    
+    def range_query(self, l: int, r: int) -> int:
+        """Query sum in range [l, r]."""
+        return self.query(r) - self.query(l - 1)''',
+    
+    'suffix_array': '''def suffix_array(text: str) -> List[int]:
+    """Build suffix array."""
+    n = len(text)
+    suffixes = [(text[i:], i) for i in range(n)]
+    suffixes.sort(key=lambda x: x[0])
+    return [suffix[1] for suffix in suffixes]
+
+def lcp_array(text: str, suffix_arr: List[int]) -> List[int]:
+    """Build LCP array."""
+    n = len(text)
+    rank = [0] * n
+    for i, sa in enumerate(suffix_arr):
+        rank[sa] = i
+    
+    lcp = [0] * n
+    k = 0
+    
+    for i in range(n):
+        if rank[i] == n - 1:
+            k = 0
+            continue
+        
+        j = suffix_arr[rank[i] + 1]
+        while i + k < n and j + k < n and text[i + k] == text[j + k]:
+            k += 1
+        lcp[rank[i]] = k
+        
+        if k > 0:
+            k -= 1
+    
+    return lcp''',
+    
+    'z_algorithm': '''def z_algorithm(text: str) -> List[int]:
+    """Z-algorithm for pattern matching."""
+    n = len(text)
+    z = [0] * n
+    l, r = 0, 0
+    
+    for i in range(1, n):
+        if i <= r:
+            z[i] = min(r - i + 1, z[i - l])
+        
+        while i + z[i] < n and text[z[i]] == text[i + z[i]]:
+            z[i] += 1
+        
+        if i + z[i] - 1 > r:
+            l = i
+            r = i + z[i] - 1
+    
+    return z
+
+def z_search(text: str, pattern: str) -> List[int]:
+    """Search pattern in text using Z-algorithm."""
+    combined = pattern + "$" + text
+    z = z_algorithm(combined)
+    result = []
+    
+    for i in range(len(pattern) + 1, len(combined)):
+        if z[i] == len(pattern):
+            result.append(i - len(pattern) - 1)
+    
+    return result''',
+    
+    'manacher': '''def manacher(s: str) -> List[int]:
+    """Manacher's algorithm for longest palindromic substring."""
+    # Transform string
+    t = "#" + "#".join(s) + "#"
+    n = len(t)
+    p = [0] * n
+    center = 0
+    right = 0
+    
+    for i in range(n):
+        if i < right:
+            mirror = 2 * center - i
+            p[i] = min(right - i, p[mirror])
+        
+        # Expand around center
+        a = i + p[i] + 1
+        b = i - p[i] - 1
+        while a < n and b >= 0 and t[a] == t[b]:
+            p[i] += 1
+            a += 1
+            b -= 1
+        
+        # Update center and right
+        if i + p[i] > right:
+            center = i
+            right = i + p[i]
+    
+    return p
+
+def longest_palindrome(s: str) -> str:
+    """Find longest palindromic substring."""
+    p = manacher(s)
+    max_len = max(p)
+    center = p.index(max_len)
+    start = (center - max_len) // 2
+    return s[start:start + max_len]''',
+    
+    'aho_corasick': '''class AhoCorasickNode:
+    """Node in Aho-Corasick automaton."""
+    def __init__(self):
+        self.children: Dict[str, 'AhoCorasickNode'] = {}
+        self.fail: Optional['AhoCorasickNode'] = None
+        self.output: List[str] = []
+
+class AhoCorasick:
+    """Aho-Corasick string matching automaton."""
+    def __init__(self, patterns: List[str]):
+        self.root = AhoCorasickNode()
+        self.build_trie(patterns)
+        self.build_fail_links()
+    
+    def build_trie(self, patterns: List[str]) -> None:
+        """Build trie from patterns."""
+        for pattern in patterns:
+            node = self.root
+            for char in pattern:
+                if char not in node.children:
+                    node.children[char] = AhoCorasickNode()
+                node = node.children[char]
+            node.output.append(pattern)
+    
+    def build_fail_links(self) -> None:
+        """Build failure links."""
+        from collections import deque
+        queue = deque()
+        
+        for child in self.root.children.values():
+            child.fail = self.root
+            queue.append(child)
+        
+        while queue:
+            node = queue.popleft()
+            for char, child in node.children.items():
+                queue.append(child)
+                fail = node.fail
+                while fail and char not in fail.children:
+                    fail = fail.fail
+                child.fail = fail.children.get(char, self.root) if fail else self.root
+                child.output.extend(child.fail.output)
+    
+    def search(self, text: str) -> List[tuple]:
+        """Search all patterns in text."""
+        result = []
+        node = self.root
+        
+        for i, char in enumerate(text):
+            while node and char not in node.children:
+                node = node.fail
+            node = node.children.get(char, self.root) if node else self.root
+            
+            for pattern in node.output:
+                result.append((i - len(pattern) + 1, pattern))
+        
+        return result''',
 }
 
 
