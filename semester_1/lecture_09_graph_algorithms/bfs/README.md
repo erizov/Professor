@@ -1,6 +1,68 @@
 # Bfs
 
+## Algorithm Description
+
+Bfs is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+
+### Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### Complexity Analysis
+
+- **Time Complexity**: To be determined based on implementation
+- **Space Complexity**: To be determined based on implementation
+
+### References
+
+- Wikipedia: Bfs
+- Additional resources can be found in academic literature
+
+## Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### References
+
+- Wikipedia: Bfs
+- Additional resources can be found in academic literature
+
 ## Introduction
+
+Breadth-first search is used to solve specific computational problems efficiently. 
+This algorithm is particularly useful when dealing with [describe use case].
+
+## Algorithm Details
+
+### How It Works
+
+The algorithm works by [describe the main approach]:
+
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+### Key Characteristics
+
+- **Time Complexity**: [To be determined]
+- **Space Complexity**: [To be determined]
+- **Stability**: [Stable/Unstable]
+- **In-place**: [Yes/No]
+
+## Use Cases
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+## References
+
+- Wikipedia: Breadth-first search
+- Additional resources can be found in academic literature
+
+## Implementation
+
+See `algorithm.py` for the complete implementation with examples.
 
 Bfs addresses specific computational challenges.
 
@@ -9,11 +71,6 @@ This technique is applied in various domains to solve specific problems efficien
 ## TL;DR
 
 **One Sentence**: A graph traversal algorithm that explores all vertices at the current depth level before moving to vertices at the next depth level.
-
-
-
-
-
 
 ## Learning Objectives
 
@@ -164,7 +221,6 @@ Graph:
 - **Game AI**: Pathfinding in games and NPC movement
 - **Web Crawling**: Search engines use graph algorithms for web crawling
 
-
 ## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Bfs is the best solution for all problems"
@@ -234,7 +290,6 @@ public class DependencyResolver {
 ```
 
 **Purpose**: Spring Framework uses this pattern/algorithm for enterprise application development.
-
 
 ### Docker
 

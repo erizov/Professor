@@ -15,7 +15,7 @@ from framework.logging_utils import get_logger
 logger = get_logger(__name__)
 
 
-def fine_tuning_llm():
+def main() -> None:
     """
     Implement Fine Tuning Llm.
     
@@ -38,4 +38,4 @@ def fine_tuning_llm():
 
 
 if __name__ == "__main__":
-    fine_tuning_llm()
+    main()

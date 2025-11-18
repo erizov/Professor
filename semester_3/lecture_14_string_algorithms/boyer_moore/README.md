@@ -6,6 +6,24 @@
 
 **Space Complexity**: O(m)
 
+## Algorithm Description
+
+Boyer Moore is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+
+### Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### Complexity Analysis
+
+- **Time Complexity**: To be determined based on implementation
+- **Space Complexity**: To be determined based on implementation
+
+### References
+
+- Wikipedia: Boyer Moore
+- Additional resources can be found in academic literature
+
 ## Overview
 
 ## Introduction
@@ -17,11 +35,6 @@ This technique is applied in various domains to solve specific problems efficien
 ## TL;DR
 
 **One Sentence**: An approach that processes and manipulates sequences of characters to tackle string-related problems.
-
-
-
-
-
 
 ## Learning Objectives
 
@@ -121,7 +134,6 @@ Test your understanding with these questions:
 - **Bioinformatics**: DNA and protein sequence matching
 - **Network Security**: Intrusion detection and pattern matching
 - **Compilers**: Lexical analysis and tokenization
-
 
 ## Specific misconceptions with corrections
 

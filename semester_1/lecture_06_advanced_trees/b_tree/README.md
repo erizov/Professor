@@ -6,6 +6,24 @@
 
 **Space Complexity**: O(n)
 
+## Algorithm Description
+
+B Tree is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+
+### Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### Complexity Analysis
+
+- **Time Complexity**: To be determined based on implementation
+- **Space Complexity**: To be determined based on implementation
+
+### References
+
+- Wikipedia: B Tree
+- Additional resources can be found in academic literature
+
 ## Overview
 
 ## Introduction
@@ -17,11 +35,6 @@ This technique is applied in various domains to solve specific problems efficien
 ## TL;DR
 
 **One Sentence**: A hierarchical data structure algorithm that organizes content in a tree-like structure with nodes and edges.
-
-
-
-
-
 
 ## Learning Objectives
 
@@ -133,7 +146,6 @@ Test your understanding with these questions:
 - **Compilers**: Abstract syntax trees (AST) for code parsing
 - **Decision Systems**: Decision trees in computational intelligence
 - **XML/JSON Parsers**: Tree structures for hierarchical data
-
 
 ## Specific misconceptions with corrections
 

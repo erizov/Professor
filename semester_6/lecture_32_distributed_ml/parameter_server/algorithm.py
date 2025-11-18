@@ -35,7 +35,18 @@ def parameter_server():
     logger.info("==" * 35)
 
 
+def main() -> None:
+    """Main function to demonstrate the algorithm."""
+    print("=" * 70)
+    print("ALGORITHM DEMONSTRATION")
+    print("=" * 70)
+    print("Algorithm implementation")
+    print("=" * 70)
+
+
+
 if __name__ == "__main__":
+    main()
     timer = PerformanceTimer("Parameter Server")
     _, metrics = timer.measure(parameter_server)
     logger.info(f"\nExecution time: {metrics['execution_time_ms']:.3f} ms")

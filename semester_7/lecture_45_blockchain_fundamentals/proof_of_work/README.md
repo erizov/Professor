@@ -6,7 +6,69 @@
 
 **Space Complexity**: Varies
 
+## Algorithm Description
+
+Proof Of Work is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+
+### Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### Complexity Analysis
+
+- **Time Complexity**: To be determined based on implementation
+- **Space Complexity**: To be determined based on implementation
+
+### References
+
+- Wikipedia: Proof Of Work
+- Additional resources can be found in academic literature
+
+## Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### References
+
+- Wikipedia: Proof Of Work
+- Additional resources can be found in academic literature
+
 ## Introduction
+
+Proof Of Work is used to solve specific computational problems efficiently. 
+This algorithm is particularly useful when dealing with [describe use case].
+
+## Algorithm Details
+
+### How It Works
+
+The algorithm works by [describe the main approach]:
+
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+### Key Characteristics
+
+- **Time Complexity**: [To be determined]
+- **Space Complexity**: [To be determined]
+- **Stability**: [Stable/Unstable]
+- **In-place**: [Yes/No]
+
+## Use Cases
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+## References
+
+- Wikipedia: Proof Of Work
+- Additional resources can be found in academic literature
+
+## Implementation
+
+See `algorithm.py` for the complete implementation with examples.
 
 Proof Of Work addresses concept in blockchain fundamentals.
 
@@ -15,11 +77,6 @@ This algorithm/pattern is used in computer science and software engineering for 
 ## TL;DR
 
 **One Sentence**: A consensus mechanism where miners compete to solve cryptographic puzzles, with the first solver earning the right to add a block.
-
-
-
-
-
 
 ## Learning Objectives
 
@@ -165,6 +222,20 @@ outputs = model(**inputs)
 
 **Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
 
+### Hugging Face
+
+```python
+# Hugging Face - LLM Architecture
+from transformers import AutoModel, AutoTokenizer
+
+model = AutoModel.from_pretrained("bert-base-uncased")
+tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+
+inputs = tokenizer("Hello world", return_tensors="pt")
+outputs = model(**inputs)
+```
+
+**Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
 
 ### Hugging Face
 
@@ -181,6 +252,20 @@ outputs = model(**inputs)
 
 **Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
 
+### Hugging Face
+
+```python
+# Hugging Face - LLM Architecture
+from transformers import AutoModel, AutoTokenizer
+
+model = AutoModel.from_pretrained("bert-base-uncased")
+tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+
+inputs = tokenizer("Hello world", return_tensors="pt")
+outputs = model(**inputs)
+```
+
+**Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
 
 ### Hugging Face
 
@@ -197,6 +282,20 @@ outputs = model(**inputs)
 
 **Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
 
+### Hugging Face
+
+```python
+# Hugging Face - LLM Architecture
+from transformers import AutoModel, AutoTokenizer
+
+model = AutoModel.from_pretrained("bert-base-uncased")
+tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+
+inputs = tokenizer("Hello world", return_tensors="pt")
+outputs = model(**inputs)
+```
+
+**Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
 
 ### Hugging Face
 
@@ -213,6 +312,20 @@ outputs = model(**inputs)
 
 **Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
 
+### Hugging Face
+
+```python
+# Hugging Face - LLM Architecture
+from transformers import AutoModel, AutoTokenizer
+
+model = AutoModel.from_pretrained("bert-base-uncased")
+tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+
+inputs = tokenizer("Hello world", return_tensors="pt")
+outputs = model(**inputs)
+```
+
+**Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
 
 ### Hugging Face
 
@@ -229,6 +342,20 @@ outputs = model(**inputs)
 
 **Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
 
+### Hugging Face
+
+```python
+# Hugging Face - LLM Architecture
+from transformers import AutoModel, AutoTokenizer
+
+model = AutoModel.from_pretrained("bert-base-uncased")
+tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+
+inputs = tokenizer("Hello world", return_tensors="pt")
+outputs = model(**inputs)
+```
+
+**Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
 
 ### Hugging Face
 
@@ -245,6 +372,20 @@ outputs = model(**inputs)
 
 **Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
 
+### Hugging Face
+
+```python
+# Hugging Face - LLM Architecture
+from transformers import AutoModel, AutoTokenizer
+
+model = AutoModel.from_pretrained("bert-base-uncased")
+tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+
+inputs = tokenizer("Hello world", return_tensors="pt")
+outputs = model(**inputs)
+```
+
+**Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
 
 ### Hugging Face
 
@@ -261,7 +402,6 @@ outputs = model(**inputs)
 
 **Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
 
-
 ### Hugging Face
 
 ```python
@@ -276,103 +416,6 @@ outputs = model(**inputs)
 ```
 
 **Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
-
-
-### Hugging Face
-
-```python
-# Hugging Face - LLM Architecture
-from transformers import AutoModel, AutoTokenizer
-
-model = AutoModel.from_pretrained("bert-base-uncased")
-tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
-
-inputs = tokenizer("Hello world", return_tensors="pt")
-outputs = model(**inputs)
-```
-
-**Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
-
-
-### Hugging Face
-
-```python
-# Hugging Face - LLM Architecture
-from transformers import AutoModel, AutoTokenizer
-
-model = AutoModel.from_pretrained("bert-base-uncased")
-tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
-
-inputs = tokenizer("Hello world", return_tensors="pt")
-outputs = model(**inputs)
-```
-
-**Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
-
-
-### Hugging Face
-
-```python
-# Hugging Face - LLM Architecture
-from transformers import AutoModel, AutoTokenizer
-
-model = AutoModel.from_pretrained("bert-base-uncased")
-tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
-
-inputs = tokenizer("Hello world", return_tensors="pt")
-outputs = model(**inputs)
-```
-
-**Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
-
-
-### Hugging Face
-
-```python
-# Hugging Face - LLM Architecture
-from transformers import AutoModel, AutoTokenizer
-
-model = AutoModel.from_pretrained("bert-base-uncased")
-tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
-
-inputs = tokenizer("Hello world", return_tensors="pt")
-outputs = model(**inputs)
-```
-
-**Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
-
-
-### Hugging Face
-
-```python
-# Hugging Face - LLM Architecture
-from transformers import AutoModel, AutoTokenizer
-
-model = AutoModel.from_pretrained("bert-base-uncased")
-tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
-
-inputs = tokenizer("Hello world", return_tensors="pt")
-outputs = model(**inputs)
-```
-
-**Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
-
-
-### Hugging Face
-
-```python
-# Hugging Face - LLM Architecture
-from transformers import AutoModel, AutoTokenizer
-
-model = AutoModel.from_pretrained("bert-base-uncased")
-tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
-
-inputs = tokenizer("Hello world", return_tensors="pt")
-outputs = model(**inputs)
-```
-
-**Purpose**: Hugging Face provides pre-trained models and fine-tuning tools.
-
 
 ## Algorithm Steps
 

@@ -6,7 +6,72 @@
 
 **Space Complexity**: O(1)
 
+## Algorithm Description
+
+Binary search is a search algorithm that finds the position of a target value within a sorted array. Binary search compares the target value to the middle element of the array. If they are not equal, the half in which the target cannot lie is eliminated and the search continues on the remaining half, again taking the middle element to compare to the target value, and repeating this until the target value is found.
+
+### How It Works
+
+1. Compare target with the middle element
+2. If target matches, return the index
+3. If target is smaller, search the left half
+4. If target is larger, search the right half
+5. Repeat until found or search space is exhausted
+
+### Complexity Analysis
+
+Time: O(log n). Space: O(1) iterative, O(log n) recursive
+
+### Use Cases
+
+Searching in sorted arrays, finding insertion points, range queries
+
+### References
+
+- Wikipedia: [Binary search algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+- Additional resources available in academic literature
+
+## How It Works
+
+1. Compare target with the middle element
+2. If target matches, return the index
+3. If target is smaller, search the left half
+4. If target is larger, search the right half
+5. Repeat until found or search space is exhausted
+
+### References
+
+- Wikipedia: [Binary search algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+- Additional resources available in academic literature
+
 ## Introduction
+
+Binary search is used to solve specific computational problems efficiently. 
+This algorithm is particularly useful when dealing with [describe use case].
+
+## Algorithm Details
+
+### Key Characteristics
+
+- **Time Complexity**: [To be determined]
+- **Space Complexity**: [To be determined]
+- **Stability**: [Stable/Unstable]
+- **In-place**: [Yes/No]
+
+## Use Cases
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+## References
+
+- Wikipedia: Binary search
+- Additional resources can be found in academic literature
+
+## Implementation
+
+See `algorithm.py` for the complete implementation with examples.
 
 Binary Search addresses specific computational challenges.
 
@@ -15,11 +80,6 @@ This technique is applied in various domains to solve specific problems efficien
 ## TL;DR
 
 **One Sentence**: An efficient search algorithm that finds the position of a target value within a sorted array by repeatedly dividing the search interval in half.
-
-
-
-
-
 
 ## Learning Objectives
 
@@ -165,7 +225,6 @@ Step 3: Check remaining (index 3, value 7)
 - **Python bisect module**: Provides binary search functionality for sorted lists
 - **Redis**: Uses binary search in sorted sets (ZSET) operations
 - **Elasticsearch**: Uses binary search in inverted index lookups
-
 
 ## Specific misconceptions with corrections
 

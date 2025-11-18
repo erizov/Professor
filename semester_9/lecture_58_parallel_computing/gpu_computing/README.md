@@ -6,7 +6,69 @@
 
 **Space Complexity**: N/A
 
+## Algorithm Description
+
+Gpu Computing is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+
+### Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### Complexity Analysis
+
+- **Time Complexity**: To be determined based on implementation
+- **Space Complexity**: To be determined based on implementation
+
+### References
+
+- Wikipedia: Gpu Computing
+- Additional resources can be found in academic literature
+
+## Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### References
+
+- Wikipedia: Gpu Computing
+- Additional resources can be found in academic literature
+
 ## Introduction
+
+Gpu Computing is used to solve specific computational problems efficiently. 
+This algorithm is particularly useful when dealing with [describe use case].
+
+## Algorithm Details
+
+### How It Works
+
+The algorithm works by [describe the main approach]:
+
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+### Key Characteristics
+
+- **Time Complexity**: [To be determined]
+- **Space Complexity**: [To be determined]
+- **Stability**: [Stable/Unstable]
+- **In-place**: [Yes/No]
+
+## Use Cases
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+## References
+
+- Wikipedia: Gpu Computing
+- Additional resources can be found in academic literature
+
+## Implementation
+
+See `algorithm.py` for the complete implementation with examples.
 
 Gpu Computing Addresses specific computational problems with concrete solutions.
 
@@ -15,11 +77,6 @@ This topic covers specific techniques with real-world applications.
 ## TL;DR
 
 **One Sentence**: A computational method for gpu computing.
-
-
-
-
-
 
 ### Short Description
 
@@ -211,6 +268,49 @@ int main() {
 
 **Purpose**: CUDA enables GPU-accelerated computing for this algorithm.
 
+### CUDA
+
+```cuda
+// CUDA - GPU Kernel
+__global__ void vectorAdd(float *A, float *B, float *C, int N) {
+    int i = blockIdx.x * blockDim.x + threadIdx.x;
+    if (i < N) {
+        C[i] = A[i] + B[i];
+    }
+}
+
+// Host code
+int main() {
+    int N = 1000;
+    size_t size = N * sizeof(float);
+    
+    float *h_A = (float*)malloc(size);
+    float *h_B = (float*)malloc(size);
+    float *h_C = (float*)malloc(size);
+    
+    // Allocate device memory
+    float *d_A, *d_B, *d_C;
+    cudaMalloc(&d_A, size);
+    cudaMalloc(&d_B, size);
+    cudaMalloc(&d_C, size);
+    
+    // Copy to device
+    cudaMemcpy(d_A, h_A, size, cudaMemcpyHostToDevice);
+    cudaMemcpy(d_B, h_B, size, cudaMemcpyHostToDevice);
+    
+    // Launch kernel
+    int threadsPerBlock = 256;
+    int blocksPerGrid = (N + threadsPerBlock - 1) / threadsPerBlock;
+    vectorAdd<<<blocksPerGrid, threadsPerBlock>>>(d_A, d_B, d_C, N);
+    
+    // Copy result back
+    cudaMemcpy(h_C, d_C, size, cudaMemcpyDeviceToHost);
+    
+    return 0;
+}
+```
+
+**Purpose**: CUDA enables GPU-accelerated computing for this algorithm.
 
 ### CUDA
 
@@ -256,6 +356,49 @@ int main() {
 
 **Purpose**: CUDA enables GPU-accelerated computing for this algorithm.
 
+### CUDA
+
+```cuda
+// CUDA - GPU Kernel
+__global__ void vectorAdd(float *A, float *B, float *C, int N) {
+    int i = blockIdx.x * blockDim.x + threadIdx.x;
+    if (i < N) {
+        C[i] = A[i] + B[i];
+    }
+}
+
+// Host code
+int main() {
+    int N = 1000;
+    size_t size = N * sizeof(float);
+    
+    float *h_A = (float*)malloc(size);
+    float *h_B = (float*)malloc(size);
+    float *h_C = (float*)malloc(size);
+    
+    // Allocate device memory
+    float *d_A, *d_B, *d_C;
+    cudaMalloc(&d_A, size);
+    cudaMalloc(&d_B, size);
+    cudaMalloc(&d_C, size);
+    
+    // Copy to device
+    cudaMemcpy(d_A, h_A, size, cudaMemcpyHostToDevice);
+    cudaMemcpy(d_B, h_B, size, cudaMemcpyHostToDevice);
+    
+    // Launch kernel
+    int threadsPerBlock = 256;
+    int blocksPerGrid = (N + threadsPerBlock - 1) / threadsPerBlock;
+    vectorAdd<<<blocksPerGrid, threadsPerBlock>>>(d_A, d_B, d_C, N);
+    
+    // Copy result back
+    cudaMemcpy(h_C, d_C, size, cudaMemcpyDeviceToHost);
+    
+    return 0;
+}
+```
+
+**Purpose**: CUDA enables GPU-accelerated computing for this algorithm.
 
 ### CUDA
 
@@ -301,7 +444,6 @@ int main() {
 
 **Purpose**: CUDA enables GPU-accelerated computing for this algorithm.
 
-
 ### CUDA
 
 ```cuda
@@ -345,97 +487,6 @@ int main() {
 ```
 
 **Purpose**: CUDA enables GPU-accelerated computing for this algorithm.
-
-
-### CUDA
-
-```cuda
-// CUDA - GPU Kernel
-__global__ void vectorAdd(float *A, float *B, float *C, int N) {
-    int i = blockIdx.x * blockDim.x + threadIdx.x;
-    if (i < N) {
-        C[i] = A[i] + B[i];
-    }
-}
-
-// Host code
-int main() {
-    int N = 1000;
-    size_t size = N * sizeof(float);
-    
-    float *h_A = (float*)malloc(size);
-    float *h_B = (float*)malloc(size);
-    float *h_C = (float*)malloc(size);
-    
-    // Allocate device memory
-    float *d_A, *d_B, *d_C;
-    cudaMalloc(&d_A, size);
-    cudaMalloc(&d_B, size);
-    cudaMalloc(&d_C, size);
-    
-    // Copy to device
-    cudaMemcpy(d_A, h_A, size, cudaMemcpyHostToDevice);
-    cudaMemcpy(d_B, h_B, size, cudaMemcpyHostToDevice);
-    
-    // Launch kernel
-    int threadsPerBlock = 256;
-    int blocksPerGrid = (N + threadsPerBlock - 1) / threadsPerBlock;
-    vectorAdd<<<blocksPerGrid, threadsPerBlock>>>(d_A, d_B, d_C, N);
-    
-    // Copy result back
-    cudaMemcpy(h_C, d_C, size, cudaMemcpyDeviceToHost);
-    
-    return 0;
-}
-```
-
-**Purpose**: CUDA enables GPU-accelerated computing for this algorithm.
-
-
-### CUDA
-
-```cuda
-// CUDA - GPU Kernel
-__global__ void vectorAdd(float *A, float *B, float *C, int N) {
-    int i = blockIdx.x * blockDim.x + threadIdx.x;
-    if (i < N) {
-        C[i] = A[i] + B[i];
-    }
-}
-
-// Host code
-int main() {
-    int N = 1000;
-    size_t size = N * sizeof(float);
-    
-    float *h_A = (float*)malloc(size);
-    float *h_B = (float*)malloc(size);
-    float *h_C = (float*)malloc(size);
-    
-    // Allocate device memory
-    float *d_A, *d_B, *d_C;
-    cudaMalloc(&d_A, size);
-    cudaMalloc(&d_B, size);
-    cudaMalloc(&d_C, size);
-    
-    // Copy to device
-    cudaMemcpy(d_A, h_A, size, cudaMemcpyHostToDevice);
-    cudaMemcpy(d_B, h_B, size, cudaMemcpyHostToDevice);
-    
-    // Launch kernel
-    int threadsPerBlock = 256;
-    int blocksPerGrid = (N + threadsPerBlock - 1) / threadsPerBlock;
-    vectorAdd<<<blocksPerGrid, threadsPerBlock>>>(d_A, d_B, d_C, N);
-    
-    // Copy result back
-    cudaMemcpy(h_C, d_C, size, cudaMemcpyDeviceToHost);
-    
-    return 0;
-}
-```
-
-**Purpose**: CUDA enables GPU-accelerated computing for this algorithm.
-
 
 ## Algorithm Steps
 

@@ -1,6 +1,68 @@
 # Strategy
 
+## Algorithm Description
+
+Strategy is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+
+### Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### Complexity Analysis
+
+- **Time Complexity**: To be determined based on implementation
+- **Space Complexity**: To be determined based on implementation
+
+### References
+
+- Wikipedia: Strategy
+- Additional resources can be found in academic literature
+
+## Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### References
+
+- Wikipedia: Strategy
+- Additional resources can be found in academic literature
+
 ## Introduction
+
+Strategy is used to solve specific computational problems efficiently. 
+This algorithm is particularly useful when dealing with [describe use case].
+
+## Algorithm Details
+
+### How It Works
+
+The algorithm works by [describe the main approach]:
+
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+### Key Characteristics
+
+- **Time Complexity**: [To be determined]
+- **Space Complexity**: [To be determined]
+- **Stability**: [Stable/Unstable]
+- **In-place**: [Yes/No]
+
+## Use Cases
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+## References
+
+- Wikipedia: Strategy
+- Additional resources can be found in academic literature
+
+## Implementation
+
+See `algorithm.py` for the complete implementation with examples.
 
 Strategy addresses specific computational challenges.
 
@@ -9,11 +71,6 @@ This technique is applied in various domains to solve specific problems efficien
 ## TL;DR
 
 **One Sentence**: A behavioral design pattern that defines a family of algorithms, encapsulates each one, and makes them interchangeable.
-
-
-
-
-
 
 ## Learning Objectives
 
@@ -124,7 +181,6 @@ Test your understanding with these questions:
 - **Web Development**: MVC, MVVM patterns in web applications
 - **Microservices**: Patterns for service communication and coordination
 
-
 ## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Strategy is the best solution for all problems"
@@ -206,7 +262,6 @@ public class PaymentService
 
 **Purpose**: .NET Framework implements this pattern/algorithm for service architecture.
 
-
 ### Spring Framework
 
 ```java
@@ -277,7 +332,6 @@ public class PaymentService
 ```
 
 **Purpose**: .NET Framework implements this pattern/algorithm for service architecture.
-
 
 ### Spring Framework
 

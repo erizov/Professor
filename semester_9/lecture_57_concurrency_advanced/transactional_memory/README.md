@@ -6,21 +6,77 @@
 
 **Space Complexity**: N/A
 
+## Algorithm Description
+
+Transactional Memory is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+
+### Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### Complexity Analysis
+
+- **Time Complexity**: To be determined based on implementation
+- **Space Complexity**: To be determined based on implementation
+
+### References
+
+- Wikipedia: Transactional Memory
+- Additional resources can be found in academic literature
+
+## Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### References
+
+- Wikipedia: Transactional Memory
+- Additional resources can be found in academic literature
+
 ## Introduction
+
+Transactional Memory is used to solve specific computational problems efficiently. 
+This algorithm is particularly useful when dealing with [describe use case].
+
+## Algorithm Details
+
+### How It Works
+
+The algorithm works by [describe the main approach]:
+
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+### Key Characteristics
+
+- **Time Complexity**: [To be determined]
+- **Space Complexity**: [To be determined]
+- **Stability**: [Stable/Unstable]
+- **In-place**: [Yes/No]
+
+## Use Cases
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+## References
+
+- Wikipedia: Transactional Memory
+- Additional resources can be found in academic literature
+
+## Implementation
+
+See `algorithm.py` for the complete implementation with examples.
 
 Transactional memory provides atomic blocks for memory operations, similar to database transactions. Solves problems of deadlocks and lock granularity in concurrent programming. Example: Intel TSX provides hardware transactional memory support. Works by tracking memory accesses in a transaction, executing atomically, and rolling back on conflicts.
 
 This advanced topic is essential for understanding modern transactional memory systems and their applications in production environments. Mastery of transactional memory is crucial for building scalable, efficient systems in enterprise settings.
 
-
 ## TL;DR
 
 **One Sentence**: A computational method for transactional memory.
-
-
-
-
-
 
 ### Short Description
 
@@ -143,7 +199,6 @@ Test your understanding with these questions:
 - **E-commerce**: Order processing and inventory management
 - **Financial Systems**: Transaction processing and audit trails
 
-
 ## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Transactional Memory is the best solution for all problems"
@@ -186,7 +241,6 @@ message = actor.receive()
 
 **Purpose**: Python libraries provide implementations for this pattern/algorithm.
 
-
 ## Algorithm Steps
 
 1. **Initialization**: Set up initial state and data structures
@@ -219,7 +273,6 @@ Solves problems of deadlocks and lock granularity in concurrent programming. Exa
 - Documentation and maintenance are critical for long-term success
 - Integration with existing systems requires careful planning
 - Performance optimization should be based on actual usage patterns
-
 
 ## Advantages
 

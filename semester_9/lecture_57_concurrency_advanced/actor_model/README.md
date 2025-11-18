@@ -6,21 +6,77 @@
 
 **Space Complexity**: N/A
 
+## Algorithm Description
+
+Actor Model is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+
+### Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### Complexity Analysis
+
+- **Time Complexity**: To be determined based on implementation
+- **Space Complexity**: To be determined based on implementation
+
+### References
+
+- Wikipedia: Actor Model
+- Additional resources can be found in academic literature
+
+## Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### References
+
+- Wikipedia: Actor Model
+- Additional resources can be found in academic literature
+
 ## Introduction
+
+Actor Model is used to solve specific computational problems efficiently. 
+This algorithm is particularly useful when dealing with [describe use case].
+
+## Algorithm Details
+
+### How It Works
+
+The algorithm works by [describe the main approach]:
+
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+### Key Characteristics
+
+- **Time Complexity**: [To be determined]
+- **Space Complexity**: [To be determined]
+- **Stability**: [Stable/Unstable]
+- **In-place**: [Yes/No]
+
+## Use Cases
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+## References
+
+- Wikipedia: Actor Model
+- Additional resources can be found in academic literature
+
+## Implementation
+
+See `algorithm.py` for the complete implementation with examples.
 
 Actor model is a concurrency paradigm where actors are independent entities that communicate through asynchronous messages. Solves problems of shared state and race conditions in concurrent systems. Example: Erlang and Akka use actors where each actor processes messages sequentially. Works by encapsulating state in actors, sending immutable messages, and processing messages one at a time per actor.
 
 This advanced topic is essential for understanding modern actor model systems and their applications in production environments. Mastery of actor model is crucial for building scalable, efficient systems in enterprise settings.
 
-
 ## TL;DR
 
 **One Sentence**: A computational method for actor system.
-
-
-
-
-
 
 ### Short Description
 
@@ -208,7 +264,6 @@ public class WorkerActor extends AbstractActor {
 
 **Purpose**: Java frameworks use this for enterprise application development.
 
-
 ### Java
 
 ```java
@@ -234,7 +289,6 @@ public class WorkerActor extends AbstractActor {
 
 **Purpose**: Java frameworks use this for enterprise application development.
 
-
 ### Java
 
 ```java
@@ -259,7 +313,6 @@ public class WorkerActor extends AbstractActor {
 ```
 
 **Purpose**: Java frameworks use this for enterprise application development.
-
 
 ## Algorithm Steps
 
@@ -293,7 +346,6 @@ Solves problems of shared state and race conditions in concurrent systems. Examp
 - Documentation and maintenance are critical for long-term success
 - Integration with existing systems requires careful planning
 - Performance optimization should be based on actual usage patterns
-
 
 ## Advantages
 

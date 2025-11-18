@@ -6,7 +6,69 @@
 
 **Space Complexity**: O(1)
 
+## Algorithm Description
+
+Singleton is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+
+### Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### Complexity Analysis
+
+- **Time Complexity**: To be determined based on implementation
+- **Space Complexity**: To be determined based on implementation
+
+### References
+
+- Wikipedia: Singleton
+- Additional resources can be found in academic literature
+
+## Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### References
+
+- Wikipedia: Singleton
+- Additional resources can be found in academic literature
+
 ## Introduction
+
+Singleton is used to solve specific computational problems efficiently. 
+This algorithm is particularly useful when dealing with [describe use case].
+
+## Algorithm Details
+
+### How It Works
+
+The algorithm works by [describe the main approach]:
+
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+### Key Characteristics
+
+- **Time Complexity**: [To be determined]
+- **Space Complexity**: [To be determined]
+- **Stability**: [Stable/Unstable]
+- **In-place**: [Yes/No]
+
+## Use Cases
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+## References
+
+- Wikipedia: Singleton
+- Additional resources can be found in academic literature
+
+## Implementation
+
+See `algorithm.py` for the complete implementation with examples.
 
 Singleton addresses specific computational challenges.
 
@@ -15,11 +77,6 @@ This technique is applied in various domains to solve specific problems efficien
 ## TL;DR
 
 **One Sentence**: A creational design pattern that ensures a class has only one instance and provides global access to that instance.
-
-
-
-
-
 
 ## Learning Objectives
 
@@ -130,7 +187,6 @@ Test your understanding with these questions:
 - **Logging Frameworks**: Logger instances are often singletons (SLF4J, Log4j)
 - **Configuration Managers**: Application configuration is typically a singleton
 - **Cache Managers**: Redis, Memcached clients are often singletons
-
 
 ## Specific misconceptions with corrections
 

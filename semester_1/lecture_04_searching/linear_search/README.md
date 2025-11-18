@@ -6,7 +6,70 @@
 
 **Space Complexity**: O(1)
 
+## Algorithm Description
+
+Linear search or sequential search is a method for finding an element within a list. It sequentially checks each element of the list until a match is found or the whole list has been searched. Linear search is rarely practical because other search algorithms and schemes, such as the binary search algorithm and hash tables, allow significantly faster searching for all but short lists.
+
+### How It Works
+
+1. Start from the first element
+2. Compare each element with the target
+3. If a match is found, return the index
+4. If the end is reached without a match, return -1
+
+### Complexity Analysis
+
+Time: O(n). Space: O(1)
+
+### Use Cases
+
+Unsorted arrays, small datasets, when simplicity is more important than speed
+
+### References
+
+- Wikipedia: [Linear search](https://en.wikipedia.org/wiki/Linear_search)
+- Additional resources available in academic literature
+
+## How It Works
+
+1. Start from the first element
+2. Compare each element with the target
+3. If a match is found, return the index
+4. If the end is reached without a match, return -1
+
+### References
+
+- Wikipedia: [Linear search](https://en.wikipedia.org/wiki/Linear_search)
+- Additional resources available in academic literature
+
 ## Introduction
+
+Linear search is used to solve specific computational problems efficiently. 
+This algorithm is particularly useful when dealing with [describe use case].
+
+## Algorithm Details
+
+### Key Characteristics
+
+- **Time Complexity**: [To be determined]
+- **Space Complexity**: [To be determined]
+- **Stability**: [Stable/Unstable]
+- **In-place**: [Yes/No]
+
+## Use Cases
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+## References
+
+- Wikipedia: Linear search
+- Additional resources can be found in academic literature
+
+## Implementation
+
+See `algorithm.py` for the complete implementation with examples.
 
 Linear Search addresses specific computational challenges.
 
@@ -15,11 +78,6 @@ This technique is applied in various domains to solve specific problems efficien
 ## TL;DR
 
 **One Sentence**: An algorithm that finds the location of a target value within a data structure.
-
-
-
-
-
 
 ## Learning Objectives
 
@@ -128,7 +186,6 @@ Test your understanding with these questions:
 - **Version Control**: Git uses search algorithms for commit history lookups
 - **Autocomplete Systems**: Fast prefix matching in search suggestions
 - **File Systems**: Directory and file name lookups
-
 
 ## Specific misconceptions with corrections
 

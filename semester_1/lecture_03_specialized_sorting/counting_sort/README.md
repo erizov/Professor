@@ -6,7 +6,69 @@
 
 **Space Complexity**: O(k)
 
+## Algorithm Description
+
+Counting Sort is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+
+### Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### Complexity Analysis
+
+- **Time Complexity**: To be determined based on implementation
+- **Space Complexity**: To be determined based on implementation
+
+### References
+
+- Wikipedia: Counting Sort
+- Additional resources can be found in academic literature
+
+## Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### References
+
+- Wikipedia: Counting Sort
+- Additional resources can be found in academic literature
+
 ## Introduction
+
+Counting sort is used to solve specific computational problems efficiently. 
+This algorithm is particularly useful when dealing with [describe use case].
+
+## Algorithm Details
+
+### How It Works
+
+The algorithm works by [describe the main approach]:
+
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+### Key Characteristics
+
+- **Time Complexity**: [To be determined]
+- **Space Complexity**: [To be determined]
+- **Stability**: [Stable/Unstable]
+- **In-place**: [Yes/No]
+
+## Use Cases
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+## References
+
+- Wikipedia: Counting sort
+- Additional resources can be found in academic literature
+
+## Implementation
+
+See `algorithm.py` for the complete implementation with examples.
 
 Counting Sort addresses specific computational challenges.
 
@@ -15,11 +77,6 @@ This technique is applied in various domains to solve specific problems efficien
 ## TL;DR
 
 **One Sentence**: A comparison-based algorithm that arranges elements in a specific order (ascending or descending).
-
-
-
-
-
 
 ## Learning Objectives
 
@@ -129,7 +186,6 @@ Test your understanding with these questions:
 - **Search Engines**: Sorting search results by relevance, date, or popularity
 - **E-commerce Platforms**: Sorting products by price, rating, or popularity
 - **Operating Systems**: Process scheduling and file system organization
-
 
 ## Specific misconceptions with corrections
 

@@ -6,21 +6,77 @@
 
 **Space Complexity**: N/A
 
+## Algorithm Description
+
+Database Sharding Advanced is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+
+### Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### Complexity Analysis
+
+- **Time Complexity**: To be determined based on implementation
+- **Space Complexity**: To be determined based on implementation
+
+### References
+
+- Wikipedia: Database Sharding Advanced
+- Additional resources can be found in academic literature
+
+## Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### References
+
+- Wikipedia: Database Sharding Advanced
+- Additional resources can be found in academic literature
+
 ## Introduction
+
+Database Sharding Advanced is used to solve specific computational problems efficiently. 
+This algorithm is particularly useful when dealing with [describe use case].
+
+## Algorithm Details
+
+### How It Works
+
+The algorithm works by [describe the main approach]:
+
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+### Key Characteristics
+
+- **Time Complexity**: [To be determined]
+- **Space Complexity**: [To be determined]
+- **Stability**: [Stable/Unstable]
+- **In-place**: [Yes/No]
+
+## Use Cases
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+## References
+
+- Wikipedia: Database Sharding Advanced
+- Additional resources can be found in academic literature
+
+## Implementation
+
+See `algorithm.py` for the complete implementation with examples.
 
 Database sharding horizontally partitions data across multiple databases. Solves problems of database scalability and performance. Example: User data sharded by user_id across 10 database servers. Works by determining shard key, routing queries to appropriate shards, and managing data distribution.
 
 This advanced topic is essential for understanding modern database sharding advanced systems and their applications in production environments. Mastery of database sharding advanced is crucial for building scalable, efficient systems in enterprise settings.
 
-
 ## TL;DR
 
 **One Sentence**: A computational method for database sharding advanced.
-
-
-
-
-
 
 ### Short Description
 
@@ -143,7 +199,6 @@ Test your understanding with these questions:
 - **E-commerce**: Order processing and inventory management
 - **Financial Systems**: Transaction processing and audit trails
 
-
 ## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Database Sharding Advanced is the best solution for all problems"
@@ -202,6 +257,37 @@ $$ LANGUAGE plpgsql;
 
 **Purpose**: PostgreSQL database uses this for data management and optimization.
 
+### PostgreSQL
+
+```sql
+-- PostgreSQL - Database Sharding
+-- Shard by user_id (modulo 4)
+CREATE TABLE orders_shard_0 (
+    CHECK (user_id % 4 = 0)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_1 (
+    CHECK (user_id % 4 = 1)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_2 (
+    CHECK (user_id % 4 = 2)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_3 (
+    CHECK (user_id % 4 = 3)
+) INHERITS (orders);
+
+-- Routing function
+CREATE OR REPLACE FUNCTION route_to_shard(user_id INT)
+RETURNS TEXT AS $$
+BEGIN
+    RETURN 'orders_shard_' || (user_id % 4);
+END;
+$$ LANGUAGE plpgsql;
+```
+
+**Purpose**: PostgreSQL database uses this for data management and optimization.
 
 ### PostgreSQL
 
@@ -235,6 +321,37 @@ $$ LANGUAGE plpgsql;
 
 **Purpose**: PostgreSQL database uses this for data management and optimization.
 
+### PostgreSQL
+
+```sql
+-- PostgreSQL - Database Sharding
+-- Shard by user_id (modulo 4)
+CREATE TABLE orders_shard_0 (
+    CHECK (user_id % 4 = 0)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_1 (
+    CHECK (user_id % 4 = 1)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_2 (
+    CHECK (user_id % 4 = 2)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_3 (
+    CHECK (user_id % 4 = 3)
+) INHERITS (orders);
+
+-- Routing function
+CREATE OR REPLACE FUNCTION route_to_shard(user_id INT)
+RETURNS TEXT AS $$
+BEGIN
+    RETURN 'orders_shard_' || (user_id % 4);
+END;
+$$ LANGUAGE plpgsql;
+```
+
+**Purpose**: PostgreSQL database uses this for data management and optimization.
 
 ### PostgreSQL
 
@@ -268,6 +385,37 @@ $$ LANGUAGE plpgsql;
 
 **Purpose**: PostgreSQL database uses this for data management and optimization.
 
+### PostgreSQL
+
+```sql
+-- PostgreSQL - Database Sharding
+-- Shard by user_id (modulo 4)
+CREATE TABLE orders_shard_0 (
+    CHECK (user_id % 4 = 0)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_1 (
+    CHECK (user_id % 4 = 1)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_2 (
+    CHECK (user_id % 4 = 2)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_3 (
+    CHECK (user_id % 4 = 3)
+) INHERITS (orders);
+
+-- Routing function
+CREATE OR REPLACE FUNCTION route_to_shard(user_id INT)
+RETURNS TEXT AS $$
+BEGIN
+    RETURN 'orders_shard_' || (user_id % 4);
+END;
+$$ LANGUAGE plpgsql;
+```
+
+**Purpose**: PostgreSQL database uses this for data management and optimization.
 
 ### PostgreSQL
 
@@ -301,6 +449,37 @@ $$ LANGUAGE plpgsql;
 
 **Purpose**: PostgreSQL database uses this for data management and optimization.
 
+### PostgreSQL
+
+```sql
+-- PostgreSQL - Database Sharding
+-- Shard by user_id (modulo 4)
+CREATE TABLE orders_shard_0 (
+    CHECK (user_id % 4 = 0)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_1 (
+    CHECK (user_id % 4 = 1)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_2 (
+    CHECK (user_id % 4 = 2)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_3 (
+    CHECK (user_id % 4 = 3)
+) INHERITS (orders);
+
+-- Routing function
+CREATE OR REPLACE FUNCTION route_to_shard(user_id INT)
+RETURNS TEXT AS $$
+BEGIN
+    RETURN 'orders_shard_' || (user_id % 4);
+END;
+$$ LANGUAGE plpgsql;
+```
+
+**Purpose**: PostgreSQL database uses this for data management and optimization.
 
 ### PostgreSQL
 
@@ -334,6 +513,37 @@ $$ LANGUAGE plpgsql;
 
 **Purpose**: PostgreSQL database uses this for data management and optimization.
 
+### PostgreSQL
+
+```sql
+-- PostgreSQL - Database Sharding
+-- Shard by user_id (modulo 4)
+CREATE TABLE orders_shard_0 (
+    CHECK (user_id % 4 = 0)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_1 (
+    CHECK (user_id % 4 = 1)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_2 (
+    CHECK (user_id % 4 = 2)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_3 (
+    CHECK (user_id % 4 = 3)
+) INHERITS (orders);
+
+-- Routing function
+CREATE OR REPLACE FUNCTION route_to_shard(user_id INT)
+RETURNS TEXT AS $$
+BEGIN
+    RETURN 'orders_shard_' || (user_id % 4);
+END;
+$$ LANGUAGE plpgsql;
+```
+
+**Purpose**: PostgreSQL database uses this for data management and optimization.
 
 ### PostgreSQL
 
@@ -367,6 +577,37 @@ $$ LANGUAGE plpgsql;
 
 **Purpose**: PostgreSQL database uses this for data management and optimization.
 
+### PostgreSQL
+
+```sql
+-- PostgreSQL - Database Sharding
+-- Shard by user_id (modulo 4)
+CREATE TABLE orders_shard_0 (
+    CHECK (user_id % 4 = 0)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_1 (
+    CHECK (user_id % 4 = 1)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_2 (
+    CHECK (user_id % 4 = 2)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_3 (
+    CHECK (user_id % 4 = 3)
+) INHERITS (orders);
+
+-- Routing function
+CREATE OR REPLACE FUNCTION route_to_shard(user_id INT)
+RETURNS TEXT AS $$
+BEGIN
+    RETURN 'orders_shard_' || (user_id % 4);
+END;
+$$ LANGUAGE plpgsql;
+```
+
+**Purpose**: PostgreSQL database uses this for data management and optimization.
 
 ### PostgreSQL
 
@@ -400,6 +641,37 @@ $$ LANGUAGE plpgsql;
 
 **Purpose**: PostgreSQL database uses this for data management and optimization.
 
+### PostgreSQL
+
+```sql
+-- PostgreSQL - Database Sharding
+-- Shard by user_id (modulo 4)
+CREATE TABLE orders_shard_0 (
+    CHECK (user_id % 4 = 0)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_1 (
+    CHECK (user_id % 4 = 1)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_2 (
+    CHECK (user_id % 4 = 2)
+) INHERITS (orders);
+
+CREATE TABLE orders_shard_3 (
+    CHECK (user_id % 4 = 3)
+) INHERITS (orders);
+
+-- Routing function
+CREATE OR REPLACE FUNCTION route_to_shard(user_id INT)
+RETURNS TEXT AS $$
+BEGIN
+    RETURN 'orders_shard_' || (user_id % 4);
+END;
+$$ LANGUAGE plpgsql;
+```
+
+**Purpose**: PostgreSQL database uses this for data management and optimization.
 
 ### PostgreSQL
 
@@ -433,7 +705,6 @@ $$ LANGUAGE plpgsql;
 
 **Purpose**: PostgreSQL database uses this for data management and optimization.
 
-
 ### PostgreSQL
 
 ```sql
@@ -465,238 +736,6 @@ $$ LANGUAGE plpgsql;
 ```
 
 **Purpose**: PostgreSQL database uses this for data management and optimization.
-
-
-### PostgreSQL
-
-```sql
--- PostgreSQL - Database Sharding
--- Shard by user_id (modulo 4)
-CREATE TABLE orders_shard_0 (
-    CHECK (user_id % 4 = 0)
-) INHERITS (orders);
-
-CREATE TABLE orders_shard_1 (
-    CHECK (user_id % 4 = 1)
-) INHERITS (orders);
-
-CREATE TABLE orders_shard_2 (
-    CHECK (user_id % 4 = 2)
-) INHERITS (orders);
-
-CREATE TABLE orders_shard_3 (
-    CHECK (user_id % 4 = 3)
-) INHERITS (orders);
-
--- Routing function
-CREATE OR REPLACE FUNCTION route_to_shard(user_id INT)
-RETURNS TEXT AS $$
-BEGIN
-    RETURN 'orders_shard_' || (user_id % 4);
-END;
-$$ LANGUAGE plpgsql;
-```
-
-**Purpose**: PostgreSQL database uses this for data management and optimization.
-
-
-### PostgreSQL
-
-```sql
--- PostgreSQL - Database Sharding
--- Shard by user_id (modulo 4)
-CREATE TABLE orders_shard_0 (
-    CHECK (user_id % 4 = 0)
-) INHERITS (orders);
-
-CREATE TABLE orders_shard_1 (
-    CHECK (user_id % 4 = 1)
-) INHERITS (orders);
-
-CREATE TABLE orders_shard_2 (
-    CHECK (user_id % 4 = 2)
-) INHERITS (orders);
-
-CREATE TABLE orders_shard_3 (
-    CHECK (user_id % 4 = 3)
-) INHERITS (orders);
-
--- Routing function
-CREATE OR REPLACE FUNCTION route_to_shard(user_id INT)
-RETURNS TEXT AS $$
-BEGIN
-    RETURN 'orders_shard_' || (user_id % 4);
-END;
-$$ LANGUAGE plpgsql;
-```
-
-**Purpose**: PostgreSQL database uses this for data management and optimization.
-
-
-### PostgreSQL
-
-```sql
--- PostgreSQL - Database Sharding
--- Shard by user_id (modulo 4)
-CREATE TABLE orders_shard_0 (
-    CHECK (user_id % 4 = 0)
-) INHERITS (orders);
-
-CREATE TABLE orders_shard_1 (
-    CHECK (user_id % 4 = 1)
-) INHERITS (orders);
-
-CREATE TABLE orders_shard_2 (
-    CHECK (user_id % 4 = 2)
-) INHERITS (orders);
-
-CREATE TABLE orders_shard_3 (
-    CHECK (user_id % 4 = 3)
-) INHERITS (orders);
-
--- Routing function
-CREATE OR REPLACE FUNCTION route_to_shard(user_id INT)
-RETURNS TEXT AS $$
-BEGIN
-    RETURN 'orders_shard_' || (user_id % 4);
-END;
-$$ LANGUAGE plpgsql;
-```
-
-**Purpose**: PostgreSQL database uses this for data management and optimization.
-
-
-### PostgreSQL
-
-```sql
--- PostgreSQL - Database Sharding
--- Shard by user_id (modulo 4)
-CREATE TABLE orders_shard_0 (
-    CHECK (user_id % 4 = 0)
-) INHERITS (orders);
-
-CREATE TABLE orders_shard_1 (
-    CHECK (user_id % 4 = 1)
-) INHERITS (orders);
-
-CREATE TABLE orders_shard_2 (
-    CHECK (user_id % 4 = 2)
-) INHERITS (orders);
-
-CREATE TABLE orders_shard_3 (
-    CHECK (user_id % 4 = 3)
-) INHERITS (orders);
-
--- Routing function
-CREATE OR REPLACE FUNCTION route_to_shard(user_id INT)
-RETURNS TEXT AS $$
-BEGIN
-    RETURN 'orders_shard_' || (user_id % 4);
-END;
-$$ LANGUAGE plpgsql;
-```
-
-**Purpose**: PostgreSQL database uses this for data management and optimization.
-
-
-### PostgreSQL
-
-```sql
--- PostgreSQL - Database Sharding
--- Shard by user_id (modulo 4)
-CREATE TABLE orders_shard_0 (
-    CHECK (user_id % 4 = 0)
-) INHERITS (orders);
-
-CREATE TABLE orders_shard_1 (
-    CHECK (user_id % 4 = 1)
-) INHERITS (orders);
-
-CREATE TABLE orders_shard_2 (
-    CHECK (user_id % 4 = 2)
-) INHERITS (orders);
-
-CREATE TABLE orders_shard_3 (
-    CHECK (user_id % 4 = 3)
-) INHERITS (orders);
-
--- Routing function
-CREATE OR REPLACE FUNCTION route_to_shard(user_id INT)
-RETURNS TEXT AS $$
-BEGIN
-    RETURN 'orders_shard_' || (user_id % 4);
-END;
-$$ LANGUAGE plpgsql;
-```
-
-**Purpose**: PostgreSQL database uses this for data management and optimization.
-
-
-### PostgreSQL
-
-```sql
--- PostgreSQL - Database Sharding
--- Shard by user_id (modulo 4)
-CREATE TABLE orders_shard_0 (
-    CHECK (user_id % 4 = 0)
-) INHERITS (orders);
-
-CREATE TABLE orders_shard_1 (
-    CHECK (user_id % 4 = 1)
-) INHERITS (orders);
-
-CREATE TABLE orders_shard_2 (
-    CHECK (user_id % 4 = 2)
-) INHERITS (orders);
-
-CREATE TABLE orders_shard_3 (
-    CHECK (user_id % 4 = 3)
-) INHERITS (orders);
-
--- Routing function
-CREATE OR REPLACE FUNCTION route_to_shard(user_id INT)
-RETURNS TEXT AS $$
-BEGIN
-    RETURN 'orders_shard_' || (user_id % 4);
-END;
-$$ LANGUAGE plpgsql;
-```
-
-**Purpose**: PostgreSQL database uses this for data management and optimization.
-
-
-### PostgreSQL
-
-```sql
--- PostgreSQL - Database Sharding
--- Shard by user_id (modulo 4)
-CREATE TABLE orders_shard_0 (
-    CHECK (user_id % 4 = 0)
-) INHERITS (orders);
-
-CREATE TABLE orders_shard_1 (
-    CHECK (user_id % 4 = 1)
-) INHERITS (orders);
-
-CREATE TABLE orders_shard_2 (
-    CHECK (user_id % 4 = 2)
-) INHERITS (orders);
-
-CREATE TABLE orders_shard_3 (
-    CHECK (user_id % 4 = 3)
-) INHERITS (orders);
-
--- Routing function
-CREATE OR REPLACE FUNCTION route_to_shard(user_id INT)
-RETURNS TEXT AS $$
-BEGIN
-    RETURN 'orders_shard_' || (user_id % 4);
-END;
-$$ LANGUAGE plpgsql;
-```
-
-**Purpose**: PostgreSQL database uses this for data management and optimization.
-
 
 ## Algorithm Steps
 
@@ -728,7 +767,6 @@ Database sharding horizontally partitions data across multiple databases
 - Production systems require careful tuning and monitoring
 - Error handling and edge cases must be thoroughly tested
 - Documentation and maintenance are critical for long-term success
-
 
 ## Advantages
 

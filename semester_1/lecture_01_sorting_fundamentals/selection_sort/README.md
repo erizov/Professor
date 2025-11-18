@@ -6,7 +6,70 @@
 
 **Space Complexity**: O(1)
 
+## Algorithm Description
+
+Selection sort is an in-place comparison sorting algorithm. It has an O(n²) time complexity, which makes it inefficient on large lists, and generally performs worse than the similar insertion sort. Selection sort is noted for its simplicity and has performance advantages over more complicated algorithms in certain situations, particularly where auxiliary memory is limited.
+
+### How It Works
+
+1. Find the minimum element in the unsorted portion
+2. Swap it with the first element of the unsorted portion
+3. Move the boundary of the sorted portion one element to the right
+4. Repeat until the entire array is sorted
+
+### Complexity Analysis
+
+Time: O(n²) in all cases. Space: O(1)
+
+### Use Cases
+
+Small datasets, when memory writes are expensive, educational purposes
+
+### References
+
+- Wikipedia: [Selection sort](https://en.wikipedia.org/wiki/Selection_sort)
+- Additional resources available in academic literature
+
+## How It Works
+
+1. Find the minimum element in the unsorted portion
+2. Swap it with the first element of the unsorted portion
+3. Move the boundary of the sorted portion one element to the right
+4. Repeat until the entire array is sorted
+
+### References
+
+- Wikipedia: [Selection sort](https://en.wikipedia.org/wiki/Selection_sort)
+- Additional resources available in academic literature
+
 ## Introduction
+
+Selection sort is used to solve specific computational problems efficiently. 
+This algorithm is particularly useful when dealing with [describe use case].
+
+## Algorithm Details
+
+### Key Characteristics
+
+- **Time Complexity**: [To be determined]
+- **Space Complexity**: [To be determined]
+- **Stability**: [Stable/Unstable]
+- **In-place**: [Yes/No]
+
+## Use Cases
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+## References
+
+- Wikipedia: Selection sort
+- Additional resources can be found in academic literature
+
+## Implementation
+
+See `algorithm.py` for the complete implementation with examples.
 
 Selection Sort addresses specific computational challenges.
 
@@ -15,11 +78,6 @@ This technique is applied in various domains to solve specific problems efficien
 ## TL;DR
 
 **One Sentence**: A sorting algorithm that finds the minimum element from the unsorted portion and places it at the beginning, repeating until sorted.
-
-
-
-
-
 
 ## Learning Objectives
 
@@ -129,7 +187,6 @@ Test your understanding with these questions:
 - **Search Engines**: Sorting search results by relevance, date, or popularity
 - **E-commerce Platforms**: Sorting products by price, rating, or popularity
 - **Operating Systems**: Process scheduling and file system organization
-
 
 ## Specific misconceptions with corrections
 

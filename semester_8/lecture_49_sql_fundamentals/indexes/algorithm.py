@@ -15,7 +15,7 @@ from framework.logging_utils import get_logger
 logger = get_logger(__name__)
 
 
-def indexes():
+def main() -> None:
     """
     Implement Indexes.
     
@@ -38,4 +38,4 @@ def indexes():
 
 
 if __name__ == "__main__":
-    indexes()
+    main()

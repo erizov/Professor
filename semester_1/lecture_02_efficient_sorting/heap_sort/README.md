@@ -6,7 +6,72 @@
 
 **Space Complexity**: O(1)
 
+## Algorithm Description
+
+Heapsort is a comparison-based sorting algorithm. Heapsort can be thought of as an improved selection sort: like selection sort, heapsort divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element from it and inserting it into the sorted region.
+
+### How It Works
+
+1. Build a max heap from the input array
+2. The largest element is at the root
+3. Swap the root with the last element and reduce heap size
+4. Heapify the root to maintain heap property
+5. Repeat until heap size is 1
+
+### Complexity Analysis
+
+Time: O(n log n) in all cases. Space: O(1)
+
+### Use Cases
+
+When worst-case O(n log n) is required, embedded systems, real-time systems
+
+### References
+
+- Wikipedia: [Heapsort](https://en.wikipedia.org/wiki/Heapsort)
+- Additional resources available in academic literature
+
+## How It Works
+
+1. Build a max heap from the input array
+2. The largest element is at the root
+3. Swap the root with the last element and reduce heap size
+4. Heapify the root to maintain heap property
+5. Repeat until heap size is 1
+
+### References
+
+- Wikipedia: [Heapsort](https://en.wikipedia.org/wiki/Heapsort)
+- Additional resources available in academic literature
+
 ## Introduction
+
+Heapsort is used to solve specific computational problems efficiently. 
+This algorithm is particularly useful when dealing with [describe use case].
+
+## Algorithm Details
+
+### Key Characteristics
+
+- **Time Complexity**: [To be determined]
+- **Space Complexity**: [To be determined]
+- **Stability**: [Stable/Unstable]
+- **In-place**: [Yes/No]
+
+## Use Cases
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+## References
+
+- Wikipedia: Heapsort
+- Additional resources can be found in academic literature
+
+## Implementation
+
+See `algorithm.py` for the complete implementation with examples.
 
 Heap Sort addresses specific computational challenges.
 
@@ -15,11 +80,6 @@ This technique is applied in various domains to solve specific problems efficien
 ## TL;DR
 
 **One Sentence**: An in-place sorting algorithm that uses a binary heap data structure to sort elements by repeatedly extracting the maximum element.
-
-
-
-
-
 
 ## Learning Objectives
 
@@ -206,7 +266,6 @@ public class UserService {
 - **Search Engines**: Sorting search results by relevance, date, or popularity
 - **E-commerce Platforms**: Sorting products by price, rating, or popularity
 - **Operating Systems**: Process scheduling and file system organization
-
 
 ## Specific misconceptions with corrections
 

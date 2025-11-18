@@ -6,7 +6,69 @@
 
 **Space Complexity**: N/A
 
+## Algorithm Description
+
+Post Quantum Cryptography is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+
+### Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### Complexity Analysis
+
+- **Time Complexity**: To be determined based on implementation
+- **Space Complexity**: To be determined based on implementation
+
+### References
+
+- Wikipedia: Post Quantum Cryptography
+- Additional resources can be found in academic literature
+
+## Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### References
+
+- Wikipedia: Post Quantum Cryptography
+- Additional resources can be found in academic literature
+
 ## Introduction
+
+Post Quantum Cryptography is used to solve specific computational problems efficiently. 
+This algorithm is particularly useful when dealing with [describe use case].
+
+## Algorithm Details
+
+### How It Works
+
+The algorithm works by [describe the main approach]:
+
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+### Key Characteristics
+
+- **Time Complexity**: [To be determined]
+- **Space Complexity**: [To be determined]
+- **Stability**: [Stable/Unstable]
+- **In-place**: [Yes/No]
+
+## Use Cases
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+## References
+
+- Wikipedia: Post Quantum Cryptography
+- Additional resources can be found in academic literature
+
+## Implementation
+
+See `algorithm.py` for the complete implementation with examples.
 
 Post Quantum Cryptography Addresses specific computational problems with concrete solutions.
 
@@ -15,11 +77,6 @@ This topic covers specific techniques with real-world applications.
 ## TL;DR
 
 **One Sentence**: A security mechanism that protects data, systems, or communications from unauthorized access or attacks.
-
-
-
-
-
 
 ### Short Description
 
@@ -176,7 +233,6 @@ G.add_edge(2, 3)
 - **Network Analysis**: Network topology analysis and routing
 - **Game AI**: Pathfinding in games and NPC movement
 - **Web Crawling**: Search engines use graph algorithms for web crawling
-
 
 ## Specific misconceptions with corrections
 

@@ -6,6 +6,24 @@
 
 **Space Complexity**: O(1)
 
+## Algorithm Description
+
+Leader Election is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+
+### Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### Complexity Analysis
+
+- **Time Complexity**: To be determined based on implementation
+- **Space Complexity**: To be determined based on implementation
+
+### References
+
+- Wikipedia: Leader Election
+- Additional resources can be found in academic literature
+
 ## Overview
 
 ## Introduction
@@ -17,11 +35,6 @@ This technique is applied in various domains to solve specific problems efficien
 ## TL;DR
 
 **One Sentence**: A distributed computing algorithm that selects a single node to coordinate activities in a cluster.
-
-
-
-
-
 
 ## Learning Objectives
 

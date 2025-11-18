@@ -6,16 +6,74 @@
 
 **Space Complexity**: O(log n)
 
+## Algorithm Description
+
+Quicksort is an efficient sorting algorithm. Developed by British computer scientist Tony Hoare in 1959 and published in 1961, it is still a commonly used algorithm for sorting. When implemented well, it can be somewhat faster than merge sort and about two or three times faster than heapsort.
+
+### How It Works
+
+1. Choose a pivot element from the array
+2. Partition the array: elements smaller than pivot go left, larger go right
+3. Recursively apply quicksort to the left and right subarrays
+4. Combine the results (pivot is already in correct position)
+
+### Complexity Analysis
+
+Time: O(n log n) average, O(n²) worst case. Space: O(log n)
+
+### Use Cases
+
+General-purpose sorting, large datasets, when average performance matters more than worst case
+
+### References
+
+- Wikipedia: [Quicksort](https://en.wikipedia.org/wiki/Quicksort)
+- Additional resources available in academic literature
+
+## How It Works
+
+1. Choose a pivot element from the array
+2. Partition the array: elements smaller than pivot go left, larger go right
+3. Recursively apply quicksort to the left and right subarrays
+4. Combine the results (pivot is already in correct position)
+
+### References
+
+- Wikipedia: [Quicksort](https://en.wikipedia.org/wiki/Quicksort)
+- Additional resources available in academic literature
+
 ## Introduction
+
+Quicksort is used to solve specific computational problems efficiently. 
+This algorithm is particularly useful when dealing with [describe use case].
+
+## Algorithm Details
+
+### Key Characteristics
+
+- **Time Complexity**: [To be determined]
+- **Space Complexity**: [To be determined]
+- **Stability**: [Stable/Unstable]
+- **In-place**: [Yes/No]
+
+## Use Cases
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+## References
+
+- Wikipedia: Quicksort
+- Additional resources can be found in academic literature
+
+## Implementation
+
+See `algorithm.py` for the complete implementation with examples.
 
 ## TL;DR
 
 **One Sentence**: A divide-and-conquer sorting algorithm that partitions an array around a pivot element, recursively sorting subarrays.
-
-
-
-
-
 
 ## Learning Objectives
 
@@ -167,7 +225,6 @@ Combine: [1, 2, 5, 8, 9]
 - **C++ STL**: std::sort() uses Introsort (hybrid of Quick Sort and Heap Sort)
 - **Python**: list.sort() uses Timsort (hybrid of Merge Sort and Insertion Sort)
 - **Apache Spark**: Uses Quick Sort for in-memory sorting of RDD partitions
-
 
 ## Specific misconceptions with corrections
 

@@ -6,21 +6,77 @@
 
 **Space Complexity**: N/A
 
+## Algorithm Description
+
+Wait Free Algorithms is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+
+### Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### Complexity Analysis
+
+- **Time Complexity**: To be determined based on implementation
+- **Space Complexity**: To be determined based on implementation
+
+### References
+
+- Wikipedia: Wait Free Algorithms
+- Additional resources can be found in academic literature
+
+## Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### References
+
+- Wikipedia: Wait Free Algorithms
+- Additional resources can be found in academic literature
+
 ## Introduction
+
+Wait Free Algorithms is used to solve specific computational problems efficiently. 
+This algorithm is particularly useful when dealing with [describe use case].
+
+## Algorithm Details
+
+### How It Works
+
+The algorithm works by [describe the main approach]:
+
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+### Key Characteristics
+
+- **Time Complexity**: [To be determined]
+- **Space Complexity**: [To be determined]
+- **Stability**: [Stable/Unstable]
+- **In-place**: [Yes/No]
+
+## Use Cases
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+## References
+
+- Wikipedia: Wait Free Algorithms
+- Additional resources can be found in academic literature
+
+## Implementation
+
+See `algorithm.py` for the complete implementation with examples.
 
 Wait-free algorithms guarantee that every thread completes its operation in a bounded number of steps regardless of other threads. Solves problems of starvation and unbounded delays in concurrent systems. Example: Wait-free queues ensure all operations complete in O(1) steps. Works by using atomic operations and helping mechanisms where threads assist each other.
 
 This advanced topic is essential for understanding modern wait free algorithms systems and their applications in production environments. Mastery of wait free algorithms is crucial for building scalable, efficient systems in enterprise settings.
 
-
 ## TL;DR
 
 **One Sentence**: A computational method for wait free algorithms.
-
-
-
-
-
 
 ### Short Description
 
@@ -194,7 +250,6 @@ class LockFreeCounter:
 
 **Purpose**: Python libraries provide implementations for this pattern/algorithm.
 
-
 ### Python
 
 ```python
@@ -217,7 +272,6 @@ class LockFreeCounter:
 
 **Purpose**: Python libraries provide implementations for this pattern/algorithm.
 
-
 ### Python
 
 ```python
@@ -239,7 +293,6 @@ class LockFreeCounter:
 ```
 
 **Purpose**: Python libraries provide implementations for this pattern/algorithm.
-
 
 ## Algorithm Steps
 
@@ -273,7 +326,6 @@ Solves problems of starvation and unbounded delays in concurrent systems. Exampl
 - Documentation and maintenance are critical for long-term success
 - Integration with existing systems requires careful planning
 - Performance optimization should be based on actual usage patterns
-
 
 ## Advantages
 

@@ -6,7 +6,72 @@
 
 **Space Complexity**: O(1)
 
+## Algorithm Description
+
+Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort. However, insertion sort provides several advantages: simple implementation, efficient for small data sets, adaptive, stable, in-place, and online.
+
+### How It Works
+
+1. Start with the second element (index 1)
+2. Compare it with elements before it
+3. Shift larger elements one position to the right
+4. Insert the current element in the correct position
+5. Repeat for all remaining elements
+
+### Complexity Analysis
+
+Time: O(n²) average and worst case, O(n) best case. Space: O(1)
+
+### Use Cases
+
+Small datasets, nearly sorted data, as part of hybrid algorithms like Timsort
+
+### References
+
+- Wikipedia: [Insertion sort](https://en.wikipedia.org/wiki/Insertion_sort)
+- Additional resources available in academic literature
+
+## How It Works
+
+1. Start with the second element (index 1)
+2. Compare it with elements before it
+3. Shift larger elements one position to the right
+4. Insert the current element in the correct position
+5. Repeat for all remaining elements
+
+### References
+
+- Wikipedia: [Insertion sort](https://en.wikipedia.org/wiki/Insertion_sort)
+- Additional resources available in academic literature
+
 ## Introduction
+
+Insertion sort is used to solve specific computational problems efficiently. 
+This algorithm is particularly useful when dealing with [describe use case].
+
+## Algorithm Details
+
+### Key Characteristics
+
+- **Time Complexity**: [To be determined]
+- **Space Complexity**: [To be determined]
+- **Stability**: [Stable/Unstable]
+- **In-place**: [Yes/No]
+
+## Use Cases
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+## References
+
+- Wikipedia: Insertion sort
+- Additional resources can be found in academic literature
+
+## Implementation
+
+See `algorithm.py` for the complete implementation with examples.
 
 Insertion Sort addresses specific computational challenges.
 
@@ -15,11 +80,6 @@ This technique is applied in various domains to solve specific problems efficien
 ## TL;DR
 
 **One Sentence**: A simple sorting algorithm that builds the final sorted array one item at a time, similar to how you sort playing cards in your hands.
-
-
-
-
-
 
 ## Learning Objectives
 
@@ -129,7 +189,6 @@ Test your understanding with these questions:
 - **Search Engines**: Sorting search results by relevance, date, or popularity
 - **E-commerce Platforms**: Sorting products by price, rating, or popularity
 - **Operating Systems**: Process scheduling and file system organization
-
 
 ## Specific misconceptions with corrections
 

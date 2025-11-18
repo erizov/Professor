@@ -6,7 +6,70 @@
 
 **Space Complexity**: O(n)
 
+## Algorithm Description
+
+Merge sort is an efficient, general-purpose, comparison-based sorting algorithm. Most implementations produce a stable sort, which means that the order of equal elements is the same in the input and output. Merge sort is a divide and conquer algorithm that was invented by John von Neumann in 1945.
+
+### How It Works
+
+1. Divide the array into two halves
+2. Recursively sort both halves
+3. Merge the two sorted halves back together
+4. The merge process compares elements from both halves and combines them in sorted order
+
+### Complexity Analysis
+
+Time: O(n log n) in all cases. Space: O(n)
+
+### Use Cases
+
+Large datasets, when stability is required, external sorting, linked lists
+
+### References
+
+- Wikipedia: [Merge sort](https://en.wikipedia.org/wiki/Merge_sort)
+- Additional resources available in academic literature
+
+## How It Works
+
+1. Divide the array into two halves
+2. Recursively sort both halves
+3. Merge the two sorted halves back together
+4. The merge process compares elements from both halves and combines them in sorted order
+
+### References
+
+- Wikipedia: [Merge sort](https://en.wikipedia.org/wiki/Merge_sort)
+- Additional resources available in academic literature
+
 ## Introduction
+
+Merge sort is used to solve specific computational problems efficiently. 
+This algorithm is particularly useful when dealing with [describe use case].
+
+## Algorithm Details
+
+### Key Characteristics
+
+- **Time Complexity**: [To be determined]
+- **Space Complexity**: [To be determined]
+- **Stability**: [Stable/Unstable]
+- **In-place**: [Yes/No]
+
+## Use Cases
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+## References
+
+- Wikipedia: Merge sort
+- Additional resources can be found in academic literature
+
+## Implementation
+
+See `algorithm.py` for the complete implementation with examples.
 
 Merge Sort addresses specific computational challenges.
 
@@ -15,11 +78,6 @@ This technique is applied in various domains to solve specific problems efficien
 ## TL;DR
 
 **One Sentence**: A stable, divide-and-conquer sorting algorithm that divides the array into halves, recursively sorts them, and merges the sorted halves.
-
-
-
-
-
 
 ## Learning Objectives
 
@@ -165,7 +223,6 @@ Merge:
 - **Java Arrays.parallelSort()**: Uses parallel merge sort for multi-threaded sorting
 - **Facebook**: Uses merge sort variants in their data processing pipelines
 - **Amazon**: Uses merge sort for sorting product listings and search results
-
 
 ## Specific misconceptions with corrections
 

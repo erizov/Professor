@@ -6,7 +6,69 @@
 
 **Space Complexity**: O(n)
 
+## Algorithm Description
+
+Load Balancing is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+
+### Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### Complexity Analysis
+
+- **Time Complexity**: To be determined based on implementation
+- **Space Complexity**: To be determined based on implementation
+
+### References
+
+- Wikipedia: Load Balancing
+- Additional resources can be found in academic literature
+
+## Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### References
+
+- Wikipedia: Load Balancing
+- Additional resources can be found in academic literature
+
 ## Introduction
+
+Load Balancing is used to solve specific computational problems efficiently. 
+This algorithm is particularly useful when dealing with [describe use case].
+
+## Algorithm Details
+
+### How It Works
+
+The algorithm works by [describe the main approach]:
+
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+### Key Characteristics
+
+- **Time Complexity**: [To be determined]
+- **Space Complexity**: [To be determined]
+- **Stability**: [Stable/Unstable]
+- **In-place**: [Yes/No]
+
+## Use Cases
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+## References
+
+- Wikipedia: Load Balancing
+- Additional resources can be found in academic literature
+
+## Implementation
+
+See `algorithm.py` for the complete implementation with examples.
 
 Load Balancing addresses specific computational challenges.
 
@@ -15,11 +77,6 @@ This technique is applied in various domains to solve specific problems efficien
 ## TL;DR
 
 **One Sentence**: A technique for distributing incoming network traffic across multiple servers to ensure reliability and performance.
-
-
-
-
-
 
 ## Learning Objectives
 
@@ -118,7 +175,6 @@ Test your understanding with these questions:
 - **CloudFlare**: Global load balancing for websites
 - **Azure Load Balancer**: Distributes traffic in Azure cloud
 
-
 ## Specific misconceptions with corrections
 
 ❌ **WRONG**: "Load Balancing is the best solution for all problems"
@@ -166,7 +222,65 @@ spec:
 
 **Purpose**: Kubernetes uses this pattern for container orchestration, service discovery, and resource management.
 
+### Spring Framework
 
+### .NET Framework
+
+### Docker
+
+```yaml
+# Docker Swarm - Load Balancing
+docker service create \
+  --name backend \
+  --replicas 3 \
+  --publish 80:8080 \
+  backend:latest
+
+# Docker Swarm automatically load balances across replicas
+# Access via: http://localhost (load balanced across 3 containers)
+```
+
+**Purpose**: Docker uses this pattern for container orchestration and service management.
+
+### Kubernetes
+
+```yaml
+# Kubernetes - Load Balancing (Service)
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+spec:
+  selector:
+    app: backend
+  ports:
+  - port: 80
+    targetPort: 8080
+  type: LoadBalancer
+  # Kubernetes automatically load balances across pods
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+spec:
+  replicas: 3  # 3 instances for load balancing
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        image: backend:latest
+        ports:
+        - containerPort: 8080
+```
+
+**Purpose**: Kubernetes implements this pattern for pod management, service discovery, and orchestration.
 
 ### Spring Framework
 
@@ -228,8 +342,6 @@ spec:
 
 **Purpose**: Kubernetes implements this pattern for pod management, service discovery, and orchestration.
 
-
-
 ### Spring Framework
 
 ### .NET Framework
@@ -289,70 +401,6 @@ spec:
 ```
 
 **Purpose**: Kubernetes implements this pattern for pod management, service discovery, and orchestration.
-
-
-
-### Spring Framework
-
-### .NET Framework
-
-### Docker
-
-```yaml
-# Docker Swarm - Load Balancing
-docker service create \
-  --name backend \
-  --replicas 3 \
-  --publish 80:8080 \
-  backend:latest
-
-# Docker Swarm automatically load balances across replicas
-# Access via: http://localhost (load balanced across 3 containers)
-```
-
-**Purpose**: Docker uses this pattern for container orchestration and service management.
-
-### Kubernetes
-
-```yaml
-# Kubernetes - Load Balancing (Service)
-apiVersion: v1
-kind: Service
-metadata:
-  name: backend-service
-spec:
-  selector:
-    app: backend
-  ports:
-  - port: 80
-    targetPort: 8080
-  type: LoadBalancer
-  # Kubernetes automatically load balances across pods
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: backend
-spec:
-  replicas: 3  # 3 instances for load balancing
-  selector:
-    matchLabels:
-      app: backend
-  template:
-    metadata:
-      labels:
-        app: backend
-    spec:
-      containers:
-      - name: backend
-        image: backend:latest
-        ports:
-        - containerPort: 8080
-```
-
-**Purpose**: Kubernetes implements this pattern for pod management, service discovery, and orchestration.
-
-
 
 ### Spring Framework
 

@@ -6,7 +6,72 @@
 
 **Space Complexity**: O(1)
 
+## Algorithm Description
+
+Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted. The algorithm gets its name from the way smaller elements "bubble" to the top of the list.
+
+### How It Works
+
+1. Start from the beginning of the array
+2. Compare each pair of adjacent elements
+3. If they are in the wrong order, swap them
+4. Continue until no more swaps are needed
+5. The largest element "bubbles up" to the end in each pass
+
+### Complexity Analysis
+
+Time: O(n²) average and worst case, O(n) best case (optimized). Space: O(1)
+
+### Use Cases
+
+Educational purposes, very small datasets, nearly sorted data, when simplicity is critical
+
+### References
+
+- Wikipedia: [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort)
+- Additional resources available in academic literature
+
+## How It Works
+
+1. Start from the beginning of the array
+2. Compare each pair of adjacent elements
+3. If they are in the wrong order, swap them
+4. Continue until no more swaps are needed
+5. The largest element "bubbles up" to the end in each pass
+
+### References
+
+- Wikipedia: [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort)
+- Additional resources available in academic literature
+
 ## Introduction
+
+Bubble sort is used to solve specific computational problems efficiently. 
+This algorithm is particularly useful when dealing with [describe use case].
+
+## Algorithm Details
+
+### Key Characteristics
+
+- **Time Complexity**: [To be determined]
+- **Space Complexity**: [To be determined]
+- **Stability**: [Stable/Unstable]
+- **In-place**: [Yes/No]
+
+## Use Cases
+
+- [Use case 1]
+- [Use case 2]
+- [Use case 3]
+
+## References
+
+- Wikipedia: Bubble sort
+- Additional resources can be found in academic literature
+
+## Implementation
+
+See `algorithm.py` for the complete implementation with examples.
 
 Bubble Sort addresses specific computational challenges.
 
@@ -15,11 +80,6 @@ This technique is applied in various domains to solve specific problems efficien
 ## TL;DR
 
 **One Sentence**: A simple comparison-based sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order.
-
-
-
-
-
 
 ## Learning Objectives
 
@@ -128,7 +188,6 @@ Test your understanding with these questions:
 - **Search Engines**: Sorting search results by relevance, date, or popularity
 - **E-commerce Platforms**: Sorting products by price, rating, or popularity
 - **Operating Systems**: Process scheduling and file system organization
-
 
 ## Specific misconceptions with corrections
 

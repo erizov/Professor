@@ -6,6 +6,24 @@
 
 **Space Complexity**: O(n)
 
+## Algorithm Description
+
+Priority Queue is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+
+### Overview
+
+This algorithm is particularly useful for [specific use cases]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+
+### Complexity Analysis
+
+- **Time Complexity**: To be determined based on implementation
+- **Space Complexity**: To be determined based on implementation
+
+### References
+
+- Wikipedia: Priority Queue
+- Additional resources can be found in academic literature
+
 ## Overview
 
 ## Introduction
@@ -17,11 +35,6 @@ This technique is applied in various domains to solve specific problems efficien
 ## TL;DR
 
 **One Sentence**: A computational method for priority queue.
-
-
-
-
-
 
 ## Learning Objectives
 
