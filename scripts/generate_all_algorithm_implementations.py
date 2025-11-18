@@ -22923,12 +22923,8 @@ def update_algorithm_file(algorithm_path: Path, algorithm_name: str) -> bool:
     
     if algorithm_path.exists():
         existing = algorithm_path.read_text(encoding='utf-8')
-        # Check if it already has the correct implementation
-        try:
-            func_name = implementation.split('(')[0].split('def ')[1].strip()
-        except (IndexError, AttributeError):
-            func_name = algorithm_name
-        # Check if it's a placeholder or generic
+        
+        # Check if it's a placeholder or generic - do this first
         if ('# Implementation specific to' in existing or 
             'return data' in existing or
             'Implementation in progress' in existing or 
@@ -22940,21 +22936,20 @@ def update_algorithm_file(algorithm_path: Path, algorithm_name: str) -> bool:
         
         # Check if it already has the correct implementation
         try:
-            func_name = implementation.split('(')[0].split('def ')[1].strip()
+            # Try to extract class or function name from implementation
+            if 'class ' in implementation:
+                func_name = implementation.split('class ')[1].split('(')[0].split(':')[0].strip()
+            elif 'def ' in implementation:
+                func_name = implementation.split('def ')[1].split('(')[0].strip()
+            else:
+                func_name = algorithm_name
         except (IndexError, AttributeError):
             func_name = algorithm_name
-        if func_name in existing and 'def ' + func_name in existing:
+        
+        # If the implementation already exists and is not generic, skip
+        if func_name in existing and ('def ' + func_name in existing or 'class ' + func_name in existing):
             # Already has good implementation
             return False
-        # Check if it's a placeholder or generic
-        if ('Implementation in progress' in existing or 
-            'pass' in existing and len(existing) < 300 or
-            '# Implementation specific to' in existing or
-            'return data' in existing):
-            # Replace placeholder/generic with specific implementation
-            new_content = create_algorithm_file_content(algorithm_name, implementation)
-            algorithm_path.write_text(new_content, encoding='utf-8')
-            return True
     
     # Write new content
     new_content = create_algorithm_file_content(algorithm_name, implementation)
