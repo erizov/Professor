@@ -137,6 +137,154 @@ def merge(left: List[int], right: List[int]) -> List[int]:
                 if neighbor not in visited:
                     queue.append(neighbor)
     return result''',
+    
+    'jump_search': '''def jump_search(arr: List[int], target: int) -> Optional[int]:
+    """Jump search algorithm."""
+    n = len(arr)
+    if n == 0:
+        return None
+    
+    step = int(n ** 0.5)
+    prev = 0
+    
+    while arr[min(step, n) - 1] < target:
+        prev = step
+        step += int(n ** 0.5)
+        if prev >= n:
+            return None
+    
+    for i in range(prev, min(step, n)):
+        if arr[i] == target:
+            return i
+    return None''',
+    
+    'interpolation_search': '''def interpolation_search(arr: List[int], target: int) -> Optional[int]:
+    """Interpolation search algorithm."""
+    left, right = 0, len(arr) - 1
+    
+    while left <= right and arr[left] <= target <= arr[right]:
+        if left == right:
+            if arr[left] == target:
+                return left
+            return None
+        
+        pos = left + ((target - arr[left]) * (right - left)) // (arr[right] - arr[left])
+        
+        if arr[pos] == target:
+            return pos
+        elif arr[pos] < target:
+            left = pos + 1
+        else:
+            right = pos - 1
+    
+    return None''',
+    
+    'heap_sort': '''def heap_sort(arr: List[int]) -> List[int]:
+    """Heap sort algorithm."""
+    def heapify(arr: List[int], n: int, i: int) -> None:
+        largest = i
+        left = 2 * i + 1
+        right = 2 * i + 2
+        
+        if left < n and arr[left] > arr[largest]:
+            largest = left
+        if right < n and arr[right] > arr[largest]:
+            largest = right
+        
+        if largest != i:
+            arr[i], arr[largest] = arr[largest], arr[i]
+            heapify(arr, n, largest)
+    
+    n = len(arr)
+    for i in range(n // 2 - 1, -1, -1):
+        heapify(arr, n, i)
+    
+    for i in range(n - 1, 0, -1):
+        arr[0], arr[i] = arr[i], arr[0]
+        heapify(arr, i, 0)
+    
+    return arr''',
+    
+    'counting_sort': '''def counting_sort(arr: List[int]) -> List[int]:
+    """Counting sort algorithm."""
+    if not arr:
+        return arr
+    
+    max_val = max(arr)
+    min_val = min(arr)
+    range_val = max_val - min_val + 1
+    
+    count = [0] * range_val
+    output = [0] * len(arr)
+    
+    for num in arr:
+        count[num - min_val] += 1
+    
+    for i in range(1, range_val):
+        count[i] += count[i - 1]
+    
+    for i in range(len(arr) - 1, -1, -1):
+        output[count[arr[i] - min_val] - 1] = arr[i]
+        count[arr[i] - min_val] -= 1
+    
+    return output''',
+    
+    'radix_sort': '''def radix_sort(arr: List[int]) -> List[int]:
+    """Radix sort algorithm."""
+    def counting_sort_radix(arr: List[int], exp: int) -> List[int]:
+        n = len(arr)
+        output = [0] * n
+        count = [0] * 10
+        
+        for i in range(n):
+            index = (arr[i] // exp) % 10
+            count[index] += 1
+        
+        for i in range(1, 10):
+            count[i] += count[i - 1]
+        
+        i = n - 1
+        while i >= 0:
+            index = (arr[i] // exp) % 10
+            output[count[index] - 1] = arr[i]
+            count[index] -= 1
+            i -= 1
+        
+        return output
+    
+    if not arr:
+        return arr
+    
+    max_val = max(arr)
+    exp = 1
+    while max_val // exp > 0:
+        arr = counting_sort_radix(arr, exp)
+        exp *= 10
+    
+    return arr''',
+    
+    'bucket_sort': '''def bucket_sort(arr: List[float]) -> List[float]:
+    """Bucket sort algorithm."""
+    if not arr:
+        return arr
+    
+    n = len(arr)
+    buckets = [[] for _ in range(n)]
+    
+    for num in arr:
+        bucket_idx = int(n * num)
+        if bucket_idx == n:
+            bucket_idx = n - 1
+        buckets[bucket_idx].append(num)
+    
+    for bucket in buckets:
+        bucket.sort()
+    
+    result = []
+    for bucket in buckets:
+        result.extend(bucket)
+    
+    return result''',
 }
 
 
