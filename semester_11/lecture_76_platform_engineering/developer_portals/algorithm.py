@@ -42,6 +42,7 @@ def developer_portals(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Developer Portals implementation.
     

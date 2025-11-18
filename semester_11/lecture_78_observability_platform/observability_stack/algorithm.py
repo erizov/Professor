@@ -42,6 +42,7 @@ def observability_stack(*args, **kwargs) -> Any:
 
 
     
+    
     """
     Observability Stack implementation.
     
