@@ -2992,6 +2992,228 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Throttling", "Quotas", "Token Bucket Algorithm"],
         "explanation": "Limits the number of requests a client can make within a time window, preventing abuse and ensuring fair resource usage across all clients."
+    },
+    "semester_04/lecture_18_crypto_algorithms/aes/README.md": {
+        "name": "Advanced Encryption Standard (AES)",
+        "problem": "Provides fast, secure symmetric-key encryption for protecting data at rest and in transit across modern systems.",
+        "intuition": "Encrypt data by repeatedly applying substitution and permutation rounds that mix bytes and columns so ciphertext appears random without the key.",
+        "inputs": "Plaintext block (128 bits), secret key (128/192/256 bits), mode of operation (CBC, GCM, CTR), optional IV/nonce.",
+        "outputs": "Ciphertext block (128 bits) or full encrypted message with authentication tag for AEAD modes.",
+        "steps": [
+            "Expand secret key into round keys via key schedule.",
+            "Initial AddRoundKey: XOR plaintext with first round key.",
+            "For Nr-1 rounds: SubBytes, ShiftRows, MixColumns, AddRoundKey.",
+            "Final round omits MixColumns.",
+            "For modes like CBC/GCM, combine block cipher with chaining/nonce logic.",
+            "Decrypt by applying inverse operations with round keys in reverse."
+        ],
+        "example": "AES-256-GCM encrypting API payload: generate random 96-bit nonce, encrypt plaintext with key, produce ciphertext and 128-bit auth tag stored alongside nonce.",
+        "time_complexity": "O(N · Nr) where N is number of 128-bit blocks and Nr is 10/12/14 rounds depending on key size.",
+        "space_complexity": "O(1) beyond key schedule (≈240 bytes for AES-256).",
+        "strengths": [
+            "NIST-standardized, hardware accelerated (AES-NI).",
+            "Supports authenticated encryption (GCM, CCM)."
+        ],
+        "weaknesses": [
+            "Symmetric key distribution required.",
+            "Implementation must protect against side-channel leaks."
+        ],
+        "alternatives": ["ChaCha20-Poly1305", "Camellia", "Twofish"],
+        "explanation": "Uses repeated substitution-permutation rounds keyed by a shared secret to scramble data into ciphertext resistant to cryptanalysis."
+    },
+    "semester_04/lecture_18_crypto_algorithms/bcrypt/README.md": {
+        "name": "bcrypt Password Hashing",
+        "problem": "Derives computationally expensive password hashes that resist brute-force and rainbow-table attacks for stored credentials.",
+        "intuition": "Combine salt with password and run an intentionally slow, memory-hard key setup (EksBlowfish) so attackers must spend significant effort per guess.",
+        "inputs": "Password string, cost factor (log2 rounds), 128-bit salt.",
+        "outputs": "60-character hash string containing version, cost, salt, and checksum.",
+        "steps": [
+            "Generate random salt for each password.",
+            "Run EksBlowfishSetup with password and salt cost times (2^cost iterations).",
+            "Encrypt fixed text \"OrpheanBeholderScryDoubt\" 64 times with derived state.",
+            "Format output $2b$<cost>$<22-char-salt><31-char-hash>.",
+            "Verification: repeat process with same salt/cost and compare hashes."
+        ],
+        "example": "Cost=12: hashing password \"Sup3rSecret!\" takes ~300 ms; stored hash includes salt so each account uses unique work factor.",
+        "time_complexity": "O(2^cost) per hash; raising cost doubles runtime.",
+        "space_complexity": "O(1) (minimal memory aside from small Blowfish state).",
+        "strengths": [
+            "Salted and adaptive: increase cost as hardware improves.",
+            "Widely implemented in language runtimes."
+        ],
+        "weaknesses": [
+            "Limited to passwords ≤72 bytes.",
+            "Blowfish-based design lacks modern memory hardness (see Argon2)."
+        ],
+        "alternatives": ["Argon2id", "scrypt", "PBKDF2"],
+        "explanation": "Applies an expensive Blowfish key schedule with per-user salt so each password check consumes significant CPU, deterring offline cracking."
+    },
+    "semester_04/lecture_18_crypto_algorithms/rsa/README.md": {
+        "name": "RSA Public-Key Cryptography",
+        "problem": "Enables secure key exchange, encryption, and digital signatures using asymmetric key pairs derived from large primes.",
+        "intuition": "Multiplying large primes is easy but factoring their product is hard; leverage modular exponentiation with public/private exponents for encryption/signing.",
+        "inputs": "Public modulus n=p·q, public exponent e, private exponent d, message m (properly padded).",
+        "outputs": "Ciphertext c = m^e mod n for encryption; signature s = m^d mod n for signing.",
+        "steps": [
+            "Key generation: choose random primes p,q; compute n=p·q and φ(n).",
+            "Select public exponent e (commonly 65537) coprime to φ(n).",
+            "Compute private exponent d ≡ e^{-1} mod φ(n).",
+            "Encryption: apply modular exponentiation with e; decryption uses d.",
+            "Always wrap messages with padding (OAEP for encryption, PSS for signatures).",
+            "Validate signatures by raising s^e mod n and comparing to hashed message."
+        ],
+        "example": "TLS handshake: client verifies server certificate by checking RSA-PSS signature signed with CA's private key.",
+        "time_complexity": "Modular exponentiation O(log e · log^2 n) using square-and-multiply; key generation involves probabilistic primality tests.",
+        "space_complexity": "O(|n|) to store modulus and exponents (2048+ bits).",
+        "strengths": [
+            "Mature ecosystem and interoperability.",
+            "Enables asymmetric trust models (certificates)."
+        ],
+        "weaknesses": [
+            "Slow compared to symmetric crypto; large key sizes.",
+            "Padding/oracle attacks if implemented incorrectly."
+        ],
+        "alternatives": ["Elliptic Curve Cryptography (ECDSA/ECDH)", "Diffie-Hellman", "Ed25519"],
+        "explanation": "Relies on the hardness of factoring a large composite number, using paired exponents for encryption/decryption or signing/verification."
+    },
+    "semester_04/lecture_18_crypto_algorithms/sha256/README.md": {
+        "name": "SHA-256 Hash Function",
+        "problem": "Computes fixed-length digests for arbitrary data, enabling integrity checks, digital signatures, and proof-of-work schemes.",
+        "intuition": "Process data in 512-bit chunks through nonlinear bit-wise operations (Ch, Maj, Σ) so small input changes avalanche into unrelated 256-bit outputs.",
+        "inputs": "Message of arbitrary length, processed as 512-bit blocks after padding.",
+        "outputs": "256-bit (32-byte) hash value.",
+        "steps": [
+            "Pad message with 1-bit, zeros, and 64-bit length to multiple of 512 bits.",
+            "Initialize 8 working variables with SHA-256 constants.",
+            "For each block: extend 16 words to 64 via schedule; iterate 64 rounds mixing message schedule with constants.",
+            "Update hash state by adding working variables modulo 2^32.",
+            "Concatenate final 8 words to produce 256-bit digest."
+        ],
+        "example": "\"hello\" → SHA-256 = 2cf24d...; widely used to verify file downloads and Bitcoin block headers.",
+        "time_complexity": "O(n) where n is number of 512-bit blocks.",
+        "space_complexity": "O(1) (small state of 8×32-bit words plus schedule).",
+        "strengths": [
+            "Collision resistant (no known practical attacks).",
+            "Deterministic with uniform output distribution."
+        ],
+        "weaknesses": [
+            "Not suitable for password storage (too fast).",
+            "Vulnerable to length-extension attacks without proper construction."
+        ],
+        "alternatives": ["SHA-3", "BLAKE3", "SHA-512/256"],
+        "explanation": "Iterative compression function that mixes message words with constants and bitwise operations to produce a 256-bit digest resistant to preimage/collision attacks."
+    },
+    "semester_04/lecture_19_distributed_patterns/consistent_hashing/README.md": {
+        "name": "Consistent Hashing",
+        "problem": "Distributes keys across dynamic clusters so adding/removing nodes only remaps a small fraction of keys, enabling scalable caches and storage rings.",
+        "intuition": "Hash both nodes and keys onto a ring; each key goes to the next clockwise node, so membership changes affect only neighboring intervals.",
+        "inputs": "Set of server nodes, hash function, replication factor, key identifiers.",
+        "outputs": "Deterministic mapping from keys to nodes (and replicas).",
+        "steps": [
+            "Hash each node (optionally multiple virtual nodes) onto 0..2^m ring.",
+            "Hash each key onto same ring.",
+            "Assign key to first node clockwise from key hash.",
+            "Replicate by selecting subsequent clockwise nodes.",
+            "When node joins/leaves, reassign only keys in affected ranges.",
+            "Rebalance by adjusting virtual node count per server."
+        ],
+        "example": "Distributed cache (Amazon Dynamo): each cache server owns ring intervals; adding a node only migrates ~1/n of keys.",
+        "time_complexity": "Lookup O(log n) using balanced tree of node positions; O(1) with jump hash approximations.",
+        "space_complexity": "O(n · v) for n nodes with v virtual replicas stored in ring map.",
+        "strengths": [
+            "Minimal key reshuffling on node churn.",
+            "Supports heterogenous node capacity via virtual nodes."
+        ],
+        "weaknesses": [
+            "Requires uniform hash distribution; hotspots possible.",
+            "Rebalancing metadata adds operational complexity."
+        ],
+        "alternatives": ["Jump Consistent Hash", "Rendezvous Hashing", "Modulo Hashing"],
+        "explanation": "Places nodes and keys on the same hash ring so keys map to nearest clockwise node, limiting the amount of data moved during topology changes."
+    },
+    "semester_04/lecture_19_distributed_patterns/gossip_protocol/README.md": {
+        "name": "Gossip Protocol",
+        "problem": "Disseminates state information in large-scale distributed systems using epidemic-style message spreading for scalability and fault tolerance.",
+        "intuition": "Like rumors spreading: each node periodically contacts random peers to exchange updates, so information eventually reaches everyone without central coordination.",
+        "inputs": "Cluster of nodes, heartbeat/state data, gossip interval, fan-out (number of peers per round).",
+        "outputs": "Eventual consistency of membership or state across nodes.",
+        "steps": [
+            "Each node maintains local state (heartbeats, version vectors).",
+            "On each tick, select k random peers.",
+            "Send local state digests; peers reconcile by merging newer entries.",
+            "Update detection timers to suspect failed nodes lacking fresh heartbeats.",
+            "Propagate membership changes (join/leave/fail) via subsequent gossip rounds.",
+            "Tune fan-out and interval to balance convergence speed and bandwidth."
+        ],
+        "example": "Amazon Dynamo-style membership: every 1s, node gossips to 3 peers; failure detected after missing N heartbeats across multiple peers.",
+        "time_complexity": "Each round O(k) messages per node; convergence typically O(log n) rounds to reach all nodes.",
+        "space_complexity": "O(n) per node to track membership metadata.",
+        "strengths": [
+            "Highly fault-tolerant and decentralized.",
+            "Scales to thousands of nodes with bounded load."
+        ],
+        "weaknesses": [
+            "Only eventually consistent; temporary disagreement possible.",
+            "Bandwidth usage grows with state size."
+        ],
+        "alternatives": ["Centralized Membership Service", "Raft/Consensus-based registries", "Multicast/Broadcast protocols"],
+        "explanation": "Nodes periodically exchange membership/state updates with random peers, allowing information to percolate through the cluster without a coordinator."
+    },
+    "semester_04/lecture_19_distributed_patterns/leader_election/README.md": {
+        "name": "Leader Election",
+        "problem": "Selects a single coordinator among distributed nodes to serialize actions (e.g., lock management, replication control).",
+        "intuition": "Nodes compete based on priorities (IDs, timestamps); the \"highest\" remaining alive becomes leader and others defer until failure triggers a new election.",
+        "inputs": "Cluster membership, node identifiers/priorities, communication channel (message passing).",
+        "outputs": "Identity of the current leader and election status.",
+        "steps": [
+            "Detect need for election (startup or leader failure).",
+            "Each candidate broadcasts election message to higher-priority nodes.",
+            "If no higher node responds, candidate declares leadership.",
+            "Leader announces victory; others acknowledge and follow.",
+            "Monitor leader heartbeats; on timeout, restart election.",
+            "Persist leader metadata to avoid split-brain where possible."
+        ],
+        "example": "Bully algorithm: nodes have unique IDs; highest ID node alive becomes coordinator. ZooKeeper/Etcd use Raft to elect leader for log replication.",
+        "time_complexity": "Bully algorithm worst-case O(n^2) messages; consensus-based elections ~O(n).",
+        "space_complexity": "O(n) to track membership and leader state.",
+        "strengths": [
+            "Ensures single coordinator for critical sections.",
+            "Detects failures and reconfigures automatically."
+        ],
+        "weaknesses": [
+            "Susceptible to split-brain without quorum/consensus safeguards.",
+            "Frequent elections can disrupt system stability."
+        ],
+        "alternatives": ["Raft Consensus", "Paxos", "Randomized Leader Rotation"],
+        "explanation": "Runs a coordination protocol so exactly one node assumes leadership while others remain followers, with re-election triggered on leader failure."
+    },
+    "semester_04/lecture_19_distributed_patterns/two_phase_commit/README.md": {
+        "name": "Two-Phase Commit (2PC)",
+        "problem": "Coordinates distributed transactions across multiple participants to achieve atomic commit or abort.",
+        "intuition": "Use a coordinator that first collects votes (prepare phase) and then instructs all participants to commit or roll back in unison.",
+        "inputs": "Coordinator node, participant nodes, transaction data, persistent logs.",
+        "outputs": "Consistent commit/abort decision replicated to all participants.",
+        "steps": [
+            "Coordinator sends PREPARE to participants asking if they can commit.",
+            "Each participant votes YES (and logs intent) or NO, then waits.",
+            "If all YES, coordinator logs COMMIT and sends COMMIT messages; otherwise sends ABORT.",
+            "Participants apply action (commit/abort), log outcome, and acknowledge.",
+            "Coordinator cleans up after receiving acknowledgements.",
+            "Recovery: participants replay logs to determine final decision on restart."
+        ],
+        "example": "Bank transfer across databases: coordinator ensures both debit and credit either commit or abort together to maintain consistency.",
+        "time_complexity": "Two rounds of messaging O(n) plus logging.",
+        "space_complexity": "O(n) for participants' logs and coordinator state.",
+        "strengths": [
+            "Provides atomicity across heterogeneous systems.",
+            "Simple protocol widely implemented in databases/message brokers."
+        ],
+        "weaknesses": [
+            "Blocking: participants must wait if coordinator crashes.",
+            "Does not tolerate coordinator failure without extra protocols (3PC)."
+        ],
+        "alternatives": ["Three-Phase Commit", "Paxos/Raft Transactions", "Saga Pattern"],
+        "explanation": "Uses a coordinator-driven prepare/commit handshake so either all participants commit or all abort, ensuring distributed atomicity at the cost of blocking."
     }
 }
 
