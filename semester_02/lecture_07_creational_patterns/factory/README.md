@@ -1,40 +1,44 @@
-# Factory
+# Factory Method Pattern
 
 1. **Name of Algorithm**  
-   Factory
+   Factory Method Pattern
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements factory algorithm.
+   Defers instantiation to subclasses, letting them decide which concrete class to create.
 
 3. **Intuition (plain-language explanation)**  
-   Factory is a fundamental algorithm in computer science.
+   A base class provides a hook for creating collaborators; subclasses override to supply specific types.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Superclass defining algorithm that depends on product objects.  
+   - Output: factory_method() returning a Product interface implemented by subclasses.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Define Product interface implemented by concrete products.
+2. Create Creator base class with factory_method() returning Product.
+3. Implement default algorithm in Creator that calls factory_method().
+4. Subclass Creator to override factory_method() and return concrete products.
+5. Clients use Creator interface; subclass decides actual product.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Factory applied to sample data.
+   Application::createDocument() overridden by TextApp and SpreadsheetApp to return respective documents.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: Same as product creation plus virtual call overhead.  
+   - Space: O(n) for subclasses implementing factory method.
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Promotes loose coupling between creators and products.
+- Allows new products by subclassing without touching base logic.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Requires subclass for each product variant.
+- Can lead to parallel class hierarchies.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Abstract Factory, Simple Factory, Builder
 
 11. **30-second explanation (your own words)**  
-    Factory solves computational problems efficiently.
+    Let subclasses decide which product to instantiate by overriding a factory method used by shared creator logic.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

@@ -1,40 +1,44 @@
-# Abstract Factory
+# Abstract Factory Pattern
 
 1. **Name of Algorithm**  
-   Abstract Factory
+   Abstract Factory Pattern
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements abstract factory algorithm.
+   Creates families of related objects without specifying their concrete classes.
 
 3. **Intuition (plain-language explanation)**  
-   Abstract Factory is a fundamental algorithm in computer science.
+   Like selecting a furniture style: the abstract factory hands you matching chair/sofa/table sets without exposing exact classes.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Client needing themed objects (UI widgets per OS, database drivers per vendor).  
+   - Output: Factory interface with methods for each product family plus concrete factories per variant.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Identify product families that must stay consistent together.
+2. Define abstract product interfaces for each family member.
+3. Declare an AbstractFactory specifying creation methods.
+4. Implement concrete factories returning concrete products in the same style.
+5. Clients work only with factory and product interfaces; swap factories to change families.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Abstract Factory applied to sample data.
+   GUI library supplies MacFactory and WindowsFactory producing consistent buttons, checkboxes, menus.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: Object creation remains O(1); pattern adds indirection.  
+   - Space: O(n) for concrete factory/product classes.
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Ensures product consistency across families.
+- Encapsulates object creation behind interfaces.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Adding a new product type requires touching all factories.
+- More abstraction layers to maintain.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Factory Method, Builder Pattern, Prototype
 
 11. **30-second explanation (your own words)**  
-    Abstract Factory solves computational problems efficiently.
+    Provide an interface that creates entire families of related objects so clients can change themes by swapping factories.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

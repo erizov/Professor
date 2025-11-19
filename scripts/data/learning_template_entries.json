@@ -1279,133 +1279,164 @@
     },
     {
       "path": "semester_02/lecture_07_creational_patterns/abstract_factory/README.md",
-      "name": "Abstract Factory",
-      "problem": "Implements abstract factory algorithm.",
-      "intuition": "Abstract Factory is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Abstract Factory Pattern",
+      "problem": "Creates families of related objects without specifying their concrete classes.",
+      "intuition": "Like selecting a furniture style: the abstract factory hands you matching chair/sofa/table sets without exposing exact classes.",
+      "inputs": "Client needing themed objects (UI widgets per OS, database drivers per vendor).",
+      "outputs": "Factory interface with methods for each product family plus concrete factories per variant.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Identify product families that must stay consistent together.",
+        "Define abstract product interfaces for each family member.",
+        "Declare an AbstractFactory specifying creation methods.",
+        "Implement concrete factories returning concrete products in the same style.",
+        "Clients work only with factory and product interfaces; swap factories to change families."
       ],
-      "example": "Example: Abstract Factory applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "GUI library supplies MacFactory and WindowsFactory producing consistent buttons, checkboxes, menus.",
+      "time_complexity": "Object creation remains O(1); pattern adds indirection.",
+      "space_complexity": "O(n) for concrete factory/product classes.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Ensures product consistency across families.",
+        "Encapsulates object creation behind interfaces."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Adding a new product type requires touching all factories.",
+        "More abstraction layers to maintain."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Factory Method",
+        "Builder Pattern",
+        "Prototype"
       ],
-      "explanation": "Abstract Factory solves computational problems efficiently."
+      "explanation": "Provide an interface that creates entire families of related objects so clients can change themes by swapping factories."
     },
     {
       "path": "semester_02/lecture_07_creational_patterns/builder/README.md",
-      "name": "Builder",
-      "problem": "Implements builder algorithm.",
-      "intuition": "Builder is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Builder Pattern",
+      "problem": "Constructs complex objects step-by-step, allowing different representations with the same construction process.",
+      "intuition": "Like ordering a custom burger: the builder tracks each ingredient while the director ensures the steps stay consistent.",
+      "inputs": "Complex object with many optional parts or configurations.",
+      "outputs": "Builder interface declaring construction steps and a Director orchestrating them.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Define Builder with methods for each part (setEngine, addSeats, etc.).",
+        "Implement concrete builders producing different representations (e.g., CarBuilder vs. ManualBuilder).",
+        "Director controls the order of steps for a given recipe.",
+        "Client retrieves finished object from builder.",
+        "Optionally let clients bypass Director for custom builds."
       ],
-      "example": "Example: Builder applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "VehicleBuilder constructs Car objects while ManualBuilder outputs a car manual using the same steps.",
+      "time_complexity": "Linear in number of build steps.",
+      "space_complexity": "Builder stores interim state until product is assembled.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Separates complex construction from representation.",
+        "Supports progressive object creation and validation."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Requires multiple builder classes when variants explode.",
+        "Director adds ceremony for simple objects."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Fluent Interfaces",
+        "Factory Method",
+        "Composite constructors"
       ],
-      "explanation": "Builder solves computational problems efficiently."
+      "explanation": "Encapsulate construction steps in builders so the same process can create different representations of a complex object."
     },
     {
       "path": "semester_02/lecture_07_creational_patterns/factory/README.md",
-      "name": "Factory",
-      "problem": "Implements factory algorithm.",
-      "intuition": "Factory is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Factory Method Pattern",
+      "problem": "Defers instantiation to subclasses, letting them decide which concrete class to create.",
+      "intuition": "A base class provides a hook for creating collaborators; subclasses override to supply specific types.",
+      "inputs": "Superclass defining algorithm that depends on product objects.",
+      "outputs": "factory_method() returning a Product interface implemented by subclasses.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Define Product interface implemented by concrete products.",
+        "Create Creator base class with factory_method() returning Product.",
+        "Implement default algorithm in Creator that calls factory_method().",
+        "Subclass Creator to override factory_method() and return concrete products.",
+        "Clients use Creator interface; subclass decides actual product."
       ],
-      "example": "Example: Factory applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Application::createDocument() overridden by TextApp and SpreadsheetApp to return respective documents.",
+      "time_complexity": "Same as product creation plus virtual call overhead.",
+      "space_complexity": "O(n) for subclasses implementing factory method.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Promotes loose coupling between creators and products.",
+        "Allows new products by subclassing without touching base logic."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Requires subclass for each product variant.",
+        "Can lead to parallel class hierarchies."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Abstract Factory",
+        "Simple Factory",
+        "Builder"
       ],
-      "explanation": "Factory solves computational problems efficiently."
+      "explanation": "Let subclasses decide which product to instantiate by overriding a factory method used by shared creator logic."
     },
     {
       "path": "semester_02/lecture_07_creational_patterns/prototype/README.md",
-      "name": "Prototype",
-      "problem": "Implements prototype algorithm.",
-      "intuition": "Prototype is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Prototype Pattern",
+      "problem": "Creates new objects by cloning existing ones when instantiation cost is high or classes are dynamic.",
+      "intuition": "Make copies from a mold: keep prototypes and clone them instead of constructing from scratch.",
+      "inputs": "Prototype registry storing exemplar objects capable of deep/shallow cloning.",
+      "outputs": "clone() operations returning duplicated objects with optional tweaks.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Implement prototype interface with clone() method.",
+        "Store registered prototypes in a lookup table.",
+        "To create a new object, retrieve prototype and clone it.",
+        "Customize cloned instance (e.g., set new IDs).",
+        "Ensure deep copies for mutable nested objects to avoid shared state."
       ],
-      "example": "Example: Prototype applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Graphics editor clones shapes (circles, arrows) to duplicate user-drawn elements quickly.",
+      "time_complexity": "Depends on clone depth; typically O(size of object graph).",
+      "space_complexity": "O(size) to duplicate object graph per clone.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Avoids complex constructor logic for each new instance.",
+        "Supports runtime addition of new prototype types."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Implementing deep cloning can be tricky.",
+        "Hidden coupling when prototypes share mutable state."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Builder Pattern",
+        "Abstract Factory",
+        "Serialization copy"
       ],
-      "explanation": "Prototype solves computational problems efficiently."
+      "explanation": "Register exemplar objects and copy them to produce new instances whenever direct construction is expensive or dynamic."
     },
     {
       "path": "semester_02/lecture_07_creational_patterns/singleton/README.md",
-      "name": "Singleton",
-      "problem": "Implements singleton algorithm.",
-      "intuition": "Singleton is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Singleton Pattern",
+      "problem": "Ensures a class has only one instance and provides a global access point.",
+      "intuition": "System-wide resource manager (e.g., print spooler) that must exist exactly once.",
+      "inputs": "Class needing single shared state across application.",
+      "outputs": "Private constructor, static get_instance() method, and stored singleton instance.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Make constructor private/protected to prevent external instantiation.",
+        "Expose static method that returns the single instance.",
+        "Instantiate lazily or eagerly inside the static method.",
+        "Ensure thread safety in multi-threaded environments.",
+        "Prevent cloning/serialization from creating additional instances."
       ],
-      "example": "Example: Singleton applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "ConfigurationManager loads config once and offers global access to settings.",
+      "time_complexity": "get_instance() typically O(1); synchronization can add contention.",
+      "space_complexity": "O(1) for stored instance.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Ensures single point of coordination.",
+        "Lazy initialization reduces startup cost."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Global state hampers testability and introduces hidden dependencies.",
+        "Difficult to scale/distribute.",
+        "Thread-safe implementations can be verbose."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Dependency Injection",
+        "Static Classes",
+        "Module-level singletons"
       ],
-      "explanation": "Singleton solves computational problems efficiently."
+      "explanation": "Control instantiation so exactly one object exists and is accessible globally, but use sparingly due to testability concerns."
     },
     {
       "path": "semester_02/lecture_08_structural_patterns/adapter/README.md",

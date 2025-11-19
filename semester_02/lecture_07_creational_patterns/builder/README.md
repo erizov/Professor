@@ -1,40 +1,44 @@
-# Builder
+# Builder Pattern
 
 1. **Name of Algorithm**  
-   Builder
+   Builder Pattern
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements builder algorithm.
+   Constructs complex objects step-by-step, allowing different representations with the same construction process.
 
 3. **Intuition (plain-language explanation)**  
-   Builder is a fundamental algorithm in computer science.
+   Like ordering a custom burger: the builder tracks each ingredient while the director ensures the steps stay consistent.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Complex object with many optional parts or configurations.  
+   - Output: Builder interface declaring construction steps and a Director orchestrating them.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Define Builder with methods for each part (setEngine, addSeats, etc.).
+2. Implement concrete builders producing different representations (e.g., CarBuilder vs. ManualBuilder).
+3. Director controls the order of steps for a given recipe.
+4. Client retrieves finished object from builder.
+5. Optionally let clients bypass Director for custom builds.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Builder applied to sample data.
+   VehicleBuilder constructs Car objects while ManualBuilder outputs a car manual using the same steps.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: Linear in number of build steps.  
+   - Space: Builder stores interim state until product is assembled.
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Separates complex construction from representation.
+- Supports progressive object creation and validation.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Requires multiple builder classes when variants explode.
+- Director adds ceremony for simple objects.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Fluent Interfaces, Factory Method, Composite constructors
 
 11. **30-second explanation (your own words)**  
-    Builder solves computational problems efficiently.
+    Encapsulate construction steps in builders so the same process can create different representations of a complex object.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

@@ -1,40 +1,45 @@
-# Singleton
+# Singleton Pattern
 
 1. **Name of Algorithm**  
-   Singleton
+   Singleton Pattern
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements singleton algorithm.
+   Ensures a class has only one instance and provides a global access point.
 
 3. **Intuition (plain-language explanation)**  
-   Singleton is a fundamental algorithm in computer science.
+   System-wide resource manager (e.g., print spooler) that must exist exactly once.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Class needing single shared state across application.  
+   - Output: Private constructor, static get_instance() method, and stored singleton instance.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Make constructor private/protected to prevent external instantiation.
+2. Expose static method that returns the single instance.
+3. Instantiate lazily or eagerly inside the static method.
+4. Ensure thread safety in multi-threaded environments.
+5. Prevent cloning/serialization from creating additional instances.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Singleton applied to sample data.
+   ConfigurationManager loads config once and offers global access to settings.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: get_instance() typically O(1); synchronization can add contention.  
+   - Space: O(1) for stored instance.
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Ensures single point of coordination.
+- Lazy initialization reduces startup cost.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Global state hampers testability and introduces hidden dependencies.
+- Difficult to scale/distribute.
+- Thread-safe implementations can be verbose.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Dependency Injection, Static Classes, Module-level singletons
 
 11. **30-second explanation (your own words)**  
-    Singleton solves computational problems efficiently.
+    Control instantiation so exactly one object exists and is accessible globally, but use sparingly due to testability concerns.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

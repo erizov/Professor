@@ -960,6 +960,142 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Strategy Pattern", "Hooks/Callbacks", "Pipeline Pattern"],
         "explanation": "Put the invariant algorithm flow in a base class and let subclasses override specific steps via hook methods."
+    },
+    "semester_02/lecture_07_creational_patterns/abstract_factory/README.md": {
+        "name": "Abstract Factory Pattern",
+        "problem": "Creates families of related objects without specifying their concrete classes.",
+        "intuition": "Like selecting a furniture style: the abstract factory hands you matching chair/sofa/table sets without exposing exact classes.",
+        "inputs": "Client needing themed objects (UI widgets per OS, database drivers per vendor).",
+        "outputs": "Factory interface with methods for each product family plus concrete factories per variant.",
+        "steps": [
+            "Identify product families that must stay consistent together.",
+            "Define abstract product interfaces for each family member.",
+            "Declare an AbstractFactory specifying creation methods.",
+            "Implement concrete factories returning concrete products in the same style.",
+            "Clients work only with factory and product interfaces; swap factories to change families."
+        ],
+        "example": "GUI library supplies MacFactory and WindowsFactory producing consistent buttons, checkboxes, menus.",
+        "time_complexity": "Object creation remains O(1); pattern adds indirection.",
+        "space_complexity": "O(n) for concrete factory/product classes.",
+        "strengths": [
+            "Ensures product consistency across families.",
+            "Encapsulates object creation behind interfaces."
+        ],
+        "weaknesses": [
+            "Adding a new product type requires touching all factories.",
+            "More abstraction layers to maintain."
+        ],
+        "alternatives": ["Factory Method", "Builder Pattern", "Prototype"],
+        "explanation": "Provide an interface that creates entire families of related objects so clients can change themes by swapping factories."
+    },
+    "semester_02/lecture_07_creational_patterns/builder/README.md": {
+        "name": "Builder Pattern",
+        "problem": "Constructs complex objects step-by-step, allowing different representations with the same construction process.",
+        "intuition": "Like ordering a custom burger: the builder tracks each ingredient while the director ensures the steps stay consistent.",
+        "inputs": "Complex object with many optional parts or configurations.",
+        "outputs": "Builder interface declaring construction steps and a Director orchestrating them.",
+        "steps": [
+            "Define Builder with methods for each part (setEngine, addSeats, etc.).",
+            "Implement concrete builders producing different representations (e.g., CarBuilder vs. ManualBuilder).",
+            "Director controls the order of steps for a given recipe.",
+            "Client retrieves finished object from builder.",
+            "Optionally let clients bypass Director for custom builds."
+        ],
+        "example": "VehicleBuilder constructs Car objects while ManualBuilder outputs a car manual using the same steps.",
+        "time_complexity": "Linear in number of build steps.",
+        "space_complexity": "Builder stores interim state until product is assembled.",
+        "strengths": [
+            "Separates complex construction from representation.",
+            "Supports progressive object creation and validation."
+        ],
+        "weaknesses": [
+            "Requires multiple builder classes when variants explode.",
+            "Director adds ceremony for simple objects."
+        ],
+        "alternatives": ["Fluent Interfaces", "Factory Method", "Composite constructors"],
+        "explanation": "Encapsulate construction steps in builders so the same process can create different representations of a complex object."
+    },
+    "semester_02/lecture_07_creational_patterns/factory/README.md": {
+        "name": "Factory Method Pattern",
+        "problem": "Defers instantiation to subclasses, letting them decide which concrete class to create.",
+        "intuition": "A base class provides a hook for creating collaborators; subclasses override to supply specific types.",
+        "inputs": "Superclass defining algorithm that depends on product objects.",
+        "outputs": "factory_method() returning a Product interface implemented by subclasses.",
+        "steps": [
+            "Define Product interface implemented by concrete products.",
+            "Create Creator base class with factory_method() returning Product.",
+            "Implement default algorithm in Creator that calls factory_method().",
+            "Subclass Creator to override factory_method() and return concrete products.",
+            "Clients use Creator interface; subclass decides actual product."
+        ],
+        "example": "Application::createDocument() overridden by TextApp and SpreadsheetApp to return respective documents.",
+        "time_complexity": "Same as product creation plus virtual call overhead.",
+        "space_complexity": "O(n) for subclasses implementing factory method.",
+        "strengths": [
+            "Promotes loose coupling between creators and products.",
+            "Allows new products by subclassing without touching base logic."
+        ],
+        "weaknesses": [
+            "Requires subclass for each product variant.",
+            "Can lead to parallel class hierarchies."
+        ],
+        "alternatives": ["Abstract Factory", "Simple Factory", "Builder"],
+        "explanation": "Let subclasses decide which product to instantiate by overriding a factory method used by shared creator logic."
+    },
+    "semester_02/lecture_07_creational_patterns/prototype/README.md": {
+        "name": "Prototype Pattern",
+        "problem": "Creates new objects by cloning existing ones when instantiation cost is high or classes are dynamic.",
+        "intuition": "Make copies from a mold: keep prototypes and clone them instead of constructing from scratch.",
+        "inputs": "Prototype registry storing exemplar objects capable of deep/shallow cloning.",
+        "outputs": "clone() operations returning duplicated objects with optional tweaks.",
+        "steps": [
+            "Implement prototype interface with clone() method.",
+            "Store registered prototypes in a lookup table.",
+            "To create a new object, retrieve prototype and clone it.",
+            "Customize cloned instance (e.g., set new IDs).",
+            "Ensure deep copies for mutable nested objects to avoid shared state."
+        ],
+        "example": "Graphics editor clones shapes (circles, arrows) to duplicate user-drawn elements quickly.",
+        "time_complexity": "Depends on clone depth; typically O(size of object graph).",
+        "space_complexity": "O(size) to duplicate object graph per clone.",
+        "strengths": [
+            "Avoids complex constructor logic for each new instance.",
+            "Supports runtime addition of new prototype types."
+        ],
+        "weaknesses": [
+            "Implementing deep cloning can be tricky.",
+            "Hidden coupling when prototypes share mutable state."
+        ],
+        "alternatives": ["Builder Pattern", "Abstract Factory", "Serialization copy"],
+        "explanation": "Register exemplar objects and copy them to produce new instances whenever direct construction is expensive or dynamic."
+    },
+    "semester_02/lecture_07_creational_patterns/singleton/README.md": {
+        "name": "Singleton Pattern",
+        "problem": "Ensures a class has only one instance and provides a global access point.",
+        "intuition": "System-wide resource manager (e.g., print spooler) that must exist exactly once.",
+        "inputs": "Class needing single shared state across application.",
+        "outputs": "Private constructor, static get_instance() method, and stored singleton instance.",
+        "steps": [
+            "Make constructor private/protected to prevent external instantiation.",
+            "Expose static method that returns the single instance.",
+            "Instantiate lazily or eagerly inside the static method.",
+            "Ensure thread safety in multi-threaded environments.",
+            "Prevent cloning/serialization from creating additional instances."
+        ],
+        "example": "ConfigurationManager loads config once and offers global access to settings.",
+        "time_complexity": "get_instance() typically O(1); synchronization can add contention.",
+        "space_complexity": "O(1) for stored instance.",
+        "strengths": [
+            "Ensures single point of coordination.",
+            "Lazy initialization reduces startup cost."
+        ],
+        "weaknesses": [
+            "Global state hampers testability and introduces hidden dependencies.",
+            "Difficult to scale/distribute.",
+            "Thread-safe implementations can be verbose."
+        ],
+        "alternatives": ["Dependency Injection", "Static Classes", "Module-level singletons"],
+        "explanation": "Control instantiation so exactly one object exists and is accessible globally, but use sparingly due to testability concerns."
     }
 }
 
