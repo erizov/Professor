@@ -8017,158 +8017,232 @@
     {
       "path": "semester_07/lecture_45_blockchain_fundamentals/blockchain_structure/README.md",
       "name": "Blockchain Structure",
-      "problem": "Implements blockchain structure algorithm.",
-      "intuition": "Blockchain Structure is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Organizes data into cryptographically linked blocks forming an immutable, distributed ledger, enabling trustless transactions and decentralized record-keeping without central authority.",
+      "intuition": "Like a digital ledger book where each page (block) contains transactions, and each page references the previous page's fingerprint (hash) - if someone tries to change an old page, all subsequent pages become invalid, making tampering obvious. The ledger is copied across many computers, so no single authority controls it.",
+      "inputs": "Transactions, previous block hash, timestamp, nonce (for mining), block data.",
+      "outputs": "New block with transactions, block hash, link to previous block, updated blockchain.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Collect transactions: gather pending transactions into a block candidate.",
+        "Create block header: include previous block hash, Merkle root of transactions, timestamp, nonce.",
+        "Calculate hash: compute cryptographic hash of block header (SHA-256).",
+        "Mine block: find nonce that produces hash meeting difficulty target (proof of work).",
+        "Validate: verify all transactions in block are valid (signatures, balances, etc.).",
+        "Append block: add validated block to blockchain (link via previous hash).",
+        "Broadcast: distribute new block to all network participants.",
+        "Consensus: network agrees on longest valid chain (consensus mechanism)."
       ],
-      "example": "Example: Blockchain Structure applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Block 1: transactions [A→B: 10, C→D: 5] → hash: abc123 → Block 2: prev_hash=abc123, transactions [B→E: 3] → hash: def456 → Block 3: prev_hash=def456, transactions [E→F: 2] → chain: Block1→Block2→Block3 (immutable, tamper-evident).",
+      "time_complexity": "O(1) to add block once mined, O(2^d) for mining where d is difficulty (exponential in difficulty).",
+      "space_complexity": "O(n) where n is number of blocks (linear growth, each block stores transactions and metadata).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Immutability: once added, blocks cannot be altered without invalidating chain.",
+        "Decentralization: no single point of failure or control.",
+        "Transparency: all transactions visible to network participants."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Scalability: limited transaction throughput (e.g., Bitcoin ~7 TPS).",
+        "Energy consumption: proof of work requires significant computational resources.",
+        "Storage: full blockchain requires storing all historical transactions."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Centralized Databases",
+        "Distributed Ledgers",
+        "Directed Acyclic Graphs (DAG)",
+        "Hashgraph"
       ],
-      "explanation": "Blockchain Structure solves computational problems efficiently."
+      "explanation": "Organizes data into cryptographically linked blocks forming an immutable, distributed ledger, enabling trustless transactions and decentralized record-keeping without central authority."
     },
     {
       "path": "semester_07/lecture_45_blockchain_fundamentals/consensus_mechanisms/README.md",
       "name": "Consensus Mechanisms",
-      "problem": "Implements consensus mechanisms algorithm.",
-      "intuition": "Consensus Mechanisms is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Enables distributed network participants to agree on blockchain state and validate transactions without central authority, ensuring network security and preventing double-spending.",
+      "intuition": "Like a group vote: instead of one person deciding (centralized), everyone in the network votes on which transactions are valid - consensus mechanisms are the 'voting rules' that ensure everyone agrees on the same version of truth, even if some participants are dishonest or faulty.",
+      "inputs": "Proposed transactions, network participants (nodes), consensus algorithm parameters.",
+      "outputs": "Agreed-upon blockchain state, validated transactions, network consensus.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Propose: nodes propose new transactions or blocks to network.",
+        "Validate: nodes validate proposed transactions (check signatures, balances, rules).",
+        "Vote/Compete: nodes participate in consensus process (mining, staking, voting, etc.).",
+        "Select: consensus mechanism selects which block/transactions to accept.",
+        "Append: selected block appended to blockchain by all honest nodes.",
+        "Verify: nodes verify consensus was reached correctly.",
+        "Finalize: block becomes part of canonical chain (finality).",
+        "Reconcile: handle forks or conflicts if consensus breaks down."
       ],
-      "example": "Example: Consensus Mechanisms applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Proof of Work: miners compete to solve puzzle → first to solve broadcasts block → other nodes verify → if valid, all nodes accept block → consensus reached. Proof of Stake: validators stake coins → selected validator proposes block → other validators vote → if majority agree, block accepted → consensus reached.",
+      "time_complexity": "Varies by mechanism: O(1) for some (instant finality), O(mining_time) for PoW (minutes), O(voting_rounds) for BFT (seconds).",
+      "space_complexity": "O(n) where n is number of participants (each maintains blockchain copy).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Decentralization: enables trustless agreement without central authority.",
+        "Security: resistant to attacks if majority of participants are honest.",
+        "Fault tolerance: can tolerate some participants being malicious or offline."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Performance: consensus adds latency and reduces throughput.",
+        "Energy: some mechanisms (PoW) consume significant energy.",
+        "Complexity: more complex than centralized systems."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Proof of Work",
+        "Proof of Stake",
+        "Delegated Proof of Stake",
+        "Byzantine Fault Tolerance",
+        "Practical Byzantine Fault Tolerance"
       ],
-      "explanation": "Consensus Mechanisms solves computational problems efficiently."
+      "explanation": "Enables distributed network participants to agree on blockchain state and validate transactions without central authority, ensuring network security and preventing double-spending."
     },
     {
       "path": "semester_07/lecture_45_blockchain_fundamentals/merkle_trees/README.md",
       "name": "Merkle Trees",
-      "problem": "Implements merkle trees algorithm.",
-      "intuition": "Merkle Trees is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Efficiently verifies data integrity and enables efficient proofs that specific transactions are included in a block without downloading entire block, reducing storage and bandwidth requirements.",
+      "intuition": "Like a family tree for data: transactions are leaves, pairs are hashed together to form parents, parents are hashed to form grandparents, until you get one root hash - to prove a transaction exists, you only need the root and a few 'sibling' hashes along the path (Merkle proof), not all transactions.",
+      "inputs": "List of transactions or data items, hash function (typically SHA-256).",
+      "outputs": "Merkle root hash, Merkle tree structure, Merkle proofs for individual items.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Hash leaves: compute hash of each transaction/data item (leaf nodes).",
+        "Pair and hash: pair adjacent leaf hashes and hash them together (parent nodes).",
+        "Repeat: continue pairing and hashing until single root hash remains.",
+        "Store root: store Merkle root in block header (represents all transactions).",
+        "Generate proof: to prove transaction included, provide path from leaf to root (sibling hashes).",
+        "Verify proof: recipient verifies proof by recomputing hashes up to root.",
+        "Compare: verify computed root matches block header root."
       ],
-      "example": "Example: Merkle Trees applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "4 transactions: T1, T2, T3, T4 → hash: H1, H2, H3, H4 → pair: H(H1||H2), H(H3||H4) → pair again: H(H(H1||H2)||H(H3||H4)) = Merkle root → to prove T1 included: provide H2, H(H3||H4), verify: H(H(H1||H2)||H(H3||H4)) = root.",
+      "time_complexity": "O(n) to build tree, O(log n) to generate/verify proof where n is number of transactions.",
+      "space_complexity": "O(n) to store tree, O(log n) for Merkle proof (only path needed, not full tree).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Efficient verification: O(log n) proof size vs O(n) for full block.",
+        "Data integrity: any change in transaction changes root hash.",
+        "Scalability: enables light clients (SPV) without full blockchain download."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Tree structure: requires organizing data into tree (overhead for small datasets).",
+        "Hash collisions: theoretically possible but practically infeasible with good hash functions.",
+        "Rebuilding: modifying tree requires recomputing affected branches."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Full Block Verification",
+        "Hash Lists",
+        "Merkle Patricia Trees",
+        "Verkle Trees"
       ],
-      "explanation": "Merkle Trees solves computational problems efficiently."
+      "explanation": "Efficiently verifies data integrity and enables efficient proofs that specific transactions are included in a block without downloading entire block, reducing storage and bandwidth requirements."
     },
     {
       "path": "semester_07/lecture_45_blockchain_fundamentals/proof_of_stake/README.md",
-      "name": "Proof Of Stake",
-      "problem": "Implements proof of stake algorithm.",
-      "intuition": "Proof Of Stake is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Proof of Stake (PoS)",
+      "problem": "Selects validators to create blocks based on amount of cryptocurrency staked, reducing energy consumption while maintaining network security through economic incentives.",
+      "intuition": "Like a weighted lottery: instead of solving puzzles (expensive), validators 'stake' their coins as collateral - the more coins you stake, the higher your chance of being selected to validate blocks. If you validate incorrectly, you lose your stake (economic penalty), so validators are incentivized to be honest.",
+      "inputs": "Staked cryptocurrency, validator selection algorithm, block candidate, validator's stake amount.",
+      "outputs": "Validated block, validator rewards, updated stake balances.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Stake coins: validators lock cryptocurrency as stake (collateral).",
+        "Select validator: algorithm selects validator based on stake amount and randomness.",
+        "Propose block: selected validator creates and proposes new block.",
+        "Validate: other validators verify proposed block is valid.",
+        "Approve: validators vote to approve or reject block.",
+        "Finalize: if majority approve, block added to chain, validator earns reward.",
+        "Slash (if malicious): if validator acts maliciously, stake is slashed (penalty).",
+        "Update stake: adjust validator stakes based on rewards/penalties."
       ],
-      "example": "Example: Proof Of Stake applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Validator stakes 1000 ETH → selected to validate block (probability proportional to stake) → proposes block → other validators verify → 2/3 approve → block finalized → validator earns 0.1 ETH reward → stake increases to 1000.1 ETH. If malicious: stake slashed, lose 100 ETH.",
+      "time_complexity": "O(1) to select validator (deterministic/random selection), O(1) to validate block.",
+      "space_complexity": "O(v) where v is number of validators (track stake amounts).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Energy efficient: requires minimal computational resources (no mining).",
+        "Fast: enables faster block times and higher throughput.",
+        "Economic security: validators have financial stake in network security."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Wealth concentration: those with more stake have more influence.",
+        "Nothing at stake: validators might validate on multiple chains (addressed by slashing).",
+        "Complexity: more complex validator selection and slashing mechanisms."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Proof of Work",
+        "Delegated Proof of Stake",
+        "Proof of Authority",
+        "Hybrid PoW/PoS"
       ],
-      "explanation": "Proof Of Stake solves computational problems efficiently."
+      "explanation": "Selects validators to create blocks based on amount of cryptocurrency staked, reducing energy consumption while maintaining network security through economic incentives."
     },
     {
       "path": "semester_07/lecture_45_blockchain_fundamentals/proof_of_work/README.md",
-      "name": "Proof Of Work",
-      "problem": "Implements proof of work algorithm.",
-      "intuition": "Proof Of Work is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Proof of Work (PoW)",
+      "problem": "Requires miners to solve computationally expensive cryptographic puzzles to validate blocks, securing blockchain network by making attacks economically infeasible.",
+      "intuition": "Like a lottery where you buy tickets by doing hard math: miners compete to solve a difficult puzzle (finding a number that makes block hash start with many zeros) - the first to solve gets to add the block and earn rewards. The difficulty ensures blocks are added at steady rate, and attacking requires enormous computational power (expensive).",
+      "inputs": "Block candidate with transactions, previous block hash, difficulty target, nonce (variable to adjust).",
+      "outputs": "Valid block with nonce meeting difficulty, block hash, mining reward.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Prepare block: create block with transactions, previous hash, timestamp.",
+        "Set difficulty: network adjusts target hash (number of leading zeros required).",
+        "Try nonce: start with nonce = 0, increment and recompute block hash.",
+        "Check hash: verify if hash meets difficulty target (hash < target).",
+        "Repeat: if hash doesn't meet target, increment nonce and try again.",
+        "Find solution: when hash meets target, nonce is valid proof of work.",
+        "Broadcast: miner broadcasts block with valid nonce to network.",
+        "Verify: other nodes verify hash meets difficulty (quick verification).",
+        "Accept: if valid, network accepts block, miner receives reward."
       ],
-      "example": "Example: Proof Of Work applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Block with transactions → hash with nonce=0: 7a3f9... (doesn't meet target) → nonce=1: 9b2e1... → ... → nonce=1234567: 0000a3f9... (meets target, 4 leading zeros) → broadcast block → network verifies → block accepted → miner earns Bitcoin reward.",
+      "time_complexity": "O(2^d) expected attempts where d is difficulty (exponential in difficulty), O(1) to verify.",
+      "space_complexity": "O(1) per mining attempt (constant space for hash computation).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Security: requires enormous computational power to attack (51% attack expensive).",
+        "Proven: Bitcoin's security model proven over 15+ years.",
+        "Decentralization: anyone with hardware can participate in mining."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Energy consumption: extremely energy-intensive (Bitcoin uses more energy than some countries).",
+        "Slow: block time typically 10+ minutes (Bitcoin), limiting throughput.",
+        "Hardware arms race: favors those with specialized mining hardware (ASICs)."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Proof of Stake",
+        "Proof of Authority",
+        "Delegated Proof of Stake",
+        "Proof of Space"
       ],
-      "explanation": "Proof Of Work solves computational problems efficiently."
+      "explanation": "Requires miners to solve computationally expensive cryptographic puzzles to validate blocks, securing blockchain network by making attacks economically infeasible."
     },
     {
       "path": "semester_07/lecture_45_blockchain_fundamentals/smart_contracts/README.md",
       "name": "Smart Contracts",
-      "problem": "Implements smart contracts algorithm.",
-      "intuition": "Smart Contracts is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Executes programmable code automatically on blockchain when conditions are met, enabling trustless automation of agreements and decentralized applications without intermediaries.",
+      "intuition": "Like a vending machine: you put in money (send transaction) and select a product (call function) - the machine automatically gives you the product (executes code) without needing a cashier. Smart contracts are like vending machines on blockchain: code that automatically executes when conditions are met, with no one able to stop or change it once deployed.",
+      "inputs": "Contract code, function calls, transaction data, blockchain state, gas (execution fee).",
+      "outputs": "Contract execution results, state changes, events, transaction receipts.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Deploy contract: developer writes and deploys smart contract code to blockchain.",
+        "Store code: contract bytecode stored on blockchain (immutable once deployed).",
+        "Call function: user sends transaction calling contract function with parameters.",
+        "Validate: network validates transaction (signature, gas, permissions).",
+        "Execute: blockchain node executes contract code in virtual machine (EVM, etc.).",
+        "Update state: contract execution modifies blockchain state (balances, variables, etc.).",
+        "Emit events: contract can emit events for off-chain monitoring.",
+        "Return result: execution result returned, transaction recorded on blockchain.",
+        "Pay gas: user pays gas fees for computation (prevents infinite loops)."
       ],
-      "example": "Example: Smart Contracts applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Deploy 'Token' contract → user calls transfer(recipient, amount) → contract checks sender balance → if sufficient, deducts from sender, adds to recipient → emits Transfer event → transaction recorded → balance updated on blockchain → no intermediary needed.",
+      "time_complexity": "O(1) per operation typically, but depends on contract complexity (gas limits prevent infinite loops).",
+      "space_complexity": "O(1) per contract variable, O(n) for arrays/mappings where n is data size.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Trustless: code executes automatically without trusted third party.",
+        "Transparent: contract code and execution visible to all.",
+        "Immutable: once deployed, contract cannot be changed (unless designed to be upgradeable)."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Irreversible: bugs cannot be fixed easily (code is immutable).",
+        "Gas costs: execution requires payment (can be expensive for complex operations).",
+        "Limited expressiveness: constrained by blockchain's computational model."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Traditional Contracts",
+        "Centralized Automation",
+        "Off-chain Oracles",
+        "Layer 2 Solutions"
       ],
-      "explanation": "Smart Contracts solves computational problems efficiently."
+      "explanation": "Executes programmable code automatically on blockchain when conditions are met, enabling trustless automation of agreements and decentralized applications without intermediaries."
     },
     {
       "path": "semester_07/lecture_46_blockchain_advanced/blockchain_scalability/README.md",
