@@ -501,6 +501,141 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Fractional Knapsack", "Branch and Bound", "Meet-in-the-middle"],
         "explanation": "Dynamic programming weighs the value of including each item versus skipping it, constrained by the remaining capacity."
+    },
+    "semester_02/lecture_06_solid_principles/single_responsibility/README.md": {
+        "name": "Single Responsibility Principle",
+        "problem": "Ensures each class or module has exactly one reason to change.",
+        "intuition": "Treat classes like specialists: one job, done well, so changes in one concern don’t ripple through unrelated code.",
+        "inputs": "Object-oriented modules with multiple responsibilities entangled.",
+        "outputs": "Refactored components where each focuses on a single responsibility.",
+        "steps": [
+            "Identify all reasons why the class might change (UI tweaks, business rules, persistence, etc.).",
+            "Group behaviors by responsibility and highlight unrelated clusters.",
+            "Extract new classes/functions for secondary responsibilities.",
+            "Inject dependencies so each class collaborates instead of owning all logic.",
+            "Add tests per responsibility to prove isolation."
+        ],
+        "example": "A Report class both formats PDFs and queries the database → split into ReportGenerator + ReportRepository.",
+        "time_complexity": "Refactoring effort proportional to responsibilities discovered.",
+        "space_complexity": "Extra classes/files for separated responsibilities.",
+        "strengths": [
+            "Improves cohesion and readability.",
+            "Reduces blast radius when business rules evolve."
+        ],
+        "weaknesses": [
+            "May introduce more classes/interfaces to navigate.",
+            "Requires discipline to maintain separation over time."
+        ],
+        "alternatives": ["Modularization", "Functional Decomposition", "Componentization"],
+        "explanation": "Keep each module focused on one reason to change so maintenance stays local and predictable."
+    },
+    "semester_02/lecture_06_solid_principles/open_closed/README.md": {
+        "name": "Open/Closed Principle",
+        "problem": "Code should be open for extension but closed for modification.",
+        "intuition": "Once stable, classes become plug-in sockets: add new behavior via extension points instead of editing core logic.",
+        "inputs": "Existing class that needs new behavior variations.",
+        "outputs": "Abstractions that allow new features through inheritance, composition, or configuration.",
+        "steps": [
+            "Identify areas where features keep forcing edits to the same class.",
+            "Extract abstractions (interfaces, base classes, strategy objects).",
+            "Move variable behavior behind the abstraction boundary.",
+            "Register new implementations without touching existing code.",
+            "Cover extension points with tests to guard regressions."
+        ],
+        "example": "ShippingCalculator switches via if/else per region → introduce ShippingStrategy interface and register new strategies.",
+        "time_complexity": "Depends on the breadth of extension points.",
+        "space_complexity": "Additional classes or configuration objects to host extensions.",
+        "strengths": [
+            "Limits regression risk when adding features.",
+            "Encourages plugin-style architectures."
+        ],
+        "weaknesses": [
+            "Requires upfront abstraction design.",
+            "Over-abstraction can make code harder to follow."
+        ],
+        "alternatives": ["Strategy Pattern", "Dependency Injection", "Feature Toggles"],
+        "explanation": "Design modules so you add new behavior by plugging in new classes, not by editing the old ones."
+    },
+    "semester_02/lecture_06_solid_principles/liskov_substitution/README.md": {
+        "name": "Liskov Substitution Principle",
+        "problem": "Derived classes must behave like their base class so clients can substitute them without surprises.",
+        "intuition": "If a square is a rectangle, any rectangle-using code should still work when given a square; inheritance should not break contracts.",
+        "inputs": "Class hierarchies where overrides narrow behavior or violate expectations.",
+        "outputs": "Subclasses that preserve base invariants, preconditions, and postconditions.",
+        "steps": [
+            "Document the base class contract (inputs, outputs, side effects).",
+            "Ensure subclasses do not strengthen preconditions or weaken postconditions.",
+            "Avoid throwing new exceptions or changing returned types unexpectedly.",
+            "Prefer composition when behavior diverges significantly.",
+            "Add substitution tests to validate behavior parity."
+        ],
+        "example": "Bird base class fly() → Penguin subclass overrides to throw; violates LSP, so extract FlightlessBird behavior instead.",
+        "time_complexity": "Focused on design correctness rather than runtime.",
+        "space_complexity": "May require extra wrapper classes for composition.",
+        "strengths": [
+            "Keeps polymorphism reliable for clients.",
+            "Prevents brittle inheritance hierarchies."
+        ],
+        "weaknesses": [
+            "Hard to enforce without strong contracts/tests.",
+            "Legacy hierarchies may need large refactors."
+        ],
+        "alternatives": ["Composition over Inheritance", "Design by Contract", "Interface Segregation"],
+        "explanation": "Subclasses should honor the promises of their parents so client code can substitute them freely."
+    },
+    "semester_02/lecture_06_solid_principles/interface_segregation/README.md": {
+        "name": "Interface Segregation Principle",
+        "problem": "Clients should not be forced to depend on methods they do not use.",
+        "intuition": "Give each client a tailored remote control; bloated interfaces force consumers to worry about buttons they never press.",
+        "inputs": "Large interfaces implemented by many classes with empty or throwing methods.",
+        "outputs": "Smaller, client-specific interfaces implemented by relevant classes.",
+        "steps": [
+            "List interface methods and map them to actual client usage.",
+            "Identify clusters of methods used together by specific clients.",
+            "Split the interface into cohesive sub-interfaces.",
+            "Update classes to implement only the interfaces they need.",
+            "Refactor clients to depend on the refined contracts."
+        ],
+        "example": "IMultiFunctionDevice exposes print/scan/fax; a scanner-only device should not implement fax, so split into IPrinter, IScanner, IFax.",
+        "time_complexity": "Refactor effort grows with number of clients.",
+        "space_complexity": "More interface definitions to maintain.",
+        "strengths": [
+            "Reduces stub methods and unused dependencies.",
+            "Improves readability and compile-time safety."
+        ],
+        "weaknesses": [
+            "Too many interfaces can overwhelm newcomers.",
+            "Requires coordination when clients share overlapping needs."
+        ],
+        "alternatives": ["Adapter Pattern", "Role Interfaces", "Service Facades"],
+        "explanation": "Favor many small interfaces over one large one so consumers only depend on what they actually use."
+    },
+    "semester_02/lecture_06_solid_principles/dependency_inversion/README.md": {
+        "name": "Dependency Inversion Principle",
+        "problem": "High-level modules should not depend on low-level details; both should rely on abstractions.",
+        "intuition": "Make policies depend on interfaces, not concrete wiring—like plugging different chargers into the same standard outlet.",
+        "inputs": "Tightly coupled modules where business logic instantiates infrastructure details.",
+        "outputs": "Abstractions (interfaces, ports) with concrete implementations supplied via inversion of control.",
+        "steps": [
+            "Identify high-level policies that currently create or depend on concrete classes.",
+            "Define abstractions capturing the required behavior.",
+            "Make high-level code depend on the abstractions instead of concretes.",
+            "Provide implementations via constructors, factories, or DI containers.",
+            "Write integration tests that swap implementations to ensure decoupling."
+        ],
+        "example": "OrderService new EmailNotifier() → instead depend on Notifier interface and inject EmailNotifier or SmsNotifier.",
+        "time_complexity": "Adds indirection proportional to number of dependencies.",
+        "space_complexity": "Requires extra interfaces and binding configuration.",
+        "strengths": [
+            "Improves testability via mocks/stubs.",
+            "Encourages reusable high-level policies."
+        ],
+        "weaknesses": [
+            "More abstractions can complicate debugging.",
+            "Needs tooling (DI containers) to stay manageable at scale."
+        ],
+        "alternatives": ["Service Locator", "Inversion of Control Containers", "Plugin Architecture"],
+        "explanation": "Depend on abstractions so high-level logic stays stable while low-level details swap freely."
     }
 }
 

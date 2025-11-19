@@ -1,40 +1,44 @@
-# Interface Segregation
+# Interface Segregation Principle
 
 1. **Name of Algorithm**  
-   Interface Segregation
+   Interface Segregation Principle
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements interface segregation algorithm.
+   Clients should not be forced to depend on methods they do not use.
 
 3. **Intuition (plain-language explanation)**  
-   Interface Segregation is a fundamental algorithm in computer science.
+   Give each client a tailored remote control; bloated interfaces force consumers to worry about buttons they never press.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Large interfaces implemented by many classes with empty or throwing methods.  
+   - Output: Smaller, client-specific interfaces implemented by relevant classes.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. List interface methods and map them to actual client usage.
+2. Identify clusters of methods used together by specific clients.
+3. Split the interface into cohesive sub-interfaces.
+4. Update classes to implement only the interfaces they need.
+5. Refactor clients to depend on the refined contracts.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Interface Segregation applied to sample data.
+   IMultiFunctionDevice exposes print/scan/fax; a scanner-only device should not implement fax, so split into IPrinter, IScanner, IFax.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: Refactor effort grows with number of clients.  
+   - Space: More interface definitions to maintain.
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Reduces stub methods and unused dependencies.
+- Improves readability and compile-time safety.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Too many interfaces can overwhelm newcomers.
+- Requires coordination when clients share overlapping needs.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Adapter Pattern, Role Interfaces, Service Facades
 
 11. **30-second explanation (your own words)**  
-    Interface Segregation solves computational problems efficiently.
+    Favor many small interfaces over one large one so consumers only depend on what they actually use.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

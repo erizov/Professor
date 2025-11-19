@@ -1,40 +1,44 @@
-# Dependency Inversion
+# Dependency Inversion Principle
 
 1. **Name of Algorithm**  
-   Dependency Inversion
+   Dependency Inversion Principle
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements dependency inversion algorithm.
+   High-level modules should not depend on low-level details; both should rely on abstractions.
 
 3. **Intuition (plain-language explanation)**  
-   Dependency Inversion is a fundamental algorithm in computer science.
+   Make policies depend on interfaces, not concrete wiring—like plugging different chargers into the same standard outlet.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Tightly coupled modules where business logic instantiates infrastructure details.  
+   - Output: Abstractions (interfaces, ports) with concrete implementations supplied via inversion of control.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Identify high-level policies that currently create or depend on concrete classes.
+2. Define abstractions capturing the required behavior.
+3. Make high-level code depend on the abstractions instead of concretes.
+4. Provide implementations via constructors, factories, or DI containers.
+5. Write integration tests that swap implementations to ensure decoupling.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Dependency Inversion applied to sample data.
+   OrderService new EmailNotifier() → instead depend on Notifier interface and inject EmailNotifier or SmsNotifier.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: Adds indirection proportional to number of dependencies.  
+   - Space: Requires extra interfaces and binding configuration.
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Improves testability via mocks/stubs.
+- Encourages reusable high-level policies.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- More abstractions can complicate debugging.
+- Needs tooling (DI containers) to stay manageable at scale.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Service Locator, Inversion of Control Containers, Plugin Architecture
 
 11. **30-second explanation (your own words)**  
-    Dependency Inversion solves computational problems efficiently.
+    Depend on abstractions so high-level logic stays stable while low-level details swap freely.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
