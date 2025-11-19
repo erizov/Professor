@@ -2577,6 +2577,114 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Session-based Authentication", "OAuth 2.0 Access Tokens", "SAML Assertions"],
         "explanation": "Encodes authentication/authorization claims as a signed JSON token, enabling stateless, scalable authentication without server-side session storage."
+    },
+    "semester_03/lecture_16_advanced_ml/gradient_descent/README.md": {
+        "name": "Gradient Descent",
+        "problem": "Optimizes differentiable objective functions by iteratively moving parameters in the direction of steepest descent to find a local minimum.",
+        "intuition": "Imagine descending a foggy hill with only local slope information: step downhill proportional to the slope and step size (learning rate).",
+        "inputs": "Objective function J(θ), gradient ∇J(θ), initial parameters θ₀, learning rate α, stopping criteria (iterations or tolerance).",
+        "outputs": "Optimized parameter vector θ* approximating a (local) minimum of J.",
+        "steps": [
+            "Initialize parameters θ₀ (random or heuristic).",
+            "Repeat until convergence: compute gradient g = ∇J(θ).",
+            "Update parameters θ ← θ − α · g.",
+            "Adapt learning rate or use schedules (optional).",
+            "Stop when gradient norm < ε or iterations reach limit."
+        ],
+        "example": "Linear regression cost J(θ) = (1/2m) Σ (hθ(xᵢ) − yᵢ)². Gradient descent updates θ simultaneously until training error plateaus.",
+        "time_complexity": "O(k · n · d) for k iterations on dataset of n samples with d features (full-batch).",
+        "space_complexity": "O(d) for parameter vector; O(n·d) if full dataset kept in memory.",
+        "strengths": [
+            "Scales to high-dimensional problems with stochastic/mini-batch variants.",
+            "Simple to implement and differentiable-model agnostic."
+        ],
+        "weaknesses": [
+            "Sensitive to learning rate; may diverge or be slow.",
+            "Gets trapped in local minima/saddle points on non-convex surfaces."
+        ],
+        "alternatives": ["Stochastic Gradient Descent", "Momentum/Nesterov", "Adam/Adaptive Optimizers"],
+        "explanation": "Iteratively nudges parameters opposite the gradient so the objective decreases each step, converging toward minima when learning rate and convergence criteria are well tuned."
+    },
+    "semester_03/lecture_16_advanced_ml/neural_network/README.md": {
+        "name": "Feedforward Neural Network",
+        "problem": "Approximates complex non-linear mappings between inputs and outputs using layered compositions of linear transformations and activation functions.",
+        "intuition": "Stack perceptrons: each layer learns increasingly abstract features, enabling the network to model intricate patterns beyond linear decision boundaries.",
+        "inputs": "Training data (features X, labels y), network architecture (layers, neurons), activation functions, loss function, optimizer hyperparameters.",
+        "outputs": "Trained network weights/biases capable of inference on unseen data; predicted outputs for inputs.",
+        "steps": [
+            "Define architecture: input layer, one or more hidden layers, output layer.",
+            "Initialize weights/biases (Xavier/He random).",
+            "Forward pass: compute activations layer by layer.",
+            "Compute loss between predictions and targets.",
+            "Backpropagate gradients via chain rule and update weights with optimizer."
+        ],
+        "example": "MNIST digit classifier: 784→128→64→10 network with ReLU activations and softmax output trained via cross-entropy loss.",
+        "time_complexity": "O(k · Σ layer_multiplications) roughly O(k · n · Σ (d_{l-1}·d_l)) for k epochs over n samples.",
+        "space_complexity": "O(Σ (d_{l-1}·d_l)) for weights plus activations stored during backprop.",
+        "strengths": [
+            "Universal function approximators with sufficient width/depth.",
+            "Can learn hierarchical representations automatically."
+        ],
+        "weaknesses": [
+            "Require large datasets and careful regularization to avoid overfitting.",
+            "Training can be unstable (vanishing/exploding gradients)."
+        ],
+        "alternatives": ["Convolutional Neural Networks", "Recurrent Neural Networks", "Gradient Boosting Machines"],
+        "explanation": "Layered neurons perform affine transformations followed by non-linear activations, and training adjusts weights via backpropagation to minimize loss on labeled data."
+    },
+    "semester_03/lecture_16_advanced_ml/random_forest/README.md": {
+        "name": "Random Forest",
+        "problem": "Ensemble of decision trees that reduces variance and improves predictive accuracy by averaging many decorrelated trees.",
+        "intuition": "Like asking many diverse experts and averaging their answers: each tree sees bootstrap samples and random feature subsets, so their errors cancel out.",
+        "inputs": "Training dataset with features/labels, number of trees (n_estimators), maximum depth, feature subsampling rate.",
+        "outputs": "Ensemble model producing class probabilities (classification) or average predictions (regression).",
+        "steps": [
+            "For each tree: draw bootstrap sample of data.",
+            "Grow decision tree to max depth or stopping criteria.",
+            "At each split, consider random subset of features.",
+            "Aggregate predictions of all trees (majority vote or mean).",
+            "Evaluate out-of-bag error for validation (optional)."
+        ],
+        "example": "Predict loan default: train 300 trees with max depth 10, feature subsample √d; aggregate votes for final decision.",
+        "time_complexity": "O(n_trees · n_samples · log n_samples) typically, depending on depth and feature count.",
+        "space_complexity": "O(n_trees · tree_size) to store all nodes.",
+        "strengths": [
+            "Handles high-dimensional, mixed-type data with minimal preprocessing.",
+            "Robust to overfitting compared to single trees; provides feature importance."
+        ],
+        "weaknesses": [
+            "Large models consume memory and are slower at inference.",
+            "Less interpretable than single trees; biased toward features with many levels."
+        ],
+        "alternatives": ["Gradient Boosted Trees", "Extra Trees", "Bagging with other base learners"],
+        "explanation": "Builds many randomized decision trees on bootstrap samples and aggregates their outputs, reducing variance and improving generalization."
+    },
+    "semester_03/lecture_16_advanced_ml/svm/README.md": {
+        "name": "Advanced Support Vector Machine",
+        "problem": "Finds a maximum-margin hyperplane separating classes (or regression function) using kernel tricks to operate in high-dimensional feature spaces.",
+        "intuition": "Transform data into a space where classes are linearly separable and place the widest possible margin between them while penalizing misclassifications.",
+        "inputs": "Training data (features, labels), kernel choice (linear, RBF, polynomial), regularization parameter C, kernel-specific hyperparameters (γ, degree).",
+        "outputs": "Support vectors, learned weights/bias (or dual coefficients), decision function for classification or regression.",
+        "steps": [
+            "Choose kernel and hyperparameters to map data into feature space.",
+            "Formulate optimization problem maximizing margin with slack penalties.",
+            "Solve quadratic programming problem (dual) to find support vectors.",
+            "Compute decision boundary using support vectors and kernel evaluations.",
+            "Tune hyperparameters via cross-validation; use model for inference."
+        ],
+        "example": "RBF-kernel SVM on non-linear spiral dataset: γ controls kernel width, C balances margin width vs. training errors; resulting boundary wraps around spirals.",
+        "time_complexity": "Training O(n²) to O(n³) for n samples (QP solver); prediction O(n_sv · d_k) where n_sv is number of support vectors.",
+        "space_complexity": "O(n_sv · d) to store support vectors and coefficients.",
+        "strengths": [
+            "Effective in high-dimensional spaces with clear margins.",
+            "Kernel trick enables flexible non-linear boundaries."
+        ],
+        "weaknesses": [
+            "Training scales poorly with large datasets.",
+            "Requires careful kernel and hyperparameter tuning."
+        ],
+        "alternatives": ["Logistic Regression", "Random Forest", "Neural Networks/Deep Learning"],
+        "explanation": "Maximizes the separation margin between classes and uses kernel functions to implicitly project data into feature spaces where linear separation is feasible."
     }
 }
 
