@@ -2332,6 +2332,251 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Arithmetic Coding", "Lempel-Ziv (LZ77/LZ78)", "Run-Length Encoding"],
         "explanation": "Builds a binary tree by repeatedly merging least frequent symbols, ensuring frequent symbols get short codes and minimizing total encoded length."
+    },
+    "semester_03/lecture_11_dynamic_programming/knapsack/README.md": {
+        "name": "0/1 Knapsack",
+        "problem": "Selects items with maximum total value without exceeding knapsack capacity, where each item can be taken at most once (0 or 1).",
+        "intuition": "For each item, decide: take it (if capacity allows) or skip it. Use DP to cache results of subproblems (remaining capacity, remaining items).",
+        "inputs": "Items with weights and values, knapsack capacity W, number of items n.",
+        "outputs": "Maximum value achievable; optionally the set of items selected.",
+        "steps": [
+            "Create DP table dp[i][w] = max value using first i items with capacity w.",
+            "Base case: dp[0][w] = 0 for all w (no items).",
+            "For each item i and capacity w: dp[i][w] = max(dp[i-1][w], value[i] + dp[i-1][w-weight[i]]).",
+            "First term: skip item i; second term: take item i (if weight[i] <= w).",
+            "Answer is dp[n][W]; backtrack to recover selected items."
+        ],
+        "example": "Items: (w=1,v=1), (w=3,v=4), (w=4,v=5), (w=5,v=7). Capacity=7. DP yields max value=9 by taking items 2 and 3.",
+        "time_complexity": "O(n·W) where n is items, W is capacity.",
+        "space_complexity": "O(n·W) for table, or O(W) with space optimization.",
+        "strengths": [
+            "Optimal solution for 0/1 knapsack problem.",
+            "Classic DP problem with many variations."
+        ],
+        "weaknesses": [
+            "Pseudo-polynomial time (depends on W, not just n).",
+            "Not efficient for very large capacities."
+        ],
+        "alternatives": ["Fractional Knapsack (greedy)", "Unbounded Knapsack", "Multiple Knapsack"],
+        "explanation": "Dynamic programming builds optimal solution by considering each item and all possible remaining capacities, choosing whether to include the item."
+    },
+    "semester_03/lecture_13_integration_patterns/cqrs/README.md": {
+        "name": "CQRS (Command Query Responsibility Segregation)",
+        "problem": "Separates read and write operations into different models to optimize performance, scalability, and maintainability of data access.",
+        "intuition": "Split your data model: commands (writes) use one model optimized for updates, queries (reads) use another optimized for fast retrieval.",
+        "inputs": "Commands (write operations) and queries (read operations) on domain entities.",
+        "outputs": "Separate read and write models with independent optimization strategies.",
+        "steps": [
+            "Define command model: optimized for validation, business rules, and writes.",
+            "Define query model: denormalized, optimized for fast reads and reporting.",
+            "Commands update write model and publish events.",
+            "Event handlers update read model asynchronously.",
+            "Queries read from optimized read model."
+        ],
+        "example": "E-commerce: Order command model stores normalized data; query model pre-aggregates order history, customer stats for dashboard.",
+        "time_complexity": "Write: O(1) to O(log n) depending on model; Read: O(1) to O(log n) for optimized queries.",
+        "space_complexity": "O(n) for write model + O(m) for read model (may be larger due to denormalization).",
+        "strengths": [
+            "Independent scaling of read/write workloads.",
+            "Optimized models for each operation type."
+        ],
+        "weaknesses": [
+            "Increased complexity (two models to maintain).",
+            "Eventual consistency between read and write models."
+        ],
+        "alternatives": ["Traditional CRUD", "Event Sourcing", "Read Replicas"],
+        "explanation": "Separates command (write) and query (read) responsibilities into distinct models, allowing independent optimization and scaling."
+    },
+    "semester_03/lecture_13_integration_patterns/event_sourcing/README.md": {
+        "name": "Event Sourcing",
+        "problem": "Stores all changes to application state as a sequence of events, enabling time travel, audit trails, and rebuilding state from events.",
+        "intuition": "Instead of storing current state, store every event that happened: like a bank statement, you can replay events to reconstruct any point in time.",
+        "inputs": "Domain events representing state changes (e.g., OrderCreated, PaymentReceived, ItemShipped).",
+        "outputs": "Event store (append-only log) and reconstructed current state from events.",
+        "steps": [
+            "Capture all state changes as immutable events.",
+            "Append events to event store (append-only log).",
+            "Replay events to rebuild current state (projection).",
+            "Optionally create multiple read models from events.",
+            "Support event versioning and schema evolution."
+        ],
+        "example": "Order system: events [OrderCreated, ItemAdded, PaymentReceived, ItemShipped]. Replay to get current order state or historical view at any time.",
+        "time_complexity": "Write: O(1) append; Read: O(n) to replay n events for state reconstruction.",
+        "space_complexity": "O(n) for n events (grows over time; may need snapshots for performance).",
+        "strengths": [
+            "Complete audit trail and time travel capabilities.",
+            "Natural fit for event-driven architectures."
+        ],
+        "weaknesses": [
+            "Event store grows indefinitely (requires snapshots/archiving).",
+            "Complexity in handling schema changes and event versioning."
+        ],
+        "alternatives": ["Traditional State Storage", "CQRS", "Change Data Capture (CDC)"],
+        "explanation": "Stores state changes as immutable events in an append-only log, enabling state reconstruction, auditing, and temporal queries."
+    },
+    "semester_03/lecture_13_integration_patterns/message_queue/README.md": {
+        "name": "Message Queue",
+        "problem": "Decouples producers and consumers of messages, enabling asynchronous communication, load balancing, and reliable message delivery.",
+        "intuition": "Like a post office: producers drop messages in a queue, consumers pick them up when ready, allowing independent scaling and fault tolerance.",
+        "inputs": "Messages from producers, queue configuration (durability, priority, TTL).",
+        "outputs": "Reliable message delivery to consumers with ordering and persistence guarantees.",
+        "steps": [
+            "Producer sends message to queue (with optional routing key/topic).",
+            "Queue stores message (optionally persisted to disk).",
+            "Consumer subscribes to queue and receives messages.",
+            "Consumer processes message and sends acknowledgment.",
+            "Queue removes acknowledged message; retries on failure."
+        ],
+        "example": "E-commerce: order service publishes OrderCreated to queue; inventory, payment, shipping services consume and process asynchronously.",
+        "time_complexity": "Enqueue: O(1); Dequeue: O(1) to O(log n) depending on priority.",
+        "space_complexity": "O(n) for n messages in queue (bounded by queue size limits).",
+        "strengths": [
+            "Decouples services and enables asynchronous processing.",
+            "Provides reliability through persistence and retries."
+        ],
+        "weaknesses": [
+            "Message ordering may be lost in distributed systems.",
+            "Requires monitoring and dead letter queue handling."
+        ],
+        "alternatives": ["Direct RPC", "Event Streaming (Kafka)", "Pub/Sub"],
+        "explanation": "Buffers messages between producers and consumers, enabling asynchronous, decoupled communication with reliability guarantees."
+    },
+    "semester_03/lecture_13_integration_patterns/publish_subscribe/README.md": {
+        "name": "Publish-Subscribe (Pub/Sub)",
+        "problem": "Enables one-to-many message distribution where publishers send messages to topics, and multiple subscribers receive copies independently.",
+        "intuition": "Like a radio station: broadcaster (publisher) sends to a channel (topic), and all listeners (subscribers) tuned to that channel receive the message.",
+        "inputs": "Messages published to topics, subscriber subscriptions to topics.",
+        "outputs": "Message delivery to all subscribers of a topic.",
+        "steps": [
+            "Publisher sends message to a topic (not specific subscribers).",
+            "Message broker routes message to all subscribers of that topic.",
+            "Each subscriber receives independent copy of message.",
+            "Subscribers process messages asynchronously.",
+            "Broker handles delivery guarantees (at-least-once, exactly-once)."
+        ],
+        "example": "News system: publisher sends 'Breaking News' to 'news' topic; email service, SMS service, and push notification service all receive and process.",
+        "time_complexity": "Publish: O(1) to O(s) where s is number of subscribers; Subscribe: O(1).",
+        "space_complexity": "O(n·s) for n messages and s subscribers (each gets copy).",
+        "strengths": [
+            "Loose coupling between publishers and subscribers.",
+            "Easy to add/remove subscribers without affecting publishers."
+        ],
+        "weaknesses": [
+            "No direct feedback from subscribers to publishers.",
+            "Message delivery guarantees vary by implementation."
+        ],
+        "alternatives": ["Message Queue (point-to-point)", "Event Streaming", "Observer Pattern"],
+        "explanation": "Decouples publishers from subscribers through topics, enabling broadcast-style messaging where multiple subscribers receive the same message."
+    },
+    "semester_04/lecture_14_security_patterns/authentication/README.md": {
+        "name": "Authentication",
+        "problem": "Verifies the identity of users or systems attempting to access resources, ensuring only authorized entities can proceed.",
+        "intuition": "Like showing ID at a checkpoint: prove who you are using credentials (password, token, biometric) before being allowed entry.",
+        "inputs": "User credentials (username/password, tokens, certificates, biometrics).",
+        "outputs": "Authentication result (success/failure) and session token or identity claim.",
+        "steps": [
+            "User provides credentials (e.g., username and password).",
+            "System validates credentials against stored identity store.",
+            "On success: generate session token or JWT, store session (if stateful).",
+            "Return token to client for subsequent requests.",
+            "On failure: return error, optionally implement rate limiting."
+        ],
+        "example": "Login flow: user enters username/password → server hashes password, compares with stored hash → if match, issue JWT token → client uses token for API calls.",
+        "time_complexity": "O(1) for token validation; O(n) for credential lookup in database.",
+        "space_complexity": "O(1) for token storage; O(n) for user credential database.",
+        "strengths": [
+            "Foundation of security: verifies identity before authorization.",
+            "Multiple methods available (password, OAuth, certificates)."
+        ],
+        "weaknesses": [
+            "Password-based auth vulnerable to breaches and phishing.",
+            "Session management complexity (tokens, refresh, revocation)."
+        ],
+        "alternatives": ["OAuth 2.0", "SAML", "Certificate-based Authentication", "Biometric Authentication"],
+        "explanation": "Verifies user identity through credentials, establishing trust before allowing access to protected resources."
+    },
+    "semester_04/lecture_14_security_patterns/authorization/README.md": {
+        "name": "Authorization",
+        "problem": "Determines what actions an authenticated user or system is permitted to perform on specific resources.",
+        "intuition": "After authentication confirms who you are, authorization checks what you're allowed to do: like a bouncer checking if you have VIP access.",
+        "inputs": "Authenticated user identity, requested action, target resource, access control policies.",
+        "outputs": "Authorization decision (allow/deny) with optional reason.",
+        "steps": [
+            "Extract user identity and requested action from request.",
+            "Retrieve user roles/permissions from identity store.",
+            "Evaluate access control policies (RBAC, ABAC, ACL).",
+            "Check if user has required permission for action on resource.",
+            "Return allow or deny decision."
+        ],
+        "example": "User requests DELETE /api/users/123. System checks: user is admin? → allow. User is owner of user 123? → allow. Otherwise → deny.",
+        "time_complexity": "O(1) to O(r) where r is number of roles/permissions to check.",
+        "space_complexity": "O(u·p) for u users with p permissions each.",
+        "strengths": [
+            "Enforces least privilege principle.",
+            "Flexible models: RBAC, ABAC, ACL support different needs."
+        ],
+        "weaknesses": [
+            "Complex policy management in large systems.",
+            "Performance overhead of permission checks on every request."
+        ],
+        "alternatives": ["Role-Based Access Control (RBAC)", "Attribute-Based Access Control (ABAC)", "Access Control Lists (ACL)"],
+        "explanation": "Evaluates whether an authenticated user has permission to perform a specific action on a resource based on access control policies."
+    },
+    "semester_04/lecture_14_security_patterns/encryption/README.md": {
+        "name": "Encryption",
+        "problem": "Transforms readable data (plaintext) into unreadable form (ciphertext) to protect confidentiality, ensuring only authorized parties can decrypt.",
+        "intuition": "Like a secret code: scramble data using a key so only those with the key can unscramble and read it.",
+        "inputs": "Plaintext data, encryption key, encryption algorithm (symmetric or asymmetric).",
+        "outputs": "Ciphertext (encrypted data) and optionally initialization vector (IV) or nonce.",
+        "steps": [
+            "Select encryption algorithm (AES, RSA, ChaCha20, etc.).",
+            "Generate or use existing encryption key.",
+            "For symmetric: use same key for encryption/decryption.",
+            "For asymmetric: use public key to encrypt, private key to decrypt.",
+            "Apply encryption algorithm to produce ciphertext.",
+            "Store/transmit ciphertext; decrypt with corresponding key when needed."
+        ],
+        "example": "Encrypt 'Hello' with AES-256: plaintext → ciphertext 'a3f9b2c1...' using key. Decrypt with same key → 'Hello'.",
+        "time_complexity": "Symmetric: O(n) for n bytes; Asymmetric: O(n·k) where k is key size.",
+        "space_complexity": "O(n) for ciphertext (similar to plaintext size, plus IV/nonce overhead).",
+        "strengths": [
+            "Protects data confidentiality at rest and in transit.",
+            "Industry-standard algorithms (AES, RSA) are well-tested."
+        ],
+        "weaknesses": [
+            "Key management complexity (generation, storage, rotation).",
+            "Performance overhead, especially for asymmetric encryption."
+        ],
+        "alternatives": ["Symmetric Encryption (AES)", "Asymmetric Encryption (RSA, ECC)", "Hybrid Encryption"],
+        "explanation": "Converts plaintext to ciphertext using cryptographic algorithms and keys, ensuring data remains confidential and can only be read by authorized parties with the decryption key."
+    },
+    "semester_04/lecture_14_security_patterns/jwt/README.md": {
+        "name": "JWT (JSON Web Token)",
+        "problem": "Provides a compact, URL-safe token format for securely transmitting claims between parties, commonly used for stateless authentication and authorization.",
+        "intuition": "Like a tamper-proof ticket: contains user info and permissions, signed so server can verify it wasn't altered, eliminating need to store sessions.",
+        "inputs": "Header (algorithm, type), payload (claims like user ID, roles, expiration), secret key or private key.",
+        "outputs": "JWT token string (header.payload.signature) in base64url encoding.",
+        "steps": [
+            "Create header: algorithm (HS256, RS256) and token type (JWT).",
+            "Create payload: claims (iss, sub, exp, iat, custom claims).",
+            "Base64url encode header and payload separately.",
+            "Create signature: HMAC or RSA signature of encoded header + '.' + encoded payload.",
+            "Combine: header.payload.signature.",
+            "Client stores token, sends in Authorization header; server validates signature and claims."
+        ],
+        "example": "Token: eyJhbGc... (header).eyJzdWI... (payload: {sub: 'user123', exp: 1234567890}).SflKxwRJ... (signature). Server validates signature and checks expiration.",
+        "time_complexity": "Generate: O(1); Validate: O(1) for signature verification.",
+        "space_complexity": "O(1) for token size (typically 100-500 bytes).",
+        "strengths": [
+            "Stateless: no server-side session storage needed.",
+            "Self-contained: includes all necessary claims."
+        ],
+        "weaknesses": [
+            "Cannot revoke tokens before expiration (requires blacklist or short expiry).",
+            "Larger than session IDs (sent with every request)."
+        ],
+        "alternatives": ["Session-based Authentication", "OAuth 2.0 Access Tokens", "SAML Assertions"],
+        "explanation": "Encodes authentication/authorization claims as a signed JSON token, enabling stateless, scalable authentication without server-side session storage."
     }
 }
 

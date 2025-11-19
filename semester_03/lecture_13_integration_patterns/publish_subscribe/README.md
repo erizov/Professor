@@ -1,40 +1,44 @@
-# Publish Subscribe
+# Publish-Subscribe (Pub/Sub)
 
 1. **Name of Algorithm**  
-   Publish Subscribe
+   Publish-Subscribe (Pub/Sub)
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements publish subscribe algorithm.
+   Enables one-to-many message distribution where publishers send messages to topics, and multiple subscribers receive copies independently.
 
 3. **Intuition (plain-language explanation)**  
-   Publish Subscribe is a fundamental algorithm in computer science.
+   Like a radio station: broadcaster (publisher) sends to a channel (topic), and all listeners (subscribers) tuned to that channel receive the message.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Messages published to topics, subscriber subscriptions to topics.  
+   - Output: Message delivery to all subscribers of a topic.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Publisher sends message to a topic (not specific subscribers).
+2. Message broker routes message to all subscribers of that topic.
+3. Each subscriber receives independent copy of message.
+4. Subscribers process messages asynchronously.
+5. Broker handles delivery guarantees (at-least-once, exactly-once).
 
 6. **Tiny example (hand-simulated)**  
-   Example: Publish Subscribe applied to sample data.
+   News system: publisher sends 'Breaking News' to 'news' topic; email service, SMS service, and push notification service all receive and process.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: Publish: O(1) to O(s) where s is number of subscribers; Subscribe: O(1).  
+   - Space: O(n·s) for n messages and s subscribers (each gets copy).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Loose coupling between publishers and subscribers.
+- Easy to add/remove subscribers without affecting publishers.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- No direct feedback from subscribers to publishers.
+- Message delivery guarantees vary by implementation.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Message Queue (point-to-point), Event Streaming, Observer Pattern
 
 11. **30-second explanation (your own words)**  
-    Publish Subscribe solves computational problems efficiently.
+    Decouples publishers from subscribers through topics, enabling broadcast-style messaging where multiple subscribers receive the same message.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

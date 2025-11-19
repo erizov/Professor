@@ -1,40 +1,44 @@
-# Cqrs
+# CQRS (Command Query Responsibility Segregation)
 
 1. **Name of Algorithm**  
-   Cqrs
+   CQRS (Command Query Responsibility Segregation)
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements cqrs algorithm.
+   Separates read and write operations into different models to optimize performance, scalability, and maintainability of data access.
 
 3. **Intuition (plain-language explanation)**  
-   Cqrs is a fundamental algorithm in computer science.
+   Split your data model: commands (writes) use one model optimized for updates, queries (reads) use another optimized for fast retrieval.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Commands (write operations) and queries (read operations) on domain entities.  
+   - Output: Separate read and write models with independent optimization strategies.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Define command model: optimized for validation, business rules, and writes.
+2. Define query model: denormalized, optimized for fast reads and reporting.
+3. Commands update write model and publish events.
+4. Event handlers update read model asynchronously.
+5. Queries read from optimized read model.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Cqrs applied to sample data.
+   E-commerce: Order command model stores normalized data; query model pre-aggregates order history, customer stats for dashboard.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: Write: O(1) to O(log n) depending on model; Read: O(1) to O(log n) for optimized queries.  
+   - Space: O(n) for write model + O(m) for read model (may be larger due to denormalization).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Independent scaling of read/write workloads.
+- Optimized models for each operation type.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Increased complexity (two models to maintain).
+- Eventual consistency between read and write models.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Traditional CRUD, Event Sourcing, Read Replicas
 
 11. **30-second explanation (your own words)**  
-    Cqrs solves computational problems efficiently.
+    Separates command (write) and query (read) responsibilities into distinct models, allowing independent optimization and scaling.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
