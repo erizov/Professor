@@ -4,37 +4,48 @@
    Quantum Programming
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements quantum programming algorithm.
+   Develops software and algorithms for quantum computers using quantum programming languages and frameworks, enabling developers to write, test, and execute quantum programs.
 
 3. **Intuition (plain-language explanation)**  
-   Quantum Programming is a fundamental algorithm in computer science.
+   Like programming for quantum: Quantum Programming is like programming but for quantum computers - you write code (quantum circuits) using quantum languages (like Qiskit, Cirq) that run on quantum hardware - just as you program classical computers, you program quantum computers with quantum code.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Quantum algorithms, programming language, quantum circuits, gates, measurements.  
+   - Output: Quantum programs, compiled circuits, executable code, quantum results, optimized programs.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Design: design quantum algorithm.
+2. Code: write quantum program in quantum language.
+3. Compile: compile to quantum gates.
+4. Optimize: optimize quantum circuit.
+5. Simulate: simulate on quantum simulator.
+6. Test: test quantum program.
+7. Execute: execute on quantum hardware.
+8. Measure: measure quantum results.
+9. Analyze: analyze results.
+10. Iterate: iterate and improve.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Quantum Programming applied to sample data.
+   Quantum Programming: algorithm: Grover's search → code: Qiskit program → compile: to gates → simulate: test on simulator → execute: run on quantum computer → measure: get result → result: search successful → Quantum Programming successful.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(d) where d is circuit depth (program execution time).  
+   - Space: O(n) where n is number of qubits (quantum register size).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Abstraction: provides high-level abstraction for quantum computing.
+- Portability: programs can run on different quantum hardware.
+- Ecosystem: growing ecosystem of tools and libraries.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Learning: requires learning quantum concepts.
+- Hardware: limited by quantum hardware availability.
+- Debugging: debugging quantum programs is challenging.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Gate-Level Programming, Hardware-Specific, Quantum Assembly, Visual Programming
 
 11. **30-second explanation (your own words)**  
-    Quantum Programming solves computational problems efficiently.
+    Develops software and algorithms for quantum computers using quantum programming languages and frameworks, enabling developers to write, test, and execute quantum programs.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
