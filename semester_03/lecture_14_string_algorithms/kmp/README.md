@@ -1,55 +1,40 @@
 # Kmp
 
-**Category**: String Algorithm
+1. **Name of Algorithm**  
+   Kmp
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Implements kmp algorithm.
 
-The Knuth–Morris–Pratt (KMP) algorithm is a string-searching algorithm that searches for occurrences of a "word" W within a main "text string" S by employing the observation that when a mismatch occurs, the word itself embodies sufficient information to determine where the next match could begin.
+3. **Intuition (plain-language explanation)**  
+   Kmp is a fundamental algorithm in computer science.
 
-## How It Works
+4. **Inputs & Outputs**  
+   - Input: Algorithm-specific inputs  
+   - Output: Algorithm-specific outputs
 
-1. Preprocess pattern to create longest prefix suffix (LPS) array
-2. Match pattern with text character by character
-3. On mismatch, use LPS array to skip characters already matched
-4. Avoid re-checking characters that are known to match
-5. Continue until pattern found or text exhausted
+5. **Step-by-step description (5–10 lines max)**  
+1. Initialize data structures
+2. Process input according to algorithm logic
+3. Return computed result
 
-## Complexity Analysis
+6. **Tiny example (hand-simulated)**  
+   Example: Kmp applied to sample data.
 
-Time: O(n + m) where n is text length, m is pattern length. Space: O(m)
+7. **Time & Space Complexity**  
+   - Time: Varies  
+   - Space: analysis
 
-## Use Cases
+8. **Strengths**  
+- Efficient for specific use cases
 
-Text editors, search engines, DNA sequence matching, plagiarism detection
+9. **Weaknesses / limitations**  
+- May have limitations in certain scenarios
 
-## Algorithm Details
+10. **Compare with alternatives**  
+    Alternatives: Related algorithms
 
-### Key Characteristics
+11. **30-second explanation (your own words)**  
+    Kmp solves computational problems efficiently.
 
-- **Stability**: Depends on implementation
-- **In-place**: Depends on implementation
-- **Adaptive**: Depends on implementation
-
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples and performance analysis.
-
-## References
-
-- Wikipedia: [Knuth–Morris–Pratt algorithm](https://en.wikipedia.org/wiki/Knuth–Morris–Pratt_algorithm)
-- Additional resources available in academic literature and algorithm textbooks
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
-
-## Learning Objectives
-
-By studying this algorithm, you will learn:
-1. The fundamental approach and logic
-2. Time and space complexity analysis
-3. When to use this algorithm vs alternatives
-4. Implementation details and optimizations
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*

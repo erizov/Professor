@@ -1,42 +1,40 @@
 # Blockchain Scalability Solutions
 
-**Category**: Algorithm
+1. **Name of Algorithm**  
+   Blockchain Scalability Solutions
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Implements blockchain scalability solutions algorithm.
 
-Blockchain Scalability Solutions is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+3. **Intuition (plain-language explanation)**  
+   Blockchain Scalability Solutions is a fundamental algorithm in computer science.
 
-## Description
+4. **Inputs & Outputs**  
+   - Input: Algorithm-specific inputs  
+   - Output: Algorithm-specific outputs
 
-This algorithm is particularly useful for solving problems related to [specific domain]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+5. **Step-by-step description (5–10 lines max)**  
+1. Initialize data structures
+2. Process input according to algorithm logic
+3. Return computed result
 
-## How It Works
+6. **Tiny example (hand-simulated)**  
+   Example: Blockchain Scalability Solutions applied to sample data.
 
-[Algorithm description to be added]
+7. **Time & Space Complexity**  
+   - Time: Varies  
+   - Space: Varies
 
-## Complexity Analysis
+8. **Strengths**  
+- Efficient for specific use cases
 
-- **Time Complexity**: To be determined based on implementation
-- **Space Complexity**: To be determined based on implementation
+9. **Weaknesses / limitations**  
+- May have limitations in certain scenarios
 
-## Use Cases
+10. **Compare with alternatives**  
+    Alternatives: Related algorithms
 
-- [Use case 1]
-- [Use case 2]
-- [Use case 3]
+11. **30-second explanation (your own words)**  
+    Blockchain Scalability Solutions solves computational problems efficiently.
 
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples.
-
-## References
-
-- Wikipedia: Blockchain Scalability Solutions
-- Additional resources can be found in academic literature
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*

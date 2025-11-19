@@ -1,55 +1,40 @@
 # Longest Common Subsequence
 
-**Category**: Dynamic Programming
+1. **Name of Algorithm**  
+   Longest Common Subsequence
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Implements longest common subsequence algorithm.
 
-The longest common subsequence (LCS) problem is the problem of finding the longest subsequence common to all sequences in a set of sequences. It differs from the longest common substring problem: unlike substrings, subsequences are not required to occupy consecutive positions within the original sequences.
+3. **Intuition (plain-language explanation)**  
+   Longest Common Subsequence is a fundamental algorithm in computer science.
 
-## How It Works
+4. **Inputs & Outputs**  
+   - Input: Algorithm-specific inputs  
+   - Output: Algorithm-specific outputs
 
-1. Create 2D DP table
-2. Compare characters of both strings
-3. If characters match, LCS[i][j] = 1 + LCS[i-1][j-1]
-4. If no match, LCS[i][j] = max(LCS[i-1][j], LCS[i][j-1])
-5. Trace back to construct actual LCS string
+5. **Step-by-step description (5–10 lines max)**  
+1. Initialize data structures
+2. Process input according to algorithm logic
+3. Return computed result
 
-## Complexity Analysis
+6. **Tiny example (hand-simulated)**  
+   Example: Longest Common Subsequence applied to sample data.
 
-Time: O(m × n) where m, n are string lengths. Space: O(m × n)
+7. **Time & Space Complexity**  
+   - Time: Varies  
+   - Space: analysis
 
-## Use Cases
+8. **Strengths**  
+- Efficient for specific use cases
 
-Version control (diff), DNA sequence comparison, plagiarism detection, text similarity
+9. **Weaknesses / limitations**  
+- May have limitations in certain scenarios
 
-## Algorithm Details
+10. **Compare with alternatives**  
+    Alternatives: Related algorithms
 
-### Key Characteristics
+11. **30-second explanation (your own words)**  
+    Longest Common Subsequence solves computational problems efficiently.
 
-- **Stability**: Depends on implementation
-- **In-place**: Depends on implementation
-- **Adaptive**: Depends on implementation
-
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples and performance analysis.
-
-## References
-
-- Wikipedia: [Longest common subsequence problem](https://en.wikipedia.org/wiki/Longest_common_subsequence_problem)
-- Additional resources available in academic literature and algorithm textbooks
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
-
-## Learning Objectives
-
-By studying this algorithm, you will learn:
-1. The fundamental approach and logic
-2. Time and space complexity analysis
-3. When to use this algorithm vs alternatives
-4. Implementation details and optimizations
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*

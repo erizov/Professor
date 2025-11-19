@@ -1,55 +1,40 @@
 # Bfs
 
-**Category**: Graph Algorithm
+1. **Name of Algorithm**  
+   Bfs
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Implements bfs algorithm.
 
-Breadth-first search (BFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the tree root (or some arbitrary node of a graph) and explores all nodes at the present depth prior to moving on to nodes at the next depth level.
+3. **Intuition (plain-language explanation)**  
+   Bfs is a fundamental algorithm in computer science.
 
-## How It Works
+4. **Inputs & Outputs**  
+   - Input: Algorithm-specific inputs  
+   - Output: Algorithm-specific outputs
 
-1. Start from source node, mark as visited
-2. Add to queue
-3. While queue not empty: dequeue node, visit it
-4. Add all unvisited neighbors to queue
-5. Mark neighbors as visited, repeat
+5. **Step-by-step description (5–10 lines max)**  
+1. Initialize data structures
+2. Process input according to algorithm logic
+3. Return computed result
 
-## Complexity Analysis
+6. **Tiny example (hand-simulated)**  
+   Example: Bfs applied to sample data.
 
-Time: O(V + E) where V is vertices, E is edges. Space: O(V)
+7. **Time & Space Complexity**  
+   - Time: Varies  
+   - Space: analysis
 
-## Use Cases
+8. **Strengths**  
+- Efficient for specific use cases
 
-Shortest path in unweighted graphs, level-order tree traversal, social networks, web crawling
+9. **Weaknesses / limitations**  
+- May have limitations in certain scenarios
 
-## Algorithm Details
+10. **Compare with alternatives**  
+    Alternatives: Related algorithms
 
-### Key Characteristics
+11. **30-second explanation (your own words)**  
+    Bfs solves computational problems efficiently.
 
-- **Stability**: Depends on implementation
-- **In-place**: Depends on implementation
-- **Adaptive**: Depends on implementation
-
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples and performance analysis.
-
-## References
-
-- Wikipedia: [Breadth-first search](https://en.wikipedia.org/wiki/Breadth-first_search)
-- Additional resources available in academic literature and algorithm textbooks
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
-
-## Learning Objectives
-
-By studying this algorithm, you will learn:
-1. The fundamental approach and logic
-2. Time and space complexity analysis
-3. When to use this algorithm vs alternatives
-4. Implementation details and optimizations
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*

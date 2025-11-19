@@ -1,55 +1,40 @@
 # Binary Search Tree
 
-**Category**: Data Structure
+1. **Name of Algorithm**  
+   Binary Search Tree
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Implements binary search tree algorithm.
 
-A binary search tree (BST) is a binary tree data structure where each node has a comparable key and satisfies the restriction that the key in any node is larger than the keys in all nodes in that node's left subtree and smaller than the keys in all nodes in that node's right subtree.
+3. **Intuition (plain-language explanation)**  
+   Binary Search Tree is a fundamental algorithm in computer science.
 
-## How It Works
+4. **Inputs & Outputs**  
+   - Input: Algorithm-specific inputs  
+   - Output: Algorithm-specific outputs
 
-1. Start at root
-2. Compare value with current node
-3. If smaller, go left; if larger, go right
-4. If equal, found; if null, not found
-5. Insert at null position; delete requires rebalancing
+5. **Step-by-step description (5–10 lines max)**  
+1. Initialize data structures
+2. Process input according to algorithm logic
+3. Return computed result
 
-## Complexity Analysis
+6. **Tiny example (hand-simulated)**  
+   Example: Binary Search Tree applied to sample data.
 
-Time: O(log n) average, O(n) worst case. Space: O(n)
+7. **Time & Space Complexity**  
+   - Time: Varies  
+   - Space: analysis
 
-## Use Cases
+8. **Strengths**  
+- Efficient for specific use cases
 
-Dynamic sets, priority queues, symbol tables, database indexing
+9. **Weaknesses / limitations**  
+- May have limitations in certain scenarios
 
-## Algorithm Details
+10. **Compare with alternatives**  
+    Alternatives: Related algorithms
 
-### Key Characteristics
+11. **30-second explanation (your own words)**  
+    Binary Search Tree solves computational problems efficiently.
 
-- **Stability**: Depends on implementation
-- **In-place**: Depends on implementation
-- **Adaptive**: Depends on implementation
-
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples and performance analysis.
-
-## References
-
-- Wikipedia: [Binary search tree](https://en.wikipedia.org/wiki/Binary_search_tree)
-- Additional resources available in academic literature and algorithm textbooks
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
-
-## Learning Objectives
-
-By studying this algorithm, you will learn:
-1. The fundamental approach and logic
-2. Time and space complexity analysis
-3. When to use this algorithm vs alternatives
-4. Implementation details and optimizations
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*

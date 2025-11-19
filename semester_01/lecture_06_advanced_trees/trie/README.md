@@ -1,42 +1,44 @@
 # Trie
 
-**Category**: Algorithm
+1. **Name of Algorithm**  
+   Trie
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Efficiently stores and searches strings with shared prefixes, enabling fast prefix matching and autocomplete.
 
-Trie is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+3. **Intuition (plain-language explanation)**  
+   Like a phone book organized by first letter, then second, then third: each level narrows down the search.
 
-## Description
+4. **Inputs & Outputs**  
+   - Input: Set of strings (words, keys) and query operations (insert, search, prefix match).  
+   - Output: Tree structure where each path from root to node represents a string prefix.
 
-This algorithm is particularly useful for solving problems related to [specific domain]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+5. **Step-by-step description (5–10 lines max)**  
+1. Root represents empty string.
+2. Each node has children for each possible next character.
+3. Insert: traverse/create path for each character, mark end node.
+4. Search: follow path character by character, check if end marker exists.
+5. Prefix search: traverse to prefix node, collect all descendants.
 
-## How It Works
+6. **Tiny example (hand-simulated)**  
+   Insert 'cat', 'car': root → 'c' → 'a' → 't' (end) and 'a' → 'r' (end). Search 'car': follow c-a-r, found.
 
-[Algorithm description to be added]
+7. **Time & Space Complexity**  
+   - Time: O(m) for search/insert where m is string length; O(n*m) to build from n strings.  
+   - Space: O(ALPHABET_SIZE * N * M) worst case, but can be compressed.
 
-## Complexity Analysis
+8. **Strengths**  
+- Fast prefix matching and autocomplete queries.
+- Efficient for dictionary lookups and spell checkers.
 
-- **Time Complexity**: To be determined based on implementation
-- **Space Complexity**: To be determined based on implementation
+9. **Weaknesses / limitations**  
+- High memory usage for sparse tries.
+- Slower than hash tables for exact lookups.
 
-## Use Cases
+10. **Compare with alternatives**  
+    Alternatives: Hash Table, Ternary Search Tree, Radix Tree
 
-- [Use case 1]
-- [Use case 2]
-- [Use case 3]
+11. **30-second explanation (your own words)**  
+    A tree where each path spells out a string, making prefix searches as fast as following the path.
 
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples.
-
-## References
-
-- Wikipedia: Trie
-- Additional resources can be found in academic literature
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*

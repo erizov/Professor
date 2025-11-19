@@ -1,42 +1,44 @@
 # Priority Queue
 
-**Category**: Algorithm
+1. **Name of Algorithm**  
+   Priority Queue
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Manages elements where highest (or lowest) priority item is always accessible, regardless of insertion order.
 
-Priority Queue is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+3. **Intuition (plain-language explanation)**  
+   Like a hospital emergency room: the most urgent case gets treated first, even if others arrived earlier.
 
-## Description
+4. **Inputs & Outputs**  
+   - Input: Sequence of enqueue (insert) and dequeue (extract) operations with priority values.  
+   - Output: Always returns the highest priority element on dequeue.
 
-This algorithm is particularly useful for solving problems related to [specific domain]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+5. **Step-by-step description (5–10 lines max)**  
+1. Choose underlying data structure (binary heap, Fibonacci heap, etc.).
+2. Enqueue: insert element with its priority value.
+3. Dequeue: extract and return element with highest/lowest priority.
+4. Update priority: modify existing element's priority (if supported).
+5. Maintain heap property to ensure O(log n) operations.
 
-## How It Works
+6. **Tiny example (hand-simulated)**  
+   Enqueue tasks: (A,5), (B,9), (C,3). Dequeue returns B (priority 9), then A (5), then C (3).
 
-[Algorithm description to be added]
+7. **Time & Space Complexity**  
+   - Time: O(log n) enqueue/dequeue with binary heap; O(1) amortized with Fibonacci heap.  
+   - Space: O(n) to store n elements.
 
-## Complexity Analysis
+8. **Strengths**  
+- Essential for scheduling, graph algorithms, and event simulation.
+- Efficient access to extremal elements.
 
-- **Time Complexity**: To be determined based on implementation
-- **Space Complexity**: To be determined based on implementation
+9. **Weaknesses / limitations**  
+- No efficient random access or search operations.
+- Requires total ordering of priorities.
 
-## Use Cases
+10. **Compare with alternatives**  
+    Alternatives: Sorted Array, Balanced BST, Skip List
 
-- [Use case 1]
-- [Use case 2]
-- [Use case 3]
+11. **30-second explanation (your own words)**  
+    A data structure that always gives you the most important item first, perfect for scheduling and optimization.
 
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples.
-
-## References
-
-- Wikipedia: Priority Queue
-- Additional resources can be found in academic literature
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*

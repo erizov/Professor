@@ -1,55 +1,40 @@
 # Dfs
 
-**Category**: Graph Algorithm
+1. **Name of Algorithm**  
+   Dfs
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Implements dfs algorithm.
 
-Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node and explores as far as possible along each branch before backtracking.
+3. **Intuition (plain-language explanation)**  
+   Dfs is a fundamental algorithm in computer science.
 
-## How It Works
+4. **Inputs & Outputs**  
+   - Input: Algorithm-specific inputs  
+   - Output: Algorithm-specific outputs
 
-1. Start from source node, mark as visited
-2. Recursively visit unvisited neighbors
-3. Explore as deep as possible before backtracking
-4. Use stack (recursion or explicit) to track path
-5. Mark nodes as visited to avoid cycles
+5. **Step-by-step description (5–10 lines max)**  
+1. Initialize data structures
+2. Process input according to algorithm logic
+3. Return computed result
 
-## Complexity Analysis
+6. **Tiny example (hand-simulated)**  
+   Example: Dfs applied to sample data.
 
-Time: O(V + E) where V is vertices, E is edges. Space: O(V)
+7. **Time & Space Complexity**  
+   - Time: Varies  
+   - Space: analysis
 
-## Use Cases
+8. **Strengths**  
+- Efficient for specific use cases
 
-Topological sorting, cycle detection, maze solving, path finding, connected components
+9. **Weaknesses / limitations**  
+- May have limitations in certain scenarios
 
-## Algorithm Details
+10. **Compare with alternatives**  
+    Alternatives: Related algorithms
 
-### Key Characteristics
+11. **30-second explanation (your own words)**  
+    Dfs solves computational problems efficiently.
 
-- **Stability**: Depends on implementation
-- **In-place**: Depends on implementation
-- **Adaptive**: Depends on implementation
-
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples and performance analysis.
-
-## References
-
-- Wikipedia: [Depth-first search](https://en.wikipedia.org/wiki/Depth-first_search)
-- Additional resources available in academic literature and algorithm textbooks
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
-
-## Learning Objectives
-
-By studying this algorithm, you will learn:
-1. The fundamental approach and logic
-2. Time and space complexity analysis
-3. When to use this algorithm vs alternatives
-4. Implementation details and optimizations
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*

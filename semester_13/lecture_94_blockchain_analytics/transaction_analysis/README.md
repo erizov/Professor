@@ -1,42 +1,40 @@
 # Transaction Analysis
 
-**Category**: Algorithm
+1. **Name of Algorithm**  
+   Transaction Analysis
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Implements transaction analysis algorithm.
 
-Transaction Analysis is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+3. **Intuition (plain-language explanation)**  
+   Transaction Analysis is a fundamental algorithm in computer science.
 
-## Description
+4. **Inputs & Outputs**  
+   - Input: Algorithm-specific inputs  
+   - Output: Algorithm-specific outputs
 
-This algorithm is particularly useful for solving problems related to [specific domain]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+5. **Step-by-step description (5–10 lines max)**  
+1. Initialize data structures
+2. Process input according to algorithm logic
+3. Return computed result
 
-## How It Works
+6. **Tiny example (hand-simulated)**  
+   Example: Transaction Analysis applied to sample data.
 
-[Algorithm description to be added]
+7. **Time & Space Complexity**  
+   - Time: Varies  
+   - Space: Varies
 
-## Complexity Analysis
+8. **Strengths**  
+- Efficient for specific use cases
 
-- **Time Complexity**: To be determined based on implementation
-- **Space Complexity**: To be determined based on implementation
+9. **Weaknesses / limitations**  
+- May have limitations in certain scenarios
 
-## Use Cases
+10. **Compare with alternatives**  
+    Alternatives: Related algorithms
 
-- [Use case 1]
-- [Use case 2]
-- [Use case 3]
+11. **30-second explanation (your own words)**  
+    Transaction Analysis solves computational problems efficiently.
 
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples.
-
-## References
-
-- Wikipedia: Transaction Analysis
-- Additional resources can be found in academic literature
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*

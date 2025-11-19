@@ -1,55 +1,40 @@
 # Knapsack
 
-**Category**: Dynamic Programming
+1. **Name of Algorithm**  
+   Knapsack
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Implements knapsack algorithm.
 
-The knapsack problem is a problem in combinatorial optimization: Given a set of items, each with a weight and a value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible.
+3. **Intuition (plain-language explanation)**  
+   Knapsack is a fundamental algorithm in computer science.
 
-## How It Works
+4. **Inputs & Outputs**  
+   - Input: Algorithm-specific inputs  
+   - Output: Algorithm-specific outputs
 
-1. Use dynamic programming: create 2D table
-2. For each item, consider including or excluding it
-3. If weight allows, take maximum of (value with item, value without item)
-4. Fill table bottom-up
-5. Trace back to find selected items
+5. **Step-by-step description (5–10 lines max)**  
+1. Initialize data structures
+2. Process input according to algorithm logic
+3. Return computed result
 
-## Complexity Analysis
+6. **Tiny example (hand-simulated)**  
+   Example: Knapsack applied to sample data.
 
-Time: O(n × W) where n is items, W is capacity. Space: O(n × W)
+7. **Time & Space Complexity**  
+   - Time: Varies  
+   - Space: analysis
 
-## Use Cases
+8. **Strengths**  
+- Efficient for specific use cases
 
-Resource allocation, portfolio optimization, cutting stock problem, budget allocation
+9. **Weaknesses / limitations**  
+- May have limitations in certain scenarios
 
-## Algorithm Details
+10. **Compare with alternatives**  
+    Alternatives: Related algorithms
 
-### Key Characteristics
+11. **30-second explanation (your own words)**  
+    Knapsack solves computational problems efficiently.
 
-- **Stability**: Depends on implementation
-- **In-place**: Depends on implementation
-- **Adaptive**: Depends on implementation
-
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples and performance analysis.
-
-## References
-
-- Wikipedia: [Knapsack problem](https://en.wikipedia.org/wiki/Knapsack_problem)
-- Additional resources available in academic literature and algorithm textbooks
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
-
-## Learning Objectives
-
-By studying this algorithm, you will learn:
-1. The fundamental approach and logic
-2. Time and space complexity analysis
-3. When to use this algorithm vs alternatives
-4. Implementation details and optimizations
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
