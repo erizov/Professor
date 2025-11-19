@@ -4,37 +4,48 @@
    State Channels
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements state channels algorithm.
+   Enables off-chain transactions between parties by opening a channel, conducting multiple transactions off-chain, and settling the final state on-chain, reducing fees and latency.
 
 3. **Intuition (plain-language explanation)**  
-   State Channels is a fundamental algorithm in computer science.
+   Like a tab at a bar: State channels are like running a tab at a bar - instead of paying for each drink immediately (on-chain transaction), you keep a tab (off-chain state), order multiple drinks (off-chain transactions), and settle the tab at the end (on-chain settlement) - this is faster and cheaper than paying each time.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Channel participants, initial state, off-chain transactions, signatures, settlement conditions.  
+   - Output: Channel state, signed transactions, final settlement, channel closure.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Open: open channel by depositing funds on-chain.
+2. Update: update channel state off-chain with transactions.
+3. Sign: sign state updates with both parties.
+4. Exchange: exchange signed state updates.
+5. Continue: continue off-chain transactions.
+6. Close: close channel by submitting final state on-chain.
+7. Challenge: challenge period for dispute resolution.
+8. Settle: settle final state on-chain.
+9. Withdraw: withdraw funds after settlement.
+10. Dispute: handle disputes using latest signed state.
 
 6. **Tiny example (hand-simulated)**  
-   Example: State Channels applied to sample data.
+   State Channel: open with 10 ETH deposit → update: Alice pays Bob 1 ETH (off-chain) → update: Bob pays Alice 0.5 ETH (off-chain) → close: submit final state (Alice: 9.5, Bob: 0.5) → settle → State Channel successful.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(1) for off-chain transactions, O(b) for on-chain settlement where b is block time (channel operations).  
+   - Space: O(p) where p is participants (channel state storage).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Speed: instant off-chain transactions.
+- Cost: minimal fees (only on open/close).
+- Privacy: transactions are private until settlement.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Liquidity: requires locking funds in channel.
+- Online: participants must be online for updates.
+- Disputes: requires monitoring and dispute mechanisms.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Rollups, Plasma, Sidechains, Payment Channels
 
 11. **30-second explanation (your own words)**  
-    State Channels solves computational problems efficiently.
+    Off-chain transaction channels that allow parties to conduct multiple transactions off-chain and settle the final state on-chain, enabling fast and cheap transactions.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

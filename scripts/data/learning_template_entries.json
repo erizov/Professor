@@ -16831,55 +16831,83 @@
     },
     {
       "path": "semester_12/lecture_82_hybrid_quantum/quantum_approximate/README.md",
-      "name": "Quantum Approximate",
-      "problem": "Implements quantum approximate algorithm.",
-      "intuition": "Quantum Approximate is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Quantum Approximate Optimization Algorithm (QAOA)",
+      "problem": "Solves combinatorial optimization problems by using a quantum-classical hybrid approach that alternates between quantum evolution and classical parameter optimization to find approximate solutions.",
+      "intuition": "Like a quantum-classical dance: QAOA is like a dance between quantum and classical computers - the quantum computer explores the solution space using quantum superposition (trying many solutions at once), while the classical computer fine-tunes the quantum operations (adjusting the dance steps) - together they find good approximate solutions to hard optimization problems.",
+      "inputs": "Optimization problem (cost function, constraints), number of layers (p), initial parameters, quantum device, classical optimizer.",
+      "outputs": "Approximate optimal solution, optimized parameters, solution quality, convergence metrics.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Encode: encode optimization problem as quantum Hamiltonian.",
+        "Initialize: prepare initial quantum state (superposition).",
+        "Apply: apply alternating unitaries (problem and mixer Hamiltonians).",
+        "Measure: measure quantum state to get candidate solution.",
+        "Evaluate: evaluate solution quality using cost function.",
+        "Optimize: use classical optimizer to adjust parameters.",
+        "Iterate: repeat quantum evolution and classical optimization.",
+        "Converge: converge to optimal parameters and solution.",
+        "Extract: extract best solution from quantum measurements.",
+        "Validate: validate solution quality and feasibility."
       ],
-      "example": "Example: Quantum Approximate applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "QAOA for MaxCut: encode graph as Hamiltonian → initialize superposition → apply 2 layers (p=2) → measure → get cut value 3 → optimize parameters → repeat → converge → best cut value 4 → QAOA successful.",
+      "time_complexity": "O(p * (q + c)) where p is layers, q is quantum evolution time, c is classical optimization time (hybrid complexity).",
+      "space_complexity": "O(n) qubits for n-variable problem (quantum state space).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Hybrid: combines quantum and classical advantages.",
+        "Flexible: works for various optimization problems.",
+        "Near-term: suitable for near-term quantum devices."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Approximate: provides approximate solutions, not exact.",
+        "Parameters: requires careful parameter tuning.",
+        "Scaling: performance depends on problem structure."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Quantum Annealing",
+        "Classical Optimization",
+        "Variational Quantum Eigensolver",
+        "Quantum Machine Learning"
       ],
-      "explanation": "Quantum Approximate solves computational problems efficiently."
+      "explanation": "A quantum-classical hybrid algorithm that uses parameterized quantum circuits and classical optimization to solve combinatorial optimization problems approximately."
     },
     {
       "path": "semester_12/lecture_82_hybrid_quantum/quantum_classical_hybrid/README.md",
-      "name": "Quantum Classical Hybrid",
-      "problem": "Implements quantum classical hybrid algorithm.",
-      "intuition": "Quantum Classical Hybrid is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Quantum-Classical Hybrid Algorithms",
+      "problem": "Combines quantum and classical computing resources to solve problems that leverage quantum advantages (superposition, entanglement) while using classical computers for optimization, error correction, and control.",
+      "intuition": "Like a hybrid car: Quantum-classical hybrid algorithms are like hybrid cars that use both electric (quantum) and gas (classical) power - quantum computers handle parts that benefit from quantum mechanics (exploring many possibilities at once), while classical computers handle optimization, control, and error correction - together they're more powerful than either alone.",
+      "inputs": "Problem specification, quantum device, classical computer, hybrid algorithm parameters, optimization strategy.",
+      "outputs": "Hybrid solution, optimized parameters, performance metrics, resource usage statistics.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Decompose: decompose problem into quantum and classical parts.",
+        "Quantum: identify parts that benefit from quantum computation.",
+        "Classical: identify parts best handled classically.",
+        "Design: design hybrid algorithm architecture.",
+        "Implement: implement quantum and classical components.",
+        "Interface: create interface between quantum and classical parts.",
+        "Execute: execute hybrid algorithm (alternate quantum/classical).",
+        "Optimize: optimize parameters using classical methods.",
+        "Iterate: iterate between quantum and classical steps.",
+        "Converge: converge to solution using hybrid approach."
       ],
-      "example": "Example: Quantum Classical Hybrid applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "VQE: quantum part computes energy expectation → classical part optimizes parameters → quantum part recomputes with new parameters → classical part evaluates → iterate → converge → hybrid VQE successful.",
+      "time_complexity": "O(i * (q + c)) where i is iterations, q is quantum time, c is classical time (hybrid complexity).",
+      "space_complexity": "O(n + m) where n is quantum qubits, m is classical memory (hybrid space).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Advantages: leverages strengths of both quantum and classical.",
+        "Practical: works with current quantum hardware limitations.",
+        "Flexible: adaptable to various problem types."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: requires expertise in both quantum and classical computing.",
+        "Communication: quantum-classical communication overhead.",
+        "Optimization: classical optimization can be bottleneck."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Pure Quantum Algorithms",
+        "Pure Classical Algorithms",
+        "Quantum Simulators",
+        "Quantum Cloud Services"
       ],
-      "explanation": "Quantum Classical Hybrid solves computational problems efficiently."
+      "explanation": "Algorithms that strategically combine quantum and classical computing to solve problems by leveraging quantum advantages while using classical resources for optimization and control."
     },
     {
       "path": "semester_12/lecture_82_hybrid_quantum/quantum_ml_hybrid/README.md",
@@ -17003,29 +17031,43 @@
     },
     {
       "path": "semester_12/lecture_82_hybrid_quantum/variational_quantum/README.md",
-      "name": "Variational Quantum",
-      "problem": "Implements variational quantum algorithm.",
-      "intuition": "Variational Quantum is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Variational Quantum Algorithms (VQA)",
+      "problem": "Solves optimization and machine learning problems by using parameterized quantum circuits (variational circuits) that are optimized classically to minimize a cost function.",
+      "intuition": "Like training a quantum neural network: Variational quantum algorithms are like training a neural network, but the network is quantum - you have a quantum circuit with adjustable parameters (like weights), you run it on a quantum computer to get results, then use a classical computer to adjust the parameters to minimize a cost function - repeat until you find the best parameters.",
+      "inputs": "Cost function, variational circuit ansatz, initial parameters, quantum device, classical optimizer, convergence criteria.",
+      "outputs": "Optimized parameters, minimum cost value, optimized quantum state, convergence history.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Design: design variational circuit ansatz (parameterized circuit).",
+        "Initialize: initialize circuit parameters randomly or heuristically.",
+        "Prepare: prepare quantum state using variational circuit.",
+        "Measure: measure quantum state to compute cost function.",
+        "Evaluate: evaluate cost function value.",
+        "Optimize: use classical optimizer to update parameters.",
+        "Update: update circuit parameters.",
+        "Iterate: repeat preparation, measurement, and optimization.",
+        "Converge: converge to optimal parameters.",
+        "Extract: extract solution from optimized quantum state."
       ],
-      "example": "Example: Variational Quantum applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "VQE: design ansatz → initialize parameters → prepare |ψ(θ)⟩ → measure energy ⟨H⟩ → evaluate E(θ) = 2.5 → optimize θ → update → repeat → converge → E(θ*) = 1.8 → VQE successful.",
+      "time_complexity": "O(i * (q + c)) where i is optimization iterations, q is quantum evaluation time, c is classical optimization time (variational complexity).",
+      "space_complexity": "O(n) qubits for n-qubit variational circuit (quantum state space).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Near-term: suitable for noisy intermediate-scale quantum (NISQ) devices.",
+        "Flexible: applicable to optimization, ML, and chemistry problems.",
+        "Hybrid: leverages both quantum and classical advantages."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Barren plateaus: optimization can get stuck in flat regions.",
+        "Expressibility: ansatz design is crucial and problem-dependent.",
+        "Convergence: may require many iterations to converge."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Quantum Approximate Optimization Algorithm",
+        "Quantum Machine Learning",
+        "Quantum Chemistry Algorithms",
+        "Classical Optimization"
       ],
-      "explanation": "Variational Quantum solves computational problems efficiently."
+      "explanation": "A class of hybrid quantum-classical algorithms that use parameterized quantum circuits optimized classically to solve optimization and machine learning problems."
     },
     {
       "path": "semester_12/lecture_83_quantum_software/quantum_debugging/README.md",
@@ -18016,210 +18058,322 @@
     {
       "path": "semester_13/lecture_87_blockchain_advanced/plasma/README.md",
       "name": "Plasma",
-      "problem": "Implements plasma algorithm.",
-      "intuition": "Plasma is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Scales blockchain transactions by creating child chains (Plasma chains) that process transactions off the main chain and periodically commit state roots, reducing main chain congestion and fees.",
+      "intuition": "Like branch offices: Plasma is like a company with branch offices - the main office (main chain) doesn't handle every transaction, instead branch offices (Plasma chains) handle most transactions locally and only report summaries (state roots) to the main office - this reduces workload on the main office while maintaining security through fraud proofs.",
+      "inputs": "Transactions, Plasma chain configuration, operator, state commitments, fraud proofs, exit requests.",
+      "outputs": "Plasma chain blocks, state roots, committed transactions, exit proofs, scaled throughput.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Create: create Plasma child chain with operator.",
+        "Process: process transactions on Plasma chain (off-chain).",
+        "Commit: commit state roots to main chain periodically.",
+        "Validate: validate transactions using fraud proofs.",
+        "Exit: allow users to exit to main chain with proofs.",
+        "Challenge: challenge invalid state transitions.",
+        "Settle: settle disputes using fraud proofs.",
+        "Withdraw: withdraw funds to main chain after exit period.",
+        "Monitor: monitor Plasma chain for fraud.",
+        "Maintain: maintain Plasma chain security and liveness."
       ],
-      "example": "Example: Plasma applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Plasma: create chain → process 1000 tx/s on Plasma → commit root every 10 blocks → user exits → submit exit proof → wait 7 days → withdraw to main chain → Plasma successful.",
+      "time_complexity": "O(t + c) where t is transaction processing time, c is commitment time (Plasma operations).",
+      "space_complexity": "O(s + p) where s is state storage, p is proof storage (Plasma storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Scalability: significantly increases transaction throughput.",
+        "Cost: reduces transaction fees on main chain.",
+        "Flexibility: supports various Plasma chain designs."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: complex exit and fraud proof mechanisms.",
+        "Security: requires users to monitor for fraud.",
+        "Liquidity: exit periods can lock funds temporarily."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Rollups",
+        "Sidechains",
+        "State Channels",
+        "Sharding"
       ],
-      "explanation": "Plasma solves computational problems efficiently."
+      "explanation": "A Layer 2 scaling solution that creates child chains that process transactions off-chain and commit state roots to the main chain, enabling high throughput while maintaining security."
     },
     {
       "path": "semester_13/lecture_87_blockchain_advanced/rollups/README.md",
       "name": "Rollups",
-      "problem": "Implements rollups algorithm.",
-      "intuition": "Rollups is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Scales blockchain by executing transactions off-chain, batching them, and submitting compressed transaction data and state roots to the main chain, achieving high throughput with main chain security.",
+      "intuition": "Like a shipping container: Rollups are like shipping containers - instead of shipping items individually (expensive), you pack many items into a container (batch transactions), compress it (compress data), and ship the container (submit to main chain) - this reduces shipping costs (fees) while maintaining security (main chain validation).",
+      "inputs": "Transactions, rollup sequencer, compression algorithm, state transitions, validity proofs (optional).",
+      "outputs": "Rollup blocks, compressed transaction data, state roots, validity proofs (ZK-Rollups), fraud proofs (Optimistic Rollups).",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Collect: collect transactions from users.",
+        "Execute: execute transactions off-chain (in rollup).",
+        "Batch: batch multiple transactions together.",
+        "Compress: compress transaction data.",
+        "Compute: compute new state root.",
+        "Prove: generate validity proof (ZK-Rollup) or prepare for fraud proof (Optimistic).",
+        "Submit: submit batch to main chain.",
+        "Verify: verify proof on main chain (ZK) or wait for challenge period (Optimistic).",
+        "Finalize: finalize state on main chain.",
+        "Settle: settle disputes if needed (Optimistic)."
       ],
-      "example": "Example: Rollups applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Rollup: collect 1000 tx → execute off-chain → batch → compress 1000 tx to 10KB → compute root → submit to main chain → verify → finalize → Rollup successful (100x cheaper).",
+      "time_complexity": "O(b + v) where b is batch processing time, v is verification time (rollup operations).",
+      "space_complexity": "O(c + s) where c is compressed data, s is state storage (rollup storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Scalability: 10-100x throughput improvement.",
+        "Security: inherits main chain security.",
+        "Cost: significantly reduces transaction fees."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Latency: some delay for finality (especially Optimistic).",
+        "Complexity: requires sophisticated compression and proof systems.",
+        "Centralization: sequencer can be centralized point of failure."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Plasma",
+        "Sidechains",
+        "State Channels",
+        "Sharding"
       ],
-      "explanation": "Rollups solves computational problems efficiently."
+      "explanation": "Layer 2 scaling solutions that execute transactions off-chain, batch and compress them, then submit to the main chain, achieving high throughput with main chain security guarantees."
     },
     {
       "path": "semester_13/lecture_87_blockchain_advanced/sharding_blockchain/README.md",
-      "name": "Sharding Blockchain",
-      "problem": "Implements sharding blockchain algorithm.",
-      "intuition": "Sharding Blockchain is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Blockchain Sharding",
+      "problem": "Scales blockchain by partitioning the network into multiple shards that process transactions in parallel, each maintaining its own state and transaction history, enabling horizontal scaling.",
+      "intuition": "Like dividing a library into sections: Blockchain sharding is like dividing a library into sections (shards) - instead of everyone using one catalog (single chain), each section has its own catalog (shard) - people can use different sections simultaneously (parallel processing), and the library (network) can handle more visitors (transactions) overall.",
+      "inputs": "Transactions, shard assignment, validators, cross-shard communication, consensus mechanism.",
+      "outputs": "Shard blocks, cross-shard transactions, aggregated state, network-wide consensus.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Partition: partition network into multiple shards.",
+        "Assign: assign validators to shards (randomly or by stake).",
+        "Route: route transactions to appropriate shards.",
+        "Process: process transactions within each shard in parallel.",
+        "Consensus: reach consensus within each shard.",
+        "Cross-shard: handle cross-shard transactions.",
+        "Aggregate: aggregate shard states periodically.",
+        "Sync: synchronize shard states across network.",
+        "Validate: validate cross-shard transactions.",
+        "Finalize: finalize shard blocks and network state."
       ],
-      "example": "Example: Sharding Blockchain applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Sharding: partition into 4 shards → assign validators → route tx to shard 2 → process in parallel → consensus in shard 2 → cross-shard tx to shard 3 → aggregate → Sharding successful (4x throughput).",
+      "time_complexity": "O(t/s + c) where t is transactions, s is shards, c is cross-shard overhead (sharded complexity).",
+      "space_complexity": "O(n/s) per shard where n is total state, s is shards (sharded storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Scalability: linear scaling with number of shards.",
+        "Parallelism: enables parallel transaction processing.",
+        "Efficiency: reduces storage and processing per node."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: complex cross-shard communication and consensus.",
+        "Security: smaller shards may be more vulnerable to attacks.",
+        "Synchronization: requires careful state synchronization."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Rollups",
+        "Plasma",
+        "Sidechains",
+        "State Channels"
       ],
-      "explanation": "Sharding Blockchain solves computational problems efficiently."
+      "explanation": "A scaling technique that partitions the blockchain into multiple shards that process transactions in parallel, enabling horizontal scaling of transaction throughput."
     },
     {
       "path": "semester_13/lecture_87_blockchain_advanced/sidechains/README.md",
       "name": "Sidechains",
-      "problem": "Implements sidechains algorithm.",
-      "intuition": "Sidechains is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Enables blockchain interoperability and scaling by creating separate blockchains (sidechains) that are pegged to the main chain, allowing assets and data to move between chains.",
+      "intuition": "Like connected islands: Sidechains are like islands connected by bridges to the mainland (main chain) - you can move between islands (sidechains) and the mainland, each island can have different rules (consensus, features), but they're all connected - this allows experimentation and scaling while maintaining connection to the main chain.",
+      "inputs": "Assets to transfer, sidechain configuration, peg mechanism, validators, consensus parameters.",
+      "outputs": "Sidechain blocks, pegged assets, cross-chain transfers, sidechain state.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Create: create sidechain with its own consensus and rules.",
+        "Peg: establish two-way peg with main chain.",
+        "Lock: lock assets on main chain.",
+        "Transfer: transfer assets to sidechain.",
+        "Process: process transactions on sidechain.",
+        "Unlock: unlock assets on main chain when transferring back.",
+        "Validate: validate peg operations and transfers.",
+        "Monitor: monitor sidechain security and liveness.",
+        "Settle: settle cross-chain transactions.",
+        "Maintain: maintain peg security and sidechain operations."
       ],
-      "example": "Example: Sidechains applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Sidechain: create sidechain → establish peg → lock 10 ETH on main chain → transfer 10 ETH to sidechain → process tx on sidechain → transfer back → unlock on main chain → Sidechain successful.",
+      "time_complexity": "O(t + p) where t is transaction time, p is peg operation time (sidechain operations).",
+      "space_complexity": "O(s + m) where s is sidechain state, m is main chain state (sidechain storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Flexibility: allows experimentation with different consensus and features.",
+        "Interoperability: enables asset and data transfer between chains.",
+        "Scalability: offloads transactions from main chain."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Security: sidechain security is independent (weaker than main chain).",
+        "Peg: two-way peg can be complex and risky.",
+        "Trust: may require trusted validators for peg."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Rollups",
+        "Plasma",
+        "State Channels",
+        "Sharding"
       ],
-      "explanation": "Sidechains solves computational problems efficiently."
+      "explanation": "Separate blockchains that are pegged to the main chain, enabling asset transfer and interoperability while allowing different consensus mechanisms and features."
     },
     {
       "path": "semester_13/lecture_87_blockchain_advanced/state_channels/README.md",
       "name": "State Channels",
-      "problem": "Implements state channels algorithm.",
-      "intuition": "State Channels is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Enables off-chain transactions between parties by opening a channel, conducting multiple transactions off-chain, and settling the final state on-chain, reducing fees and latency.",
+      "intuition": "Like a tab at a bar: State channels are like running a tab at a bar - instead of paying for each drink immediately (on-chain transaction), you keep a tab (off-chain state), order multiple drinks (off-chain transactions), and settle the tab at the end (on-chain settlement) - this is faster and cheaper than paying each time.",
+      "inputs": "Channel participants, initial state, off-chain transactions, signatures, settlement conditions.",
+      "outputs": "Channel state, signed transactions, final settlement, channel closure.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Open: open channel by depositing funds on-chain.",
+        "Update: update channel state off-chain with transactions.",
+        "Sign: sign state updates with both parties.",
+        "Exchange: exchange signed state updates.",
+        "Continue: continue off-chain transactions.",
+        "Close: close channel by submitting final state on-chain.",
+        "Challenge: challenge period for dispute resolution.",
+        "Settle: settle final state on-chain.",
+        "Withdraw: withdraw funds after settlement.",
+        "Dispute: handle disputes using latest signed state."
       ],
-      "example": "Example: State Channels applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "State Channel: open with 10 ETH deposit → update: Alice pays Bob 1 ETH (off-chain) → update: Bob pays Alice 0.5 ETH (off-chain) → close: submit final state (Alice: 9.5, Bob: 0.5) → settle → State Channel successful.",
+      "time_complexity": "O(1) for off-chain transactions, O(b) for on-chain settlement where b is block time (channel operations).",
+      "space_complexity": "O(p) where p is participants (channel state storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Speed: instant off-chain transactions.",
+        "Cost: minimal fees (only on open/close).",
+        "Privacy: transactions are private until settlement."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Liquidity: requires locking funds in channel.",
+        "Online: participants must be online for updates.",
+        "Disputes: requires monitoring and dispute mechanisms."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Rollups",
+        "Plasma",
+        "Sidechains",
+        "Payment Channels"
       ],
-      "explanation": "State Channels solves computational problems efficiently."
+      "explanation": "Off-chain transaction channels that allow parties to conduct multiple transactions off-chain and settle the final state on-chain, enabling fast and cheap transactions."
     },
     {
       "path": "semester_13/lecture_88_consensus_advanced/algorand/README.md",
       "name": "Algorand",
-      "problem": "Implements algorand algorithm.",
-      "intuition": "Algorand is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Achieves Byzantine fault tolerance and fast finality in a permissionless blockchain using pure proof-of-stake, cryptographic sortition for leader selection, and a two-phase consensus protocol.",
+      "intuition": "Like a democratic lottery: Algorand is like a democratic lottery system - instead of everyone voting (expensive), you randomly select a small committee (cryptographic sortition) based on stake (like weighted lottery tickets) - the committee reaches consensus quickly, and because selection is random and cryptographic, it's secure and fair - this enables fast, secure consensus without energy waste.",
+      "inputs": "Stake distribution, transactions, cryptographic sortition, committee selection, consensus messages.",
+      "outputs": "Finalized blocks, consensus certificates, leader selection, network agreement.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Sortition: use cryptographic sortition to select committee members.",
+        "Propose: selected proposer creates block proposal.",
+        "Broadcast: broadcast proposal to network.",
+        "Vote: committee members vote on proposal.",
+        "Certify: certify block if sufficient votes received.",
+        "Finalize: finalize block (no forks possible).",
+        "Next: proceed to next round with new sortition.",
+        "Validate: validate sortition and votes cryptographically.",
+        "Sync: synchronize network on finalized blocks.",
+        "Maintain: maintain liveness and safety properties."
       ],
-      "example": "Example: Algorand applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Algorand: sortition selects 1000 validators → proposer creates block → committee votes → 667+ votes → certify → finalize in <5s → Algorand successful (fast finality).",
+      "time_complexity": "O(log n) for sortition, O(1) for consensus with small committee (Algorand complexity).",
+      "space_complexity": "O(n) for stake distribution, O(c) for committee where c << n (Algorand storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Speed: fast finality (under 5 seconds).",
+        "Security: Byzantine fault tolerant with no forks.",
+        "Efficiency: energy efficient (pure PoS, no mining)."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: sophisticated cryptographic sortition mechanism.",
+        "Stake: security depends on stake distribution.",
+        "Scalability: committee size affects performance."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Proof of Work",
+        "Delegated Proof of Stake",
+        "Practical Byzantine Fault Tolerance",
+        "Tendermint"
       ],
-      "explanation": "Algorand solves computational problems efficiently."
+      "explanation": "A pure proof-of-stake consensus protocol that uses cryptographic sortition to randomly select small committees for fast, secure, and fork-free consensus."
     },
     {
       "path": "semester_13/lecture_88_consensus_advanced/dpos_advanced/README.md",
-      "name": "Dpos Advanced",
-      "problem": "Implements dpos advanced algorithm.",
-      "intuition": "Dpos Advanced is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Delegated Proof of Stake (DPoS) Advanced",
+      "problem": "Enhances DPoS with advanced features like vote decay, proxy voting, flexible block production, and governance mechanisms to improve decentralization, security, and efficiency.",
+      "intuition": "Like an improved representative democracy: Advanced DPoS is like improving representative democracy - instead of static representatives (basic DPoS), you add features like vote decay (representatives lose support over time if inactive), proxy voting (delegating votes to trusted proxies), flexible scheduling (adaptive block production), and governance (voting on proposals) - this makes the system more dynamic, responsive, and decentralized.",
+      "inputs": "Stake, delegate votes, vote decay parameters, proxy settings, block production schedule, governance proposals.",
+      "outputs": "Elected delegates, block production schedule, governance decisions, network parameters, consensus blocks.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Vote: stakeholders vote for delegates (with optional proxy).",
+        "Decay: apply vote decay to inactive delegates.",
+        "Elect: elect top delegates as block producers.",
+        "Schedule: create flexible block production schedule.",
+        "Produce: delegates produce blocks in rotation.",
+        "Govern: participate in on-chain governance.",
+        "Update: update network parameters via governance.",
+        "Monitor: monitor delegate performance and rewards.",
+        "Adjust: adjust votes based on performance.",
+        "Maintain: maintain network security and efficiency."
       ],
-      "example": "Example: Dpos Advanced applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "DPoS Advanced: vote for delegates → decay reduces inactive votes → elect top 21 → flexible schedule → produce blocks → governance proposal → vote → update parameters → DPoS Advanced successful.",
+      "time_complexity": "O(d) for delegate election, O(1) for block production where d is delegates (DPoS complexity).",
+      "space_complexity": "O(d + v) where d is delegates, v is votes (DPoS storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Efficiency: fast block times and high throughput.",
+        "Governance: built-in on-chain governance mechanisms.",
+        "Flexibility: adaptive block production and parameters."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Centralization: risk of delegate cartels.",
+        "Complexity: more complex than basic DPoS.",
+        "Vote decay: requires careful parameter tuning."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Proof of Work",
+        "Proof of Stake",
+        "Practical Byzantine Fault Tolerance",
+        "Algorand"
       ],
-      "explanation": "Dpos Advanced solves computational problems efficiently."
+      "explanation": "An enhanced DPoS consensus mechanism with vote decay, proxy voting, flexible block production, and governance features for improved decentralization and efficiency."
     },
     {
       "path": "semester_13/lecture_88_consensus_advanced/hotstuff/README.md",
-      "name": "Hotstuff",
-      "problem": "Implements hotstuff algorithm.",
-      "intuition": "Hotstuff is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "HotStuff",
+      "problem": "Achieves Byzantine fault tolerance with linear message complexity and optimistic responsiveness using a three-phase consensus protocol with a rotating leader and pipelined block proposals.",
+      "intuition": "Like an efficient assembly line: HotStuff is like an efficient assembly line with a rotating supervisor (leader) - instead of stopping the line for each decision (expensive), the line keeps moving (pipelining) while the supervisor coordinates (three-phase consensus) - if the supervisor is slow, you rotate to a new one (leader change) - this enables fast, efficient consensus even with leader failures.",
+      "inputs": "Transactions, leader rotation, replicas, consensus messages, timeout mechanisms.",
+      "outputs": "Committed blocks, consensus certificates, leader decisions, pipelined proposals.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Propose: leader proposes block with sequence number.",
+        "Prepare: replicas vote on proposal (prepare phase).",
+        "Pre-commit: if prepared, replicas pre-commit.",
+        "Commit: if pre-committed, replicas commit.",
+        "Pipeline: pipeline multiple proposals for efficiency.",
+        "Rotate: rotate leader if timeout or failure.",
+        "Sync: synchronize on committed blocks.",
+        "Optimize: use optimistic path when leader is honest.",
+        "Recover: recover from leader failures quickly.",
+        "Finalize: finalize committed blocks."
       ],
-      "example": "Example: Hotstuff applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "HotStuff: leader proposes block 100 → prepare votes → pre-commit → commit → pipeline block 101 → commit block 100 → HotStuff successful (linear messages, fast).",
+      "time_complexity": "O(n) message complexity, O(1) latency in optimistic case where n is replicas (HotStuff complexity).",
+      "space_complexity": "O(n) for replica state, O(b) for pipelined blocks (HotStuff storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Efficiency: linear message complexity (O(n) vs O(n²)).",
+        "Speed: fast consensus with optimistic responsiveness.",
+        "Robustness: handles leader failures gracefully."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: more complex than basic BFT protocols.",
+        "Leader: performance depends on leader quality.",
+        "Pipelining: requires careful synchronization."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Practical Byzantine Fault Tolerance",
+        "Raft",
+        "Tendermint",
+        "Algorand"
       ],
-      "explanation": "Hotstuff solves computational problems efficiently."
+      "explanation": "A Byzantine fault-tolerant consensus protocol with linear message complexity and optimistic responsiveness, using a three-phase protocol with pipelined block proposals."
     },
     {
       "path": "semester_13/lecture_88_consensus_advanced/pbft/README.md",
@@ -19344,54 +19498,82 @@
     {
       "path": "semester_13/lecture_93_blockchain_governance/governance_tokens/README.md",
       "name": "Governance Tokens",
-      "problem": "Implements governance tokens algorithm.",
-      "intuition": "Governance Tokens is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Enables decentralized governance by giving token holders voting rights proportional to their token holdings, allowing them to participate in protocol decisions, parameter changes, and treasury management.",
+      "intuition": "Like shares in a company: Governance tokens are like shares in a company - the more shares (tokens) you own, the more voting power you have in company decisions (protocol governance) - token holders can vote on proposals (like board resolutions), and decisions are executed automatically (like smart contracts) - this enables decentralized, transparent governance.",
+      "inputs": "Token holdings, governance proposals, voting parameters, delegation options, execution conditions.",
+      "outputs": "Voting results, executed proposals, updated protocol parameters, treasury allocations, governance decisions.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Propose: submit governance proposal with parameters.",
+        "Review: community reviews proposal (discussion period).",
+        "Vote: token holders vote (weighted by holdings).",
+        "Delegate: optional delegation of voting power.",
+        "Count: count votes and calculate results.",
+        "Threshold: check if proposal meets quorum and threshold.",
+        "Execute: execute proposal if approved (via smart contract).",
+        "Update: update protocol parameters or treasury.",
+        "Monitor: monitor proposal execution and effects.",
+        "Iterate: iterate on governance process improvements."
       ],
-      "example": "Example: Governance Tokens applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Governance: propose increase fee to 0.3% → review 3 days → vote: 60% yes, 30% no, 10% abstain → quorum met → execute → update fee parameter → Governance successful.",
+      "time_complexity": "O(v) for voting where v is voters, O(1) for execution (governance complexity).",
+      "space_complexity": "O(t + p) where t is token holdings, p is proposals (governance storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Decentralization: enables decentralized decision-making.",
+        "Transparency: all proposals and votes are on-chain.",
+        "Alignment: aligns incentives with token holders."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Centralization: large holders may dominate decisions.",
+        "Participation: low voter participation is common.",
+        "Complexity: complex proposals may be hard to evaluate."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Off-Chain Governance",
+        "Multisig Governance",
+        "Foundation Governance",
+        "Hybrid Governance"
       ],
-      "explanation": "Governance Tokens solves computational problems efficiently."
+      "explanation": "Tokens that grant voting rights to holders, enabling decentralized governance where token-weighted votes determine protocol decisions and parameter changes."
     },
     {
       "path": "semester_13/lecture_93_blockchain_governance/proposal_systems/README.md",
-      "name": "Proposal Systems",
-      "problem": "Implements proposal systems algorithm.",
-      "intuition": "Proposal Systems is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Governance Proposal Systems",
+      "problem": "Facilitates structured governance by providing frameworks for creating, discussing, voting on, and executing proposals that modify protocol parameters, allocate resources, or change system behavior.",
+      "intuition": "Like a formal petition system: Governance proposal systems are like a formal petition system - you write a proposal (petition), gather support (discussion), vote on it (ballot), and if approved, it's implemented (execution) - the system ensures proposals are well-formed, discussed, and executed fairly and transparently.",
+      "inputs": "Proposal content, proposer credentials, voting parameters, discussion period, execution logic, quorum requirements.",
+      "outputs": "Formal proposals, voting results, executed changes, governance history, protocol updates.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Draft: draft proposal with clear description and parameters.",
+        "Submit: submit proposal to governance system.",
+        "Review: community reviews and discusses proposal.",
+        "Amend: optionally amend proposal based on feedback.",
+        "Vote: open voting period with specified duration.",
+        "Cast: token holders cast votes (for/against/abstain).",
+        "Tally: tally votes and check quorum/threshold.",
+        "Execute: execute proposal if approved (smart contract).",
+        "Verify: verify execution and parameter changes.",
+        "Archive: archive proposal and results for transparency."
       ],
-      "example": "Example: Proposal Systems applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Proposal System: draft 'Increase max supply to 1B' → submit → review 7 days → vote 3 days → 55% yes, quorum met → execute → update max supply → Proposal System successful.",
+      "time_complexity": "O(p + v) where p is proposal processing, v is voting (proposal complexity).",
+      "space_complexity": "O(p + h) where p is proposals, h is history (proposal storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Structure: provides clear framework for governance.",
+        "Transparency: all proposals and outcomes are recorded.",
+        "Automation: automated execution via smart contracts."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: complex proposals may be hard to understand.",
+        "Spam: requires mechanisms to prevent proposal spam.",
+        "Execution: execution bugs can have serious consequences."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Informal Governance",
+        "Off-Chain Voting",
+        "Multisig Decisions",
+        "Foundation Control"
       ],
-      "explanation": "Proposal Systems solves computational problems efficiently."
+      "explanation": "Structured systems for creating, discussing, voting on, and executing governance proposals that modify protocol parameters and behavior."
     },
     {
       "path": "semester_13/lecture_93_blockchain_governance/treasury_management/README.md",
@@ -19435,29 +19617,43 @@
     },
     {
       "path": "semester_13/lecture_93_blockchain_governance/upgrade_mechanisms/README.md",
-      "name": "Upgrade Mechanisms",
-      "problem": "Implements upgrade mechanisms algorithm.",
-      "intuition": "Upgrade Mechanisms is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Blockchain Upgrade Mechanisms",
+      "problem": "Enables protocol upgrades and improvements while maintaining network consensus and backward compatibility, using mechanisms like hard forks, soft forks, or upgradeable smart contracts.",
+      "intuition": "Like updating an operating system: Blockchain upgrade mechanisms are like updating an operating system - you need to upgrade to get new features and fixes, but you must ensure compatibility (soft fork) or coordinate a major update (hard fork) - some systems allow seamless upgrades (upgradeable contracts), while others require network-wide coordination - the goal is to improve the system without breaking it.",
+      "inputs": "Upgrade proposal, new protocol version, compatibility requirements, migration plan, consensus mechanism, node software updates.",
+      "outputs": "Upgraded protocol, migrated state, updated nodes, network consensus, backward compatibility (if soft fork).",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Design: design upgrade with new features and fixes.",
+        "Propose: propose upgrade through governance or development team.",
+        "Review: review upgrade for security and compatibility.",
+        "Implement: implement upgrade in node software.",
+        "Test: test upgrade on testnet or fork.",
+        "Coordinate: coordinate upgrade activation (block height or timestamp).",
+        "Activate: activate upgrade at specified block/time.",
+        "Migrate: migrate state and data if needed.",
+        "Validate: validate upgrade success and compatibility.",
+        "Monitor: monitor network health post-upgrade."
       ],
-      "example": "Example: Upgrade Mechanisms applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Upgrade: design EIP-1559 → propose → review → implement → test on testnet → coordinate activation at block 12,965,000 → activate → migrate → validate → Upgrade successful.",
+      "time_complexity": "O(n + m) where n is nodes, m is migration complexity (upgrade complexity).",
+      "space_complexity": "O(s + u) where s is state, u is upgrade data (upgrade storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Evolution: enables protocol evolution and improvements.",
+        "Flexibility: supports various upgrade mechanisms.",
+        "Coordination: provides structured upgrade process."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Risk: upgrades can introduce bugs or break compatibility.",
+        "Coordination: requires network-wide coordination.",
+        "Forks: hard forks can split the network."
       ],
       "alternatives": [
-        "Related algorithms"
+        "No Upgrades",
+        "Soft Forks Only",
+        "Upgradeable Smart Contracts",
+        "Layer 2 Solutions"
       ],
-      "explanation": "Upgrade Mechanisms solves computational problems efficiently."
+      "explanation": "Mechanisms for upgrading blockchain protocols while maintaining consensus, including hard forks, soft forks, and upgradeable contract patterns."
     },
     {
       "path": "semester_13/lecture_93_blockchain_governance/voting_mechanisms/README.md",
