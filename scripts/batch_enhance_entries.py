@@ -13315,6 +13315,414 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Manual Provisioning", "Ticket-Based", "Approval Workflows", "Automated Provisioning"],
         "explanation": "Enables developers to provision, configure, and manage resources and services independently through self-service interfaces, reducing dependency on operations teams and improving developer velocity."
+    },
+    "semester_11/lecture_77_chaos_engineering_advanced/chaos_automation/README.md": {
+        "name": "Chaos Automation",
+        "problem": "Automates chaos engineering experiments through scheduled, continuous, and programmatic execution of chaos tests, enabling systematic resilience validation without manual intervention.",
+        "intuition": "Like automated stress tests: Chaos Automation is like automated stress tests for systems - instead of manually testing resilience (manual chaos), automated systems continuously test resilience (automated chaos) - just as automated stress tests keep systems strong, chaos automation keeps systems resilient through continuous testing.",
+        "inputs": "Chaos experiment definitions, schedules, automation scripts, system targets, safety rules, rollback procedures.",
+        "outputs": "Automated chaos experiments, resilience reports, system validation, continuous testing, automated rollbacks.",
+        "steps": [
+            "Define experiments: define chaos experiments and scenarios.",
+            "Schedule: schedule experiments (continuous, periodic, event-driven).",
+            "Automate: automate experiment execution.",
+            "Inject faults: automatically inject faults into systems.",
+            "Monitor: monitor system behavior during experiments.",
+            "Analyze: analyze system resilience and recovery.",
+            "Rollback: automatically rollback if critical issues detected.",
+            "Report: generate resilience reports automatically.",
+            "Iterate: iterate experiments based on results.",
+            "Improve: continuously improve system resilience."
+        ],
+        "example": "Chaos Automation: schedule: daily chaos experiments → inject: kill random pod → monitor: system recovers in 30s → analyze: resilience validated → report: daily resilience report → result: continuous resilience validation → Chaos Automation operational.",
+        "time_complexity": "O(e + m + a) where e is experiment execution time, m is monitoring time, a is analysis time (automated, continuous).",
+        "space_complexity": "O(d + r) where d is experiment definition storage, r is result storage (experiment history).",
+        "strengths": [
+            "Continuous: enables continuous resilience validation.",
+            "Automation: reduces manual effort in chaos engineering.",
+            "Systematic: provides systematic approach to resilience testing."
+        ],
+        "weaknesses": [
+            "Safety: requires careful safety rules to prevent damage.",
+            "Complexity: automating chaos experiments can be complex.",
+            "Coverage: may not cover all failure scenarios."
+        ],
+        "alternatives": ["Manual Chaos Engineering", "Scheduled Chaos", "Event-Driven Chaos", "Chaos Platforms"],
+        "explanation": "Automates chaos engineering experiments through scheduled, continuous, and programmatic execution of chaos tests, enabling systematic resilience validation without manual intervention."
+    },
+    "semester_11/lecture_77_chaos_engineering_advanced/chaos_experiments/README.md": {
+        "name": "Chaos Experiments",
+        "problem": "Designs and executes controlled experiments that inject failures into systems to test resilience, identify weaknesses, and validate recovery mechanisms.",
+        "intuition": "Like fire drills: Chaos Experiments are like fire drills for systems - you intentionally create problems (inject failures) to test if your systems can handle them (resilience) - just as fire drills prepare you for real fires, chaos experiments prepare systems for real failures.",
+        "inputs": "System architecture, failure scenarios, experiment hypotheses, safety rules, monitoring tools, rollback procedures.",
+        "outputs": "Chaos experiments, resilience insights, failure points, recovery validation, improvement recommendations.",
+        "steps": [
+            "Hypothesize: form hypothesis about system behavior under failure.",
+            "Design: design experiment to test hypothesis.",
+            "Prepare: prepare system and monitoring.",
+            "Inject: inject failure (kill service, network partition, etc.).",
+            "Observe: observe system behavior and recovery.",
+            "Measure: measure recovery time and impact.",
+            "Analyze: analyze results and validate hypothesis.",
+            "Document: document findings and learnings.",
+            "Improve: improve system based on findings.",
+            "Iterate: iterate with new experiments."
+        ],
+        "example": "Chaos Experiments: hypothesis: system recovers from database failure → inject: kill database pod → observe: system switches to replica in 10s → measure: 10s downtime → analyze: hypothesis validated, recovery works → improve: reduce recovery time → Chaos Experiments successful.",
+        "time_complexity": "O(d + e + a) where d is design time, e is execution time, a is analysis time (varies by experiment).",
+        "space_complexity": "O(e + r) where e is experiment storage, r is result storage (experiment data).",
+        "strengths": [
+            "Validation: validates system resilience in controlled manner.",
+            "Learning: reveals system weaknesses before production failures.",
+            "Confidence: builds confidence in system resilience."
+        ],
+        "weaknesses": [
+            "Risk: experiments can cause production issues if not careful.",
+            "Time: designing and executing experiments takes time.",
+            "Coverage: may not test all failure scenarios."
+        ],
+        "alternatives": ["No Testing", "Manual Testing", "Simulation", "Production Incidents"],
+        "explanation": "Designs and executes controlled experiments that inject failures into systems to test resilience, identify weaknesses, and validate recovery mechanisms."
+    },
+    "semester_11/lecture_77_chaos_engineering_advanced/chaos_metrics/README.md": {
+        "name": "Chaos Metrics",
+        "problem": "Defines and tracks metrics to measure system resilience during chaos experiments, enabling quantitative assessment of system behavior under failure conditions.",
+        "intuition": "Like health metrics: Chaos Metrics are like health metrics during exercise - you measure heart rate, recovery time, etc. to see how your body handles stress - similarly, chaos metrics measure how systems handle failures (error rates, recovery time) to assess resilience.",
+        "inputs": "System metrics, chaos experiment data, baseline metrics, resilience criteria, monitoring data.",
+        "outputs": "Chaos metrics, resilience scores, recovery measurements, system health indicators, quantitative assessments.",
+        "steps": [
+            "Define metrics: define metrics to measure resilience (MTTR, error rate, availability).",
+            "Establish baseline: establish baseline metrics before chaos.",
+            "Collect: collect metrics during chaos experiments.",
+            "Compare: compare chaos metrics with baseline.",
+            "Calculate: calculate resilience scores and recovery times.",
+            "Analyze: analyze metric trends and patterns.",
+            "Assess: assess system resilience quantitatively.",
+            "Report: report metrics and resilience assessment.",
+            "Track: track metrics over time.",
+            "Improve: improve metrics through system improvements."
+        ],
+        "example": "Chaos Metrics: baseline: 99.9% availability → chaos: inject failure → metrics: availability drops to 99.5%, MTTR 30s → compare: 0.4% drop, recovery in 30s → assess: good resilience → report: resilience score 8/10 → Chaos Metrics operational.",
+        "time_complexity": "O(c + a) where c is collection time, a is analysis time (continuous during experiments).",
+        "space_complexity": "O(m + h) where m is metric storage, h is historical data storage (time-series metrics).",
+        "strengths": [
+            "Quantitative: provides quantitative assessment of resilience.",
+            "Objective: enables objective comparison of system resilience.",
+            "Tracking: enables tracking of resilience improvements over time."
+        ],
+        "weaknesses": [
+            "Metrics: selecting right metrics can be challenging.",
+            "Baseline: requires good baseline metrics for comparison.",
+            "Interpretation: metrics require interpretation and context."
+        ],
+        "alternatives": ["Qualitative Assessment", "No Metrics", "Basic Metrics", "Advanced Analytics"],
+        "explanation": "Defines and tracks metrics to measure system resilience during chaos experiments, enabling quantitative assessment of system behavior under failure conditions."
+    },
+    "semester_11/lecture_77_chaos_engineering_advanced/fault_injection/README.md": {
+        "name": "Fault Injection",
+        "problem": "Intentionally injects faults (failures, errors, delays) into systems to test resilience, validate error handling, and identify failure modes.",
+        "intuition": "Like stress testing: Fault Injection is like stress testing for systems - you intentionally create problems (inject faults) to see how the system handles them - just as stress tests reveal weaknesses, fault injection reveals how systems handle failures.",
+        "inputs": "System components, fault types, injection points, fault parameters, monitoring tools, safety rules.",
+        "outputs": "Injected faults, system behavior, error handling validation, failure modes, resilience insights.",
+        "steps": [
+            "Identify targets: identify components to inject faults into.",
+            "Select faults: select fault types (crash, delay, error, resource exhaustion).",
+            "Configure: configure fault injection parameters.",
+            "Inject: inject fault into target component.",
+            "Observe: observe system behavior and error handling.",
+            "Measure: measure impact and recovery.",
+            "Analyze: analyze how system handles fault.",
+            "Document: document fault injection results.",
+            "Improve: improve error handling based on findings.",
+            "Iterate: iterate with different fault types."
+        ],
+        "example": "Fault Injection: target: database service → fault: network delay 5s → inject: delay database requests → observe: system times out, retries, uses cache → measure: 5s delay, graceful degradation → analyze: good error handling → Fault Injection successful.",
+        "time_complexity": "O(i + o + a) where i is injection time, o is observation time, a is analysis time (varies by fault type).",
+        "space_complexity": "O(f + d) where f is fault configuration storage, d is data storage (injection logs).",
+        "strengths": [
+            "Testing: enables testing of error handling and recovery.",
+            "Discovery: discovers failure modes before production.",
+            "Validation: validates system resilience under faults."
+        ],
+        "weaknesses": [
+            "Risk: fault injection can cause production issues.",
+            "Coverage: may not cover all fault types.",
+            "Complexity: requires understanding of system architecture."
+        ],
+        "alternatives": ["No Testing", "Manual Testing", "Simulation", "Chaos Engineering"],
+        "explanation": "Intentionally injects faults (failures, errors, delays) into systems to test resilience, validate error handling, and identify failure modes."
+    },
+    "semester_11/lecture_77_chaos_engineering_advanced/game_day_exercises/README.md": {
+        "name": "Game Day Exercises",
+        "problem": "Conducts planned, team-based exercises where real failures are simulated in production-like environments to test incident response, team coordination, and system resilience.",
+        "intuition": "Like fire drills: Game Day Exercises are like fire drills for tech teams - you simulate a real emergency (system failure) and practice responding to it (incident response) - just as fire drills prepare teams for real fires, game days prepare teams for real incidents.",
+        "inputs": "Exercise scenarios, team members, production-like environment, monitoring tools, incident response procedures.",
+        "outputs": "Exercise execution, team performance assessment, incident response validation, improvement recommendations, team learning.",
+        "steps": [
+            "Plan: plan exercise scenario and objectives.",
+            "Prepare: prepare environment and team.",
+            "Execute: execute exercise (simulate failure).",
+            "Respond: team responds to simulated incident.",
+            "Observe: observe team coordination and response.",
+            "Measure: measure response time and effectiveness.",
+            "Debrief: debrief with team after exercise.",
+            "Assess: assess team performance and procedures.",
+            "Improve: improve procedures based on learnings.",
+            "Iterate: iterate with new exercises."
+        ],
+        "example": "Game Day Exercises: scenario: database failure → execute: simulate database crash → respond: team follows incident response → measure: 15 min to identify, 30 min to resolve → debrief: discuss learnings → improve: update runbooks → Game Day Exercises successful.",
+        "time_complexity": "O(p + e + d) where p is planning time, e is execution time, d is debrief time (hours to days).",
+        "space_complexity": "O(s + d) where s is scenario storage, d is documentation storage (exercise reports).",
+        "strengths": [
+            "Realistic: provides realistic practice in safe environment.",
+            "Team building: improves team coordination and communication.",
+            "Learning: reveals gaps in incident response procedures."
+        ],
+        "weaknesses": [
+            "Time: game days require significant time investment.",
+            "Planning: requires careful planning to be effective.",
+            "Resources: requires resources and environment setup."
+        ],
+        "alternatives": ["No Exercises", "Tabletop Exercises", "Simulations", "Real Incidents"],
+        "explanation": "Conducts planned, team-based exercises where real failures are simulated in production-like environments to test incident response, team coordination, and system resilience."
+    },
+    "semester_11/lecture_77_chaos_engineering_advanced/resilience_testing/README.md": {
+        "name": "Resilience Testing",
+        "problem": "Tests system resilience by subjecting systems to various failure conditions and measuring their ability to maintain functionality, recover, and degrade gracefully.",
+        "intuition": "Like durability testing: Resilience Testing is like durability testing for products - you test how well something handles stress and damage (failures) - just as durability tests ensure products last, resilience tests ensure systems handle failures well.",
+        "inputs": "System under test, failure scenarios, test cases, resilience criteria, monitoring tools, recovery procedures.",
+        "outputs": "Resilience test results, recovery measurements, failure handling validation, resilience scores, improvement recommendations.",
+        "steps": [
+            "Define criteria: define resilience criteria and success metrics.",
+            "Design tests: design tests for various failure scenarios.",
+            "Execute: execute resilience tests.",
+            "Inject failures: inject failures into system.",
+            "Measure: measure system behavior and recovery.",
+            "Assess: assess resilience against criteria.",
+            "Document: document test results and findings.",
+            "Analyze: analyze failure modes and recovery mechanisms.",
+            "Improve: improve system resilience based on findings.",
+            "Retest: retest after improvements."
+        ],
+        "example": "Resilience Testing: test: database failure → inject: kill database → measure: system switches to replica in 10s, 99.5% availability maintained → assess: meets resilience criteria → document: test passed → Resilience Testing successful.",
+        "time_complexity": "O(d + e + a) where d is design time, e is execution time, a is analysis time (varies by test scope).",
+        "space_complexity": "O(t + r) where t is test storage, r is result storage (test data).",
+        "strengths": [
+            "Validation: validates system resilience systematically.",
+            "Coverage: tests multiple failure scenarios.",
+            "Improvement: identifies areas for resilience improvement."
+        ],
+        "weaknesses": [
+            "Time: comprehensive resilience testing takes time.",
+            "Coverage: may not test all possible failure scenarios.",
+            "Environment: requires appropriate test environment."
+        ],
+        "alternatives": ["No Testing", "Manual Testing", "Chaos Engineering", "Production Monitoring"],
+        "explanation": "Tests system resilience by subjecting systems to various failure conditions and measuring their ability to maintain functionality, recover, and degrade gracefully."
+    },
+    "semester_11/lecture_78_observability_platform/aiops/README.md": {
+        "name": "AIOps (Artificial Intelligence for IT Operations)",
+        "problem": "Uses artificial intelligence and machine learning to automate IT operations, detect anomalies, predict issues, and optimize system performance and reliability.",
+        "intuition": "Like a smart assistant for IT: AIOps is like having a smart assistant for IT operations - it watches everything (monitoring), learns patterns (ML), predicts problems (anomaly detection), and fixes issues automatically (automation) - just as a smart assistant helps you manage tasks, AIOps helps manage IT operations intelligently.",
+        "inputs": "IT metrics, logs, traces, events, ML models, historical data, operational knowledge.",
+        "outputs": "Automated operations, anomaly detection, predictions, root cause analysis, optimization recommendations, incident prevention.",
+        "steps": [
+            "Collect: collect IT data (metrics, logs, traces).",
+            "Ingest: ingest data into AIOps platform.",
+            "Analyze: analyze data using ML models.",
+            "Detect: detect anomalies and patterns.",
+            "Predict: predict potential issues and failures.",
+            "Correlate: correlate events to identify root causes.",
+            "Automate: automate responses and remediation.",
+            "Alert: alert on critical issues.",
+            "Learn: learn from incidents and outcomes.",
+            "Optimize: optimize operations based on insights."
+        ],
+        "example": "AIOps: data: collect metrics, logs → analyze: ML detects anomaly pattern → predict: predicts disk failure in 2 days → alert: notify ops team → automate: auto-scale before traffic spike → result: proactive operations → AIOps operational.",
+        "time_complexity": "O(c + a + p) where c is collection time, a is analysis time, p is prediction time (continuous, real-time).",
+        "space_complexity": "O(d + m) where d is data storage, m is model storage (ML models, historical data).",
+        "strengths": [
+            "Automation: automates IT operations tasks.",
+            "Intelligence: uses AI for intelligent decision-making.",
+            "Proactive: enables proactive issue detection and prevention."
+        ],
+        "weaknesses": [
+            "Complexity: AIOps systems are complex to implement.",
+            "Data: requires large amounts of quality data.",
+            "Trust: requires trust in AI decisions."
+        ],
+        "alternatives": ["Manual Operations", "Traditional Monitoring", "Rule-Based Automation", "ML-Assisted Operations"],
+        "explanation": "Uses artificial intelligence and machine learning to automate IT operations, detect anomalies, predict issues, and optimize system performance and reliability."
+    },
+    "semester_11/lecture_78_observability_platform/anomaly_detection/README.md": {
+        "name": "Anomaly Detection in Observability",
+        "problem": "Detects unusual patterns, behaviors, or events in system metrics, logs, and traces that deviate from normal baselines, enabling early detection of issues and incidents.",
+        "intuition": "Like a smoke detector: Anomaly Detection is like a smoke detector for systems - it watches for unusual patterns (smoke) that indicate problems (fire) - just as smoke detectors alert you to fires early, anomaly detection alerts you to system issues early.",
+        "inputs": "Time-series metrics, logs, traces, baseline patterns, detection algorithms, thresholds.",
+        "outputs": "Detected anomalies, anomaly scores, alerts, root cause indicators, incident triggers.",
+        "steps": [
+            "Establish baseline: establish baseline of normal behavior.",
+            "Collect data: collect metrics, logs, and traces.",
+            "Analyze: analyze data for deviations from baseline.",
+            "Detect: detect anomalies using algorithms (statistical, ML).",
+            "Score: score anomalies by severity and confidence.",
+            "Correlate: correlate anomalies across systems.",
+            "Alert: alert on significant anomalies.",
+            "Investigate: investigate anomalies for root causes.",
+            "Learn: learn from anomalies to improve detection.",
+            "Tune: tune detection algorithms based on feedback."
+        ],
+        "example": "Anomaly Detection: baseline: CPU usage 40-60% → detect: CPU spikes to 95% → score: high severity anomaly → correlate: correlates with database query spike → alert: alert ops team → investigate: find slow query → Anomaly Detection successful.",
+        "time_complexity": "O(c + a + d) where c is collection time, a is analysis time, d is detection time (real-time, continuous).",
+        "space_complexity": "O(d + b) where d is data storage, b is baseline storage (historical patterns).",
+        "strengths": [
+            "Early detection: enables early detection of issues.",
+            "Automation: automates issue detection.",
+            "Coverage: can detect issues across multiple dimensions."
+        ],
+        "weaknesses": [
+            "False positives: may generate false positive alerts.",
+            "Baseline: requires good baseline for accurate detection.",
+            "Tuning: requires tuning to reduce false positives."
+        ],
+        "alternatives": ["Threshold-Based Alerts", "Manual Monitoring", "Rule-Based Detection", "ML-Based Detection"],
+        "explanation": "Detects unusual patterns, behaviors, or events in system metrics, logs, and traces that deviate from normal baselines, enabling early detection of issues and incidents."
+    },
+    "semester_11/lecture_78_observability_platform/incident_management/README.md": {
+        "name": "Incident Management in Observability",
+        "problem": "Manages the lifecycle of incidents from detection through resolution, coordinating response, communication, and post-incident analysis to minimize impact and improve system reliability.",
+        "intuition": "Like emergency response: Incident Management is like emergency response for systems - when something breaks (incident), you coordinate a response (fix it), communicate (notify stakeholders), and learn (post-mortem) - just as emergency response saves lives, incident management minimizes system downtime and impact.",
+        "inputs": "Incident alerts, system state, team members, runbooks, communication channels, post-mortem templates.",
+        "outputs": "Resolved incidents, incident reports, post-mortems, improvement actions, reliability improvements.",
+        "steps": [
+            "Detect: detect incident through monitoring or alerts.",
+            "Triage: triage incident for severity and priority.",
+            "Assign: assign incident to response team.",
+            "Respond: respond to incident (investigate, fix).",
+            "Communicate: communicate status to stakeholders.",
+            "Resolve: resolve incident and restore service.",
+            "Verify: verify resolution and system health.",
+            "Document: document incident details.",
+            "Post-mortem: conduct post-incident review.",
+            "Improve: implement improvements based on learnings."
+        ],
+        "example": "Incident Management: detect: service down alert → triage: P1 severity → assign: on-call engineer → respond: identify root cause, apply fix → communicate: status updates to stakeholders → resolve: service restored in 30 min → post-mortem: identify improvements → Incident Management successful.",
+        "time_complexity": "O(d + r + p) where d is detection time, r is resolution time, p is post-mortem time (varies by incident).",
+        "space_complexity": "O(i + d) where i is incident storage, d is documentation storage (incident records).",
+        "strengths": [
+            "Coordination: coordinates effective incident response.",
+            "Learning: enables learning from incidents.",
+            "Improvement: drives continuous reliability improvement."
+        ],
+        "weaknesses": [
+            "Time: incident management can be time-consuming.",
+            "Stress: incidents can be stressful for teams.",
+            "Documentation: requires discipline to document properly."
+        ],
+        "alternatives": ["Ad-Hoc Response", "No Process", "Basic Ticketing", "Advanced Platforms"],
+        "explanation": "Manages the lifecycle of incidents from detection through resolution, coordinating response, communication, and post-incident analysis to minimize impact and improve system reliability."
+    },
+    "semester_11/lecture_78_observability_platform/observability_stack/README.md": {
+        "name": "Observability Stack",
+        "problem": "Integrates multiple observability tools (metrics, logs, traces) into a unified stack that provides comprehensive visibility into system behavior, performance, and health.",
+        "intuition": "Like a dashboard: Observability Stack is like a comprehensive dashboard for your car - it combines speed (metrics), engine sounds (logs), and GPS tracking (traces) to give you complete visibility - just as a car dashboard shows everything you need, an observability stack shows everything about your systems.",
+        "inputs": "Metrics tools, logging tools, tracing tools, visualization tools, alerting systems, integration APIs.",
+        "outputs": "Unified observability, integrated dashboards, correlated insights, comprehensive visibility, centralized monitoring.",
+        "steps": [
+            "Select tools: select observability tools (Prometheus, ELK, Jaeger).",
+            "Integrate: integrate tools into unified stack.",
+            "Collect: collect metrics, logs, and traces.",
+            "Correlate: correlate data across tools.",
+            "Visualize: create unified dashboards.",
+            "Alert: set up integrated alerting.",
+            "Query: enable unified querying across data.",
+            "Analyze: analyze data across dimensions.",
+            "Optimize: optimize stack for performance.",
+            "Maintain: maintain and update stack."
+        ],
+        "example": "Observability Stack: tools: Prometheus (metrics), ELK (logs), Jaeger (traces) → integrate: unified stack → correlate: correlate metrics with logs and traces → dashboard: unified dashboard → result: complete system visibility → Observability Stack operational.",
+        "time_complexity": "O(i + c + a) where i is integration time, c is collection time, a is analysis time (continuous).",
+        "space_complexity": "O(s + d) where s is stack storage, d is data storage (metrics, logs, traces).",
+        "strengths": [
+            "Comprehensive: provides comprehensive system visibility.",
+            "Integration: integrates multiple observability dimensions.",
+            "Efficiency: enables efficient troubleshooting through correlation."
+        ],
+        "weaknesses": [
+            "Complexity: observability stacks can be complex to manage.",
+            "Cost: multiple tools can be expensive.",
+            "Integration: integrating tools requires effort."
+        ],
+        "alternatives": ["Single Tool", "Ad-Hoc Tools", "Basic Monitoring", "Unified Platforms"],
+        "explanation": "Integrates multiple observability tools (metrics, logs, traces) into a unified stack that provides comprehensive visibility into system behavior, performance, and health."
+    },
+    "semester_11/lecture_78_observability_platform/root_cause_analysis/README.md": {
+        "name": "Root Cause Analysis (RCA)",
+        "problem": "Systematically identifies the underlying root cause of incidents and problems, enabling permanent fixes rather than temporary workarounds and preventing recurrence.",
+        "intuition": "Like detective work: Root Cause Analysis is like detective work for incidents - you investigate clues (logs, metrics), trace back to find the real cause (root cause), not just the symptoms - just as detectives solve crimes by finding the real culprit, RCA solves incidents by finding the real cause.",
+        "inputs": "Incident data, logs, metrics, traces, system state, timeline, team knowledge.",
+        "outputs": "Root cause identification, incident analysis, improvement recommendations, permanent fixes, prevention measures.",
+        "steps": [
+            "Gather data: gather all relevant data (logs, metrics, traces).",
+            "Timeline: create timeline of events leading to incident.",
+            "Analyze: analyze data and timeline.",
+            "Hypothesize: form hypotheses about root cause.",
+            "Investigate: investigate hypotheses.",
+            "Identify: identify root cause.",
+            "Verify: verify root cause through testing or evidence.",
+            "Document: document root cause and analysis.",
+            "Fix: implement permanent fix for root cause.",
+            "Prevent: implement measures to prevent recurrence."
+        ],
+        "example": "Root Cause Analysis: incident: service outage → gather: logs, metrics, traces → timeline: database connection pool exhausted → analyze: connection leak in code → identify: root cause: missing connection cleanup → fix: add connection cleanup → prevent: add monitoring → RCA successful.",
+        "time_complexity": "O(g + a + i) where g is data gathering time, a is analysis time, i is investigation time (hours to days).",
+        "space_complexity": "O(d + a) where d is data storage, a is analysis storage (RCA documents).",
+        "strengths": [
+            "Permanent fixes: enables permanent fixes rather than workarounds.",
+            "Prevention: prevents recurrence of incidents.",
+            "Learning: provides deep learning about system behavior."
+        ],
+        "weaknesses": [
+            "Time: thorough RCA takes significant time.",
+            "Complexity: complex incidents may have multiple root causes.",
+            "Skills: requires analytical and investigative skills."
+        ],
+        "alternatives": ["Symptom Fixing", "Quick Fixes", "Blame Assignment", "No Analysis"],
+        "explanation": "Systematically identifies the underlying root cause of incidents and problems, enabling permanent fixes rather than temporary workarounds and preventing recurrence."
+    },
+    "semester_11/lecture_78_observability_platform/unified_observability/README.md": {
+        "name": "Unified Observability",
+        "problem": "Provides a single, unified view of system observability by integrating metrics, logs, traces, and events into one platform, enabling efficient troubleshooting and comprehensive system understanding.",
+        "intuition": "Like a unified control center: Unified Observability is like a unified control center - instead of looking at separate screens for different things (metrics here, logs there), everything is in one place - just as a control center gives you everything at a glance, unified observability gives you complete system visibility in one place.",
+        "inputs": "Metrics, logs, traces, events, observability data, integration APIs, correlation rules.",
+        "outputs": "Unified platform, integrated views, correlated insights, efficient troubleshooting, comprehensive visibility.",
+        "steps": [
+            "Integrate: integrate metrics, logs, traces, and events.",
+            "Correlate: correlate data across observability dimensions.",
+            "Unify: create unified data model and storage.",
+            "Visualize: provide unified visualization and dashboards.",
+            "Query: enable unified querying across all data.",
+            "Analyze: enable analysis across observability dimensions.",
+            "Alert: provide unified alerting based on correlated data.",
+            "Investigate: enable efficient investigation through correlation.",
+            "Optimize: optimize for performance and usability.",
+            "Evolve: continuously evolve unified platform."
+        ],
+        "example": "Unified Observability: data: metrics, logs, traces → integrate: unified platform → correlate: correlate error logs with slow traces → visualize: unified dashboard → query: query across all data → result: troubleshoot issues 3x faster → Unified Observability operational.",
+        "time_complexity": "O(i + c + q) where i is integration time, c is correlation time, q is query time (real-time, optimized).",
+        "space_complexity": "O(u + d) where u is unified storage, d is data storage (all observability data).",
+        "strengths": [
+            "Efficiency: enables efficient troubleshooting through correlation.",
+            "Comprehensive: provides comprehensive system visibility.",
+            "Usability: single platform is easier to use than multiple tools."
+        ],
+        "weaknesses": [
+            "Complexity: building unified observability is complex.",
+            "Integration: integrating diverse data sources is challenging.",
+            "Performance: unified platform must handle large data volumes."
+        ],
+        "alternatives": ["Separate Tools", "Ad-Hoc Observability", "Basic Monitoring", "Integrated Stacks"],
+        "explanation": "Provides a single, unified view of system observability by integrating metrics, logs, traces, and events into one platform, enabling efficient troubleshooting and comprehensive system understanding."
     }
 }
 

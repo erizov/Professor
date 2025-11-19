@@ -1,40 +1,51 @@
-# Incident Management
+# Incident Management in Observability
 
 1. **Name of Algorithm**  
-   Incident Management
+   Incident Management in Observability
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements incident management algorithm.
+   Manages the lifecycle of incidents from detection through resolution, coordinating response, communication, and post-incident analysis to minimize impact and improve system reliability.
 
 3. **Intuition (plain-language explanation)**  
-   Incident Management is a fundamental algorithm in computer science.
+   Like emergency response: Incident Management is like emergency response for systems - when something breaks (incident), you coordinate a response (fix it), communicate (notify stakeholders), and learn (post-mortem) - just as emergency response saves lives, incident management minimizes system downtime and impact.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Incident alerts, system state, team members, runbooks, communication channels, post-mortem templates.  
+   - Output: Resolved incidents, incident reports, post-mortems, improvement actions, reliability improvements.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Detect: detect incident through monitoring or alerts.
+2. Triage: triage incident for severity and priority.
+3. Assign: assign incident to response team.
+4. Respond: respond to incident (investigate, fix).
+5. Communicate: communicate status to stakeholders.
+6. Resolve: resolve incident and restore service.
+7. Verify: verify resolution and system health.
+8. Document: document incident details.
+9. Post-mortem: conduct post-incident review.
+10. Improve: implement improvements based on learnings.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Incident Management applied to sample data.
+   Incident Management: detect: service down alert → triage: P1 severity → assign: on-call engineer → respond: identify root cause, apply fix → communicate: status updates to stakeholders → resolve: service restored in 30 min → post-mortem: identify improvements → Incident Management successful.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(d + r + p) where d is detection time, r is resolution time, p is post-mortem time (varies by incident).  
+   - Space: O(i + d) where i is incident storage, d is documentation storage (incident records).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Coordination: coordinates effective incident response.
+- Learning: enables learning from incidents.
+- Improvement: drives continuous reliability improvement.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Time: incident management can be time-consuming.
+- Stress: incidents can be stressful for teams.
+- Documentation: requires discipline to document properly.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Ad-Hoc Response, No Process, Basic Ticketing, Advanced Platforms
 
 11. **30-second explanation (your own words)**  
-    Incident Management solves computational problems efficiently.
+    Manages the lifecycle of incidents from detection through resolution, coordinating response, communication, and post-incident analysis to minimize impact and improve system reliability.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
