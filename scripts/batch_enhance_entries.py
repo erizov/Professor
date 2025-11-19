@@ -18483,6 +18483,550 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Static Documentation", "Role-Based Docs", "Skill-Based Docs", "Community Recommendations"],
         "explanation": "Documentation systems that customize content, examples, and recommendations based on individual user profiles, preferences, and learning history."
+    },
+    "semester_14/lecture_101_developer_experience/api_explorer/README.md": {
+        "name": "API Explorer",
+        "problem": "Provides interactive tools for discovering, testing, and understanding APIs by offering visual interfaces, request builders, response viewers, and documentation integration.",
+        "intuition": "Like a test drive for APIs: API Explorer is like a test drive for a car - instead of buying blind (using API without testing), you can test drive (explore API) - you can try different features (endpoints), see how it responds (responses), and understand how it works (documentation) before committing to use it.",
+        "inputs": "API endpoints, request parameters, authentication credentials, API documentation, test data, exploration queries.",
+        "outputs": "API responses, request examples, response schemas, documentation links, test results, exploration history.",
+        "steps": [
+            "Discover: discover available API endpoints.",
+            "Select: select endpoint to explore.",
+            "Build: build request with parameters.",
+            "Authenticate: provide authentication credentials.",
+            "Execute: execute API request.",
+            "View: view response and status.",
+            "Analyze: analyze response structure.",
+            "Document: access related documentation.",
+            "Test: test different scenarios.",
+            "Share: share exploration results."
+        ],
+        "example": "API Explorer: discover endpoints → select /users → build request (GET, params) → authenticate → execute → view response (200, JSON) → analyze schema → API Explorer successful.",
+        "time_complexity": "O(r) where r is request execution time (API exploration complexity).",
+        "space_complexity": "O(h + d) where h is history, d is documentation (explorer storage).",
+        "strengths": [
+            "Discovery: helps discover and understand APIs.",
+            "Testing: enables quick API testing.",
+            "Learning: facilitates API learning and experimentation."
+        ],
+        "weaknesses": [
+            "Limitations: may not support all API features.",
+            "Security: requires careful handling of credentials.",
+            "Dependencies: depends on API availability."
+        ],
+        "alternatives": ["Command Line Tools", "Postman", "cURL", "API Documentation Only"],
+        "explanation": "Interactive tools that help developers discover, test, and understand APIs through visual interfaces and integrated documentation."
+    },
+    "semester_14/lecture_101_developer_experience/developer_portals/README.md": {
+        "name": "Developer Portals",
+        "problem": "Creates centralized platforms that provide developers with access to APIs, documentation, tools, support, and resources needed to build applications using a platform's services.",
+        "intuition": "Like a developer's one-stop shop: Developer portals are like a one-stop shop for developers - you have everything in one place: APIs (products), documentation (manuals), tools (utilities), support (help desk), and resources (guides) - just as a shopping mall has everything, a developer portal has everything developers need.",
+        "inputs": "API documentation, code samples, SDKs, authentication info, support resources, developer tools, community content.",
+        "outputs": "Developer portal website, API access, documentation, code examples, developer tools, support channels, community platform.",
+        "steps": [
+            "Design: design portal structure and navigation.",
+            "Integrate: integrate APIs and services.",
+            "Document: create comprehensive documentation.",
+            "Provide: provide code samples and SDKs.",
+            "Authenticate: set up authentication and keys.",
+            "Support: establish support channels.",
+            "Tools: provide developer tools and utilities.",
+            "Community: build community features.",
+            "Maintain: maintain and update portal content.",
+            "Monitor: monitor developer usage and feedback."
+        ],
+        "example": "Developer Portal: design → integrate 10 APIs → document → provide Python SDK → set up auth → support forum → tools → community → maintain → Developer Portal successful.",
+        "time_complexity": "O(c) where c is content management complexity (portal complexity).",
+        "space_complexity": "O(d + t) where d is documentation, t is tools (portal storage).",
+        "strengths": [
+            "Centralization: provides centralized access to resources.",
+            "Efficiency: improves developer onboarding and productivity.",
+            "Community: fosters developer community."
+        ],
+        "weaknesses": [
+            "Maintenance: requires ongoing maintenance and updates.",
+            "Complexity: can become complex with many services.",
+            "Quality: depends on documentation and tool quality."
+        ],
+        "alternatives": ["Scattered Resources", "Email Support", "Basic Documentation", "Third-Party Platforms"],
+        "explanation": "Centralized platforms that provide developers with APIs, documentation, tools, and support resources in one place."
+    },
+    "semester_14/lecture_101_developer_experience/feedback_loops/README.md": {
+        "name": "Developer Feedback Loops",
+        "problem": "Establishes mechanisms for collecting, processing, and acting on developer feedback to improve products, documentation, and developer experience continuously.",
+        "intuition": "Like a feedback system: Developer feedback loops are like a feedback system - developers provide input (feedback), the system processes it (analysis), and improvements are made (action) - just as a thermostat adjusts temperature based on feedback, feedback loops adjust products based on developer input.",
+        "inputs": "Developer feedback, usage metrics, error reports, feature requests, support tickets, survey responses, community discussions.",
+        "outputs": "Processed feedback, prioritized improvements, product updates, documentation updates, feature releases, developer communications.",
+        "steps": [
+            "Collect: collect feedback from multiple channels.",
+            "Aggregate: aggregate feedback from various sources.",
+            "Analyze: analyze feedback for patterns and priorities.",
+            "Prioritize: prioritize feedback based on impact and feasibility.",
+            "Plan: plan improvements and updates.",
+            "Implement: implement improvements.",
+            "Communicate: communicate changes to developers.",
+            "Measure: measure impact of improvements.",
+            "Iterate: iterate based on results.",
+            "Close: close feedback loop with updates."
+        ],
+        "example": "Feedback Loop: collect 100 feedback items → aggregate → analyze → prioritize (top 5) → plan → implement → communicate → measure → iterate → Feedback Loop successful.",
+        "time_complexity": "O(f * a) where f is feedback volume, a is analysis complexity (feedback processing complexity).",
+        "space_complexity": "O(f + m) where f is feedback, m is metrics (feedback storage).",
+        "strengths": [
+            "Improvement: drives continuous improvement.",
+            "Engagement: increases developer engagement.",
+            "Quality: improves product and documentation quality."
+        ],
+        "weaknesses": [
+            "Volume: can be overwhelmed by feedback volume.",
+            "Prioritization: requires careful prioritization.",
+            "Resources: requires resources to act on feedback."
+        ],
+        "alternatives": ["No Feedback", "Ad-Hoc Feedback", "Annual Surveys", "Internal Only"],
+        "explanation": "Structured processes for collecting, analyzing, and acting on developer feedback to continuously improve products and developer experience."
+    },
+    "semester_14/lecture_101_developer_experience/onboarding_automation/README.md": {
+        "name": "Developer Onboarding Automation",
+        "problem": "Automates the developer onboarding process by providing guided setup, automated configuration, interactive tutorials, and progress tracking to reduce time-to-first-success.",
+        "intuition": "Like an automated welcome tour: Developer onboarding automation is like an automated welcome tour - when you arrive (sign up), you get a guided tour (setup wizard), automated setup (configuration), interactive tutorials (learning), and progress tracking (checklist) - this helps you get started quickly and successfully.",
+        "inputs": "Developer signup, platform configuration, tutorial content, setup scripts, progress tracking, completion criteria.",
+        "outputs": "Onboarded developers, configured environments, completed tutorials, progress reports, success metrics, support resources.",
+        "steps": [
+            "Welcome: welcome new developers.",
+            "Guide: guide through setup process.",
+            "Configure: automate environment configuration.",
+            "Tutorial: provide interactive tutorials.",
+            "Track: track onboarding progress.",
+            "Validate: validate setup and understanding.",
+            "Support: provide support during onboarding.",
+            "Complete: mark onboarding as complete.",
+            "Follow-up: follow up with additional resources.",
+            "Measure: measure onboarding success metrics."
+        ],
+        "example": "Onboarding: welcome → guide setup → configure API keys → tutorial (5 steps) → track progress → validate → support → complete → follow-up → Onboarding successful (15 min).",
+        "time_complexity": "O(s + t) where s is setup time, t is tutorial time (onboarding complexity).",
+        "space_complexity": "O(c + p) where c is content, p is progress (onboarding storage).",
+        "strengths": [
+            "Speed: reduces time-to-first-success.",
+            "Consistency: ensures consistent onboarding experience.",
+            "Success: improves onboarding success rates."
+        ],
+        "weaknesses": [
+            "Complexity: requires careful design and maintenance.",
+            "Flexibility: may not fit all developer needs.",
+            "Resources: requires resources to create and maintain."
+        ],
+        "alternatives": ["Manual Onboarding", "Documentation Only", "Video Tutorials", "Community Support"],
+        "explanation": "Automated systems that guide developers through setup, configuration, and learning to reduce onboarding time and improve success rates."
+    },
+    "semester_14/lecture_101_developer_experience/sandbox_environments/README.md": {
+        "name": "Developer Sandbox Environments",
+        "problem": "Provides isolated, safe testing environments where developers can experiment with APIs, test code, and learn without affecting production systems or requiring complex local setup.",
+        "intuition": "Like a playground: Sandbox environments are like a playground - you can play (test), experiment (try things), and learn (practice) in a safe space without breaking anything (production) - just as a playground is safe for kids, sandboxes are safe for developers to experiment.",
+        "inputs": "Developer requests, environment templates, API access, test data, resource limits, time limits, isolation requirements.",
+        "outputs": "Sandbox environments, API access, test data, isolated resources, usage metrics, environment snapshots.",
+        "steps": [
+            "Request: developer requests sandbox environment.",
+            "Provision: provision isolated environment.",
+            "Configure: configure environment with APIs and data.",
+            "Access: provide access credentials.",
+            "Use: developer uses sandbox for testing.",
+            "Monitor: monitor resource usage and limits.",
+            "Snapshot: create environment snapshots.",
+            "Reset: reset environment when needed.",
+            "Cleanup: cleanup expired environments.",
+            "Report: report usage and metrics."
+        ],
+        "example": "Sandbox: request → provision isolated env → configure APIs → access → test code → monitor → snapshot → reset → Sandbox successful.",
+        "time_complexity": "O(p + u) where p is provisioning time, u is usage time (sandbox complexity).",
+        "space_complexity": "O(e + d) where e is environment, d is data (sandbox storage).",
+        "strengths": [
+            "Safety: provides safe testing environment.",
+            "Convenience: eliminates need for local setup.",
+            "Learning: facilitates learning and experimentation."
+        ],
+        "weaknesses": [
+            "Resources: requires infrastructure resources.",
+            "Limitations: may have resource and time limits.",
+            "Isolation: requires careful isolation and security."
+        ],
+        "alternatives": ["Local Development", "Production Testing", "Staging Environments", "Virtual Machines"],
+        "explanation": "Isolated testing environments that allow developers to experiment with APIs and test code safely without affecting production systems."
+    },
+    "semester_14/lecture_101_developer_experience/tutorial_systems/README.md": {
+        "name": "Interactive Tutorial Systems",
+        "problem": "Creates interactive, step-by-step tutorials that guide developers through learning APIs, tools, and concepts with hands-on exercises, code examples, and progress tracking.",
+        "intuition": "Like an interactive textbook: Tutorial systems are like an interactive textbook - you read (instructions), do exercises (hands-on), get feedback (validation), and track progress (checklist) - just as a textbook guides learning, tutorials guide developers through learning.",
+        "inputs": "Tutorial content, code examples, exercises, validation rules, progress tracking, completion criteria, learning paths.",
+        "outputs": "Interactive tutorials, code exercises, validation feedback, progress tracking, completion certificates, learning analytics.",
+        "steps": [
+            "Design: design tutorial structure and content.",
+            "Create: create interactive content and exercises.",
+            "Validate: set up validation for exercises.",
+            "Track: implement progress tracking.",
+            "Present: present tutorials to developers.",
+            "Guide: guide developers through steps.",
+            "Validate: validate exercise completion.",
+            "Feedback: provide feedback and hints.",
+            "Complete: mark tutorials as complete.",
+            "Analyze: analyze learning analytics."
+        ],
+        "example": "Tutorial: design 10-step tutorial → create exercises → validate code → track progress → present → guide → validate step 3 → feedback → complete → Tutorial successful.",
+        "time_complexity": "O(t * e) where t is tutorial steps, e is exercise complexity (tutorial complexity).",
+        "space_complexity": "O(c + p) where c is content, p is progress (tutorial storage).",
+        "strengths": [
+            "Learning: improves learning effectiveness.",
+            "Engagement: increases developer engagement.",
+            "Progress: tracks learning progress."
+        ],
+        "weaknesses": [
+            "Creation: requires time to create quality tutorials.",
+            "Maintenance: requires maintenance as APIs change.",
+            "Flexibility: may not fit all learning styles."
+        ],
+        "alternatives": ["Documentation Only", "Video Tutorials", "Written Guides", "Community Learning"],
+        "explanation": "Interactive systems that guide developers through learning with step-by-step tutorials, hands-on exercises, and progress tracking."
+    },
+    "semester_14/lecture_102_community_management/community_analytics/README.md": {
+        "name": "Community Analytics",
+        "problem": "Analyzes community engagement, participation, and health by tracking metrics like activity levels, contribution patterns, member growth, and sentiment to inform community management decisions.",
+        "intuition": "Like a health checkup for communities: Community analytics is like a health checkup - you measure various metrics (activity, growth, engagement), analyze the results (patterns, trends), and identify issues (declining engagement) - just as a doctor checks your health, analytics check community health.",
+        "inputs": "Community data, activity logs, member information, contribution data, engagement metrics, time periods, analysis parameters.",
+        "outputs": "Analytics reports, engagement metrics, growth trends, participation patterns, health scores, recommendations.",
+        "steps": [
+            "Collect: collect community data and metrics.",
+            "Aggregate: aggregate data across time periods.",
+            "Analyze: analyze engagement and participation patterns.",
+            "Measure: measure key metrics (DAU, MAU, contributions).",
+            "Trend: identify trends and patterns.",
+            "Compare: compare metrics across time periods.",
+            "Score: calculate community health scores.",
+            "Report: generate analytics reports.",
+            "Recommend: recommend actions based on insights.",
+            "Monitor: monitor metrics continuously."
+        ],
+        "example": "Community Analytics: collect data → aggregate → analyze → measure (1000 DAU, 5000 MAU) → trend (growing) → compare → score (8/10) → report → recommend → Community Analytics successful.",
+        "time_complexity": "O(d * a) where d is data volume, a is analysis complexity (analytics complexity).",
+        "space_complexity": "O(d + m) where d is data, m is metrics (analytics storage).",
+        "strengths": [
+            "Insights: provides valuable insights into community health.",
+            "Decision-making: informs community management decisions.",
+            "Optimization: helps optimize community engagement."
+        ],
+        "weaknesses": [
+            "Privacy: raises privacy concerns about data collection.",
+            "Complexity: requires sophisticated analysis techniques.",
+            "Interpretation: requires careful interpretation of metrics."
+        ],
+        "alternatives": ["Manual Tracking", "Basic Metrics", "Third-Party Analytics", "No Analytics"],
+        "explanation": "Analytics systems that track and analyze community engagement, participation, and health metrics to inform community management."
+    },
+    "semester_14/lecture_102_community_management/community_platforms/README.md": {
+        "name": "Community Platforms",
+        "problem": "Provides platforms and tools for building, managing, and growing developer communities with features like forums, chat, events, content sharing, and member management.",
+        "intuition": "Like a town square: Community platforms are like a town square - you have spaces for discussion (forums), real-time chat (chat), events (meetups), sharing (content), and management (administration) - just as a town square brings people together, community platforms bring developers together.",
+        "inputs": "Platform configuration, community rules, member data, content, events, moderation settings, integration requirements.",
+        "outputs": "Community platform, forums, chat channels, event management, content library, member directory, analytics dashboard.",
+        "steps": [
+            "Choose: choose platform or build custom.",
+            "Configure: configure platform settings and rules.",
+            "Setup: set up forums, chat, and features.",
+            "Onboard: onboard initial members.",
+            "Moderate: establish moderation and governance.",
+            "Engage: engage community with content and events.",
+            "Grow: grow community through outreach.",
+            "Manage: manage members and content.",
+            "Analyze: analyze community health and engagement.",
+            "Iterate: iterate on platform and features."
+        ],
+        "example": "Community Platform: choose platform → configure → setup forums → onboard 100 members → moderate → engage → grow to 1000 → manage → analyze → Community Platform successful.",
+        "time_complexity": "O(s + m) where s is setup time, m is management time (platform complexity).",
+        "space_complexity": "O(c + m) where c is content, m is members (platform storage).",
+        "strengths": [
+            "Engagement: facilitates community engagement.",
+            "Growth: supports community growth.",
+            "Management: provides tools for community management."
+        ],
+        "weaknesses": [
+            "Maintenance: requires ongoing maintenance and moderation.",
+            "Resources: requires resources to build and maintain.",
+            "Quality: depends on community participation and quality."
+        ],
+        "alternatives": ["No Platform", "Basic Forums", "Social Media", "Third-Party Platforms"],
+        "explanation": "Platforms and tools for building, managing, and growing developer communities with features for discussion, collaboration, and engagement."
+    },
+    "semester_14/lecture_102_community_management/contribution_management/README.md": {
+        "name": "Contribution Management",
+        "problem": "Manages and facilitates community contributions by providing contribution guidelines, review processes, recognition systems, and tools for tracking and rewarding contributions.",
+        "intuition": "Like a contribution coordinator: Contribution management is like a contribution coordinator - you set guidelines (rules), review contributions (quality control), recognize contributors (rewards), and track contributions (metrics) - just as a coordinator manages volunteers, contribution management manages community contributors.",
+        "inputs": "Contributions, contribution guidelines, review criteria, contributor information, recognition rules, tracking data.",
+        "outputs": "Reviewed contributions, contributor recognition, contribution metrics, guidelines, review reports, contribution history.",
+        "steps": [
+            "Define: define contribution guidelines and processes.",
+            "Accept: accept contributions from community.",
+            "Review: review contributions for quality and compliance.",
+            "Provide: provide feedback to contributors.",
+            "Approve: approve contributions that meet criteria.",
+            "Integrate: integrate approved contributions.",
+            "Recognize: recognize and reward contributors.",
+            "Track: track contribution metrics and history.",
+            "Improve: improve processes based on feedback.",
+            "Maintain: maintain contribution guidelines and processes."
+        ],
+        "example": "Contribution Management: define guidelines → accept PR → review → feedback → approve → integrate → recognize contributor → track → Contribution Management successful.",
+        "time_complexity": "O(c * r) where c is contributions, r is review time (contribution management complexity).",
+        "space_complexity": "O(c + h) where c is contributions, h is history (contribution storage).",
+        "strengths": [
+            "Quality: ensures contribution quality.",
+            "Engagement: encourages community contributions.",
+            "Recognition: recognizes and rewards contributors."
+        ],
+        "weaknesses": [
+            "Time: requires time for review and management.",
+            "Complexity: can be complex with many contributions.",
+            "Resources: requires resources for review and recognition."
+        ],
+        "alternatives": ["No Management", "Basic Review", "Automated Review", "External Review"],
+        "explanation": "Systems and processes for managing community contributions, including guidelines, review, recognition, and tracking."
+    },
+    "semester_14/lecture_102_community_management/engagement_metrics/README.md": {
+        "name": "Community Engagement Metrics",
+        "problem": "Measures and tracks community engagement through metrics like active users, participation rates, content creation, response times, and sentiment to assess community health and guide engagement strategies.",
+        "intuition": "Like a fitness tracker for communities: Engagement metrics are like a fitness tracker - you measure various activities (posts, replies, participation), track trends (increasing/decreasing), and assess health (engagement score) - just as a fitness tracker monitors your activity, engagement metrics monitor community activity.",
+        "inputs": "Community activity data, member data, content data, time periods, metric definitions, analysis parameters.",
+        "outputs": "Engagement metrics, participation rates, activity trends, health scores, engagement reports, recommendations.",
+        "steps": [
+            "Define: define engagement metrics and KPIs.",
+            "Collect: collect activity and participation data.",
+            "Calculate: calculate engagement metrics.",
+            "Track: track metrics over time.",
+            "Analyze: analyze trends and patterns.",
+            "Compare: compare metrics across segments.",
+            "Score: calculate engagement scores.",
+            "Report: generate engagement reports.",
+            "Recommend: recommend engagement strategies.",
+            "Monitor: monitor metrics continuously."
+        ],
+        "example": "Engagement Metrics: define (DAU, posts, replies) → collect → calculate (1000 DAU, 500 posts/day) → track → analyze → compare → score (7.5/10) → report → recommend → Engagement Metrics successful.",
+        "time_complexity": "O(d * c) where d is data volume, c is calculation complexity (metrics complexity).",
+        "space_complexity": "O(d + m) where d is data, m is metrics (metrics storage).",
+        "strengths": [
+            "Measurement: provides quantitative measurement of engagement.",
+            "Insights: reveals engagement patterns and trends.",
+            "Optimization: helps optimize engagement strategies."
+        ],
+        "weaknesses": [
+            "Interpretation: requires careful interpretation of metrics.",
+            "Privacy: raises privacy concerns about data collection.",
+            "Completeness: may not capture all aspects of engagement."
+        ],
+        "alternatives": ["No Metrics", "Basic Counts", "Qualitative Assessment", "Third-Party Analytics"],
+        "explanation": "Metrics and systems for measuring and tracking community engagement to assess health and guide engagement strategies."
+    },
+    "semester_14/lecture_102_community_management/knowledge_sharing/README.md": {
+        "name": "Community Knowledge Sharing",
+        "problem": "Facilitates knowledge sharing within developer communities by providing platforms, tools, and incentives for sharing expertise, best practices, and solutions.",
+        "intuition": "Like a knowledge library: Knowledge sharing is like a knowledge library - community members contribute knowledge (books), organize it (catalog), and share it (lending) - just as a library facilitates knowledge access, knowledge sharing facilitates community learning.",
+        "inputs": "Knowledge content, contributor information, organization schemes, search capabilities, sharing incentives, quality criteria.",
+        "outputs": "Knowledge base, organized content, searchable resources, contributor recognition, quality ratings, sharing metrics.",
+        "steps": [
+            "Create: create knowledge sharing platform.",
+            "Organize: organize knowledge into categories.",
+            "Contribute: enable community contributions.",
+            "Curate: curate and quality-check content.",
+            "Search: provide search and discovery tools.",
+            "Share: facilitate knowledge sharing.",
+            "Recognize: recognize knowledge contributors.",
+            "Update: update and maintain knowledge base.",
+            "Measure: measure knowledge sharing impact.",
+            "Improve: improve platform and processes."
+        ],
+        "example": "Knowledge Sharing: create platform → organize (10 categories) → contribute (100 articles) → curate → search → share → recognize top contributors → update → Knowledge Sharing successful.",
+        "time_complexity": "O(c * q) where c is content, q is quality check time (knowledge sharing complexity).",
+        "space_complexity": "O(k + m) where k is knowledge, m is metadata (knowledge storage).",
+        "strengths": [
+            "Learning: facilitates community learning.",
+            "Efficiency: reduces duplicate questions and answers.",
+            "Value: creates valuable community resource."
+        ],
+        "weaknesses": [
+            "Quality: requires quality control and curation.",
+            "Maintenance: requires ongoing maintenance.",
+            "Participation: depends on community participation."
+        ],
+        "alternatives": ["No Sharing", "Informal Sharing", "External Resources", "Paid Content"],
+        "explanation": "Platforms and processes for facilitating knowledge sharing within developer communities to enable learning and collaboration."
+    },
+    "semester_14/lecture_102_community_management/moderation_automation/README.md": {
+        "name": "Community Moderation Automation",
+        "problem": "Automates community moderation tasks like spam detection, content filtering, rule enforcement, and user management using AI and rule-based systems to maintain community quality at scale.",
+        "intuition": "Like automated security guards: Moderation automation is like automated security guards - they monitor activity (content), detect problems (spam, violations), take action (remove, warn), and escalate when needed (human review) - just as security guards maintain order, moderation automation maintains community quality.",
+        "inputs": "Community content, user behavior, moderation rules, AI models, escalation criteria, moderation history.",
+        "outputs": "Moderated content, flagged items, automated actions, moderation reports, escalation alerts, quality metrics.",
+        "steps": [
+            "Define: define moderation rules and criteria.",
+            "Monitor: monitor community content and behavior.",
+            "Detect: detect violations using rules and AI.",
+            "Classify: classify content and behavior.",
+            "Action: take automated actions (remove, warn, flag).",
+            "Escalate: escalate complex cases to humans.",
+            "Learn: learn from moderation decisions.",
+            "Update: update rules and models.",
+            "Report: generate moderation reports.",
+            "Improve: improve automation based on results."
+        ],
+        "example": "Moderation Automation: define rules → monitor → detect spam (10 items) → classify → remove → escalate 2 complex cases → learn → update → Moderation Automation successful.",
+        "time_complexity": "O(c * d) where c is content, d is detection complexity (moderation complexity).",
+        "space_complexity": "O(r + m) where r is rules, m is models (moderation storage).",
+        "strengths": [
+            "Scale: enables moderation at scale.",
+            "Consistency: ensures consistent moderation.",
+            "Efficiency: reduces manual moderation workload."
+        ],
+        "weaknesses": [
+            "Accuracy: may have false positives/negatives.",
+            "Context: may miss context and nuance.",
+            "Bias: may have algorithmic bias."
+        ],
+        "alternatives": ["Manual Moderation", "Rule-Based Only", "AI-Only", "Hybrid Approaches"],
+        "explanation": "Automated systems that use AI and rules to moderate community content and behavior, maintaining quality at scale."
+    },
+    "semester_14/lecture_95_support_advanced/ai_powered_support/README.md": {
+        "name": "AI-Powered Customer Support",
+        "problem": "Enhances customer support with AI capabilities like chatbots, automated responses, intelligent routing, sentiment analysis, and knowledge base integration to improve response times and support quality.",
+        "intuition": "Like an AI assistant for support: AI-powered support is like having an AI assistant for customer support - it handles common questions (chatbot), routes complex issues (intelligent routing), understands sentiment (sentiment analysis), and learns from interactions (ML) - just as an assistant helps, AI helps support teams provide better service.",
+        "inputs": "Support tickets, customer queries, knowledge base, conversation history, sentiment data, routing rules, AI models.",
+        "outputs": "Automated responses, routed tickets, sentiment analysis, support recommendations, resolution suggestions, support metrics.",
+        "steps": [
+            "Receive: receive customer support requests.",
+            "Analyze: analyze request using NLP and AI.",
+            "Classify: classify request type and priority.",
+            "Route: route to appropriate support channel or agent.",
+            "Respond: generate automated responses when possible.",
+            "Sentiment: analyze customer sentiment.",
+            "Suggest: suggest solutions from knowledge base.",
+            "Escalate: escalate complex issues to humans.",
+            "Learn: learn from resolutions and feedback.",
+            "Improve: improve AI models and responses."
+        ],
+        "example": "AI Support: receive query → analyze → classify (billing) → route → respond (automated) → sentiment (neutral) → suggest solution → resolve → AI Support successful.",
+        "time_complexity": "O(q * a) where q is queries, a is AI processing time (AI support complexity).",
+        "space_complexity": "O(k + m) where k is knowledge base, m is models (AI support storage).",
+        "strengths": [
+            "Speed: provides fast response times.",
+            "Scale: handles high volume of requests.",
+            "Consistency: ensures consistent support quality."
+        ],
+        "weaknesses": [
+            "Complexity: complex issues may require human intervention.",
+            "Accuracy: may have limitations in understanding context.",
+            "Training: requires training data and model maintenance."
+        ],
+        "alternatives": ["Human-Only Support", "Rule-Based Automation", "Hybrid Support", "Self-Service Only"],
+        "explanation": "AI-enhanced customer support systems that use chatbots, intelligent routing, and automation to improve support efficiency and quality."
+    },
+    "semester_14/lecture_95_support_advanced/chatbot_advanced/README.md": {
+        "name": "Advanced Chatbots",
+        "problem": "Creates sophisticated chatbots with natural language understanding, context awareness, multi-turn conversations, integration with backend systems, and learning capabilities for effective customer interactions.",
+        "intuition": "Like a smart conversational assistant: Advanced chatbots are like smart conversational assistants - they understand natural language (not just keywords), remember context (conversation history), handle complex conversations (multi-turn), and integrate with systems (APIs) - just as a human assistant would, but available 24/7.",
+        "inputs": "User messages, conversation context, knowledge base, backend APIs, user preferences, conversation history, training data.",
+        "outputs": "Chatbot responses, conversation flows, API calls, context updates, user satisfaction, conversation analytics.",
+        "steps": [
+            "Receive: receive user message.",
+            "Understand: understand intent using NLP.",
+            "Context: retrieve conversation context.",
+            "Process: process request with context.",
+            "Integrate: integrate with backend systems if needed.",
+            "Generate: generate appropriate response.",
+            "Context: update conversation context.",
+            "Learn: learn from interaction.",
+            "Improve: improve responses based on feedback.",
+            "Analytics: track conversation analytics."
+        ],
+        "example": "Advanced Chatbot: receive 'check order status' → understand intent → context → process → integrate API → generate response → update context → Advanced Chatbot successful.",
+        "time_complexity": "O(m * n) where m is message processing, n is NLP complexity (chatbot complexity).",
+        "space_complexity": "O(k + c) where k is knowledge, c is context (chatbot storage).",
+        "strengths": [
+            "Natural: provides natural conversation experience.",
+            "Context: maintains conversation context.",
+            "Integration: integrates with backend systems."
+        ],
+        "weaknesses": [
+            "Complexity: requires sophisticated NLP and training.",
+            "Limitations: may have limitations in complex scenarios.",
+            "Maintenance: requires ongoing training and maintenance."
+        ],
+        "alternatives": ["Simple Chatbots", "Rule-Based Bots", "Human Support", "Hybrid Approaches"],
+        "explanation": "Sophisticated chatbots with natural language understanding, context awareness, and system integration for effective customer interactions."
+    },
+    "semester_14/lecture_95_support_advanced/knowledge_graph/README.md": {
+        "name": "Knowledge Graphs for Support",
+        "problem": "Uses knowledge graphs to represent and query support information, enabling intelligent question answering, relationship discovery, and context-aware support recommendations.",
+        "intuition": "Like a connected knowledge map: Knowledge graphs are like a connected knowledge map - information is represented as nodes (concepts) and edges (relationships), allowing you to navigate connections (related topics), discover relationships (dependencies), and answer questions (queries) - just as a map shows connections, knowledge graphs show information connections.",
+        "inputs": "Support knowledge, entity relationships, query questions, context information, graph structure, query parameters.",
+        "outputs": "Knowledge graph, query results, relationship discoveries, context-aware answers, recommendation paths, graph visualizations.",
+        "steps": [
+            "Extract: extract entities and relationships from knowledge.",
+            "Build: build knowledge graph structure.",
+            "Connect: connect related entities and concepts.",
+            "Query: enable graph queries and traversal.",
+            "Answer: answer questions using graph queries.",
+            "Discover: discover relationships and patterns.",
+            "Recommend: recommend related information.",
+            "Visualize: visualize graph structure and relationships.",
+            "Update: update graph as knowledge evolves.",
+            "Optimize: optimize graph queries and structure."
+        ],
+        "example": "Knowledge Graph: extract entities → build graph (1000 nodes, 5000 edges) → connect → query 'how to reset password' → answer → discover related topics → recommend → Knowledge Graph successful.",
+        "time_complexity": "O(q * g) where q is query complexity, g is graph size (knowledge graph complexity).",
+        "space_complexity": "O(n + e) where n is nodes, e is edges (graph storage).",
+        "strengths": [
+            "Relationships: captures relationships between concepts.",
+            "Discovery: enables relationship discovery.",
+            "Context: provides context-aware answers."
+        ],
+        "weaknesses": [
+            "Construction: requires effort to build and maintain.",
+            "Complexity: can become complex with large graphs.",
+            "Quality: depends on knowledge quality and completeness."
+        ],
+        "alternatives": ["Flat Knowledge Base", "Search-Based", "FAQ Lists", "Documentation"],
+        "explanation": "Knowledge graphs that represent support information as connected entities and relationships, enabling intelligent querying and recommendations."
+    },
+    "semester_14/lecture_95_support_advanced/sentiment_analysis/README.md": {
+        "name": "Sentiment Analysis for Support",
+        "problem": "Analyzes customer sentiment in support interactions to identify frustrated customers, prioritize urgent cases, route to appropriate agents, and improve support quality through emotional understanding.",
+        "intuition": "Like reading emotions: Sentiment analysis is like reading emotions - you analyze text (customer messages) to understand feelings (positive, negative, neutral), identify urgency (frustrated customers), and respond appropriately (prioritize, route) - just as you read someone's emotions, sentiment analysis reads customer emotions.",
+        "inputs": "Customer messages, support tickets, conversation history, sentiment models, classification rules, context information.",
+        "outputs": "Sentiment scores, emotion classifications, urgency flags, routing recommendations, sentiment trends, support insights.",
+        "steps": [
+            "Collect: collect customer messages and interactions.",
+            "Preprocess: preprocess text for analysis.",
+            "Analyze: analyze sentiment using NLP models.",
+            "Classify: classify sentiment (positive, negative, neutral).",
+            "Score: assign sentiment scores.",
+            "Flag: flag urgent or negative cases.",
+            "Route: route based on sentiment and urgency.",
+            "Track: track sentiment trends over time.",
+            "Report: generate sentiment reports.",
+            "Improve: improve support based on sentiment insights."
+        ],
+        "example": "Sentiment Analysis: collect messages → preprocess → analyze → classify (negative) → score (-0.8) → flag urgent → route to senior agent → Sentiment Analysis successful.",
+        "time_complexity": "O(m * s) where m is messages, s is sentiment analysis complexity (sentiment analysis complexity).",
+        "space_complexity": "O(m + m) where m is messages, m is models (sentiment storage).",
+        "strengths": [
+            "Understanding: provides emotional understanding of customers.",
+            "Prioritization: helps prioritize urgent cases.",
+            "Quality: improves support quality and customer satisfaction."
+        ],
+        "weaknesses": [
+            "Accuracy: may have limitations in accuracy.",
+            "Context: may miss context and sarcasm.",
+            "Bias: may have cultural or linguistic bias."
+        ],
+        "alternatives": ["No Sentiment Analysis", "Manual Assessment", "Keyword-Based", "Hybrid Approaches"],
+        "explanation": "NLP systems that analyze customer sentiment in support interactions to understand emotions, prioritize cases, and improve support quality."
     }
 }
 
