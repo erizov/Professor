@@ -1,40 +1,44 @@
-# Longest Common Subsequence
+# Longest Common Subsequence (LCS)
 
 1. **Name of Algorithm**  
-   Longest Common Subsequence
+   Longest Common Subsequence (LCS)
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements longest common subsequence algorithm.
+   Finds the longest sequence present in order (not necessarily contiguous) in two strings.
 
 3. **Intuition (plain-language explanation)**  
-   Longest Common Subsequence is a fundamental algorithm in computer science.
+   Walk both strings together; when characters match, include them, otherwise decide whether to drop a char from one string or the other via DP.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Strings s (length n) and t (length m).  
+   - Output: Length of longest common subsequence (and optionally the subsequence).
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Initialize DP table dp[n+1][m+1] to zero.
+2. For i=1..n: for j=1..m:
+3.   If s[i-1]==t[j-1], dp[i][j]=dp[i-1][j-1]+1.
+4.   Else dp[i][j]=max(dp[i-1][j], dp[i][j-1]).
+5. Backtrack from dp[n][m] to reconstruct the subsequence.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Longest Common Subsequence applied to sample data.
+   s="ABCBDAB", t="BDCABA" → LCS length 4 ("BCBA").
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: analysis
+   - Time: O(n·m).  
+   - Space: O(n·m) (can be reduced to O(min(n,m)) for length only).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Foundation for diff tools and bioinformatics alignment.
+- Provides similarity measure ignoring non-matching sections.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Quadratic runtime on string lengths.
+- Reconstruction requires storing parent pointers or stack.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Edit Distance, Longest Common Substring, Sequence Alignment
 
 11. **30-second explanation (your own words)**  
-    Longest Common Subsequence solves computational problems efficiently.
+    Fills a DP grid where each cell stores the best LCS length up to those prefixes, ensuring optimal substructure reuse.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

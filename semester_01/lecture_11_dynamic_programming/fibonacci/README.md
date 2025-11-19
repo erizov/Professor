@@ -1,40 +1,43 @@
-# Fibonacci
+# Dynamic Programming Fibonacci
 
 1. **Name of Algorithm**  
-   Fibonacci
+   Dynamic Programming Fibonacci
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements fibonacci algorithm.
+   Computes nth Fibonacci number efficiently by caching results instead of using exponential recursion.
 
 3. **Intuition (plain-language explanation)**  
-   Fibonacci is a fundamental algorithm in computer science.
+   Store results of smaller fib values so each number is computed once; akin to filling a table bottom-up.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Integer n ≥ 0.  
+   - Output: Fibonacci number F(n) where F(0)=0, F(1)=1, F(n)=F(n-1)+F(n-2).
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Initialize dp[0]=0, dp[1]=1.
+2. For i=2 to n: dp[i] = dp[i-1] + dp[i-2].
+3. Optionally reduce to two variables for constant space.
+4. Return dp[n].
 
 6. **Tiny example (hand-simulated)**  
-   Example: Fibonacci applied to sample data.
+   n=6 → sequence 0,1,1,2,3,5,8 → fib(6)=8.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(n).  
+   - Space: O(n) for table or O(1) with rolling values.
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Demonstrates memoization/bottom-up DP basics.
+- Linear time versus exponential recursive approach.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Simple example; real problems may require more intricate states.
+- Large n requires big integers or modulo arithmetic.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Matrix Exponentiation, Closed-form (Binet) Formula, Fast Doubling Method
 
 11. **30-second explanation (your own words)**  
-    Fibonacci solves computational problems efficiently.
+    Replace naive recursion with iterative accumulation while caching prior values so each Fibonacci number is computed exactly once.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
