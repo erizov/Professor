@@ -10590,341 +10590,523 @@
     },
     {
       "path": "semester_09/lecture_56_os_performance/cpu_scheduling_advanced/README.md",
-      "name": "Cpu Scheduling Advanced",
-      "problem": "Implements cpu scheduling advanced algorithm.",
-      "intuition": "Cpu Scheduling Advanced is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Advanced CPU Scheduling",
+      "problem": "Implements sophisticated CPU scheduling algorithms that optimize for multiple objectives (throughput, latency, fairness, energy efficiency) using multi-level queues, priority inheritance, and dynamic priority adjustment.",
+      "intuition": "Like a smart traffic management system: advanced CPU scheduling is like a sophisticated traffic management system that doesn't just use simple rules (like first-come-first-served) but adapts dynamically - it has multiple lanes (priority queues) for different types of traffic (process types), adjusts priorities based on behavior (interactive processes get priority boost), prevents starvation (aging), and optimizes for multiple goals (fast response for users, high throughput for batch jobs, energy efficiency for mobile devices).",
+      "inputs": "Processes with priorities, scheduling policies, CPU cores, workload characteristics, performance goals.",
+      "outputs": "Scheduled processes, optimized CPU utilization, balanced load, improved performance metrics.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Classify processes: categorize processes by type (interactive, batch, real-time).",
+        "Create queues: set up multi-level priority queues for different process types.",
+        "Assign priorities: assign initial priorities based on process characteristics.",
+        "Schedule: select next process to run using scheduling algorithm (CFS, O(1), etc.).",
+        "Adjust priorities: dynamically adjust priorities based on behavior (interactive boost, aging).",
+        "Handle preemption: preempt running process when higher priority process arrives.",
+        "Balance load: distribute processes across multiple CPU cores (load balancing).",
+        "Prevent starvation: ensure all processes eventually get CPU time (aging, fairness).",
+        "Optimize: tune scheduling parameters for specific workload and goals.",
+        "Monitor: track scheduling metrics (wait time, turnaround time, throughput)."
       ],
-      "example": "Example: Cpu Scheduling Advanced applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Advanced CPU scheduling: CFS (Completely Fair Scheduler) → processes in red-black tree by virtual runtime → interactive process (browser) gets priority boost → batch process (compiler) runs in background → real-time process (audio) gets guaranteed CPU → load balancing: distribute across 8 CPU cores → fairness: all processes get fair share → performance: low latency for interactive, high throughput for batch → advanced scheduling operational.",
+      "time_complexity": "O(log n) for CFS where n is number of processes, O(1) for O(1) scheduler.",
+      "space_complexity": "O(n) where n is number of processes (scheduling data structures).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Optimization: optimizes for multiple objectives (latency, throughput, fairness).",
+        "Adaptability: adapts to different workload characteristics.",
+        "Scalability: handles large numbers of processes efficiently."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: more complex than simple scheduling algorithms.",
+        "Tuning: requires careful tuning for optimal performance.",
+        "Overhead: scheduling overhead may be higher than simple algorithms."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Round Robin",
+        "Priority Scheduling",
+        "Multilevel Queue",
+        "Lottery Scheduling"
       ],
-      "explanation": "Cpu Scheduling Advanced solves computational problems efficiently."
+      "explanation": "Implements sophisticated CPU scheduling algorithms that optimize for multiple objectives (throughput, latency, fairness, energy efficiency) using multi-level queues, priority inheritance, and dynamic priority adjustment."
     },
     {
       "path": "semester_09/lecture_56_os_performance/io_scheduling/README.md",
-      "name": "Io Scheduling",
-      "problem": "Implements io scheduling algorithm.",
-      "intuition": "Io Scheduling is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "I/O Scheduling",
+      "problem": "Optimizes the order of I/O requests to storage devices, reducing seek time, improving throughput, and ensuring fair access to I/O resources for multiple processes.",
+      "intuition": "Like organizing errands efficiently: I/O scheduling is like planning your errands to minimize travel time - instead of going to stores in random order (random I/O), you group nearby stores together (elevator algorithm - serve requests in one direction), or prioritize urgent errands (deadline scheduling), or ensure everyone gets their turn fairly (fair queuing) - the goal is to minimize disk head movement (travel time) and maximize throughput (errands completed per hour).",
+      "inputs": "I/O requests, disk geometry, request priorities, deadlines, I/O patterns.",
+      "outputs": "Optimized I/O order, reduced seek time, improved throughput, fair I/O access.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Queue requests: collect I/O requests from processes in I/O queue.",
+        "Analyze requests: examine request locations, priorities, and deadlines.",
+        "Choose algorithm: select scheduling algorithm (FCFS, SSTF, SCAN, C-SCAN, deadline, etc.).",
+        "Reorder: reorder requests to optimize for seek time or fairness.",
+        "Serve requests: execute I/O requests in optimized order.",
+        "Update queue: add new requests and remove completed ones.",
+        "Balance: balance between throughput optimization and fairness.",
+        "Handle priorities: prioritize requests based on process priorities or deadlines.",
+        "Optimize: tune scheduling parameters for specific storage device characteristics.",
+        "Monitor: track I/O performance metrics (throughput, latency, queue depth)."
       ],
-      "example": "Example: Io Scheduling applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "I/O scheduling: 10 I/O requests to disk → requests at sectors: 100, 50, 200, 150, 25 → FCFS: serve in order (100→50→200→150→25) → seek time: high → SSTF: serve nearest first (100→150→200→50→25) → seek time: lower → SCAN: elevator algorithm (100→150→200→end→50→25) → seek time: lowest → throughput: 2x improvement → I/O scheduling optimized.",
+      "time_complexity": "O(n log n) for sorting requests where n is queue size, O(1) for simple algorithms.",
+      "space_complexity": "O(n) where n is number of queued I/O requests.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Performance: significantly improves I/O throughput and reduces latency.",
+        "Efficiency: minimizes disk head movement and seek time.",
+        "Fairness: ensures fair access to I/O resources."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: more complex algorithms add overhead.",
+        "Starvation: some algorithms may cause request starvation.",
+        "Device-specific: optimal algorithm depends on storage device type."
       ],
       "alternatives": [
-        "Related algorithms"
+        "First-Come-First-Served (FCFS)",
+        "Shortest Seek Time First (SSTF)",
+        "SCAN (Elevator)",
+        "Deadline Scheduling"
       ],
-      "explanation": "Io Scheduling solves computational problems efficiently."
+      "explanation": "Optimizes the order of I/O requests to storage devices, reducing seek time, improving throughput, and ensuring fair access to I/O resources for multiple processes."
     },
     {
       "path": "semester_09/lecture_56_os_performance/kernel_tuning/README.md",
       "name": "Kernel Tuning",
-      "problem": "Implements kernel tuning algorithm.",
-      "intuition": "Kernel Tuning is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Optimizes operating system kernel parameters and configuration to improve performance, resource utilization, and system behavior for specific workloads and hardware.",
+      "intuition": "Like tuning a car's engine: kernel tuning is like adjusting a car's engine settings for optimal performance - you adjust various parameters (like fuel mixture, timing, idle speed) to match your driving style (workload) and conditions (hardware) - the default settings work for most cases, but fine-tuning can significantly improve performance for specific scenarios (like racing vs fuel economy).",
+      "inputs": "Kernel parameters, system configuration, workload characteristics, hardware specifications, performance requirements.",
+      "outputs": "Tuned kernel, optimized performance, improved resource utilization, better system behavior.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Analyze workload: understand system workload and performance requirements.",
+        "Identify bottlenecks: identify performance bottlenecks and resource constraints.",
+        "Review parameters: examine current kernel parameters and their values.",
+        "Research: research optimal parameter values for specific workload and hardware.",
+        "Adjust parameters: modify kernel parameters (sysctl, /proc, /sys).",
+        "Test changes: test system behavior and performance with new parameters.",
+        "Measure: measure performance improvements and side effects.",
+        "Iterate: fine-tune parameters based on measurements.",
+        "Document: document changes and their effects.",
+        "Monitor: continuously monitor system performance and adjust as needed."
       ],
-      "example": "Example: Kernel Tuning applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Kernel tuning: web server workload → identify: network connections bottleneck → adjust: net.core.somaxconn = 4096 (increase connection queue) → adjust: net.ipv4.tcp_tw_reuse = 1 (reuse TIME_WAIT sockets) → adjust: vm.swappiness = 10 (reduce swapping) → test: load test server → measure: connections handled: 10K → 50K → performance: 5x improvement → kernel tuned.",
+      "time_complexity": "O(1) for parameter changes, O(t) for testing where t is test duration.",
+      "space_complexity": "O(1) (parameter storage is minimal).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Performance: can significantly improve system performance.",
+        "Customization: allows customization for specific workloads.",
+        "Flexibility: can adjust system behavior without recompiling kernel."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: requires deep understanding of kernel internals.",
+        "Risk: incorrect tuning can degrade performance or cause instability.",
+        "Maintenance: requires ongoing monitoring and adjustment."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Default Configuration",
+        "Kernel Recompilation",
+        "Hardware Upgrades",
+        "Application Optimization"
       ],
-      "explanation": "Kernel Tuning solves computational problems efficiently."
+      "explanation": "Optimizes operating system kernel parameters and configuration to improve performance, resource utilization, and system behavior for specific workloads and hardware."
     },
     {
       "path": "semester_09/lecture_56_os_performance/memory_optimization/README.md",
       "name": "Memory Optimization",
-      "problem": "Implements memory optimization algorithm.",
-      "intuition": "Memory Optimization is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Optimizes memory usage and allocation strategies to reduce memory footprint, improve cache performance, minimize fragmentation, and enhance overall system performance.",
+      "intuition": "Like organizing a warehouse efficiently: memory optimization is like organizing a warehouse to maximize space usage and minimize waste - you use compact storage (memory pooling), organize items by size (slab allocator), reuse space efficiently (garbage collection), and minimize empty gaps (fragmentation reduction) - the goal is to store more in less space and access it faster.",
+      "inputs": "Memory allocation requests, memory usage patterns, cache characteristics, fragmentation data, performance requirements.",
+      "outputs": "Optimized memory usage, reduced fragmentation, improved cache performance, better allocation efficiency.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Analyze usage: study memory allocation patterns and usage characteristics.",
+        "Identify issues: identify memory leaks, fragmentation, and inefficient allocations.",
+        "Choose allocator: select appropriate memory allocator (glibc malloc, jemalloc, tcmalloc).",
+        "Optimize allocation: use memory pools, object pools, or custom allocators for frequent allocations.",
+        "Reduce fragmentation: minimize memory fragmentation through allocation strategies.",
+        "Improve locality: optimize data layout for cache locality.",
+        "Implement pooling: use memory pools for objects of same size.",
+        "Garbage collect: implement or tune garbage collection for managed languages.",
+        "Monitor: track memory usage, fragmentation, and allocation patterns.",
+        "Tune: adjust allocation strategies based on measurements."
       ],
-      "example": "Example: Memory Optimization applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Memory optimization: application with frequent small allocations → problem: fragmentation, slow allocation → solution: memory pool for 64-byte objects → allocate from pool: O(1) → reduce fragmentation: objects same size → improve cache: objects close together → result: allocation time: 100ns → 10ns (10x faster) → fragmentation: 30% → 5% → memory optimized.",
+      "time_complexity": "O(1) for pool allocation, O(log n) for general allocators where n is heap size.",
+      "space_complexity": "O(m) where m is memory usage (optimization reduces overhead, not total usage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Performance: improves allocation speed and reduces memory overhead.",
+        "Efficiency: reduces fragmentation and improves memory utilization.",
+        "Cache performance: better data locality improves cache hit rates."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: custom allocators add complexity to codebase.",
+        "Trade-offs: some optimizations may increase code complexity.",
+        "Workload-dependent: optimal strategies vary by workload."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Default Allocators",
+        "Garbage Collection",
+        "Memory Mapping",
+        "Compression"
       ],
-      "explanation": "Memory Optimization solves computational problems efficiently."
+      "explanation": "Optimizes memory usage and allocation strategies to reduce memory footprint, improve cache performance, minimize fragmentation, and enhance overall system performance."
     },
     {
       "path": "semester_09/lecture_56_os_performance/performance_profiling/README.md",
       "name": "Performance Profiling",
-      "problem": "Implements performance profiling algorithm.",
-      "intuition": "Performance Profiling is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Analyzes application and system performance to identify bottlenecks, measure resource usage, and guide optimization efforts through instrumentation and sampling.",
+      "intuition": "Like a fitness tracker for software: performance profiling is like a fitness tracker that monitors your activity (CPU, memory, I/O) throughout the day - it tracks where you spend time (which functions), how much energy you use (CPU cycles), and identifies inefficient activities (bottlenecks) - this data helps you optimize your routine (code) to be more efficient and faster.",
+      "inputs": "Application code, system processes, profiling tools, sampling rate, instrumentation points.",
+      "outputs": "Performance profiles, bottleneck identification, resource usage metrics, optimization recommendations.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Choose method: select profiling method (sampling, instrumentation, statistical).",
+        "Instrument: add profiling hooks or use sampling profiler.",
+        "Run application: execute application under profiling.",
+        "Collect data: gather performance data (CPU time, memory, I/O, function calls).",
+        "Analyze: identify hotspots, bottlenecks, and performance issues.",
+        "Visualize: create visualizations (flame graphs, call graphs, timelines).",
+        "Measure: quantify performance metrics (execution time, cache misses, allocations).",
+        "Identify: pinpoint performance bottlenecks and optimization opportunities.",
+        "Optimize: apply optimizations based on profiling insights.",
+        "Validate: measure improvements and iterate."
       ],
-      "example": "Example: Performance Profiling applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Performance profiling: web application slow → profile: use sampling profiler → run: process 1000 requests → analyze: 80% time in database queries, 15% in JSON parsing, 5% other → identify: N+1 query problem → optimize: batch queries → profile again: database time: 80% → 20% → overall: 3x speedup → profiling successful.",
+      "time_complexity": "O(n) for sampling where n is number of samples, O(m) for instrumentation where m is instrumented points.",
+      "space_complexity": "O(p) where p is profile data size (call stacks, samples, metrics).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Insight: provides detailed insights into performance characteristics.",
+        "Bottleneck identification: accurately identifies performance bottlenecks.",
+        "Data-driven: enables data-driven optimization decisions."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Overhead: profiling adds overhead that may affect measurements.",
+        "Complexity: analyzing profiles can be complex for large applications.",
+        "Representativeness: profiles may not represent all usage scenarios."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Manual Timing",
+        "Logging",
+        "APM Tools",
+        "Benchmarking"
       ],
-      "explanation": "Performance Profiling solves computational problems efficiently."
+      "explanation": "Analyzes application and system performance to identify bottlenecks, measure resource usage, and guide optimization efforts through instrumentation and sampling."
     },
     {
       "path": "semester_09/lecture_57_concurrency_advanced/actor_model/README.md",
       "name": "Actor Model",
-      "problem": "Implements actor model algorithm.",
-      "intuition": "Actor Model is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Models concurrent computation using actors (independent computational entities) that communicate through asynchronous message passing, avoiding shared state and locks for better scalability and fault tolerance.",
+      "intuition": "Like a company with independent departments: the actor model is like a company where each department (actor) works independently and communicates with other departments only through messages (like emails) - departments don't share resources directly (no shared state), they send messages and wait for replies (asynchronous communication) - if one department has a problem (actor crashes), it doesn't affect others (fault isolation), and you can easily add more departments (scale horizontally).",
+      "inputs": "Messages, actor definitions, actor system configuration, supervision strategies.",
+      "outputs": "Concurrent computation, message passing, isolated state, fault-tolerant system.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Define actors: create actor types with message handlers and state.",
+        "Create system: initialize actor system and supervision hierarchy.",
+        "Spawn actors: create actor instances (mailboxes, state, behavior).",
+        "Send messages: actors send asynchronous messages to other actors.",
+        "Receive messages: actors process messages from their mailboxes sequentially.",
+        "Update state: actors update their internal state based on messages.",
+        "Reply: actors send reply messages back to senders if needed.",
+        "Supervise: supervisor actors monitor and restart failed actors.",
+        "Scale: distribute actors across multiple nodes for scalability.",
+        "Monitor: track actor behavior, message flow, and system health."
       ],
-      "example": "Example: Actor Model applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Actor model: e-commerce system → actors: UserActor, OrderActor, PaymentActor, InventoryActor → UserActor sends 'place order' message to OrderActor → OrderActor sends 'check inventory' to InventoryActor → InventoryActor replies 'in stock' → OrderActor sends 'process payment' to PaymentActor → PaymentActor replies 'paid' → OrderActor updates state and replies to UserActor → no shared state, no locks → scalable, fault-tolerant → actor model.",
+      "time_complexity": "O(1) for message send, O(m) for message processing where m is message complexity.",
+      "space_complexity": "O(a + m) where a is number of actors, m is total messages in mailboxes.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Scalability: naturally scales to distributed systems.",
+        "Fault tolerance: actor failures are isolated and can be recovered.",
+        "No locks: avoids deadlocks and race conditions through message passing."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Message overhead: message passing has overhead compared to shared memory.",
+        "Debugging: debugging distributed actor systems can be challenging.",
+        "Ordering: message ordering guarantees may be complex in distributed systems."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Shared Memory Concurrency",
+        "CSP Model",
+        "Message Queues",
+        "Reactive Streams"
       ],
-      "explanation": "Actor Model solves computational problems efficiently."
+      "explanation": "Models concurrent computation using actors (independent computational entities) that communicate through asynchronous message passing, avoiding shared state and locks for better scalability and fault tolerance."
     },
     {
       "path": "semester_09/lecture_57_concurrency_advanced/concurrent_data_structures/README.md",
       "name": "Concurrent Data Structures",
-      "problem": "Implements concurrent data structures algorithm.",
-      "intuition": "Concurrent Data Structures is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Implements thread-safe data structures that support concurrent access from multiple threads without data corruption, using locks, lock-free algorithms, or transactional memory.",
+      "intuition": "Like a shared whiteboard with rules: concurrent data structures are like a whiteboard that multiple people can write on simultaneously - you need rules to prevent chaos (synchronization) - you could use a lock (only one person writes at a time), or use special pens that don't conflict (lock-free algorithms), or use transactions (write changes, then commit if no conflicts) - the goal is to allow safe concurrent access while maintaining data integrity.",
+      "inputs": "Concurrent operations (insert, delete, search), thread identifiers, synchronization primitives, data structure type.",
+      "outputs": "Thread-safe operations, consistent data structure state, correct concurrent access results.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Choose approach: select synchronization approach (locks, lock-free, transactional).",
+        "Design structure: design data structure with concurrency in mind.",
+        "Implement operations: implement thread-safe operations (insert, delete, search, update).",
+        "Synchronize: add synchronization (locks, atomic operations, transactions).",
+        "Handle conflicts: resolve conflicts between concurrent operations.",
+        "Validate: ensure operations maintain data structure invariants.",
+        "Optimize: minimize contention and improve performance.",
+        "Test: thoroughly test with concurrent access patterns.",
+        "Measure: benchmark performance under various concurrency levels.",
+        "Tune: adjust synchronization strategy based on workload."
       ],
-      "example": "Example: Concurrent Data Structures applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Concurrent hash table: multiple threads inserting/searching → approach: fine-grained locking (lock per bucket) → insert: acquire bucket lock → insert → release lock → search: acquire bucket lock (read) → search → release lock → result: 8 threads, 1M operations → throughput: 500K ops/sec → thread-safe, high performance → concurrent data structure.",
+      "time_complexity": "O(1) average for hash table with locks, O(log n) for lock-free tree structures where n is size.",
+      "space_complexity": "O(n) where n is data structure size (synchronization adds minimal overhead).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Thread safety: enables safe concurrent access from multiple threads.",
+        "Performance: can achieve high throughput with proper design.",
+        "Correctness: maintains data integrity under concurrent access."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: concurrent data structures are more complex than sequential ones.",
+        "Contention: high contention can degrade performance.",
+        "Correctness: ensuring correctness is challenging and requires careful design."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Sequential Data Structures with External Locking",
+        "Lock-Free Data Structures",
+        "Transactional Memory",
+        "Message Passing"
       ],
-      "explanation": "Concurrent Data Structures solves computational problems efficiently."
+      "explanation": "Implements thread-safe data structures that support concurrent access from multiple threads without data corruption, using locks, lock-free algorithms, or transactional memory."
     },
     {
       "path": "semester_09/lecture_57_concurrency_advanced/csp_model/README.md",
-      "name": "Csp Model",
-      "problem": "Implements csp model algorithm.",
-      "intuition": "Csp Model is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Communicating Sequential Processes (CSP)",
+      "problem": "Models concurrent systems using independent sequential processes that communicate through synchronous message passing over channels, providing deterministic concurrency and avoiding shared state.",
+      "intuition": "Like a phone call system: CSP is like a phone call where both parties must be ready to talk (synchronous) - when you call someone (send message), you wait until they answer (receive), then you exchange information (communicate), and both hang up (synchronization complete) - unlike email (asynchronous), phone calls require both parties to be ready at the same time, ensuring messages are delivered and received in a coordinated way.",
+      "inputs": "Processes, channels, messages, synchronization points, communication patterns.",
+      "outputs": "Synchronized communication, deterministic behavior, coordinated processes, no shared state.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Define processes: create independent sequential processes.",
+        "Create channels: establish communication channels between processes.",
+        "Send: process sends message on channel (blocks until receiver ready).",
+        "Receive: process receives message from channel (blocks until sender ready).",
+        "Synchronize: send and receive operations synchronize (rendezvous).",
+        "Select: use select statement to wait on multiple channels.",
+        "Compose: compose processes to build larger concurrent systems.",
+        "Verify: use formal methods to verify system properties.",
+        "Execute: run processes concurrently with synchronized communication.",
+        "Monitor: observe communication patterns and system behavior."
       ],
-      "example": "Example: Csp Model applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "CSP: producer-consumer → producer process: produce item → send on channel → wait for consumer → consumer process: receive from channel → process item → send acknowledgment → producer receives ack → continue → synchronization: both processes coordinate → no shared buffer needed → deterministic behavior → CSP model.",
+      "time_complexity": "O(1) for channel operations, O(n) for process execution where n is computation size.",
+      "space_complexity": "O(p + c) where p is number of processes, c is channel buffer size (often 0 for synchronous).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Determinism: synchronous communication provides deterministic behavior.",
+        "Formal verification: amenable to formal methods and verification.",
+        "No shared state: avoids race conditions and data races."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Blocking: synchronous communication can cause blocking and deadlocks.",
+        "Performance: may have lower throughput than asynchronous models.",
+        "Complexity: managing many channels and processes can be complex."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Actor Model",
+        "Shared Memory",
+        "Message Queues",
+        "Asynchronous Communication"
       ],
-      "explanation": "Csp Model solves computational problems efficiently."
+      "explanation": "Models concurrent systems using independent sequential processes that communicate through synchronous message passing over channels, providing deterministic concurrency and avoiding shared state."
     },
     {
       "path": "semester_09/lecture_57_concurrency_advanced/lock_free_data_structures/README.md",
-      "name": "Lock Free Data Structures",
-      "problem": "Implements lock free data structures algorithm.",
-      "intuition": "Lock Free Data Structures is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Lock-Free Data Structures",
+      "problem": "Implements concurrent data structures that guarantee progress for at least one thread without using locks, using atomic operations and compare-and-swap to achieve thread safety.",
+      "intuition": "Like a self-service system: lock-free data structures are like a self-service checkout where multiple people can use it simultaneously without a cashier (lock) - the system uses smart mechanisms (atomic operations) that ensure if one person's transaction conflicts with another, at least one will succeed (progress guarantee) - people retry if their operation fails (optimistic concurrency), but the system never gets stuck waiting for a lock (no deadlocks).",
+      "inputs": "Concurrent operations, atomic operations (CAS, load-linked/store-conditional), retry logic, memory ordering.",
+      "outputs": "Lock-free operations, progress guarantee, thread-safe data structure, high concurrency performance.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Design algorithm: design data structure operations using atomic operations.",
+        "Use CAS: implement operations using compare-and-swap (CAS) or similar atomics.",
+        "Read: read current state atomically.",
+        "Modify: compute new state based on current state.",
+        "Update: attempt to update using CAS (compare current state, swap if unchanged).",
+        "Retry: if CAS fails (state changed), retry from beginning (optimistic).",
+        "Handle ABA: prevent ABA problem using version numbers or tags.",
+        "Memory ordering: use appropriate memory ordering (acquire, release, sequential consistency).",
+        "Validate: ensure algorithm guarantees progress (at least one thread succeeds).",
+        "Test: thoroughly test with high concurrency and stress tests."
       ],
-      "example": "Example: Lock Free Data Structures applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Lock-free stack: push operation → read head pointer → create new node → set new node.next = head → CAS: compare head with read value, swap to new node → if CAS succeeds: done → if CAS fails: retry (another thread modified head) → no locks → high concurrency → progress guarantee: at least one push succeeds → lock-free.",
+      "time_complexity": "O(1) expected for operations, O(k) worst case where k is number of retries (usually small).",
+      "space_complexity": "O(n) where n is data structure size (minimal overhead for lock-free).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Performance: high performance under high concurrency (no lock contention).",
+        "Progress: guarantees progress (no deadlocks, livelocks rare).",
+        "Scalability: scales well with number of threads."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: lock-free algorithms are complex to design and verify.",
+        "ABA problem: requires careful handling of ABA problem.",
+        "Correctness: proving correctness is challenging."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Lock-Based Structures",
+        "Transactional Memory",
+        "Wait-Free Structures",
+        "Lock-Coupling"
       ],
-      "explanation": "Lock Free Data Structures solves computational problems efficiently."
+      "explanation": "Implements concurrent data structures that guarantee progress for at least one thread without using locks, using atomic operations and compare-and-swap to achieve thread safety."
     },
     {
       "path": "semester_09/lecture_57_concurrency_advanced/transactional_memory/README.md",
       "name": "Transactional Memory",
-      "problem": "Implements transactional memory algorithm.",
-      "intuition": "Transactional Memory is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Provides atomic, isolated execution of code blocks (transactions) in concurrent programs, simplifying concurrent programming by automatically handling synchronization and conflict resolution.",
+      "intuition": "Like database transactions for memory: transactional memory is like database transactions but for in-memory operations - you mark a block of code as a transaction (like BEGIN TRANSACTION), execute it (read/write memory), and if there are no conflicts with other transactions, it commits (like COMMIT) - if there's a conflict (like two transactions modifying same data), one rolls back and retries (like ROLLBACK) - this makes concurrent programming easier by handling synchronization automatically.",
+      "inputs": "Code blocks (transactions), memory operations, conflict detection, transaction boundaries.",
+      "outputs": "Atomic execution, isolated transactions, conflict resolution, simplified concurrency.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Define transaction: mark code block as transaction (atomic, isolated).",
+        "Begin: start transaction, initialize transaction state.",
+        "Execute: execute code within transaction (read/write memory).",
+        "Track: track memory accesses (read set, write set).",
+        "Detect conflicts: detect conflicts with other concurrent transactions.",
+        "Commit: if no conflicts, commit changes (make visible to other threads).",
+        "Abort: if conflict detected, abort transaction (rollback changes).",
+        "Retry: retry aborted transaction (optimistic execution).",
+        "Validate: validate transaction before commit (check for conflicts).",
+        "Synchronize: automatically handle synchronization and memory ordering."
       ],
-      "example": "Example: Transactional Memory applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Transactional memory: transfer money between accounts → transaction: { read balance1, read balance2, balance1 -= amount, balance2 += amount, write balance1, write balance2 } → execute optimistically → validate: no other transaction modified balance1 or balance2 → commit: changes visible → if conflict: abort, retry → automatic synchronization → simpler than locks → transactional memory.",
+      "time_complexity": "O(t) for transaction execution where t is transaction size, O(c) for conflict detection where c is concurrent transactions.",
+      "space_complexity": "O(t) where t is transaction size (read/write sets, undo logs).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Simplicity: simplifies concurrent programming compared to locks.",
+        "Composability: transactions compose naturally (no lock ordering issues).",
+        "Automatic: automatically handles synchronization and conflict resolution."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Overhead: transaction overhead may be higher than fine-grained locks.",
+        "Contention: high contention can cause many aborts and retries.",
+        "Hardware support: hardware transactional memory (HTM) has limitations."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Locks",
+        "Lock-Free Programming",
+        "Software Transactional Memory (STM)",
+        "Isolated Execution"
       ],
-      "explanation": "Transactional Memory solves computational problems efficiently."
+      "explanation": "Provides atomic, isolated execution of code blocks (transactions) in concurrent programs, simplifying concurrent programming by automatically handling synchronization and conflict resolution."
     },
     {
       "path": "semester_09/lecture_57_concurrency_advanced/wait_free_algorithms/README.md",
-      "name": "Wait Free Algorithms",
-      "problem": "Implements wait free algorithms algorithm.",
-      "intuition": "Wait Free Algorithms is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Wait-Free Algorithms",
+      "problem": "Implements concurrent algorithms that guarantee every thread completes its operation in a bounded number of steps regardless of other threads' progress, providing the strongest progress guarantee.",
+      "intuition": "Like a guaranteed service counter: wait-free algorithms are like a service counter where every customer (thread) is guaranteed to be served within a fixed number of steps, no matter how busy it is or what other customers are doing - unlike a regular counter where you might wait indefinitely if someone ahead is slow (blocking), or a self-service where you might retry many times (lock-free), wait-free guarantees you'll finish in a predictable, bounded time - it's the strongest guarantee for concurrent operations.",
+      "inputs": "Concurrent operations, thread identifiers, operation parameters, progress guarantees.",
+      "outputs": "Wait-free operations, bounded completion time, guaranteed progress, high reliability.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Design algorithm: design algorithm with bounded steps guarantee.",
+        "Use helping: implement helping mechanism (threads help other threads complete).",
+        "Allocate work: distribute work so each thread has bounded work.",
+        "Avoid blocking: ensure no thread waits for another thread's progress.",
+        "Use atomics: use atomic operations for coordination.",
+        "Implement: implement wait-free version of data structure operation.",
+        "Bound steps: prove that operation completes in bounded number of steps.",
+        "Handle all cases: ensure algorithm works in all execution scenarios.",
+        "Verify: formally verify wait-free property.",
+        "Test: stress test with high concurrency and various scenarios."
       ],
-      "example": "Example: Wait Free Algorithms applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Wait-free queue: enqueue operation → use fetch-and-add to get ticket number → each thread gets unique position → complete operation in bounded steps (no waiting for other threads) → dequeue: similar approach → guarantee: every operation completes in O(1) steps regardless of other threads → wait-free → strongest progress guarantee → real-time systems benefit.",
+      "time_complexity": "O(1) or O(log n) bounded steps where n is data structure size (guaranteed, not expected).",
+      "space_complexity": "O(n·t) where n is data structure size, t is number of threads (may need per-thread storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Strong guarantee: strongest progress guarantee (bounded completion time).",
+        "Real-time: suitable for real-time systems with timing requirements.",
+        "No starvation: guarantees no thread starves."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: wait-free algorithms are very complex to design.",
+        "Overhead: may have higher overhead than lock-free or lock-based approaches.",
+        "Space: may require more memory (per-thread storage, helping structures)."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Lock-Free Algorithms",
+        "Lock-Based Algorithms",
+        "Obstruction-Free Algorithms",
+        "Bounded Wait-Free"
       ],
-      "explanation": "Wait Free Algorithms solves computational problems efficiently."
+      "explanation": "Implements concurrent algorithms that guarantee every thread completes its operation in a bounded number of steps regardless of other threads' progress, providing the strongest progress guarantee."
     },
     {
       "path": "semester_09/lecture_58_parallel_computing/gpu_computing/README.md",
-      "name": "Gpu Computing",
-      "problem": "Implements gpu computing algorithm.",
-      "intuition": "Gpu Computing is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "GPU Computing",
+      "problem": "Utilizes Graphics Processing Units (GPUs) for general-purpose parallel computation, leveraging thousands of cores to accelerate data-parallel workloads like machine learning, scientific computing, and image processing.",
+      "intuition": "Like a factory with many workers: GPU computing is like a factory with thousands of workers (GPU cores) that can all work on similar tasks simultaneously - instead of one expert worker (CPU) doing complex tasks sequentially, you have many workers doing simple, similar tasks in parallel (like processing pixels in an image, or matrix multiplications) - GPUs excel at doing the same operation on lots of data at once (data parallelism), making them perfect for tasks like image processing, machine learning, and scientific simulations.",
+      "inputs": "Data-parallel workloads, GPU kernels, data arrays, computation patterns, GPU memory.",
+      "outputs": "Parallel computation results, accelerated processing, high throughput, GPU-optimized output.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Identify parallelism: identify data-parallel operations in workload.",
+        "Design kernel: design GPU kernel (function that runs on each thread).",
+        "Allocate memory: allocate GPU memory (device memory) for data.",
+        "Transfer data: copy data from CPU memory (host) to GPU memory (device).",
+        "Configure launch: configure kernel launch (grid size, block size, threads).",
+        "Execute kernel: launch kernel on GPU (thousands of threads execute in parallel).",
+        "Synchronize: wait for kernel execution to complete.",
+        "Transfer results: copy results from GPU memory back to CPU memory.",
+        "Optimize: optimize memory access patterns, use shared memory, minimize transfers.",
+        "Measure: benchmark performance and compare with CPU implementation."
       ],
-      "example": "Example: Gpu Computing applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "GPU computing: image processing → 4K image (3840×2160 pixels) → CPU: process sequentially, 1 second → GPU: launch kernel with 8M threads (one per pixel) → all pixels processed in parallel → execution time: 0.01 seconds → 100x speedup → GPU excels at data-parallel tasks → GPU computing.",
+      "time_complexity": "O(n/p) where n is problem size, p is number of parallel threads (theoretical), actual speedup depends on memory bandwidth and computation intensity.",
+      "space_complexity": "O(d) where d is data size (GPU memory requirements).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Performance: massive parallelism provides huge speedups for data-parallel workloads.",
+        "Throughput: high throughput for parallelizable computations.",
+        "Cost-effective: GPUs provide high performance per dollar for suitable workloads."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Suitability: only effective for data-parallel, compute-intensive workloads.",
+        "Memory: limited GPU memory and bandwidth can be bottlenecks.",
+        "Complexity: GPU programming requires specialized knowledge and tools."
       ],
       "alternatives": [
-        "Related algorithms"
+        "CPU Computing",
+        "FPGA",
+        "TPU",
+        "Distributed Computing"
       ],
-      "explanation": "Gpu Computing solves computational problems efficiently."
+      "explanation": "Utilizes Graphics Processing Units (GPUs) for general-purpose parallel computation, leveraging thousands of cores to accelerate data-parallel workloads like machine learning, scientific computing, and image processing."
     },
     {
       "path": "semester_09/lecture_58_parallel_computing/parallel_algorithms/README.md",
       "name": "Parallel Algorithms",
-      "problem": "Implements parallel algorithms algorithm.",
-      "intuition": "Parallel Algorithms is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Designs algorithms that execute multiple operations simultaneously across multiple processors or cores, reducing execution time and improving throughput for computationally intensive problems.",
+      "intuition": "Like a team working together: parallel algorithms are like having a team of people work on a project simultaneously instead of one person doing everything sequentially - you divide the work (problem decomposition), assign tasks to team members (processors), they work in parallel (simultaneous execution), and you combine their results (result aggregation) - the goal is to finish faster by doing work in parallel, though coordination overhead (communication) limits how much faster you can go.",
+      "inputs": "Problem data, number of processors, parallel computation model, communication patterns.",
+      "outputs": "Parallel execution, reduced computation time, improved throughput, scalable performance.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Analyze problem: identify parallelism opportunities in problem.",
+        "Decompose: decompose problem into independent or loosely coupled subproblems.",
+        "Choose model: select parallel computation model (PRAM, BSP, MapReduce, etc.).",
+        "Design algorithm: design algorithm with parallel execution in mind.",
+        "Partition data: partition data across processors.",
+        "Execute: execute operations in parallel across processors.",
+        "Communicate: coordinate and communicate between processors if needed.",
+        "Synchronize: synchronize processors at coordination points.",
+        "Combine: aggregate results from parallel computations.",
+        "Analyze: analyze speedup, efficiency, and scalability."
       ],
-      "example": "Example: Parallel Algorithms applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Parallel algorithm: matrix multiplication C = A × B → decompose: partition matrices into blocks → assign: each processor computes one block of C → parallel: all processors compute simultaneously → communicate: processors exchange data as needed → combine: assemble final matrix C → speedup: 8 processors → 6x speedup (not 8x due to communication overhead) → parallel algorithm.",
+      "time_complexity": "O(n³/p + n²) for matrix multiplication where n is matrix size, p is processors (theoretical), actual depends on communication overhead.",
+      "space_complexity": "O(n²/p) per processor where n is problem size, p is processors (data partitioned).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Speedup: reduces execution time for parallelizable problems.",
+        "Scalability: can scale to large numbers of processors.",
+        "Throughput: improves overall system throughput."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Overhead: communication and synchronization overhead limits speedup.",
+        "Complexity: parallel algorithms are more complex than sequential ones.",
+        "Scalability: not all problems scale well with number of processors."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Sequential Algorithms",
+        "Distributed Algorithms",
+        "GPU Algorithms",
+        "Vectorized Algorithms"
       ],
-      "explanation": "Parallel Algorithms solves computational problems efficiently."
+      "explanation": "Designs algorithms that execute multiple operations simultaneously across multiple processors or cores, reducing execution time and improving throughput for computationally intensive problems."
     },
     {
       "path": "semester_09/lecture_58_parallel_computing/parallel_prefix/README.md",
@@ -10980,29 +11162,43 @@
     },
     {
       "path": "semester_09/lecture_58_parallel_computing/simd_optimization/README.md",
-      "name": "Simd Optimization",
-      "problem": "Implements simd optimization algorithm.",
-      "intuition": "Simd Optimization is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "SIMD Optimization",
+      "problem": "Utilizes Single Instruction, Multiple Data (SIMD) instructions to perform the same operation on multiple data elements simultaneously, accelerating vectorized computations on modern CPUs.",
+      "intuition": "Like a production line: SIMD optimization is like a production line where one instruction (like 'add 5') is applied to multiple items (data elements) simultaneously - instead of adding 5 to each number one by one (scalar), you load 8 numbers into a wide register (vector), add 5 to all 8 at once (SIMD instruction), and get 8 results - it's like having a wide paintbrush that paints 8 pixels at once instead of painting them one by one.",
+      "inputs": "Vector data, SIMD instructions, data alignment, vector width, computation patterns.",
+      "outputs": "Vectorized computation, accelerated processing, improved throughput, optimized performance.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Identify vectorization: identify operations that can be vectorized (same operation on multiple elements).",
+        "Check alignment: ensure data is properly aligned for SIMD operations.",
+        "Load vectors: load multiple data elements into SIMD registers (128-bit, 256-bit, 512-bit).",
+        "Execute SIMD: execute SIMD instruction on vector (add, multiply, compare, etc.).",
+        "Store results: store vector results back to memory.",
+        "Handle remainder: process remaining elements that don't fit in vector (scalar loop).",
+        "Optimize: optimize memory access patterns, minimize data movement, use fused operations.",
+        "Compile: use compiler auto-vectorization or explicit SIMD intrinsics.",
+        "Measure: benchmark performance improvement over scalar code.",
+        "Tune: adjust vectorization strategy based on hardware and data characteristics."
       ],
-      "example": "Example: Simd Optimization applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "SIMD optimization: add arrays A + B = C, 1000 elements → scalar: loop 1000 times, 1 add per iteration → SIMD: load 8 elements of A and B into 256-bit registers → add 8 elements at once → store 8 results → repeat 125 times (1000/8) → remainder: process last 0 elements → speedup: 6-8x faster → SIMD optimization.",
+      "time_complexity": "O(n/v) where n is data size, v is vector width (theoretical), actual depends on memory bandwidth and instruction throughput.",
+      "space_complexity": "O(n) where n is data size (same as scalar, but may require alignment padding).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Performance: significant speedup for vectorizable operations (4-8x typical).",
+        "Efficiency: better utilization of CPU execution units.",
+        "Widely available: SIMD instructions available on most modern CPUs."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Suitability: only effective for data-parallel, regular computations.",
+        "Alignment: requires data alignment which may add complexity.",
+        "Portability: SIMD code may not be portable across different CPU architectures."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Scalar Code",
+        "GPU Computing",
+        "Multi-threading",
+        "Compiler Auto-vectorization"
       ],
-      "explanation": "Simd Optimization solves computational problems efficiently."
+      "explanation": "Utilizes Single Instruction, Multiple Data (SIMD) instructions to perform the same operation on multiple data elements simultaneously, accelerating vectorized computations on modern CPUs."
     },
     {
       "path": "semester_09/lecture_58_parallel_computing/vectorization/README.md",

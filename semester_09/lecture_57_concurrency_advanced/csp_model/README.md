@@ -1,40 +1,51 @@
-# Csp Model
+# Communicating Sequential Processes (CSP)
 
 1. **Name of Algorithm**  
-   Csp Model
+   Communicating Sequential Processes (CSP)
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements csp model algorithm.
+   Models concurrent systems using independent sequential processes that communicate through synchronous message passing over channels, providing deterministic concurrency and avoiding shared state.
 
 3. **Intuition (plain-language explanation)**  
-   Csp Model is a fundamental algorithm in computer science.
+   Like a phone call system: CSP is like a phone call where both parties must be ready to talk (synchronous) - when you call someone (send message), you wait until they answer (receive), then you exchange information (communicate), and both hang up (synchronization complete) - unlike email (asynchronous), phone calls require both parties to be ready at the same time, ensuring messages are delivered and received in a coordinated way.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Processes, channels, messages, synchronization points, communication patterns.  
+   - Output: Synchronized communication, deterministic behavior, coordinated processes, no shared state.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Define processes: create independent sequential processes.
+2. Create channels: establish communication channels between processes.
+3. Send: process sends message on channel (blocks until receiver ready).
+4. Receive: process receives message from channel (blocks until sender ready).
+5. Synchronize: send and receive operations synchronize (rendezvous).
+6. Select: use select statement to wait on multiple channels.
+7. Compose: compose processes to build larger concurrent systems.
+8. Verify: use formal methods to verify system properties.
+9. Execute: run processes concurrently with synchronized communication.
+10. Monitor: observe communication patterns and system behavior.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Csp Model applied to sample data.
+   CSP: producer-consumer → producer process: produce item → send on channel → wait for consumer → consumer process: receive from channel → process item → send acknowledgment → producer receives ack → continue → synchronization: both processes coordinate → no shared buffer needed → deterministic behavior → CSP model.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(1) for channel operations, O(n) for process execution where n is computation size.  
+   - Space: O(p + c) where p is number of processes, c is channel buffer size (often 0 for synchronous).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Determinism: synchronous communication provides deterministic behavior.
+- Formal verification: amenable to formal methods and verification.
+- No shared state: avoids race conditions and data races.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Blocking: synchronous communication can cause blocking and deadlocks.
+- Performance: may have lower throughput than asynchronous models.
+- Complexity: managing many channels and processes can be complex.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Actor Model, Shared Memory, Message Queues, Asynchronous Communication
 
 11. **30-second explanation (your own words)**  
-    Csp Model solves computational problems efficiently.
+    Models concurrent systems using independent sequential processes that communicate through synchronous message passing over channels, providing deterministic concurrency and avoiding shared state.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

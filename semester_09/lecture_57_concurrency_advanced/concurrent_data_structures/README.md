@@ -4,37 +4,48 @@
    Concurrent Data Structures
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements concurrent data structures algorithm.
+   Implements thread-safe data structures that support concurrent access from multiple threads without data corruption, using locks, lock-free algorithms, or transactional memory.
 
 3. **Intuition (plain-language explanation)**  
-   Concurrent Data Structures is a fundamental algorithm in computer science.
+   Like a shared whiteboard with rules: concurrent data structures are like a whiteboard that multiple people can write on simultaneously - you need rules to prevent chaos (synchronization) - you could use a lock (only one person writes at a time), or use special pens that don't conflict (lock-free algorithms), or use transactions (write changes, then commit if no conflicts) - the goal is to allow safe concurrent access while maintaining data integrity.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Concurrent operations (insert, delete, search), thread identifiers, synchronization primitives, data structure type.  
+   - Output: Thread-safe operations, consistent data structure state, correct concurrent access results.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Choose approach: select synchronization approach (locks, lock-free, transactional).
+2. Design structure: design data structure with concurrency in mind.
+3. Implement operations: implement thread-safe operations (insert, delete, search, update).
+4. Synchronize: add synchronization (locks, atomic operations, transactions).
+5. Handle conflicts: resolve conflicts between concurrent operations.
+6. Validate: ensure operations maintain data structure invariants.
+7. Optimize: minimize contention and improve performance.
+8. Test: thoroughly test with concurrent access patterns.
+9. Measure: benchmark performance under various concurrency levels.
+10. Tune: adjust synchronization strategy based on workload.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Concurrent Data Structures applied to sample data.
+   Concurrent hash table: multiple threads inserting/searching → approach: fine-grained locking (lock per bucket) → insert: acquire bucket lock → insert → release lock → search: acquire bucket lock (read) → search → release lock → result: 8 threads, 1M operations → throughput: 500K ops/sec → thread-safe, high performance → concurrent data structure.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(1) average for hash table with locks, O(log n) for lock-free tree structures where n is size.  
+   - Space: O(n) where n is data structure size (synchronization adds minimal overhead).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Thread safety: enables safe concurrent access from multiple threads.
+- Performance: can achieve high throughput with proper design.
+- Correctness: maintains data integrity under concurrent access.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Complexity: concurrent data structures are more complex than sequential ones.
+- Contention: high contention can degrade performance.
+- Correctness: ensuring correctness is challenging and requires careful design.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Sequential Data Structures with External Locking, Lock-Free Data Structures, Transactional Memory, Message Passing
 
 11. **30-second explanation (your own words)**  
-    Concurrent Data Structures solves computational problems efficiently.
+    Implements thread-safe data structures that support concurrent access from multiple threads without data corruption, using locks, lock-free algorithms, or transactional memory.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
