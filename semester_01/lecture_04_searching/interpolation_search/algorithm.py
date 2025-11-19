@@ -22,6 +22,12 @@ def interpolation_search(arr: List[int], target: int) -> int:
                 return left
             return -1
 
+        # Handle case where all elements in range are equal
+        if arr[right] == arr[left]:
+            if arr[left] == target:
+                return left
+            return -1
+
         pos = left + ((target - arr[left]) * (right - left)) // (arr[right] - arr[left])
 
         if arr[pos] == target:

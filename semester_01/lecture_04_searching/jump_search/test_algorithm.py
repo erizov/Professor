@@ -31,21 +31,21 @@ class TestJumpsearch(AlgorithmTestCase):
         self.assertIsNotNone(result)
         self.assertIn(result, [3, arr.index(7)])  # Index or boolean
 
-    def test_not_found(self):
-        """Test when element is not found."""
+    def test_not_found_old(self):
+        """Test when element is not found (old version)."""
         arr = [1, 3, 5, 7, 9]
         result = self.algorithm(arr, 10)
-        self.assertIsNone(result) if result is not bool else self.assertFalse(result)
+        self.assertEqual(result, -1)
 
-    def test_empty_input(self):
-        """Test with empty input."""
+    def test_empty_input_old(self):
+        """Test with empty input (old version)."""
         result = self.algorithm([], 5)
-        self.assertIsNone(result) if result is not bool else self.assertFalse(result)
+        self.assertEqual(result, -1)
 
-    def test_single_element(self):
-        """Test with single element."""
+    def test_single_element_old(self):
+        """Test with single element (old version)."""
         result = self.algorithm([42], 42)
-        self.assertIsNotNone(result) if result is not bool else self.assertTrue(result)
+        self.assertEqual(result, 0)
 
     def test_empty_input(self):
         """Test with empty input."""
