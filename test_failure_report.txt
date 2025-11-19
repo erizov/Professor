@@ -1,0 +1,80 @@
+================================================================================
+PYTHON TEST FAILURE ANALYSIS REPORT
+================================================================================
+
+Total Failures: 645
+
+================================================================================
+SUMMARY
+================================================================================
+Fixable: 0 (0.0%)
+Unfixable: 645 (100.0%)
+
+================================================================================
+ERROR CATEGORIES
+================================================================================
+
+ImportError: 607 failures
+  Fixable: 0
+  Unfixable: 607
+  Examples:
+    - semester_01\lecture_02_efficient_sorting\heap_sort
+      ImportError: cannot import name 'heapify' from 'semester_01.lecture_02_efficient_sorting.heap_sort.algorithm' (E:
+    - semester_01\lecture_05_trees\avl_tree
+      ImportError: cannot import name 'TreeNode' from 'semester_01.lecture_05_trees.binary_search_tree.algorithm' (E:\P
+    - semester_01\lecture_05_trees\binary_tree
+      ImportError: cannot import name 'TreeNode' from 'semester_01.lecture_05_trees.binary_search_tree.algorithm' (E:\P
+
+TypeError: 32 failures
+  Fixable: 0
+  Unfixable: 32
+  Examples:
+    - semester_01\lecture_05_trees\binary_search_tree
+      TypeError: module() argument 'name' must be str, not list
+    - semester_01\lecture_07_heaps_priority\fibonacci_heap
+      TypeError: module() argument 'name' must be str, not int
+    - semester_01\lecture_09_graph_algorithms\bellman_ford
+      TypeError: module() argument 'name' must be str, not dict
+
+AssertionError: 4 failures
+  Fixable: 0
+  Unfixable: 4
+  Examples:
+    - semester_01\lecture_03_specialized_sorting\radix_sort
+      AssertionError: Lists differ: [-5, -2, -8, -1, -9] != [-9, -8, -5, -2, -1]
+    - semester_01\lecture_04_searching\interpolation_search
+      AssertionError: None != -1 : Should return -1 when not found
+    - semester_01\lecture_04_searching\jump_search
+      AssertionError: None != -1 : Should return -1 when not found
+
+Unknown: 1 failures
+  Fixable: 0
+  Unfixable: 1
+  Examples:
+    - semester_01\lecture_03_specialized_sorting\bucket_sort
+
+AttributeError: 1 failures
+  Fixable: 0
+  Unfixable: 1
+  Examples:
+    - semester_05\lecture_27_hyperparameter_optimization\grid_search
+      AttributeError: 'list' object has no attribute 'keys'
+
+================================================================================
+FIXABLE FAILURES (Sample)
+================================================================================
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+Traceback (most recent call last):
+  File "E:\Python\GptEngineer\Professor\scripts\report_test_failures.py", line 202, in <module>
+    generate_report()
+    ~~~~~~~~~~~~~~~^^
+  File "E:\Python\GptEngineer\Professor\scripts\report_test_failures.py", line 185, in generate_report
+    print(f"\n\u2713 {fixable_count} failures can be fixed")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 2: character maps to <undefined>

@@ -20,9 +20,9 @@ class TestApm(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_62_observability_advanced.apm.algorithm import apm
+        from semester_09.lecture_62_observability_advanced.apm.algorithm import APM
 
-        self.algorithm = apm
+        self.algorithm = APM
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

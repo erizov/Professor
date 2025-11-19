@@ -20,9 +20,9 @@ class TestPruning(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_33_model_optimization.pruning.algorithm import pruning
+        from semester_06.lecture_33_model_optimization.pruning.algorithm import Pruning
 
-        self.algorithm = pruning
+        self.algorithm = Pruning
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

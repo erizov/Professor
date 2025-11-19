@@ -20,9 +20,9 @@ class TestBtree(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_01.lecture_06_advanced_trees.b_tree.algorithm import __init__
+        from semester_01.lecture_06_advanced_trees.b_tree.algorithm import BTree
 
-        self.algorithm = __init__
+        self.algorithm = BTree
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

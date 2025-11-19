@@ -20,11 +20,9 @@ class TestLiskovsubstitution(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_06_solid_principles.liskov_substitution.algorithm import (
-            __init__,
-        )
+        from semester_02.lecture_06_solid_principles.liskov_substitution.algorithm import LiskovSubstitution
 
-        self.algorithm = __init__
+        self.algorithm = LiskovSubstitution
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

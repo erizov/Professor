@@ -20,9 +20,9 @@ class TestBcrypt(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_04.lecture_18_crypto_algorithms.bcrypt.algorithm import bcrypt
+        from semester_04.lecture_18_crypto_algorithms.bcrypt.algorithm import BCrypt
 
-        self.algorithm = bcrypt
+        self.algorithm = BCrypt
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

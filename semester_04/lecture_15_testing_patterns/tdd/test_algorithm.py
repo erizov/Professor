@@ -20,9 +20,9 @@ class TestTdd(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_04.lecture_15_testing_patterns.tdd.algorithm import add
+        from semester_04.lecture_15_testing_patterns.tdd.algorithm import TDD
 
-        self.algorithm = add
+        self.algorithm = TDD
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

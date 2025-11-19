@@ -20,9 +20,9 @@ class TestUnittesting(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_04.lecture_15_testing_patterns.unit_testing.algorithm import add
+        from semester_04.lecture_15_testing_patterns.unit_testing.algorithm import UnitTesting
 
-        self.algorithm = add
+        self.algorithm = UnitTesting
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

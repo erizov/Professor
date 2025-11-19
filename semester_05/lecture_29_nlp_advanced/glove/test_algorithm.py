@@ -20,9 +20,9 @@ class TestGlove(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_29_nlp_advanced.glove.algorithm import glove
+        from semester_05.lecture_29_nlp_advanced.glove.algorithm import GloVe
 
-        self.algorithm = glove
+        self.algorithm = GloVe
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,9 +20,9 @@ class TestIotml(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_34_edge_ai.iot_ml.algorithm import iot_ml
+        from semester_06.lecture_34_edge_ai.iot_ml.algorithm import IoTML
 
-        self.algorithm = iot_ml
+        self.algorithm = IoTML
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

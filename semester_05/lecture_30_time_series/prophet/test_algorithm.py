@@ -20,9 +20,9 @@ class TestProphet(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_30_time_series.prophet.algorithm import prophet
+        from semester_05.lecture_30_time_series.prophet.algorithm import prophet_forecast
 
-        self.algorithm = prophet
+        self.algorithm = prophet_forecast
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

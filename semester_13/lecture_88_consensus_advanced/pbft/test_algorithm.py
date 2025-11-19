@@ -20,9 +20,9 @@ class TestPbft(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_88_consensus_advanced.pbft.algorithm import pbft
+        from semester_13.lecture_88_consensus_advanced.pbft.algorithm import PBFT
 
-        self.algorithm = pbft
+        self.algorithm = PBFT
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

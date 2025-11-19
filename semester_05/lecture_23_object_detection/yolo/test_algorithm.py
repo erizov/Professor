@@ -20,9 +20,9 @@ class TestYolo(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_23_object_detection.yolo.algorithm import yolo
+        from semester_05.lecture_23_object_detection.yolo.algorithm import YOLO
 
-        self.algorithm = yolo
+        self.algorithm = YOLO
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

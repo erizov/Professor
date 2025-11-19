@@ -20,9 +20,9 @@ class TestRcnn(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_23_object_detection.rcnn.algorithm import rcnn
+        from semester_05.lecture_23_object_detection.rcnn.algorithm import RCNN
 
-        self.algorithm = rcnn
+        self.algorithm = RCNN
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,9 +20,9 @@ class TestAbtesting(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_31_mlops.ab_testing.algorithm import ab_testing
+        from semester_06.lecture_31_mlops.ab_testing.algorithm import ABTest
 
-        self.algorithm = ab_testing
+        self.algorithm = ABTest
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

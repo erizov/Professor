@@ -20,9 +20,9 @@ class TestBagging(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_26_ensemble_methods.bagging.algorithm import bagging
+        from semester_05.lecture_26_ensemble_methods.bagging.algorithm import Bagging
 
-        self.algorithm = bagging
+        self.algorithm = Bagging
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

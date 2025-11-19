@@ -20,9 +20,9 @@ class TestIndexes(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_49_sql_fundamentals.indexes.algorithm import indexes
+        from semester_08.lecture_49_sql_fundamentals.indexes.algorithm import Index
 
-        self.algorithm = indexes
+        self.algorithm = Index
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

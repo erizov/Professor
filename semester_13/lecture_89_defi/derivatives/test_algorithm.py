@@ -20,9 +20,9 @@ class TestDerivatives(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_89_defi.derivatives.algorithm import derivatives
+        from semester_13.lecture_89_defi.derivatives.algorithm import numerical_derivative
 
-        self.algorithm = derivatives
+        self.algorithm = numerical_derivative
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

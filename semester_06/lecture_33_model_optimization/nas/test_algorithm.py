@@ -20,9 +20,9 @@ class TestNas(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_33_model_optimization.nas.algorithm import nas
+        from semester_06.lecture_33_model_optimization.nas.algorithm import NeuralArchitectureSearch
 
-        self.algorithm = nas
+        self.algorithm = NeuralArchitectureSearch
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

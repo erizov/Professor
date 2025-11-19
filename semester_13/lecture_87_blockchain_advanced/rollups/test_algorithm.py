@@ -20,9 +20,9 @@ class TestRollups(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_87_blockchain_advanced.rollups.algorithm import rollups
+        from semester_13.lecture_87_blockchain_advanced.rollups.algorithm import Rollups
 
-        self.algorithm = rollups
+        self.algorithm = Rollups
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

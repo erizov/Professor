@@ -20,9 +20,9 @@ class TestCaching(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_04.lecture_17_performance.caching.algorithm import is_expired
+        from semester_04.lecture_17_performance.caching.algorithm import Cache
 
-        self.algorithm = is_expired
+        self.algorithm = Cache
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

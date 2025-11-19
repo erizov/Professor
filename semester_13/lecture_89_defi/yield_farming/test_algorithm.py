@@ -20,9 +20,9 @@ class TestYieldfarming(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_89_defi.yield_farming.algorithm import yield_farming
+        from semester_13.lecture_89_defi.yield_farming.algorithm import YieldFarming
 
-        self.algorithm = yield_farming
+        self.algorithm = YieldFarming
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

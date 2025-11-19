@@ -20,9 +20,9 @@ class TestPpo(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_28_reinforcement_learning.ppo.algorithm import ppo
+        from semester_05.lecture_28_reinforcement_learning.ppo.algorithm import PPO
 
-        self.algorithm = ppo
+        self.algorithm = PPO
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

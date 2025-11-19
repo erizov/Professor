@@ -20,9 +20,9 @@ class TestUnet(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_24_segmentation.unet.algorithm import unet
+        from semester_05.lecture_24_segmentation.unet.algorithm import UNet
 
-        self.algorithm = unet
+        self.algorithm = UNet
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

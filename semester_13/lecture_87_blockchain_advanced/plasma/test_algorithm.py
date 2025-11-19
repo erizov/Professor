@@ -20,9 +20,9 @@ class TestPlasma(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_87_blockchain_advanced.plasma.algorithm import plasma
+        from semester_13.lecture_87_blockchain_advanced.plasma.algorithm import Plasma
 
-        self.algorithm = plasma
+        self.algorithm = Plasma
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,9 +20,9 @@ class TestFcn(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_24_segmentation.fcn.algorithm import fcn
+        from semester_05.lecture_24_segmentation.fcn.algorithm import FCN
 
-        self.algorithm = fcn
+        self.algorithm = FCN
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

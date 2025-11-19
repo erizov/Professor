@@ -20,9 +20,9 @@ class TestGitops(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_43_ci_cd_advanced.gitops.algorithm import gitops
+        from semester_07.lecture_43_ci_cd_advanced.gitops.algorithm import GitOps
 
-        self.algorithm = gitops
+        self.algorithm = GitOps
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

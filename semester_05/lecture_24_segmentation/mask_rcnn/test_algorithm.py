@@ -20,9 +20,9 @@ class TestMaskrcnn(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_24_segmentation.mask_rcnn.algorithm import mask_rcnn
+        from semester_05.lecture_24_segmentation.mask_rcnn.algorithm import MaskRCNN
 
-        self.algorithm = mask_rcnn
+        self.algorithm = MaskRCNN
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

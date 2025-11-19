@@ -20,9 +20,9 @@ class TestTflite(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_34_edge_ai.tflite.algorithm import tflite
+        from semester_06.lecture_34_edge_ai.tflite.algorithm import TFLite
 
-        self.algorithm = tflite
+        self.algorithm = TFLite
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

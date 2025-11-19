@@ -20,9 +20,9 @@ class TestNer(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_29_nlp_advanced.ner.algorithm import ner
+        from semester_05.lecture_29_nlp_advanced.ner.algorithm import NER
 
-        self.algorithm = ner
+        self.algorithm = NER
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

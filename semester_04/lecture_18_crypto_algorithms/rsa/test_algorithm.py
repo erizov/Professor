@@ -20,9 +20,9 @@ class TestRsa(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_04.lecture_18_crypto_algorithms.rsa.algorithm import is_prime
+        from semester_04.lecture_18_crypto_algorithms.rsa.algorithm import RSA
 
-        self.algorithm = is_prime
+        self.algorithm = RSA
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

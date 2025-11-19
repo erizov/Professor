@@ -20,9 +20,9 @@ class TestSeq2Seq(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_29_nlp_advanced.seq2seq.algorithm import seq2seq
+        from semester_05.lecture_29_nlp_advanced.seq2seq.algorithm import Seq2Seq
 
-        self.algorithm = seq2seq
+        self.algorithm = Seq2Seq
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,9 +20,9 @@ class TestVgg(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_22_cnn_architectures.vgg.algorithm import vgg
+        from semester_05.lecture_22_cnn_architectures.vgg.algorithm import VGG
 
-        self.algorithm = vgg
+        self.algorithm = VGG
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

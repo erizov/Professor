@@ -20,9 +20,9 @@ class TestGpt(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_25_transformers.gpt.algorithm import gpt
+        from semester_05.lecture_25_transformers.gpt.algorithm import GPT
 
-        self.algorithm = gpt
+        self.algorithm = GPT
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

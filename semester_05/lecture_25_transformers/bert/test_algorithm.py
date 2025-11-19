@@ -20,9 +20,9 @@ class TestBert(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_25_transformers.bert.algorithm import bert
+        from semester_05.lecture_25_transformers.bert.algorithm import BERT
 
-        self.algorithm = bert
+        self.algorithm = BERT
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,9 +20,9 @@ class TestFactory(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_07_creational_patterns.factory.algorithm import factory
+        from semester_02.lecture_07_creational_patterns.factory.algorithm import Factory
 
-        self.algorithm = factory
+        self.algorithm = Factory
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

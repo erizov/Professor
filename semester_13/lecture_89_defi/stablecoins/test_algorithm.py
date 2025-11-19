@@ -20,9 +20,9 @@ class TestStablecoins(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_89_defi.stablecoins.algorithm import stablecoins
+        from semester_13.lecture_89_defi.stablecoins.algorithm import Stablecoins
 
-        self.algorithm = stablecoins
+        self.algorithm = Stablecoins
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

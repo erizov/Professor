@@ -20,9 +20,9 @@ class TestJoins(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_49_sql_fundamentals.joins.algorithm import joins
+        from semester_08.lecture_49_sql_fundamentals.joins.algorithm import JoinOperations
 
-        self.algorithm = joins
+        self.algorithm = JoinOperations
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

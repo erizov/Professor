@@ -20,9 +20,9 @@ class TestBoosting(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_26_ensemble_methods.boosting.algorithm import boosting
+        from semester_05.lecture_26_ensemble_methods.boosting.algorithm import Boosting
 
-        self.algorithm = boosting
+        self.algorithm = Boosting
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

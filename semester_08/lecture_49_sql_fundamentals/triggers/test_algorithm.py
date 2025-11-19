@@ -20,9 +20,9 @@ class TestTriggers(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_49_sql_fundamentals.triggers.algorithm import triggers
+        from semester_08.lecture_49_sql_fundamentals.triggers.algorithm import Triggers
 
-        self.algorithm = triggers
+        self.algorithm = Triggers
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

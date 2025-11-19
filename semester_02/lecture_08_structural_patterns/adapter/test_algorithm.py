@@ -20,9 +20,9 @@ class TestAdapter(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_08_structural_patterns.adapter.algorithm import adapter
+        from semester_02.lecture_08_structural_patterns.adapter.algorithm import Adapter
 
-        self.algorithm = adapter
+        self.algorithm = Adapter
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

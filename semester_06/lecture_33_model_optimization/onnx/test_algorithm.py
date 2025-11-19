@@ -20,9 +20,9 @@ class TestOnnx(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_33_model_optimization.onnx.algorithm import onnx
+        from semester_06.lecture_33_model_optimization.onnx.algorithm import ONNX
 
-        self.algorithm = onnx
+        self.algorithm = ONNX
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

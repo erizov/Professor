@@ -20,11 +20,9 @@ class TestDecisiontree(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_03.lecture_12_ml_algorithms.decision_tree.algorithm import (
-            __init__,
-        )
+        from semester_03.lecture_12_ml_algorithms.decision_tree.algorithm import DecisionTreeNode
 
-        self.algorithm = __init__
+        self.algorithm = DecisionTreeNode
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

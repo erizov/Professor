@@ -20,9 +20,9 @@ class TestBridge(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_08_structural_patterns.bridge.algorithm import bridge
+        from semester_02.lecture_08_structural_patterns.bridge.algorithm import Implementor
 
-        self.algorithm = bridge
+        self.algorithm = Implementor
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,9 +20,9 @@ class TestTrie(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_01.lecture_06_advanced_trees.trie.algorithm import __init__
+        from semester_01.lecture_06_advanced_trees.trie.algorithm import Trie
 
-        self.algorithm = __init__
+        self.algorithm = Trie
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

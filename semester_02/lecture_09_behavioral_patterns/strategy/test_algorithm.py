@@ -20,9 +20,9 @@ class TestStrategy(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_09_behavioral_patterns.strategy.algorithm import pay
+        from semester_02.lecture_09_behavioral_patterns.strategy.algorithm import Strategy
 
-        self.algorithm = pay
+        self.algorithm = Strategy
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

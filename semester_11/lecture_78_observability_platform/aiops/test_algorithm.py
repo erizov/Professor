@@ -20,9 +20,9 @@ class TestAiops(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_78_observability_platform.aiops.algorithm import aiops
+        from semester_11.lecture_78_observability_platform.aiops.algorithm import AIOps
 
-        self.algorithm = aiops
+        self.algorithm = AIOps
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

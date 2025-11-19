@@ -20,9 +20,9 @@ class TestArima(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_30_time_series.arima.algorithm import arima
+        from semester_05.lecture_30_time_series.arima.algorithm import arima_forecast
 
-        self.algorithm = arima
+        self.algorithm = arima_forecast
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

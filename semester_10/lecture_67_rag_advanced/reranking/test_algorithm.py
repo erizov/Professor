@@ -20,9 +20,9 @@ class TestReranking(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_67_rag_advanced.reranking.algorithm import reranking
+        from semester_10.lecture_67_rag_advanced.reranking.algorithm import Reranking
 
-        self.algorithm = reranking
+        self.algorithm = Reranking
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

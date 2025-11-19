@@ -20,9 +20,9 @@ class TestFeaturestore(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_31_mlops.feature_store.algorithm import feature_store
+        from semester_06.lecture_31_mlops.feature_store.algorithm import FeatureStore
 
-        self.algorithm = feature_store
+        self.algorithm = FeatureStore
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,9 +20,9 @@ class TestWord2Vec(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_29_nlp_advanced.word2vec.algorithm import word2vec
+        from semester_05.lecture_29_nlp_advanced.word2vec.algorithm import Word2Vec
 
-        self.algorithm = word2vec
+        self.algorithm = Word2Vec
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestRedblacktree(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_01.lecture_06_advanced_trees.red_black_tree.algorithm import (
-            __init__,
-        )
+        from semester_01.lecture_06_advanced_trees.red_black_tree.algorithm import RedBlackTree
 
-        self.algorithm = __init__
+        self.algorithm = RedBlackTree
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,9 +20,9 @@ class TestFacade(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_08_structural_patterns.facade.algorithm import freeze
+        from semester_02.lecture_08_structural_patterns.facade.algorithm import Facade
 
-        self.algorithm = freeze
+        self.algorithm = Facade
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

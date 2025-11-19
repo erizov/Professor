@@ -20,9 +20,9 @@ class TestDatalakes(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_54_data_modeling.data_lakes.algorithm import data_lakes
+        from semester_08.lecture_54_data_modeling.data_lakes.algorithm import DataLake
 
-        self.algorithm = data_lakes
+        self.algorithm = DataLake
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,9 +20,9 @@ class TestProxy(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_08_structural_patterns.proxy.algorithm import display
+        from semester_02.lecture_08_structural_patterns.proxy.algorithm import Proxy
 
-        self.algorithm = display
+        self.algorithm = Proxy
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

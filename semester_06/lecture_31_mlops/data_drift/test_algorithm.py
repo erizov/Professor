@@ -20,9 +20,9 @@ class TestDatadrift(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_31_mlops.data_drift.algorithm import data_drift
+        from semester_06.lecture_31_mlops.data_drift.algorithm import DataDrift
 
-        self.algorithm = data_drift
+        self.algorithm = DataDrift
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

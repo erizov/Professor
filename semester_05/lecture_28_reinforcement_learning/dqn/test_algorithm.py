@@ -20,9 +20,9 @@ class TestDqn(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_28_reinforcement_learning.dqn.algorithm import dqn
+        from semester_05.lecture_28_reinforcement_learning.dqn.algorithm import DQN
 
-        self.algorithm = dqn
+        self.algorithm = DQN
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

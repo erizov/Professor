@@ -20,9 +20,9 @@ class TestKmp(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_03.lecture_14_string_algorithms.kmp.algorithm import compute_lps
+        from semester_03.lecture_14_string_algorithms.kmp.algorithm import kmp_search
 
-        self.algorithm = compute_lps
+        self.algorithm = kmp_search
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

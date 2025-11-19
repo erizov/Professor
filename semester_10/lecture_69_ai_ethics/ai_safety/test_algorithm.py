@@ -20,9 +20,9 @@ class TestAisafety(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_69_ai_ethics.ai_safety.algorithm import ai_safety
+        from semester_10.lecture_69_ai_ethics.ai_safety.algorithm import AISafety
 
-        self.algorithm = ai_safety
+        self.algorithm = AISafety
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

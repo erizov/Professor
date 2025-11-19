@@ -20,9 +20,9 @@ class TestResnet(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_22_cnn_architectures.resnet.algorithm import resnet
+        from semester_05.lecture_22_cnn_architectures.resnet.algorithm import ResNet
 
-        self.algorithm = resnet
+        self.algorithm = ResNet
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

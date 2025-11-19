@@ -20,9 +20,9 @@ class TestSsd(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_23_object_detection.ssd.algorithm import ssd
+        from semester_05.lecture_23_object_detection.ssd.algorithm import SSD
 
-        self.algorithm = ssd
+        self.algorithm = SSD
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
