@@ -1,40 +1,50 @@
-# Replication
+# Database Replication
 
 1. **Name of Algorithm**  
-   Replication
+   Database Replication
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements replication algorithm.
+   Maintains multiple copies of database across different servers, enabling high availability, load distribution, and disaster recovery.
 
 3. **Intuition (plain-language explanation)**  
-   Replication is a fundamental algorithm in computer science.
+   Like making backup copies: database replication is like photocopying important documents and storing them in different locations - if one copy is lost or unavailable, you have others. It also lets multiple people read from different copies simultaneously (like multiple people reading different copies of the same book), distributing the load.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Primary database, replication configuration, network connection, replication method.  
+   - Output: Replicated database copies, high availability, load distribution, backup copies.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Configure primary: set up primary (master) database server.
+2. Configure replicas: set up replica (slave) database servers.
+3. Enable replication: configure replication method (master-slave, master-master, etc.).
+4. Initial sync: copy existing data from primary to replicas.
+5. Monitor changes: primary database logs all changes (transaction log, binary log).
+6. Replicate changes: transfer logged changes to replica servers.
+7. Apply changes: replicas apply changes to maintain consistency.
+8. Verify: monitor replication lag and ensure replicas stay synchronized.
+9. Failover: if primary fails, promote replica to primary (high availability).
 
 6. **Tiny example (hand-simulated)**  
-   Example: Replication applied to sample data.
+   Primary database in New York → replicate to London and Tokyo → writes go to primary → changes logged → replicated to London and Tokyo → reads can go to any replica → if New York fails → London becomes primary → zero downtime → high availability achieved.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(1) for replication setup, O(n) for initial sync where n is data size, O(1) for ongoing replication per transaction.  
+   - Space: O(d·r) where d is database size, r is number of replicas (each replica stores full copy).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- High availability: system continues operating if primary fails.
+- Load distribution: read queries can be distributed across replicas.
+- Disaster recovery: replicas serve as backups in different locations.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Replication lag: replicas may be slightly behind primary.
+- Storage cost: requires multiple copies of data.
+- Complexity: requires careful configuration and monitoring.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Single Database, Backup and Restore, Clustering, Sharding
 
 11. **30-second explanation (your own words)**  
-    Replication solves computational problems efficiently.
+    Maintains multiple copies of database across different servers, enabling high availability, load distribution, and disaster recovery.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

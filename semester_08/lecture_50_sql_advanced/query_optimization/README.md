@@ -4,37 +4,46 @@
    Query Optimization
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements query optimization algorithm.
+   Improves SQL query performance by selecting efficient execution plans, using indexes, and rewriting queries to minimize execution time and resource usage.
 
 3. **Intuition (plain-language explanation)**  
-   Query Optimization is a fundamental algorithm in computer science.
+   Like GPS route optimization: query optimization is like a GPS finding the fastest route - instead of taking the first route (naive execution), the optimizer analyzes all possible routes (execution plans), considers traffic (indexes, statistics), and picks the fastest one (optimal plan) to get results quickly.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: SQL query, database schema, indexes, table statistics, query optimizer.  
+   - Output: Optimized execution plan, improved query performance, reduced resource usage.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Parse query: analyze SQL query structure and identify operations.
+2. Generate plans: create multiple possible execution plans (different join orders, index usage, etc.).
+3. Estimate costs: calculate cost for each plan based on statistics, indexes, and data distribution.
+4. Select plan: choose execution plan with lowest estimated cost.
+5. Use indexes: leverage indexes for WHERE, JOIN, and ORDER BY operations.
+6. Apply heuristics: use optimization rules (push predicates down, eliminate unnecessary operations).
+7. Execute: run optimized plan to retrieve results.
+8. Monitor: track actual performance and update statistics for future optimizations.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Query Optimization applied to sample data.
+   Query: SELECT * FROM orders o JOIN customers c ON o.customer_id = c.id WHERE c.country = 'USA' → optimizer analyzes → finds index on customers.country → chooses plan: use index to filter customers first → then join with orders → execution time: 0.1s vs 10s without optimization → 100x faster.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(p) for plan generation where p is number of possible plans, O(1) for plan selection.  
+   - Space: O(s) where s is statistics and metadata size.
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Performance: dramatically improves query execution speed.
+- Automatic: optimizer handles optimization automatically.
+- Adaptive: uses statistics to make informed decisions.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Statistics dependency: poor statistics lead to poor plans.
+- Complexity: optimization can be complex for large queries.
+- Plan stability: execution plans may change as data changes.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Manual Query Rewriting, Query Hints, Index Tuning, Materialized Views
 
 11. **30-second explanation (your own words)**  
-    Query Optimization solves computational problems efficiently.
+    Improves SQL query performance by selecting efficient execution plans, using indexes, and rewriting queries to minimize execution time and resource usage.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

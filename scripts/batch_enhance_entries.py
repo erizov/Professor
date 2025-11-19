@@ -7377,6 +7377,199 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Wiki Systems", "Google Docs", "Confluence", "Documentation Sites", "Shared Drives"],
         "explanation": "Manages documentation changes using version control systems, enabling collaboration, tracking history, and maintaining documentation alongside code in a unified workflow."
+    },
+    "semester_08/lecture_49_sql_fundamentals/indexes/README.md": {
+        "name": "Database Indexes",
+        "problem": "Accelerates data retrieval by creating ordered data structures that map column values to row locations, enabling fast lookups without scanning entire tables.",
+        "intuition": "Like a book index: instead of reading every page to find a topic (full table scan), an index lists topics with page numbers (column values with row pointers) - you look up the topic in the index (fast) and jump directly to the right page (row), making searches much faster.",
+        "inputs": "Table columns, index type (B-tree, hash, bitmap, etc.), index definition.",
+        "outputs": "Index structure, faster query performance, additional storage overhead.",
+        "steps": [
+            "Choose columns: identify columns frequently used in WHERE, JOIN, ORDER BY clauses.",
+            "Select index type: choose appropriate index type (B-tree for range queries, hash for equality, etc.).",
+            "Create index: build index structure mapping column values to row locations.",
+            "Store index: save index data structure alongside table data.",
+            "Update index: maintain index when table data is inserted, updated, or deleted.",
+            "Use in queries: query optimizer uses index to speed up data retrieval.",
+            "Monitor: track index usage and performance impact.",
+            "Maintain: periodically rebuild or reorganize indexes to optimize performance."
+        ],
+        "example": "Table: users (1M rows) → query: SELECT * FROM users WHERE email = 'user@example.com' → without index: scans 1M rows (slow) → create index on email → with index: lookup email in index → find row pointer → retrieve row directly → query time: 0.001s vs 1s (1000x faster).",
+        "time_complexity": "O(log n) for B-tree index lookups, O(1) for hash indexes, O(n) for full table scan without index.",
+        "space_complexity": "O(n) where n is number of indexed rows (additional storage for index structure).",
+        "strengths": [
+            "Fast lookups: dramatically speeds up SELECT queries with WHERE clauses.",
+            "Efficient sorting: enables fast ORDER BY operations.",
+            "Join optimization: speeds up JOIN operations on indexed columns."
+        ],
+        "weaknesses": [
+            "Storage overhead: indexes require additional disk space.",
+            "Write overhead: INSERT/UPDATE/DELETE operations must update indexes.",
+            "Maintenance: indexes need periodic maintenance and optimization."
+        ],
+        "alternatives": ["Full Table Scans", "Materialized Views", "Partitioning", "Caching"],
+        "explanation": "Accelerates data retrieval by creating ordered data structures that map column values to row locations, enabling fast lookups without scanning entire tables."
+    },
+    "semester_08/lecture_49_sql_fundamentals/stored_procedures/README.md": {
+        "name": "Stored Procedures",
+        "problem": "Pre-compiles and stores SQL code on the database server, enabling reusable business logic, improved performance, and centralized data access control.",
+        "intuition": "Like a function library on the database: instead of sending SQL code from application every time (like calling a function repeatedly), stored procedures are pre-written SQL functions stored on the database server - you call them by name (like calling a function), and they execute faster because they're pre-compiled and optimized.",
+        "inputs": "SQL statements, parameters, business logic, procedure name.",
+        "outputs": "Stored procedure, execution results, improved performance, centralized logic.",
+        "steps": [
+            "Define procedure: write SQL code with procedure name and parameters.",
+            "Compile: database compiles and validates procedure syntax.",
+            "Store: save compiled procedure on database server.",
+            "Call: application calls procedure by name with parameters.",
+            "Execute: database executes pre-compiled procedure.",
+            "Return results: procedure returns result set or output parameters.",
+            "Reuse: procedure can be called multiple times by different applications.",
+            "Maintain: update procedure logic as business requirements change."
+        ],
+        "example": "Create procedure: CREATE PROCEDURE GetUserOrders(@userId INT) AS SELECT * FROM orders WHERE user_id = @userId → compile and store → application calls: EXEC GetUserOrders(123) → database executes → returns orders for user 123 → faster than sending raw SQL each time.",
+        "time_complexity": "O(1) for procedure call overhead, execution time depends on procedure logic.",
+        "space_complexity": "O(p) where p is procedure code size (stored on database server).",
+        "strengths": [
+            "Performance: pre-compiled code executes faster than ad-hoc SQL.",
+            "Reusability: same procedure can be used by multiple applications.",
+            "Security: centralizes business logic and reduces SQL injection risks."
+        ],
+        "weaknesses": [
+            "Vendor lock-in: procedures are database-specific (not portable).",
+            "Debugging: harder to debug than application code.",
+            "Version control: requires separate versioning from application code."
+        ],
+        "alternatives": ["Ad-hoc SQL", "ORM Queries", "Application Logic", "Database Functions"],
+        "explanation": "Pre-compiles and stores SQL code on the database server, enabling reusable business logic, improved performance, and centralized data access control."
+    },
+    "semester_08/lecture_49_sql_fundamentals/triggers/README.md": {
+        "name": "Database Triggers",
+        "problem": "Automatically executes SQL code in response to specific database events (INSERT, UPDATE, DELETE), enabling automatic data validation, auditing, and maintaining referential integrity.",
+        "intuition": "Like automatic event handlers: triggers are like 'if this happens, then do that' rules - when you insert/update/delete data (event), the trigger automatically fires and executes predefined SQL code (action), like automatically updating a timestamp, logging changes, or validating data.",
+        "inputs": "Trigger definition, event type (INSERT/UPDATE/DELETE), table, trigger code.",
+        "outputs": "Automatic actions, data validation, audit logs, maintained data integrity.",
+        "steps": [
+            "Define trigger: specify trigger name, event (BEFORE/AFTER INSERT/UPDATE/DELETE), and table.",
+            "Write trigger code: create SQL code to execute when trigger fires.",
+            "Create trigger: register trigger with database.",
+            "Monitor events: database monitors specified table for trigger events.",
+            "Fire trigger: when event occurs, database automatically executes trigger code.",
+            "Execute actions: trigger performs defined actions (validate, log, update, etc.).",
+            "Commit/rollback: trigger can allow or prevent the triggering operation.",
+            "Maintain: update trigger logic as requirements change."
+        ],
+        "example": "Table: orders → trigger: AFTER INSERT → code: UPDATE users SET total_orders = total_orders + 1 WHERE id = NEW.user_id → when order inserted → trigger fires automatically → updates user's order count → no application code needed → automatic data consistency.",
+        "time_complexity": "O(1) for trigger invocation, execution time depends on trigger code complexity.",
+        "space_complexity": "O(t) where t is trigger code size (stored on database server).",
+        "strengths": [
+            "Automatic: executes automatically without application intervention.",
+            "Data integrity: enforces business rules at database level.",
+            "Auditing: automatically logs changes for compliance and tracking."
+        ],
+        "weaknesses": [
+            "Hidden logic: triggers can make database behavior non-obvious.",
+            "Performance: can slow down INSERT/UPDATE/DELETE operations.",
+            "Debugging: difficult to trace and debug trigger execution."
+        ],
+        "alternatives": ["Application Logic", "Constraints", "Stored Procedures", "Event Handlers"],
+        "explanation": "Automatically executes SQL code in response to specific database events (INSERT, UPDATE, DELETE), enabling automatic data validation, auditing, and maintaining referential integrity."
+    },
+    "semester_08/lecture_50_sql_advanced/normalization/README.md": {
+        "name": "Database Normalization",
+        "problem": "Organizes database tables to eliminate data redundancy and dependency issues, ensuring data integrity and reducing storage requirements through structured table design.",
+        "intuition": "Like organizing a filing cabinet: normalization is like separating documents into different folders (tables) based on what they're about - instead of storing customer address in every order (redundant), you store it once in a customers table and reference it (like a folder reference) - this prevents inconsistencies and saves space.",
+        "inputs": "Unnormalized database schema, business requirements, data relationships.",
+        "outputs": "Normalized database schema, reduced redundancy, improved data integrity.",
+        "steps": [
+            "Identify entities: determine main entities (customers, orders, products, etc.).",
+            "First Normal Form (1NF): eliminate repeating groups, ensure atomic values.",
+            "Second Normal Form (2NF): remove partial dependencies (non-key attributes depend on full key).",
+            "Third Normal Form (3NF): remove transitive dependencies (non-key attributes depend on other non-key attributes).",
+            "Create relationships: establish foreign key relationships between tables.",
+            "Verify: ensure no data redundancy and all dependencies are properly handled.",
+            "Optimize: balance normalization with query performance needs.",
+            "Document: document normalized schema and relationships."
+        ],
+        "example": "Unnormalized: orders table with customer_name, customer_address, product_name, product_price (redundant) → 1NF: separate repeating groups → 2NF: remove partial dependencies → 3NF: remove transitive dependencies → normalized: orders table references customers and products tables → customer data stored once → no redundancy → data integrity maintained.",
+        "time_complexity": "O(n) where n is number of tables and relationships (design phase).",
+        "space_complexity": "O(d) where d is data size (typically reduces storage due to eliminated redundancy).",
+        "strengths": [
+            "Data integrity: eliminates redundancy and prevents inconsistencies.",
+            "Storage efficiency: reduces storage requirements.",
+            "Maintainability: easier to update data (change once, affects all references)."
+        ],
+        "weaknesses": [
+            "Query complexity: may require more JOINs to retrieve related data.",
+            "Performance: over-normalization can slow down queries.",
+            "Design complexity: requires careful analysis and design."
+        ],
+        "alternatives": ["Denormalization", "Flat Tables", "Document Databases", "NoSQL"],
+        "explanation": "Organizes database tables to eliminate data redundancy and dependency issues, ensuring data integrity and reducing storage requirements through structured table design."
+    },
+    "semester_08/lecture_50_sql_advanced/query_optimization/README.md": {
+        "name": "Query Optimization",
+        "problem": "Improves SQL query performance by selecting efficient execution plans, using indexes, and rewriting queries to minimize execution time and resource usage.",
+        "intuition": "Like GPS route optimization: query optimization is like a GPS finding the fastest route - instead of taking the first route (naive execution), the optimizer analyzes all possible routes (execution plans), considers traffic (indexes, statistics), and picks the fastest one (optimal plan) to get results quickly.",
+        "inputs": "SQL query, database schema, indexes, table statistics, query optimizer.",
+        "outputs": "Optimized execution plan, improved query performance, reduced resource usage.",
+        "steps": [
+            "Parse query: analyze SQL query structure and identify operations.",
+            "Generate plans: create multiple possible execution plans (different join orders, index usage, etc.).",
+            "Estimate costs: calculate cost for each plan based on statistics, indexes, and data distribution.",
+            "Select plan: choose execution plan with lowest estimated cost.",
+            "Use indexes: leverage indexes for WHERE, JOIN, and ORDER BY operations.",
+            "Apply heuristics: use optimization rules (push predicates down, eliminate unnecessary operations).",
+            "Execute: run optimized plan to retrieve results.",
+            "Monitor: track actual performance and update statistics for future optimizations."
+        ],
+        "example": "Query: SELECT * FROM orders o JOIN customers c ON o.customer_id = c.id WHERE c.country = 'USA' → optimizer analyzes → finds index on customers.country → chooses plan: use index to filter customers first → then join with orders → execution time: 0.1s vs 10s without optimization → 100x faster.",
+        "time_complexity": "O(p) for plan generation where p is number of possible plans, O(1) for plan selection.",
+        "space_complexity": "O(s) where s is statistics and metadata size.",
+        "strengths": [
+            "Performance: dramatically improves query execution speed.",
+            "Automatic: optimizer handles optimization automatically.",
+            "Adaptive: uses statistics to make informed decisions."
+        ],
+        "weaknesses": [
+            "Statistics dependency: poor statistics lead to poor plans.",
+            "Complexity: optimization can be complex for large queries.",
+            "Plan stability: execution plans may change as data changes."
+        ],
+        "alternatives": ["Manual Query Rewriting", "Query Hints", "Index Tuning", "Materialized Views"],
+        "explanation": "Improves SQL query performance by selecting efficient execution plans, using indexes, and rewriting queries to minimize execution time and resource usage."
+    },
+    "semester_08/lecture_50_sql_advanced/replication/README.md": {
+        "name": "Database Replication",
+        "problem": "Maintains multiple copies of database across different servers, enabling high availability, load distribution, and disaster recovery.",
+        "intuition": "Like making backup copies: database replication is like photocopying important documents and storing them in different locations - if one copy is lost or unavailable, you have others. It also lets multiple people read from different copies simultaneously (like multiple people reading different copies of the same book), distributing the load.",
+        "inputs": "Primary database, replication configuration, network connection, replication method.",
+        "outputs": "Replicated database copies, high availability, load distribution, backup copies.",
+        "steps": [
+            "Configure primary: set up primary (master) database server.",
+            "Configure replicas: set up replica (slave) database servers.",
+            "Enable replication: configure replication method (master-slave, master-master, etc.).",
+            "Initial sync: copy existing data from primary to replicas.",
+            "Monitor changes: primary database logs all changes (transaction log, binary log).",
+            "Replicate changes: transfer logged changes to replica servers.",
+            "Apply changes: replicas apply changes to maintain consistency.",
+            "Verify: monitor replication lag and ensure replicas stay synchronized.",
+            "Failover: if primary fails, promote replica to primary (high availability)."
+        ],
+        "example": "Primary database in New York → replicate to London and Tokyo → writes go to primary → changes logged → replicated to London and Tokyo → reads can go to any replica → if New York fails → London becomes primary → zero downtime → high availability achieved.",
+        "time_complexity": "O(1) for replication setup, O(n) for initial sync where n is data size, O(1) for ongoing replication per transaction.",
+        "space_complexity": "O(d·r) where d is database size, r is number of replicas (each replica stores full copy).",
+        "strengths": [
+            "High availability: system continues operating if primary fails.",
+            "Load distribution: read queries can be distributed across replicas.",
+            "Disaster recovery: replicas serve as backups in different locations."
+        ],
+        "weaknesses": [
+            "Replication lag: replicas may be slightly behind primary.",
+            "Storage cost: requires multiple copies of data.",
+            "Complexity: requires careful configuration and monitoring."
+        ],
+        "alternatives": ["Single Database", "Backup and Restore", "Clustering", "Sharding"],
+        "explanation": "Maintains multiple copies of database across different servers, enabling high availability, load distribution, and disaster recovery."
     }
 }
 
