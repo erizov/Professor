@@ -4,37 +4,41 @@
    Linear Regression
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements linear regression algorithm.
+   Fits a linear relationship between features and a continuous target variable to predict numeric outcomes.
 
 3. **Intuition (plain-language explanation)**  
-   Linear Regression is a fundamental algorithm in computer science.
+   Draw the best straight line through data points so predictions are as close as possible to actual values.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Training data with features X (n×m matrix) and target values y (n×1 vector).  
+   - Output: Learned coefficients (weights) and intercept that define the linear model y = X·w + b.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Initialize weights w and bias b (often to zeros).
+2. Compute predictions: ŷ = X·w + b.
+3. Calculate loss (mean squared error): MSE = (1/n)Σ(y - ŷ)².
+4. Update weights using gradient descent: w = w - α·∇w(MSE), b = b - α·∇b(MSE).
+5. Repeat until convergence or max iterations.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Linear Regression applied to sample data.
+   Predict house price from size: price = 50,000 + 200·size. House of 100m² → price = 70,000.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(n·m·i) for gradient descent, O(m³) for closed-form solution, where i is iterations.  
+   - Space: O(n·m) for data, O(m) for weights.
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Simple, interpretable, and fast to train.
+- Works well when relationship is approximately linear.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Assumes linear relationship; fails on non-linear patterns.
+- Sensitive to outliers and multicollinearity.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Polynomial Regression, Ridge/Lasso Regression, Neural Networks
 
 11. **30-second explanation (your own words)**  
-    Linear Regression solves computational problems efficiently.
+    Find the line that minimizes squared prediction errors by adjusting slope and intercept through optimization.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

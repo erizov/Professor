@@ -1608,6 +1608,196 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Matrix Exponentiation", "Closed-form (Binet) Formula", "Fast Doubling Method"],
         "explanation": "Replace naive recursion with iterative accumulation while caching prior values so each Fibonacci number is computed exactly once."
+    },
+    "semester_03/lecture_12_ml_algorithms/decision_tree/README.md": {
+        "name": "Decision Tree",
+        "problem": "Builds a tree structure that makes decisions by splitting data on feature values to classify or predict outcomes.",
+        "intuition": "Like a flowchart: ask yes/no questions about features, branch based on answers, and reach a conclusion at the leaves.",
+        "inputs": "Training dataset with features and labels (classification) or target values (regression).",
+        "outputs": "Tree model that can classify new instances or predict continuous values.",
+        "steps": [
+            "Start with root node containing all training data.",
+            "For each node, find the best feature and threshold to split on (maximize information gain or minimize Gini impurity).",
+            "Create child nodes for each split outcome.",
+            "Recursively build subtrees until stopping criteria (max depth, min samples, pure nodes).",
+            "Assign class label or value to leaf nodes based on majority class or mean value."
+        ],
+        "example": "Classify fruit: if color=red and size>5cm → apple; if color=yellow → banana; else → orange.",
+        "time_complexity": "O(n·m·log n) for training, where n is samples and m is features.",
+        "space_complexity": "O(n·m) for storing tree structure.",
+        "strengths": [
+            "Interpretable and easy to visualize.",
+            "Handles non-linear relationships and feature interactions."
+        ],
+        "weaknesses": [
+            "Prone to overfitting without regularization.",
+            "Sensitive to small data changes (unstable)."
+        ],
+        "alternatives": ["Random Forest", "Gradient Boosting", "Neural Networks"],
+        "explanation": "Recursively partition data by asking questions about features until reaching pure groups that can be labeled."
+    },
+    "semester_03/lecture_12_ml_algorithms/kmeans/README.md": {
+        "name": "K-Means Clustering",
+        "problem": "Partitions n data points into k clusters by minimizing within-cluster variance and maximizing between-cluster separation.",
+        "intuition": "Place k centroids randomly, assign each point to the nearest centroid, move centroids to cluster centers, repeat until stable.",
+        "inputs": "Dataset of n points with d features and desired number of clusters k.",
+        "outputs": "k cluster centroids and assignment of each point to a cluster.",
+        "steps": [
+            "Initialize k centroids randomly or using k-means++.",
+            "Assign each point to the nearest centroid (Euclidean distance).",
+            "Update each centroid to the mean of points in its cluster.",
+            "Repeat assignment and update steps until centroids converge or max iterations.",
+            "Return final centroids and cluster assignments."
+        ],
+        "example": "Points: [(1,1), (1,2), (5,4), (6,5)], k=2 → clusters: {[(1,1),(1,2)], [(5,4),(6,5)]} with centroids (1,1.5) and (5.5,4.5).",
+        "time_complexity": "O(n·k·d·i) where i is iterations, typically converges quickly.",
+        "space_complexity": "O(n·d + k·d) for points and centroids.",
+        "strengths": [
+            "Simple and fast for large datasets.",
+            "Works well with spherical, well-separated clusters."
+        ],
+        "weaknesses": [
+            "Requires specifying k in advance.",
+            "Sensitive to initialization and may converge to local optima."
+        ],
+        "alternatives": ["Hierarchical Clustering", "DBSCAN", "Gaussian Mixture Models"],
+        "explanation": "Iteratively refine cluster centers by assigning points to nearest centroids and updating centroids to cluster means."
+    },
+    "semester_03/lecture_12_ml_algorithms/knn/README.md": {
+        "name": "K-Nearest Neighbors (KNN)",
+        "problem": "Classifies or predicts by finding k most similar training examples and using their labels or values.",
+        "intuition": "Ask your k closest neighbors what they think; the majority vote or average becomes your answer.",
+        "inputs": "Training dataset, query point, and parameter k (number of neighbors).",
+        "outputs": "Class label (classification) or predicted value (regression) for the query point.",
+        "steps": [
+            "Compute distance from query point to all training points.",
+            "Select k training points with smallest distances.",
+            "For classification: return majority class among k neighbors.",
+            "For regression: return mean (or weighted mean) of k neighbors' values.",
+            "Optionally use distance-weighted voting for better accuracy."
+        ],
+        "example": "Classify point (3,4) with k=3: nearest neighbors are [(2,3)→A, (4,5)→A, (1,6)→B] → majority A → predict class A.",
+        "time_complexity": "O(n·d) for each query, where n is training size and d is dimensions.",
+        "space_complexity": "O(n·d) to store training data.",
+        "strengths": [
+            "Simple, non-parametric, and effective for non-linear problems.",
+            "No training phase; learns from data lazily."
+        ],
+        "weaknesses": [
+            "Slow prediction on large datasets.",
+            "Sensitive to irrelevant features and curse of dimensionality."
+        ],
+        "alternatives": ["Decision Trees", "Support Vector Machines", "Neural Networks"],
+        "explanation": "Find the k closest examples in feature space and use their outcomes to make a prediction for the new point."
+    },
+    "semester_03/lecture_12_ml_algorithms/linear_regression/README.md": {
+        "name": "Linear Regression",
+        "problem": "Fits a linear relationship between features and a continuous target variable to predict numeric outcomes.",
+        "intuition": "Draw the best straight line through data points so predictions are as close as possible to actual values.",
+        "inputs": "Training data with features X (n×m matrix) and target values y (n×1 vector).",
+        "outputs": "Learned coefficients (weights) and intercept that define the linear model y = X·w + b.",
+        "steps": [
+            "Initialize weights w and bias b (often to zeros).",
+            "Compute predictions: ŷ = X·w + b.",
+            "Calculate loss (mean squared error): MSE = (1/n)Σ(y - ŷ)².",
+            "Update weights using gradient descent: w = w - α·∇w(MSE), b = b - α·∇b(MSE).",
+            "Repeat until convergence or max iterations."
+        ],
+        "example": "Predict house price from size: price = 50,000 + 200·size. House of 100m² → price = 70,000.",
+        "time_complexity": "O(n·m·i) for gradient descent, O(m³) for closed-form solution, where i is iterations.",
+        "space_complexity": "O(n·m) for data, O(m) for weights.",
+        "strengths": [
+            "Simple, interpretable, and fast to train.",
+            "Works well when relationship is approximately linear."
+        ],
+        "weaknesses": [
+            "Assumes linear relationship; fails on non-linear patterns.",
+            "Sensitive to outliers and multicollinearity."
+        ],
+        "alternatives": ["Polynomial Regression", "Ridge/Lasso Regression", "Neural Networks"],
+        "explanation": "Find the line that minimizes squared prediction errors by adjusting slope and intercept through optimization."
+    },
+    "semester_03/lecture_12_ml_algorithms/logistic_regression/README.md": {
+        "name": "Logistic Regression",
+        "problem": "Models probability of binary classification by fitting a sigmoid curve to map features to probabilities between 0 and 1.",
+        "intuition": "Instead of a straight line, use an S-shaped curve that squashes predictions into probability values.",
+        "inputs": "Training data with features X and binary labels y ∈ {0, 1}.",
+        "outputs": "Learned coefficients that define probability P(y=1|x) = 1/(1 + e^(-w·x - b)).",
+        "steps": [
+            "Initialize weights w and bias b.",
+            "Compute logits: z = X·w + b.",
+            "Apply sigmoid: p = 1/(1 + e^(-z)) to get probabilities.",
+            "Calculate cross-entropy loss: L = -Σ(y·log(p) + (1-y)·log(1-p)).",
+            "Update weights via gradient descent on loss function.",
+            "Repeat until convergence."
+        ],
+        "example": "Predict spam: if email contains 'free' and 'money', probability = 0.85 → classify as spam (threshold 0.5).",
+        "time_complexity": "O(n·m·i) for gradient descent iterations.",
+        "space_complexity": "O(n·m) for data, O(m) for weights.",
+        "strengths": [
+            "Provides probability estimates, not just classifications.",
+            "Fast, interpretable, and works well for linearly separable data."
+        ],
+        "weaknesses": [
+            "Assumes linear decision boundary in log-odds space.",
+            "Requires feature scaling for stable convergence."
+        ],
+        "alternatives": ["Support Vector Machines", "Decision Trees", "Neural Networks"],
+        "explanation": "Transform linear combination of features through sigmoid to output probabilities, then optimize to maximize likelihood of observed labels."
+    },
+    "semester_03/lecture_12_ml_algorithms/naive_bayes/README.md": {
+        "name": "Naive Bayes",
+        "problem": "Classifies instances using Bayes' theorem with the 'naive' assumption that features are conditionally independent given the class.",
+        "intuition": "Calculate probability of each class given the features; pick the class with highest probability, assuming features don't influence each other.",
+        "inputs": "Training data with features and class labels.",
+        "outputs": "Learned prior probabilities P(class) and likelihoods P(feature|class) for classification.",
+        "steps": [
+            "Estimate prior probabilities: P(class) = count(class) / total_samples.",
+            "For each feature and class, estimate likelihood: P(feature|class) from training data.",
+            "For a new instance, compute posterior for each class: P(class|features) ∝ P(class) · Π P(feature_i|class).",
+            "Select class with maximum posterior probability.",
+            "Use Laplace smoothing to handle unseen feature values."
+        ],
+        "example": "Classify email: P(spam|'free','money') ∝ P(spam)·P('free'|spam)·P('money'|spam) vs P(ham|'free','money') → choose max.",
+        "time_complexity": "O(n·m) for training, O(m·c) for prediction, where c is number of classes.",
+        "space_complexity": "O(m·c) to store probability tables.",
+        "strengths": [
+            "Fast training and prediction, works well with high-dimensional data.",
+            "Handles missing values and requires little data to estimate parameters."
+        ],
+        "weaknesses": [
+            "Naive independence assumption is often violated in practice.",
+            "Sensitive to irrelevant features."
+        ],
+        "alternatives": ["Logistic Regression", "Decision Trees", "Support Vector Machines"],
+        "explanation": "Use Bayes' rule to flip conditional probabilities, multiply feature likelihoods (assuming independence), and pick the most probable class."
+    },
+    "semester_03/lecture_12_ml_algorithms/svm/README.md": {
+        "name": "Support Vector Machine (SVM)",
+        "problem": "Finds the optimal hyperplane that maximally separates classes by maximizing the margin between support vectors.",
+        "intuition": "Draw the widest possible 'street' between classes; the boundary is the middle line, and support vectors are the closest points on each side.",
+        "inputs": "Training data with features X and class labels y ∈ {-1, +1}.",
+        "outputs": "Learned weights w and bias b defining the separating hyperplane w·x + b = 0.",
+        "steps": [
+            "Formulate optimization: minimize ||w||² subject to y_i(w·x_i + b) ≥ 1 for all points.",
+            "Solve using quadratic programming or gradient descent on dual form.",
+            "Identify support vectors (points on margin boundaries).",
+            "Compute decision boundary from support vectors.",
+            "For non-linear data, use kernel trick (RBF, polynomial) to map to higher dimensions."
+        ],
+        "example": "Separate two classes with maximum margin: hyperplane equidistant from closest points of each class.",
+        "time_complexity": "O(n²·m) to O(n³) depending on solver, where n is samples and m is features.",
+        "space_complexity": "O(n·m) for data, O(s) for support vectors where s << n typically.",
+        "strengths": [
+            "Effective in high-dimensional spaces and with clear margin of separation.",
+            "Memory efficient (uses only support vectors)."
+        ],
+        "weaknesses": [
+            "Does not perform well on large datasets or with overlapping classes.",
+            "Requires careful kernel and parameter selection."
+        ],
+        "alternatives": ["Logistic Regression", "Neural Networks", "Random Forest"],
+        "explanation": "Maximize the gap between classes by finding the hyperplane that is farthest from the nearest points of each class."
     }
 }
 

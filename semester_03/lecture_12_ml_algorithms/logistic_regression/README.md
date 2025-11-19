@@ -4,37 +4,42 @@
    Logistic Regression
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements logistic regression algorithm.
+   Models probability of binary classification by fitting a sigmoid curve to map features to probabilities between 0 and 1.
 
 3. **Intuition (plain-language explanation)**  
-   Logistic Regression is a fundamental algorithm in computer science.
+   Instead of a straight line, use an S-shaped curve that squashes predictions into probability values.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Training data with features X and binary labels y ∈ {0, 1}.  
+   - Output: Learned coefficients that define probability P(y=1|x) = 1/(1 + e^(-w·x - b)).
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Initialize weights w and bias b.
+2. Compute logits: z = X·w + b.
+3. Apply sigmoid: p = 1/(1 + e^(-z)) to get probabilities.
+4. Calculate cross-entropy loss: L = -Σ(y·log(p) + (1-y)·log(1-p)).
+5. Update weights via gradient descent on loss function.
+6. Repeat until convergence.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Logistic Regression applied to sample data.
+   Predict spam: if email contains 'free' and 'money', probability = 0.85 → classify as spam (threshold 0.5).
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(n·m·i) for gradient descent iterations.  
+   - Space: O(n·m) for data, O(m) for weights.
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Provides probability estimates, not just classifications.
+- Fast, interpretable, and works well for linearly separable data.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Assumes linear decision boundary in log-odds space.
+- Requires feature scaling for stable convergence.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Support Vector Machines, Decision Trees, Neural Networks
 
 11. **30-second explanation (your own words)**  
-    Logistic Regression solves computational problems efficiently.
+    Transform linear combination of features through sigmoid to output probabilities, then optimize to maximize likelihood of observed labels.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
