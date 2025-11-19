@@ -4,37 +4,48 @@
    Quantum Machine Learning
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements quantum machine learning algorithm.
+   Uses quantum computers to accelerate machine learning tasks, potentially providing exponential speedups for certain problems like optimization, classification, and data analysis.
 
 3. **Intuition (plain-language explanation)**  
-   Quantum Machine Learning is a fundamental algorithm in computer science.
+   Like ML on quantum computers: Quantum Machine Learning is like running machine learning on quantum computers - you use quantum properties (superposition, entanglement) to process data in ways classical computers can't - just as quantum computers can solve some problems faster, quantum ML can train models or process data faster for certain problems.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Classical or quantum data, quantum ML models, training data, quantum circuits, optimization parameters.  
+   - Output: Trained quantum models, quantum predictions, optimized parameters, quantum feature maps, quantum classifiers.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Encode: encode data into quantum states.
+2. Design: design quantum ML model (variational circuit).
+3. Initialize: initialize model parameters.
+4. Forward: perform forward pass (quantum circuit execution).
+5. Measure: measure quantum state to get predictions.
+6. Loss: calculate loss function.
+7. Gradient: compute gradients (parameter shift rule).
+8. Update: update parameters using gradients.
+9. Iterate: iterate training loop.
+10. Evaluate: evaluate trained model.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Quantum Machine Learning applied to sample data.
+   Quantum Machine Learning: data: encode into qubits → model: variational quantum circuit → train: optimize parameters → forward: execute circuit → measure: get predictions → loss: calculate error → update: adjust parameters → result: trained quantum classifier → Quantum ML successful.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(p·m) where p is parameters, m is measurements (varies by problem, potential speedup).  
+   - Space: O(n) where n is number of qubits (quantum state space).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Speedup: potential exponential speedup for certain problems.
+- Expressivity: quantum models can represent complex functions.
+- Novel: enables new ML approaches using quantum properties.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Hardware: requires quantum hardware (currently limited).
+- Noise: quantum noise affects training and inference.
+- Applications: speedups not guaranteed for all problems.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Classical ML, Hybrid Quantum-Classical, Quantum-Inspired, NISQ ML
 
 11. **30-second explanation (your own words)**  
-    Quantum Machine Learning solves computational problems efficiently.
+    Uses quantum computers to accelerate machine learning tasks, potentially providing exponential speedups for certain problems like optimization, classification, and data analysis.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

@@ -13723,6 +13723,448 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Separate Tools", "Ad-Hoc Observability", "Basic Monitoring", "Integrated Stacks"],
         "explanation": "Provides a single, unified view of system observability by integrating metrics, logs, traces, and events into one platform, enabling efficient troubleshooting and comprehensive system understanding."
+    },
+    "semester_12/lecture_79_quantum_algorithms_advanced/quantum_cryptography/README.md": {
+        "name": "Quantum Cryptography",
+        "problem": "Uses quantum mechanical properties to provide secure communication protocols that are theoretically unbreakable, even against quantum computers, based on the laws of physics rather than computational complexity.",
+        "intuition": "Like unbreakable locks: Quantum Cryptography is like unbreakable locks based on physics - instead of relying on math that might be broken (classical crypto), quantum crypto uses physics (quantum mechanics) - just as you can't break the laws of physics, you can't break quantum cryptography because it's based on fundamental physical principles.",
+        "inputs": "Quantum states, quantum channels, measurement bases, encryption keys, quantum protocols.",
+        "outputs": "Secure quantum keys, encrypted quantum communication, quantum key distribution, provably secure protocols.",
+        "steps": [
+            "Prepare: prepare quantum states (qubits) for key distribution.",
+            "Transmit: transmit qubits over quantum channel.",
+            "Measure: measure qubits using random bases.",
+            "Compare: compare measurement bases publicly.",
+            "Extract: extract secure key from matching bases.",
+            "Verify: verify key security through error checking.",
+            "Encrypt: use quantum key for encryption.",
+            "Decrypt: decrypt using shared quantum key.",
+            "Detect: detect eavesdropping attempts.",
+            "Renew: renew keys as needed."
+        ],
+        "example": "Quantum Cryptography: Alice: prepare qubits → transmit: send qubits to Bob → measure: both measure randomly → compare: share bases publicly → extract: key from matching bases → verify: check for errors → result: secure key, eavesdropping detected → Quantum Cryptography successful.",
+        "time_complexity": "O(n) where n is number of qubits (quantum operations are typically O(1) per qubit).",
+        "space_complexity": "O(n) where n is number of qubits (quantum state storage).",
+        "strengths": [
+            "Security: theoretically unbreakable based on physics.",
+            "Detection: detects eavesdropping attempts automatically.",
+            "Future-proof: secure against quantum computers."
+        ],
+        "weaknesses": [
+            "Distance: limited by quantum channel distance.",
+            "Infrastructure: requires quantum communication infrastructure.",
+            "Cost: quantum hardware is expensive."
+        ],
+        "alternatives": ["Classical Cryptography", "Post-Quantum Cryptography", "Hybrid Approaches", "Quantum Key Distribution"],
+        "explanation": "Uses quantum mechanical properties to provide secure communication protocols that are theoretically unbreakable, even against quantum computers, based on the laws of physics rather than computational complexity."
+    },
+    "semester_12/lecture_79_quantum_algorithms_advanced/quantum_error_correction/README.md": {
+        "name": "Quantum Error Correction",
+        "problem": "Protects quantum information from errors caused by decoherence and noise by encoding quantum states redundantly and detecting/correcting errors without destroying quantum superposition.",
+        "intuition": "Like error correction for quantum: Quantum Error Correction is like error correction codes for quantum information - you encode quantum data redundantly (like RAID for qubits), detect errors, and fix them - just as error correction protects digital data, quantum error correction protects quantum information from noise and decoherence.",
+        "inputs": "Logical qubits, error syndromes, quantum codes, ancilla qubits, error models.",
+        "outputs": "Error-corrected qubits, error syndromes, corrected quantum states, fault-tolerant operations.",
+        "steps": [
+            "Encode: encode logical qubit into physical qubits (quantum code).",
+            "Protect: protect quantum state from errors.",
+            "Detect: detect errors through syndrome measurements.",
+            "Classify: classify error type from syndrome.",
+            "Correct: apply correction operations based on syndrome.",
+            "Verify: verify correction was successful.",
+            "Decode: decode logical qubit from physical qubits.",
+            "Iterate: repeat error correction as needed.",
+            "Fault-tolerant: perform fault-tolerant quantum operations.",
+            "Scale: scale to larger quantum systems."
+        ],
+        "example": "Quantum Error Correction: logical qubit: |ψ⟩ → encode: encode into 3 physical qubits → detect: measure syndrome → error: bit-flip detected → correct: apply X gate → verify: syndrome cleared → decode: recover |ψ⟩ → Quantum Error Correction successful.",
+        "time_complexity": "O(d) where d is code distance (error correction overhead).",
+        "space_complexity": "O(n·d) where n is logical qubits, d is code distance (physical qubits needed).",
+        "strengths": [
+            "Protection: protects quantum information from errors.",
+            "Fault-tolerance: enables fault-tolerant quantum computation.",
+            "Scalability: enables scaling to larger quantum systems."
+        ],
+        "weaknesses": [
+            "Overhead: requires many physical qubits per logical qubit.",
+            "Complexity: quantum error correction is complex.",
+            "Threshold: requires error rates below threshold."
+        ],
+        "alternatives": ["No Error Correction", "Error Mitigation", "NISQ Approaches", "Fault-Tolerant Codes"],
+        "explanation": "Protects quantum information from errors caused by decoherence and noise by encoding quantum states redundantly and detecting/correcting errors without destroying quantum superposition."
+    },
+    "semester_12/lecture_79_quantum_algorithms_advanced/quantum_machine_learning/README.md": {
+        "name": "Quantum Machine Learning",
+        "problem": "Uses quantum computers to accelerate machine learning tasks, potentially providing exponential speedups for certain problems like optimization, classification, and data analysis.",
+        "intuition": "Like ML on quantum computers: Quantum Machine Learning is like running machine learning on quantum computers - you use quantum properties (superposition, entanglement) to process data in ways classical computers can't - just as quantum computers can solve some problems faster, quantum ML can train models or process data faster for certain problems.",
+        "inputs": "Classical or quantum data, quantum ML models, training data, quantum circuits, optimization parameters.",
+        "outputs": "Trained quantum models, quantum predictions, optimized parameters, quantum feature maps, quantum classifiers.",
+        "steps": [
+            "Encode: encode data into quantum states.",
+            "Design: design quantum ML model (variational circuit).",
+            "Initialize: initialize model parameters.",
+            "Forward: perform forward pass (quantum circuit execution).",
+            "Measure: measure quantum state to get predictions.",
+            "Loss: calculate loss function.",
+            "Gradient: compute gradients (parameter shift rule).",
+            "Update: update parameters using gradients.",
+            "Iterate: iterate training loop.",
+            "Evaluate: evaluate trained model."
+        ],
+        "example": "Quantum Machine Learning: data: encode into qubits → model: variational quantum circuit → train: optimize parameters → forward: execute circuit → measure: get predictions → loss: calculate error → update: adjust parameters → result: trained quantum classifier → Quantum ML successful.",
+        "time_complexity": "O(p·m) where p is parameters, m is measurements (varies by problem, potential speedup).",
+        "space_complexity": "O(n) where n is number of qubits (quantum state space).",
+        "strengths": [
+            "Speedup: potential exponential speedup for certain problems.",
+            "Expressivity: quantum models can represent complex functions.",
+            "Novel: enables new ML approaches using quantum properties."
+        ],
+        "weaknesses": [
+            "Hardware: requires quantum hardware (currently limited).",
+            "Noise: quantum noise affects training and inference.",
+            "Applications: speedups not guaranteed for all problems."
+        ],
+        "alternatives": ["Classical ML", "Hybrid Quantum-Classical", "Quantum-Inspired", "NISQ ML"],
+        "explanation": "Uses quantum computers to accelerate machine learning tasks, potentially providing exponential speedups for certain problems like optimization, classification, and data analysis."
+    },
+    "semester_12/lecture_79_quantum_algorithms_advanced/quantum_optimization/README.md": {
+        "name": "Quantum Optimization",
+        "problem": "Uses quantum algorithms like QAOA (Quantum Approximate Optimization Algorithm) to solve optimization problems, potentially finding better solutions faster than classical methods for combinatorial optimization.",
+        "intuition": "Like quantum search for best solutions: Quantum Optimization is like using quantum search to find the best solution - quantum computers can explore many solutions simultaneously (superposition) and find optimal ones faster - just as quantum search finds items faster, quantum optimization finds optimal solutions faster.",
+        "inputs": "Optimization problem, cost function, constraints, quantum circuit parameters, optimization variables.",
+        "outputs": "Optimized solutions, optimal parameters, quantum states, cost values, approximation ratios.",
+        "steps": [
+            "Formulate: formulate problem as optimization (QUBO, Ising).",
+            "Encode: encode problem into quantum Hamiltonian.",
+            "Design: design QAOA circuit with parameters.",
+            "Initialize: initialize parameters randomly.",
+            "Execute: execute quantum circuit.",
+            "Measure: measure quantum state.",
+            "Evaluate: evaluate cost function.",
+            "Optimize: optimize parameters (classical optimizer).",
+            "Iterate: iterate QAOA layers.",
+            "Extract: extract best solution."
+        ],
+        "example": "Quantum Optimization: problem: max-cut → encode: Ising Hamiltonian → QAOA: design circuit → execute: run on quantum computer → measure: get solution → evaluate: calculate cut value → optimize: improve parameters → result: better solution than classical → Quantum Optimization successful.",
+        "time_complexity": "O(p·m·k) where p is parameters, m is measurements, k is QAOA layers (varies by problem).",
+        "space_complexity": "O(n) where n is problem size (qubits needed).",
+        "strengths": [
+            "Speedup: potential speedup for combinatorial optimization.",
+            "Quality: can find better solutions than classical methods.",
+            "Applications: applicable to many optimization problems."
+        ],
+        "weaknesses": [
+            "Approximation: provides approximate solutions (not always optimal).",
+            "Hardware: requires quantum hardware.",
+            "Scaling: scaling to large problems is challenging."
+        ],
+        "alternatives": ["Classical Optimization", "Simulated Annealing", "Genetic Algorithms", "Hybrid Approaches"],
+        "explanation": "Uses quantum algorithms like QAOA (Quantum Approximate Optimization Algorithm) to solve optimization problems, potentially finding better solutions faster than classical methods for combinatorial optimization."
+    },
+    "semester_12/lecture_79_quantum_algorithms_advanced/quantum_simulation/README.md": {
+        "name": "Quantum Simulation",
+        "problem": "Simulates quantum systems (molecules, materials, quantum many-body systems) using quantum computers, providing exponential speedup over classical simulation for quantum chemistry and physics.",
+        "intuition": "Like simulating quantum with quantum: Quantum Simulation is like using quantum computers to simulate quantum systems - it's natural because quantum computers are quantum systems themselves - just as you'd use a weather simulator to simulate weather, you use quantum computers to simulate quantum systems, and they're much better at it than classical computers.",
+        "inputs": "Quantum system Hamiltonian, initial quantum state, simulation parameters, quantum gates, time evolution.",
+        "outputs": "Simulated quantum states, energy eigenvalues, molecular properties, quantum dynamics, simulation results.",
+        "steps": [
+            "Model: model quantum system (molecule, material).",
+            "Hamiltonian: construct system Hamiltonian.",
+            "Encode: encode Hamiltonian into quantum circuit.",
+            "Prepare: prepare initial quantum state.",
+            "Evolve: evolve state using quantum gates (Trotterization).",
+            "Measure: measure quantum state properties.",
+            "Extract: extract physical properties (energy, observables).",
+            "Iterate: iterate time evolution steps.",
+            "Analyze: analyze simulation results.",
+            "Validate: validate against known results."
+        ],
+        "example": "Quantum Simulation: molecule: H2O → Hamiltonian: construct molecular Hamiltonian → encode: map to qubits → evolve: simulate time evolution → measure: measure energy → result: ground state energy calculated → Quantum Simulation successful.",
+        "time_complexity": "O(poly(n)·t) where n is system size, t is simulation time (exponential speedup over classical).",
+        "space_complexity": "O(n) where n is number of qubits (logarithmic in system size).",
+        "strengths": [
+            "Speedup: exponential speedup over classical simulation.",
+            "Accuracy: can simulate quantum systems accurately.",
+            "Applications: enables drug discovery, material design."
+        ],
+        "weaknesses": [
+            "Noise: quantum noise affects simulation accuracy.",
+            "Scaling: scaling to large systems is challenging.",
+            "Hardware: requires quantum hardware."
+        ],
+        "alternatives": ["Classical Simulation", "Approximate Methods", "Hybrid Approaches", "Quantum-Classical"],
+        "explanation": "Simulates quantum systems (molecules, materials, quantum many-body systems) using quantum computers, providing exponential speedup over classical simulation for quantum chemistry and physics."
+    },
+    "semester_12/lecture_79_quantum_algorithms_advanced/quantum_teleportation/README.md": {
+        "name": "Quantum Teleportation",
+        "problem": "Transfers an unknown quantum state from one location to another using quantum entanglement and classical communication, without physically transporting the quantum particle.",
+        "intuition": "Like teleporting quantum information: Quantum Teleportation is like teleporting quantum information - you don't send the qubit itself, you use entanglement (spooky action) and send classical information to recreate the state elsewhere - just as teleportation in sci-fi moves objects instantly, quantum teleportation moves quantum states using entanglement.",
+        "inputs": "Unknown quantum state, entangled pair (Bell state), classical communication channel, measurement results.",
+        "outputs": "Teleported quantum state, measurement outcomes, classical bits, reconstructed state.",
+        "steps": [
+            "Prepare: prepare entangled pair (Bell state).",
+            "Share: share one qubit with sender, one with receiver.",
+            "Entangle: entangle unknown state with sender's qubit.",
+            "Measure: measure both qubits at sender.",
+            "Communicate: send measurement results classically.",
+            "Apply: receiver applies correction based on results.",
+            "Reconstruct: receiver reconstructs original state.",
+            "Verify: verify teleportation was successful.",
+            "Destroy: original state is destroyed (no-cloning).",
+            "Complete: teleportation complete."
+        ],
+        "example": "Quantum Teleportation: state: |ψ⟩ unknown → prepare: Bell pair |Φ+⟩ → entangle: |ψ⟩ with Alice's qubit → measure: Alice measures → communicate: send 2 classical bits → apply: Bob applies corrections → result: |ψ⟩ teleported to Bob → Quantum Teleportation successful.",
+        "time_complexity": "O(1) for teleportation protocol (constant time quantum operations).",
+        "space_complexity": "O(1) for single qubit teleportation (3 qubits: 1 unknown + 2 entangled).",
+        "strengths": [
+            "Transfer: enables transfer of quantum states.",
+            "Networking: foundation for quantum networks.",
+            "No transport: doesn't require physical transport of qubits."
+        ],
+        "weaknesses": [
+            "Classical: requires classical communication.",
+            "Entanglement: requires pre-shared entanglement.",
+            "Distance: limited by entanglement distribution."
+        ],
+        "alternatives": ["Physical Transport", "Quantum Repeaters", "Direct Transmission", "Quantum Networks"],
+        "explanation": "Transfers an unknown quantum state from one location to another using quantum entanglement and classical communication, without physically transporting the quantum particle."
+    },
+    "semester_12/lecture_80_quantum_computing_advanced/quantum_architectures/README.md": {
+        "name": "Quantum Architectures",
+        "problem": "Designs and implements hardware architectures for quantum computers, including qubit technologies, connectivity, control systems, and error correction integration.",
+        "intuition": "Like computer architecture for quantum: Quantum Architectures is like computer architecture but for quantum computers - you design how qubits are arranged (layout), how they connect (topology), and how they're controlled (gates) - just as computer architecture designs CPUs, quantum architecture designs quantum processors.",
+        "inputs": "Qubit technologies, connectivity requirements, gate sets, error rates, scalability goals, control systems.",
+        "outputs": "Quantum architectures, qubit layouts, connectivity topologies, gate implementations, control designs, scalable systems.",
+        "steps": [
+            "Select: select qubit technology (superconducting, trapped ions, etc.).",
+            "Design: design qubit layout and connectivity.",
+            "Connect: design connectivity topology (nearest-neighbor, all-to-all).",
+            "Implement: implement quantum gates.",
+            "Control: design control systems.",
+            "Integrate: integrate error correction.",
+            "Optimize: optimize for performance and scalability.",
+            "Fabricate: fabricate quantum processor.",
+            "Test: test and characterize architecture.",
+            "Scale: scale to larger systems."
+        ],
+        "example": "Quantum Architectures: technology: superconducting qubits → layout: 2D grid → connectivity: nearest-neighbor → gates: implement CNOT, single-qubit gates → control: microwave pulses → error correction: integrate surface code → result: scalable quantum architecture → Quantum Architectures successful.",
+        "time_complexity": "O(1) for gate operations (varies by architecture, typically constant per gate).",
+        "space_complexity": "O(n) where n is number of qubits (physical qubit layout).",
+        "strengths": [
+            "Scalability: enables scaling to larger quantum systems.",
+            "Performance: optimized architectures improve performance.",
+            "Flexibility: different architectures for different applications."
+        ],
+        "weaknesses": [
+            "Complexity: designing quantum architectures is complex.",
+            "Technology: limited by qubit technology constraints.",
+            "Noise: architecture affects error rates."
+        ],
+        "alternatives": ["Fixed Architectures", "Ad-Hoc Designs", "Technology-Specific", "Modular Approaches"],
+        "explanation": "Designs and implements hardware architectures for quantum computers, including qubit technologies, connectivity, control systems, and error correction integration."
+    },
+    "semester_12/lecture_80_quantum_computing_advanced/quantum_benchmarking/README.md": {
+        "name": "Quantum Benchmarking",
+        "problem": "Measures and evaluates the performance of quantum computers through standardized tests, characterizing gate fidelities, error rates, and overall system quality.",
+        "intuition": "Like performance benchmarks: Quantum Benchmarking is like performance benchmarks for quantum computers - you run standardized tests (like CPU benchmarks) to measure how well the quantum computer performs - just as benchmarks test computer speed, quantum benchmarks test quantum computer quality and error rates.",
+        "inputs": "Quantum circuits, benchmark protocols, test sequences, measurement data, error models.",
+        "outputs": "Benchmark results, gate fidelities, error rates, system metrics, performance reports, quality assessments.",
+        "steps": [
+            "Select: select benchmark protocol (RB, XEB, etc.).",
+            "Design: design benchmark circuits.",
+            "Execute: execute circuits on quantum computer.",
+            "Measure: measure quantum states.",
+            "Collect: collect measurement data.",
+            "Analyze: analyze data for errors and fidelities.",
+            "Calculate: calculate benchmark metrics.",
+            "Compare: compare with other systems.",
+            "Report: report benchmark results.",
+            "Improve: use results to improve system."
+        ],
+        "example": "Quantum Benchmarking: protocol: randomized benchmarking → circuits: random Clifford circuits → execute: run on quantum computer → measure: collect data → analyze: calculate gate fidelity → result: 99.5% fidelity → Quantum Benchmarking successful.",
+        "time_complexity": "O(m·d) where m is measurements, d is circuit depth (varies by benchmark).",
+        "space_complexity": "O(n) where n is number of qubits (quantum state space).",
+        "strengths": [
+            "Standardization: provides standardized performance metrics.",
+            "Characterization: characterizes quantum system quality.",
+            "Comparison: enables comparison between quantum systems."
+        ],
+        "weaknesses": [
+            "Time: benchmarking can be time-consuming.",
+            "Coverage: may not cover all aspects of performance.",
+            "Interpretation: results require careful interpretation."
+        ],
+        "alternatives": ["No Benchmarking", "Ad-Hoc Testing", "Application-Specific", "Custom Benchmarks"],
+        "explanation": "Measures and evaluates the performance of quantum computers through standardized tests, characterizing gate fidelities, error rates, and overall system quality."
+    },
+    "semester_12/lecture_80_quantum_computing_advanced/quantum_circuits/README.md": {
+        "name": "Quantum Circuits",
+        "problem": "Designs and implements quantum circuits (sequences of quantum gates) to perform quantum computations, algorithms, and operations on qubits.",
+        "intuition": "Like circuits for quantum: Quantum Circuits are like electrical circuits but for quantum information - you connect quantum gates (like logic gates) to process qubits - just as circuits process bits, quantum circuits process qubits using quantum gates.",
+        "inputs": "Quantum gates, qubits, circuit specifications, algorithm requirements, gate parameters.",
+        "outputs": "Quantum circuits, gate sequences, compiled circuits, optimized circuits, executable quantum programs.",
+        "steps": [
+            "Specify: specify quantum algorithm or operation.",
+            "Design: design quantum circuit structure.",
+            "Select: select appropriate quantum gates.",
+            "Compose: compose gates into circuit.",
+            "Optimize: optimize circuit (reduce gates, depth).",
+            "Compile: compile to target quantum hardware.",
+            "Validate: validate circuit correctness.",
+            "Execute: execute circuit on quantum computer.",
+            "Measure: measure quantum state.",
+            "Analyze: analyze results."
+        ],
+        "example": "Quantum Circuits: algorithm: Grover's search → design: oracle + diffusion → gates: H, X, CNOT, Z → compose: build circuit → optimize: reduce gate count → compile: map to hardware → execute: run on quantum computer → result: search result found → Quantum Circuits successful.",
+        "time_complexity": "O(d) where d is circuit depth (number of gate layers).",
+        "space_complexity": "O(n) where n is number of qubits (quantum register size).",
+        "strengths": [
+            "Flexibility: enables implementation of any quantum algorithm.",
+            "Composability: gates compose into complex circuits.",
+            "Standardization: quantum gates provide standard operations."
+        ],
+        "weaknesses": [
+            "Noise: circuit depth affects error accumulation.",
+            "Compilation: compilation to hardware can be complex.",
+            "Optimization: circuit optimization is challenging."
+        ],
+        "alternatives": ["Ad-Hoc Operations", "Fixed Algorithms", "High-Level Languages", "Quantum Compilers"],
+        "explanation": "Designs and implements quantum circuits (sequences of quantum gates) to perform quantum computations, algorithms, and operations on qubits."
+    },
+    "semester_12/lecture_80_quantum_computing_advanced/quantum_compilation/README.md": {
+        "name": "Quantum Compilation",
+        "problem": "Compiles high-level quantum algorithms into optimized, hardware-specific quantum circuits that can be executed on quantum computers, optimizing for gate count, depth, and fidelity.",
+        "intuition": "Like compiling code: Quantum Compilation is like compiling high-level code to machine code - you take a quantum algorithm (high-level) and compile it to quantum gates (low-level) optimized for specific hardware - just as compilers optimize code, quantum compilers optimize quantum circuits.",
+        "inputs": "High-level quantum algorithms, target hardware, gate sets, connectivity constraints, optimization goals.",
+        "outputs": "Compiled circuits, optimized gate sequences, hardware-mapped circuits, reduced depth circuits, executable programs.",
+        "steps": [
+            "Parse: parse high-level quantum program.",
+            "Decompose: decompose into basic gates.",
+            "Optimize: optimize gate sequences.",
+            "Map: map to hardware topology.",
+            "Route: route qubits for connectivity.",
+            "Schedule: schedule gate execution.",
+            "Validate: validate compiled circuit.",
+            "Optimize: further optimize for target hardware.",
+            "Generate: generate executable circuit.",
+            "Verify: verify correctness."
+        ],
+        "example": "Quantum Compilation: algorithm: Shor's algorithm → parse: high-level description → decompose: into CNOT, H, T gates → optimize: reduce gate count → map: to 2D grid topology → route: route qubits → result: optimized hardware circuit → Quantum Compilation successful.",
+        "time_complexity": "O(n²·d) where n is qubits, d is depth (compilation optimization).",
+        "space_complexity": "O(n + g) where n is qubits, g is gates (circuit representation).",
+        "strengths": [
+            "Optimization: optimizes circuits for performance.",
+            "Hardware: adapts to hardware constraints.",
+            "Abstraction: enables high-level quantum programming."
+        ],
+        "weaknesses": [
+            "Complexity: compilation can be complex.",
+            "Optimality: optimal compilation is NP-hard.",
+            "Hardware: must adapt to different hardware."
+        ],
+        "alternatives": ["Manual Circuit Design", "Direct Gate Programming", "Hardware-Specific", "Template-Based"],
+        "explanation": "Compiles high-level quantum algorithms into optimized, hardware-specific quantum circuits that can be executed on quantum computers, optimizing for gate count, depth, and fidelity."
+    },
+    "semester_12/lecture_80_quantum_computing_advanced/quantum_networking/README.md": {
+        "name": "Quantum Networking",
+        "problem": "Connects multiple quantum computers and quantum devices into quantum networks, enabling distributed quantum computing, quantum communication, and quantum internet.",
+        "intuition": "Like internet for quantum: Quantum Networking is like the internet but for quantum computers - you connect quantum devices (like connecting computers) to share quantum information and compute together - just as the internet connects computers, quantum networks connect quantum computers.",
+        "inputs": "Quantum nodes, quantum channels, entanglement distribution, quantum repeaters, network protocols.",
+        "outputs": "Quantum networks, distributed quantum systems, quantum communication links, entangled states, network connectivity.",
+        "steps": [
+            "Deploy: deploy quantum nodes.",
+            "Connect: connect nodes with quantum channels.",
+            "Distribute: distribute entanglement between nodes.",
+            "Route: route quantum information through network.",
+            "Teleport: use quantum teleportation for communication.",
+            "Repeat: use quantum repeaters for long distances.",
+            "Protocol: implement quantum network protocols.",
+            "Secure: implement quantum cryptography.",
+            "Scale: scale network to more nodes.",
+            "Optimize: optimize network performance."
+        ],
+        "example": "Quantum Networking: nodes: 3 quantum computers → connect: quantum channels → distribute: create entanglement → route: route qubits → teleport: teleport quantum states → result: distributed quantum computation → Quantum Networking operational.",
+        "time_complexity": "O(d + r) where d is distance, r is routing time (network operations).",
+        "space_complexity": "O(n) where n is number of nodes (network topology).",
+        "strengths": [
+            "Scalability: enables scaling beyond single quantum computer.",
+            "Distribution: enables distributed quantum computing.",
+            "Communication: enables quantum communication and internet."
+        ],
+        "weaknesses": [
+            "Distance: limited by quantum channel distance.",
+            "Infrastructure: requires quantum network infrastructure.",
+            "Complexity: quantum networking is complex."
+        ],
+        "alternatives": ["Single Quantum Computer", "Classical Networking", "Hybrid Networks", "Quantum Repeaters"],
+        "explanation": "Connects multiple quantum computers and quantum devices into quantum networks, enabling distributed quantum computing, quantum communication, and quantum internet."
+    },
+    "semester_12/lecture_80_quantum_computing_advanced/quantum_noise/README.md": {
+        "name": "Quantum Noise",
+        "problem": "Characterizes, models, and mitigates noise and errors in quantum systems caused by decoherence, gate errors, and environmental interactions that degrade quantum information.",
+        "intuition": "Like noise in signals: Quantum Noise is like noise in signals but for quantum information - unwanted interactions (like static) corrupt quantum states - just as noise corrupts audio signals, quantum noise corrupts quantum information, and you need to understand and reduce it.",
+        "inputs": "Quantum states, noise models, error rates, environmental parameters, gate fidelities, decoherence times.",
+        "outputs": "Noise characterization, error models, noise mitigation strategies, error rates, decoherence parameters, mitigation results.",
+        "steps": [
+            "Characterize: characterize noise sources and types.",
+            "Model: model noise mathematically (Kraus operators, noise channels).",
+            "Measure: measure noise parameters (T1, T2, gate errors).",
+            "Analyze: analyze noise impact on quantum operations.",
+            "Mitigate: apply noise mitigation techniques.",
+            "Correct: use error correction to combat noise.",
+            "Optimize: optimize operations to reduce noise.",
+            "Monitor: continuously monitor noise levels.",
+            "Calibrate: calibrate gates to reduce errors.",
+            "Improve: improve system to reduce noise."
+        ],
+        "example": "Quantum Noise: characterize: T1=100μs, T2=50μs, gate error=0.1% → model: depolarizing noise → measure: measure actual errors → analyze: noise limits circuit depth → mitigate: error correction → result: noise reduced, longer circuits possible → Quantum Noise mitigation successful.",
+        "time_complexity": "O(m·n) where m is measurements, n is qubits (noise characterization).",
+        "space_complexity": "O(n²) where n is qubits (noise model storage, density matrices).",
+        "strengths": [
+            "Understanding: enables understanding of quantum system limitations.",
+            "Mitigation: enables noise mitigation strategies.",
+            "Improvement: guides system improvements."
+        ],
+        "weaknesses": [
+            "Complexity: noise characterization is complex.",
+            "Variability: noise varies over time and conditions.",
+            "Limitation: noise fundamentally limits quantum computation."
+        ],
+        "alternatives": ["Ignore Noise", "Error Correction Only", "Noise-Free Systems", "Error Mitigation"],
+        "explanation": "Characterizes, models, and mitigates noise and errors in quantum systems caused by decoherence, gate errors, and environmental interactions that degrade quantum information."
+    },
+    "semester_12/lecture_80_quantum_computing_advanced/quantum_ai/README.md": {
+        "name": "Quantum AI",
+        "problem": "Combines quantum computing with artificial intelligence, exploring how quantum algorithms can enhance AI tasks like optimization, pattern recognition, and learning, and how AI can improve quantum computing.",
+        "intuition": "Like AI meets quantum: Quantum AI is like combining AI with quantum computing - you use quantum computers to run AI algorithms faster, or use AI to improve quantum computers - just as AI enhances many fields, quantum computing can enhance AI, and AI can enhance quantum computing.",
+        "inputs": "AI tasks, quantum algorithms, training data, quantum models, optimization problems, learning objectives.",
+        "outputs": "Quantum AI models, quantum-enhanced solutions, optimized parameters, quantum learning results, AI-improved quantum systems.",
+        "steps": [
+            "Identify: identify AI tasks suitable for quantum enhancement.",
+            "Design: design quantum AI algorithms.",
+            "Encode: encode data into quantum states.",
+            "Train: train quantum models using quantum algorithms.",
+            "Optimize: optimize using quantum optimization.",
+            "Execute: execute on quantum computers.",
+            "Measure: measure quantum states for predictions.",
+            "Learn: learn from quantum-enhanced results.",
+            "Improve: improve quantum systems using AI.",
+            "Integrate: integrate quantum AI into applications."
+        ],
+        "example": "Quantum AI: task: portfolio optimization → encode: encode into quantum state → QAOA: use quantum optimization → train: optimize portfolio weights → execute: run on quantum computer → result: better portfolio than classical → Quantum AI successful.",
+        "time_complexity": "O(p·m·k) where p is parameters, m is measurements, k is iterations (varies by application).",
+        "space_complexity": "O(n) where n is number of qubits (quantum state space).",
+        "strengths": [
+            "Speedup: potential speedup for certain AI tasks.",
+            "Novel: enables new AI approaches using quantum properties.",
+            "Synergy: combines strengths of AI and quantum computing."
+        ],
+        "weaknesses": [
+            "Early: field is still in early stages.",
+            "Hardware: requires quantum hardware.",
+            "Applications: speedups not guaranteed for all tasks."
+        ],
+        "alternatives": ["Classical AI", "Hybrid Quantum-Classical AI", "Quantum-Inspired", "NISQ AI"],
+        "explanation": "Combines quantum computing with artificial intelligence, exploring how quantum algorithms can enhance AI tasks like optimization, pattern recognition, and learning, and how AI can improve quantum computing."
     }
 }
 

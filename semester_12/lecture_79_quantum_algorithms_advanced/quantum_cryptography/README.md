@@ -4,37 +4,48 @@
    Quantum Cryptography
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements quantum cryptography algorithm.
+   Uses quantum mechanical properties to provide secure communication protocols that are theoretically unbreakable, even against quantum computers, based on the laws of physics rather than computational complexity.
 
 3. **Intuition (plain-language explanation)**  
-   Quantum Cryptography is a fundamental algorithm in computer science.
+   Like unbreakable locks: Quantum Cryptography is like unbreakable locks based on physics - instead of relying on math that might be broken (classical crypto), quantum crypto uses physics (quantum mechanics) - just as you can't break the laws of physics, you can't break quantum cryptography because it's based on fundamental physical principles.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Quantum states, quantum channels, measurement bases, encryption keys, quantum protocols.  
+   - Output: Secure quantum keys, encrypted quantum communication, quantum key distribution, provably secure protocols.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Prepare: prepare quantum states (qubits) for key distribution.
+2. Transmit: transmit qubits over quantum channel.
+3. Measure: measure qubits using random bases.
+4. Compare: compare measurement bases publicly.
+5. Extract: extract secure key from matching bases.
+6. Verify: verify key security through error checking.
+7. Encrypt: use quantum key for encryption.
+8. Decrypt: decrypt using shared quantum key.
+9. Detect: detect eavesdropping attempts.
+10. Renew: renew keys as needed.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Quantum Cryptography applied to sample data.
+   Quantum Cryptography: Alice: prepare qubits → transmit: send qubits to Bob → measure: both measure randomly → compare: share bases publicly → extract: key from matching bases → verify: check for errors → result: secure key, eavesdropping detected → Quantum Cryptography successful.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(n) where n is number of qubits (quantum operations are typically O(1) per qubit).  
+   - Space: O(n) where n is number of qubits (quantum state storage).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Security: theoretically unbreakable based on physics.
+- Detection: detects eavesdropping attempts automatically.
+- Future-proof: secure against quantum computers.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Distance: limited by quantum channel distance.
+- Infrastructure: requires quantum communication infrastructure.
+- Cost: quantum hardware is expensive.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Classical Cryptography, Post-Quantum Cryptography, Hybrid Approaches, Quantum Key Distribution
 
 11. **30-second explanation (your own words)**  
-    Quantum Cryptography solves computational problems efficiently.
+    Uses quantum mechanical properties to provide secure communication protocols that are theoretically unbreakable, even against quantum computers, based on the laws of physics rather than computational complexity.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

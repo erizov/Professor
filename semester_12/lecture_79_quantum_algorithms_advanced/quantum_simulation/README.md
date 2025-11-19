@@ -4,37 +4,48 @@
    Quantum Simulation
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements quantum simulation algorithm.
+   Simulates quantum systems (molecules, materials, quantum many-body systems) using quantum computers, providing exponential speedup over classical simulation for quantum chemistry and physics.
 
 3. **Intuition (plain-language explanation)**  
-   Quantum Simulation is a fundamental algorithm in computer science.
+   Like simulating quantum with quantum: Quantum Simulation is like using quantum computers to simulate quantum systems - it's natural because quantum computers are quantum systems themselves - just as you'd use a weather simulator to simulate weather, you use quantum computers to simulate quantum systems, and they're much better at it than classical computers.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Quantum system Hamiltonian, initial quantum state, simulation parameters, quantum gates, time evolution.  
+   - Output: Simulated quantum states, energy eigenvalues, molecular properties, quantum dynamics, simulation results.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Model: model quantum system (molecule, material).
+2. Hamiltonian: construct system Hamiltonian.
+3. Encode: encode Hamiltonian into quantum circuit.
+4. Prepare: prepare initial quantum state.
+5. Evolve: evolve state using quantum gates (Trotterization).
+6. Measure: measure quantum state properties.
+7. Extract: extract physical properties (energy, observables).
+8. Iterate: iterate time evolution steps.
+9. Analyze: analyze simulation results.
+10. Validate: validate against known results.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Quantum Simulation applied to sample data.
+   Quantum Simulation: molecule: H2O → Hamiltonian: construct molecular Hamiltonian → encode: map to qubits → evolve: simulate time evolution → measure: measure energy → result: ground state energy calculated → Quantum Simulation successful.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(poly(n)·t) where n is system size, t is simulation time (exponential speedup over classical).  
+   - Space: O(n) where n is number of qubits (logarithmic in system size).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Speedup: exponential speedup over classical simulation.
+- Accuracy: can simulate quantum systems accurately.
+- Applications: enables drug discovery, material design.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Noise: quantum noise affects simulation accuracy.
+- Scaling: scaling to large systems is challenging.
+- Hardware: requires quantum hardware.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Classical Simulation, Approximate Methods, Hybrid Approaches, Quantum-Classical
 
 11. **30-second explanation (your own words)**  
-    Quantum Simulation solves computational problems efficiently.
+    Simulates quantum systems (molecules, materials, quantum many-body systems) using quantum computers, providing exponential speedup over classical simulation for quantum chemistry and physics.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
