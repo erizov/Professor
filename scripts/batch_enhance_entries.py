@@ -15627,6 +15627,482 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["No Analysis", "Classical Attacks", "Theoretical Analysis", "Post-Quantum Migration"],
         "explanation": "Studies and analyzes attacks on cryptographic systems using quantum computers, understanding threats posed by quantum computing to current encryption methods."
+    },
+    "semester_12/lecture_85_quantum_networking/quantum_switching/README.md": {
+        "name": "Quantum Switching",
+        "problem": "Switches and routes quantum information between quantum channels and nodes in quantum networks, enabling efficient quantum communication and network management.",
+        "intuition": "Like network switches for quantum: Quantum Switching is like network switches but for quantum information - you switch quantum signals (like switching network packets) between quantum channels to route quantum information - just as network switches route internet traffic, quantum switches route quantum information.",
+        "inputs": "Quantum signals, switching configurations, routing tables, quantum channels, control signals.",
+        "outputs": "Switched quantum information, routed quantum signals, network connectivity, efficient switching, quantum data flow.",
+        "steps": [
+            "Receive: receive quantum signal on input channel.",
+            "Route: determine output channel based on routing.",
+            "Switch: switch quantum signal to output channel.",
+            "Preserve: preserve quantum state during switching.",
+            "Forward: forward quantum signal to destination.",
+            "Manage: manage switching configurations.",
+            "Optimize: optimize switching for efficiency.",
+            "Monitor: monitor switching performance.",
+            "Handle: handle switching errors.",
+            "Scale: scale to larger networks."
+        ],
+        "example": "Quantum Switching: signal: quantum state on channel A → route: determine output channel B → switch: switch to channel B → preserve: maintain quantum state → forward: forward to destination → result: quantum signal switched → Quantum Switching successful.",
+        "time_complexity": "O(1) for switching operation (constant time per switch).",
+        "space_complexity": "O(n) where n is number of channels (switching table storage).",
+        "strengths": [
+            "Efficiency: enables efficient quantum network routing.",
+            "Flexibility: supports flexible network topologies.",
+            "Scalability: enables scaling quantum networks."
+        ],
+        "weaknesses": [
+            "Complexity: quantum switching is complex.",
+            "Loss: quantum information loss during switching.",
+            "Noise: switching noise affects quantum states."
+        ],
+        "alternatives": ["Direct Links", "Fixed Routing", "Classical Switching", "Hybrid Switching"],
+        "explanation": "Switches and routes quantum information between quantum channels and nodes in quantum networks, enabling efficient quantum communication and network management."
+    },
+    "semester_12/lecture_86_quantum_security/quantum_defense/README.md": {
+        "name": "Quantum Defense",
+        "problem": "Defends against quantum attacks on cryptographic systems by implementing quantum-resistant cryptography, quantum key distribution, and other defense mechanisms to protect against quantum computing threats.",
+        "intuition": "Like defense against quantum threats: Quantum Defense is like defense systems but against quantum attacks - you protect systems from quantum threats (like quantum computers breaking encryption) using quantum-resistant methods - just as you defend against cyber attacks, you defend against quantum attacks.",
+        "inputs": "Cryptographic systems, quantum threats, defense mechanisms, quantum-resistant algorithms, security requirements.",
+        "outputs": "Defended systems, quantum-resistant encryption, security improvements, defense mechanisms, protected data.",
+        "steps": [
+            "Assess: assess quantum threats and vulnerabilities.",
+            "Identify: identify systems at risk.",
+            "Select: select quantum defense mechanisms.",
+            "Implement: implement quantum-resistant cryptography.",
+            "Deploy: deploy quantum key distribution if needed.",
+            "Migrate: migrate to post-quantum cryptography.",
+            "Monitor: monitor for quantum threats.",
+            "Update: update defenses as threats evolve.",
+            "Test: test defense effectiveness.",
+            "Maintain: maintain quantum defenses."
+        ],
+        "example": "Quantum Defense: system: RSA encryption → assess: vulnerable to Shor's algorithm → implement: migrate to CRYSTALS-Kyber → deploy: post-quantum crypto → result: system defended against quantum attacks → Quantum Defense operational.",
+        "time_complexity": "O(d + i + m) where d is deployment time, i is implementation time, m is migration time (defense process).",
+        "space_complexity": "O(s + d) where s is system storage, d is defense storage (defense mechanisms, keys).",
+        "strengths": [
+            "Protection: protects against quantum threats.",
+            "Future-proof: ensures long-term security.",
+            "Comprehensive: provides comprehensive quantum defense."
+        ],
+        "weaknesses": [
+            "Migration: migration to quantum-resistant crypto can be complex.",
+            "Performance: quantum-resistant crypto may be slower.",
+            "Cost: implementing quantum defense has costs."
+        ],
+        "alternatives": ["No Defense", "Basic Defense", "Partial Migration", "Hybrid Approaches"],
+        "explanation": "Defends against quantum attacks on cryptographic systems by implementing quantum-resistant cryptography, quantum key distribution, and other defense mechanisms to protect against quantum computing threats."
+    },
+    "semester_12/lecture_86_quantum_security/quantum_key_management/README.md": {
+        "name": "Quantum Key Management",
+        "problem": "Manages cryptographic keys in quantum-secure systems, including generation, distribution, storage, rotation, and lifecycle management of quantum keys and quantum-resistant keys.",
+        "intuition": "Like key management for quantum: Quantum Key Management is like key management but for quantum-secure systems - you manage keys (like managing passwords) but for quantum cryptography - just as you manage keys for encryption, you manage quantum keys for quantum-secure systems.",
+        "inputs": "Key generation requests, key policies, quantum key distribution, key storage, lifecycle requirements.",
+        "outputs": "Managed keys, key distribution, secure key storage, key rotation, key lifecycle management.",
+        "steps": [
+            "Generate: generate quantum or quantum-resistant keys.",
+            "Distribute: distribute keys securely (QKD if needed).",
+            "Store: store keys securely.",
+            "Rotate: rotate keys periodically.",
+            "Revoke: revoke compromised keys.",
+            "Archive: archive old keys if needed.",
+            "Monitor: monitor key usage and security.",
+            "Audit: audit key management operations.",
+            "Update: update key policies.",
+            "Maintain: maintain key management system."
+        ],
+        "example": "Quantum Key Management: request: generate quantum key → generate: create key using QKD → distribute: distribute securely → store: store in secure key store → rotate: rotate every 30 days → result: keys managed securely → Quantum Key Management operational.",
+        "time_complexity": "O(g + d + r) where g is generation time, d is distribution time, r is rotation time (key operations).",
+        "space_complexity": "O(k + s) where k is key storage, s is system storage (key management system).",
+        "strengths": [
+            "Security: ensures secure key management.",
+            "Compliance: helps meet security compliance requirements.",
+            "Lifecycle: manages complete key lifecycle."
+        ],
+        "weaknesses": [
+            "Complexity: quantum key management is complex.",
+            "Infrastructure: requires quantum infrastructure for QKD.",
+            "Cost: quantum key management has costs."
+        ],
+        "alternatives": ["Classical Key Management", "Manual Management", "Basic Management", "Hybrid Approaches"],
+        "explanation": "Manages cryptographic keys in quantum-secure systems, including generation, distribution, storage, rotation, and lifecycle management of quantum keys and quantum-resistant keys."
+    },
+    "semester_12/lecture_86_quantum_security/quantum_resistant/README.md": {
+        "name": "Quantum Resistant",
+        "problem": "Implements quantum-resistant cryptographic algorithms and systems that remain secure against attacks from both classical and quantum computers, ensuring long-term security.",
+        "intuition": "Like future-proof security: Quantum Resistant is like future-proof security - you use encryption that resists quantum attacks (quantum computers can't break it) - just as you prepare for future threats, quantum-resistant crypto prepares for quantum threats.",
+        "inputs": "Data, quantum-resistant algorithms, key material, security parameters, implementation requirements.",
+        "outputs": "Quantum-resistant encryption, secure systems, protected data, future-proof security, resistant cryptography.",
+        "steps": [
+            "Select: select quantum-resistant algorithm (lattice, code-based, hash-based, etc.).",
+            "Implement: implement quantum-resistant cryptography.",
+            "Generate: generate quantum-resistant keys.",
+            "Encrypt: encrypt data using quantum-resistant algorithm.",
+            "Deploy: deploy quantum-resistant systems.",
+            "Migrate: migrate from vulnerable algorithms.",
+            "Validate: validate quantum resistance.",
+            "Monitor: monitor for vulnerabilities.",
+            "Update: update as standards evolve.",
+            "Maintain: maintain quantum resistance."
+        ],
+        "example": "Quantum Resistant: algorithm: CRYSTALS-Kyber (lattice-based) → implement: implement in system → generate: generate keys → encrypt: encrypt data → result: data secure against quantum attacks → Quantum Resistant operational.",
+        "time_complexity": "O(n) where n is data size (varies by algorithm, typically polynomial).",
+        "space_complexity": "O(n) where n is key/data size (algorithm-dependent).",
+        "strengths": [
+            "Security: secure against quantum attacks.",
+            "Future-proof: ensures long-term security.",
+            "Standards: NIST standardized algorithms available."
+        ],
+        "weaknesses": [
+            "Performance: may be slower than classical crypto.",
+            "Migration: migration can be complex.",
+            "Maturity: field is still evolving."
+        ],
+        "alternatives": ["Classical Cryptography", "Quantum Cryptography", "Hybrid Approaches", "No Migration"],
+        "explanation": "Implements quantum-resistant cryptographic algorithms and systems that remain secure against attacks from both classical and quantum computers, ensuring long-term security."
+    },
+    "semester_12/lecture_86_quantum_security/quantum_security_protocols/README.md": {
+        "name": "Quantum Security Protocols",
+        "problem": "Implements security protocols that leverage quantum mechanics for secure communication, authentication, and cryptographic operations, providing provably secure protocols based on quantum principles.",
+        "intuition": "Like security protocols using quantum: Quantum Security Protocols are like security protocols but using quantum mechanics - you use quantum properties (like entanglement, no-cloning) to create secure protocols - just as security protocols protect communication, quantum security protocols protect using quantum mechanics.",
+        "inputs": "Communication channels, quantum states, protocols, authentication requirements, security parameters.",
+        "outputs": "Secure quantum protocols, authenticated communication, quantum-secure operations, protocol implementations.",
+        "steps": [
+            "Design: design quantum security protocol.",
+            "Implement: implement protocol using quantum mechanics.",
+            "Authenticate: implement quantum authentication.",
+            "Encrypt: implement quantum encryption.",
+            "Verify: verify protocol security properties.",
+            "Deploy: deploy quantum security protocol.",
+            "Test: test protocol effectiveness.",
+            "Monitor: monitor protocol security.",
+            "Update: update protocol as needed.",
+            "Maintain: maintain protocol security."
+        ],
+        "example": "Quantum Security Protocols: protocol: BB84 QKD → implement: implement quantum key distribution → authenticate: quantum authentication → encrypt: use quantum keys → result: provably secure communication → Quantum Security Protocols operational.",
+        "time_complexity": "O(p) where p is protocol execution time (varies by protocol).",
+        "space_complexity": "O(q + s) where q is quantum state storage, s is protocol state storage.",
+        "strengths": [
+            "Security: provably secure based on quantum mechanics.",
+            "Detection: automatically detects attacks.",
+            "Future-proof: secure against quantum computers."
+        ],
+        "weaknesses": [
+            "Infrastructure: requires quantum infrastructure.",
+            "Complexity: quantum protocols are complex.",
+            "Distance: limited by quantum channel distance."
+        ],
+        "alternatives": ["Classical Security Protocols", "Post-Quantum Protocols", "Hybrid Protocols", "Basic Security"],
+        "explanation": "Implements security protocols that leverage quantum mechanics for secure communication, authentication, and cryptographic operations, providing provably secure protocols based on quantum principles."
+    },
+    "semester_12/lecture_87_blockchain_scalability/blockchain_scalability_solutions/README.md": {
+        "name": "Blockchain Scalability Solutions",
+        "problem": "Addresses blockchain scalability limitations by implementing solutions like layer 2 protocols, sharding, sidechains, and state channels to increase transaction throughput and reduce costs.",
+        "intuition": "Like scaling systems: Blockchain Scalability Solutions are like scaling systems - you increase capacity (like adding lanes to a highway) to handle more transactions - just as you scale web servers, you scale blockchains to handle more transactions.",
+        "inputs": "Blockchain networks, scalability requirements, transaction volume, cost constraints, performance goals.",
+        "outputs": "Scalable blockchains, increased throughput, reduced costs, improved performance, scalable solutions.",
+        "steps": [
+            "Assess: assess scalability bottlenecks.",
+            "Select: select scalability solution (layer 2, sharding, etc.).",
+            "Design: design scalable architecture.",
+            "Implement: implement scalability solution.",
+            "Deploy: deploy on blockchain network.",
+            "Optimize: optimize for performance.",
+            "Test: test scalability improvements.",
+            "Monitor: monitor performance metrics.",
+            "Iterate: iterate to improve scalability.",
+            "Scale: scale to larger networks."
+        ],
+        "example": "Blockchain Scalability Solutions: problem: 7 TPS limit → solution: implement layer 2 rollups → deploy: deploy on Ethereum → result: 2000+ TPS, 100x cost reduction → Blockchain Scalability Solutions successful.",
+        "time_complexity": "O(t) where t is transaction processing time (reduced through scalability solutions).",
+        "space_complexity": "O(n + s) where n is network size, s is solution storage (scalability infrastructure).",
+        "strengths": [
+            "Throughput: significantly increases transaction throughput.",
+            "Cost: reduces transaction costs.",
+            "Performance: improves blockchain performance."
+        ],
+        "weaknesses": [
+            "Complexity: scalability solutions can be complex.",
+            "Security: may introduce new security considerations.",
+            "Compatibility: may require changes to existing systems."
+        ],
+        "alternatives": ["No Scaling", "On-Chain Scaling", "Alternative Blockchains", "Hybrid Approaches"],
+        "explanation": "Addresses blockchain scalability limitations by implementing solutions like layer 2 protocols, sharding, sidechains, and state channels to increase transaction throughput and reduce costs."
+    },
+    "semester_12/lecture_87_blockchain_scalability/plasma/README.md": {
+        "name": "Plasma",
+        "problem": "Implements Plasma, a layer 2 scaling solution for blockchains that creates child chains (Plasma chains) that process transactions off-chain and periodically commit to the main chain, significantly increasing throughput.",
+        "intuition": "Like side chains for scaling: Plasma is like creating side chains (child chains) that handle transactions off the main chain, then commit results periodically - just as side roads handle traffic off the main highway, Plasma chains handle transactions off the main blockchain.",
+        "inputs": "Main blockchain, Plasma chain configuration, transactions, operators, exit mechanisms.",
+        "outputs": "Plasma chains, off-chain transactions, periodic commitments, increased throughput, reduced costs.",
+        "steps": [
+            "Create: create Plasma child chain.",
+            "Process: process transactions on Plasma chain.",
+            "Batch: batch transactions.",
+            "Commit: commit batches to main chain periodically.",
+            "Verify: verify commitments on main chain.",
+            "Exit: enable users to exit to main chain.",
+            "Dispute: handle disputes if needed.",
+            "Optimize: optimize Plasma chain performance.",
+            "Scale: scale to more Plasma chains.",
+            "Maintain: maintain Plasma infrastructure."
+        ],
+        "example": "Plasma: main chain: Ethereum → create: Plasma chain → process: 1000 transactions off-chain → commit: commit batch to Ethereum → result: 100x throughput increase → Plasma successful.",
+        "time_complexity": "O(t) where t is transaction processing time (reduced through off-chain processing).",
+        "space_complexity": "O(p + m) where p is Plasma chain storage, m is main chain storage (commitments).",
+        "strengths": [
+            "Throughput: significantly increases transaction throughput.",
+            "Cost: reduces transaction costs.",
+            "Scalability: enables blockchain scaling."
+        ],
+        "weaknesses": [
+            "Complexity: Plasma is complex to implement.",
+            "Exit: exit mechanisms can be complex.",
+            "Security: requires careful security design."
+        ],
+        "alternatives": ["On-Chain", "Other Layer 2", "Sharding", "Sidechains"],
+        "explanation": "Implements Plasma, a layer 2 scaling solution for blockchains that creates child chains (Plasma chains) that process transactions off-chain and periodically commit to the main chain, significantly increasing throughput."
+    },
+    "semester_12/lecture_87_blockchain_scalability/rollups/README.md": {
+        "name": "Rollups",
+        "problem": "Implements rollups, layer 2 scaling solutions that execute transactions off-chain and post compressed transaction data to the main chain, providing high throughput while maintaining security through main chain verification.",
+        "intuition": "Like batching transactions: Rollups are like batching transactions - you process many transactions off-chain (like processing orders in batches), then post a summary to the main chain - just as batching is efficient, rollups batch transactions for efficiency.",
+        "inputs": "Transactions, rollup configuration, main blockchain, validators, compression methods.",
+        "outputs": "Rollup chains, batched transactions, compressed data, increased throughput, reduced costs.",
+        "steps": [
+            "Collect: collect transactions for rollup.",
+            "Execute: execute transactions off-chain.",
+            "Batch: batch transaction results.",
+            "Compress: compress transaction data.",
+            "Post: post compressed data to main chain.",
+            "Verify: verify on main chain (optimistic or zk-proofs).",
+            "Finalize: finalize transactions on main chain.",
+            "Optimize: optimize rollup performance.",
+            "Scale: scale to larger rollups.",
+            "Maintain: maintain rollup infrastructure."
+        ],
+        "example": "Rollups: transactions: 1000 transactions → execute: process off-chain → batch: create batch → compress: compress data → post: post to Ethereum → result: 100x throughput, 100x cost reduction → Rollups successful.",
+        "time_complexity": "O(t) where t is transaction processing time (reduced through batching and compression).",
+        "space_complexity": "O(r + m) where r is rollup storage, m is main chain storage (compressed data).",
+        "strengths": [
+            "Throughput: significantly increases throughput (100-1000x).",
+            "Cost: dramatically reduces costs.",
+            "Security: maintains main chain security."
+        ],
+        "weaknesses": [
+            "Complexity: rollups are complex to implement.",
+            "Latency: may have some latency for finality.",
+            "Types: different types (optimistic vs zk) have trade-offs."
+        ],
+        "alternatives": ["On-Chain", "Other Layer 2", "Sharding", "Sidechains"],
+        "explanation": "Implements rollups, layer 2 scaling solutions that execute transactions off-chain and post compressed transaction data to the main chain, providing high throughput while maintaining security through main chain verification."
+    },
+    "semester_12/lecture_87_blockchain_scalability/sharding_blockchain/README.md": {
+        "name": "Sharding Blockchain",
+        "problem": "Implements blockchain sharding, dividing the blockchain into multiple shards that process transactions in parallel, significantly increasing throughput and scalability.",
+        "intuition": "Like database sharding: Blockchain Sharding is like database sharding - you divide the blockchain into pieces (shards) that work in parallel (like dividing work among workers) - just as sharding scales databases, blockchain sharding scales blockchains.",
+        "inputs": "Blockchain network, shard configuration, transactions, validators, cross-shard communication.",
+        "outputs": "Sharded blockchain, parallel processing, increased throughput, scalable network, shard coordination.",
+        "steps": [
+            "Divide: divide blockchain into shards.",
+            "Assign: assign validators to shards.",
+            "Process: process transactions in parallel across shards.",
+            "Coordinate: coordinate cross-shard transactions.",
+            "Finalize: finalize shard blocks.",
+            "Sync: synchronize shard states.",
+            "Verify: verify shard integrity.",
+            "Optimize: optimize shard performance.",
+            "Scale: scale to more shards.",
+            "Maintain: maintain sharded network."
+        ],
+        "example": "Sharding Blockchain: network: Ethereum 2.0 → divide: 64 shards → process: transactions in parallel → result: 64x throughput increase → Sharding Blockchain successful.",
+        "time_complexity": "O(t/s) where t is transactions, s is shards (parallel processing reduces time).",
+        "space_complexity": "O(n/s + c) where n is network size, s is shards, c is coordination storage (shard storage).",
+        "strengths": [
+            "Throughput: significantly increases throughput through parallelism.",
+            "Scalability: enables horizontal scaling.",
+            "Efficiency: improves resource utilization."
+        ],
+        "weaknesses": [
+            "Complexity: sharding is complex to implement.",
+            "Cross-shard: cross-shard transactions add complexity.",
+            "Security: requires careful security design."
+        ],
+        "alternatives": ["Non-Sharded", "Layer 2", "Sidechains", "Alternative Blockchains"],
+        "explanation": "Implements blockchain sharding, dividing the blockchain into multiple shards that process transactions in parallel, significantly increasing throughput and scalability."
+    },
+    "semester_12/lecture_87_blockchain_scalability/sidechains/README.md": {
+        "name": "Sidechains",
+        "problem": "Implements sidechains, separate blockchains that connect to the main blockchain, enabling transactions to move between chains and providing scalability and flexibility.",
+        "intuition": "Like connected blockchains: Sidechains are like separate blockchains connected to the main chain - you can move assets between chains (like moving between connected networks) - just as side roads connect to main roads, sidechains connect to main blockchains.",
+        "inputs": "Main blockchain, sidechain configuration, assets, two-way peg, validators.",
+        "outputs": "Sidechains, asset transfers, increased capacity, flexible blockchains, connected networks.",
+        "steps": [
+            "Create: create sidechain blockchain.",
+            "Connect: connect to main blockchain.",
+            "Peg: implement two-way peg mechanism.",
+            "Lock: lock assets on main chain.",
+            "Transfer: transfer assets to sidechain.",
+            "Process: process transactions on sidechain.",
+            "Unlock: unlock assets on main chain when returning.",
+            "Verify: verify sidechain integrity.",
+            "Optimize: optimize sidechain performance.",
+            "Maintain: maintain sidechain infrastructure."
+        ],
+        "example": "Sidechains: main: Bitcoin → create: Liquid sidechain → peg: two-way peg → transfer: move BTC to Liquid → process: fast transactions on Liquid → result: faster, cheaper transactions → Sidechains successful.",
+        "time_complexity": "O(t) where t is transaction time (reduced on sidechain).",
+        "space_complexity": "O(s + m) where s is sidechain storage, m is main chain storage (peg data).",
+        "strengths": [
+            "Flexibility: provides flexibility for different use cases.",
+            "Scalability: increases transaction capacity.",
+            "Innovation: enables experimentation on sidechains."
+        ],
+        "weaknesses": [
+            "Security: sidechain security depends on design.",
+            "Peg: two-way peg mechanisms can be complex.",
+            "Trust: may require trust in sidechain validators."
+        ],
+        "alternatives": ["Main Chain Only", "Layer 2", "Sharding", "Alternative Blockchains"],
+        "explanation": "Implements sidechains, separate blockchains that connect to the main blockchain, enabling transactions to move between chains and providing scalability and flexibility."
+    },
+    "semester_12/lecture_87_blockchain_scalability/state_channels/README.md": {
+        "name": "State Channels",
+        "problem": "Implements state channels, off-chain channels where parties can conduct multiple transactions without broadcasting to the blockchain, only settling final state on-chain, enabling instant and low-cost transactions.",
+        "intuition": "Like private channels: State Channels are like private channels between parties - you conduct many transactions privately (like private conversations), then settle the final result publicly (like announcing the outcome) - just as private channels are efficient, state channels enable efficient off-chain transactions.",
+        "inputs": "Participants, channel configuration, initial state, transactions, settlement requirements.",
+        "outputs": "State channels, off-chain transactions, instant payments, low-cost transactions, final settlement.",
+        "steps": [
+            "Open: open state channel between parties.",
+            "Fund: fund channel with initial state.",
+            "Transact: conduct transactions off-chain.",
+            "Update: update channel state.",
+            "Sign: sign state updates.",
+            "Close: close channel when done.",
+            "Settle: settle final state on-chain.",
+            "Dispute: handle disputes if needed.",
+            "Optimize: optimize channel usage.",
+            "Maintain: maintain channel infrastructure."
+        ],
+        "example": "State Channels: parties: Alice and Bob → open: open payment channel → transact: 1000 micro-transactions off-chain → close: close channel → settle: settle final balance on-chain → result: instant, low-cost transactions → State Channels successful.",
+        "time_complexity": "O(1) for off-chain transactions (instant), O(b) for on-chain settlement where b is block time.",
+        "space_complexity": "O(c + s) where c is channel storage, s is settlement storage (channel state).",
+        "strengths": [
+            "Speed: instant off-chain transactions.",
+            "Cost: very low transaction costs.",
+            "Privacy: transactions are private until settlement."
+        ],
+        "weaknesses": [
+            "Setup: requires channel setup and funding.",
+            "Online: parties must be online for transactions.",
+            "Disputes: dispute resolution can be complex."
+        ],
+        "alternatives": ["On-Chain", "Layer 2", "Sidechains", "Other Off-Chain"],
+        "explanation": "Implements state channels, off-chain channels where parties can conduct multiple transactions without broadcasting to the blockchain, only settling final state on-chain, enabling instant and low-cost transactions."
+    },
+    "semester_12/lecture_88_blockchain_consensus/algorand/README.md": {
+        "name": "Algorand",
+        "problem": "Implements Algorand consensus algorithm, a pure proof-of-stake protocol that provides fast finality, high throughput, and security through cryptographic sortition and Byzantine agreement.",
+        "intuition": "Like democratic selection: Algorand is like democratic selection - you randomly select validators (like random jury selection) who agree on transactions - just as democratic processes ensure fairness, Algorand ensures fair and secure consensus.",
+        "inputs": "Transactions, validators, stake, cryptographic sortition, consensus parameters.",
+        "outputs": "Consensus decisions, finalized blocks, high throughput, fast finality, secure blockchain.",
+        "steps": [
+            "Sortition: perform cryptographic sortition to select validators.",
+            "Propose: selected validators propose blocks.",
+            "Vote: validators vote on proposed blocks.",
+            "Agree: reach Byzantine agreement.",
+            "Finalize: finalize agreed block.",
+            "Broadcast: broadcast finalized block.",
+            "Verify: verify block validity.",
+            "Update: update blockchain state.",
+            "Repeat: repeat for next block.",
+            "Optimize: optimize consensus performance."
+        ],
+        "example": "Algorand: transactions: 1000 transactions → sortition: select validators → propose: propose block → vote: vote on block → finalize: finalize in <5 seconds → result: fast, secure consensus → Algorand successful.",
+        "time_complexity": "O(log n) where n is validators (fast consensus through sortition).",
+        "space_complexity": "O(n) where n is validators (validator storage).",
+        "strengths": [
+            "Speed: fast finality (<5 seconds).",
+            "Throughput: high transaction throughput.",
+            "Security: provably secure against attacks."
+        ],
+        "weaknesses": [
+            "Complexity: Algorand is complex to implement.",
+            "Sortition: cryptographic sortition adds complexity.",
+            "Adoption: less adoption than some alternatives."
+        ],
+        "alternatives": ["Proof of Work", "Other Proof of Stake", "Delegated Proof of Stake", "Byzantine Fault Tolerance"],
+        "explanation": "Implements Algorand consensus algorithm, a pure proof-of-stake protocol that provides fast finality, high throughput, and security through cryptographic sortition and Byzantine agreement."
+    },
+    "semester_12/lecture_88_blockchain_consensus/dpos_advanced/README.md": {
+        "name": "DPoS Advanced",
+        "problem": "Implements advanced Delegated Proof of Stake (DPoS) consensus mechanisms with improved governance, voting systems, and validator selection to provide fast, efficient, and democratic blockchain consensus.",
+        "intuition": "Like representative democracy: DPoS Advanced is like representative democracy - stakeholders vote for delegates (like voting for representatives) who validate transactions - just as representative democracy is efficient, DPoS provides efficient consensus.",
+        "inputs": "Transactions, validators, stake, votes, governance parameters, consensus rules.",
+        "outputs": "Consensus decisions, finalized blocks, efficient validation, democratic governance, fast consensus.",
+        "steps": [
+            "Vote: stakeholders vote for validators.",
+            "Select: select top validators based on votes.",
+            "Rotate: rotate validator set periodically.",
+            "Propose: validators propose blocks.",
+            "Validate: validate proposed blocks.",
+            "Finalize: finalize blocks.",
+            "Reward: reward validators.",
+            "Govern: govern through voting.",
+            "Update: update validator set.",
+            "Optimize: optimize consensus performance."
+        ],
+        "example": "DPoS Advanced: validators: 21 validators → vote: stakeholders vote → select: top 21 selected → propose: validators propose blocks → finalize: finalize in 3 seconds → result: fast, efficient consensus → DPoS Advanced successful.",
+        "time_complexity": "O(v) where v is validators (fast consensus with small validator set).",
+        "space_complexity": "O(v + s) where v is validators, s is stake storage (validator and stake data).",
+        "strengths": [
+            "Speed: fast block times (1-3 seconds).",
+            "Efficiency: efficient with small validator set.",
+            "Governance: democratic governance through voting."
+        ],
+        "weaknesses": [
+            "Centralization: may lead to validator centralization.",
+            "Voting: requires active stakeholder participation.",
+            "Trust: requires trust in elected validators."
+        ],
+        "alternatives": ["Proof of Work", "Proof of Stake", "Other DPoS", "Byzantine Fault Tolerance"],
+        "explanation": "Implements advanced Delegated Proof of Stake (DPoS) consensus mechanisms with improved governance, voting systems, and validator selection to provide fast, efficient, and democratic blockchain consensus."
+    },
+    "semester_12/lecture_88_blockchain_consensus/hotstuff/README.md": {
+        "name": "HotStuff",
+        "problem": "Implements HotStuff consensus algorithm, a Byzantine fault-tolerant consensus protocol that provides linear communication complexity and fast finality, used in blockchain systems like Libra/Diem.",
+        "intuition": "Like efficient agreement: HotStuff is like efficient agreement protocols - validators agree on blocks efficiently (like efficient voting) with linear communication - just as efficient protocols save resources, HotStuff provides efficient consensus.",
+        "inputs": "Transactions, validators, consensus parameters, Byzantine fault tolerance, communication channels.",
+        "outputs": "Consensus decisions, finalized blocks, linear communication, fast finality, secure blockchain.",
+        "steps": [
+            "Propose: leader proposes block.",
+            "Vote: validators vote on proposal.",
+            "Aggregate: aggregate votes.",
+            "Commit: commit block if threshold reached.",
+            "Finalize: finalize committed block.",
+            "Broadcast: broadcast finalized block.",
+            "Verify: verify block validity.",
+            "Update: update blockchain state.",
+            "Rotate: rotate leader.",
+            "Repeat: repeat for next block."
+        ],
+        "example": "HotStuff: validators: 100 validators → propose: leader proposes block → vote: validators vote → commit: commit with 2/3 votes → finalize: finalize in <1 second → result: fast, efficient consensus → HotStuff successful.",
+        "time_complexity": "O(n) where n is validators (linear communication complexity).",
+        "space_complexity": "O(n) where n is validators (validator storage).",
+        "strengths": [
+            "Efficiency: linear communication complexity.",
+            "Speed: fast finality.",
+            "Security: Byzantine fault tolerant."
+        ],
+        "weaknesses": [
+            "Complexity: HotStuff is complex to implement.",
+            "Leader: requires leader selection mechanism.",
+            "Adoption: less adoption than some alternatives."
+        ],
+        "alternatives": ["PBFT", "Other BFT", "Proof of Stake", "Proof of Work"],
+        "explanation": "Implements HotStuff consensus algorithm, a Byzantine fault-tolerant consensus protocol that provides linear communication complexity and fast finality, used in blockchain systems like Libra/Diem."
     }
 }
 

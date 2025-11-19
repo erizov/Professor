@@ -17710,28 +17710,42 @@
     {
       "path": "semester_12/lecture_85_quantum_networking/quantum_switching/README.md",
       "name": "Quantum Switching",
-      "problem": "Implements quantum switching algorithm.",
-      "intuition": "Quantum Switching is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Switches and routes quantum information between quantum channels and nodes in quantum networks, enabling efficient quantum communication and network management.",
+      "intuition": "Like network switches for quantum: Quantum Switching is like network switches but for quantum information - you switch quantum signals (like switching network packets) between quantum channels to route quantum information - just as network switches route internet traffic, quantum switches route quantum information.",
+      "inputs": "Quantum signals, switching configurations, routing tables, quantum channels, control signals.",
+      "outputs": "Switched quantum information, routed quantum signals, network connectivity, efficient switching, quantum data flow.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Receive: receive quantum signal on input channel.",
+        "Route: determine output channel based on routing.",
+        "Switch: switch quantum signal to output channel.",
+        "Preserve: preserve quantum state during switching.",
+        "Forward: forward quantum signal to destination.",
+        "Manage: manage switching configurations.",
+        "Optimize: optimize switching for efficiency.",
+        "Monitor: monitor switching performance.",
+        "Handle: handle switching errors.",
+        "Scale: scale to larger networks."
       ],
-      "example": "Example: Quantum Switching applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Quantum Switching: signal: quantum state on channel A → route: determine output channel B → switch: switch to channel B → preserve: maintain quantum state → forward: forward to destination → result: quantum signal switched → Quantum Switching successful.",
+      "time_complexity": "O(1) for switching operation (constant time per switch).",
+      "space_complexity": "O(n) where n is number of channels (switching table storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Efficiency: enables efficient quantum network routing.",
+        "Flexibility: supports flexible network topologies.",
+        "Scalability: enables scaling quantum networks."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: quantum switching is complex.",
+        "Loss: quantum information loss during switching.",
+        "Noise: switching noise affects quantum states."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Direct Links",
+        "Fixed Routing",
+        "Classical Switching",
+        "Hybrid Switching"
       ],
-      "explanation": "Quantum Switching solves computational problems efficiently."
+      "explanation": "Switches and routes quantum information between quantum channels and nodes in quantum networks, enabling efficient quantum communication and network management."
     },
     {
       "path": "semester_12/lecture_86_quantum_security/post_quantum_cryptography/README.md",
@@ -17816,106 +17830,162 @@
     {
       "path": "semester_12/lecture_86_quantum_security/quantum_defense/README.md",
       "name": "Quantum Defense",
-      "problem": "Implements quantum defense algorithm.",
-      "intuition": "Quantum Defense is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Defends against quantum attacks on cryptographic systems by implementing quantum-resistant cryptography, quantum key distribution, and other defense mechanisms to protect against quantum computing threats.",
+      "intuition": "Like defense against quantum threats: Quantum Defense is like defense systems but against quantum attacks - you protect systems from quantum threats (like quantum computers breaking encryption) using quantum-resistant methods - just as you defend against cyber attacks, you defend against quantum attacks.",
+      "inputs": "Cryptographic systems, quantum threats, defense mechanisms, quantum-resistant algorithms, security requirements.",
+      "outputs": "Defended systems, quantum-resistant encryption, security improvements, defense mechanisms, protected data.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Assess: assess quantum threats and vulnerabilities.",
+        "Identify: identify systems at risk.",
+        "Select: select quantum defense mechanisms.",
+        "Implement: implement quantum-resistant cryptography.",
+        "Deploy: deploy quantum key distribution if needed.",
+        "Migrate: migrate to post-quantum cryptography.",
+        "Monitor: monitor for quantum threats.",
+        "Update: update defenses as threats evolve.",
+        "Test: test defense effectiveness.",
+        "Maintain: maintain quantum defenses."
       ],
-      "example": "Example: Quantum Defense applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Quantum Defense: system: RSA encryption → assess: vulnerable to Shor's algorithm → implement: migrate to CRYSTALS-Kyber → deploy: post-quantum crypto → result: system defended against quantum attacks → Quantum Defense operational.",
+      "time_complexity": "O(d + i + m) where d is deployment time, i is implementation time, m is migration time (defense process).",
+      "space_complexity": "O(s + d) where s is system storage, d is defense storage (defense mechanisms, keys).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Protection: protects against quantum threats.",
+        "Future-proof: ensures long-term security.",
+        "Comprehensive: provides comprehensive quantum defense."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Migration: migration to quantum-resistant crypto can be complex.",
+        "Performance: quantum-resistant crypto may be slower.",
+        "Cost: implementing quantum defense has costs."
       ],
       "alternatives": [
-        "Related algorithms"
+        "No Defense",
+        "Basic Defense",
+        "Partial Migration",
+        "Hybrid Approaches"
       ],
-      "explanation": "Quantum Defense solves computational problems efficiently."
+      "explanation": "Defends against quantum attacks on cryptographic systems by implementing quantum-resistant cryptography, quantum key distribution, and other defense mechanisms to protect against quantum computing threats."
     },
     {
       "path": "semester_12/lecture_86_quantum_security/quantum_key_management/README.md",
       "name": "Quantum Key Management",
-      "problem": "Implements quantum key management algorithm.",
-      "intuition": "Quantum Key Management is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Manages cryptographic keys in quantum-secure systems, including generation, distribution, storage, rotation, and lifecycle management of quantum keys and quantum-resistant keys.",
+      "intuition": "Like key management for quantum: Quantum Key Management is like key management but for quantum-secure systems - you manage keys (like managing passwords) but for quantum cryptography - just as you manage keys for encryption, you manage quantum keys for quantum-secure systems.",
+      "inputs": "Key generation requests, key policies, quantum key distribution, key storage, lifecycle requirements.",
+      "outputs": "Managed keys, key distribution, secure key storage, key rotation, key lifecycle management.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Generate: generate quantum or quantum-resistant keys.",
+        "Distribute: distribute keys securely (QKD if needed).",
+        "Store: store keys securely.",
+        "Rotate: rotate keys periodically.",
+        "Revoke: revoke compromised keys.",
+        "Archive: archive old keys if needed.",
+        "Monitor: monitor key usage and security.",
+        "Audit: audit key management operations.",
+        "Update: update key policies.",
+        "Maintain: maintain key management system."
       ],
-      "example": "Example: Quantum Key Management applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Quantum Key Management: request: generate quantum key → generate: create key using QKD → distribute: distribute securely → store: store in secure key store → rotate: rotate every 30 days → result: keys managed securely → Quantum Key Management operational.",
+      "time_complexity": "O(g + d + r) where g is generation time, d is distribution time, r is rotation time (key operations).",
+      "space_complexity": "O(k + s) where k is key storage, s is system storage (key management system).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Security: ensures secure key management.",
+        "Compliance: helps meet security compliance requirements.",
+        "Lifecycle: manages complete key lifecycle."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: quantum key management is complex.",
+        "Infrastructure: requires quantum infrastructure for QKD.",
+        "Cost: quantum key management has costs."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Classical Key Management",
+        "Manual Management",
+        "Basic Management",
+        "Hybrid Approaches"
       ],
-      "explanation": "Quantum Key Management solves computational problems efficiently."
+      "explanation": "Manages cryptographic keys in quantum-secure systems, including generation, distribution, storage, rotation, and lifecycle management of quantum keys and quantum-resistant keys."
     },
     {
       "path": "semester_12/lecture_86_quantum_security/quantum_resistant/README.md",
       "name": "Quantum Resistant",
-      "problem": "Implements quantum resistant algorithm.",
-      "intuition": "Quantum Resistant is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Implements quantum-resistant cryptographic algorithms and systems that remain secure against attacks from both classical and quantum computers, ensuring long-term security.",
+      "intuition": "Like future-proof security: Quantum Resistant is like future-proof security - you use encryption that resists quantum attacks (quantum computers can't break it) - just as you prepare for future threats, quantum-resistant crypto prepares for quantum threats.",
+      "inputs": "Data, quantum-resistant algorithms, key material, security parameters, implementation requirements.",
+      "outputs": "Quantum-resistant encryption, secure systems, protected data, future-proof security, resistant cryptography.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Select: select quantum-resistant algorithm (lattice, code-based, hash-based, etc.).",
+        "Implement: implement quantum-resistant cryptography.",
+        "Generate: generate quantum-resistant keys.",
+        "Encrypt: encrypt data using quantum-resistant algorithm.",
+        "Deploy: deploy quantum-resistant systems.",
+        "Migrate: migrate from vulnerable algorithms.",
+        "Validate: validate quantum resistance.",
+        "Monitor: monitor for vulnerabilities.",
+        "Update: update as standards evolve.",
+        "Maintain: maintain quantum resistance."
       ],
-      "example": "Example: Quantum Resistant applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Quantum Resistant: algorithm: CRYSTALS-Kyber (lattice-based) → implement: implement in system → generate: generate keys → encrypt: encrypt data → result: data secure against quantum attacks → Quantum Resistant operational.",
+      "time_complexity": "O(n) where n is data size (varies by algorithm, typically polynomial).",
+      "space_complexity": "O(n) where n is key/data size (algorithm-dependent).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Security: secure against quantum attacks.",
+        "Future-proof: ensures long-term security.",
+        "Standards: NIST standardized algorithms available."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Performance: may be slower than classical crypto.",
+        "Migration: migration can be complex.",
+        "Maturity: field is still evolving."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Classical Cryptography",
+        "Quantum Cryptography",
+        "Hybrid Approaches",
+        "No Migration"
       ],
-      "explanation": "Quantum Resistant solves computational problems efficiently."
+      "explanation": "Implements quantum-resistant cryptographic algorithms and systems that remain secure against attacks from both classical and quantum computers, ensuring long-term security."
     },
     {
       "path": "semester_12/lecture_86_quantum_security/quantum_security_protocols/README.md",
       "name": "Quantum Security Protocols",
-      "problem": "Implements quantum security protocols algorithm.",
-      "intuition": "Quantum Security Protocols is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Implements security protocols that leverage quantum mechanics for secure communication, authentication, and cryptographic operations, providing provably secure protocols based on quantum principles.",
+      "intuition": "Like security protocols using quantum: Quantum Security Protocols are like security protocols but using quantum mechanics - you use quantum properties (like entanglement, no-cloning) to create secure protocols - just as security protocols protect communication, quantum security protocols protect using quantum mechanics.",
+      "inputs": "Communication channels, quantum states, protocols, authentication requirements, security parameters.",
+      "outputs": "Secure quantum protocols, authenticated communication, quantum-secure operations, protocol implementations.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Design: design quantum security protocol.",
+        "Implement: implement protocol using quantum mechanics.",
+        "Authenticate: implement quantum authentication.",
+        "Encrypt: implement quantum encryption.",
+        "Verify: verify protocol security properties.",
+        "Deploy: deploy quantum security protocol.",
+        "Test: test protocol effectiveness.",
+        "Monitor: monitor protocol security.",
+        "Update: update protocol as needed.",
+        "Maintain: maintain protocol security."
       ],
-      "example": "Example: Quantum Security Protocols applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Quantum Security Protocols: protocol: BB84 QKD → implement: implement quantum key distribution → authenticate: quantum authentication → encrypt: use quantum keys → result: provably secure communication → Quantum Security Protocols operational.",
+      "time_complexity": "O(p) where p is protocol execution time (varies by protocol).",
+      "space_complexity": "O(q + s) where q is quantum state storage, s is protocol state storage.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Security: provably secure based on quantum mechanics.",
+        "Detection: automatically detects attacks.",
+        "Future-proof: secure against quantum computers."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Infrastructure: requires quantum infrastructure.",
+        "Complexity: quantum protocols are complex.",
+        "Distance: limited by quantum channel distance."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Classical Security Protocols",
+        "Post-Quantum Protocols",
+        "Hybrid Protocols",
+        "Basic Security"
       ],
-      "explanation": "Quantum Security Protocols solves computational problems efficiently."
+      "explanation": "Implements security protocols that leverage quantum mechanics for secure communication, authentication, and cryptographic operations, providing provably secure protocols based on quantum principles."
     },
     {
       "path": "semester_13/lecture_87_blockchain_advanced/blockchain_scalability_solutions/README.md",
