@@ -12431,6 +12431,448 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["No Monitoring", "Reactive Monitoring", "Basic Monitoring", "Advanced Observability"],
         "explanation": "Continuously monitors infrastructure health, performance, and availability through metrics, logs, and alerts, enabling proactive issue detection and resolution."
+    },
+    "semester_11/lecture_72_infrastructure_advanced/infrastructure_patterns/README.md": {
+        "name": "Infrastructure Patterns",
+        "problem": "Provides proven, reusable patterns for designing and organizing infrastructure components, enabling consistent, scalable, and maintainable infrastructure architectures.",
+        "intuition": "Like architectural blueprints: Infrastructure Patterns are like architectural blueprints for buildings - they provide proven designs (patterns) that work well for specific needs (scalability, high availability) - just as architects use blueprints to design buildings consistently, infrastructure patterns help design infrastructure consistently and effectively.",
+        "inputs": "Infrastructure requirements, scalability needs, availability requirements, pattern definitions, best practices.",
+        "outputs": "Pattern-based infrastructure, scalable architecture, maintainable design, proven solutions, consistent structure.",
+        "steps": [
+            "Identify requirements: identify infrastructure requirements (scalability, availability, performance).",
+            "Select patterns: select appropriate infrastructure patterns (load balancing, auto-scaling, redundancy).",
+            "Apply patterns: apply patterns to infrastructure design.",
+            "Combine: combine multiple patterns as needed.",
+            "Implement: implement infrastructure using patterns.",
+            "Validate: validate pattern implementation meets requirements.",
+            "Document: document pattern usage and rationale.",
+            "Refine: refine patterns based on experience.",
+            "Reuse: reuse patterns across projects.",
+            "Evolve: evolve patterns as requirements change."
+        ],
+        "example": "Infrastructure Patterns: requirement: high availability web service → patterns: load balancer + auto-scaling + multi-AZ deployment → apply: implement patterns → result: scalable, highly available infrastructure → Infrastructure Patterns successful.",
+        "time_complexity": "O(d + i) where d is design time, i is implementation time (patterns reduce design time).",
+        "space_complexity": "O(p + c) where p is pattern definitions, c is configuration storage.",
+        "strengths": [
+            "Proven: patterns are proven solutions to common problems.",
+            "Consistency: ensures consistent infrastructure design.",
+            "Efficiency: reduces design time and effort."
+        ],
+        "weaknesses": [
+            "Flexibility: patterns may be less flexible than custom designs.",
+            "Complexity: complex patterns can be difficult to understand.",
+            "Context: patterns must be adapted to specific contexts."
+        ],
+        "alternatives": ["Custom Design", "Ad-Hoc Infrastructure", "Template-Based", "Pattern Libraries"],
+        "explanation": "Provides proven, reusable patterns for designing and organizing infrastructure components, enabling consistent, scalable, and maintainable infrastructure architectures."
+    },
+    "semester_11/lecture_72_infrastructure_advanced/multi_cloud_strategies/README.md": {
+        "name": "Multi-Cloud Strategies",
+        "problem": "Distributes workloads and services across multiple cloud providers, reducing vendor lock-in, improving resilience, and optimizing costs and performance.",
+        "intuition": "Like diversifying investments: Multi-Cloud Strategies are like diversifying investments across multiple banks - you spread your resources (workloads) across multiple providers (clouds) to reduce risk (vendor lock-in) and get the best from each - just as diversification protects your investments, multi-cloud protects your infrastructure and gives you flexibility.",
+        "inputs": "Multiple cloud providers, workload requirements, vendor capabilities, cost data, performance requirements.",
+        "outputs": "Multi-cloud architecture, distributed workloads, vendor-agnostic design, optimized deployment, resilient system.",
+        "steps": [
+            "Assess: assess workload requirements and cloud provider capabilities.",
+            "Select: select appropriate cloud providers for different workloads.",
+            "Distribute: distribute workloads across selected providers.",
+            "Abstract: abstract cloud-specific services (use cloud-agnostic tools).",
+            "Orchestrate: orchestrate workloads across clouds.",
+            "Optimize: optimize workload placement for cost and performance.",
+            "Manage: manage multi-cloud infrastructure through unified tools.",
+            "Monitor: monitor performance and costs across clouds.",
+            "Migrate: migrate workloads between clouds as needed.",
+            "Optimize: continuously optimize multi-cloud strategy."
+        ],
+        "example": "Multi-Cloud Strategies: workload: web app → AWS (compute), GCP (ML), Azure (data) → distribute: deploy across 3 clouds → abstract: use Kubernetes (cloud-agnostic) → orchestrate: unified management → result: best of all clouds, no vendor lock-in → Multi-Cloud Strategies successful.",
+        "time_complexity": "O(d + m) where d is distribution time, m is management time (varies by workload).",
+        "space_complexity": "O(w + c) where w is workload storage, c is cloud configuration (distributed).",
+        "strengths": [
+            "Flexibility: reduces vendor lock-in and increases flexibility.",
+            "Resilience: improves resilience through provider diversity.",
+            "Optimization: enables optimization across providers."
+        ],
+        "weaknesses": [
+            "Complexity: managing multiple clouds is complex.",
+            "Cost: may have higher costs due to multiple providers.",
+            "Integration: integrating across clouds can be challenging."
+        ],
+        "alternatives": ["Single Cloud", "Hybrid Cloud", "Cloud-Agnostic", "Vendor-Specific"],
+        "explanation": "Distributes workloads and services across multiple cloud providers, reducing vendor lock-in, improving resilience, and optimizing costs and performance."
+    },
+    "semester_11/lecture_73_security_devops/compliance_automation/README.md": {
+        "name": "Compliance Automation",
+        "problem": "Automates compliance checks, validation, and reporting to ensure infrastructure and applications meet regulatory requirements and security standards continuously.",
+        "intuition": "Like automated quality control: Compliance Automation is like automated quality control in manufacturing - instead of manually checking each product (infrastructure), automated systems continuously check everything (compliance) and flag issues - just as automated QC ensures consistent quality, compliance automation ensures consistent compliance with regulations.",
+        "inputs": "Compliance requirements, infrastructure configs, security policies, validation rules, reporting templates.",
+        "outputs": "Automated compliance checks, compliance reports, violation alerts, remediation guidance, audit trails.",
+        "steps": [
+            "Define: define compliance requirements and policies.",
+            "Create rules: create automated validation rules.",
+            "Scan: scan infrastructure and applications for compliance.",
+            "Validate: validate configurations against compliance rules.",
+            "Detect: detect compliance violations.",
+            "Alert: alert on violations with details.",
+            "Report: generate compliance reports automatically.",
+            "Remediate: provide remediation guidance or automated fixes.",
+            "Track: track compliance status over time.",
+            "Audit: maintain audit trails for compliance."
+        ],
+        "example": "Compliance Automation: requirement: GDPR compliance → rules: data encryption, access controls → scan: check all services → detect: 2 violations (unencrypted data) → alert: notify security team → report: generate compliance report → remediate: auto-fix encryption → Compliance Automation operational.",
+        "time_complexity": "O(s + v) where s is scan time, v is validation time (automated, runs continuously).",
+        "space_complexity": "O(r + d) where r is rule storage, d is data storage (compliance data).",
+        "strengths": [
+            "Consistency: ensures consistent compliance across infrastructure.",
+            "Efficiency: automates repetitive compliance tasks.",
+            "Continuous: provides continuous compliance monitoring."
+        ],
+        "weaknesses": [
+            "Complexity: compliance rules can be complex to automate.",
+            "Coverage: may not cover all compliance requirements.",
+            "False positives: automated checks may have false positives."
+        ],
+        "alternatives": ["Manual Compliance", "Periodic Audits", "Compliance Tools", "Policy as Code"],
+        "explanation": "Automates compliance checks, validation, and reporting to ensure infrastructure and applications meet regulatory requirements and security standards continuously."
+    },
+    "semester_11/lecture_73_security_devops/secrets_rotation/README.md": {
+        "name": "Secrets Rotation",
+        "problem": "Automatically rotates secrets (passwords, API keys, certificates) on a regular schedule or when compromised, reducing security risk and ensuring secrets remain secure.",
+        "intuition": "Like changing locks: Secrets Rotation is like changing locks on your doors regularly - even if someone had a key, it won't work after you change the lock - rotating secrets regularly (changing passwords, keys) ensures that even if a secret is compromised, it becomes useless after rotation, keeping your systems secure.",
+        "inputs": "Secrets, rotation policies, rotation schedules, secret stores, applications using secrets.",
+        "outputs": "Rotated secrets, updated configurations, rotation logs, security improvements, reduced risk.",
+        "steps": [
+            "Identify: identify all secrets that need rotation.",
+            "Define policy: define rotation policy (schedule, triggers).",
+            "Generate: generate new secrets.",
+            "Update: update secrets in secret store.",
+            "Notify: notify applications of secret changes.",
+            "Update apps: update applications to use new secrets.",
+            "Validate: validate that applications work with new secrets.",
+            "Revoke: revoke old secrets after successful rotation.",
+            "Log: log rotation events for audit.",
+            "Monitor: monitor rotation success and failures."
+        ],
+        "example": "Secrets Rotation: secret: database password → policy: rotate every 90 days → generate: new password → update: update in secret store → notify: notify database service → update: service uses new password → validate: connection successful → revoke: old password invalidated → Secrets Rotation successful.",
+        "time_complexity": "O(n·r) where n is number of secrets, r is rotation time per secret (automated, scheduled).",
+        "space_complexity": "O(s + l) where s is secret storage, l is log storage (rotation history).",
+        "strengths": [
+            "Security: reduces risk from compromised secrets.",
+            "Automation: automates secret management tasks.",
+            "Compliance: supports compliance requirements for secret rotation."
+        ],
+        "weaknesses": [
+            "Complexity: coordinating rotation across services can be complex.",
+            "Downtime: rotation may cause brief service interruptions.",
+            "Coordination: requires coordination with all services using secrets."
+        ],
+        "alternatives": ["Manual Rotation", "No Rotation", "On-Demand Rotation", "Secret Management"],
+        "explanation": "Automatically rotates secrets (passwords, API keys, certificates) on a regular schedule or when compromised, reducing security risk and ensuring secrets remain secure."
+    },
+    "semester_11/lecture_73_security_devops/security_scanning/README.md": {
+        "name": "Security Scanning",
+        "problem": "Automatically scans code, dependencies, containers, and infrastructure for security vulnerabilities, misconfigurations, and threats, enabling proactive security management.",
+        "intuition": "Like security inspections: Security Scanning is like security inspections at airports - automated systems scan everything (code, containers) for threats (vulnerabilities, malware) before they cause problems - just as airport scanners find threats before they enter, security scanning finds vulnerabilities before they're deployed.",
+        "inputs": "Code repositories, container images, dependencies, infrastructure configs, vulnerability databases.",
+        "outputs": "Vulnerability reports, security findings, risk assessments, remediation guidance, scan results.",
+        "steps": [
+            "Configure: configure scanning tools and policies.",
+            "Scan code: scan source code for vulnerabilities and secrets.",
+            "Scan dependencies: scan dependencies for known vulnerabilities.",
+            "Scan containers: scan container images for vulnerabilities.",
+            "Scan infrastructure: scan infrastructure for misconfigurations.",
+            "Analyze: analyze scan results and prioritize findings.",
+            "Report: generate security reports with findings.",
+            "Alert: alert on critical vulnerabilities.",
+            "Track: track vulnerabilities through remediation.",
+            "Integrate: integrate scanning into CI/CD pipeline."
+        ],
+        "example": "Security Scanning: code: scan repository → dependencies: check for CVEs → containers: scan Docker images → infrastructure: check configs → findings: 5 high, 10 medium vulnerabilities → report: security report generated → alert: critical vulnerabilities flagged → Security Scanning operational.",
+        "time_complexity": "O(s + a) where s is scan time, a is analysis time (varies by scope).",
+        "space_complexity": "O(d + r) where d is database size, r is result storage (vulnerability data).",
+        "strengths": [
+            "Proactive: identifies vulnerabilities before deployment.",
+            "Comprehensive: scans multiple layers (code, dependencies, infrastructure).",
+            "Automation: automates security checks in CI/CD."
+        ],
+        "weaknesses": [
+            "False positives: may generate false positive findings.",
+            "Coverage: may not detect all vulnerabilities.",
+            "Noise: too many findings can cause alert fatigue."
+        ],
+        "alternatives": ["Manual Security Review", "Penetration Testing", "Security Audits", "Vulnerability Assessment"],
+        "explanation": "Automatically scans code, dependencies, containers, and infrastructure for security vulnerabilities, misconfigurations, and threats, enabling proactive security management."
+    },
+    "semester_11/lecture_73_security_devops/security_testing/README.md": {
+        "name": "Security Testing",
+        "problem": "Tests applications and infrastructure for security vulnerabilities through automated and manual testing techniques, ensuring security before deployment.",
+        "intuition": "Like safety testing: Security Testing is like safety testing for cars - you test the car (application) to make sure it's safe (secure) before people use it - just as safety tests find problems before cars are sold, security testing finds vulnerabilities before applications are deployed.",
+        "inputs": "Applications, infrastructure, test cases, attack scenarios, security requirements, testing tools.",
+        "outputs": "Security test results, vulnerability reports, risk assessments, remediation recommendations, test coverage.",
+        "steps": [
+            "Plan: plan security testing strategy and scope.",
+            "Static analysis: perform static code analysis for vulnerabilities.",
+            "Dynamic analysis: perform dynamic testing (runtime security tests).",
+            "Penetration testing: perform penetration testing (simulated attacks).",
+            "Dependency testing: test dependencies for vulnerabilities.",
+            "Configuration testing: test security configurations.",
+            "Authentication testing: test authentication and authorization.",
+            "Encryption testing: test encryption implementation.",
+            "Report: generate security test reports.",
+            "Remediate: remediate identified vulnerabilities."
+        ],
+        "example": "Security Testing: app: web application → static: code analysis → dynamic: runtime tests → penetration: simulated attacks → findings: SQL injection vulnerability → report: security test report → remediate: fix vulnerability → Security Testing complete.",
+        "time_complexity": "O(t + a) where t is testing time, a is analysis time (varies by test type and scope).",
+        "space_complexity": "O(r + d) where r is result storage, d is test data storage.",
+        "strengths": [
+            "Comprehensive: tests multiple security aspects.",
+            "Early detection: finds vulnerabilities before production.",
+            "Quality: improves application security quality."
+        ],
+        "weaknesses": [
+            "Time: security testing can be time-consuming.",
+            "Coverage: may not test all attack vectors.",
+            "Expertise: requires security expertise for effective testing."
+        ],
+        "alternatives": ["No Security Testing", "Manual Testing", "Automated Scanning", "Security Audits"],
+        "explanation": "Tests applications and infrastructure for security vulnerabilities through automated and manual testing techniques, ensuring security before deployment."
+    },
+    "semester_11/lecture_73_security_devops/threat_modeling/README.md": {
+        "name": "Threat Modeling",
+        "problem": "Systematically identifies, analyzes, and mitigates security threats to applications and systems by modeling potential attacks and vulnerabilities.",
+        "intuition": "Like risk assessment: Threat Modeling is like a risk assessment for security - you think like an attacker (identify threats), analyze what could go wrong (vulnerabilities), and plan defenses (mitigations) - just as risk assessments help prevent accidents, threat modeling helps prevent security breaches by thinking ahead.",
+        "inputs": "System architecture, data flows, trust boundaries, threat databases, attack patterns, security requirements.",
+        "outputs": "Threat models, threat catalogs, risk assessments, mitigation strategies, security requirements.",
+        "steps": [
+            "Model system: model system architecture and data flows.",
+            "Identify assets: identify valuable assets to protect.",
+            "Identify threats: identify potential threats and attack vectors.",
+            "Analyze: analyze threats for likelihood and impact.",
+            "Prioritize: prioritize threats by risk level.",
+            "Mitigate: design mitigations for identified threats.",
+            "Validate: validate mitigations are effective.",
+            "Document: document threat model and mitigations.",
+            "Review: review and update threat model regularly.",
+            "Integrate: integrate threat modeling into development process."
+        ],
+        "example": "Threat Modeling: system: e-commerce app → assets: customer data, payment info → threats: data breach, SQL injection, XSS → analyze: high risk for data breach → mitigate: encryption, access controls → validate: mitigations tested → Threat Modeling complete.",
+        "time_complexity": "O(a·t) where a is assets, t is threats (analysis and modeling time).",
+        "space_complexity": "O(m + d) where m is model storage, d is documentation size.",
+        "strengths": [
+            "Proactive: identifies threats before they're exploited.",
+            "Systematic: provides systematic approach to security.",
+            "Comprehensive: covers multiple threat dimensions."
+        ],
+        "weaknesses": [
+            "Time: threat modeling can be time-consuming.",
+            "Expertise: requires security expertise.",
+            "Coverage: may not identify all possible threats."
+        ],
+        "alternatives": ["Ad-Hoc Security", "Reactive Security", "Security Audits", "Penetration Testing"],
+        "explanation": "Systematically identifies, analyzes, and mitigates security threats to applications and systems by modeling potential attacks and vulnerabilities."
+    },
+    "semester_11/lecture_73_security_devops/vulnerability_management/README.md": {
+        "name": "Vulnerability Management",
+        "problem": "Systematically identifies, assesses, prioritizes, and remediates security vulnerabilities across infrastructure and applications, maintaining security posture.",
+        "intuition": "Like health checkups: Vulnerability Management is like regular health checkups - you check for problems (vulnerabilities), assess how serious they are (risk), prioritize treatment (critical first), and fix them (remediate) - just as health checkups keep you healthy, vulnerability management keeps systems secure.",
+        "inputs": "Vulnerability scans, threat intelligence, asset inventory, risk criteria, remediation resources.",
+        "outputs": "Vulnerability inventory, risk assessments, remediation plans, patching schedules, security reports.",
+        "steps": [
+            "Discover: discover vulnerabilities through scanning and assessment.",
+            "Inventory: maintain inventory of all vulnerabilities.",
+            "Assess: assess vulnerabilities for severity and risk.",
+            "Prioritize: prioritize vulnerabilities by risk (CVSS scores, business impact).",
+            "Plan: create remediation plans for prioritized vulnerabilities.",
+            "Remediate: remediate vulnerabilities (patch, configure, replace).",
+            "Verify: verify that remediation was successful.",
+            "Track: track vulnerability lifecycle (discovered → remediated).",
+            "Report: report on vulnerability status and trends.",
+            "Improve: continuously improve vulnerability management process."
+        ],
+        "example": "Vulnerability Management: scan: find 50 vulnerabilities → assess: 5 critical, 15 high, 30 medium → prioritize: fix critical first → plan: remediation schedule → remediate: patch critical vulnerabilities → verify: rescan confirms fixes → track: 5 critical fixed → Vulnerability Management operational.",
+        "time_complexity": "O(d + a + r) where d is discovery time, a is assessment time, r is remediation time.",
+        "space_complexity": "O(v + i) where v is vulnerability database, i is inventory storage.",
+        "strengths": [
+            "Systematic: provides systematic approach to vulnerability handling.",
+            "Prioritization: helps prioritize remediation efforts.",
+            "Continuous: enables continuous vulnerability management."
+        ],
+        "weaknesses": [
+            "Volume: large number of vulnerabilities can be overwhelming.",
+            "Resources: remediation requires time and resources.",
+            "Coverage: may not discover all vulnerabilities."
+        ],
+        "alternatives": ["Ad-Hoc Patching", "Reactive Security", "Security Scanning", "Penetration Testing"],
+        "explanation": "Systematically identifies, assesses, prioritizes, and remediates security vulnerabilities across infrastructure and applications, maintaining security posture."
+    },
+    "semester_11/lecture_74_automation_advanced/auto_scaling_advanced/README.md": {
+        "name": "Advanced Auto-Scaling",
+        "problem": "Automatically scales infrastructure resources up or down based on demand using advanced techniques like predictive scaling, multi-metric scaling, and custom scaling policies, optimizing performance and costs.",
+        "intuition": "Like a smart thermostat: Advanced Auto-Scaling is like a smart thermostat that learns your patterns - it doesn't just react to temperature (current load), it predicts when you'll need heating/cooling (predictive scaling) and adjusts proactively - just as a smart thermostat saves energy and keeps you comfortable, advanced auto-scaling saves costs and maintains performance.",
+        "inputs": "Metrics (CPU, memory, custom), scaling policies, predictive models, historical data, cost constraints.",
+        "outputs": "Scaled resources, optimized capacity, cost savings, performance maintenance, adaptive infrastructure.",
+        "steps": [
+            "Monitor: monitor multiple metrics (CPU, memory, queue depth, custom).",
+            "Analyze: analyze metrics and trends.",
+            "Predict: predict future demand using ML models.",
+            "Evaluate: evaluate scaling policies and thresholds.",
+            "Decide: decide when and how much to scale.",
+            "Scale up: scale up resources when demand increases.",
+            "Scale down: scale down resources when demand decreases.",
+            "Optimize: optimize scaling for cost and performance.",
+            "Learn: learn from scaling decisions to improve predictions.",
+            "Adapt: adapt scaling policies based on patterns."
+        ],
+        "example": "Advanced Auto-Scaling: metrics: CPU, memory, request rate → predict: traffic spike in 10 minutes → scale: preemptively scale up → result: handle spike without performance degradation → scale down: reduce after spike → cost: 30% savings vs fixed capacity → Advanced Auto-Scaling successful.",
+        "time_complexity": "O(m + p + s) where m is monitoring time, p is prediction time, s is scaling time (continuous).",
+        "space_complexity": "O(d + c) where d is data storage (metrics, history), c is configuration storage.",
+        "strengths": [
+            "Efficiency: optimizes resource usage and costs.",
+            "Performance: maintains performance under varying load.",
+            "Intelligence: uses predictive scaling for proactive adjustments."
+        ],
+        "weaknesses": [
+            "Complexity: advanced scaling can be complex to configure.",
+            "Prediction: predictions may not always be accurate.",
+            "Overscaling: may scale more than necessary."
+        ],
+        "alternatives": ["Manual Scaling", "Basic Auto-Scaling", "Fixed Capacity", "Scheduled Scaling"],
+        "explanation": "Automatically scales infrastructure resources up or down based on demand using advanced techniques like predictive scaling, multi-metric scaling, and custom scaling policies, optimizing performance and costs."
+    },
+    "semester_11/lecture_74_automation_advanced/automated_remediation/README.md": {
+        "name": "Automated Remediation",
+        "problem": "Automatically detects issues and applies fixes without human intervention, reducing mean time to resolution and improving system reliability.",
+        "intuition": "Like a self-healing system: Automated Remediation is like a self-healing system - when something breaks (issue detected), it fixes itself automatically (remediation) without needing a doctor (human) - just as your body heals cuts automatically, automated remediation fixes system issues automatically, keeping systems healthy.",
+        "inputs": "Monitoring alerts, issue patterns, remediation playbooks, system state, automation scripts.",
+        "outputs": "Automated fixes, resolved issues, reduced downtime, improved reliability, remediation logs.",
+        "steps": [
+            "Detect: detect issues through monitoring and alerts.",
+            "Classify: classify issue type and severity.",
+            "Match: match issue to remediation playbook.",
+            "Validate: validate that automated remediation is safe.",
+            "Execute: execute remediation actions (restart, reconfigure, scale).",
+            "Verify: verify that remediation was successful.",
+            "Rollback: rollback if remediation causes problems.",
+            "Notify: notify team of remediation actions.",
+            "Learn: learn from remediation outcomes.",
+            "Improve: improve remediation playbooks based on experience."
+        ],
+        "example": "Automated Remediation: alert: service unhealthy → classify: memory leak → match: restart playbook → validate: safe to restart → execute: restart service → verify: service healthy → notify: team notified → result: issue resolved in 2 minutes → Automated Remediation successful.",
+        "time_complexity": "O(d + e + v) where d is detection time, e is execution time, v is verification time (automated, fast).",
+        "space_complexity": "O(p + l) where p is playbook storage, l is log storage (remediation history).",
+        "strengths": [
+            "Speed: resolves issues much faster than manual intervention.",
+            "Reliability: improves system reliability through quick fixes.",
+            "Efficiency: reduces operational burden on teams."
+        ],
+        "weaknesses": [
+            "Safety: automated fixes must be carefully designed to avoid harm.",
+            "Complexity: complex issues may require human intervention.",
+            "Coverage: may not handle all types of issues."
+        ],
+        "alternatives": ["Manual Remediation", "Alert-Only", "Semi-Automated", "Self-Healing Systems"],
+        "explanation": "Automatically detects issues and applies fixes without human intervention, reducing mean time to resolution and improving system reliability."
+    },
+    "semester_11/lecture_74_automation_advanced/intelligent_automation/README.md": {
+        "name": "Intelligent Automation",
+        "problem": "Uses AI and machine learning to automate complex decision-making and tasks that require intelligence, enabling automation of sophisticated operations beyond simple rule-based automation.",
+        "intuition": "Like a smart assistant: Intelligent Automation is like having a smart assistant who doesn't just follow instructions (rule-based) but understands context and makes decisions (AI-powered) - they can handle complex situations, learn from experience, and adapt - just as a smart assistant can handle complex tasks, intelligent automation can automate sophisticated operations.",
+        "inputs": "Complex tasks, context data, ML models, decision criteria, historical patterns, automation goals.",
+        "outputs": "Intelligent decisions, automated actions, learned patterns, adaptive behavior, optimized outcomes.",
+        "steps": [
+            "Analyze: analyze task complexity and requirements.",
+            "Learn: learn patterns from historical data and examples.",
+            "Decide: make intelligent decisions using ML models.",
+            "Adapt: adapt behavior based on outcomes and feedback.",
+            "Execute: execute automated actions based on decisions.",
+            "Monitor: monitor outcomes and performance.",
+            "Learn: learn from results to improve decisions.",
+            "Optimize: optimize automation for better outcomes.",
+            "Evolve: evolve automation capabilities over time.",
+            "Integrate: integrate with other systems and processes."
+        ],
+        "example": "Intelligent Automation: task: optimize resource allocation → learn: patterns from historical usage → decide: ML model predicts optimal allocation → adapt: adjust based on actual performance → execute: automatically allocate resources → result: 25% cost reduction → Intelligent Automation successful.",
+        "time_complexity": "O(l + d + e) where l is learning time, d is decision time, e is execution time (varies by task).",
+        "space_complexity": "O(m + d) where m is model storage, d is data storage (training data, patterns).",
+        "strengths": [
+            "Intelligence: handles complex tasks requiring intelligence.",
+            "Adaptability: adapts to changing conditions and patterns.",
+            "Optimization: optimizes outcomes through learning."
+        ],
+        "weaknesses": [
+            "Complexity: intelligent automation is complex to implement.",
+            "Training: requires training data and model development.",
+            "Explainability: decisions may be difficult to explain."
+        ],
+        "alternatives": ["Rule-Based Automation", "Manual Operations", "Script-Based Automation", "ML-Assisted Automation"],
+        "explanation": "Uses AI and machine learning to automate complex decision-making and tasks that require intelligence, enabling automation of sophisticated operations beyond simple rule-based automation."
+    },
+    "semester_11/lecture_74_automation_advanced/predictive_scaling/README.md": {
+        "name": "Predictive Scaling",
+        "problem": "Predicts future demand using machine learning and historical patterns, scaling resources proactively before demand increases, reducing latency and improving user experience.",
+        "intuition": "Like weather forecasting: Predictive Scaling is like weather forecasting for traffic - you predict when it will be busy (demand spike) and prepare ahead of time (scale up) - just as weather forecasts help you prepare for rain, predictive scaling helps you prepare for traffic spikes, ensuring smooth performance.",
+        "inputs": "Historical metrics, time series data, patterns, ML models, scaling policies, prediction horizon.",
+        "outputs": "Demand predictions, proactive scaling, reduced latency, optimized resources, improved performance.",
+        "steps": [
+            "Collect: collect historical metrics and patterns.",
+            "Train: train ML models on historical data.",
+            "Predict: predict future demand using models.",
+            "Analyze: analyze prediction confidence and patterns.",
+            "Decide: decide when to scale based on predictions.",
+            "Scale: scale resources proactively before demand spike.",
+            "Monitor: monitor actual demand vs predictions.",
+            "Adjust: adjust scaling based on actual demand.",
+            "Learn: learn from prediction accuracy to improve models.",
+            "Optimize: optimize predictions and scaling policies."
+        ],
+        "example": "Predictive Scaling: history: traffic spikes at 9 AM daily → predict: spike expected in 15 minutes → scale: preemptively scale up → result: handle spike without latency → actual: spike occurs as predicted → adjust: scale down after spike → Predictive Scaling successful.",
+        "time_complexity": "O(t + p + s) where t is training time, p is prediction time, s is scaling time (continuous).",
+        "space_complexity": "O(m + d) where m is model storage, d is data storage (historical metrics).",
+        "strengths": [
+            "Proactive: scales before demand increases, reducing latency.",
+            "Performance: maintains performance during traffic spikes.",
+            "Efficiency: optimizes resource usage through predictions."
+        ],
+        "weaknesses": [
+            "Accuracy: predictions may not always be accurate.",
+            "Complexity: requires ML models and historical data.",
+            "Overscaling: may scale more than necessary."
+        ],
+        "alternatives": ["Reactive Scaling", "Scheduled Scaling", "Fixed Capacity", "Basic Auto-Scaling"],
+        "explanation": "Predicts future demand using machine learning and historical patterns, scaling resources proactively before demand increases, reducing latency and improving user experience."
+    },
+    "semester_11/lecture_74_automation_advanced/self_healing_systems/README.md": {
+        "name": "Self-Healing Systems",
+        "problem": "Automatically detects, diagnoses, and repairs system failures and issues without human intervention, maintaining system availability and reliability.",
+        "intuition": "Like the human immune system: Self-Healing Systems are like the human immune system - when you get sick (system failure), your body detects it (monitoring), identifies the problem (diagnosis), and fixes it (healing) automatically - just as your immune system keeps you healthy, self-healing systems keep infrastructure healthy by automatically fixing problems.",
+        "inputs": "System metrics, health checks, failure patterns, healing strategies, recovery procedures, automation scripts.",
+        "outputs": "Healed systems, recovered services, reduced downtime, improved reliability, healing logs.",
+        "steps": [
+            "Monitor: continuously monitor system health and metrics.",
+            "Detect: detect failures, anomalies, and issues.",
+            "Diagnose: diagnose root cause of issues.",
+            "Plan: plan healing strategy based on diagnosis.",
+            "Isolate: isolate affected components if needed.",
+            "Repair: execute healing actions (restart, reconfigure, replace).",
+            "Verify: verify that healing was successful.",
+            "Restore: restore normal operation.",
+            "Learn: learn from healing events to improve.",
+            "Prevent: take preventive measures to avoid recurrence."
+        ],
+        "example": "Self-Healing Systems: monitor: service health checks → detect: service unhealthy → diagnose: memory leak → plan: restart strategy → isolate: route traffic away → repair: restart service → verify: service healthy → restore: route traffic back → result: auto-recovered in 3 minutes → Self-Healing Systems operational.",
+        "time_complexity": "O(d + di + r) where d is detection time, di is diagnosis time, r is repair time (automated, fast).",
+        "space_complexity": "O(s + l) where s is strategy storage, l is log storage (healing history).",
+        "strengths": [
+            "Reliability: improves system reliability through automatic recovery.",
+            "Downtime: reduces downtime by quick automatic fixes.",
+            "Efficiency: reduces need for manual intervention."
+        ],
+        "weaknesses": [
+            "Complexity: self-healing systems are complex to design.",
+            "Coverage: may not handle all types of failures.",
+            "Safety: healing actions must be carefully designed."
+        ],
+        "alternatives": ["Manual Recovery", "Alert-Only", "Automated Remediation", "Reactive Systems"],
+        "explanation": "Automatically detects, diagnoses, and repairs system failures and issues without human intervention, maintaining system availability and reliability."
     }
 }
 
