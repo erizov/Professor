@@ -4914,133 +4914,172 @@
     },
     {
       "path": "semester_05/lecture_28_reinforcement_learning/actor_critic/README.md",
-      "name": "Actor Critic",
-      "problem": "Implements actor critic algorithm.",
-      "intuition": "Actor Critic is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Actor-Critic",
+      "problem": "Combines policy-based (actor) and value-based (critic) reinforcement learning to learn both the policy and value function simultaneously for stable, sample-efficient learning.",
+      "intuition": "Like a coach and a player: the actor decides what action to take, while the critic evaluates how good that action was, guiding the actor to improve.",
+      "inputs": "State observations, policy network parameters (actor), value network parameters (critic), reward signal, discount factor γ.",
+      "outputs": "Updated policy parameters for the actor and value estimates for the critic; learned policy that maps states to action probabilities.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Initialize actor (policy πθ) and critic (value Vw) networks.",
+        "For each timestep: observe state s, sample action a ~ πθ(a|s).",
+        "Execute action, receive reward r and next state s′.",
+        "Critic computes TD error δ = r + γVw(s′) − Vw(s).",
+        "Update critic parameters via gradient descent to minimize δ².",
+        "Update actor parameters via policy gradient: θ ← θ + αδ∇θ log πθ(a|s).",
+        "Repeat across episodes; optionally use advantage estimates or entropy regularization."
       ],
-      "example": "Example: Actor Critic applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "CartPole: actor outputs probability of moving left/right; critic estimates expected return. Critic TD-error guides actor to choose actions that keep pole balanced longer.",
+      "time_complexity": "Per step O(f_actor + f_critic) forward/backward passes; training cost scales with episodes × steps.",
+      "space_complexity": "O(|θ| + |w|) for actor and critic parameters plus replay buffers if used.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Lower variance than pure policy gradients due to critic baseline.",
+        "Handles continuous action spaces with appropriate actor parameterization."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Critic bias can destabilize learning if value estimates are poor.",
+        "Two networks increase complexity and tuning effort."
       ],
       "alternatives": [
-        "Related algorithms"
+        "REINFORCE (policy gradient)",
+        "Q-Learning/DQN",
+        "PPO/A3C"
       ],
-      "explanation": "Actor Critic solves computational problems efficiently."
+      "explanation": "Trains an actor to choose actions and a critic to evaluate them, using TD errors to provide low-variance gradient estimates that improve the policy."
     },
     {
       "path": "semester_05/lecture_28_reinforcement_learning/dqn/README.md",
-      "name": "Dqn",
-      "problem": "Implements dqn algorithm.",
-      "intuition": "Dqn is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Deep Q-Network (DQN)",
+      "problem": "Approximates the Q-value function with a deep neural network, enabling Q-learning to scale to high-dimensional state spaces like raw images.",
+      "intuition": "Replace the Q-table with a neural network that predicts action values from pixels, while using replay buffers and target networks to stabilize learning.",
+      "inputs": "State observations (e.g., image frames), action space, replay buffer, hyperparameters (learning rate, γ, ε for ε-greedy).",
+      "outputs": "Trained Q-network Q(s,a; θ) that estimates expected return for each action; derived policy selects argmax_a Q(s,a).",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Initialize Q-network with random weights θ and target network with weights θ⁻ = θ.",
+        "Interact with environment using ε-greedy policy; store transitions (s,a,r,s′,done) in replay buffer.",
+        "Sample mini-batches from replay buffer.",
+        "Compute target y = r + γ(1−done) max_{a′} Q(s′,a′; θ⁻).",
+        "Minimize loss (y − Q(s,a; θ))² via gradient descent.",
+        "Periodically update target network weights θ⁻ ← θ.",
+        "Decay ε over time to shift from exploration to exploitation."
       ],
-      "example": "Example: Dqn applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Atari Breakout: input 84×84×4 frames; network outputs Q-values for joystick moves; DQN learns to control paddle and break bricks achieving human-level scores.",
+      "time_complexity": "O(B·f) per update where B is batch size and f is network forward/backward cost; overall depends on number of environment steps.",
+      "space_complexity": "O(|θ| + buffer_size) for network weights and replay memory (often 1e6 transitions).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Handles high-dimensional inputs (images) without handcrafted features.",
+        "Replay buffer decorrelates data, improving sample efficiency."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Only supports discrete action spaces.",
+        "Sensitive to hyperparameters; can suffer from overestimation bias."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Double DQN",
+        "Dueling DQN",
+        "Actor-Critic",
+        "PPO"
       ],
-      "explanation": "Dqn solves computational problems efficiently."
+      "explanation": "Uses a neural network to approximate Q-values combined with experience replay and target networks to stabilize Q-learning in complex environments."
     },
     {
       "path": "semester_05/lecture_28_reinforcement_learning/policy_gradient/README.md",
-      "name": "Policy Gradient",
-      "problem": "Implements policy gradient algorithm.",
-      "intuition": "Policy Gradient is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Policy Gradient (REINFORCE)",
+      "problem": "Directly optimizes stochastic policies by ascending the gradient of expected return, avoiding value-function approximation and enabling continuous action spaces.",
+      "intuition": "Treat policy parameters like weights that determine action probabilities; adjust them to increase the likelihood of actions that yielded high rewards.",
+      "inputs": "Policy πθ(a|s), trajectories of states/actions/rewards, discount factor γ, baseline (optional).",
+      "outputs": "Updated policy parameters θ that increase expected cumulative reward.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Roll out policy to collect trajectories (s₀,a₀,r₀,…,s_T).",
+        "Compute returns G_t = Σ_k γ^k r_{t+k}.",
+        "Estimate gradient: ∇θ J(θ) ≈ Σ_t ∇θ log πθ(a_t|s_t) (G_t − b_t) where b_t is baseline (often V(s_t)).",
+        "Update parameters θ ← θ + α ∇θ J(θ).",
+        "Repeat sampling and updating; optionally use variance reduction (baselines, advantage functions).",
+        "Use entropy regularization to encourage exploration."
       ],
-      "example": "Example: Policy Gradient applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "MountainCarContinuous: policy outputs mean/variance of Gaussian torque; REINFORCE adjusts parameters so successful climbs become more probable.",
+      "time_complexity": "O(T·f) per trajectory where T is steps and f is policy forward/backward cost; requires many trajectories for low-variance estimates.",
+      "space_complexity": "O(|θ|) for policy parameters plus storage of trajectory data during updates.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Works with continuous actions and stochastic policies.",
+        "Optimizes policy directly without requiring value function."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "High variance gradient estimates lead to slow convergence.",
+        "Requires on-policy data; trajectories cannot be reused extensively."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Actor-Critic",
+        "PPO",
+        "Trust Region Policy Optimization (TRPO)"
       ],
-      "explanation": "Policy Gradient solves computational problems efficiently."
+      "explanation": "Uses the gradient of log policy probabilities weighted by returns to directly improve the policy, making rewarding actions more likely in future rollouts."
     },
     {
       "path": "semester_05/lecture_28_reinforcement_learning/ppo/README.md",
-      "name": "Ppo",
-      "problem": "Implements ppo algorithm.",
-      "intuition": "Ppo is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Proximal Policy Optimization (PPO)",
+      "problem": "Stabilizes policy gradient updates by constraining policy changes, providing reliable performance improvements without complex second-order optimization.",
+      "intuition": "Like taking cautious steps: update the policy but clip the change so it never moves too far from the previous policy, preventing destructive updates.",
+      "inputs": "Policy πθ, old policy πθ_old, advantage estimates Â, clipping parameter ε, value function approximator.",
+      "outputs": "Updated policy parameters that maximize clipped surrogate objective while maintaining trust region.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Collect trajectories using current policy; compute advantages (e.g., GAE).",
+        "Compute probability ratio r_t(θ) = πθ(a_t|s_t) / πθ_old(a_t|s_t).",
+        "Optimize clipped objective: L^CLIP = E[min(r_tÂ_t, clip(r_t,1−ε,1+ε)Â_t)].",
+        "Add value function loss and entropy bonus to total loss.",
+        "Perform multiple epochs of mini-batch SGD on collected data.",
+        "Update old policy parameters to current policy and repeat rollout."
       ],
-      "example": "Example: Ppo applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "MuJoCo Humanoid: PPO with ε=0.2 and GAE learns stable locomotion policies by preventing large destructive updates seen in vanilla policy gradients.",
+      "time_complexity": "O(K·B·f) per iteration where K is epochs, B batch size, f network cost; more sample efficient than REINFORCE but still on-policy.",
+      "space_complexity": "O(|θ| + buffer) for policy parameters and rollout storage.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Stable training with simple clipping objective.",
+        "Works well on continuous control benchmarks."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Still on-policy; requires fresh samples each update.",
+        "Performance sensitive to clipping parameter and advantage estimates."
       ],
       "alternatives": [
-        "Related algorithms"
+        "TRPO",
+        "Actor-Critic",
+        "SAC (off-policy)"
       ],
-      "explanation": "Ppo solves computational problems efficiently."
+      "explanation": "Introduces a clipped surrogate objective that limits policy updates, ensuring new policies stay close to old ones while still improving performance."
     },
     {
       "path": "semester_05/lecture_28_reinforcement_learning/q_learning/README.md",
-      "name": "Q Learning",
-      "problem": "Implements q learning algorithm.",
-      "intuition": "Q Learning is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Q-Learning",
+      "problem": "Off-policy TD control algorithm that learns optimal action-value function for Markov Decision Processes with discrete states/actions.",
+      "intuition": "Update your estimate of action usefulness by bootstrapping: new Q-value = old Q-value plus learning rate times error between received reward + best future estimate and current estimate.",
+      "inputs": "Discrete state/action space, learning rate α, discount factor γ, exploration policy (e.g., ε-greedy).",
+      "outputs": "Q-table Q(s,a) with estimated expected returns; derived greedy policy π(s) = argmax_a Q(s,a).",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Initialize Q(s,a) arbitrarily.",
+        "For each episode: start at initial state.",
+        "Choose action a using ε-greedy policy w.r.t Q.",
+        "Observe reward r and next state s′.",
+        "Update Q(s,a) ← Q(s,a) + α [r + γ max_{a′} Q(s′,a′) − Q(s,a)].",
+        "Set s ← s′ and repeat until terminal state.",
+        "Gradually decay ε to shift toward exploitation."
       ],
-      "example": "Example: Q Learning applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Gridworld: agent updates Q-values for moving north/south/east/west; eventually learns optimal path to goal while avoiding traps.",
+      "time_complexity": "O(E·A) where E is number of state transitions and A is action count per update (max over actions).",
+      "space_complexity": "O(|S|·|A|) for Q-table (scales poorly in large/continuous spaces).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Converges to optimal policy under standard assumptions.",
+        "Simple to implement; off-policy allows reuse of experience."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Not directly applicable to large/continuous state spaces (requires function approximation).",
+        "Requires sufficient exploration to converge."
       ],
       "alternatives": [
-        "Related algorithms"
+        "SARSA",
+        "DQN (function approximation)",
+        "Policy Gradient"
       ],
-      "explanation": "Q Learning solves computational problems efficiently."
+      "explanation": "Iteratively updates action-value estimates using Bellman optimality equation, enabling agents to learn optimal policies through exploration and bootstrapping."
     },
     {
       "path": "semester_05/lecture_29_nlp_advanced/glove/README.md",
