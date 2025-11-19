@@ -4200,185 +4200,240 @@
     },
     {
       "path": "semester_05/lecture_22_cnn_architectures/efficientnet/README.md",
-      "name": "Efficientnet",
-      "problem": "Implements efficientnet algorithm.",
-      "intuition": "Efficientnet is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "EfficientNet",
+      "problem": "Scales CNN depth, width, and resolution uniformly using compound scaling to achieve better accuracy and efficiency than scaling dimensions independently.",
+      "intuition": "Like adjusting a camera's zoom, aperture, and ISO together: balance all three dimensions (depth, width, resolution) proportionally for optimal performance, rather than just making one bigger.",
+      "inputs": "Input images, base EfficientNet architecture, compound scaling coefficient φ.",
+      "outputs": "Scaled EfficientNet model with optimized depth, width, and resolution.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Start with baseline EfficientNet-B0 architecture (found via neural architecture search).",
+        "Apply compound scaling: depth^α × width^β × resolution^γ = 2^φ, where α+β+γ=1.",
+        "Scale depth (number of layers), width (number of channels), and resolution (input size) together.",
+        "Train scaled model on target dataset.",
+        "Iterate to find optimal φ for accuracy/efficiency trade-off."
       ],
-      "example": "Example: Efficientnet applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "EfficientNet-B0 baseline → scale with φ=1 → EfficientNet-B1 (depth×1.2, width×1.1, resolution×1.15) → achieves better accuracy than ResNet-50 with 8x fewer parameters.",
+      "time_complexity": "O(d·w²·r²) where d is depth, w is width, r is resolution (scales polynomially with φ).",
+      "space_complexity": "O(d·w²) for model parameters (grows with compound scaling).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Achieves state-of-the-art accuracy with fewer parameters.",
+        "Systematic scaling approach outperforms ad-hoc scaling."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Requires careful tuning of compound scaling coefficients.",
+        "Higher resolution increases memory requirements."
       ],
       "alternatives": [
-        "Related algorithms"
+        "ResNet",
+        "MobileNet",
+        "Inception",
+        "Manual Architecture Scaling"
       ],
-      "explanation": "Efficientnet solves computational problems efficiently."
+      "explanation": "Uses compound scaling to uniformly scale depth, width, and resolution, achieving better accuracy-efficiency trade-offs than scaling dimensions independently."
     },
     {
       "path": "semester_05/lecture_22_cnn_architectures/inception/README.md",
-      "name": "Inception",
-      "problem": "Implements inception algorithm.",
-      "intuition": "Inception is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Inception (GoogLeNet)",
+      "problem": "Uses parallel convolutions of different sizes (1×1, 3×3, 5×5) in the same layer to capture features at multiple scales efficiently.",
+      "intuition": "Like using multiple camera lenses simultaneously: capture details at different scales (close-up, medium, wide) in parallel, then combine the best views.",
+      "inputs": "Input feature maps, multiple convolution filter sizes (1×1, 3×3, 5×5), max pooling.",
+      "outputs": "Feature maps with multi-scale representations concatenated together.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Apply 1×1 convolution for dimensionality reduction and feature combination.",
+        "Apply 3×3 and 5×5 convolutions in parallel to capture different scales.",
+        "Apply max pooling for spatial reduction.",
+        "Concatenate outputs from all parallel paths.",
+        "Use 1×1 convolutions to reduce channel dimensions before expensive operations.",
+        "Stack multiple Inception modules to build deep network."
       ],
-      "example": "Example: Inception applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Input 256×256×192 → Inception module: 1×1 conv (64 filters), 3×3 conv (128 filters), 5×5 conv (32 filters), max pool → concatenate → output 256×256×256.",
+      "time_complexity": "O(n²·c·k²) where n is spatial size, c is channels, k is kernel size (reduced by 1×1 bottlenecks).",
+      "space_complexity": "O(n²·c) for feature maps (1×1 convolutions reduce memory).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Captures multi-scale features efficiently.",
+        "1×1 convolutions reduce computational cost."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complex architecture with many hyperparameters.",
+        "Wider layers increase memory usage."
       ],
       "alternatives": [
-        "Related algorithms"
+        "ResNet",
+        "VGG",
+        "EfficientNet",
+        "Standard Sequential CNNs"
       ],
-      "explanation": "Inception solves computational problems efficiently."
+      "explanation": "Uses parallel convolutions of different sizes in the same layer to capture features at multiple scales, improving representation power while controlling computational cost."
     },
     {
       "path": "semester_05/lecture_22_cnn_architectures/resnet/README.md",
-      "name": "Resnet",
-      "problem": "Implements resnet algorithm.",
-      "intuition": "Resnet is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "ResNet (Residual Network)",
+      "problem": "Enables training of very deep networks by using skip connections (residual blocks) that allow gradients to flow directly, solving the vanishing gradient problem.",
+      "intuition": "Like a highway bypass: if the main road (layers) is blocked, use the bypass (skip connection) to get through. This makes it easier to train very deep networks.",
+      "inputs": "Input feature maps, residual block configuration, number of layers.",
+      "outputs": "Deep network with residual connections enabling effective gradient flow.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Define residual block: F(x) = activation(conv(x) + x) where x is input (skip connection).",
+        "Stack multiple residual blocks to build deep network.",
+        "Use identity mapping for skip connection when dimensions match.",
+        "Use 1×1 convolution for skip connection when dimensions need adjustment.",
+        "Apply batch normalization and ReLU after convolutions.",
+        "Train network end-to-end with standard backpropagation."
       ],
-      "example": "Example: Resnet applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "ResNet-50: input → conv → 16 residual blocks (each with 2-3 conv layers) → global avg pool → classifier. Skip connections allow training 50+ layers vs 20 for plain CNN.",
+      "time_complexity": "O(d·n²·c²) where d is depth, n is spatial size, c is channels (similar to plain CNN but enables deeper networks).",
+      "space_complexity": "O(d·c²) for parameters (skip connections add minimal overhead).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Enables training of very deep networks (100+ layers).",
+        "Solves vanishing gradient problem effectively."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Slightly more memory due to skip connections.",
+        "May have redundant representations in very deep networks."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Plain CNNs",
+        "DenseNet",
+        "Highway Networks",
+        "Inception"
       ],
-      "explanation": "Resnet solves computational problems efficiently."
+      "explanation": "Uses skip connections in residual blocks to enable direct gradient flow, allowing training of very deep networks that would otherwise suffer from vanishing gradients."
     },
     {
       "path": "semester_05/lecture_22_cnn_architectures/vgg/README.md",
-      "name": "Vgg",
-      "problem": "Implements vgg algorithm.",
-      "intuition": "Vgg is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "VGG (Visual Geometry Group)",
+      "problem": "Demonstrates that deep networks with small 3×3 convolutions can achieve excellent performance by stacking many layers, establishing depth as a key factor.",
+      "intuition": "Like building with small LEGO blocks: use many small 3×3 blocks (convolutions) stacked together instead of a few large blocks, giving more flexibility and depth.",
+      "inputs": "Input images, 3×3 convolution filters, max pooling layers.",
+      "outputs": "Deep CNN with uniform architecture using small receptive fields.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Use only 3×3 convolutions (receptive field of larger convolutions can be achieved by stacking).",
+        "Stack multiple 3×3 conv layers before pooling (e.g., 2-3 convs per block).",
+        "Double number of filters after each max pooling layer.",
+        "Use 2×2 max pooling for spatial downsampling.",
+        "End with fully connected layers for classification.",
+        "Train with data augmentation and dropout."
       ],
-      "example": "Example: Vgg applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "VGG-16: 224×224×3 → 2×conv64 → pool → 2×conv128 → pool → 3×conv256 → pool → 3×conv512 → pool → 3×conv512 → pool → FC4096 → FC4096 → FC1000 → softmax.",
+      "time_complexity": "O(n²·c²·d) where n is spatial size, c is channels, d is depth (many parameters due to FC layers).",
+      "space_complexity": "O(c²·d) for parameters (large due to FC layers, ~138M for VGG-16).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Simple, uniform architecture easy to understand and implement.",
+        "Establishes importance of depth in CNNs."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Very large number of parameters (especially FC layers).",
+        "Slower training and inference than more efficient architectures."
       ],
       "alternatives": [
-        "Related algorithms"
+        "ResNet",
+        "MobileNet",
+        "EfficientNet",
+        "AlexNet"
       ],
-      "explanation": "Vgg solves computational problems efficiently."
+      "explanation": "Uses deep stacks of small 3×3 convolutions to build effective CNNs, demonstrating that depth is crucial for performance while maintaining architectural simplicity."
     },
     {
       "path": "semester_05/lecture_23_object_detection/rcnn/README.md",
-      "name": "Rcnn",
-      "problem": "Implements rcnn algorithm.",
-      "intuition": "Rcnn is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "R-CNN (Region-based CNN)",
+      "problem": "Detects objects by first generating region proposals, then classifying each region with a CNN, combining selective search with deep learning.",
+      "intuition": "Like a security guard checking suspicious areas: first identify potential regions (selective search), then examine each region carefully (CNN classification) to confirm if it contains an object.",
+      "inputs": "Input image, region proposal algorithm (selective search), pre-trained CNN.",
+      "outputs": "Bounding boxes with class labels and confidence scores for detected objects.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Generate ~2000 region proposals using selective search (bottom-up segmentation).",
+        "Warp each region proposal to fixed size (e.g., 227×227).",
+        "Extract features from each warped region using pre-trained CNN (e.g., AlexNet).",
+        "Train SVM classifiers for each object class on extracted features.",
+        "Apply bounding box regression to refine proposal coordinates.",
+        "Apply non-maximum suppression to remove duplicate detections."
       ],
-      "example": "Example: Rcnn applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Image → selective search finds 2000 regions → warp each to 227×227 → CNN extracts 4096-dim features → SVM classifies (person, car, dog) → bounding box regression → NMS → final detections.",
+      "time_complexity": "O(n·m) where n is number of proposals (~2000), m is CNN forward pass time (slow: ~47s per image).",
+      "space_complexity": "O(n·d) for n proposals with d-dimensional features (high memory usage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "First successful application of CNNs to object detection.",
+        "Achieves good accuracy on PASCAL VOC dataset."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Very slow due to processing each proposal separately.",
+        "High memory usage and training complexity."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Fast R-CNN",
+        "Faster R-CNN",
+        "YOLO",
+        "SSD"
       ],
-      "explanation": "Rcnn solves computational problems efficiently."
+      "explanation": "Uses region proposals with CNN-based classification to detect objects, pioneering deep learning for object detection but suffering from slow inference speed."
     },
     {
       "path": "semester_05/lecture_23_object_detection/ssd/README.md",
-      "name": "Ssd",
-      "problem": "Implements ssd algorithm.",
-      "intuition": "Ssd is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "SSD (Single Shot Detector)",
+      "problem": "Detects objects in a single forward pass by applying multiple default boxes at different scales and aspect ratios to feature maps at various layers.",
+      "intuition": "Like a multi-scale fishing net: cast nets of different sizes (default boxes) at different depths (feature map layers) to catch objects of various sizes in one pass.",
+      "inputs": "Input image, base CNN (e.g., VGG), multi-scale feature maps, default boxes.",
+      "outputs": "Bounding boxes with class predictions and confidence scores in single pass.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Extract feature maps from multiple CNN layers (different scales).",
+        "Generate default boxes (anchor boxes) at each feature map location with different scales and aspect ratios.",
+        "For each default box, predict: class scores and bounding box offsets.",
+        "Match default boxes to ground truth boxes using IoU threshold.",
+        "Train with multi-task loss: classification loss + localization loss.",
+        "Apply non-maximum suppression to remove duplicate detections."
       ],
-      "example": "Example: Ssd applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Input 300×300 → VGG extracts features at 38×38, 19×19, 10×10, 5×5, 3×3, 1×1 → each location has 4-6 default boxes → predict class+box for each → NMS → final detections.",
+      "time_complexity": "O(n·k) where n is number of default boxes (~8732 for 300×300 input), k is prediction time per box (fast: ~58 FPS).",
+      "space_complexity": "O(n·(c+4)) for n boxes with c classes and 4 box coordinates.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Fast single-shot detection (real-time capable).",
+        "Good accuracy-speed trade-off."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Struggles with small objects.",
+        "Requires careful default box design."
       ],
       "alternatives": [
-        "Related algorithms"
+        "YOLO",
+        "Faster R-CNN",
+        "RetinaNet",
+        "EfficientDet"
       ],
-      "explanation": "Ssd solves computational problems efficiently."
+      "explanation": "Performs object detection in a single forward pass using multi-scale feature maps and default boxes, achieving real-time speed with competitive accuracy."
     },
     {
       "path": "semester_05/lecture_23_object_detection/yolo/README.md",
-      "name": "Yolo",
-      "problem": "Implements yolo algorithm.",
-      "intuition": "Yolo is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "YOLO (You Only Look Once)",
+      "problem": "Divides image into grid cells and predicts bounding boxes and class probabilities directly from full images in one evaluation, enabling real-time object detection.",
+      "intuition": "Like a single glance at a scene: instead of scanning multiple times, look once and immediately identify what's where, trading some accuracy for speed.",
+      "inputs": "Input image, grid division (e.g., 7×7), CNN backbone.",
+      "outputs": "Grid of predictions: bounding boxes, confidence scores, and class probabilities.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Divide input image into S×S grid (e.g., 7×7).",
+        "Each grid cell predicts B bounding boxes and class probabilities.",
+        "For each bounding box, predict: center coordinates, width, height, confidence score.",
+        "Predict class probabilities for each grid cell (shared across boxes in that cell).",
+        "Combine predictions: final score = confidence × class probability.",
+        "Apply non-maximum suppression to remove overlapping detections."
       ],
-      "example": "Example: Yolo applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Input 448×448 → divide into 7×7 grid → each cell predicts 2 boxes (x,y,w,h,confidence) + 20 class probs → 7×7×30 tensor → NMS → final detections. Processes at 45 FPS.",
+      "time_complexity": "O(S²·B·C) where S is grid size, B is boxes per cell, C is classes (very fast: real-time).",
+      "space_complexity": "O(S²·(B·5+C)) for grid predictions (compact representation).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Extremely fast real-time detection.",
+        "Sees entire image context, fewer false positives on background."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Struggles with small objects and objects in groups.",
+        "Limited to fixed number of detections per grid cell."
       ],
       "alternatives": [
-        "Related algorithms"
+        "YOLOv2/v3/v4/v5",
+        "SSD",
+        "Faster R-CNN",
+        "RetinaNet"
       ],
-      "explanation": "Yolo solves computational problems efficiently."
+      "explanation": "Performs object detection in a single forward pass by dividing image into grid and predicting boxes and classes directly, achieving real-time speed with end-to-end learning."
     },
     {
       "path": "semester_05/lecture_24_segmentation/fcn/README.md",

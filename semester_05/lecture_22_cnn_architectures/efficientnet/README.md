@@ -1,40 +1,44 @@
-# Efficientnet
+# EfficientNet
 
 1. **Name of Algorithm**  
-   Efficientnet
+   EfficientNet
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements efficientnet algorithm.
+   Scales CNN depth, width, and resolution uniformly using compound scaling to achieve better accuracy and efficiency than scaling dimensions independently.
 
 3. **Intuition (plain-language explanation)**  
-   Efficientnet is a fundamental algorithm in computer science.
+   Like adjusting a camera's zoom, aperture, and ISO together: balance all three dimensions (depth, width, resolution) proportionally for optimal performance, rather than just making one bigger.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Input images, base EfficientNet architecture, compound scaling coefficient φ.  
+   - Output: Scaled EfficientNet model with optimized depth, width, and resolution.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Start with baseline EfficientNet-B0 architecture (found via neural architecture search).
+2. Apply compound scaling: depth^α × width^β × resolution^γ = 2^φ, where α+β+γ=1.
+3. Scale depth (number of layers), width (number of channels), and resolution (input size) together.
+4. Train scaled model on target dataset.
+5. Iterate to find optimal φ for accuracy/efficiency trade-off.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Efficientnet applied to sample data.
+   EfficientNet-B0 baseline → scale with φ=1 → EfficientNet-B1 (depth×1.2, width×1.1, resolution×1.15) → achieves better accuracy than ResNet-50 with 8x fewer parameters.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(d·w²·r²) where d is depth, w is width, r is resolution (scales polynomially with φ).  
+   - Space: O(d·w²) for model parameters (grows with compound scaling).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Achieves state-of-the-art accuracy with fewer parameters.
+- Systematic scaling approach outperforms ad-hoc scaling.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Requires careful tuning of compound scaling coefficients.
+- Higher resolution increases memory requirements.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: ResNet, MobileNet, Inception, Manual Architecture Scaling
 
 11. **30-second explanation (your own words)**  
-    Efficientnet solves computational problems efficiently.
+    Uses compound scaling to uniformly scale depth, width, and resolution, achieving better accuracy-efficiency trade-offs than scaling dimensions independently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
