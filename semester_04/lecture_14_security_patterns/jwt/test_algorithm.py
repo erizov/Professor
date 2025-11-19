@@ -95,9 +95,13 @@ class TestJwt(AlgorithmTestCase):
         import threading
 
         instances = []
+        errors = []
 
         def create_instance():
-            instances.append(self.algorithm())
+            try:
+                instances.append(self.algorithm("test_secret_key"))
+            except Exception as e:
+                errors.append(e)
 
         threads = [threading.Thread(target=create_instance) for _ in range(10)]
         for t in threads:
@@ -105,7 +109,7 @@ class TestJwt(AlgorithmTestCase):
         for t in threads:
             t.join()
 
-        self.assertEqual(len(instances), 10)
+        self.assertEqual(len(instances), 10, f"Got {len(instances)} instances, errors: {errors}")
 
 
 if __name__ == "__main__":

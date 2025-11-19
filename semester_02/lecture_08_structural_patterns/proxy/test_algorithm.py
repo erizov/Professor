@@ -95,11 +95,17 @@ class TestProxy(AlgorithmTestCase):
     def test_thread_safety(self):
         """Test thread safety if applicable."""
         import threading
+        from semester_02.lecture_08_structural_patterns.proxy.algorithm import RealSubject
 
         instances = []
+        errors = []
 
         def create_instance():
-            instances.append(self.algorithm())
+            try:
+                real_subject = RealSubject()
+                instances.append(self.algorithm(real_subject))
+            except Exception as e:
+                errors.append(e)
 
         threads = [threading.Thread(target=create_instance) for _ in range(10)]
         for t in threads:
@@ -107,7 +113,7 @@ class TestProxy(AlgorithmTestCase):
         for t in threads:
             t.join()
 
-        self.assertEqual(len(instances), 10)
+        self.assertEqual(len(instances), 10, f"Got {len(instances)} instances, errors: {errors}")
 
 
 if __name__ == "__main__":

@@ -75,7 +75,8 @@ class TestKmp(AlgorithmTestCase):
         text = "ABCDEFG"
         pattern = "XYZ"
         result = self.algorithm(text, pattern)
-        self.assertIsNone(result) or self.assertEqual(result, -1)
+        # KMP returns empty list when pattern not found
+        self.assertEqual(result, [])
 
 
 if __name__ == "__main__":
