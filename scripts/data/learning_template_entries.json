@@ -5322,211 +5322,293 @@
     },
     {
       "path": "semester_06/lecture_31_mlops/ab_testing/README.md",
-      "name": "Ab Testing",
-      "problem": "Implements ab testing algorithm.",
-      "intuition": "Ab Testing is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "A/B Testing",
+      "problem": "Compares two or more variants (A, B, etc.) of a model, feature, or system to determine which performs better using statistical hypothesis testing, enabling data-driven decision making.",
+      "intuition": "Like a scientific experiment: split users into groups, show each group a different version (A or B), measure outcomes, and use statistics to determine which version is truly better, not just due to random chance.",
+      "inputs": "User traffic, variant assignments (A/B), success metrics (conversion rate, click-through rate, etc.), sample size, significance level.",
+      "outputs": "Statistical test results (p-value, confidence intervals), recommendation on which variant to deploy.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Randomly assign users to control (A) and treatment (B) groups.",
+        "Run experiment for sufficient duration to collect statistically significant sample size.",
+        "Collect metrics: conversion rates, engagement, revenue, etc. for each group.",
+        "Calculate test statistic (e.g., difference in means, chi-square for proportions).",
+        "Perform statistical test (t-test, z-test, chi-square) to compute p-value.",
+        "Compare p-value to significance level (α, typically 0.05): if p < α, reject null hypothesis (variants differ).",
+        "Calculate confidence intervals for effect size.",
+        "Make decision: deploy winning variant if statistically significant and practically meaningful."
       ],
-      "example": "Example: Ab Testing applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "E-commerce: 10,000 users → 5,000 see old checkout (A), 5,000 see new checkout (B) → A: 2% conversion, B: 2.5% conversion → t-test: p=0.01 < 0.05 → B is significantly better → deploy B.",
+      "time_complexity": "O(n) where n is number of users/events (linear in data collection).",
+      "space_complexity": "O(n) for storing user assignments and metrics.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Provides statistical rigor for decision making.",
+        "Reduces risk of deploying changes that hurt performance."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Requires sufficient sample size and time.",
+        "May not capture long-term effects or edge cases."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Multi-armed Bandits",
+        "Canary Deployments",
+        "Shadow Testing",
+        "Simulation"
       ],
-      "explanation": "Ab Testing solves computational problems efficiently."
+      "explanation": "Uses controlled experiments with statistical hypothesis testing to compare variants and make data-driven decisions about which version performs better."
     },
     {
       "path": "semester_06/lecture_31_mlops/data_drift/README.md",
-      "name": "Data Drift",
-      "problem": "Implements data drift algorithm.",
-      "intuition": "Data Drift is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Data Drift Detection",
+      "problem": "Monitors and detects when the distribution of production data deviates from training data distribution, indicating model performance degradation and need for retraining.",
+      "intuition": "Like a quality control inspector: continuously check if incoming data looks like the data the model was trained on - if it changes significantly (drifts), the model may no longer work well and needs updating.",
+      "inputs": "Training data distribution, production data stream, drift detection method (statistical tests, distance metrics).",
+      "outputs": "Drift alerts, drift scores, feature-level drift indicators, recommendations for model retraining.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Establish baseline: compute statistics (mean, std, distribution) of training data.",
+        "Collect production data samples over time windows (e.g., daily batches).",
+        "Compute same statistics for production data.",
+        "Apply drift detection method: Kolmogorov-Smirnov test, Population Stability Index (PSI), Maximum Mean Discrepancy (MMD), or Wasserstein distance.",
+        "Compare distributions: if test statistic exceeds threshold, flag drift.",
+        "Identify which features have drifted (feature-level analysis).",
+        "Trigger alert if drift detected, optionally trigger automatic retraining pipeline.",
+        "Track drift over time to understand trends."
       ],
-      "example": "Example: Data Drift applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Fraud detection: training data has 1% fraud rate, production data shows 5% fraud rate → PSI > 0.25 (high drift) → alert: model may be outdated → retrain with recent data.",
+      "time_complexity": "O(n·d) where n is sample size, d is number of features (statistical tests per feature).",
+      "space_complexity": "O(d) for storing baseline statistics and O(n·d) for production samples.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Early warning system for model degradation.",
+        "Enables proactive model maintenance."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "May produce false positives (noise vs. real drift).",
+        "Requires defining appropriate thresholds and detection methods."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Concept Drift Detection",
+        "Model Performance Monitoring",
+        "Feature Monitoring",
+        "Evidently AI"
       ],
-      "explanation": "Data Drift solves computational problems efficiently."
+      "explanation": "Monitors production data distribution against training baseline using statistical tests to detect when data changes significantly, indicating potential need for model retraining."
     },
     {
       "path": "semester_06/lecture_31_mlops/feature_store/README.md",
       "name": "Feature Store",
-      "problem": "Implements feature store algorithm.",
-      "intuition": "Feature Store is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Centralizes storage, versioning, and serving of machine learning features, enabling feature reuse, consistency between training and inference, and efficient feature serving at scale.",
+      "intuition": "Like a shared library for features: instead of each team computing the same features differently, store them once in a central place where everyone can access the same version, ensuring training and production use identical features.",
+      "inputs": "Raw data, feature definitions, feature computation pipelines, feature metadata (schema, version, lineage).",
+      "outputs": "Stored features accessible via API, feature serving endpoints for real-time and batch inference.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Define feature schema: name, type, description, data source.",
+        "Implement feature computation pipeline (ETL jobs) to transform raw data into features.",
+        "Store computed features in feature store (offline storage: data warehouse, online storage: key-value store).",
+        "Version features: track changes to feature definitions and data over time.",
+        "Register feature metadata: schema, statistics, data quality metrics, lineage.",
+        "Expose feature serving API: point-in-time correct features for training, low-latency features for inference.",
+        "Enable feature discovery: catalog for teams to find and reuse existing features.",
+        "Monitor feature freshness and data quality."
       ],
-      "example": "Example: Feature Store applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "E-commerce: feature 'user_purchase_count_30d' computed from transactions → stored in feature store → training pipeline reads historical features → production API serves current feature value for user_id=123 → both use same feature definition.",
+      "time_complexity": "O(n) for feature computation and retrieval where n is data size (depends on feature complexity).",
+      "space_complexity": "O(n·d) for storing features where n is number of entities, d is number of features.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Ensures feature consistency between training and production.",
+        "Reduces duplicate feature engineering work.",
+        "Enables feature reuse across teams."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Requires infrastructure investment and maintenance.",
+        "May introduce latency if not optimized for serving."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Feature Registry",
+        "Data Warehouse Features",
+        "Custom Feature Pipelines",
+        "Feast, Tecton"
       ],
-      "explanation": "Feature Store solves computational problems efficiently."
+      "explanation": "Centralizes feature storage, versioning, and serving to ensure consistency between training and inference while enabling feature reuse and efficient serving at scale."
     },
     {
       "path": "semester_06/lecture_31_mlops/model_monitoring/README.md",
       "name": "Model Monitoring",
-      "problem": "Implements model monitoring algorithm.",
-      "intuition": "Model Monitoring is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Continuously tracks model performance, data quality, and system health in production to detect degradation, errors, and anomalies, enabling proactive model maintenance.",
+      "intuition": "Like a health monitor for your model: continuously check if the model is performing well, if predictions make sense, if data quality is good, and if the system is healthy - alert when something goes wrong.",
+      "inputs": "Model predictions, ground truth labels (when available), input data, system metrics (latency, throughput, errors).",
+      "outputs": "Performance dashboards, alerts for anomalies, degradation reports, recommendations for model updates.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Define monitoring metrics: accuracy, precision, recall, latency, prediction distribution, data quality scores.",
+        "Collect predictions and inputs from production inference.",
+        "Compare predictions to ground truth (if available) to compute performance metrics.",
+        "Track prediction distributions: detect if predictions shift (e.g., all predictions become positive).",
+        "Monitor data quality: missing values, outliers, schema violations.",
+        "Set thresholds and alerting rules: alert if accuracy drops below threshold, if latency exceeds SLA, if error rate spikes.",
+        "Visualize metrics in dashboards: time series of performance, distribution plots, error logs.",
+        "Generate reports and trigger automated responses (e.g., rollback, retrain) when issues detected."
       ],
-      "example": "Example: Model Monitoring applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Fraud detection model: monitor accuracy (baseline 95%) → drops to 90% → alert triggered → investigate: data drift detected → retrain model with recent data → accuracy returns to 95%.",
+      "time_complexity": "O(n) for processing n predictions/metrics (real-time or batch processing).",
+      "space_complexity": "O(n) for storing metrics and predictions over time windows.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Enables proactive detection of model issues.",
+        "Provides visibility into model behavior in production."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Requires ground truth labels for supervised metrics (may be delayed or unavailable).",
+        "May generate noise if thresholds not tuned properly."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Data Drift Detection",
+        "Shadow Testing",
+        "Canary Deployments",
+        "Arize, Fiddler, WhyLabs"
       ],
-      "explanation": "Model Monitoring solves computational problems efficiently."
+      "explanation": "Continuously tracks model performance, predictions, and system health in production to detect degradation and anomalies, enabling proactive maintenance and ensuring model reliability."
     },
     {
       "path": "semester_06/lecture_31_mlops/model_versioning/README.md",
       "name": "Model Versioning",
-      "problem": "Implements model versioning algorithm.",
-      "intuition": "Model Versioning is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Tracks and manages different versions of machine learning models, their code, data, hyperparameters, and artifacts, enabling reproducibility, rollback, and model lineage tracking.",
+      "intuition": "Like version control for code, but for models: track which model version was trained with which data and code, so you can reproduce results, compare versions, and roll back if a new version performs worse.",
+      "inputs": "Model artifacts (weights, architecture), training code, training data references, hyperparameters, metrics, metadata.",
+      "outputs": "Versioned model registry, model metadata database, APIs for model retrieval and deployment.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Register model: assign unique version identifier (e.g., v1.0.0, git commit hash).",
+        "Store model artifacts: save model weights, architecture definition, preprocessing code.",
+        "Record metadata: training data version, hyperparameters, training metrics, timestamp, author.",
+        "Tag models: mark as 'production', 'staging', 'experimental'.",
+        "Enable model retrieval: query by version, tag, or metadata to fetch specific model.",
+        "Track model lineage: link model to training data, code, and parent models (if fine-tuned).",
+        "Compare versions: side-by-side comparison of metrics, hyperparameters, data.",
+        "Enable rollback: promote previous version to production if new version fails."
       ],
-      "example": "Example: Model Versioning applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Image classifier: v1.0.0 trained on 100K images, accuracy 92% → v1.1.0 trained on 200K images, accuracy 94% → deploy v1.1.0 → performance drops → rollback to v1.0.0 → investigate issue.",
+      "time_complexity": "O(1) for version operations (metadata lookups), O(size) for storing/retrieving model artifacts.",
+      "space_complexity": "O(V·M) where V is number of versions, M is model size (storage for all versions).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Enables reproducibility and model comparison.",
+        "Allows safe experimentation with ability to rollback."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Requires storage for multiple model versions.",
+        "May need cleanup policies to manage storage costs."
       ],
       "alternatives": [
-        "Related algorithms"
+        "MLflow",
+        "Weights & Biases",
+        "DVC",
+        "Model Registry",
+        "Git LFS"
       ],
-      "explanation": "Model Versioning solves computational problems efficiently."
+      "explanation": "Tracks and manages model versions with associated metadata, code, and data, enabling reproducibility, comparison, and safe deployment with rollback capabilities."
     },
     {
       "path": "semester_06/lecture_32_distributed_ml/allreduce/README.md",
-      "name": "Allreduce",
-      "problem": "Implements allreduce algorithm.",
-      "intuition": "Allreduce is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "AllReduce",
+      "problem": "Efficiently aggregates (sums, averages, etc.) tensors across multiple workers in distributed training, ensuring all workers receive the same aggregated result for synchronous gradient updates.",
+      "intuition": "Like a team meeting where everyone shares their work and everyone leaves with the same summary: each worker computes gradients, they all share and combine them, then everyone gets the same averaged gradients to update their model.",
+      "inputs": "Local tensors/gradients from each worker, reduction operation (sum, mean, max), communication topology.",
+      "outputs": "Aggregated tensor (same value on all workers) ready for model update.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Each worker computes local gradients from its data shard.",
+        "Workers organize in communication topology (ring, tree, or mesh).",
+        "Perform reduction: combine tensors using specified operation (typically sum for gradients).",
+        "Ring AllReduce: workers pass data in ring, each accumulates partial sums, then distributes final result.",
+        "Tree AllReduce: reduce up tree (combine), then broadcast down tree (distribute).",
+        "All workers receive identical aggregated result.",
+        "Each worker updates model parameters using aggregated gradients.",
+        "Repeat for next iteration."
       ],
-      "example": "Example: Allreduce applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "4 workers training neural network: worker 0 has gradient [0.1, 0.2], worker 1 has [0.2, 0.3], worker 2 has [0.1, 0.1], worker 3 has [0.2, 0.2] → AllReduce (sum) → all workers get [0.6, 0.8] → divide by 4 (average) → update model with [0.15, 0.2].",
+      "time_complexity": "O(P·D) where P is number of workers, D is tensor size (communication cost depends on topology: ring O(P·D), tree O(log P·D)).",
+      "space_complexity": "O(D) per worker for storing local and aggregated tensors.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Efficient communication pattern for distributed training.",
+        "Ensures all workers have identical model state (synchronous)."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Synchronous: slowest worker determines speed (straggler problem).",
+        "Requires network bandwidth proportional to model size."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Parameter Server",
+        "Asynchronous SGD",
+        "Gradient Compression",
+        "Horovod, NCCL"
       ],
-      "explanation": "Allreduce solves computational problems efficiently."
+      "explanation": "Efficiently aggregates tensors across distributed workers using optimized communication patterns, ensuring all workers receive identical aggregated results for synchronous model updates."
     },
     {
       "path": "semester_06/lecture_32_distributed_ml/data_parallelism/README.md",
       "name": "Data Parallelism",
-      "problem": "Implements data parallelism algorithm.",
-      "intuition": "Data Parallelism is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Distributes training data across multiple workers, each training a copy of the model on different data shards, then synchronizes model updates to scale training horizontally.",
+      "intuition": "Like dividing a large book among multiple readers: each person reads a different chapter (data shard), learns from it, then everyone shares what they learned to create a combined understanding (model).",
+      "inputs": "Training dataset, model architecture, number of workers, synchronization method (AllReduce, Parameter Server).",
+      "outputs": "Trained model with parameters synchronized across all workers.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Split training data into shards (one per worker).",
+        "Each worker loads full model architecture and its data shard.",
+        "Each worker performs forward pass on its data batch, computes loss.",
+        "Each worker performs backward pass, computes gradients for its batch.",
+        "Synchronize gradients: use AllReduce or Parameter Server to aggregate gradients across workers.",
+        "Each worker updates model parameters using aggregated gradients (typically averaged).",
+        "Repeat for next batch: each worker processes next batch from its shard.",
+        "Continue until all workers have processed their data shards."
       ],
-      "example": "Example: Data Parallelism applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Image classification: 1M images, 4 workers → worker 0 gets images 0-250K, worker 1 gets 250K-500K, etc. → each trains same ResNet model → gradients aggregated every batch → after epoch, all workers have same updated model.",
+      "time_complexity": "O(T/P + C) where T is sequential training time, P is number of workers, C is communication overhead (near-linear speedup if C << T/P).",
+      "space_complexity": "O(M + D/P) per worker where M is model size, D is dataset size (each worker stores full model, 1/P of data).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Scales training with number of workers (near-linear speedup).",
+        "Simple to implement and widely supported."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Requires storing full model on each worker (memory constraint).",
+        "Communication overhead can limit speedup for large models."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Model Parallelism",
+        "Pipeline Parallelism",
+        "Hybrid Parallelism",
+        "Gradient Accumulation"
       ],
-      "explanation": "Data Parallelism solves computational problems efficiently."
+      "explanation": "Distributes data across workers, each training a full model copy on different shards, then synchronizes updates to achieve parallel training with near-linear speedup."
     },
     {
       "path": "semester_06/lecture_32_distributed_ml/federated_learning/README.md",
       "name": "Federated Learning",
-      "problem": "Implements federated learning algorithm.",
-      "intuition": "Federated Learning is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Trains machine learning models across decentralized devices (phones, edge devices) without centralizing raw data, preserving privacy while enabling collaborative learning.",
+      "intuition": "Like a study group where everyone learns from their own notes (local data) without sharing the notes themselves - only sharing what they learned (model updates), so privacy is preserved while everyone benefits from collective knowledge.",
+      "inputs": "Local datasets on distributed devices, initial global model, aggregation server, privacy parameters.",
+      "outputs": "Trained global model without exposing raw training data, updated local models on devices.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Server initializes global model and distributes to participating devices.",
+        "Each device trains model locally on its private data for several epochs.",
+        "Each device computes model updates (gradients or updated weights).",
+        "Devices send encrypted/compressed updates to server (not raw data).",
+        "Server aggregates updates from multiple devices (federated averaging: weighted average by data size).",
+        "Server updates global model with aggregated updates.",
+        "Server distributes updated global model to devices.",
+        "Repeat for multiple rounds until convergence."
       ],
-      "example": "Example: Federated Learning applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Mobile keyboard: 1000 phones each have local typing data → each trains language model locally → send model updates (not text) to server → server averages updates → distributes improved model → phones get better predictions without sharing personal text.",
+      "time_complexity": "O(R·(E·T_local + C)) where R is rounds, E is local epochs, T_local is local training time, C is communication cost (depends on network).",
+      "space_complexity": "O(M) per device for model, O(D_local) for local data, O(M·N) on server for aggregating N device updates.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Preserves data privacy (raw data never leaves devices).",
+        "Enables training on sensitive or distributed data."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Communication overhead and device heterogeneity challenges.",
+        "May require differential privacy or secure aggregation for strong privacy guarantees."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Centralized Training",
+        "Split Learning",
+        "Secure Multi-Party Computation",
+        "Federated Averaging (FedAvg)"
       ],
-      "explanation": "Federated Learning solves computational problems efficiently."
+      "explanation": "Trains models across decentralized devices by aggregating local updates without centralizing raw data, enabling privacy-preserving collaborative learning."
     },
     {
       "path": "semester_06/lecture_32_distributed_ml/model_parallelism/README.md",
