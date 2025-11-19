@@ -1368,6 +1368,167 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Matrix Exponentiation", "Closed-form (Binet) Formula", "Fast Doubling Method"],
         "explanation": "Replace naive recursion with iterative accumulation while caching prior values so each Fibonacci number is computed exactly once."
+    },
+    "semester_01/lecture_12_string_algorithms/kmp/README.md": {
+        "name": "Knuth-Morris-Pratt (KMP)",
+        "problem": "Finds all occurrences of a pattern string in a text string efficiently by avoiding redundant character comparisons.",
+        "intuition": "When a mismatch occurs, use knowledge of already-matched characters to skip ahead intelligently instead of restarting from scratch.",
+        "inputs": "Text string T (length n) and pattern string P (length m).",
+        "outputs": "List of starting indices where P appears in T.",
+        "steps": [
+            "Preprocess pattern P to build a failure function (longest proper prefix that is also a suffix).",
+            "Initialize text pointer i=0 and pattern pointer j=0.",
+            "If T[i] == P[j], advance both pointers.",
+            "If mismatch: if j>0, set j = failure[j-1] (don't move i); else advance i.",
+            "If j reaches m, found a match at i-m; reset j using failure function and continue."
+        ],
+        "example": "Text \"ABABDABACDABABC\", pattern \"ABABC\": failure=[0,0,1,2,0]. Match at index 10.",
+        "time_complexity": "O(n+m) - linear in combined length.",
+        "space_complexity": "O(m) for failure function.",
+        "strengths": [
+            "Linear time complexity, no backtracking in text.",
+            "Efficient for multiple pattern searches."
+        ],
+        "weaknesses": [
+            "Requires preprocessing step.",
+            "More complex than naive string matching."
+        ],
+        "alternatives": ["Boyer-Moore", "Rabin-Karp", "Aho-Corasick"],
+        "explanation": "Precompute where to resume matching after a failure, so the text pointer never moves backward."
+    },
+    "semester_03/lecture_14_string_algorithms/boyer_moore/README.md": {
+        "name": "Boyer-Moore",
+        "problem": "Finds pattern occurrences in text by scanning from right to left and skipping ahead when mismatches occur.",
+        "intuition": "Start matching from the end of the pattern; when a mismatch happens, use two heuristics to jump ahead as far as possible.",
+        "inputs": "Text string T (length n) and pattern string P (length m).",
+        "outputs": "All starting positions where P occurs in T.",
+        "steps": [
+            "Preprocess P to build bad character table (rightmost occurrence of each char).",
+            "Preprocess P to build good suffix table (longest suffix that matches a prefix).",
+            "Align P with start of T, compare from right to left.",
+            "On mismatch: skip by max(bad character shift, good suffix shift).",
+            "Continue until pattern slides past end of text."
+        ],
+        "example": "Text \"THIS IS A TEST\", pattern \"TEST\": bad char 'T' at end allows skipping ahead.",
+        "time_complexity": "O(n/m) best case, O(n·m) worst case, typically sub-linear in practice.",
+        "space_complexity": "O(m + |alphabet|) for preprocessing tables.",
+        "strengths": [
+            "Often faster than linear algorithms in practice due to large skips.",
+            "Excellent for long patterns and large alphabets."
+        ],
+        "weaknesses": [
+            "Worst-case quadratic time possible.",
+            "More complex preprocessing than KMP."
+        ],
+        "alternatives": ["KMP", "Rabin-Karp", "Sunday Algorithm"],
+        "explanation": "Match backwards and use character mismatches to skip ahead intelligently, often faster than forward matching."
+    },
+    "semester_03/lecture_14_string_algorithms/rabin_karp/README.md": {
+        "name": "Rabin-Karp",
+        "problem": "Finds pattern occurrences using rolling hash to quickly compare pattern hash with text window hashes.",
+        "intuition": "Hash the pattern once, then slide a window through text and compare hashes; only do full comparison when hashes match.",
+        "inputs": "Text string T (length n) and pattern string P (length m).",
+        "outputs": "All starting indices where P appears in T.",
+        "steps": [
+            "Compute hash of pattern P.",
+            "Compute hash of first m characters of text.",
+            "If hashes match, verify with character-by-character comparison.",
+            "Roll hash forward: remove leftmost char, add rightmost char, update hash.",
+            "Repeat until end of text."
+        ],
+        "example": "Text \"GEEKS FOR GEEKS\", pattern \"GEEK\": hash matches at indices 0 and 10.",
+        "time_complexity": "O(n+m) average, O(n·m) worst if many hash collisions.",
+        "space_complexity": "O(1) extra space (excluding hash storage).",
+        "strengths": [
+            "Simple to implement with rolling hash.",
+            "Efficient for multiple pattern searches with same length."
+        ],
+        "weaknesses": [
+            "Worst-case performance degrades with many collisions.",
+            "Requires careful hash function selection."
+        ],
+        "alternatives": ["KMP", "Boyer-Moore", "Finite Automaton"],
+        "explanation": "Use hashing to quickly filter out non-matches; only verify when hash values agree."
+    },
+    "semester_01/lecture_03_specialized_sorting/bucket_sort/README.md": {
+        "name": "Bucket Sort",
+        "problem": "Sorts uniformly distributed numbers by distributing them into buckets, sorting each bucket, then concatenating.",
+        "intuition": "Like sorting mail into post office boxes: put each item in the right bucket, sort buckets individually, then combine.",
+        "inputs": "Array of numbers uniformly distributed over a known range [min, max].",
+        "outputs": "Sorted array.",
+        "steps": [
+            "Create n empty buckets (or fewer, based on range).",
+            "Distribute array elements into buckets: bucket[i] = floor(n * (arr[i] - min) / (max - min)).",
+            "Sort each bucket individually (using insertion sort or another algorithm).",
+            "Concatenate all buckets in order."
+        ],
+        "example": "[0.42, 0.32, 0.33, 0.52, 0.37, 0.47] → buckets: [0.32,0.33,0.37], [0.42,0.47], [0.52] → sorted.",
+        "time_complexity": "O(n+k) average when uniformly distributed, O(n²) worst if all items in one bucket.",
+        "space_complexity": "O(n+k) for buckets.",
+        "strengths": [
+            "Linear average time for uniform distributions.",
+            "Stable if bucket sorting is stable."
+        ],
+        "weaknesses": [
+            "Requires uniform distribution for efficiency.",
+            "Extra space for buckets."
+        ],
+        "alternatives": ["Counting Sort", "Radix Sort", "Quick Sort"],
+        "explanation": "Divide the range into buckets, scatter items into appropriate buckets, sort buckets, then merge them back."
+    },
+    "semester_01/lecture_03_specialized_sorting/counting_sort/README.md": {
+        "name": "Counting Sort",
+        "problem": "Sorts integers in a small range by counting occurrences of each value, then placing them in order.",
+        "intuition": "Count how many times each number appears, then write them out in order based on the counts.",
+        "inputs": "Array of integers with range [0, k] where k is small (typically k = O(n)).",
+        "outputs": "Sorted array.",
+        "steps": [
+            "Create count array of size k+1, initialize to zero.",
+            "Count occurrences: for each element, increment count[element].",
+            "Compute cumulative counts: count[i] += count[i-1] for i=1..k.",
+            "Build output array: place each element at position count[element]-1, decrement count[element].",
+            "Copy output back to original array if needed."
+        ],
+        "example": "[4,2,2,8,3,3,1] → counts: [0,1,2,2,1,0,0,0,1] → cumulative: [0,1,3,5,6,6,6,6,7] → sorted: [1,2,2,3,3,4,8].",
+        "time_complexity": "O(n+k) where k is the range size.",
+        "space_complexity": "O(n+k) for count and output arrays.",
+        "strengths": [
+            "Linear time when range is small.",
+            "Stable sorting algorithm."
+        ],
+        "weaknesses": [
+            "Only works for integers in a limited range.",
+            "Space overhead for count array."
+        ],
+        "alternatives": ["Radix Sort", "Bucket Sort", "Pigeonhole Sort"],
+        "explanation": "Count how many of each value exist, then write them out in order based on those counts."
+    },
+    "semester_01/lecture_03_specialized_sorting/radix_sort/README.md": {
+        "name": "Radix Sort",
+        "problem": "Sorts integers or fixed-length strings by processing digits/characters from least to most significant position.",
+        "intuition": "Sort by ones place, then tens, then hundreds—each pass makes the array more sorted until fully ordered.",
+        "inputs": "Array of integers or fixed-length strings.",
+        "outputs": "Sorted array.",
+        "steps": [
+            "Find maximum value to determine number of digits.",
+            "For each digit position from least to most significant:",
+            "  Use counting sort (or stable sort) to sort by current digit.",
+            "  Update array with sorted order.",
+            "After processing all digits, array is fully sorted."
+        ],
+        "example": "[170, 45, 75, 90, 2, 802, 24, 66]: sort by ones → [170,90,2,802,24,45,75,66]; by tens → [2,802,24,45,66,170,75,90]; by hundreds → [2,24,45,66,75,90,170,802].",
+        "time_complexity": "O(d·(n+k)) where d is number of digits, k is radix (usually 10).",
+        "space_complexity": "O(n+k) for counting sort auxiliary arrays.",
+        "strengths": [
+            "Linear time for fixed-width integers.",
+            "Stable and deterministic."
+        ],
+        "weaknesses": [
+            "Requires fixed-width keys or padding.",
+            "Not in-place; needs auxiliary space."
+        ],
+        "alternatives": ["Counting Sort", "Bucket Sort", "Quick Sort"],
+        "explanation": "Sort digit by digit from right to left, using a stable sort at each position to maintain relative order."
     }
 }
 

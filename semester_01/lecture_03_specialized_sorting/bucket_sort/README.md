@@ -4,40 +4,40 @@
    Bucket Sort
 
 2. **What problem does it solve? (1 sentence)**  
-   Sorts uniformly distributed real numbers by scattering them into buckets and sorting each bucket.
+   Sorts uniformly distributed numbers by distributing them into buckets, sorting each bucket, then concatenating.
 
 3. **Intuition (plain-language explanation)**  
-   Partition the [0,1) range into buckets so each holds a small local list that can be sorted quickly.
+   Like sorting mail into post office boxes: put each item in the right bucket, sort buckets individually, then combine.
 
 4. **Inputs & Outputs**  
-   - Input: List of real numbers typically normalized to [0, 1).  
-   - Output: Sorted list of those numbers.
+   - Input: Array of numbers uniformly distributed over a known range [min, max].  
+   - Output: Sorted array.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Create k empty buckets.
-2. Distribute each element into the appropriate bucket based on value.
-3. Sort individual buckets (often using insertion sort).
-4. Concatenate the buckets in order.
+1. Create n empty buckets (or fewer, based on range).
+2. Distribute array elements into buckets: bucket[i] = floor(n * (arr[i] - min) / (max - min)).
+3. Sort each bucket individually (using insertion sort or another algorithm).
+4. Concatenate all buckets in order.
 
 6. **Tiny example (hand-simulated)**  
-   [0.42, 0.32, 0.23] ⇒ bucket 0.2–0.3 gets [0.23], 0.3–0.4 gets [0.32], 0.4–0.5 gets [0.42] ⇒ concatenated order [0.23, 0.32, 0.42].
+   [0.42, 0.32, 0.33, 0.52, 0.37, 0.47] → buckets: [0.32,0.33,0.37], [0.42,0.47], [0.52] → sorted.
 
 7. **Time & Space Complexity**  
-   - Time: Average O(n) when distribution is uniform; worst O(n²) if items clump.  
-   - Space: O(n + k) for bucket storage.
+   - Time: O(n+k) average when uniformly distributed, O(n²) worst if all items in one bucket.  
+   - Space: O(n+k) for buckets.
 
 8. **Strengths**  
-- Near-linear when values spread evenly.
-- Buckets can be processed in parallel.
+- Linear average time for uniform distributions.
+- Stable if bucket sorting is stable.
 
 9. **Weaknesses / limitations**  
-- Performance degrades on skewed data.
-- Requires knowledge of value distribution.
+- Requires uniform distribution for efficiency.
+- Extra space for buckets.
 
 10. **Compare with alternatives**  
-    Alternatives: Radix Sort, Counting Sort, Comparison Sorts
+    Alternatives: Counting Sort, Radix Sort, Quick Sort
 
 11. **30-second explanation (your own words)**  
-    Exploit the distribution shape so each bucket is tiny, making local sorts trivial.
+    Divide the range into buckets, scatter items into appropriate buckets, sort buckets, then merge them back.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
