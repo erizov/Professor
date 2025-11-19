@@ -4,14 +4,14 @@
    Conditional Execution in CI/CD
 
 2. **What problem does it solve? (1 sentence)**  
-   Enables CI/CD pipelines to execute steps conditionally based on conditions like branch, file changes, environment, or custom logic, making pipelines more efficient and flexible.
+Enables CI/CD pipelines to execute steps conditionally based on conditions like branch, file changes, environment, or custom logic, making pipelines more efficient and flexible.
 
 3. **Intuition (plain-language explanation)**  
-   Like conditional statements: Conditional Execution in CI/CD is like if-else statements in code - you only run certain steps if conditions are met (like 'only run tests on main branch' or 'only deploy if tests pass') - this makes pipelines smarter and more efficient, skipping unnecessary steps and adapting to different scenarios.
+Like conditional statements: Conditional Execution in CI/CD is like if-else statements in code - you only run certain steps if conditions are met (like 'only run tests on main branch' or 'only deploy if tests pass') - this makes pipelines smarter and more efficient, skipping unnecessary steps and adapting to different scenarios.
 
 4. **Inputs & Outputs**  
    - Input: Pipeline steps, conditions, branch information, file changes, environment variables, custom logic.  
-   - Output: Conditionally executed steps, efficient pipelines, flexible workflows, optimized builds.
+- Output: Conditionally executed steps, efficient pipelines, flexible workflows, optimized builds.
 
 5. **Step-by-step description (5–10 lines max)**  
 1. Define conditions: define conditions for step execution (branch, file paths, environment).
@@ -46,6 +46,6 @@
     Alternatives: Always Execute, Manual Triggers, Separate Pipelines, Matrix Builds
 
 11. **30-second explanation (your own words)**  
-    Enables CI/CD pipelines to execute steps conditionally based on conditions like branch, file changes, environment, or custom logic, making pipelines more efficient and flexible.
+Enables CI/CD pipelines to execute steps conditionally based on conditions like branch, file changes, environment, or custom logic, making pipelines more efficient and flexible.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

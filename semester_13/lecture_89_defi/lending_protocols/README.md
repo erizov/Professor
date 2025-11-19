@@ -7,7 +7,7 @@
    Implements decentralized lending protocols that enable users to lend and borrow cryptocurrencies without intermediaries, using smart contracts to manage loans, collateral, and interest rates algorithmically.
 
 3. **Intuition (plain-language explanation)**  
-   Like banks but decentralized: Lending Protocols are like banks but on blockchain - you deposit crypto (like depositing money) to earn interest, or borrow crypto (like taking loans) by providing collateral - just as banks facilitate lending, DeFi lending protocols facilitate decentralized lending.
+Like banks but decentralized: Lending Protocols are like banks but on blockchain - you deposit crypto (like depositing money) to earn interest, or borrow crypto (like taking loans) by providing collateral - just as banks facilitate lending, DeFi lending protocols facilitate decentralized lending.
 
 4. **Inputs & Outputs**  
    - Input: Deposits, borrows, collateral, interest rates, liquidation parameters, loan terms.  

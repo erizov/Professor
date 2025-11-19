@@ -4,10 +4,10 @@
    A/B Testing
 
 2. **What problem does it solve? (1 sentence)**  
-   Compares two or more variants (A, B, etc.) of a model, feature, or system to determine which performs better using statistical hypothesis testing, enabling data-driven decision making.
+Compares two or more variants (A, B, etc.) of a model, feature, or system to determine which performs better using statistical hypothesis testing, enabling data-driven decision making.
 
 3. **Intuition (plain-language explanation)**  
-   Like a scientific experiment: split users into groups, show each group a different version (A or B), measure outcomes, and use statistics to determine which version is truly better, not just due to random chance.
+Like a scientific experiment: split users into groups, show each group a different version (A or B), measure outcomes, and use statistics to determine which version is truly better, not just due to random chance.
 
 4. **Inputs & Outputs**  
    - Input: User traffic, variant assignments (A/B), success metrics (conversion rate, click-through rate, etc.), sample size, significance level.  

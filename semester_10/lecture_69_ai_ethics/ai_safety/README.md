@@ -7,7 +7,7 @@
    Ensures AI systems operate safely, reliably, and aligned with human values, preventing harmful behaviors, unintended consequences, and ensuring AI systems remain under human control.
 
 3. **Intuition (plain-language explanation)**  
-   Like safety systems for AI: AI Safety is like safety systems for powerful machines - you add safeguards (safety mechanisms) to prevent accidents (harmful behaviors), ensure the machine does what you want (alignment), and can be stopped if needed (control) - just as safety systems protect people from machine accidents, AI safety protects people from AI accidents.
+Like safety systems for AI: AI Safety is like safety systems for powerful machines - you add safeguards (safety mechanisms) to prevent accidents (harmful behaviors), ensure the machine does what you want (alignment), and can be stopped if needed (control) - just as safety systems protect people from machine accidents, AI safety protects people from AI accidents.
 
 4. **Inputs & Outputs**  
    - Input: AI systems, safety requirements, alignment goals, control mechanisms, monitoring systems, human oversight.  

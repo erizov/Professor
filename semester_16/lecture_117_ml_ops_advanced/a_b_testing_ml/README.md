@@ -4,10 +4,10 @@
    A B Testing Ml
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements a b testing ml algorithm.
+Implements a b testing ml algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   A B Testing Ml is a fundamental algorithm in computer science.
+A B Testing Ml is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

@@ -46,6 +46,5 @@
     Alternatives: Tool-Focused, Process-Focused, Manual Workflows, Developer Portals
 
 11. **30-second explanation (your own words)**  
-    Optimizes the experience of developers using platforms and tools by reducing friction, improving productivity, and providing intuitive interfaces and workflows.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

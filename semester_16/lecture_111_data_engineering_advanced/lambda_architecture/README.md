@@ -4,10 +4,10 @@
    Lambda Architecture
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements lambda architecture algorithm.
+Implements lambda architecture algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Lambda Architecture is a fundamental algorithm in computer science.
+Lambda Architecture is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

@@ -40,6 +40,6 @@
     Alternatives: ResNet, MobileNet, EfficientNet, AlexNet
 
 11. **30-second explanation (your own words)**  
-    Uses deep stacks of small 3×3 convolutions to build effective CNNs, demonstrating that depth is crucial for performance while maintaining architectural simplicity.
+Uses deep stacks of small 3×3 convolutions to build effective CNNs, demonstrating that depth is crucial for performance while maintaining architectural simplicity.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

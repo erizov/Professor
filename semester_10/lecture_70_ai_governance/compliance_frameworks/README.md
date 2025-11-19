@@ -46,6 +46,5 @@
     Alternatives: No Compliance Framework, Ad-Hoc Compliance, Industry Standards, Custom Frameworks
 
 11. **30-second explanation (your own words)**  
-    Ensures AI systems comply with regulatory requirements, industry standards, and ethical guidelines through structured frameworks, policies, and controls.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

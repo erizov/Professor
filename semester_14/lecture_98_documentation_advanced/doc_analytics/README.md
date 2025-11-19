@@ -4,10 +4,10 @@
    Doc Analytics
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements doc analytics algorithm.
+Implements doc analytics algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Doc Analytics is a fundamental algorithm in computer science.
+Doc Analytics is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

@@ -4,7 +4,7 @@
    Quantum Simulation Hybrid
 
 2. **What problem does it solve? (1 sentence)**  
-   Combines quantum simulation with classical simulation, using quantum computers for quantum parts of systems while classical computers simulate classical parts, enabling efficient simulation of hybrid quantum-classical systems.
+Combines quantum simulation with classical simulation, using quantum computers for quantum parts of systems while classical computers simulate classical parts, enabling efficient simulation of hybrid quantum-classical systems.
 
 3. **Intuition (plain-language explanation)**  
    Like hybrid simulation: Quantum Simulation Hybrid combines quantum and classical simulation - you simulate quantum parts on quantum computers, and classical parts on classical computers - just as hybrid approaches combine strengths, quantum simulation hybrid combines quantum and classical simulation strengths.
@@ -46,6 +46,6 @@
     Alternatives: Pure Quantum Simulation, Pure Classical Simulation, Approximate Methods, Hybrid Frameworks
 
 11. **30-second explanation (your own words)**  
-    Combines quantum simulation with classical simulation, using quantum computers for quantum parts of systems while classical computers simulate classical parts, enabling efficient simulation of hybrid quantum-classical systems.
+Combines quantum simulation with classical simulation, using quantum computers for quantum parts of systems while classical computers simulate classical parts, enabling efficient simulation of hybrid quantum-classical systems.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

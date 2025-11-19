@@ -10,7 +10,7 @@
    Like a smart gambler at slot machines: try different machines (models) to see which pays more, but gradually play the winning machine more often while still occasionally trying others - automatically finds the best model and allocates traffic accordingly.
 
 4. **Inputs & Outputs**  
-   - Input: Multiple model variants (arms), traffic allocation algorithm (ε-greedy, UCB, Thompson Sampling), reward metric (accuracy, revenue, engagement), exploration rate.  
+- Input: Multiple model variants (arms), traffic allocation algorithm (ε-greedy, UCB, Thompson Sampling), reward metric (accuracy, revenue, engagement), exploration rate.
    - Output: Dynamic traffic allocation across models, with better models receiving more traffic over time.
 
 5. **Step-by-step description (5–10 lines max)**  

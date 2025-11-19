@@ -4,7 +4,7 @@
    Merkle Trees
 
 2. **What problem does it solve? (1 sentence)**  
-   Efficiently verifies data integrity and enables efficient proofs that specific transactions are included in a block without downloading entire block, reducing storage and bandwidth requirements.
+Efficiently verifies data integrity and enables efficient proofs that specific transactions are included in a block without downloading entire block, reducing storage and bandwidth requirements.
 
 3. **Intuition (plain-language explanation)**  
    Like a family tree for data: transactions are leaves, pairs are hashed together to form parents, parents are hashed to form grandparents, until you get one root hash - to prove a transaction exists, you only need the root and a few 'sibling' hashes along the path (Merkle proof), not all transactions.
@@ -43,6 +43,6 @@
     Alternatives: Full Block Verification, Hash Lists, Merkle Patricia Trees, Verkle Trees
 
 11. **30-second explanation (your own words)**  
-    Efficiently verifies data integrity and enables efficient proofs that specific transactions are included in a block without downloading entire block, reducing storage and bandwidth requirements.
+Efficiently verifies data integrity and enables efficient proofs that specific transactions are included in a block without downloading entire block, reducing storage and bandwidth requirements.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

@@ -39,6 +39,5 @@
     Alternatives: Radix Sort, Bucket Sort, Pigeonhole Sort
 
 11. **30-second explanation (your own words)**  
-    Count how many of each value exist, then write them out in order based on those counts.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

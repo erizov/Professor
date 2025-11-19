@@ -4,10 +4,10 @@
    Automated Documentation
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements automated documentation algorithm.
+Implements automated documentation algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Automated Documentation is a fundamental algorithm in computer science.
+Automated Documentation is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

@@ -4,10 +4,10 @@
    Data Discovery
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements data discovery algorithm.
+Implements data discovery algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Data Discovery is a fundamental algorithm in computer science.
+Data Discovery is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

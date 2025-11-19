@@ -4,10 +4,10 @@
    Model Serving Advanced
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements model serving advanced algorithm.
+Implements model serving advanced algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Model Serving Advanced is a fundamental algorithm in computer science.
+Model Serving Advanced is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

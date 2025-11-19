@@ -41,7 +41,7 @@
 - Recovery cost: aborting processes may lose work.
 
 10. **Compare with alternatives**  
-    Alternatives: Deadlock Prevention, Deadlock Avoidance, Timeout-based Detection, No Detection (Ostrich Algorithm)
+Alternatives: Deadlock Prevention, Deadlock Avoidance, Timeout-based Detection, No Detection (Ostrich Algorithm)
 
 11. **30-second explanation (your own words)**  
     Identifies deadlock situations where multiple processes wait indefinitely for resources held by each other, enabling system recovery through cycle detection in resource allocation graphs.

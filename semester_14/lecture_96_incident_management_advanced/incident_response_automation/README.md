@@ -4,10 +4,10 @@
    Incident Response Automation
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements incident response automation algorithm.
+Implements incident response automation algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Incident Response Automation is a fundamental algorithm in computer science.
+Incident Response Automation is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

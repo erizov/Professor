@@ -4,10 +4,10 @@
    AI-Powered Ticket Routing
 
 2. **What problem does it solve? (1 sentence)**  
-   Automatically routes support tickets to the most appropriate agent or team using AI to analyze ticket content, agent expertise, workload, and historical performance for optimal assignment.
+Automatically routes support tickets to the most appropriate agent or team using AI to analyze ticket content, agent expertise, workload, and historical performance for optimal assignment.
 
 3. **Intuition (plain-language explanation)**  
-   Like a smart dispatcher: AI ticket routing is like a smart dispatcher - you analyze the request (ticket content), know who's available (agent workload), match expertise (agent skills), and route efficiently (optimal assignment) - just as a dispatcher routes calls, AI routes tickets to the right person.
+Like a smart dispatcher: AI ticket routing is like a smart dispatcher - you analyze the request (ticket content), know who's available (agent workload), match expertise (agent skills), and route efficiently (optimal assignment) - just as a dispatcher routes calls, AI routes tickets to the right person.
 
 4. **Inputs & Outputs**  
    - Input: Support tickets, ticket content, agent profiles, agent workload, historical performance, routing rules, priority levels.  

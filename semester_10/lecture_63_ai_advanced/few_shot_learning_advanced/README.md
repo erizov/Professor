@@ -11,7 +11,7 @@
 
 4. **Inputs & Outputs**  
    - Input: Few examples (1-5), pre-trained model, task description, learning strategy, support set.  
-   - Output: Learned task, adapted model, few-shot predictions, efficient learning, data-efficient system.
+- Output: Learned task, adapted model, few-shot predictions, efficient learning, data-efficient system.
 
 5. **Step-by-step description (5–10 lines max)**  
 1. Pre-train: pre-train model on diverse tasks (meta-learning setup).

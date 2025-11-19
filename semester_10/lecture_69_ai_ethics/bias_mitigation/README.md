@@ -7,7 +7,7 @@
    Identifies and reduces bias in machine learning models and datasets, ensuring fair and equitable AI systems that don't discriminate against protected groups or perpetuate harmful stereotypes.
 
 3. **Intuition (plain-language explanation)**  
-   Like removing bias from decisions: Bias Mitigation is like removing bias from human decisions - you identify where bias exists (in data, models), understand how it affects outcomes (unfair treatment), and fix it (mitigation techniques) - just as we work to remove human bias, we work to remove AI bias to ensure fairness.
+Like removing bias from decisions: Bias Mitigation is like removing bias from human decisions - you identify where bias exists (in data, models), understand how it affects outcomes (unfair treatment), and fix it (mitigation techniques) - just as we work to remove human bias, we work to remove AI bias to ensure fairness.
 
 4. **Inputs & Outputs**  
    - Input: Training data, models, bias metrics, fairness criteria, demographic data, mitigation techniques.  

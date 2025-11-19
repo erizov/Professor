@@ -40,6 +40,6 @@
     Alternatives: Training from Scratch, Multi-Task Learning, Domain Adaptation
 
 11. **30-second explanation (your own words)**  
-    Leverages knowledge from a source task to improve learning on a target task, enabling effective learning with limited data by transferring learned representations.
+Leverages knowledge from a source task to improve learning on a target task, enabling effective learning with limited data by transferring learned representations.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

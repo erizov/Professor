@@ -7,7 +7,7 @@
    Uses Long Short-Term Memory networks to model temporal dependencies in time series data, capturing long-range patterns and non-linear relationships for forecasting.
 
 3. **Intuition (plain-language explanation)**  
-   Like a memory system that remembers important patterns from the past: LSTM selectively remembers and forgets information, allowing it to capture both short-term fluctuations and long-term trends in time series.
+Like a memory system that remembers important patterns from the past: LSTM selectively remembers and forgets information, allowing it to capture both short-term fluctuations and long-term trends in time series.
 
 4. **Inputs & Outputs**  
    - Input: Time series data, sequence length (lookback window), LSTM architecture, number of layers.  

@@ -43,6 +43,6 @@
     Alternatives: ONNX Runtime Mobile, CoreML, TensorFlow Mobile, Native Mobile ML
 
 11. **30-second explanation (your own words)**  
-    Provides lightweight TensorFlow deployment framework for mobile and edge devices, with optimized inference runtime and model conversion tools enabling efficient on-device ML.
+Provides lightweight TensorFlow deployment framework for mobile and edge devices, with optimized inference runtime and model conversion tools enabling efficient on-device ML.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

@@ -34,7 +34,6 @@
 
 8. **Strengths**  
 - Anonymity: provides signer anonymity.
-- Untraceability: cannot trace to specific signer.
 - Privacy: enables private transactions.
 
 9. **Weaknesses / limitations**  

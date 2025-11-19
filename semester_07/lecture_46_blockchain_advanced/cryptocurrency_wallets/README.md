@@ -44,6 +44,5 @@
     Alternatives: Hardware Wallets, Software Wallets, Paper Wallets, Custodial Wallets, Multi-signature Wallets
 
 11. **30-second explanation (your own words)**  
-    Manages cryptographic keys and enables users to send, receive, and store cryptocurrencies securely, providing interface between users and blockchain networks.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

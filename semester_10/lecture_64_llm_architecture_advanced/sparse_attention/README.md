@@ -4,14 +4,14 @@
    Sparse Attention
 
 2. **What problem does it solve? (1 sentence)**  
-   Reduces the quadratic complexity of attention mechanisms by computing attention only over a sparse subset of positions, enabling efficient processing of long sequences while maintaining model performance.
+Reduces the quadratic complexity of attention mechanisms by computing attention only over a sparse subset of positions, enabling efficient processing of long sequences while maintaining model performance.
 
 3. **Intuition (plain-language explanation)**  
    Like selective reading: sparse attention is like reading a book but only paying close attention to important pages - instead of reading every word carefully (full attention, O(n²)), you skim most pages and focus on key sections (sparse attention, O(n√n) or O(n log n)) - you still understand the book, but much faster, and you can handle much longer books (sequences) this way.
 
 4. **Inputs & Outputs**  
    - Input: Query, key, value matrices, attention pattern, sparsity strategy, sequence length.  
-   - Output: Sparse attention output, efficient computation, reduced memory, long sequence processing.
+- Output: Sparse attention output, efficient computation, reduced memory, long sequence processing.
 
 5. **Step-by-step description (5–10 lines max)**  
 1. Choose pattern: select sparse attention pattern (local, strided, random, learned).
@@ -46,6 +46,6 @@
     Alternatives: Full Attention, Local Attention, Sliding Window, Linear Attention
 
 11. **30-second explanation (your own words)**  
-    Reduces the quadratic complexity of attention mechanisms by computing attention only over a sparse subset of positions, enabling efficient processing of long sequences while maintaining model performance.
+Reduces the quadratic complexity of attention mechanisms by computing attention only over a sparse subset of positions, enabling efficient processing of long sequences while maintaining model performance.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

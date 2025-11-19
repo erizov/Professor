@@ -1,7 +1,7 @@
 # Readers-Writers Problem
 
 1. **Name of Algorithm**  
-   Readers-Writers Problem
+Readers-Writers Problem
 
 2. **What problem does it solve? (1 sentence)**  
    Manages concurrent access to shared resources allowing many readers or one writer at a time.

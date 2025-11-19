@@ -4,10 +4,10 @@
    Ml Pipelines Advanced
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements ml pipelines advanced algorithm.
+Implements ml pipelines advanced algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Ml Pipelines Advanced is a fundamental algorithm in computer science.
+Ml Pipelines Advanced is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

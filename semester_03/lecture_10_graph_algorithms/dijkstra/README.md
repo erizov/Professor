@@ -1,7 +1,7 @@
 # Dijkstra's Algorithm
 
 1. **Name of Algorithm**  
-   Dijkstra's Algorithm
+Dijkstra's Algorithm
 
 2. **What problem does it solve? (1 sentence)**  
    Finds shortest paths from a source to all vertices in a weighted graph with non-negative edge weights.

@@ -4,10 +4,10 @@
    Real Time Dashboards
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements real time dashboards algorithm.
+Implements real time dashboards algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Real Time Dashboards is a fundamental algorithm in computer science.
+Real Time Dashboards is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

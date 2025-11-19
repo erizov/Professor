@@ -7,7 +7,7 @@
    Provides reusable, parameterized pipeline templates that can be shared across projects, standardizing CI/CD workflows and reducing duplication while allowing customization.
 
 3. **Intuition (plain-language explanation)**  
-   Like recipe templates: Pipeline Templates are like recipe templates - you have a basic recipe (template) that works for many dishes (projects), and you customize it with different ingredients (parameters) - just as recipe templates save time and ensure consistency, pipeline templates save time and ensure consistent CI/CD practices across projects.
+Like recipe templates: Pipeline Templates are like recipe templates - you have a basic recipe (template) that works for many dishes (projects), and you customize it with different ingredients (parameters) - just as recipe templates save time and ensure consistency, pipeline templates save time and ensure consistent CI/CD practices across projects.
 
 4. **Inputs & Outputs**  
    - Input: Template definitions, parameters, project context, customization options, template library.  

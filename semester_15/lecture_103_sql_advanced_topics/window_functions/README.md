@@ -4,10 +4,10 @@
    Window Functions
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements window functions algorithm.
+Implements window functions algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Window Functions is a fundamental algorithm in computer science.
+Window Functions is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

@@ -7,7 +7,7 @@
    Establishes policies and processes for managing AI models throughout their lifecycle, ensuring model quality, compliance, and responsible deployment.
 
 3. **Intuition (plain-language explanation)**  
-   Like quality control: Model Governance is like quality control for products - it defines standards (model quality, ethics), processes (development, deployment), and checks (validation, monitoring) to ensure models meet requirements - just as quality control ensures products are safe and meet standards, model governance ensures AI models are ethical, compliant, and perform well.
+Like quality control: Model Governance is like quality control for products - it defines standards (model quality, ethics), processes (development, deployment), and checks (validation, monitoring) to ensure models meet requirements - just as quality control ensures products are safe and meet standards, model governance ensures AI models are ethical, compliant, and perform well.
 
 4. **Inputs & Outputs**  
    - Input: AI models, governance policies, quality standards, compliance requirements, lifecycle processes.  
@@ -46,6 +46,5 @@
     Alternatives: No Governance, Ad-Hoc Model Management, Lightweight Governance, Heavy Governance
 
 11. **30-second explanation (your own words)**  
-    Establishes policies and processes for managing AI models throughout their lifecycle, ensuring model quality, compliance, and responsible deployment.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

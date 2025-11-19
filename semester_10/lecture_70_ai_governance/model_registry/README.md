@@ -46,6 +46,5 @@
     Alternatives: File System Storage, Version Control, Database Storage, Cloud Storage
 
 11. **30-second explanation (your own words)**  
-    Provides a centralized repository for storing, versioning, and managing AI models, enabling model discovery, tracking, and lifecycle management.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

@@ -4,10 +4,10 @@
    Data Mesh
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements data mesh algorithm.
+Implements data mesh algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Data Mesh is a fundamental algorithm in computer science.
+Data Mesh is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

@@ -44,6 +44,5 @@
     Alternatives: Manual Infrastructure Management, Infrastructure as Code (without GitOps), Configuration Management Tools, Cloud Console Management
 
 11. **30-second explanation (your own words)**  
-    Uses Git as single source of truth for infrastructure and application deployments, enabling declarative, version-controlled, and automated infrastructure management.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

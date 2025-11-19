@@ -22,7 +22,7 @@
 6. Persist leader metadata to avoid split-brain where possible.
 
 6. **Tiny example (hand-simulated)**  
-   Bully algorithm: nodes have unique IDs; highest ID node alive becomes coordinator. ZooKeeper/Etcd use Raft to elect leader for log replication.
+Bully algorithm: nodes have unique IDs; highest ID node alive becomes coordinator. ZooKeeper/Etcd use Raft to elect leader for log replication.
 
 7. **Time & Space Complexity**  
    - Time: Bully algorithm worst-case O(n^2) messages; consensus-based elections ~O(n).  

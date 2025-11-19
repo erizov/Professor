@@ -4,10 +4,10 @@
    Multi Tenant Databases
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements multi tenant databases algorithm.
+Implements multi tenant databases algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Multi Tenant Databases is a fundamental algorithm in computer science.
+Multi Tenant Databases is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

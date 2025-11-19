@@ -4,10 +4,10 @@
    Content Curation
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements content curation algorithm.
+Implements content curation algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Content Curation is a fundamental algorithm in computer science.
+Content Curation is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

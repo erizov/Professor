@@ -4,10 +4,10 @@
    Model Monitoring Advanced
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements model monitoring advanced algorithm.
+Implements model monitoring advanced algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Model Monitoring Advanced is a fundamental algorithm in computer science.
+Model Monitoring Advanced is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

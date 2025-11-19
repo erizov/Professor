@@ -4,10 +4,10 @@
    Multimedia Docs
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements multimedia docs algorithm.
+Implements multimedia docs algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Multimedia Docs is a fundamental algorithm in computer science.
+Multimedia Docs is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

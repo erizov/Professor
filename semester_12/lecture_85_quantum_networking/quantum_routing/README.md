@@ -11,7 +11,7 @@
 
 4. **Inputs & Outputs**  
    - Input: Quantum networks, routing tables, network topology, quantum data, routing algorithms, path metrics.  
-   - Output: Routed quantum information, optimal paths, network connectivity, efficient routing, quantum data delivery.
+- Output: Routed quantum information, optimal paths, network connectivity, efficient routing, quantum data delivery.
 
 5. **Step-by-step description (5–10 lines max)**  
 1. Discover: discover network topology.

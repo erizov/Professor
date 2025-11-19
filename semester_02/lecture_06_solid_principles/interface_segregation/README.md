@@ -21,7 +21,7 @@
 5. Refactor clients to depend on the refined contracts.
 
 6. **Tiny example (hand-simulated)**  
-   IMultiFunctionDevice exposes print/scan/fax; a scanner-only device should not implement fax, so split into IPrinter, IScanner, IFax.
+IMultiFunctionDevice exposes print/scan/fax; a scanner-only device should not implement fax, so split into IPrinter, IScanner, IFax.
 
 7. **Time & Space Complexity**  
    - Time: Refactor effort grows with number of clients.  

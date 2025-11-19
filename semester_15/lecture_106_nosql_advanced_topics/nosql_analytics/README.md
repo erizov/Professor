@@ -4,10 +4,10 @@
    Nosql Analytics
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements nosql analytics algorithm.
+Implements nosql analytics algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Nosql Analytics is a fundamental algorithm in computer science.
+Nosql Analytics is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

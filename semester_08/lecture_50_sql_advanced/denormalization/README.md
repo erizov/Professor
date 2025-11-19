@@ -7,7 +7,7 @@
    Intentionally introduces data redundancy by storing duplicate data across tables to improve query performance, trading storage space and update complexity for faster reads.
 
 3. **Intuition (plain-language explanation)**  
-   Like keeping copies for convenience: denormalization is like keeping a copy of important information in multiple places for quick access - instead of always looking it up (JOIN), you store it where you need it (like keeping a phone number in both your contacts and on a sticky note) - it uses more space and you must update multiple places, but it's faster to access.
+Like keeping copies for convenience: denormalization is like keeping a copy of important information in multiple places for quick access - instead of always looking it up (JOIN), you store it where you need it (like keeping a phone number in both your contacts and on a sticky note) - it uses more space and you must update multiple places, but it's faster to access.
 
 4. **Inputs & Outputs**  
    - Input: Normalized database schema, query patterns, performance requirements, storage constraints.  

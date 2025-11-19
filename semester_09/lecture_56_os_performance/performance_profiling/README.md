@@ -7,7 +7,7 @@
    Analyzes application and system performance to identify bottlenecks, measure resource usage, and guide optimization efforts through instrumentation and sampling.
 
 3. **Intuition (plain-language explanation)**  
-   Like a fitness tracker for software: performance profiling is like a fitness tracker that monitors your activity (CPU, memory, I/O) throughout the day - it tracks where you spend time (which functions), how much energy you use (CPU cycles), and identifies inefficient activities (bottlenecks) - this data helps you optimize your routine (code) to be more efficient and faster.
+Like a fitness tracker for software: performance profiling is like a fitness tracker that monitors your activity (CPU, memory, I/O) throughout the day - it tracks where you spend time (which functions), how much energy you use (CPU cycles), and identifies inefficient activities (bottlenecks) - this data helps you optimize your routine (code) to be more efficient and faster.
 
 4. **Inputs & Outputs**  
    - Input: Application code, system processes, profiling tools, sampling rate, instrumentation points.  

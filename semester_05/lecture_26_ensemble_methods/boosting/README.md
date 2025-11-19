@@ -10,7 +10,7 @@
    Like a student learning from mistakes: first model makes errors, second model focuses on those mistakes, third focuses on remaining errors, until the ensemble gets it right.
 
 4. **Inputs & Outputs**  
-   - Input: Training dataset, weak learning algorithm, number of iterations, loss function.  
+- Input: Training dataset, weak learning algorithm, number of iterations, loss function.
    - Output: Weighted ensemble of weak learners that progressively improves performance.
 
 5. **Step-by-step description (5–10 lines max)**  

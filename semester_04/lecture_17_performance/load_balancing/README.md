@@ -4,13 +4,13 @@
    Load Balancing
 
 2. **What problem does it solve? (1 sentence)**  
-   Distributes incoming requests across multiple servers to optimize resource utilization, maximize throughput, and ensure high availability.
+Distributes incoming requests across multiple servers to optimize resource utilization, maximize throughput, and ensure high availability.
 
 3. **Intuition (plain-language explanation)**  
    Like a restaurant host: when multiple tables (servers) are available, distribute customers (requests) evenly so no table is overloaded while others sit idle.
 
 4. **Inputs & Outputs**  
-   - Input: Incoming requests, pool of backend servers, load balancing algorithm.  
+- Input: Incoming requests, pool of backend servers, load balancing algorithm.
    - Output: Requests routed to appropriate servers with balanced load distribution.
 
 5. **Step-by-step description (5–10 lines max)**  
@@ -40,6 +40,6 @@
     Alternatives: DNS Load Balancing, Client-Side Load Balancing, Service Mesh
 
 11. **30-second explanation (your own words)**  
-    Distributes incoming requests across multiple servers using algorithms to balance load, optimize performance, and ensure high availability.
+Distributes incoming requests across multiple servers using algorithms to balance load, optimize performance, and ensure high availability.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

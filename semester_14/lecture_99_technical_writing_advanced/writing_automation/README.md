@@ -4,10 +4,10 @@
    Writing Automation
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements writing automation algorithm.
+Implements writing automation algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Writing Automation is a fundamental algorithm in computer science.
+Writing Automation is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

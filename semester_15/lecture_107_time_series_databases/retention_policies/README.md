@@ -4,10 +4,10 @@
    Retention Policies
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements retention policies algorithm.
+Implements retention policies algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Retention Policies is a fundamental algorithm in computer science.
+Retention Policies is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

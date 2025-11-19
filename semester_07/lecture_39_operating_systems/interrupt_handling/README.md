@@ -4,7 +4,7 @@
    Interrupt Handling
 
 2. **What problem does it solve? (1 sentence)**  
-   Manages asynchronous events (hardware interrupts, software interrupts, exceptions) that require immediate CPU attention, enabling responsive system behavior and efficient I/O operations.
+Manages asynchronous events (hardware interrupts, software interrupts, exceptions) that require immediate CPU attention, enabling responsive system behavior and efficient I/O operations.
 
 3. **Intuition (plain-language explanation)**  
    Like a doorbell interrupting your work: when hardware needs attention (keyboard pressed, disk finished reading), it sends an interrupt signal to CPU - CPU stops current work, handles the interrupt (processes keyboard input), then returns to what it was doing.
@@ -45,6 +45,6 @@
     Alternatives: Polling, Event-driven Programming, Cooperative Multitasking, Synchronous I/O
 
 11. **30-second explanation (your own words)**  
-    Manages asynchronous events that require immediate CPU attention, enabling responsive system behavior and efficient I/O operations through interrupt service routines and context switching.
+Manages asynchronous events that require immediate CPU attention, enabling responsive system behavior and efficient I/O operations through interrupt service routines and context switching.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

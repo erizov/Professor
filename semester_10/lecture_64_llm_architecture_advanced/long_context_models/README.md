@@ -4,14 +4,14 @@
    Long Context Models
 
 2. **What problem does it solve? (1 sentence)**  
-   Enables language models to process and understand very long sequences (tens of thousands to millions of tokens) through efficient attention mechanisms, context compression, and memory management techniques.
+Enables language models to process and understand very long sequences (tens of thousands to millions of tokens) through efficient attention mechanisms, context compression, and memory management techniques.
 
 3. **Intuition (plain-language explanation)**  
-   Like reading a very long book: long context models are like being able to read and remember an entire book at once - instead of only remembering the last few pages (short context), you can remember and reference information from hundreds of pages ago (long context) - this is achieved through efficient memory systems (like bookmarks and summaries) that let you quickly find and use information from anywhere in the book without re-reading everything.
+Like reading a very long book: long context models are like being able to read and remember an entire book at once - instead of only remembering the last few pages (short context), you can remember and reference information from hundreds of pages ago (long context) - this is achieved through efficient memory systems (like bookmarks and summaries) that let you quickly find and use information from anywhere in the book without re-reading everything.
 
 4. **Inputs & Outputs**  
    - Input: Long sequences, context window, attention mechanism, memory systems, compression techniques.  
-   - Output: Long-context understanding, extended memory, efficient processing, context-aware generation.
+- Output: Long-context understanding, extended memory, efficient processing, context-aware generation.
 
 5. **Step-by-step description (5–10 lines max)**  
 1. Design architecture: design model architecture for long contexts (sparse attention, sliding window).
@@ -46,6 +46,6 @@
     Alternatives: Short Context Models, Hierarchical Attention, Retrieval-Augmented Generation, Sliding Window
 
 11. **30-second explanation (your own words)**  
-    Enables language models to process and understand very long sequences (tens of thousands to millions of tokens) through efficient attention mechanisms, context compression, and memory management techniques.
+Enables language models to process and understand very long sequences (tens of thousands to millions of tokens) through efficient attention mechanisms, context compression, and memory management techniques.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

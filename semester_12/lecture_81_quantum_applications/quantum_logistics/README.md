@@ -7,7 +7,7 @@
    Uses quantum computing to solve logistics and supply chain optimization problems like vehicle routing, warehouse optimization, and delivery scheduling, finding better solutions faster than classical methods.
 
 3. **Intuition (plain-language explanation)**  
-   Like quantum optimization for logistics: Quantum Logistics uses quantum computers to optimize logistics - quantum algorithms can explore many routing and scheduling combinations simultaneously and find optimal solutions - just as quantum optimization finds best solutions, quantum logistics finds best logistics plans.
+Like quantum optimization for logistics: Quantum Logistics uses quantum computers to optimize logistics - quantum algorithms can explore many routing and scheduling combinations simultaneously and find optimal solutions - just as quantum optimization finds best solutions, quantum logistics finds best logistics plans.
 
 4. **Inputs & Outputs**  
    - Input: Logistics constraints, delivery locations, vehicle capacities, time windows, cost parameters.  

@@ -4,10 +4,10 @@
    Stream Processing Advanced
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements stream processing advanced algorithm.
+Implements stream processing advanced algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Stream Processing Advanced is a fundamental algorithm in computer science.
+Stream Processing Advanced is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

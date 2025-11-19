@@ -7,7 +7,7 @@
    Enables protocol upgrades and improvements while maintaining network consensus and backward compatibility, using mechanisms like hard forks, soft forks, or upgradeable smart contracts.
 
 3. **Intuition (plain-language explanation)**  
-   Like updating an operating system: Blockchain upgrade mechanisms are like updating an operating system - you need to upgrade to get new features and fixes, but you must ensure compatibility (soft fork) or coordinate a major update (hard fork) - some systems allow seamless upgrades (upgradeable contracts), while others require network-wide coordination - the goal is to improve the system without breaking it.
+Like updating an operating system: Blockchain upgrade mechanisms are like updating an operating system - you need to upgrade to get new features and fixes, but you must ensure compatibility (soft fork) or coordinate a major update (hard fork) - some systems allow seamless upgrades (upgradeable contracts), while others require network-wide coordination - the goal is to improve the system without breaking it.
 
 4. **Inputs & Outputs**  
    - Input: Upgrade proposal, new protocol version, compatibility requirements, migration plan, consensus mechanism, node software updates.  

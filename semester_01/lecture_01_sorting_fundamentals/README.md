@@ -27,11 +27,10 @@ science. This lecture covers basic comparison-based sorting algorithms.
 
 ## Complexity Comparison
 
-| Algorithm      | Best    | Average | Worst   | Space | Stable |
+| Algorithm | Best | Average | Worst | Space | Stable |
 |---------------|---------|---------|---------|-------|--------|
 | Bubble Sort   | O(n)    | O(n²)   | O(n²)   | O(1)  | Yes    |
 | Selection Sort| O(n²)   | O(n²)   | O(n²)   | O(1)  | No     |
-| Insertion Sort| O(n)    | O(n²)   | O(n²)   | O(1)  | Yes    |
 
 ## Recommended Reading
 
@@ -55,7 +54,7 @@ public class SortingExample {
 }
 ```
 
-**Purpose**: Java standard library uses this algorithm for core data structure operations.
+**Purpose**: Java standard library uses It for core data structure operations.
 
 ### Python Standard Library
 
@@ -66,7 +65,7 @@ arr.sort()  # Timsort: hybrid of merge sort and insertion sort
 print(arr)
 ```
 
-**Purpose**: Python standard library uses this algorithm for efficient data operations.
+**Purpose**: Python standard library uses It for efficient data operations.
 
 ### Spring Framework
 
@@ -96,7 +95,7 @@ public class UserService {
 5. **Check termination**: Verify if algorithm should continue
 6. **Return result**: Output final result when complete
 
-*Note: Specific steps depend on the algorithm implementation. See code for details.*
+*Note: Specific steps depend on It implementation. See code for details.*
 
 ## Detailed Explanation
 
@@ -123,7 +122,6 @@ For detailed implementation, see `algorithm.py` and `Algorithm.java`.
 from semester_01.lecture_01_sorting_fundamentals.bubble_sort.algorithm import bubble_sort
 
 # Sort a list of numbers
-numbers = [64, 34, 25, 12, 22, 11, 90]
 sorted_numbers = bubble_sort(numbers)
 print(sorted_numbers)  # [11, 12, 22, 25, 34, 64, 90]
 ```
@@ -179,8 +177,6 @@ Use Lecture 01 Sorting Fundamentals when:
 - Time constraints: [Acceptable time]
 
 ## When NOT to Use
-
-Avoid Lecture 01 Sorting Fundamentals when:
 
 - **Scenario 1**: [When this is not appropriate]
 - **Scenario 2**: [Another case to avoid]

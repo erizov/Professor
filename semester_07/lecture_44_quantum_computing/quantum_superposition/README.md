@@ -43,6 +43,5 @@
     Alternatives: Classical Parallel Processing, Probabilistic Algorithms, Quantum Entanglement, Classical Superposition (simulation)
 
 11. **30-second explanation (your own words)**  
-    Enables quantum bits (qubits) to exist in multiple states simultaneously, allowing quantum computers to process exponentially many possibilities in parallel.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

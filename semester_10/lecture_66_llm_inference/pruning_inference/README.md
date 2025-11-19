@@ -4,10 +4,10 @@
    Pruning for Inference
 
 2. **What problem does it solve? (1 sentence)**  
-   Removes less important weights or neurons from trained models to reduce model size and accelerate inference while maintaining acceptable accuracy, enabling deployment on resource-constrained devices.
+Removes less important weights or neurons from trained models to reduce model size and accelerate inference while maintaining acceptable accuracy, enabling deployment on resource-constrained devices.
 
 3. **Intuition (plain-language explanation)**  
-   Like trimming a tree: pruning for inference is like trimming a tree to keep only the essential branches - you remove branches (weights/neurons) that don't contribute much to the tree's health (model accuracy), making the tree (model) smaller and easier to manage (faster inference) - the tree still functions well (maintains accuracy) but is more efficient (smaller, faster).
+Like trimming a tree: pruning for inference is like trimming a tree to keep only the essential branches - you remove branches (weights/neurons) that don't contribute much to the tree's health (model accuracy), making the tree (model) smaller and easier to manage (faster inference) - the tree still functions well (maintains accuracy) but is more efficient (smaller, faster).
 
 4. **Inputs & Outputs**  
    - Input: Trained model, pruning strategy, importance criteria, target sparsity, accuracy requirements.  
@@ -46,6 +46,6 @@
     Alternatives: Full Model, Quantization, Knowledge Distillation, Structured Pruning
 
 11. **30-second explanation (your own words)**  
-    Removes less important weights or neurons from trained models to reduce model size and accelerate inference while maintaining acceptable accuracy, enabling deployment on resource-constrained devices.
+Removes less important weights or neurons from trained models to reduce model size and accelerate inference while maintaining acceptable accuracy, enabling deployment on resource-constrained devices.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

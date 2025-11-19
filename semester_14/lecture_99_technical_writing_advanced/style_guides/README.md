@@ -4,10 +4,10 @@
    Style Guides
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements style guides algorithm.
+Implements style guides algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Style Guides is a fundamental algorithm in computer science.
+Style Guides is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

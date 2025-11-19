@@ -4,10 +4,10 @@
    Downsampling
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements downsampling algorithm.
+Implements downsampling algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Downsampling is a fundamental algorithm in computer science.
+Downsampling is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

@@ -37,7 +37,7 @@
 - Interpretable: prompts are human-readable and explainable.
 
 9. **Weaknesses / limitations**  
-- Limited control: cannot fundamentally change model behavior.
+- Limited control: cannot Basically change model behavior.
 - Prompt sensitivity: small changes can significantly affect outputs.
 - Token limits: long prompts consume context window.
 

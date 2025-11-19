@@ -4,14 +4,14 @@
    ZK-SNARKs (Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge)
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements ZK-SNARKs, a type of zero-knowledge proof that is succinct (small proof size), non-interactive (no back-and-forth), and enables efficient privacy-preserving blockchain transactions and smart contracts.
+Implements ZK-SNARKs, a type of zero-knowledge proof that is succinct (small proof size), non-interactive (no back-and-forth), and enables efficient privacy-preserving blockchain transactions and smart contracts.
 
 3. **Intuition (plain-language explanation)**  
-   Like compact private proofs: ZK-SNARKs are like compact private proofs - you prove something privately (like ZK proofs) but the proof is small and doesn't require interaction - just as compact proofs are efficient, ZK-SNARKs provide efficient private proofs.
+Like compact private proofs: ZK-SNARKs are like compact private proofs - you prove something privately (like ZK proofs) but the proof is small and doesn't require interaction - just as compact proofs are efficient, ZK-SNARKs provide efficient private proofs.
 
 4. **Inputs & Outputs**  
    - Input: Secret witness, public statement, circuit, trusted setup, proving key, verification key.  
-   - Output: ZK-SNARK proofs, succinct proofs, verifiable proofs, private verification, efficient proofs.
+- Output: ZK-SNARK proofs, succinct proofs, verifiable proofs, private verification, efficient proofs.
 
 5. **Step-by-step description (5–10 lines max)**  
 1. Setup: perform trusted setup (generate keys).
@@ -46,6 +46,6 @@
     Alternatives: ZK-STARKs, Other ZK Proofs, Interactive Proofs, No Privacy
 
 11. **30-second explanation (your own words)**  
-    Implements ZK-SNARKs, a type of zero-knowledge proof that is succinct (small proof size), non-interactive (no back-and-forth), and enables efficient privacy-preserving blockchain transactions and smart contracts.
+Implements ZK-SNARKs, a type of zero-knowledge proof that is succinct (small proof size), non-interactive (no back-and-forth), and enables efficient privacy-preserving blockchain transactions and smart contracts.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

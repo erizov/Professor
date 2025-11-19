@@ -43,7 +43,7 @@
 - Convergence: may require many iterations to converge.
 
 10. **Compare with alternatives**  
-    Alternatives: Quantum Approximate Optimization Algorithm, Quantum Machine Learning, Quantum Chemistry Algorithms, Classical Optimization
+Alternatives: Quantum Approximate Optimization Algorithm, Quantum Machine Learning, Quantum Chemistry Algorithms, Classical Optimization
 
 11. **30-second explanation (your own words)**  
     A class of hybrid quantum-classical algorithms that use parameterized quantum circuits optimized classically to solve optimization and machine learning problems.

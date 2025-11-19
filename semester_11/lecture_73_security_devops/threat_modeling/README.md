@@ -7,7 +7,7 @@
    Systematically identifies, analyzes, and mitigates security threats to applications and systems by modeling potential attacks and vulnerabilities.
 
 3. **Intuition (plain-language explanation)**  
-   Like risk assessment: Threat Modeling is like a risk assessment for security - you think like an attacker (identify threats), analyze what could go wrong (vulnerabilities), and plan defenses (mitigations) - just as risk assessments help prevent accidents, threat modeling helps prevent security breaches by thinking ahead.
+Like risk assessment: Threat Modeling is like a risk assessment for security - you think like an attacker (identify threats), analyze what could go wrong (vulnerabilities), and plan defenses (mitigations) - just as risk assessments help prevent accidents, threat modeling helps prevent security breaches by thinking ahead.
 
 4. **Inputs & Outputs**  
    - Input: System architecture, data flows, trust boundaries, threat databases, attack patterns, security requirements.  
@@ -46,6 +46,5 @@
     Alternatives: Ad-Hoc Security, Reactive Security, Security Audits, Penetration Testing
 
 11. **30-second explanation (your own words)**  
-    Systematically identifies, analyzes, and mitigates security threats to applications and systems by modeling potential attacks and vulnerabilities.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

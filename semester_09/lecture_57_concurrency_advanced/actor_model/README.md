@@ -7,7 +7,7 @@
    Models concurrent computation using actors (independent computational entities) that communicate through asynchronous message passing, avoiding shared state and locks for better scalability and fault tolerance.
 
 3. **Intuition (plain-language explanation)**  
-   Like a company with independent departments: the actor model is like a company where each department (actor) works independently and communicates with other departments only through messages (like emails) - departments don't share resources directly (no shared state), they send messages and wait for replies (asynchronous communication) - if one department has a problem (actor crashes), it doesn't affect others (fault isolation), and you can easily add more departments (scale horizontally).
+Like a company with independent departments: the actor model is like a company where each department (actor) works independently and communicates with other departments only through messages (like emails) - departments don't share resources directly (no shared state), they send messages and wait for replies (asynchronous communication) - if one department has a problem (actor crashes), it doesn't affect others (fault isolation), and you can easily add more departments (scale horizontally).
 
 4. **Inputs & Outputs**  
    - Input: Messages, actor definitions, actor system configuration, supervision strategies.  

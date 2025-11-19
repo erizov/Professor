@@ -4,10 +4,10 @@
    Data Quality
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements data quality algorithm.
+Implements data quality algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Data Quality is a fundamental algorithm in computer science.
+Data Quality is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

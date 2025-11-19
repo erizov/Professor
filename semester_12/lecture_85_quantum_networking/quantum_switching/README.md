@@ -4,14 +4,14 @@
    Quantum Switching
 
 2. **What problem does it solve? (1 sentence)**  
-   Switches and routes quantum information between quantum channels and nodes in quantum networks, enabling efficient quantum communication and network management.
+Switches and routes quantum information between quantum channels and nodes in quantum networks, enabling efficient quantum communication and network management.
 
 3. **Intuition (plain-language explanation)**  
    Like network switches for quantum: Quantum Switching is like network switches but for quantum information - you switch quantum signals (like switching network packets) between quantum channels to route quantum information - just as network switches route internet traffic, quantum switches route quantum information.
 
 4. **Inputs & Outputs**  
    - Input: Quantum signals, switching configurations, routing tables, quantum channels, control signals.  
-   - Output: Switched quantum information, routed quantum signals, network connectivity, efficient switching, quantum data flow.
+- Output: Switched quantum information, routed quantum signals, network connectivity, efficient switching, quantum data flow.
 
 5. **Step-by-step description (5–10 lines max)**  
 1. Receive: receive quantum signal on input channel.
@@ -46,6 +46,6 @@
     Alternatives: Direct Links, Fixed Routing, Classical Switching, Hybrid Switching
 
 11. **30-second explanation (your own words)**  
-    Switches and routes quantum information between quantum channels and nodes in quantum networks, enabling efficient quantum communication and network management.
+Switches and routes quantum information between quantum channels and nodes in quantum networks, enabling efficient quantum communication and network management.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

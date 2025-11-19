@@ -7,7 +7,7 @@
    Identifies and classifies named entities (persons, organizations, locations, dates, etc.) in text, enabling information extraction and structured data from unstructured text.
 
 3. **Intuition (plain-language explanation)**  
-   Like highlighting important names in a document: automatically find and label people, places, companies, dates, etc. so you can extract structured information from text.
+Like highlighting important names in a document: automatically find and label people, places, companies, dates, etc. so you can extract structured information from text.
 
 4. **Inputs & Outputs**  
    - Input: Text sequences, entity labels (PERSON, ORG, LOC, DATE, etc.), training data with entity annotations.  

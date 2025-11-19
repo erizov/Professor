@@ -7,7 +7,7 @@
    Optimizes the order of I/O requests to storage devices, reducing seek time, improving throughput, and ensuring fair access to I/O resources for multiple processes.
 
 3. **Intuition (plain-language explanation)**  
-   Like organizing errands efficiently: I/O scheduling is like planning your errands to minimize travel time - instead of going to stores in random order (random I/O), you group nearby stores together (elevator algorithm - serve requests in one direction), or prioritize urgent errands (deadline scheduling), or ensure everyone gets their turn fairly (fair queuing) - the goal is to minimize disk head movement (travel time) and maximize throughput (errands completed per hour).
+Like organizing errands efficiently: I/O scheduling is like planning your errands to minimize travel time - instead of going to stores in random order (random I/O), you group nearby stores together (elevator algorithm - serve requests in one direction), or prioritize urgent errands (deadline scheduling), or ensure everyone gets their turn fairly (fair queuing) - the goal is to minimize disk head movement (travel time) and maximize throughput (errands completed per hour).
 
 4. **Inputs & Outputs**  
    - Input: I/O requests, disk geometry, request priorities, deadlines, I/O patterns.  

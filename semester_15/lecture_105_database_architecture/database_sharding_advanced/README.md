@@ -4,10 +4,10 @@
    Database Sharding Advanced
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements database sharding advanced algorithm.
+Implements database sharding advanced algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Database Sharding Advanced is a fundamental algorithm in computer science.
+Database Sharding Advanced is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

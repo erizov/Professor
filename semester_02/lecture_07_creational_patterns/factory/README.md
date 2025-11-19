@@ -10,7 +10,7 @@
    A base class provides a hook for creating collaborators; subclasses override to supply specific types.
 
 4. **Inputs & Outputs**  
-   - Input: Superclass defining algorithm that depends on product objects.  
+- Input: Superclass defining algorithm that depends on product objects.
    - Output: factory_method() returning a Product interface implemented by subclasses.
 
 5. **Step-by-step description (5–10 lines max)**  

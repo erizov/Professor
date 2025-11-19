@@ -4,10 +4,10 @@
    Api Docs Advanced
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements api docs advanced algorithm.
+Implements api docs advanced algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Api Docs Advanced is a fundamental algorithm in computer science.
+Api Docs Advanced is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

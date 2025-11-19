@@ -7,7 +7,7 @@
    Removes unnecessary weights, neurons, or layers from a trained neural network to reduce model size and inference time while maintaining accuracy, enabling deployment on resource-constrained devices.
 
 3. **Intuition (plain-language explanation)**  
-   Like trimming a tree: after training, identify which branches (weights/neurons) are least important, cut them out, and the tree (model) becomes smaller and faster while still functioning well.
+Like trimming a tree: after training, identify which branches (weights/neurons) are least important, cut them out, and the tree (model) becomes smaller and faster while still functioning well.
 
 4. **Inputs & Outputs**  
    - Input: Trained model, pruning criterion (magnitude, importance score), pruning ratio (sparsity target), fine-tuning data.  

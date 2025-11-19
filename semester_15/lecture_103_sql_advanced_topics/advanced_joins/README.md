@@ -4,10 +4,10 @@
    Advanced Joins
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements advanced joins algorithm.
+Implements advanced joins algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Advanced Joins is a fundamental algorithm in computer science.
+Advanced Joins is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

@@ -4,10 +4,10 @@
    Database Federation
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements database federation algorithm.
+Implements database federation algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Database Federation is a fundamental algorithm in computer science.
+Database Federation is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

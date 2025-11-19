@@ -4,14 +4,14 @@
    ResNet (Residual Network)
 
 2. **What problem does it solve? (1 sentence)**  
-   Enables training of very deep networks by using skip connections (residual blocks) that allow gradients to flow directly, solving the vanishing gradient problem.
+Enables training of very deep networks by using skip connections (residual blocks) that allow gradients to flow directly, solving the vanishing gradient problem.
 
 3. **Intuition (plain-language explanation)**  
    Like a highway bypass: if the main road (layers) is blocked, use the bypass (skip connection) to get through. This makes it easier to train very deep networks.
 
 4. **Inputs & Outputs**  
    - Input: Input feature maps, residual block configuration, number of layers.  
-   - Output: Deep network with residual connections enabling effective gradient flow.
+- Output: Deep network with residual connections enabling effective gradient flow.
 
 5. **Step-by-step description (5–10 lines max)**  
 1. Define residual block: F(x) = activation(conv(x) + x) where x is input (skip connection).

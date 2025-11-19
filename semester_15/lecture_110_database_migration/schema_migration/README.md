@@ -4,10 +4,10 @@
    Schema Migration
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements schema migration algorithm.
+Implements schema migration algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Schema Migration is a fundamental algorithm in computer science.
+Schema Migration is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

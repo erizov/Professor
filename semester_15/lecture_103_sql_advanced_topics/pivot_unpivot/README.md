@@ -4,10 +4,10 @@
    Pivot Unpivot
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements pivot unpivot algorithm.
+Implements pivot unpivot algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Pivot Unpivot is a fundamental algorithm in computer science.
+Pivot Unpivot is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

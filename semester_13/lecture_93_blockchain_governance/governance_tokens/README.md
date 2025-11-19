@@ -46,6 +46,6 @@
     Alternatives: Off-Chain Governance, Multisig Governance, Foundation Governance, Hybrid Governance
 
 11. **30-second explanation (your own words)**  
-    Tokens that grant voting rights to holders, enabling decentralized governance where token-weighted votes determine protocol decisions and parameter changes.
+Tokens that grant voting rights to holders, enabling decentralized governance where token-weighted votes determine protocol decisions and parameter changes.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

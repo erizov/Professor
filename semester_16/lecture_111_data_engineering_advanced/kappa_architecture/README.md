@@ -4,10 +4,10 @@
    Kappa Architecture
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements kappa architecture algorithm.
+Implements kappa architecture algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Kappa Architecture is a fundamental algorithm in computer science.
+Kappa Architecture is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

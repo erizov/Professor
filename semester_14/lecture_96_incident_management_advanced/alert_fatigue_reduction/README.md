@@ -4,10 +4,10 @@
    Alert Fatigue Reduction
 
 2. **What problem does it solve? (1 sentence)**  
-   Reduces alert fatigue by filtering, prioritizing, grouping, and intelligently managing alerts to ensure operators focus on critical issues without being overwhelmed by noise.
+Reduces alert fatigue by filtering, prioritizing, grouping, and intelligently managing alerts to ensure operators focus on critical issues without being overwhelmed by noise.
 
 3. **Intuition (plain-language explanation)**  
-   Like a smart filter for alerts: Alert fatigue reduction is like a smart filter for alerts - you filter out noise (false positives, low priority), prioritize important ones (critical alerts), group related ones (similar alerts), and present only what matters - just as a spam filter reduces email noise, alert reduction reduces alert noise.
+Like a smart filter for alerts: Alert fatigue reduction is like a smart filter for alerts - you filter out noise (false positives, low priority), prioritize important ones (critical alerts), group related ones (similar alerts), and present only what matters - just as a spam filter reduces email noise, alert reduction reduces alert noise.
 
 4. **Inputs & Outputs**  
    - Input: Alerts, alert metadata, historical data, priority rules, grouping criteria, filtering rules, context information.  
@@ -46,6 +46,6 @@
     Alternatives: No Filtering, Basic Filtering, Manual Prioritization, Threshold-Based
 
 11. **30-second explanation (your own words)**  
-    Systems that reduce alert fatigue by intelligently filtering, prioritizing, and grouping alerts to ensure operators focus on critical issues.
+Systems that reduce alert fatigue by intelligently filtering, prioritizing, and grouping alerts to ensure operators focus on critical issues.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

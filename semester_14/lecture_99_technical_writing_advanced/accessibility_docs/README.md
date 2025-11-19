@@ -4,10 +4,10 @@
    Accessibility Docs
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements accessibility docs algorithm.
+Implements accessibility docs algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Accessibility Docs is a fundamental algorithm in computer science.
+Accessibility Docs is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

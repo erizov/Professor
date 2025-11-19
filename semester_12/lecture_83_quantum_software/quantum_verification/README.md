@@ -7,7 +7,7 @@
    Verifies correctness of quantum programs and circuits through formal methods, testing, and validation techniques, ensuring quantum algorithms work as intended.
 
 3. **Intuition (plain-language explanation)**  
-   Like verification for quantum: Quantum Verification is like software verification but for quantum programs - you verify that quantum circuits are correct (do what they're supposed to do) using formal methods and testing - just as you verify classical software, you verify quantum software to ensure correctness.
+Like verification for quantum: Quantum Verification is like software verification but for quantum programs - you verify that quantum circuits are correct (do what they're supposed to do) using formal methods and testing - just as you verify classical software, you verify quantum software to ensure correctness.
 
 4. **Inputs & Outputs**  
    - Input: Quantum programs, specifications, verification methods, test cases, formal models, validation criteria.  

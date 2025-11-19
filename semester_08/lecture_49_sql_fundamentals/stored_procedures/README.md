@@ -44,6 +44,5 @@
     Alternatives: Ad-hoc SQL, ORM Queries, Application Logic, Database Functions
 
 11. **30-second explanation (your own words)**  
-    Pre-compiles and stores SQL code on the database server, enabling reusable business logic, improved performance, and centralized data access control.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

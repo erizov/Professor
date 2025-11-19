@@ -4,7 +4,7 @@
    Query Optimization
 
 2. **What problem does it solve? (1 sentence)**  
-   Improves SQL query performance by selecting efficient execution plans, using indexes, and rewriting queries to minimize execution time and resource usage.
+Improves SQL query performance by selecting efficient execution plans, using indexes, and rewriting queries to minimize execution time and resource usage.
 
 3. **Intuition (plain-language explanation)**  
    Like GPS route optimization: query optimization is like a GPS finding the fastest route - instead of taking the first route (naive execution), the optimizer analyzes all possible routes (execution plans), considers traffic (indexes, statistics), and picks the fastest one (optimal plan) to get results quickly.
@@ -44,6 +44,6 @@
     Alternatives: Manual Query Rewriting, Query Hints, Index Tuning, Materialized Views
 
 11. **30-second explanation (your own words)**  
-    Improves SQL query performance by selecting efficient execution plans, using indexes, and rewriting queries to minimize execution time and resource usage.
+Improves SQL query performance by selecting efficient execution plans, using indexes, and rewriting queries to minimize execution time and resource usage.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

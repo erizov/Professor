@@ -4,14 +4,14 @@
    Column Family Stores
 
 2. **What problem does it solve? (1 sentence)**  
-   Organizes data into column families (groups of related columns), enabling efficient storage and retrieval of wide, sparse tables with billions of rows, optimized for write-heavy workloads.
+Organizes data into column families (groups of related columns), enabling efficient storage and retrieval of wide, sparse tables with billions of rows, optimized for write-heavy workloads.
 
 3. **Intuition (plain-language explanation)**  
-   Like a spreadsheet with flexible columns: column family stores are like spreadsheets where each row can have different columns (like flexible spreadsheets) - data is organized by column families (like grouping related columns together), making it efficient to store and query wide tables with many columns, especially when most rows only use a few columns.
+Like a spreadsheet with flexible columns: column family stores are like spreadsheets where each row can have different columns (like flexible spreadsheets) - data is organized by column families (like grouping related columns together), making it efficient to store and query wide tables with many columns, especially when most rows only use a few columns.
 
 4. **Inputs & Outputs**  
    - Input: Row key, column family, column qualifiers, values, timestamps.  
-   - Output: Stored column families, retrieved rows, efficient wide-table storage.
+- Output: Stored column families, retrieved rows, efficient wide-table storage.
 
 5. **Step-by-step description (5–10 lines max)**  
 1. Define column family: group related columns into column family.
@@ -44,6 +44,6 @@
     Alternatives: Relational Databases, Document Databases, Key-Value Stores, Time-Series Databases
 
 11. **30-second explanation (your own words)**  
-    Organizes data into column families (groups of related columns), enabling efficient storage and retrieval of wide, sparse tables with billions of rows, optimized for write-heavy workloads.
+Organizes data into column families (groups of related columns), enabling efficient storage and retrieval of wide, sparse tables with billions of rows, optimized for write-heavy workloads.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

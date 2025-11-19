@@ -4,10 +4,10 @@
    Partitioning Strategies
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements partitioning strategies algorithm.
+Implements partitioning strategies algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Partitioning Strategies is a fundamental algorithm in computer science.
+Partitioning Strategies is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

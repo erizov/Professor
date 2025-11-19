@@ -4,10 +4,10 @@
    Avl Tree
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements avl tree algorithm.
+Implements avl tree algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Avl Tree is a fundamental algorithm in computer science.
+Avl Tree is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

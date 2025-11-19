@@ -4,7 +4,7 @@
    Platform Metrics
 
 2. **What problem does it solve? (1 sentence)**  
-   Collects, analyzes, and presents metrics about platform usage, performance, and health, enabling platform teams to optimize platforms and demonstrate value.
+Collects, analyzes, and presents metrics about platform usage, performance, and health, enabling platform teams to optimize platforms and demonstrate value.
 
 3. **Intuition (plain-language explanation)**  
    Like business metrics: Platform Metrics are like business metrics for a platform - you track how many customers (developers) use it, how satisfied they are (adoption), and how well it performs (performance) - just as business metrics help improve a business, platform metrics help improve a platform.
@@ -46,6 +46,6 @@
     Alternatives: No Metrics, Ad-Hoc Monitoring, Basic Metrics, Advanced Analytics
 
 11. **30-second explanation (your own words)**  
-    Collects, analyzes, and presents metrics about platform usage, performance, and health, enabling platform teams to optimize platforms and demonstrate value.
+Collects, analyzes, and presents metrics about platform usage, performance, and health, enabling platform teams to optimize platforms and demonstrate value.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

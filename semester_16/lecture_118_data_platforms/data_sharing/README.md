@@ -4,10 +4,10 @@
    Data Sharing
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements data sharing algorithm.
+Implements data sharing algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Data Sharing is a fundamental algorithm in computer science.
+Data Sharing is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

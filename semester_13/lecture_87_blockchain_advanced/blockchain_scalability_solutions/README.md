@@ -7,7 +7,7 @@
    Addresses blockchain throughput limitations by implementing Layer 2 solutions, sharding, and optimization techniques that increase transaction processing capacity while maintaining security and decentralization.
 
 3. **Intuition (plain-language explanation)**  
-   Like adding lanes to a highway: Blockchain scalability solutions are like adding lanes to a congested highway - instead of one slow lane (main chain), you add multiple lanes (Layer 2, sharding) that process transactions in parallel, or you optimize the existing lane (optimizations) - the goal is to handle more traffic (transactions) without compromising safety (security) or accessibility (decentralization).
+Like adding lanes to a highway: Blockchain scalability solutions are like adding lanes to a congested highway - instead of one slow lane (main chain), you add multiple lanes (Layer 2, sharding) that process transactions in parallel, or you optimize the existing lane (optimizations) - the goal is to handle more traffic (transactions) without compromising safety (security) or accessibility (decentralization).
 
 4. **Inputs & Outputs**  
    - Input: Transactions, scalability requirements, security constraints, decentralization goals, network topology, consensus mechanism.  

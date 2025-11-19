@@ -4,7 +4,7 @@
    AIOps (Artificial Intelligence for IT Operations)
 
 2. **What problem does it solve? (1 sentence)**  
-   Uses artificial intelligence and machine learning to automate IT operations, detect anomalies, predict issues, and optimize system performance and reliability.
+Uses artificial intelligence and machine learning to automate IT operations, detect anomalies, predict issues, and optimize system performance and reliability.
 
 3. **Intuition (plain-language explanation)**  
    Like a smart assistant for IT: AIOps is like having a smart assistant for IT operations - it watches everything (monitoring), learns patterns (ML), predicts problems (anomaly detection), and fixes issues automatically (automation) - just as a smart assistant helps you manage tasks, AIOps helps manage IT operations intelligently.
@@ -46,6 +46,6 @@
     Alternatives: Manual Operations, Traditional Monitoring, Rule-Based Automation, ML-Assisted Operations
 
 11. **30-second explanation (your own words)**  
-    Uses artificial intelligence and machine learning to automate IT operations, detect anomalies, predict issues, and optimize system performance and reliability.
+Uses artificial intelligence and machine learning to automate IT operations, detect anomalies, predict issues, and optimize system performance and reliability.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

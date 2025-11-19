@@ -7,11 +7,11 @@
    Processes multiple inference requests together in batches, improving GPU utilization and throughput by amortizing computation overhead across multiple requests.
 
 3. **Intuition (plain-language explanation)**  
-   Like processing multiple orders at once: batch inference is like a restaurant preparing multiple orders together - instead of cooking one meal at a time (one request at a time), you prepare several meals simultaneously (batch requests) - you use the same kitchen (GPU) more efficiently, and even though individual meals might take slightly longer, you serve more meals per hour (higher throughput) - it's more efficient to use the oven (GPU) for multiple items at once.
+Like processing multiple orders at once: batch inference is like a restaurant preparing multiple orders together - instead of cooking one meal at a time (one request at a time), you prepare several meals simultaneously (batch requests) - you use the same kitchen (GPU) more efficiently, and even though individual meals might take slightly longer, you serve more meals per hour (higher throughput) - it's more efficient to use the oven (GPU) for multiple items at once.
 
 4. **Inputs & Outputs**  
    - Input: Multiple inference requests, batch size, model, batching strategy, request queue.  
-   - Output: Batch predictions, improved throughput, efficient GPU utilization, batched results.
+- Output: Batch predictions, improved throughput, efficient GPU utilization, batched results.
 
 5. **Step-by-step description (5–10 lines max)**  
 1. Collect requests: collect multiple inference requests in queue.

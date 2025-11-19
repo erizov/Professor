@@ -10,7 +10,7 @@
    Like asking multiple experts who saw different parts of a situation: each trains on a different random sample, then combine their opinions (average) for a more stable, reliable answer.
 
 4. **Inputs & Outputs**  
-   - Input: Training dataset, base learning algorithm, number of models (bootstrap samples).  
+- Input: Training dataset, base learning algorithm, number of models (bootstrap samples).
    - Output: Ensemble model that averages predictions from multiple base models.
 
 5. **Step-by-step description (5–10 lines max)**  

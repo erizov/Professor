@@ -10,8 +10,8 @@
    Like a hybrid car: Quantum-classical hybrid algorithms are like hybrid cars that use both electric (quantum) and gas (classical) power - quantum computers handle parts that benefit from quantum mechanics (exploring many possibilities at once), while classical computers handle optimization, control, and error correction - together they're more powerful than either alone.
 
 4. **Inputs & Outputs**  
-   - Input: Problem specification, quantum device, classical computer, hybrid algorithm parameters, optimization strategy.  
-   - Output: Hybrid solution, optimized parameters, performance metrics, resource usage statistics.
+- Input: Problem specification, quantum device, classical computer, hybrid algorithm parameters, optimization strategy.
+- Output: Hybrid solution, optimized parameters, performance metrics, resource usage statistics.
 
 5. **Step-by-step description (5–10 lines max)**  
 1. Decompose: decompose problem into quantum and classical parts.

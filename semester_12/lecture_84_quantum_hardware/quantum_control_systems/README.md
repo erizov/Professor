@@ -7,7 +7,7 @@
    Designs and implements control systems for quantum hardware, managing qubit manipulation, gate operations, and system coordination to enable accurate quantum computation.
 
 3. **Intuition (plain-language explanation)**  
-   Like control systems for quantum: Quantum Control Systems are like control systems for machines but for quantum hardware - you control qubits (like controlling machines), coordinate operations (like coordinating machines), and ensure accuracy (like ensuring machines work correctly) - just as control systems manage machines, quantum control systems manage quantum hardware.
+Like control systems for quantum: Quantum Control Systems are like control systems for machines but for quantum hardware - you control qubits (like controlling machines), coordinate operations (like coordinating machines), and ensure accuracy (like ensuring machines work correctly) - just as control systems manage machines, quantum control systems manage quantum hardware.
 
 4. **Inputs & Outputs**  
    - Input: Control specifications, gate requirements, qubit states, control pulses, feedback signals, system parameters.  

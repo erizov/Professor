@@ -7,7 +7,7 @@
    Uses Prometheus time-series database to collect, store, and query ML system metrics (model performance, inference latency, resource usage), enabling monitoring, alerting, and performance analysis.
 
 3. **Intuition (plain-language explanation)**  
-   Like a specialized database for system metrics: Prometheus collects all your ML metrics (request rate, latency, accuracy, GPU usage) over time, stores them efficiently, and lets you query them to create dashboards, set up alerts, and analyze trends.
+Like a specialized database for system metrics: Prometheus collects all your ML metrics (request rate, latency, accuracy, GPU usage) over time, stores them efficiently, and lets you query them to create dashboards, set up alerts, and analyze trends.
 
 4. **Inputs & Outputs**  
    - Input: ML system metrics (counters, gauges, histograms), metric exporters, Prometheus configuration, scrape targets.  
@@ -44,6 +44,6 @@
     Alternatives: CloudWatch, Datadog, InfluxDB, Custom Metrics Systems
 
 11. **30-second explanation (your own words)**  
-    Uses Prometheus time-series database to collect, store, and query ML system metrics, enabling monitoring, alerting, and performance analysis through efficient time-series storage and powerful query language.
+Uses Prometheus time-series database to collect, store, and query ML system metrics, enabling monitoring, alerting, and performance analysis through efficient time-series storage and powerful query language.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

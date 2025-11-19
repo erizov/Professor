@@ -10,7 +10,7 @@
    Like learning word meanings from context: 'You shall know a word by the company it keeps' - words that appear in similar contexts should have similar embeddings.
 
 4. **Inputs & Outputs**  
-   - Input: Large text corpus, context window size, embedding dimension, training algorithm (CBOW or Skip-gram).  
+- Input: Large text corpus, context window size, embedding dimension, training algorithm (CBOW or Skip-gram).
    - Output: Dense word embeddings where semantically similar words are close in vector space.
 
 5. **Step-by-step description (5–10 lines max)**  

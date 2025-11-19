@@ -4,10 +4,10 @@
    Nosql Data Modeling
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements nosql data modeling algorithm.
+Implements nosql data modeling algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Nosql Data Modeling is a fundamental algorithm in computer science.
+Nosql Data Modeling is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

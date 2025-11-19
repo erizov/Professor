@@ -4,10 +4,10 @@
    Performance Profiling
 
 2. **What problem does it solve? (1 sentence)**  
-   Analyzes application execution to identify performance bottlenecks, measure resource usage (CPU, memory, I/O), and optimize code by pinpointing slow functions, hot paths, and resource-intensive operations.
+Analyzes application execution to identify performance bottlenecks, measure resource usage (CPU, memory, I/O), and optimize code by pinpointing slow functions, hot paths, and resource-intensive operations.
 
 3. **Intuition (plain-language explanation)**  
-   Like a performance analysis tool for athletes: profile your ML application to see exactly where it spends time and resources - which functions are slow, which use too much memory, which operations are bottlenecks - so you can optimize the right parts.
+Like a performance analysis tool for athletes: profile your ML application to see exactly where it spends time and resources - which functions are slow, which use too much memory, which operations are bottlenecks - so you can optimize the right parts.
 
 4. **Inputs & Outputs**  
    - Input: Application code, profiling tool (cProfile, py-spy, perf, etc.), workload (test data, production trace).  

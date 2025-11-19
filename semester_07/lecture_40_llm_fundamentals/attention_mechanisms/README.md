@@ -7,7 +7,7 @@
    Enables models to focus on relevant parts of input sequence when generating each output token, allowing capture of long-range dependencies and context-aware representations in sequence-to-sequence tasks.
 
 3. **Intuition (plain-language explanation)**  
-   Like reading a long document and highlighting important sentences: when generating each word of a translation, attention mechanism 'looks' at all words in the source sentence and focuses more on the most relevant ones - giving higher 'attention' weights to words that matter most for the current output.
+Like reading a long document and highlighting important sentences: when generating each word of a translation, attention mechanism 'looks' at all words in the source sentence and focuses more on the most relevant ones - giving higher 'attention' weights to words that matter most for the current output.
 
 4. **Inputs & Outputs**  
    - Input: Query vectors (Q), key vectors (K), value vectors (V), input sequence, attention mask (optional).  

@@ -7,7 +7,7 @@
    Assesses LLM outputs using human judges to evaluate quality, relevance, fluency, and other subjective aspects that automated metrics may miss, providing comprehensive quality assessment.
 
 3. **Intuition (plain-language explanation)**  
-   Like peer review: human evaluation is like having experts review work - while automated tests (metrics) can check some things (like grammar), humans can judge quality, relevance, and appropriateness that machines can't - just as peer reviewers evaluate research papers for quality and contribution, human evaluators assess LLM outputs for quality, making sure they're not just technically correct but actually good and useful.
+Like peer review: human evaluation is like having experts review work - while automated tests (metrics) can check some things (like grammar), humans can judge quality, relevance, and appropriateness that machines can't - just as peer reviewers evaluate research papers for quality and contribution, human evaluators assess LLM outputs for quality, making sure they're not just technically correct but actually good and useful.
 
 4. **Inputs & Outputs**  
    - Input: LLM outputs, evaluation criteria, human judges, rating scales, evaluation tasks.  

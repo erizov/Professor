@@ -7,7 +7,7 @@
    Improves retrieval quality by re-ranking initially retrieved documents using a more sophisticated model (cross-encoder, LLM) that considers query-document interactions, placing the most relevant documents at the top.
 
 3. **Intuition (plain-language explanation)**  
-   Like a second opinion: re-ranking is like getting a second opinion on search results - the initial search (first-stage retrieval) finds many potentially relevant documents quickly, then a more careful reviewer (re-ranker) looks at each document more closely in relation to your query and puts the best matches at the top - it's like having a fast initial filter (retrieval) followed by careful evaluation (re-ranking) to ensure the best results are first.
+Like a second opinion: re-ranking is like getting a second opinion on search results - the initial search (first-stage retrieval) finds many potentially relevant documents quickly, then a more careful reviewer (re-ranker) looks at each document more closely in relation to your query and puts the best matches at the top - it's like having a fast initial filter (retrieval) followed by careful evaluation (re-ranking) to ensure the best results are first.
 
 4. **Inputs & Outputs**  
    - Input: Initial retrieval results, query, re-ranking model, document texts, ranking criteria.  

@@ -4,10 +4,10 @@
    Data Observability
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements data observability algorithm.
+Implements data observability algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Data Observability is a fundamental algorithm in computer science.
+Data Observability is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

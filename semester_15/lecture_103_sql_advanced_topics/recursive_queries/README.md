@@ -4,10 +4,10 @@
    Recursive Queries
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements recursive queries algorithm.
+Implements recursive queries algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Recursive Queries is a fundamental algorithm in computer science.
+Recursive Queries is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

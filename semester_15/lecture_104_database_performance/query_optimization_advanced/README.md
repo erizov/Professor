@@ -4,10 +4,10 @@
    Query Optimization Advanced
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements query optimization advanced algorithm.
+Implements query optimization advanced algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Query Optimization Advanced is a fundamental algorithm in computer science.
+Query Optimization Advanced is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

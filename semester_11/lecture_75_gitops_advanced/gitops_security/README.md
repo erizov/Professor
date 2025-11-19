@@ -7,7 +7,7 @@
    Secures GitOps workflows through access controls, secret management, policy enforcement, and audit trails, ensuring secure infrastructure and application deployments.
 
 3. **Intuition (plain-language explanation)**  
-   Like a secure vault: GitOps Security is like securing a vault that controls important systems - you control who can access it (access controls), protect the keys (secret management), enforce rules (policies), and keep records of who did what (audit trails) - just as a secure vault protects valuable items, GitOps security protects your infrastructure and applications.
+Like a secure vault: GitOps Security is like securing a vault that controls important systems - you control who can access it (access controls), protect the keys (secret management), enforce rules (policies), and keep records of who did what (audit trails) - just as a secure vault protects valuable items, GitOps security protects your infrastructure and applications.
 
 4. **Inputs & Outputs**  
    - Input: Git repositories, access policies, secrets, security policies, audit requirements, compliance needs.  

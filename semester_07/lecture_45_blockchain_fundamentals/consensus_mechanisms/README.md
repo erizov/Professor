@@ -7,10 +7,10 @@
    Enables distributed network participants to agree on blockchain state and validate transactions without central authority, ensuring network security and preventing double-spending.
 
 3. **Intuition (plain-language explanation)**  
-   Like a group vote: instead of one person deciding (centralized), everyone in the network votes on which transactions are valid - consensus mechanisms are the 'voting rules' that ensure everyone agrees on the same version of truth, even if some participants are dishonest or faulty.
+Like a group vote: instead of one person deciding (centralized), everyone in the network votes on which transactions are valid - consensus mechanisms are the 'voting rules' that ensure everyone agrees on the same version of truth, even if some participants are dishonest or faulty.
 
 4. **Inputs & Outputs**  
-   - Input: Proposed transactions, network participants (nodes), consensus algorithm parameters.  
+- Input: Proposed transactions, network participants (nodes), consensus algorithm parameters.
    - Output: Agreed-upon blockchain state, validated transactions, network consensus.
 
 5. **Step-by-step description (5–10 lines max)**  

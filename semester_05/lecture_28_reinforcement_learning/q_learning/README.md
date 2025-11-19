@@ -4,7 +4,7 @@
    Q-Learning
 
 2. **What problem does it solve? (1 sentence)**  
-   Off-policy TD control algorithm that learns optimal action-value function for Markov Decision Processes with discrete states/actions.
+Off-policy TD control algorithm that learns optimal action-value function for Markov Decision Processes with discrete states/actions.
 
 3. **Intuition (plain-language explanation)**  
    Update your estimate of action usefulness by bootstrapping: new Q-value = old Q-value plus learning rate times error between received reward + best future estimate and current estimate.

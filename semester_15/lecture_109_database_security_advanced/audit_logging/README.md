@@ -4,10 +4,10 @@
    Audit Logging
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements audit logging algorithm.
+Implements audit logging algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Audit Logging is a fundamental algorithm in computer science.
+Audit Logging is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

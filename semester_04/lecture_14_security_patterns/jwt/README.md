@@ -10,7 +10,7 @@
    Like a tamper-proof ticket: contains user info and permissions, signed so server can verify it wasn't altered, eliminating need to store sessions.
 
 4. **Inputs & Outputs**  
-   - Input: Header (algorithm, type), payload (claims like user ID, roles, expiration), secret key or private key.  
+- Input: Header (algorithm, type), payload (claims like user ID, roles, expiration), secret key or private key.
    - Output: JWT token string (header.payload.signature) in base64url encoding.
 
 5. **Step-by-step description (5–10 lines max)**  

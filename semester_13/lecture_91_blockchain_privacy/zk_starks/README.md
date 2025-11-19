@@ -4,7 +4,7 @@
    ZK-STARKs (Zero-Knowledge Scalable Transparent Arguments of Knowledge)
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements ZK-STARKs, a type of zero-knowledge proof that is transparent (no trusted setup), scalable (efficient for large computations), and provides post-quantum security, enabling privacy without trusted setup.
+Implements ZK-STARKs, a type of zero-knowledge proof that is transparent (no trusted setup), scalable (efficient for large computations), and provides post-quantum security, enabling privacy without trusted setup.
 
 3. **Intuition (plain-language explanation)**  
    Like transparent private proofs: ZK-STARKs are like transparent private proofs - you prove something privately (like ZK proofs) but without needing trusted setup (transparent) - just as transparent processes don't need trust, ZK-STARKs don't need trusted setup.
@@ -46,6 +46,6 @@
     Alternatives: ZK-SNARKs, Other ZK Proofs, Trusted Setup Proofs, No Privacy
 
 11. **30-second explanation (your own words)**  
-    Implements ZK-STARKs, a type of zero-knowledge proof that is transparent (no trusted setup), scalable (efficient for large computations), and provides post-quantum security, enabling privacy without trusted setup.
+Implements ZK-STARKs, a type of zero-knowledge proof that is transparent (no trusted setup), scalable (efficient for large computations), and provides post-quantum security, enabling privacy without trusted setup.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

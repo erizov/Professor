@@ -4,10 +4,10 @@
    Self Service Analytics
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements self service analytics algorithm.
+Implements self service analytics algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Self Service Analytics is a fundamental algorithm in computer science.
+Self Service Analytics is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

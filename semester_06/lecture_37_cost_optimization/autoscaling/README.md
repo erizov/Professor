@@ -27,7 +27,7 @@
    ML inference service: baseline 2 instances → traffic increases → CPU 80% for 5min → scale up to 5 instances → traffic decreases → CPU 30% for 10min → scale down to 2 instances → cost: pay only for instances used, not idle capacity.
 
 7. **Time & Space Complexity**  
-   - Time: O(1) for metric evaluation, O(T) for instance provisioning where T is instance startup time (typically 1-5 minutes).  
+   - Time: O(1) for metric evaluation, O(T) For example provisioning where T is instance startup time (typically 1-5 minutes).  
    - Space: O(N·R) where N is number of instances, R is resources per instance (scales with demand).
 
 8. **Strengths**  

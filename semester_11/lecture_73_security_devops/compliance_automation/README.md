@@ -4,7 +4,7 @@
    Compliance Automation
 
 2. **What problem does it solve? (1 sentence)**  
-   Automates compliance checks, validation, and reporting to ensure infrastructure and applications meet regulatory requirements and security standards continuously.
+Automates compliance checks, validation, and reporting to ensure infrastructure and applications meet regulatory requirements and security standards continuously.
 
 3. **Intuition (plain-language explanation)**  
    Like automated quality control: Compliance Automation is like automated quality control in manufacturing - instead of manually checking each product (infrastructure), automated systems continuously check everything (compliance) and flag issues - just as automated QC ensures consistent quality, compliance automation ensures consistent compliance with regulations.
@@ -46,6 +46,6 @@
     Alternatives: Manual Compliance, Periodic Audits, Compliance Tools, Policy as Code
 
 11. **30-second explanation (your own words)**  
-    Automates compliance checks, validation, and reporting to ensure infrastructure and applications meet regulatory requirements and security standards continuously.
+Automates compliance checks, validation, and reporting to ensure infrastructure and applications meet regulatory requirements and security standards continuously.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

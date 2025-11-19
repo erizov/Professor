@@ -4,10 +4,10 @@
    Knowledge Validation
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements knowledge validation algorithm.
+Implements knowledge validation algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Knowledge Validation is a fundamental algorithm in computer science.
+Knowledge Validation is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

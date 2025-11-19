@@ -4,10 +4,10 @@
    Data Monitoring
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements data monitoring algorithm.
+Implements data monitoring algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Data Monitoring is a fundamental algorithm in computer science.
+Data Monitoring is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

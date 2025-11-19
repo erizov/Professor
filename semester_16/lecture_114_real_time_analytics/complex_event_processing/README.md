@@ -4,10 +4,10 @@
    Complex Event Processing
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements complex event processing algorithm.
+Implements complex event processing algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Complex Event Processing is a fundamental algorithm in computer science.
+Complex Event Processing is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

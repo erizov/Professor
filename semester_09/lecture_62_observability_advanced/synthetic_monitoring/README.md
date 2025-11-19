@@ -7,7 +7,7 @@
    Proactively monitors application availability and performance by simulating user interactions and transactions, detecting issues before real users are affected.
 
 3. **Intuition (plain-language explanation)**  
-   Like a robot tester: synthetic monitoring is like having a robot that continuously tests your application - the robot performs the same actions real users would do (like logging in, browsing products, making purchases) from different locations around the world - if the robot finds a problem (like slow response or error), it alerts you immediately, even if no real users have encountered it yet - it's like having a 24/7 quality assurance tester that never sleeps.
+Like a robot tester: synthetic monitoring is like having a robot that continuously tests your application - the robot performs the same actions real users would do (like logging in, browsing products, making purchases) from different locations around the world - if the robot finds a problem (like slow response or error), it alerts you immediately, even if no real users have encountered it yet - it's like having a 24/7 quality assurance tester that never sleeps.
 
 4. **Inputs & Outputs**  
    - Input: Test scripts, monitoring locations, test scenarios, frequency, thresholds.  

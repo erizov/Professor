@@ -4,10 +4,10 @@
    Knowledge Base Ai
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements knowledge base ai algorithm.
+Implements knowledge base ai algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Knowledge Base Ai is a fundamental algorithm in computer science.
+Knowledge Base Ai is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

@@ -4,10 +4,10 @@
    Data Testing
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements data testing algorithm.
+Implements data testing algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Data Testing is a fundamental algorithm in computer science.
+Data Testing is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

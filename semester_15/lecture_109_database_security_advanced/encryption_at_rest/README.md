@@ -4,10 +4,10 @@
    Encryption At Rest
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements encryption at rest algorithm.
+Implements encryption at rest algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Encryption At Rest is a fundamental algorithm in computer science.
+Encryption At Rest is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

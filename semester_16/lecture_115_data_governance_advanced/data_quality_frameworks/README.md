@@ -4,10 +4,10 @@
    Data Quality Frameworks
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements data quality frameworks algorithm.
+Implements data quality frameworks algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Data Quality Frameworks is a fundamental algorithm in computer science.
+Data Quality Frameworks is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

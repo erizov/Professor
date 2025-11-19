@@ -46,6 +46,5 @@
     Alternatives: Quantum Simulators, Classical Simulation, Quantum Annealers, Specialized Quantum
 
 11. **30-second explanation (your own words)**  
-    Designs and implements quantum processors (quantum processing units), the hardware that executes quantum algorithms, managing qubits, gates, and quantum operations.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

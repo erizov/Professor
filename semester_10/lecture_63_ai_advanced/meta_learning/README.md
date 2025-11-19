@@ -10,8 +10,8 @@
    Like learning study techniques: Meta-Learning is like learning how to study effectively - once you know good study techniques (meta-knowledge), you can quickly learn any new subject - meta-learning does this for AI: it learns general learning strategies from many tasks, then uses those strategies to quickly learn new tasks with little data.
 
 4. **Inputs & Outputs**  
-   - Input: Multiple training tasks, few examples per task, meta-learning algorithm, adaptation mechanism.  
-   - Output: Meta-learned model, fast adaptation, learning strategies, few-shot capability, efficient learner.
+- Input: Multiple training tasks, few examples per task, meta-learning algorithm, adaptation mechanism.
+- Output: Meta-learned model, fast adaptation, learning strategies, few-shot capability, efficient learner.
 
 5. **Step-by-step description (5–10 lines max)**  
 1. Sample tasks: sample multiple tasks from task distribution.

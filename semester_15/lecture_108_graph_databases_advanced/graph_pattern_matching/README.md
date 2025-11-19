@@ -4,10 +4,10 @@
    Graph Pattern Matching
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements graph pattern matching algorithm.
+Implements graph pattern matching algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Graph Pattern Matching is a fundamental algorithm in computer science.
+Graph Pattern Matching is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

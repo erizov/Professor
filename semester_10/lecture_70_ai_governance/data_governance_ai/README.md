@@ -7,7 +7,7 @@
    Establishes policies, processes, and controls for managing AI data throughout its lifecycle, ensuring data quality, privacy, security, and compliance.
 
 3. **Intuition (plain-language explanation)**  
-   Like a library system: Data Governance for AI is like a library system for data - it defines rules for how data is organized (cataloging), who can access it (access control), how it's maintained (quality, updates), and how it's protected (security) - just as libraries ensure books are organized, accessible, and protected, data governance ensures AI data is managed properly throughout its lifecycle.
+Like a library system: Data Governance for AI is like a library system for data - it defines rules for how data is organized (cataloging), who can access it (access control), how it's maintained (quality, updates), and how it's protected (security) - just as libraries ensure books are organized, accessible, and protected, data governance ensures AI data is managed properly throughout its lifecycle.
 
 4. **Inputs & Outputs**  
    - Input: Data assets, governance policies, data quality rules, privacy requirements, access controls.  
@@ -46,6 +46,5 @@
     Alternatives: No Governance, Ad-Hoc Data Management, Lightweight Governance, Heavy Governance
 
 11. **30-second explanation (your own words)**  
-    Establishes policies, processes, and controls for managing AI data throughout its lifecycle, ensuring data quality, privacy, security, and compliance.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

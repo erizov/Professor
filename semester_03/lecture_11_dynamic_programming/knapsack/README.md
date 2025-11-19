@@ -39,6 +39,6 @@
     Alternatives: Fractional Knapsack (greedy), Unbounded Knapsack, Multiple Knapsack
 
 11. **30-second explanation (your own words)**  
-    Dynamic programming builds optimal solution by considering each item and all possible remaining capacities, choosing whether to include the item.
+Dynamic programming builds optimal solution by considering each item and all possible remaining capacities, choosing whether to include the item.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

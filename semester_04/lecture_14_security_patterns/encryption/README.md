@@ -10,7 +10,7 @@
    Like a secret code: scramble data using a key so only those with the key can unscramble and read it.
 
 4. **Inputs & Outputs**  
-   - Input: Plaintext data, encryption key, encryption algorithm (symmetric or asymmetric).  
+- Input: Plaintext data, encryption key, encryption algorithm (symmetric or asymmetric).
    - Output: Ciphertext (encrypted data) and optionally initialization vector (IV) or nonce.
 
 5. **Step-by-step description (5–10 lines max)**  

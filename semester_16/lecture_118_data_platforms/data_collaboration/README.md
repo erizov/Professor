@@ -4,10 +4,10 @@
    Data Collaboration
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements data collaboration algorithm.
+Implements data collaboration algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Data Collaboration is a fundamental algorithm in computer science.
+Data Collaboration is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

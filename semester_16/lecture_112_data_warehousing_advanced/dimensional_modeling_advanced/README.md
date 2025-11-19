@@ -4,10 +4,10 @@
    Dimensional Modeling Advanced
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements dimensional modeling advanced algorithm.
+Implements dimensional modeling advanced algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Dimensional Modeling Advanced is a fundamental algorithm in computer science.
+Dimensional Modeling Advanced is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

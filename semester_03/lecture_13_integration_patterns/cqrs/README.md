@@ -4,7 +4,7 @@
    CQRS (Command Query Responsibility Segregation)
 
 2. **What problem does it solve? (1 sentence)**  
-   Separates read and write operations into different models to optimize performance, scalability, and maintainability of data access.
+Separates read and write operations into different models to optimize performance, scalability, and maintainability of data access.
 
 3. **Intuition (plain-language explanation)**  
    Split your data model: commands (writes) use one model optimized for updates, queries (reads) use another optimized for fast retrieval.

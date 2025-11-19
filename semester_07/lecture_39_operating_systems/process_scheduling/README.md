@@ -4,13 +4,13 @@
    Process Scheduling
 
 2. **What problem does it solve? (1 sentence)**  
-   Determines which process runs on CPU at any given time, managing process execution order to maximize CPU utilization, ensure fairness, and meet real-time constraints.
+Determines which process runs on CPU at any given time, managing process execution order to maximize CPU utilization, ensure fairness, and meet real-time constraints.
 
 3. **Intuition (plain-language explanation)**  
    Like a traffic controller managing cars at an intersection: the scheduler decides which process (car) gets to use the CPU (intersection) next, considering priorities (emergency vehicles first), fairness (everyone gets a turn), and efficiency (keep traffic flowing).
 
 4. **Inputs & Outputs**  
-   - Input: Ready processes, process priorities, scheduling algorithm, CPU time quantum, process states.  
+- Input: Ready processes, process priorities, scheduling algorithm, CPU time quantum, process states.
    - Output: Process execution order, CPU allocation decisions, process state transitions (running, ready, waiting).
 
 5. **Step-by-step description (5–10 lines max)**  
@@ -44,6 +44,6 @@
     Alternatives: Cooperative Multitasking, Single-tasking, Gang Scheduling, Real-time Scheduling
 
 11. **30-second explanation (your own words)**  
-    Determines which process runs on CPU at any given time, managing process execution order to maximize CPU utilization, ensure fairness, and meet real-time constraints through various scheduling algorithms.
+Determines which process runs on CPU at any given time, managing process execution order to maximize CPU utilization, ensure fairness, and meet real-time constraints through various scheduling algorithms.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

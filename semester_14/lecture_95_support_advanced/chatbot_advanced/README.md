@@ -4,7 +4,7 @@
    Advanced Chatbots
 
 2. **What problem does it solve? (1 sentence)**  
-   Creates sophisticated chatbots with natural language understanding, context awareness, multi-turn conversations, integration with backend systems, and learning capabilities for effective customer interactions.
+Creates sophisticated chatbots with natural language understanding, context awareness, multi-turn conversations, integration with backend systems, and learning capabilities for effective customer interactions.
 
 3. **Intuition (plain-language explanation)**  
    Like a smart conversational assistant: Advanced chatbots are like smart conversational assistants - they understand natural language (not just keywords), remember context (conversation history), handle complex conversations (multi-turn), and integrate with systems (APIs) - just as a human assistant would, but available 24/7.
@@ -46,6 +46,6 @@
     Alternatives: Simple Chatbots, Rule-Based Bots, Human Support, Hybrid Approaches
 
 11. **30-second explanation (your own words)**  
-    Sophisticated chatbots with natural language understanding, context awareness, and system integration for effective customer interactions.
+Sophisticated chatbots with natural language understanding, context awareness, and system integration for effective customer interactions.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

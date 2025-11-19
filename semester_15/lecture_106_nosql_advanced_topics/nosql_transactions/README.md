@@ -4,10 +4,10 @@
    Nosql Transactions
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements nosql transactions algorithm.
+Implements nosql transactions algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Nosql Transactions is a fundamental algorithm in computer science.
+Nosql Transactions is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

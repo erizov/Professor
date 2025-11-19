@@ -46,6 +46,5 @@
     Alternatives: No Testing, Manual Testing, Simulation, Production Incidents
 
 11. **30-second explanation (your own words)**  
-    Designs and executes controlled experiments that inject failures into systems to test resilience, identify weaknesses, and validate recovery mechanisms.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

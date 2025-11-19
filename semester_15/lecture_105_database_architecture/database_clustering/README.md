@@ -4,10 +4,10 @@
    Database Clustering
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements database clustering algorithm.
+Implements database clustering algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Database Clustering is a fundamental algorithm in computer science.
+Database Clustering is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

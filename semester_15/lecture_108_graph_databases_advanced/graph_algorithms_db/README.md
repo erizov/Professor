@@ -4,10 +4,10 @@
    Graph Algorithms Db
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements graph algorithms db algorithm.
+Implements graph algorithms db algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Graph Algorithms Db is a fundamental algorithm in computer science.
+Graph Algorithms Db is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

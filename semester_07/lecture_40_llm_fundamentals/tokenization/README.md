@@ -4,7 +4,7 @@
    Tokenization
 
 2. **What problem does it solve? (1 sentence)**  
-   Converts raw text into discrete tokens (subwords, words, or characters) that can be processed by language models, enabling efficient representation and handling of vocabulary limitations.
+Converts raw text into discrete tokens (subwords, words, or characters) that can be processed by language models, enabling efficient representation and handling of vocabulary limitations.
 
 3. **Intuition (plain-language explanation)**  
    Like breaking a sentence into building blocks: tokenization splits text into smaller pieces (tokens) - instead of storing every possible word (huge vocabulary), it breaks words into subword pieces (like 'un-happy', 'play-ing') that can be recombined, making the vocabulary manageable.
@@ -44,6 +44,6 @@
     Alternatives: Character-level, Word-level, Byte-level, Sentence-level
 
 11. **30-second explanation (your own words)**  
-    Converts raw text into discrete tokens using subword tokenization algorithms, enabling efficient representation and handling of vocabulary limitations while preserving semantic information.
+Converts raw text into discrete tokens using subword tokenization algorithms, enabling efficient representation and handling of vocabulary limitations while preserving semantic information.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

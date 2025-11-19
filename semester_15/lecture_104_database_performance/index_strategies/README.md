@@ -4,10 +4,10 @@
    Index Strategies
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements index strategies algorithm.
+Implements index strategies algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Index Strategies is a fundamental algorithm in computer science.
+Index Strategies is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

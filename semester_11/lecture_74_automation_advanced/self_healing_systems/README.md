@@ -7,7 +7,7 @@
    Automatically detects, diagnoses, and repairs system failures and issues without human intervention, maintaining system availability and reliability.
 
 3. **Intuition (plain-language explanation)**  
-   Like the human immune system: Self-Healing Systems are like the human immune system - when you get sick (system failure), your body detects it (monitoring), identifies the problem (diagnosis), and fixes it (healing) automatically - just as your immune system keeps you healthy, self-healing systems keep infrastructure healthy by automatically fixing problems.
+Like the human immune system: Self-Healing Systems are like the human immune system - when you get sick (system failure), your body detects it (monitoring), identifies the problem (diagnosis), and fixes it (healing) automatically - just as your immune system keeps you healthy, self-healing systems keep infrastructure healthy by automatically fixing problems.
 
 4. **Inputs & Outputs**  
    - Input: System metrics, health checks, failure patterns, healing strategies, recovery procedures, automation scripts.  
@@ -46,6 +46,5 @@
     Alternatives: Manual Recovery, Alert-Only, Automated Remediation, Reactive Systems
 
 11. **30-second explanation (your own words)**  
-    Automatically detects, diagnoses, and repairs system failures and issues without human intervention, maintaining system availability and reliability.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

@@ -46,6 +46,5 @@
     Alternatives: Custom Design, Ad-Hoc Infrastructure, Template-Based, Pattern Libraries
 
 11. **30-second explanation (your own words)**  
-    Provides proven, reusable patterns for designing and organizing infrastructure components, enabling consistent, scalable, and maintainable infrastructure architectures.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

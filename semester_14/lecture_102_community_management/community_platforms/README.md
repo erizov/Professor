@@ -46,6 +46,5 @@
     Alternatives: No Platform, Basic Forums, Social Media, Third-Party Platforms
 
 11. **30-second explanation (your own words)**  
-    Platforms and tools for building, managing, and growing developer communities with features for discussion, collaboration, and engagement.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

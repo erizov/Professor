@@ -7,7 +7,7 @@
    Consolidates data from multiple sources into a centralized, structured repository optimized for analytical queries and business intelligence, enabling historical analysis and reporting.
 
 3. **Intuition (plain-language explanation)**  
-   Like a company's central archive: data warehousing is like a company's central archive where all important documents (data) from different departments (sources) are collected, organized, and stored in a structured way - unlike operational systems (like active filing cabinets) that handle day-to-day transactions, the warehouse (archive) is optimized for finding and analyzing historical information (like 'how did sales change over the past 5 years?') - it's designed for reading and analyzing, not for frequent updates.
+Like a company's central archive: data warehousing is like a company's central archive where all important documents (data) from different departments (sources) are collected, organized, and stored in a structured way - unlike operational systems (like active filing cabinets) that handle day-to-day transactions, the warehouse (archive) is optimized for finding and analyzing historical information (like 'how did sales change over the past 5 years?') - it's designed for reading and analyzing, not for frequent updates.
 
 4. **Inputs & Outputs**  
    - Input: Source data (operational databases, files, APIs), ETL processes, dimensional model, business requirements.  

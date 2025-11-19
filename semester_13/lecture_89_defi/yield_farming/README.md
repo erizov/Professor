@@ -7,7 +7,7 @@
    Implements yield farming strategies that maximize returns by moving assets between different DeFi protocols to earn the highest yields, incentivizing liquidity provision and protocol usage.
 
 3. **Intuition (plain-language explanation)**  
-   Like optimizing returns: Yield Farming is like optimizing investment returns - you move money between different investments (DeFi protocols) to earn the highest interest - just as you optimize investment returns, yield farmers optimize DeFi returns.
+Like optimizing returns: Yield Farming is like optimizing investment returns - you move money between different investments (DeFi protocols) to earn the highest interest - just as you optimize investment returns, yield farmers optimize DeFi returns.
 
 4. **Inputs & Outputs**  
    - Input: Assets, DeFi protocols, yield rates, liquidity pools, farming strategies, reward tokens.  

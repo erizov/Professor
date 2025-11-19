@@ -4,10 +4,10 @@
    Application Performance Monitoring (APM)
 
 2. **What problem does it solve? (1 sentence)**  
-   Monitors application performance in real-time, tracking response times, throughput, error rates, and resource usage to identify performance bottlenecks and optimize application behavior.
+Monitors application performance in real-time, tracking response times, throughput, error rates, and resource usage to identify performance bottlenecks and optimize application behavior.
 
 3. **Intuition (plain-language explanation)**  
-   Like a fitness tracker for applications: APM is like a fitness tracker that continuously monitors your application's health - it tracks how fast it responds (response time), how much work it does (throughput), how often it makes mistakes (error rate), and how much energy it uses (resource usage) - when something's wrong (like slow response), it alerts you and shows you exactly where the problem is (like which function is slow), helping you fix it quickly.
+Like a fitness tracker for applications: APM is like a fitness tracker that continuously monitors your application's health - it tracks how fast it responds (response time), how much work it does (throughput), how often it makes mistakes (error rate), and how much energy it uses (resource usage) - when something's wrong (like slow response), it alerts you and shows you exactly where the problem is (like which function is slow), helping you fix it quickly.
 
 4. **Inputs & Outputs**  
    - Input: Application metrics, traces, logs, performance counters, user transactions.  
@@ -46,6 +46,6 @@
     Alternatives: Logging, Custom Metrics, Performance Testing, Profiling
 
 11. **30-second explanation (your own words)**  
-    Monitors application performance in real-time, tracking response times, throughput, error rates, and resource usage to identify performance bottlenecks and optimize application behavior.
+Monitors application performance in real-time, tracking response times, throughput, error rates, and resource usage to identify performance bottlenecks and optimize application behavior.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

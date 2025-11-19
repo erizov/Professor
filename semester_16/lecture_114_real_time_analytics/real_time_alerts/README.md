@@ -4,10 +4,10 @@
    Real Time Alerts
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements real time alerts algorithm.
+Implements real time alerts algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Real Time Alerts is a fundamental algorithm in computer science.
+Real Time Alerts is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

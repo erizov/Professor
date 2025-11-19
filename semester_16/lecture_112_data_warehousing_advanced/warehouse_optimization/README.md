@@ -4,10 +4,10 @@
    Warehouse Optimization
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements warehouse optimization algorithm.
+Implements warehouse optimization algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Warehouse Optimization is a fundamental algorithm in computer science.
+Warehouse Optimization is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

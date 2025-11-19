@@ -36,7 +36,7 @@
 - Deep recursion can overflow the stack on large graphs.
 
 10. **Compare with alternatives**  
-    Alternatives: Breadth-First Search, Iterative Deepening DFS, Tarjan's Algorithm
+Alternatives: Breadth-First Search, Iterative Deepening DFS, Tarjan's Algorithm
 
 11. **30-second explanation (your own words)**  
     Explores one branch completely before moving to the next, making it ideal for exhaustive search and backtracking problems.

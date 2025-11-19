@@ -4,10 +4,10 @@
    Time Series Compression
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements time series compression algorithm.
+Implements time series compression algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Time Series Compression is a fundamental algorithm in computer science.
+Time Series Compression is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

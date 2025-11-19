@@ -46,6 +46,5 @@
     Alternatives: No Auditing, Selective Logging, Event Logging, Compliance Logging
 
 11. **30-second explanation (your own words)**  
-    Maintains comprehensive logs of all AI system activities, decisions, and data access, enabling accountability, compliance, and forensic analysis of AI operations.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

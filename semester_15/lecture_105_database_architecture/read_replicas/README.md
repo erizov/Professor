@@ -4,10 +4,10 @@
    Read Replicas
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements read replicas algorithm.
+Implements read replicas algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Read Replicas is a fundamental algorithm in computer science.
+Read Replicas is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

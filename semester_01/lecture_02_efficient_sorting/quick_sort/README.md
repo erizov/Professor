@@ -4,7 +4,7 @@
    Quick Sort
 
 2. **What problem does it solve? (1 sentence)**  
-   Efficient in-place sort that partitions around a pivot and recursively sorts partitions.
+Efficient in-place sort that partitions around a pivot and recursively sorts partitions.
 
 3. **Intuition (plain-language explanation)**  
    Pick a pivot, move smaller items left and larger right, then repeat on the two sides.
@@ -17,7 +17,6 @@
 1. Choose a pivot element.
 2. Partition the array so items < pivot go left, > pivot go right.
 3. Recursively quick sort the left partition.
-4. Recursively quick sort the right partition.
 5. Concatenate left + pivot + right segments.
 
 6. **Tiny example (hand-simulated)**  

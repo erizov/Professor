@@ -7,7 +7,7 @@
    Identifies and groups blockchain addresses that belong to the same entity by analyzing transaction patterns, heuristics, and graph analysis to understand ownership and behavior.
 
 3. **Intuition (plain-language explanation)**  
-   Like detective work: Address clustering is like detective work - you analyze clues (transaction patterns, common inputs, change addresses) to figure out which addresses belong to the same person or entity - just as a detective connects evidence, you connect addresses based on behavioral patterns and heuristics to reveal the true ownership structure.
+Like detective work: Address clustering is like detective work - you analyze clues (transaction patterns, common inputs, change addresses) to figure out which addresses belong to the same person or entity - just as a detective connects evidence, you connect addresses based on behavioral patterns and heuristics to reveal the true ownership structure.
 
 4. **Inputs & Outputs**  
    - Input: Blockchain transactions, addresses, transaction graphs, heuristics, clustering algorithms, analysis parameters.  

@@ -39,6 +39,6 @@
     Alternatives: Sorted Array, Balanced BST, Skip List
 
 11. **30-second explanation (your own words)**  
-    A data structure that always gives you the most important item first, perfect for scheduling and optimization.
+A data structure that always gives you the most important item first, perfect for scheduling and optimization.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

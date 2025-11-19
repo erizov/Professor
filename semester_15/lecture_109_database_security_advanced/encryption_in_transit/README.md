@@ -4,10 +4,10 @@
    Encryption In Transit
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements encryption in transit algorithm.
+Implements encryption in transit algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Encryption In Transit is a fundamental algorithm in computer science.
+Encryption In Transit is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

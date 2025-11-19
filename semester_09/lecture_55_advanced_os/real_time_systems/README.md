@@ -46,6 +46,5 @@
     Alternatives: General-Purpose OS, Soft Real-Time Systems, Event-Driven Systems, Time-Triggered Systems
 
 11. **30-second explanation (your own words)**  
-    Processes tasks and responds to events within strict timing constraints, ensuring predictable and deterministic behavior for time-critical applications.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

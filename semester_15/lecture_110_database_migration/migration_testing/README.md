@@ -4,10 +4,10 @@
    Migration Testing
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements migration testing algorithm.
+Implements migration testing algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Migration Testing is a fundamental algorithm in computer science.
+Migration Testing is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

@@ -43,7 +43,7 @@
 - Hardware-specific: some optimizations are hardware-specific.
 
 10. **Compare with alternatives**  
-    Alternatives: Standard Transformers, Efficient Architectures, Model Compression, Hardware Acceleration
+Alternatives: Standard Transformers, Efficient Architectures, Model Compression, Hardware Acceleration
 
 11. **30-second explanation (your own words)**  
     Optimizes transformer architectures for efficiency, speed, and scalability through architectural improvements, algorithmic optimizations, and hardware-aware design while maintaining model quality.

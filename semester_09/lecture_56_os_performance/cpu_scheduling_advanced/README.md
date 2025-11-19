@@ -4,7 +4,7 @@
    Advanced CPU Scheduling
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements sophisticated CPU scheduling algorithms that optimize for multiple objectives (throughput, latency, fairness, energy efficiency) using multi-level queues, priority inheritance, and dynamic priority adjustment.
+Implements sophisticated CPU scheduling algorithms that optimize for multiple objectives (throughput, latency, fairness, energy efficiency) using multi-level queues, priority inheritance, and dynamic priority adjustment.
 
 3. **Intuition (plain-language explanation)**  
    Like a smart traffic management system: advanced CPU scheduling is like a sophisticated traffic management system that doesn't just use simple rules (like first-come-first-served) but adapts dynamically - it has multiple lanes (priority queues) for different types of traffic (process types), adjusts priorities based on behavior (interactive processes get priority boost), prevents starvation (aging), and optimizes for multiple goals (fast response for users, high throughput for batch jobs, energy efficiency for mobile devices).
@@ -46,6 +46,6 @@
     Alternatives: Round Robin, Priority Scheduling, Multilevel Queue, Lottery Scheduling
 
 11. **30-second explanation (your own words)**  
-    Implements sophisticated CPU scheduling algorithms that optimize for multiple objectives (throughput, latency, fairness, energy efficiency) using multi-level queues, priority inheritance, and dynamic priority adjustment.
+Implements sophisticated CPU scheduling algorithms that optimize for multiple objectives (throughput, latency, fairness, energy efficiency) using multi-level queues, priority inheritance, and dynamic priority adjustment.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

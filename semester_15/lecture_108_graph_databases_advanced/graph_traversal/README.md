@@ -4,10 +4,10 @@
    Graph Traversal
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements graph traversal algorithm.
+Implements graph traversal algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Graph Traversal is a fundamental algorithm in computer science.
+Graph Traversal is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

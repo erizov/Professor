@@ -68,7 +68,7 @@ By the end of this semester, students will:
 5. **Check termination**: Verify if algorithm should continue
 6. **Return result**: Output final result when complete
 
-*Note: Specific steps depend on the algorithm implementation. See code for details.*
+*Note: Specific steps depend on It implementation. See code for details.*
 
 ## Detailed Explanation
 

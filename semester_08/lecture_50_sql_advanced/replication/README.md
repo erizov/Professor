@@ -7,7 +7,7 @@
    Maintains multiple copies of database across different servers, enabling high availability, load distribution, and disaster recovery.
 
 3. **Intuition (plain-language explanation)**  
-   Like making backup copies: database replication is like photocopying important documents and storing them in different locations - if one copy is lost or unavailable, you have others. It also lets multiple people read from different copies simultaneously (like multiple people reading different copies of the same book), distributing the load.
+Like making backup copies: database replication is like photocopying important documents and storing them in different locations - if one copy is lost or unavailable, you have others. It also lets multiple people read from different copies simultaneously (like multiple people reading different copies of the same book), distributing the load.
 
 4. **Inputs & Outputs**  
    - Input: Primary database, replication configuration, network connection, replication method.  
@@ -45,6 +45,5 @@
     Alternatives: Single Database, Backup and Restore, Clustering, Sharding
 
 11. **30-second explanation (your own words)**  
-    Maintains multiple copies of database across different servers, enabling high availability, load distribution, and disaster recovery.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

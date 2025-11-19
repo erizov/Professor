@@ -4,14 +4,14 @@
    Quantum Optimization Tools
 
 2. **What problem does it solve? (1 sentence)**  
-   Provides tools and frameworks for quantum optimization, enabling developers to formulate, solve, and optimize problems using quantum algorithms like QAOA and quantum annealing.
+Provides tools and frameworks for quantum optimization, enabling developers to formulate, solve, and optimize problems using quantum algorithms like QAOA and quantum annealing.
 
 3. **Intuition (plain-language explanation)**  
-   Like optimization tools for quantum: Quantum Optimization Tools are like optimization tools but for quantum computers - you use tools to formulate problems (like QUBO), solve them with quantum algorithms, and optimize solutions - just as optimization tools help solve classical problems, quantum optimization tools help solve problems with quantum computers.
+Like optimization tools for quantum: Quantum Optimization Tools are like optimization tools but for quantum computers - you use tools to formulate problems (like QUBO), solve them with quantum algorithms, and optimize solutions - just as optimization tools help solve classical problems, quantum optimization tools help solve problems with quantum computers.
 
 4. **Inputs & Outputs**  
-   - Input: Optimization problems, problem formulations, quantum algorithms, optimization parameters, tools and frameworks.  
-   - Output: Optimized solutions, problem formulations, quantum circuits, optimization results, tool outputs.
+- Input: Optimization problems, problem formulations, quantum algorithms, optimization parameters, tools and frameworks.
+- Output: Optimized solutions, problem formulations, quantum circuits, optimization results, tool outputs.
 
 5. **Step-by-step description (5–10 lines max)**  
 1. Formulate: formulate problem (QUBO, Ising).
@@ -46,6 +46,6 @@
     Alternatives: Manual Formulation, Classical Optimization Tools, Quantum-Inspired, Custom Solutions
 
 11. **30-second explanation (your own words)**  
-    Provides tools and frameworks for quantum optimization, enabling developers to formulate, solve, and optimize problems using quantum algorithms like QAOA and quantum annealing.
+Provides tools and frameworks for quantum optimization, enabling developers to formulate, solve, and optimize problems using quantum algorithms like QAOA and quantum annealing.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

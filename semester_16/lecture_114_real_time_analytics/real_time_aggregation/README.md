@@ -4,10 +4,10 @@
    Real Time Aggregation
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements real time aggregation algorithm.
+Implements real time aggregation algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Real Time Aggregation is a fundamental algorithm in computer science.
+Real Time Aggregation is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

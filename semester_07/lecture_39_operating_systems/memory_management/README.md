@@ -4,7 +4,7 @@
    Memory Management
 
 2. **What problem does it solve? (1 sentence)**  
-   Manages computer memory allocation and deallocation for processes, tracking which memory is in use, allocating memory to processes, and reclaiming memory when processes terminate, preventing memory leaks and ensuring efficient memory utilization.
+Manages computer memory allocation and deallocation for processes, tracking which memory is in use, allocating memory to processes, and reclaiming memory when processes terminate, preventing memory leaks and ensuring efficient memory utilization.
 
 3. **Intuition (plain-language explanation)**  
    Like a hotel manager assigning rooms: the OS manages computer memory like a hotel - when a process needs memory (guest needs room), allocate it (assign room), track what's allocated (room registry), and when process ends (guest checks out), free the memory (clean room for next guest).
@@ -44,6 +44,6 @@
     Alternatives: Manual Memory Management, Garbage Collection, Reference Counting, Memory Pools
 
 11. **30-second explanation (your own words)**  
-    Manages computer memory allocation and deallocation for processes, tracking memory state, allocating memory on demand, and reclaiming memory when processes terminate, ensuring efficient memory utilization and preventing conflicts.
+Manages computer memory allocation and deallocation for processes, tracking memory state, allocating memory on demand, and reclaiming memory when processes terminate, ensuring efficient memory utilization and preventing conflicts.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

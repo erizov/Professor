@@ -4,7 +4,7 @@
    PBFT (Practical Byzantine Fault Tolerance)
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements PBFT consensus algorithm, a Byzantine fault-tolerant consensus protocol that tolerates up to (n-1)/3 Byzantine failures in a network of n nodes, providing fast finality and high throughput.
+Implements PBFT consensus algorithm, a Byzantine fault-tolerant consensus protocol that tolerates up to (n-1)/3 Byzantine failures in a network of n nodes, providing fast finality and high throughput.
 
 3. **Intuition (plain-language explanation)**  
    Like agreement despite liars: PBFT is like reaching agreement even when some people lie (Byzantine failures) - you need 2/3 honest nodes to agree, and you can tolerate up to 1/3 liars - just as you can reach consensus despite some dishonest participants, PBFT reaches consensus despite Byzantine failures.
@@ -46,6 +46,6 @@
     Alternatives: Proof of Work, Proof of Stake, Other BFT, HotStuff
 
 11. **30-second explanation (your own words)**  
-    Implements PBFT consensus algorithm, a Byzantine fault-tolerant consensus protocol that tolerates up to (n-1)/3 Byzantine failures in a network of n nodes, providing fast finality and high throughput.
+Implements PBFT consensus algorithm, a Byzantine fault-tolerant consensus protocol that tolerates up to (n-1)/3 Byzantine failures in a network of n nodes, providing fast finality and high throughput.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

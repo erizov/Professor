@@ -4,10 +4,10 @@
    Nosql Consistency Models
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements nosql consistency models algorithm.
+Implements nosql consistency models algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Nosql Consistency Models is a fundamental algorithm in computer science.
+Nosql Consistency Models is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

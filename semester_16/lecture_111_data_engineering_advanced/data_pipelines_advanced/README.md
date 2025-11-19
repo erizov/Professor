@@ -4,10 +4,10 @@
    Data Pipelines Advanced
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements data pipelines advanced algorithm.
+Implements data pipelines advanced algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Data Pipelines Advanced is a fundamental algorithm in computer science.
+Data Pipelines Advanced is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

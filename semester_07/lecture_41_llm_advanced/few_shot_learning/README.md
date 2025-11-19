@@ -44,6 +44,5 @@
     Alternatives: Zero-shot Learning, Fine-tuning, Prompt Engineering, In-context Learning
 
 11. **30-second explanation (your own words)**  
-    Enables LLMs to learn new tasks from just a few examples provided in the prompt, allowing task adaptation without fine-tuning through in-context learning.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

@@ -4,10 +4,10 @@
    Row Level Security
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements row level security algorithm.
+Implements row level security algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Row Level Security is a fundamental algorithm in computer science.
+Row Level Security is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

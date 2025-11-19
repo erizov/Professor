@@ -4,10 +4,10 @@
    Model Registry Advanced
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements model registry advanced algorithm.
+Implements model registry advanced algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Model Registry Advanced is a fundamental algorithm in computer science.
+Model Registry Advanced is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

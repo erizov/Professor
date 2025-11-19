@@ -7,7 +7,7 @@
    Optimizes ML model inference on GPUs by leveraging parallel computation, memory management, kernel fusion, and hardware-specific optimizations to maximize throughput and minimize latency.
 
 3. **Intuition (plain-language explanation)**  
-   Like tuning a race car for the track: optimize your model to take full advantage of GPU's parallel processing power - organize data efficiently, fuse operations, use optimized kernels, and manage memory to get maximum speed from the hardware.
+Like tuning a race car for the track: optimize your model to take full advantage of GPU's parallel processing power - organize data efficiently, fuse operations, use optimized kernels, and manage memory to get maximum speed from the hardware.
 
 4. **Inputs & Outputs**  
    - Input: ML model, GPU hardware, optimization techniques (kernel fusion, memory optimization, mixed precision), inference runtime.  

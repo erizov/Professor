@@ -47,5 +47,4 @@
 
 11. **30-second explanation (your own words)**  
     Systematically experiments on distributed systems by injecting failures and disruptions to test resilience, identify weaknesses, and improve system reliability through controlled chaos experiments.
-
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

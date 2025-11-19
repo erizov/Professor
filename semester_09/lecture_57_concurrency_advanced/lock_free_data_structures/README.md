@@ -7,7 +7,7 @@
    Implements concurrent data structures that guarantee progress for at least one thread without using locks, using atomic operations and compare-and-swap to achieve thread safety.
 
 3. **Intuition (plain-language explanation)**  
-   Like a self-service system: lock-free data structures are like a self-service checkout where multiple people can use it simultaneously without a cashier (lock) - the system uses smart mechanisms (atomic operations) that ensure if one person's transaction conflicts with another, at least one will succeed (progress guarantee) - people retry if their operation fails (optimistic concurrency), but the system never gets stuck waiting for a lock (no deadlocks).
+Like a self-service system: lock-free data structures are like a self-service checkout where multiple people can use it simultaneously without a cashier (lock) - the system uses smart mechanisms (atomic operations) that ensure if one person's transaction conflicts with another, at least one will succeed (progress guarantee) - people retry if their operation fails (optimistic concurrency), but the system never gets stuck waiting for a lock (no deadlocks).
 
 4. **Inputs & Outputs**  
    - Input: Concurrent operations, atomic operations (CAS, load-linked/store-conditional), retry logic, memory ordering.  

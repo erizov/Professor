@@ -7,7 +7,7 @@
    Achieves Byzantine fault tolerance with linear message complexity and optimistic responsiveness using a three-phase consensus protocol with a rotating leader and pipelined block proposals.
 
 3. **Intuition (plain-language explanation)**  
-   Like an efficient assembly line: HotStuff is like an efficient assembly line with a rotating supervisor (leader) - instead of stopping the line for each decision (expensive), the line keeps moving (pipelining) while the supervisor coordinates (three-phase consensus) - if the supervisor is slow, you rotate to a new one (leader change) - this enables fast, efficient consensus even with leader failures.
+Like an efficient assembly line: HotStuff is like an efficient assembly line with a rotating supervisor (leader) - instead of stopping the line for each decision (expensive), the line keeps moving (pipelining) while the supervisor coordinates (three-phase consensus) - if the supervisor is slow, you rotate to a new one (leader change) - this enables fast, optimized consensus even with leader failures.
 
 4. **Inputs & Outputs**  
    - Input: Transactions, leader rotation, replicas, consensus messages, timeout mechanisms.  

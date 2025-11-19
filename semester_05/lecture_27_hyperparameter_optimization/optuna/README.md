@@ -4,13 +4,13 @@
    Optuna
 
 2. **What problem does it solve? (1 sentence)**  
-   Automates hyperparameter optimization using state-of-the-art algorithms (TPE, CMA-ES) with efficient pruning and parallelization, making it easy to optimize complex search spaces.
+Automates hyperparameter optimization using state-of-the-art algorithms (TPE, CMA-ES) with efficient pruning and parallelization, making it easy to optimize complex search spaces.
 
 3. **Intuition (plain-language explanation)**  
    Like an intelligent lab assistant: automatically suggests which experiments (hyperparameters) to try next, stops unpromising ones early (pruning), and learns from results to suggest better ones.
 
 4. **Inputs & Outputs**  
-   - Input: Objective function, hyperparameter search space (define_param), optimization algorithm, pruning strategy.  
+- Input: Objective function, hyperparameter search space (define_param), optimization algorithm, pruning strategy.
    - Output: Optimal hyperparameter configuration and optimization history.
 
 5. **Step-by-step description (5–10 lines max)**  
@@ -40,6 +40,6 @@
     Alternatives: Hyperopt, Scikit-optimize, Bayesian Optimization, Grid/Random Search
 
 11. **30-second explanation (your own words)**  
-    Automates hyperparameter optimization using advanced algorithms like TPE with intelligent trial suggestion, pruning, and parallelization for efficient search.
+Automates hyperparameter optimization using advanced algorithms like TPE with intelligent trial suggestion, pruning, and parallelization for efficient search.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

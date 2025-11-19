@@ -4,7 +4,7 @@
    Automated Market Makers (AMM)
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements Automated Market Makers, decentralized exchange protocols that use mathematical formulas (like constant product formula) to determine asset prices and enable trading without traditional order books.
+Implements Automated Market Makers, decentralized exchange protocols that use mathematical formulas (like constant product formula) to determine asset prices and enable trading without traditional order books.
 
 3. **Intuition (plain-language explanation)**  
    Like automatic pricing: AMMs are like automatic pricing systems - instead of buyers and sellers matching orders (like traditional exchanges), a formula automatically sets prices based on supply and demand - just as automatic pricing adjusts prices, AMMs automatically price assets.
@@ -46,6 +46,6 @@
     Alternatives: Order Books, Centralized Exchanges, Other AMM Formulas, Hybrid Approaches
 
 11. **30-second explanation (your own words)**  
-    Implements Automated Market Makers, decentralized exchange protocols that use mathematical formulas (like constant product formula) to determine asset prices and enable trading without traditional order books.
+Implements Automated Market Makers, decentralized exchange protocols that use mathematical formulas (like constant product formula) to determine asset prices and enable trading without traditional order books.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

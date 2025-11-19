@@ -4,10 +4,10 @@
    Star Schema
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements star schema algorithm.
+Implements star schema algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Star Schema is a fundamental algorithm in computer science.
+Star Schema is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

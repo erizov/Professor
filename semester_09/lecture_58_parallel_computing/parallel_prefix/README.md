@@ -4,7 +4,7 @@
    Parallel Prefix (Scan)
 
 2. **What problem does it solve? (1 sentence)**  
-   Computes all prefix sums (or other associative operations) of an array in parallel, enabling efficient parallel computation of cumulative operations like running sums, maximums, or products.
+Computes all prefix sums (or other associative operations) of an array in parallel, enabling efficient parallel computation of cumulative operations like running sums, maximums, or products.
 
 3. **Intuition (plain-language explanation)**  
    Like calculating running totals in parallel: parallel prefix is like calculating running totals for a list of numbers, but doing it in parallel - instead of calculating each total sequentially (1, 1+2, 1+2+3, ...), you use a tree structure where you combine results at different levels, allowing multiple calculations to happen simultaneously - it's like having multiple people calculate different parts of the running totals and then combining their results.
@@ -45,6 +45,6 @@
     Alternatives: Sequential Scan, Parallel Reduction, Tree-based Algorithms, Recursive Doubling
 
 11. **30-second explanation (your own words)**  
-    Computes all prefix sums (or other associative operations) of an array in parallel, enabling efficient parallel computation of cumulative operations like running sums, maximums, or products.
+Computes all prefix sums (or other associative operations) of an array in parallel, enabling efficient parallel computation of cumulative operations like running sums, maximums, or products.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

@@ -7,7 +7,7 @@
    Applies sophisticated transfer learning techniques including domain adaptation, multi-task transfer, and progressive transfer to leverage knowledge from source domains and tasks for improved performance on target tasks.
 
 3. **Intuition (plain-language explanation)**  
-   Like learning from related experiences: advanced transfer learning is like a doctor who learned general medicine and then specializes - they transfer their general knowledge (source domain) to their specialty (target domain), adapting what's relevant and learning what's new - advanced transfer learning does this systematically: it identifies what knowledge transfers well, adapts it to the new domain, and progressively refines it, making learning much more efficient than starting from scratch.
+Like learning from related experiences: advanced transfer learning is like a doctor who learned general medicine and then specializes - they transfer their general knowledge (source domain) to their specialty (target domain), adapting what's relevant and learning what's new - advanced transfer learning does this systematically: it identifies what knowledge transfers well, adapts it to the new domain, and progressively refines it, making learning much more efficient than starting from scratch.
 
 4. **Inputs & Outputs**  
    - Input: Source model, source data, target data, domain adaptation strategies, transfer techniques.  

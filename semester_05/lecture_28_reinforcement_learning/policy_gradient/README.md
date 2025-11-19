@@ -7,7 +7,7 @@
    Directly optimizes stochastic policies by ascending the gradient of expected return, avoiding value-function approximation and enabling continuous action spaces.
 
 3. **Intuition (plain-language explanation)**  
-   Treat policy parameters like weights that determine action probabilities; adjust them to increase the likelihood of actions that yielded high rewards.
+Treat policy parameters like weights that determine action probabilities; adjust them to increase the likelihood of actions that yielded high rewards.
 
 4. **Inputs & Outputs**  
    - Input: Policy πθ(a|s), trajectories of states/actions/rewards, discount factor γ, baseline (optional).  

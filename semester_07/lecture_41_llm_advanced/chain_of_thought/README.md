@@ -4,7 +4,7 @@
    Chain of Thought (CoT)
 
 2. **What problem does it solve? (1 sentence)**  
-   Improves LLM reasoning by prompting the model to generate intermediate reasoning steps before producing the final answer, enabling better performance on complex reasoning tasks that require multi-step problem solving.
+Improves LLM reasoning by prompting the model to generate intermediate reasoning steps before producing the final answer, enabling better performance on complex reasoning tasks that require multi-step problem solving.
 
 3. **Intuition (plain-language explanation)**  
    Like showing your work in math class: instead of just giving the answer, the model is prompted to think step-by-step (show reasoning) before answering - this helps it solve complex problems by breaking them into smaller steps, just like humans do.

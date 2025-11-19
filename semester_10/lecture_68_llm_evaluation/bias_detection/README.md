@@ -4,10 +4,10 @@
    Bias Detection in LLMs
 
 2. **What problem does it solve? (1 sentence)**  
-   Identifies and measures biases in LLM outputs across demographic groups, topics, and contexts, helping ensure fair and equitable model behavior.
+Identifies and measures biases in LLM outputs across demographic groups, topics, and contexts, helping ensure fair and equitable model behavior.
 
 3. **Intuition (plain-language explanation)**  
-   Like checking for unfair treatment: bias detection is like checking if a hiring process treats all candidates fairly - you test the system (LLM) with different inputs representing different groups (demographics, topics) and see if it produces different quality or fairness of outputs - if it does, you've found bias (unfair treatment), which needs to be fixed to ensure everyone gets fair treatment.
+Like checking for unfair treatment: bias detection is like checking if a hiring process treats all candidates fairly - you test the system (LLM) with different inputs representing different groups (demographics, topics) and see if it produces different quality or fairness of outputs - if it does, you've found bias (unfair treatment), which needs to be fixed to ensure everyone gets fair treatment.
 
 4. **Inputs & Outputs**  
    - Input: LLM model, test prompts, demographic groups, bias metrics, evaluation datasets.  
@@ -46,6 +46,6 @@
     Alternatives: Fairness Audits, Disparate Impact Analysis, Demographic Parity, Equalized Odds
 
 11. **30-second explanation (your own words)**  
-    Identifies and measures biases in LLM outputs across demographic groups, topics, and contexts, helping ensure fair and equitable model behavior.
+Identifies and measures biases in LLM outputs across demographic groups, topics, and contexts, helping ensure fair and equitable model behavior.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

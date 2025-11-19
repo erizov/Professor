@@ -1,7 +1,7 @@
 # Grover's Algorithm
 
 1. **Name of Algorithm**  
-   Grover's Algorithm
+Grover's Algorithm
 
 2. **What problem does it solve? (1 sentence)**  
    Searches an unsorted database of N items to find a specific target item, providing quadratic speedup over classical search algorithms for unstructured search problems.

@@ -11,7 +11,7 @@
 
 4. **Inputs & Outputs**  
    - Input: Large model, training data, multiple GPUs/machines, parallelism strategy, communication infrastructure.  
-   - Output: Trained model, distributed training, scaled computation, efficient resource utilization.
+- Output: Trained model, distributed training, scaled computation, efficient resource utilization.
 
 5. **Step-by-step description (5–10 lines max)**  
 1. Partition model: partition model across devices if using model parallelism.

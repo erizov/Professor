@@ -7,10 +7,10 @@
    Designs algorithms that execute multiple operations simultaneously across multiple processors or cores, reducing execution time and improving throughput for computationally intensive problems.
 
 3. **Intuition (plain-language explanation)**  
-   Like a team working together: parallel algorithms are like having a team of people work on a project simultaneously instead of one person doing everything sequentially - you divide the work (problem decomposition), assign tasks to team members (processors), they work in parallel (simultaneous execution), and you combine their results (result aggregation) - the goal is to finish faster by doing work in parallel, though coordination overhead (communication) limits how much faster you can go.
+Like a team working together: parallel algorithms are like having a team of people work on a project simultaneously instead of one person doing everything sequentially - you divide the work (problem decomposition), assign tasks to team members (processors), they work in parallel (simultaneous execution), and you combine their results (result aggregation) - the goal is to finish faster by doing work in parallel, though coordination overhead (communication) limits how much faster you can go.
 
 4. **Inputs & Outputs**  
-   - Input: Problem data, number of processors, parallel computation model, communication patterns.  
+- Input: Problem data, number of processors, parallel computation model, communication patterns.
    - Output: Parallel execution, reduced computation time, improved throughput, scalable performance.
 
 5. **Step-by-step description (5–10 lines max)**  

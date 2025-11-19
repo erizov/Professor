@@ -4,10 +4,10 @@
    Content Generation
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements content generation algorithm.
+Implements content generation algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Content Generation is a fundamental algorithm in computer science.
+Content Generation is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

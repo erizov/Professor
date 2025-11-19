@@ -4,10 +4,10 @@
    Incident Prediction
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements incident prediction algorithm.
+Implements incident prediction algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Incident Prediction is a fundamental algorithm in computer science.
+Incident Prediction is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

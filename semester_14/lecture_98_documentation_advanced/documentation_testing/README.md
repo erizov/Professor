@@ -4,10 +4,10 @@
    Documentation Testing
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements documentation testing algorithm.
+Implements documentation testing algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Documentation Testing is a fundamental algorithm in computer science.
+Documentation Testing is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

@@ -40,7 +40,7 @@
 9. **Weaknesses / limitations**  
 - Complexity: noise characterization is complex.
 - Variability: noise varies over time and conditions.
-- Limitation: noise fundamentally limits quantum computation.
+- Limitation: noise Basically limits quantum computation.
 
 10. **Compare with alternatives**  
     Alternatives: Ignore Noise, Error Correction Only, Noise-Free Systems, Error Mitigation

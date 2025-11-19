@@ -39,6 +39,6 @@
     Alternatives: AVL Tree, Splay Tree, Treap
 
 11. **30-second explanation (your own words)**  
-    A self-balancing BST using red/black coloring rules that ensure no path is more than twice as long as any other.
+A self-balancing BST using red/black coloring rules that ensure no path is more than twice as long as any other.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

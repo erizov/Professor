@@ -46,6 +46,5 @@
     Alternatives: Classical Communication, Quantum Repeaters, Hybrid Approaches, Quantum Internet
 
 11. **30-second explanation (your own words)**  
-    Transmits quantum information between distant locations using quantum channels, enabling secure quantum communication, quantum teleportation, and quantum networks.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

@@ -10,7 +10,7 @@
    Like hybrid optimization: Quantum Optimization Hybrid combines quantum and classical optimization - you use quantum algorithms for hard optimization subproblems, and classical methods for the rest - just as hybrid approaches combine strengths, quantum optimization hybrid combines quantum and classical optimization strengths.
 
 4. **Inputs & Outputs**  
-   - Input: Optimization problems, quantum optimization algorithms, classical optimizers, hybrid workflow, problem decomposition.  
+- Input: Optimization problems, quantum optimization algorithms, classical optimizers, hybrid workflow, problem decomposition.
    - Output: Hybrid optimization solutions, optimized parameters, quantum-classical results, improved solutions, combined outputs.
 
 5. **Step-by-step description (5–10 lines max)**  

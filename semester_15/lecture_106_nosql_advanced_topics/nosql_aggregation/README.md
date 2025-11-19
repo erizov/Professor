@@ -4,10 +4,10 @@
    Nosql Aggregation
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements nosql aggregation algorithm.
+Implements nosql aggregation algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Nosql Aggregation is a fundamental algorithm in computer science.
+Nosql Aggregation is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

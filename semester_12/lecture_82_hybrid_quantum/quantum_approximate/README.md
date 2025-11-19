@@ -1,17 +1,17 @@
 # Quantum Approximate Optimization Algorithm (QAOA)
 
 1. **Name of Algorithm**  
-   Quantum Approximate Optimization Algorithm (QAOA)
+Quantum Approximate Optimization Algorithm (QAOA)
 
 2. **What problem does it solve? (1 sentence)**  
    Solves combinatorial optimization problems by using a quantum-classical hybrid approach that alternates between quantum evolution and classical parameter optimization to find approximate solutions.
 
 3. **Intuition (plain-language explanation)**  
-   Like a quantum-classical dance: QAOA is like a dance between quantum and classical computers - the quantum computer explores the solution space using quantum superposition (trying many solutions at once), while the classical computer fine-tunes the quantum operations (adjusting the dance steps) - together they find good approximate solutions to hard optimization problems.
+Like a quantum-classical dance: QAOA is like a dance between quantum and classical computers - the quantum computer explores the solution space using quantum superposition (trying many solutions at once), while the classical computer fine-tunes the quantum operations (adjusting the dance steps) - together they find good approximate solutions to hard optimization problems.
 
 4. **Inputs & Outputs**  
-   - Input: Optimization problem (cost function, constraints), number of layers (p), initial parameters, quantum device, classical optimizer.  
-   - Output: Approximate optimal solution, optimized parameters, solution quality, convergence metrics.
+- Input: Optimization problem (cost function, constraints), number of layers (p), initial parameters, quantum device, classical optimizer.
+- Output: Approximate optimal solution, optimized parameters, solution quality, convergence metrics.
 
 5. **Step-by-step description (5–10 lines max)**  
 1. Encode: encode optimization problem as quantum Hamiltonian.
@@ -46,6 +46,6 @@
     Alternatives: Quantum Annealing, Classical Optimization, Variational Quantum Eigensolver, Quantum Machine Learning
 
 11. **30-second explanation (your own words)**  
-    A quantum-classical hybrid algorithm that uses parameterized quantum circuits and classical optimization to solve combinatorial optimization problems approximately.
+A quantum-classical hybrid algorithm that uses parameterized quantum circuits and classical optimization to solve combinatorial optimization problems approximately.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

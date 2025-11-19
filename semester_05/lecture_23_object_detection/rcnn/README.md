@@ -10,7 +10,7 @@
    Like a security guard checking suspicious areas: first identify potential regions (selective search), then examine each region carefully (CNN classification) to confirm if it contains an object.
 
 4. **Inputs & Outputs**  
-   - Input: Input image, region proposal algorithm (selective search), pre-trained CNN.  
+- Input: Input image, region proposal algorithm (selective search), pre-trained CNN.
    - Output: Bounding boxes with class labels and confidence scores for detected objects.
 
 5. **Step-by-step description (5–10 lines max)**  

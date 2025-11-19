@@ -7,7 +7,7 @@
    Collects, aggregates, and stores time-series metrics from applications and infrastructure, enabling monitoring, alerting, and performance analysis through quantitative measurements.
 
 3. **Intuition (plain-language explanation)**  
-   Like a weather monitoring system: metrics collection is like a weather monitoring system that continuously measures temperature, humidity, pressure (metrics) at different locations (services) and stores the measurements over time (time-series) - you can see trends (temperature rising), set alerts (temperature > 100°F), and analyze patterns (temperature higher in summer) - metrics give you quantitative data about your system's health and performance.
+Like a weather monitoring system: metrics collection is like a weather monitoring system that continuously measures temperature, humidity, pressure (metrics) at different locations (services) and stores the measurements over time (time-series) - you can see trends (temperature rising), set alerts (temperature > 100°F), and analyze patterns (temperature higher in summer) - metrics give you quantitative data about your system's health and performance.
 
 4. **Inputs & Outputs**  
    - Input: Metrics (counters, gauges, histograms), metric names, labels/tags, timestamps, collection intervals.  

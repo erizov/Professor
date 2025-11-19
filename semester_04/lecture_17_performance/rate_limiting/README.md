@@ -4,10 +4,10 @@
    Rate Limiting
 
 2. **What problem does it solve? (1 sentence)**  
-   Controls the rate of requests from clients to prevent abuse, ensure fair resource usage, and protect services from overload.
+Controls the rate of requests from clients to prevent abuse, ensure fair resource usage, and protect services from overload.
 
 3. **Intuition (plain-language explanation)**  
-   Like a bouncer at a club: limit how many people (requests) can enter per hour to prevent overcrowding and ensure everyone gets served.
+Like a bouncer at a club: limit how many people (requests) can enter per hour to prevent overcrowding and ensure everyone gets served.
 
 4. **Inputs & Outputs**  
    - Input: Client requests, rate limit rules (requests per time window), client identifier.  
@@ -37,7 +37,7 @@
 - Requires distributed state for multi-server deployments.
 
 10. **Compare with alternatives**  
-    Alternatives: Throttling, Quotas, Token Bucket Algorithm
+Alternatives: Throttling, Quotas, Token Bucket Algorithm
 
 11. **30-second explanation (your own words)**  
     Limits the number of requests a client can make within a time window, preventing abuse and ensuring fair resource usage across all clients.

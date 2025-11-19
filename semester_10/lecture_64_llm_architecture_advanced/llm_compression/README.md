@@ -43,7 +43,7 @@
 - Trade-offs: requires balancing compression ratio and performance.
 
 10. **Compare with alternatives**  
-    Alternatives: Full Precision Models, Model Distillation, Knowledge Distillation, Efficient Architectures
+Alternatives: Full Precision Models, Model Distillation, Knowledge Distillation, Efficient Architectures
 
 11. **30-second explanation (your own words)**  
     Reduces the size and computational requirements of large language models through techniques like quantization, pruning, distillation, and low-rank factorization while maintaining acceptable performance.

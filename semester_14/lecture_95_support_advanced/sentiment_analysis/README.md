@@ -7,7 +7,7 @@
    Analyzes customer sentiment in support interactions to identify frustrated customers, prioritize urgent cases, route to appropriate agents, and improve support quality through emotional understanding.
 
 3. **Intuition (plain-language explanation)**  
-   Like reading emotions: Sentiment analysis is like reading emotions - you analyze text (customer messages) to understand feelings (positive, negative, neutral), identify urgency (frustrated customers), and respond appropriately (prioritize, route) - just as you read someone's emotions, sentiment analysis reads customer emotions.
+Like reading emotions: Sentiment analysis is like reading emotions - you analyze text (customer messages) to understand feelings (positive, negative, neutral), identify urgency (frustrated customers), and respond appropriately (prioritize, route) - just as you read someone's emotions, sentiment analysis reads customer emotions.
 
 4. **Inputs & Outputs**  
    - Input: Customer messages, support tickets, conversation history, sentiment models, classification rules, context information.  
@@ -46,6 +46,6 @@
     Alternatives: No Sentiment Analysis, Manual Assessment, Keyword-Based, Hybrid Approaches
 
 11. **30-second explanation (your own words)**  
-    NLP systems that analyze customer sentiment in support interactions to understand emotions, prioritize cases, and improve support quality.
+NLP systems that analyze customer sentiment in support interactions to understand emotions, prioritize cases, and improve support quality.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

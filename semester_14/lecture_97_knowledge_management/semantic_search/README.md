@@ -4,10 +4,10 @@
    Semantic Search
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements semantic search algorithm.
+Implements semantic search algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Semantic Search is a fundamental algorithm in computer science.
+Semantic Search is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

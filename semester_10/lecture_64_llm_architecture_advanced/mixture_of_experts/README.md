@@ -11,7 +11,7 @@
 
 4. **Inputs & Outputs**  
    - Input: Input tokens, expert networks, gating/router network, number of active experts, expert capacity.  
-   - Output: Expert-selected outputs, routed computations, scaled model capacity, efficient processing.
+- Output: Expert-selected outputs, routed computations, scaled model capacity, efficient processing.
 
 5. **Step-by-step description (5–10 lines max)**  
 1. Create experts: create multiple expert networks (feedforward layers).

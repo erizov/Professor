@@ -4,10 +4,10 @@
    Snowflake Schema
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements snowflake schema algorithm.
+Implements snowflake schema algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Snowflake Schema is a fundamental algorithm in computer science.
+Snowflake Schema is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

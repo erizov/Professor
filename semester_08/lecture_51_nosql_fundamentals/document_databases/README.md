@@ -4,7 +4,7 @@
    Document Databases
 
 2. **What problem does it solve? (1 sentence)**  
-   Stores data as semi-structured documents (JSON, BSON, XML), enabling flexible schemas and efficient storage of hierarchical data without rigid table structures.
+Stores data as semi-structured documents (JSON, BSON, XML), enabling flexible schemas and efficient storage of hierarchical data without rigid table structures.
 
 3. **Intuition (plain-language explanation)**  
    Like filing cabinets with flexible folders: document databases store data as documents (like folders) that can contain different information (like flexible folder contents) - unlike relational databases with fixed tables (like rigid forms), document databases let each document have different fields (like custom folder contents), making them flexible for varying data structures.
@@ -44,6 +44,6 @@
     Alternatives: Relational Databases, Key-Value Stores, Graph Databases, Column Family Stores
 
 11. **30-second explanation (your own words)**  
-    Stores data as semi-structured documents (JSON, BSON, XML), enabling flexible schemas and efficient storage of hierarchical data without rigid table structures.
+Stores data as semi-structured documents (JSON, BSON, XML), enabling flexible schemas and efficient storage of hierarchical data without rigid table structures.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

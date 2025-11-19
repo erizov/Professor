@@ -17,8 +17,6 @@
 1. Initiate: initiate swap on first blockchain.
 2. Lock: lock funds in HTLC on first chain.
 3. Hash: create secret hash.
-4. Initiate: initiate swap on second blockchain.
-5. Lock: lock funds in HTLC on second chain.
 6. Reveal: reveal secret to claim funds.
 7. Claim: claim funds on both chains.
 8. Complete: swap completes atomically (both or neither).

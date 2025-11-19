@@ -4,7 +4,7 @@
    Integration Testing
 
 2. **What problem does it solve? (1 sentence)**  
-   Tests interactions between multiple components or systems to ensure they work together correctly as an integrated unit.
+Tests interactions between multiple components or systems to ensure they work together correctly as an integrated unit.
 
 3. **Intuition (plain-language explanation)**  
    Like testing a car's engine and transmission together: individual parts may work, but integration testing verifies they function as a cohesive system.
@@ -40,6 +40,6 @@
     Alternatives: Unit Testing, End-to-End Testing, Contract Testing
 
 11. **30-second explanation (your own words)**  
-    Tests multiple components together to ensure they integrate correctly and work as a unified system.
+Tests multiple components together to ensure they integrate correctly and work as a unified system.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

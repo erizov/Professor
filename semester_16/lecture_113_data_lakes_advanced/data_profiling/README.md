@@ -4,10 +4,10 @@
    Data Profiling
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements data profiling algorithm.
+Implements data profiling algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Data Profiling is a fundamental algorithm in computer science.
+Data Profiling is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

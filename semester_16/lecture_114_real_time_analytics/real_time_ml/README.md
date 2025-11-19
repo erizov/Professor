@@ -4,10 +4,10 @@
    Real Time Ml
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements real time ml algorithm.
+Implements real time ml algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Real Time Ml is a fundamental algorithm in computer science.
+Real Time Ml is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

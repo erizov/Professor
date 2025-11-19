@@ -7,7 +7,7 @@
    Identifies, analyzes, and evaluates risks associated with AI systems, enabling proactive risk management and mitigation strategies.
 
 3. **Intuition (plain-language explanation)**  
-   Like a safety inspection: Risk Assessment for AI is like a safety inspection - you identify potential hazards (risks), assess how likely and severe they are (risk analysis), and determine what to do about them (mitigation) - just as safety inspections prevent accidents, risk assessments prevent AI failures and harms.
+Like a safety inspection: Risk Assessment for AI is like a safety inspection - you identify potential hazards (risks), assess how likely and severe they are (risk analysis), and determine what to do about them (mitigation) - just as safety inspections prevent accidents, risk assessments prevent AI failures and harms.
 
 4. **Inputs & Outputs**  
    - Input: AI systems, risk categories, risk factors, impact assessments, likelihood estimates.  
@@ -46,6 +46,5 @@
     Alternatives: No Risk Assessment, Ad-Hoc Risk Management, Qualitative Assessment, Quantitative Assessment
 
 11. **30-second explanation (your own words)**  
-    Identifies, analyzes, and evaluates risks associated with AI systems, enabling proactive risk management and mitigation strategies.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

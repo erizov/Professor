@@ -4,10 +4,10 @@
    Query Hints
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements query hints algorithm.
+Implements query hints algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Query Hints is a fundamental algorithm in computer science.
+Query Hints is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

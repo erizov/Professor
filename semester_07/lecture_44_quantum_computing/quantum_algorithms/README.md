@@ -10,8 +10,8 @@
    Like having a super-powered computer: classical computers process one possibility at a time (like checking rooms one by one) - quantum algorithms use superposition to check all possibilities simultaneously, then use interference to amplify correct answers and cancel wrong ones (like checking all rooms at once and having the right answer 'glow').
 
 4. **Inputs & Outputs**  
-   - Input: Problem instance, quantum computer with sufficient qubits, quantum gates and circuits.  
-   - Output: Solution to computational problem, potentially with exponential or polynomial speedup over classical methods.
+- Input: Problem instance, quantum computer with sufficient qubits, quantum gates and circuits.
+- Output: Solution to computational problem, potentially with exponential or polynomial speedup over classical methods.
 
 5. **Step-by-step description (5–10 lines max)**  
 1. Problem formulation: encode problem into quantum state and operations.

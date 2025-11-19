@@ -4,10 +4,10 @@
    Translation Automation
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements translation automation algorithm.
+Implements translation automation algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Translation Automation is a fundamental algorithm in computer science.
+Translation Automation is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

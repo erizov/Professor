@@ -1,13 +1,13 @@
 # Shor's Algorithm
 
 1. **Name of Algorithm**  
-   Shor's Algorithm
+Shor's Algorithm
 
 2. **What problem does it solve? (1 sentence)**  
    Factors large integers into their prime factors efficiently, breaking RSA encryption and solving problems that are intractable for classical computers.
 
 3. **Intuition (plain-language explanation)**  
-   Like finding the combination to a safe: classical computers try combinations one by one (exponentially slow) - Shor's algorithm uses quantum Fourier transform to find the 'period' of a function, which reveals the factors (like finding the pattern in the combination) in polynomial time instead of exponential time.
+Like finding the combination to a safe: classical computers try combinations one by one (exponentially slow) - Shor's algorithm uses quantum Fourier transform to find the 'period' of a function, which reveals the factors (like finding the pattern in the combination) in polynomial time instead of exponential time.
 
 4. **Inputs & Outputs**  
    - Input: Large composite integer N to factor, quantum computer with sufficient qubits (roughly 2·log₂(N) qubits).  
@@ -41,7 +41,7 @@
 - Limited to factoring: specific to integer factorization and related problems.
 
 10. **Compare with alternatives**  
-    Alternatives: Classical Trial Division, Pollard's Rho Algorithm, General Number Field Sieve, Quantum Approximate Optimization
+Alternatives: Classical Trial Division, Pollard's Rho Algorithm, General Number Field Sieve, Quantum Approximate Optimization
 
 11. **30-second explanation (your own words)**  
     Factors large integers into their prime factors efficiently, breaking RSA encryption and solving problems that are intractable for classical computers.

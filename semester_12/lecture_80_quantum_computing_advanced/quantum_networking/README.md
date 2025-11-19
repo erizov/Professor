@@ -46,6 +46,5 @@
     Alternatives: Single Quantum Computer, Classical Networking, Hybrid Networks, Quantum Repeaters
 
 11. **30-second explanation (your own words)**  
-    Connects multiple quantum computers and quantum devices into quantum networks, enabling distributed quantum computing, quantum communication, and quantum internet.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

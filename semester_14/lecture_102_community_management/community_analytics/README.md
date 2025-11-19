@@ -7,7 +7,7 @@
    Analyzes community engagement, participation, and health by tracking metrics like activity levels, contribution patterns, member growth, and sentiment to inform community management decisions.
 
 3. **Intuition (plain-language explanation)**  
-   Like a health checkup for communities: Community analytics is like a health checkup - you measure various metrics (activity, growth, engagement), analyze the results (patterns, trends), and identify issues (declining engagement) - just as a doctor checks your health, analytics check community health.
+Like a health checkup for communities: Community analytics is like a health checkup - you measure various metrics (activity, growth, engagement), analyze the results (patterns, trends), and identify issues (declining engagement) - just as a doctor checks your health, analytics check community health.
 
 4. **Inputs & Outputs**  
    - Input: Community data, activity logs, member information, contribution data, engagement metrics, time periods, analysis parameters.  
@@ -46,6 +46,6 @@
     Alternatives: Manual Tracking, Basic Metrics, Third-Party Analytics, No Analytics
 
 11. **30-second explanation (your own words)**  
-    Analytics systems that track and analyze community engagement, participation, and health metrics to inform community management.
+Analytics systems that track and analyze community engagement, participation, and health metrics to inform community management.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

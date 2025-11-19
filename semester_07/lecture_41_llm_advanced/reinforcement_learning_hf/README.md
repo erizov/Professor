@@ -10,7 +10,7 @@
    Like training a dog with treats: humans provide feedback (rewards) on model outputs - good outputs get high rewards, bad outputs get low rewards - the model learns through reinforcement learning to produce outputs that humans prefer, becoming more aligned with human values.
 
 4. **Inputs & Outputs**  
-   - Input: Base LLM, human preference dataset, reward model, RL algorithm (PPO), prompt dataset.  
+- Input: Base LLM, human preference dataset, reward model, RL algorithm (PPO), prompt dataset.
    - Output: RLHF-aligned LLM that produces outputs preferred by humans.
 
 5. **Step-by-step description (5–10 lines max)**  

@@ -4,10 +4,10 @@
    Graph Visualization
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements graph visualization algorithm.
+Implements graph visualization algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Graph Visualization is a fundamental algorithm in computer science.
+Graph Visualization is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

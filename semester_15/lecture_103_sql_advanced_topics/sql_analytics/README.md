@@ -4,10 +4,10 @@
    Sql Analytics
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements sql analytics algorithm.
+Implements sql analytics algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Sql Analytics is a fundamental algorithm in computer science.
+Sql Analytics is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

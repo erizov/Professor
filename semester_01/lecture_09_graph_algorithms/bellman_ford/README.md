@@ -1,7 +1,7 @@
 # Bellman-Ford Algorithm
 
 1. **Name of Algorithm**  
-   Bellman-Ford Algorithm
+Bellman-Ford Algorithm
 
 2. **What problem does it solve? (1 sentence)**  
    Computes single-source shortest paths even when negative edge weights are present (assuming no negative cycles).
@@ -36,7 +36,7 @@
 - Detecting negative cycles requires an additional pass.
 
 10. **Compare with alternatives**  
-    Alternatives: Dijkstra, Johnson's Algorithm, SPFA
+Alternatives: Dijkstra, Johnson's Algorithm, SPFA
 
 11. **30-second explanation (your own words)**  
     Iteratively relaxes all edges to propagate better distances, making it robust for graphs with negative weights.

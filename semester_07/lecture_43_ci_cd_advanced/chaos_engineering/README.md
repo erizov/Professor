@@ -45,5 +45,4 @@
 
 11. **30-second explanation (your own words)**  
     Proactively tests system resilience by intentionally injecting failures and disruptions in production-like environments, identifying weaknesses before they cause real outages.
-
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

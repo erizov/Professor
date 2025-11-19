@@ -4,10 +4,10 @@
    Canary Analysis
 
 2. **What problem does it solve? (1 sentence)**  
-   Analyzes metrics and behavior of canary deployments to automatically determine if a new version is safe to promote, enabling data-driven deployment decisions.
+Analyzes metrics and behavior of canary deployments to automatically determine if a new version is safe to promote, enabling data-driven deployment decisions.
 
 3. **Intuition (plain-language explanation)**  
-   Like a test flight: Canary Analysis is like analyzing a test flight before allowing all planes to use the new design - you test the new version (canary) with a small group, analyze how it performs (metrics, errors), and decide if it's safe to roll out to everyone - just as test flights ensure safety, canary analysis ensures new versions are safe before full deployment.
+Like a test flight: Canary Analysis is like analyzing a test flight before allowing all planes to use the new design - you test the new version (canary) with a small group, analyze how it performs (metrics, errors), and decide if it's safe to roll out to everyone - just as test flights ensure safety, canary analysis ensures new versions are safe before full deployment.
 
 4. **Inputs & Outputs**  
    - Input: Canary metrics, baseline metrics, analysis criteria, success thresholds, error rates, performance data.  
@@ -46,6 +46,5 @@
     Alternatives: Manual Review, Blue-Green Deployment, Rolling Deployment, Feature Flags
 
 11. **30-second explanation (your own words)**  
-    Analyzes metrics and behavior of canary deployments to automatically determine if a new version is safe to promote, enabling data-driven deployment decisions.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

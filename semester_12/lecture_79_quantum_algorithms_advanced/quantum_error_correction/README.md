@@ -46,6 +46,5 @@
     Alternatives: No Error Correction, Error Mitigation, NISQ Approaches, Fault-Tolerant Codes
 
 11. **30-second explanation (your own words)**  
-    Protects quantum information from errors caused by decoherence and noise by encoding quantum states redundantly and detecting/correcting errors without destroying quantum superposition.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

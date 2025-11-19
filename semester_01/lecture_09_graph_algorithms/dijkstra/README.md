@@ -1,7 +1,7 @@
 # Dijkstra's Algorithm
 
 1. **Name of Algorithm**  
-   Dijkstra's Algorithm
+Dijkstra's Algorithm
 
 2. **What problem does it solve? (1 sentence)**  
    Computes shortest paths from a single source in graphs with non-negative edge weights.
@@ -36,7 +36,7 @@
 - Priority queue operations dominate costs on dense graphs.
 
 10. **Compare with alternatives**  
-    Alternatives: Bellman-Ford, A*, Johnson's Algorithm
+Alternatives: Bellman-Ford, A*, Johnson's Algorithm
 
 11. **30-second explanation (your own words)**  
     Repeatedly selects the closest unsettled vertex and relaxes its edges, guaranteeing optimal distances when weights are non-negative.

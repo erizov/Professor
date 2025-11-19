@@ -4,10 +4,10 @@
    On-Chain Analytics
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements on-chain analytics systems that analyze blockchain data to extract insights, trends, and patterns, providing valuable information about blockchain usage, token flows, and network activity.
+Implements on-chain analytics systems that analyze blockchain data to extract insights, trends, and patterns, providing valuable information about blockchain usage, token flows, and network activity.
 
 3. **Intuition (plain-language explanation)**  
-   Like analytics for blockchain: On-Chain Analytics is like analytics for websites but for blockchain - you analyze blockchain data (like analyzing web traffic) to understand usage and trends - just as web analytics provide insights, on-chain analytics provide blockchain insights.
+Like analytics for blockchain: On-Chain Analytics is like analytics for websites but for blockchain - you analyze blockchain data (like analyzing web traffic) to understand usage and trends - just as web analytics provide insights, on-chain analytics provide blockchain insights.
 
 4. **Inputs & Outputs**  
    - Input: Blockchain data, transactions, addresses, blocks, analytics queries, time ranges, filter criteria.  
@@ -46,6 +46,6 @@
     Alternatives: No Analytics, Basic Metrics, Off-Chain Analytics, Hybrid Analytics
 
 11. **30-second explanation (your own words)**  
-    Implements on-chain analytics systems that analyze blockchain data to extract insights, trends, and patterns, providing valuable information about blockchain usage, token flows, and network activity.
+Implements on-chain analytics systems that analyze blockchain data to extract insights, trends, and patterns, providing valuable information about blockchain usage, token flows, and network activity.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

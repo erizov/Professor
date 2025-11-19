@@ -7,7 +7,7 @@
    Creates and manages copies of database data to enable recovery from data loss, corruption, or disasters, ensuring business continuity and data protection.
 
 3. **Intuition (plain-language explanation)**  
-   Like insurance for data: backup strategies are like having insurance for your data - you regularly make copies (like taking photos of important documents) and store them safely (like keeping photos in a fireproof safe) - if something happens to your original data (like a fire), you can restore from backups (like reprinting photos), ensuring you don't lose everything.
+Like insurance for data: backup strategies are like having insurance for your data - you regularly make copies (like taking photos of important documents) and store them safely (like keeping photos in a fireproof safe) - if something happens to your original data (like a fire), you can restore from backups (like reprinting photos), ensuring you don't lose everything.
 
 4. **Inputs & Outputs**  
    - Input: Database data, backup configuration, storage location, retention policy, backup schedule.  
@@ -45,6 +45,5 @@
     Alternatives: Replication, Snapshots, Continuous Backup, Point-in-Time Recovery
 
 11. **30-second explanation (your own words)**  
-    Creates and manages copies of database data to enable recovery from data loss, corruption, or disasters, ensuring business continuity and data protection.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

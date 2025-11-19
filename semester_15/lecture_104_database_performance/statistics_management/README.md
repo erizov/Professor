@@ -4,10 +4,10 @@
    Statistics Management
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements statistics management algorithm.
+Implements statistics management algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Statistics Management is a fundamental algorithm in computer science.
+Statistics Management is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

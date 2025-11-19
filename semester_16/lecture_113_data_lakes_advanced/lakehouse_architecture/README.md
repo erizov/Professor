@@ -4,10 +4,10 @@
    Lakehouse Architecture
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements lakehouse architecture algorithm.
+Implements lakehouse architecture algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Lakehouse Architecture is a fundamental algorithm in computer science.
+Lakehouse Architecture is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

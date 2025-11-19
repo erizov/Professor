@@ -4,10 +4,10 @@
    Database Design
 
 2. **What problem does it solve? (1 sentence)**  
-   Creates efficient, normalized database schemas that model real-world entities and relationships, ensuring data integrity, minimizing redundancy, and optimizing for query performance.
+Creates efficient, normalized database schemas that model real-world entities and relationships, ensuring data integrity, minimizing redundancy, and optimizing for query performance.
 
 3. **Intuition (plain-language explanation)**  
-   Like designing a building blueprint: database design is like creating an architectural blueprint for data - you identify what entities exist (like rooms in a building), how they relate (like how rooms connect), and design the structure (like floor plan) to be efficient, organized, and easy to navigate - good design makes the database easy to use, maintain, and query.
+Like designing a building blueprint: database design is like creating an architectural blueprint for data - you identify what entities exist (like rooms in a building), how they relate (like how rooms connect), and design the structure (like floor plan) to be efficient, organized, and easy to navigate - good design makes the database easy to use, maintain, and query.
 
 4. **Inputs & Outputs**  
    - Input: Business requirements, entities, relationships, data constraints, access patterns.  
@@ -45,6 +45,6 @@
     Alternatives: Ad-hoc Design, Denormalized Design, NoSQL Design, Schema-less Databases
 
 11. **30-second explanation (your own words)**  
-    Creates efficient, normalized database schemas that model real-world entities and relationships, ensuring data integrity, minimizing redundancy, and optimizing for query performance.
+Creates efficient, normalized database schemas that model real-world entities and relationships, ensuring data integrity, minimizing redundancy, and optimizing for query performance.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

@@ -7,7 +7,7 @@
    Extracts data from source systems, transforms it to meet target requirements, and loads it into destination systems, enabling data integration and migration.
 
 3. **Intuition (plain-language explanation)**  
-   Like a factory assembly line: ETL processes are like a factory assembly line - you extract raw materials (data) from suppliers (source systems), transform them (clean, reshape, calculate) on the assembly line (transformation logic), and load finished products (processed data) into warehouses (destination systems) - the goal is to take data from various sources, make it consistent and useful, and deliver it where it's needed.
+Like a factory assembly line: ETL processes are like a factory assembly line - you extract raw materials (data) from suppliers (source systems), transform them (clean, reshape, calculate) on the assembly line (transformation logic), and load finished products (processed data) into warehouses (destination systems) - the goal is to take data from various sources, make it consistent and useful, and deliver it where it's needed.
 
 4. **Inputs & Outputs**  
    - Input: Source data (databases, files, APIs), transformation rules, target schema, business logic.  
@@ -46,6 +46,5 @@
     Alternatives: ELT Processes, Real-time Streaming, Data Virtualization, API Integration
 
 11. **30-second explanation (your own words)**  
-    Extracts data from source systems, transforms it to meet target requirements, and loads it into destination systems, enabling data integration and migration.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

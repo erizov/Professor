@@ -4,10 +4,10 @@
    Data Migration
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements data migration algorithm.
+Implements data migration algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Data Migration is a fundamental algorithm in computer science.
+Data Migration is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

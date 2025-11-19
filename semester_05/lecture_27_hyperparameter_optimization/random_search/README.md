@@ -4,7 +4,7 @@
    Random Search
 
 2. **What problem does it solve? (1 sentence)**  
-   Searches hyperparameter space by randomly sampling configurations, often finding good solutions faster than grid search, especially when some hyperparameters are more important than others.
+Searches hyperparameter space by randomly sampling configurations, often finding good solutions faster than grid search, especially when some hyperparameters are more important than others.
 
 3. **Intuition (plain-language explanation)**  
    Like throwing darts randomly: instead of checking every spot on a grid, randomly sample hyperparameter combinations. Often finds good solutions faster, especially if only a few hyperparameters matter.

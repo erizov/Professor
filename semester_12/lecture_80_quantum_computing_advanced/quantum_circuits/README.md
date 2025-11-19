@@ -10,7 +10,7 @@
    Like circuits for quantum: Quantum Circuits are like electrical circuits but for quantum information - you connect quantum gates (like logic gates) to process qubits - just as circuits process bits, quantum circuits process qubits using quantum gates.
 
 4. **Inputs & Outputs**  
-   - Input: Quantum gates, qubits, circuit specifications, algorithm requirements, gate parameters.  
+- Input: Quantum gates, qubits, circuit specifications, algorithm requirements, gate parameters.
    - Output: Quantum circuits, gate sequences, compiled circuits, optimized circuits, executable quantum programs.
 
 5. **Step-by-step description (5–10 lines max)**  

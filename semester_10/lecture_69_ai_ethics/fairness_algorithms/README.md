@@ -4,10 +4,10 @@
    Fairness Algorithms
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements algorithms and techniques to ensure AI systems make fair decisions, treating different groups equitably and avoiding discrimination based on protected attributes.
+Implements algorithms and techniques to ensure AI systems make fair decisions, treating different groups equitably and avoiding discrimination based on protected attributes.
 
 3. **Intuition (plain-language explanation)**  
-   Like fair decision-making: Fairness Algorithms are like fair decision-making processes - you ensure decisions are made fairly (equal treatment), don't discriminate (no bias), and treat everyone equitably - just as fair processes ensure justice, fairness algorithms ensure equitable AI decisions.
+Like fair decision-making: Fairness Algorithms are like fair decision-making processes - you ensure decisions are made fairly (equal treatment), don't discriminate (no bias), and treat everyone equitably - just as fair processes ensure justice, fairness algorithms verify equitable AI decisions.
 
 4. **Inputs & Outputs**  
    - Input: Models, predictions, demographic data, fairness definitions, fairness constraints, evaluation metrics.  
@@ -46,6 +46,6 @@
     Alternatives: No Fairness, Data Balancing, Post-Processing, Fair Representation Learning
 
 11. **30-second explanation (your own words)**  
-    Implements algorithms and techniques to ensure AI systems make fair decisions, treating different groups equitably and avoiding discrimination based on protected attributes.
+Implements algorithms and techniques to ensure AI systems make fair decisions, treating different groups equitably and avoiding discrimination based on protected attributes.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

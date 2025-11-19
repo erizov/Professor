@@ -4,10 +4,10 @@
    Postmortem Automation
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements postmortem automation algorithm.
+Implements postmortem automation algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Postmortem Automation is a fundamental algorithm in computer science.
+Postmortem Automation is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

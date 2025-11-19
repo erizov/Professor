@@ -4,7 +4,7 @@
    File Systems
 
 2. **What problem does it solve? (1 sentence)**  
-   Organizes and manages data storage on disk devices by providing hierarchical directory structure, file metadata, and access control, enabling efficient storage, retrieval, and organization of files and directories.
+Organizes and manages data storage on disk devices by providing hierarchical directory structure, file metadata, and access control, enabling efficient storage, retrieval, and organization of files and directories.
 
 3. **Intuition (plain-language explanation)**  
    Like a library's filing system: the file system organizes data on disk like a library organizes books - files are like books (data), directories are like shelves (organization), and the file system keeps track of where everything is (metadata) so you can find and access files quickly.
@@ -44,6 +44,6 @@
     Alternatives: Raw Disk Access, Database Storage, Object Storage, Network File Systems
 
 11. **30-second explanation (your own words)**  
-    Organizes and manages data storage on disk devices by providing hierarchical directory structure, file metadata, and access control, enabling efficient storage, retrieval, and organization of files and directories.
+Organizes and manages data storage on disk devices by providing hierarchical directory structure, file metadata, and access control, enabling efficient storage, retrieval, and organization of files and directories.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

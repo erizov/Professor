@@ -46,6 +46,6 @@
     Alternatives: Rollups, Sidechains, State Channels, Sharding
 
 11. **30-second explanation (your own words)**  
-    A Layer 2 scaling solution that creates child chains that process transactions off-chain and commit state roots to the main chain, enabling high throughput while maintaining security.
+A Layer 2 scaling solution that creates child chains that process transactions off-chain and commit state roots to the main chain, enabling high throughput while maintaining security.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

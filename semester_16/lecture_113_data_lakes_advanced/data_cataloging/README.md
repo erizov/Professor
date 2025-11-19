@@ -4,10 +4,10 @@
    Data Cataloging
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements data cataloging algorithm.
+Implements data cataloging algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Data Cataloging is a fundamental algorithm in computer science.
+Data Cataloging is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

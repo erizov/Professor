@@ -40,6 +40,6 @@
     Alternatives: Support Vector Machines, Decision Trees, Neural Networks
 
 11. **30-second explanation (your own words)**  
-    Transform linear combination of features through sigmoid to output probabilities, then optimize to maximize likelihood of observed labels.
+Transform linear combination of features through sigmoid to output probabilities, then optimize to maximize likelihood of observed labels.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

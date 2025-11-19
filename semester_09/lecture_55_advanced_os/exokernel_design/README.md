@@ -4,7 +4,7 @@
    Exokernel Design
 
 2. **What problem does it solve? (1 sentence)**  
-   Minimizes kernel functionality to provide only hardware abstraction and resource protection, allowing applications to implement their own OS abstractions for maximum performance and flexibility.
+Minimizes kernel functionality to provide only hardware abstraction and resource protection, allowing applications to implement their own OS abstractions for maximum performance and flexibility.
 
 3. **Intuition (plain-language explanation)**  
    Like a bare-bones apartment building: exokernel design is like a minimal apartment building that only provides the essentials (structure, utilities, security) - instead of the building management dictating how you organize your apartment (like traditional OS), you get a basic space (hardware abstraction) and organize it however you want (application-level OS abstractions) - this gives you maximum control and performance, but requires you to do more work yourself.
@@ -44,6 +44,6 @@
     Alternatives: Monolithic Kernel, Microkernel, Hybrid Kernel, Library OS
 
 11. **30-second explanation (your own words)**  
-    Minimizes kernel functionality to provide only hardware abstraction and resource protection, allowing applications to implement their own OS abstractions for maximum performance and flexibility.
+Minimizes kernel functionality to provide only hardware abstraction and resource protection, allowing applications to implement their own OS abstractions for maximum performance and flexibility.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

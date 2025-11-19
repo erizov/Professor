@@ -7,7 +7,7 @@
    Compiles high-level quantum algorithms into optimized, hardware-specific quantum circuits that can be executed on quantum computers, optimizing for gate count, depth, and fidelity.
 
 3. **Intuition (plain-language explanation)**  
-   Like compiling code: Quantum Compilation is like compiling high-level code to machine code - you take a quantum algorithm (high-level) and compile it to quantum gates (low-level) optimized for specific hardware - just as compilers optimize code, quantum compilers optimize quantum circuits.
+Like compiling code: Quantum Compilation is like compiling high-level code to machine code - you take a quantum algorithm (high-level) and compile it to quantum gates (low-level) optimized for specific hardware - just as compilers optimize code, quantum compilers optimize quantum circuits.
 
 4. **Inputs & Outputs**  
    - Input: High-level quantum algorithms, target hardware, gate sets, connectivity constraints, optimization goals.  

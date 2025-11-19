@@ -4,10 +4,10 @@
    Tendermint
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements Tendermint consensus algorithm, a Byzantine fault-tolerant consensus protocol designed for blockchains, providing fast finality and high throughput with a focus on application-agnostic consensus.
+Implements Tendermint consensus algorithm, a Byzantine fault-tolerant consensus protocol designed for blockchains, providing fast finality and high throughput with a focus on application-agnostic consensus.
 
 3. **Intuition (plain-language explanation)**  
-   Like efficient agreement: Tendermint is like efficient agreement protocols - validators agree on blocks efficiently through voting rounds - just as efficient voting reaches decisions, Tendermint reaches consensus efficiently.
+Like efficient agreement: Tendermint is like efficient agreement protocols - validators agree on blocks efficiently through voting rounds - just as optimized voting reaches decisions, Tendermint reaches consensus efficiently.
 
 4. **Inputs & Outputs**  
    - Input: Transactions, validators, voting power, consensus parameters, Byzantine fault tolerance.  
@@ -46,6 +46,6 @@
     Alternatives: Proof of Work, Proof of Stake, PBFT, Other BFT
 
 11. **30-second explanation (your own words)**  
-    Implements Tendermint consensus algorithm, a Byzantine fault-tolerant consensus protocol designed for blockchains, providing fast finality and high throughput with a focus on application-agnostic consensus.
+Implements Tendermint consensus algorithm, a Byzantine fault-tolerant consensus protocol designed for blockchains, providing fast finality and high throughput with a focus on application-agnostic consensus.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

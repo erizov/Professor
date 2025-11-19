@@ -4,10 +4,10 @@
    Graph Analytics
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements graph analytics algorithm.
+Implements graph analytics algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Graph Analytics is a fundamental algorithm in computer science.
+Graph Analytics is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

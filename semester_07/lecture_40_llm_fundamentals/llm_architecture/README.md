@@ -41,7 +41,7 @@
 - Training cost: pre-training requires massive compute and data.
 
 10. **Compare with alternatives**  
-    Alternatives: RNN/LSTM, CNN, Hybrid Architectures, Efficient Transformers
+Alternatives: RNN/LSTM, CNN, Hybrid Architectures, Efficient Transformers
 
 11. **30-second explanation (your own words)**  
     Defines structural design of large language models based on Transformer architecture with self-attention and feed-forward networks, enabling processing of variable-length sequences and learning complex language patterns.

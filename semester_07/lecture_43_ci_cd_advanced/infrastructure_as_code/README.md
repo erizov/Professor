@@ -44,6 +44,5 @@
     Alternatives: Manual Infrastructure Provisioning, Cloud Console Management, Configuration Management Tools, Container Orchestration
 
 11. **30-second explanation (your own words)**  
-    Defines and manages infrastructure using code and version control, enabling reproducible, automated, and version-controlled infrastructure provisioning and configuration.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

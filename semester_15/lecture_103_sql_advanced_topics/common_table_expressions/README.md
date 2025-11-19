@@ -4,10 +4,10 @@
    Common Table Expressions
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements common table expressions algorithm.
+Implements common table expressions algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Common Table Expressions is a fundamental algorithm in computer science.
+Common Table Expressions is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

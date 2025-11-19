@@ -4,10 +4,10 @@
    Time Series Queries
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements time series queries algorithm.
+Implements time series queries algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Time Series Queries is a fundamental algorithm in computer science.
+Time Series Queries is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

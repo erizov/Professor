@@ -7,7 +7,7 @@
    Protects database systems from unauthorized access, data breaches, and attacks through authentication, authorization, encryption, and security best practices.
 
 3. **Intuition (plain-language explanation)**  
-   Like a bank vault for data: database security is like securing a bank vault - you have multiple layers of protection: guards check IDs (authentication), verify access permissions (authorization), encrypt valuables (encryption), monitor for suspicious activity (auditing), and have backup security (firewalls) - all to ensure only authorized people can access the data and it's protected from theft or damage.
+Like a bank vault for data: database security is like securing a bank vault - you have multiple layers of protection: guards check IDs (authentication), verify access permissions (authorization), encrypt valuables (encryption), monitor for suspicious activity (auditing), and have backup security (firewalls) - all to ensure only authorized people can access the data and it's protected from theft or damage.
 
 4. **Inputs & Outputs**  
    - Input: Database system, user credentials, access policies, security requirements, threat models.  

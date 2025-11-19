@@ -4,10 +4,10 @@
    Support Analytics
 
 2. **What problem does it solve? (1 sentence)**  
-   Analyzes support operations data to measure performance, identify trends, optimize workflows, and make data-driven decisions to improve support quality and efficiency.
+Analyzes support operations data to measure performance, identify trends, optimize workflows, and make data-driven decisions to improve support quality and efficiency.
 
 3. **Intuition (plain-language explanation)**  
-   Like a dashboard for support: Support analytics is like a dashboard for support operations - you collect data (tickets, responses, resolutions), analyze it (metrics, trends), and use insights (optimization, decisions) - just as a car dashboard shows speed and fuel, support analytics shows performance and efficiency.
+Like a dashboard for support: Support analytics is like a dashboard for support operations - you collect data (tickets, responses, resolutions), analyze it (metrics, trends), and use insights (optimization, decisions) - just as a car dashboard shows speed and fuel, support analytics shows performance and efficiency.
 
 4. **Inputs & Outputs**  
    - Input: Support tickets, response times, resolution data, customer satisfaction, agent performance, workflow data, time periods.  
@@ -46,6 +46,6 @@
     Alternatives: No Analytics, Basic Metrics, Manual Analysis, Third-Party Analytics
 
 11. **30-second explanation (your own words)**  
-    Analytics systems that analyze support operations data to measure performance, identify trends, and optimize workflows.
+Analytics systems that analyze support operations data to measure performance, identify trends, and optimize workflows.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

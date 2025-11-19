@@ -4,7 +4,7 @@
    Quantum Testing
 
 2. **What problem does it solve? (1 sentence)**  
-   Tests and validates quantum programs, circuits, and algorithms to ensure correctness, performance, and reliability, addressing unique challenges of quantum computing like noise and measurement.
+Tests and validates quantum programs, circuits, and algorithms to ensure correctness, performance, and reliability, addressing unique challenges of quantum computing like noise and measurement.
 
 3. **Intuition (plain-language explanation)**  
    Like testing for quantum: Quantum Testing is like software testing but for quantum programs - you test quantum circuits to make sure they work correctly, handle noise, and produce expected results - just as you test classical software, you test quantum software, but with quantum-specific challenges.
@@ -46,6 +46,6 @@
     Alternatives: No Testing, Simulation Only, Hardware Only, Formal Verification
 
 11. **30-second explanation (your own words)**  
-    Tests and validates quantum programs, circuits, and algorithms to ensure correctness, performance, and reliability, addressing unique challenges of quantum computing like noise and measurement.
+Tests and validates quantum programs, circuits, and algorithms to ensure correctness, performance, and reliability, addressing unique challenges of quantum computing like noise and measurement.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

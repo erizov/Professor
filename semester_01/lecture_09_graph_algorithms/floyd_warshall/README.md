@@ -1,7 +1,7 @@
 # Floyd-Warshall Algorithm
 
 1. **Name of Algorithm**  
-   Floyd-Warshall Algorithm
+Floyd-Warshall Algorithm
 
 2. **What problem does it solve? (1 sentence)**  
    Computes all-pairs shortest paths on weighted graphs (positive or negative edges, excluding negative cycles).
@@ -21,7 +21,7 @@
 5. Detect negative cycles if any dist[i][i] < 0.
 
 6. **Tiny example (hand-simulated)**  
-   For 3-vertex graph, algorithm considers whether going through vertex 2 improves distance from 1 to 3 and updates matrix accordingly.
+For 3-vertex graph, algorithm considers whether going through vertex 2 improves distance from 1 to 3 and updates matrix accordingly.
 
 7. **Time & Space Complexity**  
    - Time: O(n^3).  
@@ -36,7 +36,7 @@
 - Requires dense matrix storage even for sparse graphs.
 
 10. **Compare with alternatives**  
-    Alternatives: Repeated Dijkstra, Johnson's Algorithm, APSP via matrix multiplication
+Alternatives: Repeated Dijkstra, Johnson's Algorithm, APSP via matrix multiplication
 
 11. **30-second explanation (your own words)**  
     Systematically checks whether including each vertex k shortens the path between i and j, yielding all-pairs solutions.

@@ -4,10 +4,10 @@
    Nosql Query Optimization
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements nosql query optimization algorithm.
+Implements nosql query optimization algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Nosql Query Optimization is a fundamental algorithm in computer science.
+Nosql Query Optimization is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

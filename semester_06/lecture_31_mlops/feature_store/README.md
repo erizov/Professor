@@ -4,7 +4,7 @@
    Feature Store
 
 2. **What problem does it solve? (1 sentence)**  
-   Centralizes storage, versioning, and serving of machine learning features, enabling feature reuse, consistency between training and inference, and efficient feature serving at scale.
+Centralizes storage, versioning, and serving of machine learning features, enabling feature reuse, consistency between training and inference, and efficient feature serving at scale.
 
 3. **Intuition (plain-language explanation)**  
    Like a shared library for features: instead of each team computing the same features differently, store them once in a central place where everyone can access the same version, ensuring training and production use identical features.
@@ -43,6 +43,6 @@
     Alternatives: Feature Registry, Data Warehouse Features, Custom Feature Pipelines, Feast, Tecton
 
 11. **30-second explanation (your own words)**  
-    Centralizes feature storage, versioning, and serving to ensure consistency between training and inference while enabling feature reuse and efficient serving at scale.
+Centralizes feature storage, versioning, and serving to ensure consistency between training and inference while enabling feature reuse and efficient serving at scale.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

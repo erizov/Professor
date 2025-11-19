@@ -46,6 +46,5 @@
     Alternatives: Manual Remediation, Alert-Only, Semi-Automated, Self-Healing Systems
 
 11. **30-second explanation (your own words)**  
-    Automatically detects issues and applies fixes without human intervention, reducing mean time to resolution and improving system reliability.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

@@ -7,7 +7,7 @@
    Tests system resilience by subjecting systems to various failure conditions and measuring their ability to maintain functionality, recover, and degrade gracefully.
 
 3. **Intuition (plain-language explanation)**  
-   Like durability testing: Resilience Testing is like durability testing for products - you test how well something handles stress and damage (failures) - just as durability tests ensure products last, resilience tests ensure systems handle failures well.
+Like durability testing: Resilience Testing is like durability testing for products - you test how well something handles stress and damage (failures) - just as durability tests ensure products last, resilience tests ensure systems handle failures well.
 
 4. **Inputs & Outputs**  
    - Input: System under test, failure scenarios, test cases, resilience criteria, monitoring tools, recovery procedures.  

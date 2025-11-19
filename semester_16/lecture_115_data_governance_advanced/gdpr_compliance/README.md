@@ -4,10 +4,10 @@
    Gdpr Compliance
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements gdpr compliance algorithm.
+Implements gdpr compliance algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Gdpr Compliance is a fundamental algorithm in computer science.
+Gdpr Compliance is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

@@ -4,10 +4,10 @@
    Doc As Code
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements doc as code algorithm.
+Implements doc as code algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Doc As Code is a fundamental algorithm in computer science.
+Doc As Code is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

@@ -4,14 +4,14 @@
    Pipeline Parallelism
 
 2. **What problem does it solve? (1 sentence)**  
-   Partitions model layers across multiple devices in a pipeline, where each device processes a different stage of the pipeline, enabling training of very large models with efficient device utilization.
+Partitions model layers across multiple devices in a pipeline, where each device processes a different stage of the pipeline, enabling training of very large models with efficient device utilization.
 
 3. **Intuition (plain-language explanation)**  
    Like an assembly line: pipeline parallelism is like an assembly line where each worker (GPU) handles a different stage of production (model layers) - while worker 1 is processing stage 1 for item A, worker 2 is processing stage 2 for item B (from previous batch), and worker 3 is processing stage 3 for item C - work flows through the pipeline like items on an assembly line, allowing multiple items (batches) to be processed simultaneously, maximizing device utilization.
 
 4. **Inputs & Outputs**  
    - Input: Large model, multiple GPUs, model layers, micro-batches, pipeline stages.  
-   - Output: Pipeline-parallel training, efficient device utilization, scaled model capacity, trained model.
+- Output: Pipeline-parallel training, efficient device utilization, scaled model capacity, trained model.
 
 5. **Step-by-step description (5–10 lines max)**  
 1. Partition layers: partition model layers across GPUs (each GPU gets subset of layers).
@@ -46,6 +46,6 @@
     Alternatives: Model Parallelism, Data Parallelism, Tensor Parallelism, Hybrid Parallelism
 
 11. **30-second explanation (your own words)**  
-    Partitions model layers across multiple devices in a pipeline, where each device processes a different stage of the pipeline, enabling training of very large models with efficient device utilization.
+Partitions model layers across multiple devices in a pipeline, where each device processes a different stage of the pipeline, enabling training of very large models with efficient device utilization.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

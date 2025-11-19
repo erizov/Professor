@@ -10,7 +10,7 @@
    Like an AI architect designing buildings: instead of manually designing network architectures, use algorithms to explore millions of possible designs (different layer types, connections, widths), test them, and find the best one for your specific task.
 
 4. **Inputs & Outputs**  
-   - Input: Search space (layer types, connections, hyperparameters), dataset, performance metric, search algorithm, computational budget.  
+- Input: Search space (layer types, connections, hyperparameters), dataset, performance metric, search algorithm, computational budget.
    - Output: Discovered optimal architecture, trained model with that architecture.
 
 5. **Step-by-step description (5–10 lines max)**  
@@ -40,7 +40,7 @@
 - May find architectures that overfit to specific datasets.
 
 10. **Compare with alternatives**  
-    Alternatives: Manual Architecture Design, Transfer Learning, Architecture Templates, Efficient NAS (ENAS, DARTS)
+Alternatives: Manual Architecture Design, Transfer Learning, Architecture Templates, Efficient NAS (ENAS, DARTS)
 
 11. **30-second explanation (your own words)**  
     Automatically searches through architecture space using algorithms like reinforcement learning or evolution to discover optimal neural network designs for specific tasks and datasets.

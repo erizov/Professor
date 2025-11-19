@@ -4,7 +4,7 @@
    Quantum Calibration
 
 2. **What problem does it solve? (1 sentence)**  
-   Calibrates quantum hardware to optimize gate fidelities, reduce errors, and maintain system performance, ensuring quantum computers operate at peak performance.
+Calibrates quantum hardware to optimize gate fidelities, reduce errors, and maintain system performance, ensuring quantum computers operate at peak performance.
 
 3. **Intuition (plain-language explanation)**  
    Like tuning instruments: Quantum Calibration is like tuning musical instruments - you adjust parameters (like tuning pegs) to make the instrument (quantum computer) perform correctly - just as instruments need tuning, quantum computers need calibration to work accurately.
@@ -46,6 +46,6 @@
     Alternatives: No Calibration, Manual Calibration, Automated Calibration, Continuous Calibration
 
 11. **30-second explanation (your own words)**  
-    Calibrates quantum hardware to optimize gate fidelities, reduce errors, and maintain system performance, ensuring quantum computers operate at peak performance.
+Calibrates quantum hardware to optimize gate fidelities, reduce errors, and maintain system performance, ensuring quantum computers operate at peak performance.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

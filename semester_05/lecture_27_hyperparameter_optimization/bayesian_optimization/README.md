@@ -10,7 +10,7 @@
    Like a smart explorer: instead of randomly trying places, build a map (probabilistic model) of where good results might be, then explore the most promising areas based on the map.
 
 4. **Inputs & Outputs**  
-   - Input: Hyperparameter search space, objective function to optimize, acquisition function, number of iterations.  
+- Input: Hyperparameter search space, objective function to optimize, acquisition function, number of iterations.
    - Output: Optimal hyperparameter configuration that maximizes/minimizes objective function.
 
 5. **Step-by-step description (5–10 lines max)**  

@@ -10,7 +10,7 @@
    Like a highway bottleneck: blockchain can only process a few transactions per second (like a single-lane road) - scalability solutions add more lanes (layer 2), faster processing (sharding), or off-ramps (sidechains) to handle more traffic without compromising security or decentralization.
 
 4. **Inputs & Outputs**  
-   - Input: Blockchain transactions, scalability solution type (layer 2, sharding, sidechains, etc.), network capacity.  
+- Input: Blockchain transactions, scalability solution type (layer 2, sharding, sidechains, etc.), network capacity.
    - Output: Increased transaction throughput, reduced latency, maintained security and decentralization.
 
 5. **Step-by-step description (5–10 lines max)**  

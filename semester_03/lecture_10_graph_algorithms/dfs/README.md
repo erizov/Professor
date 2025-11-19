@@ -4,7 +4,7 @@
    Depth-First Search (DFS)
 
 2. **What problem does it solve? (1 sentence)**  
-   Explores a graph by going as deep as possible along each branch before backtracking, useful for connectivity and cycle detection.
+Explores a graph by going as deep as possible along each branch before backtracking, useful for connectivity and cycle detection.
 
 3. **Intuition (plain-language explanation)**  
    Like exploring a maze: go down one path as far as possible, mark where you've been, backtrack when stuck, then try another path.
@@ -38,6 +38,6 @@
     Alternatives: BFS (level-order), Iterative DFS (explicit stack), Topological Sort (DAG)
 
 11. **30-second explanation (your own words)**  
-    Recursively explores each branch fully before backtracking, useful for connectivity, cycles, and topological ordering.
+Recursively explores each branch fully before backtracking, useful for connectivity, cycles, and topological ordering.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

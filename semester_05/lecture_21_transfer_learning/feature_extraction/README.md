@@ -40,6 +40,6 @@
     Alternatives: Fine-tuning, End-to-End Training, Domain Adaptation
 
 11. **30-second explanation (your own words)**  
-    Extracts high-level features using frozen pre-trained model layers, enabling effective learning on new tasks with limited data by leveraging transferable representations.
+Extracts high-level features using frozen pre-trained model layers, enabling effective learning on new tasks with limited data by leveraging transferable representations.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

@@ -45,6 +45,5 @@
     Alternatives: Branch-based Deployments, Configuration-based Toggles, Canary Deployments, A/B Testing
 
 11. **30-second explanation (your own words)**  
-    Enables runtime control of feature visibility and behavior without code deployment, allowing gradual feature rollouts, A/B testing, and instant feature toggling.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

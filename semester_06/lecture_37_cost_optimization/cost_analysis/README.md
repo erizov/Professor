@@ -4,7 +4,7 @@
    Cost Analysis
 
 2. **What problem does it solve? (1 sentence)**  
-   Analyzes and tracks ML infrastructure costs across compute, storage, networking, and services to identify optimization opportunities, allocate costs, and optimize spending while maintaining performance.
+Analyzes and tracks ML infrastructure costs across compute, storage, networking, and services to identify optimization opportunities, allocate costs, and optimize spending while maintaining performance.
 
 3. **Intuition (plain-language explanation)**  
    Like a financial audit for your ML infrastructure: track every dollar spent on compute, storage, and services, break it down by project/team/model, identify where money is wasted, and find ways to reduce costs without hurting performance.
@@ -43,6 +43,6 @@
     Alternatives: Manual Cost Tracking, Cloud Provider Cost Tools, Third-party Cost Management, Budget Alerts
 
 11. **30-second explanation (your own words)**  
-    Analyzes and tracks ML infrastructure costs across all resources and services to identify optimization opportunities, allocate costs, and optimize spending while maintaining performance.
+Analyzes and tracks ML infrastructure costs across all resources and services to identify optimization opportunities, allocate costs, and optimize spending while maintaining performance.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

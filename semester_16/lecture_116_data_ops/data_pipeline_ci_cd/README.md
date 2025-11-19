@@ -4,10 +4,10 @@
    Data Pipeline Ci Cd
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements data pipeline ci cd algorithm.
+Implements data pipeline ci cd algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Data Pipeline Ci Cd is a fundamental algorithm in computer science.
+Data Pipeline Ci Cd is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

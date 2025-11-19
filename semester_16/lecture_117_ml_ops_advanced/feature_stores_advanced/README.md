@@ -4,10 +4,10 @@
    Feature Stores Advanced
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements feature stores advanced algorithm.
+Implements feature stores advanced algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Feature Stores Advanced is a fundamental algorithm in computer science.
+Feature Stores Advanced is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

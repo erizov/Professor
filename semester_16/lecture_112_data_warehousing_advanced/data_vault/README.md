@@ -4,10 +4,10 @@
    Data Vault
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements data vault algorithm.
+Implements data vault algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Data Vault is a fundamental algorithm in computer science.
+Data Vault is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

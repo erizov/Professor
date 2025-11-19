@@ -4,7 +4,7 @@
    Unit of Work
 
 2. **What problem does it solve? (1 sentence)**  
-   Tracks changes to multiple business objects and coordinates a single transaction commit to ensure consistency.
+Tracks changes to multiple business objects and coordinates a single transaction commit to ensure consistency.
 
 3. **Intuition (plain-language explanation)**  
    Accumulate inserts/updates/deletes in memory, then write them as one atomic unit.

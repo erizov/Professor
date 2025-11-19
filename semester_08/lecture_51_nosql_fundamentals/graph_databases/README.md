@@ -4,7 +4,7 @@
    Graph Databases
 
 2. **What problem does it solve? (1 sentence)**  
-   Stores data as nodes (entities) and edges (relationships), enabling efficient traversal and querying of complex relationships and network structures.
+Stores data as nodes (entities) and edges (relationships), enabling efficient traversal and querying of complex relationships and network structures.
 
 3. **Intuition (plain-language explanation)**  
    Like a social network: graph databases store data like a social network where people are nodes (entities) and friendships are edges (relationships) - you can easily find 'friends of friends' by following edges (relationships), making it perfect for modeling and querying complex relationships like social networks, recommendation systems, or knowledge graphs.
@@ -44,6 +44,5 @@
     Alternatives: Relational Databases, Document Databases, Triple Stores, Network Databases
 
 11. **30-second explanation (your own words)**  
-    Stores data as nodes (entities) and edges (relationships), enabling efficient traversal and querying of complex relationships and network structures.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

@@ -4,7 +4,7 @@
    Raft Blockchain
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements Raft consensus algorithm for blockchains, providing a simpler alternative to Paxos with strong leader-based consensus, used in blockchain systems for fast and understandable consensus.
+Implements Raft consensus algorithm for blockchains, providing a simpler alternative to Paxos with strong leader-based consensus, used in blockchain systems for fast and understandable consensus.
 
 3. **Intuition (plain-language explanation)**  
    Like democratic leadership: Raft is like democratic leadership - you elect a leader (like electing a president) who makes decisions, and if the leader fails, you elect a new one - just as democratic leadership is understandable, Raft provides understandable consensus.
@@ -46,6 +46,6 @@
     Alternatives: Paxos, PBFT, Proof of Stake, Other Consensus
 
 11. **30-second explanation (your own words)**  
-    Implements Raft consensus algorithm for blockchains, providing a simpler alternative to Paxos with strong leader-based consensus, used in blockchain systems for fast and understandable consensus.
+Implements Raft consensus algorithm for blockchains, providing a simpler alternative to Paxos with strong leader-based consensus, used in blockchain systems for fast and understandable consensus.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

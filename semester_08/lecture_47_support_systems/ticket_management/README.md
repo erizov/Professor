@@ -7,7 +7,7 @@
    Organizes, tracks, and manages customer support requests from creation to resolution, ensuring no issues are lost and providing visibility into support workload and performance.
 
 3. **Intuition (plain-language explanation)**  
-   Like a help desk queue: when customers need help, they get a ticket number (like at a deli counter) - the ticket tracks who needs help, what the problem is, who's working on it, and when it's resolved. Ticket management ensures every request is tracked, assigned, and resolved, like a well-organized help desk.
+Like a help desk queue: when customers need help, they get a ticket number (like at a deli counter) - the ticket tracks who needs help, what the problem is, who's working on it, and when it's resolved. Ticket management ensures every request is tracked, assigned, and resolved, like a well-organized help desk.
 
 4. **Inputs & Outputs**  
    - Input: Customer requests, ticket details, agent assignments, status updates, priority levels.  

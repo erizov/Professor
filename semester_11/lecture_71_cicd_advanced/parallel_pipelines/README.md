@@ -46,6 +46,5 @@
     Alternatives: Sequential Pipelines, Partially Parallel, Matrix Builds, Distributed Execution
 
 11. **30-second explanation (your own words)**  
-    Executes multiple pipeline steps or entire pipelines concurrently, reducing total execution time and improving CI/CD efficiency through parallelization.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

@@ -4,13 +4,13 @@
    Template Method Pattern
 
 2. **What problem does it solve? (1 sentence)**  
-   Defines the skeleton of an algorithm in a base class while letting subclasses override specific steps.
+Defines the skeleton of an algorithm in a base class while letting subclasses override specific steps.
 
 3. **Intuition (plain-language explanation)**  
    Recipe template: the base class outlines the process, subclasses supply the ingredient variations.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm with invariant structure but customizable steps.  
+- Input: Algorithm with invariant structure but customizable steps.
    - Output: Abstract class with template method calling primitive operations that subclasses override.
 
 5. **Step-by-step description (5–10 lines max)**  
@@ -39,6 +39,6 @@
     Alternatives: Strategy Pattern, Hooks/Callbacks, Pipeline Pattern
 
 11. **30-second explanation (your own words)**  
-    Put the invariant algorithm flow in a base class and let subclasses override specific steps via hook methods.
+Put the invariant algorithm flow in a base class and let subclasses override specific steps via hook methods.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

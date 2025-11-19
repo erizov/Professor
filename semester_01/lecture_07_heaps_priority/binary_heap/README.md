@@ -7,7 +7,7 @@
    Maintains a complete binary tree where parent nodes are always greater (max-heap) or smaller (min-heap) than children.
 
 3. **Intuition (plain-language explanation)**  
-   Like a family tree where parents always outrank children: the top person is the most important, and you can quickly promote someone up the ranks.
+Like a family tree where parents always outrank children: the top person is the most important, and you can quickly promote someone up the ranks.
 
 4. **Inputs & Outputs**  
    - Input: Sequence of insert/extract operations on priority values.  

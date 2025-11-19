@@ -7,7 +7,7 @@
    Optimizes database performance by identifying bottlenecks, tuning configuration, optimizing queries, and adjusting resources to improve response times and throughput.
 
 3. **Intuition (plain-language explanation)**  
-   Like tuning a car engine: database performance tuning is like tuning a car for better performance - you identify what's slowing it down (bottlenecks like slow queries, missing indexes), adjust settings (configuration like memory, cache), optimize components (queries, indexes), and test improvements (benchmarking) - the goal is to make the database run faster and more efficiently, like tuning a car to go faster and use less fuel.
+Like tuning a car engine: database performance tuning is like tuning a car for better performance - you identify what's slowing it down (bottlenecks like slow queries, missing indexes), adjust settings (configuration like memory, cache), optimize components (queries, indexes), and test improvements (benchmarking) - the goal is to make the database run faster and more efficiently, like tuning a car to go faster and use less fuel.
 
 4. **Inputs & Outputs**  
    - Input: Performance metrics, slow queries, configuration settings, resource usage, workload patterns.  

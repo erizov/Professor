@@ -1,7 +1,7 @@
 # Knuth-Morris-Pratt (KMP) Algorithm
 
 1. **Name of Algorithm**  
-   Knuth-Morris-Pratt (KMP) Algorithm
+Knuth-Morris-Pratt (KMP) Algorithm
 
 2. **What problem does it solve? (1 sentence)**  
    Finds all occurrences of a pattern string in a text string efficiently by preprocessing the pattern to avoid redundant comparisons, achieving linear time complexity.

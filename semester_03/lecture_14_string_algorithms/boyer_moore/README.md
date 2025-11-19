@@ -36,7 +36,7 @@
 - More complex preprocessing than KMP.
 
 10. **Compare with alternatives**  
-    Alternatives: KMP, Rabin-Karp, Sunday Algorithm
+Alternatives: KMP, Rabin-Karp, Sunday Algorithm
 
 11. **30-second explanation (your own words)**  
     Match backwards and use character mismatches to skip ahead intelligently, often faster than forward matching.

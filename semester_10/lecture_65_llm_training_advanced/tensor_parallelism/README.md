@@ -7,7 +7,7 @@
    Splits individual tensor operations (matrix multiplications) across multiple devices by partitioning tensors along specific dimensions, enabling parallel computation of large matrix operations.
 
 3. **Intuition (plain-language explanation)**  
-   Like splitting a large multiplication problem: tensor parallelism is like splitting a huge multiplication problem across multiple calculators - if you need to multiply two huge matrices, you split each matrix into pieces, give each calculator (GPU) a piece, they multiply their pieces in parallel, and you combine the results - this allows you to handle matrix multiplications too large for a single calculator (GPU) by using multiple calculators together.
+Like splitting a large multiplication problem: tensor parallelism is like splitting a huge multiplication problem across multiple calculators - if you need to multiply two huge matrices, you split each matrix into pieces, give each calculator (GPU) a piece, they multiply their pieces in parallel, and you combine the results - this allows you to handle matrix multiplications too large for a single calculator (GPU) by using multiple calculators together.
 
 4. **Inputs & Outputs**  
    - Input: Large tensors, matrix operations, multiple GPUs, tensor dimensions, partitioning strategy.  

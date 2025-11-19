@@ -7,7 +7,7 @@
    Forecasts future database resource requirements (storage, compute, memory) based on growth trends and usage patterns, ensuring adequate capacity to meet future needs.
 
 3. **Intuition (plain-language explanation)**  
-   Like planning for a growing family: capacity planning is like planning house size for a growing family - you analyze current usage (how much space you use now), growth trends (how fast the family is growing), and forecast future needs (how much space you'll need in 2 years) - then you plan resources (buy bigger house, add rooms) to ensure you have enough capacity before you run out.
+Like planning for a growing family: capacity planning is like planning house size for a growing family - you analyze current usage (how much space you use now), growth trends (how fast the family is growing), and forecast future needs (how much space you'll need in 2 years) - then you plan resources (buy bigger house, add rooms) to ensure you have enough capacity before you run out.
 
 4. **Inputs & Outputs**  
    - Input: Current usage metrics, growth trends, business projections, performance requirements, resource constraints.  

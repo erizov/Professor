@@ -16,7 +16,6 @@
 5. **Step-by-step description (5–10 lines max)**  
 1. Start at the root node and compare the target key.
 2. If key < current node, recurse or iterate into the left child.
-3. If key > current node, recurse or iterate into the right child.
 4. If key equals the node, update or return the value.
 5. During deletion, replace removed nodes with predecessor or successor to preserve ordering.
 

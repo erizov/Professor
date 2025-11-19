@@ -10,7 +10,7 @@
    Like a weighted lottery: instead of solving puzzles (expensive), validators 'stake' their coins as collateral - the more coins you stake, the higher your chance of being selected to validate blocks. If you validate incorrectly, you lose your stake (economic penalty), so validators are incentivized to be honest.
 
 4. **Inputs & Outputs**  
-   - Input: Staked cryptocurrency, validator selection algorithm, block candidate, validator's stake amount.  
+- Input: Staked cryptocurrency, validator selection algorithm, block candidate, validator's stake amount.
    - Output: Validated block, validator rewards, updated stake balances.
 
 5. **Step-by-step description (5–10 lines max)**  

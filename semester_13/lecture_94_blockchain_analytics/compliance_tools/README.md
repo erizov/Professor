@@ -7,7 +7,7 @@
    Ensures blockchain transactions and entities comply with regulatory requirements by implementing KYC/AML checks, transaction monitoring, and reporting tools for regulatory compliance.
 
 3. **Intuition (plain-language explanation)**  
-   Like a compliance officer: Blockchain compliance tools are like a compliance officer for blockchain - they check identities (KYC), monitor transactions (AML), flag suspicious activities, and generate reports for regulators - just as a compliance officer ensures a company follows regulations, these tools ensure blockchain activities comply with financial regulations.
+Like a compliance officer: Blockchain compliance tools are like a compliance officer for blockchain - they check identities (KYC), monitor transactions (AML), flag suspicious activities, and generate reports for regulators - just as a compliance officer ensures a company follows regulations, these tools ensure blockchain activities comply with financial regulations.
 
 4. **Inputs & Outputs**  
    - Input: Transaction data, user identities, regulatory rules, compliance policies, risk parameters, reporting requirements.  
@@ -46,6 +46,6 @@
     Alternatives: Manual Compliance, Basic Screening, Advanced Analytics, Third-Party Services
 
 11. **30-second explanation (your own words)**  
-    Tools and systems that ensure blockchain transactions and entities comply with regulatory requirements through KYC/AML checks and transaction monitoring.
+Tools and systems that ensure blockchain transactions and entities comply with regulatory requirements through KYC/AML checks and transaction monitoring.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

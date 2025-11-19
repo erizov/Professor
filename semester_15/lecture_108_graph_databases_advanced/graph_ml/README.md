@@ -4,10 +4,10 @@
    Graph Ml
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements graph ml algorithm.
+Implements graph ml algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Graph Ml is a fundamental algorithm in computer science.
+Graph Ml is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

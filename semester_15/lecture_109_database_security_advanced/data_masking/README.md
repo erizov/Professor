@@ -4,10 +4,10 @@
    Data Masking
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements data masking algorithm.
+Implements data masking algorithm.
 
 3. **Intuition (plain-language explanation)**  
-   Data Masking is a fundamental algorithm in computer science.
+Data Masking is a fundamental algorithm in computer science.
 
 4. **Inputs & Outputs**  
    - Input: Algorithm-specific inputs  

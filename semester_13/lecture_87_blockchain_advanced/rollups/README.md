@@ -10,7 +10,7 @@
    Like a shipping container: Rollups are like shipping containers - instead of shipping items individually (expensive), you pack many items into a container (batch transactions), compress it (compress data), and ship the container (submit to main chain) - this reduces shipping costs (fees) while maintaining security (main chain validation).
 
 4. **Inputs & Outputs**  
-   - Input: Transactions, rollup sequencer, compression algorithm, state transitions, validity proofs (optional).  
+- Input: Transactions, rollup sequencer, compression algorithm, state transitions, validity proofs (optional).
    - Output: Rollup blocks, compressed transaction data, state roots, validity proofs (ZK-Rollups), fraud proofs (Optimistic Rollups).
 
 5. **Step-by-step description (5–10 lines max)**  
