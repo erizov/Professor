@@ -24,21 +24,21 @@
    Insert 'cat', 'car': root → 'c' → 'a' → 't' (end) and 'a' → 'r' (end). Search 'car': follow c-a-r, found.
 
 7. **Time & Space Complexity**  
-   - Time: O(m) for search/insert where m is string length; O(n*m) to build from n strings.  
-   - Space: O(ALPHABET_SIZE * N * M) worst case, but can be compressed.
+   - Time: O(m) per operation where m is key length (assuming fixed alphabet).  
+   - Space: O(ALPHABET_SIZE × number_of_nodes); can be optimized with compression.
 
 8. **Strengths**  
-- Fast prefix matching and autocomplete queries.
-- Efficient for dictionary lookups and spell checkers.
+- Fast prefix queries and lexicographic enumeration.
+- Supports autocomplete, spell-check, and dictionary applications.
 
 9. **Weaknesses / limitations**  
-- High memory usage for sparse tries.
-- Slower than hash tables for exact lookups.
+- High memory usage for sparse datasets.
+- Does not inherently store ordering beyond lexicographic traversal.
 
 10. **Compare with alternatives**  
     Alternatives: Hash Table, Ternary Search Tree, Radix Tree
 
 11. **30-second explanation (your own words)**  
-    A tree where each path spells out a string, making prefix searches as fast as following the path.
+    Store strings character by character so common prefixes share nodes, allowing quick prefix-based lookups.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

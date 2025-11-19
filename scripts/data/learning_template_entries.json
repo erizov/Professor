@@ -510,29 +510,36 @@
     },
     {
       "path": "semester_01/lecture_06_advanced_trees/avl_tree/README.md",
-      "name": "Avl Tree",
-      "problem": "Implements avl tree algorithm.",
-      "intuition": "Avl Tree is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "AVL Tree",
+      "problem": "Maintains a self-balancing binary search tree where the heights of left and right subtrees differ by at most one.",
+      "intuition": "Like a see-saw that automatically adjusts itself: whenever one side gets too heavy, it rotates to balance out.",
+      "inputs": "Sequence of insert/delete/search operations on key-value pairs.",
+      "outputs": "Balanced binary search tree with O(log n) height guarantees.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Insert or delete a node using standard BST rules.",
+        "Check the balance factor (height difference) of each ancestor.",
+        "If imbalance detected (|balance| > 1), perform rotations.",
+        "Single rotation for outside cases (left-left or right-right).",
+        "Double rotation for inside cases (left-right or right-left).",
+        "Update heights and continue up the tree until balanced."
       ],
-      "example": "Example: Avl Tree applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "analysis",
+      "example": "Insert 3,2,1: After 3 and 2, insert 1 causes left-left imbalance. Rotate right around 3: [2(1,3)].",
+      "time_complexity": "O(log n) for all operations (insert, delete, search).",
+      "space_complexity": "O(n) to store n nodes.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Guaranteed O(log n) height ensures predictable performance.",
+        "Strict balancing prevents worst-case O(n) behavior."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "More complex than basic BST due to rotation overhead.",
+        "Requires storing balance factors or heights per node."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Red-Black Tree",
+        "Splay Tree",
+        "B-Tree"
       ],
-      "explanation": "Avl Tree solves computational problems efficiently."
+      "explanation": "A self-adjusting BST that keeps itself balanced by rotating nodes when one subtree becomes too tall."
     },
     {
       "path": "semester_01/lecture_06_advanced_trees/b_tree/README.md",
@@ -613,22 +620,22 @@
         "Prefix search: traverse to prefix node, collect all descendants."
       ],
       "example": "Insert 'cat', 'car': root → 'c' → 'a' → 't' (end) and 'a' → 'r' (end). Search 'car': follow c-a-r, found.",
-      "time_complexity": "O(m) for search/insert where m is string length; O(n*m) to build from n strings.",
-      "space_complexity": "O(ALPHABET_SIZE * N * M) worst case, but can be compressed.",
+      "time_complexity": "O(m) per operation where m is key length (assuming fixed alphabet).",
+      "space_complexity": "O(ALPHABET_SIZE × number_of_nodes); can be optimized with compression.",
       "strengths": [
-        "Fast prefix matching and autocomplete queries.",
-        "Efficient for dictionary lookups and spell checkers."
+        "Fast prefix queries and lexicographic enumeration.",
+        "Supports autocomplete, spell-check, and dictionary applications."
       ],
       "weaknesses": [
-        "High memory usage for sparse tries.",
-        "Slower than hash tables for exact lookups."
+        "High memory usage for sparse datasets.",
+        "Does not inherently store ordering beyond lexicographic traversal."
       ],
       "alternatives": [
         "Hash Table",
         "Ternary Search Tree",
         "Radix Tree"
       ],
-      "explanation": "A tree where each path spells out a string, making prefix searches as fast as following the path."
+      "explanation": "Store strings character by character so common prefixes share nodes, allowing quick prefix-based lookups."
     },
     {
       "path": "semester_01/lecture_07_heaps_priority/binary_heap/README.md",

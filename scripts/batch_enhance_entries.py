@@ -1096,6 +1096,197 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Dependency Injection", "Static Classes", "Module-level singletons"],
         "explanation": "Control instantiation so exactly one object exists and is accessible globally, but use sparingly due to testability concerns."
+    },
+    "semester_01/lecture_05_trees/avl_tree/README.md": {
+        "name": "AVL Tree",
+        "problem": "Maintains a self-balancing binary search tree where the heights of left and right subtrees differ by at most one.",
+        "intuition": "Like a see-saw that automatically adjusts itself: whenever one side gets too heavy, it rotates to balance out.",
+        "inputs": "Sequence of insert/delete/search operations on key-value pairs.",
+        "outputs": "Balanced binary search tree with O(log n) height guarantees.",
+        "steps": [
+            "Insert or delete a node using standard BST rules.",
+            "Check the balance factor (height difference) of each ancestor.",
+            "If imbalance detected (|balance| > 1), perform rotations.",
+            "Single rotation for outside cases (left-left or right-right).",
+            "Double rotation for inside cases (left-right or right-left).",
+            "Update heights and continue up the tree until balanced."
+        ],
+        "example": "Insert 3,2,1: After 3 and 2, insert 1 causes left-left imbalance. Rotate right around 3: [2(1,3)].",
+        "time_complexity": "O(log n) for all operations (insert, delete, search).",
+        "space_complexity": "O(n) to store n nodes.",
+        "strengths": [
+            "Guaranteed O(log n) height ensures predictable performance.",
+            "Strict balancing prevents worst-case O(n) behavior."
+        ],
+        "weaknesses": [
+            "More complex than basic BST due to rotation overhead.",
+            "Requires storing balance factors or heights per node."
+        ],
+        "alternatives": ["Red-Black Tree", "Splay Tree", "B-Tree"],
+        "explanation": "A self-adjusting BST that keeps itself balanced by rotating nodes when one subtree becomes too tall."
+    },
+    "semester_01/lecture_05_trees/binary_search_tree/README.md": {
+        "name": "Binary Search Tree",
+        "problem": "Stores keys so that lookups, inserts, and deletes can exploit sorted order with O(log n) average time.",
+        "intuition": "Think of a game of twenty questions: each comparison decides whether to go left (smaller) or right (larger) until you reach the answer.",
+        "inputs": "Comparable keys with optional values; operations like insert, search, delete.",
+        "outputs": "Tree structure where in-order traversal yields sorted keys.",
+        "steps": [
+            "Start at the root node and compare the target key.",
+            "If key < current node, recurse or iterate into the left child.",
+            "If key > current node, recurse or iterate into the right child.",
+            "If key equals the node, update or return the value.",
+            "During deletion, replace removed nodes with predecessor or successor to preserve ordering."
+        ],
+        "example": "Insert 8,3,10,1,6: 8 is root, 3 goes left, 10 right, 1 left of 3, 6 right of 3.",
+        "time_complexity": "Average O(log n); worst-case O(n) on skewed trees.",
+        "space_complexity": "O(n) to store n nodes.",
+        "strengths": [
+            "Maintains sorted order with simple pointer structure.",
+            "Supports inorder traversal to produce sorted output quickly."
+        ],
+        "weaknesses": [
+            "Unbalanced input degrades operations to O(n).",
+            "Needs balancing variants (AVL, Red-Black) for guaranteed performance."
+        ],
+        "alternatives": ["AVL Tree", "Red-Black Tree", "Skip List"],
+        "explanation": "A search tree where each node’s left subtree holds smaller keys and the right subtree holds larger ones, enabling logarithmic search when balanced."
+    },
+    "semester_01/lecture_05_trees/binary_tree/README.md": {
+        "name": "Binary Tree",
+        "problem": "Represents hierarchical relationships where each node may have up to two children.",
+        "intuition": "Picture a family tree where every person can have a left and right child pointer, letting you organize data hierarchically.",
+        "inputs": "Nodes containing data plus optional left/right child references.",
+        "outputs": "Tree structure supporting traversals such as preorder, inorder, and postorder.",
+        "steps": [
+            "Create a root node (which may be empty).",
+            "Attach left/right children as required by the domain problem.",
+            "Traverse using preorder (node-left-right), inorder (left-node-right), or postorder (left-right-node).",
+            "Breadth-first traversal visits nodes level by level.",
+            "Perform application-specific work (search, aggregation) during traversals."
+        ],
+        "example": "Tree with root 1, left child 2, right child 3: inorder traversal yields [2,1,3].",
+        "time_complexity": "Traversals and searches touch each node once: O(n).",
+        "space_complexity": "O(n) for nodes plus O(h) recursion depth where h is tree height.",
+        "strengths": [
+            "Flexible backbone for heaps, BSTs, and expression trees.",
+            "Natural fit for recursive definitions and divide-and-conquer algorithms."
+        ],
+        "weaknesses": [
+            "By itself offers no ordering or balancing guarantees.",
+            "Pointer-heavy representation can hurt cache locality."
+        ],
+        "alternatives": ["General Tree", "Binary Search Tree", "Heap"],
+        "explanation": "A generic two-child-per-node structure that underpins many specialized tree variants and traversals."
+    },
+    "semester_01/lecture_06_advanced_trees/avl_tree/README.md": {
+        "name": "AVL Tree",
+        "problem": "Maintains a self-balancing binary search tree where the heights of left and right subtrees differ by at most one.",
+        "intuition": "Like a see-saw that automatically adjusts itself: whenever one side gets too heavy, it rotates to balance out.",
+        "inputs": "Sequence of insert/delete/search operations on key-value pairs.",
+        "outputs": "Balanced binary search tree with O(log n) height guarantees.",
+        "steps": [
+            "Insert or delete a node using standard BST rules.",
+            "Check the balance factor (height difference) of each ancestor.",
+            "If imbalance detected (|balance| > 1), perform rotations.",
+            "Single rotation for outside cases (left-left or right-right).",
+            "Double rotation for inside cases (left-right or right-left).",
+            "Update heights and continue up the tree until balanced."
+        ],
+        "example": "Insert 3,2,1: After 3 and 2, insert 1 causes left-left imbalance. Rotate right around 3: [2(1,3)].",
+        "time_complexity": "O(log n) for all operations (insert, delete, search).",
+        "space_complexity": "O(n) to store n nodes.",
+        "strengths": [
+            "Guaranteed O(log n) height ensures predictable performance.",
+            "Strict balancing prevents worst-case O(n) behavior."
+        ],
+        "weaknesses": [
+            "More complex than basic BST due to rotation overhead.",
+            "Requires storing balance factors or heights per node."
+        ],
+        "alternatives": ["Red-Black Tree", "Splay Tree", "B-Tree"],
+        "explanation": "A self-adjusting BST that keeps itself balanced by rotating nodes when one subtree becomes too tall."
+    },
+    "semester_01/lecture_06_advanced_trees/b_tree/README.md": {
+        "name": "B-Tree",
+        "problem": "Efficiently stores and retrieves large datasets on disk by minimizing disk I/O through wide, shallow trees.",
+        "intuition": "Like a library filing system: instead of narrow tall shelves, use wide shallow ones so you can grab multiple books at once.",
+        "inputs": "Large dataset of key-value pairs, typically stored on disk.",
+        "outputs": "Multi-way search tree optimized for external storage access.",
+        "steps": [
+            "Each node contains multiple keys (typically 100-1000) and child pointers.",
+            "Search: traverse from root, compare with node keys, follow appropriate child.",
+            "Insert: find leaf, add key; if node overflows, split and promote middle key.",
+            "Delete: remove key; if node underflows, merge with sibling or borrow key.",
+            "Maintain property: all leaves at same depth, nodes between t-1 and 2t-1 keys."
+        ],
+        "example": "B-tree of order 3: root [10,20] has children [5,7], [15,17], [25,27]. Insert 12: goes to middle child, no split needed.",
+        "time_complexity": "O(log n) with base of node capacity (typically 100-1000), making it effectively O(log n / log t).",
+        "space_complexity": "O(n) total storage, but nodes are large (disk pages).",
+        "strengths": [
+            "Minimizes disk I/O by reading large nodes (pages) at once.",
+            "Widely used in databases and file systems for indexing."
+        ],
+        "weaknesses": [
+            "More complex than binary trees for in-memory operations.",
+            "Requires careful tuning of node size for optimal performance."
+        ],
+        "alternatives": ["B+ Tree", "LSM Tree", "Hash Index"],
+        "explanation": "A multi-way tree that stores many keys per node to reduce disk reads, perfect for database indexing."
+    },
+    "semester_01/lecture_06_advanced_trees/red_black_tree/README.md": {
+        "name": "Red-Black Tree",
+        "problem": "Maintains a balanced binary search tree with relaxed balancing rules compared to AVL trees.",
+        "intuition": "A BST with color coding: red and black nodes follow rules that keep the tree roughly balanced without strict height requirements.",
+        "inputs": "Sequence of insert/delete/search operations on key-value pairs.",
+        "outputs": "Balanced binary search tree with O(log n) worst-case height.",
+        "steps": [
+            "Insert node as red (maintains black height property).",
+            "If parent is black, done; if red, check uncle color.",
+            "If uncle is red: recolor parent, uncle, and grandparent.",
+            "If uncle is black: rotate to fix red-red violation.",
+            "Root is always black; all paths have same black node count."
+        ],
+        "example": "Insert 5,3,7,1: After 1, red-red violation with 3. Uncle 7 is red, so recolor: 3 and 7 become black, 5 becomes red.",
+        "time_complexity": "O(log n) for all operations; slightly faster than AVL due to fewer rotations.",
+        "space_complexity": "O(n) with one color bit per node.",
+        "strengths": [
+            "Fewer rotations than AVL trees, better for frequent updates.",
+            "Used in many standard library implementations (Java TreeMap, C++ map)."
+        ],
+        "weaknesses": [
+            "Less strictly balanced than AVL (height can be up to 2*log(n+1)).",
+            "More complex than basic BST."
+        ],
+        "alternatives": ["AVL Tree", "Splay Tree", "Treap"],
+        "explanation": "A self-balancing BST using red/black coloring rules that ensure no path is more than twice as long as any other."
+    },
+    "semester_01/lecture_06_advanced_trees/trie/README.md": {
+        "name": "Trie",
+        "problem": "Efficiently stores and searches strings with shared prefixes, enabling fast prefix matching and autocomplete.",
+        "intuition": "Like a phone book organized by first letter, then second, then third: each level narrows down the search.",
+        "inputs": "Set of strings (words, keys) and query operations (insert, search, prefix match).",
+        "outputs": "Tree structure where each path from root to node represents a string prefix.",
+        "steps": [
+            "Root represents empty string.",
+            "Each node has children for each possible next character.",
+            "Insert: traverse/create path for each character, mark end node.",
+            "Search: follow path character by character, check if end marker exists.",
+            "Prefix search: traverse to prefix node, collect all descendants."
+        ],
+        "example": "Insert 'cat', 'car': root → 'c' → 'a' → 't' (end) and 'a' → 'r' (end). Search 'car': follow c-a-r, found.",
+        "time_complexity": "O(m) per operation where m is key length (assuming fixed alphabet).",
+        "space_complexity": "O(ALPHABET_SIZE × number_of_nodes); can be optimized with compression.",
+        "strengths": [
+            "Fast prefix queries and lexicographic enumeration.",
+            "Supports autocomplete, spell-check, and dictionary applications."
+        ],
+        "weaknesses": [
+            "High memory usage for sparse datasets.",
+            "Does not inherently store ordering beyond lexicographic traversal."
+        ],
+        "alternatives": ["Hash Table", "Ternary Search Tree", "Radix Tree"],
+        "explanation": "Store strings character by character so common prefixes share nodes, allowing quick prefix-based lookups."
     }
 }
 
