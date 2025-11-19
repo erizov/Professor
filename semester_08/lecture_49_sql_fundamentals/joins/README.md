@@ -1,42 +1,44 @@
-# Joins
+# SQL Joins
 
-**Category**: Algorithm
+1. **Name of Algorithm**  
+   SQL Joins
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Combine rows from related tables based on matching keys.
 
-Joins is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+3. **Intuition (plain-language explanation)**  
+   Treat tables like sets and match rows where keys agree or complement each other.
 
-## Description
+4. **Inputs & Outputs**  
+   - Input: Two or more tables plus join condition.  
+   - Output: Composite rows containing columns from each source table.
 
-This algorithm is particularly useful for solving problems related to [specific domain]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+5. **Step-by-step description (5–10 lines max)**  
+1. Choose join type (INNER, LEFT, RIGHT, FULL, CROSS).
+2. Identify join keys/conditions.
+3. Relational engine decides join algorithm (nested loop, hash, merge).
+4. Execute join, producing combined tuples.
+5. Apply downstream filters or projections.
 
-## How It Works
+6. **Tiny example (hand-simulated)**  
+   SELECT orders.id, customers.name FROM orders INNER JOIN customers ON orders.customer_id = customers.id;
 
-[Algorithm description to be added]
+7. **Time & Space Complexity**  
+   - Time: Depends on join algorithm; hash join ~O(n + m), nested loop ~O(n·m) without indexes.  
+   - Space: May require hash tables or sort buffers.
 
-## Complexity Analysis
+8. **Strengths**  
+- Expressive way to relate normalized tables.
+- Optimizers pick efficient algorithms automatically.
 
-- **Time Complexity**: To be determined based on implementation
-- **Space Complexity**: To be determined based on implementation
+9. **Weaknesses / limitations**  
+- Expensive if keys lack indexes.
+- Incorrect join types can duplicate or drop rows.
 
-## Use Cases
+10. **Compare with alternatives**  
+    Alternatives: Denormalization, Materialized views, Application-level joins
 
-- [Use case 1]
-- [Use case 2]
-- [Use case 3]
+11. **30-second explanation (your own words)**  
+    Map matching keys across tables so related data can be viewed as a single combined set.
 
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples.
-
-## References
-
-- Wikipedia: Joins
-- Additional resources can be found in academic literature
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*

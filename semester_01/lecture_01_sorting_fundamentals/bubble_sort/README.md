@@ -1,55 +1,44 @@
 # Bubble Sort
 
-**Category**: Sorting
+1. **Name of Algorithm**  
+   Bubble Sort
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Orders a short list of comparable values by repeatedly swapping out-of-order neighbors.
 
-Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted. The algorithm gets its name from the way smaller elements "bubble" to the top of the list.
+3. **Intuition (plain-language explanation)**  
+   Imagine shaking a list so adjacent items compare and the heavier ones slowly drift to the end each pass.
 
-## How It Works
+4. **Inputs & Outputs**  
+   - Input: Array or list of comparable elements.  
+   - Output: Same collection arranged in non-decreasing order.
 
-1. Start from the beginning of the array
-2. Compare each pair of adjacent elements
-3. If they are in the wrong order, swap them
-4. Continue until no more swaps are needed
-5. The largest element "bubbles up" to the end in each pass
+5. **Step-by-step description (5–10 lines max)**  
+1. Start at the first index.
+2. Compare the current element with the next element.
+3. Swap if the pair is out of order.
+4. Move one position forward and repeat until the pass ends.
+5. Shrink the unsorted tail and loop until a pass produces no swaps.
 
-## Complexity Analysis
+6. **Tiny example (hand-simulated)**  
+   [5, 3, 2] → swap 5/3 ⇒ [3, 5, 2]; swap 5/2 ⇒ [3, 2, 5]; next pass swaps 3/2 ⇒ [2, 3, 5].
 
-Time: O(n²) average and worst case, O(n) best case (optimized). Space: O(1)
+7. **Time & Space Complexity**  
+   - Time: O(n²) average/worst, O(n) best when already sorted.  
+   - Space: O(1) extra space.
 
-## Use Cases
+8. **Strengths**  
+- Simple to code and reason about.
+- Detects nearly-sorted input quickly if optimized to stop early.
 
-Educational purposes, very small datasets, nearly sorted data, when simplicity is critical
+9. **Weaknesses / limitations**  
+- Quadratic runtime makes it impractical for medium or large inputs.
+- Performs many redundant comparisons.
 
-## Algorithm Details
+10. **Compare with alternatives**  
+    Alternatives: Insertion Sort, Selection Sort, Merge Sort
 
-### Key Characteristics
+11. **30-second explanation (your own words)**  
+    Keep comparing neighbors so misplaced values crawl to the edges; repeat until no swaps happen.
 
-- **Stability**: Depends on implementation
-- **In-place**: Depends on implementation
-- **Adaptive**: Depends on implementation
-
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples and performance analysis.
-
-## References
-
-- Wikipedia: [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort)
-- Additional resources available in academic literature and algorithm textbooks
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
-
-## Learning Objectives
-
-By studying this algorithm, you will learn:
-1. The fundamental approach and logic
-2. Time and space complexity analysis
-3. When to use this algorithm vs alternatives
-4. Implementation details and optimizations
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*

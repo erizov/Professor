@@ -1,54 +1,43 @@
 # Selection Sort
 
-**Category**: Sorting
+1. **Name of Algorithm**  
+   Selection Sort
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Sorts by repeatedly selecting the smallest remaining element and placing it at the front.
 
-Selection sort is an in-place comparison sorting algorithm. It has an O(n²) time complexity, which makes it inefficient on large lists, and generally performs worse than the similar insertion sort. Selection sort is noted for its simplicity and has performance advantages over more complicated algorithms in certain situations, particularly where auxiliary memory is limited.
+3. **Intuition (plain-language explanation)**  
+   Scan the pile for the tiniest card, put it next in line, and continue with the leftovers.
 
-## How It Works
+4. **Inputs & Outputs**  
+   - Input: Array or list of comparable values.  
+   - Output: Same collection sorted ascending.
 
-1. Find the minimum element in the unsorted portion
-2. Swap it with the first element of the unsorted portion
-3. Move the boundary of the sorted portion one element to the right
-4. Repeat until the entire array is sorted
+5. **Step-by-step description (5–10 lines max)**  
+1. Set the current position i to 0.
+2. Find the smallest element from i to end.
+3. Swap that element with position i.
+4. Increment i and repeat until the list is ordered.
 
-## Complexity Analysis
+6. **Tiny example (hand-simulated)**  
+   [7, 3, 5] → smallest is 3, swap with 7 ⇒ [3, 7, 5]; next smallest is 5, swap ⇒ [3, 5, 7].
 
-Time: O(n²) in all cases. Space: O(1)
+7. **Time & Space Complexity**  
+   - Time: O(n²) regardless of input order.  
+   - Space: O(1) extra space.
 
-## Use Cases
+8. **Strengths**  
+- Performs minimal swaps (n - 1).
+- Easy to reason about and implement.
 
-Small datasets, when memory writes are expensive, educational purposes
+9. **Weaknesses / limitations**  
+- Still quadratic in comparisons.
+- Not stable without extra work.
 
-## Algorithm Details
+10. **Compare with alternatives**  
+    Alternatives: Insertion Sort, Heap Sort, Quick Sort
 
-### Key Characteristics
+11. **30-second explanation (your own words)**  
+    Repeatedly locate the smallest unused value and stick it at the next slot of the sorted prefix.
 
-- **Stability**: Depends on implementation
-- **In-place**: Depends on implementation
-- **Adaptive**: Depends on implementation
-
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples and performance analysis.
-
-## References
-
-- Wikipedia: [Selection sort](https://en.wikipedia.org/wiki/Selection_sort)
-- Additional resources available in academic literature and algorithm textbooks
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
-
-## Learning Objectives
-
-By studying this algorithm, you will learn:
-1. The fundamental approach and logic
-2. Time and space complexity analysis
-3. When to use this algorithm vs alternatives
-4. Implementation details and optimizations
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*

@@ -1,54 +1,43 @@
 # Merge Sort
 
-**Category**: Sorting
+1. **Name of Algorithm**  
+   Merge Sort
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Efficiently sorts large lists by divide-and-conquer merging of sorted halves.
 
-Merge sort is an efficient, general-purpose, comparison-based sorting algorithm. Most implementations produce a stable sort, which means that the order of equal elements is the same in the input and output. Merge sort is a divide and conquer algorithm that was invented by John von Neumann in 1945.
+3. **Intuition (plain-language explanation)**  
+   Split the deck until each pile has one card, then merge piles back together in order.
 
-## How It Works
+4. **Inputs & Outputs**  
+   - Input: Array or list of comparable elements.  
+   - Output: Sorted array.
 
-1. Divide the array into two halves
-2. Recursively sort both halves
-3. Merge the two sorted halves back together
-4. The merge process compares elements from both halves and combines them in sorted order
+5. **Step-by-step description (5–10 lines max)**  
+1. Divide the array into two halves.
+2. Recursively sort each half.
+3. Merge the two sorted halves by repeatedly taking the smaller front element.
+4. Continue merging until a single sorted list remains.
 
-## Complexity Analysis
+6. **Tiny example (hand-simulated)**  
+   [8, 3, 5, 2] → split into [8, 3] & [5, 2] → sort halves ⇒ [3, 8], [2, 5] → merge ⇒ [2, 3, 5, 8].
 
-Time: O(n log n) in all cases. Space: O(n)
+7. **Time & Space Complexity**  
+   - Time: O(n log n) for all cases.  
+   - Space: O(n) auxiliary storage for merges.
 
-## Use Cases
+8. **Strengths**  
+- Predictable performance and stable.
+- Great for linked lists and external sorting.
 
-Large datasets, when stability is required, external sorting, linked lists
+9. **Weaknesses / limitations**  
+- Requires extra memory for merging.
+- Recursive overhead on constrained environments.
 
-## Algorithm Details
+10. **Compare with alternatives**  
+    Alternatives: Quick Sort, Heap Sort, TimSort
 
-### Key Characteristics
+11. **30-second explanation (your own words)**  
+    Keep splitting into halves until singles, then merge each pair while keeping them sorted.
 
-- **Stability**: Depends on implementation
-- **In-place**: Depends on implementation
-- **Adaptive**: Depends on implementation
-
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples and performance analysis.
-
-## References
-
-- Wikipedia: [Merge sort](https://en.wikipedia.org/wiki/Merge_sort)
-- Additional resources available in academic literature and algorithm textbooks
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
-
-## Learning Objectives
-
-By studying this algorithm, you will learn:
-1. The fundamental approach and logic
-2. Time and space complexity analysis
-3. When to use this algorithm vs alternatives
-4. Implementation details and optimizations
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*

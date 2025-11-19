@@ -1,54 +1,44 @@
 # Linear Search
 
-**Category**: Searching
+1. **Name of Algorithm**  
+   Linear Search
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Finds the position of a target value by scanning elements sequentially.
 
-Linear search or sequential search is a method for finding an element within a list. It sequentially checks each element of the list until a match is found or the whole list has been searched. Linear search is rarely practical because other search algorithms allow significantly faster searching for all but short lists.
+3. **Intuition (plain-language explanation)**  
+   Check each item in order until the desired one appears or the list ends.
 
-## How It Works
+4. **Inputs & Outputs**  
+   - Input: List/array and target value.  
+   - Output: Index of the target or -1 if absent.
 
-1. Start from the first element
-2. Compare each element with the target
-3. If a match is found, return the index
-4. If the end is reached without a match, return -1
+5. **Step-by-step description (5–10 lines max)**  
+1. Start at index 0.
+2. Compare current element with target.
+3. If equal, return the index.
+4. Otherwise advance to the next index.
+5. Stop after the final element and return -1 if not found.
 
-## Complexity Analysis
+6. **Tiny example (hand-simulated)**  
+   Search 7 in [4, 7, 1]: compare 4 (no), compare 7 (yes) ⇒ index 1.
 
-Time: O(n). Space: O(1)
+7. **Time & Space Complexity**  
+   - Time: O(n) average and worst; O(1) best if first element matches.  
+   - Space: O(1).
 
-## Use Cases
+8. **Strengths**  
+- Works on unsorted collections.
+- Simple to implement and reason about.
 
-Unsorted arrays, small datasets, when simplicity is more important than speed
+9. **Weaknesses / limitations**  
+- Slow on large datasets due to full scan.
+- Cannot skip work without extra structure.
 
-## Algorithm Details
+10. **Compare with alternatives**  
+    Alternatives: Binary Search, Hash Lookup, Jump Search
 
-### Key Characteristics
+11. **30-second explanation (your own words)**  
+    Walk through each entry until the goal appears; trivial but potentially time-consuming.
 
-- **Stability**: Depends on implementation
-- **In-place**: Depends on implementation
-- **Adaptive**: Depends on implementation
-
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples and performance analysis.
-
-## References
-
-- Wikipedia: [Linear search](https://en.wikipedia.org/wiki/Linear_search)
-- Additional resources available in academic literature and algorithm textbooks
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
-
-## Learning Objectives
-
-By studying this algorithm, you will learn:
-1. The fundamental approach and logic
-2. Time and space complexity analysis
-3. When to use this algorithm vs alternatives
-4. Implementation details and optimizations
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*

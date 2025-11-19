@@ -1,55 +1,44 @@
 # Interpolation Search
 
-**Category**: Searching
+1. **Name of Algorithm**  
+   Interpolation Search
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Searches uniformly distributed sorted data by estimating the likely position of the target.
 
-Interpolation search is an algorithm for searching for a key in an array that has been ordered by numerical values assigned to the keys. It is an improvement over binary search for instances where the values in a sorted array are uniformly distributed.
+3. **Intuition (plain-language explanation)**  
+   Instead of always probing the middle, interpolate where the target might land based on value range.
 
-## How It Works
+4. **Inputs & Outputs**  
+   - Input: Sorted list with roughly uniform distribution and the target.  
+   - Output: Index or -1.
 
-1. Calculate probe position using interpolation formula
-2. Compare target with element at probe position
-3. If match, return index
-4. If target is smaller, search left subarray
-5. If target is larger, search right subarray
+5. **Step-by-step description (5–10 lines max)**  
+1. Maintain low and high indices.
+2. Estimate pos = low + (target - arr[low]) * (high - low) / (arr[high] - arr[low]).
+3. If arr[pos] equals target, return pos.
+4. If target < arr[pos], move high to pos - 1; else move low to pos + 1.
+5. Repeat until low > high or value found.
 
-## Complexity Analysis
+6. **Tiny example (hand-simulated)**  
+   In [10,20,30,40,50], searching 40 calculates pos near index 3 immediately.
 
-Time: O(log log n) average for uniform distribution, O(n) worst case. Space: O(1)
+7. **Time & Space Complexity**  
+   - Time: O(log log n) average on uniform data, O(n) worst if distribution is skewed.  
+   - Space: O(1).
 
-## Use Cases
+8. **Strengths**  
+- Fewer probes than binary search on uniform keys.
+- Still simple arithmetic and comparisons.
 
-Uniformly distributed sorted arrays, when data is evenly spread
+9. **Weaknesses / limitations**  
+- Performance collapses on clustered data.
+- Requires numeric keys with known range.
 
-## Algorithm Details
+10. **Compare with alternatives**  
+    Alternatives: Binary Search, Jump Search, Exponential Search
 
-### Key Characteristics
+11. **30-second explanation (your own words)**  
+    Guess where the target should live based on proportional distance, probe there, and tighten the bounds.
 
-- **Stability**: Depends on implementation
-- **In-place**: Depends on implementation
-- **Adaptive**: Depends on implementation
-
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples and performance analysis.
-
-## References
-
-- Wikipedia: [Interpolation search](https://en.wikipedia.org/wiki/Interpolation_search)
-- Additional resources available in academic literature and algorithm textbooks
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
-
-## Learning Objectives
-
-By studying this algorithm, you will learn:
-1. The fundamental approach and logic
-2. Time and space complexity analysis
-3. When to use this algorithm vs alternatives
-4. Implementation details and optimizations
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*

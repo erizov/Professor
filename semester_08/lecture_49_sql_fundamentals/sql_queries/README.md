@@ -1,42 +1,44 @@
-# Sql Queries
+# SQL Queries
 
-**Category**: Algorithm
+1. **Name of Algorithm**  
+   SQL Queries
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Retrieve, filter, and manipulate relational data using declarative statements.
 
-Sql Queries is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+3. **Intuition (plain-language explanation)**  
+   Describe the desired result set while the optimizer chooses an execution plan.
 
-## Description
+4. **Inputs & Outputs**  
+   - Input: SQL statement (SELECT/INSERT/UPDATE/DELETE) plus database schema/data.  
+   - Output: Result set, affected row count, or updated storage state.
 
-This algorithm is particularly useful for solving problems related to [specific domain]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+5. **Step-by-step description (5–10 lines max)**  
+1. Parse the SQL statement.
+2. Validate against schema and permissions.
+3. Generate a logical plan (joins, filters, projections).
+4. Optimize into a physical plan using indexes and statistics.
+5. Execute the plan and stream results back to the client.
 
-## How It Works
+6. **Tiny example (hand-simulated)**  
+   SELECT name FROM customers WHERE country='Canada'; returns matching customer names.
 
-[Algorithm description to be added]
+7. **Time & Space Complexity**  
+   - Time: Varies; indexed lookups approach O(log n), full scans O(n).  
+   - Space: Driven by execution plan (temporary joins, sorting buffers).
 
-## Complexity Analysis
+8. **Strengths**  
+- Declarative syntax hides implementation details.
+- Mature optimizers leverage indexes and caches.
 
-- **Time Complexity**: To be determined based on implementation
-- **Space Complexity**: To be determined based on implementation
+9. **Weaknesses / limitations**  
+- Poorly written queries can degrade to full scans.
+- Requires understanding of indexes and statistics for tuning.
 
-## Use Cases
+10. **Compare with alternatives**  
+    Alternatives: NoSQL query APIs, ORM-generated queries, Stored procedures
 
-- [Use case 1]
-- [Use case 2]
-- [Use case 3]
+11. **30-second explanation (your own words)**  
+    State what data you want, let the relational engine decide how to fetch it efficiently.
 
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples.
-
-## References
-
-- Wikipedia: Sql Queries
-- Additional resources can be found in academic literature
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*

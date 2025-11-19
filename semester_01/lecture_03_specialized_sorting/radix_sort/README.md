@@ -1,55 +1,44 @@
 # Radix Sort
 
-**Category**: Sorting
+1. **Name of Algorithm**  
+   Radix Sort
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Sorts integers or fixed-length strings by processing digits from least to most significant (or vice versa).
 
-Radix sort is a non-comparative sorting algorithm. It avoids comparison by creating and distributing elements into buckets according to their radix. For elements with more than one significant digit, this bucketing process is repeated for each digit, while preserving the ordering of the prior step, until all digits have been considered.
+3. **Intuition (plain-language explanation)**  
+   Group numbers by each digit place using a stable sorter so positions eventually align globally.
 
-## How It Works
+4. **Inputs & Outputs**  
+   - Input: List of fixed-length keys (integers, strings).  
+   - Output: Keys sorted lexicographically or numerically.
 
-1. Sort elements by least significant digit (LSD) or most significant digit (MSD)
-2. Group elements into buckets based on digit value
-3. Recombine buckets in order
-4. Repeat for next significant digit
-5. Continue until all digits processed
+5. **Step-by-step description (5–10 lines max)**  
+1. Choose digit order (LSB-first for integers).
+2. For each digit position:
+3.   - Group elements by digit using a stable bucket (like counting sort).
+4.   - Concatenate buckets to reform the list.
+5. Stop once the most significant digit is processed.
 
-## Complexity Analysis
+6. **Tiny example (hand-simulated)**  
+   [170, 45, 75, 90] ⇒ bucket by units, then tens, then hundreds ⇒ [45, 75, 90, 170].
 
-Time: O(d × (n + k)) where d is number of digits, k is radix. Space: O(n + k)
+7. **Time & Space Complexity**  
+   - Time: O(d · (n + k)) where d is digit count and k bucket size.  
+   - Space: O(n + k) for buckets.
 
-## Use Cases
+8. **Strengths**  
+- Linear time for fixed d.
+- Avoids comparisons entirely.
 
-Sorting integers, strings, fixed-width data types
+9. **Weaknesses / limitations**  
+- Needs stable sub-sorting and uniform key lengths.
+- Extra memory for buckets.
 
-## Algorithm Details
+10. **Compare with alternatives**  
+    Alternatives: Counting Sort, Bucket Sort, Comparison Sorts
 
-### Key Characteristics
+11. **30-second explanation (your own words)**  
+    Repeatedly bucket by digit so that by the final pass the entire key ordering emerges.
 
-- **Stability**: Depends on implementation
-- **In-place**: Depends on implementation
-- **Adaptive**: Depends on implementation
-
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples and performance analysis.
-
-## References
-
-- Wikipedia: [Radix sort](https://en.wikipedia.org/wiki/Radix_sort)
-- Additional resources available in academic literature and algorithm textbooks
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
-
-## Learning Objectives
-
-By studying this algorithm, you will learn:
-1. The fundamental approach and logic
-2. Time and space complexity analysis
-3. When to use this algorithm vs alternatives
-4. Implementation details and optimizations
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*

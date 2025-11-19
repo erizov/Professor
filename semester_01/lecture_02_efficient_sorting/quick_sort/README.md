@@ -1,54 +1,44 @@
 # Quick Sort
 
-**Category**: Sorting
+1. **Name of Algorithm**  
+   Quick Sort
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Efficient in-place sort that partitions around a pivot and recursively sorts partitions.
 
-Quicksort is an efficient sorting algorithm. Developed by British computer scientist Tony Hoare in 1959 and published in 1961, it is still a commonly used algorithm for sorting. When implemented well, it can be somewhat faster than merge sort and about two or three times faster than heapsort.
+3. **Intuition (plain-language explanation)**  
+   Pick a pivot, move smaller items left and larger right, then repeat on the two sides.
 
-## How It Works
+4. **Inputs & Outputs**  
+   - Input: Array of comparable values.  
+   - Output: Array sorted ascending or descending based on comparator.
 
-1. Choose a pivot element from the array
-2. Partition the array: elements smaller than pivot go left, larger go right
-3. Recursively apply quicksort to the left and right subarrays
-4. Combine the results (pivot is already in correct position)
+5. **Step-by-step description (5–10 lines max)**  
+1. Choose a pivot element.
+2. Partition the array so items < pivot go left, > pivot go right.
+3. Recursively quick sort the left partition.
+4. Recursively quick sort the right partition.
+5. Concatenate left + pivot + right segments.
 
-## Complexity Analysis
+6. **Tiny example (hand-simulated)**  
+   [9, 4, 7, 3] with pivot 7 ⇒ [4, 3 | 7 | 9] ⇒ sort left [4, 3] ⇒ [3, 4]; right [9] stays ⇒ [3, 4, 7, 9].
 
-Time: O(n log n) average, O(n²) worst case. Space: O(log n)
+7. **Time & Space Complexity**  
+   - Time: O(n log n) average, O(n²) worst if pivots are poor.  
+   - Space: O(log n) recursion stack average.
 
-## Use Cases
+8. **Strengths**  
+- In-place and typically very fast.
+- Cache-friendly sequential memory access.
 
-General-purpose sorting, large datasets, when average performance matters more than worst case
+9. **Weaknesses / limitations**  
+- Worst-case quadratic when pivots are unbalanced.
+- Not stable by default.
 
-## Algorithm Details
+10. **Compare with alternatives**  
+    Alternatives: Merge Sort, Heap Sort, IntroSort
 
-### Key Characteristics
+11. **30-second explanation (your own words)**  
+    Divide around an intelligently chosen pivot so the partitions shrink quickly, leading to near-logarithmic depth.
 
-- **Stability**: Depends on implementation
-- **In-place**: Depends on implementation
-- **Adaptive**: Depends on implementation
-
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples and performance analysis.
-
-## References
-
-- Wikipedia: [Quicksort](https://en.wikipedia.org/wiki/Quicksort)
-- Additional resources available in academic literature and algorithm textbooks
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
-
-## Learning Objectives
-
-By studying this algorithm, you will learn:
-1. The fundamental approach and logic
-2. Time and space complexity analysis
-3. When to use this algorithm vs alternatives
-4. Implementation details and optimizations
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*

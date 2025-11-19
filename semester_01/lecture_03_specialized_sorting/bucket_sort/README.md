@@ -1,54 +1,43 @@
 # Bucket Sort
 
-**Category**: Sorting
+1. **Name of Algorithm**  
+   Bucket Sort
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Sorts uniformly distributed real numbers by scattering them into buckets and sorting each bucket.
 
-Bucket sort, or bin sort, is a sorting algorithm that works by distributing the elements of an array into a number of buckets. Each bucket is then sorted individually, either using a different sorting algorithm, or by recursively applying the bucket sorting algorithm.
+3. **Intuition (plain-language explanation)**  
+   Partition the [0,1) range into buckets so each holds a small local list that can be sorted quickly.
 
-## How It Works
+4. **Inputs & Outputs**  
+   - Input: List of real numbers typically normalized to [0, 1).  
+   - Output: Sorted list of those numbers.
 
-1. Create empty buckets
-2. Distribute array elements into buckets based on value range
-3. Sort each bucket individually (using insertion sort or another algorithm)
-4. Concatenate all buckets back into the original array
+5. **Step-by-step description (5–10 lines max)**  
+1. Create k empty buckets.
+2. Distribute each element into the appropriate bucket based on value.
+3. Sort individual buckets (often using insertion sort).
+4. Concatenate the buckets in order.
 
-## Complexity Analysis
+6. **Tiny example (hand-simulated)**  
+   [0.42, 0.32, 0.23] ⇒ bucket 0.2–0.3 gets [0.23], 0.3–0.4 gets [0.32], 0.4–0.5 gets [0.42] ⇒ concatenated order [0.23, 0.32, 0.42].
 
-Time: O(n + k) average, O(n²) worst case. Space: O(n + k)
+7. **Time & Space Complexity**  
+   - Time: Average O(n) when distribution is uniform; worst O(n²) if items clump.  
+   - Space: O(n + k) for bucket storage.
 
-## Use Cases
+8. **Strengths**  
+- Near-linear when values spread evenly.
+- Buckets can be processed in parallel.
 
-Uniformly distributed data, floating point numbers, when data is distributed over a range
+9. **Weaknesses / limitations**  
+- Performance degrades on skewed data.
+- Requires knowledge of value distribution.
 
-## Algorithm Details
+10. **Compare with alternatives**  
+    Alternatives: Radix Sort, Counting Sort, Comparison Sorts
 
-### Key Characteristics
+11. **30-second explanation (your own words)**  
+    Exploit the distribution shape so each bucket is tiny, making local sorts trivial.
 
-- **Stability**: Depends on implementation
-- **In-place**: Depends on implementation
-- **Adaptive**: Depends on implementation
-
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples and performance analysis.
-
-## References
-
-- Wikipedia: [Bucket sort](https://en.wikipedia.org/wiki/Bucket_sort)
-- Additional resources available in academic literature and algorithm textbooks
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
-
-## Learning Objectives
-
-By studying this algorithm, you will learn:
-1. The fundamental approach and logic
-2. Time and space complexity analysis
-3. When to use this algorithm vs alternatives
-4. Implementation details and optimizations
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*

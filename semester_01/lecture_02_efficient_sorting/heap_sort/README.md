@@ -1,55 +1,43 @@
 # Heap Sort
 
-**Category**: Sorting
+1. **Name of Algorithm**  
+   Heap Sort
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Sorts by turning the input into a heap and repeatedly extracting the max (or min).
 
-Heapsort is a comparison-based sorting algorithm. Heapsort can be thought of as an improved selection sort: like selection sort, heapsort divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element from it and inserting it into the sorted region.
+3. **Intuition (plain-language explanation)**  
+   Build a priority queue so the largest element can be removed and placed at the end one by one.
 
-## How It Works
+4. **Inputs & Outputs**  
+   - Input: Array of comparable items.  
+   - Output: Array sorted in-place.
 
-1. Build a max heap from the input array
-2. The largest element is at the root
-3. Swap the root with the last element and reduce heap size
-4. Heapify the root to maintain heap property
-5. Repeat until heap size is 1
+5. **Step-by-step description (5–10 lines max)**  
+1. Heapify the entire array (build max-heap).
+2. Swap the root (largest value) with the last element.
+3. Reduce the heap size by one and heapify the root.
+4. Repeat extraction and heapify until one element remains.
 
-## Complexity Analysis
+6. **Tiny example (hand-simulated)**  
+   [4, 1, 3, 2] → build max-heap [4,2,3,1] → swap 4/1 ⇒ [1,2,3,4]; heapify remaining ⇒ [3,2,1,4] → continue until sorted.
 
-Time: O(n log n) in all cases. Space: O(1)
+7. **Time & Space Complexity**  
+   - Time: O(n log n) for all cases.  
+   - Space: O(1) extra space besides recursion-free heapify.
 
-## Use Cases
+8. **Strengths**  
+- Predictable O(n log n) time.
+- In-place with no recursion required.
 
-When worst-case O(n log n) is required, embedded systems, real-time systems
+9. **Weaknesses / limitations**  
+- Not stable.
+- Constant factors higher than quick sort on average.
 
-## Algorithm Details
+10. **Compare with alternatives**  
+    Alternatives: Quick Sort, Merge Sort, IntroSort
 
-### Key Characteristics
+11. **30-second explanation (your own words)**  
+    Leverage the heap property so the largest item is always on top, remove it, and restore the heap repeatedly.
 
-- **Stability**: Depends on implementation
-- **In-place**: Depends on implementation
-- **Adaptive**: Depends on implementation
-
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples and performance analysis.
-
-## References
-
-- Wikipedia: [Heapsort](https://en.wikipedia.org/wiki/Heapsort)
-- Additional resources available in academic literature and algorithm textbooks
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
-
-## Learning Objectives
-
-By studying this algorithm, you will learn:
-1. The fundamental approach and logic
-2. Time and space complexity analysis
-3. When to use this algorithm vs alternatives
-4. Implementation details and optimizations
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*

@@ -1,0 +1,511 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Apply the Universal Algorithm Learning Template to selected algorithm READMEs.
+
+Each description is adapted from respected references (e.g., Wikipedia,
+standard CS textbooks) and rewritten to satisfy the Rapid 5-Minute form.
+"""
+
+from pathlib import Path
+from textwrap import dedent
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def render_template(info: dict) -> str:
+    steps = "\n".join(f"{idx + 1}. {step}" for idx, step in enumerate(info["steps"]))
+    strengths = "\n".join(f"- {item}" for item in info["strengths"])
+    weaknesses = "\n".join(f"- {item}" for item in info["weaknesses"])
+    alternatives = ", ".join(info["alternatives"])
+
+    template = f"""# {info['name']}
+
+1. **Name of Algorithm**  
+   {info['name']}
+
+2. **What problem does it solve? (1 sentence)**  
+   {info['problem']}
+
+3. **Intuition (plain-language explanation)**  
+   {info['intuition']}
+
+4. **Inputs & Outputs**  
+   - Input: {info['inputs']}  
+   - Output: {info['outputs']}
+
+5. **Step-by-step description (5–10 lines max)**  
+{steps}
+
+6. **Tiny example (hand-simulated)**  
+   {info['example']}
+
+7. **Time & Space Complexity**  
+   - Time: {info['time_complexity']}  
+   - Space: {info['space_complexity']}
+
+8. **Strengths**  
+{strengths}
+
+9. **Weaknesses / limitations**  
+{weaknesses}
+
+10. **Compare with alternatives**  
+    Alternatives: {alternatives}
+
+11. **30-second explanation (your own words)**  
+    {info['explanation']}
+
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+"""
+
+    return dedent(template).strip() + "\n"
+
+
+# Big set of curated descriptions for targeted algorithms
+ALGORITHM_DESCRIPTIONS = {
+    "semester_01/lecture_01_sorting_fundamentals/bubble_sort/README.md": {
+        "name": "Bubble Sort",
+        "problem": "Orders a short list of comparable values by repeatedly swapping out-of-order neighbors.",
+        "intuition": "Imagine shaking a list so adjacent items compare and the heavier ones slowly drift to the end each pass.",
+        "inputs": "Array or list of comparable elements.",
+        "outputs": "Same collection arranged in non-decreasing order.",
+        "steps": [
+            "Start at the first index.",
+            "Compare the current element with the next element.",
+            "Swap if the pair is out of order.",
+            "Move one position forward and repeat until the pass ends.",
+            "Shrink the unsorted tail and loop until a pass produces no swaps.",
+        ],
+        "example": "[5, 3, 2] → swap 5/3 ⇒ [3, 5, 2]; swap 5/2 ⇒ [3, 2, 5]; next pass swaps 3/2 ⇒ [2, 3, 5].",
+        "time_complexity": "O(n²) average/worst, O(n) best when already sorted.",
+        "space_complexity": "O(1) extra space.",
+        "strengths": [
+            "Simple to code and reason about.",
+            "Detects nearly-sorted input quickly if optimized to stop early.",
+        ],
+        "weaknesses": [
+            "Quadratic runtime makes it impractical for medium or large inputs.",
+            "Performs many redundant comparisons.",
+        ],
+        "alternatives": ["Insertion Sort", "Selection Sort", "Merge Sort"],
+        "explanation": "Keep comparing neighbors so misplaced values crawl to the edges; repeat until no swaps happen.",
+    },
+    "semester_01/lecture_01_sorting_fundamentals/insertion_sort/README.md": {
+        "name": "Insertion Sort",
+        "problem": "Maintains a growing sorted prefix by inserting each new value into its proper place.",
+        "intuition": "Like sorting playing cards: keep the hand sorted and slide each new card into position.",
+        "inputs": "Array or list of comparable items.",
+        "outputs": "Same collection sorted in ascending order.",
+        "steps": [
+            "Treat the first element as sorted.",
+            "Pick the next element (the key).",
+            "Shift larger elements in the sorted prefix one step to the right.",
+            "Insert the key into the freed slot.",
+            "Advance to the next element and repeat until the array is consumed.",
+        ],
+        "example": "[4, 2, 5] → insert 2 before 4 ⇒ [2, 4, 5] → insert 5 (already in place).",
+        "time_complexity": "O(n²) average/worst, O(n) best on nearly-sorted data.",
+        "space_complexity": "O(1) extra space.",
+        "strengths": [
+            "Excellent on tiny or almost sorted datasets.",
+            "Stable and in-place.",
+        ],
+        "weaknesses": [
+            "Quadratic when many elements are out of order.",
+            "Heavy shifting work for long lists.",
+        ],
+        "alternatives": ["Shell Sort", "Merge Sort", "Heap Sort"],
+        "explanation": "Grow a sorted prefix and carefully insert each new element where it belongs.",
+    },
+    "semester_01/lecture_01_sorting_fundamentals/selection_sort/README.md": {
+        "name": "Selection Sort",
+        "problem": "Sorts by repeatedly selecting the smallest remaining element and placing it at the front.",
+        "intuition": "Scan the pile for the tiniest card, put it next in line, and continue with the leftovers.",
+        "inputs": "Array or list of comparable values.",
+        "outputs": "Same collection sorted ascending.",
+        "steps": [
+            "Set the current position i to 0.",
+            "Find the smallest element from i to end.",
+            "Swap that element with position i.",
+            "Increment i and repeat until the list is ordered.",
+        ],
+        "example": "[7, 3, 5] → smallest is 3, swap with 7 ⇒ [3, 7, 5]; next smallest is 5, swap ⇒ [3, 5, 7].",
+        "time_complexity": "O(n²) regardless of input order.",
+        "space_complexity": "O(1) extra space.",
+        "strengths": [
+            "Performs minimal swaps (n - 1).",
+            "Easy to reason about and implement.",
+        ],
+        "weaknesses": [
+            "Still quadratic in comparisons.",
+            "Not stable without extra work.",
+        ],
+        "alternatives": ["Insertion Sort", "Heap Sort", "Quick Sort"],
+        "explanation": "Repeatedly locate the smallest unused value and stick it at the next slot of the sorted prefix.",
+    },
+    "semester_01/lecture_02_efficient_sorting/merge_sort/README.md": {
+        "name": "Merge Sort",
+        "problem": "Efficiently sorts large lists by divide-and-conquer merging of sorted halves.",
+        "intuition": "Split the deck until each pile has one card, then merge piles back together in order.",
+        "inputs": "Array or list of comparable elements.",
+        "outputs": "Sorted array.",
+        "steps": [
+            "Divide the array into two halves.",
+            "Recursively sort each half.",
+            "Merge the two sorted halves by repeatedly taking the smaller front element.",
+            "Continue merging until a single sorted list remains.",
+        ],
+        "example": "[8, 3, 5, 2] → split into [8, 3] & [5, 2] → sort halves ⇒ [3, 8], [2, 5] → merge ⇒ [2, 3, 5, 8].",
+        "time_complexity": "O(n log n) for all cases.",
+        "space_complexity": "O(n) auxiliary storage for merges.",
+        "strengths": [
+            "Predictable performance and stable.",
+            "Great for linked lists and external sorting.",
+        ],
+        "weaknesses": [
+            "Requires extra memory for merging.",
+            "Recursive overhead on constrained environments.",
+        ],
+        "alternatives": ["Quick Sort", "Heap Sort", "TimSort"],
+        "explanation": "Keep splitting into halves until singles, then merge each pair while keeping them sorted.",
+    },
+    "semester_01/lecture_02_efficient_sorting/quick_sort/README.md": {
+        "name": "Quick Sort",
+        "problem": "Efficient in-place sort that partitions around a pivot and recursively sorts partitions.",
+        "intuition": "Pick a pivot, move smaller items left and larger right, then repeat on the two sides.",
+        "inputs": "Array of comparable values.",
+        "outputs": "Array sorted ascending or descending based on comparator.",
+        "steps": [
+            "Choose a pivot element.",
+            "Partition the array so items < pivot go left, > pivot go right.",
+            "Recursively quick sort the left partition.",
+            "Recursively quick sort the right partition.",
+            "Concatenate left + pivot + right segments.",
+        ],
+        "example": "[9, 4, 7, 3] with pivot 7 ⇒ [4, 3 | 7 | 9] ⇒ sort left [4, 3] ⇒ [3, 4]; right [9] stays ⇒ [3, 4, 7, 9].",
+        "time_complexity": "O(n log n) average, O(n²) worst if pivots are poor.",
+        "space_complexity": "O(log n) recursion stack average.",
+        "strengths": [
+            "In-place and typically very fast.",
+            "Cache-friendly sequential memory access.",
+        ],
+        "weaknesses": [
+            "Worst-case quadratic when pivots are unbalanced.",
+            "Not stable by default.",
+        ],
+        "alternatives": ["Merge Sort", "Heap Sort", "IntroSort"],
+        "explanation": "Divide around an intelligently chosen pivot so the partitions shrink quickly, leading to near-logarithmic depth.",
+    },
+    "semester_01/lecture_02_efficient_sorting/heap_sort/README.md": {
+        "name": "Heap Sort",
+        "problem": "Sorts by turning the input into a heap and repeatedly extracting the max (or min).",
+        "intuition": "Build a priority queue so the largest element can be removed and placed at the end one by one.",
+        "inputs": "Array of comparable items.",
+        "outputs": "Array sorted in-place.",
+        "steps": [
+            "Heapify the entire array (build max-heap).",
+            "Swap the root (largest value) with the last element.",
+            "Reduce the heap size by one and heapify the root.",
+            "Repeat extraction and heapify until one element remains.",
+        ],
+        "example": "[4, 1, 3, 2] → build max-heap [4,2,3,1] → swap 4/1 ⇒ [1,2,3,4]; heapify remaining ⇒ [3,2,1,4] → continue until sorted.",
+        "time_complexity": "O(n log n) for all cases.",
+        "space_complexity": "O(1) extra space besides recursion-free heapify.",
+        "strengths": [
+            "Predictable O(n log n) time.",
+            "In-place with no recursion required.",
+        ],
+        "weaknesses": [
+            "Not stable.",
+            "Constant factors higher than quick sort on average.",
+        ],
+        "alternatives": ["Quick Sort", "Merge Sort", "IntroSort"],
+        "explanation": "Leverage the heap property so the largest item is always on top, remove it, and restore the heap repeatedly.",
+    },
+    "semester_01/lecture_03_specialized_sorting/counting_sort/README.md": {
+        "name": "Counting Sort",
+        "problem": "Sorts integers from a limited range by counting occurrences instead of comparing.",
+        "intuition": "Count how many times each value appears, then rebuild the list in order using counts as guides.",
+        "inputs": "List of integers within a known small range.",
+        "outputs": "Stable sorted list of the same integers.",
+        "steps": [
+            "Determine the min and max values.",
+            "Allocate a counts array covering the range.",
+            "Tally each element’s frequency.",
+            "Optionally convert counts to prefix sums for stability.",
+            "Write elements back in order using the counts.",
+        ],
+        "example": "[4, 2, 2, 5] ⇒ counts: {2:2, 4:1, 5:1} ⇒ output [2, 2, 4, 5].",
+        "time_complexity": "O(n + k) where k is range size.",
+        "space_complexity": "O(k) for the counting array.",
+        "strengths": [
+            "Linear time when k ≪ n log n.",
+            "Stable if prefix sums are used.",
+        ],
+        "weaknesses": [
+            "Requires known, limited range.",
+            "Extra memory proportional to range size.",
+        ],
+        "alternatives": ["Radix Sort", "Bucket Sort", "Comparison Sorts"],
+        "explanation": "Use frequency counts rather than comparisons, making it lightning-fast on bounded integer domains.",
+    },
+    "semester_01/lecture_03_specialized_sorting/radix_sort/README.md": {
+        "name": "Radix Sort",
+        "problem": "Sorts integers or fixed-length strings by processing digits from least to most significant (or vice versa).",
+        "intuition": "Group numbers by each digit place using a stable sorter so positions eventually align globally.",
+        "inputs": "List of fixed-length keys (integers, strings).",
+        "outputs": "Keys sorted lexicographically or numerically.",
+        "steps": [
+            "Choose digit order (LSB-first for integers).",
+            "For each digit position:",
+            "  - Group elements by digit using a stable bucket (like counting sort).",
+            "  - Concatenate buckets to reform the list.",
+            "Stop once the most significant digit is processed.",
+        ],
+        "example": "[170, 45, 75, 90] ⇒ bucket by units, then tens, then hundreds ⇒ [45, 75, 90, 170].",
+        "time_complexity": "O(d · (n + k)) where d is digit count and k bucket size.",
+        "space_complexity": "O(n + k) for buckets.",
+        "strengths": [
+            "Linear time for fixed d.",
+            "Avoids comparisons entirely.",
+        ],
+        "weaknesses": [
+            "Needs stable sub-sorting and uniform key lengths.",
+            "Extra memory for buckets.",
+        ],
+        "alternatives": ["Counting Sort", "Bucket Sort", "Comparison Sorts"],
+        "explanation": "Repeatedly bucket by digit so that by the final pass the entire key ordering emerges.",
+    },
+    "semester_01/lecture_03_specialized_sorting/bucket_sort/README.md": {
+        "name": "Bucket Sort",
+        "problem": "Sorts uniformly distributed real numbers by scattering them into buckets and sorting each bucket.",
+        "intuition": "Partition the [0,1) range into buckets so each holds a small local list that can be sorted quickly.",
+        "inputs": "List of real numbers typically normalized to [0, 1).",
+        "outputs": "Sorted list of those numbers.",
+        "steps": [
+            "Create k empty buckets.",
+            "Distribute each element into the appropriate bucket based on value.",
+            "Sort individual buckets (often using insertion sort).",
+            "Concatenate the buckets in order.",
+        ],
+        "example": "[0.42, 0.32, 0.23] ⇒ bucket 0.2–0.3 gets [0.23], 0.3–0.4 gets [0.32], 0.4–0.5 gets [0.42] ⇒ concatenated order [0.23, 0.32, 0.42].",
+        "time_complexity": "Average O(n) when distribution is uniform; worst O(n²) if items clump.",
+        "space_complexity": "O(n + k) for bucket storage.",
+        "strengths": [
+            "Near-linear when values spread evenly.",
+            "Buckets can be processed in parallel.",
+        ],
+        "weaknesses": [
+            "Performance degrades on skewed data.",
+            "Requires knowledge of value distribution.",
+        ],
+        "alternatives": ["Radix Sort", "Counting Sort", "Comparison Sorts"],
+        "explanation": "Exploit the distribution shape so each bucket is tiny, making local sorts trivial.",
+    },
+    "semester_01/lecture_04_searching/linear_search/README.md": {
+        "name": "Linear Search",
+        "problem": "Finds the position of a target value by scanning elements sequentially.",
+        "intuition": "Check each item in order until the desired one appears or the list ends.",
+        "inputs": "List/array and target value.",
+        "outputs": "Index of the target or -1 if absent.",
+        "steps": [
+            "Start at index 0.",
+            "Compare current element with target.",
+            "If equal, return the index.",
+            "Otherwise advance to the next index.",
+            "Stop after the final element and return -1 if not found.",
+        ],
+        "example": "Search 7 in [4, 7, 1]: compare 4 (no), compare 7 (yes) ⇒ index 1.",
+        "time_complexity": "O(n) average and worst; O(1) best if first element matches.",
+        "space_complexity": "O(1).",
+        "strengths": [
+            "Works on unsorted collections.",
+            "Simple to implement and reason about.",
+        ],
+        "weaknesses": [
+            "Slow on large datasets due to full scan.",
+            "Cannot skip work without extra structure.",
+        ],
+        "alternatives": ["Binary Search", "Hash Lookup", "Jump Search"],
+        "explanation": "Walk through each entry until the goal appears; trivial but potentially time-consuming.",
+    },
+    "semester_01/lecture_04_searching/binary_search/README.md": {
+        "name": "Binary Search",
+        "problem": "Finds a target in a sorted list by repeatedly halving the search interval.",
+        "intuition": "Like guessing a number: choose the midpoint, discard the half where the answer cannot live, repeat.",
+        "inputs": "Sorted array and target value.",
+        "outputs": "Index of target or -1 if missing.",
+        "steps": [
+            "Set low and high pointers to the bounds.",
+            "Compute mid = (low + high) // 2.",
+            "If array[mid] equals target, return mid.",
+            "If target < array[mid], move high to mid - 1.",
+            "Else move low to mid + 1 and repeat until low > high.",
+        ],
+        "example": "Search 9 in [1,3,5,7,9,11]: mid=5→value=7 < 9, shift low ⇒ new mid=9 found at index 4.",
+        "time_complexity": "O(log n).",
+        "space_complexity": "O(1) iterative, O(log n) recursive.",
+        "strengths": [
+            "Very fast on massive sorted arrays.",
+            "Predictable logarithmic performance.",
+        ],
+        "weaknesses": [
+            "Requires sorted data with random access.",
+            "Insertion/deletion may break order.",
+        ],
+        "alternatives": ["Interpolation Search", "Binary Search Tree", "Hash Table"],
+        "explanation": "Keep cutting the remaining range in half so the number of candidates collapses exponentially.",
+    },
+    "semester_01/lecture_04_searching/jump_search/README.md": {
+        "name": "Jump Search",
+        "problem": "Balances linear and binary search by jumping ahead fixed blocks in a sorted array.",
+        "intuition": "Skip ahead in strides; once you overshoot, do a short linear scan backward.",
+        "inputs": "Sorted array and target.",
+        "outputs": "Index of target or -1.",
+        "steps": [
+            "Choose optimal step ≈ √n.",
+            "Jump ahead by step size until value ≥ target or end reached.",
+            "Perform linear search backward within the block where target could reside.",
+            "Return index if found, else -1.",
+        ],
+        "example": "[1,3,5,7,9,11,13,15], target 9, step=2: jump indices 0→2→4 (value 9) stop and confirm.",
+        "time_complexity": "O(√n).",
+        "space_complexity": "O(1).",
+        "strengths": [
+            "Fewer comparisons than linear search on sorted data.",
+            "Simple to implement.",
+        ],
+        "weaknesses": [
+            "Still slower than binary search.",
+            "Requires random access to jump.",
+        ],
+        "alternatives": ["Binary Search", "Interpolation Search", "Exponential Search"],
+        "explanation": "Hop through the array in fixed leaps, then crawl a short distance to find the exact slot.",
+    },
+    "semester_01/lecture_04_searching/interpolation_search/README.md": {
+        "name": "Interpolation Search",
+        "problem": "Searches uniformly distributed sorted data by estimating the likely position of the target.",
+        "intuition": "Instead of always probing the middle, interpolate where the target might land based on value range.",
+        "inputs": "Sorted list with roughly uniform distribution and the target.",
+        "outputs": "Index or -1.",
+        "steps": [
+            "Maintain low and high indices.",
+            "Estimate pos = low + (target - arr[low]) * (high - low) / (arr[high] - arr[low]).",
+            "If arr[pos] equals target, return pos.",
+            "If target < arr[pos], move high to pos - 1; else move low to pos + 1.",
+            "Repeat until low > high or value found.",
+        ],
+        "example": "In [10,20,30,40,50], searching 40 calculates pos near index 3 immediately.",
+        "time_complexity": "O(log log n) average on uniform data, O(n) worst if distribution is skewed.",
+        "space_complexity": "O(1).",
+        "strengths": [
+            "Fewer probes than binary search on uniform keys.",
+            "Still simple arithmetic and comparisons.",
+        ],
+        "weaknesses": [
+            "Performance collapses on clustered data.",
+            "Requires numeric keys with known range.",
+        ],
+        "alternatives": ["Binary Search", "Jump Search", "Exponential Search"],
+        "explanation": "Guess where the target should live based on proportional distance, probe there, and tighten the bounds.",
+    },
+    "semester_08/lecture_49_sql_fundamentals/sql_queries/README.md": {
+        "name": "SQL Queries",
+        "problem": "Retrieve, filter, and manipulate relational data using declarative statements.",
+        "intuition": "Describe the desired result set while the optimizer chooses an execution plan.",
+        "inputs": "SQL statement (SELECT/INSERT/UPDATE/DELETE) plus database schema/data.",
+        "outputs": "Result set, affected row count, or updated storage state.",
+        "steps": [
+            "Parse the SQL statement.",
+            "Validate against schema and permissions.",
+            "Generate a logical plan (joins, filters, projections).",
+            "Optimize into a physical plan using indexes and statistics.",
+            "Execute the plan and stream results back to the client.",
+        ],
+        "example": "SELECT name FROM customers WHERE country='Canada'; returns matching customer names.",
+        "time_complexity": "Varies; indexed lookups approach O(log n), full scans O(n).",
+        "space_complexity": "Driven by execution plan (temporary joins, sorting buffers).",
+        "strengths": [
+            "Declarative syntax hides implementation details.",
+            "Mature optimizers leverage indexes and caches.",
+        ],
+        "weaknesses": [
+            "Poorly written queries can degrade to full scans.",
+            "Requires understanding of indexes and statistics for tuning.",
+        ],
+        "alternatives": ["NoSQL query APIs", "ORM-generated queries", "Stored procedures"],
+        "explanation": "State what data you want, let the relational engine decide how to fetch it efficiently.",
+    },
+    "semester_08/lecture_49_sql_fundamentals/joins/README.md": {
+        "name": "SQL Joins",
+        "problem": "Combine rows from related tables based on matching keys.",
+        "intuition": "Treat tables like sets and match rows where keys agree or complement each other.",
+        "inputs": "Two or more tables plus join condition.",
+        "outputs": "Composite rows containing columns from each source table.",
+        "steps": [
+            "Choose join type (INNER, LEFT, RIGHT, FULL, CROSS).",
+            "Identify join keys/conditions.",
+            "Relational engine decides join algorithm (nested loop, hash, merge).",
+            "Execute join, producing combined tuples.",
+            "Apply downstream filters or projections.",
+        ],
+        "example": "SELECT orders.id, customers.name FROM orders INNER JOIN customers ON orders.customer_id = customers.id;",
+        "time_complexity": "Depends on join algorithm; hash join ~O(n + m), nested loop ~O(n·m) without indexes.",
+        "space_complexity": "May require hash tables or sort buffers.",
+        "strengths": [
+            "Expressive way to relate normalized tables.",
+            "Optimizers pick efficient algorithms automatically.",
+        ],
+        "weaknesses": [
+            "Expensive if keys lack indexes.",
+            "Incorrect join types can duplicate or drop rows.",
+        ],
+        "alternatives": ["Denormalization", "Materialized views", "Application-level joins"],
+        "explanation": "Map matching keys across tables so related data can be viewed as a single combined set.",
+    },
+    "semester_08/lecture_49_sql_fundamentals/transactions/README.md": {
+        "name": "SQL Transactions",
+        "problem": "Bundle multiple statements into an atomic, consistent, isolated, durable unit of work.",
+        "intuition": "Either all operations succeed together or none do, safeguarding integrity even under failures.",
+        "inputs": "BEGIN/COMMIT/ROLLBACK directives plus SQL statements.",
+        "outputs": "Committed data changes or a rollback to the previous state.",
+        "steps": [
+            "BEGIN (implicit or explicit) starts a transaction context.",
+            "Execute one or more SQL statements.",
+            "If all succeed, issue COMMIT to persist changes.",
+            "On error or manual cancel, issue ROLLBACK to undo.",
+            "DBMS enforces ACID properties via logging and locking.",
+        ],
+        "example": "Transfer funds: debit one account, credit another, COMMIT only if both succeed; else ROLLBACK.",
+        "time_complexity": "Depends on enclosed statements; logging adds small overhead.",
+        "space_complexity": "Requires log space for redo/undo records.",
+        "strengths": [
+            "Protects data integrity under concurrency and crashes.",
+            "Simplifies multi-step operations for developers.",
+        ],
+        "weaknesses": [
+            "Excessive transaction scope can cause contention.",
+            "Long transactions hold locks, reducing throughput.",
+        ],
+        "alternatives": ["Eventual consistency workflows", "Application-level compensation logic"],
+        "explanation": "Group related statements so they behave as a single all-or-nothing change, ensuring ACID guarantees.",
+    },
+}
+
+
+def main():
+    updated_files = 0
+    for relative_path, info in ALGORITHM_DESCRIPTIONS.items():
+        target = ROOT / relative_path
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(render_template(info), encoding="utf-8")
+        updated_files += 1
+        print(f"[UPDATED] {relative_path}")
+
+    print(f"\nUpdated {updated_files} README files with the universal template.")
+
+
+if __name__ == "__main__":
+    main()
+

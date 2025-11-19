@@ -1,42 +1,44 @@
-# Transactions
+# SQL Transactions
 
-**Category**: Algorithm
+1. **Name of Algorithm**  
+   SQL Transactions
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Bundle multiple statements into an atomic, consistent, isolated, durable unit of work.
 
-Transactions is a fundamental algorithm in computer science used to solve specific computational problems efficiently.
+3. **Intuition (plain-language explanation)**  
+   Either all operations succeed together or none do, safeguarding integrity even under failures.
 
-## Description
+4. **Inputs & Outputs**  
+   - Input: BEGIN/COMMIT/ROLLBACK directives plus SQL statements.  
+   - Output: Committed data changes or a rollback to the previous state.
 
-This algorithm is particularly useful for solving problems related to [specific domain]. Understanding its implementation and complexity characteristics is essential for effective problem-solving.
+5. **Step-by-step description (5–10 lines max)**  
+1. BEGIN (implicit or explicit) starts a transaction context.
+2. Execute one or more SQL statements.
+3. If all succeed, issue COMMIT to persist changes.
+4. On error or manual cancel, issue ROLLBACK to undo.
+5. DBMS enforces ACID properties via logging and locking.
 
-## How It Works
+6. **Tiny example (hand-simulated)**  
+   Transfer funds: debit one account, credit another, COMMIT only if both succeed; else ROLLBACK.
 
-[Algorithm description to be added]
+7. **Time & Space Complexity**  
+   - Time: Depends on enclosed statements; logging adds small overhead.  
+   - Space: Requires log space for redo/undo records.
 
-## Complexity Analysis
+8. **Strengths**  
+- Protects data integrity under concurrency and crashes.
+- Simplifies multi-step operations for developers.
 
-- **Time Complexity**: To be determined based on implementation
-- **Space Complexity**: To be determined based on implementation
+9. **Weaknesses / limitations**  
+- Excessive transaction scope can cause contention.
+- Long transactions hold locks, reducing throughput.
 
-## Use Cases
+10. **Compare with alternatives**  
+    Alternatives: Eventual consistency workflows, Application-level compensation logic
 
-- [Use case 1]
-- [Use case 2]
-- [Use case 3]
+11. **30-second explanation (your own words)**  
+    Group related statements so they behave as a single all-or-nothing change, ensuring ACID guarantees.
 
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples.
-
-## References
-
-- Wikipedia: Transactions
-- Additional resources can be found in academic literature
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*

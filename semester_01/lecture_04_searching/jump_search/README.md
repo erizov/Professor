@@ -1,54 +1,43 @@
 # Jump Search
 
-**Category**: Searching
+1. **Name of Algorithm**  
+   Jump Search
 
-## Overview
+2. **What problem does it solve? (1 sentence)**  
+   Balances linear and binary search by jumping ahead fixed blocks in a sorted array.
 
-Jump search is a searching algorithm for sorted arrays. The basic idea is to check fewer elements by jumping ahead by fixed steps or skipping some elements in place of searching all elements. It works better than linear search but requires the array to be sorted.
+3. **Intuition (plain-language explanation)**  
+   Skip ahead in strides; once you overshoot, do a short linear scan backward.
 
-## How It Works
+4. **Inputs & Outputs**  
+   - Input: Sorted array and target.  
+   - Output: Index of target or -1.
 
-1. Jump ahead by fixed step size (typically √n)
-2. If current element is greater than target, perform linear search backwards
-3. If current element is less than target, continue jumping
-4. Repeat until target found or array exhausted
+5. **Step-by-step description (5–10 lines max)**  
+1. Choose optimal step ≈ √n.
+2. Jump ahead by step size until value ≥ target or end reached.
+3. Perform linear search backward within the block where target could reside.
+4. Return index if found, else -1.
 
-## Complexity Analysis
+6. **Tiny example (hand-simulated)**  
+   [1,3,5,7,9,11,13,15], target 9, step=2: jump indices 0→2→4 (value 9) stop and confirm.
 
-Time: O(√n). Space: O(1)
+7. **Time & Space Complexity**  
+   - Time: O(√n).  
+   - Space: O(1).
 
-## Use Cases
+8. **Strengths**  
+- Fewer comparisons than linear search on sorted data.
+- Simple to implement.
 
-Sorted arrays, when binary search is not available, uniform data distribution
+9. **Weaknesses / limitations**  
+- Still slower than binary search.
+- Requires random access to jump.
 
-## Algorithm Details
+10. **Compare with alternatives**  
+    Alternatives: Binary Search, Interpolation Search, Exponential Search
 
-### Key Characteristics
+11. **30-second explanation (your own words)**  
+    Hop through the array in fixed leaps, then crawl a short distance to find the exact slot.
 
-- **Stability**: Depends on implementation
-- **In-place**: Depends on implementation
-- **Adaptive**: Depends on implementation
-
-## Implementation
-
-See `algorithm.py` for the complete implementation with examples and performance analysis.
-
-## References
-
-- Wikipedia: [Jump search](https://en.wikipedia.org/wiki/Jump_search)
-- Additional resources available in academic literature and algorithm textbooks
-
-## Examples
-
-Run the algorithm with:
-```bash
-python algorithm.py
-```
-
-## Learning Objectives
-
-By studying this algorithm, you will learn:
-1. The fundamental approach and logic
-2. Time and space complexity analysis
-3. When to use this algorithm vs alternatives
-4. Implementation details and optimizations
+*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
