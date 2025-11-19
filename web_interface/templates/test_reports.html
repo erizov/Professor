@@ -304,6 +304,14 @@
                         <option value="java">Java</option>
                     </select>
                 </div>
+                <div class="filter-group">
+                    <label for="algorithm-type-filter">Algorithm Type:</label>
+                    <select id="algorithm-type-filter">
+                        {% for algo_type in algorithm_types %}
+                        <option value="{{ algo_type if algo_type != 'All Types' else '' }}">{{ algo_type }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
             </div>
         </div>
 
@@ -353,12 +361,19 @@
 
     <script>
         let currentSort = { column: 'timestamp', order: 'desc' };
-        let currentFilters = { search: '', status: '', language: '' };
+        let currentFilters = { search: '', status: '', language: '', algorithm_type: '' };
 
-        // Load statistics
+        // Load statistics with current filters
         async function loadStatistics() {
             try {
-                const response = await fetch('/api/test-statistics');
+                const params = new URLSearchParams({
+                    search: currentFilters.search,
+                    status: currentFilters.status,
+                    language: currentFilters.language,
+                    algorithm_type: currentFilters.algorithm_type,
+                });
+
+                const response = await fetch(`/api/test-statistics?${params}`);
                 const data = await response.json();
 
                 const total = Object.values(data.status_counts).reduce((a, b) => a + b, 0);
@@ -378,6 +393,7 @@
                 search: currentFilters.search,
                 status: currentFilters.status,
                 language: currentFilters.language,
+                algorithm_type: currentFilters.algorithm_type,
                 sort: currentSort.column,
                 order: currentSort.order,
             });
@@ -466,16 +482,25 @@
         // Filter handling
         document.getElementById('search').addEventListener('input', (e) => {
             currentFilters.search = e.target.value;
+            loadStatistics();
             loadResults();
         });
 
         document.getElementById('status-filter').addEventListener('change', (e) => {
             currentFilters.status = e.target.value;
+            loadStatistics();
             loadResults();
         });
 
         document.getElementById('language-filter').addEventListener('change', (e) => {
             currentFilters.language = e.target.value;
+            loadStatistics();
+            loadResults();
+        });
+
+        document.getElementById('algorithm-type-filter').addEventListener('change', (e) => {
+            currentFilters.algorithm_type = e.target.value;
+            loadStatistics();
             loadResults();
         });
 
