@@ -8219,6 +8219,479 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Hardware Upgrades", "Query Optimization", "Caching", "Read Replicas"],
         "explanation": "Optimizes database performance by identifying bottlenecks, tuning configuration, optimizing queries, and adjusting resources to improve response times and throughput."
+    },
+    "semester_08/lecture_52_nosql_advanced/nosql_migration/README.md": {
+        "name": "NoSQL Migration",
+        "problem": "Transfers data and applications from one NoSQL database system to another, or from relational databases to NoSQL, ensuring data integrity, minimal downtime, and application compatibility.",
+        "intuition": "Like moving to a new house: NoSQL migration is like moving all your belongings from one house to another - you need to pack everything (extract data), transport it safely (transform and load), set it up in the new house (configure new database), and make sure everything works (validate) - the goal is to move everything without losing anything and with minimal disruption to your daily life (application downtime).",
+        "inputs": "Source database, target database, data schema, migration strategy, application code.",
+        "outputs": "Migrated data, updated applications, new database system, migration validation.",
+        "steps": [
+            "Assess: analyze source database structure, data volume, and application dependencies.",
+            "Plan: design migration strategy (big bang, phased, parallel run).",
+            "Prepare target: set up target NoSQL database with appropriate schema/model.",
+            "Extract: export data from source database.",
+            "Transform: convert data format to match target database model.",
+            "Load: import transformed data into target database.",
+            "Validate: verify data integrity and completeness.",
+            "Update applications: modify application code to work with new database.",
+            "Test: thoroughly test applications with new database.",
+            "Cutover: switch applications to use new database.",
+            "Monitor: monitor performance and data integrity after migration.",
+            "Decommission: retire old database after successful migration."
+        ],
+        "example": "MongoDB migration: source: PostgreSQL (relational) → target: MongoDB (document) → extract: export PostgreSQL tables → transform: convert rows to JSON documents → load: import into MongoDB collections → update: modify application queries from SQL to MongoDB queries → test: validate all functionality → cutover: switch production → migration complete.",
+        "time_complexity": "O(d) where d is data size (extraction, transformation, loading).",
+        "space_complexity": "O(d) where d is data size (temporary storage during migration).",
+        "strengths": [
+            "Flexibility: enables moving to better-suited database systems.",
+            "Modernization: allows adopting modern NoSQL technologies.",
+            "Scalability: can migrate to more scalable database solutions."
+        ],
+        "weaknesses": [
+            "Complexity: migration can be complex and time-consuming.",
+            "Downtime: may require application downtime during cutover.",
+            "Risk: data loss or corruption if migration fails."
+        ],
+        "alternatives": ["Database Replication", "ETL Processes", "Data Synchronization", "Gradual Migration"],
+        "explanation": "Transfers data and applications from one NoSQL database system to another, or from relational databases to NoSQL, ensuring data integrity, minimal downtime, and application compatibility."
+    },
+    "semester_08/lecture_54_data_modeling/data_governance/README.md": {
+        "name": "Data Governance",
+        "problem": "Establishes policies, processes, and standards for managing data assets, ensuring data quality, security, compliance, and proper usage across an organization.",
+        "intuition": "Like a library's cataloging system: data governance is like a library's system for organizing, cataloging, and managing books - you have rules for how books are organized (data standards), who can access what (data access policies), how to maintain quality (data quality rules), and how to track usage (data lineage) - it ensures the library (organization) can find, use, and trust its books (data) effectively.",
+        "inputs": "Data assets, business requirements, regulatory requirements, organizational policies, data quality standards.",
+        "outputs": "Data governance framework, policies, standards, data catalog, compliance, data quality.",
+        "steps": [
+            "Define framework: establish data governance structure and roles (data stewards, owners).",
+            "Create policies: develop data policies (access, privacy, retention, quality).",
+            "Set standards: define data standards (naming, formats, schemas, quality metrics).",
+            "Catalog data: create data catalog documenting all data assets and metadata.",
+            "Assign ownership: assign data owners and stewards for each data asset.",
+            "Implement controls: establish data access controls and security measures.",
+            "Monitor quality: implement data quality monitoring and validation.",
+            "Track lineage: document data lineage (where data comes from, how it's used).",
+            "Ensure compliance: ensure data practices meet regulatory requirements (GDPR, HIPAA).",
+            "Review: periodically review and update governance policies and practices."
+        ],
+        "example": "Data governance: establish framework → define policies (data retention: 7 years, access: role-based) → create catalog (document all databases, tables, fields) → assign owners (finance data: CFO, customer data: CMO) → implement controls (encryption, access logs) → monitor quality (validate data completeness, accuracy) → track lineage (customer data: CRM → data warehouse → analytics) → compliance: GDPR compliance verified → governance operational.",
+        "time_complexity": "O(a) where a is number of data assets (cataloging and governance setup).",
+        "space_complexity": "O(m) where m is metadata size (governance documentation and catalogs).",
+        "strengths": [
+            "Data quality: improves data quality and consistency across organization.",
+            "Compliance: ensures regulatory compliance and reduces risk.",
+            "Trust: builds trust in data through proper management and documentation."
+        ],
+        "weaknesses": [
+            "Complexity: implementing comprehensive governance can be complex.",
+            "Overhead: governance processes add overhead to data operations.",
+            "Resistance: may face resistance from teams used to less structured approaches."
+        ],
+        "alternatives": ["Ad-hoc Data Management", "Data Stewardship", "Data Cataloging", "Compliance Frameworks"],
+        "explanation": "Establishes policies, processes, and standards for managing data assets, ensuring data quality, security, compliance, and proper usage across an organization."
+    },
+    "semester_08/lecture_54_data_modeling/data_lakes/README.md": {
+        "name": "Data Lakes",
+        "problem": "Stores vast amounts of raw, unstructured, and structured data in its native format, enabling flexible data exploration, analytics, and machine learning without predefined schema.",
+        "intuition": "Like a natural lake: data lakes are like natural lakes where water (data) flows in from many sources (rivers, streams) and is stored in its natural state - you can store any type of water (structured, unstructured data) without processing it first, and later you can extract what you need (analytics, ML) - unlike data warehouses (like water treatment plants) that require structured, processed data, data lakes accept everything in its raw form.",
+        "inputs": "Raw data (structured, unstructured, semi-structured), data sources, storage system, ingestion tools.",
+        "outputs": "Data lake storage, accessible raw data, flexible analytics platform, ML-ready data.",
+        "steps": [
+            "Set up storage: configure scalable storage system (HDFS, S3, Azure Data Lake).",
+            "Ingest data: load data from various sources (databases, files, streams, APIs).",
+            "Store raw: store data in native format without transformation (schema-on-read).",
+            "Catalog: create data catalog to track what data is available.",
+            "Organize: organize data into zones (raw, curated, processed) for different use cases.",
+            "Access: provide access tools for data exploration and analysis.",
+            "Process: process data on-demand for specific analytics or ML use cases.",
+            "Govern: implement data governance and security policies.",
+            "Analyze: perform analytics, data science, and ML on stored data."
+        ],
+        "example": "Data lake: S3 storage → ingest: customer logs (JSON), sales data (CSV), images (binary), social media (text) → store raw: all data stored as-is → catalog: document data sources and formats → organize: raw zone (original data), curated zone (cleaned data), processed zone (aggregated data) → access: analysts query raw data → process: data scientists build ML models → flexible: can analyze any data type → data lake operational.",
+        "time_complexity": "O(d) for ingestion where d is data size, O(q) for queries where q is query complexity (varies by processing).",
+        "space_complexity": "O(d) where d is total data size (stores all raw data).",
+        "strengths": [
+            "Flexibility: accepts any data type without predefined schema.",
+            "Scalability: scales to petabytes of data.",
+            "Cost-effective: cheaper storage for large volumes of data."
+        ],
+        "weaknesses": [
+            "Data swamp: can become unorganized 'data swamp' without governance.",
+            "Query performance: may be slower than data warehouses for structured queries.",
+            "Complexity: requires expertise to manage and extract value."
+        ],
+        "alternatives": ["Data Warehouses", "Data Marts", "Operational Data Stores", "Hybrid Architectures"],
+        "explanation": "Stores vast amounts of raw, unstructured, and structured data in its native format, enabling flexible data exploration, analytics, and machine learning without predefined schema."
+    },
+    "semester_08/lecture_54_data_modeling/data_warehousing/README.md": {
+        "name": "Data Warehousing",
+        "problem": "Consolidates data from multiple sources into a centralized, structured repository optimized for analytical queries and business intelligence, enabling historical analysis and reporting.",
+        "intuition": "Like a company's central archive: data warehousing is like a company's central archive where all important documents (data) from different departments (sources) are collected, organized, and stored in a structured way - unlike operational systems (like active filing cabinets) that handle day-to-day transactions, the warehouse (archive) is optimized for finding and analyzing historical information (like 'how did sales change over the past 5 years?') - it's designed for reading and analyzing, not for frequent updates.",
+        "inputs": "Source data (operational databases, files, APIs), ETL processes, dimensional model, business requirements.",
+        "outputs": "Data warehouse, integrated data, analytical queries, business intelligence, historical data.",
+        "steps": [
+            "Design schema: create dimensional model (star schema, snowflake schema).",
+            "Extract: extract data from source systems (databases, files, APIs).",
+            "Transform: clean, validate, and transform data to match warehouse schema.",
+            "Load: load transformed data into data warehouse tables.",
+            "Organize: organize data into facts (measures) and dimensions (descriptors).",
+            "Index: create indexes for fast analytical queries.",
+            "Aggregate: pre-compute aggregations for common queries.",
+            "Update: periodically refresh data from source systems (batch or incremental).",
+            "Query: enable analytical queries and business intelligence tools.",
+            "Maintain: monitor performance, optimize queries, and manage data lifecycle."
+        ],
+        "example": "Data warehouse: star schema → fact table: sales (amount, quantity, date_id, product_id, customer_id) → dimensions: date (date_id, year, quarter, month), product (product_id, name, category), customer (customer_id, name, region) → ETL: extract from CRM, ERP, e-commerce → transform: standardize formats, calculate metrics → load: daily batch load → query: 'sales by region and quarter' → fast analytical queries → business intelligence enabled.",
+        "time_complexity": "O(d) for ETL where d is data size, O(log n) for queries with indexes where n is data size.",
+        "space_complexity": "O(d) where d is data size (stores historical and aggregated data).",
+        "strengths": [
+            "Performance: optimized for analytical queries and reporting.",
+            "Integration: consolidates data from multiple sources.",
+            "Historical analysis: enables analysis of historical trends and patterns."
+        ],
+        "weaknesses": [
+            "Complexity: requires careful design and ETL processes.",
+            "Latency: data may not be real-time (batch updates).",
+            "Cost: can be expensive to build and maintain."
+        ],
+        "alternatives": ["Data Lakes", "Data Marts", "Operational Data Stores", "Real-time Analytics"],
+        "explanation": "Consolidates data from multiple sources into a centralized, structured repository optimized for analytical queries and business intelligence, enabling historical analysis and reporting."
+    },
+    "semester_08/lecture_54_data_modeling/dimensional_modeling/README.md": {
+        "name": "Dimensional Modeling",
+        "problem": "Designs data warehouse schemas using facts (measurable events) and dimensions (descriptive attributes), optimizing for analytical queries and business intelligence reporting.",
+        "intuition": "Like organizing a store's sales records: dimensional modeling is like organizing a store's sales records - you have facts (what happened: sales transactions with amounts and quantities) and dimensions (descriptors: when it happened - date, what was sold - product, who bought it - customer) - this structure makes it easy to answer questions like 'how much did we sell of product X in region Y last quarter?' by joining facts with dimensions.",
+        "inputs": "Business requirements, source data, analytical queries, reporting needs.",
+        "outputs": "Dimensional schema (star or snowflake), fact tables, dimension tables, optimized design.",
+        "steps": [
+            "Identify facts: determine measurable business events (sales, orders, clicks).",
+            "Identify dimensions: determine descriptive attributes (time, product, customer, location).",
+            "Design fact table: create fact table with measures (amounts, quantities) and foreign keys to dimensions.",
+            "Design dimension tables: create dimension tables with descriptive attributes and hierarchies.",
+            "Choose schema: select star schema (denormalized) or snowflake schema (normalized).",
+            "Define hierarchies: establish dimension hierarchies (year → quarter → month → day).",
+            "Add attributes: include all relevant attributes for analysis.",
+            "Optimize: optimize for common query patterns and reporting needs.",
+            "Implement: create tables and relationships in data warehouse.",
+            "Validate: verify schema supports required analytical queries."
+        ],
+        "example": "Dimensional model: fact table: sales_fact (sale_id, date_id, product_id, customer_id, store_id, amount, quantity) → dimensions: date_dim (date_id, date, year, quarter, month, day), product_dim (product_id, name, category, brand), customer_dim (customer_id, name, age, region), store_dim (store_id, name, city, state) → star schema → query: 'total sales by product category and quarter' → join fact with product and date dimensions → fast analytical query → dimensional model optimized.",
+        "time_complexity": "O(f·d) where f is number of facts, d is number of dimensions (design phase).",
+        "space_complexity": "O(f + Σ(d_i)) where f is fact table size, d_i is dimension table sizes.",
+        "strengths": [
+            "Query performance: optimized for analytical queries and aggregations.",
+            "Intuitive: business users can easily understand and use the model.",
+            "Flexibility: supports various analytical queries and reporting needs."
+        ],
+        "weaknesses": [
+            "Complexity: requires understanding of business processes and requirements.",
+            "Redundancy: star schema may have some data redundancy.",
+            "Updates: dimension updates can be complex (slowly changing dimensions)."
+        ],
+        "alternatives": ["Normalized Models", "Data Vault Modeling", "Anchor Modeling", "Relational Modeling"],
+        "explanation": "Designs data warehouse schemas using facts (measurable events) and dimensions (descriptive attributes), optimizing for analytical queries and business intelligence reporting."
+    },
+    "semester_08/lecture_54_data_modeling/entity_relationship/README.md": {
+        "name": "Entity-Relationship Modeling",
+        "problem": "Creates conceptual data models using entities (things of interest) and relationships (associations between entities), providing a visual representation of data structure and business rules.",
+        "intuition": "Like a map of relationships: entity-relationship modeling is like creating a map showing how different things (entities) are connected (relationships) - for example, in a university system, you have entities like 'Student', 'Course', 'Professor' and relationships like 'Student enrolls in Course', 'Professor teaches Course' - the ER diagram (map) shows all these entities and how they relate, helping you understand and design the database structure.",
+        "inputs": "Business requirements, entities, relationships, attributes, business rules.",
+        "outputs": "ER diagram, conceptual model, entity definitions, relationship definitions, database design.",
+        "steps": [
+            "Identify entities: determine main entities (things of interest: Customer, Order, Product).",
+            "Identify attributes: define attributes for each entity (Customer: name, email, address).",
+            "Identify relationships: determine relationships between entities (Customer places Order).",
+            "Define cardinality: specify relationship cardinality (one-to-many, many-to-many, one-to-one).",
+            "Create ER diagram: draw visual representation using ER notation (Chen, Crow's Foot).",
+            "Add constraints: define constraints (primary keys, foreign keys, unique constraints).",
+            "Normalize: apply normalization rules to eliminate redundancy.",
+            "Validate: verify model accurately represents business requirements.",
+            "Convert: transform ER model into database schema (tables, columns, relationships)."
+        ],
+        "example": "ER model: entities: Customer (customer_id, name, email), Order (order_id, date, total), Product (product_id, name, price) → relationships: Customer places Order (1:N), Order contains Product (M:N via OrderItem) → ER diagram: Customer --< places >-- Order --< contains >-- Product → convert to schema: customers table, orders table, products table, order_items table → ER model complete.",
+        "time_complexity": "O(e·r) where e is number of entities, r is number of relationships (modeling phase).",
+        "space_complexity": "O(e + r) where e is entities, r is relationships (model representation).",
+        "strengths": [
+            "Visual clarity: provides clear visual representation of data structure.",
+            "Communication: facilitates communication between stakeholders and developers.",
+            "Foundation: serves as foundation for database design."
+        ],
+        "weaknesses": [
+            "Abstraction: may not capture all implementation details.",
+            "Complexity: can become complex for large systems.",
+            "Maintenance: requires updates as requirements change."
+        ],
+        "alternatives": ["UML Class Diagrams", "Relational Modeling", "Object-Oriented Modeling", "NoSQL Modeling"],
+        "explanation": "Creates conceptual data models using entities (things of interest) and relationships (associations between entities), providing a visual representation of data structure and business rules."
+    },
+    "semester_08/lecture_54_data_modeling/etl_processes/README.md": {
+        "name": "ETL Processes",
+        "problem": "Extracts data from source systems, transforms it to meet target requirements, and loads it into destination systems, enabling data integration and migration.",
+        "intuition": "Like a factory assembly line: ETL processes are like a factory assembly line - you extract raw materials (data) from suppliers (source systems), transform them (clean, reshape, calculate) on the assembly line (transformation logic), and load finished products (processed data) into warehouses (destination systems) - the goal is to take data from various sources, make it consistent and useful, and deliver it where it's needed.",
+        "inputs": "Source data (databases, files, APIs), transformation rules, target schema, business logic.",
+        "outputs": "Transformed data, loaded destination, data integration, data quality improvements.",
+        "steps": [
+            "Extract: read data from source systems (databases, files, APIs, streams).",
+            "Validate: check data quality and completeness during extraction.",
+            "Transform: apply transformations (clean, filter, aggregate, calculate, join).",
+            "Standardize: standardize formats, codes, and values across sources.",
+            "Enrich: add derived fields, lookups, and calculated values.",
+            "Validate: validate transformed data against business rules.",
+            "Load: insert transformed data into target system (data warehouse, database).",
+            "Handle errors: manage errors and exceptions during ETL process.",
+            "Monitor: track ETL execution, performance, and data quality metrics.",
+            "Schedule: automate ETL processes to run on schedule (daily, hourly, real-time)."
+        ],
+        "example": "ETL process: extract: read customer data from CRM (PostgreSQL), sales data from e-commerce (MongoDB) → transform: clean email addresses, standardize date formats, calculate total sales per customer, join customer and sales data → validate: check for duplicates, missing values, data quality → load: insert into data warehouse (star schema) → schedule: run daily at 2 AM → monitor: track records processed, errors, execution time → ETL complete.",
+        "time_complexity": "O(d) where d is data size (extraction, transformation, loading).",
+        "space_complexity": "O(d) where d is data size (temporary storage during transformation).",
+        "strengths": [
+            "Data integration: enables integration of data from multiple sources.",
+            "Data quality: improves data quality through cleaning and validation.",
+            "Automation: automates data movement and transformation processes."
+        ],
+        "weaknesses": [
+            "Complexity: ETL processes can be complex to design and maintain.",
+            "Latency: batch ETL may introduce latency (not real-time).",
+            "Resource intensive: can consume significant compute and storage resources."
+        ],
+        "alternatives": ["ELT Processes", "Real-time Streaming", "Data Virtualization", "API Integration"],
+        "explanation": "Extracts data from source systems, transforms it to meet target requirements, and loads it into destination systems, enabling data integration and migration."
+    },
+    "semester_09/lecture_55_advanced_os/container_runtimes/README.md": {
+        "name": "Container Runtimes",
+        "problem": "Manages the execution and lifecycle of containers, providing isolation, resource management, and low-level container operations for containerized applications.",
+        "intuition": "Like a container ship's engine room: container runtimes are like the engine room that powers container ships (containers) - they handle the low-level operations like starting containers (starting engines), managing resources (fuel allocation), providing isolation (separate engine rooms), and stopping containers (shutting down engines) - they're the foundation that makes containers work, similar to how an engine room makes a ship move.",
+        "inputs": "Container images, runtime configuration, resource limits, network settings, storage mounts.",
+        "outputs": "Running containers, isolated processes, managed resources, container lifecycle.",
+        "steps": [
+            "Pull image: download container image from registry.",
+            "Create container: create container instance from image.",
+            "Configure: set up container configuration (resources, network, storage).",
+            "Start: launch container process with isolation.",
+            "Manage: monitor container state, resource usage, and health.",
+            "Isolate: provide process, network, and filesystem isolation.",
+            "Execute: run application processes inside container.",
+            "Stop: gracefully stop container processes.",
+            "Remove: clean up container resources after termination.",
+            "Monitor: track container metrics and logs."
+        ],
+        "example": "Container runtime: Docker → pull image: docker pull nginx:latest → create container: docker create --name web --memory 512m nginx → start: docker start web → container running with isolation → manage: monitor CPU, memory usage → stop: docker stop web → remove: docker rm web → container lifecycle managed.",
+        "time_complexity": "O(1) for container operations (start, stop), O(i) for image operations where i is image size.",
+        "space_complexity": "O(i + r) where i is image size, r is runtime overhead per container.",
+        "strengths": [
+            "Isolation: provides strong process and resource isolation.",
+            "Portability: containers run consistently across different environments.",
+            "Efficiency: lightweight compared to virtual machines."
+        ],
+        "weaknesses": [
+            "Security: containers share host kernel (less isolation than VMs).",
+            "Complexity: managing container runtimes and orchestration can be complex.",
+            "Resource limits: requires careful resource management to prevent resource exhaustion."
+        ],
+        "alternatives": ["Virtual Machines", "Bare Metal", "Serverless", "Process Isolation"],
+        "explanation": "Manages the execution and lifecycle of containers, providing isolation, resource management, and low-level container operations for containerized applications."
+    },
+    "semester_09/lecture_55_advanced_os/distributed_os/README.md": {
+        "name": "Distributed Operating Systems",
+        "problem": "Manages resources and provides services across multiple networked computers, presenting them as a single unified system to users and applications.",
+        "intuition": "Like a distributed company: distributed operating systems are like a company with offices in multiple cities - each office (computer) has its own resources (employees, equipment), but they all work together as one company (unified system) - you can access resources from any office (any computer), and the system handles coordination behind the scenes (like company-wide communication) - to users, it looks like one big system, even though it's actually many computers working together.",
+        "inputs": "Networked computers, distributed resources, user requests, application processes.",
+        "outputs": "Unified system view, distributed services, resource sharing, fault tolerance.",
+        "steps": [
+            "Network nodes: connect multiple computers via network.",
+            "Resource discovery: discover and catalog resources across nodes.",
+            "Distribute services: distribute OS services (file system, process management) across nodes.",
+            "Provide transparency: present distributed system as single unified system.",
+            "Handle communication: manage inter-node communication and coordination.",
+            "Manage resources: allocate and manage resources across distributed nodes.",
+            "Handle failures: detect and recover from node failures.",
+            "Load balance: distribute workload across available nodes.",
+            "Maintain consistency: ensure data consistency across distributed nodes.",
+            "Provide APIs: offer unified APIs for applications to access distributed resources."
+        ],
+        "example": "Distributed OS: 5 computers connected → unified file system: files stored across nodes, accessed transparently → process migration: move processes between nodes for load balancing → resource sharing: CPU, memory, storage shared across network → fault tolerance: if node fails, services continue on other nodes → transparency: user sees single system → distributed OS operational.",
+        "time_complexity": "O(n) for coordination where n is number of nodes, O(log n) for resource lookup with distributed algorithms.",
+        "space_complexity": "O(n) where n is number of nodes (distributed state management).",
+        "strengths": [
+            "Scalability: can scale by adding more nodes.",
+            "Fault tolerance: system continues operating if nodes fail.",
+            "Resource sharing: enables efficient resource utilization across nodes."
+        ],
+        "weaknesses": [
+            "Complexity: managing distributed systems is complex.",
+            "Network latency: communication between nodes introduces latency.",
+            "Consistency: maintaining consistency across nodes is challenging."
+        ],
+        "alternatives": ["Centralized OS", "Network OS", "Cluster Computing", "Cloud Computing"],
+        "explanation": "Manages resources and provides services across multiple networked computers, presenting them as a single unified system to users and applications."
+    },
+    "semester_09/lecture_55_advanced_os/exokernel_design/README.md": {
+        "name": "Exokernel Design",
+        "problem": "Minimizes kernel functionality to provide only hardware abstraction and resource protection, allowing applications to implement their own OS abstractions for maximum performance and flexibility.",
+        "intuition": "Like a bare-bones apartment building: exokernel design is like a minimal apartment building that only provides the essentials (structure, utilities, security) - instead of the building management dictating how you organize your apartment (like traditional OS), you get a basic space (hardware abstraction) and organize it however you want (application-level OS abstractions) - this gives you maximum control and performance, but requires you to do more work yourself.",
+        "inputs": "Hardware resources, application requests, resource allocation policies.",
+        "outputs": "Minimal kernel, hardware abstraction, resource protection, application-level abstractions.",
+        "steps": [
+            "Minimize kernel: implement only essential kernel functions (hardware abstraction, protection).",
+            "Expose hardware: provide low-level access to hardware resources.",
+            "Protect resources: implement secure multiplexing of hardware resources.",
+            "Library OS: applications use library OS for higher-level abstractions.",
+            "Application control: applications have fine-grained control over resource management.",
+            "Optimize: applications can optimize resource usage for their specific needs.",
+            "Secure: kernel ensures security and isolation between applications.",
+            "Performance: minimize kernel overhead for maximum performance."
+        ],
+        "example": "Exokernel: minimal kernel → provides: hardware abstraction (CPU, memory, disk), resource protection (secure multiplexing) → application: implements own file system, network stack, scheduler using library OS → control: application optimizes file system for its workload → performance: minimal kernel overhead → flexibility: application has full control → exokernel design.",
+        "time_complexity": "O(1) for kernel operations (minimal overhead), O(a) for application-level abstractions where a is application complexity.",
+        "space_complexity": "O(k) where k is minimal kernel size (much smaller than monolithic kernel).",
+        "strengths": [
+            "Performance: minimal kernel overhead enables maximum performance.",
+            "Flexibility: applications can implement custom OS abstractions.",
+            "Control: applications have fine-grained control over resources."
+        ],
+        "weaknesses": [
+            "Complexity: applications must implement more functionality themselves.",
+            "Portability: less portable due to application-specific abstractions.",
+            "Security: requires careful design to maintain security with minimal kernel."
+        ],
+        "alternatives": ["Monolithic Kernel", "Microkernel", "Hybrid Kernel", "Library OS"],
+        "explanation": "Minimizes kernel functionality to provide only hardware abstraction and resource protection, allowing applications to implement their own OS abstractions for maximum performance and flexibility."
+    },
+    "semester_09/lecture_55_advanced_os/microkernel_architecture/README.md": {
+        "name": "Microkernel Architecture",
+        "problem": "Minimizes kernel to essential functions (IPC, scheduling, memory management), moving most OS services to user-space servers, improving modularity, security, and maintainability.",
+        "intuition": "Like a minimal government with specialized agencies: microkernel architecture is like a minimal central government (kernel) that only handles essential functions (like basic laws and coordination), while specialized agencies (user-space servers) handle specific services (like file systems, network stacks) - if an agency (server) crashes, it doesn't bring down the whole government (system), and you can update or replace agencies (servers) without changing the core government (kernel).",
+        "inputs": "System calls, IPC messages, hardware interrupts, resource requests.",
+        "outputs": "Minimal kernel, user-space servers, modular OS services, improved reliability.",
+        "steps": [
+            "Minimize kernel: implement only essential functions in kernel (IPC, scheduling, memory).",
+            "Create servers: implement OS services as user-space servers (file system, network, device drivers).",
+            "IPC mechanism: provide inter-process communication for kernel-server and server-server communication.",
+            "Message passing: use message passing for all communication (no shared memory in kernel).",
+            "Isolate servers: run servers in separate address spaces for isolation.",
+            "Handle failures: if server crashes, only that service fails (system continues).",
+            "Update servers: update or replace servers without kernel changes.",
+            "Secure: kernel enforces security and isolation between servers.",
+            "Optimize: optimize IPC performance for efficient communication."
+        ],
+        "example": "Microkernel: minimal kernel (IPC, scheduling, memory) → user-space servers: file system server, network server, device driver servers → IPC: kernel and servers communicate via messages → isolation: file server crash doesn't crash system → update: replace file server without kernel changes → modularity: add new services as new servers → microkernel architecture.",
+        "time_complexity": "O(1) for kernel operations, O(m) for IPC where m is message size (may be slower than monolithic).",
+        "space_complexity": "O(k + s) where k is kernel size, s is total server size (smaller kernel, distributed services).",
+        "strengths": [
+            "Modularity: services can be updated or replaced independently.",
+            "Reliability: server failures don't crash entire system.",
+            "Security: better isolation between OS components."
+        ],
+        "weaknesses": [
+            "Performance: IPC overhead may be higher than monolithic kernel.",
+            "Complexity: managing multiple servers adds complexity.",
+            "Coordination: requires careful coordination between servers."
+        ],
+        "alternatives": ["Monolithic Kernel", "Hybrid Kernel", "Exokernel", "Modular Kernel"],
+        "explanation": "Minimizes kernel to essential functions (IPC, scheduling, memory management), moving most OS services to user-space servers, improving modularity, security, and maintainability."
+    },
+    "semester_09/lecture_55_advanced_os/os_security_models/README.md": {
+        "name": "OS Security Models",
+        "problem": "Defines security policies and mechanisms for controlling access to system resources, protecting against unauthorized access, and ensuring system integrity and confidentiality.",
+        "intuition": "Like a building's security system: OS security models are like a building's comprehensive security system - you have access control (who can enter which rooms), authentication (checking IDs at the entrance), authorization (what each person is allowed to do), and monitoring (security cameras) - the security model defines the rules (like 'only employees can access the server room') and the mechanisms (like keycards and cameras) that enforce those rules to protect the building (operating system).",
+        "inputs": "User credentials, access requests, security policies, system resources, audit logs.",
+        "outputs": "Access control decisions, security enforcement, audit trails, protected system.",
+        "steps": [
+            "Define model: choose security model (DAC, MAC, RBAC, etc.).",
+            "Authenticate: verify user identity (passwords, certificates, biometrics).",
+            "Authorize: determine user permissions based on security model.",
+            "Enforce: enforce access control on resource access requests.",
+            "Audit: log security events and access attempts.",
+            "Monitor: continuously monitor for security violations and threats.",
+            "Update: update security policies and permissions as needed.",
+            "Protect: protect system integrity and prevent unauthorized modifications.",
+            "Isolate: isolate processes and users to prevent interference.",
+            "Encrypt: encrypt sensitive data at rest and in transit."
+        ],
+        "example": "OS security model: RBAC (Role-Based Access Control) → roles: admin, user, guest → permissions: admin (full access), user (read/write own files), guest (read only) → authenticate: user logs in → authorize: check user role → enforce: user tries to delete system file → denied (not admin) → audit: log access attempt → security enforced.",
+        "time_complexity": "O(1) for access control checks, O(u) for authentication where u is user database size.",
+        "space_complexity": "O(p + a) where p is policy size, a is audit log size.",
+        "strengths": [
+            "Protection: protects system from unauthorized access and attacks.",
+            "Flexibility: supports various security models (DAC, MAC, RBAC).",
+            "Auditability: provides audit trails for security monitoring."
+        ],
+        "weaknesses": [
+            "Complexity: implementing comprehensive security can be complex.",
+            "Performance: security checks add overhead to system operations.",
+            "Usability: strict security may impact user experience."
+        ],
+        "alternatives": ["Discretionary Access Control (DAC)", "Mandatory Access Control (MAC)", "Role-Based Access Control (RBAC)", "Capability-Based Security"],
+        "explanation": "Defines security policies and mechanisms for controlling access to system resources, protecting against unauthorized access, and ensuring system integrity and confidentiality."
+    },
+    "semester_09/lecture_55_advanced_os/real_time_systems/README.md": {
+        "name": "Real-Time Systems",
+        "problem": "Processes tasks and responds to events within strict timing constraints, ensuring predictable and deterministic behavior for time-critical applications.",
+        "intuition": "Like a traffic light controller: real-time systems are like traffic light controllers that must respond within strict time limits - if a car approaches (event), the system must change the light (response) within a guaranteed time (deadline) - missing the deadline (like a light not changing) can have serious consequences (accidents) - the system must be predictable and always meet timing requirements, unlike regular systems that prioritize average performance.",
+        "inputs": "Real-time events, tasks with deadlines, timing constraints, sensor data, control signals.",
+        "outputs": "Timely responses, deterministic behavior, guaranteed deadlines, real-time control.",
+        "steps": [
+            "Define requirements: specify timing constraints and deadlines for tasks.",
+            "Choose scheduler: select real-time scheduler (rate monotonic, earliest deadline first).",
+            "Analyze schedulability: verify all tasks can meet deadlines (schedulability analysis).",
+            "Prioritize: assign priorities based on deadlines (shorter deadline = higher priority).",
+            "Schedule: schedule tasks to meet all deadlines.",
+            "Monitor: continuously monitor task execution and timing.",
+            "Handle interrupts: process real-time interrupts with minimal latency.",
+            "Guarantee: ensure all tasks complete before deadlines.",
+            "Optimize: optimize for predictability over average performance.",
+            "Test: thoroughly test timing behavior under various conditions."
+        ],
+        "example": "Real-time system: flight control → task: update control surfaces every 10ms (deadline) → scheduler: rate monotonic → priority: highest → guarantee: always completes within 8ms → interrupt: sensor reading → process within 1ms → deterministic: predictable timing → safety: critical system → real-time guarantees met.",
+        "time_complexity": "O(n log n) for scheduling where n is number of tasks, O(1) for interrupt handling.",
+        "space_complexity": "O(n) where n is number of tasks (task control blocks and scheduling data).",
+        "strengths": [
+            "Predictability: guarantees timing behavior and deadline compliance.",
+            "Safety: critical for safety-critical applications (avionics, medical devices).",
+            "Determinism: provides deterministic and repeatable behavior."
+        ],
+        "weaknesses": [
+            "Complexity: real-time scheduling and analysis is complex.",
+            "Resource constraints: requires careful resource management.",
+            "Flexibility: less flexible than general-purpose systems."
+        ],
+        "alternatives": ["General-Purpose OS", "Soft Real-Time Systems", "Event-Driven Systems", "Time-Triggered Systems"],
+        "explanation": "Processes tasks and responds to events within strict timing constraints, ensuring predictable and deterministic behavior for time-critical applications."
+    },
+    "semester_09/lecture_56_os_optimization/cache_optimization/README.md": {
+        "name": "Cache Optimization",
+        "problem": "Improves cache hit rates and reduces cache misses through data locality optimization, prefetching, and cache-aware algorithms, enhancing overall system performance.",
+        "intuition": "Like organizing a workspace for efficiency: cache optimization is like organizing your workspace so frequently used items (data) are always within reach (in cache) - you arrange items by frequency of use (locality), keep related items together (spatial locality), and anticipate what you'll need next (prefetching) - this minimizes trips to storage (cache misses) and maximizes working from your desk (cache hits), making you much more efficient.",
+        "inputs": "Memory access patterns, cache configuration, data structures, algorithms, workload characteristics.",
+        "outputs": "Optimized cache usage, improved hit rates, reduced latency, better performance.",
+        "steps": [
+            "Analyze patterns: study memory access patterns and cache behavior.",
+            "Identify misses: identify cache misses and their causes (capacity, conflict, compulsory).",
+            "Improve locality: optimize data structures and algorithms for temporal and spatial locality.",
+            "Prefetch: implement prefetching to load data before it's needed.",
+            "Blocking: use cache blocking (tiling) for matrix operations.",
+            "Align data: align data structures to cache line boundaries.",
+            "Reduce conflicts: minimize cache conflicts through data layout optimization.",
+            "Tune cache: adjust cache parameters (size, associativity, line size) if possible.",
+            "Measure: measure cache performance (hit rate, miss rate, latency).",
+            "Iterate: optimize based on measurements and profiling."
+        ],
+        "example": "Cache optimization: matrix multiplication → problem: poor cache locality → solution: cache blocking (tile matrix into cache-sized blocks) → process blocks that fit in cache → result: cache hit rate improves from 60% to 95% → performance: 3x speedup → prefetching: prefetch next block while processing current → further improvement → cache optimized.",
+        "time_complexity": "O(n) for analysis where n is access patterns, O(1) improvement per access (cache hit vs miss).",
+        "space_complexity": "O(c) where c is cache size (optimization doesn't change cache size, but improves utilization).",
+        "strengths": [
+            "Performance: can dramatically improve application performance.",
+            "Efficiency: better cache utilization reduces memory bandwidth requirements.",
+            "Scalability: cache optimization becomes more important as memory-CPU speed gap grows."
+        ],
+        "weaknesses": [
+            "Complexity: requires understanding of cache architecture and access patterns.",
+            "Workload-dependent: optimizations may be specific to certain workloads.",
+            "Trade-offs: some optimizations may increase code complexity."
+        ],
+        "alternatives": ["Larger Caches", "Faster Memory", "Algorithm Optimization", "Compiler Optimizations"],
+        "explanation": "Improves cache hit rates and reduces cache misses through data locality optimization, prefetching, and cache-aware algorithms, enhancing overall system performance."
     }
 }
 
