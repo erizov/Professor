@@ -6412,6 +6412,192 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Manual Infrastructure Provisioning", "Cloud Console Management", "Configuration Management Tools", "Container Orchestration"],
         "explanation": "Defines and manages infrastructure using code and version control, enabling reproducible, automated, and version-controlled infrastructure provisioning and configuration."
+    },
+    "semester_07/lecture_44_quantum_computing/grover_algorithm/README.md": {
+        "name": "Grover's Algorithm",
+        "problem": "Searches an unsorted database of N items to find a specific target item, providing quadratic speedup over classical search algorithms for unstructured search problems.",
+        "intuition": "Like searching a phone book: classical search checks each entry one by one (O(N) time) - Grover's algorithm uses quantum superposition to check all entries simultaneously, then amplifies the correct answer, finding the target in roughly √N steps instead of N steps (quadratic speedup).",
+        "inputs": "Unstructured database of N items, oracle function that identifies target item, quantum computer with sufficient qubits.",
+        "outputs": "Index or identifier of target item found in database, with high probability.",
+        "steps": [
+            "Initialize superposition: create uniform superposition of all N possible states (all items equally likely).",
+            "Apply oracle: mark target item(s) by flipping phase (oracle identifies which state is the target).",
+            "Apply diffusion operator: amplify amplitude of marked state while reducing others (inversion about mean).",
+            "Repeat: iterate steps 2-3 approximately √N times to maximize probability of measuring target.",
+            "Measure: collapse quantum state to obtain result (high probability of finding target).",
+            "Verify: check if measured result matches target (classical verification)."
+        ],
+        "example": "Search unsorted database of 1 million items: classical search checks up to 1M items (worst case) → Grover's: initialize superposition of 1M states → apply oracle (mark target) → amplify → repeat ~1000 times (√1M) → measure → find target in ~1000 steps instead of 1M (1000x speedup).",
+        "time_complexity": "O(√N) quantum queries vs O(N) classical queries, providing quadratic speedup for unstructured search.",
+        "space_complexity": "O(log N) qubits to represent N items in superposition (exponential advantage in state space).",
+        "strengths": [
+            "Quadratic speedup: significantly faster than classical search for unstructured data.",
+            "Optimal: provably optimal for unstructured search problems.",
+            "General applicability: works for any search problem with an oracle."
+        ],
+        "weaknesses": [
+            "Requires oracle: needs quantum oracle function to identify target.",
+            "Limited speedup: only quadratic, not exponential like some other quantum algorithms.",
+            "Hardware requirements: needs fault-tolerant quantum computer."
+        ],
+        "alternatives": ["Classical Linear Search", "Classical Binary Search (for sorted data)", "Quantum Amplitude Amplification", "Classical Hashing"],
+        "explanation": "Searches an unsorted database of N items to find a specific target item, providing quadratic speedup over classical search algorithms for unstructured search problems."
+    },
+    "semester_07/lecture_44_quantum_computing/shor_algorithm/README.md": {
+        "name": "Shor's Algorithm",
+        "problem": "Factors large integers into their prime factors efficiently, breaking RSA encryption and solving problems that are intractable for classical computers.",
+        "intuition": "Like finding the combination to a safe: classical computers try combinations one by one (exponentially slow) - Shor's algorithm uses quantum Fourier transform to find the 'period' of a function, which reveals the factors (like finding the pattern in the combination) in polynomial time instead of exponential time.",
+        "inputs": "Large composite integer N to factor, quantum computer with sufficient qubits (roughly 2·log₂(N) qubits).",
+        "outputs": "Prime factors p and q such that N = p × q, or indication that N is prime.",
+        "steps": [
+            "Classical preprocessing: check if N is even or a perfect power (handle trivial cases).",
+            "Choose random a: select random integer a where 1 < a < N and gcd(a, N) = 1.",
+            "Find period: use quantum period finding to find smallest r where a^r ≡ 1 (mod N) (the period).",
+            "Quantum Fourier transform: apply QFT to extract period r from quantum state.",
+            "Check period: verify r is even and a^(r/2) ≠ ±1 (mod N).",
+            "Compute factors: calculate gcd(a^(r/2) ± 1, N) to find factors p and q.",
+            "Verify: confirm p × q = N and factors are prime.",
+            "Repeat if needed: if factors not found, try different random a."
+        ],
+        "example": "Factor N = 15: choose a = 7 → find period r where 7^r ≡ 1 (mod 15) → quantum period finding finds r = 4 → check: 4 is even, 7^2 = 49 ≡ 4 (mod 15) ≠ ±1 → compute gcd(7^2 ± 1, 15) = gcd(48, 15) = 3 and gcd(50, 15) = 5 → factors: 3 and 5 → verify: 3 × 5 = 15.",
+        "time_complexity": "O((log N)³) quantum operations vs O(exp((log N)^(1/3))) classical (exponential speedup for large N).",
+        "space_complexity": "O(log N) qubits (polynomial in input size, exponential advantage over classical).",
+        "strengths": [
+            "Exponential speedup: factors integers in polynomial time vs exponential classical time.",
+            "Breaks RSA: threatens current RSA encryption if large quantum computers exist.",
+            "Proven: mathematically proven to work for all composite numbers."
+        ],
+        "weaknesses": [
+            "Hardware requirements: needs large, fault-tolerant quantum computer (not yet available).",
+            "Error sensitivity: requires very low error rates to work correctly.",
+            "Limited to factoring: specific to integer factorization and related problems."
+        ],
+        "alternatives": ["Classical Trial Division", "Pollard's Rho Algorithm", "General Number Field Sieve", "Quantum Approximate Optimization"],
+        "explanation": "Factors large integers into their prime factors efficiently, breaking RSA encryption and solving problems that are intractable for classical computers."
+    },
+    "semester_07/lecture_44_quantum_computing/quantum_superposition/README.md": {
+        "name": "Quantum Superposition",
+        "problem": "Enables quantum bits (qubits) to exist in multiple states simultaneously, allowing quantum computers to process exponentially many possibilities in parallel.",
+        "intuition": "Like a spinning coin: while it's spinning, it's both heads and tails simultaneously (superposition) - only when you look (measure) does it 'collapse' to one state. Quantum superposition lets a qubit be 0 and 1 at the same time, enabling parallel computation on all possible states.",
+        "inputs": "Qubit(s) in initial state, quantum gates to create and manipulate superposition.",
+        "outputs": "Qubit(s) in superposition state (linear combination of |0⟩ and |1⟩), measurement result after collapse.",
+        "steps": [
+            "Initialize qubit: prepare qubit in basis state |0⟩ (classical 0).",
+            "Apply Hadamard gate: create equal superposition (|0⟩ + |1⟩)/√2 (50% chance of 0, 50% chance of 1).",
+            "Apply operations: perform quantum gates on superposition (operations affect all states simultaneously).",
+            "Interference: quantum states interfere constructively or destructively (amplify correct answers, cancel wrong ones).",
+            "Measure: collapse superposition to definite state (0 or 1) with probabilities determined by amplitudes.",
+            "Repeat: run algorithm multiple times to sample from probability distribution.",
+            "Post-process: analyze measurement results to extract answer."
+        ],
+        "example": "2-qubit system: initialize |00⟩ → apply Hadamard to both qubits → create superposition of all 4 states: (|00⟩ + |01⟩ + |10⟩ + |11⟩)/2 → apply quantum operations → all 4 states processed in parallel → measure → get one of 4 states → repeat to sample distribution.",
+        "time_complexity": "O(1) to create superposition, but measurement and post-processing may require multiple runs.",
+        "space_complexity": "O(n) qubits to represent 2^n classical states in superposition (exponential state space).",
+        "strengths": [
+            "Parallelism: enables exponential parallelism (n qubits = 2^n states simultaneously).",
+            "Fundamental: core principle enabling quantum speedups.",
+            "Interference: allows constructive/destructive interference to amplify correct answers."
+        ],
+        "weaknesses": [
+            "Measurement collapse: superposition destroyed upon measurement (only one outcome).",
+            "Decoherence: superposition fragile, easily destroyed by noise.",
+            "No direct access: cannot directly read all superposition states (only measure one)."
+        ],
+        "alternatives": ["Classical Parallel Processing", "Probabilistic Algorithms", "Quantum Entanglement", "Classical Superposition (simulation)"],
+        "explanation": "Enables quantum bits (qubits) to exist in multiple states simultaneously, allowing quantum computers to process exponentially many possibilities in parallel."
+    },
+    "semester_07/lecture_44_quantum_computing/quantum_entanglement/README.md": {
+        "name": "Quantum Entanglement",
+        "problem": "Creates strong correlations between quantum particles where measuring one instantly determines the state of the other, regardless of distance, enabling quantum communication and computation advantages.",
+        "intuition": "Like two magic coins: flip them together and they become 'entangled' - if you look at one and see heads, the other instantly becomes tails (even if it's light-years away). Quantum entanglement creates 'spooky action at a distance' where particles share a quantum state and are perfectly correlated.",
+        "inputs": "Two or more qubits, quantum gates to create entanglement (CNOT, Hadamard, etc.).",
+        "outputs": "Entangled qubits with correlated states, measurement results showing perfect correlation.",
+        "steps": [
+            "Prepare qubits: initialize qubits in known states (e.g., |00⟩).",
+            "Create superposition: apply Hadamard gate to first qubit (creates (|0⟩ + |1⟩)/√2).",
+            "Apply CNOT: entangle qubits using controlled-NOT gate (creates Bell state).",
+            "Result: qubits now in entangled state (|00⟩ + |11⟩)/√2 (perfectly correlated).",
+            "Separate (optional): physically separate qubits (entanglement persists).",
+            "Measure: measure one qubit → instantly know state of other (perfect correlation).",
+            "Verify: test Bell inequalities to confirm entanglement (violates classical limits)."
+        ],
+        "example": "Create Bell pair: |00⟩ → Hadamard on first: (|0⟩ + |1⟩)|0⟩/√2 → CNOT: (|00⟩ + |11⟩)/√2 (entangled) → separate qubits → measure first qubit: if 0, second is 0; if 1, second is 1 (instant correlation, even if separated).",
+        "time_complexity": "O(1) to create entanglement (constant time gate operations).",
+        "space_complexity": "O(n) qubits for n-partite entanglement (linear in number of particles).",
+        "strengths": [
+            "Perfect correlation: enables perfect correlation between distant particles.",
+            "Quantum advantage: essential for quantum teleportation, superdense coding.",
+            "Non-locality: demonstrates quantum mechanics beyond classical physics."
+        ],
+        "weaknesses": [
+            "Fragility: entanglement easily destroyed by decoherence and noise.",
+            "No faster-than-light communication: cannot transmit information faster than light.",
+            "Measurement destroys: measuring one qubit collapses entanglement."
+        ],
+        "alternatives": ["Classical Correlation", "Quantum Superposition", "Classical Entanglement (simulation)", "Quantum Discord"],
+        "explanation": "Creates strong correlations between quantum particles where measuring one instantly determines the state of the other, regardless of distance, enabling quantum communication and computation advantages."
+    },
+    "semester_07/lecture_44_quantum_computing/quantum_gates/README.md": {
+        "name": "Quantum Gates",
+        "problem": "Provides fundamental operations to manipulate quantum states, enabling construction of quantum algorithms and quantum circuits for computation.",
+        "intuition": "Like logic gates in classical computers (AND, OR, NOT) but for quantum states: quantum gates rotate, flip, and combine qubit states in superposition, allowing manipulation of quantum information - like having special tools that can work with 'both 0 and 1 at the same time'.",
+        "inputs": "Qubit(s) in initial quantum state, quantum gate operation (unitary matrix).",
+        "outputs": "Qubit(s) in transformed quantum state, ready for next operation or measurement.",
+        "steps": [
+            "Select gate: choose quantum gate based on desired operation (Pauli-X, Hadamard, CNOT, etc.).",
+            "Apply gate: execute gate operation on qubit(s) (matrix multiplication on quantum state).",
+            "Transform state: gate transforms input state to output state (e.g., |0⟩ → |1⟩, or superposition).",
+            "Combine gates: chain multiple gates to build quantum circuits (like classical logic circuits).",
+            "Verify: check gate operation preserves quantum properties (unitarity, reversibility).",
+            "Measure (optional): measure qubit state after gate operations to extract classical information."
+        ],
+        "example": "Single qubit: start with |0⟩ → apply Hadamard gate H → get (|0⟩ + |1⟩)/√2 (superposition) → apply Pauli-X gate → get (|1⟩ + |0⟩)/√2 → apply Hadamard again → get |0⟩ (back to original). Two qubits: |00⟩ → CNOT gate → |00⟩ (if control is 0) or |11⟩ (if control is 1).",
+        "time_complexity": "O(1) per gate operation (constant time matrix multiplication).",
+        "space_complexity": "O(n) qubits for n-qubit gates, O(2^n) classical memory to simulate n-qubit gates.",
+        "strengths": [
+            "Reversible: all quantum gates are reversible (unitary operations).",
+            "Universal: small set of gates can implement any quantum computation.",
+            "Parallel: gates operate on superposition states simultaneously."
+        ],
+        "weaknesses": [
+            "No cloning: cannot copy arbitrary quantum states (no-cloning theorem).",
+            "Measurement: gates are probabilistic when measured (quantum uncertainty).",
+            "Error prone: gates are sensitive to noise and decoherence."
+        ],
+        "alternatives": ["Classical Logic Gates", "Analog Computation", "Reversible Classical Gates", "Quantum Error Correction"],
+        "explanation": "Provides fundamental operations to manipulate quantum states, enabling construction of quantum algorithms and quantum circuits for computation."
+    },
+    "semester_07/lecture_44_quantum_computing/quantum_algorithms/README.md": {
+        "name": "Quantum Algorithms",
+        "problem": "Leverages quantum mechanical properties (superposition, entanglement, interference) to solve computational problems faster than classical algorithms, providing exponential or polynomial speedups for specific problems.",
+        "intuition": "Like having a super-powered computer: classical computers process one possibility at a time (like checking rooms one by one) - quantum algorithms use superposition to check all possibilities simultaneously, then use interference to amplify correct answers and cancel wrong ones (like checking all rooms at once and having the right answer 'glow').",
+        "inputs": "Problem instance, quantum computer with sufficient qubits, quantum gates and circuits.",
+        "outputs": "Solution to computational problem, potentially with exponential or polynomial speedup over classical methods.",
+        "steps": [
+            "Problem formulation: encode problem into quantum state and operations.",
+            "Initialize: prepare quantum state (often uniform superposition of all possibilities).",
+            "Apply quantum operations: use quantum gates to manipulate state (exploit superposition, entanglement).",
+            "Amplify: use quantum interference to amplify correct answers (constructive interference).",
+            "Cancel: destructive interference cancels wrong answers.",
+            "Measure: collapse quantum state to obtain classical result.",
+            "Post-process: analyze measurement results, may require multiple runs.",
+            "Verify: check solution correctness (classical verification)."
+        ],
+        "example": "Grover's search: initialize superposition of N items → oracle marks target → amplify marked state → repeat √N times → measure → find target in √N steps (vs N classical). Shor's factoring: use quantum Fourier transform to find period → factor large number in polynomial time (vs exponential classical).",
+        "time_complexity": "Varies by algorithm: O(√N) for Grover's, O((log N)³) for Shor's, vs exponential/polynomial classical for same problems.",
+        "space_complexity": "O(poly(log N)) qubits for many algorithms, enabling exponential state space with polynomial resources.",
+        "strengths": [
+            "Exponential speedup: some problems show exponential speedup (factoring, simulation).",
+            "Polynomial speedup: many problems show polynomial speedup (search, optimization).",
+            "Fundamental advantage: provable quantum advantage for certain problem classes."
+        ],
+        "weaknesses": [
+            "Limited applicability: speedups only for specific problem types.",
+            "Hardware requirements: need large, fault-tolerant quantum computers.",
+            "Error sensitivity: algorithms sensitive to noise and decoherence."
+        ],
+        "alternatives": ["Classical Algorithms", "Probabilistic Algorithms", "Approximate Algorithms", "Hybrid Quantum-Classical Algorithms"],
+        "explanation": "Leverages quantum mechanical properties (superposition, entanglement, interference) to solve computational problems faster than classical algorithms, providing exponential or polynomial speedups for specific problems."
     }
 }
 
