@@ -2273,55 +2273,67 @@
     },
     {
       "path": "semester_03/lecture_11_dynamic_programming/edit_distance/README.md",
-      "name": "Edit Distance",
-      "problem": "Implements edit distance algorithm.",
-      "intuition": "Edit Distance is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Edit Distance (Levenshtein)",
+      "problem": "Finds the minimum number of insertions, deletions, and substitutions to transform one string into another.",
+      "intuition": "Compare strings letter by letter; when they diverge, decide whether to insert, delete, or substitute the mismatch with minimal total cost.",
+      "inputs": "Two strings s and t (lengths n and m).",
+      "outputs": "Minimum edit operations required; optionally the sequence of edits.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Create DP table dp of size (n+1) × (m+1).",
+        "Initialize first row/column with index values (cost of deletions/insertions).",
+        "For each i,j: if s[i-1]==t[j-1], dp[i][j]=dp[i-1][j-1].",
+        "Otherwise dp[i][j] = 1 + min(dp[i-1][j] (delete), dp[i][j-1] (insert), dp[i-1][j-1] (substitute)).",
+        "Answer is dp[n][m]; backtrack to recover edit script if needed."
       ],
-      "example": "Example: Edit Distance applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Transform \"cat\" → \"cut\": substitute 'a'→'u' (1 edit). DP table yields cost 1.",
+      "time_complexity": "O(n·m).",
+      "space_complexity": "O(n·m) or O(min(n,m)) with rolling array.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Robust similarity metric for strings.",
+        "Easily extended with custom costs."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Quadratic time for long strings.",
+        "Memory heavy without optimizations."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Hamming Distance",
+        "Damerau-Levenshtein",
+        "Longest Common Subsequence"
       ],
-      "explanation": "Edit Distance solves computational problems efficiently."
+      "explanation": "Dynamic programming over prefixes chooses the cheapest combination of insert/delete/substitute to align two strings."
     },
     {
       "path": "semester_03/lecture_11_dynamic_programming/fibonacci/README.md",
-      "name": "Fibonacci",
-      "problem": "Implements fibonacci algorithm.",
-      "intuition": "Fibonacci is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Dynamic Programming Fibonacci",
+      "problem": "Computes nth Fibonacci number efficiently by caching results instead of using exponential recursion.",
+      "intuition": "Store results of smaller fib values so each number is computed once; akin to filling a table bottom-up.",
+      "inputs": "Integer n ≥ 0.",
+      "outputs": "The nth Fibonacci number (0-indexed).",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Handle base cases fib(0)=0, fib(1)=1.",
+        "Initialize array dp of size n+1.",
+        "Iterate i from 2..n: dp[i]=dp[i-1]+dp[i-2].",
+        "Optionally reduce to two variables for constant space.",
+        "Return dp[n]."
       ],
-      "example": "Example: Fibonacci applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "n=6 → sequence 0,1,1,2,3,5,8 → fib(6)=8.",
+      "time_complexity": "O(n).",
+      "space_complexity": "O(n) for table or O(1) with rolling values.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Demonstrates memoization/bottom-up DP basics.",
+        "Linear time versus exponential recursive approach."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Simple example; real problems may require more intricate states.",
+        "Large n requires big integers or modulo arithmetic."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Matrix Exponentiation",
+        "Closed-form (Binet) Formula",
+        "Fast Doubling Method"
       ],
-      "explanation": "Fibonacci solves computational problems efficiently."
+      "explanation": "Replace naive recursion with iterative accumulation while caching prior values so each Fibonacci number is computed exactly once."
     },
     {
       "path": "semester_03/lecture_11_dynamic_programming/knapsack/README.md",
@@ -2351,29 +2363,35 @@
     },
     {
       "path": "semester_03/lecture_11_dynamic_programming/longest_common_subsequence/README.md",
-      "name": "Longest Common Subsequence",
-      "problem": "Implements longest common subsequence algorithm.",
-      "intuition": "Longest Common Subsequence is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Longest Common Subsequence (LCS)",
+      "problem": "Finds the longest sequence present in order (not necessarily contiguous) in two strings.",
+      "intuition": "Walk both strings together; when characters match, include them, otherwise decide whether to drop a char from one string or the other via DP.",
+      "inputs": "Strings s (length n) and t (length m).",
+      "outputs": "Length of longest common subsequence (and optionally the subsequence).",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Initialize DP table dp[n+1][m+1] to zero.",
+        "For i=1..n: for j=1..m:",
+        "  If s[i-1]==t[j-1], dp[i][j]=dp[i-1][j-1]+1.",
+        "  Else dp[i][j]=max(dp[i-1][j], dp[i][j-1]).",
+        "Backtrack from dp[n][m] to reconstruct the subsequence."
       ],
-      "example": "Example: Longest Common Subsequence applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "analysis",
+      "example": "s=\"ABCBDAB\", t=\"BDCABA\" → LCS length 4 (\"BCBA\").",
+      "time_complexity": "O(n·m).",
+      "space_complexity": "O(n·m) (can be reduced to O(min(n,m)) for length only).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Foundation for diff tools and bioinformatics alignment.",
+        "Provides similarity measure ignoring non-matching sections."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Quadratic runtime on string lengths.",
+        "Reconstruction requires storing parent pointers or stack."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Edit Distance",
+        "Longest Common Substring",
+        "Sequence Alignment"
       ],
-      "explanation": "Longest Common Subsequence solves computational problems efficiently."
+      "explanation": "Fills a DP grid where each cell stores the best LCS length up to those prefixes, ensuring optimal substructure reuse."
     },
     {
       "path": "semester_03/lecture_12_ml_algorithms/decision_tree/README.md",

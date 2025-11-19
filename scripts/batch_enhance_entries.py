@@ -1287,6 +1287,87 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Hash Table", "Ternary Search Tree", "Radix Tree"],
         "explanation": "Store strings character by character so common prefixes share nodes, allowing quick prefix-based lookups."
+    },
+    "semester_03/lecture_11_dynamic_programming/edit_distance/README.md": {
+        "name": "Edit Distance (Levenshtein)",
+        "problem": "Finds the minimum number of insertions, deletions, and substitutions to transform one string into another.",
+        "intuition": "Compare strings letter by letter; when they diverge, decide whether to insert, delete, or substitute the mismatch with minimal total cost.",
+        "inputs": "Two strings s and t (lengths n and m).",
+        "outputs": "Minimum edit operations required; optionally the sequence of edits.",
+        "steps": [
+            "Create DP table dp of size (n+1) × (m+1).",
+            "Initialize first row/column with index values (cost of deletions/insertions).",
+            "For each i,j: if s[i-1]==t[j-1], dp[i][j]=dp[i-1][j-1].",
+            "Otherwise dp[i][j] = 1 + min(dp[i-1][j] (delete), dp[i][j-1] (insert), dp[i-1][j-1] (substitute)).",
+            "Answer is dp[n][m]; backtrack to recover edit script if needed."
+        ],
+        "example": "Transform \"cat\" → \"cut\": substitute 'a'→'u' (1 edit). DP table yields cost 1.",
+        "time_complexity": "O(n·m).",
+        "space_complexity": "O(n·m) or O(min(n,m)) with rolling array.",
+        "strengths": [
+            "Robust similarity metric for strings.",
+            "Easily extended with custom costs."
+        ],
+        "weaknesses": [
+            "Quadratic time for long strings.",
+            "Memory heavy without optimizations."
+        ],
+        "alternatives": ["Hamming Distance", "Damerau-Levenshtein", "Longest Common Subsequence"],
+        "explanation": "Dynamic programming over prefixes chooses the cheapest combination of insert/delete/substitute to align two strings."
+    },
+    "semester_03/lecture_11_dynamic_programming/longest_common_subsequence/README.md": {
+        "name": "Longest Common Subsequence (LCS)",
+        "problem": "Finds the longest sequence present in order (not necessarily contiguous) in two strings.",
+        "intuition": "Walk both strings together; when characters match, include them, otherwise decide whether to drop a char from one string or the other via DP.",
+        "inputs": "Strings s (length n) and t (length m).",
+        "outputs": "Length of longest common subsequence (and optionally the subsequence).",
+        "steps": [
+            "Initialize DP table dp[n+1][m+1] to zero.",
+            "For i=1..n: for j=1..m:",
+            "  If s[i-1]==t[j-1], dp[i][j]=dp[i-1][j-1]+1.",
+            "  Else dp[i][j]=max(dp[i-1][j], dp[i][j-1]).",
+            "Backtrack from dp[n][m] to reconstruct the subsequence."
+        ],
+        "example": "s=\"ABCBDAB\", t=\"BDCABA\" → LCS length 4 (\"BCBA\").",
+        "time_complexity": "O(n·m).",
+        "space_complexity": "O(n·m) (can be reduced to O(min(n,m)) for length only).",
+        "strengths": [
+            "Foundation for diff tools and bioinformatics alignment.",
+            "Provides similarity measure ignoring non-matching sections."
+        ],
+        "weaknesses": [
+            "Quadratic runtime on string lengths.",
+            "Reconstruction requires storing parent pointers or stack."
+        ],
+        "alternatives": ["Edit Distance", "Longest Common Substring", "Sequence Alignment"],
+        "explanation": "Fills a DP grid where each cell stores the best LCS length up to those prefixes, ensuring optimal substructure reuse."
+    },
+    "semester_03/lecture_11_dynamic_programming/fibonacci/README.md": {
+        "name": "Dynamic Programming Fibonacci",
+        "problem": "Computes nth Fibonacci number efficiently by caching results instead of using exponential recursion.",
+        "intuition": "Store results of smaller fib values so each number is computed once; akin to filling a table bottom-up.",
+        "inputs": "Integer n ≥ 0.",
+        "outputs": "The nth Fibonacci number (0-indexed).",
+        "steps": [
+            "Handle base cases fib(0)=0, fib(1)=1.",
+            "Initialize array dp of size n+1.",
+            "Iterate i from 2..n: dp[i]=dp[i-1]+dp[i-2].",
+            "Optionally reduce to two variables for constant space.",
+            "Return dp[n]."
+        ],
+        "example": "n=6 → sequence 0,1,1,2,3,5,8 → fib(6)=8.",
+        "time_complexity": "O(n).",
+        "space_complexity": "O(n) for table or O(1) with rolling values.",
+        "strengths": [
+            "Demonstrates memoization/bottom-up DP basics.",
+            "Linear time versus exponential recursive approach."
+        ],
+        "weaknesses": [
+            "Simple example; real problems may require more intricate states.",
+            "Large n requires big integers or modulo arithmetic."
+        ],
+        "alternatives": ["Matrix Exponentiation", "Closed-form (Binet) Formula", "Fast Doubling Method"],
+        "explanation": "Replace naive recursion with iterative accumulation while caching prior values so each Fibonacci number is computed exactly once."
     }
 }
 
