@@ -4,37 +4,41 @@
    Hash Table
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements hash table algorithm.
+   Provides constant-time average access to key-value pairs using hashing and collision resolution.
 
 3. **Intuition (plain-language explanation)**  
-   Hash Table is a fundamental algorithm in computer science.
+   Like placing labeled folders into numbered drawers: the hash function turns a key into a drawer index so you jump straight there.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Key-value pairs with operations insert, lookup, delete.  
+   - Output: Table of buckets where each bucket stores entries that hash to the same index.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Select hash function h(key) that maps keys to indices 0..m-1.
+2. Insert: compute index, place entry in bucket (or follow collision policy).
+3. Lookup: hash key, scan bucket/probe sequence for matching key.
+4. Delete: hash key, remove entry while preserving collision structure.
+5. Resize when load factor grows to keep operations near O(1).
 
 6. **Tiny example (hand-simulated)**  
-   Example: Hash Table applied to sample data.
+   Table size 7, keys 'cat','dog','eel'. Hash to indices 2,5,2 respectively; bucket 2 stores ['cat','eel'].
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: Average O(1) for insert/lookup/delete; worst-case O(n) if collisions degenerate.  
+   - Space: O(n) for entries plus bucket overhead.
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Extremely fast average-case performance.
+- Simple API for associative arrays and caches.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Needs high-quality hash functions and resizing strategy.
+- No inherent ordering of keys.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Binary Search Tree, Skip List, B-Tree
 
 11. **30-second explanation (your own words)**  
-    Hash Table solves computational problems efficiently.
+    Maps keys to array indices via a hash function so most operations touch a single bucket, yielding near-constant time.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

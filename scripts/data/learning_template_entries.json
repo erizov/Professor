@@ -447,54 +447,66 @@
     {
       "path": "semester_01/lecture_05_trees/binary_search_tree/README.md",
       "name": "Binary Search Tree",
-      "problem": "Implements binary search tree algorithm.",
-      "intuition": "Binary Search Tree is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Stores keys so that lookups, inserts, and deletes can exploit sorted order with O(log n) average time.",
+      "intuition": "Think of a game of twenty questions: each comparison decides whether to go left (smaller) or right (larger) until you reach the answer.",
+      "inputs": "Comparable keys with optional values; operations like insert, search, delete.",
+      "outputs": "Tree structure where in-order traversal yields sorted keys.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Start at the root node and compare the target key.",
+        "If key < current node, recurse or iterate into the left child.",
+        "If key > current node, recurse or iterate into the right child.",
+        "If key equals the node, update or return the value.",
+        "During deletion, replace removed nodes with predecessor or successor to preserve ordering."
       ],
-      "example": "Example: Binary Search Tree applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "analysis",
+      "example": "Insert 8,3,10,1,6: 8 is root, 3 goes left, 10 right, 1 left of 3, 6 right of 3.",
+      "time_complexity": "Average O(log n); worst-case O(n) on skewed trees.",
+      "space_complexity": "O(n) to store n nodes.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Maintains sorted order with simple pointer structure.",
+        "Supports inorder traversal to produce sorted output quickly."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Unbalanced input degrades operations to O(n).",
+        "Needs balancing variants (AVL, Red-Black) for guaranteed performance."
       ],
       "alternatives": [
-        "Related algorithms"
+        "AVL Tree",
+        "Red-Black Tree",
+        "Skip List"
       ],
-      "explanation": "Binary Search Tree solves computational problems efficiently."
+      "explanation": "A search tree where each node’s left subtree holds smaller keys and the right subtree holds larger ones, enabling logarithmic search when balanced."
     },
     {
       "path": "semester_01/lecture_05_trees/binary_tree/README.md",
       "name": "Binary Tree",
-      "problem": "Implements binary tree algorithm.",
-      "intuition": "Binary Tree is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Represents hierarchical relationships where each node may have up to two children.",
+      "intuition": "Picture a family tree where every person can have a left and right child pointer, letting you organize data hierarchically.",
+      "inputs": "Nodes containing data plus optional left/right child references.",
+      "outputs": "Tree structure supporting traversals such as preorder, inorder, and postorder.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Create a root node (which may be empty).",
+        "Attach left/right children as required by the domain problem.",
+        "Traverse using preorder (node-left-right), inorder (left-node-right), or postorder (left-right-node).",
+        "Breadth-first traversal visits nodes level by level.",
+        "Perform application-specific work (search, aggregation) during traversals."
       ],
-      "example": "Example: Binary Tree applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Tree with root 1, left child 2, right child 3: inorder traversal yields [2,1,3].",
+      "time_complexity": "Traversals and searches touch each node once: O(n).",
+      "space_complexity": "O(n) for nodes plus O(h) recursion depth where h is tree height.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Flexible backbone for heaps, BSTs, and expression trees.",
+        "Natural fit for recursive definitions and divide-and-conquer algorithms."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "By itself offers no ordering or balancing guarantees.",
+        "Pointer-heavy representation can hurt cache locality."
       ],
       "alternatives": [
-        "Related algorithms"
+        "General Tree",
+        "Binary Search Tree",
+        "Heap"
       ],
-      "explanation": "Binary Tree solves computational problems efficiently."
+      "explanation": "A generic two-child-per-node structure that underpins many specialized tree variants and traversals."
     },
     {
       "path": "semester_01/lecture_06_advanced_trees/avl_tree/README.md",
@@ -748,184 +760,226 @@
     {
       "path": "semester_01/lecture_08_hash_tables/hash_table/README.md",
       "name": "Hash Table",
-      "problem": "Implements hash table algorithm.",
-      "intuition": "Hash Table is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Provides constant-time average access to key-value pairs using hashing and collision resolution.",
+      "intuition": "Like placing labeled folders into numbered drawers: the hash function turns a key into a drawer index so you jump straight there.",
+      "inputs": "Key-value pairs with operations insert, lookup, delete.",
+      "outputs": "Table of buckets where each bucket stores entries that hash to the same index.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Select hash function h(key) that maps keys to indices 0..m-1.",
+        "Insert: compute index, place entry in bucket (or follow collision policy).",
+        "Lookup: hash key, scan bucket/probe sequence for matching key.",
+        "Delete: hash key, remove entry while preserving collision structure.",
+        "Resize when load factor grows to keep operations near O(1)."
       ],
-      "example": "Example: Hash Table applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Table size 7, keys 'cat','dog','eel'. Hash to indices 2,5,2 respectively; bucket 2 stores ['cat','eel'].",
+      "time_complexity": "Average O(1) for insert/lookup/delete; worst-case O(n) if collisions degenerate.",
+      "space_complexity": "O(n) for entries plus bucket overhead.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Extremely fast average-case performance.",
+        "Simple API for associative arrays and caches."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Needs high-quality hash functions and resizing strategy.",
+        "No inherent ordering of keys."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Binary Search Tree",
+        "Skip List",
+        "B-Tree"
       ],
-      "explanation": "Hash Table solves computational problems efficiently."
+      "explanation": "Maps keys to array indices via a hash function so most operations touch a single bucket, yielding near-constant time."
     },
     {
       "path": "semester_01/lecture_08_hash_tables/open_addressing/README.md",
       "name": "Open Addressing",
-      "problem": "Implements open addressing algorithm.",
-      "intuition": "Open Addressing is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Resolves hash table collisions by probing alternative slots instead of storing overflow lists.",
+      "intuition": "If a parking spot is taken, keep moving to the next slot according to a probe rule until you find an empty space.",
+      "inputs": "Fixed-size table and probe sequence (linear, quadratic, double hashing).",
+      "outputs": "Array where each slot holds at most one key-value pair plus optional tombstone markers.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Hash key to initial index i0 = h(key).",
+        "If slot empty, place entry; otherwise compute next probe index via strategy.",
+        "Repeat probing until an empty slot or tombstone is found.",
+        "Lookup follows the same probe sequence until key or empty slot encountered.",
+        "Deletion marks slot as tombstone to preserve probe chains."
       ],
-      "example": "Example: Open Addressing applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Linear probing size 5: insert keys hashing to index 2. Occupied? Try 3, then 4, then wrap to 0.",
+      "time_complexity": "Average O(1) with low load factor; degrades toward O(n) as table fills.",
+      "space_complexity": "O(m) for table of m slots; no extra pointers.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Excellent cache locality because all data lives in the array.",
+        "No extra heap allocations compared to chaining."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Primary clustering can create long probe sequences.",
+        "Deletion logic complicated by tombstones and probe-chain maintenance."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Separate Chaining",
+        "Cuckoo Hashing",
+        "Robin Hood Hashing"
       ],
-      "explanation": "Open Addressing solves computational problems efficiently."
+      "explanation": "Keeps every key directly in the array, using probe sequences to find the next available slot whenever collisions occur."
     },
     {
       "path": "semester_01/lecture_09_graph_algorithms/bellman_ford/README.md",
-      "name": "Bellman Ford",
-      "problem": "Implements bellman ford algorithm.",
-      "intuition": "Bellman Ford is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Bellman-Ford Algorithm",
+      "problem": "Computes single-source shortest paths even when negative edge weights are present (assuming no negative cycles).",
+      "intuition": "Relax every edge repeatedly so distances shrink over successive passes; if they still shrink after |V|-1 rounds, a negative cycle exists.",
+      "inputs": "Directed weighted graph G(V,E) and source vertex s.",
+      "outputs": "Shortest path distances (and optionally predecessors) from s or detection of negative cycles.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Initialize distance[s]=0 and all other distances to +∞.",
+        "Repeat |V|-1 times: for each edge (u,v,w), relax by setting dist[v] = min(dist[v], dist[u] + w).",
+        "Track predecessors when an edge improves a distance.",
+        "Perform one more pass; if any edge can still relax, report a negative cycle.",
+        "Return distance and predecessor arrays."
       ],
-      "example": "Example: Bellman Ford applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Edges (0→1,5), (0→2,4), (2→1,-6), (1→3,3): after relaxation, dist[3]=2 via 0→2→1→3.",
+      "time_complexity": "O(|V|·|E|).",
+      "space_complexity": "O(|V|) for distance and predecessor arrays.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Handles negative weights safely.",
+        "Simple dynamic programming formulation."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Slower than Dijkstra on graphs without negative edges.",
+        "Detecting negative cycles requires an additional pass."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Dijkstra",
+        "Johnson's Algorithm",
+        "SPFA"
       ],
-      "explanation": "Bellman Ford solves computational problems efficiently."
+      "explanation": "Iteratively relaxes all edges to propagate better distances, making it robust for graphs with negative weights."
     },
     {
       "path": "semester_01/lecture_09_graph_algorithms/bfs/README.md",
-      "name": "Bfs",
-      "problem": "Implements bfs algorithm.",
-      "intuition": "Bfs is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Breadth-First Search",
+      "problem": "Traverses graphs level by level to find the shortest path in unweighted graphs and to explore reachable vertices.",
+      "intuition": "Expand the frontier like ripples in a pond: visit all vertices one edge away before moving farther out.",
+      "inputs": "Graph G(V,E) and optional start vertex.",
+      "outputs": "Visit order, distance in edges, and predecessor tree for shortest paths.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Mark the start vertex as discovered, set distance 0, and enqueue it.",
+        "While the queue is not empty, dequeue vertex u.",
+        "For each neighbor v of u: if undiscovered, mark it, set parent[v]=u, dist[v]=dist[u]+1, enqueue v.",
+        "Continue until queue empty to explore connected component.",
+        "Use predecessor pointers to reconstruct shortest paths."
       ],
-      "example": "Example: Bfs applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "analysis",
+      "example": "Graph 0-1-2-3 with extra edge 0-2. BFS from 0 visits 0,1,2,3; dist[3]=2 via 0→2→3.",
+      "time_complexity": "O(|V| + |E|).",
+      "space_complexity": "O(|V|) for queue, visited, and parent arrays.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Guarantees shortest paths in unweighted graphs.",
+        "Useful for level-order traversal, bipartite checking, and finding connected components."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Requires memory proportional to the frontier size.",
+        "Does not handle weights without modification."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Depth-First Search",
+        "Dijkstra",
+        "A*"
       ],
-      "explanation": "Bfs solves computational problems efficiently."
+      "explanation": "Uses a queue to expand vertices in increasing distance from the source, ensuring level-order exploration."
     },
     {
       "path": "semester_01/lecture_09_graph_algorithms/dfs/README.md",
-      "name": "Dfs",
-      "problem": "Implements dfs algorithm.",
-      "intuition": "Dfs is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Depth-First Search",
+      "problem": "Explores a graph by going as deep as possible along each branch before backtracking.",
+      "intuition": "Like navigating a maze by always taking the next unexplored corridor until you hit a dead end, then backing up.",
+      "inputs": "Graph representation plus optional start vertex.",
+      "outputs": "Discovery/finish times, parent tree, and traversal order.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Start at chosen vertex, mark it visited, record discovery time.",
+        "Recursively visit each unvisited neighbor (or use an explicit stack).",
+        "After exploring neighbors, record finish time and backtrack.",
+        "Repeat for any unvisited vertex to cover disconnected components.",
+        "Leverage recorded times for cycle detection, topological sort, and strongly connected components."
       ],
-      "example": "Example: Dfs applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "analysis",
+      "example": "DFS on graph 0-1-2-3 explores path 0→1→2→3, then backtracks to explore remaining edges.",
+      "time_complexity": "O(|V| + |E|).",
+      "space_complexity": "O(|V|) recursion stack in worst case.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Foundation for algorithms like topological sort and SCCs.",
+        "Memory-light compared to BFS on dense layers."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Paths found are not guaranteed shortest.",
+        "Deep recursion can overflow the stack on large graphs."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Breadth-First Search",
+        "Iterative Deepening DFS",
+        "Tarjan's Algorithm"
       ],
-      "explanation": "Dfs solves computational problems efficiently."
+      "explanation": "Explores one branch completely before moving to the next, making it ideal for exhaustive search and backtracking problems."
     },
     {
       "path": "semester_01/lecture_09_graph_algorithms/dijkstra/README.md",
-      "name": "Dijkstra",
-      "problem": "Implements dijkstra algorithm.",
-      "intuition": "Dijkstra is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Dijkstra's Algorithm",
+      "problem": "Computes shortest paths from a single source in graphs with non-negative edge weights.",
+      "intuition": "Grow a settled set of nodes: always expand the vertex with the smallest tentative distance because no shorter route to it can exist.",
+      "inputs": "Graph with non-negative edge weights and source vertex.",
+      "outputs": "Shortest path distances and predecessors for each reachable vertex.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Initialize distance[source]=0, others=∞; push source into priority queue.",
+        "Extract vertex u with smallest distance.",
+        "For each edge (u,v,w), relax: if dist[u]+w < dist[v], update and push v.",
+        "Mark u as settled so it will not be processed again.",
+        "Continue until queue empty; reconstruct paths from predecessor array."
       ],
-      "example": "Example: Dijkstra applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "analysis",
+      "example": "Edges A→B(2), A→C(5), B→C(1). Algorithm finds dist[C]=3 via A→B→C.",
+      "time_complexity": "O((|V| + |E|) log |V|) with binary heap.",
+      "space_complexity": "O(|V|) for distance array and priority queue entries.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Fast on sparse graphs with non-negative weights.",
+        "Widely used in routing, navigation, and network optimization."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Fails with negative edge weights.",
+        "Priority queue operations dominate costs on dense graphs."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Bellman-Ford",
+        "A*",
+        "Johnson's Algorithm"
       ],
-      "explanation": "Dijkstra solves computational problems efficiently."
+      "explanation": "Repeatedly selects the closest unsettled vertex and relaxes its edges, guaranteeing optimal distances when weights are non-negative."
     },
     {
       "path": "semester_01/lecture_09_graph_algorithms/floyd_warshall/README.md",
-      "name": "Floyd Warshall",
-      "problem": "Implements floyd warshall algorithm.",
-      "intuition": "Floyd Warshall is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Floyd-Warshall Algorithm",
+      "problem": "Computes all-pairs shortest paths on weighted graphs (positive or negative edges, excluding negative cycles).",
+      "intuition": "Dynamic programming over intermediate vertices: allow paths to use the first k vertices and iteratively increase k.",
+      "inputs": "Weighted adjacency matrix for graph with n vertices.",
+      "outputs": "n×n matrix of shortest path distances (and optionally predecessor matrix).",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Initialize dist[i][j] with edge weights, set dist[i][i]=0.",
+        "For k from 1 to n: for each pair (i,j), set dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]).",
+        "Optionally maintain next[i][j] to reconstruct paths.",
+        "After loops, dist contains shortest distances using any intermediate vertex.",
+        "Detect negative cycles if any dist[i][i] < 0."
       ],
-      "example": "Example: Floyd Warshall applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "For 3-vertex graph, algorithm considers whether going through vertex 2 improves distance from 1 to 3 and updates matrix accordingly.",
+      "time_complexity": "O(n^3).",
+      "space_complexity": "O(n^2).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Handles negative weights and finds all-pairs distances in one pass.",
+        "Simple triple-loop implementation."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Cubic runtime becomes expensive for large graphs.",
+        "Requires dense matrix storage even for sparse graphs."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Repeated Dijkstra",
+        "Johnson's Algorithm",
+        "APSP via matrix multiplication"
       ],
-      "explanation": "Floyd Warshall solves computational problems efficiently."
+      "explanation": "Systematically checks whether including each vertex k shortens the path between i and j, yielding all-pairs solutions."
     },
     {
       "path": "semester_01/lecture_11_dynamic_programming/edit_distance/README.md",
@@ -981,29 +1035,35 @@
     },
     {
       "path": "semester_01/lecture_11_dynamic_programming/knapsack/README.md",
-      "name": "Knapsack",
-      "problem": "Implements knapsack algorithm.",
-      "intuition": "Knapsack is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "0/1 Knapsack",
+      "problem": "Selects items with weights and values to maximize value without exceeding capacity, using each item at most once.",
+      "intuition": "Build solutions bottom-up: for each item, choose to take it or leave it based on remaining capacity and value gain.",
+      "inputs": "List of item weights and values plus knapsack capacity W.",
+      "outputs": "Maximum achievable value and optionally the chosen item set.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Create DP table dp[i][w] = best value using first i items and capacity w.",
+        "Initialize base row/column with zeros.",
+        "For each item i and capacity w: if weight[i] > w, copy dp[i-1][w]; otherwise take max(dp[i-1][w], value[i] + dp[i-1][w-weight[i]]).",
+        "Fill table row by row to capacity W.",
+        "Trace back from dp[n][W] to recover chosen items."
       ],
-      "example": "Example: Knapsack applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "analysis",
+      "example": "Items {(2,3),(3,4),(4,5)}, capacity 5. Optimal takes items 1 and 2 for value 7.",
+      "time_complexity": "O(nW) where n items and capacity W.",
+      "space_complexity": "O(nW) table or O(W) with rolling array optimization.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Deterministic optimal solution when W is moderate.",
+        "Classic DP illustrating trade-offs in subset selection problems."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Pseudo-polynomial: runtime grows with numeric capacity.",
+        "Not suitable when fractional choices are allowed."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Fractional Knapsack",
+        "Branch and Bound",
+        "Meet-in-the-middle"
       ],
-      "explanation": "Knapsack solves computational problems efficiently."
+      "explanation": "Dynamic programming weighs the value of including each item versus skipping it, constrained by the remaining capacity."
     },
     {
       "path": "semester_01/lecture_11_dynamic_programming/longest_common_subsequence/README.md",
