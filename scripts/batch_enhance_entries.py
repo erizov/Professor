@@ -5641,6 +5641,198 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Physical Memory Only", "Segmentation", "Hybrid Paging-Segmentation", "Memory Overcommit"],
         "explanation": "Provides illusion of larger memory than physically available by using disk storage as extension of RAM, enabling programs to use more memory and improving utilization through paging and virtual-to-physical address translation."
+    },
+    "semester_07/lecture_40_llm_fundamentals/attention_mechanisms/README.md": {
+        "name": "Attention Mechanisms",
+        "problem": "Enables models to focus on relevant parts of input sequence when generating each output token, allowing capture of long-range dependencies and context-aware representations in sequence-to-sequence tasks.",
+        "intuition": "Like reading a long document and highlighting important sentences: when generating each word of a translation, attention mechanism 'looks' at all words in the source sentence and focuses more on the most relevant ones - giving higher 'attention' weights to words that matter most for the current output.",
+        "inputs": "Query vectors (Q), key vectors (K), value vectors (V), input sequence, attention mask (optional).",
+        "outputs": "Attention-weighted output vectors, attention scores showing which input tokens are most relevant.",
+        "steps": [
+            "Compute queries, keys, values: project input embeddings to Q, K, V spaces using learned weight matrices.",
+            "Calculate attention scores: compute similarity between queries and keys (dot product or scaled dot product).",
+            "Apply scaling: divide scores by sqrt(d_k) where d_k is key dimension (prevents large dot products).",
+            "Apply mask (optional): mask out padding tokens or future tokens (for causal attention).",
+            "Apply softmax: normalize scores to probabilities (attention weights sum to 1).",
+            "Weight values: multiply attention weights by value vectors and sum to get weighted output.",
+            "Output: return attention-weighted combination of values, representing focused context.",
+            "Multi-head attention (optional): repeat with different Q, K, V projections and concatenate results."
+        ],
+        "example": "Translation: source 'The cat sat on the mat' → generating 'le' (French 'the') → attention scores: 'The'=0.8 (high), 'cat'=0.1, 'sat'=0.05, 'on'=0.03, 'the'=0.01, 'mat'=0.01 → weighted output focuses on 'The' → model correctly generates 'le'.",
+        "time_complexity": "O(n²·d) where n is sequence length, d is dimension (quadratic in sequence length due to all-pairs attention).",
+        "space_complexity": "O(n²) for attention matrix storing all query-key scores, O(n·d) for Q, K, V matrices.",
+        "strengths": [
+            "Captures long-range dependencies: can attend to any position in sequence.",
+            "Interpretable: attention weights show which inputs are most relevant.",
+            "Flexible: works for various sequence tasks (translation, summarization, etc.)."
+        ],
+        "weaknesses": [
+            "Quadratic complexity: O(n²) makes it expensive for very long sequences.",
+            "Memory intensive: requires storing attention matrix for all token pairs."
+        ],
+        "alternatives": ["RNN/LSTM", "Convolutional Attention", "Sparse Attention", "Linear Attention"],
+        "explanation": "Enables models to focus on relevant parts of input sequence when generating output, allowing capture of long-range dependencies through attention-weighted combinations of input representations."
+    },
+    "semester_07/lecture_40_llm_fundamentals/fine_tuning_llm/README.md": {
+        "name": "Fine-Tuning LLM",
+        "problem": "Adapts pre-trained large language models to specific tasks or domains by continuing training on task-specific data, enabling high performance on downstream tasks with relatively little data.",
+        "intuition": "Like a generalist doctor specializing: start with a doctor who knows medicine broadly (pre-trained LLM), then train them on specific cases (fine-tuning data) - they keep their general knowledge but become expert in your specialty (your task).",
+        "inputs": "Pre-trained LLM (GPT, BERT, etc.), task-specific training data, fine-tuning hyperparameters (learning rate, batch size, epochs).",
+        "outputs": "Fine-tuned model adapted to specific task, improved performance on target domain.",
+        "steps": [
+            "Load pre-trained model: initialize model with pre-trained weights (from GPT, BERT, etc.).",
+            "Prepare task data: format task-specific data (classification, QA, generation) for model input.",
+            "Add task head (if needed): add task-specific layers (classifier, decoder) on top of base model.",
+            "Set learning rate: use lower learning rate than pre-training (typically 1e-5 to 1e-4) to avoid catastrophic forgetting.",
+            "Train on task data: run forward pass, compute loss, backpropagate, update weights (only fine-tune or freeze some layers).",
+            "Monitor performance: track validation metrics to prevent overfitting on small task datasets.",
+            "Early stopping: stop training when validation performance plateaus to avoid overfitting.",
+            "Evaluate: test fine-tuned model on held-out test set to measure task performance."
+        ],
+        "example": "Sentiment analysis: load GPT-3 → add classification head → fine-tune on 10K labeled reviews (positive/negative) → learning rate 2e-5, 3 epochs → model learns to classify sentiment → accuracy: 95% on test set (vs 60% with zero-shot).",
+        "time_complexity": "O(E·D·M) where E is epochs, D is dataset size, M is model size (much faster than pre-training since fewer epochs and smaller dataset).",
+        "space_complexity": "O(M) for model weights, O(B·S) for batch data where B is batch size, S is sequence length.",
+        "strengths": [
+            "High performance: achieves strong results with relatively little task-specific data.",
+            "Efficient: much faster and cheaper than training from scratch.",
+            "Transfer learning: leverages knowledge from pre-training."
+        ],
+        "weaknesses": [
+            "Catastrophic forgetting: may forget general knowledge if fine-tuned too aggressively.",
+            "Data requirements: still needs some task-specific labeled data.",
+            "Overfitting risk: small datasets may cause overfitting."
+        ],
+        "alternatives": ["Zero-shot Learning", "Few-shot Learning", "Prompt Tuning", "Adapter Layers"],
+        "explanation": "Adapts pre-trained large language models to specific tasks by continuing training on task-specific data, enabling high performance on downstream tasks with relatively little data through transfer learning."
+    },
+    "semester_07/lecture_40_llm_fundamentals/llm_architecture/README.md": {
+        "name": "LLM Architecture",
+        "problem": "Defines the structural design of large language models, typically based on Transformer architecture with self-attention, feed-forward networks, and layer normalization, enabling processing of variable-length sequences and learning complex language patterns.",
+        "intuition": "Like a factory assembly line: LLM architecture is the blueprint - input text goes through layers (attention, processing, normalization) like products through assembly stations, each layer transforms and refines the representation until you get the final output (predicted text).",
+        "inputs": "Token embeddings, positional encodings, architecture hyperparameters (layers, dimensions, heads).",
+        "outputs": "Token predictions, hidden representations, language model probabilities.",
+        "steps": [
+            "Tokenize input: convert text to token IDs using tokenizer (BPE, WordPiece, SentencePiece).",
+            "Embed tokens: map token IDs to dense vectors (embedding layer).",
+            "Add positional encoding: inject position information (sinusoidal or learned) to embeddings.",
+            "Stack transformer blocks: for each of N layers: apply multi-head self-attention, add residual connection, apply layer norm, apply feed-forward network, add residual connection, apply layer norm.",
+            "Self-attention: compute attention over input sequence (queries, keys, values from same sequence).",
+            "Feed-forward: apply two linear transformations with activation (ReLU, GELU) in between.",
+            "Output projection: map final hidden states to vocabulary size for next-token prediction.",
+            "Generate tokens: sample or greedily select next token, append to sequence, repeat for generation."
+        ],
+        "example": "GPT-3 architecture: input 'The cat' → tokenize → [1234, 5678] → embed → [512-dim vectors] → 96 transformer layers → each layer: self-attention (attends to 'The' and 'cat'), feed-forward → final layer → output projection → predicts 'sat' (next token) with probability 0.3.",
+        "time_complexity": "O(n²·d·L) where n is sequence length, d is dimension, L is number of layers (quadratic in sequence length due to attention).",
+        "space_complexity": "O(n²·L) for attention matrices across L layers, O(d·L) for model parameters where d is dimension.",
+        "strengths": [
+            "Scalable: performance improves with model size and data.",
+            "Flexible: handles variable-length sequences naturally.",
+            "Powerful: captures complex language patterns and long-range dependencies."
+        ],
+        "weaknesses": [
+            "Computational cost: quadratic attention complexity limits sequence length.",
+            "Memory intensive: large models require significant GPU memory.",
+            "Training cost: pre-training requires massive compute and data."
+        ],
+        "alternatives": ["RNN/LSTM", "CNN", "Hybrid Architectures", "Efficient Transformers"],
+        "explanation": "Defines structural design of large language models based on Transformer architecture with self-attention and feed-forward networks, enabling processing of variable-length sequences and learning complex language patterns."
+    },
+    "semester_07/lecture_40_llm_fundamentals/prompt_engineering/README.md": {
+        "name": "Prompt Engineering",
+        "problem": "Designs and optimizes input prompts (instructions, examples, context) to guide LLM behavior and improve output quality without modifying model weights, enabling task-specific performance through careful prompt design.",
+        "intuition": "Like giving clear instructions to a smart assistant: instead of retraining the model, you craft the perfect prompt (instructions, examples, format) - the model reads your prompt and follows it to produce better results, like a chef following a detailed recipe.",
+        "inputs": "Task description, example inputs/outputs, desired output format, model constraints, few-shot examples.",
+        "outputs": "Optimized prompts, improved model outputs, task-specific performance without fine-tuning.",
+        "steps": [
+            "Define task: clearly specify what you want the model to do (classification, generation, extraction, etc.).",
+            "Write base prompt: create initial prompt with task description and instructions.",
+            "Add examples: include few-shot examples showing desired input-output pairs.",
+            "Specify format: clearly indicate desired output format (JSON, list, paragraph, etc.).",
+            "Add constraints: specify constraints (length limits, style, tone, domain-specific rules).",
+            "Test prompt: run prompt on sample inputs and evaluate outputs.",
+            "Iterate: refine prompt based on results (add examples, clarify instructions, adjust format).",
+            "Optimize: experiment with prompt variations (order of examples, wording, structure) to improve performance.",
+            "Deploy: use optimized prompt in production for consistent results."
+        ],
+        "example": "Sentiment analysis: prompt: 'Classify the sentiment of the following review as positive or negative. Examples: Review: Great product! Sentiment: positive. Review: Terrible quality. Sentiment: negative. Review: The movie was okay. Sentiment:' → model outputs 'neutral' (or 'negative' depending on training).",
+        "time_complexity": "O(1) for prompt design (one-time effort), O(n) for inference where n is prompt + input length.",
+        "space_complexity": "O(P) for prompt storage where P is prompt length, O(n) for input/output sequences.",
+        "strengths": [
+            "No training required: works with pre-trained models without fine-tuning.",
+            "Fast iteration: can quickly test and refine prompts.",
+            "Interpretable: prompts are human-readable and explainable."
+        ],
+        "weaknesses": [
+            "Limited control: cannot fundamentally change model behavior.",
+            "Prompt sensitivity: small changes can significantly affect outputs.",
+            "Token limits: long prompts consume context window."
+        ],
+        "alternatives": ["Fine-tuning", "Few-shot Learning", "In-context Learning", "Prompt Tuning"],
+        "explanation": "Designs and optimizes input prompts to guide LLM behavior and improve output quality without modifying model weights, enabling task-specific performance through careful prompt design and few-shot examples."
+    },
+    "semester_07/lecture_40_llm_fundamentals/retrieval_augmented_generation/README.md": {
+        "name": "Retrieval Augmented Generation (RAG)",
+        "problem": "Enhances LLM generation by retrieving relevant information from external knowledge base and including it in context, enabling accurate, up-to-date responses without modifying model weights and reducing hallucinations.",
+        "intuition": "Like a student with a textbook during an exam: instead of relying only on memory (model's training data), RAG retrieves relevant information from a knowledge base (textbook) and includes it in the prompt (open book) - the model uses this retrieved context to give accurate, factual answers.",
+        "inputs": "User query, knowledge base (documents, database), embedding model, retrieval system, LLM.",
+        "outputs": "Generated response augmented with retrieved context, citations to source documents.",
+        "steps": [
+            "Encode query: convert user query to embedding vector using embedding model.",
+            "Retrieve documents: search knowledge base for documents similar to query (vector similarity search).",
+            "Rank results: score and rank retrieved documents by relevance to query.",
+            "Select top-k: choose top k most relevant documents (typically 3-10).",
+            "Format context: combine retrieved documents into context string for prompt.",
+            "Construct prompt: create prompt with user query and retrieved context (e.g., 'Context: [retrieved docs]. Question: [query]. Answer:').",
+            "Generate response: pass prompt to LLM, generate answer using retrieved context.",
+            "Post-process: format response, add citations to source documents, verify facts."
+        ],
+        "example": "Question: 'What is the capital of France?' → RAG: query embedding → retrieve from knowledge base → find document 'France is a country. Its capital is Paris.' → prompt: 'Context: France is a country. Its capital is Paris. Question: What is the capital of France? Answer:' → LLM: 'The capital of France is Paris.'",
+        "time_complexity": "O(Q + R + G) where Q is query encoding, R is retrieval time (O(log n) for vector search), G is generation time (O(m) where m is output length).",
+        "space_complexity": "O(D) for knowledge base embeddings where D is number of documents, O(k·S) for retrieved context where k is top-k, S is document size.",
+        "strengths": [
+            "Up-to-date information: can use recent documents not in training data.",
+            "Reduces hallucinations: grounded in retrieved facts, less likely to make up information.",
+            "Transparent: can cite sources, enabling fact-checking."
+        ],
+        "weaknesses": [
+            "Retrieval quality: depends on quality of knowledge base and retrieval system.",
+            "Context limits: retrieved documents consume context window.",
+            "Latency: adds retrieval step, increasing response time."
+        ],
+        "alternatives": ["Fine-tuning", "In-context Learning", "Knowledge Distillation", "External Tool Use"],
+        "explanation": "Enhances LLM generation by retrieving relevant information from external knowledge base and including it in context, enabling accurate, up-to-date responses without modifying model weights and reducing hallucinations."
+    },
+    "semester_07/lecture_40_llm_fundamentals/tokenization/README.md": {
+        "name": "Tokenization",
+        "problem": "Converts raw text into discrete tokens (subwords, words, or characters) that can be processed by language models, enabling efficient representation and handling of vocabulary limitations.",
+        "intuition": "Like breaking a sentence into building blocks: tokenization splits text into smaller pieces (tokens) - instead of storing every possible word (huge vocabulary), it breaks words into subword pieces (like 'un-happy', 'play-ing') that can be recombined, making the vocabulary manageable.",
+        "inputs": "Raw text string, tokenizer (BPE, WordPiece, SentencePiece), vocabulary, special tokens.",
+        "outputs": "List of token IDs, token-to-text mapping, attention masks, special token markers.",
+        "steps": [
+            "Normalize text: lowercase, remove extra spaces, handle Unicode (optional, depends on tokenizer).",
+            "Split into subwords: apply tokenization algorithm (BPE: merge frequent pairs, WordPiece: split by subword units, SentencePiece: learn optimal splits).",
+            "Map to IDs: convert tokens to integer IDs using vocabulary dictionary.",
+            "Add special tokens: prepend/append special tokens (BOS, EOS, SEP, PAD, etc.) as needed.",
+            "Handle unknown: map out-of-vocabulary words to UNK token or split into subwords.",
+            "Truncate/pad: truncate to max length or pad to fixed length for batching.",
+            "Create masks: generate attention masks to ignore padding tokens.",
+            "Return tokenized: output token IDs, attention masks, and token-to-text mapping."
+        ],
+        "example": "Text: 'Hello world!' → BPE tokenizer → ['Hello', 'Ġworld', '!'] → vocabulary lookup → [15496, 1917, 0] → add special tokens → [50256, 15496, 1917, 0, 50256] (BOS, Hello, world, !, EOS) → pad to length 10 → [50256, 15496, 1917, 0, 50256, 50256, 50256, 50256, 50256, 50256].",
+        "time_complexity": "O(n) where n is text length (linear scan and dictionary lookups), O(v) for vocabulary operations where v is vocabulary size.",
+        "space_complexity": "O(v) for vocabulary storage, O(t) for tokenized output where t is number of tokens (typically 1-2 tokens per word).",
+        "strengths": [
+            "Handles OOV: subword tokenization handles out-of-vocabulary words.",
+            "Efficient: smaller vocabulary than word-level, fewer parameters.",
+            "Language agnostic: works across languages with appropriate tokenizers."
+        ],
+        "weaknesses": [
+            "Information loss: splitting words may lose some semantic information.",
+            "Tokenization artifacts: model must learn to handle subword boundaries.",
+            "Length variation: same word may tokenize differently in different contexts."
+        ],
+        "alternatives": ["Character-level", "Word-level", "Byte-level", "Sentence-level"],
+        "explanation": "Converts raw text into discrete tokens using subword tokenization algorithms, enabling efficient representation and handling of vocabulary limitations while preserving semantic information."
     }
 }
 
