@@ -7565,159 +7565,232 @@
     },
     {
       "path": "semester_07/lecture_43_ci_cd_advanced/blue_green_deployment/README.md",
-      "name": "Blue Green Deployment",
-      "problem": "Implements blue green deployment algorithm.",
-      "intuition": "Blue Green Deployment is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Blue-Green Deployment",
+      "problem": "Maintains two identical production environments (blue and green) and switches traffic between them during deployments, enabling zero-downtime releases with instant rollback capability.",
+      "intuition": "Like having two identical restaurants: you update the green one while blue serves customers, then switch all customers to green - if something's wrong, instantly switch back to blue (zero downtime, instant rollback).",
+      "inputs": "New application version, blue environment (current production), green environment (new version), load balancer configuration.",
+      "outputs": "Deployed new version with zero downtime, ability to instantly rollback, two identical environments maintained.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Maintain blue environment: keep current production version running and serving all traffic.",
+        "Prepare green environment: set up identical infrastructure and deploy new version to green.",
+        "Deploy to green: install new version in green environment without affecting blue.",
+        "Test green: run smoke tests and validation checks on green environment.",
+        "Switch traffic: update load balancer to route all traffic from blue to green.",
+        "Monitor: observe green environment for errors, performance issues, or anomalies.",
+        "Rollback (if needed): if issues detected, instantly switch traffic back to blue.",
+        "Cleanup: after successful deployment, keep green as new blue, decommission old blue."
       ],
-      "example": "Example: Blue Green Deployment applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Blue (v1) serving 100% traffic → deploy v2 to green → test green → switch load balancer: 100% traffic to green (v2) → monitor → if OK, keep green; if issues, switch back to blue (v1) instantly → zero downtime, instant rollback.",
+      "time_complexity": "O(D + S) where D is deployment time to green, S is switch time (typically minutes for deployment, seconds for switch).",
+      "space_complexity": "O(2·E) where E is environment size (requires two full production environments simultaneously).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Zero downtime: seamless switch between environments.",
+        "Instant rollback: can revert in seconds by switching traffic.",
+        "Safe testing: can test new version in production-like environment before switching."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Resource overhead: requires maintaining two full production environments.",
+        "Cost: doubles infrastructure costs during deployment.",
+        "Database complexity: requires careful handling of database migrations and state."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Canary Deployment",
+        "Rolling Deployment",
+        "Big Bang Deployment",
+        "A/B Testing"
       ],
-      "explanation": "Blue Green Deployment solves computational problems efficiently."
+      "explanation": "Maintains two identical production environments and switches traffic between them during deployments, enabling zero-downtime releases with instant rollback capability."
     },
     {
       "path": "semester_07/lecture_43_ci_cd_advanced/canary_deployment/README.md",
       "name": "Canary Deployment",
-      "problem": "Implements canary deployment algorithm.",
-      "intuition": "Canary Deployment is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Gradually rolls out new version to a small subset of users before full deployment, enabling risk mitigation and early detection of issues with minimal impact.",
+      "intuition": "Like testing water quality with a canary in a mine: deploy new version to 5% of users (the canary) - if they're fine, gradually increase to 100%; if issues appear, stop and rollback (minimal impact, early detection).",
+      "inputs": "New application version, current production environment, traffic routing configuration, monitoring tools.",
+      "outputs": "Gradually deployed new version, risk mitigation, ability to stop/rollback at any stage.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Deploy to canary: deploy new version alongside current version in production.",
+        "Route small traffic: direct small percentage (e.g., 5%) of traffic to new version.",
+        "Monitor metrics: track error rates, latency, performance, user feedback for canary.",
+        "Compare: compare canary metrics with current version metrics.",
+        "Gradual increase: if canary performs well, gradually increase traffic (5% → 25% → 50% → 100%).",
+        "Stop/rollback: if issues detected at any stage, stop rollout or rollback immediately.",
+        "Complete rollout: if all stages successful, route 100% traffic to new version.",
+        "Cleanup: remove old version after successful full deployment."
       ],
-      "example": "Example: Canary Deployment applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Deploy v2 alongside v1 → route 5% traffic to v2 (canary) → monitor: v2 has 0.1% error rate (same as v1) → increase to 25% → still good → 50% → 100% → v2 fully deployed, v1 removed → gradual, safe rollout.",
+      "time_complexity": "O(D + M·S) where D is deployment time, M is monitoring duration per stage, S is number of stages (typically hours to days for full rollout).",
+      "space_complexity": "O(E + δ) where E is environment size, δ is overhead for running both versions simultaneously (less than blue-green).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Risk mitigation: limits impact of issues to small user subset.",
+        "Real-world testing: tests new version with actual production traffic.",
+        "Gradual rollout: can stop or adjust at any stage based on metrics."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: requires sophisticated traffic routing and monitoring.",
+        "Time: gradual rollout takes longer than instant switch.",
+        "Monitoring overhead: requires comprehensive metrics and alerting."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Blue-Green Deployment",
+        "Rolling Deployment",
+        "A/B Testing",
+        "Feature Flags"
       ],
-      "explanation": "Canary Deployment solves computational problems efficiently."
+      "explanation": "Gradually rolls out new version to a small subset of users before full deployment, enabling risk mitigation and early detection of issues with minimal impact."
     },
     {
       "path": "semester_07/lecture_43_ci_cd_advanced/chaos_engineering/README.md",
       "name": "Chaos Engineering",
-      "problem": "Implements chaos engineering algorithm.",
-      "intuition": "Chaos Engineering is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Proactively tests system resilience by intentionally injecting failures and disruptions in production-like environments, identifying weaknesses before they cause real outages.",
+      "intuition": "Like stress-testing a bridge: instead of waiting for it to fail under real load, you intentionally create controlled failures (remove a cable, add weight) to see how it handles stress - chaos engineering does the same for software systems.",
+      "inputs": "Production-like environment, chaos experiments (failure scenarios), monitoring tools, system under test.",
+      "outputs": "Identified system weaknesses, improved resilience, validated failure handling, documented recovery procedures.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Define hypothesis: state expected system behavior under failure (e.g., 'system should handle server crash gracefully').",
+        "Design experiment: create controlled failure scenario (kill server, inject latency, network partition, etc.).",
+        "Run in production-like: execute experiment in staging or small production subset.",
+        "Monitor: observe system behavior, metrics, error rates, recovery time.",
+        "Analyze: compare actual behavior with expected behavior (hypothesis).",
+        "Fix issues: address weaknesses discovered during experiment.",
+        "Document: record findings, recovery procedures, and improvements.",
+        "Repeat: run regular chaos experiments to continuously improve resilience."
       ],
-      "example": "Example: Chaos Engineering applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Hypothesis: 'system handles database failure gracefully' → inject: kill database server → observe: system switches to read-only mode, alerts team, recovers in 30 seconds → validate: system resilient → document findings → repeat with other failure scenarios.",
+      "time_complexity": "O(E + M) where E is experiment execution time, M is monitoring/analysis time (typically minutes to hours per experiment).",
+      "space_complexity": "O(S) where S is system size (experiments run on actual or production-like systems).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Proactive: finds issues before they cause real outages.",
+        "Real-world: tests actual system behavior under failure.",
+        "Continuous improvement: builds more resilient systems over time."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Risk: can cause real issues if not carefully controlled.",
+        "Resource intensive: requires dedicated time and infrastructure.",
+        "Complexity: requires expertise in system architecture and failure modes."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Load Testing",
+        "Failure Testing",
+        "Disaster Recovery Drills",
+        "Resilience Testing"
       ],
-      "explanation": "Chaos Engineering solves computational problems efficiently."
+      "explanation": "Proactively tests system resilience by intentionally injecting failures and disruptions in production-like environments, identifying weaknesses before they cause real outages."
     },
     {
       "path": "semester_07/lecture_43_ci_cd_advanced/feature_flags/README.md",
       "name": "Feature Flags",
-      "problem": "Implements feature flags algorithm.",
-      "intuition": "Feature Flags is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Enables runtime control of feature visibility and behavior without code deployment, allowing gradual feature rollouts, A/B testing, and instant feature toggling.",
+      "intuition": "Like a light switch for features: deploy code with new feature (light installed) but keep it off (flag disabled) - when ready, flip the switch (enable flag) to turn on feature instantly, no deployment needed (like turning on a light without rewiring).",
+      "inputs": "Feature flag configuration, application code with feature checks, flag management system, user/context data.",
+      "outputs": "Runtime feature control, gradual rollouts, A/B test results, instant feature toggling.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Implement feature: develop feature code with feature flag checks (if flag enabled, show feature).",
+        "Deploy code: deploy feature code to production with flag disabled (feature hidden).",
+        "Configure flag: set up feature flag in management system (percentage rollout, user targeting, etc.).",
+        "Enable gradually: enable flag for small percentage (e.g., 10% of users).",
+        "Monitor: track feature usage, errors, performance metrics.",
+        "Increase rollout: if metrics positive, gradually increase percentage (10% → 50% → 100%).",
+        "A/B test (optional): compare feature variants by enabling different flags for different user groups.",
+        "Disable if needed: instantly disable feature by turning off flag (no code deployment required).",
+        "Remove flag: after feature stable, remove flag checks from code in next deployment."
       ],
-      "example": "Example: Feature Flags applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Develop 'dark mode' feature → deploy with flag disabled → enable for 10% users → monitor: positive feedback, no errors → increase to 50% → 100% → feature fully rolled out → later, remove flag code.",
+      "time_complexity": "O(1) for flag evaluation (constant time check), O(D) for deployment (one-time, feature can be toggled without redeployment).",
+      "space_complexity": "O(F) where F is number of feature flags (minimal overhead per flag).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Instant control: enable/disable features without deployment.",
+        "Risk mitigation: gradual rollout reduces risk of issues.",
+        "A/B testing: enables experimentation with different feature variants."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Code complexity: requires feature flag checks throughout codebase.",
+        "Technical debt: flags need cleanup after features are stable.",
+        "Management overhead: requires flag management system and processes."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Branch-based Deployments",
+        "Configuration-based Toggles",
+        "Canary Deployments",
+        "A/B Testing"
       ],
-      "explanation": "Feature Flags solves computational problems efficiently."
+      "explanation": "Enables runtime control of feature visibility and behavior without code deployment, allowing gradual feature rollouts, A/B testing, and instant feature toggling."
     },
     {
       "path": "semester_07/lecture_43_ci_cd_advanced/gitops/README.md",
-      "name": "Gitops",
-      "problem": "Implements gitops algorithm.",
-      "intuition": "Gitops is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "GitOps",
+      "problem": "Uses Git as single source of truth for infrastructure and application deployments, enabling declarative, version-controlled, and automated infrastructure management.",
+      "intuition": "Like version control for infrastructure: instead of manually configuring servers (error-prone, hard to track), define infrastructure in code (like application code) stored in Git - changes to infrastructure are made via Git commits, automatically applied (like CI/CD for infrastructure).",
+      "inputs": "Git repository with infrastructure definitions (Kubernetes manifests, Terraform, etc.), GitOps operator/tool (ArgoCD, Flux, etc.), target infrastructure.",
+      "outputs": "Automated infrastructure deployments, version-controlled infrastructure state, declarative infrastructure management.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Define infrastructure: write infrastructure as code (Kubernetes YAML, Terraform, etc.) in Git repository.",
+        "Commit changes: make infrastructure changes via Git commits (add/modify/delete infrastructure definitions).",
+        "GitOps operator detects: operator monitors Git repository for changes.",
+        "Compare state: operator compares Git state with actual infrastructure state.",
+        "Reconcile: operator automatically applies changes to match Git state (drift detection and correction).",
+        "Deploy: infrastructure changes are automatically deployed to target environment.",
+        "Monitor: track deployment status, infrastructure state, and any drift.",
+        "Rollback: revert infrastructure by reverting Git commit (operator automatically applies rollback)."
       ],
-      "example": "Example: Gitops applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Update Kubernetes deployment YAML in Git → commit → GitOps operator detects change → compares Git state with cluster → applies changes → deployment updated → infrastructure matches Git state → all changes version-controlled and auditable.",
+      "time_complexity": "O(S + D) where S is sync time (operator reconciliation), D is deployment time (typically minutes for most infrastructure changes).",
+      "space_complexity": "O(R + I) where R is repository size (infrastructure definitions), I is infrastructure size (actual resources).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Version control: all infrastructure changes tracked in Git.",
+        "Automation: eliminates manual infrastructure management.",
+        "Consistency: ensures infrastructure matches declared state (drift prevention)."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Learning curve: requires understanding of infrastructure as code and GitOps tools.",
+        "Tool dependency: relies on GitOps operator and infrastructure as code tools.",
+        "Initial setup: requires configuring GitOps operator and repository structure."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Manual Infrastructure Management",
+        "Infrastructure as Code (without GitOps)",
+        "Configuration Management Tools",
+        "Cloud Console Management"
       ],
-      "explanation": "Gitops solves computational problems efficiently."
+      "explanation": "Uses Git as single source of truth for infrastructure and application deployments, enabling declarative, version-controlled, and automated infrastructure management."
     },
     {
       "path": "semester_07/lecture_43_ci_cd_advanced/infrastructure_as_code/README.md",
-      "name": "Infrastructure As Code",
-      "problem": "Implements infrastructure as code algorithm.",
-      "intuition": "Infrastructure As Code is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Infrastructure as Code (IaC)",
+      "problem": "Defines and manages infrastructure using code and version control, enabling reproducible, automated, and version-controlled infrastructure provisioning and configuration.",
+      "intuition": "Like writing code for servers: instead of manually clicking in cloud console to create servers (error-prone, not repeatable), write code that describes infrastructure (like application code) - run the code to create infrastructure automatically, just like compiling code creates a program.",
+      "inputs": "Infrastructure definition files (Terraform, CloudFormation, Ansible, etc.), infrastructure provider (AWS, Azure, GCP, etc.), configuration parameters.",
+      "outputs": "Provisioned infrastructure, version-controlled infrastructure definitions, reproducible infrastructure environments.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Define infrastructure: write code describing desired infrastructure (servers, networks, databases, etc.).",
+        "Version control: store infrastructure code in Git repository for versioning and collaboration.",
+        "Initialize: set up infrastructure tool (Terraform init, etc.) and configure provider credentials.",
+        "Plan: preview infrastructure changes before applying (Terraform plan shows what will be created/modified).",
+        "Apply: execute infrastructure code to provision actual infrastructure (Terraform apply creates resources).",
+        "Verify: confirm infrastructure matches definition (servers created, networks configured, etc.).",
+        "Update: modify infrastructure by changing code and reapplying (infrastructure updated to match code).",
+        "Destroy: remove infrastructure by destroying resources (Terraform destroy removes all resources)."
       ],
-      "example": "Example: Infrastructure As Code applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Write Terraform code: 'create 3 EC2 instances, 1 RDS database, 1 VPC' → terraform plan (preview) → terraform apply → AWS creates infrastructure → infrastructure matches code → commit code to Git → infrastructure version-controlled and reproducible.",
+      "time_complexity": "O(P) where P is provisioning time (varies by infrastructure size, typically minutes to hours).",
+      "space_complexity": "O(C + I) where C is code size (infrastructure definitions), I is infrastructure size (actual resources).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Reproducibility: same code creates identical infrastructure every time.",
+        "Version control: infrastructure changes tracked and auditable in Git.",
+        "Automation: eliminates manual infrastructure provisioning and configuration."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Learning curve: requires learning infrastructure as code tools and syntax.",
+        "State management: requires managing infrastructure state files carefully.",
+        "Provider lock-in: some tools may be tied to specific cloud providers."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Manual Infrastructure Provisioning",
+        "Cloud Console Management",
+        "Configuration Management Tools",
+        "Container Orchestration"
       ],
-      "explanation": "Infrastructure As Code solves computational problems efficiently."
+      "explanation": "Defines and manages infrastructure using code and version control, enabling reproducible, automated, and version-controlled infrastructure provisioning and configuration."
     },
     {
       "path": "semester_07/lecture_44_quantum_computing/grover_algorithm/README.md",
