@@ -4,37 +4,47 @@
    User Guides
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements user guides algorithm.
+   Provides step-by-step instructions and explanations to help end users learn and use software applications effectively, reducing support burden and improving user satisfaction.
 
 3. **Intuition (plain-language explanation)**  
-   User Guides is a fundamental algorithm in computer science.
+   Like a user manual for a car: user guides explain how to use software (like a car manual explains how to drive) - they provide step-by-step instructions, explain features, and help users accomplish tasks (like 'how to change a tire' in a car manual).
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Software features, user workflows, screenshots, step-by-step procedures, use cases.  
+   - Output: User-friendly guides, tutorials, how-to articles, getting started guides.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Identify user tasks: determine common tasks users need to accomplish.
+2. Create workflows: map out step-by-step procedures for each task.
+3. Write instructions: create clear, numbered steps for each procedure.
+4. Add visuals: include screenshots, diagrams, and illustrations.
+5. Provide examples: include real-world examples and use cases.
+6. Organize: structure guides by topic, difficulty, or user journey.
+7. Test: follow guides as a new user to verify clarity.
+8. Gather feedback: collect user feedback to improve guides.
+9. Update: keep guides current with software changes.
 
 6. **Tiny example (hand-simulated)**  
-   Example: User Guides applied to sample data.
+   User guide: 'How to Create an Account' → step 1: go to website → step 2: click 'Sign Up' → step 3: enter email and password → step 4: verify email → step 5: complete profile → includes: screenshots, tips, troubleshooting → user follows guide → successfully creates account.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(t) where t is number of tasks and their complexity.  
+   - Space: O(g) where g is guide size (text, images, examples).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- User empowerment: enables users to help themselves.
+- Reduces support: decreases support requests and tickets.
+- Better experience: improves user satisfaction and adoption.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Maintenance: requires updates when software changes.
+- Completeness: covering all features can be extensive.
+- User engagement: some users may not read guides.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Video Tutorials, Interactive Tutorials, In-App Help, Support Tickets, Community Forums
 
 11. **30-second explanation (your own words)**  
-    User Guides solves computational problems efficiently.
+    Provides step-by-step instructions and explanations to help end users learn and use software applications effectively, reducing support burden and improving user satisfaction.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

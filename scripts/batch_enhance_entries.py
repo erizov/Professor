@@ -7178,6 +7178,205 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Email Support", "Chat Support", "Phone Support", "Issue Trackers", "Project Management Tools"],
         "explanation": "Organizes, tracks, and manages customer support requests from creation to resolution, ensuring no issues are lost and providing visibility into support workload and performance."
+    },
+    "semester_08/lecture_48_documentation/api_documentation/README.md": {
+        "name": "API Documentation",
+        "problem": "Provides comprehensive reference and guides for using APIs, including endpoints, parameters, request/response formats, authentication, and examples, enabling developers to integrate with APIs effectively.",
+        "intuition": "Like a restaurant menu: API documentation lists all available 'dishes' (endpoints), what ingredients they need (parameters), what you'll get (responses), and how to order (authentication) - without good documentation, developers are like diners trying to guess what's available and how to order.",
+        "inputs": "API endpoints, request/response schemas, authentication methods, code examples, API specification.",
+        "outputs": "Structured API documentation, interactive docs, code samples, reference guides.",
+        "steps": [
+            "Identify endpoints: list all API endpoints and their purposes.",
+            "Document parameters: describe required and optional parameters for each endpoint.",
+            "Define schemas: specify request and response data structures (JSON, XML, etc.).",
+            "Explain authentication: document authentication methods (API keys, OAuth, etc.).",
+            "Provide examples: include code examples for common use cases.",
+            "Add descriptions: write clear descriptions of what each endpoint does.",
+            "Include error codes: document possible error responses and status codes.",
+            "Generate docs: use tools (Swagger, OpenAPI) to generate interactive documentation.",
+            "Test examples: verify all code examples work correctly.",
+            "Maintain: keep documentation updated as API evolves."
+        ],
+        "example": "API endpoint: GET /users/{id} → document: retrieves user by ID → parameters: id (required, integer) → response: {id, name, email} → authentication: Bearer token → example: curl -H 'Authorization: Bearer token' https://api.example.com/users/123 → response: 200 OK with user data.",
+        "time_complexity": "O(1) to read documentation, O(n) to generate where n is number of endpoints.",
+        "space_complexity": "O(e) where e is number of endpoints and their documentation size.",
+        "strengths": [
+            "Developer experience: enables quick API integration and adoption.",
+            "Reduces support: good docs reduce support requests.",
+            "Standardization: consistent format helps developers understand APIs."
+        ],
+        "weaknesses": [
+            "Maintenance: requires updates when API changes.",
+            "Completeness: incomplete docs frustrate developers.",
+            "Clarity: poorly written docs can confuse rather than help."
+        ],
+        "alternatives": ["Code Comments", "README Files", "Interactive Docs", "Video Tutorials", "SDKs"],
+        "explanation": "Provides comprehensive reference and guides for using APIs, including endpoints, parameters, request/response formats, authentication, and examples, enabling developers to integrate with APIs effectively."
+    },
+    "semester_08/lecture_48_documentation/code_documentation/README.md": {
+        "name": "Code Documentation",
+        "problem": "Explains code functionality, purpose, and usage through comments, docstrings, and inline documentation, helping developers understand and maintain code effectively.",
+        "intuition": "Like comments in a recipe: code documentation explains what the code does and why (like recipe notes explaining why you add salt) - without it, code is like a recipe with just ingredients and steps, leaving you guessing why things are done a certain way.",
+        "inputs": "Source code, functions, classes, modules, documentation standards (JSDoc, JavaDoc, etc.).",
+        "outputs": "Documented code, generated documentation, API references, code comments.",
+        "steps": [
+            "Add docstrings: write function/class docstrings describing purpose, parameters, returns.",
+            "Comment complex logic: add inline comments explaining non-obvious code sections.",
+            "Document parameters: describe each parameter's type, purpose, and constraints.",
+            "Explain return values: specify what functions return and possible exceptions.",
+            "Include examples: add usage examples in docstrings or comments.",
+            "Follow standards: use documentation standards (JSDoc, Sphinx, JavaDoc, etc.).",
+            "Generate docs: use tools to generate HTML/PDF documentation from comments.",
+            "Review: ensure documentation stays in sync with code changes.",
+            "Maintain: update documentation when code is modified."
+        ],
+        "example": "Function: def calculate_total(items, tax_rate): → docstring: 'Calculates total price including tax. Args: items (list): list of item prices, tax_rate (float): tax rate (0.0-1.0). Returns: float: total price. Raises: ValueError if tax_rate invalid.' → inline comment: # Apply tax only if items exist → documented code.",
+        "time_complexity": "O(1) to read documentation, O(n) to generate where n is code size.",
+        "space_complexity": "O(c) where c is code size plus documentation overhead.",
+        "strengths": [
+            "Code understanding: helps developers understand code quickly.",
+            "Maintainability: makes code easier to maintain and modify.",
+            "Onboarding: accelerates new developer onboarding."
+        ],
+        "weaknesses": [
+            "Maintenance: documentation can become outdated if not maintained.",
+            "Over-documentation: excessive comments can clutter code.",
+            "Time investment: writing good documentation takes time."
+        ],
+        "alternatives": ["Self-Documenting Code", "External Documentation", "Code Reviews", "Pair Programming", "Tests as Documentation"],
+        "explanation": "Explains code functionality, purpose, and usage through comments, docstrings, and inline documentation, helping developers understand and maintain code effectively."
+    },
+    "semester_08/lecture_48_documentation/documentation_generation/README.md": {
+        "name": "Documentation Generation",
+        "problem": "Automatically generates documentation from source code, comments, and specifications using tools and templates, ensuring documentation stays synchronized with code and reducing manual effort.",
+        "intuition": "Like an automatic report generator: instead of manually writing documentation (tedious, error-prone), documentation generation tools read code and comments (like reading a database) and automatically create formatted documentation (like generating a report) - when code changes, docs update automatically.",
+        "inputs": "Source code, docstrings, comments, API specifications, documentation templates.",
+        "outputs": "Generated documentation (HTML, PDF, Markdown), API references, formatted docs.",
+        "steps": [
+            "Parse code: extract code structure, functions, classes, docstrings.",
+            "Extract metadata: gather information from docstrings, annotations, comments.",
+            "Process specifications: parse API specifications (OpenAPI, GraphQL schema, etc.).",
+            "Apply templates: use templates to format documentation (HTML, Markdown, etc.).",
+            "Generate structure: create navigation, indexes, cross-references.",
+            "Format output: produce formatted documentation (HTML pages, PDF, etc.).",
+            "Link references: create links between related documentation sections.",
+            "Validate: check for missing or incomplete documentation.",
+            "Deploy: publish generated documentation to documentation site."
+        ],
+        "example": "Python project with Sphinx → parse .py files → extract docstrings → read conf.py config → apply Sphinx templates → generate HTML docs → create index, API reference, tutorials → deploy to Read the Docs → documentation automatically updates on code changes.",
+        "time_complexity": "O(n) where n is code size (parsing and processing), O(m) for template rendering where m is documentation size.",
+        "space_complexity": "O(d) where d is generated documentation size.",
+        "strengths": [
+            "Automation: reduces manual documentation effort.",
+            "Consistency: ensures consistent documentation format.",
+            "Synchronization: keeps docs in sync with code automatically."
+        ],
+        "weaknesses": [
+            "Quality depends on source: poor code comments produce poor docs.",
+            "Tool dependency: requires specific documentation tools and formats.",
+            "Customization: may require customization for specific needs."
+        ],
+        "alternatives": ["Manual Documentation", "Wiki Systems", "Markdown Files", "Documentation Sites", "Code Hosting Docs"],
+        "explanation": "Automatically generates documentation from source code, comments, and specifications using tools and templates, ensuring documentation stays synchronized with code and reducing manual effort."
+    },
+    "semester_08/lecture_48_documentation/technical_writing/README.md": {
+        "name": "Technical Writing",
+        "problem": "Creates clear, accurate, and accessible technical documentation that explains complex concepts, procedures, and systems to both technical and non-technical audiences.",
+        "intuition": "Like translating technical jargon into plain language: technical writing takes complex technical information (like a foreign language) and translates it into clear, understandable documentation (like a translation) - good technical writing is like a good teacher: explains complex things simply, with examples and structure.",
+        "inputs": "Technical information, target audience, documentation requirements, style guides.",
+        "outputs": "Clear technical documentation, user guides, tutorials, reference materials.",
+        "steps": [
+            "Understand audience: identify target audience (developers, end users, administrators).",
+            "Gather information: collect technical details, specifications, and requirements.",
+            "Structure content: organize information logically (tutorials, reference, guides).",
+            "Write clearly: use simple language, avoid jargon, explain technical terms.",
+            "Add examples: include practical examples and use cases.",
+            "Use visuals: incorporate diagrams, screenshots, and illustrations.",
+            "Review: edit for clarity, accuracy, and completeness.",
+            "Test: verify procedures and examples work correctly.",
+            "Iterate: improve based on feedback and usage."
+        ],
+        "example": "Write deployment guide → audience: DevOps engineers → structure: prerequisites → installation → configuration → verification → troubleshooting → include: commands, config examples, diagrams → test: follow guide step-by-step → verify: all steps work → publish: clear, accurate deployment guide.",
+        "time_complexity": "O(c) where c is content complexity (writing and editing time).",
+        "space_complexity": "O(d) where d is documentation size (text, images, examples).",
+        "strengths": [
+            "Clarity: makes complex topics accessible to readers.",
+            "Accuracy: ensures information is correct and up-to-date.",
+            "Usability: helps users accomplish tasks effectively."
+        ],
+        "weaknesses": [
+            "Time consuming: requires significant time and effort.",
+            "Skill required: needs technical writing expertise.",
+            "Maintenance: requires updates as technology evolves."
+        ],
+        "alternatives": ["Code Comments", "Video Tutorials", "Interactive Guides", "Community Documentation", "AI-Generated Docs"],
+        "explanation": "Creates clear, accurate, and accessible technical documentation that explains complex concepts, procedures, and systems to both technical and non-technical audiences."
+    },
+    "semester_08/lecture_48_documentation/user_guides/README.md": {
+        "name": "User Guides",
+        "problem": "Provides step-by-step instructions and explanations to help end users learn and use software applications effectively, reducing support burden and improving user satisfaction.",
+        "intuition": "Like a user manual for a car: user guides explain how to use software (like a car manual explains how to drive) - they provide step-by-step instructions, explain features, and help users accomplish tasks (like 'how to change a tire' in a car manual).",
+        "inputs": "Software features, user workflows, screenshots, step-by-step procedures, use cases.",
+        "outputs": "User-friendly guides, tutorials, how-to articles, getting started guides.",
+        "steps": [
+            "Identify user tasks: determine common tasks users need to accomplish.",
+            "Create workflows: map out step-by-step procedures for each task.",
+            "Write instructions: create clear, numbered steps for each procedure.",
+            "Add visuals: include screenshots, diagrams, and illustrations.",
+            "Provide examples: include real-world examples and use cases.",
+            "Organize: structure guides by topic, difficulty, or user journey.",
+            "Test: follow guides as a new user to verify clarity.",
+            "Gather feedback: collect user feedback to improve guides.",
+            "Update: keep guides current with software changes."
+        ],
+        "example": "User guide: 'How to Create an Account' → step 1: go to website → step 2: click 'Sign Up' → step 3: enter email and password → step 4: verify email → step 5: complete profile → includes: screenshots, tips, troubleshooting → user follows guide → successfully creates account.",
+        "time_complexity": "O(t) where t is number of tasks and their complexity.",
+        "space_complexity": "O(g) where g is guide size (text, images, examples).",
+        "strengths": [
+            "User empowerment: enables users to help themselves.",
+            "Reduces support: decreases support requests and tickets.",
+            "Better experience: improves user satisfaction and adoption."
+        ],
+        "weaknesses": [
+            "Maintenance: requires updates when software changes.",
+            "Completeness: covering all features can be extensive.",
+            "User engagement: some users may not read guides."
+        ],
+        "alternatives": ["Video Tutorials", "Interactive Tutorials", "In-App Help", "Support Tickets", "Community Forums"],
+        "explanation": "Provides step-by-step instructions and explanations to help end users learn and use software applications effectively, reducing support burden and improving user satisfaction."
+    },
+    "semester_08/lecture_48_documentation/version_control_docs/README.md": {
+        "name": "Version Control Documentation",
+        "problem": "Manages documentation changes using version control systems, enabling collaboration, tracking history, and maintaining documentation alongside code in a unified workflow.",
+        "intuition": "Like version control for code, but for documentation: just as code is stored in Git with history and collaboration (like a shared document with change tracking), version control docs stores documentation in Git - you can see who changed what, when, and why, and collaborate on docs just like code.",
+        "inputs": "Documentation files (Markdown, reStructuredText, etc.), version control system (Git), collaboration workflow.",
+        "outputs": "Version-controlled documentation, change history, collaborative editing, documentation branches.",
+        "steps": [
+            "Store in repository: place documentation files in version control repository.",
+            "Track changes: use version control to track all documentation changes.",
+            "Collaborate: enable multiple authors to edit documentation simultaneously.",
+            "Review: use pull requests to review documentation changes.",
+            "Branch: create branches for major documentation updates.",
+            "Merge: merge documentation changes after review.",
+            "Version: tag documentation versions to match code releases.",
+            "Deploy: automatically deploy documentation from repository.",
+            "Maintain: keep documentation in sync with code versions."
+        ],
+        "example": "Documentation in Git repo → writer creates branch 'update-api-docs' → edits README.md → commits changes → creates pull request → reviewer checks changes → approves → merges to main → documentation deployed → version tagged v2.0 → docs match code version.",
+        "time_complexity": "O(1) for version control operations, O(n) for merge conflicts where n is conflict size.",
+        "space_complexity": "O(d) where d is documentation size plus version history.",
+        "strengths": [
+            "Collaboration: enables multiple authors to work together.",
+            "History: tracks all changes and allows rollback.",
+            "Integration: keeps documentation with code in same workflow."
+        ],
+        "weaknesses": [
+            "Learning curve: requires understanding version control.",
+            "Merge conflicts: can have conflicts when multiple people edit.",
+            "Tool dependency: requires version control system and workflow."
+        ],
+        "alternatives": ["Wiki Systems", "Google Docs", "Confluence", "Documentation Sites", "Shared Drives"],
+        "explanation": "Manages documentation changes using version control systems, enabling collaboration, tracking history, and maintaining documentation alongside code in a unified workflow."
     }
 }
 

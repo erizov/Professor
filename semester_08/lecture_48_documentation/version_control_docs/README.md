@@ -1,40 +1,50 @@
-# Version Control Docs
+# Version Control Documentation
 
 1. **Name of Algorithm**  
-   Version Control Docs
+   Version Control Documentation
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements version control docs algorithm.
+   Manages documentation changes using version control systems, enabling collaboration, tracking history, and maintaining documentation alongside code in a unified workflow.
 
 3. **Intuition (plain-language explanation)**  
-   Version Control Docs is a fundamental algorithm in computer science.
+   Like version control for code, but for documentation: just as code is stored in Git with history and collaboration (like a shared document with change tracking), version control docs stores documentation in Git - you can see who changed what, when, and why, and collaborate on docs just like code.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Documentation files (Markdown, reStructuredText, etc.), version control system (Git), collaboration workflow.  
+   - Output: Version-controlled documentation, change history, collaborative editing, documentation branches.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Store in repository: place documentation files in version control repository.
+2. Track changes: use version control to track all documentation changes.
+3. Collaborate: enable multiple authors to edit documentation simultaneously.
+4. Review: use pull requests to review documentation changes.
+5. Branch: create branches for major documentation updates.
+6. Merge: merge documentation changes after review.
+7. Version: tag documentation versions to match code releases.
+8. Deploy: automatically deploy documentation from repository.
+9. Maintain: keep documentation in sync with code versions.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Version Control Docs applied to sample data.
+   Documentation in Git repo → writer creates branch 'update-api-docs' → edits README.md → commits changes → creates pull request → reviewer checks changes → approves → merges to main → documentation deployed → version tagged v2.0 → docs match code version.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(1) for version control operations, O(n) for merge conflicts where n is conflict size.  
+   - Space: O(d) where d is documentation size plus version history.
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Collaboration: enables multiple authors to work together.
+- History: tracks all changes and allows rollback.
+- Integration: keeps documentation with code in same workflow.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Learning curve: requires understanding version control.
+- Merge conflicts: can have conflicts when multiple people edit.
+- Tool dependency: requires version control system and workflow.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Wiki Systems, Google Docs, Confluence, Documentation Sites, Shared Drives
 
 11. **30-second explanation (your own words)**  
-    Version Control Docs solves computational problems efficiently.
+    Manages documentation changes using version control systems, enabling collaboration, tracking history, and maintaining documentation alongside code in a unified workflow.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
