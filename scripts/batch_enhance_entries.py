@@ -15117,6 +15117,516 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Classical AI", "Hybrid Quantum-Classical AI", "Quantum-Inspired", "NISQ AI"],
         "explanation": "Combines quantum computing with artificial intelligence, using quantum algorithms to accelerate AI tasks like optimization, pattern recognition, and machine learning, potentially providing exponential speedups."
+    },
+    "semester_12/lecture_82_hybrid_quantum/quantum_ml_hybrid/README.md": {
+        "name": "Quantum ML Hybrid",
+        "problem": "Combines quantum machine learning with classical ML, using quantum algorithms for specific ML tasks while leveraging classical ML for others, enabling practical quantum ML applications on near-term hardware.",
+        "intuition": "Like hybrid ML: Quantum ML Hybrid combines quantum and classical ML - you use quantum algorithms for what they're good at (quantum tasks), and classical ML for the rest - just as hybrid approaches combine strengths, quantum ML hybrid combines quantum and classical ML strengths.",
+        "inputs": "ML tasks, quantum ML models, classical ML models, training data, hybrid workflow, optimization objectives.",
+        "outputs": "Hybrid ML models, quantum-classical predictions, optimized parameters, combined ML results, enhanced ML capabilities.",
+        "steps": [
+            "Decompose: decompose ML task into quantum and classical parts.",
+            "Quantum: design quantum ML model for quantum part.",
+            "Classical: design classical ML model for classical part.",
+            "Train: train both models.",
+            "Combine: combine quantum and classical predictions.",
+            "Optimize: optimize hybrid model.",
+            "Execute: execute quantum part on quantum computer.",
+            "Process: process results classically.",
+            "Iterate: iterate to improve hybrid model.",
+            "Deploy: deploy hybrid ML system."
+        ],
+        "example": "Quantum ML Hybrid: task: classification → quantum: quantum feature map → classical: classical classifier → train: train both → combine: ensemble predictions → result: better accuracy than pure classical → Quantum ML Hybrid successful.",
+        "time_complexity": "O(q·c·t) where q is quantum time, c is classical time, t is training time (varies by task).",
+        "space_complexity": "O(n + m) where n is qubits, m is classical model storage (hybrid storage).",
+        "strengths": [
+            "Practical: enables practical quantum ML on NISQ hardware.",
+            "Flexibility: leverages strengths of both quantum and classical ML.",
+            "Performance: can outperform pure classical or quantum approaches."
+        ],
+        "weaknesses": [
+            "Complexity: hybrid ML systems are complex to design.",
+            "Coordination: requires coordination between quantum and classical.",
+            "Overhead: communication overhead between systems."
+        ],
+        "alternatives": ["Pure Quantum ML", "Pure Classical ML", "Quantum-Inspired ML", "Hybrid Frameworks"],
+        "explanation": "Combines quantum machine learning with classical ML, using quantum algorithms for specific ML tasks while leveraging classical ML for others, enabling practical quantum ML applications on near-term hardware."
+    },
+    "semester_12/lecture_82_hybrid_quantum/quantum_optimization_hybrid/README.md": {
+        "name": "Quantum Optimization Hybrid",
+        "problem": "Combines quantum optimization algorithms with classical optimization, using quantum computers for optimization subproblems while classical computers handle other aspects, enabling practical quantum optimization.",
+        "intuition": "Like hybrid optimization: Quantum Optimization Hybrid combines quantum and classical optimization - you use quantum algorithms for hard optimization subproblems, and classical methods for the rest - just as hybrid approaches combine strengths, quantum optimization hybrid combines quantum and classical optimization strengths.",
+        "inputs": "Optimization problems, quantum optimization algorithms, classical optimizers, hybrid workflow, problem decomposition.",
+        "outputs": "Hybrid optimization solutions, optimized parameters, quantum-classical results, improved solutions, combined outputs.",
+        "steps": [
+            "Decompose: decompose optimization problem.",
+            "Quantum: identify parts suitable for quantum optimization.",
+            "Classical: identify parts for classical optimization.",
+            "Execute: execute quantum optimization on quantum computer.",
+            "Process: process quantum results classically.",
+            "Optimize: optimize using classical methods.",
+            "Iterate: iterate between quantum and classical.",
+            "Combine: combine quantum and classical solutions.",
+            "Validate: validate hybrid solution.",
+            "Output: output final hybrid solution."
+        ],
+        "example": "Quantum Optimization Hybrid: problem: large-scale optimization → quantum: optimize hard subproblem → classical: optimize rest → combine: combine solutions → result: better solution than pure classical → Quantum Optimization Hybrid successful.",
+        "time_complexity": "O(q·c·i) where q is quantum time, c is classical time, i is iterations (varies by problem).",
+        "space_complexity": "O(n + m) where n is qubits, m is classical storage (hybrid storage).",
+        "strengths": [
+            "Practical: enables practical quantum optimization on NISQ hardware.",
+            "Performance: can find better solutions than pure classical methods.",
+            "Flexibility: leverages strengths of both approaches."
+        ],
+        "weaknesses": [
+            "Complexity: hybrid optimization is complex to design.",
+            "Coordination: requires coordination between quantum and classical.",
+            "Decomposition: problem decomposition can be challenging."
+        ],
+        "alternatives": ["Pure Quantum Optimization", "Pure Classical Optimization", "Quantum-Inspired", "Hybrid Frameworks"],
+        "explanation": "Combines quantum optimization algorithms with classical optimization, using quantum computers for optimization subproblems while classical computers handle other aspects, enabling practical quantum optimization."
+    },
+    "semester_12/lecture_82_hybrid_quantum/quantum_simulation_hybrid/README.md": {
+        "name": "Quantum Simulation Hybrid",
+        "problem": "Combines quantum simulation with classical simulation, using quantum computers for quantum parts of systems while classical computers simulate classical parts, enabling efficient simulation of hybrid quantum-classical systems.",
+        "intuition": "Like hybrid simulation: Quantum Simulation Hybrid combines quantum and classical simulation - you simulate quantum parts on quantum computers, and classical parts on classical computers - just as hybrid approaches combine strengths, quantum simulation hybrid combines quantum and classical simulation strengths.",
+        "inputs": "Hybrid systems, quantum Hamiltonians, classical models, simulation parameters, coupling terms.",
+        "outputs": "Hybrid simulation results, quantum states, classical states, coupled dynamics, simulation data.",
+        "steps": [
+            "Decompose: decompose system into quantum and classical parts.",
+            "Quantum: simulate quantum part on quantum computer.",
+            "Classical: simulate classical part classically.",
+            "Couple: couple quantum and classical parts.",
+            "Evolve: evolve hybrid system in time.",
+            "Exchange: exchange information between parts.",
+            "Iterate: iterate time evolution steps.",
+            "Measure: measure quantum and classical observables.",
+            "Analyze: analyze hybrid simulation results.",
+            "Validate: validate against known results."
+        ],
+        "example": "Quantum Simulation Hybrid: system: molecule + environment → quantum: simulate molecule → classical: simulate environment → couple: exchange energy → evolve: time evolution → result: accurate hybrid simulation → Quantum Simulation Hybrid successful.",
+        "time_complexity": "O(q·c·t) where q is quantum simulation time, c is classical time, t is time steps (varies by system).",
+        "space_complexity": "O(n + m) where n is qubits, m is classical state storage (hybrid storage).",
+        "strengths": [
+            "Efficiency: enables efficient simulation of hybrid systems.",
+            "Accuracy: provides accurate simulation of quantum-classical coupling.",
+            "Practical: enables practical simulation of complex systems."
+        ],
+        "weaknesses": [
+            "Complexity: hybrid simulation is complex to design.",
+            "Coupling: quantum-classical coupling can be challenging.",
+            "Synchronization: requires synchronization between simulations."
+        ],
+        "alternatives": ["Pure Quantum Simulation", "Pure Classical Simulation", "Approximate Methods", "Hybrid Frameworks"],
+        "explanation": "Combines quantum simulation with classical simulation, using quantum computers for quantum parts of systems while classical computers simulate classical parts, enabling efficient simulation of hybrid quantum-classical systems."
+    },
+    "semester_12/lecture_83_quantum_software/quantum_debugging/README.md": {
+        "name": "Quantum Debugging",
+        "problem": "Debugs quantum programs and circuits by identifying errors, analyzing quantum state evolution, and validating quantum operations, addressing unique challenges of quantum computing like superposition and measurement.",
+        "intuition": "Like debugging for quantum: Quantum Debugging is like debugging but for quantum programs - you find bugs (errors) in quantum circuits, but it's harder because quantum states are probabilistic and measurement destroys them - just as you debug classical programs, you debug quantum programs, but with quantum-specific challenges.",
+        "inputs": "Quantum programs, circuits, expected behavior, quantum states, measurement results, error models.",
+        "outputs": "Debugged programs, error identification, corrected circuits, validation results, debugging reports.",
+        "steps": [
+            "Identify: identify unexpected behavior or errors.",
+            "Analyze: analyze quantum circuit and state evolution.",
+            "Instrument: instrument circuit for debugging.",
+            "Simulate: simulate on quantum simulator.",
+            "Measure: measure intermediate quantum states (carefully).",
+            "Trace: trace quantum state evolution.",
+            "Isolate: isolate error location.",
+            "Fix: fix identified errors.",
+            "Validate: validate fixes.",
+            "Iterate: iterate until program works correctly."
+        ],
+        "example": "Quantum Debugging: program: Grover's algorithm not working → analyze: circuit structure → simulate: trace state evolution → identify: oracle error → fix: correct oracle → validate: algorithm works → result: debugged quantum program → Quantum Debugging successful.",
+        "time_complexity": "O(d + s + a) where d is debugging time, s is simulation time, a is analysis time (varies by complexity).",
+        "space_complexity": "O(n + d) where n is qubits, d is debugging data storage (state snapshots, traces).",
+        "strengths": [
+            "Error detection: helps identify errors in quantum programs.",
+            "Validation: validates quantum program correctness.",
+            "Learning: helps understand quantum program behavior."
+        ],
+        "weaknesses": [
+            "Measurement: measurement destroys quantum states (challenge).",
+            "Probabilistic: probabilistic results complicate debugging.",
+            "Complexity: debugging quantum programs is complex."
+        ],
+        "alternatives": ["No Debugging", "Simulation Only", "Formal Verification", "Testing"],
+        "explanation": "Debugs quantum programs and circuits by identifying errors, analyzing quantum state evolution, and validating quantum operations, addressing unique challenges of quantum computing like superposition and measurement."
+    },
+    "semester_12/lecture_83_quantum_software/quantum_optimization_tools/README.md": {
+        "name": "Quantum Optimization Tools",
+        "problem": "Provides tools and frameworks for quantum optimization, enabling developers to formulate, solve, and optimize problems using quantum algorithms like QAOA and quantum annealing.",
+        "intuition": "Like optimization tools for quantum: Quantum Optimization Tools are like optimization tools but for quantum computers - you use tools to formulate problems (like QUBO), solve them with quantum algorithms, and optimize solutions - just as optimization tools help solve classical problems, quantum optimization tools help solve problems with quantum computers.",
+        "inputs": "Optimization problems, problem formulations, quantum algorithms, optimization parameters, tools and frameworks.",
+        "outputs": "Optimized solutions, problem formulations, quantum circuits, optimization results, tool outputs.",
+        "steps": [
+            "Formulate: formulate problem (QUBO, Ising).",
+            "Encode: encode into quantum format.",
+            "Select: select quantum optimization algorithm.",
+            "Configure: configure algorithm parameters.",
+            "Execute: execute on quantum computer or simulator.",
+            "Optimize: optimize parameters.",
+            "Solve: solve optimization problem.",
+            "Extract: extract solution.",
+            "Validate: validate solution quality.",
+            "Iterate: iterate to improve solution."
+        ],
+        "example": "Quantum Optimization Tools: problem: max-cut → formulate: QUBO → encode: Ising Hamiltonian → QAOA: configure algorithm → execute: run on quantum computer → optimize: improve parameters → result: optimal cut found → Quantum Optimization Tools successful.",
+        "time_complexity": "O(f + e + o) where f is formulation time, e is execution time, o is optimization time (varies by problem).",
+        "space_complexity": "O(n + t) where n is problem size, t is tool storage (problem data, results).",
+        "strengths": [
+            "Ease: makes quantum optimization accessible.",
+            "Efficiency: provides efficient problem formulation and solving.",
+            "Flexibility: supports various optimization problems."
+        ],
+        "weaknesses": [
+            "Learning: requires learning quantum optimization concepts.",
+            "Hardware: limited by quantum hardware availability.",
+            "Optimality: may provide approximate, not exact solutions."
+        ],
+        "alternatives": ["Manual Formulation", "Classical Optimization Tools", "Quantum-Inspired", "Custom Solutions"],
+        "explanation": "Provides tools and frameworks for quantum optimization, enabling developers to formulate, solve, and optimize problems using quantum algorithms like QAOA and quantum annealing."
+    },
+    "semester_12/lecture_83_quantum_software/quantum_software_stack/README.md": {
+        "name": "Quantum Software Stack",
+        "problem": "Provides layered software stack for quantum computing, from high-level programming languages to low-level quantum gates, enabling development and execution of quantum applications.",
+        "intuition": "Like software stack for quantum: Quantum Software Stack is like a software stack but for quantum computers - you have layers from high-level (quantum languages) to low-level (quantum gates), just like classical stacks - just as software stacks enable classical computing, quantum software stacks enable quantum computing.",
+        "inputs": "Quantum programs, high-level languages, compilers, quantum circuits, hardware interfaces, execution environments.",
+        "outputs": "Compiled circuits, executable quantum programs, optimized code, hardware-specific programs, quantum results.",
+        "steps": [
+            "Program: write quantum program in high-level language.",
+            "Compile: compile to quantum gates.",
+            "Optimize: optimize quantum circuit.",
+            "Target: target specific quantum hardware.",
+            "Execute: execute on quantum computer or simulator.",
+            "Measure: measure quantum results.",
+            "Process: process results.",
+            "Return: return program outputs.",
+            "Debug: debug if needed.",
+            "Iterate: iterate development cycle."
+        ],
+        "example": "Quantum Software Stack: program: Qiskit code → compile: to gates → optimize: circuit optimization → target: IBM quantum hardware → execute: run on quantum computer → result: quantum program executed → Quantum Software Stack operational.",
+        "time_complexity": "O(c + e) where c is compilation time, e is execution time (varies by program).",
+        "space_complexity": "O(s + h) where s is stack storage, h is hardware interface storage (software layers).",
+        "strengths": [
+            "Abstraction: provides high-level abstraction for quantum computing.",
+            "Portability: enables portability across quantum hardware.",
+            "Ecosystem: growing ecosystem of tools and libraries."
+        ],
+        "weaknesses": [
+            "Complexity: quantum software stacks are complex.",
+            "Maturity: field is still maturing.",
+            "Hardware: limited by quantum hardware capabilities."
+        ],
+        "alternatives": ["Gate-Level Programming", "Hardware-Specific", "Low-Level Assembly", "Visual Programming"],
+        "explanation": "Provides layered software stack for quantum computing, from high-level programming languages to low-level quantum gates, enabling development and execution of quantum applications."
+    },
+    "semester_12/lecture_83_quantum_software/quantum_verification/README.md": {
+        "name": "Quantum Verification",
+        "problem": "Verifies correctness of quantum programs and circuits through formal methods, testing, and validation techniques, ensuring quantum algorithms work as intended.",
+        "intuition": "Like verification for quantum: Quantum Verification is like software verification but for quantum programs - you verify that quantum circuits are correct (do what they're supposed to do) using formal methods and testing - just as you verify classical software, you verify quantum software to ensure correctness.",
+        "inputs": "Quantum programs, specifications, verification methods, test cases, formal models, validation criteria.",
+        "outputs": "Verification results, correctness proofs, test outcomes, validation reports, verified programs.",
+        "steps": [
+            "Specify: specify program requirements and behavior.",
+            "Model: model quantum program formally.",
+            "Verify: verify correctness using formal methods.",
+            "Test: test quantum program.",
+            "Validate: validate against specifications.",
+            "Prove: prove correctness properties.",
+            "Check: check quantum properties.",
+            "Report: report verification results.",
+            "Fix: fix issues if found.",
+            "Iterate: iterate until verified."
+        ],
+        "example": "Quantum Verification: program: Shor's algorithm → specify: factorization requirements → model: formal model → verify: prove correctness → test: test on examples → validate: validate factorization → result: verified quantum program → Quantum Verification successful.",
+        "time_complexity": "O(v + t + p) where v is verification time, t is testing time, p is proof time (varies by method).",
+        "space_complexity": "O(m + v) where m is model storage, v is verification data storage (proofs, test results).",
+        "strengths": [
+            "Correctness: ensures quantum program correctness.",
+            "Reliability: improves reliability of quantum programs.",
+            "Trust: increases trust in quantum systems."
+        ],
+        "weaknesses": [
+            "Complexity: quantum verification is complex.",
+            "Methods: verification methods are still developing.",
+            "Coverage: may not verify all properties."
+        ],
+        "alternatives": ["No Verification", "Testing Only", "Simulation", "Formal Methods"],
+        "explanation": "Verifies correctness of quantum programs and circuits through formal methods, testing, and validation techniques, ensuring quantum algorithms work as intended."
+    },
+    "semester_12/lecture_84_quantum_hardware/quantum_characterization/README.md": {
+        "name": "Quantum Characterization",
+        "problem": "Characterizes quantum hardware properties like gate fidelities, coherence times, and error rates, providing detailed understanding of quantum system performance and limitations.",
+        "intuition": "Like characterizing hardware: Quantum Characterization is like characterizing classical hardware - you measure performance (gate fidelities), reliability (error rates), and limitations (coherence times) - just as you characterize CPUs, you characterize quantum processors to understand their capabilities.",
+        "inputs": "Quantum hardware, characterization protocols, measurement data, test sequences, analysis tools.",
+        "outputs": "Characterization results, gate fidelities, error rates, coherence times, performance metrics, hardware reports.",
+        "steps": [
+            "Design: design characterization experiments.",
+            "Execute: execute test sequences.",
+            "Measure: measure quantum states and operations.",
+            "Collect: collect measurement data.",
+            "Analyze: analyze data for hardware properties.",
+            "Calculate: calculate fidelities and error rates.",
+            "Model: model hardware errors.",
+            "Report: report characterization results.",
+            "Validate: validate characterization accuracy.",
+            "Update: update hardware models."
+        ],
+        "example": "Quantum Characterization: hardware: 5-qubit processor → test: randomized benchmarking → measure: gate fidelities → analyze: T1=100μs, T2=50μs, gate error=0.1% → result: hardware characterized → Quantum Characterization successful.",
+        "time_complexity": "O(e·m·a) where e is experiments, m is measurements, a is analysis time (characterization process).",
+        "space_complexity": "O(d + m) where d is data storage, m is model storage (characterization data, error models).",
+        "strengths": [
+            "Understanding: provides detailed understanding of quantum hardware.",
+            "Optimization: enables optimization based on hardware properties.",
+            "Reliability: improves reliability through hardware knowledge."
+        ],
+        "weaknesses": [
+            "Time: characterization takes time.",
+            "Complexity: characterization can be complex.",
+            "Variability: hardware properties may vary over time."
+        ],
+        "alternatives": ["No Characterization", "Basic Testing", "Partial Characterization", "Continuous Characterization"],
+        "explanation": "Characterizes quantum hardware properties like gate fidelities, coherence times, and error rates, providing detailed understanding of quantum system performance and limitations."
+    },
+    "semester_12/lecture_84_quantum_hardware/quantum_control_systems/README.md": {
+        "name": "Quantum Control Systems",
+        "problem": "Designs and implements control systems for quantum hardware, managing qubit manipulation, gate operations, and system coordination to enable accurate quantum computation.",
+        "intuition": "Like control systems for quantum: Quantum Control Systems are like control systems for machines but for quantum hardware - you control qubits (like controlling machines), coordinate operations (like coordinating machines), and ensure accuracy (like ensuring machines work correctly) - just as control systems manage machines, quantum control systems manage quantum hardware.",
+        "inputs": "Control specifications, gate requirements, qubit states, control pulses, feedback signals, system parameters.",
+        "outputs": "Controlled quantum operations, gate sequences, system coordination, accurate operations, control signals.",
+        "steps": [
+            "Specify: specify quantum operations to perform.",
+            "Design: design control system architecture.",
+            "Generate: generate control pulses.",
+            "Calibrate: calibrate control parameters.",
+            "Execute: execute control sequences.",
+            "Monitor: monitor qubit responses.",
+            "Feedback: use feedback for correction.",
+            "Coordinate: coordinate multiple qubits.",
+            "Optimize: optimize control performance.",
+            "Validate: validate control accuracy."
+        ],
+        "example": "Quantum Control Systems: operation: CNOT gate → design: control system → generate: control pulses → calibrate: adjust parameters → execute: apply pulses → monitor: measure fidelity → result: 99.9% gate fidelity → Quantum Control Systems operational.",
+        "time_complexity": "O(p + c + e) where p is pulse generation, c is calibration, e is execution time (control operations).",
+        "space_complexity": "O(s + p) where s is system storage, p is pulse storage (control system data).",
+        "strengths": [
+            "Precision: enables precise quantum operations.",
+            "Coordination: coordinates complex quantum operations.",
+            "Reliability: improves reliability through control."
+        ],
+        "weaknesses": [
+            "Complexity: quantum control systems are complex.",
+            "Calibration: requires careful calibration.",
+            "Noise: control noise affects operations."
+        ],
+        "alternatives": ["Manual Control", "Basic Control", "Open-Loop Control", "Advanced Feedback Control"],
+        "explanation": "Designs and implements control systems for quantum hardware, managing qubit manipulation, gate operations, and system coordination to enable accurate quantum computation."
+    },
+    "semester_12/lecture_84_quantum_hardware/quantum_processors/README.md": {
+        "name": "Quantum Processors",
+        "problem": "Designs and implements quantum processors (quantum processing units), the hardware that executes quantum algorithms, managing qubits, gates, and quantum operations.",
+        "intuition": "Like CPUs for quantum: Quantum Processors are like CPUs but for quantum computing - they're the hardware that runs quantum programs (like CPUs run programs), execute quantum gates (like CPUs execute instructions), and process quantum information - just as CPUs are the heart of classical computers, quantum processors are the heart of quantum computers.",
+        "inputs": "Qubit technologies, gate specifications, connectivity requirements, control systems, quantum algorithms.",
+        "outputs": "Quantum processors, qubit arrays, gate implementations, quantum operations, processed quantum states.",
+        "steps": [
+            "Design: design quantum processor architecture.",
+            "Fabricate: fabricate qubits and control systems.",
+            "Initialize: initialize qubits to known states.",
+            "Execute: execute quantum gates.",
+            "Manipulate: manipulate quantum states.",
+            "Measure: measure quantum states.",
+            "Control: control qubit operations.",
+            "Coordinate: coordinate multi-qubit operations.",
+            "Optimize: optimize processor performance.",
+            "Scale: scale to larger processors."
+        ],
+        "example": "Quantum Processors: design: 5-qubit processor → fabricate: superconducting qubits → initialize: |0⟩ states → execute: quantum gates → measure: quantum states → result: quantum processor operational → Quantum Processors successful.",
+        "time_complexity": "O(g) where g is number of gates (gate execution time, typically O(1) per gate).",
+        "space_complexity": "O(n) where n is number of qubits (quantum state space, exponential in qubits).",
+        "strengths": [
+            "Execution: enables execution of quantum algorithms.",
+            "Scalability: can scale to larger processors.",
+            "Flexibility: supports various quantum algorithms."
+        ],
+        "weaknesses": [
+            "Noise: quantum noise limits processor performance.",
+            "Coherence: limited coherence times.",
+            "Scaling: scaling to many qubits is challenging."
+        ],
+        "alternatives": ["Quantum Simulators", "Classical Simulation", "Quantum Annealers", "Specialized Quantum"],
+        "explanation": "Designs and implements quantum processors (quantum processing units), the hardware that executes quantum algorithms, managing qubits, gates, and quantum operations."
+    },
+    "semester_12/lecture_84_quantum_hardware/quantum_readout/README.md": {
+        "name": "Quantum Readout",
+        "problem": "Reads out quantum states by measuring qubits, converting quantum information into classical information, enabling extraction of results from quantum computations.",
+        "intuition": "Like reading quantum states: Quantum Readout is like reading the state of qubits - you measure qubits (like reading sensors) to get classical information (0 or 1) from quantum states - just as you read sensors to get information, you read qubits to get quantum computation results.",
+        "inputs": "Quantum states, qubits, measurement bases, readout systems, measurement protocols.",
+        "outputs": "Measurement results, classical bits, quantum state information, readout data, computation results.",
+        "steps": [
+            "Prepare: prepare qubit in quantum state.",
+            "Select: select measurement basis.",
+            "Measure: measure qubit state.",
+            "Read: read measurement signal.",
+            "Convert: convert to classical bit.",
+            "Process: process measurement results.",
+            "Repeat: repeat measurements for statistics.",
+            "Analyze: analyze measurement data.",
+            "Extract: extract quantum information.",
+            "Report: report measurement results."
+        ],
+        "example": "Quantum Readout: state: |ψ⟩ = α|0⟩ + β|1⟩ → measure: measure in Z basis → read: readout signal → convert: get 0 or 1 → repeat: 1000 measurements → analyze: estimate |α|² and |β|² → result: quantum state readout → Quantum Readout successful.",
+        "time_complexity": "O(m) where m is number of measurements (readout time per measurement, typically O(1)).",
+        "space_complexity": "O(1) per qubit (readout system storage).",
+        "strengths": [
+            "Extraction: enables extraction of quantum computation results.",
+            "Information: provides information about quantum states.",
+            "Essential: essential for quantum computing."
+        ],
+        "weaknesses": [
+            "Destruction: measurement destroys quantum superposition.",
+            "Noise: readout noise affects measurement accuracy.",
+            "Fidelity: readout fidelity may be imperfect."
+        ],
+        "alternatives": ["No Measurement", "Weak Measurement", "Quantum Non-Demolition", "Improved Readout"],
+        "explanation": "Reads out quantum states by measuring qubits, converting quantum information into classical information, enabling extraction of results from quantum computations."
+    },
+    "semester_12/lecture_85_quantum_networking/quantum_internet/README.md": {
+        "name": "Quantum Internet",
+        "problem": "Builds global quantum network infrastructure connecting quantum computers and devices, enabling distributed quantum computing, quantum communication, and quantum applications over long distances.",
+        "intuition": "Like internet but quantum: Quantum Internet is like the internet but for quantum information - you connect quantum devices (like connecting computers) to share quantum information and compute together over long distances - just as the internet connects computers globally, quantum internet connects quantum devices globally.",
+        "inputs": "Quantum nodes, quantum channels, entanglement distribution, quantum repeaters, network protocols, quantum applications.",
+        "outputs": "Quantum network, distributed quantum systems, quantum communication, entangled states, network connectivity, quantum services.",
+        "steps": [
+            "Deploy: deploy quantum nodes globally.",
+            "Connect: connect nodes with quantum channels.",
+            "Distribute: distribute entanglement between nodes.",
+            "Route: route quantum information through network.",
+            "Teleport: use quantum teleportation for communication.",
+            "Repeat: use quantum repeaters for long distances.",
+            "Protocol: implement quantum network protocols.",
+            "Secure: implement quantum cryptography.",
+            "Scale: scale network to more nodes.",
+            "Enable: enable distributed quantum applications."
+        ],
+        "example": "Quantum Internet: nodes: quantum computers in 3 cities → connect: quantum fiber links → distribute: create entanglement → route: route qubits → teleport: teleport quantum states → result: global quantum network → Quantum Internet operational.",
+        "time_complexity": "O(d + r + t) where d is distance, r is routing time, t is teleportation time (network operations).",
+        "space_complexity": "O(n) where n is number of nodes (network topology, entanglement storage).",
+        "strengths": [
+            "Global: enables global quantum connectivity.",
+            "Distributed: enables distributed quantum computing.",
+            "Secure: enables secure quantum communication."
+        ],
+        "weaknesses": [
+            "Infrastructure: requires extensive quantum infrastructure.",
+            "Distance: limited by quantum channel distance and loss.",
+            "Complexity: quantum internet is complex to build."
+        ],
+        "alternatives": ["Local Quantum Networks", "Classical Internet", "Hybrid Networks", "Quantum Repeaters"],
+        "explanation": "Builds global quantum network infrastructure connecting quantum computers and devices, enabling distributed quantum computing, quantum communication, and quantum applications over long distances."
+    },
+    "semester_12/lecture_85_quantum_networking/quantum_repeaters/README.md": {
+        "name": "Quantum Repeaters",
+        "problem": "Extends quantum communication distance by creating entanglement between distant nodes through intermediate nodes, enabling long-distance quantum communication and quantum networks.",
+        "intuition": "Like signal repeaters: Quantum Repeaters are like signal repeaters but for quantum information - you use intermediate nodes (repeaters) to extend the range of quantum communication, creating entanglement over long distances - just as repeaters extend radio range, quantum repeaters extend quantum communication range.",
+        "inputs": "Quantum channels, intermediate nodes, entanglement sources, quantum memories, protocols.",
+        "outputs": "Extended quantum links, long-distance entanglement, quantum communication, network connectivity.",
+        "steps": [
+            "Deploy: deploy quantum repeaters along path.",
+            "Create: create local entanglement at each segment.",
+            "Store: store entanglement in quantum memories.",
+            "Swap: perform entanglement swapping.",
+            "Extend: extend entanglement to next segment.",
+            "Chain: chain entanglement swaps.",
+            "Establish: establish end-to-end entanglement.",
+            "Use: use for quantum communication.",
+            "Maintain: maintain entanglement.",
+            "Scale: scale to longer distances."
+        ],
+        "example": "Quantum Repeaters: distance: 1000 km → repeaters: deploy 10 repeaters → create: local entanglement → swap: entanglement swapping → chain: chain swaps → result: entanglement over 1000 km → Quantum Repeaters successful.",
+        "time_complexity": "O(r·s) where r is repeaters, s is swap time (repeater operations).",
+        "space_complexity": "O(r + m) where r is repeater storage, m is memory storage (quantum memories).",
+        "strengths": [
+            "Distance: extends quantum communication distance.",
+            "Networking: enables long-distance quantum networks.",
+            "Scalability: enables scaling quantum networks."
+        ],
+        "weaknesses": [
+            "Complexity: quantum repeaters are complex.",
+            "Memory: requires quantum memories.",
+            "Loss: entanglement loss affects performance."
+        ],
+        "alternatives": ["Direct Transmission", "Quantum Satellites", "Hybrid Approaches", "No Repeaters"],
+        "explanation": "Extends quantum communication distance by creating entanglement between distant nodes through intermediate nodes, enabling long-distance quantum communication and quantum networks."
+    },
+    "semester_12/lecture_85_quantum_networking/quantum_routing/README.md": {
+        "name": "Quantum Routing",
+        "problem": "Routes quantum information through quantum networks, determining optimal paths for quantum communication and managing quantum data flow in distributed quantum systems.",
+        "intuition": "Like routing for quantum: Quantum Routing is like network routing but for quantum information - you find the best path (like routing packets) to send quantum information through a quantum network - just as routers route internet traffic, quantum routers route quantum information.",
+        "inputs": "Quantum networks, routing tables, network topology, quantum data, routing algorithms, path metrics.",
+        "outputs": "Routed quantum information, optimal paths, network connectivity, efficient routing, quantum data delivery.",
+        "steps": [
+            "Discover: discover network topology.",
+            "Calculate: calculate routing paths.",
+            "Select: select optimal path.",
+            "Route: route quantum information along path.",
+            "Teleport: use quantum teleportation if needed.",
+            "Manage: manage quantum data flow.",
+            "Optimize: optimize routing for efficiency.",
+            "Handle: handle network changes.",
+            "Monitor: monitor routing performance.",
+            "Adapt: adapt to network conditions."
+        ],
+        "example": "Quantum Routing: network: 5 quantum nodes → topology: discover connections → calculate: shortest path → route: route qubit from A to E via B, C, D → teleport: teleport at each hop → result: qubit routed successfully → Quantum Routing successful.",
+        "time_complexity": "O(n² + r) where n is nodes, r is routing time (path calculation and routing).",
+        "space_complexity": "O(n + r) where n is network topology, r is routing tables (routing data).",
+        "strengths": [
+            "Efficiency: enables efficient quantum communication.",
+            "Scalability: supports scalable quantum networks.",
+            "Flexibility: adapts to network conditions."
+        ],
+        "weaknesses": [
+            "Complexity: quantum routing is complex.",
+            "Loss: quantum information loss affects routing.",
+            "Topology: network topology affects routing efficiency."
+        ],
+        "alternatives": ["Direct Links", "Fixed Routing", "Classical Routing", "Hybrid Routing"],
+        "explanation": "Routes quantum information through quantum networks, determining optimal paths for quantum communication and managing quantum data flow in distributed quantum systems."
+    },
+    "semester_12/lecture_86_quantum_security/quantum_attacks/README.md": {
+        "name": "Quantum Attacks",
+        "problem": "Studies and analyzes attacks on cryptographic systems using quantum computers, understanding threats posed by quantum computing to current encryption methods.",
+        "intuition": "Like attacks using quantum: Quantum Attacks are like cyber attacks but using quantum computers - quantum computers can break some encryption (like RSA) that classical computers can't - just as new weapons change warfare, quantum computers change the security landscape, and we need to understand these threats.",
+        "inputs": "Cryptographic systems, quantum algorithms, attack methods, quantum computers, security analysis.",
+        "outputs": "Attack analysis, threat assessments, vulnerability identification, security recommendations, attack demonstrations.",
+        "steps": [
+            "Identify: identify cryptographic systems to analyze.",
+            "Analyze: analyze vulnerability to quantum attacks.",
+            "Design: design quantum attack algorithms.",
+            "Implement: implement attacks on quantum computers.",
+            "Execute: execute quantum attacks.",
+            "Evaluate: evaluate attack effectiveness.",
+            "Assess: assess security impact.",
+            "Recommend: recommend countermeasures.",
+            "Mitigate: implement mitigations.",
+            "Monitor: monitor for new attack methods."
+        ],
+        "example": "Quantum Attacks: system: RSA encryption → analyze: vulnerable to Shor's algorithm → design: Shor's attack → implement: on quantum computer → execute: factor large number → result: RSA broken → assess: need post-quantum crypto → Quantum Attacks analysis complete.",
+        "time_complexity": "O(poly(log N)) for Shor's algorithm where N is key size (exponential speedup over classical).",
+        "space_complexity": "O(log N) where N is key size (qubits needed).",
+        "strengths": [
+            "Understanding: provides understanding of quantum threats.",
+            "Preparedness: enables preparation for quantum threats.",
+            "Security: improves security through threat awareness."
+        ],
+        "weaknesses": [
+            "Threat: demonstrates threats to current cryptography.",
+            "Resources: requires quantum computing resources.",
+            "Evolution: attack methods continue to evolve."
+        ],
+        "alternatives": ["No Analysis", "Classical Attacks", "Theoretical Analysis", "Post-Quantum Migration"],
+        "explanation": "Studies and analyzes attacks on cryptographic systems using quantum computers, understanding threats posed by quantum computing to current encryption methods."
     }
 }
 
