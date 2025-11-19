@@ -6791,6 +6791,198 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Traditional Contracts", "Centralized Automation", "Off-chain Oracles", "Layer 2 Solutions"],
         "explanation": "Executes programmable code automatically on blockchain when conditions are met, enabling trustless automation of agreements and decentralized applications without intermediaries."
+    },
+    "semester_07/lecture_46_blockchain_advanced/blockchain_scalability/README.md": {
+        "name": "Blockchain Scalability",
+        "problem": "Addresses blockchain's limited transaction throughput and high latency by implementing solutions that increase transactions per second while maintaining decentralization and security.",
+        "intuition": "Like a highway bottleneck: blockchain can only process a few transactions per second (like a single-lane road) - scalability solutions add more lanes (layer 2), faster processing (sharding), or off-ramps (sidechains) to handle more traffic without compromising security or decentralization.",
+        "inputs": "Blockchain transactions, scalability solution type (layer 2, sharding, sidechains, etc.), network capacity.",
+        "outputs": "Increased transaction throughput, reduced latency, maintained security and decentralization.",
+        "steps": [
+            "Identify bottleneck: analyze current blockchain limitations (throughput, latency, cost).",
+            "Choose solution: select scalability approach (layer 2, sharding, larger blocks, etc.).",
+            "Implement: deploy scalability solution (rollups, state channels, sidechains, etc.).",
+            "Batch transactions: group multiple transactions together (reduce on-chain load).",
+            "Process off-chain: execute transactions off main chain when possible.",
+            "Settle on-chain: periodically commit results to main blockchain (security anchor).",
+            "Verify: ensure scalability solution maintains security guarantees.",
+            "Monitor: track performance improvements (TPS, latency, cost reduction)."
+        ],
+        "example": "Ethereum: 15 TPS → implement Layer 2 rollup → batch 1000 transactions off-chain → process in rollup → commit single proof to Ethereum → effectively 2000+ TPS → 100x improvement while maintaining security.",
+        "time_complexity": "Varies by solution: O(1) per transaction in layer 2 (batched), O(n) for sharding where n is shard size.",
+        "space_complexity": "O(b) where b is batch size (layer 2), O(s) for sharding where s is number of shards.",
+        "strengths": [
+            "Higher throughput: enables thousands of transactions per second.",
+            "Lower costs: reduces transaction fees through batching and off-chain processing.",
+            "Faster confirmation: reduces transaction confirmation time."
+        ],
+        "weaknesses": [
+            "Complexity: adds complexity to blockchain architecture.",
+            "Trade-offs: may require trade-offs between security, decentralization, and scalability.",
+            "Compatibility: requires coordination between main chain and scalability solution."
+        ],
+        "alternatives": ["Layer 2 Solutions", "Sharding", "Sidechains", "Larger Blocks", "Off-chain Processing"],
+        "explanation": "Addresses blockchain's limited transaction throughput and high latency by implementing solutions that increase transactions per second while maintaining decentralization and security."
+    },
+    "semester_07/lecture_46_blockchain_advanced/cross_chain/README.md": {
+        "name": "Cross-Chain Interoperability",
+        "problem": "Enables communication and value transfer between different blockchain networks, allowing users to interact with multiple blockchains seamlessly without intermediaries.",
+        "intuition": "Like international banking: different blockchains are like different countries with their own currencies - cross-chain solutions are like currency exchanges and international wire transfers, allowing you to move value and data between blockchains (like converting dollars to euros and sending them).",
+        "inputs": "Source blockchain, target blockchain, assets to transfer, cross-chain protocol.",
+        "outputs": "Assets transferred to target blockchain, cross-chain transaction proof, interoperability achieved.",
+        "steps": [
+            "Lock assets: lock assets on source blockchain (prevent double-spending).",
+            "Generate proof: create cryptographic proof of locked assets.",
+            "Relay proof: relay proof to target blockchain (via bridge, relayers, or oracles).",
+            "Verify proof: target blockchain verifies proof of locked assets.",
+            "Mint/Unlock: mint equivalent assets on target blockchain or unlock on source.",
+            "Execute: perform desired operation on target blockchain.",
+            "Monitor: track cross-chain transaction status and completion.",
+            "Settle: finalize transaction when both chains confirm."
+        ],
+        "example": "User wants to use Ethereum DApp but has Bitcoin → lock 1 BTC on Bitcoin → generate proof → relay to Ethereum → verify proof → mint 1 WBTC (wrapped Bitcoin) on Ethereum → use WBTC in Ethereum DApp → later, burn WBTC on Ethereum → unlock BTC on Bitcoin.",
+        "time_complexity": "O(1) per transaction, but includes relay time between chains (minutes to hours depending on block times).",
+        "space_complexity": "O(1) per cross-chain transaction (proofs stored on both chains).",
+        "strengths": [
+            "Interoperability: enables seamless interaction between different blockchains.",
+            "Liquidity: allows assets to move between chains, increasing liquidity.",
+            "Flexibility: users can choose best blockchain for each use case."
+        ],
+        "weaknesses": [
+            "Security risks: bridges and cross-chain protocols are attack targets.",
+            "Complexity: requires coordination between multiple blockchains.",
+            "Trust: some solutions require trusted intermediaries or validators."
+        ],
+        "alternatives": ["Atomic Swaps", "Bridges", "Relay Chains", "Wrapped Tokens", "Centralized Exchanges"],
+        "explanation": "Enables communication and value transfer between different blockchain networks, allowing users to interact with multiple blockchains seamlessly without intermediaries."
+    },
+    "semester_07/lecture_46_blockchain_advanced/cryptocurrency_wallets/README.md": {
+        "name": "Cryptocurrency Wallets",
+        "problem": "Manages cryptographic keys and enables users to send, receive, and store cryptocurrencies securely, providing interface between users and blockchain networks.",
+        "intuition": "Like a digital wallet: instead of holding physical cash and cards, a crypto wallet holds your private keys (like passwords) that prove you own your cryptocurrency - the wallet lets you check your balance, send coins, and receive coins, just like a physical wallet but for digital money.",
+        "inputs": "Private keys (or seed phrase), blockchain network, transaction requests, recipient addresses.",
+        "outputs": "Signed transactions, wallet balance, transaction history, public addresses.",
+        "steps": [
+            "Generate keys: create public-private key pair (or derive from seed phrase).",
+            "Store securely: encrypt and store private keys (hardware, software, or paper wallet).",
+            "Derive addresses: generate receiving addresses from public key.",
+            "Check balance: query blockchain for address balance and transaction history.",
+            "Create transaction: construct transaction with recipient, amount, fees.",
+            "Sign transaction: sign transaction with private key (proves ownership).",
+            "Broadcast: send signed transaction to blockchain network.",
+            "Monitor: track transaction status until confirmed on blockchain."
+        ],
+        "example": "User opens wallet app → wallet generates key pair from seed phrase → displays address (0x123...) → user receives 1 ETH → wallet queries blockchain → shows balance: 1 ETH → user sends 0.5 ETH to friend → wallet signs transaction → broadcasts → transaction confirmed → balance: 0.5 ETH.",
+        "time_complexity": "O(1) for key operations, O(1) for transaction creation, O(block_time) for confirmation.",
+        "space_complexity": "O(1) for key storage (constant size keys), O(n) for transaction history where n is number of transactions.",
+        "strengths": [
+            "Security: private keys enable secure ownership and transactions.",
+            "Control: users have full control over their funds (no bank needed).",
+            "Portability: wallets can be used across devices and platforms."
+        ],
+        "weaknesses": [
+            "Key management: losing private keys means losing funds permanently.",
+            "User experience: managing keys can be complex for non-technical users.",
+            "Security risks: wallets can be compromised if keys are exposed."
+        ],
+        "alternatives": ["Hardware Wallets", "Software Wallets", "Paper Wallets", "Custodial Wallets", "Multi-signature Wallets"],
+        "explanation": "Manages cryptographic keys and enables users to send, receive, and store cryptocurrencies securely, providing interface between users and blockchain networks."
+    },
+    "semester_07/lecture_46_blockchain_advanced/decentralized_storage/README.md": {
+        "name": "Decentralized Storage",
+        "problem": "Stores data across distributed network of nodes instead of centralized servers, providing censorship-resistant, resilient, and cost-effective data storage.",
+        "intuition": "Like a distributed filing cabinet: instead of storing files in one office (centralized server), files are split into pieces and stored across many offices (nodes) worldwide - even if some offices close, your files are still accessible from other offices, and no single office controls your data.",
+        "inputs": "Data to store, storage network (IPFS, Arweave, Filecoin, etc.), redundancy parameters.",
+        "outputs": "Content identifier (CID), distributed storage across nodes, retrieval capability.",
+        "steps": [
+            "Split data: divide data into chunks or pieces (for redundancy and distribution).",
+            "Encrypt (optional): encrypt data chunks for privacy.",
+            "Generate hash: compute content identifier (hash) for each chunk.",
+            "Distribute: upload chunks to multiple storage nodes across network.",
+            "Verify: verify chunks are stored correctly (proof of storage).",
+            "Store metadata: record chunk locations and content identifiers.",
+            "Retrieve: fetch chunks using content identifier when needed.",
+            "Reassemble: reconstruct original data from retrieved chunks."
+        ],
+        "example": "Upload 1GB file → split into 100 chunks (10MB each) → hash each chunk → distribute to 50 nodes (2 copies each) → store metadata with content IDs → later, request file → retrieve chunks from nodes → verify hashes → reassemble → original file recovered.",
+        "time_complexity": "O(n) to split/upload where n is data size, O(log n) to retrieve (distributed lookup).",
+        "space_complexity": "O(n) for data storage, O(r·n) with redundancy factor r (multiple copies).",
+        "strengths": [
+            "Censorship resistance: no single entity can remove data.",
+            "Resilience: data survives even if many nodes fail.",
+            "Cost-effective: can be cheaper than centralized cloud storage."
+        ],
+        "weaknesses": [
+            "Retrieval speed: may be slower than centralized storage (depends on network).",
+            "Incentive alignment: requires economic incentives for nodes to store data.",
+            "Data availability: relies on nodes staying online and accessible."
+        ],
+        "alternatives": ["Centralized Cloud Storage", "IPFS", "Arweave", "Filecoin", "Storj"],
+        "explanation": "Stores data across distributed network of nodes instead of centralized servers, providing censorship-resistant, resilient, and cost-effective data storage."
+    },
+    "semester_07/lecture_46_blockchain_advanced/layer2_solutions/README.md": {
+        "name": "Layer 2 Solutions",
+        "problem": "Processes transactions off the main blockchain (layer 1) and periodically settles results on-chain, dramatically increasing throughput and reducing costs while maintaining security.",
+        "intuition": "Like a fast express lane: the main highway (layer 1) is slow and expensive, so layer 2 creates a parallel express lane where many transactions happen quickly and cheaply - periodically, the express lane 'merges' back to the highway, committing all the transactions at once (like a summary report).",
+        "inputs": "Transactions, layer 2 protocol (rollups, state channels, sidechains), main blockchain.",
+        "outputs": "Processed transactions, batch proofs, settled state on main chain.",
+        "steps": [
+            "Deposit: users deposit funds from layer 1 to layer 2 (lock on main chain).",
+            "Process off-chain: execute transactions on layer 2 (fast, cheap).",
+            "Batch: group multiple layer 2 transactions together.",
+            "Generate proof: create cryptographic proof of batch validity (for rollups).",
+            "Submit to layer 1: periodically submit batch and proof to main blockchain.",
+            "Verify: layer 1 verifies proof (ensures layer 2 transactions are valid).",
+            "Settle: update layer 1 state based on verified batch.",
+            "Withdraw: users can withdraw funds from layer 2 back to layer 1."
+        ],
+        "example": "User deposits 1 ETH to Optimism (Layer 2) → executes 100 transactions on Optimism (instant, $0.01 each) → Optimism batches transactions → generates proof → submits batch to Ethereum → Ethereum verifies proof → settles batch → user withdraws remaining ETH to Ethereum → all transactions secured by Ethereum.",
+        "time_complexity": "O(1) per transaction on layer 2, O(b) to verify batch where b is batch size.",
+        "space_complexity": "O(b) for batch storage, O(1) per transaction on layer 2 (batched on layer 1).",
+        "strengths": [
+            "High throughput: enables thousands of transactions per second.",
+            "Low costs: dramatically reduces transaction fees.",
+            "Security: inherits security from layer 1 through proofs or checkpoints."
+        ],
+        "weaknesses": [
+            "Withdrawal delays: withdrawing to layer 1 may require waiting period.",
+            "Complexity: adds complexity to user experience and development.",
+            "Centralization risks: some solutions may have centralized components."
+        ],
+        "alternatives": ["Optimistic Rollups", "ZK-Rollups", "State Channels", "Sidechains", "Plasma"],
+        "explanation": "Processes transactions off the main blockchain (layer 1) and periodically settles results on-chain, dramatically increasing throughput and reducing costs while maintaining security."
+    },
+    "semester_07/lecture_46_blockchain_advanced/nft_standards/README.md": {
+        "name": "NFT Standards",
+        "problem": "Defines standardized interfaces and metadata formats for non-fungible tokens (NFTs), enabling interoperability, composability, and consistent behavior across NFT marketplaces and applications.",
+        "intuition": "Like product barcodes: NFTs need standard formats (like barcodes on products) so different systems can understand and trade them - NFT standards define how to create, transfer, and query NFTs, ensuring they work the same way everywhere (like how all barcodes follow the same format).",
+        "inputs": "NFT metadata, token ID, owner address, standard interface (ERC-721, ERC-1155, etc.).",
+        "outputs": "Standardized NFT contract, token with unique ID, metadata URI, transferable asset.",
+        "steps": [
+            "Choose standard: select NFT standard (ERC-721 for unique, ERC-1155 for semi-fungible).",
+            "Implement interface: create smart contract implementing standard functions (mint, transfer, etc.).",
+            "Define metadata: structure metadata (name, description, image, attributes) following standard format.",
+            "Store metadata: store metadata off-chain (IPFS) or on-chain, reference via URI.",
+            "Mint token: create new NFT with unique token ID and assign to owner.",
+            "Transfer: implement transfer function following standard (safeTransferFrom, etc.).",
+            "Query: enable standard queries (ownerOf, tokenURI, balanceOf).",
+            "List: make NFT discoverable on marketplaces (standard interface enables compatibility)."
+        ],
+        "example": "Create NFT collection → implement ERC-721 standard → mint token #1 with metadata (name: 'Cool Art', image: ipfs://.../art1.png) → assign to user → user transfers to marketplace → marketplace reads standard interface → displays NFT → user sells → buyer receives NFT → all using standard functions.",
+        "time_complexity": "O(1) for standard operations (mint, transfer, query), O(1) for metadata retrieval.",
+        "space_complexity": "O(1) per NFT (token ID and owner), O(m) for metadata where m is metadata size.",
+        "strengths": [
+            "Interoperability: NFTs work across all compatible marketplaces and wallets.",
+            "Composability: standard interface enables building on top of NFTs.",
+            "Consistency: predictable behavior across different implementations."
+        ],
+        "weaknesses": [
+            "Flexibility: standards may limit customization options.",
+            "Evolution: standards evolve, requiring updates for new features.",
+            "Metadata: off-chain metadata may become unavailable if storage fails."
+        ],
+        "alternatives": ["ERC-721", "ERC-1155", "ERC-998", "Custom Standards", "On-chain Metadata"],
+        "explanation": "Defines standardized interfaces and metadata formats for non-fungible tokens (NFTs), enabling interoperability, composability, and consistent behavior across NFT marketplaces and applications."
     }
 }
 
