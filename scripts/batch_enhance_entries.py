@@ -9643,6 +9643,516 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Manual Deployment", "Docker Swarm", "Nomad", "Cloud Managed Services"],
         "explanation": "Automates deployment, scaling, and management of containerized applications across clusters of machines, handling scheduling, health monitoring, load balancing, and resource allocation."
+    },
+    "semester_09/lecture_61_cloud_native/config_management/README.md": {
+        "name": "Configuration Management",
+        "problem": "Centralizes and manages application configuration across environments, enabling dynamic configuration updates, environment-specific settings, and secure configuration distribution.",
+        "intuition": "Like a master control panel: configuration management is like a master control panel for all your application settings - instead of hardcoding settings in code (like wiring switches directly), you store them in a central place (configuration store) and applications read from there - you can change settings (like turning on/off features) without changing code, and different environments (dev, staging, prod) can have different settings - it's like having a remote control for your application settings.",
+        "inputs": "Configuration values, environment variables, secrets, configuration files, update requests.",
+        "outputs": "Managed configuration, environment-specific settings, dynamic updates, secure configuration.",
+        "steps": [
+            "Define configuration: identify configuration parameters (database URLs, API keys, feature flags).",
+            "Store centrally: store configuration in centralized system (config server, environment variables, secrets manager).",
+            "Organize: organize configuration by environment, application, or service.",
+            "Secure: encrypt sensitive configuration (secrets, passwords, API keys).",
+            "Distribute: distribute configuration to applications at runtime.",
+            "Update: allow dynamic configuration updates without application restart.",
+            "Version: version configuration changes for rollback capability.",
+            "Validate: validate configuration values and schema.",
+            "Monitor: monitor configuration usage and changes.",
+            "Audit: audit configuration access and modifications."
+        ],
+        "example": "Config management: application needs database URL, API key, feature flags → store in config server → dev environment: localhost DB, test API key, all features on → prod environment: production DB, real API key, selective features → application reads config at startup → update: change feature flag → application reloads config → no restart needed → config managed.",
+        "time_complexity": "O(1) for config retrieval, O(n) for updates where n is number of applications.",
+        "space_complexity": "O(c) where c is configuration size (storage for config values).",
+        "strengths": [
+            "Flexibility: enables dynamic configuration without code changes.",
+            "Centralization: centralizes configuration management.",
+            "Security: provides secure storage and distribution of secrets."
+        ],
+        "weaknesses": [
+            "Complexity: adds complexity to application architecture.",
+            "Dependency: applications depend on configuration service availability.",
+            "Overhead: configuration retrieval adds latency."
+        ],
+        "alternatives": ["Hardcoded Configuration", "Environment Variables", "Configuration Files", "Feature Flags"],
+        "explanation": "Centralizes and manages application configuration across environments, enabling dynamic configuration updates, environment-specific settings, and secure configuration distribution."
+    },
+    "semester_09/lecture_61_cloud_native/function_as_service/README.md": {
+        "name": "Function as a Service (FaaS)",
+        "problem": "Executes code in stateless functions that are triggered by events, automatically managing infrastructure, scaling, and resource allocation, enabling serverless computing.",
+        "intuition": "Like a vending machine for code: Function as a Service is like a vending machine - you put in a request (coin/event), the machine (cloud) automatically prepares and serves your item (executes function), and you don't need to manage the machine (infrastructure) - the machine handles everything: getting the item ready (scaling), serving it (execution), and cleaning up (resource management) - you only pay for what you use (per invocation), not for keeping the machine running.",
+        "inputs": "Function code, trigger events, input data, execution context, resource limits.",
+        "outputs": "Function execution results, triggered functions, scaled execution, serverless output.",
+        "steps": [
+            "Write function: write stateless function code (handler function).",
+            "Deploy: deploy function to FaaS platform (AWS Lambda, Azure Functions, Google Cloud Functions).",
+            "Configure trigger: configure event triggers (HTTP, queue, database, schedule).",
+            "Wait: function waits for trigger event (no running infrastructure).",
+            "Trigger: event triggers function execution.",
+            "Scale: platform automatically scales to handle concurrent invocations.",
+            "Execute: platform executes function with provided input.",
+            "Return: function returns result.",
+            "Cleanup: platform automatically cleans up resources after execution.",
+            "Charge: platform charges based on execution time and resources used."
+        ],
+        "example": "FaaS: image processing function → trigger: S3 upload event → S3 uploads image → triggers Lambda function → Lambda: resizes image → stores in S3 → returns URL → automatic scaling: 100 images uploaded → 100 functions execute in parallel → pay: only for execution time → no server management → FaaS operational.",
+        "time_complexity": "O(f) where f is function execution time (varies by function logic).",
+        "space_complexity": "O(m) where m is memory allocated per function execution (temporary, cleaned after execution).",
+        "strengths": [
+            "No infrastructure: no need to manage servers or infrastructure.",
+            "Auto-scaling: automatically scales to handle any load.",
+            "Cost-effective: pay only for actual execution time."
+        ],
+        "weaknesses": [
+            "Cold starts: first invocation may have latency (cold start).",
+            "Time limits: functions have execution time limits.",
+            "Stateless: functions must be stateless (no persistent state)."
+        ],
+        "alternatives": ["Traditional Servers", "Containers", "Virtual Machines", "Serverless Containers"],
+        "explanation": "Executes code in stateless functions that are triggered by events, automatically managing infrastructure, scaling, and resource allocation, enabling serverless computing."
+    },
+    "semester_09/lecture_61_cloud_native/secrets_management/README.md": {
+        "name": "Secrets Management",
+        "problem": "Securely stores, manages, and distributes sensitive information (passwords, API keys, certificates, tokens) to applications, preventing secrets from being exposed in code or configuration files.",
+        "intuition": "Like a bank vault for secrets: secrets management is like a bank vault where you store valuable items (secrets) securely - instead of leaving them lying around (hardcoded in code), you put them in the vault (secrets manager) with proper security (encryption, access control) - when applications need secrets, they request them from the vault (API call) with proper authentication, and the vault gives them access - the vault also tracks who accessed what and when (audit logs).",
+        "inputs": "Secrets (passwords, keys, tokens), access policies, encryption keys, authentication credentials.",
+        "outputs": "Secured secrets, encrypted storage, access-controlled secrets, audit logs.",
+        "steps": [
+            "Store secrets: store secrets in secrets manager (HashiCorp Vault, AWS Secrets Manager, Azure Key Vault).",
+            "Encrypt: encrypt secrets at rest using encryption keys.",
+            "Define policies: define access policies (who can access which secrets).",
+            "Authenticate: applications authenticate to secrets manager.",
+            "Request: applications request secrets via API.",
+            "Authorize: secrets manager checks access policies.",
+            "Retrieve: if authorized, retrieve and decrypt secret.",
+            "Deliver: deliver secret to application securely (in-memory, not logged).",
+            "Rotate: periodically rotate secrets (change passwords, regenerate keys).",
+            "Audit: log all secret access for security auditing."
+        ],
+        "example": "Secrets management: application needs database password → store in Vault → encrypt: AES-256 encryption → policy: only app-service can access → application: authenticates with service account → requests: GET /secret/db-password → Vault: checks policy → authorized → decrypts → returns password → application: uses password (never logged) → audit: access logged → secrets managed securely.",
+        "time_complexity": "O(1) for secret retrieval, O(n) for rotation where n is number of applications using secret.",
+        "space_complexity": "O(s) where s is total secrets size (encrypted storage).",
+        "strengths": [
+            "Security: provides secure storage and distribution of secrets.",
+            "Centralization: centralizes secrets management.",
+            "Auditability: provides audit trails for secret access."
+        ],
+        "weaknesses": [
+            "Dependency: applications depend on secrets manager availability.",
+            "Latency: secret retrieval adds latency to application startup.",
+            "Complexity: requires careful access policy management."
+        ],
+        "alternatives": ["Environment Variables", "Configuration Files", "Hardcoded Secrets", "Encrypted Files"],
+        "explanation": "Securely stores, manages, and distributes sensitive information (passwords, API keys, certificates, tokens) to applications, preventing secrets from being exposed in code or configuration files."
+    },
+    "semester_09/lecture_61_cloud_native/serverless_architecture/README.md": {
+        "name": "Serverless Architecture",
+        "problem": "Builds applications using serverless computing services (FaaS, managed databases, event-driven services) where developers don't manage servers, and the cloud provider handles infrastructure, scaling, and resource management automatically.",
+        "intuition": "Like a fully managed restaurant: serverless architecture is like a fully managed restaurant where you just provide recipes (code) and ingredients (data), and the restaurant (cloud provider) handles everything else - cooking (execution), serving (scaling), cleaning (resource management), and maintenance (infrastructure) - you don't need to hire chefs, waiters, or manage the kitchen (servers) - you just focus on the food (business logic) and pay for what you serve (usage-based pricing).",
+        "inputs": "Application code, event triggers, data, business logic, resource requirements.",
+        "outputs": "Serverless application, auto-scaled services, managed infrastructure, event-driven system.",
+        "steps": [
+            "Design: design application using serverless services (functions, managed databases, event streams).",
+            "Write functions: write stateless functions for business logic.",
+            "Use managed services: use managed services (databases, storage, queues) instead of self-managed.",
+            "Configure triggers: configure event triggers for functions.",
+            "Deploy: deploy to serverless platform (no server provisioning).",
+            "Execute: functions execute when triggered by events.",
+            "Scale: platform automatically scales functions based on load.",
+            "Pay: pay only for actual usage (execution time, storage, requests).",
+            "Monitor: monitor application using serverless monitoring tools.",
+            "Update: update functions without managing infrastructure."
+        ],
+        "example": "Serverless architecture: e-commerce app → API Gateway (managed) → Lambda functions (FaaS) → DynamoDB (managed database) → S3 (managed storage) → EventBridge (managed events) → no servers to manage → auto-scales: 10 requests → 10 functions, 1000 requests → 1000 functions → pay: only for actual usage → serverless architecture.",
+        "time_complexity": "O(f) where f is function execution time (varies by business logic).",
+        "space_complexity": "O(d) where d is data size (managed by cloud provider, no persistent server storage).",
+        "strengths": [
+            "No infrastructure: eliminates server management overhead.",
+            "Auto-scaling: automatically scales to any load.",
+            "Cost-effective: pay only for actual usage."
+        ],
+        "weaknesses": [
+            "Vendor lock-in: applications depend on cloud provider services.",
+            "Cold starts: first invocation may have latency.",
+            "Debugging: debugging distributed serverless applications can be challenging."
+        ],
+        "alternatives": ["Traditional Servers", "Containers", "Virtual Machines", "Hybrid Architecture"],
+        "explanation": "Builds applications using serverless computing services (FaaS, managed databases, event-driven services) where developers don't manage servers, and the cloud provider handles infrastructure, scaling, and resource management automatically."
+    },
+    "semester_09/lecture_61_cloud_native/service_discovery/README.md": {
+        "name": "Service Discovery",
+        "problem": "Automatically locates and connects to service instances in a distributed system, handling dynamic service registration, health checking, and load balancing without hardcoded service addresses.",
+        "intuition": "Like a phone directory service: service discovery is like a phone directory service for microservices - when a service wants to call another service, instead of knowing the exact phone number (IP address) which might change, it looks up the service name in the directory (service registry) and gets the current phone number (service instance address) - the directory automatically updates when services start, stop, or move (dynamic registration), and only lists services that are currently available (health checks).",
+        "inputs": "Service registrations, service queries, health checks, service metadata, network topology.",
+        "outputs": "Service locations, healthy service instances, load-balanced connections, dynamic routing.",
+        "steps": [
+            "Register: services register themselves with service registry on startup.",
+            "Store: registry stores service information (name, address, port, metadata).",
+            "Health check: registry periodically checks service health.",
+            "Update: registry updates service status (healthy, unhealthy, removed).",
+            "Query: client queries registry for service by name.",
+            "Resolve: registry returns available service instances.",
+            "Select: client selects service instance (round-robin, random, least connections).",
+            "Connect: client connects to selected service instance.",
+            "Cache: client may cache service locations for performance.",
+            "Update cache: client updates cache when service instances change."
+        ],
+        "example": "Service discovery: user-service starts → registers: name='user-service', address='10.0.1.5:8080' → registry: stores registration → health check: user-service healthy → order-service: queries registry for 'user-service' → registry: returns ['10.0.1.5:8080', '10.0.1.6:8080'] → order-service: selects instance → connects → user-service fails → registry: removes from list → order-service: gets updated list → service discovery operational.",
+        "time_complexity": "O(1) for service lookup, O(n) for health checks where n is number of services.",
+        "space_complexity": "O(s) where s is number of service instances (registry storage).",
+        "strengths": [
+            "Dynamic: handles dynamic service instances (start, stop, scale).",
+            "Resilience: automatically handles service failures and recovery.",
+            "Decoupling: decouples services from specific network addresses."
+        ],
+        "weaknesses": [
+            "Dependency: services depend on service registry availability.",
+            "Latency: service lookup adds latency (can be cached).",
+            "Complexity: managing service registry adds operational complexity."
+        ],
+        "alternatives": ["Hardcoded Addresses", "DNS", "Load Balancer", "Service Mesh"],
+        "explanation": "Automatically locates and connects to service instances in a distributed system, handling dynamic service registration, health checking, and load balancing without hardcoded service addresses."
+    },
+    "semester_09/lecture_62_observability_advanced/apm/README.md": {
+        "name": "Application Performance Monitoring (APM)",
+        "problem": "Monitors application performance in real-time, tracking response times, throughput, error rates, and resource usage to identify performance bottlenecks and optimize application behavior.",
+        "intuition": "Like a fitness tracker for applications: APM is like a fitness tracker that continuously monitors your application's health - it tracks how fast it responds (response time), how much work it does (throughput), how often it makes mistakes (error rate), and how much energy it uses (resource usage) - when something's wrong (like slow response), it alerts you and shows you exactly where the problem is (like which function is slow), helping you fix it quickly.",
+        "inputs": "Application metrics, traces, logs, performance counters, user transactions.",
+        "outputs": "Performance metrics, alerts, dashboards, optimization insights, performance reports.",
+        "steps": [
+            "Instrument: add APM agents or libraries to application.",
+            "Collect: collect performance data (response times, database queries, external calls).",
+            "Trace: trace requests through application (distributed tracing).",
+            "Measure: measure key metrics (latency, throughput, error rate, resource usage).",
+            "Aggregate: aggregate metrics over time windows.",
+            "Store: store metrics in time-series database.",
+            "Visualize: create dashboards showing performance trends.",
+            "Alert: configure alerts for performance thresholds.",
+            "Analyze: analyze performance patterns and identify bottlenecks.",
+            "Optimize: use insights to optimize application performance."
+        ],
+        "example": "APM: web application → APM agent installed → collects: request latency, database query time, external API calls → trace: user request → frontend (50ms) → API (200ms) → database (150ms) → external API (300ms) → total: 700ms → alert: latency > 500ms → identify: external API is bottleneck → optimize: add caching → latency: 700ms → 250ms → APM guides optimization.",
+        "time_complexity": "O(1) per metric collection, O(m) for analysis where m is number of metrics.",
+        "space_complexity": "O(m·t) where m is metrics count, t is time period (time-series data storage).",
+        "strengths": [
+            "Visibility: provides comprehensive visibility into application performance.",
+            "Proactive: identifies performance issues before users are affected.",
+            "Optimization: enables data-driven performance optimization."
+        ],
+        "weaknesses": [
+            "Overhead: APM agents add some overhead to application.",
+            "Cost: APM tools can be expensive for large-scale applications.",
+            "Complexity: analyzing APM data requires expertise."
+        ],
+        "alternatives": ["Logging", "Custom Metrics", "Performance Testing", "Profiling"],
+        "explanation": "Monitors application performance in real-time, tracking response times, throughput, error rates, and resource usage to identify performance bottlenecks and optimize application behavior."
+    },
+    "semester_09/lecture_62_observability_advanced/chaos_engineering_advanced/README.md": {
+        "name": "Advanced Chaos Engineering",
+        "problem": "Systematically experiments on distributed systems by injecting failures and disruptions to test resilience, identify weaknesses, and improve system reliability through controlled chaos experiments.",
+        "intuition": "Like stress testing for systems: advanced chaos engineering is like stress testing a building by simulating earthquakes - you intentionally create controlled failures (like turning off a server, adding network latency, or corrupting data) to see how the system handles it - if the system breaks, you've found a weakness before real disasters happen - the goal is to make systems so resilient that they can handle any failure gracefully, like a building designed to withstand earthquakes.",
+        "inputs": "System components, failure scenarios, experiment hypotheses, safety measures, monitoring tools.",
+        "outputs": "Chaos experiments, resilience insights, system improvements, failure handling validation.",
+        "steps": [
+            "Define hypothesis: define what you expect to happen during experiment.",
+            "Design experiment: design controlled failure scenario (kill service, inject latency, corrupt data).",
+            "Set safety: establish safety measures (blast radius limits, automatic rollback).",
+            "Monitor: set up comprehensive monitoring before experiment.",
+            "Inject failure: inject controlled failure into system.",
+            "Observe: observe system behavior and response to failure.",
+            "Measure: measure impact (availability, latency, error rate).",
+            "Analyze: analyze results and compare to hypothesis.",
+            "Improve: identify weaknesses and improve system resilience.",
+            "Repeat: run experiments regularly to continuously improve resilience."
+        ],
+        "example": "Chaos engineering: hypothesis: system handles database failure gracefully → experiment: kill database primary → observe: system switches to replica in 5s → measure: availability: 99.9% (target: 99.95%) → analyze: switchover too slow → improve: optimize failover → repeat: test again → resilience improved → chaos engineering successful.",
+        "time_complexity": "O(e) where e is experiment duration (varies by experiment type).",
+        "space_complexity": "O(m) where m is monitoring data size (metrics, logs during experiment).",
+        "strengths": [
+            "Resilience: improves system resilience through systematic testing.",
+            "Proactive: finds weaknesses before real failures occur.",
+            "Confidence: builds confidence in system reliability."
+        ],
+        "weaknesses": [
+            "Risk: experiments can cause real outages if not carefully controlled.",
+            "Complexity: designing and running experiments requires expertise.",
+            "Resource intensive: requires dedicated time and resources."
+        ],
+        "alternatives": ["Traditional Testing", "Failure Injection", "Disaster Recovery Drills", "Load Testing"],
+        "explanation": "Systematically experiments on distributed systems by injecting failures and disruptions to test resilience, identify weaknesses, and improve system reliability through controlled chaos experiments."
+    },
+    "semester_09/lecture_62_observability_advanced/distributed_tracing/README.md": {
+        "name": "Distributed Tracing",
+        "problem": "Tracks requests as they flow through distributed systems, creating end-to-end traces that show the complete path of a request across multiple services, enabling debugging and performance optimization.",
+        "intuition": "Like a package tracking system: distributed tracing is like tracking a package as it moves through a shipping network - you get a tracking number (trace ID) that follows the package (request) as it goes through different facilities (services) - you can see exactly where it is at each step (spans), how long it spends at each facility (timing), and if there are any delays (bottlenecks) - this helps you understand the complete journey and find where things slow down or fail.",
+        "inputs": "Requests, trace IDs, span data, service interactions, timing information.",
+        "outputs": "Distributed traces, request flows, performance insights, debugging information.",
+        "steps": [
+            "Generate trace: generate unique trace ID for incoming request.",
+            "Create span: create span for each service operation (start time, operation name).",
+            "Propagate: propagate trace ID through service calls (HTTP headers, message metadata).",
+            "Record spans: each service records spans for its operations.",
+            "Add context: add context to spans (tags, logs, timing).",
+            "Correlate: correlate spans by trace ID to build complete trace.",
+            "Collect: collect spans from all services.",
+            "Assemble: assemble spans into complete trace (tree structure).",
+            "Visualize: visualize trace showing request flow and timing.",
+            "Analyze: analyze traces to identify bottlenecks and errors."
+        ],
+        "example": "Distributed tracing: user request → trace ID: abc123 → frontend: span 1 (10ms) → API gateway: span 2 (5ms) → user-service: span 3 (50ms) → database: span 4 (30ms) → order-service: span 5 (200ms) → payment-service: span 6 (150ms) → trace: shows complete flow → identify: order-service is slow → optimize: add caching → trace: order-service 200ms → 50ms → distributed tracing guides optimization.",
+        "time_complexity": "O(1) per span creation, O(s) for trace assembly where s is number of spans.",
+        "space_complexity": "O(t·s) where t is number of traces, s is average spans per trace (trace storage).",
+        "strengths": [
+            "Visibility: provides complete visibility into request flows.",
+            "Debugging: enables debugging of complex distributed systems.",
+            "Performance: identifies performance bottlenecks across services."
+        ],
+        "weaknesses": [
+            "Overhead: tracing adds overhead to application performance.",
+            "Storage: storing traces requires significant storage.",
+            "Sampling: may need to sample traces to manage volume."
+        ],
+        "alternatives": ["Logging", "APM", "Custom Instrumentation", "Request IDs"],
+        "explanation": "Tracks requests as they flow through distributed systems, creating end-to-end traces that show the complete path of a request across multiple services, enabling debugging and performance optimization."
+    },
+    "semester_09/lecture_62_observability_advanced/log_aggregation_advanced/README.md": {
+        "name": "Advanced Log Aggregation",
+        "problem": "Collects, centralizes, indexes, and analyzes logs from multiple distributed services, enabling search, correlation, and real-time analysis of application and system logs.",
+        "intuition": "Like a central library for logs: advanced log aggregation is like a central library that collects books (logs) from many different sources (services), organizes them (indexes), and makes them searchable (search engine) - instead of searching through individual libraries (service logs), you go to the central library (log aggregator) and search across all books (all services) at once - you can also see patterns across books (correlation) and get alerts when certain books appear (real-time alerts).",
+        "inputs": "Logs from services, log formats, timestamps, log levels, metadata.",
+        "outputs": "Aggregated logs, searchable index, correlated events, log analytics, alerts.",
+        "steps": [
+            "Collect: collect logs from all services (agents, forwarders, APIs).",
+            "Parse: parse log formats and extract structured data.",
+            "Enrich: enrich logs with metadata (service name, environment, trace ID).",
+            "Index: index logs for fast searching (Elasticsearch, Splunk).",
+            "Store: store logs in centralized system (time-series database, object storage).",
+            "Search: enable full-text and structured search across all logs.",
+            "Correlate: correlate logs from different services by time, trace ID, user ID.",
+            "Analyze: analyze log patterns and trends.",
+            "Alert: configure alerts based on log patterns (errors, anomalies).",
+            "Retain: manage log retention policies (hot storage, cold storage, archival)."
+        ],
+        "example": "Log aggregation: 10 microservices → each produces logs → log forwarders: collect logs → aggregator: centralizes → parse: extract structured fields → index: Elasticsearch indexes → search: 'error' across all services → find: 50 errors in last hour → correlate: all from user-service → analyze: database connection timeout → alert: error rate > threshold → log aggregation operational.",
+        "time_complexity": "O(n) for collection where n is log volume, O(log m) for search where m is indexed logs.",
+        "space_complexity": "O(l) where l is total log volume (storage for aggregated logs).",
+        "strengths": [
+            "Centralization: centralizes logs from all services.",
+            "Searchability: enables fast search across all logs.",
+            "Correlation: enables correlation of events across services."
+        ],
+        "weaknesses": [
+            "Storage: requires significant storage for large log volumes.",
+            "Cost: log aggregation systems can be expensive.",
+            "Complexity: managing log aggregation infrastructure is complex."
+        ],
+        "alternatives": ["Local Logging", "File-based Logs", "Database Logging", "Cloud Logging Services"],
+        "explanation": "Collects, centralizes, indexes, and analyzes logs from multiple distributed services, enabling search, correlation, and real-time analysis of application and system logs."
+    },
+    "semester_09/lecture_62_observability_advanced/metrics_collection/README.md": {
+        "name": "Metrics Collection",
+        "problem": "Collects, aggregates, and stores time-series metrics from applications and infrastructure, enabling monitoring, alerting, and performance analysis through quantitative measurements.",
+        "intuition": "Like a weather monitoring system: metrics collection is like a weather monitoring system that continuously measures temperature, humidity, pressure (metrics) at different locations (services) and stores the measurements over time (time-series) - you can see trends (temperature rising), set alerts (temperature > 100°F), and analyze patterns (temperature higher in summer) - metrics give you quantitative data about your system's health and performance.",
+        "inputs": "Metrics (counters, gauges, histograms), metric names, labels/tags, timestamps, collection intervals.",
+        "outputs": "Time-series metrics, aggregated data, monitoring dashboards, alerts, performance insights.",
+        "steps": [
+            "Define metrics: identify metrics to collect (request rate, latency, error rate, CPU usage).",
+            "Instrument: add metric collection to applications (counters, gauges, timers).",
+            "Collect: collect metrics at regular intervals (scraping, pushing).",
+            "Aggregate: aggregate metrics (sum, average, percentiles).",
+            "Store: store metrics in time-series database (Prometheus, InfluxDB).",
+            "Label: label metrics with dimensions (service, environment, instance).",
+            "Query: enable querying metrics using query language (PromQL).",
+            "Visualize: create dashboards visualizing metrics over time.",
+            "Alert: configure alerts based on metric thresholds.",
+            "Analyze: analyze metrics to identify trends and anomalies."
+        ],
+        "example": "Metrics collection: web application → metrics: request_rate, latency_p95, error_rate → collect: every 15s → store: Prometheus → query: request_rate > 1000/s → alert: error_rate > 1% → dashboard: shows latency trending up → analyze: latency spike at 2 PM → identify: database slow → metrics guide optimization.",
+        "time_complexity": "O(1) per metric collection, O(m) for aggregation where m is number of metrics.",
+        "space_complexity": "O(m·t) where m is metrics count, t is time period (time-series storage).",
+        "strengths": [
+            "Quantitative: provides quantitative measurements of system behavior.",
+            "Efficient: metrics are lightweight compared to logs or traces.",
+            "Scalability: can handle high volumes of metrics."
+        ],
+        "weaknesses": [
+            "Limited context: metrics don't provide detailed context like logs.",
+            "Storage: long-term metric storage can be expensive.",
+            "Cardinality: high cardinality metrics can cause storage issues."
+        ],
+        "alternatives": ["Logging", "APM", "Custom Monitoring", "Cloud Metrics Services"],
+        "explanation": "Collects, aggregates, and stores time-series metrics from applications and infrastructure, enabling monitoring, alerting, and performance analysis through quantitative measurements."
+    },
+    "semester_09/lecture_62_observability_advanced/synthetic_monitoring/README.md": {
+        "name": "Synthetic Monitoring",
+        "problem": "Proactively monitors application availability and performance by simulating user interactions and transactions, detecting issues before real users are affected.",
+        "intuition": "Like a robot tester: synthetic monitoring is like having a robot that continuously tests your application - the robot performs the same actions real users would do (like logging in, browsing products, making purchases) from different locations around the world - if the robot finds a problem (like slow response or error), it alerts you immediately, even if no real users have encountered it yet - it's like having a 24/7 quality assurance tester that never sleeps.",
+        "inputs": "Test scripts, monitoring locations, test scenarios, frequency, thresholds.",
+        "outputs": "Synthetic test results, availability metrics, performance measurements, proactive alerts.",
+        "steps": [
+            "Define scenarios: define user interaction scenarios to test (login, checkout, search).",
+            "Create scripts: create test scripts that simulate user actions.",
+            "Deploy: deploy synthetic monitors in multiple locations.",
+            "Schedule: schedule tests to run at regular intervals (every 5 minutes).",
+            "Execute: synthetic monitors execute test scripts.",
+            "Measure: measure response times, availability, and functionality.",
+            "Validate: validate that application responds correctly.",
+            "Alert: alert if tests fail or performance degrades.",
+            "Report: generate reports on availability and performance trends.",
+            "Optimize: use insights to improve application reliability."
+        ],
+        "example": "Synthetic monitoring: e-commerce site → scenario: user login → script: POST /login, check response → deploy: monitors in 5 regions → schedule: run every 5 min → execute: monitors test login → measure: response time 200ms, success rate 100% → alert: response time > 500ms → detect: login fails in Asia region → alert: proactive detection → synthetic monitoring operational.",
+        "time_complexity": "O(s) where s is scenario execution time (varies by test complexity).",
+        "space_complexity": "O(r) where r is number of test results (result storage).",
+        "strengths": [
+            "Proactive: detects issues before real users are affected.",
+            "Coverage: tests from multiple geographic locations.",
+            "Consistency: provides consistent monitoring regardless of user traffic."
+        ],
+        "weaknesses": [
+            "Cost: running synthetic tests continuously can be expensive.",
+            "Limited: may not catch all real user scenarios.",
+            "Maintenance: test scripts need maintenance as application changes."
+        ],
+        "alternatives": ["Real User Monitoring", "Uptime Monitoring", "Health Checks", "Load Testing"],
+        "explanation": "Proactively monitors application availability and performance by simulating user interactions and transactions, detecting issues before real users are affected."
+    },
+    "semester_10/lecture_63_advanced_ml_learning/continual_learning/README.md": {
+        "name": "Continual Learning",
+        "problem": "Enables machine learning models to learn continuously from new data over time without forgetting previously learned knowledge, adapting to changing data distributions and new tasks.",
+        "intuition": "Like a student who never forgets: continual learning is like a student who learns new subjects throughout their life without forgetting what they learned before - when they learn math in grade school, they don't forget it when learning history in high school - the model learns new patterns from new data (like learning a new language) while retaining old knowledge (like remembering your native language), allowing it to adapt and improve over time without catastrophic forgetting.",
+        "inputs": "New data streams, previously trained model, learning tasks, memory constraints.",
+        "outputs": "Updated model, retained knowledge, adapted model, improved performance.",
+        "steps": [
+            "Receive data: receive new data stream or batch.",
+            "Evaluate: evaluate model on new data to assess performance.",
+            "Detect shift: detect if data distribution has changed (concept drift).",
+            "Select strategy: choose continual learning strategy (replay, regularization, architecture).",
+            "Update: update model with new data while preserving old knowledge.",
+            "Regularize: apply regularization to prevent catastrophic forgetting.",
+            "Replay: optionally replay samples from old tasks (memory replay).",
+            "Adapt: adapt model architecture if needed (expand, freeze layers).",
+            "Validate: validate model on both new and old tasks.",
+            "Store: store important samples or model checkpoints for future use."
+        ],
+        "example": "Continual learning: image classifier trained on cats/dogs → new data: birds → update: learn to classify birds → strategy: elastic weight consolidation (EWC) → preserve: cat/dog classification accuracy → result: model classifies cats, dogs, and birds → no forgetting → continual learning successful.",
+        "time_complexity": "O(n) for training where n is new data size, O(m) for replay where m is memory size.",
+        "space_complexity": "O(m) where m is memory size for replay samples or regularization parameters.",
+        "strengths": [
+            "Adaptability: enables models to adapt to new data and tasks.",
+            "Efficiency: avoids retraining from scratch on all data.",
+            "Lifelong learning: supports lifelong learning scenarios."
+        ],
+        "weaknesses": [
+            "Catastrophic forgetting: risk of forgetting old knowledge when learning new.",
+            "Complexity: continual learning algorithms can be complex.",
+            "Memory: may require memory for replay or regularization."
+        ],
+        "alternatives": ["Retraining from Scratch", "Transfer Learning", "Multi-task Learning", "Incremental Learning"],
+        "explanation": "Enables machine learning models to learn continuously from new data over time without forgetting previously learned knowledge, adapting to changing data distributions and new tasks."
+    },
+    "semester_10/lecture_63_advanced_ml_learning/few_shot_learning_advanced/README.md": {
+        "name": "Advanced Few-Shot Learning",
+        "problem": "Trains models to learn new tasks or classes from very few examples (often just 1-5 examples) by leveraging prior knowledge, meta-learning, or transfer learning techniques.",
+        "intuition": "Like learning from examples: advanced few-shot learning is like showing someone a picture of a new animal once and they can recognize it - humans can learn new concepts from just one or a few examples because we leverage our prior knowledge (we know what animals look like) - few-shot learning does the same for AI: it uses prior knowledge from training on many tasks (like knowing what features are important) to quickly learn new tasks from just a few examples.",
+        "inputs": "Few labeled examples (1-5 per class), pre-trained model, support set, query set, task description.",
+        "outputs": "Learned model, task adaptation, predictions on new examples, meta-learned knowledge.",
+        "steps": [
+            "Pre-train: pre-train model on many diverse tasks (meta-learning phase).",
+            "Extract knowledge: extract general knowledge about how to learn (learning to learn).",
+            "Present task: present new task with few examples (support set).",
+            "Adapt: quickly adapt model to new task using few examples.",
+            "Use prior: leverage prior knowledge to guide learning.",
+            "Fine-tune: fine-tune model parameters or use metric learning.",
+            "Query: make predictions on new examples (query set).",
+            "Evaluate: evaluate performance on few-shot task.",
+            "Meta-learn: update meta-learner based on few-shot performance.",
+            "Generalize: generalize to new few-shot tasks."
+        ],
+        "example": "Few-shot learning: pre-train on 1000 image classification tasks → new task: classify 5 new bird species → support: 1 example per species (5 total) → adapt: model adapts using prior knowledge → query: classify new bird images → accuracy: 85% with just 5 examples → few-shot learning successful.",
+        "time_complexity": "O(e) for adaptation where e is number of examples (very fast, few examples), O(t) for pre-training where t is number of tasks.",
+        "space_complexity": "O(m) where m is model size (pre-trained model parameters).",
+        "strengths": [
+            "Efficiency: learns from very few examples (data-efficient).",
+            "Flexibility: quickly adapts to new tasks.",
+            "Practical: useful when labeled data is scarce."
+        ],
+        "weaknesses": [
+            "Pre-training: requires extensive pre-training on many tasks.",
+            "Generalization: may not generalize well to very different tasks.",
+            "Complexity: meta-learning approaches can be complex."
+        ],
+        "alternatives": ["Transfer Learning", "Zero-Shot Learning", "Semi-Supervised Learning", "Active Learning"],
+        "explanation": "Trains models to learn new tasks or classes from very few examples (often just 1-5 examples) by leveraging prior knowledge, meta-learning, or transfer learning techniques."
+    },
+    "semester_10/lecture_63_advanced_ml_learning/lifelong_learning/README.md": {
+        "name": "Lifelong Learning",
+        "problem": "Enables AI systems to learn continuously throughout their operational lifetime, accumulating knowledge from multiple tasks and experiences while maintaining and improving performance on all learned tasks.",
+        "intuition": "Like human lifelong learning: lifelong learning is like how humans learn throughout their lives - you learn math in school, then programming in college, then new technologies at work - you don't forget math when learning programming, and you use knowledge from all previous learning to help with new tasks - lifelong learning AI does the same: it accumulates knowledge over time, uses previous knowledge to help with new tasks, and maintains performance on all tasks it has learned.",
+        "inputs": "Sequential tasks, new data streams, previously learned knowledge, memory resources.",
+        "outputs": "Accumulated knowledge, multi-task performance, adapted models, lifelong learning system.",
+        "steps": [
+            "Learn task: learn first task and store knowledge.",
+            "Accumulate: accumulate knowledge from each task.",
+            "Learn new task: learn new task while preserving old knowledge.",
+            "Transfer: transfer knowledge from previous tasks to new task.",
+            "Prevent forgetting: use techniques to prevent catastrophic forgetting.",
+            "Consolidate: consolidate knowledge across tasks.",
+            "Reuse: reuse learned features and representations.",
+            "Adapt: adapt model architecture or parameters for new tasks.",
+            "Evaluate: evaluate performance on all learned tasks.",
+            "Continue: continue learning new tasks throughout system lifetime."
+        ],
+        "example": "Lifelong learning: task 1: image classification (cats/dogs) → learn and store → task 2: object detection → transfer: use features from task 1 → learn: adapt for detection → preserve: maintain classification performance → task 3: segmentation → transfer: use knowledge from tasks 1 and 2 → accumulate: knowledge grows → lifelong learning operational.",
+        "time_complexity": "O(Σ(t_i)) where t_i is time for each task (accumulative over lifetime).",
+        "space_complexity": "O(k) where k is accumulated knowledge size (grows over time, may need memory management).",
+        "strengths": [
+            "Accumulation: accumulates knowledge over lifetime.",
+            "Transfer: transfers knowledge between tasks.",
+            "Efficiency: avoids retraining from scratch for each task."
+        ],
+        "weaknesses": [
+            "Forgetting: risk of catastrophic forgetting of old tasks.",
+            "Scalability: knowledge accumulation may become unwieldy over time.",
+            "Complexity: managing lifelong learning is complex."
+        ],
+        "alternatives": ["Task-Specific Models", "Multi-Task Learning", "Continual Learning", "Transfer Learning"],
+        "explanation": "Enables AI systems to learn continuously throughout their operational lifetime, accumulating knowledge from multiple tasks and experiences while maintaining and improving performance on all learned tasks."
+    },
+    "semester_10/lecture_63_advanced_ml_learning/meta_learning/README.md": {
+        "name": "Meta-Learning (Learning to Learn)",
+        "problem": "Trains models to learn how to learn, enabling them to quickly adapt to new tasks with minimal data by leveraging experience from learning many previous tasks.",
+        "intuition": "Like learning study techniques: meta-learning is like learning how to study effectively - once you learn good study techniques (meta-knowledge), you can quickly learn any new subject (new task) - instead of starting from scratch each time, you use your learning strategies (meta-learner) to rapidly understand new material - meta-learning AI does the same: it learns general strategies for learning, then uses those strategies to quickly learn new tasks.",
+        "inputs": "Multiple training tasks, few-shot examples, meta-learner architecture, learning algorithm parameters.",
+        "outputs": "Meta-learned model, fast adaptation, learning strategies, task-specific models.",
+        "steps": [
+            "Define task distribution: define distribution of tasks to learn from.",
+            "Sample tasks: sample tasks from task distribution (meta-training).",
+            "Train: train model on each task (inner loop).",
+            "Evaluate: evaluate model performance on each task.",
+            "Update meta-learner: update meta-learner based on performance across tasks (outer loop).",
+            "Extract: extract general learning strategies.",
+            "Present new task: present new task with few examples.",
+            "Adapt quickly: use meta-learned strategies to quickly adapt to new task.",
+            "Fine-tune: fine-tune model parameters for new task.",
+            "Generalize: generalize meta-learning to new task distributions."
+        ],
+        "example": "Meta-learning: train on 1000 image classification tasks → meta-learner: learns general strategies (feature extraction, adaptation) → new task: classify 5 new bird species → support: 3 examples per species → adapt: use meta-learned strategies → fine-tune: quickly adapt parameters → accuracy: 90% with just 15 examples → meta-learning enables fast adaptation.",
+        "time_complexity": "O(t·n) for meta-training where t is number of tasks, n is examples per task, O(e) for adaptation where e is few examples.",
+        "space_complexity": "O(m) where m is meta-learner model size (parameters for learning strategies).",
+        "strengths": [
+            "Fast adaptation: enables rapid adaptation to new tasks.",
+            "Data efficiency: learns from few examples using prior experience.",
+            "Generalization: learns generalizable learning strategies."
+        ],
+        "weaknesses": [
+            "Pre-training: requires extensive pre-training on many tasks.",
+            "Task distribution: performance depends on similarity of new tasks to training tasks.",
+            "Complexity: meta-learning algorithms can be complex to design and train."
+        ],
+        "alternatives": ["Transfer Learning", "Few-Shot Learning", "Multi-Task Learning", "Pre-training"],
+        "explanation": "Trains models to learn how to learn, enabling them to quickly adapt to new tasks with minimal data by leveraging experience from learning many previous tasks."
     }
 }
 
