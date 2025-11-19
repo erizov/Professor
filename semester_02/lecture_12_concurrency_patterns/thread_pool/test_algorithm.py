@@ -20,11 +20,9 @@ class TestThreadpool(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_12_concurrency_patterns.thread_pool.algorithm import (
-            __init__,
-        )
+        from semester_02.lecture_12_concurrency_patterns.thread_pool.algorithm import ThreadPool
 
-        self.algorithm = __init__
+        self.algorithm = ThreadPool
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

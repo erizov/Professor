@@ -20,11 +20,9 @@ class TestDatamapper(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_11_repository_patterns.data_mapper.algorithm import (
-            __init__,
-        )
+        from semester_02.lecture_11_repository_patterns.data_mapper.algorithm import DataMapper
 
-        self.algorithm = __init__
+        self.algorithm = DataMapper
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestMvvm(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_10_architectural_patterns.mvvm.algorithm import (
-            __init__,
-        )
+        from semester_02.lecture_10_architectural_patterns.mvvm.algorithm import MVVM
 
-        self.algorithm = __init__
+        self.algorithm = MVVM
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

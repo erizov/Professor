@@ -20,9 +20,9 @@ class TestDijkstra(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_03.lecture_10_graph_algorithms.dijkstra.algorithm import __init__
+        from semester_03.lecture_10_graph_algorithms.dijkstra.algorithm import dijkstra
 
-        self.algorithm = __init__
+        self.algorithm = dijkstra
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

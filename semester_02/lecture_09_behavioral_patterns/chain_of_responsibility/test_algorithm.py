@@ -20,11 +20,9 @@ class TestChainofresponsibility(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_09_behavioral_patterns.chain_of_responsibility.algorithm import (
-            __init__,
-        )
+        from semester_02.lecture_09_behavioral_patterns.chain_of_responsibility.algorithm import Handler
 
-        self.algorithm = __init__
+        self.algorithm = Handler
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

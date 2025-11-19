@@ -20,9 +20,9 @@ class TestBfs(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_01.lecture_09_graph_algorithms.bfs.algorithm import __init__
+        from semester_01.lecture_09_graph_algorithms.bfs.algorithm import bfs
 
-        self.algorithm = __init__
+        self.algorithm = bfs
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

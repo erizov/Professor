@@ -20,11 +20,9 @@ class TestBellmanford(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_01.lecture_09_graph_algorithms.bellman_ford.algorithm import (
-            __init__,
-        )
+        from semester_01.lecture_09_graph_algorithms.bellman_ford.algorithm import bellman_ford
 
-        self.algorithm = __init__
+        self.algorithm = bellman_ford
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
@@ -74,8 +72,8 @@ class TestBellmanford(AlgorithmTestCase):
 
     def test_disconnected_graph(self):
         """Test with disconnected components."""
-        graph = {0: [1], 1: [0], 2: [3], 3: [2]}
-        result = self.algorithm(graph, 0)
+        graph = {0: [(1, 1)], 1: [(0, 1)], 2: [(3, 1)], 3: [(2, 1)]}
+        result = self.algorithm(graph, 0, 4)
         self.assertIn(0, result)
 
 

@@ -20,11 +20,9 @@ class TestBluegreen(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_04.lecture_16_deployment_patterns.blue_green.algorithm import (
-            __init__,
-        )
+        from semester_04.lecture_16_deployment_patterns.blue_green.algorithm import BlueGreen
 
-        self.algorithm = __init__
+        self.algorithm = BlueGreen
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

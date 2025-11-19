@@ -20,11 +20,9 @@ class TestIntegrationtesting(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_04.lecture_15_testing_patterns.integration_testing.algorithm import (
-            __init__,
-        )
+        from semester_04.lecture_15_testing_patterns.integration_testing.algorithm import IntegrationTesting
 
-        self.algorithm = __init__
+        self.algorithm = IntegrationTesting
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

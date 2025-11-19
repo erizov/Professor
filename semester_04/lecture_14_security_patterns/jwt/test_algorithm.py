@@ -20,9 +20,9 @@ class TestJwt(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_04.lecture_14_security_patterns.jwt.algorithm import __init__
+        from semester_04.lecture_14_security_patterns.jwt.algorithm import JWT
 
-        self.algorithm = __init__
+        self.algorithm = JWT
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestBellmanford(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_03.lecture_10_graph_algorithms.bellman_ford.algorithm import (
-            __init__,
-        )
+        from semester_03.lecture_10_graph_algorithms.bellman_ford.algorithm import bellman_ford
 
-        self.algorithm = __init__
+        self.algorithm = bellman_ford
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

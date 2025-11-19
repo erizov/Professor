@@ -20,11 +20,9 @@ class TestFloydwarshall(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_03.lecture_10_graph_algorithms.floyd_warshall.algorithm import (
-            __init__,
-        )
+        from semester_03.lecture_10_graph_algorithms.floyd_warshall.algorithm import floyd_warshall
 
-        self.algorithm = __init__
+        self.algorithm = floyd_warshall
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,9 +20,9 @@ class TestCqrs(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_03.lecture_13_integration_patterns.cqrs.algorithm import __init__
+        from semester_03.lecture_13_integration_patterns.cqrs.algorithm import CQRS
 
-        self.algorithm = __init__
+        self.algorithm = CQRS
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

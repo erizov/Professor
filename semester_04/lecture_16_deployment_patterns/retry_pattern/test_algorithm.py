@@ -20,11 +20,9 @@ class TestRetrypattern(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_04.lecture_16_deployment_patterns.retry_pattern.algorithm import (
-            __init__,
-        )
+        from semester_04.lecture_16_deployment_patterns.retry_pattern.algorithm import RetryPattern
 
-        self.algorithm = __init__
+        self.algorithm = RetryPattern
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

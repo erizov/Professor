@@ -27,27 +27,21 @@ class TestGridsearch(AlgorithmTestCase):
         self.algorithm = grid_search
 
     def test_basic_search(self):
-        """Test basic search functionality."""
-        arr = [1, 3, 5, 7, 9, 11, 13]
-        result = self.algorithm(arr, 7)
+        """Test basic grid search functionality."""
+        param_grid = {"learning_rate": [0.01, 0.1, 1.0], "max_depth": [3, 5, 7]}
+        objective_func = lambda params: params["learning_rate"] * params["max_depth"]
+        result = self.algorithm(param_grid, objective_func)
         self.assertIsNotNone(result)
-        self.assertIn(result, [3, arr.index(7)])  # Index or boolean
+        self.assertIn("best_params", result)
+        self.assertIn("best_score", result)
 
-    def test_not_found(self):
-        """Test when element is not found."""
-        arr = [1, 3, 5, 7, 9]
-        result = self.algorithm(arr, 10)
-        self.assertIsNone(result) if result is not bool else self.assertFalse(result)
-
-    def test_empty_input(self):
-        """Test with empty input."""
-        result = self.algorithm([], 5)
-        self.assertIsNone(result) if result is not bool else self.assertFalse(result)
-
-    def test_single_element(self):
-        """Test with single element."""
-        result = self.algorithm([42], 42)
-        self.assertIsNotNone(result) if result is not bool else self.assertTrue(result)
+    def test_single_parameter(self):
+        """Test with single parameter."""
+        param_grid = {"learning_rate": [0.01, 0.1]}
+        objective_func = lambda params: params["learning_rate"]
+        result = self.algorithm(param_grid, objective_func)
+        self.assertIsNotNone(result)
+        self.assertIn("best_params", result)
 
     def test_empty_input(self):
         """Test with empty input."""
@@ -80,23 +74,13 @@ class TestGridsearch(AlgorithmTestCase):
         # self.assert_performance(lambda: self.algorithm([...]), max_time_seconds=1.0)
         pass
 
-    def test_not_found(self):
-        """Test when target not found."""
-        arr = [1, 2, 3, 4, 5]
-        result = self.algorithm(arr, 6)
-        self.assert_search_result(result, 6, arr, found=False)
-
-    def test_first_element(self):
-        """Test searching for first element."""
-        arr = [1, 2, 3, 4, 5]
-        result = self.algorithm(arr, 1)
-        self.assert_search_result(result, 1, arr, found=True)
-
-    def test_last_element(self):
-        """Test searching for last element."""
-        arr = [1, 2, 3, 4, 5]
-        result = self.algorithm(arr, 5)
-        self.assert_search_result(result, 5, arr, found=True)
+    def test_empty_param_grid(self):
+        """Test with empty parameter grid."""
+        param_grid = {}
+        objective_func = lambda params: 0.0
+        result = self.algorithm(param_grid, objective_func)
+        self.assertIsNotNone(result)
+        self.assertIn("best_params", result)
 
 
 if __name__ == "__main__":

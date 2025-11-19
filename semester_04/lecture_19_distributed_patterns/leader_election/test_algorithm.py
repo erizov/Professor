@@ -20,11 +20,9 @@ class TestLeaderelection(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_04.lecture_19_distributed_patterns.leader_election.algorithm import (
-            __init__,
-        )
+        from semester_04.lecture_19_distributed_patterns.leader_election.algorithm import LeaderElection
 
-        self.algorithm = __init__
+        self.algorithm = LeaderElection
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

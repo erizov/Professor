@@ -20,9 +20,9 @@ class TestMvc(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_10_architectural_patterns.mvc.algorithm import __init__
+        from semester_02.lecture_10_architectural_patterns.mvc.algorithm import Model
 
-        self.algorithm = __init__
+        self.algorithm = Model
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

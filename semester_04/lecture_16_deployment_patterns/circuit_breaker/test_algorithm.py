@@ -20,11 +20,9 @@ class TestCircuitbreaker(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_04.lecture_16_deployment_patterns.circuit_breaker.algorithm import (
-            __init__,
-        )
+        from semester_04.lecture_16_deployment_patterns.circuit_breaker.algorithm import CircuitBreaker
 
-        self.algorithm = __init__
+        self.algorithm = CircuitBreaker
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

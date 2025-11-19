@@ -20,11 +20,9 @@ class TestBuilder(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_07_creational_patterns.builder.algorithm import (
-            __init__,
-        )
+        from semester_02.lecture_07_creational_patterns.builder.algorithm import Builder
 
-        self.algorithm = __init__
+        self.algorithm = Builder
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
