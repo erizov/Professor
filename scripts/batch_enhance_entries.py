@@ -10153,6 +10153,414 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Transfer Learning", "Few-Shot Learning", "Multi-Task Learning", "Pre-training"],
         "explanation": "Trains models to learn how to learn, enabling them to quickly adapt to new tasks with minimal data by leveraging experience from learning many previous tasks."
+    },
+    "semester_10/lecture_63_ai_advanced/transfer_learning_advanced/README.md": {
+        "name": "Advanced Transfer Learning",
+        "problem": "Applies sophisticated transfer learning techniques including domain adaptation, multi-task transfer, and progressive transfer to leverage knowledge from source domains and tasks for improved performance on target tasks.",
+        "intuition": "Like learning from related experiences: advanced transfer learning is like a doctor who learned general medicine and then specializes - they transfer their general knowledge (source domain) to their specialty (target domain), adapting what's relevant and learning what's new - advanced transfer learning does this systematically: it identifies what knowledge transfers well, adapts it to the new domain, and progressively refines it, making learning much more efficient than starting from scratch.",
+        "inputs": "Source model, source data, target data, domain adaptation strategies, transfer techniques.",
+        "outputs": "Transferred model, adapted knowledge, improved target task performance, domain-aligned model.",
+        "steps": [
+            "Select source: choose pre-trained source model on related task or domain.",
+            "Analyze domains: analyze similarities and differences between source and target domains.",
+            "Choose strategy: select transfer strategy (feature extraction, fine-tuning, domain adaptation).",
+            "Extract features: extract transferable features from source model.",
+            "Adapt: adapt features to target domain (domain adaptation, adversarial training).",
+            "Fine-tune: fine-tune model on target task with small learning rate.",
+            "Progressive transfer: progressively transfer knowledge (curriculum learning, gradual unfreezing).",
+            "Multi-task: optionally transfer from multiple source tasks (multi-task transfer).",
+            "Validate: validate transfer effectiveness on target task.",
+            "Optimize: optimize transfer strategy based on performance."
+        ],
+        "example": "Advanced transfer learning: source: ImageNet pre-trained ResNet → target: medical X-ray classification → domain gap: natural images vs medical images → strategy: domain adaptation + fine-tuning → adapt: use adversarial domain adaptation → fine-tune: on X-ray dataset → result: 90% accuracy vs 60% from scratch → advanced transfer learning successful.",
+        "time_complexity": "O(n_t) for fine-tuning where n_t is target data size (much less than training from scratch).",
+        "space_complexity": "O(m) where m is model size (same as source model, may add adaptation layers).",
+        "strengths": [
+            "Efficiency: requires much less target data than training from scratch.",
+            "Performance: often achieves better performance with less data.",
+            "Flexibility: supports various transfer strategies for different scenarios."
+        ],
+        "weaknesses": [
+            "Domain gap: large domain gaps may limit transfer effectiveness.",
+            "Negative transfer: inappropriate source may hurt performance.",
+            "Complexity: advanced techniques add complexity to training."
+        ],
+        "alternatives": ["Training from Scratch", "Basic Transfer Learning", "Domain Adaptation", "Multi-Task Learning"],
+        "explanation": "Applies sophisticated transfer learning techniques including domain adaptation, multi-task transfer, and progressive transfer to leverage knowledge from source domains and tasks for improved performance on target tasks."
+    },
+    "semester_10/lecture_63_ai_advanced/zero_shot_learning/README.md": {
+        "name": "Zero-Shot Learning",
+        "problem": "Enables models to recognize or classify objects from classes they have never seen during training by leveraging semantic relationships, attribute descriptions, or text descriptions to generalize to unseen classes.",
+        "intuition": "Like recognizing something you've never seen: zero-shot learning is like recognizing a new animal you've never seen before by describing it - if someone says 'it's like a cat but bigger with stripes' (semantic description), you can identify it as a tiger even though you've never seen one - zero-shot learning does this for AI: it uses descriptions, attributes, or relationships (like 'tiger is a big cat with stripes') to recognize new classes without training examples.",
+        "inputs": "Unseen class descriptions, semantic embeddings, attribute vectors, text descriptions, seen class knowledge.",
+        "outputs": "Predictions for unseen classes, generalized classification, zero-shot recognition.",
+        "steps": [
+            "Train on seen: train model on seen classes with descriptions/attributes.",
+            "Learn embeddings: learn semantic embeddings for classes and attributes.",
+            "Build mapping: build mapping between visual features and semantic space.",
+            "Describe unseen: provide semantic descriptions for unseen classes.",
+            "Project: project unseen class descriptions into semantic space.",
+            "Match: match test samples to unseen classes in semantic space.",
+            "Generalize: generalize from seen to unseen using semantic relationships.",
+            "Predict: predict unseen class labels based on semantic similarity.",
+            "Validate: validate zero-shot performance on unseen classes.",
+            "Refine: refine semantic representations for better generalization."
+        ],
+        "example": "Zero-shot learning: train on: cats, dogs, birds (seen classes) → learn: visual features and semantic attributes (furry, has wings, etc.) → unseen: tiger (never seen) → description: 'big cat with stripes, furry' → match: test image features to semantic description → predict: tiger → zero-shot learning successful.",
+        "time_complexity": "O(n_s) for training on seen classes where n_s is seen class data, O(1) for zero-shot inference.",
+        "space_complexity": "O(m + a) where m is model size, a is attribute/semantic space size.",
+        "strengths": [
+            "Generalization: enables recognition of classes without training examples.",
+            "Scalability: can handle many unseen classes without retraining.",
+            "Flexibility: works with various semantic representations (attributes, text, embeddings)."
+        ],
+        "weaknesses": [
+            "Semantic gap: semantic descriptions may not capture all visual characteristics.",
+            "Performance: typically lower accuracy than supervised learning.",
+            "Dependency: requires good semantic representations for unseen classes."
+        ],
+        "alternatives": ["Few-Shot Learning", "Transfer Learning", "Open-Set Recognition", "Attribute-Based Classification"],
+        "explanation": "Enables models to recognize or classify objects from classes they have never seen during training by leveraging semantic relationships, attribute descriptions, or text descriptions to generalize to unseen classes."
+    },
+    "semester_10/lecture_64_llm_architecture_advanced/llm_compression/README.md": {
+        "name": "LLM Compression",
+        "problem": "Reduces the size and computational requirements of large language models through techniques like quantization, pruning, distillation, and low-rank factorization while maintaining acceptable performance.",
+        "intuition": "Like compressing a large file: LLM compression is like compressing a large file to make it smaller and faster to use - you can reduce file size (model size) by removing unnecessary parts (pruning), using less precise numbers (quantization), or creating a smaller summary version (distillation) - the compressed version is much smaller and faster, but still contains the essential information, making it practical to deploy on devices with limited resources.",
+        "inputs": "Large language model, compression technique, target size, performance requirements, deployment constraints.",
+        "outputs": "Compressed model, reduced size, faster inference, maintained performance.",
+        "steps": [
+            "Analyze model: analyze model structure, parameters, and importance.",
+            "Choose technique: select compression technique (quantization, pruning, distillation, factorization).",
+            "Quantize: reduce precision of weights (FP32 → FP16 → INT8) if using quantization.",
+            "Prune: remove less important weights or neurons if using pruning.",
+            "Distill: train smaller student model to mimic larger teacher if using distillation.",
+            "Factorize: decompose weight matrices into low-rank factors if using factorization.",
+            "Fine-tune: fine-tune compressed model to recover performance.",
+            "Validate: validate compressed model performance on benchmarks.",
+            "Optimize: optimize compression strategy to balance size and performance.",
+            "Deploy: deploy compressed model for inference."
+        ],
+        "example": "LLM compression: GPT-3 (175B parameters, 700GB) → quantization: FP32 → INT8 → size: 175GB (4x reduction) → pruning: remove 50% weights → size: 87.5GB (8x reduction) → distillation: train 7B student → size: 14GB (50x reduction) → performance: 95% of original → compressed model deployable.",
+        "time_complexity": "O(m) for compression where m is model size, O(n) for fine-tuning where n is fine-tuning data size.",
+        "space_complexity": "O(c) where c is compressed model size (significantly smaller than original).",
+        "strengths": [
+            "Efficiency: dramatically reduces model size and inference cost.",
+            "Deployability: enables deployment on resource-constrained devices.",
+            "Speed: faster inference due to smaller model and lower precision."
+        ],
+        "weaknesses": [
+            "Performance: may have some performance degradation.",
+            "Complexity: compression techniques can be complex to apply.",
+            "Trade-offs: requires balancing compression ratio and performance."
+        ],
+        "alternatives": ["Full Precision Models", "Model Distillation", "Knowledge Distillation", "Efficient Architectures"],
+        "explanation": "Reduces the size and computational requirements of large language models through techniques like quantization, pruning, distillation, and low-rank factorization while maintaining acceptable performance."
+    },
+    "semester_10/lecture_64_llm_architecture_advanced/long_context_models/README.md": {
+        "name": "Long Context Models",
+        "problem": "Enables language models to process and understand very long sequences (tens of thousands to millions of tokens) through efficient attention mechanisms, context compression, and memory management techniques.",
+        "intuition": "Like reading a very long book: long context models are like being able to read and remember an entire book at once - instead of only remembering the last few pages (short context), you can remember and reference information from hundreds of pages ago (long context) - this is achieved through efficient memory systems (like bookmarks and summaries) that let you quickly find and use information from anywhere in the book without re-reading everything.",
+        "inputs": "Long sequences, context window, attention mechanism, memory systems, compression techniques.",
+        "outputs": "Long-context understanding, extended memory, efficient processing, context-aware generation.",
+        "steps": [
+            "Design architecture: design model architecture for long contexts (sparse attention, sliding window).",
+            "Implement attention: implement efficient attention mechanism (sparse, sliding window, hierarchical).",
+            "Manage memory: implement memory management (external memory, key-value cache compression).",
+            "Compress context: compress or summarize earlier context to save memory.",
+            "Process chunks: process long sequences in chunks with context preservation.",
+            "Retrieve: retrieve relevant context from memory when needed.",
+            "Attend: attend to relevant parts of long context efficiently.",
+            "Generate: generate text with awareness of full long context.",
+            "Optimize: optimize for memory efficiency and computational cost.",
+            "Scale: scale context length to desired size (32K, 128K, 1M+ tokens)."
+        ],
+        "example": "Long context model: input: 100K token document → architecture: sparse attention (attend to 2K tokens) → memory: compress first 98K tokens to summary → process: attend to summary + recent 2K tokens → generate: answer question using full context → context: 100K tokens processed efficiently → long context model operational.",
+        "time_complexity": "O(n·d) with sparse attention where n is sequence length, d is attention window (much better than O(n²) full attention).",
+        "space_complexity": "O(n) where n is context length (may use compression to reduce to O(k) where k << n).",
+        "strengths": [
+            "Long context: enables processing of very long documents and conversations.",
+            "Efficiency: efficient attention mechanisms make long contexts feasible.",
+            "Understanding: better understanding through access to full context."
+        ],
+        "weaknesses": [
+            "Complexity: long context models are more complex to design and train.",
+            "Memory: still requires significant memory for very long contexts.",
+            "Quality: context compression may lose some information."
+        ],
+        "alternatives": ["Short Context Models", "Hierarchical Attention", "Retrieval-Augmented Generation", "Sliding Window"],
+        "explanation": "Enables language models to process and understand very long sequences (tens of thousands to millions of tokens) through efficient attention mechanisms, context compression, and memory management techniques."
+    },
+    "semester_10/lecture_64_llm_architecture_advanced/mixture_of_experts/README.md": {
+        "name": "Mixture of Experts (MoE)",
+        "problem": "Scales model capacity by using multiple expert networks where only a subset of experts are activated for each input, enabling very large models with manageable computational cost.",
+        "intuition": "Like a team of specialists: Mixture of Experts is like having a team of specialists where each expert handles different types of problems - when a question comes in, a router (gating network) decides which 1-2 experts are best suited (like routing a medical question to a doctor, not a lawyer) - only those experts process the input, so you get the benefit of many specialists (large model capacity) without the cost of consulting all of them (computational efficiency).",
+        "inputs": "Input tokens, expert networks, gating/router network, number of active experts, expert capacity.",
+        "outputs": "Expert-selected outputs, routed computations, scaled model capacity, efficient processing.",
+        "steps": [
+            "Create experts: create multiple expert networks (feedforward layers).",
+            "Create router: create gating network that routes inputs to experts.",
+            "Route: router determines which experts to activate for each token.",
+            "Select: select top-k experts (typically 1-2) for each token.",
+            "Process: each selected expert processes the token independently.",
+            "Combine: combine outputs from selected experts (weighted sum or concatenation).",
+            "Load balance: ensure experts are used evenly (load balancing loss).",
+            "Train: train experts and router jointly.",
+            "Scale: scale model by adding more experts without proportional compute increase.",
+            "Optimize: optimize routing and expert utilization."
+        ],
+        "example": "MoE: 8 experts, router selects top-2 → input token → router: scores experts → select: expert 3 (0.6), expert 7 (0.4) → process: both experts process token → combine: weighted sum (0.6·expert3 + 0.4·expert7) → output → capacity: 8 experts, compute: only 2 active → MoE scales efficiently.",
+        "time_complexity": "O(e·d) where e is number of active experts (typically 1-2), d is expert dimension (much less than O(E·d) for all experts).",
+        "space_complexity": "O(E·d) where E is total experts, d is expert size (all experts stored, but only few active).",
+        "strengths": [
+            "Scalability: enables very large models (trillions of parameters) with manageable compute.",
+            "Efficiency: only activates subset of experts, reducing computation.",
+            "Specialization: experts can specialize in different patterns or domains."
+        ],
+        "weaknesses": [
+            "Routing: routing decisions can be suboptimal.",
+            "Load balancing: requires careful load balancing to use experts evenly.",
+            "Complexity: more complex than dense models."
+        ],
+        "alternatives": ["Dense Models", "Sparse Models", "Conditional Computation", "Switch Transformers"],
+        "explanation": "Scales model capacity by using multiple expert networks where only a subset of experts are activated for each input, enabling very large models with manageable computational cost."
+    },
+    "semester_10/lecture_64_llm_architecture_advanced/multimodal_llms/README.md": {
+        "name": "Multimodal Large Language Models",
+        "problem": "Extends language models to understand and generate content across multiple modalities (text, images, audio, video) by learning unified representations and cross-modal understanding.",
+        "intuition": "Like a multilingual person who also understands pictures: multimodal LLMs are like someone who speaks multiple languages and also understands images, sounds, and videos - they can read text, look at an image, listen to audio, and understand how they all relate - when you show them a picture and ask 'what's in this image?', they can describe it in text, or when you describe something in text, they can generate an image - they understand the connections between different types of information.",
+        "inputs": "Text, images, audio, video, multimodal inputs, cross-modal queries.",
+        "outputs": "Multimodal understanding, cross-modal generation, unified representations, multimodal responses.",
+        "steps": [
+            "Encode modalities: encode each modality into embeddings (text encoder, vision encoder, audio encoder).",
+            "Align: align embeddings from different modalities into unified space.",
+            "Fuse: fuse multimodal inputs into combined representation.",
+            "Process: process fused representation with language model.",
+            "Understand: understand relationships between modalities.",
+            "Generate: generate responses in any modality (text, image, etc.).",
+            "Cross-modal: perform cross-modal tasks (image captioning, text-to-image, visual QA).",
+            "Train: train on multimodal datasets with contrastive or generative objectives.",
+            "Fine-tune: fine-tune for specific multimodal tasks.",
+            "Deploy: deploy for multimodal applications."
+        ],
+        "example": "Multimodal LLM: input: image of cat + text 'describe this' → encode: vision encoder extracts image features → align: align with text embeddings → fuse: combine image and text → process: LLM processes fused representation → generate: 'A fluffy orange cat sitting on a windowsill' → multimodal understanding → can also: text → image, audio → text, etc.",
+        "time_complexity": "O(n + m) where n is text length, m is image/audio size (encoding + LLM processing).",
+        "space_complexity": "O(m + n) where m is model size, n is multimodal input size (encoders + LLM).",
+        "strengths": [
+            "Versatility: handles multiple input and output modalities.",
+            "Understanding: understands relationships between different modalities.",
+            "Applications: enables diverse applications (image captioning, visual QA, text-to-image)."
+        ],
+        "weaknesses": [
+            "Complexity: more complex than text-only models.",
+            "Training: requires large multimodal datasets.",
+            "Compute: higher computational requirements for multimodal processing."
+        ],
+        "alternatives": ["Text-Only LLMs", "Separate Modality Models", "Multimodal Fusion", "Cross-Modal Retrieval"],
+        "explanation": "Extends language models to understand and generate content across multiple modalities (text, images, audio, video) by learning unified representations and cross-modal understanding."
+    },
+    "semester_10/lecture_64_llm_architecture_advanced/sparse_attention/README.md": {
+        "name": "Sparse Attention",
+        "problem": "Reduces the quadratic complexity of attention mechanisms by computing attention only over a sparse subset of positions, enabling efficient processing of long sequences while maintaining model performance.",
+        "intuition": "Like selective reading: sparse attention is like reading a book but only paying close attention to important pages - instead of reading every word carefully (full attention, O(n²)), you skim most pages and focus on key sections (sparse attention, O(n√n) or O(n log n)) - you still understand the book, but much faster, and you can handle much longer books (sequences) this way.",
+        "inputs": "Query, key, value matrices, attention pattern, sparsity strategy, sequence length.",
+        "outputs": "Sparse attention output, efficient computation, reduced memory, long sequence processing.",
+        "steps": [
+            "Choose pattern: select sparse attention pattern (local, strided, random, learned).",
+            "Compute scores: compute attention scores for query-key pairs.",
+            "Select: select top-k positions or use pattern to determine sparse set.",
+            "Mask: apply mask to zero out attention to non-selected positions.",
+            "Attend: compute attention only over selected sparse positions.",
+            "Aggregate: aggregate attention outputs from sparse positions.",
+            "Optimize: optimize attention pattern for task (learned sparse attention).",
+            "Scale: scale to very long sequences with sparse attention.",
+            "Validate: validate that sparse attention maintains performance.",
+            "Deploy: deploy for efficient long-sequence processing."
+        ],
+        "example": "Sparse attention: sequence length 10K → full attention: 10K×10K = 100M operations → sparse: local window (512) + strided (every 64th) → attend to: 512 + 156 = 668 positions → operations: 10K×668 = 6.68M (15x reduction) → performance: 95% of full attention → sparse attention efficient.",
+        "time_complexity": "O(n·k) where n is sequence length, k is sparse attention size (k << n), vs O(n²) for full attention.",
+        "space_complexity": "O(n·k) where k is sparse attention size (much less than O(n²) for full attention matrix).",
+        "strengths": [
+            "Efficiency: dramatically reduces computational and memory requirements.",
+            "Scalability: enables processing of much longer sequences.",
+            "Performance: can maintain good performance with careful pattern design."
+        ],
+        "weaknesses": [
+            "Pattern design: requires careful design of attention patterns.",
+            "Information loss: may miss some long-range dependencies.",
+            "Complexity: implementing efficient sparse attention can be complex."
+        ],
+        "alternatives": ["Full Attention", "Local Attention", "Sliding Window", "Linear Attention"],
+        "explanation": "Reduces the quadratic complexity of attention mechanisms by computing attention only over a sparse subset of positions, enabling efficient processing of long sequences while maintaining model performance."
+    },
+    "semester_10/lecture_64_llm_architecture_advanced/transformer_optimization/README.md": {
+        "name": "Transformer Optimization",
+        "problem": "Optimizes transformer architectures for efficiency, speed, and scalability through architectural improvements, algorithmic optimizations, and hardware-aware design while maintaining model quality.",
+        "intuition": "Like optimizing a car engine: transformer optimization is like optimizing a car engine for better performance and fuel efficiency - you improve the engine design (architecture), use better fuel (algorithms), and tune it for the road conditions (hardware) - the goal is to make the transformer faster, use less memory, and scale better while still delivering the same quality (like a car that goes faster, uses less fuel, but still drives smoothly).",
+        "inputs": "Transformer model, optimization objectives, hardware constraints, performance requirements, quality targets.",
+        "outputs": "Optimized transformer, improved efficiency, faster inference, reduced memory, maintained quality.",
+        "steps": [
+            "Analyze: analyze transformer bottlenecks (attention, feedforward, memory).",
+            "Choose optimizations: select optimization techniques (Flash Attention, activation checkpointing, quantization).",
+            "Optimize attention: optimize attention mechanism (Flash Attention, sparse attention, linear attention).",
+            "Optimize feedforward: optimize feedforward layers (GLU variants, SwiGLU, gated mechanisms).",
+            "Reduce memory: reduce memory usage (gradient checkpointing, activation offloading).",
+            "Quantize: quantize weights and activations (INT8, INT4 quantization).",
+            "Optimize kernels: use optimized CUDA kernels or specialized hardware.",
+            "Architecture: improve architecture (better normalization, activation functions, layer design).",
+            "Validate: validate optimized model maintains quality.",
+            "Deploy: deploy optimized transformer for production."
+        ],
+        "example": "Transformer optimization: GPT-3 → Flash Attention: 2x faster attention → gradient checkpointing: 50% memory reduction → INT8 quantization: 4x model size reduction → optimized kernels: 1.5x speedup → result: 3x faster inference, 8x smaller model, 95% quality → transformer optimized.",
+        "time_complexity": "O(n²/d) or O(n log n) with optimizations where n is sequence length, d is optimization factor (improved from O(n²)).",
+        "space_complexity": "O(n/d) where d is memory optimization factor (reduced from O(n) through checkpointing, quantization).",
+        "strengths": [
+            "Efficiency: significantly improves inference speed and reduces memory.",
+            "Scalability: enables larger models and longer sequences.",
+            "Deployability: makes transformers practical for resource-constrained deployments."
+        ],
+        "weaknesses": [
+            "Complexity: optimization techniques add implementation complexity.",
+            "Trade-offs: some optimizations may have quality trade-offs.",
+            "Hardware-specific: some optimizations are hardware-specific."
+        ],
+        "alternatives": ["Standard Transformers", "Efficient Architectures", "Model Compression", "Hardware Acceleration"],
+        "explanation": "Optimizes transformer architectures for efficiency, speed, and scalability through architectural improvements, algorithmic optimizations, and hardware-aware design while maintaining model quality."
+    },
+    "semester_10/lecture_65_llm_training_advanced/distributed_training_llm/README.md": {
+        "name": "Distributed Training for LLMs",
+        "problem": "Trains large language models across multiple GPUs or machines using data parallelism, model parallelism, and pipeline parallelism to handle models that don't fit on a single device.",
+        "intuition": "Like a team building a huge structure: distributed training for LLMs is like building a huge structure with a team - instead of one person trying to build everything (single GPU), you divide the work: some people work on different parts of the structure simultaneously (data parallelism), some people work on different sections of the same part (model parallelism), and work flows through the team like an assembly line (pipeline parallelism) - together, the team can build structures (train models) that no single person could handle alone.",
+        "inputs": "Large model, training data, multiple GPUs/machines, parallelism strategy, communication infrastructure.",
+        "outputs": "Trained model, distributed training, scaled computation, efficient resource utilization.",
+        "steps": [
+            "Partition model: partition model across devices if using model parallelism.",
+            "Partition data: partition data across devices if using data parallelism.",
+            "Distribute: distribute model parts and data to different GPUs/machines.",
+            "Forward pass: each device performs forward pass on its portion.",
+            "Communicate: devices communicate activations and gradients (all-reduce, all-gather).",
+            "Backward pass: each device performs backward pass and computes gradients.",
+            "Synchronize: synchronize gradients across devices (gradient averaging).",
+            "Update: update model parameters (may require gradient synchronization).",
+            "Pipeline: if using pipeline parallelism, overlap computation and communication.",
+            "Optimize: optimize communication patterns and load balancing."
+        ],
+        "example": "Distributed LLM training: GPT-3 (175B parameters) → 8 GPUs → model parallelism: split model across 8 GPUs (22B params each) → data parallelism: 8 data batches → forward: each GPU processes its layer + batch → communicate: all-reduce gradients → backward: compute gradients → update: synchronized parameter update → 8x throughput → distributed training operational.",
+        "time_complexity": "O(n/(p·d)) where n is training time, p is parallelism degree, d is devices (theoretical speedup, limited by communication).",
+        "space_complexity": "O(m/p) per device where m is model size, p is number of devices (model partitioned).",
+        "strengths": [
+            "Scalability: enables training models too large for single device.",
+            "Speed: parallel training reduces training time.",
+            "Feasibility: makes training very large models feasible."
+        ],
+        "weaknesses": [
+            "Communication: communication overhead can limit speedup.",
+            "Complexity: distributed training is complex to set up and debug.",
+            "Synchronization: requires careful synchronization and load balancing."
+        ],
+        "alternatives": ["Single Device Training", "Model Parallelism", "Data Parallelism", "Pipeline Parallelism"],
+        "explanation": "Trains large language models across multiple GPUs or machines using data parallelism, model parallelism, and pipeline parallelism to handle models that don't fit on a single device."
+    },
+    "semester_10/lecture_65_llm_training_advanced/gradient_checkpointing/README.md": {
+        "name": "Gradient Checkpointing",
+        "problem": "Reduces memory usage during backpropagation by trading computation for memory - storing only selected activations and recomputing others during backward pass, enabling training of larger models with limited GPU memory.",
+        "intuition": "Like taking notes selectively: gradient checkpointing is like taking notes during a lecture - instead of writing down everything (storing all activations, uses lots of memory), you only write down key points (checkpoint activations) and reconstruct the details later when needed (recompute activations during backward pass) - you use more time (recomputation) but save space (memory), allowing you to handle longer lectures (larger models) with the same notebook (GPU memory).",
+        "inputs": "Neural network, forward activations, memory budget, checkpoint strategy, recomputation schedule.",
+        "outputs": "Memory-efficient training, reduced memory usage, larger model capacity, gradient computation.",
+        "steps": [
+            "Forward pass: perform forward pass through network.",
+            "Checkpoint: store activations only at selected checkpoints (every N layers).",
+            "Discard: discard non-checkpoint activations to save memory.",
+            "Backward pass: start backward pass from output.",
+            "Recompute: when needed, recompute activations from nearest checkpoint.",
+            "Compute gradients: compute gradients using recomputed activations.",
+            "Continue: continue backward pass, recomputing as needed.",
+            "Optimize: optimize checkpoint placement for memory-compute trade-off.",
+            "Validate: validate that gradients are computed correctly.",
+            "Train: train model with reduced memory footprint."
+        ],
+        "example": "Gradient checkpointing: 100-layer transformer → memory: store all activations = 40GB → checkpointing: checkpoint every 10 layers → store: 10 checkpoints (4GB) → backward: recompute activations between checkpoints → memory: 4GB + recomputation overhead → result: 10x memory reduction, 30% compute increase → larger models trainable.",
+        "time_complexity": "O(n + r) where n is forward pass time, r is recomputation time (typically 30-50% overhead).",
+        "space_complexity": "O(m/c) where m is total activation memory, c is checkpoint frequency (reduced from O(m)).",
+        "strengths": [
+            "Memory efficiency: dramatically reduces memory usage (5-10x reduction).",
+            "Larger models: enables training models that don't fit in memory otherwise.",
+            "Flexibility: can adjust checkpoint frequency for memory-compute trade-off."
+        ],
+        "weaknesses": [
+            "Compute overhead: recomputation adds 30-50% training time.",
+            "Complexity: requires careful checkpoint placement.",
+            "Trade-off: must balance memory savings vs compute cost."
+        ],
+        "alternatives": ["Full Activation Storage", "CPU Offloading", "Model Parallelism", "Reduced Batch Size"],
+        "explanation": "Reduces memory usage during backpropagation by trading computation for memory - storing only selected activations and recomputing others during backward pass, enabling training of larger models with limited GPU memory."
+    },
+    "semester_10/lecture_65_llm_training_advanced/mixed_precision_training/README.md": {
+        "name": "Mixed Precision Training",
+        "problem": "Accelerates neural network training by using lower precision (FP16/BF16) for most operations while maintaining FP32 precision for critical operations, reducing memory usage and increasing training speed on modern GPUs.",
+        "intuition": "Like using different tools for different tasks: mixed precision training is like using a fast but less precise tool (FP16) for most work and a slower but precise tool (FP32) only when you need accuracy - you do most calculations quickly with FP16 (like rough measurements), but use FP32 for critical calculations that need precision (like final measurements) - this makes the overall work much faster while maintaining accuracy where it matters.",
+        "inputs": "Model weights, activations, gradients, loss scaling, precision settings, GPU support.",
+        "outputs": "Faster training, reduced memory, maintained accuracy, optimized computation.",
+        "steps": [
+            "Configure: configure mixed precision training (FP16/BF16 for most ops, FP32 for critical).",
+            "Forward pass: perform forward pass using FP16/BF16 for activations and weights.",
+            "Compute loss: compute loss in FP16/BF16.",
+            "Scale loss: scale loss by factor (e.g., 2^16) to prevent underflow.",
+            "Backward pass: compute gradients in FP16/BF16.",
+            "Unscale: unscale gradients before optimizer step.",
+            "Master weights: maintain FP32 master copy of weights for precision.",
+            "Update: update FP32 master weights, then copy to FP16 for next iteration.",
+            "Handle overflow: detect and handle gradient overflow (skip update if overflow).",
+            "Optimize: optimize loss scaling and precision settings."
+        ],
+        "example": "Mixed precision: transformer training → FP32 baseline: 100 hours, 16GB memory → mixed precision: FP16 for most ops, FP32 for master weights → speed: 2x faster (50 hours) → memory: 50% reduction (8GB) → accuracy: 99.5% of FP32 → mixed precision successful.",
+        "time_complexity": "O(n/2) approximately where n is FP32 training time (2x speedup on modern GPUs with tensor cores).",
+        "space_complexity": "O(m/2) where m is FP32 memory usage (approximately 50% reduction with FP16).",
+        "strengths": [
+            "Speed: 1.5-2x faster training on modern GPUs with tensor cores.",
+            "Memory: reduces memory usage by ~50%, enabling larger batch sizes.",
+            "Accuracy: maintains model accuracy with proper loss scaling."
+        ],
+        "weaknesses": [
+            "Hardware: requires GPU support for mixed precision (Tensor Cores, etc.).",
+            "Tuning: requires tuning loss scaling factor.",
+            "Overflow: risk of gradient overflow if not properly scaled."
+        ],
+        "alternatives": ["FP32 Training", "FP16 Training", "BF16 Training", "INT8 Training"],
+        "explanation": "Accelerates neural network training by using lower precision (FP16/BF16) for most operations while maintaining FP32 precision for critical operations, reducing memory usage and increasing training speed on modern GPUs."
+    },
+    "semester_10/lecture_65_llm_training_advanced/model_parallelism/README.md": {
+        "name": "Model Parallelism for LLMs",
+        "problem": "Partitions large language models across multiple devices by splitting layers or tensors, enabling training of models too large to fit on a single GPU while maintaining model integrity.",
+        "intuition": "Like splitting a large painting across multiple canvases: model parallelism is like painting a huge mural by splitting it across multiple canvases - each artist (GPU) works on their section of the painting (model partition), and they pass their work to the next artist (communication) who continues - the final painting (model) is complete only when all sections are done together - this allows creating much larger paintings (models) than any single canvas (GPU) could hold.",
+        "inputs": "Large model, multiple GPUs, partitioning strategy, communication pattern, model architecture.",
+        "outputs": "Partitioned model, distributed computation, scaled model capacity, trained model.",
+        "steps": [
+            "Analyze model: analyze model structure and memory requirements.",
+            "Choose strategy: select partitioning strategy (tensor parallelism, pipeline parallelism, or hybrid).",
+            "Partition: partition model layers or tensors across GPUs.",
+            "Distribute: distribute model partitions to different GPUs.",
+            "Forward pass: each GPU processes its partition, communicates activations to next GPU.",
+            "Communicate: GPUs communicate activations and gradients (all-gather, all-reduce).",
+            "Backward pass: each GPU computes gradients for its partition.",
+            "Synchronize: synchronize gradients across partitions.",
+            "Update: update parameters in each partition.",
+            "Optimize: optimize communication patterns and load balancing."
+        ],
+        "example": "Model parallelism: GPT-3 (175B params) → 8 GPUs → tensor parallelism: split attention and FFN across GPUs → GPU 0-3: first half of layers → GPU 4-7: second half → forward: activations flow GPU 0→1→2→...→7 → backward: gradients flow GPU 7→6→...→0 → communication: all-reduce for synchronization → model parallel training operational.",
+        "time_complexity": "O(n/p + c) where n is sequential time, p is parallelism degree, c is communication overhead.",
+        "space_complexity": "O(m/p) per GPU where m is model size, p is number of GPUs (model partitioned).",
+        "strengths": [
+            "Scalability: enables training models larger than single GPU memory.",
+            "Efficiency: better memory utilization across multiple GPUs.",
+            "Feasibility: makes training very large models feasible."
+        ],
+        "weaknesses": [
+            "Communication: communication overhead can be significant.",
+            "Complexity: model parallelism is complex to implement and debug.",
+            "Load balancing: requires careful load balancing across partitions."
+        ],
+        "alternatives": ["Data Parallelism", "Pipeline Parallelism", "Hybrid Parallelism", "CPU Offloading"],
+        "explanation": "Partitions large language models across multiple devices by splitting layers or tensors, enabling training of models too large to fit on a single GPU while maintaining model integrity."
     }
 }
 
