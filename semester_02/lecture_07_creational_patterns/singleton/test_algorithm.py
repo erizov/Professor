@@ -21,10 +21,10 @@ class TestSingleton(AlgorithmTestCase):
     def setUp(self):
         """Set up test fixtures."""
         from semester_02.lecture_07_creational_patterns.singleton.algorithm import (
-            __new__,
+            Singleton,
         )
 
-        self.algorithm = __new__
+        self.algorithm = Singleton
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

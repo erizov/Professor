@@ -72,8 +72,8 @@ class TestBellmanford(AlgorithmTestCase):
 
     def test_disconnected_graph(self):
         """Test with disconnected components."""
-        graph = {0: [1], 1: [0], 2: [3], 3: [2]}
-        result = self.algorithm(graph, 0)
+        graph = {0: [(1, 1)], 1: [(0, 1)], 2: [(3, 1)], 3: [(2, 1)]}
+        result = self.algorithm(graph, 0, 4)
         self.assertIn(0, result)
 
 

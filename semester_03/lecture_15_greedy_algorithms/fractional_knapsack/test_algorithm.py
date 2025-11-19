@@ -89,15 +89,19 @@ class TestFractionalknapsack(AlgorithmTestCase):
         self.assertGreater(result, 0)
 
     def test_memoization(self):
-        """Test that DP uses memoization."""
+        """Test greedy algorithm performance."""
         import time
 
+        weights = [10, 20, 30] * 10
+        values = [60, 100, 120] * 10
+        capacity = 50
+        
         start = time.time()
-        result1 = self.algorithm(30)
+        result1 = self.algorithm(weights, values, capacity)
         time1 = time.time() - start
 
         start = time.time()
-        result2 = self.algorithm(30)
+        result2 = self.algorithm(weights, values, capacity)
         time2 = time.time() - start
 
         self.assertEqual(result1, result2)

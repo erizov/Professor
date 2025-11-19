@@ -92,12 +92,15 @@ class TestEditdistance(AlgorithmTestCase):
         """Test that DP uses memoization."""
         import time
 
+        s1 = "kitten" * 5
+        s2 = "sitting" * 5
+        
         start = time.time()
-        result1 = self.algorithm(30)
+        result1 = self.algorithm(s1, s2)
         time1 = time.time() - start
 
         start = time.time()
-        result2 = self.algorithm(30)
+        result2 = self.algorithm(s1, s2)
         time2 = time.time() - start
 
         self.assertEqual(result1, result2)

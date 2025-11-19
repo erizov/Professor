@@ -80,7 +80,9 @@ class TestAdapter(AlgorithmTestCase):
 
     def test_object_creation(self):
         """Test pattern object creation."""
-        instance = self.algorithm()
+        from semester_02.lecture_08_structural_patterns.adapter.algorithm import Adaptee
+        adaptee = Adaptee()
+        instance = self.algorithm(adaptee)
         self.assertIsNotNone(instance)
 
     def test_pattern_behavior(self):

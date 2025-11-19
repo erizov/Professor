@@ -80,7 +80,7 @@ class TestJwt(AlgorithmTestCase):
 
     def test_object_creation(self):
         """Test pattern object creation."""
-        instance = self.algorithm()
+        instance = self.algorithm("test_secret_key")
         self.assertIsNotNone(instance)
 
     def test_pattern_behavior(self):

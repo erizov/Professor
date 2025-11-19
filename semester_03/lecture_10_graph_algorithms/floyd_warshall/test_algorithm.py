@@ -72,9 +72,17 @@ class TestFloydwarshall(AlgorithmTestCase):
 
     def test_disconnected_graph(self):
         """Test with disconnected components."""
-        graph = {0: [1], 1: [0], 2: [3], 3: [2]}
-        result = self.algorithm(graph, 0)
-        self.assertIn(0, result)
+        import math
+        n = 4
+        # Create adjacency matrix with disconnected components
+        graph = [[0 if i == j else math.inf for j in range(n)] for i in range(n)]
+        graph[0][1] = 1
+        graph[1][0] = 1
+        graph[2][3] = 1
+        graph[3][2] = 1
+        result = self.algorithm(graph, n)
+        self.assertIsNotNone(result)
+        self.assertEqual(len(result), n)
 
 
 if __name__ == "__main__":

@@ -80,7 +80,7 @@ class TestLeaderelection(AlgorithmTestCase):
 
     def test_object_creation(self):
         """Test pattern object creation."""
-        instance = self.algorithm()
+        instance = self.algorithm(node_id=1, nodes=[1, 2, 3, 4, 5])
         self.assertIsNotNone(instance)
 
     def test_pattern_behavior(self):

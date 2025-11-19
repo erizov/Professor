@@ -80,7 +80,9 @@ class TestProxy(AlgorithmTestCase):
 
     def test_object_creation(self):
         """Test pattern object creation."""
-        instance = self.algorithm()
+        from semester_02.lecture_08_structural_patterns.proxy.algorithm import RealSubject
+        real_subject = RealSubject()
+        instance = self.algorithm(real_subject)
         self.assertIsNotNone(instance)
 
     def test_pattern_behavior(self):
