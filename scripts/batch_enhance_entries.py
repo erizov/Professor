@@ -11955,6 +11955,482 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Black Box Models", "Post-Hoc Explanations", "Attention Visualization", "Probing"],
         "explanation": "Provides methods to understand and explain LLM behavior, decisions, and internal mechanisms, enabling transparency, debugging, and trust in LLM systems."
+    },
+    "semester_10/lecture_63_ai_advanced/continual_learning/README.md": {
+        "name": "Continual Learning",
+        "problem": "Enables models to learn continuously from new data over time without forgetting previously learned knowledge, allowing AI systems to adapt to changing environments and accumulate knowledge.",
+        "intuition": "Like lifelong learning: Continual Learning is like a person who keeps learning new things throughout life without forgetting what they already know - when you learn a new language, you don't forget your native language - continual learning does this for AI: it learns new tasks or data while preserving knowledge from previous tasks, allowing models to grow and adapt over time.",
+        "inputs": "New data streams, previous model, memory mechanisms, learning strategies, task boundaries.",
+        "outputs": "Updated model, preserved knowledge, accumulated learning, adaptive system, lifelong learner.",
+        "steps": [
+            "Receive: receive new data or task.",
+            "Protect: protect important previous knowledge (regularization, memory replay).",
+            "Learn: learn from new data while preserving old knowledge.",
+            "Update: update model parameters carefully.",
+            "Replay: optionally replay previous data to prevent forgetting.",
+            "Consolidate: consolidate new and old knowledge.",
+            "Evaluate: evaluate performance on both new and old tasks.",
+            "Adapt: adapt learning strategy based on performance.",
+            "Store: store important examples or patterns in memory.",
+            "Iterate: continue learning from subsequent data streams."
+        ],
+        "example": "Continual Learning: task 1: learn to classify cats/dogs → task 2: learn to classify birds/fish → protect: use regularization to prevent forgetting cats/dogs → learn: learn birds/fish → replay: occasionally replay cat/dog examples → result: model knows all 4 classes → Continual Learning successful.",
+        "time_complexity": "O(n + m) where n is new data size, m is replay data size (learning + replay overhead).",
+        "space_complexity": "O(p + e) where p is model parameters, e is memory for examples (episodic memory).",
+        "strengths": [
+            "Adaptability: enables models to adapt to new data over time.",
+            "Efficiency: avoids retraining on all data from scratch.",
+            "Lifelong: supports lifelong learning scenarios."
+        ],
+        "weaknesses": [
+            "Catastrophic forgetting: risk of forgetting previous knowledge.",
+            "Memory: requires memory mechanisms to prevent forgetting.",
+            "Complexity: more complex than standard training."
+        ],
+        "alternatives": ["Retraining from Scratch", "Multi-Task Learning", "Transfer Learning", "Elastic Weight Consolidation"],
+        "explanation": "Enables models to learn continuously from new data over time without forgetting previously learned knowledge, allowing AI systems to adapt to changing environments and accumulate knowledge."
+    },
+    "semester_10/lecture_63_ai_advanced/few_shot_learning_advanced/README.md": {
+        "name": "Advanced Few-Shot Learning",
+        "problem": "Enables models to learn new tasks from very few examples (often just 1-5 examples) using advanced techniques like meta-learning, metric learning, and prompt engineering, making AI systems highly data-efficient.",
+        "intuition": "Like learning from one example: Advanced Few-Shot Learning is like learning to recognize a new animal from just one picture - you use your general knowledge about animals (pre-trained knowledge) and the one example to quickly understand the new animal - advanced few-shot learning does this for AI: it uses pre-trained knowledge and sophisticated learning techniques to learn new tasks from just a few examples.",
+        "inputs": "Few examples (1-5), pre-trained model, task description, learning strategy, support set.",
+        "outputs": "Learned task, adapted model, few-shot predictions, efficient learning, data-efficient system.",
+        "steps": [
+            "Pre-train: pre-train model on diverse tasks (meta-learning setup).",
+            "Receive: receive few examples for new task (support set).",
+            "Encode: encode examples into representations.",
+            "Compare: compare new examples with learned prototypes or embeddings.",
+            "Adapt: adapt model quickly to new task (fine-tuning, prompt tuning).",
+            "Learn: learn task-specific patterns from few examples.",
+            "Generalize: generalize to new examples (query set).",
+            "Optimize: optimize for few-shot performance.",
+            "Evaluate: evaluate on test examples.",
+            "Iterate: iterate to improve few-shot learning."
+        ],
+        "example": "Advanced Few-Shot Learning: pre-train: on many classification tasks → new task: classify 3 types of flowers → examples: 1 example per flower (3 total) → encode: encode examples → compare: compare with learned patterns → adapt: quickly adapt model → predict: classify new flower images → result: 85% accuracy with just 3 examples → Advanced Few-Shot Learning successful.",
+        "time_complexity": "O(e + a) where e is encoding time, a is adaptation time (much faster than full training).",
+        "space_complexity": "O(m + p) where m is model size, p is prototype/embedding storage.",
+        "strengths": [
+            "Data efficiency: learns from very few examples.",
+            "Speed: fast adaptation to new tasks.",
+            "Flexibility: handles diverse tasks with minimal data."
+        ],
+        "weaknesses": [
+            "Pre-training: requires extensive pre-training on diverse tasks.",
+            "Task similarity: performance depends on similarity to pre-training tasks.",
+            "Limitations: may struggle with very different or complex tasks."
+        ],
+        "alternatives": ["Standard Training", "Transfer Learning", "Zero-Shot Learning", "Meta-Learning"],
+        "explanation": "Enables models to learn new tasks from very few examples (often just 1-5 examples) using advanced techniques like meta-learning, metric learning, and prompt engineering, making AI systems highly data-efficient."
+    },
+    "semester_10/lecture_63_ai_advanced/lifelong_learning/README.md": {
+        "name": "Lifelong Learning",
+        "problem": "Enables AI systems to learn continuously throughout their operational lifetime, accumulating knowledge from multiple tasks and experiences while maintaining performance on previously learned tasks.",
+        "intuition": "Like human learning: Lifelong Learning is like how humans learn throughout life - you learn math in school, then programming, then new technologies, and you remember and use all of it - lifelong learning does this for AI: it learns new tasks continuously, remembers old tasks, and uses all knowledge together, creating systems that grow smarter over time.",
+        "inputs": "Continuous data streams, multiple tasks, previous knowledge, memory systems, learning mechanisms.",
+        "outputs": "Accumulated knowledge, multi-task capability, adaptive system, lifelong learner, growing intelligence.",
+        "steps": [
+            "Learn task 1: learn first task and store knowledge.",
+            "Learn task 2: learn second task while preserving task 1 knowledge.",
+            "Consolidate: consolidate knowledge from multiple tasks.",
+            "Transfer: transfer knowledge between related tasks.",
+            "Protect: protect important knowledge from forgetting.",
+            "Replay: replay previous tasks to maintain performance.",
+            "Adapt: adapt to new tasks using accumulated knowledge.",
+            "Generalize: generalize across tasks using shared knowledge.",
+            "Update: update knowledge base continuously.",
+            "Evolve: evolve system capabilities over time."
+        ],
+        "example": "Lifelong Learning: task 1: image classification → task 2: object detection → task 3: image segmentation → learn: each task sequentially → protect: prevent forgetting → transfer: use classification knowledge for detection → consolidate: shared visual features → result: system knows all 3 tasks → Lifelong Learning successful.",
+        "time_complexity": "O(Σn_i + r) where n_i is data per task, r is replay overhead (accumulated learning).",
+        "space_complexity": "O(m + k) where m is model size, k is knowledge base size (grows over time).",
+        "strengths": [
+            "Accumulation: accumulates knowledge over time.",
+            "Efficiency: reuses knowledge across tasks.",
+            "Adaptability: adapts to new tasks continuously."
+        ],
+        "weaknesses": [
+            "Forgetting: risk of catastrophic forgetting.",
+            "Scalability: knowledge base grows over time.",
+            "Complexity: managing multiple tasks is complex."
+        ],
+        "alternatives": ["Task-Specific Models", "Multi-Task Learning", "Continual Learning", "Transfer Learning"],
+        "explanation": "Enables AI systems to learn continuously throughout their operational lifetime, accumulating knowledge from multiple tasks and experiences while maintaining performance on previously learned tasks."
+    },
+    "semester_10/lecture_63_ai_advanced/meta_learning/README.md": {
+        "name": "Meta-Learning (Learning to Learn)",
+        "problem": "Trains models to learn how to learn, enabling them to quickly adapt to new tasks with minimal data by leveraging experience from learning many previous tasks.",
+        "intuition": "Like learning study techniques: Meta-Learning is like learning how to study effectively - once you know good study techniques (meta-knowledge), you can quickly learn any new subject - meta-learning does this for AI: it learns general learning strategies from many tasks, then uses those strategies to quickly learn new tasks with little data.",
+        "inputs": "Multiple training tasks, few examples per task, meta-learning algorithm, adaptation mechanism.",
+        "outputs": "Meta-learned model, fast adaptation, learning strategies, few-shot capability, efficient learner.",
+        "steps": [
+            "Sample tasks: sample multiple tasks from task distribution.",
+            "Split: split each task into support (training) and query (test) sets.",
+            "Train: train model on support set of each task.",
+            "Test: test on query set to compute loss.",
+            "Meta-update: update meta-parameters based on performance across tasks.",
+            "Learn strategy: learn general learning strategy from many tasks.",
+            "New task: receive new task with few examples.",
+            "Adapt: quickly adapt using learned strategy.",
+            "Predict: make predictions on new task.",
+            "Iterate: iterate meta-learning to improve strategy."
+        ],
+        "example": "Meta-Learning: tasks: 100 different classification tasks → learn: learn general learning strategy → new task: classify 5 types of birds with 1 example each → adapt: use learned strategy to adapt quickly → predict: classify new bird images → result: 90% accuracy with 5 examples → Meta-Learning successful.",
+        "time_complexity": "O(t·(n + a)) where t is number of tasks, n is training time per task, a is adaptation time (meta-training phase).",
+        "space_complexity": "O(m + s) where m is model size, s is strategy storage (meta-parameters).",
+        "strengths": [
+            "Fast adaptation: enables rapid adaptation to new tasks.",
+            "Data efficiency: learns from few examples using prior experience.",
+            "Generalization: learns generalizable learning strategies."
+        ],
+        "weaknesses": [
+            "Pre-training: requires extensive pre-training on many tasks.",
+            "Task distribution: performance depends on similarity of new tasks to training tasks.",
+            "Complexity: meta-learning algorithms can be complex to design and train."
+        ],
+        "alternatives": ["Transfer Learning", "Few-Shot Learning", "Multi-Task Learning", "Pre-training"],
+        "explanation": "Trains models to learn how to learn, enabling them to quickly adapt to new tasks with minimal data by leveraging experience from learning many previous tasks."
+    },
+    "semester_11/lecture_71_cicd_advanced/conditional_execution/README.md": {
+        "name": "Conditional Execution in CI/CD",
+        "problem": "Enables CI/CD pipelines to execute steps conditionally based on conditions like branch, file changes, environment, or custom logic, making pipelines more efficient and flexible.",
+        "intuition": "Like conditional statements: Conditional Execution in CI/CD is like if-else statements in code - you only run certain steps if conditions are met (like 'only run tests on main branch' or 'only deploy if tests pass') - this makes pipelines smarter and more efficient, skipping unnecessary steps and adapting to different scenarios.",
+        "inputs": "Pipeline steps, conditions, branch information, file changes, environment variables, custom logic.",
+        "outputs": "Conditionally executed steps, efficient pipelines, flexible workflows, optimized builds.",
+        "steps": [
+            "Define conditions: define conditions for step execution (branch, file paths, environment).",
+            "Evaluate: evaluate conditions before each step.",
+            "Check: check if condition is met (true/false).",
+            "Execute: execute step if condition is true.",
+            "Skip: skip step if condition is false.",
+            "Chain: chain conditions for complex logic (AND, OR, NOT).",
+            "Optimize: optimize pipeline by skipping unnecessary steps.",
+            "Log: log which steps were executed and why.",
+            "Validate: validate conditional logic for correctness.",
+            "Iterate: iterate to improve conditional execution."
+        ],
+        "example": "Conditional Execution: branch: feature-branch → condition: only run tests if Python files changed → check: Python files changed? → yes: run tests → condition: only deploy if on main branch → check: main branch? → no: skip deployment → result: efficient pipeline → Conditional Execution successful.",
+        "time_complexity": "O(c + s) where c is condition evaluation time, s is step execution time (only executed steps).",
+        "space_complexity": "O(p + v) where p is pipeline definition, v is variable storage.",
+        "strengths": [
+            "Efficiency: skips unnecessary steps, saving time and resources.",
+            "Flexibility: adapts pipeline behavior to different scenarios.",
+            "Cost: reduces CI/CD costs by avoiding unnecessary executions."
+        ],
+        "weaknesses": [
+            "Complexity: conditional logic can become complex.",
+            "Debugging: conditional execution can make debugging harder.",
+            "Testing: requires testing all conditional paths."
+        ],
+        "alternatives": ["Always Execute", "Manual Triggers", "Separate Pipelines", "Matrix Builds"],
+        "explanation": "Enables CI/CD pipelines to execute steps conditionally based on conditions like branch, file changes, environment, or custom logic, making pipelines more efficient and flexible."
+    },
+    "semester_11/lecture_71_cicd_advanced/dynamic_pipelines/README.md": {
+        "name": "Dynamic Pipelines",
+        "problem": "Generates and modifies CI/CD pipelines dynamically at runtime based on code changes, configuration, or external factors, enabling adaptive and context-aware pipeline execution.",
+        "intuition": "Like adaptive workflows: Dynamic Pipelines are like workflows that adapt to the situation - instead of a fixed recipe, the workflow changes based on what you're cooking (code changes) - if you change Python code, it runs Python tests; if you change Docker files, it builds containers - the pipeline adapts dynamically to what needs to be done.",
+        "inputs": "Code changes, configuration files, pipeline templates, generation logic, runtime context.",
+        "outputs": "Generated pipelines, adaptive workflows, context-aware execution, dynamic steps.",
+        "steps": [
+            "Analyze: analyze code changes and context.",
+            "Determine: determine what needs to be tested/built/deployed.",
+            "Generate: generate pipeline steps dynamically based on analysis.",
+            "Configure: configure steps with appropriate parameters.",
+            "Execute: execute dynamically generated pipeline.",
+            "Adapt: adapt pipeline based on intermediate results.",
+            "Modify: modify pipeline steps at runtime if needed.",
+            "Log: log pipeline generation and execution.",
+            "Validate: validate generated pipeline for correctness.",
+            "Optimize: optimize dynamic generation for performance."
+        ],
+        "example": "Dynamic Pipelines: changes: modified Python files and Dockerfile → analyze: detect file types → generate: Python test steps + Docker build steps → configure: set Python version, Docker tags → execute: run generated pipeline → adapt: add deployment step if tests pass → result: adaptive pipeline → Dynamic Pipelines successful.",
+        "time_complexity": "O(a + g + e) where a is analysis time, g is generation time, e is execution time.",
+        "space_complexity": "O(t + c) where t is template storage, c is context storage.",
+        "strengths": [
+            "Adaptability: adapts to code changes and context.",
+            "Efficiency: only runs necessary steps for current changes.",
+            "Flexibility: supports diverse project structures and workflows."
+        ],
+        "weaknesses": [
+            "Complexity: dynamic generation adds complexity.",
+            "Predictability: pipeline behavior may be less predictable.",
+            "Debugging: debugging dynamic pipelines can be challenging."
+        ],
+        "alternatives": ["Static Pipelines", "Template-Based Pipelines", "Manual Configuration", "Predefined Workflows"],
+        "explanation": "Generates and modifies CI/CD pipelines dynamically at runtime based on code changes, configuration, or external factors, enabling adaptive and context-aware pipeline execution."
+    },
+    "semester_11/lecture_71_cicd_advanced/multi_stage_pipelines/README.md": {
+        "name": "Multi-Stage Pipelines",
+        "problem": "Organizes CI/CD workflows into multiple sequential stages (build, test, deploy) with dependencies and gates between stages, enabling controlled, phased deployments and better pipeline organization.",
+        "intuition": "Like a production line: Multi-Stage Pipelines are like a production line with multiple stations - code goes through stages: first it's built (compiled), then tested (quality check), then deployed (shipped) - each stage must complete successfully before moving to the next, ensuring quality and control - just as products go through quality gates in production, code goes through stages in CI/CD.",
+        "inputs": "Pipeline stages, stage definitions, dependencies, gates, approval requirements, artifacts.",
+        "outputs": "Staged execution, controlled deployments, phased releases, organized workflows.",
+        "steps": [
+            "Define stages: define pipeline stages (build, test, deploy, etc.).",
+            "Configure: configure each stage with steps and requirements.",
+            "Execute stage 1: execute first stage (e.g., build).",
+            "Gate: check if stage 1 passed (gate).",
+            "Pass artifacts: pass artifacts to next stage if gate passed.",
+            "Execute stage 2: execute next stage (e.g., test).",
+            "Gate: check if stage 2 passed.",
+            "Continue: continue through remaining stages.",
+            "Approval: require approval for deployment stages if configured.",
+            "Complete: complete pipeline when all stages pass."
+        ],
+        "example": "Multi-Stage Pipelines: stage 1: build → compile code → gate: build success? → stage 2: test → run tests → gate: tests pass? → stage 3: deploy-staging → deploy to staging → gate: staging OK? → stage 4: deploy-prod → deploy to production → result: controlled deployment → Multi-Stage Pipelines successful.",
+        "time_complexity": "O(Σs_i) where s_i is time for stage i (sequential stages).",
+        "space_complexity": "O(a + c) where a is artifact storage, c is configuration storage.",
+        "strengths": [
+            "Organization: organizes complex workflows into clear stages.",
+            "Control: provides control through gates and approvals.",
+            "Quality: ensures quality through staged validation."
+        ],
+        "weaknesses": [
+            "Time: sequential stages can increase total pipeline time.",
+            "Complexity: managing multiple stages adds complexity.",
+            "Dependencies: stage dependencies must be managed carefully."
+        ],
+        "alternatives": ["Single-Stage Pipelines", "Parallel Pipelines", "Linear Pipelines", "Complex Workflows"],
+        "explanation": "Organizes CI/CD workflows into multiple sequential stages (build, test, deploy) with dependencies and gates between stages, enabling controlled, phased deployments and better pipeline organization."
+    },
+    "semester_11/lecture_71_cicd_advanced/parallel_pipelines/README.md": {
+        "name": "Parallel Pipelines",
+        "problem": "Executes multiple pipeline steps or entire pipelines concurrently, reducing total execution time and improving CI/CD efficiency through parallelization.",
+        "intuition": "Like parallel workers: Parallel Pipelines are like having multiple workers do different tasks simultaneously - instead of one person doing everything sequentially (slow), multiple people work in parallel (fast) - just as a team can finish work faster by working in parallel, parallel pipelines finish faster by running steps concurrently.",
+        "inputs": "Pipeline steps, dependencies, parallel execution config, resources, coordination mechanisms.",
+        "outputs": "Parallel execution, reduced time, improved efficiency, concurrent workflows.",
+        "steps": [
+            "Analyze: analyze step dependencies.",
+            "Identify: identify steps that can run in parallel (no dependencies).",
+            "Group: group independent steps for parallel execution.",
+            "Allocate: allocate resources for parallel execution.",
+            "Execute: execute independent steps concurrently.",
+            "Synchronize: synchronize parallel steps when needed.",
+            "Collect: collect results from parallel steps.",
+            "Merge: merge results for dependent steps.",
+            "Continue: continue with dependent steps after parallel steps complete.",
+            "Optimize: optimize parallel execution for resource usage."
+        ],
+        "example": "Parallel Pipelines: steps: unit tests, integration tests, linting, build → analyze: no dependencies → parallel: run all 4 steps concurrently → execute: 4 steps run simultaneously → collect: gather all results → merge: combine results → time: 10 minutes (vs 40 minutes sequential) → Parallel Pipelines successful.",
+        "time_complexity": "O(max(s_i)) where s_i is time for step i (parallel steps), vs O(Σs_i) sequential.",
+        "space_complexity": "O(r·n) where r is resources per step, n is number of parallel steps (resource allocation).",
+        "strengths": [
+            "Speed: significantly reduces pipeline execution time.",
+            "Efficiency: better resource utilization through parallelization.",
+            "Scalability: scales with available resources."
+        ],
+        "weaknesses": [
+            "Resources: requires more resources for parallel execution.",
+            "Dependencies: must manage step dependencies carefully.",
+            "Complexity: parallel execution adds coordination complexity."
+        ],
+        "alternatives": ["Sequential Pipelines", "Partially Parallel", "Matrix Builds", "Distributed Execution"],
+        "explanation": "Executes multiple pipeline steps or entire pipelines concurrently, reducing total execution time and improving CI/CD efficiency through parallelization."
+    },
+    "semester_11/lecture_71_cicd_advanced/pipeline_optimization/README.md": {
+        "name": "Pipeline Optimization",
+        "problem": "Improves CI/CD pipeline performance, efficiency, and cost through techniques like caching, parallelization, step optimization, and resource management, reducing build times and costs.",
+        "intuition": "Like optimizing a factory: Pipeline Optimization is like optimizing a factory production line - you cache materials (dependency caching), run processes in parallel (parallelization), eliminate waste (unnecessary steps), and use resources efficiently - just as factory optimization makes production faster and cheaper, pipeline optimization makes CI/CD faster and more cost-effective.",
+        "inputs": "Pipeline configuration, performance metrics, resource usage, cost data, optimization strategies.",
+        "outputs": "Optimized pipelines, reduced execution time, lower costs, improved efficiency, better resource usage.",
+        "steps": [
+            "Analyze: analyze current pipeline performance and bottlenecks.",
+            "Identify: identify optimization opportunities (caching, parallelization, step removal).",
+            "Cache: implement caching for dependencies and build artifacts.",
+            "Parallelize: parallelize independent steps.",
+            "Optimize: optimize individual steps (faster tools, better configs).",
+            "Remove: remove unnecessary or redundant steps.",
+            "Resource: optimize resource allocation and usage.",
+            "Monitor: monitor optimized pipeline performance.",
+            "Measure: measure improvements (time, cost, efficiency).",
+            "Iterate: iterate optimizations for continuous improvement."
+        ],
+        "example": "Pipeline Optimization: baseline: 30 minutes, $5 per run → cache: dependencies → parallelize: tests → optimize: faster build tools → result: 10 minutes, $2 per run → 3x faster, 60% cost reduction → Pipeline Optimization successful.",
+        "time_complexity": "O(o) where o is optimized execution time (reduced from baseline).",
+        "space_complexity": "O(c + a) where c is cache storage, a is artifact storage.",
+        "strengths": [
+            "Performance: significantly improves pipeline speed.",
+            "Cost: reduces CI/CD costs through efficiency.",
+            "Resource efficiency: better utilization of resources."
+        ],
+        "weaknesses": [
+            "Complexity: optimization adds complexity to pipelines.",
+            "Trade-offs: some optimizations may have trade-offs.",
+            "Maintenance: optimized pipelines require maintenance."
+        ],
+        "alternatives": ["Unoptimized Pipelines", "Manual Optimization", "Incremental Optimization", "Performance Tuning"],
+        "explanation": "Improves CI/CD pipeline performance, efficiency, and cost through techniques like caching, parallelization, step optimization, and resource management, reducing build times and costs."
+    },
+    "semester_11/lecture_71_cicd_advanced/pipeline_templates/README.md": {
+        "name": "Pipeline Templates",
+        "problem": "Provides reusable, parameterized pipeline templates that can be shared across projects, standardizing CI/CD workflows and reducing duplication while allowing customization.",
+        "intuition": "Like recipe templates: Pipeline Templates are like recipe templates - you have a basic recipe (template) that works for many dishes (projects), and you customize it with different ingredients (parameters) - just as recipe templates save time and ensure consistency, pipeline templates save time and ensure consistent CI/CD practices across projects.",
+        "inputs": "Template definitions, parameters, project context, customization options, template library.",
+        "outputs": "Instantiated pipelines, standardized workflows, reusable templates, customized pipelines.",
+        "steps": [
+            "Create template: create reusable pipeline template with parameters.",
+            "Define parameters: define customizable parameters (language, test commands, etc.).",
+            "Store: store template in template library.",
+            "Select: select appropriate template for project.",
+            "Configure: configure template with project-specific parameters.",
+            "Instantiate: instantiate pipeline from template.",
+            "Customize: customize instantiated pipeline if needed.",
+            "Execute: execute instantiated pipeline.",
+            "Share: share templates across teams/projects.",
+            "Update: update templates and propagate changes."
+        ],
+        "example": "Pipeline Templates: template: Python CI/CD template → parameters: Python version, test command, deploy target → project: web-app → configure: Python 3.9, pytest, staging → instantiate: generate pipeline → execute: run pipeline → result: standardized workflow → Pipeline Templates successful.",
+        "time_complexity": "O(i + e) where i is instantiation time, e is execution time (templates reduce setup time).",
+        "space_complexity": "O(t + p) where t is template storage, p is parameter storage.",
+        "strengths": [
+            "Reusability: templates can be reused across projects.",
+            "Standardization: ensures consistent CI/CD practices.",
+            "Efficiency: reduces pipeline setup time and effort."
+        ],
+        "weaknesses": [
+            "Flexibility: templates may be less flexible than custom pipelines.",
+            "Complexity: complex templates can be difficult to understand.",
+            "Maintenance: template updates affect all using projects."
+        ],
+        "alternatives": ["Custom Pipelines", "Copy-Paste Pipelines", "Pipeline Libraries", "Configuration Files"],
+        "explanation": "Provides reusable, parameterized pipeline templates that can be shared across projects, standardizing CI/CD workflows and reducing duplication while allowing customization."
+    },
+    "semester_11/lecture_72_infrastructure/cost_optimization/README.md": {
+        "name": "Cost Optimization for Infrastructure",
+        "problem": "Reduces infrastructure costs through techniques like right-sizing, reserved instances, spot instances, auto-scaling, and resource optimization, maximizing value while minimizing expenses.",
+        "intuition": "Like budgeting: Cost Optimization for Infrastructure is like smart budgeting - you analyze your spending (resource usage), find waste (over-provisioned resources), and optimize (right-size, use cheaper options) - just as budgeting helps you save money, cost optimization helps you reduce infrastructure costs while maintaining performance.",
+        "inputs": "Resource usage data, cost data, performance requirements, optimization strategies, budget constraints.",
+        "outputs": "Optimized infrastructure, reduced costs, cost reports, resource recommendations, savings analysis.",
+        "steps": [
+            "Analyze: analyze current resource usage and costs.",
+            "Identify: identify cost optimization opportunities (over-provisioning, unused resources).",
+            "Right-size: right-size resources to match actual needs.",
+            "Reserve: use reserved instances for predictable workloads.",
+            "Spot: use spot instances for flexible workloads.",
+            "Auto-scale: implement auto-scaling to match demand.",
+            "Optimize: optimize resource allocation and scheduling.",
+            "Monitor: monitor costs and usage continuously.",
+            "Report: generate cost reports and recommendations.",
+            "Iterate: iterate optimizations for continuous improvement."
+        ],
+        "example": "Cost Optimization: baseline: $10,000/month → analyze: 40% over-provisioned → right-size: reduce instance sizes → reserve: use reserved instances (30% discount) → spot: use spot for batch jobs (70% discount) → result: $6,000/month → 40% cost reduction → Cost Optimization successful.",
+        "time_complexity": "O(a + o) where a is analysis time, o is optimization implementation time.",
+        "space_complexity": "O(d + r) where d is data storage, r is resource configuration storage.",
+        "strengths": [
+            "Savings: significantly reduces infrastructure costs.",
+            "Efficiency: improves resource utilization.",
+            "Value: maximizes value from infrastructure spending."
+        ],
+        "weaknesses": [
+            "Complexity: cost optimization can be complex.",
+            "Trade-offs: some optimizations may impact performance or reliability.",
+            "Monitoring: requires continuous monitoring and adjustment."
+        ],
+        "alternatives": ["Fixed Infrastructure", "Manual Optimization", "Over-Provisioning", "Cost-Aware Design"],
+        "explanation": "Reduces infrastructure costs through techniques like right-sizing, reserved instances, spot instances, auto-scaling, and resource optimization, maximizing value while minimizing expenses."
+    },
+    "semester_11/lecture_72_infrastructure/edge_computing/README.md": {
+        "name": "Edge Computing",
+        "problem": "Processes data and runs applications closer to data sources or users at the network edge, reducing latency, bandwidth usage, and enabling real-time processing for distributed systems.",
+        "intuition": "Like local processing: Edge Computing is like having a local branch office instead of sending everything to headquarters - you process data locally (at the edge) instead of sending it to a central cloud - just as local offices respond faster to local needs, edge computing responds faster by processing data close to where it's needed, reducing delays and bandwidth.",
+        "inputs": "Data sources, edge devices, processing requirements, network conditions, latency constraints.",
+        "outputs": "Edge-processed data, reduced latency, bandwidth savings, real-time responses, distributed processing.",
+        "steps": [
+            "Deploy: deploy edge devices or edge computing infrastructure.",
+            "Configure: configure edge nodes for local processing.",
+            "Receive: receive data at edge from local sources.",
+            "Process: process data locally at edge (filtering, aggregation, ML inference).",
+            "Decide: decide what to send to cloud (processed results vs raw data).",
+            "Send: send only necessary data to cloud.",
+            "Cache: cache frequently used data at edge.",
+            "Sync: synchronize edge and cloud when needed.",
+            "Monitor: monitor edge devices and processing.",
+            "Optimize: optimize edge processing and communication."
+        ],
+        "example": "Edge Computing: IoT sensors → edge device: process sensor data locally → filter: remove noise → aggregate: compute averages → send: send only summaries to cloud → latency: 10ms (vs 200ms to cloud) → bandwidth: 90% reduction → Edge Computing successful.",
+        "time_complexity": "O(p) where p is processing time at edge (reduced latency vs cloud processing).",
+        "space_complexity": "O(e + c) where e is edge storage, c is cache storage.",
+        "strengths": [
+            "Latency: significantly reduces latency for edge applications.",
+            "Bandwidth: reduces bandwidth usage by processing locally.",
+            "Real-time: enables real-time processing and responses."
+        ],
+        "weaknesses": [
+            "Management: managing distributed edge infrastructure is complex.",
+            "Resources: edge devices have limited resources.",
+            "Synchronization: keeping edge and cloud in sync can be challenging."
+        ],
+        "alternatives": ["Cloud Computing", "Fog Computing", "Hybrid Cloud", "Centralized Processing"],
+        "explanation": "Processes data and runs applications closer to data sources or users at the network edge, reducing latency, bandwidth usage, and enabling real-time processing for distributed systems."
+    },
+    "semester_11/lecture_72_infrastructure/hybrid_cloud/README.md": {
+        "name": "Hybrid Cloud",
+        "problem": "Combines on-premises infrastructure with public and private cloud services, enabling organizations to leverage benefits of both while maintaining control, compliance, and flexibility.",
+        "intuition": "Like a hybrid car: Hybrid Cloud is like a hybrid car that uses both gas and electric - you use on-premises (private, controlled) for sensitive data and cloud (scalable, flexible) for other workloads - just as hybrid cars give you the benefits of both power sources, hybrid cloud gives you the benefits of both on-premises control and cloud scalability.",
+        "inputs": "On-premises infrastructure, cloud services, workload requirements, data classification, compliance needs.",
+        "outputs": "Hybrid infrastructure, integrated systems, flexible deployment, optimized workloads, unified management.",
+        "steps": [
+            "Assess: assess workloads and requirements.",
+            "Classify: classify workloads (on-premises vs cloud).",
+            "Deploy: deploy workloads to appropriate environment.",
+            "Connect: connect on-premises and cloud (VPN, dedicated links).",
+            "Integrate: integrate systems and services across environments.",
+            "Manage: manage hybrid infrastructure through unified tools.",
+            "Migrate: migrate workloads between environments as needed.",
+            "Optimize: optimize workload placement based on requirements.",
+            "Secure: secure connections and data across environments.",
+            "Monitor: monitor hybrid infrastructure performance and costs."
+        ],
+        "example": "Hybrid Cloud: sensitive data: on-premises (compliance) → public workloads: AWS (scalability) → connect: VPN between on-premises and AWS → integrate: unified management → migrate: move non-sensitive workloads to cloud → result: best of both worlds → Hybrid Cloud successful.",
+        "time_complexity": "O(d + i) where d is deployment time, i is integration time (varies by workload).",
+        "space_complexity": "O(o + c) where o is on-premises storage, c is cloud storage (distributed).",
+        "strengths": [
+            "Flexibility: provides flexibility to choose optimal environment per workload.",
+            "Control: maintains control over sensitive data on-premises.",
+            "Scalability: leverages cloud scalability for appropriate workloads."
+        ],
+        "weaknesses": [
+            "Complexity: managing hybrid infrastructure is complex.",
+            "Integration: integrating on-premises and cloud can be challenging.",
+            "Cost: may have higher costs due to maintaining both environments."
+        ],
+        "alternatives": ["Public Cloud", "Private Cloud", "On-Premises", "Multi-Cloud"],
+        "explanation": "Combines on-premises infrastructure with public and private cloud services, enabling organizations to leverage benefits of both while maintaining control, compliance, and flexibility."
+    },
+    "semester_11/lecture_72_infrastructure/infrastructure_monitoring/README.md": {
+        "name": "Infrastructure Monitoring",
+        "problem": "Continuously monitors infrastructure health, performance, and availability through metrics, logs, and alerts, enabling proactive issue detection and resolution.",
+        "intuition": "Like a health monitoring system: Infrastructure Monitoring is like a health monitoring system for your body - it continuously checks vital signs (CPU, memory, network), detects problems early (alerts), and helps you stay healthy (proactive maintenance) - just as health monitoring helps prevent illness, infrastructure monitoring helps prevent outages and performance issues.",
+        "inputs": "Infrastructure components, metrics, logs, monitoring agents, alert rules, dashboards.",
+        "outputs": "Monitoring data, alerts, dashboards, performance metrics, health status, incident reports.",
+        "steps": [
+            "Deploy: deploy monitoring agents on infrastructure components.",
+            "Collect: collect metrics (CPU, memory, disk, network).",
+            "Collect logs: collect logs from applications and systems.",
+            "Aggregate: aggregate metrics and logs in monitoring system.",
+            "Visualize: visualize data in dashboards.",
+            "Analyze: analyze metrics for anomalies and trends.",
+            "Alert: send alerts when thresholds are exceeded.",
+            "Correlate: correlate metrics and logs for root cause analysis.",
+            "Report: generate monitoring reports.",
+            "Respond: respond to alerts and incidents."
+        ],
+        "example": "Infrastructure Monitoring: servers: 10 servers → monitor: CPU, memory, disk, network → collect: metrics every 60s → alert: CPU > 80% → dashboard: real-time visualization → detect: CPU spike on server 3 → alert: notification sent → respond: investigate and resolve → Infrastructure Monitoring operational.",
+        "time_complexity": "O(c + a) where c is collection time, a is analysis time (continuous monitoring).",
+        "space_complexity": "O(m + l) where m is metrics storage, l is log storage (time-series data).",
+        "strengths": [
+            "Visibility: provides visibility into infrastructure health and performance.",
+            "Proactive: enables proactive issue detection and resolution.",
+            "Reliability: improves infrastructure reliability through monitoring."
+        ],
+        "weaknesses": [
+            "Overhead: monitoring adds some overhead to infrastructure.",
+            "Noise: too many alerts can cause alert fatigue.",
+            "Complexity: comprehensive monitoring can be complex to set up."
+        ],
+        "alternatives": ["No Monitoring", "Reactive Monitoring", "Basic Monitoring", "Advanced Observability"],
+        "explanation": "Continuously monitors infrastructure health, performance, and availability through metrics, logs, and alerts, enabling proactive issue detection and resolution."
     }
 }
 
