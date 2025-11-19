@@ -1,40 +1,49 @@
-# Key Value Stores
+# Key-Value Stores
 
 1. **Name of Algorithm**  
-   Key Value Stores
+   Key-Value Stores
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements key value stores algorithm.
+   Stores data as simple key-value pairs, providing fast, scalable storage for simple data models where each key maps to a single value, enabling high-performance read/write operations.
 
 3. **Intuition (plain-language explanation)**  
-   Key Value Stores is a fundamental algorithm in computer science.
+   Like a dictionary or phone book: key-value stores are like a simple lookup table where you have a key (like a name) and a value (like a phone number) - you look up the key and get the value instantly. It's the simplest database model: just keys and values, no complex relationships or queries.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Key-value pairs, key (unique identifier), value (data to store), operations (get, put, delete).  
+   - Output: Stored key-value pairs, retrieved values, fast lookups, scalable storage.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Store value: associate value with unique key (put operation).
+2. Hash key: compute hash of key to determine storage location.
+3. Store: save key-value pair in storage (memory, disk, distributed nodes).
+4. Retrieve: look up value by key (get operation).
+5. Hash lookup: compute hash of key to find storage location.
+6. Return value: retrieve and return value associated with key.
+7. Delete: remove key-value pair by key (delete operation).
+8. Scale: distribute key-value pairs across multiple nodes for scalability.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Key Value Stores applied to sample data.
+   Store: put('user:123', '{"name": "John", "email": "john@example.com"}') → hash key → store in node → retrieve: get('user:123') → hash key → find node → return value → fast lookup: O(1) average time.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(1) average for get/put/delete operations (hash-based lookup), O(n) worst case for hash collisions.  
+   - Space: O(n) where n is number of key-value pairs.
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Simplicity: simple data model, easy to understand and use.
+- Performance: extremely fast read/write operations.
+- Scalability: easily scales horizontally across multiple nodes.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Limited queries: no complex queries, only key-based lookups.
+- No relationships: cannot model relationships between data.
+- Value limitations: values are opaque (no querying within values).
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Document Databases, Relational Databases, Column Family Stores, In-Memory Caches
 
 11. **30-second explanation (your own words)**  
-    Key Value Stores solves computational problems efficiently.
+    Stores data as simple key-value pairs, providing fast, scalable storage for simple data models where each key maps to a single value, enabling high-performance read/write operations.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

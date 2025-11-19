@@ -7570,6 +7570,198 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Single Database", "Backup and Restore", "Clustering", "Sharding"],
         "explanation": "Maintains multiple copies of database across different servers, enabling high availability, load distribution, and disaster recovery."
+    },
+    "semester_08/lecture_51_nosql_fundamentals/key_value_stores/README.md": {
+        "name": "Key-Value Stores",
+        "problem": "Stores data as simple key-value pairs, providing fast, scalable storage for simple data models where each key maps to a single value, enabling high-performance read/write operations.",
+        "intuition": "Like a dictionary or phone book: key-value stores are like a simple lookup table where you have a key (like a name) and a value (like a phone number) - you look up the key and get the value instantly. It's the simplest database model: just keys and values, no complex relationships or queries.",
+        "inputs": "Key-value pairs, key (unique identifier), value (data to store), operations (get, put, delete).",
+        "outputs": "Stored key-value pairs, retrieved values, fast lookups, scalable storage.",
+        "steps": [
+            "Store value: associate value with unique key (put operation).",
+            "Hash key: compute hash of key to determine storage location.",
+            "Store: save key-value pair in storage (memory, disk, distributed nodes).",
+            "Retrieve: look up value by key (get operation).",
+            "Hash lookup: compute hash of key to find storage location.",
+            "Return value: retrieve and return value associated with key.",
+            "Delete: remove key-value pair by key (delete operation).",
+            "Scale: distribute key-value pairs across multiple nodes for scalability."
+        ],
+        "example": "Store: put('user:123', '{\"name\": \"John\", \"email\": \"john@example.com\"}') → hash key → store in node → retrieve: get('user:123') → hash key → find node → return value → fast lookup: O(1) average time.",
+        "time_complexity": "O(1) average for get/put/delete operations (hash-based lookup), O(n) worst case for hash collisions.",
+        "space_complexity": "O(n) where n is number of key-value pairs.",
+        "strengths": [
+            "Simplicity: simple data model, easy to understand and use.",
+            "Performance: extremely fast read/write operations.",
+            "Scalability: easily scales horizontally across multiple nodes."
+        ],
+        "weaknesses": [
+            "Limited queries: no complex queries, only key-based lookups.",
+            "No relationships: cannot model relationships between data.",
+            "Value limitations: values are opaque (no querying within values)."
+        ],
+        "alternatives": ["Document Databases", "Relational Databases", "Column Family Stores", "In-Memory Caches"],
+        "explanation": "Stores data as simple key-value pairs, providing fast, scalable storage for simple data models where each key maps to a single value, enabling high-performance read/write operations."
+    },
+    "semester_08/lecture_51_nosql_fundamentals/document_databases/README.md": {
+        "name": "Document Databases",
+        "problem": "Stores data as semi-structured documents (JSON, BSON, XML), enabling flexible schemas and efficient storage of hierarchical data without rigid table structures.",
+        "intuition": "Like filing cabinets with flexible folders: document databases store data as documents (like folders) that can contain different information (like flexible folder contents) - unlike relational databases with fixed tables (like rigid forms), document databases let each document have different fields (like custom folder contents), making them flexible for varying data structures.",
+        "inputs": "Documents (JSON/BSON), document ID, collections, query criteria.",
+        "outputs": "Stored documents, retrieved documents, query results, flexible schema.",
+        "steps": [
+            "Create document: structure data as document (JSON object with fields).",
+            "Assign ID: generate or assign unique document identifier.",
+            "Store: save document in collection (like a table, but schema-less).",
+            "Index: optionally create indexes on document fields for faster queries.",
+            "Query: search documents by field values, nested fields, or conditions.",
+            "Retrieve: return matching documents based on query criteria.",
+            "Update: modify document fields (add, update, delete fields).",
+            "Delete: remove document from collection."
+        ],
+        "example": "Document: {\"_id\": 123, \"name\": \"John\", \"email\": \"john@example.com\", \"orders\": [{\"id\": 1, \"total\": 100}]} → store in 'users' collection → query: find users where email = 'john@example.com' → returns document → flexible: can add new fields without schema changes.",
+        "time_complexity": "O(1) for document lookup by ID, O(n) for collection scans, O(log n) with indexes where n is number of documents.",
+        "space_complexity": "O(d) where d is total document size across all collections.",
+        "strengths": [
+            "Flexible schema: documents can have different structures.",
+            "Hierarchical data: naturally stores nested and complex data.",
+            "Developer-friendly: maps well to object-oriented programming models."
+        ],
+        "weaknesses": [
+            "No joins: cannot join documents like relational tables.",
+            "Data duplication: may store redundant data across documents.",
+            "Query limitations: complex queries may be less efficient than SQL."
+        ],
+        "alternatives": ["Relational Databases", "Key-Value Stores", "Graph Databases", "Column Family Stores"],
+        "explanation": "Stores data as semi-structured documents (JSON, BSON, XML), enabling flexible schemas and efficient storage of hierarchical data without rigid table structures."
+    },
+    "semester_08/lecture_51_nosql_fundamentals/column_family/README.md": {
+        "name": "Column Family Stores",
+        "problem": "Organizes data into column families (groups of related columns), enabling efficient storage and retrieval of wide, sparse tables with billions of rows, optimized for write-heavy workloads.",
+        "intuition": "Like a spreadsheet with flexible columns: column family stores are like spreadsheets where each row can have different columns (like flexible spreadsheets) - data is organized by column families (like grouping related columns together), making it efficient to store and query wide tables with many columns, especially when most rows only use a few columns.",
+        "inputs": "Row key, column family, column qualifiers, values, timestamps.",
+        "outputs": "Stored column families, retrieved rows, efficient wide-table storage.",
+        "steps": [
+            "Define column family: group related columns into column family.",
+            "Create row: generate row key (unique identifier for row).",
+            "Store columns: store column qualifiers and values within column family.",
+            "Organize: data organized by row key, then column family, then column qualifier.",
+            "Retrieve row: fetch all columns for a row key (efficient row access).",
+            "Query columns: query specific columns or column families.",
+            "Update: add or update columns within column family.",
+            "Delete: remove columns or entire rows."
+        ],
+        "example": "Row key: 'user:123' → column family: 'profile' → columns: name='John', email='john@example.com' → column family: 'orders' → columns: order1='...', order2='...' → retrieve: get row 'user:123' → returns all column families → efficient for wide, sparse data.",
+        "time_complexity": "O(1) for row lookup by key, O(c) for column access where c is number of columns, O(log n) with indexes.",
+        "space_complexity": "O(r·c) where r is number of rows, c is average columns per row (sparse storage).",
+        "strengths": [
+            "Wide tables: efficiently handles tables with many columns.",
+            "Sparse data: efficient storage when rows have few columns.",
+            "Write performance: optimized for high write throughput."
+        ],
+        "weaknesses": [
+            "Complexity: more complex data model than key-value or document stores.",
+            "Query limitations: limited query capabilities compared to relational databases.",
+            "Learning curve: requires understanding of column family concepts."
+        ],
+        "alternatives": ["Relational Databases", "Document Databases", "Key-Value Stores", "Time-Series Databases"],
+        "explanation": "Organizes data into column families (groups of related columns), enabling efficient storage and retrieval of wide, sparse tables with billions of rows, optimized for write-heavy workloads."
+    },
+    "semester_08/lecture_51_nosql_fundamentals/graph_databases/README.md": {
+        "name": "Graph Databases",
+        "problem": "Stores data as nodes (entities) and edges (relationships), enabling efficient traversal and querying of complex relationships and network structures.",
+        "intuition": "Like a social network: graph databases store data like a social network where people are nodes (entities) and friendships are edges (relationships) - you can easily find 'friends of friends' by following edges (relationships), making it perfect for modeling and querying complex relationships like social networks, recommendation systems, or knowledge graphs.",
+        "inputs": "Nodes (entities), edges (relationships), properties, graph queries.",
+        "outputs": "Graph structure, traversed paths, relationship queries, network analysis.",
+        "steps": [
+            "Create nodes: define entities as nodes with properties (e.g., Person, Product).",
+            "Create edges: define relationships as edges with properties (e.g., FRIENDS_WITH, PURCHASED).",
+            "Store graph: save nodes and edges in graph database.",
+            "Index: create indexes on node properties and edge types.",
+            "Traverse: navigate graph by following edges from node to node.",
+            "Query: use graph query language (Cypher, Gremlin) to find paths, patterns, or relationships.",
+            "Analyze: perform graph algorithms (shortest path, centrality, community detection).",
+            "Update: add/remove nodes and edges as relationships change."
+        ],
+        "example": "Nodes: Person(id=1, name='Alice'), Person(id=2, name='Bob') → Edge: FRIENDS_WITH(from=1, to=2) → query: find friends of Alice → traverse: start at Alice → follow FRIENDS_WITH edges → return Bob → efficient relationship traversal.",
+        "time_complexity": "O(1) for node/edge lookup, O(d) for traversal where d is depth, O(n+m) for graph algorithms where n is nodes, m is edges.",
+        "space_complexity": "O(n+m) where n is number of nodes, m is number of edges.",
+        "strengths": [
+            "Relationship queries: excels at querying complex relationships.",
+            "Traversal performance: fast graph traversal and path finding.",
+            "Flexible schema: easily add new node types and relationship types."
+        ],
+        "weaknesses": [
+            "Scalability: may face challenges scaling to very large graphs.",
+            "Query complexity: graph queries can be complex to write.",
+            "Use case specific: best suited for relationship-heavy data."
+        ],
+        "alternatives": ["Relational Databases", "Document Databases", "Triple Stores", "Network Databases"],
+        "explanation": "Stores data as nodes (entities) and edges (relationships), enabling efficient traversal and querying of complex relationships and network structures."
+    },
+    "semester_08/lecture_51_nosql_fundamentals/nosql_indexing/README.md": {
+        "name": "NoSQL Indexing",
+        "problem": "Creates indexes on NoSQL database fields to accelerate queries and searches, enabling fast data retrieval without scanning entire collections or tables.",
+        "intuition": "Like an index in a book, but for NoSQL: NoSQL indexing creates lookup structures (like book indexes) that map field values to document/row locations - instead of scanning every document (like reading every page), you look up the value in the index (like using a book index) and jump directly to the right documents (like jumping to the right pages), making queries much faster.",
+        "inputs": "Field names, index type, collection/table, index configuration.",
+        "outputs": "Index structures, faster queries, improved search performance.",
+        "steps": [
+            "Identify fields: determine which fields are frequently queried.",
+            "Choose index type: select appropriate index type (B-tree, hash, text, geospatial, etc.).",
+            "Create index: build index structure mapping field values to document/row locations.",
+            "Store index: save index alongside data (in-memory or on-disk).",
+            "Update index: maintain index when data is inserted, updated, or deleted.",
+            "Use in queries: query engine uses index to speed up searches.",
+            "Monitor: track index usage and performance impact.",
+            "Optimize: adjust indexes based on query patterns and performance."
+        ],
+        "example": "MongoDB collection: users (1M documents) → query: find users where age = 25 → without index: scans 1M documents (slow) → create index on age → with index: lookup age=25 in index → find document locations → retrieve documents → query time: 0.01s vs 1s (100x faster).",
+        "time_complexity": "O(log n) for B-tree indexes, O(1) for hash indexes, O(n) for collection scans without index.",
+        "space_complexity": "O(n) where n is number of indexed documents/rows (additional storage for index).",
+        "strengths": [
+            "Query performance: dramatically speeds up queries on indexed fields.",
+            "Flexible: supports various index types (single field, compound, text, geospatial).",
+            "Scalable: indexes can be distributed across nodes in distributed systems."
+        ],
+        "weaknesses": [
+            "Storage overhead: indexes require additional storage space.",
+            "Write overhead: INSERT/UPDATE/DELETE operations must update indexes.",
+            "Index maintenance: requires monitoring and optimization."
+        ],
+        "alternatives": ["Full Collection Scans", "Materialized Views", "Caching", "Denormalization"],
+        "explanation": "Creates indexes on NoSQL database fields to accelerate queries and searches, enabling fast data retrieval without scanning entire collections or tables."
+    },
+    "semester_08/lecture_51_nosql_fundamentals/nosql_querying/README.md": {
+        "name": "NoSQL Querying",
+        "problem": "Retrieves and manipulates data from NoSQL databases using query languages and APIs, enabling flexible data access patterns adapted to different NoSQL data models.",
+        "intuition": "Like different ways to search different types of storage: NoSQL querying is like having different search methods for different storage types - key-value stores use simple key lookups (like looking up a word in a dictionary), document databases use field-based queries (like searching a filing cabinet by document properties), and graph databases use traversal queries (like following connections in a network) - each NoSQL type has query methods suited to its data model.",
+        "inputs": "Query criteria, data model type, query language/API, database connection.",
+        "outputs": "Query results, retrieved data, filtered documents/rows, aggregated data.",
+        "steps": [
+            "Choose query method: select appropriate query method based on NoSQL type.",
+            "Specify criteria: define search criteria (field values, conditions, patterns).",
+            "Execute query: send query to NoSQL database using query language or API.",
+            "Process: database processes query using indexes, scans, or traversals.",
+            "Filter: apply filters to match query criteria.",
+            "Return results: retrieve and return matching documents/rows/nodes.",
+            "Aggregate (optional): perform aggregations (count, sum, average, etc.).",
+            "Format: format results for application use."
+        ],
+        "example": "MongoDB: db.users.find({age: {$gt: 25}, city: 'New York'}) → document database query → uses index on age and city → filters documents → returns matching users → flexible: can query nested fields, arrays, and use complex conditions.",
+        "time_complexity": "Varies by query type: O(1) for key lookups, O(log n) with indexes, O(n) for full scans, O(d) for graph traversals where d is depth.",
+        "space_complexity": "O(r) where r is result set size (memory for query results).",
+        "strengths": [
+            "Flexibility: supports various query patterns adapted to data model.",
+            "Performance: can be very fast with proper indexes and data model fit.",
+            "Scalability: queries can be distributed across nodes in distributed systems."
+        ],
+        "weaknesses": [
+            "Limited joins: most NoSQL databases don't support SQL-style joins.",
+            "Query complexity: complex queries may require application-level processing.",
+            "Consistency: eventual consistency may affect query results."
+        ],
+        "alternatives": ["SQL Queries", "MapReduce", "Application-Level Filtering", "Search Engines"],
+        "explanation": "Retrieves and manipulates data from NoSQL databases using query languages and APIs, enabling flexible data access patterns adapted to different NoSQL data models."
     }
 }
 
