@@ -10593,28 +10593,42 @@
     {
       "path": "semester_09/lecture_56_os_performance/cache_optimization/README.md",
       "name": "Cache Optimization",
-      "problem": "Implements cache optimization algorithm.",
-      "intuition": "Cache Optimization is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Optimizes cache usage and performance through techniques like cache-aware algorithms, prefetching, cache replacement policies, and memory layout optimization, improving system performance by reducing cache misses.",
+      "intuition": "Like organizing a workspace: Cache Optimization is like organizing your workspace for efficiency - you keep frequently used items (hot data) close at hand (in cache), organize items logically (memory layout), and predict what you'll need next (prefetching) - just as an organized workspace makes work faster, cache optimization makes programs faster by reducing memory access time.",
+      "inputs": "Memory access patterns, cache parameters, data structures, algorithms, prefetch hints, cache policies.",
+      "outputs": "Optimized cache usage, reduced cache misses, improved performance, better memory layout, optimized algorithms.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Analyze: analyze memory access patterns.",
+        "Identify: identify hot and cold data.",
+        "Layout: optimize memory layout (cache-line alignment).",
+        "Prefetch: implement prefetching strategies.",
+        "Replace: optimize cache replacement policy.",
+        "Block: use cache-blocking for algorithms.",
+        "Tune: tune cache parameters.",
+        "Measure: measure cache performance.",
+        "Iterate: iterate optimizations.",
+        "Validate: validate performance improvements."
       ],
-      "example": "Example: Cache Optimization applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Cache Optimization: pattern: matrix multiplication → analyze: access patterns → layout: optimize memory layout → block: cache-blocking → prefetch: prefetch next block → result: 3x speedup, 50% cache miss reduction → Cache Optimization successful.",
+      "time_complexity": "O(n) where n is data size (optimization overhead, but reduces actual access time).",
+      "space_complexity": "O(c) where c is cache size (cache storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Performance: significantly improves performance through cache efficiency.",
+        "Scalability: improves scalability by reducing memory bottlenecks.",
+        "Energy: reduces energy consumption through fewer memory accesses."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: cache optimization can be complex.",
+        "Platform: optimizations may be platform-specific.",
+        "Trade-offs: may require trade-offs with other optimizations."
       ],
       "alternatives": [
-        "Related algorithms"
+        "No Optimization",
+        "Basic Caching",
+        "Hardware Prefetching",
+        "Memory Pooling"
       ],
-      "explanation": "Cache Optimization solves computational problems efficiently."
+      "explanation": "Optimizes cache usage and performance through techniques like cache-aware algorithms, prefetching, cache replacement policies, and memory layout optimization, improving system performance by reducing cache misses."
     },
     {
       "path": "semester_09/lecture_56_os_performance/cpu_scheduling_advanced/README.md",
@@ -11818,28 +11832,42 @@
     {
       "path": "semester_09/lecture_61_cloud_native/container_orchestration/README.md",
       "name": "Container Orchestration",
-      "problem": "Implements container orchestration algorithm.",
-      "intuition": "Container Orchestration is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Manages and coordinates containerized applications across clusters, handling deployment, scaling, load balancing, health monitoring, and service discovery automatically.",
+      "intuition": "Like a conductor for containers: Container Orchestration is like a conductor for an orchestra - you have many containers (musicians) that need to work together, and the orchestrator (conductor) coordinates them - it decides where to place containers (scheduling), scales them up/down (dynamic scaling), balances load (distributes work), and ensures they're healthy (monitoring) - just as a conductor ensures the orchestra plays harmoniously, container orchestration ensures containers work together efficiently.",
+      "inputs": "Container images, deployment specs, scaling policies, service definitions, cluster resources, health checks.",
+      "outputs": "Orchestrated containers, scaled services, load-balanced traffic, healthy deployments, service discovery, managed infrastructure.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Define: define container deployments and services.",
+        "Schedule: schedule containers on cluster nodes.",
+        "Deploy: deploy containers to nodes.",
+        "Scale: scale containers based on demand.",
+        "Balance: load balance traffic across containers.",
+        "Monitor: monitor container health and performance.",
+        "Restart: restart failed containers automatically.",
+        "Update: update containers with rolling updates.",
+        "Discover: enable service discovery.",
+        "Manage: manage container lifecycle."
       ],
-      "example": "Example: Container Orchestration applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Container Orchestration: app: web service → deploy: 3 replicas → schedule: distribute across nodes → scale: auto-scale to 10 replicas → balance: load balance traffic → monitor: health checks → result: highly available, scalable service → Container Orchestration operational.",
+      "time_complexity": "O(n·s) where n is nodes, s is scheduling time (distributed scheduling).",
+      "space_complexity": "O(c + m) where c is container storage, m is metadata storage (orchestration state).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Automation: automates container management tasks.",
+        "Scalability: enables easy scaling of applications.",
+        "Reliability: improves reliability through health monitoring and auto-recovery."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: orchestration systems can be complex.",
+        "Overhead: adds overhead to container operations.",
+        "Learning: requires learning orchestration concepts."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Manual Management",
+        "Container Runtimes",
+        "Simple Schedulers",
+        "Serverless"
       ],
-      "explanation": "Container Orchestration solves computational problems efficiently."
+      "explanation": "Manages and coordinates containerized applications across clusters, handling deployment, scaling, load balancing, health monitoring, and service discovery automatically."
     },
     {
       "path": "semester_09/lecture_61_cloud_native/function_as_service/README.md",
@@ -13684,158 +13712,242 @@
     {
       "path": "semester_10/lecture_69_ai_ethics/adversarial_robustness/README.md",
       "name": "Adversarial Robustness",
-      "problem": "Implements adversarial robustness algorithm.",
-      "intuition": "Adversarial Robustness is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Makes machine learning models resistant to adversarial attacks by training models to recognize and defend against malicious inputs designed to fool the model, ensuring reliable and secure AI systems.",
+      "intuition": "Like training for deception: Adversarial Robustness is like training someone to recognize lies and deception - you expose them to tricky situations (adversarial examples) during training so they learn to spot and resist manipulation - just as training helps people resist manipulation, adversarial training helps AI models resist adversarial attacks.",
+      "inputs": "Training data, model architecture, adversarial examples, attack methods, defense strategies, robustness metrics.",
+      "outputs": "Robust models, defense mechanisms, attack resistance, security improvements, validated robustness.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Identify: identify potential adversarial attacks.",
+        "Generate: generate adversarial examples.",
+        "Train: train model with adversarial examples (adversarial training).",
+        "Defend: implement defense mechanisms.",
+        "Test: test model against attacks.",
+        "Evaluate: evaluate robustness metrics.",
+        "Improve: improve robustness iteratively.",
+        "Validate: validate against known attacks.",
+        "Deploy: deploy robust model.",
+        "Monitor: monitor for new attack patterns."
       ],
-      "example": "Example: Adversarial Robustness applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Adversarial Robustness: model: image classifier → attack: generate adversarial images → train: adversarial training → test: test against attacks → result: 95% accuracy on adversarial examples (vs 10% before) → Adversarial Robustness successful.",
+      "time_complexity": "O(t·a) where t is training time, a is adversarial example generation time (increased training time).",
+      "space_complexity": "O(m + d) where m is model storage, d is data storage (training data, adversarial examples).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Security: improves model security against attacks.",
+        "Reliability: improves model reliability in adversarial environments.",
+        "Trust: increases trust in AI systems."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Performance: may reduce accuracy on clean data.",
+        "Training: adversarial training is computationally expensive.",
+        "Coverage: may not defend against all attack types."
       ],
       "alternatives": [
-        "Related algorithms"
+        "No Defense",
+        "Input Validation",
+        "Ensemble Methods",
+        "Certified Defenses"
       ],
-      "explanation": "Adversarial Robustness solves computational problems efficiently."
+      "explanation": "Makes machine learning models resistant to adversarial attacks by training models to recognize and defend against malicious inputs designed to fool the model, ensuring reliable and secure AI systems."
     },
     {
       "path": "semester_10/lecture_69_ai_ethics/ai_safety/README.md",
-      "name": "Ai Safety",
-      "problem": "Implements ai safety algorithm.",
-      "intuition": "Ai Safety is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "AI Safety",
+      "problem": "Ensures AI systems operate safely, reliably, and aligned with human values, preventing harmful behaviors, unintended consequences, and ensuring AI systems remain under human control.",
+      "intuition": "Like safety systems for AI: AI Safety is like safety systems for powerful machines - you add safeguards (safety mechanisms) to prevent accidents (harmful behaviors), ensure the machine does what you want (alignment), and can be stopped if needed (control) - just as safety systems protect people from machine accidents, AI safety protects people from AI accidents.",
+      "inputs": "AI systems, safety requirements, alignment goals, control mechanisms, monitoring systems, human oversight.",
+      "outputs": "Safe AI systems, safety mechanisms, alignment verification, control systems, safety reports, validated safety.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Identify: identify potential safety risks and failure modes.",
+        "Design: design safety mechanisms and constraints.",
+        "Align: align AI goals with human values.",
+        "Control: implement control and shutdown mechanisms.",
+        "Monitor: monitor AI behavior for safety issues.",
+        "Test: test AI systems for safety.",
+        "Verify: verify safety properties.",
+        "Deploy: deploy with safety measures.",
+        "Oversee: maintain human oversight.",
+        "Improve: continuously improve safety."
       ],
-      "example": "Example: Ai Safety applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "AI Safety: system: autonomous vehicle AI → risks: identify failure modes → safety: implement safety constraints → align: align with traffic safety → control: emergency stop mechanism → monitor: continuous monitoring → result: safe, reliable AI system → AI Safety operational.",
+      "time_complexity": "O(d + t + m) where d is design time, t is testing time, m is monitoring time (ongoing process).",
+      "space_complexity": "O(s + m) where s is safety system storage, m is monitoring storage (safety data).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Safety: prevents harmful AI behaviors.",
+        "Trust: increases trust in AI systems.",
+        "Responsibility: ensures responsible AI development."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: AI safety is complex and challenging.",
+        "Trade-offs: safety measures may limit AI capabilities.",
+        "Unknown: some safety risks may be unknown."
       ],
       "alternatives": [
-        "Related algorithms"
+        "No Safety Measures",
+        "Basic Safety",
+        "Reactive Safety",
+        "Proactive Safety"
       ],
-      "explanation": "Ai Safety solves computational problems efficiently."
+      "explanation": "Ensures AI systems operate safely, reliably, and aligned with human values, preventing harmful behaviors, unintended consequences, and ensuring AI systems remain under human control."
     },
     {
       "path": "semester_10/lecture_69_ai_ethics/bias_mitigation/README.md",
       "name": "Bias Mitigation",
-      "problem": "Implements bias mitigation algorithm.",
-      "intuition": "Bias Mitigation is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Identifies and reduces bias in machine learning models and datasets, ensuring fair and equitable AI systems that don't discriminate against protected groups or perpetuate harmful stereotypes.",
+      "intuition": "Like removing bias from decisions: Bias Mitigation is like removing bias from human decisions - you identify where bias exists (in data, models), understand how it affects outcomes (unfair treatment), and fix it (mitigation techniques) - just as we work to remove human bias, we work to remove AI bias to ensure fairness.",
+      "inputs": "Training data, models, bias metrics, fairness criteria, demographic data, mitigation techniques.",
+      "outputs": "Debiased models, fair predictions, reduced bias metrics, fairness reports, equitable AI systems.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Detect: detect bias in data and models.",
+        "Measure: measure bias using fairness metrics.",
+        "Analyze: analyze sources of bias.",
+        "Mitigate: apply bias mitigation techniques (pre-processing, in-processing, post-processing).",
+        "Balance: balance datasets if needed.",
+        "Train: train models with bias mitigation.",
+        "Evaluate: evaluate fairness metrics.",
+        "Validate: validate fairness improvements.",
+        "Monitor: monitor for bias in production.",
+        "Iterate: iterate to improve fairness."
       ],
-      "example": "Example: Bias Mitigation applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Bias Mitigation: data: hiring dataset → detect: gender bias detected → measure: 30% gender gap → mitigate: apply fairness constraints → train: train fair model → evaluate: gender gap reduced to 5% → result: fair hiring model → Bias Mitigation successful.",
+      "time_complexity": "O(d + t + e) where d is detection time, t is training time, e is evaluation time (varies by technique).",
+      "space_complexity": "O(m + d) where m is model storage, d is data storage (training data, demographic data).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Fairness: improves fairness and equity in AI systems.",
+        "Compliance: helps meet fairness and anti-discrimination requirements.",
+        "Trust: increases trust in AI systems."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Trade-offs: may trade accuracy for fairness.",
+        "Complexity: bias mitigation can be complex.",
+        "Definition: defining fairness can be challenging."
       ],
       "alternatives": [
-        "Related algorithms"
+        "No Mitigation",
+        "Data Balancing",
+        "Fairness Constraints",
+        "Post-Processing"
       ],
-      "explanation": "Bias Mitigation solves computational problems efficiently."
+      "explanation": "Identifies and reduces bias in machine learning models and datasets, ensuring fair and equitable AI systems that don't discriminate against protected groups or perpetuate harmful stereotypes."
     },
     {
       "path": "semester_10/lecture_69_ai_ethics/explainability/README.md",
       "name": "Explainability",
-      "problem": "Implements explainability algorithm.",
-      "intuition": "Explainability is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Makes AI model decisions understandable and interpretable to humans, providing explanations for predictions and enabling users to understand, trust, and debug AI systems.",
+      "intuition": "Like explaining decisions: Explainability is like explaining your decisions to someone - instead of just saying 'I decided X' (black box), you explain why (reasons, factors) so they understand - just as people explain their decisions, AI systems should explain their predictions so users can understand and trust them.",
+      "inputs": "AI models, predictions, input data, explanation methods, user queries, explanation requirements.",
+      "outputs": "Explanations, interpretable predictions, feature importance, decision rationales, explanation reports.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Predict: make model prediction.",
+        "Extract: extract relevant information for explanation.",
+        "Explain: generate explanation using explanation method (LIME, SHAP, etc.).",
+        "Format: format explanation for users.",
+        "Present: present explanation clearly.",
+        "Validate: validate explanation accuracy.",
+        "Iterate: iterate to improve explanations.",
+        "Customize: customize explanations for different users.",
+        "Monitor: monitor explanation quality.",
+        "Improve: continuously improve explainability."
       ],
-      "example": "Example: Explainability applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Explainability: model: loan approval → predict: loan denied → explain: 'Denied due to: low credit score (600), high debt-to-income ratio (45%), recent late payments' → result: user understands decision → Explainability successful.",
+      "time_complexity": "O(m + e) where m is model inference time, e is explanation generation time (varies by method).",
+      "space_complexity": "O(m + e) where m is model storage, e is explanation storage (explanation data).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Trust: increases trust in AI systems through transparency.",
+        "Debugging: enables debugging of AI models.",
+        "Compliance: helps meet explainability requirements."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Accuracy: explanations may not always be perfectly accurate.",
+        "Complexity: explaining complex models is challenging.",
+        "Trade-offs: may require trade-offs with model performance."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Black Box Models",
+        "Interpretable Models",
+        "Post-Hoc Explanations",
+        "Inherently Explainable"
       ],
-      "explanation": "Explainability solves computational problems efficiently."
+      "explanation": "Makes AI model decisions understandable and interpretable to humans, providing explanations for predictions and enabling users to understand, trust, and debug AI systems."
     },
     {
       "path": "semester_10/lecture_69_ai_ethics/fairness_algorithms/README.md",
       "name": "Fairness Algorithms",
-      "problem": "Implements fairness algorithms algorithm.",
-      "intuition": "Fairness Algorithms is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Implements algorithms and techniques to ensure AI systems make fair decisions, treating different groups equitably and avoiding discrimination based on protected attributes.",
+      "intuition": "Like fair decision-making: Fairness Algorithms are like fair decision-making processes - you ensure decisions are made fairly (equal treatment), don't discriminate (no bias), and treat everyone equitably - just as fair processes ensure justice, fairness algorithms ensure equitable AI decisions.",
+      "inputs": "Models, predictions, demographic data, fairness definitions, fairness constraints, evaluation metrics.",
+      "outputs": "Fair models, equitable predictions, fairness metrics, fairness reports, validated fairness.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Define: define fairness criteria (demographic parity, equalized odds, etc.).",
+        "Measure: measure fairness using fairness metrics.",
+        "Detect: detect unfairness in model predictions.",
+        "Apply: apply fairness algorithms (fairness constraints, reweighting, etc.).",
+        "Train: train models with fairness objectives.",
+        "Evaluate: evaluate fairness metrics.",
+        "Balance: balance fairness and accuracy.",
+        "Validate: validate fairness improvements.",
+        "Deploy: deploy fair models.",
+        "Monitor: monitor fairness in production."
       ],
-      "example": "Example: Fairness Algorithms applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Fairness Algorithms: model: hiring model → measure: demographic parity gap 20% → apply: fairness constraints → train: train fair model → evaluate: gap reduced to 3% → result: fair hiring model → Fairness Algorithms successful.",
+      "time_complexity": "O(t + e) where t is training time, e is evaluation time (fairness algorithms add overhead).",
+      "space_complexity": "O(m + d) where m is model storage, d is demographic data storage.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Equity: ensures equitable treatment of different groups.",
+        "Compliance: helps meet fairness and anti-discrimination requirements.",
+        "Trust: increases trust in AI systems."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Trade-offs: may require trade-offs with accuracy.",
+        "Definition: defining fairness can be challenging.",
+        "Complexity: fairness algorithms can be complex."
       ],
       "alternatives": [
-        "Related algorithms"
+        "No Fairness",
+        "Data Balancing",
+        "Post-Processing",
+        "Fair Representation Learning"
       ],
-      "explanation": "Fairness Algorithms solves computational problems efficiently."
+      "explanation": "Implements algorithms and techniques to ensure AI systems make fair decisions, treating different groups equitably and avoiding discrimination based on protected attributes."
     },
     {
       "path": "semester_10/lecture_69_ai_ethics/interpretability/README.md",
       "name": "Interpretability",
-      "problem": "Implements interpretability algorithm.",
-      "intuition": "Interpretability is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Makes AI models and their internal workings understandable to humans, enabling users to understand how models work, why they make specific predictions, and how to improve them.",
+      "intuition": "Like understanding how something works: Interpretability is like understanding how a machine works - instead of a black box (you don't know how it works), you can see inside (understand the mechanism) and understand why it does what it does - just as understanding machines helps you use and fix them, interpretability helps you understand and improve AI models.",
+      "inputs": "AI models, model internals, predictions, interpretability methods, analysis tools.",
+      "outputs": "Interpretable models, model insights, feature importance, decision paths, interpretability reports.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Analyze: analyze model architecture and internals.",
+        "Extract: extract interpretable features and patterns.",
+        "Visualize: visualize model behavior and decisions.",
+        "Explain: explain model predictions and behavior.",
+        "Identify: identify important features and patterns.",
+        "Validate: validate interpretability insights.",
+        "Document: document model behavior.",
+        "Present: present interpretability findings.",
+        "Use: use insights to improve models.",
+        "Iterate: iterate to improve interpretability."
       ],
-      "example": "Example: Interpretability applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Interpretability: model: neural network → analyze: examine layers → visualize: feature importance → explain: 'Model uses age, income, credit score' → identify: age is most important → result: model behavior understood → Interpretability successful.",
+      "time_complexity": "O(a + v + e) where a is analysis time, v is visualization time, e is explanation time (varies by method).",
+      "space_complexity": "O(m + i) where m is model storage, i is interpretability data storage (visualizations, explanations).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Understanding: enables understanding of model behavior.",
+        "Debugging: helps debug and improve models.",
+        "Trust: increases trust through transparency."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: interpreting complex models is challenging.",
+        "Accuracy: interpretations may not be perfectly accurate.",
+        "Trade-offs: may require trade-offs with model complexity."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Black Box Models",
+        "Simple Models",
+        "Post-Hoc Interpretation",
+        "Inherently Interpretable"
       ],
-      "explanation": "Interpretability solves computational problems efficiently."
+      "explanation": "Makes AI models and their internal workings understandable to humans, enabling users to understand how models work, why they make specific predictions, and how to improve them."
     },
     {
       "path": "semester_10/lecture_70_ai_governance/audit_trails/README.md",
@@ -14320,106 +14432,162 @@
     {
       "path": "semester_11/lecture_72_infrastructure_advanced/cost_optimization/README.md",
       "name": "Cost Optimization",
-      "problem": "Implements cost optimization algorithm.",
-      "intuition": "Cost Optimization is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Optimizes infrastructure and cloud costs by identifying waste, right-sizing resources, using reserved instances, and implementing cost-effective architectures, reducing spending while maintaining performance.",
+      "intuition": "Like budgeting and saving: Cost Optimization is like budgeting and saving money - you identify where you're spending too much (waste), find better deals (reserved instances), use resources efficiently (right-sizing), and cut unnecessary expenses - just as budgeting saves money, cost optimization saves infrastructure costs.",
+      "inputs": "Cost data, resource usage, pricing models, performance requirements, optimization goals, budget constraints.",
+      "outputs": "Optimized costs, cost savings, right-sized resources, cost reports, optimized architectures, budget compliance.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Analyze: analyze current costs and usage.",
+        "Identify: identify cost waste and inefficiencies.",
+        "Right-size: right-size resources to actual needs.",
+        "Reserve: use reserved instances for predictable workloads.",
+        "Optimize: optimize architectures for cost.",
+        "Automate: automate cost optimization.",
+        "Monitor: monitor costs continuously.",
+        "Report: report cost savings and trends.",
+        "Iterate: iterate to improve cost efficiency.",
+        "Validate: validate cost reductions."
       ],
-      "example": "Example: Cost Optimization applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Cost Optimization: analyze: $10k/month spend → identify: 40% waste (idle resources) → right-size: reduce instance sizes → reserve: use reserved instances → result: $6k/month (40% savings) → Cost Optimization successful.",
+      "time_complexity": "O(a + o) where a is analysis time, o is optimization time (ongoing process).",
+      "space_complexity": "O(c + d) where c is cost data storage, d is optimization data storage.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Savings: significantly reduces infrastructure costs.",
+        "Efficiency: improves resource utilization efficiency.",
+        "Visibility: provides visibility into costs."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Trade-offs: may require trade-offs with performance or flexibility.",
+        "Complexity: cost optimization can be complex.",
+        "Monitoring: requires continuous monitoring."
       ],
       "alternatives": [
-        "Related algorithms"
+        "No Optimization",
+        "Manual Optimization",
+        "Basic Cost Management",
+        "Advanced Analytics"
       ],
-      "explanation": "Cost Optimization solves computational problems efficiently."
+      "explanation": "Optimizes infrastructure and cloud costs by identifying waste, right-sizing resources, using reserved instances, and implementing cost-effective architectures, reducing spending while maintaining performance."
     },
     {
       "path": "semester_11/lecture_72_infrastructure_advanced/edge_computing/README.md",
       "name": "Edge Computing",
-      "problem": "Implements edge computing algorithm.",
-      "intuition": "Edge Computing is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Processes data and runs applications closer to data sources (at the edge) rather than in centralized cloud data centers, reducing latency, bandwidth usage, and enabling real-time processing.",
+      "intuition": "Like local processing: Edge Computing is like processing things locally instead of sending everything to a central location - instead of sending all data to the cloud (like mailing everything to headquarters), you process it locally (at the edge, like local offices) - just as local processing is faster, edge computing reduces latency and bandwidth.",
+      "inputs": "Data sources, edge devices, applications, processing requirements, network conditions, latency constraints.",
+      "outputs": "Edge-processed data, reduced latency, lower bandwidth usage, real-time responses, distributed processing, edge deployments.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Identify: identify workloads suitable for edge.",
+        "Deploy: deploy applications to edge devices.",
+        "Process: process data at the edge.",
+        "Filter: filter and aggregate data locally.",
+        "Sync: sync with cloud when needed.",
+        "Cache: cache frequently used data at edge.",
+        "Optimize: optimize for edge constraints.",
+        "Monitor: monitor edge deployments.",
+        "Manage: manage edge infrastructure.",
+        "Scale: scale edge deployments."
       ],
-      "example": "Example: Edge Computing applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Edge Computing: workload: video analytics → deploy: deploy to edge cameras → process: analyze video locally → filter: send only alerts to cloud → result: 10ms latency (vs 200ms cloud), 90% bandwidth reduction → Edge Computing successful.",
+      "time_complexity": "O(p) where p is processing time (reduced due to local processing).",
+      "space_complexity": "O(e + c) where e is edge storage, c is cache storage (distributed storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Latency: significantly reduces latency.",
+        "Bandwidth: reduces bandwidth usage.",
+        "Real-time: enables real-time processing."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Management: managing edge infrastructure is complex.",
+        "Resources: edge devices have limited resources.",
+        "Security: edge devices may be less secure."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Cloud Computing",
+        "Fog Computing",
+        "Hybrid Cloud-Edge",
+        "Centralized Processing"
       ],
-      "explanation": "Edge Computing solves computational problems efficiently."
+      "explanation": "Processes data and runs applications closer to data sources (at the edge) rather than in centralized cloud data centers, reducing latency, bandwidth usage, and enabling real-time processing."
     },
     {
       "path": "semester_11/lecture_72_infrastructure_advanced/hybrid_cloud/README.md",
       "name": "Hybrid Cloud",
-      "problem": "Implements hybrid cloud algorithm.",
-      "intuition": "Hybrid Cloud is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Combines on-premises infrastructure with public and private cloud services, enabling organizations to leverage benefits of both while maintaining control over sensitive data and meeting compliance requirements.",
+      "intuition": "Like a hybrid approach: Hybrid Cloud is like using both your own facilities and rented space - you keep some things on-premises (like sensitive data in your own building) and use cloud for other things (like scalable compute in rented space) - just as hybrid approaches give you flexibility, hybrid cloud gives you the best of both worlds.",
+      "inputs": "On-premises infrastructure, cloud services, workloads, data, compliance requirements, integration needs.",
+      "outputs": "Hybrid infrastructure, integrated systems, flexible deployments, optimized costs, compliance, seamless operations.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Assess: assess workloads and requirements.",
+        "Plan: plan hybrid cloud architecture.",
+        "Deploy: deploy workloads to appropriate environments.",
+        "Integrate: integrate on-premises and cloud.",
+        "Migrate: migrate workloads as needed.",
+        "Sync: synchronize data between environments.",
+        "Manage: manage hybrid infrastructure.",
+        "Optimize: optimize for cost and performance.",
+        "Secure: secure hybrid environment.",
+        "Monitor: monitor hybrid operations."
       ],
-      "example": "Example: Hybrid Cloud applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Hybrid Cloud: sensitive data: on-premises → compute: public cloud → integrate: hybrid architecture → sync: data synchronization → result: security of on-premises + scalability of cloud → Hybrid Cloud operational.",
+      "time_complexity": "O(d + i + m) where d is deployment time, i is integration time, m is migration time (varies by workload).",
+      "space_complexity": "O(o + c) where o is on-premises storage, c is cloud storage (distributed storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Flexibility: provides flexibility to use best environment for each workload.",
+        "Control: maintains control over sensitive data.",
+        "Compliance: helps meet compliance requirements."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: managing hybrid cloud is complex.",
+        "Integration: integrating on-premises and cloud can be challenging.",
+        "Cost: may have higher costs due to maintaining both."
       ],
       "alternatives": [
-        "Related algorithms"
+        "On-Premises Only",
+        "Public Cloud Only",
+        "Multi-Cloud",
+        "Cloud-First"
       ],
-      "explanation": "Hybrid Cloud solves computational problems efficiently."
+      "explanation": "Combines on-premises infrastructure with public and private cloud services, enabling organizations to leverage benefits of both while maintaining control over sensitive data and meeting compliance requirements."
     },
     {
       "path": "semester_11/lecture_72_infrastructure_advanced/infrastructure_monitoring/README.md",
       "name": "Infrastructure Monitoring",
-      "problem": "Implements infrastructure monitoring algorithm.",
-      "intuition": "Infrastructure Monitoring is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Continuously monitors infrastructure health, performance, and availability through metrics, logs, and alerts, enabling proactive issue detection and resolution.",
+      "intuition": "Like health monitoring: Infrastructure Monitoring is like health monitoring for infrastructure - you continuously check vital signs (metrics), watch for problems (alerts), and track history (logs) - just as health monitoring keeps you healthy, infrastructure monitoring keeps infrastructure healthy.",
+      "inputs": "Infrastructure components, metrics, logs, events, monitoring tools, alert rules, dashboards.",
+      "outputs": "Monitoring data, alerts, dashboards, performance metrics, health status, incident detection, trend analysis.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Instrument: instrument infrastructure with monitoring.",
+        "Collect: collect metrics and logs.",
+        "Aggregate: aggregate monitoring data.",
+        "Visualize: visualize in dashboards.",
+        "Alert: set up alerts for issues.",
+        "Analyze: analyze trends and patterns.",
+        "Detect: detect anomalies and issues.",
+        "Notify: notify on-call teams.",
+        "Report: generate monitoring reports.",
+        "Optimize: optimize monitoring setup."
       ],
-      "example": "Example: Infrastructure Monitoring applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Infrastructure Monitoring: infrastructure: 100 servers → collect: CPU, memory, disk metrics → visualize: dashboards → alert: CPU > 80% → detect: anomaly detected → notify: alert team → result: proactive issue resolution → Infrastructure Monitoring operational.",
+      "time_complexity": "O(c + a) where c is collection time, a is analysis time (continuous, real-time).",
+      "space_complexity": "O(m + l) where m is metrics storage, l is log storage (time-series data).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Visibility: provides visibility into infrastructure health.",
+        "Proactive: enables proactive issue detection.",
+        "Reliability: improves infrastructure reliability."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Overhead: monitoring adds some overhead.",
+        "Noise: too many alerts can cause alert fatigue.",
+        "Complexity: comprehensive monitoring can be complex."
       ],
       "alternatives": [
-        "Related algorithms"
+        "No Monitoring",
+        "Reactive Monitoring",
+        "Basic Monitoring",
+        "Advanced Observability"
       ],
-      "explanation": "Infrastructure Monitoring solves computational problems efficiently."
+      "explanation": "Continuously monitors infrastructure health, performance, and availability through metrics, logs, and alerts, enabling proactive issue detection and resolution."
     },
     {
       "path": "semester_11/lecture_72_infrastructure_advanced/infrastructure_patterns/README.md",
@@ -16423,29 +16591,43 @@
     },
     {
       "path": "semester_12/lecture_81_quantum_applications/quantum_ai/README.md",
-      "name": "Quantum Ai",
-      "problem": "Implements quantum ai algorithm.",
-      "intuition": "Quantum Ai is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Quantum AI",
+      "problem": "Combines quantum computing with artificial intelligence, using quantum algorithms to accelerate AI tasks like optimization, pattern recognition, and machine learning, potentially providing exponential speedups.",
+      "intuition": "Like AI on quantum computers: Quantum AI runs AI algorithms on quantum computers - quantum properties (superposition, entanglement) can process information in ways classical computers can't, potentially making AI faster - just as quantum computers can solve some problems faster, quantum AI can train models or process data faster for certain problems.",
+      "inputs": "AI tasks, quantum algorithms, training data, quantum models, optimization problems, quantum circuits.",
+      "outputs": "Quantum AI models, quantum-accelerated solutions, optimized parameters, quantum learning results, enhanced AI capabilities.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Identify: identify AI tasks suitable for quantum acceleration.",
+        "Design: design quantum AI algorithms.",
+        "Encode: encode data into quantum states.",
+        "Train: train quantum models using quantum algorithms.",
+        "Optimize: optimize using quantum optimization.",
+        "Execute: execute on quantum computers.",
+        "Measure: measure quantum states for predictions.",
+        "Learn: learn from quantum-enhanced results.",
+        "Hybrid: combine quantum and classical AI.",
+        "Deploy: deploy quantum AI applications."
       ],
-      "example": "Example: Quantum Ai applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Quantum AI: task: portfolio optimization → encode: encode into quantum state → QAOA: use quantum optimization → train: optimize portfolio weights → execute: run on quantum computer → result: better portfolio than classical → Quantum AI successful.",
+      "time_complexity": "O(p·m·k) where p is parameters, m is measurements, k is iterations (varies by application, potential speedup).",
+      "space_complexity": "O(n) where n is number of qubits (quantum state space).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Speedup: potential exponential speedup for certain AI tasks.",
+        "Novel: enables new AI approaches using quantum properties.",
+        "Optimization: quantum optimization can find better solutions."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Early: field is still in early stages.",
+        "Hardware: requires quantum hardware.",
+        "Applications: speedups not guaranteed for all tasks."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Classical AI",
+        "Hybrid Quantum-Classical AI",
+        "Quantum-Inspired",
+        "NISQ AI"
       ],
-      "explanation": "Quantum Ai solves computational problems efficiently."
+      "explanation": "Combines quantum computing with artificial intelligence, using quantum algorithms to accelerate AI tasks like optimization, pattern recognition, and machine learning, potentially providing exponential speedups."
     },
     {
       "path": "semester_12/lecture_81_quantum_applications/quantum_chemistry/README.md",
@@ -16490,28 +16672,42 @@
     {
       "path": "semester_12/lecture_81_quantum_applications/quantum_database/README.md",
       "name": "Quantum Database",
-      "problem": "Implements quantum database algorithm.",
-      "intuition": "Quantum Database is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Uses quantum algorithms to accelerate database operations like search, query processing, and data retrieval, potentially providing speedups for certain database queries.",
+      "intuition": "Like quantum search for databases: Quantum Database uses quantum algorithms to search databases faster - quantum superposition lets you search many records simultaneously, then amplify the correct result - just as quantum search finds items faster, quantum databases can find data faster.",
+      "inputs": "Database queries, quantum algorithms, data, search criteria, quantum circuits.",
+      "outputs": "Query results, retrieved data, search results, optimized queries, quantum-accelerated operations.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Encode: encode database into quantum format.",
+        "Query: formulate quantum query.",
+        "Search: use quantum search algorithm (Grover).",
+        "Execute: execute quantum circuit.",
+        "Measure: measure quantum state.",
+        "Extract: extract query results.",
+        "Decode: decode quantum results.",
+        "Validate: validate results.",
+        "Optimize: optimize quantum queries.",
+        "Return: return results."
       ],
-      "example": "Example: Quantum Database applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Quantum Database: database: 1M records → query: find record with ID=12345 → encode: encode into qubits → search: Grover's algorithm → execute: run on quantum computer → result: found in √N time (vs N time) → Quantum Database successful.",
+      "time_complexity": "O(√N) where N is database size (quadratic speedup for unstructured search).",
+      "space_complexity": "O(log N) where N is database size (qubits needed).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Speedup: potential speedup for certain queries.",
+        "Search: efficient for unstructured search.",
+        "Novel: enables new database approaches."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Limited: speedups limited to specific query types.",
+        "Hardware: requires quantum hardware.",
+        "Encoding: encoding databases into quantum format is challenging."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Classical Databases",
+        "Quantum-Inspired",
+        "Hybrid Approaches",
+        "Specialized Quantum"
       ],
-      "explanation": "Quantum Database solves computational problems efficiently."
+      "explanation": "Uses quantum algorithms to accelerate database operations like search, query processing, and data retrieval, potentially providing speedups for certain database queries."
     },
     {
       "path": "semester_12/lecture_81_quantum_applications/quantum_finance/README.md",
