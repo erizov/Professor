@@ -155,8 +155,14 @@ def get_test_results():
         params.append(f"%{search}%")
 
     if status_filter:
-        query += " AND status = ?"
-        params.append(status_filter)
+        # Handle "failure" filter to include both "failure" and "error"
+        if status_filter == "failure":
+            query += " AND (status = ? OR status = ?)"
+            params.append("failure")
+            params.append("error")
+        else:
+            query += " AND status = ?"
+            params.append(status_filter)
 
     if language_filter:
         query += " AND language = ?"
@@ -272,8 +278,14 @@ def get_test_statistics():
         params.append(f"%{search}%")
 
     if status_filter:
-        filter_conditions.append("tr.status = ?")
-        params.append(status_filter)
+        # Handle "failure" filter to include both "failure" and "error"
+        if status_filter == "failure":
+            filter_conditions.append("(tr.status = ? OR tr.status = ?)")
+            params.append("failure")
+            params.append("error")
+        else:
+            filter_conditions.append("tr.status = ?")
+            params.append(status_filter)
 
     if language_filter:
         filter_conditions.append("tr.language = ?")
