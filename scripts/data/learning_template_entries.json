@@ -4437,185 +4437,241 @@
     },
     {
       "path": "semester_05/lecture_24_segmentation/fcn/README.md",
-      "name": "Fcn",
-      "problem": "Implements fcn algorithm.",
-      "intuition": "Fcn is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "FCN (Fully Convolutional Network)",
+      "problem": "Performs pixel-level semantic segmentation by replacing fully connected layers with convolutions, enabling dense prediction on arbitrary-sized images.",
+      "intuition": "Like a paint-by-numbers map: instead of classifying whole images, classify each pixel to create a detailed segmentation map showing what each pixel belongs to.",
+      "inputs": "Input images of arbitrary size, pre-trained CNN (e.g., VGG, ResNet).",
+      "outputs": "Dense pixel-wise class predictions (segmentation map) with same spatial dimensions as input.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Start with pre-trained CNN (e.g., VGG-16) and remove fully connected layers.",
+        "Convert FC layers to 1×1 convolutions to maintain spatial information.",
+        "Add upsampling layers (transposed convolutions) to restore spatial resolution.",
+        "Use skip connections from earlier layers to combine fine and coarse features.",
+        "Apply pixel-wise softmax to produce class probabilities for each pixel.",
+        "Train end-to-end with pixel-wise cross-entropy loss."
       ],
-      "example": "Example: Fcn applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Input 500×500 image → VGG extracts features → remove FC layers → add 1×1 conv + upsampling → skip connections from pool3, pool4 → output 500×500 segmentation map with class per pixel.",
+      "time_complexity": "O(n²·c) where n is spatial size, c is number of classes (single forward pass).",
+      "space_complexity": "O(n²·c) for output segmentation map plus O(n²·d) for feature maps.",
       "strengths": [
-        "Efficient for specific use cases"
+        "First successful end-to-end CNN for semantic segmentation.",
+        "Handles arbitrary input sizes and produces dense predictions."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Coarse predictions due to information loss in downsampling.",
+        "Requires skip connections for fine-grained details."
       ],
       "alternatives": [
-        "Related algorithms"
+        "U-Net",
+        "DeepLab",
+        "PSPNet",
+        "SegNet"
       ],
-      "explanation": "Fcn solves computational problems efficiently."
+      "explanation": "Converts classification CNNs to segmentation networks by replacing FC layers with convolutions and adding upsampling, enabling dense pixel-wise predictions."
     },
     {
       "path": "semester_05/lecture_24_segmentation/mask_rcnn/README.md",
-      "name": "Mask Rcnn",
-      "problem": "Implements mask rcnn algorithm.",
-      "intuition": "Mask Rcnn is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Mask R-CNN",
+      "problem": "Extends Faster R-CNN to simultaneously perform object detection, bounding box regression, and instance segmentation (pixel-level masks) in a unified framework.",
+      "intuition": "Like a multi-tool: not only find objects (detection) and draw boxes (localization), but also precisely outline each object's shape (segmentation mask) in one pass.",
+      "inputs": "Input images, region proposals (from RPN), feature maps.",
+      "outputs": "Bounding boxes, class labels, confidence scores, and binary segmentation masks for each detected object.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Use Faster R-CNN backbone to generate region proposals via RPN.",
+        "Apply RoIAlign (instead of RoIPool) to extract fixed-size features from proposals.",
+        "Branch 1: Classify object and refine bounding box (as in Faster R-CNN).",
+        "Branch 2: Predict binary segmentation mask for each RoI using FCN head.",
+        "Train with multi-task loss: classification + box regression + mask prediction.",
+        "Apply non-maximum suppression and output detections with masks."
       ],
-      "example": "Example: Mask Rcnn applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Image → RPN finds 1000 proposals → RoIAlign extracts 14×14 features → branch 1: class 'person' + box → branch 2: 28×28 binary mask → final: person at [x,y,w,h] with pixel mask.",
+      "time_complexity": "O(n·m) where n is number of proposals, m is mask prediction time (slower than Faster R-CNN due to mask branch).",
+      "space_complexity": "O(n·k²) for n proposals with k×k mask predictions (additional memory for masks).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Unified framework for detection and segmentation.",
+        "High-quality instance segmentation with precise masks."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Slower than detection-only methods.",
+        "Requires instance-level segmentation annotations for training."
       ],
       "alternatives": [
-        "Related algorithms"
+        "FCN",
+        "U-Net",
+        "YOLACT",
+        "SOLO"
       ],
-      "explanation": "Mask Rcnn solves computational problems efficiently."
+      "explanation": "Extends Faster R-CNN with a mask prediction branch, enabling simultaneous object detection and instance segmentation in a unified end-to-end framework."
     },
     {
       "path": "semester_05/lecture_24_segmentation/unet/README.md",
-      "name": "Unet",
-      "problem": "Implements unet algorithm.",
-      "intuition": "Unet is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "U-Net",
+      "problem": "Performs biomedical image segmentation using a symmetric encoder-decoder architecture with skip connections to preserve fine-grained spatial details.",
+      "intuition": "Like a funnel with a mirror: compress information going down (encoder), then expand it back up (decoder), while keeping shortcuts (skip connections) to preserve details lost during compression.",
+      "inputs": "Input images (often biomedical), encoder-decoder architecture, skip connections.",
+      "outputs": "Pixel-wise segmentation maps with same spatial dimensions as input.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Encoder (contracting path): apply 3×3 conv + ReLU, then 2×2 max pooling (repeat 4-5 times).",
+        "Bottleneck: two 3×3 convolutions at lowest resolution.",
+        "Decoder (expansive path): 2×2 upsampling, concatenate with corresponding encoder feature map (skip connection), then 3×3 conv + ReLU (repeat 4-5 times).",
+        "Final layer: 1×1 convolution to map to number of classes.",
+        "Train with pixel-wise cross-entropy loss (optionally with dice loss).",
+        "Output segmentation map with class prediction for each pixel."
       ],
-      "example": "Example: Unet applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Input 572×572 → encoder: 64→128→256→512→1024 (downsampling) → decoder: 1024→512→256→128→64 (upsampling with skip connections) → output 388×388 segmentation map.",
+      "time_complexity": "O(n²·c) where n is spatial size, c is channels (single forward pass, efficient).",
+      "space_complexity": "O(n²·c) for feature maps (skip connections require storing encoder features).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Excellent for biomedical segmentation with limited data.",
+        "Skip connections preserve fine-grained details."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Symmetric architecture may not be optimal for all tasks.",
+        "Memory usage grows with input size due to skip connections."
       ],
       "alternatives": [
-        "Related algorithms"
+        "FCN",
+        "DeepLab",
+        "SegNet",
+        "Attention U-Net"
       ],
-      "explanation": "Unet solves computational problems efficiently."
+      "explanation": "Uses symmetric encoder-decoder architecture with skip connections to combine high-level semantic features with low-level spatial details, enabling precise segmentation."
     },
     {
       "path": "semester_05/lecture_25_transformers/attention/README.md",
-      "name": "Attention",
-      "problem": "Implements attention algorithm.",
-      "intuition": "Attention is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Attention Mechanism",
+      "problem": "Allows models to focus on relevant parts of input when making predictions, enabling better handling of long-range dependencies and interpretability.",
+      "intuition": "Like reading a long document: when answering a question, focus attention on relevant sentences (high attention weights) rather than reading everything equally.",
+      "inputs": "Query vectors Q, key vectors K, value vectors V (all from input sequences).",
+      "outputs": "Weighted combination of values, where weights are computed from query-key similarity.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Compute attention scores: score(q_i, k_j) = similarity between query i and key j.",
+        "Apply softmax to scores to get attention weights (sum to 1).",
+        "Weighted sum of values: output_i = Σ(attention_weight_ij × v_j).",
+        "For self-attention: Q, K, V all come from same input sequence.",
+        "For multi-head attention: apply attention in parallel with different learned projections.",
+        "Combine multi-head outputs via concatenation and linear transformation."
       ],
-      "example": "Example: Attention applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Translation: 'The cat sat' → attention weights: 'cat' gets high weight when generating 'gato' (Spanish), 'sat' gets high weight for 'se sentó'. Attention matrix shows word alignments.",
+      "time_complexity": "O(n²·d) where n is sequence length, d is dimension (quadratic in sequence length).",
+      "space_complexity": "O(n²) for attention matrix (grows quadratically with sequence length).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Captures long-range dependencies effectively.",
+        "Provides interpretability through attention weights."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Quadratic complexity limits maximum sequence length.",
+        "Requires careful initialization and training."
       ],
       "alternatives": [
-        "Related algorithms"
+        "RNN/LSTM",
+        "CNN",
+        "Sparse Attention",
+        "Linear Attention"
       ],
-      "explanation": "Attention solves computational problems efficiently."
+      "explanation": "Computes weighted combinations of input elements based on query-key similarity, allowing models to dynamically focus on relevant information for each prediction."
     },
     {
       "path": "semester_05/lecture_25_transformers/bert/README.md",
-      "name": "Bert",
-      "problem": "Implements bert algorithm.",
-      "intuition": "Bert is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "BERT (Bidirectional Encoder Representations from Transformers)",
+      "problem": "Pre-trains deep bidirectional representations by jointly conditioning on both left and right context, enabling state-of-the-art performance on NLP tasks with fine-tuning.",
+      "intuition": "Like reading a sentence both forward and backward simultaneously: understand each word by seeing everything around it (left and right context) at once, not just what came before.",
+      "inputs": "Text sequences with special tokens ([CLS], [SEP]), token embeddings, position embeddings, segment embeddings.",
+      "outputs": "Contextualized word embeddings that can be fine-tuned for downstream tasks.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Tokenize input and add special tokens: [CLS] at start, [SEP] between sentences.",
+        "Create embeddings: token + position + segment embeddings.",
+        "Apply bidirectional Transformer encoder (12-24 layers) with self-attention.",
+        "Pre-train with two tasks: Masked Language Modeling (MLM) and Next Sentence Prediction (NSP).",
+        "For downstream tasks: add task-specific head and fine-tune on labeled data.",
+        "Output contextualized representations for each token position."
       ],
-      "example": "Example: Bert applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Input: '[CLS] The cat sat [SEP] on the mat [SEP]' → BERT encodes → '[CLS]' embedding used for classification, 'cat' embedding captures context from entire sentence → fine-tune for sentiment/QA/NER.",
+      "time_complexity": "O(n²·d·l) where n is sequence length, d is dimension, l is number of layers (pre-training is expensive).",
+      "space_complexity": "O(l·d²) for model parameters (BERT-base: 110M, BERT-large: 340M parameters).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Bidirectional context enables better understanding.",
+        "Transfer learning: pre-train once, fine-tune for many tasks."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Cannot generate text (encoder-only architecture).",
+        "Pre-training requires massive compute and data."
       ],
       "alternatives": [
-        "Related algorithms"
+        "GPT",
+        "RoBERTa",
+        "ALBERT",
+        "ELECTRA"
       ],
-      "explanation": "Bert solves computational problems efficiently."
+      "explanation": "Pre-trains bidirectional Transformer encoder on large text corpus using masked language modeling, producing contextualized embeddings that excel when fine-tuned on downstream tasks."
     },
     {
       "path": "semester_05/lecture_25_transformers/gpt/README.md",
-      "name": "Gpt",
-      "problem": "Implements gpt algorithm.",
-      "intuition": "Gpt is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "GPT (Generative Pre-trained Transformer)",
+      "problem": "Pre-trains autoregressive language model on large text corpus, then fine-tunes for downstream tasks, enabling strong performance on generation and understanding tasks.",
+      "intuition": "Like learning to write by reading millions of books: learn patterns of language (pre-training), then adapt to specific writing tasks (fine-tuning) like essays, code, or stories.",
+      "inputs": "Text sequences, token embeddings, position embeddings.",
+      "outputs": "Next token predictions or task-specific outputs after fine-tuning.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Tokenize input text into subword tokens.",
+        "Create embeddings: token + position embeddings.",
+        "Apply Transformer decoder (masked self-attention + feed-forward).",
+        "Pre-train with language modeling objective: predict next token given previous tokens.",
+        "For fine-tuning: add task-specific head (classification, generation, etc.).",
+        "Train on downstream task with supervised learning."
       ],
-      "example": "Example: Gpt applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Pre-training: 'The cat sat' → predict 'on'. Fine-tuning for sentiment: 'Great movie!' → add classification head → predict 'positive'. Generation: 'Once upon a time' → generate story continuation.",
+      "time_complexity": "O(n²·d·l) for n tokens, d dimensions, l layers (autoregressive generation is sequential).",
+      "space_complexity": "O(l·d²) for parameters (GPT-2: 1.5B, GPT-3: 175B parameters).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Strong generative capabilities for text completion and creation.",
+        "Transfer learning: one model for many tasks."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Unidirectional (left-to-right) limits bidirectional understanding.",
+        "Large models require significant computational resources."
       ],
       "alternatives": [
-        "Related algorithms"
+        "BERT",
+        "T5",
+        "GPT-2/GPT-3",
+        "PaLM"
       ],
-      "explanation": "Gpt solves computational problems efficiently."
+      "explanation": "Pre-trains autoregressive Transformer decoder on language modeling, learning to predict next tokens, then fine-tunes for downstream tasks or generates text directly."
     },
     {
       "path": "semester_05/lecture_25_transformers/transformer/README.md",
       "name": "Transformer",
-      "problem": "Implements transformer algorithm.",
-      "intuition": "Transformer is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Replaces recurrent and convolutional layers with self-attention mechanisms, enabling parallel processing and better handling of long-range dependencies in sequences.",
+      "intuition": "Like a team meeting where everyone can talk to everyone simultaneously: instead of passing messages sequentially (RNN), all positions attend to all others at once, seeing the full context immediately.",
+      "inputs": "Input sequences (source and/or target), token embeddings, position encodings.",
+      "outputs": "Output sequences (for translation, generation, etc.) or representations (for understanding).",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Create input embeddings and add positional encodings (sinusoidal or learned).",
+        "Encoder: apply multi-head self-attention + feed-forward network (repeat N times).",
+        "Decoder: apply masked self-attention (causal) + cross-attention to encoder + feed-forward (repeat N times).",
+        "Use layer normalization and residual connections around each sub-layer.",
+        "Final linear layer and softmax for output predictions.",
+        "Train end-to-end with backpropagation."
       ],
-      "example": "Example: Transformer applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Translation: 'Hello world' (English) → encoder creates representations → decoder attends to encoder + generates 'Bonjour le monde' (French) token by token, attending to relevant source words.",
+      "time_complexity": "O(n²·d) where n is sequence length, d is dimension (parallelizable, but quadratic attention).",
+      "space_complexity": "O(n²) for attention matrices plus O(d²) for parameters per layer.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Parallel processing enables faster training than RNNs.",
+        "Self-attention captures long-range dependencies effectively."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Quadratic memory and computation in sequence length.",
+        "Requires large amounts of data for effective training."
       ],
       "alternatives": [
-        "Related algorithms"
+        "RNN/LSTM",
+        "CNN",
+        "Sparse Transformers",
+        "Linear Transformers"
       ],
-      "explanation": "Transformer solves computational problems efficiently."
+      "explanation": "Uses stacked self-attention and feed-forward layers with residual connections, replacing recurrence with parallel attention mechanisms to process sequences efficiently."
     },
     {
       "path": "semester_05/lecture_26_ensemble_methods/bagging/README.md",

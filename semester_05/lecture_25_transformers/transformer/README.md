@@ -4,37 +4,42 @@
    Transformer
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements transformer algorithm.
+   Replaces recurrent and convolutional layers with self-attention mechanisms, enabling parallel processing and better handling of long-range dependencies in sequences.
 
 3. **Intuition (plain-language explanation)**  
-   Transformer is a fundamental algorithm in computer science.
+   Like a team meeting where everyone can talk to everyone simultaneously: instead of passing messages sequentially (RNN), all positions attend to all others at once, seeing the full context immediately.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Input sequences (source and/or target), token embeddings, position encodings.  
+   - Output: Output sequences (for translation, generation, etc.) or representations (for understanding).
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Create input embeddings and add positional encodings (sinusoidal or learned).
+2. Encoder: apply multi-head self-attention + feed-forward network (repeat N times).
+3. Decoder: apply masked self-attention (causal) + cross-attention to encoder + feed-forward (repeat N times).
+4. Use layer normalization and residual connections around each sub-layer.
+5. Final linear layer and softmax for output predictions.
+6. Train end-to-end with backpropagation.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Transformer applied to sample data.
+   Translation: 'Hello world' (English) → encoder creates representations → decoder attends to encoder + generates 'Bonjour le monde' (French) token by token, attending to relevant source words.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(n²·d) where n is sequence length, d is dimension (parallelizable, but quadratic attention).  
+   - Space: O(n²) for attention matrices plus O(d²) for parameters per layer.
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Parallel processing enables faster training than RNNs.
+- Self-attention captures long-range dependencies effectively.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Quadratic memory and computation in sequence length.
+- Requires large amounts of data for effective training.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: RNN/LSTM, CNN, Sparse Transformers, Linear Transformers
 
 11. **30-second explanation (your own words)**  
-    Transformer solves computational problems efficiently.
+    Uses stacked self-attention and feed-forward layers with residual connections, replacing recurrence with parallel attention mechanisms to process sequences efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
