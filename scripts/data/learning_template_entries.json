@@ -11110,55 +11110,80 @@
     },
     {
       "path": "semester_09/lecture_58_parallel_computing/parallel_prefix/README.md",
-      "name": "Parallel Prefix",
-      "problem": "Implements parallel prefix algorithm.",
-      "intuition": "Parallel Prefix is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Parallel Prefix (Scan)",
+      "problem": "Computes all prefix sums (or other associative operations) of an array in parallel, enabling efficient parallel computation of cumulative operations like running sums, maximums, or products.",
+      "intuition": "Like calculating running totals in parallel: parallel prefix is like calculating running totals for a list of numbers, but doing it in parallel - instead of calculating each total sequentially (1, 1+2, 1+2+3, ...), you use a tree structure where you combine results at different levels, allowing multiple calculations to happen simultaneously - it's like having multiple people calculate different parts of the running totals and then combining their results.",
+      "inputs": "Array of values, associative binary operation (addition, multiplication, maximum, etc.), number of processors.",
+      "outputs": "Prefix array (scan results), parallel computation, cumulative values.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Up-sweep: build binary tree, compute partial results bottom-up (upward pass).",
+        "Combine: at each level, combine results from left and right subtrees.",
+        "Store: store intermediate results in tree nodes.",
+        "Down-sweep: propagate results top-down (downward pass).",
+        "Distribute: distribute prefix values to appropriate positions.",
+        "Compute: compute final prefix values using tree structure.",
+        "Parallelize: execute tree operations in parallel across processors.",
+        "Combine: combine results from parallel execution.",
+        "Output: return prefix array with all cumulative values."
       ],
-      "example": "Example: Parallel Prefix applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Parallel prefix: array [1, 2, 3, 4, 5] → up-sweep: build tree, compute sums → level 1: 1, 2, 3, 4, 5 → level 2: 3, 7, 5 → level 3: 10, 5 → root: 15 → down-sweep: propagate → prefix sums: [1, 3, 6, 10, 15] → parallel execution → O(log n) time with n processors.",
+      "time_complexity": "O(log n) with n processors, O(n) with single processor where n is array size.",
+      "space_complexity": "O(n) where n is array size (tree structure and output array).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Efficiency: O(log n) parallel time complexity.",
+        "Versatility: works with any associative operation.",
+        "Scalability: scales well with number of processors."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: algorithm is more complex than sequential scan.",
+        "Overhead: tree construction and communication overhead.",
+        "Associativity: requires associative operation (not all operations are associative)."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Sequential Scan",
+        "Parallel Reduction",
+        "Tree-based Algorithms",
+        "Recursive Doubling"
       ],
-      "explanation": "Parallel Prefix solves computational problems efficiently."
+      "explanation": "Computes all prefix sums (or other associative operations) of an array in parallel, enabling efficient parallel computation of cumulative operations like running sums, maximums, or products."
     },
     {
       "path": "semester_09/lecture_58_parallel_computing/parallel_reduction/README.md",
       "name": "Parallel Reduction",
-      "problem": "Implements parallel reduction algorithm.",
-      "intuition": "Parallel Reduction is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Computes a single aggregate value (sum, product, maximum, etc.) from an array by combining all elements using an associative operation, executing the reduction in parallel across multiple processors.",
+      "intuition": "Like a tournament bracket: parallel reduction is like a tournament where you start with many players (array elements), pair them up (combine pairs), winners advance (results), and you keep pairing until one winner remains (final result) - but instead of one match at a time, all matches at each level happen simultaneously (in parallel), making it much faster - the final winner is your aggregate result (sum, max, etc.).",
+      "inputs": "Array of values, associative binary operation (addition, multiplication, maximum, minimum, etc.), number of processors.",
+      "outputs": "Single aggregate value, parallel computation result, reduced value.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Partition: divide array into chunks, assign to processors.",
+        "Local reduce: each processor reduces its chunk to a single value.",
+        "Combine: combine results from all processors using tree structure.",
+        "Pair: pair up results and combine them.",
+        "Repeat: repeat pairing and combining until one value remains.",
+        "Parallelize: execute all operations at each level in parallel.",
+        "Synchronize: synchronize processors between levels.",
+        "Output: return final aggregated value."
       ],
-      "example": "Example: Parallel Reduction applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Parallel reduction: array [1, 2, 3, 4, 5, 6, 7, 8], sum → level 1: [1+2, 3+4, 5+6, 7+8] = [3, 7, 11, 15] (parallel) → level 2: [3+7, 11+15] = [10, 26] (parallel) → level 3: [10+26] = [36] → result: 36 → O(log n) time with n processors → parallel reduction.",
+      "time_complexity": "O(log n) with n processors, O(n) with single processor where n is array size.",
+      "space_complexity": "O(n) where n is array size (intermediate results storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Efficiency: O(log n) parallel time complexity.",
+        "Scalability: scales well with number of processors.",
+        "Versatility: works with any associative operation."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Associativity: requires associative operation.",
+        "Overhead: synchronization overhead between levels.",
+        "Load balancing: requires careful load balancing for optimal performance."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Sequential Reduction",
+        "Tree-based Reduction",
+        "MapReduce",
+        "Distributed Reduction"
       ],
-      "explanation": "Parallel Reduction solves computational problems efficiently."
+      "explanation": "Computes a single aggregate value (sum, product, maximum, etc.) from an array by combining all elements using an associative operation, executing the reduction in parallel across multiple processors."
     },
     {
       "path": "semester_09/lecture_58_parallel_computing/simd_optimization/README.md",
@@ -11203,184 +11228,284 @@
     {
       "path": "semester_09/lecture_58_parallel_computing/vectorization/README.md",
       "name": "Vectorization",
-      "problem": "Implements vectorization algorithm.",
-      "intuition": "Vectorization is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Transforms scalar operations (operating on single values) into vector operations (operating on multiple values simultaneously), enabling SIMD instructions and compiler optimizations to improve performance.",
+      "intuition": "Like processing items in batches: vectorization is like processing items in batches instead of one at a time - instead of adding 5 to each number individually (scalar: add 5 to number 1, then add 5 to number 2, ...), you load multiple numbers into a wide register and add 5 to all of them at once (vector: add 5 to numbers 1-8 simultaneously) - it's like using a wide brush to paint multiple pixels at once instead of painting them one by one.",
+      "inputs": "Scalar code, loops, data arrays, computation patterns, vector width.",
+      "outputs": "Vectorized code, SIMD instructions, improved performance, parallelized operations.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Identify loops: find loops with independent iterations.",
+        "Check dependencies: verify no data dependencies between iterations.",
+        "Analyze operations: identify operations that can be vectorized.",
+        "Transform: convert scalar operations to vector operations.",
+        "Use SIMD: generate or use SIMD instructions (SSE, AVX, NEON).",
+        "Handle alignment: ensure data alignment for SIMD operations.",
+        "Process vectors: process multiple elements per iteration.",
+        "Handle remainder: process remaining elements that don't fit in vector.",
+        "Optimize: optimize memory access patterns for vectorization.",
+        "Measure: benchmark performance improvement."
       ],
-      "example": "Example: Vectorization applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Vectorization: scalar loop: for i in range(1000): C[i] = A[i] + B[i] → vectorized: load 8 elements of A and B → add 8 elements at once → store 8 results → repeat 125 times → remainder: process last 0 elements → speedup: 6-8x → vectorization successful.",
+      "time_complexity": "O(n/v) where n is data size, v is vector width (theoretical), actual depends on memory bandwidth.",
+      "space_complexity": "O(n) where n is data size (same as scalar, may require alignment padding).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Performance: significant speedup for vectorizable code (4-8x typical).",
+        "Efficiency: better CPU utilization and instruction throughput.",
+        "Compiler support: modern compilers can auto-vectorize many loops."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Suitability: only effective for data-parallel, regular computations.",
+        "Dependencies: data dependencies prevent vectorization.",
+        "Alignment: requires data alignment which may add complexity."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Scalar Code",
+        "Manual SIMD",
+        "GPU Computing",
+        "Multi-threading"
       ],
-      "explanation": "Vectorization solves computational problems efficiently."
+      "explanation": "Transforms scalar operations (operating on single values) into vector operations (operating on multiple values simultaneously), enabling SIMD instructions and compiler optimizations to improve performance."
     },
     {
       "path": "semester_09/lecture_59_distributed_systems_advanced/byzantine_fault_tolerance/README.md",
-      "name": "Byzantine Fault Tolerance",
-      "problem": "Implements byzantine fault tolerance algorithm.",
-      "intuition": "Byzantine Fault Tolerance is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Byzantine Fault Tolerance (BFT)",
+      "problem": "Enables distributed systems to reach consensus and maintain correctness even when some nodes are Byzantine (arbitrarily faulty, malicious, or compromised), tolerating up to f faulty nodes in a system of 3f+1 nodes.",
+      "intuition": "Like a group decision with untrustworthy members: Byzantine fault tolerance is like making a group decision when some members might lie, cheat, or act maliciously - you need enough honest members (2f+1 out of 3f+1) to outvote the faulty ones (f) - even if faulty members send conflicting messages to different people (like a traitor telling different lies to different allies), the honest majority can still reach the correct decision through voting and message verification.",
+      "inputs": "Node messages, proposals, votes, system of 3f+1 nodes, f faulty nodes.",
+      "outputs": "Consensus decision, agreement among honest nodes, fault-tolerant system.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Propose: a node proposes a value to all nodes.",
+        "Broadcast: nodes broadcast messages to all other nodes.",
+        "Collect: each node collects messages from other nodes.",
+        "Verify: nodes verify message authenticity and consistency.",
+        "Vote: nodes vote on proposed values.",
+        "Count: count votes, need 2f+1 votes for agreement.",
+        "Decide: if 2f+1 nodes agree, system reaches consensus.",
+        "Tolerate: system tolerates up to f Byzantine faults.",
+        "Verify: verify final decision is correct despite faulty nodes.",
+        "Commit: commit decision that all honest nodes agree on."
       ],
-      "example": "Example: Byzantine Fault Tolerance applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "BFT system: 4 nodes (f=1, need 3f+1=4) → node 1 proposes value X → all nodes broadcast → node 2 (Byzantine) sends X to node 3, Y to node 4 → nodes collect: node 3 gets [X, X, X], node 4 gets [X, X, Y] → voting: 3 nodes vote X → consensus: X (2f+1=3 votes) → Byzantine node cannot break consensus → BFT achieved.",
+      "time_complexity": "O(n²) message complexity where n is number of nodes (all-to-all communication).",
+      "space_complexity": "O(n) where n is number of nodes (message storage per node).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Security: tolerates malicious and arbitrary faults.",
+        "Correctness: ensures correctness even with Byzantine nodes.",
+        "Resilience: provides strong fault tolerance guarantees."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Overhead: high message complexity (O(n²) messages).",
+        "Scalability: requires 3f+1 nodes (more nodes than crash fault tolerance).",
+        "Complexity: more complex than crash fault tolerance algorithms."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Crash Fault Tolerance",
+        "Raft",
+        "PBFT",
+        "Tendermint"
       ],
-      "explanation": "Byzantine Fault Tolerance solves computational problems efficiently."
+      "explanation": "Enables distributed systems to reach consensus and maintain correctness even when some nodes are Byzantine (arbitrarily faulty, malicious, or compromised), tolerating up to f faulty nodes in a system of 3f+1 nodes."
     },
     {
       "path": "semester_09/lecture_59_distributed_systems_advanced/consensus_algorithms/README.md",
       "name": "Consensus Algorithms",
-      "problem": "Implements consensus algorithms algorithm.",
-      "intuition": "Consensus Algorithms is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Enables multiple distributed nodes to agree on a single value or decision despite network failures, node failures, and message delays, ensuring consistency in distributed systems.",
+      "intuition": "Like a group vote: consensus algorithms are like getting a group of people to agree on a decision - even if some people are absent (node failures), messages are delayed (network issues), or people disagree initially, the algorithm ensures everyone eventually agrees on the same decision - it's like a democratic process where you need a majority vote, but it handles cases where votes might arrive late or some voters might be unavailable.",
+      "inputs": "Node proposals, votes, network messages, node states, failure models.",
+      "outputs": "Agreed value, consensus decision, consistent state across nodes.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Propose: nodes propose values they want to agree on.",
+        "Communicate: nodes exchange proposals and votes via network.",
+        "Collect: each node collects proposals from other nodes.",
+        "Vote: nodes vote on proposed values.",
+        "Count: count votes, determine if majority reached.",
+        "Decide: if majority agrees, nodes decide on agreed value.",
+        "Commit: nodes commit to the decided value.",
+        "Propagate: propagate decision to all nodes.",
+        "Handle failures: tolerate node failures and network partitions.",
+        "Ensure safety: guarantee all nodes agree on same value (safety).",
+        "Ensure liveness: guarantee system eventually reaches consensus (liveness)."
       ],
-      "example": "Example: Consensus Algorithms applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Consensus: 5 nodes, 3 propose X, 2 propose Y → voting: 3 votes for X, 2 votes for Y → majority: X (3 > 5/2) → decision: all nodes agree on X → commit: all nodes commit X → consistency: all nodes have same value → consensus achieved.",
+      "time_complexity": "O(n) to O(n²) depending on algorithm where n is number of nodes.",
+      "space_complexity": "O(n) where n is number of nodes (state storage per node).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Consistency: ensures all nodes agree on same value.",
+        "Fault tolerance: tolerates node and network failures.",
+        "Fundamental: essential for distributed systems consistency."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Latency: may have high latency due to message exchanges.",
+        "Complexity: consensus algorithms can be complex.",
+        "Trade-offs: must balance between safety, liveness, and performance."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Raft",
+        "Paxos",
+        "PBFT",
+        "Tendermint",
+        "Two-Phase Commit"
       ],
-      "explanation": "Consensus Algorithms solves computational problems efficiently."
+      "explanation": "Enables multiple distributed nodes to agree on a single value or decision despite network failures, node failures, and message delays, ensuring consistency in distributed systems."
     },
     {
       "path": "semester_09/lecture_59_distributed_systems_advanced/crdt/README.md",
-      "name": "Crdt",
-      "problem": "Implements crdt algorithm.",
-      "intuition": "Crdt is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Conflict-Free Replicated Data Types (CRDTs)",
+      "problem": "Provides data structures that automatically resolve conflicts in distributed systems without coordination, enabling eventual consistency through mathematical properties (commutativity, associativity, idempotency).",
+      "intuition": "Like a shared document that auto-merges: CRDTs are like a shared document where multiple people can edit simultaneously, and the system automatically merges changes without conflicts - even if two people edit the same paragraph at the same time, the CRDT ensures both edits are preserved and merged correctly - it's like having a smart merge that always works, no matter what order changes arrive in, because the operations are designed to be commutative (order doesn't matter).",
+      "inputs": "Operations (add, remove, update), replicas, operation timestamps, vector clocks.",
+      "outputs": "Merged state, conflict-free replication, eventual consistency, convergent data.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Define CRDT: choose appropriate CRDT type (G-Counter, PN-Counter, G-Set, OR-Set, etc.).",
+        "Apply locally: apply operation to local replica immediately.",
+        "Tag operation: tag operation with metadata (timestamp, vector clock, unique ID).",
+        "Replicate: send operation to other replicas asynchronously.",
+        "Receive: receive operations from other replicas.",
+        "Merge: merge received operations into local state (commutative merge).",
+        "Resolve: automatically resolve conflicts using CRDT properties.",
+        "Converge: all replicas converge to same state eventually.",
+        "Query: query CRDT state (always returns consistent view).",
+        "Validate: ensure CRDT properties maintained (commutativity, associativity, idempotency)."
       ],
-      "example": "Example: Crdt applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "CRDT: G-Counter (grow-only counter) → replica A: increment by 5 → replica B: increment by 3 → merge: A gets +3, B gets +5 → both converge to 8 → commutative: order doesn't matter → conflict-free: no coordination needed → CRDT ensures consistency.",
+      "time_complexity": "O(1) for operations, O(n) for merge where n is number of replicas or operations.",
+      "space_complexity": "O(r) or O(o) depending on CRDT type where r is replicas, o is operations (metadata overhead).",
       "strengths": [
-        "Efficient for specific use cases"
+        "No coordination: operations don't require coordination between replicas.",
+        "Automatic merge: conflicts resolved automatically without manual intervention.",
+        "Low latency: local operations are immediate (no network wait)."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Limited operations: not all operations can be expressed as CRDTs.",
+        "Metadata overhead: CRDTs may require metadata (timestamps, vector clocks).",
+        "Complexity: some CRDT types are complex to understand and implement."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Eventual Consistency",
+        "Strong Consistency",
+        "Operational Transformation",
+        "Last-Write-Wins"
       ],
-      "explanation": "Crdt solves computational problems efficiently."
+      "explanation": "Provides data structures that automatically resolve conflicts in distributed systems without coordination, enabling eventual consistency through mathematical properties (commutativity, associativity, idempotency)."
     },
     {
       "path": "semester_09/lecture_59_distributed_systems_advanced/distributed_transactions/README.md",
       "name": "Distributed Transactions",
-      "problem": "Implements distributed transactions algorithm.",
-      "intuition": "Distributed Transactions is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Ensures atomicity and consistency of transactions that span multiple distributed databases or services, coordinating commit or abort decisions across all participants.",
+      "intuition": "Like a group purchase: distributed transactions are like a group purchase where everyone must agree - if you're buying something that requires payment from multiple people (distributed resources), either everyone pays (commit) or no one pays (abort) - you can't have a situation where some pay and others don't (partial commit) - the transaction coordinator ensures all participants agree before finalizing the transaction.",
+      "inputs": "Transaction operations, distributed resources, participants, coordinator, transaction ID.",
+      "outputs": "Committed or aborted transaction, consistent state across all participants, transaction result.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Begin: start distributed transaction, assign transaction ID.",
+        "Execute: execute operations on distributed resources (databases, services).",
+        "Prepare: coordinator sends prepare message to all participants.",
+        "Vote: each participant votes commit (ready) or abort (not ready).",
+        "Collect: coordinator collects votes from all participants.",
+        "Decide: if all vote commit, coordinator decides commit, else abort.",
+        "Commit/Abort: coordinator sends commit or abort message to all participants.",
+        "Acknowledge: participants acknowledge commit/abort completion.",
+        "Complete: transaction completes, all participants have consistent state.",
+        "Handle failures: handle participant or coordinator failures (two-phase commit, three-phase commit)."
       ],
-      "example": "Example: Distributed Transactions applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Distributed transaction: transfer $100 from Bank A to Bank B → begin transaction → debit $100 from Bank A → credit $100 to Bank B → prepare: both banks vote commit → decide: coordinator decides commit → commit: both banks commit → result: $100 transferred atomically → if Bank B fails: abort, Bank A rollback → atomicity maintained.",
+      "time_complexity": "O(n) where n is number of participants (message rounds: prepare, commit/abort).",
+      "space_complexity": "O(n) where n is number of participants (transaction state per participant).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Atomicity: ensures all-or-nothing execution across distributed resources.",
+        "Consistency: maintains consistency across distributed systems.",
+        "Reliability: provides strong guarantees for distributed operations."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Latency: high latency due to multiple message rounds.",
+        "Blocking: participants may block waiting for coordinator.",
+        "Complexity: handling failures and recovery is complex."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Saga Pattern",
+        "Eventual Consistency",
+        "Compensating Transactions",
+        "Two-Phase Commit"
       ],
-      "explanation": "Distributed Transactions solves computational problems efficiently."
+      "explanation": "Ensures atomicity and consistency of transactions that span multiple distributed databases or services, coordinating commit or abort decisions across all participants."
     },
     {
       "path": "semester_09/lecture_59_distributed_systems_advanced/eventual_consistency/README.md",
       "name": "Eventual Consistency",
-      "problem": "Implements eventual consistency algorithm.",
-      "intuition": "Eventual Consistency is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Allows distributed systems to have temporary inconsistencies between replicas, with the guarantee that all replicas will eventually converge to the same consistent state without requiring immediate synchronization.",
+      "intuition": "Like syncing files across devices: eventual consistency is like syncing files across your phone, laptop, and cloud - if you edit a file on your phone, it might take a few seconds for the change to appear on your laptop (temporary inconsistency), but eventually all devices will have the same version (eventual consistency) - you don't wait for all devices to sync before continuing (no immediate synchronization), which makes the system faster and more available.",
+      "inputs": "Updates, replicas, replication mechanism, conflict resolution strategy, time.",
+      "outputs": "Eventually consistent state, replicated data, converged replicas, consistent final state.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Update locally: apply update to local replica immediately (no wait).",
+        "Replicate: asynchronously replicate update to other replicas.",
+        "Propagate: updates propagate through network to all replicas.",
+        "Apply: each replica applies received updates.",
+        "Resolve conflicts: resolve conflicts if updates conflict (last-write-wins, CRDTs, etc.).",
+        "Converge: replicas gradually converge to same state.",
+        "Eventually consistent: after propagation time, all replicas have consistent state.",
+        "Handle partitions: handle network partitions gracefully (continue operating, sync when reconnected).",
+        "Monitor: monitor replication lag and convergence.",
+        "Guarantee: guarantee eventual consistency (all replicas converge eventually)."
       ],
-      "example": "Example: Eventual Consistency applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Eventual consistency: 3 replicas → user updates data on replica A → replica A: updated immediately → replicate: update sent to replicas B and C asynchronously → replica B: receives update after 100ms → replica C: receives update after 200ms → eventually: all replicas have same data → temporary inconsistency: 0-200ms → eventual consistency: after 200ms → high availability maintained.",
+      "time_complexity": "O(1) for local updates, O(n) for replication where n is number of replicas.",
+      "space_complexity": "O(n) where n is number of replicas (each replica stores full copy).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Availability: high availability (no blocking on network delays).",
+        "Performance: low latency for local operations.",
+        "Scalability: scales well to many replicas and geographic distribution."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Temporary inconsistency: replicas may have different values temporarily.",
+        "Conflict resolution: requires conflict resolution strategies.",
+        "Complexity: managing eventual consistency can be complex."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Strong Consistency",
+        "Weak Consistency",
+        "CRDTs",
+        "Causal Consistency"
       ],
-      "explanation": "Eventual Consistency solves computational problems efficiently."
+      "explanation": "Allows distributed systems to have temporary inconsistencies between replicas, with the guarantee that all replicas will eventually converge to the same consistent state without requiring immediate synchronization."
     },
     {
       "path": "semester_09/lecture_59_distributed_systems_advanced/vector_clocks/README.md",
       "name": "Vector Clocks",
-      "problem": "Implements vector clocks algorithm.",
-      "intuition": "Vector Clocks is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Tracks causal relationships between events in distributed systems by assigning vector timestamps to events, enabling detection of happened-before relationships and causal ordering without global clocks.",
+      "intuition": "Like a timeline with multiple tracks: vector clocks are like a timeline where each person (node) has their own track, and you mark when events happen on each track - when events from different tracks interact (like sending a message), you combine the timelines - this lets you figure out which events happened before others (causality) even though there's no single global clock - it's like having multiple synchronized watches that track not just time, but also who saw what when.",
+      "inputs": "Events, node identifiers, messages, vector timestamps, causal relationships.",
+      "outputs": "Vector timestamps, causal ordering, happened-before relationships, event ordering.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Initialize: each node starts with vector clock [0, 0, ..., 0] (one entry per node).",
+        "Local event: on local event, increment own clock entry.",
+        "Send message: when sending message, include current vector clock.",
+        "Receive message: when receiving message, merge with received vector clock.",
+        "Update: update own clock entry, and take maximum for each other node's entry.",
+        "Compare: compare vector clocks to determine happened-before relationships.",
+        "Order: use vector clocks to order events causally.",
+        "Detect: detect concurrent events (events with incomparable vector clocks).",
+        "Track: track causal dependencies across distributed system.",
+        "Use: use for causal consistency, debugging, and event ordering."
       ],
-      "example": "Example: Vector Clocks applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Vector clocks: 3 nodes (A, B, C) → A: event E1, clock [1,0,0] → A sends to B: message with [1,0,0] → B: receives, updates to [1,1,0] → B: event E2, clock [1,2,0] → B sends to C: [1,2,0] → C: receives, updates to [1,2,1] → compare: [1,0,0] < [1,2,0] → E1 happened before E2 → vector clocks track causality.",
+      "time_complexity": "O(n) for clock operations where n is number of nodes.",
+      "space_complexity": "O(n) per event where n is number of nodes (vector size).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Causality: accurately tracks causal relationships between events.",
+        "No global clock: doesn't require synchronized global clocks.",
+        "Concurrency detection: can detect concurrent events."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Space: vector size grows with number of nodes.",
+        "Scalability: may not scale well to very large numbers of nodes.",
+        "Complexity: more complex than scalar timestamps."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Logical Clocks",
+        "Lamport Timestamps",
+        "Hybrid Logical Clocks",
+        "TrueTime"
       ],
-      "explanation": "Vector Clocks solves computational problems efficiently."
+      "explanation": "Tracks causal relationships between events in distributed systems by assigning vector timestamps to events, enabling detection of happened-before relationships and causal ordering without global clocks."
     },
     {
       "path": "semester_09/lecture_60_system_design_advanced/api_gateway/README.md",

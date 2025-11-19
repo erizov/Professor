@@ -9168,6 +9168,481 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Scalar Code", "GPU Computing", "Multi-threading", "Compiler Auto-vectorization"],
         "explanation": "Utilizes Single Instruction, Multiple Data (SIMD) instructions to perform the same operation on multiple data elements simultaneously, accelerating vectorized computations on modern CPUs."
+    },
+    "semester_09/lecture_58_parallel_computing/parallel_prefix/README.md": {
+        "name": "Parallel Prefix (Scan)",
+        "problem": "Computes all prefix sums (or other associative operations) of an array in parallel, enabling efficient parallel computation of cumulative operations like running sums, maximums, or products.",
+        "intuition": "Like calculating running totals in parallel: parallel prefix is like calculating running totals for a list of numbers, but doing it in parallel - instead of calculating each total sequentially (1, 1+2, 1+2+3, ...), you use a tree structure where you combine results at different levels, allowing multiple calculations to happen simultaneously - it's like having multiple people calculate different parts of the running totals and then combining their results.",
+        "inputs": "Array of values, associative binary operation (addition, multiplication, maximum, etc.), number of processors.",
+        "outputs": "Prefix array (scan results), parallel computation, cumulative values.",
+        "steps": [
+            "Up-sweep: build binary tree, compute partial results bottom-up (upward pass).",
+            "Combine: at each level, combine results from left and right subtrees.",
+            "Store: store intermediate results in tree nodes.",
+            "Down-sweep: propagate results top-down (downward pass).",
+            "Distribute: distribute prefix values to appropriate positions.",
+            "Compute: compute final prefix values using tree structure.",
+            "Parallelize: execute tree operations in parallel across processors.",
+            "Combine: combine results from parallel execution.",
+            "Output: return prefix array with all cumulative values."
+        ],
+        "example": "Parallel prefix: array [1, 2, 3, 4, 5] → up-sweep: build tree, compute sums → level 1: 1, 2, 3, 4, 5 → level 2: 3, 7, 5 → level 3: 10, 5 → root: 15 → down-sweep: propagate → prefix sums: [1, 3, 6, 10, 15] → parallel execution → O(log n) time with n processors.",
+        "time_complexity": "O(log n) with n processors, O(n) with single processor where n is array size.",
+        "space_complexity": "O(n) where n is array size (tree structure and output array).",
+        "strengths": [
+            "Efficiency: O(log n) parallel time complexity.",
+            "Versatility: works with any associative operation.",
+            "Scalability: scales well with number of processors."
+        ],
+        "weaknesses": [
+            "Complexity: algorithm is more complex than sequential scan.",
+            "Overhead: tree construction and communication overhead.",
+            "Associativity: requires associative operation (not all operations are associative)."
+        ],
+        "alternatives": ["Sequential Scan", "Parallel Reduction", "Tree-based Algorithms", "Recursive Doubling"],
+        "explanation": "Computes all prefix sums (or other associative operations) of an array in parallel, enabling efficient parallel computation of cumulative operations like running sums, maximums, or products."
+    },
+    "semester_09/lecture_58_parallel_computing/parallel_reduction/README.md": {
+        "name": "Parallel Reduction",
+        "problem": "Computes a single aggregate value (sum, product, maximum, etc.) from an array by combining all elements using an associative operation, executing the reduction in parallel across multiple processors.",
+        "intuition": "Like a tournament bracket: parallel reduction is like a tournament where you start with many players (array elements), pair them up (combine pairs), winners advance (results), and you keep pairing until one winner remains (final result) - but instead of one match at a time, all matches at each level happen simultaneously (in parallel), making it much faster - the final winner is your aggregate result (sum, max, etc.).",
+        "inputs": "Array of values, associative binary operation (addition, multiplication, maximum, minimum, etc.), number of processors.",
+        "outputs": "Single aggregate value, parallel computation result, reduced value.",
+        "steps": [
+            "Partition: divide array into chunks, assign to processors.",
+            "Local reduce: each processor reduces its chunk to a single value.",
+            "Combine: combine results from all processors using tree structure.",
+            "Pair: pair up results and combine them.",
+            "Repeat: repeat pairing and combining until one value remains.",
+            "Parallelize: execute all operations at each level in parallel.",
+            "Synchronize: synchronize processors between levels.",
+            "Output: return final aggregated value."
+        ],
+        "example": "Parallel reduction: array [1, 2, 3, 4, 5, 6, 7, 8], sum → level 1: [1+2, 3+4, 5+6, 7+8] = [3, 7, 11, 15] (parallel) → level 2: [3+7, 11+15] = [10, 26] (parallel) → level 3: [10+26] = [36] → result: 36 → O(log n) time with n processors → parallel reduction.",
+        "time_complexity": "O(log n) with n processors, O(n) with single processor where n is array size.",
+        "space_complexity": "O(n) where n is array size (intermediate results storage).",
+        "strengths": [
+            "Efficiency: O(log n) parallel time complexity.",
+            "Scalability: scales well with number of processors.",
+            "Versatility: works with any associative operation."
+        ],
+        "weaknesses": [
+            "Associativity: requires associative operation.",
+            "Overhead: synchronization overhead between levels.",
+            "Load balancing: requires careful load balancing for optimal performance."
+        ],
+        "alternatives": ["Sequential Reduction", "Tree-based Reduction", "MapReduce", "Distributed Reduction"],
+        "explanation": "Computes a single aggregate value (sum, product, maximum, etc.) from an array by combining all elements using an associative operation, executing the reduction in parallel across multiple processors."
+    },
+    "semester_09/lecture_58_parallel_computing/vectorization/README.md": {
+        "name": "Vectorization",
+        "problem": "Transforms scalar operations (operating on single values) into vector operations (operating on multiple values simultaneously), enabling SIMD instructions and compiler optimizations to improve performance.",
+        "intuition": "Like processing items in batches: vectorization is like processing items in batches instead of one at a time - instead of adding 5 to each number individually (scalar: add 5 to number 1, then add 5 to number 2, ...), you load multiple numbers into a wide register and add 5 to all of them at once (vector: add 5 to numbers 1-8 simultaneously) - it's like using a wide brush to paint multiple pixels at once instead of painting them one by one.",
+        "inputs": "Scalar code, loops, data arrays, computation patterns, vector width.",
+        "outputs": "Vectorized code, SIMD instructions, improved performance, parallelized operations.",
+        "steps": [
+            "Identify loops: find loops with independent iterations.",
+            "Check dependencies: verify no data dependencies between iterations.",
+            "Analyze operations: identify operations that can be vectorized.",
+            "Transform: convert scalar operations to vector operations.",
+            "Use SIMD: generate or use SIMD instructions (SSE, AVX, NEON).",
+            "Handle alignment: ensure data alignment for SIMD operations.",
+            "Process vectors: process multiple elements per iteration.",
+            "Handle remainder: process remaining elements that don't fit in vector.",
+            "Optimize: optimize memory access patterns for vectorization.",
+            "Measure: benchmark performance improvement."
+        ],
+        "example": "Vectorization: scalar loop: for i in range(1000): C[i] = A[i] + B[i] → vectorized: load 8 elements of A and B → add 8 elements at once → store 8 results → repeat 125 times → remainder: process last 0 elements → speedup: 6-8x → vectorization successful.",
+        "time_complexity": "O(n/v) where n is data size, v is vector width (theoretical), actual depends on memory bandwidth.",
+        "space_complexity": "O(n) where n is data size (same as scalar, may require alignment padding).",
+        "strengths": [
+            "Performance: significant speedup for vectorizable code (4-8x typical).",
+            "Efficiency: better CPU utilization and instruction throughput.",
+            "Compiler support: modern compilers can auto-vectorize many loops."
+        ],
+        "weaknesses": [
+            "Suitability: only effective for data-parallel, regular computations.",
+            "Dependencies: data dependencies prevent vectorization.",
+            "Alignment: requires data alignment which may add complexity."
+        ],
+        "alternatives": ["Scalar Code", "Manual SIMD", "GPU Computing", "Multi-threading"],
+        "explanation": "Transforms scalar operations (operating on single values) into vector operations (operating on multiple values simultaneously), enabling SIMD instructions and compiler optimizations to improve performance."
+    },
+    "semester_09/lecture_59_distributed_systems_advanced/byzantine_fault_tolerance/README.md": {
+        "name": "Byzantine Fault Tolerance (BFT)",
+        "problem": "Enables distributed systems to reach consensus and maintain correctness even when some nodes are Byzantine (arbitrarily faulty, malicious, or compromised), tolerating up to f faulty nodes in a system of 3f+1 nodes.",
+        "intuition": "Like a group decision with untrustworthy members: Byzantine fault tolerance is like making a group decision when some members might lie, cheat, or act maliciously - you need enough honest members (2f+1 out of 3f+1) to outvote the faulty ones (f) - even if faulty members send conflicting messages to different people (like a traitor telling different lies to different allies), the honest majority can still reach the correct decision through voting and message verification.",
+        "inputs": "Node messages, proposals, votes, system of 3f+1 nodes, f faulty nodes.",
+        "outputs": "Consensus decision, agreement among honest nodes, fault-tolerant system.",
+        "steps": [
+            "Propose: a node proposes a value to all nodes.",
+            "Broadcast: nodes broadcast messages to all other nodes.",
+            "Collect: each node collects messages from other nodes.",
+            "Verify: nodes verify message authenticity and consistency.",
+            "Vote: nodes vote on proposed values.",
+            "Count: count votes, need 2f+1 votes for agreement.",
+            "Decide: if 2f+1 nodes agree, system reaches consensus.",
+            "Tolerate: system tolerates up to f Byzantine faults.",
+            "Verify: verify final decision is correct despite faulty nodes.",
+            "Commit: commit decision that all honest nodes agree on."
+        ],
+        "example": "BFT system: 4 nodes (f=1, need 3f+1=4) → node 1 proposes value X → all nodes broadcast → node 2 (Byzantine) sends X to node 3, Y to node 4 → nodes collect: node 3 gets [X, X, X], node 4 gets [X, X, Y] → voting: 3 nodes vote X → consensus: X (2f+1=3 votes) → Byzantine node cannot break consensus → BFT achieved.",
+        "time_complexity": "O(n²) message complexity where n is number of nodes (all-to-all communication).",
+        "space_complexity": "O(n) where n is number of nodes (message storage per node).",
+        "strengths": [
+            "Security: tolerates malicious and arbitrary faults.",
+            "Correctness: ensures correctness even with Byzantine nodes.",
+            "Resilience: provides strong fault tolerance guarantees."
+        ],
+        "weaknesses": [
+            "Overhead: high message complexity (O(n²) messages).",
+            "Scalability: requires 3f+1 nodes (more nodes than crash fault tolerance).",
+            "Complexity: more complex than crash fault tolerance algorithms."
+        ],
+        "alternatives": ["Crash Fault Tolerance", "Raft", "PBFT", "Tendermint"],
+        "explanation": "Enables distributed systems to reach consensus and maintain correctness even when some nodes are Byzantine (arbitrarily faulty, malicious, or compromised), tolerating up to f faulty nodes in a system of 3f+1 nodes."
+    },
+    "semester_09/lecture_59_distributed_systems_advanced/consensus_algorithms/README.md": {
+        "name": "Consensus Algorithms",
+        "problem": "Enables multiple distributed nodes to agree on a single value or decision despite network failures, node failures, and message delays, ensuring consistency in distributed systems.",
+        "intuition": "Like a group vote: consensus algorithms are like getting a group of people to agree on a decision - even if some people are absent (node failures), messages are delayed (network issues), or people disagree initially, the algorithm ensures everyone eventually agrees on the same decision - it's like a democratic process where you need a majority vote, but it handles cases where votes might arrive late or some voters might be unavailable.",
+        "inputs": "Node proposals, votes, network messages, node states, failure models.",
+        "outputs": "Agreed value, consensus decision, consistent state across nodes.",
+        "steps": [
+            "Propose: nodes propose values they want to agree on.",
+            "Communicate: nodes exchange proposals and votes via network.",
+            "Collect: each node collects proposals from other nodes.",
+            "Vote: nodes vote on proposed values.",
+            "Count: count votes, determine if majority reached.",
+            "Decide: if majority agrees, nodes decide on agreed value.",
+            "Commit: nodes commit to the decided value.",
+            "Propagate: propagate decision to all nodes.",
+            "Handle failures: tolerate node failures and network partitions.",
+            "Ensure safety: guarantee all nodes agree on same value (safety).",
+            "Ensure liveness: guarantee system eventually reaches consensus (liveness)."
+        ],
+        "example": "Consensus: 5 nodes, 3 propose X, 2 propose Y → voting: 3 votes for X, 2 votes for Y → majority: X (3 > 5/2) → decision: all nodes agree on X → commit: all nodes commit X → consistency: all nodes have same value → consensus achieved.",
+        "time_complexity": "O(n) to O(n²) depending on algorithm where n is number of nodes.",
+        "space_complexity": "O(n) where n is number of nodes (state storage per node).",
+        "strengths": [
+            "Consistency: ensures all nodes agree on same value.",
+            "Fault tolerance: tolerates node and network failures.",
+            "Fundamental: essential for distributed systems consistency."
+        ],
+        "weaknesses": [
+            "Latency: may have high latency due to message exchanges.",
+            "Complexity: consensus algorithms can be complex.",
+            "Trade-offs: must balance between safety, liveness, and performance."
+        ],
+        "alternatives": ["Raft", "Paxos", "PBFT", "Tendermint", "Two-Phase Commit"],
+        "explanation": "Enables multiple distributed nodes to agree on a single value or decision despite network failures, node failures, and message delays, ensuring consistency in distributed systems."
+    },
+    "semester_09/lecture_59_distributed_systems_advanced/crdt/README.md": {
+        "name": "Conflict-Free Replicated Data Types (CRDTs)",
+        "problem": "Provides data structures that automatically resolve conflicts in distributed systems without coordination, enabling eventual consistency through mathematical properties (commutativity, associativity, idempotency).",
+        "intuition": "Like a shared document that auto-merges: CRDTs are like a shared document where multiple people can edit simultaneously, and the system automatically merges changes without conflicts - even if two people edit the same paragraph at the same time, the CRDT ensures both edits are preserved and merged correctly - it's like having a smart merge that always works, no matter what order changes arrive in, because the operations are designed to be commutative (order doesn't matter).",
+        "inputs": "Operations (add, remove, update), replicas, operation timestamps, vector clocks.",
+        "outputs": "Merged state, conflict-free replication, eventual consistency, convergent data.",
+        "steps": [
+            "Define CRDT: choose appropriate CRDT type (G-Counter, PN-Counter, G-Set, OR-Set, etc.).",
+            "Apply locally: apply operation to local replica immediately.",
+            "Tag operation: tag operation with metadata (timestamp, vector clock, unique ID).",
+            "Replicate: send operation to other replicas asynchronously.",
+            "Receive: receive operations from other replicas.",
+            "Merge: merge received operations into local state (commutative merge).",
+            "Resolve: automatically resolve conflicts using CRDT properties.",
+            "Converge: all replicas converge to same state eventually.",
+            "Query: query CRDT state (always returns consistent view).",
+            "Validate: ensure CRDT properties maintained (commutativity, associativity, idempotency)."
+        ],
+        "example": "CRDT: G-Counter (grow-only counter) → replica A: increment by 5 → replica B: increment by 3 → merge: A gets +3, B gets +5 → both converge to 8 → commutative: order doesn't matter → conflict-free: no coordination needed → CRDT ensures consistency.",
+        "time_complexity": "O(1) for operations, O(n) for merge where n is number of replicas or operations.",
+        "space_complexity": "O(r) or O(o) depending on CRDT type where r is replicas, o is operations (metadata overhead).",
+        "strengths": [
+            "No coordination: operations don't require coordination between replicas.",
+            "Automatic merge: conflicts resolved automatically without manual intervention.",
+            "Low latency: local operations are immediate (no network wait)."
+        ],
+        "weaknesses": [
+            "Limited operations: not all operations can be expressed as CRDTs.",
+            "Metadata overhead: CRDTs may require metadata (timestamps, vector clocks).",
+            "Complexity: some CRDT types are complex to understand and implement."
+        ],
+        "alternatives": ["Eventual Consistency", "Strong Consistency", "Operational Transformation", "Last-Write-Wins"],
+        "explanation": "Provides data structures that automatically resolve conflicts in distributed systems without coordination, enabling eventual consistency through mathematical properties (commutativity, associativity, idempotency)."
+    },
+    "semester_09/lecture_59_distributed_systems_advanced/distributed_transactions/README.md": {
+        "name": "Distributed Transactions",
+        "problem": "Ensures atomicity and consistency of transactions that span multiple distributed databases or services, coordinating commit or abort decisions across all participants.",
+        "intuition": "Like a group purchase: distributed transactions are like a group purchase where everyone must agree - if you're buying something that requires payment from multiple people (distributed resources), either everyone pays (commit) or no one pays (abort) - you can't have a situation where some pay and others don't (partial commit) - the transaction coordinator ensures all participants agree before finalizing the transaction.",
+        "inputs": "Transaction operations, distributed resources, participants, coordinator, transaction ID.",
+        "outputs": "Committed or aborted transaction, consistent state across all participants, transaction result.",
+        "steps": [
+            "Begin: start distributed transaction, assign transaction ID.",
+            "Execute: execute operations on distributed resources (databases, services).",
+            "Prepare: coordinator sends prepare message to all participants.",
+            "Vote: each participant votes commit (ready) or abort (not ready).",
+            "Collect: coordinator collects votes from all participants.",
+            "Decide: if all vote commit, coordinator decides commit, else abort.",
+            "Commit/Abort: coordinator sends commit or abort message to all participants.",
+            "Acknowledge: participants acknowledge commit/abort completion.",
+            "Complete: transaction completes, all participants have consistent state.",
+            "Handle failures: handle participant or coordinator failures (two-phase commit, three-phase commit)."
+        ],
+        "example": "Distributed transaction: transfer $100 from Bank A to Bank B → begin transaction → debit $100 from Bank A → credit $100 to Bank B → prepare: both banks vote commit → decide: coordinator decides commit → commit: both banks commit → result: $100 transferred atomically → if Bank B fails: abort, Bank A rollback → atomicity maintained.",
+        "time_complexity": "O(n) where n is number of participants (message rounds: prepare, commit/abort).",
+        "space_complexity": "O(n) where n is number of participants (transaction state per participant).",
+        "strengths": [
+            "Atomicity: ensures all-or-nothing execution across distributed resources.",
+            "Consistency: maintains consistency across distributed systems.",
+            "Reliability: provides strong guarantees for distributed operations."
+        ],
+        "weaknesses": [
+            "Latency: high latency due to multiple message rounds.",
+            "Blocking: participants may block waiting for coordinator.",
+            "Complexity: handling failures and recovery is complex."
+        ],
+        "alternatives": ["Saga Pattern", "Eventual Consistency", "Compensating Transactions", "Two-Phase Commit"],
+        "explanation": "Ensures atomicity and consistency of transactions that span multiple distributed databases or services, coordinating commit or abort decisions across all participants."
+    },
+    "semester_09/lecture_59_distributed_systems_advanced/eventual_consistency/README.md": {
+        "name": "Eventual Consistency",
+        "problem": "Allows distributed systems to have temporary inconsistencies between replicas, with the guarantee that all replicas will eventually converge to the same consistent state without requiring immediate synchronization.",
+        "intuition": "Like syncing files across devices: eventual consistency is like syncing files across your phone, laptop, and cloud - if you edit a file on your phone, it might take a few seconds for the change to appear on your laptop (temporary inconsistency), but eventually all devices will have the same version (eventual consistency) - you don't wait for all devices to sync before continuing (no immediate synchronization), which makes the system faster and more available.",
+        "inputs": "Updates, replicas, replication mechanism, conflict resolution strategy, time.",
+        "outputs": "Eventually consistent state, replicated data, converged replicas, consistent final state.",
+        "steps": [
+            "Update locally: apply update to local replica immediately (no wait).",
+            "Replicate: asynchronously replicate update to other replicas.",
+            "Propagate: updates propagate through network to all replicas.",
+            "Apply: each replica applies received updates.",
+            "Resolve conflicts: resolve conflicts if updates conflict (last-write-wins, CRDTs, etc.).",
+            "Converge: replicas gradually converge to same state.",
+            "Eventually consistent: after propagation time, all replicas have consistent state.",
+            "Handle partitions: handle network partitions gracefully (continue operating, sync when reconnected).",
+            "Monitor: monitor replication lag and convergence.",
+            "Guarantee: guarantee eventual consistency (all replicas converge eventually)."
+        ],
+        "example": "Eventual consistency: 3 replicas → user updates data on replica A → replica A: updated immediately → replicate: update sent to replicas B and C asynchronously → replica B: receives update after 100ms → replica C: receives update after 200ms → eventually: all replicas have same data → temporary inconsistency: 0-200ms → eventual consistency: after 200ms → high availability maintained.",
+        "time_complexity": "O(1) for local updates, O(n) for replication where n is number of replicas.",
+        "space_complexity": "O(n) where n is number of replicas (each replica stores full copy).",
+        "strengths": [
+            "Availability: high availability (no blocking on network delays).",
+            "Performance: low latency for local operations.",
+            "Scalability: scales well to many replicas and geographic distribution."
+        ],
+        "weaknesses": [
+            "Temporary inconsistency: replicas may have different values temporarily.",
+            "Conflict resolution: requires conflict resolution strategies.",
+            "Complexity: managing eventual consistency can be complex."
+        ],
+        "alternatives": ["Strong Consistency", "Weak Consistency", "CRDTs", "Causal Consistency"],
+        "explanation": "Allows distributed systems to have temporary inconsistencies between replicas, with the guarantee that all replicas will eventually converge to the same consistent state without requiring immediate synchronization."
+    },
+    "semester_09/lecture_59_distributed_systems_advanced/vector_clocks/README.md": {
+        "name": "Vector Clocks",
+        "problem": "Tracks causal relationships between events in distributed systems by assigning vector timestamps to events, enabling detection of happened-before relationships and causal ordering without global clocks.",
+        "intuition": "Like a timeline with multiple tracks: vector clocks are like a timeline where each person (node) has their own track, and you mark when events happen on each track - when events from different tracks interact (like sending a message), you combine the timelines - this lets you figure out which events happened before others (causality) even though there's no single global clock - it's like having multiple synchronized watches that track not just time, but also who saw what when.",
+        "inputs": "Events, node identifiers, messages, vector timestamps, causal relationships.",
+        "outputs": "Vector timestamps, causal ordering, happened-before relationships, event ordering.",
+        "steps": [
+            "Initialize: each node starts with vector clock [0, 0, ..., 0] (one entry per node).",
+            "Local event: on local event, increment own clock entry.",
+            "Send message: when sending message, include current vector clock.",
+            "Receive message: when receiving message, merge with received vector clock.",
+            "Update: update own clock entry, and take maximum for each other node's entry.",
+            "Compare: compare vector clocks to determine happened-before relationships.",
+            "Order: use vector clocks to order events causally.",
+            "Detect: detect concurrent events (events with incomparable vector clocks).",
+            "Track: track causal dependencies across distributed system.",
+            "Use: use for causal consistency, debugging, and event ordering."
+        ],
+        "example": "Vector clocks: 3 nodes (A, B, C) → A: event E1, clock [1,0,0] → A sends to B: message with [1,0,0] → B: receives, updates to [1,1,0] → B: event E2, clock [1,2,0] → B sends to C: [1,2,0] → C: receives, updates to [1,2,1] → compare: [1,0,0] < [1,2,0] → E1 happened before E2 → vector clocks track causality.",
+        "time_complexity": "O(n) for clock operations where n is number of nodes.",
+        "space_complexity": "O(n) per event where n is number of nodes (vector size).",
+        "strengths": [
+            "Causality: accurately tracks causal relationships between events.",
+            "No global clock: doesn't require synchronized global clocks.",
+            "Concurrency detection: can detect concurrent events."
+        ],
+        "weaknesses": [
+            "Space: vector size grows with number of nodes.",
+            "Scalability: may not scale well to very large numbers of nodes.",
+            "Complexity: more complex than scalar timestamps."
+        ],
+        "alternatives": ["Logical Clocks", "Lamport Timestamps", "Hybrid Logical Clocks", "TrueTime"],
+        "explanation": "Tracks causal relationships between events in distributed systems by assigning vector timestamps to events, enabling detection of happened-before relationships and causal ordering without global clocks."
+    },
+    "semester_10/lecture_60_microservices/api_gateway/README.md": {
+        "name": "API Gateway",
+        "problem": "Provides a single entry point for client requests to a microservices architecture, handling routing, load balancing, authentication, rate limiting, and protocol translation.",
+        "intuition": "Like a reception desk: API Gateway is like a reception desk at a company - all visitors (clients) come to the reception desk first, the receptionist (gateway) checks who they are (authentication), directs them to the right department (routing), handles special requests (protocol translation), and manages the flow of visitors (rate limiting, load balancing) - clients don't need to know the internal structure of the company (microservices), they just talk to the reception desk.",
+        "inputs": "Client requests, service endpoints, routing rules, authentication tokens, rate limits.",
+        "outputs": "Routed requests, authenticated sessions, load-balanced traffic, aggregated responses.",
+        "steps": [
+            "Receive request: gateway receives client request.",
+            "Authenticate: verify client identity and authorization.",
+            "Route: determine which microservice should handle request.",
+            "Transform: transform request format if needed (protocol translation).",
+            "Load balance: select service instance using load balancing algorithm.",
+            "Forward: forward request to selected microservice.",
+            "Aggregate: if needed, aggregate responses from multiple services.",
+            "Transform response: transform response format for client.",
+            "Rate limit: enforce rate limits and throttling.",
+            "Return: return response to client.",
+            "Monitor: log requests, track metrics, monitor health."
+        ],
+        "example": "API Gateway: client requests /api/users/123 → gateway: authenticate token → route: user-service → load balance: select user-service instance 2 → forward: GET /users/123 → aggregate: combine with profile-service data → transform: format JSON response → rate limit: check client quota → return: user data to client → gateway handles complexity.",
+        "time_complexity": "O(1) for routing, O(n) for aggregation where n is number of services.",
+        "space_complexity": "O(r) where r is number of active requests (request state storage).",
+        "strengths": [
+            "Single entry point: simplifies client interactions with microservices.",
+            "Cross-cutting concerns: centralizes authentication, rate limiting, logging.",
+            "Decoupling: decouples clients from internal service structure."
+        ],
+        "weaknesses": [
+            "Single point of failure: gateway failure affects all clients.",
+            "Latency: adds extra hop and latency to requests.",
+            "Complexity: gateway can become complex with many responsibilities."
+        ],
+        "alternatives": ["Direct Service Access", "Service Mesh", "Reverse Proxy", "Load Balancer"],
+        "explanation": "Provides a single entry point for client requests to a microservices architecture, handling routing, load balancing, authentication, rate limiting, and protocol translation."
+    },
+    "semester_10/lecture_60_microservices/event_driven_architecture/README.md": {
+        "name": "Event-Driven Architecture",
+        "problem": "Designs systems where services communicate through events (asynchronous messages), enabling loose coupling, scalability, and responsiveness to real-time changes.",
+        "intuition": "Like a news broadcast system: event-driven architecture is like a news broadcast where when something happens (event), it's announced (published), and anyone interested (subscribers) can listen and react - services don't directly call each other (like phone calls), instead they publish events (like news broadcasts) and other services subscribe and react (like people tuning in) - this makes services independent (loose coupling) and allows many services to react to the same event (scalability).",
+        "inputs": "Events, event producers, event consumers, event bus/broker, event schemas.",
+        "outputs": "Published events, event-driven communication, decoupled services, reactive system.",
+        "steps": [
+            "Define events: identify domain events and define event schemas.",
+            "Create producers: services that produce and publish events.",
+            "Create consumers: services that subscribe to and consume events.",
+            "Publish: producers publish events to event bus or message broker.",
+            "Route: event bus routes events to interested consumers.",
+            "Subscribe: consumers subscribe to event types they're interested in.",
+            "Deliver: event bus delivers events to subscribed consumers.",
+            "Process: consumers process events and may produce new events.",
+            "Handle: handle event ordering, delivery guarantees, and error handling.",
+            "Scale: scale producers and consumers independently."
+        ],
+        "example": "Event-driven: order service creates order → publishes 'OrderCreated' event → event bus: routes to inventory-service, payment-service, notification-service → inventory-service: reserves items → payment-service: processes payment → notification-service: sends confirmation email → all services react independently → loose coupling → scalable → event-driven architecture.",
+        "time_complexity": "O(1) for event publish, O(n) for delivery where n is number of subscribers.",
+        "space_complexity": "O(e) where e is number of events in system (event storage and queues).",
+        "strengths": [
+            "Loose coupling: services are decoupled and independent.",
+            "Scalability: producers and consumers scale independently.",
+            "Responsiveness: enables real-time, reactive systems."
+        ],
+        "weaknesses": [
+            "Complexity: event flow can be complex to understand and debug.",
+            "Eventual consistency: may lead to eventual consistency challenges.",
+            "Debugging: tracing event flows can be difficult."
+        ],
+        "alternatives": ["Request-Response", "Message Queues", "Pub-Sub", "Saga Pattern"],
+        "explanation": "Designs systems where services communicate through events (asynchronous messages), enabling loose coupling, scalability, and responsiveness to real-time changes."
+    },
+    "semester_10/lecture_60_microservices/microservices_architecture/README.md": {
+        "name": "Microservices Architecture",
+        "problem": "Structures applications as a collection of small, independent services that communicate over well-defined APIs, enabling independent development, deployment, and scaling of services.",
+        "intuition": "Like a team of specialists: microservices architecture is like a team where each person is a specialist in one area (user management, payments, inventory) - they work independently (independent services), communicate when needed (APIs), and can be replaced or scaled individually (independent deployment) - unlike a monolithic team where everyone does everything together, microservices allow each specialist to work at their own pace and scale.",
+        "inputs": "Business capabilities, service boundaries, APIs, communication protocols, deployment units.",
+        "outputs": "Microservices system, independent services, distributed architecture, scalable system.",
+        "steps": [
+            "Identify boundaries: identify business capabilities and service boundaries.",
+            "Design services: design small, focused services (single responsibility).",
+            "Define APIs: define well-defined APIs for service communication.",
+            "Implement: implement each service independently.",
+            "Deploy: deploy services independently (separate processes/containers).",
+            "Communicate: services communicate via APIs (REST, gRPC, messaging).",
+            "Scale: scale services independently based on load.",
+            "Monitor: monitor each service independently.",
+            "Update: update services independently without affecting others.",
+            "Manage: manage service discovery, configuration, and orchestration."
+        ],
+        "example": "Microservices: e-commerce app → user-service (authentication, profiles) → order-service (order management) → payment-service (payments) → inventory-service (stock management) → each service: independent deployment, own database, own team → communicate: REST APIs → scale: scale order-service for high traffic → update: update payment-service without affecting others → microservices architecture.",
+        "time_complexity": "O(1) per service operation, O(n) for cross-service operations where n is services involved.",
+        "space_complexity": "O(s) where s is number of services (each service has own resources).",
+        "strengths": [
+            "Independence: services can be developed, deployed, and scaled independently.",
+            "Technology diversity: each service can use different technologies.",
+            "Fault isolation: service failures don't bring down entire system."
+        ],
+        "weaknesses": [
+            "Complexity: managing many services adds operational complexity.",
+            "Network latency: inter-service communication adds latency.",
+            "Data consistency: maintaining consistency across services is challenging."
+        ],
+        "alternatives": ["Monolithic Architecture", "Service-Oriented Architecture (SOA)", "Modular Monolith", "Serverless"],
+        "explanation": "Structures applications as a collection of small, independent services that communicate over well-defined APIs, enabling independent development, deployment, and scaling of services."
+    },
+    "semester_10/lecture_60_microservices/service_mesh/README.md": {
+        "name": "Service Mesh",
+        "problem": "Provides a dedicated infrastructure layer for handling service-to-service communication in microservices, managing traffic, security, observability, and resilience through sidecar proxies.",
+        "intuition": "Like a traffic management system: service mesh is like a sophisticated traffic management system for microservices - each service has a sidecar (like a personal traffic assistant) that handles all the communication details (routing, security, monitoring) - services just send messages normally, but the sidecars handle the complex stuff (like traffic lights, road signs, and traffic monitoring) - this separates business logic (driving) from communication concerns (traffic management).",
+        "inputs": "Service traffic, sidecar proxies, routing rules, security policies, observability config.",
+        "outputs": "Managed traffic, secured communication, observability data, resilient services.",
+        "steps": [
+            "Deploy sidecars: deploy sidecar proxy alongside each service instance.",
+            "Intercept traffic: sidecars intercept all service-to-service traffic.",
+            "Route: route traffic based on routing rules and service discovery.",
+            "Secure: implement mTLS (mutual TLS) for service-to-service security.",
+            "Load balance: distribute traffic across service instances.",
+            "Circuit break: implement circuit breakers for fault tolerance.",
+            "Retry: handle retries and timeouts automatically.",
+            "Observe: collect metrics, logs, and traces (observability).",
+            "Policy: enforce security and traffic policies.",
+            "Manage: manage mesh configuration centrally (control plane)."
+        ],
+        "example": "Service mesh: user-service → sidecar proxy → intercepts requests → mTLS: encrypts communication → route: routes to order-service → load balance: selects order-service instance → circuit breaker: checks health → retry: retries on failure → observe: collects metrics → order-service receives request → sidecar handles all communication concerns → service mesh operational.",
+        "time_complexity": "O(1) per request (sidecar overhead), O(n) for routing where n is number of services.",
+        "space_complexity": "O(s) where s is number of service instances (sidecar per instance).",
+        "strengths": [
+            "Separation of concerns: separates communication from business logic.",
+            "Observability: provides comprehensive observability (metrics, logs, traces).",
+            "Security: implements security (mTLS, policies) transparently."
+        ],
+        "weaknesses": [
+            "Overhead: sidecar proxies add latency and resource overhead.",
+            "Complexity: service mesh adds operational complexity.",
+            "Learning curve: requires understanding of mesh concepts and tools."
+        ],
+        "alternatives": ["API Gateway", "Library-based Approach", "Direct Communication", "Service Proxy"],
+        "explanation": "Provides a dedicated infrastructure layer for handling service-to-service communication in microservices, managing traffic, security, observability, and resilience through sidecar proxies."
+    },
+    "semester_10/lecture_61_cloud_native/container_orchestration/README.md": {
+        "name": "Container Orchestration",
+        "problem": "Automates deployment, scaling, and management of containerized applications across clusters of machines, handling scheduling, health monitoring, load balancing, and resource allocation.",
+        "intuition": "Like an automated warehouse manager: container orchestration is like an automated warehouse manager that decides where to store containers (scheduling), monitors their condition (health checks), moves them when needed (scaling), balances the load (load distribution), and handles problems automatically (self-healing) - you just specify what you want (desired state), and the orchestrator makes it happen automatically across many machines.",
+        "inputs": "Container images, deployment specifications, resource requirements, scaling policies, cluster nodes.",
+        "outputs": "Deployed containers, scaled services, load-balanced traffic, managed infrastructure.",
+        "steps": [
+            "Define desired state: specify desired application state (replicas, resources, etc.).",
+            "Schedule: scheduler places containers on cluster nodes based on resources and constraints.",
+            "Deploy: orchestrator deploys containers to selected nodes.",
+            "Monitor: continuously monitor container health and node status.",
+            "Scale: automatically scale containers up/down based on load or metrics.",
+            "Load balance: distribute traffic across container instances.",
+            "Self-heal: automatically restart failed containers or reschedule them.",
+            "Update: perform rolling updates with zero downtime.",
+            "Manage: manage networking, storage, and secrets for containers.",
+            "Optimize: optimize resource utilization across cluster."
+        ],
+        "example": "Container orchestration: Kubernetes → desired state: 3 replicas of web-app → scheduler: places containers on nodes 1, 2, 3 → deploy: containers running → monitor: health checks every 30s → scale: traffic increases → scale to 5 replicas → load balance: traffic distributed → self-heal: container on node 2 fails → restart on node 4 → orchestration automated.",
+        "time_complexity": "O(n) for scheduling where n is number of nodes, O(1) for container operations.",
+        "space_complexity": "O(c) where c is number of containers (state management overhead).",
+        "strengths": [
+            "Automation: automates deployment, scaling, and management tasks.",
+            "Scalability: easily scales applications across many machines.",
+            "Resilience: provides self-healing and fault tolerance."
+        ],
+        "weaknesses": [
+            "Complexity: orchestration platforms can be complex to learn and operate.",
+            "Overhead: orchestration adds resource and operational overhead.",
+            "Dependency: applications depend on orchestration platform."
+        ],
+        "alternatives": ["Manual Deployment", "Docker Swarm", "Nomad", "Cloud Managed Services"],
+        "explanation": "Automates deployment, scaling, and management of containerized applications across clusters of machines, handling scheduling, health monitoring, load balancing, and resource allocation."
     }
 }
 
