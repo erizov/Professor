@@ -3214,6 +3214,202 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Three-Phase Commit", "Paxos/Raft Transactions", "Saga Pattern"],
         "explanation": "Uses a coordinator-driven prepare/commit handshake so either all participants commit or all abort, ensuring distributed atomicity at the cost of blocking."
+    },
+    "semester_04/lecture_14_security_patterns/oauth/README.md": {
+        "name": "OAuth 2.0",
+        "problem": "Enables third-party applications to obtain limited access to user resources without exposing user credentials, using authorization tokens.",
+        "intuition": "Like a hotel key card: instead of giving your master key (password) to every service, issue temporary access cards (tokens) with specific permissions.",
+        "inputs": "Client application, resource owner (user), authorization server, resource server, scopes (permissions).",
+        "outputs": "Access token and optionally refresh token for accessing protected resources.",
+        "steps": [
+            "Client redirects user to authorization server with client ID and requested scopes.",
+            "User authenticates and grants/denies permission.",
+            "Authorization server redirects back to client with authorization code.",
+            "Client exchanges authorization code for access token (with client secret).",
+            "Client uses access token to access protected resources from resource server.",
+            "Optionally refresh token to obtain new access token when expired."
+        ],
+        "example": "Photo app wants access to user's Google photos: user authorizes → Google issues token → app uses token to fetch photos without user's password.",
+        "time_complexity": "O(1) for token validation; O(n) for authorization flow (multiple HTTP requests).",
+        "space_complexity": "O(1) for token storage; O(n) for client and user registrations.",
+        "strengths": [
+            "No password sharing: users don't expose credentials to third parties.",
+            "Fine-grained permissions through scopes."
+        ],
+        "weaknesses": [
+            "Complex flow with multiple parties and security considerations.",
+            "Token management complexity (expiration, refresh, revocation)."
+        ],
+        "alternatives": ["SAML", "OpenID Connect", "API Keys", "JWT Bearer Tokens"],
+        "explanation": "Delegates authorization to a trusted server that issues tokens to third-party applications, allowing resource access without password sharing."
+    },
+    "semester_04/lecture_20_monitoring_observability/distributed_tracing/README.md": {
+        "name": "Distributed Tracing",
+        "problem": "Tracks requests across multiple services in a distributed system to understand request flow, identify bottlenecks, and debug performance issues.",
+        "intuition": "Like a package tracking number: follow a request's journey through multiple services, recording each step to see where it goes and how long it takes.",
+        "inputs": "Request headers (trace ID, span ID), service calls, instrumentation points.",
+        "outputs": "Complete trace showing request path through services with timing and metadata.",
+        "steps": [
+            "Generate or extract trace ID at request entry point.",
+            "Create root span for initial service.",
+            "Propagate trace context (trace ID, span ID) in request headers.",
+            "Each service creates child spans for operations.",
+            "Spans record start time, end time, tags, and logs.",
+            "Send spans to tracing backend for aggregation and visualization."
+        ],
+        "example": "User request → API Gateway (span 1) → Auth Service (span 2) → Order Service (span 3) → Payment Service (span 4). Trace shows full path and 2.3s total latency.",
+        "time_complexity": "O(1) for span creation; O(n) for trace collection where n is number of services.",
+        "space_complexity": "O(n) for trace data where n is number of spans in trace.",
+        "strengths": [
+            "End-to-end visibility across distributed systems.",
+            "Identifies performance bottlenecks and dependencies."
+        ],
+        "weaknesses": [
+            "Overhead from instrumentation and data collection.",
+            "Requires consistent trace context propagation."
+        ],
+        "alternatives": ["Log Correlation", "APM Tools", "Service Mesh Observability"],
+        "explanation": "Instruments services to create spans that form traces, enabling visualization of request flows and performance analysis across distributed systems."
+    },
+    "semester_04/lecture_20_monitoring_observability/log_aggregation/README.md": {
+        "name": "Log Aggregation",
+        "problem": "Collects, centralizes, and indexes logs from multiple services to enable search, analysis, and troubleshooting across distributed systems.",
+        "intuition": "Like a library catalog: gather all books (logs) from different locations into one central system (aggregator) so you can search and find what you need quickly.",
+        "inputs": "Logs from multiple services, log shipping agents, aggregation infrastructure.",
+        "outputs": "Centralized, searchable log repository with indexing and query capabilities.",
+        "steps": [
+            "Services write logs to local files or stdout.",
+            "Log shippers (agents) collect logs from each service.",
+            "Shippers forward logs to aggregation service (e.g., ELK, Splunk).",
+            "Aggregator parses, indexes, and stores logs.",
+            "Users query aggregated logs using search interface.",
+            "Optionally apply retention policies and archiving."
+        ],
+        "example": "10 microservices each write logs → Filebeat collects → sends to Elasticsearch → Kibana provides search interface. Query: 'errors in last hour' shows all errors across services.",
+        "time_complexity": "O(1) for log ingestion; O(log n) to O(n) for search depending on indexing.",
+        "space_complexity": "O(n) for n log entries (requires significant storage for large systems).",
+        "strengths": [
+            "Centralized view of all system logs.",
+            "Enables correlation and analysis across services."
+        ],
+        "weaknesses": [
+            "High storage and processing requirements.",
+            "Network overhead from log shipping."
+        ],
+        "alternatives": ["Structured Logging", "Distributed Tracing", "Centralized Logging Services"],
+        "explanation": "Collects logs from distributed services into a central repository, enabling unified search, analysis, and troubleshooting across the entire system."
+    },
+    "semester_04/lecture_20_monitoring_observability/metrics_collection/README.md": {
+        "name": "Metrics Collection",
+        "problem": "Collects, aggregates, and stores quantitative measurements about system behavior (CPU, memory, request rates, errors) for monitoring and alerting.",
+        "intuition": "Like a car dashboard: continuously measure speed, fuel, temperature (metrics) and display them so you can monitor system health and react to issues.",
+        "inputs": "System metrics (CPU, memory, disk), application metrics (request rate, latency, errors), business metrics (revenue, conversions).",
+        "outputs": "Time-series database of metrics with visualization and alerting capabilities.",
+        "steps": [
+            "Instrument application/services to emit metrics (counters, gauges, histograms).",
+            "Metrics agents collect metrics at regular intervals.",
+            "Forward metrics to time-series database (Prometheus, InfluxDB).",
+            "Store metrics with timestamps and labels.",
+            "Query metrics for visualization (Grafana) or alerting rules.",
+            "Generate alerts when metrics exceed thresholds."
+        ],
+        "example": "Service emits: request_count=1000, error_count=5, latency_p99=200ms every 10s → Prometheus stores → Grafana dashboard shows trends → Alert fires if error_rate > 1%.",
+        "time_complexity": "O(1) for metric emission; O(log n) for time-series queries.",
+        "space_complexity": "O(n) for n metric samples (compressed over time).",
+        "strengths": [
+            "Real-time visibility into system health.",
+            "Enables proactive alerting and capacity planning."
+        ],
+        "weaknesses": [
+            "Storage costs grow with metric cardinality.",
+            "Requires careful metric design to avoid explosion."
+        ],
+        "alternatives": ["Log-based Metrics", "Distributed Tracing", "APM Tools"],
+        "explanation": "Continuously collects quantitative measurements from systems and applications, storing them as time-series data for monitoring, visualization, and alerting."
+    },
+    "semester_05/lecture_21_transfer_learning/feature_extraction/README.md": {
+        "name": "Feature Extraction",
+        "problem": "Uses pre-trained neural network layers to extract meaningful features from new data, leveraging learned representations without retraining the entire model.",
+        "intuition": "Like using a professional photographer's camera settings: apply their learned expertise (pre-trained layers) to capture good features from your photos (new data) without learning photography from scratch.",
+        "inputs": "Pre-trained model (typically CNN), new dataset, feature extraction layer configuration.",
+        "outputs": "Feature vectors representing high-level patterns in the input data.",
+        "steps": [
+            "Load pre-trained model (e.g., ImageNet-trained ResNet).",
+            "Remove final classification layers.",
+            "Freeze all layers (set trainable=False).",
+            "Pass new data through frozen layers to extract features.",
+            "Use extracted features as input to new classifier or downstream task.",
+            "Optionally fine-tune some layers if needed."
+        ],
+        "example": "Pre-trained ResNet on ImageNet → remove last layer → extract 2048-dim features from cat images → train simple classifier on features → achieve good accuracy with little data.",
+        "time_complexity": "O(n·d) for n samples with d-dimensional features (faster than training from scratch).",
+        "space_complexity": "O(m) for pre-trained model weights plus O(n·d) for extracted features.",
+        "strengths": [
+            "Leverages powerful pre-trained representations.",
+            "Requires less data and training time than training from scratch."
+        ],
+        "weaknesses": [
+            "Features may not be optimal for target task.",
+            "Limited to tasks similar to pre-training domain."
+        ],
+        "alternatives": ["Fine-tuning", "End-to-End Training", "Domain Adaptation"],
+        "explanation": "Extracts high-level features using frozen pre-trained model layers, enabling effective learning on new tasks with limited data by leveraging transferable representations."
+    },
+    "semester_05/lecture_21_transfer_learning/fine_tuning/README.md": {
+        "name": "Fine-Tuning",
+        "problem": "Adapts a pre-trained model to a new task by training some or all layers on target data, balancing transfer learning with task-specific adaptation.",
+        "intuition": "Like adjusting a pre-tuned piano: start with good base tuning (pre-trained weights), then make small adjustments (fine-tune) to match your specific music (target task).",
+        "inputs": "Pre-trained model, target dataset, learning rate, layers to fine-tune.",
+        "outputs": "Adapted model optimized for target task with improved performance.",
+        "steps": [
+            "Load pre-trained model weights.",
+            "Optionally replace final layers for new task (e.g., different number of classes).",
+            "Freeze early layers, unfreeze later layers (or use differential learning rates).",
+            "Train on target dataset with lower learning rate than training from scratch.",
+            "Optionally unfreeze more layers and continue training.",
+            "Validate and adjust hyperparameters."
+        ],
+        "example": "Pre-trained ResNet on ImageNet → replace last layer for 10 classes → freeze first 100 layers → fine-tune last layers on medical images with lr=0.001 → achieve 95% accuracy.",
+        "time_complexity": "O(n·e·l) for n samples, e epochs, l layers (faster than full training).",
+        "space_complexity": "O(m) for model weights plus O(b) for batch data during training.",
+        "strengths": [
+            "Better performance than feature extraction alone.",
+            "More efficient than training from scratch."
+        ],
+        "weaknesses": [
+            "Requires more data and computation than feature extraction.",
+            "Risk of overfitting with small datasets."
+        ],
+        "alternatives": ["Feature Extraction", "Full Training from Scratch", "Progressive Unfreezing"],
+        "explanation": "Adapts pre-trained models to new tasks by selectively training layers, combining transfer learning benefits with task-specific optimization."
+    },
+    "semester_05/lecture_21_transfer_learning/transfer_learning/README.md": {
+        "name": "Transfer Learning",
+        "problem": "Applies knowledge learned from one task (source) to improve learning on a related task (target), reducing data and training requirements.",
+        "intuition": "Like learning to drive a car after knowing how to ride a bike: transfer balance and coordination skills (learned features) to the new task (driving) instead of starting from scratch.",
+        "inputs": "Pre-trained model on source task, target task dataset, transfer strategy.",
+        "outputs": "Model adapted for target task with improved performance and efficiency.",
+        "steps": [
+            "Train or obtain model on large source dataset (e.g., ImageNet).",
+            "Identify transferable knowledge (features, representations).",
+            "Choose transfer strategy: feature extraction, fine-tuning, or domain adaptation.",
+            "Apply strategy to adapt model for target task.",
+            "Train on target dataset (often with less data than needed for from-scratch training).",
+            "Evaluate and iterate on transfer approach."
+        ],
+        "example": "Model trained on ImageNet (1M images, 1000 classes) → transfer to medical diagnosis (1000 images, 5 classes) → fine-tune → achieve 90% accuracy vs 60% from scratch.",
+        "time_complexity": "O(n_s + n_t·e) where n_s is source data size, n_t is target data size, e is epochs (much faster than training from scratch).",
+        "space_complexity": "O(m) for model weights (same as base model).",
+        "strengths": [
+            "Reduces data requirements for target task.",
+            "Faster training and better performance than from-scratch learning."
+        ],
+        "weaknesses": [
+            "Requires related source and target tasks.",
+            "Negative transfer possible if tasks are too different."
+        ],
+        "alternatives": ["Training from Scratch", "Multi-Task Learning", "Domain Adaptation"],
+        "explanation": "Leverages knowledge from a source task to improve learning on a target task, enabling effective learning with limited data by transferring learned representations."
     }
 }
 
