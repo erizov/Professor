@@ -3801,6 +3801,203 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["RNN/LSTM", "CNN", "Sparse Transformers", "Linear Transformers"],
         "explanation": "Uses stacked self-attention and feed-forward layers with residual connections, replacing recurrence with parallel attention mechanisms to process sequences efficiently."
+    },
+    "semester_05/lecture_26_ensemble_methods/bagging/README.md": {
+        "name": "Bagging (Bootstrap Aggregating)",
+        "problem": "Reduces variance and overfitting by training multiple models on different bootstrap samples of the training data and averaging their predictions.",
+        "intuition": "Like asking multiple experts who saw different parts of a situation: each trains on a different random sample, then combine their opinions (average) for a more stable, reliable answer.",
+        "inputs": "Training dataset, base learning algorithm, number of models (bootstrap samples).",
+        "outputs": "Ensemble model that averages predictions from multiple base models.",
+        "steps": [
+            "Create B bootstrap samples by randomly sampling with replacement from training data.",
+            "Train a base model on each bootstrap sample independently.",
+            "For regression: average predictions from all B models.",
+            "For classification: use majority voting or average class probabilities.",
+            "Each model sees ~63% of unique training examples (bootstrap sampling).",
+            "Out-of-bag samples (~37%) can be used for validation."
+        ],
+        "example": "Random Forest: 100 decision trees, each trained on different bootstrap sample → predict class → majority vote → final prediction. Reduces variance compared to single tree.",
+        "time_complexity": "O(B·T(n)) where B is number of models, T(n) is training time per model (parallelizable).",
+        "space_complexity": "O(B·M) where M is model size (stores B models).",
+        "strengths": [
+            "Reduces variance and overfitting effectively.",
+            "Models can be trained in parallel."
+        ],
+        "weaknesses": [
+            "Does not reduce bias (if base model is biased, ensemble is too).",
+            "Requires more memory and computation than single model."
+        ],
+        "alternatives": ["Boosting", "Stacking", "Random Forest (specialized bagging)", "Single Model"],
+        "explanation": "Trains multiple models on bootstrap samples and averages their predictions, reducing variance and improving generalization through model diversity."
+    },
+    "semester_05/lecture_26_ensemble_methods/boosting/README.md": {
+        "name": "Boosting",
+        "problem": "Sequentially trains weak learners, each focusing on examples that previous learners got wrong, combining them into a strong ensemble that reduces both bias and variance.",
+        "intuition": "Like a student learning from mistakes: first model makes errors, second model focuses on those mistakes, third focuses on remaining errors, until the ensemble gets it right.",
+        "inputs": "Training dataset, weak learning algorithm, number of iterations, loss function.",
+        "outputs": "Weighted ensemble of weak learners that progressively improves performance.",
+        "steps": [
+            "Initialize equal weights for all training examples.",
+            "For each iteration: train weak learner on weighted data.",
+            "Calculate error rate and update example weights (increase weights for misclassified examples).",
+            "Calculate learner weight based on its accuracy.",
+            "Add weighted learner to ensemble.",
+            "Final prediction: weighted sum of all learners' predictions."
+        ],
+        "example": "AdaBoost: iteration 1 → tree misclassifies 3 examples → increase their weights → iteration 2 → tree focuses on those 3 → repeat → final: weighted combination of all trees.",
+        "time_complexity": "O(T·M(n)) where T is iterations, M(n) is training time per weak learner (sequential, not parallelizable).",
+        "space_complexity": "O(T·M) for T models plus O(n) for example weights.",
+        "strengths": [
+            "Reduces both bias and variance.",
+            "Can achieve high accuracy with weak base learners."
+        ],
+        "weaknesses": [
+            "Sequential training (cannot parallelize easily).",
+            "Sensitive to noisy data and outliers."
+        ],
+        "alternatives": ["Bagging", "Stacking", "Gradient Boosting", "XGBoost/LightGBM"],
+        "explanation": "Sequentially trains weak learners that focus on previously misclassified examples, combining them into a strong ensemble through weighted voting."
+    },
+    "semester_05/lecture_26_ensemble_methods/stacking/README.md": {
+        "name": "Stacking (Stacked Generalization)",
+        "problem": "Combines predictions from diverse base models using a meta-learner that learns how to best combine their outputs, often achieving better performance than voting or averaging.",
+        "intuition": "Like a committee with a smart chairperson: base models (committee members) make predictions, then meta-learner (chairperson) learns the best way to combine their opinions.",
+        "inputs": "Training data, diverse base models (level-0), meta-learner (level-1), cross-validation strategy.",
+        "outputs": "Two-level ensemble: base models + meta-learner that combines their predictions.",
+        "steps": [
+            "Split training data into K folds for cross-validation.",
+            "For each fold: train base models on K-1 folds, generate predictions on held-out fold.",
+            "Collect out-of-fold predictions from all base models to create meta-features.",
+            "Train meta-learner on meta-features (predictions) with true labels.",
+            "Retrain all base models on full training data.",
+            "Final prediction: base models predict → meta-learner combines predictions."
+        ],
+        "example": "Base models: SVM, Random Forest, Neural Net → 5-fold CV → each generates predictions on held-out fold → meta-features: [SVM_pred, RF_pred, NN_pred] → meta-learner (logistic regression) learns weights → final: weighted combination.",
+        "time_complexity": "O(K·(B·T(n) + M(m))) where K is folds, B is base models, M is meta-learner training (expensive due to CV).",
+        "space_complexity": "O(B·M_b + M_m) for base models and meta-learner.",
+        "strengths": [
+            "Can capture complex interactions between base models.",
+            "Often outperforms simple voting/averaging."
+        ],
+        "weaknesses": [
+            "More complex and computationally expensive.",
+            "Requires careful cross-validation to avoid overfitting."
+        ],
+        "alternatives": ["Bagging", "Boosting", "Voting", "Blending"],
+        "explanation": "Uses a meta-learner trained on base model predictions to learn optimal combination strategy, creating a two-level ensemble that leverages model diversity."
+    },
+    "semester_05/lecture_27_hyperparameter_optimization/bayesian_optimization/README.md": {
+        "name": "Bayesian Optimization",
+        "problem": "Efficiently finds optimal hyperparameters by building a probabilistic model of the objective function and using it to select the most promising hyperparameters to evaluate next.",
+        "intuition": "Like a smart explorer: instead of randomly trying places, build a map (probabilistic model) of where good results might be, then explore the most promising areas based on the map.",
+        "inputs": "Hyperparameter search space, objective function to optimize, acquisition function, number of iterations.",
+        "outputs": "Optimal hyperparameter configuration that maximizes/minimizes objective function.",
+        "steps": [
+            "Initialize with a few random hyperparameter evaluations.",
+            "Build probabilistic model (Gaussian Process) of objective function from observed evaluations.",
+            "Use acquisition function (e.g., Expected Improvement) to select next hyperparameters to evaluate.",
+            "Evaluate objective function at selected hyperparameters.",
+            "Update probabilistic model with new observation.",
+            "Repeat until budget exhausted; return best hyperparameters found."
+        ],
+        "example": "Optimize learning_rate and batch_size for neural network: evaluate 5 random configs → GP models performance → acquisition suggests lr=0.001, batch=32 → evaluate → update model → suggest next → repeat → find optimal: lr=0.0005, batch=64.",
+        "time_complexity": "O(n³) for GP inference where n is number of evaluations (much fewer evaluations than grid/random search).",
+        "space_complexity": "O(n²) for GP covariance matrix.",
+        "strengths": [
+            "Requires fewer evaluations than grid/random search.",
+            "Balances exploration and exploitation intelligently."
+        ],
+        "weaknesses": [
+            "GP inference becomes expensive with many evaluations.",
+            "Assumes smooth objective function."
+        ],
+        "alternatives": ["Grid Search", "Random Search", "Tree-structured Parzen Estimators", "Optuna"],
+        "explanation": "Uses probabilistic modeling and acquisition functions to intelligently select hyperparameters for evaluation, finding optima with fewer function evaluations than exhaustive search."
+    },
+    "semester_05/lecture_27_hyperparameter_optimization/grid_search/README.md": {
+        "name": "Grid Search",
+        "problem": "Exhaustively searches hyperparameter space by evaluating all combinations of specified hyperparameter values on a predefined grid.",
+        "intuition": "Like checking every intersection on a map: systematically try every combination of hyperparameter values in a grid pattern to find the best one.",
+        "inputs": "Hyperparameter search space (discrete values for each hyperparameter), objective function, cross-validation strategy.",
+        "outputs": "Best hyperparameter combination from the grid that optimizes objective function.",
+        "steps": [
+            "Define hyperparameter grid: specify discrete values for each hyperparameter.",
+            "Generate all combinations of hyperparameter values (Cartesian product).",
+            "For each combination: train model and evaluate using cross-validation.",
+            "Record performance metric (e.g., accuracy, F1-score) for each combination.",
+            "Select combination with best performance metric.",
+            "Optionally retrain on full data with best hyperparameters."
+        ],
+        "example": "SVM hyperparameters: C ∈ [0.1, 1, 10], gamma ∈ [0.001, 0.01, 0.1] → 3×3 = 9 combinations → evaluate each with 5-fold CV → find best: C=1, gamma=0.01 with 92% accuracy.",
+        "time_complexity": "O(∏(n_i)·T(n)) where n_i is values per hyperparameter, T(n) is training time (exponential in number of hyperparameters).",
+        "space_complexity": "O(1) for search (only stores best so far).",
+        "strengths": [
+            "Simple, straightforward, and guaranteed to find best in grid.",
+            "No assumptions about hyperparameter space."
+        ],
+        "weaknesses": [
+            "Exponential growth with number of hyperparameters (curse of dimensionality).",
+            "May miss optimal values not on the grid."
+        ],
+        "alternatives": ["Random Search", "Bayesian Optimization", "Optuna", "Hyperopt"],
+        "explanation": "Exhaustively evaluates all combinations of hyperparameter values on a predefined grid, systematically searching the space to find optimal configuration."
+    },
+    "semester_05/lecture_27_hyperparameter_optimization/optuna/README.md": {
+        "name": "Optuna",
+        "problem": "Automates hyperparameter optimization using state-of-the-art algorithms (TPE, CMA-ES) with efficient pruning and parallelization, making it easy to optimize complex search spaces.",
+        "intuition": "Like an intelligent lab assistant: automatically suggests which experiments (hyperparameters) to try next, stops unpromising ones early (pruning), and learns from results to suggest better ones.",
+        "inputs": "Objective function, hyperparameter search space (define_param), optimization algorithm, pruning strategy.",
+        "outputs": "Optimal hyperparameter configuration and optimization history.",
+        "steps": [
+            "Define objective function that takes trial object and returns metric to optimize.",
+            "Use trial.suggest_* methods to define hyperparameter search space.",
+            "Create study object and specify optimization direction (minimize/maximize).",
+            "Run optimization: Optuna suggests hyperparameters, evaluates objective, updates model.",
+            "Apply pruning to stop unpromising trials early (e.g., MedianPruner).",
+            "After N trials, return best hyperparameters from study.best_params."
+        ],
+        "example": "Optimize neural network: trial.suggest_float('lr', 1e-5, 1e-1, log=True), trial.suggest_int('layers', 1, 5) → Optuna uses TPE → suggests lr=0.001, layers=3 → evaluate → prune if bad → suggest next → after 100 trials → best: lr=0.0005, layers=4.",
+        "time_complexity": "O(n·T(n)) where n is number of trials, T(n) is objective evaluation time (efficient pruning reduces effective n).",
+        "space_complexity": "O(n) for storing trial history.",
+        "strengths": [
+            "Easy-to-use API with automatic algorithm selection.",
+            "Efficient pruning and parallelization support."
+        ],
+        "weaknesses": [
+            "Requires defining objective function correctly.",
+            "Pruning may stop trials too early in some cases."
+        ],
+        "alternatives": ["Hyperopt", "Scikit-optimize", "Bayesian Optimization", "Grid/Random Search"],
+        "explanation": "Automates hyperparameter optimization using advanced algorithms like TPE with intelligent trial suggestion, pruning, and parallelization for efficient search."
+    },
+    "semester_05/lecture_27_hyperparameter_optimization/random_search/README.md": {
+        "name": "Random Search",
+        "problem": "Searches hyperparameter space by randomly sampling configurations, often finding good solutions faster than grid search, especially when some hyperparameters are more important than others.",
+        "intuition": "Like throwing darts randomly: instead of checking every spot on a grid, randomly sample hyperparameter combinations. Often finds good solutions faster, especially if only a few hyperparameters matter.",
+        "inputs": "Hyperparameter search space (distributions for each hyperparameter), objective function, number of random samples.",
+        "outputs": "Best hyperparameter configuration from random samples.",
+        "steps": [
+            "Define probability distributions for each hyperparameter (uniform, log-uniform, etc.).",
+            "Randomly sample N hyperparameter configurations from these distributions.",
+            "For each sampled configuration: train model and evaluate using cross-validation.",
+            "Record performance metric for each configuration.",
+            "Select configuration with best performance metric.",
+            "Optionally retrain on full data with best hyperparameters."
+        ],
+        "example": "SVM: sample C from log-uniform(0.001, 100), gamma from log-uniform(0.0001, 1) → randomly sample 50 configurations → evaluate each → find best: C=2.3, gamma=0.05 with 91% accuracy (faster than 9×9=81 grid points).",
+        "time_complexity": "O(N·T(n)) where N is number of random samples, T(n) is training time (linear in samples, parallelizable).",
+        "space_complexity": "O(1) for search (only stores best so far).",
+        "strengths": [
+            "Faster than grid search for high-dimensional spaces.",
+            "Can explore continuous spaces more effectively.",
+            "Easy to parallelize."
+        ],
+        "weaknesses": [
+            "No guarantee of finding optimal solution.",
+            "May waste evaluations on poor regions."
+        ],
+        "alternatives": ["Grid Search", "Bayesian Optimization", "Optuna", "Hyperopt"],
+        "explanation": "Randomly samples hyperparameter configurations from defined distributions, often finding good solutions more efficiently than exhaustive grid search, especially in high-dimensional spaces."
     }
 }
 
