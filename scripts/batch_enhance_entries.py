@@ -5511,6 +5511,136 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Manual Memory Management", "Garbage Collection", "Reference Counting", "Memory Pools"],
         "explanation": "Manages computer memory allocation and deallocation for processes, tracking memory state, allocating memory on demand, and reclaiming memory when processes terminate, ensuring efficient memory utilization and preventing conflicts."
+    },
+    "semester_07/lecture_39_operating_systems/file_systems/README.md": {
+        "name": "File Systems",
+        "problem": "Organizes and manages data storage on disk devices by providing hierarchical directory structure, file metadata, and access control, enabling efficient storage, retrieval, and organization of files and directories.",
+        "intuition": "Like a library's filing system: the file system organizes data on disk like a library organizes books - files are like books (data), directories are like shelves (organization), and the file system keeps track of where everything is (metadata) so you can find and access files quickly.",
+        "inputs": "File operations (create, read, write, delete), directory operations, file paths, file metadata (name, size, permissions).",
+        "outputs": "Organized file storage on disk, directory hierarchies, file access through paths, metadata management.",
+        "steps": [
+            "Format disk: initialize file system structure on disk (superblock, inode table, data blocks).",
+            "Create directory structure: build hierarchical tree of directories (root, subdirectories).",
+            "Allocate storage: when file created, allocate disk blocks to store file data.",
+            "Store metadata: record file information in inode (size, permissions, timestamps, block pointers).",
+            "Map paths: translate file paths (/home/user/file.txt) to inode numbers using directory entries.",
+            "Handle file operations: read (find blocks, read data), write (allocate blocks, write data), delete (free blocks, remove inode).",
+            "Manage free space: track free disk blocks using bitmap or free list.",
+            "Maintain consistency: use journaling or other techniques to ensure file system integrity after crashes."
+        ],
+        "example": "Create file /home/user/document.txt: file system finds free inode → allocates inode #1234 → creates directory entry 'document.txt' → inode #1234 in /home/user → allocates disk blocks 100-105 → writes file data to blocks → updates inode with block pointers → file created.",
+        "time_complexity": "O(d) for path lookup where d is directory depth, O(b) for reading/writing b blocks, O(1) for metadata operations (with caching).",
+        "space_complexity": "O(F) for storing F files' metadata (inodes), O(D) for directory structures, O(B) for data blocks where B is total blocks used.",
+        "strengths": [
+            "Organized storage: provides logical organization of data.",
+            "Efficient access: enables fast file lookup and retrieval.",
+            "Abstraction: hides disk complexity from applications."
+        ],
+        "weaknesses": [
+            "Overhead: metadata and directory structures consume disk space.",
+            "Fragmentation: files may be stored non-contiguously, affecting performance.",
+            "Complexity: requires careful design to handle concurrent access and crashes."
+        ],
+        "alternatives": ["Raw Disk Access", "Database Storage", "Object Storage", "Network File Systems"],
+        "explanation": "Organizes and manages data storage on disk devices by providing hierarchical directory structure, file metadata, and access control, enabling efficient storage, retrieval, and organization of files and directories."
+    },
+    "semester_07/lecture_39_operating_systems/interrupt_handling/README.md": {
+        "name": "Interrupt Handling",
+        "problem": "Manages asynchronous events (hardware interrupts, software interrupts, exceptions) that require immediate CPU attention, enabling responsive system behavior and efficient I/O operations.",
+        "intuition": "Like a doorbell interrupting your work: when hardware needs attention (keyboard pressed, disk finished reading), it sends an interrupt signal to CPU - CPU stops current work, handles the interrupt (processes keyboard input), then returns to what it was doing.",
+        "inputs": "Interrupt signals from hardware devices, software interrupts (system calls), exceptions (errors, page faults), interrupt service routines (ISRs).",
+        "outputs": "Handled interrupts, updated system state, resumed process execution, I/O operations completed.",
+        "steps": [
+            "Interrupt occurs: hardware device or software generates interrupt signal to CPU.",
+            "Save context: CPU saves current process state (registers, program counter) to stack.",
+            "Identify interrupt: CPU determines interrupt type and source (keyboard, timer, disk, etc.).",
+            "Lookup ISR: use interrupt vector table to find appropriate interrupt service routine (ISR).",
+            "Disable interrupts: temporarily disable interrupts to prevent nested interrupts during handling.",
+            "Execute ISR: run interrupt service routine to handle the interrupt (read keyboard buffer, update timer, etc.).",
+            "Re-enable interrupts: restore interrupt enable flag to allow future interrupts.",
+            "Restore context: restore saved process state from stack.",
+            "Resume execution: return to interrupted process or switch to higher-priority process."
+        ],
+        "example": "Keyboard interrupt: user presses key → keyboard controller sends interrupt → CPU saves current process state → looks up keyboard ISR → executes ISR: reads key code from keyboard buffer → updates input queue → restores process state → resumes interrupted process → key appears in application.",
+        "time_complexity": "O(1) for interrupt identification and ISR lookup, O(I) for ISR execution where I is ISR complexity (typically microseconds).",
+        "space_complexity": "O(P) for interrupt stack per process, O(V) for interrupt vector table where V is number of interrupt types.",
+        "strengths": [
+            "Responsive: enables immediate handling of time-sensitive events.",
+            "Efficient: allows CPU to continue other work while waiting for I/O.",
+            "Flexible: supports various interrupt types and priorities."
+        ],
+        "weaknesses": [
+            "Overhead: context switching and ISR execution add overhead.",
+            "Complexity: requires careful design to handle nested interrupts and race conditions.",
+            "Latency: interrupt handling may delay time-critical operations."
+        ],
+        "alternatives": ["Polling", "Event-driven Programming", "Cooperative Multitasking", "Synchronous I/O"],
+        "explanation": "Manages asynchronous events that require immediate CPU attention, enabling responsive system behavior and efficient I/O operations through interrupt service routines and context switching."
+    },
+    "semester_07/lecture_39_operating_systems/process_scheduling/README.md": {
+        "name": "Process Scheduling",
+        "problem": "Determines which process runs on CPU at any given time, managing process execution order to maximize CPU utilization, ensure fairness, and meet real-time constraints.",
+        "intuition": "Like a traffic controller managing cars at an intersection: the scheduler decides which process (car) gets to use the CPU (intersection) next, considering priorities (emergency vehicles first), fairness (everyone gets a turn), and efficiency (keep traffic flowing).",
+        "inputs": "Ready processes, process priorities, scheduling algorithm, CPU time quantum, process states.",
+        "outputs": "Process execution order, CPU allocation decisions, process state transitions (running, ready, waiting).",
+        "steps": [
+            "Maintain ready queue: keep list of processes ready to execute, ordered by scheduling algorithm.",
+            "Select process: choose next process to run based on scheduling algorithm (FCFS, Round-Robin, Priority, etc.).",
+            "Context switch: save current process state (registers, program counter), load selected process state.",
+            "Dispatch process: give CPU to selected process, change process state to running.",
+            "Monitor execution: track process execution time, check for I/O requests or time quantum expiration.",
+            "Preempt process: if time quantum expires or higher-priority process arrives, interrupt current process.",
+            "Update statistics: record process execution time, waiting time, turnaround time.",
+            "Reschedule: when process blocks (I/O) or time quantum expires, return to step 2 to select next process."
+        ],
+        "example": "Round-Robin scheduling: 3 processes (P1, P2, P3), time quantum 10ms → P1 runs 10ms → preempt → P2 runs 10ms → preempt → P3 runs 10ms → preempt → back to P1 → cycle repeats → all processes get fair CPU time.",
+        "time_complexity": "O(1) for simple algorithms (FCFS, Round-Robin), O(log n) for priority queues, O(n) for some algorithms where n is number of processes.",
+        "space_complexity": "O(n) for storing n processes in ready queue, O(1) per process for process control block (PCB).",
+        "strengths": [
+            "Maximizes utilization: keeps CPU busy by switching between processes.",
+            "Fairness: ensures all processes get CPU time (depending on algorithm).",
+            "Responsive: enables multitasking and interactive applications."
+        ],
+        "weaknesses": [
+            "Overhead: context switching consumes CPU time.",
+            "Complexity: scheduling algorithms must balance multiple objectives.",
+            "Starvation: some algorithms may starve low-priority processes."
+        ],
+        "alternatives": ["Cooperative Multitasking", "Single-tasking", "Gang Scheduling", "Real-time Scheduling"],
+        "explanation": "Determines which process runs on CPU at any given time, managing process execution order to maximize CPU utilization, ensure fairness, and meet real-time constraints through various scheduling algorithms."
+    },
+    "semester_07/lecture_39_operating_systems/virtual_memory/README.md": {
+        "name": "Virtual Memory",
+        "problem": "Provides illusion of larger memory than physically available by using disk storage as extension of RAM, enabling programs to use more memory than physically installed and improving memory utilization through paging.",
+        "intuition": "Like having a magic filing cabinet: programs think they have huge memory (virtual addresses), but the OS secretly stores some of it on disk (like a filing cabinet) and only keeps frequently used parts in RAM (desk) - when program needs something from disk, OS swaps it in (brings file to desk).",
+        "inputs": "Virtual addresses from processes, physical memory (RAM), disk storage (swap space), page size, page table entries.",
+        "outputs": "Virtual-to-physical address translation, page tables, swapped pages on disk, memory protection.",
+        "steps": [
+            "Divide memory into pages: split virtual and physical memory into fixed-size pages (typically 4KB).",
+            "Create page tables: maintain mapping from virtual pages to physical pages (or disk) for each process.",
+            "Translate addresses: when process accesses virtual address, use page table to find physical address.",
+            "Check page presence: if page in RAM (page present), access directly.",
+            "Handle page fault: if page not in RAM (page fault), load page from disk to RAM.",
+            "Update page table: mark page as present, update physical address mapping.",
+            "Resume execution: retry the memory access that caused page fault.",
+            "Evict pages: when RAM full, select page to evict (LRU, FIFO) and write to disk if modified.",
+            "Update page table: mark evicted page as not present, record disk location."
+        ],
+        "example": "Process accesses virtual address 0x1000 → page table lookup: virtual page 1 → not in RAM (page fault) → OS selects page to evict (LRU) → writes evicted page to disk → loads page 1 from disk to RAM at physical address 0x5000 → updates page table: virtual page 1 → physical page 0x5000 → retry access → success.",
+        "time_complexity": "O(1) for address translation (with TLB cache), O(D) for page fault handling where D is disk access time (typically 5-10ms, much slower than RAM).",
+        "space_complexity": "O(P) for page tables where P is number of virtual pages per process, O(S) for swap space on disk where S is total virtual memory size.",
+        "strengths": [
+            "Larger address space: enables programs to use more memory than physically available.",
+            "Memory protection: isolates processes by giving each its own virtual address space.",
+            "Efficient utilization: allows more processes to run simultaneously."
+        ],
+        "weaknesses": [
+            "Performance: page faults are slow (disk access much slower than RAM).",
+            "Overhead: page tables consume memory and require management.",
+            "Complexity: requires hardware support (MMU) and careful algorithm design."
+        ],
+        "alternatives": ["Physical Memory Only", "Segmentation", "Hybrid Paging-Segmentation", "Memory Overcommit"],
+        "explanation": "Provides illusion of larger memory than physically available by using disk storage as extension of RAM, enabling programs to use more memory and improving utilization through paging and virtual-to-physical address translation."
     }
 }
 
