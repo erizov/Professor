@@ -6983,6 +6983,201 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["ERC-721", "ERC-1155", "ERC-998", "Custom Standards", "On-chain Metadata"],
         "explanation": "Defines standardized interfaces and metadata formats for non-fungible tokens (NFTs), enabling interoperability, composability, and consistent behavior across NFT marketplaces and applications."
+    },
+    "semester_08/lecture_47_support_systems/customer_support_automation/README.md": {
+        "name": "Customer Support Automation",
+        "problem": "Automates customer support processes using AI, chatbots, and automated workflows to handle common inquiries, route tickets, and provide instant responses, reducing response time and support costs.",
+        "intuition": "Like a smart receptionist: instead of customers waiting for a human agent (slow, expensive), automation uses chatbots and AI to answer common questions instantly (like 'What's my order status?') - only complex issues get escalated to humans, making support faster and cheaper.",
+        "inputs": "Customer inquiries, support tickets, knowledge base, automation rules, AI models.",
+        "outputs": "Automated responses, resolved tickets, routed escalations, support metrics.",
+        "steps": [
+            "Receive inquiry: customer submits question via chat, email, or ticket.",
+            "Classify: use AI/NLP to classify inquiry type (billing, technical, general, etc.).",
+            "Search knowledge base: query knowledge base for relevant answers.",
+            "Generate response: AI generates or retrieves appropriate response.",
+            "Respond: send automated response to customer (chatbot, email, etc.).",
+            "Verify: check if response resolves customer's issue.",
+            "Escalate (if needed): if issue unresolved or complex, route to human agent.",
+            "Learn: update automation based on successful resolutions and feedback."
+        ],
+        "example": "Customer asks: 'How do I reset my password?' → automation classifies as 'account issue' → searches knowledge base → finds password reset guide → sends automated response with steps → customer follows steps → issue resolved → no human agent needed → response time: 5 seconds vs 10 minutes.",
+        "time_complexity": "O(1) for simple lookups, O(log n) for knowledge base search, O(m) for AI processing where m is message length.",
+        "space_complexity": "O(k) where k is knowledge base size, O(m) for AI models.",
+        "strengths": [
+            "Fast response: provides instant answers to common questions.",
+            "Cost-effective: reduces need for human support agents.",
+            "24/7 availability: works around the clock without breaks."
+        ],
+        "weaknesses": [
+            "Limited understanding: may misunderstand complex or nuanced questions.",
+            "Customer frustration: some customers prefer human interaction.",
+            "Maintenance: requires ongoing updates to knowledge base and rules."
+        ],
+        "alternatives": ["Human Support", "Hybrid Automation", "Self-Service Portals", "Community Forums"],
+        "explanation": "Automates customer support processes using AI, chatbots, and automated workflows to handle common inquiries, route tickets, and provide instant responses, reducing response time and support costs."
+    },
+    "semester_08/lecture_47_support_systems/escalation_procedures/README.md": {
+        "name": "Escalation Procedures",
+        "problem": "Defines systematic process for routing unresolved or complex support issues to appropriate personnel or teams, ensuring timely resolution and proper handling of critical problems.",
+        "intuition": "Like a hospital triage system: when a patient arrives, nurses assess severity and route to appropriate specialist (emergency, general doctor, specialist) - escalation procedures do the same for support tickets: assess complexity/urgency and route to right person or team (L1 → L2 → L3, or support → engineering → management).",
+        "inputs": "Support ticket, issue details, customer priority, escalation rules, team availability.",
+        "outputs": "Escalated ticket, assigned agent/team, escalation path, priority level.",
+        "steps": [
+            "Assess issue: evaluate ticket complexity, urgency, and customer priority.",
+            "Check resolution attempts: verify if lower-level support attempted resolution.",
+            "Determine escalation level: identify appropriate escalation level (L1 → L2 → L3, etc.).",
+            "Select team: choose appropriate team or specialist based on issue type.",
+            "Route ticket: assign ticket to selected team or agent.",
+            "Notify: notify customer and relevant stakeholders of escalation.",
+            "Set SLA: adjust service level agreement based on escalation level.",
+            "Monitor: track escalation resolution time and outcome.",
+            "Document: record escalation reason and resolution for future reference."
+        ],
+        "example": "Customer reports critical bug → L1 support attempts fix → unable to resolve → escalates to L2 (engineering) → engineering identifies root cause → fixes bug → updates customer → ticket resolved → escalation time: 2 hours → total resolution: 4 hours.",
+        "time_complexity": "O(1) for routing decision, O(e) where e is escalation depth (number of levels).",
+        "space_complexity": "O(t) where t is number of tickets in escalation queue.",
+        "strengths": [
+            "Proper routing: ensures issues reach right expertise level.",
+            "Accountability: tracks who handles what and when.",
+            "Efficiency: prevents issues from getting stuck at wrong level."
+        ],
+        "weaknesses": [
+            "Delays: escalation adds time to resolution.",
+            "Complexity: requires well-defined escalation rules and processes.",
+            "Over-escalation: may escalate issues that could be resolved at lower level."
+        ],
+        "alternatives": ["Direct Assignment", "Round-Robin", "Skill-Based Routing", "Priority-Based Routing"],
+        "explanation": "Defines systematic process for routing unresolved or complex support issues to appropriate personnel or teams, ensuring timely resolution and proper handling of critical problems."
+    },
+    "semester_08/lecture_47_support_systems/incident_response/README.md": {
+        "name": "Incident Response",
+        "problem": "Provides structured approach to detect, respond to, and recover from security incidents, system outages, or critical failures, minimizing impact and restoring service quickly.",
+        "intuition": "Like a fire department response: when a fire (incident) is detected, firefighters follow a systematic process (assess → contain → extinguish → investigate) - incident response does the same for IT incidents: detect → assess → contain → mitigate → recover → learn, ensuring quick, organized response.",
+        "inputs": "Incident alerts, system logs, monitoring data, incident response plan, team members.",
+        "outputs": "Contained incident, restored service, incident report, lessons learned.",
+        "steps": [
+            "Detect: identify incident through monitoring, alerts, or reports.",
+            "Assess: evaluate incident severity, scope, and impact.",
+            "Classify: categorize incident type (security breach, outage, data loss, etc.).",
+            "Contain: isolate affected systems to prevent further damage.",
+            "Investigate: analyze root cause and extent of incident.",
+            "Mitigate: take actions to stop ongoing damage or attack.",
+            "Recover: restore affected systems and services to normal operation.",
+            "Document: record incident details, response actions, and timeline.",
+            "Post-mortem: conduct review to identify improvements and prevent recurrence."
+        ],
+        "example": "Security alert: suspicious login attempts → incident detected → assess: potential breach → classify: security incident → contain: disable affected accounts → investigate: find compromised credentials → mitigate: reset passwords, enable 2FA → recover: restore access for legitimate users → document: create incident report → post-mortem: improve monitoring.",
+        "time_complexity": "O(1) for detection, O(n) for investigation where n is system size, O(r) for recovery where r is recovery steps.",
+        "space_complexity": "O(l) where l is log data size, O(i) for incident documentation.",
+        "strengths": [
+            "Structured response: ensures systematic, thorough incident handling.",
+            "Minimizes impact: quick containment reduces damage.",
+            "Continuous improvement: post-mortems improve future responses."
+        ],
+        "weaknesses": [
+            "Time pressure: requires quick decisions under stress.",
+            "Resource intensive: may require significant team effort.",
+            "Complexity: incidents can be multifaceted and difficult to resolve."
+        ],
+        "alternatives": ["Ad-hoc Response", "Automated Response", "Managed Security Services", "Incident Response Teams"],
+        "explanation": "Provides structured approach to detect, respond to, and recover from security incidents, system outages, or critical failures, minimizing impact and restoring service quickly."
+    },
+    "semester_08/lecture_47_support_systems/knowledge_base/README.md": {
+        "name": "Knowledge Base",
+        "problem": "Centralizes and organizes information, documentation, and solutions to enable self-service support and provide quick answers to common questions, reducing support load and improving customer satisfaction.",
+        "intuition": "Like a library reference desk: instead of asking a librarian every time (support agent), customers can look up answers in organized books (knowledge base) - articles, FAQs, guides are indexed and searchable, so customers find answers themselves (faster, cheaper) and only ask librarians for complex questions.",
+        "inputs": "Documentation, FAQs, solutions, articles, search queries, user feedback.",
+        "outputs": "Searchable knowledge base, relevant articles, solutions, updated content.",
+        "steps": [
+            "Collect content: gather documentation, FAQs, solutions, guides.",
+            "Organize: structure content into categories, topics, and tags.",
+            "Index: create searchable index of all content (full-text search).",
+            "Store: save content in knowledge base system (database, wiki, etc.).",
+            "Search: enable users to search knowledge base by keywords or topics.",
+            "Retrieve: return relevant articles and solutions based on query.",
+            "Update: regularly update content based on new information and feedback.",
+            "Analyze: track search queries and popular articles to improve content."
+        ],
+        "example": "Customer searches: 'how to cancel subscription' → knowledge base searches → finds article 'Canceling Your Subscription' → displays step-by-step guide → customer follows guide → cancels subscription → no support ticket needed → self-service success.",
+        "time_complexity": "O(log n) for indexed search, O(n) for full-text search where n is content size.",
+        "space_complexity": "O(c) where c is content size, O(i) for search index.",
+        "strengths": [
+            "Self-service: enables customers to find answers independently.",
+            "Reduces load: decreases number of support tickets.",
+            "Consistency: provides standardized, accurate information."
+        ],
+        "weaknesses": [
+            "Maintenance: requires ongoing updates to stay current.",
+            "Search quality: poor search can frustrate users.",
+            "Content quality: outdated or incorrect content causes problems."
+        ],
+        "alternatives": ["Support Tickets", "Live Chat", "Community Forums", "Video Tutorials", "Documentation Sites"],
+        "explanation": "Centralizes and organizes information, documentation, and solutions to enable self-service support and provide quick answers to common questions, reducing support load and improving customer satisfaction."
+    },
+    "semester_08/lecture_47_support_systems/sla_management/README.md": {
+        "name": "SLA Management",
+        "problem": "Monitors and enforces service level agreements (SLAs) that define expected response times, resolution times, and service quality metrics, ensuring support teams meet commitments to customers.",
+        "intuition": "Like a delivery guarantee: when you order pizza, they promise delivery in 30 minutes (SLA) - if late, you get a discount (penalty). SLA management tracks if support meets promises (respond in 1 hour, resolve in 24 hours) and alerts when at risk of missing targets, ensuring customers get promised service quality.",
+        "inputs": "SLA definitions, ticket timestamps, resolution times, customer priority, SLA rules.",
+        "outputs": "SLA compliance status, alerts, performance metrics, reports.",
+        "steps": [
+            "Define SLAs: establish service level agreements (response time, resolution time, uptime, etc.).",
+            "Track metrics: monitor ticket creation time, first response time, resolution time.",
+            "Calculate remaining time: determine time remaining until SLA deadline.",
+            "Prioritize: adjust ticket priority based on SLA urgency.",
+            "Alert: notify team when tickets are at risk of breaching SLA.",
+            "Escalate: automatically escalate tickets approaching SLA deadline.",
+            "Report: generate SLA compliance reports (met, breached, at risk).",
+            "Analyze: identify trends and areas for improvement."
+        ],
+        "example": "SLA: respond within 1 hour, resolve within 24 hours → ticket created at 10:00 AM → first response at 10:45 AM (within SLA) → ticket unresolved at 11:00 AM next day → SLA breached → alert sent → escalation triggered → ticket prioritized → resolved at 12:00 PM → SLA report: 95% compliance.",
+        "time_complexity": "O(1) for SLA checks per ticket, O(n) for reporting where n is number of tickets.",
+        "space_complexity": "O(s) where s is number of SLA definitions, O(t) for ticket tracking.",
+        "strengths": [
+            "Accountability: ensures support meets commitments.",
+            "Customer satisfaction: meeting SLAs improves customer experience.",
+            "Visibility: provides clear metrics on support performance."
+        ],
+        "weaknesses": [
+            "Pressure: can create stress for support teams.",
+            "Gaming: teams may prioritize SLA metrics over actual problem resolution.",
+            "Complexity: managing multiple SLAs for different customer tiers can be complex."
+        ],
+        "alternatives": ["No SLAs", "Informal Agreements", "Customer-Specific SLAs", "Tiered SLAs"],
+        "explanation": "Monitors and enforces service level agreements (SLAs) that define expected response times, resolution times, and service quality metrics, ensuring support teams meet commitments to customers."
+    },
+    "semester_08/lecture_47_support_systems/ticket_management/README.md": {
+        "name": "Ticket Management",
+        "problem": "Organizes, tracks, and manages customer support requests from creation to resolution, ensuring no issues are lost and providing visibility into support workload and performance.",
+        "intuition": "Like a help desk queue: when customers need help, they get a ticket number (like at a deli counter) - the ticket tracks who needs help, what the problem is, who's working on it, and when it's resolved. Ticket management ensures every request is tracked, assigned, and resolved, like a well-organized help desk.",
+        "inputs": "Customer requests, ticket details, agent assignments, status updates, priority levels.",
+        "outputs": "Organized tickets, assignment status, resolution tracking, support metrics.",
+        "steps": [
+            "Create ticket: generate ticket from customer request (email, chat, form, etc.).",
+            "Categorize: classify ticket by type, priority, and category.",
+            "Assign: route ticket to appropriate agent or team.",
+            "Track status: monitor ticket status (new, in progress, waiting, resolved, closed).",
+            "Update: record progress, communications, and status changes.",
+            "Prioritize: adjust priority based on urgency, customer tier, or SLA.",
+            "Resolve: mark ticket as resolved when issue is fixed.",
+            "Close: close ticket after customer confirmation or timeout.",
+            "Report: generate reports on ticket volume, resolution time, agent performance."
+        ],
+        "example": "Customer emails: 'App is crashing' → ticket #1234 created → categorized: technical, priority: high → assigned to engineering team → status: in progress → engineer investigates → finds bug → fixes → updates ticket → status: resolved → customer confirms → ticket closed → resolution time: 4 hours.",
+        "time_complexity": "O(1) for ticket operations (create, update, assign), O(n) for reporting where n is ticket count.",
+        "space_complexity": "O(t) where t is number of tickets, O(h) for ticket history.",
+        "strengths": [
+            "Organization: ensures all requests are tracked and managed.",
+            "Visibility: provides clear view of support workload and status.",
+            "Accountability: tracks who handles what and when."
+        ],
+        "weaknesses": [
+            "Overhead: requires time to create and manage tickets.",
+            "Tool dependency: relies on ticket management system.",
+            "Complexity: can become complex with many tickets and workflows."
+        ],
+        "alternatives": ["Email Support", "Chat Support", "Phone Support", "Issue Trackers", "Project Management Tools"],
+        "explanation": "Organizes, tracks, and manages customer support requests from creation to resolution, ensuring no issues are lost and providing visibility into support workload and performance."
     }
 }
 

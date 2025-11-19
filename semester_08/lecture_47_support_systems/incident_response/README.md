@@ -4,37 +4,47 @@
    Incident Response
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements incident response algorithm.
+   Provides structured approach to detect, respond to, and recover from security incidents, system outages, or critical failures, minimizing impact and restoring service quickly.
 
 3. **Intuition (plain-language explanation)**  
-   Incident Response is a fundamental algorithm in computer science.
+   Like a fire department response: when a fire (incident) is detected, firefighters follow a systematic process (assess → contain → extinguish → investigate) - incident response does the same for IT incidents: detect → assess → contain → mitigate → recover → learn, ensuring quick, organized response.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Incident alerts, system logs, monitoring data, incident response plan, team members.  
+   - Output: Contained incident, restored service, incident report, lessons learned.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Detect: identify incident through monitoring, alerts, or reports.
+2. Assess: evaluate incident severity, scope, and impact.
+3. Classify: categorize incident type (security breach, outage, data loss, etc.).
+4. Contain: isolate affected systems to prevent further damage.
+5. Investigate: analyze root cause and extent of incident.
+6. Mitigate: take actions to stop ongoing damage or attack.
+7. Recover: restore affected systems and services to normal operation.
+8. Document: record incident details, response actions, and timeline.
+9. Post-mortem: conduct review to identify improvements and prevent recurrence.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Incident Response applied to sample data.
+   Security alert: suspicious login attempts → incident detected → assess: potential breach → classify: security incident → contain: disable affected accounts → investigate: find compromised credentials → mitigate: reset passwords, enable 2FA → recover: restore access for legitimate users → document: create incident report → post-mortem: improve monitoring.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(1) for detection, O(n) for investigation where n is system size, O(r) for recovery where r is recovery steps.  
+   - Space: O(l) where l is log data size, O(i) for incident documentation.
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Structured response: ensures systematic, thorough incident handling.
+- Minimizes impact: quick containment reduces damage.
+- Continuous improvement: post-mortems improve future responses.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Time pressure: requires quick decisions under stress.
+- Resource intensive: may require significant team effort.
+- Complexity: incidents can be multifaceted and difficult to resolve.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Ad-hoc Response, Automated Response, Managed Security Services, Incident Response Teams
 
 11. **30-second explanation (your own words)**  
-    Incident Response solves computational problems efficiently.
+    Provides structured approach to detect, respond to, and recover from security incidents, system outages, or critical failures, minimizing impact and restoring service quickly.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
