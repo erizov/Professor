@@ -1798,6 +1798,330 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Logistic Regression", "Neural Networks", "Random Forest"],
         "explanation": "Maximize the gap between classes by finding the hyperplane that is farthest from the nearest points of each class."
+    },
+    "semester_02/lecture_10_architectural_patterns/clean_architecture/README.md": {
+        "name": "Clean Architecture",
+        "problem": "Separates enterprise business rules from delivery mechanisms so systems remain testable, maintainable, and technology-agnostic.",
+        "intuition": "Organize code in concentric rings where inner layers know nothing about outer layers; dependencies always point inward.",
+        "inputs": "Domain entities, use cases, interface adapters, and frameworks/external services.",
+        "outputs": "Modular system where core logic can evolve independently from UI, databases, or frameworks.",
+        "steps": [
+            "Define entities (enterprise rules) at the center.",
+            "Create use cases that orchestrate entities.",
+            "Add interface adapters (controllers, presenters, gateways) to translate between formats.",
+            "Place frameworks and drivers (UI, DB, external APIs) at the outer ring.",
+            "Enforce dependency rule: source code dependencies point inward only."
+        ],
+        "example": "E-commerce app: inner ring handles order validation, middle ring defines place-order use case, outer ring wires HTTP controllers and database gateways.",
+        "time_complexity": "Not applicable; architectural pattern.",
+        "space_complexity": "Not applicable; organizational structure.",
+        "strengths": [
+            "Framework-independent core that survives technology churn.",
+            "High testability due to isolated business rules."
+        ],
+        "weaknesses": [
+            "Initial setup overhead and learning curve.",
+            "Requires discipline to maintain boundary rules."
+        ],
+        "alternatives": ["Layered Architecture", "Hexagonal Architecture", "Onion Architecture"],
+        "explanation": "Keep business logic at the center and surround it with adapters so changing UI or database layers never ripples into the core."
+    },
+    "semester_02/lecture_10_architectural_patterns/hexagonal/README.md": {
+        "name": "Hexagonal (Ports and Adapters)",
+        "problem": "Allows applications to run equally in different environments by decoupling the domain from external systems via ports and adapters.",
+        "intuition": "Treat the application as a hexagon with ports on each side; adapters plug into ports to talk to the outer world.",
+        "inputs": "Domain core, inbound ports for driving actions, outbound ports for driven interactions.",
+        "outputs": "Adapters (HTTP, CLI, database, messaging) that plug in without changing core logic.",
+        "steps": [
+            "Define inbound ports (interfaces) representing use cases.",
+            "Implement domain services that realize the ports.",
+            "Declare outbound ports for infrastructure dependencies.",
+            "Write adapters that implement outbound ports (DB gateways, API clients).",
+            "Wire adapters to ports via dependency injection."
+        ],
+        "example": "Blog service: inbound port publish_post, adapters for REST controller and CLI; outbound port PostRepository with adapters for SQL or NoSQL stores.",
+        "time_complexity": "Not applicable.",
+        "space_complexity": "Not applicable.",
+        "strengths": [
+            "Easy to swap infrastructure without touching core.",
+            "Supports automated testing by substituting adapters."
+        ],
+        "weaknesses": [
+            "More interfaces and boilerplate.",
+            "Requires careful dependency management."
+        ],
+        "alternatives": ["Clean Architecture", "Onion Architecture", "Layered Architecture"],
+        "explanation": "Expose the application through abstract ports while adapters translate between the outside world and the domain core."
+    },
+    "semester_02/lecture_10_architectural_patterns/mvc/README.md": {
+        "name": "Model-View-Controller (MVC)",
+        "problem": "Separates domain state (model), user interface (view), and input handling (controller) to build maintainable GUIs and web apps.",
+        "intuition": "Controller handles user input, updates the model, and selects a view; view renders model data back to the user.",
+        "inputs": "User interactions routed through controllers, domain models storing data, view templates displaying data.",
+        "outputs": "Rendered UI plus updated models reflecting user actions.",
+        "steps": [
+            "Controller receives user action (HTTP request, button click).",
+            "Controller validates input and invokes model operations.",
+            "Model updates state and notifies observers if needed.",
+            "Controller selects a view and provides model data.",
+            "View renders output to user."
+        ],
+        "example": "Todo app: controller handles /add request, model saves task, view renders updated list.",
+        "time_complexity": "Depends on model operations; architectural pattern.",
+        "space_complexity": "Depends on domain data.",
+        "strengths": [
+            "Clear separation of concerns improves testability.",
+            "Multiple views can reuse the same models."
+        ],
+        "weaknesses": [
+            "Controller and view coupling can grow complex in large apps.",
+            "Not ideal for heavily event-driven UIs without additional patterns."
+        ],
+        "alternatives": ["MVVM", "MVP", "Clean Architecture"],
+        "explanation": "Split application logic into model, view, and controller layers so UI changes do not leak into business logic."
+    },
+    "semester_02/lecture_10_architectural_patterns/mvvm/README.md": {
+        "name": "Model-View-ViewModel (MVVM)",
+        "problem": "Decouples UI rendering from presentation logic using data binding between views and view-models.",
+        "intuition": "ViewModel exposes observable state; the view binds to it and updates automatically when data changes.",
+        "inputs": "Model (domain data), ViewModel (presentation state + commands), View (UI components with bindings).",
+        "outputs": "Responsive UI that reflects ViewModel changes without manual wiring.",
+        "steps": [
+            "Wrap models in ViewModel objects exposing observable properties.",
+            "Define commands/actions in the ViewModel.",
+            "Bind view controls to ViewModel properties and commands.",
+            "Update ViewModel in response to user input; binding updates view automatically.",
+            "Synchronize ViewModel changes back to models as needed."
+        ],
+        "example": "WPF app: ViewModel exposes ObservableCollection<Todo>, view binds ListBox.ItemsSource; adding an item updates UI instantly.",
+        "time_complexity": "Depends on underlying model operations.",
+        "space_complexity": "Depends on number of ViewModels and bindings.",
+        "strengths": [
+            "Great for data-binding frameworks (WPF, SwiftUI, Android).",
+            "Facilitates unit testing of presentation logic."
+        ],
+        "weaknesses": [
+            "Requires binding infrastructure; not ideal for simple UIs.",
+            "Two-way binding can obscure data flow."
+        ],
+        "alternatives": ["MVC", "MVP", "Redux-style state management"],
+        "explanation": "Expose presentation logic via observable ViewModels so UI updates automatically when data changes and vice versa."
+    },
+    "semester_02/lecture_10_behavioral_patterns/observer/README.md": {
+        "name": "Observer Pattern",
+        "problem": "Creates a one-to-many dependency so when one object changes state, all dependents are notified automatically.",
+        "intuition": "Subject keeps a list of observers; when state changes, it broadcasts notifications to each observer.",
+        "inputs": "Subject with observable state and observers that subscribe to updates.",
+        "outputs": "Observers receive callbacks when the subject changes.",
+        "steps": [
+            "Define Subject interface with attach/detach/notify.",
+            "Observers implement an update method.",
+            "Subject maintains list of observers.",
+            "When state changes, subject iterates observers and calls update.",
+            "Observers react (e.g., refresh UI, trigger workflows)."
+        ],
+        "example": "GUI button (subject) notifies multiple listeners when clicked.",
+        "time_complexity": "O(n) to notify n observers per event.",
+        "space_complexity": "O(n) to store observers.",
+        "strengths": [
+            "Promotes loose coupling between subject and observers.",
+            "Supports dynamic number of listeners."
+        ],
+        "weaknesses": [
+            "Notification order is not guaranteed.",
+            "Observers can cause cascading updates or memory leaks if not detached."
+        ],
+        "alternatives": ["Publish-Subscribe", "Mediator Pattern", "Event Bus"],
+        "explanation": "Subjects expose subscription hooks so observers can register and automatically receive updates when state changes."
+    },
+    "semester_02/lecture_10_behavioral_patterns/strategy/README.md": {
+        "name": "Strategy Pattern",
+        "problem": "Defines a family of interchangeable algorithms so behavior can change at runtime without modifying clients.",
+        "intuition": "Encapsulate algorithms behind a common interface; clients hold a reference and swap strategies as needed.",
+        "inputs": "Context object that uses a Strategy interface implemented by concrete strategies.",
+        "outputs": "Context delegates specific behavior (e.g., sorting, compression) to the selected strategy.",
+        "steps": [
+            "Define Strategy interface with a common operation.",
+            "Implement concrete strategies for each algorithm variant.",
+            "Context holds a strategy reference and forwards calls.",
+            "Allow clients to set or change strategy at runtime.",
+            "Optional: use dependency injection or configuration to pick strategy."
+        ],
+        "example": "Payment processor selects PayPalStrategy, CreditCardStrategy, or CryptoStrategy based on user choice.",
+        "time_complexity": "Depends on concrete strategy implementation.",
+        "space_complexity": "Depends on strategies stored; typically O(1) per context.",
+        "strengths": [
+            "Eliminates conditional logic for algorithm selection.",
+            "Eases extension with new strategies."
+        ],
+        "weaknesses": [
+            "More classes and objects to manage.",
+            "Clients must understand strategy differences."
+        ],
+        "alternatives": ["State Pattern", "Template Method", "Policy Injection"],
+        "explanation": "Package interchangeable behaviors as strategy objects and let the client choose which one to run."
+    },
+    "semester_02/lecture_11_repository_patterns/data_mapper/README.md": {
+        "name": "Data Mapper",
+        "problem": "Separates in-memory domain objects from database schemas by mapping between them, keeping models persistence-agnostic.",
+        "intuition": "Mapper translates between domain entities and database rows/columns without letting entities know about SQL.",
+        "inputs": "Domain entities, mapper classes, data source connections.",
+        "outputs": "Persisted entities and hydrated objects returned from the database.",
+        "steps": [
+            "Define domain entities with pure business logic.",
+            "Create mapper classes with CRUD operations.",
+            "Mapper reads/writes using SQL or ORM but returns domain objects.",
+            "Unit tests entities without touching the database.",
+            "Swap out mappers to change storage technology."
+        ],
+        "example": "UserMapper inserts/updates rows in users table while returning User entities with behavior.",
+        "time_complexity": "Depends on persistence operations (O(1) for indexed queries, etc.).",
+        "space_complexity": "O(n) for entity caches or unit of work state.",
+        "strengths": [
+            "Keeps domain model persistence-agnostic.",
+            "Supports richer domain logic than Active Record."
+        ],
+        "weaknesses": [
+            "More boilerplate and mapping code.",
+            "Harder to map complex object graphs without tooling."
+        ],
+        "alternatives": ["Repository Pattern", "Active Record", "Table Data Gateway"],
+        "explanation": "Use dedicated mapper classes to translate between domain objects and database rows so business logic stays ignorant of SQL."
+    },
+    "semester_02/lecture_11_repository_patterns/repository/README.md": {
+        "name": "Repository Pattern",
+        "problem": "Provides a collection-like abstraction over data sources, hiding persistence details from domain logic.",
+        "intuition": "Treat the repository like an in-memory collection; domain code queries repository without knowing about SQL or API calls.",
+        "inputs": "Domain aggregates, repository interfaces, concrete implementations for specific data stores.",
+        "outputs": "Retrieved aggregates/entities and persisted changes.",
+        "steps": [
+            "Define repository interface with query/command operations (e.g., find_by_id, save).",
+            "Implement repository using ORM, SQL, or external API.",
+            "Inject repository into services/use cases.",
+            "Use unit of work or transactions to batch changes.",
+            "Mock repository in tests to isolate domain logic."
+        ],
+        "example": "OrderRepository#find_pending returns aggregate root; service manipulates object and calls save.",
+        "time_complexity": "Determined by underlying data store queries.",
+        "space_complexity": "Depends on caching/unit of work implementation.",
+        "strengths": [
+            "Decouples domain from persistence technology.",
+            "Centralizes data access logic."
+        ],
+        "weaknesses": [
+            "Over-abstraction for simple CRUD apps.",
+            "Complex queries may leak storage concepts back into domain."
+        ],
+        "alternatives": ["Data Mapper", "Active Record", "DAO"],
+        "explanation": "Expose persistence operations through repository interfaces so domain code works with aggregates while storage remains hidden."
+    },
+    "semester_02/lecture_11_repository_patterns/unit_of_work/README.md": {
+        "name": "Unit of Work",
+        "problem": "Tracks changes to multiple business objects and coordinates a single transaction commit to ensure consistency.",
+        "intuition": "Accumulate inserts/updates/deletes in memory, then write them as one atomic unit.",
+        "inputs": "Tracked entities, change tracker, transaction boundary.",
+        "outputs": "Persisted state or rolled-back transaction if errors occur.",
+        "steps": [
+            "Start a unit of work and attach entities.",
+            "Track changes (new, dirty, removed) as domain logic runs.",
+            "On commit, issue database commands in correct order within a transaction.",
+            "On rollback, discard pending changes.",
+            "Dispose unit of work at end of request."
+        ],
+        "example": "EF Core DbContext tracks entity states; SaveChanges commits them within a transaction.",
+        "time_complexity": "Depends on number of tracked entities; typically O(n) to iterate changes.",
+        "space_complexity": "O(n) to store entity state and pending commands.",
+        "strengths": [
+            "Ensures transactional consistency across repositories.",
+            "Reduces database round-trips by batching writes."
+        ],
+        "weaknesses": [
+            "Requires careful lifetime management to avoid stale state.",
+            "Can consume memory if many entities are tracked."
+        ],
+        "alternatives": ["Explicit Transactions", "Command Pattern", "Saga Pattern"],
+        "explanation": "Buffer database operations in memory and commit them together so partial failures do not leave inconsistent state."
+    },
+    "semester_02/lecture_12_concurrency_patterns/producer_consumer/README.md": {
+        "name": "Producer-Consumer Pattern",
+        "problem": "Coordinates multiple producers generating work items and consumers processing them while preventing race conditions.",
+        "intuition": "Use a thread-safe queue or buffer; producers enqueue tasks, consumers dequeue and handle them.",
+        "inputs": "Set of producer threads, consumer threads, shared buffer, synchronization primitives.",
+        "outputs": "Processed tasks with controlled throughput.",
+        "steps": [
+            "Create bounded/unbounded thread-safe queue.",
+            "Producers acquire lock (or use concurrent queue) and push items.",
+            "If queue full, producers block or drop depending on policy.",
+            "Consumers wait for items, then dequeue and process.",
+            "Use condition variables/semaphores to signal availability."
+        ],
+        "example": "Web server thread pool: accept requests (producer), worker threads handle responses (consumers).",
+        "time_complexity": "Each enqueue/dequeue typically O(1).",
+        "space_complexity": "O(capacity) for buffer.",
+        "strengths": [
+            "Smooths load differences between producers and consumers.",
+            "Simplifies synchronization via shared queue."
+        ],
+        "weaknesses": [
+            "Requires careful tuning of buffer size.",
+            "Potential for deadlock if signaling is incorrect."
+        ],
+        "alternatives": ["Actor Model", "Pipeline Pattern", "Reactive Streams"],
+        "explanation": "Buffer work items in a synchronized queue so producers and consumers operate independently without data races."
+    },
+    "semester_02/lecture_12_concurrency_patterns/readers_writers/README.md": {
+        "name": "Readers-Writers Problem",
+        "problem": "Manages concurrent access to shared resources allowing many readers or one writer at a time.",
+        "intuition": "Multiple readers can read simultaneously, but writers require exclusive access.",
+        "inputs": "Shared resource, read-write lock or semaphore, reader and writer threads.",
+        "outputs": "Safe concurrent operations without stale reads or write conflicts.",
+        "steps": [
+            "Maintain counters for active readers and waiting writers.",
+            "Readers acquire shared lock if no writer active.",
+            "Writers wait until readers finish, then acquire exclusive lock.",
+            "After operation, release lock and signal waiting threads.",
+            "Optionally prioritize writers to prevent starvation."
+        ],
+        "example": "Database cache accessed by many read queries but occasionally updated by writers.",
+        "time_complexity": "Lock acquisition typically O(1); throughput depends on contention.",
+        "space_complexity": "O(1) for counters and lock state.",
+        "strengths": [
+            "Improves read-heavy workloads by allowing parallel reads.",
+            "Prevents race conditions on shared resources."
+        ],
+        "weaknesses": [
+            "Complex to implement starvation-free policies.",
+            "Still serialized for write-heavy workloads."
+        ],
+        "alternatives": ["Optimistic Concurrency Control", "Stamped Locks", "Copy-on-Write"],
+        "explanation": "Use read-write synchronization primitives so multiple readers can proceed concurrently while writers get exclusive access."
+    },
+    "semester_02/lecture_12_concurrency_patterns/thread_pool/README.md": {
+        "name": "Thread Pool",
+        "problem": "Manages a reusable set of worker threads to execute many short-lived tasks without spawning new threads each time.",
+        "intuition": "Keep a pool of threads waiting on a work queue; dispatch tasks to idle threads for execution.",
+        "inputs": "Task queue, pool size, worker threads, synchronization primitives.",
+        "outputs": "Completed tasks with controlled concurrency level.",
+        "steps": [
+            "Initialize pool with N worker threads.",
+            "Workers wait for tasks on a blocking queue.",
+            "Clients submit tasks to the queue.",
+            "Worker picks up task, executes it, then waits for next task.",
+            "Pool manages scaling, timeouts, and graceful shutdown."
+        ],
+        "example": "Java ExecutorService processes HTTP requests using a fixed thread pool.",
+        "time_complexity": "Task dispatch O(1) amortized.",
+        "space_complexity": "O(N + queue_size) for threads and pending tasks.",
+        "strengths": [
+            "Reduces overhead of thread creation/destruction.",
+            "Controls resource usage by limiting concurrent threads."
+        ],
+        "weaknesses": [
+            "Improper sizing can cause latency or resource waste.",
+            "Tasks must be well-behaved (no blocking forever)."
+        ],
+        "alternatives": ["Event Loop", "Reactive Streams", "Fork/Join Framework"],
+        "explanation": "Pre-create a set of worker threads that repeatedly fetch tasks from a queue, improving throughput and resource control."
     }
 }
 

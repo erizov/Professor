@@ -4,37 +4,41 @@
    Data Mapper
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements data mapper algorithm.
+   Separates in-memory domain objects from database schemas by mapping between them, keeping models persistence-agnostic.
 
 3. **Intuition (plain-language explanation)**  
-   Data Mapper is a fundamental algorithm in computer science.
+   Mapper translates between domain entities and database rows/columns without letting entities know about SQL.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Domain entities, mapper classes, data source connections.  
+   - Output: Persisted entities and hydrated objects returned from the database.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Define domain entities with pure business logic.
+2. Create mapper classes with CRUD operations.
+3. Mapper reads/writes using SQL or ORM but returns domain objects.
+4. Unit tests entities without touching the database.
+5. Swap out mappers to change storage technology.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Data Mapper applied to sample data.
+   UserMapper inserts/updates rows in users table while returning User entities with behavior.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: Depends on persistence operations (O(1) for indexed queries, etc.).  
+   - Space: O(n) for entity caches or unit of work state.
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Keeps domain model persistence-agnostic.
+- Supports richer domain logic than Active Record.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- More boilerplate and mapping code.
+- Harder to map complex object graphs without tooling.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Repository Pattern, Active Record, Table Data Gateway
 
 11. **30-second explanation (your own words)**  
-    Data Mapper solves computational problems efficiently.
+    Use dedicated mapper classes to translate between domain objects and database rows so business logic stays ignorant of SQL.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
