@@ -798,6 +798,168 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Decorator Pattern", "Aspect-Oriented Programming", "Mediator"],
         "explanation": "Insert a stand-in object that looks like the real one but adds access control, caching, or remote communication."
+    },
+    "semester_02/lecture_09_behavioral_patterns/chain_of_responsibility/README.md": {
+        "name": "Chain of Responsibility",
+        "problem": "Decouples senders from receivers by giving more than one object a chance to handle a request.",
+        "intuition": "Like escalating a customer ticket: each handler decides to process it or pass it along the chain.",
+        "inputs": "Request object flowing through ordered handlers.",
+        "outputs": "First handler that can process the request takes action; others remain unaware.",
+        "steps": [
+            "Define a Handler interface with set_next() and handle(request).",
+            "Implement concrete handlers that either process or forward the request.",
+            "Link handlers into a chain at runtime.",
+            "Client sends the request to the first handler only.",
+            "Optionally report when no handler could process the request."
+        ],
+        "example": "Auth pipeline: BasicAuthHandler → TokenAuthHandler → OAuthHandler, each checking credentials before escalating.",
+        "time_complexity": "O(n) in length of chain in worst case.",
+        "space_complexity": "O(1) per handler, O(n) to store chain links.",
+        "strengths": [
+            "Avoids monolithic if/else blocks.",
+            "Supports flexible ordering and additions."
+        ],
+        "weaknesses": [
+            "May be hard to ensure a request is eventually handled.",
+            "Debugging requires understanding chain order."
+        ],
+        "alternatives": ["Middleware Pipelines", "Strategy Pattern", "Observer"],
+        "explanation": "Pass requests down a linked list of handlers until one handles it, keeping senders unaware of the concrete receiver."
+    },
+    "semester_02/lecture_09_behavioral_patterns/command/README.md": {
+        "name": "Command Pattern",
+        "problem": "Encapsulates a request as an object so it can be queued, logged, undone, or replayed.",
+        "intuition": "Just like a remote control storing button presses as commands you can redo/undo later.",
+        "inputs": "Receiver object performing work and invoker scheduling commands.",
+        "outputs": "Command objects implementing execute() (and optionally undo()).",
+        "steps": [
+            "Define Command interface with execute()/undo().",
+            "Implement concrete commands wrapping receiver operations.",
+            "Invoker stores commands and triggers execute at the right time.",
+            "Maintain history stack if undo/redo is needed.",
+            "Optionally serialize commands for auditing or retries."
+        ],
+        "example": "Text editor operations (InsertTextCommand, DeleteSelectionCommand) recorded for undo functionality.",
+        "time_complexity": "Exec time equals receiver operation plus bookkeeping.",
+        "space_complexity": "O(n) to store command history.",
+        "strengths": [
+            "Decouples senders from receivers.",
+            "Enables undo/redo, macro recording, and asynchronous execution."
+        ],
+        "weaknesses": [
+            "Lots of small command classes.",
+            "Stateful commands must carefully manage context for undo."
+        ],
+        "alternatives": ["Event Sourcing", "Strategy Pattern", "Lambda commands"],
+        "explanation": "Wrap each action in a command object so invokers can queue, log, or undo requests independently of receivers."
+    },
+    "semester_02/lecture_09_behavioral_patterns/iterator/README.md": {
+        "name": "Iterator Pattern",
+        "problem": "Provides a standard way to traverse elements of a collection without exposing its internals.",
+        "intuition": "Like flipping through a photo album with an index finger that remembers your current spot.",
+        "inputs": "Collection with potentially complex storage (trees, graphs, aggregates).",
+        "outputs": "Iterator objects supporting next(), has_next(), and optional remove().",
+        "steps": [
+            "Define Iterator interface with traversal methods.",
+            "Have collection expose factory method returning new iterator.",
+            "Iterator maintains traversal state (current index/node).",
+            "Clients use iterator to loop without knowing collection structure.",
+            "Provide specialized iterators (reverse, breadth-first) as needed."
+        ],
+        "example": "Composite pattern provides a depth-first iterator to traverse nested components.",
+        "time_complexity": "O(n) to traverse n elements.",
+        "space_complexity": "O(1) to O(h) depending on iteration strategy (h = height for tree traversals).",
+        "strengths": [
+            "Supports multiple concurrent traversals.",
+            "Keeps collection encapsulation intact."
+        ],
+        "weaknesses": [
+            "Custom iterators can be verbose to implement.",
+            "Modifications during iteration need careful coordination."
+        ],
+        "alternatives": ["Generator Functions", "Visitor Pattern", "Indexed loops"],
+        "explanation": "Expose a traversal object so clients iterate over aggregates without coupling to internal representation."
+    },
+    "semester_02/lecture_09_behavioral_patterns/observer/README.md": {
+        "name": "Observer Pattern",
+        "problem": "Notifies multiple dependents automatically when a subject’s state changes.",
+        "intuition": "Publish/subscribe: when the weather station updates, all registered displays react immediately.",
+        "inputs": "Subject maintaining state and observers interested in changes.",
+        "outputs": "Subscription mechanism where observers register for callbacks.",
+        "steps": [
+            "Subject exposes attach(), detach(), and notify() methods.",
+            "Observers implement an interface (update(subject)).",
+            "Subject calls notify() after state changes, iterating observers.",
+            "Observers pull new state from subject or receive it as arguments.",
+            "Ensure thread-safety and order guarantees if required."
+        ],
+        "example": "Stock ticker pushing price updates to dashboards and alert services.",
+        "time_complexity": "O(n) per notification where n is number of observers.",
+        "space_complexity": "O(n) to track observer references.",
+        "strengths": [
+            "Loose coupling between subjects and observers.",
+            "Supports dynamic subscriptions at runtime."
+        ],
+        "weaknesses": [
+            "Notification storms if observers perform heavy work.",
+            "Difficult to debug notification order and memory leaks from forgotten detach()."
+        ],
+        "alternatives": ["Event Bus", "Reactive Streams", "Mediator Pattern"],
+        "explanation": "Let observers subscribe to a subject so they are automatically notified whenever the subject changes state."
+    },
+    "semester_02/lecture_09_behavioral_patterns/strategy/README.md": {
+        "name": "Strategy Pattern",
+        "problem": "Defines a family of interchangeable algorithms that can be selected at runtime.",
+        "intuition": "Choose the best route on a GPS: driving, walking, cycling strategies share interface but differ internally.",
+        "inputs": "Context needing to swap algorithms (sorting, pricing, compression).",
+        "outputs": "Strategy interface with concrete implementations and a context delegating work.",
+        "steps": [
+            "Identify behavior that varies independently from the rest of the class.",
+            "Extract a Strategy interface declaring the behavior.",
+            "Implement concrete strategies for each variation.",
+            "Context holds a reference to a strategy and delegates calls.",
+            "Provide mechanism to switch strategies dynamically if needed."
+        ],
+        "example": "PaymentProcessor uses CreditCardStrategy, PayPalStrategy, or CryptoStrategy based on user selection.",
+        "time_complexity": "Same as selected strategy; selection overhead is O(1).",
+        "space_complexity": "O(1) for context reference; additional strategies cost class storage.",
+        "strengths": [
+            "Eliminates conditionals for algorithm selection.",
+            "Promotes testable, pluggable behaviors."
+        ],
+        "weaknesses": [
+            "Requires clients to understand and select appropriate strategy.",
+            "Too many tiny classes if not organized carefully."
+        ],
+        "alternatives": ["Policy Objects", "Function Pointers/Lambdas", "State Pattern"],
+        "explanation": "Encapsulate interchangeable behaviors behind a common interface so contexts can switch algorithms without branching."
+    },
+    "semester_02/lecture_09_behavioral_patterns/template_method/README.md": {
+        "name": "Template Method Pattern",
+        "problem": "Defines the skeleton of an algorithm in a base class while letting subclasses override specific steps.",
+        "intuition": "Recipe template: the base class outlines the process, subclasses supply the ingredient variations.",
+        "inputs": "Algorithm with invariant structure but customizable steps.",
+        "outputs": "Abstract class with template method calling primitive operations that subclasses override.",
+        "steps": [
+            "Identify invariant workflow steps and variable steps.",
+            "Implement template_method() in base class orchestrating the workflow.",
+            "Mark variable steps as abstract or provide default hooks.",
+            "Subclasses override the hook methods to customize behavior.",
+            "Optional hooks allow subclasses to insert logic before/after key steps."
+        ],
+        "example": "DocumentExporter defines export(): open → format → save; subclasses override format().",
+        "time_complexity": "Equals sum of step complexities; overhead is minimal virtual dispatch.",
+        "space_complexity": "O(1) additional space.",
+        "strengths": [
+            "Promotes code reuse for algorithm skeletons.",
+            "Enforces consistent workflow across subclasses."
+        ],
+        "weaknesses": [
+            "Inheritance-based, so variations require subclassing.",
+            "Difficult to change algorithm order without altering base class."
+        ],
+        "alternatives": ["Strategy Pattern", "Hooks/Callbacks", "Pipeline Pattern"],
+        "explanation": "Put the invariant algorithm flow in a base class and let subclasses override specific steps via hook methods."
     }
 }
 

@@ -1,40 +1,44 @@
-# Iterator
+# Iterator Pattern
 
 1. **Name of Algorithm**  
-   Iterator
+   Iterator Pattern
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements iterator algorithm.
+   Provides a standard way to traverse elements of a collection without exposing its internals.
 
 3. **Intuition (plain-language explanation)**  
-   Iterator is a fundamental algorithm in computer science.
+   Like flipping through a photo album with an index finger that remembers your current spot.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Collection with potentially complex storage (trees, graphs, aggregates).  
+   - Output: Iterator objects supporting next(), has_next(), and optional remove().
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Define Iterator interface with traversal methods.
+2. Have collection expose factory method returning new iterator.
+3. Iterator maintains traversal state (current index/node).
+4. Clients use iterator to loop without knowing collection structure.
+5. Provide specialized iterators (reverse, breadth-first) as needed.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Iterator applied to sample data.
+   Composite pattern provides a depth-first iterator to traverse nested components.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(n) to traverse n elements.  
+   - Space: O(1) to O(h) depending on iteration strategy (h = height for tree traversals).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Supports multiple concurrent traversals.
+- Keeps collection encapsulation intact.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Custom iterators can be verbose to implement.
+- Modifications during iteration need careful coordination.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Generator Functions, Visitor Pattern, Indexed loops
 
 11. **30-second explanation (your own words)**  
-    Iterator solves computational problems efficiently.
+    Expose a traversal object so clients iterate over aggregates without coupling to internal representation.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
