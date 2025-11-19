@@ -19027,6 +19027,142 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["No Sentiment Analysis", "Manual Assessment", "Keyword-Based", "Hybrid Approaches"],
         "explanation": "NLP systems that analyze customer sentiment in support interactions to understand emotions, prioritize cases, and improve support quality."
+    },
+    "semester_14/lecture_95_support_advanced/support_analytics/README.md": {
+        "name": "Support Analytics",
+        "problem": "Analyzes support operations data to measure performance, identify trends, optimize workflows, and make data-driven decisions to improve support quality and efficiency.",
+        "intuition": "Like a dashboard for support: Support analytics is like a dashboard for support operations - you collect data (tickets, responses, resolutions), analyze it (metrics, trends), and use insights (optimization, decisions) - just as a car dashboard shows speed and fuel, support analytics shows performance and efficiency.",
+        "inputs": "Support tickets, response times, resolution data, customer satisfaction, agent performance, workflow data, time periods.",
+        "outputs": "Analytics reports, performance metrics, trend analysis, optimization recommendations, insights, dashboards.",
+        "steps": [
+            "Collect: collect support operation data.",
+            "Aggregate: aggregate data across time periods.",
+            "Calculate: calculate key performance metrics.",
+            "Analyze: analyze trends and patterns.",
+            "Visualize: visualize data in dashboards.",
+            "Identify: identify areas for improvement.",
+            "Recommend: recommend optimization strategies.",
+            "Report: generate analytics reports.",
+            "Monitor: monitor metrics continuously.",
+            "Optimize: optimize based on insights."
+        ],
+        "example": "Support Analytics: collect data → aggregate → calculate (avg response: 2h, resolution: 8h) → analyze → visualize → identify bottlenecks → recommend → Support Analytics successful.",
+        "time_complexity": "O(d * a) where d is data volume, a is analysis complexity (analytics complexity).",
+        "space_complexity": "O(d + m) where d is data, m is metrics (analytics storage).",
+        "strengths": [
+            "Insights: provides valuable insights into support operations.",
+            "Optimization: helps optimize support workflows.",
+            "Decision-making: enables data-driven decision making."
+        ],
+        "weaknesses": [
+            "Data quality: depends on data quality and completeness.",
+            "Complexity: requires sophisticated analysis techniques.",
+            "Interpretation: requires careful interpretation of metrics."
+        ],
+        "alternatives": ["No Analytics", "Basic Metrics", "Manual Analysis", "Third-Party Analytics"],
+        "explanation": "Analytics systems that analyze support operations data to measure performance, identify trends, and optimize workflows."
+    },
+    "semester_14/lecture_95_support_advanced/ticket_routing_ai/README.md": {
+        "name": "AI-Powered Ticket Routing",
+        "problem": "Automatically routes support tickets to the most appropriate agent or team using AI to analyze ticket content, agent expertise, workload, and historical performance for optimal assignment.",
+        "intuition": "Like a smart dispatcher: AI ticket routing is like a smart dispatcher - you analyze the request (ticket content), know who's available (agent workload), match expertise (agent skills), and route efficiently (optimal assignment) - just as a dispatcher routes calls, AI routes tickets to the right person.",
+        "inputs": "Support tickets, ticket content, agent profiles, agent workload, historical performance, routing rules, priority levels.",
+        "outputs": "Routed tickets, routing decisions, agent assignments, routing confidence scores, routing metrics, optimization recommendations.",
+        "steps": [
+            "Receive: receive incoming support ticket.",
+            "Analyze: analyze ticket content using NLP.",
+            "Classify: classify ticket type and priority.",
+            "Match: match ticket to agent expertise.",
+            "Check: check agent availability and workload.",
+            "Route: route ticket to optimal agent.",
+            "Learn: learn from routing outcomes.",
+            "Optimize: optimize routing based on performance.",
+            "Monitor: monitor routing effectiveness.",
+            "Improve: improve routing algorithm."
+        ],
+        "example": "Ticket Routing: receive ticket → analyze (billing issue) → classify → match to billing expert → check availability → route → learn → optimize → Ticket Routing successful.",
+        "time_complexity": "O(t * r) where t is ticket processing, r is routing complexity (routing complexity).",
+        "space_complexity": "O(a + h) where a is agent data, h is history (routing storage).",
+        "strengths": [
+            "Efficiency: improves routing efficiency and speed.",
+            "Accuracy: routes tickets to appropriate agents.",
+            "Optimization: optimizes agent workload distribution."
+        ],
+        "weaknesses": [
+            "Complexity: requires sophisticated AI and training.",
+            "Accuracy: may have limitations in complex scenarios.",
+            "Maintenance: requires ongoing training and maintenance."
+        ],
+        "alternatives": ["Manual Routing", "Rule-Based Routing", "Round-Robin", "Priority-Based"],
+        "explanation": "AI systems that automatically route support tickets to the most appropriate agents based on content analysis, expertise matching, and workload optimization."
+    },
+    "semester_14/lecture_96_incident_management_advanced/alert_fatigue_reduction/README.md": {
+        "name": "Alert Fatigue Reduction",
+        "problem": "Reduces alert fatigue by filtering, prioritizing, grouping, and intelligently managing alerts to ensure operators focus on critical issues without being overwhelmed by noise.",
+        "intuition": "Like a smart filter for alerts: Alert fatigue reduction is like a smart filter for alerts - you filter out noise (false positives, low priority), prioritize important ones (critical alerts), group related ones (similar alerts), and present only what matters - just as a spam filter reduces email noise, alert reduction reduces alert noise.",
+        "inputs": "Alerts, alert metadata, historical data, priority rules, grouping criteria, filtering rules, context information.",
+        "outputs": "Filtered alerts, prioritized alerts, grouped alerts, reduced alert volume, alert summaries, fatigue metrics.",
+        "steps": [
+            "Collect: collect all incoming alerts.",
+            "Filter: filter out false positives and noise.",
+            "Prioritize: prioritize alerts by severity and impact.",
+            "Group: group related or duplicate alerts.",
+            "Deduplicate: remove duplicate alerts.",
+            "Summarize: summarize grouped alerts.",
+            "Present: present only critical alerts.",
+            "Suppress: suppress low-priority alerts.",
+            "Learn: learn from alert patterns.",
+            "Optimize: optimize filtering and prioritization."
+        ],
+        "example": "Alert Reduction: collect 1000 alerts → filter (remove 600 false positives) → prioritize → group (200 into 20 groups) → present 50 critical → Alert Reduction successful (95% reduction).",
+        "time_complexity": "O(a * f) where a is alerts, f is filtering complexity (alert reduction complexity).",
+        "space_complexity": "O(a + r) where a is alerts, r is rules (alert storage).",
+        "strengths": [
+            "Focus: helps operators focus on critical issues.",
+            "Efficiency: reduces time spent on non-critical alerts.",
+            "Quality: improves alert quality and relevance."
+        ],
+        "weaknesses": [
+            "Risk: may filter out important alerts if not careful.",
+            "Complexity: requires sophisticated filtering algorithms.",
+            "Tuning: requires careful tuning of rules and thresholds."
+        ],
+        "alternatives": ["No Filtering", "Basic Filtering", "Manual Prioritization", "Threshold-Based"],
+        "explanation": "Systems that reduce alert fatigue by intelligently filtering, prioritizing, and grouping alerts to ensure operators focus on critical issues."
+    },
+    "semester_14/lecture_96_incident_management_advanced/blameless_culture/README.md": {
+        "name": "Blameless Postmortem Culture",
+        "problem": "Establishes a culture and process for conducting blameless postmortems that focus on learning from incidents, improving systems, and preventing recurrence rather than assigning blame.",
+        "intuition": "Like a learning-focused investigation: Blameless culture is like a learning-focused investigation - when something goes wrong (incident), you investigate to learn (root cause), improve (fixes), and prevent (changes) - you don't blame people, you fix systems - just as a safety investigation focuses on prevention, blameless culture focuses on improvement.",
+        "inputs": "Incident data, timeline information, system logs, team input, postmortem templates, improvement tracking, culture guidelines.",
+        "outputs": "Postmortem reports, root cause analysis, improvement actions, prevention measures, culture guidelines, learning outcomes.",
+        "steps": [
+            "Prepare: prepare for postmortem meeting.",
+            "Gather: gather incident data and timeline.",
+            "Conduct: conduct blameless postmortem discussion.",
+            "Analyze: analyze root causes (not blame).",
+            "Document: document findings and learnings.",
+            "Action: identify improvement actions.",
+            "Implement: implement improvements.",
+            "Track: track action items and improvements.",
+            "Share: share learnings across organization.",
+            "Iterate: iterate on postmortem process."
+        ],
+        "example": "Blameless Culture: prepare → gather data → conduct meeting (focus on system, not people) → analyze root cause → document → action items → implement → track → Blameless Culture successful.",
+        "time_complexity": "O(i * p) where i is incident complexity, p is postmortem process time (postmortem complexity).",
+        "space_complexity": "O(d + r) where d is documentation, r is reports (postmortem storage).",
+        "strengths": [
+            "Learning: promotes learning and improvement.",
+            "Culture: builds positive, learning-focused culture.",
+            "Prevention: helps prevent future incidents."
+        ],
+        "weaknesses": [
+            "Culture: requires cultural change and buy-in.",
+            "Time: requires time investment for postmortems.",
+            "Execution: requires careful execution to maintain blameless focus."
+        ],
+        "alternatives": ["Blaming Culture", "No Postmortems", "Formal Investigations", "Informal Reviews"],
+        "explanation": "Culture and processes that focus on learning from incidents through blameless postmortems rather than assigning blame, promoting improvement and prevention."
     }
 }
 

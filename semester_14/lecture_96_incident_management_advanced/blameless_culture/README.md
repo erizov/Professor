@@ -1,40 +1,51 @@
-# Blameless Culture
+# Blameless Postmortem Culture
 
 1. **Name of Algorithm**  
-   Blameless Culture
+   Blameless Postmortem Culture
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements blameless culture algorithm.
+   Establishes a culture and process for conducting blameless postmortems that focus on learning from incidents, improving systems, and preventing recurrence rather than assigning blame.
 
 3. **Intuition (plain-language explanation)**  
-   Blameless Culture is a fundamental algorithm in computer science.
+   Like a learning-focused investigation: Blameless culture is like a learning-focused investigation - when something goes wrong (incident), you investigate to learn (root cause), improve (fixes), and prevent (changes) - you don't blame people, you fix systems - just as a safety investigation focuses on prevention, blameless culture focuses on improvement.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Incident data, timeline information, system logs, team input, postmortem templates, improvement tracking, culture guidelines.  
+   - Output: Postmortem reports, root cause analysis, improvement actions, prevention measures, culture guidelines, learning outcomes.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Prepare: prepare for postmortem meeting.
+2. Gather: gather incident data and timeline.
+3. Conduct: conduct blameless postmortem discussion.
+4. Analyze: analyze root causes (not blame).
+5. Document: document findings and learnings.
+6. Action: identify improvement actions.
+7. Implement: implement improvements.
+8. Track: track action items and improvements.
+9. Share: share learnings across organization.
+10. Iterate: iterate on postmortem process.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Blameless Culture applied to sample data.
+   Blameless Culture: prepare → gather data → conduct meeting (focus on system, not people) → analyze root cause → document → action items → implement → track → Blameless Culture successful.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(i * p) where i is incident complexity, p is postmortem process time (postmortem complexity).  
+   - Space: O(d + r) where d is documentation, r is reports (postmortem storage).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Learning: promotes learning and improvement.
+- Culture: builds positive, learning-focused culture.
+- Prevention: helps prevent future incidents.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Culture: requires cultural change and buy-in.
+- Time: requires time investment for postmortems.
+- Execution: requires careful execution to maintain blameless focus.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Blaming Culture, No Postmortems, Formal Investigations, Informal Reviews
 
 11. **30-second explanation (your own words)**  
-    Blameless Culture solves computational problems efficiently.
+    Culture and processes that focus on learning from incidents through blameless postmortems rather than assigning blame, promoting improvement and prevention.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
