@@ -32,25 +32,84 @@ def get_algorithms_db_connection():
     return None
 
 
+def has_algorithm_type_column(conn):
+    """Check if algorithms table has algorithm_type column."""
+    if not conn:
+        return False
+    try:
+        cursor = conn.cursor()
+        cursor.execute("PRAGMA table_info(algorithms)")
+        columns = [row[1] for row in cursor.fetchall()]
+        return "algorithm_type" in columns
+    except Exception:
+        return False
+
+
+def ensure_algorithm_type_column(conn):
+    """Add algorithm_type column if it doesn't exist."""
+    if not conn:
+        return False
+    try:
+        cursor = conn.cursor()
+        if not has_algorithm_type_column(conn):
+            cursor.execute(
+                "ALTER TABLE algorithms ADD COLUMN algorithm_type TEXT"
+            )
+            conn.commit()
+        return True
+    except Exception:
+        return False
+
+
+def load_algorithm_types() -> Dict[str, str]:
+    """Load mapping of algorithm_path -> algorithm_type."""
+    if not ALGORITHMS_DB_PATH.exists():
+        return {}
+
+    conn = get_algorithms_db_connection()
+    if not conn:
+        return {}
+
+    try:
+        ensure_algorithm_type_column(conn)
+        cursor = conn.cursor()
+        cursor.execute(
+            """
+            SELECT folder_path, COALESCE(algorithm_type, 'unknown')
+            FROM algorithms
+        """
+        )
+        mapping = {row[0]: row[1] for row in cursor.fetchall()}
+        return mapping
+    except Exception:
+        return {}
+    finally:
+        conn.close()
+
+
 @test_reports_bp.route("/test-reports")
 def test_reports():
     """Main test reports page."""
-    # Get available algorithm types for filter dropdown
-    algo_conn = get_algorithms_db_connection()
     algorithm_types = ["All Types"]
+    algo_conn = get_algorithms_db_connection()
     
     if algo_conn:
-        cursor = algo_conn.cursor()
-        cursor.execute("""
-            SELECT DISTINCT algorithm_type 
-            FROM algorithms 
-            WHERE algorithm_type IS NOT NULL 
-            ORDER BY algorithm_type
-        """)
-        types = [row[0] for row in cursor.fetchall()]
-        algorithm_types.extend(types)
-        algo_conn.close()
-    
+        try:
+            ensure_algorithm_type_column(algo_conn)
+            cursor = algo_conn.cursor()
+            cursor.execute("""
+                SELECT DISTINCT algorithm_type 
+                FROM algorithms 
+                WHERE algorithm_type IS NOT NULL 
+                ORDER BY algorithm_type
+            """)
+            types = [row[0] for row in cursor.fetchall()]
+            algorithm_types.extend(types)
+        except Exception:
+            pass
+        finally:
+            algo_conn.close()
+
     return render_template("test_reports.html", algorithm_types=algorithm_types)
 
 
@@ -59,63 +118,35 @@ def get_test_results():
     """Get test results as JSON."""
     conn = get_db_connection()
     cursor = conn.cursor()
-    algo_conn = get_algorithms_db_connection()
+    algorithm_types = load_algorithm_types()
 
     # Get query parameters
     search = request.args.get("search", "").lower()
     status_filter = request.args.get("status", "")
     language_filter = request.args.get("language", "")
     algorithm_type_filter = request.args.get("algorithm_type", "")
-    sort_by = request.args.get("sort", "timestamp")  # timestamp, algorithm_path, status, duration
-    sort_order = request.args.get("order", "desc")  # asc, desc
+    sort_by = request.args.get("sort", "timestamp")
+    sort_order = request.args.get("order", "desc")
 
-    # Build query - join with algorithms DB if available
-    if algo_conn:
-        # Join with algorithms database to get algorithm_type
-        query = """
-            WITH recent_results AS (
-                SELECT 
-                    tr.algorithm_path,
-                    tr.language,
-                    tr.status,
-                    tr.duration,
-                    tr.timestamp,
-                    tr.error_message,
-                    tr.previous_status,
-                    tr.state_changed,
-                    COALESCE(a.algorithm_type, 'unknown') as algorithm_type,
-                    ROW_NUMBER() OVER (
-                        PARTITION BY tr.algorithm_path, tr.language 
-                        ORDER BY tr.timestamp DESC
-                    ) as rn
-                FROM test_results tr
-                LEFT JOIN (
-                    SELECT folder_path, algorithm_type 
-                    FROM algorithms
-                ) a ON tr.algorithm_path = a.folder_path
-                WHERE 1=1
-        """
-    else:
-        # Fallback if algorithms DB doesn't exist
-        query = """
-            WITH recent_results AS (
-                SELECT 
-                    algorithm_path,
-                    language,
-                    status,
-                    duration,
-                    timestamp,
-                    error_message,
-                    previous_status,
-                    state_changed,
-                    'unknown' as algorithm_type,
-                    ROW_NUMBER() OVER (
-                        PARTITION BY algorithm_path, language 
-                        ORDER BY timestamp DESC
-                    ) as rn
-                FROM test_results
-                WHERE 1=1
-        """
+    # Build query - no cross-database join, we'll add algorithm_type in Python
+    query = """
+        WITH recent_results AS (
+            SELECT 
+                algorithm_path,
+                language,
+                status,
+                duration,
+                timestamp,
+                error_message,
+                previous_status,
+                state_changed,
+                ROW_NUMBER() OVER (
+                    PARTITION BY algorithm_path, language 
+                    ORDER BY timestamp DESC
+                ) as rn
+            FROM test_results
+            WHERE 1=1
+    """
 
     params = []
 
@@ -130,10 +161,6 @@ def get_test_results():
     if language_filter:
         query += " AND language = ?"
         params.append(language_filter)
-
-    if algorithm_type_filter:
-        query += " AND algorithm_type = ?"
-        params.append(algorithm_type_filter)
 
     query += """
         )
@@ -172,6 +199,10 @@ def get_test_results():
         if key not in results_by_algorithm:
             results_by_algorithm[key] = []
 
+        # Normalize path separators for lookup (Windows uses backslashes)
+        algo_path = row[0].replace("\\", "/")
+        algo_type = algorithm_types.get(algo_path, "unknown")
+
         results_by_algorithm[key].append(
             {
                 "algorithm_path": row[0],
@@ -182,15 +213,19 @@ def get_test_results():
                 "error_message": row[5],
                 "previous_status": row[6],
                 "state_changed": bool(row[7]),
-                "algorithm_type": row[8] if len(row) > 8 else "unknown",
+                "algorithm_type": algo_type,
             }
         )
 
     # Convert to list format
     results = []
     for key, test_results in results_by_algorithm.items():
-        # Get the most recent result
         latest = test_results[0]
+        algo_type = latest.get("algorithm_type", "unknown")
+
+        if algorithm_type_filter and algo_type != algorithm_type_filter:
+            continue
+
         results.append(
             {
                 "algorithm_path": latest["algorithm_path"],
@@ -200,14 +235,12 @@ def get_test_results():
                 "latest_duration": latest["duration"],
                 "state_changed": latest["state_changed"],
                 "previous_status": latest["previous_status"],
-                "algorithm_type": latest.get("algorithm_type", "unknown"),
-                "recent_results": test_results[:5],  # Max 5 results
+                "algorithm_type": algo_type,
+                "recent_results": test_results[:5],
             }
         )
 
     conn.close()
-    if algo_conn:
-        algo_conn.close()
 
     return jsonify({"results": results})
 
@@ -217,7 +250,7 @@ def get_test_statistics():
     """Get test statistics with filter support."""
     conn = get_db_connection()
     cursor = conn.cursor()
-    algo_conn = get_algorithms_db_connection()
+    algorithm_types = load_algorithm_types()
 
     # Get filter parameters
     search = request.args.get("search", "").lower()
@@ -225,21 +258,11 @@ def get_test_statistics():
     language_filter = request.args.get("language", "")
     algorithm_type_filter = request.args.get("algorithm_type", "")
 
-    # Build base query with filters
-    if algo_conn:
-        base_query = """
-            FROM test_results tr
-            LEFT JOIN (
-                SELECT folder_path, algorithm_type 
-                FROM algorithms
-            ) a ON tr.algorithm_path = a.folder_path
-            WHERE 1=1
-        """
-    else:
-        base_query = """
-            FROM test_results tr
-            WHERE 1=1
-        """
+    # Build base query - no cross-database join
+    base_query = """
+        FROM test_results tr
+        WHERE 1=1
+    """
 
     params = []
     filter_conditions = []
@@ -256,18 +279,16 @@ def get_test_statistics():
         filter_conditions.append("tr.language = ?")
         params.append(language_filter)
 
-    if algorithm_type_filter and algo_conn:
-        filter_conditions.append("COALESCE(a.algorithm_type, 'unknown') = ?")
-        params.append(algorithm_type_filter)
-
     if filter_conditions:
         base_query += " AND " + " AND ".join(filter_conditions)
 
     # Get overall statistics with filters
-    query = f"""
+    # First get all recent results with paths for algorithm_type filtering
+    query_with_paths = f"""
         SELECT 
-            status,
-            COUNT(*) as count
+            recent.algorithm_path,
+            recent.language,
+            recent.status
         FROM (
             SELECT 
                 tr.algorithm_path,
@@ -279,59 +300,59 @@ def get_test_statistics():
                 ) as rn
             {base_query}
         ) recent
-        WHERE rn = 1
-        GROUP BY status
+        WHERE recent.rn = 1
     """
+    
+    cursor.execute(query_with_paths, params)
+    all_path_rows = cursor.fetchall()
+    
+    # Filter by algorithm_type if specified, then count by status
+    status_counts = {}
+    for row in all_path_rows:
+        algo_path, lang, status = row
+        algo_path_normalized = algo_path.replace("\\", "/")
+        algo_type = algorithm_types.get(algo_path_normalized, "unknown")
+        
+        if algorithm_type_filter and algo_type != algorithm_type_filter:
+            continue
+            
+        status_counts[status] = status_counts.get(status, 0) + 1
 
-    cursor.execute(query, params)
-    status_counts = {row[0]: row[1] for row in cursor.fetchall()}
-
-    # Get language breakdown with filters
-    query = f"""
-        SELECT 
-            language,
-            status,
-            COUNT(*) as count
-        FROM (
-            SELECT 
-                tr.algorithm_path,
-                tr.language,
-                tr.status,
-                ROW_NUMBER() OVER (
-                    PARTITION BY tr.algorithm_path, tr.language 
-                    ORDER BY tr.timestamp DESC
-                ) as rn
-            {base_query}
-        ) recent
-        WHERE rn = 1
-        GROUP BY language, status
-    """
-
-    cursor.execute(query, params)
+    # Get language breakdown with filters (reuse path_rows from above)
     language_stats = {}
-    for row in cursor.fetchall():
-        lang, status, count = row
+    for row in all_path_rows:
+        algo_path, lang, status = row
+        algo_path_normalized = algo_path.replace("\\", "/")
+        algo_type = algorithm_types.get(algo_path_normalized, "unknown")
+        
+        if algorithm_type_filter and algo_type != algorithm_type_filter:
+            continue
+            
         if lang not in language_stats:
             language_stats[lang] = {}
-        language_stats[lang][status] = count
+        language_stats[lang][status] = language_stats[lang].get(status, 0) + 1
 
     # Get state changes with filters
     state_change_params = params.copy()
+    state_change_base = base_query + " AND tr.state_changed = 1 AND tr.timestamp > datetime('now', '-24 hours')"
     state_change_query = f"""
-        SELECT COUNT(*) 
+        SELECT COUNT(DISTINCT recent.algorithm_path || ':' || recent.language)
         FROM (
-            SELECT DISTINCT tr.algorithm_path, tr.language
-            {base_query}
-            AND tr.state_changed = 1 
-            AND tr.timestamp > datetime('now', '-24 hours')
-        )
+            SELECT 
+                tr.algorithm_path,
+                tr.language,
+                ROW_NUMBER() OVER (
+                    PARTITION BY tr.algorithm_path, tr.language 
+                    ORDER BY tr.timestamp DESC
+                ) as rn
+            {state_change_base}
+        ) recent
+        WHERE recent.rn = 1
     """
-    cursor.execute(state_change_query, state_change_params)
-    recent_changes = cursor.fetchone()[0]
+    cursor.execute(state_change_query, params)
+    recent_changes = cursor.fetchone()[0] or 0
 
     conn.close()
-    if algo_conn:
-        algo_conn.close()
 
     return jsonify(
         {
