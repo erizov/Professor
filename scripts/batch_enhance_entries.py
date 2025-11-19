@@ -5132,6 +5132,194 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["CPU Optimization", "TPU Optimization", "Edge Device Optimization", "Cloud Inference Services"],
         "explanation": "Optimizes ML inference on GPUs through parallel computation, memory management, kernel fusion, and hardware-specific optimizations to achieve maximum throughput and minimal latency."
+    },
+    "semester_06/lecture_36_inference_optimization/inference_pipeline/README.md": {
+        "name": "Inference Pipeline",
+        "problem": "Orchestrates multi-stage ML inference workflows by chaining preprocessing, model inference, and postprocessing steps, enabling complex ML applications with data transformation, multiple models, and result aggregation.",
+        "intuition": "Like an assembly line for ML predictions: raw data goes through preprocessing (cleaning, feature extraction), then model inference (prediction), then postprocessing (formatting, aggregation) - each stage handles a specific task, and the pipeline coordinates them all.",
+        "inputs": "Raw input data, pipeline configuration (preprocessing steps, models, postprocessing steps), pipeline orchestration framework.",
+        "outputs": "Processed predictions with all transformations applied, ready for consumption by downstream systems.",
+        "steps": [
+            "Define pipeline stages: preprocessing, inference, postprocessing, and their dependencies.",
+            "Preprocessing stage: clean data, extract features, normalize, encode categorical variables.",
+            "Model inference stage: run preprocessed data through ML model(s) to get predictions.",
+            "Postprocessing stage: format predictions, apply business logic, aggregate results from multiple models.",
+            "Orchestrate pipeline: use framework (Kubeflow, Airflow, or custom) to manage stage execution and data flow.",
+            "Handle errors: implement retry logic, fallback mechanisms, and error handling for each stage.",
+            "Monitor pipeline: track latency, throughput, and errors at each stage.",
+            "Scale pipeline: scale individual stages independently based on load."
+        ],
+        "example": "Image classification pipeline: raw image → preprocessing (resize, normalize) → ResNet-50 inference → postprocessing (format probabilities, add metadata) → output JSON. Multi-model: image → preprocessing → object detection + classification models → postprocessing (combine results) → output.",
+        "time_complexity": "O(P + I + O) where P is preprocessing time, I is inference time, O is postprocessing time (pipeline latency is sum of all stages).",
+        "space_complexity": "O(S) for storing intermediate results between stages, where S is size of data flowing through pipeline.",
+        "strengths": [
+            "Modular: each stage can be developed, tested, and scaled independently.",
+            "Reusable: pipeline stages can be shared across different ML applications.",
+            "Maintainable: clear separation of concerns makes debugging easier."
+        ],
+        "weaknesses": [
+            "Adds latency: overhead from stage coordination and data serialization.",
+            "Complexity: managing dependencies and error handling across stages."
+        ],
+        "alternatives": ["Monolithic Inference", "Microservices", "Serverless Functions", "Stream Processing"],
+        "explanation": "Orchestrates multi-stage ML workflows by chaining preprocessing, inference, and postprocessing steps, enabling complex ML applications with modular, scalable architecture."
+    },
+    "semester_06/lecture_36_inference_optimization/model_caching/README.md": {
+        "name": "Model Caching",
+        "problem": "Caches loaded models and frequently used predictions in memory or fast storage to avoid repeated model loading and redundant computations, reducing latency and improving inference throughput.",
+        "intuition": "Like keeping frequently used tools on your desk: instead of loading the model from disk every time (slow), keep it in memory (fast) - and if you've seen the same input before, reuse the prediction instead of recomputing it.",
+        "inputs": "Model files, inference requests, cache storage (memory, Redis, etc.), cache eviction policy.",
+        "outputs": "Cached models ready for inference, cached predictions for repeated queries.",
+        "steps": [
+            "Model caching: load model into memory on startup or first request, keep in memory for subsequent requests.",
+            "Prediction caching: hash input data to create cache key, check if prediction exists in cache.",
+            "Cache hit: return cached prediction immediately (no model inference needed).",
+            "Cache miss: run model inference, store result in cache with input hash as key.",
+            "Cache eviction: remove old or least-recently-used entries when cache is full (LRU, LFU, or TTL-based).",
+            "Cache invalidation: invalidate cache when model is updated or data changes significantly.",
+            "Distributed caching: use shared cache (Redis, Memcached) for multi-instance deployments.",
+            "Monitor cache: track hit rate, cache size, and performance metrics."
+        ],
+        "example": "Image classification API: first request for image X → load ResNet-50 (2s) → inference (50ms) → cache prediction → subsequent requests for image X → cache hit (1ms) → return cached result. Model caching: load model once → serve 1000 requests → no reload needed.",
+        "time_complexity": "O(1) for cache lookup, O(M) for model loading (one-time), O(I) for inference on cache miss where I is inference time.",
+        "space_complexity": "O(M) for model in memory, O(C·(S+P)) for prediction cache where C is cache size, S is input size, P is prediction size.",
+        "strengths": [
+            "Reduces latency: cache hits are orders of magnitude faster than inference.",
+            "Improves throughput: model loading overhead eliminated for cached models.",
+            "Cost effective: reduces compute costs for repeated queries."
+        ],
+        "weaknesses": [
+            "Memory intensive: requires storing models and predictions in memory.",
+            "Cache invalidation: must handle model updates and data changes carefully."
+        ],
+        "alternatives": ["No Caching", "Model Warm-up", "Prediction Precomputation", "CDN Caching"],
+        "explanation": "Caches loaded models and predictions in memory to avoid repeated loading and redundant computations, significantly reducing latency and improving inference throughput for repeated queries."
+    },
+    "semester_06/lecture_37_cost_optimization/autoscaling/README.md": {
+        "name": "Autoscaling",
+        "problem": "Automatically adjusts the number of compute resources (servers, containers, instances) based on workload demand, ensuring adequate capacity during peak loads while minimizing costs during low usage periods.",
+        "intuition": "Like a restaurant that automatically adds or removes tables based on customer flow: when busy (high demand), add more servers to handle requests - when quiet (low demand), reduce servers to save costs - all automatically based on metrics like request rate or CPU usage.",
+        "inputs": "Workload metrics (CPU, memory, request rate, queue length), scaling policies (min/max instances, target metrics, scale-up/down thresholds).",
+        "outputs": "Dynamically adjusted number of compute instances, optimized for cost and performance.",
+        "steps": [
+            "Define scaling metrics: choose metrics to monitor (CPU utilization, request rate, latency, queue depth).",
+            "Set scaling policies: define min/max instances, target metric values, scale-up/down thresholds.",
+            "Monitor metrics: continuously collect metrics from running instances.",
+            "Evaluate scaling conditions: compare current metrics to thresholds (e.g., CPU > 70% for 5 minutes).",
+            "Scale up: add instances when metrics exceed upper threshold (e.g., launch new containers, add servers).",
+            "Scale down: remove instances when metrics below lower threshold (e.g., terminate idle instances).",
+            "Apply cooldown periods: wait between scaling actions to avoid oscillation (rapid scale up/down).",
+            "Balance load: distribute traffic across scaled instances using load balancer."
+        ],
+        "example": "ML inference service: baseline 2 instances → traffic increases → CPU 80% for 5min → scale up to 5 instances → traffic decreases → CPU 30% for 10min → scale down to 2 instances → cost: pay only for instances used, not idle capacity.",
+        "time_complexity": "O(1) for metric evaluation, O(T) for instance provisioning where T is instance startup time (typically 1-5 minutes).",
+        "space_complexity": "O(N·R) where N is number of instances, R is resources per instance (scales with demand).",
+        "strengths": [
+            "Cost efficient: pay only for resources actually used.",
+            "Handles traffic spikes: automatically scales to meet demand.",
+            "Reduces manual intervention: no need to manually adjust capacity."
+        ],
+        "weaknesses": [
+            "Scaling delay: takes time to provision new instances (may cause temporary overload).",
+            "Complexity: requires careful tuning of thresholds to avoid oscillation."
+        ],
+        "alternatives": ["Manual Scaling", "Scheduled Scaling", "Predictive Scaling", "Fixed Capacity"],
+        "explanation": "Automatically adjusts compute resources based on workload demand, ensuring adequate capacity during peaks while minimizing costs during low usage through dynamic scaling policies."
+    },
+    "semester_06/lecture_37_cost_optimization/serverless_ml/README.md": {
+        "name": "Serverless ML",
+        "problem": "Deploys ML models on serverless platforms (AWS Lambda, Azure Functions, Google Cloud Functions) that automatically manage infrastructure, scale to zero when idle, and charge only for actual execution time, reducing operational overhead and costs.",
+        "intuition": "Like a pay-per-use gym: instead of renting a server 24/7 (expensive), use serverless functions that only run when you need them - you pay only for the seconds the function executes, and the platform handles all the infrastructure management.",
+        "inputs": "ML model, inference code, serverless platform configuration, trigger (API Gateway, event, schedule).",
+        "outputs": "Serverless ML function that executes on-demand, scales automatically, and charges per invocation.",
+        "steps": [
+            "Package model: bundle model file with inference code into deployment package.",
+            "Create serverless function: define function handler, runtime (Python, Node.js), memory allocation, timeout.",
+            "Configure triggers: set up API Gateway, event sources, or scheduled triggers to invoke function.",
+            "Deploy function: upload package to serverless platform (Lambda, Functions, etc.).",
+            "Function execution: platform automatically provisions container, loads model, runs inference, returns result.",
+            "Auto-scaling: platform automatically scales functions based on concurrent requests (no manual configuration).",
+            "Scale to zero: function automatically shuts down when idle (no cost when not in use).",
+            "Monitor: track invocations, duration, errors, and costs through platform metrics."
+        ],
+        "example": "Image classification: API request → API Gateway → Lambda function (loads ResNet-50 from S3) → inference (200ms) → return prediction → function terminates → cost: $0.0000167 per 100ms (pay only for execution time, no idle costs).",
+        "time_complexity": "O(C + I) where C is cold start time (model loading, typically 1-5s), I is inference time (warm starts are faster).",
+        "space_complexity": "O(M) for model in function package, O(M) for model in memory during execution (limited by function memory limit, typically 512MB-10GB).",
+        "strengths": [
+            "Cost efficient: pay only for execution time, no idle costs.",
+            "Zero operational overhead: platform manages infrastructure, scaling, monitoring.",
+            "Automatic scaling: handles traffic spikes without configuration."
+        ],
+        "weaknesses": [
+            "Cold start latency: first request may be slow due to model loading.",
+            "Size limits: model size constrained by function package and memory limits.",
+            "Timeout limits: functions have maximum execution time (typically 15 minutes)."
+        ],
+        "alternatives": ["Container-based Deployment", "Managed ML Services", "Kubernetes", "Virtual Machines"],
+        "explanation": "Deploys ML models on serverless platforms that automatically manage infrastructure, scale to zero when idle, and charge only for execution time, reducing operational overhead and costs."
+    },
+    "semester_06/lecture_37_cost_optimization/cost_analysis/README.md": {
+        "name": "Cost Analysis",
+        "problem": "Analyzes and tracks ML infrastructure costs across compute, storage, networking, and services to identify optimization opportunities, allocate costs, and optimize spending while maintaining performance.",
+        "intuition": "Like a financial audit for your ML infrastructure: track every dollar spent on compute, storage, and services, break it down by project/team/model, identify where money is wasted, and find ways to reduce costs without hurting performance.",
+        "inputs": "Cloud billing data, resource usage metrics, cost allocation tags, time period for analysis.",
+        "outputs": "Cost reports, cost breakdowns by resource/service/project, optimization recommendations, cost forecasts.",
+        "steps": [
+            "Collect cost data: gather billing data from cloud providers (AWS Cost Explorer, Azure Cost Management, GCP Billing).",
+            "Tag resources: apply tags to resources (project, team, model, environment) for cost allocation.",
+            "Categorize costs: break down costs by service (compute, storage, networking, ML services), resource type, region.",
+            "Analyze usage patterns: identify peak usage times, idle resources, over-provisioned instances.",
+            "Calculate unit costs: determine cost per inference, cost per training job, cost per model version.",
+            "Identify waste: find unused resources, oversized instances, inefficient resource utilization.",
+            "Generate reports: create dashboards showing costs by project, team, model, with trends over time.",
+            "Provide recommendations: suggest optimizations (right-sizing, reserved instances, spot instances, autoscaling)."
+        ],
+        "example": "ML platform costs: total $10K/month → breakdown: compute $6K (60%), storage $2K (20%), networking $1K (10%), ML services $1K (10%) → by project: model A $4K, model B $3K, training $2K, infrastructure $1K → optimization: replace on-demand with spot instances → save $2K/month (20% reduction).",
+        "time_complexity": "O(R) for analyzing R resources (linear in number of resources), O(T) for time-series analysis over T time periods.",
+        "space_complexity": "O(R + T) for storing cost data for R resources over T time periods.",
+        "strengths": [
+            "Visibility: provides clear understanding of where money is spent.",
+            "Optimization: identifies cost reduction opportunities.",
+            "Accountability: enables cost allocation to teams/projects."
+        ],
+        "weaknesses": [
+            "Requires proper tagging: costs may be misallocated without good tagging practices.",
+            "Analysis overhead: requires time and tools to perform comprehensive analysis."
+        ],
+        "alternatives": ["Manual Cost Tracking", "Cloud Provider Cost Tools", "Third-party Cost Management", "Budget Alerts"],
+        "explanation": "Analyzes and tracks ML infrastructure costs across all resources and services to identify optimization opportunities, allocate costs, and optimize spending while maintaining performance."
+    },
+    "semester_06/lecture_37_cost_optimization/spot_instances/README.md": {
+        "name": "Spot Instances",
+        "problem": "Uses spare cloud compute capacity available at significantly discounted prices (up to 90% off) for fault-tolerant workloads, enabling cost-effective ML training and batch inference with the trade-off of potential interruption.",
+        "intuition": "Like buying airline tickets at the last minute: cloud providers have unused capacity they sell at huge discounts, but they can take it back if someone pays full price - perfect for jobs that can handle interruptions (like training that can checkpoint and resume).",
+        "inputs": "Workload (training jobs, batch inference), spot instance configuration (instance type, max price, interruption handling), checkpointing strategy.",
+        "outputs": "Cost-optimized compute resources with potential for interruption, significant cost savings.",
+        "steps": [
+            "Identify fault-tolerant workloads: choose workloads that can handle interruptions (training with checkpoints, batch inference).",
+            "Configure spot instances: select instance type, set maximum bid price (willing to pay), choose availability zones.",
+            "Request spot instances: submit spot instance requests to cloud provider.",
+            "Monitor spot prices: track current spot prices vs. on-demand prices to optimize bidding strategy.",
+            "Handle interruptions: implement checkpointing (save model state periodically) and resume logic.",
+            "Run workload: execute training or inference on spot instances, save checkpoints regularly.",
+            "Recover from interruption: if instance terminated, restore from checkpoint and resume on new spot instance.",
+            "Track savings: monitor cost savings compared to on-demand instances."
+        ],
+        "example": "ML training: ResNet-50 training on 4 GPUs → on-demand: $10/hour → spot instances: $1/hour (90% discount) → training with checkpoints every epoch → instance interrupted after 2 hours → resume from checkpoint → total training: 8 hours → cost: $8 (vs $80 on-demand, 90% savings).",
+        "time_complexity": "O(T + R·C) where T is total training time, R is number of interruptions, C is checkpoint restore time (may take longer than on-demand due to interruptions).",
+        "space_complexity": "O(M) for model checkpoints, O(M) for model state in memory (same as on-demand).",
+        "strengths": [
+            "Significant cost savings: up to 90% cheaper than on-demand instances.",
+            "Suitable for fault-tolerant workloads: training and batch jobs can handle interruptions.",
+            "High availability: can use multiple availability zones to reduce interruption risk."
+        ],
+        "weaknesses": [
+            "Interruptions: instances can be terminated with short notice (2 minutes on AWS).",
+            "Not suitable for real-time: interruptions make spot instances unsuitable for production inference.",
+            "Complexity: requires checkpointing and resume logic."
+        ],
+        "alternatives": ["On-Demand Instances", "Reserved Instances", "Savings Plans", "Preemptible Instances"],
+        "explanation": "Uses spare cloud compute capacity at discounted prices for fault-tolerant ML workloads, enabling significant cost savings (up to 90%) with the trade-off of potential interruption, requiring checkpointing and resume strategies."
     }
 }
 
