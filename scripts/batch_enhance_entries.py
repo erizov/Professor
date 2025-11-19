@@ -16103,6 +16103,482 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["PBFT", "Other BFT", "Proof of Stake", "Proof of Work"],
         "explanation": "Implements HotStuff consensus algorithm, a Byzantine fault-tolerant consensus protocol that provides linear communication complexity and fast finality, used in blockchain systems like Libra/Diem."
+    },
+    "semester_13/lecture_88_consensus_advanced/pbft/README.md": {
+        "name": "PBFT (Practical Byzantine Fault Tolerance)",
+        "problem": "Implements PBFT consensus algorithm, a Byzantine fault-tolerant consensus protocol that tolerates up to (n-1)/3 Byzantine failures in a network of n nodes, providing fast finality and high throughput.",
+        "intuition": "Like agreement despite liars: PBFT is like reaching agreement even when some people lie (Byzantine failures) - you need 2/3 honest nodes to agree, and you can tolerate up to 1/3 liars - just as you can reach consensus despite some dishonest participants, PBFT reaches consensus despite Byzantine failures.",
+        "inputs": "Transactions, validators, consensus parameters, Byzantine fault tolerance, network messages.",
+        "outputs": "Consensus decisions, finalized blocks, fast finality, high throughput, secure blockchain.",
+        "steps": [
+            "Request: client sends request to primary.",
+            "Pre-prepare: primary broadcasts pre-prepare message.",
+            "Prepare: validators send prepare messages.",
+            "Commit: validators send commit messages after 2f+1 prepares.",
+            "Reply: validators reply to client after 2f+1 commits.",
+            "Finalize: finalize block after consensus.",
+            "View-change: change view if primary fails.",
+            "Verify: verify message authenticity.",
+            "Repeat: repeat for next block.",
+            "Optimize: optimize consensus performance."
+        ],
+        "example": "PBFT: validators: 4 validators (tolerates 1 Byzantine) → request: client request → pre-prepare: primary broadcasts → prepare: 3 validators prepare → commit: 3 validators commit → result: consensus reached, block finalized → PBFT successful.",
+        "time_complexity": "O(n²) where n is validators (message complexity, but fast in practice).",
+        "space_complexity": "O(n) where n is validators (validator storage, message logs).",
+        "strengths": [
+            "Finality: provides fast finality.",
+            "Throughput: high transaction throughput.",
+            "Security: Byzantine fault tolerant."
+        ],
+        "weaknesses": [
+            "Scalability: O(n²) message complexity limits scalability.",
+            "Primary: requires trusted primary (view-change handles failures).",
+            "Network: requires reliable network."
+        ],
+        "alternatives": ["Proof of Work", "Proof of Stake", "Other BFT", "HotStuff"],
+        "explanation": "Implements PBFT consensus algorithm, a Byzantine fault-tolerant consensus protocol that tolerates up to (n-1)/3 Byzantine failures in a network of n nodes, providing fast finality and high throughput."
+    },
+    "semester_13/lecture_88_consensus_advanced/raft_blockchain/README.md": {
+        "name": "Raft Blockchain",
+        "problem": "Implements Raft consensus algorithm for blockchains, providing a simpler alternative to Paxos with strong leader-based consensus, used in blockchain systems for fast and understandable consensus.",
+        "intuition": "Like democratic leadership: Raft is like democratic leadership - you elect a leader (like electing a president) who makes decisions, and if the leader fails, you elect a new one - just as democratic leadership is understandable, Raft provides understandable consensus.",
+        "inputs": "Transactions, nodes, leader election, log replication, consensus parameters.",
+        "outputs": "Consensus decisions, replicated logs, finalized blocks, leader-based consensus, secure blockchain.",
+        "steps": [
+            "Elect: elect leader through voting.",
+            "Propose: leader proposes transactions.",
+            "Replicate: leader replicates log to followers.",
+            "Append: followers append to log.",
+            "Commit: commit after majority acknowledgment.",
+            "Apply: apply committed entries.",
+            "Heartbeat: leader sends heartbeats.",
+            "Re-elect: re-elect if leader fails.",
+            "Repeat: repeat for next entries.",
+            "Optimize: optimize consensus performance."
+        ],
+        "example": "Raft Blockchain: nodes: 5 nodes → elect: node 1 elected leader → propose: leader proposes block → replicate: replicate to 4 followers → commit: 3 nodes acknowledge → result: block committed, consensus reached → Raft Blockchain successful.",
+        "time_complexity": "O(n) where n is nodes (linear message complexity).",
+        "space_complexity": "O(n + l) where n is nodes, l is log length (node and log storage).",
+        "strengths": [
+            "Simplicity: simpler than Paxos, easier to understand.",
+            "Performance: fast consensus with strong leader.",
+            "Safety: provides strong safety guarantees."
+        ],
+        "weaknesses": [
+            "Leader: requires leader (single point of coordination).",
+            "Partition: may have issues with network partitions.",
+            "Blockchain: designed for traditional distributed systems, adapted for blockchain."
+        ],
+        "alternatives": ["Paxos", "PBFT", "Proof of Stake", "Other Consensus"],
+        "explanation": "Implements Raft consensus algorithm for blockchains, providing a simpler alternative to Paxos with strong leader-based consensus, used in blockchain systems for fast and understandable consensus."
+    },
+    "semester_13/lecture_88_consensus_advanced/tendermint/README.md": {
+        "name": "Tendermint",
+        "problem": "Implements Tendermint consensus algorithm, a Byzantine fault-tolerant consensus protocol designed for blockchains, providing fast finality and high throughput with a focus on application-agnostic consensus.",
+        "intuition": "Like efficient agreement: Tendermint is like efficient agreement protocols - validators agree on blocks efficiently through voting rounds - just as efficient voting reaches decisions, Tendermint reaches consensus efficiently.",
+        "inputs": "Transactions, validators, voting power, consensus parameters, Byzantine fault tolerance.",
+        "outputs": "Consensus decisions, finalized blocks, fast finality, high throughput, secure blockchain.",
+        "steps": [
+            "Propose: proposer (selected by voting power) proposes block.",
+            "Pre-vote: validators pre-vote on proposal.",
+            "Pre-commit: validators pre-commit after 2/3 pre-votes.",
+            "Commit: commit block after 2/3 pre-commits.",
+            "Finalize: finalize committed block.",
+            "Broadcast: broadcast finalized block.",
+            "Verify: verify block validity.",
+            "Update: update blockchain state.",
+            "Rotate: rotate proposer.",
+            "Repeat: repeat for next block."
+        ],
+        "example": "Tendermint: validators: 100 validators → propose: proposer proposes block → pre-vote: 67 validators pre-vote → pre-commit: 67 validators pre-commit → commit: block committed in <1 second → result: fast, secure consensus → Tendermint successful.",
+        "time_complexity": "O(n) where n is validators (linear communication complexity).",
+        "space_complexity": "O(n + b) where n is validators, b is block size (validator and block storage).",
+        "strengths": [
+            "Finality: provides instant finality (no forks).",
+            "Throughput: high transaction throughput.",
+            "Application-agnostic: works with any application logic."
+        ],
+        "weaknesses": [
+            "Validator set: requires known validator set.",
+            "Voting power: voting power distribution affects security.",
+            "Complexity: consensus protocol is complex."
+        ],
+        "alternatives": ["Proof of Work", "Proof of Stake", "PBFT", "Other BFT"],
+        "explanation": "Implements Tendermint consensus algorithm, a Byzantine fault-tolerant consensus protocol designed for blockchains, providing fast finality and high throughput with a focus on application-agnostic consensus."
+    },
+    "semester_13/lecture_89_defi/automated_market_makers/README.md": {
+        "name": "Automated Market Makers (AMM)",
+        "problem": "Implements Automated Market Makers, decentralized exchange protocols that use mathematical formulas (like constant product formula) to determine asset prices and enable trading without traditional order books.",
+        "intuition": "Like automatic pricing: AMMs are like automatic pricing systems - instead of buyers and sellers matching orders (like traditional exchanges), a formula automatically sets prices based on supply and demand - just as automatic pricing adjusts prices, AMMs automatically price assets.",
+        "inputs": "Liquidity pools, trading pairs, liquidity provider tokens, swap requests, AMM formulas.",
+        "outputs": "Asset swaps, updated prices, liquidity pool balances, trading fees, LP tokens.",
+        "steps": [
+            "Provide: liquidity providers add assets to pools.",
+            "Calculate: calculate prices using AMM formula (x * y = k).",
+            "Swap: users swap assets through pools.",
+            "Update: update pool balances after swap.",
+            "Price: new price determined by new balances.",
+            "Fee: collect trading fees.",
+            "Distribute: distribute fees to liquidity providers.",
+            "Track: track LP token ownership.",
+            "Remove: allow liquidity removal.",
+            "Optimize: optimize for low slippage."
+        ],
+        "example": "AMM: pool: ETH/USDC pool (100 ETH, 200,000 USDC) → swap: user swaps 10 ETH for USDC → calculate: new price from formula → update: pool now 110 ETH, 181,818 USDC → result: user receives 18,182 USDC → AMM successful.",
+        "time_complexity": "O(1) for swap calculation (constant time formula evaluation).",
+        "space_complexity": "O(p) where p is number of pools (pool storage).",
+        "strengths": [
+            "Decentralization: fully decentralized, no order books needed.",
+            "Accessibility: easy to use, always available.",
+            "Liquidity: incentivizes liquidity provision."
+        ],
+        "weaknesses": [
+            "Slippage: large trades cause price slippage.",
+            "Impermanent loss: liquidity providers face impermanent loss.",
+            "Formula: simple formulas may not capture all market dynamics."
+        ],
+        "alternatives": ["Order Books", "Centralized Exchanges", "Other AMM Formulas", "Hybrid Approaches"],
+        "explanation": "Implements Automated Market Makers, decentralized exchange protocols that use mathematical formulas (like constant product formula) to determine asset prices and enable trading without traditional order books."
+    },
+    "semester_13/lecture_89_defi/derivatives/README.md": {
+        "name": "Derivatives (DeFi)",
+        "problem": "Implements decentralized derivatives protocols that enable trading of financial derivatives (futures, options, perpetuals) on blockchain without intermediaries, providing transparent and accessible derivative markets.",
+        "intuition": "Like derivatives but decentralized: DeFi Derivatives are like traditional derivatives (futures, options) but on blockchain - you trade contracts (like betting on future prices) without brokers - just as traditional derivatives enable price speculation, DeFi derivatives enable decentralized speculation.",
+        "inputs": "Derivative contracts, collateral, positions, prices, liquidation parameters, margin requirements.",
+        "outputs": "Derivative positions, PnL, liquidations, settlements, margin calls, trading fees.",
+        "steps": [
+            "Create: create derivative contract (futures, options).",
+            "Deposit: deposit collateral.",
+            "Open: open derivative position.",
+            "Price: track underlying asset price (oracle).",
+            "Margin: monitor margin requirements.",
+            "Liquidate: liquidate if margin insufficient.",
+            "Settle: settle contract at expiration.",
+            "Payout: payout profits/losses.",
+            "Close: close position early if desired.",
+            "Manage: manage risk and positions."
+        ],
+        "example": "Derivatives: contract: ETH perpetual futures → deposit: 1000 USDC collateral → open: long position 10 ETH → price: ETH price increases → result: profit, position value increases → Derivatives successful.",
+        "time_complexity": "O(1) for position operations (constant time contract operations).",
+        "space_complexity": "O(p + c) where p is positions, c is contracts (position and contract storage).",
+        "strengths": [
+            "Accessibility: accessible to anyone with crypto.",
+            "Transparency: transparent and auditable.",
+            "Innovation: enables new derivative products."
+        ],
+        "weaknesses": [
+            "Risk: high risk, potential for large losses.",
+            "Liquidation: liquidation risk if price moves against position.",
+            "Oracles: depends on reliable price oracles."
+        ],
+        "alternatives": ["Traditional Derivatives", "Centralized Crypto Derivatives", "No Derivatives", "Hybrid Approaches"],
+        "explanation": "Implements decentralized derivatives protocols that enable trading of financial derivatives (futures, options, perpetuals) on blockchain without intermediaries, providing transparent and accessible derivative markets."
+    },
+    "semester_13/lecture_89_defi/lending_protocols/README.md": {
+        "name": "Lending Protocols",
+        "problem": "Implements decentralized lending protocols that enable users to lend and borrow cryptocurrencies without intermediaries, using smart contracts to manage loans, collateral, and interest rates algorithmically.",
+        "intuition": "Like banks but decentralized: Lending Protocols are like banks but on blockchain - you deposit crypto (like depositing money) to earn interest, or borrow crypto (like taking loans) by providing collateral - just as banks facilitate lending, DeFi lending protocols facilitate decentralized lending.",
+        "inputs": "Deposits, borrows, collateral, interest rates, liquidation parameters, loan terms.",
+        "outputs": "Loans, interest payments, liquidations, collateral management, yield, borrowing capacity.",
+        "steps": [
+            "Deposit: lenders deposit assets to earn interest.",
+            "Borrow: borrowers borrow assets against collateral.",
+            "Calculate: calculate interest rates algorithmically.",
+            "Accrue: accrue interest over time.",
+            "Monitor: monitor collateral ratios.",
+            "Liquidate: liquidate if collateral insufficient.",
+            "Repay: borrowers repay loans.",
+            "Withdraw: lenders withdraw deposits.",
+            "Distribute: distribute interest to lenders.",
+            "Manage: manage protocol reserves."
+        ],
+        "example": "Lending Protocols: deposit: user deposits 100 ETH → borrow: user borrows 50,000 USDC (collateralized) → interest: pays 5% APY → repay: repays loan + interest → withdraw: withdraws ETH + earned interest → result: lending/borrowing successful → Lending Protocols operational.",
+        "time_complexity": "O(1) for loan operations (constant time smart contract operations).",
+        "space_complexity": "O(l + d) where l is loans, d is deposits (loan and deposit storage).",
+        "strengths": [
+            "Accessibility: accessible to anyone with crypto.",
+            "Transparency: transparent interest rates and terms.",
+            "Efficiency: automated, no intermediaries."
+        ],
+        "weaknesses": [
+            "Risk: smart contract risks, liquidation risks.",
+            "Volatility: crypto volatility affects collateral value.",
+            "Regulation: regulatory uncertainty."
+        ],
+        "alternatives": ["Traditional Lending", "Centralized Crypto Lending", "No Lending", "Hybrid Approaches"],
+        "explanation": "Implements decentralized lending protocols that enable users to lend and borrow cryptocurrencies without intermediaries, using smart contracts to manage loans, collateral, and interest rates algorithmically."
+    },
+    "semester_13/lecture_89_defi/liquidity_pools/README.md": {
+        "name": "Liquidity Pools",
+        "problem": "Implements liquidity pools, reserves of token pairs locked in smart contracts that provide liquidity for decentralized exchanges and enable automated trading through AMMs.",
+        "intuition": "Like shared reserves: Liquidity Pools are like shared reserves of tokens - multiple people contribute tokens (like contributing to a shared fund) that others can trade against - just as shared reserves enable trading, liquidity pools enable decentralized trading.",
+        "inputs": "Token pairs, liquidity deposits, trading requests, AMM formulas, fee parameters.",
+        "outputs": "Liquidity pools, LP tokens, trading liquidity, price discovery, trading fees, yield.",
+        "steps": [
+            "Create: create liquidity pool for token pair.",
+            "Deposit: liquidity providers deposit both tokens.",
+            "Receive: receive LP tokens representing share.",
+            "Trade: users trade against pool.",
+            "Update: update pool balances after trades.",
+            "Price: price determined by pool ratio.",
+            "Fee: collect trading fees.",
+            "Distribute: distribute fees to LPs.",
+            "Remove: LPs remove liquidity.",
+            "Burn: burn LP tokens on removal."
+        ],
+        "example": "Liquidity Pools: pool: ETH/USDC → deposit: LP deposits 10 ETH + 20,000 USDC → receive: LP tokens → trade: user swaps 1 ETH → update: pool now 11 ETH, 18,182 USDC → fee: 0.3% fee collected → result: LP earns fees → Liquidity Pools operational.",
+        "time_complexity": "O(1) for pool operations (constant time AMM calculations).",
+        "space_complexity": "O(p) where p is number of pools (pool storage).",
+        "strengths": [
+            "Liquidity: provides constant liquidity for trading.",
+            "Accessibility: easy to provide liquidity.",
+            "Yield: LPs earn trading fees."
+        ],
+        "weaknesses": [
+            "Impermanent loss: LPs face impermanent loss risk.",
+            "Slippage: large trades cause slippage.",
+            "Concentration: liquidity may be concentrated in few pools."
+        ],
+        "alternatives": ["Order Books", "Centralized Exchanges", "Other Liquidity Mechanisms", "Hybrid Approaches"],
+        "explanation": "Implements liquidity pools, reserves of token pairs locked in smart contracts that provide liquidity for decentralized exchanges and enable automated trading through AMMs."
+    },
+    "semester_13/lecture_89_defi/stablecoins/README.md": {
+        "name": "Stablecoins",
+        "problem": "Implements stablecoins, cryptocurrencies designed to maintain stable value (typically pegged to fiat currencies like USD), providing price stability for DeFi applications and serving as a medium of exchange.",
+        "intuition": "Like stable currency: Stablecoins are like stable currency - instead of volatile crypto (like stocks), stablecoins maintain stable value (like dollars) - just as stable currency enables stable transactions, stablecoins enable stable DeFi transactions.",
+        "inputs": "Minting requests, redemption requests, collateral, peg mechanisms, stability parameters.",
+        "outputs": "Stablecoins, stable value, collateral management, minting/burning, peg maintenance.",
+        "steps": [
+            "Collateralize: deposit collateral (fiat, crypto, algorithmic).",
+            "Mint: mint stablecoins against collateral.",
+            "Peg: maintain peg to target value (e.g., $1).",
+            "Trade: stablecoins trade at stable price.",
+            "Redeem: redeem stablecoins for collateral.",
+            "Burn: burn stablecoins on redemption.",
+            "Adjust: adjust supply to maintain peg.",
+            "Stabilize: use mechanisms to stabilize price.",
+            "Audit: audit collateral reserves.",
+            "Govern: govern stablecoin parameters."
+        ],
+        "example": "Stablecoins: type: USDC (fiat-collateralized) → deposit: deposit $1000 USD → mint: mint 1000 USDC → peg: maintains $1 peg → trade: use in DeFi → redeem: redeem 1000 USDC for $1000 USD → result: stable value maintained → Stablecoins operational.",
+        "time_complexity": "O(1) for minting/redemption (constant time operations).",
+        "space_complexity": "O(s + c) where s is supply, c is collateral (stablecoin and collateral storage).",
+        "strengths": [
+            "Stability: provides price stability.",
+            "Utility: enables stable DeFi transactions.",
+            "Accessibility: accessible to anyone."
+        ],
+        "weaknesses": [
+            "Trust: requires trust in issuer (for fiat-backed).",
+            "Peg: maintaining peg can be challenging.",
+            "Regulation: regulatory uncertainty."
+        ],
+        "alternatives": ["Volatile Cryptocurrencies", "Fiat Currency", "Other Stable Assets", "Hybrid Approaches"],
+        "explanation": "Implements stablecoins, cryptocurrencies designed to maintain stable value (typically pegged to fiat currencies like USD), providing price stability for DeFi applications and serving as a medium of exchange."
+    },
+    "semester_13/lecture_89_defi/yield_farming/README.md": {
+        "name": "Yield Farming",
+        "problem": "Implements yield farming strategies that maximize returns by moving assets between different DeFi protocols to earn the highest yields, incentivizing liquidity provision and protocol usage.",
+        "intuition": "Like optimizing returns: Yield Farming is like optimizing investment returns - you move money between different investments (DeFi protocols) to earn the highest interest - just as you optimize investment returns, yield farmers optimize DeFi returns.",
+        "inputs": "Assets, DeFi protocols, yield rates, liquidity pools, farming strategies, reward tokens.",
+        "outputs": "Optimized yields, farming rewards, LP tokens, protocol tokens, maximized returns, compound yields.",
+        "steps": [
+            "Analyze: analyze yield rates across protocols.",
+            "Select: select highest yield opportunities.",
+            "Deposit: deposit assets into protocols.",
+            "Farm: farm yield and rewards.",
+            "Compound: compound rewards for higher yields.",
+            "Monitor: monitor yield rates.",
+            "Reallocate: reallocate to better opportunities.",
+            "Harvest: harvest rewards.",
+            "Optimize: optimize farming strategy.",
+            "Manage: manage risks and gas costs."
+        ],
+        "example": "Yield Farming: analyze: Protocol A: 10% APY, Protocol B: 15% APY → deposit: deposit into Protocol B → farm: earn 15% APY + rewards → compound: reinvest rewards → result: optimized yield → Yield Farming successful.",
+        "time_complexity": "O(p) where p is protocols (analysis and optimization time).",
+        "space_complexity": "O(a + p) where a is assets, p is positions (asset and position storage).",
+        "strengths": [
+            "Returns: maximizes returns through optimization.",
+            "Incentives: incentivizes protocol usage.",
+            "Flexibility: flexible farming strategies."
+        ],
+        "weaknesses": [
+            "Risk: high risk, smart contract risks.",
+            "Gas: gas costs for frequent reallocation.",
+            "Complexity: requires understanding multiple protocols."
+        ],
+        "alternatives": ["Single Protocol", "Traditional Investing", "HODLing", "Passive Strategies"],
+        "explanation": "Implements yield farming strategies that maximize returns by moving assets between different DeFi protocols to earn the highest yields, incentivizing liquidity provision and protocol usage."
+    },
+    "semester_13/lecture_89_defi/staking/README.md": {
+        "name": "Staking",
+        "problem": "Implements staking mechanisms where users lock cryptocurrencies to support blockchain network operations (validation, security) and earn rewards, providing network security and token holder incentives.",
+        "intuition": "Like earning interest for supporting: Staking is like earning interest for supporting a network - you lock your crypto (like depositing money) to help secure the network, and you earn rewards - just as you earn interest for deposits, stakers earn rewards for supporting networks.",
+        "inputs": "Cryptocurrencies, staking amounts, validators, staking periods, reward rates, network parameters.",
+        "outputs": "Staked assets, staking rewards, network security, validator support, locked tokens, yield.",
+        "steps": [
+            "Select: select validator or stake directly.",
+            "Stake: lock cryptocurrencies for staking.",
+            "Delegate: delegate to validator if needed.",
+            "Validate: validator validates transactions.",
+            "Earn: earn staking rewards.",
+            "Compound: compound rewards if possible.",
+            "Monitor: monitor validator performance.",
+            "Unstake: unstake after lock period.",
+            "Withdraw: withdraw staked assets.",
+            "Manage: manage staking portfolio."
+        ],
+        "example": "Staking: network: Ethereum 2.0 → stake: stake 32 ETH → validate: validator validates blocks → earn: earn ~5% APY staking rewards → unstake: unstake after lock period → result: earned staking rewards → Staking successful.",
+        "time_complexity": "O(1) for staking operations (constant time smart contract operations).",
+        "space_complexity": "O(s + v) where s is staked amount, v is validators (staking and validator storage).",
+        "strengths": [
+            "Rewards: earn passive income through staking.",
+            "Security: supports network security.",
+            "Participation: enables token holder participation."
+        ],
+        "weaknesses": [
+            "Lock: assets are locked during staking period.",
+            "Risk: validator slashing risks.",
+            "Minimum: may require minimum staking amounts."
+        ],
+        "alternatives": ["No Staking", "Trading", "Lending", "Other Yield Strategies"],
+        "explanation": "Implements staking mechanisms where users lock cryptocurrencies to support blockchain network operations (validation, security) and earn rewards, providing network security and token holder incentives."
+    },
+    "semester_13/lecture_89_defi/governance/README.md": {
+        "name": "DeFi Governance",
+        "problem": "Implements decentralized governance mechanisms for DeFi protocols, enabling token holders to vote on protocol changes, parameter updates, and treasury management through on-chain voting.",
+        "intuition": "Like democratic governance: DeFi Governance is like democratic governance - token holders vote (like citizens voting) on protocol decisions - just as democracy enables collective decision-making, DeFi governance enables decentralized protocol management.",
+        "inputs": "Governance tokens, proposals, voting power, quorum requirements, execution parameters.",
+        "outputs": "Governance decisions, protocol updates, executed proposals, treasury management, parameter changes.",
+        "steps": [
+            "Propose: submit governance proposal.",
+            "Discuss: discuss proposal in forums.",
+            "Vote: token holders vote on proposal.",
+            "Count: count votes weighted by token amount.",
+            "Quorum: check if quorum reached.",
+            "Execute: execute proposal if passed.",
+            "Implement: implement protocol changes.",
+            "Monitor: monitor proposal execution.",
+            "Govern: govern protocol parameters.",
+            "Iterate: iterate governance process."
+        ],
+        "example": "DeFi Governance: proposal: increase interest rate → discuss: community discussion → vote: 60% vote yes, 40% vote no → quorum: quorum reached → execute: proposal executed → result: interest rate increased → DeFi Governance successful.",
+        "time_complexity": "O(v) where v is voters (voting and counting time).",
+        "space_complexity": "O(p + v) where p is proposals, v is votes (proposal and vote storage).",
+        "strengths": [
+            "Decentralization: enables decentralized protocol management.",
+            "Participation: enables token holder participation.",
+            "Transparency: transparent voting and execution."
+        ],
+        "weaknesses": [
+            "Participation: low voter participation common.",
+            "Complexity: governance can be complex.",
+            "Manipulation: potential for vote manipulation."
+        ],
+        "alternatives": ["Centralized Governance", "No Governance", "Off-Chain Governance", "Hybrid Governance"],
+        "explanation": "Implements decentralized governance mechanisms for DeFi protocols, enabling token holders to vote on protocol changes, parameter updates, and treasury management through on-chain voting."
+    },
+    "semester_13/lecture_89_defi/insurance/README.md": {
+        "name": "DeFi Insurance",
+        "problem": "Implements decentralized insurance protocols that provide coverage for DeFi risks (smart contract bugs, hacks, protocol failures) through peer-to-peer insurance pools and automated claims processing.",
+        "intuition": "Like insurance but decentralized: DeFi Insurance is like insurance but on blockchain - you pay premiums (like insurance premiums) to get coverage for DeFi risks, and claims are processed automatically - just as insurance protects against risks, DeFi insurance protects against DeFi risks.",
+        "inputs": "Coverage requests, premiums, insurance pools, claims, risk assessments, payout parameters.",
+        "outputs": "Insurance coverage, claims payouts, risk protection, insurance pools, premium payments, coverage terms.",
+        "steps": [
+            "Assess: assess risk and coverage needs.",
+            "Purchase: purchase insurance coverage.",
+            "Pay: pay insurance premiums.",
+            "Pool: premiums go to insurance pool.",
+            "Cover: coverage active during policy period.",
+            "Claim: submit claim if covered event occurs.",
+            "Verify: verify claim validity.",
+            "Payout: payout from insurance pool.",
+            "Renew: renew coverage if needed.",
+            "Manage: manage insurance portfolio."
+        ],
+        "example": "DeFi Insurance: protocol: cover smart contract hack risk → purchase: buy $10,000 coverage → pay: pay 2% premium ($200) → claim: protocol hacked → verify: claim verified → payout: receive $10,000 payout → result: risk protected → DeFi Insurance successful.",
+        "time_complexity": "O(c) where c is claims (claim processing time).",
+        "space_complexity": "O(p + c) where p is policies, c is claims (policy and claim storage).",
+        "strengths": [
+            "Protection: protects against DeFi risks.",
+            "Decentralization: decentralized insurance model.",
+            "Transparency: transparent claims processing."
+        ],
+        "weaknesses": [
+            "Coverage: limited coverage options.",
+            "Claims: claims processing can be slow.",
+            "Adoption: still early stage, limited adoption."
+        ],
+        "alternatives": ["No Insurance", "Traditional Insurance", "Self-Insurance", "Hybrid Approaches"],
+        "explanation": "Implements decentralized insurance protocols that provide coverage for DeFi risks (smart contract bugs, hacks, protocol failures) through peer-to-peer insurance pools and automated claims processing."
+    },
+    "semester_13/lecture_89_defi/aggregators/README.md": {
+        "name": "DeFi Aggregators",
+        "problem": "Implements DeFi aggregators that combine multiple DeFi protocols into single interfaces, optimizing for best rates, lowest gas costs, and providing unified access to DeFi services.",
+        "intuition": "Like comparison shopping: DeFi Aggregators are like comparison shopping sites - they compare rates across multiple protocols (like comparing prices) and find the best deals - just as aggregators help you find best prices, DeFi aggregators help you find best DeFi rates.",
+        "inputs": "User requests, protocol data, rates, gas costs, optimization parameters, routing strategies.",
+        "outputs": "Optimized transactions, best rates, aggregated services, unified interfaces, gas savings, route optimization.",
+        "steps": [
+            "Query: query rates from multiple protocols.",
+            "Compare: compare rates and costs.",
+            "Optimize: optimize for best rate or lowest cost.",
+            "Route: route transaction to best protocol(s).",
+            "Split: split transaction across protocols if beneficial.",
+            "Execute: execute optimized transaction.",
+            "Aggregate: aggregate results.",
+            "Present: present unified interface.",
+            "Monitor: monitor protocol changes.",
+            "Update: update optimization strategies."
+        ],
+        "example": "DeFi Aggregators: request: swap 10 ETH for USDC → query: check rates on Uniswap, Sushiswap, Curve → compare: Uniswap: best rate → route: route to Uniswap → execute: execute swap → result: best rate obtained → DeFi Aggregators successful.",
+        "time_complexity": "O(p) where p is protocols (query and comparison time).",
+        "space_complexity": "O(p + r) where p is protocol data, r is routes (protocol and routing storage).",
+        "strengths": [
+            "Optimization: finds best rates automatically.",
+            "Convenience: single interface for multiple protocols.",
+            "Savings: saves gas and improves rates."
+        ],
+        "weaknesses": [
+            "Complexity: aggregator logic can be complex.",
+            "Dependencies: depends on multiple protocols.",
+            "Gas: may add gas overhead."
+        ],
+        "alternatives": ["Direct Protocol Access", "Manual Comparison", "Single Protocol", "Hybrid Approaches"],
+        "explanation": "Implements DeFi aggregators that combine multiple DeFi protocols into single interfaces, optimizing for best rates, lowest gas costs, and providing unified access to DeFi services."
+    },
+    "semester_13/lecture_89_defi/options/README.md": {
+        "name": "DeFi Options",
+        "problem": "Implements decentralized options trading protocols that enable users to buy and sell options contracts (calls, puts) on cryptocurrencies, providing price protection and speculation opportunities.",
+        "intuition": "Like options but decentralized: DeFi Options are like traditional options but on blockchain - you buy rights (like buying options) to buy/sell crypto at specific prices, without brokers - just as options enable price speculation, DeFi options enable decentralized speculation.",
+        "inputs": "Options contracts, strike prices, expiration dates, premiums, underlying assets, option types.",
+        "outputs": "Options positions, premiums, payouts, price protection, speculation opportunities, option settlements.",
+        "steps": [
+            "Create: create options contract (call/put).",
+            "Set: set strike price and expiration.",
+            "Price: price option premium.",
+            "Buy: buyer purchases option.",
+            "Sell: seller writes option.",
+            "Hold: hold option until expiration.",
+            "Exercise: exercise option if profitable.",
+            "Settle: settle option at expiration.",
+            "Payout: payout profits/losses.",
+            "Trade: trade options on secondary market."
+        ],
+        "example": "DeFi Options: contract: ETH call option, strike $3000, expiry 30 days → buy: buy option for $100 premium → price: ETH price increases to $3500 → exercise: exercise option → result: profit $400 ($500 - $100 premium) → DeFi Options successful.",
+        "time_complexity": "O(1) for option operations (constant time contract operations).",
+        "space_complexity": "O(o + p) where o is options, p is positions (option and position storage).",
+        "strengths": [
+            "Flexibility: provides flexible trading strategies.",
+            "Protection: enables price protection.",
+            "Accessibility: accessible to anyone with crypto."
+        ],
+        "weaknesses": [
+            "Complexity: options are complex financial instruments.",
+            "Risk: high risk, potential for total loss.",
+            "Liquidity: may have limited liquidity."
+        ],
+        "alternatives": ["Traditional Options", "Futures", "Spot Trading", "No Options"],
+        "explanation": "Implements decentralized options trading protocols that enable users to buy and sell options contracts (calls, puts) on cryptocurrencies, providing price protection and speculation opportunities."
     }
 }
 
