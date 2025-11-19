@@ -4,37 +4,48 @@
    Model Registry
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements model registry algorithm.
+   Provides a centralized repository for storing, versioning, and managing AI models, enabling model discovery, tracking, and lifecycle management.
 
 3. **Intuition (plain-language explanation)**  
-   Model Registry is a fundamental algorithm in computer science.
+   Like a library catalog: Model Registry is like a library catalog for AI models - it stores information about all models (metadata, versions), makes them discoverable (search, browse), and tracks their history (versions, usage) - just as a library catalog helps you find and track books, a model registry helps you find and track AI models.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Model artifacts, model metadata, version information, performance metrics, deployment status.  
+   - Output: Registered models, model versions, searchable catalog, model metadata, lifecycle tracking.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Register: register models with metadata (name, version, description).
+2. Store: store model artifacts (weights, code, configs).
+3. Version: track model versions and changes.
+4. Tag: tag models with labels (environment, purpose).
+5. Search: enable search and discovery of models.
+6. Link: link models to datasets and experiments.
+7. Track: track model usage and deployments.
+8. Compare: compare model versions and performance.
+9. Promote: promote models through stages (dev, staging, prod).
+10. Archive: archive deprecated models.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Model Registry applied to sample data.
+   Model Registry: model: sentiment-analysis-v1.2 → register: metadata, artifacts → version: track v1.0, v1.1, v1.2 → tag: production, NLP → search: find by tag or name → link: to training dataset → track: deployed in 3 environments → compare: v1.2 vs v1.1 performance → Model Registry operational.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(1) for registration, O(log n) for search where n is number of models.  
+   - Space: O(m + a) where m is metadata storage, a is artifact storage (model files).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Organization: organizes and centralizes model management.
+- Discovery: enables easy discovery of models.
+- Tracking: tracks model lifecycle and usage.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Storage: requires storage for model artifacts.
+- Maintenance: requires maintenance and curation.
+- Complexity: can become complex with many models.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: File System Storage, Version Control, Database Storage, Cloud Storage
 
 11. **30-second explanation (your own words)**  
-    Model Registry solves computational problems efficiently.
+    Provides a centralized repository for storing, versioning, and managing AI models, enabling model discovery, tracking, and lifecycle management.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

@@ -11479,6 +11479,482 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Naive String Matching", "Rabin-Karp", "Boyer-Moore", "Aho-Corasick"],
         "explanation": "Finds all occurrences of a pattern string in a text string efficiently by preprocessing the pattern to avoid redundant comparisons, achieving linear time complexity."
+    },
+    "semester_09/lecture_60_system_design_advanced/api_gateway/README.md": {
+        "name": "API Gateway",
+        "problem": "Provides a single entry point for client requests to multiple backend services, handling routing, authentication, rate limiting, and other cross-cutting concerns, simplifying client interactions and service management.",
+        "intuition": "Like a receptionist: API Gateway is like a receptionist at a building - instead of clients going directly to each office (service), they go to the receptionist (gateway) who routes them to the right office, checks their ID (authentication), and handles common tasks (rate limiting, logging) - this makes it easier for clients (they only need to know one address) and easier to manage the building (centralized control).",
+        "inputs": "Client requests, routing rules, authentication tokens, rate limit policies, service endpoints.",
+        "outputs": "Routed requests, authenticated sessions, rate-limited traffic, aggregated responses, service calls.",
+        "steps": [
+            "Receive request: receive client request at gateway.",
+            "Authenticate: authenticate client (validate token, check credentials).",
+            "Authorize: authorize request (check permissions, policies).",
+            "Rate limit: check and enforce rate limits.",
+            "Route: route request to appropriate backend service based on URL/path.",
+            "Transform: optionally transform request (protocol conversion, data format).",
+            "Forward: forward request to backend service.",
+            "Aggregate: optionally aggregate responses from multiple services.",
+            "Transform response: transform response if needed.",
+            "Return: return response to client."
+        ],
+        "example": "API Gateway: client request: GET /api/users/123 → gateway: authenticate token → authorize: check permissions → rate limit: check quota → route: forward to user-service → service: returns user data → gateway: transform response → return: JSON response to client → API Gateway operational.",
+        "time_complexity": "O(1) for routing and basic operations, O(n) for aggregation where n is number of services.",
+        "space_complexity": "O(r + c) where r is routing rules, c is cache size (request/response caching).",
+        "strengths": [
+            "Simplification: simplifies client interactions with multiple services.",
+            "Centralization: centralizes cross-cutting concerns (auth, rate limiting).",
+            "Flexibility: enables service composition and aggregation."
+        ],
+        "weaknesses": [
+            "Single point of failure: gateway failure affects all services.",
+            "Latency: adds latency to requests (extra hop).",
+            "Complexity: gateway can become complex with many features."
+        ],
+        "alternatives": ["Direct Service Access", "Service Mesh", "Load Balancer", "Reverse Proxy"],
+        "explanation": "Provides a single entry point for client requests to multiple backend services, handling routing, authentication, rate limiting, and other cross-cutting concerns, simplifying client interactions and service management."
+    },
+    "semester_09/lecture_60_system_design_advanced/cqrs_advanced/README.md": {
+        "name": "Advanced CQRS (Command Query Responsibility Segregation)",
+        "problem": "Separates read and write operations into different models and data stores, enabling independent scaling, optimization, and evolution of read and write sides for complex domain models.",
+        "intuition": "Like separate libraries: Advanced CQRS is like having separate libraries for reading and writing - the reading library (query side) is optimized for fast lookups with indexes and denormalized data, while the writing library (command side) is optimized for data integrity and business rules - they're separate but synchronized, allowing each to be optimized for its purpose without compromising the other.",
+        "inputs": "Commands (writes), queries (reads), domain events, read models, write models, synchronization mechanisms.",
+        "outputs": "Separated read/write models, optimized queries, validated commands, synchronized data, scalable architecture.",
+        "steps": [
+            "Separate models: create separate read and write models.",
+            "Command side: handle commands (writes) through command handlers.",
+            "Validate: validate commands using business rules.",
+            "Execute: execute commands and update write model.",
+            "Publish events: publish domain events after command execution.",
+            "Query side: handle queries (reads) through query handlers.",
+            "Project: project events to read models (eventual consistency).",
+            "Optimize: optimize read models for query performance (denormalization, indexes).",
+            "Synchronize: synchronize read and write models through events.",
+            "Scale: scale read and write sides independently."
+        ],
+        "example": "Advanced CQRS: command: CreateOrder → command handler: validate, execute → write model: update order aggregate → event: OrderCreated → query side: project event → read model: update order view (denormalized) → query: GetOrders → query handler: read from optimized read model → result: fast queries, optimized writes → Advanced CQRS operational.",
+        "time_complexity": "O(1) for writes (command), O(log n) or O(1) for reads (optimized query models).",
+        "space_complexity": "O(w + r) where w is write model size, r is read model size (separate storage).",
+        "strengths": [
+            "Scalability: enables independent scaling of read and write operations.",
+            "Optimization: allows optimization of each side for its purpose.",
+            "Flexibility: read models can be optimized for specific queries."
+        ],
+        "weaknesses": [
+            "Complexity: more complex than traditional CRUD architecture.",
+            "Consistency: eventual consistency between read and write models.",
+            "Synchronization: requires event handling and synchronization logic."
+        ],
+        "alternatives": ["Traditional CRUD", "Event Sourcing", "Read Replicas", "CQRS Basic"],
+        "explanation": "Separates read and write operations into different models and data stores, enabling independent scaling, optimization, and evolution of read and write sides for complex domain models."
+    },
+    "semester_09/lecture_60_system_design_advanced/event_driven_architecture/README.md": {
+        "name": "Event-Driven Architecture",
+        "problem": "Designs systems where components communicate through events, enabling loose coupling, scalability, and responsiveness to changes, making systems more flexible and resilient.",
+        "intuition": "Like a news broadcast: Event-Driven Architecture is like a news broadcast system - when something happens (event occurs), it's broadcast to everyone who's interested (subscribers) - they can react independently without knowing about each other - just as news stations broadcast events and listeners tune in to what they care about, event-driven systems broadcast events and services react to what they're interested in, creating a loosely coupled, responsive system.",
+        "inputs": "Events, event producers, event consumers, event bus/broker, event schemas, routing rules.",
+        "outputs": "Published events, consumed events, reactive behaviors, decoupled services, scalable system.",
+        "steps": [
+            "Define events: define event types and schemas.",
+            "Publish: producers publish events to event bus.",
+            "Route: event bus routes events to interested consumers.",
+            "Subscribe: consumers subscribe to event types they care about.",
+            "Receive: consumers receive events from event bus.",
+            "Process: consumers process events and perform actions.",
+            "React: consumers react to events independently.",
+            "Scale: scale producers and consumers independently.",
+            "Monitor: monitor event flow and processing.",
+            "Handle failures: handle event processing failures (retry, dead letter queue)."
+        ],
+        "example": "Event-Driven Architecture: user registers → producer: publish UserRegistered event → event bus: route to subscribers → email service: subscribe, send welcome email → analytics service: subscribe, track registration → notification service: subscribe, send notification → services react independently → Event-Driven Architecture operational.",
+        "time_complexity": "O(1) for event publishing, O(n) for routing where n is number of subscribers.",
+        "space_complexity": "O(e + s) where e is event storage, s is subscriber state (event queue per subscriber).",
+        "strengths": [
+            "Decoupling: loose coupling between producers and consumers.",
+            "Scalability: enables horizontal scaling of consumers.",
+            "Responsiveness: systems react to events in real-time."
+        ],
+        "weaknesses": [
+            "Complexity: event flow can be complex to understand and debug.",
+            "Consistency: eventual consistency challenges.",
+            "Event ordering: maintaining event order can be challenging."
+        ],
+        "alternatives": ["Request-Response", "Message Queue", "Publish-Subscribe", "Synchronous Communication"],
+        "explanation": "Designs systems where components communicate through events, enabling loose coupling, scalability, and responsiveness to changes, making systems more flexible and resilient."
+    },
+    "semester_09/lecture_60_system_design_advanced/event_sourcing_advanced/README.md": {
+        "name": "Advanced Event Sourcing",
+        "problem": "Stores all changes to application state as a sequence of events, enabling time travel, audit trails, and rebuilding state from events, providing complete history and flexibility.",
+        "intuition": "Like a video recording: Advanced Event Sourcing is like recording everything that happens in a video - instead of just taking snapshots (current state), you record every action (event) - you can replay the video (replay events) to see any point in time, or fast-forward to the current state - just as video recordings let you see history and replay events, event sourcing lets you see all changes and rebuild state from events.",
+        "inputs": "Domain events, event store, aggregates, snapshots, replay mechanisms, projection logic.",
+        "outputs": "Event stream, reconstructed state, historical views, audit trail, time-travel queries.",
+        "steps": [
+            "Capture events: capture all state changes as events.",
+            "Store: store events in event store (append-only log).",
+            "Replay: replay events to rebuild current state.",
+            "Snapshot: optionally create snapshots for faster replay.",
+            "Project: project events to read models for queries.",
+            "Query: query current state or historical state.",
+            "Time travel: query state at any point in time.",
+            "Audit: use event stream as audit trail.",
+            "Optimize: optimize event storage and replay performance.",
+            "Version: handle event schema evolution."
+        ],
+        "example": "Advanced Event Sourcing: command: TransferMoney → event: MoneyTransferred → store: append to event stream → replay: replay all events to get current balance → query: get balance at any time → audit: see all money transfers → time travel: see balance yesterday → Advanced Event Sourcing operational.",
+        "time_complexity": "O(n) for replay where n is number of events (optimized with snapshots to O(k) where k is events since snapshot).",
+        "space_complexity": "O(e) where e is total events stored (append-only, grows over time).",
+        "strengths": [
+            "History: complete history of all changes.",
+            "Audit: natural audit trail from events.",
+            "Flexibility: can rebuild state and create new projections."
+        ],
+        "weaknesses": [
+            "Storage: event store grows over time.",
+            "Replay: replaying many events can be slow.",
+            "Complexity: more complex than traditional state storage."
+        ],
+        "alternatives": ["Traditional State Storage", "Snapshot-Based", "Event Log", "CQRS"],
+        "explanation": "Stores all changes to application state as a sequence of events, enabling time travel, audit trails, and rebuilding state from events, providing complete history and flexibility."
+    },
+    "semester_09/lecture_60_system_design_advanced/microservices_architecture/README.md": {
+        "name": "Microservices Architecture",
+        "problem": "Structures applications as a collection of small, independent services that communicate over well-defined APIs, enabling independent development, deployment, and scaling of services.",
+        "intuition": "Like a team of specialists: Microservices Architecture is like a team of specialists where each person (service) has a specific expertise (domain) and works independently - they communicate when needed (API calls) but can work on their own schedule (independent deployment) - just as a team of specialists can work faster and more flexibly than one person doing everything, microservices can develop and scale faster than monolithic applications.",
+        "inputs": "Service definitions, API contracts, service boundaries, communication protocols, deployment units.",
+        "outputs": "Independent services, service APIs, distributed system, scalable architecture, flexible deployment.",
+        "steps": [
+            "Identify boundaries: identify service boundaries (domain-driven design).",
+            "Design services: design small, focused services (single responsibility).",
+            "Define APIs: define APIs for service communication.",
+            "Implement: implement services independently.",
+            "Deploy: deploy services independently.",
+            "Communicate: services communicate via APIs (REST, gRPC, messaging).",
+            "Scale: scale services independently based on load.",
+            "Monitor: monitor services independently.",
+            "Update: update services independently without affecting others.",
+            "Orchestrate: orchestrate services for complex operations."
+        ],
+        "example": "Microservices: user-service (user management) → order-service (orders) → payment-service (payments) → each service: independent, deployable, scalable → communicate: via REST APIs → scale: user-service scales for login spikes → update: update payment-service without affecting others → Microservices Architecture operational.",
+        "time_complexity": "O(1) per service operation, O(n) for orchestration where n is number of services.",
+        "space_complexity": "O(s) where s is total service storage (distributed across services).",
+        "strengths": [
+            "Independence: services can be developed and deployed independently.",
+            "Scalability: scale services independently based on needs.",
+            "Technology diversity: use different technologies per service."
+        ],
+        "weaknesses": [
+            "Complexity: distributed system complexity (networking, coordination).",
+            "Data consistency: maintaining consistency across services is challenging.",
+            "Operational overhead: more services to manage and monitor."
+        ],
+        "alternatives": ["Monolithic Architecture", "Service-Oriented Architecture", "Modular Monolith", "Serverless"],
+        "explanation": "Structures applications as a collection of small, independent services that communicate over well-defined APIs, enabling independent development, deployment, and scaling of services."
+    },
+    "semester_09/lecture_60_system_design_advanced/service_mesh/README.md": {
+        "name": "Service Mesh",
+        "problem": "Provides a dedicated infrastructure layer for handling service-to-service communication, managing traffic, security, and observability without modifying application code.",
+        "intuition": "Like a traffic management system: Service Mesh is like a traffic management system for services - instead of each service handling its own traffic rules (routing, security, monitoring), there's a dedicated system (mesh) that manages all service-to-service communication - just as traffic lights and signs manage road traffic, a service mesh manages service traffic, making it easier to control, secure, and monitor all service communications.",
+        "inputs": "Service deployments, traffic policies, security policies, routing rules, observability config.",
+        "outputs": "Managed service communication, secured traffic, observable traffic, load-balanced requests, resilient connections.",
+        "steps": [
+            "Deploy: deploy services with sidecar proxies (service mesh).",
+            "Configure: configure service mesh with policies.",
+            "Route: mesh routes traffic between services.",
+            "Secure: mesh handles mTLS and authentication.",
+            "Load balance: mesh load balances requests.",
+            "Retry: mesh handles retries and circuit breaking.",
+            "Monitor: mesh collects metrics and traces.",
+            "Policy: enforce traffic and security policies.",
+            "Update: update policies without changing services.",
+            "Observe: observe service communication through mesh."
+        ],
+        "example": "Service Mesh: service A → sidecar proxy → mesh → sidecar proxy → service B → mesh: routes, secures (mTLS), load balances, retries, monitors → services: focus on business logic → Service Mesh operational.",
+        "time_complexity": "O(1) for routing per request, O(n) for policy evaluation where n is policy rules.",
+        "space_complexity": "O(p + s) where p is proxy overhead per service, s is mesh control plane storage.",
+        "strengths": [
+            "Separation: separates communication concerns from business logic.",
+            "Consistency: consistent communication patterns across services.",
+            "Observability: built-in observability for all service communication."
+        ],
+        "weaknesses": [
+            "Overhead: adds latency and resource overhead (sidecar proxies).",
+            "Complexity: service mesh itself adds operational complexity.",
+            "Learning curve: requires understanding mesh concepts and tools."
+        ],
+        "alternatives": ["Direct Service Communication", "API Gateway", "Load Balancer", "Service Discovery"],
+        "explanation": "Provides a dedicated infrastructure layer for handling service-to-service communication, managing traffic, security, and observability without modifying application code."
+    },
+    "semester_09/lecture_60_system_design_advanced/container_orchestration/README.md": {
+        "name": "Container Orchestration",
+        "problem": "Automates deployment, scaling, and management of containerized applications across clusters, handling scheduling, health monitoring, and resource allocation.",
+        "intuition": "Like an automated factory manager: Container Orchestration is like an automated factory manager for containers - it decides where to place containers (scheduling), how many to run (scaling), monitors their health, and replaces broken ones - just as a factory manager coordinates workers and machines, container orchestration coordinates containers across machines, making sure everything runs smoothly and efficiently.",
+        "inputs": "Container images, deployment specs, resource requirements, scaling policies, health checks.",
+        "outputs": "Deployed containers, scaled services, managed resources, monitored health, resilient applications.",
+        "steps": [
+            "Define: define application as container specs (pods, deployments).",
+            "Schedule: scheduler places containers on nodes based on resources.",
+            "Deploy: deploy containers to cluster nodes.",
+            "Monitor: monitor container health and resource usage.",
+            "Scale: scale containers up/down based on demand.",
+            "Restart: restart failed containers automatically.",
+            "Update: perform rolling updates without downtime.",
+            "Balance: balance load across containers.",
+            "Manage: manage resources (CPU, memory) per container.",
+            "Orchestrate: orchestrate complex multi-container applications."
+        ],
+        "example": "Container Orchestration: app: web service → define: deployment spec (3 replicas) → schedule: place on 3 nodes → deploy: containers running → monitor: health checks → scale: scale to 5 replicas under load → update: rolling update to new version → Container Orchestration operational.",
+        "time_complexity": "O(n) for scheduling where n is number of containers, O(1) for individual operations.",
+        "space_complexity": "O(c + n) where c is cluster size, n is number of containers (distributed storage).",
+        "strengths": [
+            "Automation: automates deployment and management tasks.",
+            "Scalability: enables easy scaling of applications.",
+            "Resilience: automatically handles failures and restarts."
+        ],
+        "weaknesses": [
+            "Complexity: orchestration systems can be complex to set up and manage.",
+            "Overhead: orchestration adds resource overhead.",
+            "Learning curve: requires understanding orchestration concepts."
+        ],
+        "alternatives": ["Manual Deployment", "Container Runtimes", "Serverless", "Virtual Machines"],
+        "explanation": "Automates deployment, scaling, and management of containerized applications across clusters, handling scheduling, health monitoring, and resource allocation."
+    },
+    "semester_10/lecture_70_ai_governance/audit_trails/README.md": {
+        "name": "Audit Trails for AI Systems",
+        "problem": "Maintains comprehensive logs of all AI system activities, decisions, and data access, enabling accountability, compliance, and forensic analysis of AI operations.",
+        "intuition": "Like a security camera system: Audit Trails for AI are like security cameras that record everything - they log who did what, when, and why (all AI activities, decisions, data access) - just as security cameras provide evidence and accountability, audit trails provide a complete record of AI operations, enabling you to trace decisions, prove compliance, and investigate issues.",
+        "inputs": "AI operations, user actions, model decisions, data access, system events, metadata.",
+        "outputs": "Audit logs, activity records, decision traces, compliance reports, forensic data.",
+        "steps": [
+            "Capture: capture all relevant activities (model invocations, data access, decisions).",
+            "Log: log activities with metadata (timestamp, user, context).",
+            "Store: store audit logs securely (immutable, tamper-proof).",
+            "Index: index logs for efficient querying.",
+            "Retain: retain logs according to retention policies.",
+            "Query: query logs for specific activities or time periods.",
+            "Analyze: analyze logs for patterns, anomalies, or compliance.",
+            "Report: generate audit reports for compliance.",
+            "Monitor: monitor audit log generation and storage.",
+            "Protect: protect audit logs from tampering or deletion."
+        ],
+        "example": "Audit Trails: model: credit scoring → invoke: user applies for loan → log: timestamp, user ID, input data hash, model version, decision, confidence → store: immutable log → query: find all decisions by model version → analyze: compliance check → report: audit report generated → Audit Trails operational.",
+        "time_complexity": "O(1) for logging per event, O(log n) for querying where n is number of log entries.",
+        "space_complexity": "O(e) where e is total events logged (grows over time, requires retention policies).",
+        "strengths": [
+            "Accountability: enables accountability for AI decisions.",
+            "Compliance: supports regulatory compliance requirements.",
+            "Forensics: enables investigation of issues and incidents."
+        ],
+        "weaknesses": [
+            "Storage: audit logs require significant storage over time.",
+            "Performance: logging can add overhead to operations.",
+            "Privacy: logs may contain sensitive information."
+        ],
+        "alternatives": ["No Auditing", "Selective Logging", "Event Logging", "Compliance Logging"],
+        "explanation": "Maintains comprehensive logs of all AI system activities, decisions, and data access, enabling accountability, compliance, and forensic analysis of AI operations."
+    },
+    "semester_10/lecture_70_ai_governance/compliance_frameworks/README.md": {
+        "name": "Compliance Frameworks for AI",
+        "problem": "Ensures AI systems comply with regulatory requirements, industry standards, and ethical guidelines through structured frameworks, policies, and controls.",
+        "intuition": "Like building codes: Compliance Frameworks for AI are like building codes for construction - they define rules and standards (regulations, ethical guidelines) that must be followed, and provide ways to check compliance (audits, assessments) - just as buildings must meet codes to be safe and legal, AI systems must meet compliance frameworks to be ethical, legal, and trustworthy.",
+        "inputs": "Regulatory requirements, industry standards, ethical guidelines, AI systems, compliance policies.",
+        "outputs": "Compliance assessments, compliance reports, policy implementations, control measures, certification.",
+        "steps": [
+            "Identify: identify applicable regulations and standards (GDPR, HIPAA, AI ethics).",
+            "Map: map requirements to AI system components.",
+            "Assess: assess current compliance status.",
+            "Implement: implement compliance controls and policies.",
+            "Monitor: monitor compliance continuously.",
+            "Document: document compliance measures and evidence.",
+            "Audit: perform compliance audits.",
+            "Report: generate compliance reports.",
+            "Remediate: remediate compliance gaps.",
+            "Certify: obtain compliance certifications."
+        ],
+        "example": "Compliance Frameworks: regulation: GDPR → assess: data privacy compliance → implement: data minimization, consent management → monitor: continuous compliance monitoring → audit: annual compliance audit → report: compliance report → certify: GDPR compliant → Compliance Frameworks operational.",
+        "time_complexity": "O(r·s) where r is regulations, s is system components (assessment and implementation).",
+        "space_complexity": "O(p + d) where p is policy storage, d is documentation size.",
+        "strengths": [
+            "Legal: ensures legal compliance with regulations.",
+            "Trust: builds trust through demonstrated compliance.",
+            "Risk mitigation: reduces legal and reputational risks."
+        ],
+        "weaknesses": [
+            "Complexity: compliance can be complex and resource-intensive.",
+            "Evolving: regulations evolve, requiring continuous updates.",
+            "Trade-offs: compliance may impact system functionality."
+        ],
+        "alternatives": ["No Compliance Framework", "Ad-Hoc Compliance", "Industry Standards", "Custom Frameworks"],
+        "explanation": "Ensures AI systems comply with regulatory requirements, industry standards, and ethical guidelines through structured frameworks, policies, and controls."
+    },
+    "semester_10/lecture_70_ai_governance/data_governance_ai/README.md": {
+        "name": "Data Governance for AI",
+        "problem": "Establishes policies, processes, and controls for managing AI data throughout its lifecycle, ensuring data quality, privacy, security, and compliance.",
+        "intuition": "Like a library system: Data Governance for AI is like a library system for data - it defines rules for how data is organized (cataloging), who can access it (access control), how it's maintained (quality, updates), and how it's protected (security) - just as libraries ensure books are organized, accessible, and protected, data governance ensures AI data is managed properly throughout its lifecycle.",
+        "inputs": "Data assets, governance policies, data quality rules, privacy requirements, access controls.",
+        "outputs": "Governed data, data catalogs, quality metrics, access policies, compliance reports.",
+        "steps": [
+            "Catalog: catalog all AI data assets (datasets, sources).",
+            "Classify: classify data by sensitivity and purpose.",
+            "Define policies: define data governance policies (quality, privacy, retention).",
+            "Implement controls: implement data quality and access controls.",
+            "Monitor: monitor data quality and usage.",
+            "Protect: protect data (encryption, access control).",
+            "Document: document data lineage and metadata.",
+            "Comply: ensure compliance with data regulations.",
+            "Audit: audit data governance practices.",
+            "Improve: continuously improve data governance."
+        ],
+        "example": "Data Governance: dataset: customer data → catalog: register in data catalog → classify: PII (sensitive) → policy: GDPR compliance, quality standards → control: access control, encryption → monitor: data quality metrics → audit: compliance audit → Data Governance operational.",
+        "time_complexity": "O(d·p) where d is data assets, p is policy checks (cataloging and governance).",
+        "space_complexity": "O(c + m) where c is catalog size, m is metadata storage.",
+        "strengths": [
+            "Quality: ensures data quality for AI systems.",
+            "Compliance: supports regulatory compliance (GDPR, etc.).",
+            "Trust: builds trust through proper data management."
+        ],
+        "weaknesses": [
+            "Overhead: data governance adds overhead to data operations.",
+            "Complexity: can be complex to implement and maintain.",
+            "Balance: balancing governance with agility can be challenging."
+        ],
+        "alternatives": ["No Governance", "Ad-Hoc Data Management", "Lightweight Governance", "Heavy Governance"],
+        "explanation": "Establishes policies, processes, and controls for managing AI data throughout its lifecycle, ensuring data quality, privacy, security, and compliance."
+    },
+    "semester_10/lecture_70_ai_governance/model_governance/README.md": {
+        "name": "Model Governance",
+        "problem": "Establishes policies and processes for managing AI models throughout their lifecycle, ensuring model quality, compliance, and responsible deployment.",
+        "intuition": "Like quality control: Model Governance is like quality control for products - it defines standards (model quality, ethics), processes (development, deployment), and checks (validation, monitoring) to ensure models meet requirements - just as quality control ensures products are safe and meet standards, model governance ensures AI models are ethical, compliant, and perform well.",
+        "inputs": "AI models, governance policies, quality standards, compliance requirements, lifecycle processes.",
+        "outputs": "Governed models, model registry, quality assessments, compliance reports, deployment approvals.",
+        "steps": [
+            "Define policies: define model governance policies (quality, ethics, compliance).",
+            "Register: register models in model registry.",
+            "Validate: validate models against quality standards.",
+            "Approve: approve models for deployment (governance review).",
+            "Deploy: deploy approved models with governance controls.",
+            "Monitor: monitor model performance and behavior.",
+            "Version: manage model versions and updates.",
+            "Retire: retire models when no longer needed.",
+            "Audit: audit model governance practices.",
+            "Improve: continuously improve governance processes."
+        ],
+        "example": "Model Governance: model: credit scoring → register: in model registry → validate: accuracy, fairness, bias → approve: governance review → deploy: with monitoring → monitor: performance, drift → version: track versions → retire: when replaced → Model Governance operational.",
+        "time_complexity": "O(m·p) where m is models, p is policy checks (governance processes).",
+        "space_complexity": "O(r + m) where r is registry size, m is model storage.",
+        "strengths": [
+            "Quality: ensures model quality and performance.",
+            "Compliance: supports regulatory and ethical compliance.",
+            "Accountability: enables accountability for model decisions."
+        ],
+        "weaknesses": [
+            "Overhead: governance adds overhead to model development.",
+            "Complexity: can be complex to implement and maintain.",
+            "Balance: balancing governance with agility can be challenging."
+        ],
+        "alternatives": ["No Governance", "Ad-Hoc Model Management", "Lightweight Governance", "Heavy Governance"],
+        "explanation": "Establishes policies and processes for managing AI models throughout their lifecycle, ensuring model quality, compliance, and responsible deployment."
+    },
+    "semester_10/lecture_70_ai_governance/model_registry/README.md": {
+        "name": "Model Registry",
+        "problem": "Provides a centralized repository for storing, versioning, and managing AI models, enabling model discovery, tracking, and lifecycle management.",
+        "intuition": "Like a library catalog: Model Registry is like a library catalog for AI models - it stores information about all models (metadata, versions), makes them discoverable (search, browse), and tracks their history (versions, usage) - just as a library catalog helps you find and track books, a model registry helps you find and track AI models.",
+        "inputs": "Model artifacts, model metadata, version information, performance metrics, deployment status.",
+        "outputs": "Registered models, model versions, searchable catalog, model metadata, lifecycle tracking.",
+        "steps": [
+            "Register: register models with metadata (name, version, description).",
+            "Store: store model artifacts (weights, code, configs).",
+            "Version: track model versions and changes.",
+            "Tag: tag models with labels (environment, purpose).",
+            "Search: enable search and discovery of models.",
+            "Link: link models to datasets and experiments.",
+            "Track: track model usage and deployments.",
+            "Compare: compare model versions and performance.",
+            "Promote: promote models through stages (dev, staging, prod).",
+            "Archive: archive deprecated models."
+        ],
+        "example": "Model Registry: model: sentiment-analysis-v1.2 → register: metadata, artifacts → version: track v1.0, v1.1, v1.2 → tag: production, NLP → search: find by tag or name → link: to training dataset → track: deployed in 3 environments → compare: v1.2 vs v1.1 performance → Model Registry operational.",
+        "time_complexity": "O(1) for registration, O(log n) for search where n is number of models.",
+        "space_complexity": "O(m + a) where m is metadata storage, a is artifact storage (model files).",
+        "strengths": [
+            "Organization: organizes and centralizes model management.",
+            "Discovery: enables easy discovery of models.",
+            "Tracking: tracks model lifecycle and usage."
+        ],
+        "weaknesses": [
+            "Storage: requires storage for model artifacts.",
+            "Maintenance: requires maintenance and curation.",
+            "Complexity: can become complex with many models."
+        ],
+        "alternatives": ["File System Storage", "Version Control", "Database Storage", "Cloud Storage"],
+        "explanation": "Provides a centralized repository for storing, versioning, and managing AI models, enabling model discovery, tracking, and lifecycle management."
+    },
+    "semester_10/lecture_70_ai_governance/risk_assessment/README.md": {
+        "name": "Risk Assessment for AI Systems",
+        "problem": "Identifies, analyzes, and evaluates risks associated with AI systems, enabling proactive risk management and mitigation strategies.",
+        "intuition": "Like a safety inspection: Risk Assessment for AI is like a safety inspection - you identify potential hazards (risks), assess how likely and severe they are (risk analysis), and determine what to do about them (mitigation) - just as safety inspections prevent accidents, risk assessments prevent AI failures and harms.",
+        "inputs": "AI systems, risk categories, risk factors, impact assessments, likelihood estimates.",
+        "outputs": "Risk assessments, risk registers, risk scores, mitigation plans, risk reports.",
+        "steps": [
+            "Identify: identify potential risks (bias, security, performance, ethical).",
+            "Categorize: categorize risks by type and domain.",
+            "Analyze: analyze risk likelihood and impact.",
+            "Score: score risks (likelihood × impact).",
+            "Prioritize: prioritize risks by score.",
+            "Assess: assess current risk controls.",
+            "Plan: develop risk mitigation plans.",
+            "Implement: implement mitigation measures.",
+            "Monitor: monitor risks and mitigation effectiveness.",
+            "Review: regularly review and update risk assessments."
+        ],
+        "example": "Risk Assessment: AI system: loan approval → identify: bias risk (high), security risk (medium) → analyze: bias likelihood = high, impact = high → score: 9/10 (critical) → mitigate: bias testing, fairness constraints → monitor: ongoing risk monitoring → Risk Assessment operational.",
+        "time_complexity": "O(r·f) where r is risks, f is risk factors (assessment and analysis).",
+        "space_complexity": "O(r + d) where r is risk register size, d is documentation size.",
+        "strengths": [
+            "Proactive: enables proactive risk management.",
+            "Comprehensive: covers multiple risk dimensions.",
+            "Prioritization: helps prioritize risk mitigation efforts."
+        ],
+        "weaknesses": [
+            "Subjectivity: risk assessment can be subjective.",
+            "Evolving: risks evolve as systems and contexts change.",
+            "Coverage: may not identify all possible risks."
+        ],
+        "alternatives": ["No Risk Assessment", "Ad-Hoc Risk Management", "Qualitative Assessment", "Quantitative Assessment"],
+        "explanation": "Identifies, analyzes, and evaluates risks associated with AI systems, enabling proactive risk management and mitigation strategies."
+    },
+    "semester_10/lecture_69_llm_safety/interpretability/README.md": {
+        "name": "Interpretability for LLMs",
+        "problem": "Provides methods to understand and explain LLM behavior, decisions, and internal mechanisms, enabling transparency, debugging, and trust in LLM systems.",
+        "intuition": "Like a transparent engine: Interpretability for LLMs is like making an engine transparent so you can see how it works - you can see which parts (neurons, attention) are active, how they work together (internal mechanisms), and why the engine produces certain outputs (explanations) - just as understanding how an engine works helps you fix and improve it, understanding how LLMs work helps you debug, improve, and trust them.",
+        "inputs": "LLM model, input prompts, model internals, interpretability methods, explanation techniques.",
+        "outputs": "Interpretations, explanations, attention visualizations, feature importance, model insights.",
+        "steps": [
+            "Select method: select interpretability method (attention, gradients, probing).",
+            "Extract: extract model internals (attention weights, activations, gradients).",
+            "Analyze: analyze which components influence outputs.",
+            "Visualize: visualize attention patterns or feature importance.",
+            "Explain: generate explanations for model behavior.",
+            "Probe: probe model knowledge and representations.",
+            "Validate: validate interpretations for accuracy.",
+            "Present: present interpretations in understandable format.",
+            "Iterate: iterate methods for better interpretability.",
+            "Document: document interpretation methods and limitations."
+        ],
+        "example": "Interpretability: input: 'Why is the sky blue?' → extract: attention weights → analyze: high attention on 'sky' and 'blue' → visualize: attention heatmap → explain: 'Model focuses on sky and blue, suggesting scattering explanation' → probe: test model knowledge → Interpretability successful.",
+        "time_complexity": "O(g + i) where g is generation time, i is interpretation extraction time.",
+        "space_complexity": "O(m + a) where m is model size, a is attention/activation storage.",
+        "strengths": [
+            "Transparency: provides transparency into model behavior.",
+            "Debugging: enables debugging and improvement of models.",
+            "Trust: builds trust through understanding."
+        ],
+        "weaknesses": [
+            "Complexity: LLMs are complex and difficult to fully interpret.",
+            "Accuracy: interpretations may not fully capture model reasoning.",
+            "Cost: interpretability methods add computational overhead."
+        ],
+        "alternatives": ["Black Box Models", "Post-Hoc Explanations", "Attention Visualization", "Probing"],
+        "explanation": "Provides methods to understand and explain LLM behavior, decisions, and internal mechanisms, enabling transparency, debugging, and trust in LLM systems."
     }
 }
 
