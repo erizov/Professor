@@ -5938,29 +5938,40 @@
     },
     {
       "path": "semester_06/lecture_34_edge_ai/iot_ml/README.md",
-      "name": "Iot Ml",
-      "problem": "Implements iot ml algorithm.",
-      "intuition": "Iot Ml is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "IoT ML (Internet of Things Machine Learning)",
+      "problem": "Deploys machine learning models on IoT devices (sensors, actuators, embedded systems) to enable intelligent edge computing, real-time decision making, and reduced cloud dependency for resource-constrained devices.",
+      "intuition": "Like giving sensors a brain: instead of sending all sensor data to the cloud, put a small ML model directly on the IoT device so it can make smart decisions locally - detect anomalies, classify events, or trigger actions without waiting for cloud processing.",
+      "inputs": "Optimized ML model (ultra-lightweight), sensor data streams, IoT device hardware (microcontrollers, edge processors), deployment framework.",
+      "outputs": "ML-enabled IoT device performing local inference, triggering actions, or sending only relevant data to cloud.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Design ultra-lightweight model: use quantization (INT8/INT4), pruning, or tiny architectures (MobileNet, SqueezeNet).",
+        "Convert model to IoT-compatible format: TensorFlow Lite Micro, ONNX Runtime for microcontrollers, or custom embedded runtime.",
+        "Optimize for microcontroller constraints: target memory (KB range), compute (MHz range), power (mW range).",
+        "Package model: embed model weights in firmware or load from external memory.",
+        "Deploy to device: flash firmware or install application containing model.",
+        "Initialize runtime: load model into memory-constrained inference engine on device.",
+        "Process sensor data: run inference on incoming sensor readings (temperature, motion, images, etc.).",
+        "Take local actions: trigger actuators, send alerts, or filter data before cloud transmission."
       ],
-      "example": "Example: Iot Ml applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Smart thermostat: temperature sensor → tiny neural network (10KB model) on microcontroller → detects occupancy patterns → adjusts heating/cooling locally → only sends summary to cloud (not raw data) → saves bandwidth, works offline.",
+      "time_complexity": "O(M·I) where M is model size, I is inference operations (typically 10-1000ms on microcontrollers, depends on device).",
+      "space_complexity": "O(M) for model storage (typically KB range for microcontrollers), O(M) for runtime memory (very constrained).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Real-time local decision making without cloud latency.",
+        "Reduces bandwidth: only send relevant data to cloud.",
+        "Works offline: continues functioning without internet."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Severely constrained by device resources (memory, compute, power).",
+        "Limited model complexity: must use very small models."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Cloud ML",
+        "Edge Computing",
+        "Fog Computing",
+        "Hybrid IoT-Cloud"
       ],
-      "explanation": "Iot Ml solves computational problems efficiently."
+      "explanation": "Deploys ultra-lightweight ML models on IoT devices for local inference, enabling real-time intelligent decision making on resource-constrained edge devices."
     },
     {
       "path": "semester_06/lecture_34_edge_ai/mobile_optimization/README.md",
@@ -6038,107 +6049,152 @@
     },
     {
       "path": "semester_06/lecture_35_deployment_patterns/blue_green_ml/README.md",
-      "name": "Blue Green Ml",
-      "problem": "Implements blue green ml algorithm.",
-      "intuition": "Blue Green Ml is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Blue-Green ML Deployment",
+      "problem": "Deploys ML models using blue-green deployment pattern: maintains two identical production environments (blue and green), allowing instant rollback by switching traffic between environments, minimizing deployment risk.",
+      "intuition": "Like having two identical restaurants: one (blue) serves customers now, while you prepare the other (green) with new menu. When ready, switch all customers to green - if something's wrong, instantly switch back to blue. No downtime, safe rollback.",
+      "inputs": "New model version, blue environment (current production), green environment (new deployment), traffic router/load balancer.",
+      "outputs": "Deployed model in green environment, with ability to instantly switch traffic or rollback to blue.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Maintain blue environment: current production model serving live traffic.",
+        "Deploy new model to green environment: identical infrastructure, new model version.",
+        "Validate green environment: test model performance, accuracy, latency on green (no live traffic yet).",
+        "Switch traffic: route all traffic from blue to green using load balancer or router.",
+        "Monitor green: track metrics (accuracy, latency, error rates) to ensure model performs well.",
+        "If issues detected: instantly switch traffic back to blue (rollback) - no downtime.",
+        "If successful: keep green as new production, blue becomes staging for next deployment.",
+        "Repeat: next deployment uses current green as new blue, deploy to new green."
       ],
-      "example": "Example: Blue Green Ml applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Fraud detection model: blue (v1.0, 95% accuracy) serving 100% traffic → deploy v1.1 to green → validate: 96% accuracy → switch 100% traffic to green → monitor: error rate spikes → rollback to blue → investigate issue → fix → redeploy to green.",
+      "time_complexity": "O(1) for traffic switching (instant), O(D) for deployment where D is deployment time (typically minutes).",
+      "space_complexity": "O(2·M) for maintaining two environments where M is infrastructure cost per environment (double the resources).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Zero-downtime deployments: seamless traffic switching.",
+        "Instant rollback: switch back to previous version immediately if issues occur.",
+        "Safe testing: validate new model in production-like environment before traffic switch."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Resource intensive: requires maintaining two complete environments.",
+        "Higher infrastructure costs: double the compute/storage resources."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Canary Deployment",
+        "Rolling Deployment",
+        "Shadow Deployment",
+        "A/B Testing"
       ],
-      "explanation": "Blue Green Ml solves computational problems efficiently."
+      "explanation": "Maintains two identical production environments (blue/green) for ML models, enabling instant traffic switching and rollback with zero downtime for safe deployments."
     },
     {
       "path": "semester_06/lecture_35_deployment_patterns/canary_ml/README.md",
-      "name": "Canary Ml",
-      "problem": "Implements canary ml algorithm.",
-      "intuition": "Canary Ml is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Canary ML Deployment",
+      "problem": "Gradually rolls out new ML model versions to a small subset of users (canary), monitors performance, and incrementally increases traffic if successful, reducing risk of deploying faulty models to all users.",
+      "intuition": "Like a canary in a coal mine: test the new model on a small group first (canary) - if it works well, gradually give it to more users. If something's wrong, only a few users are affected, not everyone.",
+      "inputs": "New model version, current production model, traffic routing system, monitoring metrics, rollout strategy (percentage increments).",
+      "outputs": "Gradually deployed model with increasing traffic percentage, with ability to halt or rollback at any stage.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Deploy new model alongside current production model.",
+        "Route small percentage of traffic to new model (canary): start with 1-5% of users.",
+        "Monitor canary performance: track accuracy, latency, error rates, business metrics.",
+        "Compare canary vs production: ensure new model performs as well or better.",
+        "If metrics are good: gradually increase traffic (5% → 10% → 25% → 50% → 100%).",
+        "At each stage: monitor and validate before increasing further.",
+        "If issues detected: halt rollout, route traffic back to production, investigate.",
+        "If successful: complete rollout to 100%, retire old model."
       ],
-      "example": "Example: Canary Ml applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Recommendation model: deploy v2.0 → route 5% traffic to canary → monitor: click-through rate +2% → increase to 10% → monitor: still good → increase to 25% → error rate spikes → halt, rollback to v1.0 → fix issue → redeploy.",
+      "time_complexity": "O(D + R·M) where D is deployment time, R is rollout stages, M is monitoring time per stage (gradual rollout over hours/days).",
+      "space_complexity": "O(M + C) where M is model size, C is canary infrastructure (typically small percentage of full production).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Low risk: only small percentage of users affected if issues occur.",
+        "Gradual validation: test model at scale incrementally.",
+        "Easy rollback: can halt at any stage."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Slower deployment: takes time to reach 100% traffic.",
+        "Requires traffic routing infrastructure and monitoring."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Blue-Green Deployment",
+        "Rolling Deployment",
+        "Shadow Deployment",
+        "A/B Testing"
       ],
-      "explanation": "Canary Ml solves computational problems efficiently."
+      "explanation": "Gradually rolls out new ML models to increasing percentages of users, monitoring performance at each stage to safely validate and deploy with minimal risk."
     },
     {
       "path": "semester_06/lecture_35_deployment_patterns/multi_armed_bandit/README.md",
-      "name": "Multi Armed Bandit",
-      "problem": "Implements multi armed bandit algorithm.",
-      "intuition": "Multi Armed Bandit is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Multi-Armed Bandit (MAB) for ML",
+      "problem": "Dynamically allocates traffic between multiple ML model variants using bandit algorithms, automatically favoring better-performing models while continuing to explore alternatives, balancing exploitation and exploration.",
+      "intuition": "Like a smart gambler at slot machines: try different machines (models) to see which pays more, but gradually play the winning machine more often while still occasionally trying others - automatically finds the best model and allocates traffic accordingly.",
+      "inputs": "Multiple model variants (arms), traffic allocation algorithm (ε-greedy, UCB, Thompson Sampling), reward metric (accuracy, revenue, engagement), exploration rate.",
+      "outputs": "Dynamic traffic allocation across models, with better models receiving more traffic over time.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Initialize multiple model variants (arms): each model is a different 'arm' to pull.",
+        "Start with equal traffic allocation: route traffic uniformly across all models.",
+        "Collect rewards: measure performance metric (e.g., conversion rate, accuracy) for each model.",
+        "Update arm estimates: track average reward for each model variant.",
+        "Apply bandit algorithm: ε-greedy (explore ε% of time, exploit best model rest), UCB (upper confidence bound), or Thompson Sampling (probabilistic).",
+        "Allocate traffic: route more traffic to models with higher estimated rewards.",
+        "Continue exploration: still allocate some traffic to other models to discover improvements.",
+        "Converge: over time, best model receives most traffic while maintaining exploration."
       ],
-      "example": "Example: Multi Armed Bandit applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Recommendation system: 3 models (A, B, C) → start: 33% traffic each → measure: A=2% conversion, B=2.5% conversion, C=2.2% conversion → UCB algorithm → allocate: A=20%, B=50%, C=30% → continue: B performs best → converge: B=80%, A=10%, C=10%.",
+      "time_complexity": "O(N·T) where N is number of arms (models), T is time steps (traffic allocation updates per request or batch).",
+      "space_complexity": "O(N·M) where N is number of models, M is model size, plus O(N) for tracking arm statistics.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Automatic optimization: finds best model without manual A/B testing.",
+        "Adaptive: adjusts allocation as model performance changes.",
+        "Balances exploration and exploitation: continues to try alternatives."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Requires sufficient traffic to converge to optimal allocation.",
+        "May take time to identify best model if differences are small."
       ],
       "alternatives": [
-        "Related algorithms"
+        "A/B Testing",
+        "Blue-Green Deployment",
+        "Canary Deployment",
+        "Fixed Traffic Allocation"
       ],
-      "explanation": "Multi Armed Bandit solves computational problems efficiently."
+      "explanation": "Dynamically allocates traffic across multiple ML model variants using bandit algorithms, automatically favoring better-performing models while maintaining exploration to discover improvements."
     },
     {
       "path": "semester_06/lecture_35_deployment_patterns/shadow_deployment/README.md",
       "name": "Shadow Deployment",
-      "problem": "Implements shadow deployment algorithm.",
-      "intuition": "Shadow Deployment is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Deploys new ML model alongside production model, running inference on both but only using production model's predictions, allowing validation of new model on real traffic without risk.",
+      "intuition": "Like a shadow following you: the new model runs in parallel with production, processing the same inputs and making predictions, but you only use the production model's output. Compare them later to see if the new model is ready, with zero risk to users.",
+      "inputs": "New model version, production model, traffic router, logging/monitoring system.",
+      "outputs": "Shadow model running in parallel, predictions logged for comparison, no impact on live users.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Deploy new model (shadow) alongside production model.",
+        "Route all traffic to production model: users receive predictions from production only.",
+        "Duplicate traffic to shadow model: send same inputs to shadow model in parallel.",
+        "Run inference on both: production serves users, shadow processes silently.",
+        "Log predictions: record predictions from both models for comparison.",
+        "Compare performance: analyze accuracy, latency, business metrics between models.",
+        "Validate shadow model: ensure it performs as well or better than production.",
+        "If validated: promote shadow to production using blue-green or canary deployment.",
+        "If issues found: fix model, redeploy as shadow, repeat validation."
       ],
-      "example": "Example: Shadow Deployment applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Fraud detection: production model (v1.0) serving users → deploy v2.0 as shadow → all requests go to v1.0 (users see v1.0 predictions) → v2.0 processes same requests silently → compare: v2.0 has 1% higher accuracy, similar latency → promote v2.0 to production via canary.",
+      "time_complexity": "O(2·I) where I is inference time (running two models in parallel), O(C) for comparison analysis where C is comparison time.",
+      "space_complexity": "O(2·M) for running two models, O(N·P) for logging predictions where N is number of requests, P is prediction size.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Zero risk: new model doesn't affect users, only processes in background.",
+        "Real-world validation: tests model on actual production traffic and data distribution.",
+        "Comprehensive comparison: can compare all aspects (accuracy, latency, edge cases)."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Resource intensive: requires running two models (double compute cost).",
+        "No immediate feedback: can't observe actual user impact until promotion."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Blue-Green Deployment",
+        "Canary Deployment",
+        "A/B Testing",
+        "Offline Evaluation"
       ],
-      "explanation": "Shadow Deployment solves computational problems efficiently."
+      "explanation": "Deploys new ML model in parallel with production, processing real traffic silently while only serving production predictions, enabling risk-free validation on real-world data before promotion."
     },
     {
       "path": "semester_06/lecture_36_inference_optimization/batch_inference/README.md",
@@ -6179,29 +6235,41 @@
     },
     {
       "path": "semester_06/lecture_36_inference_optimization/gpu_optimization/README.md",
-      "name": "Gpu Optimization",
-      "problem": "Implements gpu optimization algorithm.",
-      "intuition": "Gpu Optimization is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "GPU Optimization for ML Inference",
+      "problem": "Optimizes ML model inference on GPUs by leveraging parallel computation, memory management, kernel fusion, and hardware-specific optimizations to maximize throughput and minimize latency.",
+      "intuition": "Like tuning a race car for the track: optimize your model to take full advantage of GPU's parallel processing power - organize data efficiently, fuse operations, use optimized kernels, and manage memory to get maximum speed from the hardware.",
+      "inputs": "ML model, GPU hardware, optimization techniques (kernel fusion, memory optimization, mixed precision), inference runtime.",
+      "outputs": "GPU-optimized inference with improved throughput and reduced latency.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Profile baseline: measure current inference latency and throughput on GPU.",
+        "Optimize memory: use GPU memory efficiently (reduce transfers, reuse buffers, batch processing).",
+        "Fuse operations: combine multiple operations into single GPU kernels (conv+bn+relu → one kernel).",
+        "Use optimized kernels: leverage cuDNN, cuBLAS, or TensorRT for hardware-optimized operations.",
+        "Enable mixed precision: use FP16 or INT8 for faster computation (if supported by model).",
+        "Optimize data layout: use NHWC vs NCHW format based on GPU architecture for better memory access.",
+        "Batch processing: process multiple inputs together to maximize GPU utilization.",
+        "Pipeline inference: overlap data transfer and computation to hide latency.",
+        "Benchmark: measure optimized performance (throughput, latency, GPU utilization)."
       ],
-      "example": "Example: Gpu Optimization applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "ResNet-50 inference: baseline 50ms on GPU → optimize memory transfers → fuse conv+bn+relu → use TensorRT kernels → enable FP16 → batch size 32 → result: 8ms inference, 4x throughput increase, 90% GPU utilization.",
+      "time_complexity": "O(M/k) where M is model operations, k is optimization factor (typically 2-10x speedup through parallelization and optimizations).",
+      "space_complexity": "O(M) for model on GPU memory, O(B·S) for batched inputs where B is batch size, S is sample size.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Significant speedup: 2-10x faster inference on GPUs.",
+        "High throughput: can process many requests in parallel.",
+        "Efficient resource utilization: maximizes GPU compute and memory bandwidth."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "GPU-specific: optimizations may not transfer to other hardware.",
+        "Requires expertise: needs understanding of GPU architecture and optimization techniques."
       ],
       "alternatives": [
-        "Related algorithms"
+        "CPU Optimization",
+        "TPU Optimization",
+        "Edge Device Optimization",
+        "Cloud Inference Services"
       ],
-      "explanation": "Gpu Optimization solves computational problems efficiently."
+      "explanation": "Optimizes ML inference on GPUs through parallel computation, memory management, kernel fusion, and hardware-specific optimizations to achieve maximum throughput and minimal latency."
     },
     {
       "path": "semester_06/lecture_36_inference_optimization/inference_pipeline/README.md",
