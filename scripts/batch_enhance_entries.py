@@ -4141,6 +4141,203 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["SARSA", "DQN (function approximation)", "Policy Gradient"],
         "explanation": "Iteratively updates action-value estimates using Bellman optimality equation, enabling agents to learn optimal policies through exploration and bootstrapping."
+    },
+    "semester_05/lecture_29_nlp_advanced/glove/README.md": {
+        "name": "GloVe (Global Vectors for Word Representation)",
+        "problem": "Learns word embeddings by factorizing a word co-occurrence matrix, combining global statistical information with local context window methods.",
+        "intuition": "Like analyzing word relationships in a giant spreadsheet: count how often words appear together across all documents, then find patterns (embeddings) that capture these relationships mathematically.",
+        "inputs": "Large text corpus, co-occurrence window size, vocabulary.",
+        "outputs": "Dense word embeddings (vectors) where similar words have similar representations.",
+        "steps": [
+            "Build word co-occurrence matrix: count how often word pairs appear within a window.",
+            "Apply weighting function to discount distant co-occurrences.",
+            "Factorize co-occurrence matrix using log-bilinear model: log(X_ij) = w_i^T w_j + b_i + b_j.",
+            "Minimize weighted least squares objective over all word pairs.",
+            "Extract word vectors w_i and context vectors w_j (often use sum or average).",
+            "Output embeddings that capture semantic and syntactic relationships."
+        ],
+        "example": "Corpus: 'cat sits on mat', 'dog sits on floor' → co-occurrence: (cat, sits)=2, (cat, mat)=1, (dog, sits)=2 → GloVe learns: cat and dog have similar embeddings (both animals), mat and floor similar (both surfaces).",
+        "time_complexity": "O(V²) where V is vocabulary size (co-occurrence matrix construction and factorization).",
+        "space_complexity": "O(V²) for co-occurrence matrix, O(V·d) for embeddings where d is dimension.",
+        "strengths": [
+            "Captures both global and local word relationships.",
+            "Efficient training on large corpora."
+        ],
+        "weaknesses": [
+            "Requires storing large co-occurrence matrix.",
+            "Less flexible than neural network-based methods."
+        ],
+        "alternatives": ["Word2Vec", "FastText", "BERT/GPT (contextual embeddings)", "ELMo"],
+        "explanation": "Learns word embeddings by factorizing word co-occurrence statistics, combining benefits of global matrix factorization with local context window methods."
+    },
+    "semester_05/lecture_29_nlp_advanced/word2vec/README.md": {
+        "name": "Word2Vec",
+        "problem": "Learns dense word embeddings by predicting context words (CBOW) or predicting target word from context (Skip-gram), capturing semantic and syntactic word relationships.",
+        "intuition": "Like learning word meanings from context: 'You shall know a word by the company it keeps' - words that appear in similar contexts should have similar embeddings.",
+        "inputs": "Large text corpus, context window size, embedding dimension, training algorithm (CBOW or Skip-gram).",
+        "outputs": "Dense word embeddings where semantically similar words are close in vector space.",
+        "steps": [
+            "Tokenize corpus and build vocabulary.",
+            "For CBOW: predict target word from surrounding context words.",
+            "For Skip-gram: predict context words from target word (more common).",
+            "Use shallow neural network: input word → hidden layer (embeddings) → output (softmax over vocabulary).",
+            "Train using negative sampling or hierarchical softmax to avoid expensive full softmax.",
+            "Extract learned embeddings from hidden layer weights."
+        ],
+        "example": "Skip-gram: sentence 'the cat sat on mat' → target 'sat', context ['the', 'cat', 'on', 'mat'] → predict each context word from 'sat' → embeddings: 'sat' and 'stood' become similar (both verbs with similar contexts).",
+        "time_complexity": "O(n·w·d) where n is corpus size, w is window size, d is embedding dimension (efficient with negative sampling).",
+        "space_complexity": "O(V·d) for embeddings where V is vocabulary size, d is dimension.",
+        "strengths": [
+            "Efficient training on large corpora.",
+            "Captures semantic relationships (king - man + woman ≈ queen)."
+        ],
+        "weaknesses": [
+            "Single embedding per word (no context sensitivity).",
+            "Requires large corpus for good performance."
+        ],
+        "alternatives": ["GloVe", "FastText", "BERT/GPT (contextual)", "ELMo"],
+        "explanation": "Learns word embeddings by predicting words from their context (or vice versa) using shallow neural networks, capturing semantic relationships through distributional similarity."
+    },
+    "semester_05/lecture_29_nlp_advanced/ner/README.md": {
+        "name": "NER (Named Entity Recognition)",
+        "problem": "Identifies and classifies named entities (persons, organizations, locations, dates, etc.) in text, enabling information extraction and structured data from unstructured text.",
+        "intuition": "Like highlighting important names in a document: automatically find and label people, places, companies, dates, etc. so you can extract structured information from text.",
+        "inputs": "Text sequences, entity labels (PERSON, ORG, LOC, DATE, etc.), training data with entity annotations.",
+        "outputs": "Tagged text with entity spans and their types (e.g., 'John Smith' → PERSON, 'New York' → LOCATION).",
+        "steps": [
+            "Tokenize input text into words or subwords.",
+            "Apply sequence labeling model (CRF, BiLSTM-CRF, or Transformer-based).",
+            "For each token, predict BIO tags: B-PERSON (beginning), I-PERSON (inside), O (outside entity).",
+            "Use contextual embeddings (BERT, ELMo) to capture word context.",
+            "Apply CRF layer to enforce valid tag sequences (B must precede I).",
+            "Extract entity spans from predicted tags and assign entity types."
+        ],
+        "example": "Input: 'Apple Inc. was founded by Steve Jobs in Cupertino, California in 1976.' → Output: [Apple Inc. → ORG], [Steve Jobs → PERSON], [Cupertino, California → LOCATION], [1976 → DATE].",
+        "time_complexity": "O(n·d·l) where n is sequence length, d is embedding dimension, l is number of layers (linear in sequence length).",
+        "space_complexity": "O(n·d) for embeddings and O(n·c) for tag predictions where c is number of entity classes.",
+        "strengths": [
+            "Enables structured information extraction from unstructured text.",
+            "Widely used in information retrieval and knowledge graphs."
+        ],
+        "weaknesses": [
+            "Requires labeled training data (expensive to create).",
+            "May struggle with ambiguous entities or domain-specific terms."
+        ],
+        "alternatives": ["Rule-based NER", "Dictionary-based NER", "SpaCy NER", "BERT-based NER"],
+        "explanation": "Identifies and classifies named entities in text using sequence labeling models, extracting structured information like person names, locations, and organizations from unstructured text."
+    },
+    "semester_05/lecture_29_nlp_advanced/seq2seq/README.md": {
+        "name": "Seq2Seq (Sequence-to-Sequence)",
+        "problem": "Maps variable-length input sequences to variable-length output sequences using encoder-decoder architecture, enabling tasks like translation, summarization, and dialogue.",
+        "intuition": "Like a translator: encoder reads and understands the source sentence (creates representation), decoder generates the target sentence word by word based on that understanding.",
+        "inputs": "Source sequence (e.g., English sentence), encoder RNN/LSTM/Transformer, decoder RNN/LSTM/Transformer.",
+        "outputs": "Target sequence (e.g., French sentence) generated token by token.",
+        "steps": [
+            "Encoder: process source sequence token by token, building hidden states.",
+            "Final encoder hidden state (or all states) becomes context vector.",
+            "Decoder: initialize with context vector, generate first target token.",
+            "Decoder uses previous output token and hidden state to generate next token.",
+            "Repeat until decoder produces end-of-sequence token.",
+            "Train with teacher forcing: use ground truth tokens during training, generated tokens during inference."
+        ],
+        "example": "Translation: 'Hello world' (English) → encoder processes → context vector → decoder generates 'Bonjour le monde' (French) token by token: 'Bonjour' → 'le' → 'monde' → <EOS>.",
+        "time_complexity": "O(n·d·l + m·d·l) where n is source length, m is target length, d is dimension, l is layers (sequential processing).",
+        "space_complexity": "O(n·d + m·d) for encoder and decoder hidden states.",
+        "strengths": [
+            "Handles variable-length sequences naturally.",
+            "Foundation for many NLP tasks (translation, summarization, dialogue)."
+        ],
+        "weaknesses": [
+            "Bottleneck: single context vector may lose information for long sequences.",
+            "Sequential decoding is slow (cannot parallelize generation)."
+        ],
+        "alternatives": ["Transformer (attention-based)", "Pointer Networks", "Copy Mechanisms", "Beam Search Decoding"],
+        "explanation": "Uses encoder-decoder architecture to map input sequences to output sequences, with encoder creating representation and decoder generating target sequence token by token."
+    },
+    "semester_05/lecture_30_time_series/arima/README.md": {
+        "name": "ARIMA (AutoRegressive Integrated Moving Average)",
+        "problem": "Models time series data by combining autoregressive (AR), differencing (I), and moving average (MA) components to capture trends, seasonality, and noise for forecasting.",
+        "intuition": "Like predicting tomorrow's weather: use past values (AR), account for trends by looking at changes (I), and smooth out noise using averages (MA) to forecast future values.",
+        "inputs": "Time series data, AR order (p), differencing order (d), MA order (q), seasonal parameters (optional).",
+        "outputs": "Fitted ARIMA model and forecasts for future time points with confidence intervals.",
+        "steps": [
+            "Check stationarity: if non-stationary, apply differencing (d times) to make it stationary.",
+            "Identify AR order (p): how many past values to use for prediction.",
+            "Identify MA order (q): how many past forecast errors to use.",
+            "Estimate model parameters using maximum likelihood estimation.",
+            "Validate model: check residuals for white noise (no patterns).",
+            "Forecast future values using fitted model with prediction intervals."
+        ],
+        "example": "Stock prices: non-stationary → difference once (d=1) → ARIMA(1,1,1): uses yesterday's price change (AR) and yesterday's forecast error (MA) → forecast: price tomorrow = today's price + predicted change ± confidence interval.",
+        "time_complexity": "O(n²) for parameter estimation where n is time series length.",
+        "space_complexity": "O(n) for storing time series data and model parameters.",
+        "strengths": [
+            "Interpretable model with clear statistical foundation.",
+            "Handles trends and seasonality effectively."
+        ],
+        "weaknesses": [
+            "Requires manual parameter selection (p, d, q).",
+            "Assumes linear relationships and may miss complex patterns."
+        ],
+        "alternatives": ["LSTM/GRU", "Prophet", "Exponential Smoothing", "SARIMA (seasonal ARIMA)"],
+        "explanation": "Models time series by combining autoregressive terms, differencing for stationarity, and moving average terms, providing interpretable forecasts with statistical guarantees."
+    },
+    "semester_05/lecture_30_time_series/lstm_timeseries/README.md": {
+        "name": "LSTM for Time Series",
+        "problem": "Uses Long Short-Term Memory networks to model temporal dependencies in time series data, capturing long-range patterns and non-linear relationships for forecasting.",
+        "intuition": "Like a memory system that remembers important patterns from the past: LSTM selectively remembers and forgets information, allowing it to capture both short-term fluctuations and long-term trends in time series.",
+        "inputs": "Time series data, sequence length (lookback window), LSTM architecture, number of layers.",
+        "outputs": "Forecasted future values with ability to capture complex temporal patterns.",
+        "steps": [
+            "Prepare sequences: create sliding windows of fixed length (e.g., 60 days) as input, next value as target.",
+            "Build LSTM network: input layer, one or more LSTM layers, dense output layer.",
+            "LSTM processes sequences: forget gate, input gate, output gate control information flow.",
+            "Train on historical sequences using backpropagation through time.",
+            "Validate on hold-out period to prevent overfitting.",
+            "Forecast: use last N values to predict next value, iteratively for multi-step ahead."
+        ],
+        "example": "Stock prices: input sequence [price_day1, ..., price_day60] → LSTM processes → hidden states capture patterns → output: predicted price_day61. For 7-day forecast: predict day 61, use it to predict day 62, etc.",
+        "time_complexity": "O(n·l·d²) where n is sequence length, l is number of layers, d is hidden dimension (sequential processing).",
+        "space_complexity": "O(l·d²) for LSTM parameters plus O(n·d) for hidden states.",
+        "strengths": [
+            "Captures long-range dependencies and non-linear patterns.",
+            "Flexible architecture adaptable to various time series characteristics."
+        ],
+        "weaknesses": [
+            "Requires large amounts of data for training.",
+            "Less interpretable than statistical models like ARIMA."
+        ],
+        "alternatives": ["ARIMA", "Prophet", "GRU", "Transformer for Time Series"],
+        "explanation": "Uses LSTM networks to model temporal dependencies in time series, leveraging memory cells to capture both short-term and long-term patterns for accurate forecasting."
+    },
+    "semester_05/lecture_30_time_series/prophet/README.md": {
+        "name": "Prophet",
+        "problem": "Forecasts time series with automatic handling of trends, seasonality, and holidays using additive decomposition, designed for business time series with strong seasonal patterns.",
+        "intuition": "Like a smart calendar that understands patterns: automatically detects if data grows linearly or saturates (trend), finds weekly/monthly/yearly patterns (seasonality), and accounts for special events (holidays) to forecast future values.",
+        "inputs": "Time series data (ds: dates, y: values), optional holiday calendar, growth model (linear or logistic).",
+        "outputs": "Forecasted values with uncertainty intervals and decomposed components (trend, seasonality, holidays).",
+        "steps": [
+            "Model time series as: y(t) = g(t) + s(t) + h(t) + ε, where g=trend, s=seasonality, h=holidays, ε=noise.",
+            "Fit trend component: linear or logistic growth with changepoints.",
+            "Fit seasonality: Fourier series for weekly, monthly, yearly patterns.",
+            "Fit holiday effects: indicator variables for known holidays.",
+            "Estimate parameters using Bayesian inference or maximum likelihood.",
+            "Generate forecasts with uncertainty intervals using posterior predictive distribution."
+        ],
+        "example": "E-commerce sales: daily data → Prophet detects: upward trend (business growing), weekly seasonality (higher on weekends), yearly seasonality (holiday spikes), Black Friday effect → forecast: next 30 days with confidence bands.",
+        "time_complexity": "O(n) for fitting where n is number of observations (efficient optimization).",
+        "space_complexity": "O(n) for storing time series and model components.",
+        "strengths": [
+            "Automatic handling of seasonality and holidays.",
+            "Robust to missing data and outliers.",
+            "Interpretable components (trend, seasonality)."
+        ],
+        "weaknesses": [
+            "Designed for daily/weekly data with strong seasonality.",
+            "May not capture complex non-linear patterns as well as neural networks."
+        ],
+        "alternatives": ["ARIMA", "LSTM", "Exponential Smoothing", "NeuralProphet"],
+        "explanation": "Decomposes time series into trend, seasonality, and holiday components using additive model, automatically handling common patterns in business time series for robust forecasting."
     }
 }
 
