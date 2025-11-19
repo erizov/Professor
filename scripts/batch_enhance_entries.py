@@ -18041,6 +18041,448 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["No Upgrades", "Soft Forks Only", "Upgradeable Smart Contracts", "Layer 2 Solutions"],
         "explanation": "Mechanisms for upgrading blockchain protocols while maintaining consensus, including hard forks, soft forks, and upgradeable contract patterns."
+    },
+    "semester_13/lecture_87_blockchain_advanced/blockchain_scalability_solutions/README.md": {
+        "name": "Blockchain Scalability Solutions",
+        "problem": "Addresses blockchain throughput limitations by implementing Layer 2 solutions, sharding, and optimization techniques that increase transaction processing capacity while maintaining security and decentralization.",
+        "intuition": "Like adding lanes to a highway: Blockchain scalability solutions are like adding lanes to a congested highway - instead of one slow lane (main chain), you add multiple lanes (Layer 2, sharding) that process transactions in parallel, or you optimize the existing lane (optimizations) - the goal is to handle more traffic (transactions) without compromising safety (security) or accessibility (decentralization).",
+        "inputs": "Transactions, scalability requirements, security constraints, decentralization goals, network topology, consensus mechanism.",
+        "outputs": "Scaled blockchain, increased throughput, maintained security, preserved decentralization, optimized performance.",
+        "steps": [
+            "Analyze: analyze current bottlenecks and limitations.",
+            "Choose: choose scalability approach (Layer 2, sharding, optimization).",
+            "Design: design scalability solution architecture.",
+            "Implement: implement chosen solution (rollups, plasma, sidechains, etc.).",
+            "Optimize: optimize transaction processing and data structures.",
+            "Test: test scalability improvements and security.",
+            "Deploy: deploy solution to network.",
+            "Monitor: monitor performance and security metrics.",
+            "Iterate: iterate on improvements based on results.",
+            "Maintain: maintain scalability solution and adapt to growth."
+        ],
+        "example": "Scalability: analyze → identify bottleneck (15 tx/s) → choose rollups → design → implement → optimize → test → deploy → monitor → 1000 tx/s → Scalability successful.",
+        "time_complexity": "Varies by solution: O(t/s) for sharding, O(b) for rollups where t is transactions, s is shards, b is batch size (scalability complexity).",
+        "space_complexity": "Varies by solution: O(n/s) for sharding, O(c) for rollups where n is state, s is shards, c is compressed data (scalability storage).",
+        "strengths": [
+            "Throughput: significantly increases transaction throughput.",
+            "Flexibility: multiple approaches for different use cases.",
+            "Compatibility: can maintain main chain security."
+        ],
+        "weaknesses": [
+            "Complexity: adds complexity to system architecture.",
+            "Trade-offs: may trade off some security or decentralization.",
+            "Coordination: requires careful coordination and testing."
+        ],
+        "alternatives": ["No Scaling", "Bigger Blocks", "Faster Consensus", "Off-Chain Solutions"],
+        "explanation": "Techniques and solutions that increase blockchain transaction throughput, including Layer 2 solutions, sharding, and optimization methods."
+    },
+    "semester_13/lecture_93_blockchain_governance/voting_mechanisms/README.md": {
+        "name": "Blockchain Voting Mechanisms",
+        "problem": "Enables decentralized decision-making by implementing secure, transparent, and verifiable voting systems that allow token holders to participate in governance decisions with cryptographic guarantees.",
+        "intuition": "Like a secure digital ballot box: Blockchain voting mechanisms are like a secure digital ballot box - you cast your vote (weighted by tokens), it's recorded immutably on the blockchain (transparent and verifiable), and the results are calculated automatically (no manipulation) - everyone can verify the votes and results, ensuring fair and transparent governance.",
+        "inputs": "Voting proposals, token holdings, vote choices (for/against/abstain), voting period, quorum requirements, delegation options.",
+        "outputs": "Vote records, voting results, executed decisions, governance history, verification proofs.",
+        "steps": [
+            "Propose: submit governance proposal for voting.",
+            "Announce: announce voting period and parameters.",
+            "Cast: token holders cast votes (weighted by holdings).",
+            "Delegate: optional delegation of voting power.",
+            "Record: record votes on blockchain immutably.",
+            "Count: count votes and calculate results.",
+            "Verify: verify vote integrity and eligibility.",
+            "Execute: execute proposal if approved.",
+            "Archive: archive voting results for transparency.",
+            "Audit: enable audit of voting process."
+        ],
+        "example": "Voting: propose 'Increase fee to 0.3%' → announce 3-day vote → cast votes (60% yes, 30% no) → record on-chain → count → verify → execute → Voting successful.",
+        "time_complexity": "O(v) for vote counting where v is voters, O(1) for verification (voting complexity).",
+        "space_complexity": "O(v + p) where v is votes, p is proposals (voting storage).",
+        "strengths": [
+            "Transparency: all votes are publicly verifiable.",
+            "Security: cryptographic guarantees prevent manipulation.",
+            "Decentralization: enables decentralized decision-making."
+        ],
+        "weaknesses": [
+            "Participation: low voter participation is common.",
+            "Complexity: complex proposals may be hard to evaluate.",
+            "Sybil: requires mechanisms to prevent Sybil attacks."
+        ],
+        "alternatives": ["Off-Chain Voting", "Multisig Decisions", "Foundation Control", "Hybrid Governance"],
+        "explanation": "Cryptographically secure voting systems that enable token holders to participate in blockchain governance decisions with transparency and verifiability."
+    },
+    "semester_13/lecture_94_blockchain_analytics/address_clustering/README.md": {
+        "name": "Blockchain Address Clustering",
+        "problem": "Identifies and groups blockchain addresses that belong to the same entity by analyzing transaction patterns, heuristics, and graph analysis to understand ownership and behavior.",
+        "intuition": "Like detective work: Address clustering is like detective work - you analyze clues (transaction patterns, common inputs, change addresses) to figure out which addresses belong to the same person or entity - just as a detective connects evidence, you connect addresses based on behavioral patterns and heuristics to reveal the true ownership structure.",
+        "inputs": "Blockchain transactions, addresses, transaction graphs, heuristics, clustering algorithms, analysis parameters.",
+        "outputs": "Address clusters, entity mappings, ownership graphs, behavioral patterns, clustering confidence scores.",
+        "steps": [
+            "Collect: collect blockchain transaction data.",
+            "Analyze: analyze transaction patterns and relationships.",
+            "Apply: apply clustering heuristics (common inputs, change addresses).",
+            "Graph: build transaction graph and analyze connections.",
+            "Cluster: group addresses using clustering algorithms.",
+            "Validate: validate clusters using additional heuristics.",
+            "Score: assign confidence scores to clusters.",
+            "Visualize: visualize address clusters and relationships.",
+            "Refine: refine clusters based on new data.",
+            "Report: generate clustering reports and insights."
+        ],
+        "example": "Clustering: collect tx data → analyze patterns → apply heuristics → build graph → cluster addresses → validate → score → identify entity with 5 addresses → Clustering successful.",
+        "time_complexity": "O(n²) for graph analysis, O(c) for clustering where n is addresses, c is clusters (clustering complexity).",
+        "space_complexity": "O(n + e) where n is addresses, e is edges (graph storage).",
+        "strengths": [
+            "Insights: reveals ownership and behavioral patterns.",
+            "Privacy: helps understand privacy implications.",
+            "Compliance: useful for regulatory compliance."
+        ],
+        "weaknesses": [
+            "Accuracy: heuristics may produce false positives.",
+            "Privacy: raises privacy concerns for users.",
+            "Complexity: requires sophisticated analysis techniques."
+        ],
+        "alternatives": ["No Clustering", "Manual Analysis", "Machine Learning Clustering", "Privacy-Preserving Methods"],
+        "explanation": "Techniques for identifying and grouping blockchain addresses that belong to the same entity through transaction pattern analysis and graph clustering."
+    },
+    "semester_13/lecture_94_blockchain_analytics/anomaly_detection_blockchain/README.md": {
+        "name": "Blockchain Anomaly Detection",
+        "problem": "Identifies unusual patterns, suspicious activities, and potential security threats in blockchain transactions by analyzing transaction behavior, network patterns, and statistical deviations.",
+        "intuition": "Like a security alarm system: Blockchain anomaly detection is like a security alarm system - you monitor normal behavior (typical transaction patterns), and when something unusual happens (anomalies like large transfers, rapid movements, suspicious patterns), the alarm goes off - this helps detect fraud, attacks, or suspicious activities early.",
+        "inputs": "Blockchain transactions, historical data, network metrics, behavioral patterns, detection rules, machine learning models.",
+        "outputs": "Anomaly alerts, suspicious transactions, risk scores, detection reports, pattern analysis.",
+        "steps": [
+            "Collect: collect blockchain transaction and network data.",
+            "Baseline: establish baseline of normal behavior.",
+            "Analyze: analyze transactions for unusual patterns.",
+            "Detect: apply detection algorithms (statistical, ML, rule-based).",
+            "Score: assign risk scores to detected anomalies.",
+            "Alert: generate alerts for high-risk anomalies.",
+            "Investigate: investigate flagged transactions.",
+            "Learn: update models based on investigation results.",
+            "Refine: refine detection rules and thresholds.",
+            "Report: generate anomaly detection reports."
+        ],
+        "example": "Anomaly Detection: collect data → baseline → analyze → detect large transfer (1000 ETH) → score high risk → alert → investigate → confirm suspicious → Anomaly Detection successful.",
+        "time_complexity": "O(n * d) where n is transactions, d is detection complexity (anomaly detection complexity).",
+        "space_complexity": "O(n + m) where n is transaction data, m is model storage (detection storage).",
+        "strengths": [
+            "Security: helps detect fraud and attacks early.",
+            "Automation: automates threat detection.",
+            "Insights: provides insights into network behavior."
+        ],
+        "weaknesses": [
+            "False positives: may generate false alarms.",
+            "Complexity: requires sophisticated detection algorithms.",
+            "Privacy: raises privacy concerns."
+        ],
+        "alternatives": ["Manual Monitoring", "Rule-Based Detection", "Machine Learning Detection", "Hybrid Approaches"],
+        "explanation": "Techniques for identifying unusual patterns and suspicious activities in blockchain transactions to detect fraud, attacks, and security threats."
+    },
+    "semester_13/lecture_94_blockchain_analytics/compliance_tools/README.md": {
+        "name": "Blockchain Compliance Tools",
+        "problem": "Ensures blockchain transactions and entities comply with regulatory requirements by implementing KYC/AML checks, transaction monitoring, and reporting tools for regulatory compliance.",
+        "intuition": "Like a compliance officer: Blockchain compliance tools are like a compliance officer for blockchain - they check identities (KYC), monitor transactions (AML), flag suspicious activities, and generate reports for regulators - just as a compliance officer ensures a company follows regulations, these tools ensure blockchain activities comply with financial regulations.",
+        "inputs": "Transaction data, user identities, regulatory rules, compliance policies, risk parameters, reporting requirements.",
+        "outputs": "Compliance reports, risk assessments, flagged transactions, KYC/AML results, regulatory filings.",
+        "steps": [
+            "Collect: collect transaction and user data.",
+            "KYC: perform Know Your Customer checks.",
+            "Monitor: monitor transactions for suspicious patterns.",
+            "Screen: screen against sanctions and watchlists.",
+            "Assess: assess risk levels for transactions and users.",
+            "Flag: flag high-risk transactions and users.",
+            "Report: generate compliance reports.",
+            "File: file reports with regulators.",
+            "Audit: maintain audit trails.",
+            "Update: update compliance rules and policies."
+        ],
+        "example": "Compliance: collect data → KYC check user → monitor tx → screen against watchlist → assess risk → flag high-risk → report → file with regulator → Compliance successful.",
+        "time_complexity": "O(n * c) where n is transactions, c is compliance check complexity (compliance complexity).",
+        "space_complexity": "O(n + r) where n is transaction data, r is regulatory data (compliance storage).",
+        "strengths": [
+            "Regulatory: ensures regulatory compliance.",
+            "Risk: helps identify and mitigate risks.",
+            "Automation: automates compliance processes."
+        ],
+        "weaknesses": [
+            "Complexity: complex regulatory requirements.",
+            "Privacy: raises privacy concerns.",
+            "Cost: compliance can be expensive."
+        ],
+        "alternatives": ["Manual Compliance", "Basic Screening", "Advanced Analytics", "Third-Party Services"],
+        "explanation": "Tools and systems that ensure blockchain transactions and entities comply with regulatory requirements through KYC/AML checks and transaction monitoring."
+    },
+    "semester_13/lecture_94_blockchain_analytics/flow_analysis/README.md": {
+        "name": "Blockchain Flow Analysis",
+        "problem": "Tracks and visualizes the movement of funds through blockchain networks by analyzing transaction flows, identifying fund sources and destinations, and mapping money movement patterns.",
+        "intuition": "Like tracking money through a bank: Blockchain flow analysis is like tracking money through a bank - you follow transactions (money movements) from source to destination, identify patterns (where money goes), and visualize the flow (money trail) - this helps understand fund movements, detect money laundering, or trace stolen funds.",
+        "inputs": "Blockchain transactions, addresses, transaction graphs, time windows, analysis parameters, visualization settings.",
+        "outputs": "Flow graphs, fund trails, source/destination analysis, flow patterns, visualization diagrams.",
+        "steps": [
+            "Collect: collect blockchain transaction data.",
+            "Build: build transaction graph.",
+            "Trace: trace fund flows from source to destination.",
+            "Analyze: analyze flow patterns and paths.",
+            "Identify: identify sources and destinations.",
+            "Visualize: visualize fund flows and paths.",
+            "Pattern: detect patterns in fund movements.",
+            "Report: generate flow analysis reports.",
+            "Query: enable queries on flow data.",
+            "Monitor: monitor flows in real-time."
+        ],
+        "example": "Flow Analysis: collect tx → build graph → trace 100 ETH from address A → follow through 5 addresses → identify destination B → visualize path → Flow Analysis successful.",
+        "time_complexity": "O(n * d) where n is transactions, d is graph depth (flow analysis complexity).",
+        "space_complexity": "O(n + e) where n is transactions, e is edges (graph storage).",
+        "strengths": [
+            "Transparency: provides transparency into fund movements.",
+            "Tracing: enables fund tracing and investigation.",
+            "Insights: reveals flow patterns and behaviors."
+        ],
+        "weaknesses": [
+            "Privacy: raises privacy concerns.",
+            "Complexity: complex flows can be hard to analyze.",
+            "Scale: large-scale analysis is computationally expensive."
+        ],
+        "alternatives": ["Manual Tracing", "Basic Queries", "Advanced Graph Analysis", "Privacy-Preserving Methods"],
+        "explanation": "Techniques for tracking and visualizing the movement of funds through blockchain networks to understand transaction flows and patterns."
+    },
+    "semester_13/lecture_94_blockchain_analytics/transaction_analysis/README.md": {
+        "name": "Blockchain Transaction Analysis",
+        "problem": "Analyzes blockchain transactions to extract insights, identify patterns, detect anomalies, and understand transaction behavior through statistical analysis, graph analysis, and machine learning.",
+        "intuition": "Like analyzing financial records: Blockchain transaction analysis is like analyzing financial records - you examine transactions (records), identify patterns (spending habits), detect anomalies (unusual activities), and extract insights (trends) - this helps understand network behavior, detect fraud, or make informed decisions.",
+        "inputs": "Blockchain transactions, historical data, analysis parameters, statistical methods, ML models, query criteria.",
+        "outputs": "Transaction insights, pattern analysis, anomaly detection, statistical summaries, behavioral analysis.",
+        "steps": [
+            "Collect: collect blockchain transaction data.",
+            "Parse: parse and structure transaction data.",
+            "Analyze: apply statistical and analytical methods.",
+            "Pattern: identify patterns in transactions.",
+            "Anomaly: detect anomalies and outliers.",
+            "Graph: perform graph analysis on transaction network.",
+            "ML: apply machine learning for pattern recognition.",
+            "Summarize: generate statistical summaries.",
+            "Visualize: visualize transaction data and patterns.",
+            "Report: generate analysis reports."
+        ],
+        "example": "Transaction Analysis: collect 1M tx → parse → analyze → identify pattern (daily spikes at 9am) → detect anomaly (unusual large tx) → graph analysis → ML classification → summarize → Transaction Analysis successful.",
+        "time_complexity": "O(n * a) where n is transactions, a is analysis complexity (transaction analysis complexity).",
+        "space_complexity": "O(n + r) where n is transaction data, r is results (analysis storage).",
+        "strengths": [
+            "Insights: provides valuable insights into transactions.",
+            "Detection: helps detect fraud and anomalies.",
+            "Understanding: improves understanding of network behavior."
+        ],
+        "weaknesses": [
+            "Scale: large-scale analysis is computationally expensive.",
+            "Complexity: requires sophisticated analysis techniques.",
+            "Privacy: raises privacy concerns."
+        ],
+        "alternatives": ["Basic Queries", "Manual Analysis", "Advanced Analytics", "Real-Time Analysis"],
+        "explanation": "Comprehensive analysis of blockchain transactions to extract insights, identify patterns, and detect anomalies through statistical and machine learning methods."
+    },
+    "semester_14/lecture_100_documentation_ai/ai_doc_generation/README.md": {
+        "name": "AI-Powered Documentation Generation",
+        "problem": "Automatically generates technical documentation from code, comments, and project context using AI models that understand code structure, extract information, and produce comprehensive documentation.",
+        "intuition": "Like an AI technical writer: AI doc generation is like having an AI technical writer - you give it code (source material), and it reads the code, understands what it does, and writes documentation (explanation) - just as a human writer would, but faster and more consistently - it can generate API docs, tutorials, and explanations automatically.",
+        "inputs": "Source code, code comments, project context, documentation templates, AI models, generation parameters.",
+        "outputs": "Generated documentation, API references, code explanations, tutorials, documentation updates.",
+        "steps": [
+            "Parse: parse source code and extract structure.",
+            "Analyze: analyze code semantics and relationships.",
+            "Extract: extract information from code and comments.",
+            "Generate: use AI to generate documentation content.",
+            "Format: format documentation according to templates.",
+            "Review: review generated documentation for accuracy.",
+            "Refine: refine documentation based on feedback.",
+            "Update: update documentation as code changes.",
+            "Maintain: maintain documentation consistency.",
+            "Publish: publish documentation to appropriate platforms."
+        ],
+        "example": "AI Doc Gen: parse code → analyze function signatures → extract docstrings → generate API docs → format → review → publish → AI Doc Gen successful.",
+        "time_complexity": "O(c * g) where c is code size, g is generation complexity (doc generation complexity).",
+        "space_complexity": "O(c + d) where c is code, d is documentation (doc storage).",
+        "strengths": [
+            "Automation: automates documentation generation.",
+            "Consistency: ensures consistent documentation style.",
+            "Speed: generates documentation quickly."
+        ],
+        "weaknesses": [
+            "Quality: may require human review and refinement.",
+            "Context: may miss project-specific context.",
+            "Maintenance: requires maintenance as code evolves."
+        ],
+        "alternatives": ["Manual Documentation", "Template-Based Generation", "Comment Extraction", "Hybrid Approaches"],
+        "explanation": "AI-powered systems that automatically generate technical documentation from source code, comments, and project context."
+    },
+    "semester_14/lecture_100_documentation_ai/code_to_docs/README.md": {
+        "name": "Code-to-Documentation Conversion",
+        "problem": "Converts source code into readable documentation by extracting code structure, analyzing logic, and generating human-readable explanations that help developers understand code functionality.",
+        "intuition": "Like translating code to English: Code-to-docs conversion is like translating code (a foreign language) to English (documentation) - you read the code, understand what it does, and write an explanation in plain language - this helps developers who aren't familiar with the code understand it quickly.",
+        "inputs": "Source code, code structure, comments, analysis tools, documentation templates, conversion rules.",
+        "outputs": "Documentation files, code explanations, function descriptions, usage examples, API references.",
+        "steps": [
+            "Parse: parse source code into abstract syntax tree.",
+            "Extract: extract code structure and elements.",
+            "Analyze: analyze code logic and relationships.",
+            "Map: map code elements to documentation sections.",
+            "Generate: generate documentation from code structure.",
+            "Format: format documentation in target format.",
+            "Enhance: enhance with examples and explanations.",
+            "Validate: validate documentation completeness.",
+            "Export: export documentation in desired format.",
+            "Update: update documentation when code changes."
+        ],
+        "example": "Code-to-Docs: parse Python file → extract functions → analyze logic → generate docstrings → format as Markdown → enhance with examples → export → Code-to-Docs successful.",
+        "time_complexity": "O(c * p) where c is code size, p is parsing complexity (conversion complexity).",
+        "space_complexity": "O(c + d) where c is code, d is documentation (conversion storage).",
+        "strengths": [
+            "Automation: automates documentation creation.",
+            "Accuracy: documentation matches code structure.",
+            "Maintenance: easier to keep docs in sync with code."
+        ],
+        "weaknesses": [
+            "Depth: may lack deep explanations of logic.",
+            "Context: may miss project-specific context.",
+            "Quality: may require human refinement."
+        ],
+        "alternatives": ["Manual Documentation", "Comment-Based Docs", "AI Generation", "Hybrid Approaches"],
+        "explanation": "Tools and techniques that convert source code into readable documentation by extracting structure and generating explanations."
+    },
+    "semester_14/lecture_100_documentation_ai/contextual_help/README.md": {
+        "name": "Contextual Documentation Help",
+        "problem": "Provides context-aware documentation assistance by analyzing user context (code location, task, error messages) and delivering relevant documentation, examples, and guidance at the right moment.",
+        "intuition": "Like a helpful colleague: Contextual help is like having a helpful colleague nearby - when you're stuck on code (context), they notice what you're working on and provide relevant help (documentation) - just as a colleague would, but available 24/7 and with perfect memory of all documentation.",
+        "inputs": "User context (code, cursor position, errors), documentation corpus, help queries, user preferences, context analysis.",
+        "outputs": "Relevant documentation snippets, code examples, troubleshooting guides, contextual suggestions, help responses.",
+        "steps": [
+            "Capture: capture user context (code, position, errors).",
+            "Analyze: analyze context to understand user needs.",
+            "Search: search documentation corpus for relevant content.",
+            "Rank: rank results by relevance to context.",
+            "Extract: extract relevant documentation snippets.",
+            "Format: format help content for display.",
+            "Present: present contextual help to user.",
+            "Learn: learn from user interactions.",
+            "Improve: improve suggestions based on feedback.",
+            "Update: update help content as documentation evolves."
+        ],
+        "example": "Contextual Help: user at line 42 → analyze context (using API X) → search docs → find API X documentation → extract relevant snippet → present tooltip → Contextual Help successful.",
+        "time_complexity": "O(c + s) where c is context analysis, s is search complexity (contextual help complexity).",
+        "space_complexity": "O(d + i) where d is documentation, i is index (help storage).",
+        "strengths": [
+            "Relevance: provides highly relevant help.",
+            "Timing: delivers help at the right moment.",
+            "Efficiency: reduces time searching for documentation."
+        ],
+        "weaknesses": [
+            "Context: requires accurate context understanding.",
+            "Quality: depends on documentation quality.",
+            "Privacy: raises privacy concerns about context capture."
+        ],
+        "alternatives": ["Static Documentation", "Search-Based Help", "AI Chatbots", "Community Forums"],
+        "explanation": "Context-aware documentation systems that provide relevant help based on user's current code context and needs."
+    },
+    "semester_14/lecture_100_documentation_ai/intelligent_search/README.md": {
+        "name": "Intelligent Documentation Search",
+        "problem": "Enables semantic and intelligent search over documentation by understanding user intent, using natural language processing, and returning relevant results even when exact keywords don't match.",
+        "intuition": "Like a smart librarian: Intelligent search is like a smart librarian - you ask a question in natural language (not exact keywords), and they understand what you mean (semantic understanding) and find relevant books (documentation) even if your words don't exactly match the book titles - this makes finding information much easier.",
+        "inputs": "Search queries, documentation corpus, semantic models, search parameters, user preferences, ranking algorithms.",
+        "outputs": "Relevant search results, ranked documentation, query suggestions, related content, search analytics.",
+        "steps": [
+            "Parse: parse user search query.",
+            "Understand: understand query intent using NLP.",
+            "Embed: embed query and documentation into vector space.",
+            "Search: search documentation using semantic similarity.",
+            "Rank: rank results by relevance and quality.",
+            "Filter: filter results based on criteria.",
+            "Present: present ranked results to user.",
+            "Learn: learn from user clicks and feedback.",
+            "Refine: refine search algorithm based on usage.",
+            "Suggest: suggest related queries and content."
+        ],
+        "example": "Intelligent Search: query 'how to handle errors' → understand intent → embed → search semantically → find 'error handling' docs → rank → present top 5 results → Intelligent Search successful.",
+        "time_complexity": "O(q + d * s) where q is query processing, d is documentation size, s is search complexity (search complexity).",
+        "space_complexity": "O(d + e) where d is documentation, e is embeddings (search storage).",
+        "strengths": [
+            "Semantic: understands user intent, not just keywords.",
+            "Relevance: returns highly relevant results.",
+            "Natural: supports natural language queries."
+        ],
+        "weaknesses": [
+            "Complexity: requires sophisticated NLP and embeddings.",
+            "Quality: depends on documentation quality and structure.",
+            "Performance: semantic search can be slower than keyword search."
+        ],
+        "alternatives": ["Keyword Search", "Full-Text Search", "Tag-Based Search", "Hybrid Search"],
+        "explanation": "Semantic search systems that understand user intent and return relevant documentation results using natural language processing and embeddings."
+    },
+    "semester_14/lecture_100_documentation_ai/natural_language_docs/README.md": {
+        "name": "Natural Language Documentation",
+        "problem": "Creates documentation written in natural, conversational language that is easy to understand for developers of all skill levels, using AI to translate technical concepts into accessible explanations.",
+        "intuition": "Like explaining to a friend: Natural language docs are like explaining code to a friend - you use simple, conversational language (not technical jargon), give examples (real-world analogies), and make it easy to understand - this makes documentation accessible to beginners and experienced developers alike.",
+        "inputs": "Technical content, documentation goals, target audience, tone preferences, examples, AI models.",
+        "outputs": "Natural language documentation, conversational explanations, accessible tutorials, clear examples, readable guides.",
+        "steps": [
+            "Analyze: analyze technical content and concepts.",
+            "Simplify: simplify technical language and jargon.",
+            "Explain: explain concepts in natural language.",
+            "Analogize: use analogies and real-world examples.",
+            "Structure: structure content for readability.",
+            "Format: format for easy reading.",
+            "Review: review for clarity and accuracy.",
+            "Test: test with target audience.",
+            "Refine: refine based on feedback.",
+            "Maintain: maintain natural language style."
+        ],
+        "example": "Natural Language Docs: analyze API → simplify 'asynchronous' to 'non-blocking' → explain with analogy (like ordering food) → structure → format → review → Natural Language Docs successful.",
+        "time_complexity": "O(c * t) where c is content size, t is translation complexity (doc generation complexity).",
+        "space_complexity": "O(c + d) where c is content, d is documentation (doc storage).",
+        "strengths": [
+            "Accessibility: makes documentation accessible to all skill levels.",
+            "Clarity: improves clarity and understanding.",
+            "Engagement: more engaging than technical jargon."
+        ],
+        "weaknesses": [
+            "Precision: may lose some technical precision.",
+            "Length: natural language can be more verbose.",
+            "Maintenance: requires careful maintenance of tone."
+        ],
+        "alternatives": ["Technical Documentation", "Formal Documentation", "Code Comments", "Video Tutorials"],
+        "explanation": "Documentation written in natural, conversational language that makes technical concepts accessible and easy to understand."
+    },
+    "semester_14/lecture_100_documentation_ai/personalized_docs/README.md": {
+        "name": "Personalized Documentation",
+        "problem": "Customizes documentation content, examples, and recommendations based on user preferences, skill level, role, and learning history to provide tailored documentation experiences.",
+        "intuition": "Like a personalized tutor: Personalized docs are like a personalized tutor - they adapt to your skill level (beginner vs expert), your role (developer vs designer), and your learning style (prefer examples vs theory) - just as a tutor would customize lessons, personalized docs customize content to help you learn more effectively.",
+        "inputs": "User profile, skill level, role, preferences, learning history, documentation corpus, personalization models.",
+        "outputs": "Personalized documentation, customized examples, tailored recommendations, adaptive content, user-specific guides.",
+        "steps": [
+            "Profile: create user profile (skill, role, preferences).",
+            "Track: track user interactions and learning history.",
+            "Analyze: analyze user needs and preferences.",
+            "Customize: customize documentation content.",
+            "Adapt: adapt examples to user's context.",
+            "Recommend: recommend relevant documentation.",
+            "Present: present personalized content to user.",
+            "Learn: learn from user feedback and behavior.",
+            "Update: update personalization based on learning.",
+            "Refine: refine personalization algorithms."
+        ],
+        "example": "Personalized Docs: profile (beginner, Python) → track interactions → analyze → customize (simple examples) → adapt (Python-specific) → recommend beginner guides → present → Personalized Docs successful.",
+        "time_complexity": "O(p + c) where p is personalization, c is content customization (personalization complexity).",
+        "space_complexity": "O(u + d) where u is user data, d is documentation (personalization storage).",
+        "strengths": [
+            "Relevance: provides highly relevant content.",
+            "Learning: improves learning effectiveness.",
+            "Engagement: increases user engagement."
+        ],
+        "weaknesses": [
+            "Privacy: raises privacy concerns about user tracking.",
+            "Complexity: requires sophisticated personalization algorithms.",
+            "Maintenance: requires maintenance of user profiles."
+        ],
+        "alternatives": ["Static Documentation", "Role-Based Docs", "Skill-Based Docs", "Community Recommendations"],
+        "explanation": "Documentation systems that customize content, examples, and recommendations based on individual user profiles, preferences, and learning history."
     }
 }
 
