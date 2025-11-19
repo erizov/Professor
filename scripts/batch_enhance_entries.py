@@ -636,6 +636,168 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Service Locator", "Inversion of Control Containers", "Plugin Architecture"],
         "explanation": "Depend on abstractions so high-level logic stays stable while low-level details swap freely."
+    },
+    "semester_02/lecture_08_structural_patterns/adapter/README.md": {
+        "name": "Adapter Pattern",
+        "problem": "Allows incompatible interfaces to collaborate without modifying existing code.",
+        "intuition": "Like a power plug converter: adapt one shape to another so both sides work together.",
+        "inputs": "Client expecting interface A and an existing service implementing interface B.",
+        "outputs": "Adapter class translating client calls to the adaptee’s API.",
+        "steps": [
+            "Identify the target interface the client expects.",
+            "Wrap the existing class (adaptee) inside an adapter implementing the target interface.",
+            "Translate each operation: convert parameters, call adaptee, convert results.",
+            "Inject or instantiate the adapter where the client previously used the adaptee.",
+            "Write tests ensuring the adapter faithfully forwards behavior."
+        ],
+        "example": "Legacy XmlLogger used by new JsonLogger clients; Adapter implements JsonLogger interface but delegates to XmlLogger.",
+        "time_complexity": "Negligible overhead—method dispatch plus conversions.",
+        "space_complexity": "O(1) extra state per adapter instance.",
+        "strengths": [
+            "Enables reuse of existing classes without altering them.",
+            "Supports incremental migrations between APIs."
+        ],
+        "weaknesses": [
+            "Adds another indirection layer to maintain.",
+            "Complex mappings can become brittle."
+        ],
+        "alternatives": ["Facade Pattern", "Decorator Pattern", "Wrapper Classes"],
+        "explanation": "Introduce a thin wrapper that exposes the interface you need while delegating real work to an incompatible class."
+    },
+    "semester_02/lecture_08_structural_patterns/bridge/README.md": {
+        "name": "Bridge Pattern",
+        "problem": "Decouples abstractions from their implementations so both can vary independently.",
+        "intuition": "Think of a remote control talking to different TVs: the remote is the abstraction, the TV electronics are implementations.",
+        "inputs": "Hierarchy where multiple dimensions of variation (e.g., shape vs. rendering API) would otherwise explode subclasses.",
+        "outputs": "Two orthogonal class hierarchies linked via composition.",
+        "steps": [
+            "Split the abstraction (high-level operations) from the implementation (platform-specific work).",
+            "Define an implementation interface with primitive operations.",
+            "Have the abstraction hold a reference to the implementation and delegate calls.",
+            "Subclass both sides independently as variation requires.",
+            "Provide wiring (factories/DI) to pair abstraction with concrete implementation."
+        ],
+        "example": "Shape abstraction (Circle, Square) delegates draw() to Renderer implementation (VectorRenderer, RasterRenderer).",
+        "time_complexity": "Same as underlying implementation plus indirection.",
+        "space_complexity": "One reference from abstraction to implementation.",
+        "strengths": [
+            "Prevents class explosion when combining variation axes.",
+            "Allows runtime swapping of implementations."
+        ],
+        "weaknesses": [
+            "More moving parts compared to simple inheritance.",
+            "Requires careful naming to keep roles clear."
+        ],
+        "alternatives": ["Strategy Pattern", "Abstract Factory", "Adapter"],
+        "explanation": "Compose abstractions with implementations so each can evolve on its own timeline without recompiling the other."
+    },
+    "semester_02/lecture_08_structural_patterns/composite/README.md": {
+        "name": "Composite Pattern",
+        "problem": "Treats individual objects and compositions uniformly (tree structures).",
+        "intuition": "File systems treat files and directories with the same interface; composites hold children, leaves perform real work.",
+        "inputs": "Recursive structures needing hierarchical operations (rendering UI trees, calculating totals).",
+        "outputs": "Component interface with Leaf and Composite implementations.",
+        "steps": [
+            "Define a common Component interface with operations clients need.",
+            "Implement Leaf for atomic objects.",
+            "Implement Composite storing child components; delegate operations to children.",
+            "Expose child-management methods (add/remove) on Composite.",
+            "Ensure clients only depend on the Component interface."
+        ],
+        "example": "Graphic objects: Line, Circle (leaves) and Group (composite) so drawing occurs recursively.",
+        "time_complexity": "Operations typically traverse entire subtree: O(n) where n is number of nodes touched.",
+        "space_complexity": "O(n) to store tree plus recursion stack.",
+        "strengths": [
+            "Simplifies client code—treat everything as Component.",
+            "Naturally models hierarchical data."
+        ],
+        "weaknesses": [
+            "Hard to restrict which composites may contain which components.",
+            "Can complicate operations needing parent references."
+        ],
+        "alternatives": ["Visitor Pattern", "Decorator Pattern", "Flyweight"],
+        "explanation": "Build tree structures where clients operate on components without caring if they’re leaves or composites."
+    },
+    "semester_02/lecture_08_structural_patterns/decorator/README.md": {
+        "name": "Decorator Pattern",
+        "problem": "Adds responsibilities to objects dynamically without subclass explosion.",
+        "intuition": "Like wrapping a gift multiple times: each wrapper adds behavior while still exposing the same interface.",
+        "inputs": "Base component with optional features (logging, caching, compression).",
+        "outputs": "Decorator classes implementing the same interface and holding a reference to the wrapped component.",
+        "steps": [
+            "Define a Component interface implemented by the base class.",
+            "Create Decorator base class implementing Component and storing a Component reference.",
+            "Implement concrete decorators that augment behavior before/after delegating.",
+            "Wrap components with decorators at runtime to compose features.",
+            "Ensure removal/reordering of decorators remains simple."
+        ],
+        "example": "DataSource decorated with CompressionDecorator then EncryptionDecorator before writing to disk.",
+        "time_complexity": "Adds linear overhead proportional to number of decorators.",
+        "space_complexity": "O(k) extra objects for k decorators.",
+        "strengths": [
+            "Flexible combination of features at runtime.",
+            "Avoids deep inheritance hierarchies."
+        ],
+        "weaknesses": [
+            "Debugging stack of decorators can be tricky.",
+            "Many small objects increase complexity."
+        ],
+        "alternatives": ["Proxy Pattern", "Aspect-Oriented Programming", "Subclassing"],
+        "explanation": "Wrap an object with other objects conforming to the same interface to add responsibilities dynamically."
+    },
+    "semester_02/lecture_08_structural_patterns/facade/README.md": {
+        "name": "Facade Pattern",
+        "problem": "Provides a simplified interface to a complex subsystem.",
+        "intuition": "Think customer service hotline: one number routes requests to myriad internal departments.",
+        "inputs": "Subsystem with many classes and configuration steps overwhelming clients.",
+        "outputs": "Facade class exposing coarse-grained operations that orchestrate underlying components.",
+        "steps": [
+            "Map common client workflows that touch multiple subsystem classes.",
+            "Create a Facade exposing methods for each workflow.",
+            "Inside facade methods, coordinate subsystem objects in the right sequence.",
+            "Keep subsystem classes accessible for advanced clients when needed.",
+            "Document facade responsibilities clearly."
+        ],
+        "example": "VideoConverter facade hides codecs, bitrates, and file IO from client code.",
+        "time_complexity": "Same as orchestrated workflow; facade adds minimal overhead.",
+        "space_complexity": "Facade may cache subsystem instances for reuse.",
+        "strengths": [
+            "Reduces learning curve for complicated APIs.",
+            "Decouples clients from subsystem evolution."
+        ],
+        "weaknesses": [
+            "Facade can become a god-object if it grows unchecked.",
+            "Still requires subsystem access for edge cases."
+        ],
+        "alternatives": ["Adapter Pattern", "Mediator Pattern", "Service Layer"],
+        "explanation": "Offer a single entry point that bundles complex operations so clients interact with a friendly API."
+    },
+    "semester_02/lecture_08_structural_patterns/proxy/README.md": {
+        "name": "Proxy Pattern",
+        "problem": "Provides a surrogate object controlling access to a real subject (lazy loading, security, remote access).",
+        "intuition": "Like a personal assistant screening calls before they reach the executive.",
+        "inputs": "Original service object that needs access control, caching, or remote indirection.",
+        "outputs": "Proxy implementing the same interface and delegating to the real subject with extra logic.",
+        "steps": [
+            "Define subject interface shared by both real object and proxy.",
+            "Proxy holds reference to real subject, instantiating it lazily if necessary.",
+            "Override operations to add pre/post behavior (checks, caching, logging).",
+            "Ensure client interacts only with the proxy interface.",
+            "Handle cleanup (connection closing, resource disposal) inside proxy."
+        ],
+        "example": "Virtual proxy delaying image loading until it must be displayed.",
+        "time_complexity": "Varies with added behavior (e.g., caching may improve average time).",
+        "space_complexity": "Proxy holds pointer to real subject plus any cache state.",
+        "strengths": [
+            "Adds cross-cutting concerns transparently.",
+            "Supports remote proxies for distributed systems."
+        ],
+        "weaknesses": [
+            "Another abstraction layer to test and maintain.",
+            "Improper proxies can hide performance issues."
+        ],
+        "alternatives": ["Decorator Pattern", "Aspect-Oriented Programming", "Mediator"],
+        "explanation": "Insert a stand-in object that looks like the real one but adds access control, caching, or remote communication."
     }
 }
 

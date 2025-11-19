@@ -1,40 +1,44 @@
-# Facade
+# Facade Pattern
 
 1. **Name of Algorithm**  
-   Facade
+   Facade Pattern
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements facade algorithm.
+   Provides a simplified interface to a complex subsystem.
 
 3. **Intuition (plain-language explanation)**  
-   Facade is a fundamental algorithm in computer science.
+   Think customer service hotline: one number routes requests to myriad internal departments.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Subsystem with many classes and configuration steps overwhelming clients.  
+   - Output: Facade class exposing coarse-grained operations that orchestrate underlying components.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Map common client workflows that touch multiple subsystem classes.
+2. Create a Facade exposing methods for each workflow.
+3. Inside facade methods, coordinate subsystem objects in the right sequence.
+4. Keep subsystem classes accessible for advanced clients when needed.
+5. Document facade responsibilities clearly.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Facade applied to sample data.
+   VideoConverter facade hides codecs, bitrates, and file IO from client code.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: Same as orchestrated workflow; facade adds minimal overhead.  
+   - Space: Facade may cache subsystem instances for reuse.
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Reduces learning curve for complicated APIs.
+- Decouples clients from subsystem evolution.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Facade can become a god-object if it grows unchecked.
+- Still requires subsystem access for edge cases.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Adapter Pattern, Mediator Pattern, Service Layer
 
 11. **30-second explanation (your own words)**  
-    Facade solves computational problems efficiently.
+    Offer a single entry point that bundles complex operations so clients interact with a friendly API.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

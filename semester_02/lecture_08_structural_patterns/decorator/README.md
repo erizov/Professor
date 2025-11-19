@@ -1,40 +1,44 @@
-# Decorator
+# Decorator Pattern
 
 1. **Name of Algorithm**  
-   Decorator
+   Decorator Pattern
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements decorator algorithm.
+   Adds responsibilities to objects dynamically without subclass explosion.
 
 3. **Intuition (plain-language explanation)**  
-   Decorator is a fundamental algorithm in computer science.
+   Like wrapping a gift multiple times: each wrapper adds behavior while still exposing the same interface.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Base component with optional features (logging, caching, compression).  
+   - Output: Decorator classes implementing the same interface and holding a reference to the wrapped component.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Define a Component interface implemented by the base class.
+2. Create Decorator base class implementing Component and storing a Component reference.
+3. Implement concrete decorators that augment behavior before/after delegating.
+4. Wrap components with decorators at runtime to compose features.
+5. Ensure removal/reordering of decorators remains simple.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Decorator applied to sample data.
+   DataSource decorated with CompressionDecorator then EncryptionDecorator before writing to disk.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: Adds linear overhead proportional to number of decorators.  
+   - Space: O(k) extra objects for k decorators.
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Flexible combination of features at runtime.
+- Avoids deep inheritance hierarchies.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Debugging stack of decorators can be tricky.
+- Many small objects increase complexity.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Proxy Pattern, Aspect-Oriented Programming, Subclassing
 
 11. **30-second explanation (your own words)**  
-    Decorator solves computational problems efficiently.
+    Wrap an object with other objects conforming to the same interface to add responsibilities dynamically.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
