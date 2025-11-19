@@ -1,40 +1,51 @@
-# Kv Cache Optimization
+# KV Cache Optimization
 
 1. **Name of Algorithm**  
-   Kv Cache Optimization
+   KV Cache Optimization
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements kv cache optimization algorithm.
+   Optimizes the storage and retrieval of key-value (KV) cache in transformer inference to reduce memory usage and improve generation speed by efficiently caching and reusing computed attention keys and values.
 
 3. **Intuition (plain-language explanation)**  
-   Kv Cache Optimization is a fundamental algorithm in computer science.
+   Like remembering previous conversations: KV cache optimization is like remembering what you've already discussed in a conversation - instead of recalculating everything from scratch each time (recomputing attention), you remember the key points (cached keys and values) from previous turns and only compute new information - this makes the conversation (generation) much faster because you don't repeat work you've already done.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Previous tokens, attention keys, attention values, cache storage, memory budget.  
+   - Output: Optimized KV cache, reduced memory, faster generation, cached attention states.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Compute KV: compute keys and values for current token.
+2. Cache: store keys and values in cache for reuse.
+3. Retrieve: retrieve cached keys and values for previous tokens.
+4. Concatenate: concatenate cached and new keys/values.
+5. Compute attention: compute attention using cached + new keys/values.
+6. Update cache: update cache with new keys/values.
+7. Optimize storage: optimize cache storage format (compression, quantization).
+8. Manage memory: manage cache memory (eviction, compression for long sequences).
+9. Reuse: reuse cache across generation steps.
+10. Monitor: monitor cache hit rate and memory usage.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Kv Cache Optimization applied to sample data.
+   KV cache: generate token 1 → compute KV for token 1 → cache → generate token 2 → retrieve cached KV for token 1 → compute KV for token 2 → concatenate: [KV1, KV2] → compute attention → cache KV2 → generate token 3 → reuse KV1, KV2 from cache → only compute KV3 → 3x faster than recomputing all → KV cache optimized.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(n) per token where n is sequence length (reuse cached, only compute new), vs O(n²) without cache.  
+   - Space: O(n·d) where n is sequence length, d is hidden dimension (KV cache storage).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Speed: dramatically speeds up generation (avoids recomputing attention).
+- Efficiency: reuses computed attention states.
+- Scalability: enables efficient generation of long sequences.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Memory: KV cache requires significant memory for long sequences.
+- Management: requires cache management for memory-constrained scenarios.
+- Complexity: cache management adds complexity to inference.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: No Cache (Recompute), Partial Caching, Compressed Cache, Flash Attention
 
 11. **30-second explanation (your own words)**  
-    Kv Cache Optimization solves computational problems efficiently.
+    Optimizes the storage and retrieval of key-value (KV) cache in transformer inference to reduce memory usage and improve generation speed by efficiently caching and reusing computed attention keys and values.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

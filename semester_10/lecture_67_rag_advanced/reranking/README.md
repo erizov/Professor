@@ -1,40 +1,51 @@
-# Reranking
+# Re-ranking for RAG
 
 1. **Name of Algorithm**  
-   Reranking
+   Re-ranking for RAG
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements reranking algorithm.
+   Improves retrieval quality by re-ranking initially retrieved documents using a more sophisticated model (cross-encoder, LLM) that considers query-document interactions, placing the most relevant documents at the top.
 
 3. **Intuition (plain-language explanation)**  
-   Reranking is a fundamental algorithm in computer science.
+   Like a second opinion: re-ranking is like getting a second opinion on search results - the initial search (first-stage retrieval) finds many potentially relevant documents quickly, then a more careful reviewer (re-ranker) looks at each document more closely in relation to your query and puts the best matches at the top - it's like having a fast initial filter (retrieval) followed by careful evaluation (re-ranking) to ensure the best results are first.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Initial retrieval results, query, re-ranking model, document texts, ranking criteria.  
+   - Output: Re-ranked results, improved ranking, top relevant documents, optimized retrieval.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Initial retrieval: perform fast first-stage retrieval (BM25, dense retrieval).
+2. Get candidates: get top-k candidate documents (e.g., top 100).
+3. Encode pairs: encode query-document pairs using re-ranker (cross-encoder).
+4. Score: score each query-document pair for relevance.
+5. Rank: rank documents by re-ranker scores.
+6. Select: select top documents from re-ranked list.
+7. Validate: validate that re-ranking improves retrieval quality.
+8. Optimize: optimize re-ranker model and parameters.
+9. Deploy: deploy two-stage retrieval (retrieval + re-ranking).
+10. Monitor: monitor re-ranking performance and quality.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Reranking applied to sample data.
+   Re-ranking: query: 'Python machine learning tutorial' → initial retrieval: BM25 finds 100 documents → re-ranker: cross-encoder scores each query-doc pair → rank: re-ranks by relevance score → result: top 10 documents are most relevant → re-ranking improves precision@10 from 60% to 85% → re-ranking successful.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(k·r) where k is number of candidates, r is re-ranking time per document (slower than retrieval, but only on k documents).  
+   - Space: O(m) where m is re-ranker model size (cross-encoder or LLM for re-ranking).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Quality: significantly improves retrieval quality and precision.
+- Precision: better precision at top-k results.
+- Flexibility: can use sophisticated models for re-ranking.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Latency: re-ranking adds latency (slower than retrieval alone).
+- Cost: re-ranking with LLMs can be expensive.
+- Scalability: re-ranking many candidates can be slow.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Single-Stage Retrieval, Learning-to-Rank, Neural Re-ranking, LLM Re-ranking
 
 11. **30-second explanation (your own words)**  
-    Reranking solves computational problems efficiently.
+    Improves retrieval quality by re-ranking initially retrieved documents using a more sophisticated model (cross-encoder, LLM) that considers query-document interactions, placing the most relevant documents at the top.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

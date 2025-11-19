@@ -12716,366 +12716,562 @@
     {
       "path": "semester_10/lecture_65_llm_training_advanced/pipeline_parallelism/README.md",
       "name": "Pipeline Parallelism",
-      "problem": "Implements pipeline parallelism algorithm.",
-      "intuition": "Pipeline Parallelism is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Partitions model layers across multiple devices in a pipeline, where each device processes a different stage of the pipeline, enabling training of very large models with efficient device utilization.",
+      "intuition": "Like an assembly line: pipeline parallelism is like an assembly line where each worker (GPU) handles a different stage of production (model layers) - while worker 1 is processing stage 1 for item A, worker 2 is processing stage 2 for item B (from previous batch), and worker 3 is processing stage 3 for item C - work flows through the pipeline like items on an assembly line, allowing multiple items (batches) to be processed simultaneously, maximizing device utilization.",
+      "inputs": "Large model, multiple GPUs, model layers, micro-batches, pipeline stages.",
+      "outputs": "Pipeline-parallel training, efficient device utilization, scaled model capacity, trained model.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Partition layers: partition model layers across GPUs (each GPU gets subset of layers).",
+        "Create pipeline: create pipeline stages (GPU 0: layers 0-10, GPU 1: layers 11-20, etc.).",
+        "Split batch: split batch into micro-batches for pipeline processing.",
+        "Forward pass: process micro-batches through pipeline (GPU 0 → GPU 1 → GPU 2 → ...).",
+        "Overlap: overlap computation and communication (while GPU 1 processes, GPU 0 starts next micro-batch).",
+        "Backward pass: process gradients backward through pipeline (GPU N → GPU N-1 → ... → GPU 0).",
+        "Synchronize: synchronize gradients across pipeline stages.",
+        "Update: update parameters in each pipeline stage.",
+        "Optimize: optimize pipeline schedule (1F1B, GPipe) for efficiency.",
+        "Scale: scale to very large models with many pipeline stages."
       ],
-      "example": "Example: Pipeline Parallelism applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Pipeline parallelism: GPT-3 (96 layers) → 8 GPUs → partition: 12 layers per GPU → micro-batches: 4 → forward: micro-batch 1 on GPU 0, while GPU 1 processes previous, etc. → pipeline: 4 micro-batches in pipeline simultaneously → utilization: 87% (vs 12% sequential) → pipeline parallelism efficient.",
+      "time_complexity": "O(n/p + m·c) where n is sequential time, p is pipeline stages, m is micro-batches, c is communication overhead.",
+      "space_complexity": "O(l/p) per GPU where l is total layers, p is number of GPUs (layers partitioned).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Scalability: enables training models larger than single GPU memory.",
+        "Efficiency: high device utilization through pipeline overlap.",
+        "Flexibility: can combine with data parallelism for hybrid parallelism."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Pipeline bubbles: pipeline bubbles reduce efficiency (idle time at start/end).",
+        "Complexity: pipeline parallelism is complex to implement and tune.",
+        "Memory: requires storing activations for multiple micro-batches."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Model Parallelism",
+        "Data Parallelism",
+        "Tensor Parallelism",
+        "Hybrid Parallelism"
       ],
-      "explanation": "Pipeline Parallelism solves computational problems efficiently."
+      "explanation": "Partitions model layers across multiple devices in a pipeline, where each device processes a different stage of the pipeline, enabling training of very large models with efficient device utilization."
     },
     {
       "path": "semester_10/lecture_65_llm_training_advanced/tensor_parallelism/README.md",
       "name": "Tensor Parallelism",
-      "problem": "Implements tensor parallelism algorithm.",
-      "intuition": "Tensor Parallelism is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Splits individual tensor operations (matrix multiplications) across multiple devices by partitioning tensors along specific dimensions, enabling parallel computation of large matrix operations.",
+      "intuition": "Like splitting a large multiplication problem: tensor parallelism is like splitting a huge multiplication problem across multiple calculators - if you need to multiply two huge matrices, you split each matrix into pieces, give each calculator (GPU) a piece, they multiply their pieces in parallel, and you combine the results - this allows you to handle matrix multiplications too large for a single calculator (GPU) by using multiple calculators together.",
+      "inputs": "Large tensors, matrix operations, multiple GPUs, tensor dimensions, partitioning strategy.",
+      "outputs": "Parallel tensor operations, distributed computation, scaled operations, combined results.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Identify operations: identify large tensor operations to parallelize (attention, feedforward).",
+        "Choose dimension: choose dimension to split (row-wise, column-wise, or both).",
+        "Partition: partition input tensors across GPUs along chosen dimension.",
+        "Distribute: distribute tensor partitions to different GPUs.",
+        "Compute: each GPU computes its portion of the operation in parallel.",
+        "Communicate: GPUs communicate intermediate results (all-reduce, all-gather) as needed.",
+        "Combine: combine results from all GPUs to form complete output tensor.",
+        "Synchronize: synchronize GPUs to ensure correct computation.",
+        "Optimize: optimize communication patterns for efficiency.",
+        "Scale: scale to larger tensors with more GPUs."
       ],
-      "example": "Example: Tensor Parallelism applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Tensor parallelism: attention matrix multiplication (4096×4096) → 4 GPUs → row-wise split: each GPU gets 1024 rows → compute: each GPU multiplies its 1024×4096 partition → communicate: all-reduce for output → combine: 4096×4096 result → 4x parallelism → tensor parallelism operational.",
+      "time_complexity": "O(n²/(p) + c) where n is tensor size, p is number of GPUs, c is communication overhead.",
+      "space_complexity": "O(n²/p) per GPU where n is tensor size, p is number of GPUs (tensors partitioned).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Fine-grained: enables fine-grained parallelism within operations.",
+        "Efficiency: efficient for large tensor operations.",
+        "Scalability: scales well with number of GPUs for large tensors."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Communication: requires frequent communication between GPUs.",
+        "Overhead: communication overhead can limit speedup.",
+        "Complexity: implementing tensor parallelism can be complex."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Model Parallelism",
+        "Pipeline Parallelism",
+        "Data Parallelism",
+        "Hybrid Parallelism"
       ],
-      "explanation": "Tensor Parallelism solves computational problems efficiently."
+      "explanation": "Splits individual tensor operations (matrix multiplications) across multiple devices by partitioning tensors along specific dimensions, enabling parallel computation of large matrix operations."
     },
     {
       "path": "semester_10/lecture_66_llm_inference/batch_inference/README.md",
       "name": "Batch Inference",
-      "problem": "Implements batch inference algorithm.",
-      "intuition": "Batch Inference is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Processes multiple inference requests together in batches, improving GPU utilization and throughput by amortizing computation overhead across multiple requests.",
+      "intuition": "Like processing multiple orders at once: batch inference is like a restaurant preparing multiple orders together - instead of cooking one meal at a time (one request at a time), you prepare several meals simultaneously (batch requests) - you use the same kitchen (GPU) more efficiently, and even though individual meals might take slightly longer, you serve more meals per hour (higher throughput) - it's more efficient to use the oven (GPU) for multiple items at once.",
+      "inputs": "Multiple inference requests, batch size, model, batching strategy, request queue.",
+      "outputs": "Batch predictions, improved throughput, efficient GPU utilization, batched results.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Collect requests: collect multiple inference requests in queue.",
+        "Form batch: group requests into batch (wait for batch size or timeout).",
+        "Pad: pad sequences to same length if needed (for variable-length inputs).",
+        "Process: process entire batch through model simultaneously.",
+        "Compute: GPU processes batch in parallel (matrix operations on batch dimension).",
+        "Extract: extract individual predictions from batch output.",
+        "Return: return results to respective requesters.",
+        "Optimize: optimize batch size for throughput vs latency trade-off.",
+        "Handle: handle variable batch sizes and request arrival patterns.",
+        "Monitor: monitor batch processing metrics (throughput, latency)."
       ],
-      "example": "Example: Batch Inference applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Batch inference: 10 requests arrive → form batch: batch size 10 → pad: pad to max length → process: single forward pass processes all 10 → GPU utilization: 90% (vs 20% for individual) → throughput: 100 requests/sec (vs 20 requests/sec) → latency: 50ms per request (vs 40ms individual, but 5x throughput) → batch inference efficient.",
+      "time_complexity": "O(b·n) where b is batch size, n is sequence length (amortized overhead per request).",
+      "space_complexity": "O(b·n) where b is batch size, n is sequence length (batch storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Throughput: significantly improves inference throughput.",
+        "Efficiency: better GPU utilization and compute efficiency.",
+        "Cost: reduces cost per inference through better resource utilization."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Latency: may increase latency due to batching delay.",
+        "Padding: variable-length sequences require padding (waste computation).",
+        "Complexity: requires batching logic and queue management."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Individual Inference",
+        "Continuous Batching",
+        "Dynamic Batching",
+        "Request Batching"
       ],
-      "explanation": "Batch Inference solves computational problems efficiently."
+      "explanation": "Processes multiple inference requests together in batches, improving GPU utilization and throughput by amortizing computation overhead across multiple requests."
     },
     {
       "path": "semester_10/lecture_66_llm_inference/continuous_batching/README.md",
-      "name": "Continuous Batching",
-      "problem": "Implements continuous batching algorithm.",
-      "intuition": "Continuous Batching is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Continuous Batching (Iteration-Level Batching)",
+      "problem": "Dynamically adds and removes requests from an active batch during generation, allowing new requests to join and completed requests to exit without waiting for the entire batch to finish, maximizing GPU utilization.",
+      "intuition": "Like a revolving door: continuous batching is like a revolving door where people (requests) can enter and exit at any time - instead of waiting for everyone to finish before letting new people in (static batching), new people can join the door (batch) as soon as there's space, and people who finish can leave immediately - the door (GPU) stays busy all the time, maximizing throughput while minimizing wait time for everyone.",
+      "inputs": "Incoming requests, active batch, generation states, completion status, batch capacity.",
+      "outputs": "Continuous batch processing, high GPU utilization, low latency, improved throughput.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Maintain active batch: maintain active batch of requests being processed.",
+        "Add requests: add new requests to batch when they arrive (if capacity allows).",
+        "Generate: generate one token for all requests in active batch.",
+        "Check completion: check which requests have completed generation.",
+        "Remove completed: remove completed requests from active batch.",
+        "Add new: add new waiting requests to fill batch capacity.",
+        "Continue: continue generation for remaining requests.",
+        "Iterate: repeat token generation with dynamic batch membership.",
+        "Optimize: optimize batch management for throughput and latency.",
+        "Monitor: monitor batch utilization and request wait times."
       ],
-      "example": "Example: Continuous Batching applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Continuous batching: batch capacity 8 → 5 requests generating → 3 new requests arrive → add to batch: now 8 requests → generate token → 2 requests complete → remove: batch now 6 → add 2 new requests: batch 8 again → continue → GPU utilization: 95% (vs 60% static) → latency: low (no waiting for batch) → continuous batching efficient.",
+      "time_complexity": "O(b·n) per iteration where b is active batch size, n is sequence length (dynamic batching).",
+      "space_complexity": "O(b_max·n) where b_max is maximum batch size, n is sequence length (active batch storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Efficiency: maximizes GPU utilization (near 100%).",
+        "Latency: low latency for requests (no waiting for batch completion).",
+        "Throughput: high throughput through continuous processing."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: more complex than static batching (dynamic management).",
+        "Memory: requires managing variable batch sizes and generation states.",
+        "Scheduling: requires efficient scheduling of requests."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Static Batching",
+        "Individual Inference",
+        "Dynamic Batching",
+        "Request Queuing"
       ],
-      "explanation": "Continuous Batching solves computational problems efficiently."
+      "explanation": "Dynamically adds and removes requests from an active batch during generation, allowing new requests to join and completed requests to exit without waiting for the entire batch to finish, maximizing GPU utilization."
     },
     {
       "path": "semester_10/lecture_66_llm_inference/kv_cache_optimization/README.md",
-      "name": "Kv Cache Optimization",
-      "problem": "Implements kv cache optimization algorithm.",
-      "intuition": "Kv Cache Optimization is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "KV Cache Optimization",
+      "problem": "Optimizes the storage and retrieval of key-value (KV) cache in transformer inference to reduce memory usage and improve generation speed by efficiently caching and reusing computed attention keys and values.",
+      "intuition": "Like remembering previous conversations: KV cache optimization is like remembering what you've already discussed in a conversation - instead of recalculating everything from scratch each time (recomputing attention), you remember the key points (cached keys and values) from previous turns and only compute new information - this makes the conversation (generation) much faster because you don't repeat work you've already done.",
+      "inputs": "Previous tokens, attention keys, attention values, cache storage, memory budget.",
+      "outputs": "Optimized KV cache, reduced memory, faster generation, cached attention states.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Compute KV: compute keys and values for current token.",
+        "Cache: store keys and values in cache for reuse.",
+        "Retrieve: retrieve cached keys and values for previous tokens.",
+        "Concatenate: concatenate cached and new keys/values.",
+        "Compute attention: compute attention using cached + new keys/values.",
+        "Update cache: update cache with new keys/values.",
+        "Optimize storage: optimize cache storage format (compression, quantization).",
+        "Manage memory: manage cache memory (eviction, compression for long sequences).",
+        "Reuse: reuse cache across generation steps.",
+        "Monitor: monitor cache hit rate and memory usage."
       ],
-      "example": "Example: Kv Cache Optimization applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "KV cache: generate token 1 → compute KV for token 1 → cache → generate token 2 → retrieve cached KV for token 1 → compute KV for token 2 → concatenate: [KV1, KV2] → compute attention → cache KV2 → generate token 3 → reuse KV1, KV2 from cache → only compute KV3 → 3x faster than recomputing all → KV cache optimized.",
+      "time_complexity": "O(n) per token where n is sequence length (reuse cached, only compute new), vs O(n²) without cache.",
+      "space_complexity": "O(n·d) where n is sequence length, d is hidden dimension (KV cache storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Speed: dramatically speeds up generation (avoids recomputing attention).",
+        "Efficiency: reuses computed attention states.",
+        "Scalability: enables efficient generation of long sequences."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Memory: KV cache requires significant memory for long sequences.",
+        "Management: requires cache management for memory-constrained scenarios.",
+        "Complexity: cache management adds complexity to inference."
       ],
       "alternatives": [
-        "Related algorithms"
+        "No Cache (Recompute)",
+        "Partial Caching",
+        "Compressed Cache",
+        "Flash Attention"
       ],
-      "explanation": "Kv Cache Optimization solves computational problems efficiently."
+      "explanation": "Optimizes the storage and retrieval of key-value (KV) cache in transformer inference to reduce memory usage and improve generation speed by efficiently caching and reusing computed attention keys and values."
     },
     {
       "path": "semester_10/lecture_66_llm_inference/pruning_inference/README.md",
-      "name": "Pruning Inference",
-      "problem": "Implements pruning inference algorithm.",
-      "intuition": "Pruning Inference is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Pruning for Inference",
+      "problem": "Removes less important weights or neurons from trained models to reduce model size and accelerate inference while maintaining acceptable accuracy, enabling deployment on resource-constrained devices.",
+      "intuition": "Like trimming a tree: pruning for inference is like trimming a tree to keep only the essential branches - you remove branches (weights/neurons) that don't contribute much to the tree's health (model accuracy), making the tree (model) smaller and easier to manage (faster inference) - the tree still functions well (maintains accuracy) but is more efficient (smaller, faster).",
+      "inputs": "Trained model, pruning strategy, importance criteria, target sparsity, accuracy requirements.",
+      "outputs": "Pruned model, reduced size, faster inference, maintained accuracy, optimized model.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Evaluate importance: evaluate importance of weights or neurons (magnitude, gradient, activation).",
+        "Select: select weights/neurons to prune based on importance criteria.",
+        "Prune: remove selected weights (set to zero) or remove neurons entirely.",
+        "Fine-tune: fine-tune pruned model to recover accuracy.",
+        "Iterate: optionally iterate pruning and fine-tuning (gradual pruning).",
+        "Validate: validate pruned model accuracy on test set.",
+        "Optimize: optimize pruning strategy for target sparsity and accuracy.",
+        "Deploy: deploy pruned model for inference.",
+        "Measure: measure inference speedup and accuracy impact.",
+        "Tune: tune pruning ratio based on accuracy-speed trade-off."
       ],
-      "example": "Example: Pruning Inference applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Pruning: BERT model (110M params) → evaluate: identify 50% least important weights → prune: remove 50% weights → fine-tune: recover accuracy → result: 55M params (50% reduction), 2x faster inference, 98% accuracy (vs 99% original) → pruned model deployable.",
+      "time_complexity": "O(m) for pruning where m is model size, O(n) for fine-tuning where n is fine-tuning data size.",
+      "space_complexity": "O(m·s) where m is model size, s is sparsity factor (reduced from O(m) full model).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Efficiency: reduces model size and inference time.",
+        "Deployability: enables deployment on resource-constrained devices.",
+        "Maintains accuracy: can maintain good accuracy with proper pruning."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Accuracy: may have some accuracy degradation.",
+        "Fine-tuning: requires fine-tuning to recover accuracy.",
+        "Sparsity: unstructured pruning may not speed up on all hardware."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Full Model",
+        "Quantization",
+        "Knowledge Distillation",
+        "Structured Pruning"
       ],
-      "explanation": "Pruning Inference solves computational problems efficiently."
+      "explanation": "Removes less important weights or neurons from trained models to reduce model size and accelerate inference while maintaining acceptable accuracy, enabling deployment on resource-constrained devices."
     },
     {
       "path": "semester_10/lecture_66_llm_inference/quantization_inference/README.md",
-      "name": "Quantization Inference",
-      "problem": "Implements quantization inference algorithm.",
-      "intuition": "Quantization Inference is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Quantization for Inference",
+      "problem": "Reduces precision of model weights and activations from FP32 to lower precision (INT8, INT4) during inference, reducing model size and accelerating inference on hardware that supports low-precision operations.",
+      "intuition": "Like using a simpler measuring tool: quantization for inference is like using a ruler with fewer markings (INT8) instead of a precise caliper (FP32) - the simpler ruler (lower precision) is faster to use and takes less space, and for most measurements (inference), it's accurate enough - you trade a tiny bit of precision for much better speed and efficiency, making measurements (inference) much faster.",
+      "inputs": "FP32 model, target precision, calibration data, quantization scheme, hardware support.",
+      "outputs": "Quantized model, reduced precision, faster inference, smaller model, optimized deployment.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Calibrate: calibrate quantization parameters using representative data.",
+        "Quantize weights: convert FP32 weights to target precision (INT8, INT4).",
+        "Quantize activations: convert activations to target precision during inference.",
+        "Scale: apply scaling factors to maintain numerical range.",
+        "Dequantize: dequantize outputs if needed (convert back to FP32).",
+        "Validate: validate quantized model accuracy on test set.",
+        "Optimize: optimize quantization scheme (per-tensor, per-channel) for accuracy.",
+        "Deploy: deploy quantized model on target hardware.",
+        "Measure: measure inference speedup and accuracy impact.",
+        "Tune: tune quantization parameters for optimal accuracy-speed trade-off."
       ],
-      "example": "Example: Quantization Inference applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Quantization: GPT-3 (FP32, 700GB) → INT8 quantization → calibrate: determine scaling factors → quantize: convert weights to INT8 → result: 175GB (4x smaller), 2-4x faster inference, 99% accuracy (vs 100% FP32) → quantized model deployable on INT8 hardware.",
+      "time_complexity": "O(m) for quantization where m is model size, O(1) per operation (faster with INT8 operations).",
+      "space_complexity": "O(m/p) where m is FP32 model size, p is precision reduction factor (4x for INT8, 8x for INT4).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Speed: 2-4x faster inference on supported hardware.",
+        "Size: 4x smaller model (INT8) or 8x smaller (INT4).",
+        "Efficiency: better energy efficiency and lower memory bandwidth."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Hardware: requires hardware support for low-precision operations.",
+        "Accuracy: may have slight accuracy degradation.",
+        "Calibration: requires calibration data and careful tuning."
       ],
       "alternatives": [
-        "Related algorithms"
+        "FP32 Inference",
+        "FP16 Inference",
+        "Dynamic Quantization",
+        "Post-Training Quantization"
       ],
-      "explanation": "Quantization Inference solves computational problems efficiently."
+      "explanation": "Reduces precision of model weights and activations from FP32 to lower precision (INT8, INT4) during inference, reducing model size and accelerating inference on hardware that supports low-precision operations."
     },
     {
       "path": "semester_10/lecture_66_llm_inference/speculative_decoding/README.md",
       "name": "Speculative Decoding",
-      "problem": "Implements speculative decoding algorithm.",
-      "intuition": "Speculative Decoding is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Accelerates LLM generation by using a smaller draft model to generate multiple tokens speculatively, then verifying them with the larger target model in parallel, accepting correct tokens and regenerating incorrect ones.",
+      "intuition": "Like a fast draft and careful review: speculative decoding is like writing a document - you quickly draft multiple paragraphs (small fast model generates tokens speculatively), then have an editor review them all at once (large model verifies in parallel) - if the draft is good, you keep it (accept tokens), if not, you fix it (regenerate) - this is faster than writing and reviewing one paragraph at a time (sequential generation) because you can review multiple paragraphs simultaneously.",
+      "inputs": "Target model, draft model, prompt, generation parameters, verification strategy.",
+      "outputs": "Accelerated generation, verified tokens, improved throughput, speculative predictions.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Generate draft: small draft model generates γ tokens speculatively (draft sequence).",
+        "Verify: large target model verifies all γ tokens in parallel (single forward pass).",
+        "Accept: accept tokens that match draft model's predictions.",
+        "Reject: identify first token where draft and target disagree.",
+        "Regenerate: regenerate from rejection point using target model.",
+        "Repeat: repeat speculative generation and verification.",
+        "Optimize: optimize draft model and γ (number of speculative tokens).",
+        "Measure: measure speedup and acceptance rate.",
+        "Tune: tune draft model quality and verification strategy.",
+        "Deploy: deploy speculative decoding for faster inference."
       ],
-      "example": "Example: Speculative Decoding applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Speculative decoding: target model (GPT-4, slow) → draft model (GPT-3.5, fast) → draft: generates 4 tokens speculatively → verify: GPT-4 verifies all 4 in parallel → accept: 3 tokens match → reject: token 4 differs → regenerate: GPT-4 generates from token 4 → speedup: 2-3x faster → speculative decoding successful.",
+      "time_complexity": "O(γ·t_d + t_t) where γ is speculative tokens, t_d is draft time, t_t is target verification time (vs O(γ·t_t) sequential).",
+      "space_complexity": "O(m_t + m_d) where m_t is target model size, m_d is draft model size (both models needed).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Speed: 2-3x faster generation for compatible models.",
+        "Quality: maintains target model quality (verification ensures correctness).",
+        "Efficiency: better GPU utilization through parallel verification."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Draft quality: requires good draft model (high acceptance rate).",
+        "Memory: requires storing both draft and target models.",
+        "Complexity: more complex than standard generation."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Standard Decoding",
+        "Parallel Decoding",
+        "Lookahead Decoding",
+        "Medusa"
       ],
-      "explanation": "Speculative Decoding solves computational problems efficiently."
+      "explanation": "Accelerates LLM generation by using a smaller draft model to generate multiple tokens speculatively, then verifying them with the larger target model in parallel, accepting correct tokens and regenerating incorrect ones."
     },
     {
       "path": "semester_10/lecture_67_rag_advanced/agentic_rag/README.md",
-      "name": "Agentic Rag",
-      "problem": "Implements agentic rag algorithm.",
-      "intuition": "Agentic Rag is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Agentic RAG",
+      "problem": "Enhances RAG systems with autonomous agents that can plan, reason, and iteratively retrieve and process information to answer complex queries, enabling multi-step reasoning and dynamic information gathering.",
+      "intuition": "Like a research assistant: agentic RAG is like having a research assistant who doesn't just look up one thing - they understand your question, break it down into steps, search for information, read the results, decide if they need more information, search again if needed, and synthesize everything into a complete answer - they're autonomous (make decisions) and iterative (refine their search based on what they find), making them much more capable than simple lookup systems.",
+      "inputs": "User query, knowledge base, agent capabilities, reasoning tools, retrieval system.",
+      "outputs": "Comprehensive answer, multi-step reasoning, retrieved information, agent actions, final response.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Understand query: agent analyzes and understands the user query.",
+        "Plan: agent creates plan for answering query (break into sub-questions).",
+        "Retrieve: agent retrieves relevant information from knowledge base.",
+        "Reason: agent reasons about retrieved information.",
+        "Evaluate: agent evaluates if enough information to answer.",
+        "Iterate: if needed, agent formulates new queries and retrieves more information.",
+        "Synthesize: agent synthesizes all retrieved information.",
+        "Generate: agent generates comprehensive answer using LLM.",
+        "Verify: agent verifies answer quality and completeness.",
+        "Return: return final answer to user."
       ],
-      "example": "Example: Agentic Rag applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Agentic RAG: query: 'What are the main causes of climate change and their economic impacts?' → agent: plans → step 1: retrieve causes → step 2: retrieve economic impacts → step 3: synthesize → retrieves: scientific papers on causes → retrieves: economic studies → reasons: connects causes to impacts → generates: comprehensive answer → agentic RAG provides detailed response.",
+      "time_complexity": "O(s·r) where s is number of steps, r is retrieval time per step (multi-step process).",
+      "space_complexity": "O(d + m) where d is retrieved documents, m is agent state (planning and reasoning state).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Capability: handles complex, multi-step queries.",
+        "Autonomy: agent makes decisions and adapts strategy.",
+        "Quality: produces more comprehensive and accurate answers."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Latency: multi-step process increases response time.",
+        "Complexity: more complex than simple RAG systems.",
+        "Cost: multiple LLM calls increase cost."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Simple RAG",
+        "Multi-Hop RAG",
+        "ReAct",
+        "Tool-Using Agents"
       ],
-      "explanation": "Agentic Rag solves computational problems efficiently."
+      "explanation": "Enhances RAG systems with autonomous agents that can plan, reason, and iteratively retrieve and process information to answer complex queries, enabling multi-step reasoning and dynamic information gathering."
     },
     {
       "path": "semester_10/lecture_67_rag_advanced/context_compression/README.md",
-      "name": "Context Compression",
-      "problem": "Implements context compression algorithm.",
-      "intuition": "Context Compression is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Context Compression for RAG",
+      "problem": "Compresses retrieved documents and context to fit within LLM context windows while preserving essential information, enabling RAG systems to use more documents or longer documents within token limits.",
+      "intuition": "Like summarizing a long report: context compression for RAG is like summarizing a long report to fit on one page - you keep the most important information (key facts, main points) and remove less critical details (examples, repetitions) - the summary (compressed context) contains the essential information in much less space, allowing you to include more reports (documents) in your analysis (LLM context) without exceeding the page limit (token limit).",
+      "inputs": "Retrieved documents, context window limit, compression ratio, importance criteria, compression method.",
+      "outputs": "Compressed context, preserved information, reduced tokens, fit context window, optimized retrieval.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Retrieve: retrieve relevant documents from knowledge base.",
+        "Analyze: analyze documents for importance and relevance.",
+        "Extract: extract key information (summaries, key sentences, entities).",
+        "Compress: compress documents using method (summarization, extraction, re-ranking).",
+        "Rank: rank compressed chunks by relevance.",
+        "Select: select top-k compressed chunks to fit context window.",
+        "Combine: combine compressed chunks into final context.",
+        "Validate: validate that compressed context preserves essential information.",
+        "Optimize: optimize compression strategy for information retention.",
+        "Use: use compressed context in LLM prompt."
       ],
-      "example": "Example: Context Compression applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Context compression: retrieve 10 documents (50K tokens) → context limit: 4K tokens → compress: summarize each document → extract: key sentences and facts → rank: by relevance → select: top compressed chunks → result: 4K tokens, 80% information retained → fit in context → context compression successful.",
+      "time_complexity": "O(d·c) where d is number of documents, c is compression time per document.",
+      "space_complexity": "O(t_c) where t_c is compressed context size (reduced from O(t_o) original size).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Capacity: enables using more documents within context limits.",
+        "Efficiency: reduces token usage and cost.",
+        "Focus: focuses on most relevant information."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Information loss: compression may lose some information.",
+        "Quality: compression quality depends on method and documents.",
+        "Complexity: adds compression step to RAG pipeline."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Full Context",
+        "Chunking",
+        "Re-ranking",
+        "Hierarchical Summarization"
       ],
-      "explanation": "Context Compression solves computational problems efficiently."
+      "explanation": "Compresses retrieved documents and context to fit within LLM context windows while preserving essential information, enabling RAG systems to use more documents or longer documents within token limits."
     },
     {
       "path": "semester_10/lecture_67_rag_advanced/hybrid_search/README.md",
-      "name": "Hybrid Search",
-      "problem": "Implements hybrid search algorithm.",
-      "intuition": "Hybrid Search is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Hybrid Search for RAG",
+      "problem": "Combines multiple search methods (keyword search, semantic search, dense retrieval) to improve retrieval quality by leveraging strengths of different approaches and compensating for their weaknesses.",
+      "intuition": "Like using multiple search tools: hybrid search is like using both a library catalog (keyword search) and asking a librarian (semantic search) - the catalog is great for exact matches (keywords), while the librarian understands meaning (semantics) - by combining both, you get better results: you find documents with exact terms (keyword) and documents that mean the same thing even with different words (semantic) - it's like having multiple ways to find information, making your search more comprehensive and accurate.",
+      "inputs": "Query, knowledge base, keyword index, semantic embeddings, search methods, fusion strategy.",
+      "outputs": "Hybrid search results, combined rankings, improved retrieval, diverse document set.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Keyword search: perform keyword/BM25 search on query.",
+        "Semantic search: perform semantic/dense vector search on query embedding.",
+        "Score: score documents from each search method.",
+        "Normalize: normalize scores from different methods to comparable scale.",
+        "Combine: combine scores using fusion strategy (weighted sum, reciprocal rank fusion).",
+        "Rank: rank documents by combined scores.",
+        "Diversify: optionally diversify results to avoid redundancy.",
+        "Select: select top-k documents from hybrid ranking.",
+        "Optimize: optimize fusion weights and search methods.",
+        "Return: return hybrid search results for RAG."
       ],
-      "example": "Example: Hybrid Search applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Hybrid search: query: 'machine learning algorithms' → keyword: finds docs with exact terms → semantic: finds docs about 'ML methods', 'AI techniques' → combine: weighted sum (0.4 keyword + 0.6 semantic) → rank: hybrid ranking → result: 10 diverse, relevant documents → hybrid search improves retrieval.",
+      "time_complexity": "O(k + s) where k is keyword search time, s is semantic search time (parallel or sequential).",
+      "space_complexity": "O(i + e) where i is keyword index size, e is embedding index size (both indices needed).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Quality: improves retrieval quality by combining methods.",
+        "Robustness: more robust to query variations and document styles.",
+        "Coverage: retrieves both exact matches and semantically similar documents."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: more complex than single-method search.",
+        "Cost: requires maintaining multiple indices.",
+        "Tuning: requires tuning fusion weights and parameters."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Keyword Search",
+        "Semantic Search",
+        "Dense Retrieval",
+        "Sparse Retrieval"
       ],
-      "explanation": "Hybrid Search solves computational problems efficiently."
+      "explanation": "Combines multiple search methods (keyword search, semantic search, dense retrieval) to improve retrieval quality by leveraging strengths of different approaches and compensating for their weaknesses."
     },
     {
       "path": "semester_10/lecture_67_rag_advanced/multi_hop_rag/README.md",
-      "name": "Multi Hop Rag",
-      "problem": "Implements multi hop rag algorithm.",
-      "intuition": "Multi Hop Rag is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Multi-Hop RAG",
+      "problem": "Answers complex queries requiring information from multiple documents through iterative retrieval, where each retrieval step uses information from previous steps to refine the search, enabling reasoning across multiple knowledge sources.",
+      "intuition": "Like following a chain of clues: multi-hop RAG is like solving a mystery by following clues - you start with the question (initial query), find the first clue (retrieve first document), which leads you to the next clue (refined query based on first document), you follow that (retrieve second document), and continue until you have enough information to solve the mystery (answer the question) - each step (hop) builds on the previous one, allowing you to reason across multiple sources of information.",
+      "inputs": "Complex query, knowledge base, retrieval system, reasoning capability, hop limit.",
+      "outputs": "Multi-hop answer, retrieved document chain, reasoning path, comprehensive response.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Initial retrieval: retrieve initial documents based on original query.",
+        "Analyze: analyze retrieved documents for relevant information.",
+        "Reason: reason about what additional information is needed.",
+        "Refine query: formulate refined query based on initial retrieval.",
+        "Next hop: retrieve additional documents using refined query.",
+        "Combine: combine information from all retrieved documents.",
+        "Check: check if query can be answered with current information.",
+        "Iterate: if not, perform another hop (refine query, retrieve again).",
+        "Synthesize: synthesize information from all hops.",
+        "Generate: generate final answer using all retrieved information."
       ],
-      "example": "Example: Multi Hop Rag applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Multi-hop RAG: query: 'What did the CEO say about the company's expansion plans?' → hop 1: retrieve CEO's recent statements → find: mentions 'Asian markets' → hop 2: retrieve company's Asia expansion documents → find: specific plans → hop 3: retrieve financial reports on Asia → combine: CEO statement + expansion plans + financials → answer: comprehensive response → multi-hop RAG successful.",
+      "time_complexity": "O(h·r) where h is number of hops, r is retrieval time per hop (iterative retrieval).",
+      "space_complexity": "O(h·d) where h is hops, d is documents per hop (accumulated retrieved documents).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Complex queries: handles queries requiring information from multiple sources.",
+        "Reasoning: enables reasoning across multiple documents.",
+        "Comprehensiveness: produces more comprehensive answers."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Latency: multiple hops increase response time.",
+        "Error propagation: errors in early hops can affect later hops.",
+        "Complexity: more complex than single-hop RAG."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Single-Hop RAG",
+        "Agentic RAG",
+        "Iterative Retrieval",
+        "Query Decomposition"
       ],
-      "explanation": "Multi Hop Rag solves computational problems efficiently."
+      "explanation": "Answers complex queries requiring information from multiple documents through iterative retrieval, where each retrieval step uses information from previous steps to refine the search, enabling reasoning across multiple knowledge sources."
     },
     {
       "path": "semester_10/lecture_67_rag_advanced/query_expansion/README.md",
-      "name": "Query Expansion",
-      "problem": "Implements query expansion algorithm.",
-      "intuition": "Query Expansion is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Query Expansion for RAG",
+      "problem": "Enhances user queries by adding related terms, synonyms, or reformulations to improve retrieval quality, helping RAG systems find relevant documents even when query terms don't exactly match document vocabulary.",
+      "intuition": "Like adding synonyms to your search: query expansion is like searching for 'car' and also searching for 'automobile', 'vehicle', 'auto' - you expand your search terms to include related words, making it more likely to find what you're looking for even if the documents use different words - it's like speaking the same language as the documents, increasing the chances of finding relevant information.",
+      "inputs": "Original query, synonym dictionaries, related terms, expansion methods, expansion parameters.",
+      "outputs": "Expanded query, improved retrieval, diverse search terms, better document matching.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Analyze query: analyze original query to identify key terms.",
+        "Generate synonyms: generate synonyms for key terms (thesaurus, word embeddings).",
+        "Add related terms: add related terms using word embeddings or knowledge graphs.",
+        "Reformulate: create query reformulations (paraphrases, alternative phrasings).",
+        "Combine: combine original query with expanded terms.",
+        "Weight: assign weights to original vs expanded terms.",
+        "Retrieve: perform retrieval using expanded query.",
+        "Rank: rank documents based on expanded query matching.",
+        "Validate: validate that expansion improves retrieval quality.",
+        "Optimize: optimize expansion strategy and parameters."
       ],
-      "example": "Example: Query Expansion applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Query expansion: query: 'machine learning' → expand: add 'ML', 'artificial intelligence', 'AI algorithms', 'deep learning' → retrieve: finds documents with any of these terms → result: 50% more relevant documents → query expansion improves retrieval.",
+      "time_complexity": "O(t·e) where t is number of terms, e is expansion time per term (synonym lookup, embedding search).",
+      "space_complexity": "O(s) where s is synonym/embedding dictionary size (expansion resources).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Coverage: improves retrieval coverage by matching more document variations.",
+        "Robustness: more robust to vocabulary mismatches between query and documents.",
+        "Quality: can improve retrieval quality for ambiguous or short queries."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Noise: may introduce irrelevant terms and noise.",
+        "Precision: may reduce precision if expansion is too broad.",
+        "Tuning: requires careful tuning of expansion parameters."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Original Query",
+        "Query Reformulation",
+        "Pseudo-Relevance Feedback",
+        "Query Understanding"
       ],
-      "explanation": "Query Expansion solves computational problems efficiently."
+      "explanation": "Enhances user queries by adding related terms, synonyms, or reformulations to improve retrieval quality, helping RAG systems find relevant documents even when query terms don't exactly match document vocabulary."
     },
     {
       "path": "semester_10/lecture_67_rag_advanced/reranking/README.md",
-      "name": "Reranking",
-      "problem": "Implements reranking algorithm.",
-      "intuition": "Reranking is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Re-ranking for RAG",
+      "problem": "Improves retrieval quality by re-ranking initially retrieved documents using a more sophisticated model (cross-encoder, LLM) that considers query-document interactions, placing the most relevant documents at the top.",
+      "intuition": "Like a second opinion: re-ranking is like getting a second opinion on search results - the initial search (first-stage retrieval) finds many potentially relevant documents quickly, then a more careful reviewer (re-ranker) looks at each document more closely in relation to your query and puts the best matches at the top - it's like having a fast initial filter (retrieval) followed by careful evaluation (re-ranking) to ensure the best results are first.",
+      "inputs": "Initial retrieval results, query, re-ranking model, document texts, ranking criteria.",
+      "outputs": "Re-ranked results, improved ranking, top relevant documents, optimized retrieval.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Initial retrieval: perform fast first-stage retrieval (BM25, dense retrieval).",
+        "Get candidates: get top-k candidate documents (e.g., top 100).",
+        "Encode pairs: encode query-document pairs using re-ranker (cross-encoder).",
+        "Score: score each query-document pair for relevance.",
+        "Rank: rank documents by re-ranker scores.",
+        "Select: select top documents from re-ranked list.",
+        "Validate: validate that re-ranking improves retrieval quality.",
+        "Optimize: optimize re-ranker model and parameters.",
+        "Deploy: deploy two-stage retrieval (retrieval + re-ranking).",
+        "Monitor: monitor re-ranking performance and quality."
       ],
-      "example": "Example: Reranking applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Re-ranking: query: 'Python machine learning tutorial' → initial retrieval: BM25 finds 100 documents → re-ranker: cross-encoder scores each query-doc pair → rank: re-ranks by relevance score → result: top 10 documents are most relevant → re-ranking improves precision@10 from 60% to 85% → re-ranking successful.",
+      "time_complexity": "O(k·r) where k is number of candidates, r is re-ranking time per document (slower than retrieval, but only on k documents).",
+      "space_complexity": "O(m) where m is re-ranker model size (cross-encoder or LLM for re-ranking).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Quality: significantly improves retrieval quality and precision.",
+        "Precision: better precision at top-k results.",
+        "Flexibility: can use sophisticated models for re-ranking."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Latency: re-ranking adds latency (slower than retrieval alone).",
+        "Cost: re-ranking with LLMs can be expensive.",
+        "Scalability: re-ranking many candidates can be slow."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Single-Stage Retrieval",
+        "Learning-to-Rank",
+        "Neural Re-ranking",
+        "LLM Re-ranking"
       ],
-      "explanation": "Reranking solves computational problems efficiently."
+      "explanation": "Improves retrieval quality by re-ranking initially retrieved documents using a more sophisticated model (cross-encoder, LLM) that considers query-document interactions, placing the most relevant documents at the top."
     },
     {
       "path": "semester_10/lecture_68_llm_evaluation/adversarial_testing/README.md",
