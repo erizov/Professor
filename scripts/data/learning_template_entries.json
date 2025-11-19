@@ -18584,340 +18584,522 @@
     {
       "path": "semester_13/lecture_90_blockchain_security/audit_techniques/README.md",
       "name": "Audit Techniques",
-      "problem": "Implements audit techniques algorithm.",
-      "intuition": "Audit Techniques is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Implements smart contract audit techniques and methodologies to identify security vulnerabilities, code issues, and potential exploits in blockchain smart contracts before deployment.",
+      "intuition": "Like code review for security: Audit Techniques are like thorough code reviews but focused on security - you examine smart contracts (like reviewing code) to find bugs and vulnerabilities before they're exploited - just as code reviews catch bugs, audits catch security issues.",
+      "inputs": "Smart contracts, code, audit checklists, security standards, vulnerability databases, analysis tools.",
+      "outputs": "Audit reports, vulnerability findings, security recommendations, risk assessments, remediation guidance.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Review: review smart contract code.",
+        "Analyze: analyze for common vulnerabilities.",
+        "Test: test contract functionality.",
+        "Check: check against security standards.",
+        "Identify: identify vulnerabilities and issues.",
+        "Document: document findings.",
+        "Prioritize: prioritize risks.",
+        "Recommend: recommend fixes.",
+        "Verify: verify fixes after remediation.",
+        "Report: generate audit report."
       ],
-      "example": "Example: Audit Techniques applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Audit Techniques: contract: DeFi lending contract → review: code review → analyze: check for reentrancy → test: test edge cases → identify: reentrancy vulnerability found → recommend: add reentrancy guard → result: vulnerability fixed → Audit Techniques successful.",
+      "time_complexity": "O(c + a) where c is code size, a is analysis time (varies by contract complexity).",
+      "space_complexity": "O(c + r) where c is code storage, r is report storage (code and audit data).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Security: identifies security vulnerabilities before deployment.",
+        "Prevention: prevents exploits and hacks.",
+        "Trust: increases trust in smart contracts."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Time: audits take time and resources.",
+        "Coverage: may not catch all vulnerabilities.",
+        "Cost: professional audits can be expensive."
       ],
       "alternatives": [
-        "Related algorithms"
+        "No Audit",
+        "Automated Tools Only",
+        "Self-Audit",
+        "Formal Verification"
       ],
-      "explanation": "Audit Techniques solves computational problems efficiently."
+      "explanation": "Implements smart contract audit techniques and methodologies to identify security vulnerabilities, code issues, and potential exploits in blockchain smart contracts before deployment."
     },
     {
       "path": "semester_13/lecture_90_blockchain_security/exploit_prevention/README.md",
       "name": "Exploit Prevention",
-      "problem": "Implements exploit prevention algorithm.",
-      "intuition": "Exploit Prevention is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Implements techniques and mechanisms to prevent exploits and attacks on blockchain systems and smart contracts, including security patterns, access controls, and defensive programming.",
+      "intuition": "Like security measures: Exploit Prevention is like security measures - you add protections (like locks and alarms) to prevent attacks - just as security measures protect buildings, exploit prevention protects blockchain systems.",
+      "inputs": "Smart contracts, security patterns, access controls, defensive mechanisms, threat models, security requirements.",
+      "outputs": "Protected contracts, security mechanisms, exploit prevention, hardened systems, defensive code.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Identify: identify potential exploits and attack vectors.",
+        "Design: design security mechanisms.",
+        "Implement: implement security patterns.",
+        "Control: implement access controls.",
+        "Validate: validate inputs and state.",
+        "Limit: limit attack surface.",
+        "Monitor: monitor for suspicious activity.",
+        "Respond: respond to threats.",
+        "Update: update defenses.",
+        "Test: test exploit prevention."
       ],
-      "example": "Example: Exploit Prevention applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Exploit Prevention: threat: reentrancy attack → design: reentrancy guard pattern → implement: add guard modifier → validate: validate state changes → result: reentrancy prevented → Exploit Prevention successful.",
+      "time_complexity": "O(i + d) where i is implementation time, d is defense overhead (varies by mechanisms).",
+      "space_complexity": "O(s + d) where s is system storage, d is defense storage (security mechanisms).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Protection: prevents exploits and attacks.",
+        "Security: improves overall security.",
+        "Trust: increases trust in systems."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Overhead: security mechanisms add overhead.",
+        "Complexity: may add complexity to code.",
+        "Coverage: may not prevent all attack types."
       ],
       "alternatives": [
-        "Related algorithms"
+        "No Prevention",
+        "Reactive Security",
+        "Basic Security",
+        "Comprehensive Security"
       ],
-      "explanation": "Exploit Prevention solves computational problems efficiently."
+      "explanation": "Implements techniques and mechanisms to prevent exploits and attacks on blockchain systems and smart contracts, including security patterns, access controls, and defensive programming."
     },
     {
       "path": "semester_13/lecture_90_blockchain_security/formal_verification/README.md",
       "name": "Formal Verification",
-      "problem": "Implements formal verification algorithm.",
-      "intuition": "Formal Verification is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Uses mathematical methods to formally prove correctness and security properties of smart contracts, providing mathematical guarantees that contracts behave as specified and are free from certain classes of bugs.",
+      "intuition": "Like mathematical proof: Formal Verification is like mathematical proof - you prove mathematically (like proving theorems) that code is correct - just as mathematical proofs guarantee truth, formal verification guarantees code correctness.",
+      "inputs": "Smart contracts, specifications, formal models, verification tools, proof systems, properties to verify.",
+      "outputs": "Formal proofs, verified contracts, correctness guarantees, security properties, verification reports.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Specify: specify contract requirements formally.",
+        "Model: model contract behavior mathematically.",
+        "Property: define properties to verify.",
+        "Prove: prove properties using formal methods.",
+        "Verify: verify proof with verification tools.",
+        "Check: check for property violations.",
+        "Fix: fix issues if found.",
+        "Re-verify: re-verify after fixes.",
+        "Document: document verification results.",
+        "Deploy: deploy verified contract."
       ],
-      "example": "Example: Formal Verification applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Formal Verification: contract: token contract → specify: total supply invariant → model: formal model → prove: prove total supply never exceeds max → verify: verification tool confirms → result: contract formally verified → Formal Verification successful.",
+      "time_complexity": "O(v + p) where v is verification time, p is proof time (varies by complexity, can be exponential).",
+      "space_complexity": "O(m + p) where m is model storage, p is proof storage (formal models and proofs).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Correctness: provides mathematical guarantees of correctness.",
+        "Security: proves security properties.",
+        "Reliability: increases contract reliability."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: formal verification is complex.",
+        "Time: verification can be time-consuming.",
+        "Coverage: may not verify all properties."
       ],
       "alternatives": [
-        "Related algorithms"
+        "No Verification",
+        "Testing",
+        "Auditing",
+        "Hybrid Approaches"
       ],
-      "explanation": "Formal Verification solves computational problems efficiently."
+      "explanation": "Uses mathematical methods to formally prove correctness and security properties of smart contracts, providing mathematical guarantees that contracts behave as specified and are free from certain classes of bugs."
     },
     {
       "path": "semester_13/lecture_90_blockchain_security/security_patterns/README.md",
       "name": "Security Patterns",
-      "problem": "Implements security patterns algorithm.",
-      "intuition": "Security Patterns is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Implements proven security patterns and best practices for smart contract development, providing reusable solutions to common security problems and vulnerabilities.",
+      "intuition": "Like security templates: Security Patterns are like security templates - you use proven patterns (like using templates) to solve security problems - just as templates help you build things correctly, security patterns help you build secure contracts.",
+      "inputs": "Security requirements, threat models, design patterns, best practices, security standards.",
+      "outputs": "Secure contracts, security patterns, hardened code, best practices, pattern implementations.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Identify: identify security requirements.",
+        "Select: select appropriate security patterns.",
+        "Apply: apply security patterns to code.",
+        "Implement: implement pattern correctly.",
+        "Validate: validate pattern implementation.",
+        "Test: test security patterns.",
+        "Document: document pattern usage.",
+        "Review: review pattern effectiveness.",
+        "Update: update patterns as needed.",
+        "Reuse: reuse patterns across contracts."
       ],
-      "example": "Example: Security Patterns applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Security Patterns: requirement: prevent reentrancy → pattern: Checks-Effects-Interactions → apply: apply pattern → implement: checks first, effects second, interactions last → result: reentrancy prevented → Security Patterns successful.",
+      "time_complexity": "O(i) where i is implementation time (pattern application time).",
+      "space_complexity": "O(p + c) where p is pattern storage, c is code storage (patterns and code).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Proven: uses proven security solutions.",
+        "Reusability: patterns are reusable.",
+        "Best practices: incorporates best practices."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Application: patterns must be applied correctly.",
+        "Coverage: may not cover all security concerns.",
+        "Evolution: patterns evolve as threats evolve."
       ],
       "alternatives": [
-        "Related algorithms"
+        "No Patterns",
+        "Ad-Hoc Security",
+        "Custom Solutions",
+        "Hybrid Approaches"
       ],
-      "explanation": "Security Patterns solves computational problems efficiently."
+      "explanation": "Implements proven security patterns and best practices for smart contract development, providing reusable solutions to common security problems and vulnerabilities."
     },
     {
       "path": "semester_13/lecture_90_blockchain_security/smart_contract_security/README.md",
       "name": "Smart Contract Security",
-      "problem": "Implements smart contract security algorithm.",
-      "intuition": "Smart Contract Security is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Ensures security of smart contracts through comprehensive security practices, including secure coding, vulnerability prevention, access controls, and defense against common attack vectors.",
+      "intuition": "Like security for smart contracts: Smart Contract Security is like security for software but for smart contracts - you protect contracts (like protecting software) from attacks and bugs - just as software security protects applications, smart contract security protects blockchain contracts.",
+      "inputs": "Smart contracts, security requirements, threat models, security tools, best practices, security standards.",
+      "outputs": "Secure contracts, security mechanisms, vulnerability prevention, hardened code, security documentation.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Design: design contracts with security in mind.",
+        "Code: code securely following best practices.",
+        "Validate: validate all inputs and state.",
+        "Control: implement access controls.",
+        "Test: test for security vulnerabilities.",
+        "Audit: audit contracts for security.",
+        "Verify: formally verify if possible.",
+        "Deploy: deploy with security measures.",
+        "Monitor: monitor for security issues.",
+        "Update: update security as needed."
       ],
-      "example": "Example: Smart Contract Security applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Smart Contract Security: contract: DeFi protocol → design: secure architecture → code: secure coding practices → validate: input validation → audit: security audit → result: secure contract deployed → Smart Contract Security operational.",
+      "time_complexity": "O(d + c + a) where d is design time, c is coding time, a is audit time (security process).",
+      "space_complexity": "O(s + c) where s is security storage, c is contract storage (security mechanisms, contracts).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Protection: protects contracts from attacks.",
+        "Trust: increases trust in contracts.",
+        "Reliability: improves contract reliability."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: security adds complexity.",
+        "Cost: security measures have costs.",
+        "Evolution: threats evolve, requiring ongoing security."
       ],
       "alternatives": [
-        "Related algorithms"
+        "No Security",
+        "Basic Security",
+        "Reactive Security",
+        "Comprehensive Security"
       ],
-      "explanation": "Smart Contract Security solves computational problems efficiently."
+      "explanation": "Ensures security of smart contracts through comprehensive security practices, including secure coding, vulnerability prevention, access controls, and defense against common attack vectors."
     },
     {
       "path": "semester_13/lecture_90_blockchain_security/vulnerability_detection/README.md",
       "name": "Vulnerability Detection",
-      "problem": "Implements vulnerability detection algorithm.",
-      "intuition": "Vulnerability Detection is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Detects security vulnerabilities in smart contracts and blockchain systems using automated tools, static analysis, dynamic analysis, and manual techniques to identify potential security issues.",
+      "intuition": "Like security scanning: Vulnerability Detection is like security scanning - you scan code (like scanning for viruses) to find vulnerabilities - just as antivirus finds malware, vulnerability detection finds security issues.",
+      "inputs": "Smart contracts, code, analysis tools, vulnerability databases, detection rules, security patterns.",
+      "outputs": "Vulnerability reports, detected issues, risk assessments, remediation guidance, security findings.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Scan: scan code with automated tools.",
+        "Analyze: analyze code statically and dynamically.",
+        "Check: check against vulnerability databases.",
+        "Detect: detect known vulnerability patterns.",
+        "Identify: identify potential security issues.",
+        "Classify: classify vulnerabilities by severity.",
+        "Report: report detected vulnerabilities.",
+        "Prioritize: prioritize for remediation.",
+        "Track: track vulnerability status.",
+        "Verify: verify fixes."
       ],
-      "example": "Example: Vulnerability Detection applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Vulnerability Detection: contract: token contract → scan: automated scanner → detect: integer overflow vulnerability → classify: high severity → report: vulnerability report → fix: use SafeMath → result: vulnerability fixed → Vulnerability Detection successful.",
+      "time_complexity": "O(c + a) where c is code size, a is analysis time (varies by tools and code complexity).",
+      "space_complexity": "O(c + v) where c is code storage, v is vulnerability data storage (code and findings).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Automation: automated detection is fast.",
+        "Coverage: can detect many vulnerability types.",
+        "Early: detects issues early in development."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "False positives: may produce false positives.",
+        "Coverage: may not detect all vulnerabilities.",
+        "Tools: depends on quality of detection tools."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Manual Review",
+        "No Detection",
+        "Auditing Only",
+        "Hybrid Approaches"
       ],
-      "explanation": "Vulnerability Detection solves computational problems efficiently."
+      "explanation": "Detects security vulnerabilities in smart contracts and blockchain systems using automated tools, static analysis, dynamic analysis, and manual techniques to identify potential security issues."
     },
     {
       "path": "semester_13/lecture_91_blockchain_privacy/confidential_transactions/README.md",
       "name": "Confidential Transactions",
-      "problem": "Implements confidential transactions algorithm.",
-      "intuition": "Confidential Transactions is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Implements confidential transactions that hide transaction amounts while maintaining verifiability, enabling privacy-preserving blockchain transactions where amounts are encrypted but still verifiable.",
+      "intuition": "Like private transactions: Confidential Transactions are like private transactions - you hide the amounts (like hiding prices) but still prove they're valid - just as you can have private but verifiable transactions, confidential transactions hide amounts but remain verifiable.",
+      "inputs": "Transaction amounts, public keys, commitment schemes, range proofs, encryption keys.",
+      "outputs": "Confidential transactions, encrypted amounts, verifiable commitments, range proofs, private transactions.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Commit: commit to transaction amount using commitment scheme.",
+        "Encrypt: encrypt amount information.",
+        "Prove: generate range proof (amount is valid).",
+        "Sign: sign transaction.",
+        "Broadcast: broadcast confidential transaction.",
+        "Verify: verify commitment and range proof.",
+        "Validate: validate transaction without seeing amount.",
+        "Record: record on blockchain.",
+        "Reveal: optionally reveal amount to authorized parties.",
+        "Audit: enable auditing if needed."
       ],
-      "example": "Example: Confidential Transactions applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Confidential Transactions: amount: 10 BTC → commit: create commitment → encrypt: encrypt amount → prove: range proof (0 < amount < max) → verify: verify without seeing amount → result: private transaction verified → Confidential Transactions successful.",
+      "time_complexity": "O(1) for transaction operations (constant time commitment and proof operations).",
+      "space_complexity": "O(1) per transaction (commitment and proof storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Privacy: hides transaction amounts.",
+        "Verifiability: maintains transaction verifiability.",
+        "Auditability: enables optional auditing."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Overhead: adds overhead to transactions.",
+        "Complexity: cryptographic operations are complex.",
+        "Scalability: may impact scalability."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Transparent Transactions",
+        "Full Anonymity",
+        "Selective Privacy",
+        "Other Privacy Methods"
       ],
-      "explanation": "Confidential Transactions solves computational problems efficiently."
+      "explanation": "Implements confidential transactions that hide transaction amounts while maintaining verifiability, enabling privacy-preserving blockchain transactions where amounts are encrypted but still verifiable."
     },
     {
       "path": "semester_13/lecture_91_blockchain_privacy/privacy_coins/README.md",
       "name": "Privacy Coins",
-      "problem": "Implements privacy coins algorithm.",
-      "intuition": "Privacy Coins is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Implements privacy-focused cryptocurrencies that provide enhanced privacy and anonymity for transactions, hiding sender, receiver, and amount information through various cryptographic techniques.",
+      "intuition": "Like private money: Privacy Coins are like private money - you can send money (like cash) without revealing who sent it, who received it, or how much - just as cash is private, privacy coins provide private transactions.",
+      "inputs": "Transactions, sender addresses, receiver addresses, amounts, privacy mechanisms, cryptographic keys.",
+      "outputs": "Private transactions, anonymous payments, hidden amounts, untraceable transactions, privacy-preserving coins.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Create: create private transaction.",
+        "Hide: hide sender identity (ring signatures, etc.).",
+        "Hide: hide receiver identity (stealth addresses, etc.).",
+        "Hide: hide transaction amount (confidential transactions, etc.).",
+        "Mix: optionally mix with other transactions.",
+        "Sign: sign transaction privately.",
+        "Broadcast: broadcast private transaction.",
+        "Verify: verify transaction validity.",
+        "Record: record on blockchain (private details hidden).",
+        "Complete: transaction complete with privacy."
       ],
-      "example": "Example: Privacy Coins applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Privacy Coins: transaction: send 10 coins → hide: hide sender (ring signature) → hide: hide receiver (stealth address) → hide: hide amount (confidential transaction) → result: completely private transaction → Privacy Coins successful.",
+      "time_complexity": "O(1) for transaction operations (varies by privacy mechanism).",
+      "space_complexity": "O(1) per transaction (transaction storage, may be larger due to privacy overhead).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Privacy: strong privacy and anonymity.",
+        "Untraceability: transactions are untraceable.",
+        "Fungibility: improved fungibility through privacy."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Regulation: regulatory concerns about privacy.",
+        "Overhead: privacy mechanisms add overhead.",
+        "Adoption: may have limited adoption due to regulation."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Transparent Cryptocurrencies",
+        "Selective Privacy",
+        "Mixers",
+        "Other Privacy Methods"
       ],
-      "explanation": "Privacy Coins solves computational problems efficiently."
+      "explanation": "Implements privacy-focused cryptocurrencies that provide enhanced privacy and anonymity for transactions, hiding sender, receiver, and amount information through various cryptographic techniques."
     },
     {
       "path": "semester_13/lecture_91_blockchain_privacy/ring_signatures/README.md",
       "name": "Ring Signatures",
-      "problem": "Implements ring signatures algorithm.",
-      "intuition": "Ring Signatures is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Implements ring signatures, cryptographic signatures that provide signer anonymity by allowing a signer to sign on behalf of a group (ring) without revealing which member signed, enabling anonymous transactions.",
+      "intuition": "Like anonymous group signatures: Ring Signatures are like anonymous group signatures - you sign as part of a group (like signing as 'one of us') without revealing who you are - just as you can sign anonymously in a group, ring signatures provide anonymity.",
+      "inputs": "Message, ring members, private key, public keys, signature parameters.",
+      "outputs": "Ring signatures, anonymous signatures, verifiable signatures, transaction anonymity.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Select: select ring of public keys.",
+        "Generate: generate ring signature using private key.",
+        "Sign: sign message with ring signature.",
+        "Verify: verify signature belongs to ring.",
+        "Anonymize: signer identity remains hidden.",
+        "Validate: validate signature without knowing signer.",
+        "Broadcast: broadcast signed transaction.",
+        "Record: record on blockchain.",
+        "Trace: cannot trace to specific signer.",
+        "Complete: transaction complete with anonymity."
       ],
-      "example": "Example: Ring Signatures applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Ring Signatures: message: transaction → ring: 10 public keys → sign: generate ring signature → verify: signature valid, signer unknown → result: anonymous transaction → Ring Signatures successful.",
+      "time_complexity": "O(n) where n is ring size (signature generation and verification).",
+      "space_complexity": "O(n) where n is ring size (ring signature storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Anonymity: provides signer anonymity.",
+        "Untraceability: cannot trace to specific signer.",
+        "Privacy: enables private transactions."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Ring size: larger rings provide better anonymity but more overhead.",
+        "Complexity: ring signatures are complex.",
+        "Linkability: may have linkability issues."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Regular Signatures",
+        "Other Anonymous Signatures",
+        "Mixers",
+        "Zero-Knowledge Proofs"
       ],
-      "explanation": "Ring Signatures solves computational problems efficiently."
+      "explanation": "Implements ring signatures, cryptographic signatures that provide signer anonymity by allowing a signer to sign on behalf of a group (ring) without revealing which member signed, enabling anonymous transactions."
     },
     {
       "path": "semester_13/lecture_91_blockchain_privacy/zero_knowledge_proofs/README.md",
       "name": "Zero Knowledge Proofs",
-      "problem": "Implements zero knowledge proofs algorithm.",
-      "intuition": "Zero Knowledge Proofs is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Implements zero-knowledge proofs that allow one party to prove knowledge of information to another party without revealing the information itself, enabling privacy-preserving blockchain applications.",
+      "intuition": "Like proving without revealing: Zero Knowledge Proofs are like proving you know something without telling what it is - you prove knowledge (like proving you have a key) without revealing the secret - just as you can prove you know something without revealing it, ZK proofs enable private verification.",
+      "inputs": "Secret information, public statement, proof system, verification parameters, witness.",
+      "outputs": "Zero-knowledge proofs, verifiable proofs, private verification, proof of knowledge.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Setup: setup proof system parameters.",
+        "Witness: create witness from secret.",
+        "Prove: generate zero-knowledge proof.",
+        "Verify: verify proof without seeing secret.",
+        "Validate: validate statement is true.",
+        "Privacy: secret remains private.",
+        "Complete: proof complete and verified.",
+        "Use: use in privacy applications.",
+        "Optimize: optimize proof size and verification.",
+        "Deploy: deploy in blockchain systems."
       ],
-      "example": "Example: Zero Knowledge Proofs applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Zero Knowledge Proofs: secret: private key → statement: 'I know private key for address X' → prove: generate ZK proof → verify: verify proof without seeing key → result: knowledge proven, key remains secret → Zero Knowledge Proofs successful.",
+      "time_complexity": "O(p) where p is proof generation time (varies by proof system, can be polynomial).",
+      "space_complexity": "O(s) where s is proof size (proof storage, varies by system).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Privacy: enables privacy-preserving verification.",
+        "Verifiability: maintains verifiability without revealing secrets.",
+        "Applications: enables many privacy applications."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: ZK proofs are complex.",
+        "Overhead: proof generation and verification have overhead.",
+        "Trust: setup may require trusted setup (for some systems)."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Reveal Secrets",
+        "Other Privacy Methods",
+        "Trusted Third Parties",
+        "Hybrid Approaches"
       ],
-      "explanation": "Zero Knowledge Proofs solves computational problems efficiently."
+      "explanation": "Implements zero-knowledge proofs that allow one party to prove knowledge of information to another party without revealing the information itself, enabling privacy-preserving blockchain applications."
     },
     {
       "path": "semester_13/lecture_91_blockchain_privacy/zk_snarks/README.md",
-      "name": "Zk Snarks",
-      "problem": "Implements zk snarks algorithm.",
-      "intuition": "Zk Snarks is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "ZK-SNARKs (Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge)",
+      "problem": "Implements ZK-SNARKs, a type of zero-knowledge proof that is succinct (small proof size), non-interactive (no back-and-forth), and enables efficient privacy-preserving blockchain transactions and smart contracts.",
+      "intuition": "Like compact private proofs: ZK-SNARKs are like compact private proofs - you prove something privately (like ZK proofs) but the proof is small and doesn't require interaction - just as compact proofs are efficient, ZK-SNARKs provide efficient private proofs.",
+      "inputs": "Secret witness, public statement, circuit, trusted setup, proving key, verification key.",
+      "outputs": "ZK-SNARK proofs, succinct proofs, verifiable proofs, private verification, efficient proofs.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Setup: perform trusted setup (generate keys).",
+        "Circuit: represent statement as arithmetic circuit.",
+        "Witness: create witness from secret.",
+        "Prove: generate ZK-SNARK proof.",
+        "Verify: verify proof using verification key.",
+        "Validate: validate statement without seeing witness.",
+        "Complete: proof complete (small, fast verification).",
+        "Use: use in privacy applications.",
+        "Optimize: optimize circuit and proof generation.",
+        "Deploy: deploy in blockchain systems."
       ],
-      "example": "Example: Zk Snarks applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "ZK-SNARKs: statement: transaction valid → circuit: represent as circuit → prove: generate ZK-SNARK → verify: verify in milliseconds → result: valid transaction, private details hidden → ZK-SNARKs successful.",
+      "time_complexity": "O(c) where c is circuit size (proof generation), O(1) for verification (constant time).",
+      "space_complexity": "O(1) for proof size (succinct, constant size regardless of witness size).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Succinct: very small proof size.",
+        "Fast: fast verification (constant time).",
+        "Privacy: enables strong privacy."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Setup: requires trusted setup ceremony.",
+        "Complexity: circuit design is complex.",
+        "Trust: trusted setup requires trust."
       ],
       "alternatives": [
-        "Related algorithms"
+        "ZK-STARKs",
+        "Other ZK Proofs",
+        "Interactive Proofs",
+        "No Privacy"
       ],
-      "explanation": "Zk Snarks solves computational problems efficiently."
+      "explanation": "Implements ZK-SNARKs, a type of zero-knowledge proof that is succinct (small proof size), non-interactive (no back-and-forth), and enables efficient privacy-preserving blockchain transactions and smart contracts."
     },
     {
       "path": "semester_13/lecture_91_blockchain_privacy/zk_starks/README.md",
-      "name": "Zk Starks",
-      "problem": "Implements zk starks algorithm.",
-      "intuition": "Zk Starks is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "ZK-STARKs (Zero-Knowledge Scalable Transparent Arguments of Knowledge)",
+      "problem": "Implements ZK-STARKs, a type of zero-knowledge proof that is transparent (no trusted setup), scalable (efficient for large computations), and provides post-quantum security, enabling privacy without trusted setup.",
+      "intuition": "Like transparent private proofs: ZK-STARKs are like transparent private proofs - you prove something privately (like ZK proofs) but without needing trusted setup (transparent) - just as transparent processes don't need trust, ZK-STARKs don't need trusted setup.",
+      "inputs": "Secret witness, public statement, computation, transparent setup, proof parameters.",
+      "outputs": "ZK-STARK proofs, transparent proofs, verifiable proofs, private verification, scalable proofs.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Setup: perform transparent setup (no trust needed).",
+        "Compute: represent computation.",
+        "Witness: create witness from secret.",
+        "Prove: generate ZK-STARK proof.",
+        "Verify: verify proof transparently.",
+        "Validate: validate statement without seeing witness.",
+        "Complete: proof complete (transparent, scalable).",
+        "Use: use in privacy applications.",
+        "Scale: scale to large computations.",
+        "Deploy: deploy in blockchain systems."
       ],
-      "example": "Example: Zk Starks applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "ZK-STARKs: statement: computation result correct → compute: represent computation → prove: generate ZK-STARK → verify: verify transparently → result: computation verified, inputs private → ZK-STARKs successful.",
+      "time_complexity": "O(n log n) where n is computation size (proof generation), O(log n) for verification.",
+      "space_complexity": "O(log n) where n is computation size (proof size, logarithmic).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Transparency: no trusted setup required.",
+        "Scalability: efficient for large computations.",
+        "Security: post-quantum secure."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Proof size: larger proof size than SNARKs.",
+        "Complexity: STARK construction is complex.",
+        "Verification: verification time is logarithmic (vs constant for SNARKs)."
       ],
       "alternatives": [
-        "Related algorithms"
+        "ZK-SNARKs",
+        "Other ZK Proofs",
+        "Trusted Setup Proofs",
+        "No Privacy"
       ],
-      "explanation": "Zk Starks solves computational problems efficiently."
+      "explanation": "Implements ZK-STARKs, a type of zero-knowledge proof that is transparent (no trusted setup), scalable (efficient for large computations), and provides post-quantum security, enabling privacy without trusted setup."
     },
     {
       "path": "semester_13/lecture_92_blockchain_interoperability/atomic_swaps/README.md",
       "name": "Atomic Swaps",
-      "problem": "Implements atomic swaps algorithm.",
-      "intuition": "Atomic Swaps is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Implements atomic swaps, trustless cross-chain cryptocurrency exchanges that enable users to exchange cryptocurrencies from different blockchains without intermediaries, using hash time-locked contracts (HTLCs).",
+      "intuition": "Like trustless exchange: Atomic Swaps are like trustless exchange - you exchange coins from different blockchains (like exchanging currencies) without needing a trusted middleman - just as you can exchange currencies directly, atomic swaps enable direct cross-chain exchange.",
+      "inputs": "Cryptocurrencies, blockchain networks, hash time-locked contracts, secret hashes, time locks, exchange rates.",
+      "outputs": "Atomic swaps, cross-chain exchanges, trustless trades, exchanged cryptocurrencies, completed swaps.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Initiate: initiate swap on first blockchain.",
+        "Lock: lock funds in HTLC on first chain.",
+        "Hash: create secret hash.",
+        "Initiate: initiate swap on second blockchain.",
+        "Lock: lock funds in HTLC on second chain.",
+        "Reveal: reveal secret to claim funds.",
+        "Claim: claim funds on both chains.",
+        "Complete: swap completes atomically (both or neither).",
+        "Timeout: funds return if swap not completed.",
+        "Verify: verify swap completion."
       ],
-      "example": "Example: Atomic Swaps applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Atomic Swaps: swap: 1 BTC for 30 ETH → lock: lock BTC in HTLC → lock: lock ETH in HTLC → reveal: reveal secret → claim: claim BTC and ETH → result: trustless cross-chain exchange → Atomic Swaps successful.",
+      "time_complexity": "O(b) where b is block time (swap completion time, depends on block times).",
+      "space_complexity": "O(s) where s is swap data (HTLC and swap storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Trustless: no need for trusted intermediaries.",
+        "Decentralization: fully decentralized exchange.",
+        "Security: atomic (both or neither) ensures security."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Time: swaps take time (block confirmation times).",
+        "Complexity: atomic swaps are complex to implement.",
+        "Liquidity: requires counterparty for swap."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Centralized Exchanges",
+        "Wrapped Tokens",
+        "Bridges",
+        "Other Cross-Chain Methods"
       ],
-      "explanation": "Atomic Swaps solves computational problems efficiently."
+      "explanation": "Implements atomic swaps, trustless cross-chain cryptocurrency exchanges that enable users to exchange cryptocurrencies from different blockchains without intermediaries, using hash time-locked contracts (HTLCs)."
     },
     {
       "path": "semester_13/lecture_92_blockchain_interoperability/chain_abstraction/README.md",

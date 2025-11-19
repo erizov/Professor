@@ -4,37 +4,48 @@
    Atomic Swaps
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements atomic swaps algorithm.
+   Implements atomic swaps, trustless cross-chain cryptocurrency exchanges that enable users to exchange cryptocurrencies from different blockchains without intermediaries, using hash time-locked contracts (HTLCs).
 
 3. **Intuition (plain-language explanation)**  
-   Atomic Swaps is a fundamental algorithm in computer science.
+   Like trustless exchange: Atomic Swaps are like trustless exchange - you exchange coins from different blockchains (like exchanging currencies) without needing a trusted middleman - just as you can exchange currencies directly, atomic swaps enable direct cross-chain exchange.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Cryptocurrencies, blockchain networks, hash time-locked contracts, secret hashes, time locks, exchange rates.  
+   - Output: Atomic swaps, cross-chain exchanges, trustless trades, exchanged cryptocurrencies, completed swaps.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Initiate: initiate swap on first blockchain.
+2. Lock: lock funds in HTLC on first chain.
+3. Hash: create secret hash.
+4. Initiate: initiate swap on second blockchain.
+5. Lock: lock funds in HTLC on second chain.
+6. Reveal: reveal secret to claim funds.
+7. Claim: claim funds on both chains.
+8. Complete: swap completes atomically (both or neither).
+9. Timeout: funds return if swap not completed.
+10. Verify: verify swap completion.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Atomic Swaps applied to sample data.
+   Atomic Swaps: swap: 1 BTC for 30 ETH → lock: lock BTC in HTLC → lock: lock ETH in HTLC → reveal: reveal secret → claim: claim BTC and ETH → result: trustless cross-chain exchange → Atomic Swaps successful.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(b) where b is block time (swap completion time, depends on block times).  
+   - Space: O(s) where s is swap data (HTLC and swap storage).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Trustless: no need for trusted intermediaries.
+- Decentralization: fully decentralized exchange.
+- Security: atomic (both or neither) ensures security.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Time: swaps take time (block confirmation times).
+- Complexity: atomic swaps are complex to implement.
+- Liquidity: requires counterparty for swap.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Centralized Exchanges, Wrapped Tokens, Bridges, Other Cross-Chain Methods
 
 11. **30-second explanation (your own words)**  
-    Atomic Swaps solves computational problems efficiently.
+    Implements atomic swaps, trustless cross-chain cryptocurrency exchanges that enable users to exchange cryptocurrencies from different blockchains without intermediaries, using hash time-locked contracts (HTLCs).
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

@@ -4,37 +4,48 @@
    Privacy Coins
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements privacy coins algorithm.
+   Implements privacy-focused cryptocurrencies that provide enhanced privacy and anonymity for transactions, hiding sender, receiver, and amount information through various cryptographic techniques.
 
 3. **Intuition (plain-language explanation)**  
-   Privacy Coins is a fundamental algorithm in computer science.
+   Like private money: Privacy Coins are like private money - you can send money (like cash) without revealing who sent it, who received it, or how much - just as cash is private, privacy coins provide private transactions.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Transactions, sender addresses, receiver addresses, amounts, privacy mechanisms, cryptographic keys.  
+   - Output: Private transactions, anonymous payments, hidden amounts, untraceable transactions, privacy-preserving coins.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Create: create private transaction.
+2. Hide: hide sender identity (ring signatures, etc.).
+3. Hide: hide receiver identity (stealth addresses, etc.).
+4. Hide: hide transaction amount (confidential transactions, etc.).
+5. Mix: optionally mix with other transactions.
+6. Sign: sign transaction privately.
+7. Broadcast: broadcast private transaction.
+8. Verify: verify transaction validity.
+9. Record: record on blockchain (private details hidden).
+10. Complete: transaction complete with privacy.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Privacy Coins applied to sample data.
+   Privacy Coins: transaction: send 10 coins → hide: hide sender (ring signature) → hide: hide receiver (stealth address) → hide: hide amount (confidential transaction) → result: completely private transaction → Privacy Coins successful.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(1) for transaction operations (varies by privacy mechanism).  
+   - Space: O(1) per transaction (transaction storage, may be larger due to privacy overhead).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Privacy: strong privacy and anonymity.
+- Untraceability: transactions are untraceable.
+- Fungibility: improved fungibility through privacy.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Regulation: regulatory concerns about privacy.
+- Overhead: privacy mechanisms add overhead.
+- Adoption: may have limited adoption due to regulation.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Transparent Cryptocurrencies, Selective Privacy, Mixers, Other Privacy Methods
 
 11. **30-second explanation (your own words)**  
-    Privacy Coins solves computational problems efficiently.
+    Implements privacy-focused cryptocurrencies that provide enhanced privacy and anonymity for transactions, hiding sender, receiver, and amount information through various cryptographic techniques.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
