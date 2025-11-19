@@ -6498,132 +6498,191 @@
     {
       "path": "semester_06/lecture_38_monitoring_production/alerting/README.md",
       "name": "Alerting",
-      "problem": "Implements alerting algorithm.",
-      "intuition": "Alerting is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Monitors system metrics and automatically triggers notifications when thresholds are exceeded or anomalies are detected, enabling proactive incident response and preventing service degradation.",
+      "intuition": "Like a smoke alarm for your ML system: continuously watch metrics (CPU, latency, error rate) - when something goes wrong (CPU spikes, errors increase), immediately send alerts (email, Slack, PagerDuty) so you can fix it before users notice.",
+      "inputs": "System metrics (CPU, memory, latency, error rate, prediction accuracy), alert rules (thresholds, conditions), notification channels (email, Slack, PagerDuty).",
+      "outputs": "Alert notifications sent to configured channels when conditions are met, alert history and status.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Define alert rules: specify metrics to monitor, thresholds (e.g., CPU > 80%, error rate > 5%), and conditions (duration, severity).",
+        "Collect metrics: continuously gather metrics from systems (Prometheus, CloudWatch, custom metrics).",
+        "Evaluate conditions: compare current metric values to thresholds and check if conditions are met.",
+        "Trigger alert: when condition is true (e.g., CPU > 80% for 5 minutes), create alert event.",
+        "Deduplicate alerts: group similar alerts to avoid alert fatigue (same alert multiple times).",
+        "Route alerts: send notifications to appropriate channels based on severity (critical → PagerDuty, warning → Slack).",
+        "Escalate alerts: if alert not acknowledged within time window, escalate to higher severity or different team.",
+        "Resolve alerts: mark alerts as resolved when underlying issue is fixed, track resolution time."
       ],
-      "example": "Example: Alerting applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "ML inference service: monitor latency (p50, p95, p99) → rule: p95 latency > 200ms for 2 minutes → alert triggered → notification sent to on-call engineer via PagerDuty → engineer investigates: high traffic spike → scales up instances → latency returns to normal → alert resolved.",
+      "time_complexity": "O(M) for evaluating M metrics (continuous monitoring), O(1) for alert evaluation per metric.",
+      "space_complexity": "O(A) for storing active alerts, O(H) for alert history where H is number of historical alerts.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Proactive: enables early detection of issues before they impact users.",
+        "Automated: reduces need for manual monitoring.",
+        "Actionable: provides context and severity to guide response."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Alert fatigue: too many alerts can desensitize teams.",
+        "False positives: may trigger alerts for non-critical issues.",
+        "Requires tuning: thresholds need careful calibration."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Manual Monitoring",
+        "Log-based Alerting",
+        "Anomaly Detection",
+        "Synthetic Monitoring"
       ],
-      "explanation": "Alerting solves computational problems efficiently."
+      "explanation": "Monitors system metrics and automatically triggers notifications when thresholds are exceeded, enabling proactive incident response and preventing service degradation through timely alerts."
     },
     {
       "path": "semester_06/lecture_38_monitoring_production/grafana_dashboards/README.md",
       "name": "Grafana Dashboards",
-      "problem": "Implements grafana dashboards algorithm.",
-      "intuition": "Grafana Dashboards is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Provides visual dashboards for monitoring and analyzing ML system metrics, enabling real-time visibility into system health, performance trends, and operational insights.",
+      "intuition": "Like a car's dashboard with speedometer and fuel gauge: Grafana creates visual dashboards showing all your ML system's 'vital signs' (CPU, memory, latency, errors) in real-time, so you can see at a glance if everything is healthy or if something needs attention.",
+      "inputs": "Metrics data sources (Prometheus, InfluxDB, CloudWatch, etc.), dashboard configuration (panels, queries, visualizations), time range filters.",
+      "outputs": "Interactive dashboards with charts, graphs, and tables displaying system metrics and trends.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Connect data sources: configure connections to metrics databases (Prometheus, InfluxDB, etc.).",
+        "Create dashboard: define dashboard with panels for different metrics (CPU, memory, latency, etc.).",
+        "Add panels: create panels (graphs, tables, gauges) and write queries to fetch metrics from data sources.",
+        "Configure visualizations: choose chart types (line, bar, heatmap), set colors, add thresholds and annotations.",
+        "Set up refresh intervals: configure automatic refresh (e.g., every 30 seconds) to update dashboards in real-time.",
+        "Add variables: create dashboard variables for filtering (e.g., by service, environment, time range).",
+        "Organize panels: arrange panels in rows and columns for logical grouping and easy navigation.",
+        "Share dashboards: export dashboard JSON, share with team, or set up public dashboards for stakeholders."
       ],
-      "example": "Example: Grafana Dashboards applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "ML inference dashboard: panel 1 shows request rate (line chart, 100 req/s), panel 2 shows latency p95 (200ms), panel 3 shows error rate (0.1%), panel 4 shows CPU usage (60%) → all panels refresh every 30s → engineer sees spike in latency → investigates further.",
+      "time_complexity": "O(Q) for querying Q metrics per panel, O(R) for rendering R panels (typically fast, < 1s for most dashboards).",
+      "space_complexity": "O(P·D) for storing P panels with D data points, O(M) for metrics data in time-series database.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Visual: provides intuitive visual representation of system health.",
+        "Real-time: updates automatically to show current system state.",
+        "Customizable: supports wide variety of visualizations and data sources."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Requires setup: needs configuration of data sources and panels.",
+        "Can be overwhelming: too many panels can make dashboards cluttered."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Custom Dashboards",
+        "CloudWatch Dashboards",
+        "Datadog",
+        "New Relic"
       ],
-      "explanation": "Grafana Dashboards solves computational problems efficiently."
+      "explanation": "Provides visual dashboards for monitoring ML system metrics, enabling real-time visibility into system health, performance trends, and operational insights through interactive charts and graphs."
     },
     {
       "path": "semester_06/lecture_38_monitoring_production/performance_profiling/README.md",
       "name": "Performance Profiling",
-      "problem": "Implements performance profiling algorithm.",
-      "intuition": "Performance Profiling is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Analyzes application execution to identify performance bottlenecks, measure resource usage (CPU, memory, I/O), and optimize code by pinpointing slow functions, hot paths, and resource-intensive operations.",
+      "intuition": "Like a performance analysis tool for athletes: profile your ML application to see exactly where it spends time and resources - which functions are slow, which use too much memory, which operations are bottlenecks - so you can optimize the right parts.",
+      "inputs": "Application code, profiling tool (cProfile, py-spy, perf, etc.), workload (test data, production trace).",
+      "outputs": "Profiling reports showing function call times, memory usage, CPU utilization, and bottleneck identification.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Choose profiling method: CPU profiling (time spent), memory profiling (memory allocation), or I/O profiling (disk/network).",
+        "Instrument application: add profiling hooks or use profiling tools to collect execution data.",
+        "Run workload: execute application with representative workload (training, inference, etc.).",
+        "Collect profiling data: gather function call traces, execution times, memory allocations, CPU samples.",
+        "Analyze results: identify hot functions (most time spent), memory hotspots (large allocations), I/O bottlenecks.",
+        "Visualize profile: use tools (flame graphs, call graphs) to visualize execution flow and bottlenecks.",
+        "Identify optimizations: pinpoint slow functions, unnecessary computations, memory leaks, inefficient algorithms.",
+        "Apply optimizations: optimize identified bottlenecks (cache results, optimize algorithms, reduce allocations).",
+        "Re-profile: measure improvements after optimization to verify gains."
       ],
-      "example": "Example: Performance Profiling applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "ML inference service: profile API endpoint → find: 60% time in feature preprocessing, 30% in model inference, 10% in result formatting → optimize: cache preprocessed features → re-profile → preprocessing now 20% (3x improvement) → overall latency reduced 40%.",
+      "time_complexity": "O(T) for profiling where T is execution time (adds overhead, typically 5-20% slowdown), O(A) for analysis where A is number of function calls.",
+      "space_complexity": "O(C) for storing call stack traces where C is call depth, O(F) for function metadata where F is number of functions.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Precise: identifies exact bottlenecks in code.",
+        "Data-driven: provides quantitative metrics for optimization decisions.",
+        "Comprehensive: can profile CPU, memory, I/O, and network."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Overhead: profiling adds performance overhead to application.",
+        "Complexity: requires expertise to interpret results and identify optimizations."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Manual Timing",
+        "Log-based Analysis",
+        "APM Tools",
+        "Benchmarking"
       ],
-      "explanation": "Performance Profiling solves computational problems efficiently."
+      "explanation": "Analyzes application execution to identify performance bottlenecks and measure resource usage, enabling data-driven optimization by pinpointing slow functions and resource-intensive operations."
     },
     {
       "path": "semester_06/lecture_38_monitoring_production/prometheus_ml/README.md",
-      "name": "Prometheus Ml",
-      "problem": "Implements prometheus ml algorithm.",
-      "intuition": "Prometheus Ml is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Prometheus for ML",
+      "problem": "Uses Prometheus time-series database to collect, store, and query ML system metrics (model performance, inference latency, resource usage), enabling monitoring, alerting, and performance analysis.",
+      "intuition": "Like a specialized database for system metrics: Prometheus collects all your ML metrics (request rate, latency, accuracy, GPU usage) over time, stores them efficiently, and lets you query them to create dashboards, set up alerts, and analyze trends.",
+      "inputs": "ML system metrics (counters, gauges, histograms), metric exporters, Prometheus configuration, scrape targets.",
+      "outputs": "Time-series database of metrics, queryable via PromQL for dashboards and alerting.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Instrument application: add Prometheus client libraries to export metrics (request_count, latency_seconds, etc.).",
+        "Define metrics: create metric types (counter for totals, gauge for current values, histogram for distributions).",
+        "Expose metrics: make metrics available via HTTP endpoint (/metrics) in Prometheus format.",
+        "Configure Prometheus: set up scrape targets (which services to collect metrics from) and scrape intervals.",
+        "Scrape metrics: Prometheus periodically pulls metrics from configured targets (default: every 15 seconds).",
+        "Store time-series: Prometheus stores metrics as time-series data with labels (service, model, environment).",
+        "Query metrics: use PromQL (Prometheus Query Language) to query metrics (e.g., rate(request_count[5m])).",
+        "Visualize: use Grafana or other tools to create dashboards from Prometheus metrics.",
+        "Alert: configure alert rules using PromQL to trigger alerts when metrics exceed thresholds."
       ],
-      "example": "Example: Prometheus Ml applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "ML inference service: export metrics: inference_requests_total (counter), inference_latency_seconds (histogram), model_accuracy (gauge) → Prometheus scrapes every 15s → query: rate(inference_requests_total[5m]) → shows 100 req/s → alert: inference_latency_seconds{p99} > 0.2 → triggers when p99 latency > 200ms.",
+      "time_complexity": "O(M) for scraping M metrics, O(Q) for querying where Q is query complexity (typically fast, < 100ms).",
+      "space_complexity": "O(M·T) for storing M metrics over T time periods (efficient compression, typically 1-2 bytes per sample).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Efficient: optimized for time-series data with compression.",
+        "Powerful queries: PromQL enables complex metric queries and aggregations.",
+        "Widely adopted: ecosystem of exporters and integrations."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Pull-based: requires services to expose metrics endpoints.",
+        "Storage: long-term storage requires additional solutions (Thanos, Cortex)."
       ],
       "alternatives": [
-        "Related algorithms"
+        "CloudWatch",
+        "Datadog",
+        "InfluxDB",
+        "Custom Metrics Systems"
       ],
-      "explanation": "Prometheus Ml solves computational problems efficiently."
+      "explanation": "Uses Prometheus time-series database to collect, store, and query ML system metrics, enabling monitoring, alerting, and performance analysis through efficient time-series storage and powerful query language."
     },
     {
       "path": "semester_07/lecture_39_operating_systems/deadlock_detection/README.md",
       "name": "Deadlock Detection",
-      "problem": "Implements deadlock detection algorithm.",
-      "intuition": "Deadlock Detection is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Identifies deadlock situations where multiple processes are waiting indefinitely for resources held by each other, enabling system recovery and prevention of resource starvation.",
+      "intuition": "Like detecting a traffic jam where cars are blocking each other: process A holds resource 1 and waits for resource 2, while process B holds resource 2 and waits for resource 1 - they're stuck forever. Deadlock detection finds these circular wait conditions.",
+      "inputs": "Resource allocation graph (processes, resources, allocation edges, request edges), system state snapshot.",
+      "outputs": "Detection of deadlock cycles, list of processes involved in deadlock, recovery recommendations.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Build resource allocation graph: represent processes and resources as nodes, allocations and requests as edges.",
+        "Detect cycles: search for cycles in the graph (if process A waits for resource held by B, and B waits for resource held by A, there's a cycle).",
+        "Use cycle detection algorithm: depth-first search (DFS) or wait-for graph analysis to find cycles.",
+        "Identify deadlocked processes: all processes in a cycle are deadlocked.",
+        "Report deadlock: notify system or administrator about detected deadlock and involved processes.",
+        "Recovery options: abort one or more deadlocked processes, preempt resources, or rollback transactions.",
+        "Prevent recurrence: analyze deadlock to understand cause and implement prevention strategies.",
+        "Monitor continuously: periodically check for deadlocks in running system."
       ],
-      "example": "Example: Deadlock Detection applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Database system: transaction T1 locks row A, waits for row B → transaction T2 locks row B, waits for row A → deadlock detection: finds cycle T1→A→T2→B→T1 → system aborts T1 (rollback) → T2 completes → deadlock resolved.",
+      "time_complexity": "O(V + E) where V is number of processes/resources, E is number of edges (DFS for cycle detection).",
+      "space_complexity": "O(V + E) for storing resource allocation graph, O(V) for DFS recursion stack.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Enables recovery: detects deadlocks so system can recover.",
+        "Prevents indefinite blocking: identifies processes that will never proceed.",
+        "Diagnostic: helps understand resource contention issues."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Overhead: periodic detection adds computational cost.",
+        "Detection delay: deadlock may exist for some time before detection.",
+        "Recovery cost: aborting processes may lose work."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Deadlock Prevention",
+        "Deadlock Avoidance",
+        "Timeout-based Detection",
+        "No Detection (Ostrich Algorithm)"
       ],
-      "explanation": "Deadlock Detection solves computational problems efficiently."
+      "explanation": "Identifies deadlock situations where multiple processes wait indefinitely for resources held by each other, enabling system recovery through cycle detection in resource allocation graphs."
     },
     {
       "path": "semester_07/lecture_39_operating_systems/file_systems/README.md",
@@ -6680,28 +6739,40 @@
     {
       "path": "semester_07/lecture_39_operating_systems/memory_management/README.md",
       "name": "Memory Management",
-      "problem": "Implements memory management algorithm.",
-      "intuition": "Memory Management is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Manages computer memory allocation and deallocation for processes, tracking which memory is in use, allocating memory to processes, and reclaiming memory when processes terminate, preventing memory leaks and ensuring efficient memory utilization.",
+      "intuition": "Like a hotel manager assigning rooms: the OS manages computer memory like a hotel - when a process needs memory (guest needs room), allocate it (assign room), track what's allocated (room registry), and when process ends (guest checks out), free the memory (clean room for next guest).",
+      "inputs": "Memory requests from processes, system memory state, allocation policies, memory size and layout.",
+      "outputs": "Allocated memory addresses for processes, memory mapping tables, freed memory available for reuse.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Track memory state: maintain data structures (free list, bitmap) to track which memory blocks are free or allocated.",
+        "Allocate memory: when process requests memory, find free block using allocation algorithm (first-fit, best-fit, worst-fit).",
+        "Mark as allocated: update memory state to mark allocated blocks as in use, associate with requesting process.",
+        "Return address: provide process with memory address (pointer) to allocated block.",
+        "Track allocations: maintain mapping of process to allocated memory blocks for cleanup.",
+        "Deallocate memory: when process terminates or frees memory, mark blocks as free and add to free list.",
+        "Coalesce free blocks: merge adjacent free blocks to reduce fragmentation.",
+        "Handle fragmentation: manage external fragmentation (free blocks scattered) and internal fragmentation (wasted space in allocated blocks)."
       ],
-      "example": "Example: Memory Management applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Process requests 1KB memory → memory manager finds free 2KB block → allocates 1KB from block → returns address 0x1000 → process uses memory → process terminates → memory manager marks 0x1000-0x1400 as free → coalesces with adjacent free block → now 3KB free block available.",
+      "time_complexity": "O(F) for allocation where F is number of free blocks (depends on algorithm: O(1) for buddy system, O(F) for first-fit), O(1) for deallocation.",
+      "space_complexity": "O(M) for tracking M memory blocks (metadata overhead, typically 1-5% of total memory).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Prevents conflicts: ensures processes don't access each other's memory.",
+        "Efficient utilization: maximizes memory usage through allocation algorithms.",
+        "Automatic: handles memory management transparently to applications."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Fragmentation: can lead to wasted memory due to fragmentation.",
+        "Overhead: metadata tracking consumes some memory.",
+        "Complexity: requires careful design to handle edge cases."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Manual Memory Management",
+        "Garbage Collection",
+        "Reference Counting",
+        "Memory Pools"
       ],
-      "explanation": "Memory Management solves computational problems efficiently."
+      "explanation": "Manages computer memory allocation and deallocation for processes, tracking memory state, allocating memory on demand, and reclaiming memory when processes terminate, ensuring efficient memory utilization and preventing conflicts."
     },
     {
       "path": "semester_07/lecture_39_operating_systems/process_scheduling/README.md",
