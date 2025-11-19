@@ -7334,158 +7334,234 @@
     {
       "path": "semester_07/lecture_42_ci_cd_fundamentals/build_automation/README.md",
       "name": "Build Automation",
-      "problem": "Implements build automation algorithm.",
-      "intuition": "Build Automation is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Automates the process of compiling source code, running tests, packaging artifacts, and preparing software for deployment, reducing manual effort and ensuring consistent, reproducible builds.",
+      "intuition": "Like an automated factory assembly line: instead of manually compiling code, running tests, and packaging (tedious, error-prone), build automation does it all automatically when you push code - just like a factory that automatically assembles products when materials arrive.",
+      "inputs": "Source code, build configuration files (Makefile, build.gradle, package.json, etc.), dependencies, build tools.",
+      "outputs": "Compiled binaries, packaged artifacts, test reports, deployment-ready software packages.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Detect changes: monitor source code repository for commits or changes.",
+        "Fetch dependencies: download required libraries, packages, or modules.",
+        "Compile code: transform source code into executable binaries or bytecode.",
+        "Run unit tests: execute automated tests to verify code correctness.",
+        "Package artifacts: bundle compiled code, dependencies, and resources into deployable packages (JAR, Docker image, etc.).",
+        "Run integration tests: test packaged artifacts in integrated environment.",
+        "Generate reports: create build reports, test results, and artifact metadata.",
+        "Store artifacts: save build outputs to artifact repository for deployment."
       ],
-      "example": "Example: Build Automation applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Java project: git push → build automation triggers → Maven downloads dependencies → compiles Java files → runs JUnit tests → packages JAR file → runs integration tests → uploads JAR to Nexus repository → build complete in 5 minutes (vs 30 minutes manual).",
+      "time_complexity": "O(C + T + P) where C is compilation time, T is test execution time, P is packaging time (typically minutes for most projects).",
+      "space_complexity": "O(S + D + A) where S is source code size, D is dependencies size, A is artifact size.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Consistency: ensures reproducible builds across environments.",
+        "Efficiency: reduces manual effort and human error.",
+        "Fast feedback: provides quick validation of code changes."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Setup overhead: requires initial configuration and maintenance.",
+        "Build time: may take time for large projects.",
+        "Dependency on tools: requires build tools and infrastructure."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Manual Builds",
+        "Script-based Builds",
+        "Container Builds",
+        "Cloud Build Services"
       ],
-      "explanation": "Build Automation solves computational problems efficiently."
+      "explanation": "Automates the process of compiling source code, running tests, and packaging artifacts, reducing manual effort and ensuring consistent, reproducible builds."
     },
     {
       "path": "semester_07/lecture_42_ci_cd_fundamentals/continuous_deployment/README.md",
       "name": "Continuous Deployment",
-      "problem": "Implements continuous deployment algorithm.",
-      "intuition": "Continuous Deployment is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Automatically deploys code changes to production environment after passing all automated tests, enabling rapid, reliable software delivery with minimal manual intervention.",
+      "intuition": "Like an automatic delivery system: code passes all tests (quality check) → automatically ships to production (delivery) - no manual approval needed, just like an automated warehouse that ships products as soon as they pass quality control.",
+      "inputs": "Built artifacts from CI, deployment configuration, target environment, deployment scripts.",
+      "outputs": "Deployed application in production, deployment status, rollback capability.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Receive artifacts: get build artifacts from CI pipeline (after all tests pass).",
+        "Prepare deployment: configure deployment environment, check prerequisites.",
+        "Deploy to staging: first deploy to staging environment for final validation.",
+        "Run smoke tests: execute critical tests to verify deployment success.",
+        "Deploy to production: if staging tests pass, automatically deploy to production.",
+        "Health checks: verify application is running correctly in production.",
+        "Monitor: track deployment metrics, errors, and performance.",
+        "Rollback (if needed): automatically revert to previous version if issues detected."
       ],
-      "example": "Example: Continuous Deployment applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Code commit → CI builds and tests → all pass → CD triggers → deploy to staging → smoke tests pass → deploy to production → health checks pass → deployment complete → new version live in 10 minutes (vs hours/days with manual deployment).",
+      "time_complexity": "O(D + V) where D is deployment time, V is validation time (typically 5-15 minutes for most applications).",
+      "space_complexity": "O(A + E) where A is artifact size, E is environment resources (servers, containers, etc.).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Rapid delivery: enables fast, frequent releases to production.",
+        "Reduced risk: automated deployment reduces human error.",
+        "Consistency: ensures deployments are repeatable and predictable."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Requires discipline: needs comprehensive test coverage and monitoring.",
+        "Risk: automated production deployments can cause issues if not properly tested.",
+        "Complexity: requires robust infrastructure and monitoring."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Manual Deployment",
+        "Continuous Delivery (with manual approval)",
+        "Scheduled Deployments",
+        "Blue-Green Deployment"
       ],
-      "explanation": "Continuous Deployment solves computational problems efficiently."
+      "explanation": "Automatically deploys code changes to production after passing all automated tests, enabling rapid, reliable software delivery with minimal manual intervention."
     },
     {
       "path": "semester_07/lecture_42_ci_cd_fundamentals/continuous_integration/README.md",
-      "name": "Continuous Integration",
-      "problem": "Implements continuous integration algorithm.",
-      "intuition": "Continuous Integration is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Continuous Integration (CI)",
+      "problem": "Automatically builds and tests code changes whenever developers commit to version control, enabling early detection of integration issues and maintaining code quality.",
+      "intuition": "Like a quality checkpoint on an assembly line: every time code is committed (like adding a part), CI automatically builds and tests it (checks if it fits) - if something breaks, you know immediately, not days later when everything is integrated.",
+      "inputs": "Code commits, CI configuration (Jenkinsfile, .github/workflows, GitLab CI), test suites, build scripts.",
+      "outputs": "Build status, test results, code quality reports, deployment artifacts (if tests pass).",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Monitor repository: CI server watches version control for new commits.",
+        "Trigger build: automatically start build process when code is pushed.",
+        "Checkout code: retrieve latest code from repository.",
+        "Install dependencies: set up build environment and install required packages.",
+        "Run build: compile code, package artifacts.",
+        "Execute tests: run automated test suite (unit, integration, etc.).",
+        "Check quality: run code quality checks (linting, static analysis).",
+        "Report results: notify developers of build status (pass/fail) via email, Slack, etc.",
+        "Deploy (optional): if all checks pass, automatically deploy to staging environment."
       ],
-      "example": "Example: Continuous Integration applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Developer pushes code → CI triggers → checkout code → install dependencies → build → run 500 unit tests → run integration tests → code quality checks → all pass → deploy to staging → notify team: 'Build #1234 passed, deployed to staging'.",
+      "time_complexity": "O(B + T) where B is build time, T is test execution time (typically 5-30 minutes depending on project size).",
+      "space_complexity": "O(C + D + A) where C is code size, D is dependencies, A is artifacts (build workspace requirements).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Early detection: catches integration issues immediately.",
+        "Code quality: ensures all code passes tests before merging.",
+        "Team confidence: provides fast feedback on code changes."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "False positives: may fail due to flaky tests or environment issues.",
+        "Resource usage: requires CI infrastructure and compute resources.",
+        "Maintenance: requires maintaining CI configuration and test suites."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Manual Integration",
+        "Scheduled Builds",
+        "Pre-commit Hooks",
+        "Pull Request Checks"
       ],
-      "explanation": "Continuous Integration solves computational problems efficiently."
+      "explanation": "Automatically builds and tests code changes whenever developers commit to version control, enabling early detection of integration issues and maintaining code quality."
     },
     {
       "path": "semester_07/lecture_42_ci_cd_fundamentals/deployment_strategies/README.md",
       "name": "Deployment Strategies",
-      "problem": "Implements deployment strategies algorithm.",
-      "intuition": "Deployment Strategies is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Defines approaches for releasing new software versions to production with minimal downtime and risk, enabling safe, controlled rollouts of application updates.",
+      "intuition": "Like different ways to update a restaurant: you could close and renovate (big bang), update one section at a time (rolling), have two restaurants and switch (blue-green), or test with a few customers first (canary) - each strategy balances risk, downtime, and complexity differently.",
+      "inputs": "New application version, current production environment, deployment strategy type, rollback plan.",
+      "outputs": "Deployed new version, zero or minimal downtime, ability to rollback if needed.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Choose strategy: select deployment approach (big bang, rolling, blue-green, canary, etc.).",
+        "Prepare new version: build and package new application version.",
+        "Execute deployment: apply chosen strategy to deploy new version.",
+        "Monitor: track deployment progress, application health, and user metrics.",
+        "Validate: verify new version is working correctly (health checks, smoke tests).",
+        "Complete rollout: finish deployment according to strategy (all instances, full traffic, etc.).",
+        "Rollback (if needed): revert to previous version if issues detected.",
+        "Cleanup: remove old versions and resources after successful deployment."
       ],
-      "example": "Example: Deployment Strategies applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Blue-green deployment: prepare green environment with v2 → deploy v2 to green → switch load balancer from blue (v1) to green (v2) → all traffic now on v2 → monitor → if issues, switch back to blue → if OK, keep green, decommission blue.",
+      "time_complexity": "O(D) where D is deployment time (varies by strategy: minutes to hours).",
+      "space_complexity": "O(2·E) for blue-green (two environments), O(E) for rolling/canary where E is environment size.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Risk mitigation: enables safe, controlled deployments.",
+        "Zero downtime: many strategies allow updates without service interruption.",
+        "Fast rollback: quick reversion if issues occur."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Resource overhead: some strategies require additional infrastructure.",
+        "Complexity: more complex strategies require more setup and management.",
+        "Cost: maintaining multiple environments increases costs."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Big Bang Deployment",
+        "Rolling Deployment",
+        "Blue-Green",
+        "Canary",
+        "A/B Testing"
       ],
-      "explanation": "Deployment Strategies solves computational problems efficiently."
+      "explanation": "Defines approaches for releasing new software versions to production with minimal downtime and risk, enabling safe, controlled rollouts of application updates."
     },
     {
       "path": "semester_07/lecture_42_ci_cd_fundamentals/pipeline_automation/README.md",
       "name": "Pipeline Automation",
-      "problem": "Implements pipeline automation algorithm.",
-      "intuition": "Pipeline Automation is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Orchestrates end-to-end software delivery pipeline from code commit to production deployment, automating build, test, and deployment stages to enable fast, reliable software releases.",
+      "intuition": "Like an automated assembly line for software: code goes through stages (build → test → deploy) automatically, like a factory line where products move through stations (assembly → quality check → packaging → shipping) without manual intervention.",
+      "inputs": "Source code, pipeline configuration (Jenkinsfile, YAML, etc.), build tools, test suites, deployment targets.",
+      "outputs": "Automated pipeline execution, build artifacts, test results, deployed applications.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Define pipeline: create pipeline configuration with stages (build, test, deploy).",
+        "Trigger pipeline: automatically start on code commit or manual trigger.",
+        "Build stage: compile code, package artifacts, run build scripts.",
+        "Test stage: execute test suites (unit, integration, e2e), run quality checks.",
+        "Deploy to staging: if tests pass, deploy to staging environment.",
+        "Staging validation: run smoke tests, integration tests in staging.",
+        "Deploy to production: if staging validation passes, deploy to production.",
+        "Post-deployment: run health checks, monitor metrics, notify stakeholders.",
+        "Handle failures: stop pipeline on failure, notify team, enable rollback."
       ],
-      "example": "Example: Pipeline Automation applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Git push → pipeline triggers → Stage 1: build (compile, package) → Stage 2: test (500 unit tests, 50 integration tests) → Stage 3: deploy staging → Stage 4: staging tests → Stage 5: deploy production → Stage 6: health checks → pipeline complete: 15 minutes, zero manual steps.",
+      "time_complexity": "O(Σ(S_i)) where S_i is time for each stage i (total pipeline time, typically 10-60 minutes).",
+      "space_complexity": "O(C + A + E) where C is code, A is artifacts, E is environment resources (varies by pipeline stages).",
       "strengths": [
-        "Efficient for specific use cases"
+        "End-to-end automation: eliminates manual steps in software delivery.",
+        "Consistency: ensures same process for every release.",
+        "Visibility: provides clear view of delivery pipeline status."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Setup complexity: requires configuring multiple stages and integrations.",
+        "Maintenance: pipeline configuration needs updates as project evolves.",
+        "Debugging: failures may require investigation across multiple stages."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Manual Processes",
+        "Script-based Automation",
+        "CI/CD Tools",
+        "GitOps"
       ],
-      "explanation": "Pipeline Automation solves computational problems efficiently."
+      "explanation": "Orchestrates end-to-end software delivery pipeline from code commit to production deployment, automating build, test, and deployment stages to enable fast, reliable software releases."
     },
     {
       "path": "semester_07/lecture_42_ci_cd_fundamentals/test_automation/README.md",
       "name": "Test Automation",
-      "problem": "Implements test automation algorithm.",
-      "intuition": "Test Automation is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Automates execution of software tests to verify functionality, performance, and quality without manual intervention, enabling fast, reliable, and repeatable testing.",
+      "intuition": "Like having a robot tester: instead of manually clicking through an app to test it (slow, error-prone), automated tests run automatically - like a robot that tests every feature systematically, much faster and more reliable than humans.",
+      "inputs": "Test scripts, test data, application under test, test framework, test environment.",
+      "outputs": "Test execution results, test reports, pass/fail status, coverage metrics.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Write test cases: create automated test scripts using testing frameworks (JUnit, pytest, Selenium, etc.).",
+        "Prepare test data: set up test datasets, mock services, test fixtures.",
+        "Configure test environment: set up isolated test environment matching production.",
+        "Execute tests: run test suite automatically (unit tests, integration tests, e2e tests).",
+        "Capture results: record test outcomes, execution time, error messages.",
+        "Generate reports: create test reports with pass/fail status, coverage, metrics.",
+        "Analyze failures: identify failed tests, root causes, and required fixes.",
+        "Integrate with CI: run automated tests as part of CI/CD pipeline.",
+        "Maintain tests: update tests as application evolves."
       ],
-      "example": "Example: Test Automation applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Test automation: 1000 unit tests → run automatically on every commit → execute in parallel → complete in 2 minutes → report: 995 passed, 5 failed → identify failures → developer fixes code → tests pass → code merged.",
+      "time_complexity": "O(T) where T is total test execution time (can be parallelized, typically minutes for large test suites).",
+      "space_complexity": "O(E + D) where E is test environment size, D is test data size.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Speed: executes tests much faster than manual testing.",
+        "Reliability: consistent, repeatable test execution.",
+        "Coverage: can run comprehensive test suites on every change."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Initial investment: requires time to write and maintain test scripts.",
+        "Flaky tests: some tests may be unstable and require maintenance.",
+        "Limited to scriptable scenarios: may miss edge cases humans would notice."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Manual Testing",
+        "Exploratory Testing",
+        "Test-driven Development",
+        "Behavior-driven Development"
       ],
-      "explanation": "Test Automation solves computational problems efficiently."
+      "explanation": "Automates execution of software tests to verify functionality, performance, and quality without manual intervention, enabling fast, reliable, and repeatable testing."
     },
     {
       "path": "semester_07/lecture_43_ci_cd_advanced/blue_green_deployment/README.md",
