@@ -9164,54 +9164,79 @@
     {
       "path": "semester_08/lecture_50_sql_advanced/database_design/README.md",
       "name": "Database Design",
-      "problem": "Implements database design algorithm.",
-      "intuition": "Database Design is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Creates efficient, normalized database schemas that model real-world entities and relationships, ensuring data integrity, minimizing redundancy, and optimizing for query performance.",
+      "intuition": "Like designing a building blueprint: database design is like creating an architectural blueprint for data - you identify what entities exist (like rooms in a building), how they relate (like how rooms connect), and design the structure (like floor plan) to be efficient, organized, and easy to navigate - good design makes the database easy to use, maintain, and query.",
+      "inputs": "Business requirements, entities, relationships, data constraints, access patterns.",
+      "outputs": "Database schema, entity-relationship model, normalized tables, optimized design.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Gather requirements: understand business needs, data, and access patterns.",
+        "Identify entities: determine main entities (customers, orders, products, etc.).",
+        "Define relationships: establish relationships between entities (one-to-many, many-to-many, etc.).",
+        "Create ER model: build entity-relationship diagram showing entities and relationships.",
+        "Normalize: apply normalization rules to eliminate redundancy (1NF, 2NF, 3NF).",
+        "Design tables: create table structures with columns, data types, and constraints.",
+        "Define keys: establish primary keys, foreign keys, and indexes.",
+        "Optimize: denormalize selectively for performance if needed.",
+        "Validate: verify design meets requirements and supports queries efficiently."
       ],
-      "example": "Example: Database Design applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "E-commerce database design: entities: customers, orders, products, order_items → relationships: customer has many orders, order has many order_items, order_item belongs to product → normalize: separate tables for each entity → foreign keys link relationships → indexes on frequently queried fields → efficient, maintainable database design.",
+      "time_complexity": "O(e·r) where e is number of entities, r is number of relationships (design phase).",
+      "space_complexity": "O(t) where t is number of tables and their schema size.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Data integrity: well-designed schema ensures data consistency.",
+        "Efficiency: optimized design supports fast queries.",
+        "Maintainability: clear structure makes database easy to maintain and extend."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: good design requires careful analysis and planning.",
+        "Trade-offs: may need to balance normalization with performance.",
+        "Evolution: schema changes can be complex as requirements evolve."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Ad-hoc Design",
+        "Denormalized Design",
+        "NoSQL Design",
+        "Schema-less Databases"
       ],
-      "explanation": "Database Design solves computational problems efficiently."
+      "explanation": "Creates efficient, normalized database schemas that model real-world entities and relationships, ensuring data integrity, minimizing redundancy, and optimizing for query performance."
     },
     {
       "path": "semester_08/lecture_50_sql_advanced/denormalization/README.md",
-      "name": "Denormalization",
-      "problem": "Implements denormalization algorithm.",
-      "intuition": "Denormalization is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Database Denormalization",
+      "problem": "Intentionally introduces data redundancy by storing duplicate data across tables to improve query performance, trading storage space and update complexity for faster reads.",
+      "intuition": "Like keeping copies for convenience: denormalization is like keeping a copy of important information in multiple places for quick access - instead of always looking it up (JOIN), you store it where you need it (like keeping a phone number in both your contacts and on a sticky note) - it uses more space and you must update multiple places, but it's faster to access.",
+      "inputs": "Normalized database schema, query patterns, performance requirements, storage constraints.",
+      "outputs": "Denormalized schema, improved query performance, increased storage, update complexity.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Analyze queries: identify frequently executed queries with multiple JOINs.",
+        "Identify redundancy: determine which data can be duplicated for performance.",
+        "Design denormalization: plan where to add redundant data (computed columns, duplicated fields).",
+        "Implement: add redundant columns or computed values to tables.",
+        "Update logic: modify application to update redundant data consistently.",
+        "Test performance: measure query performance improvements.",
+        "Monitor: track storage increase and update performance impact.",
+        "Balance: find optimal balance between normalization and denormalization."
       ],
-      "example": "Example: Denormalization applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Normalized: orders table references customers table → query orders with customer names requires JOIN → denormalize: add customer_name column to orders table → query orders with names: no JOIN needed → faster query → trade-off: must update customer_name in orders when customer name changes.",
+      "time_complexity": "O(1) for reads (no JOINs), O(u) for updates where u is number of redundant copies to update.",
+      "space_complexity": "O(d·r) where d is data size, r is redundancy factor (more storage for duplicates).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Query performance: eliminates JOINs, dramatically improving read speed.",
+        "Simpler queries: queries become simpler without complex JOINs.",
+        "Reduced load: fewer JOINs reduce database load."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Storage overhead: requires additional storage for duplicate data.",
+        "Update complexity: must update redundant data in multiple places.",
+        "Data inconsistency: risk of inconsistent data if updates fail."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Normalization",
+        "Materialized Views",
+        "Caching",
+        "Read Replicas"
       ],
-      "explanation": "Denormalization solves computational problems efficiently."
+      "explanation": "Intentionally introduces data redundancy by storing duplicate data across tables to improve query performance, trading storage space and update complexity for faster reads."
     },
     {
       "path": "semester_08/lecture_50_sql_advanced/normalization/README.md",
@@ -9253,29 +9278,41 @@
     },
     {
       "path": "semester_08/lecture_50_sql_advanced/partitioning/README.md",
-      "name": "Partitioning",
-      "problem": "Implements partitioning algorithm.",
-      "intuition": "Partitioning is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Database Partitioning",
+      "problem": "Divides large tables into smaller, manageable partitions based on partition key, improving query performance, maintenance operations, and enabling partition pruning.",
+      "intuition": "Like organizing files into folders: database partitioning is like organizing a huge filing cabinet into smaller drawers (partitions) - instead of searching through one massive drawer (table), you organize files by date or category (partition key) into separate drawers - when you need files from a specific date, you only open that drawer (partition), making searches much faster.",
+      "inputs": "Large table, partition key, partition strategy (range, list, hash), partition boundaries.",
+      "outputs": "Partitioned table, improved performance, easier maintenance, partition pruning.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Choose partition key: select column(s) for partitioning (e.g., date, region).",
+        "Select strategy: choose partitioning strategy (range, list, hash, composite).",
+        "Define partitions: create partition definitions with boundaries.",
+        "Partition table: split table data into partitions based on partition key.",
+        "Store partitions: store each partition separately (same table, different storage).",
+        "Query: database automatically routes queries to relevant partition(s).",
+        "Prune: query optimizer prunes irrelevant partitions (partition elimination).",
+        "Maintain: perform maintenance operations (backup, index rebuild) on individual partitions."
       ],
-      "example": "Example: Partitioning applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Orders table: 100M rows → partition by order_date → range partitions: 2023-Q1, 2023-Q2, 2023-Q3, 2023-Q4 → query: SELECT * FROM orders WHERE order_date = '2023-06-15' → optimizer prunes other partitions → only scans Q2 partition → query time: 0.1s vs 10s (100x faster).",
+      "time_complexity": "O(1) for partition routing, O(n/p) for queries where n is data size, p is number of partitions (partition pruning).",
+      "space_complexity": "O(d) where d is data size (same as unpartitioned, but organized into partitions).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Query performance: partition pruning dramatically improves query speed.",
+        "Maintenance: easier to maintain and manage smaller partitions.",
+        "Scalability: enables managing very large tables efficiently."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Partition key: poor partition key selection can limit benefits.",
+        "Cross-partition queries: queries spanning partitions may be slower.",
+        "Complexity: adds complexity to table design and management."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Unpartitioned Tables",
+        "Sharding",
+        "Indexing",
+        "Materialized Views"
       ],
-      "explanation": "Partitioning solves computational problems efficiently."
+      "explanation": "Divides large tables into smaller, manageable partitions based on partition key, improving query performance, maintenance operations, and enabling partition pruning."
     },
     {
       "path": "semester_08/lecture_50_sql_advanced/query_optimization/README.md",
@@ -9585,54 +9622,78 @@
     {
       "path": "semester_08/lecture_52_nosql_advanced/hybrid_databases/README.md",
       "name": "Hybrid Databases",
-      "problem": "Implements hybrid databases algorithm.",
-      "intuition": "Hybrid Databases is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Combines multiple database models (relational, document, graph, key-value) in a single system, enabling applications to use the best database type for each use case while maintaining unified access.",
+      "intuition": "Like a multi-tool: hybrid databases are like Swiss Army knives that combine different tools (relational, document, graph databases) in one system - you can use SQL for structured data (like a knife), document storage for flexible data (like scissors), and graph queries for relationships (like a screwdriver), all in one database system.",
+      "inputs": "Multiple data models, unified query interface, data type requirements, access patterns.",
+      "outputs": "Hybrid database system, unified access, optimized storage for each data type.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Identify use cases: determine which data models are needed (relational, document, graph, etc.).",
+        "Select hybrid system: choose database system supporting multiple models (e.g., PostgreSQL with JSON, graph extensions).",
+        "Design schema: design schemas for each data model within hybrid system.",
+        "Store data: store data in appropriate model based on structure and access patterns.",
+        "Query: use appropriate query language for each model (SQL, document queries, graph queries).",
+        "Integrate: enable cross-model queries and data integration.",
+        "Optimize: optimize each model independently for its use case.",
+        "Manage: manage unified system with single administration interface."
       ],
-      "example": "Example: Hybrid Databases applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Hybrid database: use PostgreSQL → relational tables for structured data (users, orders) → JSON columns for flexible data (product metadata) → graph extension for relationships (social network) → query: SQL for structured, JSON queries for documents, Cypher for graphs → all in one database → unified access.",
+      "time_complexity": "Varies by model: O(log n) for relational with indexes, O(1) for key-value, O(d) for graph traversals.",
+      "space_complexity": "O(Σ(d_i)) where d_i is data size for each model type.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Flexibility: supports multiple data models in one system.",
+        "Unified access: single database system for diverse use cases.",
+        "Optimization: can optimize each model for its specific use case."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: more complex than single-model databases.",
+        "Learning curve: requires understanding multiple data models.",
+        "Performance: may not be optimal for all models compared to specialized databases."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Multi-Database Systems",
+        "Polyglot Persistence",
+        "Specialized Databases",
+        "Unified Query Layers"
       ],
-      "explanation": "Hybrid Databases solves computational problems efficiently."
+      "explanation": "Combines multiple database models (relational, document, graph, key-value) in a single system, enabling applications to use the best database type for each use case while maintaining unified access."
     },
     {
       "path": "semester_08/lecture_52_nosql_advanced/nosql_consistency/README.md",
-      "name": "Nosql Consistency",
-      "problem": "Implements nosql consistency algorithm.",
-      "intuition": "Nosql Consistency is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "NoSQL Consistency Models",
+      "problem": "Defines data consistency guarantees in distributed NoSQL systems, balancing between strong consistency (ACID) and eventual consistency (BASE) based on application requirements.",
+      "intuition": "Like different levels of synchronization: NoSQL consistency models are like different ways to keep multiple copies in sync - strong consistency is like everyone reading the same book at the same time (always up-to-date, but slower), while eventual consistency is like everyone having their own copy that eventually syncs (faster, but may have temporary differences) - you choose based on whether you need immediate accuracy or can tolerate temporary inconsistencies.",
+      "inputs": "Consistency model type, replication configuration, application requirements, CAP theorem trade-offs.",
+      "outputs": "Consistency guarantees, data synchronization behavior, performance characteristics.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Choose model: select consistency model (strong, eventual, causal, session, etc.).",
+        "Configure replication: set up replication with chosen consistency guarantees.",
+        "Define rules: establish rules for read/write consistency (read-your-writes, monotonic reads, etc.).",
+        "Implement: implement consistency mechanisms (vector clocks, version vectors, etc.).",
+        "Monitor: track consistency violations and synchronization lag.",
+        "Tune: adjust consistency levels based on performance and accuracy requirements.",
+        "Handle conflicts: implement conflict resolution for eventual consistency.",
+        "Document: document consistency guarantees for application developers."
       ],
-      "example": "Example: Nosql Consistency applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "NoSQL database with eventual consistency → write to node A → replicate to nodes B, C → read from node B (may see old data temporarily) → eventually all nodes sync → all reads see same data → trade-off: faster writes, eventual accuracy vs strong consistency: slower writes, immediate accuracy.",
+      "time_complexity": "O(1) for eventual consistency (fast), O(n) for strong consistency where n is number of replicas (slower due to coordination).",
+      "space_complexity": "O(r) where r is replication overhead (vector clocks, version vectors).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Performance: eventual consistency enables high performance and availability.",
+        "Scalability: allows distributed systems to scale horizontally.",
+        "Flexibility: can choose consistency level based on use case."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: managing consistency in distributed systems is complex.",
+        "Conflict resolution: eventual consistency requires conflict resolution strategies.",
+        "Application complexity: developers must handle potential inconsistencies."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Strong Consistency (ACID)",
+        "Eventual Consistency (BASE)",
+        "Causal Consistency",
+        "Session Consistency"
       ],
-      "explanation": "Nosql Consistency solves computational problems efficiently."
+      "explanation": "Defines data consistency guarantees in distributed NoSQL systems, balancing between strong consistency (ACID) and eventual consistency (BASE) based on application requirements."
     },
     {
       "path": "semester_08/lecture_52_nosql_advanced/nosql_migration/README.md",
@@ -9662,237 +9723,353 @@
     },
     {
       "path": "semester_08/lecture_52_nosql_advanced/nosql_replication/README.md",
-      "name": "Nosql Replication",
-      "problem": "Implements nosql replication algorithm.",
-      "intuition": "Nosql Replication is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "NoSQL Replication",
+      "problem": "Maintains multiple copies of NoSQL data across distributed nodes, enabling high availability, fault tolerance, and load distribution in distributed NoSQL systems.",
+      "intuition": "Like backup copies for NoSQL: NoSQL replication creates multiple copies of data across different servers (like making photocopies and storing them in different locations) - if one server fails, others continue serving data (like having backup copies), and read requests can be distributed across copies (like multiple people reading different copies), improving performance and reliability.",
+      "inputs": "Primary data, replication configuration, replication strategy (master-slave, master-master, etc.), network topology.",
+      "outputs": "Replicated data copies, high availability, fault tolerance, load distribution.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Configure replication: set up replication strategy (master-slave, peer-to-peer, etc.).",
+        "Select nodes: choose nodes to participate in replication.",
+        "Initial sync: copy existing data from primary to replica nodes.",
+        "Monitor changes: track data changes (writes, updates, deletes) on primary.",
+        "Replicate changes: propagate changes to replica nodes (synchronously or asynchronously).",
+        "Apply changes: replicas apply changes to maintain consistency.",
+        "Handle conflicts: resolve conflicts in multi-master replication.",
+        "Failover: automatically promote replica to primary if primary fails.",
+        "Monitor: track replication lag and ensure replicas stay synchronized."
       ],
-      "example": "Example: Nosql Replication applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "MongoDB replica set: primary node in New York → replicate to secondary nodes in London and Tokyo → writes go to primary → changes replicated to secondaries → reads can go to any node → if primary fails → automatic election → London becomes primary → zero downtime → high availability.",
+      "time_complexity": "O(1) for replication setup, O(n) for initial sync where n is data size, O(1) per operation for ongoing replication.",
+      "space_complexity": "O(d·r) where d is data size, r is replication factor (each replica stores full copy).",
       "strengths": [
-        "Efficient for specific use cases"
+        "High availability: system continues operating if nodes fail.",
+        "Load distribution: read queries distributed across replicas.",
+        "Fault tolerance: data survives node failures."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Replication lag: replicas may be slightly behind primary.",
+        "Storage cost: requires multiple copies of data.",
+        "Complexity: managing replication across distributed nodes is complex."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Single Node",
+        "Sharding",
+        "Backup and Restore",
+        "Clustering"
       ],
-      "explanation": "Nosql Replication solves computational problems efficiently."
+      "explanation": "Maintains multiple copies of NoSQL data across distributed nodes, enabling high availability, fault tolerance, and load distribution in distributed NoSQL systems."
     },
     {
       "path": "semester_08/lecture_52_nosql_advanced/nosql_scalability/README.md",
-      "name": "Nosql Scalability",
-      "problem": "Implements nosql scalability algorithm.",
-      "intuition": "Nosql Scalability is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "NoSQL Scalability",
+      "problem": "Enables NoSQL databases to handle increasing data volumes and traffic by scaling horizontally across multiple nodes, providing linear scalability and high throughput.",
+      "intuition": "Like adding more workers: NoSQL scalability is like hiring more workers to handle more work - instead of making one worker stronger (vertical scaling, like a bigger server), you add more workers (horizontal scaling, like more servers) - each worker handles part of the work, so total capacity increases linearly with number of workers (servers).",
+      "inputs": "Data volume, traffic load, scalability requirements, cluster configuration.",
+      "outputs": "Scalable NoSQL cluster, distributed data, increased throughput, linear scalability.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Assess requirements: determine data volume, traffic, and scalability needs.",
+        "Design cluster: plan cluster architecture (number of nodes, data distribution).",
+        "Add nodes: add new nodes to cluster as data/traffic grows.",
+        "Distribute data: partition data across nodes (sharding, consistent hashing).",
+        "Balance load: distribute read/write operations across nodes.",
+        "Monitor: track cluster performance, node utilization, and bottlenecks.",
+        "Scale out: add more nodes when capacity is reached.",
+        "Optimize: tune cluster configuration for optimal performance."
       ],
-      "example": "Example: Nosql Scalability applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "NoSQL cluster: start with 3 nodes → data grows → add 3 more nodes → data redistributed across 6 nodes → each node handles 1/6 of load → throughput doubles → linear scalability → can add more nodes as needed → scales to petabytes of data.",
+      "time_complexity": "O(1) per operation on single node, O(n/k) where n is data size, k is number of nodes (distributed processing).",
+      "space_complexity": "O(d/k) per node where d is total data, k is number of nodes (data distributed).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Horizontal scaling: scales by adding more nodes (linear scalability).",
+        "High throughput: distributes load across multiple nodes.",
+        "Cost-effective: can use commodity hardware instead of expensive servers."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: managing distributed cluster is complex.",
+        "Network overhead: requires network communication between nodes.",
+        "Data distribution: requires careful data partitioning strategy."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Vertical Scaling",
+        "Sharding",
+        "Caching",
+        "Read Replicas"
       ],
-      "explanation": "Nosql Scalability solves computational problems efficiently."
+      "explanation": "Enables NoSQL databases to handle increasing data volumes and traffic by scaling horizontally across multiple nodes, providing linear scalability and high throughput."
     },
     {
       "path": "semester_08/lecture_52_nosql_advanced/nosql_sharding/README.md",
-      "name": "Nosql Sharding",
-      "problem": "Implements nosql sharding algorithm.",
-      "intuition": "Nosql Sharding is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "NoSQL Sharding",
+      "problem": "Partitions large datasets across multiple database nodes (shards) based on shard key, enabling horizontal scaling and distributing data and load across cluster.",
+      "intuition": "Like dividing a large library into sections: NoSQL sharding is like splitting a huge library into smaller sections (shards) - instead of one massive library (single database), you have multiple smaller libraries (shards) organized by topic (shard key) - when you need a book, you know which section to go to (which shard), making it faster and allowing the library to grow by adding more sections.",
+      "inputs": "Dataset, shard key, number of shards, sharding strategy, cluster nodes.",
+      "outputs": "Sharded database, distributed data, balanced load, scalable system.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Choose shard key: select field(s) to partition data (e.g., user_id, region).",
+        "Determine shards: decide number of shards and shard boundaries.",
+        "Assign nodes: assign each shard to a database node.",
+        "Partition data: distribute data across shards based on shard key.",
+        "Route queries: route queries to appropriate shard(s) based on shard key.",
+        "Balance: ensure data and load are evenly distributed across shards.",
+        "Monitor: track shard sizes, query distribution, and performance.",
+        "Reshard: redistribute data if shards become unbalanced or cluster grows."
       ],
-      "example": "Example: Nosql Sharding applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "MongoDB sharding: shard key = user_id → 3 shards → shard 1: user_id 0-999, shard 2: user_id 1000-1999, shard 3: user_id 2000-2999 → query for user_id=1500 → routed to shard 2 → fast lookup → data distributed → can add more shards as data grows.",
+      "time_complexity": "O(1) for shard routing, O(n/k) for queries where n is data size, k is number of shards (parallel processing).",
+      "space_complexity": "O(d/k) per shard where d is total data, k is number of shards (data partitioned).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Horizontal scaling: enables scaling by adding more shards.",
+        "Performance: queries only access relevant shard(s), improving speed.",
+        "Load distribution: distributes read/write load across multiple nodes."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Shard key selection: poor shard key can cause uneven distribution.",
+        "Cross-shard queries: queries spanning multiple shards are complex.",
+        "Resharding: moving data between shards can be expensive."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Single Database",
+        "Replication",
+        "Partitioning",
+        "Vertical Scaling"
       ],
-      "explanation": "Nosql Sharding solves computational problems efficiently."
+      "explanation": "Partitions large datasets across multiple database nodes (shards) based on shard key, enabling horizontal scaling and distributing data and load across cluster."
     },
     {
       "path": "semester_08/lecture_53_database_operations/backup_strategies/README.md",
-      "name": "Backup Strategies",
-      "problem": "Implements backup strategies algorithm.",
-      "intuition": "Backup Strategies is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Database Backup Strategies",
+      "problem": "Creates and manages copies of database data to enable recovery from data loss, corruption, or disasters, ensuring business continuity and data protection.",
+      "intuition": "Like insurance for data: backup strategies are like having insurance for your data - you regularly make copies (like taking photos of important documents) and store them safely (like keeping photos in a fireproof safe) - if something happens to your original data (like a fire), you can restore from backups (like reprinting photos), ensuring you don't lose everything.",
+      "inputs": "Database data, backup configuration, storage location, retention policy, backup schedule.",
+      "outputs": "Backup copies, recovery capability, data protection, business continuity.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Define strategy: choose backup strategy (full, incremental, differential, continuous).",
+        "Schedule backups: set up backup schedule (daily, hourly, real-time).",
+        "Perform backup: execute backup operation (full database copy or incremental changes).",
+        "Store backups: save backups to secure storage (local, remote, cloud).",
+        "Verify: validate backup integrity and completeness.",
+        "Test restore: periodically test restoring from backups to ensure they work.",
+        "Retain: maintain backup retention policy (keep backups for specified period).",
+        "Monitor: track backup success, storage usage, and restore times.",
+        "Document: document backup procedures and recovery processes."
       ],
-      "example": "Example: Backup Strategies applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Database backup strategy: full backup daily at 2 AM → incremental backups every 6 hours → backups stored on local disk and cloud → retention: 30 days daily, 12 months monthly → test restore monthly → disaster recovery: restore from cloud backup → data recovered → business continuity maintained.",
+      "time_complexity": "O(d) for full backup where d is database size, O(c) for incremental where c is changed data size.",
+      "space_complexity": "O(d·r) where d is database size, r is retention factor (multiple backup copies).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Data protection: enables recovery from data loss or corruption.",
+        "Business continuity: ensures business can continue after disasters.",
+        "Compliance: meets regulatory requirements for data retention."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Storage cost: requires significant storage for backup copies.",
+        "Time overhead: backup operations consume resources and time.",
+        "Complexity: managing backup schedules and retention can be complex."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Replication",
+        "Snapshots",
+        "Continuous Backup",
+        "Point-in-Time Recovery"
       ],
-      "explanation": "Backup Strategies solves computational problems efficiently."
+      "explanation": "Creates and manages copies of database data to enable recovery from data loss, corruption, or disasters, ensuring business continuity and data protection."
     },
     {
       "path": "semester_08/lecture_53_database_operations/capacity_planning/README.md",
-      "name": "Capacity Planning",
-      "problem": "Implements capacity planning algorithm.",
-      "intuition": "Capacity Planning is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Database Capacity Planning",
+      "problem": "Forecasts future database resource requirements (storage, compute, memory) based on growth trends and usage patterns, ensuring adequate capacity to meet future needs.",
+      "intuition": "Like planning for a growing family: capacity planning is like planning house size for a growing family - you analyze current usage (how much space you use now), growth trends (how fast the family is growing), and forecast future needs (how much space you'll need in 2 years) - then you plan resources (buy bigger house, add rooms) to ensure you have enough capacity before you run out.",
+      "inputs": "Current usage metrics, growth trends, business projections, performance requirements, resource constraints.",
+      "outputs": "Capacity forecasts, resource requirements, scaling plans, budget estimates.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Collect metrics: gather current usage data (storage, CPU, memory, I/O, connections).",
+        "Analyze trends: identify growth patterns and trends over time.",
+        "Project growth: forecast future growth based on historical data and business projections.",
+        "Calculate requirements: estimate future resource needs (storage, compute, memory).",
+        "Plan scaling: determine when and how to scale (add storage, upgrade hardware, add nodes).",
+        "Estimate costs: calculate costs for required resources.",
+        "Create timeline: establish timeline for capacity additions.",
+        "Monitor: continuously monitor usage and adjust forecasts.",
+        "Review: periodically review and update capacity plans."
       ],
-      "example": "Example: Capacity Planning applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Database capacity planning: current storage: 500GB, growth: 50GB/month → forecast: 1TB in 10 months → plan: add 1TB storage in 8 months → current CPU: 60% utilization, growth: 5%/month → forecast: 90% in 6 months → plan: upgrade CPU in 5 months → proactive capacity planning → avoid capacity issues.",
+      "time_complexity": "O(m) where m is number of metrics to analyze (planning phase).",
+      "space_complexity": "O(h) where h is historical data size (metrics storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Proactive: prevents capacity issues before they occur.",
+        "Cost optimization: enables budget planning and cost optimization.",
+        "Performance: ensures adequate resources for performance requirements."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Uncertainty: forecasts may be inaccurate due to unpredictable growth.",
+        "Complexity: requires analysis of multiple metrics and trends.",
+        "Over-provisioning: may lead to over-provisioning if forecasts are too high."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Reactive Scaling",
+        "Auto-scaling",
+        "Cloud Elasticity",
+        "Resource Monitoring"
       ],
-      "explanation": "Capacity Planning solves computational problems efficiently."
+      "explanation": "Forecasts future database resource requirements (storage, compute, memory) based on growth trends and usage patterns, ensuring adequate capacity to meet future needs."
     },
     {
       "path": "semester_08/lecture_53_database_operations/database_monitoring/README.md",
       "name": "Database Monitoring",
-      "problem": "Implements database monitoring algorithm.",
-      "intuition": "Database Monitoring is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Continuously tracks database performance, health, and resource usage through metrics, logs, and alerts, enabling proactive issue detection and performance optimization.",
+      "intuition": "Like a health monitor for databases: database monitoring is like a fitness tracker for your database - it continuously measures vital signs (CPU, memory, disk, queries) and alerts you when something's wrong (like a heart rate monitor alerting if heart rate is too high) - you can see trends over time (like fitness progress) and catch problems early before they become critical.",
+      "inputs": "Database metrics, performance counters, logs, monitoring tools, alert thresholds.",
+      "outputs": "Performance metrics, health status, alerts, dashboards, optimization insights.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Define metrics: identify key metrics to monitor (CPU, memory, disk I/O, query performance, connections).",
+        "Set up monitoring: configure monitoring tools to collect metrics.",
+        "Collect data: continuously gather metrics from database and system.",
+        "Store metrics: save metrics in time-series database for historical analysis.",
+        "Create dashboards: build dashboards to visualize metrics and trends.",
+        "Set alerts: configure alert thresholds for critical metrics.",
+        "Analyze: identify performance bottlenecks, anomalies, and trends.",
+        "Alert: notify administrators when metrics exceed thresholds.",
+        "Optimize: use insights to optimize database performance and configuration."
       ],
-      "example": "Example: Database Monitoring applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Database monitoring: track CPU (currently 45%), memory (60%), disk I/O (high), slow queries (5 queries > 1s) → alert: disk I/O > 90% → investigate: find I/O-intensive query → optimize: add index → disk I/O drops to 30% → proactive monitoring → prevented performance degradation.",
+      "time_complexity": "O(1) per metric collection, O(m) for analysis where m is number of metrics.",
+      "space_complexity": "O(m·t) where m is metrics count, t is time period (time-series data storage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Proactive: detects issues before they impact users.",
+        "Visibility: provides clear view of database health and performance.",
+        "Optimization: enables data-driven performance optimization."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Overhead: monitoring adds some overhead to database operations.",
+        "Alert fatigue: too many alerts can desensitize administrators.",
+        "Tool dependency: requires monitoring tools and infrastructure."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Manual Monitoring",
+        "Log Analysis",
+        "Performance Testing",
+        "APM Tools"
       ],
-      "explanation": "Database Monitoring solves computational problems efficiently."
+      "explanation": "Continuously tracks database performance, health, and resource usage through metrics, logs, and alerts, enabling proactive issue detection and performance optimization."
     },
     {
       "path": "semester_08/lecture_53_database_operations/database_security/README.md",
       "name": "Database Security",
-      "problem": "Implements database security algorithm.",
-      "intuition": "Database Security is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Protects database systems from unauthorized access, data breaches, and attacks through authentication, authorization, encryption, and security best practices.",
+      "intuition": "Like a bank vault for data: database security is like securing a bank vault - you have multiple layers of protection: guards check IDs (authentication), verify access permissions (authorization), encrypt valuables (encryption), monitor for suspicious activity (auditing), and have backup security (firewalls) - all to ensure only authorized people can access the data and it's protected from theft or damage.",
+      "inputs": "Database system, user credentials, access policies, security requirements, threat models.",
+      "outputs": "Secured database, access controls, encrypted data, audit logs, security compliance.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Authenticate: verify user identity (passwords, certificates, multi-factor authentication).",
+        "Authorize: grant appropriate permissions based on user roles (read, write, admin).",
+        "Encrypt: encrypt data at rest (disk encryption) and in transit (TLS/SSL).",
+        "Audit: log all database access and operations for security monitoring.",
+        "Harden: apply security hardening (disable unnecessary features, patch vulnerabilities).",
+        "Network security: implement firewalls and network isolation.",
+        "Monitor: continuously monitor for suspicious activity and security threats.",
+        "Update: regularly update database software and security patches.",
+        "Test: perform security audits and penetration testing."
       ],
-      "example": "Example: Database Security applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Database security: user authenticates with password + 2FA → database verifies credentials → checks user role (read-only) → grants access to specific tables → data encrypted at rest (AES-256) → connections encrypted (TLS) → all access logged → security audit: no unauthorized access → database secured.",
+      "time_complexity": "O(1) for authentication/authorization checks, O(n) for encryption where n is data size.",
+      "space_complexity": "O(a) where a is audit log size, O(e) for encryption overhead.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Data protection: prevents unauthorized access and data breaches.",
+        "Compliance: meets regulatory requirements (GDPR, HIPAA, etc.).",
+        "Trust: builds user and stakeholder trust in data security."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Complexity: implementing comprehensive security can be complex.",
+        "Performance: encryption and security checks add overhead.",
+        "Maintenance: requires ongoing security updates and monitoring."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Basic Authentication",
+        "Network Isolation",
+        "Application-Level Security",
+        "Cloud Security Services"
       ],
-      "explanation": "Database Security solves computational problems efficiently."
+      "explanation": "Protects database systems from unauthorized access, data breaches, and attacks through authentication, authorization, encryption, and security best practices."
     },
     {
       "path": "semester_08/lecture_53_database_operations/disaster_recovery/README.md",
       "name": "Disaster Recovery",
-      "problem": "Implements disaster recovery algorithm.",
-      "intuition": "Disaster Recovery is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Provides procedures and infrastructure to restore database operations after catastrophic failures, natural disasters, or major outages, minimizing downtime and data loss.",
+      "intuition": "Like a disaster evacuation plan: disaster recovery is like having an evacuation plan for a building - you have backup locations (disaster recovery site), procedures to follow (recovery plan), and ways to restore operations (backup systems) - when disaster strikes (fire, earthquake, cyber attack), you follow the plan to quickly restore operations at the backup location, minimizing disruption.",
+      "inputs": "Backup systems, disaster recovery site, recovery procedures, RTO/RPO requirements, failover configuration.",
+      "outputs": "Disaster recovery plan, backup infrastructure, recovery procedures, restored operations.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Assess risks: identify potential disasters and their impact (natural, cyber, hardware failures).",
+        "Define RTO/RPO: establish Recovery Time Objective (RTO) and Recovery Point Objective (RPO).",
+        "Design DR site: set up disaster recovery site (hot, warm, or cold standby).",
+        "Replicate data: continuously replicate data to DR site.",
+        "Document procedures: create detailed recovery procedures and runbooks.",
+        "Test recovery: regularly test disaster recovery procedures (DR drills).",
+        "Monitor: continuously monitor primary site health and replication status.",
+        "Failover: execute failover to DR site when disaster occurs.",
+        "Restore: restore operations at DR site using backups and replication.",
+        "Failback: return operations to primary site after disaster is resolved."
       ],
-      "example": "Example: Disaster Recovery applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Disaster recovery: primary database in New York → replicate to DR site in London → RTO: 4 hours, RPO: 1 hour → earthquake hits New York → primary site down → execute failover → switch to London DR site → restore from replication → operations resume in 2 hours → data loss: < 1 hour → business continuity maintained.",
+      "time_complexity": "O(1) for failover trigger, O(r) for recovery where r is recovery steps, O(d) for data restoration where d is data size.",
+      "space_complexity": "O(d) where d is database size (DR site storage requirements).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Business continuity: enables rapid recovery from disasters.",
+        "Data protection: minimizes data loss through replication and backups.",
+        "Risk mitigation: reduces business risk from catastrophic failures."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Cost: maintaining DR infrastructure is expensive.",
+        "Complexity: requires careful planning and regular testing.",
+        "RTO/RPO: achieving very low RTO/RPO can be challenging and costly."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Backup and Restore",
+        "Replication",
+        "Cloud DR Services",
+        "Multi-Region Deployment"
       ],
-      "explanation": "Disaster Recovery solves computational problems efficiently."
+      "explanation": "Provides procedures and infrastructure to restore database operations after catastrophic failures, natural disasters, or major outages, minimizing downtime and data loss."
     },
     {
       "path": "semester_08/lecture_53_database_operations/performance_tuning/README.md",
-      "name": "Performance Tuning",
-      "problem": "Implements performance tuning algorithm.",
-      "intuition": "Performance Tuning is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Database Performance Tuning",
+      "problem": "Optimizes database performance by identifying bottlenecks, tuning configuration, optimizing queries, and adjusting resources to improve response times and throughput.",
+      "intuition": "Like tuning a car engine: database performance tuning is like tuning a car for better performance - you identify what's slowing it down (bottlenecks like slow queries, missing indexes), adjust settings (configuration like memory, cache), optimize components (queries, indexes), and test improvements (benchmarking) - the goal is to make the database run faster and more efficiently, like tuning a car to go faster and use less fuel.",
+      "inputs": "Performance metrics, slow queries, configuration settings, resource usage, workload patterns.",
+      "outputs": "Optimized database, improved performance, tuned configuration, optimized queries.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Measure baseline: establish current performance baseline (response times, throughput).",
+        "Identify bottlenecks: find performance bottlenecks (slow queries, missing indexes, resource constraints).",
+        "Analyze queries: examine slow queries and execution plans.",
+        "Optimize queries: rewrite queries, add indexes, use query hints.",
+        "Tune configuration: adjust database configuration (memory, cache, connection pool).",
+        "Optimize indexes: create, modify, or remove indexes based on query patterns.",
+        "Adjust resources: allocate more CPU, memory, or I/O resources if needed.",
+        "Test changes: benchmark performance improvements after each change.",
+        "Monitor: continuously monitor performance and iterate on optimizations."
       ],
-      "example": "Example: Performance Tuning applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Performance tuning: database slow (avg query time: 2s) → identify: query scanning 10M rows → optimize: add index on WHERE clause column → query time: 0.01s (200x faster) → identify: memory too low → increase buffer pool → cache hit rate improves → overall performance: 10x improvement → database tuned.",
+      "time_complexity": "O(1) for configuration changes, O(q) for query optimization where q is number of queries, O(n) for index creation where n is table size.",
+      "space_complexity": "O(i) where i is index size, O(m) for memory allocation.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Performance improvement: can dramatically improve database performance.",
+        "Cost-effective: often improves performance without hardware upgrades.",
+        "User experience: faster queries improve application responsiveness."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Time-consuming: requires analysis, testing, and iteration.",
+        "Complexity: performance tuning can be complex and requires expertise.",
+        "Diminishing returns: further optimizations may have limited impact."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Hardware Upgrades",
+        "Query Optimization",
+        "Caching",
+        "Read Replicas"
       ],
-      "explanation": "Performance Tuning solves computational problems efficiently."
+      "explanation": "Optimizes database performance by identifying bottlenecks, tuning configuration, optimizing queries, and adjusting resources to improve response times and throughput."
     },
     {
       "path": "semester_08/lecture_54_data_modeling/data_governance/README.md",

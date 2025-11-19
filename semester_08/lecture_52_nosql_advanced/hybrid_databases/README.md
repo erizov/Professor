@@ -4,37 +4,46 @@
    Hybrid Databases
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements hybrid databases algorithm.
+   Combines multiple database models (relational, document, graph, key-value) in a single system, enabling applications to use the best database type for each use case while maintaining unified access.
 
 3. **Intuition (plain-language explanation)**  
-   Hybrid Databases is a fundamental algorithm in computer science.
+   Like a multi-tool: hybrid databases are like Swiss Army knives that combine different tools (relational, document, graph databases) in one system - you can use SQL for structured data (like a knife), document storage for flexible data (like scissors), and graph queries for relationships (like a screwdriver), all in one database system.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Multiple data models, unified query interface, data type requirements, access patterns.  
+   - Output: Hybrid database system, unified access, optimized storage for each data type.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Identify use cases: determine which data models are needed (relational, document, graph, etc.).
+2. Select hybrid system: choose database system supporting multiple models (e.g., PostgreSQL with JSON, graph extensions).
+3. Design schema: design schemas for each data model within hybrid system.
+4. Store data: store data in appropriate model based on structure and access patterns.
+5. Query: use appropriate query language for each model (SQL, document queries, graph queries).
+6. Integrate: enable cross-model queries and data integration.
+7. Optimize: optimize each model independently for its use case.
+8. Manage: manage unified system with single administration interface.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Hybrid Databases applied to sample data.
+   Hybrid database: use PostgreSQL → relational tables for structured data (users, orders) → JSON columns for flexible data (product metadata) → graph extension for relationships (social network) → query: SQL for structured, JSON queries for documents, Cypher for graphs → all in one database → unified access.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: Varies by model: O(log n) for relational with indexes, O(1) for key-value, O(d) for graph traversals.  
+   - Space: O(Σ(d_i)) where d_i is data size for each model type.
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Flexibility: supports multiple data models in one system.
+- Unified access: single database system for diverse use cases.
+- Optimization: can optimize each model for its specific use case.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Complexity: more complex than single-model databases.
+- Learning curve: requires understanding multiple data models.
+- Performance: may not be optimal for all models compared to specialized databases.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Multi-Database Systems, Polyglot Persistence, Specialized Databases, Unified Query Layers
 
 11. **30-second explanation (your own words)**  
-    Hybrid Databases solves computational problems efficiently.
+    Combines multiple database models (relational, document, graph, key-value) in a single system, enabling applications to use the best database type for each use case while maintaining unified access.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
