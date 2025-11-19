@@ -11,21 +11,22 @@ from typing import List, Optional, Dict, Set
 
 class MobileOptimization:
     """Mobile model optimization."""
+
     def __init__(self):
         self.model: any = None
         self.optimizations: List[str] = []
-    
+
     def quantize(self, model: any, bits: int = 8) -> any:
         """Quantize model for mobile."""
         self.model = model
-        self.optimizations.append(f'quantization_{bits}bit')
+        self.optimizations.append(f"quantization_{bits}bit")
         return model
-    
+
     def prune(self, model: any, sparsity: float = 0.5) -> any:
         """Prune model."""
-        self.optimizations.append(f'pruning_{sparsity}')
+        self.optimizations.append(f"pruning_{sparsity}")
         return model
-    
+
     def optimize_for_mobile(self, model: any) -> any:
         """Optimize model for mobile deployment."""
         model = self.quantize(model, 8)
@@ -38,11 +39,11 @@ def main() -> None:
     print("=" * 70)
     print("MOBILE OPTIMIZATION")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Mobile Optimization")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

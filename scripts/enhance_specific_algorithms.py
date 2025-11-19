@@ -65,7 +65,7 @@ def main():
 if __name__ == "__main__":
     main()
 ''',
-        "java": '''public class Algorithm {
+        "java": """public class Algorithm {
     public static int[] selectionSort(int[] arr) {
         int n = arr.length;
         
@@ -92,9 +92,8 @@ if __name__ == "__main__":
         selectionSort(data);
     }
 }
-'''
+""",
     },
-    
     "insertion_sort": {
         "python": '''#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
@@ -148,7 +147,7 @@ def main():
 if __name__ == "__main__":
     main()
 ''',
-        "java": '''public class Algorithm {
+        "java": """public class Algorithm {
     public static int[] insertionSort(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
             int key = arr[i];
@@ -171,9 +170,8 @@ if __name__ == "__main__":
         insertionSort(data);
     }
 }
-'''
+""",
     },
-    
     "linear_search": {
         "python": '''#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
@@ -223,7 +221,7 @@ def main():
 if __name__ == "__main__":
     main()
 ''',
-        "java": '''public class Algorithm {
+        "java": """public class Algorithm {
     public static int linearSearch(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == target) {
@@ -242,8 +240,8 @@ if __name__ == "__main__":
         System.out.println("Found at index: " + result);
     }
 }
-'''
-    }
+""",
+    },
 }
 
 
@@ -252,23 +250,23 @@ def enhance_algorithm(semester: str, lecture: str, algorithm: str) -> None:
     if algorithm not in IMPLEMENTATIONS:
         print(f"No implementation available for {algorithm}")
         return
-    
+
     base_path = Path(f"semester_{semester}") / lecture / algorithm
-    
+
     if not base_path.exists():
         print(f"Path does not exist: {base_path}")
         return
-    
+
     impl = IMPLEMENTATIONS[algorithm]
-    
+
     # Write Python
-    with open(base_path / "algorithm.py", 'w', encoding='utf-8') as f:
+    with open(base_path / "algorithm.py", "w", encoding="utf-8") as f:
         f.write(impl["python"])
-    
+
     # Write Java
-    with open(base_path / "Algorithm.java", 'w', encoding='utf-8') as f:
+    with open(base_path / "Algorithm.java", "w", encoding="utf-8") as f:
         f.write(impl["java"])
-    
+
     print(f"✓ Enhanced: {base_path}")
 
 
@@ -279,13 +277,13 @@ def main():
         ("1", "lecture_01_sorting_fundamentals", "insertion_sort"),
         ("1", "lecture_04_searching", "linear_search"),
     ]
-    
+
     print("Enhancing algorithms with full implementations...")
     print("=" * 70)
-    
+
     for semester, lecture, algorithm in enhancements:
         enhance_algorithm(semester, lecture, algorithm)
-    
+
     print("=" * 70)
     print("\\nEnhancement complete!")
     print("\\nTo implement more algorithms:")
@@ -296,4 +294,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

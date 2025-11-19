@@ -61,10 +61,12 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
-        logger.info("=".repeat(70));
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
+        logger.info(separator);
         logger.info("COMPOSITE DESIGN PATTERN");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         Directory root = new Directory("root");
         Directory home = new Directory("home");
@@ -74,10 +76,10 @@ public class Algorithm {
         root.add(new File("readme.txt", 512));
         
         root.display("");
-        logger.info();
+        logger.info("");
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern: Composes objects into tree structures");
-        logger.info("=".repeat(70));
+        logger.info(separator);
     }
 }

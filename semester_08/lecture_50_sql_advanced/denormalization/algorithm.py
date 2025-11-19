@@ -11,23 +11,23 @@ from typing import List, Optional, Dict, Set
 
 class Denormalization:
     """Database denormalization."""
+
     def __init__(self):
         self.tables: Dict[str, dict] = {}
-    
-    def denormalize(self, table_name: str, 
-                   denormalized_columns: List[str]) -> dict:
+
+    def denormalize(self, table_name: str, denormalized_columns: List[str]) -> dict:
         """Denormalize table."""
         if table_name not in self.tables:
             return {}
-        
+
         table = self.tables[table_name]
         denormalized = {
-            'original_table': table_name,
-            'denormalized_columns': denormalized_columns,
-            'benefits': ['faster_reads', 'reduced_joins']
+            "original_table": table_name,
+            "denormalized_columns": denormalized_columns,
+            "benefits": ["faster_reads", "reduced_joins"],
         }
         return denormalized
-    
+
     def add_table(self, name: str, schema: dict) -> None:
         """Add table."""
         self.tables[name] = schema
@@ -38,11 +38,11 @@ def main() -> None:
     print("=" * 70)
     print("DENORMALIZATION")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Denormalization")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

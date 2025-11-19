@@ -16,31 +16,31 @@ ROOT = Path(__file__).resolve().parents[1]
 def find_algorithm_files_with_todos() -> List[Tuple[Path, str, str]]:
     """Find all algorithm files with TODO placeholders."""
     todo_files = []
-    
+
     for algo_file in ROOT.rglob("**/algorithm.py"):
         if "supporting_documents" in str(algo_file) or "scripts" in str(algo_file):
             continue
-        
+
         try:
-            content = algo_file.read_text(encoding='utf-8')
-            if 'TODO' in content and 'Implement' in content:
+            content = algo_file.read_text(encoding="utf-8")
+            if "TODO" in content and "Implement" in content:
                 algorithm_name = algo_file.parent.name
-                todo_files.append((algo_file, algorithm_name, 'python'))
+                todo_files.append((algo_file, algorithm_name, "python"))
         except Exception:
             continue
-    
+
     for algo_file in ROOT.rglob("**/Algorithm.java"):
         if "supporting_documents" in str(algo_file) or "scripts" in str(algo_file):
             continue
-        
+
         try:
-            content = algo_file.read_text(encoding='utf-8')
-            if 'TODO' in content and 'Implement' in content:
+            content = algo_file.read_text(encoding="utf-8")
+            if "TODO" in content and "Implement" in content:
                 algorithm_name = algo_file.parent.name
-                todo_files.append((algo_file, algorithm_name, 'java'))
+                todo_files.append((algo_file, algorithm_name, "java"))
         except Exception:
             continue
-    
+
     return todo_files
 
 
@@ -48,52 +48,52 @@ def get_reference_implementation(algorithm_name: str) -> Optional[Path]:
     """Get reference implementation for similar algorithm."""
     # Map to known complete implementations
     reference_map = {
-        'bubble_sort': 'semester_01/lecture_01_sorting_fundamentals/bubble_sort/algorithm.py',
-        'quick_sort': 'semester_01/lecture_02_efficient_sorting/quick_sort/algorithm.py',
-        'merge_sort': 'semester_01/lecture_02_efficient_sorting/merge_sort/algorithm.py',
-        'binary_search': 'semester_01/lecture_04_searching/binary_search/algorithm.py',
-        'linear_search': 'semester_01/lecture_04_searching/linear_search/algorithm.py',
+        "bubble_sort": "semester_01/lecture_01_sorting_fundamentals/bubble_sort/algorithm.py",
+        "quick_sort": "semester_01/lecture_02_efficient_sorting/quick_sort/algorithm.py",
+        "merge_sort": "semester_01/lecture_02_efficient_sorting/merge_sort/algorithm.py",
+        "binary_search": "semester_01/lecture_04_searching/binary_search/algorithm.py",
+        "linear_search": "semester_01/lecture_04_searching/linear_search/algorithm.py",
     }
-    
+
     algo_lower = algorithm_name.lower()
-    
+
     # Try exact match
     if algorithm_name in reference_map:
         ref_path = ROOT / reference_map[algorithm_name]
         if ref_path.exists():
             return ref_path
-    
+
     # Try partial match for similar algorithms
     for key, path in reference_map.items():
         if key in algo_lower or algo_lower in key:
             ref_path = ROOT / path
             if ref_path.exists():
                 return ref_path
-    
+
     # Try to find similar algorithm in same lecture
     algo_file = None
     for ref_file in ROOT.rglob(f"**/{algorithm_name}/algorithm.py"):
         if ref_file.exists():
             algo_file = ref_file
             break
-    
+
     if algo_file and algo_file.exists():
         # Look for similar algorithms in same directory
         parent_dir = algo_file.parent.parent
         for similar_file in parent_dir.rglob("algorithm.py"):
             if similar_file != algo_file:
-                content = similar_file.read_text(encoding='utf-8')
-                if 'TODO' not in content or 'def ' in content[:500]:
+                content = similar_file.read_text(encoding="utf-8")
+                if "TODO" not in content or "def " in content[:500]:
                     return similar_file
-    
+
     return None
 
 
 def implement_sorting_algorithm(algorithm_name: str) -> str:
     """Generate sorting algorithm implementation."""
     algo_lower = algorithm_name.lower()
-    
-    if 'bubble' in algo_lower:
+
+    if "bubble" in algo_lower:
         return '''def {name}(arr: List[T]) -> List[T]:
     """
     Sort array using bubble sort algorithm.
@@ -118,9 +118,11 @@ def implement_sorting_algorithm(algorithm_name: str) -> str:
         if not swapped:
             break
     
-    return arr'''.format(name=algorithm_name)
-    
-    elif 'selection' in algo_lower:
+    return arr'''.format(
+            name=algorithm_name
+        )
+
+    elif "selection" in algo_lower:
         return '''def {name}(arr: List[T]) -> List[T]:
     """
     Sort array using selection sort algorithm.
@@ -143,9 +145,11 @@ def implement_sorting_algorithm(algorithm_name: str) -> str:
                 min_idx = j
         arr[i], arr[min_idx] = arr[min_idx], arr[i]
     
-    return arr'''.format(name=algorithm_name)
-    
-    elif 'insertion' in algo_lower:
+    return arr'''.format(
+            name=algorithm_name
+        )
+
+    elif "insertion" in algo_lower:
         return '''def {name}(arr: List[T]) -> List[T]:
     """
     Sort array using insertion sort algorithm.
@@ -167,9 +171,11 @@ def implement_sorting_algorithm(algorithm_name: str) -> str:
             j -= 1
         arr[j + 1] = key
     
-    return arr'''.format(name=algorithm_name)
-    
-    elif 'heap' in algo_lower and 'sort' in algo_lower:
+    return arr'''.format(
+            name=algorithm_name
+        )
+
+    elif "heap" in algo_lower and "sort" in algo_lower:
         return '''def {name}(arr: List[T]) -> List[T]:
     """
     Sort array using heap sort algorithm.
@@ -210,9 +216,11 @@ def heapify(arr: List[T], n: int, i: int) -> None:
     
     if largest != i:
         arr[i], arr[largest] = arr[largest], arr[i]
-        heapify(arr, n, largest)'''.format(name=algorithm_name)
-    
-    elif 'counting' in algo_lower:
+        heapify(arr, n, largest)'''.format(
+            name=algorithm_name
+        )
+
+    elif "counting" in algo_lower:
         return '''def {name}(arr: List[int]) -> List[int]:
     """
     Sort array using counting sort algorithm.
@@ -249,9 +257,11 @@ def heapify(arr: List[T], n: int, i: int) -> None:
         output[count[arr[i] - min_val] - 1] = arr[i]
         count[arr[i] - min_val] -= 1
     
-    return output'''.format(name=algorithm_name)
-    
-    elif 'radix' in algo_lower:
+    return output'''.format(
+            name=algorithm_name
+        )
+
+    elif "radix" in algo_lower:
         return '''def {name}(arr: List[int]) -> List[int]:
     """
     Sort array using radix sort algorithm.
@@ -296,9 +306,11 @@ def counting_sort_by_digit(arr: List[int], exp: int) -> None:
         count[index] -= 1
     
     for i in range(n):
-        arr[i] = output[i]'''.format(name=algorithm_name)
-    
-    elif 'bucket' in algo_lower:
+        arr[i] = output[i]'''.format(
+            name=algorithm_name
+        )
+
+    elif "bucket" in algo_lower:
         return '''def {name}(arr: List[float]) -> List[float]:
     """
     Sort array using bucket sort algorithm.
@@ -332,16 +344,18 @@ def counting_sort_by_digit(arr: List[int], exp: int) -> None:
     for bucket in buckets:
         result.extend(bucket)
     
-    return result'''.format(name=algorithm_name)
-    
+    return result'''.format(
+            name=algorithm_name
+        )
+
     return None
 
 
 def implement_searching_algorithm(algorithm_name: str) -> str:
     """Generate searching algorithm implementation."""
     algo_lower = algorithm_name.lower()
-    
-    if 'linear' in algo_lower or 'sequential' in algo_lower:
+
+    if "linear" in algo_lower or "sequential" in algo_lower:
         return '''def {name}(arr: List[T], target: T) -> Optional[int]:
     """
     Search for target in array using linear search.
@@ -359,9 +373,11 @@ def implement_searching_algorithm(algorithm_name: str) -> str:
     for i, element in enumerate(arr):
         if element == target:
             return i
-    return None'''.format(name=algorithm_name)
-    
-    elif 'binary' in algo_lower:
+    return None'''.format(
+            name=algorithm_name
+        )
+
+    elif "binary" in algo_lower:
         return '''def {name}(arr: List[T], target: T) -> Optional[int]:
     """
     Search for target in sorted array using binary search.
@@ -387,9 +403,11 @@ def implement_searching_algorithm(algorithm_name: str) -> str:
         else:
             right = mid - 1
     
-    return None'''.format(name=algorithm_name)
-    
-    elif 'jump' in algo_lower:
+    return None'''.format(
+            name=algorithm_name
+        )
+
+    elif "jump" in algo_lower:
         return '''def {name}(arr: List[T], target: T) -> Optional[int]:
     """
     Search for target in sorted array using jump search.
@@ -425,9 +443,11 @@ def implement_searching_algorithm(algorithm_name: str) -> str:
     if arr[prev] == target:
         return prev
     
-    return None'''.format(name=algorithm_name)
-    
-    elif 'interpolation' in algo_lower:
+    return None'''.format(
+            name=algorithm_name
+        )
+
+    elif "interpolation" in algo_lower:
         return '''def {name}(arr: List[int], target: int) -> Optional[int]:
     """
     Search for target in sorted array using interpolation search.
@@ -459,16 +479,18 @@ def implement_searching_algorithm(algorithm_name: str) -> str:
         else:
             right = pos - 1
     
-    return None'''.format(name=algorithm_name)
-    
+    return None'''.format(
+            name=algorithm_name
+        )
+
     return None
 
 
 def implement_graph_algorithm(algorithm_name: str) -> str:
     """Generate graph algorithm implementation."""
     algo_lower = algorithm_name.lower()
-    
-    if 'bfs' in algo_lower or 'breadth' in algo_lower:
+
+    if "bfs" in algo_lower or "breadth" in algo_lower:
         return '''def {name}(graph: Dict[int, List[int]], start: int) -> List[int]:
     """
     Traverse graph using breadth-first search.
@@ -499,9 +521,11 @@ def implement_graph_algorithm(algorithm_name: str) -> str:
                 if neighbor not in visited:
                     queue.append(neighbor)
     
-    return result'''.format(name=algorithm_name)
-    
-    elif 'dfs' in algo_lower or 'depth' in algo_lower:
+    return result'''.format(
+            name=algorithm_name
+        )
+
+    elif "dfs" in algo_lower or "depth" in algo_lower:
         return '''def {name}(graph: Dict[int, List[int]], start: int) -> List[int]:
     """
     Traverse graph using depth-first search.
@@ -528,9 +552,11 @@ def implement_graph_algorithm(algorithm_name: str) -> str:
                 dfs_helper(neighbor)
     
     dfs_helper(start)
-    return result'''.format(name=algorithm_name)
-    
-    elif 'dijkstra' in algo_lower:
+    return result'''.format(
+            name=algorithm_name
+        )
+
+    elif "dijkstra" in algo_lower:
         return '''def {name}(graph: Dict[int, List[Tuple[int, int]]], start: int) -> Dict[int, int]:
     """
     Find shortest paths from start vertex using Dijkstra's algorithm.
@@ -567,16 +593,22 @@ def implement_graph_algorithm(algorithm_name: str) -> str:
                     distances[neighbor] = new_dist
                     heapq.heappush(pq, (new_dist, neighbor))
     
-    return distances'''.format(name=algorithm_name)
-    
+    return distances'''.format(
+            name=algorithm_name
+        )
+
     return None
 
 
 def implement_tree_algorithm(algorithm_name: str) -> str:
     """Generate tree algorithm implementation."""
     algo_lower = algorithm_name.lower()
-    
-    if 'binary_tree' in algo_lower or 'binary' in algo_lower and 'search' not in algo_lower:
+
+    if (
+        "binary_tree" in algo_lower
+        or "binary" in algo_lower
+        and "search" not in algo_lower
+    ):
         return '''class TreeNode:
     """Binary tree node."""
     def __init__(self, val: int = 0, left: Optional['TreeNode'] = None, 
@@ -607,9 +639,13 @@ def {name}_traversal(root: Optional[TreeNode]) -> List[int]:
             traverse(node.right)
     
     traverse(root)
-    return result'''.format(name=algorithm_name)
-    
-    elif 'binary_search_tree' in algo_lower or ('bst' in algo_lower and 'tree' in algo_lower):
+    return result'''.format(
+            name=algorithm_name
+        )
+
+    elif "binary_search_tree" in algo_lower or (
+        "bst" in algo_lower and "tree" in algo_lower
+    ):
         return '''class TreeNode:
     """Binary search tree node."""
     def __init__(self, val: int = 0, left: Optional['TreeNode'] = None, 
@@ -650,16 +686,18 @@ class BinarySearchTree:
             return False
         if root.val == val:
             return True
-        return self._search(root.left if val < root.val else root.right, val)'''.format(name=algorithm_name)
-    
+        return self._search(root.left if val < root.val else root.right, val)'''.format(
+            name=algorithm_name
+        )
+
     return None
 
 
 def implement_dynamic_programming(algorithm_name: str) -> str:
     """Generate dynamic programming algorithm implementation."""
     algo_lower = algorithm_name.lower()
-    
-    if 'fibonacci' in algo_lower:
+
+    if "fibonacci" in algo_lower:
         return '''def {name}(n: int) -> int:
     """
     Calculate nth Fibonacci number using dynamic programming.
@@ -682,9 +720,11 @@ def implement_dynamic_programming(algorithm_name: str) -> str:
     for i in range(2, n + 1):
         dp[i] = dp[i - 1] + dp[i - 2]
     
-    return dp[n]'''.format(name=algorithm_name)
-    
-    elif 'knapsack' in algo_lower:
+    return dp[n]'''.format(
+            name=algorithm_name
+        )
+
+    elif "knapsack" in algo_lower:
         return '''def {name}(weights: List[int], values: List[int], capacity: int) -> int:
     """
     Solve 0/1 knapsack problem using dynamic programming.
@@ -713,9 +753,11 @@ def implement_dynamic_programming(algorithm_name: str) -> str:
             else:
                 dp[i][w] = dp[i - 1][w]
     
-    return dp[n][capacity]'''.format(name=algorithm_name)
-    
-    elif 'edit_distance' in algo_lower or 'levenshtein' in algo_lower:
+    return dp[n][capacity]'''.format(
+            name=algorithm_name
+        )
+
+    elif "edit_distance" in algo_lower or "levenshtein" in algo_lower:
         return '''def {name}(str1: str, str2: str) -> int:
     """
     Calculate edit distance (Levenshtein distance) between two strings.
@@ -749,9 +791,11 @@ def implement_dynamic_programming(algorithm_name: str) -> str:
                     dp[i - 1][j - 1]   # Replace
                 )
     
-    return dp[m][n]'''.format(name=algorithm_name)
-    
-    elif 'longest_common_subsequence' in algo_lower or 'lcs' in algo_lower:
+    return dp[m][n]'''.format(
+            name=algorithm_name
+        )
+
+    elif "longest_common_subsequence" in algo_lower or "lcs" in algo_lower:
         return '''def {name}(str1: str, str2: str) -> int:
     """
     Find length of longest common subsequence between two strings.
@@ -776,16 +820,18 @@ def implement_dynamic_programming(algorithm_name: str) -> str:
             else:
                 dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
     
-    return dp[m][n]'''.format(name=algorithm_name)
-    
+    return dp[m][n]'''.format(
+            name=algorithm_name
+        )
+
     return None
 
 
 def implement_string_algorithm(algorithm_name: str) -> str:
     """Generate string algorithm implementation."""
     algo_lower = algorithm_name.lower()
-    
-    if 'kmp' in algo_lower or 'knuth' in algo_lower:
+
+    if "kmp" in algo_lower or "knuth" in algo_lower:
         return '''def {name}(text: str, pattern: str) -> List[int]:
     """
     Find all occurrences of pattern in text using KMP algorithm.
@@ -843,8 +889,10 @@ def compute_lps(pattern: str) -> List[int]:
                 lps[i] = 0
                 i += 1
     
-    return lps'''.format(name=algorithm_name)
-    
+    return lps'''.format(
+            name=algorithm_name
+        )
+
     return None
 
 
@@ -900,67 +948,93 @@ def implement_hash_table(algorithm_name: str) -> str:
         return False'''
 
 
-def generate_python_implementation(algorithm_name: str, file_path: Path) -> Optional[str]:
+def generate_python_implementation(
+    algorithm_name: str, file_path: Path
+) -> Optional[str]:
     """Generate complete Python implementation for algorithm."""
     try:
-        content = file_path.read_text(encoding='utf-8')
-        
+        content = file_path.read_text(encoding="utf-8")
+
         # Check if it's a placeholder (has TODO and return None)
-        if '# TODO' not in content or 'return None' not in content:
+        if "# TODO" not in content or "return None" not in content:
             return None
-        
+
         # Determine algorithm type
         algo_lower = algorithm_name.lower()
-        
+
         implementation = None
         func_name = algorithm_name
-        
+
         # Try different algorithm categories
-        if any(sort in algo_lower for sort in ['sort', 'bubble', 'selection', 'insertion', 'heap', 'counting', 'radix', 'bucket']):
+        if any(
+            sort in algo_lower
+            for sort in [
+                "sort",
+                "bubble",
+                "selection",
+                "insertion",
+                "heap",
+                "counting",
+                "radix",
+                "bucket",
+            ]
+        ):
             implementation = implement_sorting_algorithm(algorithm_name)
             func_name = algorithm_name
-        elif any(search in algo_lower for search in ['search', 'linear', 'binary', 'jump', 'interpolation']):
+        elif any(
+            search in algo_lower
+            for search in ["search", "linear", "binary", "jump", "interpolation"]
+        ):
             implementation = implement_searching_algorithm(algorithm_name)
             func_name = algorithm_name
-        elif any(graph in algo_lower for graph in ['bfs', 'dfs', 'dijkstra', 'bellman', 'floyd', 'graph']):
+        elif any(
+            graph in algo_lower
+            for graph in ["bfs", "dfs", "dijkstra", "bellman", "floyd", "graph"]
+        ):
             implementation = implement_graph_algorithm(algorithm_name)
             func_name = algorithm_name
-        elif any(tree in algo_lower for tree in ['tree', 'bst', 'avl', 'trie']):
+        elif any(tree in algo_lower for tree in ["tree", "bst", "avl", "trie"]):
             implementation = implement_tree_algorithm(algorithm_name)
             func_name = algorithm_name
-        elif any(dp in algo_lower for dp in ['fibonacci', 'knapsack', 'edit_distance', 'longest', 'dynamic']):
+        elif any(
+            dp in algo_lower
+            for dp in ["fibonacci", "knapsack", "edit_distance", "longest", "dynamic"]
+        ):
             implementation = implement_dynamic_programming(algorithm_name)
             func_name = algorithm_name
-        elif any(string in algo_lower for string in ['kmp', 'rabin', 'boyer', 'string', 'pattern']):
+        elif any(
+            string in algo_lower
+            for string in ["kmp", "rabin", "boyer", "string", "pattern"]
+        ):
             implementation = implement_string_algorithm(algorithm_name)
             func_name = algorithm_name
-        elif 'hash' in algo_lower:
+        elif "hash" in algo_lower:
             implementation = implement_hash_table(algorithm_name)
-            func_name = 'HashTable'
-        
+            func_name = "HashTable"
+
         if not implementation:
             return None
-        
+
         # Find the function with TODO
         # Pattern: def function_name(*args, **kwargs) -> Any: ... # TODO ... return None
         # Try multiple patterns
         func_patterns = [
-            r'def (\w+)\([^)]*\):.*?# TODO.*?return None',
-            r'def (\w+)\([^)]*\):.*?TODO.*?return None',
-            r'def (\w+)\([^)]*\):\s*\n.*?TODO.*?\n.*?return None',
+            r"def (\w+)\([^)]*\):.*?# TODO.*?return None",
+            r"def (\w+)\([^)]*\):.*?TODO.*?return None",
+            r"def (\w+)\([^)]*\):\s*\n.*?TODO.*?\n.*?return None",
         ]
-        
+
         match = None
         for pattern in func_patterns:
             match = re.search(pattern, content, re.DOTALL | re.MULTILINE)
             if match:
                 break
-        
+
         if not match:
             # Try simpler pattern - just find function before TODO
-            simple_pattern = r'def (\w+)\([^)]*\):'
+            simple_pattern = r"def (\w+)\([^)]*\):"
             func_matches = list(re.finditer(simple_pattern, content))
-            todo_pos = content.find('# TODO')
+            todo_pos = content.find("# TODO")
             if todo_pos > 0 and func_matches:
                 # Find the function definition before TODO
                 for func_match in reversed(func_matches):
@@ -969,74 +1043,74 @@ def generate_python_implementation(algorithm_name: str, file_path: Path) -> Opti
                         class Match:
                             def __init__(self, name):
                                 self.group = lambda n: name if n == 1 else None
+
                         match = Match(func_match.group(1))
                         break
-        
+
         if not match:
             return None
-        
+
         existing_func_name = match.group(1)
-        
+
         # Replace the entire function
-        replacement_pattern = r'def {}\([^)]*\):.*?return None'.format(re.escape(existing_func_name))
-        
+        replacement_pattern = r"def {}\([^)]*\):.*?return None".format(
+            re.escape(existing_func_name)
+        )
+
         # Extract just the function body from implementation
-        if 'def ' in implementation:
+        if "def " in implementation:
             # Get function body (everything after first def line)
-            impl_lines = implementation.split('\n')
+            impl_lines = implementation.split("\n")
             func_def_line = None
             for i, line in enumerate(impl_lines):
-                if line.strip().startswith('def '):
+                if line.strip().startswith("def "):
                     func_def_line = i
                     break
-            
+
             if func_def_line is not None:
                 # Get function definition line
                 func_def = impl_lines[func_def_line]
                 # Update function name to match existing
-                func_def = func_def.replace(implementation.split('def ')[1].split('(')[0], existing_func_name)
+                func_def = func_def.replace(
+                    implementation.split("def ")[1].split("(")[0], existing_func_name
+                )
                 # Get body
-                body = '\n'.join(impl_lines[func_def_line + 1:])
+                body = "\n".join(impl_lines[func_def_line + 1 :])
                 # Combine
-                new_func = func_def + '\n' + body
+                new_func = func_def + "\n" + body
             else:
                 new_func = implementation
         else:
             new_func = implementation
-        
+
         # Replace in content
-        new_content = re.sub(
-            replacement_pattern,
-            new_func,
-            content,
-            flags=re.DOTALL
-        )
-        
+        new_content = re.sub(replacement_pattern, new_func, content, flags=re.DOTALL)
+
         # Fix undefined algorithm_name variable
         new_content = re.sub(
             r'logger\.info\(f"Executing \{algorithm_name\}"\)',
             f'logger.info("Executing {algorithm_name}")',
-            new_content
+            new_content,
         )
-        
+
         # Fix main function call if needed
-        if f'result = {existing_func_name}()' in new_content:
+        if f"result = {existing_func_name}()" in new_content:
             # Update to pass appropriate arguments based on function signature
-            if 'arr' in new_func or 'List' in new_func:
+            if "arr" in new_func or "List" in new_func:
                 new_content = re.sub(
-                    rf'result = {re.escape(existing_func_name)}\(\)',
-                    f'result = {existing_func_name}([1, 2, 3, 4, 5])',
-                    new_content
+                    rf"result = {re.escape(existing_func_name)}\(\)",
+                    f"result = {existing_func_name}([1, 2, 3, 4, 5])",
+                    new_content,
                 )
-            elif 'graph' in new_func.lower() or 'Graph' in new_func:
+            elif "graph" in new_func.lower() or "Graph" in new_func:
                 new_content = re.sub(
-                    rf'result = {re.escape(existing_func_name)}\(\)',
-                    f'result = {existing_func_name}({{0: [1, 2], 1: [2], 2: []}}, 0)',
-                    new_content
+                    rf"result = {re.escape(existing_func_name)}\(\)",
+                    f"result = {existing_func_name}({{0: [1, 2], 1: [2], 2: []}}, 0)",
+                    new_content,
                 )
-        
+
         return new_content
-    
+
     except Exception as e:
         print(f"Error generating implementation for {algorithm_name}: {e}")
         return None
@@ -1045,35 +1119,65 @@ def generate_python_implementation(algorithm_name: str, file_path: Path) -> Opti
 def can_implement_algorithm(algorithm_name: str) -> bool:
     """Check if we can implement this algorithm type."""
     algo_lower = algorithm_name.lower()
-    
+
     # Check if it's a known algorithm type we can implement
     implementable_patterns = [
-        'sort', 'bubble', 'selection', 'insertion', 'heap', 'counting', 'radix', 'bucket',
-        'search', 'linear', 'binary', 'jump', 'interpolation',
-        'bfs', 'dfs', 'dijkstra', 'bellman', 'floyd', 'graph',
-        'tree', 'bst', 'avl', 'trie', 'binary_tree',
-        'fibonacci', 'knapsack', 'edit_distance', 'longest', 'dynamic',
-        'kmp', 'rabin', 'boyer', 'string', 'pattern',
-        'hash'
+        "sort",
+        "bubble",
+        "selection",
+        "insertion",
+        "heap",
+        "counting",
+        "radix",
+        "bucket",
+        "search",
+        "linear",
+        "binary",
+        "jump",
+        "interpolation",
+        "bfs",
+        "dfs",
+        "dijkstra",
+        "bellman",
+        "floyd",
+        "graph",
+        "tree",
+        "bst",
+        "avl",
+        "trie",
+        "binary_tree",
+        "fibonacci",
+        "knapsack",
+        "edit_distance",
+        "longest",
+        "dynamic",
+        "kmp",
+        "rabin",
+        "boyer",
+        "string",
+        "pattern",
+        "hash",
     ]
-    
+
     return any(pattern in algo_lower for pattern in implementable_patterns)
 
 
-def complete_algorithm_implementation(file_path: Path, algorithm_name: str, lang: str) -> bool:
+def complete_algorithm_implementation(
+    file_path: Path, algorithm_name: str, lang: str
+) -> bool:
     """Complete algorithm implementation by replacing TODO."""
     try:
         # Skip if we can't implement this algorithm type
         if not can_implement_algorithm(algorithm_name):
             return False
-        
-        if lang == 'python':
+
+        if lang == "python":
             new_content = generate_python_implementation(algorithm_name, file_path)
-            if new_content and new_content != file_path.read_text(encoding='utf-8'):
-                file_path.write_text(new_content, encoding='utf-8')
+            if new_content and new_content != file_path.read_text(encoding="utf-8"):
+                file_path.write_text(new_content, encoding="utf-8")
                 return True
         # Java implementations can be added later
-        
+
         return False
     except Exception as e:
         print(f"Error completing {file_path}: {e}")
@@ -1085,21 +1189,25 @@ def main():
     print("=" * 70)
     print("Phase 5.1: Complete Algorithm-Specific Logic Implementations")
     print("=" * 70)
-    
+
     todo_files = find_algorithm_files_with_todos()
     print(f"\nFound {len(todo_files)} files with TODO placeholders")
-    
+
     completed = 0
     for i, (file_path, algo_name, lang) in enumerate(todo_files, 1):
         if complete_algorithm_implementation(file_path, algo_name, lang):
             completed += 1
             if completed % 10 == 0:
-                print(f"[PROGRESS] Processed {i}/{len(todo_files)} files, completed {completed}...")
-    
+                print(
+                    f"[PROGRESS] Processed {i}/{len(todo_files)} files, completed {completed}..."
+                )
+
     print(f"\n[COMPLETE] Processed {len(todo_files)} files")
     print(f"Completed {completed} algorithm implementations")
     print("\nImplementations completed for:")
-    print("  - Sorting algorithms (bubble, selection, insertion, heap, counting, radix, bucket)")
+    print(
+        "  - Sorting algorithms (bubble, selection, insertion, heap, counting, radix, bucket)"
+    )
     print("  - Searching algorithms (linear, binary, jump, interpolation)")
     print("  - Graph algorithms (BFS, DFS, Dijkstra)")
     print("  - Tree algorithms (binary tree, BST)")
@@ -1110,4 +1218,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

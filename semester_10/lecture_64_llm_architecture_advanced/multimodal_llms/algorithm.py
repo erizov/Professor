@@ -11,26 +11,27 @@ from typing import List, Optional, Dict, Set
 
 class MultimodalLLM:
     """Multimodal LLM."""
+
     def __init__(self):
         self.text_encoder: any = None
         self.image_encoder: any = None
         self.fusion_layer: any = None
-    
+
     def encode_text(self, text: str) -> List[float]:
         """Encode text."""
         # Simplified: return embeddings
         return [0.0] * 768
-    
+
     def encode_image(self, image: List[List[float]]) -> List[float]:
         """Encode image."""
         # Simplified: return embeddings
         return [0.0] * 768
-    
+
     def fuse(self, text_emb: List[float], image_emb: List[float]) -> List[float]:
         """Fuse text and image embeddings."""
         # Simplified: concatenate
         return text_emb + image_emb
-    
+
     def generate(self, text: str, image: List[List[float]] = None) -> str:
         """Generate from multimodal input."""
         text_emb = self.encode_text(text)
@@ -47,11 +48,11 @@ def main() -> None:
     print("=" * 70)
     print("MULTIMODAL LLMS")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Multimodal Llms")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

@@ -11,11 +11,13 @@ from typing import List, Optional, Dict, Set
 
 class QuantumOptimizationHybrid:
     """Hybrid quantum-classical optimization."""
+
     def __init__(self):
         self.optimizers: Dict[str, dict] = {}
-    
-    def optimize(self, cost_function: callable, 
-                initial_params: List[float]) -> List[float]:
+
+    def optimize(
+        self, cost_function: callable, initial_params: List[float]
+    ) -> List[float]:
         """Hybrid optimization."""
         params = initial_params[:]
         for _ in range(20):
@@ -32,11 +34,11 @@ def main() -> None:
     print("=" * 70)
     print("QUANTUM OPTIMIZATION HYBRID")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Quantum Optimization Hybrid")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

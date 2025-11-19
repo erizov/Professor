@@ -37,11 +37,7 @@ def cleanup_readme(readme_path: Path) -> bool:
 
 
 def main():
-    readme_files = [
-        path
-        for path in ROOT.rglob("*/README.md")
-        if path.parent != ROOT
-    ]
+    readme_files = [path for path in ROOT.rglob("*/README.md") if path.parent != ROOT]
 
     cleaned = 0
     total = len(readme_files)
@@ -57,4 +53,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

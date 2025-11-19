@@ -4,6 +4,13 @@
 **Purpose**: Tools and processes for collaborative learning and contributions.
 
 ---
+---
+
+## Team Learning and Contribution Guide
+
+**Purpose**: Tools and processes for collaborative learning and contributions.
+
+---
 
 ## Code Review Process
 
@@ -249,4 +256,3 @@
 ---
 
 *These collaboration tools support effective team learning and contributions. Use them to enhance your learning experience.*
-

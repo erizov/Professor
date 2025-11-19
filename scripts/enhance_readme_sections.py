@@ -3,7 +3,7 @@
 """
 Comprehensive README enhancement script based on critiques.
 Adds: Learning Objectives, Prerequisites, Self-Assessment, Visual Diagrams,
-Practice Exercises, Real-World Applications, Common Misconceptions, 
+Practice Exercises, Real-World Applications, Common Misconceptions,
 Worked Examples, TL;DR sections, and fixes Short Description.
 """
 
@@ -74,10 +74,11 @@ CATEGORY_DESCRIPTIONS: Dict[str, str] = {
     "ml": "A machine learning algorithm that learns patterns from data to make predictions or decisions.",
 }
 
+
 def infer_category(lecture_path: str) -> Optional[str]:
     """Infer category from lecture path."""
     path_lower = lecture_path.lower()
-    
+
     if any(x in path_lower for x in ["sorting", "sort"]):
         return "sorting"
     elif any(x in path_lower for x in ["searching", "search"]):
@@ -90,49 +91,78 @@ def infer_category(lecture_path: str) -> Optional[str]:
         return "dynamic_programming"
     elif any(x in path_lower for x in ["string", "strings"]):
         return "string"
-    elif any(x in path_lower for x in ["security", "crypto", "encryption", "jwt", "oauth", "authentication"]):
+    elif any(
+        x in path_lower
+        for x in ["security", "crypto", "encryption", "jwt", "oauth", "authentication"]
+    ):
         return "security"
     elif any(x in path_lower for x in ["testing", "test", "tdd", "mocking"]):
         return "testing"
     elif any(x in path_lower for x in ["deployment", "blue_green", "canary"]):
         return "deployment"
-    elif any(x in path_lower for x in ["performance", "caching", "load_balancing", "rate_limiting"]):
+    elif any(
+        x in path_lower
+        for x in ["performance", "caching", "load_balancing", "rate_limiting"]
+    ):
         return "performance"
-    elif any(x in path_lower for x in ["pattern", "solid", "creational", "structural", "behavioral", "architectural"]):
+    elif any(
+        x in path_lower
+        for x in [
+            "pattern",
+            "solid",
+            "creational",
+            "structural",
+            "behavioral",
+            "architectural",
+        ]
+    ):
         return "pattern"
-    elif any(x in path_lower for x in ["integration", "message_queue", "publish_subscribe", "cqrs"]):
+    elif any(
+        x in path_lower
+        for x in ["integration", "message_queue", "publish_subscribe", "cqrs"]
+    ):
         return "integration"
-    elif any(x in path_lower for x in ["distributed", "leader_election", "circuit_breaker"]):
+    elif any(
+        x in path_lower for x in ["distributed", "leader_election", "circuit_breaker"]
+    ):
         return "distributed"
-    elif any(x in path_lower for x in ["monitoring", "observability", "log_aggregation"]):
+    elif any(
+        x in path_lower for x in ["monitoring", "observability", "log_aggregation"]
+    ):
         return "monitoring"
-    elif any(x in path_lower for x in ["ml", "machine_learning", "neural", "cnn", "rnn"]):
+    elif any(
+        x in path_lower for x in ["ml", "machine_learning", "neural", "cnn", "rnn"]
+    ):
         return "ml"
-    
+
     return None
+
 
 def get_short_description(algorithm_name: str, category: Optional[str]) -> str:
     """Get concise short description that doesn't repeat the title."""
     normalized_name = algorithm_name.lower().replace("-", "_")
-    
+
     if normalized_name in ALGORITHM_DESCRIPTIONS:
         return ALGORITHM_DESCRIPTIONS[normalized_name]
-    
+
     if category and category in CATEGORY_DESCRIPTIONS:
         return CATEGORY_DESCRIPTIONS[category]
-    
+
     return "An algorithm that solves a specific computational problem efficiently."
+
 
 def generate_learning_objectives(algorithm_name: str, category: Optional[str]) -> str:
     """Generate learning objectives section."""
     section = "## Learning Objectives\n\n"
     section += "By the end of this lecture, students will be able to:\n\n"
-    section += "1. Implement " + algorithm_name.replace("_", " ").title() + " from scratch\n"
+    section += (
+        "1. Implement " + algorithm_name.replace("_", " ").title() + " from scratch\n"
+    )
     section += "2. Analyze time and space complexity using Big O notation\n"
     section += "3. Identify when to use this algorithm vs. alternative approaches\n"
     section += "4. Recognize common implementation pitfalls and how to avoid them\n"
     section += "5. Apply this algorithm to solve real-world problems\n"
-    
+
     if category == "sorting":
         section += "6. Compare stability, in-place properties, and performance characteristics\n"
     elif category == "graph":
@@ -141,13 +171,16 @@ def generate_learning_objectives(algorithm_name: str, category: Optional[str]) -
         section += "6. Recognize when this pattern is appropriate in system design\n"
     elif category == "security":
         section += "6. Understand security implications and best practices\n"
-    
+
     return section + "\n"
 
-def generate_prerequisites(algorithm_name: str, category: Optional[str], semester: int) -> str:
+
+def generate_prerequisites(
+    algorithm_name: str, category: Optional[str], semester: int
+) -> str:
     """Generate prerequisites section."""
     section = "## Prerequisites\n\n"
-    
+
     if semester == 1:
         section += "- Basic programming knowledge in Python or Java\n"
         section += "- Understanding of arrays, lists, and basic data structures\n"
@@ -177,88 +210,108 @@ def generate_prerequisites(algorithm_name: str, category: Optional[str], semeste
             section += "- Basic understanding of cryptography\n"
         elif category == "deployment":
             section += "- Familiarity with containerization (Docker)\n"
-    
+
     return section + "\n"
+
 
 def generate_tldr(algorithm_name: str, category: Optional[str]) -> str:
     """Generate TL;DR section."""
     name_display = algorithm_name.replace("_", " ").title()
-    
+
     section = "## TL;DR (Too Long; Didn't Read)\n\n"
-    
+
     # One sentence description
     desc = get_short_description(algorithm_name, category)
     section += f"**One Sentence**: {desc}\n\n"
-    
+
     # Complexity (will be filled from existing README if available)
     section += "**Time Complexity**: See complexity analysis below\n"
     section += "**Space Complexity**: See complexity analysis below\n"
     section += "**When to Use**: See 'Best Use Case' section\n"
     section += "**When NOT to Use**: See 'Do Not Confuse With' section\n\n"
-    
+
     return section
+
 
 def generate_self_assessment(algorithm_name: str, category: Optional[str]) -> str:
     """Generate self-assessment questions."""
     name_display = algorithm_name.replace("_", " ").title()
-    
+
     section = "## Self-Assessment Questions\n\n"
     section += "Test your understanding with these questions:\n\n"
-    
+
     section += "### Comprehension\n"
     section += f"1. Can you explain how {name_display} works in your own words?\n"
     section += f"2. What is the key insight or technique that makes {name_display} efficient?\n\n"
-    
+
     section += "### Analysis\n"
-    section += f"3. What are the best-case, average-case, and worst-case time complexities?\n"
-    section += f"4. When would you choose {name_display} over alternative algorithms?\n\n"
-    
+    section += (
+        f"3. What are the best-case, average-case, and worst-case time complexities?\n"
+    )
+    section += (
+        f"4. When would you choose {name_display} over alternative algorithms?\n\n"
+    )
+
     section += "### Application\n"
     section += f"5. Can you implement {name_display} from memory without looking at the code?\n"
     section += f"6. What real-world problem could you solve using {name_display}?\n\n"
-    
+
     section += "### Debugging\n"
-    section += f"7. What are the most common mistakes when implementing {name_display}?\n"
+    section += (
+        f"7. What are the most common mistakes when implementing {name_display}?\n"
+    )
     section += f"8. How would you test your {name_display} implementation?\n\n"
-    
+
     section += "**Scoring**: If you can answer 6+ questions confidently, you've mastered this algorithm!\n\n"
-    
+
     return section
+
 
 def generate_practice_exercises(algorithm_name: str, category: Optional[str]) -> str:
     """Generate practice exercises with graduated difficulty."""
     name_display = algorithm_name.replace("_", " ").title()
-    
+
     section = "## Practice Exercises\n\n"
-    
+
     section += "### Level 1: Understanding (Beginner)\n"
-    section += f"1. Trace through {name_display} step-by-step with input: [5, 2, 8, 1, 9]\n"
+    section += (
+        f"1. Trace through {name_display} step-by-step with input: [5, 2, 8, 1, 9]\n"
+    )
     section += f"2. Identify the base case(s) in {name_display}\n"
     section += f"3. Explain why {name_display} has its time complexity\n\n"
-    
+
     section += "### Level 2: Implementation (Intermediate)\n"
-    section += f"4. Implement {name_display} from scratch using only the function signature\n"
+    section += (
+        f"4. Implement {name_display} from scratch using only the function signature\n"
+    )
     section += f"5. Modify {name_display} to handle edge cases (empty input, single element, etc.)\n"
     section += f"6. Add logging to track the algorithm's execution steps\n\n"
-    
+
     section += "### Level 3: Optimization (Advanced)\n"
     section += f"7. Optimize {name_display} for a specific use case (e.g., nearly sorted data)\n"
     section += f"8. Implement a parallel or distributed version of {name_display}\n"
     section += f"9. Compare {name_display} performance with alternative algorithms on large datasets\n\n"
-    
+
     section += "### Level 4: Real-World Application (Expert)\n"
-    section += f"10. Design a system that uses {name_display} to solve a production problem\n"
+    section += (
+        f"10. Design a system that uses {name_display} to solve a production problem\n"
+    )
     section += f"11. Create unit tests with 100% code coverage for {name_display}\n"
-    section += f"12. Write a technical blog post explaining {name_display} to beginners\n\n"
-    
+    section += (
+        f"12. Write a technical blog post explaining {name_display} to beginners\n\n"
+    )
+
     return section
 
-def generate_real_world_applications(algorithm_name: str, category: Optional[str]) -> str:
+
+def generate_real_world_applications(
+    algorithm_name: str, category: Optional[str]
+) -> str:
     """Generate real-world applications section."""
     name_display = algorithm_name.replace("_", " ").title()
-    
+
     section = "## Real-World Applications\n\n"
-    
+
     apps = {
         "quick_sort": [
             "**Database Systems**: Used in SQL ORDER BY operations for efficient query result sorting",
@@ -311,63 +364,83 @@ def generate_real_world_applications(algorithm_name: str, category: Optional[str
             "**Database Clusters**: Distributing queries across database replicas",
         ],
     }
-    
+
     normalized_name = algorithm_name.lower().replace("-", "_")
     if normalized_name in apps:
         for app in apps[normalized_name]:
             section += f"- {app}\n"
     else:
         section += f"- **Enterprise Applications**: {name_display} is widely used in production systems\n"
-        section += f"- **Performance Optimization**: Applied to improve system efficiency\n"
-        section += f"- **System Design**: Integral part of scalable architecture patterns\n"
-    
+        section += (
+            f"- **Performance Optimization**: Applied to improve system efficiency\n"
+        )
+        section += (
+            f"- **System Design**: Integral part of scalable architecture patterns\n"
+        )
+
     section += "\n"
     return section
+
 
 def generate_common_misconceptions(algorithm_name: str, category: Optional[str]) -> str:
     """Generate common misconceptions section."""
     name_display = algorithm_name.replace("_", " ").title()
-    
+
     section = "## Common Misconceptions\n\n"
-    
+
     misconceptions = {
         "quick_sort": [
-            ("❌ **WRONG**: \"Quick Sort is always O(n log n)\"", 
-             "✓ **CORRECT**: Quick Sort is O(n²) in worst case (already sorted input), but O(n log n) average case"),
-            ("❌ **WRONG**: \"Quick Sort requires O(n) extra space\"",
-             "✓ **CORRECT**: Quick Sort is in-place with O(log n) space for recursion stack"),
+            (
+                '❌ **WRONG**: "Quick Sort is always O(n log n)"',
+                "✓ **CORRECT**: Quick Sort is O(n²) in worst case (already sorted input), but O(n log n) average case",
+            ),
+            (
+                '❌ **WRONG**: "Quick Sort requires O(n) extra space"',
+                "✓ **CORRECT**: Quick Sort is in-place with O(log n) space for recursion stack",
+            ),
         ],
         "merge_sort": [
-            ("❌ **WRONG**: \"Merge Sort is always faster than Quick Sort\"",
-             "✓ **CORRECT**: Quick Sort is usually faster in practice due to better cache locality"),
-            ("❌ **WRONG**: \"Merge Sort can't be done in-place\"",
-             "✓ **CORRECT**: In-place variants exist but are more complex"),
+            (
+                '❌ **WRONG**: "Merge Sort is always faster than Quick Sort"',
+                "✓ **CORRECT**: Quick Sort is usually faster in practice due to better cache locality",
+            ),
+            (
+                '❌ **WRONG**: "Merge Sort can\'t be done in-place"',
+                "✓ **CORRECT**: In-place variants exist but are more complex",
+            ),
         ],
         "binary_search": [
-            ("❌ **WRONG**: \"Binary Search works on any array\"",
-             "✓ **CORRECT**: Binary Search requires the array to be sorted"),
-            ("❌ **WRONG**: \"Binary Search is always faster than Linear Search\"",
-             "✓ **CORRECT**: For small arrays, linear search may be faster due to overhead"),
+            (
+                '❌ **WRONG**: "Binary Search works on any array"',
+                "✓ **CORRECT**: Binary Search requires the array to be sorted",
+            ),
+            (
+                '❌ **WRONG**: "Binary Search is always faster than Linear Search"',
+                "✓ **CORRECT**: For small arrays, linear search may be faster due to overhead",
+            ),
         ],
     }
-    
+
     normalized_name = algorithm_name.lower().replace("-", "_")
     if normalized_name in misconceptions:
         for wrong, correct in misconceptions[normalized_name]:
             section += f"{wrong}\n"
             section += f"{correct}\n\n"
     else:
-        section += f"❌ **WRONG**: \"{name_display} is the best solution for all problems\"\n"
+        section += (
+            f'❌ **WRONG**: "{name_display} is the best solution for all problems"\n'
+        )
         section += f"✓ **CORRECT**: {name_display} has specific use cases and trade-offs; choose algorithms based on requirements\n\n"
-        section += f"❌ **WRONG**: \"{name_display} is too complex to understand\"\n"
+        section += f'❌ **WRONG**: "{name_display} is too complex to understand"\n'
         section += f"✓ **CORRECT**: {name_display} can be understood by breaking it down into smaller steps\n\n"
-    
+
     return section
+
 
 def generate_visual_diagram(algorithm_name: str, category: Optional[str]) -> str:
     """Generate ASCII art diagram for algorithm visualization."""
     section = "## Algorithm Visualization\n\n"
-    
+
     diagrams = {
         "quick_sort": """
 ```
@@ -420,46 +493,53 @@ Step 3: Check remaining (index 3, value 7)
 ```
 """,
     }
-    
+
     normalized_name = algorithm_name.lower().replace("-", "_")
     if normalized_name in diagrams:
         section += diagrams[normalized_name]
     else:
         section += f"*Visual diagram for {algorithm_name.replace('_', ' ').title()} would be added here*\n"
         section += "*Consider using online visualization tools or drawing step-by-step execution*\n"
-    
+
     section += "\n"
     return section
 
-def update_readme_sections(readme_path: Path, algorithm_name: str, lecture_path: str, semester: int) -> bool:
+
+def update_readme_sections(
+    readme_path: Path, algorithm_name: str, lecture_path: str, semester: int
+) -> bool:
     """Update README with all new sections."""
     try:
         content = readme_path.read_text(encoding="utf-8")
         category = infer_category(lecture_path)
-        
+
         # Fix Short Description
-        short_desc_pattern = r"(### Short Description\s*\n\s*\n)(.*?)(\n\s*\n\*\*Key Characteristics)"
+        short_desc_pattern = (
+            r"(### Short Description\s*\n\s*\n)(.*?)(\n\s*\n\*\*Key Characteristics)"
+        )
         new_short_desc = get_short_description(algorithm_name, category)
         if re.search(short_desc_pattern, content, re.DOTALL):
             content = re.sub(
                 short_desc_pattern,
                 r"\1" + new_short_desc + r"\3",
                 content,
-                flags=re.DOTALL
+                flags=re.DOTALL,
             )
-        
+
         # Add TL;DR after Introduction
         if "## TL;DR" not in content:
-            intro_pattern = r"(## Introduction\s*\n\s*\n.*?\n\s*\n)(### Short Description)"
+            intro_pattern = (
+                r"(## Introduction\s*\n\s*\n.*?\n\s*\n)(### Short Description)"
+            )
             tldr_section = generate_tldr(algorithm_name, category)
             if re.search(intro_pattern, content, re.DOTALL):
                 content = re.sub(
                     intro_pattern,
                     r"\1" + tldr_section + r"\2",
                     content,
-                    flags=re.DOTALL
+                    flags=re.DOTALL,
                 )
-        
+
         # Add Learning Objectives after TL;DR or after Introduction
         if "## Learning Objectives" not in content:
             if "## TL;DR" in content:
@@ -467,101 +547,141 @@ def update_readme_sections(readme_path: Path, algorithm_name: str, lecture_path:
                 tldr_end = content.find("## TL;DR") + len("## TL;DR")
                 tldr_section_end = content.find("\n## ", tldr_end)
                 if tldr_section_end > 0:
-                    content = content[:tldr_section_end] + "\n" + generate_learning_objectives(algorithm_name, category) + content[tldr_section_end:]
+                    content = (
+                        content[:tldr_section_end]
+                        + "\n"
+                        + generate_learning_objectives(algorithm_name, category)
+                        + content[tldr_section_end:]
+                    )
                 else:
                     # TL;DR is last section, add at end
-                    content = content + "\n" + generate_learning_objectives(algorithm_name, category)
+                    content = (
+                        content
+                        + "\n"
+                        + generate_learning_objectives(algorithm_name, category)
+                    )
             else:
                 # Add after Introduction
                 intro_end = content.find("### Short Description")
                 if intro_end > 0:
-                    content = content[:intro_end] + generate_learning_objectives(algorithm_name, category) + content[intro_end:]
-        
+                    content = (
+                        content[:intro_end]
+                        + generate_learning_objectives(algorithm_name, category)
+                        + content[intro_end:]
+                    )
+
         # Add Prerequisites if not exists (after Learning Objectives)
         if "## Prerequisites" not in content:
             if "## Learning Objectives" in content:
                 # Add after Learning Objectives
-                lo_end = content.find("## Learning Objectives") + len("## Learning Objectives")
+                lo_end = content.find("## Learning Objectives") + len(
+                    "## Learning Objectives"
+                )
                 lo_section_end = content.find("\n## ", lo_end)
                 if lo_section_end > 0:
-                    content = content[:lo_section_end] + "\n" + generate_prerequisites(algorithm_name, category, semester) + content[lo_section_end:]
+                    content = (
+                        content[:lo_section_end]
+                        + "\n"
+                        + generate_prerequisites(algorithm_name, category, semester)
+                        + content[lo_section_end:]
+                    )
                 else:
-                    content = content + "\n" + generate_prerequisites(algorithm_name, category, semester)
+                    content = (
+                        content
+                        + "\n"
+                        + generate_prerequisites(algorithm_name, category, semester)
+                    )
             else:
                 # Add after Introduction if Learning Objectives doesn't exist
                 intro_end = content.find("### Short Description")
                 if intro_end > 0:
-                    content = content[:intro_end] + generate_prerequisites(algorithm_name, category, semester) + content[intro_end:]
-        
+                    content = (
+                        content[:intro_end]
+                        + generate_prerequisites(algorithm_name, category, semester)
+                        + content[intro_end:]
+                    )
+
         # Add sections before "Examples of Implementation"
         new_sections = []
-        
+
         if "## Self-Assessment Questions" not in content:
             new_sections.append(generate_self_assessment(algorithm_name, category))
-        
+
         if "## Algorithm Visualization" not in content:
             new_sections.append(generate_visual_diagram(algorithm_name, category))
-        
+
         if "## Practice Exercises" not in content:
             new_sections.append(generate_practice_exercises(algorithm_name, category))
-        
+
         if "## Real-World Applications" not in content:
-            new_sections.append(generate_real_world_applications(algorithm_name, category))
-        
+            new_sections.append(
+                generate_real_world_applications(algorithm_name, category)
+            )
+
         if "## Common Misconceptions" not in content:
-            new_sections.append(generate_common_misconceptions(algorithm_name, category))
-        
+            new_sections.append(
+                generate_common_misconceptions(algorithm_name, category)
+            )
+
         # Insert new sections before "Examples of Implementation"
         if new_sections and "## Examples of Implementation" in content:
             examples_pos = content.find("## Examples of Implementation")
-            content = content[:examples_pos] + "\n".join(new_sections) + "\n" + content[examples_pos:]
+            content = (
+                content[:examples_pos]
+                + "\n".join(new_sections)
+                + "\n"
+                + content[examples_pos:]
+            )
         elif new_sections:
             # Add at the end if Examples section doesn't exist
             content += "\n" + "\n".join(new_sections)
-        
+
         readme_path.write_text(content, encoding="utf-8")
         return True
-        
+
     except Exception as e:
         print(f"Error processing {readme_path}: {e}")
         return False
+
 
 def main():
     """Main function to enhance all READMEs."""
     updated_count = 0
     processed_count = 0
-    
+
     for semester_dir in ROOT.glob("semester_*"):
         if not semester_dir.is_dir():
             continue
-        
+
         # Extract semester number
         semester_match = re.search(r"semester_(\d+)", semester_dir.name)
         semester = int(semester_match.group(1)) if semester_match else 1
-        
+
         for lecture_dir in semester_dir.iterdir():
             if not lecture_dir.is_dir():
                 continue
-            
+
             for algo_dir in lecture_dir.iterdir():
                 if not algo_dir.is_dir():
                     continue
-                
+
                 readme_path = algo_dir / "README.md"
                 if not readme_path.exists():
                     continue
-                
+
                 algorithm_name = algo_dir.name
                 processed_count += 1
-                
-                if update_readme_sections(readme_path, algorithm_name, str(lecture_dir), semester):
+
+                if update_readme_sections(
+                    readme_path, algorithm_name, str(lecture_dir), semester
+                ):
                     updated_count += 1
                     if updated_count % 10 == 0:
                         print(f"Updated {updated_count} READMEs...")
-    
+
     print(f"\nProcessed {processed_count} algorithm READMEs")
     print(f"Updated {updated_count} READMEs with new sections")
 
+
 if __name__ == "__main__":
     main()
-

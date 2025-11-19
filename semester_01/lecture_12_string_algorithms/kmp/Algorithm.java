@@ -73,16 +73,18 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("KNUTH-MORRIS-PRATT (KMP) ALGORITHM");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1
         logger.info("Example 1: Basic Pattern Matching");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         String text1 = "ABABDABACDABABCABCABAB";
         String pattern1 = "ABABCABAB";
@@ -91,11 +93,11 @@ public class Algorithm {
         logger.info("Text: " + text1);
         logger.info("Pattern: " + pattern1);
         logger.info("Matches found at indices: " + matches);
-        logger.info();
+        logger.info("");
         
         // Example 2
         logger.info("Example 2: Multiple Occurrences");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         String text2 = "AABAACAADAABAABA";
         String pattern2 = "AABA";
@@ -104,15 +106,15 @@ public class Algorithm {
         logger.info("Text: " + text2);
         logger.info("Pattern: " + pattern2);
         logger.info("Matches: " + matches2);
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Time:  O(n + m)");
         logger.info("  Space: O(m)");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

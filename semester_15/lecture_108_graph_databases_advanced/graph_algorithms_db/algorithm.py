@@ -11,34 +11,36 @@ from typing import List, Optional, Dict, Set
 
 class GraphAlgorithmsDB:
     """Graph algorithms for databases."""
+
     def __init__(self):
         self.graph: Dict[str, List[str]] = {}
-    
+
     def add_edge(self, from_node: str, to_node: str) -> None:
         """Add edge."""
         if from_node not in self.graph:
             self.graph[from_node] = []
         if to_node not in self.graph[from_node]:
             self.graph[from_node].append(to_node)
-    
+
     def shortest_path(self, start: str, end: str) -> Optional[List[str]]:
         """Find shortest path."""
         from collections import deque
+
         queue = deque([(start, [start])])
         visited = {start}
-        
+
         while queue:
             node, path = queue.popleft()
             if node == end:
                 return path
-            
+
             for neighbor in self.graph.get(node, []):
                 if neighbor not in visited:
                     visited.add(neighbor)
                     queue.append((neighbor, path + [neighbor]))
-        
+
         return None
-    
+
     def page_rank(self, iterations: int = 10) -> Dict[str, float]:
         """PageRank algorithm."""
         n = len(self.graph)
@@ -64,11 +66,11 @@ def main() -> None:
     print("=" * 70)
     print("GRAPH ALGORITHMS DB")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Graph Algorithms Db")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

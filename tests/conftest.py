@@ -25,7 +25,9 @@ def import_module_from_path(module_path: str) -> ModuleType:
     return module
 
 
-def find_callable(module: ModuleType, candidates: List[str]) -> Optional[Callable[..., Any]]:
+def find_callable(
+    module: ModuleType, candidates: List[str]
+) -> Optional[Callable[..., Any]]:
     """Return the first callable attribute in module that matches any of candidates."""
     for name in candidates:
         fn = getattr(module, name, None)
@@ -33,7 +35,9 @@ def find_callable(module: ModuleType, candidates: List[str]) -> Optional[Callabl
             return fn
     # Fallback: find a single public function
     public_functions = [
-        obj for _, obj in inspect.getmembers(module, inspect.isfunction) if not _.startswith("_")
+        obj
+        for _, obj in inspect.getmembers(module, inspect.isfunction)
+        if not _.startswith("_")
     ]
     if len(public_functions) == 1:
         return public_functions[0]
@@ -66,4 +70,8 @@ def pytest_sessionfinish(session, exitstatus):  # type: ignore
         for nodeid, dur in _LONG_TESTS:
             f.write(f"{dur:.2f}s\t{nodeid}\n")
     # Print concise summary
-    print("\n[long-tests] {} tests exceeded {}s. Report: {}".format(len(_LONG_TESTS), _LONG_THRESHOLD, out_path))
+    print(
+        "\n[long-tests] {} tests exceeded {}s. Report: {}".format(
+            len(_LONG_TESTS), _LONG_THRESHOLD, out_path
+        )
+    )

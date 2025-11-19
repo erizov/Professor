@@ -23,7 +23,9 @@ def find_folder_named_function(module, file_path):
         return cand
     # Also try main public function if unique
     public_functions = [
-        obj for name, obj in inspect.getmembers(module, inspect.isfunction) if not name.startswith("_")
+        obj
+        for name, obj in inspect.getmembers(module, inspect.isfunction)
+        if not name.startswith("_")
     ]
     if len(public_functions) == 1:
         return public_functions[0]
@@ -34,7 +36,11 @@ def find_folder_named_function(module, file_path):
 def test_auto_discovery_smoke(file_path):
     # Skip test files and framework or web interface already covered elsewhere
     rel = os.path.relpath(file_path, PROJECT_ROOT)
-    if rel.startswith("tests") or rel.startswith("framework") or rel.startswith("web_interface"):
+    if (
+        rel.startswith("tests")
+        or rel.startswith("framework")
+        or rel.startswith("web_interface")
+    ):
         pytest.skip("covered elsewhere or not an algorithm")
 
     try:

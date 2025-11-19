@@ -13,8 +13,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 # Comprehensive framework examples
 FRAMEWORK_EXAMPLES_EXPANDED = {
-    'singleton': {
-        'spring': '''// Spring Framework - Singleton Bean (Default Scope)
+    "singleton": {
+        "spring": """// Spring Framework - Singleton Bean (Default Scope)
 @Component
 @Scope("singleton")  // Default, can be omitted
 public class DatabaseConnectionManager {
@@ -29,8 +29,8 @@ public class DatabaseConnectionManager {
 
 // Usage
 @Autowired
-private DatabaseConnectionManager dbManager;''',
-        'dotnet': '''// .NET Core - Singleton Service
+private DatabaseConnectionManager dbManager;""",
+        "dotnet": """// .NET Core - Singleton Service
 public class CacheService
 {
     private static CacheService _instance;
@@ -66,8 +66,8 @@ public class MyController : Controller
     {
         _cache = cache;  // Same instance injected everywhere
     }
-}''',
-        'docker': '''# Docker - Single Container Instance
+}""",
+        "docker": """# Docker - Single Container Instance
 # docker-compose.yml
 version: '3.8'
 services:
@@ -100,11 +100,10 @@ spec:
     spec:
       containers:
       - name: postgres
-        image: postgres:13'''
+        image: postgres:13""",
     },
-    
-    'factory': {
-        'spring': '''// Spring Framework - Factory Pattern
+    "factory": {
+        "spring": """// Spring Framework - Factory Pattern
 @Component
 public class PaymentProcessorFactory {
     
@@ -144,8 +143,8 @@ public class CreditCardProcessor implements PaymentProcessor {
 private PaymentProcessorFactory factory;
 
 PaymentProcessor processor = factory.getProcessor("credit_card");
-processor.processPayment(new BigDecimal("100.00"));''',
-        'dotnet': '''// .NET - Factory Pattern
+processor.processPayment(new BigDecimal("100.00"));""",
+        "dotnet": """// .NET - Factory Pattern
 public interface IPaymentProcessor
 {
     void ProcessPayment(decimal amount);
@@ -185,8 +184,8 @@ public class PaymentService
         var processor = _factory.CreateProcessor(type);
         processor.ProcessPayment(amount);
     }
-}''',
-        'kubernetes': '''# Kubernetes - Factory Pattern for Pod Creation
+}""",
+        "kubernetes": """# Kubernetes - Factory Pattern for Pod Creation
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -217,11 +216,10 @@ spec:
             configMapKeyRef:
               name: processor-config
               key: processor-type
-        # Factory pattern: container creates processor based on env var'''
+        # Factory pattern: container creates processor based on env var""",
     },
-    
-    'observer': {
-        'spring': '''// Spring Framework - Observer Pattern (Event Listener)
+    "observer": {
+        "spring": """// Spring Framework - Observer Pattern (Event Listener)
 @Component
 public class OrderService {
     
@@ -272,8 +270,8 @@ public class InventoryService {
         Order order = event.getOrder();
         inventoryService.updateStock(order.getItems());
     }
-}''',
-        'dotnet': '''// .NET - Observer Pattern (Events)
+}""",
+        "dotnet": """// .NET - Observer Pattern (Events)
 public class OrderService
 {
     public event EventHandler<OrderCreatedEventArgs> OrderCreated;
@@ -316,8 +314,8 @@ public class OrderCreatedHandler : INotificationHandler<OrderCreatedEvent>
         // Handle order created event
         return Task.CompletedTask;
     }
-}''',
-        'kafka': '''# Apache Kafka - Observer Pattern (Pub/Sub)
+}""",
+        "kafka": """# Apache Kafka - Observer Pattern (Pub/Sub)
 # Producer
 from kafka import KafkaProducer
 import json
@@ -358,11 +356,10 @@ consumer2 = KafkaConsumer(
 
 for message in consumer2:
     order_data = message.value
-    update_inventory(order_data)'''
+    update_inventory(order_data)""",
     },
-    
-    'strategy': {
-        'spring': '''// Spring Framework - Strategy Pattern
+    "strategy": {
+        "spring": """// Spring Framework - Strategy Pattern
 public interface SortingStrategy {
     void sort(List<Integer> list);
 }
@@ -404,8 +401,8 @@ public class SortService {
         }
         strategy.sort(list);
     }
-}''',
-        'dotnet': '''// .NET - Strategy Pattern
+}""",
+        "dotnet": """// .NET - Strategy Pattern
 public interface ISortingStrategy
 {
     void Sort(List<int> list);
@@ -453,8 +450,8 @@ public class SortService
 
 // .NET Core DI
 services.AddTransient<ISortingStrategy, QuickSortStrategy>();
-services.AddTransient<ISortingStrategy, MergeSortStrategy>();''',
-        'kubernetes': '''# Kubernetes - Strategy Pattern for Deployment
+services.AddTransient<ISortingStrategy, MergeSortStrategy>();""",
+        "kubernetes": """# Kubernetes - Strategy Pattern for Deployment
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -469,11 +466,10 @@ spec:
         env:
         - name: SORT_STRATEGY
           value: "quick"  # Strategy: quick, merge, heap
-        # Service uses strategy based on env var'''
+        # Service uses strategy based on env var""",
     },
-    
-    'adapter': {
-        'spring': '''// Spring Framework - Adapter Pattern
+    "adapter": {
+        "spring": """// Spring Framework - Adapter Pattern
 // Target Interface
 public interface PaymentGateway {
     void processPayment(BigDecimal amount);
@@ -511,8 +507,8 @@ public class PaymentService {
     public void pay(BigDecimal amount) {
         paymentGateway.processPayment(amount);
     }
-}''',
-        'dotnet': '''// .NET - Adapter Pattern
+}""",
+        "dotnet": """// .NET - Adapter Pattern
 // Target Interface
 public interface IPaymentGateway
 {
@@ -546,8 +542,8 @@ public class LegacyPaymentAdapter : IPaymentGateway
 
 // .NET Core DI
 services.AddSingleton<LegacyPaymentSystem>();
-services.AddSingleton<IPaymentGateway, LegacyPaymentAdapter>();''',
-        'docker': '''# Docker - Adapter Pattern (Service Adapter)
+services.AddSingleton<IPaymentGateway, LegacyPaymentAdapter>();""",
+        "docker": """# Docker - Adapter Pattern (Service Adapter)
 # docker-compose.yml
 version: '3.8'
 services:
@@ -562,11 +558,10 @@ services:
       - LEGACY_SERVICE_URL=http://legacy-service:8080
     depends_on:
       - legacy-service
-    # Adapter translates between new API and legacy service'''
+    # Adapter translates between new API and legacy service""",
     },
-    
-    'decorator': {
-        'spring': '''// Spring Framework - Decorator Pattern
+    "decorator": {
+        "spring": """// Spring Framework - Decorator Pattern
 public interface DataService {
     String fetchData(String key);
 }
@@ -624,8 +619,8 @@ public class LoggingDataServiceDecorator implements DataService {
         logger.info("Fetched data: " + data);
         return data;
     }
-}''',
-        'dotnet': '''// .NET - Decorator Pattern
+}""",
+        "dotnet": """// .NET - Decorator Pattern
 public interface IDataService
 {
     string FetchData(string key);
@@ -668,8 +663,8 @@ public class CachingDataServiceDecorator : IDataService
 // .NET Core DI - Decorator Chain
 services.AddSingleton<BasicDataService>();
 services.Decorate<IDataService, CachingDataServiceDecorator>();
-services.Decorate<IDataService, LoggingDataServiceDecorator>();''',
-        'nginx': '''# Nginx - Decorator Pattern (Middleware)
+services.Decorate<IDataService, LoggingDataServiceDecorator>();""",
+        "nginx": """# Nginx - Decorator Pattern (Middleware)
 # nginx.conf
 server {
     listen 80;
@@ -691,11 +686,10 @@ server {
         proxy_pass http://backend;
         proxy_cache my_cache;
     }
-}'''
+}""",
     },
-    
-    'proxy': {
-        'spring': '''// Spring Framework - Proxy Pattern
+    "proxy": {
+        "spring": """// Spring Framework - Proxy Pattern
 public interface ImageService {
     Image loadImage(String filename);
 }
@@ -737,8 +731,8 @@ public class ImageServiceAspect {
         // Caching logic
         return joinPoint.proceed();
     }
-}''',
-        'dotnet': '''// .NET - Proxy Pattern
+}""",
+        "dotnet": """// .NET - Proxy Pattern
 public interface IImageService
 {
     Image LoadImage(string filename);
@@ -778,8 +772,8 @@ public class ImageServiceProxy : IImageService
 
 // .NET Core DI
 services.AddSingleton<RealImageService>();
-services.AddSingleton<IImageService, ImageServiceProxy>();''',
-        'nginx': '''# Nginx - Proxy Pattern (Reverse Proxy)
+services.AddSingleton<IImageService, ImageServiceProxy>();""",
+        "nginx": """# Nginx - Proxy Pattern (Reverse Proxy)
 # nginx.conf
 server {
     listen 80;
@@ -803,11 +797,10 @@ upstream backend-servers {
     server backend1:8080;
     server backend2:8080;
     server backend3:8080;
-}'''
+}""",
     },
-    
-    'command': {
-        'spring': '''// Spring Framework - Command Pattern
+    "command": {
+        "spring": """// Spring Framework - Command Pattern
 public interface Command {
     void execute();
     void undo();
@@ -853,8 +846,8 @@ public class CommandInvoker {
             command.undo();
         }
     }
-}''',
-        'dotnet': '''// .NET - Command Pattern
+}""",
+        "dotnet": """// .NET - Command Pattern
 public interface ICommand
 {
     void Execute();
@@ -906,11 +899,10 @@ public class CommandInvoker
             command.Undo();
         }
     }
-}'''
+}""",
     },
-    
-    'iterator': {
-        'spring': '''// Spring Framework - Iterator Pattern
+    "iterator": {
+        "spring": """// Spring Framework - Iterator Pattern
 public interface CustomIterator<T> {
     boolean hasNext();
     T next();
@@ -961,8 +953,8 @@ public class UserService {
             // Process user
         }
     }
-}''',
-        'dotnet': '''// .NET - Iterator Pattern (IEnumerable/IEnumerator)
+}""",
+        "dotnet": """// .NET - Iterator Pattern (IEnumerable/IEnumerator)
 public class UserCollection : IEnumerable<User>
 {
     private readonly List<User> _users = new List<User>();
@@ -1017,106 +1009,120 @@ var users = new UserCollection();
 foreach (var user in users)
 {
     // Process user
-}'''
-    }
+}""",
+    },
 }
+
 
 def add_framework_examples_to_readme(readme_path: Path, algorithm_name: str) -> bool:
     """Add comprehensive framework examples to README."""
     try:
-        content = readme_path.read_text(encoding='utf-8')
-        
+        content = readme_path.read_text(encoding="utf-8")
+
         # Check if already has comprehensive examples
-        if "Spring Framework" in content and "```java" in content and "```csharp" in content:
+        if (
+            "Spring Framework" in content
+            and "```java" in content
+            and "```csharp" in content
+        ):
             return False
-        
+
         # Get examples
         examples = FRAMEWORK_EXAMPLES_EXPANDED.get(algorithm_name, {})
         if not examples:
             return False
-        
+
         # Build comprehensive examples section
         examples_section = "\n\n## Examples of Implementation\n\n"
         examples_section += "This pattern/algorithm is implemented in the following frameworks and technologies:\n\n"
-        
-        if 'spring' in examples:
+
+        if "spring" in examples:
             examples_section += "### Spring Framework\n\n"
-            examples_section += "```java\n" + examples['spring'] + "\n```\n\n"
+            examples_section += "```java\n" + examples["spring"] + "\n```\n\n"
             examples_section += "**Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.\n\n"
-        
-        if 'dotnet' in examples:
+
+        if "dotnet" in examples:
             examples_section += "### .NET Framework\n\n"
-            examples_section += "```csharp\n" + examples['dotnet'] + "\n```\n\n"
+            examples_section += "```csharp\n" + examples["dotnet"] + "\n```\n\n"
             examples_section += "**Purpose**: .NET Framework implements this pattern for service registration, dependency injection, and application architecture.\n\n"
-        
-        if 'docker' in examples:
+
+        if "docker" in examples:
             examples_section += "### Docker\n\n"
-            examples_section += "```yaml\n" + examples['docker'] + "\n```\n\n"
+            examples_section += "```yaml\n" + examples["docker"] + "\n```\n\n"
             examples_section += "**Purpose**: Docker uses this pattern for container orchestration and service management.\n\n"
-        
-        if 'kubernetes' in examples:
+
+        if "kubernetes" in examples:
             examples_section += "### Kubernetes\n\n"
-            examples_section += "```yaml\n" + examples['kubernetes'] + "\n```\n\n"
+            examples_section += "```yaml\n" + examples["kubernetes"] + "\n```\n\n"
             examples_section += "**Purpose**: Kubernetes implements this pattern for pod management, service discovery, and orchestration.\n\n"
-        
-        if 'kafka' in examples:
+
+        if "kafka" in examples:
             examples_section += "### Apache Kafka\n\n"
-            examples_section += "```python\n" + examples['kafka'] + "\n```\n\n"
+            examples_section += "```python\n" + examples["kafka"] + "\n```\n\n"
             examples_section += "**Purpose**: Kafka uses this pattern for event streaming, pub/sub messaging, and distributed systems.\n\n"
-        
-        if 'nginx' in examples:
+
+        if "nginx" in examples:
             examples_section += "### Nginx\n\n"
-            examples_section += "```nginx\n" + examples['nginx'] + "\n```\n\n"
+            examples_section += "```nginx\n" + examples["nginx"] + "\n```\n\n"
             examples_section += "**Purpose**: Nginx implements this pattern for reverse proxying, load balancing, and request routing.\n\n"
-        
+
         # Insert before References or at end
         if "## References" in content:
-            content = content.replace("## References", examples_section + "\n## References")
+            content = content.replace(
+                "## References", examples_section + "\n## References"
+            )
         elif "## Examples of Implementation" in content:
             # Replace existing section
             pattern = r"## Examples of Implementation.*?(?=\n## |$)"
-            content = re.sub(pattern, examples_section.strip(), content, flags=re.DOTALL)
+            content = re.sub(
+                pattern, examples_section.strip(), content, flags=re.DOTALL
+            )
         else:
             content = content.rstrip() + "\n\n" + examples_section
-        
-        readme_path.write_text(content, encoding='utf-8')
+
+        readme_path.write_text(content, encoding="utf-8")
         return True
     except Exception as e:
         print(f"Error processing {readme_path}: {e}")
         return False
 
+
 def main():
     """Add framework examples to all relevant algorithms."""
     updated = 0
-    
+
     # Process all patterns with examples
     for algo_name in FRAMEWORK_EXAMPLES_EXPANDED.keys():
         for readme_path in ROOT.rglob(f"*/{algo_name}/README.md"):
             if add_framework_examples_to_readme(readme_path, algo_name):
                 updated += 1
-                print(f"[OK] Added framework examples to {readme_path.relative_to(ROOT)}")
-    
+                print(
+                    f"[OK] Added framework examples to {readme_path.relative_to(ROOT)}"
+                )
+
     # Also check for variations
     pattern_variations = {
-        'abstract_factory': 'factory',
-        'factory_method': 'factory',
-        'observer_pattern': 'observer',
-        'strategy_pattern': 'strategy',
-        'adapter_pattern': 'adapter',
-        'decorator_pattern': 'decorator',
-        'proxy_pattern': 'proxy',
-        'command_pattern': 'command',
-        'iterator_pattern': 'iterator',
+        "abstract_factory": "factory",
+        "factory_method": "factory",
+        "observer_pattern": "observer",
+        "strategy_pattern": "strategy",
+        "adapter_pattern": "adapter",
+        "decorator_pattern": "decorator",
+        "proxy_pattern": "proxy",
+        "command_pattern": "command",
+        "iterator_pattern": "iterator",
     }
-    
+
     for pattern_name, example_key in pattern_variations.items():
         for readme_path in ROOT.rglob(f"*/{pattern_name}/README.md"):
             if add_framework_examples_to_readme(readme_path, example_key):
                 updated += 1
-                print(f"[OK] Added framework examples to {readme_path.relative_to(ROOT)}")
-    
+                print(
+                    f"[OK] Added framework examples to {readme_path.relative_to(ROOT)}"
+                )
+
     print(f"\n[COMPLETE] Added framework examples to {updated} algorithms")
+
 
 if __name__ == "__main__":
     main()
-

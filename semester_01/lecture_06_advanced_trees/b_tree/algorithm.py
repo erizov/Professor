@@ -11,34 +11,37 @@ from typing import List, Optional, Dict, Set
 
 class BTreeNode:
     """B-tree node."""
+
     def __init__(self, leaf: bool = False):
         self.keys: List[int] = []
-        self.children: List['BTreeNode'] = []
+        self.children: List["BTreeNode"] = []
         self.leaf = leaf
+
 
 class BTree:
     """B-tree implementation (simplified)."""
+
     def __init__(self, min_degree: int = 3):
         self.root = BTreeNode(leaf=True)
         self.min_degree = min_degree
-    
+
     def search(self, key: int, node: BTreeNode = None) -> Optional[BTreeNode]:
         """Search for key in B-tree."""
         if node is None:
             node = self.root
-        
+
         i = 0
         while i < len(node.keys) and key > node.keys[i]:
             i += 1
-        
+
         if i < len(node.keys) and node.keys[i] == key:
             return node
-        
+
         if node.leaf:
             return None
-        
+
         return self.search(key, node.children[i])
-    
+
     def insert(self, key: int) -> None:
         """Insert key into B-tree."""
         root = self.root
@@ -48,7 +51,7 @@ class BTree:
             self._split_child(new_root, 0)
             self.root = new_root
         self._insert_non_full(self.root, key)
-    
+
     def _insert_non_full(self, node: BTreeNode, key: int) -> None:
         """Insert into non-full node."""
         i = len(node.keys) - 1
@@ -67,7 +70,7 @@ class BTree:
                 if key > node.keys[i]:
                     i += 1
             self._insert_non_full(node.children[i], key)
-    
+
     def _split_child(self, parent: BTreeNode, index: int) -> None:
         """Split child node."""
         # Simplified - full implementation needed
@@ -79,11 +82,11 @@ def main() -> None:
     print("=" * 70)
     print("B TREE")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for B Tree")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

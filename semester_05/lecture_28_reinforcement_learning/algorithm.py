@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("REINFORCEMENT LEARNING")
     print("=" * 70)
-    
+
     print("Algorithm implementation for Reinforcement Learning")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

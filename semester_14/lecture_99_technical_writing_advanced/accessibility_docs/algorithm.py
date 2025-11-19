@@ -11,18 +11,16 @@ from typing import List, Optional, Dict, Set
 
 class AccessibilityDocs:
     """Accessibility documentation generator."""
+
     def __init__(self):
         self.guidelines: List[dict] = []
-    
-    def add_guideline(self, rule: str, description: str, 
-                     level: str = 'AA') -> None:
+
+    def add_guideline(self, rule: str, description: str, level: str = "AA") -> None:
         """Add accessibility guideline."""
-        self.guidelines.append({
-            'rule': rule,
-            'description': description,
-            'level': level
-        })
-    
+        self.guidelines.append(
+            {"rule": rule, "description": description, "level": level}
+        )
+
     def generate_docs(self) -> str:
         """Generate accessibility documentation."""
         lines = ["# Accessibility Guidelines\n"]
@@ -38,11 +36,11 @@ def main() -> None:
     print("=" * 70)
     print("ACCESSIBILITY DOCS")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Accessibility Docs")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

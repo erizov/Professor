@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("K-MEANS CLUSTERING")
     print("=" * 70)
-    
+
     print("Algorithm implementation for K-Means Clustering")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

@@ -95,52 +95,54 @@ public class Algorithm {
      * Main method for demonstration.
      */
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("RADIX SORT DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Basic sorting
         logger.info("Example 1: Basic Integer Sorting");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data1 = {170, 45, 75, 90, 802, 24, 2, 66};
         logger.info("Original: " + Arrays.toString(data1));
         int[] result1 = radixSort(data1.clone());
         logger.info("Sorted:   " + Arrays.toString(result1));
-        logger.info();
+        logger.info("");
         
         // Example 2: Small numbers
         logger.info("Example 2: Small Numbers");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data2 = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
         logger.info("Original: " + Arrays.toString(data2));
         int[] result2 = radixSort(data2.clone());
         logger.info("Sorted:   " + Arrays.toString(result2));
-        logger.info();
+        logger.info("");
         
         // Example 3: Large numbers
         logger.info("Example 3: Large Numbers");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data3 = {1234, 5678, 9012, 3456, 7890};
         logger.info("Original: " + Arrays.toString(data3));
         int[] result3 = radixSort(data3.clone());
         logger.info("Sorted:   " + Arrays.toString(result3));
-        logger.info();
+        logger.info("");
         
         // Example 4: Duplicates
         logger.info("Example 4: With Duplicates");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data4 = {321, 123, 321, 456, 123, 789};
         logger.info("Original: " + Arrays.toString(data4));
         int[] result4 = radixSort(data4.clone());
         logger.info("Sorted:   " + Arrays.toString(result4));
-        logger.info();
+        logger.info("");
         
         // Example 5: Performance measurement
         logger.info("Example 5: Performance Measurement");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         Random rand = new Random(42);
         int[] sizes = {100, 1000, 10000};
@@ -159,8 +161,8 @@ public class Algorithm {
             System.out.printf("n=%5d: %8.3f ms%n", size, ms);
         }
         
-        logger.info();
-        logger.info("=".repeat(70));
+        logger.info("");
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Time:  O(d * (n + k))");
         logger.info("         d = digits, k = radix (10)");
@@ -181,7 +183,7 @@ public class Algorithm {
         logger.info("\nWhen NOT to use:");
         logger.info("  • Variable-length keys");
         logger.info("  • Small datasets");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         
         long endTime = System.nanoTime();
         double totalMs = (endTime - startTime) / 1_000_000.0;

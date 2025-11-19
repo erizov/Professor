@@ -398,7 +398,7 @@ def get_algorithm_type(algorithm_name: str, lecture_path: str) -> str:
     """Determine algorithm type for framework examples."""
     name_lower = algorithm_name.lower()
     lecture_lower = lecture_path.lower()
-    
+
     # Pattern matching
     if "singleton" in name_lower:
         return "singleton"
@@ -442,14 +442,14 @@ def get_algorithm_type(algorithm_name: str, lecture_path: str) -> str:
         return "docker"
     elif "kubernetes" in lecture_lower or "k8s" in lecture_lower:
         return "kubernetes"
-    
+
     return None
 
 
 def generate_framework_examples_section(algorithm_name: str, lecture_path: str) -> str:
     """Generate framework examples section with real code."""
     alg_type = get_algorithm_type(algorithm_name, lecture_path)
-    
+
     if not alg_type or alg_type not in FRAMEWORK_EXAMPLES:
         return """## Examples of Implementation
 
@@ -457,72 +457,72 @@ This algorithm/pattern is implemented in various frameworks and technologies.
 
 *Note: Framework-specific examples will be added based on actual implementations.*
 """
-    
+
     examples = FRAMEWORK_EXAMPLES[alg_type]
     section = "## Examples of Implementation\n\n"
     section += "This algorithm/pattern is implemented in the following frameworks:\n\n"
-    
+
     if "spring" in examples:
         section += "### Spring Framework\n\n"
         section += "```java\n"
         section += examples["spring"]
         section += "\n```\n\n"
-    
+
     if "j2ee" in examples:
         section += "### J2EE (Java Enterprise Edition)\n\n"
         section += "```java\n"
         section += examples["j2ee"]
         section += "\n```\n\n"
-    
+
     if ".net" in examples:
         section += "### .NET Framework\n\n"
         section += "```csharp\n"
         section += examples[".net"]
         section += "\n```\n\n"
-    
+
     if "kafka" in examples:
         section += "### Apache Kafka\n\n"
         section += "```java\n"
         section += examples["kafka"]
         section += "\n```\n\n"
-    
+
     if "docker" in examples:
         section += "### Docker\n\n"
         section += "```dockerfile\n"
         section += examples["docker"]
         section += "\n```\n\n"
-    
+
     if "kubernetes" in examples:
         section += "### Kubernetes\n\n"
         section += "```yaml\n"
         section += examples["kubernetes"]
         section += "\n```\n\n"
-    
+
     return section
 
 
 def update_readme(readme_path: Path, algorithm_name: str, lecture_path: str) -> None:
     """Update README with real framework examples."""
     try:
-        with open(readme_path, 'r', encoding='utf-8') as f:
+        with open(readme_path, "r", encoding="utf-8") as f:
             content = f.read()
-        
+
         # Find and replace "Examples of Implementation" section
-        pattern = r'## Examples of Implementation.*?(?=\n## |\Z)'
-        
+        pattern = r"## Examples of Implementation.*?(?=\n## |\Z)"
+
         new_section = generate_framework_examples_section(algorithm_name, lecture_path)
-        
+
         if re.search(pattern, content, re.DOTALL):
             content = re.sub(pattern, new_section.rstrip(), content, flags=re.DOTALL)
         else:
             # Append if not found
             content += "\n\n" + new_section
-        
-        with open(readme_path, 'w', encoding='utf-8') as f:
+
+        with open(readme_path, "w", encoding="utf-8") as f:
             f.write(content)
-        
+
         print(f"Updated: {readme_path}")
-    
+
     except Exception as e:
         print(f"Error updating {readme_path}: {e}")
 
@@ -530,29 +530,28 @@ def update_readme(readme_path: Path, algorithm_name: str, lecture_path: str) -> 
 def main():
     """Main function."""
     base_path = Path(__file__).resolve().parents[1]
-    
+
     # Find all README files
     readme_files = list(base_path.rglob("README.md"))
-    
+
     # Filter to algorithm READMEs (in algorithm directories)
     algorithm_readmes = []
     for readme in readme_files:
         parent = readme.parent
         if (parent / "algorithm.py").exists() or (parent / "Algorithm.java").exists():
             algorithm_readmes.append(readme)
-    
+
     print(f"Found {len(algorithm_readmes)} algorithm README files")
     print("Updating with real framework examples...\n")
-    
+
     for readme in algorithm_readmes:
         algorithm_name = readme.parent.name
         lecture_path = str(readme.parent.parent)
-        
+
         update_readme(readme, algorithm_name, lecture_path)
-    
+
     print(f"\nUpdated {len(algorithm_readmes)} README files")
 
 
 if __name__ == "__main__":
     main()
-

@@ -13,8 +13,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 # Additional framework examples for remaining patterns
 ADDITIONAL_FRAMEWORK_EXAMPLES = {
-    'composite': {
-        'spring': '''// Spring Framework - Composite Pattern
+    "composite": {
+        "spring": """// Spring Framework - Composite Pattern
 public interface Component {
     void operation();
     void add(Component component);
@@ -71,8 +71,8 @@ public class Composite implements Component {
     public void remove(Component component) {
         children.remove(component);
     }
-}''',
-        'dotnet': '''// .NET - Composite Pattern
+}""",
+        "dotnet": """// .NET - Composite Pattern
 public interface IComponent
 {
     void Operation();
@@ -133,11 +133,10 @@ public class Composite : IComponent
     {
         _children.Remove(component);
     }
-}'''
+}""",
     },
-    
-    'facade': {
-        'spring': '''// Spring Framework - Facade Pattern
+    "facade": {
+        "spring": """// Spring Framework - Facade Pattern
 @Service
 public class OrderFacade {
     @Autowired
@@ -176,8 +175,8 @@ public class OrderFacade {
         
         return OrderResult.success(shipment);
     }
-}''',
-        'dotnet': '''// .NET - Facade Pattern
+}""",
+        "dotnet": """// .NET - Facade Pattern
 public class OrderFacade
 {
     private readonly IInventoryService _inventoryService;
@@ -217,11 +216,10 @@ public class OrderFacade
         
         return OrderResult.Success(shipment);
     }
-}'''
+}""",
     },
-    
-    'template_method': {
-        'spring': '''// Spring Framework - Template Method Pattern
+    "template_method": {
+        "spring": """// Spring Framework - Template Method Pattern
 public abstract class DataProcessor {
     // Template method
     public final void process(Data data) {
@@ -271,8 +269,8 @@ public class JSONDataProcessor extends DataProcessor {
         // JSON-specific transformation
         return jsonParser.parse(data);
     }
-}''',
-        'dotnet': '''// .NET - Template Method Pattern
+}""",
+        "dotnet": """// .NET - Template Method Pattern
 public abstract class DataProcessor
 {
     // Template method
@@ -322,11 +320,10 @@ public class JsonDataProcessor : DataProcessor
     {
         return _jsonParser.Parse(data);
     }
-}'''
+}""",
     },
-    
-    'chain_of_responsibility': {
-        'spring': '''// Spring Framework - Chain of Responsibility Pattern
+    "chain_of_responsibility": {
+        "spring": """// Spring Framework - Chain of Responsibility Pattern
 public abstract class Handler {
     protected Handler next;
     
@@ -403,8 +400,8 @@ private ValidationHandler validationHandler;
 
 // Build chain
 authHandler.setNext(authzHandler).setNext(validationHandler);
-authHandler.handle(request);''',
-        'dotnet': '''// .NET - Chain of Responsibility Pattern
+authHandler.handle(request);""",
+        "dotnet": """// .NET - Chain of Responsibility Pattern
 public abstract class Handler
 {
     protected Handler _next;
@@ -450,11 +447,10 @@ var authzHandler = new AuthorizationHandler();
 var validationHandler = new ValidationHandler();
 
 authHandler.SetNext(authzHandler).SetNext(validationHandler);
-authHandler.Handle(request);'''
+authHandler.Handle(request);""",
     },
-    
-    'bridge': {
-        'spring': '''// Spring Framework - Bridge Pattern
+    "bridge": {
+        "spring": """// Spring Framework - Bridge Pattern
 public interface Renderer {
     void renderCircle(float radius);
     void renderSquare(float side);
@@ -509,8 +505,8 @@ public class Circle extends Shape {
     public void draw() {
         renderer.renderCircle(radius);
     }
-}''',
-        'dotnet': '''// .NET - Bridge Pattern
+}""",
+        "dotnet": """// .NET - Bridge Pattern
 public interface IRenderer
 {
     void RenderCircle(float radius);
@@ -555,11 +551,10 @@ public class Circle : Shape
     {
         Renderer.RenderCircle(_radius);
     }
-}'''
+}""",
     },
-    
-    'memento': {
-        'spring': '''// Spring Framework - Memento Pattern
+    "memento": {
+        "spring": """// Spring Framework - Memento Pattern
 public class Memento {
     private final String state;
     
@@ -604,8 +599,8 @@ public class Caretaker {
     public Memento get(int index) {
         return mementoList.get(index);
     }
-}''',
-        'dotnet': '''// .NET - Memento Pattern
+}""",
+        "dotnet": """// .NET - Memento Pattern
 public class Memento
 {
     public string State { get; }
@@ -654,11 +649,10 @@ public class Caretaker
     {
         return _mementoList[index];
     }
-}'''
+}""",
     },
-    
-    'state': {
-        'spring': '''// Spring Framework - State Pattern
+    "state": {
+        "spring": """// Spring Framework - State Pattern
 public interface State {
     void handle(Context context);
 }
@@ -708,8 +702,8 @@ public class Context {
     
     public State getStateA() { return stateA; }
     public State getStateB() { return stateB; }
-}''',
-        'dotnet': '''// .NET - State Pattern
+}""",
+        "dotnet": """// .NET - State Pattern
 public interface IState
 {
     void Handle(Context context);
@@ -746,11 +740,10 @@ public class Context
     {
         State.Handle(this);
     }
-}'''
+}""",
     },
-    
-    'visitor': {
-        'spring': '''// Spring Framework - Visitor Pattern
+    "visitor": {
+        "spring": """// Spring Framework - Visitor Pattern
 public interface Element {
     void accept(Visitor visitor);
 }
@@ -795,8 +788,8 @@ public class ConcreteVisitor implements Visitor {
     public void visit(ConcreteElementB element) {
         System.out.println("Visiting " + element.operationB());
     }
-}''',
-        'dotnet': '''// .NET - Visitor Pattern
+}""",
+        "dotnet": """// .NET - Visitor Pattern
 public interface IElement
 {
     void Accept(IVisitor visitor);
@@ -832,84 +825,98 @@ public class ConcreteVisitor : IVisitor
     {
         Console.WriteLine($"Visiting {element.OperationB()}");
     }
-}'''
-    }
+}""",
+    },
 }
+
 
 def add_framework_examples_to_readme(readme_path: Path, algorithm_name: str) -> bool:
     """Add framework examples to README."""
     try:
-        content = readme_path.read_text(encoding='utf-8')
-        
+        content = readme_path.read_text(encoding="utf-8")
+
         # Check if already has comprehensive examples
-        if "Spring Framework" in content and "```java" in content and "```csharp" in content:
+        if (
+            "Spring Framework" in content
+            and "```java" in content
+            and "```csharp" in content
+        ):
             return False
-        
+
         # Get examples
         examples = ADDITIONAL_FRAMEWORK_EXAMPLES.get(algorithm_name, {})
         if not examples:
             return False
-        
+
         # Build examples section
         examples_section = "\n\n## Examples of Implementation\n\n"
         examples_section += "This pattern is implemented in the following frameworks and technologies:\n\n"
-        
-        if 'spring' in examples:
+
+        if "spring" in examples:
             examples_section += "### Spring Framework\n\n"
-            examples_section += "```java\n" + examples['spring'] + "\n```\n\n"
+            examples_section += "```java\n" + examples["spring"] + "\n```\n\n"
             examples_section += "**Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.\n\n"
-        
-        if 'dotnet' in examples:
+
+        if "dotnet" in examples:
             examples_section += "### .NET Framework\n\n"
-            examples_section += "```csharp\n" + examples['dotnet'] + "\n```\n\n"
+            examples_section += "```csharp\n" + examples["dotnet"] + "\n```\n\n"
             examples_section += "**Purpose**: .NET Framework implements this pattern for service registration, dependency injection, and application architecture.\n\n"
-        
+
         # Insert before References or at end
         if "## References" in content:
-            content = content.replace("## References", examples_section + "\n## References")
+            content = content.replace(
+                "## References", examples_section + "\n## References"
+            )
         elif "## Examples of Implementation" in content:
             # Replace existing section
             pattern = r"## Examples of Implementation.*?(?=\n## |$)"
-            content = re.sub(pattern, examples_section.strip(), content, flags=re.DOTALL)
+            content = re.sub(
+                pattern, examples_section.strip(), content, flags=re.DOTALL
+            )
         else:
             content = content.rstrip() + "\n\n" + examples_section
-        
-        readme_path.write_text(content, encoding='utf-8')
+
+        readme_path.write_text(content, encoding="utf-8")
         return True
     except Exception as e:
         print(f"Error processing {readme_path}: {e}")
         return False
 
+
 def main():
     """Add framework examples to remaining patterns."""
     updated = 0
-    
+
     for algo_name in ADDITIONAL_FRAMEWORK_EXAMPLES.keys():
         for readme_path in ROOT.rglob(f"*/{algo_name}/README.md"):
             if add_framework_examples_to_readme(readme_path, algo_name):
                 updated += 1
-                print(f"[OK] Added framework examples to {readme_path.relative_to(ROOT)}")
-    
+                print(
+                    f"[OK] Added framework examples to {readme_path.relative_to(ROOT)}"
+                )
+
     # Check for variations
     variations = {
-        'composite_pattern': 'composite',
-        'facade_pattern': 'facade',
-        'template_method_pattern': 'template_method',
-        'chain_of_responsibility_pattern': 'chain_of_responsibility',
-        'bridge_pattern': 'bridge',
-        'memento_pattern': 'memento',
-        'state_pattern': 'state',
-        'visitor_pattern': 'visitor',
+        "composite_pattern": "composite",
+        "facade_pattern": "facade",
+        "template_method_pattern": "template_method",
+        "chain_of_responsibility_pattern": "chain_of_responsibility",
+        "bridge_pattern": "bridge",
+        "memento_pattern": "memento",
+        "state_pattern": "state",
+        "visitor_pattern": "visitor",
     }
-    
+
     for pattern_name, example_key in variations.items():
         for readme_path in ROOT.rglob(f"*/{pattern_name}/README.md"):
             if add_framework_examples_to_readme(readme_path, example_key):
                 updated += 1
-                print(f"[OK] Added framework examples to {readme_path.relative_to(ROOT)}")
-    
+                print(
+                    f"[OK] Added framework examples to {readme_path.relative_to(ROOT)}"
+                )
+
     print(f"\n[COMPLETE] Added framework examples to {updated} patterns")
+
 
 if __name__ == "__main__":
     main()
-

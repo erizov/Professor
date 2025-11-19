@@ -11,28 +11,26 @@ from typing import List, Optional, Dict, Set
 
 class HotStuff:
     """HotStuff consensus algorithm (simplified)."""
+
     def __init__(self):
         self.nodes: List[str] = []
         self.proposals: List[dict] = {}
         self.votes: Dict[str, Dict[str, bool]] = {}
-    
+
     def add_node(self, node_id: str) -> None:
         """Add node."""
         self.nodes.append(node_id)
-    
+
     def propose(self, proposal_id: str, value: any) -> None:
         """Propose value."""
-        self.proposals[proposal_id] = {
-            'value': value,
-            'votes': {}
-        }
+        self.proposals[proposal_id] = {"value": value, "votes": {}}
         self.votes[proposal_id] = {}
-    
+
     def vote(self, proposal_id: str, node_id: str, vote: bool) -> None:
         """Vote on proposal."""
         if proposal_id in self.votes:
             self.votes[proposal_id][node_id] = vote
-    
+
     def decide(self, proposal_id: str) -> bool:
         """Decide on proposal."""
         if proposal_id not in self.votes:
@@ -48,11 +46,11 @@ def main() -> None:
     print("=" * 70)
     print("HOTSTUFF")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Hotstuff")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

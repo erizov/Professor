@@ -54,7 +54,7 @@ public class Algorithm {
     public static int[] bubbleSortVisualized(int[] arr) {
         int n = arr.length;
         logger.info("Initial array: " + Arrays.toString(arr));
-        logger.info();
+        logger.info("");
         
         for (int i = 0; i < n; i++) {
             boolean swapped = false;
@@ -79,7 +79,7 @@ public class Algorithm {
                 logger.info("  No swaps in this pass. Array is sorted!");
                 break;
             }
-            logger.info();
+            logger.info("");
         }
         
         logger.info("Final sorted array: " + Arrays.toString(arr));
@@ -89,40 +89,41 @@ public class Algorithm {
     public static void main(String[] args) {
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        String separator = "=".repeat(70);
+        logger.info(separator);
         logger.info("BUBBLE SORT DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Basic sorting
         logger.info("Example 1: Basic Integer Sorting");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data1 = {64, 34, 25, 12, 22, 11, 90};
         logger.info("Original: " + Arrays.toString(data1));
         int[] result1 = bubbleSort(data1.clone());
         logger.info("Sorted:   " + Arrays.toString(result1));
-        logger.info();
+        logger.info("");
         
         // Example 2: Already sorted
         logger.info("Example 2: Already Sorted Array");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data2 = {1, 2, 3, 4, 5, 6, 7};
         logger.info("Original: " + Arrays.toString(data2));
         int[] result2 = bubbleSort(data2.clone());
         logger.info("Sorted:   " + Arrays.toString(result2));
         logger.info("Note: O(n) with early termination!");
-        logger.info();
+        logger.info("");
         
         // Example 3: Visualization
         logger.info("Example 3: Visualized Bubble Sort Process");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data3 = {5, 2, 8, 1, 9};
         bubbleSortVisualized(data3.clone());
-        logger.info();
+        logger.info("");
         
         // Example 4: Performance
         logger.info("Example 4: Performance Measurement");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         Random rand = new Random(42);
         
@@ -139,8 +140,8 @@ public class Algorithm {
         
         long endTime = System.nanoTime();
         
-        logger.info();
-        logger.info("=".repeat(70));
+        logger.info("");
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Time:  O(n²) - average and worst");
         logger.info("         O(n) - best case (optimized)");
@@ -150,7 +151,7 @@ public class Algorithm {
         logger.info("  - Simple to understand");
         logger.info("  - Adaptive");
         logger.info("  - In-place");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

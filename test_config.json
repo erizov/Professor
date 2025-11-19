@@ -1,0 +1,28 @@
+{
+  "python": {
+    "short_timeout": 30,
+    "long_timeout": 300
+  },
+  "java": {
+    "short_timeout": 60,
+    "long_timeout": 600
+  },
+  "long_running_keywords": [
+    "quantum",
+    "distributed",
+    "training",
+    "inference",
+    "optimization",
+    "simulation",
+    "benchmark",
+    "performance",
+    "mlops",
+    "pipeline",
+    "parallel",
+    "concurrent",
+    "federated",
+    "reinforcement"
+  ]
+}
+
+

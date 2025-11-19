@@ -210,16 +210,18 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("STRATEGY DESIGN PATTERN DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Sorting Strategies
         logger.info("Example 1: Sorting Strategies");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         List<Integer> data = Arrays.asList(64, 34, 25, 12, 22, 11, 90);
         logger.info("Original data: " + data);
@@ -237,11 +239,11 @@ public class Algorithm {
             List<Integer> sorted = sorter.sort(data);
             logger.info(strategy.getName() + ": " + sorted);
         }
-        logger.info();
+        logger.info("");
         
         // Example 2: Payment Strategies
         logger.info("Example 2: Payment Strategies");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         ShoppingCart cart = new ShoppingCart();
         cart.addItem("Laptop", 999.99);
@@ -256,12 +258,12 @@ public class Algorithm {
         for (PaymentStrategy payment : payments) {
             cart.setPaymentStrategy(payment);
             cart.checkout();
-            logger.info();
+            logger.info("");
         }
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern Summary:");
         logger.info("\nKey Advantages:");
         logger.info("  - Algorithms interchangeable at runtime");
@@ -270,7 +272,7 @@ public class Algorithm {
         logger.info("\nWhen to Use:");
         logger.info("  - Multiple ways to perform task");
         logger.info("  - Want to avoid conditionals");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

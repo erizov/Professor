@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("OBJECT DETECTION")
     print("=" * 70)
-    
+
     print("Algorithm implementation for Object Detection")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

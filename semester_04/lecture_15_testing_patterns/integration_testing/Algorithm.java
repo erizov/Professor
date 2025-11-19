@@ -197,7 +197,7 @@ class TestRunner {
     
     void printResults() {
         logger.info("Integration Test Results:");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         long passed = results.stream().filter(r -> r.passed).count();
         long total = results.size();
@@ -211,9 +211,9 @@ class TestRunner {
             System.out.printf("  Time: %.2f ms%n", result.executionTime);
         }
         
-        logger.info("-".repeat(70));
+        logger.info(dash);
         System.out.printf("Total: %d/%d passed%n", passed, total);
-        logger.info();
+        logger.info("");
     }
 }
 
@@ -222,16 +222,18 @@ public class Algorithm {
 
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("INTEGRATION TESTING PATTERN DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Database Integration Test
         logger.info("Example 1: Database Integration Test");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         DatabaseIntegrationTest dbTest = new DatabaseIntegrationTest();
         TestResult result = dbTest.run();
@@ -239,22 +241,22 @@ public class Algorithm {
         System.out.printf("Test: %s%n", result.testName);
         System.out.printf("Result: %s%n", result.passed ? "PASSED" : "FAILED");
         System.out.printf("Message: %s%n", result.message);
-        logger.info();
+        logger.info("");
         
         // Example 2: API Integration Test
         logger.info("Example 2: API Integration Test");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         APIIntegrationTest apiTest = new APIIntegrationTest();
         result = apiTest.run();
         
         System.out.printf("Test: %s%n", result.testName);
         System.out.printf("Result: %s%n", result.passed ? "PASSED" : "FAILED");
-        logger.info();
+        logger.info("");
         
         // Example 3: Test Suite
         logger.info("Example 3: Integration Test Suite");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         TestRunner runner = new TestRunner();
         runner.addTest(new DatabaseIntegrationTest());
@@ -265,7 +267,7 @@ public class Algorithm {
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern Summary:");
         logger.info("\nIntent:");
         logger.info("  Tests the integration between different components,");
@@ -280,7 +282,7 @@ public class Algorithm {
         logger.info("  - API integration");
         logger.info("  - Database integration");
         logger.info("  - End-to-end workflows");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

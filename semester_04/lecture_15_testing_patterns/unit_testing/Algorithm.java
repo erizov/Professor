@@ -87,12 +87,12 @@ class TestCalculator {
     
     void runAllTests() {
         logger.info("Running unit tests...");
-        logger.info();
+        logger.info("");
         testAdd();
         testSubtract();
         testMultiply();
         testDivide();
-        logger.info();
+        logger.info("");
         System.out.printf("Tests passed: %d%n", testsPassed);
         System.out.printf("Tests failed: %d%n", testsFailed);
         System.out.printf("Total: %d%n", testsPassed + testsFailed);
@@ -184,12 +184,12 @@ class UserServiceTest {
     
     void runAllTests() {
         logger.info("Running UserService unit tests...");
-        logger.info();
+        logger.info("");
         testCreateUser();
         testCreateUserInvalid();
         testGetUser();
         testGetUserNotFound();
-        logger.info();
+        logger.info("");
         System.out.printf("Tests passed: %d%n", testsPassed);
         System.out.printf("Tests failed: %d%n", testsFailed);
     }
@@ -200,32 +200,34 @@ public class Algorithm {
 
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("UNIT TESTING PATTERN DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Manual Unit Tests
         logger.info("Example 1: Manual Unit Tests");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         TestCalculator testSuite = new TestCalculator();
         testSuite.runAllTests();
-        logger.info();
+        logger.info("");
         
         // Example 2: User Service Tests
         logger.info("Example 2: User Service Unit Tests");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         UserServiceTest userTest = new UserServiceTest();
         userTest.runAllTests();
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern Summary:");
         logger.info("\nIntent:");
         logger.info("  Test individual units of code (functions, methods, classes)");
@@ -240,7 +242,7 @@ public class Algorithm {
         logger.info("  - Critical business logic");
         logger.info("  - Complex algorithms");
         logger.info("  - API endpoints");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

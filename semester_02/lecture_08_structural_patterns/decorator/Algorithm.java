@@ -153,16 +153,18 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("DECORATOR DESIGN PATTERN DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Coffee
         logger.info("Example 1: Coffee Ordering System");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         Coffee coffee = new SimpleCoffee();
         System.out.printf("%s: $%.2f%n", 
@@ -183,11 +185,11 @@ public class Algorithm {
         System.out.printf("%s: $%.2f%n",
                         fancyCoffee.getDescription(),
                         fancyCoffee.getCost());
-        logger.info();
+        logger.info("");
         
         // Example 2: Text formatting
         logger.info("Example 2: Text Formatting");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         String text = "Hello, World!";
         
@@ -206,11 +208,11 @@ public class Algorithm {
             new BoldDecorator(new PlainText())
         );
         logger.info("Underline + Bold: " + formatted.process(text));
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern Summary:");
         logger.info("\nKey Advantages:");
         logger.info("  - Add behavior dynamically");
@@ -219,7 +221,7 @@ public class Algorithm {
         logger.info("\nWhen to Use:");
         logger.info("  - Add responsibilities dynamically");
         logger.info("  - Avoid feature explosion");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

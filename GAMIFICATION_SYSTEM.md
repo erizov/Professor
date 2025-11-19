@@ -4,6 +4,13 @@
 **Purpose**: Increase student motivation and engagement through game-like elements, achievements, and progress tracking.
 
 ---
+---
+
+## Motivation and Engagement Through Game Elements
+
+**Purpose**: Increase student motivation and engagement through game-like elements, achievements, and progress tracking.
+
+---
 
 ## Achievement Badges
 
@@ -338,4 +345,3 @@ Course: ████████████████░░░░ 78/600 algo
 ---
 
 *Remember: Gamification should enhance learning, not replace it. The goal is to make learning more engaging and motivating.*
-

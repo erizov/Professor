@@ -10,6 +10,18 @@
 This guide helps you choose the right learning path based on your goals, time availability, and career objectives.
 
 ---
+---
+
+> **📚 This document is part of the comprehensive course materials.**  
+> For the complete textbook, see: [COMPREHENSIVE_COURSE_TEXTBOOK.md](../COMPREHENSIVE_COURSE_TEXTBOOK.md)  
+> This content is also included in the textbook as Appendix: Learning Paths.
+
+--- Guide
+## Choose Your Path Through the 16-Semester Algorithms Course
+
+This guide helps you choose the right learning path based on your goals, time availability, and career objectives.
+
+---
 
 ## 🎯 Quick Path Selector
 
@@ -316,4 +328,3 @@ Current Week: 3 of 4
 ---
 
 *Last Updated: Current*
-

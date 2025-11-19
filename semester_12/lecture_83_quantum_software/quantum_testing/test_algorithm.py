@@ -17,57 +17,61 @@ from tests.test_framework_setup import AlgorithmTestCase
 
 class TestQuantumtesting(AlgorithmTestCase):
     """Test Quantum Testing implementation."""
-    
+
     def setUp(self):
         """Set up test fixtures."""
-        from semester_12.lecture_83_quantum_software.quantum_testing.algorithm import quantum_testing
+        from semester_12.lecture_83_quantum_software.quantum_testing.algorithm import (
+            quantum_testing,
+        )
+
         self.algorithm = quantum_testing
-    
+
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
         # TODO: Implement specific test based on algorithm
         pass
-    
+
     def test_empty_input(self):
         """Test with empty input."""
         # TODO: Test edge case
         pass
-    
+
     def test_single_element(self):
         """Test with single element."""
         # TODO: Test edge case
         pass
-    
+
     def test_empty_input(self):
         """Test with empty input."""
         # TODO: Test edge case
         pass
-    
+
     def test_single_element(self):
         """Test with single element."""
         # TODO: Test edge case
         pass
-    
+
     def test_already_sorted(self):
         """Test with already sorted input."""
         # TODO: Test edge case
         pass
-    
+
     def test_reverse_sorted(self):
         """Test with reverse sorted input."""
         # TODO: Test edge case
         pass
-    
+
     def test_duplicates(self):
         """Test with duplicate elements."""
         # TODO: Test edge case
         pass
-    
+
     def test_performance(self):
         """Test algorithm performance."""
         # TODO: Add performance test
         # self.assert_performance(lambda: self.algorithm([...]), max_time_seconds=1.0)
         pass
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

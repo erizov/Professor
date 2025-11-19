@@ -132,16 +132,18 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("BELLMAN-FORD ALGORITHM DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Basic shortest path
         logger.info("Example 1: Basic Shortest Path");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         Graph g1 = new Graph(5, true);
         g1.addEdge(0, 1, -1.0);
@@ -171,11 +173,11 @@ public class Algorithm {
         
         logger.info("\nNegative cycle detected: " + 
                          result.hasNegativeCycle);
-        logger.info();
+        logger.info("");
         
         // Example 2: Path reconstruction
         logger.info("Example 2: Path Reconstruction");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         List<Integer> path = g1.shortestPath(0, 3);
         if (path != null) {
@@ -185,11 +187,11 @@ public class Algorithm {
                                   .reduce((a, b) -> a + " → " + b)
                                   .orElse(""));
         }
-        logger.info();
+        logger.info("");
         
         // Example 3: Negative cycle detection
         logger.info("Example 3: Negative Cycle Detection");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         Graph g2 = new Graph(4, true);
         g2.addEdge(0, 1, 1.0);
@@ -204,18 +206,18 @@ public class Algorithm {
         if (result2.hasNegativeCycle) {
             logger.info("⚠️  Warning: Graph contains negative cycle!");
         }
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Time:  O(V * E)");
         logger.info("  Space: O(V)");
         logger.info("\nKey Advantages:");
         logger.info("  - Works with negative weights");
         logger.info("  - Detects negative cycles");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

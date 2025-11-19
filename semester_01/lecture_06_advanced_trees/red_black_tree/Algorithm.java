@@ -173,7 +173,7 @@ public class Algorithm {
         
         void printInorder() {
             printInorderHelper(root);
-            logger.info();
+            logger.info("");
         }
         
         private void printInorderHelper(RBNode node) {
@@ -200,16 +200,18 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("RED-BLACK TREE DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1
         logger.info("Example 1: Basic Insert and Search");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         RedBlackTree tree = new RedBlackTree();
         int[] keys = {7, 3, 18, 10, 22, 8, 11, 26};
         
@@ -227,11 +229,11 @@ public class Algorithm {
         
         logger.info("Search for 10: " + tree.search(10));
         logger.info("Search for 15: " + tree.search(15));
-        logger.info();
+        logger.info("");
         
         // Example 2
         logger.info("Example 2: Sequential Insertion");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         RedBlackTree tree2 = new RedBlackTree();
         logger.info("Inserting 1 through 10...");
         for (int i = 1; i <= 10; i++) {
@@ -242,18 +244,18 @@ public class Algorithm {
         tree2.printTree();
         System.out.print("Inorder: ");
         tree2.printInorder();
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Time:  O(log n)");
         logger.info("  Space: O(n)");
         logger.info("\nKey Advantages:");
         logger.info("  - Guaranteed O(log n)");
         logger.info("  - Fewer rotations than AVL");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

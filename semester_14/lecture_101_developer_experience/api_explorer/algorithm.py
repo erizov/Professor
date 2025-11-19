@@ -11,27 +11,24 @@ from typing import List, Optional, Dict, Set
 
 class APIExplorer:
     """API explorer tool."""
+
     def __init__(self):
         self.apis: Dict[str, dict] = {}
         self.discovered: List[dict] = {}
-    
+
     def discover_api(self, base_url: str) -> List[dict]:
         """Discover API endpoints."""
         # Simplified discovery
         endpoints = [
-            {'path': '/api/v1/users', 'method': 'GET'},
-            {'path': '/api/v1/users', 'method': 'POST'}
+            {"path": "/api/v1/users", "method": "GET"},
+            {"path": "/api/v1/users", "method": "POST"},
         ]
         self.discovered.extend(endpoints)
         return endpoints
-    
-    def test_endpoint(self, method: str, path: str, 
-                     params: dict = None) -> dict:
+
+    def test_endpoint(self, method: str, path: str, params: dict = None) -> dict:
         """Test API endpoint."""
-        return {
-            'status': 200,
-            'response': {'data': 'test'}
-        }
+        return {"status": 200, "response": {"data": "test"}}
 
 
 def main() -> None:
@@ -39,11 +36,11 @@ def main() -> None:
     print("=" * 70)
     print("API EXPLORER")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Api Explorer")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

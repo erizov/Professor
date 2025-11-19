@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("NOSQL")
     print("=" * 70)
-    
+
     print("Algorithm implementation for NoSQL")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

@@ -12,8 +12,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 # Framework examples by algorithm category
 FRAMEWORK_EXAMPLES = {
-    'singleton': {
-        'spring': '''// Spring Framework - Singleton Bean
+    "singleton": {
+        "spring": """// Spring Framework - Singleton Bean
 @Component
 @Scope("singleton")  // Default scope
 public class DatabaseConnection {
@@ -31,8 +31,8 @@ public class DatabaseConnection {
 
 // Usage in Spring
 @Autowired
-private DatabaseConnection dbConnection;''',
-        'dotnet': '''// .NET - Singleton Service
+private DatabaseConnection dbConnection;""",
+        "dotnet": """// .NET - Singleton Service
 public class DatabaseConnection
 {
     private static DatabaseConnection _instance;
@@ -57,8 +57,8 @@ public class DatabaseConnection
 }
 
 // .NET Core DI
-services.AddSingleton<DatabaseConnection>();''',
-        'docker': '''# Docker - Single Container Instance
+services.AddSingleton<DatabaseConnection>();""",
+        "docker": """# Docker - Single Container Instance
 # docker-compose.yml
 version: '3.8'
 services:
@@ -71,11 +71,10 @@ services:
       POSTGRES_DB: mydb
     # Only one instance should run
     deploy:
-      replicas: 1'''
+      replicas: 1""",
     },
-    
-    'factory': {
-        'spring': '''// Spring Framework - Factory Pattern
+    "factory": {
+        "spring": """// Spring Framework - Factory Pattern
 @Component
 public class PaymentProcessorFactory {
     
@@ -94,8 +93,8 @@ public class PaymentProcessorFactory {
 @Autowired
 private PaymentProcessorFactory factory;
 
-PaymentProcessor processor = factory.getProcessor("credit_card");''',
-        'dotnet': '''// .NET - Factory Pattern
+PaymentProcessor processor = factory.getProcessor("credit_card");""",
+        "dotnet": """// .NET - Factory Pattern
 public interface IPaymentProcessor
 {
     void ProcessPayment(decimal amount);
@@ -115,8 +114,8 @@ public class PaymentProcessorFactory
 }
 
 // .NET Core DI
-services.AddTransient<PaymentProcessorFactory>();''',
-        'kubernetes': '''# Kubernetes - Factory Pattern for Pod Creation
+services.AddTransient<PaymentProcessorFactory>();""",
+        "kubernetes": """# Kubernetes - Factory Pattern for Pod Creation
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -140,11 +139,10 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: processor-config
-              key: processor-type'''
+              key: processor-type""",
     },
-    
-    'observer': {
-        'spring': '''// Spring Framework - Observer Pattern (Event Listener)
+    "observer": {
+        "spring": """// Spring Framework - Observer Pattern (Event Listener)
 @Component
 public class OrderService {
     
@@ -165,8 +163,8 @@ public class EmailNotificationListener {
         // Send email notification
         System.out.println("Sending email for order: " + event.getOrder().getId());
     }
-}''',
-        'dotnet': '''// .NET - Observer Pattern (Events)
+}""",
+        "dotnet": """// .NET - Observer Pattern (Events)
 public class OrderService
 {
     public event EventHandler<OrderCreatedEventArgs> OrderCreated;
@@ -194,8 +192,8 @@ public class EmailNotificationService
     {
         Console.WriteLine($"Sending email for order: {e.Order.Id}");
     }
-}''',
-        'kafka': '''# Apache Kafka - Observer Pattern (Pub/Sub)
+}""",
+        "kafka": """# Apache Kafka - Observer Pattern (Pub/Sub)
 # Producer
 from kafka import KafkaProducer
 
@@ -214,11 +212,10 @@ for message in consumer:
 consumer2 = KafkaConsumer('order-events', bootstrap_servers='localhost:9092')
 for message in consumer2:
     order_data = json.loads(message.value)
-    update_inventory(order_data)'''
+    update_inventory(order_data)""",
     },
-    
-    'caching': {
-        'spring': '''// Spring Framework - Caching
+    "caching": {
+        "spring": """// Spring Framework - Caching
 @Service
 public class ProductService {
     
@@ -242,8 +239,8 @@ public class CacheConfig {
     public CacheManager cacheManager() {
         return new ConcurrentMapCacheManager("products");
     }
-}''',
-        'dotnet': '''// .NET - Caching
+}""",
+        "dotnet": """// .NET - Caching
 public class ProductService
 {
     private readonly IMemoryCache _cache;
@@ -265,8 +262,8 @@ public class ProductService
 
 // Startup.cs
 services.AddMemoryCache();
-services.AddScoped<ProductService>();''',
-        'redis': '''# Redis - Distributed Caching
+services.AddScoped<ProductService>();""",
+        "redis": """# Redis - Distributed Caching
 import redis
 import json
 
@@ -283,11 +280,10 @@ def get_product(product_id):
     
     # Cache for 5 minutes
     r.setex(f"product:{product_id}", 300, json.dumps(product))
-    return product'''
+    return product""",
     },
-    
-    'load_balancing': {
-        'nginx': '''# Nginx - Load Balancing
+    "load_balancing": {
+        "nginx": """# Nginx - Load Balancing
 upstream backend {
     least_conn;  # Load balancing algorithm
     server backend1.example.com;
@@ -303,8 +299,8 @@ server {
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
     }
-}''',
-        'kubernetes': '''# Kubernetes - Load Balancing (Service)
+}""",
+        "kubernetes": """# Kubernetes - Load Balancing (Service)
 apiVersion: v1
 kind: Service
 metadata:
@@ -336,8 +332,8 @@ spec:
       - name: backend
         image: backend:latest
         ports:
-        - containerPort: 8080''',
-        'docker': '''# Docker Swarm - Load Balancing
+        - containerPort: 8080""",
+        "docker": """# Docker Swarm - Load Balancing
 docker service create \\
   --name backend \\
   --replicas 3 \\
@@ -345,34 +341,37 @@ docker service create \\
   backend:latest
 
 # Docker Swarm automatically load balances across replicas
-# Access via: http://localhost (load balanced across 3 containers)'''
-    }
+# Access via: http://localhost (load balanced across 3 containers)""",
+    },
 }
+
 
 def add_framework_examples_to_readme(readme_path: Path, algorithm_name: str) -> bool:
     """Add framework examples to README."""
     try:
-        content = readme_path.read_text(encoding='utf-8')
-        
+        content = readme_path.read_text(encoding="utf-8")
+
         # Check if examples section exists (try different variations)
         has_examples_section = (
-            "## Examples of Implementation" in content or
-            "## Examples" in content or
-            "### Examples" in content
+            "## Examples of Implementation" in content
+            or "## Examples" in content
+            or "### Examples" in content
         )
-        
+
         if not has_examples_section:
             # Add examples section before References or at end
             examples_section = "\n\n## Examples of Implementation\n\n"
             if "## References" in content:
-                content = content.replace("## References", examples_section + "## References")
+                content = content.replace(
+                    "## References", examples_section + "## References"
+                )
             else:
                 content = content.rstrip() + examples_section
-        
+
         # Check if already has framework examples
         if "Spring Framework" in content and "```java" in content:
             return False
-        
+
         # Get examples for this algorithm (try exact match, then partial)
         examples = FRAMEWORK_EXAMPLES.get(algorithm_name, {})
         if not examples:
@@ -381,87 +380,94 @@ def add_framework_examples_to_readme(readme_path: Path, algorithm_name: str) -> 
                 if key in algorithm_name or algorithm_name in key:
                     examples = ex
                     break
-        
+
         if not examples:
             return False
-        
+
         # Build examples section
         examples_section = "\n\n### Spring Framework\n\n"
-        if 'spring' in examples:
-            examples_section += "```java\n" + examples['spring'] + "\n```\n\n"
+        if "spring" in examples:
+            examples_section += "```java\n" + examples["spring"] + "\n```\n\n"
             examples_section += "**Purpose**: Spring Framework uses this pattern for dependency injection, bean management, and enterprise application development.\n\n"
-        
+
         examples_section += "### .NET Framework\n\n"
-        if 'dotnet' in examples:
-            examples_section += "```csharp\n" + examples['dotnet'] + "\n```\n\n"
+        if "dotnet" in examples:
+            examples_section += "```csharp\n" + examples["dotnet"] + "\n```\n\n"
             examples_section += "**Purpose**: .NET Framework implements this pattern for service registration, dependency injection, and application architecture.\n\n"
-        
-        if 'docker' in examples:
+
+        if "docker" in examples:
             examples_section += "### Docker\n\n"
-            examples_section += "```yaml\n" + examples['docker'] + "\n```\n\n"
+            examples_section += "```yaml\n" + examples["docker"] + "\n```\n\n"
             examples_section += "**Purpose**: Docker uses this pattern for container orchestration and service management.\n\n"
-        
-        if 'kubernetes' in examples:
+
+        if "kubernetes" in examples:
             examples_section += "### Kubernetes\n\n"
-            examples_section += "```yaml\n" + examples['kubernetes'] + "\n```\n\n"
+            examples_section += "```yaml\n" + examples["kubernetes"] + "\n```\n\n"
             examples_section += "**Purpose**: Kubernetes implements this pattern for pod management, service discovery, and orchestration.\n\n"
-        
-        if 'kafka' in examples:
+
+        if "kafka" in examples:
             examples_section += "### Apache Kafka\n\n"
-            examples_section += "```python\n" + examples['kafka'] + "\n```\n\n"
+            examples_section += "```python\n" + examples["kafka"] + "\n```\n\n"
             examples_section += "**Purpose**: Kafka uses this pattern for event streaming, pub/sub messaging, and distributed systems.\n\n"
-        
+
         # Insert before "## References" or at end
         if "## References" in content:
-            content = content.replace("## References", examples_section + "\n## References")
+            content = content.replace(
+                "## References", examples_section + "\n## References"
+            )
         else:
             content = content.rstrip() + "\n\n" + examples_section
-        
-        readme_path.write_text(content, encoding='utf-8')
+
+        readme_path.write_text(content, encoding="utf-8")
         return True
     except Exception as e:
         print(f"Error processing {readme_path}: {e}")
         return False
 
+
 def main():
     """Add framework examples to all relevant algorithms."""
     updated = 0
-    
+
     # Process algorithms that have framework examples
     for algo_name in FRAMEWORK_EXAMPLES.keys():
         for readme_path in ROOT.rglob(f"*/{algo_name}/README.md"):
             if add_framework_examples_to_readme(readme_path, algo_name):
                 updated += 1
-                print(f"[OK] Added framework examples to {readme_path.relative_to(ROOT)}")
-    
+                print(
+                    f"[OK] Added framework examples to {readme_path.relative_to(ROOT)}"
+                )
+
     # Also add to common patterns and algorithms
     common_patterns = {
-        'caching': 'caching',
-        'load_balancing': 'load_balancing',
-        'rate_limiting': 'rate_limiting',
-        'circuit_breaker': 'circuit_breaker',
-        'retry_pattern': 'retry_pattern',
-        'blue_green': 'blue_green',
-        'canary': 'canary',
-        'observer': 'observer',
-        'factory': 'factory',
-        'abstract_factory': 'factory',
-        'strategy': 'strategy',
-        'adapter': 'adapter',
-        'decorator': 'decorator',
-        'proxy': 'proxy',
-        'command': 'command',
-        'iterator': 'iterator',
+        "caching": "caching",
+        "load_balancing": "load_balancing",
+        "rate_limiting": "rate_limiting",
+        "circuit_breaker": "circuit_breaker",
+        "retry_pattern": "retry_pattern",
+        "blue_green": "blue_green",
+        "canary": "canary",
+        "observer": "observer",
+        "factory": "factory",
+        "abstract_factory": "factory",
+        "strategy": "strategy",
+        "adapter": "adapter",
+        "decorator": "decorator",
+        "proxy": "proxy",
+        "command": "command",
+        "iterator": "iterator",
     }
-    
+
     for pattern_name, example_key in common_patterns.items():
         for readme_path in ROOT.rglob(f"*/{pattern_name}/README.md"):
             if add_framework_examples_to_readme(readme_path, example_key):
                 updated += 1
-                print(f"[OK] Added framework examples to {readme_path.relative_to(ROOT)}")
-    
+                print(
+                    f"[OK] Added framework examples to {readme_path.relative_to(ROOT)}"
+                )
+
     print(f"\n[COMPLETE] Added framework examples to {updated} algorithms")
+
 
 if __name__ == "__main__":
     main()
-

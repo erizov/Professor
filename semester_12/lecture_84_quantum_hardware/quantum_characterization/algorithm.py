@@ -11,20 +11,21 @@ from typing import List, Optional, Dict, Set
 
 class QuantumCharacterization:
     """Quantum system characterization."""
+
     def __init__(self):
         self.measurements: List[dict] = {}
         self.properties: Dict[str, float] = {}
-    
+
     def measure(self, observable: str, state: List[complex]) -> float:
         """Measure quantum observable."""
         return abs(sum(state)) ** 2
-    
+
     def characterize(self, system: dict) -> dict:
         """Characterize quantum system."""
         return {
-            'coherence_time': 100.0,
-            'gate_fidelity': 0.99,
-            'readout_fidelity': 0.95
+            "coherence_time": 100.0,
+            "gate_fidelity": 0.99,
+            "readout_fidelity": 0.95,
         }
 
 
@@ -33,11 +34,11 @@ def main() -> None:
     print("=" * 70)
     print("QUANTUM CHARACTERIZATION")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Quantum Characterization")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

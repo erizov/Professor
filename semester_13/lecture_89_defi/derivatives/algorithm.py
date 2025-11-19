@@ -9,10 +9,10 @@ This file contains the implementation of the Derivatives algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def numerical_derivative(f: callable, x: float, 
-                        h: float = 1e-5) -> float:
+def numerical_derivative(f: callable, x: float, h: float = 1e-5) -> float:
     """Calculate numerical derivative."""
     return (f(x + h) - f(x - h)) / (2 * h)
+
 
 def gradient(f: callable, x: List[float], h: float = 1e-5) -> List[float]:
     """Calculate gradient."""
@@ -24,6 +24,7 @@ def gradient(f: callable, x: List[float], h: float = 1e-5) -> List[float]:
         x_minus[i] -= h
         grad.append((f(x_plus) - f(x_minus)) / (2 * h))
     return grad
+
 
 def hessian(f: callable, x: List[float], h: float = 1e-5) -> List[List[float]]:
     """Calculate Hessian matrix."""
@@ -47,11 +48,11 @@ def main() -> None:
     print("=" * 70)
     print("DERIVATIVES")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Derivatives")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

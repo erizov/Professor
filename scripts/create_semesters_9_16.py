@@ -30,7 +30,7 @@ SEMESTER_9_LECTURES = {
             "real_time_systems",
             "os_security_models",
             "container_runtimes",
-        ]
+        ],
     },
     "lecture_56_os_performance": {
         "title": "OS Performance Optimization",
@@ -41,7 +41,7 @@ SEMESTER_9_LECTURES = {
             "cache_optimization",
             "kernel_tuning",
             "performance_profiling",
-        ]
+        ],
     },
     "lecture_57_concurrency_advanced": {
         "title": "Advanced Concurrency",
@@ -52,7 +52,7 @@ SEMESTER_9_LECTURES = {
             "actor_model",
             "csp_model",
             "concurrent_data_structures",
-        ]
+        ],
     },
     "lecture_58_parallel_computing": {
         "title": "Parallel Computing",
@@ -63,7 +63,7 @@ SEMESTER_9_LECTURES = {
             "simd_optimization",
             "parallel_reduction",
             "parallel_prefix",
-        ]
+        ],
     },
     "lecture_59_distributed_systems_advanced": {
         "title": "Advanced Distributed Systems",
@@ -74,7 +74,7 @@ SEMESTER_9_LECTURES = {
             "vector_clocks",
             "crdt",
             "eventual_consistency",
-        ]
+        ],
     },
     "lecture_60_system_design_advanced": {
         "title": "Advanced System Design",
@@ -85,7 +85,7 @@ SEMESTER_9_LECTURES = {
             "event_driven_architecture",
             "cqrs_advanced",
             "event_sourcing_advanced",
-        ]
+        ],
     },
     "lecture_61_cloud_native": {
         "title": "Cloud Native Systems",
@@ -96,7 +96,7 @@ SEMESTER_9_LECTURES = {
             "service_discovery",
             "config_management",
             "secrets_management",
-        ]
+        ],
     },
     "lecture_62_observability_advanced": {
         "title": "Advanced Observability",
@@ -107,7 +107,7 @@ SEMESTER_9_LECTURES = {
             "apm",
             "synthetic_monitoring",
             "chaos_engineering_advanced",
-        ]
+        ],
     },
 }
 
@@ -122,7 +122,7 @@ SEMESTER_10_LECTURES = {
             "zero_shot_learning",
             "continual_learning",
             "lifelong_learning",
-        ]
+        ],
     },
     "lecture_64_llm_architecture_advanced": {
         "title": "Advanced LLM Architecture",
@@ -133,7 +133,7 @@ SEMESTER_10_LECTURES = {
             "long_context_models",
             "multimodal_llms",
             "llm_compression",
-        ]
+        ],
     },
     "lecture_65_llm_training_advanced": {
         "title": "Advanced LLM Training",
@@ -144,7 +144,7 @@ SEMESTER_10_LECTURES = {
             "model_parallelism",
             "pipeline_parallelism",
             "tensor_parallelism",
-        ]
+        ],
     },
     "lecture_66_llm_inference": {
         "title": "LLM Inference Optimization",
@@ -155,7 +155,7 @@ SEMESTER_10_LECTURES = {
             "continuous_batching",
             "quantization_inference",
             "pruning_inference",
-        ]
+        ],
     },
     "lecture_67_rag_advanced": {
         "title": "Advanced RAG Systems",
@@ -166,7 +166,7 @@ SEMESTER_10_LECTURES = {
             "context_compression",
             "multi_hop_rag",
             "agentic_rag",
-        ]
+        ],
     },
     "lecture_68_llm_evaluation": {
         "title": "LLM Evaluation & Benchmarking",
@@ -177,7 +177,7 @@ SEMESTER_10_LECTURES = {
             "adversarial_testing",
             "bias_detection",
             "safety_evaluation",
-        ]
+        ],
     },
     "lecture_69_ai_ethics": {
         "title": "AI Ethics & Safety",
@@ -188,7 +188,7 @@ SEMESTER_10_LECTURES = {
             "interpretability",
             "adversarial_robustness",
             "ai_safety",
-        ]
+        ],
     },
     "lecture_70_ai_governance": {
         "title": "AI Governance & Compliance",
@@ -199,7 +199,7 @@ SEMESTER_10_LECTURES = {
             "audit_trails",
             "model_registry",
             "risk_assessment",
-        ]
+        ],
     },
 }
 
@@ -214,7 +214,7 @@ SEMESTER_11_LECTURES = {
             "pipeline_templates",
             "dynamic_pipelines",
             "pipeline_optimization",
-        ]
+        ],
     },
     "lecture_72_infrastructure_advanced": {
         "title": "Advanced Infrastructure",
@@ -225,7 +225,7 @@ SEMESTER_11_LECTURES = {
             "hybrid_cloud",
             "infrastructure_monitoring",
             "cost_optimization",
-        ]
+        ],
     },
     "lecture_73_security_devops": {
         "title": "DevSecOps",
@@ -236,7 +236,7 @@ SEMESTER_11_LECTURES = {
             "compliance_automation",
             "security_testing",
             "threat_modeling",
-        ]
+        ],
     },
     "lecture_74_automation_advanced": {
         "title": "Advanced Automation",
@@ -247,7 +247,7 @@ SEMESTER_11_LECTURES = {
             "automated_remediation",
             "intelligent_automation",
             "workflow_automation",
-        ]
+        ],
     },
     "lecture_75_gitops_advanced": {
         "title": "Advanced GitOps",
@@ -258,7 +258,7 @@ SEMESTER_11_LECTURES = {
             "feature_management",
             "environment_management",
             "gitops_security",
-        ]
+        ],
     },
     "lecture_76_platform_engineering": {
         "title": "Platform Engineering",
@@ -269,7 +269,7 @@ SEMESTER_11_LECTURES = {
             "platform_abstraction",
             "developer_portals",
             "platform_metrics",
-        ]
+        ],
     },
     "lecture_77_chaos_engineering_advanced": {
         "title": "Advanced Chaos Engineering",
@@ -280,7 +280,7 @@ SEMESTER_11_LECTURES = {
             "chaos_automation",
             "chaos_metrics",
             "game_day_exercises",
-        ]
+        ],
     },
     "lecture_78_observability_platform": {
         "title": "Observability Platforms",
@@ -291,7 +291,7 @@ SEMESTER_11_LECTURES = {
             "anomaly_detection",
             "root_cause_analysis",
             "incident_management",
-        ]
+        ],
     },
 }
 
@@ -306,7 +306,7 @@ SEMESTER_12_LECTURES = {
             "quantum_cryptography",
             "quantum_error_correction",
             "quantum_teleportation",
-        ]
+        ],
     },
     "lecture_80_quantum_computing_advanced": {
         "title": "Advanced Quantum Computing",
@@ -317,7 +317,7 @@ SEMESTER_12_LECTURES = {
             "quantum_benchmarking",
             "quantum_architectures",
             "quantum_networking",
-        ]
+        ],
     },
     "lecture_81_quantum_applications": {
         "title": "Quantum Applications",
@@ -328,7 +328,7 @@ SEMESTER_12_LECTURES = {
             "quantum_ai",
             "quantum_database",
             "quantum_search",
-        ]
+        ],
     },
     "lecture_82_hybrid_quantum": {
         "title": "Hybrid Quantum-Classical",
@@ -339,7 +339,7 @@ SEMESTER_12_LECTURES = {
             "quantum_optimization_hybrid",
             "quantum_ml_hybrid",
             "quantum_simulation_hybrid",
-        ]
+        ],
     },
     "lecture_83_quantum_software": {
         "title": "Quantum Software Engineering",
@@ -350,7 +350,7 @@ SEMESTER_12_LECTURES = {
             "quantum_testing",
             "quantum_verification",
             "quantum_optimization_tools",
-        ]
+        ],
     },
     "lecture_84_quantum_hardware": {
         "title": "Quantum Hardware",
@@ -361,7 +361,7 @@ SEMESTER_12_LECTURES = {
             "quantum_characterization",
             "quantum_control_systems",
             "quantum_readout",
-        ]
+        ],
     },
     "lecture_85_quantum_networking": {
         "title": "Quantum Networking",
@@ -372,7 +372,7 @@ SEMESTER_12_LECTURES = {
             "quantum_internet",
             "quantum_switching",
             "quantum_routing",
-        ]
+        ],
     },
     "lecture_86_quantum_security": {
         "title": "Quantum Security",
@@ -383,7 +383,7 @@ SEMESTER_12_LECTURES = {
             "quantum_defense",
             "quantum_key_management",
             "quantum_security_protocols",
-        ]
+        ],
     },
 }
 
@@ -398,7 +398,7 @@ SEMESTER_13_LECTURES = {
             "sidechains",
             "rollups",
             "plasma",
-        ]
+        ],
     },
     "lecture_88_consensus_advanced": {
         "title": "Advanced Consensus",
@@ -409,7 +409,7 @@ SEMESTER_13_LECTURES = {
             "tendermint",
             "hotstuff",
             "algorand",
-        ]
+        ],
     },
     "lecture_89_defi": {
         "title": "DeFi (Decentralized Finance)",
@@ -420,7 +420,7 @@ SEMESTER_13_LECTURES = {
             "lending_protocols",
             "derivatives",
             "stablecoins",
-        ]
+        ],
     },
     "lecture_90_blockchain_security": {
         "title": "Blockchain Security",
@@ -431,7 +431,7 @@ SEMESTER_13_LECTURES = {
             "vulnerability_detection",
             "exploit_prevention",
             "security_patterns",
-        ]
+        ],
     },
     "lecture_91_blockchain_privacy": {
         "title": "Blockchain Privacy",
@@ -442,7 +442,7 @@ SEMESTER_13_LECTURES = {
             "ring_signatures",
             "confidential_transactions",
             "privacy_coins",
-        ]
+        ],
     },
     "lecture_92_blockchain_interoperability": {
         "title": "Blockchain Interoperability",
@@ -453,7 +453,7 @@ SEMESTER_13_LECTURES = {
             "multi_chain_apps",
             "chain_abstraction",
             "universal_protocols",
-        ]
+        ],
     },
     "lecture_93_blockchain_governance": {
         "title": "Blockchain Governance",
@@ -464,7 +464,7 @@ SEMESTER_13_LECTURES = {
             "treasury_management",
             "upgrade_mechanisms",
             "governance_tokens",
-        ]
+        ],
     },
     "lecture_94_blockchain_analytics": {
         "title": "Blockchain Analytics",
@@ -475,7 +475,7 @@ SEMESTER_13_LECTURES = {
             "flow_analysis",
             "anomaly_detection_blockchain",
             "compliance_tools",
-        ]
+        ],
     },
 }
 
@@ -490,7 +490,7 @@ SEMESTER_14_LECTURES = {
             "ticket_routing_ai",
             "knowledge_graph",
             "support_analytics",
-        ]
+        ],
     },
     "lecture_96_incident_management_advanced": {
         "title": "Advanced Incident Management",
@@ -501,7 +501,7 @@ SEMESTER_14_LECTURES = {
             "alert_fatigue_reduction",
             "incident_prediction",
             "blameless_culture",
-        ]
+        ],
     },
     "lecture_97_knowledge_management": {
         "title": "Knowledge Management",
@@ -512,7 +512,7 @@ SEMESTER_14_LECTURES = {
             "semantic_search",
             "knowledge_extraction",
             "knowledge_validation",
-        ]
+        ],
     },
     "lecture_98_documentation_advanced": {
         "title": "Advanced Documentation",
@@ -523,7 +523,7 @@ SEMESTER_14_LECTURES = {
             "api_docs_advanced",
             "documentation_testing",
             "doc_analytics",
-        ]
+        ],
     },
     "lecture_99_technical_writing_advanced": {
         "title": "Advanced Technical Writing",
@@ -534,7 +534,7 @@ SEMESTER_14_LECTURES = {
             "translation_automation",
             "accessibility_docs",
             "multimedia_docs",
-        ]
+        ],
     },
     "lecture_100_documentation_ai": {
         "title": "AI-Powered Documentation",
@@ -545,7 +545,7 @@ SEMESTER_14_LECTURES = {
             "intelligent_search",
             "contextual_help",
             "personalized_docs",
-        ]
+        ],
     },
     "lecture_101_developer_experience": {
         "title": "Developer Experience",
@@ -556,7 +556,7 @@ SEMESTER_14_LECTURES = {
             "sandbox_environments",
             "tutorial_systems",
             "feedback_loops",
-        ]
+        ],
     },
     "lecture_102_community_management": {
         "title": "Community Management",
@@ -567,7 +567,7 @@ SEMESTER_14_LECTURES = {
             "engagement_metrics",
             "community_analytics",
             "knowledge_sharing",
-        ]
+        ],
     },
 }
 
@@ -582,7 +582,7 @@ SEMESTER_15_LECTURES = {
             "common_table_expressions",
             "pivot_unpivot",
             "sql_analytics",
-        ]
+        ],
     },
     "lecture_104_database_performance": {
         "title": "Database Performance",
@@ -593,7 +593,7 @@ SEMESTER_15_LECTURES = {
             "materialized_views",
             "query_hints",
             "statistics_management",
-        ]
+        ],
     },
     "lecture_105_database_architecture": {
         "title": "Database Architecture",
@@ -604,7 +604,7 @@ SEMESTER_15_LECTURES = {
             "database_sharding_advanced",
             "multi_tenant_databases",
             "database_federation",
-        ]
+        ],
     },
     "lecture_106_nosql_advanced_topics": {
         "title": "Advanced NoSQL Topics",
@@ -615,7 +615,7 @@ SEMESTER_15_LECTURES = {
             "nosql_transactions",
             "nosql_aggregation",
             "nosql_analytics",
-        ]
+        ],
     },
     "lecture_107_time_series_databases": {
         "title": "Time Series Databases",
@@ -626,7 +626,7 @@ SEMESTER_15_LECTURES = {
             "retention_policies",
             "time_series_compression",
             "time_series_analytics",
-        ]
+        ],
     },
     "lecture_108_graph_databases_advanced": {
         "title": "Advanced Graph Databases",
@@ -637,7 +637,7 @@ SEMESTER_15_LECTURES = {
             "graph_analytics",
             "graph_visualization",
             "graph_ml",
-        ]
+        ],
     },
     "lecture_109_database_security_advanced": {
         "title": "Advanced Database Security",
@@ -648,7 +648,7 @@ SEMESTER_15_LECTURES = {
             "column_level_security",
             "audit_logging",
             "data_masking",
-        ]
+        ],
     },
     "lecture_110_database_migration": {
         "title": "Database Migration",
@@ -659,7 +659,7 @@ SEMESTER_15_LECTURES = {
             "migration_strategies",
             "migration_testing",
             "rollback_strategies",
-        ]
+        ],
     },
 }
 
@@ -674,7 +674,7 @@ SEMESTER_16_LECTURES = {
             "lambda_architecture",
             "kappa_architecture",
             "data_mesh",
-        ]
+        ],
     },
     "lecture_112_data_warehousing_advanced": {
         "title": "Advanced Data Warehousing",
@@ -685,7 +685,7 @@ SEMESTER_16_LECTURES = {
             "snowflake_schema",
             "data_vault",
             "warehouse_optimization",
-        ]
+        ],
     },
     "lecture_113_data_lakes_advanced": {
         "title": "Advanced Data Lakes",
@@ -696,7 +696,7 @@ SEMESTER_16_LECTURES = {
             "data_quality",
             "data_profiling",
             "data_discovery",
-        ]
+        ],
     },
     "lecture_114_real_time_analytics": {
         "title": "Real-Time Analytics",
@@ -707,7 +707,7 @@ SEMESTER_16_LECTURES = {
             "real_time_ml",
             "real_time_aggregation",
             "real_time_alerts",
-        ]
+        ],
     },
     "lecture_115_data_governance_advanced": {
         "title": "Advanced Data Governance",
@@ -718,7 +718,7 @@ SEMESTER_16_LECTURES = {
             "data_privacy",
             "gdpr_compliance",
             "data_retention",
-        ]
+        ],
     },
     "lecture_116_data_ops": {
         "title": "DataOps",
@@ -729,7 +729,7 @@ SEMESTER_16_LECTURES = {
             "data_observability",
             "data_reliability",
             "data_versioning",
-        ]
+        ],
     },
     "lecture_117_ml_ops_advanced": {
         "title": "Advanced MLOps",
@@ -740,7 +740,7 @@ SEMESTER_16_LECTURES = {
             "feature_stores_advanced",
             "model_registry_advanced",
             "ml_pipelines_advanced",
-        ]
+        ],
     },
     "lecture_118_data_platforms": {
         "title": "Data Platforms",
@@ -751,7 +751,7 @@ SEMESTER_16_LECTURES = {
             "data_sharing",
             "data_collaboration",
             "data_platform_architecture",
-        ]
+        ],
     },
 }
 
@@ -766,11 +766,12 @@ ALL_SEMESTERS = {
     16: SEMESTER_16_LECTURES,
 }
 
+
 def create_algorithm_structure(semester_num, lecture_name, algorithm_name):
     """Create directory structure and files for an algorithm."""
     algo_path = BASE_PATH / f"semester_{semester_num}" / lecture_name / algorithm_name
     algo_path.mkdir(parents=True, exist_ok=True)
-    
+
     # Create README.md
     readme_content = f"""# {algorithm_name.replace('_', ' ').title()}
 
@@ -820,9 +821,9 @@ This algorithm/pattern is implemented in various advanced frameworks and technol
 
 *Note: Framework-specific examples will be added based on actual implementations.*
 """
-    
+
     (algo_path / "README.md").write_text(readme_content, encoding="utf-8")
-    
+
     # Create algorithm.py placeholder
     algo_py = f'''#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
@@ -849,11 +850,11 @@ if __name__ == "__main__":
     # Example usage
     print(f"{algorithm_name.replace('_', ' ').title()} - Advanced Implementation")
 '''
-    
+
     (algo_path / "algorithm.py").write_text(algo_py, encoding="utf-8")
-    
+
     # Create Algorithm.java placeholder
-    algo_java = f'''/**
+    algo_java = f"""/**
  * Advanced implementation of {algorithm_name.replace('_', ' ').title()}
  */
 public class Algorithm {{
@@ -873,34 +874,31 @@ public class Algorithm {{
         System.out.println("{algorithm_name.replace('_', ' ').title()} - Advanced Implementation");
     }}
 }}
-'''
-    
+"""
+
     (algo_path / "Algorithm.java").write_text(algo_java, encoding="utf-8")
-    
+
     # Create metadata.json
     metadata = {
         "name": algorithm_name,
-        "display_name": algorithm_name.replace('_', ' ').title(),
+        "display_name": algorithm_name.replace("_", " ").title(),
         "category": "Advanced Graduate Level",
         "semester": semester_num,
         "lecture": lecture_name,
-        "complexity": {
-            "time": "Varies",
-            "space": "Varies"
-        },
-        "status": "placeholder"
+        "complexity": {"time": "Varies", "space": "Varies"},
+        "status": "placeholder",
     }
-    
+
     (algo_path / "metadata.json").write_text(
-        json.dumps(metadata, indent=2),
-        encoding="utf-8"
+        json.dumps(metadata, indent=2), encoding="utf-8"
     )
+
 
 def create_semester_readme(semester_num, lectures):
     """Create semester README."""
     semester_path = BASE_PATH / f"semester_{semester_num}"
     semester_path.mkdir(exist_ok=True)
-    
+
     readme_content = f"""# Semester {semester_num}
 
 ## Overview
@@ -910,7 +908,7 @@ This semester covers advanced graduate-level topics in computer science and soft
 ## Lectures
 
 """
-    
+
     for lecture_name, lecture_data in lectures.items():
         title = lecture_data["title"]
         algo_count = len(lecture_data["algorithms"])
@@ -919,29 +917,32 @@ This semester covers advanced graduate-level topics in computer science and soft
 - **Algorithms**: {algo_count}
 
 """
-    
+
     (semester_path / "README.md").write_text(readme_content, encoding="utf-8")
+
 
 def main():
     """Create all semesters 9-16."""
     print("Creating semesters 9-16...")
-    
+
     for semester_num, lectures in ALL_SEMESTERS.items():
         print(f"\nCreating Semester {semester_num}...")
         create_semester_readme(semester_num, lectures)
-        
+
         for lecture_name, lecture_data in lectures.items():
             print(f"  Creating {lecture_name}...")
             lecture_path = BASE_PATH / f"semester_{semester_num}" / lecture_name
             lecture_path.mkdir(parents=True, exist_ok=True)
-            
+
             for algorithm_name in lecture_data["algorithms"]:
                 create_algorithm_structure(semester_num, lecture_name, algorithm_name)
                 print(f"    Created {algorithm_name}")
-    
+
     print("\n✅ All semesters 9-16 created successfully!")
-    print(f"Total algorithms created: {sum(len(lectures) * sum(len(l['algorithms']) for l in lectures.values()) for lectures in ALL_SEMESTERS.values())}")
+    print(
+        f"Total algorithms created: {sum(len(lectures) * sum(len(l['algorithms']) for l in lectures.values()) for lectures in ALL_SEMESTERS.values())}"
+    )
+
 
 if __name__ == "__main__":
     main()
-

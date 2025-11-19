@@ -8,5 +8,6 @@
     "time": "Varies",
     "space": "Varies"
   },
-  "status": "placeholder"
+  "status": "placeholder",
+  "algorithm_type": "integration"
 }

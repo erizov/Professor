@@ -11,29 +11,30 @@ from typing import Dict, Optional
 
 ROOT = Path(__file__).resolve().parents[1]
 
+
 def generate_test_file(algorithm_path: Path, algorithm_name: str) -> bool:
     """Generate unit test file for algorithm."""
     py_file = algorithm_path / "algorithm.py"
     test_file = algorithm_path / "test_algorithm.py"
-    
+
     if not py_file.exists() or test_file.exists():
         return False
-    
+
     # Read algorithm file to understand function signatures
     try:
-        algo_content = py_file.read_text(encoding='utf-8')
+        algo_content = py_file.read_text(encoding="utf-8")
     except:
         return False
-    
+
     # Extract function names
-    func_pattern = r'def\s+(\w+)\s*\('
+    func_pattern = r"def\s+(\w+)\s*\("
     functions = re.findall(func_pattern, algo_content)
-    
+
     if not functions:
         return False
-    
+
     main_func = functions[0] if functions else algorithm_name
-    
+
     # Generate test content
     test_content = f'''#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
@@ -103,25 +104,26 @@ class Test{algorithm_name.replace('_', '').title()}(AlgorithmTestCase):
 if __name__ == '__main__':
     unittest.main()
 '''
-    
-    test_file.write_text(test_content, encoding='utf-8')
+
+    test_file.write_text(test_content, encoding="utf-8")
     return True
+
 
 def main():
     """Generate unit tests for all algorithms."""
     generated = 0
-    
+
     for algo_dir in ROOT.rglob("*/algorithm.py"):
         algo_dir = algo_dir.parent
         algorithm_name = algo_dir.name
-        
+
         if generate_test_file(algo_dir, algorithm_name):
             generated += 1
             if generated % 10 == 0:
                 print(f"[PROGRESS] Generated {generated} test files...")
-    
+
     print(f"\n[COMPLETE] Generated {generated} unit test files")
+
 
 if __name__ == "__main__":
     main()
-

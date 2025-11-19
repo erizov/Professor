@@ -110,16 +110,18 @@ public class Algorithm {
 
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("AUTHORIZATION PATTERN DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Role-based Authorization
         logger.info("Example 1: Role-based Authorization");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         AuthorizationService authz = new AuthorizationService();
         
@@ -133,7 +135,7 @@ public class Algorithm {
         System.out.printf("  Admin: %s%n", adminRole.permissions);
         System.out.printf("  Editor: %s%n", editorRole.permissions);
         System.out.printf("  Viewer: %s%n", viewerRole.permissions);
-        logger.info();
+        logger.info("");
         
         User adminUser = authz.createUser("u1", "alice", Arrays.asList("admin"));
         User editorUser = authz.createUser("u2", "bob", Arrays.asList("editor"));
@@ -150,11 +152,11 @@ public class Algorithm {
                          authz.authorize("u3", Permission.READ));
         System.out.printf("Charlie (viewer) can write: %s%n",
                          authz.authorize("u3", Permission.WRITE));
-        logger.info();
+        logger.info("");
         
         // Example 2: RBAC
         logger.info("Example 2: RBAC (Role-Based Access Control)");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         RBAC rbac = new RBAC();
         
@@ -175,11 +177,11 @@ public class Algorithm {
                          rbac.hasPermission("user2", "delete"));
         System.out.printf("User3 (guest) can read: %s%n",
                          rbac.hasPermission("user3", "read"));
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern Summary:");
         logger.info("\nIntent:");
         logger.info("  Determines what actions a user is allowed to perform");
@@ -193,7 +195,7 @@ public class Algorithm {
         logger.info("  - Multi-user systems");
         logger.info("  - Need fine-grained permissions");
         logger.info("  - Role-based access");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

@@ -110,16 +110,18 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("EDIT DISTANCE (LEVENSHTEIN DISTANCE) DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Basic edit distance
         logger.info("Example 1: Basic Edit Distance");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         String[][] testCases = {
             {"kitten", "sitting"},
@@ -133,11 +135,11 @@ public class Algorithm {
             System.out.printf("'%s' -> '%s': %d operations%n",
                             test[0], test[1], distance);
         }
-        logger.info();
+        logger.info("");
         
         // Example 2: Similarity
         logger.info("Example 2: String Similarity");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         String[][] pairs = {
             {"hello", "hello"},
@@ -153,11 +155,11 @@ public class Algorithm {
             System.out.printf("  Distance: %d, Similarity: %.2f%%%n", 
                             dist, sim * 100);
         }
-        logger.info();
+        logger.info("");
         
         // Example 3: Space-optimized version
         logger.info("Example 3: Space-Optimized Version");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         String s1 = "saturday";
         String s2 = "sunday";
@@ -168,11 +170,11 @@ public class Algorithm {
         System.out.printf("  Standard: %d%n", distStandard);
         System.out.printf("  Optimized: %d%n", distOptimized);
         logger.info("Note: Optimized uses O(min(m,n)) space instead of O(m*n)");
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Time:  O(m * n) - m and n are string lengths");
         logger.info("  Space: O(m * n) - standard");
@@ -186,7 +188,7 @@ public class Algorithm {
         logger.info("  - DNA sequence alignment");
         logger.info("  - Fuzzy string matching");
         logger.info("  - Autocorrect systems");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

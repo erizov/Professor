@@ -109,12 +109,14 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("UNIT OF WORK DESIGN PATTERN");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         IUserRepository repository = new InMemoryUserRepository();
         UnitOfWork uow = new UnitOfWork(repository);
@@ -127,13 +129,13 @@ public class Algorithm {
         
         logger.info("Committing changes:");
         uow.commit();
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern: Tracks changes atomically");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

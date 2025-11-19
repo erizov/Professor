@@ -144,16 +144,18 @@ public class Algorithm {
 
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("PUBLISH-SUBSCRIBE (PUB-SUB) PATTERN DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Basic Pub-Sub
         logger.info("Example 1: Basic Publish-Subscribe");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         MessageBroker broker = new MessageBroker();
         Publisher publisher = new Publisher(broker);
@@ -171,11 +173,11 @@ public class Algorithm {
         publisher.publish("orders", "New order #1001");
         publisher.publish("notifications", "User logged in");
         publisher.publish("orders", "Order #1001 shipped");
-        logger.info();
+        logger.info("");
         
         // Example 2: Event-driven Pub-Sub
         logger.info("Example 2: Event-driven Pub-Sub");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         EventBus eventBus = new EventBus();
         
@@ -187,11 +189,11 @@ public class Algorithm {
         logger.info("Publishing events:");
         eventBus.publish(new Event("order.created", "Order #2001"));
         eventBus.publish(new Event("user.registered", "User: alice"));
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern Summary:");
         logger.info("\nIntent:");
         logger.info("  Decouples publishers from subscribers.");
@@ -205,7 +207,7 @@ public class Algorithm {
         logger.info("  - Event-driven architecture");
         logger.info("  - Microservices communication");
         logger.info("  - Real-time notifications");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

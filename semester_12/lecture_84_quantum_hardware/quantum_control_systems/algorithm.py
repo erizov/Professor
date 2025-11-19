@@ -11,17 +11,15 @@ from typing import List, Optional, Dict, Set
 
 class QuantumControlSystems:
     """Quantum control systems."""
+
     def __init__(self):
         self.systems: Dict[str, dict] = {}
         self.feedback_loops: List[dict] = {}
-    
+
     def add_system(self, system_id: str, hamiltonian: dict) -> None:
         """Add quantum system."""
-        self.systems[system_id] = {
-            'hamiltonian': hamiltonian,
-            'state': [1.0, 0.0]
-        }
-    
+        self.systems[system_id] = {"hamiltonian": hamiltonian, "state": [1.0, 0.0]}
+
     def apply_control(self, system_id: str, control: dict) -> None:
         """Apply control to system."""
         if system_id in self.systems:
@@ -33,11 +31,11 @@ def main() -> None:
     print("=" * 70)
     print("QUANTUM CONTROL SYSTEMS")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Quantum Control Systems")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

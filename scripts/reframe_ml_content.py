@@ -87,54 +87,46 @@ ML_PHRASE_REPLACEMENTS: Dict[str, str] = {
 # Phrases to remove or consolidate (repetitive patterns)
 REPETITIVE_PATTERNS: List[Tuple[str, str]] = [
     # Remove excessive "often" phrases
-    (r'\bOften\s+used\s+together\s+with\b', 'Used with'),
-    (r'\boften\s+used\s+together\s+with\b', 'used with'),
-    (r'\bOften\s+combined\s+with\b', 'Combined with'),
-    (r'\boften\s+combined\s+with\b', 'combined with'),
-    
+    (r"\bOften\s+used\s+together\s+with\b", "Used with"),
+    (r"\boften\s+used\s+together\s+with\b", "used with"),
+    (r"\bOften\s+combined\s+with\b", "Combined with"),
+    (r"\boften\s+combined\s+with\b", "combined with"),
     # Remove excessive "commonly" phrases
-    (r'\bcommonly\s+used\b', 'used'),
-    (r'\bCommonly\s+used\b', 'Used'),
-    (r'\bcommonly\s+applied\b', 'applied'),
-    (r'\bCommonly\s+applied\b', 'Applied'),
-    
+    (r"\bcommonly\s+used\b", "used"),
+    (r"\bCommonly\s+used\b", "Used"),
+    (r"\bcommonly\s+applied\b", "applied"),
+    (r"\bCommonly\s+applied\b", "Applied"),
     # Remove excessive "widely" phrases
-    (r'\bwidely\s+used\b', 'used'),
-    (r'\bWidely\s+used\b', 'Used'),
-    (r'\bwidely\s+applied\b', 'applied'),
-    (r'\bWidely\s+applied\b', 'Applied'),
-    
+    (r"\bwidely\s+used\b", "used"),
+    (r"\bWidely\s+used\b", "Used"),
+    (r"\bwidely\s+applied\b", "applied"),
+    (r"\bWidely\s+applied\b", "Applied"),
     # Remove excessive "frequently" phrases
-    (r'\bfrequently\s+used\b', 'used'),
-    (r'\bFrequently\s+used\b', 'Used'),
-    
+    (r"\bfrequently\s+used\b", "used"),
+    (r"\bFrequently\s+used\b", "Used"),
     # Consolidate "solves problems" variations
-    (r'\bsolves\s+problems\s+like\b', 'addresses'),
-    (r'\bSolves\s+problems\s+like\b', 'Addresses'),
-    (r'\bsolves\s+the\s+problem\s+of\b', 'addresses'),
-    (r'\bSolves\s+the\s+problem\s+of\b', 'Addresses'),
-    
+    (r"\bsolves\s+problems\s+like\b", "addresses"),
+    (r"\bSolves\s+problems\s+like\b", "Addresses"),
+    (r"\bsolves\s+the\s+problem\s+of\b", "addresses"),
+    (r"\bSolves\s+the\s+problem\s+of\b", "Addresses"),
     # Remove excessive "fundamental" phrases
-    (r'\bfundamental\s+algorithm\b', 'algorithm'),
-    (r'\bFundamental\s+algorithm\b', 'Algorithm'),
-    (r'\bfundamental\s+technique\b', 'technique'),
-    (r'\bFundamental\s+technique\b', 'Technique'),
-    
+    (r"\bfundamental\s+algorithm\b", "algorithm"),
+    (r"\bFundamental\s+algorithm\b", "Algorithm"),
+    (r"\bfundamental\s+technique\b", "technique"),
+    (r"\bFundamental\s+technique\b", "Technique"),
     # Remove excessive "important" phrases
-    (r'\bimportant\s+algorithm\b', 'algorithm'),
-    (r'\bImportant\s+algorithm\b', 'Algorithm'),
-    (r'\bimportant\s+technique\b', 'technique'),
-    (r'\bImportant\s+technique\b', 'Technique'),
-    
+    (r"\bimportant\s+algorithm\b", "algorithm"),
+    (r"\bImportant\s+algorithm\b", "Algorithm"),
+    (r"\bimportant\s+technique\b", "technique"),
+    (r"\bImportant\s+technique\b", "Technique"),
     # Remove excessive "essential" phrases
-    (r'\bessential\s+for\b', 'useful for'),
-    (r'\bEssential\s+for\b', 'Useful for'),
-    
+    (r"\bessential\s+for\b", "useful for"),
+    (r"\bEssential\s+for\b", "Useful for"),
     # Consolidate "works by" variations
-    (r'\bworks\s+by\b', 'operates by'),
-    (r'\bWorks\s+by\b', 'Operates by'),
-    (r'\bfunctions\s+by\b', 'operates by'),
-    (r'\bFunctions\s+by\b', 'Operates by'),
+    (r"\bworks\s+by\b", "operates by"),
+    (r"\bWorks\s+by\b", "Operates by"),
+    (r"\bfunctions\s+by\b", "operates by"),
+    (r"\bFunctions\s+by\b", "Operates by"),
 ]
 
 # Synonyms for common words to add variety
@@ -157,27 +149,28 @@ SYNONYM_REPLACEMENTS: Dict[str, List[str]] = {
     "system": ["framework", "architecture", "structure"],
 }
 
+
 def apply_ml_replacements(content: str) -> Tuple[str, bool]:
     """Apply ML phrase replacements."""
     changed = False
     original = content
-    
+
     # Apply phrase replacements (case-insensitive, whole word)
     # Don't replace in titles (lines starting with #)
-    lines = content.split('\n')
+    lines = content.split("\n")
     new_lines = []
-    
+
     for line in lines:
         # Skip title lines (starting with #)
-        if re.match(r'^#+\s+', line):
+        if re.match(r"^#+\s+", line):
             new_lines.append(line)
             continue
-        
+
         # Apply replacements to non-title lines
         original_line = line
         for phrase, replacement in ML_PHRASE_REPLACEMENTS.items():
             # Case-insensitive replacement with word boundaries
-            pattern = r'\b' + re.escape(phrase) + r'\b'
+            pattern = r"\b" + re.escape(phrase) + r"\b"
             if re.search(pattern, line, re.IGNORECASE):
                 # Preserve original case for first letter
                 def replace_func(match):
@@ -185,41 +178,43 @@ def apply_ml_replacements(content: str) -> Tuple[str, bool]:
                     if matched[0].isupper():
                         return replacement[0].upper() + replacement[1:]
                     return replacement
-                
+
                 line = re.sub(pattern, replace_func, line, flags=re.IGNORECASE)
                 changed = True
-        
+
         new_lines.append(line)
-    
-    content = '\n'.join(new_lines)
-    
+
+    content = "\n".join(new_lines)
+
     return content, changed or (content != original)
+
 
 def remove_repetitive_patterns(content: str) -> Tuple[str, bool]:
     """Remove repetitive patterns and excessive qualifiers."""
     changed = False
     original = content
-    
+
     for pattern, replacement in REPETITIVE_PATTERNS:
         if re.search(pattern, content):
             content = re.sub(pattern, replacement, content)
             changed = True
-    
+
     return content, changed or (content != original)
+
 
 def apply_synonyms(content: str) -> Tuple[str, bool]:
     """Apply synonym replacements to add variety."""
     changed = False
     original = content
-    
+
     # Track which synonyms we've used to avoid over-repetition
     synonym_usage = {word: 0 for word in SYNONYM_REPLACEMENTS.keys()}
-    
+
     # Simple approach: replace every 2nd or 3rd occurrence with a synonym
     for word, synonyms in SYNONYM_REPLACEMENTS.items():
-        pattern = r'\b' + re.escape(word) + r'\b'
+        pattern = r"\b" + re.escape(word) + r"\b"
         matches = list(re.finditer(pattern, content, re.IGNORECASE))
-        
+
         if len(matches) > 2:  # Only if word appears multiple times
             # Replace some occurrences with synonyms
             for i, match in enumerate(matches[1:], 1):  # Skip first occurrence
@@ -228,78 +223,84 @@ def apply_synonyms(content: str) -> Tuple[str, bool]:
                     matched = match.group(0)
                     if matched[0].isupper():
                         synonym = synonym[0].upper() + synonym[1:]
-                    
+
                     # Replace this specific occurrence
                     start, end = match.span()
                     content = content[:start] + synonym + content[end:]
                     changed = True
-    
+
     return content, changed or (content != original)
+
 
 def remove_duplicate_concepts(content: str) -> Tuple[str, bool]:
     """Remove duplicate concepts and excessive repetition."""
     changed = False
-    lines = content.split('\n')
+    lines = content.split("\n")
     new_lines = []
     seen_concepts = set()
-    
+
     i = 0
     while i < len(lines):
         line = lines[i]
-        
+
         # Check for duplicate bullet points or list items
-        if re.match(r'^[-*]\s+', line):
+        if re.match(r"^[-*]\s+", line):
             # Extract the concept (first 50 chars, normalized)
-            concept = re.sub(r'^[-*]\s+\*\*[^*]+\*\*:\s*', '', line)
+            concept = re.sub(r"^[-*]\s+\*\*[^*]+\*\*:\s*", "", line)
             concept = concept[:50].strip().lower()
-            concept_key = re.sub(r'[^\w\s]', '', concept)
-            
+            concept_key = re.sub(r"[^\w\s]", "", concept)
+
             # Check if we've seen a similar concept recently
             if concept_key in seen_concepts and len(concept_key) > 10:
                 # Skip this duplicate
                 changed = True
                 i += 1
                 continue
-            
+
             seen_concepts.add(concept_key)
             # Clear old concepts periodically
             if len(seen_concepts) > 20:
                 seen_concepts.clear()
-        
+
         new_lines.append(line)
         i += 1
-    
+
     if changed:
-        return '\n'.join(new_lines), True
+        return "\n".join(new_lines), True
     return content, False
+
 
 def consolidate_repetitive_lists(content: str) -> Tuple[str, bool]:
     """Consolidate repetitive list items."""
     changed = False
-    
+
     # Pattern: Multiple similar list items that can be consolidated
     # Example: "- Often used... - Often used... - Often used..."
-    pattern = r'((?:[-*]\s+[^\n]+\n){3,})'
-    
+    pattern = r"((?:[-*]\s+[^\n]+\n){3,})"
+
     def consolidate_list(match):
-        items = match.group(1).strip().split('\n')
+        items = match.group(1).strip().split("\n")
         if len(items) > 3:
             # Check if items are very similar
             first_item = items[0].lower()
-            similar_count = sum(1 for item in items[1:] if 
-                              len(set(item.lower().split()) & set(first_item.split())) > 5)
-            
+            similar_count = sum(
+                1
+                for item in items[1:]
+                if len(set(item.lower().split()) & set(first_item.split())) > 5
+            )
+
             if similar_count > 2:
                 # Consolidate to first 2-3 items
-                return '\n'.join(items[:3]) + '\n'
-        
+                return "\n".join(items[:3]) + "\n"
+
         return match.group(1)
-    
+
     if re.search(pattern, content):
         content = re.sub(pattern, consolidate_list, content)
         changed = True
-    
+
     return content, changed
+
 
 def reframe_content(content: str) -> str:
     """Apply all reframing transformations."""
@@ -308,69 +309,77 @@ def reframe_content(content: str) -> str:
     content, _ = apply_synonyms(content)
     content, _ = remove_duplicate_concepts(content)
     content, _ = consolidate_repetitive_lists(content)
-    
+
     # Fix grammar issues
-    content = re.sub(r'\bA\s+algorithm\b', 'An algorithm', content, flags=re.IGNORECASE)
-    content = re.sub(r'\bA\s+([aeiouAEIOU][a-z]+)\s+algorithm\b', r'An \1 algorithm', content)
-    content = re.sub(r'\bA\s+approach\b', 'An approach', content, flags=re.IGNORECASE)
-    content = re.sub(r'\bA\s+([aeiouAEIOU][a-z]+)\s+approach\b', r'An \1 approach', content)
-    content = re.sub(r'\bA\s+([aeiouAEIOU][a-z]+)\s+technique\b', r'An \1 technique', content)
-    content = re.sub(r'\bA\s+([aeiouAEIOU][a-z]+)\s+method\b', r'An \1 method', content)
-    
+    content = re.sub(r"\bA\s+algorithm\b", "An algorithm", content, flags=re.IGNORECASE)
+    content = re.sub(
+        r"\bA\s+([aeiouAEIOU][a-z]+)\s+algorithm\b", r"An \1 algorithm", content
+    )
+    content = re.sub(r"\bA\s+approach\b", "An approach", content, flags=re.IGNORECASE)
+    content = re.sub(
+        r"\bA\s+([aeiouAEIOU][a-z]+)\s+approach\b", r"An \1 approach", content
+    )
+    content = re.sub(
+        r"\bA\s+([aeiouAEIOU][a-z]+)\s+technique\b", r"An \1 technique", content
+    )
+    content = re.sub(r"\bA\s+([aeiouAEIOU][a-z]+)\s+method\b", r"An \1 method", content)
+
     # Clean up extra whitespace
-    content = re.sub(r'\n{4,}', '\n\n\n', content)
-    content = re.sub(r'[ \t]+', ' ', content)
-    
+    content = re.sub(r"\n{4,}", "\n\n\n", content)
+    content = re.sub(r"[ \t]+", " ", content)
+
     return content
+
 
 def fix_readme(readme_path: Path) -> bool:
     """Reframe ML content in a README file."""
     try:
         content = readme_path.read_text(encoding="utf-8")
         original_content = content
-        
+
         content = reframe_content(content)
-        
+
         if content != original_content:
             readme_path.write_text(content, encoding="utf-8")
             return True
-        
+
         return False
     except Exception as e:
         print(f"Error processing {readme_path}: {e}")
         return False
 
+
 def main():
     """Main function to reframe all README files."""
     updated_count = 0
     processed_count = 0
-    
+
     for semester_dir in ROOT.glob("semester_*"):
         if not semester_dir.is_dir():
             continue
-        
+
         for lecture_dir in semester_dir.iterdir():
             if not lecture_dir.is_dir():
                 continue
-            
+
             for algo_dir in lecture_dir.iterdir():
                 if not algo_dir.is_dir():
                     continue
-                
+
                 readme_path = algo_dir / "README.md"
                 if not readme_path.exists():
                     continue
-                
+
                 processed_count += 1
-                
+
                 if fix_readme(readme_path):
                     updated_count += 1
                     if updated_count % 50 == 0:
                         print(f"Reframed {updated_count} READMEs...")
-    
+
     print(f"\nProcessed {processed_count} README files")
     print(f"Updated {updated_count} files with reframed content")
 
+
 if __name__ == "__main__":
     main()
-

@@ -15,13 +15,13 @@ DB_PATH = ROOT / "database" / "algorithms.db"
 if not DB_PATH.exists():
     print("Database not found. Populating database...")
     from database.populate_database import populate_database
+
     populate_database()
 
 # Run Flask app
 from web_interface.app import app
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print("Starting web interface...")
     print("Open http://localhost:5000 in your browser")
-    app.run(debug=True, host='0.0.0.0', port=5000)
-
+    app.run(debug=True, host="0.0.0.0", port=5000)

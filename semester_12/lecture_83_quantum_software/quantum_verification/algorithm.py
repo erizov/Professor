@@ -11,18 +11,19 @@ from typing import List, Optional, Dict, Set
 
 class QuantumVerification:
     """Quantum circuit verification."""
+
     def __init__(self):
         self.circuits: Dict[str, List[dict]] = {}
         self.verifications: Dict[str, bool] = {}
-    
+
     def verify_circuit(self, circuit_id: str, gates: List[dict]) -> bool:
         """Verify quantum circuit."""
         self.circuits[circuit_id] = gates
         # Simplified verification
-        is_valid = all('type' in gate and 'qubits' in gate for gate in gates)
+        is_valid = all("type" in gate and "qubits" in gate for gate in gates)
         self.verifications[circuit_id] = is_valid
         return is_valid
-    
+
     def check_equivalence(self, circuit1: str, circuit2: str) -> bool:
         """Check circuit equivalence."""
         if circuit1 in self.circuits and circuit2 in self.circuits:
@@ -36,11 +37,11 @@ def main() -> None:
     print("=" * 70)
     print("QUANTUM VERIFICATION")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Quantum Verification")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

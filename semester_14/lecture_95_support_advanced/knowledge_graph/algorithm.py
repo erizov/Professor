@@ -11,28 +11,24 @@ from typing import List, Optional, Dict, Set
 
 class KnowledgeGraph:
     """Knowledge graph."""
+
     def __init__(self):
         self.nodes: Dict[str, dict] = {}
         self.edges: List[dict] = {}
-    
-    def add_entity(self, entity_id: str, entity_type: str, 
-                  properties: dict) -> None:
+
+    def add_entity(self, entity_id: str, entity_type: str, properties: dict) -> None:
         """Add entity."""
-        self.nodes[entity_id] = {
-            'type': entity_type,
-            'properties': properties
-        }
-    
-    def add_relation(self, subject_id: str, predicate: str, 
-                    object_id: str) -> None:
+        self.nodes[entity_id] = {"type": entity_type, "properties": properties}
+
+    def add_relation(self, subject_id: str, predicate: str, object_id: str) -> None:
         """Add relation."""
         relation_id = f"{subject_id}_{predicate}_{object_id}"
         self.edges[relation_id] = {
-            'subject': subject_id,
-            'predicate': predicate,
-            'object': object_id
+            "subject": subject_id,
+            "predicate": predicate,
+            "object": object_id,
         }
-    
+
     def query(self, pattern: dict) -> List[dict]:
         """Query knowledge graph."""
         results = []
@@ -47,11 +43,11 @@ def main() -> None:
     print("=" * 70)
     print("KNOWLEDGE GRAPH")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Knowledge Graph")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

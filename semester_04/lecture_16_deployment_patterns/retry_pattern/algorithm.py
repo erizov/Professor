@@ -11,14 +11,15 @@ from typing import List, Optional, Dict, Set
 
 class RetryPattern:
     """Retry pattern implementation."""
-    def __init__(self, max_attempts: int = 3, 
-                backoff_factor: float = 2.0):
+
+    def __init__(self, max_attempts: int = 3, backoff_factor: float = 2.0):
         self.max_attempts = max_attempts
         self.backoff_factor = backoff_factor
-    
+
     def execute_with_retry(self, func: callable, *args, **kwargs) -> any:
         """Execute function with retry."""
         import time
+
         last_exception = None
         for attempt in range(self.max_attempts):
             try:
@@ -26,7 +27,7 @@ class RetryPattern:
             except Exception as e:
                 last_exception = e
                 if attempt < self.max_attempts - 1:
-                    wait_time = self.backoff_factor ** attempt
+                    wait_time = self.backoff_factor**attempt
                     time.sleep(wait_time)
         raise last_exception
 
@@ -36,11 +37,11 @@ def main() -> None:
     print("=" * 70)
     print("RETRY PATTERN")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Retry Pattern")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

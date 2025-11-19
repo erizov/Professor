@@ -94,12 +94,14 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("ABSTRACT FACTORY DESIGN PATTERN");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Windows application
         GUIFactory windowsFactory = new WindowsFactory();
@@ -107,7 +109,7 @@ public class Algorithm {
         windowsApp.createUI();
         logger.info("Windows UI:");
         windowsApp.renderUI();
-        logger.info();
+        logger.info("");
         
         // Mac application
         GUIFactory macFactory = new MacFactory();
@@ -115,13 +117,13 @@ public class Algorithm {
         macApp.createUI();
         logger.info("Mac UI:");
         macApp.renderUI();
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern: Creates families of related objects");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

@@ -43,28 +43,30 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
-        logger.info("=".repeat(70));
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
+        logger.info(separator);
         logger.info("LISKOV SUBSTITUTION PRINCIPLE DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Rectangle
         logger.info("Example 1: Rectangle");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         Shape rectangle = new Rectangle(5, 4);
         printArea(rectangle);
-        logger.info();
+        logger.info("");
         
         // Example 2: Square (substitutable for Shape)
         logger.info("Example 2: Square");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         Shape square = new Square(5);
         printArea(square);
-        logger.info();
+        logger.info("");
         
         // Example 3: Substitution
         logger.info("Example 3: Substitution in Array");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         Shape[] shapes = {
             new Rectangle(3, 4),
             new Square(5),
@@ -74,9 +76,9 @@ public class Algorithm {
         for (Shape shape : shapes) {
             printArea(shape);
         }
-        logger.info();
+        logger.info("");
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPrinciple Summary:");
         logger.info("\nIntent:");
         logger.info("  Objects of a superclass should be replaceable");
@@ -86,6 +88,6 @@ public class Algorithm {
         logger.info("  - Subtypes are truly substitutable");
         logger.info("  - No unexpected behavior");
         logger.info("  - Better code reuse");
-        logger.info("=".repeat(70));
+        logger.info(separator);
     }
 }

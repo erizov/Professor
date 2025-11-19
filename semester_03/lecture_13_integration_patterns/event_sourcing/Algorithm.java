@@ -80,18 +80,20 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("EVENT SOURCING PATTERN");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         EventStore store = new EventStore();
         int userId = 1;
         
         store.append(userId, new UserCreatedEvent(userId, "Alice", "alice@example.com"));
-        logger.info();
+        logger.info("");
         
         User user = new User();
         for (Event event : store.getEvents(userId)) {
@@ -99,13 +101,13 @@ public class Algorithm {
         }
         
         logger.info("Reconstructed user: " + user.getName());
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern: Stores state as events");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

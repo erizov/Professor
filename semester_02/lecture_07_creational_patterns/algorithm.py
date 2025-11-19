@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("LECTURE 07 CREATIONAL PATTERNS")
     print("=" * 70)
-    
+
     print("Algorithm implementation for Lecture 07 Creational Patterns")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

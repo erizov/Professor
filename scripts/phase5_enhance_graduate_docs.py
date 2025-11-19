@@ -15,27 +15,36 @@ ROOT = Path(__file__).resolve().parents[1]
 def is_graduate_level(readme_path: Path) -> bool:
     """Check if algorithm is in graduate-level semesters (9-16)."""
     path_str = str(readme_path)
-    return any(f'semester_{i}' in path_str for i in range(9, 17))
+    return any(f"semester_{i}" in path_str for i in range(9, 17))
 
 
 def has_research_content(content: str) -> bool:
     """Check if README has research-related content."""
-    research_keywords = ['research', 'paper', 'publication', 'academic', 'study', 
-                        'experiment', 'evaluation', 'benchmark', 'performance analysis']
+    research_keywords = [
+        "research",
+        "paper",
+        "publication",
+        "academic",
+        "study",
+        "experiment",
+        "evaluation",
+        "benchmark",
+        "performance analysis",
+    ]
     return any(keyword in content.lower() for keyword in research_keywords)
 
 
 def add_research_section(readme_path: Path) -> bool:
     """Add research connections section to graduate-level algorithms."""
     try:
-        content = readme_path.read_text(encoding='utf-8')
-        
+        content = readme_path.read_text(encoding="utf-8")
+
         if not is_graduate_level(readme_path):
             return False
-        
+
         if has_research_content(content):
             return False
-        
+
         # Add research section before "Real-World Applications" or at end
         research_section = """## Research and Academic Connections
 
@@ -55,33 +64,37 @@ def add_research_section(readme_path: Path) -> bool:
 - Study performance benchmarks and comparative analyses
 
 """
-        
+
         # Try to insert before "Real-World Applications"
-        pattern = r'(## Real-World Applications\s*\n)'
+        pattern = r"(## Real-World Applications\s*\n)"
         match = re.search(pattern, content)
-        
+
         if match:
-            content = content[:match.start()] + research_section + content[match.start():]
-            readme_path.write_text(content, encoding='utf-8')
+            content = (
+                content[: match.start()] + research_section + content[match.start() :]
+            )
+            readme_path.write_text(content, encoding="utf-8")
             return True
-        
+
         # Or insert before "Algorithm Steps"
-        pattern = r'(## Algorithm Steps\s*\n)'
+        pattern = r"(## Algorithm Steps\s*\n)"
         match = re.search(pattern, content)
-        
+
         if match:
-            content = content[:match.start()] + research_section + content[match.start():]
-            readme_path.write_text(content, encoding='utf-8')
+            content = (
+                content[: match.start()] + research_section + content[match.start() :]
+            )
+            readme_path.write_text(content, encoding="utf-8")
             return True
-        
+
         # Or add at end before any appendix
-        if '## References' not in content and '## Appendix' not in content:
-            content = content.rstrip() + '\n\n' + research_section
-            readme_path.write_text(content, encoding='utf-8')
+        if "## References" not in content and "## Appendix" not in content:
+            content = content.rstrip() + "\n\n" + research_section
+            readme_path.write_text(content, encoding="utf-8")
             return True
-        
+
         return False
-    
+
     except Exception as e:
         print(f"Error processing {readme_path}: {e}")
         return False
@@ -90,14 +103,14 @@ def add_research_section(readme_path: Path) -> bool:
 def enhance_advanced_topics_section(readme_path: Path) -> bool:
     """Add advanced topics section to graduate-level algorithms."""
     try:
-        content = readme_path.read_text(encoding='utf-8')
-        
+        content = readme_path.read_text(encoding="utf-8")
+
         if not is_graduate_level(readme_path):
             return False
-        
-        if '## Advanced Topics' in content or '## Advanced Considerations' in content:
+
+        if "## Advanced Topics" in content or "## Advanced Considerations" in content:
             return False
-        
+
         advanced_section = """## Advanced Topics
 
 ### Optimization Strategies
@@ -116,23 +129,27 @@ def enhance_advanced_topics_section(readme_path: Path) -> bool:
 - **API Design**: Considerations for exposing this algorithm as an API
 
 """
-        
+
         # Insert before "Real-World Applications" or "Algorithm Steps"
         patterns = [
-            r'(## Real-World Applications\s*\n)',
-            r'(## Algorithm Steps\s*\n)',
-            r'(## Detailed Explanation\s*\n)',
+            r"(## Real-World Applications\s*\n)",
+            r"(## Algorithm Steps\s*\n)",
+            r"(## Detailed Explanation\s*\n)",
         ]
-        
+
         for pattern in patterns:
             match = re.search(pattern, content)
             if match:
-                content = content[:match.start()] + advanced_section + content[match.start():]
-                readme_path.write_text(content, encoding='utf-8')
+                content = (
+                    content[: match.start()]
+                    + advanced_section
+                    + content[match.start() :]
+                )
+                readme_path.write_text(content, encoding="utf-8")
                 return True
-        
+
         return False
-    
+
     except Exception as e:
         print(f"Error processing {readme_path}: {e}")
         return False
@@ -141,17 +158,17 @@ def enhance_advanced_topics_section(readme_path: Path) -> bool:
 def enhance_complexity_analysis(readme_path: Path) -> bool:
     """Enhance complexity analysis for graduate-level algorithms."""
     try:
-        content = readme_path.read_text(encoding='utf-8')
-        
+        content = readme_path.read_text(encoding="utf-8")
+
         if not is_graduate_level(readme_path):
             return False
-        
+
         # Check if complexity section is generic
-        if 'See README.md' in content or 'See complexity' in content.lower():
+        if "See README.md" in content or "See complexity" in content.lower():
             # Try to find and enhance complexity section
-            complexity_pattern = r'(## .*Complexity.*\n)(.*?)(?=\n##|\Z)'
+            complexity_pattern = r"(## .*Complexity.*\n)(.*?)(?=\n##|\Z)"
             match = re.search(complexity_pattern, content, re.DOTALL | re.IGNORECASE)
-            
+
             if match:
                 existing = match.group(2)
                 if len(existing.strip()) < 100:  # Generic or short
@@ -172,12 +189,14 @@ def enhance_complexity_analysis(readme_path: Path) -> bool:
 - **Practical Considerations**: Real-world complexity considerations
 
 """
-                    content = content[:match.end(1)] + enhanced + content[match.end(2):]
-                    readme_path.write_text(content, encoding='utf-8')
+                    content = (
+                        content[: match.end(1)] + enhanced + content[match.end(2) :]
+                    )
+                    readme_path.write_text(content, encoding="utf-8")
                     return True
-        
+
         return False
-    
+
     except Exception as e:
         print(f"Error processing {readme_path}: {e}")
         return False
@@ -188,7 +207,7 @@ def main():
     print("=" * 70)
     print("Phase 5.3: Enhance Graduate-Level Algorithm Documentation")
     print("=" * 70)
-    
+
     readme_files = []
     for readme_path in ROOT.rglob("**/README.md"):
         if "supporting_documents" in str(readme_path) or "scripts" in str(readme_path):
@@ -196,31 +215,35 @@ def main():
         if readme_path.name == "README.md" and readme_path.parent.name != "Professor":
             if is_graduate_level(readme_path):
                 readme_files.append(readme_path)
-    
+
     print(f"\nFound {len(readme_files)} graduate-level README files to process")
-    
+
     research_added = 0
     advanced_added = 0
     complexity_enhanced = 0
-    
+
     for i, readme_path in enumerate(readme_files, 1):
         if add_research_section(readme_path):
             research_added += 1
-        
+
         if enhance_advanced_topics_section(readme_path):
             advanced_added += 1
-        
+
         if enhance_complexity_analysis(readme_path):
             complexity_enhanced += 1
-        
-        if (research_added + advanced_added + complexity_enhanced) % 50 == 0 and (research_added + advanced_added + complexity_enhanced) > 0:
+
+        if (research_added + advanced_added + complexity_enhanced) % 50 == 0 and (
+            research_added + advanced_added + complexity_enhanced
+        ) > 0:
             print(f"[PROGRESS] Processed {i}/{len(readme_files)} files...")
-    
+
     print(f"\n[COMPLETE] Processed {len(readme_files)} graduate-level files")
     print(f"Research sections added: {research_added}")
     print(f"Advanced topics sections added: {advanced_added}")
     print(f"Complexity analysis enhanced: {complexity_enhanced}")
-    print(f"Total enhancements: {research_added + advanced_added + complexity_enhanced}")
+    print(
+        f"Total enhancements: {research_added + advanced_added + complexity_enhanced}"
+    )
     print("\nEnhancements applied:")
     print("  - Research and academic connections")
     print("  - Advanced topics and optimization strategies")
@@ -229,4 +252,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

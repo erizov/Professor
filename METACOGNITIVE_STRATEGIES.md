@@ -4,6 +4,13 @@
 **Purpose**: Help students develop effective learning strategies and self-awareness about their learning process.
 
 ---
+---
+
+## Learning How to Learn Algorithms
+
+**Purpose**: Help students develop effective learning strategies and self-awareness about their learning process.
+
+---
 
 ## What is Metacognition?
 
@@ -317,4 +324,3 @@ Metacognition is "thinking about thinking" - awareness and understanding of your
 ---
 
 *Remember: Learning is a skill. The more you practice metacognitive strategies, the better you become at learning.*
-

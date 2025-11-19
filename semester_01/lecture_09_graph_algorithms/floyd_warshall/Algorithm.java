@@ -130,16 +130,18 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("FLOYD-WARSHALL ALGORITHM DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: All-pairs shortest paths
         logger.info("Example 1: All-Pairs Shortest Paths");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         Graph g1 = new Graph(4, true);
         g1.addEdge(0, 1, 3.0);
@@ -157,7 +159,7 @@ public class Algorithm {
         for (int j = 0; j < 4; j++) {
             System.out.printf("  %d", j);
         }
-        logger.info();
+        logger.info("");
         
         for (int i = 0; i < 4; i++) {
             System.out.printf("  %d:", i);
@@ -169,13 +171,13 @@ public class Algorithm {
                     System.out.printf(" %3.0f", dist);
                 }
             }
-            logger.info();
+            logger.info("");
         }
-        logger.info();
+        logger.info("");
         
         // Example 2: Path reconstruction
         logger.info("Example 2: Path Reconstruction");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         int[][] paths = {{0, 3}, {1, 0}, {2, 3}};
         for (int[] p : paths) {
@@ -190,18 +192,18 @@ public class Algorithm {
                 System.out.printf(" (distance: %.0f)%n", distance);
             }
         }
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Time:  O(V³)");
         logger.info("  Space: O(V²)");
         logger.info("\nKey Advantages:");
         logger.info("  - All-pairs shortest paths");
         logger.info("  - Works with negative weights");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

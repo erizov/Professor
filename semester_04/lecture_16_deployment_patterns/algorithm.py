@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("DEPLOYMENT PATTERNS")
     print("=" * 70)
-    
+
     print("Algorithm implementation for Deployment Patterns")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

@@ -11,24 +11,26 @@ from typing import List, Optional, Dict, Set
 
 class StateChannels:
     """State channels for blockchain."""
+
     def __init__(self):
         self.channels: Dict[str, dict] = {}
         self.transactions: List[dict] = {}
-    
-    def open_channel(self, channel_id: str, participants: List[str], 
-                    deposit: float) -> None:
+
+    def open_channel(
+        self, channel_id: str, participants: List[str], deposit: float
+    ) -> None:
         """Open state channel."""
         self.channels[channel_id] = {
-            'participants': participants,
-            'balance': deposit,
-            'state': {}
+            "participants": participants,
+            "balance": deposit,
+            "state": {},
         }
-    
+
     def update_state(self, channel_id: str, state: dict) -> None:
         """Update channel state."""
         if channel_id in self.channels:
-            self.channels[channel_id]['state'] = state
-    
+            self.channels[channel_id]["state"] = state
+
     def close_channel(self, channel_id: str) -> dict:
         """Close channel."""
         if channel_id in self.channels:
@@ -41,11 +43,11 @@ def main() -> None:
     print("=" * 70)
     print("STATE CHANNELS")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for State Channels")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

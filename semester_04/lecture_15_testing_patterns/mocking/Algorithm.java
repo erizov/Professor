@@ -112,16 +112,18 @@ public class Algorithm {
 
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("MOCKING PATTERN DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Manual Mock
         logger.info("Example 1: Manual Mock Object");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         MockPaymentGateway mockGateway = new MockPaymentGateway();
         OrderService orderService = new OrderService(mockGateway);
@@ -131,11 +133,11 @@ public class Algorithm {
         System.out.printf("Order placed: %s%n", result);
         System.out.printf("Payment gateway called: %d times%n", mockGateway.callCount);
         System.out.printf("Last amount: $%.2f%n", mockGateway.lastAmount);
-        logger.info();
+        logger.info("");
         
         // Example 2: Mock Email Service
         logger.info("Example 2: Mock Email Service");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         MockEmailService mockEmail = new MockEmailService();
         NotificationService notificationService = new NotificationService(mockEmail);
@@ -145,11 +147,11 @@ public class Algorithm {
         System.out.printf("Notification sent: %s%n", result);
         System.out.printf("Email service called: %s%n", mockEmail.callCount > 0);
         System.out.printf("Email sent to: %s%n", mockEmail.lastTo);
-        logger.info();
+        logger.info("");
         
         // Example 3: Stub Implementation
         logger.info("Example 3: Stub Implementation");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         DatabaseStub dbStub = new DatabaseStub();
         Map<String, Object> user = new HashMap<>();
@@ -164,11 +166,11 @@ public class Algorithm {
         boolean deleted = dbStub.delete("user:123");
         System.out.printf("User deleted: %s%n", deleted);
         System.out.printf("User still exists: %s%n", dbStub.get("user:123") != null);
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern Summary:");
         logger.info("\nIntent:");
         logger.info("  Creates mock objects that simulate the behavior of real");
@@ -183,7 +185,7 @@ public class Algorithm {
         logger.info("  - Slow operations");
         logger.info("  - Unpredictable behavior");
         logger.info("  - Isolated unit testing");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

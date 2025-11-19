@@ -11,10 +11,12 @@ from typing import List, Optional, Dict, Set
 
 class TreeNode:
     """Binary tree node."""
+
     def __init__(self, val: int = 0):
         self.val = val
-        self.left: Optional['TreeNode'] = None
-        self.right: Optional['TreeNode'] = None
+        self.left: Optional["TreeNode"] = None
+        self.right: Optional["TreeNode"] = None
+
 
 def inorder_traversal(root: Optional[TreeNode]) -> List[int]:
     """Inorder traversal of binary tree."""
@@ -25,6 +27,7 @@ def inorder_traversal(root: Optional[TreeNode]) -> List[int]:
         result.extend(inorder_traversal(root.right))
     return result
 
+
 def preorder_traversal(root: Optional[TreeNode]) -> List[int]:
     """Preorder traversal of binary tree."""
     result = []
@@ -33,6 +36,7 @@ def preorder_traversal(root: Optional[TreeNode]) -> List[int]:
         result.extend(preorder_traversal(root.left))
         result.extend(preorder_traversal(root.right))
     return result
+
 
 def postorder_traversal(root: Optional[TreeNode]) -> List[int]:
     """Postorder traversal of binary tree."""
@@ -49,11 +53,11 @@ def main() -> None:
     print("=" * 70)
     print("BINARY TREE")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Binary Tree")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

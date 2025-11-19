@@ -51,17 +51,19 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
-        logger.info("=".repeat(70));
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
+        logger.info(separator);
         logger.info("FACADE DESIGN PATTERN");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         ComputerFacade computer = new ComputerFacade();
         computer.start();
-        logger.info();
+        logger.info("");
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern: Provides unified interface to subsystem");
-        logger.info("=".repeat(70));
+        logger.info(separator);
     }
 }

@@ -93,16 +93,18 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("FIBONACCI SEQUENCE - DYNAMIC PROGRAMMING");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Compare approaches
         logger.info("Example 1: Comparing Different Approaches");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         int n = 10;
         logger.info("Computing Fibonacci(" + n + "):");
@@ -111,11 +113,11 @@ public class Algorithm {
                          fibonacciMemoized(n, new HashMap<>()));
         logger.info("  Bottom-up DP: " + fibonacciBottomUp(n));
         logger.info("  Optimized: " + fibonacciOptimized(n));
-        logger.info();
+        logger.info("");
         
         // Example 2: Performance
         logger.info("Example 2: Performance Comparison");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         int[] testValues = {20, 30, 35};
         
@@ -152,20 +154,20 @@ public class Algorithm {
             System.out.printf("  Optimized: %.3f ms%n", 
                             (t2 - t1) / 1_000_000.0);
         }
-        logger.info();
+        logger.info("");
         
         // Example 3: Generate sequence
         logger.info("Example 3: Generating Fibonacci Sequence");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         List<Long> sequence = fibonacciSequence(15, "optimized");
         logger.info("First 15 Fibonacci numbers:");
         logger.info("  " + sequence);
-        logger.info();
+        logger.info("");
         
         // Example 4: Large values
         logger.info("Example 4: Large Fibonacci Numbers");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         int[] largeN = {50, 100};
         for (int nVal : largeN) {
@@ -173,11 +175,11 @@ public class Algorithm {
             logger.info("Fibonacci(" + nVal + ") = " + result);
             logger.info("  (digits: " + String.valueOf(result).length() + ")");
         }
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Naive: O(2^n) time, O(n) space");
         logger.info("  Memoized: O(n) time, O(n) space");
@@ -186,7 +188,7 @@ public class Algorithm {
         logger.info("\nKey Advantages:");
         logger.info("  - Demonstrates DP concepts");
         logger.info("  - Multiple optimization strategies");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

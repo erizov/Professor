@@ -28,7 +28,7 @@ SEMESTER_7_LECTURES = {
             "virtual_memory",
             "deadlock_detection",
             "interrupt_handling",
-        ]
+        ],
     },
     "lecture_40_llm_fundamentals": {
         "title": "Large Language Models Fundamentals",
@@ -39,7 +39,7 @@ SEMESTER_7_LECTURES = {
             "prompt_engineering",
             "fine_tuning_llm",
             "retrieval_augmented_generation",
-        ]
+        ],
     },
     "lecture_41_llm_advanced": {
         "title": "Advanced LLM Techniques",
@@ -50,7 +50,7 @@ SEMESTER_7_LECTURES = {
             "reinforcement_learning_hf",
             "llm_quantization",
             "llm_distillation",
-        ]
+        ],
     },
     "lecture_42_ci_cd_fundamentals": {
         "title": "CI/CD Fundamentals",
@@ -61,7 +61,7 @@ SEMESTER_7_LECTURES = {
             "test_automation",
             "build_automation",
             "deployment_strategies",
-        ]
+        ],
     },
     "lecture_43_ci_cd_advanced": {
         "title": "Advanced CI/CD",
@@ -72,7 +72,7 @@ SEMESTER_7_LECTURES = {
             "infrastructure_as_code",
             "gitops",
             "chaos_engineering",
-        ]
+        ],
     },
     "lecture_44_quantum_computing": {
         "title": "Quantum Computing Fundamentals",
@@ -83,7 +83,7 @@ SEMESTER_7_LECTURES = {
             "quantum_algorithms",
             "shor_algorithm",
             "grover_algorithm",
-        ]
+        ],
     },
     "lecture_45_blockchain_fundamentals": {
         "title": "Blockchain Fundamentals",
@@ -94,7 +94,7 @@ SEMESTER_7_LECTURES = {
             "proof_of_stake",
             "smart_contracts",
             "merkle_trees",
-        ]
+        ],
     },
     "lecture_46_blockchain_advanced": {
         "title": "Advanced Blockchain",
@@ -105,7 +105,7 @@ SEMESTER_7_LECTURES = {
             "decentralized_storage",
             "cryptocurrency_wallets",
             "nft_standards",
-        ]
+        ],
     },
 }
 
@@ -120,7 +120,7 @@ SEMESTER_8_LECTURES = {
             "sla_management",
             "customer_support_automation",
             "escalation_procedures",
-        ]
+        ],
     },
     "lecture_48_documentation": {
         "title": "Documentation Systems",
@@ -131,7 +131,7 @@ SEMESTER_8_LECTURES = {
             "documentation_generation",
             "version_control_docs",
             "user_guides",
-        ]
+        ],
     },
     "lecture_49_sql_fundamentals": {
         "title": "SQL Database Fundamentals",
@@ -142,7 +142,7 @@ SEMESTER_8_LECTURES = {
             "transactions",
             "stored_procedures",
             "triggers",
-        ]
+        ],
     },
     "lecture_50_sql_advanced": {
         "title": "Advanced SQL",
@@ -153,7 +153,7 @@ SEMESTER_8_LECTURES = {
             "denormalization",
             "partitioning",
             "replication",
-        ]
+        ],
     },
     "lecture_51_nosql_fundamentals": {
         "title": "NoSQL Database Fundamentals",
@@ -164,7 +164,7 @@ SEMESTER_8_LECTURES = {
             "graph_databases",
             "nosql_querying",
             "nosql_indexing",
-        ]
+        ],
     },
     "lecture_52_nosql_advanced": {
         "title": "Advanced NoSQL",
@@ -175,7 +175,7 @@ SEMESTER_8_LECTURES = {
             "nosql_replication",
             "hybrid_databases",
             "nosql_migration",
-        ]
+        ],
     },
     "lecture_53_database_operations": {
         "title": "Database Operations",
@@ -186,7 +186,7 @@ SEMESTER_8_LECTURES = {
             "performance_tuning",
             "capacity_planning",
             "database_security",
-        ]
+        ],
     },
     "lecture_54_data_modeling": {
         "title": "Data Modeling",
@@ -197,16 +197,18 @@ SEMESTER_8_LECTURES = {
             "data_lakes",
             "etl_processes",
             "data_governance",
-        ]
+        ],
     },
 }
 
-def create_algorithm_structure(semester_num: int, lecture_name: str, 
-                               algorithm_name: str, title: str) -> None:
+
+def create_algorithm_structure(
+    semester_num: int, lecture_name: str, algorithm_name: str, title: str
+) -> None:
     """Create algorithm folder structure."""
     alg_dir = BASE_PATH / f"semester_{semester_num}" / lecture_name / algorithm_name
     alg_dir.mkdir(parents=True, exist_ok=True)
-    
+
     # Create README.md
     readme_content = f"""# {algorithm_name.replace('_', ' ').title()}
 
@@ -265,10 +267,10 @@ Kubernetes implements {title.lower()} patterns for orchestration.
 ### Apache Kafka
 Kafka uses {title.lower()} for distributed systems.
 """
-    
-    with open(alg_dir / "README.md", 'w', encoding='utf-8') as f:
+
+    with open(alg_dir / "README.md", "w", encoding="utf-8") as f:
         f.write(readme_content)
-    
+
     # Create metadata.json
     metadata = {
         "name": algorithm_name,
@@ -277,10 +279,10 @@ Kafka uses {title.lower()} for distributed systems.
         "time_complexity": "Varies",
         "space_complexity": "Varies",
     }
-    
-    with open(alg_dir / "metadata.json", 'w', encoding='utf-8') as f:
+
+    with open(alg_dir / "metadata.json", "w", encoding="utf-8") as f:
         json.dump(metadata, f, indent=2)
-    
+
     # Create placeholder algorithm.py
     algorithm_py = f'''#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
@@ -322,16 +324,16 @@ def {algorithm_name}():
 if __name__ == "__main__":
     {algorithm_name}()
 '''
-    
-    with open(alg_dir / "algorithm.py", 'w', encoding='utf-8') as f:
+
+    with open(alg_dir / "algorithm.py", "w", encoding="utf-8") as f:
         f.write(algorithm_py)
-    
+
     # Create placeholder Algorithm.java
-    alg_name_upper = algorithm_name.replace('_', ' ').upper()
-    alg_name_title = algorithm_name.replace('_', ' ').title()
+    alg_name_upper = algorithm_name.replace("_", " ").upper()
+    alg_name_title = algorithm_name.replace("_", " ").title()
     title_lower = title.lower()
-    
-    algorithm_java = f'''/**
+
+    algorithm_java = f"""/**
  * {alg_name_title} implementation.
  * 
  * {alg_name_title} for {title_lower}.
@@ -354,9 +356,9 @@ public class Algorithm {{
         System.out.println("=".repeat(70));
     }}
 }}
-'''
-    
-    with open(alg_dir / "Algorithm.java", 'w', encoding='utf-8') as f:
+"""
+
+    with open(alg_dir / "Algorithm.java", "w", encoding="utf-8") as f:
         f.write(algorithm_java)
 
 
@@ -364,7 +366,7 @@ def create_semester_structure(semester_num: int, lectures: dict) -> None:
     """Create semester structure."""
     semester_dir = BASE_PATH / f"semester_{semester_num}"
     semester_dir.mkdir(exist_ok=True)
-    
+
     # Create semester README
     readme_content = f"""# Semester {semester_num}
 
@@ -375,23 +377,20 @@ This semester covers advanced topics in computer science and software engineerin
 ## Lectures
 
 """
-    
+
     for lecture_name, lecture_data in lectures.items():
         readme_content += f"### {lecture_data['title']}\n"
         readme_content += f"- **Lecture**: `{lecture_name}`\n"
         readme_content += f"- **Algorithms**: {len(lecture_data['algorithms'])}\n\n"
-        
-        for alg in lecture_data['algorithms']:
+
+        for alg in lecture_data["algorithms"]:
             create_algorithm_structure(
-                semester_num,
-                lecture_name,
-                alg,
-                lecture_data['title']
+                semester_num, lecture_name, alg, lecture_data["title"]
             )
-    
-    with open(semester_dir / "README.md", 'w', encoding='utf-8') as f:
+
+    with open(semester_dir / "README.md", "w", encoding="utf-8") as f:
         f.write(readme_content)
-    
+
     print(f"Created Semester {semester_num} with {len(lectures)} lectures")
 
 
@@ -399,13 +398,12 @@ def main():
     """Main function."""
     print("Creating Semester 7...")
     create_semester_structure(7, SEMESTER_7_LECTURES)
-    
+
     print("\nCreating Semester 8...")
     create_semester_structure(8, SEMESTER_8_LECTURES)
-    
+
     print("\nDone!")
 
 
 if __name__ == "__main__":
     main()
-

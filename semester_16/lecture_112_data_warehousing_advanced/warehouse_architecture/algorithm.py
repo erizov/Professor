@@ -11,18 +11,19 @@ from typing import List, Optional, Dict, Set
 
 class WarehouseArchitecture:
     """Data warehouse architecture."""
+
     def __init__(self):
         self.layers: Dict[str, List[dict]] = {
-            'staging': [],
-            'integration': [],
-            'presentation': []
+            "staging": [],
+            "integration": [],
+            "presentation": [],
         }
-    
+
     def add_component(self, layer: str, component: dict) -> None:
         """Add component to layer."""
         if layer in self.layers:
             self.layers[layer].append(component)
-    
+
     def get_architecture(self) -> dict:
         """Get warehouse architecture."""
         return self.layers
@@ -33,11 +34,11 @@ def main() -> None:
     print("=" * 70)
     print("WAREHOUSE ARCHITECTURE")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Warehouse Architecture")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

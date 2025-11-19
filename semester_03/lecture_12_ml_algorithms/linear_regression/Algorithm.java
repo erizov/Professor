@@ -100,16 +100,18 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("LINEAR REGRESSION DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Simple regression
         logger.info("Example 1: Simple Linear Regression");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         // Generate data: y = 3x + 5
         int n = 100;
@@ -128,11 +130,11 @@ public class Algorithm {
         System.out.printf("Learned: y = %.2fx + %.2f%n", 
                         model.weights[0], model.bias);
         System.out.printf("R² score: %.4f%n", model.score(X, y));
-        logger.info();
+        logger.info("");
         
         // Example 2: Multiple regression
         logger.info("Example 2: Multiple Linear Regression");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         double[][] X2 = new double[n][3];
         double[] y2 = new double[n];
@@ -153,18 +155,18 @@ public class Algorithm {
                         model2.weights[0], model2.weights[1],
                         model2.weights[2], model2.bias);
         System.out.printf("R² score: %.4f%n", model2.score(X2, y2));
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Time:  O(n*d*iter)");
         logger.info("  Space: O(d)");
         logger.info("\nKey Advantages:");
         logger.info("  - Simple and interpretable");
         logger.info("  - Fast training");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

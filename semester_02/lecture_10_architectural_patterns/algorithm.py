@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("LECTURE 10 ARCHITECTURAL PATTERNS")
     print("=" * 70)
-    
+
     print("Algorithm implementation for Lecture 10 Architectural Patterns")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

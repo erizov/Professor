@@ -11,27 +11,20 @@ from typing import List, Optional, Dict, Set
 
 class Exokernel:
     """Exokernel design."""
+
     def __init__(self):
         self.resources: Dict[str, dict] = {}
         self.libraries: List[dict] = {}
-    
-    def allocate_resource(self, resource_type: str, 
-                         amount: int) -> Optional[str]:
+
+    def allocate_resource(self, resource_type: str, amount: int) -> Optional[str]:
         """Allocate resource."""
         resource_id = f"RES-{len(self.resources)}"
-        self.resources[resource_id] = {
-            'type': resource_type,
-            'amount': amount
-        }
+        self.resources[resource_id] = {"type": resource_type, "amount": amount}
         return resource_id
-    
-    def register_library(self, lib_name: str, 
-                        resource_handler: callable) -> None:
+
+    def register_library(self, lib_name: str, resource_handler: callable) -> None:
         """Register library."""
-        self.libraries.append({
-            'name': lib_name,
-            'handler': resource_handler
-        })
+        self.libraries.append({"name": lib_name, "handler": resource_handler})
 
 
 def main() -> None:
@@ -39,11 +32,11 @@ def main() -> None:
     print("=" * 70)
     print("EXOKERNEL DESIGN")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Exokernel Design")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

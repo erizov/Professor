@@ -83,7 +83,7 @@ public class Algorithm {
     public static int[] heapSortVisualized(int[] arr) {
         int n = arr.length;
         logger.info("Initial array: " + Arrays.toString(arr));
-        logger.info();
+        logger.info("");
         
         // Build max heap
         logger.info("Building max heap:");
@@ -93,7 +93,7 @@ public class Algorithm {
                              ": " + Arrays.toString(arr));
         }
         logger.info("Max heap built: " + Arrays.toString(arr));
-        logger.info();
+        logger.info("");
         
         // Extract elements
         logger.info("Extracting elements:");
@@ -172,51 +172,53 @@ public class Algorithm {
      * Main method for demonstration.
      */
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("HEAP SORT DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Basic sorting
         logger.info("Example 1: Basic Integer Sorting");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data1 = {64, 34, 25, 12, 22, 11, 90};
         logger.info("Original: " + Arrays.toString(data1));
         int[] result1 = heapSort(data1.clone());
         logger.info("Sorted:   " + Arrays.toString(result1));
-        logger.info();
+        logger.info("");
         
         // Example 2: Already sorted
         logger.info("Example 2: Already Sorted Array");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data2 = {1, 2, 3, 4, 5, 6, 7};
         logger.info("Original: " + Arrays.toString(data2));
         int[] result2 = heapSort(data2.clone());
         logger.info("Sorted:   " + Arrays.toString(result2));
         logger.info("Note: Still O(n log n) - not adaptive");
-        logger.info();
+        logger.info("");
         
         // Example 3: Descending
         logger.info("Example 3: Descending Order");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data3 = {64, 34, 25, 12, 22, 11, 90};
         logger.info("Original: " + Arrays.toString(data3));
         int[] result3 = heapSortDescending(data3.clone());
         logger.info("Sorted (desc): " + Arrays.toString(result3));
-        logger.info();
+        logger.info("");
         
         // Example 4: Visualization
         logger.info("Example 4: Visualized Heap Sort Process");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data4 = {12, 11, 13, 5, 6, 7};
         heapSortVisualized(data4);
-        logger.info();
+        logger.info("");
         
         // Example 5: Performance
         logger.info("Example 5: Performance Measurement");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         Random rand = new Random(42);
         
@@ -245,8 +247,8 @@ public class Algorithm {
         long endTime = System.nanoTime();
         double duration = (endTime - startTime) / 1_000_000.0;
         
-        logger.info();
-        logger.info("=".repeat(70));
+        logger.info("");
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Time:  O(n log n) - all cases");
         logger.info("  Space: O(1) - in-place");
@@ -255,7 +257,7 @@ public class Algorithm {
         logger.info("  - Guaranteed O(n log n)");
         logger.info("  - In-place sorting");
         logger.info("  - No worst-case quadratic time");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal execution time: %.3f ms%n", duration);
     }
 }

@@ -20,7 +20,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 IMPORT_LOGGER = "import java.util.logging.Logger;"
-LOGGER_FIELD = "private static final Logger logger = Logger.getLogger(Algorithm.class.getName());"
+LOGGER_FIELD = (
+    "private static final Logger logger = Logger.getLogger(Algorithm.class.getName());"
+)
 
 
 def add_imports(content: str) -> str:
@@ -32,7 +34,9 @@ def add_imports(content: str) -> str:
     for i, line in enumerate(lines):
         if line.startswith("import "):
             insert_idx = i + 1
-        elif line.strip().startswith("public class") or line.strip().startswith("class "):
+        elif line.strip().startswith("public class") or line.strip().startswith(
+            "class "
+        ):
             insert_idx = i
             break
     lines.insert(insert_idx, IMPORT_LOGGER)

@@ -104,52 +104,54 @@ public class Algorithm {
      * Main method for demonstration.
      */
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("COUNTING SORT DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Basic sorting
         logger.info("Example 1: Basic Integer Sorting");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data1 = {4, 2, 2, 8, 3, 3, 1};
         logger.info("Original: " + Arrays.toString(data1));
         int[] result1 = countingSort(data1.clone());
         logger.info("Sorted:   " + Arrays.toString(result1));
-        logger.info();
+        logger.info("");
         
         // Example 2: Larger range
         logger.info("Example 2: Larger Range");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data2 = {64, 34, 25, 12, 22, 11, 90, 88};
         logger.info("Original: " + Arrays.toString(data2));
         int[] result2 = countingSort(data2.clone());
         logger.info("Sorted:   " + Arrays.toString(result2));
-        logger.info();
+        logger.info("");
         
         // Example 3: Negative numbers
         logger.info("Example 3: With Negative Numbers");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data3 = {3, -1, 2, -5, 0, 4, -3};
         logger.info("Original: " + Arrays.toString(data3));
         int[] result3 = countingSort(data3.clone());
         logger.info("Sorted:   " + Arrays.toString(result3));
-        logger.info();
+        logger.info("");
         
         // Example 4: Duplicates
         logger.info("Example 4: Many Duplicates");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data4 = {5, 2, 2, 2, 9, 1, 5, 5, 5};
         logger.info("Original: " + Arrays.toString(data4));
         int[] result4 = countingSort(data4.clone());
         logger.info("Sorted:   " + Arrays.toString(result4));
-        logger.info();
+        logger.info("");
         
         // Example 5: Performance measurement
         logger.info("Example 5: Performance Measurement");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         Random rand = new Random(42);
         int[] sizes = {100, 1000, 10000};
@@ -168,8 +170,8 @@ public class Algorithm {
             System.out.printf("n=%5d, k=100: %8.3f ms%n", size, ms);
         }
         
-        logger.info();
-        logger.info("=".repeat(70));
+        logger.info("");
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Time:  O(n + k) where k is the range");
         logger.info("  Space: O(n + k)");
@@ -189,7 +191,7 @@ public class Algorithm {
         logger.info("\nWhen NOT to use:");
         logger.info("  • Range is very large (k >> n)");
         logger.info("  • Sorting floats or strings");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         
         long endTime = System.nanoTime();
         double totalMs = (endTime - startTime) / 1_000_000.0;

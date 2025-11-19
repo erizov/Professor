@@ -46,18 +46,20 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
-        logger.info("=".repeat(70));
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
+        logger.info(separator);
         logger.info("PROXY DESIGN PATTERN");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         Image image = new ProxyImage("photo.jpg");
         logger.info("Image proxy created (not loaded yet)");
         image.display();
-        logger.info();
+        logger.info("");
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern: Provides surrogate for object");
-        logger.info("=".repeat(70));
+        logger.info(separator);
     }
 }

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Results Report</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .filters {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .filter-row {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .filter-group {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .filter-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        .filter-group input,
+        .filter-group select {
+            width: 100%;
+            padding: 8px;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .filter-group input:focus,
+        .filter-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .statistics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .stat-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            text-transform: uppercase;
+        }
+
+        .stat-card .value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .stat-card.success .value {
+            color: #4caf50;
+        }
+
+        .stat-card.failure .value {
+            color: #f44336;
+        }
+
+        .stat-card.timeout .value {
+            color: #ff9800;
+        }
+
+        .results-table {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: #667eea;
+            color: white;
+        }
+
+        th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        th:hover {
+            background: #5568d3;
+        }
+
+        th.sortable::after {
+            content: " ↕";
+            opacity: 0.5;
+        }
+
+        th.sort-asc::after {
+            content: " ↑";
+            opacity: 1;
+        }
+
+        th.sort-desc::after {
+            content: " ↓";
+            opacity: 1;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        tbody tr:hover {
+            background: #f9f9f9;
+        }
+
+        tbody tr.state-changed {
+            background: #fff3cd;
+            font-weight: bold;
+        }
+
+        tbody tr.state-changed.success {
+            background: #d4edda;
+        }
+
+        tbody tr.state-changed.failure {
+            background: #f8d7da;
+        }
+
+        td {
+            padding: 12px 15px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .status-badge.success {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-badge.failure {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .status-badge.timeout {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .status-badge.error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .status-badge.running {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+
+        .language-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 500;
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+
+        .history-toggle {
+            cursor: pointer;
+            color: #667eea;
+            text-decoration: underline;
+        }
+
+        .history-toggle:hover {
+            color: #5568d3;
+        }
+
+        .history-details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .history-details.show {
+            display: block;
+        }
+
+        .history-item {
+            padding: 5px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .history-item:last-child {
+            border-bottom: none;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Test Results Report</h1>
+            <p>Comprehensive algorithm test results with search, sorting, and state change tracking</p>
+        </div>
+
+        <div class="filters">
+            <div class="filter-row">
+                <div class="filter-group">
+                    <label for="search">Search Algorithm:</label>
+                    <input type="text" id="search" placeholder="Type to search...">
+                </div>
+                <div class="filter-group">
+                    <label for="status-filter">Status:</label>
+                    <select id="status-filter">
+                        <option value="">All Statuses</option>
+                        <option value="success">Success</option>
+                        <option value="failure">Failure</option>
+                        <option value="timeout">Timeout</option>
+                        <option value="error">Error</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="language-filter">Language:</label>
+                    <select id="language-filter">
+                        <option value="">All Languages</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="statistics" id="statistics">
+            <div class="stat-card">
+                <h3>Total Tests</h3>
+                <div class="value" id="total-tests">-</div>
+            </div>
+            <div class="stat-card success">
+                <h3>Success</h3>
+                <div class="value" id="success-count">-</div>
+            </div>
+            <div class="stat-card failure">
+                <h3>Failure</h3>
+                <div class="value" id="failure-count">-</div>
+            </div>
+            <div class="stat-card timeout">
+                <h3>Timeout</h3>
+                <div class="value" id="timeout-count">-</div>
+            </div>
+            <div class="stat-card">
+                <h3>State Changes (24h)</h3>
+                <div class="value" id="recent-changes">-</div>
+            </div>
+        </div>
+
+        <div class="results-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="sortable" data-sort="algorithm_path">Algorithm Path</th>
+                        <th class="sortable" data-sort="language">Language</th>
+                        <th class="sortable" data-sort="status">Status</th>
+                        <th class="sortable" data-sort="duration">Duration (s)</th>
+                        <th class="sortable" data-sort="timestamp">Last Test</th>
+                        <th>History</th>
+                    </tr>
+                </thead>
+                <tbody id="results-body">
+                    <tr>
+                        <td colspan="6" class="loading">Loading test results...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        let currentSort = { column: 'timestamp', order: 'desc' };
+        let currentFilters = { search: '', status: '', language: '' };
+
+        // Load statistics
+        async function loadStatistics() {
+            try {
+                const response = await fetch('/api/test-statistics');
+                const data = await response.json();
+
+                const total = Object.values(data.status_counts).reduce((a, b) => a + b, 0);
+                document.getElementById('total-tests').textContent = total;
+                document.getElementById('success-count').textContent = data.status_counts.success || 0;
+                document.getElementById('failure-count').textContent = data.status_counts.failure || 0;
+                document.getElementById('timeout-count').textContent = data.status_counts.timeout || 0;
+                document.getElementById('recent-changes').textContent = data.recent_changes || 0;
+            } catch (error) {
+                console.error('Error loading statistics:', error);
+            }
+        }
+
+        // Load test results
+        async function loadResults() {
+            const params = new URLSearchParams({
+                search: currentFilters.search,
+                status: currentFilters.status,
+                language: currentFilters.language,
+                sort: currentSort.column,
+                order: currentSort.order,
+            });
+
+            try {
+                const response = await fetch(`/api/test-results?${params}`);
+                const data = await response.json();
+
+                const tbody = document.getElementById('results-body');
+                tbody.innerHTML = '';
+
+                if (data.results.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="6" class="no-results">No test results found</td></tr>';
+                    return;
+                }
+
+                data.results.forEach(result => {
+                    const row = document.createElement('tr');
+                    
+                    // Add state change highlighting
+                    if (result.state_changed) {
+                        row.classList.add('state-changed');
+                        row.classList.add(result.latest_status);
+                    }
+
+                    const latest = result.recent_results[0];
+                    const timestamp = new Date(latest.timestamp).toLocaleString();
+
+                    row.innerHTML = `
+                        <td>${result.algorithm_path}</td>
+                        <td><span class="language-badge">${result.language}</span></td>
+                        <td><span class="status-badge ${result.latest_status}">${result.latest_status}</span></td>
+                        <td>${latest.duration.toFixed(2)}</td>
+                        <td>${timestamp}</td>
+                        <td>
+                            <span class="history-toggle" onclick="toggleHistory(this)">Show History (${result.recent_results.length})</span>
+                            <div class="history-details">
+                                ${result.recent_results.map(r => `
+                                    <div class="history-item">
+                                        <strong>${r.status}</strong> - ${new Date(r.timestamp).toLocaleString()} (${r.duration.toFixed(2)}s)
+                                        ${r.error_message ? `<br><small style="color: #f44336;">${r.error_message.substring(0, 100)}...</small>` : ''}
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </td>
+                    `;
+
+                    tbody.appendChild(row);
+                });
+            } catch (error) {
+                console.error('Error loading results:', error);
+                document.getElementById('results-body').innerHTML = 
+                    '<tr><td colspan="6" class="no-results">Error loading test results</td></tr>';
+            }
+        }
+
+        function toggleHistory(element) {
+            const details = element.nextElementSibling;
+            details.classList.toggle('show');
+            element.textContent = details.classList.contains('show') 
+                ? element.textContent.replace('Show', 'Hide')
+                : element.textContent.replace('Hide', 'Show');
+        }
+
+        // Sort handling
+        document.querySelectorAll('.sortable').forEach(th => {
+            th.addEventListener('click', () => {
+                const column = th.dataset.sort;
+                if (currentSort.column === column) {
+                    currentSort.order = currentSort.order === 'asc' ? 'desc' : 'asc';
+                } else {
+                    currentSort.column = column;
+                    currentSort.order = 'desc';
+                }
+
+                // Update sort indicators
+                document.querySelectorAll('.sortable').forEach(t => {
+                    t.classList.remove('sort-asc', 'sort-desc');
+                });
+                th.classList.add(`sort-${currentSort.order}`);
+
+                loadResults();
+            });
+        });
+
+        // Filter handling
+        document.getElementById('search').addEventListener('input', (e) => {
+            currentFilters.search = e.target.value;
+            loadResults();
+        });
+
+        document.getElementById('status-filter').addEventListener('change', (e) => {
+            currentFilters.status = e.target.value;
+            loadResults();
+        });
+
+        document.getElementById('language-filter').addEventListener('change', (e) => {
+            currentFilters.language = e.target.value;
+            loadResults();
+        });
+
+        // Initial load
+        loadStatistics();
+        loadResults();
+
+        // Auto-refresh every 30 seconds
+        setInterval(() => {
+            loadStatistics();
+            loadResults();
+        }, 30000);
+    </script>
+</body>
+</html>
+
+

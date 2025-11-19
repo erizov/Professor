@@ -10,6 +10,8 @@ public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
 
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         logger.info("==".repeat(35));
         logger.info("KMP String Matching");
         logger.info("==".repeat(35));

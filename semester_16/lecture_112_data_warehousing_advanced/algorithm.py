@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("DATA ENGINEERING")
     print("=" * 70)
-    
+
     print("Algorithm implementation for Data Engineering")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

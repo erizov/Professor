@@ -27,7 +27,9 @@ def test_crypto_algorithms(algo_name, path_parts):
 
     module = import_module_from_path(path)
     if algo_name == "sha256":
-        fn = find_callable(module, ["sha256_hex", "sha256"])  # prefer hex for comparison
+        fn = find_callable(
+            module, ["sha256_hex", "sha256"]
+        )  # prefer hex for comparison
         if fn is None:
             pytest.skip("sha256 function not found")
         # Known test vector for 'abc'

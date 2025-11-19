@@ -9,18 +9,20 @@ public class Algorithm {
 
     
     public static void main(String[] args) {
-        logger.info("=".repeat(70));
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
+        logger.info(separator);
         logger.info("ATTENTION MECHANISMS DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         logger.info("Implementation in progress...");
-        logger.info();
+        logger.info("");
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Time:  Varies");
         logger.info("  Space: Varies");
-        logger.info("=".repeat(70));
+        logger.info(separator);
     }
 }

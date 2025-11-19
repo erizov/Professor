@@ -15,8 +15,8 @@ ROOT = Path(__file__).resolve().parents[1]
 # Algorithm-specific implementations
 ALGORITHM_LOGIC = {
     # Sorting algorithms
-    'counting_sort': {
-        'python': '''def counting_sort(arr: List[int]) -> List[int]:
+    "counting_sort": {
+        "python": '''def counting_sort(arr: List[int]) -> List[int]:
     """
     Sort array using counting sort (for non-negative integers).
     
@@ -45,7 +45,7 @@ ALGORITHM_LOGIC = {
         result.extend([i] * count[i])
     
     return result''',
-        'java': '''public static int[] countingSort(int[] arr) {
+        "java": """public static int[] countingSort(int[] arr) {
     if (arr == null || arr.length == 0) {
         return new int[0];
     }
@@ -67,11 +67,10 @@ ALGORITHM_LOGIC = {
     }
     
     return result;
-}'''
+}""",
     },
-    
-    'radix_sort': {
-        'python': '''def radix_sort(arr: List[int]) -> List[int]:
+    "radix_sort": {
+        "python": '''def radix_sort(arr: List[int]) -> List[int]:
     """
     Sort array using radix sort.
     
@@ -115,7 +114,7 @@ def counting_sort_by_digit(arr: List[int], exp: int) -> List[int]:
         count[index] -= 1
     
     return output''',
-        'java': '''public static void radixSort(int[] arr) {
+        "java": """public static void radixSort(int[] arr) {
     if (arr == null || arr.length == 0) {
         return;
     }
@@ -146,12 +145,11 @@ private static void countingSortByDigit(int[] arr, int exp) {
     }
     
     System.arraycopy(output, 0, arr, 0, n);
-}'''
+}""",
     },
-    
     # Searching algorithms
-    'interpolation_search': {
-        'python': '''def interpolation_search(arr: List[int], target: int) -> Optional[int]:
+    "interpolation_search": {
+        "python": '''def interpolation_search(arr: List[int], target: int) -> Optional[int]:
     """
     Search in sorted array using interpolation search.
     
@@ -185,7 +183,7 @@ private static void countingSortByDigit(int[] arr, int exp) {
             right = pos - 1
     
     return None''',
-        'java': '''public static int interpolationSearch(int[] arr, int target) {
+        "java": """public static int interpolationSearch(int[] arr, int target) {
     if (arr == null || arr.length == 0) {
         return -1;
     }
@@ -209,11 +207,10 @@ private static void countingSortByDigit(int[] arr, int exp) {
     }
     
     return -1;
-}'''
+}""",
     },
-    
-    'exponential_search': {
-        'python': '''def exponential_search(arr: List[int], target: int) -> Optional[int]:
+    "exponential_search": {
+        "python": '''def exponential_search(arr: List[int], target: int) -> Optional[int]:
     """
     Search in sorted array using exponential search.
     
@@ -254,7 +251,7 @@ private static void countingSortByDigit(int[] arr, int exp) {
             right = mid - 1
     
     return None''',
-        'java': '''public static int exponentialSearch(int[] arr, int target) {
+        "java": """public static int exponentialSearch(int[] arr, int target) {
     if (arr == null || arr.length == 0) {
         return -1;
     }
@@ -286,12 +283,11 @@ private static int binarySearch(int[] arr, int target, int left, int right) {
         }
     }
     return -1;
-}'''
+}""",
     },
-    
     # Tree algorithms
-    'avl_tree': {
-        'python': '''class AVLNode:
+    "avl_tree": {
+        "python": '''class AVLNode:
     def __init__(self, val):
         self.val = val
         self.left = None
@@ -366,7 +362,7 @@ def insert_avl(root, val):
         return left_rotate(root)
     
     return root''',
-        'java': '''public static class AVLNode {
+        "java": """public static class AVLNode {
     int val, height;
     AVLNode left, right;
     
@@ -442,12 +438,11 @@ public static AVLNode insert(AVLNode root, int val) {
     }
     
     return root;
-}'''
+}""",
     },
-    
     # Dynamic Programming
-    'longest_common_subsequence': {
-        'python': '''def longest_common_subsequence(str1: str, str2: str) -> int:
+    "longest_common_subsequence": {
+        "python": '''def longest_common_subsequence(str1: str, str2: str) -> int:
     """
     Find length of longest common subsequence.
     
@@ -472,7 +467,7 @@ public static AVLNode insert(AVLNode root, int val) {
                 dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
     
     return dp[m][n]''',
-        'java': '''public static int longestCommonSubsequence(String str1, String str2) {
+        "java": """public static int longestCommonSubsequence(String str1, String str2) {
     int m = str1.length();
     int n = str2.length();
     int[][] dp = new int[m + 1][n + 1];
@@ -488,66 +483,72 @@ public static AVLNode insert(AVLNode root, int val) {
     }
     
     return dp[m][n];
-}'''
-    }
+}""",
+    },
 }
+
 
 def implement_algorithm_logic(file_path: Path, algorithm_name: str) -> bool:
     """Implement algorithm-specific logic for TODO sections."""
     if not file_path.exists():
         return False
-    
+
     try:
-        content = file_path.read_text(encoding='utf-8')
-        
+        content = file_path.read_text(encoding="utf-8")
+
         # Check if has TODO
-        if 'TODO: Implement' not in content and '# TODO' not in content:
+        if "TODO: Implement" not in content and "# TODO" not in content:
             return False
-        
+
         # Get implementation
-        lang = 'python' if file_path.suffix == '.py' else 'java'
+        lang = "python" if file_path.suffix == ".py" else "java"
         impl = ALGORITHM_LOGIC.get(algorithm_name, {}).get(lang)
-        
+
         if not impl:
             return False
-        
+
         # Replace TODO with implementation
         # Find function/method with TODO
-        if lang == 'python':
-            pattern = r'(def\s+' + re.escape(algorithm_name) + r'[^:]*:\s*"""[^"]*"""\s*.*?)(# TODO.*?)(\n\s+return|def |if __name__)'
-            replacement = r'\1' + impl + r'\3'
+        if lang == "python":
+            pattern = (
+                r"(def\s+"
+                + re.escape(algorithm_name)
+                + r'[^:]*:\s*"""[^"]*"""\s*.*?)(# TODO.*?)(\n\s+return|def |if __name__)'
+            )
+            replacement = r"\1" + impl + r"\3"
         else:
-            pattern = r'(public\s+static[^{]*\{[^}]*)(// TODO.*?)(\n\s+\})'
-            replacement = r'\1' + impl + r'\3'
-        
+            pattern = r"(public\s+static[^{]*\{[^}]*)(// TODO.*?)(\n\s+\})"
+            replacement = r"\1" + impl + r"\3"
+
         new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
-        
+
         if new_content != content:
-            file_path.write_text(new_content, encoding='utf-8')
+            file_path.write_text(new_content, encoding="utf-8")
             return True
-        
+
         return False
     except Exception as e:
         print(f"Error implementing {file_path}: {e}")
         return False
 
+
 def main():
     """Implement algorithm logic for TODO sections."""
     implemented = 0
-    
+
     for algo_name in ALGORITHM_LOGIC.keys():
         for py_file in ROOT.rglob(f"*/{algo_name}/algorithm.py"):
             if implement_algorithm_logic(py_file, algo_name):
                 implemented += 1
                 print(f"[OK] Implemented: {py_file.relative_to(ROOT)}")
-        
+
         for java_file in ROOT.rglob(f"*/{algo_name}/Algorithm.java"):
             if implement_algorithm_logic(java_file, algo_name):
                 implemented += 1
                 print(f"[OK] Implemented: {java_file.relative_to(ROOT)}")
-    
+
     print(f"\n[COMPLETE] Implemented logic for {implemented} algorithms")
+
 
 if __name__ == "__main__":
     main()
-

@@ -11,19 +11,21 @@ from typing import List, Optional, Dict, Set
 
 class QuantumSimulation:
     """Quantum simulation."""
+
     def __init__(self):
         self.simulators: Dict[str, dict] = {}
         self.simulations: List[dict] = {}
-    
-    def simulate_hamiltonian(self, hamiltonian: dict, 
-                            initial_state: List[complex], 
-                            time: float) -> List[complex]:
+
+    def simulate_hamiltonian(
+        self, hamiltonian: dict, initial_state: List[complex], time: float
+    ) -> List[complex]:
         """Simulate Hamiltonian evolution."""
         # Simplified simulation
         return initial_state
-    
-    def simulate_circuit(self, gates: List[dict], 
-                        initial_state: List[complex]) -> List[complex]:
+
+    def simulate_circuit(
+        self, gates: List[dict], initial_state: List[complex]
+    ) -> List[complex]:
         """Simulate quantum circuit."""
         state = initial_state[:]
         for gate in gates:
@@ -37,11 +39,11 @@ def main() -> None:
     print("=" * 70)
     print("QUANTUM SIMULATION")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Quantum Simulation")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

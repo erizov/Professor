@@ -28,22 +28,17 @@ GRAPH_ALGOS = {
 def small_graph():
     # Simple undirected/unweighted graph for BFS/DFS
     return {
-        'A': ['B', 'C'],
-        'B': ['A', 'D', 'E'],
-        'C': ['A', 'F'],
-        'D': ['B'],
-        'E': ['B', 'F'],
-        'F': ['C', 'E']
+        "A": ["B", "C"],
+        "B": ["A", "D", "E"],
+        "C": ["A", "F"],
+        "D": ["B"],
+        "E": ["B", "F"],
+        "F": ["C", "E"],
     }
 
 
 def weighted_graph():
-    return {
-        'A': {'B': 1, 'C': 4},
-        'B': {'C': 2, 'D': 5},
-        'C': {'D': 1},
-        'D': {}
-    }
+    return {"A": {"B": 1, "C": 4}, "B": {"C": 2, "D": 5}, "C": {"D": 1}, "D": {}}
 
 
 @pytest.mark.parametrize("algo_name, path_parts", GRAPH_ALGOS.items())
@@ -59,11 +54,11 @@ def test_graph_algorithms(algo_name, path_parts):
 
     if algo_name in ("bfs", "dfs"):
         g = small_graph()
-        order = fn(g, 'A')
-        assert 'A' in order
+        order = fn(g, "A")
+        assert "A" in order
         assert set(order) <= set(g.keys())
     elif algo_name == "dijkstra":
         g = weighted_graph()
-        dist = fn(g, 'A')
-        assert dist['A'] == 0
-        assert dist['D'] == 4  # A->B (1), B->C (2), C->D (1) total 4
+        dist = fn(g, "A")
+        assert dist["A"] == 0
+        assert dist["D"] == 4  # A->B (1), B->C (2), C->D (1) total 4

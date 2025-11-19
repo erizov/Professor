@@ -7,7 +7,12 @@ from typing import Any, Dict
 
 import pytest
 
-from framework.performance_timer import PerformanceTimer, benchmark, ResourceAnalyzer, compare_algorithms
+from framework.performance_timer import (
+    PerformanceTimer,
+    benchmark,
+    ResourceAnalyzer,
+    compare_algorithms,
+)
 
 
 # ----------------------------
@@ -60,11 +65,14 @@ class FakeTimer:
 def fake_env(monkeypatch):
     # Patch time.perf_counter deterministically
     ft = FakeTimer([0.1, 0.2, 0.3, 0.4, 0.5])
-    monkeypatch.setattr('framework.performance_timer.time', types.SimpleNamespace(perf_counter=ft.perf_counter))
+    monkeypatch.setattr(
+        "framework.performance_timer.time",
+        types.SimpleNamespace(perf_counter=ft.perf_counter),
+    )
 
     # Patch tracemalloc
     fake_tm = FakeTracemalloc()
-    monkeypatch.setattr('framework.performance_timer.tracemalloc', fake_tm)
+    monkeypatch.setattr("framework.performance_timer.tracemalloc", fake_tm)
 
     return ft, fake_tm
 
@@ -80,7 +88,12 @@ def test_measure_returns_result_and_metrics(fake_env):
     # Result is correct
     assert result == 5
     # Metrics contain expected keys
-    assert set(metrics.keys()) == {"execution_time_ms", "memory_current_kb", "memory_peak_kb", "input_size"}
+    assert set(metrics.keys()) == {
+        "execution_time_ms",
+        "memory_current_kb",
+        "memory_peak_kb",
+        "input_size",
+    }
     # Memory figures reflect fake tracemalloc
     assert metrics["memory_current_kb"] == pytest.approx(10.0, rel=1e-6)
     assert metrics["memory_peak_kb"] == pytest.approx(20.0, rel=1e-6)
@@ -130,31 +143,30 @@ def test_benchmark_decorator_prints_and_returns(fake_env, capsys):
 
 
 def test_resource_analyzer_analyze_and_print(capsys):
-    metrics = {
-        'time': {'avg_ms': 5.0},
-        'memory': {'avg_kb': 50.0}
-    }
+    metrics = {"time": {"avg_ms": 5.0}, "memory": {"avg_kb": 50.0}}
     analysis = ResourceAnalyzer.analyze_constraints(
-        algorithm_name='AlgoX',
-        time_complexity='O(n log n)',
-        space_complexity='O(1)',
+        algorithm_name="AlgoX",
+        time_complexity="O(n log n)",
+        space_complexity="O(1)",
         metrics=metrics,
     )
 
     # Check key fields
-    assert analysis['algorithm'] == 'AlgoX'
-    assert analysis['constraints']['low_memory'] == 'EXCELLENT'
-    assert analysis['constraints']['low_cpu'] == 'GOOD'
-    assert analysis['constraints']['distributed'] == 'GOOD'
-    assert analysis['constraints']['edge'] == 'EXCELLENT'
-    assert any('Suitable for memory-constrained' in r for r in analysis['recommendations'])
+    assert analysis["algorithm"] == "AlgoX"
+    assert analysis["constraints"]["low_memory"] == "EXCELLENT"
+    assert analysis["constraints"]["low_cpu"] == "GOOD"
+    assert analysis["constraints"]["distributed"] == "GOOD"
+    assert analysis["constraints"]["edge"] == "EXCELLENT"
+    assert any(
+        "Suitable for memory-constrained" in r for r in analysis["recommendations"]
+    )
 
     # Validate print output
     ResourceAnalyzer.print_analysis(analysis)
     out = capsys.readouterr().out
-    assert 'Resource Constraint Analysis: AlgoX' in out
-    assert 'Time:  O(n log n)' in out
-    assert 'Space: O(1)' in out
+    assert "Resource Constraint Analysis: AlgoX" in out
+    assert "Time:  O(n log n)" in out
+    assert "Space: O(1)" in out
 
 
 def test_compare_algorithms_uses_timer_and_prints(fake_env, capsys):
@@ -165,13 +177,16 @@ def test_compare_algorithms_uses_timer_and_prints(fake_env, capsys):
     def f2(arr):
         return list(reversed(arr))
 
-    compare_algorithms([
-        ("noop", f1),
-        ("reverse", f2),
-    ], dataset_size=10)
+    compare_algorithms(
+        [
+            ("noop", f1),
+            ("reverse", f2),
+        ],
+        dataset_size=10,
+    )
 
     out = capsys.readouterr().out
     # Header and two lines for the algorithms
-    assert 'Algorithm Comparison (n=10)' in out
-    assert 'noop' in out
-    assert 'reverse' in out
+    assert "Algorithm Comparison (n=10)" in out
+    assert "noop" in out
+    assert "reverse" in out

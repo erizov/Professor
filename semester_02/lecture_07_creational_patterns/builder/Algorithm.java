@@ -231,16 +231,18 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("BUILDER DESIGN PATTERN DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Computer Builder
         logger.info("Example 1: Computer Builder");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         GamingComputerBuilder gamingBuilder = new GamingComputerBuilder();
         Computer gamingPc = gamingBuilder
@@ -262,20 +264,20 @@ public class Algorithm {
             .getComputer();
         
         logger.info("Office PC: " + officePc);
-        logger.info();
+        logger.info("");
         
         // Example 2: Using Director
         logger.info("Example 2: Using Director");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         ComputerDirector director = new ComputerDirector(new GamingComputerBuilder());
         Computer pc1 = director.buildGamingPc();
         logger.info("Director-built Gaming PC: " + pc1);
-        logger.info();
+        logger.info("");
         
         // Example 3: Fluent Pizza Builder
         logger.info("Example 3: Fluent Pizza Builder");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         Pizza pizza1 = new PizzaBuilder()
             .size("Large")
@@ -297,11 +299,11 @@ public class Algorithm {
             .build();
         
         logger.info("Pizza 2: " + pizza2);
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern Summary:");
         logger.info("\nKey Advantages:");
         logger.info("  - Step-by-step construction");
@@ -310,7 +312,7 @@ public class Algorithm {
         logger.info("\nWhen to Use:");
         logger.info("  - Complex object construction");
         logger.info("  - Many optional parameters");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

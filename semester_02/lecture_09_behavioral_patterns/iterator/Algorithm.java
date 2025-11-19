@@ -54,10 +54,12 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
-        logger.info("=".repeat(70));
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
+        logger.info(separator);
         logger.info("ITERATOR DESIGN PATTERN");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         BookCollection collection = new BookCollection();
         collection.addBook("Design Patterns");
@@ -69,10 +71,10 @@ public class Algorithm {
         while (iterator.hasNext()) {
             logger.info("  - " + iterator.next());
         }
-        logger.info();
+        logger.info("");
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern: Sequential access to elements");
-        logger.info("=".repeat(70));
+        logger.info(separator);
     }
 }

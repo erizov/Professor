@@ -67,28 +67,30 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("STRATEGY DESIGN PATTERN");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         PaymentProcessor processor = new PaymentProcessor();
         
         processor.setStrategy(new CreditCardStrategy("1234567890123456"));
         processor.processPayment(100.0);
-        logger.info();
+        logger.info("");
         
         processor.setStrategy(new PayPalStrategy("user@paypal.com"));
         processor.processPayment(50.0);
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern: Encapsulates algorithms");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

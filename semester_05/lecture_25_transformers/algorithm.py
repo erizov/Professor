@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("TRANSFORMERS")
     print("=" * 70)
-    
+
     print("Algorithm implementation for Transformers")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

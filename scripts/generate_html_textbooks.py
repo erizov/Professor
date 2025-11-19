@@ -11,26 +11,26 @@ from pathlib import Path
 from typing import List
 
 
-def create_html_document(title: str, files: List[str], 
-                         output_file: str) -> bool:
+def create_html_document(title: str, files: List[str], output_file: str) -> bool:
     """
     Create HTML document from markdown files.
-    
+
     Args:
         title: Document title
         files: List of markdown files to include
         output_file: Output HTML filename
-        
+
     Returns:
         True if successful
     """
     print(f"\nGenerating: {output_file}")
     print("-" * 70)
-    
+
     html_parts = []
-    
+
     # HTML Header
-    html_parts.append(f"""<!DOCTYPE html>
+    html_parts.append(
+        f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -298,50 +298,56 @@ def create_html_document(title: str, files: List[str],
         <div class="toc">
             <h2>📚 Table of Contents</h2>
             <ul>
-""")
-    
+"""
+    )
+
     # Build TOC
     toc_items = []
     for filepath in files:
         path = Path(filepath)
         if path.exists():
-            name = path.stem.replace('_', ' ').replace('-', ' ').title()
-            anchor = path.stem.lower().replace('_', '-')
+            name = path.stem.replace("_", " ").replace("-", " ").title()
+            anchor = path.stem.lower().replace("_", "-")
             toc_items.append((name, anchor))
-            html_parts.append(f'                <li><a href="#{anchor}">{name}</a></li>\n')
-    
-    html_parts.append("""            </ul>
+            html_parts.append(
+                f'                <li><a href="#{anchor}">{name}</a></li>\n'
+            )
+
+    html_parts.append(
+        """            </ul>
         </div>
         <div class="page-break"></div>
         
         <!-- Main Content -->
-""")
-    
+"""
+    )
+
     # Add content from files
     for filepath in files:
         path = Path(filepath)
         if not path.exists():
             print(f"  ⚠ Skipping: {filepath} (not found)")
             continue
-        
+
         print(f"  ✓ Adding: {filepath}")
-        content = path.read_text(encoding='utf-8')
-        
-        anchor = path.stem.lower().replace('_', '-')
-        name = path.stem.replace('_', ' ').replace('-', ' ').title()
-        
+        content = path.read_text(encoding="utf-8")
+
+        anchor = path.stem.lower().replace("_", "-")
+        name = path.stem.replace("_", " ").replace("-", " ").title()
+
         html_parts.append(f'        <div class="section" id="{anchor}">\n')
-        html_parts.append(f'            <h1>{name}</h1>\n')
-        
+        html_parts.append(f"            <h1>{name}</h1>\n")
+
         # Simple markdown to HTML conversion
         html_content = markdown_to_html(content)
         html_parts.append(html_content)
-        
-        html_parts.append('        </div>\n')
+
+        html_parts.append("        </div>\n")
         html_parts.append('        <div class="page-break"></div>\n\n')
-    
+
     # Footer
-    html_parts.append("""    </div>
+    html_parts.append(
+        """    </div>
     
     <!-- Print Button -->
     <button class="print-button no-print" onclick="window.print()">
@@ -362,13 +368,14 @@ def create_html_document(title: str, files: List[str],
     </script>
 </body>
 </html>
-""")
-    
+"""
+    )
+
     # Write HTML file
     try:
-        with open(output_file, 'w', encoding='utf-8') as f:
+        with open(output_file, "w", encoding="utf-8") as f:
             f.writelines(html_parts)
-        
+
         file_size = Path(output_file).stat().st_size / 1024
         print(f"  ✓ Generated: {output_file} ({file_size:.1f} KB)")
         return True
@@ -380,98 +387,100 @@ def create_html_document(title: str, files: List[str],
 def markdown_to_html(markdown_text: str) -> str:
     """
     Convert markdown to HTML (simple implementation).
-    
+
     Args:
         markdown_text: Markdown text
-        
+
     Returns:
         HTML string
     """
-    lines = markdown_text.split('\n')
+    lines = markdown_text.split("\n")
     html_lines = []
     in_code_block = False
     in_list = False
-    code_lang = ''
-    
+    code_lang = ""
+
     for line in lines:
         # Code blocks
-        if line.strip().startswith('```'):
+        if line.strip().startswith("```"):
             if in_code_block:
-                html_lines.append('</code></pre>')
+                html_lines.append("</code></pre>")
                 in_code_block = False
             else:
                 code_lang = line.strip()[3:].strip()
                 html_lines.append(f'<pre><code class="{code_lang}">')
                 in_code_block = True
             continue
-        
+
         if in_code_block:
-            escaped = line.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+            escaped = (
+                line.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+            )
             html_lines.append(escaped)
             continue
-        
+
         # Headings
-        if line.startswith('####'):
-            html_lines.append(f'<h4>{line[4:].strip()}</h4>')
-        elif line.startswith('###'):
-            html_lines.append(f'<h3>{line[3:].strip()}</h3>')
-        elif line.startswith('##'):
-            html_lines.append(f'<h2>{line[2:].strip()}</h2>')
-        elif line.startswith('#'):
-            html_lines.append(f'<h1>{line[1:].strip()}</h1>')
-        
+        if line.startswith("####"):
+            html_lines.append(f"<h4>{line[4:].strip()}</h4>")
+        elif line.startswith("###"):
+            html_lines.append(f"<h3>{line[3:].strip()}</h3>")
+        elif line.startswith("##"):
+            html_lines.append(f"<h2>{line[2:].strip()}</h2>")
+        elif line.startswith("#"):
+            html_lines.append(f"<h1>{line[1:].strip()}</h1>")
+
         # Lists
-        elif line.strip().startswith('- ') or line.strip().startswith('* '):
+        elif line.strip().startswith("- ") or line.strip().startswith("* "):
             if not in_list:
-                html_lines.append('<ul>')
+                html_lines.append("<ul>")
                 in_list = True
-            html_lines.append(f'<li>{line.strip()[2:]}</li>')
-        elif line.strip().startswith(('1.', '2.', '3.', '4.', '5.')):
+            html_lines.append(f"<li>{line.strip()[2:]}</li>")
+        elif line.strip().startswith(("1.", "2.", "3.", "4.", "5.")):
             if not in_list:
-                html_lines.append('<ol>')
+                html_lines.append("<ol>")
                 in_list = True
-            html_lines.append(f'<li>{line.strip()[3:]}</li>')
+            html_lines.append(f"<li>{line.strip()[3:]}</li>")
         else:
             if in_list:
-                html_lines.append('</ul>')
+                html_lines.append("</ul>")
                 in_list = False
-            
+
             # Paragraphs
             if line.strip():
                 # Format badges and alerts
                 formatted = line
-                if '✅' in line or '✓' in line:
+                if "✅" in line or "✓" in line:
                     formatted = f'<div class="alert alert-success">{line}</div>'
-                elif '⚠️' in line or '❌' in line:
+                elif "⚠️" in line or "❌" in line:
                     formatted = f'<div class="alert alert-warning">{line}</div>'
-                elif '📝' in line or 'ℹ️' in line:
+                elif "📝" in line or "ℹ️" in line:
                     formatted = f'<div class="alert alert-info">{line}</div>'
                 else:
-                    formatted = f'<p>{format_inline(line)}</p>'
-                
+                    formatted = f"<p>{format_inline(line)}</p>"
+
                 html_lines.append(formatted)
             else:
-                html_lines.append('<br>')
-    
+                html_lines.append("<br>")
+
     if in_list:
-        html_lines.append('</ul>')
-    
-    return '\n'.join(html_lines)
+        html_lines.append("</ul>")
+
+    return "\n".join(html_lines)
 
 
 def format_inline(text: str) -> str:
     """Format inline markdown elements."""
     import re
-    
+
     # Bold
-    text = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', text)
+    text = re.sub(r"\*\*(.*?)\*\*", r"<strong>\1</strong>", text)
     # Italic
-    text = re.sub(r'\*(.*?)\*', r'<em>\1</em>', text)
+    text = re.sub(r"\*(.*?)\*", r"<em>\1</em>", text)
     # Inline code
-    text = re.sub(r'`(.*?)`', r'<code>\1</code>', text)
+    text = re.sub(r"`(.*?)`", r"<code>\1</code>", text)
     # Links
-    text = re.sub(r'\[(.*?)\]\((.*?)\)', r'<a href="\2">\1</a>', text)
-    
+    text = re.sub(r"\[(.*?)\]\((.*?)\)", r'<a href="\2">\1</a>', text)
+
     return text
 
 
@@ -481,7 +490,7 @@ def main():
     print("HTML TEXTBOOK GENERATION")
     print("=" * 70)
     print("\nGenerating HTML documents (print to PDF from browser)")
-    
+
     # Main textbook
     textbook_files = [
         "README.md",
@@ -489,13 +498,13 @@ def main():
         "COURSE_PLAN_6SEMESTERS.md",
         "ALGORITHM_INDEX.md",
     ]
-    
+
     success1 = create_html_document(
         "Algorithms Course - 6 Semesters",
         textbook_files,
-        "Algorithms_Course_Textbook.html"
+        "Algorithms_Course_Textbook.html",
     )
-    
+
     # Improvements document
     improvements_files = [
         "CRITIQUES.md",
@@ -503,13 +512,13 @@ def main():
         "ACTUAL_STATUS.md",
         "AI_IMPLEMENTATION_GUIDE.md",
     ]
-    
+
     success2 = create_html_document(
         "Professional Critiques & Improvements",
         improvements_files,
-        "Algorithms_Course_Improvements.html"
+        "Algorithms_Course_Improvements.html",
     )
-    
+
     print("\n" + "=" * 70)
     if success1 and success2:
         print("✅ HTML documents generated successfully!")
@@ -528,11 +537,11 @@ def main():
     else:
         print("⚠️ Some documents failed to generate")
     print("=" * 70)
-    
+
     return 0 if (success1 and success2) else 1
 
 
 if __name__ == "__main__":
     import sys
-    sys.exit(main())
 
+    sys.exit(main())

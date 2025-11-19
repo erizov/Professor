@@ -70,7 +70,7 @@ def main():
 if __name__ == "__main__":
     main()
 ''',
-        "java": '''/**
+        "java": """/**
  * Bubble Sort implementation.
  */
 public class Algorithm {
@@ -126,16 +126,15 @@ public class Algorithm {
         System.out.println("]");
     }
 }
-'''
+""",
     },
-    
     # More implementations will be added below...
 }
 
 
 def get_simple_implementation(algo_name, language):
     """Generate a simple working implementation for any algorithm."""
-    
+
     if language == "python":
         return f'''#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
@@ -167,10 +166,10 @@ def main():
 if __name__ == "__main__":
     main()
 '''
-    
+
     else:  # Java
-        class_desc = algo_name.replace('_', ' ').title()
-        return f'''/**
+        class_desc = algo_name.replace("_", " ").title()
+        return f"""/**
  * {class_desc} implementation.
  */
 public class Algorithm {{
@@ -190,13 +189,13 @@ public class Algorithm {{
         {algo_name}();
     }}
 }}
-'''
+"""
 
 
 def implement_algorithm(algo_path):
     """Generate implementation for a specific algorithm."""
     algo_name = os.path.basename(algo_path)
-    
+
     # Check if we have a specific implementation
     if algo_name in ALGORITHM_IMPLEMENTATIONS:
         py_code = ALGORITHM_IMPLEMENTATIONS[algo_name]["python"]
@@ -205,26 +204,26 @@ def implement_algorithm(algo_path):
         # Generate simple generic implementation
         py_code = get_simple_implementation(algo_name, "python")
         java_code = get_simple_implementation(algo_name, "java")
-    
+
     # Write Python file
     py_file = os.path.join(algo_path, "algorithm.py")
-    with open(py_file, 'w', encoding='utf-8') as f:
+    with open(py_file, "w", encoding="utf-8") as f:
         f.write(py_code)
-    
+
     # Write Java file
     java_file = os.path.join(algo_path, "Algorithm.java")
-    with open(java_file, 'w', encoding='utf-8') as f:
+    with open(java_file, "w", encoding="utf-8") as f:
         f.write(java_code)
-    
+
     print(f"✓ Implemented {algo_name}")
 
 
 def main():
     """Generate implementations for all pending algorithms."""
     base_path = Path(__file__).resolve().parents[1]
-    
+
     pending_algorithms = []
-    
+
     # Scan for all algorithms
     for semester_dir in sorted(base_path.glob("semester_*")):
         for lecture_dir in sorted(semester_dir.glob("lecture_*")):
@@ -236,18 +235,17 @@ def main():
                         content = py_file.read_text()
                         if len(content) < 500:  # Likely a placeholder
                             pending_algorithms.append(str(algo_dir))
-    
+
     print(f"Found {len(pending_algorithms)} algorithms to implement")
     print("=" * 70)
-    
+
     for i, algo_path in enumerate(pending_algorithms, 1):
         print(f"[{i}/{len(pending_algorithms)}] Processing {algo_path}")
         implement_algorithm(algo_path)
-    
+
     print("=" * 70)
     print(f"✓ Successfully implemented {len(pending_algorithms)} algorithms!")
 
 
 if __name__ == "__main__":
     main()
-

@@ -11,13 +11,17 @@ from typing import List, Optional, Dict, Set
 
 class SparseAttention:
     """Sparse attention mechanism."""
+
     def __init__(self, sparsity: float = 0.5):
         self.sparsity = sparsity
         self.attention_weights: List[List[float]] = {}
-    
-    def compute_attention(self, queries: List[List[float]], 
-                        keys: List[List[float]],
-                        values: List[List[float]]) -> List[List[float]]:
+
+    def compute_attention(
+        self,
+        queries: List[List[float]],
+        keys: List[List[float]],
+        values: List[List[float]],
+    ) -> List[List[float]]:
         """Compute sparse attention."""
         # Simplified sparse attention
         n = len(queries)
@@ -36,11 +40,11 @@ def main() -> None:
     print("=" * 70)
     print("SPARSE ATTENTION")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Sparse Attention")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

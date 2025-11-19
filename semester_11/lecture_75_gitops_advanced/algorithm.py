@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("GITOPS")
     print("=" * 70)
-    
+
     print("Algorithm implementation for GitOps")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

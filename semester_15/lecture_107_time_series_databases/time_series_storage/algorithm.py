@@ -11,25 +11,25 @@ from typing import List, Optional, Dict, Set
 
 class TimeSeriesStorage:
     """Time series storage."""
+
     def __init__(self):
         self.series: Dict[str, List[dict]] = {}
         self.indexes: Dict[str, dict] = {}
-    
+
     def write(self, series_id: str, timestamp: float, value: float) -> None:
         """Write data point."""
         if series_id not in self.series:
             self.series[series_id] = []
-        self.series[series_id].append({
-            'timestamp': timestamp,
-            'value': value
-        })
-    
-    def read(self, series_id: str, start_time: float, 
-            end_time: float) -> List[dict]:
+        self.series[series_id].append({"timestamp": timestamp, "value": value})
+
+    def read(self, series_id: str, start_time: float, end_time: float) -> List[dict]:
         """Read time range."""
         if series_id in self.series:
-            return [p for p in self.series[series_id] 
-                   if start_time <= p['timestamp'] <= end_time]
+            return [
+                p
+                for p in self.series[series_id]
+                if start_time <= p["timestamp"] <= end_time
+            ]
         return []
 
 
@@ -38,11 +38,11 @@ def main() -> None:
     print("=" * 70)
     print("TIME SERIES STORAGE")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Time Series Storage")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

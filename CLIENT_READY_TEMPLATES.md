@@ -4,6 +4,13 @@
 **Purpose**: Provide ready-to-use templates for professional services related to algorithm implementation and optimization.
 
 ---
+---
+
+## Professional Templates for Freelancers and Consultants
+
+**Purpose**: Provide ready-to-use templates for professional services related to algorithm implementation and optimization.
+
+---
 
 ## Project Proposal Template
 
@@ -322,4 +329,3 @@ $100,000 in increased engagement
 ---
 
 *These templates are starting points. Customize based on your specific needs and client requirements.*
-

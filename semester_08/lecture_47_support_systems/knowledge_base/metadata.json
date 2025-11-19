@@ -3,5 +3,6 @@
   "category": "Support Systems",
   "description": "Knowledge Base for support systems",
   "time_complexity": "Varies",
-  "space_complexity": "Varies"
+  "space_complexity": "Varies",
+  "algorithm_type": "fundamental"
 }

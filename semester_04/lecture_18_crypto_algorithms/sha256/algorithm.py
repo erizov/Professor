@@ -12,13 +12,16 @@ from typing import List, Optional, Dict, Set
 def sha256_hash(data: str) -> str:
     """SHA-256 hash (simplified)."""
     import hashlib
-    return hashlib.sha256(data.encode('utf-8')).hexdigest()
+
+    return hashlib.sha256(data.encode("utf-8")).hexdigest()
+
 
 class SHA256:
     """SHA-256 hashing."""
+
     def __init__(self):
         self.hashes: List[str] = {}
-    
+
     def hash(self, data: str) -> str:
         """Hash data."""
         return sha256_hash(data)
@@ -29,11 +32,11 @@ def main() -> None:
     print("=" * 70)
     print("SHA256")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Sha256")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

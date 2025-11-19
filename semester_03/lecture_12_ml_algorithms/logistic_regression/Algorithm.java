@@ -108,16 +108,18 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("LOGISTIC REGRESSION DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Binary classification
         logger.info("Example 1: Binary Classification");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         int n = 100;
         double[][] X = new double[n][2];
@@ -146,11 +148,11 @@ public class Algorithm {
         }
         logger.info("]");
         System.out.printf("Bias: %.4f%n", model.bias);
-        logger.info();
+        logger.info("");
         
         // Example 2: Probability predictions
         logger.info("Example 2: Probability Predictions");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         double[][] testSamples = {
             {3, 3},
@@ -167,18 +169,18 @@ public class Algorithm {
             System.out.printf("  P(class=1) = %.4f%n", probas[i]);
             System.out.printf("  Predicted class: %d%n", predictions[i]);
         }
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Time:  O(n*d*iter)");
         logger.info("  Space: O(d)");
         logger.info("\nKey Advantages:");
         logger.info("  - Probabilistic predictions");
         logger.info("  - Interpretable");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

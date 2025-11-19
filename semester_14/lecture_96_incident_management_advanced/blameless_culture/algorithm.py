@@ -11,38 +11,39 @@ from typing import List, Optional, Dict, Set
 
 class BlamelessPostmortem:
     """Blameless postmortem system."""
+
     def __init__(self):
         self.incidents: List[dict] = []
-    
-    def create_incident(self, title: str, description: str, 
-                       impact: str) -> str:
+
+    def create_incident(self, title: str, description: str, impact: str) -> str:
         """Create incident."""
         import time
+
         incident_id = f"INC-{int(time.time())}"
         incident = {
-            'id': incident_id,
-            'title': title,
-            'description': description,
-            'impact': impact,
-            'created_at': time.time(),
-            'root_causes': [],
-            'lessons_learned': [],
-            'action_items': []
+            "id": incident_id,
+            "title": title,
+            "description": description,
+            "impact": impact,
+            "created_at": time.time(),
+            "root_causes": [],
+            "lessons_learned": [],
+            "action_items": [],
         }
         self.incidents.append(incident)
         return incident_id
-    
+
     def add_root_cause(self, incident_id: str, cause: str) -> None:
         """Add root cause."""
-        incident = next((i for i in self.incidents if i['id'] == incident_id), None)
+        incident = next((i for i in self.incidents if i["id"] == incident_id), None)
         if incident:
-            incident['root_causes'].append(cause)
-    
+            incident["root_causes"].append(cause)
+
     def add_lesson_learned(self, incident_id: str, lesson: str) -> None:
         """Add lesson learned."""
-        incident = next((i for i in self.incidents if i['id'] == incident_id), None)
+        incident = next((i for i in self.incidents if i["id"] == incident_id), None)
         if incident:
-            incident['lessons_learned'].append(lesson)
+            incident["lessons_learned"].append(lesson)
 
 
 def main() -> None:
@@ -50,11 +51,11 @@ def main() -> None:
     print("=" * 70)
     print("BLAMELESS CULTURE")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Blameless Culture")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

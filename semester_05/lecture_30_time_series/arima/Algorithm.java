@@ -10,6 +10,8 @@ public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
 
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
         logger.info("==".repeat(35));
@@ -18,7 +20,7 @@ public class Algorithm {
         logger.info("Category: Time Series");
         logger.info("Time: O(n*p*d*q)");
         logger.info("Space: O(n)");
-        logger.info();
+        logger.info("");
         logger.info("Resource Requirements:");
         logger.info("  - GPU: Optional");
         logger.info("  - Memory: Medium");

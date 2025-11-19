@@ -31,7 +31,6 @@ List<Order> orders = entityManager.createQuery(
     "SELECT o FROM Order o", Order.class).getResultList();
 Collections.sort(orders, Comparator.comparing(Order::getDate));""",
     },
-    
     "merge_sort": {
         "spring": """// Spring Data - Merge Sort for stable sorting
 public interface ProductRepository extends JpaRepository<Product, Long> {
@@ -44,7 +43,6 @@ var sortedProducts = products
     .ThenBy(p => p.Name)
     .ToList();""",
     },
-    
     "heap_sort": {
         "kubernetes": """# Kubernetes Priority Queue uses heap sort
 apiVersion: scheduling.k8s.io/v1
@@ -54,7 +52,6 @@ metadata:
 value: 1000
 # Pods scheduled using heap-based priority queue""",
     },
-    
     # Searching Algorithms
     "binary_search": {
         "spring": """// Spring Data JPA - Binary search on indexed fields
@@ -72,7 +69,6 @@ if (index >= 0) {
     return users[index];
 }""",
     },
-    
     # Tree Algorithms
     "binary_search_tree": {
         "spring": """// Spring BeanFactory uses tree structure for dependency resolution
@@ -88,7 +84,6 @@ InitialContext ctx = new InitialContext();
 // Tree-based naming: java:comp/env/jdbc/MyDB
 DataSource ds = (DataSource) ctx.lookup("java:comp/env/jdbc/MyDB");""",
     },
-    
     "avl_tree": {
         "kubernetes": """# Kubernetes etcd uses balanced trees (similar to AVL)
 # etcd stores cluster state in balanced tree structure
@@ -100,7 +95,6 @@ metadata:
 data:
   key: value""",
     },
-    
     # Graph Algorithms
     "bfs": {
         "kubernetes": """# Kubernetes service discovery uses BFS
@@ -122,7 +116,6 @@ services:
       - db
       - cache""",
     },
-    
     "dfs": {
         "spring": """// Spring dependency injection uses DFS
 // Traverses dependency graph depth-first
@@ -138,7 +131,6 @@ public class PaymentService {
     private NotificationService notificationService;
 }""",
     },
-    
     "dijkstra": {
         "kubernetes": """# Kubernetes network routing uses Dijkstra's algorithm
 # Finds shortest path between pods/services
@@ -148,7 +140,6 @@ metadata:
   name: allow-frontend
 # Shortest path routing for network policies""",
     },
-    
     # Dynamic Programming
     "edit_distance": {
         "kafka": """// Kafka message deduplication uses edit distance
@@ -157,7 +148,6 @@ Properties props = new Properties();
 props.put("enable.idempotence", "true");
 // Edit distance used for message similarity detection""",
     },
-    
     "knapsack": {
         "kubernetes": """# Kubernetes resource allocation uses knapsack-like optimization
 # Maximizes pod placement within node capacity
@@ -175,7 +165,6 @@ spec:
         cpu: "200m"
 # Knapsack algorithm optimizes resource allocation""",
     },
-    
     # String Algorithms
     "kmp": {
         "kafka": """// Kafka topic name pattern matching uses KMP
@@ -184,7 +173,6 @@ KafkaConsumer<String, String> consumer = new KafkaConsumer<>(props);
 Pattern pattern = Pattern.compile("user-.*");
 // KMP algorithm for efficient pattern matching""",
     },
-    
     # Design Patterns
     "singleton": {
         "spring": """// Spring Singleton Bean (default scope)
@@ -223,7 +211,6 @@ public class CacheService {
 // Startup.cs
 services.AddSingleton<CacheService>();""",
     },
-    
     "factory": {
         "spring": """// Spring Factory Pattern - BeanFactory
 @Component
@@ -268,7 +255,6 @@ public class PaymentProcessorFactory {
     }
 }""",
     },
-    
     "abstract_factory": {
         "spring": """// Spring Abstract Factory - Multiple bean factories
 @Configuration
@@ -297,7 +283,6 @@ public class SqlServerFactory : IDatabaseFactory {
     public ICommand CreateCommand() => new SqlCommand();
 }""",
     },
-    
     "observer": {
         "spring": """// Spring Event Listener (Observer Pattern)
 @Component
@@ -347,7 +332,6 @@ public class EmailService {
     }
 }""",
     },
-    
     "strategy": {
         "spring": """// Spring Strategy Pattern - Multiple implementations
 public interface PaymentStrategy {
@@ -398,7 +382,6 @@ public class Sorter {
     }
 }""",
     },
-    
     "mvc": {
         "spring": """// Spring MVC Pattern
 @Controller
@@ -442,7 +425,6 @@ public class Order {
     public decimal Total { get; set; }
 }""",
     },
-    
     "repository": {
         "spring": """// Spring Data Repository Pattern
 public interface UserRepository extends JpaRepository<User, Long> {
@@ -474,7 +456,6 @@ public class UserRepository : IUserRepository {
     }
 }""",
     },
-    
     # Security Patterns
     "jwt": {
         "spring": """// Spring Security JWT
@@ -519,7 +500,6 @@ public class JwtTokenService {
     }
 }""",
     },
-    
     "oauth": {
         "spring": """// Spring Security OAuth 2.0
 @Configuration
@@ -536,7 +516,6 @@ public class OAuth2Config extends AuthorizationServerConfigurerAdapter {
     }
 }""",
     },
-    
     "authentication": {
         "spring": """// Spring Security Authentication
 @Service
@@ -569,7 +548,6 @@ public class AuthenticationService {
     }
 }""",
     },
-    
     "authorization": {
         "spring": """// Spring Security Authorization (RBAC)
 @Configuration
@@ -600,7 +578,6 @@ services.AddAuthorization(options => {
     });
 });""",
     },
-    
     # Testing Patterns
     "unit_testing": {
         "spring": """// Spring Boot Unit Testing
@@ -642,7 +619,6 @@ public class UserServiceTests {
     }
 }""",
     },
-    
     "mocking": {
         "spring": """// Spring Mockito Mocking
 @ExtendWith(MockitoExtension.class)
@@ -678,7 +654,6 @@ public class PaymentServiceTests {
     }
 }""",
     },
-    
     # Deployment Patterns
     "blue_green": {
         "kubernetes": """# Kubernetes Blue-Green Deployment
@@ -739,7 +714,6 @@ services:
 
 # Switch traffic by updating load balancer configuration""",
     },
-    
     "canary": {
         "kubernetes": """# Kubernetes Canary Deployment
 # Main deployment (90% traffic)
@@ -768,7 +742,6 @@ spec:
     app: myapp
   # Istio/Linkerd handles traffic splitting""",
     },
-    
     # Performance Patterns
     "caching": {
         "spring": """// Spring Cache Abstraction
@@ -809,7 +782,6 @@ public class ProductService {
     }
 }""",
     },
-    
     "load_balancing": {
         "kubernetes": """# Kubernetes Load Balancing
 apiVersion: v1
@@ -837,7 +809,6 @@ services:
 ---
 # docker-compose up --scale web=3""",
     },
-    
     "rate_limiting": {
         "spring": """// Spring Rate Limiting with Bucket4j
 @Configuration
@@ -884,7 +855,6 @@ spec:
           value: 0.1
         fixedDelay: 5s""",
     },
-    
     # Integration Patterns
     "message_queue": {
         "spring": """// Spring JMS Message Queue
@@ -929,7 +899,6 @@ for (ConsumerRecord<String, String> record : records) {
     processOrder(record.value());
 }""",
     },
-    
     "publish_subscribe": {
         "kafka": """// Apache Kafka Pub-Sub
 // Publisher
@@ -976,7 +945,6 @@ public class NotificationService {
     }
 }""",
     },
-    
     # Crypto Algorithms
     "aes": {
         "spring": """// Spring Security AES Encryption
@@ -1018,7 +986,6 @@ public class EncryptionService {
     }
 }""",
     },
-    
     "rsa": {
         "spring": """// Spring Security RSA
 @Service
@@ -1038,7 +1005,6 @@ public class RsaEncryptionService {
     }
 }""",
     },
-    
     "sha256": {
         "spring": """// Spring Security SHA-256 Hashing
 @Service
@@ -1063,7 +1029,6 @@ public class PasswordHasher {
     }
 }""",
     },
-    
     # Distributed Patterns
     "leader_election": {
         "kubernetes": """# Kubernetes Leader Election
@@ -1090,7 +1055,6 @@ props.put("group.id", "my-consumer-group");
 KafkaConsumer<String, String> consumer = new KafkaConsumer<>(props);
 consumer.subscribe(Collections.singletonList("topic"));""",
     },
-    
     "circuit_breaker": {
         "spring": """// Spring Cloud Circuit Breaker (Resilience4j)
 @Service
@@ -1113,7 +1077,6 @@ public class ExternalServiceClient {
     }
 }""",
     },
-    
     "retry_pattern": {
         "spring": """// Spring Retry
 @Service
@@ -1135,7 +1098,6 @@ public class PaymentService {
 public class RetryConfig {
 }""",
     },
-    
     # ML Algorithms
     "linear_regression": {
         "spring": """// Spring ML Integration (example structure)
@@ -1148,7 +1110,6 @@ public class PredictionService {
     }
 }""",
     },
-    
     "svm": {
         "spring": """// Spring ML - SVM Classifier
 @Service
@@ -1161,7 +1122,6 @@ public class ClassificationService {
     }
 }""",
     },
-    
     # Monitoring
     "log_aggregation": {
         "kubernetes": """# Kubernetes Log Aggregation (Fluentd/ELK)
@@ -1297,7 +1257,7 @@ public class Service {
 def infer_category(lecture_path: str) -> Optional[str]:
     """Infer category from lecture path."""
     path_lower = lecture_path.lower()
-    
+
     if any(x in path_lower for x in ["sorting", "sort"]):
         return "sorting"
     elif any(x in path_lower for x in ["searching", "search"]):
@@ -1310,46 +1270,73 @@ def infer_category(lecture_path: str) -> Optional[str]:
         return "dp"
     elif any(x in path_lower for x in ["string", "strings"]):
         return "strings"
-    elif any(x in path_lower for x in ["security", "crypto", "encryption", "jwt", "oauth", "authentication"]):
+    elif any(
+        x in path_lower
+        for x in ["security", "crypto", "encryption", "jwt", "oauth", "authentication"]
+    ):
         return "security"
     elif any(x in path_lower for x in ["testing", "test", "tdd", "mocking"]):
         return "testing"
     elif any(x in path_lower for x in ["deployment", "blue_green", "canary"]):
         return "deployment"
-    elif any(x in path_lower for x in ["performance", "caching", "load_balancing", "rate_limiting"]):
+    elif any(
+        x in path_lower
+        for x in ["performance", "caching", "load_balancing", "rate_limiting"]
+    ):
         return "performance"
-    elif any(x in path_lower for x in ["pattern", "solid", "creational", "structural", "behavioral", "architectural"]):
+    elif any(
+        x in path_lower
+        for x in [
+            "pattern",
+            "solid",
+            "creational",
+            "structural",
+            "behavioral",
+            "architectural",
+        ]
+    ):
         return "patterns"
-    elif any(x in path_lower for x in ["integration", "message_queue", "publish_subscribe", "cqrs"]):
+    elif any(
+        x in path_lower
+        for x in ["integration", "message_queue", "publish_subscribe", "cqrs"]
+    ):
         return "integration"
-    elif any(x in path_lower for x in ["distributed", "leader_election", "circuit_breaker"]):
+    elif any(
+        x in path_lower for x in ["distributed", "leader_election", "circuit_breaker"]
+    ):
         return "distributed"
-    elif any(x in path_lower for x in ["monitoring", "observability", "log_aggregation"]):
+    elif any(
+        x in path_lower for x in ["monitoring", "observability", "log_aggregation"]
+    ):
         return "monitoring"
-    elif any(x in path_lower for x in ["ml", "machine_learning", "neural", "cnn", "rnn"]):
+    elif any(
+        x in path_lower for x in ["ml", "machine_learning", "neural", "cnn", "rnn"]
+    ):
         return "ml"
-    
+
     return None
 
 
-def get_framework_examples(algorithm_name: str, category: Optional[str]) -> Dict[str, str]:
+def get_framework_examples(
+    algorithm_name: str, category: Optional[str]
+) -> Dict[str, str]:
     """Get framework examples for an algorithm."""
     # Try exact match first
     normalized_name = algorithm_name.lower().replace("-", "_")
     if normalized_name in FRAMEWORK_EXAMPLES:
         return FRAMEWORK_EXAMPLES[normalized_name]
-    
+
     # Try category-based examples
     if category and category in CATEGORY_FRAMEWORKS:
         return CATEGORY_FRAMEWORKS[category]
-    
+
     return {}
 
 
 def generate_examples_section(algorithm_name: str, category: Optional[str]) -> str:
     """Generate the Examples of Implementation section."""
     examples = get_framework_examples(algorithm_name, category)
-    
+
     if not examples:
         return """## Examples of Implementation
 
@@ -1357,10 +1344,10 @@ This algorithm/pattern is implemented in various frameworks and technologies.
 
 *Note: Framework-specific examples will be added based on actual implementations.*
 """
-    
+
     section = "## Examples of Implementation\n\n"
     section += "This algorithm/pattern is implemented in the following frameworks and technologies:\n\n"
-    
+
     # Spring Framework
     if "spring" in examples:
         section += "### Spring Framework\n\n"
@@ -1369,33 +1356,51 @@ This algorithm/pattern is implemented in various frameworks and technologies.
         section += "\n```\n\n"
         # More specific purpose based on algorithm type
         if "singleton" in algorithm_name.lower():
-            section += "**Purpose**: Spring manages beans as singletons by default, ensuring " \
-                      "single instance per application context for efficient resource usage.\n\n"
+            section += (
+                "**Purpose**: Spring manages beans as singletons by default, ensuring "
+                "single instance per application context for efficient resource usage.\n\n"
+            )
         elif "factory" in algorithm_name.lower():
-            section += "**Purpose**: Spring's BeanFactory and ApplicationContext use factory pattern " \
-                      "to create and manage bean instances with dependency injection.\n\n"
+            section += (
+                "**Purpose**: Spring's BeanFactory and ApplicationContext use factory pattern "
+                "to create and manage bean instances with dependency injection.\n\n"
+            )
         elif "observer" in algorithm_name.lower():
-            section += "**Purpose**: Spring's ApplicationEventPublisher implements observer pattern " \
-                      "for decoupled event-driven communication between components.\n\n"
+            section += (
+                "**Purpose**: Spring's ApplicationEventPublisher implements observer pattern "
+                "for decoupled event-driven communication between components.\n\n"
+            )
         elif "jwt" in algorithm_name.lower() or "token" in algorithm_name.lower():
-            section += "**Purpose**: Spring Security uses JWT for stateless authentication and " \
-                      "authorization in REST APIs and microservices.\n\n"
+            section += (
+                "**Purpose**: Spring Security uses JWT for stateless authentication and "
+                "authorization in REST APIs and microservices.\n\n"
+            )
         elif "repository" in algorithm_name.lower():
-            section += "**Purpose**: Spring Data repositories abstract data access, providing " \
-                      "consistent interface for database operations across different persistence technologies.\n\n"
+            section += (
+                "**Purpose**: Spring Data repositories abstract data access, providing "
+                "consistent interface for database operations across different persistence technologies.\n\n"
+            )
         elif "mvc" in algorithm_name.lower():
-            section += "**Purpose**: Spring MVC separates concerns into Model, View, and Controller " \
-                      "for building web applications with clear separation of responsibilities.\n\n"
+            section += (
+                "**Purpose**: Spring MVC separates concerns into Model, View, and Controller "
+                "for building web applications with clear separation of responsibilities.\n\n"
+            )
         elif "sort" in algorithm_name.lower():
-            section += "**Purpose**: Spring Data JPA uses sorting algorithms for efficient query " \
-                      "result ordering and pagination in database operations.\n\n"
+            section += (
+                "**Purpose**: Spring Data JPA uses sorting algorithms for efficient query "
+                "result ordering and pagination in database operations.\n\n"
+            )
         elif "search" in algorithm_name.lower():
-            section += "**Purpose**: Spring Data repositories use search algorithms for indexed " \
-                      "queries and efficient data retrieval from databases.\n\n"
+            section += (
+                "**Purpose**: Spring Data repositories use search algorithms for indexed "
+                "queries and efficient data retrieval from databases.\n\n"
+            )
         else:
-            section += "**Purpose**: Spring Framework uses this pattern for dependency injection, " \
-                      "bean management, and enterprise application development.\n\n"
-    
+            section += (
+                "**Purpose**: Spring Framework uses this pattern for dependency injection, "
+                "bean management, and enterprise application development.\n\n"
+            )
+
     # J2EE
     if "j2ee" in examples:
         section += "### J2EE (Java Enterprise Edition)\n\n"
@@ -1404,86 +1409,110 @@ This algorithm/pattern is implemented in various frameworks and technologies.
         section += "\n```\n\n"
         # More specific purpose for J2EE
         if "singleton" in algorithm_name.lower():
-            section += "**Purpose**: J2EE Singleton EJB ensures single instance per application " \
-                      "for shared resources like caches and connection pools.\n\n"
+            section += (
+                "**Purpose**: J2EE Singleton EJB ensures single instance per application "
+                "for shared resources like caches and connection pools.\n\n"
+            )
         elif "factory" in algorithm_name.lower():
-            section += "**Purpose**: J2EE uses factory pattern for creating enterprise resources " \
-                      "like DataSource, JMS connections, and EJB instances.\n\n"
+            section += (
+                "**Purpose**: J2EE uses factory pattern for creating enterprise resources "
+                "like DataSource, JMS connections, and EJB instances.\n\n"
+            )
         elif "repository" in algorithm_name.lower():
-            section += "**Purpose**: J2EE JPA repositories provide data access abstraction for " \
-                      "enterprise applications with transaction management.\n\n"
+            section += (
+                "**Purpose**: J2EE JPA repositories provide data access abstraction for "
+                "enterprise applications with transaction management.\n\n"
+            )
         else:
-            section += "**Purpose**: J2EE implements this pattern for enterprise Java applications, " \
-                      "EJB containers, and Java EE specifications.\n\n"
-    
+            section += (
+                "**Purpose**: J2EE implements this pattern for enterprise Java applications, "
+                "EJB containers, and Java EE specifications.\n\n"
+            )
+
     # .NET
     if ".net" in examples:
         section += "### .NET Framework\n\n"
         section += "```csharp\n"
         section += examples[".net"].strip()
         section += "\n```\n\n"
-        section += "**Purpose**: .NET Framework uses this pattern for dependency injection, " \
-                  "ASP.NET Core, and enterprise application development.\n\n"
-    
+        section += (
+            "**Purpose**: .NET Framework uses this pattern for dependency injection, "
+            "ASP.NET Core, and enterprise application development.\n\n"
+        )
+
     # Docker
     if "docker" in examples:
         section += "### Docker\n\n"
         section += "```dockerfile\n"
         section += examples["docker"].strip()
         section += "\n```\n\n"
-        section += "**Purpose**: Docker uses this pattern for containerization, " \
-                  "image layering, and container orchestration.\n\n"
-    
+        section += (
+            "**Purpose**: Docker uses this pattern for containerization, "
+            "image layering, and container orchestration.\n\n"
+        )
+
     # Kubernetes
     if "kubernetes" in examples:
         section += "### Kubernetes\n\n"
         section += "```yaml\n"
         section += examples["kubernetes"].strip()
         section += "\n```\n\n"
-        section += "**Purpose**: Kubernetes uses this pattern for container orchestration, " \
-                  "service discovery, and resource management.\n\n"
-    
+        section += (
+            "**Purpose**: Kubernetes uses this pattern for container orchestration, "
+            "service discovery, and resource management.\n\n"
+        )
+
     # Apache Kafka
     if "kafka" in examples:
         section += "### Apache Kafka\n\n"
         section += "```java\n"
         section += examples["kafka"].strip()
         section += "\n```\n\n"
-        section += "**Purpose**: Apache Kafka uses this pattern for event streaming, " \
-                  "message queuing, and distributed system communication.\n\n"
-    
+        section += (
+            "**Purpose**: Apache Kafka uses this pattern for event streaming, "
+            "message queuing, and distributed system communication.\n\n"
+        )
+
     return section
 
 
-def update_readme_examples(readme_path: Path, algorithm_name: str, category: Optional[str]) -> bool:
+def update_readme_examples(
+    readme_path: Path, algorithm_name: str, category: Optional[str]
+) -> bool:
     """Update the Examples of Implementation section in a README file."""
     try:
         content = readme_path.read_text(encoding="utf-8")
         new_section = generate_examples_section(algorithm_name, category)
-        
+
         # Pattern to match the "Examples of Implementation" section
         # Matches from "## Examples of Implementation" to the next "##" or end of file
         pattern = r"(##\s+Examples\s+of\s+Implementation\s*\n)(.*?)(?=\n##\s+|$)"
-        
+
         if re.search(pattern, content, re.IGNORECASE | re.DOTALL):
             # Section exists, replace it
-            new_content = re.sub(pattern, r"\1" + new_section.split("## Examples of Implementation\n")[1], 
-                                content, flags=re.IGNORECASE | re.DOTALL)
+            new_content = re.sub(
+                pattern,
+                r"\1" + new_section.split("## Examples of Implementation\n")[1],
+                content,
+                flags=re.IGNORECASE | re.DOTALL,
+            )
         else:
             # Section doesn't exist, add it before "Do Not Confuse With" or at the end
             confuse_pattern = r"(##\s+Do\s+Not\s+Confuse\s+With)"
             if re.search(confuse_pattern, content, re.IGNORECASE):
-                new_content = re.sub(confuse_pattern, new_section + "\\1", content, flags=re.IGNORECASE)
+                new_content = re.sub(
+                    confuse_pattern, new_section + "\\1", content, flags=re.IGNORECASE
+                )
             else:
                 # Add at the end
                 if not content.endswith("\n"):
                     content += "\n"
                 new_content = content + "\n" + new_section
-        
+
         if new_content != content:
             readme_path.write_text(new_content, encoding="utf-8")
             return True
-        
+
         return False
     except Exception as e:
         print(f"Error processing {readme_path}: {e}")
@@ -1494,42 +1523,43 @@ def main():
     """Main function to process all algorithm READMEs."""
     updated_count = 0
     processed_count = 0
-    
+
     # Find all algorithm directories
     for semester_dir in ROOT.glob("semester_*"):
         if not semester_dir.is_dir():
             continue
-        
+
         for lecture_dir in semester_dir.iterdir():
             if not lecture_dir.is_dir():
                 continue
-            
+
             for algo_dir in lecture_dir.iterdir():
                 if not algo_dir.is_dir():
                     continue
-                
+
                 # Check if this is an algorithm directory
-                if not ((algo_dir / "algorithm.py").exists() or 
-                       (algo_dir / "Algorithm.java").exists() or
-                       (algo_dir / "README.md").exists()):
+                if not (
+                    (algo_dir / "algorithm.py").exists()
+                    or (algo_dir / "Algorithm.java").exists()
+                    or (algo_dir / "README.md").exists()
+                ):
                     continue
-                
+
                 readme_path = algo_dir / "README.md"
                 if not readme_path.exists():
                     continue
-                
+
                 algorithm_name = algo_dir.name
                 category = infer_category(str(lecture_dir))
-                
+
                 processed_count += 1
                 if update_readme_examples(readme_path, algorithm_name, category):
                     updated_count += 1
                     print(f"Updated: {readme_path.relative_to(ROOT)}")
-    
+
     print(f"\nProcessed {processed_count} algorithm READMEs")
     print(f"Updated {updated_count} 'Examples of Implementation' sections")
 
 
 if __name__ == "__main__":
     main()
-

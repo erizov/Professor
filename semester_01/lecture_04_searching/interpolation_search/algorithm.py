@@ -6,29 +6,32 @@ Interpolation Search implementation.
 This file contains the implementation of the Interpolation Search algorithm.
 """
 
-from typing import List, Optional, Dict, Set
+from typing import List, Dict, Set
 
 
-def interpolation_search(arr: List[int], target: int) -> Optional[int]:
+def interpolation_search(arr: List[int], target: int) -> int:
     """Interpolation search algorithm."""
-    left, right = 0, len(arr) - 1
+    if not arr:
+        return -1
     
+    left, right = 0, len(arr) - 1
+
     while left <= right and arr[left] <= target <= arr[right]:
         if left == right:
             if arr[left] == target:
                 return left
-            return None
-        
+            return -1
+
         pos = left + ((target - arr[left]) * (right - left)) // (arr[right] - arr[left])
-        
+
         if arr[pos] == target:
             return pos
         elif arr[pos] < target:
             left = pos + 1
         else:
             right = pos - 1
-    
-    return None
+
+    return -1
 
 
 def main() -> None:
@@ -36,11 +39,11 @@ def main() -> None:
     print("=" * 70)
     print("INTERPOLATION SEARCH")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Interpolation Search")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

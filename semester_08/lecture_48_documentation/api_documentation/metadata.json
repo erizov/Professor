@@ -3,5 +3,6 @@
   "category": "Documentation Systems",
   "description": "Api Documentation for documentation systems",
   "time_complexity": "Varies",
-  "space_complexity": "Varies"
+  "space_complexity": "Varies",
+  "algorithm_type": "integration"
 }

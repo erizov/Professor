@@ -165,16 +165,18 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("B-TREE DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1
         logger.info("Example 1: Basic Insert and Search (t=3)");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         BTree btree = new BTree(3);
         int[] keys = {10, 20, 5, 6, 12, 30, 7, 17};
         
@@ -190,11 +192,11 @@ public class Algorithm {
         logger.info("\nInorder: " + btree.inorder());
         logger.info("Search for 12: " + btree.search(12));
         logger.info("Search for 15: " + btree.search(15));
-        logger.info();
+        logger.info("");
         
         // Example 2
         logger.info("Example 2: Larger Tree (t=2)");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         BTree btree2 = new BTree(2);
         
         System.out.print("Inserting 1-10: ");
@@ -205,18 +207,18 @@ public class Algorithm {
         logger.info("\n\nTree structure:");
         btree2.printTree();
         logger.info("\nInorder: " + btree2.inorder());
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Time:  O(log_t n)");
         logger.info("  Space: O(n)");
         logger.info("\nKey Advantages:");
         logger.info("  - Optimized for disk I/O");
         logger.info("  - Used in databases");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

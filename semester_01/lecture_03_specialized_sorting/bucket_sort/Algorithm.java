@@ -127,44 +127,46 @@ public class Algorithm {
      * Main method for demonstration.
      */
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("BUCKET SORT DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Floating point numbers
         logger.info("Example 1: Sorting Floating Point Numbers");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         double[] data1 = {0.78, 0.17, 0.39, 0.26, 0.72, 0.94, 
                          0.21, 0.12, 0.23, 0.68};
         logger.info("Original: " + Arrays.toString(data1));
         double[] result1 = bucketSort(data1.clone(), 5);
         logger.info("Sorted:   " + Arrays.toString(result1));
-        logger.info();
+        logger.info("");
         
         // Example 2: Integers
         logger.info("Example 2: Sorting Integers");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data2 = {42, 32, 33, 52, 37, 47, 51};
         logger.info("Original: " + Arrays.toString(data2));
         int[] result2 = bucketSortIntegers(data2.clone());
         logger.info("Sorted:   " + Arrays.toString(result2));
-        logger.info();
+        logger.info("");
         
         // Example 3: Large range
         logger.info("Example 3: Large Range");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         double[] data3 = {1.5, 8.9, 3.2, 7.4, 2.1, 9.8, 4.6};
         logger.info("Original: " + Arrays.toString(data3));
         double[] result3 = bucketSort(data3.clone(), 5);
         logger.info("Sorted:   " + Arrays.toString(result3));
-        logger.info();
+        logger.info("");
         
         // Example 4: Performance measurement
         logger.info("Example 4: Performance Measurement");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         Random rand = new Random(42);
         int[] sizes = {100, 1000, 10000};
@@ -183,8 +185,8 @@ public class Algorithm {
             System.out.printf("n=%5d: %8.3f ms%n", size, ms);
         }
         
-        logger.info();
-        logger.info("=".repeat(70));
+        logger.info("");
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Time:  O(n + k) average");
         logger.info("         O(n²) worst case");
@@ -205,7 +207,7 @@ public class Algorithm {
         logger.info("\nWhen NOT to use:");
         logger.info("  • Non-uniform distribution");
         logger.info("  • Unknown range");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         
         long endTime = System.nanoTime();
         double totalMs = (endTime - startTime) / 1_000_000.0;

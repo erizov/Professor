@@ -95,7 +95,7 @@ class TDDTestRunner {
     
     void runTests() {
         logger.info("Running TDD Tests:");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         // Calculator tests
         Calculator calc = new Calculator();
@@ -129,9 +129,9 @@ class TDDTestRunner {
         assertRaises(() -> new Stack<Integer>().pop(), IndexOutOfBoundsException.class,
                     "Pop from empty stack raises IndexOutOfBoundsException");
         
-        logger.info("-".repeat(70));
+        logger.info(dash);
         System.out.printf("Tests: %d passed, %d failed%n", passed, failed);
-        logger.info();
+        logger.info("");
     }
 }
 
@@ -140,33 +140,35 @@ public class Algorithm {
 
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("TEST-DRIVEN DEVELOPMENT (TDD) PATTERN DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: TDD Cycle Demonstration
         logger.info("Example 1: TDD Red-Green-Refactor Cycle");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         logger.info("TDD Cycle:");
         logger.info("  1. RED: Write failing test");
         logger.info("  2. GREEN: Write minimal code to pass");
         logger.info("  3. REFACTOR: Improve code while keeping tests green");
-        logger.info();
+        logger.info("");
         
         // Example 2: Running TDD Tests
         logger.info("Example 2: Running TDD Tests");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         TDDTestRunner runner = new TDDTestRunner();
         runner.runTests();
         
         // Example 3: TDD Benefits
         logger.info("Example 3: TDD Benefits Demonstration");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         Calculator calc = new Calculator();
         
@@ -174,11 +176,11 @@ public class Algorithm {
         System.out.printf("  ✓ add(1, 2) = %.0f (expected 3)%n", calc.add(1, 2));
         System.out.printf("  ✓ multiply(4, 5) = %.0f (expected 20)%n", calc.multiply(4, 5));
         System.out.printf("  ✓ divide(15, 3) = %.0f (expected 5)%n", calc.divide(15, 3));
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern Summary:");
         logger.info("\nIntent:");
         logger.info("  Development approach where tests are written before");
@@ -197,7 +199,7 @@ public class Algorithm {
         logger.info("  - Complex logic");
         logger.info("  - Critical functionality");
         logger.info("  - API development");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

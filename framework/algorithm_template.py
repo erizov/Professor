@@ -105,7 +105,7 @@ if __name__ == "__main__":
 '''
 
 
-JAVA_TEMPLATE = '''import java.util.Arrays;
+JAVA_TEMPLATE = """import java.util.Arrays;
 
 /**
  * {name} implementation.
@@ -142,56 +142,48 @@ public class Algorithm {{
         System.out.println("=" .repeat(70));
     }}
 }}
-'''
+"""
 
 
-def create_algorithm_structure(
-    base_path: Path,
-    metadata: Dict[str, Any]
-) -> None:
+def create_algorithm_structure(base_path: Path, metadata: Dict[str, Any]) -> None:
     """
     Create algorithm folder structure with templates.
-    
+
     Args:
         base_path: Base directory for algorithm
         metadata: Algorithm metadata
     """
     base_path.mkdir(parents=True, exist_ok=True)
-    
+
     # Create metadata.json
-    with open(base_path / "metadata.json", 'w', 
-             encoding='utf-8') as f:
+    with open(base_path / "metadata.json", "w", encoding="utf-8") as f:
         json.dump(metadata, f, indent=2)
-    
+
     # Create README.md
     readme_content = ALGORITHM_README_TEMPLATE.format(**metadata)
-    with open(base_path / "README.md", 'w', encoding='utf-8') as f:
+    with open(base_path / "README.md", "w", encoding="utf-8") as f:
         f.write(readme_content)
-    
+
     # Create Python implementation
-    function_name = metadata['name'].lower().replace(' ', '_')
+    function_name = metadata["name"].lower().replace(" ", "_")
     python_content = PYTHON_TEMPLATE.format(
-        name=metadata['name'],
-        description=metadata['description'],
-        function_name=function_name
+        name=metadata["name"],
+        description=metadata["description"],
+        function_name=function_name,
     )
-    with open(base_path / "algorithm.py", 'w', 
-             encoding='utf-8') as f:
+    with open(base_path / "algorithm.py", "w", encoding="utf-8") as f:
         f.write(python_content)
-    
+
     # Create Java implementation
-    method_name = ''.join(
-        word.capitalize() 
-        for word in metadata['name'].lower().split()
+    method_name = "".join(
+        word.capitalize() for word in metadata["name"].lower().split()
     )
     method_name = method_name[0].lower() + method_name[1:]
-    
-    java_content = JAVA_TEMPLATE.format(
-        name=metadata['name'],
-        description=metadata['description'],
-        methodName=method_name
-    )
-    with open(base_path / "Algorithm.java", 'w', 
-             encoding='utf-8') as f:
-        f.write(java_content)
 
+    java_content = JAVA_TEMPLATE.format(
+        name=metadata["name"],
+        description=metadata["description"],
+        methodName=method_name,
+    )
+    with open(base_path / "Algorithm.java", "w", encoding="utf-8") as f:
+        f.write(java_content)

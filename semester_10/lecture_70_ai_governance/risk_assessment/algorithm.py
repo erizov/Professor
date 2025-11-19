@@ -11,20 +11,22 @@ from typing import List, Optional, Dict, Set
 
 class RiskAssessment:
     """Risk assessment system."""
+
     def __init__(self):
         self.risks: Dict[str, dict] = {}
         self.assessments: List[dict] = {}
-    
-    def assess_risk(self, risk_id: str, probability: float, 
-                   impact: float) -> dict:
+
+    def assess_risk(self, risk_id: str, probability: float, impact: float) -> dict:
         """Assess risk."""
         risk_score = probability * impact
         assessment = {
-            'risk_id': risk_id,
-            'probability': probability,
-            'impact': impact,
-            'score': risk_score,
-            'level': 'high' if risk_score > 0.7 else 'medium' if risk_score > 0.3 else 'low'
+            "risk_id": risk_id,
+            "probability": probability,
+            "impact": impact,
+            "score": risk_score,
+            "level": (
+                "high" if risk_score > 0.7 else "medium" if risk_score > 0.3 else "low"
+            ),
         }
         self.risks[risk_id] = assessment
         self.assessments.append(assessment)
@@ -36,11 +38,11 @@ def main() -> None:
     print("=" * 70)
     print("RISK ASSESSMENT")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Risk Assessment")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

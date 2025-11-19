@@ -11,25 +11,29 @@ from typing import List, Optional, Dict, Set
 
 class ZeroDowntimeMigration:
     """Zero-downtime migration."""
+
     def __init__(self):
         self.migrations: List[dict] = {}
         self.versions: Dict[str, dict] = {}
-    
-    def plan_migration(self, migration_id: str, 
-                      source_version: str, target_version: str) -> None:
+
+    def plan_migration(
+        self, migration_id: str, source_version: str, target_version: str
+    ) -> None:
         """Plan migration."""
-        self.migrations.append({
-            'id': migration_id,
-            'source': source_version,
-            'target': target_version,
-            'status': 'planned'
-        })
-    
+        self.migrations.append(
+            {
+                "id": migration_id,
+                "source": source_version,
+                "target": target_version,
+                "status": "planned",
+            }
+        )
+
     def execute_migration(self, migration_id: str) -> bool:
         """Execute zero-downtime migration."""
-        migration = next((m for m in self.migrations if m['id'] == migration_id), None)
+        migration = next((m for m in self.migrations if m["id"] == migration_id), None)
         if migration:
-            migration['status'] = 'completed'
+            migration["status"] = "completed"
             return True
         return False
 
@@ -39,11 +43,11 @@ def main() -> None:
     print("=" * 70)
     print("ZERO DOWNTIME MIGRATION")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Zero Downtime Migration")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

@@ -11,28 +11,32 @@ from typing import List, Optional, Dict, Set
 
 class DeploymentStrategy:
     """Deployment strategy manager."""
+
     def __init__(self):
         self.strategies: Dict[str, callable] = {}
-    
+
     def register_strategy(self, name: str, strategy: callable) -> None:
         """Register deployment strategy."""
         self.strategies[name] = strategy
-    
+
     def deploy(self, strategy_name: str, version: str) -> bool:
         """Deploy using strategy."""
         if strategy_name in self.strategies:
             return self.strategies[strategy_name](version)
         return False
 
+
 def blue_green_deployment(version: str) -> bool:
     """Blue-green deployment."""
     # Simplified: always succeeds
     return True
 
+
 def canary_deployment(version: str) -> bool:
     """Canary deployment."""
     # Simplified: always succeeds
     return True
+
 
 def rolling_deployment(version: str) -> bool:
     """Rolling deployment."""
@@ -45,11 +49,11 @@ def main() -> None:
     print("=" * 70)
     print("DEPLOYMENT STRATEGIES")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Deployment Strategies")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

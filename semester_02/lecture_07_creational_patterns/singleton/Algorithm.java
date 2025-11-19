@@ -121,16 +121,18 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("SINGLETON DESIGN PATTERN DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Configuration Manager
         logger.info("Example 1: Configuration Manager");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         ConfigurationManager config1 = ConfigurationManager.getInstance();
         config1.set("database_url", "localhost:5432");
@@ -140,11 +142,11 @@ public class Algorithm {
         logger.info("config1 == config2: " + (config1 == config2));
         logger.info("config2.get('database_url'): " + 
                          config2.get("database_url"));
-        logger.info();
+        logger.info("");
         
         // Example 2: Database Connection
         logger.info("Example 2: Database Connection");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         DatabaseConnection db1 = DatabaseConnection.getInstance();
         db1.connect("postgresql://localhost:5432/mydb");
@@ -153,11 +155,11 @@ public class Algorithm {
         logger.info("db1 == db2: " + (db1 == db2));
         logger.info(db2.executeQuery("SELECT * FROM users"));
         db1.disconnect();
-        logger.info();
+        logger.info("");
         
         // Example 3: Different implementations
         logger.info("Example 3: Different Implementations");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         EagerSingleton eager1 = EagerSingleton.getInstance();
         EagerSingleton eager2 = EagerSingleton.getInstance();
@@ -170,11 +172,11 @@ public class Algorithm {
         BillPughSingleton bp1 = BillPughSingleton.getInstance();
         BillPughSingleton bp2 = BillPughSingleton.getInstance();
         logger.info("Bill Pugh: " + (bp1 == bp2));
-        logger.info();
+        logger.info("");
         
         // Example 4: Thread Safety
         logger.info("Example 4: Thread Safety Test");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         final java.util.Set<ConfigurationManager> instances = 
             new java.util.HashSet<>();
@@ -198,11 +200,11 @@ public class Algorithm {
         logger.info("Created 10 threads");
         logger.info("Unique instances: " + instances.size());
         logger.info("All same: " + (instances.size() == 1));
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern Summary:");
         logger.info("\nKey Advantages:");
         logger.info("  - Single instance guaranteed");
@@ -212,7 +214,7 @@ public class Algorithm {
         logger.info("  - Configuration management");
         logger.info("  - Connection pools");
         logger.info("  - Logging");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

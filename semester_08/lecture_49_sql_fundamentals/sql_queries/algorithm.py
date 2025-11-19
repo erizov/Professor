@@ -11,19 +11,20 @@ from typing import List, Optional, Dict, Set
 
 class SQLQueries:
     """SQL query processor."""
+
     def __init__(self):
         self.tables: Dict[str, List[dict]] = {}
         self.queries: List[dict] = {}
-    
+
     def create_table(self, name: str, columns: List[str]) -> None:
         """Create table."""
         self.tables[name] = []
-    
+
     def insert(self, table: str, row: dict) -> None:
         """Insert row."""
         if table in self.tables:
             self.tables[table].append(row)
-    
+
     def select(self, table: str, where: callable = None) -> List[dict]:
         """Select rows."""
         if table not in self.tables:
@@ -39,11 +40,11 @@ def main() -> None:
     print("=" * 70)
     print("SQL QUERIES")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Sql Queries")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

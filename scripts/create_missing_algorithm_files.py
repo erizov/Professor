@@ -17,82 +17,80 @@ def get_algorithm_info(folder_path: Path) -> Tuple[str, str, Dict]:
     """Get algorithm name, category, and metadata."""
     metadata_path = folder_path / "metadata.json"
     if metadata_path.exists():
-        with open(metadata_path, 'r', encoding='utf-8') as f:
+        with open(metadata_path, "r", encoding="utf-8") as f:
             metadata = json.load(f)
-        name = metadata.get('display_name') or metadata.get('name', folder_path.name)
-        category = metadata.get('category', 'General')
+        name = metadata.get("display_name") or metadata.get("name", folder_path.name)
+        category = metadata.get("category", "General")
         return name, category, metadata
-    return folder_path.name, 'General', {}
+    return folder_path.name, "General", {}
 
 
 def generate_algorithm_implementation(
-    algorithm_name: str,
-    folder_name: str,
-    category: str
+    algorithm_name: str, folder_name: str, category: str
 ) -> str:
     """Generate algorithm implementation based on name and category."""
-    
+
     # Convert folder name to function name
-    func_name = folder_name.replace('-', '_')
-    
+    func_name = folder_name.replace("-", "_")
+
     # Generate implementation based on category and name
-    if 'continual_learning' in folder_name.lower():
+    if "continual_learning" in folder_name.lower():
         return _generate_continual_learning(func_name, algorithm_name)
-    elif 'few_shot' in folder_name.lower():
+    elif "few_shot" in folder_name.lower():
         return _generate_few_shot_learning(func_name, algorithm_name)
-    elif 'lifelong_learning' in folder_name.lower():
+    elif "lifelong_learning" in folder_name.lower():
         return _generate_lifelong_learning(func_name, algorithm_name)
-    elif 'meta_learning' in folder_name.lower():
+    elif "meta_learning" in folder_name.lower():
         return _generate_meta_learning(func_name, algorithm_name)
-    elif 'transfer_learning' in folder_name.lower():
+    elif "transfer_learning" in folder_name.lower():
         return _generate_transfer_learning(func_name, algorithm_name)
-    elif 'zero_shot' in folder_name.lower():
+    elif "zero_shot" in folder_name.lower():
         return _generate_zero_shot_learning(func_name, algorithm_name)
-    elif 'llm_compression' in folder_name.lower():
+    elif "llm_compression" in folder_name.lower():
         return _generate_llm_compression(func_name, algorithm_name)
-    elif 'long_context' in folder_name.lower():
+    elif "long_context" in folder_name.lower():
         return _generate_long_context_models(func_name, algorithm_name)
-    elif 'mixture_of_experts' in folder_name.lower():
+    elif "mixture_of_experts" in folder_name.lower():
         return _generate_mixture_of_experts(func_name, algorithm_name)
-    elif 'multimodal_llms' in folder_name.lower():
+    elif "multimodal_llms" in folder_name.lower():
         return _generate_multimodal_llms(func_name, algorithm_name)
-    elif 'sparse_attention' in folder_name.lower():
+    elif "sparse_attention" in folder_name.lower():
         return _generate_sparse_attention(func_name, algorithm_name)
-    elif 'transformer_optimization' in folder_name.lower():
+    elif "transformer_optimization" in folder_name.lower():
         return _generate_transformer_optimization(func_name, algorithm_name)
-    elif 'distributed_training' in folder_name.lower():
+    elif "distributed_training" in folder_name.lower():
         return _generate_distributed_training(func_name, algorithm_name)
-    elif 'gradient_checkpointing' in folder_name.lower():
+    elif "gradient_checkpointing" in folder_name.lower():
         return _generate_gradient_checkpointing(func_name, algorithm_name)
-    elif 'mixed_precision' in folder_name.lower():
+    elif "mixed_precision" in folder_name.lower():
         return _generate_mixed_precision_training(func_name, algorithm_name)
-    elif 'model_parallelism' in folder_name.lower():
+    elif "model_parallelism" in folder_name.lower():
         return _generate_model_parallelism(func_name, algorithm_name)
-    elif 'pipeline_parallelism' in folder_name.lower():
+    elif "pipeline_parallelism" in folder_name.lower():
         return _generate_pipeline_parallelism(func_name, algorithm_name)
-    elif 'tensor_parallelism' in folder_name.lower():
+    elif "tensor_parallelism" in folder_name.lower():
         return _generate_tensor_parallelism(func_name, algorithm_name)
-    elif 'batch_inference' in folder_name.lower():
+    elif "batch_inference" in folder_name.lower():
         return _generate_batch_inference(func_name, algorithm_name)
-    elif 'continuous_batching' in folder_name.lower():
+    elif "continuous_batching" in folder_name.lower():
         return _generate_continuous_batching(func_name, algorithm_name)
-    elif 'kv_cache' in folder_name.lower():
+    elif "kv_cache" in folder_name.lower():
         return _generate_kv_cache_optimization(func_name, algorithm_name)
-    elif 'pruning_inference' in folder_name.lower():
+    elif "pruning_inference" in folder_name.lower():
         return _generate_pruning_inference(func_name, algorithm_name)
-    elif 'quantization_inference' in folder_name.lower():
+    elif "quantization_inference" in folder_name.lower():
         return _generate_quantization_inference(func_name, algorithm_name)
-    elif 'speculative_decoding' in folder_name.lower():
+    elif "speculative_decoding" in folder_name.lower():
         return _generate_speculative_decoding(func_name, algorithm_name)
-    elif 'agentic_rag' in folder_name.lower():
+    elif "agentic_rag" in folder_name.lower():
         return _generate_agentic_rag(func_name, algorithm_name)
-    elif 'context_compression' in folder_name.lower():
+    elif "context_compression" in folder_name.lower():
         return _generate_context_compression(func_name, algorithm_name)
-    elif 'multi_hop_rag' in folder_name.lower():
+    elif "multi_hop_rag" in folder_name.lower():
         return _generate_multi_hop_rag(func_name, algorithm_name)
-    elif 'query_expansion' in folder_name.lower():
+    elif "query_expansion" in folder_name.lower():
         return _generate_query_expansion(func_name, algorithm_name)
-    elif 'reranking' in folder_name.lower():
+    elif "reranking" in folder_name.lower():
         return _generate_reranking(func_name, algorithm_name)
     else:
         # Generic implementation for unknown algorithms
@@ -319,8 +317,7 @@ if __name__ == "__main__":
 '''
 
 
-def _generate_generic_algorithm(func_name: str, algo_name: str, 
-                                category: str) -> str:
+def _generate_generic_algorithm(func_name: str, algo_name: str, category: str) -> str:
     """Generate generic algorithm implementation."""
     return f'''#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
@@ -486,8 +483,8 @@ def _generate_reranking(func_name: str, algo_name: str) -> str:
 def verify_single_main(file_path: Path) -> bool:
     """Verify file has exactly one def main() function."""
     try:
-        content = file_path.read_text(encoding='utf-8')
-        main_count = len(re.findall(r'^\s*def\s+main\s*\(', content, re.MULTILINE))
+        content = file_path.read_text(encoding="utf-8")
+        main_count = len(re.findall(r"^\s*def\s+main\s*\(", content, re.MULTILINE))
         return main_count == 1
     except Exception:
         return False
@@ -495,49 +492,46 @@ def verify_single_main(file_path: Path) -> bool:
 
 def create_missing_algorithm_files() -> Dict[str, int]:
     """Create algorithm.py files for all missing folders."""
-    stats = {
-        'created': 0,
-        'skipped': 0,
-        'errors': 0,
-        'verified': 0
-    }
-    
+    stats = {"created": 0, "skipped": 0, "errors": 0, "verified": 0}
+
     # Find all folders with metadata.json
     for metadata_file in ROOT.rglob("**/metadata.json"):
-        if "supporting_documents" in str(metadata_file) or "scripts" in str(metadata_file):
+        if "supporting_documents" in str(metadata_file) or "scripts" in str(
+            metadata_file
+        ):
             continue
-        
+
         folder_path = metadata_file.parent
         algorithm_file = folder_path / "algorithm.py"
-        
+
         # Skip if already exists
         if algorithm_file.exists():
             continue
-        
+
         try:
             # Get algorithm info
             algo_name, category, metadata = get_algorithm_info(folder_path)
             folder_name = folder_path.name
-            
+
             # Generate implementation
             implementation = generate_algorithm_implementation(
                 algo_name, folder_name, category
             )
-            
+
             # Write file
-            algorithm_file.write_text(implementation, encoding='utf-8')
-            stats['created'] += 1
-            
+            algorithm_file.write_text(implementation, encoding="utf-8")
+            stats["created"] += 1
+
             # Verify single main()
             if verify_single_main(algorithm_file):
-                stats['verified'] += 1
+                stats["verified"] += 1
             else:
                 print(f"WARNING: {algorithm_file} may have multiple main()")
-                
+
         except Exception as e:
             print(f"Error creating {algorithm_file}: {e}")
-            stats['errors'] += 1
-    
+            stats["errors"] += 1
+
     return stats
 
 
@@ -547,9 +541,9 @@ def main() -> None:
     print("Creating Missing algorithm.py Files")
     print("=" * 70)
     print()
-    
+
     stats = create_missing_algorithm_files()
-    
+
     print(f"Created: {stats['created']} files")
     print(f"Verified (single main): {stats['verified']} files")
     print(f"Errors: {stats['errors']} files")
@@ -559,4 +553,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

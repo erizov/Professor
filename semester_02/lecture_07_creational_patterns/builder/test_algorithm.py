@@ -17,58 +17,60 @@ from tests.test_framework_setup import AlgorithmTestCase
 
 class TestBuilder(AlgorithmTestCase):
     """Test Builder implementation."""
-    
+
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_07_creational_patterns.builder.algorithm import __init__
+        from semester_02.lecture_07_creational_patterns.builder.algorithm import (
+            __init__,
+        )
+
         self.algorithm = __init__
-    
+
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
         # TODO: Implement specific test based on algorithm
         pass
-    
+
     def test_empty_input(self):
         """Test with empty input."""
         # TODO: Test edge case
         pass
-    
+
     def test_single_element(self):
         """Test with single element."""
         # TODO: Test edge case
         pass
-    
+
     def test_empty_input(self):
         """Test with empty input."""
         # TODO: Test edge case
         pass
-    
+
     def test_single_element(self):
         """Test with single element."""
         # TODO: Test edge case
         pass
-    
+
     def test_already_sorted(self):
         """Test with already sorted input."""
         # TODO: Test edge case
         pass
-    
+
     def test_reverse_sorted(self):
         """Test with reverse sorted input."""
         # TODO: Test edge case
         pass
-    
+
     def test_duplicates(self):
         """Test with duplicate elements."""
         # TODO: Test edge case
         pass
-    
+
     def test_performance(self):
         """Test algorithm performance."""
         # TODO: Add performance test
         # self.assert_performance(lambda: self.algorithm([...]), max_time_seconds=1.0)
         pass
-
 
     def test_multiple_instances(self):
         """Test multiple instance creation."""
@@ -93,18 +95,20 @@ class TestBuilder(AlgorithmTestCase):
     def test_thread_safety(self):
         """Test thread safety if applicable."""
         import threading
-        
+
         instances = []
+
         def create_instance():
             instances.append(self.algorithm())
-        
+
         threads = [threading.Thread(target=create_instance) for _ in range(10)]
         for t in threads:
             t.start()
         for t in threads:
             t.join()
-        
+
         self.assertEqual(len(instances), 10)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

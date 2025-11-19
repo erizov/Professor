@@ -36,7 +36,13 @@ def test_select_sorting_algorithm_basic():
     )
     rec2 = AlgorithmSelector.select_sorting_algorithm(constraints)
     assert isinstance(rec2, dict)
-    assert rec2["name"].lower() in {"merge sort", "quick sort", "heap sort", "timsort", "radix sort"}
+    assert rec2["name"].lower() in {
+        "merge sort",
+        "quick sort",
+        "heap sort",
+        "timsort",
+        "radix sort",
+    }
 
 
 def test_select_ml_algorithm_basic():

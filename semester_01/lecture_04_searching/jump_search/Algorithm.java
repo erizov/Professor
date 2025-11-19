@@ -69,7 +69,7 @@ public class Algorithm {
         logger.info("Array length: " + n);
         logger.info("Target: " + target);
         logger.info("Jump size: " + step + " (√" + n + ")");
-        logger.info();
+        logger.info("");
         
         logger.info("Jumping phase:");
         int prev = 0;
@@ -91,7 +91,7 @@ public class Algorithm {
         
         System.out.printf("  Found block: indices [%d:%d]%n", 
                          prev, Math.min(step, n));
-        logger.info();
+        logger.info("");
         
         logger.info("Linear search phase:");
         while (arr[prev] < target) {
@@ -119,16 +119,18 @@ public class Algorithm {
      * Main method for demonstration.
      */
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("JUMP SEARCH DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Element found
         logger.info("Example 1: Element Found");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data1 = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19};
         int target1 = 13;
         int result1 = jumpSearch(data1, target1);
@@ -138,30 +140,30 @@ public class Algorithm {
             System.out.printf("Verification: arr[%d] = %d%n",
                             result1, data1[result1]);
         }
-        logger.info();
+        logger.info("");
         
         // Example 2: Element not found
         logger.info("Example 2: Element Not Found");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data2 = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19};
         int target2 = 10;
         int result2 = jumpSearch(data2, target2);
         logger.info("Target: " + target2);
         logger.info("Result: " + 
                           (result2 == -1 ? "Not found" : "Index " + result2));
-        logger.info();
+        logger.info("");
         
         // Example 3: Visualization
         logger.info("Example 3: Visualized Jump Search");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data3 = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
         int target3 = 11;
         jumpSearchVisualized(data3, target3);
-        logger.info();
+        logger.info("");
         
         // Example 4: Performance measurement
         logger.info("Example 4: Performance Measurement");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         Random rand = new Random(42);
         int[] sizes = {1000, 10000, 100000};
@@ -182,8 +184,8 @@ public class Algorithm {
             System.out.printf("n=%6d: %8.3f ms%n", size, ms);
         }
         
-        logger.info();
-        logger.info("=".repeat(70));
+        logger.info("");
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Time:  O(√n)");
         logger.info("  Space: O(1)");
@@ -201,7 +203,7 @@ public class Algorithm {
         logger.info("  • Sorted array");
         logger.info("  • Middle ground search");
         logger.info("  • Backward jumping not possible");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         
         long endTime = System.nanoTime();
         double totalMs = (endTime - startTime) / 1_000_000.0;

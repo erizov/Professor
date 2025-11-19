@@ -170,4 +170,3 @@ def delete_user(user_id: int):
     )
 
     return jsonify({"success": True})
-

@@ -9,8 +9,9 @@ This file contains the implementation of the Gradient Descent algorithm.
 from typing import List, Optional, Dict, Set
 
 
-def gradient_descent(f, df, x0: float, learning_rate: float = 0.01, 
-                                iterations: int = 1000) -> float:
+def gradient_descent(
+    f, df, x0: float, learning_rate: float = 0.01, iterations: int = 1000
+) -> float:
     """Gradient descent optimization."""
     x = x0
     for _ in range(iterations):
@@ -18,8 +19,10 @@ def gradient_descent(f, df, x0: float, learning_rate: float = 0.01,
         x = x - learning_rate * gradient
     return x
 
-def gradient_descent_multi(f, df, x0: List[float], learning_rate: float = 0.01,
-                           iterations: int = 1000) -> List[float]:
+
+def gradient_descent_multi(
+    f, df, x0: List[float], learning_rate: float = 0.01, iterations: int = 1000
+) -> List[float]:
     """Multi-dimensional gradient descent."""
     x = x0[:]
     for _ in range(iterations):
@@ -33,11 +36,11 @@ def main() -> None:
     print("=" * 70)
     print("GRADIENT DESCENT")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Gradient Descent")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

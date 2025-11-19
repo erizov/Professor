@@ -16,7 +16,11 @@ from typing import Dict, Optional, Tuple
 ROOT = Path(__file__).resolve().parents[1]
 
 CATEGORY_HINTS = {
-    "sorting": ["lecture_01_sorting_fundamentals", "lecture_02_efficient_sorting", "lecture_03_specialized_sorting"],
+    "sorting": [
+        "lecture_01_sorting_fundamentals",
+        "lecture_02_efficient_sorting",
+        "lecture_03_specialized_sorting",
+    ],
     "searching": ["lecture_04_searching"],
     "trees": ["lecture_05_trees", "lecture_06_advanced_trees"],
     "heaps": ["lecture_07_heaps_priority"],
@@ -27,7 +31,13 @@ CATEGORY_HINTS = {
     "crypto": ["lecture_18_crypto_algorithms"],
     "distributed": ["lecture_19_distributed_patterns"],
     "observability": ["lecture_20_monitoring_observability"],
-    "ml": ["lecture_12_ml_algorithms", "lecture_16_advanced_ml", "lecture_22_cnn_architectures", "lecture_29_nlp_advanced", "lecture_30_time_series"],
+    "ml": [
+        "lecture_12_ml_algorithms",
+        "lecture_16_advanced_ml",
+        "lecture_22_cnn_architectures",
+        "lecture_29_nlp_advanced",
+        "lecture_30_time_series",
+    ],
     "database": ["lecture_53_database_operations", "lecture_54_data_modeling"],
 }
 
@@ -85,8 +95,12 @@ README_TEMPLATE = """# {title}
 
 INTRO_RE = re.compile(r"^##\s*Introduction\s*$", re.IGNORECASE | re.MULTILINE)
 SHORT_RE = re.compile(r"^##\s*Short\s*Description\s*$", re.IGNORECASE | re.MULTILINE)
-TOGETHER_RE = re.compile(r"^##\s*Often\s*Used\s*Together\s*With\s*$", re.IGNORECASE | re.MULTILINE)
-CONFUSE_RE = re.compile(r"^##\s*Do\s*Not\s*Confuse\s*With\s*$", re.IGNORECASE | re.MULTILINE)
+TOGETHER_RE = re.compile(
+    r"^##\s*Often\s*Used\s*Together\s*With\s*$", re.IGNORECASE | re.MULTILINE
+)
+CONFUSE_RE = re.compile(
+    r"^##\s*Do\s*Not\s*Confuse\s*With\s*$", re.IGNORECASE | re.MULTILINE
+)
 TITLE_RE = re.compile(r"^#\s+(.+)$", re.MULTILINE)
 
 
@@ -120,6 +134,7 @@ def get_intro(category: Optional[str]) -> str:
 def readme_needs_section(content: str, section_re) -> bool:
     return not bool(section_re.search(content))
 
+
 OFTEN_USED_DEFAULTS: Dict[str, str] = {
     "sorting": "- Binary Search\n- Hash Tables\n- Heaps/Priority Queues",
     "searching": "- Sorting Algorithms\n- Hash Tables\n- Trees (BST/AVL)",
@@ -136,13 +151,21 @@ OFTEN_USED_DEFAULTS: Dict[str, str] = {
     "database": "- Indexing (B-Tree)\n- ETL Pipelines\n- Data Warehousing",
 }
 
+
 def get_often_used_together(algo_name: str, category: Optional[str]) -> str:
     if category and category in OFTEN_USED_DEFAULTS:
         return OFTEN_USED_DEFAULTS[category]
     return "- Related Algorithms\n- Complementary Data Structures\n- Common Utilities"
 
 
-def ensure_sections(content: str, title: str, introduction: str, short_description: str, often_used_together: str, do_not_confuse_with: str) -> str:
+def ensure_sections(
+    content: str,
+    title: str,
+    introduction: str,
+    short_description: str,
+    often_used_together: str,
+    do_not_confuse_with: str,
+) -> str:
     # If content lacks a title, prepend one
     if not TITLE_RE.search(content):
         content = f"# {title}\n\n" + content
@@ -198,19 +221,33 @@ def process_algorithm_dir(algo_dir: Path) -> Tuple[bool, Optional[str]]:
         "kmp": "- Rabin–Karp (hash-based matching)\n- Boyer–Moore (different skipping heuristics)",
         "sha256": "- MD5/SHA-1 (weaker security)\n- SHA-3 (different construction)",
     }
-    do_not_confuse_with = algo_confuse_specific.get(algo_name, cat_defaults.get(category, "- Algorithms with similar names but different guarantees\n- Techniques with distinct prerequisites or goals"))
+    do_not_confuse_with = algo_confuse_specific.get(
+        algo_name,
+        cat_defaults.get(
+            category,
+            "- Algorithms with similar names but different guarantees\n- Techniques with distinct prerequisites or goals",
+        ),
+    )
 
     readme_path = algo_dir / "README.md"
     if readme_path.exists():
         content = readme_path.read_text(encoding="utf-8")
-        new_content = ensure_sections(content, title, introduction, short_desc, together, do_not_confuse_with)
+        new_content = ensure_sections(
+            content, title, introduction, short_desc, together, do_not_confuse_with
+        )
         if new_content != content:
             readme_path.write_text(new_content, encoding="utf-8")
             return True, f"updated {readme_path}"
         return False, None
     else:
         # Create minimal README
-        tmpl = README_TEMPLATE.format(title=title, introduction=introduction, short_description=short_desc, often_used_together=together, do_not_confuse_with=do_not_confuse_with)
+        tmpl = README_TEMPLATE.format(
+            title=title,
+            introduction=introduction,
+            short_description=short_desc,
+            often_used_together=together,
+            do_not_confuse_with=do_not_confuse_with,
+        )
         readme_path.write_text(tmpl, encoding="utf-8")
         return True, f"created {readme_path}"
 
@@ -219,7 +256,11 @@ def is_algorithm_dir(path: Path) -> bool:
     if not path.is_dir():
         return False
     # Heuristics: has algorithm.py or metadata.json or Algorithm.java
-    if (path / "algorithm.py").exists() or (path / "metadata.json").exists() or (path / "Algorithm.java").exists():
+    if (
+        (path / "algorithm.py").exists()
+        or (path / "metadata.json").exists()
+        or (path / "Algorithm.java").exists()
+    ):
         return True
     # Or contains a single .py whose name equals folder
     if (path / f"{path.name}.py").exists():

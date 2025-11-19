@@ -26,11 +26,18 @@ LOGGER_LINE = "logger = get_logger(__name__)"
 
 PRINT_PATTERN = re.compile(r"(^|\s)print\((.*?)\)")
 BANNER_PATTERN = re.compile(r"[=\-]{10,}")
-VISUAL_CUES = re.compile(r"(Comparing|Swapped|Pass\\s+\d+|Iteration|Step)\b", re.IGNORECASE)
+VISUAL_CUES = re.compile(
+    r"(Comparing|Swapped|Pass\\s+\d+|Iteration|Step)\b", re.IGNORECASE
+)
 
 
 def is_candidate(py_path: Path) -> bool:
-    if "tests" in py_path.parts or "framework" in py_path.parts or "web_interface" in py_path.parts or "scripts" in py_path.parts:
+    if (
+        "tests" in py_path.parts
+        or "framework" in py_path.parts
+        or "web_interface" in py_path.parts
+        or "scripts" in py_path.parts
+    ):
         return False
     if not any(p.name.startswith("semester_") for p in py_path.parents):
         return False
@@ -80,8 +87,8 @@ def replace_prints(src: str) -> str:
         # naive transform: print(f"...") -> logger.level(f"...")
         transformed = line.replace("print(", f"logger.{level}(")
         # remove trailing end="" args for prints
-        transformed = transformed.replace(", end=\"\")", ")")
-        transformed = transformed.replace(", end=\'\')", ")")
+        transformed = transformed.replace(', end="")', ")")
+        transformed = transformed.replace(", end='')", ")")
         result_lines.append(transformed)
     return "\n".join(result_lines)
 

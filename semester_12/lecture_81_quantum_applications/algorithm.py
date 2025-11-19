@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("QUANTUM COMPUTING")
     print("=" * 70)
-    
+
     print("Algorithm implementation for Quantum Computing")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

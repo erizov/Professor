@@ -11,19 +11,20 @@ from typing import List, Optional, Dict, Set
 
 class SelfHealingSystems:
     """Self-healing system."""
+
     def __init__(self):
         self.components: Dict[str, dict] = {}
         self.health_checks: Dict[str, callable] = {}
         self.recovery_actions: Dict[str, callable] = {}
-    
-    def register_component(self, component_id: str, 
-                         health_check: callable,
-                         recovery_action: callable) -> None:
+
+    def register_component(
+        self, component_id: str, health_check: callable, recovery_action: callable
+    ) -> None:
         """Register component."""
-        self.components[component_id] = {'status': 'healthy'}
+        self.components[component_id] = {"status": "healthy"}
         self.health_checks[component_id] = health_check
         self.recovery_actions[component_id] = recovery_action
-    
+
     def check_health(self, component_id: str) -> bool:
         """Check component health."""
         if component_id in self.health_checks:
@@ -41,11 +42,11 @@ def main() -> None:
     print("=" * 70)
     print("SELF HEALING SYSTEMS")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Self Healing Systems")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

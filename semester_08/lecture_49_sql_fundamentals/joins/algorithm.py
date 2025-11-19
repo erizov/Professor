@@ -11,19 +11,19 @@ from typing import List, Optional, Dict, Set
 
 class JoinOperations:
     """Database join operations."""
+
     def __init__(self):
         self.tables: Dict[str, List[dict]] = {}
-    
+
     def create_table(self, table_name: str, data: List[dict]) -> None:
         """Create table."""
         self.tables[table_name] = data
-    
-    def inner_join(self, table1: str, table2: str, 
-                  on: str) -> List[dict]:
+
+    def inner_join(self, table1: str, table2: str, on: str) -> List[dict]:
         """Inner join."""
         if table1 not in self.tables or table2 not in self.tables:
             return []
-        
+
         result = []
         for row1 in self.tables[table1]:
             for row2 in self.tables[table2]:
@@ -31,12 +31,12 @@ class JoinOperations:
                     merged = {**row1, **row2}
                     result.append(merged)
         return result
-    
+
     def left_join(self, table1: str, table2: str, on: str) -> List[dict]:
         """Left join."""
         if table1 not in self.tables or table2 not in self.tables:
             return []
-        
+
         result = []
         for row1 in self.tables[table1]:
             matched = False
@@ -55,11 +55,11 @@ def main() -> None:
     print("=" * 70)
     print("JOINS")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Joins")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

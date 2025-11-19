@@ -11,21 +11,17 @@ from typing import List, Optional, Dict, Set
 
 class BlockchainScalabilitySolutions:
     """Blockchain scalability solutions collection."""
+
     def __init__(self):
         self.solutions: List[dict] = {}
-    
-    def add_solution(self, solution_id: str, name: str, 
-                    solution_type: str) -> None:
+
+    def add_solution(self, solution_id: str, name: str, solution_type: str) -> None:
         """Add scalability solution."""
-        self.solutions[solution_id] = {
-            "name": name,
-            "type": solution_type
-        }
-    
+        self.solutions[solution_id] = {"name": name, "type": solution_type}
+
     def get_solutions_by_type(self, solution_type: str) -> List[dict]:
         """Get solutions by type."""
-        return [sol for sol in self.solutions.values() 
-               if sol["type"] == solution_type]
+        return [sol for sol in self.solutions.values() if sol["type"] == solution_type]
 
 
 def main() -> None:
@@ -33,11 +29,11 @@ def main() -> None:
     print("=" * 70)
     print("BLOCKCHAIN SCALABILITY SOLUTIONS")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Blockchain Scalability Solutions")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

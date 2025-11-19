@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("CONCURRENCY")
     print("=" * 70)
-    
+
     print("Algorithm implementation for Concurrency")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

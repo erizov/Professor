@@ -11,14 +11,15 @@ from typing import List, Optional, Dict, Set
 
 class HashTable:
     """Hash table implementation with chaining."""
+
     def __init__(self, size: int = 10):
         self.size = size
         self.table: List[List[tuple]] = [[] for _ in range(size)]
-    
+
     def _hash(self, key: int) -> int:
         """Hash function."""
         return key % self.size
-    
+
     def insert(self, key: int, value: any) -> None:
         """Insert key-value pair."""
         index = self._hash(key)
@@ -27,7 +28,7 @@ class HashTable:
                 self.table[index][i] = (key, value)
                 return
         self.table[index].append((key, value))
-    
+
     def get(self, key: int) -> Optional[any]:
         """Get value by key."""
         index = self._hash(key)
@@ -35,7 +36,7 @@ class HashTable:
             if k == key:
                 return v
         return None
-    
+
     def delete(self, key: int) -> bool:
         """Delete key-value pair."""
         index = self._hash(key)
@@ -51,11 +52,11 @@ def main() -> None:
     print("=" * 70)
     print("HASH TABLE")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Hash Table")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

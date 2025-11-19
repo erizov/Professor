@@ -4,6 +4,13 @@
 **Purpose**: Comprehensive resources for educators teaching the 16-semester algorithms course.
 
 ---
+---
+
+## Instructor Guide for Algorithms Course
+
+**Purpose**: Comprehensive resources for educators teaching the 16-semester algorithms course.
+
+---
 
 ## Lecture Slides
 
@@ -210,4 +217,3 @@ Each lecture should include:
 ---
 
 *These resources support effective teaching of the algorithms course. Customize based on your institution and student needs.*
-

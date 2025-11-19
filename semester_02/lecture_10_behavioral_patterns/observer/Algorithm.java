@@ -221,7 +221,7 @@ public class Algorithm {
                 } else if (sellThreshold != null && price >= sellThreshold) {
                     logger.info(" → SELL SIGNAL!");
                 } else {
-                    logger.info();
+                    logger.info("");
                 }
                 
                 lastPrice = price;
@@ -230,16 +230,18 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("OBSERVER DESIGN PATTERN DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: News Agency
         logger.info("Example 1: News Agency");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         NewsAgency agency = new NewsAgency();
         NewsChannel channel1 = new NewsChannel("CNN");
@@ -251,15 +253,15 @@ public class Algorithm {
         agency.attach(email1);
         
         agency.setNews("Breaking: New algorithm discovered!");
-        logger.info();
+        logger.info("");
         
         agency.detach(channel2);
         agency.setNews("Update: Algorithm implementation complete!");
-        logger.info();
+        logger.info("");
         
         // Example 2: Weather Station
         logger.info("Example 2: Weather Station");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         WeatherData weather = new WeatherData();
         CurrentConditionsDisplay display1 = 
@@ -271,14 +273,14 @@ public class Algorithm {
         weather.attach(display2);
         
         weather.setMeasurements(75.0, 65.0, 30.4);
-        logger.info();
+        logger.info("");
         
         weather.setMeasurements(80.0, 70.0, 30.2);
-        logger.info();
+        logger.info("");
         
         // Example 3: Stock Market
         logger.info("Example 3: Stock Market Trading");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         Stock apple = new Stock("AAPL", 150.00);
         StockTrader trader1 = new StockTrader("Alice", 145.0, 160.0);
@@ -291,11 +293,11 @@ public class Algorithm {
         apple.setPrice(142.00);
         apple.setPrice(155.00);
         apple.setPrice(162.00);
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern Summary:");
         logger.info("\nKey Advantages:");
         logger.info("  - Loose coupling");
@@ -305,7 +307,7 @@ public class Algorithm {
         logger.info("  - Event-driven systems");
         logger.info("  - MVC architecture");
         logger.info("  - Publish-Subscribe");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

@@ -11,15 +11,16 @@ from typing import List, Optional, Dict, Set
 
 class SpeculativeDecoding:
     """Speculative decoding for LLMs."""
+
     def __init__(self):
         self.draft_model: dict = {}
         self.target_model: dict = {}
-    
+
     def generate_draft(self, prompt: List[int], length: int) -> List[int]:
         """Generate draft tokens."""
         # Simplified draft generation
         return [0] * length
-    
+
     def verify_tokens(self, draft: List[int], target: List[int]) -> List[int]:
         """Verify draft tokens."""
         # Simplified verification
@@ -37,11 +38,11 @@ def main() -> None:
     print("=" * 70)
     print("SPECULATIVE DECODING")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Speculative Decoding")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

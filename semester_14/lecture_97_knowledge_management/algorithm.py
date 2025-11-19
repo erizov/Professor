@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("KNOWLEDGE MANAGEMENT")
     print("=" * 70)
-    
+
     print("Algorithm implementation for Knowledge Management")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

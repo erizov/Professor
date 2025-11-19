@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("SEGMENTATION")
     print("=" * 70)
-    
+
     print("Algorithm implementation for Segmentation")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

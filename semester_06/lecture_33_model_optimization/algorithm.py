@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("MODEL OPTIMIZATION")
     print("=" * 70)
-    
+
     print("Algorithm implementation for Model Optimization")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

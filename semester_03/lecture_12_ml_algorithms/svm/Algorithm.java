@@ -83,16 +83,18 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("SUPPORT VECTOR MACHINE (SVM) DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example
         logger.info("Example: Basic SVM");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         double[][] X = {
             {1, 1}, {2, 2}, {3, 3},
@@ -110,15 +112,15 @@ public class Algorithm {
         }
         
         logger.info("Accuracy: " + (double)correct / y.length);
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Training: O(n*d*iter)");
         logger.info("  Prediction: O(d)");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

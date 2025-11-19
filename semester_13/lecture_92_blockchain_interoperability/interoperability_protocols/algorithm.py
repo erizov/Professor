@@ -11,22 +11,23 @@ from typing import List, Optional, Dict, Set
 
 class InteroperabilityProtocol:
     """Interoperability protocol."""
+
     def __init__(self):
         self.protocols: Dict[str, dict] = {}
         self.adapters: Dict[str, callable] = {}
-    
+
     def register_protocol(self, protocol_name: str, spec: dict) -> None:
         """Register protocol."""
         self.protocols[protocol_name] = spec
-    
-    def create_adapter(self, from_protocol: str, to_protocol: str, 
-                      adapter_func: callable) -> None:
+
+    def create_adapter(
+        self, from_protocol: str, to_protocol: str, adapter_func: callable
+    ) -> None:
         """Create protocol adapter."""
         key = f"{from_protocol}_to_{to_protocol}"
         self.adapters[key] = adapter_func
-    
-    def translate(self, from_protocol: str, to_protocol: str, 
-                 data: any) -> any:
+
+    def translate(self, from_protocol: str, to_protocol: str, data: any) -> any:
         """Translate between protocols."""
         key = f"{from_protocol}_to_{to_protocol}"
         if key in self.adapters:
@@ -39,11 +40,11 @@ def main() -> None:
     print("=" * 70)
     print("INTEROPERABILITY PROTOCOLS")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Interoperability Protocols")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

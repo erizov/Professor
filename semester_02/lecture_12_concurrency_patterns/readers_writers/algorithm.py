@@ -11,31 +11,33 @@ from typing import List, Optional, Dict, Set
 
 import threading
 
+
 class ReadersWriters:
     """Readers-Writers problem solution."""
+
     def __init__(self):
         self.readers_count = 0
         self.mutex = threading.Lock()
         self.write_lock = threading.Lock()
         self.data = 0
-    
+
     def read(self) -> int:
         """Read data."""
         with self.mutex:
             self.readers_count += 1
             if self.readers_count == 1:
                 self.write_lock.acquire()
-        
+
         # Read data
         value = self.data
-        
+
         with self.mutex:
             self.readers_count -= 1
             if self.readers_count == 0:
                 self.write_lock.release()
-        
+
         return value
-    
+
     def write(self, value: int) -> None:
         """Write data."""
         with self.write_lock:
@@ -47,11 +49,11 @@ def main() -> None:
     print("=" * 70)
     print("READERS WRITERS")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Readers Writers")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

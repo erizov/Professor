@@ -76,14 +76,16 @@ public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
 
     public static void main(String[] args) {
-        logger.info("=".repeat(70));
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
+        logger.info(separator);
         logger.info("DEPTH-FIRST SEARCH (DFS) DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Recursive DFS
         logger.info("Example 1: Recursive DFS");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         Graph g1 = new Graph(false);
         g1.addEdge(0, 1);
         g1.addEdge(0, 2);
@@ -93,16 +95,16 @@ public class Algorithm {
         
         List<Integer> dfsResult = g1.dfs(0);
         logger.info("DFS from node 0: " + dfsResult);
-        logger.info();
+        logger.info("");
         
         // Example 2: Iterative DFS
         logger.info("Example 2: Iterative DFS");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         List<Integer> dfsIter = g1.dfsIterative(0);
         logger.info("Iterative DFS from node 0: " + dfsIter);
-        logger.info();
+        logger.info("");
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nAlgorithm Summary:");
         logger.info("\nTime Complexity: O(V + E)");
         logger.info("Space Complexity: O(V)");
@@ -110,6 +112,6 @@ public class Algorithm {
         logger.info("  - Memory efficient");
         logger.info("  - Detects cycles");
         logger.info("  - Topological sorting");
-        logger.info("=".repeat(70));
+        logger.info(separator);
     }
 }

@@ -46,7 +46,6 @@ WORKED_EXAMPLES: Dict[str, str] = {
 - Final: [1, 2, 5, 8, 9]
 
 **Key Insight**: Each partition places the pivot in its final position, then we recursively sort the subarrays.""",
-
     "merge_sort": """## Worked Example: Sorting [5, 2, 8, 1] with Merge Sort
 
 **Step 1: Divide**
@@ -70,7 +69,6 @@ WORKED_EXAMPLES: Dict[str, str] = {
 - Add remaining: [1, 2, 5, 8]
 
 **Key Insight**: Merge sort guarantees O(n log n) by always dividing in half and merging in linear time.""",
-
     "binary_search": """## Worked Example: Finding 7 in [1, 3, 5, 7, 9, 11, 13]
 
 **Step 1: Initialize**
@@ -93,7 +91,6 @@ WORKED_EXAMPLES: Dict[str, str] = {
 - Left > Right → Not found
 
 **Key Insight**: Each comparison eliminates half the search space, giving O(log n) performance.""",
-
     "bfs": """## Worked Example: BFS on Graph
 
 Graph:
@@ -135,7 +132,6 @@ Graph:
 - Final: [A, B, C, D, E, F]
 
 **Key Insight**: BFS explores level by level, ensuring shortest path discovery in unweighted graphs.""",
-
     "dijkstra": """## Worked Example: Dijkstra's Shortest Path
 
 Graph (weighted):
@@ -177,7 +173,6 @@ Find shortest path from A to all nodes.
 - Final distances: A=0, B=3, C=1, D=5
 
 **Key Insight**: Always process the closest unvisited vertex first, guaranteeing shortest paths.""",
-
     "heap_sort": """## Worked Example: Sorting [5, 2, 8, 1, 9] with Heap Sort
 
 **Step 1: Build Max Heap**
@@ -205,7 +200,6 @@ Find shortest path from A to all nodes.
 - Final: [1, 2, 5, 8, 9]
 
 **Key Insight**: Build max heap, then repeatedly extract maximum and heapify remaining elements.""",
-
     "dfs": """## Worked Example: DFS on Graph
 
 Graph:
@@ -250,7 +244,6 @@ Graph:
 - Result: [A, B, D, E, C, F]
 
 **Key Insight**: DFS explores as deep as possible before backtracking, using a stack (recursion) to track path.""",
-
     "knapsack": """## Worked Example: 0/1 Knapsack
 
 Items: [(weight, value)] = [(2, 10), (3, 15), (4, 20), (5, 25)]
@@ -279,54 +272,59 @@ Item 3 (5,25):   0  0 10 15 20 25 30 35
 **Key Insight**: Build table considering each item and capacity, choosing max value between taking or skipping item.""",
 }
 
+
 def get_worked_example(algorithm_name: str) -> Optional[str]:
     """Get worked example for algorithm."""
     normalized = algorithm_name.lower().replace("-", "_")
     return WORKED_EXAMPLES.get(normalized)
+
 
 def add_worked_example_section(readme_path: Path, algorithm_name: str) -> bool:
     """Add worked example section to README."""
     try:
         content = readme_path.read_text(encoding="utf-8")
         example = get_worked_example(algorithm_name)
-        
+
         if not example:
             return False
-        
+
         # Check if section already exists
         if "## Worked Example" in content or "## Worked Examples" in content:
             return False
-        
+
         # Find insertion point - after Algorithm Visualization or before Practice Exercises
         insertion_points = [
-            (r"(## Algorithm Visualization[^\n]*\n[^\n]*\n)", r"\1\n" + example + "\n\n"),
+            (
+                r"(## Algorithm Visualization[^\n]*\n[^\n]*\n)",
+                r"\1\n" + example + "\n\n",
+            ),
             (r"(## Practice Exercises)", example + "\n\n\1"),
         ]
-        
+
         for pattern, replacement in insertion_points:
             if re.search(pattern, content):
                 content = re.sub(pattern, replacement, content)
                 readme_path.write_text(content, encoding="utf-8")
                 return True
-        
+
         # If no insertion point found, add before Practice Exercises
         if "## Practice Exercises" in content:
             content = content.replace(
-                "## Practice Exercises",
-                example + "\n\n## Practice Exercises"
+                "## Practice Exercises", example + "\n\n## Practice Exercises"
             )
             readme_path.write_text(content, encoding="utf-8")
             return True
-        
+
         return False
     except Exception as e:
         print(f"Error processing {readme_path}: {e}")
         return False
 
+
 def main():
     """Add worked examples to algorithms."""
     updated_count = 0
-    
+
     # Top 20 algorithms for worked examples
     top_algorithms = [
         ("semester_01/lecture_02_efficient_sorting/quick_sort", "quick_sort"),
@@ -338,23 +336,29 @@ def main():
         ("semester_01/lecture_09_graph_algorithms/dijkstra", "dijkstra"),
         ("semester_01/lecture_10_dynamic_programming/knapsack", "knapsack"),
         ("semester_01/lecture_10_dynamic_programming/edit_distance", "edit_distance"),
-        ("semester_01/lecture_10_dynamic_programming/longest_common_subsequence", "longest_common_subsequence"),
+        (
+            "semester_01/lecture_10_dynamic_programming/longest_common_subsequence",
+            "longest_common_subsequence",
+        ),
         ("semester_01/lecture_11_string_algorithms/kmp", "kmp"),
         ("semester_01/lecture_01_sorting_fundamentals/bubble_sort", "bubble_sort"),
-        ("semester_01/lecture_01_sorting_fundamentals/insertion_sort", "insertion_sort"),
+        (
+            "semester_01/lecture_01_sorting_fundamentals/insertion_sort",
+            "insertion_sort",
+        ),
         ("semester_01/lecture_05_trees/binary_search_tree", "binary_search_tree"),
         ("semester_01/lecture_05_trees/avl_tree", "avl_tree"),
     ]
-    
+
     for algo_path, algo_name in top_algorithms:
         readme_path = ROOT / algo_path / "README.md"
         if readme_path.exists():
             if add_worked_example_section(readme_path, algo_name):
                 updated_count += 1
                 print(f"Added worked example to {algo_name}")
-    
+
     print(f"\nAdded worked examples to {updated_count} algorithms")
+
 
 if __name__ == "__main__":
     main()
-

@@ -114,26 +114,28 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("ADAPTER DESIGN PATTERN DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Media Player
         logger.info("Example 1: Media Player Adapter");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         AudioPlayer player = new AudioPlayer();
         player.play("mp3", "song.mp3");
         player.play("mp4", "video.mp4");
         player.play("vlc", "movie.vlc");
-        logger.info();
+        logger.info("");
         
         // Example 2: Square to Rectangle
         logger.info("Example 2: Square to Rectangle Adapter");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         Square square = new Square(5.0);
         SquareToRectangleAdapter adapter = 
@@ -143,11 +145,11 @@ public class Algorithm {
         logger.info("Rectangle width: " + adapter.getWidth());
         logger.info("Rectangle height: " + adapter.getHeight());
         logger.info("Rectangle area: " + adapter.getArea());
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern Summary:");
         logger.info("\nKey Advantages:");
         logger.info("  - Makes incompatible interfaces work together");
@@ -155,7 +157,7 @@ public class Algorithm {
         logger.info("\nWhen to Use:");
         logger.info("  - Integrating third-party libraries");
         logger.info("  - Legacy code integration");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

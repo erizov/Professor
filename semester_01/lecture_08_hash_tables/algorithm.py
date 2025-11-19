@@ -29,12 +29,12 @@ def main() -> None:
     print("=" * 70)
     print("SEARCHING ALGORITHMS")
     print("=" * 70)
-    
+
     data = [11, 12, 22, 25, 34, 64, 90]
     target = 25
     print(f"Array: {data}")
     print(f"Searching for: {target}")
-    
+
     result = binary_search(data, target)
     if result is not None:
         print(f"Found at index: {result}")

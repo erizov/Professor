@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("OBSERVABILITY")
     print("=" * 70)
-    
+
     print("Algorithm implementation for Observability")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("NLP")
     print("=" * 70)
-    
+
     print("Algorithm implementation for NLP")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

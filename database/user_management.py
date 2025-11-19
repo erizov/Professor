@@ -21,7 +21,9 @@ def get_connection() -> sqlite3.Connection:
     return conn
 
 
-def create_user(username: str, password: str, role: str, email: Optional[str] = None) -> bool:
+def create_user(
+    username: str, password: str, role: str, email: Optional[str] = None
+) -> bool:
     """Create a new user."""
     conn = get_connection()
     cursor = conn.cursor()
@@ -110,4 +112,3 @@ def record_login(user_id: int) -> None:
     )
     conn.commit()
     conn.close()
-

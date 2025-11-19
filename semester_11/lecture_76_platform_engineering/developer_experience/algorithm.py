@@ -11,15 +11,16 @@ from typing import List, Optional, Dict, Set
 
 class DeveloperExperience:
     """Developer experience metrics."""
+
     def __init__(self):
         self.metrics: Dict[str, List[float]] = {}
-    
+
     def record_metric(self, metric_name: str, value: float) -> None:
         """Record DX metric."""
         if metric_name not in self.metrics:
             self.metrics[metric_name] = []
         self.metrics[metric_name].append(value)
-    
+
     def get_dx_score(self) -> float:
         """Calculate overall DX score."""
         if not self.metrics:
@@ -36,11 +37,11 @@ def main() -> None:
     print("=" * 70)
     print("DEVELOPER EXPERIENCE")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Developer Experience")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

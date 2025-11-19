@@ -11,18 +11,19 @@ from typing import List, Optional, Dict, Set
 
 class LiskovSubstitution:
     """Liskov substitution principle."""
+
     def __init__(self):
         self.base_classes: Dict[str, List[str]] = {}
         self.subclasses: Dict[str, str] = {}
-    
+
     def define_base(self, base_name: str, methods: List[str]) -> None:
         """Define base class."""
         self.base_classes[base_name] = methods
-    
+
     def define_subclass(self, subclass_name: str, base_name: str) -> None:
         """Define subclass."""
         self.subclasses[subclass_name] = base_name
-    
+
     def verify_substitution(self, subclass_name: str) -> bool:
         """Verify Liskov substitution."""
         if subclass_name not in self.subclasses:
@@ -37,11 +38,11 @@ def main() -> None:
     print("=" * 70)
     print("LISKOV SUBSTITUTION")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Liskov Substitution")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

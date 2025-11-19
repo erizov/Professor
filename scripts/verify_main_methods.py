@@ -7,24 +7,22 @@ from pathlib import Path
 
 def main() -> None:
     """Verify all algorithm.py files have exactly one main()."""
-    base_path = Path('.')
+    base_path = Path(".")
     errors = []
-    
+
     # Find all algorithm.py files in lecture folders
-    for algorithm_file in base_path.rglob('algorithm.py'):
-        if 'semester_' not in str(algorithm_file):
+    for algorithm_file in base_path.rglob("algorithm.py"):
+        if "semester_" not in str(algorithm_file):
             continue
-        if 'lecture_' not in str(algorithm_file):
+        if "lecture_" not in str(algorithm_file):
             continue
         # Check if it's in a lecture folder (not algorithm subfolder)
-        if algorithm_file.parent.name.startswith('lecture_'):
-            content = algorithm_file.read_text(encoding='utf-8')
-            main_count = content.count('def main(')
+        if algorithm_file.parent.name.startswith("lecture_"):
+            content = algorithm_file.read_text(encoding="utf-8")
+            main_count = content.count("def main(")
             if main_count != 1:
-                errors.append(
-                    f"{algorithm_file}: {main_count} main() methods"
-                )
-    
+                errors.append(f"{algorithm_file}: {main_count} main() methods")
+
     if errors:
         print(f"Found {len(errors)} files with incorrect main() count:")
         for error in errors:
@@ -37,4 +35,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     exit(main())
-

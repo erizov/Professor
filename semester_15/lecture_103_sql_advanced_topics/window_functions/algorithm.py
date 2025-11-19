@@ -11,16 +11,17 @@ from typing import List, Optional, Dict, Set
 
 class WindowFunctions:
     """SQL window functions."""
+
     def __init__(self):
         self.data: List[dict] = {}
-    
+
     def row_number(self, data: List[dict], order_by: str) -> List[dict]:
         """Row number window function."""
         sorted_data = sorted(data, key=lambda x: x.get(order_by, 0))
         for i, row in enumerate(sorted_data, 1):
-            row['row_number'] = i
+            row["row_number"] = i
         return sorted_data
-    
+
     def rank(self, data: List[dict], order_by: str) -> List[dict]:
         """Rank window function."""
         sorted_data = sorted(data, key=lambda x: x.get(order_by, 0), reverse=True)
@@ -30,7 +31,7 @@ class WindowFunctions:
             value = row.get(order_by, 0)
             if prev_value is not None and value != prev_value:
                 current_rank += 1
-            row['rank'] = current_rank
+            row["rank"] = current_rank
             prev_value = value
         return sorted_data
 
@@ -40,11 +41,11 @@ def main() -> None:
     print("=" * 70)
     print("WINDOW FUNCTIONS")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Window Functions")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

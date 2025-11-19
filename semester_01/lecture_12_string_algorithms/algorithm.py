@@ -10,6 +10,7 @@ KMP, Boyer-Moore, and Rabin-Karp.
 
 def kmp_search(text: str, pattern: str) -> int:
     """KMP string search algorithm."""
+
     def build_lps(pattern: str) -> list:
         lps = [0] * len(pattern)
         length = 0
@@ -26,7 +27,7 @@ def kmp_search(text: str, pattern: str) -> int:
                     lps[i] = 0
                     i += 1
         return lps
-    
+
     lps = build_lps(pattern)
     i = j = 0
     while i < len(text):
@@ -48,7 +49,7 @@ def main() -> None:
     print("=" * 70)
     print("STRING ALGORITHMS")
     print("=" * 70)
-    
+
     text = "ABABDABACDABABCABCAB"
     pattern = "ABABCABAB"
     result = kmp_search(text, pattern)

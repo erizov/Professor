@@ -129,16 +129,18 @@ public class Algorithm {
      * Main method for demonstration.
      */
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("K-NEAREST NEIGHBORS (KNN) DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Simple 2D classification
         logger.info("Example 1: 2D Classification");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         // Training data
         List<double[]> xTrain = new ArrayList<>();
@@ -176,7 +178,7 @@ public class Algorithm {
         logger.info("Training samples: " + xTrain.size());
         logger.info("Test samples: " + xTest.size());
         logger.info("k = " + knn.k);
-        logger.info();
+        logger.info("");
         logger.info("Predictions:");
         for (int i = 0; i < xTest.size(); i++) {
             double[] x = xTest.get(i);
@@ -191,7 +193,7 @@ public class Algorithm {
         
         // Example 2: Effect of k
         logger.info("Example 2: Effect of Different k Values");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         for (int k : new int[]{1, 3, 5, 7}) {
             KNNClassifier knnK = new KNNClassifier(k);
@@ -199,12 +201,12 @@ public class Algorithm {
             double acc = knnK.score(xTest, yTest);
             System.out.printf("k=%d: Accuracy = %.0f%%%n", k, acc * 100);
         }
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         double durationMs = (endTime - startTime) / 1_000_000.0;
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Training Time:  O(1) - just stores data");
         logger.info("  Prediction Time: O(n*d) per sample");
@@ -214,7 +216,7 @@ public class Algorithm {
         logger.info("  - Slow prediction for large datasets");
         logger.info("  - Sensitive to feature scaling");
         logger.info("  - Works well for small datasets");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("%nTotal execution time: %.3f ms%n", durationMs);
     }
 }

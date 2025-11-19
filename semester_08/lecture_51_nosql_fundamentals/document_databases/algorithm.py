@@ -11,24 +11,25 @@ from typing import List, Optional, Dict, Set
 
 class DocumentDatabase:
     """Document database."""
+
     def __init__(self):
         self.collections: Dict[str, List[dict]] = {}
-    
+
     def create_collection(self, name: str) -> None:
         """Create collection."""
         self.collections[name] = []
-    
+
     def insert_document(self, collection: str, document: dict) -> str:
         """Insert document."""
         import time
+
         doc_id = f"doc_{int(time.time())}"
-        document['_id'] = doc_id
+        document["_id"] = doc_id
         if collection in self.collections:
             self.collections[collection].append(document)
         return doc_id
-    
-    def find_documents(self, collection: str, 
-                      query: dict) -> List[dict]:
+
+    def find_documents(self, collection: str, query: dict) -> List[dict]:
         """Find documents."""
         if collection not in self.collections:
             return []
@@ -44,11 +45,11 @@ def main() -> None:
     print("=" * 70)
     print("DOCUMENT DATABASES")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Document Databases")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

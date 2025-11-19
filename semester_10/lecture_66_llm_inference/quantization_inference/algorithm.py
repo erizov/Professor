@@ -11,16 +11,17 @@ from typing import List, Optional, Dict, Set
 
 class QuantizationInference:
     """Quantization for inference."""
+
     def __init__(self):
         self.model: any = None
         self.quantized: bool = False
-    
+
     def quantize_for_inference(self, model: any, bits: int = 8) -> any:
         """Quantize model for inference."""
         self.model = model
         self.quantized = True
         return model
-    
+
     def optimize_inference(self, model: any) -> any:
         """Optimize quantized model for inference."""
         # Simplified: return optimized model
@@ -32,11 +33,11 @@ def main() -> None:
     print("=" * 70)
     print("QUANTIZATION INFERENCE")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Quantization Inference")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

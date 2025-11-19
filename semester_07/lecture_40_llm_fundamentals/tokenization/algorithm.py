@@ -11,11 +11,12 @@ from typing import List, Optional, Dict, Set
 
 class Tokenization:
     """Text tokenization."""
+
     def __init__(self):
         self.vocab: Dict[str, int] = {}
         self.token_to_id: Dict[str, int] = {}
         self.id_to_token: Dict[int, str] = {}
-    
+
     def tokenize(self, text: str) -> List[int]:
         """Tokenize text."""
         tokens = text.split()
@@ -27,11 +28,11 @@ class Tokenization:
                 self.id_to_token[token_id] = token
             token_ids.append(self.token_to_id[token])
         return token_ids
-    
+
     def detokenize(self, token_ids: List[int]) -> str:
         """Detokenize."""
-        tokens = [self.id_to_token.get(tid, '<UNK>') for tid in token_ids]
-        return ' '.join(tokens)
+        tokens = [self.id_to_token.get(tid, "<UNK>") for tid in token_ids]
+        return " ".join(tokens)
 
 
 def main() -> None:
@@ -39,11 +40,11 @@ def main() -> None:
     print("=" * 70)
     print("TOKENIZATION")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Tokenization")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

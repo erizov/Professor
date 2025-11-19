@@ -11,15 +11,17 @@ from typing import List, Optional, Dict, Set
 
 class PartitioningStrategies:
     """Partitioning strategies."""
+
     def __init__(self):
         self.strategies: Dict[str, callable] = {}
-    
+
     def register_strategy(self, name: str, strategy: callable) -> None:
         """Register partitioning strategy."""
         self.strategies[name] = strategy
-    
-    def partition(self, strategy_name: str, data: List[any], 
-                 config: dict) -> Dict[str, List[any]]:
+
+    def partition(
+        self, strategy_name: str, data: List[any], config: dict
+    ) -> Dict[str, List[any]]:
         """Partition data using strategy."""
         if strategy_name in self.strategies:
             return self.strategies[strategy_name](data, config)
@@ -31,11 +33,11 @@ def main() -> None:
     print("=" * 70)
     print("PARTITIONING STRATEGIES")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Partitioning Strategies")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

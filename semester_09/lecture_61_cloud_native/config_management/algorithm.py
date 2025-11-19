@@ -11,30 +11,34 @@ from typing import List, Optional, Dict, Set
 
 class ConfigManager:
     """Configuration management system."""
+
     def __init__(self):
         self.configs: Dict[str, dict] = {}
         self.environments: List[str] = ["development", "staging", "production"]
         self.current_environment = "development"
-    
-    def set_config(self, key: str, value: any, environment: Optional[str] = None) -> None:
+
+    def set_config(
+        self, key: str, value: any, environment: Optional[str] = None
+    ) -> None:
         """Set configuration."""
         env = environment or self.current_environment
         if env not in self.configs:
             self.configs[env] = {}
         self.configs[env][key] = value
-    
-    def get_config(self, key: str, environment: Optional[str] = None, 
-                  default: any = None) -> any:
+
+    def get_config(
+        self, key: str, environment: Optional[str] = None, default: any = None
+    ) -> any:
         """Get configuration."""
         env = environment or self.current_environment
         if env in self.configs and key in self.configs[env]:
             return self.configs[env][key]
         return default
-    
+
     def load_config(self, config_dict: dict, environment: str) -> None:
         """Load configuration from dictionary."""
         self.configs[environment] = config_dict
-    
+
     def set_environment(self, environment: str) -> None:
         """Set current environment."""
         if environment in self.environments:
@@ -46,11 +50,11 @@ def main() -> None:
     print("=" * 70)
     print("CONFIG MANAGEMENT")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Config Management")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

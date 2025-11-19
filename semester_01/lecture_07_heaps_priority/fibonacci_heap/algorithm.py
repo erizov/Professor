@@ -11,6 +11,7 @@ from typing import List, Optional, Dict, Set
 
 class FibonacciHeapNode:
     """Fibonacci heap node."""
+
     def __init__(self, key: int):
         self.key = key
         self.degree = 0
@@ -20,12 +21,14 @@ class FibonacciHeapNode:
         self.right = self
         self.mark = False
 
+
 class FibonacciHeap:
     """Fibonacci heap implementation (simplified)."""
+
     def __init__(self):
         self.min_node = None
         self.n = 0
-    
+
     def insert(self, key: int) -> FibonacciHeapNode:
         """Insert key into heap."""
         node = FibonacciHeapNode(key)
@@ -41,12 +44,12 @@ class FibonacciHeap:
                 self.min_node = node
         self.n += 1
         return node
-    
+
     def extract_min(self) -> Optional[int]:
         """Extract minimum key."""
         if self.min_node is None:
             return None
-        
+
         min_key = self.min_node.key
         # Simplified - full implementation needs consolidation
         self.n -= 1
@@ -58,11 +61,11 @@ def main() -> None:
     print("=" * 70)
     print("FIBONACCI HEAP")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Fibonacci Heap")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

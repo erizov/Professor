@@ -15,70 +15,66 @@ import logging
 logger = get_logger(__name__)
 
 
-T = TypeVar('T')
+T = TypeVar("T")
 
 
-def quick_sort(
-    arr: List[T],
-    low: int = 0,
-    high: int = None
-) -> List[T]:
+def quick_sort(arr: List[T], low: int = 0, high: int = None) -> List[T]:
     """
     Sort array using quick sort algorithm.
-    
+
     Args:
         arr: List to be sorted
         low: Starting index
         high: Ending index
-        
+
     Returns:
         Sorted list (modifies in-place and returns)
-        
+
     Time Complexity:
         Best: O(n log n)
         Average: O(n log n)
         Worst: O(n²) - when pivot is always min/max
-        
+
     Space Complexity: O(log n) for recursion stack
     """
     if high is None:
         high = len(arr) - 1
-    
+
     if low < high:
         # Partition and get pivot index
         pivot_idx = partition(arr, low, high)
-        
+
         # Recursively sort left and right subarrays
         quick_sort(arr, low, pivot_idx - 1)
         quick_sort(arr, pivot_idx + 1, high)
-    
+
     return arr
 
 
 def partition(arr: List[T], low: int, high: int) -> int:
     """
     Partition array around pivot.
-    
+
     Args:
         arr: List to partition
         low: Starting index
         high: Ending index
-        
+
     Returns:
         Final position of pivot
     """
     # Choose rightmost element as pivot
     pivot = arr[high]
-    
+
     # Index of smaller element
     i = low - 1
-    
+
     for j in range(low, high):
         # If current element is smaller than or equal to pivot
         if arr[j] <= pivot:
             i += 1
             arr[i], arr[j] = arr[j], arr[i]
-    
+
     # Place pivot in correct position
     arr[i + 1], arr[high] = arr[high], arr[i + 1]
     return i + 1
@@ -87,25 +83,26 @@ def partition(arr: List[T], low: int, high: int) -> int:
 def quick_sort_randomized(arr: List[T]) -> List[T]:
     """
     Quick sort with randomized pivot selection.
-    
+
     Args:
         arr: List to be sorted
-        
+
     Returns:
         Sorted list
     """
+
     def partition_random(arr: List[T], low: int, high: int) -> int:
         # Choose random pivot
         pivot_idx = random.randint(low, high)
         arr[pivot_idx], arr[high] = arr[high], arr[pivot_idx]
         return partition(arr, low, high)
-    
+
     def sort_helper(arr: List[T], low: int, high: int) -> None:
         if low < high:
             pivot_idx = partition_random(arr, low, high)
             sort_helper(arr, low, pivot_idx - 1)
             sort_helper(arr, pivot_idx + 1, high)
-    
+
     sort_helper(arr, 0, len(arr) - 1)
     return arr
 
@@ -116,7 +113,7 @@ def main() -> None:
     logger.info("QUICK SORT DEMONSTRATION")
     logger.info("=" * 70)
     logger.info()
-    
+
     # Example 1: Basic sorting
     logger.info("Example 1: Basic Integer Sorting")
     logger.info("-" * 70)
@@ -125,7 +122,7 @@ def main() -> None:
     result1 = quick_sort(data1.copy())
     logger.info(f"Sorted:   {result1}")
     logger.info()
-    
+
     # Example 2: Already sorted
     logger.info("Example 2: Already Sorted")
     logger.info("-" * 70)
@@ -135,7 +132,7 @@ def main() -> None:
     logger.info(f"Sorted:   {result2}")
     logger.info("Note: May have worst-case O(n²) performance")
     logger.info()
-    
+
     # Example 3: Randomized pivot
     logger.info("Example 3: Randomized Pivot Selection")
     logger.info("-" * 70)
@@ -145,7 +142,7 @@ def main() -> None:
     logger.info(f"Sorted:   {result3}")
     logger.info("Randomization helps avoid worst case")
     logger.info()
-    
+
     # Example 4: Strings
     logger.info("Example 4: Sorting Strings")
     logger.info("-" * 70)
@@ -154,7 +151,7 @@ def main() -> None:
     result4 = quick_sort(data4.copy())
     logger.info(f"Sorted:   {result4}")
     logger.info()
-    
+
     # Example 5: Large dataset
     logger.info("Example 5: Large Random Dataset")
     logger.info("-" * 70)
@@ -163,7 +160,7 @@ def main() -> None:
     result5 = quick_sort(data5.copy())
     logger.info(f"Sorted (first 10):      {result5[:10]}...")
     logger.info()
-    
+
     logger.info("=" * 70)
     logger.info("\nComplexity Summary:")
     logger.info("  Time:  O(n log n) average, O(n²) worst")

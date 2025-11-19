@@ -11,15 +11,16 @@ from typing import List, Optional, Dict, Set
 
 class GraphPatternMatching:
     """Graph pattern matching."""
+
     def __init__(self):
         self.graph: Dict[str, List[tuple]] = {}
-    
+
     def add_edge(self, u: str, v: str, label: str = None) -> None:
         """Add edge."""
         if u not in self.graph:
             self.graph[u] = []
         self.graph[u].append((v, label))
-    
+
     def match_pattern(self, pattern: dict) -> List[List[str]]:
         """Match pattern in graph."""
         # Simplified pattern matching
@@ -28,7 +29,7 @@ class GraphPatternMatching:
             if self._matches_pattern(node, pattern):
                 matches.append([node])
         return matches
-    
+
     def _matches_pattern(self, node: str, pattern: dict) -> bool:
         """Check if node matches pattern."""
         # Simplified matching
@@ -40,11 +41,11 @@ def main() -> None:
     print("=" * 70)
     print("GRAPH PATTERN MATCHING")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Graph Pattern Matching")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

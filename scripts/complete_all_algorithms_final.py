@@ -16,87 +16,116 @@ ROOT = Path(__file__).resolve().parents[1]
 # Import functions from previous phase scripts
 sys.path.insert(0, str(ROOT / "scripts"))
 from phase5_implement_algorithm_logic import (
-    determine_category, generate_implementation, replace_todo_implementation
+    determine_category,
+    generate_implementation,
+    replace_todo_implementation,
 )
 from phase8_comprehensive_framework_examples import (
-    get_framework_examples, add_framework_examples_to_readme
+    get_framework_examples,
+    add_framework_examples_to_readme,
 )
 
 
-def find_algorithms_needing_work() -> Tuple[List[Tuple[Path, str, str]], List[Tuple[Path, str, str]]]:
+def find_algorithms_needing_work() -> (
+    Tuple[List[Tuple[Path, str, str]], List[Tuple[Path, str, str]]]
+):
     """Find algorithms needing implementations and framework examples."""
     need_implementation = []
     need_framework_examples = []
-    
+
     for algo_file in ROOT.rglob("**/algorithm.py"):
         if "supporting_documents" in str(algo_file) or "scripts" in str(algo_file):
             continue
-        
+
         try:
-            content = algo_file.read_text(encoding='utf-8')
+            content = algo_file.read_text(encoding="utf-8")
             algorithm_name = algo_file.parent.name
             lecture_path = algo_file.parent.parent
             lecture_name = lecture_path.name if lecture_path else ""
-            
+
             # Check if needs implementation (more thorough check)
-            if 'TODO' in content or 'pass' in content or 'return None' in content:
+            if "TODO" in content or "pass" in content or "return None" in content:
                 # Check if it's actually a placeholder
-                if 'TODO' in content and 'Implement' in content:
+                if "TODO" in content and "Implement" in content:
                     category = determine_category(algorithm_name, lecture_name, content)
                     need_implementation.append((algo_file, algorithm_name, category))
-                elif 'def ' in content:
+                elif "def " in content:
                     # Check if function just returns None or has pass
-                    func_match = re.search(r'def\s+\w+\([^)]*\)[^:]*:\s*(.*?)(?=\ndef\s+|\Z)', content, re.DOTALL)
+                    func_match = re.search(
+                        r"def\s+\w+\([^)]*\)[^:]*:\s*(.*?)(?=\ndef\s+|\Z)",
+                        content,
+                        re.DOTALL,
+                    )
                     if func_match:
                         func_body = func_match.group(1).strip()
-                        if func_body == 'pass' or (func_body == 'return None' and content.count('return') == 1):
-                            category = determine_category(algorithm_name, lecture_name, content)
-                            need_implementation.append((algo_file, algorithm_name, category))
-            
+                        if func_body == "pass" or (
+                            func_body == "return None" and content.count("return") == 1
+                        ):
+                            category = determine_category(
+                                algorithm_name, lecture_name, content
+                            )
+                            need_implementation.append(
+                                (algo_file, algorithm_name, category)
+                            )
+
             # Check if needs framework examples
             readme_path = algo_file.parent / "README.md"
             if readme_path.exists():
-                readme_content = readme_path.read_text(encoding='utf-8')
-                
+                readme_content = readme_path.read_text(encoding="utf-8")
+
                 # Check if has Examples section
                 has_examples = (
-                    "## Examples of Implementation" in readme_content or
-                    "## Examples of Deployment" in readme_content or
-                    "## Examples" in readme_content
+                    "## Examples of Implementation" in readme_content
+                    or "## Examples of Deployment" in readme_content
+                    or "## Examples" in readme_content
                 )
-                
+
                 if has_examples:
                     # Check framework count (want at least 2)
-                    framework_count = sum(1 for fw in [
-                        'Kubernetes', 'Docker', 'Terraform', 'Prometheus',
-                        'Istio', 'Kafka', 'Redis', 'PostgreSQL', 'PyTorch',
-                        'Hugging Face', 'LangChain', 'OpenTelemetry', 'AWS',
-                        'Spring Framework', '.NET Framework', 'Java',
-                        'Python', 'CUDA', 'Akka', 'Jaeger', 'Elastic'
-                    ] if fw in readme_content)
-                    
+                    framework_count = sum(
+                        1
+                        for fw in [
+                            "Kubernetes",
+                            "Docker",
+                            "Terraform",
+                            "Prometheus",
+                            "Istio",
+                            "Kafka",
+                            "Redis",
+                            "PostgreSQL",
+                            "PyTorch",
+                            "Hugging Face",
+                            "LangChain",
+                            "OpenTelemetry",
+                            "AWS",
+                            "Spring Framework",
+                            ".NET Framework",
+                            "Java",
+                            "Python",
+                            "CUDA",
+                            "Akka",
+                            "Jaeger",
+                            "Elastic",
+                        ]
+                        if fw in readme_content
+                    )
+
                     if framework_count < 2:
-                        need_framework_examples.append((readme_path, algorithm_name, lecture_name))
+                        need_framework_examples.append(
+                            (readme_path, algorithm_name, lecture_name)
+                        )
         except Exception:
             continue
-    
+
     return need_implementation, need_framework_examples
 
 
 def commit_changes(message: str) -> bool:
     """Commit changes to git."""
     try:
+        subprocess.run(["git", "add", "-A"], cwd=ROOT, check=True, capture_output=True)
         subprocess.run(
-            ["git", "add", "-A"],
-            cwd=ROOT,
-            check=True,
-            capture_output=True
-        )
-        subprocess.run(
-            ["git", "commit", "-m", message],
-            cwd=ROOT,
-            check=True,
-            capture_output=True
+            ["git", "commit", "-m", message], cwd=ROOT, check=True, capture_output=True
         )
         return True
     except subprocess.CalledProcessError as e:
@@ -109,96 +138,116 @@ def main():
     print("=" * 70)
     print("Complete All Algorithms - Final Comprehensive Pass")
     print("=" * 70)
-    
+
     iteration = 0
     total_completed_all = 0
-    
+
     while True:
         iteration += 1
         print(f"\n{'='*70}")
         print(f"Iteration {iteration}")
         print(f"{'='*70}")
-        
+
         # Find algorithms needing work
         print("\nScanning for algorithms needing work...")
         need_impl, need_frameworks = find_algorithms_needing_work()
-        
+
         print(f"\nFound:")
         print(f"  - Algorithms needing implementation: {len(need_impl)}")
         print(f"  - Algorithms needing framework examples: {len(need_frameworks)}")
         print(f"  - Total: {len(need_impl) + len(need_frameworks)}")
-        
+
         if len(need_impl) == 0 and len(need_frameworks) == 0:
             print("\n[COMPLETE] No more algorithms need work!")
             break
-        
+
         iteration_completed = 0
         impl_completed = 0
         framework_completed = 0
-        
+
         # Process implementations
         if need_impl:
             print(f"\n{'='*70}")
             print("Phase 1: Implementing Algorithms")
             print(f"{'='*70}")
-            
+
             for i, (algo_file, algo_name, category) in enumerate(need_impl, 1):
                 if replace_todo_implementation(algo_file, algo_name, category):
                     impl_completed += 1
                     iteration_completed += 1
                     total_completed_all += 1
-                    
+
                     if total_completed_all % 50 == 0:
-                        print(f"\n[PROGRESS] Completed {total_completed_all} algorithms...")
-                        commit_changes(f"Complete algorithms iteration {iteration}: {total_completed_all} total completions")
-                        print(f"[COMMITTED] Changes committed at {total_completed_all} completions")
-            
+                        print(
+                            f"\n[PROGRESS] Completed {total_completed_all} algorithms..."
+                        )
+                        commit_changes(
+                            f"Complete algorithms iteration {iteration}: {total_completed_all} total completions"
+                        )
+                        print(
+                            f"[COMMITTED] Changes committed at {total_completed_all} completions"
+                        )
+
             if impl_completed > 0:
                 print(f"\n[COMPLETE] Implementations: {impl_completed} files")
-        
+
         # Process framework examples
         if need_frameworks:
             print(f"\n{'='*70}")
             print("Phase 2: Adding Framework Examples")
             print(f"{'='*70}")
-            
-            for i, (readme_path, algo_name, lecture_name) in enumerate(need_frameworks, 1):
-                if add_framework_examples_to_readme(readme_path, algo_name, lecture_name):
+
+            for i, (readme_path, algo_name, lecture_name) in enumerate(
+                need_frameworks, 1
+            ):
+                if add_framework_examples_to_readme(
+                    readme_path, algo_name, lecture_name
+                ):
                     framework_completed += 1
                     iteration_completed += 1
                     total_completed_all += 1
-                    
+
                     if total_completed_all % 50 == 0:
-                        print(f"\n[PROGRESS] Completed {total_completed_all} algorithms...")
-                        commit_changes(f"Complete algorithms iteration {iteration}: {total_completed_all} total completions")
-                        print(f"[COMMITTED] Changes committed at {total_completed_all} completions")
-            
+                        print(
+                            f"\n[PROGRESS] Completed {total_completed_all} algorithms..."
+                        )
+                        commit_changes(
+                            f"Complete algorithms iteration {iteration}: {total_completed_all} total completions"
+                        )
+                        print(
+                            f"[COMMITTED] Changes committed at {total_completed_all} completions"
+                        )
+
             if framework_completed > 0:
                 print(f"\n[COMPLETE] Framework Examples: {framework_completed} files")
-        
+
         # Commit remaining changes if any
         if iteration_completed > 0 and total_completed_all % 50 != 0:
-            commit_changes(f"Complete algorithms iteration {iteration}: {iteration_completed} completions ({impl_completed} impl, {framework_completed} frameworks)")
-            print(f"[COMMITTED] Iteration {iteration} commit: {iteration_completed} completions")
-        
+            commit_changes(
+                f"Complete algorithms iteration {iteration}: {iteration_completed} completions ({impl_completed} impl, {framework_completed} frameworks)"
+            )
+            print(
+                f"[COMMITTED] Iteration {iteration} commit: {iteration_completed} completions"
+            )
+
         print(f"\nIteration {iteration} Summary:")
         print(f"  - Implementations: {impl_completed}")
         print(f"  - Framework examples: {framework_completed}")
         print(f"  - Total this iteration: {iteration_completed}")
         print(f"  - Total overall: {total_completed_all}")
-        
+
         # Safety check - don't loop forever
         if iteration >= 10:
             print("\n[WARNING] Reached maximum iterations (10). Stopping.")
             break
-    
+
     # Final summary
     print(f"\n{'='*70}")
     print("FINAL SUMMARY")
     print(f"{'='*70}")
     print(f"Total iterations: {iteration}")
     print(f"Total algorithms completed: {total_completed_all}")
-    
+
     # Update comprehensive textbook
     print(f"\n{'='*70}")
     print("Updating Comprehensive Textbook...")
@@ -207,17 +256,19 @@ def main():
         subprocess.run(
             [sys.executable, str(ROOT / "scripts" / "generate_comprehensive_pdf.py")],
             cwd=ROOT,
-            check=True
+            check=True,
         )
         print("[COMPLETE] Comprehensive textbook updated")
     except Exception as e:
         print(f"[ERROR] Failed to update textbook: {e}")
-    
+
     # Final commit
     if total_completed_all > 0:
-        commit_changes(f"Complete all algorithms FINAL: {total_completed_all} total completions across {iteration} iterations")
+        commit_changes(
+            f"Complete all algorithms FINAL: {total_completed_all} total completions across {iteration} iterations"
+        )
         print(f"\n[COMMITTED] Final commit with all changes")
-    
+
     print(f"\n{'='*70}")
     print("ALL ALGORITHMS COMPLETION FINISHED")
     print(f"{'='*70}")
@@ -225,4 +276,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

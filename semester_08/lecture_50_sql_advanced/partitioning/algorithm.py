@@ -11,11 +11,13 @@ from typing import List, Optional, Dict, Set
 
 class Partitioning:
     """Data partitioning."""
+
     def __init__(self):
         self.partitions: Dict[str, List[dict]] = {}
-    
-    def partition_by_range(self, data: List[dict], key: str, 
-                          ranges: List[tuple]) -> Dict[str, List[dict]]:
+
+    def partition_by_range(
+        self, data: List[dict], key: str, ranges: List[tuple]
+    ) -> Dict[str, List[dict]]:
         """Partition data by range."""
         partitions = {f"partition_{i}": [] for i in range(len(ranges))}
         for row in data:
@@ -25,9 +27,10 @@ class Partitioning:
                     partitions[f"partition_{i}"].append(row)
                     break
         return partitions
-    
-    def partition_by_hash(self, data: List[dict], key: str, 
-                         num_partitions: int) -> Dict[str, List[dict]]:
+
+    def partition_by_hash(
+        self, data: List[dict], key: str, num_partitions: int
+    ) -> Dict[str, List[dict]]:
         """Partition data by hash."""
         partitions = {f"partition_{i}": [] for i in range(num_partitions)}
         for row in data:
@@ -42,11 +45,11 @@ def main() -> None:
     print("=" * 70)
     print("PARTITIONING")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Partitioning")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

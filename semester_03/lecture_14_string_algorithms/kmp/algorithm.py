@@ -11,6 +11,7 @@ from typing import List, Optional, Dict, Set
 
 def kmp_search(text: str, pattern: str) -> List[int]:
     """KMP string search algorithm."""
+
     def build_lps(pattern: str) -> List[int]:
         lps = [0] * len(pattern)
         length = 0
@@ -27,11 +28,11 @@ def kmp_search(text: str, pattern: str) -> List[int]:
                     lps[i] = 0
                     i += 1
         return lps
-    
+
     lps = build_lps(pattern)
     i = j = 0
     result = []
-    
+
     while i < len(text):
         if pattern[j] == text[i]:
             i += 1
@@ -44,7 +45,7 @@ def kmp_search(text: str, pattern: str) -> List[int]:
                 j = lps[j - 1]
             else:
                 i += 1
-    
+
     return result
 
 
@@ -53,11 +54,11 @@ def main() -> None:
     print("=" * 70)
     print("KMP")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Kmp")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

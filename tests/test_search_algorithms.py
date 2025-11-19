@@ -36,7 +36,7 @@ def test_search_algorithms(algo_name, path_parts, arr, target, expected_present)
         pytest.skip(f"Algorithm file not found: {path}")
 
     module = import_module_from_path(path)
-    fn = find_callable(module, [algo_name, "search", "binary_search", "linear_search"]) 
+    fn = find_callable(module, [algo_name, "search", "binary_search", "linear_search"])
     if fn is None:
         pytest.skip(f"No callable search function found in {path}")
 

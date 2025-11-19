@@ -11,19 +11,20 @@ from typing import List, Optional, Dict, Set
 
 class DocumentationGenerator:
     """Documentation generator."""
+
     def __init__(self):
         self.templates: Dict[str, str] = {}
-    
+
     def add_template(self, template_name: str, template: str) -> None:
         """Add template."""
         self.templates[template_name] = template
-    
+
     def generate(self, template_name: str, data: dict) -> str:
         """Generate documentation."""
-        template = self.templates.get(template_name, '')
+        template = self.templates.get(template_name, "")
         result = template
         for key, value in data.items():
-            result = result.replace(f'{{{key}}}', str(value))
+            result = result.replace(f"{{{key}}}", str(value))
         return result
 
 
@@ -32,11 +33,11 @@ def main() -> None:
     print("=" * 70)
     print("DOCUMENTATION GENERATION")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Documentation Generation")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

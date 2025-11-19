@@ -89,26 +89,30 @@ PHRASE_REPLACEMENTS: Dict[str, str] = {
     "recommender system": "suggestion system",
 }
 
+
 def reframe_content(content: str) -> str:
     """Reframe ML phrases in content."""
     new_content = content
-    
+
     # Sort replacements by length (longest first) to avoid partial replacements
-    sorted_replacements = sorted(PHRASE_REPLACEMENTS.items(), key=lambda x: len(x[0]), reverse=True)
-    
+    sorted_replacements = sorted(
+        PHRASE_REPLACEMENTS.items(), key=lambda x: len(x[0]), reverse=True
+    )
+
     for old_phrase, new_phrase in sorted_replacements:
         # Case-insensitive replacement with word boundaries where appropriate
         pattern = re.compile(re.escape(old_phrase), re.IGNORECASE)
         new_content = pattern.sub(new_phrase, new_content)
-    
+
     return new_content
+
 
 def process_file(file_path: Path) -> bool:
     """Process a single file to reframe ML phrases."""
     try:
         content = file_path.read_text(encoding="utf-8")
         new_content = reframe_content(content)
-        
+
         if new_content != content:
             file_path.write_text(new_content, encoding="utf-8")
             return True
@@ -117,11 +121,12 @@ def process_file(file_path: Path) -> bool:
         print(f"Error processing {file_path}: {e}")
         return False
 
+
 def main():
     """Main function to reframe ML phrases in all relevant files."""
     updated_count = 0
     processed_count = 0
-    
+
     # Process README files
     for readme_path in ROOT.rglob("**/README.md"):
         processed_count += 1
@@ -129,22 +134,22 @@ def main():
             updated_count += 1
             if updated_count % 10 == 0:
                 print(f"Updated {updated_count} files...")
-    
+
     # Process Python files (algorithm implementations)
     for py_path in ROOT.rglob("**/algorithm.py"):
         processed_count += 1
         if process_file(py_path):
             updated_count += 1
-    
+
     # Process Java files
     for java_path in ROOT.rglob("**/Algorithm.java"):
         processed_count += 1
         if process_file(java_path):
             updated_count += 1
-    
+
     print(f"\nProcessed {processed_count} files")
     print(f"Updated {updated_count} files with reframed phrases")
 
+
 if __name__ == "__main__":
     main()
-

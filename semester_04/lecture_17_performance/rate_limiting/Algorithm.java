@@ -192,14 +192,14 @@ public class Algorithm {
     public static void main(String[] args) throws InterruptedException {
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("RATE LIMITING PATTERN DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Token Bucket
         logger.info("Example 1: Token Bucket Rate Limiter");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         RateLimitConfig config = new RateLimitConfig(5, 10.0);
         RateLimiter limiter = new TokenBucketRateLimiter(config);
@@ -217,11 +217,11 @@ public class Algorithm {
                             i + 1, status, remaining);
             Thread.sleep(100);
         }
-        logger.info();
+        logger.info("");
         
         // Example 2: Sliding Window
         logger.info("Example 2: Sliding Window Rate Limiter");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         config = new RateLimitConfig(3, 5.0);
         limiter = new SlidingWindowRateLimiter(config);
@@ -239,11 +239,11 @@ public class Algorithm {
                             i + 1, status, remaining);
             Thread.sleep(500);
         }
-        logger.info();
+        logger.info("");
         
         // Example 3: Multiple Clients
         logger.info("Example 3: Rate Limiting Multiple Clients");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         limiter = new TokenBucketRateLimiter(new RateLimitConfig(3, 5.0));
         
@@ -258,11 +258,11 @@ public class Algorithm {
             System.out.printf("  Request %d (%s): %s (remaining: %d)%n",
                             i + 1, client, status, remaining);
         }
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern Summary:");
         logger.info("\nIntent:");
         logger.info("  Controls the rate of requests sent or received to prevent");
@@ -277,7 +277,7 @@ public class Algorithm {
         logger.info("  - DDoS protection");
         logger.info("  - Fair resource allocation");
         logger.info("  - Cost control");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

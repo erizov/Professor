@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("BLOCKCHAIN")
     print("=" * 70)
-    
+
     print("Algorithm implementation for Blockchain")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

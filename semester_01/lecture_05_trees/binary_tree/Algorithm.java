@@ -189,16 +189,18 @@ public class Algorithm {
      * Main demonstration.
      */
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("BINARY TREE DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Basic operations
         logger.info("Example 1: Building a Binary Tree");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         BinaryTree tree = new BinaryTree();
         int[] values = {1, 2, 3, 4, 5, 6, 7};
@@ -211,21 +213,21 @@ public class Algorithm {
         
         logger.info("Tree size: " + tree.size());
         logger.info("Tree height: " + tree.height());
-        logger.info();
+        logger.info("");
         
         // Example 2: Traversals
         logger.info("Example 2: Tree Traversals");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         logger.info("Inorder:     " + tree.inorder());
         logger.info("Preorder:    " + tree.preorder());
         logger.info("Postorder:   " + tree.postorder());
         logger.info("Level-order: " + tree.levelOrder());
-        logger.info();
+        logger.info("");
         
         // Example 3: Search
         logger.info("Example 3: Searching");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         int[] searchVals = {5, 10, 1, 8};
         for (int val : searchVals) {
@@ -233,11 +235,11 @@ public class Algorithm {
             System.out.printf("Search %d: %s%n", val, 
                             found ? "Found" : "Not found");
         }
-        logger.info();
+        logger.info("");
         
         // Example 4: Performance
         logger.info("Example 4: Performance Measurement");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         int[] sizes = {100, 500, 1000};
         
@@ -255,8 +257,8 @@ public class Algorithm {
                             size, ms, perfTree.height());
         }
         
-        logger.info();
-        logger.info("=".repeat(70));
+        logger.info("");
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Insertion: O(n)");
         logger.info("  Search: O(n)");
@@ -268,7 +270,7 @@ public class Algorithm {
         logger.info("  + Natural recursive operations");
         logger.info("  - No ordering guarantee");
         logger.info("  - Search is O(n)");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         
         long endTime = System.nanoTime();
         double totalMs = (endTime - startTime) / 1_000_000.0;

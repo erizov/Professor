@@ -11,11 +11,14 @@ from typing import List, Optional, Dict, Set
 
 class TensorParallelism:
     """Tensor parallelism for large models."""
+
     def __init__(self, num_gpus: int = 4):
         self.num_gpus = num_gpus
         self.shards: List[dict] = [{} for _ in range(num_gpus)]
-    
-    def shard_tensor(self, tensor: List[List[float]], axis: int = 0) -> List[List[List[float]]]:
+
+    def shard_tensor(
+        self, tensor: List[List[float]], axis: int = 0
+    ) -> List[List[List[float]]]:
         """Shard tensor across GPUs."""
         shard_size = len(tensor) // self.num_gpus
         shards = []
@@ -24,7 +27,7 @@ class TensorParallelism:
             end = start + shard_size if i < self.num_gpus - 1 else len(tensor)
             shards.append(tensor[start:end])
         return shards
-    
+
     def all_reduce(self, shards: List[List[List[float]]]) -> List[List[float]]:
         """All-reduce operation."""
         # Simplified: concatenate shards
@@ -39,11 +42,11 @@ def main() -> None:
     print("=" * 70)
     print("TENSOR PARALLELISM")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Tensor Parallelism")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

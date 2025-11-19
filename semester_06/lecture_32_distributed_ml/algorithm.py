@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("DISTRIBUTED ML")
     print("=" * 70)
-    
+
     print("Algorithm implementation for Distributed ML")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

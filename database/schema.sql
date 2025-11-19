@@ -9,6 +9,7 @@ CREATE TABLE IF NOT EXISTS algorithms (
     semester_number INTEGER,
     lecture_name TEXT,
     category TEXT,
+    algorithm_type TEXT,  -- 'fundamental', 'data_structure', 'ai', 'ml', 'db', 'security', 'integration', 'multithreading', etc.
     description TEXT,
     short_description TEXT,
     time_complexity TEXT,
@@ -116,6 +117,7 @@ CREATE TABLE IF NOT EXISTS prerequisites (
 CREATE INDEX IF NOT EXISTS idx_algorithms_name ON algorithms(name);
 CREATE INDEX IF NOT EXISTS idx_algorithms_semester ON algorithms(semester_number);
 CREATE INDEX IF NOT EXISTS idx_algorithms_category ON algorithms(category);
+CREATE INDEX IF NOT EXISTS idx_algorithms_type ON algorithms(algorithm_type);
 CREATE INDEX IF NOT EXISTS idx_files_algorithm ON algorithm_files(algorithm_id);
 CREATE INDEX IF NOT EXISTS idx_tests_algorithm ON test_files(algorithm_id);
 CREATE INDEX IF NOT EXISTS idx_performance_algorithm ON performance_metrics(algorithm_id);

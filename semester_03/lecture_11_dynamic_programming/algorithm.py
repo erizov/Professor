@@ -24,7 +24,7 @@ def main() -> None:
     print("=" * 70)
     print("DYNAMIC PROGRAMMING")
     print("=" * 70)
-    
+
     n = 10
     result = fibonacci(n)
     print(f"Fibonacci({n}) = {result}")

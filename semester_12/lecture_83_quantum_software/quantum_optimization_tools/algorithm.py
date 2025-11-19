@@ -11,23 +11,18 @@ from typing import List, Optional, Dict, Set
 
 class QuantumOptimizationTools:
     """Quantum optimization tools."""
+
     def __init__(self):
         self.tools: Dict[str, dict] = {}
-    
+
     def register_tool(self, name: str, tool_type: str) -> None:
         """Register optimization tool."""
-        self.tools[name] = {
-            'type': tool_type,
-            'available': True
-        }
-    
+        self.tools[name] = {"type": tool_type, "available": True}
+
     def solve_optimization(self, problem: dict, tool_name: str) -> dict:
         """Solve optimization problem."""
         if tool_name in self.tools:
-            return {
-                'solution': [0, 1, 0],
-                'objective_value': 10.0
-            }
+            return {"solution": [0, 1, 0], "objective_value": 10.0}
         return {}
 
 
@@ -36,11 +31,11 @@ def main() -> None:
     print("=" * 70)
     print("QUANTUM OPTIMIZATION TOOLS")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Quantum Optimization Tools")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

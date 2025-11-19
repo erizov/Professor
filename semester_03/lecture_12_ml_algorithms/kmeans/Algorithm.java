@@ -195,23 +195,25 @@ public class Algorithm {
      * Main method for demonstration.
      */
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("K-MEANS CLUSTERING DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         DataGenerator gen = new DataGenerator(42);
         
         // Example 1: Basic clustering
         logger.info("Example 1: Basic Clustering");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         double[][] X = gen.generate(30, 3);
         
         System.out.printf("Generated %d samples in 3 clusters%n", X.length);
-        logger.info();
+        logger.info("");
         
         KMeans kmeans = new KMeans(3, 100, 42);
         kmeans.fit(X);
@@ -219,7 +221,7 @@ public class Algorithm {
         System.out.printf("Converged in %d iterations%n", 
                          kmeans.getHistory().size());
         System.out.printf("Final inertia: %.2f%n", kmeans.getInertia());
-        logger.info();
+        logger.info("");
         
         logger.info("Cluster centroids:");
         double[][] centroids = kmeans.getCentroids();
@@ -227,11 +229,11 @@ public class Algorithm {
             System.out.printf("  Cluster %d: [%.2f, %.2f]%n",
                             i, centroids[i][0], centroids[i][1]);
         }
-        logger.info();
+        logger.info("");
         
         // Example 2: Cluster sizes
         logger.info("Example 2: Cluster Sizes");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         int[] clusterCounts = new int[3];
         for (int label : kmeans.getLabels()) {
@@ -242,11 +244,11 @@ public class Algorithm {
             System.out.printf("  Cluster %d: %d samples%n", 
                             i, clusterCounts[i]);
         }
-        logger.info();
+        logger.info("");
         
         // Example 3: Predict new points
         logger.info("Example 3: Predicting New Points");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         double[][] X_test = {
             {0.0, 0.0},
@@ -261,11 +263,11 @@ public class Algorithm {
             System.out.printf("  Point [%.1f, %.1f] → Cluster %d%n",
                             X_test[i][0], X_test[i][1], predictions[i]);
         }
-        logger.info();
+        logger.info("");
         
         // Example 4: Performance measurement
         logger.info("Example 4: Performance Measurement");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         int[] sizes = {100, 500, 1000};
         
@@ -281,8 +283,8 @@ public class Algorithm {
             System.out.printf("n=%4d: %8.3f ms%n", size, ms);
         }
         
-        logger.info();
-        logger.info("=".repeat(70));
+        logger.info("");
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Time:  O(n*k*d*i)");
         logger.info("  Space: O(n + k*d)");
@@ -296,7 +298,7 @@ public class Algorithm {
         logger.info("  • Know number of clusters");
         logger.info("  • Spherical clusters");
         logger.info("  • Large datasets");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         
         long endTime = System.nanoTime();
         double totalMs = (endTime - startTime) / 1_000_000.0;

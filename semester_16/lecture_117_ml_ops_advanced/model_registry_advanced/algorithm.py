@@ -11,24 +11,23 @@ from typing import List, Optional, Dict, Set
 
 class AdvancedModelRegistry:
     """Advanced model registry."""
+
     def __init__(self):
         self.registry: Dict[str, dict] = {}
         self.lineage: Dict[str, List[str]] = {}
-    
-    def register_model(self, model_id: str, model: any, 
-                      parent_models: List[str] = None) -> None:
+
+    def register_model(
+        self, model_id: str, model: any, parent_models: List[str] = None
+    ) -> None:
         """Register model with lineage."""
-        self.registry[model_id] = {
-            'model': model,
-            'created_at': 0
-        }
+        self.registry[model_id] = {"model": model, "created_at": 0}
         if parent_models:
             self.lineage[model_id] = parent_models
-    
+
     def get_lineage(self, model_id: str) -> List[str]:
         """Get model lineage."""
         return self.lineage.get(model_id, [])
-    
+
     def search_models(self, query: dict) -> List[str]:
         """Search models."""
         results = []
@@ -43,11 +42,11 @@ def main() -> None:
     print("=" * 70)
     print("MODEL REGISTRY ADVANCED")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Model Registry Advanced")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

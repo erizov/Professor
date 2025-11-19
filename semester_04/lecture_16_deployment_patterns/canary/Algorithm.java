@@ -156,36 +156,38 @@ public class Algorithm {
 
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("CANARY DEPLOYMENT PATTERN DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Initial Canary Deployment
         logger.info("Example 1: Deploy Canary with 5% Traffic");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         CanaryDeploymentManager manager = new CanaryDeploymentManager("v1.0.0");
         manager.deployCanary("v1.1.0", 5.0);
         System.out.printf("Status: %s%n", manager.getStatus());
-        logger.info();
+        logger.info("");
         
         // Example 2: Request Routing
         logger.info("Example 2: Request Routing Based on Traffic Split");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         String[] users = {"user1", "user2", "user3", "user4", "user5"};
         for (String user : users) {
             String version = manager.routeRequest(user);
             System.out.printf("User %s -> %s%n", user, version);
         }
-        logger.info();
+        logger.info("");
         
         // Example 3: Monitor Metrics
         logger.info("Example 3: Monitor Canary Metrics");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         Map<String, Double> baselineMetrics = new HashMap<>();
         baselineMetrics.put("error_rate", 0.01);
@@ -197,21 +199,21 @@ public class Algorithm {
         
         logger.info("Canary metrics: error_rate=0.005, latency_ms=95.0, throughput=1050.0");
         System.out.printf("Should rollback: %s (canary is performing well)%n", shouldRollback);
-        logger.info();
+        logger.info("");
         
         // Example 4: Increase Traffic
         logger.info("Example 4: Gradually Increase Traffic");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         manager.increaseTraffic(10.0);  // 15%
         manager.increaseTraffic(15.0);  // 30%
         manager.increaseTraffic(20.0);  // 50%
         manager.increaseTraffic(50.0);  // 100%
-        logger.info();
+        logger.info("");
         
         // Example 5: Rollback on Issues
         logger.info("Example 5: Rollback on High Error Rate");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         CanaryDeploymentManager manager2 = new CanaryDeploymentManager("v1.0.0");
         manager2.deployCanary("v1.2.0", 10.0);
@@ -225,11 +227,11 @@ public class Algorithm {
         if (shouldRollback) {
             manager2.rollback();
         }
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern Summary:");
         logger.info("\nIntent:");
         logger.info("  Gradually roll out new version to a small subset of users");
@@ -243,7 +245,7 @@ public class Algorithm {
         logger.info("  - High-traffic applications");
         logger.info("  - When gradual rollout is preferred");
         logger.info("  - When monitoring is available");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

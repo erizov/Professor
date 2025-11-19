@@ -17,57 +17,61 @@ from tests.test_framework_setup import AlgorithmTestCase
 
 class TestZerodowntimemigration(AlgorithmTestCase):
     """Test Zero Downtime Migration implementation."""
-    
+
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_110_database_migration.zero_downtime_migration.algorithm import zero_downtime_migration
+        from semester_15.lecture_110_database_migration.zero_downtime_migration.algorithm import (
+            zero_downtime_migration,
+        )
+
         self.algorithm = zero_downtime_migration
-    
+
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
         # TODO: Implement specific test based on algorithm
         pass
-    
+
     def test_empty_input(self):
         """Test with empty input."""
         # TODO: Test edge case
         pass
-    
+
     def test_single_element(self):
         """Test with single element."""
         # TODO: Test edge case
         pass
-    
+
     def test_empty_input(self):
         """Test with empty input."""
         # TODO: Test edge case
         pass
-    
+
     def test_single_element(self):
         """Test with single element."""
         # TODO: Test edge case
         pass
-    
+
     def test_already_sorted(self):
         """Test with already sorted input."""
         # TODO: Test edge case
         pass
-    
+
     def test_reverse_sorted(self):
         """Test with reverse sorted input."""
         # TODO: Test edge case
         pass
-    
+
     def test_duplicates(self):
         """Test with duplicate elements."""
         # TODO: Test edge case
         pass
-    
+
     def test_performance(self):
         """Test algorithm performance."""
         # TODO: Add performance test
         # self.assert_performance(lambda: self.algorithm([...]), max_time_seconds=1.0)
         pass
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

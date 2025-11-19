@@ -14,8 +14,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 # Core algorithm implementations
 CORE_IMPLEMENTATIONS = {
-    'merge_sort': {
-        'python': '''def merge_sort(arr: List[T]) -> List[T]:
+    "merge_sort": {
+        "python": '''def merge_sort(arr: List[T]) -> List[T]:
     """
     Sort array using merge sort algorithm.
     
@@ -53,7 +53,7 @@ def merge(left: List[T], right: List[T]) -> List[T]:
     result.extend(left[i:])
     result.extend(right[j:])
     return result''',
-        'java': '''public static int[] mergeSort(int[] arr) {
+        "java": """public static int[] mergeSort(int[] arr) {
     if (arr.length <= 1) {
         return arr;
     }
@@ -89,11 +89,10 @@ private static int[] merge(int[] left, int[] right) {
     }
     
     return result;
-}'''
+}""",
     },
-    
-    'heap_sort': {
-        'python': '''def heap_sort(arr: List[T]) -> List[T]:
+    "heap_sort": {
+        "python": '''def heap_sort(arr: List[T]) -> List[T]:
     """
     Sort array using heap sort algorithm.
     
@@ -134,7 +133,7 @@ def heapify(arr: List[T], n: int, i: int):
     if largest != i:
         arr[i], arr[largest] = arr[largest], arr[i]
         heapify(arr, n, largest)''',
-        'java': '''public static void heapSort(int[] arr) {
+        "java": """public static void heapSort(int[] arr) {
     int n = arr.length;
     
     // Build max heap
@@ -172,11 +171,10 @@ private static void heapify(int[] arr, int n, int i) {
         
         heapify(arr, n, largest);
     }
-}'''
+}""",
     },
-    
-    'selection_sort': {
-        'python': '''def selection_sort(arr: List[T]) -> List[T]:
+    "selection_sort": {
+        "python": '''def selection_sort(arr: List[T]) -> List[T]:
     """
     Sort array using selection sort algorithm.
     
@@ -202,7 +200,7 @@ private static void heapify(int[] arr, int n, int i) {
         arr[i], arr[min_idx] = arr[min_idx], arr[i]
     
     return arr''',
-        'java': '''public static void selectionSort(int[] arr) {
+        "java": """public static void selectionSort(int[] arr) {
     int n = arr.length;
     
     for (int i = 0; i < n - 1; i++) {
@@ -218,11 +216,10 @@ private static void heapify(int[] arr, int n, int i) {
         arr[minIdx] = arr[i];
         arr[i] = temp;
     }
-}'''
+}""",
     },
-    
-    'jump_search': {
-        'python': '''def jump_search(arr: List[T], target: T) -> Optional[int]:
+    "jump_search": {
+        "python": '''def jump_search(arr: List[T], target: T) -> Optional[int]:
     """
     Search for target in sorted array using jump search.
     
@@ -261,7 +258,7 @@ private static void heapify(int[] arr, int n, int i) {
         return prev
     
     return None''',
-        'java': '''public static int jumpSearch(int[] arr, int target) {
+        "java": """public static int jumpSearch(int[] arr, int target) {
     int n = arr.length;
     if (n == 0) {
         return -1;
@@ -290,11 +287,10 @@ private static void heapify(int[] arr, int n, int i) {
     }
     
     return -1;
-}'''
+}""",
     },
-    
-    'knapsack': {
-        'python': '''def knapsack_01(weights: List[int], values: List[int], capacity: int) -> int:
+    "knapsack": {
+        "python": '''def knapsack_01(weights: List[int], values: List[int], capacity: int) -> int:
     """
     Solve 0/1 Knapsack problem using dynamic programming.
     
@@ -329,7 +325,7 @@ private static void heapify(int[] arr, int n, int i) {
                 )
     
     return dp[n][capacity]''',
-        'java': '''public static int knapsack01(int[] weights, int[] values, int capacity) {
+        "java": """public static int knapsack01(int[] weights, int[] values, int capacity) {
     int n = weights.length;
     if (n == 0 || capacity == 0) {
         return 0;
@@ -351,11 +347,10 @@ private static void heapify(int[] arr, int n, int i) {
     }
     
     return dp[n][capacity];
-}'''
+}""",
     },
-    
-    'edit_distance': {
-        'python': '''def edit_distance(str1: str, str2: str) -> int:
+    "edit_distance": {
+        "python": '''def edit_distance(str1: str, str2: str) -> int:
     """
     Calculate Levenshtein distance (edit distance) between two strings.
     
@@ -393,7 +388,7 @@ private static void heapify(int[] arr, int n, int i) {
                 )
     
     return dp[m][n]''',
-        'java': '''public static int editDistance(String str1, String str2) {
+        "java": """public static int editDistance(String str1, String str2) {
     int m = str1.length();
     int n = str2.length();
     
@@ -420,74 +415,91 @@ private static void heapify(int[] arr, int n, int i) {
     }
     
     return dp[m][n];
-}'''
-    }
+}""",
+    },
 }
+
 
 def implement_core_algorithm(algorithm_path: Path, algorithm_name: str) -> bool:
     """Implement core algorithm with complete code."""
     py_file = algorithm_path / "algorithm.py"
     java_file = algorithm_path / "Algorithm.java"
-    
+
     if algorithm_name not in CORE_IMPLEMENTATIONS:
         return False
-    
+
     impls = CORE_IMPLEMENTATIONS[algorithm_name]
     changed = False
-    
+
     # Implement Python
     if py_file.exists():
         try:
-            content = py_file.read_text(encoding='utf-8')
-            if 'TODO: Implement' in content or 'pass  # Placeholder' in content:
+            content = py_file.read_text(encoding="utf-8")
+            if "TODO: Implement" in content or "pass  # Placeholder" in content:
                 # Replace placeholder with implementation
-                header = re.search(r'(.*?)(def\s+\w+|class\s+\w+)', content, re.DOTALL)
+                header = re.search(r"(.*?)(def\s+\w+|class\s+\w+)", content, re.DOTALL)
                 if header:
                     header_text = header.group(1)
                     # Find main function
-                    main_match = re.search(r'(def main\(\):.*)', content, re.DOTALL)
-                    main_text = main_match.group(1) if main_match else "\n\nif __name__ == \"__main__\":\n    main()\n"
-                    
-                    new_content = header_text + impls['python'] + "\n\n" + main_text
-                    py_file.write_text(new_content, encoding='utf-8')
+                    main_match = re.search(r"(def main\(\):.*)", content, re.DOTALL)
+                    main_text = (
+                        main_match.group(1)
+                        if main_match
+                        else '\n\nif __name__ == "__main__":\n    main()\n'
+                    )
+
+                    new_content = header_text + impls["python"] + "\n\n" + main_text
+                    py_file.write_text(new_content, encoding="utf-8")
                     changed = True
         except Exception as e:
             print(f"Error implementing Python {algorithm_name}: {e}")
-    
+
     # Implement Java
     if java_file.exists():
         try:
-            content = java_file.read_text(encoding='utf-8')
-            if 'TODO: Implement' in content or 'return null;  // Placeholder' in content:
+            content = java_file.read_text(encoding="utf-8")
+            if (
+                "TODO: Implement" in content
+                or "return null;  // Placeholder" in content
+            ):
                 # Replace placeholder
-                header_match = re.search(r'(.*?)(public\s+static|public\s+class)', content, re.DOTALL)
+                header_match = re.search(
+                    r"(.*?)(public\s+static|public\s+class)", content, re.DOTALL
+                )
                 if header_match:
                     header_text = header_match.group(1)
                     # Find main
-                    main_match = re.search(r'(public\s+static\s+void\s+main.*)', content, re.DOTALL)
-                    main_text = main_match.group(1) if main_match else "\n    public static void main(String[] args) {}\n}"
-                    
-                    new_content = header_text + impls['java'] + "\n\n" + main_text
-                    java_file.write_text(new_content, encoding='utf-8')
+                    main_match = re.search(
+                        r"(public\s+static\s+void\s+main.*)", content, re.DOTALL
+                    )
+                    main_text = (
+                        main_match.group(1)
+                        if main_match
+                        else "\n    public static void main(String[] args) {}\n}"
+                    )
+
+                    new_content = header_text + impls["java"] + "\n\n" + main_text
+                    java_file.write_text(new_content, encoding="utf-8")
                     changed = True
         except Exception as e:
             print(f"Error implementing Java {algorithm_name}: {e}")
-    
+
     return changed
+
 
 def main():
     """Implement core algorithms."""
     implemented = 0
-    
+
     for algo_name in CORE_IMPLEMENTATIONS.keys():
         for algo_dir in ROOT.rglob(f"*/{algo_name}"):
             if algo_dir.is_dir():
                 if implement_core_algorithm(algo_dir, algo_name):
                     implemented += 1
                     print(f"[OK] Implemented: {algo_dir.relative_to(ROOT)}")
-    
+
     print(f"\n[COMPLETE] Implemented {implemented} core algorithms")
+
 
 if __name__ == "__main__":
     main()
-

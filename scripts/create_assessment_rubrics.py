@@ -73,27 +73,28 @@ ASSESSMENT_SECTION = """## Assessment
 **Solutions**: See `solutions/` directory for detailed solutions.
 """
 
+
 def add_assessment_section(readme_path: Path) -> bool:
     """Add assessment section to README."""
     try:
         content = readme_path.read_text(encoding="utf-8")
-        
+
         # Check if section already exists
         if "## Assessment" in content:
             return False
-        
+
         # Find insertion point - before "## Examples of Implementation" or at end
         insertion_points = [
             (r"(## Examples of Implementation)", ASSESSMENT_SECTION + "\n\n\1"),
             (r"(## References)", ASSESSMENT_SECTION + "\n\n\1"),
         ]
-        
+
         for pattern, replacement in insertion_points:
             if re.search(pattern, content):
                 content = re.sub(pattern, replacement, content)
                 readme_path.write_text(content, encoding="utf-8")
                 return True
-        
+
         # If no insertion point found, add at end
         content = content.rstrip() + "\n\n" + ASSESSMENT_SECTION + "\n"
         readme_path.write_text(content, encoding="utf-8")
@@ -101,6 +102,7 @@ def add_assessment_section(readme_path: Path) -> bool:
     except Exception as e:
         print(f"Error processing {readme_path}: {e}")
         return False
+
 
 def main():
     """Add assessment sections to top algorithms."""
@@ -112,7 +114,7 @@ def main():
         "semester_01/lecture_09_graph_algorithms/bfs",
         "semester_01/lecture_09_graph_algorithms/dijkstra",
     ]
-    
+
     updated_count = 0
     for algo_path in top_algorithms:
         readme_path = ROOT / algo_path / "README.md"
@@ -120,9 +122,9 @@ def main():
             if add_assessment_section(readme_path):
                 updated_count += 1
                 print(f"Added assessment section to {algo_path}")
-    
+
     print(f"\nAdded assessment sections to {updated_count} algorithms")
+
 
 if __name__ == "__main__":
     main()
-

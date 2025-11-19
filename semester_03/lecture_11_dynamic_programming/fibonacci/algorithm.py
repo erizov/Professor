@@ -25,11 +25,11 @@ def main() -> None:
     print("=" * 70)
     print("FIBONACCI")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Fibonacci")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

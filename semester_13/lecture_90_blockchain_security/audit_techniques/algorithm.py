@@ -11,24 +11,22 @@ from typing import List, Optional, Dict, Set
 
 class AuditTechniques:
     """Audit techniques."""
+
     def __init__(self):
         self.techniques: Dict[str, dict] = {}
-    
+
     def add_technique(self, name: str, procedure: callable) -> None:
         """Add audit technique."""
-        self.techniques[name] = {
-            'procedure': procedure,
-            'used_count': 0
-        }
-    
+        self.techniques[name] = {"procedure": procedure, "used_count": 0}
+
     def perform_audit(self, technique_name: str, target: any) -> dict:
         """Perform audit."""
         if technique_name not in self.techniques:
-            return {'error': 'Technique not found'}
+            return {"error": "Technique not found"}
         technique = self.techniques[technique_name]
-        technique['used_count'] += 1
-        result = technique['procedure'](target)
-        return {'technique': technique_name, 'result': result}
+        technique["used_count"] += 1
+        result = technique["procedure"](target)
+        return {"technique": technique_name, "result": result}
 
 
 def main() -> None:
@@ -36,11 +34,11 @@ def main() -> None:
     print("=" * 70)
     print("AUDIT TECHNIQUES")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Audit Techniques")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

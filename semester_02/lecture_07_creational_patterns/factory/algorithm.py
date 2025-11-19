@@ -11,21 +11,28 @@ from typing import List, Optional, Dict, Set
 
 class Product:
     """Base product class."""
+
     def operation(self) -> str:
         return "Product operation"
 
+
 class ConcreteProductA(Product):
     """Concrete product A."""
+
     def operation(self) -> str:
         return "ConcreteProductA operation"
 
+
 class ConcreteProductB(Product):
     """Concrete product B."""
+
     def operation(self) -> str:
         return "ConcreteProductB operation"
 
+
 class Factory:
     """Factory pattern implementation."""
+
     @staticmethod
     def create_product(product_type: str) -> Product:
         if product_type == "A":
@@ -41,11 +48,11 @@ def main() -> None:
     print("=" * 70)
     print("FACTORY")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Factory")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

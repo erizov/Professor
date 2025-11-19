@@ -13,14 +13,14 @@ def prophet_forecast(data: List[float], periods: int = 30) -> List[float]:
     """Prophet time series forecasting (simplified)."""
     # Simplified Prophet implementation
     # In practice, would use Facebook Prophet library
-    
+
     if not data:
         return [0.0] * periods
-    
+
     # Simple trend + seasonality
     trend = (data[-1] - data[0]) / len(data) if len(data) > 1 else 0.0
     avg = sum(data) / len(data)
-    
+
     forecast = []
     for i in range(periods):
         # Trend component
@@ -28,7 +28,7 @@ def prophet_forecast(data: List[float], periods: int = 30) -> List[float]:
         # Simple seasonality (weekly pattern)
         seasonal = avg * 0.1 * (i % 7 - 3.5) / 3.5
         forecast.append(trend_value + seasonal)
-    
+
     return forecast
 
 
@@ -37,11 +37,11 @@ def main() -> None:
     print("=" * 70)
     print("PROPHET")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Prophet")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

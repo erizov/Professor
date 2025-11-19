@@ -50,11 +50,11 @@ def find_all_test_files() -> List[Tuple[Path, str]]:
 def generate_performance_analysis_section(algorithm_name: str, category: str) -> str:
     """Generate performance analysis section for README."""
     algo_lower = algorithm_name.lower()
-    
+
     section = "## Performance Analysis\n\n"
-    
+
     # Sorting algorithms
-    if 'sort' in algo_lower:
+    if "sort" in algo_lower:
         section += """### Time Complexity Analysis
 
 **Best Case**: O(n log n) - When pivot divides array evenly
@@ -90,10 +90,10 @@ Typical performance on modern hardware:
 
 *Note: Actual performance depends on hardware, data distribution, and implementation details.*
 """
-    
+
     # Searching algorithms
-    elif 'search' in algo_lower:
-        if 'binary' in algo_lower:
+    elif "search" in algo_lower:
+        if "binary" in algo_lower:
             section += """### Time Complexity Analysis
 
 **Best Case**: O(1) - Element found at middle position
@@ -165,9 +165,9 @@ Typical performance on modern hardware:
 
 *Note: Linear search performance scales linearly with input size.*
 """
-    
+
     # Graph algorithms
-    elif any(algo in algo_lower for algo in ['bfs', 'dfs', 'dijkstra', 'graph']):
+    elif any(algo in algo_lower for algo in ["bfs", "dfs", "dijkstra", "graph"]):
         section += """### Time Complexity Analysis
 
 **Time Complexity**: O(V + E) where V is vertices, E is edges
@@ -204,9 +204,12 @@ Typical performance on modern hardware:
 
 *Note: Performance depends heavily on graph density and structure.*
 """
-    
+
     # Design patterns
-    elif any(pattern in algo_lower for pattern in ['singleton', 'factory', 'observer', 'pattern']):
+    elif any(
+        pattern in algo_lower
+        for pattern in ["singleton", "factory", "observer", "pattern"]
+    ):
         section += """### Performance Analysis
 
 **Time Complexity**: O(1) for typical operations
@@ -243,7 +246,7 @@ Typical performance on modern hardware:
 
 *Note: Pattern overhead is negligible compared to business logic.*
 """
-    
+
     # Generic performance analysis
     else:
         section += """### Performance Analysis
@@ -268,43 +271,45 @@ Typical performance on modern hardware:
 
 *Note: Run benchmarks with your specific data and hardware to get accurate performance metrics.*
 """
-    
+
     return section
 
 
 def add_performance_analysis_to_readme(readme_path: Path, algorithm_name: str) -> bool:
     """Add performance analysis section to README."""
     try:
-        content = readme_path.read_text(encoding='utf-8')
-        
+        content = readme_path.read_text(encoding="utf-8")
+
         # Check if performance analysis section already exists
         if "## Performance Analysis" in content:
             return False
-        
+
         # Determine category from content
-        category = 'general'
+        category = "general"
         algo_lower = algorithm_name.lower()
-        if 'sort' in algo_lower:
-            category = 'sorting'
-        elif 'search' in algo_lower:
-            category = 'searching'
-        elif any(g in algo_lower for g in ['bfs', 'dfs', 'graph']):
-            category = 'graph'
-        elif any(p in algo_lower for p in ['singleton', 'factory', 'pattern']):
-            category = 'pattern'
-        
+        if "sort" in algo_lower:
+            category = "sorting"
+        elif "search" in algo_lower:
+            category = "searching"
+        elif any(g in algo_lower for g in ["bfs", "dfs", "graph"]):
+            category = "graph"
+        elif any(p in algo_lower for p in ["singleton", "factory", "pattern"]):
+            category = "pattern"
+
         # Generate performance analysis section
         perf_section = generate_performance_analysis_section(algorithm_name, category)
-        
+
         # Insert before References or at end
         if "## References" in content:
             content = content.replace("## References", perf_section + "\n## References")
         elif "## Related Algorithms" in content:
-            content = content.replace("## Related Algorithms", perf_section + "\n## Related Algorithms")
+            content = content.replace(
+                "## Related Algorithms", perf_section + "\n## Related Algorithms"
+            )
         else:
             content = content.rstrip() + "\n\n" + perf_section
-        
-        readme_path.write_text(content, encoding='utf-8')
+
+        readme_path.write_text(content, encoding="utf-8")
         return True
     except Exception as e:
         print(f"Error processing {readme_path}: {e}")
@@ -314,16 +319,18 @@ def add_performance_analysis_to_readme(readme_path: Path, algorithm_name: str) -
 def check_code_quality(algorithm_file: Path) -> Dict[str, bool]:
     """Check code quality metrics for an algorithm file."""
     try:
-        content = algorithm_file.read_text(encoding='utf-8')
-        
+        content = algorithm_file.read_text(encoding="utf-8")
+
         quality_checks = {
-            'has_type_hints': bool(re.search(r'def \w+\([^)]*:\s*\w+', content)),
-            'has_docstring': bool(re.search(r'""".*?"""', content, re.DOTALL)),
-            'has_logging': 'logging' in content or 'logger' in content,
-            'has_error_handling': bool(re.search(r'(try:|except|raise|if.*is None|if.*== None)', content)),
-            'has_comments': len(re.findall(r'#.*', content)) > 0,
+            "has_type_hints": bool(re.search(r"def \w+\([^)]*:\s*\w+", content)),
+            "has_docstring": bool(re.search(r'""".*?"""', content, re.DOTALL)),
+            "has_logging": "logging" in content or "logger" in content,
+            "has_error_handling": bool(
+                re.search(r"(try:|except|raise|if.*is None|if.*== None)", content)
+            ),
+            "has_comments": len(re.findall(r"#.*", content)) > 0,
         }
-        
+
         return quality_checks
     except Exception as e:
         print(f"Error checking {algorithm_file}: {e}")
@@ -333,27 +340,31 @@ def check_code_quality(algorithm_file: Path) -> Dict[str, bool]:
 def enhance_test_file(test_file: Path, algorithm_name: str) -> bool:
     """Enhance test file with actual test cases."""
     try:
-        content = test_file.read_text(encoding='utf-8')
-        
+        content = test_file.read_text(encoding="utf-8")
+
         # Check if tests are already implemented (not just pass statements)
-        if 'def test_' in content and 'pass' not in content.split('def test_')[1:][0] if len(content.split('def test_')) > 1 else True:
+        if (
+            "def test_" in content and "pass" not in content.split("def test_")[1:][0]
+            if len(content.split("def test_")) > 1
+            else True
+        ):
             # Check if there are actual assertions
-            if 'assert' in content or 'self.assert' in content:
+            if "assert" in content or "self.assert" in content:
                 return False  # Already has tests
-        
+
         # Skip if it's a placeholder
-        if 'TODO' in content and content.count('pass') > 2:
+        if "TODO" in content and content.count("pass") > 2:
             # This is a placeholder, we'll enhance it
             pass
         else:
             return False
-        
+
         algo_lower = algorithm_name.lower()
-        
+
         # Generate test cases based on algorithm type
         test_cases = ""
-        
-        if 'sort' in algo_lower:
+
+        if "sort" in algo_lower:
             test_cases = '''
     def test_basic_sorting(self):
         """Test basic sorting functionality."""
@@ -385,7 +396,7 @@ def enhance_test_file(test_file: Path, algorithm_name: str) -> bool:
         result = self.algorithm([3, 3, 3, 1, 1, 2])
         self.assertEqual(result, [1, 1, 2, 3, 3, 3])
 '''
-        elif 'search' in algo_lower:
+        elif "search" in algo_lower:
             test_cases = '''
     def test_basic_search(self):
         """Test basic search functionality."""
@@ -428,16 +439,16 @@ def enhance_test_file(test_file: Path, algorithm_name: str) -> bool:
         # TODO: Test edge case
         pass
 '''
-        
+
         # Replace TODO test methods with actual implementations
-        if 'def test_basic_functionality' in content:
+        if "def test_basic_functionality" in content:
             # Replace the method
-            pattern = r'def test_basic_functionality\(self\):.*?pass'
+            pattern = r"def test_basic_functionality\(self\):.*?pass"
             if re.search(pattern, content, re.DOTALL):
                 content = re.sub(pattern, test_cases.strip(), content, flags=re.DOTALL)
-                test_file.write_text(content, encoding='utf-8')
+                test_file.write_text(content, encoding="utf-8")
                 return True
-        
+
         return False
     except Exception as e:
         print(f"Error processing {test_file}: {e}")
@@ -449,56 +460,60 @@ def main():
     print("=" * 70)
     print("Phase 3 Enhancements: Code Quality, Performance Analysis, Testing")
     print("=" * 70)
-    
+
     # 1. Add performance analysis to README files
     print("\n[1/3] Adding performance analysis sections to README files...")
     readme_files = find_all_readme_files()
     perf_updated = 0
-    
+
     for i, readme_path in enumerate(readme_files, 1):
         algorithm_name = readme_path.parent.name
         if add_performance_analysis_to_readme(readme_path, algorithm_name):
             perf_updated += 1
             if perf_updated % 50 == 0:
-                print(f"[PROGRESS] Processed {i}/{len(readme_files)} README files, updated {perf_updated}...")
-    
+                print(
+                    f"[PROGRESS] Processed {i}/{len(readme_files)} README files, updated {perf_updated}..."
+                )
+
     print(f"[COMPLETE] Added performance analysis to {perf_updated} README files")
-    
+
     # 2. Check code quality (report only)
     print("\n[2/3] Checking code quality metrics...")
     algorithm_files = find_all_algorithm_files()
     quality_stats = {
-        'has_type_hints': 0,
-        'has_docstring': 0,
-        'has_logging': 0,
-        'has_error_handling': 0,
-        'has_comments': 0,
+        "has_type_hints": 0,
+        "has_docstring": 0,
+        "has_logging": 0,
+        "has_error_handling": 0,
+        "has_comments": 0,
     }
-    
+
     for algo_file, algo_name in algorithm_files:
         checks = check_code_quality(algo_file)
         for key in quality_stats:
             if checks.get(key, False):
                 quality_stats[key] += 1
-    
+
     print(f"[STATS] Code Quality Metrics (out of {len(algorithm_files)} files):")
     for key, count in quality_stats.items():
         percentage = (count / len(algorithm_files) * 100) if algorithm_files else 0
         print(f"  - {key}: {count} ({percentage:.1f}%)")
-    
+
     # 3. Enhance test files
     print("\n[3/3] Enhancing test files with actual test cases...")
     test_files = find_all_test_files()
     test_updated = 0
-    
+
     for i, (test_file, algo_name) in enumerate(test_files, 1):
         if enhance_test_file(test_file, algo_name):
             test_updated += 1
             if test_updated % 50 == 0:
-                print(f"[PROGRESS] Processed {i}/{len(test_files)} test files, updated {test_updated}...")
-    
+                print(
+                    f"[PROGRESS] Processed {i}/{len(test_files)} test files, updated {test_updated}..."
+                )
+
     print(f"[COMPLETE] Enhanced {test_updated} test files")
-    
+
     print("\n" + "=" * 70)
     print("Phase 3 Enhancements Complete!")
     print("=" * 70)
@@ -514,4 +529,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

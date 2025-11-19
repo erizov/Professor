@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("INFERENCE OPTIMIZATION")
     print("=" * 70)
-    
+
     print("Algorithm implementation for Inference Optimization")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

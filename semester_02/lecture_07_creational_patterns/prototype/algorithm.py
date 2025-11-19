@@ -11,20 +11,24 @@ from typing import List, Optional, Dict, Set
 
 import copy
 
+
 class Prototype:
     """Prototype interface."""
+
     def clone(self):
         pass
 
+
 class ConcretePrototype(Prototype):
     """Concrete prototype."""
+
     def __init__(self, value: str):
         self.value = value
-    
-    def clone(self) -> 'ConcretePrototype':
+
+    def clone(self) -> "ConcretePrototype":
         """Clone prototype."""
         return copy.deepcopy(self)
-    
+
     def __str__(self) -> str:
         return f"ConcretePrototype(value={self.value})"
 
@@ -34,11 +38,11 @@ def main() -> None:
     print("=" * 70)
     print("PROTOTYPE")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Prototype")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

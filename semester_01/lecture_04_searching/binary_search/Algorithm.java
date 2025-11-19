@@ -106,14 +106,16 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
-        logger.info("=".repeat(70));
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
+        logger.info(separator);
         logger.info("BINARY SEARCH ALGORITHM DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Basic Binary Search
         logger.info("Example 1: Basic Binary Search");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         int[] arr1 = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19};
         int target1 = 7;
@@ -123,33 +125,33 @@ public class Algorithm {
         
         int index1 = binarySearch(arr1, target1);
         logger.info("Found at index: " + index1);
-        logger.info();
+        logger.info("");
         
         // Example 2: Element Not Found
         logger.info("Example 2: Element Not Found");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         int target2 = 8;
         logger.info("Target: " + target2);
         
         int index2 = binarySearch(arr1, target2);
         logger.info("Found at index: " + index2 + " (not found)");
-        logger.info();
+        logger.info("");
         
         // Example 3: Recursive Binary Search
         logger.info("Example 3: Recursive Binary Search");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         int target3 = 13;
         logger.info("Target: " + target3);
         
         int index3 = binarySearchRecursive(arr1, target3, 0, arr1.length - 1);
         logger.info("Found at index: " + index3);
-        logger.info();
+        logger.info("");
         
         // Example 4: First Occurrence
         logger.info("Example 4: Find First Occurrence");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         int[] arr4 = {1, 2, 2, 2, 3, 4, 5};
         int target4 = 2;
@@ -159,19 +161,19 @@ public class Algorithm {
         
         int firstIdx = binarySearchFirst(arr4, target4);
         logger.info("First occurrence at index: " + firstIdx);
-        logger.info();
+        logger.info("");
         
         // Example 5: Last Occurrence
         logger.info("Example 5: Find Last Occurrence");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         int lastIdx = binarySearchLast(arr4, target4);
         logger.info("Last occurrence at index: " + lastIdx);
-        logger.info();
+        logger.info("");
         
         // Example 6: Performance measurement
         logger.info("Example 6: Performance Measurement");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         int[] largeArr = new int[1000000];
         for (int i = 0; i < largeArr.length; i++) {
@@ -186,9 +188,9 @@ public class Algorithm {
         double executionTimeMs = (endTime - startTime) / 1_000_000.0;
         System.out.printf("Time to search in 1M elements: %.3f ms%n", executionTimeMs);
         logger.info("Found at index: " + index6);
-        logger.info();
+        logger.info("");
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nAlgorithm Summary:");
         logger.info("\nIntent:");
         logger.info("  Efficient search algorithm for sorted arrays using");
@@ -214,6 +216,6 @@ public class Algorithm {
         logger.info("  - Search in sorted lists");
         logger.info("  - Finding boundaries");
         logger.info("  - Binary search trees");
-        logger.info("=".repeat(70));
+        logger.info(separator);
     }
 }

@@ -123,16 +123,18 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("FACTORY DESIGN PATTERN DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Simple Factory
         logger.info("Example 1: Simple Factory Pattern");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         Shape circle = ShapeFactory.createShape("circle", 5.0);
         logger.info(circle.draw());
@@ -145,24 +147,24 @@ public class Algorithm {
         Shape triangle = ShapeFactory.createShape("triangle", 3.0, 4.0);
         logger.info(triangle.draw());
         System.out.printf("Area: %.2f%n", triangle.area());
-        logger.info();
+        logger.info("");
         
         // Example 2: Factory Method
         logger.info("Example 2: Factory Method Pattern");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         Document pdfDoc = new PDFDocument();
         pdfDoc.printDocument();
         
-        logger.info();
+        logger.info("");
         
         Document wordDoc = new WordDocument();
         wordDoc.printDocument();
-        logger.info();
+        logger.info("");
         
         // Example 3: Multiple shapes
         logger.info("Example 3: Creating Multiple Objects");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         Object[][] specs = {
             {"circle", new double[]{3.0}},
@@ -182,22 +184,22 @@ public class Algorithm {
         }
         
         System.out.printf("%nTotal area: %.2f%n", totalArea);
-        logger.info();
+        logger.info("");
         
         // Example 4: Error handling
         logger.info("Example 4: Error Handling");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         try {
             Shape invalid = ShapeFactory.createShape("hexagon", 5.0);
         } catch (IllegalArgumentException e) {
             logger.info("Error: " + e.getMessage());
         }
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern Summary:");
         logger.info("\nKey Advantages:");
         logger.info("  - Loose coupling");
@@ -207,7 +209,7 @@ public class Algorithm {
         logger.info("  - Multiple related types");
         logger.info("  - Runtime type determination");
         logger.info("  - Delegation to subclasses");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("%nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

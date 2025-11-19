@@ -11,21 +11,25 @@ from typing import List, Optional, Dict, Set
 
 class AIDocGeneration:
     """AI-powered documentation generation."""
+
     def __init__(self):
         self.templates: Dict[str, str] = {}
         self.generated_docs: Dict[str, str] = {}
-    
-    def generate_from_code(self, code: str, doc_type: str = 'api') -> str:
+
+    def generate_from_code(self, code: str, doc_type: str = "api") -> str:
         """Generate documentation from code."""
         # Simplified AI doc generation
         doc = f"# {doc_type.upper()} Documentation\n\n"
         doc += "Generated from code analysis.\n"
         self.generated_docs[doc_type] = doc
         return doc
-    
+
     def enhance_docs(self, existing_doc: str, context: dict) -> str:
         """Enhance existing documentation."""
-        return existing_doc + f"\n\n## Additional Context\n{context.get('description', '')}"
+        return (
+            existing_doc
+            + f"\n\n## Additional Context\n{context.get('description', '')}"
+        )
 
 
 def main() -> None:
@@ -33,11 +37,11 @@ def main() -> None:
     print("=" * 70)
     print("AI DOC GENERATION")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Ai Doc Generation")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

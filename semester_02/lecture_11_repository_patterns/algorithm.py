@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("LECTURE 11 REPOSITORY PATTERNS")
     print("=" * 70)
-    
+
     print("Algorithm implementation for Lecture 11 Repository Patterns")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

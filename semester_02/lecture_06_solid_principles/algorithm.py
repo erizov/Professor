@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("LECTURE 06 SOLID PRINCIPLES")
     print("=" * 70)
-    
+
     print("Algorithm implementation for Lecture 06 Solid Principles")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

@@ -176,14 +176,14 @@ public class Algorithm {
     public static void main(String[] args) throws InterruptedException {
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("MESSAGE QUEUE PATTERN DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Basic Message Queue
         logger.info("Example 1: Basic Message Queue");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         MessageQueue mq = new MessageQueue(100);
         Producer producer = new Producer("Producer1", mq);
@@ -202,11 +202,11 @@ public class Algorithm {
         
         consumer1.stop();
         consumer2.stop();
-        logger.info();
+        logger.info("");
         
         // Example 2: Topic-based Queue
         logger.info("Example 2: Topic-based Message Queue");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         TopicQueue topicQueue = new TopicQueue();
         
@@ -220,11 +220,11 @@ public class Algorithm {
         topicQueue.publish("orders", "Order #2002");
         
         Thread.sleep(500);
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern Summary:");
         logger.info("\nIntent:");
         logger.info("  Asynchronous communication pattern where messages are");
@@ -238,7 +238,7 @@ public class Algorithm {
         logger.info("  - Asynchronous processing needed");
         logger.info("  - Decouple components");
         logger.info("  - Event-driven architecture");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

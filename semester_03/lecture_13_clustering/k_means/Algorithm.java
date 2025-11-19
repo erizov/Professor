@@ -157,16 +157,18 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("K-MEANS CLUSTERING DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Simple clustering
         logger.info("Example 1: Simple 2D Clustering");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         Random rand = new Random(42);
         int n = 90;
@@ -207,11 +209,11 @@ public class Algorithm {
         for (int i = 0; i < 3; i++) {
             System.out.printf("  Cluster %d: %d points%n", i, counts[i]);
         }
-        logger.info();
+        logger.info("");
         
         // Example 2: Prediction
         logger.info("Example 2: Predicting New Points");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         double[][] newPoints = {
             {5.5, 5.5},
@@ -226,18 +228,18 @@ public class Algorithm {
                             newPoints[i][0], newPoints[i][1], 
                             predictions[i]);
         }
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Time:  O(n*k*d*iter)");
         logger.info("  Space: O(n + k*d)");
         logger.info("\nKey Advantages:");
         logger.info("  - Simple and fast");
         logger.info("  - Scales well");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

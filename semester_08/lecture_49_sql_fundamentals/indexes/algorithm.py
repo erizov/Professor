@@ -11,11 +11,12 @@ from typing import List, Optional, Dict, Set
 
 class Index:
     """Database index implementation."""
+
     def __init__(self, index_type: str = "btree"):
         self.index_type = index_type
         self.index: Dict[any, List[int]] = {}
         self.data: List[any] = []
-    
+
     def create_index(self, column_values: List[any]) -> None:
         """Create index on column."""
         self.index = {}
@@ -23,11 +24,11 @@ class Index:
             if value not in self.index:
                 self.index[value] = []
             self.index[value].append(i)
-    
+
     def search(self, value: any) -> List[int]:
         """Search using index."""
         return self.index.get(value, [])
-    
+
     def range_search(self, min_value: any, max_value: any) -> List[int]:
         """Range search."""
         results = []
@@ -35,13 +36,13 @@ class Index:
             if min_value <= key <= max_value:
                 results.extend(positions)
         return sorted(set(results))
-    
+
     def insert(self, value: any, position: int) -> None:
         """Insert into index."""
         if value not in self.index:
             self.index[value] = []
         self.index[value].append(position)
-    
+
     def delete(self, value: any, position: int) -> None:
         """Delete from index."""
         if value in self.index and position in self.index[value]:
@@ -55,11 +56,11 @@ def main() -> None:
     print("=" * 70)
     print("INDEXES")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Indexes")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

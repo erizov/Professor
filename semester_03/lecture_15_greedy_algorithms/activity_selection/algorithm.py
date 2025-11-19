@@ -14,15 +14,15 @@ def activity_selection(start: List[int], finish: List[int]) -> List[int]:
     n = len(finish)
     activities = list(zip(start, finish, range(n)))
     activities.sort(key=lambda x: x[1])  # Sort by finish time
-    
+
     selected = [activities[0][2]]
     last_finish = activities[0][1]
-    
+
     for i in range(1, n):
         if activities[i][0] >= last_finish:
             selected.append(activities[i][2])
             last_finish = activities[i][1]
-    
+
     return selected
 
 
@@ -31,11 +31,11 @@ def main() -> None:
     print("=" * 70)
     print("ACTIVITY SELECTION")
     print("=" * 70)
-    
+
     # Example usage
     print("Algorithm implementation for Activity Selection")
     print("See implementation above for details.")
-    
+
     print("=" * 70)
 
 

@@ -78,18 +78,18 @@ public class Algorithm {
             logger.info("  ID: " + user.getUserId());
             logger.info("  Name: " + user.getName());
             logger.info("  Email: " + user.getEmail());
-            logger.info();
+            logger.info("");
         }
         
         void displayUsers(List<User> users) {
             logger.info("Users List:");
             users.forEach(u -> logger.info("  " + u));
-            logger.info();
+            logger.info("");
         }
         
         void displayMessage(String message) {
             logger.info("Message: " + message);
-            logger.info();
+            logger.info("");
         }
     }
     
@@ -123,12 +123,14 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("MODEL-VIEW-CONTROLLER (MVC) PATTERN");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         UserModel model = new UserModel();
         UserView view = new UserView();
@@ -139,13 +141,13 @@ public class Algorithm {
         controller.showAllUsers();
         controller.showUser(1);
         
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nPattern: Separates Model, View, and Controller");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
     }

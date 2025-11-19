@@ -150,52 +150,54 @@ public class Algorithm {
      * Main method for demonstration.
      */
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("MERGE SORT DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Basic sorting
         logger.info("Example 1: Basic Integer Sorting");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data1 = {64, 34, 25, 12, 22, 11, 90, 88};
         logger.info("Original: " + Arrays.toString(data1));
         int[] result1 = mergeSort(data1.clone());
         logger.info("Sorted:   " + Arrays.toString(result1));
-        logger.info();
+        logger.info("");
         
         // Example 2: Already sorted
         logger.info("Example 2: Already Sorted Array");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data2 = {1, 2, 3, 4, 5, 6, 7, 8};
         logger.info("Original: " + Arrays.toString(data2));
         int[] result2 = mergeSort(data2.clone());
         logger.info("Sorted:   " + Arrays.toString(result2));
         logger.info("Note: Still O(n log n) even when sorted!");
-        logger.info();
+        logger.info("");
         
         // Example 3: Reverse sorted
         logger.info("Example 3: Reverse Sorted Array");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data3 = {8, 7, 6, 5, 4, 3, 2, 1};
         logger.info("Original: " + Arrays.toString(data3));
         int[] result3 = mergeSort(data3.clone());
         logger.info("Sorted:   " + Arrays.toString(result3));
-        logger.info();
+        logger.info("");
         
         // Example 4: Visualization
         logger.info("Example 4: Visualized Merge Sort Process");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         logger.info("Watch the divide-and-conquer process:\n");
         int[] data4 = {5, 2, 8, 1, 9, 3};
         visualizeMergeSort(data4, 0);
-        logger.info();
+        logger.info("");
         
         // Example 5: Performance
         logger.info("Example 5: Performance Measurement");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         Random rand = new Random(42);
         
@@ -231,21 +233,21 @@ public class Algorithm {
         t2 = System.nanoTime();
         logger.info("\nLarge (10,000 elements):");
         System.out.printf("  Time: %.3f ms%n", (t2-t1)/1_000_000.0);
-        logger.info();
+        logger.info("");
         
         // Example 6: In-place
         logger.info("Example 6: In-place Merge Sort");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data6 = {64, 34, 25, 12, 22, 11, 90};
         logger.info("Original: " + Arrays.toString(data6));
         mergeSortInPlace(data6);
         logger.info("Sorted:   " + Arrays.toString(data6));
-        logger.info();
+        logger.info("");
         
         long endTime = System.nanoTime();
         double duration = (endTime - startTime) / 1_000_000.0;
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Time:  O(n log n) - all cases");
         logger.info("  Space: O(n) - auxiliary array");
@@ -255,7 +257,7 @@ public class Algorithm {
         logger.info("  - Stable sorting");
         logger.info("  - Good for linked lists");
         logger.info("  - Parallelizable");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         System.out.printf("\nTotal execution time: %.3f ms%n", duration);
     }
 }

@@ -80,58 +80,60 @@ public class Algorithm {
     }
     
     public static void main(String[] args) {
-        logger.info("=".repeat(70));
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
+        logger.info(separator);
         logger.info("QUICK SORT ALGORITHM DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Basic Quick Sort
         logger.info("Example 1: Basic Quick Sort");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         int[] arr1 = {64, 34, 25, 12, 22, 11, 90};
         logger.info("Original array: " + Arrays.toString(arr1));
         
         quickSort(arr1, 0, arr1.length - 1);
         logger.info("Sorted array: " + Arrays.toString(arr1));
-        logger.info();
+        logger.info("");
         
         // Example 2: Quick Sort with Random Pivot
         logger.info("Example 2: Quick Sort with Random Pivot");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         int[] arr2 = {5, 2, 8, 1, 9, 3, 7, 4, 6};
         logger.info("Original array: " + Arrays.toString(arr2));
         
         quickSortRandom(arr2, 0, arr2.length - 1);
         logger.info("Sorted array: " + Arrays.toString(arr2));
-        logger.info();
+        logger.info("");
         
         // Example 3: Already Sorted Array
         logger.info("Example 3: Already Sorted Array");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         int[] arr3 = {1, 2, 3, 4, 5};
         logger.info("Original array: " + Arrays.toString(arr3));
         
         quickSort(arr3, 0, arr3.length - 1);
         logger.info("Sorted array: " + Arrays.toString(arr3));
-        logger.info();
+        logger.info("");
         
         // Example 4: Reverse Sorted Array
         logger.info("Example 4: Reverse Sorted Array");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         int[] arr4 = {5, 4, 3, 2, 1};
         logger.info("Original array: " + Arrays.toString(arr4));
         
         quickSort(arr4, 0, arr4.length - 1);
         logger.info("Sorted array: " + Arrays.toString(arr4));
-        logger.info();
+        logger.info("");
         
         // Example 5: Performance measurement
         logger.info("Example 5: Performance Measurement");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         
         int[] largeArr = new int[1000];
         Random random = new Random();
@@ -145,9 +147,9 @@ public class Algorithm {
         
         double executionTimeMs = (endTime - startTime) / 1_000_000.0;
         System.out.printf("Time to sort 1000 elements: %.3f ms%n", executionTimeMs);
-        logger.info();
+        logger.info("");
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("\nAlgorithm Summary:");
         logger.info("\nIntent:");
         logger.info("  Efficient divide-and-conquer sorting algorithm that picks");
@@ -171,6 +173,6 @@ public class Algorithm {
         logger.info("  - When average performance matters");
         logger.info("  - Large datasets");
         logger.info("  - When stability not required");
-        logger.info("=".repeat(70));
+        logger.info(separator);
     }
 }

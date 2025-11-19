@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("CLOUD NATIVE")
     print("=" * 70)
-    
+
     print("Algorithm implementation for Cloud Native")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

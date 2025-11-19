@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("TRANSFER LEARNING")
     print("=" * 70)
-    
+
     print("Algorithm implementation for Transfer Learning")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

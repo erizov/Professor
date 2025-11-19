@@ -17,58 +17,60 @@ from tests.test_framework_setup import AlgorithmTestCase
 
 class TestEditdistance(AlgorithmTestCase):
     """Test Edit Distance implementation."""
-    
+
     def setUp(self):
         """Set up test fixtures."""
-        from semester_01.lecture_11_dynamic_programming.edit_distance.algorithm import edit_distance
+        from semester_01.lecture_11_dynamic_programming.edit_distance.algorithm import (
+            edit_distance,
+        )
+
         self.algorithm = edit_distance
-    
+
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
         # TODO: Implement specific test based on algorithm
         pass
-    
+
     def test_empty_input(self):
         """Test with empty input."""
         # TODO: Test edge case
         pass
-    
+
     def test_single_element(self):
         """Test with single element."""
         # TODO: Test edge case
         pass
-    
+
     def test_empty_input(self):
         """Test with empty input."""
         # TODO: Test edge case
         pass
-    
+
     def test_single_element(self):
         """Test with single element."""
         # TODO: Test edge case
         pass
-    
+
     def test_already_sorted(self):
         """Test with already sorted input."""
         # TODO: Test edge case
         pass
-    
+
     def test_reverse_sorted(self):
         """Test with reverse sorted input."""
         # TODO: Test edge case
         pass
-    
+
     def test_duplicates(self):
         """Test with duplicate elements."""
         # TODO: Test edge case
         pass
-    
+
     def test_performance(self):
         """Test algorithm performance."""
         # TODO: Add performance test
         # self.assert_performance(lambda: self.algorithm([...]), max_time_seconds=1.0)
         pass
-
 
     def test_small_input(self):
         """Test with small input."""
@@ -89,18 +91,19 @@ class TestEditdistance(AlgorithmTestCase):
     def test_memoization(self):
         """Test that DP uses memoization."""
         import time
-        
+
         start = time.time()
         result1 = self.algorithm(30)
         time1 = time.time() - start
-        
+
         start = time.time()
         result2 = self.algorithm(30)
         time2 = time.time() - start
-        
+
         self.assertEqual(result1, result2)
         # Second call should be faster (memoized)
         self.assertLessEqual(time2, time1)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

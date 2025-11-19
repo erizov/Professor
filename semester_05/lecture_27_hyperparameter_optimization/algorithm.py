@@ -12,10 +12,10 @@ def main() -> None:
     print("=" * 70)
     print("HYPERPARAMETER OPTIMIZATION")
     print("=" * 70)
-    
+
     print("Algorithm implementation for Hyperparameter Optimization")
     print("This is a placeholder demonstration.")
-    
+
     print("=" * 70)
 
 

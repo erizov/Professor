@@ -25,7 +25,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        pip install pytest pytest-cov flake8 black
+        pip install pytest pytest-cov pytest-timeout flake8 black
     
     - name: Lint with flake8
       run: |
@@ -36,9 +36,14 @@ jobs:
       run: |
         black --check --diff .
     
-    - name: Run tests
+    - name: Run Python tests with timeouts
       run: |
-        pytest tests/ -v --cov=. --cov-report=xml --cov-report=html
+        python scripts/test_runner.py --python --config test_config.json
+      continue-on-error: true
+    
+    - name: Run legacy pytest tests
+      run: |
+        pytest tests/ -v --cov=. --cov-report=xml --cov-report=html --timeout=30
     
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3
@@ -59,6 +64,21 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Run Java tests with timeouts
+      run: |
+        python scripts/test_runner.py --java --config test_config.json
+      continue-on-error: true
+    
     - name: Compile Java files
       run: |
         find . -name "*.java" -exec javac {} \;
@@ -73,6 +93,28 @@ jobs:
     
     steps:
     - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Sync code to textbook
+      run: |
+        python scripts/sync_code_to_textbook.py
+    
+    - name: Check if textbook was updated
+      run: |
+        if [ -n "$(git status --porcelain COMPREHENSIVE_COURSE_TEXTBOOK.md)" ]; then
+          echo "Textbook needs to be updated. Run: python scripts/sync_code_to_textbook.py"
+          git diff COMPREHENSIVE_COURSE_TEXTBOOK.md
+          exit 1
+        fi
     
     - name: Check documentation links
       run: |

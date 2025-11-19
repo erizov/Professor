@@ -61,7 +61,7 @@ public class Algorithm {
      */
     public static int interpolationSearchVisualized(int[] arr, int target) {
         logger.info("Target: " + target);
-        logger.info();
+        logger.info("");
         
         int left = 0;
         int right = arr.length - 1;
@@ -105,7 +105,7 @@ public class Algorithm {
                                 arr[pos], target);
                 right = pos - 1;
             }
-            logger.info();
+            logger.info("");
         }
         
         logger.info("Target out of range or not found.");
@@ -116,16 +116,18 @@ public class Algorithm {
      * Main method for demonstration.
      */
     public static void main(String[] args) {
+        String separator = "=".repeat(70);
+        String dash = "-".repeat(70);
         long startTime = System.nanoTime();
         
-        logger.info("=".repeat(70));
+        logger.info(separator);
         logger.info("INTERPOLATION SEARCH DEMONSTRATION");
-        logger.info("=".repeat(70));
-        logger.info();
+        logger.info(separator);
+        logger.info("");
         
         // Example 1: Uniformly distributed
         logger.info("Example 1: Uniformly Distributed (Best Case)");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data1 = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
         int target1 = 70;
         int result1 = interpolationSearch(data1, target1);
@@ -135,30 +137,30 @@ public class Algorithm {
             System.out.printf("Verification: arr[%d] = %d%n",
                             result1, data1[result1]);
         }
-        logger.info();
+        logger.info("");
         
         // Example 2: Element not found
         logger.info("Example 2: Element Not Found");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data2 = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
         int target2 = 35;
         int result2 = interpolationSearch(data2, target2);
         logger.info("Target: " + target2);
         logger.info("Result: " + 
                           (result2 == -1 ? "Not found" : "Index " + result2));
-        logger.info();
+        logger.info("");
         
         // Example 3: Visualization
         logger.info("Example 3: Visualized Interpolation Search");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         int[] data3 = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
         int target3 = 55;
         interpolationSearchVisualized(data3, target3);
-        logger.info();
+        logger.info("");
         
         // Example 4: Performance measurement
         logger.info("Example 4: Performance Measurement");
-        logger.info("-".repeat(70));
+        logger.info(dash);
         logger.info("With uniformly distributed data:");
         
         Random rand = new Random(42);
@@ -180,8 +182,8 @@ public class Algorithm {
             System.out.printf("n=%6d: %8.3f ms%n", size, ms);
         }
         
-        logger.info();
-        logger.info("=".repeat(70));
+        logger.info("");
+        logger.info(separator);
         logger.info("\nComplexity Summary:");
         logger.info("  Time:  O(log log n) - uniform distribution");
         logger.info("         O(n) - non-uniform distribution");
@@ -204,7 +206,7 @@ public class Algorithm {
         logger.info("\nWhen NOT to use:");
         logger.info("  • Non-uniform distribution");
         logger.info("  • Small datasets");
-        logger.info("=".repeat(70));
+        logger.info(separator);
         
         long endTime = System.nanoTime();
         double totalMs = (endTime - startTime) / 1_000_000.0;
