@@ -2122,6 +2122,216 @@ ENHANCED_ENTRIES = {
         ],
         "alternatives": ["Event Loop", "Reactive Streams", "Fork/Join Framework"],
         "explanation": "Pre-create a set of worker threads that repeatedly fetch tasks from a queue, improving throughput and resource control."
+    },
+    "semester_03/lecture_10_graph_algorithms/bellman_ford/README.md": {
+        "name": "Bellman-Ford",
+        "problem": "Finds shortest paths from a source to all vertices in a weighted graph, even with negative edge weights (detects negative cycles).",
+        "intuition": "Relax all edges repeatedly: after V-1 iterations, shortest paths are found; if another relaxation improves a distance, a negative cycle exists.",
+        "inputs": "Weighted directed graph G(V,E), source vertex s, edge weights (may be negative).",
+        "outputs": "Shortest distances from s to all vertices; optionally detects negative cycles.",
+        "steps": [
+            "Initialize distance array: dist[s]=0, others=∞.",
+            "Relax all edges V-1 times: for each edge (u,v) with weight w, if dist[u]+w < dist[v], update dist[v]=dist[u]+w.",
+            "After V-1 iterations, check for negative cycles: if any edge (u,v) still relaxes, negative cycle exists.",
+            "Return distances (or report cycle if detected)."
+        ],
+        "example": "Graph: A→B(1), B→C(-2), C→A(1). After 3 iterations: dist[A]=0, dist[B]=1, dist[C]=-1. Cycle check: C→A relaxes → negative cycle detected.",
+        "time_complexity": "O(V·E) for V-1 iterations over E edges.",
+        "space_complexity": "O(V) for distance array.",
+        "strengths": [
+            "Handles negative edge weights (unlike Dijkstra).",
+            "Detects negative cycles in the graph."
+        ],
+        "weaknesses": [
+            "Slower than Dijkstra for positive weights (O(V·E) vs O(E log V)).",
+            "Requires V-1 full passes over all edges."
+        ],
+        "alternatives": ["Dijkstra (positive weights)", "Floyd-Warshall (all pairs)", "SPFA (optimized variant)"],
+        "explanation": "Repeatedly relaxes all edges V-1 times; if distances can still improve after that, a negative cycle exists."
+    },
+    "semester_03/lecture_10_graph_algorithms/bfs/README.md": {
+        "name": "Breadth-First Search (BFS)",
+        "problem": "Explores a graph level by level, visiting all neighbors before moving to the next depth, finding shortest unweighted paths.",
+        "intuition": "Like ripples in water: start from source, visit all immediate neighbors first, then their neighbors, maintaining a queue of vertices to explore.",
+        "inputs": "Graph G(V,E) (adjacency list or matrix), source vertex s.",
+        "outputs": "Visited vertices in BFS order; distances/parents for shortest path reconstruction.",
+        "steps": [
+            "Initialize queue with source s, mark s as visited.",
+            "While queue not empty: dequeue vertex u.",
+            "For each unvisited neighbor v of u: mark v visited, set distance[v]=distance[u]+1, enqueue v.",
+            "Continue until queue is empty."
+        ],
+        "example": "Graph: A-B-C, A-D. BFS from A: visit A (level 0), then B and D (level 1), then C (level 2).",
+        "time_complexity": "O(V+E) for adjacency list, O(V²) for adjacency matrix.",
+        "space_complexity": "O(V) for queue and visited array.",
+        "strengths": [
+            "Finds shortest unweighted paths efficiently.",
+            "Guarantees level-order traversal."
+        ],
+        "weaknesses": [
+            "Only works for unweighted graphs (use Dijkstra for weighted).",
+            "Memory usage grows with graph breadth."
+        ],
+        "alternatives": ["DFS (depth-first)", "Dijkstra (weighted shortest paths)", "A* (heuristic search)"],
+        "explanation": "Uses a queue to explore vertices level by level, ensuring shortest paths in unweighted graphs."
+    },
+    "semester_03/lecture_10_graph_algorithms/dfs/README.md": {
+        "name": "Depth-First Search (DFS)",
+        "problem": "Explores a graph by going as deep as possible along each branch before backtracking, useful for connectivity and cycle detection.",
+        "intuition": "Like exploring a maze: go down one path as far as possible, mark where you've been, backtrack when stuck, then try another path.",
+        "inputs": "Graph G(V,E) (adjacency list or matrix), starting vertex s (optional).",
+        "outputs": "Visited vertices in DFS order; discovery/finish times; connected components; cycle detection.",
+        "steps": [
+            "Mark current vertex as visited.",
+            "For each unvisited neighbor: recursively call DFS on that neighbor.",
+            "After exploring all neighbors, mark vertex as finished (for timing).",
+            "Backtrack to previous vertex."
+        ],
+        "example": "Graph: A-B-C, A-D. DFS from A: visit A, go to B, go to C (backtrack), backtrack to A, go to D.",
+        "time_complexity": "O(V+E) for adjacency list, O(V²) for adjacency matrix.",
+        "space_complexity": "O(V) for recursion stack and visited array.",
+        "strengths": [
+            "Low memory overhead (recursion stack).",
+            "Natural for backtracking and tree/graph traversal."
+        ],
+        "weaknesses": [
+            "May not find shortest paths (unlike BFS).",
+            "Deep recursion can cause stack overflow for large graphs."
+        ],
+        "alternatives": ["BFS (level-order)", "Iterative DFS (explicit stack)", "Topological Sort (DAG)"],
+        "explanation": "Recursively explores each branch fully before backtracking, useful for connectivity, cycles, and topological ordering."
+    },
+    "semester_03/lecture_10_graph_algorithms/dijkstra/README.md": {
+        "name": "Dijkstra's Algorithm",
+        "problem": "Finds shortest paths from a source to all vertices in a weighted graph with non-negative edge weights.",
+        "intuition": "Greedily expands the closest unvisited vertex: maintain a priority queue of vertices by distance, always process the nearest one first.",
+        "inputs": "Weighted graph G(V,E) with non-negative weights, source vertex s.",
+        "outputs": "Shortest distances from s to all vertices; optionally the shortest path tree.",
+        "steps": [
+            "Initialize: dist[s]=0, others=∞, priority queue Q contains all vertices.",
+            "While Q not empty: extract vertex u with minimum distance from Q.",
+            "For each neighbor v of u: if dist[u]+weight(u,v) < dist[v], update dist[v] and decrease-key in Q.",
+            "Mark u as processed, repeat until Q is empty."
+        ],
+        "example": "Graph: A→B(4), A→C(2), C→B(1), C→D(5), B→D(1). From A: dist[B]=3 (via C), dist[C]=2, dist[D]=4 (via C and B).",
+        "time_complexity": "O((V+E) log V) with binary heap, O(V²) with array.",
+        "space_complexity": "O(V) for distance array and priority queue.",
+        "strengths": [
+            "Efficient for single-source shortest paths with non-negative weights.",
+            "Optimal for dense graphs with proper data structures."
+        ],
+        "weaknesses": [
+            "Fails with negative edge weights (use Bellman-Ford).",
+            "Requires priority queue for efficiency."
+        ],
+        "alternatives": ["Bellman-Ford (negative weights)", "Floyd-Warshall (all pairs)", "A* (heuristic)"],
+        "explanation": "Greedily processes vertices in order of increasing distance from source, guaranteeing shortest paths when all weights are non-negative."
+    },
+    "semester_03/lecture_10_graph_algorithms/floyd_warshall/README.md": {
+        "name": "Floyd-Warshall",
+        "problem": "Finds shortest paths between all pairs of vertices in a weighted graph, handling negative weights (but not negative cycles).",
+        "intuition": "Dynamic programming: for each intermediate vertex k, update shortest path between i and j by considering paths through k.",
+        "inputs": "Weighted graph G(V,E) with V vertices, edge weights (may be negative, no negative cycles).",
+        "outputs": "Matrix of shortest distances between all pairs; optionally the path reconstruction matrix.",
+        "steps": [
+            "Initialize dist[i][j] = weight(i,j) if edge exists, 0 if i==j, ∞ otherwise.",
+            "For k from 1 to V: for each pair (i,j), set dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]).",
+            "After all k, dist[i][j] contains shortest path from i to j.",
+            "Optionally detect negative cycles: if any dist[i][i] < 0 after algorithm, negative cycle exists."
+        ],
+        "example": "Graph: A→B(1), B→C(2), A→C(5). After k=A,B,C: dist[A][C]=3 (via B), dist[A][B]=1, dist[B][C]=2.",
+        "time_complexity": "O(V³) for three nested loops.",
+        "space_complexity": "O(V²) for distance matrix.",
+        "strengths": [
+            "Finds all-pairs shortest paths in one pass.",
+            "Handles negative weights (unlike Dijkstra)."
+        ],
+        "weaknesses": [
+            "Cubic time complexity makes it slow for large graphs.",
+            "Memory usage is O(V²) which can be prohibitive."
+        ],
+        "alternatives": ["Dijkstra (single-source, non-negative)", "Johnson's (all-pairs, sparse graphs)", "Bellman-Ford (single-source, negative)"],
+        "explanation": "Uses dynamic programming to consider all possible intermediate vertices, building shortest paths incrementally for all pairs."
+    },
+    "semester_03/lecture_15_greedy_algorithms/activity_selection/README.md": {
+        "name": "Activity Selection",
+        "problem": "Selects the maximum number of non-overlapping activities from a set, where each activity has a start and finish time.",
+        "intuition": "Greedily choose the activity that finishes earliest: it leaves the most time for remaining activities, maximizing total count.",
+        "inputs": "List of activities, each with start_time and finish_time.",
+        "outputs": "Maximum-size set of non-overlapping activities.",
+        "steps": [
+            "Sort activities by finish_time (ascending).",
+            "Initialize selected = [first activity].",
+            "For each remaining activity: if its start_time >= finish_time of last selected, add it to selected.",
+            "Return selected set."
+        ],
+        "example": "Activities: (1,4), (3,5), (0,6), (5,7), (8,9). Sorted: (1,4), (3,5), (0,6), (5,7), (8,9). Selected: (1,4), (5,7), (8,9) = 3 activities.",
+        "time_complexity": "O(n log n) for sorting, O(n) for selection = O(n log n) total.",
+        "space_complexity": "O(n) for storing activities and result.",
+        "strengths": [
+            "Simple greedy approach with optimal solution.",
+            "Efficient O(n log n) time complexity."
+        ],
+        "weaknesses": [
+            "Assumes activities are sorted (or requires sorting).",
+            "Only maximizes count, not total duration or value."
+        ],
+        "alternatives": ["Weighted Activity Selection (DP)", "Interval Scheduling (variants)", "Greedy with different criteria"],
+        "explanation": "Greedily selects activities that finish earliest, leaving maximum time for future selections and guaranteeing optimal count."
+    },
+    "semester_03/lecture_15_greedy_algorithms/fractional_knapsack/README.md": {
+        "name": "Fractional Knapsack",
+        "problem": "Maximizes value in a knapsack of limited capacity by taking fractions of items (unlike 0/1 knapsack where items are indivisible).",
+        "intuition": "Greedily take items with highest value-to-weight ratio first: fill knapsack with best items until capacity is exhausted, taking fractions if needed.",
+        "inputs": "Items with weights and values, knapsack capacity W.",
+        "outputs": "Maximum value achievable; optionally the fraction of each item taken.",
+        "steps": [
+            "Calculate value-to-weight ratio for each item.",
+            "Sort items by ratio (descending).",
+            "Initialize total_value = 0, remaining_capacity = W.",
+            "For each item in sorted order: take as much as possible (full item or fraction) until capacity is full.",
+            "Return total_value."
+        ],
+        "example": "Items: (weight=10, value=60), (weight=20, value=100), (weight=30, value=120). Ratios: 6, 5, 4. Capacity=50. Take all of item1 (10), all of item2 (20), 2/3 of item3 (20). Value = 60+100+80 = 240.",
+        "time_complexity": "O(n log n) for sorting, O(n) for selection = O(n log n) total.",
+        "space_complexity": "O(n) for storing items and ratios.",
+        "strengths": [
+            "Greedy approach yields optimal solution (unlike 0/1 knapsack).",
+            "Efficient O(n log n) time complexity."
+        ],
+        "weaknesses": [
+            "Only works when items can be divided (fractional).",
+            "Real-world items are often indivisible (0/1 knapsack requires DP)."
+        ],
+        "alternatives": ["0/1 Knapsack (DP)", "Multiple Knapsack", "Bounded Knapsack"],
+        "explanation": "Greedily selects items by value-to-weight ratio, taking full items when possible and fractions when capacity is limited, ensuring optimal value."
+    },
+    "semester_03/lecture_15_greedy_algorithms/huffman/README.md": {
+        "name": "Huffman Coding",
+        "problem": "Constructs an optimal prefix-free binary code for compressing data by assigning shorter codes to more frequent symbols.",
+        "intuition": "Build a binary tree bottom-up: merge two least frequent symbols into a node, repeat until one tree remains; left edges=0, right edges=1.",
+        "inputs": "Symbols with their frequencies (or probabilities).",
+        "outputs": "Huffman tree and variable-length binary codes for each symbol.",
+        "steps": [
+            "Create a leaf node for each symbol with its frequency.",
+            "Insert all nodes into a min-priority queue (by frequency).",
+            "While queue has >1 node: extract two nodes with lowest frequencies, create internal node with sum frequency, insert back into queue.",
+            "Remaining node is root of Huffman tree.",
+            "Traverse tree to assign codes: left=0, right=1."
+        ],
+        "example": "Symbols: A(5), B(2), C(1), D(1). Merge C+D(2), then B+(C+D)(4), then A+(B+C+D)(9). Codes: A=0, B=10, C=110, D=111. Average bits: (5×1+2×2+1×3+1×3)/9 ≈ 1.67.",
+        "time_complexity": "O(n log n) where n is number of symbols (priority queue operations).",
+        "space_complexity": "O(n) for tree and code table.",
+        "strengths": [
+            "Optimal prefix-free code (minimizes expected code length).",
+            "Widely used in compression (ZIP, JPEG, MP3)."
+        ],
+        "weaknesses": [
+            "Requires frequency table (two-pass encoding).",
+            "Not adaptive (fixed codes for entire message)."
+        ],
+        "alternatives": ["Arithmetic Coding", "Lempel-Ziv (LZ77/LZ78)", "Run-Length Encoding"],
+        "explanation": "Builds a binary tree by repeatedly merging least frequent symbols, ensuring frequent symbols get short codes and minimizing total encoded length."
     }
 }
 
