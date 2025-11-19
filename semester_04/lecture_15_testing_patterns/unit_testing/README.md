@@ -4,37 +4,42 @@
    Unit Testing
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements unit testing algorithm.
+   Tests individual units of code (functions, methods, classes) in isolation to verify they behave correctly according to specifications.
 
 3. **Intuition (plain-language explanation)**  
-   Unit Testing is a fundamental algorithm in computer science.
+   Like testing each ingredient separately before cooking: verify each function works correctly before testing the whole recipe.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Unit of code (function/method), test inputs, expected outputs.  
+   - Output: Test results indicating whether unit behaves correctly.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Identify unit to test (function, method, or class).
+2. Prepare test inputs and expected outputs.
+3. Execute unit with test inputs.
+4. Assert actual outputs match expected outputs.
+5. Test edge cases and error conditions.
+6. Verify unit works in isolation (mock dependencies).
 
 6. **Tiny example (hand-simulated)**  
-   Example: Unit Testing applied to sample data.
+   Test calculateTotal function: input [1,2,3] → expected output 6 → assert result equals 6. Test with empty list, negative numbers, null input.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(1) to O(n) depending on unit complexity (fast execution).  
+   - Space: O(1) for test data (minimal memory usage).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Fast execution and quick feedback.
+- Isolates bugs to specific units.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Doesn't catch integration issues.
+- Requires mocking external dependencies.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Integration Testing, System Testing, End-to-End Testing
 
 11. **30-second explanation (your own words)**  
-    Unit Testing solves computational problems efficiently.
+    Tests individual code units in isolation to verify correct behavior, providing fast feedback and early bug detection.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

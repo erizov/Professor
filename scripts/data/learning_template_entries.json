@@ -3370,288 +3370,365 @@
     {
       "path": "semester_04/lecture_15_testing_patterns/integration_testing/README.md",
       "name": "Integration Testing",
-      "problem": "Implements integration testing algorithm.",
-      "intuition": "Integration Testing is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Tests interactions between multiple components or systems to ensure they work together correctly as an integrated unit.",
+      "intuition": "Like testing a car's engine and transmission together: individual parts may work, but integration testing verifies they function as a cohesive system.",
+      "inputs": "Multiple components or services, test data, integration test scenarios.",
+      "outputs": "Test results verifying component interactions, data flow, and system behavior.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Identify integration points between components.",
+        "Set up test environment with all required components.",
+        "Execute test scenarios that exercise component interactions.",
+        "Verify data flows correctly between components.",
+        "Check error handling and edge cases at boundaries.",
+        "Validate end-to-end workflows."
       ],
-      "example": "Example: Integration Testing applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "E-commerce: test order service integrates with payment service and inventory service; verify order creation triggers payment processing and inventory deduction.",
+      "time_complexity": "O(n) where n is number of components and interactions tested.",
+      "space_complexity": "O(n) for test environment setup and component state.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Catches bugs in component interactions early.",
+        "Validates real-world system behavior."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Slower and more complex than unit tests.",
+        "Requires full test environment setup."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Unit Testing",
+        "End-to-End Testing",
+        "Contract Testing"
       ],
-      "explanation": "Integration Testing solves computational problems efficiently."
+      "explanation": "Tests multiple components together to ensure they integrate correctly and work as a unified system."
     },
     {
       "path": "semester_04/lecture_15_testing_patterns/mocking/README.md",
       "name": "Mocking",
-      "problem": "Implements mocking algorithm.",
-      "intuition": "Mocking is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Replaces real dependencies with fake implementations during testing to isolate the unit under test and control test behavior.",
+      "intuition": "Like using a stunt double in movies: replace real actors (dependencies) with stand-ins (mocks) to test scenes (units) in isolation.",
+      "inputs": "Unit under test, dependencies to mock, expected behaviors and return values.",
+      "outputs": "Isolated unit tests with controlled dependency behavior.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Identify external dependencies (databases, APIs, services).",
+        "Create mock objects that implement dependency interfaces.",
+        "Configure mock behavior (return values, exceptions, call counts).",
+        "Inject mocks into unit under test.",
+        "Execute test and verify interactions with mocks.",
+        "Assert expected calls and behaviors occurred."
       ],
-      "example": "Example: Mocking applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Test user service: mock database to return fake user data, mock email service to verify email sent, test user creation logic in isolation.",
+      "time_complexity": "O(1) for mock setup and execution (faster than real dependencies).",
+      "space_complexity": "O(1) for mock objects (minimal memory overhead).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Enables fast, isolated unit testing.",
+        "Removes dependency on external systems."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Mocks may not reflect real dependency behavior.",
+        "Over-mocking can make tests brittle."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Stubs",
+        "Fakes",
+        "Test Doubles",
+        "Dependency Injection"
       ],
-      "explanation": "Mocking solves computational problems efficiently."
+      "explanation": "Uses fake implementations of dependencies to isolate units under test, enabling fast, controlled testing without external systems."
     },
     {
       "path": "semester_04/lecture_15_testing_patterns/tdd/README.md",
-      "name": "Tdd",
-      "problem": "Implements tdd algorithm.",
-      "intuition": "Tdd is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "TDD (Test-Driven Development)",
+      "problem": "Develops software by writing tests before implementation, ensuring code meets requirements and maintains high test coverage.",
+      "intuition": "Write the test first (specification), then write code to pass it: like building a house by first drawing blueprints, then constructing to match.",
+      "inputs": "Requirements, test cases, implementation code.",
+      "outputs": "Working code with comprehensive test coverage and clear specifications.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Write a failing test for a small feature (Red phase).",
+        "Write minimal code to make the test pass (Green phase).",
+        "Refactor code while keeping tests green (Refactor phase).",
+        "Repeat cycle for next feature.",
+        "Maintain test suite as codebase grows."
       ],
-      "example": "Example: Tdd applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Feature: calculate discount. Write test expecting 10% discount → test fails → implement discount calculation → test passes → refactor if needed.",
+      "time_complexity": "O(n) where n is number of features (each requires test + implementation).",
+      "space_complexity": "O(n) for test code and implementation code.",
       "strengths": [
-        "Efficient for specific use cases"
+        "High test coverage and confidence in code.",
+        "Clear requirements through executable tests."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Initial development may be slower.",
+        "Requires discipline to maintain TDD cycle."
       ],
       "alternatives": [
-        "Related algorithms"
+        "BDD (Behavior-Driven Development)",
+        "Test-After Development",
+        "Property-Based Testing"
       ],
-      "explanation": "Tdd solves computational problems efficiently."
+      "explanation": "Develops code by first writing tests that define desired behavior, then implementing code to satisfy those tests, ensuring requirements are met."
     },
     {
       "path": "semester_04/lecture_15_testing_patterns/unit_testing/README.md",
       "name": "Unit Testing",
-      "problem": "Implements unit testing algorithm.",
-      "intuition": "Unit Testing is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Tests individual units of code (functions, methods, classes) in isolation to verify they behave correctly according to specifications.",
+      "intuition": "Like testing each ingredient separately before cooking: verify each function works correctly before testing the whole recipe.",
+      "inputs": "Unit of code (function/method), test inputs, expected outputs.",
+      "outputs": "Test results indicating whether unit behaves correctly.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Identify unit to test (function, method, or class).",
+        "Prepare test inputs and expected outputs.",
+        "Execute unit with test inputs.",
+        "Assert actual outputs match expected outputs.",
+        "Test edge cases and error conditions.",
+        "Verify unit works in isolation (mock dependencies)."
       ],
-      "example": "Example: Unit Testing applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Test calculateTotal function: input [1,2,3] → expected output 6 → assert result equals 6. Test with empty list, negative numbers, null input.",
+      "time_complexity": "O(1) to O(n) depending on unit complexity (fast execution).",
+      "space_complexity": "O(1) for test data (minimal memory usage).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Fast execution and quick feedback.",
+        "Isolates bugs to specific units."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Doesn't catch integration issues.",
+        "Requires mocking external dependencies."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Integration Testing",
+        "System Testing",
+        "End-to-End Testing"
       ],
-      "explanation": "Unit Testing solves computational problems efficiently."
+      "explanation": "Tests individual code units in isolation to verify correct behavior, providing fast feedback and early bug detection."
     },
     {
       "path": "semester_04/lecture_16_deployment_patterns/blue_green/README.md",
-      "name": "Blue Green",
-      "problem": "Implements blue green algorithm.",
-      "intuition": "Blue Green is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Blue-Green Deployment",
+      "problem": "Deploys new version alongside current version, then switches traffic to new version, enabling zero-downtime deployments and instant rollback.",
+      "intuition": "Like having two identical theaters: run show in blue theater, prepare new show in green theater, then switch audience to green when ready.",
+      "inputs": "Current production environment (blue), new application version, traffic routing configuration.",
+      "outputs": "Deployed new version with zero downtime and rollback capability.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Deploy new version to green environment (parallel to blue).",
+        "Run smoke tests on green environment.",
+        "Switch traffic routing from blue to green.",
+        "Monitor green environment for issues.",
+        "If problems detected, route traffic back to blue (instant rollback).",
+        "Keep blue as backup or decommission after validation period."
       ],
-      "example": "Example: Blue Green applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Deploy v2.0 to green servers while v1.0 runs on blue. Test green, then update load balancer to route traffic to green. If errors occur, revert to blue.",
+      "time_complexity": "O(1) for traffic switch (instantaneous).",
+      "space_complexity": "O(2n) for maintaining two full environments simultaneously.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Zero-downtime deployments.",
+        "Instant rollback capability."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Requires double infrastructure capacity.",
+        "Database migration complexity."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Canary Deployment",
+        "Rolling Deployment",
+        "Recreate Deployment"
       ],
-      "explanation": "Blue Green solves computational problems efficiently."
+      "explanation": "Maintains two identical production environments (blue and green), deploying new version to one while the other serves traffic, then switching instantly."
     },
     {
       "path": "semester_04/lecture_16_deployment_patterns/canary/README.md",
-      "name": "Canary",
-      "problem": "Implements canary algorithm.",
-      "intuition": "Canary is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "name": "Canary Deployment",
+      "problem": "Gradually rolls out new version to a small subset of users, monitors for issues, then expands to full deployment if successful.",
+      "intuition": "Like canaries in coal mines: test new version on small group first (canary), if safe, expand to everyone; if problems, stop and rollback.",
+      "inputs": "New application version, traffic routing rules, monitoring tools, user segmentation.",
+      "outputs": "Gradually deployed new version with risk mitigation and monitoring.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Deploy new version alongside current version.",
+        "Route small percentage of traffic (e.g., 5%) to new version.",
+        "Monitor metrics (error rates, latency, business metrics).",
+        "If metrics acceptable, gradually increase traffic percentage (10%, 25%, 50%, 100%).",
+        "If issues detected, route traffic back to old version.",
+        "Complete rollout or rollback based on monitoring."
       ],
-      "example": "Example: Canary applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Deploy v2.0, route 5% of users to it. Monitor: if error rate < 1%, increase to 25%, then 50%, then 100%. If errors spike, revert to v1.0.",
+      "time_complexity": "O(n) where n is number of rollout stages (gradual process).",
+      "space_complexity": "O(n) for maintaining both versions during transition.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Low-risk gradual rollout.",
+        "Early detection of issues with minimal impact."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Requires traffic routing infrastructure.",
+        "Slower than blue-green deployment."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Blue-Green Deployment",
+        "Rolling Deployment",
+        "Feature Flags"
       ],
-      "explanation": "Canary solves computational problems efficiently."
+      "explanation": "Gradually exposes new version to increasing traffic percentages while monitoring for issues, enabling safe, risk-mitigated deployments."
     },
     {
       "path": "semester_04/lecture_16_deployment_patterns/circuit_breaker/README.md",
       "name": "Circuit Breaker",
-      "problem": "Implements circuit breaker algorithm.",
-      "intuition": "Circuit Breaker is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Prevents cascading failures by detecting service failures and temporarily stopping requests to failing services, allowing recovery time.",
+      "intuition": "Like electrical circuit breakers: when a circuit (service) fails repeatedly, trip the breaker to stop current (requests) and prevent damage (cascading failures).",
+      "inputs": "Service calls, failure thresholds, timeout configurations.",
+      "outputs": "Circuit state (closed, open, half-open) and request handling decisions.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Monitor service call failures and response times.",
+        "If failure count exceeds threshold, open circuit (stop requests).",
+        "Return fallback response or error immediately (fast failure).",
+        "After timeout period, transition to half-open state.",
+        "Allow test request through; if successful, close circuit; if fails, reopen.",
+        "Continue monitoring and adjusting circuit state."
       ],
-      "example": "Example: Circuit Breaker applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "Payment service fails 5 times in 10 seconds → circuit opens → subsequent requests fail fast with fallback → after 30s, test request → if succeeds, close circuit.",
+      "time_complexity": "O(1) for circuit state check and request handling.",
+      "space_complexity": "O(1) for circuit state storage (minimal overhead).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Prevents cascading failures and resource exhaustion.",
+        "Fast failure improves user experience."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Requires fallback strategies.",
+        "May delay recovery if timeout too long."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Retry Pattern",
+        "Bulkhead Pattern",
+        "Timeout Pattern"
       ],
-      "explanation": "Circuit Breaker solves computational problems efficiently."
+      "explanation": "Detects service failures and temporarily stops requests to failing services, preventing cascading failures and allowing time for recovery."
     },
     {
       "path": "semester_04/lecture_16_deployment_patterns/retry_pattern/README.md",
       "name": "Retry Pattern",
-      "problem": "Implements retry pattern algorithm.",
-      "intuition": "Retry Pattern is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Automatically retries failed operations with exponential backoff to handle transient failures and improve system reliability.",
+      "intuition": "Like retrying a phone call: if it fails, wait a bit longer each time before trying again, giving the system time to recover from temporary issues.",
+      "inputs": "Operation to retry, retry policy (max attempts, backoff strategy), failure conditions.",
+      "outputs": "Successful operation result or final failure after retries exhausted.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Execute operation (API call, database query, etc.).",
+        "If operation fails with retryable error, wait (exponential backoff).",
+        "Retry operation up to maximum attempts.",
+        "If all retries fail, return error or fallback.",
+        "If operation succeeds, return result immediately.",
+        "Optionally log retry attempts for monitoring."
       ],
-      "example": "Example: Retry Pattern applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "API call fails with 503 error → wait 1s → retry → fails → wait 2s → retry → fails → wait 4s → retry → succeeds. Total: 3 retries, 7s elapsed.",
+      "time_complexity": "O(k) where k is number of retry attempts (depends on backoff strategy).",
+      "space_complexity": "O(1) for retry state (minimal memory).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Handles transient failures automatically.",
+        "Improves system resilience and user experience."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "May delay failure detection for permanent errors.",
+        "Can increase load on failing services."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Circuit Breaker",
+        "Exponential Backoff",
+        "Jittered Retry"
       ],
-      "explanation": "Retry Pattern solves computational problems efficiently."
+      "explanation": "Automatically retries failed operations with increasing delays between attempts, handling transient failures and improving system reliability."
     },
     {
       "path": "semester_04/lecture_17_performance/caching/README.md",
       "name": "Caching",
-      "problem": "Implements caching algorithm.",
-      "intuition": "Caching is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Stores frequently accessed data in fast storage to reduce latency and load on primary data sources, improving application performance.",
+      "intuition": "Like keeping frequently used items on your desk: instead of going to storage (database) every time, grab from desk (cache) for instant access.",
+      "inputs": "Data to cache, cache key, TTL (time-to-live), cache eviction policy.",
+      "outputs": "Cached data with fast retrieval and reduced load on primary sources.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Check cache for requested data using key.",
+        "If cache hit: return cached data immediately.",
+        "If cache miss: fetch from primary source (database, API).",
+        "Store fetched data in cache with TTL.",
+        "Return data to caller.",
+        "Evict expired or least-recently-used entries when cache full."
       ],
-      "example": "Example: Caching applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "User requests product info → check cache for product:123 → miss → fetch from database → store in cache (TTL 1 hour) → return. Next request hits cache instantly.",
+      "time_complexity": "O(1) for cache lookup (hash table); O(n) for primary source fetch.",
+      "space_complexity": "O(n) for cached data (bounded by cache size limit).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Dramatically reduces latency for frequently accessed data.",
+        "Reduces load on primary data sources."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Cache invalidation complexity.",
+        "Memory overhead for cached data."
       ],
       "alternatives": [
-        "Related algorithms"
+        "CDN",
+        "Database Query Optimization",
+        "In-Memory Databases"
       ],
-      "explanation": "Caching solves computational problems efficiently."
+      "explanation": "Stores frequently accessed data in fast storage (memory) to enable instant retrieval and reduce load on slower primary data sources."
     },
     {
       "path": "semester_04/lecture_17_performance/load_balancing/README.md",
       "name": "Load Balancing",
-      "problem": "Implements load balancing algorithm.",
-      "intuition": "Load Balancing is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Distributes incoming requests across multiple servers to optimize resource utilization, maximize throughput, and ensure high availability.",
+      "intuition": "Like a restaurant host: when multiple tables (servers) are available, distribute customers (requests) evenly so no table is overloaded while others sit idle.",
+      "inputs": "Incoming requests, pool of backend servers, load balancing algorithm.",
+      "outputs": "Requests routed to appropriate servers with balanced load distribution.",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Receive incoming request at load balancer.",
+        "Select server using algorithm (round-robin, least connections, weighted, etc.).",
+        "Route request to selected server.",
+        "Monitor server health and response times.",
+        "Remove unhealthy servers from pool.",
+        "Re-add servers when they recover."
       ],
-      "example": "Example: Load Balancing applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "3 servers: A, B, C. Requests 1,2,3 → round-robin routes to A,B,C. Request 4 → routes to A again. If B fails, route only to A and C.",
+      "time_complexity": "O(1) to O(log n) for server selection depending on algorithm.",
+      "space_complexity": "O(n) for server pool and health status tracking.",
       "strengths": [
-        "Efficient for specific use cases"
+        "Improves throughput and resource utilization.",
+        "Provides high availability through redundancy."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "Requires session affinity for stateful applications.",
+        "Adds latency and complexity."
       ],
       "alternatives": [
-        "Related algorithms"
+        "DNS Load Balancing",
+        "Client-Side Load Balancing",
+        "Service Mesh"
       ],
-      "explanation": "Load Balancing solves computational problems efficiently."
+      "explanation": "Distributes incoming requests across multiple servers using algorithms to balance load, optimize performance, and ensure high availability."
     },
     {
       "path": "semester_04/lecture_17_performance/rate_limiting/README.md",
       "name": "Rate Limiting",
-      "problem": "Implements rate limiting algorithm.",
-      "intuition": "Rate Limiting is a fundamental algorithm in computer science.",
-      "inputs": "Algorithm-specific inputs",
-      "outputs": "Algorithm-specific outputs",
+      "problem": "Controls the rate of requests from clients to prevent abuse, ensure fair resource usage, and protect services from overload.",
+      "intuition": "Like a bouncer at a club: limit how many people (requests) can enter per hour to prevent overcrowding and ensure everyone gets served.",
+      "inputs": "Client requests, rate limit rules (requests per time window), client identifier.",
+      "outputs": "Allowed requests or rate limit exceeded errors (429).",
       "steps": [
-        "Initialize data structures",
-        "Process input according to algorithm logic",
-        "Return computed result"
+        "Identify client (IP address, API key, user ID).",
+        "Check current request count for client in time window.",
+        "If under limit: allow request and increment counter.",
+        "If at limit: reject request with 429 (Too Many Requests) error.",
+        "Reset counters when time window expires.",
+        "Optionally implement different limits per client tier."
       ],
-      "example": "Example: Rate Limiting applied to sample data.",
-      "time_complexity": "Varies",
-      "space_complexity": "Varies",
+      "example": "API limit: 100 requests/hour per API key. Key 'abc123' makes 50 requests → allowed. Makes 60 more → 110 total → 51st request in hour returns 429 error.",
+      "time_complexity": "O(1) for limit check (hash table lookup and counter increment).",
+      "space_complexity": "O(n) for n unique clients (counter storage per client).",
       "strengths": [
-        "Efficient for specific use cases"
+        "Prevents abuse and ensures fair resource allocation.",
+        "Protects services from overload and DDoS attacks."
       ],
       "weaknesses": [
-        "May have limitations in certain scenarios"
+        "May block legitimate users during traffic spikes.",
+        "Requires distributed state for multi-server deployments."
       ],
       "alternatives": [
-        "Related algorithms"
+        "Throttling",
+        "Quotas",
+        "Token Bucket Algorithm"
       ],
-      "explanation": "Rate Limiting solves computational problems efficiently."
+      "explanation": "Limits the number of requests a client can make within a time window, preventing abuse and ensuring fair resource usage across all clients."
     },
     {
       "path": "semester_04/lecture_18_crypto_algorithms/aes/README.md",

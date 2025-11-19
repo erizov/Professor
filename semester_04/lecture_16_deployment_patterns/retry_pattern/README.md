@@ -4,37 +4,42 @@
    Retry Pattern
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements retry pattern algorithm.
+   Automatically retries failed operations with exponential backoff to handle transient failures and improve system reliability.
 
 3. **Intuition (plain-language explanation)**  
-   Retry Pattern is a fundamental algorithm in computer science.
+   Like retrying a phone call: if it fails, wait a bit longer each time before trying again, giving the system time to recover from temporary issues.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Operation to retry, retry policy (max attempts, backoff strategy), failure conditions.  
+   - Output: Successful operation result or final failure after retries exhausted.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Execute operation (API call, database query, etc.).
+2. If operation fails with retryable error, wait (exponential backoff).
+3. Retry operation up to maximum attempts.
+4. If all retries fail, return error or fallback.
+5. If operation succeeds, return result immediately.
+6. Optionally log retry attempts for monitoring.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Retry Pattern applied to sample data.
+   API call fails with 503 error → wait 1s → retry → fails → wait 2s → retry → fails → wait 4s → retry → succeeds. Total: 3 retries, 7s elapsed.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(k) where k is number of retry attempts (depends on backoff strategy).  
+   - Space: O(1) for retry state (minimal memory).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Handles transient failures automatically.
+- Improves system resilience and user experience.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- May delay failure detection for permanent errors.
+- Can increase load on failing services.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Circuit Breaker, Exponential Backoff, Jittered Retry
 
 11. **30-second explanation (your own words)**  
-    Retry Pattern solves computational problems efficiently.
+    Automatically retries failed operations with increasing delays between attempts, handling transient failures and improving system reliability.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

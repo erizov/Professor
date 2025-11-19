@@ -1,40 +1,45 @@
-# Blue Green
+# Blue-Green Deployment
 
 1. **Name of Algorithm**  
-   Blue Green
+   Blue-Green Deployment
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements blue green algorithm.
+   Deploys new version alongside current version, then switches traffic to new version, enabling zero-downtime deployments and instant rollback.
 
 3. **Intuition (plain-language explanation)**  
-   Blue Green is a fundamental algorithm in computer science.
+   Like having two identical theaters: run show in blue theater, prepare new show in green theater, then switch audience to green when ready.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Current production environment (blue), new application version, traffic routing configuration.  
+   - Output: Deployed new version with zero downtime and rollback capability.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Deploy new version to green environment (parallel to blue).
+2. Run smoke tests on green environment.
+3. Switch traffic routing from blue to green.
+4. Monitor green environment for issues.
+5. If problems detected, route traffic back to blue (instant rollback).
+6. Keep blue as backup or decommission after validation period.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Blue Green applied to sample data.
+   Deploy v2.0 to green servers while v1.0 runs on blue. Test green, then update load balancer to route traffic to green. If errors occur, revert to blue.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(1) for traffic switch (instantaneous).  
+   - Space: O(2n) for maintaining two full environments simultaneously.
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Zero-downtime deployments.
+- Instant rollback capability.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Requires double infrastructure capacity.
+- Database migration complexity.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Canary Deployment, Rolling Deployment, Recreate Deployment
 
 11. **30-second explanation (your own words)**  
-    Blue Green solves computational problems efficiently.
+    Maintains two identical production environments (blue and green), deploying new version to one while the other serves traffic, then switching instantly.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

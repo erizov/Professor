@@ -4,37 +4,42 @@
    Mocking
 
 2. **What problem does it solve? (1 sentence)**  
-   Implements mocking algorithm.
+   Replaces real dependencies with fake implementations during testing to isolate the unit under test and control test behavior.
 
 3. **Intuition (plain-language explanation)**  
-   Mocking is a fundamental algorithm in computer science.
+   Like using a stunt double in movies: replace real actors (dependencies) with stand-ins (mocks) to test scenes (units) in isolation.
 
 4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+   - Input: Unit under test, dependencies to mock, expected behaviors and return values.  
+   - Output: Isolated unit tests with controlled dependency behavior.
 
 5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+1. Identify external dependencies (databases, APIs, services).
+2. Create mock objects that implement dependency interfaces.
+3. Configure mock behavior (return values, exceptions, call counts).
+4. Inject mocks into unit under test.
+5. Execute test and verify interactions with mocks.
+6. Assert expected calls and behaviors occurred.
 
 6. **Tiny example (hand-simulated)**  
-   Example: Mocking applied to sample data.
+   Test user service: mock database to return fake user data, mock email service to verify email sent, test user creation logic in isolation.
 
 7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: Varies
+   - Time: O(1) for mock setup and execution (faster than real dependencies).  
+   - Space: O(1) for mock objects (minimal memory overhead).
 
 8. **Strengths**  
-- Efficient for specific use cases
+- Enables fast, isolated unit testing.
+- Removes dependency on external systems.
 
 9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
+- Mocks may not reflect real dependency behavior.
+- Over-mocking can make tests brittle.
 
 10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+    Alternatives: Stubs, Fakes, Test Doubles, Dependency Injection
 
 11. **30-second explanation (your own words)**  
-    Mocking solves computational problems efficiently.
+    Uses fake implementations of dependencies to isolate units under test, enabling fast, controlled testing without external systems.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
