@@ -20,11 +20,9 @@ class TestOpenaddressing(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_01.lecture_08_hash_tables.open_addressing.algorithm import (
-            open_addressing,
-        )
+        from semester_01.lecture_08_hash_tables.open_addressing.algorithm import HashTableOpenAddressing
 
-        self.algorithm = open_addressing
+        self.algorithm = HashTableOpenAddressing
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
