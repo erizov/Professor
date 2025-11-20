@@ -20,11 +20,9 @@ class TestSha256(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_04.lecture_18_crypto_algorithms.sha256.algorithm import (
-            right_rotate,
-        )
+        from semester_04.lecture_18_crypto_algorithms.sha256.algorithm import SHA256
 
-        self.algorithm = right_rotate
+        self.algorithm = SHA256
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
