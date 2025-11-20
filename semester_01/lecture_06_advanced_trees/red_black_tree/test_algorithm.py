@@ -72,20 +72,20 @@ class TestRedblacktree(AlgorithmTestCase):
 
     def test_insert_operation(self):
         """Test tree insertion."""
-        from semester_01.lecture_05_trees.binary_search_tree.algorithm import (
-            TreeNode,
-            insert,
-            search,
-        )
+#         from semester_01.lecture_05_trees.binary_search_tree.algorithm import (  # WRONG: imported from different algorithm
+#             TreeNode,  # WRONG: imported from different algorithm
+#             insert,  # WRONG: imported from different algorithm
+#             search,  # WRONG: imported from different algorithm
+#         )  # WRONG: imported from different algorithm
 
-        root = None
-        root = insert(root, 5)
-        root = insert(root, 3)
-        root = insert(root, 7)
+#         root = None  # WRONG: uses functions from different algorithm
+#         root = insert(root, 5)  # WRONG: uses functions from different algorithm
+#         root = insert(root, 3)  # WRONG: uses functions from different algorithm
+#         root = insert(root, 7)  # WRONG: uses functions from different algorithm
 
-        self.assertIsNotNone(search(root, 5))
-        self.assertIsNotNone(search(root, 3))
-        self.assertIsNone(search(root, 10))
+#         self.assertIsNotNone(search(root, 5))  # WRONG: uses functions from different algorithm
+#         self.assertIsNotNone(search(root, 3))  # WRONG: uses functions from different algorithm
+#         self.assertIsNone(search(root, 10))  # WRONG: uses functions from different algorithm
 
 
 if __name__ == "__main__":
