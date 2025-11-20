@@ -20,11 +20,9 @@ class TestPublishsubscribe(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_03.lecture_13_integration_patterns.publish_subscribe.algorithm import (
-            update,
-        )
+        from semester_03.lecture_13_integration_patterns.publish_subscribe.algorithm import PubSub
 
-        self.algorithm = update
+        self.algorithm = PubSub
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
