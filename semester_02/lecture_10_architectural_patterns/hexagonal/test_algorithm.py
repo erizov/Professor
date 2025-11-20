@@ -20,11 +20,9 @@ class TestHexagonal(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_10_architectural_patterns.hexagonal.algorithm import (
-            hexagonal,
-        )
+        from semester_02.lecture_10_architectural_patterns.hexagonal.algorithm import HexagonalArchitecture
 
-        self.algorithm = hexagonal
+        self.algorithm = HexagonalArchitecture
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
