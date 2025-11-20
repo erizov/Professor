@@ -20,11 +20,9 @@ class TestCleanarchitecture(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_10_architectural_patterns.clean_architecture.algorithm import (
-            clean_architecture,
-        )
+        from semester_02.lecture_10_architectural_patterns.clean_architecture.algorithm import CleanArchitecture
 
-        self.algorithm = clean_architecture
+        self.algorithm = CleanArchitecture
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
