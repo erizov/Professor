@@ -20,11 +20,9 @@ class TestRepository(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_11_repository_patterns.repository.algorithm import (
-            repository,
-        )
+        from semester_02.lecture_11_repository_patterns.repository.algorithm import Repository
 
-        self.algorithm = repository
+        self.algorithm = Repository
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
