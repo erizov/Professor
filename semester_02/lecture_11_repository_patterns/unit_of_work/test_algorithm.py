@@ -20,11 +20,9 @@ class TestUnitofwork(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_11_repository_patterns.unit_of_work.algorithm import (
-            unit_of_work,
-        )
+        from semester_02.lecture_11_repository_patterns.unit_of_work.algorithm import UnitOfWork
 
-        self.algorithm = unit_of_work
+        self.algorithm = UnitOfWork
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
