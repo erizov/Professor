@@ -20,11 +20,9 @@ class TestDependencyinversion(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_06_solid_principles.dependency_inversion.algorithm import (
-            connect,
-        )
+        from semester_02.lecture_06_solid_principles.dependency_inversion.algorithm import DependencyInversion
 
-        self.algorithm = connect
+        self.algorithm = DependencyInversion
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
