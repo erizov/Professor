@@ -20,11 +20,9 @@ class TestFibonacci(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_01.lecture_11_dynamic_programming.fibonacci.algorithm import (
-            fibonacci_naive,
-        )
+        from semester_01.lecture_11_dynamic_programming.fibonacci.algorithm import fibonacci
 
-        self.algorithm = fibonacci_naive
+        self.algorithm = fibonacci
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
