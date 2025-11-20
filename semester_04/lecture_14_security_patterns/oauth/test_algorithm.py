@@ -20,11 +20,9 @@ class TestOauth(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_04.lecture_14_security_patterns.oauth.algorithm import (
-            __post_init__,
-        )
+        from semester_04.lecture_14_security_patterns.oauth.algorithm import OAuth
 
-        self.algorithm = __post_init__
+        self.algorithm = OAuth
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
