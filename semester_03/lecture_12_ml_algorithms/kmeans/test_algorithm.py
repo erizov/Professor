@@ -20,11 +20,9 @@ class TestKmeans(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_03.lecture_12_ml_algorithms.kmeans.algorithm import (
-            euclidean_distance,
-        )
+        from semester_03.lecture_12_ml_algorithms.kmeans.algorithm import kmeans
 
-        self.algorithm = euclidean_distance
+        self.algorithm = kmeans
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
