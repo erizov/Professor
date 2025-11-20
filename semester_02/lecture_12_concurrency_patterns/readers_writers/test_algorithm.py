@@ -20,11 +20,9 @@ class TestReaderswriters(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_12_concurrency_patterns.readers_writers.algorithm import (
-            readers_writers,
-        )
+        from semester_02.lecture_12_concurrency_patterns.readers_writers.algorithm import ReadersWriters
 
-        self.algorithm = readers_writers
+        self.algorithm = ReadersWriters
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
