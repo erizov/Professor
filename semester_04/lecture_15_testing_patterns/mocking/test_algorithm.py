@@ -20,11 +20,9 @@ class TestMocking(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_04.lecture_15_testing_patterns.mocking.algorithm import (
-            process_payment,
-        )
+        from semester_04.lecture_15_testing_patterns.mocking.algorithm import Mocking
 
-        self.algorithm = process_payment
+        self.algorithm = Mocking
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
