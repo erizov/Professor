@@ -20,11 +20,9 @@ class TestOpenclosed(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_06_solid_principles.open_closed.algorithm import (
-            calculate_area,
-        )
+        from semester_02.lecture_06_solid_principles.open_closed.algorithm import OpenClosed
 
-        self.algorithm = calculate_area
+        self.algorithm = OpenClosed
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
