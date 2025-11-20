@@ -20,11 +20,9 @@ class TestProducerconsumer(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_12_concurrency_patterns.producer_consumer.algorithm import (
-            producer_consumer,
-        )
+        from semester_02.lecture_12_concurrency_patterns.producer_consumer.algorithm import ProducerConsumer
 
-        self.algorithm = producer_consumer
+        self.algorithm = ProducerConsumer
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
