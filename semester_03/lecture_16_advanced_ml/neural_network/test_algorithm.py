@@ -20,11 +20,9 @@ class TestNeuralnetwork(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_03.lecture_16_advanced_ml.neural_network.algorithm import (
-            neural_network,
-        )
+        from semester_03.lecture_16_advanced_ml.neural_network.algorithm import NeuralNetwork
 
-        self.algorithm = neural_network
+        self.algorithm = NeuralNetwork
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
