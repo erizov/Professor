@@ -20,11 +20,9 @@ class TestKnn(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_03.lecture_12_ml_algorithms.knn.algorithm import (
-            euclidean_distance,
-        )
+        from semester_03.lecture_12_ml_algorithms.knn.algorithm import knn
 
-        self.algorithm = euclidean_distance
+        self.algorithm = knn
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
