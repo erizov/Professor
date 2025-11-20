@@ -20,9 +20,9 @@ class TestHashtable(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_01.lecture_08_hash_tables.hash_table.algorithm import __init__
+        from semester_01.lecture_08_hash_tables.hash_table.algorithm import HashTable
 
-        self.algorithm = __init__
+        self.algorithm = HashTable
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

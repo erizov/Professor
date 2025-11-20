@@ -20,9 +20,9 @@ class TestNaivebayes(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_03.lecture_12_ml_algorithms.naive_bayes.algorithm import __init__
+        from semester_03.lecture_12_ml_algorithms.naive_bayes.algorithm import naive_bayes
 
-        self.algorithm = __init__
+        self.algorithm = naive_bayes
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

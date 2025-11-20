@@ -20,9 +20,9 @@ class TestBinaryheap(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_01.lecture_07_heaps_priority.binary_heap.algorithm import __init__
+        from semester_01.lecture_07_heaps_priority.binary_heap.algorithm import BinaryHeap
 
-        self.algorithm = __init__
+        self.algorithm = BinaryHeap
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

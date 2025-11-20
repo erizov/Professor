@@ -20,9 +20,9 @@ class TestHuffman(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_03.lecture_15_greedy_algorithms.huffman.algorithm import __init__
+        from semester_03.lecture_15_greedy_algorithms.huffman.algorithm import HuffmanNode
 
-        self.algorithm = __init__
+        self.algorithm = HuffmanNode
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

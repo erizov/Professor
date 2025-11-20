@@ -20,9 +20,9 @@ class TestKmeans(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_03.lecture_13_clustering.k_means.algorithm import __init__
+        from semester_03.lecture_13_clustering.k_means.algorithm import k_means
 
-        self.algorithm = __init__
+        self.algorithm = k_means
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

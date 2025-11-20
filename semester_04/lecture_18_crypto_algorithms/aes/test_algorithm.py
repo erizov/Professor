@@ -20,9 +20,9 @@ class TestAes(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_04.lecture_18_crypto_algorithms.aes.algorithm import __init__
+        from semester_04.lecture_18_crypto_algorithms.aes.algorithm import AES
 
-        self.algorithm = __init__
+        self.algorithm = AES
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

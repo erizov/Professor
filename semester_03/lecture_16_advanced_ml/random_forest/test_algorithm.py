@@ -20,9 +20,9 @@ class TestRandomforest(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_03.lecture_16_advanced_ml.random_forest.algorithm import __init__
+        from semester_03.lecture_16_advanced_ml.random_forest.algorithm import RandomForest
 
-        self.algorithm = __init__
+        self.algorithm = RandomForest
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

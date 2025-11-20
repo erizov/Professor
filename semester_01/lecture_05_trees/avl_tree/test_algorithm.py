@@ -20,9 +20,9 @@ class TestAvltree(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_01.lecture_05_trees.avl_tree.algorithm import __init__
+        from semester_01.lecture_05_trees.avl_tree.algorithm import AVLTree
 
-        self.algorithm = __init__
+        self.algorithm = AVLTree
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

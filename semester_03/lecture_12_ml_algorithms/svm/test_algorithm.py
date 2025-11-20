@@ -20,9 +20,9 @@ class TestSvm(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_03.lecture_12_ml_algorithms.svm.algorithm import __init__
+        from semester_03.lecture_12_ml_algorithms.svm.algorithm import svm
 
-        self.algorithm = __init__
+        self.algorithm = svm
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

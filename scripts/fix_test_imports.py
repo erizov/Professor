@@ -49,6 +49,30 @@ def get_import_errors() -> List[Tuple[str, str]]:
     conn.close()
     return failures
 
+def find_all_test_files_with_import_issues() -> List[Tuple[Path, Path]]:
+    """Find all test files that might have import issues by scanning files."""
+    test_files = []
+    
+    # Find all test_algorithm.py files
+    for test_file in ROOT.rglob("test_algorithm.py"):
+        algo_dir = test_file.parent
+        algo_file = algo_dir / "algorithm.py"
+        
+        if algo_file.exists():
+            # Check if test file imports __init__
+            try:
+                content = test_file.read_text(encoding='utf-8')
+                algo_rel_path = algo_file.relative_to(ROOT)
+                algo_module = str(algo_rel_path.with_suffix('')).replace('\\', '.').replace('/', '.')
+                
+                # Check for __init__ import
+                if f'import __init__' in content and algo_module in content:
+                    test_files.append((test_file, algo_file))
+            except Exception:
+                pass
+    
+    return test_files
+
 
 def find_algorithm_file(algo_path: str) -> Optional[Path]:
     """Find the algorithm.py file for a given path."""
@@ -236,30 +260,40 @@ def fix_test_imports(test_file: Path, algorithm_file: Path) -> bool:
 
 def main():
     """Main function to fix import errors."""
-    import_errors = get_import_errors()
-    print(f"Found {len(import_errors)} algorithms with import errors")
+    # First, try to find files by scanning
+    print("Scanning for test files with import issues...")
+    test_files = find_all_test_files_with_import_issues()
+    print(f"Found {len(test_files)} test files with potential __init__ imports")
     
     fixed_count = 0
     skipped_count = 0
     
-    for algo_path, error_text in import_errors:  # Process all
+    for test_file, algorithm_file in test_files:
+        if fix_test_imports(test_file, algorithm_file):
+            fixed_count += 1
+            print(f"Fixed: {test_file.relative_to(ROOT)}")
+        else:
+            skipped_count += 1
+    
+    # Also try from database
+    print("\nChecking database for import errors...")
+    import_errors = get_import_errors()
+    print(f"Found {len(import_errors)} algorithms with import errors in database")
+    
+    db_fixed = 0
+    for algo_path, error_text in import_errors:
         algorithm_file = find_algorithm_file(algo_path)
         test_file = find_test_file(algo_path)
         
         if not algorithm_file or not test_file:
-            print(f"Skipping {algo_path}: files not found")
-            skipped_count += 1
             continue
         
         if fix_test_imports(test_file, algorithm_file):
-            print(f"Fixed: {algo_path}")
-            fixed_count += 1
-        else:
-            print(f"Could not fix: {algo_path}")
-            skipped_count += 1
+            db_fixed += 1
+            print(f"Fixed (from DB): {algo_path}")
     
-    print(f"\nFixed: {fixed_count}")
-    print(f"Skipped: {skipped_count}")
+    print(f"\nTotal Fixed: {fixed_count + db_fixed}")
+    print(f"Skipped/Could not fix: {skipped_count}")
 
 
 if __name__ == "__main__":
