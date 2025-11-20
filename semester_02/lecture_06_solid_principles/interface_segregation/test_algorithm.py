@@ -20,11 +20,9 @@ class TestInterfacesegregation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_06_solid_principles.interface_segregation.algorithm import (
-            interface_segregation,
-        )
+        from semester_02.lecture_06_solid_principles.interface_segregation.algorithm import InterfaceSegregation
 
-        self.algorithm = interface_segregation
+        self.algorithm = InterfaceSegregation
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
