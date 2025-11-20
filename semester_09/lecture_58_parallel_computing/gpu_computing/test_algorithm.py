@@ -20,11 +20,9 @@ class TestGpucomputing(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_58_parallel_computing.gpu_computing.algorithm import (
-            gpu_computing,
-        )
+        from semester_09.lecture_58_parallel_computing.gpu_computing.algorithm import GPUComputing
 
-        self.algorithm = gpu_computing
+        self.algorithm = GPUComputing
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

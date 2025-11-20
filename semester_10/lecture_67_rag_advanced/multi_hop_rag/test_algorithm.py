@@ -20,11 +20,9 @@ class TestMultihoprag(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_67_rag_advanced.multi_hop_rag.algorithm import (
-            multi_hop_rag,
-        )
+        from semester_10.lecture_67_rag_advanced.multi_hop_rag.algorithm import MultiHopRAG
 
-        self.algorithm = multi_hop_rag
+        self.algorithm = MultiHopRAG
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

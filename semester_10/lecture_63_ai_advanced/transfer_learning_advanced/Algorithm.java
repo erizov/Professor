@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_10.lecture_63_ai_advanced.transfer_learning_advanced;
  * Transfer Learning Advanced implementation.
  */
 public class Algorithm {

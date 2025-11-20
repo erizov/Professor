@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_11.lecture_74_automation_advanced.auto_scaling_advanced;
  * Auto Scaling Advanced implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int update_metrics(Object cpu, Object memory, Object requests_per_sec) {
         logger.info("Executing update_metrics");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

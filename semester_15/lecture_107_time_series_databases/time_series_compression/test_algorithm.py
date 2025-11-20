@@ -20,11 +20,9 @@ class TestTimeseriescompression(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_107_time_series_databases.time_series_compression.algorithm import (
-            time_series_compression,
-        )
+        from semester_15.lecture_107_time_series_databases.time_series_compression.algorithm import TimeSeriesCompression
 
-        self.algorithm = time_series_compression
+        self.algorithm = TimeSeriesCompression
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

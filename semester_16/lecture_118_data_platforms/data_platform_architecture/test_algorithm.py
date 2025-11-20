@@ -20,11 +20,9 @@ class TestDataplatformarchitecture(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_118_data_platforms.data_platform_architecture.algorithm import (
-            data_platform_architecture,
-        )
+        from semester_16.lecture_118_data_platforms.data_platform_architecture.algorithm import DataPlatform
 
-        self.algorithm = data_platform_architecture
+        self.algorithm = DataPlatform
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

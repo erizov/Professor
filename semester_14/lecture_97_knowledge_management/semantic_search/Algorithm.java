@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_14.lecture_97_knowledge_management.semantic_search;
  * Semantic Search implementation.
  */
 public class Algorithm {
@@ -33,7 +34,7 @@ public class Algorithm {
      */
     public int similarity(String doc1_id, String doc2_id) {
         logger.info("Executing similarity");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

@@ -20,11 +20,9 @@ class TestMigrationtesting(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_110_database_migration.migration_testing.algorithm import (
-            migration_testing,
-        )
+        from semester_15.lecture_110_database_migration.migration_testing.algorithm import MigrationTesting
 
-        self.algorithm = migration_testing
+        self.algorithm = MigrationTesting
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

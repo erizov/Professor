@@ -20,11 +20,9 @@ class TestLlmcompression(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_64_llm_architecture_advanced.llm_compression.algorithm import (
-            llm_compression,
-        )
+        from semester_10.lecture_64_llm_architecture_advanced.llm_compression.algorithm import LLMCompression
 
-        self.algorithm = llm_compression
+        self.algorithm = LLMCompression
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

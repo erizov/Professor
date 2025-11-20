@@ -20,11 +20,9 @@ class TestKnowledgebase(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_47_support_systems.knowledge_base.algorithm import (
-            knowledge_base,
-        )
+        from semester_08.lecture_47_support_systems.knowledge_base.algorithm import KnowledgeBase
 
-        self.algorithm = knowledge_base
+        self.algorithm = KnowledgeBase
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

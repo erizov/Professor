@@ -20,11 +20,9 @@ class TestMultistagepipelines(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_71_cicd_advanced.multi_stage_pipelines.algorithm import (
-            multi_stage_pipelines,
-        )
+        from semester_11.lecture_71_cicd_advanced.multi_stage_pipelines.algorithm import MultiStagePipeline
 
-        self.algorithm = multi_stage_pipelines
+        self.algorithm = MultiStagePipeline
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

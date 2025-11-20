@@ -20,11 +20,9 @@ class TestCrosschainbridges(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_92_blockchain_interoperability.cross_chain_bridges.algorithm import (
-            cross_chain_bridges,
-        )
+        from semester_13.lecture_92_blockchain_interoperability.cross_chain_bridges.algorithm import CrossChainBridge
 
-        self.algorithm = cross_chain_bridges
+        self.algorithm = CrossChainBridge
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

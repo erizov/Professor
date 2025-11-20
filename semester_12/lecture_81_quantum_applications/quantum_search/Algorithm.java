@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_12.lecture_81_quantum_applications.quantum_search;
  * Quantum Search implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int grover_search(Object target, List<Object> dataset) {
         logger.info("Executing grover_search");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int amplitude_amplification(Object marked_states, Object n_qubits) {
         logger.info("Executing amplitude_amplification");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

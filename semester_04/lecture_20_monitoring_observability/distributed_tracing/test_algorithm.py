@@ -20,11 +20,9 @@ class TestDistributedtracing(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_04.lecture_20_monitoring_observability.distributed_tracing.algorithm import (
-            distributed_tracing,
-        )
+        from semester_04.lecture_20_monitoring_observability.distributed_tracing.algorithm import DistributedTracing
 
-        self.algorithm = distributed_tracing
+        self.algorithm = DistributedTracing
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_10.lecture_66_llm_inference.speculative_decoding;
  * Speculative Decoding implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int generate_draft(List<Object> prompt, Object length) {
         logger.info("Executing generate_draft");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int verify_tokens(List<Object> draft, List<Object> target) {
         logger.info("Executing verify_tokens");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

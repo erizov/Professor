@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_15.lecture_106_nosql_advanced_topics.nosql_aggregation;
  * Nosql Aggregation implementation.
  */
 public class Algorithm {
@@ -26,7 +27,7 @@ public class Algorithm {
     public List<Object> aggregate(String collection, List<Object> pipeline) {
         logger.info("Executing aggregate");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return new ArrayList<>();  // FIXME: Changed from Map to List
     }
 
     public static Algorithm create() {

@@ -20,11 +20,9 @@ class TestShoralgorithm(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_44_quantum_computing.shor_algorithm.algorithm import (
-            shor_algorithm,
-        )
+        from semester_07.lecture_44_quantum_computing.shor_algorithm.algorithm import ShorAlgorithm
 
-        self.algorithm = shor_algorithm
+        self.algorithm = ShorAlgorithm
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestServerlessarchitecture(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_61_cloud_native.serverless_architecture.algorithm import (
-            serverless_architecture,
-        )
+        from semester_09.lecture_61_cloud_native.serverless_architecture.algorithm import ServerlessArchitecture
 
-        self.algorithm = serverless_architecture
+        self.algorithm = ServerlessArchitecture
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

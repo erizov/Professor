@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_13.lecture_88_consensus_advanced.raft_blockchain;
  * Raft Blockchain implementation.
  */
 public class Algorithm {
@@ -27,7 +28,7 @@ public class Algorithm {
     public boolean append_entry(Object entry) {
         logger.info("Executing append_entry");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return false;  // FIXME: Changed from Map to boolean
     }
 
     /**

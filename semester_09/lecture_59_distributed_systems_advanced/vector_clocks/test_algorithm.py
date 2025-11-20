@@ -20,11 +20,9 @@ class TestVectorclocks(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_59_distributed_systems_advanced.vector_clocks.algorithm import (
-            vector_clocks,
-        )
+        from semester_09.lecture_59_distributed_systems_advanced.vector_clocks.algorithm import VectorClocks
 
-        self.algorithm = vector_clocks
+        self.algorithm = VectorClocks
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

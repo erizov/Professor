@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_13.lecture_87_blockchain_advanced.sharding_blockchain;
  * Sharding Blockchain implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int _get_shard(Object transaction) {
         logger.info("Executing _get_shard");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

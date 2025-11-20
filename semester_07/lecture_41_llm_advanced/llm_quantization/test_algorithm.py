@@ -20,11 +20,9 @@ class TestLlmquantization(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_41_llm_advanced.llm_quantization.algorithm import (
-            llm_quantization,
-        )
+        from semester_07.lecture_41_llm_advanced.llm_quantization.algorithm import LLMQuantization
 
-        self.algorithm = llm_quantization
+        self.algorithm = LLMQuantization
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

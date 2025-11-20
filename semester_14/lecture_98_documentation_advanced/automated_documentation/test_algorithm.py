@@ -20,11 +20,9 @@ class TestAutomateddocumentation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_98_documentation_advanced.automated_documentation.algorithm import (
-            automated_documentation,
-        )
+        from semester_14.lecture_98_documentation_advanced.automated_documentation.algorithm import AutomatedDocumentation
 
-        self.algorithm = automated_documentation
+        self.algorithm = AutomatedDocumentation
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

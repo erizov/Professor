@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_14.lecture_97_knowledge_management.knowledge_extraction;
  * Knowledge Extraction implementation.
  */
 public class Algorithm {
@@ -18,7 +19,7 @@ public class Algorithm {
     public List<Object> extract_entities(String text) {
         logger.info("Executing extract_entities");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return new ArrayList<>();  // FIXME: Changed from Map to List
     }
 
     /**
@@ -27,7 +28,7 @@ public class Algorithm {
     public List<Object> extract_relations(String text, List<Object> entities) {
         logger.info("Executing extract_relations");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return new ArrayList<>();  // FIXME: Changed from Map to List
     }
 
     public static Algorithm create() {

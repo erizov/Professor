@@ -20,11 +20,9 @@ class TestEntityrelationship(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_54_data_modeling.entity_relationship.algorithm import (
-            entity_relationship,
-        )
+        from semester_08.lecture_54_data_modeling.entity_relationship.algorithm import EntityRelationship
 
-        self.algorithm = entity_relationship
+        self.algorithm = EntityRelationship
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

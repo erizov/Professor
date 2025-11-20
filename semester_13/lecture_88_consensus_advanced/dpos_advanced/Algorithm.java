@@ -2,6 +2,7 @@ import java.util.*;
 import java.util.logging.Logger;
 
 /**
+package semester_13.lecture_88_consensus_advanced.dpos_advanced;
  * Dpos Advanced implementation.
  */
     public static int dposadvanced(int n) {

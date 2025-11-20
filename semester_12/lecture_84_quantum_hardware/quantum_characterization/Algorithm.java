@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_12.lecture_84_quantum_hardware.quantum_characterization;
  * Quantum Characterization implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int measure(String observable, List<Object> state) {
         logger.info("Executing measure");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

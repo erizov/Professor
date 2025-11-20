@@ -20,11 +20,9 @@ class TestQuantization(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_33_model_optimization.quantization.algorithm import (
-            quantization,
-        )
+        from semester_06.lecture_33_model_optimization.quantization.algorithm import Quantization
 
-        self.algorithm = quantization
+        self.algorithm = Quantization
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

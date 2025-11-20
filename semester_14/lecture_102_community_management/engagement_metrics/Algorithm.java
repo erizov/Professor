@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_14.lecture_102_community_management.engagement_metrics;
  * Engagement Metrics implementation.
  */
 public class Algorithm {
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int get_engagement_score() {
         logger.info("Executing get_engagement_score");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

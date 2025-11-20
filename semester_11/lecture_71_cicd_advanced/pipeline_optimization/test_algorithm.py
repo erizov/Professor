@@ -20,11 +20,9 @@ class TestPipelineoptimization(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_71_cicd_advanced.pipeline_optimization.algorithm import (
-            pipeline_optimization,
-        )
+        from semester_11.lecture_71_cicd_advanced.pipeline_optimization.algorithm import PipelineOptimization
 
-        self.algorithm = pipeline_optimization
+        self.algorithm = PipelineOptimization
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

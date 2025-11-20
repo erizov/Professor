@@ -20,11 +20,9 @@ class TestBayesianoptimization(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_27_hyperparameter_optimization.bayesian_optimization.algorithm import (
-            bayesian_optimization,
-        )
+        from semester_05.lecture_27_hyperparameter_optimization.bayesian_optimization.algorithm import BayesianOptimization
 
-        self.algorithm = bayesian_optimization
+        self.algorithm = BayesianOptimization
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestTokenization(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_40_llm_fundamentals.tokenization.algorithm import (
-            tokenization,
-        )
+        from semester_07.lecture_40_llm_fundamentals.tokenization.algorithm import Tokenization
 
-        self.algorithm = tokenization
+        self.algorithm = Tokenization
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

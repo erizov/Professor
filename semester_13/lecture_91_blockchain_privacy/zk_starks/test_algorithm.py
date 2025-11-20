@@ -20,11 +20,9 @@ class TestZkstarks(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_91_blockchain_privacy.zk_starks.algorithm import (
-            zk_starks,
-        )
+        from semester_13.lecture_91_blockchain_privacy.zk_starks.algorithm import ZKSTARKs
 
-        self.algorithm = zk_starks
+        self.algorithm = ZKSTARKs
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

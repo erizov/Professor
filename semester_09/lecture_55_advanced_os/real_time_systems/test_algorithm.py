@@ -20,11 +20,9 @@ class TestRealtimesystems(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_55_advanced_os.real_time_systems.algorithm import (
-            real_time_systems,
-        )
+        from semester_09.lecture_55_advanced_os.real_time_systems.algorithm import RealTimeSystems
 
-        self.algorithm = real_time_systems
+        self.algorithm = RealTimeSystems
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

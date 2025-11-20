@@ -20,11 +20,9 @@ class TestDatabaseclustering(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_105_database_architecture.database_clustering.algorithm import (
-            database_clustering,
-        )
+        from semester_15.lecture_105_database_architecture.database_clustering.algorithm import DatabaseClustering
 
-        self.algorithm = database_clustering
+        self.algorithm = DatabaseClustering
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

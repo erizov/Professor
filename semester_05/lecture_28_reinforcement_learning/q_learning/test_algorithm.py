@@ -20,11 +20,9 @@ class TestQlearning(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_28_reinforcement_learning.q_learning.algorithm import (
-            q_learning,
-        )
+        from semester_05.lecture_28_reinforcement_learning.q_learning.algorithm import QLearning
 
-        self.algorithm = q_learning
+        self.algorithm = QLearning
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

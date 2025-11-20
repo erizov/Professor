@@ -20,11 +20,9 @@ class TestTransformeroptimization(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_64_llm_architecture_advanced.transformer_optimization.algorithm import (
-            transformer_optimization,
-        )
+        from semester_10.lecture_64_llm_architecture_advanced.transformer_optimization.algorithm import TransformerOptimization
 
-        self.algorithm = transformer_optimization
+        self.algorithm = TransformerOptimization
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

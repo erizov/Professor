@@ -20,11 +20,9 @@ class TestRollbackstrategies(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_110_database_migration.rollback_strategies.algorithm import (
-            rollback_strategies,
-        )
+        from semester_15.lecture_110_database_migration.rollback_strategies.algorithm import RollbackStrategies
 
-        self.algorithm = rollback_strategies
+        self.algorithm = RollbackStrategies
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

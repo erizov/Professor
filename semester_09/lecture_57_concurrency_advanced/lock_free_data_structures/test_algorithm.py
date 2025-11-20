@@ -20,11 +20,9 @@ class TestLockfreedatastructures(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_57_concurrency_advanced.lock_free_data_structures.algorithm import (
-            lock_free_data_structures,
-        )
+        from semester_09.lecture_57_concurrency_advanced.lock_free_data_structures.algorithm import LockFreeStack
 
-        self.algorithm = lock_free_data_structures
+        self.algorithm = LockFreeStack
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

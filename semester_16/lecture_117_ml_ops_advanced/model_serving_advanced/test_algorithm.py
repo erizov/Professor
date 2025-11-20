@@ -20,11 +20,9 @@ class TestModelservingadvanced(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_117_ml_ops_advanced.model_serving_advanced.algorithm import (
-            model_serving_advanced,
-        )
+        from semester_16.lecture_117_ml_ops_advanced.model_serving_advanced.algorithm import AdvancedModelServing
 
-        self.algorithm = model_serving_advanced
+        self.algorithm = AdvancedModelServing
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

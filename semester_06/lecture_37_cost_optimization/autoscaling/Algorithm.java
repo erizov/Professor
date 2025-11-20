@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_06.lecture_37_cost_optimization.autoscaling;
  * Autoscaling implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int update_metrics(Object cpu_usage, Object memory_usage) {
         logger.info("Executing update_metrics");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int get_current_instances() {
         logger.info("Executing get_current_instances");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

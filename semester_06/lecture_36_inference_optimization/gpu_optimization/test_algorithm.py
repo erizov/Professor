@@ -20,11 +20,9 @@ class TestGpuoptimization(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_36_inference_optimization.gpu_optimization.algorithm import (
-            gpu_optimization,
-        )
+        from semester_06.lecture_36_inference_optimization.gpu_optimization.algorithm import GPUOptimization
 
-        self.algorithm = gpu_optimization
+        self.algorithm = GPUOptimization
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestTensorparallelism(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_65_llm_training_advanced.tensor_parallelism.algorithm import (
-            tensor_parallelism,
-        )
+        from semester_10.lecture_65_llm_training_advanced.tensor_parallelism.algorithm import TensorParallelism
 
-        self.algorithm = tensor_parallelism
+        self.algorithm = TensorParallelism
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

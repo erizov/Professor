@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_10.lecture_67_rag_advanced.multi_hop_rag;
  * Multi Hop Rag implementation.
  */
 public class Algorithm {
@@ -27,7 +28,7 @@ public class Algorithm {
     public List<Object> retrieve(String query, Object hop) {
         logger.info("Executing retrieve");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return new ArrayList<>();  // FIXME: Changed from Map to List
     }
 
     /**

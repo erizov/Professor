@@ -20,11 +20,9 @@ class TestLendingprotocols(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_89_defi.lending_protocols.algorithm import (
-            lending_protocols,
-        )
+        from semester_13.lecture_89_defi.lending_protocols.algorithm import LendingProtocol
 
-        self.algorithm = lending_protocols
+        self.algorithm = LendingProtocol
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

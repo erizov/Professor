@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_10.lecture_63_ai_advanced.few_shot_learning_advanced;
  * Few Shot Learning Advanced implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int compute_prototype(String class_name) {
         logger.info("Executing compute_prototype");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

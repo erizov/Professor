@@ -20,11 +20,9 @@ class TestIncidentresponse(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_47_support_systems.incident_response.algorithm import (
-            incident_response,
-        )
+        from semester_08.lecture_47_support_systems.incident_response.algorithm import IncidentResponse
 
-        self.algorithm = incident_response
+        self.algorithm = IncidentResponse
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestGradientcheckpointing(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_65_llm_training_advanced.gradient_checkpointing.algorithm import (
-            gradient_checkpointing,
-        )
+        from semester_10.lecture_65_llm_training_advanced.gradient_checkpointing.algorithm import GradientCheckpointing
 
-        self.algorithm = gradient_checkpointing
+        self.algorithm = GradientCheckpointing
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

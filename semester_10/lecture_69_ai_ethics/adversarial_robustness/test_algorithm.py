@@ -20,11 +20,9 @@ class TestAdversarialrobustness(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_69_ai_ethics.adversarial_robustness.algorithm import (
-            adversarial_robustness,
-        )
+        from semester_10.lecture_69_ai_ethics.adversarial_robustness.algorithm import adversarial_robustness_training
 
-        self.algorithm = adversarial_robustness
+        self.algorithm = adversarial_robustness_training
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

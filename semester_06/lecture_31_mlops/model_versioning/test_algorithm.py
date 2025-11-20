@@ -20,11 +20,9 @@ class TestModelversioning(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_31_mlops.model_versioning.algorithm import (
-            model_versioning,
-        )
+        from semester_06.lecture_31_mlops.model_versioning.algorithm import ModelVersioning
 
-        self.algorithm = model_versioning
+        self.algorithm = ModelVersioning
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

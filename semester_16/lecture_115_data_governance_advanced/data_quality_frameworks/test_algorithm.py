@@ -20,11 +20,9 @@ class TestDataqualityframeworks(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_115_data_governance_advanced.data_quality_frameworks.algorithm import (
-            data_quality_frameworks,
-        )
+        from semester_16.lecture_115_data_governance_advanced.data_quality_frameworks.algorithm import DataQualityFramework
 
-        self.algorithm = data_quality_frameworks
+        self.algorithm = DataQualityFramework
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

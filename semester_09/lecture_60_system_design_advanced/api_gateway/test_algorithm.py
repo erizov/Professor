@@ -20,11 +20,9 @@ class TestApigateway(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_60_system_design_advanced.api_gateway.algorithm import (
-            api_gateway,
-        )
+        from semester_09.lecture_60_system_design_advanced.api_gateway.algorithm import APIGateway
 
-        self.algorithm = api_gateway
+        self.algorithm = APIGateway
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

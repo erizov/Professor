@@ -2,6 +2,7 @@ import java.util.*;
 import java.util.logging.Logger;
 
 /**
+package semester_15.lecture_108_graph_databases_advanced.graph_pattern_matching;
  * Graph Pattern Matching implementation.
  */
     public static List<Integer> graphpatternmatching(Map<Integer, List<Integer>> graph, int start) {

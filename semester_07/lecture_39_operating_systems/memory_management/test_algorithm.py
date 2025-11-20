@@ -20,11 +20,9 @@ class TestMemorymanagement(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_39_operating_systems.memory_management.algorithm import (
-            memory_management,
-        )
+        from semester_07.lecture_39_operating_systems.memory_management.algorithm import MemoryManager
 
-        self.algorithm = memory_management
+        self.algorithm = MemoryManager
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

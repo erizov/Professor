@@ -20,11 +20,9 @@ class TestRealtimeaggregation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_114_real_time_analytics.real_time_aggregation.algorithm import (
-            real_time_aggregation,
-        )
+        from semester_16.lecture_114_real_time_analytics.real_time_aggregation.algorithm import RealTimeAggregation
 
-        self.algorithm = real_time_aggregation
+        self.algorithm = RealTimeAggregation
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

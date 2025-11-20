@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_07.lecture_44_quantum_computing.quantum_entanglement;
  * Quantum Entanglement implementation.
  */
 public class Algorithm {
@@ -26,7 +27,7 @@ public class Algorithm {
      */
     public int measure_entangled(String pair_id, Object qubit_index) {
         logger.info("Executing measure_entangled");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -34,7 +35,7 @@ public class Algorithm {
      */
     public int verify_entanglement(String pair_id) {
         logger.info("Executing verify_entanglement");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

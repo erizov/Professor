@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_06.lecture_33_model_optimization.nas;
  * Nas implementation.
  */
 public class Algorithm {

@@ -20,11 +20,9 @@ class TestHotstuff(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_88_consensus_advanced.hotstuff.algorithm import (
-            hotstuff,
-        )
+        from semester_13.lecture_88_consensus_advanced.hotstuff.algorithm import HotStuff
 
-        self.algorithm = hotstuff
+        self.algorithm = HotStuff
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

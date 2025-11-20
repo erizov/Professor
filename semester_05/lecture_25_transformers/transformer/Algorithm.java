@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_05.lecture_25_transformers.transformer;
  * Transformer implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int forward(List<Object> input_ids) {
         logger.info("Executing forward");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int self_attention(List<Object> x) {
         logger.info("Executing self_attention");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

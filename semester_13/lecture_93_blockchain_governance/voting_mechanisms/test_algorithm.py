@@ -20,11 +20,9 @@ class TestVotingmechanisms(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_93_blockchain_governance.voting_mechanisms.algorithm import (
-            voting_mechanisms,
-        )
+        from semester_13.lecture_93_blockchain_governance.voting_mechanisms.algorithm import VotingMechanisms
 
-        self.algorithm = voting_mechanisms
+        self.algorithm = VotingMechanisms
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

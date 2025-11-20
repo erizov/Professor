@@ -1,4 +1,5 @@
 /**
+package semester_03.lecture_13_integration_patterns.publish_subscribe;
  * Publish-Subscribe (Pub-Sub) Pattern.
  * 
  * Decouples publishers from subscribers. Publishers send messages to
@@ -22,105 +23,176 @@ class Publisher {
     
     void publish(String topic, Object message) {
         broker.publish(topic, message);
+                        public static void main(String[] args) {
     }
-}
+    }
+        
+                        public void update(String topic, Object message) {
+                                            logger.info("PUBLISH-SUBSCRIBE (PUB-SUB) PATTERN DEMONSTRATION");
+                    System.out.printf("[Email to %s] Topic: %s, Message: %s%n",
+                                        }
+                                        logger.info("  - Microservices communication");
+                                    logger.info("");
+                        @Override
+                                                    logger.info(dash);
+                                            logger.info("Example 2: Event-driven Pub-Sub");
+                                            System.out.printf("Order handler: %s%n", event.data));
+                                    broker.subscribe("notifications", notifSub);
+        
+                                        logger.info("  - Dynamic subscription");
+                                                logger.info("  - Event-driven architecture");
+                                    void publish(String topic, Object message) {
+                                    for (Subscriber subscriber : subscribers.get(topic)) {
+                    }
+                                            logger.info("  - Multiple subscribers per topic");
+                EmailSubscriber(String email) {
+        
+                    @Override
+            class EmailSubscriber implements Subscriber {
+                                    logger.info("\nKey Advantages:");
+                                    LogSubscriber logSub = new LogSubscriber();
+                            }
+                class Event {
+    
+                                        eventBus.subscribe("user.registered", event ->
+                                        logger.info(separator);
+    
+                        if (subscribers.containsKey(topic)) {
+                                eventBus.publish(new Event("user.registered", "User: alice"));
+        
+                    notifications.add(new String[]{topic, message.toString()});
+    
+                        @Override
+                            subscribers.get(topic).add(subscriber);
+                                    MessageBroker broker = new MessageBroker();
+            public void update(String topic, Object message) {
+                                logger.info("  Decouples publishers from subscribers.");
+                    System.out.printf("[LOG] %s: %s%n", topic, message);
+                                    broker.subscribe("orders", logSub);
+                                logger.info("Publishing messages:");
+                    }
+            class LogSubscriber implements Subscriber {
+                                    logger.info(separator);
+                messages.add(new String[]{topic, message.toString()});
+                this.userId = userId;
+            private final Object lock = new Object();
+                synchronized (lock) {
+        
+                            logger.info("\nWhen to Use:");
+                                Object data;
+                                        logger.info("\nPattern Summary:");
+                                    Publisher publisher = new Publisher(broker);
+                                        broker.subscribe("orders", emailSub);
+                                    NotificationSubscriber notifSub = new NotificationSubscriber("user123");
 
+                private final String email;
+        
+                        }
+                    void subscribe(String eventType, java.util.function.Consumer<Event> handler) {
+                    synchronized (lock) {
+                                    EmailSubscriber emailSub = new EmailSubscriber("user@example.com");
+                private final List<String[]> logs = new ArrayList<>();
+        
+                    }
+            }
+                        }
+                                long endTime = System.nanoTime();
+                                logger.info("\nIntent:");
+                                logger.info("  Publishers send messages to topics without knowing subscribers.");
+    
+                            logger.info(dash);
+                            logger.info(separator);
+                        }
+        
+                                        long startTime = System.nanoTime();
+                            subscribers.computeIfAbsent(topic, k -> new ArrayList<>());
+
+                                    eventBus.subscribe("order.created", event ->
+            private final List<String[]> messages = new ArrayList<>();
+                }
+                                            publisher.publish("notifications", "User logged in");
+                                        String separator = "=".repeat(70);
+                }
+                                    System.out.printf("User handler: %s%n", event.data));
+                this.email = email;
+                        handlers.get(eventType).add(handler);
+                                // Example 1: Basic Pub-Sub
+
+        
+                            logger.info("  - Real-time notifications");
+                                     email, topic, message);
+            public void update(String topic, Object message) {
+                    logs.add(new String[]{topic, message.toString()});
+        
+                                    logger.info("");
+                    if (subscribers.containsKey(topic)) {
+            }
+                                broker.subscribe("notifications", logSub);
+                                publisher.publish("orders", "New order #1001");
+                            logger.info(separator);
+                            logger.info("  - Scalable");
+                handlers.computeIfAbsent(eventType, k -> new ArrayList<>());
+                            subscriber.update(topic, message);
+                                logger.info("Publishing events:");
+                            }
+            void unsubscribe(String topic, Subscriber subscriber) {
+            synchronized (lock) {
+                            String dash = "-".repeat(70);
+        void subscribe(String topic, Subscriber subscriber) {
+                            logger.info("Example 1: Basic Publish-Subscribe");
+        
+                            logger.info("");
+                            // Example 2: Event-driven Pub-Sub
+                            EventBus eventBus = new EventBus();
+                            eventBus.publish(new Event("order.created", "Order #2001"));
+                            logger.info("  - Loose coupling");
+                         handlers.get(event.eventType)) {
+                        handler.accept(event);
+}
 class MessageBroker {
     private final Map<String, List<Subscriber>> subscribers = new ConcurrentHashMap<>();
     private final Object lock = new Object();
-    
-    void subscribe(String topic, Subscriber subscriber) {
         synchronized (lock) {
-            subscribers.computeIfAbsent(topic, k -> new ArrayList<>());
             if (!subscribers.get(topic).contains(subscriber)) {
-                subscribers.get(topic).add(subscriber);
             }
-        }
-    }
     
-    void unsubscribe(String topic, Subscriber subscriber) {
-        synchronized (lock) {
-            if (subscribers.containsKey(topic)) {
                 subscribers.get(topic).remove(subscriber);
-            }
+    
+    }
+    
+}
+        
+                        publisher.publish("orders", "Order #1001 shipped");
+                        System.out.printf("\nTotal time: %.3f ms%n",
+                                        (endTime - startTime) / 1_000_000.0);
+                    }
+        String eventType;
+        LocalDateTime timestamp;
+        Event(String eventType, Object data) {
+            this.eventType = eventType;
+            this.data = data;
+            this.timestamp = LocalDateTime.now();
         }
     }
-    
-    void publish(String topic, Object message) {
-        synchronized (lock) {
-            if (subscribers.containsKey(topic)) {
-                for (Subscriber subscriber : subscribers.get(topic)) {
-                    subscriber.update(topic, message);
-                }
-            }
-        }
-    }
-}
-
-class EmailSubscriber implements Subscriber {
-    private final String email;
-    private final List<String[]> messages = new ArrayList<>();
-    
-    EmailSubscriber(String email) {
-        this.email = email;
-    }
-    
-    @Override
-    public void update(String topic, Object message) {
-        messages.add(new String[]{topic, message.toString()});
-        System.out.printf("[Email to %s] Topic: %s, Message: %s%n",
-                         email, topic, message);
-    }
-}
-
-class LogSubscriber implements Subscriber {
-    private final List<String[]> logs = new ArrayList<>();
-    
-    @Override
-    public void update(String topic, Object message) {
-        logs.add(new String[]{topic, message.toString()});
-        System.out.printf("[LOG] %s: %s%n", topic, message);
-    }
-}
 
 class NotificationSubscriber implements Subscriber {
     private final String userId;
     private final List<String[]> notifications = new ArrayList<>();
     
     NotificationSubscriber(String userId) {
-        this.userId = userId;
     }
     
-    @Override
-    public void update(String topic, Object message) {
-        notifications.add(new String[]{topic, message.toString()});
         System.out.printf("[Notification to User %s] %s: %s%n",
                          userId, topic, message);
     }
 }
 
-class Event {
-    String eventType;
-    Object data;
-    LocalDateTime timestamp;
-    
-    Event(String eventType, Object data) {
-        this.eventType = eventType;
-        this.data = data;
-        this.timestamp = LocalDateTime.now();
-    }
-}
 
 class EventBus {
     private final Map<String, List<java.util.function.Consumer<Event>>> handlers =
         new ConcurrentHashMap<>();
-    private final Object lock = new Object();
     
-    void subscribe(String eventType, java.util.function.Consumer<Event> handler) {
-        synchronized (lock) {
-            handlers.computeIfAbsent(eventType, k -> new ArrayList<>());
             if (!handlers.get(eventType).contains(handler)) {
-                handlers.get(eventType).add(handler);
             }
         }
     }
@@ -129,86 +201,15 @@ class EventBus {
         synchronized (lock) {
             if (handlers.containsKey(event.eventType)) {
                 for (java.util.function.Consumer<Event> handler :
-                     handlers.get(event.eventType)) {
-                    handler.accept(event);
-                }
             }
         }
     }
+    public class Algorithm {
 }
 
 import java.time.LocalDateTime;
 
-public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
 
     
-    public static void main(String[] args) {
-        String separator = "=".repeat(70);
-        String dash = "-".repeat(70);
-        long startTime = System.nanoTime();
-        
-        logger.info(separator);
-        logger.info("PUBLISH-SUBSCRIBE (PUB-SUB) PATTERN DEMONSTRATION");
-        logger.info(separator);
-        logger.info("");
-        
-        // Example 1: Basic Pub-Sub
-        logger.info("Example 1: Basic Publish-Subscribe");
-        logger.info(dash);
-        
-        MessageBroker broker = new MessageBroker();
-        Publisher publisher = new Publisher(broker);
-        
-        EmailSubscriber emailSub = new EmailSubscriber("user@example.com");
-        LogSubscriber logSub = new LogSubscriber();
-        NotificationSubscriber notifSub = new NotificationSubscriber("user123");
-        
-        broker.subscribe("orders", emailSub);
-        broker.subscribe("orders", logSub);
-        broker.subscribe("notifications", notifSub);
-        broker.subscribe("notifications", logSub);
-        
-        logger.info("Publishing messages:");
-        publisher.publish("orders", "New order #1001");
-        publisher.publish("notifications", "User logged in");
-        publisher.publish("orders", "Order #1001 shipped");
-        logger.info("");
-        
-        // Example 2: Event-driven Pub-Sub
-        logger.info("Example 2: Event-driven Pub-Sub");
-        logger.info(dash);
-        
-        EventBus eventBus = new EventBus();
-        
-        eventBus.subscribe("order.created", event ->
-            System.out.printf("Order handler: %s%n", event.data));
-        eventBus.subscribe("user.registered", event ->
-            System.out.printf("User handler: %s%n", event.data));
-        
-        logger.info("Publishing events:");
-        eventBus.publish(new Event("order.created", "Order #2001"));
-        eventBus.publish(new Event("user.registered", "User: alice"));
-        logger.info("");
-        
-        long endTime = System.nanoTime();
-        
-        logger.info(separator);
-        logger.info("\nPattern Summary:");
-        logger.info("\nIntent:");
-        logger.info("  Decouples publishers from subscribers.");
-        logger.info("  Publishers send messages to topics without knowing subscribers.");
-        logger.info("\nKey Advantages:");
-        logger.info("  - Loose coupling");
-        logger.info("  - Scalable");
-        logger.info("  - Dynamic subscription");
-        logger.info("  - Multiple subscribers per topic");
-        logger.info("\nWhen to Use:");
-        logger.info("  - Event-driven architecture");
-        logger.info("  - Microservices communication");
-        logger.info("  - Real-time notifications");
-        logger.info(separator);
-        System.out.printf("\nTotal time: %.3f ms%n",
-                        (endTime - startTime) / 1_000_000.0);
-    }
 }

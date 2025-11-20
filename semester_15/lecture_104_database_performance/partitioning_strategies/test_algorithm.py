@@ -20,11 +20,9 @@ class TestPartitioningstrategies(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_104_database_performance.partitioning_strategies.algorithm import (
-            partitioning_strategies,
-        )
+        from semester_15.lecture_104_database_performance.partitioning_strategies.algorithm import PartitioningStrategies
 
-        self.algorithm = partitioning_strategies
+        self.algorithm = PartitioningStrategies
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

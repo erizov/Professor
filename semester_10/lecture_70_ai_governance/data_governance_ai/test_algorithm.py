@@ -20,11 +20,9 @@ class TestDatagovernanceai(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_70_ai_governance.data_governance_ai.algorithm import (
-            data_governance_ai,
-        )
+        from semester_10.lecture_70_ai_governance.data_governance_ai.algorithm import DataGovernanceAI
 
-        self.algorithm = data_governance_ai
+        self.algorithm = DataGovernanceAI
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

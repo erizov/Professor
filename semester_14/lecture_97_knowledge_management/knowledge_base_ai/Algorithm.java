@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_14.lecture_97_knowledge_management.knowledge_base_ai;
  * Knowledge Base Ai implementation.
  */
 public class Algorithm {
@@ -27,7 +28,7 @@ public class Algorithm {
     public List<Object> search(String query, Object top_k) {
         logger.info("Executing search");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return new ArrayList<>();  // FIXME: Changed from Map to List
     }
 
     public static Algorithm create() {

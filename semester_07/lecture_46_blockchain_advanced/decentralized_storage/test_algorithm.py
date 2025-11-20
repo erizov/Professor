@@ -20,11 +20,9 @@ class TestDecentralizedstorage(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_46_blockchain_advanced.decentralized_storage.algorithm import (
-            decentralized_storage,
-        )
+        from semester_07.lecture_46_blockchain_advanced.decentralized_storage.algorithm import DecentralizedStorage
 
-        self.algorithm = decentralized_storage
+        self.algorithm = DecentralizedStorage
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

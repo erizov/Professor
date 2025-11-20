@@ -20,11 +20,9 @@ class TestResiliencetesting(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_77_chaos_engineering_advanced.resilience_testing.algorithm import (
-            resilience_testing,
-        )
+        from semester_11.lecture_77_chaos_engineering_advanced.resilience_testing.algorithm import ResilienceTesting
 
-        self.algorithm = resilience_testing
+        self.algorithm = ResilienceTesting
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

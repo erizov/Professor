@@ -20,11 +20,9 @@ class TestApiexplorer(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_101_developer_experience.api_explorer.algorithm import (
-            api_explorer,
-        )
+        from semester_14.lecture_101_developer_experience.api_explorer.algorithm import APIExplorer
 
-        self.algorithm = api_explorer
+        self.algorithm = APIExplorer
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

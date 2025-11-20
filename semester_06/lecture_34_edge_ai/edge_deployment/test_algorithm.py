@@ -20,11 +20,9 @@ class TestEdgedeployment(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_34_edge_ai.edge_deployment.algorithm import (
-            edge_deployment,
-        )
+        from semester_06.lecture_34_edge_ai.edge_deployment.algorithm import EdgeDeployment
 
-        self.algorithm = edge_deployment
+        self.algorithm = EdgeDeployment
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

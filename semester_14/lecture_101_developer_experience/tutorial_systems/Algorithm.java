@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_14.lecture_101_developer_experience.tutorial_systems;
  * Tutorial Systems implementation.
  */
 public class Algorithm {

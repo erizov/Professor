@@ -20,11 +20,9 @@ class TestDatabasemonitoring(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_53_database_operations.database_monitoring.algorithm import (
-            database_monitoring,
-        )
+        from semester_08.lecture_53_database_operations.database_monitoring.algorithm import DatabaseMonitoring
 
-        self.algorithm = database_monitoring
+        self.algorithm = DatabaseMonitoring
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestMultimodalllms(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_64_llm_architecture_advanced.multimodal_llms.algorithm import (
-            multimodal_llms,
-        )
+        from semester_10.lecture_64_llm_architecture_advanced.multimodal_llms.algorithm import MultimodalLLM
 
-        self.algorithm = multimodal_llms
+        self.algorithm = MultimodalLLM
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

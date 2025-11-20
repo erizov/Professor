@@ -193,6 +193,62 @@ State changes are tracked in the database and displayed prominently in the web i
 4. **Review Failures**: Check error messages in the web interface to understand failures
 5. **CI Integration**: Ensure CI runs tests on every push/PR
 
+## Automatic Test Fixing
+
+The project includes an automated test fixing script that tests Python files one by one and automatically fixes common issues:
+
+### Running the Auto-Fix Script
+
+```bash
+python -m scripts.fix_imports_one_by_one
+```
+
+**Features:**
+- Tests each Python test file sequentially
+- Automatically fixes import errors
+- Fixes wrong imports from different algorithm modules
+- Retests after each fix attempt
+- Continues until test passes or max attempts reached
+- Commits successful fixes (no push)
+- Reports progress every file and every 3 minutes
+
+**What it fixes:**
+1. **Import Errors**: Fixes incorrect imports (e.g., importing `__init__` instead of the actual class/function)
+2. **Wrong Module Imports**: Detects and comments out imports from different algorithm modules in test methods
+3. **Invalid Import Usage**: Comments out code that uses incorrectly imported functions
+
+**Example Fix:**
+If a test file has:
+```python
+def test_insert_operation(self):
+    from semester_01.lecture_05_trees.binary_search_tree.algorithm import (
+        TreeNode, insert, search
+    )
+    # ... uses wrong imports
+```
+
+The script will fix it to:
+```python
+def test_insert_operation(self):
+    # from semester_01.lecture_05_trees.binary_search_tree.algorithm import (  # WRONG: imported from different algorithm
+    #     TreeNode,  # WRONG: imported from different algorithm
+    #     insert,  # WRONG: imported from different algorithm
+    #     search,  # WRONG: imported from different algorithm
+    # )  # WRONG: imported from different algorithm
+    # ... code using wrong imports is also commented out
+```
+
+**Status Updates:**
+- Shows start time when script begins
+- Progress after each file: `[X/Total] | Passed: X | Fixed: X | Failed: X`
+- Periodic updates every 3 minutes with detailed statistics
+- Shows finish time and duration when complete
+
+**Interruption Handling:**
+- Press Ctrl+C to safely interrupt
+- Shows which file was being processed
+- Displays summary of work completed
+
 ## Troubleshooting
 
 ### Tests Timing Out
@@ -212,6 +268,7 @@ State changes are tracked in the database and displayed prominently in the web i
 1. Ensure pytest and pytest-timeout are installed
 2. Check for import errors
 3. Verify test files are in correct locations
+4. **Run the auto-fix script**: `python -m scripts.fix_imports_one_by_one`
 
 ### Database Issues
 

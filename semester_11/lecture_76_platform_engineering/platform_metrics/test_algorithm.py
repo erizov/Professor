@@ -20,11 +20,9 @@ class TestPlatformmetrics(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_76_platform_engineering.platform_metrics.algorithm import (
-            platform_metrics,
-        )
+        from semester_11.lecture_76_platform_engineering.platform_metrics.algorithm import PlatformMetrics
 
-        self.algorithm = platform_metrics
+        self.algorithm = PlatformMetrics
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

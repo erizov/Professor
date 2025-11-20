@@ -20,11 +20,9 @@ class TestUnifieddataplatforms(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_118_data_platforms.unified_data_platforms.algorithm import (
-            unified_data_platforms,
-        )
+        from semester_16.lecture_118_data_platforms.unified_data_platforms.algorithm import UnifiedDataPlatform
 
-        self.algorithm = unified_data_platforms
+        self.algorithm = UnifiedDataPlatform
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

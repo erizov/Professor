@@ -20,11 +20,9 @@ class TestExokerneldesign(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_55_advanced_os.exokernel_design.algorithm import (
-            exokernel_design,
-        )
+        from semester_09.lecture_55_advanced_os.exokernel_design.algorithm import Exokernel
 
-        self.algorithm = exokernel_design
+        self.algorithm = Exokernel
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

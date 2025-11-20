@@ -20,11 +20,9 @@ class TestKeyvaluestores(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_51_nosql_fundamentals.key_value_stores.algorithm import (
-            key_value_stores,
-        )
+        from semester_08.lecture_51_nosql_fundamentals.key_value_stores.algorithm import KeyValueStore
 
-        self.algorithm = key_value_stores
+        self.algorithm = KeyValueStore
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

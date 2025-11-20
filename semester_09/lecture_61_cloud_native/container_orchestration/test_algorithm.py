@@ -20,11 +20,9 @@ class TestContainerorchestration(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_61_cloud_native.container_orchestration.algorithm import (
-            container_orchestration,
-        )
+        from semester_09.lecture_61_cloud_native.container_orchestration.algorithm import ContainerOrchestrator
 
-        self.algorithm = container_orchestration
+        self.algorithm = ContainerOrchestrator
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

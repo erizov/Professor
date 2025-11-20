@@ -20,11 +20,9 @@ class TestRealtimedashboards(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_114_real_time_analytics.real_time_dashboards.algorithm import (
-            real_time_dashboards,
-        )
+        from semester_16.lecture_114_real_time_analytics.real_time_dashboards.algorithm import RealTimeDashboards
 
-        self.algorithm = real_time_dashboards
+        self.algorithm = RealTimeDashboards
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

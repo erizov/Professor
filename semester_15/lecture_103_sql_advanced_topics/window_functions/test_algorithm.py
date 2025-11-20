@@ -20,11 +20,9 @@ class TestWindowfunctions(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_103_sql_advanced_topics.window_functions.algorithm import (
-            window_functions,
-        )
+        from semester_15.lecture_103_sql_advanced_topics.window_functions.algorithm import WindowFunctions
 
-        self.algorithm = window_functions
+        self.algorithm = WindowFunctions
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

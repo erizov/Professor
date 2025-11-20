@@ -20,11 +20,9 @@ class TestLifelonglearning(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_63_ai_advanced.lifelong_learning.algorithm import (
-            lifelong_learning,
-        )
+        from semester_10.lecture_63_ai_advanced.lifelong_learning.algorithm import LifelongLearning
 
-        self.algorithm = lifelong_learning
+        self.algorithm = LifelongLearning
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

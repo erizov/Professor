@@ -20,11 +20,9 @@ class TestEditdistance(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_03.lecture_11_dynamic_programming.edit_distance.algorithm import (
-            main,
-        )
+        from semester_03.lecture_11_dynamic_programming.edit_distance.algorithm import edit_distance
 
-        self.algorithm = main
+        self.algorithm = edit_distance
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
@@ -69,22 +67,22 @@ class TestEditdistance(AlgorithmTestCase):
     def test_performance(self):
         """Test algorithm performance."""
         # TODO: Add performance test
-        # self.assert_performance(lambda: self.algorithm([...]), max_time_seconds=1.0)
+        # self.assert_performance(lambda: self.algorithm([...], ""), max_time_seconds=1.0)
         pass
 
     def test_small_input(self):
         """Test with small input."""
-        result = self.algorithm(1)
+        result = self.algorithm(1, "")
         self.assertEqual(result, 1)
 
     def test_zero_input(self):
         """Test with zero input."""
-        result = self.algorithm(0)
+        result = self.algorithm(0, "")
         self.assertEqual(result, 0)
 
     def test_large_input(self):
         """Test with large input."""
-        result = self.algorithm(100)
+        result = self.algorithm(100, "")
         self.assertIsNotNone(result)
         self.assertGreater(result, 0)
 

@@ -20,11 +20,9 @@ class TestGamedayexercises(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_77_chaos_engineering_advanced.game_day_exercises.algorithm import (
-            game_day_exercises,
-        )
+        from semester_11.lecture_77_chaos_engineering_advanced.game_day_exercises.algorithm import GameDayExercise
 
-        self.algorithm = game_day_exercises
+        self.algorithm = GameDayExercise
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestTransactionalmemory(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_57_concurrency_advanced.transactional_memory.algorithm import (
-            transactional_memory,
-        )
+        from semester_09.lecture_57_concurrency_advanced.transactional_memory.algorithm import TransactionalMemory
 
-        self.algorithm = transactional_memory
+        self.algorithm = TransactionalMemory
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

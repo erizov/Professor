@@ -20,11 +20,9 @@ class TestNosqlquerying(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_51_nosql_fundamentals.nosql_querying.algorithm import (
-            nosql_querying,
-        )
+        from semester_08.lecture_51_nosql_fundamentals.nosql_querying.algorithm import NoSQLQuerying
 
-        self.algorithm = nosql_querying
+        self.algorithm = NoSQLQuerying
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

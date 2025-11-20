@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_14.lecture_98_documentation_advanced.automated_documentation;
  * Automated Documentation implementation.
  */
 public class Algorithm {

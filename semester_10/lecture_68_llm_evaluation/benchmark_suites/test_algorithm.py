@@ -20,11 +20,9 @@ class TestBenchmarksuites(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_68_llm_evaluation.benchmark_suites.algorithm import (
-            benchmark_suites,
-        )
+        from semester_10.lecture_68_llm_evaluation.benchmark_suites.algorithm import BenchmarkSuite
 
-        self.algorithm = benchmark_suites
+        self.algorithm = BenchmarkSuite
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestKerneltuning(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_56_os_performance.kernel_tuning.algorithm import (
-            kernel_tuning,
-        )
+        from semester_09.lecture_56_os_performance.kernel_tuning.algorithm import KernelTuning
 
-        self.algorithm = kernel_tuning
+        self.algorithm = KernelTuning
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

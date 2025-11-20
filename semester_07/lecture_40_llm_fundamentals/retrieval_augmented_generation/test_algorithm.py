@@ -20,11 +20,9 @@ class TestRetrievalaugmentedgeneration(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_40_llm_fundamentals.retrieval_augmented_generation.algorithm import (
-            retrieval_augmented_generation,
-        )
+        from semester_07.lecture_40_llm_fundamentals.retrieval_augmented_generation.algorithm import RetrievalAugmentedGeneration
 
-        self.algorithm = retrieval_augmented_generation
+        self.algorithm = RetrievalAugmentedGeneration
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

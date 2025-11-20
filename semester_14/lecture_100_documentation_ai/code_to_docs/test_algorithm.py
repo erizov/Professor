@@ -20,11 +20,9 @@ class TestCodetodocs(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_100_documentation_ai.code_to_docs.algorithm import (
-            code_to_docs,
-        )
+        from semester_14.lecture_100_documentation_ai.code_to_docs.algorithm import CodeToDocs
 
-        self.algorithm = code_to_docs
+        self.algorithm = CodeToDocs
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

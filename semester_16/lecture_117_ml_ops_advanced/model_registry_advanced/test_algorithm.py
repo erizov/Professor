@@ -20,11 +20,9 @@ class TestModelregistryadvanced(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_117_ml_ops_advanced.model_registry_advanced.algorithm import (
-            model_registry_advanced,
-        )
+        from semester_16.lecture_117_ml_ops_advanced.model_registry_advanced.algorithm import AdvancedModelRegistry
 
-        self.algorithm = model_registry_advanced
+        self.algorithm = AdvancedModelRegistry
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

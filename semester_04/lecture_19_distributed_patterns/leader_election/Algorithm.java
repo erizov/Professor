@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_04.lecture_19_distributed_patterns.leader_election;
  * Leader Election implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int elect_leader() {
         logger.info("Executing elect_leader");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -33,7 +34,7 @@ public class Algorithm {
      */
     public int get_leader() {
         logger.info("Executing get_leader");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

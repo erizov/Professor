@@ -20,11 +20,9 @@ class TestMemoryoptimization(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_56_os_performance.memory_optimization.algorithm import (
-            memory_optimization,
-        )
+        from semester_09.lecture_56_os_performance.memory_optimization.algorithm import MemoryOptimization
 
-        self.algorithm = memory_optimization
+        self.algorithm = MemoryOptimization
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

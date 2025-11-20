@@ -20,11 +20,9 @@ class TestProposalsystems(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_93_blockchain_governance.proposal_systems.algorithm import (
-            proposal_systems,
-        )
+        from semester_13.lecture_93_blockchain_governance.proposal_systems.algorithm import ProposalSystem
 
-        self.algorithm = proposal_systems
+        self.algorithm = ProposalSystem
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

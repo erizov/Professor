@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_08.lecture_51_nosql_fundamentals.nosql_querying;
  * Nosql Querying implementation.
  */
 public class Algorithm {
@@ -33,7 +34,7 @@ public class Algorithm {
      */
     public int count(String collection, Object filter_dict) {
         logger.info("Executing count");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

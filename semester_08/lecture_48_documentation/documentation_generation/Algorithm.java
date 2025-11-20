@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_08.lecture_48_documentation.documentation_generation;
  * Documentation Generation implementation.
  */
 public class Algorithm {
@@ -26,7 +27,7 @@ public class Algorithm {
     public String generate(String template_name, Object data) {
         logger.info("Executing generate");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return "";  // FIXME: Changed from Map to String
     }
 
     public static Algorithm create() {

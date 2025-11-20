@@ -20,11 +20,9 @@ class TestPolicygradient(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_28_reinforcement_learning.policy_gradient.algorithm import (
-            policy_gradient,
-        )
+        from semester_05.lecture_28_reinforcement_learning.policy_gradient.algorithm import PolicyGradient
 
-        self.algorithm = policy_gradient
+        self.algorithm = PolicyGradient
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

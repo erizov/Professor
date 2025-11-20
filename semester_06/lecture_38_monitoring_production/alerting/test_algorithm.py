@@ -20,11 +20,9 @@ class TestAlerting(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_38_monitoring_production.alerting.algorithm import (
-            alerting,
-        )
+        from semester_06.lecture_38_monitoring_production.alerting.algorithm import Alerting
 
-        self.algorithm = alerting
+        self.algorithm = Alerting
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

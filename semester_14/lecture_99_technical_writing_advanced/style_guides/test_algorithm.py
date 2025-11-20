@@ -20,11 +20,9 @@ class TestStyleguides(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_99_technical_writing_advanced.style_guides.algorithm import (
-            style_guides,
-        )
+        from semester_14.lecture_99_technical_writing_advanced.style_guides.algorithm import StyleGuides
 
-        self.algorithm = style_guides
+        self.algorithm = StyleGuides
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

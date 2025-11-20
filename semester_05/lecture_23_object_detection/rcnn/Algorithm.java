@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_05.lecture_23_object_detection.rcnn;
  * Rcnn implementation.
  */
 public class Algorithm {
@@ -18,7 +19,7 @@ public class Algorithm {
     public List<Object> detect_regions(List<Object> image) {
         logger.info("Executing detect_regions");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return new ArrayList<>();  // FIXME: Changed from Map to List
     }
 
     /**
@@ -26,7 +27,7 @@ public class Algorithm {
      */
     public int classify_region(Object region) {
         logger.info("Executing classify_region");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

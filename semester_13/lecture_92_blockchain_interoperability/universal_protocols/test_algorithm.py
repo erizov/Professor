@@ -20,11 +20,9 @@ class TestUniversalprotocols(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_92_blockchain_interoperability.universal_protocols.algorithm import (
-            universal_protocols,
-        )
+        from semester_13.lecture_92_blockchain_interoperability.universal_protocols.algorithm import UniversalProtocols
 
-        self.algorithm = universal_protocols
+        self.algorithm = UniversalProtocols
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

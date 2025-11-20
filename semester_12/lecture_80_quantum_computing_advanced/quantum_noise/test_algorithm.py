@@ -20,11 +20,9 @@ class TestQuantumnoise(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_12.lecture_80_quantum_computing_advanced.quantum_noise.algorithm import (
-            quantum_noise,
-        )
+        from semester_12.lecture_80_quantum_computing_advanced.quantum_noise.algorithm import QuantumNoise
 
-        self.algorithm = quantum_noise
+        self.algorithm = QuantumNoise
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

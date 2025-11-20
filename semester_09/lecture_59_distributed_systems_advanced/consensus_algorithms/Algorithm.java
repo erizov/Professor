@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_09.lecture_59_distributed_systems_advanced.consensus_algorithms;
  * Consensus Algorithms implementation.
  */
 public class Algorithm {

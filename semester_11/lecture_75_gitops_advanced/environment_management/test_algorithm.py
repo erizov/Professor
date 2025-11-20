@@ -20,11 +20,9 @@ class TestEnvironmentmanagement(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_75_gitops_advanced.environment_management.algorithm import (
-            environment_management,
-        )
+        from semester_11.lecture_75_gitops_advanced.environment_management.algorithm import EnvironmentManagement
 
-        self.algorithm = environment_management
+        self.algorithm = EnvironmentManagement
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

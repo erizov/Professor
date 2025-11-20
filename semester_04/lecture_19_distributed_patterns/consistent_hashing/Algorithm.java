@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_04.lecture_19_distributed_patterns.consistent_hashing;
  * Consistent Hashing implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int _hash(String key) {
         logger.info("Executing _hash");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

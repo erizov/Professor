@@ -20,11 +20,9 @@ class TestBuildautomation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_42_ci_cd_fundamentals.build_automation.algorithm import (
-            build_automation,
-        )
+        from semester_07.lecture_42_ci_cd_fundamentals.build_automation.algorithm import BuildAutomation
 
-        self.algorithm = build_automation
+        self.algorithm = BuildAutomation
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

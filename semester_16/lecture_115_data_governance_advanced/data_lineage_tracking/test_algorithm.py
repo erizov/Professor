@@ -20,11 +20,9 @@ class TestDatalineagetracking(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_115_data_governance_advanced.data_lineage_tracking.algorithm import (
-            data_lineage_tracking,
-        )
+        from semester_16.lecture_115_data_governance_advanced.data_lineage_tracking.algorithm import DataLineageTracking
 
-        self.algorithm = data_lineage_tracking
+        self.algorithm = DataLineageTracking
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

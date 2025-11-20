@@ -20,11 +20,9 @@ class TestTransferlearning(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_21_transfer_learning.transfer_learning.algorithm import (
-            transfer_learning,
-        )
+        from semester_05.lecture_21_transfer_learning.transfer_learning.algorithm import TransferLearning
 
-        self.algorithm = transfer_learning
+        self.algorithm = TransferLearning
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

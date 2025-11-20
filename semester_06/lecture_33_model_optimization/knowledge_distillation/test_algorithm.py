@@ -20,11 +20,9 @@ class TestKnowledgedistillation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_33_model_optimization.knowledge_distillation.algorithm import (
-            knowledge_distillation,
-        )
+        from semester_06.lecture_33_model_optimization.knowledge_distillation.algorithm import KnowledgeDistillation
 
-        self.algorithm = knowledge_distillation
+        self.algorithm = KnowledgeDistillation
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

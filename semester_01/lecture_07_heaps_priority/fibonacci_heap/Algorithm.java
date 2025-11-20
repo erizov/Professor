@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_01.lecture_07_heaps_priority.fibonacci_heap;
  * Fibonacci Heap implementation.
  */
 public class Algorithm {
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int extract_min() {
         logger.info("Executing extract_min");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

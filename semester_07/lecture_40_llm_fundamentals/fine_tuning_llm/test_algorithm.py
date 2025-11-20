@@ -20,11 +20,9 @@ class TestFinetuningllm(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_40_llm_fundamentals.fine_tuning_llm.algorithm import (
-            fine_tuning_llm,
-        )
+        from semester_07.lecture_40_llm_fundamentals.fine_tuning_llm.algorithm import LLMFineTuning
 
-        self.algorithm = fine_tuning_llm
+        self.algorithm = LLMFineTuning
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

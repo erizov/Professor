@@ -20,11 +20,9 @@ class TestCommontableexpressions(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_103_sql_advanced_topics.common_table_expressions.algorithm import (
-            common_table_expressions,
-        )
+        from semester_15.lecture_103_sql_advanced_topics.common_table_expressions.algorithm import CommonTableExpression
 
-        self.algorithm = common_table_expressions
+        self.algorithm = CommonTableExpression
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

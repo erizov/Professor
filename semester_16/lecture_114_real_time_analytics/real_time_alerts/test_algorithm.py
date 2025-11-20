@@ -20,11 +20,9 @@ class TestRealtimealerts(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_114_real_time_analytics.real_time_alerts.algorithm import (
-            real_time_alerts,
-        )
+        from semester_16.lecture_114_real_time_analytics.real_time_alerts.algorithm import RealTimeAlerts
 
-        self.algorithm = real_time_alerts
+        self.algorithm = RealTimeAlerts
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

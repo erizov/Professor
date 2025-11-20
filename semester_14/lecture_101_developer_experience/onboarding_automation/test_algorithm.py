@@ -20,11 +20,9 @@ class TestOnboardingautomation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_101_developer_experience.onboarding_automation.algorithm import (
-            onboarding_automation,
-        )
+        from semester_14.lecture_101_developer_experience.onboarding_automation.algorithm import OnboardingAutomation
 
-        self.algorithm = onboarding_automation
+        self.algorithm = OnboardingAutomation
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

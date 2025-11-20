@@ -20,11 +20,9 @@ class TestSpeculativedecoding(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_66_llm_inference.speculative_decoding.algorithm import (
-            speculative_decoding,
-        )
+        from semester_10.lecture_66_llm_inference.speculative_decoding.algorithm import SpeculativeDecoding
 
-        self.algorithm = speculative_decoding
+        self.algorithm = SpeculativeDecoding
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

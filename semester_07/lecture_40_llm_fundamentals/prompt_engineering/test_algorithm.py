@@ -20,11 +20,9 @@ class TestPromptengineering(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_40_llm_fundamentals.prompt_engineering.algorithm import (
-            prompt_engineering,
-        )
+        from semester_07.lecture_40_llm_fundamentals.prompt_engineering.algorithm import PromptEngineering
 
-        self.algorithm = prompt_engineering
+        self.algorithm = PromptEngineering
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

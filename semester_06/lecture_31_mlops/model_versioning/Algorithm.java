@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_06.lecture_31_mlops.model_versioning;
  * Model Versioning implementation.
  */
 public class Algorithm {
@@ -18,7 +19,7 @@ public class Algorithm {
     public String create_version(String model_id, Object model, Object metadata) {
         logger.info("Executing create_version");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return "";  // FIXME: Changed from Map to String
     }
 
     /**

@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_12.lecture_80_quantum_computing_advanced.quantum_circuits;
  * Quantum Circuits implementation.
  */
 public class Algorithm {
@@ -34,7 +35,7 @@ public class Algorithm {
      */
     public int measure(Object qubit) {
         logger.info("Executing measure");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

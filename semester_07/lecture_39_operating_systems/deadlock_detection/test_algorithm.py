@@ -20,11 +20,9 @@ class TestDeadlockdetection(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_39_operating_systems.deadlock_detection.algorithm import (
-            deadlock_detection,
-        )
+        from semester_07.lecture_39_operating_systems.deadlock_detection.algorithm import DeadlockDetection
 
-        self.algorithm = deadlock_detection
+        self.algorithm = DeadlockDetection
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

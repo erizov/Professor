@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_07.lecture_46_blockchain_advanced.blockchain_scalability;
  * Blockchain Scalability implementation.
  */
 public class Algorithm {
@@ -33,7 +34,7 @@ public class Algorithm {
      */
     public int calculate_throughput(Object base_tps, Object solution) {
         logger.info("Executing calculate_throughput");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

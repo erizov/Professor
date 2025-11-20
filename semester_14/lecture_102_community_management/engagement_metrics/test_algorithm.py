@@ -20,11 +20,9 @@ class TestEngagementmetrics(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_102_community_management.engagement_metrics.algorithm import (
-            engagement_metrics,
-        )
+        from semester_14.lecture_102_community_management.engagement_metrics.algorithm import EngagementMetrics
 
-        self.algorithm = engagement_metrics
+        self.algorithm = EngagementMetrics
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

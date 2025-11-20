@@ -20,11 +20,9 @@ class TestIndexstrategies(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_104_database_performance.index_strategies.algorithm import (
-            index_strategies,
-        )
+        from semester_15.lecture_104_database_performance.index_strategies.algorithm import IndexStrategy
 
-        self.algorithm = index_strategies
+        self.algorithm = IndexStrategy
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

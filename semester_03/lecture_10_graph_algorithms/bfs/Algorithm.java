@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_03.lecture_10_graph_algorithms.bfs;
  * Bfs implementation.
  */
 public class Algorithm {
@@ -31,7 +32,7 @@ public class Algorithm {
      */
     public int bfs(Object start) {
         logger.info("Executing bfs");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -46,7 +47,7 @@ public class Algorithm {
      */
     public int shortest_path(Object start, Object end) {
         logger.info("Executing shortest_path");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -61,7 +62,7 @@ public class Algorithm {
      */
     public int shortest_distance(Object start, Object end) {
         logger.info("Executing shortest_distance");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -75,7 +76,7 @@ public class Algorithm {
      */
     public int all_paths_distance(Object start) {
         logger.info("Executing all_paths_distance");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

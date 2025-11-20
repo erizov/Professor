@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_16.lecture_114_real_time_analytics.real_time_alerts;
  * Real Time Alerts implementation.
  */
 public class Algorithm {

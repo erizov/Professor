@@ -20,11 +20,9 @@ class TestDatabasefederation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_105_database_architecture.database_federation.algorithm import (
-            database_federation,
-        )
+        from semester_15.lecture_105_database_architecture.database_federation.algorithm import DatabaseFederation
 
-        self.algorithm = database_federation
+        self.algorithm = DatabaseFederation
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

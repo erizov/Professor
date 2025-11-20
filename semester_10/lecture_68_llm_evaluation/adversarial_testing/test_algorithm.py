@@ -20,11 +20,9 @@ class TestAdversarialtesting(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_68_llm_evaluation.adversarial_testing.algorithm import (
-            adversarial_testing,
-        )
+        from semester_10.lecture_68_llm_evaluation.adversarial_testing.algorithm import AdversarialTesting
 
-        self.algorithm = adversarial_testing
+        self.algorithm = AdversarialTesting
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

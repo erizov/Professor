@@ -20,11 +20,9 @@ class TestOnchainanalytics(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_94_blockchain_analytics.on_chain_analytics.algorithm import (
-            on_chain_analytics,
-        )
+        from semester_13.lecture_94_blockchain_analytics.on_chain_analytics.algorithm import OnChainAnalytics
 
-        self.algorithm = on_chain_analytics
+        self.algorithm = OnChainAnalytics
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

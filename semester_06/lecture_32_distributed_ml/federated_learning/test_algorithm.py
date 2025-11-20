@@ -20,11 +20,9 @@ class TestFederatedlearning(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_32_distributed_ml.federated_learning.algorithm import (
-            federated_learning,
-        )
+        from semester_06.lecture_32_distributed_ml.federated_learning.algorithm import FederatedLearning
 
-        self.algorithm = federated_learning
+        self.algorithm = FederatedLearning
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

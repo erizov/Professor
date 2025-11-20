@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_01.lecture_08_hash_tables.open_addressing;
  * Open Addressing implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int _hash(Object key) {
         logger.info("Executing _hash");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int _probe(Object key, Object start_index) {
         logger.info("Executing _probe");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

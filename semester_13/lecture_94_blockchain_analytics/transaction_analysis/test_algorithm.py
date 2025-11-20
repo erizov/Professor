@@ -20,11 +20,9 @@ class TestTransactionanalysis(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_94_blockchain_analytics.transaction_analysis.algorithm import (
-            transaction_analysis,
-        )
+        from semester_13.lecture_94_blockchain_analytics.transaction_analysis.algorithm import TransactionAnalysis
 
-        self.algorithm = transaction_analysis
+        self.algorithm = TransactionAnalysis
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

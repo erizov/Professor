@@ -20,11 +20,9 @@ class TestBlamelessculture(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_96_incident_management_advanced.blameless_culture.algorithm import (
-            blameless_culture,
-        )
+        from semester_14.lecture_96_incident_management_advanced.blameless_culture.algorithm import BlamelessPostmortem
 
-        self.algorithm = blameless_culture
+        self.algorithm = BlamelessPostmortem
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

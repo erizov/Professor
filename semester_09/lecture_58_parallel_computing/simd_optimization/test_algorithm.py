@@ -20,11 +20,9 @@ class TestSimdoptimization(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_58_parallel_computing.simd_optimization.algorithm import (
-            simd_optimization,
-        )
+        from semester_09.lecture_58_parallel_computing.simd_optimization.algorithm import SIMDOptimization
 
-        self.algorithm = simd_optimization
+        self.algorithm = SIMDOptimization
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

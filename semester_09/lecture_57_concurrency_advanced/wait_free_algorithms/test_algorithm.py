@@ -20,11 +20,9 @@ class TestWaitfreealgorithms(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_57_concurrency_advanced.wait_free_algorithms.algorithm import (
-            wait_free_algorithms,
-        )
+        from semester_09.lecture_57_concurrency_advanced.wait_free_algorithms.algorithm import WaitFreeAlgorithms
 
-        self.algorithm = wait_free_algorithms
+        self.algorithm = WaitFreeAlgorithms
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

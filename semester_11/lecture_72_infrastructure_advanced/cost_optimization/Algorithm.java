@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_11.lecture_72_infrastructure_advanced.cost_optimization;
  * Cost Optimization implementation.
  */
 public class Algorithm {
@@ -34,7 +35,7 @@ public class Algorithm {
      */
     public int calculate_total_cost(Object start_time, Object end_time) {
         logger.info("Executing calculate_total_cost");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

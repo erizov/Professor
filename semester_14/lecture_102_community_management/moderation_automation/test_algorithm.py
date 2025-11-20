@@ -20,11 +20,9 @@ class TestModerationautomation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_102_community_management.moderation_automation.algorithm import (
-            moderation_automation,
-        )
+        from semester_14.lecture_102_community_management.moderation_automation.algorithm import ModerationAutomation
 
-        self.algorithm = moderation_automation
+        self.algorithm = ModerationAutomation
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

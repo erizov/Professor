@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_11.lecture_78_observability_platform.aiops;
  * Aiops implementation.
  */
 public class Algorithm {
@@ -33,7 +34,7 @@ public class Algorithm {
      */
     public int predict_metric(String metric_name, Object steps) {
         logger.info("Executing predict_metric");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

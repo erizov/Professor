@@ -1,4 +1,5 @@
 /**
+package semester_04.lecture_15_testing_patterns.unit_testing;
  * Unit Testing Pattern.
  * 
  * Tests individual units of code (functions, methods, classes) in isolation.

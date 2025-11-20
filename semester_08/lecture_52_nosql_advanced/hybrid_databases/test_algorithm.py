@@ -20,11 +20,9 @@ class TestHybriddatabases(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_52_nosql_advanced.hybrid_databases.algorithm import (
-            hybrid_databases,
-        )
+        from semester_08.lecture_52_nosql_advanced.hybrid_databases.algorithm import HybridDatabase
 
-        self.algorithm = hybrid_databases
+        self.algorithm = HybridDatabase
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

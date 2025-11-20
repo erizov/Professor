@@ -20,11 +20,9 @@ class TestStatechannels(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_87_blockchain_advanced.state_channels.algorithm import (
-            state_channels,
-        )
+        from semester_13.lecture_87_blockchain_advanced.state_channels.algorithm import StateChannels
 
-        self.algorithm = state_channels
+        self.algorithm = StateChannels
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

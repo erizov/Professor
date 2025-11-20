@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_08.lecture_52_nosql_advanced.nosql_scalability;
  * Nosql Scalability implementation.
  */
 public class Algorithm {
@@ -26,7 +27,7 @@ public class Algorithm {
      */
     public int shard_data(String key, Object num_shards) {
         logger.info("Executing shard_data");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

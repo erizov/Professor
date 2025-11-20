@@ -20,11 +20,9 @@ class TestEventsourcingadvanced(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_60_system_design_advanced.event_sourcing_advanced.algorithm import (
-            event_sourcing_advanced,
-        )
+        from semester_09.lecture_60_system_design_advanced.event_sourcing_advanced.algorithm import AdvancedEventSourcing
 
-        self.algorithm = event_sourcing_advanced
+        self.algorithm = AdvancedEventSourcing
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

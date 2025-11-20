@@ -20,11 +20,9 @@ class TestNftstandards(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_46_blockchain_advanced.nft_standards.algorithm import (
-            nft_standards,
-        )
+        from semester_07.lecture_46_blockchain_advanced.nft_standards.algorithm import NFTStandard
 
-        self.algorithm = nft_standards
+        self.algorithm = NFTStandard
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

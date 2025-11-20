@@ -20,11 +20,9 @@ class TestTensorrt(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_33_model_optimization.tensorrt.algorithm import (
-            tensorrt,
-        )
+        from semester_06.lecture_33_model_optimization.tensorrt.algorithm import TensorRT
 
-        self.algorithm = tensorrt
+        self.algorithm = TensorRT
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

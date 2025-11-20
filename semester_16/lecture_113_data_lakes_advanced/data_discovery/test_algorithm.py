@@ -20,11 +20,9 @@ class TestDatadiscovery(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_113_data_lakes_advanced.data_discovery.algorithm import (
-            data_discovery,
-        )
+        from semester_16.lecture_113_data_lakes_advanced.data_discovery.algorithm import DataDiscovery
 
-        self.algorithm = data_discovery
+        self.algorithm = DataDiscovery
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

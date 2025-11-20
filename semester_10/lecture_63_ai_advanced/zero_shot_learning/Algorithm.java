@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_10.lecture_63_ai_advanced.zero_shot_learning;
  * Zero Shot Learning implementation.
  */
 public class Algorithm {

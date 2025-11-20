@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_05.lecture_23_object_detection.ssd;
  * Ssd implementation.
  */
 public class Algorithm {
@@ -18,7 +19,7 @@ public class Algorithm {
     public List<Object> detect(List<Object> image) {
         logger.info("Executing detect");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return new ArrayList<>();  // FIXME: Changed from Map to List
     }
 
     /**

@@ -20,11 +20,9 @@ class TestTicketroutingai(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_95_support_advanced.ticket_routing_ai.algorithm import (
-            ticket_routing_ai,
-        )
+        from semester_14.lecture_95_support_advanced.ticket_routing_ai.algorithm import TicketRoutingAI
 
-        self.algorithm = ticket_routing_ai
+        self.algorithm = TicketRoutingAI
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

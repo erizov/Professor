@@ -20,11 +20,9 @@ class TestContinuallearning(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_63_ai_advanced.continual_learning.algorithm import (
-            continual_learning,
-        )
+        from semester_10.lecture_63_ai_advanced.continual_learning.algorithm import ContinualLearning
 
-        self.algorithm = continual_learning
+        self.algorithm = ContinualLearning
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestInfrastructurepatterns(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_72_infrastructure_advanced.infrastructure_patterns.algorithm import (
-            infrastructure_patterns,
-        )
+        from semester_11.lecture_72_infrastructure_advanced.infrastructure_patterns.algorithm import InfrastructurePatterns
 
-        self.algorithm = infrastructure_patterns
+        self.algorithm = InfrastructurePatterns
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

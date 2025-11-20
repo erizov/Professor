@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_11.lecture_72_infrastructure_advanced.edge_computing;
  * Edge Computing implementation.
  */
 public class Algorithm {
@@ -27,7 +28,7 @@ public class Algorithm {
     public boolean deploy_task(String task_id, String node_id, Object task_func) {
         logger.info("Executing deploy_task");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return false;  // FIXME: Changed from Map to boolean
     }
 
     /**

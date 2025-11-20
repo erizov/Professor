@@ -20,11 +20,9 @@ class TestSafetyevaluation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_68_llm_evaluation.safety_evaluation.algorithm import (
-            safety_evaluation,
-        )
+        from semester_10.lecture_68_llm_evaluation.safety_evaluation.algorithm import SafetyEvaluation
 
-        self.algorithm = safety_evaluation
+        self.algorithm = SafetyEvaluation
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

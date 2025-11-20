@@ -20,11 +20,9 @@ class TestAutoscaling(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_37_cost_optimization.autoscaling.algorithm import (
-            autoscaling,
-        )
+        from semester_06.lecture_37_cost_optimization.autoscaling.algorithm import AutoScaling
 
-        self.algorithm = autoscaling
+        self.algorithm = AutoScaling
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

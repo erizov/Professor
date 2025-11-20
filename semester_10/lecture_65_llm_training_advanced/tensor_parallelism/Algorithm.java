@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_10.lecture_65_llm_training_advanced.tensor_parallelism;
  * Tensor Parallelism implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int shard_tensor(List<Object> tensor, Object axis) {
         logger.info("Executing shard_tensor");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int all_reduce(List<Object> shards) {
         logger.info("Executing all_reduce");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

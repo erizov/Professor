@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_14.lecture_100_documentation_ai.ai_doc_generation;
  * Ai Doc Generation implementation.
  */
 public class Algorithm {

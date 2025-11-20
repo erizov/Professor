@@ -20,11 +20,9 @@ class TestDatabasedesign(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_50_sql_advanced.database_design.algorithm import (
-            database_design,
-        )
+        from semester_08.lecture_50_sql_advanced.database_design.algorithm import DatabaseDesign
 
-        self.algorithm = database_design
+        self.algorithm = DatabaseDesign
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

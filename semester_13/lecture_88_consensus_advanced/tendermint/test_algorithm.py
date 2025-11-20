@@ -20,11 +20,9 @@ class TestTendermint(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_88_consensus_advanced.tendermint.algorithm import (
-            tendermint,
-        )
+        from semester_13.lecture_88_consensus_advanced.tendermint.algorithm import Tendermint
 
-        self.algorithm = tendermint
+        self.algorithm = Tendermint
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

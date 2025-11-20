@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_15.lecture_105_database_architecture.database_sharding_advanced;
  * Database Sharding Advanced implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int _get_shard(String key) {
         logger.info("Executing _get_shard");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

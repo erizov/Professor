@@ -20,11 +20,9 @@ class TestContentcuration(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_97_knowledge_management.content_curation.algorithm import (
-            content_curation,
-        )
+        from semester_14.lecture_97_knowledge_management.content_curation.algorithm import ContentCuration
 
-        self.algorithm = content_curation
+        self.algorithm = ContentCuration
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

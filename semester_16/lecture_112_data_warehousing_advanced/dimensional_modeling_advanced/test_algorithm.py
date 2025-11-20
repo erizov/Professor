@@ -20,11 +20,9 @@ class TestDimensionalmodelingadvanced(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_112_data_warehousing_advanced.dimensional_modeling_advanced.algorithm import (
-            dimensional_modeling_advanced,
-        )
+        from semester_16.lecture_112_data_warehousing_advanced.dimensional_modeling_advanced.algorithm import AdvancedDimensionalModeling
 
-        self.algorithm = dimensional_modeling_advanced
+        self.algorithm = AdvancedDimensionalModeling
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

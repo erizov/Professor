@@ -20,11 +20,9 @@ class TestAtomicswaps(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_92_blockchain_interoperability.atomic_swaps.algorithm import (
-            atomic_swaps,
-        )
+        from semester_13.lecture_92_blockchain_interoperability.atomic_swaps.algorithm import AtomicSwap
 
-        self.algorithm = atomic_swaps
+        self.algorithm = AtomicSwap
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

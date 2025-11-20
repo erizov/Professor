@@ -20,11 +20,9 @@ class TestRingsignatures(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_91_blockchain_privacy.ring_signatures.algorithm import (
-            ring_signatures,
-        )
+        from semester_13.lecture_91_blockchain_privacy.ring_signatures.algorithm import RingSignatures
 
-        self.algorithm = ring_signatures
+        self.algorithm = RingSignatures
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_12.lecture_85_quantum_networking.quantum_key_distribution;
  * Quantum Key Distribution implementation.
  */
 public class Algorithm {
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int generate_key(String session_id, Object length) {
         logger.info("Executing generate_key");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

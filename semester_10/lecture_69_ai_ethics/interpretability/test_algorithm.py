@@ -20,11 +20,9 @@ class TestInterpretability(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_69_ai_ethics.interpretability.algorithm import (
-            interpretability,
-        )
+        from semester_10.lecture_69_ai_ethics.interpretability.algorithm import Interpretability
 
-        self.algorithm = interpretability
+        self.algorithm = Interpretability
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestNosqlscalability(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_52_nosql_advanced.nosql_scalability.algorithm import (
-            nosql_scalability,
-        )
+        from semester_08.lecture_52_nosql_advanced.nosql_scalability.algorithm import NoSQLScalability
 
-        self.algorithm = nosql_scalability
+        self.algorithm = NoSQLScalability
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

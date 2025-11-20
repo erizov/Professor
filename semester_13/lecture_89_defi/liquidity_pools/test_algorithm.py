@@ -20,11 +20,9 @@ class TestLiquiditypools(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_89_defi.liquidity_pools.algorithm import (
-            liquidity_pools,
-        )
+        from semester_13.lecture_89_defi.liquidity_pools.algorithm import LiquidityPool
 
-        self.algorithm = liquidity_pools
+        self.algorithm = LiquidityPool
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

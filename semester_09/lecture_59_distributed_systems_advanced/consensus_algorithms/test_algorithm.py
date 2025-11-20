@@ -20,11 +20,9 @@ class TestConsensusalgorithms(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_59_distributed_systems_advanced.consensus_algorithms.algorithm import (
-            consensus_algorithms,
-        )
+        from semester_09.lecture_59_distributed_systems_advanced.consensus_algorithms.algorithm import ConsensusAlgorithm
 
-        self.algorithm = consensus_algorithms
+        self.algorithm = ConsensusAlgorithm
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

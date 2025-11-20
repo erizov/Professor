@@ -20,11 +20,9 @@ class TestSelfserviceplatforms(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_76_platform_engineering.self_service_platforms.algorithm import (
-            self_service_platforms,
-        )
+        from semester_11.lecture_76_platform_engineering.self_service_platforms.algorithm import SelfServicePlatforms
 
-        self.algorithm = self_service_platforms
+        self.algorithm = SelfServicePlatforms
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

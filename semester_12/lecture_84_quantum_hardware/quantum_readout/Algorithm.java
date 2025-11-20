@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_12.lecture_84_quantum_hardware.quantum_readout;
  * Quantum Readout implementation.
  */
 public class Algorithm {
@@ -27,7 +28,7 @@ public class Algorithm {
         logger.info("Executing measure_qubit");
         long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return -1;  // FIXME: Changed from null to -1  // FIXME: Changed from Map to int
     }
 
     /**
@@ -35,7 +36,7 @@ public class Algorithm {
      */
     public int get_readout_fidelity(String qubit_id) {
         logger.info("Executing get_readout_fidelity");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

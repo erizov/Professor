@@ -20,11 +20,9 @@ class TestAttentionmechanisms(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_40_llm_fundamentals.attention_mechanisms.algorithm import (
-            attention_mechanisms,
-        )
+        from semester_07.lecture_40_llm_fundamentals.attention_mechanisms.algorithm import scaled_dot_product_attention
 
-        self.algorithm = attention_mechanisms
+        self.algorithm = scaled_dot_product_attention
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

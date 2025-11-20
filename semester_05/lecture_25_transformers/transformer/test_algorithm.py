@@ -20,11 +20,9 @@ class TestTransformer(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_25_transformers.transformer.algorithm import (
-            transformer,
-        )
+        from semester_05.lecture_25_transformers.transformer.algorithm import Transformer
 
-        self.algorithm = transformer
+        self.algorithm = Transformer
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

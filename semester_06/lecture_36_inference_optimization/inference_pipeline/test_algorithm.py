@@ -20,11 +20,9 @@ class TestInferencepipeline(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_36_inference_optimization.inference_pipeline.algorithm import (
-            inference_pipeline,
-        )
+        from semester_06.lecture_36_inference_optimization.inference_pipeline.algorithm import InferencePipeline
 
-        self.algorithm = inference_pipeline
+        self.algorithm = InferencePipeline
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

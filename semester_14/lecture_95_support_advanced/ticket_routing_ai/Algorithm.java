@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_14.lecture_95_support_advanced.ticket_routing_ai;
  * Ticket Routing Ai implementation.
  */
 public class Algorithm {
@@ -18,7 +19,7 @@ public class Algorithm {
     public String route_ticket(String ticket_id, String description, List<String> available_agents) {
         logger.info("Executing route_ticket");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return "";  // FIXME: Changed from Map to String
     }
 
     /**

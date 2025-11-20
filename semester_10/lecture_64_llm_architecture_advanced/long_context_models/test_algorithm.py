@@ -20,11 +20,9 @@ class TestLongcontextmodels(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_64_llm_architecture_advanced.long_context_models.algorithm import (
-            long_context_models,
-        )
+        from semester_10.lecture_64_llm_architecture_advanced.long_context_models.algorithm import LongContextModel
 
-        self.algorithm = long_context_models
+        self.algorithm = LongContextModel
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

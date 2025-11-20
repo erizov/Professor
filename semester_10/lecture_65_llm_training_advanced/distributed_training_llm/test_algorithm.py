@@ -20,11 +20,9 @@ class TestDistributedtrainingllm(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_65_llm_training_advanced.distributed_training_llm.algorithm import (
-            distributed_training_llm,
-        )
+        from semester_10.lecture_65_llm_training_advanced.distributed_training_llm.algorithm import DistributedTrainingLLM
 
-        self.algorithm = distributed_training_llm
+        self.algorithm = DistributedTrainingLLM
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

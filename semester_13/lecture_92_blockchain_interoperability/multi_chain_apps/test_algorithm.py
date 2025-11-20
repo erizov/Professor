@@ -20,11 +20,9 @@ class TestMultichainapps(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_92_blockchain_interoperability.multi_chain_apps.algorithm import (
-            multi_chain_apps,
-        )
+        from semester_13.lecture_92_blockchain_interoperability.multi_chain_apps.algorithm import MultiChainApp
 
-        self.algorithm = multi_chain_apps
+        self.algorithm = MultiChainApp
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

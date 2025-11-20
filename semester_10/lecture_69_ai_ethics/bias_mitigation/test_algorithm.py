@@ -20,11 +20,9 @@ class TestBiasmitigation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_69_ai_ethics.bias_mitigation.algorithm import (
-            bias_mitigation,
-        )
+        from semester_10.lecture_69_ai_ethics.bias_mitigation.algorithm import bias_mitigation_reweighting
 
-        self.algorithm = bias_mitigation
+        self.algorithm = bias_mitigation_reweighting
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

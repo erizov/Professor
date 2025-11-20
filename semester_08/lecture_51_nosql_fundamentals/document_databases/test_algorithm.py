@@ -20,11 +20,9 @@ class TestDocumentdatabases(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_51_nosql_fundamentals.document_databases.algorithm import (
-            document_databases,
-        )
+        from semester_08.lecture_51_nosql_fundamentals.document_databases.algorithm import DocumentDatabase
 
-        self.algorithm = document_databases
+        self.algorithm = DocumentDatabase
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

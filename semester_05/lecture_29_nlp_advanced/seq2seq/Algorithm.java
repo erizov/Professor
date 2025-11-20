@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_05.lecture_29_nlp_advanced.seq2seq;
  * Seq2Seq implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int encode(List<Object> sequence) {
         logger.info("Executing encode");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int decode(List<Object> hidden_state, Object max_length) {
         logger.info("Executing decode");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

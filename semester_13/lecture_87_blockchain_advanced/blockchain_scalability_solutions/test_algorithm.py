@@ -20,11 +20,9 @@ class TestBlockchainscalabilitysolutions(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_87_blockchain_advanced.blockchain_scalability_solutions.algorithm import (
-            blockchain_scalability_solutions,
-        )
+        from semester_13.lecture_87_blockchain_advanced.blockchain_scalability_solutions.algorithm import BlockchainScalabilitySolutions
 
-        self.algorithm = blockchain_scalability_solutions
+        self.algorithm = BlockchainScalabilitySolutions
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

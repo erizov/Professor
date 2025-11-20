@@ -20,11 +20,9 @@ class TestStarschema(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_112_data_warehousing_advanced.star_schema.algorithm import (
-            star_schema,
-        )
+        from semester_16.lecture_112_data_warehousing_advanced.star_schema.algorithm import StarSchema
 
-        self.algorithm = star_schema
+        self.algorithm = StarSchema
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestSupportanalytics(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_95_support_advanced.support_analytics.algorithm import (
-            support_analytics,
-        )
+        from semester_14.lecture_95_support_advanced.support_analytics.algorithm import SupportAnalytics
 
-        self.algorithm = support_analytics
+        self.algorithm = SupportAnalytics
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

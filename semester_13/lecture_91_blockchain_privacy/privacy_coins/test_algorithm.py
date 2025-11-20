@@ -20,11 +20,9 @@ class TestPrivacycoins(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_91_blockchain_privacy.privacy_coins.algorithm import (
-            privacy_coins,
-        )
+        from semester_13.lecture_91_blockchain_privacy.privacy_coins.algorithm import PrivacyCoin
 
-        self.algorithm = privacy_coins
+        self.algorithm = PrivacyCoin
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

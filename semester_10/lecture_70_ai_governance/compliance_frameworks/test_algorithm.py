@@ -20,11 +20,9 @@ class TestComplianceframeworks(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_70_ai_governance.compliance_frameworks.algorithm import (
-            compliance_frameworks,
-        )
+        from semester_10.lecture_70_ai_governance.compliance_frameworks.algorithm import ComplianceFramework
 
-        self.algorithm = compliance_frameworks
+        self.algorithm = ComplianceFramework
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

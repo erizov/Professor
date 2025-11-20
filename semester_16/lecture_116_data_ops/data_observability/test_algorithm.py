@@ -20,11 +20,9 @@ class TestDataobservability(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_116_data_ops.data_observability.algorithm import (
-            data_observability,
-        )
+        from semester_16.lecture_116_data_ops.data_observability.algorithm import DataObservability
 
-        self.algorithm = data_observability
+        self.algorithm = DataObservability
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

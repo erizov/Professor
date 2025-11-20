@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_06.lecture_31_mlops.ab_testing;
  * Ab Testing implementation.
  */
 public class Algorithm {
@@ -33,7 +34,7 @@ public class Algorithm {
      */
     public int mean(List<Object> group) {
         logger.info("Executing mean");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -41,7 +42,7 @@ public class Algorithm {
      */
     public int std_dev(List<Object> group) {
         logger.info("Executing std_dev");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -49,7 +50,7 @@ public class Algorithm {
      */
     public int t_test() {
         logger.info("Executing t_test");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

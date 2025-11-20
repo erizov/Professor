@@ -20,11 +20,9 @@ class TestParameterserver(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_32_distributed_ml.parameter_server.algorithm import (
-            parameter_server,
-        )
+        from semester_06.lecture_32_distributed_ml.parameter_server.algorithm import ParameterServer
 
-        self.algorithm = parameter_server
+        self.algorithm = ParameterServer
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

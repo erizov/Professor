@@ -20,11 +20,9 @@ class TestPipelinetemplates(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_71_cicd_advanced.pipeline_templates.algorithm import (
-            pipeline_templates,
-        )
+        from semester_11.lecture_71_cicd_advanced.pipeline_templates.algorithm import PipelineTemplates
 
-        self.algorithm = pipeline_templates
+        self.algorithm = PipelineTemplates
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

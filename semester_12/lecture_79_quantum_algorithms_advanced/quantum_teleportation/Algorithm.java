@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_12.lecture_79_quantum_algorithms_advanced.quantum_teleportation;
  * Quantum Teleportation implementation.
  */
 public class Algorithm {
@@ -27,7 +28,7 @@ public class Algorithm {
     public List<Object> teleport(List<Object> qubit, String pair_id) {
         logger.info("Executing teleport");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return new ArrayList<>();  // FIXME: Changed from Map to List
     }
 
     public static Algorithm create() {

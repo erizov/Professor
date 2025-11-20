@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_09.lecture_55_advanced_os.exokernel_design;
  * Exokernel Design implementation.
  */
 public class Algorithm {

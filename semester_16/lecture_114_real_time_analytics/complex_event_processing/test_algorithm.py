@@ -20,11 +20,9 @@ class TestComplexeventprocessing(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_114_real_time_analytics.complex_event_processing.algorithm import (
-            complex_event_processing,
-        )
+        from semester_16.lecture_114_real_time_analytics.complex_event_processing.algorithm import ComplexEventProcessing
 
-        self.algorithm = complex_event_processing
+        self.algorithm = ComplexEventProcessing
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

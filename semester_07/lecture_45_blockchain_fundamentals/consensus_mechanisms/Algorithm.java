@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_07.lecture_45_blockchain_fundamentals.consensus_mechanisms;
  * Consensus Mechanisms implementation.
  */
 public class Algorithm {

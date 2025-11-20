@@ -20,11 +20,9 @@ class TestAipoweredsupport(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_95_support_advanced.ai_powered_support.algorithm import (
-            ai_powered_support,
-        )
+        from semester_14.lecture_95_support_advanced.ai_powered_support.algorithm import AIPoweredSupport
 
-        self.algorithm = ai_powered_support
+        self.algorithm = AIPoweredSupport
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestServerlessml(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_37_cost_optimization.serverless_ml.algorithm import (
-            serverless_ml,
-        )
+        from semester_06.lecture_37_cost_optimization.serverless_ml.algorithm import ServerlessML
 
-        self.algorithm = serverless_ml
+        self.algorithm = ServerlessML
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

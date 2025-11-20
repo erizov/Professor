@@ -20,11 +20,9 @@ class TestColumnfamily(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_51_nosql_fundamentals.column_family.algorithm import (
-            column_family,
-        )
+        from semester_08.lecture_51_nosql_fundamentals.column_family.algorithm import ColumnFamily
 
-        self.algorithm = column_family
+        self.algorithm = ColumnFamily
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

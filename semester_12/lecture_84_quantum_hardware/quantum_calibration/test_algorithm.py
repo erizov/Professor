@@ -20,11 +20,9 @@ class TestQuantumcalibration(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_12.lecture_84_quantum_hardware.quantum_calibration.algorithm import (
-            quantum_calibration,
-        )
+        from semester_12.lecture_84_quantum_hardware.quantum_calibration.algorithm import QuantumCalibration
 
-        self.algorithm = quantum_calibration
+        self.algorithm = QuantumCalibration
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestBoyermoore(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_03.lecture_14_string_algorithms.boyer_moore.algorithm import (
-            boyer_moore,
-        )
+        from semester_03.lecture_14_string_algorithms.boyer_moore.algorithm import boyer_moore_search
 
-        self.algorithm = boyer_moore
+        self.algorithm = boyer_moore_search
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

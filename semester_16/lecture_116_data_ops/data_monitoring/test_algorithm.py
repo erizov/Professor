@@ -20,11 +20,9 @@ class TestDatamonitoring(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_116_data_ops.data_monitoring.algorithm import (
-            data_monitoring,
-        )
+        from semester_16.lecture_116_data_ops.data_monitoring.algorithm import DataMonitoring
 
-        self.algorithm = data_monitoring
+        self.algorithm = DataMonitoring
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

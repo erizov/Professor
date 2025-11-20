@@ -20,11 +20,9 @@ class TestNosqlqueryoptimization(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_106_nosql_advanced_topics.nosql_query_optimization.algorithm import (
-            nosql_query_optimization,
-        )
+        from semester_15.lecture_106_nosql_advanced_topics.nosql_query_optimization.algorithm import NoSQLQueryOptimization
 
-        self.algorithm = nosql_query_optimization
+        self.algorithm = NoSQLQueryOptimization
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

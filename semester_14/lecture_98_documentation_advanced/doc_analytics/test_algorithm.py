@@ -20,11 +20,9 @@ class TestDocanalytics(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_98_documentation_advanced.doc_analytics.algorithm import (
-            doc_analytics,
-        )
+        from semester_14.lecture_98_documentation_advanced.doc_analytics.algorithm import DocAnalytics
 
-        self.algorithm = doc_analytics
+        self.algorithm = DocAnalytics
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

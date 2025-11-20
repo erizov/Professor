@@ -20,11 +20,9 @@ class TestMaterializedviews(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_104_database_performance.materialized_views.algorithm import (
-            materialized_views,
-        )
+        from semester_15.lecture_104_database_performance.materialized_views.algorithm import MaterializedView
 
-        self.algorithm = materialized_views
+        self.algorithm = MaterializedView
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

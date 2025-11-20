@@ -20,11 +20,9 @@ class TestBatchinference(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_36_inference_optimization.batch_inference.algorithm import (
-            batch_inference,
-        )
+        from semester_06.lecture_36_inference_optimization.batch_inference.algorithm import BatchInference
 
-        self.algorithm = batch_inference
+        self.algorithm = BatchInference
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

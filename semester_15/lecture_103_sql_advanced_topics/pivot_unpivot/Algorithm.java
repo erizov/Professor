@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_15.lecture_103_sql_advanced_topics.pivot_unpivot;
  * Pivot Unpivot implementation.
  */
 public class Algorithm {
@@ -26,7 +27,7 @@ public class Algorithm {
     public List<Object> unpivot(String table_name, List<String> id_cols, List<String> value_cols) {
         logger.info("Executing unpivot");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return new ArrayList<>();  // FIXME: Changed from Map to List
     }
 
     public static Algorithm create() {

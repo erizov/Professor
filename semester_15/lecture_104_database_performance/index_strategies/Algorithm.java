@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_15.lecture_104_database_performance.index_strategies;
  * Index Strategies implementation.
  */
 public class Algorithm {
@@ -27,7 +28,7 @@ public class Algorithm {
     public String recommend_indexes(List<Object> queries) {
         logger.info("Executing recommend_indexes");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return "";  // FIXME: Changed from Map to String
     }
 
     public static Algorithm create() {

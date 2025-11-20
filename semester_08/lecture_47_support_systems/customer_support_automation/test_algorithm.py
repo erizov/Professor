@@ -20,11 +20,9 @@ class TestCustomersupportautomation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_47_support_systems.customer_support_automation.algorithm import (
-            customer_support_automation,
-        )
+        from semester_08.lecture_47_support_systems.customer_support_automation.algorithm import CustomerSupportAutomation
 
-        self.algorithm = customer_support_automation
+        self.algorithm = CustomerSupportAutomation
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

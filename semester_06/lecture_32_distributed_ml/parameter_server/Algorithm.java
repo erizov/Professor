@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_06.lecture_32_distributed_ml.parameter_server;
  * Parameter Server implementation.
  */
 public class Algorithm {
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int get_parameters(String param_name) {
         logger.info("Executing get_parameters");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

@@ -20,11 +20,9 @@ class TestMetricscollection(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_04.lecture_20_monitoring_observability.metrics_collection.algorithm import (
-            metrics_collection,
-        )
+        from semester_04.lecture_20_monitoring_observability.metrics_collection.algorithm import MetricsCollection
 
-        self.algorithm = metrics_collection
+        self.algorithm = MetricsCollection
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

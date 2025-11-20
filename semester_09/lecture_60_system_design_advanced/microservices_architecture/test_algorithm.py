@@ -20,11 +20,9 @@ class TestMicroservicesarchitecture(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_60_system_design_advanced.microservices_architecture.algorithm import (
-            microservices_architecture,
-        )
+        from semester_09.lecture_60_system_design_advanced.microservices_architecture.algorithm import MicroservicesArchitecture
 
-        self.algorithm = microservices_architecture
+        self.algorithm = MicroservicesArchitecture
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

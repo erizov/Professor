@@ -20,11 +20,9 @@ class TestInteroperabilityprotocols(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_92_blockchain_interoperability.interoperability_protocols.algorithm import (
-            interoperability_protocols,
-        )
+        from semester_13.lecture_92_blockchain_interoperability.interoperability_protocols.algorithm import InteroperabilityProtocol
 
-        self.algorithm = interoperability_protocols
+        self.algorithm = InteroperabilityProtocol
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

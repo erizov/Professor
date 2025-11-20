@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_08.lecture_47_support_systems.escalation_procedures;
  * Escalation Procedures implementation.
  */
 public class Algorithm {
@@ -26,7 +27,7 @@ public class Algorithm {
     public List<Object> escalate(String incident_id, String severity) {
         logger.info("Executing escalate");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return new ArrayList<>();  // FIXME: Changed from Map to List
     }
 
     public static Algorithm create() {

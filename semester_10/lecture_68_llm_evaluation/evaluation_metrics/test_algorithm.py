@@ -20,11 +20,9 @@ class TestEvaluationmetrics(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_68_llm_evaluation.evaluation_metrics.algorithm import (
-            evaluation_metrics,
-        )
+        from semester_10.lecture_68_llm_evaluation.evaluation_metrics.algorithm import EvaluationMetrics
 
-        self.algorithm = evaluation_metrics
+        self.algorithm = EvaluationMetrics
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

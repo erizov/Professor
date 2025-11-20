@@ -20,11 +20,9 @@ class TestFewshotlearningadvanced(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_63_ai_advanced.few_shot_learning_advanced.algorithm import (
-            few_shot_learning_advanced,
-        )
+        from semester_10.lecture_63_ai_advanced.few_shot_learning_advanced.algorithm import AdvancedFewShotLearning
 
-        self.algorithm = few_shot_learning_advanced
+        self.algorithm = AdvancedFewShotLearning
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

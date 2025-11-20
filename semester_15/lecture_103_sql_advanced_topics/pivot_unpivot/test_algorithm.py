@@ -20,11 +20,9 @@ class TestPivotunpivot(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_103_sql_advanced_topics.pivot_unpivot.algorithm import (
-            pivot_unpivot,
-        )
+        from semester_15.lecture_103_sql_advanced_topics.pivot_unpivot.algorithm import PivotUnpivot
 
-        self.algorithm = pivot_unpivot
+        self.algorithm = PivotUnpivot
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_07.lecture_41_llm_advanced.few_shot_learning;
  * Few Shot Learning implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int compute_embedding(List<Object> sample) {
         logger.info("Executing compute_embedding");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

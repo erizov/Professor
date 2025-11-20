@@ -20,11 +20,9 @@ class TestParallelpipelines(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_71_cicd_advanced.parallel_pipelines.algorithm import (
-            parallel_pipelines,
-        )
+        from semester_11.lecture_71_cicd_advanced.parallel_pipelines.algorithm import ParallelPipelines
 
-        self.algorithm = parallel_pipelines
+        self.algorithm = ParallelPipelines
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

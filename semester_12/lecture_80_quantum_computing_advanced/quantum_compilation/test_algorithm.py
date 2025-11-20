@@ -20,11 +20,9 @@ class TestQuantumcompilation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_12.lecture_80_quantum_computing_advanced.quantum_compilation.algorithm import (
-            quantum_compilation,
-        )
+        from semester_12.lecture_80_quantum_computing_advanced.quantum_compilation.algorithm import QuantumCompilation
 
-        self.algorithm = quantum_compilation
+        self.algorithm = QuantumCompilation
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

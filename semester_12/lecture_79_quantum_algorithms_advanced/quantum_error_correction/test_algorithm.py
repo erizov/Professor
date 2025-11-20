@@ -20,11 +20,9 @@ class TestQuantumerrorcorrection(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_12.lecture_79_quantum_algorithms_advanced.quantum_error_correction.algorithm import (
-            quantum_error_correction,
-        )
+        from semester_12.lecture_79_quantum_algorithms_advanced.quantum_error_correction.algorithm import QuantumErrorCorrection
 
-        self.algorithm = quantum_error_correction
+        self.algorithm = QuantumErrorCorrection
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

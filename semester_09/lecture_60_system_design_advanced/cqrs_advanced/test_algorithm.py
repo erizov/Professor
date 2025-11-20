@@ -20,11 +20,9 @@ class TestCqrsadvanced(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_60_system_design_advanced.cqrs_advanced.algorithm import (
-            cqrs_advanced,
-        )
+        from semester_09.lecture_60_system_design_advanced.cqrs_advanced.algorithm import AdvancedCQRS
 
-        self.algorithm = cqrs_advanced
+        self.algorithm = AdvancedCQRS
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

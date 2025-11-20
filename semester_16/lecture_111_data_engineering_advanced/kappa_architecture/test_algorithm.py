@@ -20,11 +20,9 @@ class TestKappaarchitecture(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_111_data_engineering_advanced.kappa_architecture.algorithm import (
-            kappa_architecture,
-        )
+        from semester_16.lecture_111_data_engineering_advanced.kappa_architecture.algorithm import KappaArchitecture
 
-        self.algorithm = kappa_architecture
+        self.algorithm = KappaArchitecture
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

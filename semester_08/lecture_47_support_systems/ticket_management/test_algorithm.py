@@ -20,11 +20,9 @@ class TestTicketmanagement(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_47_support_systems.ticket_management.algorithm import (
-            ticket_management,
-        )
+        from semester_08.lecture_47_support_systems.ticket_management.algorithm import TicketManagement
 
-        self.algorithm = ticket_management
+        self.algorithm = TicketManagement
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

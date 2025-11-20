@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_12.lecture_82_hybrid_quantum.variational_quantum;
  * Variational Quantum implementation.
  */
 public class Algorithm {
@@ -26,7 +27,7 @@ public class Algorithm {
      */
     public int optimize(String circuit_id, Object cost_function) {
         logger.info("Executing optimize");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

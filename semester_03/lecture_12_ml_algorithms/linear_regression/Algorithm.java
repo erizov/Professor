@@ -1,4 +1,5 @@
 /**
+package semester_03.lecture_12_ml_algorithms.linear_regression;
  * Linear Regression implementation.
  * 
  * Models linear relationship between variables.
@@ -150,8 +151,8 @@ public class Algorithm {
         LinearRegression model2 = new LinearRegression(0.01, 1000);
         model2.fit(X2, y2);
         
-        logger.info("True: y = 2x₁ + 3x₂ - 1x₃ + 10");
-        System.out.printf("Learned: y = %.2fx₁ + %.2fx₂ + %.2fx₃ + %.2f%n",
+        logger.info("True: y = 2x + 3x - 1x + 10");
+        System.out.printf("Learned: y = %.2fx + %.2fx + %.2fx + %.2f%n",
                         model2.weights[0], model2.weights[1],
                         model2.weights[2], model2.bias);
         System.out.printf("R² score: %.4f%n", model2.score(X2, y2));

@@ -20,11 +20,9 @@ class TestCostoptimization(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_72_infrastructure_advanced.cost_optimization.algorithm import (
-            cost_optimization,
-        )
+        from semester_11.lecture_72_infrastructure_advanced.cost_optimization.algorithm import CostOptimizer
 
-        self.algorithm = cost_optimization
+        self.algorithm = CostOptimizer
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

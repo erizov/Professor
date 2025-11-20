@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_10.lecture_64_llm_architecture_advanced.sparse_attention;
  * Sparse Attention implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int compute_attention(List<Object> queries, List<Object> keys, List<Object> values) {
         logger.info("Executing compute_attention");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

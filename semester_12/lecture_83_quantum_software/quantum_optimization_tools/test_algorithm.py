@@ -20,11 +20,9 @@ class TestQuantumoptimizationtools(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_12.lecture_83_quantum_software.quantum_optimization_tools.algorithm import (
-            quantum_optimization_tools,
-        )
+        from semester_12.lecture_83_quantum_software.quantum_optimization_tools.algorithm import QuantumOptimizationTools
 
-        self.algorithm = quantum_optimization_tools
+        self.algorithm = QuantumOptimizationTools
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

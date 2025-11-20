@@ -20,11 +20,9 @@ class TestSelfhealingsystems(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_74_automation_advanced.self_healing_systems.algorithm import (
-            self_healing_systems,
-        )
+        from semester_11.lecture_74_automation_advanced.self_healing_systems.algorithm import SelfHealingSystems
 
-        self.algorithm = self_healing_systems
+        self.algorithm = SelfHealingSystems
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

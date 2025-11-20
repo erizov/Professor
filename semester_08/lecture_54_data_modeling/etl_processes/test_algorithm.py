@@ -20,11 +20,9 @@ class TestEtlprocesses(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_54_data_modeling.etl_processes.algorithm import (
-            etl_processes,
-        )
+        from semester_08.lecture_54_data_modeling.etl_processes.algorithm import ETLProcess
 
-        self.algorithm = etl_processes
+        self.algorithm = ETLProcess
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

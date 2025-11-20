@@ -20,11 +20,9 @@ class TestStreamprocessingadvanced(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_111_data_engineering_advanced.stream_processing_advanced.algorithm import (
-            stream_processing_advanced,
-        )
+        from semester_16.lecture_111_data_engineering_advanced.stream_processing_advanced.algorithm import AdvancedStreamProcessing
 
-        self.algorithm = stream_processing_advanced
+        self.algorithm = AdvancedStreamProcessing
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

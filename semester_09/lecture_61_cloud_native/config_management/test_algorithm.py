@@ -20,11 +20,9 @@ class TestConfigmanagement(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_61_cloud_native.config_management.algorithm import (
-            config_management,
-        )
+        from semester_09.lecture_61_cloud_native.config_management.algorithm import ConfigManager
 
-        self.algorithm = config_management
+        self.algorithm = ConfigManager
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

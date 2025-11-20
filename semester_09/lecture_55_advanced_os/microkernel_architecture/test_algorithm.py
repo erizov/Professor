@@ -20,11 +20,9 @@ class TestMicrokernelarchitecture(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_55_advanced_os.microkernel_architecture.algorithm import (
-            microkernel_architecture,
-        )
+        from semester_09.lecture_55_advanced_os.microkernel_architecture.algorithm import MicrokernelArchitecture
 
-        self.algorithm = microkernel_architecture
+        self.algorithm = MicrokernelArchitecture
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

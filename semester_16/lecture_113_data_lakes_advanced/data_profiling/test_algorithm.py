@@ -20,11 +20,9 @@ class TestDataprofiling(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_113_data_lakes_advanced.data_profiling.algorithm import (
-            data_profiling,
-        )
+        from semester_16.lecture_113_data_lakes_advanced.data_profiling.algorithm import DataProfiling
 
-        self.algorithm = data_profiling
+        self.algorithm = DataProfiling
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

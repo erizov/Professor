@@ -20,11 +20,9 @@ class TestContinuousdeployment(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_42_ci_cd_fundamentals.continuous_deployment.algorithm import (
-            continuous_deployment,
-        )
+        from semester_07.lecture_42_ci_cd_fundamentals.continuous_deployment.algorithm import ContinuousDeployment
 
-        self.algorithm = continuous_deployment
+        self.algorithm = ContinuousDeployment
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

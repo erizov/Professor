@@ -20,11 +20,9 @@ class TestColumnlevelsecurity(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_109_database_security_advanced.column_level_security.algorithm import (
-            column_level_security,
-        )
+        from semester_15.lecture_109_database_security_advanced.column_level_security.algorithm import ColumnLevelSecurity
 
-        self.algorithm = column_level_security
+        self.algorithm = ColumnLevelSecurity
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

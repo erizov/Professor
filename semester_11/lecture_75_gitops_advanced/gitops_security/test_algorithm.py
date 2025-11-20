@@ -20,11 +20,9 @@ class TestGitopssecurity(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_75_gitops_advanced.gitops_security.algorithm import (
-            gitops_security,
-        )
+        from semester_11.lecture_75_gitops_advanced.gitops_security.algorithm import GitOpsSecurity
 
-        self.algorithm = gitops_security
+        self.algorithm = GitOpsSecurity
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestSecuritypatterns(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_90_blockchain_security.security_patterns.algorithm import (
-            security_patterns,
-        )
+        from semester_13.lecture_90_blockchain_security.security_patterns.algorithm import SecurityPatterns
 
-        self.algorithm = security_patterns
+        self.algorithm = SecurityPatterns
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

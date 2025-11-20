@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_06.lecture_33_model_optimization.tensorrt;
  * Tensorrt implementation.
  */
 public class Algorithm {
@@ -26,7 +27,7 @@ public class Algorithm {
      */
     public int inference(String model_id, List<Object> input_data) {
         logger.info("Executing inference");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

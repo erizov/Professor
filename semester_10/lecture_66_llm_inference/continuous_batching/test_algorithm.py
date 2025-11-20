@@ -20,11 +20,9 @@ class TestContinuousbatching(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_66_llm_inference.continuous_batching.algorithm import (
-            continuous_batching,
-        )
+        from semester_10.lecture_66_llm_inference.continuous_batching.algorithm import ContinuousBatching
 
-        self.algorithm = continuous_batching
+        self.algorithm = ContinuousBatching
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

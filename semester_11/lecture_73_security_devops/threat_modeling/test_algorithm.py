@@ -20,11 +20,9 @@ class TestThreatmodeling(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_73_security_devops.threat_modeling.algorithm import (
-            threat_modeling,
-        )
+        from semester_11.lecture_73_security_devops.threat_modeling.algorithm import ThreatModeling
 
-        self.algorithm = threat_modeling
+        self.algorithm = ThreatModeling
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

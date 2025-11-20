@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_08.lecture_54_data_modeling.data_warehousing;
  * Data Warehousing implementation.
  */
 public class Algorithm {

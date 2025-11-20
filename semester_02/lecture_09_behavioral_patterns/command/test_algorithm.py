@@ -20,9 +20,9 @@ class TestCommand(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_09_behavioral_patterns.command.algorithm import execute
+        from semester_02.lecture_09_behavioral_patterns.command.algorithm import Command
 
-        self.algorithm = execute
+        self.algorithm = Command
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

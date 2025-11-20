@@ -2,6 +2,7 @@ import java.util.*;
 import java.util.logging.Logger;
 
 /**
+package semester_01.lecture_09_graph_algorithms.bfs;
  * Bfs implementation.
  */
     public static List<Integer> bfs(Map<Integer, List<Integer>> graph, int start) {

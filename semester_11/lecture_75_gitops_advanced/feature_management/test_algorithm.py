@@ -20,11 +20,9 @@ class TestFeaturemanagement(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_75_gitops_advanced.feature_management.algorithm import (
-            feature_management,
-        )
+        from semester_11.lecture_75_gitops_advanced.feature_management.algorithm import FeatureManagement
 
-        self.algorithm = feature_management
+        self.algorithm = FeatureManagement
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

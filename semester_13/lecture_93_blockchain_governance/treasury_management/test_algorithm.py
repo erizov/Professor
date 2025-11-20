@@ -20,11 +20,9 @@ class TestTreasurymanagement(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_93_blockchain_governance.treasury_management.algorithm import (
-            treasury_management,
-        )
+        from semester_13.lecture_93_blockchain_governance.treasury_management.algorithm import TreasuryManagement
 
-        self.algorithm = treasury_management
+        self.algorithm = TreasuryManagement
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

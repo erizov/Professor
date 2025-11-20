@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_08.lecture_49_sql_fundamentals.indexes;
  * Indexes implementation.
  */
 public class Algorithm {
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int search(Object value) {
         logger.info("Executing search");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -33,7 +34,7 @@ public class Algorithm {
      */
     public int range_search(Object min_value, Object max_value) {
         logger.info("Executing range_search");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

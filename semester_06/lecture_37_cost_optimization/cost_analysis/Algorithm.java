@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_06.lecture_37_cost_optimization.cost_analysis;
  * Cost Analysis implementation.
  */
 public class Algorithm {
@@ -26,7 +27,7 @@ public class Algorithm {
      */
     public int get_total_cost(Object start_time, Object end_time) {
         logger.info("Executing get_total_cost");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -42,7 +43,7 @@ public class Algorithm {
      */
     public int get_average_cost(String category) {
         logger.info("Executing get_average_cost");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

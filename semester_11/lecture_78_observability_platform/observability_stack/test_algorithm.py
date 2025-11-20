@@ -20,11 +20,9 @@ class TestObservabilitystack(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_78_observability_platform.observability_stack.algorithm import (
-            observability_stack,
-        )
+        from semester_11.lecture_78_observability_platform.observability_stack.algorithm import ObservabilityStack
 
-        self.algorithm = observability_stack
+        self.algorithm = ObservabilityStack
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestParallelalgorithms(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_58_parallel_computing.parallel_algorithms.algorithm import (
-            parallel_algorithms,
-        )
+        from semester_09.lecture_58_parallel_computing.parallel_algorithms.algorithm import ParallelAlgorithms
 
-        self.algorithm = parallel_algorithms
+        self.algorithm = ParallelAlgorithms
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

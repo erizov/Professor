@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_06.lecture_33_model_optimization.knowledge_distillation;
  * Knowledge Distillation implementation.
  */
 public class Algorithm {
@@ -41,7 +42,7 @@ public class Algorithm {
      */
     public int soft_targets(List<Object> logits) {
         logger.info("Executing soft_targets");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

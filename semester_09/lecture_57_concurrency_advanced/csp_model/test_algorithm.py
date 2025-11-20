@@ -20,11 +20,9 @@ class TestCspmodel(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_57_concurrency_advanced.csp_model.algorithm import (
-            csp_model,
-        )
+        from semester_09.lecture_57_concurrency_advanced.csp_model.algorithm import CSPModel
 
-        self.algorithm = csp_model
+        self.algorithm = CSPModel
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

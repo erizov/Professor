@@ -1,4 +1,5 @@
 /**
+package semester_04.lecture_17_performance.rate_limiting;
  * Rate Limiting Pattern.
  * 
  * Controls the rate of requests sent or received to prevent abuse,

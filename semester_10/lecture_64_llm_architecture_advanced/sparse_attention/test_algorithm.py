@@ -20,11 +20,9 @@ class TestSparseattention(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_64_llm_architecture_advanced.sparse_attention.algorithm import (
-            sparse_attention,
-        )
+        from semester_10.lecture_64_llm_architecture_advanced.sparse_attention.algorithm import SparseAttention
 
-        self.algorithm = sparse_attention
+        self.algorithm = SparseAttention
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

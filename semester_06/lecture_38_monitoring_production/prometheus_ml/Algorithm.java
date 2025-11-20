@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_06.lecture_38_monitoring_production.prometheus_ml;
  * Prometheus Ml implementation.
  */
 public class Algorithm {
@@ -35,7 +36,7 @@ public class Algorithm {
      */
     public int get_metric_value(String metric_name) {
         logger.info("Executing get_metric_value");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

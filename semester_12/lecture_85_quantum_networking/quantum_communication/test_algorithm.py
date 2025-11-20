@@ -20,11 +20,9 @@ class TestQuantumcommunication(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_12.lecture_85_quantum_networking.quantum_communication.algorithm import (
-            quantum_communication,
-        )
+        from semester_12.lecture_85_quantum_networking.quantum_communication.algorithm import QuantumCommunication
 
-        self.algorithm = quantum_communication
+        self.algorithm = QuantumCommunication
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

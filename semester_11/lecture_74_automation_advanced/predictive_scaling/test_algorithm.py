@@ -20,11 +20,9 @@ class TestPredictivescaling(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_74_automation_advanced.predictive_scaling.algorithm import (
-            predictive_scaling,
-        )
+        from semester_11.lecture_74_automation_advanced.predictive_scaling.algorithm import PredictiveScaling
 
-        self.algorithm = predictive_scaling
+        self.algorithm = PredictiveScaling
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

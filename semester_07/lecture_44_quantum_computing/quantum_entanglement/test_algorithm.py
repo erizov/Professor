@@ -20,11 +20,9 @@ class TestQuantumentanglement(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_44_quantum_computing.quantum_entanglement.algorithm import (
-            quantum_entanglement,
-        )
+        from semester_07.lecture_44_quantum_computing.quantum_entanglement.algorithm import QuantumEntanglement
 
-        self.algorithm = quantum_entanglement
+        self.algorithm = QuantumEntanglement
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

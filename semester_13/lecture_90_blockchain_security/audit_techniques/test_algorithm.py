@@ -20,11 +20,9 @@ class TestAudittechniques(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_90_blockchain_security.audit_techniques.algorithm import (
-            audit_techniques,
-        )
+        from semester_13.lecture_90_blockchain_security.audit_techniques.algorithm import AuditTechniques
 
-        self.algorithm = audit_techniques
+        self.algorithm = AuditTechniques
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

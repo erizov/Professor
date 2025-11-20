@@ -20,11 +20,9 @@ class TestEscalationprocedures(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_47_support_systems.escalation_procedures.algorithm import (
-            escalation_procedures,
-        )
+        from semester_08.lecture_47_support_systems.escalation_procedures.algorithm import EscalationProcedures
 
-        self.algorithm = escalation_procedures
+        self.algorithm = EscalationProcedures
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

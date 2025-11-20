@@ -20,11 +20,9 @@ class TestContributionmanagement(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_102_community_management.contribution_management.algorithm import (
-            contribution_management,
-        )
+        from semester_14.lecture_102_community_management.contribution_management.algorithm import ContributionManagement
 
-        self.algorithm = contribution_management
+        self.algorithm = ContributionManagement
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

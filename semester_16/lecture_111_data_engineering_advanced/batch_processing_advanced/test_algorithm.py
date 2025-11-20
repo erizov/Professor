@@ -20,11 +20,9 @@ class TestBatchprocessingadvanced(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_111_data_engineering_advanced.batch_processing_advanced.algorithm import (
-            batch_processing_advanced,
-        )
+        from semester_16.lecture_111_data_engineering_advanced.batch_processing_advanced.algorithm import BatchProcessor
 
-        self.algorithm = batch_processing_advanced
+        self.algorithm = BatchProcessor
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

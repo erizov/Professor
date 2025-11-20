@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_05.lecture_27_hyperparameter_optimization.optuna;
  * Optuna implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int suggest_float(String name, Object low, Object high) {
         logger.info("Executing suggest_float");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int suggest_int(String name, Object low, Object high) {
         logger.info("Executing suggest_int");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

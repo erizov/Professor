@@ -20,11 +20,9 @@ class TestSpotinstances(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_37_cost_optimization.spot_instances.algorithm import (
-            spot_instances,
-        )
+        from semester_06.lecture_37_cost_optimization.spot_instances.algorithm import SpotInstances
 
-        self.algorithm = spot_instances
+        self.algorithm = SpotInstances
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

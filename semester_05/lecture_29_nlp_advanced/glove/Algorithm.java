@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_05.lecture_29_nlp_advanced.glove;
  * Glove implementation.
  */
 public class Algorithm {
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int get_embedding(String word) {
         logger.info("Executing get_embedding");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -33,7 +34,7 @@ public class Algorithm {
      */
     public int similarity(String word1, String word2) {
         logger.info("Executing similarity");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

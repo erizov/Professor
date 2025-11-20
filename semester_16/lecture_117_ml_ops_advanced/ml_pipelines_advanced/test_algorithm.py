@@ -20,11 +20,9 @@ class TestMlpipelinesadvanced(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_117_ml_ops_advanced.ml_pipelines_advanced.algorithm import (
-            ml_pipelines_advanced,
-        )
+        from semester_16.lecture_117_ml_ops_advanced.ml_pipelines_advanced.algorithm import AdvancedMLPipeline
 
-        self.algorithm = ml_pipelines_advanced
+        self.algorithm = AdvancedMLPipeline
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

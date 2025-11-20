@@ -20,11 +20,9 @@ class TestAudittrails(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_70_ai_governance.audit_trails.algorithm import (
-            audit_trails,
-        )
+        from semester_10.lecture_70_ai_governance.audit_trails.algorithm import AuditTrail
 
-        self.algorithm = audit_trails
+        self.algorithm = AuditTrail
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

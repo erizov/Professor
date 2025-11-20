@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_08.lecture_48_documentation.technical_writing;
  * Technical Writing implementation.
  */
 public class Algorithm {

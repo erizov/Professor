@@ -20,11 +20,9 @@ class TestSidechains(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_87_blockchain_advanced.sidechains.algorithm import (
-            sidechains,
-        )
+        from semester_13.lecture_87_blockchain_advanced.sidechains.algorithm import Sidechains
 
-        self.algorithm = sidechains
+        self.algorithm = Sidechains
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestDatasharing(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_118_data_platforms.data_sharing.algorithm import (
-            data_sharing,
-        )
+        from semester_16.lecture_118_data_platforms.data_sharing.algorithm import DataSharing
 
-        self.algorithm = data_sharing
+        self.algorithm = DataSharing
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

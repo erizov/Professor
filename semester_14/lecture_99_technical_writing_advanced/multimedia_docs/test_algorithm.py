@@ -20,11 +20,9 @@ class TestMultimediadocs(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_99_technical_writing_advanced.multimedia_docs.algorithm import (
-            multimedia_docs,
-        )
+        from semester_14.lecture_99_technical_writing_advanced.multimedia_docs.algorithm import MultimediaDocs
 
-        self.algorithm = multimedia_docs
+        self.algorithm = MultimediaDocs
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

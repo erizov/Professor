@@ -20,11 +20,9 @@ class TestSentimentanalysis(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_95_support_advanced.sentiment_analysis.algorithm import (
-            sentiment_analysis,
-        )
+        from semester_14.lecture_95_support_advanced.sentiment_analysis.algorithm import SentimentAnalysis
 
-        self.algorithm = sentiment_analysis
+        self.algorithm = SentimentAnalysis
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

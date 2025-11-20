@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_07.lecture_39_operating_systems.file_systems;
  * File Systems implementation.
  */
 public class Algorithm {
@@ -27,7 +28,7 @@ public class Algorithm {
     public String read_file(String path) {
         logger.info("Executing read_file");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return "";  // FIXME: Changed from Map to String
     }
 
     /**

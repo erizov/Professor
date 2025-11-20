@@ -20,11 +20,9 @@ class TestIncidentprediction(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_96_incident_management_advanced.incident_prediction.algorithm import (
-            incident_prediction,
-        )
+        from semester_14.lecture_96_incident_management_advanced.incident_prediction.algorithm import IncidentPrediction
 
-        self.algorithm = incident_prediction
+        self.algorithm = IncidentPrediction
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

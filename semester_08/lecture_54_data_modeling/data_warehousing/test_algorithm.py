@@ -20,11 +20,9 @@ class TestDatawarehousing(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_54_data_modeling.data_warehousing.algorithm import (
-            data_warehousing,
-        )
+        from semester_08.lecture_54_data_modeling.data_warehousing.algorithm import DataWarehouse
 
-        self.algorithm = data_warehousing
+        self.algorithm = DataWarehouse
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

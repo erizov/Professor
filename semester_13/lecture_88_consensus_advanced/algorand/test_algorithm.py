@@ -20,11 +20,9 @@ class TestAlgorand(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_88_consensus_advanced.algorand.algorithm import (
-            algorand,
-        )
+        from semester_13.lecture_88_consensus_advanced.algorand.algorithm import Algorand
 
-        self.algorithm = algorand
+        self.algorithm = Algorand
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

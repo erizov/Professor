@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_04.lecture_19_distributed_patterns.gossip_protocol;
  * Gossip Protocol implementation.
  */
 public class Algorithm {

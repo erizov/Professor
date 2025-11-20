@@ -20,11 +20,9 @@ class TestNosqlconsistencymodels(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_106_nosql_advanced_topics.nosql_consistency_models.algorithm import (
-            nosql_consistency_models,
-        )
+        from semester_15.lecture_106_nosql_advanced_topics.nosql_consistency_models.algorithm import NoSQLConsistencyModels
 
-        self.algorithm = nosql_consistency_models
+        self.algorithm = NoSQLConsistencyModels
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

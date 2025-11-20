@@ -20,11 +20,9 @@ class TestQuantumdatabase(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_12.lecture_81_quantum_applications.quantum_database.algorithm import (
-            quantum_database,
-        )
+        from semester_12.lecture_81_quantum_applications.quantum_database.algorithm import QuantumDatabase
 
-        self.algorithm = quantum_database
+        self.algorithm = QuantumDatabase
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

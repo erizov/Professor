@@ -20,11 +20,9 @@ class TestMetalearning(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_63_ai_advanced.meta_learning.algorithm import (
-            meta_learning,
-        )
+        from semester_10.lecture_63_ai_advanced.meta_learning.algorithm import MetaLearning
 
-        self.algorithm = meta_learning
+        self.algorithm = MetaLearning
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

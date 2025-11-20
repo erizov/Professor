@@ -20,11 +20,9 @@ class TestCanarydeployment(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_43_ci_cd_advanced.canary_deployment.algorithm import (
-            canary_deployment,
-        )
+        from semester_07.lecture_43_ci_cd_advanced.canary_deployment.algorithm import CanaryDeployment
 
-        self.algorithm = canary_deployment
+        self.algorithm = CanaryDeployment
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

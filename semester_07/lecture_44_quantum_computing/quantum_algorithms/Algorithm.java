@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_07.lecture_44_quantum_computing.quantum_algorithms;
  * Quantum Algorithms implementation.
  */
 public class Algorithm {
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int grover_search(Object n_qubits, Object target) {
         logger.info("Executing grover_search");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -33,7 +34,7 @@ public class Algorithm {
      */
     public int shor_factorization(Object n) {
         logger.info("Executing shor_factorization");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

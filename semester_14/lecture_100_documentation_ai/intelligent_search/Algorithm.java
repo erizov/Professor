@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_14.lecture_100_documentation_ai.intelligent_search;
  * Intelligent Search implementation.
  */
 public class Algorithm {
@@ -35,7 +36,7 @@ public class Algorithm {
     public List<Object> search(String query, Object top_k) {
         logger.info("Executing search");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return new ArrayList<>();  // FIXME: Changed from Map to List
     }
 
     public static Algorithm create() {

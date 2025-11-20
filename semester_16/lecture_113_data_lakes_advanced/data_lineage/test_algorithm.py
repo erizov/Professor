@@ -20,11 +20,9 @@ class TestDatalineage(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_113_data_lakes_advanced.data_lineage.algorithm import (
-            data_lineage,
-        )
+        from semester_16.lecture_113_data_lakes_advanced.data_lineage.algorithm import DataLineage
 
-        self.algorithm = data_lineage
+        self.algorithm = DataLineage
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

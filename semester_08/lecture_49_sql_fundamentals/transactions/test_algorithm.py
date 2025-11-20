@@ -20,11 +20,9 @@ class TestTransactions(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_49_sql_fundamentals.transactions.algorithm import (
-            transactions,
-        )
+        from semester_08.lecture_49_sql_fundamentals.transactions.algorithm import Transactions
 
-        self.algorithm = transactions
+        self.algorithm = Transactions
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

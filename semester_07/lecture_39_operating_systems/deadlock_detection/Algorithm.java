@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_07.lecture_39_operating_systems.deadlock_detection;
  * Deadlock Detection implementation.
  */
 public class Algorithm {
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int detect_deadlock() {
         logger.info("Executing detect_deadlock");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

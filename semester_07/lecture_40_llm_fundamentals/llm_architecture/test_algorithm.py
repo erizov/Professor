@@ -20,11 +20,9 @@ class TestLlmarchitecture(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_40_llm_fundamentals.llm_architecture.algorithm import (
-            llm_architecture,
-        )
+        from semester_07.lecture_40_llm_fundamentals.llm_architecture.algorithm import LLMArchitecture
 
-        self.algorithm = llm_architecture
+        self.algorithm = LLMArchitecture
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

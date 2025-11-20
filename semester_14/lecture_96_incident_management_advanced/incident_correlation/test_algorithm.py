@@ -20,11 +20,9 @@ class TestIncidentcorrelation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_96_incident_management_advanced.incident_correlation.algorithm import (
-            incident_correlation,
-        )
+        from semester_14.lecture_96_incident_management_advanced.incident_correlation.algorithm import IncidentCorrelation
 
-        self.algorithm = incident_correlation
+        self.algorithm = IncidentCorrelation
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

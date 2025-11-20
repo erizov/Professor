@@ -20,11 +20,9 @@ class TestVirtualmemory(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_39_operating_systems.virtual_memory.algorithm import (
-            virtual_memory,
-        )
+        from semester_07.lecture_39_operating_systems.virtual_memory.algorithm import VirtualMemory
 
-        self.algorithm = virtual_memory
+        self.algorithm = VirtualMemory
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

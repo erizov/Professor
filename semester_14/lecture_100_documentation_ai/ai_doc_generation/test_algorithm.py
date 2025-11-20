@@ -20,11 +20,9 @@ class TestAidocgeneration(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_100_documentation_ai.ai_doc_generation.algorithm import (
-            ai_doc_generation,
-        )
+        from semester_14.lecture_100_documentation_ai.ai_doc_generation.algorithm import AIDocGeneration
 
-        self.algorithm = ai_doc_generation
+        self.algorithm = AIDocGeneration
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

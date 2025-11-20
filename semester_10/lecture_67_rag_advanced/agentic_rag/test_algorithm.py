@@ -20,11 +20,9 @@ class TestAgenticrag(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_67_rag_advanced.agentic_rag.algorithm import (
-            agentic_rag,
-        )
+        from semester_10.lecture_67_rag_advanced.agentic_rag.algorithm import AgenticRAG
 
-        self.algorithm = agentic_rag
+        self.algorithm = AgenticRAG
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

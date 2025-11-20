@@ -20,11 +20,9 @@ class TestDataparallelism(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_32_distributed_ml.data_parallelism.algorithm import (
-            data_parallelism,
-        )
+        from semester_06.lecture_32_distributed_ml.data_parallelism.algorithm import DataParallelism
 
-        self.algorithm = data_parallelism
+        self.algorithm = DataParallelism
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

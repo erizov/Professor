@@ -20,11 +20,9 @@ class TestDatapipelinecicd(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_116_data_ops.data_pipeline_ci_cd.algorithm import (
-            data_pipeline_ci_cd,
-        )
+        from semester_16.lecture_116_data_ops.data_pipeline_ci_cd.algorithm import DataPipelineCICD
 
-        self.algorithm = data_pipeline_ci_cd
+        self.algorithm = DataPipelineCICD
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestQuantumteleportation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_12.lecture_79_quantum_algorithms_advanced.quantum_teleportation.algorithm import (
-            quantum_teleportation,
-        )
+        from semester_12.lecture_79_quantum_algorithms_advanced.quantum_teleportation.algorithm import QuantumTeleportation
 
-        self.algorithm = quantum_teleportation
+        self.algorithm = QuantumTeleportation
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

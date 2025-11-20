@@ -20,11 +20,9 @@ class TestQueryoptimization(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_50_sql_advanced.query_optimization.algorithm import (
-            query_optimization,
-        )
+        from semester_08.lecture_50_sql_advanced.query_optimization.algorithm import QueryOptimization
 
-        self.algorithm = query_optimization
+        self.algorithm = QueryOptimization
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

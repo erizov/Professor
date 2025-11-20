@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_12.lecture_79_quantum_algorithms_advanced.quantum_error_correction;
  * Quantum Error Correction implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int encode(String code_name, Object logical_qubit) {
         logger.info("Executing encode");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int detect_error(String code_name, List<Object> physical_qubits) {
         logger.info("Executing detect_error");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -33,7 +34,7 @@ public class Algorithm {
      */
     public int correct_error(String code_name, List<Object> physical_qubits, List<Object> errors) {
         logger.info("Executing correct_error");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

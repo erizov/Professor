@@ -20,11 +20,9 @@ class TestModelparallelism(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_32_distributed_ml.model_parallelism.algorithm import (
-            model_parallelism,
-        )
+        from semester_06.lecture_32_distributed_ml.model_parallelism.algorithm import ModelParallelism
 
-        self.algorithm = model_parallelism
+        self.algorithm = ModelParallelism
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

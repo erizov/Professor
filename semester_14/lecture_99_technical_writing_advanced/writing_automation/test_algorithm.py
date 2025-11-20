@@ -20,11 +20,9 @@ class TestWritingautomation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_99_technical_writing_advanced.writing_automation.algorithm import (
-            writing_automation,
-        )
+        from semester_14.lecture_99_technical_writing_advanced.writing_automation.algorithm import WritingAutomation
 
-        self.algorithm = writing_automation
+        self.algorithm = WritingAutomation
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

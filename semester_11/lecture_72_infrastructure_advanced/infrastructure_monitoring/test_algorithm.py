@@ -20,11 +20,9 @@ class TestInfrastructuremonitoring(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_72_infrastructure_advanced.infrastructure_monitoring.algorithm import (
-            infrastructure_monitoring,
-        )
+        from semester_11.lecture_72_infrastructure_advanced.infrastructure_monitoring.algorithm import InfrastructureMonitoring
 
-        self.algorithm = infrastructure_monitoring
+        self.algorithm = InfrastructureMonitoring
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

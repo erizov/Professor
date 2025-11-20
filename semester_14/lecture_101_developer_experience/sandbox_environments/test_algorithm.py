@@ -20,11 +20,9 @@ class TestSandboxenvironments(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_101_developer_experience.sandbox_environments.algorithm import (
-            sandbox_environments,
-        )
+        from semester_14.lecture_101_developer_experience.sandbox_environments.algorithm import SandboxEnvironments
 
-        self.algorithm = sandbox_environments
+        self.algorithm = SandboxEnvironments
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

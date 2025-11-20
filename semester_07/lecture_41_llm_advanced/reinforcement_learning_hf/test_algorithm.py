@@ -20,11 +20,9 @@ class TestReinforcementlearninghf(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_41_llm_advanced.reinforcement_learning_hf.algorithm import (
-            reinforcement_learning_hf,
-        )
+        from semester_07.lecture_41_llm_advanced.reinforcement_learning_hf.algorithm import ReinforcementLearningHF
 
-        self.algorithm = reinforcement_learning_hf
+        self.algorithm = ReinforcementLearningHF
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

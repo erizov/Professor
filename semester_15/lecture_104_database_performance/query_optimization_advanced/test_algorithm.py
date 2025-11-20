@@ -20,11 +20,9 @@ class TestQueryoptimizationadvanced(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_104_database_performance.query_optimization_advanced.algorithm import (
-            query_optimization_advanced,
-        )
+        from semester_15.lecture_104_database_performance.query_optimization_advanced.algorithm import AdvancedQueryOptimization
 
-        self.algorithm = query_optimization_advanced
+        self.algorithm = AdvancedQueryOptimization
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

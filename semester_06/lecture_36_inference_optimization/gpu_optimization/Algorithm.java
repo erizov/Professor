@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_06.lecture_36_inference_optimization.gpu_optimization;
  * Gpu Optimization implementation.
  */
 public class Algorithm {
@@ -18,7 +19,7 @@ public class Algorithm {
     public boolean apply_optimization(String opt_name, Object config) {
         logger.info("Executing apply_optimization");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return false;  // FIXME: Changed from Map to boolean
     }
 
     /**

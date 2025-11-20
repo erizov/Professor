@@ -20,11 +20,9 @@ class TestEventualconsistency(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_59_distributed_systems_advanced.eventual_consistency.algorithm import (
-            eventual_consistency,
-        )
+        from semester_09.lecture_59_distributed_systems_advanced.eventual_consistency.algorithm import EventualConsistency
 
-        self.algorithm = eventual_consistency
+        self.algorithm = EventualConsistency
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

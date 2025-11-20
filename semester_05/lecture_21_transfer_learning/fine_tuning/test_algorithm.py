@@ -20,11 +20,9 @@ class TestFinetuning(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_21_transfer_learning.fine_tuning.algorithm import (
-            fine_tuning,
-        )
+        from semester_05.lecture_21_transfer_learning.fine_tuning.algorithm import FineTuning
 
-        self.algorithm = fine_tuning
+        self.algorithm = FineTuning
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -1,6 +1,7 @@
 import java.util.*;
 
 /**
+package semester_03.lecture_10_graph_algorithms.bellman_ford;
  * Bellman-Ford Algorithm implementation.
  * 
  * Finds shortest paths with negative weights and detects negative cycles.
@@ -204,7 +205,7 @@ public class Algorithm {
         logger.info("Negative cycle detected: " + 
                          result2.hasNegativeCycle);
         if (result2.hasNegativeCycle) {
-            logger.info("⚠️  Warning: Graph contains negative cycle!");
+            logger.info("Warning:  Warning: Graph contains negative cycle!");
         }
         logger.info("");
         

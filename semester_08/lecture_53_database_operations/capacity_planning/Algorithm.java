@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_08.lecture_53_database_operations.capacity_planning;
  * Capacity Planning implementation.
  */
 public class Algorithm {
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int predict_future_usage(Object days) {
         logger.info("Executing predict_future_usage");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -33,7 +34,7 @@ public class Algorithm {
      */
     public int recommend_capacity(Object target_utilization) {
         logger.info("Executing recommend_capacity");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -41,7 +42,7 @@ public class Algorithm {
      */
     public int calculate_growth_rate() {
         logger.info("Executing calculate_growth_rate");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

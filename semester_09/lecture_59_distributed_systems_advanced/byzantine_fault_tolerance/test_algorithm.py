@@ -20,11 +20,9 @@ class TestByzantinefaulttolerance(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_59_distributed_systems_advanced.byzantine_fault_tolerance.algorithm import (
-            byzantine_fault_tolerance,
-        )
+        from semester_09.lecture_59_distributed_systems_advanced.byzantine_fault_tolerance.algorithm import ByzantineFaultTolerance
 
-        self.algorithm = byzantine_fault_tolerance
+        self.algorithm = ByzantineFaultTolerance
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

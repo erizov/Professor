@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_08.lecture_51_nosql_fundamentals.graph_databases;
  * Graph Databases implementation.
  */
 public class Algorithm {
@@ -36,7 +37,7 @@ public class Algorithm {
     public List<Object> query(String cypher_like) {
         logger.info("Executing query");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return new ArrayList<>();  // FIXME: Changed from Map to List
     }
 
     public static Algorithm create() {

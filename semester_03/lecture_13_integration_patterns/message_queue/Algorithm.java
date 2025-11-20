@@ -1,4 +1,5 @@
 /**
+package semester_03.lecture_13_integration_patterns.message_queue;
  * Message Queue Pattern.
  * 
  * Asynchronous communication pattern where messages are sent to a queue

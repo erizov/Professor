@@ -20,11 +20,9 @@ class TestDataretention(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_115_data_governance_advanced.data_retention.algorithm import (
-            data_retention,
-        )
+        from semester_16.lecture_115_data_governance_advanced.data_retention.algorithm import DataRetention
 
-        self.algorithm = data_retention
+        self.algorithm = DataRetention
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

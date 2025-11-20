@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_10.lecture_68_llm_evaluation.evaluation_metrics;
  * Evaluation Metrics implementation.
  */
 public class Algorithm {
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int accuracy() {
         logger.info("Executing accuracy");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -33,7 +34,7 @@ public class Algorithm {
      */
     public int precision(Object positive_class) {
         logger.info("Executing precision");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -41,7 +42,7 @@ public class Algorithm {
      */
     public int recall(Object positive_class) {
         logger.info("Executing recall");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -49,7 +50,7 @@ public class Algorithm {
      */
     public int f1_score(Object positive_class) {
         logger.info("Executing f1_score");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -57,7 +58,7 @@ public class Algorithm {
      */
     public int confusion_matrix() {
         logger.info("Executing confusion_matrix");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

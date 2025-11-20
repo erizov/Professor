@@ -72,8 +72,8 @@ class TestJwt(AlgorithmTestCase):
 
     def test_multiple_instances(self):
         """Test multiple instance creation."""
-        instance1 = self.algorithm()
-        instance2 = self.algorithm()
+        instance1 = self.algorithm(None)  # FIXME: Provide required arguments
+        instance2 = self.algorithm(None)  # FIXME: Provide required arguments
         # Pattern-specific assertion
         self.assertIsNotNone(instance1)
         self.assertIsNotNone(instance2)
@@ -85,8 +85,8 @@ class TestJwt(AlgorithmTestCase):
 
     def test_pattern_behavior(self):
         """Test pattern-specific behavior."""
-        instance1 = self.algorithm()
-        instance2 = self.algorithm()
+        instance1 = self.algorithm(None)  # FIXME: Provide required arguments
+        instance2 = self.algorithm(None)  # FIXME: Provide required arguments
         # Pattern-specific assertion
         self.assertIsNotNone(instance1)
 

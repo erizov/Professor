@@ -20,11 +20,9 @@ class TestEncryptionatrest(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_109_database_security_advanced.encryption_at_rest.algorithm import (
-            encryption_at_rest,
-        )
+        from semester_15.lecture_109_database_security_advanced.encryption_at_rest.algorithm import EncryptionAtRest
 
-        self.algorithm = encryption_at_rest
+        self.algorithm = EncryptionAtRest
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

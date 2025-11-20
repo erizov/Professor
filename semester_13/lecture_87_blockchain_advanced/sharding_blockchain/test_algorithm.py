@@ -20,11 +20,9 @@ class TestShardingblockchain(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_87_blockchain_advanced.sharding_blockchain.algorithm import (
-            sharding_blockchain,
-        )
+        from semester_13.lecture_87_blockchain_advanced.sharding_blockchain.algorithm import ShardingBlockchain
 
-        self.algorithm = sharding_blockchain
+        self.algorithm = ShardingBlockchain
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

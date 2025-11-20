@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_07.lecture_46_blockchain_advanced.cryptocurrency_wallets;
  * Cryptocurrency Wallets implementation.
  */
 public class Algorithm {
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int get_balance(String address) {
         logger.info("Executing get_balance");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

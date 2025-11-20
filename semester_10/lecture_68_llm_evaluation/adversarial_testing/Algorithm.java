@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_10.lecture_68_llm_evaluation.adversarial_testing;
  * Adversarial Testing implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int generate_adversarial_example(Object model, List<Object> original_input, Object epsilon) {
         logger.info("Executing generate_adversarial_example");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

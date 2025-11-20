@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_12.lecture_86_quantum_security.quantum_resistant;
  * Quantum Resistant implementation.
  */
 public class Algorithm {
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int encrypt(String message, List<Object> public_key) {
         logger.info("Executing encrypt");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

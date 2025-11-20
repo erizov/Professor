@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_07.lecture_41_llm_advanced.llm_distillation;
  * Llm Distillation implementation.
  */
 public class Algorithm {
@@ -41,7 +42,7 @@ public class Algorithm {
      */
     public int soft_labels(List<Object> logits) {
         logger.info("Executing soft_labels");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

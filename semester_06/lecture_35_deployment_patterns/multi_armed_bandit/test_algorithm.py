@@ -20,11 +20,9 @@ class TestMultiarmedbandit(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_35_deployment_patterns.multi_armed_bandit.algorithm import (
-            multi_armed_bandit,
-        )
+        from semester_06.lecture_35_deployment_patterns.multi_armed_bandit.algorithm import MultiArmedBandit
 
-        self.algorithm = multi_armed_bandit
+        self.algorithm = MultiArmedBandit
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestChaosengineeringadvanced(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_62_observability_advanced.chaos_engineering_advanced.algorithm import (
-            chaos_engineering_advanced,
-        )
+        from semester_09.lecture_62_observability_advanced.chaos_engineering_advanced.algorithm import AdvancedChaosEngineering
 
-        self.algorithm = chaos_engineering_advanced
+        self.algorithm = AdvancedChaosEngineering
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

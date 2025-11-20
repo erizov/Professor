@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_13.lecture_89_defi.lending_protocols;
  * Lending Protocols implementation.
  */
 public class Algorithm {
@@ -26,7 +27,7 @@ public class Algorithm {
      */
     public int calculate_interest(String loan_id, Object days) {
         logger.info("Executing calculate_interest");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

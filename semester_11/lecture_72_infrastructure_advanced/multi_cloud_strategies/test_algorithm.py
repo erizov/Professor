@@ -20,11 +20,9 @@ class TestMulticloudstrategies(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_72_infrastructure_advanced.multi_cloud_strategies.algorithm import (
-            multi_cloud_strategies,
-        )
+        from semester_11.lecture_72_infrastructure_advanced.multi_cloud_strategies.algorithm import MultiCloudStrategy
 
-        self.algorithm = multi_cloud_strategies
+        self.algorithm = MultiCloudStrategy
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestNaturallanguagedocs(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_100_documentation_ai.natural_language_docs.algorithm import (
-            natural_language_docs,
-        )
+        from semester_14.lecture_100_documentation_ai.natural_language_docs.algorithm import NaturalLanguageDocs
 
-        self.algorithm = natural_language_docs
+        self.algorithm = NaturalLanguageDocs
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

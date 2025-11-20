@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_09.lecture_57_concurrency_advanced.concurrent_data_structures;
  * Concurrent Data Structures implementation.
  */
 public class Algorithm {
@@ -33,7 +34,7 @@ public class Algorithm {
      */
     public int size() {
         logger.info("Executing size");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

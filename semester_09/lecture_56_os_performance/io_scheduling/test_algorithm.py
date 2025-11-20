@@ -20,11 +20,9 @@ class TestIoscheduling(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_56_os_performance.io_scheduling.algorithm import (
-            io_scheduling,
-        )
+        from semester_09.lecture_56_os_performance.io_scheduling.algorithm import IOScheduler
 
-        self.algorithm = io_scheduling
+        self.algorithm = IOScheduler
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

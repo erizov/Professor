@@ -20,11 +20,9 @@ class TestEfficientnet(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_22_cnn_architectures.efficientnet.algorithm import (
-            efficientnet,
-        )
+        from semester_05.lecture_22_cnn_architectures.efficientnet.algorithm import EfficientNet
 
-        self.algorithm = efficientnet
+        self.algorithm = EfficientNet
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

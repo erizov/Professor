@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_13.lecture_92_blockchain_interoperability.chain_abstraction;
  * Chain Abstraction implementation.
  */
 public class Algorithm {
@@ -33,7 +34,7 @@ public class Algorithm {
      */
     public int get_balance(String chain_id, String address) {
         logger.info("Executing get_balance");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

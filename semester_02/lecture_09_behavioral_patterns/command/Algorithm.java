@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_02.lecture_09_behavioral_patterns.command;
  * Command implementation.
  */
 public class Algorithm {

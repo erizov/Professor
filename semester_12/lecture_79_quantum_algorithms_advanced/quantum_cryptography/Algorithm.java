@@ -2,6 +2,7 @@ import java.util.*;
 import java.util.logging.Logger;
 
 /**
+package semester_12.lecture_79_quantum_algorithms_advanced.quantum_cryptography;
  * Quantum Cryptography implementation.
  */
     public static List<Integer> quantumcryptography(Map<Integer, List<Integer>> graph, int start) {

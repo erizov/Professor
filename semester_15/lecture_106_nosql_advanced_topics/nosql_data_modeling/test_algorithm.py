@@ -20,11 +20,9 @@ class TestNosqldatamodeling(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_106_nosql_advanced_topics.nosql_data_modeling.algorithm import (
-            nosql_data_modeling,
-        )
+        from semester_15.lecture_106_nosql_advanced_topics.nosql_data_modeling.algorithm import NoSQLDataModeling
 
-        self.algorithm = nosql_data_modeling
+        self.algorithm = NoSQLDataModeling
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestSlamanagement(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_47_support_systems.sla_management.algorithm import (
-            sla_management,
-        )
+        from semester_08.lecture_47_support_systems.sla_management.algorithm import SLAManagement
 
-        self.algorithm = sla_management
+        self.algorithm = SLAManagement
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

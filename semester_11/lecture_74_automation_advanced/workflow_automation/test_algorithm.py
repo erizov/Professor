@@ -20,11 +20,9 @@ class TestWorkflowautomation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_74_automation_advanced.workflow_automation.algorithm import (
-            workflow_automation,
-        )
+        from semester_11.lecture_74_automation_advanced.workflow_automation.algorithm import WorkflowAutomation
 
-        self.algorithm = workflow_automation
+        self.algorithm = WorkflowAutomation
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

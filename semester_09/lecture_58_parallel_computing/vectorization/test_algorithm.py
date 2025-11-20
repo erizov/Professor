@@ -20,11 +20,9 @@ class TestVectorization(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_58_parallel_computing.vectorization.algorithm import (
-            vectorization,
-        )
+        from semester_09.lecture_58_parallel_computing.vectorization.algorithm import Vectorization
 
-        self.algorithm = vectorization
+        self.algorithm = Vectorization
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

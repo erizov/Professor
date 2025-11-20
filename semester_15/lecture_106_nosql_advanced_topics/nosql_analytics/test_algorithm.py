@@ -20,11 +20,9 @@ class TestNosqlanalytics(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_106_nosql_advanced_topics.nosql_analytics.algorithm import (
-            nosql_analytics,
-        )
+        from semester_15.lecture_106_nosql_advanced_topics.nosql_analytics.algorithm import NoSQLAnalytics
 
-        self.algorithm = nosql_analytics
+        self.algorithm = NoSQLAnalytics
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

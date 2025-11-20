@@ -20,11 +20,9 @@ class TestActorcritic(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_28_reinforcement_learning.actor_critic.algorithm import (
-            actor_critic,
-        )
+        from semester_05.lecture_28_reinforcement_learning.actor_critic.algorithm import ActorCritic
 
-        self.algorithm = actor_critic
+        self.algorithm = ActorCritic
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

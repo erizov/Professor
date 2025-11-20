@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_02.lecture_09_behavioral_patterns.chain_of_responsibility;
  * Chain Of Responsibility implementation.
  */
 public class Algorithm {

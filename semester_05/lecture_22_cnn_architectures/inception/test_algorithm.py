@@ -20,11 +20,9 @@ class TestInception(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_22_cnn_architectures.inception.algorithm import (
-            inception,
-        )
+        from semester_05.lecture_22_cnn_architectures.inception.algorithm import Inception
 
-        self.algorithm = inception
+        self.algorithm = Inception
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

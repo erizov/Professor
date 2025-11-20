@@ -20,11 +20,9 @@ class TestDeveloperportals(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_76_platform_engineering.developer_portals.algorithm import (
-            developer_portals,
-        )
+        from semester_11.lecture_76_platform_engineering.developer_portals.algorithm import DeveloperPortal
 
-        self.algorithm = developer_portals
+        self.algorithm = DeveloperPortal
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

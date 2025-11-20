@@ -20,11 +20,9 @@ class TestServicediscovery(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_61_cloud_native.service_discovery.algorithm import (
-            service_discovery,
-        )
+        from semester_09.lecture_61_cloud_native.service_discovery.algorithm import ServiceDiscovery
 
-        self.algorithm = service_discovery
+        self.algorithm = ServiceDiscovery
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

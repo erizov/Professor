@@ -20,11 +20,9 @@ class TestConditionalexecution(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_71_cicd_advanced.conditional_execution.algorithm import (
-            conditional_execution,
-        )
+        from semester_11.lecture_71_cicd_advanced.conditional_execution.algorithm import ConditionalExecution
 
-        self.algorithm = conditional_execution
+        self.algorithm = ConditionalExecution
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

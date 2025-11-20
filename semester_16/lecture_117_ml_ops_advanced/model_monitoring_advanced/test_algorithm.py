@@ -20,11 +20,9 @@ class TestModelmonitoringadvanced(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_117_ml_ops_advanced.model_monitoring_advanced.algorithm import (
-            model_monitoring_advanced,
-        )
+        from semester_16.lecture_117_ml_ops_advanced.model_monitoring_advanced.algorithm import AdvancedModelMonitoring
 
-        self.algorithm = model_monitoring_advanced
+        self.algorithm = AdvancedModelMonitoring
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

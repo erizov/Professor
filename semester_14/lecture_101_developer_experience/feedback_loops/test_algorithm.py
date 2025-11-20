@@ -20,11 +20,9 @@ class TestFeedbackloops(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_101_developer_experience.feedback_loops.algorithm import (
-            feedback_loops,
-        )
+        from semester_14.lecture_101_developer_experience.feedback_loops.algorithm import FeedbackLoop
 
-        self.algorithm = feedback_loops
+        self.algorithm = FeedbackLoop
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

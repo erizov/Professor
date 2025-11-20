@@ -20,11 +20,9 @@ class TestLambdaarchitecture(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_111_data_engineering_advanced.lambda_architecture.algorithm import (
-            lambda_architecture,
-        )
+        from semester_16.lecture_111_data_engineering_advanced.lambda_architecture.algorithm import LambdaArchitecture
 
-        self.algorithm = lambda_architecture
+        self.algorithm = LambdaArchitecture
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

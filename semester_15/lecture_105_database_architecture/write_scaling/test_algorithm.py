@@ -20,11 +20,9 @@ class TestWritescaling(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_105_database_architecture.write_scaling.algorithm import (
-            write_scaling,
-        )
+        from semester_15.lecture_105_database_architecture.write_scaling.algorithm import WriteScaling
 
-        self.algorithm = write_scaling
+        self.algorithm = WriteScaling
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

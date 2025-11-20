@@ -20,11 +20,9 @@ class TestDistributedtransactions(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_59_distributed_systems_advanced.distributed_transactions.algorithm import (
-            distributed_transactions,
-        )
+        from semester_09.lecture_59_distributed_systems_advanced.distributed_transactions.algorithm import DistributedTransaction
 
-        self.algorithm = distributed_transactions
+        self.algorithm = DistributedTransaction
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

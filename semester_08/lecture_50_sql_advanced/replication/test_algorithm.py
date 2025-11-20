@@ -20,11 +20,9 @@ class TestReplication(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_50_sql_advanced.replication.algorithm import (
-            replication,
-        )
+        from semester_08.lecture_50_sql_advanced.replication.algorithm import Replication
 
-        self.algorithm = replication
+        self.algorithm = Replication
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

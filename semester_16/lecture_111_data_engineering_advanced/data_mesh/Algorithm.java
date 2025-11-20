@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_16.lecture_111_data_engineering_advanced.data_mesh;
  * Data Mesh implementation.
  */
 public class Algorithm {
@@ -36,7 +37,7 @@ public class Algorithm {
     public String discover_products(String domain) {
         logger.info("Executing discover_products");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return "";  // FIXME: Changed from Map to String
     }
 
     public static Algorithm create() {

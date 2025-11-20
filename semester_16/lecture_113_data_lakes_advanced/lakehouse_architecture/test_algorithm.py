@@ -20,11 +20,9 @@ class TestLakehousearchitecture(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_113_data_lakes_advanced.lakehouse_architecture.algorithm import (
-            lakehouse_architecture,
-        )
+        from semester_16.lecture_113_data_lakes_advanced.lakehouse_architecture.algorithm import LakehouseArchitecture
 
-        self.algorithm = lakehouse_architecture
+        self.algorithm = LakehouseArchitecture
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

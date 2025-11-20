@@ -20,11 +20,9 @@ class TestGrafanadashboards(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_38_monitoring_production.grafana_dashboards.algorithm import (
-            grafana_dashboards,
-        )
+        from semester_06.lecture_38_monitoring_production.grafana_dashboards.algorithm import GrafanaDashboard
 
-        self.algorithm = grafana_dashboards
+        self.algorithm = GrafanaDashboard
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

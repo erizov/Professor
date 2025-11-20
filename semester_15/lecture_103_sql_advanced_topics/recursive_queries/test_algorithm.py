@@ -20,11 +20,9 @@ class TestRecursivequeries(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_103_sql_advanced_topics.recursive_queries.algorithm import (
-            recursive_queries,
-        )
+        from semester_15.lecture_103_sql_advanced_topics.recursive_queries.algorithm import RecursiveQueries
 
-        self.algorithm = recursive_queries
+        self.algorithm = RecursiveQueries
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

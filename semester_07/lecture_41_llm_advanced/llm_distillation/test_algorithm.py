@@ -20,11 +20,9 @@ class TestLlmdistillation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_41_llm_advanced.llm_distillation.algorithm import (
-            llm_distillation,
-        )
+        from semester_07.lecture_41_llm_advanced.llm_distillation.algorithm import LLMDistillation
 
-        self.algorithm = llm_distillation
+        self.algorithm = LLMDistillation
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

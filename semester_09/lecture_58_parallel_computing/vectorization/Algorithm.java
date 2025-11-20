@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_09.lecture_58_parallel_computing.vectorization;
  * Vectorization implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int vectorize_operation(Object operation, List<Object> data) {
         logger.info("Executing vectorize_operation");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

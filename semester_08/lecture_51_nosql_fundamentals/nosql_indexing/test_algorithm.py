@@ -20,11 +20,9 @@ class TestNosqlindexing(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_51_nosql_fundamentals.nosql_indexing.algorithm import (
-            nosql_indexing,
-        )
+        from semester_08.lecture_51_nosql_fundamentals.nosql_indexing.algorithm import NoSQLIndexing
 
-        self.algorithm = nosql_indexing
+        self.algorithm = NoSQLIndexing
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

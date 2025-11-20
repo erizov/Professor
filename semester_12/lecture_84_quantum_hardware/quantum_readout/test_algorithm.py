@@ -20,11 +20,9 @@ class TestQuantumreadout(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_12.lecture_84_quantum_hardware.quantum_readout.algorithm import (
-            quantum_readout,
-        )
+        from semester_12.lecture_84_quantum_hardware.quantum_readout.algorithm import QuantumReadout
 
-        self.algorithm = quantum_readout
+        self.algorithm = QuantumReadout
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

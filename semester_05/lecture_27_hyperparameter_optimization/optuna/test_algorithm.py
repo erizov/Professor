@@ -20,11 +20,9 @@ class TestOptuna(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_27_hyperparameter_optimization.optuna.algorithm import (
-            optuna,
-        )
+        from semester_05.lecture_27_hyperparameter_optimization.optuna.algorithm import Optuna
 
-        self.algorithm = optuna
+        self.algorithm = Optuna
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,9 +20,7 @@ class TestFractionalknapsack(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_03.lecture_15_greedy_algorithms.fractional_knapsack.algorithm import (
-            fractional_knapsack,
-        )
+        from semester_03.lecture_15_greedy_algorithms.fractional_knapsack.algorithm import fractional_knapsack
 
         self.algorithm = fractional_knapsack
 
@@ -69,22 +67,22 @@ class TestFractionalknapsack(AlgorithmTestCase):
     def test_performance(self):
         """Test algorithm performance."""
         # TODO: Add performance test
-        # self.assert_performance(lambda: self.algorithm([...]), max_time_seconds=1.0)
+        # self.assert_performance(lambda: self.algorithm([...], "", ""), max_time_seconds=1.0)
         pass
 
     def test_small_input(self):
         """Test with small input."""
-        result = self.algorithm(1)
+        result = self.algorithm(1, "", "")
         self.assertEqual(result, 1)
 
     def test_zero_input(self):
         """Test with zero input."""
-        result = self.algorithm(0)
+        result = self.algorithm(0, "", "")
         self.assertEqual(result, 0)
 
     def test_large_input(self):
         """Test with large input."""
-        result = self.algorithm(100)
+        result = self.algorithm(100, "", "")
         self.assertIsNotNone(result)
         self.assertGreater(result, 0)
 

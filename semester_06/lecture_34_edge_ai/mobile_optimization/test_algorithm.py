@@ -20,11 +20,9 @@ class TestMobileoptimization(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_34_edge_ai.mobile_optimization.algorithm import (
-            mobile_optimization,
-        )
+        from semester_06.lecture_34_edge_ai.mobile_optimization.algorithm import MobileOptimization
 
-        self.algorithm = mobile_optimization
+        self.algorithm = MobileOptimization
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

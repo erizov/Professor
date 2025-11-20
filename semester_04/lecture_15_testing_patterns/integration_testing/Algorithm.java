@@ -1,4 +1,5 @@
 /**
+package semester_04.lecture_15_testing_patterns.integration_testing;
  * Integration Testing Pattern.
  * 
  * Tests the integration between different components, modules, or systems

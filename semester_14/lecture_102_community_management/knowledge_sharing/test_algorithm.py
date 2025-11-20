@@ -20,11 +20,9 @@ class TestKnowledgesharing(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_102_community_management.knowledge_sharing.algorithm import (
-            knowledge_sharing,
-        )
+        from semester_14.lecture_102_community_management.knowledge_sharing.algorithm import KnowledgeSharing
 
-        self.algorithm = knowledge_sharing
+        self.algorithm = KnowledgeSharing
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

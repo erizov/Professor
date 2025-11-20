@@ -20,11 +20,9 @@ class TestFeaturestoresadvanced(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_117_ml_ops_advanced.feature_stores_advanced.algorithm import (
-            feature_stores_advanced,
-        )
+        from semester_16.lecture_117_ml_ops_advanced.feature_stores_advanced.algorithm import AdvancedFeatureStore
 
-        self.algorithm = feature_stores_advanced
+        self.algorithm = AdvancedFeatureStore
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_15.lecture_104_database_performance.statistics_management;
  * Statistics Management implementation.
  */
 public class Algorithm {

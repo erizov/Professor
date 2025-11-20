@@ -20,11 +20,9 @@ class TestContainerruntimes(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_55_advanced_os.container_runtimes.algorithm import (
-            container_runtimes,
-        )
+        from semester_09.lecture_55_advanced_os.container_runtimes.algorithm import ContainerRuntime
 
-        self.algorithm = container_runtimes
+        self.algorithm = ContainerRuntime
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

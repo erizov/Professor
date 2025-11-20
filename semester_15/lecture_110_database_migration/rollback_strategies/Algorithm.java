@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_15.lecture_110_database_migration.rollback_strategies;
  * Rollback Strategies implementation.
  */
 public class Algorithm {
@@ -27,7 +28,7 @@ public class Algorithm {
         logger.info("Executing rollback");
         long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return false;  // FIXME: Changed from Map to boolean
     }
 
     public static Algorithm create() {

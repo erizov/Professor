@@ -20,11 +20,9 @@ class TestEventdrivenarchitecture(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_60_system_design_advanced.event_driven_architecture.algorithm import (
-            event_driven_architecture,
-        )
+        from semester_09.lecture_60_system_design_advanced.event_driven_architecture.algorithm import EventDrivenArchitecture
 
-        self.algorithm = event_driven_architecture
+        self.algorithm = EventDrivenArchitecture
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

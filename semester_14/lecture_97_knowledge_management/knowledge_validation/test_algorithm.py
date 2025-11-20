@@ -20,11 +20,9 @@ class TestKnowledgevalidation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_97_knowledge_management.knowledge_validation.algorithm import (
-            knowledge_validation,
-        )
+        from semester_14.lecture_97_knowledge_management.knowledge_validation.algorithm import KnowledgeValidation
 
-        self.algorithm = knowledge_validation
+        self.algorithm = KnowledgeValidation
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

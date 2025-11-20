@@ -20,11 +20,9 @@ class TestSyntheticmonitoring(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_62_observability_advanced.synthetic_monitoring.algorithm import (
-            synthetic_monitoring,
-        )
+        from semester_09.lecture_62_observability_advanced.synthetic_monitoring.algorithm import SyntheticMonitoring
 
-        self.algorithm = synthetic_monitoring
+        self.algorithm = SyntheticMonitoring
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

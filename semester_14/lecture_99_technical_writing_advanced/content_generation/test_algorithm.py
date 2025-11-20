@@ -20,11 +20,9 @@ class TestContentgeneration(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_99_technical_writing_advanced.content_generation.algorithm import (
-            content_generation,
-        )
+        from semester_14.lecture_99_technical_writing_advanced.content_generation.algorithm import ContentGeneration
 
-        self.algorithm = content_generation
+        self.algorithm = ContentGeneration
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

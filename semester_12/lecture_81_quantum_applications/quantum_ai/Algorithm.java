@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_12.lecture_81_quantum_applications.quantum_ai;
  * Quantum Ai implementation.
  */
 public class Algorithm {
@@ -33,7 +34,7 @@ public class Algorithm {
      */
     public int measure(Object qubit) {
         logger.info("Executing measure");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -41,7 +42,7 @@ public class Algorithm {
      */
     public int run() {
         logger.info("Executing run");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

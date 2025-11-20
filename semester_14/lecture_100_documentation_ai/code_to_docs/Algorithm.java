@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_14.lecture_100_documentation_ai.code_to_docs;
  * Code To Docs implementation.
  */
 public class Algorithm {

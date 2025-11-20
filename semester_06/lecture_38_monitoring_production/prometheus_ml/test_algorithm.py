@@ -20,11 +20,9 @@ class TestPrometheusml(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_38_monitoring_production.prometheus_ml.algorithm import (
-            prometheus_ml,
-        )
+        from semester_06.lecture_38_monitoring_production.prometheus_ml.algorithm import PrometheusML
 
-        self.algorithm = prometheus_ml
+        self.algorithm = PrometheusML
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestLayer2Solutions(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_46_blockchain_advanced.layer2_solutions.algorithm import (
-            layer2_solutions,
-        )
+        from semester_07.lecture_46_blockchain_advanced.layer2_solutions.algorithm import Layer2Solution
 
-        self.algorithm = layer2_solutions
+        self.algorithm = Layer2Solution
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

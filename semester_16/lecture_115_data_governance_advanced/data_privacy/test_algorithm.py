@@ -20,11 +20,9 @@ class TestDataprivacy(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_115_data_governance_advanced.data_privacy.algorithm import (
-            data_privacy,
-        )
+        from semester_16.lecture_115_data_governance_advanced.data_privacy.algorithm import DataPrivacy
 
-        self.algorithm = data_privacy
+        self.algorithm = DataPrivacy
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

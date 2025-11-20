@@ -20,11 +20,9 @@ class TestStatisticsmanagement(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_104_database_performance.statistics_management.algorithm import (
-            statistics_management,
-        )
+        from semester_15.lecture_104_database_performance.statistics_management.algorithm import StatisticsManagement
 
-        self.algorithm = statistics_management
+        self.algorithm = StatisticsManagement
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

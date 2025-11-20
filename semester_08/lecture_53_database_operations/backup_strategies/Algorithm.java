@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_08.lecture_53_database_operations.backup_strategies;
  * Backup Strategies implementation.
  */
 public class Algorithm {
@@ -35,7 +36,7 @@ public class Algorithm {
     public int cleanup_old_backups() {
         logger.info("Executing cleanup_old_backups");
         long timestamp = System.currentTimeMillis();
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

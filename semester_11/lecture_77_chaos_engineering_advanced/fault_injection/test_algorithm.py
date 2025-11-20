@@ -20,11 +20,9 @@ class TestFaultinjection(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_77_chaos_engineering_advanced.fault_injection.algorithm import (
-            fault_injection,
-        )
+        from semester_11.lecture_77_chaos_engineering_advanced.fault_injection.algorithm import FaultInjection
 
-        self.algorithm = fault_injection
+        self.algorithm = FaultInjection
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

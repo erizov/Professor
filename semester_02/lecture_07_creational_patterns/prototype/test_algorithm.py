@@ -20,9 +20,9 @@ class TestPrototype(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_07_creational_patterns.prototype.algorithm import clone
+        from semester_02.lecture_07_creational_patterns.prototype.algorithm import Prototype
 
-        self.algorithm = clone
+        self.algorithm = Prototype
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

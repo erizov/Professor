@@ -20,11 +20,9 @@ class TestIterator(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_09_behavioral_patterns.iterator.algorithm import (
-            has_next,
-        )
+        from semester_02.lecture_09_behavioral_patterns.iterator.algorithm import Iterator
 
-        self.algorithm = has_next
+        self.algorithm = Iterator
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

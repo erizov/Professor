@@ -20,11 +20,9 @@ class TestCpuschedulingadvanced(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_56_os_performance.cpu_scheduling_advanced.algorithm import (
-            cpu_scheduling_advanced,
-        )
+        from semester_09.lecture_56_os_performance.cpu_scheduling_advanced.algorithm import CPUSchedulerAdvanced
 
-        self.algorithm = cpu_scheduling_advanced
+        self.algorithm = CPUSchedulerAdvanced
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

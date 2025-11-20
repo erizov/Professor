@@ -20,11 +20,9 @@ class TestProofofwork(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_45_blockchain_fundamentals.proof_of_work.algorithm import (
-            proof_of_work,
-        )
+        from semester_07.lecture_45_blockchain_fundamentals.proof_of_work.algorithm import ProofOfWork
 
-        self.algorithm = proof_of_work
+        self.algorithm = ProofOfWork
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

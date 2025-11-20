@@ -20,11 +20,9 @@ class TestContinuousintegration(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_42_ci_cd_fundamentals.continuous_integration.algorithm import (
-            continuous_integration,
-        )
+        from semester_07.lecture_42_ci_cd_fundamentals.continuous_integration.algorithm import ContinuousIntegration
 
-        self.algorithm = continuous_integration
+        self.algorithm = ContinuousIntegration
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

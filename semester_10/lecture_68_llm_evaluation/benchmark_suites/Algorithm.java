@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_10.lecture_68_llm_evaluation.benchmark_suites;
  * Benchmark Suites implementation.
  */
 public class Algorithm {
@@ -28,7 +29,7 @@ public class Algorithm {
         logger.info("Executing run");
         long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return "";  // FIXME: Changed from Map to String
     }
 
     public static Algorithm create() {

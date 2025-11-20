@@ -20,11 +20,9 @@ class TestQuantumresistant(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_12.lecture_86_quantum_security.quantum_resistant.algorithm import (
-            quantum_resistant,
-        )
+        from semester_12.lecture_86_quantum_security.quantum_resistant.algorithm import QuantumResistant
 
-        self.algorithm = quantum_resistant
+        self.algorithm = QuantumResistant
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

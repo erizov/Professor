@@ -20,11 +20,9 @@ class TestAuditlogging(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_109_database_security_advanced.audit_logging.algorithm import (
-            audit_logging,
-        )
+        from semester_15.lecture_109_database_security_advanced.audit_logging.algorithm import AuditLogger
 
-        self.algorithm = audit_logging
+        self.algorithm = AuditLogger
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestDaogovernance(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_93_blockchain_governance.dao_governance.algorithm import (
-            dao_governance,
-        )
+        from semester_13.lecture_93_blockchain_governance.dao_governance.algorithm import DAOGovernance
 
-        self.algorithm = dao_governance
+        self.algorithm = DAOGovernance
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

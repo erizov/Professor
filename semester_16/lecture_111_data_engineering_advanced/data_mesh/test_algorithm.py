@@ -20,11 +20,9 @@ class TestDatamesh(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_111_data_engineering_advanced.data_mesh.algorithm import (
-            data_mesh,
-        )
+        from semester_16.lecture_111_data_engineering_advanced.data_mesh.algorithm import DataMesh
 
-        self.algorithm = data_mesh
+        self.algorithm = DataMesh
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

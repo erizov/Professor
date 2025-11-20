@@ -20,11 +20,9 @@ class TestInterrupthandling(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_39_operating_systems.interrupt_handling.algorithm import (
-            interrupt_handling,
-        )
+        from semester_07.lecture_39_operating_systems.interrupt_handling.algorithm import InterruptHandler
 
-        self.algorithm = interrupt_handling
+        self.algorithm = InterruptHandler
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

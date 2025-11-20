@@ -20,11 +20,9 @@ class TestChaosengineering(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_43_ci_cd_advanced.chaos_engineering.algorithm import (
-            chaos_engineering,
-        )
+        from semester_07.lecture_43_ci_cd_advanced.chaos_engineering.algorithm import ChaosEngineering
 
-        self.algorithm = chaos_engineering
+        self.algorithm = ChaosEngineering
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestDecorator(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_08_structural_patterns.decorator.algorithm import (
-            get_description,
-        )
+        from semester_02.lecture_08_structural_patterns.decorator.algorithm import Decorator
 
-        self.algorithm = get_description
+        self.algorithm = Decorator
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""
@@ -74,21 +72,21 @@ class TestDecorator(AlgorithmTestCase):
 
     def test_multiple_instances(self):
         """Test multiple instance creation."""
-        instance1 = self.algorithm()
-        instance2 = self.algorithm()
+        instance1 = self.algorithm(None)  # FIXME: Provide required arguments
+        instance2 = self.algorithm(None)  # FIXME: Provide required arguments
         # Pattern-specific assertion
         self.assertIsNotNone(instance1)
         self.assertIsNotNone(instance2)
 
     def test_object_creation(self):
         """Test pattern object creation."""
-        instance = self.algorithm()
+        instance = self.algorithm(None)  # FIXME: Provide required arguments
         self.assertIsNotNone(instance)
 
     def test_pattern_behavior(self):
         """Test pattern-specific behavior."""
-        instance1 = self.algorithm()
-        instance2 = self.algorithm()
+        instance1 = self.algorithm(None)  # FIXME: Provide required arguments
+        instance2 = self.algorithm(None)  # FIXME: Provide required arguments
         # Pattern-specific assertion
         self.assertIsNotNone(instance1)
 
@@ -99,7 +97,7 @@ class TestDecorator(AlgorithmTestCase):
         instances = []
 
         def create_instance():
-            instances.append(self.algorithm())
+            instances.append(self.algorithm(None)  # FIXME: Provide required arguments)
 
         threads = [threading.Thread(target=create_instance) for _ in range(10)]
         for t in threads:

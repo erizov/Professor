@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_04.lecture_18_crypto_algorithms.rsa;
  * Rsa implementation.
  */
 public class Algorithm {
@@ -26,7 +27,7 @@ public class Algorithm {
      */
     public int encrypt(String message, Object public_key) {
         logger.info("Executing encrypt");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

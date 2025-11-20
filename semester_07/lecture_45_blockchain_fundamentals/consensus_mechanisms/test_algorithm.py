@@ -20,11 +20,9 @@ class TestConsensusmechanisms(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_45_blockchain_fundamentals.consensus_mechanisms.algorithm import (
-            consensus_mechanisms,
-        )
+        from semester_07.lecture_45_blockchain_fundamentals.consensus_mechanisms.algorithm import ConsensusMechanism
 
-        self.algorithm = consensus_mechanisms
+        self.algorithm = ConsensusMechanism
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

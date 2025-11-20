@@ -2,6 +2,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 import java.util.logging.Logger;
+package semester_01.lecture_06_advanced_trees.avl_tree;
 public class Algorithm {
     private static final Logger logger = Logger.getLogger
     /**

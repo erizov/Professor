@@ -20,11 +20,9 @@ class TestModelcaching(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_36_inference_optimization.model_caching.algorithm import (
-            model_caching,
-        )
+        from semester_06.lecture_36_inference_optimization.model_caching.algorithm import ModelCaching
 
-        self.algorithm = model_caching
+        self.algorithm = ModelCaching
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

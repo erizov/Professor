@@ -20,11 +20,9 @@ class TestDatavault(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_112_data_warehousing_advanced.data_vault.algorithm import (
-            data_vault,
-        )
+        from semester_16.lecture_112_data_warehousing_advanced.data_vault.algorithm import DataVault
 
-        self.algorithm = data_vault
+        self.algorithm = DataVault
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

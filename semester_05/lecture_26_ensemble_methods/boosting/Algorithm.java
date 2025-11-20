@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_05.lecture_26_ensemble_methods.boosting;
  * Boosting implementation.
  */
 public class Algorithm {
@@ -34,7 +35,7 @@ public class Algorithm {
      */
     public int _predict_one(List<Object> x, Object estimator) {
         logger.info("Executing _predict_one");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -42,7 +43,7 @@ public class Algorithm {
      */
     public int predict(List<Object> X) {
         logger.info("Executing predict");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

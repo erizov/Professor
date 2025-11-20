@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_13.lecture_89_defi.yield_farming;
  * Yield Farming implementation.
  */
 public class Algorithm {
@@ -27,7 +28,7 @@ public class Algorithm {
     public boolean deposit(String pool_id, Object amount, String user) {
         logger.info("Executing deposit");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return false;  // FIXME: Changed from Map to boolean
     }
 
     /**
@@ -35,7 +36,7 @@ public class Algorithm {
      */
     public int calculate_yield(String pool_id, Object amount) {
         logger.info("Executing calculate_yield");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

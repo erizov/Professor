@@ -20,11 +20,9 @@ class TestRatelimiting(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_04.lecture_17_performance.rate_limiting.algorithm import (
-            is_allowed,
-        )
+        from semester_04.lecture_17_performance.rate_limiting.algorithm import RateLimiting
 
-        self.algorithm = is_allowed
+        self.algorithm = RateLimiting
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

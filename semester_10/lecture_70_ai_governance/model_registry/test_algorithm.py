@@ -20,11 +20,9 @@ class TestModelregistry(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_70_ai_governance.model_registry.algorithm import (
-            model_registry,
-        )
+        from semester_10.lecture_70_ai_governance.model_registry.algorithm import ModelRegistry
 
-        self.algorithm = model_registry
+        self.algorithm = ModelRegistry
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

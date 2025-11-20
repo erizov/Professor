@@ -20,11 +20,9 @@ class TestRetentionpolicies(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_107_time_series_databases.retention_policies.algorithm import (
-            retention_policies,
-        )
+        from semester_15.lecture_107_time_series_databases.retention_policies.algorithm import RetentionPolicies
 
-        self.algorithm = retention_policies
+        self.algorithm = RetentionPolicies
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

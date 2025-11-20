@@ -20,11 +20,9 @@ class TestCacheoptimization(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_56_os_performance.cache_optimization.algorithm import (
-            cache_optimization,
-        )
+        from semester_09.lecture_56_os_performance.cache_optimization.algorithm import CacheOptimizer
 
-        self.algorithm = cache_optimization
+        self.algorithm = CacheOptimizer
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

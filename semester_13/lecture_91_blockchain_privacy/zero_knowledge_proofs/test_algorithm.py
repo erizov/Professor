@@ -20,11 +20,9 @@ class TestZeroknowledgeproofs(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_91_blockchain_privacy.zero_knowledge_proofs.algorithm import (
-            zero_knowledge_proofs,
-        )
+        from semester_13.lecture_91_blockchain_privacy.zero_knowledge_proofs.algorithm import ZeroKnowledgeProofs
 
-        self.algorithm = zero_knowledge_proofs
+        self.algorithm = ZeroKnowledgeProofs
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

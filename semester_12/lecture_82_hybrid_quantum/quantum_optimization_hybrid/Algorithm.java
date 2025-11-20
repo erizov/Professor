@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_12.lecture_82_hybrid_quantum.quantum_optimization_hybrid;
  * Quantum Optimization Hybrid implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int optimize(Object cost_function, List<Object> initial_params) {
         logger.info("Executing optimize");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

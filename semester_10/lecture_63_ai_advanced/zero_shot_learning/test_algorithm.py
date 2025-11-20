@@ -20,11 +20,9 @@ class TestZeroshotlearning(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_63_ai_advanced.zero_shot_learning.algorithm import (
-            zero_shot_learning,
-        )
+        from semester_10.lecture_63_ai_advanced.zero_shot_learning.algorithm import ZeroShotLearning
 
-        self.algorithm = zero_shot_learning
+        self.algorithm = ZeroShotLearning
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -1,6 +1,7 @@
 import java.util.*;
 
 /**
+package semester_02.lecture_08_structural_patterns.composite;
  * Composite Design Pattern.
  * 
  * Composes objects into tree structures.
@@ -53,7 +54,7 @@ public class Algorithm {
         }
         
         public void display(String indent) {
-            logger.info(indent + "📁 " + name + "/ (" + getSize() + " bytes)");
+            logger.info(indent + " " + name + "/ (" + getSize() + " bytes)");
             for (FileSystemComponent child : children) {
                 child.display(indent + "  ");
             }

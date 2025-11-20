@@ -20,11 +20,9 @@ class TestProcessscheduling(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_39_operating_systems.process_scheduling.algorithm import (
-            process_scheduling,
-        )
+        from semester_07.lecture_39_operating_systems.process_scheduling.algorithm import ProcessScheduler
 
-        self.algorithm = process_scheduling
+        self.algorithm = ProcessScheduler
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

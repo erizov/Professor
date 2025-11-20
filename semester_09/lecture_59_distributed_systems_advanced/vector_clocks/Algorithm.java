@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_09.lecture_59_distributed_systems_advanced.vector_clocks;
  * Vector Clocks implementation.
  */
 public class Algorithm {

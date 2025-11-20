@@ -20,11 +20,9 @@ class TestSnowflakeschema(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_112_data_warehousing_advanced.snowflake_schema.algorithm import (
-            snowflake_schema,
-        )
+        from semester_16.lecture_112_data_warehousing_advanced.snowflake_schema.algorithm import SnowflakeSchema
 
-        self.algorithm = snowflake_schema
+        self.algorithm = SnowflakeSchema
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

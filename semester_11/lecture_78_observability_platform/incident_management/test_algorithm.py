@@ -20,11 +20,9 @@ class TestIncidentmanagement(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_78_observability_platform.incident_management.algorithm import (
-            incident_management,
-        )
+        from semester_11.lecture_78_observability_platform.incident_management.algorithm import IncidentManagement
 
-        self.algorithm = incident_management
+        self.algorithm = IncidentManagement
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

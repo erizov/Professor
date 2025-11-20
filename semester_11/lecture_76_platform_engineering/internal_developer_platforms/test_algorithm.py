@@ -20,11 +20,9 @@ class TestInternaldeveloperplatforms(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_76_platform_engineering.internal_developer_platforms.algorithm import (
-            internal_developer_platforms,
-        )
+        from semester_11.lecture_76_platform_engineering.internal_developer_platforms.algorithm import InternalDeveloperPlatform
 
-        self.algorithm = internal_developer_platforms
+        self.algorithm = InternalDeveloperPlatform
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

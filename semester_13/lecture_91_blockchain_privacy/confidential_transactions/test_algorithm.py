@@ -20,11 +20,9 @@ class TestConfidentialtransactions(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_91_blockchain_privacy.confidential_transactions.algorithm import (
-            confidential_transactions,
-        )
+        from semester_13.lecture_91_blockchain_privacy.confidential_transactions.algorithm import ConfidentialTransaction
 
-        self.algorithm = confidential_transactions
+        self.algorithm = ConfidentialTransaction
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

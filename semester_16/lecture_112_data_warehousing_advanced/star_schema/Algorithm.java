@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_16.lecture_112_data_warehousing_advanced.star_schema;
  * Star Schema implementation.
  */
 public class Algorithm {
@@ -36,7 +37,7 @@ public class Algorithm {
     public List<Object> query(String fact_table, Object filters) {
         logger.info("Executing query");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return new ArrayList<>();  // FIXME: Changed from Map to List
     }
 
     public static Algorithm create() {

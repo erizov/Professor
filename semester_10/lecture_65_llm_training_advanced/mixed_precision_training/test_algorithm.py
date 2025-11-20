@@ -20,11 +20,9 @@ class TestMixedprecisiontraining(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_65_llm_training_advanced.mixed_precision_training.algorithm import (
-            mixed_precision_training,
-        )
+        from semester_10.lecture_65_llm_training_advanced.mixed_precision_training.algorithm import MixedPrecisionTraining
 
-        self.algorithm = mixed_precision_training
+        self.algorithm = MixedPrecisionTraining
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestAutomatedmarketmakers(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_89_defi.automated_market_makers.algorithm import (
-            automated_market_makers,
-        )
+        from semester_13.lecture_89_defi.automated_market_makers.algorithm import AutomatedMarketMaker
 
-        self.algorithm = automated_market_makers
+        self.algorithm = AutomatedMarketMaker
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

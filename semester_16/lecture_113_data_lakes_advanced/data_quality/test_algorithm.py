@@ -20,11 +20,9 @@ class TestDataquality(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_113_data_lakes_advanced.data_quality.algorithm import (
-            data_quality,
-        )
+        from semester_16.lecture_113_data_lakes_advanced.data_quality.algorithm import DataQuality
 
-        self.algorithm = data_quality
+        self.algorithm = DataQuality
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

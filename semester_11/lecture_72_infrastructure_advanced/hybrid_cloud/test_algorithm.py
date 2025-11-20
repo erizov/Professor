@@ -20,11 +20,9 @@ class TestHybridcloud(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_72_infrastructure_advanced.hybrid_cloud.algorithm import (
-            hybrid_cloud,
-        )
+        from semester_11.lecture_72_infrastructure_advanced.hybrid_cloud.algorithm import HybridCloud
 
-        self.algorithm = hybrid_cloud
+        self.algorithm = HybridCloud
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

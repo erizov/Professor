@@ -20,11 +20,9 @@ class TestAccessibilitydocs(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_99_technical_writing_advanced.accessibility_docs.algorithm import (
-            accessibility_docs,
-        )
+        from semester_14.lecture_99_technical_writing_advanced.accessibility_docs.algorithm import AccessibilityDocs
 
-        self.algorithm = accessibility_docs
+        self.algorithm = AccessibilityDocs
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

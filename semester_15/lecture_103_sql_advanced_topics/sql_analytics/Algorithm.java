@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_15.lecture_103_sql_advanced_topics.sql_analytics;
  * Sql Analytics implementation.
  */
 public class Algorithm {
@@ -18,7 +19,7 @@ public class Algorithm {
     public List<Object> execute_analytics_query(String query) {
         logger.info("Executing execute_analytics_query");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return new ArrayList<>();  // FIXME: Changed from Map to List
     }
 
     /**
@@ -27,7 +28,7 @@ public class Algorithm {
     public List<Object> aggregate(String table, List<String> group_by, List<Object> aggregates) {
         logger.info("Executing aggregate");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return new ArrayList<>();  // FIXME: Changed from Map to List
     }
 
     public static Algorithm create() {

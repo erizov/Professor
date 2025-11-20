@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_06.lecture_33_model_optimization.pruning;
  * Pruning implementation.
  */
 public class Algorithm {
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int magnitude_pruning(List<Object> weights, Object threshold) {
         logger.info("Executing magnitude_pruning");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

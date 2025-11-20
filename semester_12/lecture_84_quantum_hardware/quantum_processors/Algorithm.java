@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_12.lecture_84_quantum_hardware.quantum_processors;
  * Quantum Processors implementation.
  */
 public class Algorithm {
@@ -26,7 +27,7 @@ public class Algorithm {
      */
     public int measure_all() {
         logger.info("Executing measure_all");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -34,7 +35,7 @@ public class Algorithm {
      */
     public int get_fidelity() {
         logger.info("Executing get_fidelity");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

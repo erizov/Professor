@@ -20,11 +20,9 @@ class TestUpgrademechanisms(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_93_blockchain_governance.upgrade_mechanisms.algorithm import (
-            upgrade_mechanisms,
-        )
+        from semester_13.lecture_93_blockchain_governance.upgrade_mechanisms.algorithm import UpgradeMechanisms
 
-        self.algorithm = upgrade_mechanisms
+        self.algorithm = UpgradeMechanisms
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

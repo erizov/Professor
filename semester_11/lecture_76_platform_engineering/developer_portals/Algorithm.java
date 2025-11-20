@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_11.lecture_76_platform_engineering.developer_portals;
  * Developer Portals implementation.
  */
 public class Algorithm {
@@ -36,7 +37,7 @@ public class Algorithm {
     public String get_api_docs(String api_name) {
         logger.info("Executing get_api_docs");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return "";  // FIXME: Changed from Map to String
     }
 
     public static Algorithm create() {

@@ -20,11 +20,9 @@ class TestUserguides(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_48_documentation.user_guides.algorithm import (
-            user_guides,
-        )
+        from semester_08.lecture_48_documentation.user_guides.algorithm import UserGuides
 
-        self.algorithm = user_guides
+        self.algorithm = UserGuides
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestKvcacheoptimization(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_66_llm_inference.kv_cache_optimization.algorithm import (
-            kv_cache_optimization,
-        )
+        from semester_10.lecture_66_llm_inference.kv_cache_optimization.algorithm import KVCacheOptimization
 
-        self.algorithm = kv_cache_optimization
+        self.algorithm = KVCacheOptimization
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

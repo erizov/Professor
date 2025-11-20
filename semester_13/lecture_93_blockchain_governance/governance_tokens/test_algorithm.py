@@ -20,11 +20,9 @@ class TestGovernancetokens(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_93_blockchain_governance.governance_tokens.algorithm import (
-            governance_tokens,
-        )
+        from semester_13.lecture_93_blockchain_governance.governance_tokens.algorithm import GovernanceToken
 
-        self.algorithm = governance_tokens
+        self.algorithm = GovernanceToken
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

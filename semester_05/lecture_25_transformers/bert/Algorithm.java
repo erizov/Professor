@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_05.lecture_25_transformers.bert;
  * Bert implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int encode(List<Object> tokens) {
         logger.info("Executing encode");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int forward(List<Object> input_ids) {
         logger.info("Executing forward");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -33,7 +34,7 @@ public class Algorithm {
      */
     public int _self_attention(List<Object> hidden_states) {
         logger.info("Executing _self_attention");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -41,7 +42,7 @@ public class Algorithm {
      */
     public int _feed_forward(List<Object> hidden_states) {
         logger.info("Executing _feed_forward");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_13.lecture_87_blockchain_advanced.sidechains;
  * Sidechains implementation.
  */
 public class Algorithm {
@@ -26,7 +27,7 @@ public class Algorithm {
     public boolean transfer_to_sidechain(String sidechain_id, Object amount) {
         logger.info("Executing transfer_to_sidechain");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return false;  // FIXME: Changed from Map to boolean
     }
 
     /**
@@ -35,7 +36,7 @@ public class Algorithm {
     public boolean transfer_from_sidechain(String sidechain_id, Object amount) {
         logger.info("Executing transfer_from_sidechain");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return false;  // FIXME: Changed from Map to boolean
     }
 
     public static Algorithm create() {

@@ -20,11 +20,9 @@ class TestChainofthought(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_41_llm_advanced.chain_of_thought.algorithm import (
-            chain_of_thought,
-        )
+        from semester_07.lecture_41_llm_advanced.chain_of_thought.algorithm import ChainOfThought
 
-        self.algorithm = chain_of_thought
+        self.algorithm = ChainOfThought
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestSqlanalytics(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_103_sql_advanced_topics.sql_analytics.algorithm import (
-            sql_analytics,
-        )
+        from semester_15.lecture_103_sql_advanced_topics.sql_analytics.algorithm import SQLAnalytics
 
-        self.algorithm = sql_analytics
+        self.algorithm = SQLAnalytics
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_05.lecture_28_reinforcement_learning.actor_critic;
  * Actor Critic implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int actor_forward(List<Object> state) {
         logger.info("Executing actor_forward");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int critic_forward(List<Object> state) {
         logger.info("Executing critic_forward");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_05.lecture_28_reinforcement_learning.ppo;
  * Ppo implementation.
  */
 public class Algorithm {
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int compute_advantage(List<Object> rewards, List<Object> values) {
         logger.info("Executing compute_advantage");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

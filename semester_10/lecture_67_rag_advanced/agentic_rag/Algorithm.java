@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_10.lecture_67_rag_advanced.agentic_rag;
  * Agentic Rag implementation.
  */
 public class Algorithm {
@@ -34,7 +35,7 @@ public class Algorithm {
     public String generate(String query, List<String> context) {
         logger.info("Executing generate");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return "";  // FIXME: Changed from Map to String
     }
 
     public static Algorithm create() {

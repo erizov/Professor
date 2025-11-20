@@ -20,11 +20,9 @@ class TestFilesystems(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_39_operating_systems.file_systems.algorithm import (
-            file_systems,
-        )
+        from semester_07.lecture_39_operating_systems.file_systems.algorithm import FileSystem
 
-        self.algorithm = file_systems
+        self.algorithm = FileSystem
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

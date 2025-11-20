@@ -20,11 +20,9 @@ class TestDatamarketplace(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_118_data_platforms.data_marketplace.algorithm import (
-            data_marketplace,
-        )
+        from semester_16.lecture_118_data_platforms.data_marketplace.algorithm import DataMarketplace
 
-        self.algorithm = data_marketplace
+        self.algorithm = DataMarketplace
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

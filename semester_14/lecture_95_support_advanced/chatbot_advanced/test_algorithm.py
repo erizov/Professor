@@ -20,11 +20,9 @@ class TestChatbotadvanced(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_95_support_advanced.chatbot_advanced.algorithm import (
-            chatbot_advanced,
-        )
+        from semester_14.lecture_95_support_advanced.chatbot_advanced.algorithm import AdvancedChatbot
 
-        self.algorithm = chatbot_advanced
+        self.algorithm = AdvancedChatbot
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

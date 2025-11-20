@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_16.lecture_113_data_lakes_advanced.data_quality;
  * Data Quality implementation.
  */
 public class Algorithm {

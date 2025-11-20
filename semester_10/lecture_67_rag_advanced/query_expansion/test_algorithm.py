@@ -20,11 +20,9 @@ class TestQueryexpansion(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_67_rag_advanced.query_expansion.algorithm import (
-            query_expansion,
-        )
+        from semester_10.lecture_67_rag_advanced.query_expansion.algorithm import QueryExpansion
 
-        self.algorithm = query_expansion
+        self.algorithm = QueryExpansion
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

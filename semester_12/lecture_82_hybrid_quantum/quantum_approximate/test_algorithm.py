@@ -20,11 +20,9 @@ class TestQuantumapproximate(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_12.lecture_82_hybrid_quantum.quantum_approximate.algorithm import (
-            quantum_approximate,
-        )
+        from semester_12.lecture_82_hybrid_quantum.quantum_approximate.algorithm import QuantumApproximate
 
-        self.algorithm = quantum_approximate
+        self.algorithm = QuantumApproximate
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

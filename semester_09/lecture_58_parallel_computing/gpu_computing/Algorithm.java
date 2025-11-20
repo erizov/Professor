@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_09.lecture_58_parallel_computing.gpu_computing;
  * Gpu Computing implementation.
  */
 public class Algorithm {
@@ -35,7 +36,7 @@ public class Algorithm {
     public String allocate_memory(String device_id, Object size) {
         logger.info("Executing allocate_memory");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return "";  // FIXME: Changed from Map to String
     }
 
     public static Algorithm create() {

@@ -20,11 +20,9 @@ class TestContextcompression(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_67_rag_advanced.context_compression.algorithm import (
-            context_compression,
-        )
+        from semester_10.lecture_67_rag_advanced.context_compression.algorithm import ContextCompression
 
-        self.algorithm = context_compression
+        self.algorithm = ContextCompression
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

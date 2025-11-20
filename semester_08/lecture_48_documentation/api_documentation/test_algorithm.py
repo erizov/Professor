@@ -20,11 +20,9 @@ class TestApidocumentation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_48_documentation.api_documentation.algorithm import (
-            api_documentation,
-        )
+        from semester_08.lecture_48_documentation.api_documentation.algorithm import APIDocumentation
 
-        self.algorithm = api_documentation
+        self.algorithm = APIDocumentation
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

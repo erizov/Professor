@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_01.lecture_08_hash_tables.chaining;
  * Chaining implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int _hash(Object key) {
         logger.info("Executing _hash");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

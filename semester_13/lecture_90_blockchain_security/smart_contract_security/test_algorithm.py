@@ -20,11 +20,9 @@ class TestSmartcontractsecurity(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_90_blockchain_security.smart_contract_security.algorithm import (
-            smart_contract_security,
-        )
+        from semester_13.lecture_90_blockchain_security.smart_contract_security.algorithm import SmartContractSecurity
 
-        self.algorithm = smart_contract_security
+        self.algorithm = SmartContractSecurity
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

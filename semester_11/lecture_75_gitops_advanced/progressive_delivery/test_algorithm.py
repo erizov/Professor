@@ -20,11 +20,9 @@ class TestProgressivedelivery(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_75_gitops_advanced.progressive_delivery.algorithm import (
-            progressive_delivery,
-        )
+        from semester_11.lecture_75_gitops_advanced.progressive_delivery.algorithm import ProgressiveDelivery
 
-        self.algorithm = progressive_delivery
+        self.algorithm = ProgressiveDelivery
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

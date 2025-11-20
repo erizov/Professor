@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_16.lecture_116_data_ops.data_testing;
  * Data Testing implementation.
  */
 public class Algorithm {

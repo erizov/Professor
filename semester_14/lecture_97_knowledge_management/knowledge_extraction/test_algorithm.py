@@ -20,11 +20,9 @@ class TestKnowledgeextraction(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_97_knowledge_management.knowledge_extraction.algorithm import (
-            knowledge_extraction,
-        )
+        from semester_14.lecture_97_knowledge_management.knowledge_extraction.algorithm import KnowledgeExtraction
 
-        self.algorithm = knowledge_extraction
+        self.algorithm = KnowledgeExtraction
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

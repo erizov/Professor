@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_04.lecture_14_security_patterns.jwt;
  * Jwt implementation.
  */
 public class Algorithm {

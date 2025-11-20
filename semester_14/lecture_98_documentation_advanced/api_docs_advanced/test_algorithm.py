@@ -20,11 +20,9 @@ class TestApidocsadvanced(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_98_documentation_advanced.api_docs_advanced.algorithm import (
-            api_docs_advanced,
-        )
+        from semester_14.lecture_98_documentation_advanced.api_docs_advanced.algorithm import AdvancedAPIDocs
 
-        self.algorithm = api_docs_advanced
+        self.algorithm = AdvancedAPIDocs
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

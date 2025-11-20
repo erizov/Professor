@@ -20,11 +20,9 @@ class TestProofofstake(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_45_blockchain_fundamentals.proof_of_stake.algorithm import (
-            proof_of_stake,
-        )
+        from semester_07.lecture_45_blockchain_fundamentals.proof_of_stake.algorithm import ProofOfStake
 
-        self.algorithm = proof_of_stake
+        self.algorithm = ProofOfStake
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

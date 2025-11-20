@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_02.lecture_08_structural_patterns.bridge;
  * Bridge implementation.
  */
 public class Algorithm {

@@ -20,11 +20,9 @@ class TestCryptocurrencywallets(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_46_blockchain_advanced.cryptocurrency_wallets.algorithm import (
-            cryptocurrency_wallets,
-        )
+        from semester_07.lecture_46_blockchain_advanced.cryptocurrency_wallets.algorithm import CryptocurrencyWallet
 
-        self.algorithm = cryptocurrency_wallets
+        self.algorithm = CryptocurrencyWallet
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

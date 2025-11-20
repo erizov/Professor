@@ -20,11 +20,9 @@ class TestZerodowntimemigration(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_110_database_migration.zero_downtime_migration.algorithm import (
-            zero_downtime_migration,
-        )
+        from semester_15.lecture_110_database_migration.zero_downtime_migration.algorithm import ZeroDowntimeMigration
 
-        self.algorithm = zero_downtime_migration
+        self.algorithm = ZeroDowntimeMigration
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestNosqlsharding(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_52_nosql_advanced.nosql_sharding.algorithm import (
-            nosql_sharding,
-        )
+        from semester_08.lecture_52_nosql_advanced.nosql_sharding.algorithm import NoSQLSharding
 
-        self.algorithm = nosql_sharding
+        self.algorithm = NoSQLSharding
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

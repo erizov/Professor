@@ -20,11 +20,9 @@ class TestTimeseriesstorage(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_107_time_series_databases.time_series_storage.algorithm import (
-            time_series_storage,
-        )
+        from semester_15.lecture_107_time_series_databases.time_series_storage.algorithm import TimeSeriesStorage
 
-        self.algorithm = time_series_storage
+        self.algorithm = TimeSeriesStorage
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

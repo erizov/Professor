@@ -20,11 +20,9 @@ class TestQuantizationinference(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_66_llm_inference.quantization_inference.algorithm import (
-            quantization_inference,
-        )
+        from semester_10.lecture_66_llm_inference.quantization_inference.algorithm import QuantizationInference
 
-        self.algorithm = quantization_inference
+        self.algorithm = QuantizationInference
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

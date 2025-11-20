@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_09.lecture_61_cloud_native.config_management;
  * Config Management implementation.
  */
 public class Algorithm {

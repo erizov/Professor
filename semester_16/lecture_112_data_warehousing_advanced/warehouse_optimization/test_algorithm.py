@@ -20,11 +20,9 @@ class TestWarehouseoptimization(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_112_data_warehousing_advanced.warehouse_optimization.algorithm import (
-            warehouse_optimization,
-        )
+        from semester_16.lecture_112_data_warehousing_advanced.warehouse_optimization.algorithm import WarehouseOptimization
 
-        self.algorithm = warehouse_optimization
+        self.algorithm = WarehouseOptimization
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

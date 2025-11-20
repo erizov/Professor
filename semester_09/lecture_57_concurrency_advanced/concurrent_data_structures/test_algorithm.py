@@ -20,11 +20,9 @@ class TestConcurrentdatastructures(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_57_concurrency_advanced.concurrent_data_structures.algorithm import (
-            concurrent_data_structures,
-        )
+        from semester_09.lecture_57_concurrency_advanced.concurrent_data_structures.algorithm import ConcurrentQueue
 
-        self.algorithm = concurrent_data_structures
+        self.algorithm = ConcurrentQueue
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_02.lecture_12_concurrency_patterns.readers_writers;
  * Readers Writers implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int read() {
         logger.info("Executing read");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

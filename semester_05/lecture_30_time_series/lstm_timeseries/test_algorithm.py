@@ -20,11 +20,9 @@ class TestLstmtimeseries(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_05.lecture_30_time_series.lstm_timeseries.algorithm import (
-            lstm_timeseries,
-        )
+        from semester_05.lecture_30_time_series.lstm_timeseries.algorithm import LSTMTimeseries
 
-        self.algorithm = lstm_timeseries
+        self.algorithm = LSTMTimeseries
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

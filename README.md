@@ -124,6 +124,61 @@ python app.py
 # Open browser to http://localhost:5000
 ```
 
+### Testing and Auto-Fixing
+
+**Run all tests:**
+```bash
+python scripts/test_runner.py
+```
+
+**Automatically fix test errors:**
+```bash
+# Tests each file, fixes import/API errors, and commits successful fixes
+python -m scripts.fix_imports_one_by_one
+```
+
+**Current Capabilities:**
+The auto-fix script automatically fixes multiple types of errors:
+
+1. **Import Errors** ✅
+   - Fixes incorrect imports (e.g., importing `__init__` instead of actual class/function)
+   - Fixes nonexistent imports (replaces with correct main export)
+   - Fixes duplicated names in assignments
+   - Detects and comments out wrong imports from different algorithm modules
+
+2. **API Usage Errors** ✅ **NEW**
+   - Parses function/class signatures using AST
+   - Detects missing required arguments
+   - Automatically fixes calls with wrong number of arguments
+   - Handles class instantiation errors (missing constructor arguments)
+   - Uses placeholders for missing arguments (may need manual adjustment)
+
+**Features:**
+- Tests each Python test file sequentially (680+ files)
+- Automatically fixes import and API usage errors
+- Retests after each fix attempt
+- Continues until test passes or max attempts reached
+- Commits successful fixes (no push)
+- Reports progress after each file
+- Status updates every 3 minutes
+- Graceful interruption handling
+
+**What it can fix:**
+- ✅ Import errors (wrong module, wrong name, nonexistent imports)
+- ✅ API usage errors (missing arguments, wrong function signatures)
+- ✅ Duplicated names in assignments
+- ✅ Wrong imports from different algorithm modules
+
+**What it cannot fix:**
+- ❌ Algorithm logic errors (wrong calculations, missing memoization)
+- ❌ Complex API patterns requiring test logic rewrites
+- ❌ Test expectation errors (test expects wrong behavior)
+
+**Status:** The script has successfully fixed 6+ files automatically and identified patterns for manual fixes.
+
+See [scripts/TESTING_SYSTEM_README.md](scripts/TESTING_SYSTEM_README.md) for detailed testing documentation.
+See [FAILURE_ANALYSIS.md](FAILURE_ANALYSIS.md) for analysis of fixable vs non-fixable errors.
+
 ### 📚 Interactive Textbook
 
 The comprehensive textbook includes search and filter functionality:
@@ -524,9 +579,10 @@ For questions, suggestions, or contributions, please open an issue or pull reque
 
 **Note**: This is an actively developed educational resource. Check back regularly for new implementations and improvements.
 
-**Last Updated**: Current Session
-**Version**: 0.3.0
+**Last Updated**: 2025-11-20
+**Version**: 0.4.0
 **Status**: Active Development (40% Complete)
+**Testing**: 680+ test files with automated fixing system
 
 ## 🆕 Recent Updates
 
@@ -535,3 +591,9 @@ For questions, suggestions, or contributions, please open an issue or pull reque
 - ✅ **Generated comprehensive PDF** textbook with all course content
 - ✅ **Updated GPT prompt** based on current project state
 - ✅ **78+ algorithms fully implemented** with Python and Java
+- ✅ **Enhanced auto-fix script** with function signature analysis for API usage errors
+- ✅ **Added API usage error fixing** - automatically fixes missing arguments and wrong function signatures
+- ✅ **Comprehensive testing system** - 680+ test files with automated fixing capabilities
+- ✅ **Enhanced auto-fix script** with function signature analysis for API usage errors
+- ✅ **Added API usage error fixing** - automatically fixes missing arguments and wrong function signatures
+- ✅ **Comprehensive testing system** - 680+ test files with automated fixing capabilities

@@ -20,11 +20,9 @@ class TestDatacataloging(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_113_data_lakes_advanced.data_cataloging.algorithm import (
-            data_cataloging,
-        )
+        from semester_16.lecture_113_data_lakes_advanced.data_cataloging.algorithm import DataCataloging
 
-        self.algorithm = data_cataloging
+        self.algorithm = DataCataloging
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

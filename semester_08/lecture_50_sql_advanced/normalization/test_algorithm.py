@@ -20,11 +20,9 @@ class TestNormalization(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_50_sql_advanced.normalization.algorithm import (
-            normalization,
-        )
+        from semester_08.lecture_50_sql_advanced.normalization.algorithm import Normalization
 
-        self.algorithm = normalization
+        self.algorithm = Normalization
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

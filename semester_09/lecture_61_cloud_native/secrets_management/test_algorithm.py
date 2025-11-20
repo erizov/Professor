@@ -20,11 +20,9 @@ class TestSecretsmanagement(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_61_cloud_native.secrets_management.algorithm import (
-            secrets_management,
-        )
+        from semester_09.lecture_61_cloud_native.secrets_management.algorithm import SecretsManagement
 
-        self.algorithm = secrets_management
+        self.algorithm = SecretsManagement
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

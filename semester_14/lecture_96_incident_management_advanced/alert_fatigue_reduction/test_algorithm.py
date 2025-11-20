@@ -20,11 +20,9 @@ class TestAlertfatiguereduction(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_96_incident_management_advanced.alert_fatigue_reduction.algorithm import (
-            alert_fatigue_reduction,
-        )
+        from semester_14.lecture_96_incident_management_advanced.alert_fatigue_reduction.algorithm import AlertFatigueReduction
 
-        self.algorithm = alert_fatigue_reduction
+        self.algorithm = AlertFatigueReduction
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

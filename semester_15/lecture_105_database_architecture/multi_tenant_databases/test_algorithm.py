@@ -20,11 +20,9 @@ class TestMultitenantdatabases(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_105_database_architecture.multi_tenant_databases.algorithm import (
-            multi_tenant_databases,
-        )
+        from semester_15.lecture_105_database_architecture.multi_tenant_databases.algorithm import MultiTenantDatabase
 
-        self.algorithm = multi_tenant_databases
+        self.algorithm = MultiTenantDatabase
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

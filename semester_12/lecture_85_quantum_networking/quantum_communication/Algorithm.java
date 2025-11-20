@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_12.lecture_85_quantum_networking.quantum_communication;
  * Quantum Communication implementation.
  */
 public class Algorithm {
@@ -19,7 +20,7 @@ public class Algorithm {
         logger.info("Executing send_qubit");
         long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return false;  // FIXME: Changed from Map to boolean
     }
 
     /**

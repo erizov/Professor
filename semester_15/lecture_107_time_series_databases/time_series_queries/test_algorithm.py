@@ -20,11 +20,9 @@ class TestTimeseriesqueries(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_107_time_series_databases.time_series_queries.algorithm import (
-            time_series_queries,
-        )
+        from semester_15.lecture_107_time_series_databases.time_series_queries.algorithm import TimeSeriesQueries
 
-        self.algorithm = time_series_queries
+        self.algorithm = TimeSeriesQueries
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

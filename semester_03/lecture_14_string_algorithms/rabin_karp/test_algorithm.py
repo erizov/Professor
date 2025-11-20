@@ -20,11 +20,9 @@ class TestRabinkarp(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_03.lecture_14_string_algorithms.rabin_karp.algorithm import (
-            rabin_karp,
-        )
+        from semester_03.lecture_14_string_algorithms.rabin_karp.algorithm import rabin_karp_search
 
-        self.algorithm = rabin_karp
+        self.algorithm = rabin_karp_search
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

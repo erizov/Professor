@@ -20,11 +20,9 @@ class TestDatapipelinesadvanced(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_111_data_engineering_advanced.data_pipelines_advanced.algorithm import (
-            data_pipelines_advanced,
-        )
+        from semester_16.lecture_111_data_engineering_advanced.data_pipelines_advanced.algorithm import AdvancedDataPipeline
 
-        self.algorithm = data_pipelines_advanced
+        self.algorithm = AdvancedDataPipeline
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

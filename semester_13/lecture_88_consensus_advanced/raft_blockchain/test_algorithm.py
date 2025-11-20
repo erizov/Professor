@@ -20,11 +20,9 @@ class TestRaftblockchain(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_88_consensus_advanced.raft_blockchain.algorithm import (
-            raft_blockchain,
-        )
+        from semester_13.lecture_88_consensus_advanced.raft_blockchain.algorithm import RaftBlockchain
 
-        self.algorithm = raft_blockchain
+        self.algorithm = RaftBlockchain
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

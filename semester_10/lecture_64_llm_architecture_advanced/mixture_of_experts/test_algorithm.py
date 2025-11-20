@@ -20,11 +20,9 @@ class TestMixtureofexperts(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_64_llm_architecture_advanced.mixture_of_experts.algorithm import (
-            mixture_of_experts,
-        )
+        from semester_10.lecture_64_llm_architecture_advanced.mixture_of_experts.algorithm import MixtureOfExperts
 
-        self.algorithm = mixture_of_experts
+        self.algorithm = MixtureOfExperts
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

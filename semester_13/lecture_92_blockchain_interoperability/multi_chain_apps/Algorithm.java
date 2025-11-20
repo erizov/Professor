@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_13.lecture_92_blockchain_interoperability.multi_chain_apps;
  * Multi Chain Apps implementation.
  */
 public class Algorithm {
@@ -27,7 +28,7 @@ public class Algorithm {
     public boolean bridge_asset(String from_chain, String to_chain, String asset, Object amount) {
         logger.info("Executing bridge_asset");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return false;  // FIXME: Changed from Map to boolean
     }
 
     /**

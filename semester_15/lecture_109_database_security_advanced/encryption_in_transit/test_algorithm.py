@@ -20,11 +20,9 @@ class TestEncryptionintransit(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_109_database_security_advanced.encryption_in_transit.algorithm import (
-            encryption_in_transit,
-        )
+        from semester_15.lecture_109_database_security_advanced.encryption_in_transit.algorithm import EncryptionInTransit
 
-        self.algorithm = encryption_in_transit
+        self.algorithm = EncryptionInTransit
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

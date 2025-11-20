@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_06.lecture_34_edge_ai.iot_ml;
  * Iot Ml implementation.
  */
 public class Algorithm {
@@ -42,7 +43,7 @@ public class Algorithm {
      */
     public int predict(String device_id) {
         logger.info("Executing predict");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

@@ -20,11 +20,9 @@ class TestBlockchainstructure(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_45_blockchain_fundamentals.blockchain_structure.algorithm import (
-            blockchain_structure,
-        )
+        from semester_07.lecture_45_blockchain_fundamentals.blockchain_structure.algorithm import Block
 
-        self.algorithm = blockchain_structure
+        self.algorithm = Block
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

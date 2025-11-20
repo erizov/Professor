@@ -20,11 +20,9 @@ class TestFormalverification(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_90_blockchain_security.formal_verification.algorithm import (
-            formal_verification,
-        )
+        from semester_13.lecture_90_blockchain_security.formal_verification.algorithm import FormalVerification
 
-        self.algorithm = formal_verification
+        self.algorithm = FormalVerification
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

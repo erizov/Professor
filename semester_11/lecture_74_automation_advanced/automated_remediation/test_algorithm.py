@@ -20,11 +20,9 @@ class TestAutomatedremediation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_74_automation_advanced.automated_remediation.algorithm import (
-            automated_remediation,
-        )
+        from semester_11.lecture_74_automation_advanced.automated_remediation.algorithm import AutomatedRemediation
 
-        self.algorithm = automated_remediation
+        self.algorithm = AutomatedRemediation
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

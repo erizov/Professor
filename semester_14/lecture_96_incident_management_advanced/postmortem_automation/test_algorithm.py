@@ -20,11 +20,9 @@ class TestPostmortemautomation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_96_incident_management_advanced.postmortem_automation.algorithm import (
-            postmortem_automation,
-        )
+        from semester_14.lecture_96_incident_management_advanced.postmortem_automation.algorithm import PostmortemAutomation
 
-        self.algorithm = postmortem_automation
+        self.algorithm = PostmortemAutomation
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

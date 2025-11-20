@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_07.lecture_40_llm_fundamentals.tokenization;
  * Tokenization implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int tokenize(String text) {
         logger.info("Executing tokenize");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

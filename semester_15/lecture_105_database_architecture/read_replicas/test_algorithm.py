@@ -20,11 +20,9 @@ class TestReadreplicas(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_105_database_architecture.read_replicas.algorithm import (
-            read_replicas,
-        )
+        from semester_15.lecture_105_database_architecture.read_replicas.algorithm import ReadReplicas
 
-        self.algorithm = read_replicas
+        self.algorithm = ReadReplicas
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

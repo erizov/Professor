@@ -20,11 +20,9 @@ class TestPerformanceprofiling(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_38_monitoring_production.performance_profiling.algorithm import (
-            performance_profiling,
-        )
+        from semester_06.lecture_38_monitoring_production.performance_profiling.algorithm import PerformanceProfiling
 
-        self.algorithm = performance_profiling
+        self.algorithm = PerformanceProfiling
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

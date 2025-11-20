@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_08.lecture_50_sql_advanced.partitioning;
  * Partitioning implementation.
  */
 public class Algorithm {

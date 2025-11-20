@@ -20,11 +20,9 @@ class TestInteractivedocs(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_98_documentation_advanced.interactive_docs.algorithm import (
-            interactive_docs,
-        )
+        from semester_14.lecture_98_documentation_advanced.interactive_docs.algorithm import InteractiveDocs
 
-        self.algorithm = interactive_docs
+        self.algorithm = InteractiveDocs
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

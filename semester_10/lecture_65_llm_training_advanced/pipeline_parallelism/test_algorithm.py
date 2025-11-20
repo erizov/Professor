@@ -20,11 +20,9 @@ class TestPipelineparallelism(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_65_llm_training_advanced.pipeline_parallelism.algorithm import (
-            pipeline_parallelism,
-        )
+        from semester_10.lecture_65_llm_training_advanced.pipeline_parallelism.algorithm import PipelineParallelism
 
-        self.algorithm = pipeline_parallelism
+        self.algorithm = PipelineParallelism
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

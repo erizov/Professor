@@ -20,11 +20,9 @@ class TestRowlevelsecurity(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_109_database_security_advanced.row_level_security.algorithm import (
-            row_level_security,
-        )
+        from semester_15.lecture_109_database_security_advanced.row_level_security.algorithm import RowLevelSecurity
 
-        self.algorithm = row_level_security
+        self.algorithm = RowLevelSecurity
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestFunctionasservice(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_61_cloud_native.function_as_service.algorithm import (
-            function_as_service,
-        )
+        from semester_09.lecture_61_cloud_native.function_as_service.algorithm import FunctionAsService
 
-        self.algorithm = function_as_service
+        self.algorithm = FunctionAsService
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

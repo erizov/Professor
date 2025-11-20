@@ -20,11 +20,9 @@ class TestShadowdeployment(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_06.lecture_35_deployment_patterns.shadow_deployment.algorithm import (
-            shadow_deployment,
-        )
+        from semester_06.lecture_35_deployment_patterns.shadow_deployment.algorithm import ShadowDeployment
 
-        self.algorithm = shadow_deployment
+        self.algorithm = ShadowDeployment
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_10.lecture_68_llm_evaluation.human_evaluation;
  * Human Evaluation implementation.
  */
 public class Algorithm {
@@ -34,7 +35,7 @@ public class Algorithm {
      */
     public int get_average_score(String task_id) {
         logger.info("Executing get_average_score");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -42,7 +43,7 @@ public class Algorithm {
      */
     public int get_inter_annotator_agreement(String task_id) {
         logger.info("Executing get_inter_annotator_agreement");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     public static Algorithm create() {

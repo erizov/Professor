@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_08.lecture_47_support_systems.sla_management;
  * Sla Management implementation.
  */
 public class Algorithm {

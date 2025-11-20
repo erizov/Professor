@@ -20,11 +20,9 @@ class TestLogaggregation(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_04.lecture_20_monitoring_observability.log_aggregation.algorithm import (
-            __post_init__,
-        )
+        from semester_04.lecture_20_monitoring_observability.log_aggregation.algorithm import LogAggregation
 
-        self.algorithm = __post_init__
+        self.algorithm = LogAggregation
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

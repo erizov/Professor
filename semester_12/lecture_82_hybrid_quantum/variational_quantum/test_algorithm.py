@@ -20,11 +20,9 @@ class TestVariationalquantum(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_12.lecture_82_hybrid_quantum.variational_quantum.algorithm import (
-            variational_quantum,
-        )
+        from semester_12.lecture_82_hybrid_quantum.variational_quantum.algorithm import VariationalQuantum
 
-        self.algorithm = variational_quantum
+        self.algorithm = VariationalQuantum
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,9 +20,9 @@ class TestObserver(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_10_behavioral_patterns.observer.algorithm import update
+        from semester_02.lecture_10_behavioral_patterns.observer.algorithm import Observer
 
-        self.algorithm = update
+        self.algorithm = Observer
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

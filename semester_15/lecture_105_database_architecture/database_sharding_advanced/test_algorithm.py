@@ -20,11 +20,9 @@ class TestDatabaseshardingadvanced(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_105_database_architecture.database_sharding_advanced.algorithm import (
-            database_sharding_advanced,
-        )
+        from semester_15.lecture_105_database_architecture.database_sharding_advanced.algorithm import AdvancedSharding
 
-        self.algorithm = database_sharding_advanced
+        self.algorithm = AdvancedSharding
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

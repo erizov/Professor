@@ -20,11 +20,9 @@ class TestFeatureflags(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_43_ci_cd_advanced.feature_flags.algorithm import (
-            feature_flags,
-        )
+        from semester_07.lecture_43_ci_cd_advanced.feature_flags.algorithm import FeatureFlags
 
-        self.algorithm = feature_flags
+        self.algorithm = FeatureFlags
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

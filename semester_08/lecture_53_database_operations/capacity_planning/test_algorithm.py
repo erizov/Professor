@@ -20,11 +20,9 @@ class TestCapacityplanning(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_53_database_operations.capacity_planning.algorithm import (
-            capacity_planning,
-        )
+        from semester_08.lecture_53_database_operations.capacity_planning.algorithm import CapacityPlanning
 
-        self.algorithm = capacity_planning
+        self.algorithm = CapacityPlanning
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_10.lecture_64_llm_architecture_advanced.mixture_of_experts;
  * Mixture Of Experts implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int route(Object input_data) {
         logger.info("Executing route");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

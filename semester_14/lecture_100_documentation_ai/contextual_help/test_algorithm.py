@@ -20,11 +20,9 @@ class TestContextualhelp(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_100_documentation_ai.contextual_help.algorithm import (
-            contextual_help,
-        )
+        from semester_14.lecture_100_documentation_ai.contextual_help.algorithm import ContextualHelp
 
-        self.algorithm = contextual_help
+        self.algorithm = ContextualHelp
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

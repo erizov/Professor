@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_03.lecture_16_advanced_ml.neural_network;
  * Neural Network implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int sigmoid(Object x) {
         logger.info("Executing sigmoid");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int forward(List<Object> X) {
         logger.info("Executing forward");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

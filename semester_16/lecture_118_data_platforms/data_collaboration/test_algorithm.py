@@ -20,11 +20,9 @@ class TestDatacollaboration(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_118_data_platforms.data_collaboration.algorithm import (
-            data_collaboration,
-        )
+        from semester_16.lecture_118_data_platforms.data_collaboration.algorithm import DataCollaboration
 
-        self.algorithm = data_collaboration
+        self.algorithm = DataCollaboration
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

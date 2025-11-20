@@ -20,11 +20,9 @@ class TestStreaminganalytics(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_16.lecture_114_real_time_analytics.streaming_analytics.algorithm import (
-            streaming_analytics,
-        )
+        from semester_16.lecture_114_real_time_analytics.streaming_analytics.algorithm import StreamingAnalytics
 
-        self.algorithm = streaming_analytics
+        self.algorithm = StreamingAnalytics
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

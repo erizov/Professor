@@ -20,11 +20,9 @@ class TestTemplatemethod(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_02.lecture_09_behavioral_patterns.template_method.algorithm import (
-            template_method,
-        )
+        from semester_02.lecture_09_behavioral_patterns.template_method.algorithm import AbstractClass
 
-        self.algorithm = template_method
+        self.algorithm = AbstractClass
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

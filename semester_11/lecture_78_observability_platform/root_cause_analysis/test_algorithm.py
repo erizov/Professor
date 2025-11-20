@@ -20,11 +20,9 @@ class TestRootcauseanalysis(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_78_observability_platform.root_cause_analysis.algorithm import (
-            root_cause_analysis,
-        )
+        from semester_11.lecture_78_observability_platform.root_cause_analysis.algorithm import RootCauseAnalysis
 
-        self.algorithm = root_cause_analysis
+        self.algorithm = RootCauseAnalysis
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestDeploymentstrategies(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_07.lecture_42_ci_cd_fundamentals.deployment_strategies.algorithm import (
-            deployment_strategies,
-        )
+        from semester_07.lecture_42_ci_cd_fundamentals.deployment_strategies.algorithm import DeploymentStrategy
 
-        self.algorithm = deployment_strategies
+        self.algorithm = DeploymentStrategy
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestDatabasesecurity(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_53_database_operations.database_security.algorithm import (
-            database_security,
-        )
+        from semester_08.lecture_53_database_operations.database_security.algorithm import DatabaseSecurity
 
-        self.algorithm = database_security
+        self.algorithm = DatabaseSecurity
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

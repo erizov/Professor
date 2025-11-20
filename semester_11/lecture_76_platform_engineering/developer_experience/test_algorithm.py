@@ -20,11 +20,9 @@ class TestDeveloperexperience(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_11.lecture_76_platform_engineering.developer_experience.algorithm import (
-            developer_experience,
-        )
+        from semester_11.lecture_76_platform_engineering.developer_experience.algorithm import DeveloperExperience
 
-        self.algorithm = developer_experience
+        self.algorithm = DeveloperExperience
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -20,11 +20,9 @@ class TestDisasterrecovery(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_53_database_operations.disaster_recovery.algorithm import (
-            disaster_recovery,
-        )
+        from semester_08.lecture_53_database_operations.disaster_recovery.algorithm import DisasterRecovery
 
-        self.algorithm = disaster_recovery
+        self.algorithm = DisasterRecovery
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

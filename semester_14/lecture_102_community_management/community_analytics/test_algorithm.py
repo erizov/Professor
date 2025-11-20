@@ -20,11 +20,9 @@ class TestCommunityanalytics(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_14.lecture_102_community_management.community_analytics.algorithm import (
-            community_analytics,
-        )
+        from semester_14.lecture_102_community_management.community_analytics.algorithm import CommunityAnalytics
 
-        self.algorithm = community_analytics
+        self.algorithm = CommunityAnalytics
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

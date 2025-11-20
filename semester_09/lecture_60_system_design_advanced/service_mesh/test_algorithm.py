@@ -20,11 +20,9 @@ class TestServicemesh(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_09.lecture_60_system_design_advanced.service_mesh.algorithm import (
-            service_mesh,
-        )
+        from semester_09.lecture_60_system_design_advanced.service_mesh.algorithm import ServiceMesh
 
-        self.algorithm = service_mesh
+        self.algorithm = ServiceMesh
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

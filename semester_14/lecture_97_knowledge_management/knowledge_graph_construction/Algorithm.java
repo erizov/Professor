@@ -2,6 +2,7 @@ import java.util.*;
 import java.util.logging.Logger;
 
 /**
+package semester_14.lecture_97_knowledge_management.knowledge_graph_construction;
  * Knowledge Graph Construction implementation.
  */
     public static List<Integer> knowledgegraphconstruction(Map<Integer, List<Integer>> graph, int start) {

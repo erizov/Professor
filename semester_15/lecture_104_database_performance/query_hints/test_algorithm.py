@@ -20,11 +20,9 @@ class TestQueryhints(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_15.lecture_104_database_performance.query_hints.algorithm import (
-            query_hints,
-        )
+        from semester_15.lecture_104_database_performance.query_hints.algorithm import QueryHints
 
-        self.algorithm = query_hints
+        self.algorithm = QueryHints
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

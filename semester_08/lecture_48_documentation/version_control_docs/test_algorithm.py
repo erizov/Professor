@@ -20,11 +20,9 @@ class TestVersioncontroldocs(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_48_documentation.version_control_docs.algorithm import (
-            version_control_docs,
-        )
+        from semester_08.lecture_48_documentation.version_control_docs.algorithm import VersionControlDocs
 
-        self.algorithm = version_control_docs
+        self.algorithm = VersionControlDocs
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_05.lecture_28_reinforcement_learning.dqn;
  * Dqn implementation.
  */
 public class Algorithm {
@@ -17,7 +18,7 @@ public class Algorithm {
      */
     public int get_q_values(List<Object> state) {
         logger.info("Executing get_q_values");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**
@@ -25,7 +26,7 @@ public class Algorithm {
      */
     public int choose_action(List<Object> state, Object epsilon) {
         logger.info("Executing choose_action");
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

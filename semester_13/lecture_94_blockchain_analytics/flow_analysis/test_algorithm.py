@@ -20,11 +20,9 @@ class TestFlowanalysis(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_13.lecture_94_blockchain_analytics.flow_analysis.algorithm import (
-            flow_analysis,
-        )
+        from semester_13.lecture_94_blockchain_analytics.flow_analysis.algorithm import FlowAnalysis
 
-        self.algorithm = flow_analysis
+        self.algorithm = FlowAnalysis
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

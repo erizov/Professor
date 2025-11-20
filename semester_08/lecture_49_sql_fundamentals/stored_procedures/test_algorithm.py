@@ -20,11 +20,9 @@ class TestStoredprocedures(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_49_sql_fundamentals.stored_procedures.algorithm import (
-            stored_procedures,
-        )
+        from semester_08.lecture_49_sql_fundamentals.stored_procedures.algorithm import StoredProcedures
 
-        self.algorithm = stored_procedures
+        self.algorithm = StoredProcedures
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

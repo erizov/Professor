@@ -20,11 +20,9 @@ class TestFairnessalgorithms(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_69_ai_ethics.fairness_algorithms.algorithm import (
-            fairness_algorithms,
-        )
+        from semester_10.lecture_69_ai_ethics.fairness_algorithms.algorithm import fairness_metrics
 
-        self.algorithm = fairness_algorithms
+        self.algorithm = fairness_metrics
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

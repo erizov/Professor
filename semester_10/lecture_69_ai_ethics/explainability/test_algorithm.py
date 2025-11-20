@@ -20,11 +20,9 @@ class TestExplainability(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_10.lecture_69_ai_ethics.explainability.algorithm import (
-            explainability,
-        )
+        from semester_10.lecture_69_ai_ethics.explainability.algorithm import Explainability
 
-        self.algorithm = explainability
+        self.algorithm = Explainability
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

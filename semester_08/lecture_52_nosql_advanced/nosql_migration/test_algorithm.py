@@ -20,11 +20,9 @@ class TestNosqlmigration(AlgorithmTestCase):
 
     def setUp(self):
         """Set up test fixtures."""
-        from semester_08.lecture_52_nosql_advanced.nosql_migration.algorithm import (
-            nosql_migration,
-        )
+        from semester_08.lecture_52_nosql_advanced.nosql_migration.algorithm import NoSQLMigration
 
-        self.algorithm = nosql_migration
+        self.algorithm = NoSQLMigration
 
     def test_basic_functionality(self):
         """Test basic algorithm functionality."""

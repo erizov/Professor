@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_09.lecture_56_os_performance.performance_profiling;
  * Performance Profiling implementation.
  */
 public class Algorithm {
@@ -27,7 +28,7 @@ public class Algorithm {
     public int end_profile(String profile_id) {
         logger.info("Executing end_profile");
         long timestamp = System.currentTimeMillis();
-        return null;
+        return -1;  // FIXME: Changed from null to -1
     }
 
     /**

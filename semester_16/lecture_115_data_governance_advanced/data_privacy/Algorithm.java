@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
+package semester_16.lecture_115_data_governance_advanced.data_privacy;
  * Data Privacy implementation.
  */
 public class Algorithm {
