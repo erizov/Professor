@@ -65,16 +65,72 @@ def create_sandbox():
     
     user_id = session['user_id']
     
+    # Normalize algorithm_path: convert absolute to relative, remove filename if present
+    algorithm_path_str = str(algorithm_path)
+    
+    # If it's an absolute path, convert to relative
+    try:
+        path_obj = Path(algorithm_path_str)
+        if path_obj.is_absolute():
+            try:
+                # Try to get relative path from ROOT
+                algorithm_path_str = str(path_obj.relative_to(ROOT))
+            except ValueError:
+                # If not relative to ROOT, try to extract just the path part
+                # Remove common prefixes
+                for prefix in [str(ROOT), str(ROOT).replace('\\', '/')]:
+                    if algorithm_path_str.startswith(prefix):
+                        algorithm_path_str = algorithm_path_str[len(prefix):].lstrip('/\\')
+                        break
+    except Exception:
+        pass
+    
+    # Normalize path separators
+    algorithm_path_str = algorithm_path_str.replace('\\', '/')
+    
+    # Remove filename if present (algorithm.py, Algorithm.java, etc.)
+    if algorithm_path_str.endswith('/algorithm.py') or algorithm_path_str.endswith('\\algorithm.py'):
+        algorithm_path_str = algorithm_path_str[:-len('/algorithm.py')]
+    elif algorithm_path_str.endswith('/Algorithm.java') or algorithm_path_str.endswith('\\Algorithm.java'):
+        algorithm_path_str = algorithm_path_str[:-len('/Algorithm.java')]
+    elif algorithm_path_str.endswith('.py'):
+        algorithm_path_str = algorithm_path_str[:-3]
+    elif algorithm_path_str.endswith('.java'):
+        algorithm_path_str = algorithm_path_str[:-5]
+    
+    # Remove trailing slashes
+    algorithm_path_str = algorithm_path_str.rstrip('/\\')
+    
     # Determine original file path
     if language == 'python':
-        original_file = ROOT / algorithm_path / "algorithm.py"
+        original_file = ROOT / algorithm_path_str / "algorithm.py"
     else:
-        original_file = ROOT / algorithm_path / "Algorithm.java"
+        original_file = ROOT / algorithm_path_str / "Algorithm.java"
+    
+    # Try alternative paths if not found
+    if not original_file.exists():
+        # Try with semester_06 instead of semester_6
+        alt_path = algorithm_path_str
+        if 'semester_6' in alt_path and not 'semester_06' in alt_path:
+            alt_path = alt_path.replace('semester_6', 'semester_06')
+            if language == 'python':
+                original_file = ROOT / alt_path / "algorithm.py"
+            else:
+                original_file = ROOT / alt_path / "Algorithm.java"
+        elif 'semester_06' in alt_path and not 'semester_6' in alt_path:
+            alt_path = alt_path.replace('semester_06', 'semester_6')
+            if language == 'python':
+                original_file = ROOT / alt_path / "algorithm.py"
+            else:
+                original_file = ROOT / alt_path / "Algorithm.java"
     
     if not original_file.exists():
         return jsonify({
-            'error': f'Algorithm not found: {original_file}'
+            'error': f'Algorithm not found: {original_file}. Tried path: {algorithm_path_str}'
         }), 404
+    
+    # Use normalized path for database
+    algorithm_path = algorithm_path_str
     
     try:
         original_code = original_file.read_text(encoding='utf-8')
