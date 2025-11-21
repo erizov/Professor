@@ -101,33 +101,54 @@ def create_sandbox():
     # Remove trailing slashes
     algorithm_path_str = algorithm_path_str.rstrip('/\\')
     
-    # Determine original file path
-    if language == 'python':
-        original_file = ROOT / algorithm_path_str / "algorithm.py"
-    else:
-        original_file = ROOT / algorithm_path_str / "Algorithm.java"
+    # Determine original file path - try multiple variations
+    original_file = None
+    paths_to_try = [algorithm_path_str]
     
-    # Try alternative paths if not found
-    if not original_file.exists():
-        # Try with semester_06 instead of semester_6
-        alt_path = algorithm_path_str
-        if 'semester_6' in alt_path and not 'semester_06' in alt_path:
-            alt_path = alt_path.replace('semester_6', 'semester_06')
-            if language == 'python':
-                original_file = ROOT / alt_path / "algorithm.py"
-            else:
-                original_file = ROOT / alt_path / "Algorithm.java"
-        elif 'semester_06' in alt_path and not 'semester_6' in alt_path:
-            alt_path = alt_path.replace('semester_06', 'semester_6')
-            if language == 'python':
-                original_file = ROOT / alt_path / "algorithm.py"
-            else:
-                original_file = ROOT / alt_path / "Algorithm.java"
+    # Generate semester number variations
+    import re
+    semester_match = re.search(r'semester_(\d+)', algorithm_path_str)
+    if semester_match:
+        semester_num = semester_match.group(1)
+        if len(semester_num) == 1:
+            # semester_9 -> semester_09
+            alt_path = algorithm_path_str.replace(f'semester_{semester_num}', f'semester_0{semester_num}')
+            paths_to_try.append(alt_path)
+        elif len(semester_num) == 2 and semester_num.startswith('0'):
+            # semester_09 -> semester_9
+            alt_path = algorithm_path_str.replace(f'semester_{semester_num}', f'semester_{semester_num[1]}')
+            paths_to_try.append(alt_path)
     
-    if not original_file.exists():
-        return jsonify({
-            'error': f'Algorithm not found: {original_file}. Tried path: {algorithm_path_str}'
-        }), 404
+    # Try each path variation
+    for path_to_try in paths_to_try:
+        if language == 'python':
+            candidate_file = ROOT / path_to_try / "algorithm.py"
+        else:
+            candidate_file = ROOT / path_to_try / "Algorithm.java"
+        
+        if candidate_file.exists():
+            original_file = candidate_file
+            algorithm_path_str = path_to_try  # Use the working path
+            break
+    
+    if not original_file:
+        # Last attempt: search for the algorithm directory
+        algorithm_name = algorithm_path_str.split('/')[-1] if '/' in algorithm_path_str else algorithm_path_str.split('\\')[-1]
+        search_pattern = f"**/{algorithm_name}/algorithm.py" if language == 'python' else f"**/{algorithm_name}/Algorithm.java"
+        
+        found_files = list(ROOT.glob(search_pattern))
+        if found_files:
+            original_file = found_files[0]
+            # Extract the relative path
+            try:
+                algorithm_path_str = str(original_file.parent.relative_to(ROOT))
+            except ValueError:
+                pass
+        
+        if not original_file:
+            return jsonify({
+                'error': f'Algorithm not found. Tried paths: {", ".join(paths_to_try)}. Searched for: {algorithm_name}'
+            }), 404
     
     # Use normalized path for database
     algorithm_path = algorithm_path_str
