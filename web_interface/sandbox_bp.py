@@ -522,31 +522,35 @@ def execute_sandbox(sandbox_id):
                         
         elif language == 'java':
             from framework.java_executor import JavaExecutor, AlgorithmInfo
+            import shutil
             
-            # Create temporary file for execution
-            with tempfile.NamedTemporaryFile(mode='w', suffix='.java', delete=False, encoding='utf-8') as f:
-                f.write(code_to_execute)
-                temp_file = Path(f.name)
+            # Extract class name from code to determine correct filename
+            import re
+            class_match = re.search(r'public\s+class\s+(\w+)', code_to_execute)
+            class_name = class_match.group(1) if class_match else 'Algorithm'
+            
+            # Create temporary directory for Java file
+            temp_dir = Path(tempfile.mkdtemp())
+            temp_java_file = temp_dir / f"{class_name}.java"
             
             try:
-                # Extract package and class name from code
-                import re
+                # Write code to file with correct name
+                temp_java_file.write_text(code_to_execute, encoding='utf-8')
+                
+                # Extract package
                 package_match = re.search(r'^\s*package\s+([^;]+);', code_to_execute, re.MULTILINE)
                 package = package_match.group(1) if package_match else None
-                
-                class_match = re.search(r'public\s+class\s+(\w+)', code_to_execute)
-                class_name = class_match.group(1) if class_match else 'Algorithm'
                 
                 # Create AlgorithmInfo-like object
                 algo_info = AlgorithmInfo(
                     name=algorithm_path,
-                    path=temp_file,
+                    path=temp_java_file,
                     package=package,
                     class_name=class_name,
                     semester='',
                     lecture='',
                     algorithm='',
-                    full_path=str(temp_file)
+                    full_path=str(temp_java_file)
                 )
                 
                 executor = JavaExecutor()
@@ -561,14 +565,10 @@ def execute_sandbox(sandbox_id):
                     'execution_time': exec_time
                 })
             finally:
-                # Clean up temp file
-                if temp_file.exists():
+                # Clean up temp directory and all files
+                if temp_dir.exists():
                     try:
-                        os.unlink(temp_file)
-                        # Also clean up .class file if it exists
-                        class_file = temp_file.with_suffix('.class')
-                        if class_file.exists():
-                            os.unlink(class_file)
+                        shutil.rmtree(temp_dir, ignore_errors=True)
                     except Exception:
                         pass
         else:
