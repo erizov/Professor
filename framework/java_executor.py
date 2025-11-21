@@ -171,9 +171,19 @@ class JavaExecutor:
         algorithms = self.discover_algorithms()
         
         if path:
-            # Find by full path
+            # Normalize path separators for comparison
+            path_normalized = path.replace('\\', '/')
+            
+            # Find by full path (try multiple formats)
             for algo in algorithms:
-                if algo.full_path == path or str(algo.path) == path:
+                # Compare normalized paths
+                algo_full_path_normalized = algo.full_path.replace('\\', '/')
+                algo_path_str_normalized = str(algo.path).replace('\\', '/')
+                
+                if (algo.full_path == path or 
+                    str(algo.path) == path or
+                    algo_full_path_normalized == path_normalized or
+                    algo_path_str_normalized == path_normalized):
                     return algo
             return None
         
