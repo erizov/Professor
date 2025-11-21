@@ -631,19 +631,16 @@ def execute_sandbox(sandbox_id):
                 temp_java_file.write_text(code_to_execute, encoding='utf-8')
                 
                 # Compile Java file
-                if package:
-                    # Compile with -d to create package structure in temp directory
-                    compile_cmd = ["javac", "-d", str(temp_class_dir), str(temp_java_file)]
-                else:
-                    # No package - compile in place
-                    compile_cmd = ["javac", "-d", str(temp_class_dir), str(temp_java_file)]
+                # Always use -d to create proper directory structure
+                compile_cmd = ["javac", "-d", str(temp_class_dir), str(temp_java_file)]
                 
                 compile_result = subprocess.run(
                     compile_cmd,
                     capture_output=True,
                     text=True,
                     timeout=30,
-                    check=False
+                    check=False,
+                    cwd=str(temp_dir)
                 )
                 
                 if compile_result.returncode != 0:
@@ -656,9 +653,12 @@ def execute_sandbox(sandbox_id):
                 
                 # Execute compiled class
                 if package:
+                    # For packaged classes, use fully qualified name
                     full_class_name = f"{package}.{class_name}"
+                    # Classpath should point to the root of the package structure
                     run_cmd = ["java", "-cp", str(temp_class_dir), full_class_name]
                 else:
+                    # For non-packaged classes, use simple class name
                     run_cmd = ["java", "-cp", str(temp_class_dir), class_name]
                 
                 start_time = time.time()
