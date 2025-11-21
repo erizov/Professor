@@ -12,6 +12,7 @@ import sqlite3
 from pathlib import Path
 from typing import Dict, List, Optional
 from datetime import datetime
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = ROOT / "test_results.db"
@@ -206,57 +207,71 @@ def get_test_results():
         seen_keys = set()
         
         for row in rows:
-            # Normalize path separators early (Windows uses backslashes)
-            # Handle both single backslash and escaped backslash
-            raw_path = row[0]
-            if raw_path:
-                # Replace backslashes with forward slashes for consistent matching
-                normalized_path = raw_path.replace("\\", "/").replace("\\\\", "/")
-            else:
-                normalized_path = raw_path
-            
-            key = f"{normalized_path}:{row[1]}"
-            
-            # Only process the first (latest) record for each algorithm:language
-            if key in seen_keys:
-                continue
-            seen_keys.add(key)
-            
-            # Try both normalized and original path for algorithm_type lookup
-            algo_type = algorithm_types.get(normalized_path, "unknown")
-            if algo_type == "unknown" and raw_path != normalized_path:
-                # Try original path as fallback
-                algo_type = algorithm_types.get(raw_path, "unknown")
+            try:
+                # Normalize path separators early (Windows uses backslashes)
+                # Handle both single backslash and escaped backslash
+                raw_path = row[0] if row[0] else ""
+                if raw_path:
+                    # Replace backslashes with forward slashes for consistent matching
+                    # Handle both single and double backslashes
+                    normalized_path = str(raw_path).replace("\\", "/").replace("\\\\", "/")
+                else:
+                    normalized_path = ""
+                
+                language = row[1] if row[1] else ""
+                status = row[2] if row[2] else ""
+                duration = row[3] if row[3] is not None else 0.0
+                timestamp = row[4] if row[4] else ""
+                error_message = row[5] if row[5] else None
+                previous_status = row[6] if row[6] else None
+                state_changed = bool(row[7]) if row[7] is not None else False
+                
+                key = f"{normalized_path}:{language}"
+                
+                # Only process the first (latest) record for each algorithm:language
+                if key in seen_keys:
+                    continue
+                seen_keys.add(key)
+                
+                # Try both normalized and original path for algorithm_type lookup
+                algo_type = algorithm_types.get(normalized_path, "unknown")
+                if algo_type == "unknown" and raw_path and raw_path != normalized_path:
+                    # Try original path as fallback
+                    algo_type = algorithm_types.get(str(raw_path), "unknown")
 
-            if algorithm_type_filter and algo_type != algorithm_type_filter:
-                continue
+                if algorithm_type_filter and algo_type != algorithm_type_filter:
+                    continue
 
-            # Create single result entry with latest status only
-            # Use normalized path for display consistency
-            results.append(
-                {
-                    "algorithm_path": normalized_path,
-                    "language": row[1],
-                    "latest_status": row[2],
-                    "latest_timestamp": row[4],
-                    "latest_duration": row[3],
-                    "state_changed": bool(row[7]),
-                    "previous_status": row[6],
-                    "algorithm_type": algo_type,
-                    "error_message": row[5] if row[5] else None,
-                    "recent_results": [{
+                # Create single result entry with latest status only
+                # Use normalized path for display consistency
+                results.append(
+                    {
                         "algorithm_path": normalized_path,
-                        "language": row[1],
-                        "status": row[2],
-                        "duration": row[3],
-                        "timestamp": row[4],
-                        "error_message": row[5],
-                        "previous_status": row[6],
-                        "state_changed": bool(row[7]),
+                        "language": language,
+                        "latest_status": status,
+                        "latest_timestamp": timestamp,
+                        "latest_duration": duration,
+                        "state_changed": state_changed,
+                        "previous_status": previous_status,
                         "algorithm_type": algo_type,
-                    }],
-                }
-            )
+                        "error_message": error_message,
+                        "recent_results": [{
+                            "algorithm_path": normalized_path,
+                            "language": language,
+                            "status": status,
+                            "duration": duration,
+                            "timestamp": timestamp,
+                            "error_message": error_message,
+                            "previous_status": previous_status,
+                            "state_changed": state_changed,
+                            "algorithm_type": algo_type,
+                        }],
+                    }
+                )
+            except Exception as row_error:
+                # Log row processing error but continue with other rows
+                print(f"Error processing row: {row_error}", file=sys.stderr)
+                continue
 
         conn.close()
 
