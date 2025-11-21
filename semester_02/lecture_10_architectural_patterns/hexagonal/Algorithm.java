@@ -16,7 +16,7 @@ public class Algorithm {
     /**
      * Define port.
      */
-    public Object define_port(String port_name, Object interface) {
+    public Object define_port(String port_name, Object interfaceObj) {
         logger.info("Executing define_port");
         Map<String, Object> result = new HashMap<>();
         return result;
@@ -34,7 +34,7 @@ public class Algorithm {
     /**
      * Call port through adapter.
      */
-    public Object call_port(String port_name, String adapter_name, Object *args, Object **kwargs) {
+    public Object call_port(String port_name, String adapter_name, Object... args) {
         logger.info("Executing call_port");
         return null;
     }
