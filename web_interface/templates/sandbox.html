@@ -334,7 +334,7 @@
             
             <div class="control-group">
                 <label for="language-select">Language</label>
-                <select id="language-select">
+                <select id="language-select" onchange="onAlgorithmSelect()">
                     <option value="python">Python</option>
                     <option value="java">Java</option>
                 </select>
@@ -442,8 +442,8 @@
                 const response = await fetch(`/api/algorithm/source/${language}/${encodeURIComponent(algorithmPath)}`);
                 const data = await response.json();
                 
-                if (data.success && data.source_code) {
-                    document.getElementById('code-editor').value = data.source_code;
+                if (data.success && (data.source_code || data.source)) {
+                    document.getElementById('code-editor').value = data.source_code || data.source;
                     showStatus('info', 'Original algorithm code loaded. Click "Create Sandbox" to create your own copy.');
                 } else {
                     showStatus('error', 'Could not load algorithm code: ' + (data.error || 'Unknown error'));
