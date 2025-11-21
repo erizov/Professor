@@ -1,9 +1,10 @@
-import java.util.*;
+package semester_08.lecture_48_documentation.technical_writing;
+
+import java.util.Arrays;
+import java.util.List;
 import java.util.logging.Logger;
-import java.util.logging.Level;
 
 /**
-package semester_08.lecture_48_documentation.technical_writing;
  * Technical Writing implementation.
  */
 public class Algorithm {
@@ -16,24 +17,28 @@ public class Algorithm {
     /**
      * Create technical document.
      */
-    public Object create_doc(String doc_id, String title, String content) {
+    public String create_doc(String docId, String title, String content) {
         logger.info("Executing create_doc");
-        String result = "# " + title + "
-
-";
-        return "";
+        StringBuilder builder = new StringBuilder();
+        builder.append("# ").append(title).append("\n\n");
+        builder.append("Document ID: ").append(docId).append("\n\n");
+        builder.append(content).append("\n");
+        return builder.toString();
     }
 
     /**
      * Generate API documentation.
      */
-    public String generate_api_doc(String function_name, String description, List<Object> params) {
+    public String generate_api_doc(String functionName, String description, List<String> params) {
         logger.info("Executing generate_api_doc");
-        String result = "## " + function_name + "
-
-";
-        String result = "- `" + param['name'] + "`: ";
-        return "";
+        StringBuilder builder = new StringBuilder();
+        builder.append("## ").append(functionName).append("\n\n");
+        builder.append(description).append("\n\n");
+        builder.append("### Parameters\n");
+        for (String param : params) {
+            builder.append("- ").append(param).append("\n");
+        }
+        return builder.toString();
     }
 
     public static Algorithm create() {
@@ -46,8 +51,15 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_doc("", "", "");
-        System.out.println("Result: " + result);
+        String document = algo.create_doc("DOC-100", "Integration Guide", "Step-by-step instructions.");
+        System.out.println(document);
+        System.out.println();
+        String apiDoc = algo.generate_api_doc(
+            "publishArticle",
+            "Publishes the supplied article content.",
+            Arrays.asList("title", "body", "tags")
+        );
+        System.out.println(apiDoc);
         System.out.println("=".repeat(70));
     }
 }
