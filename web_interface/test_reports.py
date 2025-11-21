@@ -170,83 +170,81 @@ def get_test_results():
             query += " AND LOWER(language) = LOWER(?)"
             params.append(language_filter)
 
-    query += """
-        )
-        SELECT 
-            algorithm_path,
-            language,
-            status,
-            duration,
-            timestamp,
-            error_message,
-            previous_status,
-            state_changed
-        FROM recent_results
-        WHERE rn <= 5
-        ORDER BY 
-    """
+        query += """
+            )
+            SELECT 
+                algorithm_path,
+                language,
+                status,
+                duration,
+                timestamp,
+                error_message,
+                previous_status,
+                state_changed
+            FROM recent_results
+            WHERE rn = 1
+            ORDER BY 
+        """
 
-    # Validate sort column
-    valid_sorts = {
-        "timestamp": "timestamp",
-        "algorithm_path": "algorithm_path",
-        "status": "status",
-        "duration": "duration",
-    }
-    sort_column = valid_sorts.get(sort_by, "timestamp")
+        # Validate sort column
+        valid_sorts = {
+            "timestamp": "timestamp",
+            "algorithm_path": "algorithm_path",
+            "status": "status",
+            "duration": "duration",
+        }
+        sort_column = valid_sorts.get(sort_by, "timestamp")
 
-    query += f" {sort_column} {sort_order.upper()}"
+        query += f" {sort_column} {sort_order.upper()}"
 
-    cursor.execute(query, params)
-    rows = cursor.fetchall()
+        cursor.execute(query, params)
+        rows = cursor.fetchall()
 
-    # Group by algorithm_path:language and get up to 5 most recent
-    results_by_algorithm = {}
-    for row in rows:
-        key = f"{row[0]}:{row[1]}"
-        if key not in results_by_algorithm:
-            results_by_algorithm[key] = []
+        # Process results - only show latest record per algorithm:language
+        # Since query already filters to rn = 1, each row is the latest for that algorithm:language
+        results = []
+        seen_keys = set()
+        
+        for row in rows:
+            key = f"{row[0]}:{row[1]}"
+            
+            # Only process the first (latest) record for each algorithm:language
+            if key in seen_keys:
+                continue
+            seen_keys.add(key)
+            
+            # Normalize path separators for lookup (Windows uses backslashes)
+            algo_path = row[0].replace("\\", "/")
+            algo_type = algorithm_types.get(algo_path, "unknown")
 
-        # Normalize path separators for lookup (Windows uses backslashes)
-        algo_path = row[0].replace("\\", "/")
-        algo_type = algorithm_types.get(algo_path, "unknown")
+            if algorithm_type_filter and algo_type != algorithm_type_filter:
+                continue
 
-        results_by_algorithm[key].append(
-            {
-                "algorithm_path": row[0],
-                "language": row[1],
-                "status": row[2],
-                "duration": row[3],
-                "timestamp": row[4],
-                "error_message": row[5],
-                "previous_status": row[6],
-                "state_changed": bool(row[7]),
-                "algorithm_type": algo_type,
-            }
-        )
-
-    # Convert to list format
-    results = []
-    for key, test_results in results_by_algorithm.items():
-        latest = test_results[0]
-        algo_type = latest.get("algorithm_type", "unknown")
-
-        if algorithm_type_filter and algo_type != algorithm_type_filter:
-            continue
-
-        results.append(
-            {
-                "algorithm_path": latest["algorithm_path"],
-                "language": latest["language"],
-                "latest_status": latest["status"],
-                "latest_timestamp": latest["timestamp"],
-                "latest_duration": latest["duration"],
-                "state_changed": latest["state_changed"],
-                "previous_status": latest["previous_status"],
-                "algorithm_type": algo_type,
-                "recent_results": test_results[:5],
-            }
-        )
+            # Create single result entry with latest status only
+            results.append(
+                {
+                    "algorithm_path": row[0],
+                    "language": row[1],
+                    "latest_status": row[2],
+                    "latest_timestamp": row[4],
+                    "latest_duration": row[3],
+                    "state_changed": bool(row[7]),
+                    "previous_status": row[6],
+                    "algorithm_type": algo_type,
+                    "error_message": row[5] if row[5] else None,
+                    "recent_results": [{
+                        "algorithm_path": row[0],
+                        "language": row[1],
+                        "status": row[2],
+                        "duration": row[3],
+                        "timestamp": row[4],
+                        "error_message": row[5],
+                        "previous_status": row[6],
+                        "state_changed": bool(row[7]),
+                        "algorithm_type": algo_type,
+                    }],
+                }
+            )
 
         conn.close()
 
@@ -322,40 +320,32 @@ def get_test_statistics():
         
         cursor.execute(query_with_paths, params)
         all_path_rows = cursor.fetchall()
-    except Exception as e:
-        conn.close()
-        return jsonify({
-            "error": f"Error loading test statistics: {str(e)}",
-            "status_counts": {},
-            "language_stats": {},
-            "recent_changes": 0
-        }), 500
-    
-    # Filter by algorithm_type if specified, then count by status
-    status_counts = {}
-    for row in all_path_rows:
-        algo_path, lang, status = row
-        algo_path_normalized = algo_path.replace("\\", "/")
-        algo_type = algorithm_types.get(algo_path_normalized, "unknown")
         
-        if algorithm_type_filter and algo_type != algorithm_type_filter:
-            continue
+        # Filter by algorithm_type if specified, then count by status
+        status_counts = {}
+        for row in all_path_rows:
+            algo_path, lang, status = row
+            algo_path_normalized = algo_path.replace("\\", "/")
+            algo_type = algorithm_types.get(algo_path_normalized, "unknown")
             
-        status_counts[status] = status_counts.get(status, 0) + 1
+            if algorithm_type_filter and algo_type != algorithm_type_filter:
+                continue
+                
+            status_counts[status] = status_counts.get(status, 0) + 1
 
-    # Get language breakdown with filters (reuse path_rows from above)
-    language_stats = {}
-    for row in all_path_rows:
-        algo_path, lang, status = row
-        algo_path_normalized = algo_path.replace("\\", "/")
-        algo_type = algorithm_types.get(algo_path_normalized, "unknown")
-        
-        if algorithm_type_filter and algo_type != algorithm_type_filter:
-            continue
+        # Get language breakdown with filters (reuse path_rows from above)
+        language_stats = {}
+        for row in all_path_rows:
+            algo_path, lang, status = row
+            algo_path_normalized = algo_path.replace("\\", "/")
+            algo_type = algorithm_types.get(algo_path_normalized, "unknown")
             
-        if lang not in language_stats:
-            language_stats[lang] = {}
-        language_stats[lang][status] = language_stats[lang].get(status, 0) + 1
+            if algorithm_type_filter and algo_type != algorithm_type_filter:
+                continue
+                
+            if lang not in language_stats:
+                language_stats[lang] = {}
+            language_stats[lang][status] = language_stats[lang].get(status, 0) + 1
 
         # Get state changes with filters (excluding status filter)
         state_change_base = base_query + " AND tr.state_changed = 1 AND tr.timestamp > datetime('now', '-24 hours')"
@@ -386,7 +376,7 @@ def get_test_statistics():
             }
         )
     except Exception as e:
-        if conn:
+        if 'conn' in locals():
             conn.close()
         return jsonify({
             "error": f"Error loading test statistics: {str(e)}",

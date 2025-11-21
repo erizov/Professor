@@ -1,6 +1,6 @@
 # Intelligent Automation
 
-1. **Name of Algorithm**  
+Name of Algorithm  
 
 ## Code Files
 
@@ -81,56 +81,56 @@ flowchart TD
 
 
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-- [Python Implementation](semester_11/lecture_74_automation_advanced/intelligent_automation/algorithm.py)
-- [Java Implementation](semester_11/lecture_74_automation_advanced/intelligent_automation/Algorithm.java)
-- [Python Tests](semester_11/lecture_74_automation_advanced/intelligent_automation/test_algorithm.py)
+- [Python Implementation](/code/semester_11/lecture_74_automation_advanced/intelligent_automation/algorithm.py)
+- [Java Implementation](/code/semester_11/lecture_74_automation_advanced/intelligent_automation/Algorithm.java)
+- [Python Tests](/code/semester_11/lecture_74_automation_advanced/intelligent_automation/test_algorithm.py)
 
 
    Intelligent Automation
 
-2. **What problem does it solve? (1 sentence)**  
+What problem does it solve? (1 sentence)  
    Uses AI and machine learning to automate complex decision-making and tasks that require intelligence, enabling automation of sophisticated operations beyond simple rule-based automation.
 
-3. **Intuition (plain-language explanation)**  
+Intuition (plain-language explanation)  
    Like a smart assistant: Intelligent Automation is like having a smart assistant who doesn't just follow instructions (rule-based) but understands context and makes decisions (AI-powered) - they can handle complex situations, learn from experience, and adapt - just as a smart assistant can handle complex tasks, intelligent automation can automate sophisticated operations.
 
-4. **Inputs & Outputs**  
+Inputs & Outputs  
    - Input: Complex tasks, context data, ML models, decision criteria, historical patterns, automation goals.  
    - Output: Intelligent decisions, automated actions, learned patterns, adaptive behavior, optimized outcomes.
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Analyze: analyze task complexity and requirements.
-2. Learn: learn patterns from historical data and examples.
-3. Decide: make intelligent decisions using ML models.
-4. Adapt: adapt behavior based on outcomes and feedback.
-5. Execute: execute automated actions based on decisions.
-6. Monitor: monitor outcomes and performance.
-7. Learn: learn from results to improve decisions.
-8. Optimize: optimize automation for better outcomes.
-9. Evolve: evolve automation capabilities over time.
-10. Integrate: integrate with other systems and processes.
+Step-by-step description (5–10 lines max)  
+Analyze: analyze task complexity and requirements.
+Learn: learn patterns from historical data and examples.
+Decide: make intelligent decisions using ML models.
+Adapt: adapt behavior based on outcomes and feedback.
+Execute: execute automated actions based on decisions.
+Monitor: monitor outcomes and performance.
+Learn: learn from results to improve decisions.
+Optimize: optimize automation for better outcomes.
+Evolve: evolve automation capabilities over time.
+Integrate: integrate with other systems and processes.
 
-6. **Tiny example (hand-simulated)**  
+Tiny example (hand-simulated)  
    Intelligent Automation: task: optimize resource allocation → learn: patterns from historical usage → decide: ML model predicts optimal allocation → adapt: adjust based on actual performance → execute: automatically allocate resources → result: 25% cost reduction → Intelligent Automation successful.
 
-7. **Time & Space Complexity**  
+Time & Space Complexity  
    - Time: O(l + d + e) where l is learning time, d is decision time, e is execution time (varies by task).  
    - Space: O(m + d) where m is model storage, d is data storage (training data, patterns).
 
-8. **Strengths**  
+Strengths  
 - Intelligence: handles complex tasks requiring intelligence.
 - Adaptability: adapts to changing conditions and patterns.
 - Optimization: optimizes outcomes through learning.
 
-9. **Weaknesses / limitations**  
+Weaknesses / limitations  
 - Complexity: intelligent automation is complex to implement.
 - Training: requires training data and model development.
 - Explainability: decisions may be difficult to explain.
 
-10. **Compare with alternatives**  
+Compare with alternatives  
     Alternatives: Rule-Based Automation, Manual Operations, Script-Based Automation, ML-Assisted Automation
 
-11. **30-second explanation (your own words)**  
+30-second explanation (your own words)  
     Uses AI and machine learning to automate complex decision-making and tasks that require intelligence, enabling automation of sophisticated operations beyond simple rule-based automation.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

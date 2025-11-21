@@ -276,6 +276,28 @@
             color: #667eea;
             margin-bottom: 0.5rem;
         }
+        
+        .preview-section h5 {
+            color: #555;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+        
+        .preview-section pre {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 1rem;
+            overflow-x: auto;
+            margin: 0.5rem 0;
+        }
+        
+        .preview-section code {
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: #333;
+        }
     </style>
 </head>
 <body>
@@ -449,6 +471,9 @@
                     
                     const frameworks = algo.frameworks ? algo.frameworks.split(',') : [];
                     
+                    // Build README link from folder_path
+                    const readmeLink = algo.folder_path ? `/readme/${algo.folder_path}/README.md` : '';
+                    
                     card.innerHTML = `
                         <h3>${algo.display_name}</h3>
                         <div class="meta">
@@ -459,6 +484,13 @@
                         <div class="description">
                             ${algo.short_description || algo.description || 'No description available.'}
                         </div>
+                        ${readmeLink ? `
+                            <div class="readme-link" style="margin-top: 10px;">
+                                <a href="${readmeLink}" target="_blank" onclick="event.stopPropagation();" style="color: #667eea; text-decoration: none; font-weight: 600;">
+                                    📖 View README →
+                                </a>
+                            </div>
+                        ` : ''}
                         ${frameworks.length > 0 ? `
                             <div class="frameworks">
                                 ${frameworks.map(f => `<span>${f.trim()}</span>`).join('')}
@@ -523,8 +555,14 @@
                 const response = await fetch(`/api/algorithm/${algorithmId}`);
                 const algo = await response.json();
                 
+                // Build full description (use description if available, otherwise short_description)
+                const fullDescription = algo.description || algo.short_description || 'No description available.';
+                
+                // Generate usage examples based on algorithm name and category
+                const usageExamples = generateUsageExamples(algo.name, algo.category, algo.folder_path);
+                
                 content.innerHTML = `
-                    <h2>${algo.display_name}</h2>
+                    <h2>${algo.display_name || algo.name}</h2>
                     <div class="preview-section">
                         <h4>Basic Information</h4>
                         <p><strong>Semester:</strong> ${algo.semester_number || 'N/A'}</p>
@@ -533,10 +571,14 @@
                         <p><strong>Time Complexity:</strong> ${algo.time_complexity || 'N/A'}</p>
                         <p><strong>Space Complexity:</strong> ${algo.space_complexity || 'N/A'}</p>
                     </div>
-                    ${algo.description ? `
+                    <div class="preview-section">
+                        <h4>Description</h4>
+                        <p>${fullDescription}</p>
+                    </div>
+                    ${usageExamples ? `
                         <div class="preview-section">
-                            <h4>Description</h4>
-                            <p>${algo.description}</p>
+                            <h4>Usage Examples</h4>
+                            ${usageExamples}
                         </div>
                     ` : ''}
                     ${algo.advantages && algo.advantages.length > 0 ? `
@@ -578,6 +620,112 @@
         // Close modal
         function closeModal() {
             document.getElementById('previewModal').style.display = 'none';
+        }
+        
+        // Generate usage examples based on algorithm name and category
+        function generateUsageExamples(algorithmName, category, folderPath) {
+            const algoName = algorithmName.toLowerCase();
+            const cat = (category || '').toLowerCase();
+            
+            // Determine algorithm type
+            let examples = '';
+            
+            if (algoName.includes('sort') || cat.includes('sort')) {
+                const algoPath = folderPath ? folderPath.replace(/\\/g, '/') : '';
+                examples = `
+                    <h5>Example 1: Basic Sorting</h5>
+                    <pre><code>from ${algoPath || 'algorithm'}.algorithm import ${algorithmName}
+
+# Sort a list of numbers
+numbers = [64, 34, 25, 12, 22, 11, 90]
+sorted_numbers = ${algorithmName}(numbers)
+print(sorted_numbers)  # [11, 12, 22, 25, 34, 64, 90]</code></pre>
+                    
+                    <h5>Example 2: Java Usage</h5>
+                    <pre><code>// Java implementation
+int[] arr = {64, 34, 25, 12, 22, 11, 90};
+Algorithm.bubbleSort(arr);
+System.out.println(Arrays.toString(arr));</code></pre>
+                    
+                    <h5>Example 3: Real-World Application</h5>
+                    <pre><code># Sorting products by price for e-commerce
+products = get_products_from_database()
+sorted_products = ${algorithmName}([p.price for p in products])</code></pre>
+                `;
+            } else if (algoName.includes('search') || cat.includes('search')) {
+                const algoPath = folderPath ? folderPath.replace(/\\/g, '/') : '';
+                examples = `
+                    <h5>Example 1: Basic Search</h5>
+                    <pre><code>from ${algoPath || 'algorithm'}.algorithm import ${algorithmName}
+
+# Search in sorted array
+sorted_array = [1, 3, 5, 7, 9, 11, 13, 15]
+index = ${algorithmName}(sorted_array, 7)
+print(f"Found at index: {index}")  # 3</code></pre>
+                    
+                    <h5>Example 2: Java Usage</h5>
+                    <pre><code>// Java implementation
+int[] arr = {1, 3, 5, 7, 9, 11, 13, 15};
+int index = Algorithm.${algorithmName}(arr, 7);
+System.out.println("Found at index: " + index);</code></pre>
+                    
+                    <h5>Example 3: Real-World Application</h5>
+                    <pre><code># Searching user database
+user_ids = sorted([user.id for user in users])
+user_index = ${algorithmName}(user_ids, target_user_id)
+if user_index != -1:
+    user = users[user_index]</code></pre>
+                `;
+            } else if (algoName.includes('tree') || cat.includes('tree')) {
+                examples = `
+                    <h5>Example 1: Basic Tree Operations</h5>
+                    <pre><code>from algorithm import ${algorithmName}
+
+# Create tree
+tree = ${algorithmName}()
+tree.insert(5)
+tree.insert(3)
+tree.insert(7)
+tree.insert(1)
+tree.insert(4)
+
+# Search
+result = tree.search(4)
+print(result)  # True</code></pre>
+                    
+                    <h5>Example 2: Java Usage</h5>
+                    <pre><code>// Java implementation
+Algorithm tree = new Algorithm();
+tree.insert(5);
+tree.insert(3);
+tree.insert(7);
+boolean found = tree.search(4);</code></pre>
+                `;
+            } else {
+                const algoPath = folderPath ? folderPath.replace(/\\/g, '/') : '';
+                examples = `
+                    <h5>Example 1: Basic Usage</h5>
+                    <pre><code>from ${algoPath || 'algorithm'}.algorithm import ${algorithmName}
+
+# Basic example
+result = ${algorithmName}(input_data)
+print(result)</code></pre>
+                    
+                    <h5>Example 2: Java Usage</h5>
+                    <pre><code>// Java implementation
+Algorithm algo = new Algorithm();
+Object result = algo.${algorithmName}(inputData);
+System.out.println(result);</code></pre>
+                    
+                    <h5>Example 3: Real-World Application</h5>
+                    <pre><code># Practical use case
+data = load_real_world_data()
+processed = ${algorithmName}(data)
+save_results(processed)</code></pre>
+                `;
+            }
+            
+            return examples;
         }
         
         // Close modal when clicking outside

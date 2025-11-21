@@ -1,6 +1,6 @@
 # Customer Support Automation
 
-1. **Name of Algorithm**  
+Name of Algorithm  
 
 ## Code Files
 
@@ -81,54 +81,54 @@ flowchart TD
 
 
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-- [Python Implementation](semester_08/lecture_47_support_systems/customer_support_automation/algorithm.py)
-- [Java Implementation](semester_08/lecture_47_support_systems/customer_support_automation/Algorithm.java)
-- [Python Tests](semester_08/lecture_47_support_systems/customer_support_automation/test_algorithm.py)
+- [Python Implementation](/code/semester_08/lecture_47_support_systems/customer_support_automation/algorithm.py)
+- [Java Implementation](/code/semester_08/lecture_47_support_systems/customer_support_automation/Algorithm.java)
+- [Python Tests](/code/semester_08/lecture_47_support_systems/customer_support_automation/test_algorithm.py)
 
 
    Customer Support Automation
 
-2. **What problem does it solve? (1 sentence)**  
+What problem does it solve? (1 sentence)  
    Automates customer support processes using AI, chatbots, and automated workflows to handle common inquiries, route tickets, and provide instant responses, reducing response time and support costs.
 
-3. **Intuition (plain-language explanation)**  
+Intuition (plain-language explanation)  
    Like a smart receptionist: instead of customers waiting for a human agent (slow, expensive), automation uses chatbots and AI to answer common questions instantly (like 'What's my order status?') - only complex issues get escalated to humans, making support faster and cheaper.
 
-4. **Inputs & Outputs**  
+Inputs & Outputs  
    - Input: Customer inquiries, support tickets, knowledge base, automation rules, AI models.  
    - Output: Automated responses, resolved tickets, routed escalations, support metrics.
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Receive inquiry: customer submits question via chat, email, or ticket.
-2. Classify: use AI/NLP to classify inquiry type (billing, technical, general, etc.).
-3. Search knowledge base: query knowledge base for relevant answers.
-4. Generate response: AI generates or retrieves appropriate response.
-5. Respond: send automated response to customer (chatbot, email, etc.).
-6. Verify: check if response resolves customer's issue.
-7. Escalate (if needed): if issue unresolved or complex, route to human agent.
-8. Learn: update automation based on successful resolutions and feedback.
+Step-by-step description (5–10 lines max)  
+Receive inquiry: customer submits question via chat, email, or ticket.
+Classify: use AI/NLP to classify inquiry type (billing, technical, general, etc.).
+Search knowledge base: query knowledge base for relevant answers.
+Generate response: AI generates or retrieves appropriate response.
+Respond: send automated response to customer (chatbot, email, etc.).
+Verify: check if response resolves customer's issue.
+Escalate (if needed): if issue unresolved or complex, route to human agent.
+Learn: update automation based on successful resolutions and feedback.
 
-6. **Tiny example (hand-simulated)**  
+Tiny example (hand-simulated)  
    Customer asks: 'How do I reset my password?' → automation classifies as 'account issue' → searches knowledge base → finds password reset guide → sends automated response with steps → customer follows steps → issue resolved → no human agent needed → response time: 5 seconds vs 10 minutes.
 
-7. **Time & Space Complexity**  
+Time & Space Complexity  
    - Time: O(1) for simple lookups, O(log n) for knowledge base search, O(m) for AI processing where m is message length.  
    - Space: O(k) where k is knowledge base size, O(m) for AI models.
 
-8. **Strengths**  
+Strengths  
 - Fast response: provides instant answers to common questions.
 - Cost-effective: reduces need for human support agents.
 - 24/7 availability: works around the clock without breaks.
 
-9. **Weaknesses / limitations**  
+Weaknesses / limitations  
 - Limited understanding: may misunderstand complex or nuanced questions.
 - Customer frustration: some customers prefer human interaction.
 - Maintenance: requires ongoing updates to knowledge base and rules.
 
-10. **Compare with alternatives**  
+Compare with alternatives  
     Alternatives: Human Support, Hybrid Automation, Self-Service Portals, Community Forums
 
-11. **30-second explanation (your own words)**  
+30-second explanation (your own words)  
     Automates customer support processes using AI, chatbots, and automated workflows to handle common inquiries, route tickets, and provide instant responses, reducing response time and support costs.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

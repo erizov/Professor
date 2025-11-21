@@ -1,6 +1,6 @@
 # Random Search
 
-1. **Name of Algorithm**  
+Name of Algorithm  
 
 ## Code Files
 
@@ -92,7 +92,7 @@ flowchart TD
 
 
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-- [Python Implementation](semester_05/lecture_27_hyperparameter_optimization/random_search/algorithm.py)
-- [Java Implementation](semester_05/lecture_27_hyperparameter_optimization/random_search/Algorithm.java)
-- [Python Tests](semester_05/lecture_27_hyperparameter_optimization/random_search/test_algorithm.py)
+- [Python Implementation](/code/semester_05/lecture_27_hyperparameter_optimization/random_search/algorithm.py)
+- [Java Implementation](/code/semester_05/lecture_27_hyperparameter_optimization/random_search/Algorithm.java)
+- [Python Tests](/code/semester_05/lecture_27_hyperparameter_optimization/random_search/test_algorithm.py)
 

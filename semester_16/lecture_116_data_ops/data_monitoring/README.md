@@ -1,6 +1,6 @@
 # Data Monitoring
 
-1. **Name of Algorithm**  
+Name of Algorithm  
 
 ## Code Files
 
@@ -81,45 +81,45 @@ flowchart TD
 
 
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-- [Python Implementation](semester_16/lecture_116_data_ops/data_monitoring/algorithm.py)
-- [Java Implementation](semester_16/lecture_116_data_ops/data_monitoring/Algorithm.java)
-- [Python Tests](semester_16/lecture_116_data_ops/data_monitoring/test_algorithm.py)
+- [Python Implementation](/code/semester_16/lecture_116_data_ops/data_monitoring/algorithm.py)
+- [Java Implementation](/code/semester_16/lecture_116_data_ops/data_monitoring/Algorithm.java)
+- [Python Tests](/code/semester_16/lecture_116_data_ops/data_monitoring/test_algorithm.py)
 
 
    Data Monitoring
 
-2. **What problem does it solve? (1 sentence)**  
+What problem does it solve? (1 sentence)  
 Implements data monitoring algorithm.
 
-3. **Intuition (plain-language explanation)**  
+Intuition (plain-language explanation)  
 Data Monitoring is a fundamental algorithm in computer science.
 
-4. **Inputs & Outputs**  
+Inputs & Outputs  
    - Input: Algorithm-specific inputs  
    - Output: Algorithm-specific outputs
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+Step-by-step description (5–10 lines max)  
+Initialize data structures
+Process input according to algorithm logic
+Return computed result
 
-6. **Tiny example (hand-simulated)**  
+Tiny example (hand-simulated)  
    Example: Data Monitoring applied to sample data.
 
-7. **Time & Space Complexity**  
+Time & Space Complexity  
    - Time: Varies  
    - Space: Varies
 
-8. **Strengths**  
+Strengths  
 - Efficient for specific use cases
 
-9. **Weaknesses / limitations**  
+Weaknesses / limitations  
 - May have limitations in certain scenarios
 
-10. **Compare with alternatives**  
+Compare with alternatives  
     Alternatives: Related algorithms
 
-11. **30-second explanation (your own words)**  
+30-second explanation (your own words)  
     Data Monitoring solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

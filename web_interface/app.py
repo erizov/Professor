@@ -5,11 +5,12 @@ Web interface for algorithm course.
 Provides sorting, searching, and preview functionality.
 """
 
-from flask import Flask, render_template, request, jsonify, session, redirect, url_for
+from flask import Flask, render_template, request, jsonify, session, redirect, url_for, send_from_directory
 from flask_cors import CORS
 import sqlite3
 from pathlib import Path
 import json
+import markdown
 
 ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = ROOT / "database" / "algorithms.db"
@@ -269,9 +270,209 @@ def get_semesters():
 def get_statistics():
     """Get overall statistics."""
     conn = get_db_connection()
-    stats = conn.execute("SELECT * FROM algorithm_statistics").fetchone()
+    
+    # Calculate real-time statistics
+    total_algorithms = conn.execute("SELECT COUNT(*) FROM algorithms").fetchone()[0]
+    total_tests = conn.execute("SELECT COUNT(*) FROM test_files").fetchone()[0]
+    total_frameworks = conn.execute("SELECT COUNT(DISTINCT framework_name) FROM framework_usage").fetchone()[0]
+    total_semesters = conn.execute("SELECT COUNT(DISTINCT semester_number) FROM algorithms WHERE semester_number IS NOT NULL").fetchone()[0]
+    
+    stats = {
+        "total_algorithms": total_algorithms,
+        "total_tests": total_tests,
+        "total_framework_examples": total_frameworks,
+        "total_semesters": total_semesters
+    }
+    
     conn.close()
-    return jsonify(dict(stats))
+    return jsonify(stats)
+
+
+@app.route("/readme/<path:file_path>")
+def serve_readme(file_path):
+    """Serve README files as rendered HTML."""
+    try:
+        # Security: ensure path is within project root
+        readme_path = ROOT / file_path
+        if not str(readme_path).startswith(str(ROOT)):
+            return jsonify({"error": "Invalid path"}), 400
+        
+        if not readme_path.exists() or not readme_path.is_file():
+            return jsonify({"error": "File not found"}), 404
+        
+        # Read and render markdown
+        with open(readme_path, 'r', encoding='utf-8') as f:
+            md_content = f.read()
+        
+        # Convert markdown to HTML
+        html_content = markdown.markdown(
+            md_content,
+            extensions=['fenced_code', 'tables', 'codehilite']
+        )
+        
+        # Wrap in a simple HTML template
+        html = f"""
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <title>README - {file_path}</title>
+            <style>
+                body {{
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+                    line-height: 1.6;
+                    max-width: 900px;
+                    margin: 0 auto;
+                    padding: 20px;
+                    color: #333;
+                }}
+                pre {{
+                    background: #f4f4f4;
+                    padding: 15px;
+                    border-radius: 5px;
+                    overflow-x: auto;
+                }}
+                code {{
+                    background: #f4f4f4;
+                    padding: 2px 5px;
+                    border-radius: 3px;
+                }}
+                pre code {{
+                    background: none;
+                    padding: 0;
+                }}
+                table {{
+                    border-collapse: collapse;
+                    width: 100%;
+                }}
+                th, td {{
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: left;
+                }}
+                th {{
+                    background-color: #f2f2f2;
+                }}
+                a {{
+                    color: #667eea;
+                    text-decoration: none;
+                }}
+                a:hover {{
+                    text-decoration: underline;
+                }}
+                img {{
+                    max-width: 100%;
+                    height: auto;
+                }}
+            </style>
+        </head>
+        <body>
+            <div style="margin-bottom: 20px;">
+                <a href="/" style="color: #667eea;">← Back to Index</a>
+            </div>
+            {html_content}
+        </body>
+        </html>
+        """
+        
+        return html
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route("/code/<path:file_path>")
+def serve_code(file_path):
+    """Serve code files (Python, Java, etc.) with syntax highlighting."""
+    try:
+        # Security: ensure path is within project root
+        code_path = ROOT / file_path
+        if not str(code_path).startswith(str(ROOT)):
+            return jsonify({"error": "Invalid path"}), 400
+        
+        if not code_path.exists() or not code_path.is_file():
+            return jsonify({"error": "File not found"}), 404
+        
+        # Read file content
+        with open(code_path, 'r', encoding='utf-8') as f:
+            code_content = f.read()
+        
+        # Determine language from extension
+        ext = code_path.suffix.lower()
+        lang_map = {
+            '.py': 'python',
+            '.java': 'java',
+            '.js': 'javascript',
+            '.ts': 'typescript',
+            '.html': 'html',
+            '.css': 'css',
+            '.md': 'markdown',
+        }
+        language = lang_map.get(ext, 'text')
+        
+        # Escape HTML
+        from html import escape
+        escaped_code = escape(code_content)
+        
+        # Wrap in HTML with syntax highlighting
+        html = f"""
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <title>{code_path.name}</title>
+            <style>
+                body {{
+                    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                    line-height: 1.5;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 20px;
+                    background: #f5f5f5;
+                }}
+                pre {{
+                    background: #ffffff;
+                    padding: 20px;
+                    border-radius: 5px;
+                    overflow-x: auto;
+                    border: 1px solid #ddd;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                }}
+                code {{
+                    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                    font-size: 14px;
+                }}
+                .header {{
+                    margin-bottom: 20px;
+                    padding: 10px;
+                    background: #fff;
+                    border-radius: 5px;
+                    border: 1px solid #ddd;
+                }}
+                .header a {{
+                    color: #667eea;
+                    text-decoration: none;
+                }}
+                .header a:hover {{
+                    text-decoration: underline;
+                }}
+            </style>
+        </head>
+        <body>
+            <div class="header">
+                <a href="/" style="color: #667eea;">← Back to Index</a>
+                <span style="margin: 0 10px;">|</span>
+                <strong>{code_path.name}</strong>
+                <span style="margin: 0 10px;">|</span>
+                <span style="color: #666;">{language}</span>
+            </div>
+            <pre><code class="language-{language}">{escaped_code}</code></pre>
+        </body>
+        </html>
+        """
+        
+        return html
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 
 if __name__ == "__main__":

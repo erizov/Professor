@@ -1,6 +1,6 @@
 # Dynamic Programming Fibonacci
 
-1. **Name of Algorithm**  
+Name of Algorithm  
 
 ## Code Files
 
@@ -81,7 +81,7 @@ flowchart TD
 
 
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-- [Python Implementation](semester_03/lecture_11_dynamic_programming/fibonacci/algorithm.py)
-- [Java Implementation](semester_03/lecture_11_dynamic_programming/fibonacci/Algorithm.java)
-- [Python Tests](semester_03/lecture_11_dynamic_programming/fibonacci/test_algorithm.py)
+- [Python Implementation](/code/semester_03/lecture_11_dynamic_programming/fibonacci/algorithm.py)
+- [Java Implementation](/code/semester_03/lecture_11_dynamic_programming/fibonacci/Algorithm.java)
+- [Python Tests](/code/semester_03/lecture_11_dynamic_programming/fibonacci/test_algorithm.py)
 

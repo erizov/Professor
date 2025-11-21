@@ -1,6 +1,6 @@
 # Model Registry
 
-1. **Name of Algorithm**  
+Name of Algorithm  
 
 ## Code Files
 
@@ -81,55 +81,55 @@ flowchart TD
 
 
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-- [Python Implementation](semester_10/lecture_70_ai_governance/model_registry/algorithm.py)
-- [Java Implementation](semester_10/lecture_70_ai_governance/model_registry/Algorithm.java)
-- [Python Tests](semester_10/lecture_70_ai_governance/model_registry/test_algorithm.py)
+- [Python Implementation](/code/semester_10/lecture_70_ai_governance/model_registry/algorithm.py)
+- [Java Implementation](/code/semester_10/lecture_70_ai_governance/model_registry/Algorithm.java)
+- [Python Tests](/code/semester_10/lecture_70_ai_governance/model_registry/test_algorithm.py)
 
 
    Model Registry
 
-2. **What problem does it solve? (1 sentence)**  
+What problem does it solve? (1 sentence)  
    Provides a centralized repository for storing, versioning, and managing AI models, enabling model discovery, tracking, and lifecycle management.
 
-3. **Intuition (plain-language explanation)**  
+Intuition (plain-language explanation)  
    Like a library catalog: Model Registry is like a library catalog for AI models - it stores information about all models (metadata, versions), makes them discoverable (search, browse), and tracks their history (versions, usage) - just as a library catalog helps you find and track books, a model registry helps you find and track AI models.
 
-4. **Inputs & Outputs**  
+Inputs & Outputs  
    - Input: Model artifacts, model metadata, version information, performance metrics, deployment status.  
    - Output: Registered models, model versions, searchable catalog, model metadata, lifecycle tracking.
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Register: register models with metadata (name, version, description).
-2. Store: store model artifacts (weights, code, configs).
-3. Version: track model versions and changes.
-4. Tag: tag models with labels (environment, purpose).
-5. Search: enable search and discovery of models.
-6. Link: link models to datasets and experiments.
-7. Track: track model usage and deployments.
-8. Compare: compare model versions and performance.
-9. Promote: promote models through stages (dev, staging, prod).
-10. Archive: archive deprecated models.
+Step-by-step description (5–10 lines max)  
+Register: register models with metadata (name, version, description).
+Store: store model artifacts (weights, code, configs).
+Version: track model versions and changes.
+Tag: tag models with labels (environment, purpose).
+Search: enable search and discovery of models.
+Link: link models to datasets and experiments.
+Track: track model usage and deployments.
+Compare: compare model versions and performance.
+Promote: promote models through stages (dev, staging, prod).
+Archive: archive deprecated models.
 
-6. **Tiny example (hand-simulated)**  
+Tiny example (hand-simulated)  
    Model Registry: model: sentiment-analysis-v1.2 → register: metadata, artifacts → version: track v1.0, v1.1, v1.2 → tag: production, NLP → search: find by tag or name → link: to training dataset → track: deployed in 3 environments → compare: v1.2 vs v1.1 performance → Model Registry operational.
 
-7. **Time & Space Complexity**  
+Time & Space Complexity  
    - Time: O(1) for registration, O(log n) for search where n is number of models.  
    - Space: O(m + a) where m is metadata storage, a is artifact storage (model files).
 
-8. **Strengths**  
+Strengths  
 - Organization: organizes and centralizes model management.
 - Discovery: enables easy discovery of models.
 - Tracking: tracks model lifecycle and usage.
 
-9. **Weaknesses / limitations**  
+Weaknesses / limitations  
 - Storage: requires storage for model artifacts.
 - Maintenance: requires maintenance and curation.
 - Complexity: can become complex with many models.
 
-10. **Compare with alternatives**  
+Compare with alternatives  
     Alternatives: File System Storage, Version Control, Database Storage, Cloud Storage
 
-11. **30-second explanation (your own words)**  
+30-second explanation (your own words)  
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

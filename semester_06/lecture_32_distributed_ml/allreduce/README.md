@@ -1,6 +1,6 @@
 # AllReduce
 
-1. **Name of Algorithm**  
+Name of Algorithm  
 
 ## Code Files
 
@@ -81,7 +81,7 @@ flowchart TD
 
 
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-- [Python Implementation](semester_06/lecture_32_distributed_ml/allreduce/algorithm.py)
-- [Java Implementation](semester_06/lecture_32_distributed_ml/allreduce/Algorithm.java)
-- [Python Tests](semester_06/lecture_32_distributed_ml/allreduce/test_algorithm.py)
+- [Python Implementation](/code/semester_06/lecture_32_distributed_ml/allreduce/algorithm.py)
+- [Java Implementation](/code/semester_06/lecture_32_distributed_ml/allreduce/Algorithm.java)
+- [Python Tests](/code/semester_06/lecture_32_distributed_ml/allreduce/test_algorithm.py)
 

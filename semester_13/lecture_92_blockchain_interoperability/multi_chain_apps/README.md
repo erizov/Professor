@@ -1,6 +1,6 @@
 # Multi Chain Apps
 
-1. **Name of Algorithm**  
+Name of Algorithm  
 
 ## Code Files
 
@@ -81,56 +81,56 @@ flowchart TD
 
 
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-- [Python Implementation](semester_13/lecture_92_blockchain_interoperability/multi_chain_apps/algorithm.py)
-- [Java Implementation](semester_13/lecture_92_blockchain_interoperability/multi_chain_apps/Algorithm.java)
-- [Python Tests](semester_13/lecture_92_blockchain_interoperability/multi_chain_apps/test_algorithm.py)
+- [Python Implementation](/code/semester_13/lecture_92_blockchain_interoperability/multi_chain_apps/algorithm.py)
+- [Java Implementation](/code/semester_13/lecture_92_blockchain_interoperability/multi_chain_apps/Algorithm.java)
+- [Python Tests](/code/semester_13/lecture_92_blockchain_interoperability/multi_chain_apps/test_algorithm.py)
 
 
    Multi Chain Apps
 
-2. **What problem does it solve? (1 sentence)**  
+What problem does it solve? (1 sentence)  
    Implements applications that operate across multiple blockchains simultaneously, leveraging different chains for different purposes and providing unified user experiences across chains.
 
-3. **Intuition (plain-language explanation)**  
+Intuition (plain-language explanation)  
    Like apps on multiple platforms: Multi Chain Apps are like apps that work on multiple platforms - you build one app (like a cross-platform app) that works on multiple blockchains - just as cross-platform apps work everywhere, multi-chain apps work across blockchains.
 
-4. **Inputs & Outputs**  
+Inputs & Outputs  
    - Input: User requests, multiple blockchains, app logic, chain selection, cross-chain operations.  
    - Output: Multi-chain applications, unified experiences, cross-chain functionality, optimized operations, seamless apps.
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Design: design app for multiple chains.
-2. Deploy: deploy app on multiple blockchains.
-3. Route: route operations to appropriate chains.
-4. Execute: execute operations on selected chains.
-5. Sync: synchronize state across chains.
-6. Aggregate: aggregate results from multiple chains.
-7. Present: present unified interface to users.
-8. Optimize: optimize for best chain selection.
-9. Manage: manage multi-chain state.
-10. Scale: scale across more chains.
+Step-by-step description (5–10 lines max)  
+Design: design app for multiple chains.
+Deploy: deploy app on multiple blockchains.
+Route: route operations to appropriate chains.
+Execute: execute operations on selected chains.
+Sync: synchronize state across chains.
+Aggregate: aggregate results from multiple chains.
+Present: present unified interface to users.
+Optimize: optimize for best chain selection.
+Manage: manage multi-chain state.
+Scale: scale across more chains.
 
-6. **Tiny example (hand-simulated)**  
+Tiny example (hand-simulated)  
    Multi Chain Apps: app: DeFi protocol → deploy: deploy on Ethereum, Polygon, Arbitrum → route: route transactions to cheapest chain → execute: execute on selected chain → result: unified DeFi experience across chains → Multi Chain Apps successful.
 
-7. **Time & Space Complexity**  
+Time & Space Complexity  
    - Time: O(r + e) where r is routing time, e is execution time (varies by chain selection).  
    - Space: O(a + c) where a is app storage, c is chain storage (app and chain data).
 
-8. **Strengths**  
+Strengths  
 - Flexibility: leverages strengths of different chains.
 - User experience: provides unified user experience.
 - Optimization: optimizes for cost and performance.
 
-9. **Weaknesses / limitations**  
+Weaknesses / limitations  
 - Complexity: multi-chain apps are complex.
 - State: managing state across chains is challenging.
 - Testing: testing across chains is complex.
 
-10. **Compare with alternatives**  
+Compare with alternatives  
     Alternatives: Single Chain Apps, Chain-Specific Apps, Bridged Apps, Hybrid Approaches
 
-11. **30-second explanation (your own words)**  
+30-second explanation (your own words)  
     Implements applications that operate across multiple blockchains simultaneously, leveraging different chains for different purposes and providing unified user experiences across chains.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

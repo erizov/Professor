@@ -1,6 +1,6 @@
 # Decision Tree
 
-1. **Name of Algorithm**  
+Name of Algorithm  
 
 ## Code Files
 
@@ -87,7 +87,7 @@ flowchart TD
 
 
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-- [Python Implementation](semester_03/lecture_12_ml_algorithms/decision_tree/algorithm.py)
-- [Java Implementation](semester_03/lecture_12_ml_algorithms/decision_tree/Algorithm.java)
-- [Python Tests](semester_03/lecture_12_ml_algorithms/decision_tree/test_algorithm.py)
+- [Python Implementation](/code/semester_03/lecture_12_ml_algorithms/decision_tree/algorithm.py)
+- [Java Implementation](/code/semester_03/lecture_12_ml_algorithms/decision_tree/Algorithm.java)
+- [Python Tests](/code/semester_03/lecture_12_ml_algorithms/decision_tree/test_algorithm.py)
 

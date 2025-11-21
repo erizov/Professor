@@ -1,6 +1,6 @@
 # ARIMA (AutoRegressive Integrated Moving Average)
 
-1. **Name of Algorithm**  
+Name of Algorithm  
 
 ## Code Files
 
@@ -81,7 +81,7 @@ flowchart TD
 
 
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-- [Python Implementation](semester_05/lecture_30_time_series/arima/algorithm.py)
-- [Java Implementation](semester_05/lecture_30_time_series/arima/Algorithm.java)
-- [Python Tests](semester_05/lecture_30_time_series/arima/test_algorithm.py)
+- [Python Implementation](/code/semester_05/lecture_30_time_series/arima/algorithm.py)
+- [Java Implementation](/code/semester_05/lecture_30_time_series/arima/Algorithm.java)
+- [Python Tests](/code/semester_05/lecture_30_time_series/arima/test_algorithm.py)
 

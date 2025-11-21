@@ -1,6 +1,6 @@
 # R-CNN (Region-based CNN)
 
-1. **Name of Algorithm**  
+Name of Algorithm  
 
 ## Code Files
 
@@ -81,7 +81,7 @@ flowchart TD
 
 
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-- [Python Implementation](semester_05/lecture_23_object_detection/rcnn/algorithm.py)
-- [Java Implementation](semester_05/lecture_23_object_detection/rcnn/Algorithm.java)
-- [Python Tests](semester_05/lecture_23_object_detection/rcnn/test_algorithm.py)
+- [Python Implementation](/code/semester_05/lecture_23_object_detection/rcnn/algorithm.py)
+- [Java Implementation](/code/semester_05/lecture_23_object_detection/rcnn/Algorithm.java)
+- [Python Tests](/code/semester_05/lecture_23_object_detection/rcnn/test_algorithm.py)
 

@@ -98,9 +98,17 @@ class JavaExecutor:
         """Extract package name from Java file."""
         try:
             content = java_file.read_text(encoding='utf-8')
-            match = re.search(r'^package\s+([^;]+);', content, re.MULTILINE)
-            if match:
-                return match.group(1)
+            # Look for actual package declaration (not in comments)
+            # Check for package at start of line (possibly with whitespace)
+            for line in content.split('\n'):
+                # Skip comment lines
+                stripped = line.strip()
+                if stripped.startswith('//') or stripped.startswith('/*') or stripped.startswith('*'):
+                    continue
+                # Look for package declaration
+                match = re.search(r'^\s*package\s+([^;]+);', line)
+                if match:
+                    return match.group(1)
         except Exception:
             pass
         return None
@@ -191,10 +199,23 @@ class JavaExecutor:
             return False, "", compile_error, 0.0
         
         # Determine class name and classpath
-        if algorithm_info.package:
-            class_name = f"{algorithm_info.package}.{algorithm_info.class_name}"
-            classpath = "."
-        else:
+        # Most Java files don't have real package declarations (they're in comments)
+        # So we'll use the directory structure as the package
+        # Extract package from file path
+        try:
+            relative_path = algorithm_info.path.relative_to(self.root)
+            # Convert path to package name (e.g., semester_01/lecture_01/... -> semester_01.lecture_01....)
+            path_parts = relative_path.parent.parts
+            if path_parts:
+                package_from_path = '.'.join(path_parts)
+                class_name = f"{package_from_path}.{algorithm_info.class_name}"
+                # Use project root as classpath
+                classpath = str(self.root)
+            else:
+                class_name = algorithm_info.class_name
+                classpath = str(algorithm_info.path.parent)
+        except ValueError:
+            # If relative_to fails, use simple class name
             class_name = algorithm_info.class_name
             classpath = str(algorithm_info.path.parent)
         

@@ -1,6 +1,6 @@
 # Self-Service Platforms
 
-1. **Name of Algorithm**  
+Name of Algorithm  
 
 ## Code Files
 
@@ -81,56 +81,56 @@ flowchart TD
 
 
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-- [Python Implementation](semester_11/lecture_76_platform_engineering/self_service_platforms/algorithm.py)
-- [Java Implementation](semester_11/lecture_76_platform_engineering/self_service_platforms/Algorithm.java)
-- [Python Tests](semester_11/lecture_76_platform_engineering/self_service_platforms/test_algorithm.py)
+- [Python Implementation](/code/semester_11/lecture_76_platform_engineering/self_service_platforms/algorithm.py)
+- [Java Implementation](/code/semester_11/lecture_76_platform_engineering/self_service_platforms/Algorithm.java)
+- [Python Tests](/code/semester_11/lecture_76_platform_engineering/self_service_platforms/test_algorithm.py)
 
 
    Self-Service Platforms
 
-2. **What problem does it solve? (1 sentence)**  
+What problem does it solve? (1 sentence)  
    Enables developers to provision, configure, and manage resources and services independently through self-service interfaces, reducing dependency on operations teams and improving developer velocity.
 
-3. **Intuition (plain-language explanation)**  
+Intuition (plain-language explanation)  
    Like self-checkout: Self-Service Platforms are like self-checkout at stores - instead of waiting for a cashier (operations team), you check out yourself (self-service) - just as self-checkout makes shopping faster, self-service platforms make development faster by letting developers help themselves.
 
-4. **Inputs & Outputs**  
+Inputs & Outputs  
    - Input: Developer requests, resource requirements, platform services, self-service interfaces, automation capabilities.  
    - Output: Self-service access, provisioned resources, automated workflows, reduced wait times, improved velocity.
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Provide interface: provide self-service interface (portal, CLI, API).
-2. Catalog resources: catalog available resources and services.
-3. Enable provisioning: enable self-service resource provisioning.
-4. Automate: automate provisioning and configuration.
-5. Govern: implement governance and policies.
-6. Monitor: monitor self-service usage and costs.
-7. Support: provide support and documentation.
-8. Optimize: optimize self-service workflows.
-9. Scale: scale self-service capabilities.
-10. Iterate: iterate based on developer feedback.
+Step-by-step description (5–10 lines max)  
+Provide interface: provide self-service interface (portal, CLI, API).
+Catalog resources: catalog available resources and services.
+Enable provisioning: enable self-service resource provisioning.
+Automate: automate provisioning and configuration.
+Govern: implement governance and policies.
+Monitor: monitor self-service usage and costs.
+Support: provide support and documentation.
+Optimize: optimize self-service workflows.
+Scale: scale self-service capabilities.
+Iterate: iterate based on developer feedback.
 
-6. **Tiny example (hand-simulated)**  
+Tiny example (hand-simulated)  
    Self-Service Platforms: developer: needs database → portal: self-service database provisioning → select: database type, size → provision: automated provisioning → result: database ready in 2 minutes (vs 2 days with ops) → Self-Service Platforms successful.
 
-7. **Time & Space Complexity**  
+Time & Space Complexity  
    - Time: O(p + a) where p is provisioning time, a is automation time (much faster than manual).  
    - Space: O(i + r) where i is interface storage, r is resource storage (provisioned resources).
 
-8. **Strengths**  
+Strengths  
 - Velocity: significantly improves developer velocity.
 - Independence: reduces dependency on operations teams.
 - Efficiency: automates repetitive provisioning tasks.
 
-9. **Weaknesses / limitations**  
+Weaknesses / limitations  
 - Governance: requires governance to prevent misuse.
 - Cost: self-service may lead to resource sprawl.
 - Support: still requires support and documentation.
 
-10. **Compare with alternatives**  
+Compare with alternatives  
     Alternatives: Manual Provisioning, Ticket-Based, Approval Workflows, Automated Provisioning
 
-11. **30-second explanation (your own words)**  
+30-second explanation (your own words)  
     Enables developers to provision, configure, and manage resources and services independently through self-service interfaces, reducing dependency on operations teams and improving developer velocity.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

@@ -1,6 +1,6 @@
 # Inception (GoogLeNet)
 
-1. **Name of Algorithm**  
+Name of Algorithm  
 
 ## Code Files
 
@@ -81,7 +81,7 @@ flowchart TD
 
 
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-- [Python Implementation](semester_05/lecture_22_cnn_architectures/inception/algorithm.py)
-- [Java Implementation](semester_05/lecture_22_cnn_architectures/inception/Algorithm.java)
-- [Python Tests](semester_05/lecture_22_cnn_architectures/inception/test_algorithm.py)
+- [Python Implementation](/code/semester_05/lecture_22_cnn_architectures/inception/algorithm.py)
+- [Java Implementation](/code/semester_05/lecture_22_cnn_architectures/inception/Algorithm.java)
+- [Python Tests](/code/semester_05/lecture_22_cnn_architectures/inception/test_algorithm.py)
 

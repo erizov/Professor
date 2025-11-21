@@ -1,6 +1,6 @@
 # Quantum Key Distribution (QKD)
 
-1. **Name of Algorithm**  
+Name of Algorithm  
 
 ## Code Files
 
@@ -81,56 +81,56 @@ flowchart TD
 
 
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-- [Python Implementation](semester_12/lecture_85_quantum_networking/quantum_key_distribution/algorithm.py)
-- [Java Implementation](semester_12/lecture_85_quantum_networking/quantum_key_distribution/Algorithm.java)
-- [Python Tests](semester_12/lecture_85_quantum_networking/quantum_key_distribution/test_algorithm.py)
+- [Python Implementation](/code/semester_12/lecture_85_quantum_networking/quantum_key_distribution/algorithm.py)
+- [Java Implementation](/code/semester_12/lecture_85_quantum_networking/quantum_key_distribution/Algorithm.java)
+- [Python Tests](/code/semester_12/lecture_85_quantum_networking/quantum_key_distribution/test_algorithm.py)
 
 
    Quantum Key Distribution (QKD)
 
-2. **What problem does it solve? (1 sentence)**  
+What problem does it solve? (1 sentence)  
    Distributes cryptographic keys securely using quantum mechanics, providing provably secure key exchange that detects any eavesdropping attempts, enabling unbreakable encryption.
 
-3. **Intuition (plain-language explanation)**  
+Intuition (plain-language explanation)  
    Like secure key exchange: Quantum Key Distribution is like exchanging keys securely - you send quantum states (keys) that can't be copied or intercepted without detection - just as you exchange keys securely, QKD exchanges keys using quantum mechanics, and any eavesdropping is detected.
 
-4. **Inputs & Outputs**  
+Inputs & Outputs  
    - Input: Quantum states, measurement bases, quantum channel, classical channel, protocols (BB84, E91).  
    - Output: Secure quantum keys, key distribution, eavesdropping detection, encryption keys, secure communication.
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Prepare: prepare quantum states (qubits) randomly.
-2. Transmit: transmit qubits to receiver.
-3. Measure: measure qubits using random bases.
-4. Compare: compare measurement bases publicly.
-5. Extract: extract key from matching bases.
-6. Verify: verify key security (error checking).
-7. Detect: detect eavesdropping from errors.
-8. Reject: reject key if eavesdropping detected.
-9. Use: use secure key for encryption.
-10. Renew: renew keys periodically.
+Step-by-step description (5–10 lines max)  
+Prepare: prepare quantum states (qubits) randomly.
+Transmit: transmit qubits to receiver.
+Measure: measure qubits using random bases.
+Compare: compare measurement bases publicly.
+Extract: extract key from matching bases.
+Verify: verify key security (error checking).
+Detect: detect eavesdropping from errors.
+Reject: reject key if eavesdropping detected.
+Use: use secure key for encryption.
+Renew: renew keys periodically.
 
-6. **Tiny example (hand-simulated)**  
+Tiny example (hand-simulated)  
    QKD: Alice: prepare qubits → transmit: send to Bob → measure: both measure randomly → compare: share bases → extract: key from matches → verify: check errors → detect: no eavesdropping → result: secure key distributed → QKD successful.
 
-7. **Time & Space Complexity**  
+Time & Space Complexity  
    - Time: O(n) where n is number of qubits (key distribution time).  
    - Space: O(n) where n is key length (quantum state storage).
 
-8. **Strengths**  
+Strengths  
 - Security: provably secure based on physics.
 - Detection: automatically detects eavesdropping.
 - Future-proof: secure against quantum computers.
 
-9. **Weaknesses / limitations**  
+Weaknesses / limitations  
 - Distance: limited by quantum channel distance.
 - Rate: key distribution rate is limited.
 - Infrastructure: requires quantum infrastructure.
 
-10. **Compare with alternatives**  
+Compare with alternatives  
     Alternatives: Classical Key Exchange, Post-Quantum Cryptography, Hybrid Approaches, Quantum Networks
 
-11. **30-second explanation (your own words)**  
+30-second explanation (your own words)  
     Distributes cryptographic keys securely using quantum mechanics, providing provably secure key exchange that detects any eavesdropping attempts, enabling unbreakable encryption.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*

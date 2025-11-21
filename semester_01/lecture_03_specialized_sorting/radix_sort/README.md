@@ -1,6 +1,6 @@
 # Radix Sort
 
-1. **Name of Algorithm**  
+Name of Algorithm  
 
 ## Code Files
 
@@ -109,7 +109,7 @@ flowchart TD
 
 
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-- [Python Implementation](semester_01/lecture_03_specialized_sorting/radix_sort/algorithm.py)
-- [Java Implementation](semester_01/lecture_03_specialized_sorting/radix_sort/Algorithm.java)
-- [Python Tests](semester_01/lecture_03_specialized_sorting/radix_sort/test_algorithm.py)
+- [Python Implementation](/code/semester_01/lecture_03_specialized_sorting/radix_sort/algorithm.py)
+- [Java Implementation](/code/semester_01/lecture_03_specialized_sorting/radix_sort/Algorithm.java)
+- [Python Tests](/code/semester_01/lecture_03_specialized_sorting/radix_sort/test_algorithm.py)
 

@@ -1,6 +1,6 @@
 # Readers-Writers Problem
 
-1. **Name of Algorithm**  
+Name of Algorithm  
 
 ## Code Files
 
@@ -81,7 +81,7 @@ flowchart TD
 
 
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-- [Python Implementation](semester_02/lecture_12_concurrency_patterns/readers_writers/algorithm.py)
-- [Java Implementation](semester_02/lecture_12_concurrency_patterns/readers_writers/Algorithm.java)
-- [Python Tests](semester_02/lecture_12_concurrency_patterns/readers_writers/test_algorithm.py)
+- [Python Implementation](/code/semester_02/lecture_12_concurrency_patterns/readers_writers/algorithm.py)
+- [Java Implementation](/code/semester_02/lecture_12_concurrency_patterns/readers_writers/Algorithm.java)
+- [Python Tests](/code/semester_02/lecture_12_concurrency_patterns/readers_writers/test_algorithm.py)
 

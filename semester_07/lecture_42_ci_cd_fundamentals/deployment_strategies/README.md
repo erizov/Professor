@@ -1,6 +1,6 @@
 # Deployment Strategies
 
-1. **Name of Algorithm**  
+Name of Algorithm  
 
 ## Code Files
 
@@ -81,7 +81,7 @@ flowchart TD
 
 
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-- [Python Implementation](semester_07/lecture_42_ci_cd_fundamentals/deployment_strategies/algorithm.py)
-- [Java Implementation](semester_07/lecture_42_ci_cd_fundamentals/deployment_strategies/Algorithm.java)
-- [Python Tests](semester_07/lecture_42_ci_cd_fundamentals/deployment_strategies/test_algorithm.py)
+- [Python Implementation](/code/semester_07/lecture_42_ci_cd_fundamentals/deployment_strategies/algorithm.py)
+- [Java Implementation](/code/semester_07/lecture_42_ci_cd_fundamentals/deployment_strategies/Algorithm.java)
+- [Python Tests](/code/semester_07/lecture_42_ci_cd_fundamentals/deployment_strategies/test_algorithm.py)
 
