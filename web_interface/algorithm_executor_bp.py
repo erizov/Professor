@@ -183,23 +183,37 @@ def get_algorithm_source(language, algorithm_path):
                 'error': f'Unsupported language: {language}'
             }), 400
         
-        # Normalize path separators
+        # Normalize path separators (handle both Windows \ and Unix /)
         normalized_path = algorithm_path.replace('\\', '/')
         
-        # Try to find algorithm
-        algo_info = executor.find_algorithm(path=normalized_path)
+        # Try multiple path variations
+        path_variations = [
+            normalized_path,
+            algorithm_path,
+            normalized_path.replace('semester_', 'semester_0') if 'semester_' in normalized_path and len(normalized_path.split('semester_')[1].split('/')[0]) == 1 else None,
+            normalized_path.replace('semester_0', 'semester_') if 'semester_0' in normalized_path else None,
+        ]
+        path_variations = [p for p in path_variations if p]  # Remove None values
         
-        if not algo_info:
-            algo_info = executor.find_algorithm(path=algorithm_path)
-        
-        if not algo_info:
+        algo_info = None
+        for path_var in path_variations:
+            # Try to find algorithm with current path variation
+            algo_info = executor.find_algorithm(path=path_var)
+            if algo_info:
+                break
+            
             # Try finding by matching full_path
             algorithms = executor.discover_algorithms()
             for algo in algorithms:
                 algo_path_normalized = algo.full_path.replace('\\', '/')
-                if algo_path_normalized == normalized_path or algo.full_path == algorithm_path:
+                if (algo_path_normalized == path_var or 
+                    algo.full_path == path_var or
+                    algo_path_normalized.endswith(path_var) or
+                    path_var.endswith(algo_path_normalized)):
                     algo_info = algo
                     break
+            if algo_info:
+                break
         
         if not algo_info:
             return jsonify({

@@ -437,9 +437,12 @@
                 return;
             }
             
+            // Normalize path separators (Windows \ to /)
+            const normalizedPath = algorithmPath.replace(/\\/g, '/');
+            
             // Load original algorithm code to preview
             try {
-                const response = await fetch(`/api/algorithm/source/${language}/${encodeURIComponent(algorithmPath)}`);
+                const response = await fetch(`/api/algorithm/source/${language}/${encodeURIComponent(normalizedPath)}`);
                 const data = await response.json();
                 
                 if (data.success && (data.source_code || data.source)) {
