@@ -847,9 +847,23 @@ save_results(processed)</code></pre>
         });
         
         // Initialize
+        // Check user role and show/hide admin link
+        async function checkUserRole() {
+            try {
+                const response = await fetch('/auth/check');
+                const data = await response.json();
+                if (data.authenticated && (data.user.role === 'admin' || data.user.role === 'professor')) {
+                    document.getElementById('user-admin-link').style.display = 'inline-block';
+                }
+            } catch (error) {
+                console.error('Error checking user role:', error);
+            }
+        }
+        
         loadStatistics();
         loadFilters();
         loadAlgorithms();
+        checkUserRole();
     </script>
 </body>
 </html>
