@@ -1,10 +1,5 @@
-/**
 package semester_04.lecture_15_testing_patterns.unit_testing;
- * Unit Testing Pattern.
- * 
- * Tests individual units of code (functions, methods, classes) in isolation.
- * Ensures each unit works correctly before integration.
- */
+
 import java.util.*;
 
 import java.util.logging.Logger;
@@ -30,6 +25,7 @@ class Calculator {
 }
 
 class TestCalculator {
+    private static final Logger logger = Logger.getLogger(TestCalculator.class.getName());
     private final Calculator calculator = new Calculator();
     private int testsPassed = 0;
     private int testsFailed = 0;
@@ -126,6 +122,7 @@ class UserService {
 }
 
 class UserServiceTest {
+    private static final Logger logger = Logger.getLogger(UserServiceTest.class.getName());
     private final UserService service = new UserService();
     private int testsPassed = 0;
     private int testsFailed = 0;
