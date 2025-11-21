@@ -89,17 +89,24 @@ def create_sandbox():
     algorithm_path_str = algorithm_path_str.replace('\\', '/')
     
     # Remove filename if present (algorithm.py, Algorithm.java, etc.)
-    if algorithm_path_str.endswith('/algorithm.py') or algorithm_path_str.endswith('\\algorithm.py'):
+    if algorithm_path_str.endswith('/algorithm.py'):
         algorithm_path_str = algorithm_path_str[:-len('/algorithm.py')]
-    elif algorithm_path_str.endswith('/Algorithm.java') or algorithm_path_str.endswith('\\Algorithm.java'):
+    elif algorithm_path_str.endswith('/Algorithm.java'):
         algorithm_path_str = algorithm_path_str[:-len('/Algorithm.java')]
+    elif algorithm_path_str.endswith('algorithm.py'):
+        algorithm_path_str = algorithm_path_str[:-len('algorithm.py')].rstrip('/')
+    elif algorithm_path_str.endswith('Algorithm.java'):
+        algorithm_path_str = algorithm_path_str[:-len('Algorithm.java')].rstrip('/')
     elif algorithm_path_str.endswith('.py'):
-        algorithm_path_str = algorithm_path_str[:-3]
+        algorithm_path_str = algorithm_path_str[:-3].rstrip('/')
     elif algorithm_path_str.endswith('.java'):
-        algorithm_path_str = algorithm_path_str[:-5]
+        algorithm_path_str = algorithm_path_str[:-5].rstrip('/')
     
     # Remove trailing slashes
     algorithm_path_str = algorithm_path_str.rstrip('/\\')
+    
+    # Normalize path separators again after filename removal
+    algorithm_path_str = algorithm_path_str.replace('\\', '/')
     
     # Determine original file path - try multiple variations
     original_file = None
