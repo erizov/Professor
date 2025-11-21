@@ -36,6 +36,7 @@ try:
     from web_interface.java_executor_bp import java_executor_bp
     from web_interface.algorithm_executor_bp import algorithm_executor_bp
     from web_interface.sandbox_bp import sandbox_bp
+    from web_interface.user_admin_bp import user_admin_bp
 except ImportError:
     # Fallback to relative imports when running from web_interface directory
     from dashboard import dashboard_bp
@@ -45,6 +46,7 @@ except ImportError:
     from test_reports import test_reports_bp
     from java_executor_bp import java_executor_bp
     from sandbox_bp import sandbox_bp
+    from user_admin_bp import user_admin_bp
 
 app.register_blueprint(dashboard_bp)
 app.register_blueprint(auth_bp)
@@ -54,6 +56,7 @@ app.register_blueprint(test_reports_bp)
 app.register_blueprint(java_executor_bp)
 app.register_blueprint(algorithm_executor_bp)
 app.register_blueprint(sandbox_bp)
+app.register_blueprint(user_admin_bp)
 
 
 # Login route
@@ -78,6 +81,14 @@ def admin_page():
     if not require_session(["admin", "professor"]):
         return redirect(url_for("login_page"))
     return render_template("admin_dashboard.html")
+
+
+@app.route("/user-admin")
+def user_admin_page():
+    """User administration page."""
+    if not require_session(["admin", "professor"]):
+        return redirect(url_for("login_page"))
+    return render_template("user_admin.html")
 
 
 @app.route("/reports")
