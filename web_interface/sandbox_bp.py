@@ -438,3 +438,148 @@ def get_version(sandbox_id, version_number):
     finally:
         conn.close()
 
+
+@sandbox_bp.route('/<int:sandbox_id>/execute', methods=['POST'])
+@require_role('student', 'professor', 'admin')
+def execute_sandbox(sandbox_id):
+    """Execute sandbox code."""
+    data = request.get_json()
+    use_custom_code = data.get('use_custom_code', True)
+    custom_code = data.get('code')
+    timeout = data.get('timeout', 30)
+    input_data = data.get('input_data')
+    
+    user_id = session['user_id']
+    
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    
+    try:
+        # Get sandbox and code
+        cursor.execute("""
+            SELECT s.algorithm_path, s.language, sv.code_content
+            FROM sandboxes s
+            JOIN sandbox_versions sv ON s.id = sv.sandbox_id
+            WHERE s.id = ? AND s.user_id = ?
+            ORDER BY sv.version_number DESC
+            LIMIT 1
+        """, (sandbox_id, user_id))
+        
+        result = cursor.fetchone()
+        if not result:
+            return jsonify({'error': 'Sandbox not found'}), 404
+        
+        algorithm_path, language, saved_code = result
+        
+        # Use custom code if provided, otherwise use saved version
+        code_to_execute = custom_code if (use_custom_code and custom_code) else saved_code
+        
+        # Execute using existing executors
+        import tempfile
+        import os
+        
+        if language == 'python':
+            from framework.python_executor import PythonExecutor, AlgorithmInfo
+            
+            # Create temporary file for execution
+            with tempfile.NamedTemporaryFile(mode='w', suffix='.py', delete=False, encoding='utf-8') as f:
+                f.write(code_to_execute)
+                temp_file = Path(f.name)
+            
+            try:
+                # Create AlgorithmInfo-like object
+                algo_info = AlgorithmInfo(
+                    name=algorithm_path,
+                    path=temp_file,
+                    module_name=None,
+                    main_entry_point=None,
+                    semester='',
+                    lecture='',
+                    algorithm='',
+                    full_path=str(temp_file)
+                )
+                
+                executor = PythonExecutor()
+                success, stdout, stderr, exec_time = executor.execute_algorithm(
+                    algo_info, timeout=timeout, input_data=input_data
+                )
+                
+                return jsonify({
+                    'success': success,
+                    'stdout': stdout,
+                    'stderr': stderr,
+                    'execution_time': exec_time
+                })
+            finally:
+                # Clean up temp file
+                if temp_file.exists():
+                    try:
+                        os.unlink(temp_file)
+                    except Exception:
+                        pass
+                        
+        elif language == 'java':
+            from framework.java_executor import JavaExecutor, AlgorithmInfo
+            
+            # Create temporary file for execution
+            with tempfile.NamedTemporaryFile(mode='w', suffix='.java', delete=False, encoding='utf-8') as f:
+                f.write(code_to_execute)
+                temp_file = Path(f.name)
+            
+            try:
+                # Extract package and class name from code
+                import re
+                package_match = re.search(r'^\s*package\s+([^;]+);', code_to_execute, re.MULTILINE)
+                package = package_match.group(1) if package_match else None
+                
+                class_match = re.search(r'public\s+class\s+(\w+)', code_to_execute)
+                class_name = class_match.group(1) if class_match else 'Algorithm'
+                
+                # Create AlgorithmInfo-like object
+                algo_info = AlgorithmInfo(
+                    name=algorithm_path,
+                    path=temp_file,
+                    package=package,
+                    class_name=class_name,
+                    semester='',
+                    lecture='',
+                    algorithm='',
+                    full_path=str(temp_file)
+                )
+                
+                executor = JavaExecutor()
+                success, stdout, stderr, exec_time = executor.execute_algorithm(
+                    algo_info, timeout=timeout, input_data=input_data
+                )
+                
+                return jsonify({
+                    'success': success,
+                    'stdout': stdout,
+                    'stderr': stderr,
+                    'execution_time': exec_time
+                })
+            finally:
+                # Clean up temp file
+                if temp_file.exists():
+                    try:
+                        os.unlink(temp_file)
+                        # Also clean up .class file if it exists
+                        class_file = temp_file.with_suffix('.class')
+                        if class_file.exists():
+                            os.unlink(class_file)
+                    except Exception:
+                        pass
+        else:
+            return jsonify({
+                'error': f'Unsupported language: {language}'
+            }), 400
+                    
+    except Exception as e:
+        import traceback
+        return jsonify({
+            'error': f'Execution error: {str(e)}',
+            'traceback': traceback.format_exc() if __debug__ else None
+        }), 500
+    finally:
+        conn.close()
+

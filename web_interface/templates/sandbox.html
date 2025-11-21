@@ -476,14 +476,13 @@
                 // Get current code
                 const code = document.getElementById('code-editor').value;
                 
-                // Use algorithm executor API
-                const response = await fetch('/api/algorithm/execute', {
+                // Use sandbox execution API
+                const response = await fetch(`/api/sandbox/${currentSandboxId}/execute`, {
                     method: 'POST',
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify({
-                        path: currentAlgorithmPath,
-                        language: currentLanguage,
-                        code: code,  // Override with sandbox code
+                        use_custom_code: true,
+                        code: code,
                         timeout: 30
                     })
                 });
@@ -502,7 +501,10 @@
                 }
                 
                 if (data.execution_time !== undefined) {
-                    execTime.textContent = `Execution time: ${data.execution_time.toFixed(3)}s`;
+                    const timeValue = typeof data.execution_time === 'number' 
+                        ? data.execution_time 
+                        : parseFloat(data.execution_time) || 0;
+                    execTime.textContent = `Execution time: ${timeValue.toFixed(3)}s`;
                 }
                 
             } catch (error) {
