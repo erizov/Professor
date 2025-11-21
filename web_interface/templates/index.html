@@ -35,6 +35,26 @@
             font-size: 1.1rem;
         }
         
+        .nav-menu {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        
+        .nav-menu a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
         .container {
             max-width: 1400px;
             margin: 0 auto;
@@ -225,6 +245,47 @@
             font-size: 0.9rem;
         }
         
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .quick-link-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: block;
+        }
+        
+        .quick-link-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            text-decoration: none;
+        }
+        
+        .quick-link-card h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .quick-link-card p {
+            color: #666;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+        
+        .quick-link-card .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
         .loading {
             text-align: center;
             padding: 2rem;
@@ -326,6 +387,24 @@
                 <div class="value" id="total-semesters">-</div>
                 <div class="label">Semesters</div>
             </div>
+        </div>
+        
+        <div class="quick-links">
+            <a href="/sandbox" class="quick-link-card">
+                <div class="icon">🧪</div>
+                <h3>Algorithm Sandbox</h3>
+                <p>Create your own copy of algorithms and experiment with them. Test your modifications in a safe environment.</p>
+            </a>
+            <a href="/algorithm-executor" class="quick-link-card">
+                <div class="icon">⚙️</div>
+                <h3>Algorithm Executor</h3>
+                <p>Execute any Java or Python algorithm from a unified interface. View source code and run algorithms instantly.</p>
+            </a>
+            <a href="/test-reports" class="quick-link-card">
+                <div class="icon">📊</div>
+                <h3>Test Results</h3>
+                <p>View comprehensive test results for all algorithms. Track success rates, failures, and recent changes.</p>
+            </a>
         </div>
         
         <div class="filters">
