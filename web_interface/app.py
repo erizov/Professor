@@ -44,6 +44,7 @@ except ImportError:
     from admin import admin_bp
     from test_reports import test_reports_bp
     from java_executor_bp import java_executor_bp
+    from sandbox_bp import sandbox_bp
 
 app.register_blueprint(dashboard_bp)
 app.register_blueprint(auth_bp)
@@ -110,6 +111,12 @@ def java_executor_page():
 def algorithm_executor_page():
     """Unified algorithm executor page (Java and Python)."""
     return render_template("algorithm_executor.html")
+
+
+@app.route("/sandbox")
+def sandbox_page():
+    """Sandbox page for students to edit algorithms."""
+    return render_template("sandbox.html")
 
 
 @app.route("/api/algorithms")
