@@ -38,9 +38,9 @@ class JavaExecutor:
         self.root = root
         self._algorithm_cache: Optional[List[AlgorithmInfo]] = None
     
-    def discover_algorithms(self) -> List[AlgorithmInfo]:
+    def discover_algorithms(self, force_refresh: bool = False) -> List[AlgorithmInfo]:
         """Discover all Algorithm.java files in the project."""
-        if self._algorithm_cache is not None:
+        if self._algorithm_cache is not None and not force_refresh:
             return self._algorithm_cache
         
         algorithms = []
