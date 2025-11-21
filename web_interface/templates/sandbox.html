@@ -415,7 +415,11 @@
         function showSandboxInfo(algorithmPath, language) {
             const infoDiv = document.getElementById('sandbox-info');
             const detailsP = document.getElementById('sandbox-details');
-            detailsP.textContent = `Algorithm: ${algorithmPath} | Language: ${language} | Sandbox ID: ${currentSandboxId}`;
+            detailsP.innerHTML = `
+                <strong>Algorithm:</strong> ${algorithmPath}<br>
+                <strong>Language:</strong> ${language}<br>
+                <strong>Sandbox ID:</strong> ${currentSandboxId}
+            `;
             infoDiv.style.display = 'block';
         }
         
