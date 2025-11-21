@@ -35,6 +35,7 @@ try:
     from web_interface.test_reports import test_reports_bp
     from web_interface.java_executor_bp import java_executor_bp
     from web_interface.algorithm_executor_bp import algorithm_executor_bp
+    from web_interface.sandbox_bp import sandbox_bp
 except ImportError:
     # Fallback to relative imports when running from web_interface directory
     from dashboard import dashboard_bp
@@ -51,6 +52,7 @@ app.register_blueprint(admin_bp)
 app.register_blueprint(test_reports_bp)
 app.register_blueprint(java_executor_bp)
 app.register_blueprint(algorithm_executor_bp)
+app.register_blueprint(sandbox_bp)
 
 
 # Login route
