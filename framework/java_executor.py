@@ -199,23 +199,17 @@ class JavaExecutor:
             return False, "", compile_error, 0.0
         
         # Determine class name and classpath
-        # Most Java files don't have real package declarations (they're in comments)
-        # So we'll use the directory structure as the package
-        # Extract package from file path
-        try:
-            relative_path = algorithm_info.path.relative_to(self.root)
-            # Convert path to package name (e.g., semester_01/lecture_01/... -> semester_01.lecture_01....)
-            path_parts = relative_path.parent.parts
-            if path_parts:
-                package_from_path = '.'.join(path_parts)
-                class_name = f"{package_from_path}.{algorithm_info.class_name}"
-                # Use project root as classpath
-                classpath = str(self.root)
-            else:
-                class_name = algorithm_info.class_name
-                classpath = str(algorithm_info.path.parent)
-        except ValueError:
-            # If relative_to fails, use simple class name
+        # Check if there's an actual package declaration (not in comments)
+        package = algorithm_info.package
+        
+        if package:
+            # Has actual package declaration - use fully qualified name
+            class_name = f"{package}.{algorithm_info.class_name}"
+            # Use project root as classpath
+            classpath = str(self.root)
+        else:
+            # No package declaration - compile creates .class in same directory
+            # Use simple class name and set classpath to algorithm directory
             class_name = algorithm_info.class_name
             classpath = str(algorithm_info.path.parent)
         
