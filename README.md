@@ -166,20 +166,31 @@ mvn exec:java -Dexec.mainClass="Algorithm"
 ```
 
 ### Web Interface
-```bash
-# Start web interface to browse all algorithms
-cd web_interface
-python app.py
 
-# Open browser to http://localhost:5000
+**Start the web server:**
+
+**Recommended method:**
+```bash
+python scripts/run_web_interface.py
+```
+
+**Alternative method:**
+```bash
+python -m web_interface.app
+```
+
+Then open your browser to:
+```
+http://localhost:5000
 ```
 
 **Available Routes:**
 - `/` - Main index page with algorithm browser
 - `/algorithm-executor` - Unified Algorithm Executor (Java + Python)
-- `/java-executor` - Java-only algorithm executor
 - `/test-reports` - Test results and statistics dashboard
+- `/sandbox` - Student sandbox for editing and testing algorithms
 - `/readme/<path>` - View algorithm README files
+- `/code/<path>` - View algorithm source code with syntax highlighting
 - `/code/<path>` - View algorithm source code with syntax highlighting
 
 ### Testing and Auto-Fixing
