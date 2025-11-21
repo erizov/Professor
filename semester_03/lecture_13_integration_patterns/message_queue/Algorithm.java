@@ -1,10 +1,5 @@
-/**
 package semester_03.lecture_13_integration_patterns.message_queue;
- * Message Queue Pattern.
- * 
- * Asynchronous communication pattern where messages are sent to a queue
- * and processed by consumers. Decouples producers from consumers.
- */
+
 import java.util.*;
 import java.util.concurrent.*;
 import java.time.LocalDateTime;
@@ -154,7 +149,7 @@ class TopicQueue {
     
     void subscribe(String topic, java.util.function.BiConsumer<String, Object> callback) {
         createTopic(topic, 100);
-        new Thread(() -> {
+        Thread thread = new Thread(() -> {
             while (true) {
                 try {
                     Object payload = queues.get(topic).poll(1, TimeUnit.SECONDS);
@@ -166,12 +161,16 @@ class TopicQueue {
                     break;
                 }
             }
-        }).start();
+        });
+        thread.setDaemon(true);  // Make daemon thread so it doesn't prevent program exit
+        thread.start();
     }
 }
 
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+    private static final String dash = "-".repeat(70);
+    private static final String separator = "=".repeat(70);
 
     
     public static void main(String[] args) throws InterruptedException {
@@ -242,5 +241,8 @@ public class Algorithm {
         logger.info(separator);
         System.out.printf("\nTotal time: %.3f ms%n",
                         (endTime - startTime) / 1_000_000.0);
+        
+        // Give daemon threads a moment to finish processing
+        Thread.sleep(100);
     }
 }
