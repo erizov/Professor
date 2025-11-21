@@ -17,8 +17,11 @@ sys.path.insert(0, str(ROOT))
 from framework.sandbox_manager import (
     get_sandbox_path,
     save_version_code,
-    load_version_code
+    load_version_code,
+    get_sandbox_dir,
+    cleanup_sandbox_temp_files
 )
+import shutil
 
 # Import require_role from auth module
 try:

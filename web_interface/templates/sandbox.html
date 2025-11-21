@@ -292,8 +292,16 @@
 </head>
 <body>
     <div class="container">
-        <h1>Algorithm Sandbox</h1>
-        <p class="subtitle">Create your own copy of an algorithm and experiment with it</p>
+        <div class="header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+            <h1 style="margin: 0 0 10px 0; font-size: 2rem;">Algorithm Sandbox</h1>
+            <p class="subtitle" style="opacity: 0.9; margin: 0 0 10px 0;">Create your own copy of an algorithm and experiment with it</p>
+            <div class="nav-menu" style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                <a href="/" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Home</a>
+                <a href="/algorithm-executor" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Algorithm Executor</a>
+                <a href="/test-reports" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Test Results</a>
+                <a href="/sandbox" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Sandbox</a>
+            </div>
+        </div>
         
         <div id="status-message" style="display: none;"></div>
         
@@ -624,14 +632,21 @@
                         container.innerHTML = '<p style="color: #666; text-align: center; padding: 20px;">You have no sandboxes yet. Create one to get started!</p>';
                     } else {
                         container.innerHTML = data.sandboxes.map(sandbox => `
-                            <div class="sandbox-item" onclick="loadSandbox(${sandbox.id})" id="sandbox-item-${sandbox.id}">
-                                <div class="sandbox-item-header">
-                                    <div class="sandbox-item-title">${sandbox.algorithm_path}</div>
-                                    <span class="sandbox-item-language ${sandbox.language}">${sandbox.language}</span>
+                            <div class="sandbox-item" id="sandbox-item-${sandbox.id}">
+                                <div class="sandbox-item-content" onclick="loadSandbox(${sandbox.id})">
+                                    <div class="sandbox-item-header">
+                                        <div class="sandbox-item-title">${sandbox.algorithm_path}</div>
+                                        <span class="sandbox-item-language ${sandbox.language}">${sandbox.language}</span>
+                                    </div>
+                                    <div class="sandbox-item-meta">
+                                        <span>Version: ${sandbox.latest_version}</span>
+                                        <span>Modified: ${new Date(sandbox.last_modified).toLocaleString()}</span>
+                                    </div>
                                 </div>
-                                <div class="sandbox-item-meta">
-                                    <span>Version: ${sandbox.latest_version}</span>
-                                    <span>Modified: ${new Date(sandbox.last_modified).toLocaleString()}</span>
+                                <div class="sandbox-item-actions">
+                                    <button class="btn-delete-sandbox" onclick="event.stopPropagation(); deleteSandbox(${sandbox.id}, '${sandbox.algorithm_path}')" title="Delete sandbox">
+                                        Delete
+                                    </button>
                                 </div>
                             </div>
                         `).join('');
@@ -641,6 +656,41 @@
                 }
             } catch (error) {
                 container.innerHTML = `<p style="color: #dc3545; text-align: center;">Error: ${error.message}</p>`;
+            }
+        }
+        
+        async function deleteSandbox(sandboxId, algorithmPath) {
+            if (!confirm(`Are you sure you want to delete sandbox for "${algorithmPath}"? This action cannot be undone.`)) {
+                return;
+            }
+            
+            try {
+                const response = await fetch(`/api/sandbox/${sandboxId}`, {
+                    method: 'DELETE'
+                });
+                const data = await response.json();
+                
+                if (data.success) {
+                    showStatus('success', `Sandbox "${algorithmPath}" deleted successfully`);
+                    
+                    // If deleted sandbox was currently loaded, clear the editor
+                    if (currentSandboxId === sandboxId) {
+                        currentSandboxId = null;
+                        currentAlgorithmPath = null;
+                        currentLanguage = null;
+                        document.getElementById('code-editor').value = '';
+                        document.getElementById('save-btn').disabled = true;
+                        document.getElementById('run-btn').disabled = true;
+                        document.getElementById('sandbox-info').style.display = 'none';
+                    }
+                    
+                    // Reload sandbox list
+                    loadSandboxList();
+                } else {
+                    showStatus('error', 'Error deleting sandbox: ' + (data.error || 'Unknown error'));
+                }
+            } catch (error) {
+                showStatus('error', 'Error deleting sandbox: ' + error.message);
             }
         }
         
