@@ -11,6 +11,7 @@ import sqlite3
 from pathlib import Path
 import json
 import markdown
+import os
 
 ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = ROOT / "database" / "algorithms.db"
@@ -292,13 +293,40 @@ def get_statistics():
 def serve_readme(file_path):
     """Serve README files as rendered HTML."""
     try:
+        # Normalize path separators and handle semester number variations
+        # Convert forward slashes to OS-specific separators
+        normalized_path = file_path.replace('/', '\\' if os.name == 'nt' else '/')
+        
+        # Try to find the file with the given path
+        readme_path = ROOT / normalized_path
+        
+        # If not found, try to find matching semester directory (handle semester_6 vs semester_06)
+        if not readme_path.exists():
+            # Extract semester number and try both formats
+            parts = normalized_path.split('\\' if os.name == 'nt' else '/')
+            if len(parts) > 0 and parts[0].startswith('semester_'):
+                semester_part = parts[0]
+                # Try with leading zero
+                if not semester_part.endswith('_0') and not semester_part.endswith('_00'):
+                    alt_semester = semester_part.replace('semester_', 'semester_0')
+                    alt_path = '\\'.join([alt_semester] + parts[1:]) if os.name == 'nt' else '/'.join([alt_semester] + parts[1:])
+                    alt_readme_path = ROOT / alt_path
+                    if alt_readme_path.exists():
+                        readme_path = alt_readme_path
+                # Try without leading zero
+                elif semester_part.endswith('_0') and not semester_part.endswith('_00'):
+                    alt_semester = semester_part.replace('semester_0', 'semester_')
+                    alt_path = '\\'.join([alt_semester] + parts[1:]) if os.name == 'nt' else '/'.join([alt_semester] + parts[1:])
+                    alt_readme_path = ROOT / alt_path
+                    if alt_readme_path.exists():
+                        readme_path = alt_readme_path
+        
         # Security: ensure path is within project root
-        readme_path = ROOT / file_path
-        if not str(readme_path).startswith(str(ROOT)):
+        if not str(readme_path.resolve()).startswith(str(ROOT.resolve())):
             return jsonify({"error": "Invalid path"}), 400
         
         if not readme_path.exists() or not readme_path.is_file():
-            return jsonify({"error": "File not found"}), 404
+            return jsonify({"error": f"File not found: {file_path}"}), 404
         
         # Read and render markdown
         with open(readme_path, 'r', encoding='utf-8') as f:
