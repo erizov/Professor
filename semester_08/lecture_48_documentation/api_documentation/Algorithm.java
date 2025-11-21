@@ -1,13 +1,17 @@
-import java.util.*;
+package semester_08.lecture_48_documentation.api_documentation;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.logging.Logger;
-import java.util.logging.Level;
 
 /**
-package semester_08.lecture_48_documentation.api_documentation;
  * Api Documentation implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+    private final List<Map<String, Object>> endpoints = new ArrayList<>();
 
     public Algorithm() {
         // Initialize
@@ -16,10 +20,16 @@ public class Algorithm {
     /**
      * Add API endpoint.
      */
-    public Object add_endpoint(String method, String path, String description, List<Object> params, Object response) {
+    public Map<String, Object> add_endpoint(String method, String path, String description, List<String> params, String response) {
         logger.info("Executing add_endpoint");
-        String result = "" + method + " ";
-        return "";
+        Map<String, Object> endpoint = new HashMap<>();
+        endpoint.put("method", method);
+        endpoint.put("path", path);
+        endpoint.put("description", description);
+        endpoint.put("params", params);
+        endpoint.put("response", response);
+        endpoints.add(endpoint);
+        return endpoint;
     }
 
     /**
@@ -27,11 +37,20 @@ public class Algorithm {
      */
     public String generate_markdown() {
         logger.info("Executing generate_markdown");
-        String result = "## " + endpoint['method'] + " ";
-        String result = "" + endpoint['description'] + "
-";
-        String result = "- `" + param.get('name', '') + "`: ";
-        return "";
+        StringBuilder builder = new StringBuilder();
+        builder.append("# API Documentation\n\n");
+        for (Map<String, Object> endpoint : endpoints) {
+            builder.append("## ").append(endpoint.get("method")).append(" ").append(endpoint.get("path")).append("\n");
+            builder.append(endpoint.get("description")).append("\n\n");
+            builder.append("### Parameters\n");
+            @SuppressWarnings("unchecked")
+            List<String> params = (List<String>) endpoint.get("params");
+            for (String param : params) {
+                builder.append("- ").append(param).append("\n");
+            }
+            builder.append("\n**Response:** ").append(endpoint.get("response")).append("\n\n");
+        }
+        return builder.toString();
     }
 
     public static Algorithm create() {
@@ -44,8 +63,9 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_endpoint("", "", "", null, null);
-        System.out.println("Result: " + result);
+        algo.add_endpoint("GET", "/status", "Returns the service status.", List.of("verbose"), "{ \"status\": \"ok\" }");
+        algo.add_endpoint("POST", "/users", "Creates a new user.", List.of("name", "email"), "{ \"id\": 1 }");
+        System.out.println(algo.generate_markdown());
         System.out.println("=".repeat(70));
     }
 }
