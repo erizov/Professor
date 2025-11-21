@@ -27,8 +27,6 @@ class CanaryDeployment {
         this.trafficPercentage = trafficPercentage;
         this.deployedAt = deployedAt;
         this.metrics = new HashMap<>();
-                            public static void main(String[] args) {
-            }
     }
         
                                     logger.info("Example 1: Deploy Canary with 5% Traffic");
@@ -66,7 +64,7 @@ class CanaryDeployment {
                                 // Example 2: Request Routing
                                 logger.info(dash);
                                 for (String user : users) {
-                                    System.out.printf("User %s -> %s%n", user, version);
+                                    logger.info(String.format("User %s -> %s%n", user, version));
         
         
         
@@ -82,7 +80,7 @@ class CanaryDeployment {
                                 manager2.deployCanary("v1.2.0", 10.0);
                                 manager2.updateMetrics(0.15, 200.0, 800.0);
         
-                                System.out.printf("Should rollback: %s%n", shouldRollback);
+                                logger.info(String.format("Should rollback: %s%n", shouldRollback));
                                 if (shouldRollback) {
                                 }
         
@@ -121,9 +119,9 @@ class CanaryDeploymentManager {
         canary.trafficPercentage = newPercentage;
         
             canary.status = DeploymentStatus.COMPLETE;
-            System.out.printf("Canary deployment complete: %s%n", canary.version);
+            logger.info(String.format("Canary deployment complete: %s%n", canary.version));
         } else {
-            System.out.printf("Increased canary traffic to %.1f%%%n", newPercentage);
+            logger.info(String.format("Increased canary traffic to %.1f%%%n", newPercentage));
         
         return true;
     }
@@ -146,7 +144,7 @@ class CanaryDeploymentManager {
                             // Example 1: Initial Canary Deployment
                             logger.info(dash);
                             CanaryDeploymentManager manager = new CanaryDeploymentManager("v1.0.0");
-                            System.out.printf("Status: %s%n", manager.getStatus());
+                            logger.info(String.format("Status: %s%n", manager.getStatus()));
                             logger.info("");
         
                             logger.info("Example 2: Request Routing Based on Traffic Split");
@@ -165,7 +163,7 @@ class CanaryDeploymentManager {
                             manager.updateMetrics(0.005, 95.0, 1050.0);
                             boolean shouldRollback = manager.shouldRollback(baselineMetrics, 0.1);
                             logger.info("Canary metrics: error_rate=0.005, latency_ms=95.0, throughput=1050.0");
-                            System.out.printf("Should rollback: %s (canary is performing well)%n", shouldRollback);
+                            logger.info(String.format("Should rollback: %s (canary is performing well)%n", shouldRollback));
         
                             // Example 4: Increase Traffic
                             logger.info(dash);
@@ -217,7 +215,7 @@ class CanaryDeploymentManager {
         }
         
         canary.status = DeploymentStatus.ROLLED_BACK;
-        System.out.printf("Rolled back canary version %s%n", canary.version);
+        logger.info(String.format("Rolled back canary version %s%n", canary.version));
         return true;
     }
     
@@ -250,4 +248,6 @@ class CanaryDeploymentManager {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
 
     
+                                public static void main(String[] args) {
+                }
 }

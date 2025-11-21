@@ -24,7 +24,7 @@ public class Algorithm {
     /**
      * Concrete implementor B.
      */
-    public String operation_impl() {
+    public String operation_impl2() {
         logger.info("Executing operation_impl");
         return null;
     }
@@ -32,7 +32,7 @@ public class Algorithm {
     /**
      * Abstraction.
      */
-    public String operation_impl() {
+    public String operation_impl3() {
         logger.info("Executing operation_impl");
         return null;
     }
@@ -48,7 +48,7 @@ public class Algorithm {
     /**
      * Operation
      */
-    public String operation() {
+    public String operation2() {
         logger.info("Executing operation");
         return null;
     }

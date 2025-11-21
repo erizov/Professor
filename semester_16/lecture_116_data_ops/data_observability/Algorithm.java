@@ -29,7 +29,7 @@ public class Algorithm {
     public List<Object> get_metrics(String name) {
         logger.info("Executing get_metrics");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return new ArrayList<>();  // FIXME: Changed from Map to List
     }
 
     public static Algorithm create() {

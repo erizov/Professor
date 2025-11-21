@@ -210,7 +210,7 @@ public class Algorithm {
         mergeSort(small);
         long t2 = System.nanoTime();
         logger.info("Small (100 elements):");
-        System.out.printf("  Time: %.3f ms%n", (t2-t1)/1_000_000.0);
+        logger.info(String.format("  Time: %.3f ms%n", (t2-t1)/1_000_000.0));
         
         // Medium
         int[] medium = new int[1000];
@@ -221,7 +221,7 @@ public class Algorithm {
         mergeSort(medium);
         t2 = System.nanoTime();
         logger.info("\nMedium (1,000 elements):");
-        System.out.printf("  Time: %.3f ms%n", (t2-t1)/1_000_000.0);
+        logger.info(String.format("  Time: %.3f ms%n", (t2-t1)/1_000_000.0));
         
         // Large
         int[] large = new int[10000];
@@ -232,7 +232,7 @@ public class Algorithm {
         mergeSort(large);
         t2 = System.nanoTime();
         logger.info("\nLarge (10,000 elements):");
-        System.out.printf("  Time: %.3f ms%n", (t2-t1)/1_000_000.0);
+        logger.info(String.format("  Time: %.3f ms%n", (t2-t1)/1_000_000.0));
         logger.info("");
         
         // Example 6: In-place
@@ -258,6 +258,6 @@ public class Algorithm {
         logger.info("  - Good for linked lists");
         logger.info("  - Parallelizable");
         logger.info(separator);
-        System.out.printf("\nTotal execution time: %.3f ms%n", duration);
+        logger.info(String.format("\nTotal execution time: %.3f ms%n", duration));
     }
 }

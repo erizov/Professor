@@ -202,15 +202,15 @@ class TestRunner {
         
         for (TestResult result : results) {
             String status = result.passed ? "✓ PASS" : "✗ FAIL";
-            System.out.printf("%s: %s%n", status, result.testName);
+            logger.info(String.format("{}: {}\n", status, result.testName));
             if (!result.passed) {
-                System.out.printf("  Error: %s%n", result.message);
+                logger.info(String.format("  Error: {}\n", result.message));
             }
-            System.out.printf("  Time: %.2f ms%n", result.executionTime);
+            logger.info(String.format("  Time: {} ms\n", result.executionTime));
         }
         
         logger.info(dash);
-        System.out.printf("Total: %d/%d passed%n", passed, total);
+        logger.info(String.format("Total: {}/{} passed\n", passed, total));
         logger.info("");
     }
 }
@@ -235,9 +235,9 @@ public class Algorithm {
         DatabaseIntegrationTest dbTest = new DatabaseIntegrationTest();
         TestResult result = dbTest.run();
         
-        System.out.printf("Test: %s%n", result.testName);
-        System.out.printf("Result: %s%n", result.passed ? "PASSED" : "FAILED");
-        System.out.printf("Message: %s%n", result.message);
+        logger.info(String.format("Test: {}\n", result.testName));
+        logger.info(String.format("Result: {}\n", result.passed ? "PASSED" : "FAILED"));
+        logger.info(String.format("Message: {}\n", result.message));
         logger.info("");
         
         // Example 2: API Integration Test
@@ -247,8 +247,8 @@ public class Algorithm {
         APIIntegrationTest apiTest = new APIIntegrationTest();
         result = apiTest.run();
         
-        System.out.printf("Test: %s%n", result.testName);
-        System.out.printf("Result: %s%n", result.passed ? "PASSED" : "FAILED");
+        logger.info(String.format("Test: {}\n", result.testName));
+        logger.info(String.format("Result: {}\n", result.passed ? "PASSED" : "FAILED"));
         logger.info("");
         
         // Example 3: Test Suite
@@ -280,7 +280,7 @@ public class Algorithm {
         logger.info("  - Database integration");
         logger.info("  - End-to-end workflows");
         logger.info(separator);
-        System.out.printf("\nTotal time: %.3f ms%n",
-                        (endTime - startTime) / 1_000_000.0);
+        logger.info(String.format("\nTotal time: %.3f ms%n",
+                        (endTime - startTime) / 1_000_000.0));
     }
 }

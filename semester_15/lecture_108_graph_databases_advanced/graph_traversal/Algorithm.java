@@ -1,8 +1,8 @@
+package semester_15.lecture_108_graph_databases_advanced.graph_traversal;
 import java.util.*;
 import java.util.logging.Logger;
 
 /**
-package semester_15.lecture_108_graph_databases_advanced.graph_traversal;
  * Graph Traversal implementation.
  */
     public static List<Integer> graphtraversal(Map<Integer, List<Integer>> graph, int start) {

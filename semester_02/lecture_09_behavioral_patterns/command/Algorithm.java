@@ -32,7 +32,7 @@ public class Algorithm {
     /**
      * Invoker class.
      */
-    public Object execute() {
+    public Object execute2() {
         logger.info("Executing execute");
         return null;
     }

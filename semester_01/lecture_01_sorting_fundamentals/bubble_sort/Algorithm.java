@@ -15,6 +15,7 @@ package semester_01.lecture_01_sorting_fundamentals.bubble_sort;
 import java.util.logging.Logger;
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+    private static final String dash = "-".repeat(70);
 
     
     /**
@@ -137,7 +138,7 @@ public class Algorithm {
         bubbleSort(small);
         long t2 = System.nanoTime();
         logger.info("Small (100 elements):");
-        System.out.printf("  Time: %.3f ms%n", (t2-t1)/1_000_000.0);
+        logger.info(String.format("  Time: %.3f ms%n", (t2-t1)/1_000_000.0));
         
         long endTime = System.nanoTime();
         

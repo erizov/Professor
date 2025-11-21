@@ -29,7 +29,7 @@ public class Algorithm {
         logger.info("Executing purchase");
         long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return false;  // FIXME: Changed from Map to boolean
     }
 
     public static Algorithm create() {

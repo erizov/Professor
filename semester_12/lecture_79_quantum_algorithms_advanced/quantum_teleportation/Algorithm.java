@@ -17,6 +17,8 @@ public class Algorithm {
      * Create Bell pair for teleportation.
      */
     public Object create_entangled_pair() {
+        Object random = null;  // FIXME: Added missing variable declaration
+
         logger.info("Executing create_entangled_pair");
         String result = "PAIR-" + random.randint(1000, 9999) + "";
         return "";

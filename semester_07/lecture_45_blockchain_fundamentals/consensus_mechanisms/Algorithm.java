@@ -40,7 +40,7 @@ public class Algorithm {
     /**
      * Propose value.
      */
-    public boolean propose(Object value) {
+    public boolean propose2(Object value) {
         logger.info("Executing propose");
         return false;
     }
@@ -56,7 +56,7 @@ public class Algorithm {
     /**
      * Propose value (requires mining).
      */
-    public boolean propose(Object value) {
+    public boolean propose3(Object value) {
         logger.info("Executing propose");
         return false;
     }

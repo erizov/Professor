@@ -182,7 +182,7 @@ public class Algorithm {
             long end = System.nanoTime();
             
             double ms = (end - start) / 1_000_000.0;
-            System.out.printf("n=%5d: %8.3f ms%n", size, ms);
+            logger.info(String.format("n=%5d: %8.3f ms%n", size, ms));
         }
         
         logger.info("");
@@ -211,6 +211,6 @@ public class Algorithm {
         
         long endTime = System.nanoTime();
         double totalMs = (endTime - startTime) / 1_000_000.0;
-        System.out.printf("\nTotal execution time: %.3f ms%n", totalMs);
+        logger.info(String.format("\nTotal execution time: %.3f ms%n", totalMs));
     }
 }

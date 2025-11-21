@@ -35,7 +35,7 @@ public class Algorithm {
     public boolean check_access(String user_id, String data_type) {
         logger.info("Executing check_access");
         Map<String, Object> result = new HashMap<>();
-        return result;
+        return false;  // FIXME: Changed from Map to boolean
     }
 
     public static Algorithm create() {

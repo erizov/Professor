@@ -188,6 +188,8 @@ class FixedWindowRateLimiter implements RateLimiter {
 
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+    private static final String dash = "-".repeat(70);
+    private static final String separator = "=".repeat(70);
 
     
     public static void main(String[] args) throws InterruptedException {
@@ -208,7 +210,7 @@ public class Algorithm {
         String clientId = "client1";
         System.out.printf("Rate limit: %d requests per %.0fs%n",
                          config.maxRequests, config.windowSeconds);
-        System.out.printf("%nMaking requests as %s:%n", clientId);
+        logger.info(String.format("%nMaking requests as %s:%n", clientId));
         
         for (int i = 0; i < 8; i++) {
             boolean allowed = limiter.isAllowed(clientId);
@@ -230,7 +232,7 @@ public class Algorithm {
         clientId = "client2";
         System.out.printf("Rate limit: %d requests per %.0fs%n",
                          config.maxRequests, config.windowSeconds);
-        System.out.printf("%nMaking requests as %s:%n", clientId);
+        logger.info(String.format("%nMaking requests as %s:%n", clientId));
         
         for (int i = 0; i < 5; i++) {
             boolean allowed = limiter.isAllowed(clientId);

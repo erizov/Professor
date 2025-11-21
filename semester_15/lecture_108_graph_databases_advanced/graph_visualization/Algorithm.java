@@ -1,8 +1,8 @@
+package semester_15.lecture_108_graph_databases_advanced.graph_visualization;
 import java.util.*;
 import java.util.logging.Logger;
 
 /**
-package semester_15.lecture_108_graph_databases_advanced.graph_visualization;
  * Graph Visualization implementation.
  */
     public static List<Integer> graphvisualization(Map<Integer, List<Integer>> graph, int start) {

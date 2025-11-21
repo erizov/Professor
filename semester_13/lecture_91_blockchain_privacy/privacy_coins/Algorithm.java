@@ -17,6 +17,8 @@ public class Algorithm {
      * Create stealth address.
      */
     public String create_stealth_address(String address) {
+        Object random = null;  // FIXME: Added missing variable declaration
+
         logger.info("Executing create_stealth_address");
         String result = "STEALTH_" + random.randint(10000, 99999) + "";
         return "";

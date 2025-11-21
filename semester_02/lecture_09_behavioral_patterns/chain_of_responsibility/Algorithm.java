@@ -32,7 +32,7 @@ public class Algorithm {
     /**
      * Concrete handler B.
      */
-    public String handle(String request) {
+    public String handle2(String request) {
         logger.info("Executing handle");
         return null;
     }
@@ -40,7 +40,7 @@ public class Algorithm {
     /**
      * Handle
      */
-    public String handle(String request) {
+    public String handle3(String request) {
         logger.info("Executing handle");
         return null;
     }

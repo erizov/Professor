@@ -264,7 +264,8 @@ def get_test_statistics():
     language_filter = request.args.get("language", "")
     algorithm_type_filter = request.args.get("algorithm_type", "")
 
-    # Build base query - no cross-database join
+    # Build base query WITHOUT status filter for statistics
+    # Status filter should only affect displayed results, not statistics counts
     base_query = """
         FROM test_results tr
         WHERE 1=1
@@ -277,15 +278,8 @@ def get_test_statistics():
         filter_conditions.append("tr.algorithm_path LIKE ?")
         params.append(f"%{search}%")
 
-    if status_filter:
-        # Handle "failure" filter to include both "failure" and "error"
-        if status_filter == "failure":
-            filter_conditions.append("(tr.status = ? OR tr.status = ?)")
-            params.append("failure")
-            params.append("error")
-        else:
-            filter_conditions.append("tr.status = ?")
-            params.append(status_filter)
+    # NOTE: status_filter is NOT applied here for statistics
+    # Statistics should show counts for all statuses in the filtered dataset
 
     if language_filter:
         filter_conditions.append("tr.language = ?")
@@ -294,7 +288,7 @@ def get_test_statistics():
     if filter_conditions:
         base_query += " AND " + " AND ".join(filter_conditions)
 
-    # Get overall statistics with filters
+    # Get overall statistics with filters (excluding status filter)
     # First get all recent results with paths for algorithm_type filtering
     query_with_paths = f"""
         SELECT 
@@ -344,8 +338,7 @@ def get_test_statistics():
             language_stats[lang] = {}
         language_stats[lang][status] = language_stats[lang].get(status, 0) + 1
 
-    # Get state changes with filters
-    state_change_params = params.copy()
+    # Get state changes with filters (excluding status filter)
     state_change_base = base_query + " AND tr.state_changed = 1 AND tr.timestamp > datetime('now', '-24 hours')"
     state_change_query = f"""
         SELECT COUNT(DISTINCT recent.algorithm_path || ':' || recent.language)

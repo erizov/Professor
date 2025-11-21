@@ -48,7 +48,7 @@ public class Algorithm {
     /**
      * Override operation 2.
      */
-    public String operation2() {
+    public String operation22() {
         logger.info("Executing operation2");
         return null;
     }

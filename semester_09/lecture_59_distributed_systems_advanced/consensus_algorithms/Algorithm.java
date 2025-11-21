@@ -32,7 +32,7 @@ public class Algorithm {
     /**
      * Propose value (only leader can propose).
      */
-    public boolean propose(Object value) {
+    public boolean propose2(Object value) {
         logger.info("Executing propose");
         return false;
     }
@@ -40,7 +40,7 @@ public class Algorithm {
     /**
      * Get committed value.
      */
-    public Object get_consensus() {
+    public Object get_consensus2() {
         logger.info("Executing get_consensus");
         return null;
     }

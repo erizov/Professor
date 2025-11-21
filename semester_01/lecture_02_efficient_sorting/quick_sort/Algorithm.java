@@ -146,7 +146,7 @@ public class Algorithm {
         long endTime = System.nanoTime();
         
         double executionTimeMs = (endTime - startTime) / 1_000_000.0;
-        System.out.printf("Time to sort 1000 elements: %.3f ms%n", executionTimeMs);
+        logger.info(String.format("Time to sort 1000 elements: %.3f ms%n", executionTimeMs));
         logger.info("");
         
         logger.info(separator);

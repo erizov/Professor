@@ -44,8 +44,11 @@ from scripts.fix_test_imports import (
 )
 import re
 import ast
+import argparse
+import sqlite3
 
 ROOT = Path(__file__).resolve().parents[1]
+DB_PATH = ROOT / "test_results.db"
 
 # Global state for status reporting
 _status_lock = threading.Lock()
@@ -60,6 +63,118 @@ _status_state = {
     'start_time': None,
     'stop_event': threading.Event()
 }
+
+
+def init_database():
+    """Initialize test_results database if it doesn't exist."""
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        cursor = conn.cursor()
+        
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS test_results (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                algorithm_path TEXT NOT NULL,
+                language TEXT NOT NULL,
+                status TEXT NOT NULL,
+                duration REAL,
+                timestamp TEXT NOT NULL,
+                error_message TEXT,
+                test_output TEXT,
+                previous_status TEXT,
+                state_changed INTEGER DEFAULT 0,
+                UNIQUE(algorithm_path, language, timestamp)
+            )
+        """)
+        
+        cursor.execute("""
+            CREATE INDEX IF NOT EXISTS idx_algorithm_path 
+            ON test_results(algorithm_path)
+        """)
+        
+        cursor.execute("""
+            CREATE INDEX IF NOT EXISTS idx_timestamp 
+            ON test_results(timestamp DESC)
+        """)
+        
+        conn.commit()
+        conn.close()
+    except Exception as e:
+        print(f"  ⚠ Database initialization failed: {e}", flush=True)
+
+
+def update_database(algorithm_path: str, status: str, duration: float, 
+                   error_message: Optional[str], test_output: Optional[str], 
+                   was_fixed: bool = False):
+    """Update test_results database with test result."""
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        cursor = conn.cursor()
+        
+        # Get previous status
+        cursor.execute("""
+            SELECT status FROM test_results
+            WHERE algorithm_path = ? AND language = 'python'
+            ORDER BY timestamp DESC
+            LIMIT 1
+        """, (algorithm_path,))
+        
+        previous_result = cursor.fetchone()
+        previous_status = previous_result[0] if previous_result else None
+        
+        # Determine state change
+        state_changed = False
+        if previous_status:
+            if previous_status != status:
+                state_changed = True
+        else:
+            # First time recording this file
+            state_changed = True
+        
+        # Insert new record
+        timestamp = datetime.now().isoformat()
+        cursor.execute("""
+            INSERT INTO test_results 
+            (algorithm_path, language, status, duration, timestamp, error_message, test_output, previous_status, state_changed)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (algorithm_path, 'python', status, duration, timestamp, error_message, test_output, previous_status, 1 if state_changed else 0))
+        
+        conn.commit()
+        conn.close()
+        
+        if state_changed:
+            status_emoji = "✅" if status == 'success' else "❌"
+            fix_indicator = " (Fixed)" if was_fixed else ""
+            print(f"  💾 Database updated: {algorithm_path} (Python) - {status_emoji} {status}{fix_indicator}", flush=True)
+    except Exception as e:
+        print(f"  ⚠ Database update failed: {e}", flush=True)
+
+
+def is_file_already_passing(algorithm_path: str) -> bool:
+    """
+    Check if a file is already passing in the database.
+    Returns True if the last test result for this file was 'success'.
+    """
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        cursor = conn.cursor()
+        
+        cursor.execute("""
+            SELECT status FROM test_results
+            WHERE algorithm_path = ? AND language = 'python'
+            ORDER BY timestamp DESC
+            LIMIT 1
+        """, (algorithm_path,))
+        
+        result = cursor.fetchone()
+        conn.close()
+        
+        if result and result[0] == 'success':
+            return True
+        return False
+    except Exception:
+        # If database error, assume not passing (test it)
+        return False
 
 
 def status_reporter():
@@ -145,6 +260,10 @@ def fix_nonexistent_imports(
             for name in imported_names:
                 if name == '__init__':
                     continue
+                # Special methods like __str__, __repr__, etc. can't be imported
+                if name.startswith('__') and name.endswith('__'):
+                    needs_fix = True
+                    break
                 # First check if it's actually importable (methods can't be imported)
                 try:
                     import importlib
@@ -601,6 +720,33 @@ def commit_file(test_file: Path, algo_path: str) -> bool:
 
 def main():
     """Main function to test Python files one by one."""
+    # Parse command-line arguments
+    parser = argparse.ArgumentParser(
+        description='Test and fix Python files one by one',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  python -m scripts.fix_imports_one_by_one
+  python -m scripts.fix_imports_one_by_one --skip-passing
+  python -m scripts.fix_imports_one_by_one --no-skip-passing
+        """
+    )
+    parser.add_argument(
+        '--skip-passing',
+        action='store_true',
+        default=False,
+        help='Skip testing files that are already passing in the database (default: False)'
+    )
+    parser.add_argument(
+        '--no-skip-passing',
+        action='store_false',
+        dest='skip_passing',
+        help='Test all files, even if they are already passing (opposite of --skip-passing)'
+    )
+    
+    args = parser.parse_args()
+    skip_passing = args.skip_passing
+    
     # Ensure output is flushed immediately
     sys.stdout.reconfigure(encoding='utf-8')
     
@@ -610,6 +756,10 @@ def main():
     print("=" * 80, flush=True)
     print("TESTING PYTHON FILES ONE BY ONE", flush=True)
     print("=" * 80, flush=True)
+    if skip_passing:
+        print("⚠️  MODE: Skipping files that are already passing", flush=True)
+    else:
+        print("⚠️  MODE: Testing all files (including already passing)", flush=True)
     print(flush=True)
     
     print("=" * 80, flush=True)
@@ -617,10 +767,37 @@ def main():
     print("=" * 80, flush=True)
     print(flush=True)
     
+    # Initialize database
+    print("Initializing database...", flush=True)
+    init_database()
+    
     print("Loading all Python test files...", flush=True)
-    test_files = get_all_python_test_files()
-    print(f"Found {len(test_files)} Python test files", flush=True)
+    all_test_files = get_all_python_test_files()
+    total_test_files = len(all_test_files)
+    print(f"Found {total_test_files} Python test files", flush=True)
+    
+    # Filter out already passing files if requested
+    test_files = all_test_files
+    initial_skipped = 0
+    if skip_passing:
+        print("Checking which files are already passing...", flush=True)
+        original_count = len(test_files)
+        test_files = [
+            (algo_path, test_file) 
+            for algo_path, test_file in test_files 
+            if not is_file_already_passing(algo_path)
+        ]
+        initial_skipped = original_count - len(test_files)
+        print(f"  ⊘ Skipping {initial_skipped} files that are already passing", flush=True)
+        print(f"  → Will test {len(test_files)} files", flush=True)
+    
     print(flush=True)
+    
+    # Initialize counters
+    passed_count = 0
+    fixed_count = 0
+    failed_count = 0
+    skipped_count = initial_skipped
     
     # Initialize status state
     with _status_lock:
@@ -629,7 +806,7 @@ def main():
         _status_state['passed_count'] = 0
         _status_state['fixed_count'] = 0
         _status_state['failed_count'] = 0
-        _status_state['skipped_count'] = 0
+        _status_state['skipped_count'] = skipped_count
     
     # Start status reporter thread
     print("📊 Status updates will appear every 3 minutes", flush=True)
@@ -637,11 +814,6 @@ def main():
     print(flush=True)
     status_thread = threading.Thread(target=status_reporter, daemon=True)
     status_thread.start()
-    
-    passed_count = 0
-    fixed_count = 0
-    failed_count = 0
-    skipped_count = 0
     
     try:
         for idx, (algo_path, test_file) in enumerate(test_files, 1):
@@ -663,18 +835,32 @@ def main():
                 test_attempts = 0
                 fix_attempts = 0
                 max_fix_attempts = 10  # Prevent infinite loops
+                max_test_attempts = 15  # Prevent infinite test retries
                 was_fixed = False
                 algo_file = find_algorithm_file(algo_path)
                 
                 while not success:
+                    # Prevent infinite loops
+                    if test_attempts >= max_test_attempts:
+                        print(f"  ❌ Maximum test attempts ({max_test_attempts}) reached, moving on", flush=True)
+                        print(f"  ⚠ This file may be hanging or have an unfixable issue", flush=True)
+                        # Update database with failure
+                        update_database(algo_path, 'failure', 0.0, "Maximum test attempts reached - possible infinite loop or hang", "", False)
+                        failed_count += 1
+                        with _status_lock:
+                            _status_state['failed_count'] = failed_count
+                        break
+                    
                     # Test the file
                     test_attempts += 1
                     if test_attempts == 1:
                         print(f"  🧪 Running tests (timeout: 45s)...", flush=True)
                     else:
-                        print(f"  🧪 Retesting (test attempt {test_attempts})...", flush=True)
+                        print(f"  🧪 Retesting (test attempt {test_attempts}/{max_test_attempts})...", flush=True)
                     
+                    test_start = time.time()
                     success, output = test_single_file(test_file)
+                    duration = time.time() - test_start
                     
                     if success:
                         # Test passed!
@@ -682,6 +868,9 @@ def main():
                             print(f"  ✓ Tests passed after {fix_attempts} fix attempt(s)!", flush=True)
                         else:
                             print(f"  ✓ Tests passed!", flush=True)
+                        
+                        # Update database
+                        update_database(algo_path, 'success', duration, None, output, was_fixed)
                         
                         # Commit on success (no push)
                         print(f"  💾 Committing (no push)...", flush=True)
@@ -713,6 +902,9 @@ def main():
                             print(f"  ❌ Maximum fix attempts ({max_fix_attempts}) reached, moving on", flush=True)
                             print(f"  Test output (first 500 chars):", flush=True)
                             print(f"  {output[:500]}", flush=True)
+                            
+                            # Update database with failure
+                            update_database(algo_path, 'failure', duration, output[:1000] if output else None, output, False)
                             
                             failed_count += 1
                             with _status_lock:
@@ -753,6 +945,9 @@ def main():
                                     print(f"  Test output (first 500 chars):", flush=True)
                                     print(f"  {output[:500]}", flush=True)
                                     
+                                    # Update database with failure
+                                    update_database(algo_path, 'failure', duration, output[:1000] if output else None, output, False)
+                                    
                                     failed_count += 1
                                     with _status_lock:
                                         _status_state['failed_count'] = failed_count
@@ -762,6 +957,9 @@ def main():
                             print(f"  ❌ Could not find algorithm file to fix", flush=True)
                             print(f"  Test output (first 500 chars):", flush=True)
                             print(f"  {output[:500]}", flush=True)
+                            
+                            # Update database with failure
+                            update_database(algo_path, 'failure', duration, output[:1000] if output else None, output, False)
                             
                             failed_count += 1
                             with _status_lock:
@@ -805,11 +1003,15 @@ def main():
     print("=" * 80, flush=True)
     print("SUMMARY", flush=True)
     print("=" * 80, flush=True)
-    print(f"Total processed: {len(test_files)}", flush=True)
+    if skip_passing and initial_skipped > 0:
+        print(f"Total files: {total_test_files} (tested {len(test_files)}, skipped {initial_skipped})", flush=True)
+    else:
+        print(f"Total processed: {len(test_files)}", flush=True)
     print(f"  ✓ Passed and committed: {passed_count}", flush=True)
     print(f"  🔧 Fixed and committed: {fixed_count}", flush=True)
     print(f"  ❌ Failed: {failed_count}", flush=True)
-    print(f"  ⊘ Skipped: {skipped_count}", flush=True)
+    if skipped_count > 0:
+        print(f"  ⊘ Skipped: {skipped_count}", flush=True)
     print(f"Total elapsed time: {elapsed_str}", flush=True)
     print("=" * 80, flush=True)
     print("", flush=True)

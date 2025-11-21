@@ -1,8 +1,8 @@
+package semester_15.lecture_108_graph_databases_advanced.graph_algorithms_db;
 import java.util.*;
 import java.util.logging.Logger;
 
 /**
-package semester_15.lecture_108_graph_databases_advanced.graph_algorithms_db;
  * Graph Algorithms Db implementation.
  */
     public static List<Integer> graphalgorithmsdb(Map<Integer, List<Integer>> graph, int start) {
