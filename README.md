@@ -75,6 +75,30 @@ This repository contains a **complete 16-semester course** (8 undergraduate + 8 
 - **4,700+ total test records** tracked
 - **Repository cleanup**: Removed 827 .class files from git tracking, added to .gitignore
 
+### Algorithm Execution Framework
+
+**Unified Algorithm Executor:**
+- **Web-based executor** for both Java and Python algorithms
+- **Language selector**: Filter and execute algorithms by language
+- **Code viewer**: Real-time source code display with syntax highlighting
+- **Execution monitoring**: Real-time output display with execution time tracking
+- **Filtering**: By semester, lecture, and algorithm name
+- **Framework integration**: Uses `framework/java_executor.py` and `framework/python_executor.py`
+- **Access**: Available at `/algorithm-executor` route in web interface
+
+### Student Sandbox & Learning Environment (Planned)
+
+**Comprehensive Plan Created:**
+- **Student Sandbox System**: Isolated workspace for students to modify and test algorithms
+- **Version Control**: Full version history with rollback capabilities
+- **Comparison System**: Performance, resource usage, and correctness comparison with original
+- **Code Editor**: Web-based editor with split view (original vs student code)
+- **Testing Framework**: Enhanced test suite with correctness, performance, and resource tests
+- **Visualization**: Interactive charts, test matrices, and code diff visualization
+- **Security**: Docker-based isolation with resource limits
+- **Role-Based Access**: Visitor (read-only), Student, Professor, Admin roles
+- **Detailed Plan**: See `docs/STUDENT_SANDBOX_PLAN.md` for complete implementation roadmap
+
 ### Completed Sections
 
 #### ✅ Semester 1: Fundamentals (69% complete)
@@ -149,6 +173,14 @@ python app.py
 
 # Open browser to http://localhost:5000
 ```
+
+**Available Routes:**
+- `/` - Main index page with algorithm browser
+- `/algorithm-executor` - Unified Algorithm Executor (Java + Python)
+- `/java-executor` - Java-only algorithm executor
+- `/test-reports` - Test results and statistics dashboard
+- `/readme/<path>` - View algorithm README files
+- `/code/<path>` - View algorithm source code with syntax highlighting
 
 ### Testing and Auto-Fixing
 
