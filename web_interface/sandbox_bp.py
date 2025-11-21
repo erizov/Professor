@@ -585,3 +585,49 @@ def execute_sandbox(sandbox_id):
     finally:
         conn.close()
 
+
+@sandbox_bp.route('/<int:sandbox_id>', methods=['DELETE'])
+@require_role('student', 'professor', 'admin')
+def delete_sandbox(sandbox_id):
+    """Delete a sandbox and all its versions."""
+    user_id = session['user_id']
+    
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    
+    try:
+        # Verify ownership
+        cursor.execute("""
+            SELECT id, algorithm_path, language
+            FROM sandboxes
+            WHERE id = ? AND user_id = ?
+        """, (sandbox_id, user_id))
+        
+        sandbox = cursor.fetchone()
+        if not sandbox:
+            return jsonify({'error': 'Sandbox not found or access denied'}), 404
+        
+        # Delete sandbox directory from file system
+        try:
+            sandbox_dir = get_sandbox_dir(user_id, sandbox_id)
+            if sandbox_dir.exists():
+                shutil.rmtree(sandbox_dir, ignore_errors=True)
+        except Exception as e:
+            # Log error but continue with database deletion
+            print(f"Warning: Could not delete sandbox directory: {e}")
+        
+        # Delete from database (CASCADE will delete versions and executions)
+        cursor.execute("DELETE FROM sandboxes WHERE id = ?", (sandbox_id,))
+        conn.commit()
+        
+        return jsonify({
+            'success': True,
+            'message': 'Sandbox deleted successfully'
+        })
+        
+    except Exception as e:
+        conn.rollback()
+        return jsonify({'error': f'Error deleting sandbox: {str(e)}'}), 500
+    finally:
+        conn.close()
+
