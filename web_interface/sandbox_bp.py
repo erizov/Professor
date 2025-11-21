@@ -608,46 +608,90 @@ def execute_sandbox(sandbox_id):
         elif language == 'java':
             from framework.java_executor import JavaExecutor, AlgorithmInfo
             import shutil
+            import subprocess
+            import time
             
             # Extract class name from code to determine correct filename
             import re
             class_match = re.search(r'public\s+class\s+(\w+)', code_to_execute)
             class_name = class_match.group(1) if class_match else 'Algorithm'
             
-            # Create temporary directory for Java file
+            # Extract package
+            package_match = re.search(r'^\s*package\s+([^;]+);', code_to_execute, re.MULTILINE)
+            package = package_match.group(1) if package_match else None
+            
+            # Create temporary directory for Java file and compilation
             temp_dir = Path(tempfile.mkdtemp())
             temp_java_file = temp_dir / f"{class_name}.java"
+            temp_class_dir = temp_dir / "classes"
+            temp_class_dir.mkdir(exist_ok=True)
             
             try:
                 # Write code to file with correct name
                 temp_java_file.write_text(code_to_execute, encoding='utf-8')
                 
-                # Extract package
-                package_match = re.search(r'^\s*package\s+([^;]+);', code_to_execute, re.MULTILINE)
-                package = package_match.group(1) if package_match else None
+                # Compile Java file
+                if package:
+                    # Compile with -d to create package structure in temp directory
+                    compile_cmd = ["javac", "-d", str(temp_class_dir), str(temp_java_file)]
+                else:
+                    # No package - compile in place
+                    compile_cmd = ["javac", "-d", str(temp_class_dir), str(temp_java_file)]
                 
-                # Create AlgorithmInfo-like object
-                algo_info = AlgorithmInfo(
-                    name=algorithm_path,
-                    path=temp_java_file,
-                    package=package,
-                    class_name=class_name,
-                    semester='',
-                    lecture='',
-                    algorithm='',
-                    full_path=str(temp_java_file)
+                compile_result = subprocess.run(
+                    compile_cmd,
+                    capture_output=True,
+                    text=True,
+                    timeout=30,
+                    check=False
                 )
                 
-                executor = JavaExecutor()
-                success, stdout, stderr, exec_time = executor.execute_algorithm(
-                    algo_info, timeout=timeout, input_data=input_data
+                if compile_result.returncode != 0:
+                    return jsonify({
+                        'success': False,
+                        'stdout': '',
+                        'stderr': compile_result.stderr or compile_result.stdout or 'Compilation failed',
+                        'execution_time': 0.0
+                    })
+                
+                # Execute compiled class
+                if package:
+                    full_class_name = f"{package}.{class_name}"
+                    run_cmd = ["java", "-cp", str(temp_class_dir), full_class_name]
+                else:
+                    run_cmd = ["java", "-cp", str(temp_class_dir), class_name]
+                
+                start_time = time.time()
+                run_result = subprocess.run(
+                    run_cmd,
+                    input=input_data if input_data else None,
+                    capture_output=True,
+                    text=True,
+                    timeout=timeout,
+                    check=False
                 )
+                end_time = time.time()
+                exec_time = end_time - start_time
                 
                 return jsonify({
-                    'success': success,
-                    'stdout': stdout,
-                    'stderr': stderr,
+                    'success': run_result.returncode == 0,
+                    'stdout': run_result.stdout or '',
+                    'stderr': run_result.stderr or '',
                     'execution_time': exec_time
+                })
+            except subprocess.TimeoutExpired:
+                return jsonify({
+                    'success': False,
+                    'stdout': '',
+                    'stderr': f'Execution timed out after {timeout} seconds',
+                    'execution_time': timeout
+                })
+            except Exception as e:
+                return jsonify({
+                    'success': False,
+                    'stdout': '',
+                    'stderr': f'Execution error: {str(e)}',
+                    'execution_time': 0.0
                 })
             finally:
                 # Clean up temp directory and all files
