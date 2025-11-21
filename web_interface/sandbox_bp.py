@@ -622,16 +622,28 @@ def execute_sandbox(sandbox_id):
             
             # Create temporary directory for Java file and compilation
             temp_dir = Path(tempfile.mkdtemp())
-            temp_java_file = temp_dir / f"{class_name}.java"
             temp_class_dir = temp_dir / "classes"
             temp_class_dir.mkdir(exist_ok=True)
             
+            # If package exists, create directory structure matching the package
+            if package:
+                # Create package directory structure (e.g., semester_10/lecture_67_rag_advanced/agentic_rag/)
+                package_dirs = package.split('.')
+                package_path = temp_dir
+                for pkg_part in package_dirs:
+                    package_path = package_path / pkg_part
+                package_path.mkdir(parents=True, exist_ok=True)
+                temp_java_file = package_path / f"{class_name}.java"
+            else:
+                # No package - just put file in temp directory
+                temp_java_file = temp_dir / f"{class_name}.java"
+            
             try:
-                # Write code to file with correct name
+                # Write code to file with correct name in correct location
                 temp_java_file.write_text(code_to_execute, encoding='utf-8')
                 
                 # Compile Java file
-                # Always use -d to create proper directory structure
+                # Always use -d to create proper directory structure in classes directory
                 compile_cmd = ["javac", "-d", str(temp_class_dir), str(temp_java_file)]
                 
                 compile_result = subprocess.run(
