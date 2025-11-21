@@ -422,19 +422,33 @@
 
                     const latest = result.recent_results[0];
                     const timestamp = new Date(latest.timestamp).toLocaleString();
+                    
+                    // Safely format duration - handle null, undefined, or non-numeric values
+                    const formatDuration = (dur) => {
+                        if (dur === null || dur === undefined || dur === '') {
+                            return 'N/A';
+                        }
+                        const num = parseFloat(dur);
+                        if (isNaN(num)) {
+                            return 'N/A';
+                        }
+                        return num.toFixed(2);
+                    };
+                    
+                    const latestDuration = formatDuration(latest.duration);
 
                     row.innerHTML = `
                         <td>${result.algorithm_path}</td>
                         <td><span class="language-badge">${result.language}</span></td>
                         <td><span class="status-badge ${result.latest_status}">${result.latest_status}</span></td>
-                        <td>${latest.duration.toFixed(2)}</td>
+                        <td>${latestDuration}</td>
                         <td>${timestamp}</td>
                         <td>
                             <span class="history-toggle" onclick="toggleHistory(this)">Show History (${result.recent_results.length})</span>
                             <div class="history-details">
                                 ${result.recent_results.map(r => `
                                     <div class="history-item">
-                                        <strong>${r.status}</strong> - ${new Date(r.timestamp).toLocaleString()} (${r.duration.toFixed(2)}s)
+                                        <strong>${r.status}</strong> - ${new Date(r.timestamp).toLocaleString()} (${formatDuration(r.duration)}s)
                                         ${r.error_message ? `<br><small style="color: #f44336;">${r.error_message.substring(0, 100)}...</small>` : ''}
                                     </div>
                                 `).join('')}
