@@ -98,13 +98,44 @@ class JavaExecutor:
         """Extract package name from Java file."""
         try:
             content = java_file.read_text(encoding='utf-8')
-            # Look for actual package declaration (not in comments)
-            # Check for package at start of line (possibly with whitespace)
+            
+            # Remove all comments first (both single-line and multi-line)
+            # Remove single-line comments
+            lines = []
+            in_multiline_comment = False
             for line in content.split('\n'):
-                # Skip comment lines
-                stripped = line.strip()
-                if stripped.startswith('//') or stripped.startswith('/*') or stripped.startswith('*'):
+                # Check for start of multi-line comment
+                if '/*' in line:
+                    in_multiline_comment = True
+                    # If comment ends on same line, continue
+                    if '*/' in line:
+                        in_multiline_comment = False
+                        # Take part after comment if any
+                        after_comment = line.split('*/', 1)[1] if '*/' in line else ''
+                        if after_comment.strip() and not after_comment.strip().startswith('*'):
+                            lines.append(after_comment)
                     continue
+                
+                # Check for end of multi-line comment
+                if in_multiline_comment:
+                    if '*/' in line:
+                        in_multiline_comment = False
+                        # Take part after comment if any
+                        after_comment = line.split('*/', 1)[1] if '*/' in line else ''
+                        if after_comment.strip() and not after_comment.strip().startswith('*'):
+                            lines.append(after_comment)
+                    continue
+                
+                # Remove single-line comments
+                if '//' in line:
+                    line = line.split('//')[0]
+                
+                lines.append(line)
+            
+            # Now look for package declaration in cleaned content
+            cleaned_content = '\n'.join(lines)
+            for line in cleaned_content.split('\n'):
+                stripped = line.strip()
                 # Look for package declaration
                 match = re.search(r'^\s*package\s+([^;]+);', line)
                 if match:
