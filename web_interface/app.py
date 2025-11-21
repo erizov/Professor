@@ -116,7 +116,26 @@ def algorithm_executor_page():
 @app.route("/sandbox")
 def sandbox_page():
     """Sandbox page for students to edit algorithms."""
-    return render_template("sandbox.html")
+    # Check authentication and role
+    if "user_id" not in session:
+        return redirect(url_for("login_page"))
+    
+    user_role = session.get("role", "reader")
+    # Only allow student, professor, and admin roles
+    if user_role not in ("student", "professor", "admin"):
+        return render_template(
+            "sandbox.html",
+            error_message="Access denied. Sandbox is only available for students, professors, and administrators.",
+            user_role=user_role,
+            read_only=True
+        )
+    
+    return render_template(
+        "sandbox.html",
+        user_role=user_role,
+        username=session.get("full_name") or session.get("username"),
+        read_only=False
+    )
 
 
 @app.route("/api/algorithms")

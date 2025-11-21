@@ -9,7 +9,6 @@ from flask import Blueprint, request, jsonify, session
 from pathlib import Path
 import sqlite3
 from datetime import datetime
-from functools import wraps
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -21,26 +20,31 @@ from framework.sandbox_manager import (
     load_version_code
 )
 
+# Import require_role from auth module
+try:
+    from web_interface.auth import require_role
+except ImportError:
+    # Fallback if auth module not available
+    from functools import wraps
+    def require_role(*allowed_roles):
+        """Decorator to require specific role."""
+        def decorator(f):
+            @wraps(f)
+            def decorated_function(*args, **kwargs):
+                if 'user_id' not in session:
+                    return jsonify({'error': 'Not authenticated'}), 401
+                if session.get('role') not in allowed_roles:
+                    return jsonify({
+                        'error': 'Insufficient permissions. '
+                                f'Required roles: {", ".join(allowed_roles)}'
+                    }), 403
+                return f(*args, **kwargs)
+            return decorated_function
+        return decorator
+
 sandbox_bp = Blueprint('sandbox', __name__, url_prefix='/api/sandbox')
 
 DB_PATH = ROOT / "database" / "users.db"
-
-
-def require_role(*allowed_roles):
-    """Decorator to require specific role."""
-    def decorator(f):
-        @wraps(f)
-        def decorated_function(*args, **kwargs):
-            if 'user_id' not in session:
-                return jsonify({'error': 'Not authenticated'}), 401
-            if session.get('role') not in allowed_roles:
-                return jsonify({
-                    'error': 'Insufficient permissions. '
-                            f'Required roles: {", ".join(allowed_roles)}'
-                }), 403
-            return f(*args, **kwargs)
-        return decorated_function
-    return decorator
 
 
 @sandbox_bp.route('/create', methods=['POST'])
@@ -193,10 +197,9 @@ def list_sandboxes():
 
 
 @sandbox_bp.route('/<int:sandbox_id>', methods=['GET'])
+@require_role('student', 'professor', 'admin')
 def get_sandbox(sandbox_id):
     """Get sandbox details and current code."""
-    if 'user_id' not in session:
-        return jsonify({'error': 'Not authenticated'}), 401
     
     user_id = session['user_id']
     
@@ -340,10 +343,9 @@ def save_code(sandbox_id):
 
 
 @sandbox_bp.route('/<int:sandbox_id>/versions', methods=['GET'])
+@require_role('student', 'professor', 'admin')
 def list_versions(sandbox_id):
     """List all versions of a sandbox."""
-    if 'user_id' not in session:
-        return jsonify({'error': 'Not authenticated'}), 401
     
     user_id = session['user_id']
     
@@ -389,10 +391,9 @@ def list_versions(sandbox_id):
 
 
 @sandbox_bp.route('/<int:sandbox_id>/version/<int:version_number>', methods=['GET'])
+@require_role('student', 'professor', 'admin')
 def get_version(sandbox_id, version_number):
     """Get specific version of sandbox code."""
-    if 'user_id' not in session:
-        return jsonify({'error': 'Not authenticated'}), 401
     
     user_id = session['user_id']
     

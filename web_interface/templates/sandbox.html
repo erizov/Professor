@@ -251,6 +251,7 @@
                 </select>
             </div>
             
+            {% if not read_only %}
             <div class="control-group">
                 <label>&nbsp;</label>
                 <button onclick="createSandbox()" id="create-btn">Create Sandbox</button>
@@ -270,14 +271,20 @@
                 <label>&nbsp;</label>
                 <button onclick="loadMySandboxes()" id="load-btn">My Sandboxes</button>
             </div>
+            {% else %}
+            <div class="control-group" style="grid-column: span 6;">
+                <p style="color: #666; font-style: italic;">Please log in to access sandbox features.</p>
+            </div>
+            {% endif %}
         </div>
         
         <div class="code-editor-container">
             <textarea 
                 id="code-editor" 
                 class="code-editor" 
-                placeholder="Select an algorithm and create a sandbox to start editing..."
+                placeholder="{% if read_only %}Please log in to create and edit sandboxes...{% else %}Select an algorithm and create a sandbox to start editing...{% endif %}"
                 spellcheck="false"
+                {% if read_only %}readonly{% endif %}
             ></textarea>
         </div>
         
