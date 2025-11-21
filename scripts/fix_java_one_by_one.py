@@ -712,6 +712,47 @@ def fix_compilation_errors(java_file: Path, error_output: str) -> bool:
         # Fix: variable X is already defined (handled in later section - see line 731)
         # Removed duplicate section
         
+        # Fix: invalid parameter syntax like "Object any]" or "Object float]" or "List[any]]"
+        if "expected" in error_output.lower() and ("']' expected" in error_output.lower() or "',' expected" in error_output.lower() or "'[' expected" in error_output.lower()):
+            # Find lines with invalid parameter syntax
+            invalid_param_pattern = r':(\d+):\s+error:.*expected'
+            matches = re.findall(invalid_param_pattern, error_output)
+            if matches:
+                lines = content.split('\n')
+                for line_num_str in matches:
+                    try:
+                        line_idx = int(line_num_str) - 1
+                        if 0 <= line_idx < len(lines):
+                            line = lines[line_idx]
+                            # Fix patterns like: Object any], Object float], List[any]], List<Object> List[any]]
+                            # Replace with: Object any, float any, List<Object> any
+                            fixed_line = re.sub(r'Object\s+(\w+)\]', r'Object \1', line)
+                            fixed_line = re.sub(r'float\]', r'float any', fixed_line)
+                            fixed_line = re.sub(r'List\[any\]\]', r'List<Object> any', fixed_line)
+                            fixed_line = re.sub(r'List<Object>\s+List\[any\]\]', r'List<Object> any', fixed_line)
+                            if fixed_line != line:
+                                lines[line_idx] = fixed_line
+                                modified = True
+                    except (ValueError, IndexError):
+                        continue
+                if modified:
+                    content = '\n'.join(lines)
+                    java_file.write_text(content, encoding='utf-8')
+                    content = java_file.read_text(encoding='utf-8')
+        
+        # Fix: None result = ... (Python-style None in Java)
+        if 'None result' in error_output or 'symbol:   class None' in error_output:
+            lines = content.split('\n')
+            for i, line in enumerate(lines):
+                if 'None result' in line:
+                    # Replace "None result" with "Object result" or appropriate type
+                    lines[i] = re.sub(r'None\s+result\s*=', r'Object result =', line)
+                    modified = True
+            if modified:
+                content = '\n'.join(lines)
+                java_file.write_text(content, encoding='utf-8')
+                content = java_file.read_text(encoding='utf-8')
+        
         # Fix: cannot find symbol (missing variable declarations)
         if 'cannot find symbol' in error_output.lower():
             lines = content.split('\n')
