@@ -472,7 +472,9 @@
                     const frameworks = algo.frameworks ? algo.frameworks.split(',') : [];
                     
                     // Build README link from folder_path
-                    const readmeLink = algo.folder_path ? `/readme/${algo.folder_path}/README.md` : '';
+                    // Normalize path separators (Windows uses \, web uses /)
+                    const normalizedPath = algo.folder_path ? algo.folder_path.replace(/\\/g, '/') : '';
+                    const readmeLink = normalizedPath ? `/readme/${normalizedPath}/README.md` : '';
                     
                     card.innerHTML = `
                         <h3>${algo.display_name}</h3>
