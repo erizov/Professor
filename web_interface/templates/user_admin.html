@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Administration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2rem;
+        }
+        
+        .nav-menu {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        
+        .nav-menu a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .controls {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.2s;
+        }
+        
+        .btn-primary {
+            background: #007bff;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+        
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+        }
+        
+        .btn-danger:hover {
+            background: #c82333;
+        }
+        
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+        
+        .btn-success:hover {
+            background: #218838;
+        }
+        
+        .filter-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .filter-group select {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .form-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .form-section h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #555;
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .users-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .users-table th,
+        .users-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .users-table th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .users-table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .status-message {
+            padding: 10px 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            display: none;
+        }
+        
+        .status-message.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .status-message.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .role-badge {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        
+        .role-badge.admin {
+            background: #dc3545;
+            color: white;
+        }
+        
+        .role-badge.professor {
+            background: #007bff;
+            color: white;
+        }
+        
+        .role-badge.student {
+            background: #28a745;
+            color: white;
+        }
+        
+        .role-badge.reader {
+            background: #6c757d;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>User Administration</h1>
+            <p>Manage users - Add and delete students</p>
+            <div class="nav-menu">
+                <a href="/">Home</a>
+                <a href="/algorithm-executor">Algorithm Executor</a>
+                <a href="/test-reports">Test Results</a>
+                <a href="/sandbox">Sandbox</a>
+                <a href="/user-admin">User Admin</a>
+            </div>
+        </div>
+        
+        <div id="status-message" class="status-message"></div>
+        
+        <div class="form-section">
+            <h3>Add New Student</h3>
+            <form id="add-user-form">
+                <div class="form-group">
+                    <label for="username">Username *</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password *</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="full_name">Full Name</label>
+                    <input type="text" id="full_name">
+                </div>
+                <div class="form-group">
+                    <label for="role">Role</label>
+                    <select id="role">
+                        <option value="student">Student</option>
+                        <option value="reader">Reader</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success">Add User</button>
+            </form>
+        </div>
+        
+        <div class="controls">
+            <div class="filter-group">
+                <label for="role-filter">Filter by Role:</label>
+                <select id="role-filter" onchange="loadUsers()">
+                    <option value="">All Users</option>
+                    <option value="student">Students</option>
+                    <option value="professor">Professors</option>
+                    <option value="admin">Admins</option>
+                    <option value="reader">Readers</option>
+                </select>
+            </div>
+            <button class="btn btn-primary" onclick="loadUsers()">Refresh</button>
+        </div>
+        
+        <table class="users-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Full Name</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Created</th>
+                    <th>Last Login</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="users-tbody">
+                <tr>
+                    <td colspan="9" style="text-align: center; padding: 20px;">Loading users...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <script>
+        function showStatus(type, message) {
+            const statusDiv = document.getElementById('status-message');
+            statusDiv.className = 'status-message ' + type;
+            statusDiv.textContent = message;
+            statusDiv.style.display = 'block';
+            
+            if (type === 'success') {
+                setTimeout(() => {
+                    statusDiv.style.display = 'none';
+                }, 5000);
+            }
+        }
+        
+        async function loadUsers() {
+            const roleFilter = document.getElementById('role-filter').value;
+            const tbody = document.getElementById('users-tbody');
+            tbody.innerHTML = '<tr><td colspan="9" style="text-align: center; padding: 20px;">Loading users...</td></tr>';
+            
+            try {
+                const url = roleFilter 
+                    ? `/api/user-admin/users?role=${roleFilter}`
+                    : '/api/user-admin/users';
+                const response = await fetch(url);
+                const data = await response.json();
+                
+                if (data.success) {
+                    if (data.users.length === 0) {
+                        tbody.innerHTML = '<tr><td colspan="9" style="text-align: center; padding: 20px;">No users found</td></tr>';
+                    } else {
+                        tbody.innerHTML = data.users.map(user => `
+                            <tr>
+                                <td>${user.id}</td>
+                                <td>${user.username}</td>
+                                <td>${user.email}</td>
+                                <td>${user.full_name || '-'}</td>
+                                <td><span class="role-badge ${user.role}">${user.role}</span></td>
+                                <td>${user.is_active ? 'Active' : 'Inactive'}</td>
+                                <td>${user.created_at ? new Date(user.created_at).toLocaleDateString() : '-'}</td>
+                                <td>${user.last_login ? new Date(user.last_login).toLocaleDateString() : '-'}</td>
+                                <td>
+                                    <button class="btn btn-danger" onclick="deleteUser(${user.id}, '${user.username}')" 
+                                            ${user.role === 'admin' && user.id === {{ session.get('user_id', 0) }} ? 'disabled' : ''}>
+                                        Delete
+                                    </button>
+                                </td>
+                            </tr>
+                        `).join('');
+                    }
+                } else {
+                    showStatus('error', 'Error loading users: ' + (data.error || 'Unknown error'));
+                }
+            } catch (error) {
+                showStatus('error', 'Error loading users: ' + error.message);
+                tbody.innerHTML = '<tr><td colspan="9" style="text-align: center; padding: 20px; color: red;">Error loading users</td></tr>';
+            }
+        }
+        
+        async function deleteUser(userId, username) {
+            if (!confirm(`Are you sure you want to delete user "${username}"? This action cannot be undone.`)) {
+                return;
+            }
+            
+            try {
+                const response = await fetch(`/api/user-admin/users/${userId}`, {
+                    method: 'DELETE'
+                });
+                const data = await response.json();
+                
+                if (data.success) {
+                    showStatus('success', `User "${username}" deleted successfully`);
+                    loadUsers();
+                } else {
+                    showStatus('error', 'Error deleting user: ' + (data.error || 'Unknown error'));
+                }
+            } catch (error) {
+                showStatus('error', 'Error deleting user: ' + error.message);
+            }
+        }
+        
+        document.getElementById('add-user-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = {
+                username: document.getElementById('username').value,
+                email: document.getElementById('email').value,
+                password: document.getElementById('password').value,
+                full_name: document.getElementById('full_name').value,
+                role: document.getElementById('role').value
+            };
+            
+            try {
+                const response = await fetch('/api/user-admin/users', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(formData)
+                });
+                const data = await response.json();
+                
+                if (data.success) {
+                    showStatus('success', `User "${formData.username}" created successfully`);
+                    document.getElementById('add-user-form').reset();
+                    loadUsers();
+                } else {
+                    showStatus('error', 'Error creating user: ' + (data.error || 'Unknown error'));
+                }
+            } catch (error) {
+                showStatus('error', 'Error creating user: ' + error.message);
+            }
+        });
+        
+        // Load users on page load
+        loadUsers();
+    </script>
+</body>
+</html>
+
