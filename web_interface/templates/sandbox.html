@@ -534,8 +534,15 @@
             }
         }
         
-        // Load algorithms on page load
+        // Check if user is authenticated and has proper role
+        {% if read_only %}
+        // Disable all interactive features for read-only users
+        document.getElementById('algorithm-select').disabled = true;
+        document.getElementById('language-select').disabled = true;
+        {% else %}
+        // Load algorithms on page load for authenticated users
         loadAlgorithms();
+        {% endif %}
     </script>
 </body>
 </html>
