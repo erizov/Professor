@@ -1,44 +1,87 @@
 # Chain of Responsibility
 
 1. **Name of Algorithm**  
-   Chain of Responsibility
 
-2. **What problem does it solve? (1 sentence)**  
-   Decouples senders from receivers by giving more than one object a chance to handle a request.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like escalating a customer ticket: each handler decides to process it or pass it along the chain.
 
-4. **Inputs & Outputs**  
-   - Input: Request object flowing through ordered handlers.  
-   - Output: First handler that can process the request takes action; others remain unaware.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Define a Handler interface with set_next() and handle(request).
-2. Implement concrete handlers that either process or forward the request.
-3. Link handlers into a chain at runtime.
-4. Client sends the request to the first handler only.
-5. Optionally report when no handler could process the request.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Auth pipeline: BasicAuthHandler → TokenAuthHandler → OAuthHandler, each checking credentials before escalating.
 
-7. **Time & Space Complexity**  
-   - Time: O(n) in length of chain in worst case.  
-   - Space: O(1) per handler, O(n) to store chain links.
+```
+Chain of Responsibility Flowchart:
 
-8. **Strengths**  
-- Avoids monolithic if/else blocks.
-- Supports flexible ordering and additions.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- May be hard to ensure a request is eventually handled.
-- Debugging requires understanding chain order.
 
-10. **Compare with alternatives**  
-    Alternatives: Middleware Pipelines, Strategy Pattern, Observer
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Pass requests down a linked list of handlers until one handles it, keeping senders unaware of the concrete receiver.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Chain of Responsibility Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_02/lecture_09_behavioral_patterns/chain_of_responsibility/algorithm.py)
+- [Java Implementation](semester_02/lecture_09_behavioral_patterns/chain_of_responsibility/Algorithm.java)
+- [Python Tests](semester_02/lecture_09_behavioral_patterns/chain_of_responsibility/test_algorithm.py)
+

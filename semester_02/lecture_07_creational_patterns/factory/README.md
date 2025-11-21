@@ -1,44 +1,87 @@
 # Factory Method Pattern
 
 1. **Name of Algorithm**  
-   Factory Method Pattern
 
-2. **What problem does it solve? (1 sentence)**  
-   Defers instantiation to subclasses, letting them decide which concrete class to create.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   A base class provides a hook for creating collaborators; subclasses override to supply specific types.
 
-4. **Inputs & Outputs**  
-- Input: Superclass defining algorithm that depends on product objects.
-   - Output: factory_method() returning a Product interface implemented by subclasses.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Define Product interface implemented by concrete products.
-2. Create Creator base class with factory_method() returning Product.
-3. Implement default algorithm in Creator that calls factory_method().
-4. Subclass Creator to override factory_method() and return concrete products.
-5. Clients use Creator interface; subclass decides actual product.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Application::createDocument() overridden by TextApp and SpreadsheetApp to return respective documents.
 
-7. **Time & Space Complexity**  
-   - Time: Same as product creation plus virtual call overhead.  
-   - Space: O(n) for subclasses implementing factory method.
+```
+Factory Method Pattern Flowchart:
 
-8. **Strengths**  
-- Promotes loose coupling between creators and products.
-- Allows new products by subclassing without touching base logic.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Requires subclass for each product variant.
-- Can lead to parallel class hierarchies.
 
-10. **Compare with alternatives**  
-    Alternatives: Abstract Factory, Simple Factory, Builder
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Let subclasses decide which product to instantiate by overriding a factory method used by shared creator logic.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Factory Method Pattern Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_02/lecture_07_creational_patterns/factory/algorithm.py)
+- [Java Implementation](semester_02/lecture_07_creational_patterns/factory/Algorithm.java)
+- [Python Tests](semester_02/lecture_07_creational_patterns/factory/test_algorithm.py)
+

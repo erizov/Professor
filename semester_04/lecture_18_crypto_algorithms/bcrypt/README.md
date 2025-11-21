@@ -1,44 +1,92 @@
 # bcrypt Password Hashing
 
 1. **Name of Algorithm**  
-   bcrypt Password Hashing
 
-2. **What problem does it solve? (1 sentence)**  
-   Derives computationally expensive password hashes that resist brute-force and rainbow-table attacks for stored credentials.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Combine salt with password and run an intentionally slow, memory-hard key setup (EksBlowfish) so attackers must spend significant effort per guess.
 
-4. **Inputs & Outputs**  
-   - Input: Password string, cost factor (log2 rounds), 128-bit salt.  
-   - Output: 60-character hash string containing version, cost, salt, and checksum.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Generate random salt for each password.
-2. Run EksBlowfishSetup with password and salt cost times (2^cost iterations).
-3. Encrypt fixed text "OrpheanBeholderScryDoubt" 64 times with derived state.
-4. Format output $2b$<cost>$<22-char-salt><31-char-hash>.
-5. Verification: repeat process with same salt/cost and compare hashes.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Cost=12: hashing password "Sup3rSecret!" takes ~300 ms; stored hash includes salt so each account uses unique work factor.
 
-7. **Time & Space Complexity**  
-   - Time: O(2^cost) per hash; raising cost doubles runtime.  
-   - Space: O(1) (minimal memory aside from small Blowfish state).
+```
 
-8. **Strengths**  
-- Salted and adaptive: increase cost as hardware improves.
-- Widely implemented in language runtimes.
+### Flowchart (SVG)
 
-9. **Weaknesses / limitations**  
-- Limited to passwords ≤72 bytes.
-- Blowfish-based design lacks modern memory hardness (see Argon2).
+![bcrypt Password Hashing Flowchart](semester_04/lecture_18_crypto_algorithms/bcrypt/visualizations/flowchart.svg)
 
-10. **Compare with alternatives**  
-    Alternatives: Argon2id, scrypt, PBKDF2
+bcrypt Password Hashing Flowchart:
 
-11. **30-second explanation (your own words)**  
-    Applies an expensive Blowfish key schedule with per-user salt so each password check consumes significant CPU, deterring offline cracking.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+### Step-by-Step Execution
+
+
+```
+bcrypt Password Hashing Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_04/lecture_18_crypto_algorithms/bcrypt/algorithm.py)
+- [Java Implementation](semester_04/lecture_18_crypto_algorithms/bcrypt/Algorithm.java)
+- [Python Tests](semester_04/lecture_18_crypto_algorithms/bcrypt/test_algorithm.py)
+

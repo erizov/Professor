@@ -1,44 +1,87 @@
 # Command Pattern
 
 1. **Name of Algorithm**  
-   Command Pattern
 
-2. **What problem does it solve? (1 sentence)**  
-   Encapsulates a request as an object so it can be queued, logged, undone, or replayed.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Just like a remote control storing button presses as commands you can redo/undo later.
 
-4. **Inputs & Outputs**  
-   - Input: Receiver object performing work and invoker scheduling commands.  
-   - Output: Command objects implementing execute() (and optionally undo()).
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Define Command interface with execute()/undo().
-2. Implement concrete commands wrapping receiver operations.
-3. Invoker stores commands and triggers execute at the right time.
-4. Maintain history stack if undo/redo is needed.
-5. Optionally serialize commands for auditing or retries.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Text editor operations (InsertTextCommand, DeleteSelectionCommand) recorded for undo functionality.
 
-7. **Time & Space Complexity**  
-   - Time: Exec time equals receiver operation plus bookkeeping.  
-   - Space: O(n) to store command history.
+```
+Command Pattern Flowchart:
 
-8. **Strengths**  
-- Decouples senders from receivers.
-- Enables undo/redo, macro recording, and asynchronous execution.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Lots of small command classes.
-- Stateful commands must carefully manage context for undo.
 
-10. **Compare with alternatives**  
-    Alternatives: Event Sourcing, Strategy Pattern, Lambda commands
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Wrap each action in a command object so invokers can queue, log, or undo requests independently of receivers.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Command Pattern Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_02/lecture_09_behavioral_patterns/command/algorithm.py)
+- [Java Implementation](semester_02/lecture_09_behavioral_patterns/command/Algorithm.java)
+- [Python Tests](semester_02/lecture_09_behavioral_patterns/command/test_algorithm.py)
+

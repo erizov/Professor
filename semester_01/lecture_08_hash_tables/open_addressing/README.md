@@ -1,44 +1,87 @@
 # Open Addressing
 
 1. **Name of Algorithm**  
-   Open Addressing
 
-2. **What problem does it solve? (1 sentence)**  
-   Resolves hash table collisions by probing alternative slots instead of storing overflow lists.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   If a parking spot is taken, keep moving to the next slot according to a probe rule until you find an empty space.
 
-4. **Inputs & Outputs**  
-   - Input: Fixed-size table and probe sequence (linear, quadratic, double hashing).  
-   - Output: Array where each slot holds at most one key-value pair plus optional tombstone markers.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Hash key to initial index i0 = h(key).
-2. If slot empty, place entry; otherwise compute next probe index via strategy.
-3. Repeat probing until an empty slot or tombstone is found.
-4. Lookup follows the same probe sequence until key or empty slot encountered.
-5. Deletion marks slot as tombstone to preserve probe chains.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Linear probing size 5: insert keys hashing to index 2. Occupied? Try 3, then 4, then wrap to 0.
 
-7. **Time & Space Complexity**  
-   - Time: Average O(1) with low load factor; degrades toward O(n) as table fills.  
-   - Space: O(m) for table of m slots; no extra pointers.
+```
+Open Addressing Flowchart:
 
-8. **Strengths**  
-- Excellent cache locality because all data lives in the array.
-- No extra heap allocations compared to chaining.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Primary clustering can create long probe sequences.
-- Deletion logic complicated by tombstones and probe-chain maintenance.
 
-10. **Compare with alternatives**  
-    Alternatives: Separate Chaining, Cuckoo Hashing, Robin Hood Hashing
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Keeps every key directly in the array, using probe sequences to find the next available slot whenever collisions occur.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Open Addressing Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_01/lecture_08_hash_tables/open_addressing/algorithm.py)
+- [Java Implementation](semester_01/lecture_08_hash_tables/open_addressing/Algorithm.java)
+- [Python Tests](semester_01/lecture_08_hash_tables/open_addressing/test_algorithm.py)
+

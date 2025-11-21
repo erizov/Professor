@@ -1,43 +1,115 @@
 # Bucket Sort
 
 1. **Name of Algorithm**  
-   Bucket Sort
 
-2. **What problem does it solve? (1 sentence)**  
-   Sorts uniformly distributed numbers by distributing them into buckets, sorting each bucket, then concatenating.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like sorting mail into post office boxes: put each item in the right bucket, sort buckets individually, then combine.
 
-4. **Inputs & Outputs**  
-   - Input: Array of numbers uniformly distributed over a known range [min, max].  
-   - Output: Sorted array.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Create n empty buckets (or fewer, based on range).
-2. Distribute array elements into buckets: bucket[i] = floor(n * (arr[i] - min) / (max - min)).
-3. Sort each bucket individually (using insertion sort or another algorithm).
-4. Concatenate all buckets in order.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   [0.42, 0.32, 0.33, 0.52, 0.37, 0.47] → buckets: [0.32,0.33,0.37], [0.42,0.47], [0.52] → sorted.
 
-7. **Time & Space Complexity**  
-   - Time: O(n+k) average when uniformly distributed, O(n²) worst if all items in one bucket.  
-   - Space: O(n+k) for buckets.
+```
+Bucket Sort Flowchart:
 
-8. **Strengths**  
-- Linear average time for uniform distributions.
-- Stable if bucket sorting is stable.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│ Initialize  │
+│   array     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Compare    ├──────┐
+│  elements?  │      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│   Swap if   │      │
+│  needed     │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│   Sorted?   │
+└──────┬──────┘
+       │ No
+       └──────┐
+              │
+       Yes    │
+       │      │
+       ▼      ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Requires uniform distribution for efficiency.
-- Extra space for buckets.
 
-10. **Compare with alternatives**  
-    Alternatives: Counting Sort, Radix Sort, Quick Sort
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Divide the range into buckets, scatter items into appropriate buckets, sort buckets, then merge them back.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Bucket Sort Step-by-Step Execution:
+
+Input: [5, 3, 2, 8, 1]
+
+Pass 1:
+[5, 3, 2, 8, 1]
+ ↑  ↑
+Swap: 5 > 3
+[3, 5, 2, 8, 1]
+    ↑  ↑
+Swap: 5 > 2
+[3, 2, 5, 8, 1]
+       ↑  ↑
+No swap: 5 < 8
+[3, 2, 5, 8, 1]
+          ↑  ↑
+Swap: 8 > 1
+Result: [3, 2, 5, 1, 8]
+
+Pass 2:
+[3, 2, 5, 1, 8]
+ ↑  ↑
+Swap: 3 > 2
+[2, 3, 5, 1, 8]
+    ↑  ↑
+No swap: 3 < 5
+[2, 3, 5, 1, 8]
+       ↑  ↑
+Swap: 5 > 1
+Result: [2, 3, 1, 5, 8]
+
+Final: [1, 2, 3, 5, 8]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize array]
+    Init --> Compare{Compare elements}
+    Compare -->|Yes| Swap[Swap if needed]
+    Swap --> Check{More elements?}
+    Check -->|Yes| Compare
+    Check -->|No| Sorted{Array sorted?}
+    Sorted -->|No| Compare
+    Sorted -->|Yes| End([End])
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_01/lecture_03_specialized_sorting/bucket_sort/algorithm.py)
+- [Java Implementation](semester_01/lecture_03_specialized_sorting/bucket_sort/Algorithm.java)
+- [Python Tests](semester_01/lecture_03_specialized_sorting/bucket_sort/test_algorithm.py)
+

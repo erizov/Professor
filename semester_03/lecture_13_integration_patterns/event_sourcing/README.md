@@ -1,44 +1,87 @@
 # Event Sourcing
 
 1. **Name of Algorithm**  
-   Event Sourcing
 
-2. **What problem does it solve? (1 sentence)**  
-   Stores all changes to application state as a sequence of events, enabling time travel, audit trails, and rebuilding state from events.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Instead of storing current state, store every event that happened: like a bank statement, you can replay events to reconstruct any point in time.
 
-4. **Inputs & Outputs**  
-   - Input: Domain events representing state changes (e.g., OrderCreated, PaymentReceived, ItemShipped).  
-   - Output: Event store (append-only log) and reconstructed current state from events.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Capture all state changes as immutable events.
-2. Append events to event store (append-only log).
-3. Replay events to rebuild current state (projection).
-4. Optionally create multiple read models from events.
-5. Support event versioning and schema evolution.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Order system: events [OrderCreated, ItemAdded, PaymentReceived, ItemShipped]. Replay to get current order state or historical view at any time.
 
-7. **Time & Space Complexity**  
-   - Time: Write: O(1) append; Read: O(n) to replay n events for state reconstruction.  
-   - Space: O(n) for n events (grows over time; may need snapshots for performance).
+```
+Event Sourcing Flowchart:
 
-8. **Strengths**  
-- Complete audit trail and time travel capabilities.
-- Natural fit for event-driven architectures.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Event store grows indefinitely (requires snapshots/archiving).
-- Complexity in handling schema changes and event versioning.
 
-10. **Compare with alternatives**  
-    Alternatives: Traditional State Storage, CQRS, Change Data Capture (CDC)
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Stores state changes as immutable events in an append-only log, enabling state reconstruction, auditing, and temporal queries.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Event Sourcing Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_03/lecture_13_integration_patterns/event_sourcing/algorithm.py)
+- [Java Implementation](semester_03/lecture_13_integration_patterns/event_sourcing/Algorithm.java)
+- [Python Tests](semester_03/lecture_13_integration_patterns/event_sourcing/test_algorithm.py)
+

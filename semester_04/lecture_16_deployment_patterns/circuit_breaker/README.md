@@ -1,45 +1,87 @@
 # Circuit Breaker
 
 1. **Name of Algorithm**  
-   Circuit Breaker
 
-2. **What problem does it solve? (1 sentence)**  
-   Prevents cascading failures by detecting service failures and temporarily stopping requests to failing services, allowing recovery time.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like electrical circuit breakers: when a circuit (service) fails repeatedly, trip the breaker to stop current (requests) and prevent damage (cascading failures).
 
-4. **Inputs & Outputs**  
-   - Input: Service calls, failure thresholds, timeout configurations.  
-   - Output: Circuit state (closed, open, half-open) and request handling decisions.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Monitor service call failures and response times.
-2. If failure count exceeds threshold, open circuit (stop requests).
-3. Return fallback response or error immediately (fast failure).
-4. After timeout period, transition to half-open state.
-5. Allow test request through; if successful, close circuit; if fails, reopen.
-6. Continue monitoring and adjusting circuit state.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Payment service fails 5 times in 10 seconds → circuit opens → subsequent requests fail fast with fallback → after 30s, test request → if succeeds, close circuit.
 
-7. **Time & Space Complexity**  
-   - Time: O(1) for circuit state check and request handling.  
-   - Space: O(1) for circuit state storage (minimal overhead).
+```
+Circuit Breaker Flowchart:
 
-8. **Strengths**  
-- Prevents cascading failures and resource exhaustion.
-- Fast failure improves user experience.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Requires fallback strategies.
-- May delay recovery if timeout too long.
 
-10. **Compare with alternatives**  
-    Alternatives: Retry Pattern, Bulkhead Pattern, Timeout Pattern
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Detects service failures and temporarily stops requests to failing services, preventing cascading failures and allowing time for recovery.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Circuit Breaker Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_04/lecture_16_deployment_patterns/circuit_breaker/algorithm.py)
+- [Java Implementation](semester_04/lecture_16_deployment_patterns/circuit_breaker/Algorithm.java)
+- [Python Tests](semester_04/lecture_16_deployment_patterns/circuit_breaker/test_algorithm.py)
+

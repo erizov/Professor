@@ -31,6 +31,7 @@ try:
     from web_interface.reports import reports_bp
     from web_interface.admin import admin_bp
     from web_interface.test_reports import test_reports_bp
+    from web_interface.java_executor_bp import java_executor_bp
 except ImportError:
     # Fallback to relative imports when running from web_interface directory
     from dashboard import dashboard_bp
@@ -38,12 +39,14 @@ except ImportError:
     from reports import reports_bp
     from admin import admin_bp
     from test_reports import test_reports_bp
+    from java_executor_bp import java_executor_bp
 
 app.register_blueprint(dashboard_bp)
 app.register_blueprint(auth_bp)
 app.register_blueprint(reports_bp)
 app.register_blueprint(admin_bp)
 app.register_blueprint(test_reports_bp)
+app.register_blueprint(java_executor_bp)
 
 
 # Login route
@@ -89,6 +92,12 @@ def get_db_connection():
 def index():
     """Main page."""
     return render_template("index.html")
+
+
+@app.route("/java-executor")
+def java_executor_page():
+    """Java algorithm executor page."""
+    return render_template("java_executor.html")
 
 
 @app.route("/api/algorithms")

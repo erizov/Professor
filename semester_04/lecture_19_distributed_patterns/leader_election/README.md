@@ -1,45 +1,87 @@
 # Leader Election
 
 1. **Name of Algorithm**  
-   Leader Election
 
-2. **What problem does it solve? (1 sentence)**  
-   Selects a single coordinator among distributed nodes to serialize actions (e.g., lock management, replication control).
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Nodes compete based on priorities (IDs, timestamps); the "highest" remaining alive becomes leader and others defer until failure triggers a new election.
 
-4. **Inputs & Outputs**  
-   - Input: Cluster membership, node identifiers/priorities, communication channel (message passing).  
-   - Output: Identity of the current leader and election status.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Detect need for election (startup or leader failure).
-2. Each candidate broadcasts election message to higher-priority nodes.
-3. If no higher node responds, candidate declares leadership.
-4. Leader announces victory; others acknowledge and follow.
-5. Monitor leader heartbeats; on timeout, restart election.
-6. Persist leader metadata to avoid split-brain where possible.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-Bully algorithm: nodes have unique IDs; highest ID node alive becomes coordinator. ZooKeeper/Etcd use Raft to elect leader for log replication.
 
-7. **Time & Space Complexity**  
-   - Time: Bully algorithm worst-case O(n^2) messages; consensus-based elections ~O(n).  
-   - Space: O(n) to track membership and leader state.
+```
+Leader Election Flowchart:
 
-8. **Strengths**  
-- Ensures single coordinator for critical sections.
-- Detects failures and reconfigures automatically.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Susceptible to split-brain without quorum/consensus safeguards.
-- Frequent elections can disrupt system stability.
 
-10. **Compare with alternatives**  
-    Alternatives: Raft Consensus, Paxos, Randomized Leader Rotation
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Runs a coordination protocol so exactly one node assumes leadership while others remain followers, with re-election triggered on leader failure.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Leader Election Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_04/lecture_19_distributed_patterns/leader_election/algorithm.py)
+- [Java Implementation](semester_04/lecture_19_distributed_patterns/leader_election/Algorithm.java)
+- [Python Tests](semester_04/lecture_19_distributed_patterns/leader_election/test_algorithm.py)
+

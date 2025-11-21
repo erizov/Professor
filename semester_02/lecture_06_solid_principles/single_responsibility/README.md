@@ -1,44 +1,87 @@
 # Single Responsibility Principle
 
 1. **Name of Algorithm**  
-   Single Responsibility Principle
 
-2. **What problem does it solve? (1 sentence)**  
-   Ensures each class or module has exactly one reason to change.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Treat classes like specialists: one job, done well, so changes in one concern don’t ripple through unrelated code.
 
-4. **Inputs & Outputs**  
-   - Input: Object-oriented modules with multiple responsibilities entangled.  
-   - Output: Refactored components where each focuses on a single responsibility.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Identify all reasons why the class might change (UI tweaks, business rules, persistence, etc.).
-2. Group behaviors by responsibility and highlight unrelated clusters.
-3. Extract new classes/functions for secondary responsibilities.
-4. Inject dependencies so each class collaborates instead of owning all logic.
-5. Add tests per responsibility to prove isolation.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   A Report class both formats PDFs and queries the database → split into ReportGenerator + ReportRepository.
 
-7. **Time & Space Complexity**  
-   - Time: Refactoring effort proportional to responsibilities discovered.  
-   - Space: Extra classes/files for separated responsibilities.
+```
+Single Responsibility Principle Flowchart:
 
-8. **Strengths**  
-- Improves cohesion and readability.
-- Reduces blast radius when business rules evolve.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- May introduce more classes/interfaces to navigate.
-- Requires discipline to maintain separation over time.
 
-10. **Compare with alternatives**  
-    Alternatives: Modularization, Functional Decomposition, Componentization
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Keep each module focused on one reason to change so maintenance stays local and predictable.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Single Responsibility Principle Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_02/lecture_06_solid_principles/single_responsibility/algorithm.py)
+- [Java Implementation](semester_02/lecture_06_solid_principles/single_responsibility/Algorithm.java)
+- [Python Tests](semester_02/lecture_06_solid_principles/single_responsibility/test_algorithm.py)
+

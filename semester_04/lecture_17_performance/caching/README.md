@@ -1,45 +1,87 @@
 # Caching
 
 1. **Name of Algorithm**  
-   Caching
 
-2. **What problem does it solve? (1 sentence)**  
-   Stores frequently accessed data in fast storage to reduce latency and load on primary data sources, improving application performance.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like keeping frequently used items on your desk: instead of going to storage (database) every time, grab from desk (cache) for instant access.
 
-4. **Inputs & Outputs**  
-   - Input: Data to cache, cache key, TTL (time-to-live), cache eviction policy.  
-   - Output: Cached data with fast retrieval and reduced load on primary sources.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Check cache for requested data using key.
-2. If cache hit: return cached data immediately.
-3. If cache miss: fetch from primary source (database, API).
-4. Store fetched data in cache with TTL.
-5. Return data to caller.
-6. Evict expired or least-recently-used entries when cache full.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   User requests product info → check cache for product:123 → miss → fetch from database → store in cache (TTL 1 hour) → return. Next request hits cache instantly.
 
-7. **Time & Space Complexity**  
-   - Time: O(1) for cache lookup (hash table); O(n) for primary source fetch.  
-   - Space: O(n) for cached data (bounded by cache size limit).
+```
+Caching Flowchart:
 
-8. **Strengths**  
-- Dramatically reduces latency for frequently accessed data.
-- Reduces load on primary data sources.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Cache invalidation complexity.
-- Memory overhead for cached data.
 
-10. **Compare with alternatives**  
-    Alternatives: CDN, Database Query Optimization, In-Memory Databases
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Stores frequently accessed data in fast storage (memory) to enable instant retrieval and reduce load on slower primary data sources.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Caching Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_04/lecture_17_performance/caching/algorithm.py)
+- [Java Implementation](semester_04/lecture_17_performance/caching/Algorithm.java)
+- [Python Tests](semester_04/lecture_17_performance/caching/test_algorithm.py)
+

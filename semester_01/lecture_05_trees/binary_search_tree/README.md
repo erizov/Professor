@@ -1,43 +1,98 @@
 # Binary Search Tree
 
 1. **Name of Algorithm**  
-   Binary Search Tree
 
-2. **What problem does it solve? (1 sentence)**  
-   Stores keys so that lookups, inserts, and deletes can exploit sorted order with O(log n) average time.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Think of a game of twenty questions: each comparison decides whether to go left (smaller) or right (larger) until you reach the answer.
 
-4. **Inputs & Outputs**  
-   - Input: Comparable keys with optional values; operations like insert, search, delete.  
-   - Output: Tree structure where in-order traversal yields sorted keys.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Start at the root node and compare the target key.
-2. If key < current node, recurse or iterate into the left child.
-4. If key equals the node, update or return the value.
-5. During deletion, replace removed nodes with predecessor or successor to preserve ordering.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Insert 8,3,10,1,6: 8 is root, 3 goes left, 10 right, 1 left of 3, 6 right of 3.
 
-7. **Time & Space Complexity**  
-   - Time: Average O(log n); worst-case O(n) on skewed trees.  
-   - Space: O(n) to store n nodes.
+```
+Binary Search Tree Flowchart:
 
-8. **Strengths**  
-- Maintains sorted order with simple pointer structure.
-- Supports inorder traversal to produce sorted output quickly.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Get search │
+│    target   │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Check     ├──────┐
+│  current   │      │
+│  element?  │      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│   Move to   │      │
+│   next      │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│   Found?    │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Unbalanced input degrades operations to O(n).
-- Needs balancing variants (AVL, Red-Black) for guaranteed performance.
 
-10. **Compare with alternatives**  
-    Alternatives: AVL Tree, Red-Black Tree, Skip List
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    A search tree where each node’s left subtree holds smaller keys and the right subtree holds larger ones, enabling logarithmic search when balanced.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Binary Search Tree Step-by-Step Execution:
+
+Array: [1, 3, 5, 7, 9, 11]
+Target: 7
+
+Step 1: Check middle (index 2, value 5)
+[1, 3, 5, 7, 9, 11]
+         ↑
+5 < 7, search right
+
+Step 2: Check middle of right half (index 4, value 9)
+[7, 9, 11]
+    ↑
+9 > 7, search left
+
+Step 3: Check remaining (index 3, value 7)
+[7]
+ ↑
+Found! Index 3
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Get search target]
+    Init --> Check{Check current element}
+    Check -->|Match| Found([Found])
+    Check -->|No match| Next[Move to next]
+    Next --> More{More elements?}
+    More -->|Yes| Check
+    More -->|No| NotFound([Not Found])
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_01/lecture_05_trees/binary_search_tree/algorithm.py)
+- [Java Implementation](semester_01/lecture_05_trees/binary_search_tree/Algorithm.java)
+- [Python Tests](semester_01/lecture_05_trees/binary_search_tree/test_algorithm.py)
+

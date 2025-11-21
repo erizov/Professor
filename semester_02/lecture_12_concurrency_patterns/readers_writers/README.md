@@ -1,44 +1,87 @@
 # Readers-Writers Problem
 
 1. **Name of Algorithm**  
-Readers-Writers Problem
 
-2. **What problem does it solve? (1 sentence)**  
-   Manages concurrent access to shared resources allowing many readers or one writer at a time.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Multiple readers can read simultaneously, but writers require exclusive access.
 
-4. **Inputs & Outputs**  
-   - Input: Shared resource, read-write lock or semaphore, reader and writer threads.  
-   - Output: Safe concurrent operations without stale reads or write conflicts.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Maintain counters for active readers and waiting writers.
-2. Readers acquire shared lock if no writer active.
-3. Writers wait until readers finish, then acquire exclusive lock.
-4. After operation, release lock and signal waiting threads.
-5. Optionally prioritize writers to prevent starvation.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Database cache accessed by many read queries but occasionally updated by writers.
 
-7. **Time & Space Complexity**  
-   - Time: Lock acquisition typically O(1); throughput depends on contention.  
-   - Space: O(1) for counters and lock state.
+```
+Readers-Writers Problem Flowchart:
 
-8. **Strengths**  
-- Improves read-heavy workloads by allowing parallel reads.
-- Prevents race conditions on shared resources.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Complex to implement starvation-free policies.
-- Still serialized for write-heavy workloads.
 
-10. **Compare with alternatives**  
-    Alternatives: Optimistic Concurrency Control, Stamped Locks, Copy-on-Write
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Use read-write synchronization primitives so multiple readers can proceed concurrently while writers get exclusive access.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Readers-Writers Problem Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_02/lecture_12_concurrency_patterns/readers_writers/algorithm.py)
+- [Java Implementation](semester_02/lecture_12_concurrency_patterns/readers_writers/Algorithm.java)
+- [Python Tests](semester_02/lecture_12_concurrency_patterns/readers_writers/test_algorithm.py)
+

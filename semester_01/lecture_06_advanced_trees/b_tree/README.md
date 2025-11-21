@@ -1,44 +1,93 @@
 # B-Tree
 
 1. **Name of Algorithm**  
-   B-Tree
 
-2. **What problem does it solve? (1 sentence)**  
-   Efficiently stores and retrieves large datasets on disk by minimizing disk I/O through wide, shallow trees.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like a library filing system: instead of narrow tall shelves, use wide shallow ones so you can grab multiple books at once.
 
-4. **Inputs & Outputs**  
-   - Input: Large dataset of key-value pairs, typically stored on disk.  
-   - Output: Multi-way search tree optimized for external storage access.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Each node contains multiple keys (typically 100-1000) and child pointers.
-2. Search: traverse from root, compare with node keys, follow appropriate child.
-3. Insert: find leaf, add key; if node overflows, split and promote middle key.
-4. Delete: remove key; if node underflows, merge with sibling or borrow key.
-5. Maintain property: all leaves at same depth, nodes between t-1 and 2t-1 keys.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   B-tree of order 3: root [10,20] has children [5,7], [15,17], [25,27]. Insert 12: goes to middle child, no split needed.
 
-7. **Time & Space Complexity**  
-   - Time: O(log n) with base of node capacity (typically 100-1000), making it effectively O(log n / log t).  
-   - Space: O(n) total storage, but nodes are large (disk pages).
+```
+B-Tree Flowchart:
 
-8. **Strengths**  
-- Minimizes disk I/O by reading large nodes (pages) at once.
-- Widely used in databases and file systems for indexing.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│    root     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Node       ├──────┐
+│  exists?    │      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Process    │      │
+│   node      │      │
+└──────┬──────┘      │
+       │             │
+       ▼             │
+┌─────────────┐      │
+│  Traverse   │      │
+│  children   │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- More complex than binary trees for in-memory operations.
-- Requires careful tuning of node size for optimal performance.
 
-10. **Compare with alternatives**  
-    Alternatives: B+ Tree, LSM Tree, Hash Index
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    A multi-way tree that stores many keys per node to reduce disk reads, perfect for database indexing.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+B-Tree Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_01/lecture_06_advanced_trees/b_tree/algorithm.py)
+- [Java Implementation](semester_01/lecture_06_advanced_trees/b_tree/Algorithm.java)
+- [Python Tests](semester_01/lecture_06_advanced_trees/b_tree/test_algorithm.py)
+

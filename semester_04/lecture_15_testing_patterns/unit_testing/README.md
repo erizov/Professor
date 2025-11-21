@@ -1,45 +1,87 @@
 # Unit Testing
 
 1. **Name of Algorithm**  
-   Unit Testing
 
-2. **What problem does it solve? (1 sentence)**  
-   Tests individual units of code (functions, methods, classes) in isolation to verify they behave correctly according to specifications.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like testing each ingredient separately before cooking: verify each function works correctly before testing the whole recipe.
 
-4. **Inputs & Outputs**  
-   - Input: Unit of code (function/method), test inputs, expected outputs.  
-   - Output: Test results indicating whether unit behaves correctly.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Identify unit to test (function, method, or class).
-2. Prepare test inputs and expected outputs.
-3. Execute unit with test inputs.
-4. Assert actual outputs match expected outputs.
-5. Test edge cases and error conditions.
-6. Verify unit works in isolation (mock dependencies).
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Test calculateTotal function: input [1,2,3] → expected output 6 → assert result equals 6. Test with empty list, negative numbers, null input.
 
-7. **Time & Space Complexity**  
-   - Time: O(1) to O(n) depending on unit complexity (fast execution).  
-   - Space: O(1) for test data (minimal memory usage).
+```
+Unit Testing Flowchart:
 
-8. **Strengths**  
-- Fast execution and quick feedback.
-- Isolates bugs to specific units.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Doesn't catch integration issues.
-- Requires mocking external dependencies.
 
-10. **Compare with alternatives**  
-    Alternatives: Integration Testing, System Testing, End-to-End Testing
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Tests individual code units in isolation to verify correct behavior, providing fast feedback and early bug detection.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Unit Testing Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_04/lecture_15_testing_patterns/unit_testing/algorithm.py)
+- [Java Implementation](semester_04/lecture_15_testing_patterns/unit_testing/Algorithm.java)
+- [Python Tests](semester_04/lecture_15_testing_patterns/unit_testing/test_algorithm.py)
+

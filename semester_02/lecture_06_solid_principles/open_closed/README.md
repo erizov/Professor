@@ -1,44 +1,87 @@
 # Open/Closed Principle
 
 1. **Name of Algorithm**  
-   Open/Closed Principle
 
-2. **What problem does it solve? (1 sentence)**  
-   Code should be open for extension but closed for modification.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Once stable, classes become plug-in sockets: add new behavior via extension points instead of editing core logic.
 
-4. **Inputs & Outputs**  
-   - Input: Existing class that needs new behavior variations.  
-   - Output: Abstractions that allow new features through inheritance, composition, or configuration.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Identify areas where features keep forcing edits to the same class.
-2. Extract abstractions (interfaces, base classes, strategy objects).
-3. Move variable behavior behind the abstraction boundary.
-4. Register new implementations without touching existing code.
-5. Cover extension points with tests to guard regressions.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   ShippingCalculator switches via if/else per region → introduce ShippingStrategy interface and register new strategies.
 
-7. **Time & Space Complexity**  
-   - Time: Depends on the breadth of extension points.  
-   - Space: Additional classes or configuration objects to host extensions.
+```
+Open/Closed Principle Flowchart:
 
-8. **Strengths**  
-- Limits regression risk when adding features.
-- Encourages plugin-style architectures.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Requires upfront abstraction design.
-- Over-abstraction can make code harder to follow.
 
-10. **Compare with alternatives**  
-    Alternatives: Strategy Pattern, Dependency Injection, Feature Toggles
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Design modules so you add new behavior by plugging in new classes, not by editing the old ones.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Open/Closed Principle Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_02/lecture_06_solid_principles/open_closed/algorithm.py)
+- [Java Implementation](semester_02/lecture_06_solid_principles/open_closed/Algorithm.java)
+- [Python Tests](semester_02/lecture_06_solid_principles/open_closed/test_algorithm.py)
+

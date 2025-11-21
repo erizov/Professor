@@ -1,45 +1,87 @@
 # Transformer
 
 1. **Name of Algorithm**  
-   Transformer
 
-2. **What problem does it solve? (1 sentence)**  
-   Replaces recurrent and convolutional layers with self-attention mechanisms, enabling parallel processing and better handling of long-range dependencies in sequences.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like a team meeting where everyone can talk to everyone simultaneously: instead of passing messages sequentially (RNN), all positions attend to all others at once, seeing the full context immediately.
 
-4. **Inputs & Outputs**  
-   - Input: Input sequences (source and/or target), token embeddings, position encodings.  
-   - Output: Output sequences (for translation, generation, etc.) or representations (for understanding).
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Create input embeddings and add positional encodings (sinusoidal or learned).
-2. Encoder: apply multi-head self-attention + feed-forward network (repeat N times).
-3. Decoder: apply masked self-attention (causal) + cross-attention to encoder + feed-forward (repeat N times).
-4. Use layer normalization and residual connections around each sub-layer.
-5. Final linear layer and softmax for output predictions.
-6. Train end-to-end with backpropagation.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Translation: 'Hello world' (English) → encoder creates representations → decoder attends to encoder + generates 'Bonjour le monde' (French) token by token, attending to relevant source words.
 
-7. **Time & Space Complexity**  
-   - Time: O(n²·d) where n is sequence length, d is dimension (parallelizable, but quadratic attention).  
-   - Space: O(n²) for attention matrices plus O(d²) for parameters per layer.
+```
+Transformer Flowchart:
 
-8. **Strengths**  
-- Parallel processing enables faster training than RNNs.
-- Self-attention captures long-range dependencies effectively.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Quadratic memory and computation in sequence length.
-- Requires large amounts of data for effective training.
 
-10. **Compare with alternatives**  
-    Alternatives: RNN/LSTM, CNN, Sparse Transformers, Linear Transformers
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Uses stacked self-attention and feed-forward layers with residual connections, replacing recurrence with parallel attention mechanisms to process sequences efficiently.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Transformer Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_05/lecture_25_transformers/transformer/algorithm.py)
+- [Java Implementation](semester_05/lecture_25_transformers/transformer/Algorithm.java)
+- [Python Tests](semester_05/lecture_25_transformers/transformer/test_algorithm.py)
+

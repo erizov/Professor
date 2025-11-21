@@ -116,57 +116,59 @@ def test_reports():
 @test_reports_bp.route("/api/test-results")
 def get_test_results():
     """Get test results as JSON."""
-    conn = get_db_connection()
-    cursor = conn.cursor()
-    algorithm_types = load_algorithm_types()
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+        algorithm_types = load_algorithm_types()
 
-    # Get query parameters
-    search = request.args.get("search", "").lower()
-    status_filter = request.args.get("status", "")
-    language_filter = request.args.get("language", "")
-    algorithm_type_filter = request.args.get("algorithm_type", "")
-    sort_by = request.args.get("sort", "timestamp")
-    sort_order = request.args.get("order", "desc")
+        # Get query parameters
+        search = request.args.get("search", "").lower()
+        status_filter = request.args.get("status", "")
+        language_filter = request.args.get("language", "")
+        algorithm_type_filter = request.args.get("algorithm_type", "")
+        sort_by = request.args.get("sort", "timestamp")
+        sort_order = request.args.get("order", "desc")
 
-    # Build query - no cross-database join, we'll add algorithm_type in Python
-    query = """
-        WITH recent_results AS (
-            SELECT 
-                algorithm_path,
-                language,
-                status,
-                duration,
-                timestamp,
-                error_message,
-                previous_status,
-                state_changed,
-                ROW_NUMBER() OVER (
-                    PARTITION BY algorithm_path, language 
-                    ORDER BY timestamp DESC
-                ) as rn
-            FROM test_results
-            WHERE 1=1
-    """
+        # Build query - no cross-database join, we'll add algorithm_type in Python
+        query = """
+            WITH recent_results AS (
+                SELECT 
+                    algorithm_path,
+                    language,
+                    status,
+                    duration,
+                    timestamp,
+                    error_message,
+                    previous_status,
+                    state_changed,
+                    ROW_NUMBER() OVER (
+                        PARTITION BY algorithm_path, language 
+                        ORDER BY timestamp DESC
+                    ) as rn
+                FROM test_results
+                WHERE 1=1
+        """
 
-    params = []
+        params = []
 
-    if search:
-        query += " AND algorithm_path LIKE ?"
-        params.append(f"%{search}%")
+        if search:
+            query += " AND algorithm_path LIKE ?"
+            params.append(f"%{search}%")
 
-    if status_filter:
-        # Handle "failure" filter to include both "failure" and "error"
-        if status_filter == "failure":
-            query += " AND (status = ? OR status = ?)"
-            params.append("failure")
-            params.append("error")
-        else:
-            query += " AND status = ?"
-            params.append(status_filter)
+        if status_filter:
+            # Handle "failure" filter to include both "failure" and "error"
+            if status_filter == "failure":
+                query += " AND (status = ? OR status = ?)"
+                params.append("failure")
+                params.append("error")
+            else:
+                query += " AND status = ?"
+                params.append(status_filter)
 
-    if language_filter:
-        query += " AND language = ?"
-        params.append(language_filter)
+        if language_filter:
+            # Case-insensitive language matching
+            query += " AND LOWER(language) = LOWER(?)"
+            params.append(language_filter)
 
     query += """
         )
@@ -246,71 +248,88 @@ def get_test_results():
             }
         )
 
-    conn.close()
+        conn.close()
 
-    return jsonify({"results": results})
+        return jsonify({"results": results})
+    except Exception as e:
+        if 'conn' in locals():
+            conn.close()
+        return jsonify({
+            "error": f"Error loading test results: {str(e)}",
+            "results": []
+        }), 500
 
 
 @test_reports_bp.route("/api/test-statistics")
 def get_test_statistics():
     """Get test statistics with filter support."""
-    conn = get_db_connection()
-    cursor = conn.cursor()
-    algorithm_types = load_algorithm_types()
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+        algorithm_types = load_algorithm_types()
 
-    # Get filter parameters
-    search = request.args.get("search", "").lower()
-    status_filter = request.args.get("status", "")
-    language_filter = request.args.get("language", "")
-    algorithm_type_filter = request.args.get("algorithm_type", "")
+        # Get filter parameters
+        search = request.args.get("search", "").lower()
+        status_filter = request.args.get("status", "")
+        language_filter = request.args.get("language", "")
+        algorithm_type_filter = request.args.get("algorithm_type", "")
 
-    # Build base query WITHOUT status filter for statistics
-    # Status filter should only affect displayed results, not statistics counts
-    base_query = """
-        FROM test_results tr
-        WHERE 1=1
-    """
+        # Build base query WITHOUT status filter for statistics
+        # Status filter should only affect displayed results, not statistics counts
+        base_query = """
+            FROM test_results tr
+            WHERE 1=1
+        """
 
-    params = []
-    filter_conditions = []
+        params = []
+        filter_conditions = []
 
-    if search:
-        filter_conditions.append("tr.algorithm_path LIKE ?")
-        params.append(f"%{search}%")
+        if search:
+            filter_conditions.append("tr.algorithm_path LIKE ?")
+            params.append(f"%{search}%")
 
-    # NOTE: status_filter is NOT applied here for statistics
-    # Statistics should show counts for all statuses in the filtered dataset
+        # NOTE: status_filter is NOT applied here for statistics
+        # Statistics should show counts for all statuses in the filtered dataset
 
-    if language_filter:
-        filter_conditions.append("tr.language = ?")
-        params.append(language_filter)
+        if language_filter:
+            # Case-insensitive language matching
+            filter_conditions.append("LOWER(tr.language) = LOWER(?)")
+            params.append(language_filter)
 
-    if filter_conditions:
-        base_query += " AND " + " AND ".join(filter_conditions)
+        if filter_conditions:
+            base_query += " AND " + " AND ".join(filter_conditions)
 
-    # Get overall statistics with filters (excluding status filter)
-    # First get all recent results with paths for algorithm_type filtering
-    query_with_paths = f"""
-        SELECT 
-            recent.algorithm_path,
-            recent.language,
-            recent.status
-        FROM (
+        # Get overall statistics with filters (excluding status filter)
+        # First get all recent results with paths for algorithm_type filtering
+        query_with_paths = f"""
             SELECT 
-                tr.algorithm_path,
-                tr.language,
-                tr.status,
-                ROW_NUMBER() OVER (
-                    PARTITION BY tr.algorithm_path, tr.language 
-                    ORDER BY tr.timestamp DESC
-                ) as rn
-            {base_query}
-        ) recent
-        WHERE recent.rn = 1
-    """
-    
-    cursor.execute(query_with_paths, params)
-    all_path_rows = cursor.fetchall()
+                recent.algorithm_path,
+                recent.language,
+                recent.status
+            FROM (
+                SELECT 
+                    tr.algorithm_path,
+                    tr.language,
+                    tr.status,
+                    ROW_NUMBER() OVER (
+                        PARTITION BY tr.algorithm_path, tr.language 
+                        ORDER BY tr.timestamp DESC
+                    ) as rn
+                {base_query}
+            ) recent
+            WHERE recent.rn = 1
+        """
+        
+        cursor.execute(query_with_paths, params)
+        all_path_rows = cursor.fetchall()
+    except Exception as e:
+        conn.close()
+        return jsonify({
+            "error": f"Error loading test statistics: {str(e)}",
+            "status_counts": {},
+            "language_stats": {},
+            "recent_changes": 0
+        }), 500
     
     # Filter by algorithm_type if specified, then count by status
     status_counts = {}
@@ -338,33 +357,42 @@ def get_test_statistics():
             language_stats[lang] = {}
         language_stats[lang][status] = language_stats[lang].get(status, 0) + 1
 
-    # Get state changes with filters (excluding status filter)
-    state_change_base = base_query + " AND tr.state_changed = 1 AND tr.timestamp > datetime('now', '-24 hours')"
-    state_change_query = f"""
-        SELECT COUNT(DISTINCT recent.algorithm_path || ':' || recent.language)
-        FROM (
-            SELECT 
-                tr.algorithm_path,
-                tr.language,
-                ROW_NUMBER() OVER (
-                    PARTITION BY tr.algorithm_path, tr.language 
-                    ORDER BY tr.timestamp DESC
-                ) as rn
-            {state_change_base}
-        ) recent
-        WHERE recent.rn = 1
-    """
-    cursor.execute(state_change_query, params)
-    recent_changes = cursor.fetchone()[0] or 0
+        # Get state changes with filters (excluding status filter)
+        state_change_base = base_query + " AND tr.state_changed = 1 AND tr.timestamp > datetime('now', '-24 hours')"
+        state_change_query = f"""
+            SELECT COUNT(DISTINCT recent.algorithm_path || ':' || recent.language)
+            FROM (
+                SELECT 
+                    tr.algorithm_path,
+                    tr.language,
+                    ROW_NUMBER() OVER (
+                        PARTITION BY tr.algorithm_path, tr.language 
+                        ORDER BY tr.timestamp DESC
+                    ) as rn
+                {state_change_base}
+            ) recent
+            WHERE recent.rn = 1
+        """
+        cursor.execute(state_change_query, params)
+        recent_changes = cursor.fetchone()[0] or 0
 
-    conn.close()
+        conn.close()
 
-    return jsonify(
-        {
-            "status_counts": status_counts,
-            "language_stats": language_stats,
-            "recent_changes": recent_changes,
-        }
-    )
+        return jsonify(
+            {
+                "status_counts": status_counts,
+                "language_stats": language_stats,
+                "recent_changes": recent_changes,
+            }
+        )
+    except Exception as e:
+        if conn:
+            conn.close()
+        return jsonify({
+            "error": f"Error loading test statistics: {str(e)}",
+            "status_counts": {},
+            "language_stats": {},
+            "recent_changes": 0
+        }), 500
 
 

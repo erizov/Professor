@@ -1,43 +1,115 @@
 # Merge Sort
 
 1. **Name of Algorithm**  
-   Merge Sort
 
-2. **What problem does it solve? (1 sentence)**  
-   Efficiently sorts large lists by divide-and-conquer merging of sorted halves.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Split the deck until each pile has one card, then merge piles back together in order.
 
-4. **Inputs & Outputs**  
-   - Input: Array or list of comparable elements.  
-   - Output: Sorted array.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Divide the array into two halves.
-2. Recursively sort each half.
-3. Merge the two sorted halves by repeatedly taking the smaller front element.
-4. Continue merging until a single sorted list remains.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   [8, 3, 5, 2] → split into [8, 3] & [5, 2] → sort halves ⇒ [3, 8], [2, 5] → merge ⇒ [2, 3, 5, 8].
 
-7. **Time & Space Complexity**  
-   - Time: O(n log n) for all cases.  
-   - Space: O(n) auxiliary storage for merges.
+```
+Merge Sort Flowchart:
 
-8. **Strengths**  
-- Predictable performance and stable.
-- Great for linked lists and external sorting.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│ Initialize  │
+│   array     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Compare    ├──────┐
+│  elements?  │      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│   Swap if   │      │
+│  needed     │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│   Sorted?   │
+└──────┬──────┘
+       │ No
+       └──────┐
+              │
+       Yes    │
+       │      │
+       ▼      ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Requires extra memory for merging.
-- Recursive overhead on constrained environments.
 
-10. **Compare with alternatives**  
-    Alternatives: Quick Sort, Heap Sort, TimSort
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Keep splitting into halves until singles, then merge each pair while keeping them sorted.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Merge Sort Step-by-Step Execution:
+
+Input: [5, 3, 2, 8, 1]
+
+Pass 1:
+[5, 3, 2, 8, 1]
+ ↑  ↑
+Swap: 5 > 3
+[3, 5, 2, 8, 1]
+    ↑  ↑
+Swap: 5 > 2
+[3, 2, 5, 8, 1]
+       ↑  ↑
+No swap: 5 < 8
+[3, 2, 5, 8, 1]
+          ↑  ↑
+Swap: 8 > 1
+Result: [3, 2, 5, 1, 8]
+
+Pass 2:
+[3, 2, 5, 1, 8]
+ ↑  ↑
+Swap: 3 > 2
+[2, 3, 5, 1, 8]
+    ↑  ↑
+No swap: 3 < 5
+[2, 3, 5, 1, 8]
+       ↑  ↑
+Swap: 5 > 1
+Result: [2, 3, 1, 5, 8]
+
+Final: [1, 2, 3, 5, 8]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize array]
+    Init --> Compare{Compare elements}
+    Compare -->|Yes| Swap[Swap if needed]
+    Swap --> Check{More elements?}
+    Check -->|Yes| Compare
+    Check -->|No| Sorted{Array sorted?}
+    Sorted -->|No| Compare
+    Sorted -->|Yes| End([End])
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_01/lecture_02_efficient_sorting/merge_sort/algorithm.py)
+- [Java Implementation](semester_01/lecture_02_efficient_sorting/merge_sort/Algorithm.java)
+- [Python Tests](semester_01/lecture_02_efficient_sorting/merge_sort/test_algorithm.py)
+

@@ -1,43 +1,98 @@
 # Jump Search
 
 1. **Name of Algorithm**  
-   Jump Search
 
-2. **What problem does it solve? (1 sentence)**  
-   Balances linear and binary search by jumping ahead fixed blocks in a sorted array.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Skip ahead in strides; once you overshoot, do a short linear scan backward.
 
-4. **Inputs & Outputs**  
-   - Input: Sorted array and target.  
-   - Output: Index of target or -1.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Choose optimal step ≈ √n.
-2. Jump ahead by step size until value ≥ target or end reached.
-3. Perform linear search backward within the block where target could reside.
-4. Return index if found, else -1.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   [1,3,5,7,9,11,13,15], target 9, step=2: jump indices 0→2→4 (value 9) stop and confirm.
 
-7. **Time & Space Complexity**  
-   - Time: O(√n).  
-   - Space: O(1).
+```
+Jump Search Flowchart:
 
-8. **Strengths**  
-- Fewer comparisons than linear search on sorted data.
-- Simple to implement.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Get search │
+│    target   │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Check     ├──────┐
+│  current   │      │
+│  element?  │      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│   Move to   │      │
+│   next      │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│   Found?    │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Still slower than binary search.
-- Requires random access to jump.
 
-10. **Compare with alternatives**  
-    Alternatives: Binary Search, Interpolation Search, Exponential Search
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Hop through the array in fixed leaps, then crawl a short distance to find the exact slot.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Jump Search Step-by-Step Execution:
+
+Array: [1, 3, 5, 7, 9, 11]
+Target: 7
+
+Step 1: Check middle (index 2, value 5)
+[1, 3, 5, 7, 9, 11]
+         ↑
+5 < 7, search right
+
+Step 2: Check middle of right half (index 4, value 9)
+[7, 9, 11]
+    ↑
+9 > 7, search left
+
+Step 3: Check remaining (index 3, value 7)
+[7]
+ ↑
+Found! Index 3
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Get search target]
+    Init --> Check{Check current element}
+    Check -->|Match| Found([Found])
+    Check -->|No match| Next[Move to next]
+    Next --> More{More elements?}
+    More -->|Yes| Check
+    More -->|No| NotFound([Not Found])
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_01/lecture_04_searching/jump_search/algorithm.py)
+- [Java Implementation](semester_01/lecture_04_searching/jump_search/Algorithm.java)
+- [Python Tests](semester_01/lecture_04_searching/jump_search/test_algorithm.py)
+

@@ -1,44 +1,87 @@
 # Longest Common Subsequence (LCS)
 
 1. **Name of Algorithm**  
-   Longest Common Subsequence (LCS)
 
-2. **What problem does it solve? (1 sentence)**  
-   Finds the longest sequence present in order (not necessarily contiguous) in two strings.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Walk both strings together; when characters match, include them, otherwise decide whether to drop a char from one string or the other via DP.
 
-4. **Inputs & Outputs**  
-   - Input: Strings s (length n) and t (length m).  
-   - Output: Length of longest common subsequence (and optionally the subsequence).
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Initialize DP table dp[n+1][m+1] to zero.
-2. For i=1..n: for j=1..m:
-3.   If s[i-1]==t[j-1], dp[i][j]=dp[i-1][j-1]+1.
-4.   Else dp[i][j]=max(dp[i-1][j], dp[i][j-1]).
-5. Backtrack from dp[n][m] to reconstruct the subsequence.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   s="ABCBDAB", t="BDCABA" → LCS length 4 ("BCBA").
 
-7. **Time & Space Complexity**  
-   - Time: O(n·m).  
-   - Space: O(n·m) (can be reduced to O(min(n,m)) for length only).
+```
+Longest Common Subsequence (LCS) Flowchart:
 
-8. **Strengths**  
-- Foundation for diff tools and bioinformatics alignment.
-- Provides similarity measure ignoring non-matching sections.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Quadratic runtime on string lengths.
-- Reconstruction requires storing parent pointers or stack.
 
-10. **Compare with alternatives**  
-    Alternatives: Edit Distance, Longest Common Substring, Sequence Alignment
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Fills a DP grid where each cell stores the best LCS length up to those prefixes, ensuring optimal substructure reuse.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Longest Common Subsequence (LCS) Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_03/lecture_11_dynamic_programming/longest_common_subsequence/algorithm.py)
+- [Java Implementation](semester_03/lecture_11_dynamic_programming/longest_common_subsequence/Algorithm.java)
+- [Python Tests](semester_03/lecture_11_dynamic_programming/longest_common_subsequence/test_algorithm.py)
+

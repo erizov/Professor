@@ -1,44 +1,87 @@
 # Rabin-Karp
 
 1. **Name of Algorithm**  
-   Rabin-Karp
 
-2. **What problem does it solve? (1 sentence)**  
-   Finds pattern occurrences using rolling hash to quickly compare pattern hash with text window hashes.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Hash the pattern once, then slide a window through text and compare hashes; only do full comparison when hashes match.
 
-4. **Inputs & Outputs**  
-   - Input: Text string T (length n) and pattern string P (length m).  
-   - Output: All starting indices where P appears in T.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Compute hash of pattern P.
-2. Compute hash of first m characters of text.
-3. If hashes match, verify with character-by-character comparison.
-4. Roll hash forward: remove leftmost char, add rightmost char, update hash.
-5. Repeat until end of text.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Text "GEEKS FOR GEEKS", pattern "GEEK": hash matches at indices 0 and 10.
 
-7. **Time & Space Complexity**  
-   - Time: O(n+m) average, O(n·m) worst if many hash collisions.  
-   - Space: O(1) extra space (excluding hash storage).
+```
+Rabin-Karp Flowchart:
 
-8. **Strengths**  
-- Simple to implement with rolling hash.
-- Efficient for multiple pattern searches with same length.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Worst-case performance degrades with many collisions.
-- Requires careful hash function selection.
 
-10. **Compare with alternatives**  
-    Alternatives: KMP, Boyer-Moore, Finite Automaton
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Use hashing to quickly filter out non-matches; only verify when hash values agree.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Rabin-Karp Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_03/lecture_14_string_algorithms/rabin_karp/algorithm.py)
+- [Java Implementation](semester_03/lecture_14_string_algorithms/rabin_karp/Algorithm.java)
+- [Python Tests](semester_03/lecture_14_string_algorithms/rabin_karp/test_algorithm.py)
+

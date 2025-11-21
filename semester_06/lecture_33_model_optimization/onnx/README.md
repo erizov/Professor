@@ -1,47 +1,87 @@
 # ONNX (Open Neural Network Exchange)
 
 1. **Name of Algorithm**  
-   ONNX (Open Neural Network Exchange)
 
-2. **What problem does it solve? (1 sentence)**  
-   Provides an open standard format for representing machine learning models, enabling interoperability between different frameworks (PyTorch, TensorFlow, etc.) and deployment across diverse platforms and hardware.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like a universal translator for ML models: convert your model from any framework (PyTorch, TensorFlow) into ONNX format, then run it on any platform (mobile, edge, cloud) that supports ONNX - one model, many destinations.
 
-4. **Inputs & Outputs**  
-   - Input: Trained model from source framework (PyTorch, TensorFlow, etc.), model architecture, weights.  
-   - Output: ONNX model file (.onnx) that can be run on ONNX-compatible runtimes.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Export model from source framework: use framework-specific ONNX exporter (torch.onnx.export, tf2onnx).
-2. Define input/output shapes and data types for the ONNX graph.
-3. Convert framework operations to ONNX operators: map framework ops (conv, relu, etc.) to ONNX standard ops.
-4. Serialize model to ONNX protobuf format (.onnx file).
-5. Validate ONNX model: check graph structure, operator compatibility, shape inference.
-6. Optimize ONNX model (optional): use ONNX Runtime optimizations (graph fusion, constant folding).
-7. Deploy: load ONNX model in target runtime (ONNX Runtime, TensorRT, etc.) on target platform.
-8. Run inference: execute ONNX model on CPU, GPU, or specialized hardware.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   PyTorch ResNet-50 → export to ONNX → get resnet50.onnx (50MB) → deploy on mobile using ONNX Runtime → inference: 30ms on iPhone, 25ms on Android → same model works on both platforms.
 
-7. **Time & Space Complexity**  
-   - Time: O(M) for conversion where M is model size (one-time), inference depends on runtime and hardware.  
-   - Space: O(M) for ONNX model file (similar to original model size, may be slightly larger due to metadata).
+```
+ONNX (Open Neural Network Exchange) Flowchart:
 
-8. **Strengths**  
-- Framework-agnostic: convert from any framework to any platform.
-- Widely supported by major ML frameworks and runtimes.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Not all framework operations are supported (may require workarounds).
-- Conversion may introduce slight numerical differences.
 
-10. **Compare with alternatives**  
-    Alternatives: TensorFlow Lite, CoreML, TensorRT, Native Framework Deployment
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Provides open standard format for ML models, enabling framework-agnostic deployment across diverse platforms and hardware through standardized model representation.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+ONNX (Open Neural Network Exchange) Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_06/lecture_33_model_optimization/onnx/algorithm.py)
+- [Java Implementation](semester_06/lecture_33_model_optimization/onnx/Algorithm.java)
+- [Python Tests](semester_06/lecture_33_model_optimization/onnx/test_algorithm.py)
+

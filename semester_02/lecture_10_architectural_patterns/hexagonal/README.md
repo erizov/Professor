@@ -1,44 +1,87 @@
 # Hexagonal (Ports and Adapters)
 
 1. **Name of Algorithm**  
-   Hexagonal (Ports and Adapters)
 
-2. **What problem does it solve? (1 sentence)**  
-   Allows applications to run equally in different environments by decoupling the domain from external systems via ports and adapters.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Treat the application as a hexagon with ports on each side; adapters plug into ports to talk to the outer world.
 
-4. **Inputs & Outputs**  
-   - Input: Domain core, inbound ports for driving actions, outbound ports for driven interactions.  
-   - Output: Adapters (HTTP, CLI, database, messaging) that plug in without changing core logic.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Define inbound ports (interfaces) representing use cases.
-2. Implement domain services that realize the ports.
-3. Declare outbound ports for infrastructure dependencies.
-4. Write adapters that implement outbound ports (DB gateways, API clients).
-5. Wire adapters to ports via dependency injection.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Blog service: inbound port publish_post, adapters for REST controller and CLI; outbound port PostRepository with adapters for SQL or NoSQL stores.
 
-7. **Time & Space Complexity**  
-   - Time: Not applicable.  
-   - Space: Not applicable.
+```
+Hexagonal (Ports and Adapters) Flowchart:
 
-8. **Strengths**  
-- Easy to swap infrastructure without touching core.
-- Supports automated testing by substituting adapters.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- More interfaces and boilerplate.
-- Requires careful dependency management.
 
-10. **Compare with alternatives**  
-    Alternatives: Clean Architecture, Onion Architecture, Layered Architecture
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Expose the application through abstract ports while adapters translate between the outside world and the domain core.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Hexagonal (Ports and Adapters) Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_02/lecture_10_architectural_patterns/hexagonal/algorithm.py)
+- [Java Implementation](semester_02/lecture_10_architectural_patterns/hexagonal/Algorithm.java)
+- [Python Tests](semester_02/lecture_10_architectural_patterns/hexagonal/test_algorithm.py)
+

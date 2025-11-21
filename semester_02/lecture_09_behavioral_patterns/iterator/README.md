@@ -1,44 +1,87 @@
 # Iterator Pattern
 
 1. **Name of Algorithm**  
-   Iterator Pattern
 
-2. **What problem does it solve? (1 sentence)**  
-   Provides a standard way to traverse elements of a collection without exposing its internals.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like flipping through a photo album with an index finger that remembers your current spot.
 
-4. **Inputs & Outputs**  
-   - Input: Collection with potentially complex storage (trees, graphs, aggregates).  
-   - Output: Iterator objects supporting next(), has_next(), and optional remove().
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Define Iterator interface with traversal methods.
-2. Have collection expose factory method returning new iterator.
-3. Iterator maintains traversal state (current index/node).
-4. Clients use iterator to loop without knowing collection structure.
-5. Provide specialized iterators (reverse, breadth-first) as needed.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Composite pattern provides a depth-first iterator to traverse nested components.
 
-7. **Time & Space Complexity**  
-   - Time: O(n) to traverse n elements.  
-   - Space: O(1) to O(h) depending on iteration strategy (h = height for tree traversals).
+```
+Iterator Pattern Flowchart:
 
-8. **Strengths**  
-- Supports multiple concurrent traversals.
-- Keeps collection encapsulation intact.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Custom iterators can be verbose to implement.
-- Modifications during iteration need careful coordination.
 
-10. **Compare with alternatives**  
-    Alternatives: Generator Functions, Visitor Pattern, Indexed loops
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Expose a traversal object so clients iterate over aggregates without coupling to internal representation.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Iterator Pattern Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_02/lecture_09_behavioral_patterns/iterator/algorithm.py)
+- [Java Implementation](semester_02/lecture_09_behavioral_patterns/iterator/Algorithm.java)
+- [Python Tests](semester_02/lecture_09_behavioral_patterns/iterator/test_algorithm.py)
+

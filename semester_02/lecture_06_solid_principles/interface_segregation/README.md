@@ -1,44 +1,87 @@
 # Interface Segregation Principle
 
 1. **Name of Algorithm**  
-   Interface Segregation Principle
 
-2. **What problem does it solve? (1 sentence)**  
-   Clients should not be forced to depend on methods they do not use.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Give each client a tailored remote control; bloated interfaces force consumers to worry about buttons they never press.
 
-4. **Inputs & Outputs**  
-   - Input: Large interfaces implemented by many classes with empty or throwing methods.  
-   - Output: Smaller, client-specific interfaces implemented by relevant classes.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. List interface methods and map them to actual client usage.
-2. Identify clusters of methods used together by specific clients.
-3. Split the interface into cohesive sub-interfaces.
-4. Update classes to implement only the interfaces they need.
-5. Refactor clients to depend on the refined contracts.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-IMultiFunctionDevice exposes print/scan/fax; a scanner-only device should not implement fax, so split into IPrinter, IScanner, IFax.
 
-7. **Time & Space Complexity**  
-   - Time: Refactor effort grows with number of clients.  
-   - Space: More interface definitions to maintain.
+```
+Interface Segregation Principle Flowchart:
 
-8. **Strengths**  
-- Reduces stub methods and unused dependencies.
-- Improves readability and compile-time safety.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Too many interfaces can overwhelm newcomers.
-- Requires coordination when clients share overlapping needs.
 
-10. **Compare with alternatives**  
-    Alternatives: Adapter Pattern, Role Interfaces, Service Facades
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Favor many small interfaces over one large one so consumers only depend on what they actually use.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Interface Segregation Principle Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_02/lecture_06_solid_principles/interface_segregation/algorithm.py)
+- [Java Implementation](semester_02/lecture_06_solid_principles/interface_segregation/Algorithm.java)
+- [Python Tests](semester_02/lecture_06_solid_principles/interface_segregation/test_algorithm.py)
+

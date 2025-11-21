@@ -1,44 +1,87 @@
 # Boyer-Moore
 
 1. **Name of Algorithm**  
-   Boyer-Moore
 
-2. **What problem does it solve? (1 sentence)**  
-   Finds pattern occurrences in text by scanning from right to left and skipping ahead when mismatches occur.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Start matching from the end of the pattern; when a mismatch happens, use two heuristics to jump ahead as far as possible.
 
-4. **Inputs & Outputs**  
-   - Input: Text string T (length n) and pattern string P (length m).  
-   - Output: All starting positions where P occurs in T.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Preprocess P to build bad character table (rightmost occurrence of each char).
-2. Preprocess P to build good suffix table (longest suffix that matches a prefix).
-3. Align P with start of T, compare from right to left.
-4. On mismatch: skip by max(bad character shift, good suffix shift).
-5. Continue until pattern slides past end of text.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Text "THIS IS A TEST", pattern "TEST": bad char 'T' at end allows skipping ahead.
 
-7. **Time & Space Complexity**  
-   - Time: O(n/m) best case, O(n·m) worst case, typically sub-linear in practice.  
-   - Space: O(m + |alphabet|) for preprocessing tables.
+```
+Boyer-Moore Flowchart:
 
-8. **Strengths**  
-- Often faster than linear algorithms in practice due to large skips.
-- Excellent for long patterns and large alphabets.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Worst-case quadratic time possible.
-- More complex preprocessing than KMP.
 
-10. **Compare with alternatives**  
-Alternatives: KMP, Rabin-Karp, Sunday Algorithm
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Match backwards and use character mismatches to skip ahead intelligently, often faster than forward matching.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Boyer-Moore Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_03/lecture_14_string_algorithms/boyer_moore/algorithm.py)
+- [Java Implementation](semester_03/lecture_14_string_algorithms/boyer_moore/Algorithm.java)
+- [Python Tests](semester_03/lecture_14_string_algorithms/boyer_moore/test_algorithm.py)
+

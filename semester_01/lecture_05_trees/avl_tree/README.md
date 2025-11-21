@@ -1,45 +1,93 @@
 # AVL Tree
 
 1. **Name of Algorithm**  
-   AVL Tree
 
-2. **What problem does it solve? (1 sentence)**  
-   Maintains a self-balancing binary search tree where the heights of left and right subtrees differ by at most one.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like a see-saw that automatically adjusts itself: whenever one side gets too heavy, it rotates to balance out.
 
-4. **Inputs & Outputs**  
-   - Input: Sequence of insert/delete/search operations on key-value pairs.  
-   - Output: Balanced binary search tree with O(log n) height guarantees.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Insert or delete a node using standard BST rules.
-2. Check the balance factor (height difference) of each ancestor.
-3. If imbalance detected (|balance| > 1), perform rotations.
-4. Single rotation for outside cases (left-left or right-right).
-5. Double rotation for inside cases (left-right or right-left).
-6. Update heights and continue up the tree until balanced.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Insert 3,2,1: After 3 and 2, insert 1 causes left-left imbalance. Rotate right around 3: [2(1,3)].
 
-7. **Time & Space Complexity**  
-   - Time: O(log n) for all operations (insert, delete, search).  
-   - Space: O(n) to store n nodes.
+```
+AVL Tree Flowchart:
 
-8. **Strengths**  
-- Guaranteed O(log n) height ensures predictable performance.
-- Strict balancing prevents worst-case O(n) behavior.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│    root     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Node       ├──────┐
+│  exists?    │      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Process    │      │
+│   node      │      │
+└──────┬──────┘      │
+       │             │
+       ▼             │
+┌─────────────┐      │
+│  Traverse   │      │
+│  children   │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- More complex than basic BST due to rotation overhead.
-- Requires storing balance factors or heights per node.
 
-10. **Compare with alternatives**  
-    Alternatives: Red-Black Tree, Splay Tree, B-Tree
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    A self-adjusting BST that keeps itself balanced by rotating nodes when one subtree becomes too tall.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+AVL Tree Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_01/lecture_05_trees/avl_tree/algorithm.py)
+- [Java Implementation](semester_01/lecture_05_trees/avl_tree/Algorithm.java)
+- [Python Tests](semester_01/lecture_05_trees/avl_tree/test_algorithm.py)
+

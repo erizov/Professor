@@ -1,44 +1,87 @@
 # Model-View-Controller (MVC)
 
 1. **Name of Algorithm**  
-   Model-View-Controller (MVC)
 
-2. **What problem does it solve? (1 sentence)**  
-   Separates domain state (model), user interface (view), and input handling (controller) to build maintainable GUIs and web apps.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Controller handles user input, updates the model, and selects a view; view renders model data back to the user.
 
-4. **Inputs & Outputs**  
-   - Input: User interactions routed through controllers, domain models storing data, view templates displaying data.  
-   - Output: Rendered UI plus updated models reflecting user actions.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Controller receives user action (HTTP request, button click).
-2. Controller validates input and invokes model operations.
-3. Model updates state and notifies observers if needed.
-4. Controller selects a view and provides model data.
-5. View renders output to user.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Todo app: controller handles /add request, model saves task, view renders updated list.
 
-7. **Time & Space Complexity**  
-   - Time: Depends on model operations; architectural pattern.  
-   - Space: Depends on domain data.
+```
+Model-View-Controller (MVC) Flowchart:
 
-8. **Strengths**  
-- Clear separation of concerns improves testability.
-- Multiple views can reuse the same models.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Controller and view coupling can grow complex in large apps.
-- Not ideal for heavily event-driven UIs without additional patterns.
 
-10. **Compare with alternatives**  
-    Alternatives: MVVM, MVP, Clean Architecture
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Split application logic into model, view, and controller layers so UI changes do not leak into business logic.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Model-View-Controller (MVC) Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_02/lecture_10_architectural_patterns/mvc/algorithm.py)
+- [Java Implementation](semester_02/lecture_10_architectural_patterns/mvc/Algorithm.java)
+- [Python Tests](semester_02/lecture_10_architectural_patterns/mvc/test_algorithm.py)
+

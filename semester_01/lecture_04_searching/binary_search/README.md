@@ -1,44 +1,98 @@
 # Binary Search
 
 1. **Name of Algorithm**  
-   Binary Search
 
-2. **What problem does it solve? (1 sentence)**  
-   Finds a target in a sorted list by repeatedly halving the search interval.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like guessing a number: choose the midpoint, discard the half where the answer cannot live, repeat.
 
-4. **Inputs & Outputs**  
-   - Input: Sorted array and target value.  
-   - Output: Index of target or -1 if missing.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Set low and high pointers to the bounds.
-2. Compute mid = (low + high) // 2.
-3. If array[mid] equals target, return mid.
-4. If target < array[mid], move high to mid - 1.
-5. Else move low to mid + 1 and repeat until low > high.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Search 9 in [1,3,5,7,9,11]: mid=5→value=7 < 9, shift low ⇒ new mid=9 found at index 4.
 
-7. **Time & Space Complexity**  
-   - Time: O(log n).  
-   - Space: O(1) iterative, O(log n) recursive.
+```
+Binary Search Flowchart:
 
-8. **Strengths**  
-- Very fast on massive sorted arrays.
-- Predictable logarithmic performance.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Get search │
+│    target   │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Check     ├──────┐
+│  current   │      │
+│  element?  │      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│   Move to   │      │
+│   next      │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│   Found?    │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Requires sorted data with random access.
-- Insertion/deletion may break order.
 
-10. **Compare with alternatives**  
-    Alternatives: Interpolation Search, Binary Search Tree, Hash Table
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Keep cutting the remaining range in half so the number of candidates collapses exponentially.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Binary Search Step-by-Step Execution:
+
+Array: [1, 3, 5, 7, 9, 11]
+Target: 7
+
+Step 1: Check middle (index 2, value 5)
+[1, 3, 5, 7, 9, 11]
+         ↑
+5 < 7, search right
+
+Step 2: Check middle of right half (index 4, value 9)
+[7, 9, 11]
+    ↑
+9 > 7, search left
+
+Step 3: Check remaining (index 3, value 7)
+[7]
+ ↑
+Found! Index 3
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Get search target]
+    Init --> Check{Check current element}
+    Check -->|Match| Found([Found])
+    Check -->|No match| Next[Move to next]
+    Next --> More{More elements?}
+    More -->|Yes| Check
+    More -->|No| NotFound([Not Found])
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_01/lecture_04_searching/binary_search/algorithm.py)
+- [Java Implementation](semester_01/lecture_04_searching/binary_search/Algorithm.java)
+- [Python Tests](semester_01/lecture_04_searching/binary_search/test_algorithm.py)
+

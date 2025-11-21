@@ -1,44 +1,98 @@
 # Linear Search
 
 1. **Name of Algorithm**  
-   Linear Search
 
-2. **What problem does it solve? (1 sentence)**  
-   Finds the position of a target value by scanning elements sequentially.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Check each item in order until the desired one appears or the list ends.
 
-4. **Inputs & Outputs**  
-   - Input: List/array and target value.  
-   - Output: Index of the target or -1 if absent.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Start at index 0.
-2. Compare current element with target.
-3. If equal, return the index.
-4. Otherwise advance to the next index.
-5. Stop after the final element and return -1 if not found.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Search 7 in [4, 7, 1]: compare 4 (no), compare 7 (yes) ⇒ index 1.
 
-7. **Time & Space Complexity**  
-   - Time: O(n) average and worst; O(1) best if first element matches.  
-   - Space: O(1).
+```
+Linear Search Flowchart:
 
-8. **Strengths**  
-- Works on unsorted collections.
-- Simple to implement and reason about.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Get search │
+│    target   │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Check     ├──────┐
+│  current   │      │
+│  element?  │      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│   Move to   │      │
+│   next      │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│   Found?    │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Slow on large datasets due to full scan.
-- Cannot skip work without extra structure.
 
-10. **Compare with alternatives**  
-    Alternatives: Binary Search, Hash Lookup, Jump Search
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Walk through each entry until the goal appears; trivial but potentially time-consuming.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Linear Search Step-by-Step Execution:
+
+Array: [1, 3, 5, 7, 9, 11]
+Target: 7
+
+Step 1: Check middle (index 2, value 5)
+[1, 3, 5, 7, 9, 11]
+         ↑
+5 < 7, search right
+
+Step 2: Check middle of right half (index 4, value 9)
+[7, 9, 11]
+    ↑
+9 > 7, search left
+
+Step 3: Check remaining (index 3, value 7)
+[7]
+ ↑
+Found! Index 3
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Get search target]
+    Init --> Check{Check current element}
+    Check -->|Match| Found([Found])
+    Check -->|No match| Next[Move to next]
+    Next --> More{More elements?}
+    More -->|Yes| Check
+    More -->|No| NotFound([Not Found])
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_01/lecture_04_searching/linear_search/algorithm.py)
+- [Java Implementation](semester_01/lecture_04_searching/linear_search/Algorithm.java)
+- [Python Tests](semester_01/lecture_04_searching/linear_search/test_algorithm.py)
+

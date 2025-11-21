@@ -1,6 +1,91 @@
 # Community Engagement Metrics
 
 1. **Name of Algorithm**  
+
+## Code Files
+
+
+## Algorithm Visualization
+
+### Flowchart (ASCII)
+
+
+```
+Community Engagement Metrics Flowchart:
+
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
+
+
+### Step-by-Step Execution
+
+
+```
+Community Engagement Metrics Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_14/lecture_102_community_management/engagement_metrics/algorithm.py)
+- [Java Implementation](semester_14/lecture_102_community_management/engagement_metrics/Algorithm.java)
+- [Python Tests](semester_14/lecture_102_community_management/engagement_metrics/test_algorithm.py)
+
+
    Community Engagement Metrics
 
 2. **What problem does it solve? (1 sentence)**  

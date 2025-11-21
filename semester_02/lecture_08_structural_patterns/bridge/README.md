@@ -1,44 +1,87 @@
 # Bridge Pattern
 
 1. **Name of Algorithm**  
-   Bridge Pattern
 
-2. **What problem does it solve? (1 sentence)**  
-   Decouples abstractions from their implementations so both can vary independently.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Think of a remote control talking to different TVs: the remote is the abstraction, the TV electronics are implementations.
 
-4. **Inputs & Outputs**  
-   - Input: Hierarchy where multiple dimensions of variation (e.g., shape vs. rendering API) would otherwise explode subclasses.  
-   - Output: Two orthogonal class hierarchies linked via composition.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Split the abstraction (high-level operations) from the implementation (platform-specific work).
-2. Define an implementation interface with primitive operations.
-3. Have the abstraction hold a reference to the implementation and delegate calls.
-4. Subclass both sides independently as variation requires.
-5. Provide wiring (factories/DI) to pair abstraction with concrete implementation.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Shape abstraction (Circle, Square) delegates draw() to Renderer implementation (VectorRenderer, RasterRenderer).
 
-7. **Time & Space Complexity**  
-   - Time: Same as underlying implementation plus indirection.  
-   - Space: One reference from abstraction to implementation.
+```
+Bridge Pattern Flowchart:
 
-8. **Strengths**  
-- Prevents class explosion when combining variation axes.
-- Allows runtime swapping of implementations.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- More moving parts compared to simple inheritance.
-- Requires careful naming to keep roles clear.
 
-10. **Compare with alternatives**  
-    Alternatives: Strategy Pattern, Abstract Factory, Adapter
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Compose abstractions with implementations so each can evolve on its own timeline without recompiling the other.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Bridge Pattern Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_02/lecture_08_structural_patterns/bridge/algorithm.py)
+- [Java Implementation](semester_02/lecture_08_structural_patterns/bridge/Algorithm.java)
+- [Python Tests](semester_02/lecture_08_structural_patterns/bridge/test_algorithm.py)
+

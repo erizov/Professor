@@ -1,44 +1,87 @@
 # Message Queue
 
 1. **Name of Algorithm**  
-   Message Queue
 
-2. **What problem does it solve? (1 sentence)**  
-   Decouples producers and consumers of messages, enabling asynchronous communication, load balancing, and reliable message delivery.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like a post office: producers drop messages in a queue, consumers pick them up when ready, allowing independent scaling and fault tolerance.
 
-4. **Inputs & Outputs**  
-   - Input: Messages from producers, queue configuration (durability, priority, TTL).  
-   - Output: Reliable message delivery to consumers with ordering and persistence guarantees.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Producer sends message to queue (with optional routing key/topic).
-2. Queue stores message (optionally persisted to disk).
-3. Consumer subscribes to queue and receives messages.
-4. Consumer processes message and sends acknowledgment.
-5. Queue removes acknowledged message; retries on failure.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   E-commerce: order service publishes OrderCreated to queue; inventory, payment, shipping services consume and process asynchronously.
 
-7. **Time & Space Complexity**  
-   - Time: Enqueue: O(1); Dequeue: O(1) to O(log n) depending on priority.  
-   - Space: O(n) for n messages in queue (bounded by queue size limits).
+```
+Message Queue Flowchart:
 
-8. **Strengths**  
-- Decouples services and enables asynchronous processing.
-- Provides reliability through persistence and retries.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Message ordering may be lost in distributed systems.
-- Requires monitoring and dead letter queue handling.
 
-10. **Compare with alternatives**  
-    Alternatives: Direct RPC, Event Streaming (Kafka), Pub/Sub
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Buffers messages between producers and consumers, enabling asynchronous, decoupled communication with reliability guarantees.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Message Queue Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_03/lecture_13_integration_patterns/message_queue/algorithm.py)
+- [Java Implementation](semester_03/lecture_13_integration_patterns/message_queue/Algorithm.java)
+- [Python Tests](semester_03/lecture_13_integration_patterns/message_queue/test_algorithm.py)
+

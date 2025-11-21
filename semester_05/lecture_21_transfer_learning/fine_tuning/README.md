@@ -1,45 +1,87 @@
 # Fine-Tuning
 
 1. **Name of Algorithm**  
-   Fine-Tuning
 
-2. **What problem does it solve? (1 sentence)**  
-   Adapts a pre-trained model to a new task by training some or all layers on target data, balancing transfer learning with task-specific adaptation.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like adjusting a pre-tuned piano: start with good base tuning (pre-trained weights), then make small adjustments (fine-tune) to match your specific music (target task).
 
-4. **Inputs & Outputs**  
-   - Input: Pre-trained model, target dataset, learning rate, layers to fine-tune.  
-   - Output: Adapted model optimized for target task with improved performance.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Load pre-trained model weights.
-2. Optionally replace final layers for new task (e.g., different number of classes).
-3. Freeze early layers, unfreeze later layers (or use differential learning rates).
-4. Train on target dataset with lower learning rate than training from scratch.
-5. Optionally unfreeze more layers and continue training.
-6. Validate and adjust hyperparameters.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Pre-trained ResNet on ImageNet → replace last layer for 10 classes → freeze first 100 layers → fine-tune last layers on medical images with lr=0.001 → achieve 95% accuracy.
 
-7. **Time & Space Complexity**  
-   - Time: O(n·e·l) for n samples, e epochs, l layers (faster than full training).  
-   - Space: O(m) for model weights plus O(b) for batch data during training.
+```
+Fine-Tuning Flowchart:
 
-8. **Strengths**  
-- Better performance than feature extraction alone.
-- More efficient than training from scratch.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Requires more data and computation than feature extraction.
-- Risk of overfitting with small datasets.
 
-10. **Compare with alternatives**  
-    Alternatives: Feature Extraction, Full Training from Scratch, Progressive Unfreezing
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Adapts pre-trained models to new tasks by selectively training layers, combining transfer learning benefits with task-specific optimization.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Fine-Tuning Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_05/lecture_21_transfer_learning/fine_tuning/algorithm.py)
+- [Java Implementation](semester_05/lecture_21_transfer_learning/fine_tuning/Algorithm.java)
+- [Python Tests](semester_05/lecture_21_transfer_learning/fine_tuning/test_algorithm.py)
+

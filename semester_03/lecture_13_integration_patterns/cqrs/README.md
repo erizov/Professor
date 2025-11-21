@@ -1,44 +1,87 @@
 # CQRS (Command Query Responsibility Segregation)
 
 1. **Name of Algorithm**  
-   CQRS (Command Query Responsibility Segregation)
 
-2. **What problem does it solve? (1 sentence)**  
-Separates read and write operations into different models to optimize performance, scalability, and maintainability of data access.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Split your data model: commands (writes) use one model optimized for updates, queries (reads) use another optimized for fast retrieval.
 
-4. **Inputs & Outputs**  
-   - Input: Commands (write operations) and queries (read operations) on domain entities.  
-   - Output: Separate read and write models with independent optimization strategies.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Define command model: optimized for validation, business rules, and writes.
-2. Define query model: denormalized, optimized for fast reads and reporting.
-3. Commands update write model and publish events.
-4. Event handlers update read model asynchronously.
-5. Queries read from optimized read model.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   E-commerce: Order command model stores normalized data; query model pre-aggregates order history, customer stats for dashboard.
 
-7. **Time & Space Complexity**  
-   - Time: Write: O(1) to O(log n) depending on model; Read: O(1) to O(log n) for optimized queries.  
-   - Space: O(n) for write model + O(m) for read model (may be larger due to denormalization).
+```
+CQRS (Command Query Responsibility Segregation) Flowchart:
 
-8. **Strengths**  
-- Independent scaling of read/write workloads.
-- Optimized models for each operation type.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Increased complexity (two models to maintain).
-- Eventual consistency between read and write models.
 
-10. **Compare with alternatives**  
-    Alternatives: Traditional CRUD, Event Sourcing, Read Replicas
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Separates command (write) and query (read) responsibilities into distinct models, allowing independent optimization and scaling.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+CQRS (Command Query Responsibility Segregation) Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_03/lecture_13_integration_patterns/cqrs/algorithm.py)
+- [Java Implementation](semester_03/lecture_13_integration_patterns/cqrs/Algorithm.java)
+- [Python Tests](semester_03/lecture_13_integration_patterns/cqrs/test_algorithm.py)
+

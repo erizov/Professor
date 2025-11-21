@@ -1,6 +1,91 @@
 # Real Time Dashboards
 
 1. **Name of Algorithm**  
+
+## Code Files
+
+
+## Algorithm Visualization
+
+### Flowchart (ASCII)
+
+
+```
+Real Time Dashboards Flowchart:
+
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
+
+
+### Step-by-Step Execution
+
+
+```
+Real Time Dashboards Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_16/lecture_114_real_time_analytics/real_time_dashboards/algorithm.py)
+- [Java Implementation](semester_16/lecture_114_real_time_analytics/real_time_dashboards/Algorithm.java)
+- [Python Tests](semester_16/lecture_114_real_time_analytics/real_time_dashboards/test_algorithm.py)
+
+
    Real Time Dashboards
 
 2. **What problem does it solve? (1 sentence)**  

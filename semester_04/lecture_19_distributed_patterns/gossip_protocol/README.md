@@ -1,45 +1,87 @@
 # Gossip Protocol
 
 1. **Name of Algorithm**  
-   Gossip Protocol
 
-2. **What problem does it solve? (1 sentence)**  
-   Disseminates state information in large-scale distributed systems using epidemic-style message spreading for scalability and fault tolerance.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like rumors spreading: each node periodically contacts random peers to exchange updates, so information eventually reaches everyone without central coordination.
 
-4. **Inputs & Outputs**  
-   - Input: Cluster of nodes, heartbeat/state data, gossip interval, fan-out (number of peers per round).  
-   - Output: Eventual consistency of membership or state across nodes.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Each node maintains local state (heartbeats, version vectors).
-2. On each tick, select k random peers.
-3. Send local state digests; peers reconcile by merging newer entries.
-4. Update detection timers to suspect failed nodes lacking fresh heartbeats.
-5. Propagate membership changes (join/leave/fail) via subsequent gossip rounds.
-6. Tune fan-out and interval to balance convergence speed and bandwidth.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Amazon Dynamo-style membership: every 1s, node gossips to 3 peers; failure detected after missing N heartbeats across multiple peers.
 
-7. **Time & Space Complexity**  
-   - Time: Each round O(k) messages per node; convergence typically O(log n) rounds to reach all nodes.  
-   - Space: O(n) per node to track membership metadata.
+```
+Gossip Protocol Flowchart:
 
-8. **Strengths**  
-- Highly fault-tolerant and decentralized.
-- Scales to thousands of nodes with bounded load.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Only eventually consistent; temporary disagreement possible.
-- Bandwidth usage grows with state size.
 
-10. **Compare with alternatives**  
-    Alternatives: Centralized Membership Service, Raft/Consensus-based registries, Multicast/Broadcast protocols
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Nodes periodically exchange membership/state updates with random peers, allowing information to percolate through the cluster without a coordinator.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Gossip Protocol Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_04/lecture_19_distributed_patterns/gossip_protocol/algorithm.py)
+- [Java Implementation](semester_04/lecture_19_distributed_patterns/gossip_protocol/Algorithm.java)
+- [Python Tests](semester_04/lecture_19_distributed_patterns/gossip_protocol/test_algorithm.py)
+

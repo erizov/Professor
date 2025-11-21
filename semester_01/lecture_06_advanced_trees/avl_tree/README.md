@@ -1,40 +1,93 @@
 # Avl Tree
 
 1. **Name of Algorithm**  
-   Avl Tree
 
-2. **What problem does it solve? (1 sentence)**  
-Implements avl tree algorithm.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-Avl Tree is a fundamental algorithm in computer science.
 
-4. **Inputs & Outputs**  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Initialize data structures
-2. Process input according to algorithm logic
-3. Return computed result
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Example: Avl Tree applied to sample data.
 
-7. **Time & Space Complexity**  
-   - Time: Varies  
-   - Space: analysis
+```
+Avl Tree Flowchart:
 
-8. **Strengths**  
-- Efficient for specific use cases
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│    root     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Node       ├──────┐
+│  exists?    │      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Process    │      │
+│   node      │      │
+└──────┬──────┘      │
+       │             │
+       ▼             │
+┌─────────────┐      │
+│  Traverse   │      │
+│  children   │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- May have limitations in certain scenarios
 
-10. **Compare with alternatives**  
-    Alternatives: Related algorithms
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Avl Tree solves computational problems efficiently.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Avl Tree Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_01/lecture_06_advanced_trees/avl_tree/algorithm.py)
+- [Java Implementation](semester_01/lecture_06_advanced_trees/avl_tree/Algorithm.java)
+- [Python Tests](semester_01/lecture_06_advanced_trees/avl_tree/test_algorithm.py)
+

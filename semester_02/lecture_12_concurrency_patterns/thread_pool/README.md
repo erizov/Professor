@@ -1,44 +1,87 @@
 # Thread Pool
 
 1. **Name of Algorithm**  
-   Thread Pool
 
-2. **What problem does it solve? (1 sentence)**  
-   Manages a reusable set of worker threads to execute many short-lived tasks without spawning new threads each time.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Keep a pool of threads waiting on a work queue; dispatch tasks to idle threads for execution.
 
-4. **Inputs & Outputs**  
-   - Input: Task queue, pool size, worker threads, synchronization primitives.  
-   - Output: Completed tasks with controlled concurrency level.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Initialize pool with N worker threads.
-2. Workers wait for tasks on a blocking queue.
-3. Clients submit tasks to the queue.
-4. Worker picks up task, executes it, then waits for next task.
-5. Pool manages scaling, timeouts, and graceful shutdown.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Java ExecutorService processes HTTP requests using a fixed thread pool.
 
-7. **Time & Space Complexity**  
-   - Time: Task dispatch O(1) amortized.  
-   - Space: O(N + queue_size) for threads and pending tasks.
+```
+Thread Pool Flowchart:
 
-8. **Strengths**  
-- Reduces overhead of thread creation/destruction.
-- Controls resource usage by limiting concurrent threads.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Improper sizing can cause latency or resource waste.
-- Tasks must be well-behaved (no blocking forever).
 
-10. **Compare with alternatives**  
-    Alternatives: Event Loop, Reactive Streams, Fork/Join Framework
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Pre-create a set of worker threads that repeatedly fetch tasks from a queue, improving throughput and resource control.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Thread Pool Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_02/lecture_12_concurrency_patterns/thread_pool/algorithm.py)
+- [Java Implementation](semester_02/lecture_12_concurrency_patterns/thread_pool/Algorithm.java)
+- [Python Tests](semester_02/lecture_12_concurrency_patterns/thread_pool/test_algorithm.py)
+

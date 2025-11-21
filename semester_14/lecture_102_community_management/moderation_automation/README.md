@@ -1,6 +1,91 @@
 # Community Moderation Automation
 
 1. **Name of Algorithm**  
+
+## Code Files
+
+
+## Algorithm Visualization
+
+### Flowchart (ASCII)
+
+
+```
+Community Moderation Automation Flowchart:
+
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
+
+
+### Step-by-Step Execution
+
+
+```
+Community Moderation Automation Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_14/lecture_102_community_management/moderation_automation/algorithm.py)
+- [Java Implementation](semester_14/lecture_102_community_management/moderation_automation/Algorithm.java)
+- [Python Tests](semester_14/lecture_102_community_management/moderation_automation/test_algorithm.py)
+
+
    Community Moderation Automation
 
 2. **What problem does it solve? (1 sentence)**  

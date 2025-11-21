@@ -1,45 +1,87 @@
 # Encryption
 
 1. **Name of Algorithm**  
-   Encryption
 
-2. **What problem does it solve? (1 sentence)**  
-   Transforms readable data (plaintext) into unreadable form (ciphertext) to protect confidentiality, ensuring only authorized parties can decrypt.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like a secret code: scramble data using a key so only those with the key can unscramble and read it.
 
-4. **Inputs & Outputs**  
-- Input: Plaintext data, encryption key, encryption algorithm (symmetric or asymmetric).
-   - Output: Ciphertext (encrypted data) and optionally initialization vector (IV) or nonce.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Select encryption algorithm (AES, RSA, ChaCha20, etc.).
-2. Generate or use existing encryption key.
-3. For symmetric: use same key for encryption/decryption.
-4. For asymmetric: use public key to encrypt, private key to decrypt.
-5. Apply encryption algorithm to produce ciphertext.
-6. Store/transmit ciphertext; decrypt with corresponding key when needed.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Encrypt 'Hello' with AES-256: plaintext → ciphertext 'a3f9b2c1...' using key. Decrypt with same key → 'Hello'.
 
-7. **Time & Space Complexity**  
-   - Time: Symmetric: O(n) for n bytes; Asymmetric: O(n·k) where k is key size.  
-   - Space: O(n) for ciphertext (similar to plaintext size, plus IV/nonce overhead).
+```
+Encryption Flowchart:
 
-8. **Strengths**  
-- Protects data confidentiality at rest and in transit.
-- Industry-standard algorithms (AES, RSA) are well-tested.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Key management complexity (generation, storage, rotation).
-- Performance overhead, especially for asymmetric encryption.
 
-10. **Compare with alternatives**  
-    Alternatives: Symmetric Encryption (AES), Asymmetric Encryption (RSA, ECC), Hybrid Encryption
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Converts plaintext to ciphertext using cryptographic algorithms and keys, ensuring data remains confidential and can only be read by authorized parties with the decryption key.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Encryption Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_04/lecture_14_security_patterns/encryption/algorithm.py)
+- [Java Implementation](semester_04/lecture_14_security_patterns/encryption/Algorithm.java)
+- [Python Tests](semester_04/lecture_14_security_patterns/encryption/test_algorithm.py)
+

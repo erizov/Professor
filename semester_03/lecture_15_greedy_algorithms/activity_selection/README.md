@@ -1,43 +1,87 @@
 # Activity Selection
 
 1. **Name of Algorithm**  
-   Activity Selection
 
-2. **What problem does it solve? (1 sentence)**  
-   Selects the maximum number of non-overlapping activities from a set, where each activity has a start and finish time.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Greedily choose the activity that finishes earliest: it leaves the most time for remaining activities, maximizing total count.
 
-4. **Inputs & Outputs**  
-   - Input: List of activities, each with start_time and finish_time.  
-   - Output: Maximum-size set of non-overlapping activities.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Sort activities by finish_time (ascending).
-2. Initialize selected = [first activity].
-3. For each remaining activity: if its start_time >= finish_time of last selected, add it to selected.
-4. Return selected set.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Activities: (1,4), (3,5), (0,6), (5,7), (8,9). Sorted: (1,4), (3,5), (0,6), (5,7), (8,9). Selected: (1,4), (5,7), (8,9) = 3 activities.
 
-7. **Time & Space Complexity**  
-   - Time: O(n log n) for sorting, O(n) for selection = O(n log n) total.  
-   - Space: O(n) for storing activities and result.
+```
+Activity Selection Flowchart:
 
-8. **Strengths**  
-- Simple greedy approach with optimal solution.
-- Efficient O(n log n) time complexity.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Assumes activities are sorted (or requires sorting).
-- Only maximizes count, not total duration or value.
 
-10. **Compare with alternatives**  
-    Alternatives: Weighted Activity Selection (DP), Interval Scheduling (variants), Greedy with different criteria
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Greedily selects activities that finish earliest, leaving maximum time for future selections and guaranteeing optimal count.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Activity Selection Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_03/lecture_15_greedy_algorithms/activity_selection/algorithm.py)
+- [Java Implementation](semester_03/lecture_15_greedy_algorithms/activity_selection/Algorithm.java)
+- [Python Tests](semester_03/lecture_15_greedy_algorithms/activity_selection/test_algorithm.py)
+

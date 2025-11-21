@@ -1,45 +1,87 @@
 # ARIMA (AutoRegressive Integrated Moving Average)
 
 1. **Name of Algorithm**  
-   ARIMA (AutoRegressive Integrated Moving Average)
 
-2. **What problem does it solve? (1 sentence)**  
-   Models time series data by combining autoregressive (AR), differencing (I), and moving average (MA) components to capture trends, seasonality, and noise for forecasting.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like predicting tomorrow's weather: use past values (AR), account for trends by looking at changes (I), and smooth out noise using averages (MA) to forecast future values.
 
-4. **Inputs & Outputs**  
-   - Input: Time series data, AR order (p), differencing order (d), MA order (q), seasonal parameters (optional).  
-   - Output: Fitted ARIMA model and forecasts for future time points with confidence intervals.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Check stationarity: if non-stationary, apply differencing (d times) to make it stationary.
-2. Identify AR order (p): how many past values to use for prediction.
-3. Identify MA order (q): how many past forecast errors to use.
-4. Estimate model parameters using maximum likelihood estimation.
-5. Validate model: check residuals for white noise (no patterns).
-6. Forecast future values using fitted model with prediction intervals.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Stock prices: non-stationary → difference once (d=1) → ARIMA(1,1,1): uses yesterday's price change (AR) and yesterday's forecast error (MA) → forecast: price tomorrow = today's price + predicted change ± confidence interval.
 
-7. **Time & Space Complexity**  
-   - Time: O(n²) for parameter estimation where n is time series length.  
-   - Space: O(n) for storing time series data and model parameters.
+```
+ARIMA (AutoRegressive Integrated Moving Average) Flowchart:
 
-8. **Strengths**  
-- Interpretable model with clear statistical foundation.
-- Handles trends and seasonality effectively.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Requires manual parameter selection (p, d, q).
-- Assumes linear relationships and may miss complex patterns.
 
-10. **Compare with alternatives**  
-    Alternatives: LSTM/GRU, Prophet, Exponential Smoothing, SARIMA (seasonal ARIMA)
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Models time series by combining autoregressive terms, differencing for stationarity, and moving average terms, providing interpretable forecasts with statistical guarantees.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+ARIMA (AutoRegressive Integrated Moving Average) Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_05/lecture_30_time_series/arima/algorithm.py)
+- [Java Implementation](semester_05/lecture_30_time_series/arima/Algorithm.java)
+- [Python Tests](semester_05/lecture_30_time_series/arima/test_algorithm.py)
+

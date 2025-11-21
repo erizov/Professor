@@ -1,44 +1,87 @@
 # Fibonacci Heap
 
 1. **Name of Algorithm**  
-   Fibonacci Heap
 
-2. **What problem does it solve? (1 sentence)**  
-   Provides extremely fast decrease-key and merge operations for advanced graph algorithms like Dijkstra's.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   A lazy heap: it defers organizing work until absolutely necessary, making most operations very fast on average.
 
-4. **Inputs & Outputs**  
-   - Input: Sequence of insert, extract-min, decrease-key, and merge operations.  
-   - Output: Amortized O(1) insert and decrease-key, O(log n) extract-min.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Maintain a collection of heap-ordered trees (forest).
-2. Insert: add new single-node tree to forest, O(1).
-3. Extract-min: remove min root, merge its children into forest, consolidate trees of same degree, O(log n).
-4. Decrease-key: update node, cut from parent if violates heap property, mark parent, O(1) amortized.
-5. Merge: combine two forests, O(1).
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Forest with trees of degrees 0,1,2. Insert creates degree-0 tree. Extract-min consolidates: merge same-degree trees.
 
-7. **Time & Space Complexity**  
-   - Time: O(1) amortized insert/decrease-key/merge, O(log n) amortized extract-min.  
-   - Space: O(n) with additional pointers for decrease-key operations.
+```
+Fibonacci Heap Flowchart:
 
-8. **Strengths**  
-- Fastest known heap for decrease-key operations.
-- Enables O(m + n log n) Dijkstra's algorithm.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Complex implementation with many pointer manipulations.
-- Large constant factors make it slower than binary heap for small inputs.
 
-10. **Compare with alternatives**  
-    Alternatives: Binary Heap, Binomial Heap, Pairing Heap
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    A sophisticated heap that delays consolidation work, achieving O(1) decrease-key for graph algorithms.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Fibonacci Heap Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_01/lecture_07_heaps_priority/fibonacci_heap/algorithm.py)
+- [Java Implementation](semester_01/lecture_07_heaps_priority/fibonacci_heap/Algorithm.java)
+- [Python Tests](semester_01/lecture_07_heaps_priority/fibonacci_heap/test_algorithm.py)
+

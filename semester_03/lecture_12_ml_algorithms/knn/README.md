@@ -1,44 +1,87 @@
 # K-Nearest Neighbors (KNN)
 
 1. **Name of Algorithm**  
-   K-Nearest Neighbors (KNN)
 
-2. **What problem does it solve? (1 sentence)**  
-   Classifies or predicts by finding k most similar training examples and using their labels or values.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Ask your k closest neighbors what they think; the majority vote or average becomes your answer.
 
-4. **Inputs & Outputs**  
-   - Input: Training dataset, query point, and parameter k (number of neighbors).  
-   - Output: Class label (classification) or predicted value (regression) for the query point.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Compute distance from query point to all training points.
-2. Select k training points with smallest distances.
-3. For classification: return majority class among k neighbors.
-4. For regression: return mean (or weighted mean) of k neighbors' values.
-5. Optionally use distance-weighted voting for better accuracy.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Classify point (3,4) with k=3: nearest neighbors are [(2,3)→A, (4,5)→A, (1,6)→B] → majority A → predict class A.
 
-7. **Time & Space Complexity**  
-   - Time: O(n·d) for each query, where n is training size and d is dimensions.  
-   - Space: O(n·d) to store training data.
+```
+K-Nearest Neighbors (KNN) Flowchart:
 
-8. **Strengths**  
-- Simple, non-parametric, and effective for non-linear problems.
-- No training phase; learns from data lazily.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Slow prediction on large datasets.
-- Sensitive to irrelevant features and curse of dimensionality.
 
-10. **Compare with alternatives**  
-    Alternatives: Decision Trees, Support Vector Machines, Neural Networks
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Find the k closest examples in feature space and use their outcomes to make a prediction for the new point.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+K-Nearest Neighbors (KNN) Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_03/lecture_12_ml_algorithms/knn/algorithm.py)
+- [Java Implementation](semester_03/lecture_12_ml_algorithms/knn/Algorithm.java)
+- [Python Tests](semester_03/lecture_12_ml_algorithms/knn/test_algorithm.py)
+

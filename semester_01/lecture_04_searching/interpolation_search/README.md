@@ -1,44 +1,98 @@
 # Interpolation Search
 
 1. **Name of Algorithm**  
-   Interpolation Search
 
-2. **What problem does it solve? (1 sentence)**  
-   Searches uniformly distributed sorted data by estimating the likely position of the target.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Instead of always probing the middle, interpolate where the target might land based on value range.
 
-4. **Inputs & Outputs**  
-   - Input: Sorted list with roughly uniform distribution and the target.  
-   - Output: Index or -1.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Maintain low and high indices.
-2. Estimate pos = low + (target - arr[low]) * (high - low) / (arr[high] - arr[low]).
-3. If arr[pos] equals target, return pos.
-4. If target < arr[pos], move high to pos - 1; else move low to pos + 1.
-5. Repeat until low > high or value found.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   In [10,20,30,40,50], searching 40 calculates pos near index 3 immediately.
 
-7. **Time & Space Complexity**  
-   - Time: O(log log n) average on uniform data, O(n) worst if distribution is skewed.  
-   - Space: O(1).
+```
+Interpolation Search Flowchart:
 
-8. **Strengths**  
-- Fewer probes than binary search on uniform keys.
-- Still simple arithmetic and comparisons.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Get search │
+│    target   │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Check     ├──────┐
+│  current   │      │
+│  element?  │      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│   Move to   │      │
+│   next      │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│   Found?    │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Performance collapses on clustered data.
-- Requires numeric keys with known range.
 
-10. **Compare with alternatives**  
-    Alternatives: Binary Search, Jump Search, Exponential Search
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Guess where the target should live based on proportional distance, probe there, and tighten the bounds.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Interpolation Search Step-by-Step Execution:
+
+Array: [1, 3, 5, 7, 9, 11]
+Target: 7
+
+Step 1: Check middle (index 2, value 5)
+[1, 3, 5, 7, 9, 11]
+         ↑
+5 < 7, search right
+
+Step 2: Check middle of right half (index 4, value 9)
+[7, 9, 11]
+    ↑
+9 > 7, search left
+
+Step 3: Check remaining (index 3, value 7)
+[7]
+ ↑
+Found! Index 3
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Get search target]
+    Init --> Check{Check current element}
+    Check -->|Match| Found([Found])
+    Check -->|No match| Next[Move to next]
+    Next --> More{More elements?}
+    More -->|Yes| Check
+    More -->|No| NotFound([Not Found])
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_01/lecture_04_searching/interpolation_search/algorithm.py)
+- [Java Implementation](semester_01/lecture_04_searching/interpolation_search/Algorithm.java)
+- [Python Tests](semester_01/lecture_04_searching/interpolation_search/test_algorithm.py)
+

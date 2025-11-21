@@ -1,45 +1,87 @@
 # Canary Deployment
 
 1. **Name of Algorithm**  
-   Canary Deployment
 
-2. **What problem does it solve? (1 sentence)**  
-   Gradually rolls out new version to a small subset of users, monitors for issues, then expands to full deployment if successful.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like canaries in coal mines: test new version on small group first (canary), if safe, expand to everyone; if problems, stop and rollback.
 
-4. **Inputs & Outputs**  
-   - Input: New application version, traffic routing rules, monitoring tools, user segmentation.  
-   - Output: Gradually deployed new version with risk mitigation and monitoring.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Deploy new version alongside current version.
-2. Route small percentage of traffic (e.g., 5%) to new version.
-3. Monitor metrics (error rates, latency, business metrics).
-4. If metrics acceptable, gradually increase traffic percentage (10%, 25%, 50%, 100%).
-5. If issues detected, route traffic back to old version.
-6. Complete rollout or rollback based on monitoring.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Deploy v2.0, route 5% of users to it. Monitor: if error rate < 1%, increase to 25%, then 50%, then 100%. If errors spike, revert to v1.0.
 
-7. **Time & Space Complexity**  
-   - Time: O(n) where n is number of rollout stages (gradual process).  
-   - Space: O(n) for maintaining both versions during transition.
+```
+Canary Deployment Flowchart:
 
-8. **Strengths**  
-- Low-risk gradual rollout.
-- Early detection of issues with minimal impact.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Requires traffic routing infrastructure.
-- Slower than blue-green deployment.
 
-10. **Compare with alternatives**  
-    Alternatives: Blue-Green Deployment, Rolling Deployment, Feature Flags
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Gradually exposes new version to increasing traffic percentages while monitoring for issues, enabling safe, risk-mitigated deployments.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Canary Deployment Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_04/lecture_16_deployment_patterns/canary/algorithm.py)
+- [Java Implementation](semester_04/lecture_16_deployment_patterns/canary/Algorithm.java)
+- [Python Tests](semester_04/lecture_16_deployment_patterns/canary/test_algorithm.py)
+

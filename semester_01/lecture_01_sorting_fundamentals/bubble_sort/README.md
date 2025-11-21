@@ -1,44 +1,117 @@
 # Bubble Sort
 
 1. **Name of Algorithm**  
-   Bubble Sort
 
-2. **What problem does it solve? (1 sentence)**  
-   Orders a short list of comparable values by repeatedly swapping out-of-order neighbors.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Imagine shaking a list so adjacent items compare and the heavier ones slowly drift to the end each pass.
 
-4. **Inputs & Outputs**  
-   - Input: Array or list of comparable elements.  
-   - Output: Same collection arranged in non-decreasing order.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Start at the first index.
-2. Compare the current element with the next element.
-3. Swap if the pair is out of order.
-4. Move one position forward and repeat until the pass ends.
-5. Shrink the unsorted tail and loop until a pass produces no swaps.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   [5, 3, 2] → swap 5/3 ⇒ [3, 5, 2]; swap 5/2 ⇒ [3, 2, 5]; next pass swaps 3/2 ⇒ [2, 3, 5].
+```
+Bubble Sort Flowchart:
 
-7. **Time & Space Complexity**  
-   - Time: O(n²) average/worst, O(n) best when already sorted.  
-   - Space: O(1) extra space.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│ Initialize  │
+│   array     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Compare    ├──────┐
+│  elements?  │      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│   Swap if   │      │
+│  needed     │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│   Sorted?   │
+└──────┬──────┘
+       │ No
+       └──────┐
+              │
+       Yes    │
+       │      │
+       ▼      ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-8. **Strengths**  
-- Simple to code and reason about.
-- Detects nearly-sorted input quickly if optimized to stop early.
+### Flowchart (SVG)
 
-9. **Weaknesses / limitations**  
-- Quadratic runtime makes it impractical for medium or large inputs.
-- Performs many redundant comparisons.
+![Bubble Sort Flowchart](semester_01/lecture_01_sorting_fundamentals/bubble_sort/visualizations/flowchart.svg)
 
-10. **Compare with alternatives**  
-    Alternatives: Insertion Sort, Selection Sort, Merge Sort
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Keep comparing neighbors so misplaced values crawl to the edges; repeat until no swaps happen.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Bubble Sort Step-by-Step Execution:
+
+Input: [5, 3, 2, 8, 1]
+
+Pass 1:
+[5, 3, 2, 8, 1]
+ ↑  ↑
+Swap: 5 > 3
+[3, 5, 2, 8, 1]
+    ↑  ↑
+Swap: 5 > 2
+[3, 2, 5, 8, 1]
+       ↑  ↑
+No swap: 5 < 8
+[3, 2, 5, 8, 1]
+          ↑  ↑
+Swap: 8 > 1
+Result: [3, 2, 5, 1, 8]
+
+Pass 2:
+[3, 2, 5, 1, 8]
+ ↑  ↑
+Swap: 3 > 2
+[2, 3, 5, 1, 8]
+    ↑  ↑
+No swap: 3 < 5
+[2, 3, 5, 1, 8]
+       ↑  ↑
+Swap: 5 > 1
+Result: [2, 3, 1, 5, 8]
+
+Final: [1, 2, 3, 5, 8]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize array]
+    Init --> Compare{Compare elements}
+    Compare -->|Yes| Swap[Swap if needed]
+    Swap --> Check{More elements?}
+    Check -->|Yes| Compare
+    Check -->|No| Sorted{Array sorted?}
+    Sorted -->|No| Compare
+    Sorted -->|Yes| End([End])
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_01/lecture_01_sorting_fundamentals/bubble_sort/algorithm.py)
+- [Java Implementation](semester_01/lecture_01_sorting_fundamentals/bubble_sort/Algorithm.java)
+- [Python Tests](semester_01/lecture_01_sorting_fundamentals/bubble_sort/test_algorithm.py)
+

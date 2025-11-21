@@ -1,45 +1,87 @@
 # Mocking
 
 1. **Name of Algorithm**  
-   Mocking
 
-2. **What problem does it solve? (1 sentence)**  
-   Replaces real dependencies with fake implementations during testing to isolate the unit under test and control test behavior.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like using a stunt double in movies: replace real actors (dependencies) with stand-ins (mocks) to test scenes (units) in isolation.
 
-4. **Inputs & Outputs**  
-   - Input: Unit under test, dependencies to mock, expected behaviors and return values.  
-   - Output: Isolated unit tests with controlled dependency behavior.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Identify external dependencies (databases, APIs, services).
-2. Create mock objects that implement dependency interfaces.
-3. Configure mock behavior (return values, exceptions, call counts).
-4. Inject mocks into unit under test.
-5. Execute test and verify interactions with mocks.
-6. Assert expected calls and behaviors occurred.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Test user service: mock database to return fake user data, mock email service to verify email sent, test user creation logic in isolation.
 
-7. **Time & Space Complexity**  
-   - Time: O(1) for mock setup and execution (faster than real dependencies).  
-   - Space: O(1) for mock objects (minimal memory overhead).
+```
+Mocking Flowchart:
 
-8. **Strengths**  
-- Enables fast, isolated unit testing.
-- Removes dependency on external systems.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Mocks may not reflect real dependency behavior.
-- Over-mocking can make tests brittle.
 
-10. **Compare with alternatives**  
-    Alternatives: Stubs, Fakes, Test Doubles, Dependency Injection
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Uses fake implementations of dependencies to isolate units under test, enabling fast, controlled testing without external systems.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Mocking Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_04/lecture_15_testing_patterns/mocking/algorithm.py)
+- [Java Implementation](semester_04/lecture_15_testing_patterns/mocking/Algorithm.java)
+- [Python Tests](semester_04/lecture_15_testing_patterns/mocking/test_algorithm.py)
+

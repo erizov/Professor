@@ -1,6 +1,91 @@
 # Pipeline Parallelism
 
 1. **Name of Algorithm**  
+
+## Code Files
+
+
+## Algorithm Visualization
+
+### Flowchart (ASCII)
+
+
+```
+Pipeline Parallelism Flowchart:
+
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
+
+
+### Step-by-Step Execution
+
+
+```
+Pipeline Parallelism Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_10/lecture_65_llm_training_advanced/pipeline_parallelism/algorithm.py)
+- [Java Implementation](semester_10/lecture_65_llm_training_advanced/pipeline_parallelism/Algorithm.java)
+- [Python Tests](semester_10/lecture_65_llm_training_advanced/pipeline_parallelism/test_algorithm.py)
+
+
    Pipeline Parallelism
 
 2. **What problem does it solve? (1 sentence)**  

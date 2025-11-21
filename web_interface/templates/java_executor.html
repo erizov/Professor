@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Algorithm Executor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .controls {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr auto;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .control-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #555;
+            font-size: 14px;
+        }
+        
+        select, input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            align-self: flex-end;
+            transition: background 0.2s;
+        }
+        
+        button:hover {
+            background: #0056b3;
+        }
+        
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        
+        .output-section {
+            margin-top: 30px;
+        }
+        
+        .output-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .output-title {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .execution-time {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .output-box {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        
+        .output-box.success {
+            border-color: #28a745;
+            background: #d4edda;
+        }
+        
+        .output-box.error {
+            border-color: #dc3545;
+            background: #f8d7da;
+        }
+        
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #007bff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .algorithm-list {
+            margin-top: 20px;
+        }
+        
+        .algorithm-item {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .algorithm-item:hover {
+            background: #f8f9fa;
+        }
+        
+        .algorithm-item.selected {
+            background: #e7f3ff;
+            border-color: #007bff;
+        }
+        
+        .algorithm-name {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .algorithm-path {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Java Algorithm Executor</h1>
+        <p class="subtitle">Execute any Java algorithm from a unified interface</p>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="semester">Semester</label>
+                <select id="semester">
+                    <option value="">All Semesters</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="lecture">Lecture</label>
+                <select id="lecture">
+                    <option value="">All Lectures</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="algorithm">Algorithm</label>
+                <select id="algorithm">
+                    <option value="">Select Algorithm</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label>&nbsp;</label>
+                <button id="executeBtn" onclick="executeAlgorithm()">Execute</button>
+            </div>
+        </div>
+        
+        <div class="output-section">
+            <div class="output-header">
+                <span class="output-title">Output</span>
+                <span class="execution-time" id="executionTime"></span>
+            </div>
+            <div class="output-box" id="output">Select an algorithm and click Execute to run it.</div>
+        </div>
+    </div>
+    
+    <script>
+        let algorithms = [];
+        
+        // Load algorithms on page load
+        async function loadAlgorithms() {
+            try {
+                const response = await fetch('/api/java/algorithms');
+                const data = await response.json();
+                
+                if (data.success) {
+                    algorithms = data.algorithms;
+                    populateFilters();
+                }
+            } catch (error) {
+                console.error('Error loading algorithms:', error);
+            }
+        }
+        
+        function populateFilters() {
+            // Populate semester filter
+            const semesters = [...new Set(algorithms.map(a => a.semester))].sort();
+            const semesterSelect = document.getElementById('semester');
+            semesters.forEach(sem => {
+                const option = document.createElement('option');
+                option.value = sem;
+                option.textContent = sem;
+                semesterSelect.appendChild(option);
+            });
+            
+            // Update lecture filter when semester changes
+            semesterSelect.addEventListener('change', updateLectures);
+            document.getElementById('lecture').addEventListener('change', updateAlgorithms);
+        }
+        
+        function updateLectures() {
+            const semester = document.getElementById('semester').value;
+            const lectureSelect = document.getElementById('lecture');
+            lectureSelect.innerHTML = '<option value="">All Lectures</option>';
+            
+            const lectures = [...new Set(
+                algorithms
+                    .filter(a => !semester || a.semester === semester)
+                    .map(a => a.lecture)
+            )].sort();
+            
+            lectures.forEach(lec => {
+                const option = document.createElement('option');
+                option.value = lec;
+                option.textContent = lec;
+                lectureSelect.appendChild(option);
+            });
+            
+            updateAlgorithms();
+        }
+        
+        function updateAlgorithms() {
+            const semester = document.getElementById('semester').value;
+            const lecture = document.getElementById('lecture').value;
+            const algorithmSelect = document.getElementById('algorithm');
+            algorithmSelect.innerHTML = '<option value="">Select Algorithm</option>';
+            
+            const filtered = algorithms.filter(a => {
+                if (semester && a.semester !== semester) return false;
+                if (lecture && a.lecture !== lecture) return false;
+                return true;
+            });
+            
+            filtered.forEach(algo => {
+                const option = document.createElement('option');
+                option.value = algo.path;
+                option.textContent = `${algo.algorithm} (${algo.semester}/${algo.lecture})`;
+                algorithmSelect.appendChild(option);
+            });
+        }
+        
+        async function executeAlgorithm() {
+            const algorithmPath = document.getElementById('algorithm').value;
+            if (!algorithmPath) {
+                alert('Please select an algorithm');
+                return;
+            }
+            
+            const outputBox = document.getElementById('output');
+            const executeBtn = document.getElementById('executeBtn');
+            const executionTime = document.getElementById('executionTime');
+            
+            // Show loading state
+            executeBtn.disabled = true;
+            executeBtn.innerHTML = '<span class="loading"></span>Executing...';
+            outputBox.className = 'output-box';
+            outputBox.textContent = 'Executing algorithm...';
+            executionTime.textContent = '';
+            
+            try {
+                const response = await fetch('/api/java/execute', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        path: algorithmPath,
+                        timeout: 60
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    outputBox.className = 'output-box success';
+                    outputBox.textContent = data.stdout || '(No output)';
+                    if (data.stderr) {
+                        outputBox.textContent += '\n\n--- STDERR ---\n' + data.stderr;
+                    }
+                } else {
+                    outputBox.className = 'output-box error';
+                    outputBox.textContent = `Error: ${data.error || data.stderr || 'Unknown error'}`;
+                }
+                
+                executionTime.textContent = `Execution time: ${data.execution_time.toFixed(3)}s`;
+                
+            } catch (error) {
+                outputBox.className = 'output-box error';
+                outputBox.textContent = `Error: ${error.message}`;
+            } finally {
+                executeBtn.disabled = false;
+                executeBtn.textContent = 'Execute';
+            }
+        }
+        
+        // Load algorithms on page load
+        loadAlgorithms();
+    </script>
+</body>
+</html>
+

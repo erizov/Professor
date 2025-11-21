@@ -1,44 +1,87 @@
 # Publish-Subscribe (Pub/Sub)
 
 1. **Name of Algorithm**  
-   Publish-Subscribe (Pub/Sub)
 
-2. **What problem does it solve? (1 sentence)**  
-   Enables one-to-many message distribution where publishers send messages to topics, and multiple subscribers receive copies independently.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like a radio station: broadcaster (publisher) sends to a channel (topic), and all listeners (subscribers) tuned to that channel receive the message.
 
-4. **Inputs & Outputs**  
-   - Input: Messages published to topics, subscriber subscriptions to topics.  
-   - Output: Message delivery to all subscribers of a topic.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Publisher sends message to a topic (not specific subscribers).
-2. Message broker routes message to all subscribers of that topic.
-3. Each subscriber receives independent copy of message.
-4. Subscribers process messages asynchronously.
-5. Broker handles delivery guarantees (at-least-once, exactly-once).
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   News system: publisher sends 'Breaking News' to 'news' topic; email service, SMS service, and push notification service all receive and process.
 
-7. **Time & Space Complexity**  
-   - Time: Publish: O(1) to O(s) where s is number of subscribers; Subscribe: O(1).  
-   - Space: O(n·s) for n messages and s subscribers (each gets copy).
+```
+Publish-Subscribe (Pub/Sub) Flowchart:
 
-8. **Strengths**  
-- Loose coupling between publishers and subscribers.
-- Easy to add/remove subscribers without affecting publishers.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- No direct feedback from subscribers to publishers.
-- Message delivery guarantees vary by implementation.
 
-10. **Compare with alternatives**  
-    Alternatives: Message Queue (point-to-point), Event Streaming, Observer Pattern
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Decouples publishers from subscribers through topics, enabling broadcast-style messaging where multiple subscribers receive the same message.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Publish-Subscribe (Pub/Sub) Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_03/lecture_13_integration_patterns/publish_subscribe/algorithm.py)
+- [Java Implementation](semester_03/lecture_13_integration_patterns/publish_subscribe/Algorithm.java)
+- [Python Tests](semester_03/lecture_13_integration_patterns/publish_subscribe/test_algorithm.py)
+

@@ -1,45 +1,87 @@
 # Bagging (Bootstrap Aggregating)
 
 1. **Name of Algorithm**  
-   Bagging (Bootstrap Aggregating)
 
-2. **What problem does it solve? (1 sentence)**  
-   Reduces variance and overfitting by training multiple models on different bootstrap samples of the training data and averaging their predictions.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like asking multiple experts who saw different parts of a situation: each trains on a different random sample, then combine their opinions (average) for a more stable, reliable answer.
 
-4. **Inputs & Outputs**  
-- Input: Training dataset, base learning algorithm, number of models (bootstrap samples).
-   - Output: Ensemble model that averages predictions from multiple base models.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Create B bootstrap samples by randomly sampling with replacement from training data.
-2. Train a base model on each bootstrap sample independently.
-3. For regression: average predictions from all B models.
-4. For classification: use majority voting or average class probabilities.
-5. Each model sees ~63% of unique training examples (bootstrap sampling).
-6. Out-of-bag samples (~37%) can be used for validation.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Random Forest: 100 decision trees, each trained on different bootstrap sample → predict class → majority vote → final prediction. Reduces variance compared to single tree.
 
-7. **Time & Space Complexity**  
-   - Time: O(B·T(n)) where B is number of models, T(n) is training time per model (parallelizable).  
-   - Space: O(B·M) where M is model size (stores B models).
+```
+Bagging (Bootstrap Aggregating) Flowchart:
 
-8. **Strengths**  
-- Reduces variance and overfitting effectively.
-- Models can be trained in parallel.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Does not reduce bias (if base model is biased, ensemble is too).
-- Requires more memory and computation than single model.
 
-10. **Compare with alternatives**  
-    Alternatives: Boosting, Stacking, Random Forest (specialized bagging), Single Model
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Trains multiple models on bootstrap samples and averages their predictions, reducing variance and improving generalization through model diversity.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Bagging (Bootstrap Aggregating) Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_05/lecture_26_ensemble_methods/bagging/algorithm.py)
+- [Java Implementation](semester_05/lecture_26_ensemble_methods/bagging/Algorithm.java)
+- [Python Tests](semester_05/lecture_26_ensemble_methods/bagging/test_algorithm.py)
+

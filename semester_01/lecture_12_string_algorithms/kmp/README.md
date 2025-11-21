@@ -1,44 +1,87 @@
 # Knuth-Morris-Pratt (KMP)
 
 1. **Name of Algorithm**  
-   Knuth-Morris-Pratt (KMP)
 
-2. **What problem does it solve? (1 sentence)**  
-   Finds all occurrences of a pattern string in a text string efficiently by avoiding redundant character comparisons.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   When a mismatch occurs, use knowledge of already-matched characters to skip ahead intelligently instead of restarting from scratch.
 
-4. **Inputs & Outputs**  
-   - Input: Text string T (length n) and pattern string P (length m).  
-   - Output: List of starting indices where P appears in T.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Preprocess pattern P to build a failure function (longest proper prefix that is also a suffix).
-2. Initialize text pointer i=0 and pattern pointer j=0.
-3. If T[i] == P[j], advance both pointers.
-4. If mismatch: if j>0, set j = failure[j-1] (don't move i); else advance i.
-5. If j reaches m, found a match at i-m; reset j using failure function and continue.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Text "ABABDABACDABABC", pattern "ABABC": failure=[0,0,1,2,0]. Match at index 10.
 
-7. **Time & Space Complexity**  
-   - Time: O(n+m) - linear in combined length.  
-   - Space: O(m) for failure function.
+```
+Knuth-Morris-Pratt (KMP) Flowchart:
 
-8. **Strengths**  
-- Linear time complexity, no backtracking in text.
-- Efficient for multiple pattern searches.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Requires preprocessing step.
-- More complex than naive string matching.
 
-10. **Compare with alternatives**  
-    Alternatives: Boyer-Moore, Rabin-Karp, Aho-Corasick
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Precompute where to resume matching after a failure, so the text pointer never moves backward.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Knuth-Morris-Pratt (KMP) Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_01/lecture_12_string_algorithms/kmp/algorithm.py)
+- [Java Implementation](semester_01/lecture_12_string_algorithms/kmp/Algorithm.java)
+- [Python Tests](semester_01/lecture_12_string_algorithms/kmp/test_algorithm.py)
+

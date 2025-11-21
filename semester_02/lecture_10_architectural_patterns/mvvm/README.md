@@ -1,44 +1,87 @@
 # Model-View-ViewModel (MVVM)
 
 1. **Name of Algorithm**  
-   Model-View-ViewModel (MVVM)
 
-2. **What problem does it solve? (1 sentence)**  
-   Decouples UI rendering from presentation logic using data binding between views and view-models.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   ViewModel exposes observable state; the view binds to it and updates automatically when data changes.
 
-4. **Inputs & Outputs**  
-   - Input: Model (domain data), ViewModel (presentation state + commands), View (UI components with bindings).  
-   - Output: Responsive UI that reflects ViewModel changes without manual wiring.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Wrap models in ViewModel objects exposing observable properties.
-2. Define commands/actions in the ViewModel.
-3. Bind view controls to ViewModel properties and commands.
-4. Update ViewModel in response to user input; binding updates view automatically.
-5. Synchronize ViewModel changes back to models as needed.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   WPF app: ViewModel exposes ObservableCollection<Todo>, view binds ListBox.ItemsSource; adding an item updates UI instantly.
 
-7. **Time & Space Complexity**  
-   - Time: Depends on underlying model operations.  
-   - Space: Depends on number of ViewModels and bindings.
+```
+Model-View-ViewModel (MVVM) Flowchart:
 
-8. **Strengths**  
-- Great for data-binding frameworks (WPF, SwiftUI, Android).
-- Facilitates unit testing of presentation logic.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Requires binding infrastructure; not ideal for simple UIs.
-- Two-way binding can obscure data flow.
 
-10. **Compare with alternatives**  
-    Alternatives: MVC, MVP, Redux-style state management
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Expose presentation logic via observable ViewModels so UI updates automatically when data changes and vice versa.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Model-View-ViewModel (MVVM) Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_02/lecture_10_architectural_patterns/mvvm/algorithm.py)
+- [Java Implementation](semester_02/lecture_10_architectural_patterns/mvvm/Algorithm.java)
+- [Python Tests](semester_02/lecture_10_architectural_patterns/mvvm/test_algorithm.py)
+

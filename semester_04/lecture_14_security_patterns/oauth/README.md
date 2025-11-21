@@ -1,45 +1,87 @@
 # OAuth 2.0
 
 1. **Name of Algorithm**  
-   OAuth 2.0
 
-2. **What problem does it solve? (1 sentence)**  
-   Enables third-party applications to obtain limited access to user resources without exposing user credentials, using authorization tokens.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like a hotel key card: instead of giving your master key (password) to every service, issue temporary access cards (tokens) with specific permissions.
 
-4. **Inputs & Outputs**  
-   - Input: Client application, resource owner (user), authorization server, resource server, scopes (permissions).  
-   - Output: Access token and optionally refresh token for accessing protected resources.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Client redirects user to authorization server with client ID and requested scopes.
-2. User authenticates and grants/denies permission.
-3. Authorization server redirects back to client with authorization code.
-4. Client exchanges authorization code for access token (with client secret).
-5. Client uses access token to access protected resources from resource server.
-6. Optionally refresh token to obtain new access token when expired.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Photo app wants access to user's Google photos: user authorizes → Google issues token → app uses token to fetch photos without user's password.
 
-7. **Time & Space Complexity**  
-   - Time: O(1) for token validation; O(n) for authorization flow (multiple HTTP requests).  
-   - Space: O(1) for token storage; O(n) for client and user registrations.
+```
+OAuth 2.0 Flowchart:
 
-8. **Strengths**  
-- No password sharing: users don't expose credentials to third parties.
-- Fine-grained permissions through scopes.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Complex flow with multiple parties and security considerations.
-- Token management complexity (expiration, refresh, revocation).
 
-10. **Compare with alternatives**  
-    Alternatives: SAML, OpenID Connect, API Keys, JWT Bearer Tokens
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Delegates authorization to a trusted server that issues tokens to third-party applications, allowing resource access without password sharing.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+OAuth 2.0 Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_04/lecture_14_security_patterns/oauth/algorithm.py)
+- [Java Implementation](semester_04/lecture_14_security_patterns/oauth/Algorithm.java)
+- [Python Tests](semester_04/lecture_14_security_patterns/oauth/test_algorithm.py)
+

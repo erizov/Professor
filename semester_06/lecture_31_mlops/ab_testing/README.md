@@ -1,47 +1,87 @@
 # A/B Testing
 
 1. **Name of Algorithm**  
-   A/B Testing
 
-2. **What problem does it solve? (1 sentence)**  
-Compares two or more variants (A, B, etc.) of a model, feature, or system to determine which performs better using statistical hypothesis testing, enabling data-driven decision making.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-Like a scientific experiment: split users into groups, show each group a different version (A or B), measure outcomes, and use statistics to determine which version is truly better, not just due to random chance.
 
-4. **Inputs & Outputs**  
-   - Input: User traffic, variant assignments (A/B), success metrics (conversion rate, click-through rate, etc.), sample size, significance level.  
-   - Output: Statistical test results (p-value, confidence intervals), recommendation on which variant to deploy.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Randomly assign users to control (A) and treatment (B) groups.
-2. Run experiment for sufficient duration to collect statistically significant sample size.
-3. Collect metrics: conversion rates, engagement, revenue, etc. for each group.
-4. Calculate test statistic (e.g., difference in means, chi-square for proportions).
-5. Perform statistical test (t-test, z-test, chi-square) to compute p-value.
-6. Compare p-value to significance level (α, typically 0.05): if p < α, reject null hypothesis (variants differ).
-7. Calculate confidence intervals for effect size.
-8. Make decision: deploy winning variant if statistically significant and practically meaningful.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   E-commerce: 10,000 users → 5,000 see old checkout (A), 5,000 see new checkout (B) → A: 2% conversion, B: 2.5% conversion → t-test: p=0.01 < 0.05 → B is significantly better → deploy B.
 
-7. **Time & Space Complexity**  
-   - Time: O(n) where n is number of users/events (linear in data collection).  
-   - Space: O(n) for storing user assignments and metrics.
+```
+A/B Testing Flowchart:
 
-8. **Strengths**  
-- Provides statistical rigor for decision making.
-- Reduces risk of deploying changes that hurt performance.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Requires sufficient sample size and time.
-- May not capture long-term effects or edge cases.
 
-10. **Compare with alternatives**  
-    Alternatives: Multi-armed Bandits, Canary Deployments, Shadow Testing, Simulation
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Uses controlled experiments with statistical hypothesis testing to compare variants and make data-driven decisions about which version performs better.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+A/B Testing Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_06/lecture_31_mlops/ab_testing/algorithm.py)
+- [Java Implementation](semester_06/lecture_31_mlops/ab_testing/Algorithm.java)
+- [Python Tests](semester_06/lecture_31_mlops/ab_testing/test_algorithm.py)
+

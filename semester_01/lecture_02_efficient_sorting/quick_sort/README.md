@@ -1,43 +1,115 @@
 # Quick Sort
 
 1. **Name of Algorithm**  
-   Quick Sort
 
-2. **What problem does it solve? (1 sentence)**  
-Efficient in-place sort that partitions around a pivot and recursively sorts partitions.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Pick a pivot, move smaller items left and larger right, then repeat on the two sides.
 
-4. **Inputs & Outputs**  
-   - Input: Array of comparable values.  
-   - Output: Array sorted ascending or descending based on comparator.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Choose a pivot element.
-2. Partition the array so items < pivot go left, > pivot go right.
-3. Recursively quick sort the left partition.
-5. Concatenate left + pivot + right segments.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   [9, 4, 7, 3] with pivot 7 ⇒ [4, 3 | 7 | 9] ⇒ sort left [4, 3] ⇒ [3, 4]; right [9] stays ⇒ [3, 4, 7, 9].
 
-7. **Time & Space Complexity**  
-   - Time: O(n log n) average, O(n²) worst if pivots are poor.  
-   - Space: O(log n) recursion stack average.
+```
+Quick Sort Flowchart:
 
-8. **Strengths**  
-- In-place and typically very fast.
-- Cache-friendly sequential memory access.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│ Initialize  │
+│   array     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Compare    ├──────┐
+│  elements?  │      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│   Swap if   │      │
+│  needed     │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│   Sorted?   │
+└──────┬──────┘
+       │ No
+       └──────┐
+              │
+       Yes    │
+       │      │
+       ▼      ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Worst-case quadratic when pivots are unbalanced.
-- Not stable by default.
 
-10. **Compare with alternatives**  
-    Alternatives: Merge Sort, Heap Sort, IntroSort
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Divide around an intelligently chosen pivot so the partitions shrink quickly, leading to near-logarithmic depth.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Quick Sort Step-by-Step Execution:
+
+Input: [5, 3, 2, 8, 1]
+
+Pass 1:
+[5, 3, 2, 8, 1]
+ ↑  ↑
+Swap: 5 > 3
+[3, 5, 2, 8, 1]
+    ↑  ↑
+Swap: 5 > 2
+[3, 2, 5, 8, 1]
+       ↑  ↑
+No swap: 5 < 8
+[3, 2, 5, 8, 1]
+          ↑  ↑
+Swap: 8 > 1
+Result: [3, 2, 5, 1, 8]
+
+Pass 2:
+[3, 2, 5, 1, 8]
+ ↑  ↑
+Swap: 3 > 2
+[2, 3, 5, 1, 8]
+    ↑  ↑
+No swap: 3 < 5
+[2, 3, 5, 1, 8]
+       ↑  ↑
+Swap: 5 > 1
+Result: [2, 3, 1, 5, 8]
+
+Final: [1, 2, 3, 5, 8]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize array]
+    Init --> Compare{Compare elements}
+    Compare -->|Yes| Swap[Swap if needed]
+    Swap --> Check{More elements?}
+    Check -->|Yes| Compare
+    Check -->|No| Sorted{Array sorted?}
+    Sorted -->|No| Compare
+    Sorted -->|Yes| End([End])
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_01/lecture_02_efficient_sorting/quick_sort/algorithm.py)
+- [Java Implementation](semester_01/lecture_02_efficient_sorting/quick_sort/Algorithm.java)
+- [Python Tests](semester_01/lecture_02_efficient_sorting/quick_sort/test_algorithm.py)
+

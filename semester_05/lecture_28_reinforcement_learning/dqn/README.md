@@ -1,46 +1,87 @@
 # Deep Q-Network (DQN)
 
 1. **Name of Algorithm**  
-   Deep Q-Network (DQN)
 
-2. **What problem does it solve? (1 sentence)**  
-   Approximates the Q-value function with a deep neural network, enabling Q-learning to scale to high-dimensional state spaces like raw images.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Replace the Q-table with a neural network that predicts action values from pixels, while using replay buffers and target networks to stabilize learning.
 
-4. **Inputs & Outputs**  
-   - Input: State observations (e.g., image frames), action space, replay buffer, hyperparameters (learning rate, γ, ε for ε-greedy).  
-   - Output: Trained Q-network Q(s,a; θ) that estimates expected return for each action; derived policy selects argmax_a Q(s,a).
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Initialize Q-network with random weights θ and target network with weights θ⁻ = θ.
-2. Interact with environment using ε-greedy policy; store transitions (s,a,r,s′,done) in replay buffer.
-3. Sample mini-batches from replay buffer.
-4. Compute target y = r + γ(1−done) max_{a′} Q(s′,a′; θ⁻).
-5. Minimize loss (y − Q(s,a; θ))² via gradient descent.
-6. Periodically update target network weights θ⁻ ← θ.
-7. Decay ε over time to shift from exploration to exploitation.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Atari Breakout: input 84×84×4 frames; network outputs Q-values for joystick moves; DQN learns to control paddle and break bricks achieving human-level scores.
 
-7. **Time & Space Complexity**  
-   - Time: O(B·f) per update where B is batch size and f is network forward/backward cost; overall depends on number of environment steps.  
-   - Space: O(|θ| + buffer_size) for network weights and replay memory (often 1e6 transitions).
+```
+Deep Q-Network (DQN) Flowchart:
 
-8. **Strengths**  
-- Handles high-dimensional inputs (images) without handcrafted features.
-- Replay buffer decorrelates data, improving sample efficiency.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Only supports discrete action spaces.
-- Sensitive to hyperparameters; can suffer from overestimation bias.
 
-10. **Compare with alternatives**  
-    Alternatives: Double DQN, Dueling DQN, Actor-Critic, PPO
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Uses a neural network to approximate Q-values combined with experience replay and target networks to stabilize Q-learning in complex environments.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Deep Q-Network (DQN) Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_05/lecture_28_reinforcement_learning/dqn/algorithm.py)
+- [Java Implementation](semester_05/lecture_28_reinforcement_learning/dqn/Algorithm.java)
+- [Python Tests](semester_05/lecture_28_reinforcement_learning/dqn/test_algorithm.py)
+

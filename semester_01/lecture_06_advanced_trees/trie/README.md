@@ -1,44 +1,93 @@
 # Trie
 
 1. **Name of Algorithm**  
-   Trie
 
-2. **What problem does it solve? (1 sentence)**  
-   Efficiently stores and searches strings with shared prefixes, enabling fast prefix matching and autocomplete.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like a phone book organized by first letter, then second, then third: each level narrows down the search.
 
-4. **Inputs & Outputs**  
-   - Input: Set of strings (words, keys) and query operations (insert, search, prefix match).  
-   - Output: Tree structure where each path from root to node represents a string prefix.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Root represents empty string.
-2. Each node has children for each possible next character.
-3. Insert: traverse/create path for each character, mark end node.
-4. Search: follow path character by character, check if end marker exists.
-5. Prefix search: traverse to prefix node, collect all descendants.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Insert 'cat', 'car': root → 'c' → 'a' → 't' (end) and 'a' → 'r' (end). Search 'car': follow c-a-r, found.
 
-7. **Time & Space Complexity**  
-   - Time: O(m) per operation where m is key length (assuming fixed alphabet).  
-   - Space: O(ALPHABET_SIZE × number_of_nodes); can be optimized with compression.
+```
+Trie Flowchart:
 
-8. **Strengths**  
-- Fast prefix queries and lexicographic enumeration.
-- Supports autocomplete, spell-check, and dictionary applications.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│    root     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Node       ├──────┐
+│  exists?    │      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Process    │      │
+│   node      │      │
+└──────┬──────┘      │
+       │             │
+       ▼             │
+┌─────────────┐      │
+│  Traverse   │      │
+│  children   │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- High memory usage for sparse datasets.
-- Does not inherently store ordering beyond lexicographic traversal.
 
-10. **Compare with alternatives**  
-    Alternatives: Hash Table, Ternary Search Tree, Radix Tree
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Store strings character by character so common prefixes share nodes, allowing quick prefix-based lookups.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Trie Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_01/lecture_06_advanced_trees/trie/algorithm.py)
+- [Java Implementation](semester_01/lecture_06_advanced_trees/trie/Algorithm.java)
+- [Python Tests](semester_01/lecture_06_advanced_trees/trie/test_algorithm.py)
+

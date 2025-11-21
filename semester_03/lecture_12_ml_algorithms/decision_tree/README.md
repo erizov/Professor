@@ -1,44 +1,93 @@
 # Decision Tree
 
 1. **Name of Algorithm**  
-   Decision Tree
 
-2. **What problem does it solve? (1 sentence)**  
-   Builds a tree structure that makes decisions by splitting data on feature values to classify or predict outcomes.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like a flowchart: ask yes/no questions about features, branch based on answers, and reach a conclusion at the leaves.
 
-4. **Inputs & Outputs**  
-   - Input: Training dataset with features and labels (classification) or target values (regression).  
-   - Output: Tree model that can classify new instances or predict continuous values.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Start with root node containing all training data.
-2. For each node, find the best feature and threshold to split on (maximize information gain or minimize Gini impurity).
-3. Create child nodes for each split outcome.
-4. Recursively build subtrees until stopping criteria (max depth, min samples, pure nodes).
-5. Assign class label or value to leaf nodes based on majority class or mean value.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Classify fruit: if color=red and size>5cm → apple; if color=yellow → banana; else → orange.
 
-7. **Time & Space Complexity**  
-   - Time: O(n·m·log n) for training, where n is samples and m is features.  
-   - Space: O(n·m) for storing tree structure.
+```
+Decision Tree Flowchart:
 
-8. **Strengths**  
-- Interpretable and easy to visualize.
-- Handles non-linear relationships and feature interactions.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│    root     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Node       ├──────┐
+│  exists?    │      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Process    │      │
+│   node      │      │
+└──────┬──────┘      │
+       │             │
+       ▼             │
+┌─────────────┐      │
+│  Traverse   │      │
+│  children   │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Prone to overfitting without regularization.
-- Sensitive to small data changes (unstable).
 
-10. **Compare with alternatives**  
-    Alternatives: Random Forest, Gradient Boosting, Neural Networks
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Recursively partition data by asking questions about features until reaching pure groups that can be labeled.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Decision Tree Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_03/lecture_12_ml_algorithms/decision_tree/algorithm.py)
+- [Java Implementation](semester_03/lecture_12_ml_algorithms/decision_tree/Algorithm.java)
+- [Python Tests](semester_03/lecture_12_ml_algorithms/decision_tree/test_algorithm.py)
+

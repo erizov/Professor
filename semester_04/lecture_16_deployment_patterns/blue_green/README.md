@@ -1,45 +1,87 @@
 # Blue-Green Deployment
 
 1. **Name of Algorithm**  
-   Blue-Green Deployment
 
-2. **What problem does it solve? (1 sentence)**  
-   Deploys new version alongside current version, then switches traffic to new version, enabling zero-downtime deployments and instant rollback.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like having two identical theaters: run show in blue theater, prepare new show in green theater, then switch audience to green when ready.
 
-4. **Inputs & Outputs**  
-   - Input: Current production environment (blue), new application version, traffic routing configuration.  
-   - Output: Deployed new version with zero downtime and rollback capability.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Deploy new version to green environment (parallel to blue).
-2. Run smoke tests on green environment.
-3. Switch traffic routing from blue to green.
-4. Monitor green environment for issues.
-5. If problems detected, route traffic back to blue (instant rollback).
-6. Keep blue as backup or decommission after validation period.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Deploy v2.0 to green servers while v1.0 runs on blue. Test green, then update load balancer to route traffic to green. If errors occur, revert to blue.
 
-7. **Time & Space Complexity**  
-   - Time: O(1) for traffic switch (instantaneous).  
-   - Space: O(2n) for maintaining two full environments simultaneously.
+```
+Blue-Green Deployment Flowchart:
 
-8. **Strengths**  
-- Zero-downtime deployments.
-- Instant rollback capability.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Requires double infrastructure capacity.
-- Database migration complexity.
 
-10. **Compare with alternatives**  
-    Alternatives: Canary Deployment, Rolling Deployment, Recreate Deployment
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Maintains two identical production environments (blue and green), deploying new version to one while the other serves traffic, then switching instantly.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Blue-Green Deployment Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_04/lecture_16_deployment_patterns/blue_green/algorithm.py)
+- [Java Implementation](semester_04/lecture_16_deployment_patterns/blue_green/Algorithm.java)
+- [Python Tests](semester_04/lecture_16_deployment_patterns/blue_green/test_algorithm.py)
+

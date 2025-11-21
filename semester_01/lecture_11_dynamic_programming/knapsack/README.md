@@ -1,44 +1,92 @@
 # 0/1 Knapsack
 
 1. **Name of Algorithm**  
-   0/1 Knapsack
 
-2. **What problem does it solve? (1 sentence)**  
-   Selects items with weights and values to maximize value without exceeding capacity, using each item at most once.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Build solutions bottom-up: for each item, choose to take it or leave it based on remaining capacity and value gain.
 
-4. **Inputs & Outputs**  
-   - Input: List of item weights and values plus knapsack capacity W.  
-   - Output: Maximum achievable value and optionally the chosen item set.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Create DP table dp[i][w] = best value using first i items and capacity w.
-2. Initialize base row/column with zeros.
-3. For each item i and capacity w: if weight[i] > w, copy dp[i-1][w]; otherwise take max(dp[i-1][w], value[i] + dp[i-1][w-weight[i]]).
-4. Fill table row by row to capacity W.
-5. Trace back from dp[n][W] to recover chosen items.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   Items {(2,3),(3,4),(4,5)}, capacity 5. Optimal takes items 1 and 2 for value 7.
 
-7. **Time & Space Complexity**  
-   - Time: O(nW) where n items and capacity W.  
-   - Space: O(nW) table or O(W) with rolling array optimization.
+```
 
-8. **Strengths**  
-- Deterministic optimal solution when W is moderate.
-- Classic DP illustrating trade-offs in subset selection problems.
+### Flowchart (SVG)
 
-9. **Weaknesses / limitations**  
-- Pseudo-polynomial: runtime grows with numeric capacity.
-- Not suitable when fractional choices are allowed.
+![0/1 Knapsack Flowchart](semester_01/lecture_11_dynamic_programming/knapsack/visualizations/flowchart.svg)
 
-10. **Compare with alternatives**  
-    Alternatives: Fractional Knapsack, Branch and Bound, Meet-in-the-middle
+0/1 Knapsack Flowchart:
 
-11. **30-second explanation (your own words)**  
-    Dynamic programming weighs the value of including each item versus skipping it, constrained by the remaining capacity.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+### Step-by-Step Execution
+
+
+```
+0/1 Knapsack Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_01/lecture_11_dynamic_programming/knapsack/algorithm.py)
+- [Java Implementation](semester_01/lecture_11_dynamic_programming/knapsack/Algorithm.java)
+- [Python Tests](semester_01/lecture_11_dynamic_programming/knapsack/test_algorithm.py)
+

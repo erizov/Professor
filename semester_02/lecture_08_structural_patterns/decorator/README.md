@@ -1,44 +1,87 @@
 # Decorator Pattern
 
 1. **Name of Algorithm**  
-   Decorator Pattern
 
-2. **What problem does it solve? (1 sentence)**  
-   Adds responsibilities to objects dynamically without subclass explosion.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Like wrapping a gift multiple times: each wrapper adds behavior while still exposing the same interface.
 
-4. **Inputs & Outputs**  
-   - Input: Base component with optional features (logging, caching, compression).  
-   - Output: Decorator classes implementing the same interface and holding a reference to the wrapped component.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Define a Component interface implemented by the base class.
-2. Create Decorator base class implementing Component and storing a Component reference.
-3. Implement concrete decorators that augment behavior before/after delegating.
-4. Wrap components with decorators at runtime to compose features.
-5. Ensure removal/reordering of decorators remains simple.
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   DataSource decorated with CompressionDecorator then EncryptionDecorator before writing to disk.
 
-7. **Time & Space Complexity**  
-   - Time: Adds linear overhead proportional to number of decorators.  
-   - Space: O(k) extra objects for k decorators.
+```
+Decorator Pattern Flowchart:
 
-8. **Strengths**  
-- Flexible combination of features at runtime.
-- Avoids deep inheritance hierarchies.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Debugging stack of decorators can be tricky.
-- Many small objects increase complexity.
 
-10. **Compare with alternatives**  
-    Alternatives: Proxy Pattern, Aspect-Oriented Programming, Subclassing
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Wrap an object with other objects conforming to the same interface to add responsibilities dynamically.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Decorator Pattern Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_02/lecture_08_structural_patterns/decorator/algorithm.py)
+- [Java Implementation](semester_02/lecture_08_structural_patterns/decorator/Algorithm.java)
+- [Python Tests](semester_02/lecture_08_structural_patterns/decorator/test_algorithm.py)
+

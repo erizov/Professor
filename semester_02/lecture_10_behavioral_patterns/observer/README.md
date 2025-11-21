@@ -1,44 +1,87 @@
 # Observer Pattern
 
 1. **Name of Algorithm**  
-   Observer Pattern
 
-2. **What problem does it solve? (1 sentence)**  
-   Creates a one-to-many dependency so when one object changes state, all dependents are notified automatically.
+## Code Files
 
-3. **Intuition (plain-language explanation)**  
-   Subject keeps a list of observers; when state changes, it broadcasts notifications to each observer.
 
-4. **Inputs & Outputs**  
-   - Input: Subject with observable state and observers that subscribe to updates.  
-   - Output: Observers receive callbacks when the subject changes.
+## Algorithm Visualization
 
-5. **Step-by-step description (5–10 lines max)**  
-1. Define Subject interface with attach/detach/notify.
-2. Observers implement an update method.
-3. Subject maintains list of observers.
-4. When state changes, subject iterates observers and calls update.
-5. Observers react (e.g., refresh UI, trigger workflows).
+### Flowchart (ASCII)
 
-6. **Tiny example (hand-simulated)**  
-   GUI button (subject) notifies multiple listeners when clicked.
 
-7. **Time & Space Complexity**  
-   - Time: O(n) to notify n observers per event.  
-   - Space: O(n) to store observers.
+```
+Observer Pattern Flowchart:
 
-8. **Strengths**  
-- Promotes loose coupling between subject and observers.
-- Supports dynamic number of listeners.
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
 
-9. **Weaknesses / limitations**  
-- Notification order is not guaranteed.
-- Observers can cause cascading updates or memory leaks if not detached.
 
-10. **Compare with alternatives**  
-    Alternatives: Publish-Subscribe, Mediator Pattern, Event Bus
+### Step-by-Step Execution
 
-11. **30-second explanation (your own words)**  
-    Subjects expose subscription hooks so observers can register and automatically receive updates when state changes.
 
-*Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+```
+Observer Pattern Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_02/lecture_10_behavioral_patterns/observer/algorithm.py)
+- [Java Implementation](semester_02/lecture_10_behavioral_patterns/observer/Algorithm.java)
+- [Python Tests](semester_02/lecture_10_behavioral_patterns/observer/test_algorithm.py)
+

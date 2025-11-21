@@ -1,6 +1,91 @@
 # Quantum Calibration
 
 1. **Name of Algorithm**  
+
+## Code Files
+
+
+## Algorithm Visualization
+
+### Flowchart (ASCII)
+
+
+```
+Quantum Calibration Flowchart:
+
+┌─────────────┐
+│   Start     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Initialize │
+│   data      │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐      Yes
+│  Process   ├──────┐
+│  condition?│      │
+└──────┬──────┘      │
+       │ No          │
+       ▼             │
+┌─────────────┐      │
+│  Execute   │      │
+│  operation │      │
+└──────┬──────┘      │
+       │             │
+       └─────────────┘
+       │
+       ▼
+┌─────────────┐
+│    End      │
+└─────────────┘
+```
+
+
+### Step-by-Step Execution
+
+
+```
+Quantum Calibration Step-by-Step Execution:
+
+Input: [example data]
+
+Step 1: Initialize
+State: [initial state]
+
+Step 2: Process
+State: [intermediate state]
+
+Step 3: Finalize
+State: [final state]
+
+Result: [output]
+```
+
+
+### Interactive Flowchart (Mermaid)
+
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process{Process condition}
+    Process -->|True| Execute[Execute operation]
+    Execute --> Done{Complete?}
+    Done -->|No| Process
+    Done -->|Yes| End([End])
+    Process -->|False| End
+```
+
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- [Python Implementation](semester_12/lecture_84_quantum_hardware/quantum_calibration/algorithm.py)
+- [Java Implementation](semester_12/lecture_84_quantum_hardware/quantum_calibration/Algorithm.java)
+- [Python Tests](semester_12/lecture_84_quantum_hardware/quantum_calibration/test_algorithm.py)
+
+
    Quantum Calibration
 
 2. **What problem does it solve? (1 sentence)**  
