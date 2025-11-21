@@ -176,8 +176,8 @@ public class Algorithm {
         double totalArea = 0;
         for (Object[] spec : specs) {
             String type = (String) spec[0];
-            double[] args = (double[]) spec[1];
-            Shape shape = ShapeFactory.createShape(type, args);
+            double[] shapeArgs = (double[]) spec[1];
+            Shape shape = ShapeFactory.createShape(type, shapeArgs);
             logger.info(shape.draw());
             double area = shape.area();
             System.out.printf("  Area: %.2f%n", area);
