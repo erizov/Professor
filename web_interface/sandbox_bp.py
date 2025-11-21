@@ -144,11 +144,9 @@ def create_sandbox():
 
 
 @sandbox_bp.route('/list', methods=['GET'])
+@require_role('student', 'professor', 'admin')
 def list_sandboxes():
     """List all sandboxes for current user."""
-    if 'user_id' not in session:
-        return jsonify({'error': 'Not authenticated'}), 401
-    
     user_id = session['user_id']
     
     conn = sqlite3.connect(DB_PATH)
