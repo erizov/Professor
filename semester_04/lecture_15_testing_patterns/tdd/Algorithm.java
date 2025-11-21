@@ -1,10 +1,5 @@
-/**
 package semester_04.lecture_15_testing_patterns.tdd;
- * Test-Driven Development (TDD) Pattern.
- * 
- * Development approach where tests are written before implementation.
- * Follows Red-Green-Refactor cycle: Write test (Red), Implement (Green), Refactor.
- */
+
 import java.util.*;
 
 import java.util.logging.Logger;
@@ -60,6 +55,8 @@ class Stack<T> {
 }
 
 class TDDTestRunner {
+    private static final Logger logger = Logger.getLogger(TDDTestRunner.class.getName());
+    private static final String dash = "-".repeat(70);
     private int passed = 0;
     private int failed = 0;
     
@@ -138,7 +135,6 @@ class TDDTestRunner {
 
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-
     
     public static void main(String[] args) {
         String separator = "=".repeat(70);
