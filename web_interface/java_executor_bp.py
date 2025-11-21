@@ -136,12 +136,30 @@ def get_algorithm_source(algorithm_path):
     try:
         executor = get_executor()
         
-        algo_info = executor.find_algorithm(path=algorithm_path)
+        # Normalize path separators (handle both / and \)
+        normalized_path = algorithm_path.replace('\\', '/')
+        
+        # Try to find algorithm with normalized path
+        algo_info = executor.find_algorithm(path=normalized_path)
+        
+        # If not found, try with original path
+        if not algo_info:
+            algo_info = executor.find_algorithm(path=algorithm_path)
+        
+        # If still not found, try finding by matching full_path
+        if not algo_info:
+            algorithms = executor.discover_algorithms()
+            for algo in algorithms:
+                # Compare normalized paths
+                algo_path_normalized = algo.full_path.replace('\\', '/')
+                if algo_path_normalized == normalized_path or algo.full_path == algorithm_path:
+                    algo_info = algo
+                    break
         
         if not algo_info:
             return jsonify({
                 'success': False,
-                'error': 'Algorithm not found'
+                'error': f'Algorithm not found: {algorithm_path}'
             }), 404
         
         # Read Java file content
