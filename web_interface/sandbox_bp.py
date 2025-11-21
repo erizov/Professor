@@ -651,8 +651,7 @@ def execute_sandbox(sandbox_id):
                     capture_output=True,
                     text=True,
                     timeout=30,
-                    check=False,
-                    cwd=str(temp_dir)
+                    check=False
                 )
                 
                 if compile_result.returncode != 0:
