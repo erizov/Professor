@@ -50,13 +50,13 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("Vector Clocks");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("Vector Clocks");
+        logger.info("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
         String result = algo.get_clock("");
-        System.out.println("Result: " + result);
-        System.out.println("=".repeat(70));
+        logger.info("Result: " + result);
+        logger.info("=".repeat(70));
     }
 }

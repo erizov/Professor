@@ -43,13 +43,13 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("Bayesian Optimization");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("Bayesian Optimization");
+        logger.info("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
         int result = algo._acquisition_function("", null);
-        System.out.println("Result: " + result);
-        System.out.println("=".repeat(70));
+        logger.info("Result: " + result);
+        logger.info("=".repeat(70));
     }
 }

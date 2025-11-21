@@ -45,13 +45,13 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("Sla Management");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("Sla Management");
+        logger.info("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.define_sla("", null, null);
-        System.out.println("Result: " + result);
-        System.out.println("=".repeat(70));
+        Object result = algo.define_sla("", null, null);
+        logger.info("Result: " + result);
+        logger.info("=".repeat(70));
     }
 }

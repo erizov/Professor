@@ -42,13 +42,13 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("Microkernel Architecture");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("Microkernel Architecture");
+        logger.info("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
         Object result = algo.register_kernel_service("", null);
-        System.out.println("Result: " + result);
-        System.out.println("=".repeat(70));
+        logger.info("Result: " + result);
+        logger.info("=".repeat(70));
     }
 }

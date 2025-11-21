@@ -41,13 +41,13 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("Ai Doc Generation");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("Ai Doc Generation");
+        logger.info("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
         str result = algo.generate_from_code("", "");
-        System.out.println("Result: " + result);
-        System.out.println("=".repeat(70));
+        logger.info("Result: " + result);
+        logger.info("=".repeat(70));
     }
 }

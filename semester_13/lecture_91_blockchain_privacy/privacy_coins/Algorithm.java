@@ -40,13 +40,13 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("Privacy Coins");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("Privacy Coins");
+        logger.info("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
         str result = algo.create_stealth_address("");
-        System.out.println("Result: " + result);
-        System.out.println("=".repeat(70));
+        logger.info("Result: " + result);
+        logger.info("=".repeat(70));
     }
 }

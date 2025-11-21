@@ -38,13 +38,13 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("Quantum Teleportation");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("Quantum Teleportation");
+        logger.info("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
         tuple result = algo.create_entangled_pair();
-        System.out.println("Result: " + result);
-        System.out.println("=".repeat(70));
+        logger.info("Result: " + result);
+        logger.info("=".repeat(70));
     }
 }

@@ -36,13 +36,13 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("Transfer Learning Advanced");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("Transfer Learning Advanced");
+        logger.info("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
         str result = algo.adapt_domain("", "");
-        System.out.println("Result: " + result);
-        System.out.println("=".repeat(70));
+        logger.info("Result: " + result);
+        logger.info("=".repeat(70));
     }
 }

@@ -47,13 +47,13 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("Data Pipeline Ci Cd");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("Data Pipeline Ci Cd");
+        logger.info("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.register_pipeline("", null);
-        System.out.println("Result: " + result);
-        System.out.println("=".repeat(70));
+        Object result = algo.register_pipeline("", null);
+        logger.info("Result: " + result);
+        logger.info("=".repeat(70));
     }
 }

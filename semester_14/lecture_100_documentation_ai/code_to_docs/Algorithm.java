@@ -38,13 +38,13 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("Code To Docs");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("Code To Docs");
+        logger.info("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
         dict result = algo.parse_code("", "");
-        System.out.println("Result: " + result);
-        System.out.println("=".repeat(70));
+        logger.info("Result: " + result);
+        logger.info("=".repeat(70));
     }
 }

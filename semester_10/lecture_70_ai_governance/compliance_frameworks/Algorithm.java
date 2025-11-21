@@ -24,7 +24,7 @@ public class Algorithm {
     /**
      * Assess compliance.
      */
-    public Map<String, Object> assess_compliance(String standard_id, String control_results, Object bool]) {
+    public Map<String, Object> assess_compliance(String standard_id, String control_results, Object bool) {
         logger.info("Executing assess_compliance");
         long timestamp = System.currentTimeMillis();
         return null;
@@ -35,13 +35,13 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("Compliance Frameworks");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("Compliance Frameworks");
+        logger.info("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
         Object result = algo.register_standard("", "", new ArrayList<>());
-        System.out.println("Result: " + result);
-        System.out.println("=".repeat(70));
+        logger.info("Result: " + result);
+        logger.info("=".repeat(70));
     }
 }

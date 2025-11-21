@@ -43,13 +43,13 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("Function As Service");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("Function As Service");
+        logger.info("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
         Object result = algo.register_function("", null);
-        System.out.println("Result: " + result);
-        System.out.println("=".repeat(70));
+        logger.info("Result: " + result);
+        logger.info("=".repeat(70));
     }
 }

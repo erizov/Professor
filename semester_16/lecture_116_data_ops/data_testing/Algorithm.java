@@ -36,13 +36,13 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("Data Testing");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("Data Testing");
+        logger.info("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
         None result = algo.add_test("", null);
-        System.out.println("Result: " + result);
-        System.out.println("=".repeat(70));
+        logger.info("Result: " + result);
+        logger.info("=".repeat(70));
     }
 }

@@ -34,13 +34,13 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("Zero Shot Learning");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("Zero Shot Learning");
+        logger.info("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
         Object result = algo.train(new ArrayList<>(), "", "");
-        System.out.println("Result: " + result);
-        System.out.println("=".repeat(70));
+        logger.info("Result: " + result);
+        logger.info("=".repeat(70));
     }
 }

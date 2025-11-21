@@ -48,7 +48,7 @@ public class Algorithm {
     /**
      * Merge with another CRDT state.
      */
-    public Object merge(String other_state, Object dict], String other_clock, Object int]) {
+    public Object merge(String other_state, Object dict, String other_clock, Object int) {
         logger.info("Executing merge");
         return null;
     }
@@ -58,13 +58,13 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("Crdt");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("Crdt");
+        logger.info("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
         Object result = algo.set_node_id("");
-        System.out.println("Result: " + result);
-        System.out.println("=".repeat(70));
+        logger.info("Result: " + result);
+        logger.info("=".repeat(70));
     }
 }

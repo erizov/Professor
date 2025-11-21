@@ -36,13 +36,13 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("Statistics Management");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("Statistics Management");
+        logger.info("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
         dict result = algo.collect_statistics("", "");
-        System.out.println("Result: " + result);
-        System.out.println("=".repeat(70));
+        logger.info("Result: " + result);
+        logger.info("=".repeat(70));
     }
 }

@@ -16,7 +16,7 @@ public class Algorithm {
     /**
      * Define architecture search space.
      */
-    public Object define_search_space(String space, List<Object> List[any]]) {
+    public Object define_search_space(String space, List<Object> List<Object> any) {
         logger.info("Executing define_search_space");
         return null;
     }
@@ -35,13 +35,13 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("Nas");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("Nas");
+        logger.info("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
         Object result = algo.define_search_space("", new ArrayList<>());
-        System.out.println("Result: " + result);
-        System.out.println("=".repeat(70));
+        logger.info("Result: " + result);
+        logger.info("=".repeat(70));
     }
 }

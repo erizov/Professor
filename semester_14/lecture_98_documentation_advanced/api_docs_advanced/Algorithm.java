@@ -36,13 +36,13 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("Api Docs Advanced");
-        System.out.println("=".repeat(70));
+        logger.info("=".repeat(70));
+        logger.info("Api Docs Advanced");
+        logger.info("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.add_endpoint("", "", null, null);
-        System.out.println("Result: " + result);
-        System.out.println("=".repeat(70));
+        Object result = algo.add_endpoint("", "", null, null);
+        logger.info("Result: " + result);
+        logger.info("=".repeat(70));
     }
 }
