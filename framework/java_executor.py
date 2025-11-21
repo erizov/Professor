@@ -161,13 +161,25 @@ class JavaExecutor:
     def compile_algorithm(self, algorithm_info: AlgorithmInfo) -> Tuple[bool, str]:
         """Compile a Java algorithm."""
         try:
-            result = subprocess.run(
-                ["javac", str(algorithm_info.path)],
-                capture_output=True,
-                text=True,
-                timeout=30,
-                cwd=str(self.root)
-            )
+            # If there's a package, compile with -d to create proper directory structure
+            if algorithm_info.package:
+                # Compile to project root to create package structure
+                result = subprocess.run(
+                    ["javac", "-d", str(self.root), str(algorithm_info.path)],
+                    capture_output=True,
+                    text=True,
+                    timeout=30,
+                    cwd=str(self.root)
+                )
+            else:
+                # No package - compile in place (creates .class in same directory)
+                result = subprocess.run(
+                    ["javac", str(algorithm_info.path)],
+                    capture_output=True,
+                    text=True,
+                    timeout=30,
+                    cwd=str(algorithm_info.path.parent)
+                )
             
             if result.returncode != 0:
                 error_msg = result.stderr or result.stdout or "Compilation failed"
