@@ -644,7 +644,22 @@ def execute_sandbox(sandbox_id):
                 
                 # Compile Java file
                 # Always use -d to create proper directory structure in classes directory
-                compile_cmd = ["javac", "-d", str(temp_class_dir), str(temp_java_file)]
+                # Use sourcepath to help compiler find source files in package structure
+                if package:
+                    # For packaged classes, set sourcepath to temp_dir root
+                    compile_cmd = [
+                        "javac",
+                        "-d", str(temp_class_dir),
+                        "-sourcepath", str(temp_dir),
+                        str(temp_java_file)
+                    ]
+                else:
+                    # For non-packaged classes, simple compilation
+                    compile_cmd = [
+                        "javac",
+                        "-d", str(temp_class_dir),
+                        str(temp_java_file)
+                    ]
                 
                 compile_result = subprocess.run(
                     compile_cmd,
