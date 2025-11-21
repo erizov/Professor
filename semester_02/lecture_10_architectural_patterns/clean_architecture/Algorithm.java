@@ -48,7 +48,7 @@ public class Algorithm {
     /**
      * Execute use case.
      */
-    public Object execute_use_case(String use_case_name, Object *args, Object **kwargs) {
+    public Object execute_use_case(String use_case_name, Object... args) {
         logger.info("Executing execute_use_case");
         return null;
     }
