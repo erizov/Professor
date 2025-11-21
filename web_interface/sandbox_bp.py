@@ -560,6 +560,52 @@ def execute_sandbox(sandbox_id):
         # Use custom code if provided, otherwise use saved version
         code_to_execute = custom_code if (use_custom_code and custom_code) else saved_code
         
+        if not code_to_execute:
+            return jsonify({'error': 'No code to execute'}), 400
+        
+        # Validate code language matches sandbox language
+        # Check for Java keywords/imports (more specific patterns)
+        java_indicators = [
+            'import java.', 
+            'package ', 
+            'public class', 
+            'public static void main',
+            'System.out',
+            'String[] args',
+            'private static',
+            'public static'
+        ]
+        python_indicators = [
+            'def ', 
+            'if __name__',
+            'print(',
+            'import ',
+            'from ',
+            'class ',
+            '    def '  # Indented def (method)
+        ]
+        
+        # Count indicators (more reliable than any())
+        java_count = sum(1 for indicator in java_indicators if indicator in code_to_execute)
+        python_count = sum(1 for indicator in python_indicators if indicator in code_to_execute)
+        
+        # Detect actual language from code
+        detected_language = None
+        if java_count > python_count and java_count > 0:
+            detected_language = 'java'
+        elif python_count > java_count and python_count > 0:
+            detected_language = 'python'
+        
+        # If language mismatch detected, use detected language and warn
+        if detected_language and detected_language != language:
+            # Log warning but proceed with detected language
+            import logging
+            logging.warning(
+                f"Language mismatch for sandbox {sandbox_id}: "
+                f"stored={language}, detected={detected_language}. Using detected language."
+            )
+            language = detected_language
+        
         # Execute using existing executors
         import tempfile
         import os
