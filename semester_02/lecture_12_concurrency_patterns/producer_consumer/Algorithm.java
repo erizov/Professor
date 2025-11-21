@@ -27,7 +27,7 @@ public class Algorithm {
      */
     public Object consume() {
         logger.info("Executing consume");
-        String result = "Consumed: " + item + "";
+        String result = "Consumed: item";
         return "";
     }
 
@@ -41,7 +41,7 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.produce(null);
+        Object result = algo.produce(null);
         System.out.println("Result: " + result);
         System.out.println("=".repeat(70));
     }
