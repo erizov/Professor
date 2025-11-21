@@ -190,10 +190,33 @@ def get_algorithm_source(language, algorithm_path):
         path_variations = [
             normalized_path,
             algorithm_path,
-            normalized_path.replace('semester_', 'semester_0') if 'semester_' in normalized_path and len(normalized_path.split('semester_')[1].split('/')[0]) == 1 else None,
-            normalized_path.replace('semester_0', 'semester_') if 'semester_0' in normalized_path else None,
         ]
-        path_variations = [p for p in path_variations if p]  # Remove None values
+        
+        # Add path with file extension if not present
+        if language == 'java' and not normalized_path.endswith('.java'):
+            path_variations.append(f"{normalized_path}/Algorithm.java")
+            path_variations.append(f"{normalized_path}/algorithm.java")
+        elif language == 'python' and not normalized_path.endswith('.py'):
+            path_variations.append(f"{normalized_path}/algorithm.py")
+        
+        # Handle semester number variations (semester_2 vs semester_02)
+        if 'semester_' in normalized_path:
+            parts = normalized_path.split('/')
+            for i, part in enumerate(parts):
+                if part.startswith('semester_'):
+                    semester_num = part.replace('semester_', '')
+                    if len(semester_num) == 1:
+                        # semester_2 -> semester_02
+                        alt_parts = parts.copy()
+                        alt_parts[i] = f"semester_0{semester_num}"
+                        path_variations.append('/'.join(alt_parts))
+                    elif len(semester_num) == 2 and semester_num.startswith('0'):
+                        # semester_02 -> semester_2
+                        alt_parts = parts.copy()
+                        alt_parts[i] = f"semester_{semester_num[1]}"
+                        path_variations.append('/'.join(alt_parts))
+        
+        path_variations = list(set([p for p in path_variations if p]))  # Remove duplicates and None values
         
         algo_info = None
         for path_var in path_variations:
@@ -202,14 +225,24 @@ def get_algorithm_source(language, algorithm_path):
             if algo_info:
                 break
             
-            # Try finding by matching full_path
+            # Try finding by matching full_path or directory path
             algorithms = executor.discover_algorithms()
             for algo in algorithms:
                 algo_path_normalized = algo.full_path.replace('\\', '/')
+                algo_dir_normalized = str(algo.path.parent.relative_to(ROOT)).replace('\\', '/')
+                
+                # Try exact match
                 if (algo_path_normalized == path_var or 
                     algo.full_path == path_var or
-                    algo_path_normalized.endswith(path_var) or
-                    path_var.endswith(algo_path_normalized)):
+                    algo_dir_normalized == path_var):
+                    algo_info = algo
+                    break
+                
+                # Try endsWith match (path_var is directory, algo.full_path includes file)
+                if (algo_path_normalized.endswith('/' + path_var) or
+                    algo_path_normalized.endswith('\\' + path_var) or
+                    path_var.endswith('/' + algo_dir_normalized) or
+                    path_var.endswith('\\' + algo_dir_normalized)):
                     algo_info = algo
                     break
             if algo_info:
