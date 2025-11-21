@@ -18,12 +18,73 @@
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             padding: 30px;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .code-viewer {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .code-viewer-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .code-viewer-title {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .code-viewer-path {
+            font-size: 12px;
+            color: #666;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .code-box {
+            background: #1e1e1e;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            font-family: 'Courier New', Consolas, 'Liberation Mono', monospace;
+            font-size: 13px;
+            white-space: pre;
+            overflow-x: auto;
+            overflow-y: auto;
+            max-height: 600px;
+            color: #d4d4d4;
+            line-height: 1.5;
+        }
+        
+        .code-box code {
+            color: #d4d4d4;
+        }
+        
+        /* Basic syntax highlighting for Java */
+        .code-box .keyword { color: #569cd6; }
+        .code-box .string { color: #ce9178; }
+        .code-box .comment { color: #6a9955; }
+        .code-box .number { color: #b5cea8; }
+        
+        @media (max-width: 1024px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
         }
         
         h1 {
@@ -211,12 +272,24 @@
             </div>
         </div>
         
-        <div class="output-section">
-            <div class="output-header">
-                <span class="output-title">Output</span>
-                <span class="execution-time" id="executionTime"></span>
+        <div class="main-content">
+            <div class="code-viewer">
+                <div class="code-viewer-header">
+                    <span class="code-viewer-title">Java Source Code</span>
+                    <span class="code-viewer-path" id="codePath"></span>
+                </div>
+                <div class="code-box" id="codeViewer">
+                    <span style="color: #6a9955;">// Select an algorithm to view its source code</span>
+                </div>
             </div>
-            <div class="output-box" id="output">Select an algorithm and click Execute to run it.</div>
+            
+            <div class="output-section">
+                <div class="output-header">
+                    <span class="output-title">Output</span>
+                    <span class="execution-time" id="executionTime"></span>
+                </div>
+                <div class="output-box" id="output">Select an algorithm and click Execute to run it.</div>
+            </div>
         </div>
     </div>
     
@@ -252,6 +325,7 @@
             // Update lecture filter when semester changes
             semesterSelect.addEventListener('change', updateLectures);
             document.getElementById('lecture').addEventListener('change', updateAlgorithms);
+            document.getElementById('algorithm').addEventListener('change', loadSourceCode);
         }
         
         function updateLectures() {
@@ -293,6 +367,36 @@
                 option.textContent = `${algo.algorithm} (${algo.semester}/${algo.lecture})`;
                 algorithmSelect.appendChild(option);
             });
+        }
+        
+        async function loadSourceCode() {
+            const algorithmPath = document.getElementById('algorithm').value;
+            const codeViewer = document.getElementById('codeViewer');
+            const codePath = document.getElementById('codePath');
+            
+            if (!algorithmPath) {
+                codeViewer.innerHTML = '<span style="color: #6a9955;">// Select an algorithm to view its source code</span>';
+                codePath.textContent = '';
+                return;
+            }
+            
+            try {
+                // Normalize path separators
+                const normalizedPath = algorithmPath.replace(/\\/g, '/');
+                const response = await fetch(`/api/java/source/${encodeURIComponent(normalizedPath)}`);
+                const data = await response.json();
+                
+                if (data.success) {
+                    codePath.textContent = data.path;
+                    codeViewer.textContent = data.source;
+                } else {
+                    codeViewer.innerHTML = `<span style="color: #f48771;">Error: ${data.error || 'Could not load source code'}</span>`;
+                    codePath.textContent = '';
+                }
+            } catch (error) {
+                codeViewer.innerHTML = `<span style="color: #f48771;">Error: ${error.message}</span>`;
+                codePath.textContent = '';
+            }
         }
         
         async function executeAlgorithm() {

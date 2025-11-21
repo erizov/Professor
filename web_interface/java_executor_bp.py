@@ -129,3 +129,39 @@ def get_algorithm_info(algorithm_path):
             'error': str(e)
         }), 500
 
+
+@java_executor_bp.route('/source/<path:algorithm_path>', methods=['GET'])
+def get_algorithm_source(algorithm_path):
+    """Get Java source code for an algorithm."""
+    try:
+        executor = get_executor()
+        
+        algo_info = executor.find_algorithm(path=algorithm_path)
+        
+        if not algo_info:
+            return jsonify({
+                'success': False,
+                'error': 'Algorithm not found'
+            }), 404
+        
+        # Read Java file content
+        try:
+            source_code = algo_info.path.read_text(encoding='utf-8')
+            return jsonify({
+                'success': True,
+                'source': source_code,
+                'path': algo_info.full_path,
+                'name': algo_info.name
+            })
+        except Exception as e:
+            return jsonify({
+                'success': False,
+                'error': f'Could not read source file: {str(e)}'
+            }), 500
+        
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
