@@ -206,24 +206,36 @@ def get_test_results():
         seen_keys = set()
         
         for row in rows:
-            key = f"{row[0]}:{row[1]}"
+            # Normalize path separators early (Windows uses backslashes)
+            # Handle both single backslash and escaped backslash
+            raw_path = row[0]
+            if raw_path:
+                # Replace backslashes with forward slashes for consistent matching
+                normalized_path = raw_path.replace("\\", "/").replace("\\\\", "/")
+            else:
+                normalized_path = raw_path
+            
+            key = f"{normalized_path}:{row[1]}"
             
             # Only process the first (latest) record for each algorithm:language
             if key in seen_keys:
                 continue
             seen_keys.add(key)
             
-            # Normalize path separators for lookup (Windows uses backslashes)
-            algo_path = row[0].replace("\\", "/")
-            algo_type = algorithm_types.get(algo_path, "unknown")
+            # Try both normalized and original path for algorithm_type lookup
+            algo_type = algorithm_types.get(normalized_path, "unknown")
+            if algo_type == "unknown" and raw_path != normalized_path:
+                # Try original path as fallback
+                algo_type = algorithm_types.get(raw_path, "unknown")
 
             if algorithm_type_filter and algo_type != algorithm_type_filter:
                 continue
 
             # Create single result entry with latest status only
+            # Use normalized path for display consistency
             results.append(
                 {
-                    "algorithm_path": row[0],
+                    "algorithm_path": normalized_path,
                     "language": row[1],
                     "latest_status": row[2],
                     "latest_timestamp": row[4],
@@ -233,7 +245,7 @@ def get_test_results():
                     "algorithm_type": algo_type,
                     "error_message": row[5] if row[5] else None,
                     "recent_results": [{
-                        "algorithm_path": row[0],
+                        "algorithm_path": normalized_path,
                         "language": row[1],
                         "status": row[2],
                         "duration": row[3],
@@ -337,8 +349,15 @@ def get_test_statistics():
         language_stats = {}
         for row in all_path_rows:
             algo_path, lang, status = row
-            algo_path_normalized = algo_path.replace("\\", "/")
+            # Normalize path separators (handle both single and escaped backslashes)
+            if algo_path:
+                algo_path_normalized = algo_path.replace("\\", "/").replace("\\\\", "/")
+            else:
+                algo_path_normalized = algo_path
+            # Try both normalized and original path for algorithm_type lookup
             algo_type = algorithm_types.get(algo_path_normalized, "unknown")
+            if algo_type == "unknown" and algo_path != algo_path_normalized:
+                algo_type = algorithm_types.get(algo_path, "unknown")
             
             if algorithm_type_filter and algo_type != algorithm_type_filter:
                 continue
