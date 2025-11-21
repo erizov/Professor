@@ -677,11 +677,34 @@ def execute_sandbox(sandbox_id):
                         'execution_time': 0.0
                     })
                 
+                # Verify that .class file was created in the right location
+                if package:
+                    # Check if class file exists in expected location
+                    package_parts = package.split('.')
+                    expected_class_path = temp_class_dir
+                    for part in package_parts:
+                        expected_class_path = expected_class_path / part
+                    expected_class_file = expected_class_path / f"{class_name}.class"
+                    
+                    if not expected_class_file.exists():
+                        # Try to find the class file
+                        found_class_files = list(temp_class_dir.rglob(f"{class_name}.class"))
+                        if found_class_files:
+                            # Use the found location
+                            pass
+                        else:
+                            return jsonify({
+                                'success': False,
+                                'stdout': '',
+                                'stderr': f'Compiled class file not found. Expected: {expected_class_file}',
+                                'execution_time': 0.0
+                            })
+                
                 # Execute compiled class
                 if package:
                     # For packaged classes, use fully qualified name
                     full_class_name = f"{package}.{class_name}"
-                    # Classpath should point to the root of the package structure
+                    # Classpath should point to the root of the package structure (where semester_11/... starts)
                     run_cmd = ["java", "-cp", str(temp_class_dir), full_class_name]
                 else:
                     # For non-packaged classes, use simple class name
