@@ -1,10 +1,5 @@
-/**
 package semester_04.lecture_15_testing_patterns.integration_testing;
- * Integration Testing Pattern.
- * 
- * Tests the integration between different components, modules, or systems
- * to ensure they work together correctly.
- */
+
 import java.util.*;
 
 import java.util.logging.Logger;
@@ -178,6 +173,7 @@ class APIIntegrationTest extends IntegrationTest {
 }
 
 class TestRunner {
+    private static final Logger logger = Logger.getLogger(TestRunner.class.getName());
     private final List<IntegrationTest> tests = new ArrayList<>();
     private final List<TestResult> results = new ArrayList<>();
     
@@ -198,6 +194,7 @@ class TestRunner {
     
     void printResults() {
         logger.info("Integration Test Results:");
+        String dash = "-".repeat(70);
         logger.info(dash);
         
         long passed = results.stream().filter(r -> r.passed).count();
@@ -220,7 +217,6 @@ class TestRunner {
 
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-
     
     public static void main(String[] args) {
         String separator = "=".repeat(70);
