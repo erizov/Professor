@@ -327,7 +327,7 @@
         <div class="controls">
             <div class="control-group">
                 <label for="algorithm-select">Algorithm</label>
-                <select id="algorithm-select">
+                <select id="algorithm-select" onchange="onAlgorithmSelect()">
                     <option value="">Select Algorithm...</option>
                 </select>
             </div>
@@ -425,6 +425,31 @@
                 setTimeout(() => {
                     statusDiv.style.display = 'none';
                 }, 5000);
+            }
+        }
+        
+        async function onAlgorithmSelect() {
+            const algorithmPath = document.getElementById('algorithm-select').value;
+            const language = document.getElementById('language-select').value;
+            
+            if (!algorithmPath) {
+                document.getElementById('code-editor').value = '';
+                return;
+            }
+            
+            // Load original algorithm code to preview
+            try {
+                const response = await fetch(`/api/algorithm/source/${language}/${encodeURIComponent(algorithmPath)}`);
+                const data = await response.json();
+                
+                if (data.success && data.source_code) {
+                    document.getElementById('code-editor').value = data.source_code;
+                    showStatus('info', 'Original algorithm code loaded. Click "Create Sandbox" to create your own copy.');
+                } else {
+                    showStatus('error', 'Could not load algorithm code: ' + (data.error || 'Unknown error'));
+                }
+            } catch (error) {
+                showStatus('error', 'Error loading algorithm code: ' + error.message);
             }
         }
         

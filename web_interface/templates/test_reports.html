@@ -35,6 +35,26 @@
             font-size: 2.5em;
             margin-bottom: 10px;
         }
+        
+        .nav-menu {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        
+        .nav-menu a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
 
         .filters {
             background: white;
@@ -278,6 +298,12 @@
         <div class="header">
             <h1>📊 Test Results Report</h1>
             <p>Comprehensive algorithm test results with search, sorting, and state change tracking</p>
+            <div class="nav-menu">
+                <a href="/">Home</a>
+                <a href="/algorithm-executor">Algorithm Executor</a>
+                <a href="/test-reports">Test Results</a>
+                <a href="/sandbox">Sandbox</a>
+            </div>
         </div>
 
         <div class="filters">
