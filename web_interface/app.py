@@ -104,6 +104,12 @@ def java_executor_page():
     return render_template("java_executor.html")
 
 
+@app.route("/algorithm-executor")
+def algorithm_executor_page():
+    """Unified algorithm executor page (Java and Python)."""
+    return render_template("algorithm_executor.html")
+
+
 @app.route("/api/algorithms")
 def get_algorithms():
     """Get algorithms with filtering and sorting."""
