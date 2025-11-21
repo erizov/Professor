@@ -69,7 +69,7 @@ This repository contains a **complete 16-semester course** (8 undergraduate + 8 
 
 **Code Quality Improvements**:
 - **Java logger standardization**: Replacing `System.out.println/printf` with `logger.info()` for consistent logging
-- **Java compilation fixes**: Automatic fixes for package errors, class name mismatches, missing methods, and syntax errors
+- **Java compilation fixes**: Automatic fixes for package errors, class name mismatches, missing methods, syntax errors, invalid parameter syntax, and Python-style None in Java
 - **Python import fixes**: Automatic correction of import errors and API usage issues
 - **2,800+ successful Java tests** recorded in database
 - **4,700+ total test records** tracked
