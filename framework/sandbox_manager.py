@@ -56,6 +56,23 @@ def get_sandbox_path(
     return sandbox_dir
 
 
+def get_sandbox_dir(user_id: int, sandbox_id: int) -> Path:
+    """
+    Get path to sandbox directory by sandbox ID.
+    This is used when we only have the sandbox_id from the database.
+    
+    Args:
+        user_id: User ID
+        sandbox_id: Sandbox ID from database
+        
+    Returns:
+        Path to sandbox directory
+    """
+    user_dir = create_user_sandbox_dir(user_id)
+    sandbox_dir = user_dir / str(sandbox_id)
+    return sandbox_dir
+
+
 def get_version_path(
     user_id: int,
     algorithm_path: str,
