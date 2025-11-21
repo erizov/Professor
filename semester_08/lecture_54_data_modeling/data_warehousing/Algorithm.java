@@ -1,13 +1,17 @@
-import java.util.*;
+package semester_08.lecture_54_data_modeling.data_warehousing;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.logging.Logger;
-import java.util.logging.Level;
 
 /**
-package semester_08.lecture_54_data_modeling.data_warehousing;
  * Data Warehousing implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
+    private final Map<String, Map<String, Table>> warehouse = new HashMap<>();
 
     public Algorithm() {
         // Initialize
@@ -16,37 +20,46 @@ public class Algorithm {
     /**
      * Create schema.
      */
-    public Object create_schema(String schema_name) {
+    public Map<String, Table> create_schema(String schemaName) {
         logger.info("Executing create_schema");
-        Map<String, Object> result = new HashMap<>();
-        return result;
+        return warehouse.computeIfAbsent(schemaName, key -> new HashMap<>());
     }
 
     /**
      * Create table.
      */
-    public Object create_table(String schema_name, String table_name, List<Object> columns) {
+    public Table create_table(String schemaName, String tableName, List<String> columns) {
         logger.info("Executing create_table");
-        String result = "" + schema_name + ".";
-        return "";
+        Map<String, Table> schema = create_schema(schemaName);
+        Table table = new Table(columns);
+        schema.put(tableName, table);
+        return table;
     }
 
     /**
      * Insert row.
      */
-    public Object insert(String schema_name, String table_name, Object row) {
+    public void insert(String schemaName, String tableName, Map<String, Object> row) {
         logger.info("Executing insert");
-        String result = "" + schema_name + ".";
-        return "";
+        Table table = getTable(schemaName, tableName);
+        table.rows.add(new HashMap<>(row));
     }
 
     /**
      * Query table.
      */
-    public List<Object> query(String schema_name, String table_name, Object filter_func) {
+    public List<Map<String, Object>> query(String schemaName, String tableName) {
         logger.info("Executing query");
-        String result = "" + schema_name + ".";
-        return "";
+        Table table = getTable(schemaName, tableName);
+        return new ArrayList<>(table.rows);
+    }
+
+    private Table getTable(String schemaName, String tableName) {
+        Map<String, Table> schema = warehouse.get(schemaName);
+        if (schema == null || !schema.containsKey(tableName)) {
+            throw new IllegalStateException("Table not found: " + schemaName + "." + tableName);
+        }
+        return schema.get(tableName);
     }
 
     public static Algorithm create() {
@@ -59,8 +72,21 @@ public class Algorithm {
         System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        None result = algo.create_schema("");
-        System.out.println("Result: " + result);
+        algo.create_table("sales", "orders", List.of("id", "amount"));
+        Map<String, Object> row = new HashMap<>();
+        row.put("id", 1);
+        row.put("amount", 199.0);
+        algo.insert("sales", "orders", row);
+        System.out.println("Orders: " + algo.query("sales", "orders"));
         System.out.println("=".repeat(70));
+    }
+
+    private static class Table {
+        private final List<String> columns;
+        private final List<Map<String, Object>> rows = new ArrayList<>();
+
+        Table(List<String> columns) {
+            this.columns = new ArrayList<>(columns);
+        }
     }
 }
