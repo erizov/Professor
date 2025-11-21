@@ -235,6 +235,20 @@
             <p id="sandbox-details"></p>
         </div>
         
+        {% if not read_only %}
+        <div id="sandbox-list-section" class="sandbox-list-section" style="display: none; margin-bottom: 20px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <h3 style="margin: 0; color: #333;">My Sandboxes</h3>
+                <button onclick="toggleSandboxList()" style="background: #6c757d; color: white; border: none; padding: 5px 15px; border-radius: 4px; cursor: pointer;">Hide</button>
+            </div>
+            <div id="sandbox-list-container" style="max-height: 300px; overflow-y: auto; border: 1px solid #ddd; border-radius: 4px; padding: 10px; background: #f8f9fa;">
+                <div id="sandbox-list-content">
+                    <p style="color: #666; text-align: center;">Loading sandboxes...</p>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        
         <div class="controls">
             <div class="control-group">
                 <label for="algorithm-select">Algorithm</label>
@@ -269,7 +283,7 @@
             
             <div class="control-group">
                 <label>&nbsp;</label>
-                <button onclick="loadMySandboxes()" id="load-btn">My Sandboxes</button>
+                <button onclick="toggleSandboxList()" id="load-btn">My Sandboxes</button>
             </div>
             {% else %}
             <div class="control-group" style="grid-column: span 6;">
@@ -516,23 +530,98 @@
             }
         }
         
-        async function loadMySandboxes() {
+        function toggleSandboxList() {
+            const listSection = document.getElementById('sandbox-list-section');
+            if (listSection.style.display === 'none') {
+                listSection.style.display = 'block';
+                loadSandboxList();
+            } else {
+                listSection.style.display = 'none';
+            }
+        }
+        
+        async function loadSandboxList() {
+            const container = document.getElementById('sandbox-list-content');
+            container.innerHTML = '<p style="color: #666; text-align: center;">Loading sandboxes...</p>';
+            
             try {
                 const response = await fetch('/api/sandbox/list');
                 const data = await response.json();
                 
                 if (data.success) {
                     if (data.sandboxes.length === 0) {
-                        showStatus('info', 'You have no sandboxes yet. Create one to get started!');
+                        container.innerHTML = '<p style="color: #666; text-align: center; padding: 20px;">You have no sandboxes yet. Create one to get started!</p>';
                     } else {
-                        const list = data.sandboxes.map(s => 
-                            `${s.algorithm_path} (${s.language}) - v${s.latest_version}`
-                        ).join('\n');
-                        alert(`Your Sandboxes (${data.count}):\n\n${list}`);
+                        container.innerHTML = data.sandboxes.map(sandbox => `
+                            <div class="sandbox-item" onclick="loadSandbox(${sandbox.id})" id="sandbox-item-${sandbox.id}">
+                                <div class="sandbox-item-header">
+                                    <div class="sandbox-item-title">${sandbox.algorithm_path}</div>
+                                    <span class="sandbox-item-language ${sandbox.language}">${sandbox.language}</span>
+                                </div>
+                                <div class="sandbox-item-meta">
+                                    <span>Version: ${sandbox.latest_version}</span>
+                                    <span>Modified: ${new Date(sandbox.last_modified).toLocaleString()}</span>
+                                </div>
+                            </div>
+                        `).join('');
                     }
+                } else {
+                    container.innerHTML = '<p style="color: #dc3545; text-align: center;">Error loading sandboxes</p>';
                 }
             } catch (error) {
-                showStatus('error', 'Error loading sandboxes: ' + error.message);
+                container.innerHTML = `<p style="color: #dc3545; text-align: center;">Error: ${error.message}</p>`;
+            }
+        }
+        
+        async function loadSandbox(sandboxId) {
+            try {
+                // Mark as active
+                document.querySelectorAll('.sandbox-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                const item = document.getElementById(`sandbox-item-${sandboxId}`);
+                if (item) {
+                    item.classList.add('active');
+                }
+                
+                // Load sandbox details
+                const response = await fetch(`/api/sandbox/${sandboxId}`);
+                const data = await response.json();
+                
+                if (data.success) {
+                    currentSandboxId = sandboxId;
+                    currentAlgorithmPath = data.sandbox.algorithm_path;
+                    currentLanguage = data.sandbox.language;
+                    
+                    // Update algorithm selector
+                    const algoSelect = document.getElementById('algorithm-select');
+                    algoSelect.value = currentAlgorithmPath;
+                    
+                    // Update language selector
+                    const langSelect = document.getElementById('language-select');
+                    langSelect.value = currentLanguage;
+                    
+                    // Load code
+                    if (data.current_version) {
+                        document.getElementById('code-editor').value = data.current_version.code_content;
+                    }
+                    
+                    // Enable buttons
+                    document.getElementById('save-btn').disabled = false;
+                    document.getElementById('run-btn').disabled = false;
+                    
+                    // Show sandbox info
+                    showSandboxInfo(currentAlgorithmPath, currentLanguage);
+                    
+                    // Hide list
+                    document.getElementById('sandbox-list-section').style.display = 'none';
+                    
+                    showStatus('success', `Loaded sandbox: ${currentAlgorithmPath} (${currentLanguage})`);
+                } else {
+                    showStatus('error', 'Error loading sandbox: ' + (data.error || 'Unknown error'));
+                }
+            } catch (error) {
+                showStatus('error', 'Error loading sandbox: ' + error.message);
             }
         }
         
