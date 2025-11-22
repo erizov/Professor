@@ -80,7 +80,34 @@ def load_algorithm_types() -> Dict[str, str]:
             FROM algorithms
         """
         )
-        mapping = {row[0]: row[1] for row in cursor.fetchall()}
+        # Create mapping with normalized paths (forward slashes) for both keys
+        # Also handle semester number format variations
+        import re
+        mapping = {}
+        for row in cursor.fetchall():
+            folder_path = row[0]
+            algo_type = row[1]
+            # Normalize path to forward slashes for consistent matching
+            normalized_path = folder_path.replace('\\', '/')
+            # Store with both original and normalized path as keys
+            mapping[folder_path] = algo_type
+            mapping[normalized_path] = algo_type
+            
+            # Also store with semester number format variations
+            semester_pattern = r'semester_(\d+)'
+            match = re.search(semester_pattern, folder_path)
+            if match:
+                semester_num = match.group(1)
+                # If semester_01 format, also store as semester_1
+                if len(semester_num) == 2 and semester_num.startswith('0'):
+                    alt_path = re.sub(semester_pattern, r'semester_' + str(int(semester_num)), folder_path)
+                    mapping[alt_path] = algo_type
+                    mapping[alt_path.replace('\\', '/')] = algo_type
+                # If semester_1 format, also store as semester_01
+                else:
+                    alt_path = re.sub(semester_pattern, r'semester_' + semester_num.zfill(2), folder_path)
+                    mapping[alt_path] = algo_type
+                    mapping[alt_path.replace('\\', '/')] = algo_type
         return mapping
     except Exception:
         return {}
@@ -243,11 +270,57 @@ def get_test_results():
                     continue
                 seen_keys.add(key)
                 
-                # Try both normalized and original path for algorithm_type lookup
-                algo_type = algorithm_types.get(normalized_path, "unknown")
-                if algo_type == "unknown" and raw_path and raw_path != normalized_path:
-                    # Try original path as fallback
-                    algo_type = algorithm_types.get(str(raw_path), "unknown")
+                # Try multiple path variations for algorithm_type lookup
+                algo_type = "unknown"
+                
+                # Helper function to try path variations
+                def try_path_variations(path):
+                    """Try various path format variations."""
+                    if not path:
+                        return None
+                    
+                    variations = [
+                        path,  # Original
+                        path.replace("\\", "/"),  # Normalized
+                        path.replace("/", "\\"),  # With backslashes
+                        path.rstrip("/"),  # No trailing slash
+                        path.rstrip("\\"),  # No trailing backslash
+                        path + "/",  # With trailing slash
+                        path + "\\",  # With trailing backslash
+                    ]
+                    
+                    # Try semester number format variations (semester_01 vs semester_1)
+                    import re
+                    semester_pattern = r'semester_(\d+)'
+                    match = re.search(semester_pattern, path)
+                    if match:
+                        semester_num = match.group(1)
+                        # Try with zero-padded and without
+                        if len(semester_num) == 2 and semester_num.startswith('0'):
+                            # semester_01 -> semester_1
+                            alt_path = re.sub(semester_pattern, r'semester_' + str(int(semester_num)), path)
+                            variations.append(alt_path)
+                            variations.append(alt_path.replace("\\", "/"))
+                            variations.append(alt_path.replace("/", "\\"))
+                        else:
+                            # semester_1 -> semester_01
+                            alt_path = re.sub(semester_pattern, r'semester_' + semester_num.zfill(2), path)
+                            variations.append(alt_path)
+                            variations.append(alt_path.replace("\\", "/"))
+                            variations.append(alt_path.replace("/", "\\"))
+                    
+                    # Try all variations
+                    for variation in variations:
+                        if variation in algorithm_types:
+                            return algorithm_types[variation]
+                    return None
+                
+                # Try normalized path first
+                algo_type = try_path_variations(normalized_path) or "unknown"
+                
+                # Try original path if still unknown
+                if algo_type == "unknown" and raw_path:
+                    algo_type = try_path_variations(raw_path) or "unknown"
 
                 if algorithm_type_filter and algo_type != algorithm_type_filter:
                     continue

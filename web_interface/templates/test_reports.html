@@ -369,6 +369,7 @@
                     <tr>
                         <th class="sortable" data-sort="algorithm_path">Algorithm Path</th>
                         <th class="sortable" data-sort="language">Language</th>
+                        <th>Algorithm Type</th>
                         <th class="sortable" data-sort="status">Status</th>
                         <th class="sortable" data-sort="duration">Duration (s)</th>
                         <th class="sortable" data-sort="timestamp">Last Test</th>
@@ -377,7 +378,7 @@
                 </thead>
                 <tbody id="results-body">
                     <tr>
-                        <td colspan="6" class="loading">Loading test results...</td>
+                        <td colspan="7" class="loading">Loading test results...</td>
                     </tr>
                 </tbody>
             </table>
@@ -464,7 +465,7 @@
                 if (!data.results || data.results.length === 0) {
                     const noResultsRow = document.createElement('tr');
                     const noResultsCell = document.createElement('td');
-                    noResultsCell.colSpan = 6;
+                    noResultsCell.colSpan = 7;
                     noResultsCell.className = 'no-results';
                     noResultsCell.textContent = 'No test results found';
                     noResultsRow.appendChild(noResultsCell);
@@ -611,6 +612,14 @@
                     const languageCell = document.createElement('td');
                     languageCell.innerHTML = `<span class="language-badge">${result.language}</span>`;
                     
+                    const algorithmTypeCell = document.createElement('td');
+                    // algorithm_type is at the result level, not in recent_results
+                    const algoType = result.algorithm_type || 'unknown';
+                    algorithmTypeCell.textContent = algoType;
+                    algorithmTypeCell.style.fontSize = '0.9em';
+                    algorithmTypeCell.style.color = algoType === 'unknown' ? '#999' : '#333';
+                    algorithmTypeCell.style.fontWeight = algoType === 'unknown' ? 'normal' : '500';
+                    
                     const statusCell = document.createElement('td');
                     statusCell.innerHTML = `<span class="status-badge ${result.latest_status}">${result.latest_status}</span>`;
                     
@@ -636,6 +645,7 @@
                     // Append all cells to row
                     row.appendChild(pathCell);
                     row.appendChild(languageCell);
+                    row.appendChild(algorithmTypeCell);
                     row.appendChild(statusCell);
                     row.appendChild(durationCell);
                     row.appendChild(timestampCell);
@@ -651,7 +661,7 @@
                 }
                 const errorRow = document.createElement('tr');
                 const errorCell = document.createElement('td');
-                errorCell.colSpan = 6;
+                errorCell.colSpan = 7;
                 errorCell.className = 'no-results';
                 errorCell.textContent = 'Error loading test results: ' + error.message;
                 errorRow.appendChild(errorCell);

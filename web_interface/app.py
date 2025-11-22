@@ -160,8 +160,21 @@ def get_algorithms():
     semester = request.args.get("semester", "")
     sort_by = request.args.get("sort", "name")  # name, semester, category, complexity
     sort_order = request.args.get("order", "asc")  # asc, desc
-    page = int(request.args.get("page", 1))
-    per_page = int(request.args.get("per_page", 50))
+    
+    # Handle limit parameter (for sandbox and other use cases that need all algorithms)
+    limit_param = request.args.get("limit")
+    if limit_param:
+        try:
+            limit = int(limit_param)
+            # If limit is specified, return all algorithms up to that limit
+            page = 1
+            per_page = limit
+        except ValueError:
+            page = int(request.args.get("page", 1))
+            per_page = int(request.args.get("per_page", 50))
+    else:
+        page = int(request.args.get("page", 1))
+        per_page = int(request.args.get("per_page", 50))
 
     # Build query
     query = """
