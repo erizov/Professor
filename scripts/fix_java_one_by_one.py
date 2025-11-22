@@ -201,6 +201,103 @@ def fix_package_errors(java_file: Path) -> bool:
     return False
 
 
+def validate_and_fix_java_path_package(java_file: Path) -> bool:
+    """
+    Validate and fix Java package/class name against file path.
+    Returns True if any changes were made.
+    """
+    try:
+        content = java_file.read_text(encoding='utf-8')
+        original_content = content
+        modified = False
+        
+        # Get expected package from file path
+        # e.g., semester_01/lecture_01/bubble_sort/Algorithm.java
+        # -> package semester_01.lecture_01.bubble_sort;
+        try:
+            rel_path = java_file.relative_to(ROOT)
+            path_parts = rel_path.parent.parts
+        except ValueError:
+            # If relative_to fails, use absolute path
+            path_parts = java_file.parent.parts
+            # Find the semester_XX part
+            for i, part in enumerate(path_parts):
+                if part.startswith('semester_'):
+                    path_parts = path_parts[i:]
+                    break
+        
+        expected_package = '.'.join(path_parts)
+        expected_class_name = "Algorithm"  # File is Algorithm.java
+        
+        # Extract current package from file
+        package_match = re.search(r'^package\s+([^;]+);', content, re.MULTILINE)
+        current_package = package_match.group(1) if package_match else None
+        
+        # Extract current class name from file
+        class_match = re.search(r'public\s+class\s+(\w+)', content)
+        current_class_name = class_match.group(1) if class_match else None
+        
+        # Check package mismatch
+        if current_package and current_package != expected_package:
+            print(f"  ⚠ Package mismatch: declared '{current_package}', expected '{expected_package}'", flush=True)
+            # Fix package declaration
+            content = re.sub(
+                r'^package\s+[^;]+;',
+                f'package {expected_package};',
+                content,
+                flags=re.MULTILINE
+            )
+            modified = True
+        
+        # Check if package is missing but should exist
+        if not current_package and expected_package:
+            print(f"  ⚠ Missing package declaration, expected '{expected_package}'", flush=True)
+            # Add package declaration
+            lines = content.split('\n')
+            insert_idx = 0
+            for i, line in enumerate(lines):
+                stripped = line.strip()
+                if stripped and not stripped.startswith('//') and not stripped.startswith('/*') and not stripped.startswith('import') and not stripped.startswith('package'):
+                    insert_idx = i
+                    break
+            lines.insert(insert_idx, f'package {expected_package};')
+            content = '\n'.join(lines)
+            modified = True
+        
+        # Check class name mismatch
+        if current_class_name and current_class_name != expected_class_name:
+            print(f"  ⚠ Class name mismatch: declared '{current_class_name}', expected '{expected_class_name}'", flush=True)
+            # Fix class name
+            content = re.sub(
+                rf'public\s+class\s+{re.escape(current_class_name)}\b',
+                f'public class {expected_class_name}',
+                content
+            )
+            # Also fix constructor calls and references
+            content = re.sub(
+                rf'\b{re.escape(current_class_name)}\s*\(',
+                f'{expected_class_name}(',
+                content
+            )
+            content = re.sub(
+                rf'new\s+{re.escape(current_class_name)}\s*\(',
+                f'new {expected_class_name}(',
+                content
+            )
+            modified = True
+        
+        if modified:
+            java_file.write_text(content, encoding='utf-8')
+            print(f"  ✓ Fixed path/package/class name mismatches", flush=True)
+            return True
+        
+        return False
+        
+    except Exception as e:
+        print(f"  ⚠ Error validating path/package: {e}", flush=True)
+        return False
+
+
 def fix_missing_main_method(java_file: Path) -> bool:
     """
     Add a main method if it's missing.
@@ -380,7 +477,11 @@ def fix_compilation_errors(java_file: Path, error_output: str) -> bool:
         
         # Fix: cannot find symbol (missing import or wrong class name)
         if 'cannot find symbol' in error_output.lower():
-            # Try to fix class name mismatch first
+            # First validate path/package/class name
+            if validate_and_fix_java_path_package(java_file):
+                modified = True
+                content = java_file.read_text(encoding='utf-8')
+            # Try to fix class name mismatch
             if fix_class_name_mismatch(java_file):
                 modified = True
                 # Re-read content after fix
@@ -388,6 +489,18 @@ def fix_compilation_errors(java_file: Path, error_output: str) -> bool:
         
         # Fix: class X is public, should be declared in a file named X.java
         if 'is public, should be declared in a file named' in error_output:
+            if fix_class_name_mismatch(java_file):
+                modified = True
+                content = java_file.read_text(encoding='utf-8')
+        
+        # Fix: Could not find or load main class (runtime error)
+        # This happens when main method is missing or class name is wrong
+        if 'could not find or load main class' in error_output.lower() or 'error: could not find or load main class' in error_output.lower():
+            # Try to fix missing main method first
+            if fix_missing_main_method(java_file):
+                modified = True
+                content = java_file.read_text(encoding='utf-8')
+            # Also check if class name matches file name
             if fix_class_name_mismatch(java_file):
                 modified = True
                 content = java_file.read_text(encoding='utf-8')
@@ -680,6 +793,48 @@ def fix_compilation_errors(java_file: Path, error_output: str) -> bool:
                         
                         # Add closing brace for class
                         lines.insert(last_method_end + 1, '}')
+                        modified = True
+            
+            if modified:
+                content = '\n'.join(lines)
+                java_file.write_text(content, encoding='utf-8')
+                content = java_file.read_text(encoding='utf-8')
+        
+        # Fix: Object methods returning null instead of empty object
+        # Check for methods that return Object and have "return null;"
+        if 'public Object' in content or 'public Object ' in content:
+            lines = content.split('\n')
+            in_object_method = False
+            method_start = -1
+            brace_count = 0
+            
+            for i, line in enumerate(lines):
+                # Check if we're entering an Object method
+                if re.search(r'public\s+Object\s+\w+\s*\(', line):
+                    in_object_method = True
+                    method_start = i
+                    brace_count = 0
+                
+                if in_object_method:
+                    brace_count += line.count('{') - line.count('}')
+                    
+                    # Check if we're leaving the method
+                    if brace_count == 0 and i > method_start:
+                        # Search for 'return null;' in this method
+                        for j in range(method_start, i + 1):
+                            if 'return null;' in lines[j] and '// FIXME' not in lines[j]:
+                                # Replace with new Object()
+                                indent = len(lines[j]) - len(lines[j].lstrip())
+                                lines[j] = ' ' * indent + 'return new Object();  // FIXME: Changed from null to empty object'
+                                modified = True
+                        
+                        in_object_method = False
+                        method_start = -1
+                        brace_count = 0
+                    elif 'return null;' in line and in_object_method and '// FIXME' not in line:
+                        # Replace with new Object()
+                        indent = len(line) - len(line.lstrip())
+                        lines[i] = ' ' * indent + 'return new Object();  // FIXME: Changed from null to empty object'
                         modified = True
             
             if modified:
@@ -1531,7 +1686,7 @@ def get_all_java_files() -> List[Tuple[str, Path]]:
     return sorted(java_files)
 
 
-def test_single_java_file(java_file: Path, timeout: int = 60) -> Tuple[bool, str, str]:
+def test_single_java_file(java_file: Path, timeout: int = 30) -> Tuple[bool, str, str]:
     """
     Test a single Java file: compile and run.
     Returns (success, error_message, output).
@@ -1894,8 +2049,8 @@ Examples:
                 success = False
                 test_attempts = 0
                 fix_attempts = 0
-                max_fix_attempts = 10
-                max_test_attempts = 15  # Prevent infinite test retries
+                max_fix_attempts = 5  # Reduced from 10
+                max_test_attempts = 8  # Reduced from 15 to prevent long hangs
                 was_fixed = False
                 duration = 0.0
                 error_msg = ""
@@ -1921,9 +2076,9 @@ Examples:
                     single_test_start = time.time()
                     
                     # Reduce timeout if we've had multiple attempts (might be hanging)
-                    test_timeout = 60
+                    test_timeout = 30  # Start with 30 seconds
                     if test_attempts > 5:
-                        test_timeout = 30  # Reduce timeout after 5 attempts
+                        test_timeout = 20  # Reduce timeout after 5 attempts
                     if test_attempts > 10:
                         test_timeout = 15  # Further reduce after 10 attempts
                     
@@ -1944,7 +2099,9 @@ Examples:
                                 print(f"  ❌ Same error repeated {same_error_count} times, likely hanging or unfixable", flush=True)
                                 print(f"  ⚠ Moving on to next file", flush=True)
                                 # Update database with failure
-                                update_database(algo_path, 'failure', duration, f"Same error repeated {same_error_count} times: {error_msg[:500]}", output, False)
+                                # Save full error message (no truncation)
+                                full_error = f"Same error repeated {same_error_count} times: {error_msg}"
+                                update_database(algo_path, 'failure', duration, full_error, output, False)
                                 failed_count += 1
                                 with _status_lock:
                                     _status_state['failed_count'] = failed_count
@@ -1986,10 +2143,10 @@ Examples:
                         # Test failed - try to fix it
                         if fix_attempts >= max_fix_attempts:
                             print(f"  ❌ Maximum fix attempts ({max_fix_attempts}) reached, moving on", flush=True)
-                            print(f"  Error output (first 500 chars):", flush=True)
-                            print(f"  {error_msg[:500]}", flush=True)
+                            print(f"  Error output (first 1000 chars):", flush=True)
+                            print(f"  {error_msg[:1000]}", flush=True)
                             
-                            # Update database with failure
+                            # Update database with full error message (no truncation)
                             update_database(algo_path, 'failure', duration, error_msg, output, False)
                             
                             failed_count += 1
@@ -2003,11 +2160,19 @@ Examples:
                         # Try different fix strategies
                         fixed = False
                         
-                        print(f"  🔧 Attempting to fix class name mismatch...", flush=True)
-                        if fix_class_name_mismatch(java_file):
+                        # First, validate and fix path/package/class name mismatches
+                        print(f"  🔧 Validating path, package, and class name...", flush=True)
+                        if validate_and_fix_java_path_package(java_file):
                             print(f"  ✓ File modified, will retest", flush=True)
                             fixed = True
                             was_fixed = True
+                        
+                        if not fixed:
+                            print(f"  🔧 Attempting to fix class name mismatch...", flush=True)
+                            if fix_class_name_mismatch(java_file):
+                                print(f"  ✓ File modified, will retest", flush=True)
+                                fixed = True
+                                was_fixed = True
                         
                         if not fixed:
                             print(f"  🔧 Attempting to fix package errors...", flush=True)
@@ -2033,8 +2198,8 @@ Examples:
                         if not fixed:
                             print(f"  ⚠ Could not fix (no changes made)", flush=True)
                             # Show first 500 chars of error output
-                            error_preview = error_msg[:500] if len(error_msg) > 500 else error_msg
-                            print(f"  Error output (first 500 chars):", flush=True)
+                            error_preview = error_msg[:1000] if len(error_msg) > 1000 else error_msg
+                            print(f"  Error output (first 1000 chars):", flush=True)
                             print(f"  {error_preview}", flush=True)
                             
                             # Update database with failure

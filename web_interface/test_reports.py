@@ -123,10 +123,15 @@ def get_test_results():
         algorithm_types = load_algorithm_types()
 
         # Get query parameters
-        search = request.args.get("search", "").lower()
-        status_filter = request.args.get("status", "")
-        language_filter = request.args.get("language", "")
-        algorithm_type_filter = request.args.get("algorithm_type", "")
+        search = request.args.get("search", "").strip()
+        if search:
+            search = search.lower()
+        else:
+            search = ""
+            
+        status_filter = request.args.get("status", "").strip()
+        language_filter = request.args.get("language", "").strip()
+        algorithm_type_filter = request.args.get("algorithm_type", "").strip()
         sort_by = request.args.get("sort", "timestamp")
         sort_order = request.args.get("order", "desc")
 
@@ -152,24 +157,10 @@ def get_test_results():
 
         params = []
 
+        # Apply search filter in CTE (before getting latest records)
         if search:
             query += " AND algorithm_path LIKE ?"
             params.append(f"%{search}%")
-
-        if status_filter:
-            # Handle "failure" filter to include both "failure" and "error"
-            if status_filter == "failure":
-                query += " AND (status = ? OR status = ?)"
-                params.append("failure")
-                params.append("error")
-            else:
-                query += " AND status = ?"
-                params.append(status_filter)
-
-        if language_filter:
-            # Case-insensitive language matching
-            query += " AND LOWER(language) = LOWER(?)"
-            params.append(language_filter)
 
         query += """
             )
@@ -184,6 +175,25 @@ def get_test_results():
                 state_changed
             FROM recent_results
             WHERE rn = 1
+        """
+        
+        # Apply status and language filters AFTER getting latest records (rn = 1)
+        if status_filter and status_filter != "":
+            # Handle "failure" filter to include both "failure" and "error"
+            if status_filter.lower() == "failure":
+                query += " AND (status = ? OR status = ?)"
+                params.append("failure")
+                params.append("error")
+            else:
+                query += " AND status = ?"
+                params.append(status_filter)
+
+        if language_filter and language_filter != "":
+            # Case-insensitive language matching
+            query += " AND LOWER(language) = LOWER(?)"
+            params.append(language_filter)
+
+        query += """
             ORDER BY 
         """
 

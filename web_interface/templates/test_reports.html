@@ -391,12 +391,21 @@
         // Load statistics with current filters
         async function loadStatistics() {
             try {
-                const params = new URLSearchParams({
-                    search: currentFilters.search,
-                    status: currentFilters.status,
-                    language: currentFilters.language,
-                    algorithm_type: currentFilters.algorithm_type,
-                });
+                const params = new URLSearchParams();
+                
+                // Only add non-empty parameters
+                if (currentFilters.search) {
+                    params.append('search', currentFilters.search);
+                }
+                if (currentFilters.status) {
+                    params.append('status', currentFilters.status);
+                }
+                if (currentFilters.language) {
+                    params.append('language', currentFilters.language);
+                }
+                if (currentFilters.algorithm_type) {
+                    params.append('algorithm_type', currentFilters.algorithm_type);
+                }
 
                 const response = await fetch(`/api/test-statistics?${params}`);
                 const data = await response.json();
@@ -416,24 +425,50 @@
 
         // Load test results
         async function loadResults() {
-            const params = new URLSearchParams({
-                search: currentFilters.search,
-                status: currentFilters.status,
-                language: currentFilters.language,
-                algorithm_type: currentFilters.algorithm_type,
-                sort: currentSort.column,
-                order: currentSort.order,
-            });
+            const params = new URLSearchParams();
+            
+            // Only add non-empty parameters
+            if (currentFilters.search) {
+                params.append('search', currentFilters.search);
+            }
+            if (currentFilters.status) {
+                params.append('status', currentFilters.status);
+            }
+            if (currentFilters.language) {
+                params.append('language', currentFilters.language);
+            }
+            if (currentFilters.algorithm_type) {
+                params.append('algorithm_type', currentFilters.algorithm_type);
+            }
+            params.append('sort', currentSort.column);
+            params.append('order', currentSort.order);
+
+            const url = `/api/test-results?${params}`;
+            console.log('Loading results with URL:', url);
+            console.log('Filters:', currentFilters);
 
             try {
-                const response = await fetch(`/api/test-results?${params}`);
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
                 const data = await response.json();
+                console.log('Received results:', data.results ? data.results.length : 0);
 
                 const tbody = document.getElementById('results-body');
-                tbody.innerHTML = '';
+                // Clear existing rows
+                while (tbody.firstChild) {
+                    tbody.removeChild(tbody.firstChild);
+                }
 
-                if (data.results.length === 0) {
-                    tbody.innerHTML = '<tr><td colspan="6" class="no-results">No test results found</td></tr>';
+                if (!data.results || data.results.length === 0) {
+                    const noResultsRow = document.createElement('tr');
+                    const noResultsCell = document.createElement('td');
+                    noResultsCell.colSpan = 6;
+                    noResultsCell.className = 'no-results';
+                    noResultsCell.textContent = 'No test results found';
+                    noResultsRow.appendChild(noResultsCell);
+                    tbody.appendChild(noResultsRow);
                     return;
                 }
 
@@ -463,31 +498,148 @@
                     
                     const latestDuration = formatDuration(latest.duration);
 
-                    row.innerHTML = `
-                        <td>${result.algorithm_path}</td>
-                        <td><span class="language-badge">${result.language}</span></td>
-                        <td><span class="status-badge ${result.latest_status}">${result.latest_status}</span></td>
-                        <td>${latestDuration}</td>
-                        <td>${timestamp}</td>
-                        <td>
-                            <span class="history-toggle" onclick="toggleHistory(this)">Show History (${result.recent_results.length})</span>
-                            <div class="history-details">
-                                ${result.recent_results.map(r => `
-                                    <div class="history-item">
-                                        <strong>${r.status}</strong> - ${new Date(r.timestamp).toLocaleString()} (${formatDuration(r.duration)}s)
-                                        ${r.error_message ? `<br><small style="color: #f44336;">${r.error_message.substring(0, 100)}...</small>` : ''}
-                                    </div>
-                                `).join('')}
-                            </div>
-                        </td>
+                    // Determine file path based on language
+                    // algorithm_path is already the directory path (e.g., semester_01/lecture_02_efficient_sorting/heap_sort)
+                    // We need to add the filename
+                    let algorithmPath = result.algorithm_path;
+                    // Remove trailing slashes if any
+                    algorithmPath = algorithmPath.replace(/\/+$/, '');
+                    
+                    const fileName = result.language.toLowerCase() === 'java' ? 'Algorithm.java' : 'algorithm.py';
+                    const filePath = `${algorithmPath}/${fileName}`;
+                    const codeLink = `/code/${filePath}`;
+                    
+                    // Create path cell with link
+                    const pathCell = document.createElement('td');
+                    const link = document.createElement('a');
+                    link.href = codeLink;
+                    link.target = '_blank';
+                    link.textContent = result.algorithm_path;
+                    link.style.color = '#667eea';
+                    link.style.textDecoration = 'none';
+                    link.style.fontFamily = 'monospace';
+                    link.style.fontSize = '0.9em';
+                    link.title = `View ${fileName}`;
+                    
+                    // Add file existence indicator (will be updated after check)
+                    const indicator = document.createElement('span');
+                    indicator.className = 'file-exists-indicator';
+                    indicator.style.marginLeft = '5px';
+                    indicator.style.fontSize = '0.8em';
+                    indicator.textContent = '⏳';
+                    indicator.title = 'Checking...';
+                    
+                    pathCell.appendChild(link);
+                    pathCell.appendChild(indicator);
+                    
+                    // Check if file exists (lazy check on hover to avoid too many simultaneous requests)
+                    let checked = false;
+                    link.addEventListener('mouseenter', () => {
+                        if (!checked) {
+                            checked = true;
+                            fetch(codeLink)
+                                .then(response => {
+                                    if (response.ok) {
+                                        indicator.textContent = '✓';
+                                        indicator.style.color = '#4caf50';
+                                        indicator.title = 'File exists';
+                                    } else {
+                                        indicator.textContent = '✗';
+                                        indicator.style.color = '#f44336';
+                                        indicator.title = 'File not found';
+                                        link.style.color = '#999';
+                                        link.style.textDecoration = 'line-through';
+                                    }
+                                })
+                                .catch(() => {
+                                    indicator.textContent = '?';
+                                    indicator.style.color = '#ff9800';
+                                    indicator.title = 'Could not verify';
+                                });
+                        }
+                    });
+                    
+                    // Also check on click (before navigation)
+                    link.addEventListener('click', (e) => {
+                        if (!checked) {
+                            e.preventDefault();
+                            checked = true;
+                            fetch(codeLink)
+                                .then(response => {
+                                    if (response.ok) {
+                                        indicator.textContent = '✓';
+                                        indicator.style.color = '#4caf50';
+                                        indicator.title = 'File exists';
+                                        // Navigate after check
+                                        window.open(codeLink, '_blank');
+                                    } else {
+                                        indicator.textContent = '✗';
+                                        indicator.style.color = '#f44336';
+                                        indicator.title = 'File not found';
+                                        link.style.color = '#999';
+                                        link.style.textDecoration = 'line-through';
+                                        alert('File not found: ' + filePath);
+                                    }
+                                })
+                                .catch(() => {
+                                    indicator.textContent = '?';
+                                    indicator.style.color = '#ff9800';
+                                    indicator.title = 'Could not verify';
+                                    // Still try to navigate
+                                    window.open(codeLink, '_blank');
+                                });
+                        }
+                    });
+                    
+                    // Create other cells
+                    const languageCell = document.createElement('td');
+                    languageCell.innerHTML = `<span class="language-badge">${result.language}</span>`;
+                    
+                    const statusCell = document.createElement('td');
+                    statusCell.innerHTML = `<span class="status-badge ${result.latest_status}">${result.latest_status}</span>`;
+                    
+                    const durationCell = document.createElement('td');
+                    durationCell.textContent = latestDuration;
+                    
+                    const timestampCell = document.createElement('td');
+                    timestampCell.textContent = timestamp;
+                    
+                    const historyCell = document.createElement('td');
+                    historyCell.innerHTML = `
+                        <span class="history-toggle" onclick="toggleHistory(this)">Show History (${result.recent_results.length})</span>
+                        <div class="history-details">
+                            ${result.recent_results.map(r => `
+                                <div class="history-item">
+                                    <strong>${r.status}</strong> - ${new Date(r.timestamp).toLocaleString()} (${formatDuration(r.duration)}s)
+                                    ${r.error_message ? `<br><small style="color: #f44336;">${r.error_message.substring(0, 100)}...</small>` : ''}
+                                </div>
+                            `).join('')}
+                        </div>
                     `;
+                    
+                    // Append all cells to row
+                    row.appendChild(pathCell);
+                    row.appendChild(languageCell);
+                    row.appendChild(statusCell);
+                    row.appendChild(durationCell);
+                    row.appendChild(timestampCell);
+                    row.appendChild(historyCell);
 
                     tbody.appendChild(row);
                 });
             } catch (error) {
                 console.error('Error loading results:', error);
-                document.getElementById('results-body').innerHTML = 
-                    '<tr><td colspan="6" class="no-results">Error loading test results</td></tr>';
+                const tbody = document.getElementById('results-body');
+                while (tbody.firstChild) {
+                    tbody.removeChild(tbody.firstChild);
+                }
+                const errorRow = document.createElement('tr');
+                const errorCell = document.createElement('td');
+                errorCell.colSpan = 6;
+                errorCell.className = 'no-results';
+                errorCell.textContent = 'Error loading test results: ' + error.message;
+                errorRow.appendChild(errorCell);
+                tbody.appendChild(errorRow);
             }
         }
 
@@ -528,13 +680,15 @@
         });
 
         document.getElementById('status-filter').addEventListener('change', (e) => {
-            currentFilters.status = e.target.value;
+            currentFilters.status = e.target.value || '';
+            console.log('Status filter changed to:', currentFilters.status);
             loadStatistics();
             loadResults();
         });
 
         document.getElementById('language-filter').addEventListener('change', (e) => {
-            currentFilters.language = e.target.value;
+            currentFilters.language = e.target.value || '';
+            console.log('Language filter changed to:', currentFilters.language);
             loadStatistics();
             loadResults();
         });
