@@ -137,7 +137,7 @@ def main() -> None:
     logger.info("=" * 70)
     logger.info("BINARY SEARCH DEMONSTRATION")
     logger.info("=" * 70)
-    logger.info()
+    logger.info("")
 
     # Example 1: Basic search
     logger.info("Example 1: Basic Search")
@@ -148,7 +148,7 @@ def main() -> None:
     logger.info(f"Target: {target1}")
     result1 = binary_search(data1, target1)
     logger.info(f"Found at index: {result1}")
-    logger.info()
+    logger.info("")
 
     # Example 2: Not found
     logger.info("Example 2: Element Not Found")
@@ -158,7 +158,7 @@ def main() -> None:
     logger.info(f"Target: {target2}")
     result2 = binary_search(data1, target2)
     logger.info(f"Result: {result2} (not found)")
-    logger.info()
+    logger.info("")
 
     # Example 3: Recursive
     logger.info("Example 3: Recursive Binary Search")
@@ -168,7 +168,7 @@ def main() -> None:
     logger.info(f"Target: {target3}")
     result3 = binary_search_recursive(data1, target3)
     logger.info(f"Found at index: {result3}")
-    logger.info()
+    logger.info("")
 
     # Example 4: Duplicates - leftmost
     logger.info("Example 4: Find Leftmost Occurrence")
@@ -179,7 +179,7 @@ def main() -> None:
     logger.info(f"Target: {target4}")
     result4 = binary_search_leftmost(data4, target4)
     logger.info(f"Leftmost index: {result4}")
-    logger.info()
+    logger.info("")
 
     # Example 5: Duplicates - rightmost
     logger.info("Example 5: Find Rightmost Occurrence")
@@ -188,7 +188,7 @@ def main() -> None:
     logger.info(f"Target: {target4}")
     result5 = binary_search_rightmost(data4, target4)
     logger.info(f"Rightmost index: {result5}")
-    logger.info()
+    logger.info("")
 
     # Example 6: Strings
     logger.info("Example 6: Search in Strings")
@@ -199,7 +199,7 @@ def main() -> None:
     logger.info(f"Target: {target6}")
     result6 = binary_search(data6, target6)
     logger.info(f"Found at index: {result6}")
-    logger.info()
+    logger.info("")
 
     logger.info("=" * 70)
     logger.info("\nComplexity Summary:")

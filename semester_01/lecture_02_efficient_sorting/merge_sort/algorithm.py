@@ -161,7 +161,7 @@ def main() -> None:
     logger.info("=" * 70)
     logger.info("MERGE SORT DEMONSTRATION")
     logger.info("=" * 70)
-    logger.info()
+    logger.info("")
 
     # Example 1: Basic sorting
     logger.info("Example 1: Basic Integer Sorting")
@@ -170,7 +170,7 @@ def main() -> None:
     logger.info(f"Original: {data1}")
     result1 = merge_sort(data1.copy())
     logger.info(f"Sorted:   {result1}")
-    logger.info()
+    logger.info("")
 
     # Example 2: Already sorted (best case)
     logger.info("Example 2: Already Sorted Array")
@@ -180,7 +180,7 @@ def main() -> None:
     result2 = merge_sort(data2.copy())
     logger.info(f"Sorted:   {result2}")
     logger.info("Note: Still O(n log n) even when sorted!")
-    logger.info()
+    logger.info("")
 
     # Example 3: Reverse sorted (worst case for some algorithms)
     logger.info("Example 3: Reverse Sorted Array")
@@ -189,7 +189,7 @@ def main() -> None:
     logger.info(f"Original: {data3}")
     result3 = merge_sort(data3.copy())
     logger.info(f"Sorted:   {result3}")
-    logger.info()
+    logger.info("")
 
     # Example 4: Strings
     logger.info("Example 4: Sorting Strings")
@@ -198,7 +198,7 @@ def main() -> None:
     logger.info(f"Original: {data4}")
     result4 = merge_sort(data4.copy())
     logger.info(f"Sorted:   {result4}")
-    logger.info()
+    logger.info("")
 
     # Example 5: Visualization
     logger.info("Example 5: Visualized Merge Sort Process")
@@ -206,7 +206,7 @@ def main() -> None:
     data5 = [5, 2, 8, 1, 9, 3]
     logger.info("Watch the divide-and-conquer process:\n")
     result5 = visualize_merge_sort(data5)
-    logger.info()
+    logger.info("")
 
     # Example 6: Performance comparison
     logger.info("Example 6: Performance Measurement")
@@ -234,7 +234,7 @@ def main() -> None:
     logger.info(f"\nLarge (10,000 elements):")
     logger.info(f"  Time: {metrics_large['execution_time_ms']:.3f} ms")
     logger.info(f"  Memory: {metrics_large['memory_peak_kb']:.2f} KB")
-    logger.info()
+    logger.info("")
 
     # Example 7: In-place version
     logger.info("Example 7: In-place Merge Sort")
@@ -244,7 +244,7 @@ def main() -> None:
     merge_sort_inplace(data7)
     logger.info(f"Sorted:   {data7}")
     logger.info("(Uses less memory but still O(n) auxiliary space)")
-    logger.info()
+    logger.info("")
 
     logger.info("=" * 70)
     logger.info("\nComplexity Summary:")

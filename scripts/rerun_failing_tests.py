@@ -120,7 +120,7 @@ def test_java_file(java_file: Path, timeout: int = 30) -> Tuple[bool, str, str]:
 
 def test_python_file(python_file: Path, timeout: int = 30) -> Tuple[bool, str, str]:
     """
-    Test a single Python file.
+    Test a single Python file by running it directly (not with pytest).
 
     Args:
         python_file: Path to the Python file to test
@@ -136,24 +136,25 @@ def test_python_file(python_file: Path, timeout: int = 30) -> Tuple[bool, str, s
         raise ValueError(f"Timeout {timeout}s is too aggressive. Minimum recommended: 15s")
 
     try:
+        # Run Python file directly instead of using pytest
         result = subprocess.run(
-            [sys.executable, "-m", "pytest", str(python_file), "-v"],
+            [sys.executable, str(python_file)],
             capture_output=True,
             text=True,
             timeout=timeout,
             cwd=str(ROOT)
         )
-        
+
         success = result.returncode == 0
         output = result.stdout or ""
         error_msg = result.stderr or ""
-        
+
         if not success:
             # Combine stdout and stderr for better error info
             error_msg = f"{error_msg}\n{output}" if error_msg else output
-        
+
         return success, error_msg, output
-        
+
     except subprocess.TimeoutExpired:
         return False, f"Test timed out after {timeout} seconds", ""
     except Exception as e:

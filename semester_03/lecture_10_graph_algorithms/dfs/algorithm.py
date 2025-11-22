@@ -194,7 +194,7 @@ def main() -> None:
     logger.info("=" * 70)
     logger.info("DEPTH-FIRST SEARCH (DFS) DEMONSTRATION")
     logger.info("=" * 70)
-    logger.info()
+    logger.info("")
 
     # Example 1: Basic DFS on undirected graph
     logger.info("Example 1: Basic DFS on Undirected Graph")
@@ -206,10 +206,10 @@ def main() -> None:
     for u, v in edges:
         g1.add_edge(u, v)
 
-    logger.info("Graph edges:", edges)
+    logger.info("Graph edges: {}", edges)
     logger.info(f"DFS from node 0 (recursive): {g1.dfs(0)}")
     logger.info(f"DFS from node 0 (iterative): {g1.dfs_iterative(0)}")
-    logger.info()
+    logger.info("")
 
     # Example 2: DFS on directed graph
     logger.info("Example 2: DFS on Directed Graph")
@@ -221,9 +221,9 @@ def main() -> None:
     for u, v in edges2:
         g2.add_edge(u, v)
 
-    logger.info("Graph edges:", edges2)
+    logger.info("Graph edges: {}", edges2)
     logger.info(f"DFS from node 0: {g2.dfs(0)}")
-    logger.info()
+    logger.info("")
 
     # Example 3: Connected components
     logger.info("Example 3: Finding Connected Components")
@@ -241,7 +241,7 @@ def main() -> None:
     logger.info(f"Number of components: {len(components)}")
     for i, comp in enumerate(components):
         logger.info(f"  Component {i+1}: {comp}")
-    logger.info()
+    logger.info("")
 
     # Example 4: Cycle detection
     logger.info("Example 4: Cycle Detection")
@@ -264,7 +264,7 @@ def main() -> None:
 
     logger.info("\nGraph without cycle: [(0,1), (1,2), (0,3)]")
     logger.info(f"Has cycle: {g4_no_cycle.has_cycle()}")
-    logger.info()
+    logger.info("")
 
     # Example 5: Topological sort
     logger.info("Example 5: Topological Sort (DAG)")
@@ -284,7 +284,7 @@ def main() -> None:
     top_sort = g5.topological_sort()
     logger.info(f"Topological order: {top_sort}")
     logger.info("(Tasks should be executed in this order)")
-    logger.info()
+    logger.info("")
 
     # Example 6: DFS with callback
     logger.info("Example 6: DFS with Visit Callback")
@@ -301,7 +301,7 @@ def main() -> None:
         logger.info(f"  Visiting node: {node}")
 
     g6.dfs(0, visit_callback=visit_node)
-    logger.info()
+    logger.info("")
 
     # Example 7: Performance measurement
     logger.info("Example 7: Performance on Different Graph Sizes")
@@ -320,7 +320,7 @@ def main() -> None:
         logger.info(f"  Time: {metrics['execution_time_ms']:.3f} ms")
         logger.info(f"  Nodes visited: {n}")
 
-    logger.info()
+    logger.info("")
     logger.info("=" * 70)
     logger.info("\nComplexity Summary:")
     logger.info("  Time:  O(V + E) - V vertices, E edges")

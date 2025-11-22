@@ -3,7 +3,7 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
-package sandboxes.3.semester_16_lecture_117_ml_ops_advanced_a_b_testing_ml_java.version_1;
+package semester_16.lecture_117_ml_ops_advanced.a_b_testing_ml;
  * A B Testing Ml implementation.
  */
 public class Algorithm {
@@ -42,13 +42,13 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
-        logger.info("=".repeat(70));
-        logger.info("A B Testing Ml");
-        logger.info("=".repeat(70));
+        System.out.println("=".repeat(70));
+        System.out.println("A B Testing Ml");
+        System.out.println("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
         Object result = algo.add_result_a(null);
-        logger.info("Result: " + result);
-        logger.info("=".repeat(70));
+        System.out.println("Result: " + result);
+        System.out.println("=".repeat(70));
     }
 }

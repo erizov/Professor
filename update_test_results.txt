@@ -1,0 +1,891 @@
+======================================================================
+RERUNNING FAILING TESTS
+======================================================================
+
+Found 169 failing tests
+Note: All failing tests will be processed (no artificial limits)
+
+[1/169] Testing: semester_01\lecture_07_heaps_priority\binary_heap (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_01.lecture_07_heaps_priority.binary_heap.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algori...
+
+[2/169] Testing: semester_01\lecture_07_heaps_priority\fibonacci_heap (python)
+  Issues: missing_main
+  Error: ....EE...EE
+======================================================================
+ERROR: test_large_input (__main__.TestFibonacciheap.test_large_inpu...
+
+[3/169] Testing: semester_01\lecture_08_hash_tables\chaining (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_01.lecture_08_hash_tables.chaining.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (w...
+
+[4/169] Testing: semester_01\lecture_08_hash_tables\open_addressing (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_01.lecture_08_hash_tables.open_addressing.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algor...
+
+[5/169] Testing: semester_01\lecture_09_graph_algorithms\bellman_ford (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_01.lecture_09_graph_algorithms.bellman_ford.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Alg...
+
+[6/169] Testing: semester_01\lecture_09_graph_algorithms\bfs (python)
+  Issues: missing_main
+  Error: ..E.....
+======================================================================
+ERROR: test_disconnected_graph (__main__.TestBfs.test_disconnected_gra...
+
+[7/169] Testing: semester_01\lecture_09_graph_algorithms\dfs (python)
+  Issues: missing_main
+  Error: ..E.....
+======================================================================
+ERROR: test_disconnected_graph (__main__.TestDfs.test_disconnected_gra...
+
+[8/169] Testing: semester_01\lecture_11_dynamic_programming\edit_distance (python)
+  Issues: missing_main
+  Error: ....E....EE
+======================================================================
+ERROR: test_large_input (__main__.TestEditdistance.test_large_input...
+
+[9/169] Testing: semester_01\lecture_11_dynamic_programming\knapsack (python)
+  Issues: missing_main
+  Error: ....EE...EE
+======================================================================
+ERROR: test_large_input (__main__.TestKnapsack.test_large_input)
+Te...
+
+[10/169] Testing: semester_01\lecture_11_dynamic_programming\longest_common_subsequence (python)
+  Issues: missing_main
+  Error: ....EE...EE
+======================================================================
+ERROR: test_large_input (__main__.TestLongestcommonsubsequence.test...
+  Progress: 10/169 | Fixed: 0 | Still failing: 10
+
+[11/169] Testing: semester_02\lecture_06_solid_principles\single_responsibility (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_02.lecture_06_solid_principles.single_responsibility.Algorithm
+Caused by: java.lang.NoClassDefFoundE...
+
+[12/169] Testing: semester_02\lecture_07_creational_patterns\factory (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_02.lecture_07_creational_patterns.factory.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algor...
+
+[13/169] Testing: semester_02\lecture_08_structural_patterns\bridge (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_02.lecture_08_structural_patterns.bridge.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algori...
+
+[14/169] Testing: semester_02\lecture_08_structural_patterns\composite (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_02.lecture_08_structural_patterns.composite.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Alg...
+
+[15/169] Testing: semester_02\lecture_08_structural_patterns\composite (python)
+  Error:   File "E:\Python\GptEngineer\Professor\semester_02\lecture_08_structural_patterns\composite\test_algorithm.py", line 100
+    instances.append(self.al...
+
+[16/169] Testing: semester_02\lecture_08_structural_patterns\decorator (python)
+  Error:   File "E:\Python\GptEngineer\Professor\semester_02\lecture_08_structural_patterns\decorator\test_algorithm.py", line 100
+    instances.append(self.al...
+
+[17/169] Testing: semester_02\lecture_09_behavioral_patterns\chain_of_responsibility (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_02.lecture_09_behavioral_patterns.chain_of_responsibility.Algorithm
+Caused by: java.lang.NoClassDefF...
+
+[18/169] Testing: semester_02\lecture_09_behavioral_patterns\command (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_02.lecture_09_behavioral_patterns.command.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algor...
+
+[19/169] Testing: semester_02\lecture_09_behavioral_patterns\template_method (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_02.lecture_09_behavioral_patterns.template_method.Algorithm
+Caused by: java.lang.NoClassDefFoundErro...
+
+[20/169] Testing: semester_02\lecture_10_architectural_patterns\clean_architecture (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_02.lecture_10_architectural_patterns.clean_architecture.Algorithm
+Caused by: java.lang.NoClassDefFou...
+  Progress: 20/169 | Fixed: 0 | Still failing: 20
+
+[21/169] Testing: semester_02\lecture_10_architectural_patterns\hexagonal (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_02.lecture_10_architectural_patterns.hexagonal.Algorithm
+Caused by: java.lang.NoClassDefFoundError: ...
+
+[22/169] Testing: semester_02\lecture_12_concurrency_patterns\producer_consumer (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_02.lecture_12_concurrency_patterns.producer_consumer.Algorithm
+Caused by: java.lang.NoClassDefFoundE...
+
+[23/169] Testing: semester_02\lecture_12_concurrency_patterns\readers_writers (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_02.lecture_12_concurrency_patterns.readers_writers.Algorithm
+Caused by: java.lang.NoClassDefFoundErr...
+
+[24/169] Testing: semester_03\lecture_10_graph_algorithms\bellman_ford (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_03.lecture_10_graph_algorithms.bellman_ford.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Alg...
+
+[25/169] Testing: semester_03\lecture_10_graph_algorithms\bfs (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_03.lecture_10_graph_algorithms.bfs.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (w...
+
+[26/169] Testing: semester_03\lecture_10_graph_algorithms\bfs (python)
+  Issues: missing_main
+  Error: ..E.....
+======================================================================
+ERROR: test_disconnected_graph (__main__.TestBfs.test_disconnected_gra...
+
+[27/169] Testing: semester_03\lecture_10_graph_algorithms\dfs (python)
+  Issues: missing_main
+  Error: ..E.....
+======================================================================
+ERROR: test_disconnected_graph (__main__.TestDfs.test_disconnected_gra...
+
+[28/169] Testing: semester_03\lecture_11_dynamic_programming\edit_distance (python)
+  Issues: missing_main
+  Error: ....E....EE
+======================================================================
+ERROR: test_large_input (__main__.TestEditdistance.test_large_input...
+
+[29/169] Testing: semester_03\lecture_11_dynamic_programming\knapsack (python)
+  Issues: missing_main
+  Error: ....EE...EE
+======================================================================
+ERROR: test_large_input (__main__.TestKnapsack.test_large_input)
+Te...
+
+[30/169] Testing: semester_03\lecture_11_dynamic_programming\longest_common_subsequence (python)
+  Issues: missing_main
+  Error: ....EE...EE
+======================================================================
+ERROR: test_large_input (__main__.TestLongestcommonsubsequence.test...
+  Progress: 30/169 | Fixed: 0 | Still failing: 30
+
+[31/169] Testing: semester_03\lecture_12_ml_algorithms\linear_regression (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_03.lecture_12_ml_algorithms.linear_regression.Algorithm
+Caused by: java.lang.NoClassDefFoundError: A...
+
+[32/169] Testing: semester_03\lecture_13_integration_patterns\event_sourcing (python)
+  Error:   File "E:\Python\GptEngineer\Professor\semester_03\lecture_13_integration_patterns\event_sourcing\test_algorithm.py", line 100
+    instances.append(s...
+
+[33/169] Testing: semester_03\lecture_14_string_algorithms\boyer_moore (python)
+  Issues: missing_main
+  Error: ....F...
+======================================================================
+FAIL: test_pattern_not_found (__main__.TestBoyermoore.test_pattern_not...
+
+[34/169] Testing: semester_03\lecture_14_string_algorithms\rabin_karp (python)
+  Issues: missing_main
+  Error: ....F...
+======================================================================
+FAIL: test_pattern_not_found (__main__.TestRabinkarp.test_pattern_not_...
+
+[35/169] Testing: semester_03\lecture_15_greedy_algorithms\fractional_knapsack (python)
+  Issues: missing_main
+  Error: ....E....EE
+======================================================================
+ERROR: test_large_input (__main__.TestFractionalknapsack.test_large...
+
+[36/169] Testing: semester_03\lecture_16_advanced_ml\neural_network (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_03.lecture_16_advanced_ml.neural_network.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algori...
+
+[37/169] Testing: semester_04\lecture_16_deployment_patterns\canary (java)
+  Error: E:\Python\GptEngineer\Professor\semester_04\lecture_16_deployment_patterns\canary\Algorithm.java:15: error: class, interface, enum, or record expected...
+
+[38/169] Testing: semester_04\lecture_17_performance\rate_limiting (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_04.lecture_17_performance.rate_limiting.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorit...
+
+[39/169] Testing: semester_04\lecture_18_crypto_algorithms\rsa (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_04.lecture_18_crypto_algorithms.rsa.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (...
+
+[40/169] Testing: semester_04\lecture_19_distributed_patterns\consistent_hashing (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_04.lecture_19_distributed_patterns.consistent_hashing.Algorithm
+Caused by: java.lang.NoClassDefFound...
+  Progress: 40/169 | Fixed: 0 | Still failing: 40
+
+[41/169] Testing: semester_04\lecture_19_distributed_patterns\consistent_hashing (python)
+  Error:   File "E:\Python\GptEngineer\Professor\semester_04\lecture_19_distributed_patterns\consistent_hashing\test_algorithm.py", line 100
+    instances.appe...
+
+[42/169] Testing: semester_04\lecture_19_distributed_patterns\gossip_protocol (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_04.lecture_19_distributed_patterns.gossip_protocol.Algorithm
+Caused by: java.lang.NoClassDefFoundErr...
+
+[43/169] Testing: semester_04\lecture_19_distributed_patterns\gossip_protocol (python)
+  Error:   File "E:\Python\GptEngineer\Professor\semester_04\lecture_19_distributed_patterns\gossip_protocol\test_algorithm.py", line 100
+    instances.append(...
+
+[44/169] Testing: semester_04\lecture_19_distributed_patterns\leader_election (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_04.lecture_19_distributed_patterns.leader_election.Algorithm
+Caused by: java.lang.NoClassDefFoundErr...
+
+[45/169] Testing: semester_04\lecture_19_distributed_patterns\leader_election (python)
+  Issues: missing_main
+  Error: ....E.E....
+======================================================================
+ERROR: test_multiple_instances (__main__.TestLeaderelection.test_mu...
+
+[46/169] Testing: semester_04\lecture_19_distributed_patterns\two_phase_commit (python)
+  Error:   File "E:\Python\GptEngineer\Professor\semester_04\lecture_19_distributed_patterns\two_phase_commit\test_algorithm.py", line 100
+    instances.append...
+
+[47/169] Testing: semester_05\lecture_22_cnn_architectures\efficientnet (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_22_cnn_architectures.efficientnet.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Al...
+
+[48/169] Testing: semester_05\lecture_22_cnn_architectures\inception (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_22_cnn_architectures.inception.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algor...
+
+[49/169] Testing: semester_05\lecture_22_cnn_architectures\resnet (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_22_cnn_architectures.resnet.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorith...
+
+[50/169] Testing: semester_05\lecture_22_cnn_architectures\vgg (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_22_cnn_architectures.vgg.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (...
+  Progress: 50/169 | Fixed: 0 | Still failing: 50
+
+[51/169] Testing: semester_05\lecture_23_object_detection\rcnn (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_23_object_detection.rcnn.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (...
+
+[52/169] Testing: semester_05\lecture_23_object_detection\ssd (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_23_object_detection.ssd.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (w...
+
+[53/169] Testing: semester_05\lecture_23_object_detection\yolo (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_23_object_detection.yolo.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (...
+
+[54/169] Testing: semester_05\lecture_24_segmentation\fcn (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_24_segmentation.fcn.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (wrong...
+
+[55/169] Testing: semester_05\lecture_24_segmentation\unet (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_24_segmentation.unet.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (wron...
+
+[56/169] Testing: semester_05\lecture_25_transformers\bert (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_25_transformers.bert.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (wron...
+
+[57/169] Testing: semester_05\lecture_25_transformers\gpt (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_25_transformers.gpt.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (wrong...
+
+[58/169] Testing: semester_05\lecture_25_transformers\transformer (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_25_transformers.transformer.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorith...
+
+[59/169] Testing: semester_05\lecture_26_ensemble_methods\boosting (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_26_ensemble_methods.boosting.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorit...
+
+[60/169] Testing: semester_05\lecture_27_hyperparameter_optimization\bayesian_optimization (java)
+  Error: E:\Python\GptEngineer\Professor\semester_05\lecture_27_hyperparameter_optimization\bayesian_optimization\Algorithm.java:19: error: <identifier> expect...
+  Progress: 60/169 | Fixed: 0 | Still failing: 60
+
+[61/169] Testing: semester_05\lecture_27_hyperparameter_optimization\grid_search (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_27_hyperparameter_optimization.grid_search.Algorithm
+Caused by: java.lang.NoClassDefFound...
+
+[62/169] Testing: semester_05\lecture_27_hyperparameter_optimization\optuna (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_27_hyperparameter_optimization.optuna.Algorithm
+Caused by: java.lang.NoClassDefFoundError...
+
+[63/169] Testing: semester_05\lecture_28_reinforcement_learning\actor_critic (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_28_reinforcement_learning.actor_critic.Algorithm
+Caused by: java.lang.NoClassDefFoundErro...
+
+[64/169] Testing: semester_05\lecture_28_reinforcement_learning\dqn (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_28_reinforcement_learning.dqn.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algori...
+
+[65/169] Testing: semester_05\lecture_28_reinforcement_learning\policy_gradient (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_28_reinforcement_learning.policy_gradient.Algorithm
+Caused by: java.lang.NoClassDefFoundE...
+
+[66/169] Testing: semester_05\lecture_28_reinforcement_learning\ppo (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_28_reinforcement_learning.ppo.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algori...
+
+[67/169] Testing: semester_05\lecture_28_reinforcement_learning\q_learning (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_28_reinforcement_learning.q_learning.Algorithm
+Caused by: java.lang.NoClassDefFoundError:...
+
+[68/169] Testing: semester_05\lecture_29_nlp_advanced\glove (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_29_nlp_advanced.glove.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (wro...
+
+[69/169] Testing: semester_05\lecture_29_nlp_advanced\ner (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_29_nlp_advanced.ner.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (wrong...
+
+[70/169] Testing: semester_05\lecture_29_nlp_advanced\seq2seq (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_29_nlp_advanced.seq2seq.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (w...
+  Progress: 70/169 | Fixed: 0 | Still failing: 70
+
+[71/169] Testing: semester_05\lecture_29_nlp_advanced\word2vec (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_29_nlp_advanced.word2vec.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (...
+
+[72/169] Testing: semester_05\lecture_30_time_series\lstm_timeseries (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_05.lecture_30_time_series.lstm_timeseries.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algor...
+
+[73/169] Testing: semester_06\lecture_31_mlops\ab_testing (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_06.lecture_31_mlops.ab_testing.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (wrong...
+
+[74/169] Testing: semester_06\lecture_31_mlops\model_versioning (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_06.lecture_31_mlops.model_versioning.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm ...
+
+[75/169] Testing: semester_06\lecture_32_distributed_ml\allreduce (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_06.lecture_32_distributed_ml.allreduce.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorith...
+
+[76/169] Testing: semester_06\lecture_32_distributed_ml\parameter_server (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_06.lecture_32_distributed_ml.parameter_server.Algorithm
+Caused by: java.lang.NoClassDefFoundError: A...
+
+[77/169] Testing: semester_06\lecture_33_model_optimization\knowledge_distillation (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_06.lecture_33_model_optimization.knowledge_distillation.Algorithm
+Caused by: java.lang.NoClassDefFou...
+
+[78/169] Testing: semester_06\lecture_33_model_optimization\nas (java)
+  Error: E:\Python\GptEngineer\Professor\semester_06\lecture_33_model_optimization\nas\Algorithm.java:19: error: ',', ')', or '[' expected
+    public Object de...
+
+[79/169] Testing: semester_06\lecture_33_model_optimization\onnx (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_06.lecture_33_model_optimization.onnx.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm...
+
+[80/169] Testing: semester_06\lecture_33_model_optimization\pruning (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_06.lecture_33_model_optimization.pruning.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algori...
+  Progress: 80/169 | Fixed: 0 | Still failing: 80
+
+[81/169] Testing: semester_06\lecture_33_model_optimization\quantization (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_06.lecture_33_model_optimization.quantization.Algorithm
+Caused by: java.lang.NoClassDefFoundError: A...
+
+[82/169] Testing: semester_06\lecture_33_model_optimization\tensorrt (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_06.lecture_33_model_optimization.tensorrt.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algor...
+
+[83/169] Testing: semester_06\lecture_34_edge_ai\edge_deployment (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_06.lecture_34_edge_ai.edge_deployment.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm...
+
+[84/169] Testing: semester_06\lecture_34_edge_ai\iot_ml (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_06.lecture_34_edge_ai.iot_ml.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (wrong n...
+
+[85/169] Testing: semester_06\lecture_34_edge_ai\tflite (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_06.lecture_34_edge_ai.tflite.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (wrong n...
+
+[86/169] Testing: semester_06\lecture_35_deployment_patterns\multi_armed_bandit (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_06.lecture_35_deployment_patterns.multi_armed_bandit.Algorithm
+Caused by: java.lang.NoClassDefFoundE...
+
+[87/169] Testing: semester_06\lecture_36_inference_optimization\gpu_optimization (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_06.lecture_36_inference_optimization.gpu_optimization.Algorithm
+Caused by: java.lang.NoClassDefFound...
+
+[88/169] Testing: semester_06\lecture_37_cost_optimization\autoscaling (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_06.lecture_37_cost_optimization.autoscaling.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Alg...
+
+[89/169] Testing: semester_06\lecture_37_cost_optimization\cost_analysis (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_06.lecture_37_cost_optimization.cost_analysis.Algorithm
+Caused by: java.lang.NoClassDefFoundError: A...
+
+[90/169] Testing: semester_06\lecture_38_monitoring_production\performance_profiling (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_06.lecture_38_monitoring_production.performance_profiling.Algorithm
+Caused by: java.lang.NoClassDefF...
+  Progress: 90/169 | Fixed: 0 | Still failing: 90
+
+[91/169] Testing: semester_06\lecture_38_monitoring_production\prometheus_ml (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_06.lecture_38_monitoring_production.prometheus_ml.Algorithm
+Caused by: java.lang.NoClassDefFoundErro...
+
+[92/169] Testing: semester_07\lecture_39_operating_systems\deadlock_detection (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_07.lecture_39_operating_systems.deadlock_detection.Algorithm
+Caused by: java.lang.NoClassDefFoundErr...
+
+[93/169] Testing: semester_07\lecture_39_operating_systems\file_systems (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_07.lecture_39_operating_systems.file_systems.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Al...
+
+[94/169] Testing: semester_07\lecture_39_operating_systems\virtual_memory (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_07.lecture_39_operating_systems.virtual_memory.Algorithm
+Caused by: java.lang.NoClassDefFoundError: ...
+
+[95/169] Testing: semester_07\lecture_40_llm_fundamentals\llm_architecture (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_07.lecture_40_llm_fundamentals.llm_architecture.Algorithm
+Caused by: java.lang.NoClassDefFoundError:...
+
+[96/169] Testing: semester_07\lecture_40_llm_fundamentals\retrieval_augmented_generation (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_07.lecture_40_llm_fundamentals.retrieval_augmented_generation.Algorithm
+Caused by: java.lang.NoClass...
+
+[97/169] Testing: semester_07\lecture_40_llm_fundamentals\tokenization (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_07.lecture_40_llm_fundamentals.tokenization.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Alg...
+
+[98/169] Testing: semester_07\lecture_41_llm_advanced\chain_of_thought (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_07.lecture_41_llm_advanced.chain_of_thought.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Alg...
+
+[99/169] Testing: semester_07\lecture_41_llm_advanced\few_shot_learning (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_07.lecture_41_llm_advanced.few_shot_learning.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Al...
+
+[100/169] Testing: semester_07\lecture_41_llm_advanced\llm_distillation (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_07.lecture_41_llm_advanced.llm_distillation.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Alg...
+  Progress: 100/169 | Fixed: 0 | Still failing: 100
+
+[101/169] Testing: semester_07\lecture_41_llm_advanced\llm_quantization (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_07.lecture_41_llm_advanced.llm_quantization.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Alg...
+
+[102/169] Testing: semester_07\lecture_43_ci_cd_advanced\gitops (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_07.lecture_43_ci_cd_advanced.gitops.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (...
+
+[103/169] Testing: semester_07\lecture_44_quantum_computing\grover_algorithm (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_07.lecture_44_quantum_computing.grover_algorithm.Algorithm
+Caused by: java.lang.NoClassDefFoundError...
+
+[104/169] Testing: semester_07\lecture_44_quantum_computing\quantum_algorithms (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_07.lecture_44_quantum_computing.quantum_algorithms.Algorithm
+Caused by: java.lang.NoClassDefFoundErr...
+
+[105/169] Testing: semester_07\lecture_44_quantum_computing\quantum_entanglement (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_07.lecture_44_quantum_computing.quantum_entanglement.Algorithm
+Caused by: java.lang.NoClassDefFoundE...
+
+[106/169] Testing: semester_07\lecture_44_quantum_computing\quantum_superposition (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_07.lecture_44_quantum_computing.quantum_superposition.Algorithm
+Caused by: java.lang.NoClassDefFound...
+
+[107/169] Testing: semester_07\lecture_45_blockchain_fundamentals\consensus_mechanisms (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_07.lecture_45_blockchain_fundamentals.consensus_mechanisms.Algorithm
+Caused by: java.lang.NoClassDef...
+
+[108/169] Testing: semester_07\lecture_46_blockchain_advanced\blockchain_scalability (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_07.lecture_46_blockchain_advanced.blockchain_scalability.Algorithm
+Caused by: java.lang.NoClassDefFo...
+
+[109/169] Testing: semester_07\lecture_46_blockchain_advanced\cryptocurrency_wallets (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_07.lecture_46_blockchain_advanced.cryptocurrency_wallets.Algorithm
+Caused by: java.lang.NoClassDefFo...
+
+[110/169] Testing: semester_08\lecture_47_support_systems\escalation_procedures (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_08.lecture_47_support_systems.escalation_procedures.Algorithm
+Caused by: java.lang.NoClassDefFoundEr...
+  Progress: 110/169 | Fixed: 0 | Still failing: 110
+
+[111/169] Testing: semester_08\lecture_47_support_systems\incident_response (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_08.lecture_47_support_systems.incident_response.Algorithm
+Caused by: java.lang.NoClassDefFoundError:...
+
+[112/169] Testing: semester_08\lecture_47_support_systems\sla_management (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_08.lecture_47_support_systems.sla_management.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Al...
+
+[113/169] Testing: semester_08\lecture_48_documentation\documentation_generation (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_08.lecture_48_documentation.documentation_generation.Algorithm
+Caused by: java.lang.NoClassDefFoundE...
+
+[114/169] Testing: semester_08\lecture_49_sql_fundamentals\indexes (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_08.lecture_49_sql_fundamentals.indexes.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorith...
+
+[115/169] Testing: semester_08\lecture_50_sql_advanced\database_design (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_08.lecture_50_sql_advanced.database_design.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algo...
+
+[116/169] Testing: semester_08\lecture_51_nosql_fundamentals\graph_databases (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_08.lecture_51_nosql_fundamentals.graph_databases.Algorithm
+Caused by: java.lang.NoClassDefFoundError...
+
+[117/169] Testing: semester_08\lecture_51_nosql_fundamentals\graph_databases (python)
+  Issues: missing_main
+  Error: ..E.....
+======================================================================
+ERROR: test_disconnected_graph (__main__.TestGraphdatabases.test_disco...
+
+[118/169] Testing: semester_08\lecture_51_nosql_fundamentals\nosql_querying (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_08.lecture_51_nosql_fundamentals.nosql_querying.Algorithm
+Caused by: java.lang.NoClassDefFoundError:...
+
+[119/169] Testing: semester_08\lecture_52_nosql_advanced\nosql_scalability (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_08.lecture_52_nosql_advanced.nosql_scalability.Algorithm
+Caused by: java.lang.NoClassDefFoundError: ...
+
+[120/169] Testing: semester_08\lecture_52_nosql_advanced\nosql_sharding (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_08.lecture_52_nosql_advanced.nosql_sharding.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Alg...
+  Progress: 120/169 | Fixed: 0 | Still failing: 120
+
+[121/169] Testing: semester_08\lecture_53_database_operations\backup_strategies (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_08.lecture_53_database_operations.backup_strategies.Algorithm
+Caused by: java.lang.NoClassDefFoundEr...
+
+[122/169] Testing: semester_08\lecture_53_database_operations\capacity_planning (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_08.lecture_53_database_operations.capacity_planning.Algorithm
+Caused by: java.lang.NoClassDefFoundEr...
+
+[123/169] Testing: semester_08\lecture_53_database_operations\performance_tuning (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_08.lecture_53_database_operations.performance_tuning.Algorithm
+Caused by: java.lang.NoClassDefFoundE...
+
+[124/169] Testing: semester_09\lecture_55_advanced_os\exokernel_design (java)
+  Error: E:\Python\GptEngineer\Professor\semester_09\lecture_55_advanced_os\exokernel_design\Algorithm.java:44: error: not a statement
+        Optional[str] re...
+
+[125/169] Testing: semester_09\lecture_55_advanced_os\microkernel_architecture (java)
+  Error: E:\Python\GptEngineer\Professor\semester_09\lecture_55_advanced_os\microkernel_architecture\Algorithm.java:35: error: <identifier> expected
+    public...
+
+[126/169] Testing: semester_09\lecture_56_os_performance\memory_optimization (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_09.lecture_56_os_performance.memory_optimization.Algorithm
+Caused by: java.lang.NoClassDefFoundError...
+
+[127/169] Testing: semester_09\lecture_56_os_performance\performance_profiling (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_09.lecture_56_os_performance.performance_profiling.Algorithm
+Caused by: java.lang.NoClassDefFoundErr...
+
+[128/169] Testing: semester_09\lecture_57_concurrency_advanced\concurrent_data_structures (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_09.lecture_57_concurrency_advanced.concurrent_data_structures.Algorithm
+Caused by: java.lang.NoClass...
+
+[129/169] Testing: semester_09\lecture_58_parallel_computing\gpu_computing (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_09.lecture_58_parallel_computing.gpu_computing.Algorithm
+Caused by: java.lang.NoClassDefFoundError: ...
+
+[130/169] Testing: semester_09\lecture_58_parallel_computing\parallel_algorithms (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_09.lecture_58_parallel_computing.parallel_algorithms.Algorithm
+Caused by: java.lang.NoClassDefFoundE...
+  Progress: 130/169 | Fixed: 0 | Still failing: 130
+
+[131/169] Testing: semester_09\lecture_58_parallel_computing\parallel_prefix (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_09.lecture_58_parallel_computing.parallel_prefix.Algorithm
+Caused by: java.lang.NoClassDefFoundError...
+
+[132/169] Testing: semester_09\lecture_58_parallel_computing\parallel_reduction (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_09.lecture_58_parallel_computing.parallel_reduction.Algorithm
+Caused by: java.lang.NoClassDefFoundEr...
+
+[133/169] Testing: semester_09\lecture_58_parallel_computing\simd_optimization (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_09.lecture_58_parallel_computing.simd_optimization.Algorithm
+Caused by: java.lang.NoClassDefFoundErr...
+
+[134/169] Testing: semester_09\lecture_58_parallel_computing\vectorization (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_09.lecture_58_parallel_computing.vectorization.Algorithm
+Caused by: java.lang.NoClassDefFoundError: ...
+
+[135/169] Testing: semester_09\lecture_59_distributed_systems_advanced\consensus_algorithms (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_09.lecture_59_distributed_systems_advanced.consensus_algorithms.Algorithm
+Caused by: java.lang.NoCla...
+
+[136/169] Testing: semester_09\lecture_59_distributed_systems_advanced\crdt (java)
+  Error: E:\Python\GptEngineer\Professor\semester_09\lecture_59_distributed_systems_advanced\crdt\Algorithm.java:51: error: <identifier> expected
+    public Ob...
+
+[137/169] Testing: semester_09\lecture_59_distributed_systems_advanced\eventual_consistency (java)
+  Error: E:\Python\GptEngineer\Professor\semester_09\lecture_59_distributed_systems_advanced\eventual_consistency\Algorithm.java:43: error: <identifier> expect...
+
+[138/169] Testing: semester_09\lecture_59_distributed_systems_advanced\vector_clocks (java)
+  Error: E:\Python\GptEngineer\Professor\semester_09\lecture_59_distributed_systems_advanced\vector_clocks\Algorithm.java:35: error: <identifier> expected
+    ...
+
+[139/169] Testing: semester_09\lecture_61_cloud_native\config_management (java)
+  Error: E:\Python\GptEngineer\Professor\semester_09\lecture_61_cloud_native\config_management\Algorithm.java:27: error: <identifier> expected
+    public Objec...
+
+[140/169] Testing: semester_09\lecture_61_cloud_native\function_as_service (java)
+  Error: E:\Python\GptEngineer\Professor\semester_09\lecture_61_cloud_native\function_as_service\Algorithm.java:27: error: <identifier> expected
+    public Obj...
+  Progress: 140/169 | Fixed: 0 | Still failing: 140
+
+[141/169] Testing: semester_09\lecture_61_cloud_native\secrets_management (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_09.lecture_61_cloud_native.secrets_management.Algorithm
+Caused by: java.lang.NoClassDefFoundError: A...
+
+[142/169] Testing: semester_10\lecture_63_ai_advanced\few_shot_learning_advanced (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_10.lecture_63_ai_advanced.few_shot_learning_advanced.Algorithm
+Caused by: java.lang.NoClassDefFoundE...
+
+[143/169] Testing: semester_10\lecture_63_ai_advanced\transfer_learning_advanced (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_10.lecture_63_ai_advanced.transfer_learning_advanced.Algorithm
+Caused by: java.lang.ClassNotFoundExc...
+
+[144/169] Testing: semester_10\lecture_63_ai_advanced\zero_shot_learning (java)
+  Error: E:\Python\GptEngineer\Professor\semester_10\lecture_63_ai_advanced\zero_shot_learning\Algorithm.java:19: error: ',', ')', or '[' expected
+    public O...
+
+[145/169] Testing: semester_10\lecture_64_llm_architecture_advanced\long_context_models (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_10.lecture_64_llm_architecture_advanced.long_context_models.Algorithm
+Caused by: java.lang.NoClassDe...
+
+[146/169] Testing: semester_10\lecture_64_llm_architecture_advanced\mixture_of_experts (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_10.lecture_64_llm_architecture_advanced.mixture_of_experts.Algorithm
+Caused by: java.lang.NoClassDef...
+
+[147/169] Testing: semester_10\lecture_64_llm_architecture_advanced\multimodal_llms (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_10.lecture_64_llm_architecture_advanced.multimodal_llms.Algorithm
+Caused by: java.lang.NoClassDefFou...
+
+[148/169] Testing: semester_10\lecture_64_llm_architecture_advanced\sparse_attention (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_10.lecture_64_llm_architecture_advanced.sparse_attention.Algorithm
+Caused by: java.lang.NoClassDefFo...
+
+[149/169] Testing: semester_10\lecture_65_llm_training_advanced\tensor_parallelism (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_10.lecture_65_llm_training_advanced.tensor_parallelism.Algorithm
+Caused by: java.lang.NoClassDefFoun...
+
+[150/169] Testing: semester_10\lecture_66_llm_inference\continuous_batching (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_10.lecture_66_llm_inference.continuous_batching.Algorithm
+Caused by: java.lang.NoClassDefFoundError:...
+  Progress: 150/169 | Fixed: 0 | Still failing: 150
+
+[151/169] Testing: semester_10\lecture_66_llm_inference\speculative_decoding (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_10.lecture_66_llm_inference.speculative_decoding.Algorithm
+Caused by: java.lang.NoClassDefFoundError...
+
+[152/169] Testing: semester_10\lecture_67_rag_advanced\agentic_rag (java)
+  Issues: missing_main, wrong_path, wrong_class_name
+  Error: Error: Could not find or load main class semester_10.lecture_67_rag_advanced.agentic_rag.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorith...
+
+[153/169] Testing: semester_10\lecture_67_rag_advanced\hybrid_search (python)
+  Issues: missing_main
+  Error: .E..EEE...
+======================================================================
+ERROR: test_basic_search (__main__.TestHybridsearch.test_basic_searc...
+
+[154/169] Testing: semester_11\lecture_71_cicd_advanced\dynamic_pipelines (python)
+  Issues: missing_main
+  Error: ....EE...EE
+======================================================================
+ERROR: test_large_input (__main__.TestDynamicpipelines.test_large_i...
+
+[155/169] Testing: semester_12\lecture_79_quantum_algorithms_advanced\quantum_cryptography (python)
+  Issues: missing_main
+  Error: ..E.....
+======================================================================
+ERROR: test_disconnected_graph (__main__.TestQuantumcryptography.test_...
+
+[156/169] Testing: semester_12\lecture_81_quantum_applications\quantum_search (python)
+  Issues: missing_main
+  Error: .E..EEE...
+======================================================================
+ERROR: test_basic_search (__main__.TestQuantumsearch.test_basic_sear...
+
+[157/169] Testing: semester_12\lecture_86_quantum_security\post_quantum_cryptography (python)
+  Issues: missing_main
+  Error: ..E.....
+======================================================================
+ERROR: test_disconnected_graph (__main__.TestPostquantumcryptography.t...
+
+[158/169] Testing: semester_13\lecture_88_consensus_advanced\dpos_advanced (python)
+  Issues: missing_main
+  Error: ....EE...EE
+======================================================================
+ERROR: test_large_input (__main__.TestDposadvanced.test_large_input...
+
+[159/169] Testing: semester_14\lecture_100_documentation_ai\intelligent_search (python)
+  Issues: missing_main
+  Error: .E..EEE...
+======================================================================
+ERROR: test_basic_search (__main__.TestIntelligentsearch.test_basic_...
+
+[160/169] Testing: semester_14\lecture_95_support_advanced\knowledge_graph (python)
+  Issues: missing_main
+  Error: ..E.....
+======================================================================
+ERROR: test_disconnected_graph (__main__.TestKnowledgegraph.test_disco...
+  Progress: 160/169 | Fixed: 0 | Still failing: 160
+
+[161/169] Testing: semester_14\lecture_97_knowledge_management\knowledge_graph_construction (python)
+  Issues: missing_main
+  Error: ..E.....
+======================================================================
+ERROR: test_disconnected_graph (__main__.TestKnowledgegraphconstructio...
+
+[162/169] Testing: semester_14\lecture_97_knowledge_management\semantic_search (python)
+  Issues: missing_main
+  Error: .E..EEE...
+======================================================================
+ERROR: test_basic_search (__main__.TestSemanticsearch.test_basic_sea...
+
+[163/169] Testing: semester_15\lecture_108_graph_databases_advanced\graph_algorithms_db (python)
+  Issues: missing_main
+  Error: ..E.....
+======================================================================
+ERROR: test_disconnected_graph (__main__.TestGraphalgorithmsdb.test_di...
+
+[164/169] Testing: semester_15\lecture_108_graph_databases_advanced\graph_analytics (python)
+  Issues: missing_main
+  Error: ..E.....
+======================================================================
+ERROR: test_disconnected_graph (__main__.TestGraphanalytics.test_disco...
+
+[165/169] Testing: semester_15\lecture_108_graph_databases_advanced\graph_ml (python)
+  Issues: missing_main
+  Error: ..E.....
+======================================================================
+ERROR: test_disconnected_graph (__main__.TestGraphml.test_disconnected...
+
+[166/169] Testing: semester_15\lecture_108_graph_databases_advanced\graph_pattern_matching (python)
+  Issues: missing_main
+  Error: ..E........
+======================================================================
+ERROR: test_disconnected_graph (__main__.TestGraphpatternmatching.t...
+
+[167/169] Testing: semester_15\lecture_108_graph_databases_advanced\graph_traversal (python)
+  Issues: missing_main
+  Error: ..E.....
+======================================================================
+ERROR: test_disconnected_graph (__main__.TestGraphtraversal.test_disco...
+
+[168/169] Testing: semester_15\lecture_108_graph_databases_advanced\graph_visualization (python)
+  Issues: missing_main
+  Error: ..E.....
+======================================================================
+ERROR: test_disconnected_graph (__main__.TestGraphvisualization.test_d...
+
+[169/169] Testing: semester_16\lecture_115_data_governance_advanced\gdpr_compliance (python)
+  Issues: missing_main
+  Error: ....EE...EE
+======================================================================
+ERROR: test_large_input (__main__.TestGdprcompliance.test_large_inp...
+
+======================================================================
+Summary:
+  Java tests: 130
+  Python tests: 39
+  Fixed: 0
+  Still failing: 169
+  Skipped: 0
+======================================================================

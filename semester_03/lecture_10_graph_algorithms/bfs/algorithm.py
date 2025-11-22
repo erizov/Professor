@@ -192,7 +192,7 @@ def main() -> None:
     logger.info("=" * 70)
     logger.info("BREADTH-FIRST SEARCH (BFS) DEMONSTRATION")
     logger.info("=" * 70)
-    logger.info()
+    logger.info("")
 
     # Example 1: Basic BFS
     logger.info("Example 1: Basic BFS Traversal")
@@ -204,10 +204,10 @@ def main() -> None:
     for u, v in edges:
         g1.add_edge(u, v)
 
-    logger.info("Graph edges:", edges)
+    logger.info("Graph edges: {}", edges)
     logger.info(f"BFS from node 0: {g1.bfs(0)}")
     logger.info("Note: BFS visits level by level")
-    logger.info()
+    logger.info("")
 
     # Example 2: Shortest path
     logger.info("Example 2: Finding Shortest Path")
@@ -229,7 +229,7 @@ def main() -> None:
     # Alternative path
     alt_path = g2.shortest_path(0, 3)
     logger.info(f"Shortest path from 0 to 3: {alt_path}")
-    logger.info()
+    logger.info("")
 
     # Example 3: All distances from source
     logger.info("Example 3: Distances to All Nodes")
@@ -247,7 +247,7 @@ def main() -> None:
     logger.info("Distances from node 0:")
     for node, dist in sorted(distances.items()):
         logger.info(f"  Node {node}: distance = {dist}")
-    logger.info()
+    logger.info("")
 
     # Example 4: Bipartite check
     logger.info("Example 4: Bipartite Graph Detection")
@@ -271,7 +271,7 @@ def main() -> None:
 
     logger.info("\nGraph 2: [(0,1), (1,2), (2,0)] - Triangle")
     logger.info(f"Is bipartite: {g4_not.is_bipartite()}")
-    logger.info()
+    logger.info("")
 
     # Example 5: BFS on directed graph
     logger.info("Example 5: BFS on Directed Graph")
@@ -286,7 +286,7 @@ def main() -> None:
 
     logger.info("Directed edges: 0→1, 0→2, 1→2, 2→3, 1→3")
     logger.info(f"BFS from 0: {g5.bfs(0)}")
-    logger.info()
+    logger.info("")
 
     # Example 6: Level-order traversal
     logger.info("Example 6: Level-Order Grouping")
@@ -308,7 +308,7 @@ def main() -> None:
     logger.info("Nodes grouped by level:")
     for level in sorted(levels.keys()):
         logger.info(f"  Level {level}: {levels[level]}")
-    logger.info()
+    logger.info("")
 
     # Example 7: Performance measurement
     logger.info("Example 7: Performance on Different Graph Sizes")
@@ -326,7 +326,7 @@ def main() -> None:
         logger.info(f"Graph with {n} nodes:")
         logger.info(f"  Time: {metrics['execution_time_ms']:.3f} ms")
 
-    logger.info()
+    logger.info("")
     logger.info("=" * 70)
     logger.info("\nComplexity Summary:")
     logger.info("  Time:  O(V + E) - V vertices, E edges")

@@ -112,7 +112,7 @@ def main() -> None:
     logger.info("=" * 70)
     logger.info("QUICK SORT DEMONSTRATION")
     logger.info("=" * 70)
-    logger.info()
+    logger.info("")
 
     # Example 1: Basic sorting
     logger.info("Example 1: Basic Integer Sorting")
@@ -121,7 +121,7 @@ def main() -> None:
     logger.info(f"Original: {data1}")
     result1 = quick_sort(data1.copy())
     logger.info(f"Sorted:   {result1}")
-    logger.info()
+    logger.info("")
 
     # Example 2: Already sorted
     logger.info("Example 2: Already Sorted")
@@ -131,7 +131,7 @@ def main() -> None:
     result2 = quick_sort(data2.copy())
     logger.info(f"Sorted:   {result2}")
     logger.info("Note: May have worst-case O(n²) performance")
-    logger.info()
+    logger.info("")
 
     # Example 3: Randomized pivot
     logger.info("Example 3: Randomized Pivot Selection")
@@ -141,7 +141,7 @@ def main() -> None:
     result3 = quick_sort_randomized(data3.copy())
     logger.info(f"Sorted:   {result3}")
     logger.info("Randomization helps avoid worst case")
-    logger.info()
+    logger.info("")
 
     # Example 4: Strings
     logger.info("Example 4: Sorting Strings")
@@ -150,7 +150,7 @@ def main() -> None:
     logger.info(f"Original: {data4}")
     result4 = quick_sort(data4.copy())
     logger.info(f"Sorted:   {result4}")
-    logger.info()
+    logger.info("")
 
     # Example 5: Large dataset
     logger.info("Example 5: Large Random Dataset")
@@ -159,7 +159,7 @@ def main() -> None:
     logger.info(f"Original (20 elements): {data5[:10]}...")
     result5 = quick_sort(data5.copy())
     logger.info(f"Sorted (first 10):      {result5[:10]}...")
-    logger.info()
+    logger.info("")
 
     logger.info("=" * 70)
     logger.info("\nComplexity Summary:")
