@@ -1,10 +1,10 @@
+package semester_16.lecture_114_real_time_analytics.real_time_alerts;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_16.lecture_114_real_time_analytics.real_time_alerts;
- * Real Time Alerts implementation.
+
+/*** Real Time Alerts implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

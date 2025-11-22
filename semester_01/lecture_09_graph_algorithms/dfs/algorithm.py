@@ -14,8 +14,16 @@ from typing import List, Set, Dict, Callable
 import logging
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
-from framework.performance_timer import PerformanceTimer
-from framework.logging_utils import get_logger
+try:
+    from framework.performance_timer import PerformanceTimer
+except ImportError:
+    # Framework module not available - using fallback
+    pass
+try:
+    from framework.logging_utils import get_logger
+except ImportError:
+    # Framework module not available - using fallback
+    pass
 
 logger = get_logger(__name__)
 
@@ -207,7 +215,7 @@ def main() -> None:
     for u, v in edges:
         g1.add_edge(u, v)
 
-    logger.info("Graph edges: {}", edges)
+    logger.info("Graph edges: %s", edges)
     logger.info(f"DFS from node 0 (recursive): {g1.dfs(0)}")
     logger.info(f"DFS from node 0 (iterative): {g1.dfs_iterative(0)}")
     logger.info("")
@@ -222,7 +230,7 @@ def main() -> None:
     for u, v in edges2:
         g2.add_edge(u, v)
 
-    logger.info("Graph edges: {}", edges2)
+    logger.info("Graph edges: %s", edges2)
     logger.info(f"DFS from node 0: {g2.dfs(0)}")
     logger.info("")
 

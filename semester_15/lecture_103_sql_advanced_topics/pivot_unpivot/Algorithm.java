@@ -1,10 +1,10 @@
+package semester_15.lecture_103_sql_advanced_topics.pivot_unpivot;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_15.lecture_103_sql_advanced_topics.pivot_unpivot;
- * Pivot Unpivot implementation.
+
+/*** Pivot Unpivot implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

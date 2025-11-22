@@ -1,10 +1,10 @@
+package semester_12.lecture_81_quantum_applications.quantum_ai;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_12.lecture_81_quantum_applications.quantum_ai;
- * Quantum Ai implementation.
+
+/*** Quantum Ai implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

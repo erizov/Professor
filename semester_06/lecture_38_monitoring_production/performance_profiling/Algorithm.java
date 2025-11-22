@@ -1,10 +1,10 @@
+package semester_06.lecture_38_monitoring_production.performance_profiling;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_06.lecture_38_monitoring_production.performance_profiling;
- * Performance Profiling implementation.
+
+/*** Performance Profiling implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

@@ -1,10 +1,10 @@
+package semester_15.lecture_106_nosql_advanced_topics.nosql_aggregation;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_15.lecture_106_nosql_advanced_topics.nosql_aggregation;
- * Nosql Aggregation implementation.
+
+/*** Nosql Aggregation implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

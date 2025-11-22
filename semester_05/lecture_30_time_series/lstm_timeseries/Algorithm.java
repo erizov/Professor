@@ -1,10 +1,10 @@
+package semester_05.lecture_30_time_series.lstm_timeseries;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_05.lecture_30_time_series.lstm_timeseries;
- * Lstm Timeseries implementation.
+
+/*** Lstm Timeseries implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

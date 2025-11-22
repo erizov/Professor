@@ -93,11 +93,17 @@ def test_java_file(java_file: Path, timeout: int = 30) -> Tuple[bool, str, str]:
         if package_match:
             package_name = package_match.group(1)
             class_name = f"{package_name}.Algorithm"
+            # For packaged classes, use project root as classpath since we compiled with -d .
             classpath = "."
+            # Verify the class file exists in the source directory
+            class_file_path = java_file.parent / "Algorithm.class"
+            if not class_file_path.exists():
+                return False, f"Compiled class file not found: {class_file_path}", ""
         else:
             class_name = "Algorithm"
             classpath = str(java_file.parent)
-        
+
+        # Enhanced Java execution with better classpath handling
         run_result = subprocess.run(
             ["java", "-cp", classpath, class_name],
             capture_output=True,
@@ -150,7 +156,7 @@ def test_python_file(python_file: Path, timeout: int = 30) -> Tuple[bool, str, s
         error_msg = result.stderr or ""
 
         if not success:
-            # Combine stdout and stderr for better error info
+            # Combine stdout and stderr for better error info (keep longer messages)
             error_msg = f"{error_msg}\n{output}" if error_msg else output
 
         return success, error_msg, output
@@ -306,8 +312,8 @@ def main():
             issue_list = [k for k, v in issues.items() if v]
             if issue_list:
                 print(f"  Issues: {', '.join(issue_list)}")
-            # Show first 150 chars of error (reduced from 200)
-            error_preview = error_msg[:150] if error_msg else "No error message"
+            # Show first 500 chars of error for better debugging
+            error_preview = error_msg[:500] if error_msg else "No error message"
             print(f"  Error: {error_preview}...")
             status = 'failure'
             still_failing_count += 1

@@ -1,10 +1,10 @@
+package semester_12.lecture_80_quantum_computing_advanced.quantum_circuits;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_12.lecture_80_quantum_computing_advanced.quantum_circuits;
- * Quantum Circuits implementation.
+
+/*** Quantum Circuits implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

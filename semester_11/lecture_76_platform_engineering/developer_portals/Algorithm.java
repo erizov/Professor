@@ -1,10 +1,10 @@
+package semester_11.lecture_76_platform_engineering.developer_portals;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_11.lecture_76_platform_engineering.developer_portals;
- * Developer Portals implementation.
+
+/*** Developer Portals implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

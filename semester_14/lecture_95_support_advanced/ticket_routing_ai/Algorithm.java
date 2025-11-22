@@ -1,10 +1,10 @@
+package semester_14.lecture_95_support_advanced.ticket_routing_ai;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_14.lecture_95_support_advanced.ticket_routing_ai;
- * Ticket Routing Ai implementation.
+
+/*** Ticket Routing Ai implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

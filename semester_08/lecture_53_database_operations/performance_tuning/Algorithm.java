@@ -1,10 +1,10 @@
+package semester_08.lecture_53_database_operations.performance_tuning;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_08.lecture_53_database_operations.performance_tuning;
- * Performance Tuning implementation.
+
+/*** Performance Tuning implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

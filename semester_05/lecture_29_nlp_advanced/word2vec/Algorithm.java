@@ -1,10 +1,10 @@
+package semester_05.lecture_29_nlp_advanced.word2vec;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_05.lecture_29_nlp_advanced.word2vec;
- * Word2Vec implementation.
+
+/*** Word2Vec implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

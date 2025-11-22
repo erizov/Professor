@@ -1,10 +1,10 @@
+package semester_11.lecture_74_automation_advanced.predictive_scaling;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_11.lecture_74_automation_advanced.predictive_scaling;
- * Predictive Scaling implementation.
+
+/*** Predictive Scaling implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

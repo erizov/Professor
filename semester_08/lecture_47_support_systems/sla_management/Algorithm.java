@@ -1,10 +1,10 @@
+package semester_08.lecture_47_support_systems.sla_management;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_08.lecture_47_support_systems.sla_management;
- * Sla Management implementation.
+
+/*** Sla Management implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

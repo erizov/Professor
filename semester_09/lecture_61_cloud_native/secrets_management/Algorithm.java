@@ -1,10 +1,10 @@
+package semester_09.lecture_61_cloud_native.secrets_management;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_09.lecture_61_cloud_native.secrets_management;
- * Secrets Management implementation.
+
+/*** Secrets Management implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

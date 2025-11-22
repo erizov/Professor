@@ -1,9 +1,9 @@
+package sandboxes.3.semester_10_lecture_67_rag_advanced_agentic_rag_java.version_1;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
-package sandboxes.3.semester_10_lecture_67_rag_advanced_agentic_rag_java.version_1;
  * Agentic Rag implementation.
  */
 public class Algorithm {

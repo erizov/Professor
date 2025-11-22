@@ -1,10 +1,10 @@
+package semester_02.lecture_09_behavioral_patterns.chain_of_responsibility;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_02.lecture_09_behavioral_patterns.chain_of_responsibility;
- * Chain Of Responsibility implementation.
+
+/*** Chain Of Responsibility implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

@@ -1,10 +1,10 @@
+package semester_12.lecture_84_quantum_hardware.quantum_characterization;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_12.lecture_84_quantum_hardware.quantum_characterization;
- * Quantum Characterization implementation.
+
+/*** Quantum Characterization implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

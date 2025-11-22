@@ -1,8 +1,8 @@
+package semester_02.lecture_08_structural_patterns.composite;
 import java.util.*;
 
-/**
-package semester_02.lecture_08_structural_patterns.composite;
- * Composite Design Pattern.
+
+/*** Composite Design Pattern.
  * 
  * Composes objects into tree structures.
  */

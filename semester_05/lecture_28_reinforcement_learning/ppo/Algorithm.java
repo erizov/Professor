@@ -1,10 +1,10 @@
+package semester_05.lecture_28_reinforcement_learning.ppo;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_05.lecture_28_reinforcement_learning.ppo;
- * Ppo implementation.
+
+/*** Ppo implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

@@ -1,10 +1,10 @@
+package semester_08.lecture_50_sql_advanced.database_design;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_08.lecture_50_sql_advanced.database_design;
- * Database Design implementation.
+
+/*** Database Design implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

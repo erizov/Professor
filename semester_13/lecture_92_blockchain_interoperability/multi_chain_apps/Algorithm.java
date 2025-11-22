@@ -1,10 +1,10 @@
+package semester_13.lecture_92_blockchain_interoperability.multi_chain_apps;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_13.lecture_92_blockchain_interoperability.multi_chain_apps;
- * Multi Chain Apps implementation.
+
+/*** Multi Chain Apps implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

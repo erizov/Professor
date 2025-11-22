@@ -50,9 +50,9 @@ def analyze_failing_java():
 
             # Compilation errors
             if any(keyword in error_lower for keyword in ['cannot find symbol', 'class not found', 'package', 'compilation', 'javac']):
-                compilation_errors.append((algorithm_path, error_message[:200]))
+                compilation_errors.append((algorithm_path, error_message[:1000]))  # Keep longer compilation errors
             else:
-                runtime_errors.append((algorithm_path, error_message[:200]))
+                runtime_errors.append((algorithm_path, error_message[:1000]))  # Keep longer runtime errors
 
             # Common error patterns
             if 'cannot find symbol' in error_lower:

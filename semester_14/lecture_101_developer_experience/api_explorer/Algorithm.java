@@ -1,10 +1,10 @@
+package semester_14.lecture_101_developer_experience.api_explorer;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_14.lecture_101_developer_experience.api_explorer;
- * Api Explorer implementation.
+
+/*** Api Explorer implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

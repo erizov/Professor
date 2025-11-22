@@ -1,10 +1,10 @@
+package semester_12.lecture_82_hybrid_quantum.quantum_optimization_hybrid;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_12.lecture_82_hybrid_quantum.quantum_optimization_hybrid;
- * Quantum Optimization Hybrid implementation.
+
+/*** Quantum Optimization Hybrid implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

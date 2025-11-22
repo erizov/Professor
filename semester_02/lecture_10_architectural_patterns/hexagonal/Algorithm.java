@@ -1,10 +1,10 @@
+package semester_02.lecture_10_architectural_patterns.hexagonal;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_02.lecture_10_architectural_patterns.hexagonal;
- * Hexagonal implementation.
+
+/*** Hexagonal implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

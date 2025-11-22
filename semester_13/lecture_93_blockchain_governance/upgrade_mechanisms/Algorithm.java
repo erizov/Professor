@@ -1,10 +1,10 @@
+package semester_13.lecture_93_blockchain_governance.upgrade_mechanisms;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_13.lecture_93_blockchain_governance.upgrade_mechanisms;
- * Upgrade Mechanisms implementation.
+
+/*** Upgrade Mechanisms implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

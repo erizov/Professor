@@ -1,10 +1,10 @@
+package semester_05.lecture_29_nlp_advanced.seq2seq;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_05.lecture_29_nlp_advanced.seq2seq;
- * Seq2Seq implementation.
+
+/*** Seq2Seq implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

@@ -1,10 +1,10 @@
+package semester_14.lecture_98_documentation_advanced.api_docs_advanced;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_14.lecture_98_documentation_advanced.api_docs_advanced;
- * Api Docs Advanced implementation.
+
+/*** Api Docs Advanced implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

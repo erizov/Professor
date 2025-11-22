@@ -1,10 +1,10 @@
+package semester_04.lecture_19_distributed_patterns.gossip_protocol;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_04.lecture_19_distributed_patterns.gossip_protocol;
- * Gossip Protocol implementation.
+
+/*** Gossip Protocol implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

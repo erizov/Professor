@@ -1,10 +1,10 @@
+package semester_06.lecture_32_distributed_ml.parameter_server;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_06.lecture_32_distributed_ml.parameter_server;
- * Parameter Server implementation.
+
+/*** Parameter Server implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

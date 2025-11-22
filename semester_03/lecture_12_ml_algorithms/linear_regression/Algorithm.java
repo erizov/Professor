@@ -1,6 +1,6 @@
-/**
 package semester_03.lecture_12_ml_algorithms.linear_regression;
- * Linear Regression implementation.
+
+/*** Linear Regression implementation.
  * 
  * Models linear relationship between variables.
  * 

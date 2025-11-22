@@ -1,10 +1,10 @@
+package semester_07.lecture_46_blockchain_advanced.blockchain_scalability;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_07.lecture_46_blockchain_advanced.blockchain_scalability;
- * Blockchain Scalability implementation.
+
+/*** Blockchain Scalability implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

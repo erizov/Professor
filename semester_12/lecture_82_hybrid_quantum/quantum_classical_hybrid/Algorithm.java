@@ -1,10 +1,10 @@
+package semester_12.lecture_82_hybrid_quantum.quantum_classical_hybrid;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_12.lecture_82_hybrid_quantum.quantum_classical_hybrid;
- * Quantum Classical Hybrid implementation.
+
+/*** Quantum Classical Hybrid implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

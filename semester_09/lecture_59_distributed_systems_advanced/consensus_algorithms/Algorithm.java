@@ -1,10 +1,10 @@
+package semester_09.lecture_59_distributed_systems_advanced.consensus_algorithms;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_09.lecture_59_distributed_systems_advanced.consensus_algorithms;
- * Consensus Algorithms implementation.
+
+/*** Consensus Algorithms implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

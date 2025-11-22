@@ -72,9 +72,17 @@ class TestBfs(AlgorithmTestCase):
 
     def test_disconnected_graph(self):
         """Test with disconnected components."""
-        graph = {0: [1], 1: [0], 2: [3], 3: [2]}
-        result = self.algorithm(graph, 0)
+        # Create graph instance and add edges
+        g = self.algorithm()
+        graph_dict = {0: [1], 1: [0], 2: [3], 3: [2]}
+        for u, neighbors in graph_dict.items():
+            for v in neighbors:
+                g.add_edge(u, v)
+
+        result = g.bfs(0)
         self.assertIn(0, result)
+        self.assertIn(1, result)
+        # Note: nodes 2,3 are disconnected from 0, so won't be visited
 
 
 if __name__ == "__main__":

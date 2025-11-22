@@ -1,10 +1,10 @@
+package semester_16.lecture_118_data_platforms.data_marketplace;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_16.lecture_118_data_platforms.data_marketplace;
- * Data Marketplace implementation.
+
+/*** Data Marketplace implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

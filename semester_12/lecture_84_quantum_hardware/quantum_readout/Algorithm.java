@@ -1,10 +1,10 @@
+package semester_12.lecture_84_quantum_hardware.quantum_readout;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_12.lecture_84_quantum_hardware.quantum_readout;
- * Quantum Readout implementation.
+
+/*** Quantum Readout implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

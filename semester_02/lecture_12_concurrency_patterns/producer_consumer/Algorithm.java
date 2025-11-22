@@ -1,10 +1,10 @@
+package semester_02.lecture_12_concurrency_patterns.producer_consumer;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_02.lecture_12_concurrency_patterns.producer_consumer;
- * Producer Consumer implementation.
+
+/*** Producer Consumer implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

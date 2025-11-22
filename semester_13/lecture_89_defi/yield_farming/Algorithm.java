@@ -1,10 +1,10 @@
+package semester_13.lecture_89_defi.yield_farming;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_13.lecture_89_defi.yield_farming;
- * Yield Farming implementation.
+
+/*** Yield Farming implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

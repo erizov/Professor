@@ -1,10 +1,10 @@
+package semester_08.lecture_52_nosql_advanced.nosql_sharding;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_08.lecture_52_nosql_advanced.nosql_sharding;
- * Nosql Sharding implementation.
+
+/*** Nosql Sharding implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

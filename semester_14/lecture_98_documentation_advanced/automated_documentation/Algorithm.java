@@ -1,10 +1,10 @@
+package semester_14.lecture_98_documentation_advanced.automated_documentation;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_14.lecture_98_documentation_advanced.automated_documentation;
- * Automated Documentation implementation.
+
+/*** Automated Documentation implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

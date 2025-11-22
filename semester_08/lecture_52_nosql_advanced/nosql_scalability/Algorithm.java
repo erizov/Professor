@@ -1,10 +1,10 @@
+package semester_08.lecture_52_nosql_advanced.nosql_scalability;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_08.lecture_52_nosql_advanced.nosql_scalability;
- * Nosql Scalability implementation.
+
+/*** Nosql Scalability implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

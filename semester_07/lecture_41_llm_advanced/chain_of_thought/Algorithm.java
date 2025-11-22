@@ -1,10 +1,10 @@
+package semester_07.lecture_41_llm_advanced.chain_of_thought;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_07.lecture_41_llm_advanced.chain_of_thought;
- * Chain Of Thought implementation.
+
+/*** Chain Of Thought implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

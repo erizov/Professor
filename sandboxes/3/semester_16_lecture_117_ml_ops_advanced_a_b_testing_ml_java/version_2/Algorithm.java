@@ -1,9 +1,9 @@
+package sandboxes.3.semester_16_lecture_117_ml_ops_advanced_a_b_testing_ml_java.version_2;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
-package sandboxes.3.semester_16_lecture_117_ml_ops_advanced_a_b_testing_ml_java.version_2;
  * A B Testing Ml implementation.
  */
 public class Algorithm {

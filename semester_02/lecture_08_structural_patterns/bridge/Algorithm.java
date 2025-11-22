@@ -1,10 +1,10 @@
+package semester_02.lecture_08_structural_patterns.bridge;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_02.lecture_08_structural_patterns.bridge;
- * Bridge implementation.
+
+/*** Bridge implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

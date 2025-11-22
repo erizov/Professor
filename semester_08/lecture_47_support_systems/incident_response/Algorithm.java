@@ -1,10 +1,10 @@
+package semester_08.lecture_47_support_systems.incident_response;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_08.lecture_47_support_systems.incident_response;
- * Incident Response implementation.
+
+/*** Incident Response implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

@@ -1,10 +1,10 @@
+package semester_12.lecture_86_quantum_security.quantum_resistant;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_12.lecture_86_quantum_security.quantum_resistant;
- * Quantum Resistant implementation.
+
+/*** Quantum Resistant implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

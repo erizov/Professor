@@ -1,10 +1,10 @@
+package semester_10.lecture_67_rag_advanced.multi_hop_rag;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_10.lecture_67_rag_advanced.multi_hop_rag;
- * Multi Hop Rag implementation.
+
+/*** Multi Hop Rag implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

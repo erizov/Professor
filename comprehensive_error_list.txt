@@ -1,0 +1,869 @@
+================================================================================
+COMPREHENSIVE ALGORITHM ERROR LIST
+================================================================================
+
+EXECUTIVE SUMMARY:
+----------------------------------------
+Total failing tests (latest run): 169
+Java failures: 130
+Python failures: 39
+Overall success rate: 87.4%
+
+ERROR CATEGORIES:
+----------------------------------------
+Runtime: 163 tests
+Syntax: 6 tests
+
+JAVA ALGORITHM FAILURES:
+==================================================
+Total Java failures: 130
+
+Semester semester_01\lecture_07_heaps_priority\binary_heap: 1 failures
+  • semester_01\lecture_07_heaps_priority\binary_heap
+    Error: Error: Could not find or load main class semester_01.lecture_07_heaps_priority.binary_heap.Algorithm...
+
+Semester semester_01\lecture_08_hash_tables\chaining: 1 failures
+  • semester_01\lecture_08_hash_tables\chaining
+    Error: Error: Could not find or load main class semester_01.lecture_08_hash_tables.chaining.Algorithm
+Cause...
+
+Semester semester_01\lecture_08_hash_tables\open_addressing: 1 failures
+  • semester_01\lecture_08_hash_tables\open_addressing
+    Error: Error: Could not find or load main class semester_01.lecture_08_hash_tables.open_addressing.Algorith...
+
+Semester semester_01\lecture_09_graph_algorithms\bellman_ford: 1 failures
+  • semester_01\lecture_09_graph_algorithms\bellman_ford
+    Error: Error: Could not find or load main class semester_01.lecture_09_graph_algorithms.bellman_ford.Algori...
+
+Semester semester_02\lecture_06_solid_principles\single_responsibility: 1 failures
+  • semester_02\lecture_06_solid_principles\single_responsibility
+    Error: Error: Could not find or load main class semester_02.lecture_06_solid_principles.single_responsibili...
+
+Semester semester_02\lecture_07_creational_patterns\factory: 1 failures
+  • semester_02\lecture_07_creational_patterns\factory
+    Error: Error: Could not find or load main class semester_02.lecture_07_creational_patterns.factory.Algorith...
+
+Semester semester_02\lecture_08_structural_patterns\bridge: 1 failures
+  • semester_02\lecture_08_structural_patterns\bridge
+    Error: Error: Could not find or load main class semester_02.lecture_08_structural_patterns.bridge.Algorithm...
+
+Semester semester_02\lecture_08_structural_patterns\composite: 1 failures
+  • semester_02\lecture_08_structural_patterns\composite
+    Error: Error: Could not find or load main class semester_02.lecture_08_structural_patterns.composite.Algori...
+
+Semester semester_02\lecture_09_behavioral_patterns\chain_of_responsibility: 1 failures
+  • semester_02\lecture_09_behavioral_patterns\chain_of_responsibility
+    Error: Error: Could not find or load main class semester_02.lecture_09_behavioral_patterns.chain_of_respons...
+
+Semester semester_02\lecture_09_behavioral_patterns\command: 1 failures
+  • semester_02\lecture_09_behavioral_patterns\command
+    Error: Error: Could not find or load main class semester_02.lecture_09_behavioral_patterns.command.Algorith...
+
+Semester semester_02\lecture_09_behavioral_patterns\template_method: 1 failures
+  • semester_02\lecture_09_behavioral_patterns\template_method
+    Error: Error: Could not find or load main class semester_02.lecture_09_behavioral_patterns.template_method....
+
+Semester semester_02\lecture_10_architectural_patterns\clean_architecture: 1 failures
+  • semester_02\lecture_10_architectural_patterns\clean_architecture
+    Error: Error: Could not find or load main class semester_02.lecture_10_architectural_patterns.clean_archite...
+
+Semester semester_02\lecture_10_architectural_patterns\hexagonal: 1 failures
+  • semester_02\lecture_10_architectural_patterns\hexagonal
+    Error: Error: Could not find or load main class semester_02.lecture_10_architectural_patterns.hexagonal.Alg...
+
+Semester semester_02\lecture_12_concurrency_patterns\producer_consumer: 1 failures
+  • semester_02\lecture_12_concurrency_patterns\producer_consumer
+    Error: Error: Could not find or load main class semester_02.lecture_12_concurrency_patterns.producer_consum...
+
+Semester semester_02\lecture_12_concurrency_patterns\readers_writers: 1 failures
+  • semester_02\lecture_12_concurrency_patterns\readers_writers
+    Error: Error: Could not find or load main class semester_02.lecture_12_concurrency_patterns.readers_writers...
+
+Semester semester_03\lecture_10_graph_algorithms\bellman_ford: 1 failures
+  • semester_03\lecture_10_graph_algorithms\bellman_ford
+    Error: Error: Could not find or load main class semester_03.lecture_10_graph_algorithms.bellman_ford.Algori...
+
+Semester semester_03\lecture_10_graph_algorithms\bfs: 1 failures
+  • semester_03\lecture_10_graph_algorithms\bfs
+    Error: Error: Could not find or load main class semester_03.lecture_10_graph_algorithms.bfs.Algorithm
+Cause...
+
+Semester semester_03\lecture_12_ml_algorithms\linear_regression: 1 failures
+  • semester_03\lecture_12_ml_algorithms\linear_regression
+    Error: Error: Could not find or load main class semester_03.lecture_12_ml_algorithms.linear_regression.Algo...
+
+Semester semester_03\lecture_16_advanced_ml\neural_network: 1 failures
+  • semester_03\lecture_16_advanced_ml\neural_network
+    Error: Error: Could not find or load main class semester_03.lecture_16_advanced_ml.neural_network.Algorithm...
+
+Semester semester_04\lecture_16_deployment_patterns\canary: 1 failures
+  • semester_04\lecture_16_deployment_patterns\canary
+    Error: E:\Python\GptEngineer\Professor\semester_04\lecture_16_deployment_patterns\canary\Algorithm.java:15:...
+
+Semester semester_04\lecture_17_performance\rate_limiting: 1 failures
+  • semester_04\lecture_17_performance\rate_limiting
+    Error: Error: Could not find or load main class semester_04.lecture_17_performance.rate_limiting.Algorithm
+...
+
+Semester semester_04\lecture_18_crypto_algorithms\rsa: 1 failures
+  • semester_04\lecture_18_crypto_algorithms\rsa
+    Error: Error: Could not find or load main class semester_04.lecture_18_crypto_algorithms.rsa.Algorithm
+Caus...
+
+Semester semester_04\lecture_19_distributed_patterns\consistent_hashing: 1 failures
+  • semester_04\lecture_19_distributed_patterns\consistent_hashing
+    Error: Error: Could not find or load main class semester_04.lecture_19_distributed_patterns.consistent_hash...
+
+Semester semester_04\lecture_19_distributed_patterns\gossip_protocol: 1 failures
+  • semester_04\lecture_19_distributed_patterns\gossip_protocol
+    Error: Error: Could not find or load main class semester_04.lecture_19_distributed_patterns.gossip_protocol...
+
+Semester semester_04\lecture_19_distributed_patterns\leader_election: 1 failures
+  • semester_04\lecture_19_distributed_patterns\leader_election
+    Error: Error: Could not find or load main class semester_04.lecture_19_distributed_patterns.leader_election...
+
+Semester semester_05\lecture_22_cnn_architectures\efficientnet: 1 failures
+  • semester_05\lecture_22_cnn_architectures\efficientnet
+    Error: Error: Could not find or load main class semester_05.lecture_22_cnn_architectures.efficientnet.Algor...
+
+Semester semester_05\lecture_22_cnn_architectures\inception: 1 failures
+  • semester_05\lecture_22_cnn_architectures\inception
+    Error: Error: Could not find or load main class semester_05.lecture_22_cnn_architectures.inception.Algorith...
+
+Semester semester_05\lecture_22_cnn_architectures\resnet: 1 failures
+  • semester_05\lecture_22_cnn_architectures\resnet
+    Error: Error: Could not find or load main class semester_05.lecture_22_cnn_architectures.resnet.Algorithm
+C...
+
+Semester semester_05\lecture_22_cnn_architectures\vgg: 1 failures
+  • semester_05\lecture_22_cnn_architectures\vgg
+    Error: Error: Could not find or load main class semester_05.lecture_22_cnn_architectures.vgg.Algorithm
+Caus...
+
+Semester semester_05\lecture_23_object_detection\rcnn: 1 failures
+  • semester_05\lecture_23_object_detection\rcnn
+    Error: Error: Could not find or load main class semester_05.lecture_23_object_detection.rcnn.Algorithm
+Caus...
+
+Semester semester_05\lecture_23_object_detection\ssd: 1 failures
+  • semester_05\lecture_23_object_detection\ssd
+    Error: Error: Could not find or load main class semester_05.lecture_23_object_detection.ssd.Algorithm
+Cause...
+
+Semester semester_05\lecture_23_object_detection\yolo: 1 failures
+  • semester_05\lecture_23_object_detection\yolo
+    Error: Error: Could not find or load main class semester_05.lecture_23_object_detection.yolo.Algorithm
+Caus...
+
+Semester semester_05\lecture_24_segmentation\fcn: 1 failures
+  • semester_05\lecture_24_segmentation\fcn
+    Error: Error: Could not find or load main class semester_05.lecture_24_segmentation.fcn.Algorithm
+Caused by...
+
+Semester semester_05\lecture_24_segmentation\unet: 1 failures
+  • semester_05\lecture_24_segmentation\unet
+    Error: Error: Could not find or load main class semester_05.lecture_24_segmentation.unet.Algorithm
+Caused b...
+
+Semester semester_05\lecture_25_transformers\bert: 1 failures
+  • semester_05\lecture_25_transformers\bert
+    Error: Error: Could not find or load main class semester_05.lecture_25_transformers.bert.Algorithm
+Caused b...
+
+Semester semester_05\lecture_25_transformers\gpt: 1 failures
+  • semester_05\lecture_25_transformers\gpt
+    Error: Error: Could not find or load main class semester_05.lecture_25_transformers.gpt.Algorithm
+Caused by...
+
+Semester semester_05\lecture_25_transformers\transformer: 1 failures
+  • semester_05\lecture_25_transformers\transformer
+    Error: Error: Could not find or load main class semester_05.lecture_25_transformers.transformer.Algorithm
+C...
+
+Semester semester_05\lecture_26_ensemble_methods\boosting: 1 failures
+  • semester_05\lecture_26_ensemble_methods\boosting
+    Error: Error: Could not find or load main class semester_05.lecture_26_ensemble_methods.boosting.Algorithm
+...
+
+Semester semester_05\lecture_27_hyperparameter_optimization\bayesian_optimization: 1 failures
+  • semester_05\lecture_27_hyperparameter_optimization\bayesian_optimization
+    Error: E:\Python\GptEngineer\Professor\semester_05\lecture_27_hyperparameter_optimization\bayesian_optimiza...
+
+Semester semester_05\lecture_27_hyperparameter_optimization\grid_search: 1 failures
+  • semester_05\lecture_27_hyperparameter_optimization\grid_search
+    Error: Error: Could not find or load main class semester_05.lecture_27_hyperparameter_optimization.grid_sea...
+
+Semester semester_05\lecture_27_hyperparameter_optimization\optuna: 1 failures
+  • semester_05\lecture_27_hyperparameter_optimization\optuna
+    Error: Error: Could not find or load main class semester_05.lecture_27_hyperparameter_optimization.optuna.A...
+
+Semester semester_05\lecture_28_reinforcement_learning\actor_critic: 1 failures
+  • semester_05\lecture_28_reinforcement_learning\actor_critic
+    Error: Error: Could not find or load main class semester_05.lecture_28_reinforcement_learning.actor_critic....
+
+Semester semester_05\lecture_28_reinforcement_learning\dqn: 1 failures
+  • semester_05\lecture_28_reinforcement_learning\dqn
+    Error: Error: Could not find or load main class semester_05.lecture_28_reinforcement_learning.dqn.Algorithm...
+
+Semester semester_05\lecture_28_reinforcement_learning\policy_gradient: 1 failures
+  • semester_05\lecture_28_reinforcement_learning\policy_gradient
+    Error: Error: Could not find or load main class semester_05.lecture_28_reinforcement_learning.policy_gradie...
+
+Semester semester_05\lecture_28_reinforcement_learning\ppo: 1 failures
+  • semester_05\lecture_28_reinforcement_learning\ppo
+    Error: Error: Could not find or load main class semester_05.lecture_28_reinforcement_learning.ppo.Algorithm...
+
+Semester semester_05\lecture_28_reinforcement_learning\q_learning: 1 failures
+  • semester_05\lecture_28_reinforcement_learning\q_learning
+    Error: Error: Could not find or load main class semester_05.lecture_28_reinforcement_learning.q_learning.Al...
+
+Semester semester_05\lecture_29_nlp_advanced\glove: 1 failures
+  • semester_05\lecture_29_nlp_advanced\glove
+    Error: Error: Could not find or load main class semester_05.lecture_29_nlp_advanced.glove.Algorithm
+Caused ...
+
+Semester semester_05\lecture_29_nlp_advanced\ner: 1 failures
+  • semester_05\lecture_29_nlp_advanced\ner
+    Error: Error: Could not find or load main class semester_05.lecture_29_nlp_advanced.ner.Algorithm
+Caused by...
+
+Semester semester_05\lecture_29_nlp_advanced\seq2seq: 1 failures
+  • semester_05\lecture_29_nlp_advanced\seq2seq
+    Error: Error: Could not find or load main class semester_05.lecture_29_nlp_advanced.seq2seq.Algorithm
+Cause...
+
+Semester semester_05\lecture_29_nlp_advanced\word2vec: 1 failures
+  • semester_05\lecture_29_nlp_advanced\word2vec
+    Error: Error: Could not find or load main class semester_05.lecture_29_nlp_advanced.word2vec.Algorithm
+Caus...
+
+Semester semester_05\lecture_30_time_series\lstm_timeseries: 1 failures
+  • semester_05\lecture_30_time_series\lstm_timeseries
+    Error: Error: Could not find or load main class semester_05.lecture_30_time_series.lstm_timeseries.Algorith...
+
+Semester semester_06\lecture_31_mlops\ab_testing: 1 failures
+  • semester_06\lecture_31_mlops\ab_testing
+    Error: Error: Could not find or load main class semester_06.lecture_31_mlops.ab_testing.Algorithm
+Caused by...
+
+Semester semester_06\lecture_31_mlops\model_versioning: 1 failures
+  • semester_06\lecture_31_mlops\model_versioning
+    Error: Error: Could not find or load main class semester_06.lecture_31_mlops.model_versioning.Algorithm
+Cau...
+
+Semester semester_06\lecture_32_distributed_ml\allreduce: 1 failures
+  • semester_06\lecture_32_distributed_ml\allreduce
+    Error: Error: Could not find or load main class semester_06.lecture_32_distributed_ml.allreduce.Algorithm
+C...
+
+Semester semester_06\lecture_32_distributed_ml\parameter_server: 1 failures
+  • semester_06\lecture_32_distributed_ml\parameter_server
+    Error: Error: Could not find or load main class semester_06.lecture_32_distributed_ml.parameter_server.Algo...
+
+Semester semester_06\lecture_33_model_optimization\knowledge_distillation: 1 failures
+  • semester_06\lecture_33_model_optimization\knowledge_distillation
+    Error: Error: Could not find or load main class semester_06.lecture_33_model_optimization.knowledge_distill...
+
+Semester semester_06\lecture_33_model_optimization\nas: 1 failures
+  • semester_06\lecture_33_model_optimization\nas
+    Error: E:\Python\GptEngineer\Professor\semester_06\lecture_33_model_optimization\nas\Algorithm.java:19: err...
+
+Semester semester_06\lecture_33_model_optimization\onnx: 1 failures
+  • semester_06\lecture_33_model_optimization\onnx
+    Error: Error: Could not find or load main class semester_06.lecture_33_model_optimization.onnx.Algorithm
+Ca...
+
+Semester semester_06\lecture_33_model_optimization\pruning: 1 failures
+  • semester_06\lecture_33_model_optimization\pruning
+    Error: Error: Could not find or load main class semester_06.lecture_33_model_optimization.pruning.Algorithm...
+
+Semester semester_06\lecture_33_model_optimization\quantization: 1 failures
+  • semester_06\lecture_33_model_optimization\quantization
+    Error: Error: Could not find or load main class semester_06.lecture_33_model_optimization.quantization.Algo...
+
+Semester semester_06\lecture_33_model_optimization\tensorrt: 1 failures
+  • semester_06\lecture_33_model_optimization\tensorrt
+    Error: Error: Could not find or load main class semester_06.lecture_33_model_optimization.tensorrt.Algorith...
+
+Semester semester_06\lecture_34_edge_ai\edge_deployment: 1 failures
+  • semester_06\lecture_34_edge_ai\edge_deployment
+    Error: Error: Could not find or load main class semester_06.lecture_34_edge_ai.edge_deployment.Algorithm
+Ca...
+
+Semester semester_06\lecture_34_edge_ai\iot_ml: 1 failures
+  • semester_06\lecture_34_edge_ai\iot_ml
+    Error: Error: Could not find or load main class semester_06.lecture_34_edge_ai.iot_ml.Algorithm
+Caused by: ...
+
+Semester semester_06\lecture_34_edge_ai\tflite: 1 failures
+  • semester_06\lecture_34_edge_ai\tflite
+    Error: Error: Could not find or load main class semester_06.lecture_34_edge_ai.tflite.Algorithm
+Caused by: ...
+
+Semester semester_06\lecture_35_deployment_patterns\multi_armed_bandit: 1 failures
+  • semester_06\lecture_35_deployment_patterns\multi_armed_bandit
+    Error: Error: Could not find or load main class semester_06.lecture_35_deployment_patterns.multi_armed_band...
+
+Semester semester_06\lecture_36_inference_optimization\gpu_optimization: 1 failures
+  • semester_06\lecture_36_inference_optimization\gpu_optimization
+    Error: Error: Could not find or load main class semester_06.lecture_36_inference_optimization.gpu_optimizat...
+
+Semester semester_06\lecture_37_cost_optimization\autoscaling: 1 failures
+  • semester_06\lecture_37_cost_optimization\autoscaling
+    Error: Error: Could not find or load main class semester_06.lecture_37_cost_optimization.autoscaling.Algori...
+
+Semester semester_06\lecture_37_cost_optimization\cost_analysis: 1 failures
+  • semester_06\lecture_37_cost_optimization\cost_analysis
+    Error: Error: Could not find or load main class semester_06.lecture_37_cost_optimization.cost_analysis.Algo...
+
+Semester semester_06\lecture_38_monitoring_production\performance_profiling: 1 failures
+  • semester_06\lecture_38_monitoring_production\performance_profiling
+    Error: Error: Could not find or load main class semester_06.lecture_38_monitoring_production.performance_pr...
+
+Semester semester_06\lecture_38_monitoring_production\prometheus_ml: 1 failures
+  • semester_06\lecture_38_monitoring_production\prometheus_ml
+    Error: Error: Could not find or load main class semester_06.lecture_38_monitoring_production.prometheus_ml....
+
+Semester semester_07\lecture_39_operating_systems\deadlock_detection: 1 failures
+  • semester_07\lecture_39_operating_systems\deadlock_detection
+    Error: Error: Could not find or load main class semester_07.lecture_39_operating_systems.deadlock_detection...
+
+Semester semester_07\lecture_39_operating_systems\file_systems: 1 failures
+  • semester_07\lecture_39_operating_systems\file_systems
+    Error: Error: Could not find or load main class semester_07.lecture_39_operating_systems.file_systems.Algor...
+
+Semester semester_07\lecture_39_operating_systems\virtual_memory: 1 failures
+  • semester_07\lecture_39_operating_systems\virtual_memory
+    Error: Error: Could not find or load main class semester_07.lecture_39_operating_systems.virtual_memory.Alg...
+
+Semester semester_07\lecture_40_llm_fundamentals\llm_architecture: 1 failures
+  • semester_07\lecture_40_llm_fundamentals\llm_architecture
+    Error: Error: Could not find or load main class semester_07.lecture_40_llm_fundamentals.llm_architecture.Al...
+
+Semester semester_07\lecture_40_llm_fundamentals\retrieval_augmented_generation: 1 failures
+  • semester_07\lecture_40_llm_fundamentals\retrieval_augmented_generation
+    Error: Error: Could not find or load main class semester_07.lecture_40_llm_fundamentals.retrieval_augmented...
+
+Semester semester_07\lecture_40_llm_fundamentals\tokenization: 1 failures
+  • semester_07\lecture_40_llm_fundamentals\tokenization
+    Error: Error: Could not find or load main class semester_07.lecture_40_llm_fundamentals.tokenization.Algori...
+
+Semester semester_07\lecture_41_llm_advanced\chain_of_thought: 1 failures
+  • semester_07\lecture_41_llm_advanced\chain_of_thought
+    Error: Error: Could not find or load main class semester_07.lecture_41_llm_advanced.chain_of_thought.Algori...
+
+Semester semester_07\lecture_41_llm_advanced\few_shot_learning: 1 failures
+  • semester_07\lecture_41_llm_advanced\few_shot_learning
+    Error: Error: Could not find or load main class semester_07.lecture_41_llm_advanced.few_shot_learning.Algor...
+
+Semester semester_07\lecture_41_llm_advanced\llm_distillation: 1 failures
+  • semester_07\lecture_41_llm_advanced\llm_distillation
+    Error: Error: Could not find or load main class semester_07.lecture_41_llm_advanced.llm_distillation.Algori...
+
+Semester semester_07\lecture_41_llm_advanced\llm_quantization: 1 failures
+  • semester_07\lecture_41_llm_advanced\llm_quantization
+    Error: Error: Could not find or load main class semester_07.lecture_41_llm_advanced.llm_quantization.Algori...
+
+Semester semester_07\lecture_43_ci_cd_advanced\gitops: 1 failures
+  • semester_07\lecture_43_ci_cd_advanced\gitops
+    Error: Error: Could not find or load main class semester_07.lecture_43_ci_cd_advanced.gitops.Algorithm
+Caus...
+
+Semester semester_07\lecture_44_quantum_computing\grover_algorithm: 1 failures
+  • semester_07\lecture_44_quantum_computing\grover_algorithm
+    Error: Error: Could not find or load main class semester_07.lecture_44_quantum_computing.grover_algorithm.A...
+
+Semester semester_07\lecture_44_quantum_computing\quantum_algorithms: 1 failures
+  • semester_07\lecture_44_quantum_computing\quantum_algorithms
+    Error: Error: Could not find or load main class semester_07.lecture_44_quantum_computing.quantum_algorithms...
+
+Semester semester_07\lecture_44_quantum_computing\quantum_entanglement: 1 failures
+  • semester_07\lecture_44_quantum_computing\quantum_entanglement
+    Error: Error: Could not find or load main class semester_07.lecture_44_quantum_computing.quantum_entangleme...
+
+Semester semester_07\lecture_44_quantum_computing\quantum_superposition: 1 failures
+  • semester_07\lecture_44_quantum_computing\quantum_superposition
+    Error: Error: Could not find or load main class semester_07.lecture_44_quantum_computing.quantum_superposit...
+
+Semester semester_07\lecture_45_blockchain_fundamentals\consensus_mechanisms: 1 failures
+  • semester_07\lecture_45_blockchain_fundamentals\consensus_mechanisms
+    Error: Error: Could not find or load main class semester_07.lecture_45_blockchain_fundamentals.consensus_me...
+
+Semester semester_07\lecture_46_blockchain_advanced\blockchain_scalability: 1 failures
+  • semester_07\lecture_46_blockchain_advanced\blockchain_scalability
+    Error: Error: Could not find or load main class semester_07.lecture_46_blockchain_advanced.blockchain_scala...
+
+Semester semester_07\lecture_46_blockchain_advanced\cryptocurrency_wallets: 1 failures
+  • semester_07\lecture_46_blockchain_advanced\cryptocurrency_wallets
+    Error: Error: Could not find or load main class semester_07.lecture_46_blockchain_advanced.cryptocurrency_w...
+
+Semester semester_08\lecture_47_support_systems\escalation_procedures: 1 failures
+  • semester_08\lecture_47_support_systems\escalation_procedures
+    Error: Error: Could not find or load main class semester_08.lecture_47_support_systems.escalation_procedure...
+
+Semester semester_08\lecture_47_support_systems\incident_response: 1 failures
+  • semester_08\lecture_47_support_systems\incident_response
+    Error: Error: Could not find or load main class semester_08.lecture_47_support_systems.incident_response.Al...
+
+Semester semester_08\lecture_47_support_systems\sla_management: 1 failures
+  • semester_08\lecture_47_support_systems\sla_management
+    Error: Error: Could not find or load main class semester_08.lecture_47_support_systems.sla_management.Algor...
+
+Semester semester_08\lecture_48_documentation\documentation_generation: 1 failures
+  • semester_08\lecture_48_documentation\documentation_generation
+    Error: Error: Could not find or load main class semester_08.lecture_48_documentation.documentation_generati...
+
+Semester semester_08\lecture_49_sql_fundamentals\indexes: 1 failures
+  • semester_08\lecture_49_sql_fundamentals\indexes
+    Error: Error: Could not find or load main class semester_08.lecture_49_sql_fundamentals.indexes.Algorithm
+C...
+
+Semester semester_08\lecture_50_sql_advanced\database_design: 1 failures
+  • semester_08\lecture_50_sql_advanced\database_design
+    Error: Error: Could not find or load main class semester_08.lecture_50_sql_advanced.database_design.Algorit...
+
+Semester semester_08\lecture_51_nosql_fundamentals\graph_databases: 1 failures
+  • semester_08\lecture_51_nosql_fundamentals\graph_databases
+    Error: Error: Could not find or load main class semester_08.lecture_51_nosql_fundamentals.graph_databases.A...
+
+Semester semester_08\lecture_51_nosql_fundamentals\nosql_querying: 1 failures
+  • semester_08\lecture_51_nosql_fundamentals\nosql_querying
+    Error: Error: Could not find or load main class semester_08.lecture_51_nosql_fundamentals.nosql_querying.Al...
+
+Semester semester_08\lecture_52_nosql_advanced\nosql_scalability: 1 failures
+  • semester_08\lecture_52_nosql_advanced\nosql_scalability
+    Error: Error: Could not find or load main class semester_08.lecture_52_nosql_advanced.nosql_scalability.Alg...
+
+Semester semester_08\lecture_52_nosql_advanced\nosql_sharding: 1 failures
+  • semester_08\lecture_52_nosql_advanced\nosql_sharding
+    Error: Error: Could not find or load main class semester_08.lecture_52_nosql_advanced.nosql_sharding.Algori...
+
+Semester semester_08\lecture_53_database_operations\backup_strategies: 1 failures
+  • semester_08\lecture_53_database_operations\backup_strategies
+    Error: Error: Could not find or load main class semester_08.lecture_53_database_operations.backup_strategie...
+
+Semester semester_08\lecture_53_database_operations\capacity_planning: 1 failures
+  • semester_08\lecture_53_database_operations\capacity_planning
+    Error: Error: Could not find or load main class semester_08.lecture_53_database_operations.capacity_plannin...
+
+Semester semester_08\lecture_53_database_operations\performance_tuning: 1 failures
+  • semester_08\lecture_53_database_operations\performance_tuning
+    Error: Error: Could not find or load main class semester_08.lecture_53_database_operations.performance_tuni...
+
+Semester semester_09\lecture_55_advanced_os\exokernel_design: 1 failures
+  • semester_09\lecture_55_advanced_os\exokernel_design
+    Error: E:\Python\GptEngineer\Professor\semester_09\lecture_55_advanced_os\exokernel_design\Algorithm.java:4...
+
+Semester semester_09\lecture_55_advanced_os\microkernel_architecture: 1 failures
+  • semester_09\lecture_55_advanced_os\microkernel_architecture
+    Error: E:\Python\GptEngineer\Professor\semester_09\lecture_55_advanced_os\microkernel_architecture\Algorith...
+
+Semester semester_09\lecture_56_os_performance\memory_optimization: 1 failures
+  • semester_09\lecture_56_os_performance\memory_optimization
+    Error: Error: Could not find or load main class semester_09.lecture_56_os_performance.memory_optimization.A...
+
+Semester semester_09\lecture_56_os_performance\performance_profiling: 1 failures
+  • semester_09\lecture_56_os_performance\performance_profiling
+    Error: Error: Could not find or load main class semester_09.lecture_56_os_performance.performance_profiling...
+
+Semester semester_09\lecture_57_concurrency_advanced\concurrent_data_structures: 1 failures
+  • semester_09\lecture_57_concurrency_advanced\concurrent_data_structures
+    Error: Error: Could not find or load main class semester_09.lecture_57_concurrency_advanced.concurrent_data...
+
+Semester semester_09\lecture_58_parallel_computing\gpu_computing: 1 failures
+  • semester_09\lecture_58_parallel_computing\gpu_computing
+    Error: Error: Could not find or load main class semester_09.lecture_58_parallel_computing.gpu_computing.Alg...
+
+Semester semester_09\lecture_58_parallel_computing\parallel_algorithms: 1 failures
+  • semester_09\lecture_58_parallel_computing\parallel_algorithms
+    Error: Error: Could not find or load main class semester_09.lecture_58_parallel_computing.parallel_algorith...
+
+Semester semester_09\lecture_58_parallel_computing\parallel_prefix: 1 failures
+  • semester_09\lecture_58_parallel_computing\parallel_prefix
+    Error: Error: Could not find or load main class semester_09.lecture_58_parallel_computing.parallel_prefix.A...
+
+Semester semester_09\lecture_58_parallel_computing\parallel_reduction: 1 failures
+  • semester_09\lecture_58_parallel_computing\parallel_reduction
+    Error: Error: Could not find or load main class semester_09.lecture_58_parallel_computing.parallel_reductio...
+
+Semester semester_09\lecture_58_parallel_computing\simd_optimization: 1 failures
+  • semester_09\lecture_58_parallel_computing\simd_optimization
+    Error: Error: Could not find or load main class semester_09.lecture_58_parallel_computing.simd_optimization...
+
+Semester semester_09\lecture_58_parallel_computing\vectorization: 1 failures
+  • semester_09\lecture_58_parallel_computing\vectorization
+    Error: Error: Could not find or load main class semester_09.lecture_58_parallel_computing.vectorization.Alg...
+
+Semester semester_09\lecture_59_distributed_systems_advanced\consensus_algorithms: 1 failures
+  • semester_09\lecture_59_distributed_systems_advanced\consensus_algorithms
+    Error: Error: Could not find or load main class semester_09.lecture_59_distributed_systems_advanced.consens...
+
+Semester semester_09\lecture_59_distributed_systems_advanced\crdt: 1 failures
+  • semester_09\lecture_59_distributed_systems_advanced\crdt
+    Error: E:\Python\GptEngineer\Professor\semester_09\lecture_59_distributed_systems_advanced\crdt\Algorithm.j...
+
+Semester semester_09\lecture_59_distributed_systems_advanced\eventual_consistency: 1 failures
+  • semester_09\lecture_59_distributed_systems_advanced\eventual_consistency
+    Error: E:\Python\GptEngineer\Professor\semester_09\lecture_59_distributed_systems_advanced\eventual_consist...
+
+Semester semester_09\lecture_59_distributed_systems_advanced\vector_clocks: 1 failures
+  • semester_09\lecture_59_distributed_systems_advanced\vector_clocks
+    Error: E:\Python\GptEngineer\Professor\semester_09\lecture_59_distributed_systems_advanced\vector_clocks\Al...
+
+Semester semester_09\lecture_61_cloud_native\config_management: 1 failures
+  • semester_09\lecture_61_cloud_native\config_management
+    Error: E:\Python\GptEngineer\Professor\semester_09\lecture_61_cloud_native\config_management\Algorithm.java...
+
+Semester semester_09\lecture_61_cloud_native\function_as_service: 1 failures
+  • semester_09\lecture_61_cloud_native\function_as_service
+    Error: E:\Python\GptEngineer\Professor\semester_09\lecture_61_cloud_native\function_as_service\Algorithm.ja...
+
+Semester semester_09\lecture_61_cloud_native\secrets_management: 1 failures
+  • semester_09\lecture_61_cloud_native\secrets_management
+    Error: Error: Could not find or load main class semester_09.lecture_61_cloud_native.secrets_management.Algo...
+
+Semester semester_10\lecture_63_ai_advanced\few_shot_learning_advanced: 1 failures
+  • semester_10\lecture_63_ai_advanced\few_shot_learning_advanced
+    Error: Error: Could not find or load main class semester_10.lecture_63_ai_advanced.few_shot_learning_advanc...
+
+Semester semester_10\lecture_63_ai_advanced\transfer_learning_advanced: 1 failures
+  • semester_10\lecture_63_ai_advanced\transfer_learning_advanced
+    Error: Error: Could not find or load main class semester_10.lecture_63_ai_advanced.transfer_learning_advanc...
+
+Semester semester_10\lecture_63_ai_advanced\zero_shot_learning: 1 failures
+  • semester_10\lecture_63_ai_advanced\zero_shot_learning
+    Error: E:\Python\GptEngineer\Professor\semester_10\lecture_63_ai_advanced\zero_shot_learning\Algorithm.java...
+
+Semester semester_10\lecture_64_llm_architecture_advanced\long_context_models: 1 failures
+  • semester_10\lecture_64_llm_architecture_advanced\long_context_models
+    Error: Error: Could not find or load main class semester_10.lecture_64_llm_architecture_advanced.long_conte...
+
+Semester semester_10\lecture_64_llm_architecture_advanced\mixture_of_experts: 1 failures
+  • semester_10\lecture_64_llm_architecture_advanced\mixture_of_experts
+    Error: Error: Could not find or load main class semester_10.lecture_64_llm_architecture_advanced.mixture_of...
+
+Semester semester_10\lecture_64_llm_architecture_advanced\multimodal_llms: 1 failures
+  • semester_10\lecture_64_llm_architecture_advanced\multimodal_llms
+    Error: Error: Could not find or load main class semester_10.lecture_64_llm_architecture_advanced.multimodal...
+
+Semester semester_10\lecture_64_llm_architecture_advanced\sparse_attention: 1 failures
+  • semester_10\lecture_64_llm_architecture_advanced\sparse_attention
+    Error: Error: Could not find or load main class semester_10.lecture_64_llm_architecture_advanced.sparse_att...
+
+Semester semester_10\lecture_65_llm_training_advanced\tensor_parallelism: 1 failures
+  • semester_10\lecture_65_llm_training_advanced\tensor_parallelism
+    Error: Error: Could not find or load main class semester_10.lecture_65_llm_training_advanced.tensor_paralle...
+
+Semester semester_10\lecture_66_llm_inference\continuous_batching: 1 failures
+  • semester_10\lecture_66_llm_inference\continuous_batching
+    Error: Error: Could not find or load main class semester_10.lecture_66_llm_inference.continuous_batching.Al...
+
+Semester semester_10\lecture_66_llm_inference\speculative_decoding: 1 failures
+  • semester_10\lecture_66_llm_inference\speculative_decoding
+    Error: Error: Could not find or load main class semester_10.lecture_66_llm_inference.speculative_decoding.A...
+
+Semester semester_10\lecture_67_rag_advanced\agentic_rag: 1 failures
+  • semester_10\lecture_67_rag_advanced\agentic_rag
+    Error: Error: Could not find or load main class semester_10.lecture_67_rag_advanced.agentic_rag.Algorithm
+C...
+
+PYTHON ALGORITHM FAILURES:
+==================================================
+Total Python failures: 39
+
+Semester semester_01\lecture_07_heaps_priority\fibonacci_heap: 1 failures
+  • semester_01\lecture_07_heaps_priority\fibonacci_heap
+    Error: ....EE...EE
+======================================================================
+ERROR: test_large...
+
+Semester semester_01\lecture_09_graph_algorithms\bfs: 1 failures
+  • semester_01\lecture_09_graph_algorithms\bfs
+    Error: ..E.....
+======================================================================
+ERROR: test_disconne...
+
+Semester semester_01\lecture_09_graph_algorithms\dfs: 1 failures
+  • semester_01\lecture_09_graph_algorithms\dfs
+    Error: ..E.....
+======================================================================
+ERROR: test_disconne...
+
+Semester semester_01\lecture_11_dynamic_programming\edit_distance: 1 failures
+  • semester_01\lecture_11_dynamic_programming\edit_distance
+    Error: ....E....EE
+======================================================================
+ERROR: test_large...
+
+Semester semester_01\lecture_11_dynamic_programming\knapsack: 1 failures
+  • semester_01\lecture_11_dynamic_programming\knapsack
+    Error: ....EE...EE
+======================================================================
+ERROR: test_large...
+
+Semester semester_01\lecture_11_dynamic_programming\longest_common_subsequence: 1 failures
+  • semester_01\lecture_11_dynamic_programming\longest_common_subsequence
+    Error: ....EE...EE
+======================================================================
+ERROR: test_large...
+
+Semester semester_02\lecture_08_structural_patterns\composite: 1 failures
+  • semester_02\lecture_08_structural_patterns\composite
+    Error:   File "E:\Python\GptEngineer\Professor\semester_02\lecture_08_structural_patterns\composite\test_al...
+
+Semester semester_02\lecture_08_structural_patterns\decorator: 1 failures
+  • semester_02\lecture_08_structural_patterns\decorator
+    Error:   File "E:\Python\GptEngineer\Professor\semester_02\lecture_08_structural_patterns\decorator\test_al...
+
+Semester semester_03\lecture_10_graph_algorithms\bfs: 1 failures
+  • semester_03\lecture_10_graph_algorithms\bfs
+    Error: ..E.....
+======================================================================
+ERROR: test_disconne...
+
+Semester semester_03\lecture_10_graph_algorithms\dfs: 1 failures
+  • semester_03\lecture_10_graph_algorithms\dfs
+    Error: ..E.....
+======================================================================
+ERROR: test_disconne...
+
+Semester semester_03\lecture_11_dynamic_programming\edit_distance: 1 failures
+  • semester_03\lecture_11_dynamic_programming\edit_distance
+    Error: ....E....EE
+======================================================================
+ERROR: test_large...
+
+Semester semester_03\lecture_11_dynamic_programming\knapsack: 1 failures
+  • semester_03\lecture_11_dynamic_programming\knapsack
+    Error: ....EE...EE
+======================================================================
+ERROR: test_large...
+
+Semester semester_03\lecture_11_dynamic_programming\longest_common_subsequence: 1 failures
+  • semester_03\lecture_11_dynamic_programming\longest_common_subsequence
+    Error: ....EE...EE
+======================================================================
+ERROR: test_large...
+
+Semester semester_03\lecture_13_integration_patterns\event_sourcing: 1 failures
+  • semester_03\lecture_13_integration_patterns\event_sourcing
+    Error:   File "E:\Python\GptEngineer\Professor\semester_03\lecture_13_integration_patterns\event_sourcing\t...
+
+Semester semester_03\lecture_14_string_algorithms\boyer_moore: 1 failures
+  • semester_03\lecture_14_string_algorithms\boyer_moore
+    Error: ....F...
+======================================================================
+FAIL: test_pattern_n...
+
+Semester semester_03\lecture_14_string_algorithms\rabin_karp: 1 failures
+  • semester_03\lecture_14_string_algorithms\rabin_karp
+    Error: ....F...
+======================================================================
+FAIL: test_pattern_n...
+
+Semester semester_03\lecture_15_greedy_algorithms\fractional_knapsack: 1 failures
+  • semester_03\lecture_15_greedy_algorithms\fractional_knapsack
+    Error: ....E....EE
+======================================================================
+ERROR: test_large...
+
+Semester semester_04\lecture_19_distributed_patterns\consistent_hashing: 1 failures
+  • semester_04\lecture_19_distributed_patterns\consistent_hashing
+    Error:   File "E:\Python\GptEngineer\Professor\semester_04\lecture_19_distributed_patterns\consistent_hashi...
+
+Semester semester_04\lecture_19_distributed_patterns\gossip_protocol: 1 failures
+  • semester_04\lecture_19_distributed_patterns\gossip_protocol
+    Error:   File "E:\Python\GptEngineer\Professor\semester_04\lecture_19_distributed_patterns\gossip_protocol\...
+
+Semester semester_04\lecture_19_distributed_patterns\leader_election: 1 failures
+  • semester_04\lecture_19_distributed_patterns\leader_election
+    Error: ....E.E....
+======================================================================
+ERROR: test_multi...
+
+Semester semester_04\lecture_19_distributed_patterns\two_phase_commit: 1 failures
+  • semester_04\lecture_19_distributed_patterns\two_phase_commit
+    Error:   File "E:\Python\GptEngineer\Professor\semester_04\lecture_19_distributed_patterns\two_phase_commit...
+
+Semester semester_08\lecture_51_nosql_fundamentals\graph_databases: 1 failures
+  • semester_08\lecture_51_nosql_fundamentals\graph_databases
+    Error: ..E.....
+======================================================================
+ERROR: test_disconne...
+
+Semester semester_10\lecture_67_rag_advanced\hybrid_search: 1 failures
+  • semester_10\lecture_67_rag_advanced\hybrid_search
+    Error: .E..EEE...
+======================================================================
+ERROR: test_basic_...
+
+Semester semester_11\lecture_71_cicd_advanced\dynamic_pipelines: 1 failures
+  • semester_11\lecture_71_cicd_advanced\dynamic_pipelines
+    Error: ....EE...EE
+======================================================================
+ERROR: test_large...
+
+Semester semester_12\lecture_79_quantum_algorithms_advanced\quantum_cryptography: 1 failures
+  • semester_12\lecture_79_quantum_algorithms_advanced\quantum_cryptography
+    Error: ..E.....
+======================================================================
+ERROR: test_disconne...
+
+Semester semester_12\lecture_81_quantum_applications\quantum_search: 1 failures
+  • semester_12\lecture_81_quantum_applications\quantum_search
+    Error: .E..EEE...
+======================================================================
+ERROR: test_basic_...
+
+Semester semester_12\lecture_86_quantum_security\post_quantum_cryptography: 1 failures
+  • semester_12\lecture_86_quantum_security\post_quantum_cryptography
+    Error: ..E.....
+======================================================================
+ERROR: test_disconne...
+
+Semester semester_13\lecture_88_consensus_advanced\dpos_advanced: 1 failures
+  • semester_13\lecture_88_consensus_advanced\dpos_advanced
+    Error: ....EE...EE
+======================================================================
+ERROR: test_large...
+
+Semester semester_14\lecture_100_documentation_ai\intelligent_search: 1 failures
+  • semester_14\lecture_100_documentation_ai\intelligent_search
+    Error: .E..EEE...
+======================================================================
+ERROR: test_basic_...
+
+Semester semester_14\lecture_95_support_advanced\knowledge_graph: 1 failures
+  • semester_14\lecture_95_support_advanced\knowledge_graph
+    Error: ..E.....
+======================================================================
+ERROR: test_disconne...
+
+Semester semester_14\lecture_97_knowledge_management\knowledge_graph_construction: 1 failures
+  • semester_14\lecture_97_knowledge_management\knowledge_graph_construction
+    Error: ..E.....
+======================================================================
+ERROR: test_disconne...
+
+Semester semester_14\lecture_97_knowledge_management\semantic_search: 1 failures
+  • semester_14\lecture_97_knowledge_management\semantic_search
+    Error: .E..EEE...
+======================================================================
+ERROR: test_basic_...
+
+Semester semester_15\lecture_108_graph_databases_advanced\graph_algorithms_db: 1 failures
+  • semester_15\lecture_108_graph_databases_advanced\graph_algorithms_db
+    Error: ..E.....
+======================================================================
+ERROR: test_disconne...
+
+Semester semester_15\lecture_108_graph_databases_advanced\graph_analytics: 1 failures
+  • semester_15\lecture_108_graph_databases_advanced\graph_analytics
+    Error: ..E.....
+======================================================================
+ERROR: test_disconne...
+
+Semester semester_15\lecture_108_graph_databases_advanced\graph_ml: 1 failures
+  • semester_15\lecture_108_graph_databases_advanced\graph_ml
+    Error: ..E.....
+======================================================================
+ERROR: test_disconne...
+
+Semester semester_15\lecture_108_graph_databases_advanced\graph_pattern_matching: 1 failures
+  • semester_15\lecture_108_graph_databases_advanced\graph_pattern_matching
+    Error: ..E........
+======================================================================
+ERROR: test_disco...
+
+Semester semester_15\lecture_108_graph_databases_advanced\graph_traversal: 1 failures
+  • semester_15\lecture_108_graph_databases_advanced\graph_traversal
+    Error: ..E.....
+======================================================================
+ERROR: test_disconne...
+
+Semester semester_15\lecture_108_graph_databases_advanced\graph_visualization: 1 failures
+  • semester_15\lecture_108_graph_databases_advanced\graph_visualization
+    Error: ..E.....
+======================================================================
+ERROR: test_disconne...
+
+Semester semester_16\lecture_115_data_governance_advanced\gdpr_compliance: 1 failures
+  • semester_16\lecture_115_data_governance_advanced\gdpr_compliance
+    Error: ....EE...EE
+======================================================================
+ERROR: test_large...
+
+DETAILED ERROR ANALYSIS:
+==================================================
+
+RUNTIME ERRORS (163 total):
+----------------------------------------
+1. semester_01\lecture_07_heaps_priority\binary_heap
+   Error: Error: Could not find or load main class semester_01.lecture_07_heaps_priority.binary_heap.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algori...
+
+2. semester_01\lecture_08_hash_tables\chaining
+   Error: Error: Could not find or load main class semester_01.lecture_08_hash_tables.chaining.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (w...
+
+3. semester_01\lecture_08_hash_tables\open_addressing
+   Error: Error: Could not find or load main class semester_01.lecture_08_hash_tables.open_addressing.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algor...
+
+4. semester_01\lecture_09_graph_algorithms\bellman_ford
+   Error: Error: Could not find or load main class semester_01.lecture_09_graph_algorithms.bellman_ford.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Alg...
+
+5. semester_02\lecture_06_solid_principles\single_responsibility
+   Error: Error: Could not find or load main class semester_02.lecture_06_solid_principles.single_responsibility.Algorithm
+Caused by: java.lang.NoClassDefFoundE...
+
+... and 158 more runtime errors
+
+SYNTAX ERRORS (6 total):
+----------------------------------------
+1. semester_02\lecture_08_structural_patterns\composite
+   Error:   File "E:\Python\GptEngineer\Professor\semester_02\lecture_08_structural_patterns\composite\test_algorithm.py", line 100
+    instances.append(self.al...
+
+2. semester_02\lecture_08_structural_patterns\decorator
+   Error:   File "E:\Python\GptEngineer\Professor\semester_02\lecture_08_structural_patterns\decorator\test_algorithm.py", line 100
+    instances.append(self.al...
+
+3. semester_03\lecture_13_integration_patterns\event_sourcing
+   Error:   File "E:\Python\GptEngineer\Professor\semester_03\lecture_13_integration_patterns\event_sourcing\test_algorithm.py", line 100
+    instances.append(s...
+
+4. semester_04\lecture_19_distributed_patterns\consistent_hashing
+   Error:   File "E:\Python\GptEngineer\Professor\semester_04\lecture_19_distributed_patterns\consistent_hashing\test_algorithm.py", line 100
+    instances.appe...
+
+5. semester_04\lecture_19_distributed_patterns\gossip_protocol
+   Error:   File "E:\Python\GptEngineer\Professor\semester_04\lecture_19_distributed_patterns\gossip_protocol\test_algorithm.py", line 100
+    instances.append(...
+
+... and 1 more syntax errors
+
+RECOMMENDATIONS:
+====================
+1. Java Class Loading Issues:
+   - Fix JVM classpath resolution for packaged classes
+   - Verify package directory structure matches class names
+
+2. Python Framework Dependencies:
+   - Ensure local framework modules are properly accessible
+   - Fix relative import paths in algorithm files
+
+3. Logger and String Formatting:
+   - Continue fixing logger.info() calls with proper formatting
+   - Standardize error message formats
+
+4. Testing Infrastructure:
+   - Consider separate testing approaches for Java vs Python
+   - Implement proper test discovery for algorithm demonstrations
+
+================================================================================
+Report generated from latest test run
+Total algorithms tested: 1338 (Java: 658, Python: 680)
+Current success rate: 87.4%
+================================================================================

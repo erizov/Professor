@@ -1,10 +1,10 @@
+package semester_05.lecture_23_object_detection.yolo;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_05.lecture_23_object_detection.yolo;
- * Yolo implementation.
+
+/*** Yolo implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

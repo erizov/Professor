@@ -1,9 +1,9 @@
+package sandboxes.3.semester_11_lecture_78_observability_platform_aiops_java.version_1;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
-package sandboxes.3.semester_11_lecture_78_observability_platform_aiops_java.version_1;
  * Aiops implementation.
  */
 public class Algorithm {

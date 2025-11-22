@@ -1,10 +1,10 @@
+package semester_11.lecture_75_gitops_advanced.gitops_patterns;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_11.lecture_75_gitops_advanced.gitops_patterns;
- * Gitops Patterns implementation.
+
+/*** Gitops Patterns implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

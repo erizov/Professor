@@ -1,10 +1,10 @@
+package semester_09.lecture_57_concurrency_advanced.concurrent_data_structures;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_09.lecture_57_concurrency_advanced.concurrent_data_structures;
- * Concurrent Data Structures implementation.
+
+/*** Concurrent Data Structures implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

@@ -1,6 +1,6 @@
-/**
 package semester_02.lecture_07_creational_patterns.factory;
- * Factory Design Pattern.
+
+/*** Factory Design Pattern.
  * 
  * Creates objects without specifying exact class.
  */

@@ -1,10 +1,10 @@
+package semester_06.lecture_37_cost_optimization.autoscaling;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_06.lecture_37_cost_optimization.autoscaling;
- * Autoscaling implementation.
+
+/*** Autoscaling implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

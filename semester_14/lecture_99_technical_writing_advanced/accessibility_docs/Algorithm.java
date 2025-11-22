@@ -1,10 +1,10 @@
+package semester_14.lecture_99_technical_writing_advanced.accessibility_docs;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_14.lecture_99_technical_writing_advanced.accessibility_docs;
- * Accessibility Docs implementation.
+
+/*** Accessibility Docs implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

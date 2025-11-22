@@ -1,10 +1,10 @@
+package semester_05.lecture_26_ensemble_methods.boosting;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_05.lecture_26_ensemble_methods.boosting;
- * Boosting implementation.
+
+/*** Boosting implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

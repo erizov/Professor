@@ -1,10 +1,10 @@
+package semester_09.lecture_58_parallel_computing.gpu_computing;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_09.lecture_58_parallel_computing.gpu_computing;
- * Gpu Computing implementation.
+
+/*** Gpu Computing implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

@@ -1,10 +1,10 @@
+package semester_16.lecture_116_data_ops.data_pipeline_ci_cd;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_16.lecture_116_data_ops.data_pipeline_ci_cd;
- * Data Pipeline Ci Cd implementation.
+
+/*** Data Pipeline Ci Cd implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

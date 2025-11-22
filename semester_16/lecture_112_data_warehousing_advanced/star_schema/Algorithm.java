@@ -1,10 +1,10 @@
+package semester_16.lecture_112_data_warehousing_advanced.star_schema;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_16.lecture_112_data_warehousing_advanced.star_schema;
- * Star Schema implementation.
+
+/*** Star Schema implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

@@ -1,10 +1,10 @@
+package semester_12.lecture_80_quantum_computing_advanced.quantum_compilation;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_12.lecture_80_quantum_computing_advanced.quantum_compilation;
- * Quantum Compilation implementation.
+
+/*** Quantum Compilation implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

@@ -1,10 +1,10 @@
+package semester_01.lecture_08_hash_tables.open_addressing;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_01.lecture_08_hash_tables.open_addressing;
- * Open Addressing implementation.
+
+/*** Open Addressing implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

@@ -1,10 +1,10 @@
+package semester_10.lecture_70_ai_governance.compliance_frameworks;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_10.lecture_70_ai_governance.compliance_frameworks;
- * Compliance Frameworks implementation.
+
+/*** Compliance Frameworks implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

@@ -1,10 +1,10 @@
+package semester_14.lecture_97_knowledge_management.knowledge_base_ai;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_14.lecture_97_knowledge_management.knowledge_base_ai;
- * Knowledge Base Ai implementation.
+
+/*** Knowledge Base Ai implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

@@ -1,10 +1,10 @@
+package semester_04.lecture_19_distributed_patterns.leader_election;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_04.lecture_19_distributed_patterns.leader_election;
- * Leader Election implementation.
+
+/*** Leader Election implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

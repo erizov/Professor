@@ -1,10 +1,10 @@
+package semester_15.lecture_105_database_architecture.database_federation;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_15.lecture_105_database_architecture.database_federation;
- * Database Federation implementation.
+
+/*** Database Federation implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

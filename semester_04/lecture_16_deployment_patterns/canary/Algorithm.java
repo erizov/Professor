@@ -1,6 +1,6 @@
-/**
 package semester_04.lecture_16_deployment_patterns.canary;
- * Canary Deployment Pattern.
+
+/*** Canary Deployment Pattern.
  * 
  * Gradually roll out new version to a small subset of users before
  * full deployment. Monitor metrics and rollback if issues detected.

@@ -1,10 +1,10 @@
+package semester_06.lecture_36_inference_optimization.gpu_optimization;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_06.lecture_36_inference_optimization.gpu_optimization;
- * Gpu Optimization implementation.
+
+/*** Gpu Optimization implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

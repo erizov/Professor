@@ -1,10 +1,10 @@
+package semester_13.lecture_87_blockchain_advanced.sharding_blockchain;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_13.lecture_87_blockchain_advanced.sharding_blockchain;
- * Sharding Blockchain implementation.
+
+/*** Sharding Blockchain implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

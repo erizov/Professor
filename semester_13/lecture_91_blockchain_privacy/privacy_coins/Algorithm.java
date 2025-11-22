@@ -1,10 +1,10 @@
+package semester_13.lecture_91_blockchain_privacy.privacy_coins;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_13.lecture_91_blockchain_privacy.privacy_coins;
- * Privacy Coins implementation.
+
+/*** Privacy Coins implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

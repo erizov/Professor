@@ -1,10 +1,10 @@
+package semester_10.lecture_65_llm_training_advanced.tensor_parallelism;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_10.lecture_65_llm_training_advanced.tensor_parallelism;
- * Tensor Parallelism implementation.
+
+/*** Tensor Parallelism implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

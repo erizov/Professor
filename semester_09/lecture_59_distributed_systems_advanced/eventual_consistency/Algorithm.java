@@ -1,10 +1,10 @@
+package semester_09.lecture_59_distributed_systems_advanced.eventual_consistency;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_09.lecture_59_distributed_systems_advanced.eventual_consistency;
- * Eventual Consistency implementation.
+
+/*** Eventual Consistency implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

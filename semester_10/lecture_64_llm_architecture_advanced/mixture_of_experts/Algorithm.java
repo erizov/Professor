@@ -1,10 +1,10 @@
+package semester_10.lecture_64_llm_architecture_advanced.mixture_of_experts;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_10.lecture_64_llm_architecture_advanced.mixture_of_experts;
- * Mixture Of Experts implementation.
+
+/*** Mixture Of Experts implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

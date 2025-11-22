@@ -1,10 +1,10 @@
+package semester_14.lecture_100_documentation_ai.intelligent_search;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_14.lecture_100_documentation_ai.intelligent_search;
- * Intelligent Search implementation.
+
+/*** Intelligent Search implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

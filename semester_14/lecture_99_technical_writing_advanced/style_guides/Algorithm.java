@@ -1,10 +1,10 @@
+package semester_14.lecture_99_technical_writing_advanced.style_guides;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_14.lecture_99_technical_writing_advanced.style_guides;
- * Style Guides implementation.
+
+/*** Style Guides implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

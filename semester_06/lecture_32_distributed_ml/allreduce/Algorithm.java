@@ -1,10 +1,10 @@
+package semester_06.lecture_32_distributed_ml.allreduce;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_06.lecture_32_distributed_ml.allreduce;
- * Allreduce implementation.
+
+/*** Allreduce implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

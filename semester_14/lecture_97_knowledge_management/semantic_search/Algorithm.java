@@ -1,10 +1,10 @@
+package semester_14.lecture_97_knowledge_management.semantic_search;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_14.lecture_97_knowledge_management.semantic_search;
- * Semantic Search implementation.
+
+/*** Semantic Search implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

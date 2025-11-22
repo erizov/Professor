@@ -1,10 +1,10 @@
+package semester_15.lecture_103_sql_advanced_topics.sql_analytics;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_15.lecture_103_sql_advanced_topics.sql_analytics;
- * Sql Analytics implementation.
+
+/*** Sql Analytics implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

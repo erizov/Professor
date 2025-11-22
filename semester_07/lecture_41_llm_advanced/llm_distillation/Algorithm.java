@@ -1,10 +1,10 @@
+package semester_07.lecture_41_llm_advanced.llm_distillation;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_07.lecture_41_llm_advanced.llm_distillation;
- * Llm Distillation implementation.
+
+/*** Llm Distillation implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

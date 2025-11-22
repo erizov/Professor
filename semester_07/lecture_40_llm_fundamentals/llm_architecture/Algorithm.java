@@ -1,10 +1,10 @@
+package semester_07.lecture_40_llm_fundamentals.llm_architecture;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_07.lecture_40_llm_fundamentals.llm_architecture;
- * Llm Architecture implementation.
+
+/*** Llm Architecture implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

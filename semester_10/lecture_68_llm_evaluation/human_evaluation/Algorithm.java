@@ -1,10 +1,10 @@
+package semester_10.lecture_68_llm_evaluation.human_evaluation;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_10.lecture_68_llm_evaluation.human_evaluation;
- * Human Evaluation implementation.
+
+/*** Human Evaluation implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

@@ -1,10 +1,10 @@
+package semester_07.lecture_46_blockchain_advanced.cryptocurrency_wallets;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_07.lecture_46_blockchain_advanced.cryptocurrency_wallets;
- * Cryptocurrency Wallets implementation.
+
+/*** Cryptocurrency Wallets implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

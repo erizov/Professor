@@ -1,10 +1,10 @@
+package semester_06.lecture_37_cost_optimization.cost_analysis;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_06.lecture_37_cost_optimization.cost_analysis;
- * Cost Analysis implementation.
+
+/*** Cost Analysis implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

@@ -1,8 +1,8 @@
+package semester_03.lecture_10_graph_algorithms.bellman_ford;
 import java.util.*;
 
-/**
-package semester_03.lecture_10_graph_algorithms.bellman_ford;
- * Bellman-Ford Algorithm implementation.
+
+/*** Bellman-Ford Algorithm implementation.
  * 
  * Finds shortest paths with negative weights and detects negative cycles.
  * 

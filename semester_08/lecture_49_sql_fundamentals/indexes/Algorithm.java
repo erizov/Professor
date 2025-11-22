@@ -1,10 +1,10 @@
+package semester_08.lecture_49_sql_fundamentals.indexes;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_08.lecture_49_sql_fundamentals.indexes;
- * Indexes implementation.
+
+/*** Indexes implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

@@ -1,10 +1,10 @@
+package semester_16.lecture_111_data_engineering_advanced.data_mesh;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_16.lecture_111_data_engineering_advanced.data_mesh;
- * Data Mesh implementation.
+
+/*** Data Mesh implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

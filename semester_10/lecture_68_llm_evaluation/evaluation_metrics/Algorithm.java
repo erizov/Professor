@@ -1,10 +1,10 @@
+package semester_10.lecture_68_llm_evaluation.evaluation_metrics;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_10.lecture_68_llm_evaluation.evaluation_metrics;
- * Evaluation Metrics implementation.
+
+/*** Evaluation Metrics implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

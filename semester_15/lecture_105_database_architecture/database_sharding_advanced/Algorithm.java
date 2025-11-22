@@ -1,10 +1,10 @@
+package semester_15.lecture_105_database_architecture.database_sharding_advanced;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_15.lecture_105_database_architecture.database_sharding_advanced;
- * Database Sharding Advanced implementation.
+
+/*** Database Sharding Advanced implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

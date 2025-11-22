@@ -1,10 +1,10 @@
+package semester_02.lecture_09_behavioral_patterns.template_method;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_02.lecture_09_behavioral_patterns.template_method;
- * Template Method implementation.
+
+/*** Template Method implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

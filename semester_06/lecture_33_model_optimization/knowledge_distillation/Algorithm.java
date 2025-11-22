@@ -1,10 +1,10 @@
+package semester_06.lecture_33_model_optimization.knowledge_distillation;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_06.lecture_33_model_optimization.knowledge_distillation;
- * Knowledge Distillation implementation.
+
+/*** Knowledge Distillation implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

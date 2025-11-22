@@ -1,10 +1,10 @@
+package semester_12.lecture_85_quantum_networking.quantum_communication;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_12.lecture_85_quantum_networking.quantum_communication;
- * Quantum Communication implementation.
+
+/*** Quantum Communication implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

@@ -1,10 +1,10 @@
+package semester_06.lecture_34_edge_ai.iot_ml;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_06.lecture_34_edge_ai.iot_ml;
- * Iot Ml implementation.
+
+/*** Iot Ml implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

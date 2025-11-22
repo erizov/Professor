@@ -1,10 +1,10 @@
+package semester_05.lecture_27_hyperparameter_optimization.grid_search;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_05.lecture_27_hyperparameter_optimization.grid_search;
- * Grid Search implementation.
+
+/*** Grid Search implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

@@ -1,10 +1,10 @@
+package semester_03.lecture_16_advanced_ml.neural_network;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_03.lecture_16_advanced_ml.neural_network;
- * Neural Network implementation.
+
+/*** Neural Network implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

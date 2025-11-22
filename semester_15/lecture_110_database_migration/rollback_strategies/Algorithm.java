@@ -1,10 +1,10 @@
+package semester_15.lecture_110_database_migration.rollback_strategies;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_15.lecture_110_database_migration.rollback_strategies;
- * Rollback Strategies implementation.
+
+/*** Rollback Strategies implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

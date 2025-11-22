@@ -1,10 +1,10 @@
+package semester_10.lecture_64_llm_architecture_advanced.sparse_attention;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_10.lecture_64_llm_architecture_advanced.sparse_attention;
- * Sparse Attention implementation.
+
+/*** Sparse Attention implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

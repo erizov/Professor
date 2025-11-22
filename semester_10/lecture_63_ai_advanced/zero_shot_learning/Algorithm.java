@@ -1,10 +1,10 @@
+package semester_10.lecture_63_ai_advanced.zero_shot_learning;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_10.lecture_63_ai_advanced.zero_shot_learning;
- * Zero Shot Learning implementation.
+
+/*** Zero Shot Learning implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

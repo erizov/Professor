@@ -1,10 +1,10 @@
+package semester_07.lecture_43_ci_cd_advanced.gitops;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_07.lecture_43_ci_cd_advanced.gitops;
- * Gitops implementation.
+
+/*** Gitops implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

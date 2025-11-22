@@ -1,10 +1,10 @@
+package semester_11.lecture_76_platform_engineering.internal_developer_platforms;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_11.lecture_76_platform_engineering.internal_developer_platforms;
- * Internal Developer Platforms implementation.
+
+/*** Internal Developer Platforms implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

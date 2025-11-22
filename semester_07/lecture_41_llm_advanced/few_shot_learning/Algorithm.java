@@ -1,10 +1,10 @@
+package semester_07.lecture_41_llm_advanced.few_shot_learning;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_07.lecture_41_llm_advanced.few_shot_learning;
- * Few Shot Learning implementation.
+
+/*** Few Shot Learning implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

@@ -1,10 +1,10 @@
+package semester_09.lecture_59_distributed_systems_advanced.crdt;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_09.lecture_59_distributed_systems_advanced.crdt;
- * Crdt implementation.
+
+/*** Crdt implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

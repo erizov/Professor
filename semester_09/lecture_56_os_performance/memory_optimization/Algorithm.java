@@ -1,10 +1,10 @@
+package semester_09.lecture_56_os_performance.memory_optimization;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_09.lecture_56_os_performance.memory_optimization;
- * Memory Optimization implementation.
+
+/*** Memory Optimization implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

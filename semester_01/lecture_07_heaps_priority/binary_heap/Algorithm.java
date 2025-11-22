@@ -1,9 +1,10 @@
+package semester_01.lecture_07_heaps_priority.binary_heap;
+
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
 /**
-package semester_01.lecture_07_heaps_priority.binary_heap;
  * Binary Heap implementation.
  */
 public class Algorithm {

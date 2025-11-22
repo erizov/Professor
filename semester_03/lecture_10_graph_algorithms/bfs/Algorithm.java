@@ -1,10 +1,10 @@
+package semester_03.lecture_10_graph_algorithms.bfs;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_03.lecture_10_graph_algorithms.bfs;
- * Bfs implementation.
+
+/*** Bfs implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

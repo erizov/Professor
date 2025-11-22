@@ -1,10 +1,10 @@
+package semester_14.lecture_102_community_management.engagement_metrics;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_14.lecture_102_community_management.engagement_metrics;
- * Engagement Metrics implementation.
+
+/*** Engagement Metrics implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

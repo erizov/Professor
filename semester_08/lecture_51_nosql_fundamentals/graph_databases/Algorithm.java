@@ -1,10 +1,10 @@
+package semester_08.lecture_51_nosql_fundamentals.graph_databases;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_08.lecture_51_nosql_fundamentals.graph_databases;
- * Graph Databases implementation.
+
+/*** Graph Databases implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

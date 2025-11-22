@@ -2,6 +2,12 @@
 # -*- coding: utf-8 -*-
 """Selection Sort implementation."""
 
+
+# Add project root to path for framework imports
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent))
+
 from typing import List, TypeVar
 from framework.logging_utils import get_logger
 import logging

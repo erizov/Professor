@@ -1,10 +1,10 @@
+package semester_14.lecture_96_incident_management_advanced.alert_fatigue_reduction;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_14.lecture_96_incident_management_advanced.alert_fatigue_reduction;
- * Alert Fatigue Reduction implementation.
+
+/*** Alert Fatigue Reduction implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

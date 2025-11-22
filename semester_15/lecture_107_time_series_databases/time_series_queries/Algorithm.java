@@ -1,10 +1,10 @@
+package semester_15.lecture_107_time_series_databases.time_series_queries;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_15.lecture_107_time_series_databases.time_series_queries;
- * Time Series Queries implementation.
+
+/*** Time Series Queries implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

@@ -1,10 +1,10 @@
+package semester_11.lecture_72_infrastructure_advanced.cost_optimization;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_11.lecture_72_infrastructure_advanced.cost_optimization;
- * Cost Optimization implementation.
+
+/*** Cost Optimization implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

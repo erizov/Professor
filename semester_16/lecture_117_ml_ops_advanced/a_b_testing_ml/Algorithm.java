@@ -1,10 +1,10 @@
+package semester_16.lecture_117_ml_ops_advanced.a_b_testing_ml;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
-package semester_16.lecture_117_ml_ops_advanced.a_b_testing_ml;
- * A B Testing Ml implementation.
+
+/*** A B Testing Ml implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

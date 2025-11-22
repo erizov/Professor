@@ -7,6 +7,12 @@ Efficient divide-and-conquer sorting algorithm that picks a pivot
 element and partitions the array around it.
 """
 
+
+# Add project root to path for framework imports
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent))
+
 from typing import List, TypeVar
 import random
 from framework.logging_utils import get_logger
