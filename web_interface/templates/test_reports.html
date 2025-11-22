@@ -499,15 +499,31 @@
                     const latestDuration = formatDuration(latest.duration);
 
                     // Determine file path based on language
-                    // algorithm_path is already the directory path (e.g., semester_01/lecture_02_efficient_sorting/heap_sort)
-                    // We need to add the filename
+                    // algorithm_path is the directory path (e.g., semester_01/lecture_02_efficient_sorting/heap_sort)
+                    // But it might already contain filename, so we need to clean it
                     let algorithmPath = result.algorithm_path;
-                    // Remove trailing slashes if any
+                    
+                    // Remove trailing slashes
                     algorithmPath = algorithmPath.replace(/\/+$/, '');
+                    
+                    // Remove filename if it's already in the path
+                    algorithmPath = algorithmPath.replace(/\/Algorithm\.java$/, '');
+                    algorithmPath = algorithmPath.replace(/\/algorithm\.py$/, '');
+                    algorithmPath = algorithmPath.replace(/\/test_algorithm\.py$/, '');
                     
                     const fileName = result.language.toLowerCase() === 'java' ? 'Algorithm.java' : 'algorithm.py';
                     const filePath = `${algorithmPath}/${fileName}`;
                     const codeLink = `/code/${filePath}`;
+                    
+                    // Debug: log the path construction
+                    if (result.algorithm_path.includes('bubble_sort') || result.algorithm_path.includes('quick_sort')) {
+                        console.log('Path construction:', {
+                            original: result.algorithm_path,
+                            cleaned: algorithmPath,
+                            fileName: fileName,
+                            finalPath: filePath
+                        });
+                    }
                     
                     // Create path cell with link
                     const pathCell = document.createElement('td');
@@ -611,7 +627,7 @@
                             ${result.recent_results.map(r => `
                                 <div class="history-item">
                                     <strong>${r.status}</strong> - ${new Date(r.timestamp).toLocaleString()} (${formatDuration(r.duration)}s)
-                                    ${r.error_message ? `<br><small style="color: #f44336;">${r.error_message.substring(0, 100)}...</small>` : ''}
+                                    ${r.error_message ? `<br><small style="color: #f44336; white-space: pre-wrap; word-wrap: break-word; max-width: 800px; display: block;">${r.error_message.length > 1000 ? r.error_message.substring(0, 1000) + '...' : r.error_message}</small>` : ''}
                                 </div>
                             `).join('')}
                         </div>

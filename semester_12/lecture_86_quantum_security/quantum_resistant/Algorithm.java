@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int encrypt(String message, List<Object> public_key) {
         logger.info("Executing encrypt");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

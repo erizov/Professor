@@ -1,3 +1,5 @@
+package semester_01.lecture_11_dynamic_programming.fibonacci;
+
 import java.util.*;
 
 /**

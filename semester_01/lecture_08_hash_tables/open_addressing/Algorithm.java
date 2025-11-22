@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int _hash(Object key) {
         logger.info("Executing _hash");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int _probe(Object key, Object start_index) {
         logger.info("Executing _probe");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

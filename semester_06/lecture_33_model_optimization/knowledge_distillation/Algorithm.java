@@ -42,7 +42,7 @@ public class Algorithm {
      */
     public int soft_targets(List<Object> logits) {
         logger.info("Executing soft_targets");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

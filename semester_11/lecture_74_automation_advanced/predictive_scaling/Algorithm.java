@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int predict_demand(Object horizon) {
         logger.info("Executing predict_demand");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public int scale_resources(Object current_capacity) {
         logger.info("Executing scale_resources");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

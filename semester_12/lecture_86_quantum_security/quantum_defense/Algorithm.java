@@ -30,7 +30,7 @@ public class Algorithm {
     public boolean deploy_defense(String threat_id, String defense_type) {
         logger.info("Executing deploy_defense");
         Map<String, Object> result = new HashMap<>();
-        return false;  // FIXME: Changed from Map to boolean
+        return false;
     }
 
     public static Algorithm create() {

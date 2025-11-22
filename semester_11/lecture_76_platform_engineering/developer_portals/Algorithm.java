@@ -37,7 +37,7 @@ public class Algorithm {
     public String get_api_docs(String api_name) {
         logger.info("Executing get_api_docs");
         Map<String, Object> result = new HashMap<>();
-        return "";  // FIXME: Changed from Map to String
+        return "";
     }
 
     public static Algorithm create() {

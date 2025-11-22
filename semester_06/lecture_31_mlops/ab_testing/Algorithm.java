@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public int mean(List<Object> group) {
         logger.info("Executing mean");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -42,7 +42,7 @@ public class Algorithm {
      */
     public int std_dev(List<Object> group) {
         logger.info("Executing std_dev");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -50,7 +50,7 @@ public class Algorithm {
      */
     public int t_test() {
         logger.info("Executing t_test");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

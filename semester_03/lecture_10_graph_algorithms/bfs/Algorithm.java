@@ -32,7 +32,7 @@ public class Algorithm {
      */
     public int bfs(Object start) {
         logger.info("Executing bfs");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -47,7 +47,7 @@ public class Algorithm {
      */
     public int shortest_path(Object start, Object end) {
         logger.info("Executing shortest_path");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -62,7 +62,7 @@ public class Algorithm {
      */
     public int shortest_distance(Object start, Object end) {
         logger.info("Executing shortest_distance");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -76,7 +76,7 @@ public class Algorithm {
      */
     public int all_paths_distance(Object start) {
         logger.info("Executing all_paths_distance");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

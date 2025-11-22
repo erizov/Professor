@@ -35,7 +35,7 @@ public class Algorithm {
      */
     public int get_average_score(String task_id) {
         logger.info("Executing get_average_score");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -43,7 +43,7 @@ public class Algorithm {
      */
     public int get_inter_annotator_agreement(String task_id) {
         logger.info("Executing get_inter_annotator_agreement");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

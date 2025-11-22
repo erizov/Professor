@@ -27,7 +27,7 @@ public class Algorithm {
     public List<Object> _decompose_gate(Object gate) {
         logger.info("Executing _decompose_gate");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement quantum compilation logic
     }
 
     public static Algorithm create() {

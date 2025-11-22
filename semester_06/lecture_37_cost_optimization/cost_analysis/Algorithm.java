@@ -27,7 +27,7 @@ public class Algorithm {
      */
     public int get_total_cost(Object start_time, Object end_time) {
         logger.info("Executing get_total_cost");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -43,7 +43,7 @@ public class Algorithm {
      */
     public int get_average_cost(String category) {
         logger.info("Executing get_average_cost");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

@@ -27,7 +27,7 @@ public class Algorithm {
     public List<Object> escalate(String incident_id, String severity) {
         logger.info("Executing escalate");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement escalation procedures logic
     }
 
     public static Algorithm create() {

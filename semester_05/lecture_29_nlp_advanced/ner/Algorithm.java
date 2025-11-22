@@ -19,7 +19,7 @@ public class Algorithm {
     public List<Object> extract_entities(String text) {
         logger.info("Executing extract_entities");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement NER logic
     }
 
     /**
@@ -28,7 +28,7 @@ public class Algorithm {
     public List<Object> tag(String text) {
         logger.info("Executing tag");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement NER logic
     }
 
     public static Algorithm create() {

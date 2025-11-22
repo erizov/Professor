@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int get_price(String token) {
         logger.info("Executing get_price");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int swap(String token_in, Object amount_in) {
         logger.info("Executing swap");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public int add_liquidity(Object amount_a, Object amount_b) {
         logger.info("Executing add_liquidity");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

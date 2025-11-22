@@ -36,7 +36,7 @@ public class Algorithm {
      */
     public int swap(String pool_id, String token_in, Object amount_in) {
         logger.info("Executing swap");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

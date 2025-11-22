@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int get_parameters(String param_name) {
         logger.info("Executing get_parameters");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

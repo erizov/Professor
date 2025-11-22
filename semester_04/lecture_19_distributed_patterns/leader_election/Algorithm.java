@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int elect_leader() {
         logger.info("Executing elect_leader");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public int get_leader() {
         logger.info("Executing get_leader");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

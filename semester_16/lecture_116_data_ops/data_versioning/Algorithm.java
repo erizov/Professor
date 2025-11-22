@@ -20,7 +20,7 @@ public class Algorithm {
         logger.info("Executing create_version");
         long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
-        return "";  // FIXME: Changed from Map to String
+        return "";
     }
 
     /**

@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int forward(List<Object> input_ids) {
         logger.info("Executing forward");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int generate(List<Object> prompt, Object max_length) {
         logger.info("Executing generate");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

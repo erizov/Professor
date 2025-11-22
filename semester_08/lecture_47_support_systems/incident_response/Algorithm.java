@@ -27,7 +27,7 @@ public class Algorithm {
     public boolean execute_playbook(String incident_id, String playbook_name) {
         logger.info("Executing execute_playbook");
         Map<String, Object> result = new HashMap<>();
-        return false;  // FIXME: Changed from Map to boolean
+        return false;
     }
 
     /**

@@ -1,0 +1,174 @@
+=== ANALYSIS OF 132 FAILING JAVA FILES ===
+
+Total failing Java tests: 130
+Compilation errors: 1
+Runtime errors: 129
+
+ERROR PATTERN ANALYSIS:
+----------------------------------------
+.1f
+.1f
+
+FAILING TESTS BY SEMESTER:
+----------------------------------------
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+.1f
+
+SAMPLE COMPILATION ERRORS:
+----------------------------------------
+1. semester_10\lecture_63_ai_advanced\transfer_learning_advanced
+   Error: E:\Python\GptEngineer\Professor\semester_10\lecture_63_ai_advanced\transfer_learning_advanced\Algorithm.java:44: error: cannot find symbol
+        str result = algo.adapt_domain("", "");
+        ^
+  s...
+
+SAMPLE RUNTIME ERRORS:
+----------------------------------------
+1. semester_01\lecture_07_heaps_priority\binary_heap
+   Error: Error: Could not find or load main class semester_01.lecture_07_heaps_priority.binary_heap.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (wrong name: semester_01/lecture_07_heaps_prio...
+
+2. semester_01\lecture_08_hash_tables\chaining
+   Error: Error: Could not find or load main class semester_01.lecture_08_hash_tables.chaining.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (wrong name: semester_01/lecture_08_hash_tables/chai...
+
+3. semester_01\lecture_08_hash_tables\open_addressing
+   Error: Error: Could not find or load main class semester_01.lecture_08_hash_tables.open_addressing.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (wrong name: semester_01/lecture_08_hash_tabl...
+
+4. semester_01\lecture_09_graph_algorithms\bellman_ford
+   Error: Error: Could not find or load main class semester_01.lecture_09_graph_algorithms.bellman_ford.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (wrong name: semester_01/lecture_09_graph_a...
+
+5. semester_02\lecture_06_solid_principles\single_responsibility
+   Error: Error: Could not find or load main class semester_02.lecture_06_solid_principles.single_responsibility.Algorithm
+Caused by: java.lang.NoClassDefFoundError: Algorithm (wrong name: semester_02/lecture_0...
+

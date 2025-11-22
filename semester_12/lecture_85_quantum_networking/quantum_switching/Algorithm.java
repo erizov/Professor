@@ -28,7 +28,7 @@ public class Algorithm {
     public boolean route_qubit(String source, String destination, List<Object> qubit) {
         logger.info("Executing route_qubit");
         Map<String, Object> result = new HashMap<>();
-        return false;  // FIXME: Changed from Map to boolean
+        return false;
     }
 
     public static Algorithm create() {

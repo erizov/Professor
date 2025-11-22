@@ -52,16 +52,31 @@ def get_failing_tests() -> List[Tuple[str, str]]:
 
 
 def test_java_file(java_file: Path, timeout: int = 30) -> Tuple[bool, str, str]:
-    """Test a single Java file: compile and run."""
+    """
+    Test a single Java file: compile and run.
+
+    Args:
+        java_file: Path to the Java file to test
+        timeout: Timeout in seconds for compilation and execution (default: 30s)
+                This timeout is set conservatively to allow for:
+                - Large algorithm implementations
+                - Slow compilation of complex code
+                - Resource-intensive test execution
+                DO NOT reduce below 15 seconds without thorough testing
+    """
+    # Safeguard against aggressive timeout reduction
+    if timeout < 15:
+        raise ValueError(f"Timeout {timeout}s is too aggressive. Minimum recommended: 15s")
+
     try:
         try:
             algorithm_path = str(java_file.parent.relative_to(ROOT))
         except ValueError:
             algorithm_path = str(java_file.parent)
         
-        # Compile Java file
+        # Compile Java file - use -d . to create proper package directory structure
         compile_result = subprocess.run(
-            ["javac", str(java_file)],
+            ["javac", "-d", ".", str(java_file)],
             capture_output=True,
             text=True,
             timeout=30,
@@ -104,7 +119,22 @@ def test_java_file(java_file: Path, timeout: int = 30) -> Tuple[bool, str, str]:
 
 
 def test_python_file(python_file: Path, timeout: int = 30) -> Tuple[bool, str, str]:
-    """Test a single Python file."""
+    """
+    Test a single Python file.
+
+    Args:
+        python_file: Path to the Python file to test
+        timeout: Timeout in seconds for execution (default: 30s)
+                This timeout is set conservatively to allow for:
+                - Complex algorithm implementations
+                - Large datasets or computations
+                - Import/loading overhead
+                DO NOT reduce below 15 seconds without thorough testing
+    """
+    # Safeguard against aggressive timeout reduction
+    if timeout < 15:
+        raise ValueError(f"Timeout {timeout}s is too aggressive. Minimum recommended: 15s")
+
     try:
         result = subprocess.run(
             [sys.executable, "-m", "pytest", str(python_file), "-v"],
@@ -223,18 +253,20 @@ def main():
     print("RERUNNING FAILING TESTS")
     print("=" * 70)
     print()
-    
+
     failures = get_failing_tests()
     print(f"Found {len(failures)} failing tests")
+    print("Note: All failing tests will be processed (no artificial limits)")
     print()
     
     java_count = 0
     python_count = 0
     fixed_count = 0
     still_failing_count = 0
+    skipped_count = 0
     
-    for algorithm_path, language, current_status, current_error in failures:
-        print(f"[{java_count + python_count + 1}/{len(failures)}] Testing: {algorithm_path} ({language})")
+    for idx, (algorithm_path, language, current_status, current_error) in enumerate(failures, 1):
+        print(f"[{idx}/{len(failures)}] Testing: {algorithm_path} ({language})")
         
         # Determine file path
         if language.lower() == 'java':
@@ -242,10 +274,11 @@ def main():
             if not java_file.exists():
                 print(f"  ✗ File not found: {java_file}")
                 still_failing_count += 1
+                skipped_count += 1
                 continue
             
             start_time = time.time()
-            success, error_msg, output = test_java_file(java_file, timeout=30)
+            success, error_msg, output = test_java_file(java_file)
             duration = time.time() - start_time
             java_count += 1
             
@@ -254,14 +287,16 @@ def main():
             if not python_file.exists():
                 print(f"  ✗ File not found: {python_file}")
                 still_failing_count += 1
+                skipped_count += 1
                 continue
             
             start_time = time.time()
-            success, error_msg, output = test_python_file(python_file, timeout=30)
+            success, error_msg, output = test_python_file(python_file)
             duration = time.time() - start_time
             python_count += 1
         else:
             print(f"  ⚠ Unknown language: {language}")
+            skipped_count += 1
             continue
         
         # Analyze error
@@ -269,12 +304,14 @@ def main():
             issues = analyze_error(error_msg)
             issue_list = [k for k, v in issues.items() if v]
             if issue_list:
-                print(f"  Issues detected: {', '.join(issue_list)}")
-            print(f"  Error: {error_msg[:200]}...")
+                print(f"  Issues: {', '.join(issue_list)}")
+            # Show first 150 chars of error (reduced from 200)
+            error_preview = error_msg[:150] if error_msg else "No error message"
+            print(f"  Error: {error_preview}...")
             status = 'failure'
             still_failing_count += 1
         else:
-            print(f"  ✓ Test passed!")
+            print(f"  [PASS] Test passed!")
             status = 'success'
             if current_status in ('failure', 'error', 'timeout'):
                 fixed_count += 1
@@ -283,6 +320,10 @@ def main():
         update_database(algorithm_path, language, status, duration, 
                        error_msg if not success else None, 
                        output if success else None)
+        
+        # Print summary every 10 tests
+        if idx % 10 == 0:
+            print(f"  Progress: {idx}/{len(failures)} | Fixed: {fixed_count} | Still failing: {still_failing_count}")
         print()
     
     print("=" * 70)
@@ -291,6 +332,7 @@ def main():
     print(f"  Python tests: {python_count}")
     print(f"  Fixed: {fixed_count}")
     print(f"  Still failing: {still_failing_count}")
+    print(f"  Skipped: {skipped_count}")
     print("=" * 70)
 
 

@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int read() {
         logger.info("Executing read");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

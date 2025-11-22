@@ -27,7 +27,7 @@ public class Algorithm {
     public boolean transfer_to_sidechain(String sidechain_id, Object amount) {
         logger.info("Executing transfer_to_sidechain");
         Map<String, Object> result = new HashMap<>();
-        return false;  // FIXME: Changed from Map to boolean
+        return false;
     }
 
     /**
@@ -36,7 +36,7 @@ public class Algorithm {
     public boolean transfer_from_sidechain(String sidechain_id, Object amount) {
         logger.info("Executing transfer_from_sidechain");
         Map<String, Object> result = new HashMap<>();
-        return false;  // FIXME: Changed from Map to boolean
+        return false;
     }
 
     public static Algorithm create() {

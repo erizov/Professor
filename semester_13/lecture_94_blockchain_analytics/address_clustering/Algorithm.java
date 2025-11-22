@@ -14,7 +14,7 @@ public class Algorithm {
     public static Object address_clustering(Object... args) {
         logger.info("Executing address_clustering");
         List<Object> result = new ArrayList<>();
-        return new ArrayList<>();
+        return null; // TODO: Implement address clustering logic
     }
 
     public static void main(String[] args) {

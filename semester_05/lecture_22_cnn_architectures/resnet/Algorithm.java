@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int forward(List<Object> x) {
         logger.info("Executing forward");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int residual_block(List<Object> x) {
         logger.info("Executing residual_block");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

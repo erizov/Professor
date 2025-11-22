@@ -19,7 +19,7 @@ public class Algorithm {
     public boolean apply_pattern(String pattern_name, Object config) {
         logger.info("Executing apply_pattern");
         Map<String, Object> result = new HashMap<>();
-        return false;  // FIXME: Changed from Map to boolean
+        return false;
     }
 
     public static Algorithm create() {

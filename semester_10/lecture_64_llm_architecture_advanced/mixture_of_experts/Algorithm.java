@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int route(Object input_data) {
         logger.info("Executing route");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

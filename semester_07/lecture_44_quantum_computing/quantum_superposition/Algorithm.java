@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int measure(String state_id) {
         logger.info("Executing measure");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

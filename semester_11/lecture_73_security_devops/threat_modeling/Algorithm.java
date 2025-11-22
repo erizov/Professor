@@ -19,7 +19,7 @@ public class Algorithm {
     public List<Object> identify_threats(Object system) {
         logger.info("Executing identify_threats");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement threat modeling logic
     }
 
     /**

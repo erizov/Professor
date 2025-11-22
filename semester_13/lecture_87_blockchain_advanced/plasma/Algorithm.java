@@ -28,7 +28,7 @@ public class Algorithm {
     public boolean submit_transaction(String channel_id, Object tx) {
         logger.info("Executing submit_transaction");
         Map<String, Object> result = new HashMap<>();
-        return false;  // FIXME: Changed from Map to boolean
+        return false;
     }
 
     /**

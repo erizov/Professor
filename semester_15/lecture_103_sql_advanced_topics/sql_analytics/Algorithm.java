@@ -19,7 +19,7 @@ public class Algorithm {
     public List<Object> execute_analytics_query(String query) {
         logger.info("Executing execute_analytics_query");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement SQL analytics logic
     }
 
     /**
@@ -28,7 +28,7 @@ public class Algorithm {
     public List<Object> aggregate(String table, List<String> group_by, List<Object> aggregates) {
         logger.info("Executing aggregate");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement SQL analytics logic
     }
 
     public static Algorithm create() {

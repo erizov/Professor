@@ -28,7 +28,7 @@ public class Algorithm {
     public boolean bridge_asset(String from_chain, String to_chain, String asset, Object amount) {
         logger.info("Executing bridge_asset");
         Map<String, Object> result = new HashMap<>();
-        return false;  // FIXME: Changed from Map to boolean
+        return false;
     }
 
     /**

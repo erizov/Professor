@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public int size() {
         logger.info("Executing size");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

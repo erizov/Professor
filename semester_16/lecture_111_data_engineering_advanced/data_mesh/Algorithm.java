@@ -37,7 +37,7 @@ public class Algorithm {
     public String discover_products(String domain) {
         logger.info("Executing discover_products");
         Map<String, Object> result = new HashMap<>();
-        return "";  // FIXME: Changed from Map to String
+        return "";
     }
 
     public static Algorithm create() {

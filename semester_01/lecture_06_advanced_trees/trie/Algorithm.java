@@ -1,3 +1,5 @@
+package semester_01.lecture_06_advanced_trees.trie;
+
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
@@ -41,13 +43,36 @@ public class Algorithm {
     }
 
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("Trie");
-        System.out.println("=".repeat(70));
-        
-        Algorithm algo = Algorithm.create();
-        Object result = algo.insert("");
-        System.out.println("Result: " + result);
-        System.out.println("=".repeat(70));
+        System.out.println("=".repeat(50));
+        System.out.println("Trie Algorithm Test");
+        System.out.println("=".repeat(50));
+
+        try {
+            // Test Trie operations
+            System.out.println("Testing Trie operations...");
+
+            Algorithm algo = Algorithm.create();
+
+            // Test with sample words
+            String[] testWords = {"apple", "app", "application", "bat", "ball"};
+            System.out.println("Inserting words: " + String.join(", ", testWords));
+
+            long startTime = System.nanoTime();
+            for (String word : testWords) {
+                Object result = algo.insert(word);
+                System.out.println("Inserted '" + word + "': " + result);
+            }
+            long endTime = System.nanoTime();
+
+            System.out.printf("All operations completed in %.3f ms%n", (endTime - startTime) / 1_000_000.0);
+            System.out.println("Status: SUCCESS");
+
+        } catch (Exception e) {
+            System.err.println("Error running Trie algorithm: " + e.getMessage());
+            e.printStackTrace();
+            System.exit(1);
+        }
+
+        System.out.println("=".repeat(50));
     }
 }

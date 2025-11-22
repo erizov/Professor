@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public int predict_metric(String metric_name, Object steps) {
         logger.info("Executing predict_metric");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

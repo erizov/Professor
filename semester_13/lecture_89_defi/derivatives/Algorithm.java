@@ -14,7 +14,7 @@ public class Algorithm {
     public static Object numerical_derivative(Object... args) {
         logger.info("Executing numerical_derivative");
         List<Object> result = new ArrayList<>();
-        return new ArrayList<>();
+        return null; // TODO: Implement derivatives logic
     }
 
     public static void main(String[] args) {

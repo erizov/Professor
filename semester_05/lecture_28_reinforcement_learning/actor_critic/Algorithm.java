@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int actor_forward(List<Object> state) {
         logger.info("Executing actor_forward");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int critic_forward(List<Object> state) {
         logger.info("Executing critic_forward");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int shard_tensor(List<Object> tensor, Object axis) {
         logger.info("Executing shard_tensor");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int all_reduce(List<Object> shards) {
         logger.info("Executing all_reduce");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

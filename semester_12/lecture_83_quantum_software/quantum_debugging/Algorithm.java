@@ -27,7 +27,7 @@ public class Algorithm {
     public List<Object> detect_errors(String circuit_id) {
         logger.info("Executing detect_errors");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement debugging logic
     }
 
     public static Algorithm create() {

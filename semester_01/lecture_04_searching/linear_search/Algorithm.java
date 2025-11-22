@@ -1,3 +1,5 @@
+package semester_01.lecture_04_searching.linear_search;
+
 import java.util.logging.Logger;
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());

@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public int get_balance(String chain_id, String address) {
         logger.info("Executing get_balance");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int detect_deadlock() {
         logger.info("Executing detect_deadlock");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

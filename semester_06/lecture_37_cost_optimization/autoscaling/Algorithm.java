@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int update_metrics(Object cpu_usage, Object memory_usage) {
         logger.info("Executing update_metrics");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int get_current_instances() {
         logger.info("Executing get_current_instances");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

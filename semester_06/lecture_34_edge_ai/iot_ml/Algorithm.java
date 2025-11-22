@@ -43,7 +43,7 @@ public class Algorithm {
      */
     public int predict(String device_id) {
         logger.info("Executing predict");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

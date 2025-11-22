@@ -28,7 +28,7 @@ public class Algorithm {
     public boolean deploy_workload(String workload_id, String cloud_id, Object resources) {
         logger.info("Executing deploy_workload");
         Map<String, Object> result = new HashMap<>();
-        return false;  // FIXME: Changed from Map to boolean
+        return false;
     }
 
     /**

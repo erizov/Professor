@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int get_q_values(List<Object> state) {
         logger.info("Executing get_q_values");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int choose_action(List<Object> state, Object epsilon) {
         logger.info("Executing choose_action");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

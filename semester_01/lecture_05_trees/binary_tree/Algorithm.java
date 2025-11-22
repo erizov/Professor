@@ -1,3 +1,5 @@
+package semester_01.lecture_05_trees.binary_tree;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;

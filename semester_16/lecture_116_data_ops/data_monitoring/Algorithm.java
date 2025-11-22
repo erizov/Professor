@@ -35,7 +35,7 @@ public class Algorithm {
     public String check_alerts() {
         logger.info("Executing check_alerts");
         Map<String, Object> result = new HashMap<>();
-        return "";  // FIXME: Changed from Map to String
+        return "";
     }
 
     public static Algorithm create() {

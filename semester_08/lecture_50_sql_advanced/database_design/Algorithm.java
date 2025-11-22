@@ -37,7 +37,7 @@ public class Algorithm {
     public List<Object> normalize(String table_name) {
         logger.info("Executing normalize");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement database design logic
     }
 
     public static Algorithm create() {

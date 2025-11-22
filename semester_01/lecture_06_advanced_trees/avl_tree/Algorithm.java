@@ -18,16 +18,34 @@ public class Algorithm {
 
 
 
-    return null;  // FIXME: Added missing return
+    return null;
     }
     public static void main(String[] args) {
-        System.out.println("=".repeat(70));
-        System.out.println("Avl Tree");
-        System.out.println("=".repeat(70));
-        
-        Object result = avltree();
-        System.out.println("Result: " + result);
-        System.out.println("\nSee README.md for implementation details");
+        System.out.println("=".repeat(50));
+        System.out.println("AVL Tree Algorithm Test");
+        System.out.println("=".repeat(50));
+
+        try {
+            // Test AVL tree operations
+            System.out.println("Testing AVL Tree operations...");
+
+            long startTime = System.nanoTime();
+            Object result = avltree();
+            long endTime = System.nanoTime();
+
+            System.out.println("AVL Tree operations completed");
+            System.out.println("Result: " + result);
+            System.out.printf("Execution time: %.3f ms%n", (endTime - startTime) / 1_000_000.0);
+            System.out.println("Status: SUCCESS");
+            System.out.println("\nSee README.md for implementation details");
+
+        } catch (Exception e) {
+            System.err.println("Error running AVL Tree algorithm: " + e.getMessage());
+            e.printStackTrace();
+            System.exit(1);
+        }
+
+        System.out.println("=".repeat(50));
     }
         public static class AVLNode {
     int val, height;

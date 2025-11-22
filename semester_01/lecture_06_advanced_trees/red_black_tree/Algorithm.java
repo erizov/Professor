@@ -1,8 +1,10 @@
+package semester_01.lecture_06_advanced_trees.red_black_tree;
+
 /**
  * Red-Black Tree implementation.
- * 
+ *
  * Self-balancing BST with color property.
- * 
+ *
  * Time Complexity: O(log n) - all operations
  * Space Complexity: O(n)
  */

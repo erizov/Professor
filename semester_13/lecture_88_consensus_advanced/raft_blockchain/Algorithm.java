@@ -28,7 +28,7 @@ public class Algorithm {
     public boolean append_entry(Object entry) {
         logger.info("Executing append_entry");
         Map<String, Object> result = new HashMap<>();
-        return false;  // FIXME: Changed from Map to boolean
+        return false;
     }
 
     /**

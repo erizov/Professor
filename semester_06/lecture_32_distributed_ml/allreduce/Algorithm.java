@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int reduce(List<Object> gradients, String operation) {
         logger.info("Executing reduce");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

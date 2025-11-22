@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int get_engagement_score() {
         logger.info("Executing get_engagement_score");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

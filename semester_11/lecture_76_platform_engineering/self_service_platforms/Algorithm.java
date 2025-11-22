@@ -27,7 +27,7 @@ public class Algorithm {
     public boolean provision(String user, String service_id) {
         logger.info("Executing provision");
         Map<String, Object> result = new HashMap<>();
-        return false;  // FIXME: Changed from Map to boolean
+        return false;
     }
 
     public static Algorithm create() {

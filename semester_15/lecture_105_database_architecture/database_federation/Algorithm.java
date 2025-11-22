@@ -28,7 +28,7 @@ public class Algorithm {
     public List<Object> federated_query(String query) {
         logger.info("Executing federated_query");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement database federation logic
     }
 
     public static Algorithm create() {

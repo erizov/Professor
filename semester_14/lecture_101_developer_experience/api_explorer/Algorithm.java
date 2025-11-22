@@ -19,7 +19,7 @@ public class Algorithm {
     public List<Object> discover_api(String base_url) {
         logger.info("Executing discover_api");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement API explorer logic
     }
 
     /**

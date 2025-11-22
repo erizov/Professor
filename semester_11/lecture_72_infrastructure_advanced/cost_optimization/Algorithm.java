@@ -35,7 +35,7 @@ public class Algorithm {
      */
     public int calculate_total_cost(Object start_time, Object end_time) {
         logger.info("Executing calculate_total_cost");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

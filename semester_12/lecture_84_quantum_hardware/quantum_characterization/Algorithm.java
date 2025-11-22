@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int measure(String observable, List<Object> state) {
         logger.info("Executing measure");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

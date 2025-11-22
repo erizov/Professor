@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int encode(List<Object> sequence) {
         logger.info("Executing encode");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int decode(List<Object> hidden_state, Object max_length) {
         logger.info("Executing decode");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

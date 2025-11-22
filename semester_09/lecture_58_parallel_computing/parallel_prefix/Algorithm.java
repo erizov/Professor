@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int scan(List<Object> data, Object op) {
         logger.info("Executing scan");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

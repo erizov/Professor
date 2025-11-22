@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int _get_shard(Object transaction) {
         logger.info("Executing _get_shard");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

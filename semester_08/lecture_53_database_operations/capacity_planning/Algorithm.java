@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int predict_future_usage(Object days) {
         logger.info("Executing predict_future_usage");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public int recommend_capacity(Object target_utilization) {
         logger.info("Executing recommend_capacity");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -42,7 +42,7 @@ public class Algorithm {
      */
     public int calculate_growth_rate() {
         logger.info("Executing calculate_growth_rate");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

@@ -19,7 +19,7 @@ public class Algorithm {
     public List<Object> detect_regions(List<Object> image) {
         logger.info("Executing detect_regions");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement RCNN logic
     }
 
     /**
@@ -27,7 +27,7 @@ public class Algorithm {
      */
     public int classify_region(Object region) {
         logger.info("Executing classify_region");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

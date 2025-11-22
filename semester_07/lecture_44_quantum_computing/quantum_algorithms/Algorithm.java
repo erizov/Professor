@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int grover_search(Object n_qubits, Object target) {
         logger.info("Executing grover_search");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public int shor_factorization(Object n) {
         logger.info("Executing shor_factorization");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

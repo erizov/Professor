@@ -29,7 +29,7 @@ public class Algorithm {
         logger.info("Executing apply_policy");
         long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
-        return false;  // FIXME: Changed from Map to boolean
+        return false;
     }
 
     /**

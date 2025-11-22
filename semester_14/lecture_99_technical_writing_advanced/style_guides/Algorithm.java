@@ -28,7 +28,7 @@ public class Algorithm {
     public List<Object> check_code(String code) {
         logger.info("Executing check_code");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement style guide logic
     }
 
     public static Algorithm create() {

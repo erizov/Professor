@@ -27,7 +27,7 @@ public class Algorithm {
     public List<Object> aggregate(String series_id, String window, String function) {
         logger.info("Executing aggregate");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement aggregation logic
     }
 
     public static Algorithm create() {

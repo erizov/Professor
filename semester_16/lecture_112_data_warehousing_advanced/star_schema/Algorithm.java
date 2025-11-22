@@ -37,7 +37,7 @@ public class Algorithm {
     public List<Object> query(String fact_table, Object filters) {
         logger.info("Executing query");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement star schema logic
     }
 
     public static Algorithm create() {

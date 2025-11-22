@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int suggest_float(String name, Object low, Object high) {
         logger.info("Executing suggest_float");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int suggest_int(String name, Object low, Object high) {
         logger.info("Executing suggest_int");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

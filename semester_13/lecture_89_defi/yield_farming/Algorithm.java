@@ -28,7 +28,7 @@ public class Algorithm {
     public boolean deposit(String pool_id, Object amount, String user) {
         logger.info("Executing deposit");
         Map<String, Object> result = new HashMap<>();
-        return false;  // FIXME: Changed from Map to boolean
+        return false;
     }
 
     /**
@@ -36,7 +36,7 @@ public class Algorithm {
      */
     public int calculate_yield(String pool_id, Object amount) {
         logger.info("Executing calculate_yield");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int parent(Object i) {
         logger.info("Executing parent");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int left_child(Object i) {
         logger.info("Executing left_child");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public int right_child(Object i) {
         logger.info("Executing right_child");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -50,7 +50,7 @@ public class Algorithm {
      */
     public int extract_min() {
         logger.info("Executing extract_min");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

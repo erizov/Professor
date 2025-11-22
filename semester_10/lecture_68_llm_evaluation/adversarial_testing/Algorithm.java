@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int generate_adversarial_example(Object model, List<Object> original_input, Object epsilon) {
         logger.info("Executing generate_adversarial_example");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

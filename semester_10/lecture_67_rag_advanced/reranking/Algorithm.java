@@ -19,7 +19,7 @@ public class Algorithm {
     public List<Object> rerank(List<Object> items, String query) {
         logger.info("Executing rerank");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement reranking logic
     }
 
     public static Algorithm create() {

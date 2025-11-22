@@ -19,7 +19,7 @@ public class Algorithm {
     public boolean apply_optimization(String opt_name, Object config) {
         logger.info("Executing apply_optimization");
         Map<String, Object> result = new HashMap<>();
-        return false;  // FIXME: Changed from Map to boolean
+        return false;
     }
 
     /**

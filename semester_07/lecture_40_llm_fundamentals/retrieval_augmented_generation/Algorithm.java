@@ -35,7 +35,7 @@ public class Algorithm {
     public String generate(String query, List<String> context) {
         logger.info("Executing generate");
         Map<String, Object> result = new HashMap<>();
-        return "";  // FIXME: Changed from Map to String
+        return "";
     }
 
     public static Algorithm create() {

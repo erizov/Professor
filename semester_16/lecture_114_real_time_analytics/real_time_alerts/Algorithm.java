@@ -29,7 +29,7 @@ public class Algorithm {
         logger.info("Executing check_alerts");
         long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement real-time alerts logic
     }
 
     public static Algorithm create() {

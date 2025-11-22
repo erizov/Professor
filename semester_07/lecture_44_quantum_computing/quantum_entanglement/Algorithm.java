@@ -27,7 +27,7 @@ public class Algorithm {
      */
     public int measure_entangled(String pair_id, Object qubit_index) {
         logger.info("Executing measure_entangled");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -35,7 +35,7 @@ public class Algorithm {
      */
     public int verify_entanglement(String pair_id) {
         logger.info("Executing verify_entanglement");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

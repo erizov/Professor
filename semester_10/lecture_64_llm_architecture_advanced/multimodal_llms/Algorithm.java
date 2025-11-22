@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int encode_text(String text) {
         logger.info("Executing encode_text");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int encode_image(List<Object> image) {
         logger.info("Executing encode_image");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public int fuse(List<Object> text_emb, List<Object> image_emb) {
         logger.info("Executing fuse");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

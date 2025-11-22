@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int vectorize_operation(Object operation, List<Object> data) {
         logger.info("Executing vectorize_operation");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

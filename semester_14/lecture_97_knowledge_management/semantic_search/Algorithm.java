@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public int similarity(String doc1_id, String doc2_id) {
         logger.info("Executing similarity");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

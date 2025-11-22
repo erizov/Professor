@@ -19,7 +19,7 @@ public class Algorithm {
     public List<Object> detect(List<Object> image) {
         logger.info("Executing detect");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement YOLO logic
     }
 
     /**

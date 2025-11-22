@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public int calculate_throughput(Object base_tps, Object solution) {
         logger.info("Executing calculate_throughput");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

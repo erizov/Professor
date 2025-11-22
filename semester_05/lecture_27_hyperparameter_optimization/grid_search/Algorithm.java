@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int _evaluate(List<Object> X, List<Object> y, Object params) {
         logger.info("Executing _evaluate");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

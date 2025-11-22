@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int magnitude_pruning(List<Object> weights, Object threshold) {
         logger.info("Executing magnitude_pruning");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

@@ -19,7 +19,7 @@ public class Algorithm {
     public String export_model(String model_id, Object model) {
         logger.info("Executing export_model");
         Map<String, Object> result = new HashMap<>();
-        return "";  // FIXME: Changed from Map to String
+        return "";
     }
 
     /**

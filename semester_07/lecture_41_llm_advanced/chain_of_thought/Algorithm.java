@@ -19,7 +19,7 @@ public class Algorithm {
     public String reason(String problem, Object steps) {
         logger.info("Executing reason");
         Map<String, Object> result = new HashMap<>();
-        return "";  // FIXME: Changed from Map to String
+        return "";
     }
 
     /**

@@ -28,7 +28,7 @@ public class Algorithm {
     public List<Object> retrieve(String query, Object hop) {
         logger.info("Executing retrieve");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement multi-hop RAG logic
     }
 
     /**

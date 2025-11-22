@@ -28,7 +28,7 @@ public class Algorithm {
     public boolean deploy_task(String task_id, String node_id, Object task_func) {
         logger.info("Executing deploy_task");
         Map<String, Object> result = new HashMap<>();
-        return false;  // FIXME: Changed from Map to boolean
+        return false;
     }
 
     /**

@@ -14,7 +14,7 @@ public class Algorithm {
     public static Object bias_detection(Object... args) {
         logger.info("Executing bias_detection");
         List<Object> result = new ArrayList<>();
-        return new ArrayList<>();
+        return null; // TODO: Implement bias detection logic
     }
 
     public static void main(String[] args) {

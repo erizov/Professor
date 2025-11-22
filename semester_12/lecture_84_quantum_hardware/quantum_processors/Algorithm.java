@@ -27,7 +27,7 @@ public class Algorithm {
      */
     public int measure_all() {
         logger.info("Executing measure_all");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -35,7 +35,7 @@ public class Algorithm {
      */
     public int get_fidelity() {
         logger.info("Executing get_fidelity");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

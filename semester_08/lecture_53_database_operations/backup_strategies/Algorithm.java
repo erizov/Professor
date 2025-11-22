@@ -36,7 +36,7 @@ public class Algorithm {
     public int cleanup_old_backups() {
         logger.info("Executing cleanup_old_backups");
         long timestamp = System.currentTimeMillis();
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

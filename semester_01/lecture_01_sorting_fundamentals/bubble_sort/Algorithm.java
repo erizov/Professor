@@ -1,8 +1,9 @@
+package semester_01.lecture_01_sorting_fundamentals.bubble_sort;
+
 import java.util.Arrays;
 import java.util.Random;
 
 /**
-package semester_01.lecture_01_sorting_fundamentals.bubble_sort;
  * Bubble Sort implementation.
  * 
  * Simple comparison-based sorting algorithm.

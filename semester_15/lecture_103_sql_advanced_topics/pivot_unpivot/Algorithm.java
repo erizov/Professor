@@ -27,7 +27,7 @@ public class Algorithm {
     public List<Object> unpivot(String table_name, List<String> id_cols, List<String> value_cols) {
         logger.info("Executing unpivot");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement pivot/unpivot logic
     }
 
     public static Algorithm create() {

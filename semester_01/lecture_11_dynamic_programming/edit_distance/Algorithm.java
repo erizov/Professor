@@ -1,6 +1,8 @@
+package semester_01.lecture_11_dynamic_programming.edit_distance;
+
 /**
  * Edit Distance (Levenshtein Distance) - Dynamic Programming.
- * 
+ *
  * Minimum number of single-character edits (insertions, deletions,
  * substitutions) required to change one word into another.
  */

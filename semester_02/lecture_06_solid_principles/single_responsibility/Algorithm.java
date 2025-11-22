@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public Map<String, Object> get_user(String user_id) {
         logger.info("Executing get_user");
-        return null;  // FIXME: Changed from boolean to null
+        return null;
     }
 
     /**

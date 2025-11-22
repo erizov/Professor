@@ -14,7 +14,7 @@ public class Algorithm {
     public static Object bias_mitigation_reweighting(Object... args) {
         logger.info("Executing bias_mitigation_reweighting");
         List<Object> result = new ArrayList<>();
-        return new ArrayList<>();
+        return null; // TODO: Implement bias mitigation logic
     }
 
     public static void main(String[] args) {

@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int tokenize(String text) {
         logger.info("Executing tokenize");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

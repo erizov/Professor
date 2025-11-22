@@ -19,7 +19,7 @@ public class Algorithm {
     public List<Object> compress(List<Object> series, String method) {
         logger.info("Executing compress");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement compression logic
     }
 
     /**
@@ -28,7 +28,7 @@ public class Algorithm {
     public List<Object> decompress(List<Object> compressed, Object start_timestamp, Object start_value) {
         logger.info("Executing decompress");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement compression logic
     }
 
     public static Algorithm create() {

@@ -28,7 +28,7 @@ public class Algorithm {
     public int end_profile(String profile_id) {
         logger.info("Executing end_profile");
         long timestamp = System.currentTimeMillis();
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

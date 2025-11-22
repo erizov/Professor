@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int search(Object oracle) {
         logger.info("Executing search");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

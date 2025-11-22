@@ -1,6 +1,8 @@
+package semester_01.lecture_04_searching.binary_search;
+
 /**
  * Binary Search implementation.
- * 
+ *
  * Efficient search algorithm for sorted arrays using divide-and-conquer.
  */
 import java.util.Arrays;

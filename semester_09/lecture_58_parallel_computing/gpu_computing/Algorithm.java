@@ -36,7 +36,7 @@ public class Algorithm {
     public String allocate_memory(String device_id, Object size) {
         logger.info("Executing allocate_memory");
         Map<String, Object> result = new HashMap<>();
-        return "";  // FIXME: Changed from Map to String
+        return "";
     }
 
     public static Algorithm create() {

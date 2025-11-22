@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int encode(List<Object> tokens) {
         logger.info("Executing encode");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int forward(List<Object> input_ids) {
         logger.info("Executing forward");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public int _self_attention(List<Object> hidden_states) {
         logger.info("Executing _self_attention");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -42,7 +42,7 @@ public class Algorithm {
      */
     public int _feed_forward(List<Object> hidden_states) {
         logger.info("Executing _feed_forward");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

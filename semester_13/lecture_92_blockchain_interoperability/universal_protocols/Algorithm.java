@@ -28,7 +28,7 @@ public class Algorithm {
     public boolean send(String protocol, Object message) {
         logger.info("Executing send");
         Map<String, Object> result = new HashMap<>();
-        return false;  // FIXME: Changed from Map to boolean
+        return false;
     }
 
     public static Algorithm create() {

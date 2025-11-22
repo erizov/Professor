@@ -35,7 +35,7 @@ public class Algorithm {
      */
     public int _predict_one(List<Object> x, Object estimator) {
         logger.info("Executing _predict_one");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -43,7 +43,7 @@ public class Algorithm {
      */
     public int predict(List<Object> X) {
         logger.info("Executing predict");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

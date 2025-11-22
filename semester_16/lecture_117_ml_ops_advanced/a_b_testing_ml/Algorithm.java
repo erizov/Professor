@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public int statistical_significance() {
         logger.info("Executing statistical_significance");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

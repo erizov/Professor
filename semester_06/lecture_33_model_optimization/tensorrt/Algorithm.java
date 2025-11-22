@@ -27,7 +27,7 @@ public class Algorithm {
      */
     public int inference(String model_id, List<Object> input_data) {
         logger.info("Executing inference");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

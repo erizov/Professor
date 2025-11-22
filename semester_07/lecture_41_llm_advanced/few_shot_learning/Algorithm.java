@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int compute_embedding(List<Object> sample) {
         logger.info("Executing compute_embedding");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

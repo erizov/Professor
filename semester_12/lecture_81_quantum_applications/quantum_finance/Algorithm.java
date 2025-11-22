@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int price_option(String option_type, String strike, Object spot, Object volatility) {
         logger.info("Executing price_option");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int portfolio_optimization(List<Object> assets, Object risk_tolerance) {
         logger.info("Executing portfolio_optimization");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

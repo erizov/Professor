@@ -19,7 +19,7 @@ public class Algorithm {
     public String route_ticket(String ticket_id, String description, List<String> available_agents) {
         logger.info("Executing route_ticket");
         Map<String, Object> result = new HashMap<>();
-        return "";  // FIXME: Changed from Map to String
+        return "";
     }
 
     /**

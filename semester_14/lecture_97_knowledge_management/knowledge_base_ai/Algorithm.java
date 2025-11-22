@@ -28,7 +28,7 @@ public class Algorithm {
     public List<Object> search(String query, Object top_k) {
         logger.info("Executing search");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement knowledge base AI logic
     }
 
     public static Algorithm create() {

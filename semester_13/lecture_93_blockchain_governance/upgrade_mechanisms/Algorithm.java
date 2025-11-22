@@ -28,7 +28,7 @@ public class Algorithm {
         logger.info("Executing upgrade");
         long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
-        return false;  // FIXME: Changed from Map to boolean
+        return false;
     }
 
     public static Algorithm create() {

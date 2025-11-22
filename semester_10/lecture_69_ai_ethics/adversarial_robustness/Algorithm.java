@@ -14,7 +14,7 @@ public class Algorithm {
     public static Object adversarial_robustness_training(Object... args) {
         logger.info("Executing adversarial_robustness_training");
         List<Object> result = new ArrayList<>();
-        return new ArrayList<>();
+        return null; // TODO: Implement adversarial robustness logic
     }
 
     public static void main(String[] args) {

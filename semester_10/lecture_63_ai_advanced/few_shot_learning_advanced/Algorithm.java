@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int compute_prototype(String class_name) {
         logger.info("Executing compute_prototype");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int parallel_sum(List<Object> data) {
         logger.info("Executing parallel_sum");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

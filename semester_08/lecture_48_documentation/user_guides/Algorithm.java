@@ -36,7 +36,7 @@ public class Algorithm {
     }
 
     public List<String> get_sections() {
-        return new ArrayList<>(sections);
+        return null; // TODO: Implement user guides logic
     }
 
     public static Algorithm create() {

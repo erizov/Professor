@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int encode(String code_name, Object logical_qubit) {
         logger.info("Executing encode");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int detect_error(String code_name, List<Object> physical_qubits) {
         logger.info("Executing detect_error");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public int correct_error(String code_name, List<Object> physical_qubits, List<Object> errors) {
         logger.info("Executing correct_error");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

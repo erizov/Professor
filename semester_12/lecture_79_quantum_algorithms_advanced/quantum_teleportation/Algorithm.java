@@ -17,7 +17,7 @@ public class Algorithm {
      * Create Bell pair for teleportation.
      */
     public Object create_entangled_pair() {
-        Object random = null;  // FIXME: Added missing variable declaration
+        Object random = null;
 
         logger.info("Executing create_entangled_pair");
         String result = "PAIR-" + random.randint(1000, 9999) + "";
@@ -30,7 +30,7 @@ public class Algorithm {
     public List<Object> teleport(List<Object> qubit, String pair_id) {
         logger.info("Executing teleport");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement quantum teleportation logic
     }
 
     public static Algorithm create() {

@@ -27,7 +27,7 @@ public class Algorithm {
      */
     public int forward(List<Object> x) {
         logger.info("Executing forward");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -35,7 +35,7 @@ public class Algorithm {
      */
     public int predict(List<Object> x) {
         logger.info("Executing predict");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

@@ -27,7 +27,7 @@ public class Algorithm {
     public List<Object> aggregate(String collection, List<Object> pipeline) {
         logger.info("Executing aggregate");
         Map<String, Object> result = new HashMap<>();
-        return new ArrayList<>();  // FIXME: Changed from Map to List
+        return null; // TODO: Implement NoSQL aggregation logic
     }
 
     public static Algorithm create() {

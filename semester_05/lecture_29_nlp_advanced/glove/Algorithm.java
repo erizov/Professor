@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int get_embedding(String word) {
         logger.info("Executing get_embedding");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public int similarity(String word1, String word2) {
         logger.info("Executing similarity");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

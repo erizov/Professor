@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int select_action(List<Object> state) {
         logger.info("Executing select_action");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

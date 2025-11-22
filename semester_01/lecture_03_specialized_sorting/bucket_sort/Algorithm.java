@@ -1,3 +1,5 @@
+package semester_01.lecture_03_specialized_sorting.bucket_sort;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

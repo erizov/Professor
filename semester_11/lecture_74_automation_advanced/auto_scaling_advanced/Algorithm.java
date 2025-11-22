@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int update_metrics(Object cpu, Object memory, Object requests_per_sec) {
         logger.info("Executing update_metrics");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

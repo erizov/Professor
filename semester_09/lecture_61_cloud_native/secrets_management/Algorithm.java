@@ -29,7 +29,7 @@ public class Algorithm {
         logger.info("Executing retrieve_secret");
         long timestamp = System.currentTimeMillis();
         Map<String, Object> result = new HashMap<>();
-        return "";  // FIXME: Changed from Map to String
+        return "";
     }
 
     public static Algorithm create() {

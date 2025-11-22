@@ -27,7 +27,7 @@ public class Algorithm {
     public boolean deploy(String app_id, String version, List<String> target_nodes) {
         logger.info("Executing deploy");
         Map<String, Object> result = new HashMap<>();
-        return false;  // FIXME: Changed from Map to boolean
+        return false;
     }
 
     /**

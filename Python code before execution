@@ -1,0 +1,23 @@
+[1mdiff --git a/web_interface/templates/algorithm_executor.html b/web_interface/templates/algorithm_executor.html[m
+[1mindex f33d6512c..9471ee6de 100644[m
+[1m--- a/web_interface/templates/algorithm_executor.html[m
+[1m+++ b/web_interface/templates/algorithm_executor.html[m
+[36m@@ -223,8 +223,16 @@[m
+ </head>[m
+ <body>[m
+     <div class="container">[m
+[31m-        <h1>Algorithm Executor <span class="language-badge java">Java</span><span class="language-badge python">Python</span></h1>[m
+[31m-        <p class="subtitle">Execute any Java or Python algorithm from a unified interface</p>[m
+[32m+[m[32m        <div class="header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px;">[m
+[32m+[m[32m            <h1 style="margin: 0 0 10px 0; font-size: 2rem;">Algorithm Executor <span class="language-badge java">Java</span><span class="language-badge python">Python</span></h1>[m
+[32m+[m[32m            <p class="subtitle" style="opacity: 0.9; margin: 0 0 10px 0;">Execute any Java or Python algorithm from a unified interface</p>[m
+[32m+[m[32m            <div class="nav-menu" style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">[m
+[32m+[m[32m                <a href="/" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Home</a>[m
+[32m+[m[32m                <a href="/algorithm-executor" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Algorithm Executor</a>[m
+[32m+[m[32m                <a href="/test-reports" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Test Results</a>[m
+[32m+[m[32m                <a href="/sandbox" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Sandbox</a>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+         [m
+         <div class="controls">[m
+             <div class="control-group">[m

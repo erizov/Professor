@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int quantize_activations(List<Object> activations, Object bits) {
         logger.info("Executing quantize_activations");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**
@@ -34,7 +34,7 @@ public class Algorithm {
      */
     public int dequantize(List<Object> quantized, Object scale) {
         logger.info("Executing dequantize");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

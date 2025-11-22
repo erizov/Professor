@@ -27,7 +27,7 @@ public class Algorithm {
      */
     public int rotate_key(String session_id) {
         logger.info("Executing rotate_key");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

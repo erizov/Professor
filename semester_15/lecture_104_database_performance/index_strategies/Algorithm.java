@@ -28,7 +28,7 @@ public class Algorithm {
     public String recommend_indexes(List<Object> queries) {
         logger.info("Executing recommend_indexes");
         Map<String, Object> result = new HashMap<>();
-        return "";  // FIXME: Changed from Map to String
+        return "";
     }
 
     public static Algorithm create() {

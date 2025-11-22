@@ -14,7 +14,7 @@ public class Algorithm {
     public static Object fairness_metrics(Object... args) {
         logger.info("Executing fairness_metrics");
         List<Object> result = new ArrayList<>();
-        return new ArrayList<>();
+        return null; // TODO: Implement fairness algorithms logic
     }
 
     public static void main(String[] args) {

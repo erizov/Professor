@@ -1,3 +1,5 @@
+package semester_01.lecture_02_efficient_sorting.merge_sort;
+
 import java.util.Arrays;
 import java.util.Random;
 
@@ -259,5 +261,46 @@ public class Algorithm {
         logger.info("  - Parallelizable");
         logger.info(separator);
         logger.info(String.format("\nTotal execution time: %.3f ms%n", duration));
+    }
+
+    public static void main(String[] args) {
+        System.out.println("=".repeat(50));
+        System.out.println("Merge Sort Algorithm Test");
+        System.out.println("=".repeat(50));
+
+        try {
+            // Validate input
+            if (args.length > 0) {
+                System.out.println("Note: Command line arguments ignored. Using sample data.");
+            }
+
+            // Test with sample data
+            int[] testArray = {64, 34, 25, 12, 22, 11, 90};
+            System.out.println("Original array: " + java.util.Arrays.toString(testArray));
+
+            // Validate array
+            if (testArray == null || testArray.length == 0) {
+                throw new IllegalArgumentException("Array cannot be null or empty");
+            }
+
+            Algorithm algo = new Algorithm();
+            long startTime = System.nanoTime();
+            algo.mergeSort(testArray);
+            long endTime = System.nanoTime();
+
+            System.out.println("Sorted array:   " + java.util.Arrays.toString(testArray));
+            System.out.printf("Execution time: %.3f ms%n", (endTime - startTime) / 1_000_000.0);
+            System.out.println("Status: SUCCESS");
+
+        } catch (IllegalArgumentException e) {
+            System.err.println("Input validation error: " + e.getMessage());
+            System.exit(1);
+        } catch (Exception e) {
+            System.err.println("Error running algorithm: " + e.getMessage());
+            e.printStackTrace();
+            System.exit(1);
+        }
+
+        System.out.println("=".repeat(50));
     }
 }

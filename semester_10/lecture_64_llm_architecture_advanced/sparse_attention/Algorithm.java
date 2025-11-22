@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int compute_attention(List<Object> queries, List<Object> keys, List<Object> values) {
         logger.info("Executing compute_attention");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

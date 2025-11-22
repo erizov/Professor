@@ -41,7 +41,7 @@ public class Algorithm {
         logger.info("=".repeat(70));
         
         Algorithm algo = Algorithm.create();
-        str result = algo.adapt_domain("", "");
+        String result = algo.adapt_domain("", "");
         logger.info("Result: " + result);
         logger.info("=".repeat(70));
     }

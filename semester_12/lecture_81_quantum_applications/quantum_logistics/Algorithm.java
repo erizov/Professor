@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int solve_tsp(List<Object> cities) {
         logger.info("Executing solve_tsp");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

@@ -14,7 +14,7 @@ public class Algorithm {
     public static Object anomaly_detection_blockchain(Object... args) {
         logger.info("Executing anomaly_detection_blockchain");
         List<Object> result = new ArrayList<>();
-        return new ArrayList<>();
+        return null; // TODO: Implement anomaly detection logic
     }
 
     public static void main(String[] args) {

@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int downsample(List<Object> data, Object window, String method) {
         logger.info("Executing downsample");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     public static Algorithm create() {

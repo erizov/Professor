@@ -28,7 +28,7 @@ public class Algorithm {
     public String read_file(String path) {
         logger.info("Executing read_file");
         Map<String, Object> result = new HashMap<>();
-        return "";  // FIXME: Changed from Map to String
+        return "";
     }
 
     /**

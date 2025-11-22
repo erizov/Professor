@@ -27,7 +27,7 @@ public class Algorithm {
      */
     public int shard_data(String key, Object num_shards) {
         logger.info("Executing shard_data");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

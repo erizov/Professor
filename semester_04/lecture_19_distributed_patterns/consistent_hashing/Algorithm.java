@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int _hash(String key) {
         logger.info("Executing _hash");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

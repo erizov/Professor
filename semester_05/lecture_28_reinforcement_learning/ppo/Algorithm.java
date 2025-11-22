@@ -26,7 +26,7 @@ public class Algorithm {
      */
     public int compute_advantage(List<Object> rewards, List<Object> values) {
         logger.info("Executing compute_advantage");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

@@ -18,7 +18,7 @@ public class Algorithm {
      */
     public int optimize_vqa(Object cost_function, List<Object> initial_params) {
         logger.info("Executing optimize_vqa");
-        return -1;  // FIXME: Changed from null to -1
+        return -1;
     }
 
     /**

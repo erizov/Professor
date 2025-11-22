@@ -19,7 +19,7 @@ public class Algorithm {
     public String create_version(String model_id, Object model, Object metadata) {
         logger.info("Executing create_version");
         Map<String, Object> result = new HashMap<>();
-        return "";  // FIXME: Changed from Map to String
+        return "";
     }
 
     /**

@@ -1,3 +1,5 @@
+package semester_01.lecture_09_graph_algorithms.dfs;
+
 import java.util.*;
 import java.util.logging.Logger;
 
