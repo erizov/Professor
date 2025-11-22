@@ -1,4 +1,4 @@
-package semester_03.lecture_13_integration_patterns.message_queue;
+// package semester_03.lecture_13_integration_patterns.message_queue;
 
 import java.util.*;
 import java.util.concurrent.*;

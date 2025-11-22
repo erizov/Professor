@@ -1,4 +1,4 @@
-package semester_14.lecture_98_documentation_advanced.automated_documentation;
+// package semester_14.lecture_98_documentation_advanced.automated_documentation;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

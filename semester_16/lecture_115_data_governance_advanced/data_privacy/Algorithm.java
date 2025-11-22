@@ -1,4 +1,4 @@
-package semester_16.lecture_115_data_governance_advanced.data_privacy;
+// package semester_16.lecture_115_data_governance_advanced.data_privacy;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

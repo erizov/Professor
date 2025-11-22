@@ -1,4 +1,4 @@
-package semester_15.lecture_103_sql_advanced_topics.sql_analytics;
+// package semester_15.lecture_103_sql_advanced_topics.sql_analytics;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

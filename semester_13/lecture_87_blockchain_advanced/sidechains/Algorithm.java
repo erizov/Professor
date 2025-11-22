@@ -1,4 +1,4 @@
-package semester_13.lecture_87_blockchain_advanced.sidechains;
+// package semester_13.lecture_87_blockchain_advanced.sidechains;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

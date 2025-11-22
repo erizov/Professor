@@ -1,4 +1,4 @@
-package semester_02.lecture_06_solid_principles.single_responsibility;
+// package semester_02.lecture_06_solid_principles.single_responsibility;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

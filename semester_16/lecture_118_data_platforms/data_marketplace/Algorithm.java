@@ -1,4 +1,4 @@
-package semester_16.lecture_118_data_platforms.data_marketplace;
+// package semester_16.lecture_118_data_platforms.data_marketplace;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

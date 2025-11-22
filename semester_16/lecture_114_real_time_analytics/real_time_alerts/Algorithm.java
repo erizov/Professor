@@ -1,4 +1,4 @@
-package semester_16.lecture_114_real_time_analytics.real_time_alerts;
+// package semester_16.lecture_114_real_time_analytics.real_time_alerts;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

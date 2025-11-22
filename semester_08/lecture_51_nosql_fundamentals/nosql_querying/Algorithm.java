@@ -1,4 +1,4 @@
-package semester_08.lecture_51_nosql_fundamentals.nosql_querying;
+// package semester_08.lecture_51_nosql_fundamentals.nosql_querying;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

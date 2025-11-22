@@ -1,4 +1,4 @@
-package semester_02.lecture_06_solid_principles.liskov_substitution;
+// package semester_02.lecture_06_solid_principles.liskov_substitution;
 import java.util.logging.Logger;
 
 /**

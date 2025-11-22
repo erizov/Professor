@@ -1,4 +1,4 @@
-package semester_13.lecture_92_blockchain_interoperability.universal_protocols;
+// package semester_13.lecture_92_blockchain_interoperability.universal_protocols;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

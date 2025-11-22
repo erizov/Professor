@@ -1,4 +1,4 @@
-package semester_15.lecture_105_database_architecture.database_federation;
+// package semester_15.lecture_105_database_architecture.database_federation;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

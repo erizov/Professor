@@ -1,4 +1,4 @@
-package semester_02.lecture_09_behavioral_patterns.command;
+// package semester_02.lecture_09_behavioral_patterns.command;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

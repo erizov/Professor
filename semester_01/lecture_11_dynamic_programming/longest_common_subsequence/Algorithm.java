@@ -1,4 +1,4 @@
-package semester_01.lecture_11_dynamic_programming.longest_common_subsequence;
+// package semester_01.lecture_11_dynamic_programming.longest_common_subsequence;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package semester_08.lecture_48_documentation.technical_writing;
+// package semester_08.lecture_48_documentation.technical_writing;
 
 import java.util.Arrays;
 import java.util.List;

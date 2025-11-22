@@ -1,4 +1,4 @@
-package semester_05.lecture_29_nlp_advanced.glove;
+// package semester_05.lecture_29_nlp_advanced.glove;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

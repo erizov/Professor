@@ -1,4 +1,4 @@
-package semester_09.lecture_56_os_performance.memory_optimization;
+// package semester_09.lecture_56_os_performance.memory_optimization;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

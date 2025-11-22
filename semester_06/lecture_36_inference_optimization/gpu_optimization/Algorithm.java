@@ -1,4 +1,4 @@
-package semester_06.lecture_36_inference_optimization.gpu_optimization;
+// package semester_06.lecture_36_inference_optimization.gpu_optimization;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

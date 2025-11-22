@@ -1,4 +1,4 @@
-package semester_02.lecture_08_structural_patterns.composite;
+// package semester_02.lecture_08_structural_patterns.composite;
 import java.util.*;
 
 

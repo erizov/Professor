@@ -1,4 +1,4 @@
-package semester_12.lecture_82_hybrid_quantum.variational_quantum;
+// package semester_12.lecture_82_hybrid_quantum.variational_quantum;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

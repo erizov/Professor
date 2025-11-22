@@ -1,4 +1,4 @@
-package semester_04.lecture_14_security_patterns.encryption;
+// package semester_04.lecture_14_security_patterns.encryption;
 
 import java.security.SecureRandom;
 import java.util.Arrays;

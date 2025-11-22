@@ -1,4 +1,4 @@
-package semester_03.lecture_13_integration_patterns.publish_subscribe;
+// package semester_03.lecture_13_integration_patterns.publish_subscribe;
 
 import java.util.ArrayList;
 import java.util.List;

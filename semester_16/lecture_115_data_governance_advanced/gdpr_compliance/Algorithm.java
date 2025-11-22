@@ -1,4 +1,4 @@
-package semester_16.lecture_115_data_governance_advanced.gdpr_compliance;
+// package semester_16.lecture_115_data_governance_advanced.gdpr_compliance;
 import java.util.*;
 import java.util.logging.Logger;
 

@@ -1,4 +1,4 @@
-package semester_02.lecture_12_concurrency_patterns.readers_writers;
+// package semester_02.lecture_12_concurrency_patterns.readers_writers;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

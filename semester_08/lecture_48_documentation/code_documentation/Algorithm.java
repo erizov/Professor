@@ -1,4 +1,4 @@
-package semester_08.lecture_48_documentation.code_documentation;
+// package semester_08.lecture_48_documentation.code_documentation;
 
 import java.util.Arrays;
 import java.util.HashMap;

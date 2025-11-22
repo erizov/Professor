@@ -1,4 +1,4 @@
-package semester_02.lecture_12_concurrency_patterns.producer_consumer;
+// package semester_02.lecture_12_concurrency_patterns.producer_consumer;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

@@ -1,4 +1,4 @@
-package semester_01.lecture_08_hash_tables.hash_table;
+// package semester_01.lecture_08_hash_tables.hash_table;
 
 import java.util.*;
 import java.util.logging.Logger;

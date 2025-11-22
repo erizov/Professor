@@ -1,4 +1,4 @@
-package semester_06.lecture_32_distributed_ml.allreduce;
+// package semester_06.lecture_32_distributed_ml.allreduce;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

@@ -1,4 +1,4 @@
-package semester_05.lecture_23_object_detection.yolo;
+// package semester_05.lecture_23_object_detection.yolo;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

@@ -1,4 +1,4 @@
-package semester_09.lecture_59_distributed_systems_advanced.consensus_algorithms;
+// package semester_09.lecture_59_distributed_systems_advanced.consensus_algorithms;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

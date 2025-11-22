@@ -1,4 +1,4 @@
-package semester_03.lecture_16_advanced_ml.neural_network;
+// package semester_03.lecture_16_advanced_ml.neural_network;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

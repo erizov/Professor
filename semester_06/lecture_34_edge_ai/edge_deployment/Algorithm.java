@@ -1,4 +1,4 @@
-package semester_06.lecture_34_edge_ai.edge_deployment;
+// package semester_06.lecture_34_edge_ai.edge_deployment;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

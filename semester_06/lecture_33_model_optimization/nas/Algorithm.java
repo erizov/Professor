@@ -1,47 +1,32 @@
-package semester_06.lecture_33_model_optimization.nas;
-import java.util.*;
+// package semester_06.lecture_33_model_optimization.nas;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Logger;
-import java.util.logging.Level;
 
-
-/*** Nas implementation.
+/**
+ * Neural Architecture Search (NAS) implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-
-    public Algorithm() {
-        // Initialize
+    
+    public static Object defineSearchSpace(String space, List<Object> layers) {
+        List<Object> searchSpace = new ArrayList<>();
+        searchSpace.add(space);
+        searchSpace.addAll(layers);
+        return searchSpace;
     }
-
-    /**
-     * Define architecture search space.
-     */
-    public Object define_search_space(String space, List<Object> List<Object> any) {
-        logger.info("Executing define_search_space");
-        return null;
-    }
-
-    /**
-     * Search for optimal architecture.
-     */
-    public Map<String, Object> search(Object objective, Object max_iterations) {
-        logger.info("Executing search");
-        Map<String, Object> result = new HashMap<>();
-        return result;
-    }
-
-    public static Algorithm create() {
-        return new Algorithm();
-    }
-
+    
     public static void main(String[] args) {
-        logger.info("=".repeat(70));
-        logger.info("Nas");
-        logger.info("=".repeat(70));
+        logger.info("Neural Architecture Search");
+        logger.info("==================================================");
         
-        Algorithm algo = Algorithm.create();
-        Object result = algo.define_search_space("", new ArrayList<>());
-        logger.info("Result: " + result);
-        logger.info("=".repeat(70));
+        List<Object> layers = new ArrayList<>();
+        layers.add("conv");
+        layers.add("pool");
+        layers.add("fc");
+        
+        Object space = defineSearchSpace("resnet", layers);
+        logger.info("Search space: " + space);
     }
 }

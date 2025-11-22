@@ -1,4 +1,4 @@
-package semester_01.lecture_11_dynamic_programming.edit_distance;
+// package semester_01.lecture_11_dynamic_programming.edit_distance;
 
 /**
  * Edit Distance (Levenshtein Distance) - Dynamic Programming.

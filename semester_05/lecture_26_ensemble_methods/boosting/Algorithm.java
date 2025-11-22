@@ -1,4 +1,4 @@
-package semester_05.lecture_26_ensemble_methods.boosting;
+// package semester_05.lecture_26_ensemble_methods.boosting;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

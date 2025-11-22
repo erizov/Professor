@@ -1,4 +1,4 @@
-package semester_05.lecture_22_cnn_architectures.efficientnet;
+// package semester_05.lecture_22_cnn_architectures.efficientnet;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

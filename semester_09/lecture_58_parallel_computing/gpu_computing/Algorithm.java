@@ -1,4 +1,4 @@
-package semester_09.lecture_58_parallel_computing.gpu_computing;
+// package semester_09.lecture_58_parallel_computing.gpu_computing;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

@@ -1,4 +1,4 @@
-package semester_05.lecture_29_nlp_advanced.ner;
+// package semester_05.lecture_29_nlp_advanced.ner;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

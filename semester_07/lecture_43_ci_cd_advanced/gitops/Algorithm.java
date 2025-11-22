@@ -1,4 +1,4 @@
-package semester_07.lecture_43_ci_cd_advanced.gitops;
+// package semester_07.lecture_43_ci_cd_advanced.gitops;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

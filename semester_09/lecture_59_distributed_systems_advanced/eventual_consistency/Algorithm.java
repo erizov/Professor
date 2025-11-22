@@ -1,62 +1,33 @@
-package semester_09.lecture_59_distributed_systems_advanced.eventual_consistency;
-import java.util.*;
+// package semester_09.lecture_59_distributed_systems_advanced.eventual_consistency;
+
 import java.util.logging.Logger;
-import java.util.logging.Level;
 
-
-/*** Eventual Consistency implementation.
+/**
+ * Eventual Consistency implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-
-    public Algorithm() {
-        // Initialize
-    }
-
-    /**
-     * Write to node.
-     */
-    public Object write(String node, String key, Object value) {
-        logger.info("Executing write");
-        return null;
-    }
-
-    /**
-     * Read from node.
-     */
-    public Object read(String node, String key) {
-        logger.info("Executing read");
-        return null;
-    }
-
-    /**
-     * Synchronize data between nodes.
-     */
-    public Object sync(String from_node, String to_node) {
-        logger.info("Executing sync");
-        return null;
-    }
-
-    /**
-     * Compare vector clocks.
-     */
-    public int _compare_vector_clocks(String vc1, Object int], String vc2, Object int]) {
-        logger.info("Executing _compare_vector_clocks");
-        return null;
-    }
-
-    public static Algorithm create() {
-        return new Algorithm();
-    }
-
-    public static void main(String[] args) {
-        logger.info("=".repeat(70));
-        logger.info("Eventual Consistency");
-        logger.info("=".repeat(70));
+    
+    public static int compareVectorClocks(int[] vc1, int[] vc2) {
+        if (vc1.length != vc2.length) {
+            return -1;
+        }
         
-        Algorithm algo = Algorithm.create();
-        Object result = algo.write("", "", null);
-        logger.info("Result: " + result);
-        logger.info("=".repeat(70));
+        for (int i = 0; i < vc1.length; i++) {
+            if (vc1[i] < vc2[i]) return -1;
+            if (vc1[i] > vc2[i]) return 1;
+        }
+        return 0;
+    }
+    
+    public static void main(String[] args) {
+        logger.info("Eventual Consistency");
+        logger.info("==================================================");
+        
+        int[] vc1 = {1, 2, 3};
+        int[] vc2 = {1, 2, 4};
+        
+        int result = compareVectorClocks(vc1, vc2);
+        logger.info("Comparison result: " + result);
     }
 }

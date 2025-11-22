@@ -1,4 +1,4 @@
-package semester_06.lecture_34_edge_ai.tflite;
+// package semester_06.lecture_34_edge_ai.tflite;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

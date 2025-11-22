@@ -1,4 +1,4 @@
-package semester_04.lecture_15_testing_patterns.integration_testing;
+// package semester_04.lecture_15_testing_patterns.integration_testing;
 
 import java.util.*;
 

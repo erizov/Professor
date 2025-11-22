@@ -1,4 +1,4 @@
-package semester_07.lecture_44_quantum_computing.quantum_algorithms;
+// package semester_07.lecture_44_quantum_computing.quantum_algorithms;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

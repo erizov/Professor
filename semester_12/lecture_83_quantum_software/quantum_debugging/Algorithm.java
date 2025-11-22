@@ -1,4 +1,4 @@
-package semester_12.lecture_83_quantum_software.quantum_debugging;
+// package semester_12.lecture_83_quantum_software.quantum_debugging;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

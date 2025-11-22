@@ -1,4 +1,4 @@
-package semester_01.lecture_08_hash_tables.open_addressing;
+// package semester_01.lecture_08_hash_tables.open_addressing;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

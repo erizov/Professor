@@ -1,4 +1,4 @@
-package semester_01.lecture_12_string_algorithms.kmp;
+// package semester_01.lecture_12_string_algorithms.kmp;
 
 import java.util.*;
 

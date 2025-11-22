@@ -1,4 +1,4 @@
-package semester_01.lecture_01_sorting_fundamentals.selection_sort;
+// package semester_01.lecture_01_sorting_fundamentals.selection_sort;
 
 import java.util.logging.Logger;
 public class Algorithm {

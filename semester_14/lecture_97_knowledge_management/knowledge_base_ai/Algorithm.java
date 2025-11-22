@@ -1,4 +1,4 @@
-package semester_14.lecture_97_knowledge_management.knowledge_base_ai;
+// package semester_14.lecture_97_knowledge_management.knowledge_base_ai;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

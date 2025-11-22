@@ -1,4 +1,4 @@
-package semester_11.lecture_75_gitops_advanced.gitops_patterns;
+// package semester_11.lecture_75_gitops_advanced.gitops_patterns;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

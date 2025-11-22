@@ -1,4 +1,4 @@
-package semester_08.lecture_52_nosql_advanced.nosql_scalability;
+// package semester_08.lecture_52_nosql_advanced.nosql_scalability;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

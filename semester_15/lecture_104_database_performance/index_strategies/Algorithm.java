@@ -1,4 +1,4 @@
-package semester_15.lecture_104_database_performance.index_strategies;
+// package semester_15.lecture_104_database_performance.index_strategies;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

@@ -1,4 +1,4 @@
-package semester_01.lecture_04_searching.binary_search;
+// package semester_01.lecture_04_searching.binary_search;
 
 /**
  * Binary Search implementation.

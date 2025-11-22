@@ -1,4 +1,4 @@
-package semester_16.lecture_118_data_platforms.self_service_analytics;
+// package semester_16.lecture_118_data_platforms.self_service_analytics;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

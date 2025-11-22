@@ -1,4 +1,4 @@
-package semester_06.lecture_37_cost_optimization.autoscaling;
+// package semester_06.lecture_37_cost_optimization.autoscaling;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

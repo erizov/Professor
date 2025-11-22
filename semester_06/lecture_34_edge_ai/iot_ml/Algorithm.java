@@ -1,4 +1,4 @@
-package semester_06.lecture_34_edge_ai.iot_ml;
+// package semester_06.lecture_34_edge_ai.iot_ml;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

@@ -1,4 +1,4 @@
-package semester_12.lecture_86_quantum_security.quantum_defense;
+// package semester_12.lecture_86_quantum_security.quantum_defense;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

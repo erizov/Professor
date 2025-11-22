@@ -1,4 +1,4 @@
-package semester_08.lecture_48_documentation.documentation_generation;
+// package semester_08.lecture_48_documentation.documentation_generation;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

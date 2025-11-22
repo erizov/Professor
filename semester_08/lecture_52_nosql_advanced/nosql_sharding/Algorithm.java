@@ -1,4 +1,4 @@
-package semester_08.lecture_52_nosql_advanced.nosql_sharding;
+// package semester_08.lecture_52_nosql_advanced.nosql_sharding;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

@@ -1,4 +1,4 @@
-package semester_15.lecture_110_database_migration.rollback_strategies;
+// package semester_15.lecture_110_database_migration.rollback_strategies;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

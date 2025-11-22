@@ -1,4 +1,4 @@
-package semester_07.lecture_39_operating_systems.deadlock_detection;
+// package semester_07.lecture_39_operating_systems.deadlock_detection;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

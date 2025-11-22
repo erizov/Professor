@@ -1,4 +1,4 @@
-package semester_16.lecture_112_data_warehousing_advanced.star_schema;
+// package semester_16.lecture_112_data_warehousing_advanced.star_schema;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

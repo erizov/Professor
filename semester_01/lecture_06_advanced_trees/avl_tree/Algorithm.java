@@ -1,4 +1,4 @@
-package semester_01.lecture_06_advanced_trees.avl_tree;
+// package semester_01.lecture_06_advanced_trees.avl_tree;
 import java.util.Arrays;
 import java.util.Random;
 

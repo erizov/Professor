@@ -1,4 +1,4 @@
-package semester_01.lecture_11_dynamic_programming.knapsack;
+// package semester_01.lecture_11_dynamic_programming.knapsack;
 
 import java.util.*;
 

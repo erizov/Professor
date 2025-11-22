@@ -1,4 +1,4 @@
-package semester_09.lecture_61_cloud_native.secrets_management;
+// package semester_09.lecture_61_cloud_native.secrets_management;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

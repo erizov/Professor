@@ -1,4 +1,4 @@
-package semester_14.lecture_101_developer_experience.developer_portals;
+// package semester_14.lecture_101_developer_experience.developer_portals;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

@@ -1,4 +1,4 @@
-package semester_03.lecture_10_graph_algorithms.bellman_ford;
+// package semester_03.lecture_10_graph_algorithms.bellman_ford;
 import java.util.*;
 
 

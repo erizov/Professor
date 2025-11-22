@@ -1,4 +1,4 @@
-package semester_01.lecture_01_sorting_fundamentals.bubble_sort;
+// package semester_01.lecture_01_sorting_fundamentals.bubble_sort;
 
 import java.util.Arrays;
 import java.util.Random;

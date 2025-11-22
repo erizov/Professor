@@ -1,4 +1,4 @@
-package semester_08.lecture_50_sql_advanced.partitioning;
+// package semester_08.lecture_50_sql_advanced.partitioning;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;

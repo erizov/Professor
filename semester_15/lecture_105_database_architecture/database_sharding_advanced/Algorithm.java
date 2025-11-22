@@ -1,4 +1,4 @@
-package semester_15.lecture_105_database_architecture.database_sharding_advanced;
+// package semester_15.lecture_105_database_architecture.database_sharding_advanced;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

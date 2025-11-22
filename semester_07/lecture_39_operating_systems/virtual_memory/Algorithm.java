@@ -1,4 +1,4 @@
-package semester_07.lecture_39_operating_systems.virtual_memory;
+// package semester_07.lecture_39_operating_systems.virtual_memory;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

@@ -1,4 +1,4 @@
-package semester_15.lecture_107_time_series_databases.time_series_compression;
+// package semester_15.lecture_107_time_series_databases.time_series_compression;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

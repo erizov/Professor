@@ -1,4 +1,4 @@
-package semester_04.lecture_19_distributed_patterns.gossip_protocol;
+// package semester_04.lecture_19_distributed_patterns.gossip_protocol;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

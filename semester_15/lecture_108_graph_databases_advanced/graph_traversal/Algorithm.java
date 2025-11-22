@@ -1,4 +1,4 @@
-package semester_15.lecture_108_graph_databases_advanced.graph_traversal;
+// package semester_15.lecture_108_graph_databases_advanced.graph_traversal;
 import java.util.*;
 import java.util.logging.Logger;
 

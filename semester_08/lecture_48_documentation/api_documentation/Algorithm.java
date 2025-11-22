@@ -1,4 +1,4 @@
-package semester_08.lecture_48_documentation.api_documentation;
+// package semester_08.lecture_48_documentation.api_documentation;
 
 import java.util.ArrayList;
 import java.util.HashMap;

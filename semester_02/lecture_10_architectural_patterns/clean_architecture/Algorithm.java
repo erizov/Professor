@@ -1,4 +1,4 @@
-package semester_02.lecture_10_architectural_patterns.clean_architecture;
+// package semester_02.lecture_10_architectural_patterns.clean_architecture;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

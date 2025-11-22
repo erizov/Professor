@@ -1,4 +1,4 @@
-package semester_14.lecture_99_technical_writing_advanced.accessibility_docs;
+// package semester_14.lecture_99_technical_writing_advanced.accessibility_docs;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

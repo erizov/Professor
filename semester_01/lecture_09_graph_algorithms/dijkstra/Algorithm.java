@@ -1,4 +1,4 @@
-package semester_01.lecture_09_graph_algorithms.dijkstra;
+// package semester_01.lecture_09_graph_algorithms.dijkstra;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package semester_13.lecture_92_blockchain_interoperability.multi_chain_apps;
+// package semester_13.lecture_92_blockchain_interoperability.multi_chain_apps;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

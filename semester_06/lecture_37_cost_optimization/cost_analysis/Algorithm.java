@@ -1,4 +1,4 @@
-package semester_06.lecture_37_cost_optimization.cost_analysis;
+// package semester_06.lecture_37_cost_optimization.cost_analysis;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

@@ -1,4 +1,4 @@
-package semester_04.lecture_14_security_patterns.authorization;
+// package semester_04.lecture_14_security_patterns.authorization;
 
 import java.util.ArrayList;
 import java.util.EnumSet;

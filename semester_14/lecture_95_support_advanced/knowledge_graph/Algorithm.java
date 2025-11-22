@@ -1,4 +1,4 @@
-package semester_14.lecture_95_support_advanced.knowledge_graph;
+// package semester_14.lecture_95_support_advanced.knowledge_graph;
 import java.util.*;
 import java.util.logging.Logger;
 

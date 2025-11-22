@@ -1,62 +1,29 @@
-package semester_09.lecture_59_distributed_systems_advanced.vector_clocks;
-import java.util.*;
+// package semester_09.lecture_59_distributed_systems_advanced.vector_clocks;
+
+import java.util.HashMap;
+import java.util.Map;
 import java.util.logging.Logger;
-import java.util.logging.Level;
 
-
-/*** Vector Clocks implementation.
+/**
+ * Vector Clocks implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-
-    public Algorithm() {
-        // Initialize
+    
+    public static Object update(String nodeId, String receivedClock, int[] clock) {
+        Map<String, Object> result = new HashMap<>();
+        result.put("nodeId", nodeId);
+        result.put("clock", receivedClock);
+        result.put("timestamp", clock);
+        return result;
     }
-
-    /**
-     * Get vector clock for node.
-     */
-    public String get_clock(String node_id) {
-        logger.info("Executing get_clock");
-        return null;
-    }
-
-    /**
-     * Increment clock for node.
-     */
-    public Object tick(String node_id) {
-        logger.info("Executing tick");
-        return null;
-    }
-
-    /**
-     * Update clock with received clock.
-     */
-    public Object update(String node_id, String received_clock, Object int]) {
-        logger.info("Executing update");
-        return null;
-    }
-
-    /**
-     * Compare vector clocks.
-     */
-    public String compare(String clock1, Object int], String clock2, Object int]) {
-        logger.info("Executing compare");
-        return null;
-    }
-
-    public static Algorithm create() {
-        return new Algorithm();
-    }
-
+    
     public static void main(String[] args) {
-        logger.info("=".repeat(70));
         logger.info("Vector Clocks");
-        logger.info("=".repeat(70));
+        logger.info("==================================================");
         
-        Algorithm algo = Algorithm.create();
-        String result = algo.get_clock("");
-        logger.info("Result: " + result);
-        logger.info("=".repeat(70));
+        int[] clock = {1, 2, 3};
+        Object result = update("node1", "clock1", clock);
+        logger.info("Update result: " + result);
     }
 }

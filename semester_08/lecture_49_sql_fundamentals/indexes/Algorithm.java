@@ -1,4 +1,4 @@
-package semester_08.lecture_49_sql_fundamentals.indexes;
+// package semester_08.lecture_49_sql_fundamentals.indexes;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

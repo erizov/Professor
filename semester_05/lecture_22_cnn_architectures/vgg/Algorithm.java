@@ -1,4 +1,4 @@
-package semester_05.lecture_22_cnn_architectures.vgg;
+// package semester_05.lecture_22_cnn_architectures.vgg;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

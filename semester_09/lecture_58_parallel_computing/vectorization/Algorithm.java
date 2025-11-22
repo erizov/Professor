@@ -1,4 +1,4 @@
-package semester_09.lecture_58_parallel_computing.vectorization;
+// package semester_09.lecture_58_parallel_computing.vectorization;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

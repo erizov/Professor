@@ -1,4 +1,4 @@
-package semester_02.lecture_08_structural_patterns.bridge;
+// package semester_02.lecture_08_structural_patterns.bridge;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

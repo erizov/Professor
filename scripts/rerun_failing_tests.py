@@ -89,8 +89,13 @@ def test_java_file(java_file: Path, timeout: int = 30) -> Tuple[bool, str, str]:
         
         # Run Java file
         content = java_file.read_text(encoding='utf-8')
+        # Check for active package declaration (not commented out)
         package_match = re.search(r'^package\s+([^;]+);', content, re.MULTILINE)
-        if package_match:
+        # Also check for commented package to handle it as non-packaged
+        commented_package_match = re.search(r'^//\s*package\s+([^;]+);', content, re.MULTILINE)
+        
+        if package_match and not commented_package_match:
+            # Active package declaration
             package_name = package_match.group(1)
             class_name = f"{package_name}.Algorithm"
             # For packaged classes, use project root as classpath since we compiled with -d .
@@ -100,6 +105,7 @@ def test_java_file(java_file: Path, timeout: int = 30) -> Tuple[bool, str, str]:
             if not class_file_path.exists():
                 return False, f"Compiled class file not found: {class_file_path}", ""
         else:
+            # No package or commented out package - treat as non-packaged class
             class_name = "Algorithm"
             classpath = str(java_file.parent)
 

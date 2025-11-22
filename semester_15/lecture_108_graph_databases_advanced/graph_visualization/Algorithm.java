@@ -1,4 +1,4 @@
-package semester_15.lecture_108_graph_databases_advanced.graph_visualization;
+// package semester_15.lecture_108_graph_databases_advanced.graph_visualization;
 import java.util.*;
 import java.util.logging.Logger;
 

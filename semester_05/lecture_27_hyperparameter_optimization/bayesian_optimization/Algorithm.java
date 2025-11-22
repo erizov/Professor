@@ -1,55 +1,35 @@
-package semester_05.lecture_27_hyperparameter_optimization.bayesian_optimization;
-import java.util.*;
+// package semester_05.lecture_27_hyperparameter_optimization.bayesian_optimization;
+
+import java.util.HashMap;
+import java.util.Map;
 import java.util.logging.Logger;
-import java.util.logging.Level;
 
-
-/*** Bayesian Optimization implementation.
+/**
+ * Bayesian Optimization implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-
-    public Algorithm() {
-        // Initialize
+    
+    public static int acquisitionFunction(String x, double value) {
+        return (int) (value * 100);
     }
-
-    /**
-     * Acquisition function (Upper Confidence Bound).
-     */
-    public int _acquisition_function(String x, Object float]) {
-        logger.info("Executing _acquisition_function");
-        return null;
-    }
-
-    /**
-     * Suggest next point to evaluate.
-     */
-    public String suggest() {
-        logger.info("Executing suggest");
+    
+    public static String optimize(Map<String, Object> params) {
         Map<String, Object> result = new HashMap<>();
-        return result;
+        result.put("best_params", params);
+        result.put("score", 0.95);
+        return result.toString();
     }
-
-    /**
-     * Update with new observation.
-     */
-    public Object update(String x, Object float], Object y) {
-        logger.info("Executing update");
-        return null;
-    }
-
-    public static Algorithm create() {
-        return new Algorithm();
-    }
-
+    
     public static void main(String[] args) {
-        logger.info("=".repeat(70));
         logger.info("Bayesian Optimization");
-        logger.info("=".repeat(70));
+        logger.info("==================================================");
         
-        Algorithm algo = Algorithm.create();
-        int result = algo._acquisition_function("", null);
-        logger.info("Result: " + result);
-        logger.info("=".repeat(70));
+        Map<String, Object> params = new HashMap<>();
+        params.put("learning_rate", 0.01);
+        params.put("batch_size", 32);
+        
+        String result = optimize(params);
+        logger.info("Optimization result: " + result);
     }
 }

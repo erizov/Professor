@@ -1,4 +1,4 @@
-package semester_05.lecture_30_time_series.lstm_timeseries;
+// package semester_05.lecture_30_time_series.lstm_timeseries;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

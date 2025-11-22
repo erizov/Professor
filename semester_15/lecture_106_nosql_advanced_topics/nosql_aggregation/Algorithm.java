@@ -1,4 +1,4 @@
-package semester_15.lecture_106_nosql_advanced_topics.nosql_aggregation;
+// package semester_15.lecture_106_nosql_advanced_topics.nosql_aggregation;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

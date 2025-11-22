@@ -1,4 +1,4 @@
-package semester_09.lecture_58_parallel_computing.parallel_reduction;
+// package semester_09.lecture_58_parallel_computing.parallel_reduction;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

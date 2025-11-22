@@ -1,4 +1,4 @@
-package semester_13.lecture_90_blockchain_security.security_patterns;
+// package semester_13.lecture_90_blockchain_security.security_patterns;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

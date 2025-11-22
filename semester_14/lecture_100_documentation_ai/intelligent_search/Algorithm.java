@@ -1,4 +1,4 @@
-package semester_14.lecture_100_documentation_ai.intelligent_search;
+// package semester_14.lecture_100_documentation_ai.intelligent_search;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

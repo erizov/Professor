@@ -1,4 +1,4 @@
-package semester_01.lecture_06_advanced_trees.trie;
+// package semester_01.lecture_06_advanced_trees.trie;
 
 import java.util.*;
 import java.util.logging.Logger;

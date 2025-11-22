@@ -1,4 +1,4 @@
-package semester_16.lecture_113_data_lakes_advanced.data_quality;
+// package semester_16.lecture_113_data_lakes_advanced.data_quality;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

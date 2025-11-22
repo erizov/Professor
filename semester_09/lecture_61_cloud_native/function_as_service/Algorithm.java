@@ -1,55 +1,24 @@
-package semester_09.lecture_61_cloud_native.function_as_service;
-import java.util.*;
+// package semester_09.lecture_61_cloud_native.function_as_service;
+
 import java.util.logging.Logger;
-import java.util.logging.Level;
 
-
-/*** Function As Service implementation.
+/**
+ * Function as a Service (FaaS) implementation.
  */
 public class Algorithm {
     private static final Logger logger = Logger.getLogger(Algorithm.class.getName());
-
-    public Algorithm() {
-        // Initialize
+    
+    public static Object invoke(String functionName, Object[] args) {
+        logger.info("Invoking function: " + functionName);
+        return "Function result";
     }
-
-    /**
-     * Register function.
-     */
-    public Object register_function(String function_name, Object func) {
-        logger.info("Executing register_function");
-        return null;
-    }
-
-    /**
-     * Invoke function.
-     */
-    public Object invoke(String function_name, Object *args, Object **kwargs) {
-        logger.info("Executing invoke");
-        long timestamp = System.currentTimeMillis();
-        return null;
-    }
-
-    /**
-     * Get invocation statistics.
-     */
-    public Map<String, Object> get_invocation_stats(String function_name) {
-        logger.info("Executing get_invocation_stats");
-        return null;
-    }
-
-    public static Algorithm create() {
-        return new Algorithm();
-    }
-
+    
     public static void main(String[] args) {
-        logger.info("=".repeat(70));
-        logger.info("Function As Service");
-        logger.info("=".repeat(70));
+        logger.info("Function as a Service");
+        logger.info("==================================================");
         
-        Algorithm algo = Algorithm.create();
-        Object result = algo.register_function("", null);
+        Object[] params = new Object[]{"param1", "param2"};
+        Object result = invoke("test_function", params);
         logger.info("Result: " + result);
-        logger.info("=".repeat(70));
     }
 }

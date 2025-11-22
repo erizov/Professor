@@ -1,4 +1,4 @@
-package semester_11.lecture_74_automation_advanced.auto_scaling_advanced;
+// package semester_11.lecture_74_automation_advanced.auto_scaling_advanced;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

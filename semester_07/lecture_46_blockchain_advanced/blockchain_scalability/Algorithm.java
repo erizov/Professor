@@ -1,4 +1,4 @@
-package semester_07.lecture_46_blockchain_advanced.blockchain_scalability;
+// package semester_07.lecture_46_blockchain_advanced.blockchain_scalability;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

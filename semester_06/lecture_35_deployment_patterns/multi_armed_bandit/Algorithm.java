@@ -1,4 +1,4 @@
-package semester_06.lecture_35_deployment_patterns.multi_armed_bandit;
+// package semester_06.lecture_35_deployment_patterns.multi_armed_bandit;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

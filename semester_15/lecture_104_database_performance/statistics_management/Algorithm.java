@@ -1,4 +1,4 @@
-package semester_15.lecture_104_database_performance.statistics_management;
+// package semester_15.lecture_104_database_performance.statistics_management;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

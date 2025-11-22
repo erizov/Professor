@@ -1,4 +1,4 @@
-package semester_15.lecture_107_time_series_databases.retention_policies;
+// package semester_15.lecture_107_time_series_databases.retention_policies;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

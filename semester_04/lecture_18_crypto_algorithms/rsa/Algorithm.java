@@ -1,4 +1,4 @@
-package semester_04.lecture_18_crypto_algorithms.rsa;
+// package semester_04.lecture_18_crypto_algorithms.rsa;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

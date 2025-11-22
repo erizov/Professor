@@ -1,4 +1,4 @@
-package semester_11.lecture_72_infrastructure_advanced.multi_cloud_strategies;
+// package semester_11.lecture_72_infrastructure_advanced.multi_cloud_strategies;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

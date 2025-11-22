@@ -1,4 +1,4 @@
-package semester_02.lecture_09_behavioral_patterns.chain_of_responsibility;
+// package semester_02.lecture_09_behavioral_patterns.chain_of_responsibility;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

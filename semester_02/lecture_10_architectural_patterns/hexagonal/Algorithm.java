@@ -1,4 +1,4 @@
-package semester_02.lecture_10_architectural_patterns.hexagonal;
+// package semester_02.lecture_10_architectural_patterns.hexagonal;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

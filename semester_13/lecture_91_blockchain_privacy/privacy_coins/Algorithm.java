@@ -1,4 +1,4 @@
-package semester_13.lecture_91_blockchain_privacy.privacy_coins;
+// package semester_13.lecture_91_blockchain_privacy.privacy_coins;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

@@ -1,4 +1,4 @@
-package semester_01.lecture_04_searching.jump_search;
+// package semester_01.lecture_04_searching.jump_search;
 
 import java.util.Random;
 

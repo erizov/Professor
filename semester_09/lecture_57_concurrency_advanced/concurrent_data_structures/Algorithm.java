@@ -1,4 +1,4 @@
-package semester_09.lecture_57_concurrency_advanced.concurrent_data_structures;
+// package semester_09.lecture_57_concurrency_advanced.concurrent_data_structures;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

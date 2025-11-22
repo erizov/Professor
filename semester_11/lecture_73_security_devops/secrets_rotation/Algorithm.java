@@ -1,4 +1,4 @@
-package semester_11.lecture_73_security_devops.secrets_rotation;
+// package semester_11.lecture_73_security_devops.secrets_rotation;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

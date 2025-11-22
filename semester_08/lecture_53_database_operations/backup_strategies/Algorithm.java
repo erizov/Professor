@@ -1,4 +1,4 @@
-package semester_08.lecture_53_database_operations.backup_strategies;
+// package semester_08.lecture_53_database_operations.backup_strategies;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

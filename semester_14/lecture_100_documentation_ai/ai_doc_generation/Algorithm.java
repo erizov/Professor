@@ -1,4 +1,4 @@
-package semester_14.lecture_100_documentation_ai.ai_doc_generation;
+// package semester_14.lecture_100_documentation_ai.ai_doc_generation;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

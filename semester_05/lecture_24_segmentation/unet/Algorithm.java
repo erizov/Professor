@@ -1,4 +1,4 @@
-package semester_05.lecture_24_segmentation.unet;
+// package semester_05.lecture_24_segmentation.unet;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

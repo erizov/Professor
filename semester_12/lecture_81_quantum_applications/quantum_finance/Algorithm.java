@@ -1,4 +1,4 @@
-package semester_12.lecture_81_quantum_applications.quantum_finance;
+// package semester_12.lecture_81_quantum_applications.quantum_finance;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

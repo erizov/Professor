@@ -1,4 +1,4 @@
-package semester_04.lecture_14_security_patterns.jwt;
+// package semester_04.lecture_14_security_patterns.jwt;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;

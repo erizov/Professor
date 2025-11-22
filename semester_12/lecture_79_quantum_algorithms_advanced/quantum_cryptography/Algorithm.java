@@ -1,4 +1,4 @@
-package semester_12.lecture_79_quantum_algorithms_advanced.quantum_cryptography;
+// package semester_12.lecture_79_quantum_algorithms_advanced.quantum_cryptography;
 import java.util.*;
 import java.util.logging.Logger;
 

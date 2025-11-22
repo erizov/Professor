@@ -1,4 +1,4 @@
-package semester_11.lecture_76_platform_engineering.self_service_platforms;
+// package semester_11.lecture_76_platform_engineering.self_service_platforms;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

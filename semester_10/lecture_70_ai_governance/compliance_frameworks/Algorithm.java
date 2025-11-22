@@ -1,4 +1,4 @@
-package semester_10.lecture_70_ai_governance.compliance_frameworks;
+// package semester_10.lecture_70_ai_governance.compliance_frameworks;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;

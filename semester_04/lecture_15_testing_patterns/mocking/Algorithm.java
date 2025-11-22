@@ -1,4 +1,4 @@
-package semester_04.lecture_15_testing_patterns.mocking;
+// package semester_04.lecture_15_testing_patterns.mocking;
 
 import java.util.HashMap;
 import java.util.Map;

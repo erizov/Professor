@@ -1,4 +1,4 @@
-package semester_14.lecture_96_incident_management_advanced.alert_fatigue_reduction;
+// package semester_14.lecture_96_incident_management_advanced.alert_fatigue_reduction;
 import java.util.*;
 import java.util.logging.Logger;
 import java.util.logging.Level;
