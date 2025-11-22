@@ -17,14 +17,15 @@ try:
     from framework.performance_timer import PerformanceTimer
 except ImportError:
     # Framework module not available - using fallback
-    pass
+    PerformanceTimer = None
 try:
     from framework.logging_utils import get_logger
+    logger = get_logger(__name__)
 except ImportError:
     # Framework module not available - using fallback
-    pass
-
-logger = get_logger(__name__)
+    import logging
+    logger = logging.getLogger(__name__)
+    logging.basicConfig(level=logging.INFO)
 
 
 class Graph:
@@ -315,18 +316,35 @@ def main() -> None:
     logger.info("Example 7: Performance on Different Graph Sizes")
     logger.info("-" * 70)
 
-    timer = PerformanceTimer("DFS")
+    if PerformanceTimer:
+        timer = PerformanceTimer("DFS")
+    else:
+        timer = None
 
-    for n in [100, 1000, 5000]:
-        # Create connected graph
-        g_large = Graph(directed=False)
-        for i in range(n - 1):
-            g_large.add_edge(i, i + 1)
+    if timer:
+        for n in [100, 1000]:
+            # Create connected graph
+            g_large = Graph(directed=False)
+            for i in range(n - 1):
+                g_large.add_edge(i, i + 1)
 
-        _, metrics = timer.measure(g_large.dfs, 0)
-        logger.info(f"Graph with {n} nodes:")
-        logger.info(f"  Time: {metrics['execution_time_ms']:.3f} ms")
-        logger.info(f"  Nodes visited: {n}")
+            _, metrics = timer.measure(g_large.dfs_iterative, 0)
+            logger.info(f"Graph with {n} nodes:")
+            logger.info(f"  Time: {metrics['execution_time_ms']:.3f} ms")
+            logger.info(f"  Nodes visited: {n}")
+    else:
+        # Fallback without PerformanceTimer
+        import time
+        for n in [100, 1000]:
+            g_large = Graph(directed=False)
+            for i in range(n - 1):
+                g_large.add_edge(i, i + 1)
+            start = time.time()
+            g_large.dfs_iterative(0)
+            elapsed = (time.time() - start) * 1000
+            logger.info(f"Graph with {n} nodes:")
+            logger.info(f"  Time: {elapsed:.3f} ms")
+            logger.info(f"  Nodes visited: {n}")
 
     logger.info("")
     logger.info("=" * 70)
