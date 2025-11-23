@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Single Responsibility Principle — это алгоритм для решения конкретной задачи в области компьютерных наук. 
+Single Responsibility Principle — это алгоритм для решения конкретной задачи в области компьютерных наук.
 Он выполняет последовательность шагов для обработки данных и получения результата.
 
 ## Где применяется
@@ -11,8 +11,6 @@ Single Responsibility Principle — это алгоритм для решени�
 - оптимизация работы приложений и систем;
 - обработка и анализ данных;
 - автоматизация процессов в различных областях;
-
-
 
 ## Пример
 
@@ -24,8 +22,6 @@ Single Responsibility Principle — это алгоритм для решени�
 
 Алгоритм выполняет операции последовательно, обрабатывая данные по определённым правилам.
 
-
-
 ## Вопросы для самопроверки
 
 ### Базовые
@@ -36,32 +32,29 @@ Single Responsibility Principle — это алгоритм для решени�
 
 ### Средние
 
-4. Как single responsibility principle обрабатывает граничные случаи?
-5. Какие преимущества и недостатки у single responsibility principle?
-6. Можно ли улучшить работу single responsibility principle?
+1. Как single responsibility principle обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у single responsibility principle?
+3. Можно ли улучшить работу single responsibility principle?
 
 ### Сложные
 
-7. Какова временная сложность single responsibility principle?
-8. Как single responsibility principle работает с большими объёмами данных?
-9. Как можно оптимизировать single responsibility principle?
-
-
+1. Какова временная сложность single responsibility principle?
+2. Как single responsibility principle работает с большими объёмами данных?
+3. Как можно оптимизировать single responsibility principle?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом single responsibility principle. 
+Выполни простую операцию с алгоритмом single responsibility principle.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм single responsibility principle к более сложному набору данных. 
+Примени алгоритм single responsibility principle к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма single responsibility principle на языке программирования. 
+Напиши реализацию алгоритма single responsibility principle на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
-

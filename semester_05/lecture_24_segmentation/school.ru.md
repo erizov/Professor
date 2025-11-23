@@ -11,8 +11,6 @@ Lecture 24 Segmentation — segmentation - demonstration. this lecture covers se
 - обработка и анализ данных;
 - автоматизация процессов в различных областях;
 
-
-
 ## Пример
 
 Рассмотрим конкретный пример работы lecture 24 segmentation:
@@ -22,8 +20,6 @@ Lecture 24 Segmentation — segmentation - demonstration. this lecture covers se
 3. Получение результата: [конкретный результат]
 
 Алгоритм выполняет операции последовательно, обрабатывая данные по определённым правилам.
-
-
 
 ## Вопросы для самопроверки
 
@@ -35,32 +31,29 @@ Lecture 24 Segmentation — segmentation - demonstration. this lecture covers se
 
 ### Средние
 
-4. Как lecture 24 segmentation обрабатывает граничные случаи?
-5. Какие преимущества и недостатки у lecture 24 segmentation?
-6. Можно ли улучшить работу lecture 24 segmentation?
+1. Как lecture 24 segmentation обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у lecture 24 segmentation?
+3. Можно ли улучшить работу lecture 24 segmentation?
 
 ### Сложные
 
-7. Какова временная сложность lecture 24 segmentation?
-8. Как lecture 24 segmentation работает с большими объёмами данных?
-9. Как можно оптимизировать lecture 24 segmentation?
-
-
+1. Какова временная сложность lecture 24 segmentation?
+2. Как lecture 24 segmentation работает с большими объёмами данных?
+3. Как можно оптимизировать lecture 24 segmentation?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 24 segmentation. 
+Выполни простую операцию с алгоритмом lecture 24 segmentation.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 24 segmentation к более сложному набору данных. 
+Примени алгоритм lecture 24 segmentation к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 24 segmentation на языке программирования. 
+Напиши реализацию алгоритма lecture 24 segmentation на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
-

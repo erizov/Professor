@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Interface Segregation Principle — это алгоритм для решения конкретной задачи в области компьютерных наук. 
+Interface Segregation Principle — это алгоритм для решения конкретной задачи в области компьютерных наук.
 Он выполняет последовательность шагов для обработки данных и получения результата.
 
 ## Где применяется
@@ -11,8 +11,6 @@ Interface Segregation Principle — это алгоритм для решени�
 - оптимизация работы приложений и систем;
 - обработка и анализ данных;
 - автоматизация процессов в различных областях;
-
-
 
 ## Пример
 
@@ -24,8 +22,6 @@ Interface Segregation Principle — это алгоритм для решени�
 
 Алгоритм выполняет операции последовательно, обрабатывая данные по определённым правилам.
 
-
-
 ## Вопросы для самопроверки
 
 ### Базовые
@@ -36,32 +32,29 @@ Interface Segregation Principle — это алгоритм для решени�
 
 ### Средние
 
-4. Как interface segregation principle обрабатывает граничные случаи?
-5. Какие преимущества и недостатки у interface segregation principle?
-6. Можно ли улучшить работу interface segregation principle?
+1. Как interface segregation principle обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у interface segregation principle?
+3. Можно ли улучшить работу interface segregation principle?
 
 ### Сложные
 
-7. Какова временная сложность interface segregation principle?
-8. Как interface segregation principle работает с большими объёмами данных?
-9. Как можно оптимизировать interface segregation principle?
-
-
+1. Какова временная сложность interface segregation principle?
+2. Как interface segregation principle работает с большими объёмами данных?
+3. Как можно оптимизировать interface segregation principle?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом interface segregation principle. 
+Выполни простую операцию с алгоритмом interface segregation principle.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм interface segregation principle к более сложному набору данных. 
+Примени алгоритм interface segregation principle к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма interface segregation principle на языке программирования. 
+Напиши реализацию алгоритма interface segregation principle на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
-

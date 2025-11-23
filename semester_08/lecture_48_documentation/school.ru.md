@@ -11,8 +11,6 @@ Lecture 48 Documentation — documentation - demonstration. this lecture covers 
 - обработка и анализ данных;
 - автоматизация процессов в различных областях;
 
-
-
 ## Пример
 
 Рассмотрим конкретный пример работы lecture 48 documentation:
@@ -22,8 +20,6 @@ Lecture 48 Documentation — documentation - demonstration. this lecture covers 
 3. Получение результата: [конкретный результат]
 
 Алгоритм выполняет операции последовательно, обрабатывая данные по определённым правилам.
-
-
 
 ## Вопросы для самопроверки
 
@@ -35,32 +31,29 @@ Lecture 48 Documentation — documentation - demonstration. this lecture covers 
 
 ### Средние
 
-4. Как lecture 48 documentation обрабатывает граничные случаи?
-5. Какие преимущества и недостатки у lecture 48 documentation?
-6. Можно ли улучшить работу lecture 48 documentation?
+1. Как lecture 48 documentation обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у lecture 48 documentation?
+3. Можно ли улучшить работу lecture 48 documentation?
 
 ### Сложные
 
-7. Какова временная сложность lecture 48 documentation?
-8. Как lecture 48 documentation работает с большими объёмами данных?
-9. Как можно оптимизировать lecture 48 documentation?
-
-
+1. Какова временная сложность lecture 48 documentation?
+2. Как lecture 48 documentation работает с большими объёмами данных?
+3. Как можно оптимизировать lecture 48 documentation?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 48 documentation. 
+Выполни простую операцию с алгоритмом lecture 48 documentation.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 48 documentation к более сложному набору данных. 
+Примени алгоритм lecture 48 documentation к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 48 documentation на языке программирования. 
+Напиши реализацию алгоритма lecture 48 documentation на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
-

@@ -11,8 +11,6 @@ Lecture 97 Knowledge Management — knowledge management - demonstration. this l
 - обработка и анализ данных;
 - автоматизация процессов в различных областях;
 
-
-
 ## Пример
 
 Рассмотрим конкретный пример работы lecture 97 knowledge management:
@@ -22,8 +20,6 @@ Lecture 97 Knowledge Management — knowledge management - demonstration. this l
 3. Получение результата: [конкретный результат]
 
 Алгоритм выполняет операции последовательно, обрабатывая данные по определённым правилам.
-
-
 
 ## Вопросы для самопроверки
 
@@ -35,32 +31,29 @@ Lecture 97 Knowledge Management — knowledge management - demonstration. this l
 
 ### Средние
 
-4. Как lecture 97 knowledge management обрабатывает граничные случаи?
-5. Какие преимущества и недостатки у lecture 97 knowledge management?
-6. Можно ли улучшить работу lecture 97 knowledge management?
+1. Как lecture 97 knowledge management обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у lecture 97 knowledge management?
+3. Можно ли улучшить работу lecture 97 knowledge management?
 
 ### Сложные
 
-7. Какова временная сложность lecture 97 knowledge management?
-8. Как lecture 97 knowledge management работает с большими объёмами данных?
-9. Как можно оптимизировать lecture 97 knowledge management?
-
-
+1. Какова временная сложность lecture 97 knowledge management?
+2. Как lecture 97 knowledge management работает с большими объёмами данных?
+3. Как можно оптимизировать lecture 97 knowledge management?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 97 knowledge management. 
+Выполни простую операцию с алгоритмом lecture 97 knowledge management.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 97 knowledge management к более сложному набору данных. 
+Примени алгоритм lecture 97 knowledge management к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 97 knowledge management на языке программирования. 
+Напиши реализацию алгоритма lecture 97 knowledge management на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
-

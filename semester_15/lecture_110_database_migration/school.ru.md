@@ -11,8 +11,6 @@ Lecture 110 Database Migration — database - demonstration. this lecture covers
 - организация хранения информации для быстрого доступа;
 - улучшение производительности веб-приложений;
 
-
-
 ## Пример
 
 Рассмотрим конкретный пример работы lecture 110 database migration:
@@ -22,8 +20,6 @@ Lecture 110 Database Migration — database - demonstration. this lecture covers
 3. Получение результата: [конкретный результат]
 
 Алгоритм выполняет операции последовательно, обрабатывая данные по определённым правилам.
-
-
 
 ## Вопросы для самопроверки
 
@@ -35,32 +31,29 @@ Lecture 110 Database Migration — database - demonstration. this lecture covers
 
 ### Средние
 
-4. Как lecture 110 database migration обрабатывает граничные случаи?
-5. Какие преимущества и недостатки у lecture 110 database migration?
-6. Можно ли улучшить работу lecture 110 database migration?
+1. Как lecture 110 database migration обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у lecture 110 database migration?
+3. Можно ли улучшить работу lecture 110 database migration?
 
 ### Сложные
 
-7. Какова временная сложность lecture 110 database migration?
-8. Как lecture 110 database migration работает с большими объёмами данных?
-9. Как можно оптимизировать lecture 110 database migration?
-
-
+1. Какова временная сложность lecture 110 database migration?
+2. Как lecture 110 database migration работает с большими объёмами данных?
+3. Как можно оптимизировать lecture 110 database migration?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 110 database migration. 
+Выполни простую операцию с алгоритмом lecture 110 database migration.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 110 database migration к более сложному набору данных. 
+Примени алгоритм lecture 110 database migration к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 110 database migration на языке программирования. 
+Напиши реализацию алгоритма lecture 110 database migration на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
-

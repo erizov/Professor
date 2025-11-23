@@ -11,8 +11,6 @@ Lecture 85 Quantum Networking — quantum computing - demonstration. this lectur
 - обработка и анализ данных;
 - автоматизация процессов в различных областях;
 
-
-
 ## Пример
 
 Рассмотрим конкретный пример работы lecture 85 quantum networking:
@@ -22,8 +20,6 @@ Lecture 85 Quantum Networking — quantum computing - demonstration. this lectur
 3. Получение результата: [конкретный результат]
 
 Алгоритм выполняет операции последовательно, обрабатывая данные по определённым правилам.
-
-
 
 ## Вопросы для самопроверки
 
@@ -35,32 +31,29 @@ Lecture 85 Quantum Networking — quantum computing - demonstration. this lectur
 
 ### Средние
 
-4. Как lecture 85 quantum networking обрабатывает граничные случаи?
-5. Какие преимущества и недостатки у lecture 85 quantum networking?
-6. Можно ли улучшить работу lecture 85 quantum networking?
+1. Как lecture 85 quantum networking обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у lecture 85 quantum networking?
+3. Можно ли улучшить работу lecture 85 quantum networking?
 
 ### Сложные
 
-7. Какова временная сложность lecture 85 quantum networking?
-8. Как lecture 85 quantum networking работает с большими объёмами данных?
-9. Как можно оптимизировать lecture 85 quantum networking?
-
-
+1. Какова временная сложность lecture 85 quantum networking?
+2. Как lecture 85 quantum networking работает с большими объёмами данных?
+3. Как можно оптимизировать lecture 85 quantum networking?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 85 quantum networking. 
+Выполни простую операцию с алгоритмом lecture 85 quantum networking.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 85 quantum networking к более сложному набору данных. 
+Примени алгоритм lecture 85 quantum networking к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 85 quantum networking на языке программирования. 
+Напиши реализацию алгоритма lecture 85 quantum networking на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
-

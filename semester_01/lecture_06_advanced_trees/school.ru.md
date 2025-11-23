@@ -11,8 +11,6 @@ Lecture 06 Advanced Trees — trees - demonstration. this lecture covers tree da
 - организация категорий товаров в интернет-магазинах;
 - построение генеалогических деревьев и иерархий;
 
-
-
 ## Пример
 
 Рассмотрим конкретный пример работы lecture 06 advanced trees:
@@ -22,8 +20,6 @@ Lecture 06 Advanced Trees — trees - demonstration. this lecture covers tree da
 3. Получение результата: [конкретный результат]
 
 Алгоритм выполняет операции последовательно, обрабатывая данные по определённым правилам.
-
-
 
 ## Вопросы для самопроверки
 
@@ -35,32 +31,29 @@ Lecture 06 Advanced Trees — trees - demonstration. this lecture covers tree da
 
 ### Средние
 
-4. Как lecture 06 advanced trees обрабатывает граничные случаи?
-5. Какие преимущества и недостатки у lecture 06 advanced trees?
-6. Можно ли улучшить работу lecture 06 advanced trees?
+1. Как lecture 06 advanced trees обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у lecture 06 advanced trees?
+3. Можно ли улучшить работу lecture 06 advanced trees?
 
 ### Сложные
 
-7. Какова временная сложность lecture 06 advanced trees?
-8. Как lecture 06 advanced trees работает с большими объёмами данных?
-9. Как можно оптимизировать lecture 06 advanced trees?
-
-
+1. Какова временная сложность lecture 06 advanced trees?
+2. Как lecture 06 advanced trees работает с большими объёмами данных?
+3. Как можно оптимизировать lecture 06 advanced trees?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 06 advanced trees. 
+Выполни простую операцию с алгоритмом lecture 06 advanced trees.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 06 advanced trees к более сложному набору данных. 
+Примени алгоритм lecture 06 advanced trees к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 06 advanced trees на языке программирования. 
+Напиши реализацию алгоритма lecture 06 advanced trees на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
-

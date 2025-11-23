@@ -11,8 +11,6 @@ Lecture 23 Object Detection — object detection - demonstration. this lecture c
 - обработка и анализ данных;
 - автоматизация процессов в различных областях;
 
-
-
 ## Пример
 
 Рассмотрим конкретный пример работы lecture 23 object detection:
@@ -22,8 +20,6 @@ Lecture 23 Object Detection — object detection - demonstration. this lecture c
 3. Получение результата: [конкретный результат]
 
 Алгоритм выполняет операции последовательно, обрабатывая данные по определённым правилам.
-
-
 
 ## Вопросы для самопроверки
 
@@ -35,32 +31,29 @@ Lecture 23 Object Detection — object detection - demonstration. this lecture c
 
 ### Средние
 
-4. Как lecture 23 object detection обрабатывает граничные случаи?
-5. Какие преимущества и недостатки у lecture 23 object detection?
-6. Можно ли улучшить работу lecture 23 object detection?
+1. Как lecture 23 object detection обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у lecture 23 object detection?
+3. Можно ли улучшить работу lecture 23 object detection?
 
 ### Сложные
 
-7. Какова временная сложность lecture 23 object detection?
-8. Как lecture 23 object detection работает с большими объёмами данных?
-9. Как можно оптимизировать lecture 23 object detection?
-
-
+1. Какова временная сложность lecture 23 object detection?
+2. Как lecture 23 object detection работает с большими объёмами данных?
+3. Как можно оптимизировать lecture 23 object detection?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 23 object detection. 
+Выполни простую операцию с алгоритмом lecture 23 object detection.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 23 object detection к более сложному набору данных. 
+Примени алгоритм lecture 23 object detection к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 23 object detection на языке программирования. 
+Напиши реализацию алгоритма lecture 23 object detection на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
-

@@ -11,8 +11,6 @@ Lecture 78 Observability Platform — observability - demonstration. this lectur
 - обработка и анализ данных;
 - автоматизация процессов в различных областях;
 
-
-
 ## Пример
 
 Рассмотрим конкретный пример работы lecture 78 observability platform:
@@ -22,8 +20,6 @@ Lecture 78 Observability Platform — observability - demonstration. this lectur
 3. Получение результата: [конкретный результат]
 
 Алгоритм выполняет операции последовательно, обрабатывая данные по определённым правилам.
-
-
 
 ## Вопросы для самопроверки
 
@@ -35,32 +31,29 @@ Lecture 78 Observability Platform — observability - demonstration. this lectur
 
 ### Средние
 
-4. Как lecture 78 observability platform обрабатывает граничные случаи?
-5. Какие преимущества и недостатки у lecture 78 observability platform?
-6. Можно ли улучшить работу lecture 78 observability platform?
+1. Как lecture 78 observability platform обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у lecture 78 observability platform?
+3. Можно ли улучшить работу lecture 78 observability platform?
 
 ### Сложные
 
-7. Какова временная сложность lecture 78 observability platform?
-8. Как lecture 78 observability platform работает с большими объёмами данных?
-9. Как можно оптимизировать lecture 78 observability platform?
-
-
+1. Какова временная сложность lecture 78 observability platform?
+2. Как lecture 78 observability platform работает с большими объёмами данных?
+3. Как можно оптимизировать lecture 78 observability platform?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 78 observability platform. 
+Выполни простую операцию с алгоритмом lecture 78 observability platform.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 78 observability platform к более сложному набору данных. 
+Примени алгоритм lecture 78 observability platform к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 78 observability platform на языке программирования. 
+Напиши реализацию алгоритма lecture 78 observability platform на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
-

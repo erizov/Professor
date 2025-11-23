@@ -11,8 +11,6 @@ Lecture 105 Database Architecture — database - demonstration. this lecture cov
 - организация хранения информации для быстрого доступа;
 - улучшение производительности веб-приложений;
 
-
-
 ## Пример
 
 Рассмотрим конкретный пример работы lecture 105 database architecture:
@@ -22,8 +20,6 @@ Lecture 105 Database Architecture — database - demonstration. this lecture cov
 3. Получение результата: [конкретный результат]
 
 Алгоритм выполняет операции последовательно, обрабатывая данные по определённым правилам.
-
-
 
 ## Вопросы для самопроверки
 
@@ -35,32 +31,29 @@ Lecture 105 Database Architecture — database - demonstration. this lecture cov
 
 ### Средние
 
-4. Как lecture 105 database architecture обрабатывает граничные случаи?
-5. Какие преимущества и недостатки у lecture 105 database architecture?
-6. Можно ли улучшить работу lecture 105 database architecture?
+1. Как lecture 105 database architecture обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у lecture 105 database architecture?
+3. Можно ли улучшить работу lecture 105 database architecture?
 
 ### Сложные
 
-7. Какова временная сложность lecture 105 database architecture?
-8. Как lecture 105 database architecture работает с большими объёмами данных?
-9. Как можно оптимизировать lecture 105 database architecture?
-
-
+1. Какова временная сложность lecture 105 database architecture?
+2. Как lecture 105 database architecture работает с большими объёмами данных?
+3. Как можно оптимизировать lecture 105 database architecture?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 105 database architecture. 
+Выполни простую операцию с алгоритмом lecture 105 database architecture.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 105 database architecture к более сложному набору данных. 
+Примени алгоритм lecture 105 database architecture к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 105 database architecture на языке программирования. 
+Напиши реализацию алгоритма lecture 105 database architecture на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
-

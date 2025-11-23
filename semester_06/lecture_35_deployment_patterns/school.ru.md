@@ -11,8 +11,6 @@ Lecture 35 Deployment Patterns — ml deployment - demonstration. this lecture c
 - обработка и анализ данных;
 - автоматизация процессов в различных областях;
 
-
-
 ## Пример
 
 Рассмотрим конкретный пример работы lecture 35 deployment patterns:
@@ -22,8 +20,6 @@ Lecture 35 Deployment Patterns — ml deployment - demonstration. this lecture c
 3. Получение результата: [конкретный результат]
 
 Алгоритм выполняет операции последовательно, обрабатывая данные по определённым правилам.
-
-
 
 ## Вопросы для самопроверки
 
@@ -35,32 +31,29 @@ Lecture 35 Deployment Patterns — ml deployment - demonstration. this lecture c
 
 ### Средние
 
-4. Как lecture 35 deployment patterns обрабатывает граничные случаи?
-5. Какие преимущества и недостатки у lecture 35 deployment patterns?
-6. Можно ли улучшить работу lecture 35 deployment patterns?
+1. Как lecture 35 deployment patterns обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у lecture 35 deployment patterns?
+3. Можно ли улучшить работу lecture 35 deployment patterns?
 
 ### Сложные
 
-7. Какова временная сложность lecture 35 deployment patterns?
-8. Как lecture 35 deployment patterns работает с большими объёмами данных?
-9. Как можно оптимизировать lecture 35 deployment patterns?
-
-
+1. Какова временная сложность lecture 35 deployment patterns?
+2. Как lecture 35 deployment patterns работает с большими объёмами данных?
+3. Как можно оптимизировать lecture 35 deployment patterns?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 35 deployment patterns. 
+Выполни простую операцию с алгоритмом lecture 35 deployment patterns.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 35 deployment patterns к более сложному набору данных. 
+Примени алгоритм lecture 35 deployment patterns к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 35 deployment patterns на языке программирования. 
+Напиши реализацию алгоритма lecture 35 deployment patterns на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
-

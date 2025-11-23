@@ -5,14 +5,14 @@
 
 ## Определение алгоритма
 
-Collision Resolution: Open Addressing — это алгоритм для решения задач в области data engineering / data governance, 
+Collision Resolution: Open Addressing — это алгоритм для решения задач в области data engineering / data governance,
 который выполняет последовательность операций для обработки данных и получения результата.
 
 ## Техническое описание
 
 ### Что делает алгоритм
 
-Collision Resolution: Open Addressing — это алгоритм для решения задач в области data engineering / data governance. 
+Collision Resolution: Open Addressing — это алгоритм для решения задач в области data engineering / data governance.
 Алгоритм выполняет последовательность операций для обработки данных и получения результата.
 
 ## Применение в Data Engineering / Data Governance
@@ -43,29 +43,28 @@ Collision Resolution: Open Addressing — это алгоритм для реш�
 
 ### Средний уровень
 
-3. В каких случаях алгоритм collision resolution: open addressing наиболее эффективен? Когда его использование нецелесообразно?
-4. Как можно оптимизировать collision resolution: open addressing? Предложите конкретные улучшения.
+1. В каких случаях алгоритм collision resolution: open addressing наиболее эффективен? Когда его использование нецелесообразно?
+2. Как можно оптимизировать collision resolution: open addressing? Предложите конкретные улучшения.
 
 ### Продвинутый уровень
 
-5. Сравните collision resolution: open addressing с альтернативными подходами. При каких условиях каждый из них предпочтительнее?
-6. Проанализируйте граничные случаи и ошибки реализации collision resolution: open addressing. Как обеспечить корректность алгоритма?
+1. Сравните collision resolution: open addressing с альтернативными подходами. При каких условиях каждый из них предпочтительнее?
+2. Проанализируйте граничные случаи и ошибки реализации collision resolution: open addressing. Как обеспечить корректность алгоритма?
 
 ## Практические задания
 
 ### Уровень 1 — базовый
 
-Реализуйте базовую версию алгоритма collision resolution: open addressing на языке 
+Реализуйте базовую версию алгоритма collision resolution: open addressing на языке
 программирования. Добавьте обработку граничных случаев и тесты.
 
 ### Уровень 2 — прикладной
 
-Создайте полноценную реализацию collision resolution: open addressing с обработкой 
+Создайте полноценную реализацию collision resolution: open addressing с обработкой
 ошибок, логированием и тестированием. Примените к реальным данным и проанализируйте результаты.
 
 ### Уровень 3 — исследовательский
 
-Проведите исследовательский анализ collision resolution: open addressing: сравните с 
-альтернативными алгоритмами, измерьте производительность, проанализируйте сложность и сформулируйте 
+Проведите исследовательский анализ collision resolution: open addressing: сравните с
+альтернативными алгоритмами, измерьте производительность, проанализируйте сложность и сформулируйте
 выводы о применимости.
-

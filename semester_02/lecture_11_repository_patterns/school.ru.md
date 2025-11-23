@@ -11,8 +11,6 @@ Lecture 11 Repository Patterns - Demonstration. This lecture covers lecture 11 r
 - обработка и анализ данных;
 - автоматизация процессов в различных областях;
 
-
-
 ## Пример
 
 Рассмотрим конкретный пример работы lecture 11 repository patterns:
@@ -22,8 +20,6 @@ Lecture 11 Repository Patterns - Demonstration. This lecture covers lecture 11 r
 3. Получение результата: [конкретный результат]
 
 Алгоритм выполняет операции последовательно, обрабатывая данные по определённым правилам.
-
-
 
 ## Вопросы для самопроверки
 
@@ -35,32 +31,29 @@ Lecture 11 Repository Patterns - Demonstration. This lecture covers lecture 11 r
 
 ### Средние
 
-4. Как lecture 11 repository patterns обрабатывает граничные случаи?
-5. Какие преимущества и недостатки у lecture 11 repository patterns?
-6. Можно ли улучшить работу lecture 11 repository patterns?
+1. Как lecture 11 repository patterns обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у lecture 11 repository patterns?
+3. Можно ли улучшить работу lecture 11 repository patterns?
 
 ### Сложные
 
-7. Какова временная сложность lecture 11 repository patterns?
-8. Как lecture 11 repository patterns работает с большими объёмами данных?
-9. Как можно оптимизировать lecture 11 repository patterns?
-
-
+1. Какова временная сложность lecture 11 repository patterns?
+2. Как lecture 11 repository patterns работает с большими объёмами данных?
+3. Как можно оптимизировать lecture 11 repository patterns?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 11 repository patterns. 
+Выполни простую операцию с алгоритмом lecture 11 repository patterns.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 11 repository patterns к более сложному набору данных. 
+Примени алгоритм lecture 11 repository patterns к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 11 repository patterns на языке программирования. 
+Напиши реализацию алгоритма lecture 11 repository patterns на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
-

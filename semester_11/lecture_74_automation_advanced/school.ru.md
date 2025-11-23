@@ -11,8 +11,6 @@ Lecture 74 Automation Advanced — automation - demonstration. this lecture cove
 - обработка и анализ данных;
 - автоматизация процессов в различных областях;
 
-
-
 ## Пример
 
 Рассмотрим конкретный пример работы lecture 74 automation advanced:
@@ -22,8 +20,6 @@ Lecture 74 Automation Advanced — automation - demonstration. this lecture cove
 3. Получение результата: [конкретный результат]
 
 Алгоритм выполняет операции последовательно, обрабатывая данные по определённым правилам.
-
-
 
 ## Вопросы для самопроверки
 
@@ -35,32 +31,29 @@ Lecture 74 Automation Advanced — automation - demonstration. this lecture cove
 
 ### Средние
 
-4. Как lecture 74 automation advanced обрабатывает граничные случаи?
-5. Какие преимущества и недостатки у lecture 74 automation advanced?
-6. Можно ли улучшить работу lecture 74 automation advanced?
+1. Как lecture 74 automation advanced обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у lecture 74 automation advanced?
+3. Можно ли улучшить работу lecture 74 automation advanced?
 
 ### Сложные
 
-7. Какова временная сложность lecture 74 automation advanced?
-8. Как lecture 74 automation advanced работает с большими объёмами данных?
-9. Как можно оптимизировать lecture 74 automation advanced?
-
-
+1. Какова временная сложность lecture 74 automation advanced?
+2. Как lecture 74 automation advanced работает с большими объёмами данных?
+3. Как можно оптимизировать lecture 74 automation advanced?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 74 automation advanced. 
+Выполни простую операцию с алгоритмом lecture 74 automation advanced.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 74 automation advanced к более сложному набору данных. 
+Примени алгоритм lecture 74 automation advanced к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 74 automation advanced на языке программирования. 
+Напиши реализацию алгоритма lecture 74 automation advanced на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
-

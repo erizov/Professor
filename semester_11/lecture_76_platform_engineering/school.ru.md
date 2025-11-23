@@ -11,8 +11,6 @@ Lecture 76 Platform Engineering — platform engineering - demonstration. this l
 - обработка и анализ данных;
 - автоматизация процессов в различных областях;
 
-
-
 ## Пример
 
 Рассмотрим конкретный пример работы lecture 76 platform engineering:
@@ -22,8 +20,6 @@ Lecture 76 Platform Engineering — platform engineering - demonstration. this l
 3. Получение результата: [конкретный результат]
 
 Алгоритм выполняет операции последовательно, обрабатывая данные по определённым правилам.
-
-
 
 ## Вопросы для самопроверки
 
@@ -35,32 +31,29 @@ Lecture 76 Platform Engineering — platform engineering - demonstration. this l
 
 ### Средние
 
-4. Как lecture 76 platform engineering обрабатывает граничные случаи?
-5. Какие преимущества и недостатки у lecture 76 platform engineering?
-6. Можно ли улучшить работу lecture 76 platform engineering?
+1. Как lecture 76 platform engineering обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у lecture 76 platform engineering?
+3. Можно ли улучшить работу lecture 76 platform engineering?
 
 ### Сложные
 
-7. Какова временная сложность lecture 76 platform engineering?
-8. Как lecture 76 platform engineering работает с большими объёмами данных?
-9. Как можно оптимизировать lecture 76 platform engineering?
-
-
+1. Какова временная сложность lecture 76 platform engineering?
+2. Как lecture 76 platform engineering работает с большими объёмами данных?
+3. Как можно оптимизировать lecture 76 platform engineering?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 76 platform engineering. 
+Выполни простую операцию с алгоритмом lecture 76 platform engineering.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 76 platform engineering к более сложному набору данных. 
+Примени алгоритм lecture 76 platform engineering к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 76 platform engineering на языке программирования. 
+Напиши реализацию алгоритма lecture 76 platform engineering на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
-

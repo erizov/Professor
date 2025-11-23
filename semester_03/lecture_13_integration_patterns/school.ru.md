@@ -11,8 +11,6 @@ Lecture 13 Integration Patterns — integration patterns - demonstration. this l
 - обработка и анализ данных;
 - автоматизация процессов в различных областях;
 
-
-
 ## Пример
 
 Рассмотрим конкретный пример работы lecture 13 integration patterns:
@@ -22,8 +20,6 @@ Lecture 13 Integration Patterns — integration patterns - demonstration. this l
 3. Получение результата: [конкретный результат]
 
 Алгоритм выполняет операции последовательно, обрабатывая данные по определённым правилам.
-
-
 
 ## Вопросы для самопроверки
 
@@ -35,32 +31,29 @@ Lecture 13 Integration Patterns — integration patterns - demonstration. this l
 
 ### Средние
 
-4. Как lecture 13 integration patterns обрабатывает граничные случаи?
-5. Какие преимущества и недостатки у lecture 13 integration patterns?
-6. Можно ли улучшить работу lecture 13 integration patterns?
+1. Как lecture 13 integration patterns обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у lecture 13 integration patterns?
+3. Можно ли улучшить работу lecture 13 integration patterns?
 
 ### Сложные
 
-7. Какова временная сложность lecture 13 integration patterns?
-8. Как lecture 13 integration patterns работает с большими объёмами данных?
-9. Как можно оптимизировать lecture 13 integration patterns?
-
-
+1. Какова временная сложность lecture 13 integration patterns?
+2. Как lecture 13 integration patterns работает с большими объёмами данных?
+3. Как можно оптимизировать lecture 13 integration patterns?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 13 integration patterns. 
+Выполни простую операцию с алгоритмом lecture 13 integration patterns.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 13 integration patterns к более сложному набору данных. 
+Примени алгоритм lecture 13 integration patterns к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 13 integration patterns на языке программирования. 
+Напиши реализацию алгоритма lecture 13 integration patterns на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
-

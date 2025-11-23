@@ -11,8 +11,6 @@ Lecture 22 Cnn Architectures — cnn - demonstration. this lecture covers cnn al
 - обработка и анализ данных;
 - автоматизация процессов в различных областях;
 
-
-
 ## Пример
 
 Рассмотрим конкретный пример работы lecture 22 cnn architectures:
@@ -22,8 +20,6 @@ Lecture 22 Cnn Architectures — cnn - demonstration. this lecture covers cnn al
 3. Получение результата: [конкретный результат]
 
 Алгоритм выполняет операции последовательно, обрабатывая данные по определённым правилам.
-
-
 
 ## Вопросы для самопроверки
 
@@ -35,32 +31,29 @@ Lecture 22 Cnn Architectures — cnn - demonstration. this lecture covers cnn al
 
 ### Средние
 
-4. Как lecture 22 cnn architectures обрабатывает граничные случаи?
-5. Какие преимущества и недостатки у lecture 22 cnn architectures?
-6. Можно ли улучшить работу lecture 22 cnn architectures?
+1. Как lecture 22 cnn architectures обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у lecture 22 cnn architectures?
+3. Можно ли улучшить работу lecture 22 cnn architectures?
 
 ### Сложные
 
-7. Какова временная сложность lecture 22 cnn architectures?
-8. Как lecture 22 cnn architectures работает с большими объёмами данных?
-9. Как можно оптимизировать lecture 22 cnn architectures?
-
-
+1. Какова временная сложность lecture 22 cnn architectures?
+2. Как lecture 22 cnn architectures работает с большими объёмами данных?
+3. Как можно оптимизировать lecture 22 cnn architectures?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 22 cnn architectures. 
+Выполни простую операцию с алгоритмом lecture 22 cnn architectures.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 22 cnn architectures к более сложному набору данных. 
+Примени алгоритм lecture 22 cnn architectures к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 22 cnn architectures на языке программирования. 
+Напиши реализацию алгоритма lecture 22 cnn architectures на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
-
